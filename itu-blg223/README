@@ -1,0 +1,41 @@
+# ITU BLG223 - Data Structures
+
+This repository contains my coursework and implementations for the **BLG 223 - Data Structures** course at Istanbul Technical University (ITU). The course covers fundamental data structures and algorithms, emphasizing efficiency and practical applications.
+
+## Contents
+- **Assignments:** Implementations of various data structures such as linked lists, stacks, queues, trees, and graphs.
+- **Projects:** Larger-scale coding projects applying data structures to solve complex problems.
+- **Lecture Notes & Resources:** Additional materials, explanations, and sample problems.
+
+## Topics Covered
+- Arrays and Linked Lists
+- Stacks and Queues
+- Trees (Binary Trees, BSTs, Heaps, AVL Trees)
+- Graphs (BFS, DFS, Shortest Path Algorithms)
+- Hash Tables
+- Sorting and Searching Algorithms
+
+## Setup & Usage
+To compile and run the C/C++ programs in this repository, use the following commands:
+
+```sh
+# Compile the program
+g++ -o main main.cpp
+
+# Run the program
+./main
+```
+
+## Notes
+- The implementations are written in **C and C++**.
+- No STL (Standard Template Library) was used unless explicitly required.
+- The code follows ITU's academic integrity guidelines.
+
+## License
+This repository is for educational purposes. Feel free to use it for learning, but do not submit the code as your own in academic settings.
+
+---
+
+**Author:** [Your Name]  
+**University:** Istanbul Technical University (ITU)  
+**Course:** BLG 223 - Data Structures

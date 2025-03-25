@@ -1,0 +1,36 @@
+# ITU BLG102 - Introduction to Scientific and Engineering Computing (C)
+
+This repository contains coursework, assignments, and projects for the **BLG 102 - Introduction to Scientific and Engineering Computing** course at Istanbul Technical University (ITU). The course focuses on problem-solving and algorithmic thinking using the C programming language.
+
+## Contents
+- **Assignments:** Exercises covering fundamental programming concepts in C.
+- **Projects:** More comprehensive applications demonstrating problem-solving in scientific and engineering contexts.
+- **Lecture Notes & Examples:** Additional materials to reinforce key concepts.
+
+## Topics Covered
+- Basics of C Programming (Variables, Data Types, Operators)
+- Control Flow (Conditionals, Loops)
+- Functions and Recursion
+- Arrays and Pointers
+- File Handling
+- Numerical Methods in C
+- Data Structures (Basic Implementations)
+
+## Setup & Usage
+To compile and run the C programs in this repository, use the following commands:
+
+```sh
+# Compile the program
+gcc -o main main.c
+
+# Run the program
+./main
+```
+
+## Notes
+- The code follows best practices for structured programming in C.
+- No external libraries are used unless explicitly stated.
+- Academic integrity is maintained throughout the repository.
+
+## License
+This repository is intended for educational purposes. Feel free to use it for learning, but do not submit the code as your own in academic settings.

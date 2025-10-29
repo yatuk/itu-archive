@@ -1,0 +1,47 @@
+# Computer Vision Homework 1
+BLG 453E - Computer Vision - Fall 25/26
+
+## Overview
+This repository contains solutions for Homework 1, covering:
+- Q1: PDF calculations (theoretical)
+- Q2: Gamma correction for image enhancement
+- Q3: Color segmentation using HSV
+- Q4: Channel remapping to reveal hidden images
+
+## Setup
+
+### Prerequisites
+- Python 3.11 or higher
+- pip package manager
+
+### Installation
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Q2: Gamma Correction
+```bash
+cd Q2_gamma_correction
+py -3.11 gamma_correction.py
+```
+
+### Q3: Color Segmentation
+```bash
+cd Q3_color_segmentation
+py -3.11 color_segmentation.py
+```
+
+### Q4: Channel Remapping
+```bash
+cd Q4_channel_remapping
+py -3.11 channel_remapping.py
+```
+
+## Results
+All output images will be saved in the `outputs/` directory.
+
+## Author
+[Your Name]
+Istanbul Technical University

@@ -15,6 +15,9 @@ const state = {
   shown: 0,
   branchCache: new Map(),
   calendar: null,
+  exams: null,
+  hist: null,      // {codes, names} arama listeleri
+  quota: null,     // aktif dönemin dolma özeti, CRN -> kayıt
 };
 
 const cache = new Map();
@@ -69,8 +72,35 @@ async function boot() {
   $('#f-open').addEventListener('change', applyFilters);
   $('#f-upcoming').addEventListener('change', renderCalendar);
   $('#more').addEventListener('click', () => renderRows(true));
+  $('#hq').addEventListener('input', debounce(searchHistory, 140));
+  $('#eq').addEventListener('input', debounce(renderExams, 120));
+  $('#f-etype').addEventListener('change', renderExams);
 
   await loadTerm(ix.currentSlug);
+  loadQuota(ix.currentSlug); // arka planda, dolma sürelerini detay satırında göstermek için
+}
+
+/* ---------- kontenjan zaman serisi ---------- */
+
+async function loadQuota(slug) {
+  try {
+    const sum = await getJSON(`data/quota/${slug}.json`);
+    state.quota = new Map(sum.courses.map((c) => [c.crn, c]));
+  } catch {
+    state.quota = null; // bu dönem için henüz ölçüm yok
+  }
+}
+
+// Dolma süresini insanca yazar: "kayıt başladıktan 3 sa 20 dk sonra doldu".
+function fillNote(crn) {
+  const q = state.quota?.get(crn);
+  if (!q || !q.filledAt) return '';
+  const m = q.fillMinutes;
+  if (!m) return 'ilk ölçümde zaten doluydu';
+  const h = Math.floor(m / 60);
+  const rest = m % 60;
+  const span = h ? `${h} sa${rest ? ` ${rest} dk` : ''}` : `${rest} dk`;
+  return `ilk ölçümden ${span} sonra doldu`;
 }
 
 /* ---------- dersler ---------- */
@@ -199,6 +229,7 @@ async function toggleDetail(tr, row, btn) {
   det.innerHTML = `<td colspan="8"><dl>
     ${field('Öğretim yöntemi', sec.method)}
     ${field('Seviye', sec.level)}
+    ${field('Kontenjan', fillNote(crn))}
     ${sessions ? field('Oturumlar', sessions) : ''}
     ${sec.prereq && sec.prereq !== '-' ? field('Önşart', sec.prereq) : ''}
     ${sec.classReq && sec.classReq !== '-' ? field('Sınıf / kredi önşartı', sec.classReq) : ''}
@@ -208,6 +239,178 @@ async function toggleDetail(tr, row, btn) {
 }
 
 const field = (k, v) => (v ? `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>` : '');
+
+/* ---------- geçmiş ---------- */
+
+async function loadHistory() {
+  if (state.hist) return;
+  const [codes, names] = await Promise.all([
+    getJSON('data/history/codes.json'),
+    getJSON('data/history/names.json'),
+  ]);
+  // Arama metinlerini bir kez katlayıp saklıyoruz.
+  state.hist = {
+    codes, names,
+    codeHay: codes.map((c) => fold(`${c[0]} ${c[1]}`)),
+    nameHay: names.map((n) => fold(n[0])),
+  };
+}
+
+async function searchHistory() {
+  await loadHistory();
+  const q = fold($('#hq').value.trim());
+  const box = $('#hmatches');
+  $('#hdetail').innerHTML = '';
+
+  if (q.length < 2) {
+    box.innerHTML = '';
+    $('#hresultline').innerHTML =
+      `<b>${state.hist.codes.length.toLocaleString('tr')}</b> ders · ` +
+      `<b>${state.hist.names.length.toLocaleString('tr')}</b> öğretim üyesi indekslendi`;
+    return;
+  }
+
+  const courses = [];
+  state.hist.codeHay.forEach((h, i) => { if (courses.length < 40 && h.includes(q)) courses.push(state.hist.codes[i]); });
+  const people = [];
+  state.hist.nameHay.forEach((h, i) => { if (people.length < 40 && h.includes(q)) people.push(state.hist.names[i]); });
+
+  $('#hresultline').innerHTML = `<b>${courses.length}</b> ders, <b>${people.length}</b> öğretim üyesi eşleşti`;
+
+  let html = '';
+  if (courses.length) {
+    html += '<h3 class="mh">Dersler</h3><div class="chips">' + courses.map((c) =>
+      `<button class="chip" data-kind="course" data-key="${esc(c[0])}" data-branch="${esc(c[2])}">
+         <b>${esc(c[0])}</b><span>${esc(c[1])}</span><em>${c[3]} dönem</em></button>`).join('') + '</div>';
+  }
+  if (people.length) {
+    html += '<h3 class="mh">Öğretim üyeleri</h3><div class="chips">' + people.map((n) =>
+      `<button class="chip" data-kind="person" data-key="${esc(n[0])}" data-bucket="${esc(n[1])}">
+         <b>${esc(n[0])}</b><em>${n[2]} dönem · ${n[3]} şube</em></button>`).join('') + '</div>';
+  }
+  box.innerHTML = html || '<p class="empty">eşleşme yok</p>';
+
+  for (const b of box.querySelectorAll('.chip')) {
+    b.addEventListener('click', () => b.dataset.kind === 'course'
+      ? showCourse(b.dataset.key, b.dataset.branch)
+      : showPerson(b.dataset.key, b.dataset.bucket));
+  }
+}
+
+async function showCourse(code, branch) {
+  const all = await getJSON(`data/history/courses/${branch}.json`);
+  const c = all[code];
+  if (!c) return;
+
+  // Dönem başına grupla: aynı dönemde birden çok şube olabiliyor.
+  const byTerm = new Map();
+  for (const [slug, instructor, cap, enr, days] of c.rows) {
+    if (!byTerm.has(slug)) byTerm.set(slug, []);
+    byTerm.get(slug).push({ instructor, cap, enr, days });
+  }
+
+  const seasons = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' };
+  const openIn = new Set([...byTerm.keys()].map((s) => s.split('-')[2]));
+  const rhythm = [...openIn].map((s) => seasons[s] || s).join(', ');
+
+  $('#hdetail').innerHTML = `
+    <article class="hcard">
+      <h3>${esc(c.code)} <span>${esc(c.name)}</span></h3>
+      <p class="meta">${byTerm.size} dönemde açıldı · açıldığı dönemler: ${esc(rhythm)}</p>
+      <div class="tablewrap"><table class="htable">
+        <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th>Gün</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr></thead>
+        <tbody>${[...byTerm].map(([slug, rows]) => rows.map((r, i) => `
+          <tr><td>${i === 0 ? esc(termLabel(slug)) : ''}</td>
+              <td>${esc(r.instructor || '—')}</td>
+              <td class="when">${esc(r.days || '—')}</td>
+              <td class="num">${r.cap}</td><td class="num">${r.enr}</td>
+              <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`).join('')).join('')}
+        </tbody>
+      </table></div>
+    </article>`;
+  $('#hdetail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+async function showPerson(name, bucket) {
+  const all = await getJSON(`data/history/instructors/${bucket}.json`);
+  const p = all[name];
+  if (!p) return;
+
+  const byCourse = new Map();
+  for (const [slug, code, cname] of p.rows) {
+    if (!byCourse.has(code)) byCourse.set(code, { name: cname, terms: [] });
+    byCourse.get(code).terms.push(slug);
+  }
+  const sorted = [...byCourse].sort((a, b) => b[1].terms.length - a[1].terms.length);
+
+  $('#hdetail').innerHTML = `
+    <article class="hcard">
+      <h3>${esc(name)}</h3>
+      <p class="meta">${byCourse.size} farklı ders · ${p.rows.length} şube · ${p.terms} dönem</p>
+      <div class="tablewrap"><table class="htable">
+        <thead><tr><th>Ders</th><th>Adı</th><th class="num">Kaç dönem</th><th>Dönemler</th></tr></thead>
+        <tbody>${sorted.map(([code, v]) => `
+          <tr><td><b>${esc(code)}</b></td><td>${esc(v.name)}</td>
+              <td class="num">${v.terms.length}</td>
+              <td class="when">${esc(v.terms.map(termLabel).join(', '))}</td></tr>`).join('')}
+        </tbody>
+      </table></div>
+    </article>`;
+  $('#hdetail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// "2025-2026-guz" -> "2025-26 Güz"
+function termLabel(slug) {
+  const [y1, y2, season] = slug.split('-');
+  const s = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' }[season] || season;
+  return `${y1}-${String(y2).slice(2)} ${s}`;
+}
+
+/* ---------- sınav takvimi ---------- */
+
+async function loadExams() {
+  if (state.exams) return;
+  try {
+    const sched = await getJSON(`data/exams/${state.index.currentSlug}.json`);
+    state.exams = sched;
+    state.examHay = sched.exams.map((e) => fold(`${e.crn} ${e.code} ${e.name} ${e.instructor}`));
+    const types = [...new Set(sched.exams.map((e) => e.type))].sort();
+    $('#f-etype').innerHTML = '<option value="">hepsi</option>' +
+      types.map((t) => `<option>${esc(t)}</option>`).join('');
+  } catch {
+    state.exams = { exams: [] };
+    state.examHay = [];
+  }
+  renderExams();
+}
+
+function renderExams() {
+  if (!state.exams) return;
+  const q = fold($('#eq').value.trim());
+  const type = $('#f-etype').value;
+  const terms = q ? q.split(/\s+/) : [];
+
+  const hits = state.exams.exams.filter((e, i) => {
+    if (type && e.type !== type) return false;
+    return terms.every((t) => state.examHay[i].includes(t));
+  });
+
+  $('#eresultline').innerHTML = state.exams.exams.length
+    ? `<b>${hits.length}</b> / ${state.exams.exams.length} sınav · ${esc(state.exams.term || '')}`
+    : 'Bu dönem için sınav takvimi henüz ilan edilmemiş.';
+
+  $('#erows').innerHTML = hits.length
+    ? hits.slice(0, 400).map((e) => `
+      <tr><td class="crn">${esc(e.crn)}</td>
+          <td class="code"><b>${esc(e.code)}</b></td>
+          <td>${esc(e.name)}</td>
+          <td>${esc(e.instructor || '—')}</td>
+          <td>${esc(e.type)}</td>
+          <td class="when">${esc(e.place || '—')}</td>
+          <td>${esc(e.date)}</td>
+          <td class="when">${esc(e.day)} ${esc(e.time)}</td></tr>`).join('')
+    : '<tr><td colspan="8" class="empty">eşleşen sınav yok</td></tr>';
+}
 
 /* ---------- akademik takvim ---------- */
 
@@ -279,11 +482,14 @@ function wireTabs() {
     for (const b of buttons) b.setAttribute('aria-selected', String(b.dataset.view === view));
     for (const s of document.querySelectorAll('.view')) s.hidden = s.id !== `view-${view}`;
     if (view === 'takvim' && !state.calendar && state.index) loadCalendar($('#f-year').value);
-    if (location.hash.slice(1) !== view) history.replaceState(null, '', `#${view}`);
+    if (view === 'sinavlar' && state.index) loadExams();
+    if (view === 'gecmis' && !state.hist) searchHistory();
+    if (location.hash.slice(1) !== view) window.history.replaceState(null, '', `#${view}`);
   };
   for (const b of buttons) b.addEventListener('click', () => show(b.dataset.view));
   const initial = location.hash.slice(1);
-  show(['dersler', 'takvim', 'donemler', 'hakkinda'].includes(initial) ? initial : 'dersler');
+  const views = ['dersler', 'gecmis', 'sinavlar', 'takvim', 'donemler', 'hakkinda'];
+  show(views.includes(initial) ? initial : 'dersler');
 }
 
 // Hakkında sekmesindeki curl örneklerine sitenin gerçek adresini yazar.

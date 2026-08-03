@@ -23,6 +23,8 @@ import (
 
 	"itu-scraper/internal/archive"
 	"itu-scraper/internal/fetch"
+	"itu-scraper/internal/final"
+	"itu-scraper/internal/history"
 	"itu-scraper/internal/model"
 	"itu-scraper/internal/obs"
 	"itu-scraper/internal/store"
@@ -41,15 +43,16 @@ func main() {
 		backfill     = flag.Bool("backfill", false, "tarihsel arşivi içeri al")
 		skipCourses  = flag.Bool("skip-courses", false, "ders programını atla")
 		skipCalendar = flag.Bool("skip-calendar", false, "akademik takvimi atla")
+		skipExams    = flag.Bool("skip-exams", false, "sınav takvimini atla")
 	)
 	flag.Parse()
 
-	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar); err != nil {
+	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams); err != nil {
 		log.Fatalf("hata: %v", err)
 	}
 }
 
-func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar bool) error {
+func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams bool) error {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
@@ -57,18 +60,31 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 	f := fetch.New(rps, workers)
 	st := store.New(out)
 
-	var currentSlug string
+	var currentSlug, currentLabel string
 
 	if !skipCourses {
-		slug, err := scrapeCourses(ctx, f, st, workers)
+		label, slug, err := scrapeCourses(ctx, f, st, workers)
 		if err != nil {
 			return err
 		}
-		currentSlug = slug
+		currentSlug, currentLabel = slug, label
 	}
 
 	if !skipCalendar {
 		if err := scrapeCalendar(ctx, f, st); err != nil {
+			return err
+		}
+	}
+
+	if !skipExams {
+		if currentLabel == "" {
+			label, err := obs.New(f).ActiveTerm(ctx, "LS")
+			if err != nil {
+				return err
+			}
+			currentLabel, currentSlug = label, termSlug(label)
+		}
+		if err := scrapeExams(ctx, f, st, workers, currentLabel, currentSlug); err != nil {
 			return err
 		}
 	}
@@ -79,6 +95,10 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 		}
 	}
 
+	if err := buildHistory(out, st); err != nil {
+		return err
+	}
+
 	if err := writeIndex(out, st); err != nil {
 		return err
 	}
@@ -87,19 +107,19 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 	return nil
 }
 
-func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, workers int) (string, error) {
+func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, workers int) (string, string, error) {
 	oc := obs.New(f)
 
 	label, err := oc.ActiveTerm(ctx, "LS")
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 	slug := termSlug(label)
 	logf("aktif dönem: %s (%s)", label, slug)
 
 	branches, err := oc.AllBranches(ctx)
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 	logf("%d branş kodu bulundu", len(branches))
 
@@ -110,7 +130,7 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 		}
 	})
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 
 	var sections []model.Section
@@ -118,19 +138,19 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 		sections = append(sections, secs...)
 	}
 	if len(sections) == 0 {
-		return "", fmt.Errorf("hiç ders bulunamadı — OBS uçları değişmiş olabilir")
+		return "", "", fmt.Errorf("hiç ders bulunamadı — OBS uçları değişmiş olabilir")
 	}
 	sort.Slice(sections, func(i, j int) bool { return sections[i].CRN < sections[j].CRN })
 
 	if err := st.Clean(slug); err != nil {
-		return "", err
+		return "", "", err
 	}
 	meta, err := st.WriteTerm(label, slug, time.Now().UTC().Format(time.RFC3339), "obs", sections)
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 	logf("%s: %d şube, %d ders, %d branş yazıldı", slug, meta.Sections, meta.Courses, len(meta.Branches))
-	return slug, nil
+	return label, slug, nil
 }
 
 func scrapeCalendar(ctx context.Context, f *fetch.Client, st *store.Store) error {
@@ -150,6 +170,47 @@ func scrapeCalendar(ctx context.Context, f *fetch.Client, st *store.Store) error
 		}
 		logf("  takvim %s: %d satır", cal.Year, len(cal.Events))
 	}
+	return nil
+}
+
+func scrapeExams(ctx context.Context, f *fetch.Client, st *store.Store, workers int, label, slug string) error {
+	fc := final.New(f)
+	branches, err := fc.Branches(ctx)
+	if err != nil {
+		return err
+	}
+	exams, err := fc.ScrapeAll(ctx, branches, workers)
+	if err != nil {
+		return err
+	}
+	if len(exams) == 0 {
+		// Sınav takvimi dönem ortasında boş olabiliyor; bu hata değil, sadece
+		// henüz ilan edilmemiş demek. Var olan dosyanın üzerine yazmıyoruz.
+		logf("sınav takvimi henüz ilan edilmemiş, atlandı")
+		return nil
+	}
+	sched := &model.ExamSchedule{
+		Term: label, Slug: slug,
+		ScrapedAt: time.Now().UTC().Format(time.RFC3339),
+		Exams:     exams,
+	}
+	if err := st.WriteExams(sched); err != nil {
+		return err
+	}
+	logf("sınav takvimi: %d kayıt (%d branş)", len(exams), len(branches))
+	return nil
+}
+
+func buildHistory(root string, st *store.Store) error {
+	idx, err := history.Build(root)
+	if err != nil {
+		return err
+	}
+	if err := st.WriteHistory(idx); err != nil {
+		return err
+	}
+	logf("geçmiş indeksi: %d ders, %d öğretim üyesi, %d dönem",
+		len(idx.Courses), len(idx.Instructors), len(idx.Terms))
 	return nil
 }
 

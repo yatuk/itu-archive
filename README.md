@@ -16,21 +16,39 @@ dönem, 64.309 şube kaydı duruyor içinde. Akademik takvim de dahil.
 | Nereden | Ne |
 |---|---|
 | `obs.itu.edu.tr/public/DersProgram` | Aktif dönem. 4 program seviyesi (OL/LS/LU/LUI), 337 branş kodu |
+| `obs.itu.edu.tr/public/FinalTakvimi` | Final ve ek sınav takvimi |
 | `takvim.sis.itu.edu.tr` | 4 akademik yılın takvimi |
 | Tarihsel dökümler | 2016-2017'ye kadar geçmiş dönemler, `-backfill` ile |
 
 Aktif dönem OBS'den geliyor, dolayısıyla tam kayıt: öğretim yöntemi, önşart,
 rezervasyon, derslik. Geçmiş dönemlerde bunların bir kısmı yok.
 
+## Ne sorabilirsin
+
+Sitedeki geçmiş sekmesi 27 dönemin birleştirilmiş kaydı üzerinde çalışıyor.
+OBS'de sorulamayan şeyler burada sorulabiliyor:
+
+- BLG 102E'yi son beş yılda kim verdi (13 dönem, dönem dönem hoca listesi)
+- Bu ders hangi mevsimde açılıyor, güz mü bahar mı
+- Bir öğretim üyesi hangi dersleri veriyor ve kaç dönemdir veriyor
+- Bir şube geçen sefer kaç dakikada doldu
+
+6.264 ders ve 4.148 öğretim üyesi indekslenmiş durumda.
+
 ## Çalıştırma
 
 ```bash
-go run ./cmd/scrape            # aktif dönem + akademik takvim
+go run ./cmd/scrape            # ders programı, sınav takvimi, akademik takvim
 go run ./cmd/scrape -backfill  # geçmiş dönemleri de al, bir kez yeterli
+go run ./cmd/quota             # kontenjan doluluğundan tek ölçüm al
 ```
 
-Her şey `docs/data` altına yazılıyor. Tam tarama bir dakika sürüyor. Bayraklar:
-`-out`, `-workers`, `-rps`, `-skip-courses`, `-skip-calendar`.
+Her şey `docs/data` altına yazılıyor. Tam tarama iki dakika sürüyor. Bayraklar:
+`-out`, `-workers`, `-rps`, `-skip-courses`, `-skip-calendar`, `-skip-exams`.
+
+`cmd/quota` ayrı bir komut çünkü frekansı farklı: ders programı günde bir kez
+yeterli, kontenjan kayıt haftasında yarım saatte bir anlamlı. Değişen bir şey
+yoksa dosyaya hiç dokunmuyor, o yüzden sakin dönemlerde boş commit birikmiyor.
 
 Siteyi yerelde açmak için:
 
@@ -58,6 +76,13 @@ docs/data/
   terms/<dönem>/branches/<KOD>.json # tam kayıtlar
   terms/<dönem>/all.csv             # tek dosya döküm, Excel için BOM'lu
   calendar/<yıl>.json               # akademik takvim
+  exams/<dönem>.json                # final ve ek sınav takvimi
+  history/codes.json                # ders arama listesi
+  history/names.json                # öğretim üyesi arama listesi
+  history/courses/<BRANŞ>.json      # ders bazlı dönem geçmişi
+  history/instructors/<harf>.json   # öğretim üyesi bazlı geçmiş
+  quota/<dönem>.jsonl               # kontenjan zaman serisi, append-only
+  quota/<dönem>.json                # türetilmiş dolma özeti
 ```
 
 Dönem adları `2025-2026-guz` biçiminde. Branş bazlı bölmenin sebebi tarayıcıya 10
@@ -93,9 +118,15 @@ arama kutusuna `bil` yazdığında hiçbir şey bulunmuyor. Site artık aramayı
 katlanmış metin üzerinde yapıyor. Yan fayda olarak `muhendislik` de `Mühendislik`i
 buluyor.
 
-Son olarak, OBS tablosu 15 kolon değilse ya da tarihsel dökümde beklenen başlıklar
-yoksa scraper hata verip duruyor. Sessizce bozuk veri yazmaktansa workflow'u
-kırmızıya düşürmek daha iyi.
+Kontenjan zaman serisinde boyut sorunu var: 3900 şubelik bir dönemde yarım saatte
+bir tam snapshot almak haftada onlarca megabayt eder. Onun yerine append-only bir
+JSONL tutuyoruz ve her satıra yalnızca bir öncekine göre değişen CRN'leri yazıyoruz.
+Kayıt dışı zamanlarda satır hiç yazılmıyor, kayıt haftasında yoğunlaşıyor. Yan
+fayda olarak git diff'i de temiz kalıyor, her ölçüm tek satır ekliyor.
+
+Son olarak, OBS tablosu 15 kolon değilse, sınav tablosu 10 kolon değilse ya da
+tarihsel dökümde beklenen başlıklar yoksa scraper hata verip duruyor. Sessizce
+bozuk veri yazmaktansa workflow'u kırmızıya düşürmek daha iyi.
 
 ## Eksikler
 

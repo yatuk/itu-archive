@@ -23,7 +23,9 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"time"
 
+	"itu-scraper/internal/history"
 	"itu-scraper/internal/model"
 )
 
@@ -159,6 +161,77 @@ func (s *Store) writeCSV(slug string, sections []model.Section) error {
 		}
 	}
 	return w.Error()
+}
+
+// WriteExams, bir dönemin sınav takvimini yazar.
+func (s *Store) WriteExams(sched *model.ExamSchedule) error {
+	return s.WriteJSON(sched, "data", "exams", sched.Slug+".json")
+}
+
+// WriteHistory, geçmiş indekslerini diske döker.
+//
+// Bölme mantığı arama akışını takip ediyor: site açılışta yalnızca iki hafif
+// liste (codes.json, names.json) indiriyor, kullanıcı bir derse ya da hocaya
+// tıklayınca ilgili branş/harf dosyası geliyor.
+func (s *Store) WriteHistory(idx *history.Index) error {
+	byBranch := map[string]map[string]*history.Course{}
+	codes := make([][]any, 0, len(idx.Courses))
+	for code, c := range idx.Courses {
+		branch := code
+		if i := strings.IndexByte(code, ' '); i > 0 {
+			branch = code[:i]
+		}
+		if byBranch[branch] == nil {
+			byBranch[branch] = map[string]*history.Course{}
+		}
+		byBranch[branch][code] = c
+		codes = append(codes, []any{code, c.Name, branch, len(c.Terms)})
+	}
+	sort.Slice(codes, func(i, j int) bool { return codes[i][0].(string) < codes[j][0].(string) })
+
+	for branch, courses := range byBranch {
+		if err := s.WriteJSON(courses, "data", "history", "courses", branch+".json"); err != nil {
+			return err
+		}
+	}
+	if err := s.WriteJSON(codes, "data", "history", "codes.json"); err != nil {
+		return err
+	}
+
+	byBucket := map[string]map[string]*history.Instructor{}
+	names := make([][]any, 0, len(idx.Instructors))
+	for name, in := range idx.Instructors {
+		terms := map[string]struct{}{}
+		for _, r := range in.Rows {
+			terms[r.Slug] = struct{}{}
+		}
+		in.Terms = len(terms)
+
+		b := history.Bucket(name)
+		if byBucket[b] == nil {
+			byBucket[b] = map[string]*history.Instructor{}
+		}
+		byBucket[b][name] = in
+		names = append(names, []any{name, b, in.Terms, len(in.Rows)})
+	}
+	sort.Slice(names, func(i, j int) bool { return names[i][0].(string) < names[j][0].(string) })
+
+	for bucket, ins := range byBucket {
+		if err := s.WriteJSON(ins, "data", "history", "instructors", bucket+".json"); err != nil {
+			return err
+		}
+	}
+	if err := s.WriteJSON(names, "data", "history", "names.json"); err != nil {
+		return err
+	}
+
+	meta := map[string]any{
+		"terms":       idx.Terms,
+		"courses":     len(idx.Courses),
+		"instructors": len(idx.Instructors),
+		"generatedAt": time.Now().UTC().Format(time.RFC3339),
+	}
+	return s.WriteJSON(meta, "data", "history", "index.json")
 }
 
 // Stats, bir dönemin özet sayıları.

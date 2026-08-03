@@ -44,6 +44,28 @@ type TermMeta struct {
 	Stats     SiteStats    `json:"stats"`
 }
 
+// Exam, final sınav takvimindeki tek bir satır.
+type Exam struct {
+	CRN        string `json:"crn"`
+	Code       string `json:"code"`   // "BIL 100E"
+	Branch     string `json:"branch"` // "BIL"
+	Name       string `json:"name"`
+	Instructor string `json:"instructor"`
+	Type       string `json:"type"`  // "Final Sınavı", "Mazeret Sınavı", ...
+	Place      string `json:"place"` // "Ayazağa/İnşaat Binası-D100"
+	Day        string `json:"day"`
+	Time       string `json:"time"` // "09:00-11:00"
+	Date       string `json:"date"` // "10 Ağustos 2026"
+}
+
+// ExamSchedule, bir dönemin sınav takvimi.
+type ExamSchedule struct {
+	Term      string `json:"term"`
+	Slug      string `json:"slug"`
+	ScrapedAt string `json:"scrapedAt"`
+	Exams     []Exam `json:"exams"`
+}
+
 // CalendarEvent, akademik takvimdeki tek bir satır.
 type CalendarEvent struct {
 	Table     string `json:"table"` // tabloyu açan başlık: "Güz Dönemi", "Yaz Okulu", ...

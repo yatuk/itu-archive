@@ -1,0 +1,184 @@
+[
+ {
+  "crn": "30303",
+  "code": "AKM 204",
+  "branch": "AKM",
+  "level": "LS",
+  "name": "Akışkanlar Mekaniği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Birgül Benli",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:59",
+   "14:00/17:29"
+  ],
+  "rooms": [
+   "A101",
+   "A101"
+  ],
+  "capacity": 50,
+  "enrolled": 45,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "GEM_LS",
+   "IBM_LS",
+   "INS_LS",
+   "MTO_LS",
+   "TEK_LS",
+   "UCK_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30376",
+  "code": "AKM 204E",
+  "branch": "AKM",
+  "level": "LS",
+  "name": "Fluid Mechanics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erdal Kesgin",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "B103",
+   "B103"
+  ],
+  "capacity": 25,
+  "enrolled": 48,
+  "reserved": "-",
+  "programs": [
+   "INS_LS",
+   "INSE_LS",
+   "MEN_LS",
+   "NAE_LS",
+   "PET_LS",
+   "PETE_LS",
+   "TEK_LS",
+   "TEKE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30386",
+  "code": "AKM 204",
+  "branch": "AKM",
+  "level": "LS",
+  "name": "Akışkanlar Mekaniği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Necati Erdem Ünal",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "10:00/12:59",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "B303",
+   "B303"
+  ],
+  "capacity": 30,
+  "enrolled": 32,
+  "reserved": "-",
+  "programs": [
+   "CEV_LS",
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30387",
+  "code": "AKM 204",
+  "branch": "AKM",
+  "level": "LS",
+  "name": "Akışkanlar Mekaniği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Necati Erdem Ünal",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:00/12:59",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "B304",
+   "B304"
+  ],
+  "capacity": 30,
+  "enrolled": 23,
+  "reserved": "-",
+  "programs": [
+   "CEV_LS",
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30466",
+  "code": "AKM 204E",
+  "branch": "AKM",
+  "level": "LS",
+  "name": "Fluid Mechanics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cenk Kaya",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 45,
+  "enrolled": 33,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

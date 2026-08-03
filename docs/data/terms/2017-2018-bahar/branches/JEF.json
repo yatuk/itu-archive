@@ -1,0 +1,709 @@
+[
+ {
+  "crn": "22109",
+  "code": "JEF 212E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Data Processing",
+  "method": "",
+  "instructor": "Ayşe Kaşlılar Şişman",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 65,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE",
+   "JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22195",
+  "code": "JEF 222E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Applied Geophysics",
+  "method": "",
+  "instructor": "Gonca Örgülü",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 52,
+  "reserved": "",
+  "programs": [
+   "JEFE",
+   "PET",
+   "PETE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22197",
+  "code": "JEF 222",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Uygulamalı Jeofizik",
+  "method": "",
+  "instructor": "Caner İmren",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22198",
+  "code": "JEF 322",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeomanyetizma",
+  "method": "",
+  "instructor": "Turgay İşseven",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22219",
+  "code": "JEF 322E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Geomagnetism",
+  "method": "",
+  "instructor": "Gonca Örgülü",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22222",
+  "code": "JEF 344E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Geophysical Measurements",
+  "method": "",
+  "instructor": "Tuna Eken",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22223",
+  "code": "JEF 334E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Seismic Prospecting",
+  "method": "",
+  "instructor": "Hülya Kurt",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 34,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE",
+   "JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22225",
+  "code": "JEF 417E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Seismotectonics",
+  "method": "",
+  "instructor": "Tuncay Taymaz",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE",
+   "JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22226",
+  "code": "JEF 452E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Engineering Seismology",
+  "method": "",
+  "instructor": "Hüseyin Argun Kocaoğlu",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 39,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22660",
+  "code": "JEF 312E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Drilling Technology",
+  "method": "",
+  "instructor": "Gürşat Altun",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22693",
+  "code": "JEF 318",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Kuyu Jeofiziği",
+  "method": "",
+  "instructor": "Hızır İlyas Çağlar",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22694",
+  "code": "JEF 320",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Maden Jeofiziği",
+  "method": "",
+  "instructor": "Hızır İlyas Çağlar",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22696",
+  "code": "JEF 430E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Marine Geophysics",
+  "method": "",
+  "instructor": "Mustafa Emin Demirbağ",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22698",
+  "code": "JEF 310E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Geodynamics",
+  "method": "",
+  "instructor": "Tuna Eken",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE",
+   "JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22699",
+  "code": "JEF 430",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Deniz Jeofiziği",
+  "method": "",
+  "instructor": "Caner İmren",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22701",
+  "code": "JEF 436E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Hydrocarbon Geophysics",
+  "method": "",
+  "instructor": "Neslihan Ocakoğlu Gökaşan",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE",
+   "JEFM",
+   "PET",
+   "PETE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22702",
+  "code": "JEF 438",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Sismik Yorumlama",
+  "method": "",
+  "instructor": "Hülya Kurt",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22708",
+  "code": "JEF 440",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Paleomanyetizma",
+  "method": "",
+  "instructor": "Turgay İşseven",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22709",
+  "code": "JEF 442",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Arkeo-Jeofizik",
+  "method": "",
+  "instructor": "Caner İmren",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22710",
+  "code": "JEF 326E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Geothermal Exploration",
+  "method": "",
+  "instructor": "Doğa Doğan",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 17,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22711",
+  "code": "JEF 492",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Hüseyin Argun Kocaoğlu",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22712",
+  "code": "JEF 492E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "Hüseyin Argun Kocaoğlu",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "JEF",
+   "JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22723",
+  "code": "JEF 232",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Mineraloji ve Petrografi",
+  "method": "",
+  "instructor": "Halis Manav",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 37,
+  "reserved": "",
+  "programs": [
+   "CHZ",
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22725",
+  "code": "JEF 232E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Mineralogy and Petrography",
+  "method": "",
+  "instructor": "Emin Çiftçi",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "CHZE",
+   "JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22731",
+  "code": "JEF 232",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Mineraloji ve Petrografi",
+  "method": "",
+  "instructor": "Şenel Özdamar",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "CHZ",
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

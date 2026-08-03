@@ -1,0 +1,998 @@
+[
+ {
+  "crn": "30412",
+  "code": "MAK 315",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Mekanik Titreşimler",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Akif Yavuz",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/13:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "D360",
+   "D360"
+  ],
+  "capacity": 50,
+  "enrolled": 35,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30413",
+  "code": "MAK 309",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Mekanik Titreşimler",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Akif Yavuz",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "13:30/17:29",
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "D360",
+   "D360"
+  ],
+  "capacity": 30,
+  "enrolled": 22,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30414",
+  "code": "MAK 201E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Engineering Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hakan Öksüzoğlu",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:00/12:29",
+   "13:30/16:59",
+   "14:00/17:29"
+  ],
+  "rooms": [
+   "D317",
+   "D317",
+   "D317"
+  ],
+  "capacity": 50,
+  "enrolled": 38,
+  "reserved": "-",
+  "programs": [
+   "IML_LS",
+   "MAK_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30415",
+  "code": "MAK 210E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Engineering Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hakan Öksüzoğlu",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:00/12:29",
+   "13:30/16:59",
+   "14:00/17:29"
+  ],
+  "rooms": [
+   "D317",
+   "D317",
+   "D317"
+  ],
+  "capacity": 30,
+  "enrolled": 11,
+  "reserved": "-",
+  "programs": [
+   "IML_LS",
+   "MAK_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30416",
+  "code": "MAK 307",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "İmal Usulleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Gökşenli",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/13:29",
+   "08:30/12:59"
+  ],
+  "rooms": [
+   "A363",
+   "A363"
+  ],
+  "capacity": 40,
+  "enrolled": 16,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30417",
+  "code": "MAK 353",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "İmal Usulleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Gökşenli",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/13:29",
+   "08:30/12:59"
+  ],
+  "rooms": [
+   "A363",
+   "A363"
+  ],
+  "capacity": 40,
+  "enrolled": 19,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30418",
+  "code": "MAK 234",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Akışkanlar Mekaniği I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sertaç Çadırcı , Hasan Güneş",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/12:59",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "A201",
+   "A201"
+  ],
+  "capacity": 60,
+  "enrolled": 48,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30419",
+  "code": "MAK 335",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Akışkanlar Mekaniği II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sertaç Çadırcı , Hasan Güneş",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "14:00/16:59",
+   "09:00/12:59"
+  ],
+  "rooms": [
+   "A201",
+   "A201"
+  ],
+  "capacity": 50,
+  "enrolled": 40,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30420",
+  "code": "MAK 228",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Akışkanlar Mekaniği I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sertaç Çadırcı , Hasan Güneş",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/12:59",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "A201",
+   "A201"
+  ],
+  "capacity": 30,
+  "enrolled": 25,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30421",
+  "code": "MAK 229",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Akışkanlar Mekaniği II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sertaç Çadırcı , Hasan Güneş",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "14:00/16:59",
+   "09:00/12:59"
+  ],
+  "rooms": [
+   "A201",
+   "A201"
+  ],
+  "capacity": 60,
+  "enrolled": 54,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30423",
+  "code": "MAK 205",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hacı Abdullah Taşdemir",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "A501",
+   "A501"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30424",
+  "code": "MAK 324",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Makina Teorisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Akif Yavuz",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/13:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D360",
+   "D360"
+  ],
+  "capacity": 30,
+  "enrolled": 20,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30425",
+  "code": "MAK 310",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Makina Teorisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Akif Yavuz",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/13:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D360",
+   "D360"
+  ],
+  "capacity": 30,
+  "enrolled": 26,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30426",
+  "code": "MAK 205",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Adil Yücel , Emin Orhun Baştekeli",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "10:00/12:59",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "D318",
+   "D318"
+  ],
+  "capacity": 80,
+  "enrolled": 73,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30427",
+  "code": "MAK 219",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Adil Yücel , Emin Orhun Baştekeli",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:00/12:59",
+   "13:30/17:29",
+   "10:00/12:29"
+  ],
+  "rooms": [
+   "D318",
+   "D318",
+   "D318"
+  ],
+  "capacity": 30,
+  "enrolled": 4,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30428",
+  "code": "MAK 206",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Adil Yücel , Emin Orhun Baştekeli",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "10:00/12:59",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "D318",
+   "D318"
+  ],
+  "capacity": 100,
+  "enrolled": 79,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30429",
+  "code": "MAK 220",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Adil Yücel , Emin Orhun Baştekeli",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:59",
+   "10:00/12:59",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "D318",
+   "D318",
+   "D318"
+  ],
+  "capacity": 30,
+  "enrolled": 13,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30430",
+  "code": "MAK 213",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Malzeme Bilimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Raşid Ahmed Yıldız",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:59",
+   "10:00/12:59",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "D355",
+   "D355",
+   "D355"
+  ],
+  "capacity": 30,
+  "enrolled": 4,
+  "reserved": "-",
+  "programs": [
+   "IML_LS",
+   "MAK_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30431",
+  "code": "MAK 223",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Malzeme Bilimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Raşid Ahmed Yıldız",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:59",
+   "10:00/12:59",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "D355",
+   "D355",
+   "D355"
+  ],
+  "capacity": 30,
+  "enrolled": 20,
+  "reserved": "-",
+  "programs": [
+   "IML_LS",
+   "MAK_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30444",
+  "code": "MAK 215",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Termodinamik I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yakup Erhan Böke , Mustafa Özdemir",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D368A",
+   "D368A"
+  ],
+  "capacity": 30,
+  "enrolled": 5,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30445",
+  "code": "MAK 231",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Termodinamik I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yakup Erhan Böke , Mustafa Özdemir",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D368A",
+   "D368A"
+  ],
+  "capacity": 45,
+  "enrolled": 33,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30446",
+  "code": "MAK 226",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Termodinamik II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yakup Erhan Böke , Mustafa Özdemir",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:00/12:59",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "D368A",
+   "D368A"
+  ],
+  "capacity": 40,
+  "enrolled": 36,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30447",
+  "code": "MAK 232",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Termodinamik II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yakup Erhan Böke , Mustafa Özdemir",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:00/12:59",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "D368A",
+   "D368A"
+  ],
+  "capacity": 55,
+  "enrolled": 45,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30448",
+  "code": "MAK 110E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Comput.Aided Technical Drawing",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Adem Candaş , Eren Kalay",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/13:29",
+   "08:30/12:59"
+  ],
+  "rooms": [
+   "406",
+   "406"
+  ],
+  "capacity": 30,
+  "enrolled": 13,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MKN_YD_MK"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30450",
+  "code": "MAK 303",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Isı Geçişi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali İhsan Koca",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "13:30/14:59",
+   "08:30/12:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "D353",
+   "D353",
+   "D353"
+  ],
+  "capacity": 30,
+  "enrolled": 7,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD",
+   "YAN_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30451",
+  "code": "MAK 313",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Isı Geçişi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali İhsan Koca",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "13:30/14:59",
+   "08:30/12:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "D353",
+   "D353",
+   "D353"
+  ],
+  "capacity": 40,
+  "enrolled": 38,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD",
+   "YAN_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30456",
+  "code": "MAK 301",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Makina Elemanları I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İbrahim Mehmet Palabıyık , İsmail Kaya",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "R362",
+   "R362"
+  ],
+  "capacity": 40,
+  "enrolled": 28,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD",
+   "YAN_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30458",
+  "code": "MAK 339",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Makina Elemanları I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İbrahim Mehmet Palabıyık , İsmail Kaya",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe",
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29",
+   "09:30/12:29",
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "R362",
+   "R362",
+   "R362",
+   "R362"
+  ],
+  "capacity": 30,
+  "enrolled": 11,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS",
+   "MAK_YD",
+   "YAN_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

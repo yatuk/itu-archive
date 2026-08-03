@@ -1,0 +1,930 @@
+[
+ {
+  "crn": "10909",
+  "code": "KMP 101",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kompozisyon I",
+  "method": "",
+  "instructor": "Eray Altınbüken",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10910",
+  "code": "KMP 113",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Klasik Armoni I",
+  "method": "",
+  "instructor": "Nail Yavuzoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10911",
+  "code": "KMP 115",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Müzik Formları I",
+  "method": "",
+  "instructor": "Ayhan Gunca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10912",
+  "code": "KMP 193",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Armoni I",
+  "method": "",
+  "instructor": "Recep Gül",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 25,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "MUT, MUZ, SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10913",
+  "code": "KMP 195",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Form Bilgisi I",
+  "method": "",
+  "instructor": "Şirin Karadeniz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 25,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "CAB, CEB, MTR, MUT, SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10914",
+  "code": "KMP 195",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Form Bilgisi I",
+  "method": "",
+  "instructor": "Şirin Karadeniz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 25,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "CAB, CEB, MTR, MUT, SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10915",
+  "code": "KMP 197",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Konturpuan-Füg I",
+  "method": "",
+  "instructor": "Ayhan Gunca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 25,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "CAB, CEB, MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10916",
+  "code": "KMP 197",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Konturpuan-Füg I",
+  "method": "",
+  "instructor": "Ayhan Gunca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 27,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "CAB, CEB, MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10917",
+  "code": "KMP 201",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kompozisyon III",
+  "method": "",
+  "instructor": "Eray Altınbüken",
+  "buildings": [
+   "TMB\nTMB",
+   "---\n---"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10918",
+  "code": "KMP 203",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Türk Müziği Literatürü I",
+  "method": "",
+  "instructor": "Neşe Yeşim Altınel Çoban",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10919",
+  "code": "KMP 205",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kontrpuan- Füg I",
+  "method": "",
+  "instructor": "Nail Yavuzoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10920",
+  "code": "KMP 293",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Armoni I",
+  "method": "",
+  "instructor": "Recep Gül",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 25,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "CAB, CEB, MTR, MTRM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10921",
+  "code": "KMP 293",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Armoni I",
+  "method": "",
+  "instructor": "Recep Gül",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 25,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "CAB, CEB, MTR, MTRM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10922",
+  "code": "KMP 301",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kompozisyon V",
+  "method": "",
+  "instructor": "Oğuzhan Balcı",
+  "buildings": [
+   "TMB\nTMB",
+   "---\n---"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10923",
+  "code": "KMP 303",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kompozisyon Çözümleme I",
+  "method": "",
+  "instructor": "Tayfun Demirbaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10924",
+  "code": "KMP 305",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Koro Şefliği I",
+  "method": "",
+  "instructor": "Ayhan Gunca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10925",
+  "code": "KMP 307",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Prozodi",
+  "method": "",
+  "instructor": "Neşe Yeşim Altınel Çoban",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10926",
+  "code": "KMP 321",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Batı Müziği Literatürü I",
+  "method": "",
+  "instructor": "Mehmet Özkan",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10927",
+  "code": "KMP 323",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Türk Müziğinde Polifoni I",
+  "method": "",
+  "instructor": "Nail Yavuzoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10928",
+  "code": "KMP 331",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Ölçü ve Vuruş Tekniği I",
+  "method": "",
+  "instructor": "Ayhan Gunca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10929",
+  "code": "KMP 361",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Türk MzğndeFrmBilg.ve Çzmlme I",
+  "method": "",
+  "instructor": "Gözde Çolakoğlu Sarı",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 25,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10930",
+  "code": "KMP 401",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kompozisyon VII",
+  "method": "",
+  "instructor": "Oğuzhan Balcı",
+  "buildings": [
+   "TMB\nTMB",
+   "---\n---"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10931",
+  "code": "KMP 403",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kompozisyon Çözümleme III",
+  "method": "",
+  "instructor": "Ayhan Gunca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10932",
+  "code": "KMP 405",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Modern Armoni",
+  "method": "",
+  "instructor": "Nail Yavuzoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10933",
+  "code": "KMP 411",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Orkestrasyon II",
+  "method": "",
+  "instructor": "Ayhan Gunca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10934",
+  "code": "KMP 421",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Batı Müziği Literatürü III",
+  "method": "",
+  "instructor": "Mehmet Özkan",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10935",
+  "code": "KMP 423",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Türk Müziğinde Polifoni III",
+  "method": "",
+  "instructor": "Nail Yavuzoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10936",
+  "code": "KMP 433",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Partisyon Okuma I",
+  "method": "",
+  "instructor": "Recep Gül",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10937",
+  "code": "KMP 457",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Partisyon Çözümleme I",
+  "method": "",
+  "instructor": "Recep Gül",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 15,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MTR, MUT"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10938",
+  "code": "KMP 492",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Oğuzhan Balcı",
+  "buildings": [
+   "TMB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "BST, KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10939",
+  "code": "KMP 294",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Armoni II",
+  "method": "",
+  "instructor": "Nail Yavuzoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 20,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "CAB, CEB, MTR, MTRM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15107",
+  "code": "KMP 198",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Konturpuan-Füg II",
+  "method": "",
+  "instructor": "Ayhan Gunca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 10,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CAB, CEB, MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

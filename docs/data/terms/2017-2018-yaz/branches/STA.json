@@ -1,0 +1,126 @@
+[
+ {
+  "crn": "30337",
+  "code": "STA 202",
+  "branch": "STA",
+  "level": "LS",
+  "name": "Statik",
+  "method": "",
+  "instructor": "Teoman Özer",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "09:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 40,
+  "reserved": "",
+  "programs": [
+   "FIZ",
+   "INS",
+   "UCKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30344",
+  "code": "STA 201",
+  "branch": "STA",
+  "level": "LS",
+  "name": "Statik",
+  "method": "",
+  "instructor": "Necmi Aydın Ünverdi",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29",
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 48,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "EHB",
+   "ELE",
+   "ELH",
+   "GEM",
+   "JEO",
+   "MAK",
+   "MAKM",
+   "MKN",
+   "TEK",
+   "TEL",
+   "UCK",
+   "UZB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30700",
+  "code": "STA 201E",
+  "branch": "STA",
+  "level": "LS",
+  "name": "Statics",
+  "method": "",
+  "instructor": "Cemil Kurtcebe",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 47,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "DENE",
+   "EHB",
+   "EHBE",
+   "ELE",
+   "ELH",
+   "GEM",
+   "GEME",
+   "GEMK",
+   "JEO",
+   "JEOE",
+   "MAD",
+   "MAK",
+   "MAKE",
+   "TEK",
+   "TEL",
+   "UCK",
+   "UCKE",
+   "UCKM",
+   "UZB",
+   "UZBE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

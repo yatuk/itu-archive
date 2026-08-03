@@ -1,0 +1,76 @@
+[
+ {
+  "crn": "30320",
+  "code": "MUK 211",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet",
+  "method": "",
+  "instructor": "Tahir Soyugüzel",
+  "buildings": [
+   "MEDC",
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:00/12:29",
+   "13:30/16:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "ZD2",
+   "ZD2",
+   "ZD2"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "UCK_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30321",
+  "code": "MUK 211E",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Strength of Materials",
+  "method": "",
+  "instructor": "Tahir Soyugüzel",
+  "buildings": [
+   "MEDC",
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:00/12:29",
+   "09:30/12:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "ZD2",
+   "ZD2",
+   "ZD2"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "UCK_LS, UZB_LS, UZBE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

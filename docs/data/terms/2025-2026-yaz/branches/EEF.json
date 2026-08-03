@@ -1,0 +1,431 @@
+[
+ {
+  "crn": "30261",
+  "code": "EEF 210E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Differential Equations",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emre İşcan",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "10:00/13:59",
+   "10:00/12:59"
+  ],
+  "rooms": [
+   "5102",
+   "5102"
+  ],
+  "capacity": 80,
+  "enrolled": 69,
+  "reserved": "EEE_LS/10/7 | Diğer/70/62",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30264",
+  "code": "EEF 211E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Basics of Electrical Circuits",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Metin Hüner",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "5202",
+   "5202"
+  ],
+  "capacity": 80,
+  "enrolled": 55,
+  "reserved": "EEE_LS/5/5 | Diğer/75/50",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "CEN_LS",
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30265",
+  "code": "EEF 232E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Circuit and System Analysis",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bilgi Görkem Yazgaç",
+  "buildings": [
+   "MED",
+   "MED"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "A35",
+   "A35"
+  ],
+  "capacity": 125,
+  "enrolled": 122,
+  "reserved": "EEE_LS/5/5 | Diğer/120/117",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30266",
+  "code": "EEF 212E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Electromagnetic Theory I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Acar",
+  "buildings": [
+   "EEB",
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29",
+   "13:30/16:29",
+   "09:30/12:59"
+  ],
+  "rooms": [
+   "5204",
+   "5204",
+   "5204"
+  ],
+  "capacity": 110,
+  "enrolled": 102,
+  "reserved": "EEE_LS/10/4 | Diğer/100/98",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30267",
+  "code": "EEF 262E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Fundamentals of Electronics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa Altun , Hacer Atar Yıldız",
+  "buildings": [
+   "MED",
+   "MED",
+   "MED"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:59",
+   "13:30/16:29",
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "A32",
+   "A32",
+   "A32"
+  ],
+  "capacity": 125,
+  "enrolled": 119,
+  "reserved": "EEE_LS/5/2 | Diğer/120/117",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30268",
+  "code": "EEF 262E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Fundamentals of Electronics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammed Yasin Adıyaman",
+  "buildings": [
+   "EEB",
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29",
+   "14:00/16:29"
+  ],
+  "rooms": [
+   "6309",
+   "6309",
+   "6309"
+  ],
+  "capacity": 125,
+  "enrolled": 118,
+  "reserved": "EEE_LS/5/4 | Diğer/120/114",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30269",
+  "code": "EEF 206E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Signal Processing&Linear Syst.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Can",
+  "buildings": [
+   "EEB",
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:59",
+   "13:30/16:29",
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "5202",
+   "5202",
+   "5202"
+  ],
+  "capacity": 110,
+  "enrolled": 92,
+  "reserved": "EEE_LS/10/10 | Diğer/100/82",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30461",
+  "code": "EEF 205E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Introduction to Logic Design",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Osman Kaan Erol , Onur Akbatı , Yücel Aydın",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/13:29",
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "6309",
+   "6309"
+  ],
+  "capacity": 80,
+  "enrolled": 29,
+  "reserved": "EEE_LS/10/5 | Diğer/70/24",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30462",
+  "code": "EEF 110E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Intr. to Prog. Language (C)",
+  "method": "Sanal (Çevrimiçi/Online)",
+  "instructor": "Bora Döken , Cenk Andiç",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/13:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 100,
+  "enrolled": 73,
+  "reserved": "-",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30495",
+  "code": "EEF 232E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Circuit and System Analysis",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Metin Hüner",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "5201",
+   "5201"
+  ],
+  "capacity": 40,
+  "enrolled": 33,
+  "reserved": "EEE_LS/2/1 | Diğer/38/32",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

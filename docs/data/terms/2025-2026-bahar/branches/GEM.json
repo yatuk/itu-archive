@@ -1,0 +1,1670 @@
+[
+ {
+  "crn": "24178",
+  "code": "GEM 412E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Shipyard Organization",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "3D20"
+  ],
+  "capacity": 100,
+  "enrolled": 92,
+  "reserved": "",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24262",
+  "code": "GEM 102",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Geometrisi",
+  "method": "",
+  "instructor": "Cihad Delen",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "6307"
+  ],
+  "capacity": 45,
+  "enrolled": 45,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEM_YD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24267",
+  "code": "GEM 102",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Geometrisi",
+  "method": "",
+  "instructor": "Münir Cansın Özden",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "D201"
+  ],
+  "capacity": 45,
+  "enrolled": 39,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEM_YD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24275",
+  "code": "GEM 201E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Dynamics",
+  "method": "",
+  "instructor": "Mustafa Erden Yıldızdağ",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "1D7",
+   "1D7"
+  ],
+  "capacity": 40,
+  "enrolled": 27,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24282",
+  "code": "GEM 204",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Termodinamik",
+  "method": "",
+  "instructor": "Oğuz Salim Söğüt",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "2D15",
+   "ZD2"
+  ],
+  "capacity": 40,
+  "enrolled": 40,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24358",
+  "code": "GEM 203",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "",
+  "instructor": "İsmail Yalçın",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "2D13",
+   "ZD1"
+  ],
+  "capacity": 50,
+  "enrolled": 46,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24364",
+  "code": "GEM 204",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Termodinamik",
+  "method": "",
+  "instructor": "Halil Saraçoğlu",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "2D16",
+   "1D3"
+  ],
+  "capacity": 50,
+  "enrolled": 31,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24367",
+  "code": "GEM 214E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Engineering Measurements",
+  "method": "",
+  "instructor": "Emin Korkut",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "1D4"
+  ],
+  "capacity": 50,
+  "enrolled": 52,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24373",
+  "code": "GEM 216E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Heat Transfer In Engineering",
+  "method": "",
+  "instructor": "Selma Ergin",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "2D11"
+  ],
+  "capacity": 50,
+  "enrolled": 39,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24380",
+  "code": "GEM 312",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Yardımcı Makinaları",
+  "method": "",
+  "instructor": "Osman Azmi Özsoysal",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "1D7"
+  ],
+  "capacity": 45,
+  "enrolled": 45,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24382",
+  "code": "GEM 312",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Yardımcı Makinaları",
+  "method": "",
+  "instructor": "Murat Emre Demir , / Halil Saraçoğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "1D8"
+  ],
+  "capacity": 45,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24383",
+  "code": "GEM 325",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Yapı Elemanları",
+  "method": "",
+  "instructor": "Gökhan Tansel Tayyar",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "2D16",
+   "2D14"
+  ],
+  "capacity": 40,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEM_YD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24385",
+  "code": "GEM 324",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Mukavemeti",
+  "method": "",
+  "instructor": "Ertekin Bayraktarkatal",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "1D10",
+   "ZA3"
+  ],
+  "capacity": 60,
+  "enrolled": 44,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24387",
+  "code": "GEM 326E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Design",
+  "method": "",
+  "instructor": "Devrim Bülent Danışman",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/13:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "ZD1",
+   "1D10"
+  ],
+  "capacity": 90,
+  "enrolled": 85,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEM_YD, GEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24389",
+  "code": "GEM 328E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Hydrodynamics(Propulsion)",
+  "method": "",
+  "instructor": "Emin Korkut",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "1D10"
+  ],
+  "capacity": 90,
+  "enrolled": 86,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEM_YD, GEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24390",
+  "code": "GEM 332",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Elektrik Sistemleri",
+  "method": "",
+  "instructor": "Ali Sinan Çabuk",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "1D10"
+  ],
+  "capacity": 90,
+  "enrolled": 94,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24391",
+  "code": "GEM 354",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gem.İnş.&Gem.San.İş Gv.&İşç.Sğ",
+  "method": "",
+  "instructor": "Halil Saraçoğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "1D8"
+  ],
+  "capacity": 80,
+  "enrolled": 45,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24395",
+  "code": "GEM 410",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Hesaplamalı Akışkanlar Mek.",
+  "method": "",
+  "instructor": "Uğur Oral Ünal",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "1D10"
+  ],
+  "capacity": 80,
+  "enrolled": 78,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24397",
+  "code": "GEM 4901",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi İnş.&Gemi Mak. Müh.Tas.I",
+  "method": "",
+  "instructor": "Selma Ergin",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/13:29",
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "3D20",
+   "1D10"
+  ],
+  "capacity": 80,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24400",
+  "code": "GEM 4902",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi İnş.&Gem.Mak. Müh.Tas.II",
+  "method": "",
+  "instructor": "Gökhan Tansel Tayyar , / Ahmet Ergin , / Devrim Bülent Danışman , / Emin Korkut , / Erdem Üçer , / Ertekin Bayraktarkatal , / İsmail Yalçın , / Osman Azmi Özsoysal , / Şakir Bal",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/13:29",
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "ZA3",
+   "ZD1"
+  ],
+  "capacity": 80,
+  "enrolled": 64,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24404",
+  "code": "GEM 416",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Savaş Gemileri Dizaynı",
+  "method": "",
+  "instructor": "Yavuz Kayıhan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "ZD2"
+  ],
+  "capacity": 40,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24410",
+  "code": "GEM 426E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Hydrodynamic Design of Ships",
+  "method": "",
+  "instructor": "Devrim Bülent Danışman",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "2D17"
+  ],
+  "capacity": 40,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24413",
+  "code": "GEM 430E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Shipyard Organization",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "A102"
+  ],
+  "capacity": 60,
+  "enrolled": 60,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24415",
+  "code": "GEM 438E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Stability of Ships",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "ZD1"
+  ],
+  "capacity": 65,
+  "enrolled": 73,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24417",
+  "code": "GEM 474",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Deniz Araçları Sualtı Akustiği",
+  "method": "",
+  "instructor": "Şakir Bal , / Baha Zafer",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:00/14:59"
+  ],
+  "rooms": [
+   "2D15"
+  ],
+  "capacity": 35,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24422",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Bahadır Uğurlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24423",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Cihad Delen",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24426",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Devrim Bülent Danışman",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24478",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Emin Korkut",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24481",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24486",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Fuzuli Ağrı Akçay",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24488",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Halil Saraçoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24490",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Murat Emre Demir",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24492",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Mustafa Erden Yıldızdağ",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24494",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Oğuz Salim Söğüt",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24495",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Osman Azmi Özsoysal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24497",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Selma Ergin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24499",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "",
+  "instructor": "Uğur Oral Ünal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24501",
+  "code": "GEM 492",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bitirme Tasarım Projesi",
+  "method": "",
+  "instructor": "Selma Ergin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24991",
+  "code": "GEM 204E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Thermodynamics",
+  "method": "",
+  "instructor": "Murat Durmaz",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "1D10"
+  ],
+  "capacity": 60,
+  "enrolled": 42,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24993",
+  "code": "GEM 216E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Heat Transfer In Engineering",
+  "method": "",
+  "instructor": "Murat Durmaz",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "ZA4"
+  ],
+  "capacity": 60,
+  "enrolled": 42,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24994",
+  "code": "GEM 324E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Strength of Ships",
+  "method": "",
+  "instructor": "Ahmet Ergin",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "2D17",
+   "2D13"
+  ],
+  "capacity": 50,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24995",
+  "code": "GEM 312E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Marine Auxiliary Machinery",
+  "method": "",
+  "instructor": "Ahmet Ergün Palaz",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "A105"
+  ],
+  "capacity": 70,
+  "enrolled": 67,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24996",
+  "code": "GEM 326E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Design",
+  "method": "",
+  "instructor": "Cihad Delen",
+  "buildings": [
+   "BBB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "Z-17"
+  ],
+  "capacity": 50,
+  "enrolled": 33,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24997",
+  "code": "GEM 353E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Work Safety & Health Training in Shipbuilding Industry",
+  "method": "",
+  "instructor": "Halil Saraçoğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "1D5"
+  ],
+  "capacity": 50,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24998",
+  "code": "GEM 332E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Electrical Systems in Ships",
+  "method": "",
+  "instructor": "Ali Sinan Çabuk",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "2106"
+  ],
+  "capacity": 60,
+  "enrolled": 48,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24999",
+  "code": "GEM 328E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Hydrodynamics(Propulsion)",
+  "method": "",
+  "instructor": "Şakir Bal",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "09:30/10:29"
+  ],
+  "rooms": [
+   "2D15",
+   "2D12"
+  ],
+  "capacity": 50,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25000",
+  "code": "GEM 4902E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Naval Architecture & Marine Engeneering Design II",
+  "method": "",
+  "instructor": "İbrahim Tuğrul Ardıç",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/13:29",
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "2D13",
+   "2D13"
+  ],
+  "capacity": 50,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25001",
+  "code": "GEM 430E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Shipyard Organization",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "2D17"
+  ],
+  "capacity": 50,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25003",
+  "code": "GEM 447E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Vent & Air Cond Sys For Ships",
+  "method": "",
+  "instructor": "Selma Ergin",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "3D20"
+  ],
+  "capacity": 50,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25006",
+  "code": "GEM 410E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Computational Fluid Mechanics",
+  "method": "",
+  "instructor": "Ahmet Gültekin Avcı",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29",
+   "17:30/18:29"
+  ],
+  "rooms": [
+   "2D15",
+   "2D15"
+  ],
+  "capacity": 50,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25060",
+  "code": "GEM 325E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Construction",
+  "method": "",
+  "instructor": "İbrahim Tuğrul Ardıç",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "2D14"
+  ],
+  "capacity": 50,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25093",
+  "code": "GEM 407E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Methods of Ship Production",
+  "method": "",
+  "instructor": "Gökhan Tansel Tayyar",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/12:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "2D13",
+   "2D13"
+  ],
+  "capacity": 50,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "GEM_LS, GEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25260",
+  "code": "GEM 482E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Individual Graduation Project",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25264",
+  "code": "GEM 482E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Individual Graduation Project",
+  "method": "",
+  "instructor": "İbrahim Tuğrul Ardıç",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25327",
+  "code": "GEM 416E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Warship Design",
+  "method": "",
+  "instructor": "Münir Cansın Özden",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "2D12"
+  ],
+  "capacity": 50,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25624",
+  "code": "GEM 322",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Mukavemeti",
+  "method": "",
+  "instructor": "Ertekin Bayraktarkatal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25626",
+  "code": "GEM 341E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Hydrodynamics",
+  "method": "",
+  "instructor": "Uğur Oral Ünal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25627",
+  "code": "GEM 411",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Tasarımı Projesi I",
+  "method": "",
+  "instructor": "Selma Ergin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25628",
+  "code": "GEM 422",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Tasarım Projesi II",
+  "method": "",
+  "instructor": "Selma Ergin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [],
+  "prereq": "",
+  "classReq": ""
+ }
+]

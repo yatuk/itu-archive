@@ -1,0 +1,107 @@
+[
+ {
+  "crn": "30277",
+  "code": "UCK 207E",
+  "branch": "UCK",
+  "level": "LS",
+  "name": "Thermodynamics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cemil Kurtcebe",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "ZA3",
+   "ZA3"
+  ],
+  "capacity": 70,
+  "enrolled": 64,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS",
+   "UZB_LS",
+   "UZBE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30333",
+  "code": "UCK 421E",
+  "branch": "UCK",
+  "level": "LS",
+  "name": "Jet Propulsion Principles",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cemil Kurtcebe",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "ZA3",
+   "ZA3"
+  ],
+  "capacity": 80,
+  "enrolled": 68,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS",
+   "UCK_YD",
+   "UZB_LS",
+   "UZBE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "30343",
+  "code": "UCK 322E",
+  "branch": "UCK",
+  "level": "LS",
+  "name": "Flight Mechanics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Halit Süleyman Türkmen , Emre Koyuncu",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "1D10",
+   "1D10"
+  ],
+  "capacity": 40,
+  "enrolled": 25,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS",
+   "UCK_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

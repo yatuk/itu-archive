@@ -1,0 +1,84 @@
+[
+ {
+  "crn": "30340",
+  "code": "YZV 201E",
+  "branch": "YZV",
+  "level": "LS",
+  "name": "Data Structures",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Berna Kiraz",
+  "buildings": [
+   "BBB",
+   "BBB",
+   "BBB",
+   "BBB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba",
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/15:29",
+   "09:30/11:59",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "104",
+   "104",
+   "104",
+   "104"
+  ],
+  "capacity": 30,
+  "enrolled": 27,
+  "reserved": "-",
+  "programs": [
+   "YZVE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30410",
+  "code": "YZV 104E",
+  "branch": "YZV",
+  "level": "LS",
+  "name": "Introduction to Programming for Data Science",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Berna Kiraz , Tacettin Ayar",
+  "buildings": [
+   "BBB",
+   "BBB",
+   "BBB",
+   "BBB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29",
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "Z-18",
+   "Z-18",
+   "Z-18",
+   "Z-18"
+  ],
+  "capacity": 45,
+  "enrolled": 44,
+  "reserved": "-",
+  "programs": [
+   "YZVE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

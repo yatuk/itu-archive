@@ -1,0 +1,1437 @@
+[
+ {
+  "crn": "21441",
+  "code": "MTO 102",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Bilgisayarlı Teknik Resim",
+  "method": "",
+  "instructor": "Hüsnü Barbaros Soyer",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "D104"
+  ],
+  "capacity": 80,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21443",
+  "code": "MTO 222",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hidroloji",
+  "method": "",
+  "instructor": "Barış Çaldağ",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "14:30/16:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "ZD1",
+   "ZD1"
+  ],
+  "capacity": 100,
+  "enrolled": 95,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21444",
+  "code": "MTO 214",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmosfer Termodinamiği",
+  "method": "",
+  "instructor": "Kasım Koçak",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29",
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "ZD2",
+   "2D11"
+  ],
+  "capacity": 60,
+  "enrolled": 60,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21447",
+  "code": "MTO 214E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmospheric Thermodynamics",
+  "method": "",
+  "instructor": "Ahmet Duran Şahin",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29",
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "1D10",
+   "2D12"
+  ],
+  "capacity": 50,
+  "enrolled": 26,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21457",
+  "code": "MTO 254",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "İklim Bilimi",
+  "method": "",
+  "instructor": "Yurdanur Ünal",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D3"
+  ],
+  "capacity": 45,
+  "enrolled": 48,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTO_YD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21458",
+  "code": "MTO 254E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Climatology",
+  "method": "",
+  "instructor": "Barış Önol",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D4"
+  ],
+  "capacity": 45,
+  "enrolled": 46,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTO_YD, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21460",
+  "code": "MTO 304",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Havacılık Meteorolojisi",
+  "method": "",
+  "instructor": "Emrah Tuncay Özdemir",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "ZA1"
+  ],
+  "capacity": 75,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21461",
+  "code": "MTO 229E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Physics ofClouds&Precipitation",
+  "method": "",
+  "instructor": "Sevinç Asilhan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "ZA1"
+  ],
+  "capacity": 15,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21462",
+  "code": "MTO 302",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hava Analizi ve Öngörü I",
+  "method": "",
+  "instructor": "Şükran Sibel Menteş",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "ZD1",
+   "ZD1"
+  ],
+  "capacity": 60,
+  "enrolled": 43,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21463",
+  "code": "MTO 337E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmospheric Dynamics I",
+  "method": "",
+  "instructor": "Elçin Tan",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29",
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "ZD2",
+   "2D11"
+  ],
+  "capacity": 40,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21464",
+  "code": "MTO 340",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmosfer Dinamiği II",
+  "method": "",
+  "instructor": "Ali Deniz , / Bahtiyar Efe",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29",
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "1D3",
+   "2D12"
+  ],
+  "capacity": 50,
+  "enrolled": 43,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21465",
+  "code": "MTO 340E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmospheric Dynamics II",
+  "method": "",
+  "instructor": "-",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29",
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21466",
+  "code": "MTO 456",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hava Kirliliği Kontrolü",
+  "method": "",
+  "instructor": "Ceyhan Kahya",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "2D11"
+  ],
+  "capacity": 15,
+  "enrolled": 9,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21467",
+  "code": "MTO 223",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Bilgisayar Grafiğine Giriş",
+  "method": "",
+  "instructor": "Barış Önol",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "3D20"
+  ],
+  "capacity": 70,
+  "enrolled": 42,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21468",
+  "code": "MTO 463E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Numerical Weather Prediction",
+  "method": "",
+  "instructor": "Sevinç Asilhan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "2D13"
+  ],
+  "capacity": 14,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21469",
+  "code": "MTO 459E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Intro.Gen.Circ.Earth's.Atm.",
+  "method": "",
+  "instructor": "Deniz Demirhan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "1D3"
+  ],
+  "capacity": 22,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21470",
+  "code": "MTO 461E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Intr. to Planetary Atmospheres",
+  "method": "",
+  "instructor": "Zerefşan Kaymaz",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D5"
+  ],
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "FIZ_LS, FIZE_LS, IBM_LS, MTO_LS, MTOE_LS, UZBE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21472",
+  "code": "MTO 462E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Severe and Hazardous Weather",
+  "method": "",
+  "instructor": "Filiz Türk Katırcıoğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D5"
+  ],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21474",
+  "code": "MTO 460",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Enerji Meteorolojisine Giriş",
+  "method": "",
+  "instructor": "Şükran Sibel Menteş , / Bahtiyar Efe",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "ZD2"
+  ],
+  "capacity": 15,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21477",
+  "code": "MTO 460E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Intr. to Energy Meteorology",
+  "method": "",
+  "instructor": "Ahmet Duran Şahin",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D6"
+  ],
+  "capacity": 15,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21508",
+  "code": "MTO 388",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Coğrafi Bilgi Bilimi",
+  "method": "",
+  "instructor": "Filiz Türk Katırcıoğlu",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "D101"
+  ],
+  "capacity": 35,
+  "enrolled": 38,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21512",
+  "code": "MTO 406E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Wheather Analysis and Prediction II",
+  "method": "",
+  "instructor": "Emrah Tuncay Özdemir",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/11:29",
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "1D4",
+   "1D3"
+  ],
+  "capacity": 45,
+  "enrolled": 42,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21517",
+  "code": "MTO 362",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "İnsans.Hava Sis.ile Meteo.Uyg.",
+  "method": "",
+  "instructor": "Emrah Tuncay Özdemir , / Orkan Özcan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "1D5"
+  ],
+  "capacity": 15,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21519",
+  "code": "MTO 426E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Micrometeorology",
+  "method": "",
+  "instructor": "Ceyhan Kahya",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "ZA4"
+  ],
+  "capacity": 105,
+  "enrolled": 80,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21520",
+  "code": "MTO 354",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Tarım & Orman Meteorolojisi II",
+  "method": "",
+  "instructor": "Levent Şaylan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "2D15"
+  ],
+  "capacity": 15,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21521",
+  "code": "MTO 361",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hava Kirliliği Modellemesi",
+  "method": "",
+  "instructor": "Hüseyin Toros",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "1D6"
+  ],
+  "capacity": 25,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21522",
+  "code": "MTO 492",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Mikdat Kadıoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21523",
+  "code": "MTO 492E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21524",
+  "code": "MTO 4902",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Meteoroloji Müh. Tasarımı II",
+  "method": "",
+  "instructor": "Mikdat Kadıoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 68,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21525",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Mikdat Kadıoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21526",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Levent Şaylan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21527",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Kasım Koçak",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21528",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Zerefşan Kaymaz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21529",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Ahmet Duran Şahin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 4,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21530",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Yurdanur Ünal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21531",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Şükran Sibel Menteş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21532",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Sevinç Asilhan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21533",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21534",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Hüseyin Toros",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21535",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Barış Önol",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21536",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Elçin Tan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 4,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21537",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Ahmet Öztopal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21538",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21539",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Emrah Tuncay Özdemir",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21540",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Bahtiyar Efe",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 4,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21541",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Ceyhan Kahya",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 4,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21542",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Deniz Demirhan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21543",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "",
+  "instructor": "Filiz Türk Katırcıoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21557",
+  "code": "MTO 112",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Meteoroloji Alet & Gözlem Usul",
+  "method": "",
+  "instructor": "Levent Şaylan , / Barış Çaldağ",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/11:29",
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "ZA4",
+   "ZA2"
+  ],
+  "capacity": 90,
+  "enrolled": 73,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25009",
+  "code": "MTO 351E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hydrometeorology",
+  "method": "",
+  "instructor": "Sevinç Asilhan , / Elçin Tan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "2D16"
+  ],
+  "capacity": 10,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS, MTOE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25510",
+  "code": "MTO 317E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Comput.Fluid Dyn.in Meteo.Eng.",
+  "method": "",
+  "instructor": "Elçin Tan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25511",
+  "code": "MTO 445",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hava Analizi ve Öngörü II",
+  "method": "",
+  "instructor": "Şükran Sibel Menteş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25512",
+  "code": "MTO 4901",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Meteoroloji Müh. Tasarımı I",
+  "method": "",
+  "instructor": "Mikdat Kadıoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25513",
+  "code": "MTO 451E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Oceanography",
+  "method": "",
+  "instructor": "Elçin Tan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [],
+  "prereq": "",
+  "classReq": ""
+ }
+]

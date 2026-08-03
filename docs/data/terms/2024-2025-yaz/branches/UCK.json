@@ -1,0 +1,98 @@
+[
+ {
+  "crn": "30080",
+  "code": "UCK 305E",
+  "branch": "UCK",
+  "level": "LS",
+  "name": "Aerodynamics",
+  "method": "",
+  "instructor": "Hayri Acar",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/12:59",
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "1D10",
+   "1D10"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "UCK_LS, UZB_LS, UZBE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30082",
+  "code": "UCK 322E",
+  "branch": "UCK",
+  "level": "LS",
+  "name": "Flight Mechanics",
+  "method": "",
+  "instructor": "Hayri Acar",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:00/16:59",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "1D10",
+   "1D10"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "UCK_LS, UCK_YD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30318",
+  "code": "UCK 421",
+  "branch": "UCK",
+  "level": "LS",
+  "name": "Tepki ile Tahrik",
+  "method": "",
+  "instructor": "Cemil Kurtcebe",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/12:59",
+   "09:00/11:59"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "UCK_LS, UCK_YD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

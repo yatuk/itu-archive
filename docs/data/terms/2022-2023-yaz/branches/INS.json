@@ -1,0 +1,412 @@
+[
+ {
+  "crn": "30147",
+  "code": "INS 217",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "",
+  "instructor": "Teoman Özer",
+  "buildings": [
+   "INB\nINB\nINB",
+   "B206\nB206\nB206"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "08:30/09:59"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "INS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30148",
+  "code": "INS 218",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "",
+  "instructor": "Teoman Özer",
+  "buildings": [
+   "INB\nINB\nINB",
+   "B206\nB206\nB206"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "10:30/11:59"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 37,
+  "reserved": "",
+  "programs": [
+   "INS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30149",
+  "code": "INS 338E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Reinforced Concrete I",
+  "method": "",
+  "instructor": "Ali Sarı",
+  "buildings": [
+   "INB\nINB\nINB\nINB",
+   "A203\nA203\nA203\nA203"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "14:30/17:29",
+   "10:30/12:29",
+   "14:30/16:59"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "AIN, INS, INSE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30151",
+  "code": "INS 354",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hidroloji",
+  "method": "",
+  "instructor": "Yavuz Selim Güçlü",
+  "buildings": [
+   "INB\nINB",
+   "A204\nA204"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:59",
+   "08:30/11:59"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 33,
+  "reserved": "",
+  "programs": [
+   "INS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30261",
+  "code": "INS 360",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hidrolik",
+  "method": "",
+  "instructor": "Necati Erdem Ünal",
+  "buildings": [
+   "INB\nINB\nINB",
+   "A205\nA205\nA205"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/17:29",
+   "08:30/12:29",
+   "09:00/10:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 26,
+  "reserved": "",
+  "programs": [
+   "CEV, INS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30309",
+  "code": "INS 325E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Railway Engineering",
+  "method": "",
+  "instructor": "Kemal Selçuk Öğüt",
+  "buildings": [
+   "INB\nINB",
+   "A103\nA103"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "14:30/16:59",
+   "14:30/16:59"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "AIN, INS, INSE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30310",
+  "code": "INS 342E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Highway Engineering",
+  "method": "",
+  "instructor": "Kemal Selçuk Öğüt",
+  "buildings": [
+   "INB\nINB\nINB",
+   "A103\nA103\nA103"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "12:00/14:59",
+   "12:00/13:59",
+   "12:00/13:59"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "AIN, INS, INSE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30311",
+  "code": "INS 403E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Earthworks",
+  "method": "",
+  "instructor": "Kemal Selçuk Öğüt",
+  "buildings": [
+   "INB\nINB",
+   "A103\nA103"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29",
+   "09:00/11:59"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "AIN, INS, INSE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30326",
+  "code": "INS 332E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Foundation Engineering I",
+  "method": "",
+  "instructor": "Ümit Karadoğan",
+  "buildings": [
+   "INB\nINB",
+   "A202\nA202"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "AIN, INS, INSE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30329",
+  "code": "INS 218E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Strength of Materials II",
+  "method": "",
+  "instructor": "Reşat Atalay Oyguç",
+  "buildings": [
+   "INB\nINB\nINB",
+   "A201\nA201\nA201"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "08:30/12:29",
+   "14:00/17:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "INS, INSE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30342",
+  "code": "INS 360E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hydraulics",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "INB\nINB\nINB",
+   "---\n---\n---"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/17:29",
+   "08:30/12:29",
+   "13:30/14:59"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "AIN, CEV, CEVE, INS, INSE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30344",
+  "code": "INS 360",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hidrolik",
+  "method": "",
+  "instructor": "Necati Erdem Ünal",
+  "buildings": [
+   "INB\nINB\nINB",
+   "A205\nA205\nA205"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "11:00/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "CEV, INS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30355",
+  "code": "INS 360E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hydraulics",
+  "method": "",
+  "instructor": "Mehmet Melih Koşucu",
+  "buildings": [
+   "INB\nINB\nINB",
+   "A204\nA204\nA204"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/17:29",
+   "08:30/12:29",
+   "13:30/14:59"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "AIN, CEV, CEVE, INS, INSE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

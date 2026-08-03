@@ -1,0 +1,545 @@
+[
+ {
+  "crn": "12224",
+  "code": "JEF 111",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeofizik Mühendisliğine Giriş",
+  "method": "",
+  "instructor": "Mustafa Emin Demirbağ",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "A103"
+  ],
+  "capacity": 80,
+  "enrolled": 78,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12227",
+  "code": "JEF 311E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Seismology",
+  "method": "",
+  "instructor": "Gonca Örgülü",
+  "buildings": [
+   "MDB\nMDB",
+   "A204\nA204"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29",
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 64,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFE, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12230",
+  "code": "JEF 321",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Elektrik Prospeksiyon",
+  "method": "",
+  "instructor": "Ümit Avşar",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "A101"
+  ],
+  "capacity": 80,
+  "enrolled": 33,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12232",
+  "code": "JEF 425",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Mühendislik Jeofiziği",
+  "method": "",
+  "instructor": "Abdullah Karaman",
+  "buildings": [
+   "MDB\nMDB",
+   "A203\nA203"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "14:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 31,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12235",
+  "code": "JEF 428E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Readings in Geophysics",
+  "method": "",
+  "instructor": "Yasir Bashir",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "A105"
+  ],
+  "capacity": 80,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFE, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12239",
+  "code": "JEF 205E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Physics of the Earth",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12245",
+  "code": "JEF 326",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeotermal Aramalar",
+  "method": "",
+  "instructor": "Doğa Doğan",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "A204"
+  ],
+  "capacity": 15,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12247",
+  "code": "JEF 451",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Gravite&Manyetik Prospeksiyon",
+  "method": "",
+  "instructor": "Turgay İşseven",
+  "buildings": [
+   "MDB\nMDB",
+   "A204\nA204"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 38,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12251",
+  "code": "JEF 438",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Sismik Yorumlama",
+  "method": "",
+  "instructor": "Hülya Kurt",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "A302"
+  ],
+  "capacity": 15,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12253",
+  "code": "JEF 325",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeofizikte Modelleme",
+  "method": "",
+  "instructor": "Hüseyin Argun Kocaoğlu",
+  "buildings": [
+   "MDB\nKMB",
+   "A205\nBIL.LAB1"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29",
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 59,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12256",
+  "code": "JEF 310E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Geodynamics",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFE, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12260",
+  "code": "JEF 442",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Arkeo-Jeofizik",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12262",
+  "code": "JEF 440",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Paleomanyetizma",
+  "method": "",
+  "instructor": "Turgay İşseven",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "A302"
+  ],
+  "capacity": 15,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12266",
+  "code": "JEF 320",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Maden Jeofiziği",
+  "method": "",
+  "instructor": "Ümit Avşar",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "B205"
+  ],
+  "capacity": 15,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12271",
+  "code": "JEF 492",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Abdullah Karaman",
+  "buildings": [
+   "MDB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12273",
+  "code": "JEF 492E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "Abdullah Karaman",
+  "buildings": [
+   "MDB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12275",
+  "code": "JEF 4901",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeofizik Müh.Tasarım Projesi I",
+  "method": "",
+  "instructor": "Abdullah Karaman",
+  "buildings": [
+   "MDB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12279",
+  "code": "JEF 4902",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeofizik Müh.Tasarım Proje. II",
+  "method": "",
+  "instructor": "Abdullah Karaman",
+  "buildings": [
+   "MDB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "JEF"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14827",
+  "code": "JEF 207E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Physics of the Earth",
+  "method": "",
+  "instructor": "Seda Yolsal Çevikbilen",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "A205"
+  ],
+  "capacity": 80,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "JEF, JEFM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

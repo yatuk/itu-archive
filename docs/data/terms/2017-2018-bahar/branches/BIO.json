@@ -1,0 +1,861 @@
+[
+ {
+  "crn": "21174",
+  "code": "BIO 323E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Biochemistry I",
+  "method": "",
+  "instructor": "Onur Alptürk",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "KIM",
+   "KIME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21842",
+  "code": "BIO 224E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Molecular Biology",
+  "method": "",
+  "instructor": "Deniz Şahin",
+  "buildings": [
+   "MOBGAM"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "FIZE",
+   "GIDE",
+   "KMM",
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21844",
+  "code": "BIO 214",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Mikrobiyoloji",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21845",
+  "code": "BIO 214E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Microbiology",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "KMME",
+   "PETE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21846",
+  "code": "BIO 215",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Biyokimya",
+  "method": "",
+  "instructor": "Ramazan Kızıl",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "FIZ",
+   "GID",
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21849",
+  "code": "BIO 215E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Biochemistry",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "FIZE",
+   "GIDE",
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21854",
+  "code": "BIO 303",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Biyomalzemeler",
+  "method": "",
+  "instructor": "Fatma Seniha Güner",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21909",
+  "code": "BIO 101",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "General Biology",
+  "method": "",
+  "instructor": "Ceren Çıracı",
+  "buildings": [
+   "MOBGAM",
+   "KMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/16:29",
+   "11:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "MBI"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22565",
+  "code": "BIO 301E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Fundamentals of Biology",
+  "method": "",
+  "instructor": "Deniz Şahin",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 66,
+  "reserved": "",
+  "programs": [
+   "BIOM",
+   "CHZ",
+   "CHZE",
+   "DEN",
+   "ELE",
+   "ELH",
+   "ELK",
+   "FIZ",
+   "FIZE",
+   "GEM",
+   "GID",
+   "GIDE",
+   "JEO",
+   "JEOE",
+   "KIM",
+   "KIME",
+   "KMM",
+   "KMME",
+   "KOM",
+   "KOME",
+   "MAD",
+   "MADE",
+   "MET",
+   "METE",
+   "PET",
+   "PETE",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22566",
+  "code": "BIO 106EL",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "General Biology II Lab.",
+  "method": "",
+  "instructor": "Bülent Balta, Ceren Çıracı",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 90,
+  "enrolled": 91,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22567",
+  "code": "BIO 222E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Systematic Biology",
+  "method": "",
+  "instructor": "Deniz Şahin",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 69,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22571",
+  "code": "BIO 312E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Biochemistry II",
+  "method": "",
+  "instructor": "Nevin Gül-Karagüler",
+  "buildings": [
+   "MED",
+   "FEB"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 64,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22572",
+  "code": "BIO 321E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Microbiology",
+  "method": "",
+  "instructor": "Zeynep Petek Çakar, Ayten Karataş",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 64,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22573",
+  "code": "BIO 331E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Molecular Genetics",
+  "method": "",
+  "instructor": "Eda Tahir Turanlı, Arzu Karabay Korkmaz",
+  "buildings": [
+   "FEB",
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/13:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 62,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22574",
+  "code": "BIO 332E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Modern Techniques in Biology",
+  "method": "",
+  "instructor": "Hakan Bermek, Deniz Şahin",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 62,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22577",
+  "code": "BIO 342E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Enzymology",
+  "method": "",
+  "instructor": "Nevin Gül-Karagüler",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 37,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22582",
+  "code": "BIO 462E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Prot. Struct.-Function Relat.",
+  "method": "",
+  "instructor": "Gizem Dinler Doğanay",
+  "buildings": [
+   "MOBGAM"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22586",
+  "code": "BIO 466E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Developmental Biology",
+  "method": "",
+  "instructor": "Aslı Kumbasar",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 52,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22590",
+  "code": "BIO 468E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Current Topics in Ecology",
+  "method": "",
+  "instructor": "Hasan Nüzhet Dalfes",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22593",
+  "code": "BIO 471E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Protein Biotechnology",
+  "method": "",
+  "instructor": "Hakan Bermek",
+  "buildings": [
+   "MOBGAM"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22595",
+  "code": "BIO 442E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Molecular Immunology",
+  "method": "",
+  "instructor": "Ceren Çıracı",
+  "buildings": [
+   "MOBGAM"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22619",
+  "code": "BIO 301E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Fundamentals of Biology",
+  "method": "",
+  "instructor": "Deniz Şahin",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 72,
+  "reserved": "",
+  "programs": [
+   "BIOM",
+   "CHZ",
+   "CHZE",
+   "DEN",
+   "ELE",
+   "ELH",
+   "ELK",
+   "FIZ",
+   "FIZE",
+   "GEM",
+   "GID",
+   "GIDE",
+   "JEO",
+   "JEOE",
+   "KIM",
+   "KIME",
+   "KMM",
+   "KMME",
+   "KOM",
+   "KOME",
+   "MAD",
+   "MADE",
+   "MET",
+   "METE",
+   "PET",
+   "PETE",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22622",
+  "code": "BIO 106E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "General Biology II",
+  "method": "",
+  "instructor": "Bülent Balta",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "12:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 48,
+  "enrolled": 41,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22626",
+  "code": "BIO 106E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "General Biology II",
+  "method": "",
+  "instructor": "Ceren Çıracı",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "12:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 45,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "BIOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22630",
+  "code": "BIO 492",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Bülent Balta",
+  "buildings": [
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "BIO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22634",
+  "code": "BIO 492E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "Bülent Balta",
+  "buildings": [
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23966",
+  "code": "BIO 102",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Mühendislik Biyolojisi",
+  "method": "",
+  "instructor": "Celaletdin Ergun",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 120,
+  "enrolled": 65,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23969",
+  "code": "BIO 102E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Engineering Biology",
+  "method": "",
+  "instructor": "Levent Trabzon",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "IMLE",
+   "MAK",
+   "MAKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

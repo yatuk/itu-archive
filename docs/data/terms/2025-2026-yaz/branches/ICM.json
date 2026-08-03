@@ -1,0 +1,94 @@
+[
+ {
+  "crn": "30256",
+  "code": "ICM 366E",
+  "branch": "ICM",
+  "level": "LS",
+  "name": "Interior Arch.Desgn Studio III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ethem Gürer",
+  "buildings": [
+   "MMB",
+   "MMB",
+   "MMB",
+   "MMB",
+   "MMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Çarşamba",
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "08:30/12:29",
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 7,
+  "enrolled": 5,
+  "reserved": "-",
+  "programs": [
+   "IAD_LS",
+   "ICM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30257",
+  "code": "ICM 449E",
+  "branch": "ICM",
+  "level": "LS",
+  "name": "Interior Arch.Desgn Studio IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ethem Gürer",
+  "buildings": [
+   "MMB",
+   "MMB",
+   "MMB",
+   "MMB",
+   "MMB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba",
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "13:30/17:29",
+   "08:30/12:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 11,
+  "reserved": "-",
+  "programs": [
+   "IAD_LS",
+   "ICM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

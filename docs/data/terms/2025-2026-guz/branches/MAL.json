@@ -1,0 +1,114 @@
+[
+ {
+  "crn": "11515",
+  "code": "MAL 201",
+  "branch": "MAL",
+  "level": "LS",
+  "name": "Malzeme Bilimi",
+  "method": "",
+  "instructor": "Demet Aydoğmuş",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "D202"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "GID_LS, KMM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13361",
+  "code": "MAL 201",
+  "branch": "MAL",
+  "level": "LS",
+  "name": "Malzeme Bilimi",
+  "method": "",
+  "instructor": "Emin Çiftçi",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CHZ_LS, JEO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13362",
+  "code": "MAL 201E",
+  "branch": "MAL",
+  "level": "LS",
+  "name": "Materials Science",
+  "method": "",
+  "instructor": "Emin Çiftçi",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CHZE_LS, JEO_LS, JEOE_LS, MAD_LS, MADE_LS, PET_LS, PETE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13693",
+  "code": "MAL 201E",
+  "branch": "MAL",
+  "level": "LS",
+  "name": "Materials Science",
+  "method": "",
+  "instructor": "Levent Önal",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "A363"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "TEK_LS, TEKE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

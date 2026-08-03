@@ -1,0 +1,61 @@
+[
+ {
+  "crn": "10589",
+  "code": "CHE 123",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "General Chemistry I",
+  "method": "",
+  "instructor": "Caner Ünlü",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "1301"
+  ],
+  "capacity": 30,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "EHN, SEH"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12410",
+  "code": "CHE 101",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry I",
+  "method": "",
+  "instructor": "Barış Kışkan",
+  "buildings": [
+   "INB\nFEB",
+   "D203\nLAB-C"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 55,
+  "enrolled": 51,
+  "reserved": "",
+  "programs": [
+   "MBI, MCB, SCE, SED, SEN, SGI, SIN, SIS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

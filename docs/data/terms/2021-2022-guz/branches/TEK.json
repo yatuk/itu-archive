@@ -1,0 +1,988 @@
+[
+ {
+  "crn": "12946",
+  "code": "TEK 111E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Intr.to Textile Engineering",
+  "method": "",
+  "instructor": "--",
+  "buildings": [],
+  "days": [],
+  "times": [],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12956",
+  "code": "TEK 114E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Fiber Science",
+  "method": "",
+  "instructor": "İkilem Göcek, Alper Gürarslan",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12959",
+  "code": "TEK 213E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Textile Chemistry",
+  "method": "",
+  "instructor": "Berdan Kalav",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 44,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12962",
+  "code": "TEK 213E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Textile Chemistry",
+  "method": "",
+  "instructor": "Umut Kıvanç Şahin",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 53,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12965",
+  "code": "TEK 233E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Yarn Technology I",
+  "method": "",
+  "instructor": "Fatma Banu Nergis, Yeşim Beceren",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 33,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12969",
+  "code": "TEK 233E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Yarn Technology I",
+  "method": "",
+  "instructor": "Nazan Okur",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12972",
+  "code": "TEK 234E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Weaving Technology I",
+  "method": "",
+  "instructor": "Hande Sezgin",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 37,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12973",
+  "code": "TEK 254E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Knitting Technology",
+  "method": "",
+  "instructor": "Nuray Uçar",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13002",
+  "code": "TEK 305E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Textile Testing",
+  "method": "",
+  "instructor": "Osman Bülent Özipek, Nevin Çiğdem Gürsoy",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13005",
+  "code": "TEK 305E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Textile Testing",
+  "method": "",
+  "instructor": "Hale Karakaş, Nevin Çiğdem Gürsoy",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 49,
+  "reserved": "",
+  "programs": [
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13008",
+  "code": "TEK 361E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Mechanisms",
+  "method": "",
+  "instructor": "Şule Selçuk",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 59,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE",
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13011",
+  "code": "TEK 361E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Mechanisms",
+  "method": "",
+  "instructor": "Meltem Yanılmaz",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 75,
+  "enrolled": 76,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE",
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13013",
+  "code": "TEK 327E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Machine Elements",
+  "method": "",
+  "instructor": "İkilem Göcek",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13015",
+  "code": "TEK 327E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Machine Elements",
+  "method": "",
+  "instructor": "İpek Yalçın Eniş",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 40,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13019",
+  "code": "TEK 345E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Clothing Technology",
+  "method": "",
+  "instructor": "Fatma Kalaoğlu",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 41,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13021",
+  "code": "TEK 345E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Clothing Technology",
+  "method": "",
+  "instructor": "Selin Hanife Eryürük",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13023",
+  "code": "TEK 413E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Fabric Design",
+  "method": "",
+  "instructor": "Burçak Karagüzel Kayaoğlu",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 41,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13025",
+  "code": "TEK 413E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Fabric Design",
+  "method": "",
+  "instructor": "Ömer Berk Berkalp",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13030",
+  "code": "TEK 455E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Non-Woven Fabrics",
+  "method": "",
+  "instructor": "İpek Yalçın Eniş",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 40,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13032",
+  "code": "TEK 455E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Non-Woven Fabrics",
+  "method": "",
+  "instructor": "İlkay Özsev Yüksek",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13035",
+  "code": "TEK 417E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Technical Yarns",
+  "method": "",
+  "instructor": "Fatma Banu Nergis",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13037",
+  "code": "TEK 452E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Knitting Technology II",
+  "method": "",
+  "instructor": "Sena Duru",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13039",
+  "code": "TEK 453E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Synthetic &Textured Yarn Prod.",
+  "method": "",
+  "instructor": "Ali Demir",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13042",
+  "code": "TEK 457E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Pre-treatment Processes",
+  "method": "",
+  "instructor": "Berdan Kalav",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13043",
+  "code": "TEK 441E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Yarn Production Calculations",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13044",
+  "code": "TEK 447E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Ecological Textiles",
+  "method": "",
+  "instructor": "Berdan Kalav",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13045",
+  "code": "TEK 451E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Textile Prod.Management &Cntrl",
+  "method": "",
+  "instructor": "Canan Sarıçam",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 31,
+  "enrolled": 31,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13046",
+  "code": "TEK 456E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Textile Finishing Auxiliaries",
+  "method": "",
+  "instructor": "Umut Kıvanç Şahin",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 26,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13047",
+  "code": "TEK 459E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Garment Pattern Making inAppar",
+  "method": "",
+  "instructor": "Belgin Görgün",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13048",
+  "code": "TEK 483E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Motion and Time Study",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13050",
+  "code": "TEK 485E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Cost Accounting",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13051",
+  "code": "TEK 492E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Senior Design Project",
+  "method": "",
+  "instructor": "Ömer Berk Berkalp",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13053",
+  "code": "TEK 4901E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Textile Engineering Design I",
+  "method": "",
+  "instructor": "Ömer Berk Berkalp",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 41,
+  "reserved": "",
+  "programs": [
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13570",
+  "code": "TEK 4902E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Textile Engineering Design II",
+  "method": "",
+  "instructor": "Ömer Berk Berkalp",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15090",
+  "code": "TEK 113E",
+  "branch": "TEK",
+  "level": "LS",
+  "name": "Intr.to Textile Eng. & Ethics",
+  "method": "",
+  "instructor": "Cevza Candan, Fatma Banu Nergis",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 89,
+  "reserved": "",
+  "programs": [
+   "TEK",
+   "TEKE",
+   "TEKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

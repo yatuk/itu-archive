@@ -1,0 +1,84 @@
+[
+ {
+  "crn": "30262",
+  "code": "EHB 335E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Analog Electronic Circuits",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa Berke Yelten",
+  "buildings": [
+   "EEB",
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/11:59",
+   "09:30/11:59",
+   "10:00/11:59"
+  ],
+  "rooms": [
+   "5104",
+   "5104",
+   "5104"
+  ],
+  "capacity": 80,
+  "enrolled": 54,
+  "reserved": "EEE_LS/5/2 | Diğer/75/52",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30263",
+  "code": "EHB 222E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Introduction to Electronics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Tahir Güneşer",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "5102",
+   "5102"
+  ],
+  "capacity": 80,
+  "enrolled": 72,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "CEN_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

@@ -1,0 +1,6884 @@
+[
+ {
+  "crn": "22843",
+  "code": "CAB 492",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Cihangir Terzi",
+  "buildings": [
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22844",
+  "code": "CAB 278",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano IV",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22845",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Alper Rumelioğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22846",
+  "code": "CAB 178E",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piano II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "MUZE",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22847",
+  "code": "CAB 732",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama II (Orkestra)",
+  "method": "",
+  "instructor": "Mahmut Serdar Öztürk",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22848",
+  "code": "CAB 734",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama II (THM)",
+  "method": "",
+  "instructor": "Haydar Tanrıverdi",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22850",
+  "code": "CAB 736",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama II (TSM)",
+  "method": "",
+  "instructor": "Hatice Doğan Sevinç",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22851",
+  "code": "CAB 742",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama IV (Orkestra)",
+  "method": "",
+  "instructor": "Oğuzhan Balcı",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22853",
+  "code": "CAB 744",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama IV (THM)",
+  "method": "",
+  "instructor": "Haydar Tanrıverdi",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22854",
+  "code": "CAB 746",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama IV (TSM)",
+  "method": "",
+  "instructor": "Hatice Doğan Sevinç",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22862",
+  "code": "CAB 752",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama VI (Orkestra)",
+  "method": "",
+  "instructor": "Oğuzhan Balcı",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22865",
+  "code": "CAB 754",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama VI (THM)",
+  "method": "",
+  "instructor": "Haydar Tanrıverdi",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22866",
+  "code": "CAB 756",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama VI (TSM)",
+  "method": "",
+  "instructor": "Hatice Doğan Sevinç",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22868",
+  "code": "CAB 762",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama VIII (Orkestra)",
+  "method": "",
+  "instructor": "Oğuzhan Balcı",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22869",
+  "code": "CAB 764",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama VIII (THM)",
+  "method": "",
+  "instructor": "Haydar Tanrıverdi",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22870",
+  "code": "CAB 766",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Toplu Uygulama VIII (TSM)",
+  "method": "",
+  "instructor": "Hatice Doğan Sevinç",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM1",
+   "CGM2",
+   "CGM3",
+   "CGM4",
+   "CGM5",
+   "CGM8"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22871",
+  "code": "CAB 243",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano III",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22872",
+  "code": "CAB 244",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano IV",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22874",
+  "code": "CAB 244",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano IV",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22875",
+  "code": "CAB 290",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Çalgılama IV",
+  "method": "",
+  "instructor": "Neva Özgen Kösoğlu, Cenk Öztürk, Ferhan Yeprem",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22878",
+  "code": "CAB 190",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Çalgılama II",
+  "method": "",
+  "instructor": "Mehmet Bitmez, Ahmet Serhat Turunç, Ayşegül Kostak Toksoy, Metin Eke",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22880",
+  "code": "CAB 786",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Oda Müziği II",
+  "method": "",
+  "instructor": "Ahmet Hakan Şensoy",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22881",
+  "code": "CAB 792",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlmda Çalp Söylme Gelneği II",
+  "method": "",
+  "instructor": "Erdoğan Eskimez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22882",
+  "code": "CAB 730",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Uslup Tavır ve Yorum IV",
+  "method": "",
+  "instructor": "Nermin Kaygusuz",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22883",
+  "code": "CAB 794",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Doğaçlama Yöntemleri II",
+  "method": "",
+  "instructor": "Mehmet Bitmez",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22884",
+  "code": "CAB 794",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Doğaçlama Yöntemleri II",
+  "method": "",
+  "instructor": "Erdoğan Eskimez",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22885",
+  "code": "CAB 724",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Oda Müziği IV",
+  "method": "",
+  "instructor": "Ahmet Hakan Şensoy",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22886",
+  "code": "CAB 143",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano I",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22887",
+  "code": "CAB 144",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano II",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22888",
+  "code": "CAB 144",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano II",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22889",
+  "code": "CAB 343",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano V",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22890",
+  "code": "CAB 344",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano VI",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22891",
+  "code": "CAB 344",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano VI",
+  "method": "",
+  "instructor": "Alper Rumelioğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22892",
+  "code": "CAB 443",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano VII",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22893",
+  "code": "CAB 444",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano VIII",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22894",
+  "code": "CAB 444",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano VIII",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 12,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22895",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Alper Rumelioğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 18,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22896",
+  "code": "CAB 278",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano IV",
+  "method": "",
+  "instructor": "Alper Rumelioğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22897",
+  "code": "CAB 776",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "18-19.yy Saz Eserleri Rep",
+  "method": "",
+  "instructor": "Neva Özgen Kösoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22901",
+  "code": "CAB 796",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "20-21.yy Saz Eserleri Rep.",
+  "method": "",
+  "instructor": "Nermin Kaygusuz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22903",
+  "code": "CAB 778",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Oyun Havaları Repertuarı II",
+  "method": "",
+  "instructor": "Metin Eke",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22904",
+  "code": "CAB 774",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Dini Müzik Rep.II",
+  "method": "",
+  "instructor": "Yalçın Çetinkaya",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22906",
+  "code": "CAB 1116",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22908",
+  "code": "CAB 2115",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano III",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22910",
+  "code": "CAB 4122",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Metot Hazırlama ve Geliştirme",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22911",
+  "code": "CAB 3632",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VI",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22913",
+  "code": "CAB 3636",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Üç Telli Kemençe VI",
+  "method": "",
+  "instructor": "Hatice Doğan Sevinç",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22914",
+  "code": "CAB 4612",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun VIII",
+  "method": "",
+  "instructor": "Serkan Mesut Halili",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22915",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22917",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 18,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22918",
+  "code": "CAB 278",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano IV",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22919",
+  "code": "CAB 278",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano IV",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22920",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Alper Rumelioğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22922",
+  "code": "CAB 125",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kudüm I",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22923",
+  "code": "CAB 145",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun I",
+  "method": "",
+  "instructor": "Serkan Mesut Halili",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22925",
+  "code": "CAB 115",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Mey I",
+  "method": "",
+  "instructor": "Ali Yılmaz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22928",
+  "code": "CAB 131",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman I",
+  "method": "",
+  "instructor": "Ali Cihat Aşkın",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22929",
+  "code": "CAB 117",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kaval I",
+  "method": "",
+  "instructor": "Cihan Yurtcu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22935",
+  "code": "CAB 135",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyola I",
+  "method": "",
+  "instructor": "Zeynep Barut",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22936",
+  "code": "CAB 139",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kemane I",
+  "method": "",
+  "instructor": "Ferhan Yeprem",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22937",
+  "code": "CAB 119",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet I",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22938",
+  "code": "CAB 129",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "4 Telli Kemençe I",
+  "method": "",
+  "instructor": "Lale Akay",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22939",
+  "code": "CAB 123",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Flüt I",
+  "method": "",
+  "instructor": "Jülide Gündüz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM5"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22940",
+  "code": "CAB 152",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun II",
+  "method": "",
+  "instructor": "Serkan Mesut Halili",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CGM3",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22941",
+  "code": "CAB 152",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM3",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22942",
+  "code": "CAB 152",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun II",
+  "method": "",
+  "instructor": "Ayşegül Kostak Toksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "CGM3",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22943",
+  "code": "CAB 158",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama II",
+  "method": "",
+  "instructor": "Şendoğan Karadeli",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22944",
+  "code": "CAB 158",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama II",
+  "method": "",
+  "instructor": "Metin Eke",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22945",
+  "code": "CAB 158",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama II",
+  "method": "",
+  "instructor": "Engin Şafak Gürler",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22946",
+  "code": "CAB 158",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama II",
+  "method": "",
+  "instructor": "Erdoğan Eskimez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22947",
+  "code": "CAB 158",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama II",
+  "method": "",
+  "instructor": "Asim Kırca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22948",
+  "code": "CAB 164",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Mey II",
+  "method": "",
+  "instructor": "Ali Yılmaz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22949",
+  "code": "CAB 1102",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman II",
+  "method": "",
+  "instructor": "Pınar Tezişçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22951",
+  "code": "CAB 166",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kaval II",
+  "method": "",
+  "instructor": "Haydar Tanrıverdi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22952",
+  "code": "CAB 160",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM4",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22953",
+  "code": "CAB 160",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM4",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22954",
+  "code": "CAB 160",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "CGM4",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22955",
+  "code": "CAB 160",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud II",
+  "method": "",
+  "instructor": "Mehmet Bitmez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM4",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22956",
+  "code": "CAB 160E",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MUZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22959",
+  "code": "CAB 176",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kemane II",
+  "method": "",
+  "instructor": "Ferhan Yeprem",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22965",
+  "code": "CAB 188",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Gitar II",
+  "method": "",
+  "instructor": "Tolgahan Çoğulu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 6,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "CGM2",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22968",
+  "code": "CAB 170",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "3 Telli Kemençe II",
+  "method": "",
+  "instructor": "Hatice Doğan Sevinç",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22974",
+  "code": "CAB 162",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ney II",
+  "method": "",
+  "instructor": "Ali Tüfekçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22975",
+  "code": "CAB 168",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet II",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22977",
+  "code": "CAB 196",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel II",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22978",
+  "code": "CAB 180",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Asmalı Davul II",
+  "method": "",
+  "instructor": "Eyüp Uzunkaya",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22979",
+  "code": "CAB 194",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Zurna II",
+  "method": "",
+  "instructor": "Ünal Yürük",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22980",
+  "code": "CAB 174",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Karadeniz Kemençesi II",
+  "method": "",
+  "instructor": "Aydın Balcı",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22981",
+  "code": "CAB 282",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bendir",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22982",
+  "code": "CAB 252",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun IV",
+  "method": "",
+  "instructor": "Ayşegül Kostak Toksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CGM3",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22984",
+  "code": "CAB 254",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur IV",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22987",
+  "code": "CAB 258",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama IV",
+  "method": "",
+  "instructor": "Şendoğan Karadeli",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22990",
+  "code": "CAB 258",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama IV",
+  "method": "",
+  "instructor": "Metin Eke",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22992",
+  "code": "CAB 258",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama IV",
+  "method": "",
+  "instructor": "Engin Şafak Gürler",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22994",
+  "code": "CAB 258",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama IV",
+  "method": "",
+  "instructor": "Adnan Koç",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22997",
+  "code": "CAB 258",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama IV",
+  "method": "",
+  "instructor": "Asim Kırca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "22999",
+  "code": "CAB 264",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Mey IV",
+  "method": "",
+  "instructor": "Ali Yılmaz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23005",
+  "code": "CAB 2102",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman IV",
+  "method": "",
+  "instructor": "Pınar Tezişçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23007",
+  "code": "CAB 288",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Gitar IV",
+  "method": "",
+  "instructor": "Tufan Kurdoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CGM2",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23021",
+  "code": "CAB 276",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kemane IV",
+  "method": "",
+  "instructor": "Ferhan Yeprem",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23022",
+  "code": "CAB 260",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud IV",
+  "method": "",
+  "instructor": "Mehmet Bitmez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM4",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23026",
+  "code": "CAB 260",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud IV",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CGM4",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23028",
+  "code": "CAB 260",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud IV",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM4",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23031",
+  "code": "CAB 268",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet IV",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23035",
+  "code": "CAB 272",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "4 Telli Kemençe IV",
+  "method": "",
+  "instructor": "Lale Akay",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23036",
+  "code": "CAB 296",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel IV",
+  "method": "",
+  "instructor": "Gülyar Say",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23039",
+  "code": "CAB 296E",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Violoncello IV",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MUZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23041",
+  "code": "CAB 2184",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kontrbas IV",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23045",
+  "code": "CAB 280",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Koltuk Davul II",
+  "method": "",
+  "instructor": "Salim Sınar",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23047",
+  "code": "CAB 2110",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Akordiyon IV",
+  "method": "",
+  "instructor": "Serhat Tansu Altuğ",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23050",
+  "code": "CAB 274",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Karadeniz Kemençesi IV",
+  "method": "",
+  "instructor": "Aydın Balcı",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23054",
+  "code": "CAB 380",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Asmalı Davul II",
+  "method": "",
+  "instructor": "Eyüp Uzunkaya",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23057",
+  "code": "CAB 358",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama VI",
+  "method": "",
+  "instructor": "Asim Kırca",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23059",
+  "code": "CAB 358",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama VI",
+  "method": "",
+  "instructor": "Engin Şafak Gürler",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23064",
+  "code": "CAB 352",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun VI",
+  "method": "",
+  "instructor": "Serkan Mesut Halili",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM3",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23065",
+  "code": "CAB 354",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur VI",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23067",
+  "code": "CAB 3102",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "KemanVI",
+  "method": "",
+  "instructor": "Ahmet Hakan Şensoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23069",
+  "code": "CAB 366",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kaval VI",
+  "method": "",
+  "instructor": "Haydar Tanrıverdi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23072",
+  "code": "CAB 386",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Gitar VI",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM2",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23076",
+  "code": "CAB 362",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ney VI",
+  "method": "",
+  "instructor": "Ali Tüfekçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23079",
+  "code": "CAB 368",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet VI",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23081",
+  "code": "CAB 396",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VI",
+  "method": "",
+  "instructor": "Yelda Özgen Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23083",
+  "code": "CAB 3184",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kontrbas VI",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23087",
+  "code": "CAB 458",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama VIII",
+  "method": "",
+  "instructor": "Engin Şafak Gürler",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23088",
+  "code": "CAB 458",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama VIII",
+  "method": "",
+  "instructor": "Şendoğan Karadeli",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "CGM1",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23090",
+  "code": "CAB 464",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Mey VIII",
+  "method": "",
+  "instructor": "Ali Yılmaz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23093",
+  "code": "CAB 4102",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman VIII",
+  "method": "",
+  "instructor": "Pınar Tezişçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23096",
+  "code": "CAB 466",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kaval VIII",
+  "method": "",
+  "instructor": "Haydar Tanrıverdi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23100",
+  "code": "CAB 470",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "3 Telli Kemençe VIII",
+  "method": "",
+  "instructor": "Neva Özgen Kösoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23106",
+  "code": "CAB 472",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "4 Telli Kemençe VIII",
+  "method": "",
+  "instructor": "Lale Akay",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23110",
+  "code": "CAB 496",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VIII",
+  "method": "",
+  "instructor": "Yelda Özgen Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23345",
+  "code": "CAB 133",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel I",
+  "method": "",
+  "instructor": "Gülyar Say",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23346",
+  "code": "CAB 126",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kudüm II",
+  "method": "",
+  "instructor": "Serhat Tansu Altuğ",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23349",
+  "code": "CAB 146",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun II",
+  "method": "",
+  "instructor": "Serkan Mesut Halili",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23351",
+  "code": "CAB 116",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Mey II",
+  "method": "",
+  "instructor": "Ali Yılmaz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23353",
+  "code": "CAB 142",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23356",
+  "code": "CAB 108",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama II",
+  "method": "",
+  "instructor": "Adnan Koç",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23357",
+  "code": "CAB 108",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama II",
+  "method": "",
+  "instructor": "Erdoğan Eskimez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23359",
+  "code": "CAB 108",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama II",
+  "method": "",
+  "instructor": "Metin Eke",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23362",
+  "code": "CAB 148",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur II",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23366",
+  "code": "CAB 132",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman II",
+  "method": "",
+  "instructor": "Ali Cihat Aşkın",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23370",
+  "code": "CAB 118",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kaval II",
+  "method": "",
+  "instructor": "Cihan Yurtcu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23374",
+  "code": "CAB 140",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kemane II",
+  "method": "",
+  "instructor": "Ferhan Yeprem",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23378",
+  "code": "CAB 136",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyola II",
+  "method": "",
+  "instructor": "Zeynep Barut",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23381",
+  "code": "CAB 120",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet II",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23384",
+  "code": "CAB 130",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "4 Telli Kemençe II",
+  "method": "",
+  "instructor": "Lale Akay",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23386",
+  "code": "CAB 134",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel II",
+  "method": "",
+  "instructor": "Gülyar Say",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23387",
+  "code": "CAB 134",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel II",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23389",
+  "code": "CAB 124",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Flüt II",
+  "method": "",
+  "instructor": "Jülide Gündüz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM5"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23390",
+  "code": "CAB 225",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Asmalı Davul I",
+  "method": "",
+  "instructor": "Eyüp Uzunkaya",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23396",
+  "code": "CAB 200",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Zurna III",
+  "method": "",
+  "instructor": "Ünal Yürük",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23399",
+  "code": "CAB 249",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Gitar III",
+  "method": "",
+  "instructor": "Tolgahan Çoğulu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23416",
+  "code": "CAB 209",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud III",
+  "method": "",
+  "instructor": "Mehmet Bitmez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23418",
+  "code": "CAB 235",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyola III",
+  "method": "",
+  "instructor": "Zeynep Barut",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23428",
+  "code": "CAB 221",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Obua III",
+  "method": "",
+  "instructor": "Damla Tunçer",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23432",
+  "code": "CAB 219",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet III",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23433",
+  "code": "CAB 237",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kontrbas III",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23435",
+  "code": "CAB 226",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Asmalı Davul II",
+  "method": "",
+  "instructor": "Eyüp Uzunkaya",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23438",
+  "code": "CAB 208",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama IV",
+  "method": "",
+  "instructor": "Cihangir Terzi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23440",
+  "code": "CAB 242",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano IV",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23442",
+  "code": "CAB 210",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud IV",
+  "method": "",
+  "instructor": "Mehmet Bitmez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23447",
+  "code": "CAB 250",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Gitar IV",
+  "method": "",
+  "instructor": "Tolgahan Çoğulu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23450",
+  "code": "CAB 236",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyola IV",
+  "method": "",
+  "instructor": "Zeynep Barut",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23455",
+  "code": "CAB 220",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet 1V",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23458",
+  "code": "CAB 222",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Obua IV",
+  "method": "",
+  "instructor": "Damla Tunçer",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23462",
+  "code": "CAB 325",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Def",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23466",
+  "code": "CAB 345",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun V",
+  "method": "",
+  "instructor": "Ayşegül Kostak Toksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23468",
+  "code": "CAB 341",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano V",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23471",
+  "code": "CAB 341",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano V",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23475",
+  "code": "CAB 315",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Mey V",
+  "method": "",
+  "instructor": "Ali Yılmaz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23476",
+  "code": "CAB 347",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur V",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23479",
+  "code": "CAB 335",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyola V",
+  "method": "",
+  "instructor": "Zeynep Barut",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23482",
+  "code": "CAB 313",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ney V",
+  "method": "",
+  "instructor": "Ali Tüfekçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23485",
+  "code": "CAB 319",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet V",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23487",
+  "code": "CAB 333",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel V",
+  "method": "",
+  "instructor": "Yelda Özgen Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23489",
+  "code": "CAB 326",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Koltuk Davulu",
+  "method": "",
+  "instructor": "Salim Sınar",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23492",
+  "code": "CAB 316",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Mey VI",
+  "method": "",
+  "instructor": "Ali Yılmaz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23495",
+  "code": "CAB 348",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur VI",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23498",
+  "code": "CAB 346",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun VI",
+  "method": "",
+  "instructor": "Serkan Mesut Halili",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23500",
+  "code": "CAB 346",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun VI",
+  "method": "",
+  "instructor": "Ayşegül Kostak Toksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23503",
+  "code": "CAB 308",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama VI",
+  "method": "",
+  "instructor": "Şendoğan Karadeli",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23505",
+  "code": "CAB 332",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman VI",
+  "method": "",
+  "instructor": "Ahmet Hakan Şensoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23508",
+  "code": "CAB 332",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman VI",
+  "method": "",
+  "instructor": "Ali Cihat Aşkın",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23511",
+  "code": "CAB 318",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kaval VI",
+  "method": "",
+  "instructor": "Cihan Yurtcu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23513",
+  "code": "CAB 336",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyola VI",
+  "method": "",
+  "instructor": "Zeynep Barut",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23516",
+  "code": "CAB 320",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet VI",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23521",
+  "code": "CAB 314",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ney VI",
+  "method": "",
+  "instructor": "Ali Tüfekçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23522",
+  "code": "CAB 334",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VI",
+  "method": "",
+  "instructor": "Yelda Özgen Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23524",
+  "code": "CAB 334",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VI",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23525",
+  "code": "CAB 447",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur VII",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23526",
+  "code": "CAB 445",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun VII",
+  "method": "",
+  "instructor": "Ayşegül Kostak Toksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23527",
+  "code": "CAB 407",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama VII",
+  "method": "",
+  "instructor": "Şendoğan Karadeli",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23528",
+  "code": "CAB 431",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman VII",
+  "method": "",
+  "instructor": "Ali Cihat Aşkın",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23529",
+  "code": "CAB 431",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman VII",
+  "method": "",
+  "instructor": "Ahmet Hakan Şensoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23530",
+  "code": "CAB 427",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "3 Telli Kemençe VII",
+  "method": "",
+  "instructor": "Neva Özgen Kösoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23531",
+  "code": "CAB 439",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kemane VII",
+  "method": "",
+  "instructor": "Ferhan Yeprem",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23532",
+  "code": "CAB 419",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet VII",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23533",
+  "code": "CAB 413",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ney VII",
+  "method": "",
+  "instructor": "Ali Tüfekçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23534",
+  "code": "CAB 433",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VII",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23536",
+  "code": "CAB 433",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VII",
+  "method": "",
+  "instructor": "Gülyar Say",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23537",
+  "code": "CAB 423",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Flüt VII",
+  "method": "",
+  "instructor": "Jülide Gündüz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM5"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23539",
+  "code": "CAB 429",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "4 Telli Kemençe VII",
+  "method": "",
+  "instructor": "Lale Akay",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23540",
+  "code": "CAB 448",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur VIII",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23542",
+  "code": "CAB 408",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bağlama VIII",
+  "method": "",
+  "instructor": "Şendoğan Karadeli",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23544",
+  "code": "CAB 432",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Keman VIII",
+  "method": "",
+  "instructor": "Ali Cihat Aşkın",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23545",
+  "code": "CAB 406",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tar VIII",
+  "method": "",
+  "instructor": "Ahmet Serhat Turunç",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23546",
+  "code": "CAB 428",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "3 Telli Kemençe VIII",
+  "method": "",
+  "instructor": "Neva Özgen Kösoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23549",
+  "code": "CAB 440",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kemane VIII",
+  "method": "",
+  "instructor": "Ferhan Yeprem",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23551",
+  "code": "CAB 414",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ney VIII",
+  "method": "",
+  "instructor": "Ali Tüfekçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23554",
+  "code": "CAB 420",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet VIII",
+  "method": "",
+  "instructor": "Özlem Kolat Çakmaksoy",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23555",
+  "code": "CAB 434",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VIII",
+  "method": "",
+  "instructor": "Gülyar Say",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23556",
+  "code": "CAB 430",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "4 Telli Kemençe VIII",
+  "method": "",
+  "instructor": "Lale Akay",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23558",
+  "code": "CAB 424",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Flüt VIII",
+  "method": "",
+  "instructor": "Jülide Gündüz",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "CGM5"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23559",
+  "code": "CAB 182",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kudüm II",
+  "method": "",
+  "instructor": "Serhat Tansu Altuğ",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23567",
+  "code": "CAB 154",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur II",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "23967",
+  "code": "CAB 706",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Zurna II",
+  "method": "",
+  "instructor": "Ünal Yürük",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24606",
+  "code": "CAB 718",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Vurmalı Türk Halk Çalgıları II",
+  "method": "",
+  "instructor": "Serhat Tansu Altuğ",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25047",
+  "code": "CAB 360",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud VI",
+  "method": "",
+  "instructor": "Mehmet Bitmez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM4",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25124",
+  "code": "CAB 241",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano III",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25240",
+  "code": "CAB 456",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tar VIII",
+  "method": "",
+  "instructor": "Ahmet Serhat Turunç",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25289",
+  "code": "CAB 442",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano VIII",
+  "method": "",
+  "instructor": "Mehru Ensari",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25293",
+  "code": "CAB 280",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Koltuk Davul II",
+  "method": "",
+  "instructor": "Salim Sınar",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25304",
+  "code": "CAB 462",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ney VIII",
+  "method": "",
+  "instructor": "Ali Tüfekçi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25328",
+  "code": "CAB 188E",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Guitar II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MUZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25348",
+  "code": "CAB 3635",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Üç Telli Kemençe V",
+  "method": "",
+  "instructor": "Hatice Doğan Sevinç",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25349",
+  "code": "CAB 794",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Doğaçlama Yöntemleri II",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25362",
+  "code": "CAB 342",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano VI",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25371",
+  "code": "CAB 4632",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VIII",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25373",
+  "code": "CAB 4616",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud VIII",
+  "method": "",
+  "instructor": "Mehmet Bitmez",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25375",
+  "code": "CAB 1115",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano I",
+  "method": "",
+  "instructor": "Sıtkı Kandemir Basmacıoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25389",
+  "code": "CAB 204",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Zurna IV",
+  "method": "",
+  "instructor": "Ünal Yürük",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25430",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25431",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25432",
+  "code": "CAB 168",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUZ",
+   "THO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25445",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25466",
+  "code": "CAB 238",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kontrbas IV",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25500",
+  "code": "CAB 296",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel IV",
+  "method": "",
+  "instructor": "Yelda Özgen Öztürk",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25501",
+  "code": "CAB 465",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kaval VII",
+  "method": "",
+  "instructor": "Haydar Tanrıverdi",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25502",
+  "code": "CAB 154",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25505",
+  "code": "CAB 247",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Tanbur III",
+  "method": "",
+  "instructor": "Birol Yayla",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CAB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25506",
+  "code": "CAB 386",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Gitar VI",
+  "method": "",
+  "instructor": "Tolgahan Çoğulu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM2",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25508",
+  "code": "CAB 386",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Gitar VI",
+  "method": "",
+  "instructor": "Tolgahan Çoğulu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM2",
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25542",
+  "code": "CAB 282",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Bendir",
+  "method": "",
+  "instructor": "Salim Sınar",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "CGM6",
+   "CGM7",
+   "CGM8",
+   "MTR",
+   "MUZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

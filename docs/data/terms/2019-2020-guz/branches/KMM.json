@@ -1,0 +1,904 @@
+[
+ {
+  "crn": "10971",
+  "code": "KMM 111",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kimya Müh. Giriş ve Etik",
+  "method": "",
+  "instructor": "Mehmet Ferhat Yardım",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "14:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 95,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10973",
+  "code": "KMM 211",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kütle ve Enerji Denklikleri",
+  "method": "",
+  "instructor": "Fatoş Yüksel Güvenilir",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 45,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10975",
+  "code": "KMM 211",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kütle ve Enerji Denklikleri",
+  "method": "",
+  "instructor": "Fatma Elif Genceli Güner",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 42,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10976",
+  "code": "KMM 211E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Mass and Energy Balances",
+  "method": "",
+  "instructor": "Melek Mümine Erol Taygun",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10977",
+  "code": "KMM 311E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Thermodynamics II",
+  "method": "",
+  "instructor": "Gamze Gümüşlü Gür",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 34,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10979",
+  "code": "KMM 321E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Heat Transfer",
+  "method": "",
+  "instructor": "Fatma Elif Genceli Güner",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10980",
+  "code": "KMM 331",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kütle Aktarımı",
+  "method": "",
+  "instructor": "Gülhayat Saygılı",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 38,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10981",
+  "code": "KMM 331E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Mass Transfer",
+  "method": "",
+  "instructor": "Moiz Elnekave",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10982",
+  "code": "KMM 332",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Ayırma İşlemleri",
+  "method": "",
+  "instructor": "Gülhayat Saygılı",
+  "buildings": [
+   "KMB",
+   "KMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 33,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10983",
+  "code": "KMM 411",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Proses Kontrol",
+  "method": "",
+  "instructor": "Serdar Yaman",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 41,
+  "enrolled": 42,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10984",
+  "code": "KMM 411E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Process Control",
+  "method": "",
+  "instructor": "Devrim Barış Kaymak",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 41,
+  "enrolled": 40,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10985",
+  "code": "KMM 412",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kimyasal Teknolojiler",
+  "method": "",
+  "instructor": "Melek Tüter",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 41,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10986",
+  "code": "KMM 412E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Chemical Technologies",
+  "method": "",
+  "instructor": "Hale Gürbüz",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 41,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10987",
+  "code": "KMM 413",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Biyokatalizörler ve Karakter",
+  "method": "",
+  "instructor": "Fatoş Yüksel Güvenilir",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10988",
+  "code": "KMM 413E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Biocatatlysts &Their..",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10989",
+  "code": "KMM 421E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Chemical Reaction Eng II",
+  "method": "",
+  "instructor": "Ahmet Sirkecioğlu, Ayşe Erdem, Gamze Gümüşlü Gür",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 80,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10990",
+  "code": "KMM 429",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kimya End Korozyon & Malz Seçi",
+  "method": "",
+  "instructor": "Hanzade Açma",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10991",
+  "code": "KMM 431",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kimya Mühendisliği Tasarımı I",
+  "method": "",
+  "instructor": "Ayşe Özge Kürkçüoğlu Levitas, Devrim Barış Kaymak",
+  "buildings": [
+   "KMB",
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 68,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10992",
+  "code": "KMM 451",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kimya Mühendisliği Lab. I",
+  "method": "",
+  "instructor": "Çiğdem Oral, Ayşe Arifoğlu, Cemile Yerlikaya, Nalan Erdöl Aydın, Osman Eksik",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10993",
+  "code": "KMM 431E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Chemical Engineering Design I",
+  "method": "",
+  "instructor": "Hale Gürbüz",
+  "buildings": [
+   "KMB",
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10994",
+  "code": "KMM 451",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kimya Mühendisliği Lab. I",
+  "method": "",
+  "instructor": "Çiğdem Oral, Ayşe Arifoğlu, Cemile Yerlikaya, Nalan Erdöl Aydın, Osman Eksik",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10995",
+  "code": "KMM 451E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Chemical Engineering Lab. I",
+  "method": "",
+  "instructor": "Çiğdem Oral, Ayşe Arifoğlu, Cemile Yerlikaya, Nalan Erdöl Aydın, Osman Eksik",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10996",
+  "code": "KMM 465",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Çevre Kimyası ve Teknolojisi",
+  "method": "",
+  "instructor": "Ahmet Alper Aydın",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10998",
+  "code": "KMM 465E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Environmental Chemis..",
+  "method": "",
+  "instructor": "Moiz Elnekave",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10999",
+  "code": "KMM 485",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Polimer Kimyası ve Teknolojisi",
+  "method": "",
+  "instructor": "Ahmet Tuncer Erciyes",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11000",
+  "code": "KMM 492",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Gülhayat Saygılı",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11001",
+  "code": "KMM 492E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "Gülhayat Saygılı",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11009",
+  "code": "KMM 102E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Intr. to Comp.Prog.in Python",
+  "method": "",
+  "instructor": "Reha Yavuz",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 52,
+  "enrolled": 59,
+  "reserved": "",
+  "programs": [
+   "KMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11010",
+  "code": "KMM 224",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kimya Müh.Termodinamiği",
+  "method": "",
+  "instructor": "Sadriye Oskay, Ayşegül Meriçboyu, Reha Yavuz",
+  "buildings": [
+   "KMB",
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29",
+   "09:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11011",
+  "code": "KMM 315E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Physical Che.for Chemical Eng.",
+  "method": "",
+  "instructor": "Fethiye Aylin Sungur",
+  "buildings": [
+   "KMB",
+   "KMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "15:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 39,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11012",
+  "code": "KMM 305E",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Heat and Mass Transfer",
+  "method": "",
+  "instructor": "Şerife Birgül Ersolmaz, Hüsnü Atakül",
+  "buildings": [
+   "KMB",
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15560",
+  "code": "KMM 434",
+  "branch": "KMM",
+  "level": "LS",
+  "name": "Kalite,Çevre ve Güvenlik",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "KMM",
+   "KMMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

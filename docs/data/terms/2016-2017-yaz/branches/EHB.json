@@ -1,0 +1,456 @@
+[
+ {
+  "crn": "30513",
+  "code": "EHB 211",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Elektrik Devre Temelleri",
+  "method": "",
+  "instructor": "Metin Yazgı",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "ELE",
+   "ELK",
+   "KOM",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30514",
+  "code": "EHB 211E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Basic of Electrical Circuits",
+  "method": "",
+  "instructor": "Mustafa Berke Yelten",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "14:00/16:59"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "ELE",
+   "ELK",
+   "ELKE",
+   "KOM",
+   "KOME",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30516",
+  "code": "EHB 231",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Elektronik I",
+  "method": "",
+  "instructor": "Metin Yazgı",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "ELE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30517",
+  "code": "EHB 232E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Circuit and System Analysis",
+  "method": "",
+  "instructor": "İsmail Serdar Özoğuz",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "ELE",
+   "ELK",
+   "ELKE",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30518",
+  "code": "EHB 252E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Signals and Systems",
+  "method": "",
+  "instructor": "Şahin Serhat Şeker",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "ELE",
+   "ELK",
+   "ELKE",
+   "KOM",
+   "KOME",
+   "MKN",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30519",
+  "code": "EHB 262E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Electronics II",
+  "method": "",
+  "instructor": "Metin Yazgı",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "ELE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30520",
+  "code": "EHB 362E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Microwave Engineering",
+  "method": "",
+  "instructor": "Mesut Kartal",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "ELE",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30521",
+  "code": "EHB 437",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Biyomedikal Düzenler",
+  "method": "",
+  "instructor": "Zümray Ölmez",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "ELE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30677",
+  "code": "EHB 332E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Network Synthesis",
+  "method": "",
+  "instructor": "İsmail Serdar Özoğuz",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "ELE",
+   "ELH"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30680",
+  "code": "EHB 212E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Intr.to Electromagnetic Fields",
+  "method": "",
+  "instructor": "İbrahim Akduman",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "ELE",
+   "ELH",
+   "ELK",
+   "ELKE",
+   "KOM",
+   "KOME",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30681",
+  "code": "EHB 222E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Introduction to Electronics",
+  "method": "",
+  "instructor": "İbrahim Çatalkaya",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "ELE",
+   "ELH",
+   "ELK",
+   "ELKE",
+   "KOM",
+   "KOME",
+   "MKN",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30723",
+  "code": "EHB 212E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Intr.to Electromagnetic Fields",
+  "method": "",
+  "instructor": "İbrahim Akduman",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "ELE",
+   "ELH",
+   "ELK",
+   "ELKE",
+   "KOM",
+   "KOME",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30724",
+  "code": "EHB 222E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Introduction to Electronics",
+  "method": "",
+  "instructor": "Bora Döken",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "ELE",
+   "ELH",
+   "ELK",
+   "ELKE",
+   "KOM",
+   "KOME",
+   "MKN",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

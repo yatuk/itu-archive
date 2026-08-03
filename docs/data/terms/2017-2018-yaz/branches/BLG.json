@@ -1,0 +1,139 @@
+[
+ {
+  "crn": "30367",
+  "code": "BLG 221E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Data Structures",
+  "method": "",
+  "instructor": "Bora Döken",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30387",
+  "code": "BLG 212",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Mikroişlemci Sistemleri",
+  "method": "",
+  "instructor": "Tamer Ölmez",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 33,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "ELE",
+   "ELK",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30388",
+  "code": "BLG 231",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Sayısal Devreler",
+  "method": "",
+  "instructor": "Ali Sinan Çabuk",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 47,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "ELE",
+   "ELH",
+   "ELK",
+   "KOM",
+   "MKN",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30730",
+  "code": "BLG 102E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Intr to Sci&Eng; Comp (C)",
+  "method": "",
+  "instructor": "Yaşar Erenler",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "12:30/15:29",
+   "15:30/17:29",
+   "12:30/15:29",
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 49,
+  "reserved": "",
+  "programs": [
+   "BLG",
+   "BLGE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

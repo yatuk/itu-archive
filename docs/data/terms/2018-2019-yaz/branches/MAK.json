@@ -1,0 +1,539 @@
+[
+ {
+  "crn": "30491",
+  "code": "MAK 118",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Statik",
+  "method": "",
+  "instructor": "Necmi Aydın Ünverdi",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30492",
+  "code": "MAK 217",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Dinamik",
+  "method": "",
+  "instructor": "Necmi Aydın Ünverdi",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 53,
+  "reserved": "",
+  "programs": [
+   "MAK",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30494",
+  "code": "MAK 224E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Engineering Materials",
+  "method": "",
+  "instructor": "Levent Trabzon",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 49,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30495",
+  "code": "MAK 313",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Isı Geçişi",
+  "method": "",
+  "instructor": "Ersin Sayar",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 65,
+  "enrolled": 67,
+  "reserved": "",
+  "programs": [
+   "MAK",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30496",
+  "code": "MAK 4018E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Quality Control in Manufacturi",
+  "method": "",
+  "instructor": "Ali Gökşenli",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 58,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE",
+   "MAK",
+   "MAKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30497",
+  "code": "MAK 341",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Makina Elemanları I",
+  "method": "",
+  "instructor": "Hacı Abdullah Taşdemir",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/17:29",
+   "09:30/12:29",
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 65,
+  "enrolled": 74,
+  "reserved": "",
+  "programs": [
+   "MAK",
+   "MAKM",
+   "MKN",
+   "PET"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30498",
+  "code": "MAK 353",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "İmal Usulleri",
+  "method": "",
+  "instructor": "Ali Gökşenli",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 65,
+  "enrolled": 65,
+  "reserved": "",
+  "programs": [
+   "MAK",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30499",
+  "code": "MAK 213",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Malzeme Bilimi",
+  "method": "",
+  "instructor": "Levent Trabzon",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 46,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30501",
+  "code": "MAK 202E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Numerical Meth.for Mech. Eng.",
+  "method": "",
+  "instructor": "Adil Yücel",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30502",
+  "code": "MAK 105",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Makine Tasarımına Giriş",
+  "method": "",
+  "instructor": "Yusuf Ziya Kocabal",
+  "buildings": [
+   "MKB",
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/17:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 40,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30503",
+  "code": "MAK 110E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Comput.Aided Technical Drawing",
+  "method": "",
+  "instructor": "Hacı Mustafa Özkırım",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 32,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30504",
+  "code": "MAK 104E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Intr to Comp in Mech. Eng (C)",
+  "method": "",
+  "instructor": "Adil Yücel",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 45,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30685",
+  "code": "MAK 217",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Dinamik",
+  "method": "",
+  "instructor": "Necmi Aydın Ünverdi",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "MAK",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30698",
+  "code": "MAK 333",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Sistem Dinamiği ve Kontrol",
+  "method": "",
+  "instructor": "Mustafa Resa Becan",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 84,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30700",
+  "code": "MAK 324",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Makina Teorisi",
+  "method": "",
+  "instructor": "Sinem Öztürk",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 65,
+  "enrolled": 80,
+  "reserved": "",
+  "programs": [
+   "MAK",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30701",
+  "code": "MAK 315",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Mekanik Titreşimler",
+  "method": "",
+  "instructor": "Sinem Öztürk",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 65,
+  "enrolled": 75,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "MAK",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30702",
+  "code": "MAK 214E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Engineering Materials",
+  "method": "",
+  "instructor": "Ali Gökşenli",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE",
+   "MAK",
+   "MAKE",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

@@ -1,0 +1,97 @@
+[
+ {
+  "crn": "30422",
+  "code": "MEK 205E",
+  "branch": "MEK",
+  "level": "LS",
+  "name": "Engineering Mechanics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hacı Abdullah Taşdemir",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/13:29"
+  ],
+  "rooms": [
+   "A501",
+   "A501"
+  ],
+  "capacity": 40,
+  "enrolled": 20,
+  "reserved": "-",
+  "programs": [
+   "CHZE_LS",
+   "END_LS",
+   "ENDE_LS",
+   "GID_LS",
+   "GMI_LS",
+   "GMIE_LS",
+   "IML_LS",
+   "IND_LS",
+   "ISL_LS",
+   "ISLE_LS",
+   "JEF_LS",
+   "JEFE_LS",
+   "JEO_LS",
+   "JEOE_LS",
+   "MAD_LS",
+   "MADE_LS",
+   "MEN_LS",
+   "PET_LS",
+   "PETE_LS",
+   "TEK_LS",
+   "TEKE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30449",
+  "code": "MEK 205",
+  "branch": "MEK",
+  "level": "LS",
+  "name": "Mühendislik Mekaniği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hacı Abdullah Taşdemir",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 17,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "GID_LS",
+   "GMI_LS",
+   "IML_LS",
+   "ISL_LS",
+   "JEF_LS",
+   "JEO_LS",
+   "MAD_LS",
+   "TEK_LS",
+   "TEKE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

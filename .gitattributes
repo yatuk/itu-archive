@@ -1,0 +1,9 @@
+# Veriyi Linux runner üretiyor, Windows'ta çalışınca satır sonları yüzünden
+# her dosya "değişmiş" görünmesin diye çalışma kopyasında da LF tutuyoruz.
+* text=auto eol=lf
+
+*.png binary
+*.gif binary
+
+# Üretilen veri: GitHub'ın dil istatistiklerini ve diff gürültüsünü bastır.
+docs/data/** linguist-generated=true

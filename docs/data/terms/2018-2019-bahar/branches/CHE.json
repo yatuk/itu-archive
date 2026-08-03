@@ -1,0 +1,68 @@
+[
+ {
+  "crn": "24597",
+  "code": "CHE 101",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry I",
+  "method": "",
+  "instructor": "Abdullah Aydoğan",
+  "buildings": [
+   "KMB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "MCB",
+   "SCE",
+   "SEN",
+   "SIN",
+   "SIS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24598",
+  "code": "CHE 301",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry II",
+  "method": "",
+  "instructor": "Özgül Sağlam",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

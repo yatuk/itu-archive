@@ -1,0 +1,62 @@
+[
+ {
+  "crn": "24896",
+  "code": "CHE 101",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry I",
+  "method": "",
+  "instructor": "Muhammet Übeydullah Kahveci",
+  "buildings": [
+   "MED\nMED",
+   "B29\nB29"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "MBI, MCB, SCE, SED, SEN, SGI, SIN, SIS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24980",
+  "code": "CHE 301",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry II",
+  "method": "",
+  "instructor": "Altuğ Mert Sevim",
+  "buildings": [
+   "KMB\nFEB",
+   "D305\nLAB-E"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "MBI"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

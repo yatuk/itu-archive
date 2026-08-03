@@ -1,0 +1,14 @@
+# derlenmiş çıktılar
+/scrape
+/scrape.exe
+
+# yerel araç ayarları
+.claude/
+
+# editör / işletim sistemi
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# docs/data bilerek commit ediliyor: arşivin kendisi o.

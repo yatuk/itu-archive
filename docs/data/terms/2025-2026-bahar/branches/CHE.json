@@ -1,0 +1,68 @@
+[
+ {
+  "crn": "25214",
+  "code": "CHE 101",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry I",
+  "method": "",
+  "instructor": "Altuğ Mert Sevim",
+  "buildings": [
+   "MED",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "B35",
+   "LAB-A"
+  ],
+  "capacity": 40,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "SED_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25215",
+  "code": "CHE 301",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry II",
+  "method": "",
+  "instructor": "Tuba Çakır Çanak",
+  "buildings": [
+   "MED",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "B33",
+   "LAB-F"
+  ],
+  "capacity": 30,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "MBI_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

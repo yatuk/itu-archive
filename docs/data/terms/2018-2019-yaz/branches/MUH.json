@@ -1,0 +1,64 @@
+[
+ {
+  "crn": "30408",
+  "code": "MUH 321",
+  "branch": "MUH",
+  "level": "LS",
+  "name": "Sayısal Yöntemler",
+  "method": "",
+  "instructor": "Ahmet Kırış",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "MAT",
+   "MATM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30665",
+  "code": "MUH 302E",
+  "branch": "MUH",
+  "level": "LS",
+  "name": "Continuum Mechanics",
+  "method": "",
+  "instructor": "Ali Ercengiz",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "MAT",
+   "MATE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

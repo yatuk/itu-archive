@@ -1,0 +1,502 @@
+[
+ {
+  "crn": "11002",
+  "code": "MYZ 305",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Harita Mühendisliğinde Yapay Zeka",
+  "method": "",
+  "instructor": "Caner Güney",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "GEO_LS, HTA_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11005",
+  "code": "MYZ 305E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Geomatics Engineering",
+  "method": "",
+  "instructor": "-",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11014",
+  "code": "MYZ 313E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Applications of Artificial Intelligence in Maritime",
+  "method": "",
+  "instructor": "Tayfun Uyanık",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "DUI_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11402",
+  "code": "MYZ 303E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Civil Engineering",
+  "method": "",
+  "instructor": "-",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "AIN_LS, INS_LS, INSE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12727",
+  "code": "MYZ 312",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Meteorolojide Makine Öğrenmesi",
+  "method": "",
+  "instructor": "Ahmet Öztopal",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D6"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IBM_LS, MTO_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13030",
+  "code": "MYZ 308E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Marine Technology",
+  "method": "",
+  "instructor": "Serdar Aytekin Köroğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "ZA2"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13083",
+  "code": "MYZ 309",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Matematik Mühendisliğinde Yapay Zeka",
+  "method": "",
+  "instructor": "Muhammed Kurulay",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D101"
+  ],
+  "capacity": 24,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MAT_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13237",
+  "code": "MYZ 310E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Machine Learning in Physics",
+  "method": "",
+  "instructor": "Sinem Şaşmaz",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D104"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "FIZ_LS, FIZ_YD, FIZE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13872",
+  "code": "MYZ 306E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Architecture, Planning and Design",
+  "method": "",
+  "instructor": "Orkan Zeynel Güzelci",
+  "buildings": [
+   "MMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IAD_LS, ICM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13873",
+  "code": "MYZ 306E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Architecture, Planning and Design",
+  "method": "",
+  "instructor": "Aslı Ulubaş Hamurcu",
+  "buildings": [
+   "MMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "SBP_LS, SBPE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13874",
+  "code": "MYZ 306E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Architecture, Planning and Design",
+  "method": "",
+  "instructor": "Ekrem Cem Alppay",
+  "buildings": [
+   "MMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "ENTE_LS, EUTE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13875",
+  "code": "MYZ 306E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Architecture, Planning and Design",
+  "method": "",
+  "instructor": "Mehmet Onur Senem",
+  "buildings": [
+   "MMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "PEM_LS, PEME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13877",
+  "code": "MYZ 306E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Architecture, Planning and Design",
+  "method": "",
+  "instructor": "Leman Figen Gül",
+  "buildings": [
+   "MMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "ARC_LS, MIM_LS, MIME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13878",
+  "code": "MYZ 306E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence in Architecture, Planning and Design",
+  "method": "",
+  "instructor": "İmdat As",
+  "buildings": [
+   "MMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "ARC_LS, MIM_LS, MIME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14524",
+  "code": "MYZ 307",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Elektrik-Elektronik Mühendisleri için Makine Öğrenmesi",
+  "method": "",
+  "instructor": "Bilge Günsel",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHB_LS, ELK_LS, KOM_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14525",
+  "code": "MYZ 307E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Machine Learning for Electrical and Electronics Engineering",
+  "method": "",
+  "instructor": "Tufan Kumbasar",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "2104"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHBE_LS, ELKE_LS, KOME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14526",
+  "code": "MYZ 307E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Machine Learning for Electrical and Electronics Engineering",
+  "method": "",
+  "instructor": "Ibraheem Abdullah Mohammed Shayea",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "2106"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHBE_LS, ELKE_LS, KOME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14527",
+  "code": "MYZ 307E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Machine Learning for Electrical and Electronics Engineering",
+  "method": "",
+  "instructor": "Duygu Bayram Kara",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "4102"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHBE_LS, ELKE_LS, KOME_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

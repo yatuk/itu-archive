@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İTÜ // DERS ARŞİVİ</title>
+<meta name="description" content="İTÜ ders programı ve akademik takvim arşivi — otomatik olarak toplanan açık veri.">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="masthead">
+ <div class="wrap">
+  <div class="brand">
+   <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
+   <h1>DERS&nbsp;ARŞİVİ</h1>
+  </div>
+  <p class="tagline">
+   obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri.
+   Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı — kalıcı olarak.
+  </p>
+  <dl class="statbar" id="statbar" aria-live="polite">
+   <div><dt>durum</dt><dd id="stat-status">yükleniyor…</dd></div>
+   <div><dt>aktif dönem</dt><dd id="stat-term">—</dd></div>
+   <div><dt>son tarama</dt><dd id="stat-scraped">—</dd></div>
+   <div><dt>arşivlenen dönem</dt><dd id="stat-terms">—</dd></div>
+  </dl>
+ </div>
+</header>
+
+<nav class="tabs wrap" role="tablist">
+ <button role="tab" aria-selected="true" data-view="dersler">01 · DERSLER</button>
+ <button role="tab" aria-selected="false" data-view="takvim">02 · AKADEMİK TAKVİM</button>
+ <button role="tab" aria-selected="false" data-view="donemler">03 · DÖNEMLER</button>
+ <button role="tab" aria-selected="false" data-view="hakkinda">04 · HAKKINDA</button>
+</nav>
+
+<main class="wrap">
+
+ <section id="view-dersler" class="view">
+  <div class="console">
+   <label class="query">
+    <span class="sigil">&gt;</span>
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+           placeholder="ders kodu, ad, CRN veya öğretim üyesi ara…" aria-label="Ders ara">
+   </label>
+   <div class="filters">
+    <label>dönem <select id="f-term"></select></label>
+    <label>branş <select id="f-branch"><option value="">hepsi</option></select></label>
+    <label>gün <select id="f-day">
+      <option value="">hepsi</option>
+      <option>Pazartesi</option><option>Salı</option><option>Çarşamba</option>
+      <option>Perşembe</option><option>Cuma</option><option>Cumartesi</option><option>Pazar</option>
+    </select></label>
+    <label class="check"><input type="checkbox" id="f-open"> yalnızca kontenjanı olanlar</label>
+   </div>
+  </div>
+
+  <p class="resultline" id="resultline" aria-live="polite">—</p>
+
+  <div class="tablewrap">
+   <table id="results">
+    <thead>
+     <tr><th>CRN</th><th>Ders</th><th>Adı</th><th>Öğretim Üyesi</th><th>Zaman</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+   </table>
+  </div>
+  <button id="more" class="more" hidden>daha fazla göster</button>
+ </section>
+
+ <section id="view-takvim" class="view" hidden>
+  <div class="console">
+   <label>akademik yıl <select id="f-year"></select></label>
+   <label class="check"><input type="checkbox" id="f-upcoming" checked> yalnızca gelecek etkinlikler</label>
+  </div>
+  <div id="calendar"></div>
+ </section>
+
+ <section id="view-donemler" class="view" hidden>
+  <p class="note">
+   OBS yalnızca <strong>aktif dönemi</strong> yayınlıyor. Geçmiş dönemler tarihsel
+   dökümlerden geri kazanıldı; bu dönemlerde öğretim yöntemi, derslik ve önşart gibi
+   bazı alanlar eksik olabilir. <strong>2024-2025 Güz</strong> hiçbir kaynakta bulunmuyor.
+  </p>
+  <div id="terms"></div>
+ </section>
+
+ <section id="view-hakkinda" class="view" hidden>
+  <div class="prose">
+   <h2>Bu ne?</h2>
+   <p>
+    İTÜ'nün ders programı sayfası yalnızca içinde bulunulan dönemi gösteriyor. Dönem bitince
+    o veri kayboluyor: hangi dersin ne zaman açıldığı, kimin verdiği, kontenjanın ne kadar dolduğu
+    bir sonraki dönem sorulamaz hale geliyor. Bu depo o veriyi günlük olarak çekip
+    sürüm kontrolüne alıyor.
+   </p>
+
+   <h2>Veri nereden geliyor?</h2>
+   <ul>
+    <li><code>obs.itu.edu.tr/public/DersProgram</code> — dört program seviyesi (Önlisans, Lisans, Lisansüstü, Lisansüstü 2. Öğretim) ve 337 branş kodu için güncel ders programı.</li>
+    <li><code>takvim.sis.itu.edu.tr</code> — dört akademik yılın tam takvimi.</li>
+    <li>Tarihsel dökümler — 2016-2017'ye kadar uzanan geçmiş dönemler.</li>
+   </ul>
+
+   <h2>Ham veriye erişim</h2>
+   <p>Her dönem için JSON ve CSV doğrudan indirilebilir; sayfa da aynı dosyaları kullanıyor.</p>
+   <pre><code># aktif dönemin tüm şubeleri (CSV)
+curl -O https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/all.csv
+
+# tek branş (JSON)
+curl https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/branches/BIL.json
+
+# dönem ve takvim listesi
+curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
+
+   <h2>Uyarı</h2>
+   <p>
+    Bu resmî bir İTÜ hizmeti değil. Kayıt kararlarını vermeden önce daima
+    <a href="https://obs.itu.edu.tr/public/DersProgram" rel="noopener">OBS'nin kendi sayfasını</a> doğrulayın.
+    Veriler günde bir kez tazelenir; kayıt haftalarında kontenjan sayıları anlık değildir.
+   </p>
+  </div>
+ </section>
+
+</main>
+
+<footer class="wrap">
+ <span id="foot-build">—</span> ·
+ <a href="data/index.json">index.json</a> ·
+ veri kaynağı İstanbul Teknik Üniversitesi
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

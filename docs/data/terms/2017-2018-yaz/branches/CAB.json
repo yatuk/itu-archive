@@ -1,0 +1,321 @@
+[
+ {
+  "crn": "30172",
+  "code": "CAB 177",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano I",
+  "method": "",
+  "instructor": "Alper Rumelioğlu",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30173",
+  "code": "CAB 178",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano II",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30174",
+  "code": "CAB 277",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano III",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30175",
+  "code": "CAB 278",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano IV",
+  "method": "",
+  "instructor": "Cenk Öztürk",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30176",
+  "code": "CAB 143",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano I",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30177",
+  "code": "CAB 243",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano III",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30178",
+  "code": "CAB 244",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano IV",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30205",
+  "code": "CAB 343",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano V",
+  "method": "",
+  "instructor": "Alper Rumelioğlu",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30206",
+  "code": "CAB 344",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano VI",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30207",
+  "code": "CAB 443",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Yrd.Çalgı Piyano VII",
+  "method": "",
+  "instructor": "Alper Rumelioğlu",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "CAB",
+   "KMP",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

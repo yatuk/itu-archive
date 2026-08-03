@@ -1,0 +1,112 @@
+[
+ {
+  "crn": "21070",
+  "code": "TEL 342",
+  "branch": "TEL",
+  "level": "LS",
+  "name": "Haberleşmenin Temelleri",
+  "method": "",
+  "instructor": "Tayfun Bulca",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "ELE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21493",
+  "code": "TEL 252E",
+  "branch": "TEL",
+  "level": "LS",
+  "name": "Signals and Systems",
+  "method": "",
+  "instructor": "Murat Şimşek",
+  "buildings": [
+   "UUB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "UCK",
+   "UCKE",
+   "UZB",
+   "UZBE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25047",
+  "code": "TEL 492",
+  "branch": "TEL",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "İbrahim Akduman",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25048",
+  "code": "TEL 492E",
+  "branch": "TEL",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

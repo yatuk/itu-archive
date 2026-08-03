@@ -1,0 +1,63 @@
+[
+ {
+  "crn": "25010",
+  "code": "CHE 101",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry I",
+  "method": "",
+  "instructor": "Caner Ünlü",
+  "buildings": [
+   "ISB",
+   "ISB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "SED",
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25280",
+  "code": "CHE 301",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry II",
+  "method": "",
+  "instructor": "Altuğ Mert Sevim",
+  "buildings": [
+   "KMB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "MBI"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

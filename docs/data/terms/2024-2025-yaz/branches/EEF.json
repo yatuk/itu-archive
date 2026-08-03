@@ -1,0 +1,138 @@
+[
+ {
+  "crn": "30265",
+  "code": "EEF 211",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Elektrik Devre Temelleri",
+  "method": "",
+  "instructor": "Metin Hüner",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29",
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "5102",
+   "5102"
+  ],
+  "capacity": 55,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHB_LS, ELK_LS, KOM_LS, ROS_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30266",
+  "code": "EEF 211E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Basics of Electrical Circuits",
+  "method": "",
+  "instructor": "Bilgi Görkem Yazgaç",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/17:29",
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "5102",
+   "5102"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHBE_LS, ELKE_LS, KOME_LS, ROSE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30267",
+  "code": "EEF 232E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Circuit and System Analysis",
+  "method": "",
+  "instructor": "Bilgi Görkem Yazgaç",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29",
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "5102",
+   "5102"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHB_LS, EHBE_LS, ELK_LS, ELKE_LS, KOM_LS, KOME_LS, ROS_LS, ROSE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30268",
+  "code": "EEF 212E",
+  "branch": "EEF",
+  "level": "LS",
+  "name": "Electromagnetic Theory I",
+  "method": "",
+  "instructor": "Kamil Karaçuha , / Cemanur Aydınalp , / Semih Doğu",
+  "buildings": [
+   "EEB",
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29",
+   "12:30/15:29",
+   "14:00/17:29"
+  ],
+  "rooms": [
+   "5102",
+   "5102",
+   "5102"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EHB_LS, EHBE_LS, ELK_LS, ELKE_LS, KOM_LS, KOME_LS, ROS_LS, ROSE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

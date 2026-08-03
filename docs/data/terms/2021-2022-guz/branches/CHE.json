@@ -1,0 +1,65 @@
+[
+ {
+  "crn": "10817",
+  "code": "CHE 123",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "General Chemistry I",
+  "method": "",
+  "instructor": "Metin Hayri Acar",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "EHN",
+   "SEH"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15089",
+  "code": "CHE 101",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry I",
+  "method": "",
+  "instructor": "Barış Kışkan",
+  "buildings": [
+   "INB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 27,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "MCB",
+   "SCE",
+   "SEN",
+   "SIN",
+   "SIS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

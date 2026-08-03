@@ -1,0 +1,538 @@
+[
+ {
+  "crn": "12401",
+  "code": "IML 110",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalat Müh. Giriş ve Etik",
+  "method": "",
+  "instructor": "Ramazan Murat Tabanlı",
+  "buildings": [],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 9,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12402",
+  "code": "IML 111",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalat Mühendisliğine Giriş",
+  "method": "",
+  "instructor": "--",
+  "buildings": [],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12403",
+  "code": "IML 337",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalat Planlama ve Kontrol",
+  "method": "",
+  "instructor": "Ramazan Murat Tabanlı",
+  "buildings": [],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29",
+   "09:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 84,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12406",
+  "code": "IML 205",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Termodinamik",
+  "method": "",
+  "instructor": "Yakup Erhan Böke",
+  "buildings": [],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 120,
+  "enrolled": 82,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12408",
+  "code": "IML 305",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Isı Geçişi",
+  "method": "",
+  "instructor": "Ersin Sayar",
+  "buildings": [],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/10:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 59,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12410",
+  "code": "IML 311",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmal Usülleri I",
+  "method": "",
+  "instructor": "Şafak Yılmaz",
+  "buildings": [],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 77,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12412",
+  "code": "IML 320",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Makina Elemanları",
+  "method": "",
+  "instructor": "Ali İmre Aydeniz",
+  "buildings": [],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 77,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12415",
+  "code": "IML 325E",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Measurements & Instrumentation",
+  "method": "",
+  "instructor": "Bülent Bölat",
+  "buildings": [],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "12:30/13:29",
+   "14:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12419",
+  "code": "IML 405",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Uygulamalı İmalat Projesi",
+  "method": "",
+  "instructor": "Mustafa Bakkal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 43,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12420",
+  "code": "IML 425E",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Comp.Integra.Manufact. (CIM)",
+  "method": "",
+  "instructor": "Erkan Günpınar",
+  "buildings": [],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE",
+   "IMLM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12427",
+  "code": "IML 431",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Kalite Mühendisliği",
+  "method": "",
+  "instructor": "Ali Gökşenli",
+  "buildings": [],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12429",
+  "code": "IML 451",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalat Makineleri",
+  "method": "",
+  "instructor": "--",
+  "buildings": [],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12629",
+  "code": "IML 401",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalat Lab I",
+  "method": "",
+  "instructor": "Canan Gamze Güleryüz Parasız",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 69,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12630",
+  "code": "IML 401E",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Manufacturing Lab I",
+  "method": "",
+  "instructor": "--",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IMLE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12639",
+  "code": "IML 492",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalat Tasarım Projesi",
+  "method": "",
+  "instructor": "Adil Yücel",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12640",
+  "code": "IML 492E",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Manufacturing Design Project",
+  "method": "",
+  "instructor": "--",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12643",
+  "code": "IML 4901",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalat Müh. Tasarımı I",
+  "method": "",
+  "instructor": "Adil Yücel",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12644",
+  "code": "IML 4901E",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Manufacturing Eng. Design I",
+  "method": "",
+  "instructor": "Adil Yücel",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "IML"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15140",
+  "code": "IML 322",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalatta Otomasyon",
+  "method": "",
+  "instructor": "Mustafa Resa Becan",
+  "buildings": [],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15352",
+  "code": "IML 325E",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Measurements & Instrumentation",
+  "method": "",
+  "instructor": "Hülya Yalçın",
+  "buildings": [],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "12:30/13:29",
+   "14:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE",
+   "MAK",
+   "MAKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15558",
+  "code": "IML 212",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmal Usülleri I",
+  "method": "",
+  "instructor": "Canan Gamze Güleryüz Parasız",
+  "buildings": [],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

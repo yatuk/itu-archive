@@ -1,0 +1,67 @@
+[
+ {
+  "crn": "30112",
+  "code": "MAL 201",
+  "branch": "MAL",
+  "level": "LS",
+  "name": "Malzeme Bilimi",
+  "method": "",
+  "instructor": "Ali Gökşenli",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 60,
+  "reserved": "",
+  "programs": [
+   "IML",
+   "IMLM",
+   "MAK",
+   "MAKM",
+   "MKN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30702",
+  "code": "MAL 201E",
+  "branch": "MAL",
+  "level": "LS",
+  "name": "Materials Science",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "JEO",
+   "JEOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

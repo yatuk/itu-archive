@@ -1,0 +1,125 @@
+[
+ {
+  "crn": "30188",
+  "code": "MTO 214",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmosfer Termodinamiği",
+  "method": "",
+  "instructor": "Kasım Koçak",
+  "buildings": [
+   "UUB\nUUB",
+   "D209\nD209"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "12:30/17:29",
+   "12:30/16:59"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "MTO, MTOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30189",
+  "code": "MTO 311E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Data Analysis",
+  "method": "",
+  "instructor": "Kasım Koçak",
+  "buildings": [
+   "UUB\nUUB\nUUB\nUUB",
+   "D209\nD209\nD209\nD209"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba",
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "13:30/16:29",
+   "08:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "MTO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30190",
+  "code": "MTO 340",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmosfer Dinamiği II",
+  "method": "",
+  "instructor": "Elçin Tan",
+  "buildings": [
+   "UUB\nUUB",
+   "D215\nD215"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:00/17:29",
+   "12:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 61,
+  "reserved": "",
+  "programs": [
+   "MTO, MTOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30348",
+  "code": "MTO 301",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Meteo.Uzaktan Algılamanın Tem.",
+  "method": "",
+  "instructor": "Ahmet Öztopal",
+  "buildings": [
+   "UUB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/17:29"
+  ],
+  "rooms": [
+   "D213"
+  ],
+  "capacity": 25,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "MTO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

@@ -1,0 +1,910 @@
+[
+ {
+  "crn": "21224",
+  "code": "KON 409",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Bitirme Tasarım Prj. Giriş",
+  "method": "",
+  "instructor": "Hakan Temeltaş",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/15:59"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "KOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21230",
+  "code": "KON 409E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Int. to Senior Design Project",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21546",
+  "code": "KON 214",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Sistem Modelleme ve Simülasyon",
+  "method": "",
+  "instructor": "Hakan Temeltaş",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 81,
+  "reserved": "",
+  "programs": [
+   "KOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21547",
+  "code": "KON 214E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "System Modelling&Simulation;",
+  "method": "",
+  "instructor": "Hakan Temeltaş",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21550",
+  "code": "KON 218",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Ölçme Tekniği ve Algılayıcılar",
+  "method": "",
+  "instructor": "Yücel Aydın",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 56,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "MKN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21554",
+  "code": "KON 218",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Ölçme Tekniği ve Algılayıcılar",
+  "method": "",
+  "instructor": "Serhat İkizoğlu",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 56,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "MKN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21555",
+  "code": "KON 218E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Measurement and Sensors",
+  "method": "",
+  "instructor": "Serhat İkizoğlu",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME",
+   "MKN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21556",
+  "code": "KON 224",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Ölçme ve Enstrümantasyon",
+  "method": "",
+  "instructor": "Yücel Aydın",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "BLG",
+   "EHB",
+   "ELE",
+   "ELH",
+   "ELK",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21557",
+  "code": "KON 224E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Measurement&Instrumentation;",
+  "method": "",
+  "instructor": "Serhat İkizoğlu",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "BLG",
+   "BLGE",
+   "EHB",
+   "EHBE",
+   "ELK",
+   "ELKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21559",
+  "code": "KON 314",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Kontrol Sistem Tasarımı",
+  "method": "",
+  "instructor": "Mehmet Turan Söylemez",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 63,
+  "reserved": "",
+  "programs": [
+   "KOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21560",
+  "code": "KON 317",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Otomatik Kontrol Sistemleri",
+  "method": "",
+  "instructor": "Sıddık Murat Yeşiloğlu",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 80,
+  "reserved": "",
+  "programs": [
+   "BLG",
+   "EHB",
+   "ELE",
+   "ELH",
+   "ELK",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21562",
+  "code": "KON 317",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Otomatik Kontrol Sistemleri",
+  "method": "",
+  "instructor": "Mustafa Doğan",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 67,
+  "reserved": "",
+  "programs": [
+   "BLG",
+   "EHB",
+   "ELE",
+   "ELH",
+   "ELK",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21563",
+  "code": "KON 317E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Control Systems",
+  "method": "",
+  "instructor": "Tufan Kumbasar",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 80,
+  "reserved": "",
+  "programs": [
+   "BLG",
+   "BLGE",
+   "EHB",
+   "EHBE",
+   "ELK",
+   "ELKE",
+   "SEH"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21564",
+  "code": "KON 322",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Endüstriyel Kumanda Sistemleri",
+  "method": "",
+  "instructor": "Salman Kurtulan",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 79,
+  "reserved": "",
+  "programs": [
+   "KOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21565",
+  "code": "KON 322E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Industrial Automated Systems",
+  "method": "",
+  "instructor": "Yaprak Yalçın",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21566",
+  "code": "KON 324E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Sensors &Transducers; in Cntrl",
+  "method": "",
+  "instructor": "Ali Fuat Ergenç",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21567",
+  "code": "KON 326",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Bilgisayar Kontrollü Sistemler",
+  "method": "",
+  "instructor": "Afife Leyla Gören",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 83,
+  "reserved": "",
+  "programs": [
+   "KOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21568",
+  "code": "KON 326E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Computer Controlled Systems",
+  "method": "",
+  "instructor": "Yaprak Yalçın",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21569",
+  "code": "KON 417",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Servo Motorlar",
+  "method": "",
+  "instructor": "Metin Gökaşan",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 75,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "MKN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21570",
+  "code": "KON 417E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Servo Motors",
+  "method": "",
+  "instructor": "Volkan Sezer",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 9,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21571",
+  "code": "KON 421",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Robot Kontrolü",
+  "method": "",
+  "instructor": "Sıddık Murat Yeşiloğlu",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "KOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21573",
+  "code": "KON 421E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Robot Control",
+  "method": "",
+  "instructor": "Ovsanna Seta Estrada",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21576",
+  "code": "KON 424E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Mod.&Cntrl; of Biological Sys.",
+  "method": "",
+  "instructor": "Ali Fuat Ergenç",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "EHB",
+   "EHBE",
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21580",
+  "code": "KON 426E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Intelligent Control Systems",
+  "method": "",
+  "instructor": "Gülay Öke Günel",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21596",
+  "code": "KON 428",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Optimal Kontrole Giriş",
+  "method": "",
+  "instructor": "Müjde Güzelkaya",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "KOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21597",
+  "code": "KON 428E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Intr. to Optimal Control",
+  "method": "",
+  "instructor": "İbrahim Eksin",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21598",
+  "code": "KON 436E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Int.to Nonlinear Control Syst.",
+  "method": "",
+  "instructor": "Sıddık Murat Yeşiloğlu",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21600",
+  "code": "KON 409E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Int. to Senior Design Project",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21601",
+  "code": "KON 492",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Bitirme Tasarım Projesi",
+  "method": "",
+  "instructor": "Hakan Temeltaş",
+  "buildings": [
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 37,
+  "reserved": "",
+  "programs": [
+   "KOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21602",
+  "code": "KON 492E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Senior Design Project",
+  "method": "",
+  "instructor": "Hakan Temeltaş",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 27,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25308",
+  "code": "KON 407E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "State Space Meth.in Contr.Syst",
+  "method": "",
+  "instructor": "Fikret Çalışkan",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25403",
+  "code": "KON 313E",
+  "branch": "KON",
+  "level": "LS",
+  "name": "Feedback Control Systems",
+  "method": "",
+  "instructor": "Tufan Kumbasar",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "KOM",
+   "KOME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

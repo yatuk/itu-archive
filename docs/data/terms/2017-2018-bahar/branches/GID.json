@@ -1,0 +1,581 @@
+[
+ {
+  "crn": "21833",
+  "code": "GID 212",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Termodinamik",
+  "method": "",
+  "instructor": "Fatma Ebru Fıratlıgil",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 58,
+  "reserved": "",
+  "programs": [
+   "GID"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21837",
+  "code": "GID 212E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Thermodynamics",
+  "method": "",
+  "instructor": "Gürbüz Güneş",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21841",
+  "code": "GID 222",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Mikrobiyoloji",
+  "method": "",
+  "instructor": "Pervin Başaran Akocak",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 61,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21847",
+  "code": "GID 222E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Microbiology",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21851",
+  "code": "GID 232",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Gıda Kimyası II",
+  "method": "",
+  "instructor": "Beraat Özçelik, Aslı Can Karaça, Esra Çapanoğlu Güven",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 52,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21852",
+  "code": "GID 232E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Food chemistry II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21855",
+  "code": "GID 312",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Gıda Mikrobiyolojisi II",
+  "method": "",
+  "instructor": "Hatice Funda Karbancıoğlu Güler",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21857",
+  "code": "GID 312E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Food Microbiology II",
+  "method": "",
+  "instructor": "Pervin Başaran Akocak",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21865",
+  "code": "GID 314E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Sensory Analysis",
+  "method": "",
+  "instructor": "Beraat Özçelik, Esra Çapanoğlu Güven",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 32,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE",
+   "GIDM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21870",
+  "code": "GID 316E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Food Packaging",
+  "method": "",
+  "instructor": "Gürbüz Güneş, Dilara Erdil",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21872",
+  "code": "GID 322",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Gıda Müh Temel İşlemler II",
+  "method": "",
+  "instructor": "Aslı Can Karaça",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 68,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21873",
+  "code": "GID 322E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Food Eng.Unit Operations II",
+  "method": "",
+  "instructor": "Fatma Ebru Fıratlıgil",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21875",
+  "code": "GID 332E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Food Engineering Laboratory",
+  "method": "",
+  "instructor": "Fatma Ebru Fıratlıgil, Filiz Altay, Meral Kılıç Akyılmaz",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21881",
+  "code": "GID 332E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Food Engineering Laboratory",
+  "method": "",
+  "instructor": "Fatma Ebru Fıratlıgil, Filiz Altay, Meral Kılıç Akyılmaz",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21882",
+  "code": "GID 402E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Food Engineering Design II",
+  "method": "",
+  "instructor": "Gürbüz Güneş, Fatma Ebru Fıratlıgil, Filiz Altay, Meral Kılıç Akyılmaz",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 44,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21884",
+  "code": "GID 416E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Shelf Life of Foods",
+  "method": "",
+  "instructor": "Meral Kılıç Akyılmaz",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE",
+   "GIDM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21885",
+  "code": "GID 418E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Biochem.Chan.During Food Proc.",
+  "method": "",
+  "instructor": "Neşe Şahin Yeşilçubuk",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE",
+   "GIDM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21886",
+  "code": "GID 438",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Coğrafi İşaretlerin Korunması",
+  "method": "",
+  "instructor": "Beraat Özçelik",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "GID"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21887",
+  "code": "GID 492",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Gürbüz Güneş",
+  "buildings": [
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "GID"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "21888",
+  "code": "GID 492E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "Gürbüz Güneş",
+  "buildings": [
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25768",
+  "code": "GID 211E",
+  "branch": "GID",
+  "level": "LS",
+  "name": "Mass and Energy Balances",
+  "method": "",
+  "instructor": "Meral Kılıç Akyılmaz",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 1,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "GID",
+   "GIDE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

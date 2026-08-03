@@ -1,0 +1,239 @@
+[
+ {
+  "crn": "30145",
+  "code": "GEM 312",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Yardımcı Makinaları",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "GDB\nGDB",
+   "---\n---"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "GEM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30146",
+  "code": "GEM 445",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Boru Donanımları",
+  "method": "",
+  "instructor": "Osman Azmi Özsoysal",
+  "buildings": [
+   "GDB\nGDB",
+   "410\n410"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29",
+   "14:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "GEM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30254",
+  "code": "GEM 321E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Theory",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [
+   "GDB\nGDB",
+   "D401\nD401"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/14:29",
+   "10:00/14:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 40,
+  "reserved": "",
+  "programs": [
+   "DEN, GEM, GEMK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30255",
+  "code": "GEM 325",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Yapı Elemanları",
+  "method": "",
+  "instructor": "Yalçın Ünsan",
+  "buildings": [
+   "GDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/17:59"
+  ],
+  "rooms": [
+   "D401"
+  ],
+  "capacity": 40,
+  "enrolled": 33,
+  "reserved": "",
+  "programs": [
+   "GEM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30256",
+  "code": "GEM 332",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Elektrik Sistemleri",
+  "method": "",
+  "instructor": "Yalçın Ünsan",
+  "buildings": [
+   "GDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/13:29"
+  ],
+  "rooms": [
+   "D311"
+  ],
+  "capacity": 40,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "DEN, GEM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30262",
+  "code": "GEM 421",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Hareket ve Manevraları",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [
+   "GDB\nGDB",
+   "410\n410"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/16:59",
+   "09:00/09:59"
+  ],
+  "rooms": [],
+  "capacity": 55,
+  "enrolled": 51,
+  "reserved": "",
+  "programs": [
+   "GEM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30306",
+  "code": "GEM 203",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "",
+  "instructor": "İsmail Yalçın",
+  "buildings": [
+   "GDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/17:59"
+  ],
+  "rooms": [
+   "409"
+  ],
+  "capacity": 0,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "GEM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30307",
+  "code": "GEM 326E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Design",
+  "method": "",
+  "instructor": "Burcu Erbaş",
+  "buildings": [
+   "GDB\nGDB",
+   "D311\nD311"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:00/12:29",
+   "14:00/17:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "GEM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

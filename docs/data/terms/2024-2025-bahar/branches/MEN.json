@@ -1,0 +1,202 @@
+[
+ {
+  "crn": "24626",
+  "code": "MEN 211",
+  "branch": "MEN",
+  "level": "LS",
+  "name": "Workshop Training-I",
+  "method": "",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24651",
+  "code": "MEN 331",
+  "branch": "MEN",
+  "level": "LS",
+  "name": "Workshop Training-II",
+  "method": "",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24657",
+  "code": "MEN 412",
+  "branch": "MEN",
+  "level": "LS",
+  "name": "Engine Room Simulator (ERS) II",
+  "method": "",
+  "instructor": "Kemal Demirel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24658",
+  "code": "MEN 412",
+  "branch": "MEN",
+  "level": "LS",
+  "name": "Engine Room Simulator (ERS) II",
+  "method": "",
+  "instructor": "Kemal Demirel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24659",
+  "code": "MEN 402",
+  "branch": "MEN",
+  "level": "LS",
+  "name": "Graduation Design Project",
+  "method": "",
+  "instructor": "Selim Aksoy",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "24745",
+  "code": "MEN 302",
+  "branch": "MEN",
+  "level": "LS",
+  "name": "Onboard Training",
+  "method": "",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25280",
+  "code": "MEN 431",
+  "branch": "MEN",
+  "level": "LS",
+  "name": "Engine Room Mangm.& Leadership",
+  "method": "",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 1,
+  "reserved": "",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25284",
+  "code": "MEN 411",
+  "branch": "MEN",
+  "level": "LS",
+  "name": "Marine Auxialiary Machinery II",
+  "method": "",
+  "instructor": "Kemal Demirel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "MEN_LS, NAE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

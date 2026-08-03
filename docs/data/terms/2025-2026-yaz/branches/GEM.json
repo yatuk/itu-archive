@@ -1,0 +1,201 @@
+[
+ {
+  "crn": "30328",
+  "code": "GEM 201E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Dynamics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa Erden Yıldızdağ",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "08:30/13:29",
+   "08:30/12:59"
+  ],
+  "rooms": [
+   "ZA1",
+   "ZA1"
+  ],
+  "capacity": 30,
+  "enrolled": 21,
+  "reserved": "-",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30329",
+  "code": "GEM 203",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa Erden Yıldızdağ",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/14:29",
+   "08:30/11:59"
+  ],
+  "rooms": [
+   "ZA1",
+   "ZA1"
+  ],
+  "capacity": 30,
+  "enrolled": 23,
+  "reserved": "-",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30403",
+  "code": "GEM 325",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Yapı Elemanları",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gökhan Tansel Tayyar , Erdem Üçer",
+  "buildings": [
+   "MEDC",
+   "MEDC",
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:59",
+   "13:30/14:29",
+   "08:30/12:29",
+   "13:30/14:29"
+  ],
+  "rooms": [
+   "ZD1",
+   "ZD1",
+   "ZD1",
+   "ZD1"
+  ],
+  "capacity": 100,
+  "enrolled": 31,
+  "reserved": "-",
+  "programs": [
+   "GEM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30443",
+  "code": "GEM 424E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Reliability Of Ship Structures",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Ergin",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "09:00/11:59",
+   "10:00/11:59"
+  ],
+  "rooms": [
+   "2D16",
+   "2D16"
+  ],
+  "capacity": 30,
+  "enrolled": 5,
+  "reserved": "-",
+  "programs": [
+   "GEM_LS",
+   "GEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30469",
+  "code": "GEM 482",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Bireysel Bitirme Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fuzuli Ağrı Akçay",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 1,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [
+   "GEM_LS",
+   "GEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30472",
+  "code": "GEM 328E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Hydrodynamics(Propulsion)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cihad Delen",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/11:59",
+   "13:00/16:59"
+  ],
+  "rooms": [
+   "1D3",
+   "1D3"
+  ],
+  "capacity": 30,
+  "enrolled": 9,
+  "reserved": "-",
+  "programs": [
+   "GEM_LS",
+   "GEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

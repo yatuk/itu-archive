@@ -1,0 +1,45 @@
+[
+ {
+  "crn": "30489",
+  "code": "TES 122E",
+  "branch": "TES",
+  "level": "LS",
+  "name": "Vis.CommII:Visualization&Persp",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sema Alaçam",
+  "buildings": [
+   "MMB",
+   "MMB",
+   "MMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:00/11:59",
+   "09:00/11:59",
+   "13:30/16:59"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 5,
+  "reserved": "-",
+  "programs": [
+   "EUT_LS",
+   "ICM_LS",
+   "MIM_LS",
+   "MIME_LS",
+   "PEM_LS",
+   "SBP_LS",
+   "SBPE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

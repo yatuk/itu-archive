@@ -1,0 +1,126 @@
+[
+ {
+  "crn": "12249",
+  "code": "CHE 123",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "General Chemistry I",
+  "method": "",
+  "instructor": "Metin Hayri Acar",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "EHN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12250",
+  "code": "CHE 123L",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "General Chemistry I Lab",
+  "method": "",
+  "instructor": "Metin Hayri Acar",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "EHN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13335",
+  "code": "CHE 101",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry I",
+  "method": "",
+  "instructor": "Onur Alptürk",
+  "buildings": [
+   "MED",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "MCB",
+   "SCE",
+   "SEN",
+   "SIN",
+   "SIS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13336",
+  "code": "CHE 101",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "Chemistry I",
+  "method": "",
+  "instructor": "Nesrin Köken",
+  "buildings": [
+   "MED",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "MCB",
+   "SCE",
+   "SEN",
+   "SIN",
+   "SIS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

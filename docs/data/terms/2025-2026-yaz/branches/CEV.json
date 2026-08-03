@@ -1,0 +1,104 @@
+[
+ {
+  "crn": "30157",
+  "code": "CEV 442E",
+  "branch": "CEV",
+  "level": "LS",
+  "name": "Environmental Law",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Derya Yüksel İmer",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "A101",
+   "A101"
+  ],
+  "capacity": 60,
+  "enrolled": 19,
+  "reserved": "-",
+  "programs": [
+   "CEV_LS",
+   "CEVE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "30158",
+  "code": "CEV 302E",
+  "branch": "CEV",
+  "level": "LS",
+  "name": "Biological Processes",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Rüya Taşlı , Özlem Karahan Özgün",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/18:29",
+   "09:00/13:29"
+  ],
+  "rooms": [
+   "A203",
+   "A203"
+  ],
+  "capacity": 35,
+  "enrolled": 33,
+  "reserved": "-",
+  "programs": [
+   "CEV_LS",
+   "CEVE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30159",
+  "code": "CEV 347E",
+  "branch": "CEV",
+  "level": "LS",
+  "name": "Unit Operations",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Rüya Taşlı , Özlem Karahan Özgün",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/13:29",
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "A203",
+   "A203"
+  ],
+  "capacity": 25,
+  "enrolled": 21,
+  "reserved": "-",
+  "programs": [
+   "CEV_LS",
+   "CEVE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

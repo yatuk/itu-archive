@@ -1,0 +1,517 @@
+[
+ {
+  "crn": "30313",
+  "code": "KIM 111",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Genel Kimya I",
+  "method": "",
+  "instructor": "Ozan Sanlı Şentürk, Zehra Bayır",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/13:29",
+   "09:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "KIM",
+   "KIMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30314",
+  "code": "KIM 114",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Genel Kimya II",
+  "method": "",
+  "instructor": "Ozan Sanlı Şentürk, Zehra Bayır",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "KIM",
+   "KIME",
+   "KIMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30318",
+  "code": "KIM 211",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Analitik Kimya",
+  "method": "",
+  "instructor": "İpek Becerik",
+  "buildings": [
+   "MED",
+   "FEB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 27,
+  "reserved": "",
+  "programs": [
+   "KIM",
+   "KIMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30320",
+  "code": "KIM 231",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Organik Kimya I",
+  "method": "",
+  "instructor": "Turan Öztürk",
+  "buildings": [
+   "FEB",
+   "FEB",
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "14:30/16:29",
+   "10:30/12:29",
+   "14:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "KIM",
+   "KIMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30324",
+  "code": "KIM 232",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Organik Kimya II",
+  "method": "",
+  "instructor": "Emine Naciye Talınlı",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/13:29",
+   "09:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "KIM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30327",
+  "code": "KIM 304E",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Organic Chemistry II",
+  "method": "",
+  "instructor": "Olcay Anaç",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30330",
+  "code": "KIM 331",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Organik Kimya III",
+  "method": "",
+  "instructor": "Olcay Anaç",
+  "buildings": [
+   "KMB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "11:30/15:29",
+   "11:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "KIM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30331",
+  "code": "KIM 352E",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Inorganic Chemistry II",
+  "method": "",
+  "instructor": "Altuğ Mert Sevim",
+  "buildings": [
+   "MED",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 9,
+  "reserved": "",
+  "programs": [
+   "KIM",
+   "KIME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30332",
+  "code": "KIM 431",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Organik Reaksiyonlar",
+  "method": "",
+  "instructor": "Olcay Anaç",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "KIM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30487",
+  "code": "KIM 204E",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "General Chemistry II",
+  "method": "",
+  "instructor": "Yasin Arslanoğlu",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "CHZE",
+   "DENE",
+   "GEME",
+   "GEMK",
+   "GMI",
+   "GMIE",
+   "JEOE",
+   "MADE",
+   "METE",
+   "PETE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30571",
+  "code": "KIM 205E",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Organic Chemistry",
+  "method": "",
+  "instructor": "Ayşe Özdemir",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 27,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "CEVE",
+   "CHZE",
+   "DENE",
+   "GEME",
+   "GEMK",
+   "JEOE",
+   "KIM",
+   "KIMM",
+   "MADE",
+   "MET",
+   "METE",
+   "PETE",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30574",
+  "code": "KIM 202",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Fiziksel Kimya",
+  "method": "",
+  "instructor": "Erdem Yavuz",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "CEV",
+   "CHZ",
+   "DEN",
+   "ELE",
+   "ELH",
+   "ELK",
+   "GEM",
+   "GID",
+   "GMI",
+   "JEO",
+   "KIMM",
+   "KMM",
+   "KMMM",
+   "KYD",
+   "MAD",
+   "MET",
+   "PET",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30692",
+  "code": "KIM 203",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Analitik Kimya",
+  "method": "",
+  "instructor": "Gülçin Yılmaz",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/13:29",
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 28,
+  "enrolled": 27,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "CHZ",
+   "DEN",
+   "ELE",
+   "ELH",
+   "ELK",
+   "GEM",
+   "JEO",
+   "MAD",
+   "MET",
+   "PET",
+   "TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30693",
+  "code": "KIM 432E",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Organic Structure Analysis",
+  "method": "",
+  "instructor": "Turan Öztürk",
+  "buildings": [
+   "FEB",
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/17:29",
+   "08:30/10:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "KIM",
+   "KIME"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30731",
+  "code": "KIM 303E",
+  "branch": "KIM",
+  "level": "LS",
+  "name": "Organic Chemistry I",
+  "method": "",
+  "instructor": "Demet Çolak",
+  "buildings": [
+   "MED",
+   "MED"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/11:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE",
+   "KIMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

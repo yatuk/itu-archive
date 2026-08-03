@@ -1,0 +1,101 @@
+[
+ {
+  "crn": "30081",
+  "code": "UZB 310E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Compressible Aerodynamics",
+  "method": "",
+  "instructor": "Hayri Acar",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "14:00/16:59",
+   "09:00/12:59"
+  ],
+  "rooms": [
+   "1D10",
+   "1D10"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "UCK_LS, UCK_YD, UZB_LS, UZBE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30271",
+  "code": "UZB 318E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Finite Element Method",
+  "method": "",
+  "instructor": "Vedat Ziya Doğan",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "ZD1",
+   "ZD1"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "UCK_LS, UZB_LS, UZBE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30319",
+  "code": "UZB 314E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Heat Transfer",
+  "method": "",
+  "instructor": "Cemil Kurtcebe",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "ZD1",
+   "ZD1"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "UCK_LS, UZB_LS, UZBE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

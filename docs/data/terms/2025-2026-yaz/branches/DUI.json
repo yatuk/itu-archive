@@ -1,0 +1,313 @@
+[
+ {
+  "crn": "30250",
+  "code": "DUI 402",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Deniz Hukuku II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nuri Koray Kurun",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 6,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30251",
+  "code": "DUI 251",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Meteoroloji",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşe Nak",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/16:29",
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 45,
+  "enrolled": 9,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30252",
+  "code": "DUI 311E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Celestial Navigation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Orhan Gönel",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 45,
+  "enrolled": 33,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30437",
+  "code": "DUI 103E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Seamanship",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Orhan Gönel",
+  "buildings": [
+   "DZB",
+   "DZB",
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/14:29",
+   "09:00/12:29",
+   "13:30/14:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 45,
+  "enrolled": 4,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30438",
+  "code": "DUI 361E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Technical Ship Management",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gizem Çevik",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 22,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30439",
+  "code": "DUI 407E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Cargo Handl and Stowage",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cenk Ay",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 45,
+  "enrolled": 32,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "MTM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30440",
+  "code": "DUI 472",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Oşinografi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşe Nak",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 6,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30441",
+  "code": "DUI 474E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Bridge Team and Resource Management",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cemil Yurtören",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 2,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "MTM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30465",
+  "code": "DUI 213E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Ship Constrct.and Stability",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cenk Kaya",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 33,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

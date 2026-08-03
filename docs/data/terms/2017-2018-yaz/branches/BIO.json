@@ -1,0 +1,107 @@
+[
+ {
+  "crn": "30548",
+  "code": "BIO 311E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Biochemistry I",
+  "method": "",
+  "instructor": "Nevin Gül-Karagüler",
+  "buildings": [
+   "FEB",
+   "FEB",
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29",
+   "09:30/12:29",
+   "12:30/15:29",
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30549",
+  "code": "BIO 312E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Biochemistry II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB",
+   "FEB",
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "12:30/15:29",
+   "09:30/12:29",
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30550",
+  "code": "BIO 341E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "General Biotechnology",
+  "method": "",
+  "instructor": "Zeynep Petek Çakar, Fatma Neşe Kök",
+  "buildings": [
+   "MOBGAM",
+   "MOBGAM"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "BIO",
+   "BIOE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

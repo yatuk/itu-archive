@@ -1,0 +1,91 @@
+[
+ {
+  "crn": "11155",
+  "code": "MEK 205E",
+  "branch": "MEK",
+  "level": "LS",
+  "name": "Engineering Mechanics",
+  "method": "",
+  "instructor": "Tayfun Uyanık",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "GMI_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13691",
+  "code": "MEK 205E",
+  "branch": "MEK",
+  "level": "LS",
+  "name": "Engineering Mechanics",
+  "method": "",
+  "instructor": "Şule Selçuk",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "D378"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "TEK_LS, TEKE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13692",
+  "code": "MEK 205E",
+  "branch": "MEK",
+  "level": "LS",
+  "name": "Engineering Mechanics",
+  "method": "",
+  "instructor": "Ali Kılıç",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29",
+   "11:30/12:29"
+  ],
+  "rooms": [
+   "D361B",
+   "D361B"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "TEK_LS, TEKE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

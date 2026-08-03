@@ -1,0 +1,549 @@
+[
+ {
+  "crn": "11292",
+  "code": "PHY 123",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "",
+  "instructor": "Esra Özkan Zayim",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "EHN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11293",
+  "code": "PHY 123L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Lab",
+  "method": "",
+  "instructor": "Esra Özkan Zayim",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "EHN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11837",
+  "code": "PHY 127",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics",
+  "method": "",
+  "instructor": "Sevim İşçi Turutoğlu",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "SBL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11838",
+  "code": "PHY 127L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics Lab",
+  "method": "",
+  "instructor": "Sevim İşçi Turutoğlu",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "SBL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13365",
+  "code": "PHY 125L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Laboratory",
+  "method": "",
+  "instructor": "Banu Tansel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "SDU",
+   "SEN",
+   "SGM",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13369",
+  "code": "PHY 125",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "",
+  "instructor": "Banu Tansel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 2,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "SDU",
+   "SEN",
+   "SGM",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13456",
+  "code": "PHY 125",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "",
+  "instructor": "Hilmi Ünlü",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "SBL",
+   "SDU",
+   "SEN",
+   "SGM",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13457",
+  "code": "PHY 125L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Laboratory",
+  "method": "",
+  "instructor": "Hilmi Ünlü",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "SBL",
+   "SDU",
+   "SEN",
+   "SGM",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13484",
+  "code": "PHY 107",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "",
+  "instructor": "Banu Tansel",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "12:30/14:29",
+   "17:30/18:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13486",
+  "code": "PHY 107L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Lab.",
+  "method": "",
+  "instructor": "Banu Tansel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13741",
+  "code": "PHY 107",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "",
+  "instructor": "Banu Tansel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13742",
+  "code": "PHY 107L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Lab.",
+  "method": "",
+  "instructor": "Banu Tansel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "17:30/19:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13755",
+  "code": "PHY 107",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "",
+  "instructor": "Mehmet Murat Sunar",
+  "buildings": [
+   "GDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13773",
+  "code": "PHY 107L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Lab.",
+  "method": "",
+  "instructor": "Mehmet Murat Sunar",
+  "buildings": [
+   "GDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15529",
+  "code": "PHY 125",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "",
+  "instructor": "Ali Yıldız",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15530",
+  "code": "PHY 125L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Laboratory",
+  "method": "",
+  "instructor": "Ali Yıldız",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15669",
+  "code": "PHY 125",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "",
+  "instructor": "Kazım Yavuz Ekşi",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 32,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "SBL",
+   "SDU",
+   "SEN",
+   "SGM",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15670",
+  "code": "PHY 125L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Laboratory",
+  "method": "",
+  "instructor": "Kazım Yavuz Ekşi",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 39,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "SBL",
+   "SDU",
+   "SEN",
+   "SGM",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

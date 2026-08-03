@@ -1,0 +1,228 @@
+[
+ {
+  "crn": "30290",
+  "code": "THO 205",
+  "branch": "THO",
+  "level": "LS",
+  "name": "Oyunda Yöresel Tavırlar I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eyüp Uzunkaya",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29",
+   "10:30/12:29",
+   "10:30/11:59"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 10,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30291",
+  "code": "THO 317",
+  "branch": "THO",
+  "level": "LS",
+  "name": "Sahne Projesi I (Kredisiz)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlknur Bektaş",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29",
+   "10:30/12:29",
+   "10:30/11:59"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 8,
+  "enrolled": 4,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30292",
+  "code": "THO 313",
+  "branch": "THO",
+  "level": "LS",
+  "name": "Koreoloji I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eyüp Uzunkaya",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe",
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "13:30/16:29",
+   "09:30/12:29",
+   "14:00/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 9,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30293",
+  "code": "THO 411",
+  "branch": "THO",
+  "level": "LS",
+  "name": "Geleneksel Giyim Kuşam I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlknur Bektaş",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 8,
+  "enrolled": 5,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30294",
+  "code": "THO 311",
+  "branch": "THO",
+  "level": "LS",
+  "name": "Oyun Analizi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eyüp Uzunkaya",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/16:29",
+   "09:30/12:29",
+   "13:30/14:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 8,
+  "enrolled": 6,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30452",
+  "code": "THO 110",
+  "branch": "THO",
+  "level": "LS",
+  "name": "Oyun Ritim Bilgisi II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eyüp Uzunkaya",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 6,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

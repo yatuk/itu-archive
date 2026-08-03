@@ -1,0 +1,59 @@
+[
+ {
+  "crn": "25336",
+  "code": "BED 201E",
+  "branch": "BED",
+  "level": "LS",
+  "name": "Physical Education",
+  "method": "",
+  "instructor": "Yusuf Nejat Koçar",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "DUI",
+   "DUIE",
+   "GMI",
+   "GMIE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "25726",
+  "code": "BED 201",
+  "branch": "BED",
+  "level": "LS",
+  "name": "Beden Yeterliliği",
+  "method": "",
+  "instructor": "Yusuf Nejat Koçar",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "12:30/14:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "GMI"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "crn": "30300",
+  "code": "JEO 112",
+  "branch": "JEO",
+  "level": "LS",
+  "name": "Genel Jeoloji",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kürşad Kadir Eriş",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/15:29"
+  ],
+  "rooms": [
+   "B204"
+  ],
+  "capacity": 35,
+  "enrolled": 9,
+  "reserved": "-",
+  "programs": [
+   "JEO_LS",
+   "MAD_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30301",
+  "code": "JEO 348",
+  "branch": "JEO",
+  "level": "LS",
+  "name": "Sedimenter Kayaç Petrografisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kürşad Kadir Eriş",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "B204",
+   "B204"
+  ],
+  "capacity": 25,
+  "enrolled": 7,
+  "reserved": "-",
+  "programs": [
+   "JEO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30467",
+  "code": "JEO 409",
+  "branch": "JEO",
+  "level": "LS",
+  "name": "Türkiye Jeolojisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kürşad Kadir Eriş",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "A201",
+   "A201"
+  ],
+  "capacity": 35,
+  "enrolled": 33,
+  "reserved": "-",
+  "programs": [
+   "JEO_LS",
+   "JEO_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30468",
+  "code": "JEO 355E",
+  "branch": "JEO",
+  "level": "LS",
+  "name": "Sedimentology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emin Çiftçi",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/13:29"
+  ],
+  "rooms": [
+   "A202"
+  ],
+  "capacity": 30,
+  "enrolled": 26,
+  "reserved": "-",
+  "programs": [
+   "JEO_LS",
+   "JEO_YD",
+   "JEOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

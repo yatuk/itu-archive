@@ -1,0 +1,73 @@
+[
+ {
+  "crn": "30081",
+  "code": "STA 202",
+  "branch": "STA",
+  "level": "LS",
+  "name": "Statik",
+  "method": "",
+  "instructor": "Abdul Hayır",
+  "buildings": [],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/12:59",
+   "14:00/17:59",
+   "14:00/15:59"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "FIZ",
+   "INS",
+   "MKNM",
+   "UCKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30513",
+  "code": "STA 201",
+  "branch": "STA",
+  "level": "LS",
+  "name": "Statik",
+  "method": "",
+  "instructor": "Demet Balkan",
+  "buildings": [],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:00/12:59",
+   "14:00/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 23,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "EHB",
+   "ELE",
+   "ELH",
+   "GEM",
+   "JEO",
+   "MAK",
+   "TEK",
+   "TEL",
+   "UCK",
+   "UCKM",
+   "UZB",
+   "UZBM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

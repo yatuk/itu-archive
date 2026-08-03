@@ -1,0 +1,142 @@
+[
+ {
+  "crn": "30311",
+  "code": "INS 217",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "",
+  "instructor": "Teoman Özer",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "08:30/09:59"
+  ],
+  "rooms": [
+   "B201",
+   "B201",
+   "B201"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30313",
+  "code": "INS 360E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hydraulics",
+  "method": "",
+  "instructor": "Erdal Kesgin",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29",
+   "09:30/11:59"
+  ],
+  "rooms": [
+   "B202",
+   "B202",
+   "B202"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "AIN_LS, INS_LS, INSE_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30315",
+  "code": "INS 354",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hidroloji",
+  "method": "",
+  "instructor": "Yavuz Selim Güçlü",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "09:00/12:29",
+   "13:00/16:29"
+  ],
+  "rooms": [
+   "A201",
+   "A201"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30316",
+  "code": "INS 354",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hidroloji",
+  "method": "",
+  "instructor": "Yavuz Selim Güçlü",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:00/16:29",
+   "09:00/12:29"
+  ],
+  "rooms": [
+   "A201",
+   "A201"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

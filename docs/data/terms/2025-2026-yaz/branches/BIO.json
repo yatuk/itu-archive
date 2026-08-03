@@ -1,0 +1,99 @@
+[
+ {
+  "crn": "30215",
+  "code": "BIO 301E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Fundamentals of Biology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ece Polat",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/17:29",
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "D101",
+   "D101"
+  ],
+  "capacity": 55,
+  "enrolled": 62,
+  "reserved": "-",
+  "programs": [
+   "CEVE_LS",
+   "CHZ_LS",
+   "CHZE_LS",
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "EHS_LS",
+   "ELE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "FIZ_LS",
+   "FIZE_LS",
+   "GID_LS",
+   "INS_LS",
+   "INSE_LS",
+   "ISL_LS",
+   "ISLE_LS",
+   "JEO_LS",
+   "JEOE_LS",
+   "KIM_LS",
+   "KIME_LS",
+   "KMM_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "MAD_LS",
+   "MADE_LS",
+   "MET_LS",
+   "METE_LS",
+   "PET_LS",
+   "PETE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30216",
+  "code": "BIO 105E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "General Biology I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ece Polat",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/13:29",
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D101",
+   "D101"
+  ],
+  "capacity": 55,
+  "enrolled": 13,
+  "reserved": "-",
+  "programs": [
+   "BIO_LS",
+   "BIO_YD",
+   "BIOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

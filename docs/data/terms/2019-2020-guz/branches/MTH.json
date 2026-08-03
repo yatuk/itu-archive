@@ -1,0 +1,658 @@
+[
+ {
+  "crn": "10957",
+  "code": "MTH 111",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Linear Algebra",
+  "method": "",
+  "instructor": "Gökhan İnce",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 27,
+  "reserved": "",
+  "programs": [
+   "SBL",
+   "SEK",
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10964",
+  "code": "MTH 301",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Numerical Methods",
+  "method": "",
+  "instructor": "Yusuf Yaslan",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "SBL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11179",
+  "code": "MTH 131",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Mathematics I",
+  "method": "",
+  "instructor": "Füsun Zengin",
+  "buildings": [
+   "MED",
+   "EEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29",
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "EHN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11180",
+  "code": "MTH 281",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Linear Algebra and Applicat.",
+  "method": "",
+  "instructor": "Ali Yapar",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "EHN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12059",
+  "code": "MTH 113",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Probability",
+  "method": "",
+  "instructor": "Kutay Tinç",
+  "buildings": [
+   "ISB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 26,
+  "reserved": "",
+  "programs": [
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13349",
+  "code": "MTH 121",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus I",
+  "method": "",
+  "instructor": "Sabire Cömert",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 7,
+  "reserved": "",
+  "programs": [
+   "SDU",
+   "SGM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13498",
+  "code": "MTH 123",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus",
+  "method": "",
+  "instructor": "Bahri Güldoğan",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "STP"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13523",
+  "code": "MTH 203",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Differential Equations",
+  "method": "",
+  "instructor": "Mehmet Ali Karaca",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 26,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13555",
+  "code": "MTH 117",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Mathematics I",
+  "method": "",
+  "instructor": "Kamil Oruçoğlu",
+  "buildings": [
+   "GDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13607",
+  "code": "MTH 117",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Mathematics I",
+  "method": "",
+  "instructor": "Cem Güzel",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/14:29"
+  ],
+  "rooms": [],
+  "capacity": 66,
+  "enrolled": 66,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13618",
+  "code": "MTH 203",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Differential Equations",
+  "method": "",
+  "instructor": "Sabire Cömert",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 45,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "DUIK",
+   "GEMK",
+   "GMIK",
+   "MEN",
+   "MTM",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14282",
+  "code": "MTH 101",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus I",
+  "method": "",
+  "instructor": "Samet Yücel Kadıoğlu",
+  "buildings": [
+   "EEB",
+   "MED"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29",
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "SBL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14765",
+  "code": "MTH 101",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus I",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29",
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "SBL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14766",
+  "code": "MTH 105",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus I",
+  "method": "",
+  "instructor": "Sevgi Harman",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "SEK",
+   "SIS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14767",
+  "code": "MTH 102",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29",
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "SBL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14768",
+  "code": "MTH 106",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "SEK",
+   "SIS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14769",
+  "code": "MTH 107",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus I",
+  "method": "",
+  "instructor": "Cihangir Özemir",
+  "buildings": [
+   "EEB",
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29",
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 35,
+  "enrolled": 26,
+  "reserved": "",
+  "programs": [
+   "SCE",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14770",
+  "code": "MTH 108",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29",
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "SCE",
+   "SIN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14771",
+  "code": "MTH 111",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Linear Algebra",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "SBL",
+   "SEK",
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14772",
+  "code": "MTH 111",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Linear Algebra",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "SBL",
+   "SEK",
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15171",
+  "code": "MTH 103",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus I",
+  "method": "",
+  "instructor": "Ahmet Duran",
+  "buildings": [
+   "MED",
+   "MED"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29",
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "MCB",
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15187",
+  "code": "MTH 104",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Calculus II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB",
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29",
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "MBI",
+   "MCB",
+   "SEN"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

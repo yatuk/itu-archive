@@ -1,0 +1,131 @@
+[
+ {
+  "crn": "30374",
+  "code": "GEM 312",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Yardımcı Makinaları",
+  "method": "",
+  "instructor": "Osman Azmi Özsoysal",
+  "buildings": [
+   "GDB",
+   "GDB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:59",
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "GEM",
+   "GEMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30375",
+  "code": "GEM 321E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Theory",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [
+   "GDB",
+   "GDB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:00/17:59",
+   "13:00/17:59"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "GEM",
+   "GEME",
+   "GEMK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30399",
+  "code": "GEM 412E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Shipyard Organization",
+  "method": "",
+  "instructor": "Erdem Üçer",
+  "buildings": [
+   "GDB",
+   "GDB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:59",
+   "10:30/12:59"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "DENE",
+   "GEM",
+   "GEME",
+   "GEMK"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30439",
+  "code": "GEM 211",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Geometrisi",
+  "method": "",
+  "instructor": "Kadir Sarıöz, Münir Cansın Özden",
+  "buildings": [
+   "GDB",
+   "GDB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:00/13:59",
+   "10:00/13:29"
+  ],
+  "rooms": [],
+  "capacity": 15,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "GEM",
+   "GEMM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

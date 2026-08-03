@@ -1,0 +1,746 @@
+[
+ {
+  "crn": "30370",
+  "code": "INS 217",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Teoman Özer",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "08:30/09:59"
+  ],
+  "rooms": [
+   "B302",
+   "B302",
+   "B303"
+  ],
+  "capacity": 30,
+  "enrolled": 33,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30371",
+  "code": "INS 218",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Teoman Özer",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "10:30/11:59"
+  ],
+  "rooms": [
+   "B303",
+   "B303",
+   "B303"
+  ],
+  "capacity": 30,
+  "enrolled": 36,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30372",
+  "code": "INS 218E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Strength of Materials II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ünal Aldemir",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/15:29",
+   "08:30/11:59"
+  ],
+  "rooms": [
+   "A105",
+   "A105",
+   "A105"
+  ],
+  "capacity": 40,
+  "enrolled": 44,
+  "reserved": "-",
+  "programs": [
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30374",
+  "code": "INS 102",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Statik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erol Demirkan",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:00/12:29",
+   "13:30/16:59",
+   "13:30/16:59"
+  ],
+  "rooms": [
+   "B206",
+   "B206",
+   "B206"
+  ],
+  "capacity": 50,
+  "enrolled": 41,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30377",
+  "code": "INS 360E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hydraulics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erdal Kesgin",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29",
+   "09:30/11:59"
+  ],
+  "rooms": [
+   "B104",
+   "B104",
+   "B104"
+  ],
+  "capacity": 25,
+  "enrolled": 26,
+  "reserved": "-",
+  "programs": [
+   "AIN_LS",
+   "CEV_LS",
+   "CEVE_LS",
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30378",
+  "code": "INS 4077",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Su Getirme&Kanaliz. Sist.Tas.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Cüneyd Demirel",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "10:30/13:29",
+   "09:30/13:29"
+  ],
+  "rooms": [
+   "A2",
+   "A2"
+  ],
+  "capacity": 25,
+  "enrolled": 10,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30379",
+  "code": "INS 354E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hydrology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Cüneyd Demirel",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/13:29",
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "B306",
+   "B306"
+  ],
+  "capacity": 25,
+  "enrolled": 16,
+  "reserved": "-",
+  "programs": [
+   "AIN_LS",
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30380",
+  "code": "INS 226",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Mühendis Matematik Model Esas",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yavuz Selim Güçlü",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/12:29",
+   "09:00/12:29"
+  ],
+  "rooms": [
+   "B305",
+   "B305"
+  ],
+  "capacity": 25,
+  "enrolled": 22,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30381",
+  "code": "INS 354",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hidroloji",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yavuz Selim Güçlü",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:00/16:29",
+   "13:00/16:29"
+  ],
+  "rooms": [
+   "B307",
+   "B307"
+  ],
+  "capacity": 25,
+  "enrolled": 29,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30382",
+  "code": "INS 354E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hydrology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Özger , Cihan Bayındır",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "A101",
+   "A101"
+  ],
+  "capacity": 50,
+  "enrolled": 11,
+  "reserved": "-",
+  "programs": [
+   "AIN_LS",
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30384",
+  "code": "INS 360",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hidrolik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Necati Erdem Ünal",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "08:30/12:29",
+   "08:30/09:59"
+  ],
+  "rooms": [
+   "A3",
+   "A3",
+   "A3"
+  ],
+  "capacity": 30,
+  "enrolled": 25,
+  "reserved": "-",
+  "programs": [
+   "CEV_LS",
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30385",
+  "code": "INS 360",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hidrolik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Necati Erdem Ünal",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29",
+   "08:30/09:59"
+  ],
+  "rooms": [
+   "A3",
+   "A3",
+   "A3"
+  ],
+  "capacity": 30,
+  "enrolled": 24,
+  "reserved": "-",
+  "programs": [
+   "CEV_LS",
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30388",
+  "code": "INS 4075E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Hydrologic Modeling",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Cüneyd Demirel",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "13:30/15:29",
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "A1",
+   "A1",
+   "A1"
+  ],
+  "capacity": 25,
+  "enrolled": 8,
+  "reserved": "-",
+  "programs": [
+   "AIN_LS",
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30391",
+  "code": "INS 4042E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Dams",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şevket Çokgör , Mehmet Melih Koşucu",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "B306",
+   "B306"
+  ],
+  "capacity": 25,
+  "enrolled": 13,
+  "reserved": "-",
+  "programs": [
+   "AIN_LS",
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30392",
+  "code": "INS 336",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Yapı Statiği II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yavuz Durgun , Emre Gönülcü , Mehmet Günhan Aksoylu",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29",
+   "09:00/12:29"
+  ],
+  "rooms": [
+   "A103",
+   "A103",
+   "A103"
+  ],
+  "capacity": 60,
+  "enrolled": 53,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30393",
+  "code": "INS 336E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Theory of Structures II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burcu Güneş , Ülkü Hülya Çalık Karaköse , Ahmet Güllü",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29",
+   "09:00/12:29"
+  ],
+  "rooms": [
+   "B302",
+   "B302",
+   "B302"
+  ],
+  "capacity": 60,
+  "enrolled": 46,
+  "reserved": "-",
+  "programs": [
+   "AIN_LS",
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30397",
+  "code": "INS 232E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Surveying",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammed Enes Atik",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "D201",
+   "A1"
+  ],
+  "capacity": 40,
+  "enrolled": 9,
+  "reserved": "-",
+  "programs": [
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30404",
+  "code": "INS 302",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Karayolu Mühendisliği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kemal Selçuk Öğüt",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "12:30/15:29",
+   "14:30/17:29",
+   "14:00/17:29"
+  ],
+  "rooms": [
+   "B302",
+   "B302",
+   "B302"
+  ],
+  "capacity": 40,
+  "enrolled": 32,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30405",
+  "code": "INS 325",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Demiryolu Müh.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kemal Selçuk Öğüt",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29",
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "B302",
+   "B305"
+  ],
+  "capacity": 40,
+  "enrolled": 28,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30488",
+  "code": "INS 401",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Su Kaynakları",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Melih Koşucu",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/14:29"
+  ],
+  "rooms": [
+   "B103",
+   "B103"
+  ],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "-",
+  "programs": [
+   "INS_LS",
+   "INSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30491",
+  "code": "INS 433E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Reinforced Concrete II",
+  "method": "Sınırsız Sınav",
+  "instructor": "Alper İlki",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 15,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

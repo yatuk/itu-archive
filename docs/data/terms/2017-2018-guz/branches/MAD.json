@@ -1,0 +1,977 @@
+[
+ {
+  "crn": "10648",
+  "code": "MAD 471",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Maden Elekrotekniği",
+  "method": "",
+  "instructor": "Murat İmeryüz, Türker Hüdaverdi",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12792",
+  "code": "MAD 111",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Maden Müh Giriş",
+  "method": "",
+  "instructor": "Orhan Kural, Türker Hüdaverdi",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 66,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12793",
+  "code": "MAD 111E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Intro to Mining Engineering",
+  "method": "",
+  "instructor": "Orhan Kural",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "11:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 4,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12794",
+  "code": "MAD 211",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mineraloji",
+  "method": "",
+  "instructor": "Halis Manav",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 43,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12795",
+  "code": "MAD 211E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mineralogy",
+  "method": "",
+  "instructor": "Şafak Altunkaynak",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12796",
+  "code": "MAD 232",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Açık İşletmeler",
+  "method": "",
+  "instructor": "Selamet Gürbüz Erçelebi",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 55,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12797",
+  "code": "MAD 232E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Surface Mining",
+  "method": "",
+  "instructor": "Orhan Kural",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12798",
+  "code": "MAD 241",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Patlayıcı Madde Tek. ve Uygula",
+  "method": "",
+  "instructor": "Cengiz Kuzu",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 45,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12799",
+  "code": "MAD 241E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Blasting Tech&its; A..",
+  "method": "",
+  "instructor": "Türker Hüdaverdi",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 9,
+  "reserved": "",
+  "programs": [
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12800",
+  "code": "MAD 252E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mining and Environment",
+  "method": "",
+  "instructor": "Abdullah Ekrem Yüce, Hasan Ergin",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "CHZ",
+   "CHZE",
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12801",
+  "code": "MAD 311",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Jeofizik",
+  "method": "",
+  "instructor": "Neslihan Ocakoğlu Gökaşan",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 49,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12802",
+  "code": "MAD 311E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Geophysics",
+  "method": "",
+  "instructor": "Seda Yolsal Çevikbilen",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12803",
+  "code": "MAD 351E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Rock Mechanics",
+  "method": "",
+  "instructor": "Hakan Tunçdemir",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 57,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12804",
+  "code": "MAD 361",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Maden Yatakları",
+  "method": "",
+  "instructor": "Mustafa Kumral",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 38,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12805",
+  "code": "MAD 361E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mineral Deposits",
+  "method": "",
+  "instructor": "Macid Fikret Suner",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 8,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12806",
+  "code": "MAD 413E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Large Section Undrgrnd Openng",
+  "method": "",
+  "instructor": "Hanifi Çopur, Cemal Balcı",
+  "buildings": [
+   "MEDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE",
+   "MADM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12811",
+  "code": "MAD 415E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Cement Technology",
+  "method": "",
+  "instructor": "Hasan Ergin",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 24,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12812",
+  "code": "MAD 441E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mine System Analysis",
+  "method": "",
+  "instructor": "Selamet Gürbüz Erçelebi",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 46,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12813",
+  "code": "MAD 461",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Madenlerde Havaland.ve Emniyet",
+  "method": "",
+  "instructor": "Gündüz Ökten, Abdullah Fişne",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12850",
+  "code": "MAD 341",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Cevher Hazırlama I",
+  "method": "",
+  "instructor": "Ali Güney",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 40,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12851",
+  "code": "MAD 341E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mineral Processing I",
+  "method": "",
+  "instructor": "Murat Olgaç Kangal",
+  "buildings": [
+   "MDB",
+   "MDB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12852",
+  "code": "MAD 371E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Haulage and Drainage in Mines",
+  "method": "",
+  "instructor": "Hanifi Çopur, Deniz Tumaç",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 39,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE",
+   "MADM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12853",
+  "code": "MAD 431",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Kömür Hazırlama ve Teknolojisi",
+  "method": "",
+  "instructor": "Hayrünnisa Ateşok",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12854",
+  "code": "MAD 431E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Coal Preparation &Technology;",
+  "method": "",
+  "instructor": "Fırat Burat",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12855",
+  "code": "MAD 451E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mining Machinery",
+  "method": "",
+  "instructor": "Hanifi Çopur, Deniz Tumaç",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 70,
+  "enrolled": 53,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE",
+   "MADM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12856",
+  "code": "MAD 461E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mine Ventilation and Safety",
+  "method": "",
+  "instructor": "Abdullah Fişne",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12857",
+  "code": "MAD 471E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Electro-Techniques in Mines",
+  "method": "",
+  "instructor": "Murat İmeryüz",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 31,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12858",
+  "code": "MAD 492",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Orhan Kural",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 11,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12859",
+  "code": "MAD 492E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "Orhan Kural",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 5,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12916",
+  "code": "MAD 213",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Maden Üretim Teknolojisi",
+  "method": "",
+  "instructor": "Cüneyt Atilla Öztürk",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "CHZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12918",
+  "code": "MAD 213E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mine Production Technology",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "CHZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12920",
+  "code": "MAD 323E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Tech.Draw.Appl.in Mining Eng.",
+  "method": "",
+  "instructor": "Hakan Tunçdemir",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12950",
+  "code": "MAD 425E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "TheUse ofRock Mech.in Eng.App.",
+  "method": "",
+  "instructor": "Cüneyt Atilla Öztürk",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "12978",
+  "code": "MAD 319E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Marble Mining Technology",
+  "method": "",
+  "instructor": "Deniz Tumaç",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "MAD",
+   "MADE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15715",
+  "code": "MAD 101E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Tech.Draw.Appl.in Mining Eng.",
+  "method": "",
+  "instructor": "Hakan Tunçdemir",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 45,
+  "reserved": "",
+  "programs": [
+   "MAD"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

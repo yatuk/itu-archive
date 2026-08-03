@@ -1,0 +1,431 @@
+[
+ {
+  "crn": "30119",
+  "code": "MUK 209",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "",
+  "instructor": "Adil Yücel",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "MAK",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30121",
+  "code": "MUK 210",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "",
+  "instructor": "Adil Yücel",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "",
+  "programs": [
+   "MAK",
+   "MAKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30234",
+  "code": "MUK 201",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet",
+  "method": "",
+  "instructor": "Abdul Hayır",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/17:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "FIZ",
+   "INS",
+   "UCKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30235",
+  "code": "MUK 202",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "",
+  "instructor": "Teoman Özer",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/17:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "FIZ",
+   "INS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30236",
+  "code": "MUK 202",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "",
+  "instructor": "Abdul Hayır",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/17:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "FIZ",
+   "INS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30274",
+  "code": "MUK 203E",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Strength of Materials I",
+  "method": "",
+  "instructor": "Vedat Ziya Doğan",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "DENE",
+   "EHB",
+   "EHBE",
+   "ELE",
+   "ELH",
+   "GEM",
+   "GEME",
+   "GEMK",
+   "JEO",
+   "JEOE",
+   "TEL",
+   "UCK",
+   "UCKE",
+   "UCKM",
+   "UZB",
+   "UZBE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30275",
+  "code": "MUK 204E",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Strength of Materials II",
+  "method": "",
+  "instructor": "Vedat Ziya Doğan",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29",
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "DENE",
+   "GEM",
+   "GEME",
+   "GEMK",
+   "UCK",
+   "UCKE",
+   "UCKM",
+   "UZB",
+   "UZBE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30281",
+  "code": "MUK 203",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "",
+  "instructor": "Halit Süleyman Türkmen",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "EHB",
+   "ELE",
+   "ELH",
+   "GEM",
+   "JEO",
+   "TEL",
+   "UCK",
+   "UCKM",
+   "UZB",
+   "UZBM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30282",
+  "code": "MUK 204",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "",
+  "instructor": "Halit Süleyman Türkmen",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29",
+   "13:30/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 17,
+  "reserved": "",
+  "programs": [
+   "DEN",
+   "GEM",
+   "UCK",
+   "UCKM",
+   "UZB",
+   "UZBM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30634",
+  "code": "MUK 208E",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Strength of Materials",
+  "method": "",
+  "instructor": "Münir Süner",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 14,
+  "reserved": "",
+  "programs": [
+   "GMI",
+   "GMIE",
+   "GMIK",
+   "MEN",
+   "NAE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30643",
+  "code": "MUK 201E",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Strength of Materials I",
+  "method": "",
+  "instructor": "Semih Küçükarslan",
+  "buildings": [
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "08:30/13:29",
+   "08:30/13:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "FIZ",
+   "FIZE",
+   "INS",
+   "INSE",
+   "MAT",
+   "UCKM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30699",
+  "code": "MUK 207E",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Strength of Materials",
+  "method": "",
+  "instructor": "Şule Selçuk",
+  "buildings": [
+   "MKB",
+   "MKB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 27,
+  "reserved": "",
+  "programs": [
+   "CHZ",
+   "CHZE",
+   "IML",
+   "IMLE",
+   "TEK",
+   "TEKE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

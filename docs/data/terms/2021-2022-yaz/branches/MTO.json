@@ -1,0 +1,159 @@
+[
+ {
+  "crn": "30163",
+  "code": "MTO 311E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Data Analysis",
+  "method": "",
+  "instructor": "Kasım Koçak",
+  "buildings": [
+   "UUB",
+   "UUB",
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba",
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:00/11:59",
+   "14:00/16:59",
+   "09:00/12:59",
+   "14:00/16:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 19,
+  "reserved": "",
+  "programs": [
+   "MTO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30165",
+  "code": "MTO 214",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmosfer Termodinamiği",
+  "method": "",
+  "instructor": "Kasım Koçak",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:00/17:59",
+   "13:00/17:59"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "MTO",
+   "MTOM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30167",
+  "code": "MTO 338",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Havacılık Meteorolojisi",
+  "method": "",
+  "instructor": "Emrah Tuncay Özdemir",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "09:00/12:59",
+   "09:00/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 16,
+  "reserved": "",
+  "programs": [
+   "MTO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30416",
+  "code": "MTO 102",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Bilgisayarlı Teknik Resim",
+  "method": "",
+  "instructor": "Hüsnü Barbaros Soyer",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Perşembe",
+   "Perşembe"
+  ],
+  "times": [
+   "09:00/12:59",
+   "14:00/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 6,
+  "reserved": "",
+  "programs": [
+   "MTO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30459",
+  "code": "MTO 340E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmospheric Dynamics II",
+  "method": "",
+  "instructor": "Elçin Tan",
+  "buildings": [
+   "UUB",
+   "UUB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "13:00/17:59",
+   "13:00/17:59"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "MTO"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

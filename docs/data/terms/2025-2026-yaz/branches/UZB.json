@@ -1,0 +1,146 @@
+[
+ {
+  "crn": "30278",
+  "code": "UZB 314E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Heat Transfer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cemil Kurtcebe",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "ZA3",
+   "ZA3"
+  ],
+  "capacity": 85,
+  "enrolled": 81,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS",
+   "UZB_LS",
+   "UZBE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30282",
+  "code": "UZB 352E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Orbital Mechanics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erdem Onur Özyurt",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "ZA4",
+   "ZA4"
+  ],
+  "capacity": 50,
+  "enrolled": 26,
+  "reserved": "-",
+  "programs": [
+   "UZB_LS",
+   "UZB_YD",
+   "UZBE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30283",
+  "code": "UZB 421E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Attitude Determination & Ctrl.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erdem Onur Özyurt",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "ZA4",
+   "ZA4"
+  ],
+  "capacity": 50,
+  "enrolled": 9,
+  "reserved": "-",
+  "programs": [
+   "UZB_LS",
+   "UZBE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30344",
+  "code": "UZB 337E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Aerospace Structures",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seher Eken , Aytaç Arıkoğlu",
+  "buildings": [
+   "MEDC",
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29",
+   "13:30/16:29",
+   "10:00/13:29"
+  ],
+  "rooms": [
+   "1D10",
+   "1D10",
+   "1D10"
+  ],
+  "capacity": 50,
+  "enrolled": 28,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS",
+   "UCK_YD",
+   "UZB_LS",
+   "UZBE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

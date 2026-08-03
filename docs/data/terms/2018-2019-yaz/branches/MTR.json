@@ -1,0 +1,128 @@
+[
+ {
+  "crn": "30153",
+  "code": "MTR 101",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi I",
+  "method": "",
+  "instructor": "Eren Özek",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "09:30/12:29",
+   "09:30/12:29",
+   "13:30/15:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30158",
+  "code": "MTR 202",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi IV",
+  "method": "",
+  "instructor": "Eren Özek",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "13:30/15:29",
+   "15:30/17:29",
+   "09:30/12:29",
+   "09:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 25,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "30660",
+  "code": "MTR 201",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi III",
+  "method": "",
+  "instructor": "Şerife Güvençoğlu",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "09:30/12:29",
+   "13:30/16:29",
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "MTR",
+   "MUT",
+   "MUZ",
+   "SES"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

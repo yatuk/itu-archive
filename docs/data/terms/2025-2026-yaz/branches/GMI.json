@@ -1,0 +1,210 @@
+[
+ {
+  "crn": "30245",
+  "code": "GMI 132E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Numerical Analy. of Eng.Syst.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ata Bilgili",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Salı",
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29",
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 55,
+  "enrolled": 38,
+  "reserved": "-",
+  "programs": [
+   "GMI_LS",
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30246",
+  "code": "GMI 486E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Shipping Finance",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sinan Çakır",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29",
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 100,
+  "enrolled": 95,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "GMI_LS",
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30247",
+  "code": "GMI 481E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Insurance",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sinan Çakır",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29",
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 30,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "GMI_LS",
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30442",
+  "code": "GMI 261E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Fluid Mechanics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ata Bilgili",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29",
+   "12:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 26,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "GMI_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30463",
+  "code": "GMI 213E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Thermodynamics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yalçın Durmuşoğlu",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29",
+   "12:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 30,
+  "reserved": "-",
+  "programs": [
+   "GMI_LS",
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "30464",
+  "code": "GMI 352E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Heat Transfer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yalçın Durmuşoğlu",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29",
+   "12:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 20,
+  "reserved": "-",
+  "programs": [
+   "GMI_LS",
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

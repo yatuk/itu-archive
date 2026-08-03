@@ -1,0 +1,1362 @@
+[
+ {
+  "crn": "10591",
+  "code": "FIZ 201E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Modern Physics",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "EEE, EHB, EHBE, EHS, ELE, ELH, ELK, ELKE, KOM, KOME, TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10592",
+  "code": "FIZ 201E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Modern Physics",
+  "method": "",
+  "instructor": "Deniz Türkpençe",
+  "buildings": [
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "2106"
+  ],
+  "capacity": 50,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "EEE, EHB, EHBE, EHS, ELE, ELH, ELK, ELKE, KOM, KOME, TEL"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10997",
+  "code": "FIZ 113",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Genel Fizik I",
+  "method": "",
+  "instructor": "Haluk Özbek",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D102\nD102\nD102"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "08:30/09:29"
+  ],
+  "rooms": [],
+  "capacity": 75,
+  "enrolled": 69,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10998",
+  "code": "FIZ 113EL",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "General Physics I Laboratory",
+  "method": "",
+  "instructor": "Haluk Özbek",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 40,
+  "enrolled": 41,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "10999",
+  "code": "FIZ 113EL",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "General Physics I Laboratory",
+  "method": "",
+  "instructor": "Haluk Özbek",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11000",
+  "code": "FIZ 115",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Fizik Müh. Giriş & Etik",
+  "method": "",
+  "instructor": "Gönül Eryürek",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "D203"
+  ],
+  "capacity": 90,
+  "enrolled": 87,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11001",
+  "code": "FIZ 116",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Genel Fizik II",
+  "method": "",
+  "instructor": "Sevtap Yıldız Özbek",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D104\nD104\nD104"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "08:30/09:29"
+  ],
+  "rooms": [],
+  "capacity": 75,
+  "enrolled": 48,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11002",
+  "code": "FIZ 201",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Modern Fizik",
+  "method": "",
+  "instructor": "Mehmet Murat Sunar",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D201"
+  ],
+  "capacity": 50,
+  "enrolled": 54,
+  "reserved": "",
+  "programs": [
+   "CHZ, DEN, FIZM, GEM, JEF, JEO, MAD, MET, MTO, PET, UCK, UCKM, UZB"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11003",
+  "code": "FIZ 201E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Modern Physics",
+  "method": "",
+  "instructor": "Mehmet Murat Sunar",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D203"
+  ],
+  "capacity": 60,
+  "enrolled": 61,
+  "reserved": "",
+  "programs": [
+   "CHZ, CHZE, DEN, DENE, FIZM, GEM, GEME, GEMK, GMI, GMIE, JEF, JEFE, JEO, JEOE, MAD, MADE, MET, METE, MTO, MTOE, PET, PETE, UCK, UCKE, UZB, UZBE, UZBM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11004",
+  "code": "FIZ 201E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Modern Physics",
+  "method": "",
+  "instructor": "Mehmet Murat Sunar",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D102"
+  ],
+  "capacity": 50,
+  "enrolled": 21,
+  "reserved": "",
+  "programs": [
+   "CHZ, CHZE, DEN, DENE, FIZM, GEM, GEME, GEMK, GMI, GMIE, JEF, JEFE, JEO, JEOE, MAD, MADE, MET, METE, MTO, MTOE, PET, PETE, UCK, UCKE, UZB, UZBE, UZBM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11005",
+  "code": "FIZ 210",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Fizikte Matematik. Yönt.Giriş",
+  "method": "",
+  "instructor": "Ali Yıldız",
+  "buildings": [
+   "FEB\nFEB",
+   "D204\nD204"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "09:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 90,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11058",
+  "code": "FIZ 214",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Dalgalar Fiziği",
+  "method": "",
+  "instructor": "Seda Aksoy Esinoğlu",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D203\nD203\nD203"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "08:30/09:29"
+  ],
+  "rooms": [],
+  "capacity": 110,
+  "enrolled": 96,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11060",
+  "code": "FIZ 214EL",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Wave Physics Laboratory",
+  "method": "",
+  "instructor": "Seda Aksoy Esinoğlu",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 45,
+  "enrolled": 35,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11063",
+  "code": "FIZ 214EL",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Wave Physics Laboratory",
+  "method": "",
+  "instructor": "Berna Morova",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 48,
+  "enrolled": 48,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11064",
+  "code": "FIZ 215",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Modern Fizik",
+  "method": "",
+  "instructor": "Ömer Faruk Dayı",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D103\nD103\nD201"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "08:30/09:29"
+  ],
+  "rooms": [],
+  "capacity": 75,
+  "enrolled": 55,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11065",
+  "code": "FIZ 233E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Electronics I",
+  "method": "",
+  "instructor": "Özgün Girgin",
+  "buildings": [
+   "FEB\nFEB",
+   "D102\nD102"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/14:29",
+   "10:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 99,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11066",
+  "code": "FIZ 233EL",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Electronics I Lab.",
+  "method": "",
+  "instructor": "Özgün Girgin",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 30,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11067",
+  "code": "FIZ 233EL",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Electronics I Lab.",
+  "method": "",
+  "instructor": "Özgün Girgin",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 30,
+  "enrolled": 25,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11068",
+  "code": "FIZ 233EL",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Electronics I Lab.",
+  "method": "",
+  "instructor": "Özgün Girgin",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 30,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11069",
+  "code": "FIZ 241E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Symblc & Numrc Tchnqs in Physc",
+  "method": "",
+  "instructor": "Tolga Birkandan",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "OBL3"
+  ],
+  "capacity": 55,
+  "enrolled": 26,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11070",
+  "code": "FIZ 241E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Symblc & Numrc Tchnqs in Physc",
+  "method": "",
+  "instructor": "Tolga Birkandan",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "OBL3"
+  ],
+  "capacity": 50,
+  "enrolled": 28,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11072",
+  "code": "FIZ 314",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Kuantum Mekaniği I",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "---\n---\n---"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "08:30/09:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11073",
+  "code": "FIZ 323E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Mathematical Meth.in Physics I",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "---\n---\n---"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "11:30/12:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11074",
+  "code": "FIZ 411E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Electromagnetic Theory I",
+  "method": "",
+  "instructor": "Abdurrahman Savaş Arapoğlu",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D102\nD102\nD203"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "10:30/11:29"
+  ],
+  "rooms": [],
+  "capacity": 105,
+  "enrolled": 91,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11075",
+  "code": "FIZ 415E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Quantum Mechanics II",
+  "method": "",
+  "instructor": "--",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "---\n---\n---"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "08:30/09:29"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11076",
+  "code": "FIZ 431E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Solid State Physics I",
+  "method": "",
+  "instructor": "Hakan Özgür Özer",
+  "buildings": [
+   "FEB\nFEB",
+   "L300\nL300"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "14:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11077",
+  "code": "FIZ 426E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Opto Electronics",
+  "method": "",
+  "instructor": "Ali Gelir",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "D205"
+  ],
+  "capacity": 40,
+  "enrolled": 20,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11078",
+  "code": "FIZ 433E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Nuclear Physics I",
+  "method": "",
+  "instructor": "Cenap Şahabettin Özben",
+  "buildings": [
+   "FEB\nFEB",
+   "D101\nD105"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "12:30/14:29",
+   "15:30/17:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 17,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11079",
+  "code": "FIZ 437E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Stat.Lear.from Data:App.inPhy.",
+  "method": "",
+  "instructor": "Emre Onur Kahya, Sinem Şaşmaz",
+  "buildings": [
+   "FEB\nFEB",
+   "D206\nOBL3"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29",
+   "12:30/14:29"
+  ],
+  "rooms": [],
+  "capacity": 30,
+  "enrolled": 30,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE, FIZM, MAT, MATE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11080",
+  "code": "FIZ 441E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Selected Prob. in Comp. Phy.",
+  "method": "",
+  "instructor": "Mehmet Kerim Ramazanoğlu",
+  "buildings": [
+   "FEB\nFEB",
+   "OBL1\nOBL1"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/14:29",
+   "13:30/14:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 31,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11081",
+  "code": "FIZ 443",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Güneş Ener. Fizik ve Tek. I",
+  "method": "",
+  "instructor": "Zuhal Er",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "D206"
+  ],
+  "capacity": 40,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11082",
+  "code": "FIZ 476",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Güneş Ene Fizik ve Tekno II",
+  "method": "",
+  "instructor": "Hakan Karaağaç",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D306"
+  ],
+  "capacity": 30,
+  "enrolled": 10,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11083",
+  "code": "FIZ 457E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Optics I",
+  "method": "",
+  "instructor": "Gönül Eryürek",
+  "buildings": [
+   "FEB\nFEB",
+   "D206\nD203"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11084",
+  "code": "FIZ 463E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Astrophysics I",
+  "method": "",
+  "instructor": "Kazım Yavuz Ekşi",
+  "buildings": [
+   "FEB\nFEB",
+   "D203\nD101"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "14:30/15:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11085",
+  "code": "FIZ 494E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "General Relativity",
+  "method": "",
+  "instructor": "Mehmet Özkan",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "D103"
+  ],
+  "capacity": 40,
+  "enrolled": 12,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11086",
+  "code": "FIZ 4901",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Fizik Mühendisliği Tasarımı I",
+  "method": "",
+  "instructor": "Ahmet Levent Subaşı",
+  "buildings": [
+   "FEB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 18,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11087",
+  "code": "FIZ 4901E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Physics Engeering Design I",
+  "method": "",
+  "instructor": "Ahmet Levent Subaşı",
+  "buildings": [
+   "FEB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 22,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11088",
+  "code": "FIZ 4902",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Fizik Mühendisliği Tasarımı II",
+  "method": "",
+  "instructor": "Ahmet Levent Subaşı",
+  "buildings": [
+   "FEB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 13,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11089",
+  "code": "FIZ 4902E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Physics Engeering Design II",
+  "method": "",
+  "instructor": "Ahmet Levent Subaşı",
+  "buildings": [
+   "FEB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 15,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11090",
+  "code": "FIZ 492",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "",
+  "instructor": "Ahmet Levent Subaşı",
+  "buildings": [
+   "FEB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 3,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "11091",
+  "code": "FIZ 492E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "",
+  "instructor": "Ahmet Levent Subaşı",
+  "buildings": [
+   "FEB",
+   "---"
+  ],
+  "days": [],
+  "times": [
+   "/"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZE"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "13915",
+  "code": "FIZ 310",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "İstatistik Fizik",
+  "method": "",
+  "instructor": "Yaşar Yılmaz",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D103\nD103\nD304"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/11:29",
+   "10:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 29,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14107",
+  "code": "FIZ 315",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Kuantum Mekaniği I",
+  "method": "",
+  "instructor": "Neşe Özdemir",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D204\nD204\nD204"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "08:30/09:29"
+  ],
+  "rooms": [],
+  "capacity": 75,
+  "enrolled": 69,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14112",
+  "code": "FIZ 316E",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Quantum Mechanics II",
+  "method": "",
+  "instructor": "Cem Özgür Servantie",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D206\nD206\nD106"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29",
+   "08:30/09:29"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 36,
+  "reserved": "",
+  "programs": [
+   "FIZ, FIZM"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "14757",
+  "code": "FIZ 323",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Fizikte Matematiksel Yönteml I",
+  "method": "",
+  "instructor": "Ahmet Levent Subaşı",
+  "buildings": [
+   "FEB\nFEB\nFEB",
+   "D104\nD104\nD104"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "11:30/12:29",
+   "08:30/10:29"
+  ],
+  "rooms": [],
+  "capacity": 75,
+  "enrolled": 62,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
+  "crn": "15285",
+  "code": "FIZ 214EL",
+  "branch": "FIZ",
+  "level": "LS",
+  "name": "Wave Physics Laboratory",
+  "method": "",
+  "instructor": "Seda Aksoy Esinoğlu",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "---"
+  ],
+  "capacity": 40,
+  "enrolled": 38,
+  "reserved": "",
+  "programs": [
+   "FIZ"
+  ],
+  "prereq": "",
+  "classReq": ""
+ }
+]

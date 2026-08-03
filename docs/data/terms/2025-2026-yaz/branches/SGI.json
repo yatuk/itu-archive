@@ -1,0 +1,72 @@
+[
+ {
+  "crn": "30400",
+  "code": "SGI 201",
+  "branch": "SGI",
+  "level": "LS",
+  "name": "Statics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa Erden Yıldızdağ",
+  "buildings": [
+   "MEDC",
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/14:29",
+   "14:30/17:29",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "2D11",
+   "2D11",
+   "2D11"
+  ],
+  "capacity": 30,
+  "enrolled": 9,
+  "reserved": "-",
+  "programs": [
+   "SGI_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "30407",
+  "code": "SGI 216",
+  "branch": "SGI",
+  "level": "LS",
+  "name": "Heat Transfer In Engineering",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Selma Ergin",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29",
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "2D14",
+   "2D14"
+  ],
+  "capacity": 10,
+  "enrolled": 8,
+  "reserved": "-",
+  "programs": [
+   "SGI_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

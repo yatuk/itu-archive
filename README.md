@@ -38,12 +38,17 @@ OBS'de sorulamayan şeyler burada sorulabiliyor:
 6.264 ders ve 4.148 öğretim üyesi indekslenmiş durumda.
 
 Site ayrıca bir "ders planı haritası" sunuyor: bir bölüm seçin, o bölümün güncel
-müfredatı dönem dönem, gerçek önşart ilişkileriyle kendiliğinden yerleşen bir
-grafikte çiziliyor. Bir düğüme tıklayınca geriye doğru önşartlar, ileriye doğru
-o dersi önşart olarak isteyen dersler parlıyor. Seçmeli ders slotları tek bir
-düğüm (bazı havuzlarda 150'den fazla alternatif var, hepsini tek tek düğüm
-yapmak grafiği okunmaz hale getiriyordu); tıklayınca alternatifler panelde
-listeleniyor.
+müfredatı dönem sütunları halinde çiziliyor, gerçek önşart ilişkileri ok'larla
+her zaman görünür (tıklamaya gerek yok). Bir düğüme tıklayınca geriye doğru
+önşartlar, ileriye doğru o dersi önşart olarak isteyen dersler ayrıca parlıyor.
+Seçmeli ders slotları tek bir düğüm (bazı havuzlarda 150'den fazla alternatif
+var, hepsini tek tek düğüm yapmak grafiği okunmaz hale getiriyordu); tıklayınca
+alternatifler panelde listeleniyor.
+
+İlk denemede bu grafik force-directed bir yığındı (Obsidian'ın grafik görünümü
+gibi organik ama kaotik), ve kenarlar yalnızca bir düğüme tıklanınca netleşiyordu
+— yapı ilk bakışta okunmuyordu. Sabit dönem sütunlarına geçildi, kenarlar
+varsayılan olarak da net.
 
 ## Çalıştırma
 

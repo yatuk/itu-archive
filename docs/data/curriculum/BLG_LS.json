@@ -1,0 +1,1663 @@
+{
+ "programCode": "BLG_LS",
+ "programName": "Bilgisayar Mühendisliği Lisans",
+ "faculty": "Bilgisayar ve Bilişim Fakültesi",
+ "planLabel": "Bilgisayar Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 101",
+      "name": "Fizik I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 101E",
+      "name": "Intr. to Information Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 113E",
+      "name": "Intr.toComp.Eng.and Ethics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 281E",
+      "name": "Linear Algebra and Applicat."
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BLG 112",
+      "name": "Ayrık Matematik"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 102E",
+      "name": "Intr to Sci&Eng Comp (C)"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BLG 210E",
+      "name": "Engineering Mathematics"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 231E",
+      "name": "Digital Circuits"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 223",
+      "name": "Veri Yapıları"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 222",
+      "name": "Elektroniğe Giriş"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 211",
+      "name": "Elektrik Devre Temelleri"
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BLG 252E",
+      "name": "Object Oriented Programming"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 222",
+      "name": "Bilgisayar Organizasyonu"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 242E",
+      "name": "Logic Circuits Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 202E",
+      "name": "Numerical Methods in CE"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 311",
+      "name": "Biçimsel Diller ve Otom"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "elective": {
+      "title": "4.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "BLG 346",
+        "name": "Görsel Kompozisyon Temelleri"
+       },
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       },
+       {
+        "code": "SNT 229",
+        "name": "Türkiye'de Popüler Müzik Tarihinden İzlekler"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BLG 335E",
+      "name": "Analysis of Algorithms I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 351",
+      "name": "Mikrobilgisayar Laboratuvarı"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 317",
+      "name": "Veri Tabanı Sistemleri"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 212",
+      "name": "Mikroişlemci Sistemleri"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 311",
+      "name": "Elektroniğe Giriş Lab."
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders (TM)",
+      "options": [
+       {
+        "code": "BLG 337E",
+        "name": "Principles of Computer Comm."
+       },
+       {
+        "code": "BLG 345E",
+        "name": "Logic & Computability"
+       },
+       {
+        "code": "BLG 348E",
+        "name": "Introduction to Bioinformatics"
+       },
+       {
+        "code": "BLG 368",
+        "name": "Yöneylem Araştırması"
+       },
+       {
+        "code": "BLG 442E",
+        "name": "Tech.&Innov. Mng.for Inf.Tech."
+       },
+       {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
+        "code": "BLG 454E",
+        "name": "Learning From Data"
+       },
+       {
+        "code": "KON 224E",
+        "name": "Measurement&Instrumentation"
+       },
+       {
+        "code": "KON 317",
+        "name": "Otomatik Kontrol Sistemleri"
+       },
+       {
+        "code": "MAL 201",
+        "name": "Malzeme Bilimi"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BLG 322",
+      "name": "Bilgisayar Mimarisi"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 312",
+      "name": "Bilgisayar İşletim Sistemleri"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 336E",
+      "name": "Analysis of Algorithms II"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 374E",
+      "name": "Tech. Communic.for Comp.Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 354E",
+      "name": "Signal&Systems for Comp.Eng."
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders (TM)",
+      "options": [
+       {
+        "code": "BLG 337E",
+        "name": "Principles of Computer Comm."
+       },
+       {
+        "code": "BLG 345E",
+        "name": "Logic & Computability"
+       },
+       {
+        "code": "BLG 348E",
+        "name": "Introduction to Bioinformatics"
+       },
+       {
+        "code": "BLG 368",
+        "name": "Yöneylem Araştırması"
+       },
+       {
+        "code": "BLG 442E",
+        "name": "Tech.&Innov. Mng.for Inf.Tech."
+       },
+       {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
+        "code": "BLG 454E",
+        "name": "Learning From Data"
+       },
+       {
+        "code": "KON 224E",
+        "name": "Measurement&Instrumentation"
+       },
+       {
+        "code": "KON 317",
+        "name": "Otomatik Kontrol Sistemleri"
+       },
+       {
+        "code": "MAL 201",
+        "name": "Malzeme Bilimi"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 411E",
+      "name": "Software Engineering"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 4901",
+      "name": "Bilgisayar Müh. Tasarımı I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course I (MT)",
+      "options": [
+       {
+        "code": "BLG 413E",
+        "name": "System Programming"
+       },
+       {
+        "code": "BLG 430E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "BLG 433E",
+        "name": "Computer Communications"
+       },
+       {
+        "code": "BLG 434E",
+        "name": "Introduction to Expert Systems"
+       },
+       {
+        "code": "BLG 435E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 438E",
+        "name": "Digital System Design Laboratory"
+       },
+       {
+        "code": "BLG 439E",
+        "name": "Computer Project I"
+       },
+       {
+        "code": "BLG 440",
+        "name": "Bilgisayar Proje II"
+       },
+       {
+        "code": "BLG 443E",
+        "name": "Discrete Event Simulation"
+       },
+       {
+        "code": "BLG 444E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "BLG 447",
+        "name": "Derleyici Tasarımı"
+       },
+       {
+        "code": "BLG 449E",
+        "name": "Prog.in Parallel&DistrubedSys."
+       },
+       {
+        "code": "BLG 450E",
+        "name": "Real-Time Systems Software"
+       },
+       {
+        "code": "BLG 451",
+        "name": "Gerçek Zaman Sistemleri"
+       },
+       {
+        "code": "BLG 452",
+        "name": "Mikroişlemci Tasarım Laboratuvarı"
+       },
+       {
+        "code": "BLG 453E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 456E",
+        "name": "Robotics"
+       },
+       {
+        "code": "BLG 458E",
+        "name": "Functional Programming"
+       },
+       {
+        "code": "BLG 459E",
+        "name": "Computer Security"
+       },
+       {
+        "code": "BLG 460E",
+        "name": "Secure Programming"
+       },
+       {
+        "code": "BLG 468E",
+        "name": "Object Oriented Model.&Design"
+       },
+       {
+        "code": "BLG 475E",
+        "name": "Software Quality and Testing"
+       },
+       {
+        "code": "BLG 477E",
+        "name": "Multimedia Computing"
+       },
+       {
+        "code": "BLG 478E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BLG 483E",
+        "name": "Artificial Intelligence Aided Computer Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course II (MT)",
+      "options": [
+       {
+        "code": "BLG 413E",
+        "name": "System Programming"
+       },
+       {
+        "code": "BLG 430E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "BLG 433E",
+        "name": "Computer Communications"
+       },
+       {
+        "code": "BLG 434E",
+        "name": "Introduction to Expert Systems"
+       },
+       {
+        "code": "BLG 435E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 438E",
+        "name": "Digital System Design Laboratory"
+       },
+       {
+        "code": "BLG 439E",
+        "name": "Computer Project I"
+       },
+       {
+        "code": "BLG 440",
+        "name": "Bilgisayar Proje II"
+       },
+       {
+        "code": "BLG 443E",
+        "name": "Discrete Event Simulation"
+       },
+       {
+        "code": "BLG 444E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "BLG 447",
+        "name": "Derleyici Tasarımı"
+       },
+       {
+        "code": "BLG 449E",
+        "name": "Prog.in Parallel&DistrubedSys."
+       },
+       {
+        "code": "BLG 450E",
+        "name": "Real-Time Systems Software"
+       },
+       {
+        "code": "BLG 451",
+        "name": "Gerçek Zaman Sistemleri"
+       },
+       {
+        "code": "BLG 452",
+        "name": "Mikroişlemci Tasarım Laboratuvarı"
+       },
+       {
+        "code": "BLG 453E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 456E",
+        "name": "Robotics"
+       },
+       {
+        "code": "BLG 458E",
+        "name": "Functional Programming"
+       },
+       {
+        "code": "BLG 459E",
+        "name": "Computer Security"
+       },
+       {
+        "code": "BLG 460E",
+        "name": "Secure Programming"
+       },
+       {
+        "code": "BLG 468E",
+        "name": "Object Oriented Model.&Design"
+       },
+       {
+        "code": "BLG 475E",
+        "name": "Software Quality and Testing"
+       },
+       {
+        "code": "BLG 477E",
+        "name": "Multimedia Computing"
+       },
+       {
+        "code": "BLG 478E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BLG 483E",
+        "name": "Artificial Intelligence Aided Computer Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course III (ITB)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "BLG 463E",
+        "name": "Innov. Leadership in Comp.Eng."
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 011",
+        "name": "Bilgi Kuramları"
+       },
+       {
+        "code": "ITB 012",
+        "name": "TC'nin Yönetim Yapısı"
+       },
+       {
+        "code": "ITB 020",
+        "name": "Modernitenin Oluşumu"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 026",
+        "name": "Türkiye'de MdnTarihi & Sys Akm"
+       },
+       {
+        "code": "ITB 027E",
+        "name": "Estr/Invl in 5 Works by Campus"
+       },
+       {
+        "code": "ITB 037",
+        "name": "Bilgi, Dil ve Mantık"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 075",
+        "name": "Seçmeli Fransızca"
+       },
+       {
+        "code": "ITB 076",
+        "name": "Sanatın Sosyal Tarihi"
+       },
+       {
+        "code": "ITB 085",
+        "name": "Sinema Tarihi ve Estetiği"
+       },
+       {
+        "code": "ITB 086",
+        "name": "Osm İmparatorluğu'nda Altyapı"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 093",
+        "name": "Modern Türkiye'nin Temelleri"
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095",
+        "name": "Teknoloji, Politika ve Hukuk"
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151",
+        "name": "İnsan Kaynakları Yönetimi"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 157",
+        "name": "Bilimin İstanbul'daki Tarihi"
+       },
+       {
+        "code": "ITB 158",
+        "name": "Kontr ve Otoms Sist Tarihçesi"
+       },
+       {
+        "code": "ITB 171",
+        "name": "Bilim, Teknoloji ve Toplum"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 172E",
+        "name": "The Historian in the Cinema"
+       },
+       {
+        "code": "ITB 173E",
+        "name": "Frege Found. of Arithmetic"
+       },
+       {
+        "code": "ITB 175",
+        "name": "Küreselleşme ve Kent"
+       },
+       {
+        "code": "ITB 176",
+        "name": "Türkiye'de Toplumsal Hafıza"
+       },
+       {
+        "code": "ITB 177",
+        "name": "19.yy İstanbul'unda Tic. ve Mi"
+       },
+       {
+        "code": "ITB 178E",
+        "name": "Democracy&Modern Media:Int.Per"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205",
+        "name": "Felsefe"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 210",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 210E",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214",
+        "name": "Modern Ortadoğu"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 222",
+        "name": "Kent ve Toplum"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224",
+        "name": "Çevre ve Toplum"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "ITB 227",
+        "name": "Siyaset Teorisi"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228",
+        "name": "Toplumsal Cinsiyet Çalışmaları"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230",
+        "name": "Afet Bilinci"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 235",
+        "name": "Türkiye ve Avrupa Birliği"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BLG 4902E",
+      "name": "Computer Engineering Design II"
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201E",
+      "name": "Economics"
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course I (TM)",
+      "options": [
+       {
+        "code": "BLG 337E",
+        "name": "Principles of Computer Comm."
+       },
+       {
+        "code": "BLG 368",
+        "name": "Yöneylem Araştırması"
+       },
+       {
+        "code": "BLG 442E",
+        "name": "Tech.&Innov. Mng.for Inf.Tech."
+       },
+       {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
+        "code": "BLG 454E",
+        "name": "Learning From Data"
+       },
+       {
+        "code": "KON 224E",
+        "name": "Measurement&Instrumentation"
+       },
+       {
+        "code": "KON 317",
+        "name": "Otomatik Kontrol Sistemleri"
+       },
+       {
+        "code": "MAL 201",
+        "name": "Malzeme Bilimi"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course II (MT)",
+      "options": [
+       {
+        "code": "BLG 413E",
+        "name": "System Programming"
+       },
+       {
+        "code": "BLG 430E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "BLG 433E",
+        "name": "Computer Communications"
+       },
+       {
+        "code": "BLG 434E",
+        "name": "Introduction to Expert Systems"
+       },
+       {
+        "code": "BLG 435E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 438E",
+        "name": "Digital System Design Laboratory"
+       },
+       {
+        "code": "BLG 439E",
+        "name": "Computer Project I"
+       },
+       {
+        "code": "BLG 440",
+        "name": "Bilgisayar Proje II"
+       },
+       {
+        "code": "BLG 443E",
+        "name": "Discrete Event Simulation"
+       },
+       {
+        "code": "BLG 444E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "BLG 447",
+        "name": "Derleyici Tasarımı"
+       },
+       {
+        "code": "BLG 449E",
+        "name": "Prog.in Parallel&DistrubedSys."
+       },
+       {
+        "code": "BLG 450E",
+        "name": "Real-Time Systems Software"
+       },
+       {
+        "code": "BLG 451",
+        "name": "Gerçek Zaman Sistemleri"
+       },
+       {
+        "code": "BLG 452",
+        "name": "Mikroişlemci Tasarım Laboratuvarı"
+       },
+       {
+        "code": "BLG 453E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 456E",
+        "name": "Robotics"
+       },
+       {
+        "code": "BLG 458E",
+        "name": "Functional Programming"
+       },
+       {
+        "code": "BLG 459E",
+        "name": "Computer Security"
+       },
+       {
+        "code": "BLG 460E",
+        "name": "Secure Programming"
+       },
+       {
+        "code": "BLG 468E",
+        "name": "Object Oriented Model.&Design"
+       },
+       {
+        "code": "BLG 475E",
+        "name": "Software Quality and Testing"
+       },
+       {
+        "code": "BLG 477E",
+        "name": "Multimedia Computing"
+       },
+       {
+        "code": "BLG 478E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BLG 483E",
+        "name": "Artificial Intelligence Aided Computer Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course III (MT)",
+      "options": [
+       {
+        "code": "BLG 413E",
+        "name": "System Programming"
+       },
+       {
+        "code": "BLG 430E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "BLG 433E",
+        "name": "Computer Communications"
+       },
+       {
+        "code": "BLG 434E",
+        "name": "Introduction to Expert Systems"
+       },
+       {
+        "code": "BLG 435E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 438E",
+        "name": "Digital System Design Laboratory"
+       },
+       {
+        "code": "BLG 439E",
+        "name": "Computer Project I"
+       },
+       {
+        "code": "BLG 440",
+        "name": "Bilgisayar Proje II"
+       },
+       {
+        "code": "BLG 443E",
+        "name": "Discrete Event Simulation"
+       },
+       {
+        "code": "BLG 444E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "BLG 447",
+        "name": "Derleyici Tasarımı"
+       },
+       {
+        "code": "BLG 449E",
+        "name": "Prog.in Parallel&DistrubedSys."
+       },
+       {
+        "code": "BLG 450E",
+        "name": "Real-Time Systems Software"
+       },
+       {
+        "code": "BLG 451",
+        "name": "Gerçek Zaman Sistemleri"
+       },
+       {
+        "code": "BLG 452",
+        "name": "Mikroişlemci Tasarım Laboratuvarı"
+       },
+       {
+        "code": "BLG 453E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 456E",
+        "name": "Robotics"
+       },
+       {
+        "code": "BLG 458E",
+        "name": "Functional Programming"
+       },
+       {
+        "code": "BLG 459E",
+        "name": "Computer Security"
+       },
+       {
+        "code": "BLG 460E",
+        "name": "Secure Programming"
+       },
+       {
+        "code": "BLG 468E",
+        "name": "Object Oriented Model.&Design"
+       },
+       {
+        "code": "BLG 475E",
+        "name": "Software Quality and Testing"
+       },
+       {
+        "code": "BLG 477E",
+        "name": "Multimedia Computing"
+       },
+       {
+        "code": "BLG 478E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BLG 483E",
+        "name": "Artificial Intelligence Aided Computer Engineering"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

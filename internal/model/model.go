@@ -66,6 +66,29 @@ type ExamSchedule struct {
 	Exams     []Exam `json:"exams"`
 }
 
+// PrereqNode, önşart grafiğindeki tek bir ders. Katalogdaki her ders bir düğüm;
+// önşartı olmayanlar da (başka bir dersin önşartı olabildikleri için) dahil.
+type PrereqNode struct {
+	Code        string `json:"code"`
+	Name        string `json:"name"`
+	Branch      string `json:"branch"`
+	Requirement string `json:"requirement,omitempty"` // ham ifade, detay paneli için
+	ClassReq    string `json:"classReq,omitempty"`
+}
+
+// PrereqEdge: From dersi, To dersinin önşartı.
+type PrereqEdge struct {
+	From string `json:"from"`
+	To   string `json:"to"`
+}
+
+// PrereqGraph, docs/data/prereq/graph.json içeriği.
+type PrereqGraph struct {
+	GeneratedAt string       `json:"generatedAt"`
+	Nodes       []PrereqNode `json:"nodes"`
+	Edges       []PrereqEdge `json:"edges"`
+}
+
 // CalendarEvent, akademik takvimdeki tek bir satır.
 type CalendarEvent struct {
 	Table     string `json:"table"` // tabloyu açan başlık: "Güz Dönemi", "Yaz Okulu", ...

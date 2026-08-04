@@ -1,0 +1,969 @@
+{
+ "programCode": "DENE_LS",
+ "programName": "Gemi ve Deniz Teknolojisi Mühendisliği (İngilizce) Lisans",
+ "faculty": "Gemi İnşaatı ve Deniz Bilimleri Fakültesi",
+ "planLabel": "Gemi ve Deniz Teknolojisi Mühendisliği Lisans Programı (%100 İngilizce) 2012-2013 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "DEN 111E",
+      "name": "Introduction to Naval Architecture and Ocean Engineering"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 101E",
+      "name": "Int to Comp and Inf Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 261E",
+      "name": "Linear Algebra"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course I",
+      "options": [
+       {
+        "code": "ING 101",
+        "name": "English I"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "RES 101E",
+      "name": "Technical Drawing"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "STA 201E",
+      "name": "Statics"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 108E",
+      "name": "Intr. to Sci. & Eng.Computing"
+     }
+    },
+    {
+     "elective": {
+      "title": "2th Semester Elect. Course(TB)",
+      "options": [
+       {
+        "code": "FIZ 201E",
+        "name": "Modern Physics"
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "KIM 202E",
+        "name": "Physical Chemistry"
+       },
+       {
+        "code": "KIM 203E",
+        "name": "Analytical Chemistry"
+       },
+       {
+        "code": "KIM 204E",
+        "name": "General Chemistry II"
+       },
+       {
+        "code": "KIM 205E",
+        "name": "Organic Chemistry"
+       },
+       {
+        "code": "KIM 207E",
+        "name": "Inorganic Chemistry"
+       },
+       {
+        "code": "KIM 208E",
+        "name": "Advance Organic Chemistry"
+       },
+       {
+        "code": "MAT 106E",
+        "name": "Analytic Geometry and Vector Calculation"
+       },
+       {
+        "code": "MAT 205E",
+        "name": "Theory of Complex Functions"
+       },
+       {
+        "code": "MAT 206E",
+        "name": "Fuzzy Mathematics"
+       },
+       {
+        "code": "MAT 208E",
+        "name": "Science and History of Mathematics"
+       },
+       {
+        "code": "MAT 301E",
+        "name": "Partial Differantial Equations"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course II",
+      "options": [
+       {
+        "code": "ING 102",
+        "name": "English II"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 201E",
+      "name": "Differential Equations"
+     }
+    },
+    {
+     "course": {
+      "code": "DNK 201E",
+      "name": "Dynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 211E",
+      "name": "Ship Geometry"
+     }
+    },
+    {
+     "course": {
+      "code": "MAL 201E",
+      "name": "Materials Science"
+     }
+    },
+    {
+     "course": {
+      "code": "MUK 203E",
+      "name": "Strength of Materials I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 202E",
+      "name": "Numerical Methods"
+     }
+    },
+    {
+     "elective": {
+      "title": "3rd Semester Elect. Course-ITB",
+      "options": [
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "EKO 201E",
+      "name": "Economics"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III"
+     }
+    },
+    {
+     "course": {
+      "code": "MUK 204E",
+      "name": "Strength of Materials II"
+     }
+    },
+    {
+     "course": {
+      "code": "TER 201E",
+      "name": "Thermodynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "elective": {
+      "title": "4th Semester Elect. Course(TB)",
+      "options": [
+       {
+        "code": "BLG 112E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "FIZ 201E",
+        "name": "Modern Physics"
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "KIM 202E",
+        "name": "Physical Chemistry"
+       },
+       {
+        "code": "KIM 203E",
+        "name": "Analytical Chemistry"
+       },
+       {
+        "code": "KIM 204E",
+        "name": "General Chemistry II"
+       },
+       {
+        "code": "KIM 205E",
+        "name": "Organic Chemistry"
+       },
+       {
+        "code": "KIM 207E",
+        "name": "Inorganic Chemistry"
+       },
+       {
+        "code": "KIM 208E",
+        "name": "Advance Organic Chemistry"
+       },
+       {
+        "code": "MAT 106E",
+        "name": "Analytic Geometry and Vector Calculation"
+       },
+       {
+        "code": "MAT 205E",
+        "name": "Theory of Complex Functions"
+       },
+       {
+        "code": "MAT 206E",
+        "name": "Fuzzy Mathematics"
+       },
+       {
+        "code": "MAT 208E",
+        "name": "Science and History of Mathematics"
+       },
+       {
+        "code": "MAT 301E",
+        "name": "Partial Differantial Equations"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "AKM 205E",
+      "name": "Fluid Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 311E",
+      "name": "Maritime Law"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 331E",
+      "name": "Cons.of Ship & Offshore Struc."
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 341E",
+      "name": "Ship Theory"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 320E",
+      "name": "Adv.Manufacturing Processes"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elect. Course",
+      "options": [
+       {
+        "code": "DEN 224E",
+        "name": "Experiment Design and Data Analysis"
+       },
+       {
+        "code": "DEN 313E",
+        "name": "Dynamic Structural Analysis"
+       },
+       {
+        "code": "DEN 315E",
+        "name": "Engineering Optimization"
+       },
+       {
+        "code": "DEN 319E",
+        "name": "Introduction to Marine Ecological Processses"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "DEN 324E",
+      "name": "Marine Engines and Auxiliaries"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 312E",
+      "name": "Resist. of Ship&Offshore Stru."
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 342E",
+      "name": "Ship Design"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 314E",
+      "name": "Oceanography"
+     }
+    },
+    {
+     "elective": {
+      "title": "6th Semester Elect. Course(MT)",
+      "options": [
+       {
+        "code": "DEN 318E",
+        "name": "Wave Mechanics"
+       },
+       {
+        "code": "DEN 346E",
+        "name": "Safety Management and Risk Analysis in Marine Industry"
+       },
+       {
+        "code": "DEN 427E",
+        "name": "Mechanics of Mooring Lines"
+       },
+       {
+        "code": "DEN 433E",
+        "name": "Stability of Floating Objects"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6th Semester Elect. Course-ITB",
+      "options": [
+       {
+        "code": "GEM 353E",
+        "name": "Work Safety & Health Training in Shipbuilding Industry"
+       },
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 441E",
+      "name": "Marine Structures Project I"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 412E",
+      "name": "Underwater Acoustics"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 421E",
+      "name": "Ship Propulsion"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 411E",
+      "name": "Hydrodynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 431E",
+      "name": "Stgth of Shps & Offshr Strctrs"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elect. Course(MT)",
+      "options": [
+       {
+        "code": "DEN 415E",
+        "name": "Marine Pollution"
+       },
+       {
+        "code": "DEN 428E",
+        "name": "Seawater Chemistry"
+       },
+       {
+        "code": "DEN 429E",
+        "name": "Introduction to the Analysis of Oceanographic Data"
+       },
+       {
+        "code": "DEN 436E",
+        "name": "Ecotoxicology in the Marine En"
+       },
+       {
+        "code": "DEN 479E",
+        "name": "Underwater Vehicle Technology"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 314E",
+      "name": "Methods Of Ship Production"
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 492E",
+      "name": "Graduation Project"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 422E",
+      "name": "Marine Structures Project II"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 412E",
+      "name": "Shipyard Organization"
+     }
+    },
+    {
+     "course": {
+      "code": "DEN 451E",
+      "name": "Ship Mod.Tst.&OceanographyLab."
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elect. CourseI-MT",
+      "options": [
+       {
+        "code": "DEN 418E",
+        "name": "Marine Energy Technology"
+       },
+       {
+        "code": "DEN 424E",
+        "name": "Computer Aided Ship Design"
+       },
+       {
+        "code": "DEN 426E",
+        "name": "The Sailing Yacht"
+       },
+       {
+        "code": "DEN 434E",
+        "name": "Introduction to Finite Element Analysis of Marine Structures"
+       },
+       {
+        "code": "GEM 436E",
+        "name": "Refrigeration Syst For Ships"
+       },
+       {
+        "code": "GEM 447E",
+        "name": "Vent & Air Cond Sys For Ships"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elect. CrseII-MT",
+      "options": [
+       {
+        "code": "DEN 317E",
+        "name": "Coastal Engineering"
+       },
+       {
+        "code": "DEN 413E",
+        "name": "Concrete Techniques for Marine Structures"
+       },
+       {
+        "code": "EUT 453E",
+        "name": "Basic Princip. of Yacht Dsgn"
+       },
+       {
+        "code": "GEM 425E",
+        "name": "Finite Elem.Anl.of MarineStrc."
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

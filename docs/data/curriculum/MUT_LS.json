@@ -1,0 +1,2296 @@
+{
+ "programCode": "MUT_LS",
+ "programName": "Müzik Teknolojileri Lisans",
+ "faculty": "Türk Musikisi Devlet Konservatuvarı",
+ "planLabel": "Müzik Teknolojileri Lisans Programı (Türkçe) 2012-2013 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTR 101",
+      "name": "Makam Teorisi I"
+     }
+    },
+    {
+     "course": {
+      "code": "MTR 103",
+      "name": "Müzik Teorisi I"
+     }
+    },
+    {
+     "elective": {
+      "title": "Stüdyo I",
+      "options": [
+       {
+        "code": "MUT 101",
+        "name": "Kemençe Yapımı I"
+       },
+       {
+        "code": "MUT 111",
+        "name": "Tanbur Yapımı"
+       },
+       {
+        "code": "MUT 141",
+        "name": "Kayıt Teknikleri"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Meslek Teknolojisi I",
+      "options": [
+       {
+        "code": "MUT 153",
+        "name": "Sayısal Ses Çalışma Ortamları"
+       },
+       {
+        "code": "MUT 161",
+        "name": "Ağaç Teknolojisi"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "MUT 131",
+      "name": "Akustik I"
+     }
+    },
+    {
+     "elective": {
+      "title": "Çalgı I",
+      "options": [
+       {
+        "code": "CAB 1013",
+        "name": "Viyola I"
+       },
+       {
+        "code": "CAB 1101",
+        "name": "Keman I"
+       },
+       {
+        "code": "CAB 151",
+        "name": "Kanun I"
+       },
+       {
+        "code": "CAB 153",
+        "name": "Tanbur I"
+       },
+       {
+        "code": "CAB 157",
+        "name": "Bağlama I"
+       },
+       {
+        "code": "CAB 159",
+        "name": "Ud I"
+       },
+       {
+        "code": "CAB 169",
+        "name": "3 Telli Kemençe I"
+       },
+       {
+        "code": "CAB 171",
+        "name": "4 Telli Kemençe I"
+       },
+       {
+        "code": "CAB 175",
+        "name": "Kemane I"
+       },
+       {
+        "code": "CAB 177",
+        "name": "Piyano I"
+       },
+       {
+        "code": "CAB 187",
+        "name": "Gitar I"
+       },
+       {
+        "code": "CAB 195",
+        "name": "Viyolonsel I"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "ING 105",
+      "name": "English I"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 109",
+      "name": "Bilgisayar"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTR 102",
+      "name": "Makam Teorisi II"
+     }
+    },
+    {
+     "course": {
+      "code": "MTR 104",
+      "name": "Müzik Teorisi II"
+     }
+    },
+    {
+     "elective": {
+      "title": "Stüdyo II",
+      "options": [
+       {
+        "code": "MUT 102",
+        "name": "Kemençe Yapımı II"
+       },
+       {
+        "code": "MUT 112",
+        "name": "Bağlama Yapımı"
+       },
+       {
+        "code": "MUT 142",
+        "name": "Ses Düzenleme ve Editing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Meslek Teknolojisi II",
+      "options": [
+       {
+        "code": "MUT 154",
+        "name": "Ses Tasarımı"
+       },
+       {
+        "code": "MUT 162",
+        "name": "Makina ve Takım Bilgisi"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "MUT 132",
+      "name": "Akustik II"
+     }
+    },
+    {
+     "elective": {
+      "title": "Çalgı II",
+      "options": [
+       {
+        "code": "CAB 1014",
+        "name": "Viyola II"
+       },
+       {
+        "code": "CAB 1102",
+        "name": "Keman II"
+       },
+       {
+        "code": "CAB 152",
+        "name": "Kanun II"
+       },
+       {
+        "code": "CAB 154",
+        "name": "Tanbur II"
+       },
+       {
+        "code": "CAB 158",
+        "name": "Bağlama II"
+       },
+       {
+        "code": "CAB 160",
+        "name": "Ud II"
+       },
+       {
+        "code": "CAB 170",
+        "name": "3 Telli Kemençe II"
+       },
+       {
+        "code": "CAB 172",
+        "name": "4 Telli Kemençe II"
+       },
+       {
+        "code": "CAB 176",
+        "name": "Kemane II"
+       },
+       {
+        "code": "CAB 178",
+        "name": "Piyano II"
+       },
+       {
+        "code": "CAB 188",
+        "name": "Gitar II"
+       },
+       {
+        "code": "CAB 196",
+        "name": "Viyolonsel II"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "ING 106",
+      "name": "English II"
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTR 203",
+      "name": "Müzik Teorisi III"
+     }
+    },
+    {
+     "course": {
+      "code": "MTR 201",
+      "name": "Makam Teorisi III"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 205",
+      "name": "English III"
+     }
+    },
+    {
+     "elective": {
+      "title": "Stüdyo III",
+      "options": [
+       {
+        "code": "MUT 201",
+        "name": "Kemane Yapımı"
+       },
+       {
+        "code": "MUT 211",
+        "name": "Ud Yapımı"
+       },
+       {
+        "code": "MUT 241",
+        "name": "İleri Kayıt Teknikleri"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Meslek Teknolojisi III",
+      "options": [
+       {
+        "code": "MUT 253",
+        "name": "Prodüksiyon Analizi"
+       },
+       {
+        "code": "MUT 263",
+        "name": "Ölçme ve Kontrol Bilgisi"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Çalgı III",
+      "options": [
+       {
+        "code": "CAB 2013",
+        "name": "Viyola III"
+       },
+       {
+        "code": "CAB 2101",
+        "name": "Keman III"
+       },
+       {
+        "code": "CAB 251",
+        "name": "Kanun III"
+       },
+       {
+        "code": "CAB 253",
+        "name": "Tanbur III"
+       },
+       {
+        "code": "CAB 257",
+        "name": "Bağlama III"
+       },
+       {
+        "code": "CAB 259",
+        "name": "Ud III"
+       },
+       {
+        "code": "CAB 269",
+        "name": "3 Telli Kemençe III"
+       },
+       {
+        "code": "CAB 271",
+        "name": "4 Telli Kemençe III"
+       },
+       {
+        "code": "CAB 275",
+        "name": "Kemane III"
+       },
+       {
+        "code": "CAB 277",
+        "name": "Piyano III"
+       },
+       {
+        "code": "CAB 287",
+        "name": "Gitar III"
+       },
+       {
+        "code": "CAB 295",
+        "name": "Viyolonsel III"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTR 204",
+      "name": "Müzik Teorisi IV"
+     }
+    },
+    {
+     "course": {
+      "code": "MTR 202",
+      "name": "Makam Teorisi IV"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 206",
+      "name": "English IV"
+     }
+    },
+    {
+     "elective": {
+      "title": "Stüdyo IV",
+      "options": [
+       {
+        "code": "MUT 202",
+        "name": "Keman Yapımı I"
+       },
+       {
+        "code": "MUT 212",
+        "name": "Lavta Yapımı"
+       },
+       {
+        "code": "MUT 242",
+        "name": "Elektronik Ortam ve Müzik"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Meslek Teknolojisi IV",
+      "options": [
+       {
+        "code": "MUT 254",
+        "name": "Sayısal Ses"
+       },
+       {
+        "code": "MUT 264",
+        "name": "Üst Yüzey İşlemleri"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Çalgı IV",
+      "options": [
+       {
+        "code": "CAB 2014",
+        "name": "Viyola IV"
+       },
+       {
+        "code": "CAB 2102",
+        "name": "Keman IV"
+       },
+       {
+        "code": "CAB 252",
+        "name": "Kanun IV"
+       },
+       {
+        "code": "CAB 254",
+        "name": "Tanbur IV"
+       },
+       {
+        "code": "CAB 258",
+        "name": "Bağlama IV"
+       },
+       {
+        "code": "CAB 260",
+        "name": "Ud IV"
+       },
+       {
+        "code": "CAB 270",
+        "name": "3 Telli Kemence IV"
+       },
+       {
+        "code": "CAB 272",
+        "name": "4 Telli Kemençe IV"
+       },
+       {
+        "code": "CAB 276",
+        "name": "Kemane IV"
+       },
+       {
+        "code": "CAB 278",
+        "name": "Piyano IV"
+       },
+       {
+        "code": "CAB 288",
+        "name": "Gitar IV"
+       },
+       {
+        "code": "CAB 296",
+        "name": "Viyolonsel IV"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MUT 361",
+      "name": "Çalgı Bilgisi I"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 103",
+      "name": "Atatürk İlke ve Ink.Tarihi"
+     }
+    },
+    {
+     "course": {
+      "code": "MUT 363",
+      "name": "Serbest Proje Çalışması I"
+     }
+    },
+    {
+     "elective": {
+      "title": "Stüdyo V",
+      "options": [
+       {
+        "code": "MUT 301",
+        "name": "Keman Yapımı II"
+       },
+       {
+        "code": "MUT 311",
+        "name": "Gitar Yapımı"
+       },
+       {
+        "code": "MUT 371",
+        "name": "Çok Kanallı Miks"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Meslek Teknolojisi V",
+      "options": [
+       {
+        "code": "MUT 267",
+        "name": "Stüdyo Akustiği"
+       },
+       {
+        "code": "MUT 269",
+        "name": "Çalgı Teknik Resmi I"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy. Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "MUT 303",
+        "name": "Ağaç İşl. Konstrksyn Bilgisi"
+       },
+       {
+        "code": "MUT 304",
+        "name": "Ney Yapımı"
+       },
+       {
+        "code": "MUT 313",
+        "name": "Çalgı Süsleme Sanatı"
+       },
+       {
+        "code": "MUT 314",
+        "name": "Kaval Yapımı"
+       },
+       {
+        "code": "MUT 344",
+        "name": "Sipsi Yapımı"
+       },
+       {
+        "code": "MUT 353",
+        "name": "Perde Düzenleri ve Akort Teknl"
+       },
+       {
+        "code": "MUT 384",
+        "name": "Elektro Akustik Kompozisyon"
+       },
+       {
+        "code": "MUZ 475",
+        "name": "Türk Halk Müziği Bilgileri I"
+       },
+       {
+        "code": "MUZ 497",
+        "name": "Müzik Felsefesine Giriş"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 011",
+        "name": "Bilgi Kuramları"
+       },
+       {
+        "code": "ITB 012",
+        "name": "TC'nin Yönetim Yapısı"
+       },
+       {
+        "code": "ITB 026",
+        "name": "Türkiye'de MdnTarihi & Sys Akm"
+       },
+       {
+        "code": "ITB 027E",
+        "name": "Estr/Invl in 5 Works by Campus"
+       },
+       {
+        "code": "ITB 075",
+        "name": "Seçmeli Fransızca"
+       },
+       {
+        "code": "ITB 076",
+        "name": "Sanatın Sosyal Tarihi"
+       },
+       {
+        "code": "ITB 085",
+        "name": "Sinema Tarihi ve Estetiği"
+       },
+       {
+        "code": "ITB 086",
+        "name": "Osm İmparatorluğu'nda Altyapı"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 093",
+        "name": "Modern Türkiye'nin Temelleri"
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 142",
+        "name": "Uygulamalı Etik"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 157",
+        "name": "Bilimin İstanbul'daki Tarihi"
+       },
+       {
+        "code": "ITB 158",
+        "name": "Kontr ve Otoms Sist Tarihçesi"
+       },
+       {
+        "code": "ITB 167E",
+        "name": "The Birth&Devl Modern City"
+       },
+       {
+        "code": "ITB 168E",
+        "name": "Philosophy of Technology"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 172E",
+        "name": "The Historian in the Cinema"
+       },
+       {
+        "code": "ITB 173E",
+        "name": "Frege Found. of Arithmetic"
+       },
+       {
+        "code": "ITB 175",
+        "name": "Küreselleşme ve Kent"
+       },
+       {
+        "code": "ITB 176",
+        "name": "Türkiye'de Toplumsal Hafıza"
+       },
+       {
+        "code": "ITB 177",
+        "name": "19.yy İstanbul'unda Tic. ve Mi"
+       },
+       {
+        "code": "ITB 178E",
+        "name": "Democracy&Modern Media:Int.Per"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 210",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 210E",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214",
+        "name": "Modern Ortadoğu"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 228",
+        "name": "Toplumsal Cinsiyet Çalışmaları"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 235",
+        "name": "Türkiye ve Avrupa Birliği"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MUT 368",
+      "name": "Çalgı Bilgisi II"
+     }
+    },
+    {
+     "course": {
+      "code": "MUT 386",
+      "name": "Serbest Proje Çalışması II"
+     }
+    },
+    {
+     "course": {
+      "code": "MUT 388",
+      "name": "Müzik Tek.Tasarım & Geliştirme"
+     }
+    },
+    {
+     "elective": {
+      "title": "Stüdyo VI",
+      "options": [
+       {
+        "code": "MUT 302",
+        "name": "Viyola Yapımı"
+       },
+       {
+        "code": "MUT 372",
+        "name": "Görüntü İçin Ses"
+       },
+       {
+        "code": "MUT 376",
+        "name": "Tar Yapımı"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Meslek Teknolojisi VI",
+      "options": [
+       {
+        "code": "MUT 390",
+        "name": "Bilg. Dest. Mesleki.Res. I"
+       },
+       {
+        "code": "MUT 452",
+        "name": "Bilgisayar Müziği"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy. Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "MUT 324",
+        "name": "Mey Yapımı"
+       },
+       {
+        "code": "MUT 334",
+        "name": "Zurna Yapımı"
+       },
+       {
+        "code": "MUT 343",
+        "name": "Çalgı Akustiği"
+       },
+       {
+        "code": "MUT 354",
+        "name": "Tulum Yapımı"
+       },
+       {
+        "code": "MUT 364",
+        "name": "Miskal Yapımı"
+       },
+       {
+        "code": "MUT 374",
+        "name": "Elektronik Çalgı Bilgisi"
+       },
+       {
+        "code": "MUZ 312",
+        "name": "Dünya Müzik Kültürlerine Giriş"
+       },
+       {
+        "code": "MUZ 322",
+        "name": "Alan Araştırma Metodları"
+       },
+       {
+        "code": "MUZ 476",
+        "name": "Türk Halk Müziği Bilgileri II"
+       },
+       {
+        "code": "MUZ 498",
+        "name": "Müzik Estetiğine Giriş"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 011",
+        "name": "Bilgi Kuramları"
+       },
+       {
+        "code": "ITB 012",
+        "name": "TC'nin Yönetim Yapısı"
+       },
+       {
+        "code": "ITB 026",
+        "name": "Türkiye'de MdnTarihi & Sys Akm"
+       },
+       {
+        "code": "ITB 027E",
+        "name": "Estr/Invl in 5 Works by Campus"
+       },
+       {
+        "code": "ITB 075",
+        "name": "Seçmeli Fransızca"
+       },
+       {
+        "code": "ITB 076",
+        "name": "Sanatın Sosyal Tarihi"
+       },
+       {
+        "code": "ITB 085",
+        "name": "Sinema Tarihi ve Estetiği"
+       },
+       {
+        "code": "ITB 086",
+        "name": "Osm İmparatorluğu'nda Altyapı"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 093",
+        "name": "Modern Türkiye'nin Temelleri"
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 142",
+        "name": "Uygulamalı Etik"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 157",
+        "name": "Bilimin İstanbul'daki Tarihi"
+       },
+       {
+        "code": "ITB 158",
+        "name": "Kontr ve Otoms Sist Tarihçesi"
+       },
+       {
+        "code": "ITB 167E",
+        "name": "The Birth&Devl Modern City"
+       },
+       {
+        "code": "ITB 168E",
+        "name": "Philosophy of Technology"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 172E",
+        "name": "The Historian in the Cinema"
+       },
+       {
+        "code": "ITB 173E",
+        "name": "Frege Found. of Arithmetic"
+       },
+       {
+        "code": "ITB 175",
+        "name": "Küreselleşme ve Kent"
+       },
+       {
+        "code": "ITB 176",
+        "name": "Türkiye'de Toplumsal Hafıza"
+       },
+       {
+        "code": "ITB 177",
+        "name": "19.yy İstanbul'unda Tic. ve Mi"
+       },
+       {
+        "code": "ITB 178E",
+        "name": "Democracy&Modern Media:Int.Per"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 210E",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 210",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MUT 463",
+      "name": "Serbest Proje Çalışması III"
+     }
+    },
+    {
+     "elective": {
+      "title": "Stüdyo VII",
+      "options": [
+       {
+        "code": "MUT 401",
+        "name": "Viyolonsel Yapımı I"
+       },
+       {
+        "code": "MUT 411",
+        "name": "Kanun Yapımı I"
+       },
+       {
+        "code": "MUT 441",
+        "name": "Mastering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Meslek Teknolojisi VII",
+      "options": [
+       {
+        "code": "MUT 382",
+        "name": "Elektrik-Elektronik"
+       },
+       {
+        "code": "MUT 465",
+        "name": "Çalgı Restorasyonu"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy. Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "KMP 473",
+        "name": "İleri Armoni I"
+       },
+       {
+        "code": "MUT 403",
+        "name": "Bendir Yapımı"
+       },
+       {
+        "code": "MUT 413",
+        "name": "Kudüm Yapımı"
+       },
+       {
+        "code": "MUT 423",
+        "name": "Davul Yapımı"
+       },
+       {
+        "code": "MUT 433",
+        "name": "Def Yapımı"
+       },
+       {
+        "code": "MUT 443",
+        "name": "Nakkare Yapımı"
+       },
+       {
+        "code": "MUT 451",
+        "name": "Sahne Kayıt Teknikleri"
+       },
+       {
+        "code": "MUT 453",
+        "name": "Ksilofon Yapımı"
+       },
+       {
+        "code": "MUT 455",
+        "name": "Çalgı Teknik Resmi II"
+       },
+       {
+        "code": "MUT 461",
+        "name": "Canlı Ses Donatımı"
+       },
+       {
+        "code": "MUZ 495",
+        "name": "Müzkte Elştri ve Elştrl Yazı"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 011",
+        "name": "Bilgi Kuramları"
+       },
+       {
+        "code": "ITB 012",
+        "name": "TC'nin Yönetim Yapısı"
+       },
+       {
+        "code": "ITB 026",
+        "name": "Türkiye'de MdnTarihi & Sys Akm"
+       },
+       {
+        "code": "ITB 027E",
+        "name": "Estr/Invl in 5 Works by Campus"
+       },
+       {
+        "code": "ITB 075",
+        "name": "Seçmeli Fransızca"
+       },
+       {
+        "code": "ITB 076",
+        "name": "Sanatın Sosyal Tarihi"
+       },
+       {
+        "code": "ITB 085",
+        "name": "Sinema Tarihi ve Estetiği"
+       },
+       {
+        "code": "ITB 086",
+        "name": "Osm İmparatorluğu'nda Altyapı"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 093",
+        "name": "Modern Türkiye'nin Temelleri"
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 142",
+        "name": "Uygulamalı Etik"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 157",
+        "name": "Bilimin İstanbul'daki Tarihi"
+       },
+       {
+        "code": "ITB 158",
+        "name": "Kontr ve Otoms Sist Tarihçesi"
+       },
+       {
+        "code": "ITB 167E",
+        "name": "The Birth&Devl Modern City"
+       },
+       {
+        "code": "ITB 168E",
+        "name": "Philosophy of Technology"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 172E",
+        "name": "The Historian in the Cinema"
+       },
+       {
+        "code": "ITB 173E",
+        "name": "Frege Found. of Arithmetic"
+       },
+       {
+        "code": "ITB 175",
+        "name": "Küreselleşme ve Kent"
+       },
+       {
+        "code": "ITB 176",
+        "name": "Türkiye'de Toplumsal Hafıza"
+       },
+       {
+        "code": "ITB 177",
+        "name": "19.yy İstanbul'unda Tic. ve Mi"
+       },
+       {
+        "code": "ITB 178E",
+        "name": "Democracy&Modern Media:Int.Per"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 210",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 210E",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 214",
+        "name": "Modern Ortadoğu"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 228",
+        "name": "Toplumsal Cinsiyet Çalışmaları"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 235",
+        "name": "Türkiye ve Avrupa Birliği"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MUT 486",
+      "name": "Serbest Proje Çalışması IV"
+     }
+    },
+    {
+     "course": {
+      "code": "MUT 492",
+      "name": "Bitirme Çalışması"
+     }
+    },
+    {
+     "elective": {
+      "title": "Stüdyo VIII",
+      "options": [
+       {
+        "code": "MUT 402",
+        "name": "Viyolonsel Yapımı II"
+       },
+       {
+        "code": "MUT 412",
+        "name": "Kanun Yapımı II"
+       },
+       {
+        "code": "MUT 448",
+        "name": "Prodüksiyon Teknikleri"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Meslek Teknolojisi VIII",
+      "options": [
+       {
+        "code": "MUT 381",
+        "name": "Remiks"
+       },
+       {
+        "code": "MUT 436",
+        "name": "Piyano Bakım ve Onarım Bilgisi"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy. Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "KMP 474",
+        "name": "İleri Armoni II"
+       },
+       {
+        "code": "KMP 482",
+        "name": "Prozodi"
+       },
+       {
+        "code": "MUT 323",
+        "name": "Yay Yapımı"
+       },
+       {
+        "code": "MUT 404",
+        "name": "Karadeniz Kemençesi Yap."
+       },
+       {
+        "code": "MUT 414",
+        "name": "Rebap Yapımı"
+       },
+       {
+        "code": "MUT 434",
+        "name": "Dombra Yapımı"
+       },
+       {
+        "code": "MUT 444",
+        "name": "Çeng Yapımı"
+       },
+       {
+        "code": "MUT 454",
+        "name": "Santur Yapımı"
+       },
+       {
+        "code": "MUT 464",
+        "name": "Yaylı Tambur Yapımı"
+       },
+       {
+        "code": "MUT 474",
+        "name": "Çalgı Tını Bilgisi"
+       },
+       {
+        "code": "MUT 490",
+        "name": "Bilgisayar Destekli Mesleki Resim II"
+       },
+       {
+        "code": "MUZ 480",
+        "name": "Türkiye'de Popüler Müzige Gir."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy. Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 011",
+        "name": "Bilgi Kuramları"
+       },
+       {
+        "code": "ITB 012",
+        "name": "TC'nin Yönetim Yapısı"
+       },
+       {
+        "code": "ITB 026",
+        "name": "Türkiye'de MdnTarihi & Sys Akm"
+       },
+       {
+        "code": "ITB 027E",
+        "name": "Estr/Invl in 5 Works by Campus"
+       },
+       {
+        "code": "ITB 075",
+        "name": "Seçmeli Fransızca"
+       },
+       {
+        "code": "ITB 076",
+        "name": "Sanatın Sosyal Tarihi"
+       },
+       {
+        "code": "ITB 085",
+        "name": "Sinema Tarihi ve Estetiği"
+       },
+       {
+        "code": "ITB 086",
+        "name": "Osm İmparatorluğu'nda Altyapı"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 093",
+        "name": "Modern Türkiye'nin Temelleri"
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 142",
+        "name": "Uygulamalı Etik"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 151",
+        "name": "İnsan Kaynakları Yönetimi"
+       },
+       {
+        "code": "ITB 157",
+        "name": "Bilimin İstanbul'daki Tarihi"
+       },
+       {
+        "code": "ITB 158",
+        "name": "Kontr ve Otoms Sist Tarihçesi"
+       },
+       {
+        "code": "ITB 167E",
+        "name": "The Birth&Devl Modern City"
+       },
+       {
+        "code": "ITB 168E",
+        "name": "Philosophy of Technology"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 172E",
+        "name": "The Historian in the Cinema"
+       },
+       {
+        "code": "ITB 173E",
+        "name": "Frege Found. of Arithmetic"
+       },
+       {
+        "code": "ITB 175",
+        "name": "Küreselleşme ve Kent"
+       },
+       {
+        "code": "ITB 176",
+        "name": "Türkiye'de Toplumsal Hafıza"
+       },
+       {
+        "code": "ITB 177",
+        "name": "19.yy İstanbul'unda Tic. ve Mi"
+       },
+       {
+        "code": "ITB 178E",
+        "name": "Democracy&Modern Media:Int.Per"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 210E",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 210",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 214",
+        "name": "Modern Ortadoğu"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 228",
+        "name": "Toplumsal Cinsiyet Çalışmaları"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 235",
+        "name": "Türkiye ve Avrupa Birliği"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

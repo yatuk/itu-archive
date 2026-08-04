@@ -1,0 +1,2289 @@
+{
+ "programCode": "MATE_LS",
+ "programName": "Matematik Mühendisliği (İngilizce) Lisans",
+ "faculty": "Fen - Edebiyat Fakültesi",
+ "planLabel": "Matematik Mühendisliği Lisans Programı (%100 İngilizce) 2010-2011 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 101E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 101E",
+      "name": "Int to Comp and Inf Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 111E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 175E",
+      "name": "Abstract Mathematics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 141E",
+      "name": "Linear Algebra I"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course I",
+      "options": [
+       {
+        "code": "ING 101",
+        "name": "English I"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 106E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 106EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 112E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 142E",
+      "name": "Linear Algebra II"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 104E",
+      "name": "Intr. to Programming in C"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course II",
+      "options": [
+       {
+        "code": "ING 102",
+        "name": "English II"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MUH 211E",
+      "name": "Discrete Mathematics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 213E",
+      "name": "Mathematics III"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 221E",
+      "name": "Probability Theory"
+     }
+    },
+    {
+     "course": {
+      "code": "DNK 201E",
+      "name": "Dynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 322E",
+      "name": "Algebra I"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 232E",
+      "name": "Differential Equations"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 214E",
+      "name": "Mathematics IV"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "MUH 212E",
+      "name": "Data Structures"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 242E",
+      "name": "Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III"
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 331E",
+      "name": "Partial Differential Equations"
+     }
+    },
+    {
+     "course": {
+      "code": "MUH 321E",
+      "name": "Numerical Methods"
+     }
+    },
+    {
+     "course": {
+      "code": "MUH 311E",
+      "name": "Continuum Mechanics I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 341E",
+      "name": "Complex Analysis"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Crse-ITB",
+      "options": [
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Crse(MT)",
+      "options": [
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 337E",
+        "name": "Intr. to Operations Research"
+       },
+       {
+        "code": "FIZ 292E",
+        "name": "Computer Aided Dsgn & Modellng"
+       },
+       {
+        "code": "FIZ 434E",
+        "name": "Microprocessors"
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "MAT 335E",
+        "name": "Programming Algorithms"
+       },
+       {
+        "code": "MAT 337E",
+        "name": "Web Programming"
+       },
+       {
+        "code": "MAT 339E",
+        "name": "Matrix Theory"
+       },
+       {
+        "code": "MAT 343E",
+        "name": "Time Series Analysis"
+       },
+       {
+        "code": "MAT 357E",
+        "name": "Linear Algebra III"
+       },
+       {
+        "code": "MAT 413E",
+        "name": "Computer Aided Symbolic Calc."
+       },
+       {
+        "code": "MAT 438E",
+        "name": "History of Mathematics"
+       },
+       {
+        "code": "MAT 449E",
+        "name": "Lorentzian Geometry"
+       },
+       {
+        "code": "MAT 485E",
+        "name": "Graph Theory"
+       },
+       {
+        "code": "MUH 323E",
+        "name": "Asymptotic Methods"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 355E",
+      "name": "Topology"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 342E",
+      "name": "Differential Geometry"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 332E",
+      "name": "Real Analysis I"
+     }
+    },
+    {
+     "course": {
+      "code": "MUH 312E",
+      "name": "Continuum Mechanics II"
+     }
+    },
+    {
+     "elective": {
+      "title": "6th Semester Elective Crse-ITB",
+      "options": [
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6th Sem. Rest. Elect. Crse(MT)",
+      "options": [
+       {
+        "code": "BLG 361E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 337E",
+        "name": "Intr. to Operations Research"
+       },
+       {
+        "code": "FIZ 292E",
+        "name": "Computer Aided Dsgn & Modellng"
+       },
+       {
+        "code": "FIZ 434E",
+        "name": "Microprocessors"
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "MAT 335E",
+        "name": "Programming Algorithms"
+       },
+       {
+        "code": "MAT 337E",
+        "name": "Web Programming"
+       },
+       {
+        "code": "MAT 339E",
+        "name": "Matrix Theory"
+       },
+       {
+        "code": "MAT 343E",
+        "name": "Time Series Analysis"
+       },
+       {
+        "code": "MAT 357E",
+        "name": "Linear Algebra III"
+       },
+       {
+        "code": "MAT 366E",
+        "name": "Special Functions"
+       },
+       {
+        "code": "MAT 413E",
+        "name": "Computer Aided Symbolic Calc."
+       },
+       {
+        "code": "MAT 420E",
+        "name": "Financial Mathematics"
+       },
+       {
+        "code": "MAT 423E",
+        "name": "Numerical Solutions of ODE"
+       },
+       {
+        "code": "MAT 438E",
+        "name": "History of Mathematics"
+       },
+       {
+        "code": "MAT 449E",
+        "name": "Lorentzian Geometry"
+       },
+       {
+        "code": "MAT 478E",
+        "name": "Computer Aided Symblc Calc II"
+       },
+       {
+        "code": "MAT 485E",
+        "name": "Graph Theory"
+       },
+       {
+        "code": "MUH 323E",
+        "name": "Asymptotic Methods"
+       },
+       {
+        "code": "MUH 334E",
+        "name": "Computing Algorithms"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem. Rest. Elec. CrseI(MT)",
+      "options": [
+       {
+        "code": "BLG 361E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 317E",
+        "name": "Database Management and Big Data"
+       },
+       {
+        "code": "END 337E",
+        "name": "Intr. to Operations Research"
+       },
+       {
+        "code": "FIZ 292E",
+        "name": "Computer Aided Dsgn & Modellng"
+       },
+       {
+        "code": "FIZ 425E",
+        "name": "Comput. Anlys.of Phys.Sys."
+       },
+       {
+        "code": "FIZ 434E",
+        "name": "Microprocessors"
+       },
+       {
+        "code": "FIZ 437E",
+        "name": "Stat.Lear.from Data:App.inPhy."
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "MAT 335E",
+        "name": "Programming Algorithms"
+       },
+       {
+        "code": "MAT 337E",
+        "name": "Web Programming"
+       },
+       {
+        "code": "MAT 339E",
+        "name": "Matrix Theory"
+       },
+       {
+        "code": "MAT 343E",
+        "name": "Time Series Analysis"
+       },
+       {
+        "code": "MAT 357E",
+        "name": "Linear Algebra III"
+       },
+       {
+        "code": "MAT 365E",
+        "name": "Calculus of Variations"
+       },
+       {
+        "code": "MAT 366E",
+        "name": "Special Functions"
+       },
+       {
+        "code": "MAT 381E",
+        "name": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 386E",
+        "name": "Computational Data Science"
+       },
+       {
+        "code": "MAT 388E",
+        "name": "Data Analysis in Fund.Sciences"
+       },
+       {
+        "code": "MAT 391E",
+        "name": "Advanced Topics in ODE"
+       },
+       {
+        "code": "MAT 392E",
+        "name": "Advanced Topics in PDE"
+       },
+       {
+        "code": "MAT 413E",
+        "name": "Computer Aided Symbolic Calc."
+       },
+       {
+        "code": "MAT 417E",
+        "name": "Theory of Surfaces"
+       },
+       {
+        "code": "MAT 418E",
+        "name": "Optimization"
+       },
+       {
+        "code": "MAT 420E",
+        "name": "Financial Mathematics"
+       },
+       {
+        "code": "MAT 423E",
+        "name": "Numerical Solutions of ODE"
+       },
+       {
+        "code": "MAT 425E",
+        "name": "Stochastic ODE"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 428E",
+        "name": "Functional Analysis"
+       },
+       {
+        "code": "MAT 437E",
+        "name": "Real Analysis II"
+       },
+       {
+        "code": "MAT 438E",
+        "name": "History of Mathematics"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 448E",
+        "name": "Number Theory"
+       },
+       {
+        "code": "MAT 449E",
+        "name": "Lorentzian Geometry"
+       },
+       {
+        "code": "MAT 457E",
+        "name": "Conformal Mapping"
+       },
+       {
+        "code": "MAT 458E",
+        "name": "Riemannian Geometry"
+       },
+       {
+        "code": "MAT 467E",
+        "name": "Boundary Value Problems"
+       },
+       {
+        "code": "MAT 468E",
+        "name": "Nonlinear Waves"
+       },
+       {
+        "code": "MAT 478E",
+        "name": "Computer Aided Symblc Calc II"
+       },
+       {
+        "code": "MAT 485E",
+        "name": "Graph Theory"
+       },
+       {
+        "code": "MAT 487E",
+        "name": "Lie Group Analysis of DE"
+       },
+       {
+        "code": "MAT 488E",
+        "name": "Numerical Solutions of PDE"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       },
+       {
+        "code": "MAT 497E",
+        "name": "Tensor Analysis"
+       },
+       {
+        "code": "MAT 498E",
+        "name": "Basic Algebraic Geometry"
+       },
+       {
+        "code": "MUH 323E",
+        "name": "Asymptotic Methods"
+       },
+       {
+        "code": "MUH 324E",
+        "name": "Advanced Numerical Methods"
+       },
+       {
+        "code": "MUH 334E",
+        "name": "Computing Algorithms"
+       },
+       {
+        "code": "MUH 415E",
+        "name": "Theory of Elasticity"
+       },
+       {
+        "code": "MUH 423E",
+        "name": "Fluid Mechanics"
+       },
+       {
+        "code": "MUH 428E",
+        "name": "Biomechanic"
+       },
+       {
+        "code": "MUH 443E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "MUH 453E",
+        "name": "Optimal Control Theory"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem. Res. Elect. CrseII-MT",
+      "options": [
+       {
+        "code": "BLG 361E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 317E",
+        "name": "Database Management and Big Data"
+       },
+       {
+        "code": "END 337E",
+        "name": "Intr. to Operations Research"
+       },
+       {
+        "code": "FIZ 292E",
+        "name": "Computer Aided Dsgn & Modellng"
+       },
+       {
+        "code": "FIZ 425E",
+        "name": "Comput. Anlys.of Phys.Sys."
+       },
+       {
+        "code": "FIZ 434E",
+        "name": "Microprocessors"
+       },
+       {
+        "code": "FIZ 437E",
+        "name": "Stat.Lear.from Data:App.inPhy."
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "MAT 335E",
+        "name": "Programming Algorithms"
+       },
+       {
+        "code": "MAT 337E",
+        "name": "Web Programming"
+       },
+       {
+        "code": "MAT 339E",
+        "name": "Matrix Theory"
+       },
+       {
+        "code": "MAT 343E",
+        "name": "Time Series Analysis"
+       },
+       {
+        "code": "MAT 357E",
+        "name": "Linear Algebra III"
+       },
+       {
+        "code": "MAT 365E",
+        "name": "Calculus of Variations"
+       },
+       {
+        "code": "MAT 366E",
+        "name": "Special Functions"
+       },
+       {
+        "code": "MAT 381E",
+        "name": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 386E",
+        "name": "Computational Data Science"
+       },
+       {
+        "code": "MAT 388E",
+        "name": "Data Analysis in Fund.Sciences"
+       },
+       {
+        "code": "MAT 391E",
+        "name": "Advanced Topics in ODE"
+       },
+       {
+        "code": "MAT 392E",
+        "name": "Advanced Topics in PDE"
+       },
+       {
+        "code": "MAT 413E",
+        "name": "Computer Aided Symbolic Calc."
+       },
+       {
+        "code": "MAT 417E",
+        "name": "Theory of Surfaces"
+       },
+       {
+        "code": "MAT 418E",
+        "name": "Optimization"
+       },
+       {
+        "code": "MAT 420E",
+        "name": "Financial Mathematics"
+       },
+       {
+        "code": "MAT 423E",
+        "name": "Numerical Solutions of ODE"
+       },
+       {
+        "code": "MAT 425E",
+        "name": "Stochastic ODE"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 428E",
+        "name": "Functional Analysis"
+       },
+       {
+        "code": "MAT 437E",
+        "name": "Real Analysis II"
+       },
+       {
+        "code": "MAT 438E",
+        "name": "History of Mathematics"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 448E",
+        "name": "Number Theory"
+       },
+       {
+        "code": "MAT 449E",
+        "name": "Lorentzian Geometry"
+       },
+       {
+        "code": "MAT 457E",
+        "name": "Conformal Mapping"
+       },
+       {
+        "code": "MAT 458E",
+        "name": "Riemannian Geometry"
+       },
+       {
+        "code": "MAT 467E",
+        "name": "Boundary Value Problems"
+       },
+       {
+        "code": "MAT 468E",
+        "name": "Nonlinear Waves"
+       },
+       {
+        "code": "MAT 478E",
+        "name": "Computer Aided Symblc Calc II"
+       },
+       {
+        "code": "MAT 485E",
+        "name": "Graph Theory"
+       },
+       {
+        "code": "MAT 487E",
+        "name": "Lie Group Analysis of DE"
+       },
+       {
+        "code": "MAT 488E",
+        "name": "Numerical Solutions of PDE"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       },
+       {
+        "code": "MAT 497E",
+        "name": "Tensor Analysis"
+       },
+       {
+        "code": "MAT 498E",
+        "name": "Basic Algebraic Geometry"
+       },
+       {
+        "code": "MUH 323E",
+        "name": "Asymptotic Methods"
+       },
+       {
+        "code": "MUH 324E",
+        "name": "Advanced Numerical Methods"
+       },
+       {
+        "code": "MUH 334E",
+        "name": "Computing Algorithms"
+       },
+       {
+        "code": "MUH 415E",
+        "name": "Theory of Elasticity"
+       },
+       {
+        "code": "MUH 423E",
+        "name": "Fluid Mechanics"
+       },
+       {
+        "code": "MUH 428E",
+        "name": "Biomechanic"
+       },
+       {
+        "code": "MUH 443E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "MUH 453E",
+        "name": "Optimal Control Theory"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem. Elect. CrseIII-MT",
+      "options": [
+       {
+        "code": "BLG 361E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 317E",
+        "name": "Database Management and Big Data"
+       },
+       {
+        "code": "END 337E",
+        "name": "Intr. to Operations Research"
+       },
+       {
+        "code": "FIZ 292E",
+        "name": "Computer Aided Dsgn & Modellng"
+       },
+       {
+        "code": "FIZ 425E",
+        "name": "Comput. Anlys.of Phys.Sys."
+       },
+       {
+        "code": "FIZ 434E",
+        "name": "Microprocessors"
+       },
+       {
+        "code": "FIZ 437E",
+        "name": "Stat.Lear.from Data:App.inPhy."
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "MAT 335E",
+        "name": "Programming Algorithms"
+       },
+       {
+        "code": "MAT 337E",
+        "name": "Web Programming"
+       },
+       {
+        "code": "MAT 339E",
+        "name": "Matrix Theory"
+       },
+       {
+        "code": "MAT 343E",
+        "name": "Time Series Analysis"
+       },
+       {
+        "code": "MAT 357E",
+        "name": "Linear Algebra III"
+       },
+       {
+        "code": "MAT 365E",
+        "name": "Calculus of Variations"
+       },
+       {
+        "code": "MAT 366E",
+        "name": "Special Functions"
+       },
+       {
+        "code": "MAT 381E",
+        "name": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 386E",
+        "name": "Computational Data Science"
+       },
+       {
+        "code": "MAT 388E",
+        "name": "Data Analysis in Fund.Sciences"
+       },
+       {
+        "code": "MAT 391E",
+        "name": "Advanced Topics in ODE"
+       },
+       {
+        "code": "MAT 392E",
+        "name": "Advanced Topics in PDE"
+       },
+       {
+        "code": "MAT 413E",
+        "name": "Computer Aided Symbolic Calc."
+       },
+       {
+        "code": "MAT 417E",
+        "name": "Theory of Surfaces"
+       },
+       {
+        "code": "MAT 418E",
+        "name": "Optimization"
+       },
+       {
+        "code": "MAT 420E",
+        "name": "Financial Mathematics"
+       },
+       {
+        "code": "MAT 423E",
+        "name": "Numerical Solutions of ODE"
+       },
+       {
+        "code": "MAT 425E",
+        "name": "Stochastic ODE"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 428E",
+        "name": "Functional Analysis"
+       },
+       {
+        "code": "MAT 437E",
+        "name": "Real Analysis II"
+       },
+       {
+        "code": "MAT 438E",
+        "name": "History of Mathematics"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 448E",
+        "name": "Number Theory"
+       },
+       {
+        "code": "MAT 449E",
+        "name": "Lorentzian Geometry"
+       },
+       {
+        "code": "MAT 457E",
+        "name": "Conformal Mapping"
+       },
+       {
+        "code": "MAT 458E",
+        "name": "Riemannian Geometry"
+       },
+       {
+        "code": "MAT 467E",
+        "name": "Boundary Value Problems"
+       },
+       {
+        "code": "MAT 468E",
+        "name": "Nonlinear Waves"
+       },
+       {
+        "code": "MAT 478E",
+        "name": "Computer Aided Symblc Calc II"
+       },
+       {
+        "code": "MAT 485E",
+        "name": "Graph Theory"
+       },
+       {
+        "code": "MAT 487E",
+        "name": "Lie Group Analysis of DE"
+       },
+       {
+        "code": "MAT 488E",
+        "name": "Numerical Solutions of PDE"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       },
+       {
+        "code": "MAT 497E",
+        "name": "Tensor Analysis"
+       },
+       {
+        "code": "MAT 498E",
+        "name": "Basic Algebraic Geometry"
+       },
+       {
+        "code": "MUH 323E",
+        "name": "Asymptotic Methods"
+       },
+       {
+        "code": "MUH 324E",
+        "name": "Advanced Numerical Methods"
+       },
+       {
+        "code": "MUH 334E",
+        "name": "Computing Algorithms"
+       },
+       {
+        "code": "MUH 415E",
+        "name": "Theory of Elasticity"
+       },
+       {
+        "code": "MUH 423E",
+        "name": "Fluid Mechanics"
+       },
+       {
+        "code": "MUH 428E",
+        "name": "Biomechanic"
+       },
+       {
+        "code": "MUH 443E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "MUH 453E",
+        "name": "Optimal Control Theory"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem. Rest. Elec. CrseIV-MT",
+      "options": [
+       {
+        "code": "BLG 361E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 317E",
+        "name": "Database Management and Big Data"
+       },
+       {
+        "code": "END 337E",
+        "name": "Intr. to Operations Research"
+       },
+       {
+        "code": "FIZ 292E",
+        "name": "Computer Aided Dsgn & Modellng"
+       },
+       {
+        "code": "FIZ 425E",
+        "name": "Comput. Anlys.of Phys.Sys."
+       },
+       {
+        "code": "FIZ 434E",
+        "name": "Microprocessors"
+       },
+       {
+        "code": "FIZ 437E",
+        "name": "Stat.Lear.from Data:App.inPhy."
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "MAT 335E",
+        "name": "Programming Algorithms"
+       },
+       {
+        "code": "MAT 337E",
+        "name": "Web Programming"
+       },
+       {
+        "code": "MAT 339E",
+        "name": "Matrix Theory"
+       },
+       {
+        "code": "MAT 343E",
+        "name": "Time Series Analysis"
+       },
+       {
+        "code": "MAT 357E",
+        "name": "Linear Algebra III"
+       },
+       {
+        "code": "MAT 365E",
+        "name": "Calculus of Variations"
+       },
+       {
+        "code": "MAT 366E",
+        "name": "Special Functions"
+       },
+       {
+        "code": "MAT 381E",
+        "name": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 386E",
+        "name": "Computational Data Science"
+       },
+       {
+        "code": "MAT 388E",
+        "name": "Data Analysis in Fund.Sciences"
+       },
+       {
+        "code": "MAT 391E",
+        "name": "Advanced Topics in ODE"
+       },
+       {
+        "code": "MAT 392E",
+        "name": "Advanced Topics in PDE"
+       },
+       {
+        "code": "MAT 413E",
+        "name": "Computer Aided Symbolic Calc."
+       },
+       {
+        "code": "MAT 417E",
+        "name": "Theory of Surfaces"
+       },
+       {
+        "code": "MAT 418E",
+        "name": "Optimization"
+       },
+       {
+        "code": "MAT 420E",
+        "name": "Financial Mathematics"
+       },
+       {
+        "code": "MAT 423E",
+        "name": "Numerical Solutions of ODE"
+       },
+       {
+        "code": "MAT 425E",
+        "name": "Stochastic ODE"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 428E",
+        "name": "Functional Analysis"
+       },
+       {
+        "code": "MAT 437E",
+        "name": "Real Analysis II"
+       },
+       {
+        "code": "MAT 438E",
+        "name": "History of Mathematics"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 448E",
+        "name": "Number Theory"
+       },
+       {
+        "code": "MAT 449E",
+        "name": "Lorentzian Geometry"
+       },
+       {
+        "code": "MAT 457E",
+        "name": "Conformal Mapping"
+       },
+       {
+        "code": "MAT 458E",
+        "name": "Riemannian Geometry"
+       },
+       {
+        "code": "MAT 467E",
+        "name": "Boundary Value Problems"
+       },
+       {
+        "code": "MAT 468E",
+        "name": "Nonlinear Waves"
+       },
+       {
+        "code": "MAT 472E",
+        "name": "Computational Finance"
+       },
+       {
+        "code": "MAT 478E",
+        "name": "Computer Aided Symblc Calc II"
+       },
+       {
+        "code": "MAT 485E",
+        "name": "Graph Theory"
+       },
+       {
+        "code": "MAT 487E",
+        "name": "Lie Group Analysis of DE"
+       },
+       {
+        "code": "MAT 488E",
+        "name": "Numerical Solutions of PDE"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       },
+       {
+        "code": "MAT 497E",
+        "name": "Tensor Analysis"
+       },
+       {
+        "code": "MAT 498E",
+        "name": "Basic Algebraic Geometry"
+       },
+       {
+        "code": "MUH 323E",
+        "name": "Asymptotic Methods"
+       },
+       {
+        "code": "MUH 324E",
+        "name": "Advanced Numerical Methods"
+       },
+       {
+        "code": "MUH 334E",
+        "name": "Computing Algorithms"
+       },
+       {
+        "code": "MUH 415E",
+        "name": "Theory of Elasticity"
+       },
+       {
+        "code": "MUH 423E",
+        "name": "Fluid Mechanics"
+       },
+       {
+        "code": "MUH 428E",
+        "name": "Biomechanic"
+       },
+       {
+        "code": "MUH 443E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "MUH 453E",
+        "name": "Optimal Control Theory"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem. Elec. Crse(SNT)",
+      "options": [
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 492E",
+      "name": "Graduation Project"
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201E",
+      "name": "Economics"
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Sem. Res. Elect. Crse I-MT",
+      "options": [
+       {
+        "code": "BLG 361E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 317E",
+        "name": "Database Management and Big Data"
+       },
+       {
+        "code": "END 337E",
+        "name": "Intr. to Operations Research"
+       },
+       {
+        "code": "FIZ 292E",
+        "name": "Computer Aided Dsgn & Modellng"
+       },
+       {
+        "code": "FIZ 425E",
+        "name": "Comput. Anlys.of Phys.Sys."
+       },
+       {
+        "code": "FIZ 434E",
+        "name": "Microprocessors"
+       },
+       {
+        "code": "FIZ 437E",
+        "name": "Stat.Lear.from Data:App.inPhy."
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "MAT 335E",
+        "name": "Programming Algorithms"
+       },
+       {
+        "code": "MAT 337E",
+        "name": "Web Programming"
+       },
+       {
+        "code": "MAT 339E",
+        "name": "Matrix Theory"
+       },
+       {
+        "code": "MAT 343E",
+        "name": "Time Series Analysis"
+       },
+       {
+        "code": "MAT 357E",
+        "name": "Linear Algebra III"
+       },
+       {
+        "code": "MAT 365E",
+        "name": "Calculus of Variations"
+       },
+       {
+        "code": "MAT 366E",
+        "name": "Special Functions"
+       },
+       {
+        "code": "MAT 381E",
+        "name": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 386E",
+        "name": "Computational Data Science"
+       },
+       {
+        "code": "MAT 388E",
+        "name": "Data Analysis in Fund.Sciences"
+       },
+       {
+        "code": "MAT 391E",
+        "name": "Advanced Topics in ODE"
+       },
+       {
+        "code": "MAT 392E",
+        "name": "Advanced Topics in PDE"
+       },
+       {
+        "code": "MAT 413E",
+        "name": "Computer Aided Symbolic Calc."
+       },
+       {
+        "code": "MAT 417E",
+        "name": "Theory of Surfaces"
+       },
+       {
+        "code": "MAT 418E",
+        "name": "Optimization"
+       },
+       {
+        "code": "MAT 420E",
+        "name": "Financial Mathematics"
+       },
+       {
+        "code": "MAT 423E",
+        "name": "Numerical Solutions of ODE"
+       },
+       {
+        "code": "MAT 425E",
+        "name": "Stochastic ODE"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 428E",
+        "name": "Functional Analysis"
+       },
+       {
+        "code": "MAT 437E",
+        "name": "Real Analysis II"
+       },
+       {
+        "code": "MAT 438E",
+        "name": "History of Mathematics"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 448E",
+        "name": "Number Theory"
+       },
+       {
+        "code": "MAT 449E",
+        "name": "Lorentzian Geometry"
+       },
+       {
+        "code": "MAT 457E",
+        "name": "Conformal Mapping"
+       },
+       {
+        "code": "MAT 458E",
+        "name": "Riemannian Geometry"
+       },
+       {
+        "code": "MAT 467E",
+        "name": "Boundary Value Problems"
+       },
+       {
+        "code": "MAT 468E",
+        "name": "Nonlinear Waves"
+       },
+       {
+        "code": "MAT 478E",
+        "name": "Computer Aided Symblc Calc II"
+       },
+       {
+        "code": "MAT 485E",
+        "name": "Graph Theory"
+       },
+       {
+        "code": "MAT 487E",
+        "name": "Lie Group Analysis of DE"
+       },
+       {
+        "code": "MAT 488E",
+        "name": "Numerical Solutions of PDE"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       },
+       {
+        "code": "MAT 497E",
+        "name": "Tensor Analysis"
+       },
+       {
+        "code": "MAT 498E",
+        "name": "Basic Algebraic Geometry"
+       },
+       {
+        "code": "MUH 323E",
+        "name": "Asymptotic Methods"
+       },
+       {
+        "code": "MUH 324E",
+        "name": "Advanced Numerical Methods"
+       },
+       {
+        "code": "MUH 334E",
+        "name": "Computing Algorithms"
+       },
+       {
+        "code": "MUH 415E",
+        "name": "Theory of Elasticity"
+       },
+       {
+        "code": "MUH 423E",
+        "name": "Fluid Mechanics"
+       },
+       {
+        "code": "MUH 428E",
+        "name": "Biomechanic"
+       },
+       {
+        "code": "MUH 443E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "MUH 453E",
+        "name": "Optimal Control Theory"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Sem. Rest. Elec. CrseII-MT",
+      "options": [
+       {
+        "code": "BLG 361E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 317E",
+        "name": "Database Management and Big Data"
+       },
+       {
+        "code": "END 337E",
+        "name": "Intr. to Operations Research"
+       },
+       {
+        "code": "FIZ 292E",
+        "name": "Computer Aided Dsgn & Modellng"
+       },
+       {
+        "code": "FIZ 425E",
+        "name": "Comput. Anlys.of Phys.Sys."
+       },
+       {
+        "code": "FIZ 434E",
+        "name": "Microprocessors"
+       },
+       {
+        "code": "FIZ 437E",
+        "name": "Stat.Lear.from Data:App.inPhy."
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "MAT 335E",
+        "name": "Programming Algorithms"
+       },
+       {
+        "code": "MAT 337E",
+        "name": "Web Programming"
+       },
+       {
+        "code": "MAT 339E",
+        "name": "Matrix Theory"
+       },
+       {
+        "code": "MAT 343E",
+        "name": "Time Series Analysis"
+       },
+       {
+        "code": "MAT 357E",
+        "name": "Linear Algebra III"
+       },
+       {
+        "code": "MAT 365E",
+        "name": "Calculus of Variations"
+       },
+       {
+        "code": "MAT 366E",
+        "name": "Special Functions"
+       },
+       {
+        "code": "MAT 381E",
+        "name": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 386E",
+        "name": "Computational Data Science"
+       },
+       {
+        "code": "MAT 388E",
+        "name": "Data Analysis in Fund.Sciences"
+       },
+       {
+        "code": "MAT 391E",
+        "name": "Advanced Topics in ODE"
+       },
+       {
+        "code": "MAT 392E",
+        "name": "Advanced Topics in PDE"
+       },
+       {
+        "code": "MAT 413E",
+        "name": "Computer Aided Symbolic Calc."
+       },
+       {
+        "code": "MAT 417E",
+        "name": "Theory of Surfaces"
+       },
+       {
+        "code": "MAT 418E",
+        "name": "Optimization"
+       },
+       {
+        "code": "MAT 420E",
+        "name": "Financial Mathematics"
+       },
+       {
+        "code": "MAT 423E",
+        "name": "Numerical Solutions of ODE"
+       },
+       {
+        "code": "MAT 425E",
+        "name": "Stochastic ODE"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 428E",
+        "name": "Functional Analysis"
+       },
+       {
+        "code": "MAT 437E",
+        "name": "Real Analysis II"
+       },
+       {
+        "code": "MAT 438E",
+        "name": "History of Mathematics"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 448E",
+        "name": "Number Theory"
+       },
+       {
+        "code": "MAT 449E",
+        "name": "Lorentzian Geometry"
+       },
+       {
+        "code": "MAT 457E",
+        "name": "Conformal Mapping"
+       },
+       {
+        "code": "MAT 458E",
+        "name": "Riemannian Geometry"
+       },
+       {
+        "code": "MAT 467E",
+        "name": "Boundary Value Problems"
+       },
+       {
+        "code": "MAT 468E",
+        "name": "Nonlinear Waves"
+       },
+       {
+        "code": "MAT 478E",
+        "name": "Computer Aided Symblc Calc II"
+       },
+       {
+        "code": "MAT 485E",
+        "name": "Graph Theory"
+       },
+       {
+        "code": "MAT 487E",
+        "name": "Lie Group Analysis of DE"
+       },
+       {
+        "code": "MAT 488E",
+        "name": "Numerical Solutions of PDE"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       },
+       {
+        "code": "MAT 497E",
+        "name": "Tensor Analysis"
+       },
+       {
+        "code": "MAT 498E",
+        "name": "Basic Algebraic Geometry"
+       },
+       {
+        "code": "MUH 323E",
+        "name": "Asymptotic Methods"
+       },
+       {
+        "code": "MUH 324E",
+        "name": "Advanced Numerical Methods"
+       },
+       {
+        "code": "MUH 334E",
+        "name": "Computing Algorithms"
+       },
+       {
+        "code": "MUH 415E",
+        "name": "Theory of Elasticity"
+       },
+       {
+        "code": "MUH 423E",
+        "name": "Fluid Mechanics"
+       },
+       {
+        "code": "MUH 428E",
+        "name": "Biomechanic"
+       },
+       {
+        "code": "MUH 443E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "MUH 453E",
+        "name": "Optimal Control Theory"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

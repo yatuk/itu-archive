@@ -1,0 +1,941 @@
+{
+ "programCode": "UCK_LS",
+ "programName": "Uçak Mühendisliği Lisans",
+ "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
+ "planLabel": "Uçak Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 101",
+      "name": "Genel Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 110E",
+      "name": "Intr. to Prog. Language (C)"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103",
+      "name": "Matematik I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "UZB 112",
+      "name": "Bilgisayarla Teknik Resim"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "STA 201",
+      "name": "Statik"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104",
+      "name": "Matematik II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 106",
+      "name": "Uçak Müh. Giriş ve Tasarım"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 261",
+      "name": "Lineer Cebir"
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 201E",
+      "name": "Differential Equations"
+     }
+    },
+    {
+     "course": {
+      "code": "DNK 201",
+      "name": "Dinamik"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "MUK 211",
+      "name": "Mukavemet"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 207",
+      "name": "Termodinamik"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 217E",
+      "name": "Aerospace Materials"
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "AKM 219",
+      "name": "Akışkanlar Mekaniği"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 202E",
+      "name": "Numerical Methods"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 203E",
+      "name": "Circuits, Signals and Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    },
+    {
+     "course": {
+      "code": "UZB 220E",
+      "name": "Mechanical Vibrations"
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "UCK 305",
+      "name": "Aerodinamik"
+     }
+    },
+    {
+     "course": {
+      "code": "UZB 301",
+      "name": "Ölçme Tekniği"
+     }
+    },
+    {
+     "course": {
+      "code": "UZB 337",
+      "name": "Hava Uzay Yapıları"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 322E",
+      "name": "Flight Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 303E",
+      "name": "Automatic Control"
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders I (TM)",
+      "options": [
+       {
+        "code": "UCK 236E",
+        "name": "Composite Materials"
+       },
+       {
+        "code": "UCK 348E",
+        "name": "Computer Applic.in Engineering"
+       },
+       {
+        "code": "UCK 354E",
+        "name": "Intro to Digital Design"
+       },
+       {
+        "code": "UCK 358E",
+        "name": "Int.to Artificial Intelligence"
+       },
+       {
+        "code": "UCK 364E",
+        "name": "Design of Machine Elements"
+       },
+       {
+        "code": "UCK 427E",
+        "name": "Combustion"
+       },
+       {
+        "code": "UZB 318E",
+        "name": "Finite Element Method"
+       },
+       {
+        "code": "UZB 350",
+        "name": "İmal Usulleri"
+       },
+       {
+        "code": "UZB 350E",
+        "name": "Manufacturing Processes"
+       },
+       {
+        "code": "UZB 381E",
+        "name": "Applic.of Satellite-Based Data"
+       },
+       {
+        "code": "UZB 383E",
+        "name": "Planetary Remote Sensing"
+       },
+       {
+        "code": "UZB 386E",
+        "name": "Boundary Layer Theory"
+       },
+       {
+        "code": "UZB 437E",
+        "name": "Introduction to Robotics"
+       },
+       {
+        "code": "UZB 487E",
+        "name": "CAD/CAM"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders II (TB)",
+      "options": [
+       {
+        "code": "FIZ 201",
+        "name": "Modern Fizik"
+       },
+       {
+        "code": "MAT 271",
+        "name": "Olasılık ve İstatistik"
+       },
+       {
+        "code": "UCK 337E",
+        "name": "Introduction to Optimization"
+       },
+       {
+        "code": "UCK 350E",
+        "name": "Analytical Dynamics"
+       },
+       {
+        "code": "UZB 218E",
+        "name": "Int.to Partial Diff.Eq. in Eng"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "UZB 310E",
+      "name": "Compressible Aerodynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 304",
+      "name": "Deneysel Mühendislik"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 441E",
+      "name": "Flight Stability and Control"
+     }
+    },
+    {
+     "course": {
+      "code": "UZB 314",
+      "name": "Isı Geçişi"
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "UCK 328",
+        "name": "Yapısal Analiz ve Tasarım"
+       },
+       {
+        "code": "UCK 370E",
+        "name": "Intro to Rotorcraft Systems"
+       },
+       {
+        "code": "UCK 416E",
+        "name": "Aircraft Structures"
+       },
+       {
+        "code": "UCK 419",
+        "name": "Hesaplamalı Aerodinamik"
+       },
+       {
+        "code": "UCK 435E",
+        "name": "Design of Aerospace Structures"
+       },
+       {
+        "code": "UCK 439E",
+        "name": "Intr. to Optimal Control"
+       },
+       {
+        "code": "UCK 445",
+        "name": "Helikopter Tasarımı"
+       },
+       {
+        "code": "UCK 459E",
+        "name": "Helicopter Theory"
+       },
+       {
+        "code": "UCK 461E",
+        "name": "Flight Instruments"
+       },
+       {
+        "code": "UCK 468",
+        "name": "Güdüm Kontrol ve Seyrüsefer"
+       },
+       {
+        "code": "UCK 470",
+        "name": "Jet Motor Sis.Tas.&Pratik Uyg."
+       },
+       {
+        "code": "UCK 470E",
+        "name": "Jet Eng.Sys.Dsg.with Prac.App."
+       },
+       {
+        "code": "UCK 472E",
+        "name": "Aeroelasticity"
+       },
+       {
+        "code": "UCK 474",
+        "name": "Uçak Motor Tasarımı"
+       },
+       {
+        "code": "UCK 488E",
+        "name": "Aircraft Systems"
+       },
+       {
+        "code": "UZB 425E",
+        "name": "Digital Control Design"
+       },
+       {
+        "code": "UZB 438E",
+        "name": "Robotic Control Systems"
+       },
+       {
+        "code": "UZB 475E",
+        "name": "Hypersonic Flows"
+       },
+       {
+        "code": "UZB 489E",
+        "name": "Electric Propulsion"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders II (TM)",
+      "options": [
+       {
+        "code": "UCK 236E",
+        "name": "Composite Materials"
+       },
+       {
+        "code": "UCK 348E",
+        "name": "Computer Applic.in Engineering"
+       },
+       {
+        "code": "UCK 354E",
+        "name": "Intro to Digital Design"
+       },
+       {
+        "code": "UCK 358E",
+        "name": "Int.to Artificial Intelligence"
+       },
+       {
+        "code": "UCK 364E",
+        "name": "Design of Machine Elements"
+       },
+       {
+        "code": "UCK 427E",
+        "name": "Combustion"
+       },
+       {
+        "code": "UZB 318E",
+        "name": "Finite Element Method"
+       },
+       {
+        "code": "UZB 350",
+        "name": "İmal Usulleri"
+       },
+       {
+        "code": "UZB 350E",
+        "name": "Manufacturing Processes"
+       },
+       {
+        "code": "UZB 381E",
+        "name": "Applic.of Satellite-Based Data"
+       },
+       {
+        "code": "UZB 383E",
+        "name": "Planetary Remote Sensing"
+       },
+       {
+        "code": "UZB 386E",
+        "name": "Boundary Layer Theory"
+       },
+       {
+        "code": "UZB 437E",
+        "name": "Introduction to Robotics"
+       },
+       {
+        "code": "UZB 487E",
+        "name": "CAD/CAM"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 421",
+      "name": "Tepki ile Tahrik"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 423E",
+      "name": "Princip. of Aircraft Design I"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 4901",
+      "name": "Uçak Müh. Tasarımı I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "UCK 328",
+        "name": "Yapısal Analiz ve Tasarım"
+       },
+       {
+        "code": "UCK 370E",
+        "name": "Intro to Rotorcraft Systems"
+       },
+       {
+        "code": "UCK 416E",
+        "name": "Aircraft Structures"
+       },
+       {
+        "code": "UCK 419",
+        "name": "Hesaplamalı Aerodinamik"
+       },
+       {
+        "code": "UCK 435E",
+        "name": "Design of Aerospace Structures"
+       },
+       {
+        "code": "UCK 439E",
+        "name": "Intr. to Optimal Control"
+       },
+       {
+        "code": "UCK 445",
+        "name": "Helikopter Tasarımı"
+       },
+       {
+        "code": "UCK 448E",
+        "name": "Avionic Systems"
+       },
+       {
+        "code": "UCK 459E",
+        "name": "Helicopter Theory"
+       },
+       {
+        "code": "UCK 461E",
+        "name": "Flight Instruments"
+       },
+       {
+        "code": "UCK 468",
+        "name": "Güdüm Kontrol ve Seyrüsefer"
+       },
+       {
+        "code": "UCK 470",
+        "name": "Jet Motor Sis.Tas.&Pratik Uyg."
+       },
+       {
+        "code": "UCK 470E",
+        "name": "Jet Eng.Sys.Dsg.with Prac.App."
+       },
+       {
+        "code": "UCK 472E",
+        "name": "Aeroelasticity"
+       },
+       {
+        "code": "UCK 474",
+        "name": "Uçak Motor Tasarımı"
+       },
+       {
+        "code": "UCK 488E",
+        "name": "Aircraft Systems"
+       },
+       {
+        "code": "UZB 425E",
+        "name": "Digital Control Design"
+       },
+       {
+        "code": "UZB 438E",
+        "name": "Robotic Control Systems"
+       },
+       {
+        "code": "UZB 475E",
+        "name": "Hypersonic Flows"
+       },
+       {
+        "code": "UZB 489E",
+        "name": "Electric Propulsion"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders II (TM)",
+      "options": [
+       {
+        "code": "UCK 236E",
+        "name": "Composite Materials"
+       },
+       {
+        "code": "UCK 348E",
+        "name": "Computer Applic.in Engineering"
+       },
+       {
+        "code": "UCK 354E",
+        "name": "Intro to Digital Design"
+       },
+       {
+        "code": "UCK 358E",
+        "name": "Int.to Artificial Intelligence"
+       },
+       {
+        "code": "UCK 364E",
+        "name": "Design of Machine Elements"
+       },
+       {
+        "code": "UCK 427E",
+        "name": "Combustion"
+       },
+       {
+        "code": "UZB 318E",
+        "name": "Finite Element Method"
+       },
+       {
+        "code": "UZB 350",
+        "name": "İmal Usulleri"
+       },
+       {
+        "code": "UZB 350E",
+        "name": "Manufacturing Processes"
+       },
+       {
+        "code": "UZB 381E",
+        "name": "Applic.of Satellite-Based Data"
+       },
+       {
+        "code": "UZB 383E",
+        "name": "Planetary Remote Sensing"
+       },
+       {
+        "code": "UZB 386E",
+        "name": "Boundary Layer Theory"
+       },
+       {
+        "code": "UZB 437E",
+        "name": "Introduction to Robotics"
+       },
+       {
+        "code": "UZB 487E",
+        "name": "CAD/CAM"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 4902",
+      "name": "Uçak Müh. Tasarımı II"
+     }
+    },
+    {
+     "course": {
+      "code": "UCK 424E",
+      "name": "Princip. of Aircraft Design II"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders I (ITB)",
+      "options": [
+       {
+        "code": "EKO 201",
+        "name": "Ekonomi"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 339",
+        "name": "Proje Yönetimi"
+       },
+       {
+        "code": "END 339E",
+        "name": "Project Management"
+       },
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478",
+        "name": "Girişimcilik"
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "UCK 425E",
+        "name": "Innovation Techniques"
+       },
+       {
+        "code": "UCK 457E",
+        "name": "Airline Management"
+       },
+       {
+        "code": "UCK 457",
+        "name": "Havayolu İşletmeciliği"
+       },
+       {
+        "code": "UCK 465E",
+        "name": "Aerospace Medicine"
+       },
+       {
+        "code": "UCK 465",
+        "name": "Havacılık ve Uzay Tıbbı"
+       },
+       {
+        "code": "UCK 471E",
+        "name": "Aviation Maintenance Manag."
+       },
+       {
+        "code": "UCK 471",
+        "name": "Havacılıkta Bakım Yönetimi"
+       },
+       {
+        "code": "UZB 426E",
+        "name": "Scientific Research Methods"
+       },
+       {
+        "code": "UZB 479E",
+        "name": "Air and Space Law"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "UCK 328",
+        "name": "Yapısal Analiz ve Tasarım"
+       },
+       {
+        "code": "UCK 370E",
+        "name": "Intro to Rotorcraft Systems"
+       },
+       {
+        "code": "UCK 416E",
+        "name": "Aircraft Structures"
+       },
+       {
+        "code": "UCK 419",
+        "name": "Hesaplamalı Aerodinamik"
+       },
+       {
+        "code": "UCK 435E",
+        "name": "Design of Aerospace Structures"
+       },
+       {
+        "code": "UCK 439E",
+        "name": "Intr. to Optimal Control"
+       },
+       {
+        "code": "UCK 445",
+        "name": "Helikopter Tasarımı"
+       },
+       {
+        "code": "UCK 448E",
+        "name": "Avionic Systems"
+       },
+       {
+        "code": "UCK 459E",
+        "name": "Helicopter Theory"
+       },
+       {
+        "code": "UCK 461E",
+        "name": "Flight Instruments"
+       },
+       {
+        "code": "UCK 468",
+        "name": "Güdüm Kontrol ve Seyrüsefer"
+       },
+       {
+        "code": "UCK 470",
+        "name": "Jet Motor Sis.Tas.&Pratik Uyg."
+       },
+       {
+        "code": "UCK 470E",
+        "name": "Jet Eng.Sys.Dsg.with Prac.App."
+       },
+       {
+        "code": "UCK 472E",
+        "name": "Aeroelasticity"
+       },
+       {
+        "code": "UCK 474",
+        "name": "Uçak Motor Tasarımı"
+       },
+       {
+        "code": "UCK 488E",
+        "name": "Aircraft Systems"
+       },
+       {
+        "code": "UZB 425E",
+        "name": "Digital Control Design"
+       },
+       {
+        "code": "UZB 438E",
+        "name": "Robotic Control Systems"
+       },
+       {
+        "code": "UZB 475E",
+        "name": "Hypersonic Flows"
+       },
+       {
+        "code": "UZB 489E",
+        "name": "Electric Propulsion"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders III (MT)",
+      "options": [
+       {
+        "code": "UCK 328",
+        "name": "Yapısal Analiz ve Tasarım"
+       },
+       {
+        "code": "UCK 370E",
+        "name": "Intro to Rotorcraft Systems"
+       },
+       {
+        "code": "UCK 416E",
+        "name": "Aircraft Structures"
+       },
+       {
+        "code": "UCK 419",
+        "name": "Hesaplamalı Aerodinamik"
+       },
+       {
+        "code": "UCK 435E",
+        "name": "Design of Aerospace Structures"
+       },
+       {
+        "code": "UCK 439E",
+        "name": "Intr. to Optimal Control"
+       },
+       {
+        "code": "UCK 445",
+        "name": "Helikopter Tasarımı"
+       },
+       {
+        "code": "UCK 448E",
+        "name": "Avionic Systems"
+       },
+       {
+        "code": "UCK 459E",
+        "name": "Helicopter Theory"
+       },
+       {
+        "code": "UCK 461E",
+        "name": "Flight Instruments"
+       },
+       {
+        "code": "UCK 468",
+        "name": "Güdüm Kontrol ve Seyrüsefer"
+       },
+       {
+        "code": "UCK 472E",
+        "name": "Aeroelasticity"
+       },
+       {
+        "code": "UCK 474",
+        "name": "Uçak Motor Tasarımı"
+       },
+       {
+        "code": "UCK 488E",
+        "name": "Aircraft Systems"
+       },
+       {
+        "code": "UZB 425E",
+        "name": "Digital Control Design"
+       },
+       {
+        "code": "UZB 438E",
+        "name": "Robotic Control Systems"
+       },
+       {
+        "code": "UZB 475E",
+        "name": "Hypersonic Flows"
+       },
+       {
+        "code": "UZB 489E",
+        "name": "Electric Propulsion"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

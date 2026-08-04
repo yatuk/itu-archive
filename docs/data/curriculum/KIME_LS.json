@@ -1,0 +1,1263 @@
+{
+ "programCode": "KIME_LS",
+ "programName": "Kimya (İngilizce) Lisans",
+ "faculty": "Fen - Edebiyat Fakültesi",
+ "planLabel": "Kimya Lisans Programı (%100 İngilizce) 2010-2011 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 111E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 111EL",
+      "name": "General Chemistry I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 101E",
+      "name": "Int to Comp and Inf Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "elective": {
+      "title": "English CourseI",
+      "options": [
+       {
+        "code": "ING 101",
+        "name": "English I"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 112E",
+      "name": "General Chemistry II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 112EL",
+      "name": "General Chemistry II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 108E",
+      "name": "Intr. to Sci. & Eng.Computing"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course II",
+      "options": [
+       {
+        "code": "ING 102",
+        "name": "English II"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 211E",
+      "name": "Analytical Chemistry"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 201E",
+      "name": "Differential Equations"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 231E",
+      "name": "Organic Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 221E",
+      "name": "Analytical Chemistry Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 262E",
+      "name": "Int. Quantum Chemistry"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 252E",
+      "name": "Chemical Thermodynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 232E",
+      "name": "Organic Chemistry II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 242E",
+      "name": "Organic Chemistry I Laboratory"
+     }
+    },
+    {
+     "elective": {
+      "title": "4th Semester Elective Crse(MT)",
+      "options": [
+       {
+        "code": "BIO 323E",
+        "name": "Biochemistry I"
+       },
+       {
+        "code": "BIO 324E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 214E",
+        "name": "Structure and Properties of Polymers"
+       },
+       {
+        "code": "KIM 313E",
+        "name": "Structural Organic Chemistry"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 317E",
+        "name": "Industrial Polymers"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 426E",
+        "name": "Electrochemical Conversion and Storage of Energy"
+       },
+       {
+        "code": "KIM 427E",
+        "name": "Ceramic Chemistry"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 351E",
+      "name": "Inorganic Chamistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 311E",
+      "name": "Physical Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 321E",
+      "name": "Physical Chemistry Laboratory I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 331E",
+      "name": "Organic Chemistry III"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 341E",
+      "name": "Organic Chemistry Laboratory II"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Crse(MT)",
+      "options": [
+       {
+        "code": "BIO 301E",
+        "name": "Fundamentals of Biology"
+       },
+       {
+        "code": "BIO 323E",
+        "name": "Biochemistry I"
+       },
+       {
+        "code": "BIO 324E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 214E",
+        "name": "Structure and Properties of Polymers"
+       },
+       {
+        "code": "KIM 313E",
+        "name": "Structural Organic Chemistry"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 317E",
+        "name": "Industrial Polymers"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 426E",
+        "name": "Electrochemical Conversion and Storage of Energy"
+       },
+       {
+        "code": "KIM 427E",
+        "name": "Ceramic Chemistry"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Crse-ITB",
+      "options": [
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 362E",
+      "name": "Inorganic Chemistry Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 332E",
+      "name": "Electrochemistry"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 312E",
+      "name": "Physical Chemistry II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 322E",
+      "name": "Physical Chemistry Laboratory II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 352E",
+      "name": "Inorganic Chemistry II"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "elective": {
+      "title": "6th Semester Elect.Crse(MT)",
+      "options": [
+       {
+        "code": "BIO 323E",
+        "name": "Biochemistry I"
+       },
+       {
+        "code": "BIO 324E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 214E",
+        "name": "Structure and Properties of Polymers"
+       },
+       {
+        "code": "KIM 313E",
+        "name": "Structural Organic Chemistry"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 317E",
+        "name": "Industrial Polymers"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 426E",
+        "name": "Electrochemical Conversion and Storage of Energy"
+       },
+       {
+        "code": "KIM 427E",
+        "name": "Ceramic Chemistry"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 421E",
+      "name": "Industrial Chemistry"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 212E",
+      "name": "Instrumental Analytic. Methods"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 222E",
+      "name": "Instrumental Analysis Methods Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 431E",
+      "name": "Organic Reactions"
+     }
+    },
+    {
+     "course": {
+      "code": "HUK 201",
+      "name": "İş Hukuku"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Crse-ITB",
+      "options": [
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Crse(MT)",
+      "options": [
+       {
+        "code": "BIO 301E",
+        "name": "Fundamentals of Biology"
+       },
+       {
+        "code": "BIO 323E",
+        "name": "Biochemistry I"
+       },
+       {
+        "code": "BIO 324E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 214E",
+        "name": "Structure and Properties of Polymers"
+       },
+       {
+        "code": "KIM 313E",
+        "name": "Structural Organic Chemistry"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 317E",
+        "name": "Industrial Polymers"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 426E",
+        "name": "Electrochemical Conversion and Storage of Energy"
+       },
+       {
+        "code": "KIM 427E",
+        "name": "Ceramic Chemistry"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 492E",
+      "name": "Graduation Project"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 452E",
+      "name": "Coordination Chemistry"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 432E",
+      "name": "Organic Structure Analysis"
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Crse-MT",
+      "options": [
+       {
+        "code": "BIO 323E",
+        "name": "Biochemistry I"
+       },
+       {
+        "code": "BIO 324E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 214E",
+        "name": "Structure and Properties of Polymers"
+       },
+       {
+        "code": "KIM 313E",
+        "name": "Structural Organic Chemistry"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 317E",
+        "name": "Industrial Polymers"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 426E",
+        "name": "Electrochemical Conversion and Storage of Energy"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Crse-ITB",
+      "options": [
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Crse-MT",
+      "options": [
+       {
+        "code": "BIO 323E",
+        "name": "Biochemistry I"
+       },
+       {
+        "code": "BIO 324E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 214E",
+        "name": "Structure and Properties of Polymers"
+       },
+       {
+        "code": "KIM 313E",
+        "name": "Structural Organic Chemistry"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 317E",
+        "name": "Industrial Polymers"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 426E",
+        "name": "Electrochemical Conversion and Storage of Energy"
+       },
+       {
+        "code": "KIM 427E",
+        "name": "Ceramic Chemistry"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

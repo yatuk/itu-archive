@@ -1,0 +1,1476 @@
+{
+ "programCode": "ELE_LS",
+ "programName": "Elektronik Mühendisliği Lisans",
+ "faculty": "Elektrik - Elektronik Fakültesi",
+ "planLabel": "Elektronik Mühendisliği Lisans Programı 2009-2010 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ELE 111",
+      "name": "Elektronik Mühendisliğine Giriş"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101",
+      "name": "Fizik I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101L",
+      "name": "Fizik I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101",
+      "name": "Genel Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101L",
+      "name": "Genel Kimya I Laboratuvarı"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 281",
+      "name": "Lineer Cebir ve Uygulamaları"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 101E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course I",
+      "options": [
+       {
+        "code": "ING 101",
+        "name": "English I"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 106",
+      "name": "Fizik II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 106L",
+      "name": "Fizik II Laboratuvarı"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 101E",
+      "name": "Int to Comp and Inf Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "MAL 201",
+      "name": "Malzeme Bilimi"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 102E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271",
+      "name": "Olasılık ve İstatistik"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course II",
+      "options": [
+       {
+        "code": "ING 102",
+        "name": "English II"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 201",
+      "name": "Diferansiyel Denklemler"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 211",
+      "name": "Elektrik Devre Temelleri"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 211E",
+      "name": "Basics of Electrical Circuits"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 231",
+      "name": "Elektronik I"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 231E",
+      "name": "Electronics I"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 104E",
+      "name": "Intr. to Programming in C"
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Seçime Bağlı Ders (TB)",
+      "options": [
+       {
+        "code": "BIO 301E",
+        "name": "Fundamentals of Biology"
+       },
+       {
+        "code": "BIO 302E",
+        "name": "Fundamentals of Biotechnology"
+       },
+       {
+        "code": "BLG 112",
+        "name": "Ayrık Matematik"
+       },
+       {
+        "code": "FIZ 201",
+        "name": "Modern Fizik"
+       },
+       {
+        "code": "KIM 204",
+        "name": "Genel Kimya II"
+       },
+       {
+        "code": "MAT 106",
+        "name": "Analitik Geometri&Vektör Hesab"
+       },
+       {
+        "code": "MAT 202",
+        "name": "Sayısal Yöntemler"
+       },
+       {
+        "code": "MAT 205",
+        "name": "Kompleks Fonk Teorisi"
+       },
+       {
+        "code": "MAT 206E",
+        "name": "Fuzzy Mathematics"
+       },
+       {
+        "code": "MAT 206",
+        "name": "Mühendislikte Bulanık Mat"
+       },
+       {
+        "code": "MAT 208",
+        "name": "Bilim ve Matematik Tarihi"
+       },
+       {
+        "code": "MAT 301",
+        "name": "Kısmi Türevli Dif. Denk."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ELE 242",
+      "name": "Devre ve Sistem Analizi"
+     }
+    },
+    {
+     "course": {
+      "code": "TEL 212",
+      "name": "Elektromagnetik Alanlara Giriş"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 262",
+      "name": "Elektonik II"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 262E",
+      "name": "Electronics II"
+     }
+    },
+    {
+     "course": {
+      "code": "TEL 252",
+      "name": "İşaretler ve Sistemler"
+     }
+    },
+    {
+     "course": {
+      "code": "TEL 252E",
+      "name": "Signals and Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 221",
+      "name": "Elektrik Devre Temelleri Laboratuarı"
+     }
+    },
+    {
+     "elective": {
+      "title": "4.yy Seçime Bağlı Ders (TB)",
+      "options": [
+       {
+        "code": "BIO 301E",
+        "name": "Fundamentals of Biology"
+       },
+       {
+        "code": "BIO 302E",
+        "name": "Fundamentals of Biotechnology"
+       },
+       {
+        "code": "BLG 112",
+        "name": "Ayrık Matematik"
+       },
+       {
+        "code": "FIZ 201",
+        "name": "Modern Fizik"
+       },
+       {
+        "code": "KIM 204",
+        "name": "Genel Kimya II"
+       },
+       {
+        "code": "MAT 106",
+        "name": "Analitik Geometri&Vektör Hesab"
+       },
+       {
+        "code": "MAT 202",
+        "name": "Sayısal Yöntemler"
+       },
+       {
+        "code": "MAT 205",
+        "name": "Kompleks Fonk Teorisi"
+       },
+       {
+        "code": "MAT 206E",
+        "name": "Fuzzy Mathematics"
+       },
+       {
+        "code": "MAT 206",
+        "name": "Mühendislikte Bulanık Mat"
+       },
+       {
+        "code": "MAT 208",
+        "name": "Bilim ve Matematik Tarihi"
+       },
+       {
+        "code": "MAT 301",
+        "name": "Kısmi Türevli Dif. Denk."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "4.yy Seçime Bağlı Ders (TM)",
+      "options": [
+       {
+        "code": "DNK 201",
+        "name": "Dinamik"
+       },
+       {
+        "code": "ELK 214",
+        "name": "Elektromek. Enerji Dönüş.Tem."
+       },
+       {
+        "code": "ELK 234",
+        "name": "Termodinamik ve Hidrodinamik"
+       },
+       {
+        "code": "KON 224",
+        "name": "Ölçme ve Enstrümantasyon"
+       },
+       {
+        "code": "MUK 203",
+        "name": "Mukavemet I"
+       },
+       {
+        "code": "STA 201",
+        "name": "Statik"
+       },
+       {
+        "code": "STA 204",
+        "name": "Statik ve Mukavemet"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ELE 335",
+      "name": "Analog Elektronik Devreleri"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 311",
+      "name": "Elektroniğe Giriş Laboratuarı"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 317",
+      "name": "Otomatik Kontrol Sistemleri"
+     }
+    },
+    {
+     "course": {
+      "code": "TEL 313",
+      "name": "Elektromanyetik Dalgalar"
+     }
+    },
+    {
+     "course": {
+      "code": "TEL 313E",
+      "name": "Electromagnetic Waves"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 231",
+      "name": "Sayısal Devreler"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 231E",
+      "name": "Digital Circuits"
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "EKO 201",
+        "name": "Ekonomi"
+       },
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ELE 312",
+      "name": "Analog Elektrik Devreleri Laboratuarı"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 332",
+      "name": "Devre Sentezi"
+     }
+    },
+    {
+     "course": {
+      "code": "TEL 362",
+      "name": "Mikrodalga Mühendisliği"
+     }
+    },
+    {
+     "course": {
+      "code": "TEL 342",
+      "name": "Haberleşmenin Temelleri"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 212",
+      "name": "Mikroişlemci Sistemleri"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 212E",
+      "name": "Microprocessor Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 322",
+      "name": "Sayısal Elektronik Devreleri"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 322E",
+      "name": "Digital Electronic Circuits"
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Elective Course (MT)",
+      "options": [
+       {
+        "code": "ELE 414E",
+        "name": "Microelectronic Analog Circuit Design"
+       },
+       {
+        "code": "ELE 416E",
+        "name": "High Frequency Electronics"
+       },
+       {
+        "code": "ELE 417E",
+        "name": "RF Microelectronics"
+       },
+       {
+        "code": "ELE 418E",
+        "name": "RF Electronic Applications"
+       },
+       {
+        "code": "ELK 331E",
+        "name": "Power Electronic Circuits"
+       },
+       {
+        "code": "ELK 341E",
+        "name": "Electrical Machines I"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020",
+        "name": "Modernitenin Oluşumu"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037",
+        "name": "Bilgi, Dil ve Mantık"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 095",
+        "name": "Teknoloji, Politika ve Hukuk"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 151",
+        "name": "İnsan Kaynakları Yönetimi"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171",
+        "name": "Bilim, Teknoloji ve Toplum"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 205",
+        "name": "Felsefe"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 222",
+        "name": "Kent ve Toplum"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 224",
+        "name": "Çevre ve Toplum"
+       },
+       {
+        "code": "ITB 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 227",
+        "name": "Siyaset Teorisi"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 228",
+        "name": "Toplumsal Cinsiyet Çalışmaları"
+       },
+       {
+        "code": "ITB 230",
+        "name": "Afet Bilinci"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "BLG 441",
+        "name": "Say.İşaret İşl.ile Ger.Zam.S.T"
+       },
+       {
+        "code": "ELE 412",
+        "name": "Yarıiletken Elemanlar"
+       },
+       {
+        "code": "ELE 413",
+        "name": "Çok Geniş Ölçekli Tümdevre Tasarımı I"
+       },
+       {
+        "code": "ELE 415",
+        "name": "Analog Tümdevreler"
+       },
+       {
+        "code": "ELE 419",
+        "name": "Sayısal Sistem Tasarımı"
+       },
+       {
+        "code": "ELE 420",
+        "name": "Yapay Sinir Ağları"
+       },
+       {
+        "code": "ELE 421",
+        "name": "Tıp Elektroniğine Giriş"
+       },
+       {
+        "code": "ELE 422",
+        "name": "Biyolojik İşaretlerin Oluşumu ve Algılanması Yöntemleri"
+       },
+       {
+        "code": "ELE 424",
+        "name": "Ses Ötesi ve Tıp Alanındaki Uygulamaları"
+       },
+       {
+        "code": "ELE 436",
+        "name": "Sayısal Sistem Tasarımı Laboratuvarı"
+       },
+       {
+        "code": "ELE 443",
+        "name": "CMOS Yüksek Devre Frekans Tasarımı"
+       },
+       {
+        "code": "ELK 331",
+        "name": "Güç Elektroniği Devreleri"
+       },
+       {
+        "code": "ELK 341",
+        "name": "Elektrik Makinaları I"
+       },
+       {
+        "code": "KON 424",
+        "name": "Biyolojik Sist.Model.ve Kontro"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "BLG 441",
+        "name": "Say.İşaret İşl.ile Ger.Zam.S.T"
+       },
+       {
+        "code": "ELE 412",
+        "name": "Yarıiletken Elemanlar"
+       },
+       {
+        "code": "ELE 413",
+        "name": "Çok Geniş Ölçekli Tümdevre Tasarımı I"
+       },
+       {
+        "code": "ELE 415",
+        "name": "Analog Tümdevreler"
+       },
+       {
+        "code": "ELE 419",
+        "name": "Sayısal Sistem Tasarımı"
+       },
+       {
+        "code": "ELE 420",
+        "name": "Yapay Sinir Ağları"
+       },
+       {
+        "code": "ELE 421",
+        "name": "Tıp Elektroniğine Giriş"
+       },
+       {
+        "code": "ELE 422",
+        "name": "Biyolojik İşaretlerin Oluşumu ve Algılanması Yöntemleri"
+       },
+       {
+        "code": "ELE 424",
+        "name": "Ses Ötesi ve Tıp Alanındaki Uygulamaları"
+       },
+       {
+        "code": "ELE 436",
+        "name": "Sayısal Sistem Tasarımı Laboratuvarı"
+       },
+       {
+        "code": "ELE 443",
+        "name": "CMOS Yüksek Devre Frekans Tasarımı"
+       },
+       {
+        "code": "ELK 331",
+        "name": "Güç Elektroniği Devreleri"
+       },
+       {
+        "code": "ELK 341",
+        "name": "Elektrik Makinaları I"
+       },
+       {
+        "code": "KON 424",
+        "name": "Biyolojik Sist.Model.ve Kontro"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders III(MT)",
+      "options": [
+       {
+        "code": "BLG 441",
+        "name": "Say.İşaret İşl.ile Ger.Zam.S.T"
+       },
+       {
+        "code": "ELE 412",
+        "name": "Yarıiletken Elemanlar"
+       },
+       {
+        "code": "ELE 413",
+        "name": "Çok Geniş Ölçekli Tümdevre Tasarımı I"
+       },
+       {
+        "code": "ELE 415",
+        "name": "Analog Tümdevreler"
+       },
+       {
+        "code": "ELE 419",
+        "name": "Sayısal Sistem Tasarımı"
+       },
+       {
+        "code": "ELE 420",
+        "name": "Yapay Sinir Ağları"
+       },
+       {
+        "code": "ELE 421",
+        "name": "Tıp Elektroniğine Giriş"
+       },
+       {
+        "code": "ELE 422",
+        "name": "Biyolojik İşaretlerin Oluşumu ve Algılanması Yöntemleri"
+       },
+       {
+        "code": "ELE 424",
+        "name": "Ses Ötesi ve Tıp Alanındaki Uygulamaları"
+       },
+       {
+        "code": "ELE 436",
+        "name": "Sayısal Sistem Tasarımı Laboratuvarı"
+       },
+       {
+        "code": "ELE 443",
+        "name": "CMOS Yüksek Devre Frekans Tasarımı"
+       },
+       {
+        "code": "ELK 331",
+        "name": "Güç Elektroniği Devreleri"
+       },
+       {
+        "code": "ELK 341",
+        "name": "Elektrik Makinaları I"
+       },
+       {
+        "code": "KON 424",
+        "name": "Biyolojik Sist.Model.ve Kontro"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "ELE 492",
+      "name": "Bitirme Çalışması"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Elective Course (MT)",
+      "options": [
+       {
+        "code": "ELE 426E",
+        "name": "Microelectronic Analog System Design"
+       },
+       {
+        "code": "ELE 429E",
+        "name": "Communication Electronic Circuits"
+       },
+       {
+        "code": "ELE 432E",
+        "name": "Microprocessor System Design"
+       },
+       {
+        "code": "TEL 432E",
+        "name": "Image Processing Fundamentals"
+       },
+       {
+        "code": "TEL 434E",
+        "name": "Introduction to Optimization"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "ELE 425",
+        "name": "Çok Geniş Ölçekli Tümdevre Tasarımı II"
+       },
+       {
+        "code": "ELE 427",
+        "name": "Mikroelektronik Teknolojisi"
+       },
+       {
+        "code": "ELE 428",
+        "name": "Endüstriyel Elektronik"
+       },
+       {
+        "code": "ELE 430",
+        "name": "Radyo-Televizyon Sistemleri"
+       },
+       {
+        "code": "ELE 431",
+        "name": "İleri Elektronik Laboratuvarı"
+       },
+       {
+        "code": "ELE 433",
+        "name": "Sayısal Filtreler ve Sistemler"
+       },
+       {
+        "code": "ELE 434",
+        "name": "Lineer Olmayan Devreler ve Sistemler"
+       },
+       {
+        "code": "ELE 435",
+        "name": "Mühendislik Sistem Analizi"
+       },
+       {
+        "code": "ELE 437",
+        "name": "Biyomedikal Düzenler"
+       },
+       {
+        "code": "ELE 438",
+        "name": "Tıp Elektroniği Tasarımı İlkeleri"
+       },
+       {
+        "code": "ELE 440",
+        "name": "Tıp Alanında Kullanılan Bilgisayar Destekli Düzenler"
+       },
+       {
+        "code": "ELE 443",
+        "name": "CMOS Yüksek Devre Frekans Tasarımı"
+       },
+       {
+        "code": "ELE 445",
+        "name": "Tıbbi Enstrumantasyon, Tasarım ve Uygulamalar"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "ELE 425",
+        "name": "Çok Geniş Ölçekli Tümdevre Tasarımı II"
+       },
+       {
+        "code": "ELE 427",
+        "name": "Mikroelektronik Teknolojisi"
+       },
+       {
+        "code": "ELE 428",
+        "name": "Endüstriyel Elektronik"
+       },
+       {
+        "code": "ELE 430",
+        "name": "Radyo-Televizyon Sistemleri"
+       },
+       {
+        "code": "ELE 431",
+        "name": "İleri Elektronik Laboratuvarı"
+       },
+       {
+        "code": "ELE 433",
+        "name": "Sayısal Filtreler ve Sistemler"
+       },
+       {
+        "code": "ELE 434",
+        "name": "Lineer Olmayan Devreler ve Sistemler"
+       },
+       {
+        "code": "ELE 435",
+        "name": "Mühendislik Sistem Analizi"
+       },
+       {
+        "code": "ELE 437",
+        "name": "Biyomedikal Düzenler"
+       },
+       {
+        "code": "ELE 438",
+        "name": "Tıp Elektroniği Tasarımı İlkeleri"
+       },
+       {
+        "code": "ELE 440",
+        "name": "Tıp Alanında Kullanılan Bilgisayar Destekli Düzenler"
+       },
+       {
+        "code": "ELE 443",
+        "name": "CMOS Yüksek Devre Frekans Tasarımı"
+       },
+       {
+        "code": "ELE 445",
+        "name": "Tıbbi Enstrumantasyon, Tasarım ve Uygulamalar"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders III(MT)",
+      "options": [
+       {
+        "code": "ELE 425",
+        "name": "Çok Geniş Ölçekli Tümdevre Tasarımı II"
+       },
+       {
+        "code": "ELE 427",
+        "name": "Mikroelektronik Teknolojisi"
+       },
+       {
+        "code": "ELE 428",
+        "name": "Endüstriyel Elektronik"
+       },
+       {
+        "code": "ELE 430",
+        "name": "Radyo-Televizyon Sistemleri"
+       },
+       {
+        "code": "ELE 431",
+        "name": "İleri Elektronik Laboratuvarı"
+       },
+       {
+        "code": "ELE 433",
+        "name": "Sayısal Filtreler ve Sistemler"
+       },
+       {
+        "code": "ELE 434",
+        "name": "Lineer Olmayan Devreler ve Sistemler"
+       },
+       {
+        "code": "ELE 435",
+        "name": "Mühendislik Sistem Analizi"
+       },
+       {
+        "code": "ELE 437",
+        "name": "Biyomedikal Düzenler"
+       },
+       {
+        "code": "ELE 438",
+        "name": "Tıp Elektroniği Tasarımı İlkeleri"
+       },
+       {
+        "code": "ELE 440",
+        "name": "Tıp Alanında Kullanılan Bilgisayar Destekli Düzenler"
+       },
+       {
+        "code": "ELE 443",
+        "name": "CMOS Yüksek Devre Frekans Tasarımı"
+       },
+       {
+        "code": "ELE 445",
+        "name": "Tıbbi Enstrumantasyon, Tasarım ve Uygulamalar"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

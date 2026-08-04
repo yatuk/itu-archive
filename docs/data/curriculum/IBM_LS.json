@@ -1,0 +1,1234 @@
+{
+ "programCode": "IBM_LS",
+ "programName": "İklim Bilimi ve Meteoroloji Mühendisliği Lisans",
+ "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
+ "planLabel": "İklim Bilimi ve Meteoroloji Mühendisliği Lisans Programı 2024-2025 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTO 101",
+      "name": "Meteoroloji Müh. Giriş ve Etik"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 111E",
+      "name": "Intr. to Atmospheric Sciences"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101",
+      "name": "Fizik I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103",
+      "name": "Matematik I"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 100E",
+      "name": "Intr.to Prog.Language(PYTHON)"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTO 102",
+      "name": "Bilgisayarlı Teknik Resim"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 112",
+      "name": "Meteoroloji Alet & Gözlem Usul"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104",
+      "name": "Matematik II"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 112E",
+      "name": "Intr.to Prog.Language(FORTRAN)"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTO 223",
+      "name": "Bilgisayar Grafiğine Giriş"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 225",
+      "name": "Güneş ve Yer Radyasyonu"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 210",
+      "name": "Mühendislik Matematiği"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271",
+      "name": "Olasılık ve İstatistik"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Seçime Bağlı Ders(TB)",
+      "options": [
+       {
+        "code": "MTO 227",
+        "name": "Ekosistem Ekolojisi"
+       },
+       {
+        "code": "MTO 323",
+        "name": "Atmosfer Kimyası"
+       },
+       {
+        "code": "UZB 411E",
+        "name": "Space Environment"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTO 214",
+      "name": "Atmosfer Termodinamiği"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 222",
+      "name": "Hidroloji"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 254",
+      "name": "İklim Bilimi"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 202E",
+      "name": "Numerical Methods"
+     }
+    },
+    {
+     "course": {
+      "code": "AKM 204E",
+      "name": "Fluid Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "STA 204",
+      "name": "Statik ve Mukavemet"
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTO 229E",
+      "name": "Physics ofClouds&Precipitation"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 301",
+      "name": "Meteo.Uzaktan Algılamanın Tem."
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 303E",
+      "name": "Comput.Fluid Dyn.in Meteo.Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 311E",
+      "name": "Data Analysis"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 337",
+      "name": "Atmosfer Dinamiği I"
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders(MT)",
+      "options": [
+       {
+        "code": "MTO 350E",
+        "name": "Air Pollution Fundamentals"
+       },
+       {
+        "code": "MTO 353",
+        "name": "Tarım ve Orman Meteorolojisi I"
+       },
+       {
+        "code": "MTO 357E",
+        "name": "Physics of Upper Atmosphere"
+       },
+       {
+        "code": "MTO 359",
+        "name": "Biyometeoroloji"
+       },
+       {
+        "code": "MTO 360",
+        "name": "Tıbbi Meteoroloji"
+       },
+       {
+        "code": "MYZ 312",
+        "name": "Meteorolojide Makine Öğrenmesi"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders(ITB)",
+      "options": [
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       },
+       {
+        "code": "SNT 229",
+        "name": "Türkiye'de Popüler Müzik Tarihinden İzlekler"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTO 302",
+      "name": "Hava Analizi ve Öngörü I"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 304",
+      "name": "Havacılık Meteorolojisi"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 340",
+      "name": "Atmosfer Dinamiği II"
+     }
+    },
+    {
+     "course": {
+      "code": "ETK 101",
+      "name": "Mühendislik Etiği"
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders(MT)",
+      "options": [
+       {
+        "code": "MTO 351",
+        "name": "Su Meteorolojisi"
+       },
+       {
+        "code": "MTO 351E",
+        "name": "Hydrometeorology"
+       },
+       {
+        "code": "MTO 354",
+        "name": "Tarım & Orman Meteorolojisi II"
+       },
+       {
+        "code": "MTO 354E",
+        "name": "Agricultural and Forest Meteorology II"
+       },
+       {
+        "code": "MTO 362",
+        "name": "İnsans.Hava Sis.ile Meteo.Uyg."
+       },
+       {
+        "code": "MTO 456",
+        "name": "Hava Kirliliği Kontrolü"
+       },
+       {
+        "code": "MTO 456E",
+        "name": "Air Pollution Control"
+       },
+       {
+        "code": "MTO 460",
+        "name": "Enerji Meteorolojisine Giriş"
+       },
+       {
+        "code": "MTO 460E",
+        "name": "Intr. to Energy Meteorology"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders(ITB)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020",
+        "name": "Modernitenin Oluşumu"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037",
+        "name": "Bilgi, Dil ve Mantık"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095",
+        "name": "Teknoloji, Politika ve Hukuk"
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151",
+        "name": "İnsan Kaynakları Yönetimi"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171",
+        "name": "Bilim, Teknoloji ve Toplum"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205",
+        "name": "Felsefe"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 222",
+        "name": "Kent ve Toplum"
+       },
+       {
+        "code": "ITB 224",
+        "name": "Çevre ve Toplum"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "ITB 227",
+        "name": "Siyaset Teorisi"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228",
+        "name": "Toplumsal Cinsiyet Çalışmaları"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230",
+        "name": "Afet Bilinci"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 235",
+        "name": "Türkiye ve Avrupa Birliği"
+       },
+       {
+        "code": "ITB 325",
+        "name": "Sosyal Zekalı Mühendis"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTO 406",
+      "name": "Hava Analizi ve Öngörü II"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 4901",
+      "name": "Meteoroloji Müh. Tasarımı I"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders I(MT)",
+      "options": [
+       {
+        "code": "MTO 358",
+        "name": "Hava Kirliliği Meteorolojisi"
+       },
+       {
+        "code": "MTO 358E",
+        "name": "Air Pollution Meteorology"
+       },
+       {
+        "code": "MTO 454",
+        "name": "Fiziksel Klimatoloji"
+       },
+       {
+        "code": "MTO 454E",
+        "name": "Physical Climatology"
+       },
+       {
+        "code": "MTO 455",
+        "name": "Hidrometri"
+       },
+       {
+        "code": "MTO 455E",
+        "name": "Hydrometry"
+       },
+       {
+        "code": "MTO 463",
+        "name": "Sayısal Hava Öngörüsü"
+       },
+       {
+        "code": "MTO 463E",
+        "name": "Numerical Weather Prediction"
+       },
+       {
+        "code": "MTO 464E",
+        "name": "Climate Change"
+       },
+       {
+        "code": "MTO 465",
+        "name": "Çevre Biyofiziği"
+       },
+       {
+        "code": "MTO 465E",
+        "name": "Environmental Biophysics"
+       },
+       {
+        "code": "MTO 466",
+        "name": "Atmosferde Optik ve Akustik"
+       },
+       {
+        "code": "MTO 466E",
+        "name": "Atmospheric Optics & Acoustics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders(TM)",
+      "options": [
+       {
+        "code": "MTO 388",
+        "name": "Coğrafi Bilgi Bilimi"
+       },
+       {
+        "code": "MTO 470",
+        "name": "Oşinografi"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MTO 426E",
+      "name": "Micrometeorology"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 494",
+      "name": "Araştırma Projesi"
+     }
+    },
+    {
+     "course": {
+      "code": "MTO 4902",
+      "name": "Meteoroloji Müh. Tasarımı II"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201",
+      "name": "Ekonomi"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçmeli Ders I (MT)",
+      "options": [
+       {
+        "code": "MTO 361",
+        "name": "Hava Kirliliği Modellemesi"
+       },
+       {
+        "code": "MTO 361E",
+        "name": "Air Pollution Modelling"
+       },
+       {
+        "code": "MTO 450",
+        "name": "Meteorolojide Uzaktan Algılama"
+       },
+       {
+        "code": "MTO 450E",
+        "name": "Remote Sensing in Meteorology"
+       },
+       {
+        "code": "MTO 453E",
+        "name": "Climate Dynamics"
+       },
+       {
+        "code": "MTO 459E",
+        "name": "Intro.Gen.Circ.Earth's.Atm."
+       },
+       {
+        "code": "MTO 461E",
+        "name": "Intr. to Planetary Atmospheres"
+       },
+       {
+        "code": "MTO 462E",
+        "name": "Severe and Hazardous Weather"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

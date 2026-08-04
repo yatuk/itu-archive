@@ -1,0 +1,802 @@
+{
+ "programCode": "MEN_LS",
+ "programName": "Gemi Makinaları İşletme Mühendisliği (İngilizce) (KKTC) Lisans",
+ "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+ "planLabel": "Gemi Makinaları İşletme Mühendisliği Lisans Programı (%100 İngilizce) (KKTC) 2022-2023 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "DFH 113E",
+      "name": "Maritime Safety I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 118E",
+      "name": "Introduction to Marine Engineering and Ethics"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 114E",
+      "name": "Materials Scie.&Manufact.Mth."
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 132E",
+      "name": "Numerical Analy. of Eng.Syst."
+     }
+    },
+    {
+     "course": {
+      "code": "DFH 112E",
+      "name": "Maritime Safety II"
+     }
+    },
+    {
+     "course": {
+      "code": "RES 102E",
+      "name": "Com.Aided Technical Drawing"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 171E",
+      "name": "Maritime English I"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 210E",
+      "name": "Engineering Mathematics"
+     }
+    },
+    {
+     "course": {
+      "code": "MEK 205E",
+      "name": "Engineering Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "DFH 201E",
+      "name": "Basic Swimming Skills"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 113E",
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 206E",
+      "name": "Mechanical Workshop"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 320E",
+      "name": "Naval Architecture&Stability"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 254E",
+      "name": "Marine Auxiliary Machinery I"
+     }
+    },
+    {
+     "course": {
+      "code": "DFH 202E",
+      "name": "Ship Emergency Response"
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course (ITB)",
+      "options": [
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "GMI 213E",
+      "name": "Thermodynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 214E",
+      "name": "Hydraulic and Pneumatic"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 225E",
+      "name": "Marine Diesel Engines I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 228E",
+      "name": "Basic Electronics"
+     }
+    },
+    {
+     "course": {
+      "code": "AKM 204E",
+      "name": "Fluid Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 256E",
+      "name": "Electrotechnics"
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course (TM)",
+      "options": [
+       {
+        "code": "GMI 209E",
+        "name": "Computer Aided Solid Design"
+       },
+       {
+        "code": "GMI 210E",
+        "name": "Vibration Basics"
+       },
+       {
+        "code": "GMI 223E",
+        "name": "Machine Elements"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course (TB)",
+      "options": [
+       {
+        "code": "FIZ 449E",
+        "name": "Physics in Our Daily Life"
+       },
+       {
+        "code": "GMI 243E",
+        "name": "Marine Environmental Chemistry"
+       },
+       {
+        "code": "GMI 315E",
+        "name": "Marine Ecology"
+       },
+       {
+        "code": "KIM 202E",
+        "name": "Physical Chemistry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "GMI 341E",
+      "name": "Automatic Control Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 301E",
+      "name": "Maritime Law"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 313E",
+      "name": "Marine Boilers and Operation"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 333E",
+      "name": "Marine Diesel Engines II"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 324E",
+      "name": "Ship Machinery Operation and Maintenance"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 342E",
+      "name": "Maritime Rules & Regulations"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 352E",
+      "name": "Heat Transfer"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 384E",
+      "name": "Engine Room Simulator (ERS) I"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Course (ITB)",
+      "options": [
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "GMI 393E",
+      "name": "Long Term Sea Training (6 ay)"
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "GMI 454E",
+      "name": "Marine Auxiliary Machinery II"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 457E",
+      "name": "Marine Electrotechnics"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 473E",
+      "name": "Marine Diesel Engines III"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 4901E",
+      "name": "Marine Engineering Design I"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 270E",
+      "name": "Maritime English II"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course I (MT)",
+      "options": [
+       {
+        "code": "GMI 470E",
+        "name": "Design of Marine Diesel Engin."
+       },
+       {
+        "code": "GMI 471E",
+        "name": "Refrigeration and HVAC Systems"
+       },
+       {
+        "code": "GMI 474E",
+        "name": "Quality&Safety Management Sys."
+       },
+       {
+        "code": "GMI 475E",
+        "name": "Ship Electrical Systems"
+       },
+       {
+        "code": "GMI 476E",
+        "name": "Deck Machinery"
+       },
+       {
+        "code": "GMI 477E",
+        "name": "Alternative Fuel Technologies"
+       },
+       {
+        "code": "GMI 481E",
+        "name": "Marine Insurance"
+       },
+       {
+        "code": "GMI 485E",
+        "name": "Envir.Manag.in Ship Operations"
+       },
+       {
+        "code": "GMI 486E",
+        "name": "Shipping Finance"
+       },
+       {
+        "code": "GMI 487E",
+        "name": "Occupational Health & Safety"
+       },
+       {
+        "code": "GMI 488E",
+        "name": "Surveying Procedures"
+       },
+       {
+        "code": "GMI 489E",
+        "name": "Mechatronics"
+       },
+       {
+        "code": "MYZ 313E",
+        "name": "Applications of Artificial Intelligence in Maritime"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course II (MT)",
+      "options": [
+       {
+        "code": "GMI 470E",
+        "name": "Design of Marine Diesel Engin."
+       },
+       {
+        "code": "GMI 471E",
+        "name": "Refrigeration and HVAC Systems"
+       },
+       {
+        "code": "GMI 474E",
+        "name": "Quality&Safety Management Sys."
+       },
+       {
+        "code": "GMI 475E",
+        "name": "Ship Electrical Systems"
+       },
+       {
+        "code": "GMI 476E",
+        "name": "Deck Machinery"
+       },
+       {
+        "code": "GMI 477E",
+        "name": "Alternative Fuel Technologies"
+       },
+       {
+        "code": "GMI 481E",
+        "name": "Marine Insurance"
+       },
+       {
+        "code": "GMI 485E",
+        "name": "Envir.Manag.in Ship Operations"
+       },
+       {
+        "code": "GMI 486E",
+        "name": "Shipping Finance"
+       },
+       {
+        "code": "GMI 487E",
+        "name": "Occupational Health & Safety"
+       },
+       {
+        "code": "GMI 488E",
+        "name": "Surveying Procedures"
+       },
+       {
+        "code": "GMI 489E",
+        "name": "Mechatronics"
+       },
+       {
+        "code": "MYZ 313E",
+        "name": "Applications of Artificial Intelligence in Maritime"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "GMI 4902E",
+      "name": "Marine Engineering Design II"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 484E",
+      "name": "Engine Room Simulator (ERS) II"
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201E",
+      "name": "Economics"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 462E",
+      "name": "Oper.of Steam&Gas Turbines"
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course I (MT)",
+      "options": [
+       {
+        "code": "GMI 470E",
+        "name": "Design of Marine Diesel Engin."
+       },
+       {
+        "code": "GMI 471E",
+        "name": "Refrigeration and HVAC Systems"
+       },
+       {
+        "code": "GMI 474E",
+        "name": "Quality&Safety Management Sys."
+       },
+       {
+        "code": "GMI 475E",
+        "name": "Ship Electrical Systems"
+       },
+       {
+        "code": "GMI 476E",
+        "name": "Deck Machinery"
+       },
+       {
+        "code": "GMI 477E",
+        "name": "Alternative Fuel Technologies"
+       },
+       {
+        "code": "GMI 481E",
+        "name": "Marine Insurance"
+       },
+       {
+        "code": "GMI 485E",
+        "name": "Envir.Manag.in Ship Operations"
+       },
+       {
+        "code": "GMI 486E",
+        "name": "Shipping Finance"
+       },
+       {
+        "code": "GMI 487E",
+        "name": "Occupational Health & Safety"
+       },
+       {
+        "code": "GMI 488E",
+        "name": "Surveying Procedures"
+       },
+       {
+        "code": "GMI 489E",
+        "name": "Mechatronics"
+       },
+       {
+        "code": "MYZ 313E",
+        "name": "Applications of Artificial Intelligence in Maritime"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course II (MT)",
+      "options": [
+       {
+        "code": "GMI 470E",
+        "name": "Design of Marine Diesel Engin."
+       },
+       {
+        "code": "GMI 471E",
+        "name": "Refrigeration and HVAC Systems"
+       },
+       {
+        "code": "GMI 474E",
+        "name": "Quality&Safety Management Sys."
+       },
+       {
+        "code": "GMI 475E",
+        "name": "Ship Electrical Systems"
+       },
+       {
+        "code": "GMI 476E",
+        "name": "Deck Machinery"
+       },
+       {
+        "code": "GMI 477E",
+        "name": "Alternative Fuel Technologies"
+       },
+       {
+        "code": "GMI 481E",
+        "name": "Marine Insurance"
+       },
+       {
+        "code": "GMI 485E",
+        "name": "Envir.Manag.in Ship Operations"
+       },
+       {
+        "code": "GMI 486E",
+        "name": "Shipping Finance"
+       },
+       {
+        "code": "GMI 487E",
+        "name": "Occupational Health & Safety"
+       },
+       {
+        "code": "GMI 488E",
+        "name": "Surveying Procedures"
+       },
+       {
+        "code": "GMI 489E",
+        "name": "Mechatronics"
+       },
+       {
+        "code": "MYZ 313E",
+        "name": "Applications of Artificial Intelligence in Maritime"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

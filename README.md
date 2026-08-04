@@ -17,6 +17,8 @@ dönem, 64.309 şube kaydı duruyor içinde. Akademik takvim de dahil.
 |---|---|
 | `obs.itu.edu.tr/public/DersProgram` | Aktif dönem. 4 program seviyesi (OL/LS/LU/LUI), 337 branş kodu |
 | `obs.itu.edu.tr/public/FinalTakvimi` | Final ve ek sınav takvimi |
+| `obs.itu.edu.tr/public/GenelTanimlamalar/OnsartAra` | Katalogdaki her dersin önşartı |
+| `obs.itu.edu.tr/public/DersPlan` | Her lisans programının güncel müfredatı, dönem dönem |
 | `takvim.sis.itu.edu.tr` | 4 akademik yılın takvimi |
 | Tarihsel dökümler | 2016-2017'ye kadar geçmiş dönemler, `-backfill` ile |
 
@@ -35,20 +37,31 @@ OBS'de sorulamayan şeyler burada sorulabiliyor:
 
 6.264 ders ve 4.148 öğretim üyesi indekslenmiş durumda.
 
+Site ayrıca bir "ders planı haritası" sunuyor: bir bölüm seçin, o bölümün güncel
+müfredatı dönem dönem, gerçek önşart ilişkileriyle kendiliğinden yerleşen bir
+grafikte çiziliyor. Bir düğüme tıklayınca geriye doğru önşartlar, ileriye doğru
+o dersi önşart olarak isteyen dersler parlıyor. Seçmeli ders slotları tek bir
+düğüm (bazı havuzlarda 150'den fazla alternatif var, hepsini tek tek düğüm
+yapmak grafiği okunmaz hale getiriyordu); tıklayınca alternatifler panelde
+listeleniyor.
+
 ## Çalıştırma
 
 ```bash
-go run ./cmd/scrape            # ders programı, sınav takvimi, akademik takvim
+go run ./cmd/scrape            # ders programı, sınav takvimi, önşartlar, akademik takvim
 go run ./cmd/scrape -backfill  # geçmiş dönemleri de al, bir kez yeterli
 go run ./cmd/quota             # kontenjan doluluğundan tek ölçüm al
+go run ./cmd/curriculum        # tüm lisans programlarının müfredatını çek
 ```
 
 Her şey `docs/data` altına yazılıyor. Tam tarama iki dakika sürüyor. Bayraklar:
-`-out`, `-workers`, `-rps`, `-skip-courses`, `-skip-calendar`, `-skip-exams`.
+`-out`, `-workers`, `-rps`, `-skip-courses`, `-skip-calendar`, `-skip-exams`, `-skip-prereq`.
 
-`cmd/quota` ayrı bir komut çünkü frekansı farklı: ders programı günde bir kez
-yeterli, kontenjan kayıt haftasında yarım saatte bir anlamlı. Değişen bir şey
-yoksa dosyaya hiç dokunmuyor, o yüzden sakin dönemlerde boş commit birikmiyor.
+`cmd/quota` ve `cmd/curriculum` ayrı komutlar çünkü frekansları farklı: ders
+programı günde bir kez yeterli, kontenjan kayıt haftasında yarım saatte bir
+anlamlı, müfredat ise dönemde belki bir kez değişiyor (`cmd/curriculum -only
+BLG_LS` ile tek program test edilebilir). `cmd/quota` değişen bir şey yoksa
+dosyaya hiç dokunmuyor, o yüzden sakin dönemlerde boş commit birikmiyor.
 
 Siteyi yerelde açmak için:
 
@@ -83,6 +96,9 @@ docs/data/
   history/instructors/<harf>.json   # öğretim üyesi bazlı geçmiş
   quota/<dönem>.jsonl               # kontenjan zaman serisi, append-only
   quota/<dönem>.json                # türetilmiş dolma özeti
+  prereq/graph.json                 # katalogdaki her dersin önşart ilişkisi
+  curriculum/index.json             # lisans program listesi
+  curriculum/<PROGRAM_LS>.json      # bir programın dönem dönem müfredatı
 ```
 
 Dönem adları `2025-2026-guz` biçiminde. Branş bazlı bölmenin sebebi tarayıcıya 10
@@ -124,6 +140,30 @@ JSONL tutuyoruz ve her satıra yalnızca bir öncekine göre değişen CRN'leri 
 Kayıt dışı zamanlarda satır hiç yazılmıyor, kayıt haftasında yoğunlaşıyor. Yan
 fayda olarak git diff'i de temiz kalıyor, her ölçüm tek satır ekliyor.
 
+Önşart sayfasında (`OnsartAra`) OBS'nin kendi markup'ında gerçek bir hata var:
+"Ders Adı" hücresinin kapanış etiketi tamamen eksik, tarayıcı bunu otomatik
+kapatıyor ama eşleşen `<td>...</td>` çiftlerine bakan bir regex bunu bilmiyor
+ve iki hücreyi birleştiriyor. Çözüm eşleşen çiftlere değil `<td` konumlarına
+göre bölmek — kapanış etiketi olsun olmasın doğru sonucu veriyor.
+
+Müfredat sayfasında da benzer bir tuzak var: dönem başlıkları (`1. Yarıyıl`)
+`<h3>` değil `<h2>` etiketiyle geliyor; sayfanın kendi sekme başlıkları
+(Akademik Takvim, Ders Bilgileri...) `<h3>`. İkisini karıştırınca yanlış
+başlıklarla eşleşip sessizce boş bir müfredat üretiyorsunuz.
+
+Force-directed grafikte de ilginç bir hata çıktı: aynı `Path2D` üzerinde art
+arda `arc()` çağırmak, `moveTo` olmadan her dairenin bitişini bir sonrakinin
+başlangıcına düz bir çizgiyle bağlıyor. Sonuç, binlerce ayrı daire yerine tek
+bir "vitray" şekli. Her `arc()`'tan önce `moveTo` çağırmak şart.
+
+Fizikte de bir kararsızlık vardı: iki düğüm üst üste binince itme kuvveti
+sonsuza gidiyor ve simülasyon bir turda sayısal olarak patlıyor (pozisyonlar
+`1e+70` mertebesine fırlıyor). Çözüm minimum mesafe ve maksimum kuvvet/hız
+sınırlaması. Bir de yerleşme animasyonunu `requestAnimationFrame` ile
+zamanlamayın: sekme görünür değilken tarayıcılar rAF'ı süresiz askıya
+alabiliyor ve animasyon hiç bitmiyor. `setTimeout` ile, gerçekten geçen süreye
+göre uyarlanabilir yield kullanmak güvenilir.
+
 Son olarak, OBS tablosu 15 kolon değilse, sınav tablosu 10 kolon değilse ya da
 tarihsel dökümde beklenen başlıklar yoksa scraper hata verip duruyor. Sessizce
 bozuk veri yazmaktansa workflow'u kırmızıya düşürmek daha iyi.
@@ -141,6 +181,11 @@ bilgisi ancak bugünden sonraki taramalarda birikecek.
 
 Geçmiş dönemlerde seviye bilgisi (LS/LU) bugünkü branş listesinden tahmin ediliyor.
 O tarihten sonra kapanmış branşlarda boş kalabilir.
+
+Müfredat 128 lisans programından 106'sında çekilebildi; kalan 22'si (Siber
+Güvenlik Mühendisliği, Yapay Zeka gibi yeni açılan bazı programlar) OBS'de henüz
+yayınlanmış bir plan sürümüne sahip değil. Önlisans ve lisansüstü programlar
+şimdilik kapsam dışı.
 
 ## Uyarı
 

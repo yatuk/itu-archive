@@ -1,0 +1,1399 @@
+{
+ "programCode": "INSE_LS",
+ "programName": "İnşaat Mühendisliği (İngilizce) Lisans",
+ "faculty": "İnşaat Fakültesi",
+ "planLabel": "İnşaat Mühendisliği Lisans Programı (%100 İngilizce) 2021-2022 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 101E",
+      "name": "Technical Drawing"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 107E",
+      "name": "Int. to Prog. Lang. (Python)"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 111E",
+      "name": "Int. to Civil Eng. & Ethics"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 102E",
+      "name": "Statics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 112E",
+      "name": "Earth Science for Civil Engineers"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    },
+    {
+     "elective": {
+      "title": "2thSmstr ElectiveCourse(ITB)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "INS 110E",
+        "name": "Birth and Development of Modern Science"
+       },
+       {
+        "code": "INS 114E",
+        "name": "Development of Science and Technology"
+       },
+       {
+        "code": "INS 116E",
+        "name": "Introduction to Behaviour Science"
+       },
+       {
+        "code": "INS 480E",
+        "name": "Business Management"
+       },
+       {
+        "code": "INS 486E",
+        "name": "Creativity in Management"
+       },
+       {
+        "code": "INS 488E",
+        "name": "Origin and Evolution of the Universe"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "INS 210E",
+      "name": "Mathematics for Civil Engineers"
+     }
+    },
+    {
+     "course": {
+      "code": "DNK 201E",
+      "name": "Dynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 217E",
+      "name": "Strength of Materials I"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 215E",
+      "name": "Materials Science"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 202E",
+      "name": "Numerical Methods inCivil Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "AKM 204E",
+      "name": "Fluid Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 218E",
+      "name": "Strength of Materials II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 232E",
+      "name": "Surveying"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 230E",
+      "name": "Building Materials"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 113E",
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+     }
+    },
+    {
+     "elective": {
+      "title": "4th Semester Elective Course (TB)",
+      "options": [
+       {
+        "code": "BIO 301E",
+        "name": "Fundamentals of Biology"
+       },
+       {
+        "code": "INS 214E",
+        "name": "Partial Differential Equations"
+       },
+       {
+        "code": "INS 216E",
+        "name": "Analytical Mechanics"
+       },
+       {
+        "code": "INS 226E",
+        "name": "Fundamentals of Mathematical Modelling in Engineering"
+       },
+       {
+        "code": "INS 227E",
+        "name": "Theory of Complex Variables and Its Applications"
+       },
+       {
+        "code": "KIM 202E",
+        "name": "Physical Chemistry"
+       },
+       {
+        "code": "KIM 205E",
+        "name": "Organic Chemistry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "INS 360E",
+      "name": "Hydraulics"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 323E",
+      "name": "Theory of Structures I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 325E",
+      "name": "Railway Engineering"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 303E",
+      "name": "Soil Mechanics I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 305E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 301E",
+      "name": "Engineering Economics"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Course (TM)",
+      "options": [
+       {
+        "code": "INS 335E",
+        "name": "Advanced Strength of Materials"
+       },
+       {
+        "code": "INS 337E",
+        "name": "Mechanics of Inelastic Materia"
+       },
+       {
+        "code": "INS 339E",
+        "name": "Fracture Mechanics of Concrete"
+       },
+       {
+        "code": "INS 343E",
+        "name": "Durability of Concrete"
+       },
+       {
+        "code": "INS 345E",
+        "name": "Intr.toComp.Aid.Model.of Strc."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "INS 332E",
+      "name": "Foundation Engineering I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 338E",
+      "name": "Reinforced Concrete I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 344E",
+      "name": "Steel Structures I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 302E",
+      "name": "Highway Engineering"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 336E",
+      "name": "Theory of Structures II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 304E",
+      "name": "Construction Management"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 354E",
+      "name": "Hydrology"
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 433E",
+      "name": "Reinforced Concrete II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 405E",
+      "name": "Health&Safety in Construction"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 401E",
+      "name": "Water Resources"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 4901E",
+      "name": "Civil Eng. Design I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course I (MT)",
+      "options": [
+       {
+        "code": "INS 4031E",
+        "name": "Dynamics of Structures"
+       },
+       {
+        "code": "INS 4033E",
+        "name": "Site Layout"
+       },
+       {
+        "code": "INS 4035E",
+        "name": "Insulation&Protec.of Buildings"
+       },
+       {
+        "code": "INS 4037E",
+        "name": "Timber Structures"
+       },
+       {
+        "code": "INS 4039E",
+        "name": "Structural Fire Safety"
+       },
+       {
+        "code": "INS 4041E",
+        "name": "Design Manag.in Build.Constr."
+       },
+       {
+        "code": "INS 4043E",
+        "name": "Architectural Design"
+       },
+       {
+        "code": "INS 4045E",
+        "name": "Hydrologic Analysis and Design"
+       },
+       {
+        "code": "INS 4047E",
+        "name": "Structural Analysis and Design"
+       },
+       {
+        "code": "INS 4049E",
+        "name": "Soil Mechanics II"
+       },
+       {
+        "code": "INS 4051E",
+        "name": "Finite Element Methods"
+       },
+       {
+        "code": "INS 4053E",
+        "name": "Theory of Structures III"
+       },
+       {
+        "code": "INS 4055E",
+        "name": "Reinf.Conc.High-Rise Buildings"
+       },
+       {
+        "code": "INS 4057E",
+        "name": "River Hydraulics"
+       },
+       {
+        "code": "INS 4059E",
+        "name": "Traffic Engineering"
+       },
+       {
+        "code": "INS 4061E",
+        "name": "Construction of Tunneling"
+       },
+       {
+        "code": "INS 4063E",
+        "name": "Flexible Pavements Design"
+       },
+       {
+        "code": "INS 4065E",
+        "name": "Comp. Applications in Eng."
+       },
+       {
+        "code": "INS 4067E",
+        "name": "Energy Methods in Struct. Sys."
+       },
+       {
+        "code": "INS 4069E",
+        "name": "Renew.Energy Types&Mod.Tech."
+       },
+       {
+        "code": "INS 4071E",
+        "name": "One Dimensional Finite Elemen."
+       },
+       {
+        "code": "INS 4073E",
+        "name": "Foundation Engineering II"
+       },
+       {
+        "code": "INS 4075E",
+        "name": "Hydrologic Modeling"
+       },
+       {
+        "code": "INS 4077E",
+        "name": "Dsgn.of Water Supp.&Sewer Sys."
+       },
+       {
+        "code": "INS 4079E",
+        "name": "Health Mon.of Coast.&Oce.Stru."
+       },
+       {
+        "code": "INS 4081E",
+        "name": "3D Model. to Des. &Analy.Strc."
+       },
+       {
+        "code": "MYZ 303E",
+        "name": "Artificial Intelligence in Civil Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course II (MT)",
+      "options": [
+       {
+        "code": "INS 4031E",
+        "name": "Dynamics of Structures"
+       },
+       {
+        "code": "INS 4033E",
+        "name": "Site Layout"
+       },
+       {
+        "code": "INS 4035E",
+        "name": "Insulation&Protec.of Buildings"
+       },
+       {
+        "code": "INS 4037E",
+        "name": "Timber Structures"
+       },
+       {
+        "code": "INS 4039E",
+        "name": "Structural Fire Safety"
+       },
+       {
+        "code": "INS 4041E",
+        "name": "Design Manag.in Build.Constr."
+       },
+       {
+        "code": "INS 4043E",
+        "name": "Architectural Design"
+       },
+       {
+        "code": "INS 4045E",
+        "name": "Hydrologic Analysis and Design"
+       },
+       {
+        "code": "INS 4047E",
+        "name": "Structural Analysis and Design"
+       },
+       {
+        "code": "INS 4049E",
+        "name": "Soil Mechanics II"
+       },
+       {
+        "code": "INS 4051E",
+        "name": "Finite Element Methods"
+       },
+       {
+        "code": "INS 4053E",
+        "name": "Theory of Structures III"
+       },
+       {
+        "code": "INS 4055E",
+        "name": "Reinf.Conc.High-Rise Buildings"
+       },
+       {
+        "code": "INS 4057E",
+        "name": "River Hydraulics"
+       },
+       {
+        "code": "INS 4059E",
+        "name": "Traffic Engineering"
+       },
+       {
+        "code": "INS 4061E",
+        "name": "Construction of Tunneling"
+       },
+       {
+        "code": "INS 4063E",
+        "name": "Flexible Pavements Design"
+       },
+       {
+        "code": "INS 4065E",
+        "name": "Comp. Applications in Eng."
+       },
+       {
+        "code": "INS 4067E",
+        "name": "Energy Methods in Struct. Sys."
+       },
+       {
+        "code": "INS 4069E",
+        "name": "Renew.Energy Types&Mod.Tech."
+       },
+       {
+        "code": "INS 4071E",
+        "name": "One Dimensional Finite Elemen."
+       },
+       {
+        "code": "INS 4073E",
+        "name": "Foundation Engineering II"
+       },
+       {
+        "code": "INS 4075E",
+        "name": "Hydrologic Modeling"
+       },
+       {
+        "code": "INS 4077E",
+        "name": "Dsgn.of Water Supp.&Sewer Sys."
+       },
+       {
+        "code": "INS 4079E",
+        "name": "Health Mon.of Coast.&Oce.Stru."
+       },
+       {
+        "code": "INS 4081E",
+        "name": "3D Model. to Des. &Analy.Strc."
+       },
+       {
+        "code": "MYZ 303E",
+        "name": "Artificial Intelligence in Civil Engineering"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 4902E",
+      "name": "Civil Eng. Design II"
+     }
+    },
+    {
+     "course": {
+      "code": "HUK 201",
+      "name": "İş Hukuku"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 462E",
+      "name": "Engineering Ethics"
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course I (MT)",
+      "options": [
+       {
+        "code": "CEV 476E",
+        "name": "Water Supply&Env.Sanitation II"
+       },
+       {
+        "code": "INS 4032E",
+        "name": "Oceanography"
+       },
+       {
+        "code": "INS 4034E",
+        "name": "Steel Bridges"
+       },
+       {
+        "code": "INS 4036E",
+        "name": "Fundamentals of Earthquake Eng"
+       },
+       {
+        "code": "INS 4038E",
+        "name": "Reinforced Concrete Structures"
+       },
+       {
+        "code": "INS 4040E",
+        "name": "Irrigation and Drainage"
+       },
+       {
+        "code": "INS 4042E",
+        "name": "Dams"
+       },
+       {
+        "code": "INS 4044E",
+        "name": "Plastic Dsgn of Steel Strctrs"
+       },
+       {
+        "code": "INS 4046E",
+        "name": "Tunnelling Design &Consruction"
+       },
+       {
+        "code": "INS 4048E",
+        "name": "Geotechnical Earthquake Eng"
+       },
+       {
+        "code": "INS 4050E",
+        "name": "Spec. Topics in Theo.of Struc."
+       },
+       {
+        "code": "INS 4052E",
+        "name": "Reinforced Concrete Found."
+       },
+       {
+        "code": "INS 4054E",
+        "name": "Steel Structures II"
+       },
+       {
+        "code": "INS 4056E",
+        "name": "Design of Steel Structures"
+       },
+       {
+        "code": "INS 4058E",
+        "name": "Advanced Concrete Technology"
+       },
+       {
+        "code": "INS 4060E",
+        "name": "Hydroelectric Power Plants"
+       },
+       {
+        "code": "INS 4062E",
+        "name": "Reinforced Concrete III"
+       },
+       {
+        "code": "INS 4064E",
+        "name": "Comp.Aided Analy.in Struc.Eng."
+       },
+       {
+        "code": "INS 4066E",
+        "name": "Formwork in Reinf.Concr.Struc."
+       },
+       {
+        "code": "INS 4068E",
+        "name": "Earthquake Resist.Des.ofStruc."
+       },
+       {
+        "code": "INS 4070E",
+        "name": "Prestressed Concrete"
+       },
+       {
+        "code": "INS 4072E",
+        "name": "Substructures in Transport."
+       },
+       {
+        "code": "INS 4074E",
+        "name": "Concrete Pavement Design"
+       },
+       {
+        "code": "INS 4076E",
+        "name": "Intr.to Environmental Geotech."
+       },
+       {
+        "code": "INS 4078E",
+        "name": "Juridical Aspects of Cons.Man."
+       },
+       {
+        "code": "INS 4080E",
+        "name": "Multi-story Steel Buildings"
+       },
+       {
+        "code": "INS 4082E",
+        "name": "Fatigue of Metal Struct. Memb."
+       },
+       {
+        "code": "INS 4084E",
+        "name": "Coastal and Harbor Structures"
+       },
+       {
+        "code": "INS 4086E",
+        "name": "Experimental Hydraulics"
+       },
+       {
+        "code": "MYZ 303E",
+        "name": "Artificial Intelligence in Civil Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course II (MT)",
+      "options": [
+       {
+        "code": "CEV 476E",
+        "name": "Water Supply&Env.Sanitation II"
+       },
+       {
+        "code": "INS 4032E",
+        "name": "Oceanography"
+       },
+       {
+        "code": "INS 4034E",
+        "name": "Steel Bridges"
+       },
+       {
+        "code": "INS 4036E",
+        "name": "Fundamentals of Earthquake Eng"
+       },
+       {
+        "code": "INS 4038E",
+        "name": "Reinforced Concrete Structures"
+       },
+       {
+        "code": "INS 4040E",
+        "name": "Irrigation and Drainage"
+       },
+       {
+        "code": "INS 4042E",
+        "name": "Dams"
+       },
+       {
+        "code": "INS 4044E",
+        "name": "Plastic Dsgn of Steel Strctrs"
+       },
+       {
+        "code": "INS 4046E",
+        "name": "Tunnelling Design &Consruction"
+       },
+       {
+        "code": "INS 4048E",
+        "name": "Geotechnical Earthquake Eng"
+       },
+       {
+        "code": "INS 4050E",
+        "name": "Spec. Topics in Theo.of Struc."
+       },
+       {
+        "code": "INS 4052E",
+        "name": "Reinforced Concrete Found."
+       },
+       {
+        "code": "INS 4054E",
+        "name": "Steel Structures II"
+       },
+       {
+        "code": "INS 4056E",
+        "name": "Design of Steel Structures"
+       },
+       {
+        "code": "INS 4058E",
+        "name": "Advanced Concrete Technology"
+       },
+       {
+        "code": "INS 4060E",
+        "name": "Hydroelectric Power Plants"
+       },
+       {
+        "code": "INS 4062E",
+        "name": "Reinforced Concrete III"
+       },
+       {
+        "code": "INS 4064E",
+        "name": "Comp.Aided Analy.in Struc.Eng."
+       },
+       {
+        "code": "INS 4066E",
+        "name": "Formwork in Reinf.Concr.Struc."
+       },
+       {
+        "code": "INS 4068E",
+        "name": "Earthquake Resist.Des.ofStruc."
+       },
+       {
+        "code": "INS 4070E",
+        "name": "Prestressed Concrete"
+       },
+       {
+        "code": "INS 4072E",
+        "name": "Substructures in Transport."
+       },
+       {
+        "code": "INS 4074E",
+        "name": "Concrete Pavement Design"
+       },
+       {
+        "code": "INS 4076E",
+        "name": "Intr.to Environmental Geotech."
+       },
+       {
+        "code": "INS 4078E",
+        "name": "Juridical Aspects of Cons.Man."
+       },
+       {
+        "code": "INS 4080E",
+        "name": "Multi-story Steel Buildings"
+       },
+       {
+        "code": "INS 4082E",
+        "name": "Fatigue of Metal Struct. Memb."
+       },
+       {
+        "code": "INS 4084E",
+        "name": "Coastal and Harbor Structures"
+       },
+       {
+        "code": "INS 4086E",
+        "name": "Experimental Hydraulics"
+       },
+       {
+        "code": "MYZ 303E",
+        "name": "Artificial Intelligence in Civil Engineering"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

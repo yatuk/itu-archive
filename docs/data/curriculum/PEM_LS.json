@@ -1,0 +1,1334 @@
+{
+ "programCode": "PEM_LS",
+ "programName": "Peyzaj Mimarlığı Lisans",
+ "faculty": "Mimarlık Fakültesi",
+ "planLabel": "Peyzaj Mimarlığı Lisans Programı",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MIM 121E",
+      "name": "Basic Design and Visual Arts"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "MIM 111",
+      "name": "Arch.Design I-Rendering Techni"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 131",
+      "name": "Peyzaj Mimarlığına Giriş"
+     }
+    },
+    {
+     "elective": {
+      "title": "1.yySınırlıSeçimDersi(ITB)",
+      "options": [
+       {
+        "code": "EUT 222E",
+        "name": "History of Art"
+       },
+       {
+        "code": "EUT 222",
+        "name": "Sanat Tarihi"
+       },
+       {
+        "code": "EUT 223",
+        "name": "Sosyal Psikoloji"
+       },
+       {
+        "code": "ICM 121E",
+        "name": "History of Art and Culture"
+       },
+       {
+        "code": "ICM 121",
+        "name": "Sanat ve Kültür Tarihi"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 205",
+        "name": "Felsefe"
+       },
+       {
+        "code": "MIM 223E",
+        "name": "Social Psychology"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course I",
+      "options": [
+       {
+        "code": "ING 101",
+        "name": "English I"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "PEM 132",
+      "name": "Bitki Materyali I"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 152",
+      "name": "Doğal Sistemler ile Tasarım"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 101E",
+      "name": "Int to Comp and Inf Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "MIM 112",
+      "name": "Mimari Proje II"
+     }
+    },
+    {
+     "course": {
+      "code": "MIM 142E",
+      "name": "Perspective"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 124",
+      "name": "His.ofLandscape Architecture I"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course II",
+      "options": [
+       {
+        "code": "ING 102",
+        "name": "English II"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "PEM 231",
+      "name": "Bitki Materyali II"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 251E",
+      "name": "Introduction to Geographical Information Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "MIM 211",
+      "name": "Mimari Proje III"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 241",
+      "name": "Peyzaj Mimarlığı Kuramı"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 223",
+      "name": "Peyzaj Mimarlığı Tarihi II"
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "PEM 232",
+      "name": "Bitki Materyali III"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 252E",
+      "name": "Landscape Construction & Materials"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 242",
+      "name": "Landscape Eco.&Its Ref.onDsg."
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 212",
+      "name": "Peyzaj Mimarlığı Projesi I"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 222",
+      "name": "Toprak Bilgisi"
+     }
+    },
+    {
+     "elective": {
+      "title": "4.yy Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "GSB 313",
+        "name": "Mimarlıkta Desen"
+       },
+       {
+        "code": "GSB 323",
+        "name": "Fotoğraf ve Mimarlık"
+       },
+       {
+        "code": "GSB 333",
+        "name": "Doğaçlama Oyun ve Oynanış"
+       },
+       {
+        "code": "GSB 343",
+        "name": "Görsel Analiz"
+       },
+       {
+        "code": "GSB 353",
+        "name": "Photoshop 5.5 ile Digital Gör"
+       },
+       {
+        "code": "GSB 363",
+        "name": "Mimarlıkta Seramik Uygulamalar"
+       },
+       {
+        "code": "MIM 252",
+        "name": "Mimari Tasarım Kuramları"
+       },
+       {
+        "code": "MIM 377E",
+        "name": "Cities and Architecture"
+       },
+       {
+        "code": "PEM 410",
+        "name": "Peyzaj ve Sanat"
+       },
+       {
+        "code": "PEM 431E",
+        "name": "Experimental Studies on Place & Desing"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "PEM 331",
+      "name": "Ağaçlandırma ve Dikim Teknik."
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 341",
+      "name": "Bitkilendirme Tasarımı"
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201E",
+      "name": "Economics"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 311",
+      "name": "Peyzaj Mimarlığı Projesi II"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Elective Course (MT)",
+      "options": [
+       {
+        "code": "MIM 377E",
+        "name": "Cities and Architecture"
+       },
+       {
+        "code": "MIM 415E",
+        "name": "Housing Design Philosophy of Contemporary Architecture"
+       },
+       {
+        "code": "MIM 425E",
+        "name": "Architecture Today"
+       },
+       {
+        "code": "MIM 435E",
+        "name": "Mdrn Cncpts of Archtctrl Consv"
+       },
+       {
+        "code": "PEM 335E",
+        "name": "Urban Visual Analysis"
+       },
+       {
+        "code": "PEM 345E",
+        "name": "Computer Application in Planning and Design"
+       },
+       {
+        "code": "PEM 431E",
+        "name": "Experimental Studies on Place & Desing"
+       },
+       {
+        "code": "PEM 433E",
+        "name": "Topics in Landscape Urbanism"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "PEM 332",
+      "name": "Kentsel Peyzaj Planlaması"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 322",
+      "name": "Kentsel Tasarım"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 342",
+      "name": "Kırsal Peyzaj Planlaması"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 352E",
+      "name": "Lanscape Engineering"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 312",
+      "name": "Peyzaj Mimarlığı Projesi III"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Elective Course (MT)",
+      "options": [
+       {
+        "code": "EUT 448E",
+        "name": "Visual Design"
+       },
+       {
+        "code": "MIM 252E",
+        "name": "Theories of Architectural Dsgn"
+       },
+       {
+        "code": "MIM 345E",
+        "name": "Architectural Theory and Modernism"
+       },
+       {
+        "code": "MIM 377E",
+        "name": "Cities and Architecture"
+       },
+       {
+        "code": "MIM 420E",
+        "name": "Logic and Theory of Design"
+       },
+       {
+        "code": "MIM 442E",
+        "name": "Det.Dsgn.Meth.ofContemp.Arch."
+       },
+       {
+        "code": "PEM 320E",
+        "name": "Computer Aided Landscape Architecture"
+       },
+       {
+        "code": "PEM 330E",
+        "name": "Infrastructure Planning and Development"
+       },
+       {
+        "code": "PEM 415E",
+        "name": "Environmental Aesthetics"
+       },
+       {
+        "code": "PEM 425E",
+        "name": "Land Resource Information Systems"
+       },
+       {
+        "code": "PEM 431E",
+        "name": "Experimental Studies on Place & Desing"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 411",
+      "name": "Peyzaj Mimarlığı Projesi IV"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 421",
+      "name": "Peyzaj Uygulama Teknikleri"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Elective Course (MT)",
+      "options": [
+       {
+        "code": "EUT 449E",
+        "name": "20th Cen.Vis.Arts:Conc.Dev.in Europe Inc. Türkiye and the USA"
+       },
+       {
+        "code": "MIM 377E",
+        "name": "Cities and Architecture"
+       },
+       {
+        "code": "MIM 415E",
+        "name": "Housing Design Philosophy of Contemporary Architecture"
+       },
+       {
+        "code": "MIM 425E",
+        "name": "Architecture Today"
+       },
+       {
+        "code": "MIM 435E",
+        "name": "Mdrn Cncpts of Archtctrl Consv"
+       },
+       {
+        "code": "PEM 330E",
+        "name": "Infrastructure Planning and Development"
+       },
+       {
+        "code": "PEM 335E",
+        "name": "Urban Visual Analysis"
+       },
+       {
+        "code": "PEM 345E",
+        "name": "Computer Application in Planning and Design"
+       },
+       {
+        "code": "PEM 350E",
+        "name": "Urban Design and Preservation"
+       },
+       {
+        "code": "PEM 431E",
+        "name": "Experimental Studies on Place & Desing"
+       },
+       {
+        "code": "PEM 433E",
+        "name": "Topics in Landscape Urbanism"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ICM 121",
+        "name": "Sanat ve Kültür Tarihi"
+       },
+       {
+        "code": "ICM 121E",
+        "name": "History of Art and Culture"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 020",
+        "name": "Modernitenin Oluşumu"
+       },
+       {
+        "code": "ITB 037",
+        "name": "Bilgi, Dil ve Mantık"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 095",
+        "name": "Teknoloji, Politika ve Hukuk"
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 151",
+        "name": "İnsan Kaynakları Yönetimi"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 171",
+        "name": "Bilim, Teknoloji ve Toplum"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 205",
+        "name": "Felsefe"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 222",
+        "name": "Kent ve Toplum"
+       },
+       {
+        "code": "ITB 224",
+        "name": "Çevre ve Toplum"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 227",
+        "name": "Siyaset Teorisi"
+       },
+       {
+        "code": "ITB 228",
+        "name": "Toplumsal Cinsiyet Çalışmaları"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230",
+        "name": "Afet Bilinci"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       },
+       {
+        "code": "PEM 340E",
+        "name": "Urban Sociology"
+       },
+       {
+        "code": "PEM 427",
+        "name": "Doğada Sanat"
+       },
+       {
+        "code": "PEM 429",
+        "name": "Peyzaj ve Hukuk"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "EUT 339E",
+        "name": "Basic Design Principles of Lighting Luminaries"
+       },
+       {
+        "code": "EUT 339",
+        "name": "Aydınlatma Aygıtı Tasarımının Temel İlkeleri"
+       },
+       {
+        "code": "EUT 433",
+        "name": "Kent Mobilyaları"
+       },
+       {
+        "code": "EUT 447",
+        "name": "Etkileşimli Tasarımda Yaratıcılık"
+       },
+       {
+        "code": "GSB 313",
+        "name": "Mimarlıkta Desen"
+       },
+       {
+        "code": "GSB 323",
+        "name": "Fotoğraf ve Mimarlık"
+       },
+       {
+        "code": "GSB 333",
+        "name": "Doğaçlama Oyun ve Oynanış"
+       },
+       {
+        "code": "GSB 343",
+        "name": "Görsel Analiz"
+       },
+       {
+        "code": "GSB 353",
+        "name": "Photoshop 5.5 ile Digital Gör"
+       },
+       {
+        "code": "GSB 363",
+        "name": "Mimarlıkta Seramik Uygulamalar"
+       },
+       {
+        "code": "ICM 317",
+        "name": "Çevresel Psikoloji"
+       },
+       {
+        "code": "ICM 323",
+        "name": "Renk Kuramı"
+       },
+       {
+        "code": "ICM 327",
+        "name": "Tesisat Sis.Analz.ve Yenil.İlk"
+       },
+       {
+        "code": "ICM 329",
+        "name": "İç Mimarlıkta Tekstil"
+       },
+       {
+        "code": "ICM 333",
+        "name": "Tasarım Kültürü"
+       },
+       {
+        "code": "ICM 339",
+        "name": "İç Mimarlıkta Görsel Anlatım"
+       },
+       {
+        "code": "MIM 324",
+        "name": "Mimari ve Kentsel Mekan Kimliği veYeni Tasarımlar"
+       },
+       {
+        "code": "MIM 413",
+        "name": "20. Yüzyıl Sanatı"
+       },
+       {
+        "code": "MIM 443",
+        "name": "Prefabrike Elemanlarla Tasarlama"
+       },
+       {
+        "code": "MIM 457",
+        "name": "Konut Planlaması & Tasrm Sorn"
+       },
+       {
+        "code": "MIM 459",
+        "name": "Mimari Tasarımda Düşünsel Boyut"
+       },
+       {
+        "code": "MIM 461",
+        "name": "Erişilebilirlik&Kapsayıcı Tas."
+       },
+       {
+        "code": "MIM 463",
+        "name": "Mimari Kompozisyonda Geometri"
+       },
+       {
+        "code": "MIM 497",
+        "name": "Yapı Üretiminde Süre Yönetimi"
+       },
+       {
+        "code": "PEM 317",
+        "name": "Kent Mobilyaları ve Mekan"
+       },
+       {
+        "code": "PEM 327",
+        "name": "Peyzaj Mimarlığında İleri Anlatım Teknikleri"
+       },
+       {
+        "code": "SBP 477",
+        "name": "Turizm ve Çevre"
+       },
+       {
+        "code": "SBP 487",
+        "name": "Şehirsel Mekan Kurg Pln & Tsrm"
+       },
+       {
+        "code": "SBP 497",
+        "name": "Kırsal Yerleşmeler ve Sorunlar"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "PEM 492",
+      "name": "Bitirme Çalışması"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Elective Course (MT)",
+      "options": [
+       {
+        "code": "EUT 448E",
+        "name": "Visual Design"
+       },
+       {
+        "code": "MIM 252E",
+        "name": "Theories of Architectural Dsgn"
+       },
+       {
+        "code": "MIM 345E",
+        "name": "Architectural Theory and Modernism"
+       },
+       {
+        "code": "MIM 377E",
+        "name": "Cities and Architecture"
+       },
+       {
+        "code": "MIM 420E",
+        "name": "Logic and Theory of Design"
+       },
+       {
+        "code": "MIM 442E",
+        "name": "Det.Dsgn.Meth.ofContemp.Arch."
+       },
+       {
+        "code": "MIM 480E",
+        "name": "The Changing Workplace"
+       },
+       {
+        "code": "PEM 320E",
+        "name": "Computer Aided Landscape Architecture"
+       },
+       {
+        "code": "PEM 330E",
+        "name": "Infrastructure Planning and Development"
+       },
+       {
+        "code": "PEM 415E",
+        "name": "Environmental Aesthetics"
+       },
+       {
+        "code": "PEM 425E",
+        "name": "Land Resource Information Systems"
+       },
+       {
+        "code": "PEM 431E",
+        "name": "Experimental Studies on Place & Desing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "ICM 317",
+        "name": "Çevresel Psikoloji"
+       },
+       {
+        "code": "ICM 319",
+        "name": "Mimari Üsluplar"
+       },
+       {
+        "code": "ICM 323",
+        "name": "Renk Kuramı"
+       },
+       {
+        "code": "ICM 327",
+        "name": "Tesisat Sis.Analz.ve Yenil.İlk"
+       },
+       {
+        "code": "ICM 329",
+        "name": "İç Mimarlıkta Tekstil"
+       },
+       {
+        "code": "ICM 333",
+        "name": "Tasarım Kültürü"
+       },
+       {
+        "code": "ICM 337",
+        "name": "Uygulamalı Sanat Atölyeleri"
+       },
+       {
+        "code": "ICM 339",
+        "name": "İç Mimarlıkta Görsel Anlatım"
+       },
+       {
+        "code": "MIM 252",
+        "name": "Mimari Tasarım Kuramları"
+       },
+       {
+        "code": "MIM 324",
+        "name": "Mimari ve Kentsel Mekan Kimliği veYeni Tasarımlar"
+       },
+       {
+        "code": "MIM 334",
+        "name": "Mimarlik ve Psikoloji"
+       },
+       {
+        "code": "MIM 356",
+        "name": "Fotograf"
+       },
+       {
+        "code": "MIM 376",
+        "name": "Bilgisayar Yardımı ile Yerleşme ve Bina Gölge Analizi"
+       },
+       {
+        "code": "MIM 392",
+        "name": "Mimarlık Konuları"
+       },
+       {
+        "code": "MIM 438",
+        "name": "Aletli Rölöve"
+       },
+       {
+        "code": "PEM 410",
+        "name": "Peyzaj ve Sanat"
+       },
+       {
+        "code": "SBP 418",
+        "name": "Planlamaya Katılım"
+       },
+       {
+        "code": "SBP 436E",
+        "name": "Univ.Dsgn.for Urban Environm."
+       },
+       {
+        "code": "SBP 448",
+        "name": "Kentsel Kimlik ve İmge"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

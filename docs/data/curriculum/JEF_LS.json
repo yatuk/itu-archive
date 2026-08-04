@@ -1,0 +1,1194 @@
+{
+ "programCode": "JEF_LS",
+ "programName": "Jeofizik Mühendisliği Lisans",
+ "faculty": "Maden Fakültesi",
+ "planLabel": "Jeofizik Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BIL 112E",
+      "name": "Intr.to Prog.Language(FORTRAN)"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 111",
+      "name": "Jeofizik Mühendisliğine Giriş"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103",
+      "name": "Matematik I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "JEO 112E",
+      "name": "General Geology"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 101",
+      "name": "Genel Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "JEO 121",
+      "name": "Yer Bilimlerinde Tas. Geometri"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104",
+      "name": "Matematik II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 210",
+      "name": "Mühendislik Matematiği"
+     }
+    },
+    {
+     "course": {
+      "code": "MEK 205",
+      "name": "Mühendislik Mekaniği"
+     }
+    },
+    {
+     "course": {
+      "code": "MDN 271E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 207E",
+      "name": "Physics of the Earth"
+     }
+    },
+    {
+     "course": {
+      "code": "ETK 101",
+      "name": "Mühendislik Etiği"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Seçime Bağlı Ders (GE)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 011",
+        "name": "Bilgi Kuramları"
+       },
+       {
+        "code": "ITB 012",
+        "name": "TC'nin Yönetim Yapısı"
+       },
+       {
+        "code": "ITB 026",
+        "name": "Türkiye'de MdnTarihi & Sys Akm"
+       },
+       {
+        "code": "ITB 027E",
+        "name": "Estr/Invl in 5 Works by Campus"
+       },
+       {
+        "code": "ITB 075",
+        "name": "Seçmeli Fransızca"
+       },
+       {
+        "code": "ITB 076",
+        "name": "Sanatın Sosyal Tarihi"
+       },
+       {
+        "code": "ITB 085",
+        "name": "Sinema Tarihi ve Estetiği"
+       },
+       {
+        "code": "ITB 086",
+        "name": "Osm İmparatorluğu'nda Altyapı"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 093",
+        "name": "Modern Türkiye'nin Temelleri"
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 142",
+        "name": "Uygulamalı Etik"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 157",
+        "name": "Bilimin İstanbul'daki Tarihi"
+       },
+       {
+        "code": "ITB 158",
+        "name": "Kontr ve Otoms Sist Tarihçesi"
+       },
+       {
+        "code": "ITB 167E",
+        "name": "The Birth&Devl Modern City"
+       },
+       {
+        "code": "ITB 168E",
+        "name": "Philosophy of Technology"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 172E",
+        "name": "The Historian in the Cinema"
+       },
+       {
+        "code": "ITB 173E",
+        "name": "Frege Found. of Arithmetic"
+       },
+       {
+        "code": "ITB 175",
+        "name": "Küreselleşme ve Kent"
+       },
+       {
+        "code": "ITB 176",
+        "name": "Türkiye'de Toplumsal Hafıza"
+       },
+       {
+        "code": "ITB 177",
+        "name": "19.yy İstanbul'unda Tic. ve Mi"
+       },
+       {
+        "code": "ITB 178E",
+        "name": "Democracy&Modern Media:Int.Per"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 210",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 210E",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 235",
+        "name": "Türkiye ve Avrupa Birliği"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "JEF 212E",
+      "name": "Data Processing"
+     }
+    },
+    {
+     "course": {
+      "code": "MDN 210",
+      "name": "Mineraloji ve Petrografi"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 202E",
+      "name": "Numerical Methods"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 222",
+      "name": "Arama Jeofiziğinin Temelleri"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 208E",
+      "name": "Comp. Appl. in Geophy."
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "JEF 321",
+      "name": "Elektrik Prospeksiyon"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 325",
+      "name": "Jeofizikte Modelleme"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 311E",
+      "name": "Seismology"
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201",
+      "name": "Ekonomi"
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders I (TM)",
+      "options": [
+       {
+        "code": "AKM 204E",
+        "name": "Fluid Mechanics"
+       },
+       {
+        "code": "MAK 311E",
+        "name": "Heat Transfer"
+       },
+       {
+        "code": "PET 212E",
+        "name": "Rock Properties"
+       },
+       {
+        "code": "STA 204E",
+        "name": "Statics&Strength of Materials"
+       },
+       {
+        "code": "TER 201E",
+        "name": "Thermodynamics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders II (TB)",
+      "options": [
+       {
+        "code": "DEN 345E",
+        "name": "Dynamics of Marine Ecosystems"
+       },
+       {
+        "code": "FIZ 201",
+        "name": "Modern Fizik"
+       },
+       {
+        "code": "FIZ 201E",
+        "name": "Modern Physics"
+       },
+       {
+        "code": "JEF 335E",
+        "name": "Readings in Geophysics"
+       },
+       {
+        "code": "KIM 202",
+        "name": "Fiziksel Kimya"
+       },
+       {
+        "code": "KIM 204",
+        "name": "Genel Kimya II"
+       },
+       {
+        "code": "KIM 207",
+        "name": "İnorganik Kimya"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "JEF 322",
+      "name": "Jeomanyetizma"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 334",
+      "name": "Sismik Prospeksiyon"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 331",
+      "name": "Elektromanyetik Prospeksiyon"
+     }
+    },
+    {
+     "course": {
+      "code": "JEO 315",
+      "name": "Jeolojide Arz. ve Hrta Tekn."
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 346",
+      "name": "Jeofizikte Ölçmeler"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders II (GE/SNT)",
+      "options": [
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       },
+       {
+        "code": "SNT 229",
+        "name": "Türkiye'de Popüler Müzik Tarihinden İzlekler"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "JEF 451",
+      "name": "Gravite&Manyetik Prospeksiyon"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 4901",
+      "name": "Jeofizik Müh.Tasarım Projesi I"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 425",
+      "name": "Mühendislik Jeofiziği"
+     }
+    },
+    {
+     "course": {
+      "code": "JEO 222",
+      "name": "Jeomekanik"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "JEO 254",
+        "name": "Yapısal Jeolojiye Giriş"
+       },
+       {
+        "code": "JEO 325",
+        "name": "Jeolojide Bilgisayar Uygul"
+       },
+       {
+        "code": "JEO 409",
+        "name": "Türkiye Jeolojisi"
+       },
+       {
+        "code": "JEO 438",
+        "name": "Çevre Jeolojisi"
+       },
+       {
+        "code": "JEO 444E",
+        "name": "Marine Geology"
+       },
+       {
+        "code": "JEO 445E",
+        "name": "Petroleum and Natural Gas Geo."
+       },
+       {
+        "code": "MYZ 301E",
+        "name": "Introduction to Artificial Intelligence for Engineering"
+       },
+       {
+        "code": "MYZ 301",
+        "name": "Mühendislik için Yapay Zekaya Giriş"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 4902",
+      "name": "Jeofizik Müh.Tasarım Proje. II"
+     }
+    },
+    {
+     "course": {
+      "code": "JEF 446E",
+      "name": "Engineering Seismology"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "JEF 360E",
+        "name": "Geodynamics"
+       },
+       {
+        "code": "JEF 361E",
+        "name": "Marine Geophysics"
+       },
+       {
+        "code": "JEF 362E",
+        "name": "Groundwater Exploration"
+       },
+       {
+        "code": "JEF 363E",
+        "name": "Hydrocarbon Geophysics"
+       },
+       {
+        "code": "JEF 364E",
+        "name": "Seismotectonics"
+       },
+       {
+        "code": "JEF 454E",
+        "name": "Machine Learning in Geophysical Engineering"
+       },
+       {
+        "code": "MYZ 301E",
+        "name": "Introduction to Artificial Intelligence for Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "JEF 365",
+        "name": "Sondaj Tekniği"
+       },
+       {
+        "code": "JEF 366",
+        "name": "Kuyu Jeofiziği"
+       },
+       {
+        "code": "JEF 367",
+        "name": "Maden Jeofiziği"
+       },
+       {
+        "code": "JEF 368",
+        "name": "Jeotermal Aramalar"
+       },
+       {
+        "code": "JEF 369",
+        "name": "Çevre Jeofiziği"
+       },
+       {
+        "code": "JEF 448",
+        "name": "Yer Radarı"
+       },
+       {
+        "code": "MYZ 301",
+        "name": "Mühendislik için Yapay Zekaya Giriş"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders III (MT)",
+      "options": [
+       {
+        "code": "JEF 370",
+        "name": "Sismik Yorumlama"
+       },
+       {
+        "code": "JEF 371",
+        "name": "Paleomanyetizma"
+       },
+       {
+        "code": "JEF 372",
+        "name": "Arkeo-Jeofizik"
+       },
+       {
+        "code": "JEF 448",
+        "name": "Yer Radarı"
+       },
+       {
+        "code": "MYZ 301",
+        "name": "Mühendislik için Yapay Zekaya Giriş"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

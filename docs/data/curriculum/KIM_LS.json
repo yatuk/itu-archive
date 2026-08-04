@@ -1,0 +1,1425 @@
+{
+ "programCode": "KIM_LS",
+ "programName": "Kimya Lisans",
+ "faculty": "Fen - Edebiyat Fakültesi",
+ "planLabel": "Kimya Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 111",
+      "name": "Genel Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 111L",
+      "name": "Genel Kimya I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103",
+      "name": "Matematik I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 113",
+      "name": "Kimyaya Giriş ve Etik"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 114",
+      "name": "Genel Kimya II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 114L",
+      "name": "Genel Kimya II Lab."
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104",
+      "name": "Matematik II"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 100E",
+      "name": "Intr.to Prog.Language(PYTHON)"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 211E",
+      "name": "Analytical Chemistry"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 271",
+      "name": "Kimyacılar için Matematik"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 211L",
+      "name": "Analitik Kimya Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 223",
+      "name": "Anorganik Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 252",
+      "name": "Kimyasal Termodinamik"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 224E",
+      "name": "Inorganic Chemistry II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 223L",
+      "name": "Anorganik Kimya Lab."
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 262E",
+      "name": "Int. Quantum Chemistry"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 231",
+      "name": "Organik Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 311",
+      "name": "Fiziksel Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 231L",
+      "name": "Organik Kimya Lab. I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 232",
+      "name": "Organik Kimya II"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 326E",
+      "name": "Introduction to Biochemistry"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Course (ITB)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 235",
+        "name": "Türkiye ve Avrupa Birliği"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 232L",
+      "name": "Organik Kimya Lab. II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 212",
+      "name": "Enstrumental Analitik Yönteml"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 312",
+      "name": "Fiziksel Kimya II"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 311L",
+      "name": "Fiziksel Kimya Lab. I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 212L",
+      "name": "Enstrumental Analitik Yön.Lab."
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders (MT)",
+      "options": [
+       {
+        "code": "KIM 210",
+        "name": "Polimer Kimyasına Giriş"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 314",
+        "name": "Tekstil Boyar Maddeleri"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 316",
+        "name": "Yakıt Kimyası"
+       },
+       {
+        "code": "KIM 318",
+        "name": "Kolloid Kimyası"
+       },
+       {
+        "code": "KIM 318E",
+        "name": "Colloid Chemistry"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 320",
+        "name": "Organometal Kimyasına Giriş"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 324",
+        "name": "Adli Kimya"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 328",
+        "name": "Biyokimya II"
+       },
+       {
+        "code": "KIM 328E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "KIM 413",
+        "name": "İlaç Kimyası"
+       },
+       {
+        "code": "KIM 414",
+        "name": "Gıda Kimyası"
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 415",
+        "name": "Yüzey Aktif Maddeler"
+       },
+       {
+        "code": "KIM 416",
+        "name": "Organik Petrokimya"
+       },
+       {
+        "code": "KIM 418",
+        "name": "Polimerlerin Fiziksel Kimyası"
+       },
+       {
+        "code": "KIM 425",
+        "name": "Su Kimyası"
+       },
+       {
+        "code": "KIM 427",
+        "name": "Seramik Kimyası"
+       },
+       {
+        "code": "KIM 427E",
+        "name": "Ceramic Chemistry"
+       },
+       {
+        "code": "KIM 429",
+        "name": "Yeşil Kimya"
+       },
+       {
+        "code": "KIM 435",
+        "name": "Çevre Kimyası I"
+       },
+       {
+        "code": "KIM 436",
+        "name": "Çevre Kimyası II"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       },
+       {
+        "code": "KIM 450",
+        "name": "Elektrokimya"
+       },
+       {
+        "code": "KIM 450E",
+        "name": "Electrochemistry"
+       },
+       {
+        "code": "KIM 454E",
+        "name": "Intr. to Computational Chem."
+       },
+       {
+        "code": "MYZ 311E",
+        "name": "Artificial Intelligence and Machine Learning in Chemistry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 4901",
+      "name": "Araştırma Projesi I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 312L",
+      "name": "Fiziksel Kimya Lab. II"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Sınırlı Seçimli Ders I (MT)",
+      "options": [
+       {
+        "code": "KIM 422",
+        "name": "Endüstriyel Kimya"
+       },
+       {
+        "code": "KIM 422E",
+        "name": "Industrial Chemistry"
+       },
+       {
+        "code": "KIM 471",
+        "name": "Organik Kimya III"
+       },
+       {
+        "code": "KIM 471E",
+        "name": "Organic Chemistry III"
+       },
+       {
+        "code": "KIM 473",
+        "name": "Organik Yapı Analizi"
+       },
+       {
+        "code": "KIM 473E",
+        "name": "Organic Structure Analysis"
+       },
+       {
+        "code": "KIM 474",
+        "name": "Polimer Kimyası"
+       },
+       {
+        "code": "KIM 474E",
+        "name": "Polymer Chemistry"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Sınırlı Seçimli Ders II (MT)",
+      "options": [
+       {
+        "code": "KIM 422",
+        "name": "Endüstriyel Kimya"
+       },
+       {
+        "code": "KIM 422E",
+        "name": "Industrial Chemistry"
+       },
+       {
+        "code": "KIM 471",
+        "name": "Organik Kimya III"
+       },
+       {
+        "code": "KIM 471E",
+        "name": "Organic Chemistry III"
+       },
+       {
+        "code": "KIM 473",
+        "name": "Organik Yapı Analizi"
+       },
+       {
+        "code": "KIM 473E",
+        "name": "Organic Structure Analysis"
+       },
+       {
+        "code": "KIM 474",
+        "name": "Polimer Kimyası"
+       },
+       {
+        "code": "KIM 474E",
+        "name": "Polymer Chemistry"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders (SNT)",
+      "options": [
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       },
+       {
+        "code": "SNT 229",
+        "name": "Türkiye'de Popüler Müzik Tarihinden İzlekler"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 4902",
+      "name": "Araştırma Projesi II"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "KIM 210",
+        "name": "Polimer Kimyasına Giriş"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 314",
+        "name": "Tekstil Boyar Maddeleri"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 316",
+        "name": "Yakıt Kimyası"
+       },
+       {
+        "code": "KIM 318",
+        "name": "Kolloid Kimyası"
+       },
+       {
+        "code": "KIM 318E",
+        "name": "Colloid Chemistry"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320",
+        "name": "Organometal Kimyasına Giriş"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 324",
+        "name": "Adli Kimya"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 328",
+        "name": "Biyokimya II"
+       },
+       {
+        "code": "KIM 328E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "KIM 413",
+        "name": "İlaç Kimyası"
+       },
+       {
+        "code": "KIM 414",
+        "name": "Gıda Kimyası"
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 415",
+        "name": "Yüzey Aktif Maddeler"
+       },
+       {
+        "code": "KIM 416",
+        "name": "Organik Petrokimya"
+       },
+       {
+        "code": "KIM 418",
+        "name": "Polimerlerin Fiziksel Kimyası"
+       },
+       {
+        "code": "KIM 425",
+        "name": "Su Kimyası"
+       },
+       {
+        "code": "KIM 427",
+        "name": "Seramik Kimyası"
+       },
+       {
+        "code": "KIM 427E",
+        "name": "Ceramic Chemistry"
+       },
+       {
+        "code": "KIM 429",
+        "name": "Yeşil Kimya"
+       },
+       {
+        "code": "KIM 435",
+        "name": "Çevre Kimyası I"
+       },
+       {
+        "code": "KIM 436",
+        "name": "Çevre Kimyası II"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       },
+       {
+        "code": "KIM 450",
+        "name": "Elektrokimya"
+       },
+       {
+        "code": "KIM 450E",
+        "name": "Electrochemistry"
+       },
+       {
+        "code": "KIM 454E",
+        "name": "Intr. to Computational Chem."
+       },
+       {
+        "code": "MYZ 311E",
+        "name": "Artificial Intelligence and Machine Learning in Chemistry"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "KIM 210",
+        "name": "Polimer Kimyasına Giriş"
+       },
+       {
+        "code": "KIM 210E",
+        "name": "Intro to Polymer Chemistry"
+       },
+       {
+        "code": "KIM 219E",
+        "name": "Comp.Applications in Chemistry"
+       },
+       {
+        "code": "KIM 314",
+        "name": "Tekstil Boyar Maddeleri"
+       },
+       {
+        "code": "KIM 315E",
+        "name": "The Chemistry of Elements"
+       },
+       {
+        "code": "KIM 316",
+        "name": "Yakıt Kimyası"
+       },
+       {
+        "code": "KIM 318",
+        "name": "Kolloid Kimyası"
+       },
+       {
+        "code": "KIM 318E",
+        "name": "Colloid Chemistry"
+       },
+       {
+        "code": "KIM 319E",
+        "name": "Cosmetic Chemistry"
+       },
+       {
+        "code": "KIM 320",
+        "name": "Organometal Kimyasına Giriş"
+       },
+       {
+        "code": "KIM 320E",
+        "name": "Intro to Organometallic Chem"
+       },
+       {
+        "code": "KIM 323E",
+        "name": "Natural Products Chemistry"
+       },
+       {
+        "code": "KIM 324",
+        "name": "Adli Kimya"
+       },
+       {
+        "code": "KIM 325E",
+        "name": "Intr. to Bioinorganic Chem."
+       },
+       {
+        "code": "KIM 328",
+        "name": "Biyokimya II"
+       },
+       {
+        "code": "KIM 328E",
+        "name": "Biochemistry II"
+       },
+       {
+        "code": "KIM 413",
+        "name": "İlaç Kimyası"
+       },
+       {
+        "code": "KIM 414",
+        "name": "Gıda Kimyası"
+       },
+       {
+        "code": "KIM 414E",
+        "name": "Food Chemistry"
+       },
+       {
+        "code": "KIM 415",
+        "name": "Yüzey Aktif Maddeler"
+       },
+       {
+        "code": "KIM 416",
+        "name": "Organik Petrokimya"
+       },
+       {
+        "code": "KIM 418",
+        "name": "Polimerlerin Fiziksel Kimyası"
+       },
+       {
+        "code": "KIM 425",
+        "name": "Su Kimyası"
+       },
+       {
+        "code": "KIM 427",
+        "name": "Seramik Kimyası"
+       },
+       {
+        "code": "KIM 427E",
+        "name": "Ceramic Chemistry"
+       },
+       {
+        "code": "KIM 429",
+        "name": "Yeşil Kimya"
+       },
+       {
+        "code": "KIM 435",
+        "name": "Çevre Kimyası I"
+       },
+       {
+        "code": "KIM 436",
+        "name": "Çevre Kimyası II"
+       },
+       {
+        "code": "KIM 437E",
+        "name": "NMR Spectroscopy; An Intr."
+       },
+       {
+        "code": "KIM 450",
+        "name": "Elektrokimya"
+       },
+       {
+        "code": "KIM 450E",
+        "name": "Electrochemistry"
+       },
+       {
+        "code": "KIM 454E",
+        "name": "Intr. to Computational Chem."
+       },
+       {
+        "code": "MYZ 311E",
+        "name": "Artificial Intelligence and Machine Learning in Chemistry"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Sınırlı Seçimli Ders I (MT)",
+      "options": [
+       {
+        "code": "KIM 481",
+        "name": "Endüstriyel Polimerler"
+       },
+       {
+        "code": "KIM 481E",
+        "name": "Industrial Polymers"
+       },
+       {
+        "code": "KIM 482",
+        "name": "Organik Reaksiyonlar"
+       },
+       {
+        "code": "KIM 482E",
+        "name": "Organic Reactions"
+       },
+       {
+        "code": "KIM 483",
+        "name": "Yüzey ve Termal Analiz Yönt."
+       },
+       {
+        "code": "KIM 483E",
+        "name": "Surface and Thermal Analysis Systems"
+       },
+       {
+        "code": "KIM 484",
+        "name": "Anorganik Kimya III"
+       },
+       {
+        "code": "KIM 484E",
+        "name": "Inorganic Chemistry III"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Sınırlı Seçimli Ders II (MT)",
+      "options": [
+       {
+        "code": "KIM 481",
+        "name": "Endüstriyel Polimerler"
+       },
+       {
+        "code": "KIM 481E",
+        "name": "Industrial Polymers"
+       },
+       {
+        "code": "KIM 482",
+        "name": "Organik Reaksiyonlar"
+       },
+       {
+        "code": "KIM 482E",
+        "name": "Organic Reactions"
+       },
+       {
+        "code": "KIM 483",
+        "name": "Yüzey ve Termal Analiz Yönt."
+       },
+       {
+        "code": "KIM 483E",
+        "name": "Surface and Thermal Analysis Systems"
+       },
+       {
+        "code": "KIM 484",
+        "name": "Anorganik Kimya III"
+       },
+       {
+        "code": "KIM 484E",
+        "name": "Inorganic Chemistry III"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

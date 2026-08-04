@@ -34,10 +34,11 @@
 <nav class="tabs wrap" role="tablist">
  <button role="tab" aria-selected="true" data-view="dersler">01 · DERSLER</button>
  <button role="tab" aria-selected="false" data-view="gecmis">02 · GEÇMİŞ</button>
- <button role="tab" aria-selected="false" data-view="sinavlar">03 · SINAVLAR</button>
- <button role="tab" aria-selected="false" data-view="takvim">04 · AKADEMİK TAKVİM</button>
- <button role="tab" aria-selected="false" data-view="donemler">05 · DÖNEMLER</button>
- <button role="tab" aria-selected="false" data-view="hakkinda">06 · HAKKINDA</button>
+ <button role="tab" aria-selected="false" data-view="onsart">03 · ÖNŞART HARİTASI</button>
+ <button role="tab" aria-selected="false" data-view="sinavlar">04 · SINAVLAR</button>
+ <button role="tab" aria-selected="false" data-view="takvim">05 · AKADEMİK TAKVİM</button>
+ <button role="tab" aria-selected="false" data-view="donemler">06 · DÖNEMLER</button>
+ <button role="tab" aria-selected="false" data-view="hakkinda">07 · HAKKINDA</button>
 </nav>
 
 <main class="wrap">
@@ -90,6 +91,39 @@
   <p class="resultline" id="hresultline" aria-live="polite">—</p>
   <div id="hmatches" class="matches"></div>
   <div id="hdetail"></div>
+ </section>
+
+ <section id="view-onsart" class="view" hidden>
+  <p class="note">
+   Bir bölüm seç: güncel müfredatı (OBS Ders Planı), dönem dönem zorunlu ve seçmeli
+   derslerin gerçek önşart ilişkileriyle kendiliğinden yerleşiyor. Bir düğüme tıkla:
+   geriye doğru önşartları, ileriye doğru bu dersi önşart olarak isteyen dersler parlar.
+   Sarı elmaslar seçmeli slotlar — tıklayınca alternatifleri listeler.
+  </p>
+  <div id="pg-root" class="pg-root">
+   <div class="console pg-console">
+    <label class="query">
+     <span class="sigil">&gt;</span>
+     <select class="pg-program-select" aria-label="Bölüm seç"><option>yükleniyor…</option></select>
+    </label>
+    <span class="pg-plan-label"></span>
+   </div>
+   <div class="console pg-console">
+    <label class="query">
+     <span class="sigil">&gt;</span>
+     <input class="pg-search" type="search" autocomplete="off" spellcheck="false"
+            placeholder="seçili bölümde ders kodu veya adı ara…" aria-label="Ders planında ara">
+    </label>
+    <button type="button" class="pg-reset btn-ghost">odağı temizle</button>
+   </div>
+   <div class="pg-results"></div>
+   <p class="pg-status">bir bölüm seçin</p>
+   <div class="pg-canvas-wrap">
+    <canvas></canvas>
+    <div class="pg-tooltip" hidden></div>
+   </div>
+   <div class="pg-detail"></div>
+  </div>
  </section>
 
  <section id="view-sinavlar" class="view" hidden>
@@ -176,6 +210,7 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
+<script src="assets/prereq.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

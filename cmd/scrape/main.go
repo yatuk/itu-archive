@@ -27,6 +27,7 @@ import (
 	"itu-scraper/internal/history"
 	"itu-scraper/internal/model"
 	"itu-scraper/internal/obs"
+	"itu-scraper/internal/prereq"
 	"itu-scraper/internal/store"
 	"itu-scraper/internal/takvim"
 	"itu-scraper/internal/term"
@@ -44,15 +45,16 @@ func main() {
 		skipCourses  = flag.Bool("skip-courses", false, "ders programını atla")
 		skipCalendar = flag.Bool("skip-calendar", false, "akademik takvimi atla")
 		skipExams    = flag.Bool("skip-exams", false, "sınav takvimini atla")
+		skipPrereq   = flag.Bool("skip-prereq", false, "önşart grafiğini atla")
 	)
 	flag.Parse()
 
-	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams); err != nil {
+	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams, *skipPrereq); err != nil {
 		log.Fatalf("hata: %v", err)
 	}
 }
 
-func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams bool) error {
+func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams, skipPrereq bool) error {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
@@ -95,8 +97,15 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 		}
 	}
 
-	if err := buildHistory(out, st); err != nil {
+	idx, err := buildHistory(out, st)
+	if err != nil {
 		return err
+	}
+
+	if !skipPrereq {
+		if err := scrapePrereqs(ctx, f, st, workers, idx); err != nil {
+			return err
+		}
 	}
 
 	if err := writeIndex(out, st); err != nil {
@@ -201,16 +210,41 @@ func scrapeExams(ctx context.Context, f *fetch.Client, st *store.Store, workers 
 	return nil
 }
 
-func buildHistory(root string, st *store.Store) error {
+func buildHistory(root string, st *store.Store) (*history.Index, error) {
 	idx, err := history.Build(root)
 	if err != nil {
-		return err
+		return nil, err
 	}
 	if err := st.WriteHistory(idx); err != nil {
-		return err
+		return nil, err
 	}
 	logf("geçmiş indeksi: %d ders, %d öğretim üyesi, %d dönem",
 		len(idx.Courses), len(idx.Instructors), len(idx.Terms))
+	return idx, nil
+}
+
+func scrapePrereqs(ctx context.Context, f *fetch.Client, st *store.Store, workers int, idx *history.Index) error {
+	pc := prereq.New(f)
+	branches, err := pc.Branches(ctx)
+	if err != nil {
+		return err
+	}
+	rows, err := pc.ScrapeAll(ctx, branches, workers)
+	if err != nil {
+		return err
+	}
+
+	names := map[string]string{}
+	for code, c := range idx.Courses {
+		names[code] = c.Name
+	}
+	graph := prereq.BuildGraph(rows, names)
+	graph.GeneratedAt = time.Now().UTC().Format(time.RFC3339)
+
+	if err := st.WriteJSON(graph, "data", "prereq", "graph.json"); err != nil {
+		return err
+	}
+	logf("önşart grafiği: %d düğüm, %d kenar (%d branş)", len(graph.Nodes), len(graph.Edges), len(branches))
 	return nil
 }
 

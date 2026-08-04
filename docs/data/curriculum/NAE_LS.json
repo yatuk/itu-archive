@@ -1,0 +1,912 @@
+{
+ "programCode": "NAE_LS",
+ "programName": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği (İngilizce) (KKTC) Lisans",
+ "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+ "planLabel": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği Lisans Programı (%100 İngilizce) (KKTC) 2022-2023 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "NAE 101E",
+      "name": "Int.to Nav.Arch.&Mar.Eng.&Eth."
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 100E",
+      "name": "Intr.to Prog.Language(PYTHON)"
+     }
+    },
+    {
+     "course": {
+      "code": "NAE 102E",
+      "name": "Ship Geometry"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 210E",
+      "name": "Engineering Mathematics"
+     }
+    },
+    {
+     "course": {
+      "code": "DNK 201E",
+      "name": "Dynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "GMI 114E",
+      "name": "Materials Scie.&Manufact.Mth."
+     }
+    },
+    {
+     "course": {
+      "code": "NAE 203",
+      "name": "Strength of Materials I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 202E",
+      "name": "Numerical Methods"
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "GEM 204E",
+      "name": "Thermodynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "AKM 204E",
+      "name": "Fluid Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "MUK 204E",
+      "name": "Strength of Materials II"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    },
+    {
+     "elective": {
+      "title": "4th Semester Elective Course (TM)",
+      "options": [
+       {
+        "code": "GEM 214E",
+        "name": "Engineering Measurements"
+       },
+       {
+        "code": "GEM 216E",
+        "name": "Heat Transfer In Engineering"
+       },
+       {
+        "code": "GEM 423E",
+        "name": "Advanced Propulsion Systems"
+       },
+       {
+        "code": "GEM 437E",
+        "name": "Cargo Handling Systems"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "GEM 313E",
+      "name": "Marine Engines"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 321E",
+      "name": "Ship Theory"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 325E",
+      "name": "Ship Construction"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 327E",
+      "name": "Ship Hydrodynamics(Resistance)"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 329E",
+      "name": "Maritime and Labor Law"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Course (ITB)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 027E",
+        "name": "Estr/Invl in 5 Works by Campus"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 167E",
+        "name": "The Birth&Devl Modern City"
+       },
+       {
+        "code": "ITB 168E",
+        "name": "Philosophy of Technology"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 172E",
+        "name": "The Historian in the Cinema"
+       },
+       {
+        "code": "ITB 178E",
+        "name": "Democracy&Modern Media:Int.Per"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 210E",
+        "name": "City,Environment & Society"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "GEM 324E",
+      "name": "Strength of Ships"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 312E",
+      "name": "Marine Auxiliary Machinery"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 326E",
+      "name": "Ship Design"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 353E",
+      "name": "Work Safety & Health Training in Shipbuilding Industry"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 332E",
+      "name": "Electrical Systems in Ships"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 328E",
+      "name": "Ship Hydrodynamics(Propulsion)"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 4901E",
+      "name": "Naval Architecture & Marine Engeneering Design I"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 421E",
+      "name": "Ship Motions and Maneuvering"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 407E",
+      "name": "Methods of Ship Production"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 331E",
+      "name": "Shipping Economics"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 409E",
+      "name": "Ship Vibration"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course I (MT)",
+      "options": [
+       {
+        "code": "GEM 427E",
+        "name": "Engine Room Design Principles"
+       },
+       {
+        "code": "GEM 443E",
+        "name": "Structural Design of Ships"
+       },
+       {
+        "code": "GEM 445E",
+        "name": "Marine Piping Systems"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Semester Elective Course II (MT)",
+      "options": [
+       {
+        "code": "GEM 417E",
+        "name": "Sailing Yacht Design"
+       },
+       {
+        "code": "GEM 423E",
+        "name": "Advanced Propulsion Systems"
+       },
+       {
+        "code": "GEM 436E",
+        "name": "Refrigeration Syst For Ships"
+       },
+       {
+        "code": "GEM 443E",
+        "name": "Structural Design of Ships"
+       },
+       {
+        "code": "GEM 449E",
+        "name": "Computer Aided Ship Dsgn&Cons."
+       },
+       {
+        "code": "GEM 451E",
+        "name": "Automatic Control of Ships"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 4902E",
+      "name": "Naval Architecture & Marine Engeneering Design II"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 430E",
+      "name": "Shipyard Organization"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "GEM 410E",
+      "name": "Computational Fluid Mechanics"
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course I (MT)",
+      "options": [
+       {
+        "code": "GEM 418E",
+        "name": "Corrsn & Fouling In Marine Env"
+       },
+       {
+        "code": "GEM 420E",
+        "name": "High Speed Craft Design"
+       },
+       {
+        "code": "GEM 424E",
+        "name": "Reliability Of Ship Structures"
+       },
+       {
+        "code": "GEM 426E",
+        "name": "Hydrodynamic Design of Ships"
+       },
+       {
+        "code": "GEM 438E",
+        "name": "Stability of Ships"
+       },
+       {
+        "code": "GEM 447E",
+        "name": "Vent & Air Cond Sys For Ships"
+       },
+       {
+        "code": "GEM 482E",
+        "name": "Individual Graduation Project"
+       },
+       {
+        "code": "GEM 484E",
+        "name": "Mech.&Dsgn.of Marine Composit."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Semester Elective Course II (MT)",
+      "options": [
+       {
+        "code": "GEM 416E",
+        "name": "Warship Design"
+       },
+       {
+        "code": "GEM 426E",
+        "name": "Hydrodynamic Design of Ships"
+       },
+       {
+        "code": "GEM 428E",
+        "name": "International Maritime Relations and Safety at Sea"
+       },
+       {
+        "code": "GEM 434E",
+        "name": "Thermal Optimization of Marine Power Plants"
+       },
+       {
+        "code": "GEM 482E",
+        "name": "Individual Graduation Project"
+       },
+       {
+        "code": "GEM 484E",
+        "name": "Mech.&Dsgn.of Marine Composit."
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

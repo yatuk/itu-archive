@@ -1,0 +1,889 @@
+{
+ "programCode": "MADE_LS",
+ "programName": "Maden Mühendisliği (İngilizce) Lisans",
+ "faculty": "Maden Fakültesi",
+ "planLabel": "Maden Mühendisliği Lisans Programı (%100 İngilizce) 2011-2012 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BIL 101E",
+      "name": "Int to Comp and Inf Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 111E",
+      "name": "Introduction to Mining Engineering"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 101E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "RES 103E",
+      "name": "Technical Drawing"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course I",
+      "options": [
+       {
+        "code": "ING 101",
+        "name": "English I"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 101E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 102E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 108E",
+      "name": "Intr. to Sci. & Eng.Computing"
+     }
+    },
+    {
+     "elective": {
+      "title": "2.th Sems.Elect. Course (ITB)",
+      "options": [
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "English II",
+      "options": [
+       {
+        "code": "ING 102",
+        "name": "English II"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAD 232E",
+      "name": "Surface Mining"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 261E",
+      "name": "Linear Algebra"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 211E",
+      "name": "Mineralogy"
+     }
+    },
+    {
+     "course": {
+      "code": "MEK 205E",
+      "name": "Engineering Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 241E",
+      "name": "Blasting Tech&its Applications"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 202E",
+      "name": "Numerical Methods"
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 201E",
+      "name": "Differential Equations"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III"
+     }
+    },
+    {
+     "course": {
+      "code": "JEO 112E",
+      "name": "General Geology"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 252E",
+      "name": "Mining and Environment"
+     }
+    },
+    {
+     "course": {
+      "code": "JEO 331E",
+      "name": "Petrography"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 243E",
+      "name": "Underground Mining"
+     }
+    },
+    {
+     "elective": {
+      "title": "4th Sems.Elect. Course (TB)",
+      "options": [
+       {
+        "code": "BIO 201E",
+        "name": "Understanding Enzymes"
+       },
+       {
+        "code": "BIO 301E",
+        "name": "Fundamentals of Biology"
+       },
+       {
+        "code": "BIO 302E",
+        "name": "Fundamentals of Biotechnology"
+       },
+       {
+        "code": "BLG 112E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "FIZ 201E",
+        "name": "Modern Physics"
+       },
+       {
+        "code": "KIM 202E",
+        "name": "Physical Chemistry"
+       },
+       {
+        "code": "KIM 203E",
+        "name": "Analytical Chemistry"
+       },
+       {
+        "code": "KIM 204E",
+        "name": "General Chemistry II"
+       },
+       {
+        "code": "KIM 205E",
+        "name": "Organic Chemistry"
+       },
+       {
+        "code": "KIM 207E",
+        "name": "Inorganic Chemistry"
+       },
+       {
+        "code": "KIM 208E",
+        "name": "Advance Organic Chemistry"
+       },
+       {
+        "code": "MAT 106E",
+        "name": "Analytic Geometry and Vector Calculation"
+       },
+       {
+        "code": "MAT 205E",
+        "name": "Theory of Complex Functions"
+       },
+       {
+        "code": "MAT 206E",
+        "name": "Fuzzy Mathematics"
+       },
+       {
+        "code": "MAT 208E",
+        "name": "Science and History of Mathematics"
+       },
+       {
+        "code": "MAT 301E",
+        "name": "Partial Differantial Equations"
+       },
+       {
+        "code": "MAT 427E",
+        "name": "Algebra II"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 254E",
+      "name": "Strngth of Mat.for Mining Eng."
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAD 341E",
+      "name": "Mineral Processing I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 311E",
+      "name": "Geophysics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 361E",
+      "name": "Mineral Deposits"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 371E",
+      "name": "Haulage and Drainage in Mines"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 351E",
+      "name": "Rock Mechanics"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Sems.Elect. Course (ITB)",
+      "options": [
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Sems.Elect. Course (MT)",
+      "options": [
+       {
+        "code": "MAD 317E",
+        "name": "Metallurgy"
+       },
+       {
+        "code": "MAD 319E",
+        "name": "Natural Stone Mining Technology"
+       },
+       {
+        "code": "MAD 323E",
+        "name": "Technical Drawing Applications in Mining Engineering"
+       },
+       {
+        "code": "MAD 362E",
+        "name": "Engineering Geology"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAD 354E",
+      "name": "Mineral Processing II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 342E",
+      "name": "Hydraulic Power Sys in Mining"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 322E",
+      "name": "Dsgn of Sup in Mines & Tunnels"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 312E",
+      "name": "Surveying"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "elective": {
+      "title": "6th Sems.Elect. Course I (MT)",
+      "options": [
+       {
+        "code": "MAD 313E",
+        "name": "Drilling Techniques"
+       },
+       {
+        "code": "MAD 318E",
+        "name": "Industrial Minerals"
+       },
+       {
+        "code": "MAD 442E",
+        "name": "Aggregate Mining"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6th Sems.Elect. Course II (MT)",
+      "options": [
+       {
+        "code": "MAD 313E",
+        "name": "Drilling Techniques"
+       },
+       {
+        "code": "MAD 318E",
+        "name": "Industrial Minerals"
+       },
+       {
+        "code": "MAD 442E",
+        "name": "Aggregate Mining"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 431E",
+      "name": "Coal Preparation &Technology"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 451E",
+      "name": "Mining Machinery"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 461E",
+      "name": "Mine Ventilation"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 441E",
+      "name": "Mine System Analysis"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 471E",
+      "name": "Electro-Techniques in Mines"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sems.Elect. Course (MT)",
+      "options": [
+       {
+        "code": "MAD 413E",
+        "name": "Tunneling"
+       },
+       {
+        "code": "MAD 415E",
+        "name": "Cement Technology"
+       },
+       {
+        "code": "MAD 425E",
+        "name": "Applied Rock Mechanics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sems.Elect. Course (ITB)",
+      "options": [
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 492E",
+      "name": "Graduation Project"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 434E",
+      "name": "Mining Legislation"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 422E",
+      "name": "Mine Planing and Design"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 432E",
+      "name": "Mech. in Min. and Tun. Ex."
+     }
+    },
+    {
+     "course": {
+      "code": "ETK 101E",
+      "name": "Engineering Ethics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 436E",
+      "name": "Mine Economics"
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Sems.Elect. Course (MT)",
+      "options": [
+       {
+        "code": "MAD 420E",
+        "name": "Occoupational Helth and Safety in Mines"
+       },
+       {
+        "code": "MAD 440E",
+        "name": "Computer Aided Mine Design"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

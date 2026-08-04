@@ -1,0 +1,2052 @@
+{
+ "programCode": "KOM_LS",
+ "programName": "Kontrol ve Otomasyon Mühendisliği Lisans",
+ "faculty": "Elektrik - Elektronik Fakültesi",
+ "planLabel": "Kontrol ve Otomasyon Mühendisliği Lisans Programı 2025-2026 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 101",
+      "name": "Fizik I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101",
+      "name": "Genel Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 103",
+      "name": "Kontrol & Otom. Müh.Giriş&Etik"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 102",
+      "name": "Fizik II (Elektrik Fiziği)"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "EEF 110E",
+      "name": "Intr. to Prog. Language (C)"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    },
+    {
+     "course": {
+      "code": "EEF 281",
+      "name": "Lineer Cebir ve Uygulamaları"
+     }
+    },
+    {
+     "elective": {
+      "title": "2.yy Seçime Bağlı Ders (SNT)",
+      "options": [
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 101E",
+        "name": "Looking at the Art of Sculpture"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 108E",
+        "name": "Ceramic"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 115E",
+        "name": "Modernity and Visual Culture"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 119E",
+        "name": "History of Popular Music"
+       },
+       {
+        "code": "SNT 121",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 214E",
+        "name": "Performance, Music and Dance"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227",
+        "name": "Ses ve Toplum"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       },
+       {
+        "code": "SNT 229",
+        "name": "Türkiye'de Popüler Müzik Tarihinden İzlekler"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "EEF 211",
+      "name": "Elektrik Devre Temelleri"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    },
+    {
+     "course": {
+      "code": "EEF 271E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "EEF 210E",
+      "name": "Differential Equations"
+     }
+    },
+    {
+     "course": {
+      "code": "EEF 205",
+      "name": "Lojik Tasarıma Giriş"
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Seçime Bağlı Ders (TB)",
+      "options": [
+       {
+        "code": "BIO 301E",
+        "name": "Fundamentals of Biology"
+       },
+       {
+        "code": "BIO 301",
+        "name": "Biyolojinin Temelleri"
+       },
+       {
+        "code": "BIO 302E",
+        "name": "Fundamentals of Biotechnology"
+       },
+       {
+        "code": "BLG 112E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BLG 112",
+        "name": "Ayrık Matematik"
+       },
+       {
+        "code": "EHB 227E",
+        "name": "Introduction to Optics"
+       },
+       {
+        "code": "EHB 227",
+        "name": "Optiğe giriş"
+       },
+       {
+        "code": "EHB 235E",
+        "name": "Theory of Complex Functions"
+       },
+       {
+        "code": "EHB 235",
+        "name": "Kompleks Fonk Teorisi"
+       },
+       {
+        "code": "FIZ 201E",
+        "name": "Modern Physics"
+       },
+       {
+        "code": "FIZ 201",
+        "name": "Modern Fizik"
+       },
+       {
+        "code": "KIM 202E",
+        "name": "Physical Chemistry"
+       },
+       {
+        "code": "KIM 202",
+        "name": "Fiziksel Kimya"
+       },
+       {
+        "code": "MAL 201E",
+        "name": "Materials Science"
+       },
+       {
+        "code": "MAL 201",
+        "name": "Malzeme Bilimi"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Seçime Bağlı Ders (TM)",
+      "options": [
+       {
+        "code": "DNK 201",
+        "name": "Dinamik"
+       },
+       {
+        "code": "DNK 201E",
+        "name": "Dynamics"
+       },
+       {
+        "code": "EHB 208",
+        "name": "Veri Yapıları ve Programlama"
+       },
+       {
+        "code": "EHB 208E",
+        "name": "Data Structures & Programming"
+       },
+       {
+        "code": "ELK 234",
+        "name": "Termodinamik ve Hidrodinamik"
+       },
+       {
+        "code": "ELK 234E",
+        "name": "Thermodynamics &Hydrodynamics"
+       },
+       {
+        "code": "ELK 336E",
+        "name": "Quantum Computation"
+       },
+       {
+        "code": "END 112",
+        "name": "İmalat Sistemlerine Giriş"
+       },
+       {
+        "code": "END 112E",
+        "name": "Intr. to Manufacturing Systems"
+       },
+       {
+        "code": "STA 201E",
+        "name": "Statics"
+       },
+       {
+        "code": "STA 201",
+        "name": "Statik"
+       },
+       {
+        "code": "TER 201",
+        "name": "Termodinamik"
+       },
+       {
+        "code": "TER 201E",
+        "name": "Thermodynamics"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "EHB 222E",
+      "name": "Introduction to Electronics"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 301E",
+      "name": "System Modelling&Simulation"
+     }
+    },
+    {
+     "course": {
+      "code": "EEF 232E",
+      "name": "Circuit and System Analysis"
+     }
+    },
+    {
+     "course": {
+      "code": "EEF 206",
+      "name": "İşaret İşleme ve Lineer Sist."
+     }
+    },
+    {
+     "elective": {
+      "title": "4.yy Zorunlu Seçmeli Ders (TM)",
+      "options": [
+       {
+        "code": "EEF 212E",
+        "name": "Electromagnetic Theory I"
+       },
+       {
+        "code": "EEF 212",
+        "name": "Elektromagnetik Teori I"
+       },
+       {
+        "code": "EEF 311E",
+        "name": "Numerical Analysis with Python"
+       },
+       {
+        "code": "EEF 311",
+        "name": "Python ile Sayısal Analiz"
+       },
+       {
+        "code": "ROS 201E",
+        "name": "Foundational Mathematics for Robotics"
+       },
+       {
+        "code": "ROS 201",
+        "name": "Robotik için Temel Matematik"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KON 303",
+      "name": "Ölçme ve Enstrümantasyon"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 319",
+      "name": "Kontrol Sistemlerinin Analizi"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 325",
+      "name": "Endüstriyel Otomasyon Sist."
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Compulsory Elective Course I (MT)",
+      "options": [
+       {
+        "code": "KON 307E",
+        "name": "Programming Techniq.in Control"
+       },
+       {
+        "code": "ROS 301E",
+        "name": "Programming Techniques for Robotics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Compulsory Elective Course II (MT)",
+      "options": [
+       {
+        "code": "KON 309E",
+        "name": "Microcontroller Systems"
+       },
+       {
+        "code": "MYZ 307E",
+        "name": "Machine Learning for Electrical and Electronics Engineering"
+       },
+       {
+        "code": "ROS 303E",
+        "name": "Robot Kinematics and Dynamics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders III (MT)",
+      "options": [
+       {
+        "code": "EHB 354",
+        "name": "Nesneye Dayalı Programlama"
+       },
+       {
+        "code": "EHB 354E",
+        "name": "Object Oriented Programming"
+       },
+       {
+        "code": "ELK 331",
+        "name": "Güç Elektroniği Devreleri"
+       },
+       {
+        "code": "ELK 331E",
+        "name": "Power Electronic Circuits"
+       },
+       {
+        "code": "END 331",
+        "name": "Yöneylem Araştırması I"
+       },
+       {
+        "code": "END 331E",
+        "name": "Operations Research I"
+       },
+       {
+        "code": "KON 341E",
+        "name": "Algorithmic Machines and Microcontrollers"
+       },
+       {
+        "code": "KON 341",
+        "name": "Algoritmik Makinalar ve Mikrokontrolörler"
+       },
+       {
+        "code": "MAK 315",
+        "name": "Mekanik Titreşimler"
+       },
+       {
+        "code": "MAK 315E",
+        "name": "Mechanical Vibrations"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "5.yy Seçime Bağlı Ders IV (MT)",
+      "options": [
+       {
+        "code": "EHB 354E",
+        "name": "Object Oriented Programming"
+       },
+       {
+        "code": "EHB 354",
+        "name": "Nesneye Dayalı Programlama"
+       },
+       {
+        "code": "ELK 331",
+        "name": "Güç Elektroniği Devreleri"
+       },
+       {
+        "code": "ELK 331E",
+        "name": "Power Electronic Circuits"
+       },
+       {
+        "code": "END 331",
+        "name": "Yöneylem Araştırması I"
+       },
+       {
+        "code": "END 331E",
+        "name": "Operations Research I"
+       },
+       {
+        "code": "KON 341E",
+        "name": "Algorithmic Machines and Microcontrollers"
+       },
+       {
+        "code": "KON 341",
+        "name": "Algoritmik Makinalar ve Mikrokontrolörler"
+       },
+       {
+        "code": "MAK 315",
+        "name": "Mekanik Titreşimler"
+       },
+       {
+        "code": "MAK 315E",
+        "name": "Mechanical Vibrations"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KON 314",
+      "name": "Kontrol Sistem Tasarımı"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 304",
+      "name": "Ölçme ve Enstrümantasyon Laboratuvarı"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 405E",
+      "name": "State Space Meth.in Contr.Syst"
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "EHB 334E",
+        "name": "Random Signals and Noise"
+       },
+       {
+        "code": "EHB 419E",
+        "name": "Digital System Design"
+       },
+       {
+        "code": "EHB 419",
+        "name": "Sayısal Sistem Tasarımı"
+       },
+       {
+        "code": "EHB 474E",
+        "name": "Introduction to Optimization"
+       },
+       {
+        "code": "ELK 453",
+        "name": "Güç Elektroniği Endüstriyel Uygulamaları I"
+       },
+       {
+        "code": "ELK 453E",
+        "name": "Ind. Appl. of Power Electron."
+       },
+       {
+        "code": "KON 323E",
+        "name": "Sys.Eng.&Saf.-Critic. Sys.Des."
+       },
+       {
+        "code": "KON 323",
+        "name": "Sys.Eng.&Saf.-Critic. Sys.Des."
+       },
+       {
+        "code": "KON 324",
+        "name": "Kontrolde Algılama ve Dönüş. S"
+       },
+       {
+        "code": "KON 324E",
+        "name": "Sensors&Transducers in Contr."
+       },
+       {
+        "code": "KON 417",
+        "name": "Servo Motorlar"
+       },
+       {
+        "code": "KON 417E",
+        "name": "Servo Motors"
+       },
+       {
+        "code": "KON 424E",
+        "name": "Mod.&Cntrl of Biological Sys."
+       },
+       {
+        "code": "KON 424",
+        "name": "Biyolojik Sist.Model.ve Kontro"
+       },
+       {
+        "code": "KON 428",
+        "name": "Optimal Kontrole Giriş"
+       },
+       {
+        "code": "KON 428E",
+        "name": "Intr. to Optimal Control"
+       },
+       {
+        "code": "MTH 406",
+        "name": "Model Tabanlı Tasarım ve Yapay Zeka"
+       },
+       {
+        "code": "MTH 406E",
+        "name": "Model-Based Desing and Artifical Intelligence"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Zorunlu Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "KON 414E",
+        "name": "Principles of Robot Autonomy"
+       },
+       {
+        "code": "KON 426",
+        "name": "Akıllı Kontrol Sistemleri"
+       },
+       {
+        "code": "KON 426E",
+        "name": "Intelligent Control Systems"
+       },
+       {
+        "code": "KON 429E",
+        "name": "Autonomous Vehicles"
+       },
+       {
+        "code": "KON 429",
+        "name": "Otonom Araçlar"
+       },
+       {
+        "code": "KON 436E",
+        "name": "Int.to Nonlinear Control Syst."
+       },
+       {
+        "code": "KON 436",
+        "name": "Doğrusal Olmayan Kontrol Sistemlerine Giriş"
+       },
+       {
+        "code": "KON 449E",
+        "name": "Advanced Automation Systems"
+       },
+       {
+        "code": "KON 449",
+        "name": "İleri Otomasyon Sistemleri"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Zorunlu Seçime Bağlı Ders III (MT)",
+      "options": [
+       {
+        "code": "KON 414E",
+        "name": "Principles of Robot Autonomy"
+       },
+       {
+        "code": "KON 426",
+        "name": "Akıllı Kontrol Sistemleri"
+       },
+       {
+        "code": "KON 426E",
+        "name": "Intelligent Control Systems"
+       },
+       {
+        "code": "KON 429E",
+        "name": "Autonomous Vehicles"
+       },
+       {
+        "code": "KON 429",
+        "name": "Otonom Araçlar"
+       },
+       {
+        "code": "KON 436E",
+        "name": "Int.to Nonlinear Control Syst."
+       },
+       {
+        "code": "KON 436",
+        "name": "Doğrusal Olmayan Kontrol Sistemlerine Giriş"
+       },
+       {
+        "code": "KON 449E",
+        "name": "Advanced Automation Systems"
+       },
+       {
+        "code": "KON 449",
+        "name": "İleri Otomasyon Sistemleri"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 403",
+      "name": "Kontrol Lab."
+     }
+    },
+    {
+     "course": {
+      "code": "KON 4901",
+      "name": "Kontrol&Otom. Müh.Tasarımı I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Elective Course I (MT)",
+      "options": [
+       {
+        "code": "EHB 326E",
+        "name": "Intr.to Embedded Systems"
+       },
+       {
+        "code": "ELK 334E",
+        "name": "Dsgn of Power Electr Circuits"
+       },
+       {
+        "code": "END 411E",
+        "name": "Integrated Manufacturing Syst"
+       },
+       {
+        "code": "END 421E",
+        "name": "Production Planning&Control"
+       },
+       {
+        "code": "END 445E",
+        "name": "Lean Production Systems"
+       },
+       {
+        "code": "END 453E",
+        "name": "Indus.4.0 & Digital Transform."
+       },
+       {
+        "code": "KON 422E",
+        "name": "Electrical Transport Systems"
+       },
+       {
+        "code": "KON 425E",
+        "name": "Process Control"
+       },
+       {
+        "code": "KON 435E",
+        "name": "Industrial Data Communications"
+       },
+       {
+        "code": "KON 437E",
+        "name": "Motion Control Systems"
+       },
+       {
+        "code": "KON 441E",
+        "name": "Control Techniques for Nonlinear Systems"
+       },
+       {
+        "code": "KON 443E",
+        "name": "Vector-Based Modeling of Robotic Systems"
+       },
+       {
+        "code": "KON 445E",
+        "name": "Integrated Software Solutions for Control and Visualization"
+       },
+       {
+        "code": "KON 447E",
+        "name": "Data Driven Control"
+       },
+       {
+        "code": "MAK 4011E",
+        "name": "Dyn.&Contr.ofMic./Nano Scl.Sys"
+       },
+       {
+        "code": "MTH 401E",
+        "name": "RISC-V Architecture &Processor"
+       },
+       {
+        "code": "MTH 402E",
+        "name": "Flight Mechanics and Applications"
+       },
+       {
+        "code": "MTH 403E",
+        "name": "Fnc.Safety&PwrtrainAppAutoInd"
+       },
+       {
+        "code": "MTH 405E",
+        "name": "Flight Control Systems"
+       },
+       {
+        "code": "MTH 406E",
+        "name": "Model-Based Desing and Artifical Intelligence"
+       },
+       {
+        "code": "ROS 441E",
+        "name": "Field and Service Robotics"
+       },
+       {
+        "code": "ROS 443E",
+        "name": "Introduction to Deep Reinforcement Learning"
+       },
+       {
+        "code": "UCK 448E",
+        "name": "Avionic Systems"
+       },
+       {
+        "code": "UZB 421E",
+        "name": "Attitude Determination & Ctrl."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Elective Course II (MT)",
+      "options": [
+       {
+        "code": "EHB 326E",
+        "name": "Intr.to Embedded Systems"
+       },
+       {
+        "code": "ELK 334E",
+        "name": "Dsgn of Power Electr Circuits"
+       },
+       {
+        "code": "END 411E",
+        "name": "Integrated Manufacturing Syst"
+       },
+       {
+        "code": "END 421E",
+        "name": "Production Planning&Control"
+       },
+       {
+        "code": "END 445E",
+        "name": "Lean Production Systems"
+       },
+       {
+        "code": "END 453E",
+        "name": "Indus.4.0 & Digital Transform."
+       },
+       {
+        "code": "KON 422E",
+        "name": "Electrical Transport Systems"
+       },
+       {
+        "code": "KON 425E",
+        "name": "Process Control"
+       },
+       {
+        "code": "KON 435E",
+        "name": "Industrial Data Communications"
+       },
+       {
+        "code": "KON 437E",
+        "name": "Motion Control Systems"
+       },
+       {
+        "code": "KON 441E",
+        "name": "Control Techniques for Nonlinear Systems"
+       },
+       {
+        "code": "KON 443E",
+        "name": "Vector-Based Modeling of Robotic Systems"
+       },
+       {
+        "code": "KON 445E",
+        "name": "Integrated Software Solutions for Control and Visualization"
+       },
+       {
+        "code": "KON 447E",
+        "name": "Data Driven Control"
+       },
+       {
+        "code": "MAK 4011E",
+        "name": "Dyn.&Contr.ofMic./Nano Scl.Sys"
+       },
+       {
+        "code": "MTH 401E",
+        "name": "RISC-V Architecture &Processor"
+       },
+       {
+        "code": "MTH 402E",
+        "name": "Flight Mechanics and Applications"
+       },
+       {
+        "code": "MTH 403E",
+        "name": "Fnc.Safety&PwrtrainAppAutoInd"
+       },
+       {
+        "code": "MTH 405E",
+        "name": "Flight Control Systems"
+       },
+       {
+        "code": "MTH 406E",
+        "name": "Model-Based Desing and Artifical Intelligence"
+       },
+       {
+        "code": "ROS 441E",
+        "name": "Field and Service Robotics"
+       },
+       {
+        "code": "ROS 443E",
+        "name": "Introduction to Deep Reinforcement Learning"
+       },
+       {
+        "code": "UCK 448E",
+        "name": "Avionic Systems"
+       },
+       {
+        "code": "UZB 421E",
+        "name": "Attitude Determination & Ctrl."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders III (MT)",
+      "options": [
+       {
+        "code": "EHB 326",
+        "name": "Gömülü Sistemlere Giriş"
+       },
+       {
+        "code": "ELK 334",
+        "name": "Güç Elektroniği Devre Tasarımı"
+       },
+       {
+        "code": "END 411",
+        "name": "Bütünleşik Üretim Sistemleri"
+       },
+       {
+        "code": "END 421",
+        "name": "Üretim Planlama ve Kontrol"
+       },
+       {
+        "code": "END 445",
+        "name": "Tam Zamanında Üretim Sistemleri"
+       },
+       {
+        "code": "END 453",
+        "name": "Endüstri 4.0 ve Dijital Dönüşüm"
+       },
+       {
+        "code": "KON 422",
+        "name": "Elektrikli Ulaşım Sistemleri"
+       },
+       {
+        "code": "KON 425",
+        "name": "Süreç Kontrolü"
+       },
+       {
+        "code": "KON 437",
+        "name": "Hareket Kontrol Sistemleri"
+       },
+       {
+        "code": "KON 441",
+        "name": "Doğrusal Olmayan Sistemler için Kontrol Teknikleri"
+       },
+       {
+        "code": "KON 443",
+        "name": "Robotik Sistemlerde Vektör Tabanlı Modelleme"
+       },
+       {
+        "code": "KON 445",
+        "name": "Kontrol ve Görselleştirme için Entegre Yazılım Çözümleri"
+       },
+       {
+        "code": "MTH 401",
+        "name": "RlsC-V Mimarisi ve işlemciTasanmı"
+       },
+       {
+        "code": "MTH 402",
+        "name": "Uçuş Mekaniği & Uygulamaları"
+       },
+       {
+        "code": "MTH 403",
+        "name": "Otomotive Endüstrisinde Fonksiyonel Emniyet ve Güç Aktarma Organları Uygulamaları"
+       },
+       {
+        "code": "MTH 405",
+        "name": "Uçuş Kontrol Sistemleri"
+       },
+       {
+        "code": "MTH 406",
+        "name": "Model Tabanlı Tasarım ve Yapay Zeka"
+       },
+       {
+        "code": "ROS 441",
+        "name": "Saha ve Hizmet Robotları"
+       },
+       {
+        "code": "ROS 443",
+        "name": "Derin Pekiştirmeli Öğrenmeye Giriş"
+       },
+       {
+        "code": "UCK 448",
+        "name": "Aviyonik Sistemler"
+       },
+       {
+        "code": "UZB 421",
+        "name": "Attitude Determination & Ctrl."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders III (ITB)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       },
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 4902",
+      "name": "Kontrol&Otom. Müh.Tasarımı II"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Sınırlı Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "EHB 419E",
+        "name": "Digital System Design"
+       },
+       {
+        "code": "EHB 419",
+        "name": "Sayısal Sistem Tasarımı"
+       },
+       {
+        "code": "EHB 428",
+        "name": "Endüstriyel Elektronik"
+       },
+       {
+        "code": "EHB 428E",
+        "name": "Industrial Electronics"
+       },
+       {
+        "code": "EHB 437",
+        "name": "Biyomedikal Düzenler"
+       },
+       {
+        "code": "EHB 472E",
+        "name": "Image Processing Fundamentals"
+       },
+       {
+        "code": "EHB 474E",
+        "name": "Introduction to Optimization"
+       },
+       {
+        "code": "ELK 428E",
+        "name": "Electric and Hybrid Vehicles"
+       },
+       {
+        "code": "ELK 472E",
+        "name": "Renewable Energy Systems"
+       },
+       {
+        "code": "KON 421",
+        "name": "Robot Kontrolü"
+       },
+       {
+        "code": "KON 440",
+        "name": "Bacaklı Robotlar"
+       },
+       {
+        "code": "KON 440E",
+        "name": "Legged Robotics"
+       },
+       {
+        "code": "KON 442E",
+        "name": "Introduction to Learning based Control Systems"
+       },
+       {
+        "code": "KON 442",
+        "name": "Öğrenme Tabanlı Kontrol Sistemlerine Giriş"
+       },
+       {
+        "code": "MTH 401E",
+        "name": "RISC-V Architecture &Processor"
+       },
+       {
+        "code": "MTH 401",
+        "name": "RlsC-V Mimarisi ve işlemciTasanmı"
+       },
+       {
+        "code": "MTH 402E",
+        "name": "Flight Mechanics and Applications"
+       },
+       {
+        "code": "MTH 402",
+        "name": "Uçuş Mekaniği & Uygulamaları"
+       },
+       {
+        "code": "MTH 403E",
+        "name": "Fnc.Safety&PwrtrainAppAutoInd"
+       },
+       {
+        "code": "MTH 403",
+        "name": "Otomotive Endüstrisinde Fonksiyonel Emniyet ve Güç Aktarma Organları Uygulamaları"
+       },
+       {
+        "code": "MTH 405E",
+        "name": "Flight Control Systems"
+       },
+       {
+        "code": "MTH 405",
+        "name": "Uçuş Kontrol Sistemleri"
+       },
+       {
+        "code": "MTH 406",
+        "name": "Model Tabanlı Tasarım ve Yapay Zeka"
+       },
+       {
+        "code": "MTH 406E",
+        "name": "Model-Based Desing and Artifical Intelligence"
+       },
+       {
+        "code": "ROS 302",
+        "name": "Robot Hareket Planlama ve Kontrol"
+       },
+       {
+        "code": "ROS 302E",
+        "name": "Robot Motion Planning & Control"
+       },
+       {
+        "code": "ROS 440",
+        "name": "Sürü Robotları"
+       },
+       {
+        "code": "ROS 440E",
+        "name": "Swarm Robotics"
+       },
+       {
+        "code": "ROS 442",
+        "name": "Sosyal Robotlar"
+       },
+       {
+        "code": "ROS 442E",
+        "name": "Social Robotics"
+       },
+       {
+        "code": "ROS 444",
+        "name": "Yumuşak Robotlar"
+       },
+       {
+        "code": "ROS 444E",
+        "name": "Soft Robotics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "EHB 419E",
+        "name": "Digital System Design"
+       },
+       {
+        "code": "EHB 419",
+        "name": "Sayısal Sistem Tasarımı"
+       },
+       {
+        "code": "EHB 428",
+        "name": "Endüstriyel Elektronik"
+       },
+       {
+        "code": "EHB 428E",
+        "name": "Industrial Electronics"
+       },
+       {
+        "code": "EHB 472E",
+        "name": "Image Processing Fundamentals"
+       },
+       {
+        "code": "EHB 474E",
+        "name": "Introduction to Optimization"
+       },
+       {
+        "code": "ELK 428E",
+        "name": "Electric and Hybrid Vehicles"
+       },
+       {
+        "code": "ELK 428",
+        "name": "Elektrikli ve Karma Taşıtlar"
+       },
+       {
+        "code": "ELK 472E",
+        "name": "Renewable Energy Systems"
+       },
+       {
+        "code": "ELK 472",
+        "name": "Yenilenebilir Enerji Sist."
+       },
+       {
+        "code": "KON 421",
+        "name": "Robot Kontrolü"
+       },
+       {
+        "code": "KON 421E",
+        "name": "Robot Control"
+       },
+       {
+        "code": "KON 440E",
+        "name": "Legged Robotics"
+       },
+       {
+        "code": "KON 440",
+        "name": "Bacaklı Robotlar"
+       },
+       {
+        "code": "KON 442E",
+        "name": "Introduction to Learning based Control Systems"
+       },
+       {
+        "code": "KON 442",
+        "name": "Öğrenme Tabanlı Kontrol Sistemlerine Giriş"
+       },
+       {
+        "code": "MTH 401E",
+        "name": "RISC-V Architecture &Processor"
+       },
+       {
+        "code": "MTH 401",
+        "name": "RlsC-V Mimarisi ve işlemciTasanmı"
+       },
+       {
+        "code": "MTH 402E",
+        "name": "Flight Mechanics and Applications"
+       },
+       {
+        "code": "MTH 402",
+        "name": "Uçuş Mekaniği & Uygulamaları"
+       },
+       {
+        "code": "MTH 403E",
+        "name": "Fnc.Safety&PwrtrainAppAutoInd"
+       },
+       {
+        "code": "MTH 403",
+        "name": "Otomotive Endüstrisinde Fonksiyonel Emniyet ve Güç Aktarma Organları Uygulamaları"
+       },
+       {
+        "code": "MTH 405E",
+        "name": "Flight Control Systems"
+       },
+       {
+        "code": "MTH 405",
+        "name": "Uçuş Kontrol Sistemleri"
+       },
+       {
+        "code": "MTH 406",
+        "name": "Model Tabanlı Tasarım ve Yapay Zeka"
+       },
+       {
+        "code": "MTH 406E",
+        "name": "Model-Based Desing and Artifical Intelligence"
+       },
+       {
+        "code": "ROS 302E",
+        "name": "Robot Motion Planning & Control"
+       },
+       {
+        "code": "ROS 302",
+        "name": "Robot Hareket Planlama ve Kontrol"
+       },
+       {
+        "code": "ROS 440E",
+        "name": "Swarm Robotics"
+       },
+       {
+        "code": "ROS 440",
+        "name": "Sürü Robotları"
+       },
+       {
+        "code": "ROS 442E",
+        "name": "Social Robotics"
+       },
+       {
+        "code": "ROS 442",
+        "name": "Sosyal Robotlar"
+       },
+       {
+        "code": "ROS 444E",
+        "name": "Soft Robotics"
+       },
+       {
+        "code": "ROS 444",
+        "name": "Yumuşak Robotlar"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

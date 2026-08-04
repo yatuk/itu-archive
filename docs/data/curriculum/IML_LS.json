@@ -1,0 +1,1306 @@
+{
+ "programCode": "IML_LS",
+ "programName": "İmalat Mühendisliği Lisans",
+ "faculty": "Makina Fakültesi",
+ "planLabel": "İmalat Mühendisliği Lisans Programı 2017-2018 / Güz ile 2026-2027 / Güz Dönemleri Arası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101",
+      "name": "Genel Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101L",
+      "name": "Genel Kimya I Laboratuvarı"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103",
+      "name": "Matematik I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 105",
+      "name": "Makine Tasarımına Giriş"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 110",
+      "name": "İmalat Müh. Giriş ve Etik"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 101",
+      "name": "Akademik Danışmanlık"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112",
+      "name": "English I"
+     }
+    },
+    {
+     "elective": {
+      "title": "Beden Eğitimi I (ITB)",
+      "options": [
+       {
+        "code": "BEB 101",
+        "name": "Temel Yüzme Becerisi Öğrenimi"
+       },
+       {
+        "code": "BEB 102",
+        "name": "Yüzme Teknikleri Becerisi Öğr."
+       },
+       {
+        "code": "BEB 103",
+        "name": "Voleybolda Tem.Eğt. ve Bec.Kaz"
+       },
+       {
+        "code": "BEB 104",
+        "name": "Tenis Teknik ve Taktik Eğitim"
+       },
+       {
+        "code": "BEB 105",
+        "name": "Futbol ve Temel Hareket Öğret."
+       },
+       {
+        "code": "BEB 106",
+        "name": "Basketbol Temel Teknik Eğitimi"
+       },
+       {
+        "code": "BEB 111",
+        "name": "Masa Tenisi Tem.Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 114",
+        "name": "Futsal Temel Beceri Eğitim"
+       },
+       {
+        "code": "BEB 115",
+        "name": "Atletizm Temel Eğitimi"
+       },
+       {
+        "code": "BEB 116",
+        "name": "Badminton Temel Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 117",
+        "name": "Eskrim Temel Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 118",
+        "name": "Genel Kond.ve Vücut Geliştirme"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAK 200",
+      "name": "Atölye"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 110E",
+      "name": "Comput.Aided Technical Drawing"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104",
+      "name": "Matematik II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 104E",
+      "name": "Intr to Comp in Mech. Eng (C)"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 114",
+      "name": "Lineer Cebir ve Uygulamaları"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III"
+     }
+    },
+    {
+     "elective": {
+      "title": "Beden Eğitimi II (ITB)",
+      "options": [
+       {
+        "code": "BEB 101",
+        "name": "Temel Yüzme Becerisi Öğrenimi"
+       },
+       {
+        "code": "BEB 102",
+        "name": "Yüzme Teknikleri Becerisi Öğr."
+       },
+       {
+        "code": "BEB 103",
+        "name": "Voleybolda Tem.Eğt. ve Bec.Kaz"
+       },
+       {
+        "code": "BEB 104",
+        "name": "Tenis Teknik ve Taktik Eğitim"
+       },
+       {
+        "code": "BEB 105",
+        "name": "Futbol ve Temel Hareket Öğret."
+       },
+       {
+        "code": "BEB 106",
+        "name": "Basketbol Temel Teknik Eğitimi"
+       },
+       {
+        "code": "BEB 111",
+        "name": "Masa Tenisi Tem.Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 114",
+        "name": "Futsal Temel Beceri Eğitim"
+       },
+       {
+        "code": "BEB 115",
+        "name": "Atletizm Temel Eğitimi"
+       },
+       {
+        "code": "BEB 116",
+        "name": "Badminton Temel Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 117",
+        "name": "Eskrim Temel Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 118",
+        "name": "Genel Kond.ve Vücut Geliştirme"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAK 210E",
+      "name": "Engineering Mathematics"
+     }
+    },
+    {
+     "course": {
+      "code": "MEK 207",
+      "name": "Mühendislik Mekaniği"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 213",
+      "name": "Malzeme Bilimi"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 211E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 205",
+      "name": "Termodinamik"
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Elective Course (ITB)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ELK 226",
+      "name": "Elektrik-Elektronik Müh. Tem."
+     }
+    },
+    {
+     "course": {
+      "code": "MUK 205",
+      "name": "Mukavemet"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 206",
+      "name": "Akışkanlar Mekaniği"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 224E",
+      "name": "Engineering Materials"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 230E",
+      "name": "Alg.Dev.& Comp.App.with Python"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 202E",
+      "name": "Numerical Meth.for Mech. Eng."
+     }
+    },
+    {
+     "elective": {
+      "title": "4. yy Seçmeli Ders (ITB)",
+      "options": [
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       },
+       {
+        "code": "SNT 229",
+        "name": "Türkiye'de Popüler Müzik Tarihinden İzlekler"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAK 312",
+      "name": "Ölçme Değerlendirme"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 333",
+      "name": "Sistem Dinamiği ve Kontrol"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 337",
+      "name": "İmalat Planlama ve Kontrol"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 311",
+      "name": "İmal Usülleri I"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 320",
+      "name": "Makina Elemanları"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 305",
+      "name": "Isı Geçişi"
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "IML 324E",
+      "name": "Comp.Aided Manufacturing Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201",
+      "name": "Ekonomi"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 338",
+      "name": "İmalat Sistemleri"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 322",
+      "name": "İmalatta Otomasyon"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 312",
+      "name": "İmal Usülleri II"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 326E",
+      "name": "Manuf. of Nonmetalic Prod."
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 301",
+      "name": "Kariyer Danışmanlığı"
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders(TB)",
+      "options": [
+       {
+        "code": "MAK 372E",
+        "name": "Intr.to Finite Element Methods"
+       },
+       {
+        "code": "MAK 378E",
+        "name": "Intr.to Nanotech.& Nanosyst."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 401",
+      "name": "İmalat Lab I"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 4901",
+      "name": "İmalat Müh. Tasarımı I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçmeli Ders I (MT)",
+      "options": [
+       {
+        "code": "END 316",
+        "name": "Grup Teknolojisi ve Esnek Üretim Sistemleri"
+       },
+       {
+        "code": "END 445E",
+        "name": "Lean Production Systems"
+       },
+       {
+        "code": "IML 427",
+        "name": "İmalatta İş Güvenliği"
+       },
+       {
+        "code": "IML 460",
+        "name": "Tesis Plan. ve Yerleştirme"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçmeli Ders II (MT)",
+      "options": [
+       {
+        "code": "MAK 4021",
+        "name": "Talaşlı İmalat"
+       },
+       {
+        "code": "MAK 4032",
+        "name": "Metallerin Plastik Şekillendrl"
+       },
+       {
+        "code": "MAK 4034",
+        "name": "Kaynaklı Tasarım ve İmalat"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçmeli Ders III (MT)",
+      "options": [
+       {
+        "code": "END 316",
+        "name": "Grup Teknolojisi ve Esnek Üretim Sistemleri"
+       },
+       {
+        "code": "END 445E",
+        "name": "Lean Production Systems"
+       },
+       {
+        "code": "IML 427",
+        "name": "İmalatta İş Güvenliği"
+       },
+       {
+        "code": "IML 460",
+        "name": "Tesis Plan. ve Yerleştirme"
+       },
+       {
+        "code": "MAK 315",
+        "name": "Mekanik Titreşimler"
+       },
+       {
+        "code": "MAK 4007E",
+        "name": "Microsystem-MEMS Design"
+       },
+       {
+        "code": "MAK 4015E",
+        "name": "Materials Sel.in Dsgn and Mnfc"
+       },
+       {
+        "code": "MAK 4017",
+        "name": "Endüstriyel Akustik ve Gürültü"
+       },
+       {
+        "code": "MAK 4018",
+        "name": "İmalatta Kalite Kontrol"
+       },
+       {
+        "code": "MAK 4019",
+        "name": "Plastik Mlz Konstr. ve İmalat"
+       },
+       {
+        "code": "MAK 4021",
+        "name": "Talaşlı İmalat"
+       },
+       {
+        "code": "MAK 4032",
+        "name": "Metallerin Plastik Şekillendrl"
+       },
+       {
+        "code": "MAK 4034",
+        "name": "Kaynaklı Tasarım ve İmalat"
+       },
+       {
+        "code": "MAK 4035",
+        "name": "Hidrolik ve Pnömatik Devreler"
+       },
+       {
+        "code": "MAK 4037E",
+        "name": "Computer Controlled Sys. Desig"
+       },
+       {
+        "code": "MAK 4049",
+        "name": "Kontrol Elemanları Uygulamala"
+       },
+       {
+        "code": "MAK 4056",
+        "name": "Kontrol Sistemleri Tasarımı"
+       },
+       {
+        "code": "MAK 4068",
+        "name": "Akışkan Gücü Kontrolü"
+       },
+       {
+        "code": "MAK 4071E",
+        "name": "Introduction to Robotics"
+       },
+       {
+        "code": "TEK 361",
+        "name": "Mekanizma Tekniği"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "options": [
+       {
+        "code": "END 344",
+        "name": "Davranış Bilimleri"
+       },
+       {
+        "code": "END 435",
+        "name": "İş Güvenliği"
+       },
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 4902",
+      "name": "İmalat Müh. Tasarımı II"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 438E",
+      "name": "Tool Design"
+     }
+    },
+    {
+     "course": {
+      "code": "IML 404E",
+      "name": "Comp.Simulations in Manuf.Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 405",
+      "name": "Mak. Müh. Yenilikçi Tas. Yönt."
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçimeli Ders I (MT)",
+      "options": [
+       {
+        "code": "END 316",
+        "name": "Grup Teknolojisi ve Esnek Üretim Sistemleri"
+       },
+       {
+        "code": "END 445E",
+        "name": "Lean Production Systems"
+       },
+       {
+        "code": "IML 427",
+        "name": "İmalatta İş Güvenliği"
+       },
+       {
+        "code": "IML 460",
+        "name": "Tesis Plan. ve Yerleştirme"
+       },
+       {
+        "code": "MAK 315",
+        "name": "Mekanik Titreşimler"
+       },
+       {
+        "code": "MAK 4007E",
+        "name": "Microsystem-MEMS Design"
+       },
+       {
+        "code": "MAK 4017",
+        "name": "Endüstriyel Akustik ve Gürültü"
+       },
+       {
+        "code": "MAK 4018",
+        "name": "İmalatta Kalite Kontrol"
+       },
+       {
+        "code": "MAK 4019",
+        "name": "Plastik Mlz Konstr. ve İmalat"
+       },
+       {
+        "code": "MAK 4021",
+        "name": "Talaşlı İmalat"
+       },
+       {
+        "code": "MAK 4032",
+        "name": "Metallerin Plastik Şekillendrl"
+       },
+       {
+        "code": "MAK 4034",
+        "name": "Kaynaklı Tasarım ve İmalat"
+       },
+       {
+        "code": "MAK 4035",
+        "name": "Hidrolik ve Pnömatik Devreler"
+       },
+       {
+        "code": "MAK 4037E",
+        "name": "Computer Controlled Sys. Desig"
+       },
+       {
+        "code": "MAK 4049",
+        "name": "Kontrol Elemanları Uygulamala"
+       },
+       {
+        "code": "MAK 4056",
+        "name": "Kontrol Sistemleri Tasarımı"
+       },
+       {
+        "code": "MAK 4068",
+        "name": "Akışkan Gücü Kontrolü"
+       },
+       {
+        "code": "MAK 4071E",
+        "name": "Introduction to Robotics"
+       },
+       {
+        "code": "TEK 361",
+        "name": "Mekanizma Tekniği"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçimeli Ders II (MT)",
+      "options": [
+       {
+        "code": "MAK 4049",
+        "name": "Kontrol Elemanları Uygulamala"
+       },
+       {
+        "code": "MAK 4056",
+        "name": "Kontrol Sistemleri Tasarımı"
+       },
+       {
+        "code": "MAK 4068",
+        "name": "Akışkan Gücü Kontrolü"
+       },
+       {
+        "code": "MAK 4071E",
+        "name": "Introduction to Robotics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçimeli Ders III (MT)",
+      "options": [
+       {
+        "code": "MAK 4021",
+        "name": "Talaşlı İmalat"
+       },
+       {
+        "code": "MAK 4032",
+        "name": "Metallerin Plastik Şekillendrl"
+       },
+       {
+        "code": "MAK 4034",
+        "name": "Kaynaklı Tasarım ve İmalat"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

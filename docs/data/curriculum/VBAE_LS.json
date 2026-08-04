@@ -1,0 +1,2793 @@
+{
+ "programCode": "VBAE_LS",
+ "programName": "Veri Bilimi ve Analitiği (İngilizce) Lisans",
+ "faculty": "İşletme Fakültesi",
+ "planLabel": "Veri Bilimi ve Analitiği Lisans Programı (%100 İngilizce) 2024 - 2025 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 111E",
+      "name": "Introduction to Data Science and Analytics"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 113E",
+      "name": "Foundations of Algorithm and Programming"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 115E",
+      "name": "Fundamentals of Linux"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 210E",
+      "name": "Linear Algebra and Applications"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 122E",
+      "name": "Discrete Mathematics"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 124E",
+      "name": "Object Oriented Programming"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 252E",
+      "name": "Theory of Probability"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "VBA 211E",
+      "name": "Deterministic Models in Data Science"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 213E",
+      "name": "Data Visualization"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 215E",
+      "name": "Database Management Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 311E",
+      "name": "Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course(ITB-1)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 232E",
+        "name": "Technology and Society"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 324E",
+        "name": "Current Environmental Problems"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "VBA 222E",
+      "name": "Data Structures and Algorithms"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 224E",
+      "name": "Stochastic Models in Data Science"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 312E",
+      "name": "Data Analytics"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "elective": {
+      "title": "Restricted Elective Crs.(MT-1)",
+      "options": [
+       {
+        "code": "BHB 202E",
+        "name": "Introduction to Mathematical Methods in Computational Science and Engineering"
+       },
+       {
+        "code": "BHB 204E",
+        "name": "Spatial Data Science"
+       },
+       {
+        "code": "ECN 201E",
+        "name": "Intermediate Microeconomics"
+       },
+       {
+        "code": "ECN 202E",
+        "name": "Intermediate Macroeconomics"
+       },
+       {
+        "code": "ECN 302E",
+        "name": "Econometrics II"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 327E",
+        "name": "Decision Theory"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 367E",
+        "name": "Automation in Production Syst."
+       },
+       {
+        "code": "END 369E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 446E",
+        "name": "Statistical Experimental Design"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
+        "code": "END 457E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "END 458E",
+        "name": "Nonlinear Optimization"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
+        "code": "END 474E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "END 493E",
+        "name": "Applied Statistics"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 442E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course (ITB-2)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 232E",
+        "name": "Technology and Society"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 324E",
+        "name": "Current Environmental Problems"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "VBA 313E",
+      "name": "Deep Learning"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 315E",
+      "name": "Machine Learning"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 317E",
+      "name": "Signal and Image Analytics"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 319E",
+      "name": "Ethics and Law in Data Science"
+     }
+    },
+    {
+     "elective": {
+      "title": "Restricted Elective Crs.(MT-2)",
+      "options": [
+       {
+        "code": "BHB 202E",
+        "name": "Introduction to Mathematical Methods in Computational Science and Engineering"
+       },
+       {
+        "code": "BHB 204E",
+        "name": "Spatial Data Science"
+       },
+       {
+        "code": "ECN 201E",
+        "name": "Intermediate Microeconomics"
+       },
+       {
+        "code": "ECN 202E",
+        "name": "Intermediate Macroeconomics"
+       },
+       {
+        "code": "ECN 302E",
+        "name": "Econometrics II"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 327E",
+        "name": "Decision Theory"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 367E",
+        "name": "Automation in Production Syst."
+       },
+       {
+        "code": "END 369E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 446E",
+        "name": "Statistical Experimental Design"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
+        "code": "END 457E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "END 458E",
+        "name": "Nonlinear Optimization"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
+        "code": "END 474E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "END 493E",
+        "name": "Applied Statistics"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 442E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Restricted Elective Crs.(MT-3)",
+      "options": [
+       {
+        "code": "BHB 202E",
+        "name": "Introduction to Mathematical Methods in Computational Science and Engineering"
+       },
+       {
+        "code": "BHB 204E",
+        "name": "Spatial Data Science"
+       },
+       {
+        "code": "ECN 201E",
+        "name": "Intermediate Microeconomics"
+       },
+       {
+        "code": "ECN 202E",
+        "name": "Intermediate Macroeconomics"
+       },
+       {
+        "code": "ECN 302E",
+        "name": "Econometrics II"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 327E",
+        "name": "Decision Theory"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 367E",
+        "name": "Automation in Production Syst."
+       },
+       {
+        "code": "END 369E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 446E",
+        "name": "Statistical Experimental Design"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
+        "code": "END 457E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "END 458E",
+        "name": "Nonlinear Optimization"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
+        "code": "END 474E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "END 493E",
+        "name": "Applied Statistics"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 442E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "VBA 322E",
+      "name": "Computer Vision"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 324E",
+      "name": "Fundamentals of Natural Language Processing"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 326E",
+      "name": "Big Data and Analytics"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 328E",
+      "name": "High Performance Computing"
+     }
+    },
+    {
+     "elective": {
+      "title": "Restricted Elective Crs.(MT-4)",
+      "options": [
+       {
+        "code": "BHB 202E",
+        "name": "Introduction to Mathematical Methods in Computational Science and Engineering"
+       },
+       {
+        "code": "BHB 204E",
+        "name": "Spatial Data Science"
+       },
+       {
+        "code": "ECN 201E",
+        "name": "Intermediate Microeconomics"
+       },
+       {
+        "code": "ECN 202E",
+        "name": "Intermediate Macroeconomics"
+       },
+       {
+        "code": "ECN 302E",
+        "name": "Econometrics II"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 327E",
+        "name": "Decision Theory"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 367E",
+        "name": "Automation in Production Syst."
+       },
+       {
+        "code": "END 369E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 446E",
+        "name": "Statistical Experimental Design"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
+        "code": "END 457E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "END 458E",
+        "name": "Nonlinear Optimization"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
+        "code": "END 474E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "END 493E",
+        "name": "Applied Statistics"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 442E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "VBA 411E",
+      "name": "Internet of Things"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 413E",
+      "name": "Cyber Security"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 4901E",
+      "name": "Graduation Project I"
+     }
+    },
+    {
+     "elective": {
+      "title": "Restricted Elective Crs.(MT-5)",
+      "options": [
+       {
+        "code": "BHB 202E",
+        "name": "Introduction to Mathematical Methods in Computational Science and Engineering"
+       },
+       {
+        "code": "BHB 204E",
+        "name": "Spatial Data Science"
+       },
+       {
+        "code": "ECN 201E",
+        "name": "Intermediate Microeconomics"
+       },
+       {
+        "code": "ECN 202E",
+        "name": "Intermediate Macroeconomics"
+       },
+       {
+        "code": "ECN 302E",
+        "name": "Econometrics II"
+       },
+       {
+        "code": "ECN 307E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 327E",
+        "name": "Decision Theory"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 367E",
+        "name": "Automation in Production Syst."
+       },
+       {
+        "code": "END 369E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 446E",
+        "name": "Statistical Experimental Design"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
+        "code": "END 457E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "END 458E",
+        "name": "Nonlinear Optimization"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
+        "code": "END 474E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "END 493E",
+        "name": "Applied Statistics"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 442E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course (MT-1)",
+      "options": [
+       {
+        "code": "BHB 202E",
+        "name": "Introduction to Mathematical Methods in Computational Science and Engineering"
+       },
+       {
+        "code": "BHB 204E",
+        "name": "Spatial Data Science"
+       },
+       {
+        "code": "BHB 401E",
+        "name": "Sustainable Data Center Infrastructure"
+       },
+       {
+        "code": "BHB 402E",
+        "name": "Computational Neuroscience"
+       },
+       {
+        "code": "ECN 201E",
+        "name": "Intermediate Microeconomics"
+       },
+       {
+        "code": "ECN 202E",
+        "name": "Intermediate Macroeconomics"
+       },
+       {
+        "code": "ECN 302E",
+        "name": "Econometrics II"
+       },
+       {
+        "code": "ECN 410E",
+        "name": "Energy Economics"
+       },
+       {
+        "code": "ECN 411E",
+        "name": "Transport Economics"
+       },
+       {
+        "code": "ECN 412E",
+        "name": "Environmental Economics"
+       },
+       {
+        "code": "ECN 413E",
+        "name": "Health Economics"
+       },
+       {
+        "code": "ECN 414E",
+        "name": "Economics of Education"
+       },
+       {
+        "code": "ECN 415E",
+        "name": "Urban Economics"
+       },
+       {
+        "code": "ECN 420E",
+        "name": "Behavioural Economics"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 312E",
+        "name": "Engineering Economics"
+       },
+       {
+        "code": "END 327E",
+        "name": "Decision Theory"
+       },
+       {
+        "code": "END 339E",
+        "name": "Project Management"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 367E",
+        "name": "Automation in Production Syst."
+       },
+       {
+        "code": "END 369E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 375E",
+        "name": "Human-Computer Interaction"
+       },
+       {
+        "code": "END 446E",
+        "name": "Statistical Experimental Design"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
+        "code": "END 457E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "END 458E",
+        "name": "Nonlinear Optimization"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
+        "code": "END 474E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "END 493E",
+        "name": "Applied Statistics"
+       },
+       {
+        "code": "ISL 224E",
+        "name": "Cost Accounting"
+       },
+       {
+        "code": "ISL 333E",
+        "name": "Finance"
+       },
+       {
+        "code": "ISL 343E",
+        "name": "Management Information Syst."
+       },
+       {
+        "code": "ISL 353E",
+        "name": "Marketing"
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 442E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "VBA 422E",
+      "name": "Cloud Computing"
+     }
+    },
+    {
+     "course": {
+      "code": "VBA 4902E",
+      "name": "Graduation Project II"
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course (MT-2)",
+      "options": [
+       {
+        "code": "BHB 202E",
+        "name": "Introduction to Mathematical Methods in Computational Science and Engineering"
+       },
+       {
+        "code": "BHB 204E",
+        "name": "Spatial Data Science"
+       },
+       {
+        "code": "BHB 401E",
+        "name": "Sustainable Data Center Infrastructure"
+       },
+       {
+        "code": "BHB 402E",
+        "name": "Computational Neuroscience"
+       },
+       {
+        "code": "ECN 201E",
+        "name": "Intermediate Microeconomics"
+       },
+       {
+        "code": "ECN 202E",
+        "name": "Intermediate Macroeconomics"
+       },
+       {
+        "code": "ECN 302E",
+        "name": "Econometrics II"
+       },
+       {
+        "code": "ECN 410E",
+        "name": "Energy Economics"
+       },
+       {
+        "code": "ECN 411E",
+        "name": "Transport Economics"
+       },
+       {
+        "code": "ECN 412E",
+        "name": "Environmental Economics"
+       },
+       {
+        "code": "ECN 413E",
+        "name": "Health Economics"
+       },
+       {
+        "code": "ECN 414E",
+        "name": "Economics of Education"
+       },
+       {
+        "code": "ECN 415E",
+        "name": "Urban Economics"
+       },
+       {
+        "code": "ECN 420E",
+        "name": "Behavioural Economics"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 312E",
+        "name": "Engineering Economics"
+       },
+       {
+        "code": "END 327E",
+        "name": "Decision Theory"
+       },
+       {
+        "code": "END 339E",
+        "name": "Project Management"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 367E",
+        "name": "Automation in Production Syst."
+       },
+       {
+        "code": "END 369E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 375E",
+        "name": "Human-Computer Interaction"
+       },
+       {
+        "code": "END 446E",
+        "name": "Statistical Experimental Design"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
+        "code": "END 457E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "END 458E",
+        "name": "Nonlinear Optimization"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
+        "code": "END 474E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "END 493E",
+        "name": "Applied Statistics"
+       },
+       {
+        "code": "ISL 224E",
+        "name": "Cost Accounting"
+       },
+       {
+        "code": "ISL 333E",
+        "name": "Finance"
+       },
+       {
+        "code": "ISL 343E",
+        "name": "Management Information Syst."
+       },
+       {
+        "code": "ISL 353E",
+        "name": "Marketing"
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 442E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course (MT-3)",
+      "options": [
+       {
+        "code": "BHB 202E",
+        "name": "Introduction to Mathematical Methods in Computational Science and Engineering"
+       },
+       {
+        "code": "BHB 204E",
+        "name": "Spatial Data Science"
+       },
+       {
+        "code": "BHB 401E",
+        "name": "Sustainable Data Center Infrastructure"
+       },
+       {
+        "code": "BHB 402E",
+        "name": "Computational Neuroscience"
+       },
+       {
+        "code": "ECN 201E",
+        "name": "Intermediate Microeconomics"
+       },
+       {
+        "code": "ECN 202E",
+        "name": "Intermediate Macroeconomics"
+       },
+       {
+        "code": "ECN 302E",
+        "name": "Econometrics II"
+       },
+       {
+        "code": "ECN 410E",
+        "name": "Energy Economics"
+       },
+       {
+        "code": "ECN 411E",
+        "name": "Transport Economics"
+       },
+       {
+        "code": "ECN 412E",
+        "name": "Environmental Economics"
+       },
+       {
+        "code": "ECN 413E",
+        "name": "Health Economics"
+       },
+       {
+        "code": "ECN 414E",
+        "name": "Economics of Education"
+       },
+       {
+        "code": "ECN 415E",
+        "name": "Urban Economics"
+       },
+       {
+        "code": "ECN 420E",
+        "name": "Behavioural Economics"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       },
+       {
+        "code": "END 312E",
+        "name": "Engineering Economics"
+       },
+       {
+        "code": "END 327E",
+        "name": "Decision Theory"
+       },
+       {
+        "code": "END 339E",
+        "name": "Project Management"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 367E",
+        "name": "Automation in Production Syst."
+       },
+       {
+        "code": "END 369E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "END 375E",
+        "name": "Human-Computer Interaction"
+       },
+       {
+        "code": "END 446E",
+        "name": "Statistical Experimental Design"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
+        "code": "END 457E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "END 458E",
+        "name": "Nonlinear Optimization"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
+        "code": "END 474E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "END 493E",
+        "name": "Applied Statistics"
+       },
+       {
+        "code": "ISL 224E",
+        "name": "Cost Accounting"
+       },
+       {
+        "code": "ISL 333E",
+        "name": "Finance"
+       },
+       {
+        "code": "ISL 343E",
+        "name": "Management Information Syst."
+       },
+       {
+        "code": "ISL 353E",
+        "name": "Marketing"
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 442E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Course (ITB-3)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 232E",
+        "name": "Technology and Society"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 324E",
+        "name": "Current Environmental Problems"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

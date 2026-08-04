@@ -1,0 +1,1695 @@
+{
+ "programCode": "INS_LS",
+ "programName": "İnşaat Mühendisliği Lisans",
+ "faculty": "İnşaat Fakültesi",
+ "planLabel": "İnşaat Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 101",
+      "name": "Fizik I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101",
+      "name": "Genel Kimya I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 101",
+      "name": "Teknik Resim"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 111",
+      "name": "İnşaat Müh. Giriş ve Etik"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 107E",
+      "name": "Int. to Prog. Lang. (Python)"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 102 FIZ 102E",
+      "name": "Fizik II (Elektrik Fiziği)"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 102 INS 102E",
+      "name": "Statik"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 112 INS 112E",
+      "name": "İnşaat Mühendisleri İçin Yer Bilimi"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104E MAT 104",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    },
+    {
+     "elective": {
+      "title": "2.yy Serbest Seçim Dersi (ITB)",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "INS 110",
+        "name": "Modern Bilimin Doğuşu ve Gelişm"
+       },
+       {
+        "code": "INS 110",
+        "name": "Modern Bilimin Doğuşu ve Gelişm"
+       },
+       {
+        "code": "INS 114",
+        "name": "Bilim & Teknoloji Gelişimi"
+       },
+       {
+        "code": "INS 114",
+        "name": "Bilim & Teknoloji Gelişimi"
+       },
+       {
+        "code": "INS 116",
+        "name": "Davranış Bilimlerine Giriş"
+       },
+       {
+        "code": "INS 116",
+        "name": "Davranış Bilimlerine Giriş"
+       },
+       {
+        "code": "INS 480",
+        "name": "İşletme Yönetimi"
+       },
+       {
+        "code": "INS 486",
+        "name": "Yönetimde Yaratıcılık"
+       },
+       {
+        "code": "INS 488",
+        "name": "Evrenin Oluşumu ve Gelişimi"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020",
+        "name": "Modernitenin Oluşumu"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037",
+        "name": "Bilgi, Dil ve Mantık"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087",
+        "name": "Medya ve Toplum"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094",
+        "name": "Uluslararası İlişkilerve Küreselleşme"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095",
+        "name": "Teknoloji, Politika ve Hukuk"
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143",
+        "name": "Durrel ve Said:Oryanta.Uyg ve"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151",
+        "name": "İnsan Kaynakları Yönetimi"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171",
+        "name": "Bilim, Teknoloji ve Toplum"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179",
+        "name": "İçiçe Ayr.Ede.:Vizyone,Seyf.,A"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201",
+        "name": "İnsan ve Topl. Bilim. Giriş"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202",
+        "name": "Dünya Tarihi"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203",
+        "name": "Sosyoloji"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204",
+        "name": "Siyaset Bilimi"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205",
+        "name": "Felsefe"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206",
+        "name": "Dünya Politikasında Meseleler"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207",
+        "name": "Osmanlı Tarihi"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208",
+        "name": "Modern Türkiye'nin Oluşumu"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209",
+        "name": "Türkiye ve Dünya"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "ITB 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "ITB 213",
+        "name": "Edebiyat ve Toplum"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214",
+        "name": "Modern Ortadoğu"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215",
+        "name": "Tarih ve Toplum"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216",
+        "name": "Ekonomi ve Toplum"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217",
+        "name": "Mühendislik Etiği"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218",
+        "name": "Bilim ve Teknoloji Tarihi"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219",
+        "name": "Etik"
+       },
+       {
+        "code": "ITB 220",
+        "name": "Psikoloji"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221",
+        "name": "Anadolu Arkeolojisi"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222",
+        "name": "Kent ve Toplum"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224",
+        "name": "Çevre ve Toplum"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "ITB 227",
+        "name": "Siyaset Teorisi"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228",
+        "name": "Toplumsal Cinsiyet Çalışmaları"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230",
+        "name": "Afet Bilinci"
+       },
+       {
+        "code": "ITB 231",
+        "name": "Gönüllülük Çalışmaları"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233",
+        "name": "Antropoloji"
+       },
+       {
+        "code": "ITB 234",
+        "name": "Medeniyetlerin Doğuşu"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "ITB 235",
+        "name": "Türkiye ve Avrupa Birliği"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       },
+       {
+        "code": "SNT 101",
+        "name": "Heykel Sanatına Bakış"
+       },
+       {
+        "code": "SNT 102",
+        "name": "Fotoğraf"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103",
+        "name": "Desen"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104",
+        "name": "Mitoloji ve Sanat"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105",
+        "name": "Sinema Sanatı"
+       },
+       {
+        "code": "SNT 106",
+        "name": "Geleneks. Türk El Sanatları"
+       },
+       {
+        "code": "SNT 107",
+        "name": "İlkçağ Anadolu Uygarlıkları"
+       },
+       {
+        "code": "SNT 108",
+        "name": "Seramik"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 112",
+        "name": "Tiyatro"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113",
+        "name": "Sanat ve Yorum"
+       },
+       {
+        "code": "SNT 114",
+        "name": "Günümüz Sanatı"
+       },
+       {
+        "code": "SNT 115",
+        "name": "Modernite ve Görsel Kültür"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 116",
+        "name": "İletişim Sanatı"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 119",
+        "name": "Popüler Müzik Tarihi"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 123",
+        "name": "Film Yapımı"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211",
+        "name": "İstanbul:Tarih,Sanat ve Toplum"
+       },
+       {
+        "code": "SNT 212",
+        "name": "Sanat,Kültür ve Toplum"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 214",
+        "name": "Performans, Müzik ve Dans"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226",
+        "name": "Sanat Felsefesi"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       },
+       {
+        "code": "SNT 229",
+        "name": "Türkiye'de Popüler Müzik Tarihinden İzlekler"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "DNK 201 DNK 201E",
+      "name": "Dinamik"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 210 INS 210E",
+      "name": "İnşaat Mühendisleri için Matematik"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 217 INS 217E",
+      "name": "Mukavemet I"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 215 INS 215E",
+      "name": "Malzeme Bilimi"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 202 INS 202E",
+      "name": "İnşaat Müh. Sayısal Yöntemler"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "AKM 204 AKM 204E",
+      "name": "Akışkanlar Mekaniği"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 218 INS 218E",
+      "name": "Mukavemet II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 232 INS 232E",
+      "name": "Ölçme Bilgisi"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 230 INS 230E",
+      "name": "Yapı Malzemesi"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 113E",
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+     }
+    },
+    {
+     "elective": {
+      "title": "4th Semester Elective Course (TB)",
+      "options": [
+       {
+        "code": "BIO 301E",
+        "name": "Fundamentals of Biology"
+       },
+       {
+        "code": "INS 214E",
+        "name": "Partial Differential Equations"
+       },
+       {
+        "code": "INS 216E",
+        "name": "Analytical Mechanics"
+       },
+       {
+        "code": "INS 226",
+        "name": "Mühendis Matematik Model Esas"
+       },
+       {
+        "code": "INS 227",
+        "name": "Karmaşık Değişknli Fonks. Teo."
+       },
+       {
+        "code": "KIM 202",
+        "name": "Fiziksel Kimya"
+       },
+       {
+        "code": "KIM 202E",
+        "name": "Physical Chemistry"
+       },
+       {
+        "code": "KIM 205",
+        "name": "Organik Kimya"
+       },
+       {
+        "code": "KIM 205E",
+        "name": "Organic Chemistry"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "INS 360 INS 360E",
+      "name": "Hidrolik"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 323 INS 323E",
+      "name": "Yapı Statiği I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 325 INS 325E",
+      "name": "Demiryolu Müh."
+     }
+    },
+    {
+     "course": {
+      "code": "INS 303 INS 303E",
+      "name": "Zemin Mekaniği I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 305 INS 305E",
+      "name": "Olasılık ve İstatistik"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 301 INS 301E",
+      "name": "Mühendislik Ekonomisi"
+     }
+    },
+    {
+     "elective": {
+      "title": "5th Semester Elective Course (TM)",
+      "options": [
+       {
+        "code": "INS 335E",
+        "name": "Advanced Strength of Materials"
+       },
+       {
+        "code": "INS 337E",
+        "name": "Mechanics of Inelastic Materia"
+       },
+       {
+        "code": "INS 339E",
+        "name": "Fracture Mechanics of Concrete"
+       },
+       {
+        "code": "INS 343E",
+        "name": "Durability of Concrete"
+       },
+       {
+        "code": "INS 345",
+        "name": "Yap. Bilg. Dest. Model. Giriş"
+       },
+       {
+        "code": "INS 345E",
+        "name": "Intr.toComp.Aid.Model.of Strc."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "INS 338 INS 338E",
+      "name": "Betonarme I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 354 INS 354E",
+      "name": "Hidroloji"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 302 INS 302E",
+      "name": "Karayolu Mühendisliği"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 336 INS 336E",
+      "name": "Yapı Statiği II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 332E INS 332",
+      "name": "Foundation Engineering I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 304 INS 304E",
+      "name": "Yapı İşletmesi"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 344 INS 344E",
+      "name": "Çelik Yapılar I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 433 INS 433E",
+      "name": "Betonarme II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 405 INS 405E",
+      "name": "İnş.İşçi Sağlığı ve İş Güven."
+     }
+    },
+    {
+     "course": {
+      "code": "INS 401 INS 401E",
+      "name": "Su Kaynakları"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 4901 INS 4901E",
+      "name": "İnşaat Müh. Tasarımı I"
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "INS 4031",
+        "name": "Yapı Dinamiği"
+       },
+       {
+        "code": "INS 4033",
+        "name": "Şantiye Tekniği"
+       },
+       {
+        "code": "INS 4035",
+        "name": "Yapıların Yalıtımı & Korunması"
+       },
+       {
+        "code": "INS 4037",
+        "name": "Ahşap Yapılar"
+       },
+       {
+        "code": "INS 4039",
+        "name": "Yapısal Yangın Güvenliği"
+       },
+       {
+        "code": "INS 4041",
+        "name": "Bina Tasarım Yönetimi"
+       },
+       {
+        "code": "INS 4043",
+        "name": "Mimari Yapısal Tasarım"
+       },
+       {
+        "code": "INS 4045E",
+        "name": "Hydrologic Analysis and Design"
+       },
+       {
+        "code": "INS 4047E",
+        "name": "Structural Analysis and Design"
+       },
+       {
+        "code": "INS 4049E",
+        "name": "Soil Mechanics II"
+       },
+       {
+        "code": "INS 4051E",
+        "name": "Finite Element Methods"
+       },
+       {
+        "code": "INS 4053",
+        "name": "Yapı Statiği III"
+       },
+       {
+        "code": "INS 4055",
+        "name": "Betonarme Yüksek Binalar"
+       },
+       {
+        "code": "INS 4057",
+        "name": "Akarsu Hidroliği"
+       },
+       {
+        "code": "INS 4059",
+        "name": "Trafik Mühendisliği"
+       },
+       {
+        "code": "INS 4061",
+        "name": "Tünel İnşaatı"
+       },
+       {
+        "code": "INS 4063",
+        "name": "Esnek Yol Üstyapıları"
+       },
+       {
+        "code": "INS 4065",
+        "name": "Mühendislikte Bilgisayar Uygl"
+       },
+       {
+        "code": "INS 4067",
+        "name": "Yapı Sistem. Enerji Metodları"
+       },
+       {
+        "code": "INS 4069",
+        "name": "Temiz Enerji Tür. ve Mod. Tekn"
+       },
+       {
+        "code": "INS 4071",
+        "name": "Çubuk Sonlu Elemanlar"
+       },
+       {
+        "code": "INS 4073",
+        "name": "Temel İnşaatı II"
+       },
+       {
+        "code": "INS 4075",
+        "name": "Hidrolojik Modelleme"
+       },
+       {
+        "code": "INS 4075E",
+        "name": "Hydrologic Modeling"
+       },
+       {
+        "code": "INS 4077",
+        "name": "Su Getirme&Kanaliz. Sist.Tas."
+       },
+       {
+        "code": "INS 4077E",
+        "name": "Dsgn.of Water Supp.&Sewer Sys."
+       },
+       {
+        "code": "INS 4079",
+        "name": "Kıyı & Deniz Yapısı Sağ. İzl."
+       },
+       {
+        "code": "INS 4079E",
+        "name": "Health Mon.of Coast.&Oce.Stru."
+       },
+       {
+        "code": "INS 4081",
+        "name": "Yap. Tas.&Ana.için Üç Boy.Mod."
+       },
+       {
+        "code": "INS 4081E",
+        "name": "3D Model. to Des. &Analy.Strc."
+       },
+       {
+        "code": "MYZ 303E",
+        "name": "Artificial Intelligence in Civil Engineering"
+       },
+       {
+        "code": "MYZ 303",
+        "name": "İnşaat Mühendisliğinde Yapay Zeka"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "INS 4031",
+        "name": "Yapı Dinamiği"
+       },
+       {
+        "code": "INS 4033",
+        "name": "Şantiye Tekniği"
+       },
+       {
+        "code": "INS 4035",
+        "name": "Yapıların Yalıtımı & Korunması"
+       },
+       {
+        "code": "INS 4037",
+        "name": "Ahşap Yapılar"
+       },
+       {
+        "code": "INS 4039",
+        "name": "Yapısal Yangın Güvenliği"
+       },
+       {
+        "code": "INS 4041",
+        "name": "Bina Tasarım Yönetimi"
+       },
+       {
+        "code": "INS 4043",
+        "name": "Mimari Yapısal Tasarım"
+       },
+       {
+        "code": "INS 4045E",
+        "name": "Hydrologic Analysis and Design"
+       },
+       {
+        "code": "INS 4047E",
+        "name": "Structural Analysis and Design"
+       },
+       {
+        "code": "INS 4049E",
+        "name": "Soil Mechanics II"
+       },
+       {
+        "code": "INS 4051E",
+        "name": "Finite Element Methods"
+       },
+       {
+        "code": "INS 4053",
+        "name": "Yapı Statiği III"
+       },
+       {
+        "code": "INS 4055",
+        "name": "Betonarme Yüksek Binalar"
+       },
+       {
+        "code": "INS 4057",
+        "name": "Akarsu Hidroliği"
+       },
+       {
+        "code": "INS 4059",
+        "name": "Trafik Mühendisliği"
+       },
+       {
+        "code": "INS 4061",
+        "name": "Tünel İnşaatı"
+       },
+       {
+        "code": "INS 4063",
+        "name": "Esnek Yol Üstyapıları"
+       },
+       {
+        "code": "INS 4065",
+        "name": "Mühendislikte Bilgisayar Uygl"
+       },
+       {
+        "code": "INS 4067",
+        "name": "Yapı Sistem. Enerji Metodları"
+       },
+       {
+        "code": "INS 4069",
+        "name": "Temiz Enerji Tür. ve Mod. Tekn"
+       },
+       {
+        "code": "INS 4071",
+        "name": "Çubuk Sonlu Elemanlar"
+       },
+       {
+        "code": "INS 4073",
+        "name": "Temel İnşaatı II"
+       },
+       {
+        "code": "INS 4075",
+        "name": "Hidrolojik Modelleme"
+       },
+       {
+        "code": "INS 4075E",
+        "name": "Hydrologic Modeling"
+       },
+       {
+        "code": "INS 4077",
+        "name": "Su Getirme&Kanaliz. Sist.Tas."
+       },
+       {
+        "code": "INS 4077E",
+        "name": "Dsgn.of Water Supp.&Sewer Sys."
+       },
+       {
+        "code": "INS 4079",
+        "name": "Kıyı & Deniz Yapısı Sağ. İzl."
+       },
+       {
+        "code": "INS 4079E",
+        "name": "Health Mon.of Coast.&Oce.Stru."
+       },
+       {
+        "code": "INS 4081",
+        "name": "Yap. Tas.&Ana.için Üç Boy.Mod."
+       },
+       {
+        "code": "INS 4081E",
+        "name": "3D Model. to Des. &Analy.Strc."
+       },
+       {
+        "code": "MYZ 303E",
+        "name": "Artificial Intelligence in Civil Engineering"
+       },
+       {
+        "code": "MYZ 303",
+        "name": "İnşaat Mühendisliğinde Yapay Zeka"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "INS 462 INS 462E",
+      "name": "Mühendislik Etiği"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "INS 4902 INS 4902E",
+      "name": "İnşaat Müh. Tasarımı II"
+     }
+    },
+    {
+     "course": {
+      "code": "HUK 201",
+      "name": "İş Hukuku"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "options": [
+       {
+        "code": "CEV 476",
+        "name": "Su Temini ve Çevre Sağlığı II"
+       },
+       {
+        "code": "INS 4032E",
+        "name": "Oceanography"
+       },
+       {
+        "code": "INS 4034",
+        "name": "Çelik Köprüler"
+       },
+       {
+        "code": "INS 4036E",
+        "name": "Fundamentals of Earthquake Eng"
+       },
+       {
+        "code": "INS 4038E",
+        "name": "Reinforced Concrete Structures"
+       },
+       {
+        "code": "INS 4040E",
+        "name": "Irrigation and Drainage"
+       },
+       {
+        "code": "INS 4042E",
+        "name": "Dams"
+       },
+       {
+        "code": "INS 4044E",
+        "name": "Plastic Dsgn of Steel Strctrs"
+       },
+       {
+        "code": "INS 4046E",
+        "name": "Tunnelling Design &Consruction"
+       },
+       {
+        "code": "INS 4048E",
+        "name": "Geotechnical Earthquake Eng"
+       },
+       {
+        "code": "INS 4050",
+        "name": "Yapı statiğinde Özel Konular"
+       },
+       {
+        "code": "INS 4052",
+        "name": "Betonarme Temeller"
+       },
+       {
+        "code": "INS 4054",
+        "name": "Çelik Yapılar II"
+       },
+       {
+        "code": "INS 4056",
+        "name": "Çelik Yapıların Tasarımı"
+       },
+       {
+        "code": "INS 4058",
+        "name": "İleri Beton Teknolojisi"
+       },
+       {
+        "code": "INS 4060E",
+        "name": "Hydroelectric Power Plants"
+       },
+       {
+        "code": "INS 4062",
+        "name": "Betonarme III"
+       },
+       {
+        "code": "INS 4064",
+        "name": "Yapı Müh. Bilg. Dest. Çözüml."
+       },
+       {
+        "code": "INS 4066",
+        "name": "Betonarme Yaplr Kalıp & İskele"
+       },
+       {
+        "code": "INS 4068",
+        "name": "Depreme Dayanıklı Yapı Tsrm"
+       },
+       {
+        "code": "INS 4070",
+        "name": "Öngerilmeli Beton"
+       },
+       {
+        "code": "INS 4072",
+        "name": "Ulaştırmada Altyapı Tesisleri"
+       },
+       {
+        "code": "INS 4074",
+        "name": "Beton Yollar"
+       },
+       {
+        "code": "INS 4076E",
+        "name": "Intr.to Environmental Geotech."
+       },
+       {
+        "code": "INS 4078",
+        "name": "Yapı İşletmesi Hukuku"
+       },
+       {
+        "code": "INS 4080",
+        "name": "Çokkatlı Çelik Yapılar"
+       },
+       {
+        "code": "INS 4082",
+        "name": "Metal Yapı Eleman Yorulması"
+       },
+       {
+        "code": "INS 4084",
+        "name": "Kıyı ve Liman Yapıları"
+       },
+       {
+        "code": "INS 4086E",
+        "name": "Experimental Hydraulics"
+       },
+       {
+        "code": "MYZ 303E",
+        "name": "Artificial Intelligence in Civil Engineering"
+       },
+       {
+        "code": "MYZ 303",
+        "name": "İnşaat Mühendisliğinde Yapay Zeka"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "options": [
+       {
+        "code": "CEV 476",
+        "name": "Su Temini ve Çevre Sağlığı II"
+       },
+       {
+        "code": "INS 4032E",
+        "name": "Oceanography"
+       },
+       {
+        "code": "INS 4034",
+        "name": "Çelik Köprüler"
+       },
+       {
+        "code": "INS 4036E",
+        "name": "Fundamentals of Earthquake Eng"
+       },
+       {
+        "code": "INS 4038E",
+        "name": "Reinforced Concrete Structures"
+       },
+       {
+        "code": "INS 4040E",
+        "name": "Irrigation and Drainage"
+       },
+       {
+        "code": "INS 4042E",
+        "name": "Dams"
+       },
+       {
+        "code": "INS 4044E",
+        "name": "Plastic Dsgn of Steel Strctrs"
+       },
+       {
+        "code": "INS 4046E",
+        "name": "Tunnelling Design &Consruction"
+       },
+       {
+        "code": "INS 4048E",
+        "name": "Geotechnical Earthquake Eng"
+       },
+       {
+        "code": "INS 4050",
+        "name": "Yapı statiğinde Özel Konular"
+       },
+       {
+        "code": "INS 4052",
+        "name": "Betonarme Temeller"
+       },
+       {
+        "code": "INS 4054",
+        "name": "Çelik Yapılar II"
+       },
+       {
+        "code": "INS 4056",
+        "name": "Çelik Yapıların Tasarımı"
+       },
+       {
+        "code": "INS 4058",
+        "name": "İleri Beton Teknolojisi"
+       },
+       {
+        "code": "INS 4060E",
+        "name": "Hydroelectric Power Plants"
+       },
+       {
+        "code": "INS 4062",
+        "name": "Betonarme III"
+       },
+       {
+        "code": "INS 4064",
+        "name": "Yapı Müh. Bilg. Dest. Çözüml."
+       },
+       {
+        "code": "INS 4066",
+        "name": "Betonarme Yaplr Kalıp & İskele"
+       },
+       {
+        "code": "INS 4068",
+        "name": "Depreme Dayanıklı Yapı Tsrm"
+       },
+       {
+        "code": "INS 4070",
+        "name": "Öngerilmeli Beton"
+       },
+       {
+        "code": "INS 4072",
+        "name": "Ulaştırmada Altyapı Tesisleri"
+       },
+       {
+        "code": "INS 4074",
+        "name": "Beton Yollar"
+       },
+       {
+        "code": "INS 4076E",
+        "name": "Intr.to Environmental Geotech."
+       },
+       {
+        "code": "INS 4078",
+        "name": "Yapı İşletmesi Hukuku"
+       },
+       {
+        "code": "INS 4080",
+        "name": "Çokkatlı Çelik Yapılar"
+       },
+       {
+        "code": "INS 4082",
+        "name": "Metal Yapı Eleman Yorulması"
+       },
+       {
+        "code": "INS 4084",
+        "name": "Kıyı ve Liman Yapıları"
+       },
+       {
+        "code": "INS 4086E",
+        "name": "Experimental Hydraulics"
+       },
+       {
+        "code": "MYZ 303E",
+        "name": "Artificial Intelligence in Civil Engineering"
+       },
+       {
+        "code": "MYZ 303",
+        "name": "İnşaat Mühendisliğinde Yapay Zeka"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

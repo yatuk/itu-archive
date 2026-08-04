@@ -1,0 +1,1057 @@
+{
+ "programCode": "YZVE_LS",
+ "programName": "Yapay Zeka ve Veri Mühendisliği (İngilizce) Lisans",
+ "faculty": "Bilgisayar ve Bilişim Fakültesi",
+ "planLabel": "Yapay Zeka ve Veri Mühendisliği Lisans Programı (%100 İngilizce) 2024-2025 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "BBF 101E",
+      "name": "Introduction to Information Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 103E",
+      "name": "Intr. to AI & Data Eng& Ethics"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "BBF 102E",
+      "name": "Linear Algebra and Applications"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 100",
+      "name": "EAP Through Global Goals"
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "BBF 103E",
+      "name": "Discrete Mathematics"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 104E",
+      "name": "Introduction to Programming for Data Science"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 112A",
+      "name": "Basics of Academic Writing"
+     }
+    },
+    {
+     "course": {
+      "code": "DAN 102",
+      "name": "Girişimcilik & Kariyer Danış."
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 121",
+      "name": "Türk Dili I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BBF 201E",
+      "name": "Probability and Statistics"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 201E",
+      "name": "Data Structures"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 211E",
+      "name": "Intro to Data Science and Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 122",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201A",
+      "name": "Essentials of Res.Paper Writ."
+     }
+    },
+    {
+     "elective": {
+      "title": "ITB Elective I",
+      "options": [
+       {
+        "code": "ALM 101",
+        "name": "Almanca I"
+       },
+       {
+        "code": "ALM 102",
+        "name": "Almanca II"
+       },
+       {
+        "code": "ALM 201",
+        "name": "Almanca III"
+       },
+       {
+        "code": "ALM 202",
+        "name": "Almanca IV"
+       },
+       {
+        "code": "ALM 301",
+        "name": "Almanca V"
+       },
+       {
+        "code": "ALM 302",
+        "name": "Almanca VI"
+       },
+       {
+        "code": "ALM 401",
+        "name": "Almanca VII"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "BLG 463E",
+        "name": "Innov. Leadership in Comp.Eng."
+       },
+       {
+        "code": "CIN 101",
+        "name": "Çince I"
+       },
+       {
+        "code": "CIN 102",
+        "name": "Çince II"
+       },
+       {
+        "code": "CIN 201",
+        "name": "Çince III"
+       },
+       {
+        "code": "FRA 101",
+        "name": "Fransızca I"
+       },
+       {
+        "code": "FRA 102",
+        "name": "Fransızca II"
+       },
+       {
+        "code": "FRA 201",
+        "name": "Fransızca III"
+       },
+       {
+        "code": "FRA 202",
+        "name": "Fransızca IV"
+       },
+       {
+        "code": "FRA 301",
+        "name": "Fransızca V"
+       },
+       {
+        "code": "FRA 302",
+        "name": "Fransızca VI"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 435E",
+        "name": "The World Economy at a Glance"
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ISP 101",
+        "name": "İspanyolca I"
+       },
+       {
+        "code": "ISP 102",
+        "name": "İspanyolca II"
+       },
+       {
+        "code": "ISP 201",
+        "name": "İspanyolca III"
+       },
+       {
+        "code": "ISP 202",
+        "name": "İspanyolca IV"
+       },
+       {
+        "code": "ISP 301",
+        "name": "İspanyolca V"
+       },
+       {
+        "code": "ISP 302",
+        "name": "İspanyolca VI"
+       },
+       {
+        "code": "ITA 101",
+        "name": "İtalyanca I"
+       },
+       {
+        "code": "ITA 102",
+        "name": "İtalyanca II"
+       },
+       {
+        "code": "ITA 201",
+        "name": "İtalyanca III"
+       },
+       {
+        "code": "ITA 202",
+        "name": "İtalyanca IV"
+       },
+       {
+        "code": "ITA 301",
+        "name": "İtalyanca V"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       },
+       {
+        "code": "JPN 101",
+        "name": "Japonca I"
+       },
+       {
+        "code": "JPN 102",
+        "name": "Japonca II"
+       },
+       {
+        "code": "JPN 201",
+        "name": "Japonca III"
+       },
+       {
+        "code": "JPN 202",
+        "name": "Japonca IV"
+       },
+       {
+        "code": "RUS 101",
+        "name": "Rusça I"
+       },
+       {
+        "code": "RUS 102",
+        "name": "Rusça II"
+       },
+       {
+        "code": "RUS 201",
+        "name": "Rusça III"
+       },
+       {
+        "code": "RUS 202",
+        "name": "Rusça IV"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BBF 202E",
+      "name": "Numerical Methods in Computer Engineering"
+     }
+    },
+    {
+     "course": {
+      "code": "BBF 203E",
+      "name": "Object Oriented Programming"
+     }
+    },
+    {
+     "course": {
+      "code": "BBF 204E",
+      "name": "Formal Languages and Automata"
+     }
+    },
+    {
+     "course": {
+      "code": "BBF 304E",
+      "name": "Learning From Data"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 202E",
+      "name": "Optimization for Data Science"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 212E",
+      "name": "Fund.ofArtificial Intelligence"
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BBF 301E",
+      "name": "Analysis of Algorithms I"
+     }
+    },
+    {
+     "course": {
+      "code": "BBF 302E",
+      "name": "Database Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 303E",
+      "name": "Deep Learning"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 311E",
+      "name": "Data Mining"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 401E",
+      "name": "Legal Aspects of AI&Data Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 121",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "elective": {
+      "title": "TM Elective I",
+      "options": [
+       {
+        "code": "BLG 368E",
+        "name": "Operations Research"
+       },
+       {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
+        "code": "YZV 403E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "YZV 413E",
+        "name": "Graph Theory and Algorithms"
+       },
+       {
+        "code": "YZV 423E",
+        "name": "Theory of Computation"
+       },
+       {
+        "code": "YZV 475E",
+        "name": "Data Visualization"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "BBF 303E",
+      "name": "Analysis of Algorithms II"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 322E",
+      "name": "Applied Data Engineering"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 405E",
+      "name": "Natural Language Processing"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 416E",
+      "name": "Computer Vision"
+     }
+    },
+    {
+     "elective": {
+      "title": "TM Elective II",
+      "options": [
+       {
+        "code": "BLG 368E",
+        "name": "Operations Research"
+       },
+       {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
+        "code": "YZV 403E",
+        "name": "Game Theory"
+       },
+       {
+        "code": "YZV 413E",
+        "name": "Graph Theory and Algorithms"
+       },
+       {
+        "code": "YZV 423E",
+        "name": "Theory of Computation"
+       },
+       {
+        "code": "YZV 475E",
+        "name": "Data Visualization"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "YZV 406E",
+      "name": "Robotics"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 411E",
+      "name": "Big Data Analytics"
+     }
+    },
+    {
+     "course": {
+      "code": "YZV 4901E",
+      "name": "AI &Data Engineering Design I"
+     }
+    },
+    {
+     "elective": {
+      "title": "MT Elective I",
+      "options": [
+       {
+        "code": "BLG 312E",
+        "name": "Computer Operating Systems"
+       },
+       {
+        "code": "BLG 411E",
+        "name": "Software Engineering"
+       },
+       {
+        "code": "BLG 422E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "ISL 445E",
+        "name": "European Leadership for Sustainability Management"
+       },
+       {
+        "code": "YZV 415E",
+        "name": "Deep Reinforcement Learning"
+       },
+       {
+        "code": "YZV 425E",
+        "name": "Art of Eng. for Inf.Syst."
+       },
+       {
+        "code": "YZV 435E",
+        "name": "Cloud Computing"
+       },
+       {
+        "code": "YZV 445E",
+        "name": "Artificial Intelligence Project"
+       },
+       {
+        "code": "YZV 447E",
+        "name": "Cognitive Neuroscience"
+       },
+       {
+        "code": "YZV 448E",
+        "name": "Machine Learning System Development and Operations (MLOps)"
+       },
+       {
+        "code": "YZV 449E",
+        "name": "Deep Generative AI"
+       },
+       {
+        "code": "YZV 455E",
+        "name": "Data Engineering Project"
+       },
+       {
+        "code": "YZV 465E",
+        "name": "Digital and Agile Transformation"
+       },
+       {
+        "code": "YZV 485E",
+        "name": "Information Retrieval"
+       },
+       {
+        "code": "YZV 495E",
+        "name": "Speech and Audio Processing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "ITB Elective II (SNT)",
+      "options": [
+       {
+        "code": "BLG 346E",
+        "name": "Basics of Visual Composition"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "YZV 4902E",
+      "name": "AI& Data Engineering Design II"
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201E",
+      "name": "Economics"
+     }
+    },
+    {
+     "course": {
+      "code": "ATA 122",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "elective": {
+      "title": "MT Elective II",
+      "options": [
+       {
+        "code": "BLG 312E",
+        "name": "Computer Operating Systems"
+       },
+       {
+        "code": "BLG 411E",
+        "name": "Software Engineering"
+       },
+       {
+        "code": "BLG 422E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "ISL 445E",
+        "name": "European Leadership for Sustainability Management"
+       },
+       {
+        "code": "YZV 415E",
+        "name": "Deep Reinforcement Learning"
+       },
+       {
+        "code": "YZV 425E",
+        "name": "Art of Eng. for Inf.Syst."
+       },
+       {
+        "code": "YZV 435E",
+        "name": "Cloud Computing"
+       },
+       {
+        "code": "YZV 445E",
+        "name": "Artificial Intelligence Project"
+       },
+       {
+        "code": "YZV 447E",
+        "name": "Cognitive Neuroscience"
+       },
+       {
+        "code": "YZV 448E",
+        "name": "Machine Learning System Development and Operations (MLOps)"
+       },
+       {
+        "code": "YZV 449E",
+        "name": "Deep Generative AI"
+       },
+       {
+        "code": "YZV 455E",
+        "name": "Data Engineering Project"
+       },
+       {
+        "code": "YZV 465E",
+        "name": "Digital and Agile Transformation"
+       },
+       {
+        "code": "YZV 485E",
+        "name": "Information Retrieval"
+       },
+       {
+        "code": "YZV 495E",
+        "name": "Speech and Audio Processing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "MT Elective III",
+      "options": [
+       {
+        "code": "BLG 312E",
+        "name": "Computer Operating Systems"
+       },
+       {
+        "code": "BLG 411E",
+        "name": "Software Engineering"
+       },
+       {
+        "code": "BLG 422E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "ISL 445E",
+        "name": "European Leadership for Sustainability Management"
+       },
+       {
+        "code": "YZV 415E",
+        "name": "Deep Reinforcement Learning"
+       },
+       {
+        "code": "YZV 425E",
+        "name": "Art of Eng. for Inf.Syst."
+       },
+       {
+        "code": "YZV 435E",
+        "name": "Cloud Computing"
+       },
+       {
+        "code": "YZV 445E",
+        "name": "Artificial Intelligence Project"
+       },
+       {
+        "code": "YZV 447E",
+        "name": "Cognitive Neuroscience"
+       },
+       {
+        "code": "YZV 448E",
+        "name": "Machine Learning System Development and Operations (MLOps)"
+       },
+       {
+        "code": "YZV 449E",
+        "name": "Deep Generative AI"
+       },
+       {
+        "code": "YZV 455E",
+        "name": "Data Engineering Project"
+       },
+       {
+        "code": "YZV 465E",
+        "name": "Digital and Agile Transformation"
+       },
+       {
+        "code": "YZV 485E",
+        "name": "Information Retrieval"
+       },
+       {
+        "code": "YZV 495E",
+        "name": "Speech and Audio Processing"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

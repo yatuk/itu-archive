@@ -1,0 +1,1486 @@
+{
+ "programCode": "MAKE_LS",
+ "programName": "Makina Mühendisliği (İngilizce) Lisans",
+ "faculty": "Makina Fakültesi",
+ "planLabel": "Makina Mühendisliği Lisans Programı (%100 İngilizce) 2011-2012 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "KIM 101E",
+      "name": "General Chemistry I"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101EL",
+      "name": "General Chemistry I Lab"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 101E",
+      "name": "Int to Comp and Inf Systems"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 111E",
+      "name": "Introduct. to Mechanical Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 103E",
+      "name": "Mathematics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101E",
+      "name": "Physics I"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101EL",
+      "name": "Physics I Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "RES 105E",
+      "name": "Technical Drawing"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course I",
+      "options": [
+       {
+        "code": "ING 101",
+        "name": "English I"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "ETK 101E",
+      "name": "Engineering Ethics"
+     }
+    },
+    {
+     "elective": {
+      "title": "Physical Education I (ITB)",
+      "options": [
+       {
+        "code": "BEB 101",
+        "name": "Temel Yüzme Becerisi Öğrenimi"
+       },
+       {
+        "code": "BEB 102",
+        "name": "Yüzme Teknikleri Becerisi Öğr."
+       },
+       {
+        "code": "BEB 103",
+        "name": "Voleybolda Tem.Eğt. ve Bec.Kaz"
+       },
+       {
+        "code": "BEB 104",
+        "name": "Tenis Teknik ve Taktik Eğitim"
+       },
+       {
+        "code": "BEB 105",
+        "name": "Futbol ve Temel Hareket Öğret."
+       },
+       {
+        "code": "BEB 106",
+        "name": "Basketbol Temel Teknik Eğitimi"
+       },
+       {
+        "code": "BEB 111",
+        "name": "Masa Tenisi Tem.Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 114",
+        "name": "Futsal Temel Beceri Eğitim"
+       },
+       {
+        "code": "BEB 115",
+        "name": "Atletizm Temel Eğitimi"
+       },
+       {
+        "code": "BEB 116",
+        "name": "Badminton Temel Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 117",
+        "name": "Eskrim Temel Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 118",
+        "name": "Genel Kond.ve Vücut Geliştirme"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAK 200E",
+      "name": "Machine Shop Practice"
+     }
+    },
+    {
+     "course": {
+      "code": "RES 112E",
+      "name": "Computer Aided Tech Drawing"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 261E",
+      "name": "Linear Algebra"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 104E",
+      "name": "Mathematics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102E",
+      "name": "Physics II"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 102EL",
+      "name": "Physics II Laboratory"
+     }
+    },
+    {
+     "course": {
+      "code": "STA 201E",
+      "name": "Statics"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course II",
+      "options": [
+       {
+        "code": "ING 102",
+        "name": "English II"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "BIO 102E",
+      "name": "Engineering Biology"
+     }
+    },
+    {
+     "elective": {
+      "title": "Physical Education II (ITB)",
+      "options": [
+       {
+        "code": "BEB 101",
+        "name": "Temel Yüzme Becerisi Öğrenimi"
+       },
+       {
+        "code": "BEB 102",
+        "name": "Yüzme Teknikleri Becerisi Öğr."
+       },
+       {
+        "code": "BEB 103",
+        "name": "Voleybolda Tem.Eğt. ve Bec.Kaz"
+       },
+       {
+        "code": "BEB 104",
+        "name": "Tenis Teknik ve Taktik Eğitim"
+       },
+       {
+        "code": "BEB 105",
+        "name": "Futbol ve Temel Hareket Öğret."
+       },
+       {
+        "code": "BEB 106",
+        "name": "Basketbol Temel Teknik Eğitimi"
+       },
+       {
+        "code": "BEB 111",
+        "name": "Masa Tenisi Tem.Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 114",
+        "name": "Futsal Temel Beceri Eğitim"
+       },
+       {
+        "code": "BEB 115",
+        "name": "Atletizm Temel Eğitimi"
+       },
+       {
+        "code": "BEB 116",
+        "name": "Badminton Temel Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 117",
+        "name": "Eskrim Temel Beceri Eğitimi"
+       },
+       {
+        "code": "BEB 118",
+        "name": "Genel Kond.ve Vücut Geliştirme"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 201E",
+      "name": "Differential Equations"
+     }
+    },
+    {
+     "course": {
+      "code": "DNK 205E",
+      "name": "Dynamics"
+     }
+    },
+    {
+     "course": {
+      "code": "MUK 209E",
+      "name": "Strength of Materials I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAL 201E",
+      "name": "Materials Science"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 104E",
+      "name": "Intr. to Programming in C"
+     }
+    },
+    {
+     "elective": {
+      "title": "3rd Sem. Elective Course(ITB)",
+      "options": [
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "TER 205E",
+      "name": "Thermodynamics I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ELK 226E",
+      "name": "Fund.of Electri.& Electro.Eng."
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 214E",
+      "name": "Engineering Materials"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 202E",
+      "name": "Numerical Methods"
+     }
+    },
+    {
+     "course": {
+      "code": "TER 206E",
+      "name": "Thermodynamics II"
+     }
+    },
+    {
+     "course": {
+      "code": "MUK 210E",
+      "name": "Strength of Materials II"
+     }
+    },
+    {
+     "course": {
+      "code": "AKM 208E",
+      "name": "Fluid Mechanics I"
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "AKM 209E",
+      "name": "Fluid Mechanics II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 313E",
+      "name": "Heat Transfer"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 341E",
+      "name": "Machine Design I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 333E",
+      "name": "System Dynamics and Control"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 353E",
+      "name": "Manufacturing Processes"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 315E",
+      "name": "Mechanical Vibrations"
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAK 342E",
+      "name": "Machine Design II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 324E",
+      "name": "Theory of Machines"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 312E",
+      "name": "Measurement Systems"
+     }
+    },
+    {
+     "elective": {
+      "title": "6th Sem. Elective Course(TB)",
+      "options": [
+       {
+        "code": "MAK 372E",
+        "name": "Intr.to Finite Element Methods"
+       },
+       {
+        "code": "MAK 376E",
+        "name": "Computational Fluid Dynamics"
+       },
+       {
+        "code": "MAK 378E",
+        "name": "Intr.to Nanotech.& Nanosyst."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Thermal Design Elct.(MT)",
+      "options": [
+       {
+        "code": "MAK 360E",
+        "name": "Applied Thermodynamics"
+       },
+       {
+        "code": "MAK 370E",
+        "name": "Applied Heat Transfer"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "EKO 201E",
+      "name": "Economics"
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 401E",
+      "name": "Mechanical Engineering Lab. I"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 403E",
+      "name": "Applied Machine Design"
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem. Elective Group I(MT)",
+      "options": [
+       {
+        "code": "MAK 4001E",
+        "name": "Heat&MassTrn.inMin.&Mic.SclSys"
+       },
+       {
+        "code": "MAK 4005E",
+        "name": "Mech.Model. in Nanoscale Sys."
+       },
+       {
+        "code": "MAK 4006E",
+        "name": "Alternative Fuels for IC Eng."
+       },
+       {
+        "code": "MAK 4007E",
+        "name": "Microsystem-MEMS Design"
+       },
+       {
+        "code": "MAK 4009E",
+        "name": "Elect.& Hybrid Elect. Vehicles"
+       },
+       {
+        "code": "MAK 4011E",
+        "name": "Dyn.&Contr.ofMic./Nano Scl.Sys"
+       },
+       {
+        "code": "MAK 4015E",
+        "name": "Materials Sel.in Dsgn and Mnfc"
+       },
+       {
+        "code": "MAK 4037E",
+        "name": "Computer Controlled Sys. Desig"
+       },
+       {
+        "code": "MAK 4055E",
+        "name": "Fuel Economy in Road Vehicles"
+       },
+       {
+        "code": "MAK 4059E",
+        "name": "Precision Machine Design"
+       },
+       {
+        "code": "MAK 4065E",
+        "name": "Refrigeration"
+       },
+       {
+        "code": "MAK 4067E",
+        "name": "Renewable Energy Systems"
+       },
+       {
+        "code": "MAK 4069E",
+        "name": "Thermal Env Engineering"
+       },
+       {
+        "code": "MAK 4071E",
+        "name": "Introduction to Robotics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem. Elective Group II(MT)",
+      "options": [
+       {
+        "code": "MAK 4002E",
+        "name": "Advanced Strength of Materials"
+       },
+       {
+        "code": "MAK 4003E",
+        "name": "Introduction to Biomechanics and Bioengineering"
+       },
+       {
+        "code": "MAK 4004E",
+        "name": "Introduction to Mechanics of Composite Materials"
+       },
+       {
+        "code": "MAK 4008E",
+        "name": "Driver Assistance Systems"
+       },
+       {
+        "code": "MAK 4016E",
+        "name": "Hydraulic Machinery"
+       },
+       {
+        "code": "MAK 4017E",
+        "name": "Industrial Acoustics and Noise"
+       },
+       {
+        "code": "MAK 4018E",
+        "name": "Quality Control in Manufacturi"
+       },
+       {
+        "code": "MAK 4019E",
+        "name": "Plastics Engineering and Manufacturing"
+       },
+       {
+        "code": "MAK 4020E",
+        "name": "Tractors&Agricultural Mach."
+       },
+       {
+        "code": "MAK 4021E",
+        "name": "Machine Tools"
+       },
+       {
+        "code": "MAK 4022E",
+        "name": "Microprocessors and Applications in Engineering"
+       },
+       {
+        "code": "MAK 4023E",
+        "name": "Materials Handling"
+       },
+       {
+        "code": "MAK 4026E",
+        "name": "Pumping Systems"
+       },
+       {
+        "code": "MAK 4029E",
+        "name": "Advanced Fluid Mechanics"
+       },
+       {
+        "code": "MAK 4030E",
+        "name": "Advanced Topics in Mechanical Design"
+       },
+       {
+        "code": "MAK 4031E",
+        "name": "Mass Transfer"
+       },
+       {
+        "code": "MAK 4032E",
+        "name": "Metal Forming"
+       },
+       {
+        "code": "MAK 4033E",
+        "name": "Gas Dynamics"
+       },
+       {
+        "code": "MAK 4034E",
+        "name": "Design and Manufacturing with Welding"
+       },
+       {
+        "code": "MAK 4035E",
+        "name": "Hydraulic and Pneumatic Circuits"
+       },
+       {
+        "code": "MAK 4040E",
+        "name": "Steam Boilers"
+       },
+       {
+        "code": "MAK 4041E",
+        "name": "Mechanical Installation for Buildings"
+       },
+       {
+        "code": "MAK 4042E",
+        "name": "Gas Turbines"
+       },
+       {
+        "code": "MAK 4043E",
+        "name": "Fire Dynamics and Protection"
+       },
+       {
+        "code": "MAK 4044E",
+        "name": "Energy Management"
+       },
+       {
+        "code": "MAK 4045E",
+        "name": "Vehicle Sys.Dynamics & Control"
+       },
+       {
+        "code": "MAK 4049E",
+        "name": "Control Elements and Applications"
+       },
+       {
+        "code": "MAK 4050E",
+        "name": "Optimization of Thermal Syst."
+       },
+       {
+        "code": "MAK 4051E",
+        "name": "Noise and Vibration in Vehicles"
+       },
+       {
+        "code": "MAK 4052E",
+        "name": "Building Automation"
+       },
+       {
+        "code": "MAK 4056E",
+        "name": "Control Systems Design"
+       },
+       {
+        "code": "MAK 4058E",
+        "name": "Power Transmission in Vehicles"
+       },
+       {
+        "code": "MAK 4060E",
+        "name": "Vibrt. Anlys.byFinite Elm.Mth."
+       },
+       {
+        "code": "MAK 4061E",
+        "name": "Exhaust Gas Emmision"
+       },
+       {
+        "code": "MAK 4062E",
+        "name": "Railway Vehicles"
+       },
+       {
+        "code": "MAK 4063E",
+        "name": "Design of Internal Combustion Engines"
+       },
+       {
+        "code": "MAK 4066E",
+        "name": "Vehicle Chassis and Body Design"
+       },
+       {
+        "code": "MAK 4068E",
+        "name": "Fluid Power Control"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem.Elective Course(ITB)",
+      "options": [
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7th Sem. Compuls. Elct. I (MT)",
+      "options": [
+       {
+        "code": "MAK 4025E",
+        "name": "Engineering Design and CAD"
+       },
+       {
+        "code": "MAK 4027E",
+        "name": "Turbomachinery"
+       },
+       {
+        "code": "MAK 4039E",
+        "name": "HVAC Fundamentals"
+       },
+       {
+        "code": "MAK 4047E",
+        "name": "Dynamic Systms Modelling & Sim"
+       },
+       {
+        "code": "MAK 4053E",
+        "name": "Vehicle Technology"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II"
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 492E",
+      "name": "Senior Design Project"
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Sem.Elective Group III(MT)",
+      "options": [
+       {
+        "code": "MAK 4002E",
+        "name": "Advanced Strength of Materials"
+       },
+       {
+        "code": "MAK 4003E",
+        "name": "Introduction to Biomechanics and Bioengineering"
+       },
+       {
+        "code": "MAK 4004E",
+        "name": "Introduction to Mechanics of Composite Materials"
+       },
+       {
+        "code": "MAK 4008E",
+        "name": "Driver Assistance Systems"
+       },
+       {
+        "code": "MAK 4016E",
+        "name": "Hydraulic Machinery"
+       },
+       {
+        "code": "MAK 4017E",
+        "name": "Industrial Acoustics and Noise"
+       },
+       {
+        "code": "MAK 4018E",
+        "name": "Quality Control in Manufacturi"
+       },
+       {
+        "code": "MAK 4019E",
+        "name": "Plastics Engineering and Manufacturing"
+       },
+       {
+        "code": "MAK 4020E",
+        "name": "Tractors&Agricultural Mach."
+       },
+       {
+        "code": "MAK 4021E",
+        "name": "Machine Tools"
+       },
+       {
+        "code": "MAK 4022E",
+        "name": "Microprocessors and Applications in Engineering"
+       },
+       {
+        "code": "MAK 4023E",
+        "name": "Materials Handling"
+       },
+       {
+        "code": "MAK 4026E",
+        "name": "Pumping Systems"
+       },
+       {
+        "code": "MAK 4029E",
+        "name": "Advanced Fluid Mechanics"
+       },
+       {
+        "code": "MAK 4030E",
+        "name": "Advanced Topics in Mechanical Design"
+       },
+       {
+        "code": "MAK 4031E",
+        "name": "Mass Transfer"
+       },
+       {
+        "code": "MAK 4032E",
+        "name": "Metal Forming"
+       },
+       {
+        "code": "MAK 4033E",
+        "name": "Gas Dynamics"
+       },
+       {
+        "code": "MAK 4034E",
+        "name": "Design and Manufacturing with Welding"
+       },
+       {
+        "code": "MAK 4035E",
+        "name": "Hydraulic and Pneumatic Circuits"
+       },
+       {
+        "code": "MAK 4040E",
+        "name": "Steam Boilers"
+       },
+       {
+        "code": "MAK 4041E",
+        "name": "Mechanical Installation for Buildings"
+       },
+       {
+        "code": "MAK 4042E",
+        "name": "Gas Turbines"
+       },
+       {
+        "code": "MAK 4043E",
+        "name": "Fire Dynamics and Protection"
+       },
+       {
+        "code": "MAK 4044E",
+        "name": "Energy Management"
+       },
+       {
+        "code": "MAK 4045E",
+        "name": "Vehicle Sys.Dynamics & Control"
+       },
+       {
+        "code": "MAK 4049E",
+        "name": "Control Elements and Applications"
+       },
+       {
+        "code": "MAK 4050E",
+        "name": "Optimization of Thermal Syst."
+       },
+       {
+        "code": "MAK 4051E",
+        "name": "Noise and Vibration in Vehicles"
+       },
+       {
+        "code": "MAK 4052E",
+        "name": "Building Automation"
+       },
+       {
+        "code": "MAK 4056E",
+        "name": "Control Systems Design"
+       },
+       {
+        "code": "MAK 4057E",
+        "name": "Vehicle Systems Design"
+       },
+       {
+        "code": "MAK 4058E",
+        "name": "Power Transmission in Vehicles"
+       },
+       {
+        "code": "MAK 4060E",
+        "name": "Vibrt. Anlys.byFinite Elm.Mth."
+       },
+       {
+        "code": "MAK 4061E",
+        "name": "Exhaust Gas Emmision"
+       },
+       {
+        "code": "MAK 4062E",
+        "name": "Railway Vehicles"
+       },
+       {
+        "code": "MAK 4063E",
+        "name": "Design of Internal Combustion Engines"
+       },
+       {
+        "code": "MAK 4066E",
+        "name": "Vehicle Chassis and Body Design"
+       },
+       {
+        "code": "MAK 4068E",
+        "name": "Fluid Power Control"
+       },
+       {
+        "code": "MAK 4079E",
+        "name": "Thermodynamics of Biomolecular Systems"
+       },
+       {
+        "code": "MAK 4080E",
+        "name": "Fund. & Appl. of Nanomachines"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Sem. Elective Course(ITB)",
+      "options": [
+       {
+        "code": "HUK 201",
+        "name": "İş Hukuku"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 213",
+        "name": "İş Sağlığı ve Güvenliği Hukuku"
+       },
+       {
+        "code": "HUK 214",
+        "name": "Teknolojik Yeniliklerin Korun."
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218",
+        "name": "Ticaret Hukuku"
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "8th Sem.Compulsory Elct II(MT)",
+      "options": [
+       {
+        "code": "MAK 4036E",
+        "name": "Manufacturing Engineering and CAM"
+       },
+       {
+        "code": "MAK 4038E",
+        "name": "Power Plants"
+       },
+       {
+        "code": "MAK 4048E",
+        "name": "HVAC Systems and Equipment Design"
+       },
+       {
+        "code": "MAK 4054E",
+        "name": "Digital Control System Design"
+       },
+       {
+        "code": "MAK 4070E",
+        "name": "Internal Combustion Engines"
+       },
+       {
+        "code": "MAK 4080E",
+        "name": "Fund. & Appl. of Nanomachines"
+       }
+      ]
+     }
+    },
+    {
+     "course": {
+      "code": "MAK 402E",
+      "name": "Mechanical Engineering Lab. II"
+     }
+    }
+   ]
+  }
+ ]
+}

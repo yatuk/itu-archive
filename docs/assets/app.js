@@ -484,11 +484,12 @@ function wireTabs() {
     if (view === 'takvim' && !state.calendar && state.index) loadCalendar($('#f-year').value);
     if (view === 'sinavlar' && state.index) loadExams();
     if (view === 'gecmis' && !state.hist) searchHistory();
+    if (view === 'onsart') window.PrereqGraph.init('#pg-root');
     if (location.hash.slice(1) !== view) window.history.replaceState(null, '', `#${view}`);
   };
   for (const b of buttons) b.addEventListener('click', () => show(b.dataset.view));
   const initial = location.hash.slice(1);
-  const views = ['dersler', 'gecmis', 'sinavlar', 'takvim', 'donemler', 'hakkinda'];
+  const views = ['dersler', 'gecmis', 'onsart', 'sinavlar', 'takvim', 'donemler', 'hakkinda'];
   show(views.includes(initial) ? initial : 'dersler');
 }
 

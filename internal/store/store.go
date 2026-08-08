@@ -115,7 +115,9 @@ func (s *Store) WriteTerm(label, slug, scrapedAt, source string, sections []mode
 
 // writeSearchIndex, tarayıcıda anlık arama için sıkıştırılmış bir dizi yazar.
 // Nesne yerine dizi kullanmak dosyayı yaklaşık yarıya indiriyor.
-// Alanlar: [crn, kod, ad, branş, öğretim üyesi, gün|saat, kontenjan, yazılan]
+// Alanlar: [crn, kod, ad, branş, öğretim üyesi, gün|saat, kontenjan, yazılan, seviye, yöntem]
+// Son iki alan filtreler için; tarihsel dönemlerde boş olabilir (önşart/yöntem
+// arşivde yoktu) ve önceki veride hiç bulunmayabilir — istemci yoksa yokmuş gibi davranır.
 func (s *Store) writeSearchIndex(slug string, sections []model.Section) error {
 	idx := make([][]any, 0, len(sections))
 	for _, sec := range sections {
@@ -129,7 +131,7 @@ func (s *Store) writeSearchIndex(slug string, sections []model.Section) error {
 		}
 		idx = append(idx, []any{
 			sec.CRN, sec.Code, sec.Name, sec.Branch, sec.Instructor,
-			strings.Join(when, " | "), sec.Capacity, sec.Enrolled,
+			strings.Join(when, " | "), sec.Capacity, sec.Enrolled, sec.Level, sec.Method,
 		})
 	}
 	return s.WriteJSON(idx, "data", "terms", slug, "search.json")

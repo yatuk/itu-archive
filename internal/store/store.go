@@ -57,6 +57,14 @@ func (s *Store) WriteJSON(v any, parts ...string) error {
 
 // WriteTerm, bir dönemin tüm dosyalarını yazar ve meta'sını döndürür.
 func (s *Store) WriteTerm(label, slug, scrapedAt, source string, sections []model.Section) (*model.TermMeta, error) {
+	// OBS ve tarihsel dökümler zaman zaman aynı şubeyi iki kez döndürüyor
+	// (ör. itutakvimci CSV'lerinde birebir tekrar eden satırlar). CRN site
+	// tarafında detay aramasının ve kontenjan zaman serisinin anahtarı, aynı
+	// branş içinde tekrar olmamalı. Dikkat: CRN yalnızca branş içinde
+	// benzersiz — çapraz listelenen dersler (aynı CRN, farklı branş kodu)
+	// meşru ve korunmalı, o yüzden anahtar (branş, CRN).
+	sections = dedupe(sections)
+
 	byBranch := map[string][]model.Section{}
 	for _, sec := range sections {
 		byBranch[sec.Branch] = append(byBranch[sec.Branch], sec)
@@ -260,6 +268,27 @@ func countDistinct(sections []model.Section, key func(model.Section) string) int
 		}
 	}
 	return len(seen)
+}
+
+// dedupe, aynı (branş, CRN) ikilisini yalnızca ilk geçene indirger. Kaynak
+// tarafındaki birebir tekrar eden satırlar burada temizlenir; çapraz listelenen
+// dersler (aynı CRN farklı branşta) korunur.
+func dedupe(sections []model.Section) []model.Section {
+	seen := map[string]struct{}{}
+	out := make([]model.Section, 0, len(sections))
+	for _, s := range sections {
+		if s.CRN == "" {
+			out = append(out, s)
+			continue
+		}
+		key := s.Branch + "\x00" + s.CRN
+		if _, dup := seen[key]; dup {
+			continue
+		}
+		seen[key] = struct{}{}
+		out = append(out, s)
+	}
+	return out
 }
 
 // Clean, bir dönemin branş klasörünü tazeler; kapanan branşların dosyaları

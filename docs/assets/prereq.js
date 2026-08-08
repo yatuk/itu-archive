@@ -43,6 +43,7 @@ import { esc, fold } from './core/utils.js';
       this.cam = { x: 0, y: 0, k: 1 };
       this.focus = null;
       this.related = null;
+      this.hover = null;
       this.drag = null;
       this.nodes = null;
       this.ro = new ResizeObserver(() => { this.layout(); this.draw(); });
@@ -171,16 +172,41 @@ import { esc, fold } from './core/utils.js';
     draw() {
       const ctx = this.ctx, w = this.canvas.clientWidth, h = this.canvas.clientHeight;
       ctx.clearRect(0, 0, w, h);
-      if (!this.nodes) return;
+
+      // Boş durum: program seçilene kadar kılavuz mesajı.
+      if (!this.nodes) {
+        ctx.font = '13px ui-monospace, monospace';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = 'rgba(140,160,150,0.6)';
+        ctx.fillText('> bir bölüm seçin', w / 2, h / 2 - 6);
+        ctx.font = '11px ui-monospace, monospace';
+        ctx.fillStyle = 'rgba(140,160,150,0.4)';
+        ctx.fillText('dönem sütunlarında önşart okları burada çizilir', w / 2, h / 2 + 14);
+        return;
+      }
       const focused = !!this.related;
 
-      // Sütun başlıkları ve ayraç çizgileri — sabit düzenin okunurluğu için.
-      ctx.font = '11px ui-monospace, monospace';
-      ctx.fillStyle = 'rgba(140,160,150,0.55)';
+      // Dönem sütunu arka plan bantları: komşu dönemleri ayırır.
+      for (let i = 0; i < this.laneTitles.length; i++) {
+        const [x] = this.worldToScreen(LANE_PAD + i * this.laneW - this.laneW / 2, 0);
+        const bandW = this.laneW * this.cam.k;
+        if (i % 2 === 1) {
+          ctx.fillStyle = 'rgba(140,200,170,0.035)';
+          ctx.fillRect(x, 0, bandW, this.contentHeight * this.cam.k);
+        }
+        ctx.fillStyle = 'rgba(140,200,170,0.07)';
+        ctx.fillRect(x + bandW, 0, 1, this.contentHeight * this.cam.k);
+      }
+
+      // Sütun başlıkları — üstte koyu bir şerit üstünde.
       ctx.textAlign = 'center';
+      ctx.font = '11px ui-monospace, monospace';
       this.laneTitles.forEach((title, i) => {
         const [x] = this.worldToScreen(LANE_PAD + i * this.laneW, 0);
-        ctx.fillText(title, x, 18);
+        ctx.fillStyle = 'rgba(10,16,12,0.85)';
+        ctx.fillRect(x - (this.laneW / 2) * this.cam.k, 0, this.laneW * this.cam.k, 26);
+        ctx.fillStyle = 'rgba(230,245,235,0.85)';
+        ctx.fillText(title, x, 17);
       });
 
       const r = NODE_R * this.cam.k;
@@ -227,17 +253,22 @@ import { esc, fold } from './core/utils.js';
         }
       }
 
-      if (this.focus) {
-        const n = this.byCode.get(this.focus);
-        if (n) {
-          const [x, y] = this.worldToScreen(n.x, n.y);
-          ctx.beginPath();
-          ctx.arc(x, y, r * 0.72 + 4, 0, Math.PI * 2);
-          ctx.strokeStyle = '#00ff9c';
-          ctx.lineWidth = 2;
-          ctx.stroke();
-        }
-      }
+      // Hover halkası (nazik) ve odak parlaması (belirgin).
+      const ring = (code, radius, width, color, blur) => {
+        const n = this.byCode.get(code);
+        if (!n) return;
+        const [x, y] = this.worldToScreen(n.x, n.y);
+        ctx.save();
+        if (blur) { ctx.shadowColor = color; ctx.shadowBlur = blur; }
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.strokeStyle = color;
+        ctx.lineWidth = width;
+        ctx.stroke();
+        ctx.restore();
+      };
+      if (this.hover && this.hover !== this.focus) ring(this.hover, r * 0.72 + 3, 1.5, 'rgba(53,224,255,0.9)', 0);
+      if (this.focus) ring(this.focus, r * 0.72 + 4, 2, '#00ff9c', 14);
     }
 
     nodeAt(px, py) {
@@ -370,6 +401,8 @@ import { esc, fold } from './core/utils.js';
         if (!this.nodes) return;
         const rect = c.getBoundingClientRect();
         const n = this.nodeAt(e.clientX - rect.left, e.clientY - rect.top);
+        const code = n ? n.code : null;
+        if (code !== this.hover) { this.hover = code; this.draw(); }
         if (n) {
           this.tip.hidden = false;
           this.tip.style.left = (e.clientX - rect.left + 14) + 'px';
@@ -550,7 +583,9 @@ import { esc, fold } from './core/utils.js';
 
   async function selectProgram(root, code) {
     const { graph } = await ensureData(root);
-    root.querySelector('.pg-status').textContent = 'müfredat indiriliyor…';
+    const statusEl = root.querySelector('.pg-status');
+    statusEl.textContent = 'müfredat indiriliyor…';
+    statusEl.classList.add('busy');
     const [plan, g] = await Promise.all([
       fetch(`data/curriculum/${code}.json`).then((r) => r.json()),
       reqByCode ? Promise.resolve(null) : fetch('data/prereq/graph.json').then((r) => r.json()),
@@ -566,7 +601,19 @@ import { esc, fold } from './core/utils.js';
     }
 
     root.querySelector('.pg-plan-label').textContent = plan.planLabel || '';
+    renderBranchLegend(root, nodes);
     await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ders/slot — bir düğüme tıkla`);
+    statusEl.classList.remove('busy');
+  }
+
+  // renderBranchLegend, grafikteki renklerin hangi branşa ait olduğunu
+  // gösterir — düğüm renkleri branş kodundan türetiliyor.
+  function renderBranchLegend(root, nodes) {
+    const box = root.querySelector('.pg-branches');
+    const branches = [...new Set(nodes.filter((n) => n.kind === 'course').map((n) => n.branch))].sort();
+    box.innerHTML = branches.length
+      ? branches.map((b) => `<span class="pg-branch"><i style="background:${hueOf(b)}"></i>${esc(b)}</span>`).join('')
+      : '';
   }
 
   // Seviye filtresi düğmelerini kurar; tıklamayla activeLevels güncellenir,

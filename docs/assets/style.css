@@ -357,7 +357,10 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 
 /* ---------- önşart haritası ---------- */
 
-.pg-console { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+.pg-console {
+  display: flex; gap: 12px; align-items: center; margin-bottom: 10px;
+  background: var(--panel); border: 1px solid var(--line); padding: 10px 12px;
+}
 .pg-program-select { width: 100%; max-width: none; }
 .pg-plan-label { color: var(--dimmer); font-size: 11px; white-space: nowrap; }
 
@@ -371,6 +374,18 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .pg-level:hover { color: var(--cyan); border-color: var(--cyan); opacity: 1; }
 .pg-level.active { color: var(--bg); background: var(--acid); border-color: var(--acid); opacity: 1; }
 .pg-level:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
+
+/* Önşart mantık lejantı + branş renk lejantı */
+.pg-legend { color: var(--dimmer); font-size: 11px; margin: 0 0 10px; }
+.pg-branches {
+  display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 0 0 10px;
+  color: var(--dimmer); font-size: 11px;
+}
+.pg-branches:empty { display: none; }
+.pg-branch { display: inline-flex; align-items: center; gap: 5px; }
+.pg-branch i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.pg-status.busy { color: var(--amber); }
+
 .btn-ghost {
   font: inherit; background: transparent; color: var(--dim);
   border: 1px solid var(--line-hot); padding: 8px 12px; cursor: pointer; white-space: nowrap;

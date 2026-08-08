@@ -1,532 +1,1880 @@
 [
  {
+  "code": "SAO_OL",
+  "faculty": "Siber Güvenlik Meslek Yüksekokulu",
+  "level": "OL",
+  "name": "Siber Güvenlik Analistliği ve Operatörlüğü"
+ },
+ {
   "code": "YZVE_LS",
   "faculty": "Bilgisayar ve Bilişim Fakültesi",
+  "level": "LS",
   "name": "Yapay Zeka ve Veri Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "DUI_LS",
   "faculty": "Denizcilik Fakültesi",
+  "level": "LS",
   "name": "Deniz Ulaştırma İşletme Mühendisliği Lisans"
- },
- {
-  "code": "DUIE_LS",
-  "faculty": "Denizcilik Fakültesi",
-  "name": "Deniz Ulaştırma İşletme Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "BLGE_LS",
   "faculty": "Bilgisayar ve Bilişim Fakültesi",
+  "level": "LS",
   "name": "Bilgisayar Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "BLG_LS",
   "faculty": "Bilgisayar ve Bilişim Fakültesi",
+  "level": "LS",
   "name": "Bilgisayar Mühendisliği Lisans"
  },
  {
   "code": "SECE_LS",
   "faculty": "Bilgisayar ve Bilişim Fakültesi",
+  "level": "LS",
   "name": "Siber Güvenlik Mühendisliği (İngilizce) Lisans"
+ },
+ {
+  "code": "DUIE_LS",
+  "faculty": "Denizcilik Fakültesi",
+  "level": "LS",
+  "name": "Deniz Ulaştırma İşletme Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "GMIE_LS",
   "faculty": "Denizcilik Fakültesi",
+  "level": "LS",
   "name": "Gemi Makinaları İşletme Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "GMI_LS",
   "faculty": "Denizcilik Fakültesi",
+  "level": "LS",
   "name": "Gemi Makinaları İşletme Mühendisliği Lisans"
  },
  {
   "code": "ELK_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Elektrik Mühendisliği Lisans"
  },
  {
   "code": "EHB_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Elektronik ve Haberleşme Mühendisliği Lisans"
  },
  {
   "code": "EHBE_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Elektronik ve Haberleşme Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "ELKE_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Elektrik Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "ELE_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Elektronik Mühendisliği Lisans"
  },
  {
   "code": "KOM_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Kontrol ve Otomasyon Mühendisliği Lisans"
  },
  {
   "code": "BIO_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Moleküler Biyoloji ve Genetik Lisans"
  },
  {
   "code": "KOME_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Kontrol ve Otomasyon Mühendisliği (İngilizce) Lisans"
- },
- {
-  "code": "ROS_LS",
-  "faculty": "Elektrik - Elektronik Fakültesi",
-  "name": "Robotik ve Otonom Sistemleri Mühendisliği Lisans"
  },
  {
   "code": "ROSE_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Robotik ve Otonom Sistemleri Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "BIOE_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Moleküler Biyoloji ve Genetik (İngilizce) Lisans"
  },
  {
   "code": "TEL_LS",
   "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
   "name": "Telekomünikasyon Mühendisliği Lisans"
  },
  {
   "code": "FIZ_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Fizik Mühendisliği Lisans"
+ },
+ {
+  "code": "ROS_LS",
+  "faculty": "Elektrik - Elektronik Fakültesi",
+  "level": "LS",
+  "name": "Robotik ve Otonom Sistemleri Mühendisliği Lisans"
  },
  {
   "code": "FZT_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Fizik"
- },
- {
-  "code": "MAT_LS",
-  "faculty": "Fen - Edebiyat Fakültesi",
-  "name": "Matematik Mühendisliği Lisans"
  },
  {
   "code": "KIM_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Kimya Lisans"
+ },
+ {
+  "code": "MAT_LS",
+  "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
+  "name": "Matematik Mühendisliği Lisans"
  },
  {
   "code": "KIME_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Kimya (İngilizce) Lisans"
  },
  {
   "code": "FIZE_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Fizik Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "MATE_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Matematik Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "GEM_LS",
   "faculty": "Gemi İnşaatı ve Deniz Bilimleri Fakültesi",
+  "level": "LS",
   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği Lisans"
  },
  {
   "code": "MTT_LS",
   "faculty": "Fen - Edebiyat Fakültesi",
+  "level": "LS",
   "name": "Matematik"
  },
  {
   "code": "DEN_LS",
   "faculty": "Gemi İnşaatı ve Deniz Bilimleri Fakültesi",
+  "level": "LS",
   "name": "Gemi ve Deniz Teknolojisi Mühendisliği Lisans"
  },
  {
   "code": "DENE_LS",
   "faculty": "Gemi İnşaatı ve Deniz Bilimleri Fakültesi",
+  "level": "LS",
   "name": "Gemi ve Deniz Teknolojisi Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "CEV_LS",
   "faculty": "İnşaat Fakültesi",
+  "level": "LS",
   "name": "Çevre Mühendisliği Lisans"
  },
  {
   "code": "CEVE_LS",
   "faculty": "İnşaat Fakültesi",
+  "level": "LS",
   "name": "Çevre Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "GEO_LS",
   "faculty": "İnşaat Fakültesi",
+  "level": "LS",
   "name": "Geomatik Mühendisliği Lisans"
- },
- {
-  "code": "GEOE_LS",
-  "faculty": "İnşaat Fakültesi",
-  "name": "Geomatik Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "GEME_LS",
   "faculty": "Gemi İnşaatı ve Deniz Bilimleri Fakültesi",
+  "level": "LS",
   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği (İngilizce) Lisans"
+ },
+ {
+  "code": "GEOE_LS",
+  "faculty": "İnşaat Fakültesi",
+  "level": "LS",
+  "name": "Geomatik Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "HTA_LS",
   "faculty": "İnşaat Fakültesi",
+  "level": "LS",
   "name": "Harita Mühendisliği Lisans"
  },
  {
   "code": "HTAE_LS",
   "faculty": "İnşaat Fakültesi",
+  "level": "LS",
   "name": "Harita Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "INS_LS",
   "faculty": "İnşaat Fakültesi",
+  "level": "LS",
   "name": "İnşaat Mühendisliği Lisans"
  },
  {
   "code": "INSE_LS",
   "faculty": "İnşaat Fakültesi",
+  "level": "LS",
   "name": "İnşaat Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "END_LS",
   "faculty": "İşletme Fakültesi",
+  "level": "LS",
   "name": "Endüstri Mühendisliği Lisans"
  },
  {
   "code": "ECNE_LS",
   "faculty": "İşletme Fakültesi",
+  "level": "LS",
   "name": "Ekonomi (İngilizce) Lisans"
  },
  {
   "code": "ENDE_LS",
   "faculty": "İşletme Fakültesi",
+  "level": "LS",
   "name": "Endüstri Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "IEBE_LS",
   "faculty": "İşletme Fakültesi",
+  "level": "LS",
   "name": "Endüstri Mühendisliği (İngilizce) (TAU)"
  },
  {
   "code": "ISLE_LS",
   "faculty": "İşletme Fakültesi",
+  "level": "LS",
   "name": "İşletme Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "ISL_LS",
   "faculty": "İşletme Fakültesi",
+  "level": "LS",
   "name": "İşletme Mühendisliği Lisans"
  },
  {
   "code": "ARC_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "Mimarlık (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "CEN_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "Bilgisayar Mühendisliği (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "VBAE_LS",
   "faculty": "İşletme Fakültesi",
+  "level": "LS",
   "name": "Veri Bilimi ve Analitiği (İngilizce) Lisans"
  },
  {
   "code": "EFN_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "Ekonomi ve Finans (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "IAD_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "İç Mimarlık (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "IND_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "Endüstri Mühendisliği (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "MMD_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "Denizcilik İşletmeleri Yönetimi (İngilizce) (KKTC) Lisans"
- },
- {
-  "code": "EEE_LS",
-  "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
-  "name": "Elektrik - Elektronik Mühendisliği (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "MEN_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "Gemi Makinaları İşletme Mühendisliği (İngilizce) (KKTC) Lisans"
+ },
+ {
+  "code": "EEE_LS",
+  "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
+  "name": "Elektrik - Elektronik Mühendisliği (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "NAE_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "MTM_LS",
   "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
+  "level": "LS",
   "name": "Deniz Ulaştırma İşletme Mühendisliği (İngilizce) (KKTC) Lisans"
  },
  {
   "code": "GID_LS",
   "faculty": "Kimya - Metalurji Fakültesi",
+  "level": "LS",
   "name": "Gıda Mühendisliği Lisans"
  },
  {
   "code": "KMM_LS",
   "faculty": "Kimya - Metalurji Fakültesi",
+  "level": "LS",
   "name": "Kimya Mühendisliği Lisans"
  },
  {
   "code": "KMME_LS",
   "faculty": "Kimya - Metalurji Fakültesi",
+  "level": "LS",
   "name": "Kimya Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "MET_LS",
   "faculty": "Kimya - Metalurji Fakültesi",
+  "level": "LS",
   "name": "Metalurji ve Malzeme Mühendisliği Lisans"
  },
  {
   "code": "METE_LS",
   "faculty": "Kimya - Metalurji Fakültesi",
+  "level": "LS",
   "name": "Metalurji ve Malzeme Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "GIDE_LS",
   "faculty": "Kimya - Metalurji Fakültesi",
+  "level": "LS",
   "name": "Gıda Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "CHZ_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Cevher Hazırlama Mühendisliği Lisans"
  },
  {
   "code": "JEF_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Jeofizik Mühendisliği Lisans"
  },
  {
   "code": "JEO_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Jeoloji Mühendisliği Lisans"
  },
  {
   "code": "CHZE_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Cevher Hazırlama Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "JEFE_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Jeofizik Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "JEOE_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Jeoloji Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "MAD_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Maden Mühendisliği Lisans"
  },
  {
   "code": "PETE_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Petrol ve Doğal Gaz Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "MADE_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Maden Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "PET_LS",
   "faculty": "Maden Fakültesi",
+  "level": "LS",
   "name": "Petrol ve Doğal Gaz Mühendisliği Lisans"
  },
  {
   "code": "IML_LS",
   "faculty": "Makina Fakültesi",
+  "level": "LS",
   "name": "İmalat Mühendisliği Lisans"
  },
  {
   "code": "IMLE_LS",
   "faculty": "Makina Fakültesi",
+  "level": "LS",
   "name": "İmalat Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "MAK_LS",
   "faculty": "Makina Fakültesi",
+  "level": "LS",
   "name": "Makina Mühendisliği Lisans"
  },
  {
   "code": "MAKE_LS",
   "faculty": "Makina Fakültesi",
+  "level": "LS",
   "name": "Makina Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "ENTE_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "Endüstriyel Tasarım (İngilizce) Lisans"
- },
- {
-  "code": "EUT_LS",
-  "faculty": "Mimarlık Fakültesi",
-  "name": "Endüstri Ürünleri Tasarımı Lisans"
  },
  {
   "code": "ICM_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "İç Mimarlık Lisans"
  },
  {
   "code": "MIM_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "Mimarlık Lisans"
  },
  {
   "code": "EUTE_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "Endüstri Ürünleri Tasarımı (İngilizce) Lisans"
+ },
+ {
+  "code": "EUT_LS",
+  "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
+  "name": "Endüstri Ürünleri Tasarımı Lisans"
  },
  {
   "code": "MIME_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "Mimarlık (İngilizce) Lisans"
  },
  {
   "code": "PEME_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "Peyzaj Mimarlığı (İngilizce) Lisans"
  },
  {
   "code": "PEM_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "Peyzaj Mimarlığı Lisans"
  },
  {
   "code": "SBP_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "Şehir ve Bölge Planlama Lisans"
  },
  {
   "code": "SBPE_LS",
   "faculty": "Mimarlık Fakültesi",
+  "level": "LS",
   "name": "Şehir ve Bölge Planlama (İngilizce) Lisans"
- },
- {
-  "code": "TEK_LS",
-  "faculty": "Tekstil Teknolojileri ve Tasarımı Fakültesi",
-  "name": "Tekstil Mühendisliği Lisans"
  },
  {
   "code": "TEKE_LS",
   "faculty": "Tekstil Teknolojileri ve Tasarımı Fakültesi",
+  "level": "LS",
   "name": "Tekstil Mühendisliği (İngilizce) Lisans"
+ },
+ {
+  "code": "TEK_LS",
+  "faculty": "Tekstil Teknolojileri ve Tasarımı Fakültesi",
+  "level": "LS",
+  "name": "Tekstil Mühendisliği Lisans"
  },
  {
   "code": "BST_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Bestecilik Lisans"
  },
  {
   "code": "KMP_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Kompozisyon Lisans"
  },
  {
   "code": "MTR_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Müzik Teorisi Lisans"
  },
  {
   "code": "CAB_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Çalgı Lisans"
  },
  {
   "code": "CEB_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Çalgı Eğitimi Lisans"
  },
  {
   "code": "MUZ_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Müzikoloji Lisans"
  },
  {
   "code": "MUT_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Müzik Teknolojileri Lisans"
  },
  {
   "code": "MZT_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Müzik Teknolojisi Lisans"
- },
- {
-  "code": "IBM_LS",
-  "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
-  "name": "İklim Bilimi ve Meteoroloji Mühendisliği Lisans"
  },
  {
   "code": "SES_TS_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Ses Eğitimi (TSM) Lisans"
+ },
+ {
+  "code": "IBM_LS",
+  "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
+  "level": "LS",
+  "name": "İklim Bilimi ve Meteoroloji Mühendisliği Lisans"
  },
  {
   "code": "SES_TH_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Ses Eğitimi (THM) Lisans"
  },
  {
   "code": "THO_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Türk Halk Oyunları Lisans"
  },
  {
   "code": "MTO_LS",
   "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
+  "level": "LS",
   "name": "Meteoroloji Mühendisliği Lisans"
  },
  {
   "code": "UZBE_LS",
   "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
+  "level": "LS",
   "name": "Uzay Mühendisliği (İngilizce) Lisans"
  },
  {
   "code": "UCK_LS",
   "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
+  "level": "LS",
   "name": "Uçak Mühendisliği Lisans"
  },
  {
   "code": "UZB_LS",
   "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
+  "level": "LS",
   "name": "Uzay Mühendisliği Lisans"
+ },
+ {
+  "code": "AYN_ATY_YL",
+  "faculty": "Afet Yönetimi Enstitüsü",
+  "level": "YL",
+  "name": "Afet Yönetimi Yüksek Lisans"
  },
  {
   "code": "SES_LS",
   "faculty": "Türk Musikisi Devlet Konservatuvarı",
+  "level": "LS",
   "name": "Ses Eğitimi Lisans"
+ },
+ {
+  "code": "DEP_DMY_YL",
+  "faculty": "Afet Yönetimi Enstitüsü",
+  "level": "YL",
+  "name": "Deprem Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "IDB_YSY_YL",
+  "faculty": "Avrasya Yer Bilimleri Enstitüsü",
+  "level": "YL",
+  "name": "Yer Sistem Bilimi Yüksek Lisans"
+ },
+ {
+  "code": "JEO_ATY_YL",
+  "faculty": "Avrasya Yer Bilimleri Enstitüsü",
+  "level": "YL",
+  "name": "Jeoantropoloji (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "JEO_JDY_YL",
+  "faculty": "Avrasya Yer Bilimleri Enstitüsü",
+  "level": "YL",
+  "name": "Jeodinamik Yüksek Lisans"
+ },
+ {
+  "code": "BBL_BBY_YL",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "YL",
+  "name": "Bilgisayar Bilimleri Yüksek Lisans"
+ },
+ {
+  "code": "BGM_KRY_YL",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "YL",
+  "name": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans"
+ },
+ {
+  "code": "BLG_HBY_YL",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "YL",
+  "name": "Bilgi ve Haberleşme Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "CBT_CTY_YL",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "YL",
+  "name": "Coğrafi Bilgi Teknolojileri Yüksek Lisans"
+ },
+ {
+  "code": "HBM_HBY_YL",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "YL",
+  "name": "Hesaplamalı Bilim ve Mühendislik Yüksek Lisans"
+ },
+ {
+  "code": "UAH_UAY_YL",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "YL",
+  "name": "Uydu Haberleşmesi ve Uzaktan Algılama Yüksek Lisans"
+ },
+ {
+  "code": "NEM_NEY_YL",
+  "faculty": "Enerji Enstitüsü",
+  "level": "YL",
+  "name": "Nükleer Enerji Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "EBT_EBY_YL",
+  "faculty": "Enerji Enstitüsü",
+  "level": "YL",
+  "name": "Enerji Bilim ve Teknoloji Yüksek Lisans"
+ },
+ {
+  "code": "RAD_RDY_YL",
+  "faculty": "Enerji Enstitüsü",
+  "level": "YL",
+  "name": "Radyasyon Bilim ve Teknoloji Yüksek Lisans"
+ },
+ {
+  "code": "SVT_SVY_YL",
+  "faculty": "Havacılık Enstitüsü",
+  "level": "YL",
+  "name": "Savunma Teknolojileri Yüksek Lisans"
+ },
+ {
+  "code": "ADM_AT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Açık Deniz Mühendisliği (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "AYN_AT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Afet Yönetimi Yüksek Lisans"
+ },
+ {
+  "code": "BBL_BB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Bilgisayar Bilimleri Yüksek Lisans"
+ },
+ {
+  "code": "AYN_AY_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Afet Yönetimi Tezsiz Yüksek Lisans"
+ },
+ {
+  "code": "BLG_BG_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Bilgisayar Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "BGM_KR_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans"
+ },
+ {
+  "code": "BLG_HB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Bilgi ve Haberleşme Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "BTT_BT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Bilim ve Teknoloji Tarihi Yüksek Lisans"
+ },
+ {
+  "code": "BTT_TT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Bilim, Teknoloji ve Toplum Yüksek Lisans"
+ },
+ {
+  "code": "BVA_IA_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Büyük Veri ve İş Analitiği Yüksek Lisans"
+ },
+ {
+  "code": "CBT_CT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Coğrafi Bilgi Teknolojileri Yüksek Lisans"
+ },
+ {
+  "code": "CGS_CS_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Çalgı-Ses Yüksek Lisans"
+ },
+ {
+  "code": "CEV_EB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Çevre Biyoteknolojisi Yüksek Lisans"
+ },
+ {
+  "code": "CVH_CV_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Cevher Hazırlama Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "DEN_DT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Gemi ve Deniz Teknolojisi Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "DEP_DM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Deprem Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "DUM_DU_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Deniz Ulaştırma Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "DZC_DN_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Denizcilik Çalışmaları Yüksek Lisans"
+ },
+ {
+  "code": "EBT_EB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Enerji Bilim ve Teknoloji Yüksek Lisans"
+ },
+ {
+  "code": "ELH_BM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Biyomedikal Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "ELH_EL_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Elektronik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "ELH_TL_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Telekomünikasyon Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "ELK_EL_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Elektrik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "END_EM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Endüstri Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "END_MY_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Mühendislik Yönetimi Yüksek Lisans"
+ },
+ {
+  "code": "ETY_ET_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Endüstriyel Tasarım Yüksek Lisans"
+ },
+ {
+  "code": "EUT_ET_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Endüstri Ürünleri Tasarımı Yüksek Lisans"
+ },
+ {
+  "code": "FIZ_FM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Fizik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "GAM_OE_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Oyun ve Etkileşim Teknolojileri (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "GDP_GD_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Geleneksel Danslar Yüksek Lisans"
+ },
+ {
+  "code": "GEM_GI_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "GGP_GG_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Gayrimenkul Geliştirme Yüksek Lisans"
+ },
+ {
+  "code": "GID_GM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Gıda Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "HBM_HB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Hesaplamalı Bilim ve Mühendislik Yüksek Lisans"
+ },
+ {
+  "code": "IMT_IM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "İç Mimari Tasarım Uluslararası (IMIAD) Yüksek Lisans"
+ },
+ {
+  "code": "ICM_IM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "İç Mimarlık (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "IDB_YS_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Yer Sistem Bilimi Yüksek Lisans"
+ },
+ {
+  "code": "IKT_IK_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "İktisat Yüksek Lisans"
+ },
+ {
+  "code": "IKT_IN_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "İktisat (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "INK_IK_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "İnsan Kaynakları Yönetimi Yüksek Lisans"
+ },
+ {
+  "code": "INS_HS_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Hidrolik ve Su Kaynakları Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "INS_UL_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Ulaştırma Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "INS_YA_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Yapı Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "INS_YI_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Yapı İşletmesi Yüksek Lisans"
+ },
+ {
+  "code": "INS_ZG_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Zemin Mekaniği ve Geoteknik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "ISL_IM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "İşletme Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "ISS_IS_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "İşletme Tezsiz Yüksek Lisans"
+ },
+ {
+  "code": "ITT_TT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Yenilikçi Teknik Tekstiller (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "ISS_IT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "İşletme Yüksek Lisans"
+ },
+ {
+  "code": "JDF_GE_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Geomatik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "JEF_JF_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Jeofizik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "JEO_AT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Jeoantropoloji (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "JEO_JD_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Jeodinamik Yüksek Lisans"
+ },
+ {
+  "code": "JEO_UJ_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Jeoloji Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "KBM_KB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Kıyı Bilimleri ve Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "KTB_KB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Kutup Bilimleri (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "KIM_KY_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Kimya Yüksek Lisans"
+ },
+ {
+  "code": "KET_KT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Kentsel Tasarım Yüksek Lisans"
+ },
+ {
+  "code": "KMM_KM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Kimya Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "KOM_KO_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Kontrol ve Otomasyon Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "MAD_MM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Maden Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "MAK_EN_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Isı Akışkan Yüksek Lisans"
+ },
+ {
+  "code": "MAK_KC_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Katı Cisimlerin Mekaniği Yüksek Lisans"
+ },
+ {
+  "code": "MAK_KS_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Konstrüksiyon Yüksek Lisans"
+ },
+ {
+  "code": "MAK_MD_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Makina Dinamiği, Titreşim ve Akustiği Yüksek Lisans"
+ },
+ {
+  "code": "MAK_MI_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Malzeme ve İmalat Yüksek Lisans"
+ },
+ {
+  "code": "MAK_OT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Otomotiv Yüksek Lisans"
+ },
+ {
+  "code": "MAT_MM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Matematik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "MBG_MG_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Moleküler Biyoloji-Genetik ve Biyoteknoloji Yüksek Lisans"
+ },
+ {
+  "code": "MAK_SD_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Sistem Dinamiği ve Kontrol Yüksek Lisans"
+ },
+ {
+  "code": "MBM_MB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Malzeme Bilimi ve Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "MET_ML_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Malzeme Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "MET_SR_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Seramik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "MET_UT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Üretim Metalurjisi ve Teknolojileri Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "MIM_CY_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Çevre Kontrolü ve Yapı Teknolojisi Yüksek Lisans"
+ },
+ {
+  "code": "MDP_MZ_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Müzik (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "MIM_MS_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Mimari Tasarım Yüksek Lisans"
+ },
+ {
+  "code": "MIM_TA_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Mimarlık Tarihi Yüksek Lisans"
+ },
+ {
+  "code": "MIM_TM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Mimarlık Tezsiz Yüksek Lisans"
+ },
+ {
+  "code": "MIM_PY_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Proje ve Yapım Yönetimi Yüksek Lisans"
+ },
+ {
+  "code": "MIM_TR_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Restorasyon Tezsiz Yüksek Lisans"
+ },
+ {
+  "code": "MIM_RT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Restorasyon Yüksek Lisans"
+ },
+ {
+  "code": "NAS_NE_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Nano Bilim ve Nano Mühendislik (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "MKM_MK_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Mekatronik Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "MTB_MT_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Mimari Tasarımda Bilişim Yüksek Lisans"
+ },
+ {
+  "code": "MTO_MM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Atmosfer Bilimleri Yüksek Lisans"
+ },
+ {
+  "code": "MZJ_MJ_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Müzikoloji Yüksek Lisans"
+ },
+ {
+  "code": "MZT_KM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Müzik Teorisi ve Kompozisyon Yüksek Lisans"
+ },
+ {
+  "code": "NEM_NE_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Nükleer Enerji Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "PEM_PM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Peyzaj Mimarlığı Yüksek Lisans"
+ },
+ {
+  "code": "PET_PD_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Petrol ve Doğal Gaz Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "PST_PS_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Polimer Bilim ve Teknolojisi (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "RAD_RD_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Radyasyon Bilim ve Teknoloji Yüksek Lisans"
+ },
+ {
+  "code": "RSM_RS_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Raylı Sistemler Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "SBP_SP_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Şehir Planlama Yüksek Lisans"
+ },
+ {
+  "code": "SBP_BP_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Bölge Planlama Yüksek Lisans"
+ },
+ {
+  "code": "STR_ST_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Sanat Tarihi Yüksek Lisans"
+ },
+ {
+  "code": "SUS_SU_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Sürdürülebilirlik (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "SVT_ST_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Savunma Teknolojileri Yüksek Lisans"
+ },
+ {
+  "code": "SVT_SV_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Savunma Teknolojileri Yüksek Lisans"
+ },
+ {
+  "code": "SYC_SY_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Siyaset Çalışmaları (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "TEK_TK_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Tekstil Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "TMP_TM_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Türk Müziği Yüksek Lisans"
+ },
+ {
+  "code": "UAH_UA_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Uydu Haberleşmesi ve Uzaktan Algılama Yüksek Lisans"
+ },
+ {
+  "code": "UUM_UU_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Uçak ve Uzay Mühendisliği Yüksek Lisans"
+ },
+ {
+  "code": "UZM_UB_YL",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "YL",
+  "name": "Uzay Mühendisliği (İngilizce) Yüksek Lisans"
+ },
+ {
+  "code": "AYN_ABY_DR",
+  "faculty": "Afet Yönetimi Enstitüsü",
+  "level": "DR",
+  "name": "Afet Bilimi ve Mühendisliği Doktora"
+ },
+ {
+  "code": "DEP_DMY_DR",
+  "faculty": "Afet Yönetimi Enstitüsü",
+  "level": "DR",
+  "name": "Deprem Mühendisliği Doktora"
+ },
+ {
+  "code": "IDB_YSY_DR",
+  "faculty": "Avrasya Yer Bilimleri Enstitüsü",
+  "level": "DR",
+  "name": "Yer Sistem Bilimi Doktora"
+ },
+ {
+  "code": "JEO_JDY_DR",
+  "faculty": "Avrasya Yer Bilimleri Enstitüsü",
+  "level": "DR",
+  "name": "Jeodinamik Doktora"
+ },
+ {
+  "code": "BBL_BBY_DR",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "DR",
+  "name": "Bilgisayar Bilimleri Doktora"
+ },
+ {
+  "code": "BGM_KRY_DR",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "DR",
+  "name": "Bilgi Güvenliği Mühendisliği ve Kriptografi Doktora"
+ },
+ {
+  "code": "CBT_CTY_DR",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "DR",
+  "name": "Coğrafi Bilgi Teknolojileri Doktora"
+ },
+ {
+  "code": "BLG_HBY_DR",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "DR",
+  "name": "Bilgi ve Haberleşme Mühendisliği Doktora"
+ },
+ {
+  "code": "HBM_HBY_DR",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "DR",
+  "name": "Hesaplamalı Bilim ve Mühendislik Doktora"
+ },
+ {
+  "code": "UAH_UAY_DR",
+  "faculty": "Bilişim Enstitüsü",
+  "level": "DR",
+  "name": "Uydu Haberleşmesi ve Uzaktan Algılama Doktora"
+ },
+ {
+  "code": "EBT_EBY_DR",
+  "faculty": "Enerji Enstitüsü",
+  "level": "DR",
+  "name": "Enerji Bilim ve Teknoloji Doktora"
+ },
+ {
+  "code": "NEM_NEY_DR",
+  "faculty": "Enerji Enstitüsü",
+  "level": "DR",
+  "name": "Nükleer Enerji Mühendisliği Doktora"
+ },
+ {
+  "code": "SVT_SVY_DR",
+  "faculty": "Havacılık Enstitüsü",
+  "level": "DR",
+  "name": "Savunma Teknolojileri Doktora"
+ },
+ {
+  "code": "AYN_AB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Afet Bilimi ve Mühendisliği Doktora"
+ },
+ {
+  "code": "BBL_BB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Bilgisayar Bilimleri Doktora"
+ },
+ {
+  "code": "BGM_KR_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Bilgi Güvenliği Mühendisliği ve Kriptografi Doktora"
+ },
+ {
+  "code": "BLG_BG_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Bilgisayar Mühendisliği Doktora"
+ },
+ {
+  "code": "BLG_HB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Bilgi ve Haberleşme Mühendisliği Doktora"
+ },
+ {
+  "code": "BTT_BT_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Bilim ve Teknoloji Tarihi Doktora"
+ },
+ {
+  "code": "CBT_CT_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Coğrafi Bilgi Teknolojileri Doktora"
+ },
+ {
+  "code": "CBY_CB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Çevre Bilimleri Mühendisliği ve Yönetimi Doktora"
+ },
+ {
+  "code": "CEV_CB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Çevre Bilimleri ve Mühendisliği Doktora"
+ },
+ {
+  "code": "CEV_EB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Çevre Biyoteknolojisi Doktora"
+ },
+ {
+  "code": "CVH_CV_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Cevher Hazırlama Mühendisliği Doktora"
+ },
+ {
+  "code": "DEN_DT_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Gemi ve Deniz Teknolojisi Mühendisliği Doktora"
+ },
+ {
+  "code": "DEP_DM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Deprem Mühendisliği Doktora"
+ },
+ {
+  "code": "DUM_DU_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Deniz Ulaştırma Mühendisliği Doktora"
+ },
+ {
+  "code": "DZC_DN_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Denizcilik Çalışmaları Doktora"
+ },
+ {
+  "code": "EBT_EB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Enerji Bilim ve Teknoloji Doktora"
+ },
+ {
+  "code": "ELH_BM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Biyomedikal Mühendisliği (İngilizce) Doktora"
+ },
+ {
+  "code": "ELH_EL_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Elektronik Mühendisliği Doktora"
+ },
+ {
+  "code": "ELH_TL_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Telekomünikasyon Mühendisliği Doktora"
+ },
+ {
+  "code": "ELK_EL_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Elektrik Mühendisliği Doktora"
+ },
+ {
+  "code": "END_EM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Endüstri Mühendisliği Doktora"
+ },
+ {
+  "code": "ETY_ET_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Endüstriyel Tasarım Doktora"
+ },
+ {
+  "code": "EUT_ET_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Endüstri Ürünleri Tasarımı Doktora"
+ },
+ {
+  "code": "FIZ_FM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Fizik Mühendisliği Doktora"
+ },
+ {
+  "code": "GEM_GI_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği Doktora"
+ },
+ {
+  "code": "GID_GM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Gıda Mühendisliği Doktora"
+ },
+ {
+  "code": "HBM_HB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Hesaplamalı Bilim ve Mühendislik Doktora"
+ },
+ {
+  "code": "IDB_YS_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Yer Sistem Bilimi Doktora"
+ },
+ {
+  "code": "IKT_IK_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "İktisat Doktora"
+ },
+ {
+  "code": "IKT_IN_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "İktisat (İngilizce) Doktora"
+ },
+ {
+  "code": "INS_HS_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Hidrolik ve Su Kaynakları Mühendisliği Doktora"
+ },
+ {
+  "code": "INS_UL_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Ulaştırma Mühendisliği Doktora"
+ },
+ {
+  "code": "INS_YA_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Yapı Mühendisliği Doktora"
+ },
+ {
+  "code": "INS_ZG_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Zemin Mekaniği ve Geoteknik Mühendisliği Doktora"
+ },
+ {
+  "code": "ISL_IM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "İşletme Mühendisliği Doktora"
+ },
+ {
+  "code": "ISL_IS_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "İşletme Doktora"
+ },
+ {
+  "code": "JDF_GE_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Geomatik Mühendisliği Doktora"
+ },
+ {
+  "code": "JEF_JF_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Jeofizik Mühendisliği Doktora"
+ },
+ {
+  "code": "JEO_JD_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Jeodinamik Doktora"
+ },
+ {
+  "code": "JEO_JM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Jeoloji Mühendisliği Doktora"
+ },
+ {
+  "code": "KBM_KB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Kıyı Bilimleri ve Mühendisliği Doktora"
+ },
+ {
+  "code": "KIM_KY_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Kimya Doktora"
+ },
+ {
+  "code": "KMM_KM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Kimya Mühendisliği Doktora"
+ },
+ {
+  "code": "KOM_KO_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Kontrol ve Otomasyon Mühendisliği Doktora"
+ },
+ {
+  "code": "MAD_MM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Maden Mühendisliği Doktora"
+ },
+ {
+  "code": "MAK_MK_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Makina Mühendisliği Doktora"
+ },
+ {
+  "code": "MAT_MM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Matematik Mühendisliği Doktora"
+ },
+ {
+  "code": "MBM_MB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Malzeme Bilimi ve Mühendisliği Doktora"
+ },
+ {
+  "code": "MBG_MG_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Moleküler Biyoloji-Genetik ve Biyoteknoloji Doktora"
+ },
+ {
+  "code": "MET_MM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Metalurji ve Malzeme Mühendisliği Doktora"
+ },
+ {
+  "code": "MIM_MS_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Mimari Tasarım Doktora"
+ },
+ {
+  "code": "MDP_MZ_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Müzik (İngilizce) Doktora"
+ },
+ {
+  "code": "MIM_PY_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Proje ve Yapım Yönetimi Doktora"
+ },
+ {
+  "code": "MIM_TA_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Mimarlık Tarihi Doktora"
+ },
+ {
+  "code": "MIM_RT_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Restorasyon Doktora"
+ },
+ {
+  "code": "MIM_YM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Yapı Bilimleri Doktora"
+ },
+ {
+  "code": "MJT_MM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Müzikoloji ve Müzik Teorisi Doktora"
+ },
+ {
+  "code": "MKM_MK_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Mekatronik Mühendisliği Doktora"
+ },
+ {
+  "code": "MTB_MT_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Mimari Tasarımda Bilişim Doktora"
+ },
+ {
+  "code": "MTO_MM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Atmosfer Bilimleri Doktora"
+ },
+ {
+  "code": "NAS_NE_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Nano Bilim ve Nano Mühendislik (İngilizce) Doktora"
+ },
+ {
+  "code": "NEM_NE_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Nükleer Enerji Mühendisliği Doktora"
+ },
+ {
+  "code": "PEM_PM_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Peyzaj Mimarlığı Doktora"
+ },
+ {
+  "code": "PET_PD_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Petrol ve Doğal Gaz Mühendisliği Doktora"
+ },
+ {
+  "code": "PST_PS_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Polimer Bilim ve Teknolojisi (İngilizce) Doktora"
+ },
+ {
+  "code": "SBP_SB_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Şehir ve Bölge Planlama Doktora"
+ },
+ {
+  "code": "STR_ST_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Sanat Tarihi Doktora"
+ },
+ {
+  "code": "SVT_SV_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Savunma Teknolojileri Doktora"
+ },
+ {
+  "code": "SYC_TD_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Siyasal ve Toplumsal Düşünceler (İngilizce) Doktora"
+ },
+ {
+  "code": "TEK_TK_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Tekstil Mühendisliği Doktora"
+ },
+ {
+  "code": "UAH_UA_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Uydu Haberleşmesi ve Uzaktan Algılama Doktora"
+ },
+ {
+  "code": "UUM_UU_DR",
+  "faculty": "Lisansüstü Eğitim Enstitüsü",
+  "level": "DR",
+  "name": "Uçak ve Uzay Mühendisliği Doktora"
  }
 ]

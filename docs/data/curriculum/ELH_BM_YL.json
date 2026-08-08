@@ -1,0 +1,470 @@
+{
+ "programCode": "ELH_BM_YL",
+ "programName": "Biyomedikal Mühendisliği Yüksek Lisans",
+ "faculty": "Lisansüstü Eğitim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Biyomedikal Mühendisliği Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "Biyomedikal Mühendisliği Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "BYM YLT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "course": {
+      "code": "BYM 596 BYM 596E",
+      "name": "Bilimsel Araş.,Etik ve Seminer"
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Matematik Dersi",
+      "options": [
+       {
+        "code": "ELE 519",
+        "name": "Elekt.Müh.Matematiksel Yönt."
+       },
+       {
+        "code": "KOM 505",
+        "name": "Olasılık Kuramı&Rastlan.Süreçl"
+       },
+       {
+        "code": "KOM 505E",
+        "name": "Probability Theory&Stochast.Pr"
+       },
+       {
+        "code": "TEL 529",
+        "name": "İleri Mühendislik Matematiği"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "BYM 501E",
+        "name": "Biomedical Instrumentation"
+       },
+       {
+        "code": "BYM 502",
+        "name": "Fizyoloji"
+       },
+       {
+        "code": "BYM 504E",
+        "name": "Biomedical Imaging Systems"
+       },
+       {
+        "code": "BYM 506E",
+        "name": "Electromag. Waves in Medicine"
+       },
+       {
+        "code": "BYM 510E",
+        "name": "Biological Signals Processing"
+       },
+       {
+        "code": "KOM 505",
+        "name": "Olasılık Kuramı&Rastlan.Süreçl"
+       },
+       {
+        "code": "KOM 505E",
+        "name": "Probability Theory&Stochast.Pr"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "BYM 501E",
+        "name": "Biomedical Instrumentation"
+       },
+       {
+        "code": "BYM 502",
+        "name": "Fizyoloji"
+       },
+       {
+        "code": "BYM 504E",
+        "name": "Biomedical Imaging Systems"
+       },
+       {
+        "code": "BYM 506E",
+        "name": "Electromag. Waves in Medicine"
+       },
+       {
+        "code": "BYM 510E",
+        "name": "Biological Signals Processing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "BYM 501E",
+        "name": "Biomedical Instrumentation"
+       },
+       {
+        "code": "BYM 502",
+        "name": "Fizyoloji"
+       },
+       {
+        "code": "BYM 504E",
+        "name": "Biomedical Imaging Systems"
+       },
+       {
+        "code": "BYM 506E",
+        "name": "Electromag. Waves in Medicine"
+       },
+       {
+        "code": "BYM 510E",
+        "name": "Biological Signals Processing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": [
+       {
+        "code": "BYM 502",
+        "name": "Fizyoloji"
+       },
+       {
+        "code": "BYM 503E",
+        "name": "Intr.to Biomedical Optics"
+       },
+       {
+        "code": "BYM 504E",
+        "name": "Biomedical Imaging Systems"
+       },
+       {
+        "code": "BYM 505E",
+        "name": "Pattern Recog.by Neural Netw."
+       },
+       {
+        "code": "BYM 506E",
+        "name": "Electromag. Waves in Medicine"
+       },
+       {
+        "code": "BYM 507E",
+        "name": "Biolog.effect of EM Waves"
+       },
+       {
+        "code": "BYM 508",
+        "name": "Biyomekanik&Doku Biyomekaniği"
+       },
+       {
+        "code": "BYM 509",
+        "name": "Medikal Görün.&Analiz Teknikle"
+       },
+       {
+        "code": "BYM 510E",
+        "name": "Biological Signals Processing"
+       },
+       {
+        "code": "BYM 511",
+        "name": "Biyoelektrik Olaylar"
+       },
+       {
+        "code": "BYM 512E",
+        "name": "Mathematic. Meth.in Tomography"
+       },
+       {
+        "code": "BYM 513",
+        "name": "Advanced Topics In Biomed.Eng."
+       },
+       {
+        "code": "BYM 513E",
+        "name": "Advanced Topics In Biomed.Eng."
+       },
+       {
+        "code": "BYM 514",
+        "name": "Makina Öğrenm.&Genetik Algort."
+       },
+       {
+        "code": "BYM 515",
+        "name": "Biyomalzemeler"
+       },
+       {
+        "code": "BYM 516E",
+        "name": "Basics of Biomedical Informati"
+       },
+       {
+        "code": "ELE 527E",
+        "name": "Photonics"
+       },
+       {
+        "code": "ELE 532E",
+        "name": "BioMEMS&Microfluidic Systems"
+       },
+       {
+        "code": "TEL 519E",
+        "name": "Image Processing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": [
+       {
+        "code": "BYM 502",
+        "name": "Fizyoloji"
+       },
+       {
+        "code": "BYM 503E",
+        "name": "Intr.to Biomedical Optics"
+       },
+       {
+        "code": "BYM 504E",
+        "name": "Biomedical Imaging Systems"
+       },
+       {
+        "code": "BYM 505E",
+        "name": "Pattern Recog.by Neural Netw."
+       },
+       {
+        "code": "BYM 506E",
+        "name": "Electromag. Waves in Medicine"
+       },
+       {
+        "code": "BYM 507E",
+        "name": "Biolog.effect of EM Waves"
+       },
+       {
+        "code": "BYM 508",
+        "name": "Biyomekanik&Doku Biyomekaniği"
+       },
+       {
+        "code": "BYM 509",
+        "name": "Medikal Görün.&Analiz Teknikle"
+       },
+       {
+        "code": "BYM 510E",
+        "name": "Biological Signals Processing"
+       },
+       {
+        "code": "BYM 511",
+        "name": "Biyoelektrik Olaylar"
+       },
+       {
+        "code": "BYM 512E",
+        "name": "Mathematic. Meth.in Tomography"
+       },
+       {
+        "code": "BYM 513",
+        "name": "Advanced Topics In Biomed.Eng."
+       },
+       {
+        "code": "BYM 513E",
+        "name": "Advanced Topics In Biomed.Eng."
+       },
+       {
+        "code": "BYM 514",
+        "name": "Makina Öğrenm.&Genetik Algort."
+       },
+       {
+        "code": "BYM 515",
+        "name": "Biyomalzemeler"
+       },
+       {
+        "code": "BYM 516E",
+        "name": "Basics of Biomedical Informati"
+       },
+       {
+        "code": "ELE 527E",
+        "name": "Photonics"
+       },
+       {
+        "code": "ELE 532E",
+        "name": "BioMEMS&Microfluidic Systems"
+       },
+       {
+        "code": "TEL 519E",
+        "name": "Image Processing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": [
+       {
+        "code": "BYM 502",
+        "name": "Fizyoloji"
+       },
+       {
+        "code": "BYM 503E",
+        "name": "Intr.to Biomedical Optics"
+       },
+       {
+        "code": "BYM 504E",
+        "name": "Biomedical Imaging Systems"
+       },
+       {
+        "code": "BYM 505E",
+        "name": "Pattern Recog.by Neural Netw."
+       },
+       {
+        "code": "BYM 506E",
+        "name": "Electromag. Waves in Medicine"
+       },
+       {
+        "code": "BYM 507E",
+        "name": "Biolog.effect of EM Waves"
+       },
+       {
+        "code": "BYM 508",
+        "name": "Biyomekanik&Doku Biyomekaniği"
+       },
+       {
+        "code": "BYM 509",
+        "name": "Medikal Görün.&Analiz Teknikle"
+       },
+       {
+        "code": "BYM 510E",
+        "name": "Biological Signals Processing"
+       },
+       {
+        "code": "BYM 511",
+        "name": "Biyoelektrik Olaylar"
+       },
+       {
+        "code": "BYM 512E",
+        "name": "Mathematic. Meth.in Tomography"
+       },
+       {
+        "code": "BYM 513E",
+        "name": "Advanced Topics In Biomed.Eng."
+       },
+       {
+        "code": "BYM 513",
+        "name": "Advanced Topics In Biomed.Eng."
+       },
+       {
+        "code": "BYM 514",
+        "name": "Makina Öğrenm.&Genetik Algort."
+       },
+       {
+        "code": "BYM 515",
+        "name": "Biyomalzemeler"
+       },
+       {
+        "code": "BYM 516E",
+        "name": "Basics of Biomedical Informati"
+       },
+       {
+        "code": "ELE 527E",
+        "name": "Photonics"
+       },
+       {
+        "code": "ELE 532E",
+        "name": "BioMEMS&Microfluidic Systems"
+       },
+       {
+        "code": "TEL 519E",
+        "name": "Image Processing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": [
+       {
+        "code": "BYM 502",
+        "name": "Fizyoloji"
+       },
+       {
+        "code": "BYM 503E",
+        "name": "Intr.to Biomedical Optics"
+       },
+       {
+        "code": "BYM 504E",
+        "name": "Biomedical Imaging Systems"
+       },
+       {
+        "code": "BYM 505E",
+        "name": "Pattern Recog.by Neural Netw."
+       },
+       {
+        "code": "BYM 506E",
+        "name": "Electromag. Waves in Medicine"
+       },
+       {
+        "code": "BYM 507E",
+        "name": "Biolog.effect of EM Waves"
+       },
+       {
+        "code": "BYM 508",
+        "name": "Biyomekanik&Doku Biyomekaniği"
+       },
+       {
+        "code": "BYM 509",
+        "name": "Medikal Görün.&Analiz Teknikle"
+       },
+       {
+        "code": "BYM 510E",
+        "name": "Biological Signals Processing"
+       },
+       {
+        "code": "BYM 511",
+        "name": "Biyoelektrik Olaylar"
+       },
+       {
+        "code": "BYM 512E",
+        "name": "Mathematic. Meth.in Tomography"
+       },
+       {
+        "code": "BYM 513E",
+        "name": "Advanced Topics In Biomed.Eng."
+       },
+       {
+        "code": "BYM 513",
+        "name": "Advanced Topics In Biomed.Eng."
+       },
+       {
+        "code": "BYM 514",
+        "name": "Makina Öğrenm.&Genetik Algort."
+       },
+       {
+        "code": "BYM 515",
+        "name": "Biyomalzemeler"
+       },
+       {
+        "code": "BYM 516E",
+        "name": "Basics of Biomedical Informati"
+       },
+       {
+        "code": "ELE 527E",
+        "name": "Photonics"
+       },
+       {
+        "code": "ELE 532E",
+        "name": "BioMEMS&Microfluidic Systems"
+       },
+       {
+        "code": "TEL 519E",
+        "name": "Image Processing"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

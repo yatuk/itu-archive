@@ -1,0 +1,362 @@
+{
+ "programCode": "KMM_KM_YL",
+ "programName": "Kimya Mühendisliği Yüksek Lisans",
+ "faculty": "Lisansüstü Eğitim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Kimya Mühendisliği Yüksek Lisans Programı",
+ "semesters": [
+  {
+   "title": "Kimya Mühendisliği Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "KMM YLT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "course": {
+      "code": "KMM 596 KMM 596E",
+      "name": "Bilimsel Araş.,Etik ve Seminer"
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Matematik Dersi",
+      "options": [
+       {
+        "code": "KMM 511E",
+        "name": "Engineering Mathematics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "KMM 501E",
+        "name": "Transport Phenomena"
+       },
+       {
+        "code": "KMM 543E",
+        "name": "Advanced Chemical Eng.Ther."
+       },
+       {
+        "code": "KMM 544E",
+        "name": "Advanced Chem.Reac.Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "KMM 501E",
+        "name": "Transport Phenomena"
+       },
+       {
+        "code": "KMM 543E",
+        "name": "Advanced Chemical Eng.Ther."
+       },
+       {
+        "code": "KMM 544E",
+        "name": "Advanced Chem.Reac.Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "KMM 501E",
+        "name": "Transport Phenomena"
+       },
+       {
+        "code": "KMM 543E",
+        "name": "Advanced Chemical Eng.Ther."
+       },
+       {
+        "code": "KMM 544E",
+        "name": "Advanced Chem.Reac.Engineering"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": [
+       {
+        "code": "BLU 537E",
+        "name": "Data Analysis&Visualization"
+       },
+       {
+        "code": "EBT 509",
+        "name": "Kömür Bilimi ve Teknolojisi"
+       },
+       {
+        "code": "EBT 534",
+        "name": "Biyokütle ve Dönüşüm Teknoloji"
+       },
+       {
+        "code": "EBT 539",
+        "name": "Enerji, Çevre ve Hukuku"
+       },
+       {
+        "code": "END 503E",
+        "name": "Non-Linear Prg.Theory&Algorit."
+       },
+       {
+        "code": "END 508",
+        "name": "Mathematical Programming"
+       },
+       {
+        "code": "END 508E",
+        "name": "Mathematical Programming"
+       },
+       {
+        "code": "HBM 526E",
+        "name": "Advanced Molecular Modelling"
+       },
+       {
+        "code": "KOM 501E",
+        "name": "Cont.Sist.With Paramet. Uncert"
+       },
+       {
+        "code": "KOM 518E",
+        "name": "Model Predictive Control"
+       },
+       {
+        "code": "MBG 513",
+        "name": "Enzim Kinetiği"
+       },
+       {
+        "code": "MBG 514",
+        "name": "Industrial Enzymology"
+       },
+       {
+        "code": "MBG 541E",
+        "name": "Spe.Top.in Mole.Bio.-Gen.&Bio."
+       },
+       {
+        "code": "MBM 502E",
+        "name": "Phsysics of Solids"
+       },
+       {
+        "code": "MBM 507",
+        "name": "Polimer Kimyası"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": [
+       {
+        "code": "BLU 537E",
+        "name": "Data Analysis&Visualization"
+       },
+       {
+        "code": "EBT 509",
+        "name": "Kömür Bilimi ve Teknolojisi"
+       },
+       {
+        "code": "EBT 534",
+        "name": "Biyokütle ve Dönüşüm Teknoloji"
+       },
+       {
+        "code": "EBT 539",
+        "name": "Enerji, Çevre ve Hukuku"
+       },
+       {
+        "code": "END 503E",
+        "name": "Non-Linear Prg.Theory&Algorit."
+       },
+       {
+        "code": "END 508",
+        "name": "Mathematical Programming"
+       },
+       {
+        "code": "END 508E",
+        "name": "Mathematical Programming"
+       },
+       {
+        "code": "HBM 526E",
+        "name": "Advanced Molecular Modelling"
+       },
+       {
+        "code": "KOM 501E",
+        "name": "Cont.Sist.With Paramet. Uncert"
+       },
+       {
+        "code": "KOM 518E",
+        "name": "Model Predictive Control"
+       },
+       {
+        "code": "MBG 513",
+        "name": "Enzim Kinetiği"
+       },
+       {
+        "code": "MBG 514",
+        "name": "Industrial Enzymology"
+       },
+       {
+        "code": "MBG 541E",
+        "name": "Spe.Top.in Mole.Bio.-Gen.&Bio."
+       },
+       {
+        "code": "MBM 502E",
+        "name": "Phsysics of Solids"
+       },
+       {
+        "code": "MBM 507",
+        "name": "Polimer Kimyası"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": [
+       {
+        "code": "BLU 537E",
+        "name": "Data Analysis&Visualization"
+       },
+       {
+        "code": "EBT 509",
+        "name": "Kömür Bilimi ve Teknolojisi"
+       },
+       {
+        "code": "EBT 534",
+        "name": "Biyokütle ve Dönüşüm Teknoloji"
+       },
+       {
+        "code": "EBT 539",
+        "name": "Enerji, Çevre ve Hukuku"
+       },
+       {
+        "code": "END 503E",
+        "name": "Non-Linear Prg.Theory&Algorit."
+       },
+       {
+        "code": "END 508",
+        "name": "Mathematical Programming"
+       },
+       {
+        "code": "END 508E",
+        "name": "Mathematical Programming"
+       },
+       {
+        "code": "HBM 526E",
+        "name": "Advanced Molecular Modelling"
+       },
+       {
+        "code": "KOM 501E",
+        "name": "Cont.Sist.With Paramet. Uncert"
+       },
+       {
+        "code": "KOM 518E",
+        "name": "Model Predictive Control"
+       },
+       {
+        "code": "MBG 513",
+        "name": "Enzim Kinetiği"
+       },
+       {
+        "code": "MBG 514",
+        "name": "Industrial Enzymology"
+       },
+       {
+        "code": "MBG 541E",
+        "name": "Spe.Top.in Mole.Bio.-Gen.&Bio."
+       },
+       {
+        "code": "MBM 502E",
+        "name": "Phsysics of Solids"
+       },
+       {
+        "code": "MBM 507",
+        "name": "Polimer Kimyası"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": [
+       {
+        "code": "BLU 537E",
+        "name": "Data Analysis&Visualization"
+       },
+       {
+        "code": "EBT 509",
+        "name": "Kömür Bilimi ve Teknolojisi"
+       },
+       {
+        "code": "EBT 534",
+        "name": "Biyokütle ve Dönüşüm Teknoloji"
+       },
+       {
+        "code": "EBT 539",
+        "name": "Enerji, Çevre ve Hukuku"
+       },
+       {
+        "code": "END 503E",
+        "name": "Non-Linear Prg.Theory&Algorit."
+       },
+       {
+        "code": "END 508",
+        "name": "Mathematical Programming"
+       },
+       {
+        "code": "END 508E",
+        "name": "Mathematical Programming"
+       },
+       {
+        "code": "HBM 526E",
+        "name": "Advanced Molecular Modelling"
+       },
+       {
+        "code": "KOM 501E",
+        "name": "Cont.Sist.With Paramet. Uncert"
+       },
+       {
+        "code": "KOM 518E",
+        "name": "Model Predictive Control"
+       },
+       {
+        "code": "MBG 513",
+        "name": "Enzim Kinetiği"
+       },
+       {
+        "code": "MBG 514",
+        "name": "Industrial Enzymology"
+       },
+       {
+        "code": "MBG 541E",
+        "name": "Spe.Top.in Mole.Bio.-Gen.&Bio."
+       },
+       {
+        "code": "MBM 502E",
+        "name": "Phsysics of Solids"
+       },
+       {
+        "code": "MBM 507",
+        "name": "Polimer Kimyası"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,467 @@
+{
+ "programCode": "BLG_HBY_YL",
+ "programName": "Bilgi ve Haberleşme Mühendisliği Yüksek Lisans",
+ "faculty": "Bilişim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Bilgi ve Haberleşme Mühendisliği Yüksek Lisans Programı 2026-2027 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "Bilgi ve Haberleşme Mühendisliği Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "BLU YLT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "elective": {
+      "title": "Bilimsel Araş.,Etik ve Seminer",
+      "options": [
+       {
+        "code": "BBL 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       },
+       {
+        "code": "BBL 596E",
+        "name": "Scien.Rese., Ethic&Seminar"
+       },
+       {
+        "code": "BLU 596E",
+        "name": "Scien.Rese., Ethic&Seminar"
+       },
+       {
+        "code": "BLU 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Matematik Dersi",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BLU 502E",
+        "name": "Optimization Methods in Infor."
+       },
+       {
+        "code": "BLU 521",
+        "name": "Karmaşık Değişken.Fonk."
+       },
+       {
+        "code": "BLU 526E",
+        "name": "Mathem.Meth.for Signal Proc."
+       },
+       {
+        "code": "BLU 526",
+        "name": "İşaret İşleme için Matem.Yönt."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "BLG 527E",
+        "name": "Machine Learning"
+       },
+       {
+        "code": "BLU 501",
+        "name": "Elektronik Haberleşme Düzen."
+       },
+       {
+        "code": "BLU 505E",
+        "name": "Business Process Management"
+       },
+       {
+        "code": "BLU 506E",
+        "name": "Data Analysis&Decision Making"
+       },
+       {
+        "code": "BLU 513",
+        "name": "Fuzzy Log.Pr.for Sci.&En.App."
+       },
+       {
+        "code": "BLU 513E",
+        "name": "Fuzzy Log.Pr.for Sci.&En.App."
+       },
+       {
+        "code": "BLU 523",
+        "name": "Veri Merkez.Soğut.&İklim."
+       },
+       {
+        "code": "BLU 523E",
+        "name": "Cooling and Air-Conditioning in Data Centers"
+       },
+       {
+        "code": "BLU 524",
+        "name": "Veri Merk.Altyap.&Ener.Ver."
+       },
+       {
+        "code": "BLU 524E",
+        "name": "Data Cent.Infrastr.&Ener.Effi."
+       },
+       {
+        "code": "BLU 527",
+        "name": "Optimum İşaret İşleme"
+       },
+       {
+        "code": "BLU 527E",
+        "name": "Optimum Signal Processing"
+       },
+       {
+        "code": "BLU 530",
+        "name": "Algoritmik Biyoenformatik"
+       },
+       {
+        "code": "BLU 530E",
+        "name": "Algorithmic Bioinformatics"
+       },
+       {
+        "code": "BLU 532",
+        "name": "Yapısal Biyo.Biliş.Uygulam."
+       },
+       {
+        "code": "BLU 532E",
+        "name": "Applied Inform.in Struc.Biol."
+       },
+       {
+        "code": "BLU 533",
+        "name": "İleri Elektromanye.Teorisi I"
+       },
+       {
+        "code": "BLU 533E",
+        "name": "Advanced Electromagnetic Theory I"
+       },
+       {
+        "code": "BLU 534",
+        "name": "İleri Elektromanye.Teorisi II"
+       },
+       {
+        "code": "BLU 534E",
+        "name": "Advanced Electromagnetic Theory II"
+       },
+       {
+        "code": "BLU 537",
+        "name": "Veri Analizi&Görselleştiril."
+       },
+       {
+        "code": "BLU 537E",
+        "name": "Data Analysis&Visualization"
+       },
+       {
+        "code": "BLU 598",
+        "name": "Proje"
+       },
+       {
+        "code": "TEL 502E",
+        "name": "Detection and Estimation Theo."
+       },
+       {
+        "code": "TEL 508",
+        "name": "Sayısal İletişim Kuramı"
+       },
+       {
+        "code": "TEL 510",
+        "name": "Telekomün. Şeb.Plan. ve Yönet."
+       },
+       {
+        "code": "TEL 514",
+        "name": "Telsiz İletişim"
+       },
+       {
+        "code": "TEL 517",
+        "name": "Bilgi Kuramı"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "BLG 527E",
+        "name": "Machine Learning"
+       },
+       {
+        "code": "BLU 501",
+        "name": "Elektronik Haberleşme Düzen."
+       },
+       {
+        "code": "BLU 505E",
+        "name": "Business Process Management"
+       },
+       {
+        "code": "BLU 505",
+        "name": "İş Süreçleri Yönetimi"
+       },
+       {
+        "code": "BLU 506E",
+        "name": "Data Analysis&Decision Making"
+       },
+       {
+        "code": "BLU 513E",
+        "name": "Fuzzy Log.Pr.for Sci.&En.App."
+       },
+       {
+        "code": "BLU 513",
+        "name": "Fuzzy Log.Pr.for Sci.&En.App."
+       },
+       {
+        "code": "BLU 523E",
+        "name": "Cooling and Air-Conditioning in Data Centers"
+       },
+       {
+        "code": "BLU 523",
+        "name": "Veri Merkez.Soğut.&İklim."
+       },
+       {
+        "code": "BLU 524E",
+        "name": "Data Cent.Infrastr.&Ener.Effi."
+       },
+       {
+        "code": "BLU 524",
+        "name": "Veri Merk.Altyap.&Ener.Ver."
+       },
+       {
+        "code": "BLU 527E",
+        "name": "Optimum Signal Processing"
+       },
+       {
+        "code": "BLU 527",
+        "name": "Optimum İşaret İşleme"
+       },
+       {
+        "code": "BLU 530E",
+        "name": "Algorithmic Bioinformatics"
+       },
+       {
+        "code": "BLU 530",
+        "name": "Algoritmik Biyoenformatik"
+       },
+       {
+        "code": "BLU 532E",
+        "name": "Applied Inform.in Struc.Biol."
+       },
+       {
+        "code": "BLU 532",
+        "name": "Yapısal Biyo.Biliş.Uygulam."
+       },
+       {
+        "code": "BLU 533E",
+        "name": "Advanced Electromagnetic Theory I"
+       },
+       {
+        "code": "BLU 533",
+        "name": "İleri Elektromanye.Teorisi I"
+       },
+       {
+        "code": "BLU 534E",
+        "name": "Advanced Electromagnetic Theory II"
+       },
+       {
+        "code": "BLU 534",
+        "name": "İleri Elektromanye.Teorisi II"
+       },
+       {
+        "code": "BLU 537E",
+        "name": "Data Analysis&Visualization"
+       },
+       {
+        "code": "BLU 537",
+        "name": "Veri Analizi&Görselleştiril."
+       },
+       {
+        "code": "TEL 502E",
+        "name": "Detection and Estimation Theo."
+       },
+       {
+        "code": "TEL 505E",
+        "name": "Mobile Commun.Systems"
+       },
+       {
+        "code": "TEL 508E",
+        "name": "Digital Communication Theory"
+       },
+       {
+        "code": "TEL 510E",
+        "name": "Telecom.Net.Plan.&Manag."
+       },
+       {
+        "code": "TEL 514",
+        "name": "Telsiz İletişim"
+       },
+       {
+        "code": "TEL 517",
+        "name": "Bilgi Kuramı"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "BLG 527E",
+        "name": "Machine Learning"
+       },
+       {
+        "code": "BLU 501",
+        "name": "Elektronik Haberleşme Düzen."
+       },
+       {
+        "code": "BLU 505E",
+        "name": "Business Process Management"
+       },
+       {
+        "code": "BLU 505",
+        "name": "İş Süreçleri Yönetimi"
+       },
+       {
+        "code": "BLU 506E",
+        "name": "Data Analysis&Decision Making"
+       },
+       {
+        "code": "BLU 513",
+        "name": "Fuzzy Log.Pr.for Sci.&En.App."
+       },
+       {
+        "code": "BLU 513E",
+        "name": "Fuzzy Log.Pr.for Sci.&En.App."
+       },
+       {
+        "code": "BLU 523",
+        "name": "Veri Merkez.Soğut.&İklim."
+       },
+       {
+        "code": "BLU 523E",
+        "name": "Cooling and Air-Conditioning in Data Centers"
+       },
+       {
+        "code": "BLU 524",
+        "name": "Veri Merk.Altyap.&Ener.Ver."
+       },
+       {
+        "code": "BLU 524E",
+        "name": "Data Cent.Infrastr.&Ener.Effi."
+       },
+       {
+        "code": "BLU 527",
+        "name": "Optimum İşaret İşleme"
+       },
+       {
+        "code": "BLU 527E",
+        "name": "Optimum Signal Processing"
+       },
+       {
+        "code": "BLU 530E",
+        "name": "Algorithmic Bioinformatics"
+       },
+       {
+        "code": "BLU 530",
+        "name": "Algoritmik Biyoenformatik"
+       },
+       {
+        "code": "BLU 532E",
+        "name": "Applied Inform.in Struc.Biol."
+       },
+       {
+        "code": "BLU 532",
+        "name": "Yapısal Biyo.Biliş.Uygulam."
+       },
+       {
+        "code": "BLU 533E",
+        "name": "Advanced Electromagnetic Theory I"
+       },
+       {
+        "code": "BLU 533",
+        "name": "İleri Elektromanye.Teorisi I"
+       },
+       {
+        "code": "BLU 534E",
+        "name": "Advanced Electromagnetic Theory II"
+       },
+       {
+        "code": "BLU 534",
+        "name": "İleri Elektromanye.Teorisi II"
+       },
+       {
+        "code": "BLU 537E",
+        "name": "Data Analysis&Visualization"
+       },
+       {
+        "code": "BLU 537",
+        "name": "Veri Analizi&Görselleştiril."
+       },
+       {
+        "code": "BLU 598",
+        "name": "Proje"
+       },
+       {
+        "code": "TEL 502E",
+        "name": "Detection and Estimation Theo."
+       },
+       {
+        "code": "TEL 505E",
+        "name": "Mobile Commun.Systems"
+       },
+       {
+        "code": "TEL 508",
+        "name": "Sayısal İletişim Kuramı"
+       },
+       {
+        "code": "TEL 510E",
+        "name": "Telecom.Net.Plan.&Manag."
+       },
+       {
+        "code": "TEL 514",
+        "name": "Telsiz İletişim"
+       },
+       {
+        "code": "TEL 517",
+        "name": "Bilgi Kuramı"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": null
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": null
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": null
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": null
+     }
+    }
+   ]
+  }
+ ]
+}

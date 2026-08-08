@@ -1,0 +1,574 @@
+{
+ "programCode": "SUS_SU_YL",
+ "programName": "Sürdürülebilirlik (İngilizce) Yüksek Lisans",
+ "faculty": "Lisansüstü Eğitim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Sürdürülebilirlik (İngilizce) Yüksek Lisans Programı",
+ "semesters": [
+  {
+   "title": "Sürdürülebilirlik (İngilizce) Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "SUS YLT",
+      "name": "Thesis"
+     }
+    },
+    {
+     "course": {
+      "code": "SUS 596E",
+      "name": "Scientific Research, Ethic and Seminar"
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "ANT 501E",
+        "name": "Ecology, Society&Susta.Deve."
+       },
+       {
+        "code": "BLG 556E",
+        "name": "Digital Sol. for Smart Cities"
+       },
+       {
+        "code": "CBM 544E",
+        "name": "Waste Min.Recycl.&Clean Techn."
+       },
+       {
+        "code": "CBM 549E",
+        "name": "Industrial Ecol.&Sustain.Eng."
+       },
+       {
+        "code": "EBT 543E",
+        "name": "Energy&Natural Resources Law"
+       },
+       {
+        "code": "EBT 551E",
+        "name": "Zero Energy Buildings"
+       },
+       {
+        "code": "ENB 618E",
+        "name": "Bioene.Prod.from Waste&Wastew."
+       },
+       {
+        "code": "GIT 521E",
+        "name": "GIS in Ecology"
+       },
+       {
+        "code": "IKT 525E",
+        "name": "Development Economics"
+       },
+       {
+        "code": "SUS 501E",
+        "name": "Special Topics in Susta.Manag."
+       },
+       {
+        "code": "SUS 502E",
+        "name": "Graduate Independent Study"
+       },
+       {
+        "code": "SUS 503E",
+        "name": "Sustainability Develop.Funda."
+       },
+       {
+        "code": "SUS 504E",
+        "name": "Mathem.Methods in Sustai.Appl."
+       },
+       {
+        "code": "SUS 509E",
+        "name": "Philosophy of Scie.for Susta."
+       },
+       {
+        "code": "YIP 515E",
+        "name": "Sustainable Construction"
+       },
+       {
+        "code": "YSB 572E",
+        "name": "Clim.Chan.: Sci., Impa.&Mitig."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "ANT 501E",
+        "name": "Ecology, Society&Susta.Deve."
+       },
+       {
+        "code": "BLG 556E",
+        "name": "Digital Sol. for Smart Cities"
+       },
+       {
+        "code": "CBM 544E",
+        "name": "Waste Min.Recycl.&Clean Techn."
+       },
+       {
+        "code": "CBM 549E",
+        "name": "Industrial Ecol.&Sustain.Eng."
+       },
+       {
+        "code": "EBT 543E",
+        "name": "Energy&Natural Resources Law"
+       },
+       {
+        "code": "EBT 551E",
+        "name": "Zero Energy Buildings"
+       },
+       {
+        "code": "ENB 618E",
+        "name": "Bioene.Prod.from Waste&Wastew."
+       },
+       {
+        "code": "GIT 521E",
+        "name": "GIS in Ecology"
+       },
+       {
+        "code": "IKT 525E",
+        "name": "Development Economics"
+       },
+       {
+        "code": "SUS 501E",
+        "name": "Special Topics in Susta.Manag."
+       },
+       {
+        "code": "SUS 502E",
+        "name": "Graduate Independent Study"
+       },
+       {
+        "code": "SUS 503E",
+        "name": "Sustainability Develop.Funda."
+       },
+       {
+        "code": "SUS 504E",
+        "name": "Mathem.Methods in Sustai.Appl."
+       },
+       {
+        "code": "SUS 509E",
+        "name": "Philosophy of Scie.for Susta."
+       },
+       {
+        "code": "YIP 515E",
+        "name": "Sustainable Construction"
+       },
+       {
+        "code": "YSB 572E",
+        "name": "Clim.Chan.: Sci., Impa.&Mitig."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "ANT 501E",
+        "name": "Ecology, Society&Susta.Deve."
+       },
+       {
+        "code": "BLG 556E",
+        "name": "Digital Sol. for Smart Cities"
+       },
+       {
+        "code": "CBM 544E",
+        "name": "Waste Min.Recycl.&Clean Techn."
+       },
+       {
+        "code": "CBM 549E",
+        "name": "Industrial Ecol.&Sustain.Eng."
+       },
+       {
+        "code": "EBT 543E",
+        "name": "Energy&Natural Resources Law"
+       },
+       {
+        "code": "EBT 551E",
+        "name": "Zero Energy Buildings"
+       },
+       {
+        "code": "ENB 618E",
+        "name": "Bioene.Prod.from Waste&Wastew."
+       },
+       {
+        "code": "GIT 521E",
+        "name": "GIS in Ecology"
+       },
+       {
+        "code": "IKT 525E",
+        "name": "Development Economics"
+       },
+       {
+        "code": "SUS 501E",
+        "name": "Special Topics in Susta.Manag."
+       },
+       {
+        "code": "SUS 502E",
+        "name": "Graduate Independent Study"
+       },
+       {
+        "code": "SUS 503E",
+        "name": "Sustainability Develop.Funda."
+       },
+       {
+        "code": "SUS 504E",
+        "name": "Mathem.Methods in Sustai.Appl."
+       },
+       {
+        "code": "SUS 509E",
+        "name": "Philosophy of Scie.for Susta."
+       },
+       {
+        "code": "YIP 515E",
+        "name": "Sustainable Construction"
+       },
+       {
+        "code": "YSB 572E",
+        "name": "Clim.Chan.: Sci., Impa.&Mitig."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders IV",
+      "options": [
+       {
+        "code": "ANT 501E",
+        "name": "Ecology, Society&Susta.Deve."
+       },
+       {
+        "code": "BLG 556E",
+        "name": "Digital Sol. for Smart Cities"
+       },
+       {
+        "code": "CBM 544E",
+        "name": "Waste Min.Recycl.&Clean Techn."
+       },
+       {
+        "code": "CBM 549E",
+        "name": "Industrial Ecol.&Sustain.Eng."
+       },
+       {
+        "code": "EBT 543E",
+        "name": "Energy&Natural Resources Law"
+       },
+       {
+        "code": "EBT 551E",
+        "name": "Zero Energy Buildings"
+       },
+       {
+        "code": "ENB 618E",
+        "name": "Bioene.Prod.from Waste&Wastew."
+       },
+       {
+        "code": "GIT 521E",
+        "name": "GIS in Ecology"
+       },
+       {
+        "code": "IKT 525E",
+        "name": "Development Economics"
+       },
+       {
+        "code": "SUS 501E",
+        "name": "Special Topics in Susta.Manag."
+       },
+       {
+        "code": "SUS 502E",
+        "name": "Graduate Independent Study"
+       },
+       {
+        "code": "SUS 503E",
+        "name": "Sustainability Develop.Funda."
+       },
+       {
+        "code": "SUS 504E",
+        "name": "Mathem.Methods in Sustai.Appl."
+       },
+       {
+        "code": "SUS 509E",
+        "name": "Philosophy of Scie.for Susta."
+       },
+       {
+        "code": "YIP 515E",
+        "name": "Sustainable Construction"
+       },
+       {
+        "code": "YSB 572E",
+        "name": "Clim.Chan.: Sci., Impa.&Mitig."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": [
+       {
+        "code": "BPL 502E",
+        "name": "Globalization&Regional Strate."
+       },
+       {
+        "code": "BTT 513E",
+        "name": "Sociology of the Environment"
+       },
+       {
+        "code": "CBM 506E",
+        "name": "Solid Waste Recyc.&Trea.Tec."
+       },
+       {
+        "code": "CBM 517E",
+        "name": "Wastewater Reclamation&Reuse"
+       },
+       {
+        "code": "EBT 527E",
+        "name": "Wind Energy&Conversion Tech."
+       },
+       {
+        "code": "EBT 530E",
+        "name": "Energy Efficient Buildi.Design"
+       },
+       {
+        "code": "ENB 513E",
+        "name": "Natural Treatment Systems"
+       },
+       {
+        "code": "EUT 551E",
+        "name": "Design for Soci.Innov.&Susta."
+       },
+       {
+        "code": "EUT 558E",
+        "name": "Environ.sustain.&Indust.Des."
+       },
+       {
+        "code": "HSK 501E",
+        "name": "Water Resources Systems"
+       },
+       {
+        "code": "IKE 519E",
+        "name": "Environmental Economics"
+       },
+       {
+        "code": "MTO 514E",
+        "name": "Climate Modelling"
+       },
+       {
+        "code": "SPL 501E",
+        "name": "Land Use&Transportation Plan."
+       },
+       {
+        "code": "TEK 541E",
+        "name": "Sustai.&Life Cyc. Asse.in Tex."
+       },
+       {
+        "code": "YAP 562E",
+        "name": "Sustainable Construc.Materials"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": [
+       {
+        "code": "BPL 502E",
+        "name": "Globalization&Regional Strate."
+       },
+       {
+        "code": "BTT 513E",
+        "name": "Sociology of the Environment"
+       },
+       {
+        "code": "CBM 506E",
+        "name": "Solid Waste Recyc.&Trea.Tec."
+       },
+       {
+        "code": "CBM 517E",
+        "name": "Wastewater Reclamation&Reuse"
+       },
+       {
+        "code": "EBT 527E",
+        "name": "Wind Energy&Conversion Tech."
+       },
+       {
+        "code": "EBT 530E",
+        "name": "Energy Efficient Buildi.Design"
+       },
+       {
+        "code": "ENB 513E",
+        "name": "Natural Treatment Systems"
+       },
+       {
+        "code": "EUT 551E",
+        "name": "Design for Soci.Innov.&Susta."
+       },
+       {
+        "code": "EUT 558E",
+        "name": "Environ.sustain.&Indust.Des."
+       },
+       {
+        "code": "HSK 501E",
+        "name": "Water Resources Systems"
+       },
+       {
+        "code": "IKE 519E",
+        "name": "Environmental Economics"
+       },
+       {
+        "code": "MTO 514E",
+        "name": "Climate Modelling"
+       },
+       {
+        "code": "SPL 501E",
+        "name": "Land Use&Transportation Plan."
+       },
+       {
+        "code": "TEK 541E",
+        "name": "Sustai.&Life Cyc. Asse.in Tex."
+       },
+       {
+        "code": "YAP 562E",
+        "name": "Sustainable Construc.Materials"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": [
+       {
+        "code": "BPL 502E",
+        "name": "Globalization&Regional Strate."
+       },
+       {
+        "code": "BTT 513E",
+        "name": "Sociology of the Environment"
+       },
+       {
+        "code": "CBM 506E",
+        "name": "Solid Waste Recyc.&Trea.Tec."
+       },
+       {
+        "code": "CBM 517E",
+        "name": "Wastewater Reclamation&Reuse"
+       },
+       {
+        "code": "EBT 527E",
+        "name": "Wind Energy&Conversion Tech."
+       },
+       {
+        "code": "EBT 530E",
+        "name": "Energy Efficient Buildi.Design"
+       },
+       {
+        "code": "ENB 513E",
+        "name": "Natural Treatment Systems"
+       },
+       {
+        "code": "EUT 551E",
+        "name": "Design for Soci.Innov.&Susta."
+       },
+       {
+        "code": "EUT 558E",
+        "name": "Environ.sustain.&Indust.Des."
+       },
+       {
+        "code": "HSK 501E",
+        "name": "Water Resources Systems"
+       },
+       {
+        "code": "IKE 519E",
+        "name": "Environmental Economics"
+       },
+       {
+        "code": "MTO 514E",
+        "name": "Climate Modelling"
+       },
+       {
+        "code": "SPL 501E",
+        "name": "Land Use&Transportation Plan."
+       },
+       {
+        "code": "TEK 541E",
+        "name": "Sustai.&Life Cyc. Asse.in Tex."
+       },
+       {
+        "code": "YAP 562E",
+        "name": "Sustainable Construc.Materials"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": [
+       {
+        "code": "BPL 502E",
+        "name": "Globalization&Regional Strate."
+       },
+       {
+        "code": "BTT 513E",
+        "name": "Sociology of the Environment"
+       },
+       {
+        "code": "CBM 506E",
+        "name": "Solid Waste Recyc.&Trea.Tec."
+       },
+       {
+        "code": "CBM 517E",
+        "name": "Wastewater Reclamation&Reuse"
+       },
+       {
+        "code": "EBT 527E",
+        "name": "Wind Energy&Conversion Tech."
+       },
+       {
+        "code": "EBT 530E",
+        "name": "Energy Efficient Buildi.Design"
+       },
+       {
+        "code": "EUT 551E",
+        "name": "Design for Soci.Innov.&Susta."
+       },
+       {
+        "code": "EUT 558E",
+        "name": "Environ.sustain.&Indust.Des."
+       },
+       {
+        "code": "HSK 501E",
+        "name": "Water Resources Systems"
+       },
+       {
+        "code": "IKE 519E",
+        "name": "Environmental Economics"
+       },
+       {
+        "code": "MTO 514E",
+        "name": "Climate Modelling"
+       },
+       {
+        "code": "SPL 501E",
+        "name": "Land Use&Transportation Plan."
+       },
+       {
+        "code": "TEK 541E",
+        "name": "Sustai.&Life Cyc. Asse.in Tex."
+       },
+       {
+        "code": "YAP 562E",
+        "name": "Sustainable Construc.Materials"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

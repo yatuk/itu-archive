@@ -1,0 +1,799 @@
+{
+ "programCode": "BGM_KRY_YL",
+ "programName": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans",
+ "faculty": "Bilişim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans Programı 2026-2027 / Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "BGK YLT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "elective": {
+      "title": "Bilimsel Araş., Etik ve Seminer",
+      "options": [
+       {
+        "code": "BBL 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       },
+       {
+        "code": "BBL 596E",
+        "name": "Scien.Rese., Ethic&Seminar"
+       },
+       {
+        "code": "BGK 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       },
+       {
+        "code": "BGK 596E",
+        "name": "Scien.Rese., Ethic&Seminar"
+       },
+       {
+        "code": "BLU 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       },
+       {
+        "code": "BLU 596E",
+        "name": "Scien.Rese., Ethic&Seminar"
+       },
+       {
+        "code": "HBM 596E",
+        "name": "Scien.Rese., Ethic&Seminar"
+       },
+       {
+        "code": "HBM 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "BGK 501E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGK 506",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGK 518E",
+        "name": "Cryptogra.with Elliptic Curves"
+       },
+       {
+        "code": "BLG 501",
+        "name": "Discrete Mathematics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "BGK 501E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGK 506",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGK 518E",
+        "name": "Cryptogra.with Elliptic Curves"
+       },
+       {
+        "code": "BLG 501",
+        "name": "Discrete Mathematics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "BGK 501E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGK 506",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGK 516E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BLG 501",
+        "name": "Discrete Mathematics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders IV",
+      "options": [
+       {
+        "code": "BGK 501E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGK 506",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGK 516E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BGK 518E",
+        "name": "Cryptogra.with Elliptic Curves"
+       },
+       {
+        "code": "BLG 501",
+        "name": "Discrete Mathematics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": [
+       {
+        "code": "BGK 506",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGK 507",
+        "name": "Bilgi Sistem.Güvenliği Müh."
+       },
+       {
+        "code": "BGK 509",
+        "name": "E-Ticarette Güvenlik"
+       },
+       {
+        "code": "BGK 510",
+        "name": "Bilgi Güve.Alan.Veri Made.Yön."
+       },
+       {
+        "code": "BGK 511",
+        "name": "Bilgi Güve.&Güvenli Yaz.Geli."
+       },
+       {
+        "code": "BGK 512E",
+        "name": "Security for Cloud Computing"
+       },
+       {
+        "code": "BGK 513",
+        "name": "Bilgi Güvenliği Yasa&Politika."
+       },
+       {
+        "code": "BGK 514E",
+        "name": "Stream Ciphers"
+       },
+       {
+        "code": "BGK 519E",
+        "name": "Blockchain Technologies"
+       },
+       {
+        "code": "BGK 601E",
+        "name": "Machine Learn.Meth.in Secur."
+       },
+       {
+        "code": "BGK 602",
+        "name": "Bilgi Güvenliği Denet.&Güven."
+       },
+       {
+        "code": "BGK 603",
+        "name": "Programlama Dilleri Güvenliği"
+       },
+       {
+        "code": "BGK 604E",
+        "name": "Information Engineer.&Encry."
+       },
+       {
+        "code": "BGK 604",
+        "name": "Information Engineer.&Encry."
+       },
+       {
+        "code": "BGK 605",
+        "name": "Açıklık Tarama ve Önleme"
+       },
+       {
+        "code": "BGK 606",
+        "name": "Bilişim Uzayındaki Savaşlar"
+       },
+       {
+        "code": "BGK 607",
+        "name": "Şifreleme İşlemcisi Tasarımı"
+       },
+       {
+        "code": "BGK 608E",
+        "name": "Cryptographic Engineering"
+       },
+       {
+        "code": "BGK 609E",
+        "name": "Cryptography and Number Theory"
+       },
+       {
+        "code": "BGM 501E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGM 502E",
+        "name": "Operating System Security"
+       },
+       {
+        "code": "BGM 503E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGM 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGM 505E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGM 506",
+        "name": "Bilgi Güvenliği Yasa&Politika."
+       },
+       {
+        "code": "BGM 507",
+        "name": "Bilgi Sistem.Güvenliği Müh."
+       },
+       {
+        "code": "BGM 508",
+        "name": "Kriptografi"
+       },
+       {
+        "code": "BGM 508E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BGM 509",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGM 510",
+        "name": "E-Ticarette Güvenlik"
+       },
+       {
+        "code": "BGM 511",
+        "name": "Bilgi Güve.&Güvenli Yaz.Geli."
+       },
+       {
+        "code": "BGM 513",
+        "name": "Bilgi Güve.Alan.Veri Made.Yön."
+       },
+       {
+        "code": "BGM 515E",
+        "name": "Security for Cloud Computing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": [
+       {
+        "code": "BGK 506",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGK 507",
+        "name": "Bilgi Sistem.Güvenliği Müh."
+       },
+       {
+        "code": "BGK 509",
+        "name": "E-Ticarette Güvenlik"
+       },
+       {
+        "code": "BGK 510",
+        "name": "Bilgi Güve.Alan.Veri Made.Yön."
+       },
+       {
+        "code": "BGK 511",
+        "name": "Bilgi Güve.&Güvenli Yaz.Geli."
+       },
+       {
+        "code": "BGK 512E",
+        "name": "Security for Cloud Computing"
+       },
+       {
+        "code": "BGK 513",
+        "name": "Bilgi Güvenliği Yasa&Politika."
+       },
+       {
+        "code": "BGK 514E",
+        "name": "Stream Ciphers"
+       },
+       {
+        "code": "BGK 518E",
+        "name": "Cryptogra.with Elliptic Curves"
+       },
+       {
+        "code": "BGK 519E",
+        "name": "Blockchain Technologies"
+       },
+       {
+        "code": "BGK 601E",
+        "name": "Machine Learn.Meth.in Secur."
+       },
+       {
+        "code": "BGK 602",
+        "name": "Bilgi Güvenliği Denet.&Güven."
+       },
+       {
+        "code": "BGK 603",
+        "name": "Programlama Dilleri Güvenliği"
+       },
+       {
+        "code": "BGK 604",
+        "name": "Information Engineer.&Encry."
+       },
+       {
+        "code": "BGK 604E",
+        "name": "Information Engineer.&Encry."
+       },
+       {
+        "code": "BGK 605",
+        "name": "Açıklık Tarama ve Önleme"
+       },
+       {
+        "code": "BGK 606",
+        "name": "Bilişim Uzayındaki Savaşlar"
+       },
+       {
+        "code": "BGK 607",
+        "name": "Şifreleme İşlemcisi Tasarımı"
+       },
+       {
+        "code": "BGK 608E",
+        "name": "Cryptographic Engineering"
+       },
+       {
+        "code": "BGK 609E",
+        "name": "Cryptography and Number Theory"
+       },
+       {
+        "code": "BGM 501E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGM 502E",
+        "name": "Operating System Security"
+       },
+       {
+        "code": "BGM 503E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGM 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGM 505E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGM 506",
+        "name": "Bilgi Güvenliği Yasa&Politika."
+       },
+       {
+        "code": "BGM 507",
+        "name": "Bilgi Sistem.Güvenliği Müh."
+       },
+       {
+        "code": "BGM 508",
+        "name": "Kriptografi"
+       },
+       {
+        "code": "BGM 508E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BGM 509",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGM 510",
+        "name": "E-Ticarette Güvenlik"
+       },
+       {
+        "code": "BGM 511",
+        "name": "Bilgi Güve.&Güvenli Yaz.Geli."
+       },
+       {
+        "code": "BGM 513",
+        "name": "Bilgi Güve.Alan.Veri Made.Yön."
+       },
+       {
+        "code": "BGM 515E",
+        "name": "Security for Cloud Computing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": [
+       {
+        "code": "BGK 502E",
+        "name": "Operating System Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGK 506",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGK 507",
+        "name": "Bilgi Sistem.Güvenliği Müh."
+       },
+       {
+        "code": "BGK 509",
+        "name": "E-Ticarette Güvenlik"
+       },
+       {
+        "code": "BGK 510",
+        "name": "Bilgi Güve.Alan.Veri Made.Yön."
+       },
+       {
+        "code": "BGK 511",
+        "name": "Bilgi Güve.&Güvenli Yaz.Geli."
+       },
+       {
+        "code": "BGK 512E",
+        "name": "Security for Cloud Computing"
+       },
+       {
+        "code": "BGK 513",
+        "name": "Bilgi Güvenliği Yasa&Politika."
+       },
+       {
+        "code": "BGK 514E",
+        "name": "Stream Ciphers"
+       },
+       {
+        "code": "BGK 518E",
+        "name": "Cryptogra.with Elliptic Curves"
+       },
+       {
+        "code": "BGK 519E",
+        "name": "Blockchain Technologies"
+       },
+       {
+        "code": "BGK 601E",
+        "name": "Machine Learn.Meth.in Secur."
+       },
+       {
+        "code": "BGK 602",
+        "name": "Bilgi Güvenliği Denet.&Güven."
+       },
+       {
+        "code": "BGK 603",
+        "name": "Programlama Dilleri Güvenliği"
+       },
+       {
+        "code": "BGK 604",
+        "name": "Information Engineer.&Encry."
+       },
+       {
+        "code": "BGK 604E",
+        "name": "Information Engineer.&Encry."
+       },
+       {
+        "code": "BGK 606",
+        "name": "Bilişim Uzayındaki Savaşlar"
+       },
+       {
+        "code": "BGK 607",
+        "name": "Şifreleme İşlemcisi Tasarımı"
+       },
+       {
+        "code": "BGK 608E",
+        "name": "Cryptographic Engineering"
+       },
+       {
+        "code": "BGK 609E",
+        "name": "Cryptography and Number Theory"
+       },
+       {
+        "code": "BGM 501E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGM 502E",
+        "name": "Operating System Security"
+       },
+       {
+        "code": "BGM 503E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGM 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGM 505E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGM 506",
+        "name": "Bilgi Güvenliği Yasa&Politika."
+       },
+       {
+        "code": "BGM 507",
+        "name": "Bilgi Sistem.Güvenliği Müh."
+       },
+       {
+        "code": "BGM 508E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BGM 508",
+        "name": "Kriptografi"
+       },
+       {
+        "code": "BGM 509",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGM 510",
+        "name": "E-Ticarette Güvenlik"
+       },
+       {
+        "code": "BGM 511",
+        "name": "Bilgi Güve.&Güvenli Yaz.Geli."
+       },
+       {
+        "code": "BGM 513",
+        "name": "Bilgi Güve.Alan.Veri Made.Yön."
+       },
+       {
+        "code": "BGM 515E",
+        "name": "Security for Cloud Computing"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": [
+       {
+        "code": "BGK 502E",
+        "name": "Operating System Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGK 506",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGK 507",
+        "name": "Bilgi Sistem.Güvenliği Müh."
+       },
+       {
+        "code": "BGK 509",
+        "name": "E-Ticarette Güvenlik"
+       },
+       {
+        "code": "BGK 510",
+        "name": "Bilgi Güve.Alan.Veri Made.Yön."
+       },
+       {
+        "code": "BGK 511",
+        "name": "Bilgi Güve.&Güvenli Yaz.Geli."
+       },
+       {
+        "code": "BGK 512E",
+        "name": "Security for Cloud Computing"
+       },
+       {
+        "code": "BGK 513",
+        "name": "Bilgi Güvenliği Yasa&Politika."
+       },
+       {
+        "code": "BGK 514E",
+        "name": "Stream Ciphers"
+       },
+       {
+        "code": "BGK 518E",
+        "name": "Cryptogra.with Elliptic Curves"
+       },
+       {
+        "code": "BGK 519E",
+        "name": "Blockchain Technologies"
+       },
+       {
+        "code": "BGK 601E",
+        "name": "Machine Learn.Meth.in Secur."
+       },
+       {
+        "code": "BGK 602",
+        "name": "Bilgi Güvenliği Denet.&Güven."
+       },
+       {
+        "code": "BGK 603",
+        "name": "Programlama Dilleri Güvenliği"
+       },
+       {
+        "code": "BGK 604E",
+        "name": "Information Engineer.&Encry."
+       },
+       {
+        "code": "BGK 604",
+        "name": "Information Engineer.&Encry."
+       },
+       {
+        "code": "BGK 605",
+        "name": "Açıklık Tarama ve Önleme"
+       },
+       {
+        "code": "BGK 606",
+        "name": "Bilişim Uzayındaki Savaşlar"
+       },
+       {
+        "code": "BGK 607",
+        "name": "Şifreleme İşlemcisi Tasarımı"
+       },
+       {
+        "code": "BGK 608E",
+        "name": "Cryptographic Engineering"
+       },
+       {
+        "code": "BGK 609E",
+        "name": "Cryptography and Number Theory"
+       },
+       {
+        "code": "BGM 501E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGM 502E",
+        "name": "Operating System Security"
+       },
+       {
+        "code": "BGM 503E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BGM 504E",
+        "name": "Information Security&Manag."
+       },
+       {
+        "code": "BGM 505E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGM 506",
+        "name": "Bilgi Güvenliği Yasa&Politika."
+       },
+       {
+        "code": "BGM 507",
+        "name": "Bilgi Sistem.Güvenliği Müh."
+       },
+       {
+        "code": "BGM 508E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BGM 508",
+        "name": "Kriptografi"
+       },
+       {
+        "code": "BGM 509",
+        "name": "Saldırı Saptama ve Önleme"
+       },
+       {
+        "code": "BGM 510",
+        "name": "E-Ticarette Güvenlik"
+       },
+       {
+        "code": "BGM 511",
+        "name": "Bilgi Güve.&Güvenli Yaz.Geli."
+       },
+       {
+        "code": "BGM 513",
+        "name": "Bilgi Güve.Alan.Veri Made.Yön."
+       },
+       {
+        "code": "BGM 515E",
+        "name": "Security for Cloud Computing"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

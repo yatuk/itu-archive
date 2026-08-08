@@ -1,0 +1,682 @@
+{
+ "programCode": "SVT_SV_YL",
+ "programName": "Savunma Teknolojileri Yüksek Lisans",
+ "faculty": "Lisansüstü Eğitim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Savunma Teknolojileri Yüksek Lisans Programı 2025-2026 / Güz ile 2026-2027 / Güz Dönemleri Arası",
+ "semesters": [
+  {
+   "title": "Savunma Teknolojileri Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "STP YLT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "course": {
+      "code": "STP 596 STP 596E",
+      "name": "Bilimsel Araş.,Etik ve Seminer"
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Matematik Dersi",
+      "options": [
+       {
+        "code": "BLG 501E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BLG 545E",
+        "name": "Discrete Optimization"
+       },
+       {
+        "code": "END 500",
+        "name": "Mühendislik Matematiği"
+       },
+       {
+        "code": "END 500E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "KOM 505E",
+        "name": "Probability Theory&Stochast.Pr"
+       },
+       {
+        "code": "KOM 505",
+        "name": "Olasılık Kuramı&Rastlan.Süreçl"
+       },
+       {
+        "code": "MAM 507",
+        "name": "Mühendislik Matematiği"
+       },
+       {
+        "code": "MHY 510",
+        "name": "Mühendislik Matematiği"
+       },
+       {
+        "code": "MIA 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "MKC 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "UUM 535E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "UUM 536",
+        "name": "Kısmi Diferansiyel Denklemler"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BGK 501E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BLG 506E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 510E",
+        "name": "Security in Computer Networks"
+       },
+       {
+        "code": "BLG 513E",
+        "name": "Image Processing"
+       },
+       {
+        "code": "BLG 520E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BLG 521E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 527E",
+        "name": "Machine Learning"
+       },
+       {
+        "code": "BLG 549E",
+        "name": "Graph Theory and Algorithms"
+       },
+       {
+        "code": "BLU 502E",
+        "name": "Optimization Methods in Infor."
+       },
+       {
+        "code": "BLU 526E",
+        "name": "Mathem.Meth.for Signal Proc."
+       },
+       {
+        "code": "EBT 502E",
+        "name": "Advanced Fluid Dynamics"
+       },
+       {
+        "code": "EBT 503E",
+        "name": "Advanced Thermodynamics"
+       },
+       {
+        "code": "EBT 505E",
+        "name": "Advanced Heat&Mass Transfer"
+       },
+       {
+        "code": "EBT 513",
+        "name": "Enerji Sistemler.Hesap.Yönt."
+       },
+       {
+        "code": "EBT 535",
+        "name": "Endüstride Enerji Yönetimi"
+       },
+       {
+        "code": "EBT 547",
+        "name": "Ener.Sistem.Ölçme Teknikleri"
+       },
+       {
+        "code": "END 506E",
+        "name": "Advanced Engineering Economics"
+       },
+       {
+        "code": "ISL 501E",
+        "name": "Advanced App.to Management"
+       },
+       {
+        "code": "KOM 513E",
+        "name": "Modelling& Kontrol Of Robots"
+       },
+       {
+        "code": "MAM 505",
+        "name": "Hasar Analizi"
+       },
+       {
+        "code": "MAM 511",
+        "name": "Metallerde Deformas.&Kırılma"
+       },
+       {
+        "code": "MBM 504",
+        "name": "Malzemelerin Mekanik Özel."
+       },
+       {
+        "code": "MHY 506E",
+        "name": "Strategic Management"
+       },
+       {
+        "code": "MHY 509E",
+        "name": "Management of Tech.&Innovation"
+       },
+       {
+        "code": "MIA 503E",
+        "name": "Advanced Fluid Dynamics"
+       },
+       {
+        "code": "MIA 504E",
+        "name": "Advanced Heat&Mass Transfer"
+       },
+       {
+        "code": "MKM 506E",
+        "name": "Modelling&Control of Mech.Sys."
+       },
+       {
+        "code": "MKM 509",
+        "name": "Analog&Sayısal Elektronik"
+       },
+       {
+        "code": "MMI 566",
+        "name": "İleri İmalat Yöntemleri"
+       },
+       {
+        "code": "MMI 568E",
+        "name": "Comp.Integrated Manufacturing"
+       },
+       {
+        "code": "TEL 502E",
+        "name": "Detection and Estimation Theo."
+       },
+       {
+        "code": "TEL 505E",
+        "name": "Mobile Commun.Systems"
+       },
+       {
+        "code": "TEL 508",
+        "name": "Sayısal İletişim Kuramı"
+       },
+       {
+        "code": "TEL 515E",
+        "name": "Statist.Signal Processing"
+       },
+       {
+        "code": "TEL 519E",
+        "name": "Image Processing"
+       },
+       {
+        "code": "UAH 511",
+        "name": "Olasılık Teorisi&Stokastik Pro"
+       },
+       {
+        "code": "UUM 504E",
+        "name": "Structural Dynamics"
+       },
+       {
+        "code": "UUM 507E",
+        "name": "Linear Control Systems"
+       },
+       {
+        "code": "UUM 508E",
+        "name": "Finite Element Analy.in Struc."
+       },
+       {
+        "code": "UUM 510E",
+        "name": "Computational Fluid Dynamics"
+       },
+       {
+        "code": "UUM 521E",
+        "name": "Advanced Dynamics"
+       },
+       {
+        "code": "UUM 526E",
+        "name": "Optimization Techniques in En."
+       },
+       {
+        "code": "UUM 536",
+        "name": "Kısmi Diferansiyel Denklemler"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BGK 501E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BLG 506E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 510E",
+        "name": "Security in Computer Networks"
+       },
+       {
+        "code": "BLG 513E",
+        "name": "Image Processing"
+       },
+       {
+        "code": "BLG 520E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BLG 521E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 527E",
+        "name": "Machine Learning"
+       },
+       {
+        "code": "BLG 549E",
+        "name": "Graph Theory and Algorithms"
+       },
+       {
+        "code": "BLU 502E",
+        "name": "Optimization Methods in Infor."
+       },
+       {
+        "code": "BLU 526E",
+        "name": "Mathem.Meth.for Signal Proc."
+       },
+       {
+        "code": "EBT 502E",
+        "name": "Advanced Fluid Dynamics"
+       },
+       {
+        "code": "EBT 503E",
+        "name": "Advanced Thermodynamics"
+       },
+       {
+        "code": "EBT 505E",
+        "name": "Advanced Heat&Mass Transfer"
+       },
+       {
+        "code": "EBT 513",
+        "name": "Enerji Sistemler.Hesap.Yönt."
+       },
+       {
+        "code": "EBT 535",
+        "name": "Endüstride Enerji Yönetimi"
+       },
+       {
+        "code": "EBT 547",
+        "name": "Ener.Sistem.Ölçme Teknikleri"
+       },
+       {
+        "code": "END 506E",
+        "name": "Advanced Engineering Economics"
+       },
+       {
+        "code": "ISL 501E",
+        "name": "Advanced App.to Management"
+       },
+       {
+        "code": "KOM 513E",
+        "name": "Modelling& Kontrol Of Robots"
+       },
+       {
+        "code": "MAM 505",
+        "name": "Hasar Analizi"
+       },
+       {
+        "code": "MAM 511",
+        "name": "Metallerde Deformas.&Kırılma"
+       },
+       {
+        "code": "MBM 504",
+        "name": "Malzemelerin Mekanik Özel."
+       },
+       {
+        "code": "MHY 509E",
+        "name": "Management of Tech.&Innovation"
+       },
+       {
+        "code": "MIA 503E",
+        "name": "Advanced Fluid Dynamics"
+       },
+       {
+        "code": "MIA 504E",
+        "name": "Advanced Heat&Mass Transfer"
+       },
+       {
+        "code": "MKM 506E",
+        "name": "Modelling&Control of Mech.Sys."
+       },
+       {
+        "code": "MKM 509",
+        "name": "Analog&Sayısal Elektronik"
+       },
+       {
+        "code": "MMI 566",
+        "name": "İleri İmalat Yöntemleri"
+       },
+       {
+        "code": "MMI 568E",
+        "name": "Comp.Integrated Manufacturing"
+       },
+       {
+        "code": "TEL 502E",
+        "name": "Detection and Estimation Theo."
+       },
+       {
+        "code": "TEL 505E",
+        "name": "Mobile Commun.Systems"
+       },
+       {
+        "code": "TEL 508",
+        "name": "Sayısal İletişim Kuramı"
+       },
+       {
+        "code": "TEL 515E",
+        "name": "Statist.Signal Processing"
+       },
+       {
+        "code": "TEL 519E",
+        "name": "Image Processing"
+       },
+       {
+        "code": "UAH 511",
+        "name": "Olasılık Teorisi&Stokastik Pro"
+       },
+       {
+        "code": "UUM 504E",
+        "name": "Structural Dynamics"
+       },
+       {
+        "code": "UUM 507E",
+        "name": "Linear Control Systems"
+       },
+       {
+        "code": "UUM 508E",
+        "name": "Finite Element Analy.in Struc."
+       },
+       {
+        "code": "UUM 510E",
+        "name": "Computational Fluid Dynamics"
+       },
+       {
+        "code": "UUM 521E",
+        "name": "Advanced Dynamics"
+       },
+       {
+        "code": "UUM 526E",
+        "name": "Optimization Techniques in En."
+       },
+       {
+        "code": "UUM 536",
+        "name": "Kısmi Diferansiyel Denklemler"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BGK 501E",
+        "name": "Network Security"
+       },
+       {
+        "code": "BGK 503E",
+        "name": "Information&Computer Security"
+       },
+       {
+        "code": "BGK 505E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "BLG 506E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 510E",
+        "name": "Security in Computer Networks"
+       },
+       {
+        "code": "BLG 513E",
+        "name": "Image Processing"
+       },
+       {
+        "code": "BLG 520E",
+        "name": "Cryptography"
+       },
+       {
+        "code": "BLG 521E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 527E",
+        "name": "Machine Learning"
+       },
+       {
+        "code": "BLG 549E",
+        "name": "Graph Theory and Algorithms"
+       },
+       {
+        "code": "BLU 502E",
+        "name": "Optimization Methods in Infor."
+       },
+       {
+        "code": "BLU 526E",
+        "name": "Mathem.Meth.for Signal Proc."
+       },
+       {
+        "code": "EBT 502E",
+        "name": "Advanced Fluid Dynamics"
+       },
+       {
+        "code": "EBT 503E",
+        "name": "Advanced Thermodynamics"
+       },
+       {
+        "code": "EBT 505E",
+        "name": "Advanced Heat&Mass Transfer"
+       },
+       {
+        "code": "EBT 513",
+        "name": "Enerji Sistemler.Hesap.Yönt."
+       },
+       {
+        "code": "EBT 535",
+        "name": "Endüstride Enerji Yönetimi"
+       },
+       {
+        "code": "EBT 547",
+        "name": "Ener.Sistem.Ölçme Teknikleri"
+       },
+       {
+        "code": "END 506E",
+        "name": "Advanced Engineering Economics"
+       },
+       {
+        "code": "ISL 501E",
+        "name": "Advanced App.to Management"
+       },
+       {
+        "code": "KOM 513E",
+        "name": "Modelling& Kontrol Of Robots"
+       },
+       {
+        "code": "MAM 505",
+        "name": "Hasar Analizi"
+       },
+       {
+        "code": "MAM 511",
+        "name": "Metallerde Deformas.&Kırılma"
+       },
+       {
+        "code": "MBM 504",
+        "name": "Malzemelerin Mekanik Özel."
+       },
+       {
+        "code": "MHY 509E",
+        "name": "Management of Tech.&Innovation"
+       },
+       {
+        "code": "MIA 503E",
+        "name": "Advanced Fluid Dynamics"
+       },
+       {
+        "code": "MIA 504E",
+        "name": "Advanced Heat&Mass Transfer"
+       },
+       {
+        "code": "MKM 506E",
+        "name": "Modelling&Control of Mech.Sys."
+       },
+       {
+        "code": "MKM 509",
+        "name": "Analog&Sayısal Elektronik"
+       },
+       {
+        "code": "MMI 566",
+        "name": "İleri İmalat Yöntemleri"
+       },
+       {
+        "code": "MMI 568E",
+        "name": "Comp.Integrated Manufacturing"
+       },
+       {
+        "code": "TEL 502E",
+        "name": "Detection and Estimation Theo."
+       },
+       {
+        "code": "TEL 505E",
+        "name": "Mobile Commun.Systems"
+       },
+       {
+        "code": "TEL 508",
+        "name": "Sayısal İletişim Kuramı"
+       },
+       {
+        "code": "TEL 515E",
+        "name": "Statist.Signal Processing"
+       },
+       {
+        "code": "TEL 519E",
+        "name": "Image Processing"
+       },
+       {
+        "code": "UAH 511",
+        "name": "Olasılık Teorisi&Stokastik Pro"
+       },
+       {
+        "code": "UUM 504E",
+        "name": "Structural Dynamics"
+       },
+       {
+        "code": "UUM 507E",
+        "name": "Linear Control Systems"
+       },
+       {
+        "code": "UUM 508E",
+        "name": "Finite Element Analy.in Struc."
+       },
+       {
+        "code": "UUM 510E",
+        "name": "Computational Fluid Dynamics"
+       },
+       {
+        "code": "UUM 521E",
+        "name": "Advanced Dynamics"
+       },
+       {
+        "code": "UUM 526E",
+        "name": "Optimization Techniques in En."
+       },
+       {
+        "code": "UUM 536",
+        "name": "Kısmi Diferansiyel Denklemler"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": null
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": null
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": null
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": null
+     }
+    }
+   ]
+  }
+ ]
+}

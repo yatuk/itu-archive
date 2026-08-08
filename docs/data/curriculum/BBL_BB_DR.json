@@ -1,0 +1,981 @@
+{
+ "programCode": "BBL_BB_DR",
+ "programName": "Bilgisayar Bilimleri Doktora",
+ "faculty": "Lisansüstü Eğitim Enstitüsü",
+ "level": "DR",
+ "planLabel": "Bilgisayar Bilimleri Doktora Programı 2022-2023 / Bahar ile 2026-2027 / Güz Dönemleri Arası",
+ "semesters": [
+  {
+   "title": "Bilgisayar Bilimleri Doktora",
+   "items": [
+    {
+     "course": {
+      "code": "BBL DRT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "course": {
+      "code": "BBL YET",
+      "name": "Yeterlik Aşaması"
+     }
+    },
+    {
+     "course": {
+      "code": "BBL 696 BBL 696E",
+      "name": "Bilimsel Araştırma, Etik ve Seminer"
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli ABD Dersi I",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 502",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 502E",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 503",
+        "name": "Bilgisa. Mimar.Yeni Yaklaşım."
+       },
+       {
+        "code": "BBL 510E",
+        "name": "Real-Time Systems Design"
+       },
+       {
+        "code": "BBL 512E",
+        "name": "Advanc. Topic. in Comp.Network"
+       },
+       {
+        "code": "BBL 513E",
+        "name": "Graph Theory&Algorithms"
+       },
+       {
+        "code": "BBL 514E",
+        "name": "Pattern Recognition&Analysis"
+       },
+       {
+        "code": "BBL 532E",
+        "name": "Network Programming"
+       },
+       {
+        "code": "BBL 533",
+        "name": "Büyük Veri Sistemleri"
+       },
+       {
+        "code": "BBL 533E",
+        "name": "Big Data Systems"
+       },
+       {
+        "code": "BBL 534",
+        "name": "İleri İşletim Sistemleri"
+       },
+       {
+        "code": "BBL 535",
+        "name": "Çizge Veri Madenciliği"
+       },
+       {
+        "code": "BBL 535E",
+        "name": "Graph Data Mining"
+       },
+       {
+        "code": "BBL 536",
+        "name": "Veri Bilimi"
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BBL 537E",
+        "name": "String Algorithms"
+       },
+       {
+        "code": "BBL 538",
+        "name": "Hesaplamalı Geometri"
+       },
+       {
+        "code": "BBL 538E",
+        "name": "Computational Geometry"
+       },
+       {
+        "code": "BBL 541",
+        "name": "Markov Sistem.Model.&Anal."
+       },
+       {
+        "code": "BBL 541E",
+        "name": "Modeling and Analysis of Markovian Systems"
+       },
+       {
+        "code": "BBL 551E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 553",
+        "name": "Algoritma Mühendisliği"
+       },
+       {
+        "code": "BBL 553E",
+        "name": "Algorithm Engineering"
+       },
+       {
+        "code": "BBL 588E",
+        "name": "Advanced Topics in Image Analysis"
+       },
+       {
+        "code": "BBL 601",
+        "name": "Ağ Güvenliği"
+       },
+       {
+        "code": "BBL 603E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 605E",
+        "name": "Pervasive Computing"
+       },
+       {
+        "code": "BBL 606",
+        "name": "Veri Madenciliği"
+       },
+       {
+        "code": "BBL 607",
+        "name": "İleri Veri Tabanı Sistemleri"
+       },
+       {
+        "code": "BBL 607E",
+        "name": "Advanced Database Systems"
+       },
+       {
+        "code": "BBL 610E",
+        "name": "Evolutionary Computing"
+       },
+       {
+        "code": "BBL 611E",
+        "name": "Advanced Topics in Algorithms"
+       },
+       {
+        "code": "BBL 613E",
+        "name": "Advan.Topics in Data Compres."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli ABD Dersi II",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 502",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 502E",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 503",
+        "name": "Bilgisa. Mimar.Yeni Yaklaşım."
+       },
+       {
+        "code": "BBL 510E",
+        "name": "Real-Time Systems Design"
+       },
+       {
+        "code": "BBL 512E",
+        "name": "Advanc. Topic. in Comp.Network"
+       },
+       {
+        "code": "BBL 513E",
+        "name": "Graph Theory&Algorithms"
+       },
+       {
+        "code": "BBL 514E",
+        "name": "Pattern Recognition&Analysis"
+       },
+       {
+        "code": "BBL 532E",
+        "name": "Network Programming"
+       },
+       {
+        "code": "BBL 533",
+        "name": "Büyük Veri Sistemleri"
+       },
+       {
+        "code": "BBL 533E",
+        "name": "Big Data Systems"
+       },
+       {
+        "code": "BBL 534",
+        "name": "İleri İşletim Sistemleri"
+       },
+       {
+        "code": "BBL 535",
+        "name": "Çizge Veri Madenciliği"
+       },
+       {
+        "code": "BBL 535E",
+        "name": "Graph Data Mining"
+       },
+       {
+        "code": "BBL 536",
+        "name": "Veri Bilimi"
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BBL 537E",
+        "name": "String Algorithms"
+       },
+       {
+        "code": "BBL 538",
+        "name": "Hesaplamalı Geometri"
+       },
+       {
+        "code": "BBL 538E",
+        "name": "Computational Geometry"
+       },
+       {
+        "code": "BBL 541",
+        "name": "Markov Sistem.Model.&Anal."
+       },
+       {
+        "code": "BBL 541E",
+        "name": "Modeling and Analysis of Markovian Systems"
+       },
+       {
+        "code": "BBL 551E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 553",
+        "name": "Algoritma Mühendisliği"
+       },
+       {
+        "code": "BBL 553E",
+        "name": "Algorithm Engineering"
+       },
+       {
+        "code": "BBL 588E",
+        "name": "Advanced Topics in Image Analysis"
+       },
+       {
+        "code": "BBL 601",
+        "name": "Ağ Güvenliği"
+       },
+       {
+        "code": "BBL 603E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 605E",
+        "name": "Pervasive Computing"
+       },
+       {
+        "code": "BBL 606",
+        "name": "Veri Madenciliği"
+       },
+       {
+        "code": "BBL 607",
+        "name": "İleri Veri Tabanı Sistemleri"
+       },
+       {
+        "code": "BBL 607E",
+        "name": "Advanced Database Systems"
+       },
+       {
+        "code": "BBL 610E",
+        "name": "Evolutionary Computing"
+       },
+       {
+        "code": "BBL 611E",
+        "name": "Advanced Topics in Algorithms"
+       },
+       {
+        "code": "BBL 613E",
+        "name": "Advan.Topics in Data Compres."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli ABD Dersi III",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 502",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 502E",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 503",
+        "name": "Bilgisa. Mimar.Yeni Yaklaşım."
+       },
+       {
+        "code": "BBL 510E",
+        "name": "Real-Time Systems Design"
+       },
+       {
+        "code": "BBL 512E",
+        "name": "Advanc. Topic. in Comp.Network"
+       },
+       {
+        "code": "BBL 513E",
+        "name": "Graph Theory&Algorithms"
+       },
+       {
+        "code": "BBL 514E",
+        "name": "Pattern Recognition&Analysis"
+       },
+       {
+        "code": "BBL 532E",
+        "name": "Network Programming"
+       },
+       {
+        "code": "BBL 533",
+        "name": "Büyük Veri Sistemleri"
+       },
+       {
+        "code": "BBL 533E",
+        "name": "Big Data Systems"
+       },
+       {
+        "code": "BBL 534",
+        "name": "İleri İşletim Sistemleri"
+       },
+       {
+        "code": "BBL 535",
+        "name": "Çizge Veri Madenciliği"
+       },
+       {
+        "code": "BBL 535E",
+        "name": "Graph Data Mining"
+       },
+       {
+        "code": "BBL 536",
+        "name": "Veri Bilimi"
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BBL 537E",
+        "name": "String Algorithms"
+       },
+       {
+        "code": "BBL 538",
+        "name": "Hesaplamalı Geometri"
+       },
+       {
+        "code": "BBL 538E",
+        "name": "Computational Geometry"
+       },
+       {
+        "code": "BBL 541",
+        "name": "Markov Sistem.Model.&Anal."
+       },
+       {
+        "code": "BBL 541E",
+        "name": "Modeling and Analysis of Markovian Systems"
+       },
+       {
+        "code": "BBL 551E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 553",
+        "name": "Algoritma Mühendisliği"
+       },
+       {
+        "code": "BBL 553E",
+        "name": "Algorithm Engineering"
+       },
+       {
+        "code": "BBL 588E",
+        "name": "Advanced Topics in Image Analysis"
+       },
+       {
+        "code": "BBL 601",
+        "name": "Ağ Güvenliği"
+       },
+       {
+        "code": "BBL 603E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 605E",
+        "name": "Pervasive Computing"
+       },
+       {
+        "code": "BBL 606",
+        "name": "Veri Madenciliği"
+       },
+       {
+        "code": "BBL 607",
+        "name": "İleri Veri Tabanı Sistemleri"
+       },
+       {
+        "code": "BBL 607E",
+        "name": "Advanced Database Systems"
+       },
+       {
+        "code": "BBL 610E",
+        "name": "Evolutionary Computing"
+       },
+       {
+        "code": "BBL 611E",
+        "name": "Advanced Topics in Algorithms"
+       },
+       {
+        "code": "BBL 613E",
+        "name": "Advan.Topics in Data Compres."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli ABD Dersi IV",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 502",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 502E",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 503",
+        "name": "Bilgisa. Mimar.Yeni Yaklaşım."
+       },
+       {
+        "code": "BBL 510E",
+        "name": "Real-Time Systems Design"
+       },
+       {
+        "code": "BBL 512E",
+        "name": "Advanc. Topic. in Comp.Network"
+       },
+       {
+        "code": "BBL 513E",
+        "name": "Graph Theory&Algorithms"
+       },
+       {
+        "code": "BBL 514E",
+        "name": "Pattern Recognition&Analysis"
+       },
+       {
+        "code": "BBL 532E",
+        "name": "Network Programming"
+       },
+       {
+        "code": "BBL 533",
+        "name": "Büyük Veri Sistemleri"
+       },
+       {
+        "code": "BBL 533E",
+        "name": "Big Data Systems"
+       },
+       {
+        "code": "BBL 534",
+        "name": "İleri İşletim Sistemleri"
+       },
+       {
+        "code": "BBL 535",
+        "name": "Çizge Veri Madenciliği"
+       },
+       {
+        "code": "BBL 535E",
+        "name": "Graph Data Mining"
+       },
+       {
+        "code": "BBL 536",
+        "name": "Veri Bilimi"
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BBL 537E",
+        "name": "String Algorithms"
+       },
+       {
+        "code": "BBL 538",
+        "name": "Hesaplamalı Geometri"
+       },
+       {
+        "code": "BBL 538E",
+        "name": "Computational Geometry"
+       },
+       {
+        "code": "BBL 541",
+        "name": "Markov Sistem.Model.&Anal."
+       },
+       {
+        "code": "BBL 541E",
+        "name": "Modeling and Analysis of Markovian Systems"
+       },
+       {
+        "code": "BBL 551E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 553",
+        "name": "Algoritma Mühendisliği"
+       },
+       {
+        "code": "BBL 553E",
+        "name": "Algorithm Engineering"
+       },
+       {
+        "code": "BBL 588E",
+        "name": "Advanced Topics in Image Analysis"
+       },
+       {
+        "code": "BBL 601",
+        "name": "Ağ Güvenliği"
+       },
+       {
+        "code": "BBL 603E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 605E",
+        "name": "Pervasive Computing"
+       },
+       {
+        "code": "BBL 606",
+        "name": "Veri Madenciliği"
+       },
+       {
+        "code": "BBL 607",
+        "name": "İleri Veri Tabanı Sistemleri"
+       },
+       {
+        "code": "BBL 607E",
+        "name": "Advanced Database Systems"
+       },
+       {
+        "code": "BBL 610E",
+        "name": "Evolutionary Computing"
+       },
+       {
+        "code": "BBL 611E",
+        "name": "Advanced Topics in Algorithms"
+       },
+       {
+        "code": "BBL 613E",
+        "name": "Advan.Topics in Data Compres."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "LEE Seçmeli Dersi",
+      "options": [
+       {
+        "code": "LEE 901",
+        "name": "Akademik Girişimcilik"
+       },
+       {
+        "code": "LEE 901E",
+        "name": "Academic Entrepreneurship"
+       },
+       {
+        "code": "LEE 903",
+        "name": "Proje Döngüsü Yönetimi"
+       },
+       {
+        "code": "LEE 903E",
+        "name": "Project Cycle Management"
+       },
+       {
+        "code": "LEE 904",
+        "name": "Yönlendirilmiş Çalışmalar"
+       },
+       {
+        "code": "LEE 904E",
+        "name": "Directed Studies"
+       },
+       {
+        "code": "LEE 905",
+        "name": "İnovas.Teknik.&Patent Süreç."
+       },
+       {
+        "code": "LEE 905E",
+        "name": "Inovations Techniques and Patent Processes"
+       },
+       {
+        "code": "LEE 906",
+        "name": "Yaratıcı Endüstriler için Blokzincir Teknolojisi"
+       },
+       {
+        "code": "LEE 906E",
+        "name": "Blockchain Technology for Creative Industries"
+       },
+       {
+        "code": "LEE 907",
+        "name": "Teknoloji Etiği"
+       },
+       {
+        "code": "LEE 907E",
+        "name": "Ethics of Technology"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 502",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 502E",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 503",
+        "name": "Bilgisa. Mimar.Yeni Yaklaşım."
+       },
+       {
+        "code": "BBL 510E",
+        "name": "Real-Time Systems Design"
+       },
+       {
+        "code": "BBL 512E",
+        "name": "Advanc. Topic. in Comp.Network"
+       },
+       {
+        "code": "BBL 513E",
+        "name": "Graph Theory&Algorithms"
+       },
+       {
+        "code": "BBL 514E",
+        "name": "Pattern Recognition&Analysis"
+       },
+       {
+        "code": "BBL 532E",
+        "name": "Network Programming"
+       },
+       {
+        "code": "BBL 533",
+        "name": "Büyük Veri Sistemleri"
+       },
+       {
+        "code": "BBL 533E",
+        "name": "Big Data Systems"
+       },
+       {
+        "code": "BBL 534",
+        "name": "İleri İşletim Sistemleri"
+       },
+       {
+        "code": "BBL 535",
+        "name": "Çizge Veri Madenciliği"
+       },
+       {
+        "code": "BBL 535E",
+        "name": "Graph Data Mining"
+       },
+       {
+        "code": "BBL 536",
+        "name": "Veri Bilimi"
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BBL 537E",
+        "name": "String Algorithms"
+       },
+       {
+        "code": "BBL 538",
+        "name": "Hesaplamalı Geometri"
+       },
+       {
+        "code": "BBL 538E",
+        "name": "Computational Geometry"
+       },
+       {
+        "code": "BBL 541",
+        "name": "Markov Sistem.Model.&Anal."
+       },
+       {
+        "code": "BBL 541E",
+        "name": "Modeling and Analysis of Markovian Systems"
+       },
+       {
+        "code": "BBL 551E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 553",
+        "name": "Algoritma Mühendisliği"
+       },
+       {
+        "code": "BBL 553E",
+        "name": "Algorithm Engineering"
+       },
+       {
+        "code": "BBL 588E",
+        "name": "Advanced Topics in Image Analysis"
+       },
+       {
+        "code": "BBL 601",
+        "name": "Ağ Güvenliği"
+       },
+       {
+        "code": "BBL 603E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 605E",
+        "name": "Pervasive Computing"
+       },
+       {
+        "code": "BBL 606",
+        "name": "Veri Madenciliği"
+       },
+       {
+        "code": "BBL 607",
+        "name": "İleri Veri Tabanı Sistemleri"
+       },
+       {
+        "code": "BBL 607E",
+        "name": "Advanced Database Systems"
+       },
+       {
+        "code": "BBL 610E",
+        "name": "Evolutionary Computing"
+       },
+       {
+        "code": "BBL 611E",
+        "name": "Advanced Topics in Algorithms"
+       },
+       {
+        "code": "BBL 613E",
+        "name": "Advan.Topics in Data Compres."
+       },
+       {
+        "code": "BGK 601E",
+        "name": "Machine Learn.Meth.in Secur."
+       },
+       {
+        "code": "BLG 632E",
+        "name": "Next Generat.Wireless Networks"
+       },
+       {
+        "code": "BLU 603E",
+        "name": "Statistical Learning"
+       },
+       {
+        "code": "BLU 620E",
+        "name": "Advan.Mode.&Simu.of Marko.Sys."
+       },
+       {
+        "code": "HBM 616E",
+        "name": "Computational Complexity"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": [
+       {
+        "code": "BBL 501E",
+        "name": "Probability&Stochastic Proces."
+       },
+       {
+        "code": "BBL 502",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 502E",
+        "name": "Software Modeling and Design"
+       },
+       {
+        "code": "BBL 503",
+        "name": "Bilgisa. Mimar.Yeni Yaklaşım."
+       },
+       {
+        "code": "BBL 510E",
+        "name": "Real-Time Systems Design"
+       },
+       {
+        "code": "BBL 512E",
+        "name": "Advanc. Topic. in Comp.Network"
+       },
+       {
+        "code": "BBL 513E",
+        "name": "Graph Theory&Algorithms"
+       },
+       {
+        "code": "BBL 514E",
+        "name": "Pattern Recognition&Analysis"
+       },
+       {
+        "code": "BBL 532E",
+        "name": "Network Programming"
+       },
+       {
+        "code": "BBL 533",
+        "name": "Büyük Veri Sistemleri"
+       },
+       {
+        "code": "BBL 533E",
+        "name": "Big Data Systems"
+       },
+       {
+        "code": "BBL 534",
+        "name": "İleri İşletim Sistemleri"
+       },
+       {
+        "code": "BBL 535",
+        "name": "Çizge Veri Madenciliği"
+       },
+       {
+        "code": "BBL 535E",
+        "name": "Graph Data Mining"
+       },
+       {
+        "code": "BBL 536",
+        "name": "Veri Bilimi"
+       },
+       {
+        "code": "BBL 536E",
+        "name": "Data Science"
+       },
+       {
+        "code": "BBL 537E",
+        "name": "String Algorithms"
+       },
+       {
+        "code": "BBL 538",
+        "name": "Hesaplamalı Geometri"
+       },
+       {
+        "code": "BBL 538E",
+        "name": "Computational Geometry"
+       },
+       {
+        "code": "BBL 541",
+        "name": "Markov Sistem.Model.&Anal."
+       },
+       {
+        "code": "BBL 541E",
+        "name": "Modeling and Analysis of Markovian Systems"
+       },
+       {
+        "code": "BBL 551E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 553",
+        "name": "Algoritma Mühendisliği"
+       },
+       {
+        "code": "BBL 553E",
+        "name": "Algorithm Engineering"
+       },
+       {
+        "code": "BBL 588E",
+        "name": "Advanced Topics in Image Analysis"
+       },
+       {
+        "code": "BBL 601",
+        "name": "Ağ Güvenliği"
+       },
+       {
+        "code": "BBL 603E",
+        "name": "Guided Research"
+       },
+       {
+        "code": "BBL 605E",
+        "name": "Pervasive Computing"
+       },
+       {
+        "code": "BBL 606",
+        "name": "Veri Madenciliği"
+       },
+       {
+        "code": "BBL 607",
+        "name": "İleri Veri Tabanı Sistemleri"
+       },
+       {
+        "code": "BBL 607E",
+        "name": "Advanced Database Systems"
+       },
+       {
+        "code": "BBL 610E",
+        "name": "Evolutionary Computing"
+       },
+       {
+        "code": "BBL 611E",
+        "name": "Advanced Topics in Algorithms"
+       },
+       {
+        "code": "BBL 613E",
+        "name": "Advan.Topics in Data Compres."
+       },
+       {
+        "code": "BGK 601E",
+        "name": "Machine Learn.Meth.in Secur."
+       },
+       {
+        "code": "BLG 632E",
+        "name": "Next Generat.Wireless Networks"
+       },
+       {
+        "code": "BLU 603E",
+        "name": "Statistical Learning"
+       },
+       {
+        "code": "BLU 620E",
+        "name": "Advan.Mode.&Simu.of Marko.Sys."
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

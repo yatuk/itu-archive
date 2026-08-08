@@ -1,0 +1,675 @@
+{
+ "programCode": "CBT_CT_YL",
+ "programName": "Coğrafi Bilgi Teknolojileri Yüksek Lisans",
+ "faculty": "Lisansüstü Eğitim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Coğrafi Bilgi Teknolojileri Yüksek Lisans Programı 2026-2027 / Güz Dönemi Öncesi",
+ "semesters": [
+  {
+   "title": "Coğrafi Bilgi Teknolojileri Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "GIT YLT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "elective": {
+      "title": "Bilimsel Araş., Etik ve Seminer",
+      "options": [
+       {
+        "code": "GEO 596E",
+        "name": "Scien.Rese., Ethic&Seminar"
+       },
+       {
+        "code": "GEO 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       },
+       {
+        "code": "GIT 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       },
+       {
+        "code": "GIT 596E",
+        "name": "Scientific Research, Ethic and Seminar"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "GIT 501",
+        "name": "Konumsal Matematik Yöntemler"
+       },
+       {
+        "code": "GIT 502",
+        "name": "Konumsal Veri Analizleri"
+       },
+       {
+        "code": "GIT 503E",
+        "name": "Princip.of Geo-Informat.Syste."
+       },
+       {
+        "code": "GIT 504E",
+        "name": "Advanced GIS"
+       },
+       {
+        "code": "GIT 514E",
+        "name": "Geostatistics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "GIT 501",
+        "name": "Konumsal Matematik Yöntemler"
+       },
+       {
+        "code": "GIT 502",
+        "name": "Konumsal Veri Analizleri"
+       },
+       {
+        "code": "GIT 503E",
+        "name": "Princip.of Geo-Informat.Syste."
+       },
+       {
+        "code": "GIT 504E",
+        "name": "Advanced GIS"
+       },
+       {
+        "code": "GIT 514E",
+        "name": "Geostatistics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "GIT 501",
+        "name": "Konumsal Matematik Yöntemler"
+       },
+       {
+        "code": "GIT 502",
+        "name": "Konumsal Veri Analizleri"
+       },
+       {
+        "code": "GIT 503E",
+        "name": "Princip.of Geo-Informat.Syste."
+       },
+       {
+        "code": "GIT 504E",
+        "name": "Advanced GIS"
+       },
+       {
+        "code": "GIT 514E",
+        "name": "Geostatistics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders IV",
+      "options": [
+       {
+        "code": "GIT 501",
+        "name": "Konumsal Matematik Yöntemler"
+       },
+       {
+        "code": "GIT 502",
+        "name": "Konumsal Veri Analizleri"
+       },
+       {
+        "code": "GIT 503E",
+        "name": "Princip.of Geo-Informat.Syste."
+       },
+       {
+        "code": "GIT 504E",
+        "name": "Advanced GIS"
+       },
+       {
+        "code": "GIT 514E",
+        "name": "Geostatistics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": [
+       {
+        "code": "GIT 505",
+        "name": "Coğrafi Veritabanı Geliştirme"
+       },
+       {
+        "code": "GIT 506",
+        "name": "Konumsal Veri Altyapısı"
+       },
+       {
+        "code": "GIT 507",
+        "name": "Sayısal Arazi Modelleri"
+       },
+       {
+        "code": "GIT 508",
+        "name": "CBS de Özel Konular"
+       },
+       {
+        "code": "GIT 508E",
+        "name": "Special Topics in GIS"
+       },
+       {
+        "code": "GIT 509E",
+        "name": "GIS Programming"
+       },
+       {
+        "code": "GIT 510",
+        "name": "Web CBS Teknolojileri"
+       },
+       {
+        "code": "GIT 510E",
+        "name": "WebGIS Technology"
+       },
+       {
+        "code": "GIT 511E",
+        "name": "Principles of GNSS"
+       },
+       {
+        "code": "GIT 512E",
+        "name": "GIS in Climate Change"
+       },
+       {
+        "code": "GIT 513",
+        "name": "CBS'de Uzaktan algılama"
+       },
+       {
+        "code": "GIT 513E",
+        "name": "Remote Sensing for GIS"
+       },
+       {
+        "code": "GIT 515",
+        "name": "Kent Bilgi Sistemleri"
+       },
+       {
+        "code": "GIT 516",
+        "name": "Planlamada CBS"
+       },
+       {
+        "code": "GIT 517",
+        "name": "Arazi Bilgi Sistemleri"
+       },
+       {
+        "code": "GIT 518",
+        "name": "CBS ile Taşınmaz Değerlemesi"
+       },
+       {
+        "code": "GIT 519E",
+        "name": "GIS for Transportation"
+       },
+       {
+        "code": "GIT 520E",
+        "name": "GIS for Disaster Manage."
+       },
+       {
+        "code": "GIT 521E",
+        "name": "GIS in Ecology"
+       },
+       {
+        "code": "GIT 522E",
+        "name": "Coastal and Marine GIS"
+       },
+       {
+        "code": "GIT 523E",
+        "name": "Location-based Services"
+       },
+       {
+        "code": "GIT 524E",
+        "name": "Environmental GIS"
+       },
+       {
+        "code": "GIT 526E",
+        "name": "Project Strategies in GIS"
+       },
+       {
+        "code": "GIT 601E",
+        "name": "Geo-Data Policy"
+       },
+       {
+        "code": "GIT 602E",
+        "name": "Geo-Data Standards"
+       },
+       {
+        "code": "GIT 603E",
+        "name": "Professionalism in GI-Techno."
+       },
+       {
+        "code": "GIT 604E",
+        "name": "Interoperability in GIS"
+       },
+       {
+        "code": "GIT 605E",
+        "name": "Semantics GIS"
+       },
+       {
+        "code": "GIT 606",
+        "name": "Zamansal CBS"
+       },
+       {
+        "code": "GIT 606E",
+        "name": "Temporal GIS"
+       },
+       {
+        "code": "GIT 608E",
+        "name": "Project Strategies in GIS"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": [
+       {
+        "code": "GIT 505",
+        "name": "Coğrafi Veritabanı Geliştirme"
+       },
+       {
+        "code": "GIT 506",
+        "name": "Konumsal Veri Altyapısı"
+       },
+       {
+        "code": "GIT 507",
+        "name": "Sayısal Arazi Modelleri"
+       },
+       {
+        "code": "GIT 508",
+        "name": "CBS de Özel Konular"
+       },
+       {
+        "code": "GIT 508E",
+        "name": "Special Topics in GIS"
+       },
+       {
+        "code": "GIT 509E",
+        "name": "GIS Programming"
+       },
+       {
+        "code": "GIT 510",
+        "name": "Web CBS Teknolojileri"
+       },
+       {
+        "code": "GIT 510E",
+        "name": "WebGIS Technology"
+       },
+       {
+        "code": "GIT 511E",
+        "name": "Principles of GNSS"
+       },
+       {
+        "code": "GIT 512E",
+        "name": "GIS in Climate Change"
+       },
+       {
+        "code": "GIT 513",
+        "name": "CBS'de Uzaktan algılama"
+       },
+       {
+        "code": "GIT 513E",
+        "name": "Remote Sensing for GIS"
+       },
+       {
+        "code": "GIT 515",
+        "name": "Kent Bilgi Sistemleri"
+       },
+       {
+        "code": "GIT 516",
+        "name": "Planlamada CBS"
+       },
+       {
+        "code": "GIT 517",
+        "name": "Arazi Bilgi Sistemleri"
+       },
+       {
+        "code": "GIT 518",
+        "name": "CBS ile Taşınmaz Değerlemesi"
+       },
+       {
+        "code": "GIT 519E",
+        "name": "GIS for Transportation"
+       },
+       {
+        "code": "GIT 520E",
+        "name": "GIS for Disaster Manage."
+       },
+       {
+        "code": "GIT 521E",
+        "name": "GIS in Ecology"
+       },
+       {
+        "code": "GIT 522E",
+        "name": "Coastal and Marine GIS"
+       },
+       {
+        "code": "GIT 523E",
+        "name": "Location-based Services"
+       },
+       {
+        "code": "GIT 524E",
+        "name": "Environmental GIS"
+       },
+       {
+        "code": "GIT 526E",
+        "name": "Project Strategies in GIS"
+       },
+       {
+        "code": "GIT 601E",
+        "name": "Geo-Data Policy"
+       },
+       {
+        "code": "GIT 602E",
+        "name": "Geo-Data Standards"
+       },
+       {
+        "code": "GIT 603E",
+        "name": "Professionalism in GI-Techno."
+       },
+       {
+        "code": "GIT 604E",
+        "name": "Interoperability in GIS"
+       },
+       {
+        "code": "GIT 605E",
+        "name": "Semantics GIS"
+       },
+       {
+        "code": "GIT 606",
+        "name": "Zamansal CBS"
+       },
+       {
+        "code": "GIT 606E",
+        "name": "Temporal GIS"
+       },
+       {
+        "code": "GIT 608E",
+        "name": "Project Strategies in GIS"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": [
+       {
+        "code": "GIT 505",
+        "name": "Coğrafi Veritabanı Geliştirme"
+       },
+       {
+        "code": "GIT 506",
+        "name": "Konumsal Veri Altyapısı"
+       },
+       {
+        "code": "GIT 507",
+        "name": "Sayısal Arazi Modelleri"
+       },
+       {
+        "code": "GIT 508",
+        "name": "CBS de Özel Konular"
+       },
+       {
+        "code": "GIT 508E",
+        "name": "Special Topics in GIS"
+       },
+       {
+        "code": "GIT 509E",
+        "name": "GIS Programming"
+       },
+       {
+        "code": "GIT 510",
+        "name": "Web CBS Teknolojileri"
+       },
+       {
+        "code": "GIT 510E",
+        "name": "WebGIS Technology"
+       },
+       {
+        "code": "GIT 511E",
+        "name": "Principles of GNSS"
+       },
+       {
+        "code": "GIT 512E",
+        "name": "GIS in Climate Change"
+       },
+       {
+        "code": "GIT 513",
+        "name": "CBS'de Uzaktan algılama"
+       },
+       {
+        "code": "GIT 513E",
+        "name": "Remote Sensing for GIS"
+       },
+       {
+        "code": "GIT 515",
+        "name": "Kent Bilgi Sistemleri"
+       },
+       {
+        "code": "GIT 516",
+        "name": "Planlamada CBS"
+       },
+       {
+        "code": "GIT 517",
+        "name": "Arazi Bilgi Sistemleri"
+       },
+       {
+        "code": "GIT 518",
+        "name": "CBS ile Taşınmaz Değerlemesi"
+       },
+       {
+        "code": "GIT 519E",
+        "name": "GIS for Transportation"
+       },
+       {
+        "code": "GIT 520E",
+        "name": "GIS for Disaster Manage."
+       },
+       {
+        "code": "GIT 521E",
+        "name": "GIS in Ecology"
+       },
+       {
+        "code": "GIT 522E",
+        "name": "Coastal and Marine GIS"
+       },
+       {
+        "code": "GIT 523E",
+        "name": "Location-based Services"
+       },
+       {
+        "code": "GIT 524E",
+        "name": "Environmental GIS"
+       },
+       {
+        "code": "GIT 526E",
+        "name": "Project Strategies in GIS"
+       },
+       {
+        "code": "GIT 601E",
+        "name": "Geo-Data Policy"
+       },
+       {
+        "code": "GIT 602E",
+        "name": "Geo-Data Standards"
+       },
+       {
+        "code": "GIT 603E",
+        "name": "Professionalism in GI-Techno."
+       },
+       {
+        "code": "GIT 604E",
+        "name": "Interoperability in GIS"
+       },
+       {
+        "code": "GIT 605E",
+        "name": "Semantics GIS"
+       },
+       {
+        "code": "GIT 606",
+        "name": "Zamansal CBS"
+       },
+       {
+        "code": "GIT 606E",
+        "name": "Temporal GIS"
+       },
+       {
+        "code": "GIT 608E",
+        "name": "Project Strategies in GIS"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": [
+       {
+        "code": "GIT 505",
+        "name": "Coğrafi Veritabanı Geliştirme"
+       },
+       {
+        "code": "GIT 506",
+        "name": "Konumsal Veri Altyapısı"
+       },
+       {
+        "code": "GIT 507",
+        "name": "Sayısal Arazi Modelleri"
+       },
+       {
+        "code": "GIT 508",
+        "name": "CBS de Özel Konular"
+       },
+       {
+        "code": "GIT 508E",
+        "name": "Special Topics in GIS"
+       },
+       {
+        "code": "GIT 509E",
+        "name": "GIS Programming"
+       },
+       {
+        "code": "GIT 510",
+        "name": "Web CBS Teknolojileri"
+       },
+       {
+        "code": "GIT 510E",
+        "name": "WebGIS Technology"
+       },
+       {
+        "code": "GIT 511E",
+        "name": "Principles of GNSS"
+       },
+       {
+        "code": "GIT 512E",
+        "name": "GIS in Climate Change"
+       },
+       {
+        "code": "GIT 513",
+        "name": "CBS'de Uzaktan algılama"
+       },
+       {
+        "code": "GIT 513E",
+        "name": "Remote Sensing for GIS"
+       },
+       {
+        "code": "GIT 515",
+        "name": "Kent Bilgi Sistemleri"
+       },
+       {
+        "code": "GIT 516",
+        "name": "Planlamada CBS"
+       },
+       {
+        "code": "GIT 517",
+        "name": "Arazi Bilgi Sistemleri"
+       },
+       {
+        "code": "GIT 518",
+        "name": "CBS ile Taşınmaz Değerlemesi"
+       },
+       {
+        "code": "GIT 519E",
+        "name": "GIS for Transportation"
+       },
+       {
+        "code": "GIT 520E",
+        "name": "GIS for Disaster Manage."
+       },
+       {
+        "code": "GIT 521E",
+        "name": "GIS in Ecology"
+       },
+       {
+        "code": "GIT 522E",
+        "name": "Coastal and Marine GIS"
+       },
+       {
+        "code": "GIT 523E",
+        "name": "Location-based Services"
+       },
+       {
+        "code": "GIT 524E",
+        "name": "Environmental GIS"
+       },
+       {
+        "code": "GIT 526E",
+        "name": "Project Strategies in GIS"
+       },
+       {
+        "code": "GIT 601E",
+        "name": "Geo-Data Policy"
+       },
+       {
+        "code": "GIT 602E",
+        "name": "Geo-Data Standards"
+       },
+       {
+        "code": "GIT 603E",
+        "name": "Professionalism in GI-Techno."
+       },
+       {
+        "code": "GIT 604E",
+        "name": "Interoperability in GIS"
+       },
+       {
+        "code": "GIT 605E",
+        "name": "Semantics GIS"
+       },
+       {
+        "code": "GIT 606",
+        "name": "Zamansal CBS"
+       },
+       {
+        "code": "GIT 606E",
+        "name": "Temporal GIS"
+       },
+       {
+        "code": "GIT 608E",
+        "name": "Project Strategies in GIS"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

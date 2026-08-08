@@ -1,0 +1,674 @@
+{
+ "programCode": "MAD_MM_YL",
+ "programName": "Maden Mühendisliği Yüksek Lisans",
+ "faculty": "Lisansüstü Eğitim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Maden Mühendisliği Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "Maden Mühendisliği Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "MAD YLT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "course": {
+      "code": "MAD 596",
+      "name": "Bilimsel Araş.,Etik ve Seminer"
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Matematik Dersi",
+      "options": [
+       {
+        "code": "DUM 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "KMM 511E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "MDK 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "MIA 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "MKC 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "MKS 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "MMI 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "MOT 501",
+        "name": "Mühendislik Matematiği"
+       },
+       {
+        "code": "MTA 501E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "PET 519E",
+        "name": "Advanced Engineering Mathemath"
+       },
+       {
+        "code": "UUM 535E",
+        "name": "Engineering Mathematics"
+       },
+       {
+        "code": "YAP 501E",
+        "name": "Engineering Mathematics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "MAD 501E",
+        "name": "Mining Geostatistics"
+       },
+       {
+        "code": "MAD 515E",
+        "name": "Surface Mine Plant Design"
+       },
+       {
+        "code": "MAD 515",
+        "name": "Açık Ocak Maden Tesisl.Tasr."
+       },
+       {
+        "code": "MAD 516",
+        "name": "Yeraltı Maden Tesis. Tasarımı"
+       },
+       {
+        "code": "MAD 516E",
+        "name": "Design of Undergr.Mine Struc."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "MAD 501E",
+        "name": "Mining Geostatistics"
+       },
+       {
+        "code": "MAD 515E",
+        "name": "Surface Mine Plant Design"
+       },
+       {
+        "code": "MAD 515",
+        "name": "Açık Ocak Maden Tesisl.Tasr."
+       },
+       {
+        "code": "MAD 516",
+        "name": "Yeraltı Maden Tesis. Tasarımı"
+       },
+       {
+        "code": "MAD 516E",
+        "name": "Design of Undergr.Mine Struc."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "MAD 501E",
+        "name": "Mining Geostatistics"
+       },
+       {
+        "code": "MAD 515E",
+        "name": "Surface Mine Plant Design"
+       },
+       {
+        "code": "MAD 515",
+        "name": "Açık Ocak Maden Tesisl.Tasr."
+       },
+       {
+        "code": "MAD 516E",
+        "name": "Design of Undergr.Mine Struc."
+       },
+       {
+        "code": "MAD 516",
+        "name": "Yeraltı Maden Tesis. Tasarımı"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": [
+       {
+        "code": "MAD 502",
+        "name": "Bilgisayar Dest. Maden Planl."
+       },
+       {
+        "code": "MAD 503",
+        "name": "İleri Kaya Mekaniği"
+       },
+       {
+        "code": "MAD 504E",
+        "name": "Advanced Cement Technology"
+       },
+       {
+        "code": "MAD 505E",
+        "name": "Decision Making in Mining"
+       },
+       {
+        "code": "MAD 506",
+        "name": "Kaya-Toprak Şev Stabilitesi"
+       },
+       {
+        "code": "MAD 507",
+        "name": "Madenlerde Otomasyon"
+       },
+       {
+        "code": "MAD 509",
+        "name": "Mad.&Tün.Delme Patlama Son Gel"
+       },
+       {
+        "code": "MAD 510",
+        "name": "Agrega Madenciliği ve Tekno."
+       },
+       {
+        "code": "MAD 511",
+        "name": "Kazı Makinal.Seç.Veriml.Anal."
+       },
+       {
+        "code": "MAD 512E",
+        "name": "Economic Analysis in Mining"
+       },
+       {
+        "code": "MAD 513",
+        "name": "Sert Kayaçta Mekan.Kazı&Mekan."
+       },
+       {
+        "code": "MAD 513E",
+        "name": "Mechanical Excavation and Mechanization in Hard Rock"
+       },
+       {
+        "code": "MAD 514E",
+        "name": "Mech.Excavat.&Mech.in Soft Gr."
+       },
+       {
+        "code": "MAD 515",
+        "name": "Açık Ocak Maden Tesisl.Tasr."
+       },
+       {
+        "code": "MAD 515E",
+        "name": "Surface Mine Plant Design"
+       },
+       {
+        "code": "MAD 516",
+        "name": "Yeraltı Maden Tesis. Tasarımı"
+       },
+       {
+        "code": "MAD 516E",
+        "name": "Design of Undergr.Mine Struc."
+       },
+       {
+        "code": "MAD 557E",
+        "name": "Cement Raw Materials&Prepar."
+       },
+       {
+        "code": "MAD 558E",
+        "name": "Mine Closure&Reclamation Plan."
+       },
+       {
+        "code": "MAD 559",
+        "name": "Maden&Tünel Kazı Mak.Tas.Para."
+       },
+       {
+        "code": "MAD 560",
+        "name": "Madenlerin Satışı ve Pazarla."
+       },
+       {
+        "code": "MAD 563",
+        "name": "Maden Mühendis.Özel Konular"
+       },
+       {
+        "code": "MAD 563E",
+        "name": "Special Topics in Mining Eng."
+       },
+       {
+        "code": "MAD 564",
+        "name": "İleri Maden Havalandırması"
+       },
+       {
+        "code": "MAD 602",
+        "name": "Ocak Yangın.Gaz Püskür&Patlama"
+       },
+       {
+        "code": "MAD 603E",
+        "name": "Rock Cut.Mech.in Mine&Tun.Exca"
+       },
+       {
+        "code": "MAD 605E",
+        "name": "Microtunnelling"
+       },
+       {
+        "code": "MAD 610",
+        "name": "Maden.ve Tünel.Nümerik Yöntem."
+       },
+       {
+        "code": "MAD 614",
+        "name": "Maden Mekanizasyonunda Son Gel"
+       },
+       {
+        "code": "MAD 618E",
+        "name": "Advanced Topics in Mining Eng."
+       },
+       {
+        "code": "MAD 620",
+        "name": "İleri Sondaj Teknikleri"
+       },
+       {
+        "code": "MAD 620E",
+        "name": "Advanced Drilling Techniques"
+       },
+       {
+        "code": "MAD 621E",
+        "name": "Rock Fragmentation by Blasting"
+       },
+       {
+        "code": "MAD 623",
+        "name": "Maden&Tünel.İleri Sağlam.Yönt."
+       },
+       {
+        "code": "MAD 625",
+        "name": "İleri Kaya Mekaniği"
+       },
+       {
+        "code": "MAD 627E",
+        "name": "Methan.Co.in Underg.Mine.&Tun."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": [
+       {
+        "code": "MAD 502",
+        "name": "Bilgisayar Dest. Maden Planl."
+       },
+       {
+        "code": "MAD 506",
+        "name": "Kaya-Toprak Şev Stabilitesi"
+       },
+       {
+        "code": "MAD 509",
+        "name": "Mad.&Tün.Delme Patlama Son Gel"
+       },
+       {
+        "code": "MAD 510",
+        "name": "Agrega Madenciliği ve Tekno."
+       },
+       {
+        "code": "MAD 513",
+        "name": "Sert Kayaçta Mekan.Kazı&Mekan."
+       },
+       {
+        "code": "MAD 559",
+        "name": "Maden&Tünel Kazı Mak.Tas.Para."
+       },
+       {
+        "code": "MAD 560",
+        "name": "Madenlerin Satışı ve Pazarla."
+       },
+       {
+        "code": "MAD 563",
+        "name": "Maden Mühendis.Özel Konular"
+       },
+       {
+        "code": "MAD 564",
+        "name": "İleri Maden Havalandırması"
+       },
+       {
+        "code": "MAD 602",
+        "name": "Ocak Yangın.Gaz Püskür&Patlama"
+       },
+       {
+        "code": "MAD 603E",
+        "name": "Rock Cut.Mech.in Mine&Tun.Exca"
+       },
+       {
+        "code": "MAD 605E",
+        "name": "Microtunnelling"
+       },
+       {
+        "code": "MAD 610",
+        "name": "Maden.ve Tünel.Nümerik Yöntem."
+       },
+       {
+        "code": "MAD 614",
+        "name": "Maden Mekanizasyonunda Son Gel"
+       },
+       {
+        "code": "MAD 618E",
+        "name": "Advanced Topics in Mining Eng."
+       },
+       {
+        "code": "MAD 620E",
+        "name": "Advanced Drilling Techniques"
+       },
+       {
+        "code": "MAD 620",
+        "name": "İleri Sondaj Teknikleri"
+       },
+       {
+        "code": "MAD 621E",
+        "name": "Rock Fragmentation by Blasting"
+       },
+       {
+        "code": "MAD 623",
+        "name": "Maden&Tünel.İleri Sağlam.Yönt."
+       },
+       {
+        "code": "MAD 625",
+        "name": "İleri Kaya Mekaniği"
+       },
+       {
+        "code": "MAD 627E",
+        "name": "Methan.Co.in Underg.Mine.&Tun."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": [
+       {
+        "code": "MAD 502",
+        "name": "Bilgisayar Dest. Maden Planl."
+       },
+       {
+        "code": "MAD 504E",
+        "name": "Advanced Cement Technology"
+       },
+       {
+        "code": "MAD 506",
+        "name": "Kaya-Toprak Şev Stabilitesi"
+       },
+       {
+        "code": "MAD 509",
+        "name": "Mad.&Tün.Delme Patlama Son Gel"
+       },
+       {
+        "code": "MAD 510",
+        "name": "Agrega Madenciliği ve Tekno."
+       },
+       {
+        "code": "MAD 512E",
+        "name": "Economic Analysis in Mining"
+       },
+       {
+        "code": "MAD 513E",
+        "name": "Mechanical Excavation and Mechanization in Hard Rock"
+       },
+       {
+        "code": "MAD 513",
+        "name": "Sert Kayaçta Mekan.Kazı&Mekan."
+       },
+       {
+        "code": "MAD 514E",
+        "name": "Mech.Excavat.&Mech.in Soft Gr."
+       },
+       {
+        "code": "MAD 515E",
+        "name": "Surface Mine Plant Design"
+       },
+       {
+        "code": "MAD 515",
+        "name": "Açık Ocak Maden Tesisl.Tasr."
+       },
+       {
+        "code": "MAD 516E",
+        "name": "Design of Undergr.Mine Struc."
+       },
+       {
+        "code": "MAD 516",
+        "name": "Yeraltı Maden Tesis. Tasarımı"
+       },
+       {
+        "code": "MAD 557E",
+        "name": "Cement Raw Materials&Prepar."
+       },
+       {
+        "code": "MAD 558E",
+        "name": "Mine Closure&Reclamation Plan."
+       },
+       {
+        "code": "MAD 559",
+        "name": "Maden&Tünel Kazı Mak.Tas.Para."
+       },
+       {
+        "code": "MAD 560",
+        "name": "Madenlerin Satışı ve Pazarla."
+       },
+       {
+        "code": "MAD 563E",
+        "name": "Special Topics in Mining Eng."
+       },
+       {
+        "code": "MAD 563",
+        "name": "Maden Mühendis.Özel Konular"
+       },
+       {
+        "code": "MAD 564",
+        "name": "İleri Maden Havalandırması"
+       },
+       {
+        "code": "MAD 602",
+        "name": "Ocak Yangın.Gaz Püskür&Patlama"
+       },
+       {
+        "code": "MAD 603E",
+        "name": "Rock Cut.Mech.in Mine&Tun.Exca"
+       },
+       {
+        "code": "MAD 605E",
+        "name": "Microtunnelling"
+       },
+       {
+        "code": "MAD 610",
+        "name": "Maden.ve Tünel.Nümerik Yöntem."
+       },
+       {
+        "code": "MAD 614",
+        "name": "Maden Mekanizasyonunda Son Gel"
+       },
+       {
+        "code": "MAD 618E",
+        "name": "Advanced Topics in Mining Eng."
+       },
+       {
+        "code": "MAD 620E",
+        "name": "Advanced Drilling Techniques"
+       },
+       {
+        "code": "MAD 620",
+        "name": "İleri Sondaj Teknikleri"
+       },
+       {
+        "code": "MAD 621E",
+        "name": "Rock Fragmentation by Blasting"
+       },
+       {
+        "code": "MAD 623",
+        "name": "Maden&Tünel.İleri Sağlam.Yönt."
+       },
+       {
+        "code": "MAD 625",
+        "name": "İleri Kaya Mekaniği"
+       },
+       {
+        "code": "MAD 627E",
+        "name": "Methan.Co.in Underg.Mine.&Tun."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": [
+       {
+        "code": "MAD 502",
+        "name": "Bilgisayar Dest. Maden Planl."
+       },
+       {
+        "code": "MAD 504E",
+        "name": "Advanced Cement Technology"
+       },
+       {
+        "code": "MAD 506",
+        "name": "Kaya-Toprak Şev Stabilitesi"
+       },
+       {
+        "code": "MAD 509",
+        "name": "Mad.&Tün.Delme Patlama Son Gel"
+       },
+       {
+        "code": "MAD 510",
+        "name": "Agrega Madenciliği ve Tekno."
+       },
+       {
+        "code": "MAD 512E",
+        "name": "Economic Analysis in Mining"
+       },
+       {
+        "code": "MAD 513E",
+        "name": "Mechanical Excavation and Mechanization in Hard Rock"
+       },
+       {
+        "code": "MAD 513",
+        "name": "Sert Kayaçta Mekan.Kazı&Mekan."
+       },
+       {
+        "code": "MAD 514E",
+        "name": "Mech.Excavat.&Mech.in Soft Gr."
+       },
+       {
+        "code": "MAD 515E",
+        "name": "Surface Mine Plant Design"
+       },
+       {
+        "code": "MAD 515",
+        "name": "Açık Ocak Maden Tesisl.Tasr."
+       },
+       {
+        "code": "MAD 516E",
+        "name": "Design of Undergr.Mine Struc."
+       },
+       {
+        "code": "MAD 516",
+        "name": "Yeraltı Maden Tesis. Tasarımı"
+       },
+       {
+        "code": "MAD 557E",
+        "name": "Cement Raw Materials&Prepar."
+       },
+       {
+        "code": "MAD 558E",
+        "name": "Mine Closure&Reclamation Plan."
+       },
+       {
+        "code": "MAD 559",
+        "name": "Maden&Tünel Kazı Mak.Tas.Para."
+       },
+       {
+        "code": "MAD 560",
+        "name": "Madenlerin Satışı ve Pazarla."
+       },
+       {
+        "code": "MAD 563E",
+        "name": "Special Topics in Mining Eng."
+       },
+       {
+        "code": "MAD 563",
+        "name": "Maden Mühendis.Özel Konular"
+       },
+       {
+        "code": "MAD 564",
+        "name": "İleri Maden Havalandırması"
+       },
+       {
+        "code": "MAD 602",
+        "name": "Ocak Yangın.Gaz Püskür&Patlama"
+       },
+       {
+        "code": "MAD 603E",
+        "name": "Rock Cut.Mech.in Mine&Tun.Exca"
+       },
+       {
+        "code": "MAD 605E",
+        "name": "Microtunnelling"
+       },
+       {
+        "code": "MAD 610",
+        "name": "Maden.ve Tünel.Nümerik Yöntem."
+       },
+       {
+        "code": "MAD 614",
+        "name": "Maden Mekanizasyonunda Son Gel"
+       },
+       {
+        "code": "MAD 618E",
+        "name": "Advanced Topics in Mining Eng."
+       },
+       {
+        "code": "MAD 620E",
+        "name": "Advanced Drilling Techniques"
+       },
+       {
+        "code": "MAD 620",
+        "name": "İleri Sondaj Teknikleri"
+       },
+       {
+        "code": "MAD 621E",
+        "name": "Rock Fragmentation by Blasting"
+       },
+       {
+        "code": "MAD 623",
+        "name": "Maden&Tünel.İleri Sağlam.Yönt."
+       },
+       {
+        "code": "MAD 625",
+        "name": "İleri Kaya Mekaniği"
+       },
+       {
+        "code": "MAD 627E",
+        "name": "Methan.Co.in Underg.Mine.&Tun."
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

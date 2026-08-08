@@ -1,0 +1,739 @@
+{
+ "programCode": "BVA_IA_YL",
+ "programName": "Büyük Veri ve İş Analitiği Yüksek Lisans",
+ "faculty": "Lisansüstü Eğitim Enstitüsü",
+ "level": "YL",
+ "planLabel": "Büyük Veri ve İş Analitiği Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "semesters": [
+  {
+   "title": "Büyük Veri ve İş Analitiği Yüksek Lisans",
+   "items": [
+    {
+     "course": {
+      "code": "BVA YLT",
+      "name": "Tez Çalışması"
+     }
+    },
+    {
+     "elective": {
+      "title": "Scien.Rese., Ethic&Seminar",
+      "options": [
+       {
+        "code": "END 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       },
+       {
+        "code": "END 596E",
+        "name": "Scientific Research, Ethic and Seminar"
+       },
+       {
+        "code": "MHY 596E",
+        "name": "Scien.Rese., Ethic&Seminar"
+       },
+       {
+        "code": "MHY 596",
+        "name": "Bilimsel Araş.,Etik ve Seminer"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders I",
+      "options": [
+       {
+        "code": "BVA 501",
+        "name": "Advances in Data Science"
+       },
+       {
+        "code": "BVA 502E",
+        "name": "Data Mining for Business"
+       },
+       {
+        "code": "BVA 503E",
+        "name": "Applied Statistics for Busine."
+       },
+       {
+        "code": "BVA 504E",
+        "name": "Big Data Technologies&Appli."
+       },
+       {
+        "code": "BVA 505E",
+        "name": "Database Management&Big Data"
+       },
+       {
+        "code": "BVA 506E",
+        "name": "Optimization&Decision Modell."
+       },
+       {
+        "code": "BVA 507",
+        "name": "Business Analytics for Manager"
+       },
+       {
+        "code": "BVA 509E",
+        "name": "Machine Learni.with Big Data"
+       },
+       {
+        "code": "BVA 512E",
+        "name": "Simulation Modelling"
+       },
+       {
+        "code": "BVA 527",
+        "name": "Mathematics for Machine Lear."
+       },
+       {
+        "code": "END 513",
+        "name": "İleri Istatistiksel Analiz"
+       },
+       {
+        "code": "END 574E",
+        "name": "Business Intell.&Mac.Lear.App."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders II",
+      "options": [
+       {
+        "code": "BVA 501",
+        "name": "Advances in Data Science"
+       },
+       {
+        "code": "BVA 502E",
+        "name": "Data Mining for Business"
+       },
+       {
+        "code": "BVA 503E",
+        "name": "Applied Statistics for Busine."
+       },
+       {
+        "code": "BVA 504E",
+        "name": "Big Data Technologies&Appli."
+       },
+       {
+        "code": "BVA 505E",
+        "name": "Database Management&Big Data"
+       },
+       {
+        "code": "BVA 506E",
+        "name": "Optimization&Decision Modell."
+       },
+       {
+        "code": "BVA 507",
+        "name": "Business Analytics for Manager"
+       },
+       {
+        "code": "BVA 509E",
+        "name": "Machine Learni.with Big Data"
+       },
+       {
+        "code": "BVA 512E",
+        "name": "Simulation Modelling"
+       },
+       {
+        "code": "BVA 527",
+        "name": "Mathematics for Machine Lear."
+       },
+       {
+        "code": "END 513",
+        "name": "İleri Istatistiksel Analiz"
+       },
+       {
+        "code": "END 574E",
+        "name": "Business Intell.&Mac.Lear.App."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders III",
+      "options": [
+       {
+        "code": "BVA 501",
+        "name": "Advances in Data Science"
+       },
+       {
+        "code": "BVA 502E",
+        "name": "Data Mining for Business"
+       },
+       {
+        "code": "BVA 503E",
+        "name": "Applied Statistics for Busine."
+       },
+       {
+        "code": "BVA 504E",
+        "name": "Big Data Technologies&Appli."
+       },
+       {
+        "code": "BVA 505E",
+        "name": "Database Management&Big Data"
+       },
+       {
+        "code": "BVA 506E",
+        "name": "Optimization&Decision Modell."
+       },
+       {
+        "code": "BVA 507",
+        "name": "Business Analytics for Manager"
+       },
+       {
+        "code": "BVA 509E",
+        "name": "Machine Learni.with Big Data"
+       },
+       {
+        "code": "BVA 512E",
+        "name": "Simulation Modelling"
+       },
+       {
+        "code": "BVA 527",
+        "name": "Mathematics for Machine Lear."
+       },
+       {
+        "code": "END 513",
+        "name": "İleri Istatistiksel Analiz"
+       },
+       {
+        "code": "END 574E",
+        "name": "Business Intell.&Mac.Lear.App."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Zorunlu Seçmeli Ders IV",
+      "options": [
+       {
+        "code": "BVA 501",
+        "name": "Advances in Data Science"
+       },
+       {
+        "code": "BVA 502E",
+        "name": "Data Mining for Business"
+       },
+       {
+        "code": "BVA 503E",
+        "name": "Applied Statistics for Busine."
+       },
+       {
+        "code": "BVA 504E",
+        "name": "Big Data Technologies&Appli."
+       },
+       {
+        "code": "BVA 505E",
+        "name": "Database Management&Big Data"
+       },
+       {
+        "code": "BVA 506E",
+        "name": "Optimization&Decision Modell."
+       },
+       {
+        "code": "BVA 507",
+        "name": "Business Analytics for Manager"
+       },
+       {
+        "code": "BVA 509E",
+        "name": "Machine Learni.with Big Data"
+       },
+       {
+        "code": "BVA 512E",
+        "name": "Simulation Modelling"
+       },
+       {
+        "code": "BVA 527",
+        "name": "Mathematics for Machine Lear."
+       },
+       {
+        "code": "END 513",
+        "name": "İleri Istatistiksel Analiz"
+       },
+       {
+        "code": "END 574E",
+        "name": "Business Intell.&Mac.Lear.App."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders I",
+      "options": [
+       {
+        "code": "BVA 501",
+        "name": "Advances in Data Science"
+       },
+       {
+        "code": "BVA 502E",
+        "name": "Data Mining for Business"
+       },
+       {
+        "code": "BVA 503E",
+        "name": "Applied Statistics for Busine."
+       },
+       {
+        "code": "BVA 504E",
+        "name": "Big Data Technologies&Appli."
+       },
+       {
+        "code": "BVA 505E",
+        "name": "Database Management&Big Data"
+       },
+       {
+        "code": "BVA 506E",
+        "name": "Optimization&Decision Modell."
+       },
+       {
+        "code": "BVA 507",
+        "name": "Business Analytics for Manager"
+       },
+       {
+        "code": "BVA 508E",
+        "name": "Data Visualization and Commun."
+       },
+       {
+        "code": "BVA 509E",
+        "name": "Machine Learni.with Big Data"
+       },
+       {
+        "code": "BVA 510E",
+        "name": "Data Structures and Algorithms"
+       },
+       {
+        "code": "BVA 511E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "BVA 512E",
+        "name": "Simulation Modelling"
+       },
+       {
+        "code": "BVA 514E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "BVA 515E",
+        "name": "Image Analysis"
+       },
+       {
+        "code": "BVA 516E",
+        "name": "Customer Analytics"
+       },
+       {
+        "code": "BVA 517E",
+        "name": "Text Mining for Business"
+       },
+       {
+        "code": "BVA 518E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "BVA 519E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "BVA 520E",
+        "name": "Pricing and Revenue Management"
+       },
+       {
+        "code": "BVA 521E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "BVA 523E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "BVA 525E",
+        "name": "Social Network Analy.for Bus."
+       },
+       {
+        "code": "BVA 527",
+        "name": "Mathematics for Machine Lear."
+       },
+       {
+        "code": "BVA 528E",
+        "name": "Deep Learning App in Business"
+       },
+       {
+        "code": "BVA 529E",
+        "name": "Reinforce.Lear.for Busi.App."
+       },
+       {
+        "code": "BVA 530E",
+        "name": "Legal Aspec.of Big Dat&Bus.An."
+       },
+       {
+        "code": "BVA 531E",
+        "name": "Marketing Analytics"
+       },
+       {
+        "code": "BVA 533E",
+        "name": "Human Resources Analytics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders II",
+      "options": [
+       {
+        "code": "BVA 501",
+        "name": "Advances in Data Science"
+       },
+       {
+        "code": "BVA 502E",
+        "name": "Data Mining for Business"
+       },
+       {
+        "code": "BVA 503E",
+        "name": "Applied Statistics for Busine."
+       },
+       {
+        "code": "BVA 504E",
+        "name": "Big Data Technologies&Appli."
+       },
+       {
+        "code": "BVA 505E",
+        "name": "Database Management&Big Data"
+       },
+       {
+        "code": "BVA 506E",
+        "name": "Optimization&Decision Modell."
+       },
+       {
+        "code": "BVA 507",
+        "name": "Business Analytics for Manager"
+       },
+       {
+        "code": "BVA 508E",
+        "name": "Data Visualization and Commun."
+       },
+       {
+        "code": "BVA 509E",
+        "name": "Machine Learni.with Big Data"
+       },
+       {
+        "code": "BVA 510E",
+        "name": "Data Structures and Algorithms"
+       },
+       {
+        "code": "BVA 511E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "BVA 512E",
+        "name": "Simulation Modelling"
+       },
+       {
+        "code": "BVA 514E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "BVA 515E",
+        "name": "Image Analysis"
+       },
+       {
+        "code": "BVA 516E",
+        "name": "Customer Analytics"
+       },
+       {
+        "code": "BVA 517E",
+        "name": "Text Mining for Business"
+       },
+       {
+        "code": "BVA 518E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "BVA 519E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "BVA 520E",
+        "name": "Pricing and Revenue Management"
+       },
+       {
+        "code": "BVA 521E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "BVA 523E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "BVA 525E",
+        "name": "Social Network Analy.for Bus."
+       },
+       {
+        "code": "BVA 527",
+        "name": "Mathematics for Machine Lear."
+       },
+       {
+        "code": "BVA 528E",
+        "name": "Deep Learning App in Business"
+       },
+       {
+        "code": "BVA 529E",
+        "name": "Reinforce.Lear.for Busi.App."
+       },
+       {
+        "code": "BVA 530E",
+        "name": "Legal Aspec.of Big Dat&Bus.An."
+       },
+       {
+        "code": "BVA 531E",
+        "name": "Marketing Analytics"
+       },
+       {
+        "code": "BVA 533E",
+        "name": "Human Resources Analytics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders III",
+      "options": [
+       {
+        "code": "BVA 501",
+        "name": "Advances in Data Science"
+       },
+       {
+        "code": "BVA 502E",
+        "name": "Data Mining for Business"
+       },
+       {
+        "code": "BVA 503E",
+        "name": "Applied Statistics for Busine."
+       },
+       {
+        "code": "BVA 504E",
+        "name": "Big Data Technologies&Appli."
+       },
+       {
+        "code": "BVA 505E",
+        "name": "Database Management&Big Data"
+       },
+       {
+        "code": "BVA 506E",
+        "name": "Optimization&Decision Modell."
+       },
+       {
+        "code": "BVA 507",
+        "name": "Business Analytics for Manager"
+       },
+       {
+        "code": "BVA 508E",
+        "name": "Data Visualization and Commun."
+       },
+       {
+        "code": "BVA 509E",
+        "name": "Machine Learni.with Big Data"
+       },
+       {
+        "code": "BVA 510E",
+        "name": "Data Structures and Algorithms"
+       },
+       {
+        "code": "BVA 511E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "BVA 512E",
+        "name": "Simulation Modelling"
+       },
+       {
+        "code": "BVA 514E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "BVA 515E",
+        "name": "Image Analysis"
+       },
+       {
+        "code": "BVA 516E",
+        "name": "Customer Analytics"
+       },
+       {
+        "code": "BVA 517E",
+        "name": "Text Mining for Business"
+       },
+       {
+        "code": "BVA 518E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "BVA 519E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "BVA 520E",
+        "name": "Pricing and Revenue Management"
+       },
+       {
+        "code": "BVA 521E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "BVA 523E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "BVA 525E",
+        "name": "Social Network Analy.for Bus."
+       },
+       {
+        "code": "BVA 527",
+        "name": "Mathematics for Machine Lear."
+       },
+       {
+        "code": "BVA 528E",
+        "name": "Deep Learning App in Business"
+       },
+       {
+        "code": "BVA 529E",
+        "name": "Reinforce.Lear.for Busi.App."
+       },
+       {
+        "code": "BVA 530E",
+        "name": "Legal Aspec.of Big Dat&Bus.An."
+       },
+       {
+        "code": "BVA 531E",
+        "name": "Marketing Analytics"
+       },
+       {
+        "code": "BVA 533E",
+        "name": "Human Resources Analytics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçime Bağlı Ders IV",
+      "options": [
+       {
+        "code": "BVA 501",
+        "name": "Advances in Data Science"
+       },
+       {
+        "code": "BVA 502E",
+        "name": "Data Mining for Business"
+       },
+       {
+        "code": "BVA 503E",
+        "name": "Applied Statistics for Busine."
+       },
+       {
+        "code": "BVA 504E",
+        "name": "Big Data Technologies&Appli."
+       },
+       {
+        "code": "BVA 505E",
+        "name": "Database Management&Big Data"
+       },
+       {
+        "code": "BVA 506E",
+        "name": "Optimization&Decision Modell."
+       },
+       {
+        "code": "BVA 507",
+        "name": "Business Analytics for Manager"
+       },
+       {
+        "code": "BVA 508E",
+        "name": "Data Visualization and Commun."
+       },
+       {
+        "code": "BVA 509E",
+        "name": "Machine Learni.with Big Data"
+       },
+       {
+        "code": "BVA 510E",
+        "name": "Data Structures and Algorithms"
+       },
+       {
+        "code": "BVA 511E",
+        "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "BVA 512E",
+        "name": "Simulation Modelling"
+       },
+       {
+        "code": "BVA 514E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "BVA 515E",
+        "name": "Image Analysis"
+       },
+       {
+        "code": "BVA 516E",
+        "name": "Customer Analytics"
+       },
+       {
+        "code": "BVA 517E",
+        "name": "Text Mining for Business"
+       },
+       {
+        "code": "BVA 518E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "BVA 519E",
+        "name": "Heuristic Optimization"
+       },
+       {
+        "code": "BVA 520E",
+        "name": "Pricing and Revenue Management"
+       },
+       {
+        "code": "BVA 521E",
+        "name": "Supply Chain Analytics"
+       },
+       {
+        "code": "BVA 523E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "BVA 525E",
+        "name": "Social Network Analy.for Bus."
+       },
+       {
+        "code": "BVA 527",
+        "name": "Mathematics for Machine Lear."
+       },
+       {
+        "code": "BVA 528E",
+        "name": "Deep Learning App in Business"
+       },
+       {
+        "code": "BVA 529E",
+        "name": "Reinforce.Lear.for Busi.App."
+       },
+       {
+        "code": "BVA 530E",
+        "name": "Legal Aspec.of Big Dat&Bus.An."
+       },
+       {
+        "code": "BVA 531E",
+        "name": "Marketing Analytics"
+       },
+       {
+        "code": "BVA 533E",
+        "name": "Human Resources Analytics"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

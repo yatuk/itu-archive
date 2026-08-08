@@ -8,6 +8,7 @@ import assert from 'node:assert/strict';
 import { fold, termLabel, buildingOf } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
 import { sortValue, parseWhen, timeBucket, buildTimetable } from '../views/courses.js';
+import { parseReq, reqAlts } from '../prereq.js';
 
 test('fold Türkçe karakterleri ASCII katar', () => {
   assert.equal(fold('İTÜ Mühendislik ŞŞ ĞĞ'), 'itu muhendislik ss gg');
@@ -95,6 +96,45 @@ test('timeBucket saat dilimini doğru kovaya koyar', () => {
   assert.equal(timeBucket(16 * 60 + 59), 'ogle');
   assert.equal(timeBucket(17 * 60), 'aksam');
   assert.equal(timeBucket(20 * 60), 'aksam');
+});
+
+// ---- Önşart AND/OR ayrıştırıcısı ----
+
+test('parseReq VEYA alternatiflerini ayırır, hepsi "biri yeter" olur', () => {
+  const tree = parseReq('( MAT 102 MIN. DD Veya MAT 102E MIN. DD ) Veya ( MAT 104 MIN. DD Veya MAT 104E MIN. DD )');
+  assert.equal(tree.type, 'or');
+  assert.equal(tree.items.length, 2);
+  const alts = [...reqAlts(tree)].sort();
+  assert.deepEqual(alts, ['MAT 102', 'MAT 102E', 'MAT 104', 'MAT 104E']);
+});
+
+test('parseReq VE tümünü gerektirir, alternatif yok', () => {
+  const tree = parseReq('MAT 101 MIN. DD Ve MAT 102 MIN. DD');
+  assert.equal(tree.type, 'and');
+  assert.equal(reqAlts(tree).size, 0);
+});
+
+test('parseReq karışık yapı: (A Ve B) Veya C', () => {
+  const tree = parseReq('( MAT 101 MIN. DD Ve MAT 102 MIN. DD ) Veya MAT 103 MIN. DD');
+  assert.equal(tree.type, 'or');
+  const alts = [...reqAlts(tree)].sort();
+  // A+B birlikte bir seçenek, C tek başına bir seçenek — hiçbiri bireysel zorunlu değil.
+  assert.deepEqual(alts, ['MAT 101', 'MAT 102', 'MAT 103']);
+});
+
+test('parseReq tek ders ve boş girdi', () => {
+  const tree = parseReq('MAT 101');
+  assert.equal(tree.type, 'code');
+  assert.equal(tree.code, 'MAT 101');
+  assert.equal(reqAlts(tree).size, 0);
+  assert.equal(parseReq(''), null);
+  assert.equal(parseReq('   '), null);
+});
+
+test('parseReq gerçek OBS örneği (AKM 202)', () => {
+  const expr = '( MAT 102 MIN. FF Veya MAT 102E MIN. FF ) Veya ( MAT 104 MIN. FF Veya MAT 104E MIN. FF )';
+  const alts = [...reqAlts(parseReq(expr))].sort();
+  assert.deepEqual(alts, ['MAT 102', 'MAT 102E', 'MAT 104', 'MAT 104E']);
 });
 
 // Row biçimi: [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan]

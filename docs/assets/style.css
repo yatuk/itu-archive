@@ -410,6 +410,21 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 }
 .pg-empty { color: var(--dimmer); font-size: 13px; }
 
+/* Önşart mantık ağacı: VE/VEYA grupları iç içe, biri yeter / hepsi gerekli */
+.pg-legend { color: var(--dimmer); font-size: 11px; margin: 0 0 10px; }
+.req-tree { list-style: none; margin: 0 0 6px; padding: 0; font-size: 13px; }
+.req-tree ul {
+  list-style: none; margin: 4px 0 6px; padding-left: 14px;
+  border-left: 1px solid var(--line-hot);
+}
+.req-item { margin: 2px 0; }
+.req-op { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+.req-or > .req-op { color: var(--amber); }
+.req-and > .req-op { color: var(--cyan); }
+.req-code { color: var(--cyan); }
+.req-code em { color: var(--dimmer); font-style: normal; font-size: 11px; }
+.req-text { color: var(--dim); }
+
 .pg-chip {
   font: inherit; cursor: pointer; background: var(--panel); color: var(--cyan);
   border: 1px solid var(--line-hot); padding: 5px 9px; font-size: 12px;

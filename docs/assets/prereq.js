@@ -189,7 +189,9 @@ import { esc, fold } from './core/utils.js';
         const dim = focused && !related;
         drawEdge(ctx, this.worldToScreen(e.from.x, e.from.y), this.worldToScreen(e.to.x, e.to.y), r,
           dim ? 'rgba(140,160,150,0.08)' : (related ? 'rgba(0,255,156,0.85)' : 'rgba(120,200,170,0.4)'),
-          related ? 1.8 : 1.1);
+          related ? 1.8 : 1.1,
+          // Kesikli ok: önşart bir VEYA grubunun parçası — biri yeterli, hepsi değil.
+          e.alt && !dim);
       }
 
       const byColor = new Map();
@@ -309,10 +311,13 @@ import { esc, fold } from './core/utils.js';
       } else {
         const req = (this.byTo.get(code) || []).sort();
         const dep = (this.byFrom.get(code) || []).sort();
+        // Ham ifade yerine ayrıştırılmış VE/VEYA ağacı: "hepsi gerekli" ile
+        // "biri yeterli" ayrımı açıkça görünsün.
+        const tree = n.requirement ? parseReq(n.requirement) : null;
         this.detail.innerHTML = `
           <h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3>
-          ${n.requirement ? `<pre class="pg-req">${esc(n.requirement)}</pre>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
-          ${req.length ? `<h4>Önşartları (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
+          ${tree ? `<h4>Önşartı</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
+          ${req.length ? `<h4>Gereken dersler (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
           ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}`;
       }
       this.detail.querySelectorAll('.pg-chip:not([disabled])').forEach((b) =>
@@ -379,15 +384,17 @@ import { esc, fold } from './core/utils.js';
 
   // drawEdge, iki sütun arasında yumuşak bir eğri çizer ve hedefe küçük bir
   // ok ucu ekler — önşart ilişkisinin yönü (A, B'nin önşartıysa A→B) her
-  // zaman görünsün diye.
-  function drawEdge(ctx, [x1, y1], [x2, y2], r, color, width) {
+  // zaman görünsün diye. dash=true ise "alternatif" (VEYA) kenarı çizilir.
+  function drawEdge(ctx, [x1, y1], [x2, y2], r, color, width, dash) {
     const midX = (x1 + x2) / 2;
     ctx.beginPath();
     ctx.moveTo(x1 + r * 0.7, y1);
     ctx.bezierCurveTo(midX, y1, midX, y2, x2 - r * 0.9, y2);
     ctx.strokeStyle = color;
     ctx.lineWidth = width;
+    if (dash) ctx.setLineDash([4, 3]);
     ctx.stroke();
+    ctx.setLineDash([]);
 
     const ah = 5;
     const ang = Math.atan2(y2 - y1, x2 - x1 - r);
@@ -414,6 +421,83 @@ import { esc, fold } from './core/utils.js';
     return s.length > max ? s.slice(0, max - 1) + '…' : s;
   }
 
+  // ---- Önşart ifadesi ayrıştırıcısı ----
+  // OBS ifadeleri "Ve"/"Veya" operatörleri ve parantezlerle gelir:
+  //   "( MAT 102 MIN. DD Veya MAT 102E MIN. DD ) Veya ( MAT 104 MIN. DD ... )"
+  // Ve, Veya'dan sıkı bağlanır (AND > OR). Sonuç ağaçtır:
+  //   { type:'or'|'and', items:[...] } veya { type:'code', code, detail }
+  export function parseReq(text) {
+    text = String(text || '').trim();
+    if (!text) return null;
+    // Tüm ifadeyi saran dış parantezleri at.
+    while (text[0] === '(' && matchingClose(text) === text.length - 1) {
+      text = text.slice(1, -1).trim();
+    }
+    const orParts = splitTop(text, 'Veya');
+    if (orParts.length > 1) return { type: 'or', items: orParts.map(parseReq) };
+    const andParts = splitTop(text, 'Ve');
+    if (andParts.length > 1) return { type: 'and', items: andParts.map(parseReq) };
+    const m = text.match(/^([A-ZÇĞİÖŞÜ]{2,5}\s\d{3}[A-Z]{0,2})(.*)$/);
+    if (m) return { type: 'code', code: m[1], detail: m[2].trim() };
+    return { type: 'text', raw: text };
+  }
+
+  function matchingClose(s) {
+    let d = 0;
+    for (let i = 0; i < s.length; i++) {
+      if (s[i] === '(') d++;
+      else if (s[i] === ')') { d--; if (d === 0) return i; }
+    }
+    return -1;
+  }
+
+  // splitTop, bir operatörü parantez derinliği 0'da böler (iç grupları bozmaz).
+  function splitTop(s, op) {
+    const parts = [];
+    let depth = 0, last = 0;
+    const re = new RegExp(`\\(|\\)|\\b${op}\\b`, 'g');
+    let m;
+    while ((m = re.exec(s))) {
+      const ch = m[0];
+      if (ch === '(') depth++;
+      else if (ch === ')') depth--;
+      else if (depth === 0) { parts.push(s.slice(last, m.index).trim()); last = m.index + m[0].length; }
+    }
+    parts.push(s.slice(last).trim());
+    return parts.filter((p) => p.length);
+  }
+
+  // reqAlts, VEYA grubunun içindeki tüm kodları "alternatif" işaretler — bunlar
+  // bireysel zorunlu değildir, tek bir seçenek yeterlidir. Saf — test edilebilir.
+  export function reqAlts(tree, out = new Set()) {
+    if (!tree) return out;
+    if (tree.type === 'or') {
+      const mark = (n) => {
+        if (n.type === 'code') out.add(n.code);
+        else if (n.items) n.items.forEach(mark);
+      };
+      tree.items.forEach(mark);
+    } else if (tree.items) {
+      tree.items.forEach((n) => reqAlts(n, out));
+    }
+    return out;
+  }
+
+  // renderReqTree, önşart ağacını okunur HTML'e çevirir: VE/VEYA grupları
+  // iç içe listeler halinde, biri yeter / hepsi gerekli etiketleriyle.
+  function renderReqTree(tree) {
+    if (tree.type === 'code') {
+      return `<li class="req-item req-code">${esc(tree.code)}${tree.detail ? ` <em>${esc(tree.detail)}</em>` : ''}</li>`;
+    }
+    if (tree.type === 'text') return `<li class="req-item req-text">${esc(tree.raw)}</li>`;
+    const label = tree.type === 'or' ? 'VEYA — biri yeterli' : 'VE — hepsi gerekli';
+    const cls = tree.type === 'or' ? 'req-or' : 'req-and';
+    return `<li class="req-item req-group ${cls}">
+      <span class="req-op">${label}</span>
+      <ul>${tree.items.map(renderReqTree).join('')}</ul>
+    </li>`;
+  }
+
   // ---- Bölüm seçici ve veri hazırlama ----
 
   let graph = null;
@@ -434,7 +518,7 @@ import { esc, fold } from './core/utils.js';
     return { graph, programs };
   }
 
-  function buildProgramGraph(plan, prereqEdges) {
+  function buildProgramGraph(plan, prereqEdges, reqMap) {
     const nodes = [];
     const seen = new Set();
     const laneTitles = plan.semesters.map((s) => s.title.replace('. Yarıyıl', '. Dönem'));
@@ -450,7 +534,17 @@ import { esc, fold } from './core/utils.js';
       });
     });
     const codeSet = new Set(nodes.map((n) => n.code));
-    const edges = prereqEdges.filter((e) => codeSet.has(e.from) && codeSet.has(e.to));
+
+    // Hedef başına "alternatif" kümesini bir kez hesapla: o dersin önşart
+    // ifadesindeki VEYA gruplarına düşen kodlar zorunlu değildir (biri yeter).
+    const altsByTarget = new Map();
+    for (const target of codeSet) {
+      const t = reqMap && reqMap.get(target);
+      altsByTarget.set(target, t ? reqAlts(parseReq(t)) : new Set());
+    }
+    const edges = prereqEdges
+      .filter((e) => codeSet.has(e.from) && codeSet.has(e.to))
+      .map((e) => ({ ...e, alt: altsByTarget.get(e.to) ? altsByTarget.get(e.to).has(e.from) : false }));
     return { nodes, edges, laneTitles };
   }
 
@@ -465,7 +559,7 @@ import { esc, fold } from './core/utils.js';
       reqByCode = { edges: g.edges, req: new Map(g.nodes.filter((n) => n.requirement).map((n) => [n.code, n.requirement])) };
     }
 
-    const { nodes, edges, laneTitles } = buildProgramGraph(plan, reqByCode.edges);
+    const { nodes, edges, laneTitles } = buildProgramGraph(plan, reqByCode.edges, reqByCode.req);
     for (const n of nodes) {
       const r = reqByCode.req.get(n.code);
       if (r) n.requirement = r;

@@ -15,13 +15,12 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-(function () {
+import { esc, fold } from './core/utils.js';
+
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
     '#fb923c', '#facc15', '#a3e635', '#4ade80', '#2dd4bf', '#60a5fa', '#e879f9', '#94a3b8',
   ];
-  const FOLD = { 'İ': 'i', 'I': 'i', 'ı': 'i', 'Ş': 's', 'ş': 's', 'Ğ': 'g', 'ğ': 'g', 'Ü': 'u', 'ü': 'u', 'Ö': 'o', 'ö': 'o', 'Ç': 'c', 'ç': 'c' };
-  const fold = (s) => String(s).replace(/[İIıŞşĞğÜüÖöÇç]/g, (c) => FOLD[c]).toLowerCase();
 
   function hueOf(key) {
     let h = 0;
@@ -402,10 +401,6 @@
     return s.length > max ? s.slice(0, max - 1) + '…' : s;
   }
 
-  function esc(s) {
-    return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  }
-
   // ---- Bölüm seçici ve veri hazırlama ----
 
   let graph = null;
@@ -464,14 +459,17 @@
 
   function renderProgramPicker(root, programs) {
     const sel = root.querySelector('.pg-program-select');
-    const byFaculty = new Map();
+    const LEVEL_TR = { OL: 'Önlisans', LS: 'Lisans', YL: 'Yüksek Lisans', DR: 'Doktora' };
+    const byGroup = new Map();
     for (const p of programs) {
-      if (!byFaculty.has(p.faculty)) byFaculty.set(p.faculty, []);
-      byFaculty.get(p.faculty).push(p);
+      const lvl = LEVEL_TR[p.level] || p.level || 'Lisans';
+      const key = p.faculty ? `${p.faculty} — ${lvl}` : lvl;
+      if (!byGroup.has(key)) byGroup.set(key, []);
+      byGroup.get(key).push(p);
     }
     let html = '<option value="">Bölüm seçiniz…</option>';
-    for (const [faculty, ps] of byFaculty) {
-      html += `<optgroup label="${esc(faculty)}">` +
+    for (const [group, ps] of byGroup) {
+      html += `<optgroup label="${esc(group)}">` +
         ps.map((p) => `<option value="${esc(p.code)}">${esc(p.name)}</option>`).join('') +
         '</optgroup>';
     }
@@ -480,7 +478,7 @@
   }
 
   let inited = false;
-  window.PrereqGraph = {
+  export const PrereqGraph = {
     async init(rootSelector) {
       const root = document.querySelector(rootSelector);
       const { programs } = await ensureData(root);
@@ -502,4 +500,3 @@
       }
     },
   };
-})();

@@ -18,7 +18,7 @@ dönem, 64.309 şube kaydı duruyor içinde. Akademik takvim de dahil.
 | `obs.itu.edu.tr/public/DersProgram` | Aktif dönem. 4 program seviyesi (OL/LS/LU/LUI), 337 branş kodu |
 | `obs.itu.edu.tr/public/FinalTakvimi` | Final ve ek sınav takvimi |
 | `obs.itu.edu.tr/public/GenelTanimlamalar/OnsartAra` | Katalogdaki her dersin önşartı |
-| `obs.itu.edu.tr/public/DersPlan` | Her lisans programının güncel müfredatı, dönem dönem |
+| `obs.itu.edu.tr/public/DersPlan` | Her programın güncel müfredatı, dönem dönem (önlisans `_OL`, lisans `_LS`, yüksek lisans `_YL`, doktora `_DR`) |
 | `takvim.sis.itu.edu.tr` | 4 akademik yılın takvimi |
 | Tarihsel dökümler | 2016-2017'ye kadar geçmiş dönemler, `-backfill` ile |
 
@@ -43,7 +43,16 @@ her zaman görünür (tıklamaya gerek yok). Bir düğüme tıklayınca geriye d
 önşartlar, ileriye doğru o dersi önşart olarak isteyen dersler ayrıca parlıyor.
 Seçmeli ders slotları tek bir düğüm (bazı havuzlarda 150'den fazla alternatif
 var, hepsini tek tek düğüm yapmak grafiği okunmaz hale getiriyordu); tıklayınca
-alternatifler panelde listeleniyor.
+alternatifler panelde listeleniyor. Program seçici fakülte içinde seviyeye göre
+gruplanıyor; yüksek lisans ve doktora programları tek dönemli (dönem ayrımı
+olmayan) listedir.
+
+Dersler sekmesinde tablo kolonları sıralanabiliyor, görünen sonuç tek tıkla CSV
+olarak indirilebiliyor (Excel için BOM'lu) ve arama/filtre durumu URL'ye
+yazılıyor — filtrelediğiniz görünümün bağlantısını paylaşabilirsiniz. Geçmiş
+sekmesinde bir dersin detayında, o dersin kontenjan ve doluluk zaman çizelgesi
+dönem dönem küçük bir grafikle gösteriliyor. Sınavlar sekmesinde tür filtresinin
+yanına bina filtresi eklendi (sınav yerinden çıkarılıyor).
 
 İlk denemede bu grafik force-directed bir yığındı (Obsidian'ın grafik görünümü
 gibi organik ama kaotik), ve kenarlar yalnızca bir düğüme tıklanınca netleşiyordu
@@ -56,7 +65,8 @@ varsayılan olarak da net.
 go run ./cmd/scrape            # ders programı, sınav takvimi, önşartlar, akademik takvim
 go run ./cmd/scrape -backfill  # geçmiş dönemleri de al, bir kez yeterli
 go run ./cmd/quota             # kontenjan doluluğundan tek ölçüm al
-go run ./cmd/curriculum        # tüm lisans programlarının müfredatını çek
+go run ./cmd/curriculum        # tüm programların müfredatını çek (önlisans + lisansüstü dahil)
+go run ./cmd/validate          # docs/data bütünlüğünü denetle (kopya CRN, sarkan kenar...)
 ```
 
 Her şey `docs/data` altına yazılıyor. Tam tarama iki dakika sürüyor. Bayraklar:
@@ -67,6 +77,9 @@ programı günde bir kez yeterli, kontenjan kayıt haftasında yarım saatte bir
 anlamlı, müfredat ise dönemde belki bir kez değişiyor (`cmd/curriculum -only
 BLG_LS` ile tek program test edilebilir). `cmd/quota` değişen bir şey yoksa
 dosyaya hiç dokunmuyor, o yüzden sakin dönemlerde boş commit birikmiyor.
+`cmd/validate` yalnızca okur: kopya CRN, meta/şube sayısı tutarsızlığı, önşart
+grafiğinde olmayan düğüme giden kenar gibi bozuklukları raporlar; hata varsa
+sıfırdan farklı kodla çıkar, workflow'a eklemeye uygun.
 
 Siteyi yerelde açmak için:
 
@@ -187,10 +200,11 @@ bilgisi ancak bugünden sonraki taramalarda birikecek.
 Geçmiş dönemlerde seviye bilgisi (LS/LU) bugünkü branş listesinden tahmin ediliyor.
 O tarihten sonra kapanmış branşlarda boş kalabilir.
 
-Müfredat 128 lisans programından 106'sında çekilebildi; kalan 22'si (Siber
+Müfredat lisans programlarında 128'in 106'sında çekilebildi; kalan 22'si (Siber
 Güvenlik Mühendisliği, Yapay Zeka gibi yeni açılan bazı programlar) OBS'de henüz
-yayınlanmış bir plan sürümüne sahip değil. Önlisans ve lisansüstü programlar
-şimdilik kapsam dışı.
+yayınlanmış bir plan sürümüne sahip değil. Önlisans (1), yüksek lisans (3) ve
+doktora (4) programları da çekiliyor; ikinci öğretim (ID 5) kodları yüksek
+lisansla (_YL) çakıştığı için kapsam dışı.
 
 ## Uyarı
 

@@ -10,6 +10,12 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://yatuk.github.io/itu-archive/">
 <meta name="color-scheme" content="dark">
+<script>
+/* Tema seçimini çizimden önce uygula (flash önleme). */
+(function () {
+  try { var t = localStorage.getItem('itu-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+})();
+</script>
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="İTÜ Ders Arşivi">
@@ -103,6 +109,14 @@
    <div><dt>son tarama</dt><dd id="stat-scraped">—</dd></div>
    <div><dt>arşivlenen dönem</dt><dd id="stat-terms">—</dd></div>
   </dl>
+  <div class="theme-pick">
+   <label for="theme">görünüm</label>
+   <select id="theme" aria-label="Görünüm teması">
+    <option value="dark">fosfor</option>
+    <option value="light">açık</option>
+    <option value="contrast">yüksek kontrast</option>
+   </select>
+  </div>
  </div>
 </header>
 
@@ -133,6 +147,17 @@
       <option>Pazartesi</option><option>Salı</option><option>Çarşamba</option>
       <option>Perşembe</option><option>Cuma</option><option>Cumartesi</option><option>Pazar</option>
     </select></label>
+    <label>saat <select id="f-time">
+      <option value="">hepsi</option>
+      <option value="sabah">sabah (&lt;12:00)</option>
+      <option value="ogle">öğle (12:00-17:00)</option>
+      <option value="aksam">akşam (≥17:00)</option>
+    </select></label>
+    <label>seviye <select id="f-level">
+      <option value="">hepsi</option>
+      <option>OL</option><option>LS</option><option>LU</option><option>LUI</option>
+    </select></label>
+    <label>yöntem <select id="f-method"><option value="">hepsi</option></select></label>
     <label class="check"><input type="checkbox" id="f-open"> yalnızca kontenjanı olanlar</label>
     <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir">CSV indir</button>
     <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle">zaman çizelgesi</button>
@@ -141,10 +166,20 @@
 
   <p class="resultline" id="resultline" aria-live="polite">—</p>
 
+  <div id="chips" class="chips" hidden aria-label="Aktif filtreler"></div>
+
+  <div class="sepet" id="sepet" hidden>
+   <span id="sel-count"></span>
+   <button type="button" id="sel-csv" class="btn-ghost">seçilenleri CSV</button>
+   <button type="button" id="sel-clear" class="btn-ghost">temizle</button>
+   <label class="check"><input type="checkbox" id="sel-only"> yalnızca seçilenleri çizelgede göster</label>
+  </div>
+
   <div class="tablewrap">
    <table id="results" aria-label="Ders listesi">
     <thead>
      <tr>
+      <th class="sel"><input type="checkbox" id="sel-all" aria-label="Tümünü seç"></th>
       <th data-sort="crn" class="sortable" scope="col"><button type="button" class="th-sort">CRN</button></th>
       <th data-sort="code" class="sortable" scope="col"><button type="button" class="th-sort">Ders</button></th>
       <th data-sort="name" class="sortable" scope="col"><button type="button" class="th-sort">Adı</button></th>
@@ -307,6 +342,13 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
  </section>
 
 </main>
+
+<div id="detail-panel" class="detail-panel" hidden role="dialog" aria-modal="true" aria-labelledby="detail-title">
+ <div class="detail-box">
+  <button type="button" class="detail-close" id="detail-close" aria-label="Kapat">✕</button>
+  <div id="detail-content"></div>
+ </div>
+</div>
 
 <footer class="wrap">
  <span id="foot-build">—</span> ·

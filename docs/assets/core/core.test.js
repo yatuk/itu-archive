@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 
 import { fold, termLabel, buildingOf } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
-import { sortValue, parseWhen, buildTimetable } from '../views/courses.js';
+import { sortValue, parseWhen, timeBucket, buildTimetable } from '../views/courses.js';
 
 test('fold Türkçe karakterleri ASCII katar', () => {
   assert.equal(fold('İTÜ Mühendislik ŞŞ ĞĞ'), 'itu muhendislik ss gg');
@@ -86,6 +86,15 @@ test('parseWhen bozuk/boş girdilerde sessizce geçer', () => {
   assert.equal(parseWhen('Ders saati ilan edilecek').length, 0);
   assert.equal(parseWhen('Pazartesi').length, 0);
   assert.equal(parseWhen('08:30/12:29').length, 0);
+});
+
+test('timeBucket saat dilimini doğru kovaya koyar', () => {
+  assert.equal(timeBucket(8 * 60 + 30), 'sabah');
+  assert.equal(timeBucket(11 * 60 + 59), 'sabah');
+  assert.equal(timeBucket(12 * 60), 'ogle');
+  assert.equal(timeBucket(16 * 60 + 59), 'ogle');
+  assert.equal(timeBucket(17 * 60), 'aksam');
+  assert.equal(timeBucket(20 * 60), 'aksam');
 });
 
 // Row biçimi: [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan]

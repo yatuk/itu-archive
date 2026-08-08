@@ -14,4 +14,5 @@ export const state = {
   hist: null,      // {codes, names} arama listeleri
   quota: null,     // aktif dönemin dolma özeti, CRN -> kayıt
   sort: { key: 'crn', dir: 1 },
+  selected: new Set(), // seçili şubeler, "branş|crn" anahtarları
 };

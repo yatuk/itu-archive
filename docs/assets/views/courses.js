@@ -1,6 +1,10 @@
-// Dersler görünümü: dönem arama/filtre/sıralama, satır detayı, CSV indirme ve
-// paylaşılabilir URL durumu. Tüm veri state.rows (arama indeksi) üzerinden
-// çalışır; tam kayıt yalnızca detay açılınca ilgili branş dosyasından gelir.
+// Dersler görünümü: dönem arama/filtre/sıralama, şube seçimi (sepet), zaman
+// çizelgesi, detay paneli, CSV indirme ve paylaşılabilir URL durumu.
+//
+// Tüm veri state.rows (arama indeksi) üzerinden çalışır; tam kayıt yalnızca
+// detay açılınca ilgili branş dosyasından gelir. Arama indeksi 10 alanlıdır:
+// [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
+// son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
 import { $, getJSON, esc, fold, debounce, downloadCSV, setStatus } from '../core/utils.js';
 import { state } from '../core/store.js';
@@ -8,21 +12,42 @@ import { fillBar } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
 
 const PAGE = 200;
+const TIME_LABEL = { sabah: 'sabah (<12:00)', ogle: 'öğle (12:00-17:00)', aksam: 'akşam (≥17:00)' };
 
 export function initCourses() {
   $('#q').addEventListener('input', debounce(applyFilters, 120));
   $('#f-branch').addEventListener('change', applyFilters);
   $('#f-day').addEventListener('change', applyFilters);
+  $('#f-time').addEventListener('change', applyFilters);
+  $('#f-level').addEventListener('change', applyFilters);
+  $('#f-method').addEventListener('change', applyFilters);
   $('#f-open').addEventListener('change', applyFilters);
   $('#f-term').addEventListener('change', () => loadTerm($('#f-term').value));
   $('#more').addEventListener('click', () => renderRows(true));
   $('#csv').addEventListener('click', exportCSV);
   $('#tt-toggle').addEventListener('click', toggleTimetable);
+  $('#sel-all').addEventListener('change', () => {
+    const on = $('#sel-all').checked;
+    for (const r of state.filtered) {
+      if (on) state.selected.add(selKey(r));
+      else state.selected.delete(selKey(r));
+    }
+    for (const cb of document.querySelectorAll('#rows .row-sel')) cb.checked = on;
+    updateSelection();
+  });
+  $('#sel-csv').addEventListener('click', exportSelectedCSV);
+  $('#sel-clear').addEventListener('click', clearSelection);
+  $('#sel-only').addEventListener('change', () => { if (ttOn) renderTimetable(); });
+  $('#detail-close').addEventListener('click', closeDetail);
+  $('#detail-panel').addEventListener('click', (e) => { if (e.target.id === 'detail-panel') closeDetail(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#detail-panel').hidden) closeDetail(); });
   wireSort();
 }
 
 export async function loadTerm(slug) {
   state.termSlug = slug;
+  state.selected.clear(); // seçim döneme özeldir
+  updateSelection();
   setStatus($('#resultline'), 'dönem yükleniyor…', { busy: true });
   try {
     const [rows, meta] = await Promise.all([
@@ -42,13 +67,21 @@ export async function loadTerm(slug) {
       meta.branches.map((b) => `<option value="${b.code}">${b.code} (${b.sections})</option>`).join('');
     branchSel.value = meta.branches.some((b) => b.code === keep) ? keep : '';
 
+    // Öğretim yöntemi seçenekleri veriden gelir (tarihsel dönemlerde boş).
+    const methods = [...new Set(rows.map((r) => r[9]).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'tr'));
+    const mSel = $('#f-method');
+    const keepM = mSel.value;
+    mSel.innerHTML = '<option value="">hepsi</option>' +
+      methods.map((m) => `<option>${esc(m)}</option>`).join('');
+    mSel.value = methods.includes(keepM) ? keepM : '';
+
     applyFilters();
   } catch (e) {
     setStatus($('#resultline'), `veri yüklenemedi (${e.message})`, { error: true });
   }
 }
 
-// Kontenjan zaman serisini arka planda yükler; detay satırındaki dolma
+// Kontenjan zaman serisini arka planda yükler; detay panelindeki dolma
 // süresi bilgisi buradan gelir.
 export async function loadQuota(slug) {
   try {
@@ -75,13 +108,19 @@ export function applyFilters() {
   const q = fold($('#q').value.trim());
   const branch = $('#f-branch').value;
   const day = $('#f-day').value;
+  const time = $('#f-time').value;
+  const level = $('#f-level').value;
+  const method = $('#f-method').value;
   const openOnly = $('#f-open').checked;
   const terms = q ? q.split(/\s+/) : [];
 
   state.filtered = state.rows.filter((r, i) => {
-    // r = [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan]
     if (branch && r[3] !== branch) return false;
     if (day && !r[5].includes(day)) return false;
+    if (time && !parseWhen(r[5]).some((s) => timeBucket(s.start) === time)) return false;
+    // Seviye/yöntem alanları tarihsel dönemlerde yoktur; yoksa filtre uygulanmaz.
+    if (level && r[8] && r[8] !== level) return false;
+    if (method && r[9] && r[9] !== method) return false;
     if (openOnly && r[7] >= r[6]) return false;
     if (!terms.length) return true;
     return terms.every((t) => state.hay[i].includes(t));
@@ -102,6 +141,8 @@ export function applyFilters() {
   $('#resultline').innerHTML = n === total
     ? `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} branş`
     : `<b>${n}</b> / ${total} şube eşleşti`;
+  renderChips();
+  updateSelection();
   if (ttOn) renderTimetable();
   saveState();
 }
@@ -145,32 +186,99 @@ function updateSortUI() {
   }
 }
 
-// Görünen satırları CSV olarak indirir (Excel için BOM'lu).
-function exportCSV() {
+/* ---------- filtre çipleri ---------- */
+
+function renderChips() {
+  const box = $('#chips');
+  const chips = [];
+  const q = $('#q').value.trim();
+  if (q) chips.push({ key: 'q', label: `"${q}"` });
+  if ($('#f-branch').value) chips.push({ key: 'branch', label: `branş: ${$('#f-branch').value}` });
+  if ($('#f-day').value) chips.push({ key: 'day', label: `gün: ${$('#f-day').value}` });
+  if ($('#f-time').value) chips.push({ key: 'time', label: `saat: ${TIME_LABEL[$('#f-time').value] || $('#f-time').value}` });
+  if ($('#f-level').value) chips.push({ key: 'level', label: `seviye: ${$('#f-level').value}` });
+  if ($('#f-method').value) chips.push({ key: 'method', label: `yöntem: ${$('#f-method').value}` });
+  if ($('#f-open').checked) chips.push({ key: 'open', label: 'yalnızca kontenjan' });
+
+  box.hidden = !chips.length;
+  if (!chips.length) { box.innerHTML = ''; return; }
+  box.innerHTML = chips.map((c) =>
+    `<button type="button" class="chip-x" data-key="${c.key}" title="Filtreyi kaldır">${esc(c.label)} ✕</button>`).join('');
+  box.querySelectorAll('.chip-x').forEach((b) =>
+    b.addEventListener('click', () => { clearFilter(b.dataset.key); applyFilters(); }));
+}
+
+function clearFilter(key) {
+  switch (key) {
+    case 'q': $('#q').value = ''; break;
+    case 'branch': $('#f-branch').value = ''; break;
+    case 'day': $('#f-day').value = ''; break;
+    case 'time': $('#f-time').value = ''; break;
+    case 'level': $('#f-level').value = ''; break;
+    case 'method': $('#f-method').value = ''; break;
+    case 'open': $('#f-open').checked = false; break;
+  }
+}
+
+/* ---------- şube seçimi / sepet ---------- */
+
+function selKey(r) { return `${r[3]}|${r[0]}`; }
+
+function updateSelection() {
+  const n = state.selected.size;
+  $('#sepet').hidden = !n;
+  if (!n) { $('#sel-all').checked = false; return; }
+  $('#sel-count').textContent = `${n} şube seçili`;
+  $('#sel-all').checked = state.filtered.length > 0 && state.filtered.every((r) => state.selected.has(selKey(r)));
+}
+
+function clearSelection() {
+  state.selected.clear();
+  for (const cb of document.querySelectorAll('#rows .row-sel')) cb.checked = false;
+  $('#sel-all').checked = false;
+  updateSelection();
+  if (ttOn) renderTimetable();
+}
+
+function rowsToCSV(rows, filename) {
   const headers = ['CRN', 'Ders Kodu', 'Branş', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan', 'Doluluk (%)'];
-  const rows = state.filtered.map((r) => [
+  const data = rows.map((r) => [
     r[0], r[1], r[3], r[2], r[4], r[5], r[6], r[7],
     r[6] ? Math.round((r[7] / r[6]) * 100) : '',
   ]);
-  downloadCSV(`dersler-${state.termSlug}.csv`, headers, rows);
+  downloadCSV(filename, headers, data);
 }
+
+function exportCSV() {
+  const only = $('#sel-only').checked;
+  const rows = only && state.selected.size ? state.rows.filter((r) => state.selected.has(selKey(r))) : state.filtered;
+  rowsToCSV(rows, `dersler-${state.termSlug}.csv`);
+}
+
+function exportSelectedCSV() {
+  rowsToCSV(state.rows.filter((r) => state.selected.has(selKey(r))), `secili-${state.termSlug}.csv`);
+}
+
+/* ---------- tablo ---------- */
 
 function renderRows(append) {
   const tbody = $('#rows');
   const slice = state.filtered.slice(state.shown, state.shown + PAGE);
 
   if (!slice.length && !state.shown) {
-    fillRows(tbody, [], null, { empty: 'eşleşen ders yok', colspan: 8 });
+    fillRows(tbody, [], null, { empty: 'eşleşen ders yok', colspan: 9 });
     $('#more').hidden = true;
     return;
   }
 
   const frag = fillRows(tbody, slice, (r) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = r;
+    const key = selKey(r);
     return `
+      <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="Şubeyi seç"${state.selected.has(key) ? ' checked' : ''}></td>
       <td class="crn">${esc(crn)}</td>
       <td class="code"><b>${esc(code)}</b><small>${esc(branch)}</small></td>
-      <td><button class="row-toggle" type="button" aria-expanded="false">${esc(name)}</button></td>
+      <td><button class="row-toggle" type="button" aria-haspopup="dialog">${esc(name)}</button></td>
       <td>${esc(instructor || '—')}</td>
       <td class="when">${esc(when || '—')}</td>
       <td class="num">${cap}</td>
@@ -179,8 +287,15 @@ function renderRows(append) {
   }, { append });
 
   if (frag) {
-    frag.querySelectorAll('tr').forEach((tr) => {
-      tr.querySelector('.row-toggle').addEventListener('click', (ev) => toggleDetail(tr, ev.currentTarget));
+    frag.querySelectorAll('tr').forEach((tr, i) => {
+      const r = slice[i];
+      tr.querySelector('.row-toggle').addEventListener('click', () => openDetail(r));
+      const cb = tr.querySelector('.row-sel');
+      if (cb) cb.addEventListener('change', () => {
+        if (cb.checked) state.selected.add(cb.dataset.key);
+        else state.selected.delete(cb.dataset.key);
+        updateSelection();
+      });
     });
   }
 
@@ -189,24 +304,20 @@ function renderRows(append) {
   $('#more').textContent = `daha fazla göster (${state.filtered.length - state.shown} kaldı)`;
 }
 
-async function toggleDetail(tr, btn) {
-  const next = tr.nextElementSibling;
-  if (next && next.classList.contains('detail')) {
-    next.remove();
-    tr.classList.remove('open');
-    btn.setAttribute('aria-expanded', 'false');
-    return;
-  }
-  tr.classList.add('open');
-  btn.setAttribute('aria-expanded', 'true');
+/* ---------- detay paneli (modal) ---------- */
 
-  const det = document.createElement('tr');
-  det.className = 'detail';
-  det.innerHTML = '<td colspan="8">yükleniyor…</td>';
-  tr.after(det);
+let lastDetailFocus = null;
 
-  const crn = tr.cells[0].textContent.trim();
-  const branch = tr.cells[1].querySelector('small').textContent;
+async function openDetail(row) {
+  const [crn, code, name, branch] = row;
+  lastDetailFocus = document.activeElement;
+  const panel = $('#detail-panel');
+  const content = $('#detail-content');
+  panel.hidden = false;
+  document.body.classList.add('modal-open');
+  content.innerHTML = '<p class="empty">yükleniyor…</p>';
+  $('#detail-close').focus();
+
   let sec = null;
   try {
     const list = await getJSON(`data/terms/${state.termSlug}/branches/${branch}.json`);
@@ -214,26 +325,49 @@ async function toggleDetail(tr, btn) {
   } catch { /* ağ hatası: aşağıda "detay yok" gösterilir */ }
 
   if (!sec) {
-    det.innerHTML = '<td colspan="8">detay bulunamadı</td>';
+    content.innerHTML = '<p class="empty">detay bulunamadı</p>';
     return;
   }
 
   const sessions = sec.days.map((d, i) => [d, sec.times[i] || '', sec.rooms[i] || '', sec.buildings[i] || '']
-    .filter(Boolean).join(' · ')).join('\n');
+    .filter(Boolean).join(' · ')).join('<br>');
+  const pct = sec.capacity ? `%${Math.round((sec.enrolled / sec.capacity) * 100)}` : '';
+  const note = fillNote(crn);
+  const canHistory = sec.instructor && sec.instructor !== '-' && sec.instructor !== '***';
 
-  det.innerHTML = `<td colspan="8"><dl>
-    ${field('Öğretim yöntemi', sec.method)}
-    ${field('Seviye', sec.level)}
-    ${field('Kontenjan', fillNote(crn))}
-    ${sessions ? field('Oturumlar', sessions) : ''}
-    ${sec.prereq && sec.prereq !== '-' ? field('Önşart', sec.prereq) : ''}
-    ${sec.classReq && sec.classReq !== '-' ? field('Sınıf / kredi önşartı', sec.classReq) : ''}
-    ${sec.reserved && sec.reserved !== '-' ? field('Rezervasyon', sec.reserved) : ''}
-    ${sec.programs.length ? `<dt>Alabilen programlar</dt><dd class="tags">${sec.programs.map((p) => `<span>${esc(p)}</span>`).join('')}</dd>` : ''}
-  </dl></td>`;
+  content.innerHTML = `
+    <h3 id="detail-title">${esc(code)} <span>${esc(name)}</span></h3>
+    <div class="d-meta">${[branch, sec.level, sec.method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
+    <dl>
+      ${field('Öğretim üyesi', sec.instructor)}
+      ${field('Kontenjan', sec.capacity ? `${sec.enrolled} / ${sec.capacity} (${pct})` : '—')}
+      ${note ? field('Dolma', note) : ''}
+      ${sessions ? field('Oturumlar', sessions) : ''}
+      ${sec.prereq && sec.prereq !== '-' ? field('Önşart', sec.prereq) : ''}
+      ${sec.classReq && sec.classReq !== '-' ? field('Sınıf / kredi önşartı', sec.classReq) : ''}
+      ${sec.reserved && sec.reserved !== '-' ? field('Rezervasyon', sec.reserved) : ''}
+      ${sec.programs.length ? `<dt>Alabilen programlar</dt><dd class="tags">${sec.programs.map((p) => `<span>${esc(p)}</span>`).join('')}</dd>` : ''}
+    </dl>
+    ${canHistory ? `<button type="button" class="btn-ghost d-hist" data-name="${esc(sec.instructor)}">bu hocanın geçmişinde ara</button>` : ''}`;
+
+  const histBtn = content.querySelector('.d-hist');
+  if (histBtn) {
+    histBtn.addEventListener('click', () => {
+      window.dispatchEvent(new CustomEvent('itu:goto-history', { detail: histBtn.dataset.name }));
+      closeDetail();
+    });
+  }
+}
+
+function closeDetail() {
+  $('#detail-panel').hidden = true;
+  document.body.classList.remove('modal-open');
+  if (lastDetailFocus && typeof lastDetailFocus.focus === 'function') lastDetailFocus.focus();
 }
 
 const field = (k, v) => (v ? `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>` : '');
+
+/* ---------- URL durumu ---------- */
 
 // Dönem + arama + filtre durumunu URL'ye yazar; bağlantı paylaşılabilir olur.
 function saveState() {
@@ -243,6 +377,9 @@ function saveState() {
   if (q) p.set('q', q);
   if ($('#f-branch').value) p.set('branch', $('#f-branch').value);
   if ($('#f-day').value) p.set('day', $('#f-day').value);
+  if ($('#f-time').value) p.set('time', $('#f-time').value);
+  if ($('#f-level').value) p.set('level', $('#f-level').value);
+  if ($('#f-method').value) p.set('method', $('#f-method').value);
   if ($('#f-open').checked) p.set('open', '1');
   const qs = p.toString();
   const url = location.pathname + (qs ? '?' + qs : '') + location.hash;
@@ -254,7 +391,7 @@ function saveState() {
 let ttOn = false;
 
 // Çizelge ile tablo arasında geçiş. Filtreler/arama uygulanınca çizelge
-// state.filtered üzerinden yeniden çizilir.
+// yeniden çizilir; "yalnızca seçilenler" açıksa seçim kümesi kullanılır.
 function toggleTimetable() {
   ttOn = !ttOn;
   const wrap = $('#tt');
@@ -264,6 +401,12 @@ function toggleTimetable() {
   $('#tt-toggle').setAttribute('aria-pressed', String(ttOn));
   wrap.hidden = !ttOn;
   if (ttOn) renderTimetable();
+}
+
+function timetableRows() {
+  const only = $('#sel-only').checked;
+  if (only && state.selected.size) return state.rows.filter((r) => state.selected.has(selKey(r)));
+  return state.filtered;
 }
 
 // "Pazartesi 08:30/12:29 | Çarşamba 13:00/16:59" -> oturum listesi (dakika cinsinden).
@@ -278,6 +421,13 @@ export function parseWhen(when) {
     if (end > start) out.push({ day, start, end });
   }
   return out;
+}
+
+// Saat dilimini dakikadan kovaya indirir. Saf fonksiyon — test edilebilir.
+export function timeBucket(startMin) {
+  if (startMin < 12 * 60) return 'sabah';
+  if (startMin < 17 * 60) return 'ogle';
+  return 'aksam';
 }
 
 function toMin(t) {
@@ -317,15 +467,16 @@ export function buildTimetable(rows) {
 
 function renderTimetable() {
   const wrap = $('#tt');
-  const t = buildTimetable(state.filtered);
+  const rows = timetableRows();
+  const t = buildTimetable(rows);
   if (!t) {
-    wrap.innerHTML = '<p class="empty">filtrelenen şubelerde zaman bilgisi yok</p>';
+    wrap.innerHTML = '<p class="empty">seçilen/filtrelenen şubelerde zaman bilgisi yok</p>';
     return;
   }
   const { startSlot, nSlots, grid, all } = t;
 
   let conflictCells = 0;
-  let html = `<p class="tt-note"><b>${all.length}</b> oturum · <b>${state.filtered.length}</b> şube</p>`;
+  let html = `<p class="tt-note"><b>${all.length}</b> oturum · <b>${rows.length}</b> şube</p>`;
   html += `<div class="tt-scroll"><table class="tt">
     <thead><tr><th class="tt-time">saat</th>${TT_DAYS.map((d) => `<th>${d.slice(0, 3)}</th>`).join('')}</tr></thead><tbody>`;
 

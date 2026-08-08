@@ -6,19 +6,25 @@
 import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
 import { state } from './core/store.js';
 import { initCourses, loadTerm, applyFilters } from './views/courses.js';
-import { initHistory, onShow as historyShow } from './views/history.js';
+import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
 import { initExams, onShow as examsShow } from './views/exams.js';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
 import { PrereqGraph } from './prereq.js';
 
+// wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
+// sekme değiştirmek için bunu kullanır.
+let showView = null;
+
 async function boot() {
+  initTheme();
   wireTabs();
+  wireHistoryJump();
   try {
     state.index = await getJSON('data/index.json');
   } catch (e) {
     setStatus($('#stat-status'), 'veri yüklenemedi', { error: true });
-    $('#rows').innerHTML = `<tr><td colspan="8" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
+    $('#rows').innerHTML = `<tr><td colspan="9" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
     return;
   }
 
@@ -61,18 +67,36 @@ async function boot() {
   if (params.has('q')) $('#q').value = params.get('q');
   if (params.has('branch')) $('#f-branch').value = params.get('branch');
   if (params.has('day')) $('#f-day').value = params.get('day');
+  if (params.has('time')) $('#f-time').value = params.get('time');
+  if (params.has('level')) $('#f-level').value = params.get('level');
+  if (params.has('method')) $('#f-method').value = params.get('method');
   if (params.get('open') === '1') $('#f-open').checked = true;
   applyFilters();
+}
+
+/* ---------- tema ---------- */
+
+function initTheme() {
+  const sel = $('#theme');
+  const cur = document.documentElement.getAttribute('data-theme') || 'dark';
+  sel.value = ['dark', 'light', 'contrast'].includes(cur) ? cur : 'dark';
+  sel.addEventListener('change', () => {
+    document.documentElement.setAttribute('data-theme', sel.value);
+    try { localStorage.setItem('itu-theme', sel.value); } catch (e) {}
+  });
 }
 
 /* ---------- sekmeler ---------- */
 
 const VIEWS = ['dersler', 'gecmis', 'onsart', 'sinavlar', 'takvim', 'donemler', 'hakkinda'];
 
+// show, sekme görünürlüğünü ve URL hash'ini yönetir. push=true ise tarayıcı
+// geçmişine yazılır (geri/ileri çalışır), değilse mevcut girişi değiştirir
+// (ilk yükleme ve popstate).
 function wireTabs() {
   const buttons = [...document.querySelectorAll('.tabs button')];
 
-  const show = (view) => {
+  const show = (view, push) => {
     for (const b of buttons) {
       const active = b.dataset.view === view;
       b.setAttribute('aria-selected', String(active));
@@ -86,11 +110,16 @@ function wireTabs() {
     if (view === 'sinavlar') examsShow();
     if (view === 'gecmis') historyShow();
     if (view === 'onsart') PrereqGraph.init('#pg-root');
-    if (location.hash.slice(1) !== view) history.replaceState(null, '', `#${view}`);
+    const h = location.hash.slice(1);
+    if (h !== view) {
+      if (push) history.pushState(null, '', `#${view}`);
+      else history.replaceState(null, '', `#${view}`);
+    }
   };
+  showView = show;
 
   for (const b of buttons) {
-    b.addEventListener('click', () => show(b.dataset.view));
+    b.addEventListener('click', () => show(b.dataset.view, true));
     // Sekmeler arasında ok tuşlarıyla dolaşım (kapsayıcı klavye erişimi).
     b.addEventListener('keydown', (ev) => {
       const idx = buttons.indexOf(b);
@@ -100,12 +129,30 @@ function wireTabs() {
       else return;
       ev.preventDefault();
       buttons[next].focus();
-      show(buttons[next].dataset.view);
+      show(buttons[next].dataset.view, true);
     });
   }
 
+  // Tarayıcının geri/ileri butonları sekme değişikliklerini geri alır.
+  window.addEventListener('popstate', () => {
+    const v = location.hash.slice(1);
+    show(VIEWS.includes(v) ? v : 'dersler', false);
+  });
+
   const initial = location.hash.slice(1);
-  show(VIEWS.includes(initial) ? initial : 'dersler');
+  show(VIEWS.includes(initial) ? initial : 'dersler', false);
+}
+
+// Detay panelinden "bu hocanın geçmişinde ara" — geçmiş sekmesine geçip arama
+// kutusunu doldurur.
+function wireHistoryJump() {
+  window.addEventListener('itu:goto-history', (e) => {
+    const q = String(e.detail || '').trim();
+    if (showView) showView('gecmis', true);
+    $('#hq').value = q;
+    historyShow();
+    searchHistory();
+  });
 }
 
 // Hakkında sekmesindeki curl örneklerine sitenin gerçek adresini yazar.

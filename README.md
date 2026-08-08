@@ -49,13 +49,19 @@ olmayan) listedir.
 
 Dersler sekmesinde tablo kolonları sıralanabiliyor, görünen sonuç tek tıkla CSV
 olarak indirilebiliyor (Excel için BOM'lu) ve arama/filtre durumu URL'ye
-yazılıyor — filtrelediğiniz görünümün bağlantısını paylaşabilirsiniz. "Zaman
-çizelgesi" düğmesi filtrelenen şubeleri haftalık gün × saat ızgarasında çizer;
-aynı zaman dilimine düşen farklı dersler çakışma olarak kırmızı işaretlenir ve
-çipe tıklayınca arama o derse daralır. Geçmiş sekmesinde bir dersin detayında,
-o dersin kontenjan ve doluluk zaman çizelgesi dönem dönem küçük bir grafikle
-gösteriliyor. Sınavlar sekmesinde tür filtresinin yanına bina filtresi eklendi
-(sınav yerinden çıkarılıyor).
+yazılıyor — filtrelediğiniz görünümün bağlantısını paylaşabilirsiniz. Filtreler
+günün yanında saat dilimi (sabah/öğle/akşam), seviye (OL/LS/LU/LUI) ve öğretim
+yöntemini de kapsıyor; aktif filtreler tek tıkla kaldırılabilen çipler olarak
+görünüyor. Şubeler seçilebiliyor ("N şube seçili" çubuğu) — seçilenler ayrı CSV
+olarak indirilebiliyor ve "yalnızca seçilenler" modunda zaman çizelgesinde
+çakışma kontrolüne sokuluyor. Bir dersin adına tıklayınca zengin bir detay
+paneli açılıyor (oturumlar, programlar, önşart, dolma süresi; hocanın
+geçmişinde arama). "Zaman çizelgesi" düğmesi gün × saat ızgarasında çakışan
+dersleri kırmızı işaretler. Sekmeler arası geçiş tarayıcı geçmişine yazılıyor
+(geri/ileri çalışır) ve üstteki "görünüm" seçici ile fosfor/açık/yüksek
+kontrast temalar arasında geçilebiliyor. Geçmiş sekmesinde bir dersin
+detayında dönem dönem kontenjan ve doluluk grafiği gösteriliyor. Sınavlar
+sekmesinde tür ve bina filtresi var.
 
 İlk denemede bu grafik force-directed bir yığındı (Obsidian'ın grafik görünümü
 gibi organik ama kaotik), ve kenarlar yalnızca bir düğüme tıklanınca netleşiyordu

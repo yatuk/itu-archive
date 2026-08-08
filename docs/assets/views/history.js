@@ -37,7 +37,8 @@ async function loadHistory() {
   }
 }
 
-async function searchHistory() {
+// Geçmiş sekmesine dışarıdan (örn. detay panelinden) arama yaptırmak için dışa açık.
+export async function searchHistory() {
   await loadHistory();
   if (!state.hist) return;
   const q = fold($('#hq').value.trim());

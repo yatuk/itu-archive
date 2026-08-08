@@ -1,12 +1,23 @@
-// Package curriculum, OBS'nin public ders planı sayfalarından her lisans
-// programının güncel müfredatını (dönem dönem zorunlu/seçmeli dersler) çeker.
+// Package curriculum, OBS'nin public ders planı sayfalarından her programın
+// güncel müfredatını (dönem dönem zorunlu/seçmeli dersler) çeker.
 //
 // Akış üç aşamalı:
 //
-//	GenelTanimlamalar/ProgramKodlariList?programSeviyeTipiId=2  -> program kodları ("BLG_LS")
-//	DersPlan/DersPlanlariList?programKodu=BLG_LS&planTipiKodu=lisans -> o programın plan sürümleri (yıllara göre)
-//	DersPlan/DersPlanDetay/<id>                                  -> son sürümün 8 dönemlik ders tablosu
+//	GenelTanimlamalar/ProgramKodlariList?programSeviyeTipiId=<id> -> program kodları ("BLG_LS", "BLG_HBY_YL")
+//	DersPlan/DersPlanlariList?programKodu=X&planTipiKodu=<tip> -> o programın plan sürümleri (yıllara göre)
+//	DersPlan/DersPlanDetay/<id>                                  -> son sürümün ders tablosu
 //	DersPlan/_DersGrupSearch?grupId=<id>                          -> bir seçmeli slotun alternatif ders listesi
+//
+// Seviyeler OBS'de farklı parametrelerle geliyor:
+//
+//	1 = Önlisans (_OL)     planTipiKodu=on-lisans, dönem sütunları (lisans gibi)
+//	2 = Lisans (_LS)       planTipiKodu=lisans
+//	3 = Yüksek Lisans (_YL) planTipiKodu=yuksek-lisans, TEK düz tablo (dönem yok)
+//	4 = Doktora (_DR)      planTipiKodu=doktora, TEK düz tablo (dönem yok)
+//
+// Lisans ve önlisans planları "1. Yarıyıl" başlıklı tablolara bölünmüş; yüksek
+// lisans ve doktora ise dönem ayrımı olmayan tek bir düz liste — o programlar
+// tek dönemli olarak saklanıyor.
 //
 // Bir program birden çok plan sürümü listeler (örn. "2017-2018 Güz ile
 // 2021-2022 Güz Dönemleri Arası"); son satır her zaman en güncel olanı, o
@@ -26,16 +37,45 @@ import (
 )
 
 const (
-	programListURL = "https://obs.itu.edu.tr/public/GenelTanimlamalar/ProgramKodlariList?programSeviyeTipiId=2"
+	programListURL = "https://obs.itu.edu.tr/public/GenelTanimlamalar/ProgramKodlariList"
 	planListURL    = "https://obs.itu.edu.tr/public/DersPlan/DersPlanlariList"
 	planDetailURL  = "https://obs.itu.edu.tr/public/DersPlan/DersPlanDetay"
 	groupSearchURL = "https://obs.itu.edu.tr/public/DersPlan/_DersGrupSearch"
 )
 
+// Level, bir program seviyesinin OBS parametreleri. Seviye tipi ID'leri
+// ProgramKodlariList'e, plan tipi kodları DersPlanlariList'e veriliyor.
+type Level struct {
+	Name      string // "OL", "LS", "YL", "DR"
+	SeviyeID  int    // programSeviyeTipiId
+	PlanTipi  string // planTipiKodu
+	Suffix    string // program kodu soneki
+	Flat      bool   // dönem tabloları yerine tek düz tablo (lisansüstü)
+}
+
+// Levels, desteklenen program seviyeleri. İkinci öğretim (ID 5) dahil değil:
+// kodları yüksek lisansla (_YL) çakışıp aynı dosyayı ezebilir.
+var Levels = []Level{
+	{Name: "OL", SeviyeID: 1, PlanTipi: "on-lisans", Suffix: "_OL"},
+	{Name: "LS", SeviyeID: 2, PlanTipi: "lisans", Suffix: "_LS"},
+	{Name: "YL", SeviyeID: 3, PlanTipi: "yuksek-lisans", Suffix: "_YL", Flat: true},
+	{Name: "DR", SeviyeID: 4, PlanTipi: "doktora", Suffix: "_DR", Flat: true},
+}
+
+func levelOf(name string) Level {
+	for _, lv := range Levels {
+		if lv.Name == name {
+			return lv
+		}
+	}
+	return Levels[1] // varsayılan: lisans
+}
+
 type Program struct {
 	Code    string // "BLG_LS"
 	Name    string
 	Faculty string
+	Level   string // "OL" | "LS" | "YL" | "DR"
 }
 
 type Course struct {
@@ -63,6 +103,7 @@ type Plan struct {
 	ProgramCode string     `json:"programCode"`
 	ProgramName string     `json:"programName"`
 	Faculty     string     `json:"faculty"`
+	Level       string     `json:"level"`
 	PlanLabel   string     `json:"planLabel"`
 	Semesters   []Semester `json:"semesters"`
 }
@@ -90,9 +131,27 @@ var (
 	planIDRe = regexp.MustCompile(`DersPlanDetay/(\d+)`)
 )
 
-// Programs, tüm lisans programlarının kodunu ve fakültesini döndürür.
+// Programs, tüm seviyelerdeki programların kodunu, seviyesini ve fakültesini
+// döndürür. Seviye tipi ID'leri kararlı olmadığı için ("hangisi önlisans,
+// hangisi lisans" sorusunun cevabı siteden sitede değişiyor) her seviyeyi ayrı
+// çekip program kodundaki sonekle (_OL, _LS, ...) doğruluyoruz.
 func (c *Client) Programs(ctx context.Context) ([]Program, error) {
-	body, err := c.f.Text(ctx, programListURL)
+	var out []Program
+	for _, lv := range Levels {
+		ps, err := c.programsForLevel(ctx, lv)
+		if err != nil {
+			return nil, err
+		}
+		out = append(out, ps...)
+	}
+	if len(out) == 0 {
+		return nil, fmt.Errorf("hiç program bulunamadı — sayfa yapısı değişmiş olabilir")
+	}
+	return out, nil
+}
+
+func (c *Client) programsForLevel(ctx context.Context, lv Level) ([]Program, error) {
+	body, err := c.f.Text(ctx, fmt.Sprintf("%s?programSeviyeTipiId=%d", programListURL, lv.SeviyeID))
 	if err != nil {
 		return nil, err
 	}
@@ -108,20 +167,20 @@ func (c *Client) Programs(ctx context.Context) ([]Program, error) {
 			continue
 		}
 		code := clean(cells[0][1])
-		if code == "" || !strings.HasSuffix(code, "_LS") {
-			continue // yalnızca lisans; ön/lisansüstü şimdilik kapsam dışı
+		if code == "" || !strings.HasSuffix(code, lv.Suffix) {
+			continue
 		}
-		out = append(out, Program{Code: code, Name: clean(cells[1][1]), Faculty: faculty})
+		out = append(out, Program{Code: code, Name: clean(cells[1][1]), Faculty: faculty, Level: lv.Name})
 	}
 	if len(out) == 0 {
-		return nil, fmt.Errorf("hiç lisans programı bulunamadı — sayfa yapısı değişmiş olabilir")
+		return nil, fmt.Errorf("seviye %s (%d) için program bulunamadı — sayfa yapısı değişmiş olabilir", lv.Name, lv.SeviyeID)
 	}
 	return out, nil
 }
 
 // LatestPlanID, bir programın en güncel müfredat sürümünün detay ID'sini bulur.
-func (c *Client) LatestPlanID(ctx context.Context, programCode string) (int, string, error) {
-	url := fmt.Sprintf("%s?programKodu=%s&planTipiKodu=lisans", planListURL, programCode)
+func (c *Client) LatestPlanID(ctx context.Context, programCode string, lv Level) (int, string, error) {
+	url := fmt.Sprintf("%s?programKodu=%s&planTipiKodu=%s", planListURL, programCode, lv.PlanTipi)
 	body, err := c.f.Text(ctx, url)
 	if err != nil {
 		return 0, "", err
@@ -157,7 +216,8 @@ func (c *Client) LatestPlanID(ctx context.Context, programCode string) (int, str
 // Plan, bir programın en güncel müfredatını tam olarak çeker (seçmeli grupları
 // dahil).
 func (c *Client) Plan(ctx context.Context, p Program) (*Plan, error) {
-	planID, label, err := c.LatestPlanID(ctx, p.Code)
+	lv := levelOf(p.Level)
+	planID, label, err := c.LatestPlanID(ctx, p.Code, lv)
 	if err != nil {
 		return nil, err
 	}
@@ -165,11 +225,14 @@ func (c *Client) Plan(ctx context.Context, p Program) (*Plan, error) {
 	if err != nil {
 		return nil, err
 	}
+	if lv.Flat {
+		return c.parseFlatPlan(ctx, body, p, label)
+	}
 
 	titles := h2Re.FindAllStringSubmatch(body, -1)
 	tables := tableRe.FindAllStringSubmatch(body, -1)
 
-	plan := &Plan{ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, PlanLabel: label}
+	plan := &Plan{ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, Level: p.Level, PlanLabel: label}
 	// İlk h2 program adı başlığı, dönem başlıkları ondan sonra geliyor;
 	// ilk tablo da genelde ders bilgisi kutusu değil doğrudan 1. dönem —
 	// sayıyı eşleştirip taşarsa kırpıyoruz.
@@ -213,6 +276,60 @@ func (c *Client) Plan(ctx context.Context, p Program) (*Plan, error) {
 		if len(sem.Items) > 0 {
 			plan.Semesters = append(plan.Semesters, sem)
 		}
+	}
+	return plan, nil
+}
+
+// parseFlatPlan, yüksek lisans ve doktora programlarının tek düz tablosunu
+// tek bir "dönem"e indirger. Bu programlarda dönem ayrımı yok — ders listesi
+// tek tabloda duruyor ve seçmeli gruplar yine "Dersler" satırlarıyla geliyor.
+func (c *Client) parseFlatPlan(ctx context.Context, body string, p Program, label string) (*Plan, error) {
+	// Sayfada yardımcı tablolar da olabiliyor; en çok satırlı olanı ana liste
+	// sayıyoruz.
+	tables := tableRe.FindAllStringSubmatch(body, -1)
+	var best string
+	bestRows := -1
+	for _, t := range tables {
+		if n := len(rowRe.FindAllStringSubmatch(t[1], -1)); n > bestRows {
+			best, bestRows = t[1], n
+		}
+	}
+	if best == "" {
+		return nil, fmt.Errorf("%s: plan tablosu bulunamadı", p.Code)
+	}
+
+	sem := Semester{Title: p.Name}
+	for _, row := range rowRe.FindAllStringSubmatch(best, -1) {
+		cells := cellRe.FindAllStringSubmatch(row[1], -1)
+		if len(cells) < 2 {
+			continue
+		}
+		v := make([]string, len(cells))
+		for j, cc := range cells {
+			v[j] = clean(cc[1])
+		}
+		first := v[0]
+		if first == "" || first == "Ders Kodu" {
+			continue
+		}
+		if first == "Dersler" {
+			grp := grupIDRe.FindStringSubmatch(row[1])
+			if grp == nil {
+				continue
+			}
+			opts, err := c.group(ctx, grp[1])
+			if err != nil {
+				return nil, err
+			}
+			sem.Items = append(sem.Items, Item{Elective: &Elective{Title: v[1], Options: opts}})
+			continue
+		}
+		sem.Items = append(sem.Items, Item{Course: &Course{Code: first, Name: v[1]}})
+	}
+
+	plan := &Plan{ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, Level: p.Level, PlanLabel: label}
+	if len(sem.Items) > 0 {
+		plan.Semesters = append(plan.Semesters, sem)
 	}
 	return plan, nil
 }
@@ -313,4 +430,15 @@ func clean(s string) string {
 	s = html.UnescapeString(s)
 	s = strings.ReplaceAll(s, " ", " ")
 	return strings.TrimSpace(spaceRe.ReplaceAllString(s, " "))
+}
+
+// Count, verilen seviyedeki program sayısını döndürür.
+func Count(programs []Program, level string) int {
+	n := 0
+	for _, p := range programs {
+		if p.Level == level {
+			n++
+		}
+	}
+	return n
 }

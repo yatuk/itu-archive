@@ -1,5 +1,6 @@
-// Command curriculum, tüm lisans programlarının güncel müfredatını çekip
-// docs/data/curriculum altına yazar.
+// Command curriculum, tüm programların güncel müfredatını çekip
+// docs/data/curriculum altına yazar. Lisansla birlikte önlisans (OL), yüksek
+// lisans (YL) ve doktora (DR) programlarını da kapsar.
 //
 // Ayrı komut olmasının sebebi: bu veri kontenjan/ders programı gibi sık
 // değişmiyor, dönemde belki bir kez OBS müfredat güncellediğinde tazelenmesi
@@ -54,7 +55,10 @@ func run(out string, workers int, rps float64, only string) error {
 		}
 		programs = filtered
 	}
-	logf("%d program bulundu", len(programs))
+	logf("%d program bulundu (%d önlisans, %d lisans, %d yüksek lisans, %d doktora)",
+		len(programs),
+		curriculum.Count(programs, "OL"), curriculum.Count(programs, "LS"),
+		curriculum.Count(programs, "YL"), curriculum.Count(programs, "DR"))
 
 	var done int64
 	plans, err := cc.ScrapeAll(ctx, programs, workers, func(format string, args ...any) {
@@ -72,7 +76,7 @@ func run(out string, workers int, rps float64, only string) error {
 			return err
 		}
 		index = append(index, map[string]string{
-			"code": p.ProgramCode, "name": p.ProgramName, "faculty": p.Faculty,
+			"code": p.ProgramCode, "name": p.ProgramName, "faculty": p.Faculty, "level": p.Level,
 		})
 	}
 	if err := st.WriteJSON(index, "data", "curriculum", "index.json"); err != nil {

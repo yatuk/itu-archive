@@ -276,6 +276,19 @@ import { esc, fold } from './core/utils.js';
       this.draw();
     }
 
+    // reset, tüm grafiği boşaltır — seçili program artık görünmeyen bir
+    // seviyeye düştüğünde kullanılır.
+    reset() {
+      this.nodes = null;
+      this.edges = null;
+      this.byCode = null;
+      this.focus = null;
+      this.related = null;
+      this.detail.innerHTML = '';
+      this.status.textContent = 'bir bölüm seçin';
+      this.draw();
+    }
+
     panTo(code) {
       const n = this.byCode.get(code);
       if (!n) return;
@@ -406,6 +419,11 @@ import { esc, fold } from './core/utils.js';
   let graph = null;
   let programs = null;
   let reqByCode = null;
+  // Seviye filtresi: varsayılan yalnızca lisans. Kullanıcı değiştirirse bu
+  // Set üzerinden seçici yeniden kurulur.
+  let activeLevels = new Set(['LS']);
+  const LEVEL_TR = { OL: 'Önlisans', LS: 'Lisans', YL: 'Yüksek Lisans', DR: 'Doktora' };
+  const LEVEL_ORDER = ['OL', 'LS', 'YL', 'DR'];
 
   async function ensureData(root) {
     if (!graph) graph = new PlanGraph(root);
@@ -457,11 +475,35 @@ import { esc, fold } from './core/utils.js';
     await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ders/slot — bir düğüme tıkla`);
   }
 
-  function renderProgramPicker(root, programs) {
+  // Seviye filtresi düğmelerini kurar; tıklamayla activeLevels güncellenir,
+  // butonlar ve seçici yeniden çizilir.
+  function initLevelFilter(root) {
+    const box = root.querySelector('.pg-levels');
+    if (!box) return;
+    box.addEventListener('click', (ev) => {
+      const b = ev.target.closest('.pg-level');
+      if (!b) return;
+      const lv = b.dataset.level;
+      if (activeLevels.has(lv)) activeLevels.delete(lv);
+      else activeLevels.add(lv);
+      renderLevelFilter(box);
+      renderProgramPicker(root);
+    });
+    renderLevelFilter(box);
+  }
+
+  function renderLevelFilter(box) {
+    box.innerHTML = LEVEL_ORDER.map((lv) =>
+      `<button type="button" class="pg-level${activeLevels.has(lv) ? ' active' : ''}" data-level="${lv}" aria-pressed="${activeLevels.has(lv)}">${LEVEL_TR[lv]}</button>`).join('');
+  }
+
+  // Seçiciyi yalnızca aktif seviyedeki programlarla kurar. Seçili program
+  // görünmeyen bir seviyeye düştüyse seçimi temizleyip grafiği sıfırlar.
+  function renderProgramPicker(root) {
     const sel = root.querySelector('.pg-program-select');
-    const LEVEL_TR = { OL: 'Önlisans', LS: 'Lisans', YL: 'Yüksek Lisans', DR: 'Doktora' };
     const byGroup = new Map();
     for (const p of programs) {
+      if (!activeLevels.has(p.level || 'LS')) continue;
       const lvl = LEVEL_TR[p.level] || p.level || 'Lisans';
       const key = p.faculty ? `${p.faculty} — ${lvl}` : lvl;
       if (!byGroup.has(key)) byGroup.set(key, []);
@@ -473,17 +515,28 @@ import { esc, fold } from './core/utils.js';
         ps.map((p) => `<option value="${esc(p.code)}">${esc(p.name)}</option>`).join('') +
         '</optgroup>';
     }
+    const prev = sel.value;
     sel.innerHTML = html;
-    sel.addEventListener('change', () => { if (sel.value) selectProgram(root, sel.value); });
+    const stillThere = prev && [...sel.options].some((o) => o.value === prev);
+    sel.value = stillThere ? prev : '';
+    if (!stillThere) {
+      root.querySelector('.pg-plan-label').textContent = '';
+      if (graph) graph.reset();
+    }
   }
 
   let inited = false;
   export const PrereqGraph = {
     async init(rootSelector) {
       const root = document.querySelector(rootSelector);
-      const { programs } = await ensureData(root);
+      const { programs: ps } = await ensureData(root);
       if (!inited) {
-        renderProgramPicker(root, programs);
+        initLevelFilter(root);
+        renderProgramPicker(root);
+        root.querySelector('.pg-program-select').addEventListener('change', () => {
+          const sel = root.querySelector('.pg-program-select');
+          if (sel.value) selectProgram(root, sel.value);
+        });
         root.querySelector('.pg-search').addEventListener('input', (e) => {
           const results = root.querySelector('.pg-results');
           if (!graph || !graph.nodes) { results.innerHTML = ''; return; }

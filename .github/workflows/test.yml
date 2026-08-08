@@ -1,0 +1,31 @@
+name: test
+
+# Birim testleri ve veri doğrulama. Her push/PR'de koşar; kazıyıcı regex'leri
+# ve frontend saf fonksiyonları OBS değişimlerine karşı sabit tutar.
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Go birim testleri
+        run: go test ./...
+
+      - name: Frontend saf fonksiyon testleri
+        run: node --test docs/assets/core/core.test.js
+
+      - name: Veri bütünlüğü
+        run: go run ./cmd/validate -quiet

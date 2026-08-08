@@ -36,6 +36,19 @@ jobs:
         run: |
           go run ./cmd/scrape ${{ inputs.backfill && '-backfill' || '' }}
 
+      - name: Veriyi doğrula
+        run: go run ./cmd/validate -quiet
+
+      - name: Boyut raporu
+        run: |
+          {
+            echo '## Veri boyutu'
+            echo '```'
+            du -sh docs/data 2>/dev/null || true
+            du -sh docs/data/quota 2>/dev/null || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Değişiklikleri özetle
         id: diff
         run: |

@@ -49,10 +49,13 @@ olmayan) listedir.
 
 Dersler sekmesinde tablo kolonları sıralanabiliyor, görünen sonuç tek tıkla CSV
 olarak indirilebiliyor (Excel için BOM'lu) ve arama/filtre durumu URL'ye
-yazılıyor — filtrelediğiniz görünümün bağlantısını paylaşabilirsiniz. Geçmiş
-sekmesinde bir dersin detayında, o dersin kontenjan ve doluluk zaman çizelgesi
-dönem dönem küçük bir grafikle gösteriliyor. Sınavlar sekmesinde tür filtresinin
-yanına bina filtresi eklendi (sınav yerinden çıkarılıyor).
+yazılıyor — filtrelediğiniz görünümün bağlantısını paylaşabilirsiniz. "Zaman
+çizelgesi" düğmesi filtrelenen şubeleri haftalık gün × saat ızgarasında çizer;
+aynı zaman dilimine düşen farklı dersler çakışma olarak kırmızı işaretlenir ve
+çipe tıklayınca arama o derse daralır. Geçmiş sekmesinde bir dersin detayında,
+o dersin kontenjan ve doluluk zaman çizelgesi dönem dönem küçük bir grafikle
+gösteriliyor. Sınavlar sekmesinde tür filtresinin yanına bina filtresi eklendi
+(sınav yerinden çıkarılıyor).
 
 İlk denemede bu grafik force-directed bir yığındı (Obsidian'ın grafik görünümü
 gibi organik ama kaotik), ve kenarlar yalnızca bir düğüme tıklanınca netleşiyordu
@@ -71,6 +74,14 @@ go run ./cmd/validate          # docs/data bütünlüğünü denetle (kopya CRN,
 
 Her şey `docs/data` altına yazılıyor. Tam tarama iki dakika sürüyor. Bayraklar:
 `-out`, `-workers`, `-rps`, `-skip-courses`, `-skip-calendar`, `-skip-exams`, `-skip-prereq`.
+
+Testler ve doğrulama (CI'da her push'ta koşuyor):
+
+```bash
+go test ./...                          # kazıyıcı parse'ları (fixture tabanlı)
+node --test docs/assets/core/core.test.js   # frontend saf fonksiyonları
+go run ./cmd/validate -quiet           # yalnızca özet: kategori sayaçları + hata örnekleri
+```
 
 `cmd/quota` ve `cmd/curriculum` ayrı komutlar çünkü frekansları farklı: ders
 programı günde bir kez yeterli, kontenjan kayıt haftasında yarım saatte bir

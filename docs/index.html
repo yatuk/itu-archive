@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>İTÜ Ders Arşivi — Ders Programı, Önşart Haritası, Akademik Takvim</title>
-<meta name="description" content="İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi. OBS'nin yayınlamadığı geçmiş dönemleri, kontenjan geçmişini ve bölüm bazlı müfredat haritasını otomatik toplayan açık veri sitesi.">
+<meta name="description" content="İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi: 2016'dan bugüne 27 dönem, 64.000+ ders kaydı. OBS'nin yayınlamadığı geçmiş dönemleri, kontenjan geçmişini ve bölüm bazlı müfredat haritasını her gün otomatik toplayan açık veri sitesi.">
 <meta name="keywords" content="itü ders arşivi, itü önşart, itü ders programı, itü akademik takvim, itü müfredat, itü ders planı, itü kontenjan, istanbul teknik üniversitesi">
 <meta name="author" content="İTÜ Ders Arşivi">
 <meta name="robots" content="index, follow">
@@ -35,6 +35,52 @@
   "description": "İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi. OBS'nin yayınlamadığı geçmiş dönemleri otomatik toplayan açık veri sitesi.",
   "inLanguage": "tr-TR",
   "isAccessibleForFree": true
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "İTÜ Ders Programı ve Akademik Takvim Arşivi",
+  "description": "İstanbul Teknik Üniversitesi'nin ders programı, önşart, sınav takvimi ve akademik takvim verilerinin 2016'dan bugüne günlük olarak arşivlenmiş hâli.",
+  "url": "https://yatuk.github.io/itu-archive/",
+  "sameAs": "https://github.com/yatuk/itu-archive",
+  "creator": { "@type": "Organization", "name": "İTÜ Ders Arşivi" },
+  "temporalCoverage": "2016-01-01/..",
+  "spatialCoverage": "İstanbul Teknik Üniversitesi",
+  "keywords": ["itü ders programı", "itü önşart", "itü akademik takvim", "itü müfredat", "istanbul teknik üniversitesi"],
+  "isAccessibleForFree": true,
+  "distribution": [
+    { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://yatuk.github.io/itu-archive/data/index.json" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "İTÜ'de geçmiş dönemlerin ders programına nasıl bakılır?",
+      "acceptedAnswer": { "@type": "Answer", "text": "OBS (obs.itu.edu.tr) yalnızca içinde bulunulan dönemi gösterir, geçmiş dönemler resmî sitede yer almaz. İTÜ Ders Arşivi bu veriyi 2016-2017'den bugüne, dönem dönem arşivlemiş hâlde sunar." }
+    },
+    {
+      "@type": "Question",
+      "name": "İTÜ'de bir dersin önşartı nasıl görülür?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sitenin Önşart Haritası sekmesinde bir bölüm seçildiğinde, o bölümün güncel müfredatı dönem dönem, gerçek önşart ilişkileriyle görselleştirilir." }
+    },
+    {
+      "@type": "Question",
+      "name": "Bu dönem İTÜ'de hangi dersler açılıyor?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dersler sekmesinde aktif dönemin tüm şubeleri; ders kodu, öğretim üyesi, kontenjan ve doluluk bilgisiyle birlikte aranabilir." }
+    },
+    {
+      "@type": "Question",
+      "name": "İTÜ ders arşivi verisi ne sıklıkla güncelleniyor?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ders programı günde bir kez, kontenjan doluluğu kayıt haftalarında yarım saatte bir otomatik olarak taranır ve arşive eklenir." }
+    }
+  ]
 }
 </script>
 </head>
@@ -222,6 +268,20 @@ curl https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM
 
 # dönem ve takvim listesi
 curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
+
+   <h2>Sık sorulanlar</h2>
+   <p><strong>İTÜ'de geçmiş dönemlerin ders programına nasıl bakılır?</strong><br>
+   OBS (obs.itu.edu.tr) yalnızca içinde bulunulan dönemi gösterir, geçmiş dönemler resmî
+   sitede yer almaz. Bu arşiv o veriyi 2016-2017'den bugüne, dönem dönem saklanmış hâlde sunar.</p>
+   <p><strong>İTÜ'de bir dersin önşartı nasıl görülür?</strong><br>
+   Önşart Haritası sekmesinde bir bölüm seçildiğinde, o bölümün güncel müfredatı dönem dönem,
+   gerçek önşart ilişkileriyle görselleştirilir.</p>
+   <p><strong>Bu dönem İTÜ'de hangi dersler açılıyor?</strong><br>
+   Dersler sekmesinde aktif dönemin tüm şubeleri; ders kodu, öğretim üyesi, kontenjan ve
+   doluluk bilgisiyle birlikte aranabilir.</p>
+   <p><strong>İTÜ ders arşivi verisi ne sıklıkla güncelleniyor?</strong><br>
+   Ders programı günde bir kez, kontenjan doluluğu kayıt haftalarında yarım saatte bir
+   otomatik olarak taranır ve arşive eklenir.</p>
 
    <h2>Uyarı</h2>
    <p>

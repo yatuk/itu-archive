@@ -112,6 +112,10 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 		return err
 	}
 
+	if err := touchSitemap(out); err != nil {
+		return err
+	}
+
 	logf("bitti (%s)", time.Since(started).Round(time.Second))
 	return nil
 }
@@ -437,6 +441,24 @@ func maxKey(refs []model.TermRef) string {
 		}
 	}
 	return k
+}
+
+// touchSitemap, sitemap.xml'in <lastmod> tarihini bugüne çeker. Google'a
+// "bu sayfa düzenli güncelleniyor" sinyalini otomatik, elle dokunmadan vermek
+// için — her scrape çalıştığında tazeleniyor.
+func touchSitemap(root string) error {
+	path := filepath.Join(root, "sitemap.xml")
+	body := fmt.Sprintf(`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yatuk.github.io/itu-archive/</loc>
+    <lastmod>%s</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+`, time.Now().UTC().Format("2006-01-02"))
+	return os.WriteFile(path, []byte(body), 0o644)
 }
 
 func logf(format string, args ...any) {

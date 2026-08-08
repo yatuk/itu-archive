@@ -7,14 +7,21 @@ const cache = new Map();
 export const $ = (sel) => document.querySelector(sel);
 
 // getJSON, aynı yol bir kez çekilir (önbellek) ve başarısızlıkta hata fırlatır.
+// Hatalı (örn. 404) sonuçlar önbellekte tutulmaz: dosya sonradan oluşursa
+// sayfa yenilenmeden de aynı yol tekrar denenebilir.
 export function getJSON(path) {
-  if (!cache.has(path)) {
-    cache.set(path, fetch(path).then((r) => {
+  if (cache.has(path)) return cache.get(path);
+  const p = fetch(path)
+    .then((r) => {
       if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
       return r.json();
-    }));
-  }
-  return cache.get(path);
+    })
+    .catch((err) => {
+      cache.delete(path);
+      throw err;
+    });
+  cache.set(path, p);
+  return p;
 }
 
 // setStatus, bir durum satırına metin + stil yazar. busy/error sınıfları

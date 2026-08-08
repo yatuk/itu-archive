@@ -17,6 +17,7 @@ export function initCourses() {
   $('#f-term').addEventListener('change', () => loadTerm($('#f-term').value));
   $('#more').addEventListener('click', () => renderRows(true));
   $('#csv').addEventListener('click', exportCSV);
+  $('#tt-toggle').addEventListener('click', toggleTimetable);
   wireSort();
 }
 
@@ -101,11 +102,13 @@ export function applyFilters() {
   $('#resultline').innerHTML = n === total
     ? `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} branş`
     : `<b>${n}</b> / ${total} şube eşleşti`;
+  if (ttOn) renderTimetable();
   saveState();
 }
 
 // Sıralama için satır değerini döndürür; Doluluk yüzde olarak hesaplanır.
-function sortValue(r, key) {
+// Saf fonksiyon — test edilebilir olması için dışa açık.
+export function sortValue(r, key) {
   switch (key) {
     case 'crn': return r[0];
     case 'code': return r[1];
@@ -122,7 +125,8 @@ function sortValue(r, key) {
 function wireSort() {
   const headers = [...document.querySelectorAll('#results th[data-sort]')];
   for (const th of headers) {
-    th.addEventListener('click', () => {
+    // Gerçek buton: klavye ve ekran okuyucu erişimi için th yerine buton.
+    th.querySelector('.th-sort').addEventListener('click', () => {
       const key = th.dataset.sort;
       if (state.sort.key === key) state.sort.dir *= -1;
       else state.sort = { key, dir: 1 };
@@ -243,4 +247,113 @@ function saveState() {
   const qs = p.toString();
   const url = location.pathname + (qs ? '?' + qs : '') + location.hash;
   history.replaceState(null, '', url);
+}
+
+/* ---------- zaman çizelgesi ---------- */
+
+let ttOn = false;
+
+// Çizelge ile tablo arasında geçiş. Filtreler/arama uygulanınca çizelge
+// state.filtered üzerinden yeniden çizilir.
+function toggleTimetable() {
+  ttOn = !ttOn;
+  const wrap = $('#tt');
+  document.querySelector('#results').closest('.tablewrap').hidden = ttOn;
+  $('#more').hidden = ttOn;
+  $('#tt-toggle').classList.toggle('active', ttOn);
+  $('#tt-toggle').setAttribute('aria-pressed', String(ttOn));
+  wrap.hidden = !ttOn;
+  if (ttOn) renderTimetable();
+}
+
+// "Pazartesi 08:30/12:29 | Çarşamba 13:00/16:59" -> oturum listesi (dakika cinsinden).
+export function parseWhen(when) {
+  const out = [];
+  if (!when) return out;
+  for (const part of String(when).split(' | ')) {
+    const m = part.trim().match(/^(\S+)\s+(\d{2}:\d{2})\/(\d{2}:\d{2})$/);
+    if (!m) continue;
+    const day = m[1];
+    const start = toMin(m[2]), end = toMin(m[3]);
+    if (end > start) out.push({ day, start, end });
+  }
+  return out;
+}
+
+function toMin(t) {
+  const [h, m] = t.split(':').map(Number);
+  return h * 60 + m;
+}
+
+function fmtMin(m) {
+  return `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+}
+
+const TT_DAYS = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+
+// Oturumları gün × 30dk slot ızgarasına yerleştirir; çakışma (aynı hücrede
+// birden çok farklı ders) buradan görünür. Saf fonksiyon — test edilebilir.
+export function buildTimetable(rows) {
+  const all = [];
+  for (const r of rows) {
+    for (const s of parseWhen(r[5])) all.push({ ...s, row: r });
+  }
+  if (!all.length) return null;
+  const startSlot = Math.floor(Math.min(...all.map((s) => s.start)) / 30) * 30;
+  const endSlot = Math.ceil(Math.max(...all.map((s) => s.end)) / 30) * 30;
+  const nSlots = (endSlot - startSlot) / 30;
+
+  const grid = TT_DAYS.map(() => Array.from({ length: nSlots }, () => []));
+  for (const s of all) {
+    const di = TT_DAYS.indexOf(s.day);
+    if (di < 0) continue;
+    for (let t = s.start; t < s.end; t += 30) {
+      const si = (t - startSlot) / 30;
+      if (si >= 0 && si < nSlots) grid[di][si].push(s);
+    }
+  }
+  return { startSlot, nSlots, grid, all };
+}
+
+function renderTimetable() {
+  const wrap = $('#tt');
+  const t = buildTimetable(state.filtered);
+  if (!t) {
+    wrap.innerHTML = '<p class="empty">filtrelenen şubelerde zaman bilgisi yok</p>';
+    return;
+  }
+  const { startSlot, nSlots, grid, all } = t;
+
+  let conflictCells = 0;
+  let html = `<p class="tt-note"><b>${all.length}</b> oturum · <b>${state.filtered.length}</b> şube</p>`;
+  html += `<div class="tt-scroll"><table class="tt">
+    <thead><tr><th class="tt-time">saat</th>${TT_DAYS.map((d) => `<th>${d.slice(0, 3)}</th>`).join('')}</tr></thead><tbody>`;
+
+  for (let si = 0; si < nSlots; si++) {
+    html += `<tr><th class="tt-time">${fmtMin(startSlot + si * 30)}</th>`;
+    for (let di = 0; di < 7; di++) {
+      const cell = grid[di][si];
+      const codes = [...new Set(cell.map((c) => c.row[1]))];
+      const conflict = codes.length > 1;
+      if (conflict) conflictCells++;
+      html += `<td class="tt-cell${conflict ? ' tt-conflict' : ''}"${conflict ? ` title="Çakışma: ${esc(codes.join(', '))}"` : ''}>`;
+      html += cell.map((c) =>
+        `<button type="button" class="tt-chip" data-code="${esc(c.row[1])}" title="${esc(c.row[2])}">${esc(c.row[1])}</button>`).join('');
+      html += '</td>';
+    }
+    html += '</tr>';
+  }
+  html += '</tbody></table></div>';
+
+  if (conflictCells) {
+    html += `<p class="tt-conflict-note">⚠ <b>${conflictCells}</b> zaman hücresinde birden çok ders çakışıyor. Çipe tıklayınca arama daralır.</p>`;
+  }
+  wrap.innerHTML = html;
+
+  wrap.querySelectorAll('.tt-chip').forEach((ch) => {
+    ch.addEventListener('click', () => {
+      $('#q').value = ch.dataset.code;
+      applyFilters();
+    });
+  });
 }

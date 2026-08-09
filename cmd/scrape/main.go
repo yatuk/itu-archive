@@ -454,7 +454,7 @@ func touchSitemap(root string) error {
 	body := fmt.Sprintf(`<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yatuk.github.io/itu-archive/</loc>
+    <loc>https://itu-ders.com/</loc>
     <lastmod>%s</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>

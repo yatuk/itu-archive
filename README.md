@@ -112,6 +112,9 @@ Settings > Pages > Source: Deploy from a branch, `main` / `docs`. Ayrı bir depl
 workflow'u yok, gerek de yok. Scraper zaten `docs/` altına yazıyor, her commit
 kendiliğinden yayına giriyor.
 
+Özel alan `itu-ders.com` (`docs/CNAME` içinde). DNS kayıtları Cloudflare'da,
+sitedeki canonical/og/sitemap URL'leri yeni adrese yazıyor.
+
 Bot'un commit atabilmesi için Settings > Actions > General kısmında workflow
 izinleri "Read and write" olmalı. Bunu unutursanız Actions yeşil görünür ama
 hiçbir şey push edilmez.

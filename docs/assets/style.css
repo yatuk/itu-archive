@@ -243,23 +243,36 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 }
 .theme-pick select { max-width: 170px; }
 
-/* ---------- sekmeler ---------- */
+/* ---------- sekmeler: yapışkan cam hap ("Fluid Island") ---------- */
 
-.tabs { display: flex; gap: 2px; margin-top: 26px; flex-wrap: wrap; }
+.tabs {
+  display: flex; gap: 2px; flex-wrap: wrap; width: max-content; max-width: 100%;
+  margin: 26px 0 0; padding: 4px; border-radius: 999px;
+  background: var(--panel);
+  background: color-mix(in srgb, var(--panel) 82%, transparent);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky; top: 12px; z-index: 30;
+}
 .tabs button {
   font: inherit; letter-spacing: .1em; cursor: pointer;
-  background: var(--panel); color: var(--dim);
-  border: 1px solid var(--line); border-bottom: none;
-  padding: 9px 16px; border-radius: 3px 3px 0 0;
+  background: transparent; color: var(--dim);
+  border: none; padding: 8px 16px; border-radius: 999px;
 }
-.tabs button:hover { color: var(--fg); border-color: var(--line-hot); }
+.tabs button:hover { color: var(--fg); background: var(--panel-2); }
 .tabs button[aria-selected="true"] {
-  color: var(--bg); background: var(--acid); border-color: var(--acid); font-weight: 700;
+  color: var(--bg); background: var(--acid); font-weight: 700;
 }
 .tabs button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
 
-main { padding: 0 20px 60px; border-top: 1px solid var(--line); margin-top: -1px; }
+main { padding: 0 20px 60px; }
 .view { padding-top: 26px; }
+
+@media (max-width: 640px) {
+  .tabs { width: 100%; border-radius: 16px; }
+}
 
 /* ---------- konsol / filtreler ---------- */
 
@@ -401,22 +414,39 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 }
 
 .more {
-  display: block; width: 100%; margin-top: 14px; padding: 12px;
+  display: flex; width: 100%; margin-top: 14px; padding: 12px 20px;
   font: inherit; letter-spacing: .12em; cursor: pointer;
   background: var(--panel); color: var(--acid); border: 1px dashed var(--line-hot);
+  border-radius: 999px; align-items: center; justify-content: center; gap: 10px;
+}
+.more::after {
+  content: "↓";
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--panel-2); border: 1px solid var(--hairline);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px; color: var(--cyan); line-height: 1;
+  transition: transform 180ms var(--ease-spring);
 }
 .more:hover { border-color: var(--acid); }
-/* display:block, hidden özniteliğinin varsayılan display:none'ını ezdiği için gerekli */
+.more:hover::after { transform: translateY(2px); }
+/* display:flex, hidden özniteliğinin varsayılan display:none'ını ezdiği için gerekli */
 .more[hidden] { display: none; }
 
 .empty { padding: 40px 16px; text-align: center; color: var(--dimmer); }
 
 /* ---------- geçmiş ---------- */
 
-.mh {
-  font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
-  color: var(--dimmer); margin: 22px 0 10px;
+/* Eyebrow rozetleri — bölüm etiketleri için mikro hap */
+.eyebrow,
+.mh,
+.pg-detail h4,
+.d-progs h4 {
+  font-size: 10px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--dimmer);
+  display: inline-block; padding: 3px 10px; border-radius: 999px;
+  background: var(--panel-2); border: 1px solid var(--hairline);
 }
+.mh { margin: 22px 0 10px; }
 .mh::before { content: "// "; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -487,9 +517,25 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 
 .btn-ghost {
   font: inherit; background: transparent; color: var(--dim);
-  border: 1px solid var(--line-hot); padding: 8px 12px; cursor: pointer; white-space: nowrap;
+  border: 1px solid var(--line-hot); padding: 8px 16px; cursor: pointer; white-space: nowrap;
+  border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 8px;
 }
 .btn-ghost:hover { color: var(--acid); border-color: var(--acid); }
+
+/* Button-in-Button: ikon yuvalanmış dairesinde durur, hover'da kinetik kayar. */
+#csv::after, #tt-toggle::after, #tour::after {
+  content: "";
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--panel-2); border: 1px solid var(--hairline);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 11px; color: var(--cyan); line-height: 1;
+  transition: transform 180ms var(--ease-spring);
+}
+#csv::after { content: "↓"; }
+#tt-toggle::after { content: "▦"; }
+#tour::after { content: "◈"; }
+.btn-ghost:hover::after { transform: translate(1px, -1px) scale(1.08); }
 
 .pg-results { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
 .pg-status { color: var(--dim); font-size: 12px; margin: 0 0 10px; }
@@ -584,9 +630,9 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .termcard .links { display: flex; gap: 8px; flex-wrap: wrap; }
 .termcard a.btn {
   color: var(--cyan); text-decoration: none; border: 1px solid var(--line-hot);
-  padding: 6px 10px; font-size: 12px; letter-spacing: .08em;
+  padding: 6px 14px; font-size: 12px; letter-spacing: .08em; border-radius: 999px;
 }
-.termcard a.btn:hover { border-color: var(--cyan); background: var(--panel-2); }
+.termcard a.btn:hover { border-color: var(--cyan); background: var(--panel-2); color: var(--acid); }
 .termcard.missing { border-style: dashed; opacity: .65; }
 .termcard.missing h3 { color: var(--dimmer); }
 .badge {

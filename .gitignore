@@ -2,6 +2,13 @@
 /scrape
 /scrape.exe
 
+# node / npm / wrangler
+node_modules/
+package-lock.json
+wrangler.jsonc
+wrangler.toml
+.wrangler/
+
 # yerel araç ayarları
 .claude/
 

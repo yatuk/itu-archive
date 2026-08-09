@@ -643,7 +643,10 @@ func (b *Builder) writeIndexPage(terms []termRow) error {
 		prefix = "en/"
 	}
 	canonical := baseURL + "/" + prefix
-	title := b.l.SiteTitle
+	title := "Ders Arşivi"
+	if b.l.Code == "en" {
+		title = "Course Archive"
+	}
 	desc := b.l.SiteTagline
 
 	var recent []string

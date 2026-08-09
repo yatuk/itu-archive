@@ -24,6 +24,121 @@ import (
 
 const baseURL = "https://itu-ders.com"
 
+// lang, sayfa şablonundaki tüm sabit metinlerin çevirisini taşır.
+type lang struct {
+	Code              string // "tr" veya "en"
+	SiteTitle         string
+	SiteTagline       string
+	NavDersler        string
+	NavGecmis         string
+	NavOnsart         string
+	NavSinavlar       string
+	NavTakvim         string
+	NavProgram        string
+	NavHakkinda       string
+	CrumbHome         string
+	FootScanned       string
+	FootLive          string
+	FootSitemap       string
+	TermSuffix        string // "ders programı ve arşivi" / "course schedule and archive"
+	TermLeadFmt       string // "İTÜ %s — %d ders, %d şube, %d branş."
+	TermLiveBadge     string // "aktif dönem · canlı veri" / "active term · live data"
+	TermBranchHeading string // "Bu dönemde açılan branşlar"
+	TermSearchCTA     string // "bu dönemi canlı ara" / "search this term live"
+	TermDataCSV       string // "CSV"
+	TermDataJSON      string // "JSON (arama indeksi)"
+	TermDataPrefix    string // "Tüm veri:" / "All data:"
+	StatSections      string // "şube"
+	StatCourses       string // "ders"
+	StatBranches      string // "branş"
+	StatScanned       string // "son tarama"
+	BranchTitleFmt    string // "%s branşı dersleri ve dönem dökümü"
+	BranchLeadFmt     string // "İTÜ %s branşının tüm dönemlerdeki arşivi — %d ders kodu, %d dönem, %d şube."
+	BranchH1Fmt       string // "%s branşı"
+	BranchSearchCTA   string // "bu branşı canlı ara"
+	BranchCodeHeading string // "Ders kodları" / "Course codes"
+	BranchTermHeading string // "Dönem dökümü"
+	BranchTermCol     string // "Dönem"
+	BranchSecCol      string // "Şube"
+	CourseTitleFmt    string // "%s — ..."
+	CourseLeadFmt     string // "%s (%s) — İTÜ'de %d dönemde..."
+	CourseSearchCTA   string
+	CourseStatTerms   string // "toplam dönem"
+	CourseSectHead    string // "Son dönem şubeleri"
+	CourseSectCRN     string
+	CourseSectInstr   string
+	CourseSectTime    string
+	CourseSectCap     string
+	CourseHistHead    string // "Dönem geçmişi"
+	CourseHistTerm    string // "Dönem"
+	CourseHistInstr   string // "Öğretim Üyesi"
+	CourseHistCap     string // "Kont"
+	CourseHistEnr     string // "Yazılan"
+	CourseQuotaHead   string // "Kontenjan doluluk geçmişi"
+	InstrTitleFmt     string // "%s — verdiği dersler"
+	InstrLeadFmt      string
+	InstrStatTerms    string // "toplam dönem"
+	InstrStatRecords  string // "ders kaydı"
+	InstrTableHead    string // "Verdiği dersler"
+	InstrColCourse    string // "Ders"
+	InstrColName      string // "Adı"
+	InstrColTerm      string // "Dönem"
+	InstrColCap       string // "Kont"
+	InstrColEnr       string // "Yazılan"
+}
+
+var langTR = lang{
+	Code: "tr",
+	SiteTitle: "İTÜ Ders Arşivi",
+	SiteTagline: "obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri. Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı — kalıcı olarak.",
+	NavDersler: "dersler", NavGecmis: "geçmiş", NavOnsart: "önşart", NavSinavlar: "sınavlar", NavTakvim: "takvim", NavProgram: "program", NavHakkinda: "hakkında",
+	CrumbHome: "Ders Arşivi", FootScanned: "son tarama", FootLive: "canlı site", FootSitemap: "sitemap",
+	TermSuffix: "ders programı ve arşivi",
+	TermLeadFmt: "İTÜ %s — %d ders, %d şube, %d branş.",
+	TermLiveBadge: "aktif dönem · canlı veri", TermBranchHeading: "Bu dönemde açılan branşlar",
+	TermSearchCTA: "bu dönemi canlı ara", TermDataCSV: "CSV", TermDataJSON: "JSON (arama indeksi)", TermDataPrefix: "Tüm veri:",
+	StatSections: "şube", StatCourses: "ders", StatBranches: "branş", StatScanned: "son tarama",
+	BranchTitleFmt: "%s branşı dersleri ve dönem dökümü", BranchLeadFmt: "İTÜ %s branşının tüm dönemlerdeki arşivi — %d ders kodu, %d dönem, %d şube.",
+	BranchH1Fmt: "%s branşı", BranchSearchCTA: "bu branşı canlı ara", BranchCodeHeading: "Ders kodları", BranchTermHeading: "Dönem dökümü",
+	BranchTermCol: "Dönem", BranchSecCol: "Şube",
+	CourseTitleFmt: "%s — %s",
+	CourseLeadFmt: "%s (%s) — İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
+	CourseSearchCTA: "bu dersi canlı ara", CourseStatTerms: "toplam dönem",
+	CourseSectHead: "Son dönem şubeleri", CourseSectCRN: "CRN", CourseSectInstr: "Öğretim Üyesi", CourseSectTime: "Zaman", CourseSectCap: "Kont/Yazılan",
+	CourseHistHead: "Dönem geçmişi", CourseHistTerm: "Dönem", CourseHistInstr: "Öğretim Üyesi", CourseHistCap: "Kont", CourseHistEnr: "Yazılan",
+	CourseQuotaHead: "Kontenjan doluluk geçmişi",
+	InstrTitleFmt: "%s — verdiği dersler",
+	InstrLeadFmt: "%s — İTÜ'de %d dönemde, %d farklı ders.",
+	InstrStatTerms: "toplam dönem", InstrStatRecords: "ders kaydı", InstrTableHead: "Verdiği dersler",
+	InstrColCourse: "Ders", InstrColName: "Adı", InstrColTerm: "Dönem", InstrColCap: "Kont", InstrColEnr: "Yazılan",
+}
+
+var langEN = lang{
+	Code: "en",
+	SiteTitle: "İTÜ Course Archive",
+	SiteTagline: "Open data automatically collected from obs.itu.edu.tr. Which courses opened in which term, who taught them, how many enrolled — permanently archived.",
+	NavDersler: "courses", NavGecmis: "history", NavOnsart: "prereqs", NavSinavlar: "exams", NavTakvim: "calendar", NavProgram: "schedule", NavHakkinda: "about",
+	CrumbHome: "Course Archive", FootScanned: "last scrape", FootLive: "live site", FootSitemap: "sitemap",
+	TermSuffix: "course schedule and archive",
+	TermLeadFmt: "İTÜ %s — %d courses, %d sections, %d branches.",
+	TermLiveBadge: "active term · live data", TermBranchHeading: "Branches open this term",
+	TermSearchCTA: "search this term live", TermDataCSV: "CSV", TermDataJSON: "JSON (search index)", TermDataPrefix: "All data:",
+	StatSections: "sections", StatCourses: "courses", StatBranches: "branches", StatScanned: "last scraped",
+	BranchTitleFmt: "%s branch courses and term breakdown", BranchLeadFmt: "İTÜ %s branch archive across all terms — %d course codes, %d terms, %d sections.",
+	BranchH1Fmt: "%s branch", BranchSearchCTA: "search this branch live", BranchCodeHeading: "Course codes", BranchTermHeading: "Term breakdown",
+	BranchTermCol: "Term", BranchSecCol: "Sections",
+	CourseTitleFmt: "%s — %s",
+	CourseLeadFmt: "%s (%s) — offered in %d terms at İTÜ. Historical sections, instructors, and latest schedule.",
+	CourseSearchCTA: "search this course live", CourseStatTerms: "total terms",
+	CourseSectHead: "Latest term sections", CourseSectCRN: "CRN", CourseSectInstr: "Instructor", CourseSectTime: "Time", CourseSectCap: "Cap/Enr",
+	CourseHistHead: "Term history", CourseHistTerm: "Term", CourseHistInstr: "Instructor", CourseHistCap: "Cap", CourseHistEnr: "Enr",
+	CourseQuotaHead: "Enrollment history",
+	InstrTitleFmt: "%s — courses taught",
+	InstrLeadFmt: "%s — taught across %d terms, %d distinct courses at İTÜ.",
+	InstrStatTerms: "total terms", InstrStatRecords: "course records", InstrTableHead: "Courses taught",
+	InstrColCourse: "Course", InstrColName: "Name", InstrColTerm: "Term", InstrColCap: "Cap", InstrColEnr: "Enr",
+}
+
 var trMonths = []string{
 	"", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
 	"Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık",
@@ -31,15 +146,14 @@ var trMonths = []string{
 
 // Builder, docs kökünden veriyi okuyup sayfaları yazar.
 type Builder struct {
-	root    string
+	root    string // dataRoot — verinin okunduğu kök (her zaman docs/)
+	outRoot string // sayfaların yazıldığı kök (docs/ veya docs/en/)
+	l       lang
 	index   model.SiteIndex
 	aggs    map[string]*branchAgg
 	courses map[string]*histCourse
-	// courseSects: kursun son dönemindeki CRN satırları (search.json'dan).
 	courseSects map[string][]sectRow
-	// instructors: ad -> tarihsel hoca kaydı
 	instructors map[string]*histInstr
-	// quotaSeries: CRN -> kontenjan zaman serisi
 	quotaSeries map[string][]quotaPoint
 }
 
@@ -113,16 +227,24 @@ type termRow struct {
 	meta model.TermMeta
 }
 
-func New(root string) *Builder { return &Builder{root: root} }
+func New(dataRoot, langCode string) *Builder {
+	l := langTR
+	outRoot := dataRoot
+	if langCode == "en" {
+		outRoot = filepath.Join(dataRoot, "en")
+		l = langEN
+	}
+	return &Builder{root: dataRoot, outRoot: outRoot, l: l}
+}
 
 // Generate, dizinde biriken geçmiş sayfaları da temizleyen ana üreticidir.
 // root altında dersler/ ve brans/ klasörlerini silip yeniden oluşturur.
 func (b *Builder) Generate() error {
 	// Eski çıktıyı temizle.
-	_ = os.RemoveAll(filepath.Join(b.root, "dersler"))
-	_ = os.RemoveAll(filepath.Join(b.root, "brans"))
-	_ = os.RemoveAll(filepath.Join(b.root, "ders"))
-	_ = os.RemoveAll(filepath.Join(b.root, "hoca"))
+	_ = os.RemoveAll(filepath.Join(b.outRoot, "dersler"))
+	_ = os.RemoveAll(filepath.Join(b.outRoot, "brans"))
+	_ = os.RemoveAll(filepath.Join(b.outRoot, "ders"))
+	_ = os.RemoveAll(filepath.Join(b.outRoot, "hoca"))
 
 	if err := readJSON(filepath.Join(b.root, "data", "index.json"), &b.index); err != nil {
 		return fmt.Errorf("index okunamadı: %w", err)
@@ -289,7 +411,7 @@ func (b *Builder) writeTermPage(tr termRow) error {
 			tr.tref.Slug, tr.tref.Slug),
 	))
 
-	return b.writePage(filepath.Join(b.root, "dersler", tr.tref.Slug, "index.html"),
+	return b.writePage(filepath.Join(b.outRoot, "dersler", tr.tref.Slug, "index.html"),
 		title, lead, canonical, fmtDate(tr.tref.ScrapedAt), content, jsonld)
 }
 
@@ -380,7 +502,7 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 			`</tbody></table>`,
 	))
 
-	return b.writePage(filepath.Join(b.root, "brans", code, "index.html"),
+	return b.writePage(filepath.Join(b.outRoot, "brans", code, "index.html"),
 		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
 }
 
@@ -418,7 +540,7 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	}
 
 	out.WriteString("</urlset>\n")
-	return os.WriteFile(filepath.Join(b.root, "sitemap.xml"), []byte(out.String()), 0o644)
+	return os.WriteFile(filepath.Join(b.outRoot, "sitemap.xml"), []byte(out.String()), 0o644)
 }
 
 func sitemapURL(w *strings.Builder, loc, lastmod, changefreq, priority string) {
@@ -446,15 +568,16 @@ func escapeXML(s string) string {
 }
 
 var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
-<html lang="tr">
+<html lang="{{.Lang.Code}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
 <script>(function(){try{var t=localStorage.getItem('itu-theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t);else document.documentElement.setAttribute('data-theme',matchMedia('(prefers-color-scheme:light)').matches?'light':'dark')}catch(e){}})()</script>
-<title>{{.Title}} — İTÜ Ders Arşivi</title>
+<title>{{.Title}} — {{.Lang.SiteTitle}}</title>
 <meta name="description" content="{{.Description}}">
 <link rel="canonical" href="{{.Canonical}}">
+{{if .AltURL}}<link rel="alternate" hreflang="{{.AltLang}}" href="{{.AltURL}}">{{end}}
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="/favicon.png" type="image/png">
@@ -467,37 +590,36 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
   <div class="mast-top">
    <div class="brand">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
-    <h1><a href="/">DERS ARŞİVİ</a></h1>
+    <h1><a href="/">{{.Lang.SiteTitle}}</a></h1>
    </div>
   </div>
-  <p class="tagline">
-   obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri.
-   Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı — kalıcı olarak.
-  </p>
+  <p class="tagline">{{.Lang.SiteTagline}}</p>
  </div>
 </header>
 <nav class="tabs wrap" role="navigation" aria-label="Bölümler">
- <a href="/">dersler</a>
- <a href="/#gecmis">geçmiş</a>
- <a href="/#onsart">önşart</a>
- <a href="/#sinavlar">sınavlar</a>
- <a href="/#takvim">takvim</a>
- <a href="/#program">program</a>
- <a href="/#hakkinda">hakkında</a>
+ <a href="/">{{.Lang.NavDersler}}</a>
+ <a href="/#gecmis">{{.Lang.NavGecmis}}</a>
+ <a href="/#onsart">{{.Lang.NavOnsart}}</a>
+ <a href="/#sinavlar">{{.Lang.NavSinavlar}}</a>
+ <a href="/#takvim">{{.Lang.NavTakvim}}</a>
+ <a href="/#program">{{.Lang.NavProgram}}</a>
+ <a href="/#hakkinda">{{.Lang.NavHakkinda}}</a>
 </nav>
 <main class="wrap">
 {{.Content}}
 </main>
 <footer class="wrap">
- <span>son tarama {{.Scraped}}</span> · <a href="/">canlı site</a> · <a href="/sitemap.xml">sitemap</a>
+ <span>{{.Lang.FootScanned}} {{.Scraped}}</span> · <a href="/">{{.Lang.FootLive}}</a> · <a href="/sitemap.xml">{{.Lang.FootSitemap}}</a>
 </footer>
 </body>
 </html>`))
 
 type pageData struct {
 	Title, Description, Canonical, Scraped string
+	AltURL, AltLang                        string
 	Content                                template.HTML
 	JSONLD                                 template.HTML
+	Lang                                   lang
 }
 
 func (b *Builder) writePage(path, title, desc, canonical, scraped string, content, jsonld template.HTML) error {
@@ -509,9 +631,20 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 		return err
 	}
 	defer f.Close()
+	// hreflang alternatif URL'i
+	altURL := ""
+	altLang := ""
+	if b.l.Code == "tr" {
+		altURL = strings.Replace(canonical, baseURL, baseURL+"/en", 1)
+		altLang = "en"
+	} else {
+		altURL = strings.Replace(canonical, baseURL+"/en", baseURL, 1)
+		altLang = "tr"
+	}
 	return pageTmpl.Execute(f, pageData{
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
+		AltURL: altURL, AltLang: altLang, Lang: b.l,
 	})
 }
 
@@ -752,7 +885,7 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 			strings.Join(rows, "")+`</tbody></table>`,
 	))
 
-	return b.writePage(filepath.Join(b.root, "hoca", slug, "index.html"),
+	return b.writePage(filepath.Join(b.outRoot, "hoca", slug, "index.html"),
 		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
 }
 
@@ -1097,7 +1230,7 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			strings.Join(histRows, "")+`</tbody></table>`,
 	))
 
-	return b.writePage(filepath.Join(b.root, "ders", slug, "index.html"),
+	return b.writePage(filepath.Join(b.outRoot, "ders", slug, "index.html"),
 		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
 }
 

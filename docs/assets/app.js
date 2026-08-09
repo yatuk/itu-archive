@@ -5,6 +5,7 @@
 
 import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
 import { state, markIndexReady } from './core/store.js';
+import { I18N } from './i18n.js';
 import { initCourses, loadTerm, applyFilters } from './views/courses.js';
 import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
 import { initExams, onShow as examsShow } from './views/exams.js';
@@ -23,6 +24,7 @@ let showView = null;
 const pendingView = location.hash.slice(1);
 
 async function boot() {
+  I18N.translateDOM();
   initTheme();
   wireTabs();
   wireHistoryJump();
@@ -31,18 +33,18 @@ async function boot() {
     state.index = await getJSON('data/index.json');
   } catch (e) {
     markIndexReady(); // yükleme başarısız olsa da bekleyenleri serbest bırak
-    setStatus($('#stat-status'), 'veri yüklenemedi', { error: true });
+    setStatus($('#stat-status'), I18N.t('statVeriYok'), { error: true });
     $('#rows').innerHTML = `<tr><td colspan="9" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
     return;
   }
 
   const ix = state.index;
-  $('#stat-status').textContent = 'çevrimiçi';
+  $('#stat-status').textContent = I18N.t('statOnline');
   $('#stat-status').className = 'ok';
   $('#stat-term').textContent = ix.currentTerm || '—';
   $('#stat-scraped').textContent = fmtDate(ix.scrapedAt);
   $('#stat-terms').textContent = `${ix.terms.filter((t) => !t.missing).length} dönem · ${ix.calendars.length} takvim yılı`;
-  $('#foot-build').textContent = `son tarama ${fmtDate(ix.scrapedAt)}`;
+  $('#foot-build').textContent = `${I18N.t('footBuild')} ${fmtDate(ix.scrapedAt)}`;
 
   // Dönem seçici (dersler görünümüne ait) + paylaşılabilir URL durumu.
   const termSel = $('#f-term');

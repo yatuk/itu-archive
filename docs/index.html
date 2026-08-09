@@ -41,7 +41,12 @@
   "url": "https://itu-ders.com/",
   "description": "İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi. OBS'nin yayınlamadığı geçmiş dönemleri otomatik toplayan açık veri sitesi.",
   "inLanguage": "tr-TR",
-  "isAccessibleForFree": true
+  "isAccessibleForFree": true,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": { "@type": "EntryPoint", "urlTemplate": "https://itu-ders.com/?q={search_term_string}" },
+    "query-input": "required name=search_term_string"
+  }
 }
 </script>
 <script type="application/ld+json">

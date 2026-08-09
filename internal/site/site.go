@@ -371,6 +371,12 @@ func (b *Builder) Generate() error {
 		}
 	}
 
+	if b.l.Code == "en" {
+		if err := b.writeIndexPage(terms); err != nil {
+			return err
+		}
+	}
+
 	return b.writeSitemap(terms, brCodes, courseSlugs, instrSlugs)
 }
 
@@ -516,6 +522,9 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	out.WriteString(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">` + "\n")
 
 	sitemapURL(&out, baseURL+"/", rootDate, "daily", "1.0")
+	if b.l.Code == "en" {
+		sitemapURL(&out, baseURL+"/en/", rootDate, "daily", "0.9")
+	}
 
 	for _, tr := range terms {
 		td := dateOf(tr.tref.ScrapedAt)
@@ -625,6 +634,43 @@ type pageData struct {
 	Content                                template.HTML
 	JSONLD                                 template.HTML
 	Lang                                   lang
+}
+
+// writeIndexPage, dil bazlı statik ana sayfa üretir (/en/).
+func (b *Builder) writeIndexPage(terms []termRow) error {
+	prefix := ""
+	if b.l.Code == "en" {
+		prefix = "en/"
+	}
+	canonical := baseURL + "/" + prefix
+	title := b.l.SiteTitle
+	desc := b.l.SiteTagline
+
+	var recent []string
+	for i, tr := range terms {
+		if i >= 10 { break }
+		recent = append(recent, fmt.Sprintf(
+			`<li><a href="/%sdersler/%s/">%s</a> — %d %s</li>`,
+			prefix, tr.tref.Slug, template.HTMLEscapeString(tr.tref.Label),
+			tr.meta.Sections, b.l.StatSections,
+		))
+	}
+
+	content := template.HTML(buildContent(
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(title)),
+		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(desc)),
+		`<p class="cta"><a class="btn" href="/`+prefix+`">`+b.l.FootLive+`</a></p>`,
+		`<h2>`+b.l.TermBranchHeading+`</h2>`,
+		`<ul class="seo-branchlist">`+strings.Join(recent, "")+`</ul>`,
+	))
+
+	jsonld := jsonldScript([]any{map[string]any{
+		"@context": "https://schema.org", "@type": "WebSite",
+		"url": canonical, "name": title, "description": desc,
+	}})
+
+	return b.writePage(filepath.Join(b.outRoot, "index.html"),
+		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
 }
 
 func (b *Builder) writePage(path, title, desc, canonical, scraped string, content, jsonld template.HTML) error {

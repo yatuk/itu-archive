@@ -158,7 +158,7 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	if err := st.Clean(slug); err != nil {
 		return "", "", err
 	}
-	meta, err := st.WriteTerm(label, slug, time.Now().UTC().Format(time.RFC3339), "obs", sections)
+	meta, err := st.WriteTerm(label, slug, time.Now().UTC().Format(time.RFC3339), true, sections)
 	if err != nil {
 		return "", "", err
 	}
@@ -288,7 +288,7 @@ func runBackfill(ctx context.Context, f *fetch.Client, st *store.Store, currentS
 		if err := st.Clean(sn.Slug); err != nil {
 			return err
 		}
-		meta, err := st.WriteTerm(sn.Label, sn.Slug, stamp, "archive:"+archive.Source, sn.Sections)
+		meta, err := st.WriteTerm(sn.Label, sn.Slug, stamp, false, sn.Sections)
 		if err != nil {
 			return err
 		}
@@ -322,12 +322,15 @@ func writeIndex(root string, st *store.Store) error {
 		if err := json.Unmarshal(b, &m); err != nil {
 			continue
 		}
+		// Canlı dönem: yeni taramada Live bayrağı gelir; eski meta'larda
+		// source "obs" ile de tanınıyor (geriyel uyumluluk).
+		live := m.Live || strings.HasPrefix(m.Source, "obs")
 		refs = append(refs, model.TermRef{
 			Slug: m.Slug, Label: m.Term, ScrapedAt: m.ScrapedAt,
-			Source: m.Source, Sections: m.Sections,
+			Source: store.Source, Live: live, Sections: m.Sections,
 		})
-		if strings.HasPrefix(m.Source, "obs") {
-			current = model.TermRef{Slug: m.Slug, Label: m.Term, ScrapedAt: m.ScrapedAt}
+		if live {
+			current = model.TermRef{Slug: m.Slug, Label: m.Term, ScrapedAt: m.ScrapedAt, Source: store.Source, Live: true}
 			currentMeta = m
 		}
 	}

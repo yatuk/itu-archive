@@ -42,7 +42,7 @@ async function boot() {
   const termSel = $('#f-term');
   termSel.innerHTML = ix.terms
     .filter((t) => !t.missing)
-    .map((t) => `<option value="${t.slug}">${t.label}${t.source === 'obs' ? ' · canlı' : ''}</option>`)
+    .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ' · canlı' : ''}</option>`)
     .join('');
   const params = new URLSearchParams(location.search);
   let initialSlug = ix.currentSlug;
@@ -72,6 +72,7 @@ async function boot() {
   if (params.has('time')) $('#f-time').value = params.get('time');
   if (params.has('level')) $('#f-level').value = params.get('level');
   if (params.has('method')) $('#f-method').value = params.get('method');
+  if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
   applyFilters();
   maybeStartTour();

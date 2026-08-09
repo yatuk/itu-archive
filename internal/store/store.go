@@ -55,8 +55,12 @@ func (s *Store) WriteJSON(v any, parts ...string) error {
 	return enc.Encode(v)
 }
 
+// Source, üretilen tüm veride kullanılan kaynak etiketi.
+const Source = "itu-archive"
+
 // WriteTerm, bir dönemin tüm dosyalarını yazar ve meta'sını döndürür.
-func (s *Store) WriteTerm(label, slug, scrapedAt, source string, sections []model.Section) (*model.TermMeta, error) {
+// live, dönemin aktif (canlı) taranmış dönem olup olmadığını işaretler.
+func (s *Store) WriteTerm(label, slug, scrapedAt string, live bool, sections []model.Section) (*model.TermMeta, error) {
 	// OBS ve tarihsel dökümler zaman zaman aynı şubeyi iki kez döndürüyor
 	// (ör. itutakvimci CSV'lerinde birebir tekrar eden satırlar). CRN site
 	// tarafında detay aramasının ve kontenjan zaman serisinin anahtarı, aynı
@@ -95,7 +99,8 @@ func (s *Store) WriteTerm(label, slug, scrapedAt, source string, sections []mode
 		Term:      label,
 		Slug:      slug,
 		ScrapedAt: scrapedAt,
-		Source:    source,
+		Source:    Source,
+		Live:      live,
 		Sections:  len(sections),
 		Courses:   countDistinct(sections, func(s model.Section) string { return s.Code }),
 		Branches:  branches,

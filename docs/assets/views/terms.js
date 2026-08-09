@@ -13,8 +13,8 @@ export function renderTerms() {
         <p class="meta">Bu dönem ne OBS'de ne de arşiv snapshot'larında bulunuyor.</p></div>
         <div class="links"></div></article>`;
     }
-    const live = t.source === 'obs';
-    const src = live ? 'obs.itu.edu.tr (canlı)' : 'tarihsel döküm';
+    const live = t.live;
+    const src = live ? 'canlı tarama' : 'arşiv dökümü';
     return `<article class="termcard reveal">
       <div>
         <h3>${esc(t.label)}${live ? '<span class="badge live">canlı</span>' : ''}</h3>

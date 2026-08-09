@@ -37,7 +37,8 @@ type TermMeta struct {
 	Term      string       `json:"term"`
 	Slug      string       `json:"slug"`
 	ScrapedAt string       `json:"scrapedAt"`
-	Source    string       `json:"source"` // "obs" | "archive:<kaynak>"
+	Source    string       `json:"source"` // veri kaynağı etiketi (site: "itu-archive")
+	Live      bool         `json:"live,omitempty"` // aktif dönem mi (canlı tarama)
 	Sections  int          `json:"sections"`
 	Courses   int          `json:"courses"`
 	Branches  []BranchMeta `json:"branches"`
@@ -119,7 +120,8 @@ type TermRef struct {
 	Slug      string `json:"slug"`
 	Label     string `json:"label"`
 	ScrapedAt string `json:"scrapedAt"`
-	Source    string `json:"source"`
+	Source    string `json:"source"` // "itu-archive"
+	Live      bool   `json:"live,omitempty"` // aktif dönem (canlı) işareti
 	Sections  int    `json:"sections"`
 	Missing   bool   `json:"missing,omitempty"` // veri bulunamayan dönem (arşiv boşluğu)
 }

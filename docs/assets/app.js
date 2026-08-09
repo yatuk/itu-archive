@@ -72,6 +72,7 @@ async function boot() {
   if (params.has('time')) $('#f-time').value = params.get('time');
   if (params.has('level')) $('#f-level').value = params.get('level');
   if (params.has('method')) $('#f-method').value = params.get('method');
+  if (params.has('program')) $('#f-program').value = params.get('program');
   if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
   applyFilters();

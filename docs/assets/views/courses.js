@@ -21,6 +21,7 @@ export function initCourses() {
   $('#f-time').addEventListener('change', applyFilters);
   $('#f-level').addEventListener('change', applyFilters);
   $('#f-method').addEventListener('change', applyFilters);
+  $('#f-program').addEventListener('change', applyFilters);
   $('#f-code').addEventListener('input', debounce(applyFilters, 120));
   $('#f-open').addEventListener('change', applyFilters);
   $('#f-term').addEventListener('change', () => loadTerm($('#f-term').value));
@@ -76,6 +77,14 @@ export async function loadTerm(slug) {
       methods.map((m) => `<option>${esc(m)}</option>`).join('');
     mSel.value = methods.includes(keepM) ? keepM : '';
 
+    // "Alabilen programlar" filtre seçenekleri bu dönemin verisinden gelir.
+    const programs = [...new Set(rows.flatMap((r) => r[10] || []))].sort((a, b) => a.localeCompare(b, 'tr'));
+    const pSel = $('#f-program');
+    const keepP = pSel.value;
+    pSel.innerHTML = '<option value="">hepsi</option>' +
+      programs.map((p) => `<option>${esc(p)}</option>`).join('');
+    pSel.value = programs.includes(keepP) ? keepP : '';
+
     applyFilters();
   } catch (e) {
     setStatus($('#resultline'), `veri yüklenemedi (${e.message})`, { error: true });
@@ -112,6 +121,7 @@ export function applyFilters() {
   const time = $('#f-time').value;
   const level = $('#f-level').value;
   const method = $('#f-method').value;
+  const program = $('#f-program').value;
   const code = $('#f-code').value.trim().toLowerCase();
   const openOnly = $('#f-open').checked;
   const terms = q ? q.split(/\s+/) : [];
@@ -121,9 +131,10 @@ export function applyFilters() {
     if (code && !r[1].toLowerCase().includes(code)) return false;
     if (day && !r[5].includes(day)) return false;
     if (time && !parseWhen(r[5]).some((s) => timeBucket(s.start) === time)) return false;
-    // Seviye/yöntem alanları tarihsel dönemlerde yoktur; yoksa filtre uygulanmaz.
+    // Seviye/yöntem/program alanları tarihsel dönemlerde yoktur; yoksa filtre uygulanmaz.
     if (level && r[8] && r[8] !== level) return false;
     if (method && r[9] && r[9] !== method) return false;
+    if (program && !(r[10] || []).includes(program)) return false;
     if (openOnly && r[7] >= r[6]) return false;
     if (!terms.length) return true;
     return terms.every((t) => state.hay[i].includes(t));
@@ -202,6 +213,7 @@ function renderChips() {
   if ($('#f-time').value) chips.push({ key: 'time', label: `saat: ${TIME_LABEL[$('#f-time').value] || $('#f-time').value}` });
   if ($('#f-level').value) chips.push({ key: 'level', label: `seviye: ${$('#f-level').value}` });
   if ($('#f-method').value) chips.push({ key: 'method', label: `yöntem: ${$('#f-method').value}` });
+  if ($('#f-program').value) chips.push({ key: 'program', label: `program: ${$('#f-program').value}` });
   if ($('#f-open').checked) chips.push({ key: 'open', label: 'yalnızca kontenjan' });
 
   box.hidden = !chips.length;
@@ -221,6 +233,7 @@ function clearFilter(key) {
     case 'time': $('#f-time').value = ''; break;
     case 'level': $('#f-level').value = ''; break;
     case 'method': $('#f-method').value = ''; break;
+    case 'program': $('#f-program').value = ''; break;
     case 'open': $('#f-open').checked = false; break;
   }
 }
@@ -400,6 +413,7 @@ function saveState() {
   if ($('#f-time').value) p.set('time', $('#f-time').value);
   if ($('#f-level').value) p.set('level', $('#f-level').value);
   if ($('#f-method').value) p.set('method', $('#f-method').value);
+  if ($('#f-program').value) p.set('program', $('#f-program').value);
   if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');
   const qs = p.toString();

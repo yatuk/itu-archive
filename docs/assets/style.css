@@ -340,16 +340,26 @@ body.reveal-ready .reveal.revealed { opacity: 1; transform: none; }
 
 .filters { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; color: var(--dim); }
 .filters label { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; }
-select {
-  font: inherit; background: var(--panel-2); color: var(--fg);
-  border: 1px solid var(--line-hot); padding: 6px 8px; border-radius: 2px; max-width: 260px;
+/* Filtre kutuları: select ve metin girdisi birebir aynı görünüm (renk,
+   kenarlık, köşe, yükseklik, padding). */
+select, .f-in {
+  font: inherit; color: var(--fg);
+  background: var(--panel-2);
+  border: 1px solid var(--line-hot);
+  padding: 5px 10px;
+  border-radius: 2px;
+  height: 34px;
+  box-sizing: border-box;
 }
-/* Filtre satırındaki kısa metin girdisi (ders kodu gibi) */
+select { max-width: 260px; }
 .f-in {
-  font: inherit; background: var(--panel-2); color: var(--fg);
-  border: 1px solid var(--line-hot); padding: 6px 8px; border-radius: 2px;
-  width: 110px;
+  width: 120px;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none;
 }
+.f-in::placeholder { color: var(--dimmer); opacity: 1; }
+.f-in:focus { border-color: var(--cyan); }
 select:focus-visible, input:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
 input[type="checkbox"] { accent-color: var(--acid); width: 15px; height: 15px; }
 

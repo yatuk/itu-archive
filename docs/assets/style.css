@@ -833,7 +833,8 @@ body.modal-open { overflow: hidden; }
   .detail-box dd { margin-bottom: 8px; }
 }
 
-/* ---------- program oluşturucu ---------- */
+.p-backup { display: block; color: var(--amber); font-size: 10px; margin-top: 1px; }
+.p-backup-note { color: var(--amber); font-size: 12px; margin: 6px 0; }
 
 .fav { width: 30px; text-align: center; }
 .fav-star {

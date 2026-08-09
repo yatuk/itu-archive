@@ -147,7 +147,7 @@ function renderList(items) {
     const key = fav.favKeyOf(branch, crn);
     return `<div class="p-item${markFull && full ? ' p-full' : ''}" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
-      <span class="p-crn">${esc(crn)}</span>
+      <span class="p-crn">${esc(crn)}${rec.backup ? `<small class=\\p-backup\\>yedek: ${esc(rec.backup)}\\</small\>` : ''}</span>
       <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}</small></div>
       <span class="p-when">${esc(when || '—')}</span>
       <span class="p-fill">${cap ? fillBar(cap, enr) : '—'}</span>
@@ -198,10 +198,14 @@ function renderList(items) {
       closeMenus();
       openMenuKey = key;
       pop.hidden = false;
+      const rec = items.find((it) => fav.favKeyOf(it.rec.branch, it.rec.crn) === key);
       pop.innerHTML = `
         <button type="button" data-act="detail" data-key="${key}">detay</button>
         <button type="button" data-act="copy" data-key="${key}">CRN kopyala</button>
         <button type="button" data-act="obs" data-key="${key}">OBS'de ara</button>
+        ${rec && rec.rec.backup
+          ? `<button type="button" data-act="rmbackup" data-key="${key}">yedek CRN kaldır</button>`
+          : `<button type="button" data-act="backup" data-key="${key}">yedek CRN belirle</button>`}
         <button type="button" data-act="remove" data-key="${key}">çıkar</button>`;
     });
   });
@@ -221,6 +225,10 @@ function renderList(items) {
         if (row) openDetail(row, term);
       } else if (b.dataset.act === 'obs') {
         window.open('https://obs.itu.edu.tr/public/DersProgram', '_blank', 'noopener');
+      } else if (b.dataset.act === 'backup') {
+        setBackup(br, cr);
+      } else if (b.dataset.act === 'rmbackup') {
+        removeBackup(br, cr);
       }
       closeMenus();
     });
@@ -347,13 +355,16 @@ export function buildSnippet(crns) {
 }
 
 function showOBS() {
-  const crns = currentCRNs();
-  if (!crns.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  const items = currentItems();
+  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  const crns = items.map((i) => i.row[0]);
   const code = buildSnippet(crns);
+  const backups = items.filter((i) => i.rec.backup).map((i) => `${i.row[0]} → yedek: ${i.rec.backup}`);
   const box = $('#p-obs-code');
   box.hidden = false;
   box.innerHTML = `<h4 class="eyebrow">OBS kayıt sayfası için CRN doldurma</h4>
     <p>Bu kodu OBS'nin ders seçme sayfasında konsola yapıştırıp çalıştır, ya da tarayıcı yer imi olarak kaydet. ${crns.length} CRN doldurur.</p>
+    ${backups.length ? `<p class="p-backup-note">Yedek CRN'ler: ${esc(backups.join(' · '))}</p>` : ''}
     <pre class="p-code"><code>${esc(code)}</code></pre>
     <button type="button" id="p-copy" class="btn-ghost">kopyala</button>`;
   $('#p-copy').addEventListener('click', () => { copyText(code); toast('CRN kodu kopyalandı'); });
@@ -384,6 +395,38 @@ function copyText(txt) {
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(txt).catch(() => fallbackCopy(txt));
   } else fallbackCopy(txt);
+}
+
+// --- yedek CRN ---
+
+function setBackup(branch, crn) {
+  const input = prompt('Yedek CRN girin (aynı ders koduna ait olmalı):');
+  if (!input || !input.trim()) return;
+  const backup = input.trim();
+  const all = fav.loadSchedule();
+  const idx = all.findIndex((f) => f.term === term && f.branch === branch && f.crn === crn);
+  if (idx < 0) return;
+  // Yedek CRN kendisi olamaz, aynı branşta olmalı.
+  const key = fav.favKeyOf(branch, backup);
+  if (all.some((f) => f.term === term && fav.favKeyOf(f.branch, f.crn) === key)) {
+    toast('Bu CRN zaten listede', { kind: 'warn' });
+    return;
+  }
+  all[idx].backup = backup;
+  fav.saveSchedule(all);
+  toast(`Yedek CRN ${backup} eklendi`);
+  loadTerm(term);
+}
+
+function removeBackup(branch, crn) {
+  const all = fav.loadSchedule();
+  const idx = all.findIndex((f) => f.term === term && f.branch === branch && f.crn === crn);
+  if (idx < 0) return;
+  const old = all[idx].backup;
+  delete all[idx].backup;
+  fav.saveSchedule(all);
+  toast(`Yedek CRN ${old} kaldırıldı`);
+  loadTerm(term);
 }
 
 function fallbackCopy(txt) {

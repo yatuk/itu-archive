@@ -41,12 +41,14 @@ export function isFavorite(term, branch, crn) {
 export function loadSchedule() { return read(SCHED_KEY); }
 export function saveSchedule(list) { write(SCHED_KEY, list); }
 
-// schedule'e kayıt ekler (varsa atlar). Dönen değer: eklendi mi.
-export function addToSchedule(term, branch, crn) {
+// schedule'e kayıt ekler (varsa atlar). backup opsiyonel yedek CRN.
+export function addToSchedule(term, branch, crn, backup) {
   const list = loadSchedule();
   const key = favKeyOf(branch, crn);
   if (list.some((f) => f.term === term && favKeyOf(f.branch, f.crn) === key)) return false;
-  list.push({ term, branch, crn });
+  const rec = { term, branch, crn };
+  if (backup) rec.backup = backup;
+  list.push(rec);
   saveSchedule(list);
   return true;
 }

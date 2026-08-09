@@ -10,6 +10,7 @@ import { initHistory, onShow as historyShow, searchHistory } from './views/histo
 import { initExams, onShow as examsShow } from './views/exams.js';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
+import { onShow as programShow } from './views/program.js';
 import { PrereqGraph } from './prereq.js';
 import { initTour, maybeStartTour } from './tour.js';
 
@@ -22,6 +23,7 @@ async function boot() {
   wireTabs();
   wireHistoryJump();
   initTour({ showView });
+  window.addEventListener('itu:goto-program', () => { if (showView) showView('program', true); });
   try {
     state.index = await getJSON('data/index.json');
   } catch (e) {
@@ -93,7 +95,7 @@ function initTheme() {
 
 /* ---------- sekmeler ---------- */
 
-const VIEWS = ['dersler', 'gecmis', 'onsart', 'sinavlar', 'takvim', 'donemler', 'hakkinda'];
+const VIEWS = ['dersler', 'gecmis', 'onsart', 'sinavlar', 'takvim', 'donemler', 'program', 'hakkinda'];
 
 // show, sekme görünürlüğünü ve URL hash'ini yönetir. push=true ise tarayıcı
 // geçmişine yazılır (geri/ileri çalışır), değilse mevcut girişi değiştirir
@@ -121,6 +123,7 @@ function wireTabs() {
     if (view === 'takvim') calendarShow();
     if (view === 'sinavlar') examsShow();
     if (view === 'gecmis') historyShow();
+    if (view === 'program') programShow();
     if (view === 'onsart') PrereqGraph.init('#pg-root');
     const h = location.hash.slice(1);
     if (h !== view) {

@@ -10,6 +10,8 @@ import { $, getJSON, esc, fold, debounce, downloadCSV, setStatus } from '../core
 import { state } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
+import * as fav from '../core/favorites.js';
+import { toast } from '../core/toast.js';
 
 const PAGE = 200;
 const TIME_LABEL = { sabah: 'sabah (<12:00)', ogle: 'öğle (12:00-17:00)', aksam: 'akşam (≥17:00)' };
@@ -40,6 +42,7 @@ export function initCourses() {
   $('#sel-csv').addEventListener('click', exportSelectedCSV);
   $('#sel-clear').addEventListener('click', clearSelection);
   $('#sel-only').addEventListener('change', () => { if (ttOn) renderTimetable(); });
+  $('#sel-send').addEventListener('click', sendToProgram);
   $('#detail-close').addEventListener('click', closeDetail);
   $('#detail-panel').addEventListener('click', (e) => { if (e.target.id === 'detail-panel') closeDetail(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#detail-panel').hidden) closeDetail(); });
@@ -277,6 +280,17 @@ function exportSelectedCSV() {
   rowsToCSV(state.rows.filter((r) => state.selected.has(selKey(r))), `secili-${state.termSlug}.csv`);
 }
 
+// Seçili şubeleri program oluşturucuya ekleyip o sekmeye geçer.
+function sendToProgram() {
+  if (!state.selected.size) { toast('Önce şube seç', { kind: 'warn' }); return; }
+  let added = 0;
+  for (const r of state.rows) {
+    if (state.selected.has(selKey(r)) && fav.addToSchedule(state.termSlug, r[3], r[0])) added++;
+  }
+  toast(added ? `${added} şube programa gönderildi` : 'Seçili şubeler zaten programda', { kind: added ? 'ok' : 'warn' });
+  window.dispatchEvent(new CustomEvent('itu:goto-program'));
+}
+
 /* ---------- tablo ---------- */
 
 function renderRows(append) {
@@ -284,7 +298,7 @@ function renderRows(append) {
   const slice = state.filtered.slice(state.shown, state.shown + PAGE);
 
   if (!slice.length && !state.shown) {
-    fillRows(tbody, [], null, { empty: 'eşleşen ders yok', colspan: 9 });
+    fillRows(tbody, [], null, { empty: 'eşleşen ders yok', colspan: 10 });
     $('#more').hidden = true;
     return;
   }
@@ -292,8 +306,10 @@ function renderRows(append) {
   const frag = fillRows(tbody, slice, (r) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = r;
     const key = selKey(r);
+    const starred = fav.isFavorite(state.termSlug, branch, crn);
     return `
       <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="Şubeyi seç"${state.selected.has(key) ? ' checked' : ''}></td>
+      <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="Favorilere ekle/kaldır" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
       <td class="crn">${esc(crn)}</td>
       <td class="code"><b>${esc(code)}</b><small>${esc(branch)}</small></td>
       <td><button class="row-toggle" type="button" aria-haspopup="dialog">${esc(name)}</button></td>
@@ -320,6 +336,18 @@ function renderRows(append) {
           updateSelection();
         });
       }
+      const star = tr.querySelector('.fav-star');
+      if (star) {
+        star.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const [branch, crn] = star.dataset.key.split('|');
+          const on = fav.toggleFavorite(state.termSlug, branch, crn);
+          star.classList.toggle('on', on);
+          star.textContent = on ? '★' : '☆';
+          star.setAttribute('aria-pressed', String(on));
+          toast(on ? `Favoriye eklendi (${crn})` : `Favoriden çıkarıldı (${crn})`, { kind: on ? 'ok' : 'warn' });
+        });
+      }
     });
   }
 
@@ -332,8 +360,11 @@ function renderRows(append) {
 
 let lastDetailFocus = null;
 
-async function openDetail(row) {
+// termSlug verilmezse DERSLER'deki aktif dönem kullanılır; program görünümü
+// kendi dönemini geçebilir.
+export async function openDetail(row, termSlug) {
   const [crn, code, name, branch] = row;
+  const t = termSlug || state.termSlug;
   lastDetailFocus = document.activeElement;
   const panel = $('#detail-panel');
   const content = $('#detail-content');
@@ -344,7 +375,7 @@ async function openDetail(row) {
 
   let sec = null;
   try {
-    const list = await getJSON(`data/terms/${state.termSlug}/branches/${branch}.json`);
+    const list = await getJSON(`data/terms/${t}/branches/${branch}.json`);
     sec = list.find((s) => s.crn === crn);
   } catch { /* ağ hatası: aşağıda "detay yok" gösterilir */ }
 

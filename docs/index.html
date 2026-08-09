@@ -129,7 +129,8 @@
  <button role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar">04 · SINAVLAR</button>
  <button role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim">05 · AKADEMİK TAKVİM</button>
  <button role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler">06 · DÖNEMLER</button>
- <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda">07 · HAKKINDA</button>
+ <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program">07 · PROGRAM</button>
+ <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda">08 · HAKKINDA</button>
 </nav>
 
 <main class="wrap">
@@ -175,6 +176,7 @@
   <div class="sepet" id="sepet" hidden>
    <span id="sel-count"></span>
    <button type="button" id="sel-csv" class="btn-ghost">seçilenleri CSV</button>
+   <button type="button" id="sel-send" class="btn-ghost">programa gönder</button>
    <button type="button" id="sel-clear" class="btn-ghost">temizle</button>
    <label class="check"><input type="checkbox" id="sel-only"> yalnızca seçilenleri çizelgede göster</label>
   </div>
@@ -184,6 +186,7 @@
     <thead>
      <tr>
       <th class="sel"><input type="checkbox" id="sel-all" aria-label="Tümünü seç"></th>
+      <th class="fav" aria-hidden="true"></th>
       <th data-sort="crn" class="sortable" scope="col"><button type="button" class="th-sort">CRN</button></th>
       <th data-sort="code" class="sortable" scope="col"><button type="button" class="th-sort">Ders</button></th>
       <th data-sort="name" class="sortable" scope="col"><button type="button" class="th-sort">Adı</button></th>
@@ -296,6 +299,43 @@
    bazı alanlar eksik olabilir. <strong>2024-2025 Güz</strong> hiçbir kaynakta bulunmuyor.
   </p>
   <div id="terms"></div>
+ </section>
+
+ <section id="view-program" class="view" role="tabpanel" aria-labelledby="tab-program" hidden>
+  <p class="note">
+   Seçtiğin şubelerden haftalık ders programını kur. DERSLER'de şubeleri seçip
+   "programa gönder" ile ekle, ya da buradan ders arayıp ekle. Çakışan dersler
+   kırmızı işaretlenir ve aşağıda listelenir. "OBS'ye doldur" ile kayıt sayfası
+   için CRN doldurma kodu üretebilirsin.
+  </p>
+  <div class="console">
+   <label>dönem <select id="p-term"></select></label>
+   <label class="query">
+    <span class="sigil">&gt;</span>
+    <input id="p-q" type="search" autocomplete="off" spellcheck="false"
+           placeholder="ders kodu veya adıyla şube ekle…" aria-label="Ders ara ve ekle">
+   </label>
+  </div>
+  <div id="p-results" class="p-results" hidden></div>
+  <div class="p-layout">
+   <aside class="p-panel">
+    <h4 class="eyebrow">Seçili şubeler <span id="p-count">0</span></h4>
+    <label class="check p-full"><input type="checkbox" id="p-full"> dolu şubeleri işaretle</label>
+    <div id="p-list" class="p-list"></div>
+    <div id="p-summary" class="p-summary"></div>
+    <div class="p-actions">
+     <button type="button" id="p-favs" class="btn-ghost">favorileri ekle</button>
+     <button type="button" id="p-obs" class="btn-ghost">OBS'ye doldur</button>
+     <button type="button" id="p-csv" class="btn-ghost">CSV</button>
+     <button type="button" id="p-share" class="btn-ghost">paylaş</button>
+     <button type="button" id="p-clear" class="btn-ghost">temizle</button>
+    </div>
+    <div id="p-obs-code" class="p-obs-code" hidden></div>
+   </aside>
+   <div class="p-main">
+    <div id="p-grid" class="p-grid"></div>
+   </div>
+  </div>
  </section>
 
  <section id="view-hakkinda" class="view" role="tabpanel" aria-labelledby="tab-hakkinda" hidden>

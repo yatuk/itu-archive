@@ -9,6 +9,8 @@ import { fold, termLabel, buildingOf } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
+import { buildSnippet } from '../views/program.js';
+import * as fav from './favorites.js';
 
 test('fold Türkçe karakterleri ASCII katar', () => {
   assert.equal(fold('İTÜ Mühendislik ŞŞ ĞĞ'), 'itu muhendislik ss gg');
@@ -150,6 +152,48 @@ test('parseReq gerçek OBS örneği (AKM 202)', () => {
   const expr = '( MAT 102 MIN. FF Veya MAT 102E MIN. FF ) Veya ( MAT 104 MIN. FF Veya MAT 104E MIN. FF )';
   const alts = [...reqAlts(parseReq(expr))].sort();
   assert.deepEqual(alts, ['MAT 102', 'MAT 102E', 'MAT 104', 'MAT 104E']);
+});
+
+// ---- Favoriler / program kaydı (localStorage shim ile) ----
+
+const storeMap = new Map();
+globalThis.localStorage = {
+  getItem: (k) => (storeMap.has(k) ? storeMap.get(k) : null),
+  setItem: (k, v) => storeMap.set(k, v),
+  removeItem: (k) => storeMap.delete(k),
+};
+
+test('favori toggle ekler ve kaldırır', () => {
+  storeMap.clear();
+  assert.equal(fav.toggleFavorite('2025-2026-yaz', 'BLG', '100'), true);
+  assert.equal(fav.isFavorite('2025-2026-yaz', 'BLG', '100'), true);
+  assert.equal(fav.toggleFavorite('2025-2026-yaz', 'BLG', '100'), false);
+  assert.equal(fav.isFavorite('2025-2026-yaz', 'BLG', '100'), false);
+});
+
+test('favoriler döneme özeldir', () => {
+  storeMap.clear();
+  fav.toggleFavorite('2025-2026-yaz', 'BLG', '100');
+  assert.equal(fav.isFavorite('2025-2026-bahar', 'BLG', '100'), false);
+});
+
+test('program kaydına ekleme tekrar eklemez', () => {
+  storeMap.clear();
+  assert.equal(fav.addToSchedule('2025-2026-yaz', 'BLG', '100'), true);
+  assert.equal(fav.addToSchedule('2025-2026-yaz', 'BLG', '100'), false);
+  assert.equal(fav.loadSchedule().length, 1);
+  fav.removeFromSchedule('2025-2026-yaz', 'BLG', '100');
+  assert.equal(fav.loadSchedule().length, 0);
+});
+
+// ---- OBS CRN doldurma snippet'i ----
+
+test('buildSnippet seçilen CRNleri koda gömer', () => {
+  const code = buildSnippet(['30263', '30320']);
+  assert.ok(code.includes("'30263'"));
+  assert.ok(code.includes("'30320'"));
+  assert.ok(code.startsWith('!function'));
+  assert.ok(code.endsWith('}();'));
 });
 
 // Row biçimi: [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan]

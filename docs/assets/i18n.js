@@ -271,3 +271,4 @@ const I18N = (() => {
 
   return { t, lang, translateDOM, strings };
 })();
+export { I18N };

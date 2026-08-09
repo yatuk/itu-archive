@@ -30,17 +30,46 @@ var trMonths = []string{
 
 // Builder, docs kökünden veriyi okuyup sayfaları yazar.
 type Builder struct {
-	root  string
-	index model.SiteIndex
-	// agg'de branch bazlı birikim: hangi dönemde kaç şube, hangi kodlar var.
-	aggs map[string]*branchAgg
+	root    string
+	index   model.SiteIndex
+	aggs    map[string]*branchAgg
+	courses map[string]*histCourse // code -> tarihsel kurs kaydı
+	// courseSects: kursun son dönemindeki CRN satırları (search.json'dan).
+	courseSects map[string][]sectRow // code -> CRN satırları
 }
 
 type branchAgg struct {
-	codes  map[string]struct{} // o branşta görülen tüm ders kodları
-	termSections map[string]int // slug -> o dönemdeki şube sayısı
-	levels map[string]struct{}
-	total  int
+	codes        map[string]struct{}
+	termSections map[string]int
+	levels       map[string]struct{}
+	total        int
+}
+
+// histCourse, history/courses/<branch>.json'dan gelen tek bir ders.
+type histCourse struct {
+	Name  string              `json:"name"`
+	Terms []string            `json:"-"`
+	Rows  []histCourseRow     `json:"-"`
+}
+
+type histCourseRow struct {
+	Term       string
+	Instructor string
+	Capacity   int
+	Enrolled   int
+	Days       string
+}
+
+// sectRow, search.json'dan gelen hafif CRN satırı.
+type sectRow struct {
+	CRN        string
+	Code       string
+	Name       string
+	Branch     string
+	Instructor string
+	When       string
+	Capacity   int
+	Enrolled   int
 }
 
 // branchLink, bir dönem sayfasındaki branş listesi öğesi.
@@ -62,9 +91,10 @@ func New(root string) *Builder { return &Builder{root: root} }
 // Generate, dizinde biriken geçmiş sayfaları da temizleyen ana üreticidir.
 // root altında dersler/ ve brans/ klasörlerini silip yeniden oluşturur.
 func (b *Builder) Generate() error {
-	// Eski çıktıyı temizle (silinebilecek dosyaları atla: silme hatası kritik değil).
+	// Eski çıktıyı temizle.
 	_ = os.RemoveAll(filepath.Join(b.root, "dersler"))
 	_ = os.RemoveAll(filepath.Join(b.root, "brans"))
+	_ = os.RemoveAll(filepath.Join(b.root, "ders"))
 
 	if err := readJSON(filepath.Join(b.root, "data", "index.json"), &b.index); err != nil {
 		return fmt.Errorf("index okunamadı: %w", err)
@@ -122,29 +152,47 @@ func (b *Builder) Generate() error {
 		}
 	}
 
+	// Kurs geçmişini ve son dönem şubelerini yükle.
+	if err := b.loadCourseData(terms); err != nil {
+		return err
+	}
+
+	// Ders sayfaları (önce — branş sayfaları bunlara link verir).
+	courseSlugs := make(map[string]string) // code -> slug
+	for code := range b.courses {
+		courseSlugs[code] = courseSlug(code)
+	}
+	sortedCodes := make([]string, 0, len(b.courses))
+	for code := range b.courses {
+		sortedCodes = append(sortedCodes, code)
+	}
+	sort.Strings(sortedCodes)
+	for _, code := range sortedCodes {
+		if err := b.writeCoursePage(code, courseSlugs[code]); err != nil {
+			return err
+		}
+	}
+
 	for _, tr := range terms {
 		if err := b.writeTermPage(tr); err != nil {
 			return err
 		}
 	}
 
-	codes := sortedKeys(b.aggs)
+	brCodes := sortedKeys(b.aggs)
 	termLabels := map[string]string{}
 	for _, tr := range terms {
-		if _, ok := b.aggs[""]; ok {
-			// boş branş atla (search.json'da branşsız satır)
-		}
 		if tr.tref.Label != "" {
 			termLabels[tr.tref.Slug] = tr.tref.Label
 		}
 	}
-	for _, code := range codes {
-		if err := b.writeBranchPage(code, termLabels); err != nil {
+	for _, code := range brCodes {
+		if err := b.writeBranchPage(code, termLabels, courseSlugs); err != nil {
 			return err
 		}
 	}
 
-	return b.writeSitemap(terms, codes)
+	return b.writeSitemap(terms, brCodes, courseSlugs)
 }
 
 func (b *Builder) writeTermPage(tr termRow) error {
@@ -191,7 +239,7 @@ func (b *Builder) writeTermPage(tr termRow) error {
 		title, lead, canonical, fmtDate(tr.tref.ScrapedAt), content, jsonld)
 }
 
-func (b *Builder) writeBranchPage(code string, termLabels map[string]string) error {
+func (b *Builder) writeBranchPage(code string, termLabels map[string]string, courseSlugs map[string]string) error {
 	a := b.aggs[code]
 	canonical := fmt.Sprintf("%s/brans/%s/", baseURL, code)
 	title := code + " branşı dersleri ve dönem dökümü"
@@ -252,7 +300,11 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string) err
 	var codeSpans []string
 	srt := sortedKeys(a.codes)
 	for _, c := range srt {
-		codeSpans = append(codeSpans, fmt.Sprintf(`<code>%s</code>`, template.HTMLEscapeString(c)))
+		if slug, ok := courseSlugs[c]; ok {
+			codeSpans = append(codeSpans, fmt.Sprintf(`<a href="/ders/%s/"><code>%s</code></a>`, slug, template.HTMLEscapeString(c)))
+		} else {
+			codeSpans = append(codeSpans, fmt.Sprintf(`<code>%s</code>`, template.HTMLEscapeString(c)))
+		}
 	}
 
 	content := template.HTML(buildContent(
@@ -278,7 +330,7 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string) err
 		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
 }
 
-func (b *Builder) writeSitemap(terms []termRow, codes []string) error {
+func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs map[string]string) error {
 	rootDate := dateOf(b.index.ScrapedAt)
 	var out strings.Builder
 	out.WriteString(`<?xml version="1.0" encoding="UTF-8"?>` + "\n")
@@ -293,8 +345,15 @@ func (b *Builder) writeSitemap(terms []termRow, codes []string) error {
 		}
 		sitemapURL(&out, fmt.Sprintf("%s/dersler/%s/", baseURL, tr.tref.Slug), td, "monthly", "0.7")
 	}
-	for _, c := range codes {
+	for _, c := range brCodes {
 		sitemapURL(&out, fmt.Sprintf("%s/brans/%s/", baseURL, c), rootDate, "monthly", "0.6")
+	}
+	// Ders sayfaları.
+	cslugList := make([]string, 0, len(courseSlugs))
+	for _, s := range courseSlugs { cslugList = append(cslugList, s) }
+	sort.Strings(cslugList)
+	for _, s := range cslugList {
+		sitemapURL(&out, fmt.Sprintf("%s/ders/%s/", baseURL, s), rootDate, "monthly", "0.8")
 	}
 
 	out.WriteString("</urlset>\n")
@@ -483,6 +542,224 @@ func readJSON(path string, v any) error {
 		return err
 	}
 	return json.Unmarshal(b, v)
+}
+
+// --- ders sayfaları ---
+
+// courseSlug, bir ders kodunu URL güvenli biçime normalleştirir.
+// "BLG 101E" -> "blg-101e"
+func courseSlug(code string) string {
+	s := strings.ToLower(code)
+	var b strings.Builder
+	lastDash := false
+	for _, r := range s {
+		if (r >= 'a' && r <= 'z') || (r >= '0' && r <= '9') {
+			b.WriteRune(r)
+			lastDash = false
+		} else if !lastDash && b.Len() > 0 {
+			b.WriteByte('-')
+			lastDash = true
+		}
+	}
+	return strings.Trim(b.String(), "-")
+}
+
+// loadCourseData, ders geçmişini okur ve her ders için son dönem şubelerini
+// search.json'dan çıkarır.
+func (b *Builder) loadCourseData(terms []termRow) error {
+	b.courses = map[string]*histCourse{}
+	b.courseSects = map[string][]sectRow{}
+
+	// Tüm branş tarih dosyalarını oku.
+	histDir := filepath.Join(b.root, "data", "history", "courses")
+	entries, err := os.ReadDir(histDir)
+	if err != nil {
+		return fmt.Errorf("history/courses okunamadı: %w", err)
+	}
+	for _, e := range entries {
+		if !strings.HasSuffix(e.Name(), ".json") {
+			continue
+		}
+		var raw map[string]json.RawMessage
+		if err := readJSON(filepath.Join(histDir, e.Name()), &raw); err != nil {
+			return fmt.Errorf("%s: %w", e.Name(), err)
+		}
+		for code, r := range raw {
+			var hc histCourse
+			if err := json.Unmarshal(r, &hc); err != nil {
+				return fmt.Errorf("%s/%s: %w", e.Name(), code, err)
+			}
+			// terms haricinde rows'ları da çöz.
+			var full struct {
+				Name string          `json:"name"`
+				Terms []string       `json:"terms"`
+				Rows  [][]any        `json:"rows"`
+			}
+			if err := json.Unmarshal(r, &full); err != nil {
+				return fmt.Errorf("%s/%s rows: %w", e.Name(), code, err)
+			}
+			hc.Name = full.Name
+			hc.Terms = full.Terms
+			for _, row := range full.Rows {
+				if len(row) >= 5 {
+					hr := histCourseRow{}
+					if s, ok := row[0].(string); ok { hr.Term = s }
+					if s, ok := row[1].(string); ok { hr.Instructor = s }
+					switch v := row[2].(type) { case float64: hr.Capacity = int(v) }
+					switch v := row[3].(type) { case float64: hr.Enrolled = int(v) }
+					if s, ok := row[4].(string); ok { hr.Days = s }
+					hc.Rows = append(hc.Rows, hr)
+				}
+			}
+			b.courses[code] = &hc
+		}
+	}
+
+	// Her ders için search.json'daki son dönemi bul, grup yap.
+	want := map[string][]string{} // slug -> [codes...]
+	for code, hc := range b.courses {
+		// En güncel dönemi bul (terms sıralı, son eleman en yeni).
+		slug := ""
+		if len(hc.Terms) > 0 {
+			slug = hc.Terms[len(hc.Terms)-1]
+		}
+		if slug == "" {
+			// Dönem listesi tarih dosyasında bozuk; ders sayfası şube tablosuz olacak.
+			continue
+		}
+		want[slug] = append(want[slug], code)
+	}
+
+	// Her slug için search.json'dan CRN satırlarını oku.
+	for slug, codes := range want {
+		var rows [][]json.RawMessage
+		p := filepath.Join(b.root, "data", "terms", slug, "search.json")
+		if _, err := os.Stat(p); os.IsNotExist(err) {
+			continue
+		}
+		if err := readJSON(p, &rows); err != nil {
+			continue
+		}
+		codeSet := map[string]bool{}
+		for _, c := range codes { codeSet[c] = true }
+		for _, r := range rows {
+			if len(r) < 8 {
+				continue
+			}
+			var code, crn, name, branch, instr, when string
+			json.Unmarshal(r[0], &crn)
+			json.Unmarshal(r[1], &code)
+			json.Unmarshal(r[2], &name)
+			json.Unmarshal(r[3], &branch)
+			json.Unmarshal(r[4], &instr)
+			json.Unmarshal(r[5], &when)
+			if !codeSet[code] {
+				continue
+			}
+			var cap, enr float64
+			json.Unmarshal(r[6], &cap)
+			json.Unmarshal(r[7], &enr)
+			b.courseSects[code] = append(b.courseSects[code], sectRow{
+				CRN: crn, Code: code, Name: name, Branch: branch,
+				Instructor: instr, When: when, Capacity: int(cap), Enrolled: int(enr),
+			})
+		}
+	}
+
+	return nil
+}
+
+// writeCoursePage, tek bir ders için sayfa üretir.
+func (b *Builder) writeCoursePage(code, slug string) error {
+	hc := b.courses[code]
+	if hc == nil {
+		return fmt.Errorf("ders bulunamadı: %s", code)
+	}
+
+	canonical := fmt.Sprintf("%s/ders/%s/", baseURL, slug)
+	title := code + " — " + hc.Name
+	branch := code
+	if idx := strings.IndexByte(code, ' '); idx > 0 {
+		branch = code[:idx]
+	}
+	desc := fmt.Sprintf("%s (%s) — İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
+		code, hc.Name, len(hc.Terms))
+
+	jsonld := jsonldScript([]any{
+		map[string]any{
+			"@context":    "https://schema.org",
+			"@type":       "Course",
+			"url":         canonical,
+			"name":        code,
+			"description": hc.Name,
+			"inLanguage":  "tr-TR",
+			"provider":    map[string]string{"@type": "CollegeOrUniversity", "name": "İstanbul Teknik Üniversitesi"},
+		},
+	})
+
+	// Son dönem şube tablosu.
+	var sectHTML string
+	if sects, ok := b.courseSects[code]; ok && len(sects) > 0 {
+		var rows []string
+		for _, s := range sects {
+			rows = append(rows, fmt.Sprintf(
+				`<tr><td>%s</td><td>%s</td><td>%s</td><td>%d/%d</td></tr>`,
+				template.HTMLEscapeString(s.CRN),
+				template.HTMLEscapeString(s.Instructor),
+				template.HTMLEscapeString(s.When),
+				s.Capacity, s.Enrolled,
+			))
+		}
+		sectHTML = `<h2>Son dönem şubeleri</h2>` +
+			`<table class="seo-table"><thead><tr><th>CRN</th><th>Öğretim Üyesi</th><th>Zaman</th><th>Kont/Yazılan</th></tr></thead><tbody>` +
+			strings.Join(rows, "") + `</tbody></table>`
+	}
+
+	// Dönem geçmişi.
+	var histRows []string
+	for _, r := range hc.Rows {
+		label := r.Term
+		if lbl, ok := termLabelsFor(b.index); ok {
+			if v, ok2 := lbl[r.Term]; ok2 {
+				label = v
+			}
+		}
+		histRows = append(histRows, fmt.Sprintf(
+			`<tr><td><a href="/dersler/%s/">%s</a></td><td>%s</td><td>%d</td><td>%d</td></tr>`,
+			template.HTMLEscapeString(r.Term),
+			template.HTMLEscapeString(label),
+			template.HTMLEscapeString(r.Instructor),
+			r.Capacity, r.Enrolled,
+		))
+	}
+
+	content := template.HTML(buildContent(
+		fmt.Sprintf(`<nav class="crumb"><a href="/">Ders Arşivi</a> › <a href="/brans/%s/">%s</a> › <span>%s</span></nav>`,
+			template.HTMLEscapeString(branch), template.HTMLEscapeString(branch), template.HTMLEscapeString(code)),
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(code)),
+		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(hc.Name)),
+		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&code=%s">bu dersi canlı ara</a></p>`,
+			b.index.CurrentSlug, template.HTMLEscapeString(code)),
+		`<dl class="seo-stats">`+
+			fmt.Sprintf(`<div><dt>toplam dönem</dt><dd>%d</dd></div>`, len(hc.Terms))+
+			`</dl>`,
+		sectHTML,
+		`<h2>Dönem geçmişi</h2>`,
+		`<table class="seo-table"><thead><tr><th>Dönem</th><th>Öğretim Üyesi</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
+			strings.Join(histRows, "")+`</tbody></table>`,
+	))
+
+	return b.writePage(filepath.Join(b.root, "ders", slug, "index.html"),
+		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
+}
+
+// termLabelsFor, sitemap index'indeki termin referanslarından slug->label haritası döndürür.
+func termLabelsFor(ix model.SiteIndex) (map[string]string, bool) {
+	out := map[string]string{}
+	for _, t := range ix.Terms {
+		out[t.Slug] = t.Label
+	}
+	return out, len(out) > 0
 }
 
 // --- sıralı anahtar yardımcıları ---

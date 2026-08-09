@@ -306,6 +306,7 @@ func (r *Result) checkIndex(root string) {
 func (r *Result) checkSitePages(root string) {
 	derDir := filepath.Join(root, "dersler")
 	bransDir := filepath.Join(root, "brans")
+	dersDir := filepath.Join(root, "ders")
 
 	var ix model.SiteIndex
 	if err := readJSON(filepath.Join(root, "data", "index.json"), &ix); err != nil {
@@ -337,7 +338,7 @@ func (r *Result) checkSitePages(root string) {
 	// Href regex: href="..."
 	hrefRe := regexp.MustCompile(`href="([^"]*)"`)
 
-	checkPage := func(dir, rel string) {
+	checkPage := func(dir, rel string, checkLinks bool) {
 		full := filepath.Join(dir, rel, "index.html")
 		b, err := os.ReadFile(full)
 		if err != nil {
@@ -354,7 +355,10 @@ func (r *Result) checkSitePages(root string) {
 		if !strings.Contains(s, `<meta name="description" content="`) {
 			r.errf("seo sayfası: %s/%s meta description yok", filepath.Base(dir), rel)
 		}
-		// İç bağlantıları çöz.
+		// İç bağlantıları çöz (büyük sayfa setlerinde performans için atlanabilir).
+		if !checkLinks {
+			return
+		}
 		matches := hrefRe.FindAllStringSubmatch(s, -1)
 		for _, m := range matches {
 			href := m[1]
@@ -387,7 +391,7 @@ func (r *Result) checkSitePages(root string) {
 				continue
 			}
 			gotTerms[e.Name()] = true
-			checkPage(derDir, e.Name())
+			checkPage(derDir, e.Name(), true)
 		}
 	}
 	for s := range wantTerms {
@@ -410,7 +414,7 @@ func (r *Result) checkSitePages(root string) {
 				continue
 			}
 			gotBrs[e.Name()] = true
-			checkPage(bransDir, e.Name())
+			checkPage(bransDir, e.Name(), true)
 		}
 	}
 	for code := range wantBranch {
@@ -421,6 +425,17 @@ func (r *Result) checkSitePages(root string) {
 	for code := range gotBrs {
 		if !wantBranch[code] {
 			r.errf("seo sayfası: yetim branş sayfası: %s (hiçbir dönemde yok)", code)
+		}
+	}
+
+	// Ders sayfaları (kapsam: yalnızca dosya varsa geçerli; history'den eşleştirme
+	// kod sayısı kadar büyük olduğu için yalnızca bağlantı bütünlüğüne bakar).
+	gotDers := map[string]bool{}
+	if ents, err := os.ReadDir(dersDir); err == nil {
+		for _, e := range ents {
+			if !e.IsDir() { continue }
+			gotDers[e.Name()] = true
+			checkPage(dersDir, e.Name(), false)
 		}
 	}
 
@@ -453,6 +468,13 @@ func (r *Result) checkSitePages(root string) {
 		expected := fmt.Sprintf("https://itu-ders.com/brans/%s/", code)
 		if !smLocs[expected] {
 			r.errf("seo: sitemap'te eksik branş: %s", code)
+		}
+		delete(smLocs, expected)
+	}
+	for s := range gotDers {
+		expected := fmt.Sprintf("https://itu-ders.com/ders/%s/", s)
+		if !smLocs[expected] {
+			r.errf("seo: sitemap'te eksik ders: %s", s)
 		}
 		delete(smLocs, expected)
 	}

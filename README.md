@@ -22,8 +22,8 @@ dönem, 64.309 şube kaydı duruyor içinde. Akademik takvim de dahil.
 | `takvim.sis.itu.edu.tr` | 4 akademik yılın takvimi |
 | Tarihsel dökümler | 2016-2017'ye kadar geçmiş dönemler, `-backfill` ile |
 
-Aktif dönem OBS'den geliyor, dolayısıyla tam kayıt: öğretim yöntemi, önşart,
-rezervasyon, derslik. Geçmiş dönemlerde bunların bir kısmı yok.
+Aktif dönem OBS'den geliyor, kayıt tam: öğretim yöntemi, önşart, rezervasyon,
+derslik. Geçmiş dönemlerde bunların bir kısmı yok.
 
 ## Ne sorabilirsin
 
@@ -37,38 +37,37 @@ OBS'de sorulamayan şeyler burada sorulabiliyor:
 
 6.264 ders ve 4.148 öğretim üyesi indekslenmiş durumda.
 
-Site ayrıca bir "ders planı haritası" sunuyor: bir bölüm seçin, o bölümün güncel
-müfredatı dönem sütunları halinde çiziliyor, gerçek önşart ilişkileri ok'larla
-her zaman görünür (tıklamaya gerek yok). Oklar mantık taşır: **düz ok zorunlu,
-kesikli ok alternatif (VEYA)** — OBS'nin "MAT 102 Veya MAT 102E" gibi ifadeleri
-ayrıştırılıp kesikli gösteriliyor, biri yeter. Bir düğüme tıklayınca önşartı
-VE/VEYA ağacı olarak panelde (hepsi gerekli / biri yeterli etiketleriyle),
-grafikte de geriye doğru önşartlar ve ileriye doğru bu dersi önşart olarak
-isteyen dersler parlıyor. Seçmeli ders slotları tek bir düğüm (bazı havuzlarda
-150'den fazla alternatif var, hepsini tek tek düğüm yapmak grafiği okunmaz hale
-getiriyordu); tıklayınca alternatifler panelde listeleniyor. Program seçici
-fakülte içinde seviyeye göre gruplanıyor; yüksek lisans ve doktora programları
-tek dönemli (dönem ayrımı olmayan) listedir.
+Site ayrıca bir ders planı haritası sunuyor. Bir bölüm seçin, o bölümün güncel
+müfredatı dönem sütunları halinde çiziliyor. Önşart ilişkileri ok'larla her
+zaman görünür, tıklamaya gerek yok. Oklar mantık taşır: düz ok zorunlu, kesikli
+ok alternatif (VEYA). OBS'nin "MAT 102 Veya MAT 102E" gibi ifadeleri ayrıştırılıp
+kesikli gösteriliyor, biri yeter. Bir düğüme tıklayınca önşartı panelde VE/VEYA
+ağacı olarak görürsünüz (hepsi gerekli / biri yeterli etiketleriyle). Grafikte
+de geriye doğru önşartlar ve ileriye doğru bu dersi önşart olarak isteyen
+dersler parlıyor. Seçmeli ders slotları tek bir düğüm. Bazı havuzlarda 150'den
+fazla alternatif var, hepsini tek tek düğüm yapmak grafiği okunmaz hale
+getiriyordu. Tıklayınca alternatifler panelde listeleniyor. Program seçici
+fakülte içinde seviyeye göre gruplanıyor. Yüksek lisans ve doktora programları
+tek dönemli listedir, dönem ayrımı yok.
 
-Dersler sekmesinde tablo kolonları sıralanabiliyor, görünen sonuç tek tıkla CSV
-olarak indirilebiliyor (Excel için BOM'lu) ve arama/filtre durumu URL'ye
-yazılıyor — filtrelediğiniz görünümün bağlantısını paylaşabilirsiniz. Filtreler
+Dersler sekmesinde tablo kolonları sıralanabiliyor. Görünen sonuç tek tıkla CSV
+olarak indirilebiliyor (Excel için BOM'lu). Arama ve filtre durumu URL'ye
+yazılıyor, filtrelediğiniz görünümün bağlantısını paylaşabilirsiniz. Filtreler
 günün yanında saat dilimi (sabah/öğle/akşam), seviye (OL/LS/LU/LUI) ve öğretim
-yöntemini de kapsıyor; aktif filtreler tek tıkla kaldırılabilen çipler olarak
-görünüyor. Şubeler seçilebiliyor ("N şube seçili" çubuğu) — seçilenler ayrı CSV
-olarak indirilebiliyor ve "yalnızca seçilenler" modunda zaman çizelgesinde
-çakışma kontrolüne sokuluyor. Bir dersin adına tıklayınca zengin bir detay
-paneli açılıyor (oturumlar, programlar, önşart, dolma süresi; hocanın
-geçmişinde arama). "Zaman çizelgesi" düğmesi gün × saat ızgarasında çakışan
-dersleri kırmızı işaretler. Sekmeler arası geçiş tarayıcı geçmişine yazılıyor
-(geri/ileri çalışır) ve üstteki "görünüm" seçici ile fosfor/açık/yüksek
-kontrast temalar arasında geçilebiliyor. Geçmiş sekmesinde bir dersin
-detayında dönem dönem kontenjan ve doluluk grafiği gösteriliyor. Sınavlar
+yöntemini de kapsıyor. Aktif filtreler tek tıkla kaldırılabilen çipler olarak
+görünüyor. Şubeler seçilebiliyor. Seçilenler ayrı CSV olarak indirilebiliyor ve
+"yalnızca seçilenler" modunda zaman çizelgesinde çakışma kontrolüne sokuluyor.
+Bir dersin adına tıklayınca detay paneli açılıyor: oturumlar, programlar,
+önşart, dolma süresi, hocanın geçmişinde arama. "Zaman çizelgesi" düğmesi gün ×
+saat ızgarasında çakışan dersleri kırmızı işaretler. Sekmeler arası geçiş
+tarayıcı geçmişine yazılıyor, geri/ileri çalışır. Üstteki "görünüm" seçici ile
+fosfor/açık/yüksek kontrast temalar arasında geçebilirsiniz. Geçmiş sekmesinde
+bir dersin detayında dönem dönem kontenjan ve doluluk grafiği var. Sınavlar
 sekmesinde tür ve bina filtresi var.
 
-İlk denemede bu grafik force-directed bir yığındı (Obsidian'ın grafik görünümü
-gibi organik ama kaotik), ve kenarlar yalnızca bir düğüme tıklanınca netleşiyordu
-— yapı ilk bakışta okunmuyordu. Sabit dönem sütunlarına geçildi, kenarlar
+İlk denemede bu grafik force-directed bir yığındı, Obsidian'ın grafik görünümü
+gibi organik ama kaotik. Kenarlar yalnızca bir düğüme tıklanınca netleşiyordu,
+yapı ilk bakışta okunmuyordu. Sabit dönem sütunlarına geçildi, kenarlar
 varsayılan olarak da net.
 
 ## Çalıştırma
@@ -92,13 +91,13 @@ node --test docs/assets/core/core.test.js   # frontend saf fonksiyonları
 go run ./cmd/validate -quiet           # yalnızca özet: kategori sayaçları + hata örnekleri
 ```
 
-`cmd/quota` ve `cmd/curriculum` ayrı komutlar çünkü frekansları farklı: ders
+`cmd/quota` ve `cmd/curriculum` ayrı komutlar çünkü frekansları farklı. Ders
 programı günde bir kez yeterli, kontenjan kayıt haftasında yarım saatte bir
 anlamlı, müfredat ise dönemde belki bir kez değişiyor (`cmd/curriculum -only
 BLG_LS` ile tek program test edilebilir). `cmd/quota` değişen bir şey yoksa
 dosyaya hiç dokunmuyor, o yüzden sakin dönemlerde boş commit birikmiyor.
-`cmd/validate` yalnızca okur: kopya CRN, meta/şube sayısı tutarsızlığı, önşart
-grafiğinde olmayan düğüme giden kenar gibi bozuklukları raporlar; hata varsa
+`cmd/validate` yalnızca okur. Kopya CRN, meta/şube sayısı tutarsızlığı, önşart
+grafiğinde olmayan düğüme giden kenar gibi bozuklukları raporlar. Hata varsa
 sıfırdan farklı kodla çıkar, workflow'a eklemeye uygun.
 
 Siteyi yerelde açmak için:
@@ -110,12 +109,12 @@ python -m http.server 8765 --directory docs
 ### GitHub Pages
 
 Settings > Pages > Source: Deploy from a branch, `main` / `docs`. Ayrı bir deploy
-workflow'u yok, gerek de yok: scraper zaten `docs/` altına yazıyor, her commit
+workflow'u yok, gerek de yok. Scraper zaten `docs/` altına yazıyor, her commit
 kendiliğinden yayına giriyor.
 
 Bot'un commit atabilmesi için Settings > Actions > General kısmında workflow
-izinleri "Read and write" olmalı. Bunu unutursanız Actions yeşil görünür ama hiçbir
-şey push edilmez.
+izinleri "Read and write" olmalı. Bunu unutursanız Actions yeşil görünür ama
+hiçbir şey push edilmez.
 
 ## Veri düzeni
 
@@ -139,68 +138,69 @@ docs/data/
   curriculum/<PROGRAM_LS>.json      # bir programın dönem dönem müfredatı
 ```
 
-Dönem adları `2025-2026-guz` biçiminde. Branş bazlı bölmenin sebebi tarayıcıya 10
-MB'lık tek dosya indirtmemek, ve git diff'inin "hangi branşta ne değişti" sorusuna
-okunabilir cevap vermesi.
+Dönem adları `2025-2026-guz` biçiminde. Branş bazlı bölmenin iki sebebi var:
+tarayıcıya 10 MB'lık tek dosya indirtmemek ve git diff'inin "hangi branşta ne
+değişti" sorusuna okunabilir cevap vermesi.
 
 ## Kaynaklardaki tuhaflıklar
 
 Bu sayfaları kazımak göründüğü kadar düz bir iş değil. Çıkan sorunlar:
 
-Takvim sayfası tek belgede iki kodlama birden kullanıyor. Statik şablon ISO-8859-9,
-veritabanından gelen metinler UTF-8. Hangisini seçerseniz seçin metnin yarısı
-bozuluyor, ya `Ã¼` ya `E\xc5\x9fitim` çıkıyor. `fetch.DecodeMixed` her bayt için
-ayrı karar veriyor.
+Takvim sayfası tek belgede iki kodlama birden kullanıyor. Statik şablon
+ISO-8859-9, veritabanından gelen metinler UTF-8. Hangisini seçerseniz seçin
+metnin yarısı bozuluyor, ya `Ã¼` ya `E\xc5\x9fitim` çıkıyor. `fetch.DecodeMixed`
+her bayt için ayrı karar veriyor.
 
 OBS, haftada iki oturumu olan dersleri tek hücreye `<br>` ile sıkıştırıyor. Düz
 metne çevirdiğinizde `ÇarşambaÇarşamba` ve `09:30/12:2913:30/17:29` gibi şeyler
 elde ediyorsunuz. Gün, saat, derslik ve bina kolonları `<br>` üzerinden bölünüp
 paralel dizilere yazılıyor.
 
-Tarihsel dökümlerin biçimi yıldan yıla değişiyor. Ayırıcı eskiden boşluk, sonradan
-` / ` olmuş. Saatler bazen `0930/1229`, bazen `09:30/12:29`. Gün adları kimi yıl
-Türkçe, kimi yıl İngilizce. Hepsi tek biçime çekiliyor, yoksa iki dönemi yan yana
-koyup karşılaştıramıyorsunuz.
+Tarihsel dökümlerin biçimi yıldan yıla değişiyor. Ayırıcı eskiden boşluk,
+sonradan ` / ` olmuş. Saatler bazen `0930/1229`, bazen `09:30/12:29`. Gün adları
+kimi yıl Türkçe, kimi yıl İngilizce. Hepsi tek biçime çekiliyor, yoksa iki
+dönemi yan yana koyup karşılaştıramıyorsunuz.
 
 Aynı dökümlerde bina ve derslik aynı hücrede duruyor. `INB / A104` tek oturumun
 binası ve dersliği, ama `MDB / MDB / -- / --` iki oturumun ikisi birden. Eleman
 sayısı oturum sayısının iki katıysa ikinci yarı derslik sayılıyor.
 
 Bir de şu var, bulması en can sıkıcı olanı: `"BIL".toLocaleLowerCase("tr")` size
-`"bıl"` veriyor. Türkçe yerelinde I harfi noktasız ı'ya düşüyor. Yani kullanıcı
-arama kutusuna `bil` yazdığında hiçbir şey bulunmuyor. Site artık aramayı ASCII'ye
-katlanmış metin üzerinde yapıyor. Yan fayda olarak `muhendislik` de `Mühendislik`i
-buluyor.
+`"bıl"` veriyor. Türkçe yerelinde I harfi noktasız ı'ya düşüyor. Kullanıcı arama
+kutusuna `bil` yazdığında hiçbir şey bulunmuyor. Site artık aramayı ASCII'ye
+katlanmış metin üzerinde yapıyor. Yan fayda olarak `muhendislik` de
+`Mühendislik`i buluyor.
 
-Kontenjan zaman serisinde boyut sorunu var: 3900 şubelik bir dönemde yarım saatte
-bir tam snapshot almak haftada onlarca megabayt eder. Onun yerine append-only bir
-JSONL tutuyoruz ve her satıra yalnızca bir öncekine göre değişen CRN'leri yazıyoruz.
-Kayıt dışı zamanlarda satır hiç yazılmıyor, kayıt haftasında yoğunlaşıyor. Yan
-fayda olarak git diff'i de temiz kalıyor, her ölçüm tek satır ekliyor.
+Kontenjan zaman serisinde boyut sorunu var. 3900 şubelik bir dönemde yarım
+saatte bir tam snapshot almak haftada onlarca megabayt eder. Onun yerine
+append-only bir JSONL tutuyoruz ve her satıra yalnızca bir öncekine göre değişen
+CRN'leri yazıyoruz. Kayıt dışı zamanlarda satır hiç yazılmıyor, kayıt haftasında
+yoğunlaşıyor. Yan fayda olarak git diff'i de temiz kalıyor, her ölçüm tek satır
+ekliyor.
 
-Önşart sayfasında (`OnsartAra`) OBS'nin kendi markup'ında gerçek bir hata var:
-"Ders Adı" hücresinin kapanış etiketi tamamen eksik, tarayıcı bunu otomatik
-kapatıyor ama eşleşen `<td>...</td>` çiftlerine bakan bir regex bunu bilmiyor
-ve iki hücreyi birleştiriyor. Çözüm eşleşen çiftlere değil `<td` konumlarına
-göre bölmek — kapanış etiketi olsun olmasın doğru sonucu veriyor.
+Önşart sayfasında (`OnsartAra`) OBS'nin kendi markup'ında gerçek bir hata var.
+"Ders Adı" hücresinin kapanış etiketi tamamen eksik. Tarayıcı bunu otomatik
+kapatıyor ama eşleşen `<td>...</td>` çiftlerine bakan bir regex bunu bilmiyor ve
+iki hücreyi birleştiriyor. Çözüm eşleşen çiftlere değil `<td` konumlarına göre
+bölmek. Kapanış etiketi olsun olmasın doğru sonucu veriyor.
 
-Müfredat sayfasında da benzer bir tuzak var: dönem başlıkları (`1. Yarıyıl`)
-`<h3>` değil `<h2>` etiketiyle geliyor; sayfanın kendi sekme başlıkları
-(Akademik Takvim, Ders Bilgileri...) `<h3>`. İkisini karıştırınca yanlış
+Müfredat sayfasında da benzer bir tuzak var. Dönem başlıkları (`1. Yarıyıl`)
+`<h3>` değil `<h2>` etiketiyle geliyor, sayfanın kendi sekme başlıkları
+(Akademik Takvim, Ders Bilgileri...) ise `<h3>`. İkisini karıştırınca yanlış
 başlıklarla eşleşip sessizce boş bir müfredat üretiyorsunuz.
 
-Force-directed grafikte de ilginç bir hata çıktı: aynı `Path2D` üzerinde art
+Force-directed grafikte de ilginç bir hata çıktı. Aynı `Path2D` üzerinde art
 arda `arc()` çağırmak, `moveTo` olmadan her dairenin bitişini bir sonrakinin
 başlangıcına düz bir çizgiyle bağlıyor. Sonuç, binlerce ayrı daire yerine tek
 bir "vitray" şekli. Her `arc()`'tan önce `moveTo` çağırmak şart.
 
-Fizikte de bir kararsızlık vardı: iki düğüm üst üste binince itme kuvveti
+Fizikte de bir kararsızlık vardı. İki düğüm üst üste binince itme kuvveti
 sonsuza gidiyor ve simülasyon bir turda sayısal olarak patlıyor (pozisyonlar
 `1e+70` mertebesine fırlıyor). Çözüm minimum mesafe ve maksimum kuvvet/hız
 sınırlaması. Bir de yerleşme animasyonunu `requestAnimationFrame` ile
-zamanlamayın: sekme görünür değilken tarayıcılar rAF'ı süresiz askıya
-alabiliyor ve animasyon hiç bitmiyor. `setTimeout` ile, gerçekten geçen süreye
-göre uyarlanabilir yield kullanmak güvenilir.
+zamanlamayın. Sekme görünür değilken tarayıcılar rAF'ı süresiz askıya alabiliyor
+ve animasyon hiç bitmiyor. `setTimeout` ile, gerçekten geçen süreye göre
+uyarlanabilir yield kullanmak güvenilir.
 
 Son olarak, OBS tablosu 15 kolon değilse, sınav tablosu 10 kolon değilse ya da
 tarihsel dökümde beklenen başlıklar yoksa scraper hata verip duruyor. Sessizce
@@ -217,13 +217,13 @@ olduğuna göre bu döküm dönem başında alınmış, muhtemelen eksik.
 Geçmiş dönemler OBS'den geri alınamıyor. Öğretim yöntemi, önşart ve rezervasyon
 bilgisi ancak bugünden sonraki taramalarda birikecek.
 
-Geçmiş dönemlerde seviye bilgisi (LS/LU) bugünkü branş listesinden tahmin ediliyor.
-O tarihten sonra kapanmış branşlarda boş kalabilir.
+Geçmiş dönemlerde seviye bilgisi (LS/LU) bugünkü branş listesinden tahmin
+ediliyor. O tarihten sonra kapanmış branşlarda boş kalabilir.
 
-Müfredat lisans programlarında 128'in 106'sında çekilebildi; kalan 22'si (Siber
+Müfredat lisans programlarında 128'in 106'sında çekilebildi. Kalan 22'si (Siber
 Güvenlik Mühendisliği, Yapay Zeka gibi yeni açılan bazı programlar) OBS'de henüz
 yayınlanmış bir plan sürümüne sahip değil. Önlisans (1), yüksek lisans (3) ve
-doktora (4) programları da çekiliyor; ikinci öğretim (ID 5) kodları yüksek
+doktora (4) programları da çekiliyor. İkinci öğretim (ID 5) kodları yüksek
 lisansla (_YL) çakıştığı için kapsam dışı.
 
 ## Uyarı

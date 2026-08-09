@@ -302,17 +302,20 @@ func (b *Builder) Generate() error {
 		}
 	}
 
-	// Hoca geçmişini yükle (ders sayfaları hoca linkleri için erkenden).
-	if err := b.loadInstructors(); err != nil {
-		return err
+	// Hoca geçmişi (EN'de atlanır — Cloudflare dosya limiti).
+	instrSlugs := map[string]string{}
+	if b.l.Code != "en" {
+		if err := b.loadInstructors(); err != nil {
+			return err
+		}
+		for name := range b.instructors {
+			instrSlugs[name] = instructorSlug(name)
+		}
+	} else {
+		b.instructors = map[string]*histInstr{}
 	}
 	// Kontenjan zaman serisi (grafikler için).
 	b.loadQuotaSeries()
-
-	instrSlugs := map[string]string{}
-	for name := range b.instructors {
-		instrSlugs[name] = instructorSlug(name)
-	}
 
 	// Kurs geçmişini ve son dönem şubelerini yükle.
 	if err := b.loadCourseData(terms); err != nil {
@@ -341,17 +344,17 @@ func (b *Builder) Generate() error {
 		}
 	}
 
-	// Hoca sayfaları.
-	instrSlugList := make([]string, 0, len(b.instructors))
-	for name := range b.instructors {
-		instrSlugList = append(instrSlugList, instructorSlug(name))
-	}
-	sort.Strings(instrSlugList)
-	for _, slug := range instrSlugList {
-		// Ters arama: slug → name (birden çok aynı slug olabilir, ilkini al).
-		// Bu eşleme loadInstructors'ta doğrulanıyor.
-		if err := b.writeInstructorPage(slug, instrSlugs, courseSlugs, termLabels); err != nil {
-			return err
+	// Hoca sayfaları (yalnızca TR — Cloudflare 20k dosya limiti).
+	if b.l.Code != "en" {
+		instrSlugList := make([]string, 0, len(b.instructors))
+		for name := range b.instructors {
+			instrSlugList = append(instrSlugList, instructorSlug(name))
+		}
+		sort.Strings(instrSlugList)
+		for _, slug := range instrSlugList {
+			if err := b.writeInstructorPage(slug, instrSlugs, courseSlugs, termLabels); err != nil {
+				return err
+			}
 		}
 	}
 
@@ -531,12 +534,14 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	for _, s := range cslugList {
 		sitemapURL(&out, fmt.Sprintf("%s/ders/%s/", baseURL, s), rootDate, "monthly", "0.8")
 	}
-	// Hoca sayfaları.
-	hslugList := make([]string, 0, len(instrSlugs))
-	for _, s := range instrSlugs { hslugList = append(hslugList, s) }
-	sort.Strings(hslugList)
-	for _, s := range hslugList {
-		sitemapURL(&out, fmt.Sprintf("%s/hoca/%s/", baseURL, s), rootDate, "monthly", "0.6")
+	// Hoca sayfaları (yalnızca TR).
+	if b.l.Code != "en" {
+		hslugList := make([]string, 0, len(instrSlugs))
+		for _, s := range instrSlugs { hslugList = append(hslugList, s) }
+		sort.Strings(hslugList)
+		for _, s := range hslugList {
+			sitemapURL(&out, fmt.Sprintf("%s/hoca/%s/", baseURL, s), rootDate, "monthly", "0.6")
+		}
 	}
 
 	out.WriteString("</urlset>\n")

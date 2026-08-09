@@ -279,7 +279,7 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 
 .tabs {
   display: flex; gap: 2px; flex-wrap: wrap; width: max-content; max-width: 100%;
-  margin: 26px 0 0; padding: 4px; border-radius: 999px;
+  margin: 26px auto 0; padding: 4px; border-radius: 999px;
   background: var(--panel);
   background: color-mix(in srgb, var(--panel) 82%, transparent);
   border: 1px solid var(--hairline);

@@ -5,6 +5,7 @@ import { $, getJSON, esc, fold, debounce, termLabel, setStatus } from '../core/u
 import { state } from '../core/store.js';
 import { fillBar, trendChart } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
+import { initReveal } from '../core/reveal.js';
 
 let inited = false;
 
@@ -103,7 +104,7 @@ async function showCourse(code, branch) {
   }
 
   $('#hdetail').innerHTML = `
-    <article class="hcard">
+    <article class="hcard reveal">
       <h3>${esc(c.code)} <span>${esc(c.name)}</span></h3>
       <p class="meta">${byTerm.size} dönemde açıldı · açıldığı dönemler: ${esc(rhythm)}</p>
       ${trendChart(byTerm)}
@@ -118,6 +119,7 @@ async function showCourse(code, branch) {
         <td class="when">${esc(r.days || '—')}</td>
         <td class="num">${r.cap}</td><td class="num">${r.enr}</td>
         <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`);
+  initReveal($('#hdetail'));
   $('#hdetail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
@@ -134,7 +136,7 @@ async function showPerson(name, bucket) {
   const sorted = [...byCourse].sort((a, b) => b[1].terms.length - a[1].terms.length);
 
   $('#hdetail').innerHTML = `
-    <article class="hcard">
+    <article class="hcard reveal">
       <h3>${esc(name)}</h3>
       <p class="meta">${byCourse.size} farklı ders · ${p.rows.length} şube · ${p.terms} dönem</p>
       <div class="tablewrap"><table class="htable" aria-label="${esc(name)} ders listesi">
@@ -146,5 +148,6 @@ async function showPerson(name, bucket) {
     <tr><td><b>${esc(code)}</b></td><td>${esc(v.name)}</td>
         <td class="num">${v.terms.length}</td>
         <td class="when">${esc(v.terms.map(termLabel).join(', '))}</td></tr>`);
+  initReveal($('#hdetail'));
   $('#hdetail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }

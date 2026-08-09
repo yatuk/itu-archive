@@ -270,6 +270,21 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 main { padding: 0 20px 60px; }
 .view { padding-top: 26px; }
 
+/* Sekme geçişi: görünür olan view hafif yukarı süzülerek girer. */
+.view-enter { animation: view-in 420ms var(--ease-out-expo); }
+@keyframes view-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Kaydırma giriş animasyonu — core/reveal.js yönetir. */
+body.reveal-ready .reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 600ms var(--ease-out-expo), transform 600ms var(--ease-out-expo);
+}
+body.reveal-ready .reveal.revealed { opacity: 1; transform: none; }
+
 @media (max-width: 640px) {
   .tabs { width: 100%; border-radius: 16px; }
 }

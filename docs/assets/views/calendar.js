@@ -3,6 +3,7 @@
 
 import { $, getJSON, esc, setStatus } from '../core/utils.js';
 import { state } from '../core/store.js';
+import { initReveal } from '../core/reveal.js';
 
 let inited = false;
 
@@ -49,7 +50,7 @@ function renderCalendar() {
 
   let html = '';
   for (const [title, evs] of groups) {
-    html += `<section class="calgroup"><h3>${esc(title)}</h3><ol>` +
+    html += `<section class="calgroup reveal"><h3>${esc(title)}</h3><ol>` +
       evs.map((e) => `<li class="${e.now ? 'now' : e.past ? 'past' : ''}">
         <span>${esc(e.title)}</span>
         <span class="date">${esc(e.date)}</span>
@@ -57,4 +58,5 @@ function renderCalendar() {
       '</ol></section>';
   }
   $('#calendar').innerHTML = html;
+  initReveal($('#calendar'));
 }

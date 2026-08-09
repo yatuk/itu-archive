@@ -108,6 +108,13 @@ function wireTabs() {
     for (const s of document.querySelectorAll('.view')) {
       const active = s.id === `view-${view}`;
       s.hidden = !active;
+      // Görünür olan view'a giriş animasyonu; yeniden tetikleme için sınıfı
+      // kaldırıp yeniden ekliyoruz (animation özelliğiyle tek sefer oynar).
+      if (active) {
+        s.classList.remove('view-enter');
+        void s.offsetWidth; // reflow — animasyonu baştan başlat
+        s.classList.add('view-enter');
+      }
     }
     if (view === 'takvim') calendarShow();
     if (view === 'sinavlar') examsShow();

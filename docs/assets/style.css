@@ -71,17 +71,18 @@
   --grain-opacity: .05;
 }
 
-/* Açık tema — fosfor koyuluğunu tersine çevirir, değişkenler tek kaynaktan yönetilir. */
+/* Açık tema — fosfor koyuluğunu tersine çevirir, değişkenler tek kaynaktan yönetilir.
+   Zemin düz ve tek renkli: grain deseni ve scanlines bu temada kapalı. */
 [data-theme="light"] {
   color-scheme: light;
-  --bg: #f4f7f5;
+  --bg: #fbfcfb;
   --panel: #ffffff;
-  --panel-2: #eef2ef;
+  --panel-2: #f0f3f1;
   --line: #d7e2da;
   --line-hot: #b4c9bc;
   --fg: #143525;
   --dim: #2f5d45;
-  --dimmer: #5f7d6c;
+  --dimmer: #547060;
   --acid: #007a4d;
   --cyan: #00749a;
   --amber: #946200;
@@ -93,15 +94,17 @@
   --chart-cap: rgba(0, 122, 77, .14);
   --chart-cap-edge: rgba(0, 122, 77, .5);
   --chart-axis: rgba(47, 93, 69, .6);
-  --glow: #dcebe1;
+  --glow: #fbfcfb;
   --hairline: rgba(0, 0, 0, .08);
   --hairline-strong: rgba(0, 0, 0, .16);
   --shadow-soft: 0 14px 44px rgba(30, 60, 45, .14), 0 2px 8px rgba(30, 60, 45, .08);
   --shadow-card: inset 0 1px 0 rgba(255, 255, 255, .65), 0 10px 32px rgba(30, 60, 45, .10);
   --inset-hi: inset 0 1px 0 rgba(255, 255, 255, .75);
   --inset-lo: inset 0 -1px 0 rgba(0, 0, 0, .05);
-  --grain-opacity: .04;
+  --grain-opacity: 0;
 }
+/* Açık temada CRT taraması ve grain kapalı: düz, tek renkli zemin. */
+[data-theme="light"] .scanlines { display: none; }
 
 /* Yüksek kontrast — sınırlar ve metinler netleşir. */
 [data-theme="contrast"] {

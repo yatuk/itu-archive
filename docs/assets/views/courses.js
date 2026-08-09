@@ -21,6 +21,7 @@ export function initCourses() {
   $('#f-time').addEventListener('change', applyFilters);
   $('#f-level').addEventListener('change', applyFilters);
   $('#f-method').addEventListener('change', applyFilters);
+  $('#f-code').addEventListener('input', debounce(applyFilters, 120));
   $('#f-open').addEventListener('change', applyFilters);
   $('#f-term').addEventListener('change', () => loadTerm($('#f-term').value));
   $('#more').addEventListener('click', () => renderRows(true));
@@ -111,11 +112,13 @@ export function applyFilters() {
   const time = $('#f-time').value;
   const level = $('#f-level').value;
   const method = $('#f-method').value;
+  const code = $('#f-code').value.trim().toLowerCase();
   const openOnly = $('#f-open').checked;
   const terms = q ? q.split(/\s+/) : [];
 
   state.filtered = state.rows.filter((r, i) => {
     if (branch && r[3] !== branch) return false;
+    if (code && !r[1].toLowerCase().includes(code)) return false;
     if (day && !r[5].includes(day)) return false;
     if (time && !parseWhen(r[5]).some((s) => timeBucket(s.start) === time)) return false;
     // Seviye/yöntem alanları tarihsel dönemlerde yoktur; yoksa filtre uygulanmaz.
@@ -194,6 +197,7 @@ function renderChips() {
   const q = $('#q').value.trim();
   if (q) chips.push({ key: 'q', label: `"${q}"` });
   if ($('#f-branch').value) chips.push({ key: 'branch', label: `branş: ${$('#f-branch').value}` });
+  if ($('#f-code').value.trim()) chips.push({ key: 'code', label: `kod: ${$('#f-code').value.trim()}` });
   if ($('#f-day').value) chips.push({ key: 'day', label: `gün: ${$('#f-day').value}` });
   if ($('#f-time').value) chips.push({ key: 'time', label: `saat: ${TIME_LABEL[$('#f-time').value] || $('#f-time').value}` });
   if ($('#f-level').value) chips.push({ key: 'level', label: `seviye: ${$('#f-level').value}` });
@@ -212,6 +216,7 @@ function clearFilter(key) {
   switch (key) {
     case 'q': $('#q').value = ''; break;
     case 'branch': $('#f-branch').value = ''; break;
+    case 'code': $('#f-code').value = ''; break;
     case 'day': $('#f-day').value = ''; break;
     case 'time': $('#f-time').value = ''; break;
     case 'level': $('#f-level').value = ''; break;
@@ -395,6 +400,7 @@ function saveState() {
   if ($('#f-time').value) p.set('time', $('#f-time').value);
   if ($('#f-level').value) p.set('level', $('#f-level').value);
   if ($('#f-method').value) p.set('method', $('#f-method').value);
+  if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');
   const qs = p.toString();
   const url = location.pathname + (qs ? '?' + qs : '') + location.hash;

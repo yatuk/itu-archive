@@ -279,6 +279,7 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 
 .tabs {
   display: flex; gap: 2px; flex-wrap: wrap; width: max-content; max-width: 100%;
+  justify-content: center; align-items: center;
   margin: 26px auto 0; padding: 4px; border-radius: 999px;
   background: var(--panel);
   background: color-mix(in srgb, var(--panel) 82%, transparent);
@@ -318,7 +319,7 @@ body.reveal-ready .reveal {
 body.reveal-ready .reveal.revealed { opacity: 1; transform: none; }
 
 @media (max-width: 640px) {
-  .tabs { width: 100%; border-radius: 16px; }
+  .tabs { width: 100%; border-radius: 16px; overflow-x: auto; }
 }
 
 /* ---------- konsol / filtreler ---------- */
@@ -342,6 +343,12 @@ body.reveal-ready .reveal.revealed { opacity: 1; transform: none; }
 select {
   font: inherit; background: var(--panel-2); color: var(--fg);
   border: 1px solid var(--line-hot); padding: 6px 8px; border-radius: 2px; max-width: 260px;
+}
+/* Filtre satırındaki kısa metin girdisi (ders kodu gibi) */
+.f-in {
+  font: inherit; background: var(--panel-2); color: var(--fg);
+  border: 1px solid var(--line-hot); padding: 6px 8px; border-radius: 2px;
+  width: 110px;
 }
 select:focus-visible, input:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
 input[type="checkbox"] { accent-color: var(--acid); width: 15px; height: 15px; }

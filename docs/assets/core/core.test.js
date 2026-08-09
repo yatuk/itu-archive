@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 
 import { fold, termLabel, buildingOf } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
-import { sortValue, parseWhen, timeBucket, buildTimetable } from '../views/courses.js';
+import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 
 test('fold Türkçe karakterleri ASCII katar', () => {
@@ -96,6 +96,21 @@ test('timeBucket saat dilimini doğru kovaya koyar', () => {
   assert.equal(timeBucket(16 * 60 + 59), 'ogle');
   assert.equal(timeBucket(17 * 60), 'aksam');
   assert.equal(timeBucket(20 * 60), 'aksam');
+});
+
+// Gün filtresi tam-token eşleşmeli; "Pazar", "Pazartesi"yi; "Cuma",
+// "Cumartesi"yi eşleştirmemeli.
+test('matchesDay Pazar Pazartesi eşleştirmez (eski alt-dize hatası)', () => {
+  assert.equal(matchesDay('Pazartesi 08:30/12:29 | Çarşamba 13:00/16:59', 'Pazar'), false);
+});
+test('matchesDay Cuma Cumartesi eşleştirmez', () => {
+  assert.equal(matchesDay('Cumartesi 09:00/12:00', 'Cuma'), false);
+});
+test('matchesDay tam günü eşleştirir', () => {
+  assert.equal(matchesDay('Pazartesi 08:30/12:29', 'Pazartesi'), true);
+  assert.equal(matchesDay('Pazar 09:00/12:00', 'Pazar'), true);
+  assert.equal(matchesDay('Cuma 08:30/12:29', 'Cuma'), true);
+  assert.equal(matchesDay('', 'Pazartesi'), false);
 });
 
 // ---- Önşart AND/OR ayrıştırıcısı ----

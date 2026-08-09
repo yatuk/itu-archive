@@ -129,7 +129,7 @@ export function applyFilters() {
   state.filtered = state.rows.filter((r, i) => {
     if (branch && r[3] !== branch) return false;
     if (code && !r[1].toLowerCase().includes(code)) return false;
-    if (day && !r[5].includes(day)) return false;
+    if (day && !matchesDay(r[5], day)) return false;
     if (time && !parseWhen(r[5]).some((s) => timeBucket(s.start) === time)) return false;
     // Seviye/yöntem/program alanları tarihsel dönemlerde yoktur; yoksa filtre uygulanmaz.
     if (level && r[8] && r[8] !== level) return false;
@@ -463,6 +463,14 @@ export function timeBucket(startMin) {
   if (startMin < 12 * 60) return 'sabah';
   if (startMin < 17 * 60) return 'ogle';
   return 'aksam';
+}
+
+// Gün filtresi için tam-token eşleşmesi. when alanı "Pazartesi 08:30/12:29 |
+// Çarşamba 13:00/16:59" biçimindedir. Alt-dize araması yanlış eşleşme üretir:
+// "Pazar", "Pazartesi"nin içinde geçer; "Cuma", "Cumartesi"nin içinde. Saf
+// fonksiyon — test edilebilir.
+export function matchesDay(when, day) {
+  return String(when || '').split(/\s+/).includes(day);
 }
 
 function toMin(t) {

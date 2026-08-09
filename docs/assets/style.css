@@ -552,6 +552,22 @@ footer {
 .detail-box h3 span { color: var(--fg); font-weight: 400; letter-spacing: 0; }
 .d-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
 .d-pill { border: 1px solid var(--line-hot); color: var(--dim); font-size: 11px; padding: 1px 8px; }
+
+/* Bu dersi alabilen programlar — belirgin, her zaman görünür bölüm */
+.d-progs {
+  border: 1px solid var(--line-hot); background: var(--panel-2);
+  padding: 10px 14px; margin: 0 0 16px;
+}
+.d-progs h4 {
+  margin: 0 0 8px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--dimmer);
+}
+.d-prog-list { display: flex; flex-wrap: wrap; gap: 5px; }
+.d-prog {
+  border: 1px solid var(--line-hot); color: var(--cyan); padding: 2px 8px;
+  font-size: 11px; letter-spacing: .04em;
+}
+.d-prog-none { color: var(--dim); border-style: dashed; }
 .detail-box dl {
   display: grid; grid-template-columns: max-content 1fr; gap: 8px 18px; margin: 0 0 18px;
 }

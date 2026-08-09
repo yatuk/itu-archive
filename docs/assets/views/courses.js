@@ -290,12 +290,18 @@ function renderRows(append) {
     frag.querySelectorAll('tr').forEach((tr, i) => {
       const r = slice[i];
       tr.querySelector('.row-toggle').addEventListener('click', () => openDetail(r));
+      // Satırın herhangi bir yerine tıklayınca detay açılır; checkbox tıklaması
+      // seçim için ayrıdır ve satır tıklamasını tetiklemez.
+      tr.addEventListener('click', () => openDetail(r));
       const cb = tr.querySelector('.row-sel');
-      if (cb) cb.addEventListener('change', () => {
-        if (cb.checked) state.selected.add(cb.dataset.key);
-        else state.selected.delete(cb.dataset.key);
-        updateSelection();
-      });
+      if (cb) {
+        cb.addEventListener('click', (ev) => ev.stopPropagation());
+        cb.addEventListener('change', () => {
+          if (cb.checked) state.selected.add(cb.dataset.key);
+          else state.selected.delete(cb.dataset.key);
+          updateSelection();
+        });
+      }
     });
   }
 
@@ -334,10 +340,20 @@ async function openDetail(row) {
   const pct = sec.capacity ? `%${Math.round((sec.enrolled / sec.capacity) * 100)}` : '';
   const note = fillNote(crn);
   const canHistory = sec.instructor && sec.instructor !== '-' && sec.instructor !== '***';
+  const programs = sec.programs || [];
+
+  // "Alabilen programlar" belirgin ve her zaman görünür; boşsa kısıtlama yok.
+  const programsHtml = programs.length
+    ? programs.map((p) => `<span class="d-prog">${esc(p)}</span>`).join('')
+    : '<span class="d-prog d-prog-none">kısıtlama yok — tüm programlar alabilir</span>';
 
   content.innerHTML = `
     <h3 id="detail-title">${esc(code)} <span>${esc(name)}</span></h3>
     <div class="d-meta">${[branch, sec.level, sec.method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
+    <section class="d-progs">
+      <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>
+      <div class="d-prog-list">${programsHtml}</div>
+    </section>
     <dl>
       ${field('Öğretim üyesi', sec.instructor)}
       ${field('Kontenjan', sec.capacity ? `${sec.enrolled} / ${sec.capacity} (${pct})` : '—')}
@@ -346,7 +362,6 @@ async function openDetail(row) {
       ${sec.prereq && sec.prereq !== '-' ? field('Önşart', sec.prereq) : ''}
       ${sec.classReq && sec.classReq !== '-' ? field('Sınıf / kredi önşartı', sec.classReq) : ''}
       ${sec.reserved && sec.reserved !== '-' ? field('Rezervasyon', sec.reserved) : ''}
-      ${sec.programs.length ? `<dt>Alabilen programlar</dt><dd class="tags">${sec.programs.map((p) => `<span>${esc(p)}</span>`).join('')}</dd>` : ''}
     </dl>
     ${canHistory ? `<button type="button" class="btn-ghost d-hist" data-name="${esc(sec.instructor)}">bu hocanın geçmişinde ara</button>` : ''}`;
 

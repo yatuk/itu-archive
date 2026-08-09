@@ -307,6 +307,7 @@ func (r *Result) checkSitePages(root string) {
 	derDir := filepath.Join(root, "dersler")
 	bransDir := filepath.Join(root, "brans")
 	dersDir := filepath.Join(root, "ders")
+	hocaDir := filepath.Join(root, "hoca")
 
 	var ix model.SiteIndex
 	if err := readJSON(filepath.Join(root, "data", "index.json"), &ix); err != nil {
@@ -439,6 +440,16 @@ func (r *Result) checkSitePages(root string) {
 		}
 	}
 
+	// Hoca sayfaları.
+	gotHoca := map[string]bool{}
+	if ents, err := os.ReadDir(hocaDir); err == nil {
+		for _, e := range ents {
+			if !e.IsDir() { continue }
+			gotHoca[e.Name()] = true
+			checkPage(hocaDir, e.Name(), false)
+		}
+	}
+
 	// Sitemap kapsamı: sitedeki her sayfa sitemap'te, sitemap'teki her loc dosyada.
 	b, err := os.ReadFile(filepath.Join(root, "sitemap.xml"))
 	if err != nil {
@@ -475,6 +486,13 @@ func (r *Result) checkSitePages(root string) {
 		expected := fmt.Sprintf("https://itu-ders.com/ders/%s/", s)
 		if !smLocs[expected] {
 			r.errf("seo: sitemap'te eksik ders: %s", s)
+		}
+		delete(smLocs, expected)
+	}
+	for s := range gotHoca {
+		expected := fmt.Sprintf("https://itu-ders.com/hoca/%s/", s)
+		if !smLocs[expected] {
+			r.errf("seo: sitemap'te eksik hoca: %s", s)
 		}
 		delete(smLocs, expected)
 	}

@@ -9,11 +9,17 @@
 <meta name="author" content="İTÜ Ders Arşivi">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://itu-ders.com/">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="dark light">
 <script>
-/* Tema seçimini çizimden önce uygula (flash önleme). */
 (function () {
-  try { var t = localStorage.getItem('itu-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  try {
+    var t = localStorage.getItem('itu-theme');
+    if (t && t !== 'auto') { document.documentElement.setAttribute('data-theme', t); }
+    else {
+      document.documentElement.setAttribute('data-theme',
+        matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    }
+  } catch (e) {}
 })();
 </script>
 
@@ -30,7 +36,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/glitch_effect.gif">
 
 <link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="logo.png" type="image/png">
+<link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -110,6 +116,7 @@
      <button type="button" class="theme-btn" data-theme="dark" aria-pressed="true" title="Fosfor (koyu)">◐</button>
      <button type="button" class="theme-btn" data-theme="light" aria-pressed="false" title="Açık">☀</button>
      <button type="button" class="theme-btn" data-theme="contrast" aria-pressed="false" title="Yüksek kontrast">▣</button>
+     <button type="button" class="theme-btn" data-theme="auto" aria-pressed="false" title="Sistem teması">◈</button>
     </div>
    </div>
   </div>

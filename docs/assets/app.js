@@ -92,16 +92,29 @@ async function boot() {
 
 function initTheme() {
   const btns = [...document.querySelectorAll('.theme-btn')];
+  const resolveAuto = () => matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  const domApply = (t) => {
+    document.documentElement.setAttribute('data-theme', t === 'auto' ? resolveAuto() : t);
+    for (const b of btns) {
+      b.setAttribute('aria-pressed', String(b.dataset.theme === t));
+      b.tabIndex = b.dataset.theme === t ? 0 : -1;
+    }
+  };
   const apply = (t) => {
-    document.documentElement.setAttribute('data-theme', t);
-    for (const b of btns) b.setAttribute('aria-pressed', String(b.dataset.theme === t));
+    domApply(t);
     try { localStorage.setItem('itu-theme', t); } catch (e) {}
   };
-  const cur = document.documentElement.getAttribute('data-theme') || 'dark';
+  // Kayıtlı tercih (inline script dark/light çözmüş olabilir → cookie oku).
+  let cur = 'dark';
+  try { cur = localStorage.getItem('itu-theme') || 'dark'; } catch (e) {}
+  domApply(cur); // auto ise sistemden çöz
   for (const b of btns) {
     b.addEventListener('click', () => apply(b.dataset.theme));
-    b.setAttribute('aria-pressed', String(b.dataset.theme === cur));
   }
+  // Sistem teması değişince auto modunda güncelle.
+  matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
+    if (localStorage.getItem('itu-theme') === 'auto') domApply('auto');
+  });
 }
 
 /* ---------- sekmeler ---------- */

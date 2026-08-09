@@ -7,6 +7,7 @@
 package site
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"html/template"
@@ -33,9 +34,13 @@ type Builder struct {
 	root    string
 	index   model.SiteIndex
 	aggs    map[string]*branchAgg
-	courses map[string]*histCourse // code -> tarihsel kurs kaydı
+	courses map[string]*histCourse
 	// courseSects: kursun son dönemindeki CRN satırları (search.json'dan).
-	courseSects map[string][]sectRow // code -> CRN satırları
+	courseSects map[string][]sectRow
+	// instructors: ad -> tarihsel hoca kaydı
+	instructors map[string]*histInstr
+	// quotaSeries: CRN -> kontenjan zaman serisi
+	quotaSeries map[string][]quotaPoint
 }
 
 type branchAgg struct {
@@ -72,6 +77,28 @@ type sectRow struct {
 	Enrolled   int
 }
 
+// quotaPoint, quota JSONL'den tekil bir veri noktası.
+type quotaPoint struct {
+	Ts  string
+	Enr int
+	Cap int
+}
+
+// histInstr, history/instructors/<bucket>.json'dan gelen tek bir hoca.
+type histInstr struct {
+	Name  string
+	Rows  []instrRow
+	Terms int
+}
+
+type instrRow struct {
+	Term string
+	Code string
+	Name string
+	Cap  int
+	Enr  int
+}
+
 // branchLink, bir dönem sayfasındaki branş listesi öğesi.
 type branchLink struct {
 	Code     string
@@ -95,6 +122,7 @@ func (b *Builder) Generate() error {
 	_ = os.RemoveAll(filepath.Join(b.root, "dersler"))
 	_ = os.RemoveAll(filepath.Join(b.root, "brans"))
 	_ = os.RemoveAll(filepath.Join(b.root, "ders"))
+	_ = os.RemoveAll(filepath.Join(b.root, "hoca"))
 
 	if err := readJSON(filepath.Join(b.root, "data", "index.json"), &b.index); err != nil {
 		return fmt.Errorf("index okunamadı: %w", err)
@@ -152,9 +180,27 @@ func (b *Builder) Generate() error {
 		}
 	}
 
+	// Hoca geçmişini yükle (ders sayfaları hoca linkleri için erkenden).
+	if err := b.loadInstructors(); err != nil {
+		return err
+	}
+	// Kontenjan zaman serisi (grafikler için).
+	b.loadQuotaSeries()
+
+	instrSlugs := map[string]string{}
+	for name := range b.instructors {
+		instrSlugs[name] = instructorSlug(name)
+	}
+
 	// Kurs geçmişini ve son dönem şubelerini yükle.
 	if err := b.loadCourseData(terms); err != nil {
 		return err
+	}
+
+	// Dönem etiketi haritası (her slug → label).
+	termLabels := map[string]string{}
+	for _, t := range b.index.Terms {
+		termLabels[t.Slug] = t.Label
 	}
 
 	// Ders sayfaları (önce — branş sayfaları bunlara link verir).
@@ -168,7 +214,21 @@ func (b *Builder) Generate() error {
 	}
 	sort.Strings(sortedCodes)
 	for _, code := range sortedCodes {
-		if err := b.writeCoursePage(code, courseSlugs[code]); err != nil {
+		if err := b.writeCoursePage(code, courseSlugs[code], instrSlugs, termLabels); err != nil {
+			return err
+		}
+	}
+
+	// Hoca sayfaları.
+	instrSlugList := make([]string, 0, len(b.instructors))
+	for name := range b.instructors {
+		instrSlugList = append(instrSlugList, instructorSlug(name))
+	}
+	sort.Strings(instrSlugList)
+	for _, slug := range instrSlugList {
+		// Ters arama: slug → name (birden çok aynı slug olabilir, ilkini al).
+		// Bu eşleme loadInstructors'ta doğrulanıyor.
+		if err := b.writeInstructorPage(slug, instrSlugs, courseSlugs, termLabels); err != nil {
 			return err
 		}
 	}
@@ -180,19 +240,13 @@ func (b *Builder) Generate() error {
 	}
 
 	brCodes := sortedKeys(b.aggs)
-	termLabels := map[string]string{}
-	for _, tr := range terms {
-		if tr.tref.Label != "" {
-			termLabels[tr.tref.Slug] = tr.tref.Label
-		}
-	}
 	for _, code := range brCodes {
 		if err := b.writeBranchPage(code, termLabels, courseSlugs); err != nil {
 			return err
 		}
 	}
 
-	return b.writeSitemap(terms, brCodes, courseSlugs)
+	return b.writeSitemap(terms, brCodes, courseSlugs, instrSlugs)
 }
 
 func (b *Builder) writeTermPage(tr termRow) error {
@@ -330,7 +384,7 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
 }
 
-func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs map[string]string) error {
+func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs map[string]string, instrSlugs map[string]string) error {
 	rootDate := dateOf(b.index.ScrapedAt)
 	var out strings.Builder
 	out.WriteString(`<?xml version="1.0" encoding="UTF-8"?>` + "\n")
@@ -354,6 +408,13 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	sort.Strings(cslugList)
 	for _, s := range cslugList {
 		sitemapURL(&out, fmt.Sprintf("%s/ders/%s/", baseURL, s), rootDate, "monthly", "0.8")
+	}
+	// Hoca sayfaları.
+	hslugList := make([]string, 0, len(instrSlugs))
+	for _, s := range instrSlugs { hslugList = append(hslugList, s) }
+	sort.Strings(hslugList)
+	for _, s := range hslugList {
+		sitemapURL(&out, fmt.Sprintf("%s/hoca/%s/", baseURL, s), rootDate, "monthly", "0.6")
 	}
 
 	out.WriteString("</urlset>\n")
@@ -389,12 +450,14 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<script>(function(){try{var t=localStorage.getItem('itu-theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t);else document.documentElement.setAttribute('data-theme',matchMedia('(prefers-color-scheme:light)').matches?'light':'dark')}catch(e){}})()</script>
 <title>{{.Title}} — İTÜ Ders Arşivi</title>
 <meta name="description" content="{{.Description}}">
 <link rel="canonical" href="{{.Canonical}}">
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="/assets/style.css">
-<link rel="icon" href="/logo.png" type="image/png">
+<link rel="icon" href="/favicon.png" type="image/png">
 {{.JSONLD}}
 </head>
 <body>
@@ -544,6 +607,278 @@ func readJSON(path string, v any) error {
 	return json.Unmarshal(b, v)
 }
 
+// --- hoca sayfaları ---
+
+// instructorSlug, bir hoca adını URL güvenli biçime normalleştirir.
+// "Abdi Kükner" -> "abdi-kukner"
+func instructorSlug(name string) string {
+	s := strings.ToLower(name)
+	s = strings.NewReplacer(
+		"ü", "u", "ş", "s", "ç", "c", "ğ", "g", "ö", "o",
+		"ı", "i", "İ", "i", "Ü", "u", "Ş", "s", "Ç", "c",
+		"Ğ", "g", "Ö", "o", ".", "",
+	).Replace(s)
+	var b strings.Builder
+	lastDash := false
+	for _, r := range s {
+		if (r >= 'a' && r <= 'z') || (r >= '0' && r <= '9') {
+			b.WriteRune(r)
+			lastDash = false
+		} else if !lastDash && b.Len() > 0 {
+			b.WriteByte('-')
+			lastDash = true
+		}
+	}
+	return trimSlug(strings.Trim(b.String(), "-"))
+}
+
+// cap max 80 karakter (Windows yolu sınırı).
+const maxSlugLen = 80
+
+func trimSlug(s string) string {
+	if len(s) <= maxSlugLen { return s }
+	return s[:maxSlugLen]
+}
+
+// loadInstructors, tüm hoca geçmişini okur.
+func (b *Builder) loadInstructors() error {
+	b.instructors = map[string]*histInstr{}
+	dir := filepath.Join(b.root, "data", "history", "instructors")
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		return fmt.Errorf("history/instructors okunamadı: %w", err)
+	}
+	for _, e := range entries {
+		if !strings.HasSuffix(e.Name(), ".json") {
+			continue
+		}
+		var raw map[string]json.RawMessage
+		if err := readJSON(filepath.Join(dir, e.Name()), &raw); err != nil {
+			return fmt.Errorf("%s: %w", e.Name(), err)
+		}
+		for name, r := range raw {
+			var full struct {
+				Name  string    `json:"name"`
+				Rows  [][]any   `json:"rows"`
+				Terms int       `json:"terms"`
+			}
+			if err := json.Unmarshal(r, &full); err != nil {
+				return fmt.Errorf("%s/%s: %w", e.Name(), name, err)
+			}
+			hi := &histInstr{Name: full.Name, Terms: full.Terms}
+			for _, row := range full.Rows {
+				if len(row) >= 5 {
+					ir := instrRow{}
+					if s, ok := row[0].(string); ok { ir.Term = s }
+					if s, ok := row[1].(string); ok { ir.Code = s }
+					if s, ok := row[2].(string); ok { ir.Name = s }
+					switch v := row[3].(type) { case float64: ir.Cap = int(v) }
+					switch v := row[4].(type) { case float64: ir.Enr = int(v) }
+					hi.Rows = append(hi.Rows, ir)
+				}
+			}
+			b.instructors[name] = hi
+		}
+	}
+	return nil
+}
+
+// writeInstructorPage, tek bir hoca için sayfa üretir.
+func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string, courseSlugs map[string]string, termLabels map[string]string) error {
+	// slug → name araması (ters eşleme).
+	var hi *histInstr
+	for name, s := range instrSlugs {
+		if s == slug {
+			hi = b.instructors[name]
+			break
+		}
+	}
+	if hi == nil {
+		return fmt.Errorf("hoca bulunamadı: %s", slug)
+	}
+
+	canonical := fmt.Sprintf("%s/hoca/%s/", baseURL, slug)
+	title := hi.Name + " — verdiği dersler"
+	lead := fmt.Sprintf("%s — İTÜ'de %d dönemde, %d farklı ders.", hi.Name, hi.Terms, distinctCodes(hi.Rows))
+
+	jsonld := jsonldScript([]any{
+		map[string]any{
+			"@context":    "https://schema.org",
+			"@type":       "Person",
+			"url":         canonical,
+			"name":        hi.Name,
+			"affiliation": map[string]string{"@type": "CollegeOrUniversity", "name": "İstanbul Teknik Üniversitesi"},
+		},
+	})
+
+	// Ders tablosu.
+	sort.Slice(hi.Rows, func(i, j int) bool {
+		if hi.Rows[i].Term != hi.Rows[j].Term {
+			return term.SortKey(hi.Rows[i].Term) > term.SortKey(hi.Rows[j].Term)
+		}
+		return hi.Rows[i].Code < hi.Rows[j].Code
+	})
+
+	var rows []string
+	for _, r := range hi.Rows {
+		label := r.Term
+		if l, ok := termLabels[r.Term]; ok {
+			label = l
+		}
+		codeHTML := template.HTMLEscapeString(r.Code)
+		if cs, ok := courseSlugs[r.Code]; ok {
+			codeHTML = fmt.Sprintf(`<a href="/ders/%s/">%s</a>`, cs, template.HTMLEscapeString(r.Code))
+		}
+		rows = append(rows, fmt.Sprintf(
+			`<tr><td>%s</td><td>%s</td><td><a href="/dersler/%s/">%s</a></td><td>%d</td><td>%d</td></tr>`,
+			codeHTML,
+			template.HTMLEscapeString(r.Name),
+			template.HTMLEscapeString(r.Term),
+			template.HTMLEscapeString(label),
+			r.Cap, r.Enr,
+		))
+	}
+
+	content := template.HTML(buildContent(
+		fmt.Sprintf(`<nav class="crumb"><a href="/">Ders Arşivi</a> › <span>%s</span></nav>`, template.HTMLEscapeString(hi.Name)),
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(hi.Name)),
+		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(lead)),
+		`<dl class="seo-stats">`+
+			fmt.Sprintf(`<div><dt>toplam dönem</dt><dd>%d</dd></div>`, hi.Terms)+
+			fmt.Sprintf(`<div><dt>ders kaydı</dt><dd>%d</dd></div>`, len(hi.Rows))+
+			`</dl>`,
+		`<h2>Verdiği dersler</h2>`,
+		`<table class="seo-table"><thead><tr><th>Ders</th><th>Adı</th><th>Dönem</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
+			strings.Join(rows, "")+`</tbody></table>`,
+	))
+
+	return b.writePage(filepath.Join(b.root, "hoca", slug, "index.html"),
+		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
+}
+
+func distinctCodes(rows []instrRow) int {
+	seen := map[string]struct{}{}
+	for _, r := range rows {
+		if r.Code != "" {
+			seen[r.Code] = struct{}{}
+		}
+	}
+	return len(seen)
+}
+
+// --- kontenjan zaman serisi ---
+
+// loadQuotaSeries, mevcut quota JSONL dosyalarını okuyup per-CRN seri oluşturur.
+// Hata durumunda sessizce atlar (veri seyrek, her dönemde yok).
+func (b *Builder) loadQuotaSeries() {
+	b.quotaSeries = map[string][]quotaPoint{}
+	dir := filepath.Join(b.root, "data", "quota")
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		return
+	}
+	for _, e := range entries {
+		if !strings.HasSuffix(e.Name(), ".jsonl") {
+			continue
+		}
+		path := filepath.Join(dir, e.Name())
+		f, err := os.Open(path)
+		if err != nil {
+			continue
+		}
+		defer f.Close()
+		// replay: her satırı uygulayarak tam durumu takip et.
+		state := map[string]quotaPoint{} // CRN -> son nokta
+		scanner := bufio.NewScanner(f)
+		scanner.Buffer(make([]byte, 0, 1<<20), 64<<20)
+		for scanner.Scan() {
+			line := scanner.Bytes()
+			if len(line) == 0 {
+				continue
+			}
+			var snap struct {
+				TS   string           `json:"ts"`
+				Full bool             `json:"full,omitempty"`
+				Cap  map[string]int   `json:"cap,omitempty"`
+				Enr  map[string]int   `json:"enr,omitempty"`
+				Gone []string         `json:"gone,omitempty"`
+			}
+			if err := json.Unmarshal(line, &snap); err != nil {
+				continue
+			}
+			if snap.Full {
+				state = map[string]quotaPoint{}
+			}
+			for crn, c := range snap.Cap {
+				p := state[crn]
+				p.Cap = c
+				state[crn] = p
+			}
+			for crn, e := range snap.Enr {
+				p := state[crn]
+				p.Enr = e
+				state[crn] = p
+			}
+			for _, crn := range snap.Gone {
+				delete(state, crn)
+			}
+			// bu snapshot'ta değişen CRN'leri seriye ekle.
+			changed := map[string]bool{}
+			for c := range snap.Enr { changed[c] = true }
+			for c := range snap.Cap { changed[c] = true }
+			if snap.Full {
+				for c := range state { changed[c] = true }
+			}
+			for crn := range changed {
+				p := state[crn]
+				p.Ts = snap.TS
+				b.quotaSeries[crn] = append(b.quotaSeries[crn], p)
+			}
+		}
+	}
+}
+
+// quotaSparkline, bir CRN'in quota serisinden mini SVG çizgi grafiği üretir.
+func quotaSparkline(points []quotaPoint) template.HTML {
+	if len(points) < 2 {
+		return ""
+	}
+	// Her noktanın doluluk yüzdesini çiz.
+	vals := make([]float64, len(points))
+	min, max := 1e9, -1e9
+	for i, p := range points {
+		if p.Cap > 0 {
+			vals[i] = float64(p.Enr) / float64(p.Cap)
+		}
+		if vals[i] < min { min = vals[i] }
+		if vals[i] > max { max = vals[i] }
+	}
+	if max <= min { max = min + 0.01 }
+	rng := max - min
+	// 60x20 SVG.
+	w, h := 60, 20
+	var path strings.Builder
+	for i, v := range vals {
+		x := float64(i) / float64(len(vals)-1) * float64(w)
+		y := (1 - (v-min)/rng) * float64(h)
+		if i == 0 {
+			fmt.Fprintf(&path, "M%.1f %.1f", x, y)
+		} else {
+			fmt.Fprintf(&path, "L%.1f %.1f", x, y)
+		}
+	}
+	doldu := vals[len(vals)-1] >= 0.999
+	color := "var(--cyan)"
+	if doldu {
+		color = "var(--amber)"
+	}
+	svg := fmt.Sprintf(
+		`<svg class="seo-spark" width="%d" height="%d" viewBox="0 0 %d %d" aria-hidden="true"><polyline fill="none" stroke="%s" stroke-width="1.5" points="%s"/></svg>`,
+		w, h, w, h, color, path.String(),
+	)
+	return template.HTML(svg)
+}
+
 // --- ders sayfaları ---
 
 // courseSlug, bir ders kodunu URL güvenli biçime normalleştirir.
@@ -561,7 +896,7 @@ func courseSlug(code string) string {
 			lastDash = true
 		}
 	}
-	return strings.Trim(b.String(), "-")
+	return trimSlug(strings.Trim(b.String(), "-"))
 }
 
 // loadCourseData, ders geçmişini okur ve her ders için son dönem şubelerini
@@ -670,7 +1005,7 @@ func (b *Builder) loadCourseData(terms []termRow) error {
 }
 
 // writeCoursePage, tek bir ders için sayfa üretir.
-func (b *Builder) writeCoursePage(code, slug string) error {
+func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]string, termLabels map[string]string) error {
 	hc := b.courses[code]
 	if hc == nil {
 		return fmt.Errorf("ders bulunamadı: %s", code)
@@ -705,7 +1040,7 @@ func (b *Builder) writeCoursePage(code, slug string) error {
 			rows = append(rows, fmt.Sprintf(
 				`<tr><td>%s</td><td>%s</td><td>%s</td><td>%d/%d</td></tr>`,
 				template.HTMLEscapeString(s.CRN),
-				template.HTMLEscapeString(s.Instructor),
+				instrLink(s.Instructor, instrSlugs),
 				template.HTMLEscapeString(s.When),
 				s.Capacity, s.Enrolled,
 			))
@@ -715,20 +1050,32 @@ func (b *Builder) writeCoursePage(code, slug string) error {
 			strings.Join(rows, "") + `</tbody></table>`
 	}
 
+	// Kontenjan serisi (yalnızca veri varsa).
+	var quotaHTML string
+	if qSects, _ := b.courseSects[code]; len(qSects) > 0 {
+		for _, s := range qSects {
+			if pl := quotaSparkline(b.quotaSeries[s.CRN]); pl != "" {
+				quotaHTML += fmt.Sprintf(`<span class="seo-spark-wrap">%s <code>%s</code> %d/%d</span>`,
+					pl, s.CRN, s.Capacity, s.Enrolled)
+			}
+		}
+	}
+	if quotaHTML != "" {
+		quotaHTML = `<h2>Kontenjan doluluk geçmişi</h2><p class="seo-spark-line">` + quotaHTML + `</p>`
+	}
+
 	// Dönem geçmişi.
 	var histRows []string
 	for _, r := range hc.Rows {
 		label := r.Term
-		if lbl, ok := termLabelsFor(b.index); ok {
-			if v, ok2 := lbl[r.Term]; ok2 {
-				label = v
-			}
+		if l, ok := termLabels[r.Term]; ok {
+			label = l
 		}
 		histRows = append(histRows, fmt.Sprintf(
 			`<tr><td><a href="/dersler/%s/">%s</a></td><td>%s</td><td>%d</td><td>%d</td></tr>`,
 			template.HTMLEscapeString(r.Term),
 			template.HTMLEscapeString(label),
-			template.HTMLEscapeString(r.Instructor),
+			instrLink(r.Instructor, instrSlugs),
 			r.Capacity, r.Enrolled,
 		))
 	}
@@ -744,6 +1091,7 @@ func (b *Builder) writeCoursePage(code, slug string) error {
 			fmt.Sprintf(`<div><dt>toplam dönem</dt><dd>%d</dd></div>`, len(hc.Terms))+
 			`</dl>`,
 		sectHTML,
+		quotaHTML,
 		`<h2>Dönem geçmişi</h2>`,
 		`<table class="seo-table"><thead><tr><th>Dönem</th><th>Öğretim Üyesi</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
 			strings.Join(histRows, "")+`</tbody></table>`,
@@ -753,13 +1101,15 @@ func (b *Builder) writeCoursePage(code, slug string) error {
 		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
 }
 
-// termLabelsFor, sitemap index'indeki termin referanslarından slug->label haritası döndürür.
-func termLabelsFor(ix model.SiteIndex) (map[string]string, bool) {
-	out := map[string]string{}
-	for _, t := range ix.Terms {
-		out[t.Slug] = t.Label
+// instrLink, hoca adı için varsa hoca sayfasına bağlantı, yoksa düz metin döndürür.
+func instrLink(name string, instrSlugs map[string]string) string {
+	if name == "" || name == "***" {
+		return "—"
 	}
-	return out, len(out) > 0
+	if slug, ok := instrSlugs[name]; ok {
+		return fmt.Sprintf(`<a href="/hoca/%s/">%s</a>`, slug, template.HTMLEscapeString(name))
+	}
+	return template.HTMLEscapeString(name)
 }
 
 // --- sıralı anahtar yardımcıları ---

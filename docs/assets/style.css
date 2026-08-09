@@ -1024,3 +1024,8 @@ body.modal-open { overflow: hidden; }
 
 .masthead h1 a { color: inherit; text-decoration: none; }
 .masthead h1 a:hover { color: var(--cyan); }
+
+.seo-spark-wrap { display: inline-flex; align-items: center; gap: 6px; margin-right: 16px; }
+.seo-spark-wrap code { font-size: 10px; color: var(--dimmer); background: var(--panel-2); padding: 1px 4px; border-radius: 2px; }
+.seo-spark { vertical-align: middle; border: 1px solid var(--hairline); border-radius: 2px; }
+.seo-spark-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }

@@ -16,3 +16,10 @@ export const state = {
   sort: { key: 'crn', dir: 1 },
   selected: new Set(), // seçili şubeler, "branş|crn" anahtarları
 };
+
+// index.json hazır olduğunda çözülen söz. app.js boot() yüklemeyi bitirince
+// resolve eder; index yüklenmeden sekmesi açılan görünümler (ör. paylaşılan
+// #program bağlantısı ya da yavaş bağlantıda erken tıklama) buna bekleyebilir.
+let resolveIndex;
+export const indexReady = new Promise((resolve) => { resolveIndex = resolve; });
+export function markIndexReady() { resolveIndex(); }

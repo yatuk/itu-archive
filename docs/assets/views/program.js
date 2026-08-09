@@ -5,7 +5,7 @@
 // haftalık ızgara sağda. "OBS'ye doldur" CRN doldurma kodunu üretir.
 
 import { $, getJSON, esc, fold, debounce, downloadCSV } from '../core/utils.js';
-import { state } from '../core/store.js';
+import { state, indexReady } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { buildTimetable, openDetail } from './courses.js';
 import * as fav from '../core/favorites.js';
@@ -17,6 +17,9 @@ let inited = false;
 let hits = [];
 let openMenuKey = null;
 let dragFrom = null;
+// Paylaşılan URL'deki crns listesi yalnızca bir kez uygulanır (sekme her
+// açıldığında yeniden eklenmesin).
+let crnsApplied = false;
 
 export function initProgram() {
   if (inited) return;
@@ -42,32 +45,40 @@ export function initProgram() {
 
 export async function onShow() {
   initProgram();
+  // Index yüklenmeden açılırsa (paylaşılan #program bağlantısı ya da erken
+  // tıklama) bekleyip devam et — dönem seçici ve crns ekleme index'e bağlı.
+  if (!state.index) await indexReady;
+  if (!state.index) {
+    toast('Veriler yüklenemedi, sayfayı yenile.', { kind: 'err' });
+    return;
+  }
+  const params = new URLSearchParams(location.search);
   if (!term) {
     const sel = $('#p-term');
-    if (state.index) {
-      sel.innerHTML = state.index.terms
-        .filter((t) => !t.missing)
-        .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ' · canlı' : ''}</option>`).join('');
-      sel.value = state.index.currentSlug;
-    }
+    sel.innerHTML = state.index.terms
+      .filter((t) => !t.missing)
+      .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ' · canlı' : ''}</option>`).join('');
+    sel.value = state.index.currentSlug;
     // Paylaşılan program URL'i: ?term=&crns=
-    const params = new URLSearchParams(location.search);
     if (params.has('term')) {
       const want = params.get('term');
       if ([...sel.options].some((o) => o.value === want)) sel.value = want;
     }
     term = sel.value;
-    if (params.has('crns')) {
-      const list = params.get('crns').split(',').map((s) => s.trim()).filter(Boolean);
-      let added = 0;
-      for (const crn of list) {
-        const r = rows.find((x) => x[0] === crn);
-        if (r && fav.addToSchedule(term, r[3], crn)) added++;
-      }
-      if (added) toast(`${added} şube paylaşılan programdan yüklendi`);
-    }
   }
+  // Dönem satırlarını önce yükle; crns ekleme onlarsız yapılamaz.
   await loadTerm(term);
+  if (params.has('crns') && !crnsApplied) {
+    crnsApplied = true;
+    const list = params.get('crns').split(',').map((s) => s.trim()).filter(Boolean);
+    let added = 0;
+    for (const crn of list) {
+      const r = rows.find((x) => x[0] === crn);
+      if (r && fav.addToSchedule(term, r[3], crn)) added++;
+    }
+    if (added) toast(`${added} şube paylaşılan programdan yüklendi`);
+  }
+  render();
 }
 
 async function loadTerm(slug) {
@@ -360,7 +371,9 @@ function exportCSV() {
 function share() {
   const items = currentItems();
   if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
-  const p = new URLSearchParams(location.search);
+  // Mevcut sayfa parametrelerini (q, branch, ...) almayan temiz bir bağlantı
+  // üret — yalnızca dönem ve CRN listesi.
+  const p = new URLSearchParams();
   p.set('term', term);
   p.set('crns', items.map((i) => i.row[0]).join(','));
   copyText(`${location.origin}${location.pathname}?${p.toString()}#program`);

@@ -4,7 +4,7 @@
    altındaki statik JSON'lardan geliyor; sunucu tarafı yok. */
 
 import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
-import { state } from './core/store.js';
+import { state, markIndexReady } from './core/store.js';
 import { initCourses, loadTerm, applyFilters } from './views/courses.js';
 import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
 import { initExams, onShow as examsShow } from './views/exams.js';
@@ -12,21 +12,25 @@ import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
 import { onShow as programShow } from './views/program.js';
 import { PrereqGraph } from './prereq.js';
-import { initTour, maybeStartTour } from './tour.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
 let showView = null;
 
+// İlk açılıştaki sekme. `boot` index.json'u yükledikten sonra uygulanır;
+// böylece program/takvim/sınavlar gibi veriye bağımlı görünümler (ör. paylaşılan
+// #program bağlantısı) boş select'lerle erken render edilmez.
+const pendingView = location.hash.slice(1);
+
 async function boot() {
   initTheme();
   wireTabs();
   wireHistoryJump();
-  initTour({ showView });
   window.addEventListener('itu:goto-program', () => { if (showView) showView('program', true); });
   try {
     state.index = await getJSON('data/index.json');
   } catch (e) {
+    markIndexReady(); // yükleme başarısız olsa da bekleyenleri serbest bırak
     setStatus($('#stat-status'), 'veri yüklenemedi', { error: true });
     $('#rows').innerHTML = `<tr><td colspan="9" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
     return;
@@ -64,6 +68,10 @@ async function boot() {
   initExams();
   initHistory();
 
+  // İlk sekme artık veri hazırken açılır (paylaşılan #program/#takvim/#sinavlar
+  // bağlantıları bu sayede doğru çalışır).
+  showView(VIEWS.includes(pendingView) ? pendingView : 'dersler', false);
+
   await loadTerm(initialSlug);
 
   // Arama ve filtre durumunu URL'den uygula (loadTerm filtre seçeneklerini
@@ -78,7 +86,6 @@ async function boot() {
   if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
   applyFilters();
-  maybeStartTour();
 }
 
 /* ---------- tema ---------- */
@@ -160,9 +167,6 @@ function wireTabs() {
     const v = location.hash.slice(1);
     show(VIEWS.includes(v) ? v : 'dersler', false);
   });
-
-  const initial = location.hash.slice(1);
-  show(VIEWS.includes(initial) ? initial : 'dersler', false);
 }
 
 // Detay panelinden "bu hocanın geçmişinde ara" — geçmiş sekmesine geçip arama

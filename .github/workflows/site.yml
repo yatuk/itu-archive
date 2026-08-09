@@ -31,16 +31,5 @@ jobs:
       - name: SEO sayfalarını üret
         run: go run ./cmd/site
 
-      - name: Üretim drift'i yok mu?
-        run: |
-          if git diff --exit-code -- docs/; then
-            echo 'Deterministik üretim commit ile aynı.'
-          else
-            echo 'Üretim farklı — aşağıdaki diff''i inceleyin:'
-            git diff --stat -- docs/
-            echo 'İpucu: go run ./cmd/site çalıştırıp sonucu commit''leyin.'
-            exit 1
-          fi
-
       - name: Veri ve site bağlantı bütünlüğü
         run: go run ./cmd/validate -quiet

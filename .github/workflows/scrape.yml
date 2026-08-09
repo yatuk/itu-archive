@@ -39,6 +39,9 @@ jobs:
       - name: Veriyi doğrula
         run: go run ./cmd/validate -quiet
 
+      - name: SEO sayfalarını üret
+        run: go run ./cmd/site
+
       - name: Boyut raporu
         run: |
           {
@@ -52,7 +55,7 @@ jobs:
       - name: Değişiklikleri özetle
         id: diff
         run: |
-          if git diff --quiet -- docs/data; then
+          if git diff --quiet -- docs/; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo 'Değişiklik yok.' >> "$GITHUB_STEP_SUMMARY"
             exit 0
@@ -61,7 +64,7 @@ jobs:
           {
             echo '## Değişen veri'
             echo '```'
-            git diff --stat -- docs/data | tail -40
+            git diff --stat -- docs/ | tail -40
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
@@ -70,7 +73,7 @@ jobs:
         run: |
           git config user.name  'itu-scraper[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add docs/data
+          git add docs/
           git commit -m "veri: $(date -u +'%Y-%m-%d %H:%M') UTC taraması"
           # Eşzamanlı bir commit araya girmişse rebase edip tekrar dene.
           for i in 1 2 3; do

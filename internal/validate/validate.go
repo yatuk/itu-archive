@@ -12,6 +12,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 
 	"itu-scraper/internal/curriculum"
@@ -56,6 +57,7 @@ func All(root string) *Result {
 	res.checkQuota(root)
 	res.checkCurriculum(root)
 	res.checkIndex(root)
+	res.checkSitePages(root)
 	return res
 }
 
@@ -297,6 +299,199 @@ func (r *Result) checkIndex(root string) {
 			r.errf("index: %s takvimi için dosya yok", c.YearID)
 		}
 	}
+}
+
+// checkSitePages, cmd/site ile üretilen statik sayfaların bağlantı
+// bütünlüğünü, sitemap kapsamını, yetim sayfaları ve iç bağlantıları denetler.
+func (r *Result) checkSitePages(root string) {
+	derDir := filepath.Join(root, "dersler")
+	bransDir := filepath.Join(root, "brans")
+
+	var ix model.SiteIndex
+	if err := readJSON(filepath.Join(root, "data", "index.json"), &ix); err != nil {
+		r.warnf("seo sayfa denetimi: index.json okunamadı, atlandı")
+		return
+	}
+
+	// Beklenen: her non-missing dönem için sayfa, her branş için sayfa.
+	wantTerms := map[string]bool{}
+	for _, t := range ix.Terms {
+		if !t.Missing {
+			wantTerms[t.Slug] = true
+		}
+	}
+	wantBranch := map[string]bool{}
+	for _, t := range ix.Terms {
+		if t.Missing {
+			continue
+		}
+		var m model.TermMeta
+		if err := readJSON(filepath.Join(root, "data", "terms", t.Slug, "meta.json"), &m); err != nil {
+			continue
+		}
+		for _, br := range m.Branches {
+			wantBranch[br.Code] = true
+		}
+	}
+
+	// Href regex: href="..."
+	hrefRe := regexp.MustCompile(`href="([^"]*)"`)
+
+	checkPage := func(dir, rel string) {
+		full := filepath.Join(dir, rel, "index.html")
+		b, err := os.ReadFile(full)
+		if err != nil {
+			r.errf("seo sayfası: %s/%s okunamadı: %v", filepath.Base(dir), rel, err)
+			return
+		}
+		s := string(b)
+		if !strings.Contains(s, "<title>") {
+			r.errf("seo sayfası: %s/%s şablon bozuk (<title> yok)", filepath.Base(dir), rel)
+		}
+		if !strings.Contains(s, `<link rel="canonical" href="`) {
+			r.errf("seo sayfası: %s/%s canonical yok", filepath.Base(dir), rel)
+		}
+		if !strings.Contains(s, `<meta name="description" content="`) {
+			r.errf("seo sayfası: %s/%s meta description yok", filepath.Base(dir), rel)
+		}
+		// İç bağlantıları çöz.
+		matches := hrefRe.FindAllStringSubmatch(s, -1)
+		for _, m := range matches {
+			href := m[1]
+			if strings.HasPrefix(href, "#") || strings.HasPrefix(href, "mailto:") ||
+				strings.HasPrefix(href, "javascript:") || strings.HasPrefix(href, "tel:") ||
+				strings.Contains(href, "://") && !strings.Contains(href, "itu-ders.com") {
+				continue
+			}
+			// SPA hash bağlantıları (/#gecmis gibi) — sitenin kendisi, dış dosya değil.
+			if strings.HasPrefix(href, "/#") {
+				continue
+			}
+			target := resolveHref(root, href, full)
+			if target == "" {
+				continue
+			}
+			if _, err := os.Stat(target); os.IsNotExist(err) {
+				r.errf("seo: %s/%s içindeki bağlantı %s -> %s bulunamadı",
+					filepath.Base(dir), rel, href, target)
+			}
+		}
+	}
+
+	// Dönem sayfaları.
+	gotTerms := map[string]bool{}
+	if ents, err := os.ReadDir(derDir); err == nil {
+		for _, e := range ents {
+			if !e.IsDir() {
+				r.errf("seo sayfası: dersler altında klasör olmayan: %s", e.Name())
+				continue
+			}
+			gotTerms[e.Name()] = true
+			checkPage(derDir, e.Name())
+		}
+	}
+	for s := range wantTerms {
+		if !gotTerms[s] {
+			r.errf("seo sayfası: %s dönemi için sayfa üretilmemiş", s)
+		}
+	}
+	for s := range gotTerms {
+		if !wantTerms[s] {
+			r.errf("seo sayfası: yetim dönem sayfası: %s (index'te yok)", s)
+		}
+	}
+
+	// Branş sayfaları.
+	gotBrs := map[string]bool{}
+	if ents, err := os.ReadDir(bransDir); err == nil {
+		for _, e := range ents {
+			if !e.IsDir() {
+				r.errf("seo sayfası: brans altında klasör olmayan: %s", e.Name())
+				continue
+			}
+			gotBrs[e.Name()] = true
+			checkPage(bransDir, e.Name())
+		}
+	}
+	for code := range wantBranch {
+		if !gotBrs[code] {
+			r.errf("seo sayfası: %s branşı için sayfa üretilmemiş", code)
+		}
+	}
+	for code := range gotBrs {
+		if !wantBranch[code] {
+			r.errf("seo sayfası: yetim branş sayfası: %s (hiçbir dönemde yok)", code)
+		}
+	}
+
+	// Sitemap kapsamı: sitedeki her sayfa sitemap'te, sitemap'teki her loc dosyada.
+	b, err := os.ReadFile(filepath.Join(root, "sitemap.xml"))
+	if err != nil {
+		r.errf("seo: sitemap.xml okunamadı")
+		return
+	}
+	locRe := regexp.MustCompile(`<loc>([^<]*)</loc>`)
+	smLocs := map[string]bool{}
+	for _, m := range locRe.FindAllStringSubmatch(string(b), -1) {
+		u := m[1]
+		if !strings.HasPrefix(u, "https://itu-ders.com/") {
+			r.errf("seo: sitemap'te beklenmeyen domain: %s", u)
+			continue
+		}
+		smLocs[u] = true
+	}
+	// Kök sayfayı sitemap'te varsay.
+	delete(smLocs, "https://itu-ders.com/")
+	for s := range gotTerms {
+		expected := fmt.Sprintf("https://itu-ders.com/dersler/%s/", s)
+		if !smLocs[expected] {
+			r.errf("seo: sitemap'te eksik dönem: %s", s)
+		}
+		delete(smLocs, expected)
+	}
+	for code := range gotBrs {
+		expected := fmt.Sprintf("https://itu-ders.com/brans/%s/", code)
+		if !smLocs[expected] {
+			r.errf("seo: sitemap'te eksik branş: %s", code)
+		}
+		delete(smLocs, expected)
+	}
+	for u := range smLocs {
+		// Kalan loc'lar: ya kök sayfası (skip), ya yetim.
+		if u == "https://itu-ders.com/" {
+			continue
+		}
+		r.errf("seo: sitemap'te fazla URL: %s", u)
+	}
+}
+
+func resolveHref(root, href, pagePath string) string {
+	if idx := strings.IndexAny(href, "?#"); idx >= 0 {
+		href = href[:idx]
+	}
+	if href == "" {
+		return ""
+	}
+
+	var rel string
+	if strings.HasPrefix(href, "https://itu-ders.com/") {
+		rel = strings.TrimPrefix(href, "https://itu-ders.com")
+	} else if strings.HasPrefix(href, "/") {
+		rel = href
+	} else {
+		return filepath.Join(filepath.Dir(pagePath), href)
+	}
+
+	if rel == "" || rel == "/" {
+		return filepath.Join(root, "index.html")
+	}
+
+	clean := filepath.Join(root, filepath.FromSlash(rel))
+	// href / ile bitiyorsa ya da son elemanında nokta yoksa klasör varsay, index.html ekle.
+	if strings.HasSuffix(href, "/") || !strings.Contains(filepath.Base(rel), ".") {
+		return filepath.Join(clean, "index.html")
+	}
+	return clean
 }
 
 type historyCourse struct {

@@ -581,3 +581,32 @@ body.modal-open { overflow: hidden; }
   .detail-box dl { grid-template-columns: 1fr; gap: 2px 0; }
   .detail-box dd { margin-bottom: 8px; }
 }
+
+/* ---------- rehber tur (driver.js) ---------- */
+/* Varsayılan beyaz popover'ı fosfor temasına çek; değişkenlerden beslenir. */
+.itu-tour-popover {
+  --driver-popover-font-family: ui-monospace, "JetBrains Mono", "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  background: var(--panel);
+  color: var(--fg);
+  border: 1px solid var(--line-hot);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, .6);
+  border-radius: 4px;
+}
+.itu-tour-popover .driver-popover-title { color: var(--acid); }
+.itu-tour-popover .driver-popover-description { color: var(--dim); }
+.itu-tour-popover .driver-popover-close-btn { color: var(--dimmer); }
+.itu-tour-popover .driver-popover-close-btn:hover,
+.itu-tour-popover .driver-popover-close-btn:focus { color: var(--acid); }
+.itu-tour-popover .driver-popover-footer-btn {
+  background: var(--panel-2); color: var(--cyan); border-color: var(--line-hot);
+}
+.itu-tour-popover .driver-popover-footer-btn:hover,
+.itu-tour-popover .driver-popover-footer-btn:focus { background: var(--panel); border-color: var(--cyan); color: var(--acid); }
+.itu-tour-popover .driver-popover-next-btn,
+.itu-tour-popover .driver-popover-done-btn {
+  background: var(--acid); color: var(--bg); border-color: var(--acid);
+}
+.itu-tour-popover .driver-popover-next-btn:hover,
+.itu-tour-popover .driver-popover-done-btn:hover { background: var(--cyan); border-color: var(--cyan); }
+.itu-tour-popover .driver-popover-progress-text { color: var(--dimmer); }
+.itu-tour-popover .driver-popover-arrow { border-color: var(--panel); }

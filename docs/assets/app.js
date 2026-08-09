@@ -11,6 +11,7 @@ import { initExams, onShow as examsShow } from './views/exams.js';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
 import { PrereqGraph } from './prereq.js';
+import { initTour, maybeStartTour } from './tour.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -20,6 +21,7 @@ async function boot() {
   initTheme();
   wireTabs();
   wireHistoryJump();
+  initTour({ showView });
   try {
     state.index = await getJSON('data/index.json');
   } catch (e) {
@@ -72,6 +74,7 @@ async function boot() {
   if (params.has('method')) $('#f-method').value = params.get('method');
   if (params.get('open') === '1') $('#f-open').checked = true;
   applyFilters();
+  maybeStartTour();
 }
 
 /* ---------- tema ---------- */

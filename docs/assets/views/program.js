@@ -16,6 +16,7 @@ let rows = [];
 let inited = false;
 let hits = [];
 let openMenuKey = null;
+let dragFrom = null;
 
 export function initProgram() {
   if (inited) return;
@@ -129,18 +130,53 @@ function render() {
 function renderList(items) {
   const box = $('#p-list');
   const markFull = $('#p-full').checked;
-  box.innerHTML = items.map(({ rec, row }) => {
+  box.innerHTML = items.map(({ rec, row }, idx) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = row;
     const full = cap > 0 && enr >= cap;
-    return `<div class="p-item${markFull && full ? ' p-full' : ''}">
+    const key = fav.favKeyOf(branch, crn);
+    return `<div class="p-item${markFull && full ? ' p-full' : ''}" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
+      <span class="p-grip" aria-hidden="true">⋮⋮</span>
       <span class="p-crn">${esc(crn)}</span>
       <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}</small></div>
       <span class="p-when">${esc(when || '—')}</span>
       <span class="p-fill">${cap ? fillBar(cap, enr) : '—'}</span>
-      <button type="button" class="p-menu" data-menu="${esc(fav.favKeyOf(branch, crn))}" aria-label="${esc(code)} için eylemler" aria-haspopup="menu">⋮</button>
-      <div class="p-menu-pop" data-pop="${esc(fav.favKeyOf(branch, crn))}" hidden></div>
+      <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için eylemler" aria-haspopup="menu">⋮</button>
+      <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
     </div>`;
   }).join('') || '<p class="empty">Henüz ders eklenmedi. Arama yapıp şube ekle ya da DERSLER\'de seçip "programa gönder".</p>';
+
+  // Tıklama → detay; ⋮ menü ayrı.
+  box.querySelectorAll('.p-item').forEach((item) => {
+    const idx = Number(item.dataset.idx);
+    const { row } = items[idx];
+    item.addEventListener('click', (ev) => {
+      if (ev.target.closest('.p-menu')) return;
+      openDetail(row, term);
+    });
+    // Sürükle-bırak: sıralama
+    item.addEventListener('dragstart', (ev) => {
+      dragFrom = idx;
+      item.classList.add('drag');
+      ev.dataTransfer.effectAllowed = 'move';
+      ev.dataTransfer.setData('text/plain', String(idx));
+    });
+    item.addEventListener('dragover', (ev) => {
+      ev.preventDefault();
+      ev.dataTransfer.dropEffect = 'move';
+      item.classList.add('over');
+    });
+    item.addEventListener('dragleave', () => item.classList.remove('over'));
+    item.addEventListener('drop', (ev) => {
+      ev.preventDefault();
+      item.classList.remove('over');
+      const from = Number(ev.dataTransfer.getData('text/plain') || dragFrom);
+      reorderSchedule(from, idx);
+    });
+    item.addEventListener('dragend', () => {
+      item.classList.remove('drag', 'over');
+      dragFrom = null;
+    });
+  });
 
   box.querySelectorAll('.p-menu').forEach((btn) => {
     btn.addEventListener('click', (ev) => {
@@ -180,6 +216,20 @@ function renderList(items) {
   });
 }
 
+// Sürüklenen öğeyi seçili listenin içinde taşır; diğer dönem kayıtları korunur.
+function reorderSchedule(from, to) {
+  if (from === to) return;
+  const all = fav.loadSchedule();
+  const others = all.filter((f) => f.term !== term);
+  const vis = all.filter((f) => f.term === term);
+  if (from < 0 || from >= vis.length || to < 0 || to >= vis.length) return;
+  const [moved] = vis.splice(from, 1);
+  vis.splice(to, 0, moved);
+  fav.saveSchedule([...vis, ...others]);
+  render();
+  toast('Sıralama güncellendi');
+}
+
 function renderGrid(itemRows) {
   const wrap = $('#p-grid');
   const t = buildTimetable(itemRows);
@@ -187,32 +237,65 @@ function renderGrid(itemRows) {
     wrap.innerHTML = '<p class="empty">Zaman bilgisi olan ders eklenmedi.</p>';
     return;
   }
-  const { startSlot, nSlots, grid, all } = t;
+  placedRefs = [];
+  const { startSlot, nSlots } = t;
+  const ROW = 28;
+  const H = nSlots * ROW;
   const days = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
-  const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
   const TTD = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+  const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
 
-  let conflictCells = 0;
-  let html = `<p class="tt-note"><b>${all.length}</b> oturum · <b>${itemRows.length}</b> şube</p>`;
-  html += `<div class="tt-scroll"><table class="tt">
-    <thead><tr><th class="tt-time">saat</th>${TTD.map((d) => `<th>${d}</th>`).join('')}</tr></thead><tbody>`;
-  for (let si = 0; si < nSlots; si++) {
-    html += `<tr><th class="tt-time">${fmtMin(startSlot + si * 30)}</th>`;
-    for (let di = 0; di < 7; di++) {
-      const cell = grid[di][si];
-      const codes = [...new Set(cell.map((c) => c.row[1]))];
-      const conflict = codes.length > 1;
-      if (conflict) conflictCells++;
-      html += `<td class="tt-cell${conflict ? ' tt-conflict' : ''}"${conflict ? ` title="Çakışma: ${esc(codes.join(', '))}"` : ''}>`;
-      html += cell.map((c) => `<span class="tt-chip">${esc(c.row[1])}</span>`).join('');
-      html += '</td>';
-    }
-    html += '</tr>';
+  const byDay = days.map(() => []);
+  for (const s of t.all) {
+    const di = days.indexOf(s.day);
+    if (di >= 0) byDay[di].push(s);
   }
-  html += '</tbody></table></div>';
-  if (conflictCells) html += `<p class="tt-conflict-note">⚠ <b>${conflictCells}</b> zaman hücresinde çakışma var.</p>`;
+
+  // Lane atama: çakışan dersler aynı günde yan yana sıralanır.
+  const place = (events) => {
+    const evs = events.slice().sort((a, b) => a.start - b.start || a.end - b.end);
+    const lanes = [];
+    const out = [];
+    for (const ev of evs) {
+      let lane = lanes.findIndex((end) => end <= ev.start);
+      if (lane === -1) { lane = lanes.length; lanes.push(ev.end); } else lanes[lane] = ev.end;
+      out.push({ ...ev, lane });
+    }
+    const laneCount = Math.max(1, lanes.length);
+    out.forEach((o) => { o.laneCount = laneCount; });
+    return out;
+  };
+
+  let html = `<p class="tt-note"><b>${t.all.length}</b> oturum · <b>${itemRows.length}</b> şube</p>`;
+  html += `<div class="tt-scroll"><div class="tt-grid">`;
+  html += `<div class="tt-head tt-corner"></div>${TTD.map((d) => `<div class="tt-head tt-dayhead">${d}</div>`).join('')}`;
+  html += `<div class="tt-timecol">`;
+  for (let si = 0; si < nSlots; si++) html += `<div class="tt-timeslot">${fmtMin(startSlot + si * 30)}</div>`;
+  html += `</div>`;
+  for (let di = 0; di < 7; di++) {
+    const placed = place(byDay[di]);
+    html += `<div class="tt-day" style="height:${H}px">`;
+    for (const p of placed) {
+      const top = ((p.start - startSlot) / 30) * ROW;
+      const height = Math.max(20, ((p.end - p.start) / 30) * ROW);
+      const w = 100 / p.laneCount;
+      const left = p.lane * w;
+      const conflict = p.laneCount > 1;
+      placedRefs.push(p.row);
+      html += `<button type="button" class="tt-block${conflict ? ' tt-block-conf' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px" title="${esc(p.row[1])} · ${esc(p.row[5])}">${esc(p.row[1])}</button>`;
+    }
+    html += `</div>`;
+  }
+  html += `</div></div>`;
   wrap.innerHTML = html;
+
+  wrap.querySelectorAll('.tt-block').forEach((b, i) => {
+    b.addEventListener('click', () => openDetail(placedRefs[i], term));
+  });
 }
+
+// renderGrid içinde blokların satır referansları (tıklamada detay için).
+let placedRefs = [];
 
 function renderSummary(items) {
   const box = $('#p-summary');

@@ -96,9 +96,19 @@
 
 <header class="masthead">
  <div class="wrap">
-  <div class="brand">
-   <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
-   <h1>DERS&nbsp;ARŞİVİ</h1>
+  <div class="mast-top">
+   <div class="brand">
+    <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
+    <h1>DERS&nbsp;ARŞİVİ</h1>
+   </div>
+   <div class="mast-controls">
+    <div class="theme-pick" role="group" aria-label="Görünüm teması">
+     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="true" title="Fosfor (koyu)">◐</button>
+     <button type="button" class="theme-btn" data-theme="light" aria-pressed="false" title="Açık">☀</button>
+     <button type="button" class="theme-btn" data-theme="contrast" aria-pressed="false" title="Yüksek kontrast">▣</button>
+    </div>
+    <button type="button" id="tour" class="btn-ghost tour-btn" title="Rehber turu başlat">rehber tur</button>
+   </div>
   </div>
   <p class="tagline">
    obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri.
@@ -110,15 +120,6 @@
    <div><dt>son tarama</dt><dd id="stat-scraped">—</dd></div>
    <div><dt>arşivlenen dönem</dt><dd id="stat-terms">—</dd></div>
   </dl>
-  <div class="theme-pick">
-   <label for="theme">görünüm</label>
-   <select id="theme" aria-label="Görünüm teması">
-    <option value="dark">fosfor</option>
-    <option value="light">açık</option>
-    <option value="contrast">yüksek kontrast</option>
-   </select>
-   <button type="button" id="tour" class="btn-ghost" title="Rehber turu başlat">rehber tur</button>
-  </div>
  </div>
 </header>
 

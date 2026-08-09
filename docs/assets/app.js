@@ -84,13 +84,17 @@ async function boot() {
 /* ---------- tema ---------- */
 
 function initTheme() {
-  const sel = $('#theme');
+  const btns = [...document.querySelectorAll('.theme-btn')];
+  const apply = (t) => {
+    document.documentElement.setAttribute('data-theme', t);
+    for (const b of btns) b.setAttribute('aria-pressed', String(b.dataset.theme === t));
+    try { localStorage.setItem('itu-theme', t); } catch (e) {}
+  };
   const cur = document.documentElement.getAttribute('data-theme') || 'dark';
-  sel.value = ['dark', 'light', 'contrast'].includes(cur) ? cur : 'dark';
-  sel.addEventListener('change', () => {
-    document.documentElement.setAttribute('data-theme', sel.value);
-    try { localStorage.setItem('itu-theme', sel.value); } catch (e) {}
-  });
+  for (const b of btns) {
+    b.addEventListener('click', () => apply(b.dataset.theme));
+    b.setAttribute('aria-pressed', String(b.dataset.theme === cur));
+  }
 }
 
 /* ---------- sekmeler ---------- */
@@ -125,6 +129,9 @@ function wireTabs() {
     if (view === 'gecmis') historyShow();
     if (view === 'program') programShow();
     if (view === 'onsart') PrereqGraph.init('#pg-root');
+    // Program oluşturucu daha geniş alan kullanır.
+    const mainEl = document.querySelector('main.wrap');
+    if (mainEl) mainEl.classList.toggle('wide', view === 'program');
     const h = location.hash.slice(1);
     if (h !== view) {
       if (push) history.pushState(null, '', `#${view}`);

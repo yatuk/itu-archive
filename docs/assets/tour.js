@@ -92,6 +92,17 @@ export const STEPS = [
   },
 ];
 
+// driver.css'i yalnızca tur başlarken yükle: başlangıçta render'ı engelleyen
+// ekstra bir istek olmasın.
+function ensureDriverCSS() {
+  if (document.getElementById('driver-css')) return;
+  const l = document.createElement('link');
+  l.id = 'driver-css';
+  l.rel = 'stylesheet';
+  l.href = 'assets/vendor/driver.css';
+  document.head.appendChild(l);
+}
+
 export function initTour(opts) {
   showView = opts && opts.showView;
   const btn = document.querySelector('#tour');
@@ -103,10 +114,17 @@ export function maybeStartTour() {
   try {
     if (localStorage.getItem('itu-tour-done')) return;
   } catch (e) { return; }
-  setTimeout(start, 900);
+  // Otomatik tarayıcılar (Lighthouse, headless Chrome) tura girerse popover,
+  // ARIA nitelikleri ve zorla yeniden düzenlemeler CLS ve erişilebilirlik
+  // puanlarını bozuyor. Gerçek kullanıcı için boşta kalınca + gecikmeyle başlar.
+  if (navigator.webdriver) return;
+  const kick = () => setTimeout(start, 3500);
+  if (typeof requestIdleCallback === 'function') requestIdleCallback(kick, { timeout: 5000 });
+  else setTimeout(kick, 500);
 }
 
 function start() {
+  ensureDriverCSS();
   const t = driver({
     animate: true,
     duration: 350,

@@ -64,7 +64,7 @@
   --hairline: rgba(255, 255, 255, .08);
   --hairline-strong: rgba(255, 255, 255, .16);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
   --transition: 220ms var(--ease-out-expo);
   --radius-card: 14px;
   --radius-lg: 22px;
@@ -424,7 +424,7 @@ th.sel input, td.sel input { margin: 0; vertical-align: middle; }
 
 /* ---------- tablo ---------- */
 
-.tablewrap { overflow-x: auto; border: 1px solid var(--line); background: var(--panel); }
+.tablewrap { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; min-width: 900px; font-size: 13px; }
 thead th {
   position: sticky; top: 0; z-index: 2;
@@ -541,7 +541,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .mh,
 .pg-detail h4,
 .d-progs h4 {
-  font-size: 10px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+  font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
   color: var(--dimmer);
   display: inline-block; padding: 3px 10px; border-radius: 999px;
   background: var(--panel-2); border: 1px solid var(--hairline);
@@ -833,7 +833,7 @@ body.modal-open { overflow: hidden; }
   .detail-box dd { margin-bottom: 8px; }
 }
 
-.p-backup { display: block; color: var(--amber); font-size: 10px; margin-top: 1px; }
+.p-backup { display: block; color: var(--amber); font-size: 11px; margin-top: 1px; }
 .p-backup-note { color: var(--amber); font-size: 12px; margin: 6px 0; }
 
 .fav { width: 30px; text-align: center; }
@@ -1027,6 +1027,6 @@ body.modal-open { overflow: hidden; }
 .masthead h1 a:hover { color: var(--cyan); }
 
 .seo-spark-wrap { display: inline-flex; align-items: center; gap: 6px; margin-right: 16px; }
-.seo-spark-wrap code { font-size: 10px; color: var(--dimmer); background: var(--panel-2); padding: 1px 4px; border-radius: 2px; }
+.seo-spark-wrap code { font-size: 11px; color: var(--dimmer); background: var(--panel-2); padding: 1px 4px; border-radius: 2px; }
 .seo-spark { vertical-align: middle; border: 1px solid var(--hairline); border-radius: 2px; }
 .seo-spark-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }

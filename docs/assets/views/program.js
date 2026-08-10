@@ -362,7 +362,7 @@ function showOBS() {
   const backups = items.filter((i) => i.rec.backup).map((i) => `${i.row[0]} → yedek: ${i.rec.backup}`);
   const box = $('#p-obs-code');
   box.hidden = false;
-  box.innerHTML = `<h4 class="eyebrow">OBS kayıt sayfası için CRN doldurma</h4>
+  box.innerHTML = `<h2 class="eyebrow">OBS kayıt sayfası için CRN doldurma</h2>
     <p>Bu kodu OBS'nin ders seçme sayfasında konsola yapıştırıp çalıştır, ya da tarayıcı yer imi olarak kaydet. ${crns.length} CRN doldurur.</p>
     ${backups.length ? `<p class="p-backup-note">Yedek CRN'ler: ${esc(backups.join(' · '))}</p>` : ''}
     <pre class="p-code"><code>${esc(code)}</code></pre>

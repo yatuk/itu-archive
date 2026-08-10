@@ -271,7 +271,7 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
   border: 1px solid var(--line);
 }
 .statbar > div { background: var(--panel); padding: 12px 14px; }
-.statbar dt { color: var(--dimmer); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }
+.statbar dt { color: var(--dimmer); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
 .statbar dd { margin: 4px 0 0; color: var(--fg); font-size: 15px; }
 .statbar dd.ok { color: var(--acid); }
 
@@ -605,7 +605,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .pg-level:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
 
 /* Önşart mantık lejantı + branş renk lejantı */
-.pg-legend { color: var(--dimmer); font-size: 11px; margin: 0 0 10px; }
+.pg-legend { color: var(--dimmer); font-size: 12px; margin: 0 0 10px; }
 .pg-branches {
   display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 0 0 10px;
   color: var(--dimmer); font-size: 11px;
@@ -670,7 +670,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .pg-empty { color: var(--dimmer); font-size: 13px; }
 
 /* Önşart mantık ağacı: VE/VEYA grupları iç içe, biri yeter / hepsi gerekli */
-.pg-legend { color: var(--dimmer); font-size: 11px; margin: 0 0 10px; }
+.pg-legend { color: var(--dimmer); font-size: 12px; margin: 0 0 10px; }
 .req-tree { list-style: none; margin: 0 0 6px; padding: 0; font-size: 13px; }
 .req-tree ul {
   list-style: none; margin: 4px 0 6px; padding-left: 14px;
@@ -967,14 +967,14 @@ body.modal-open { overflow: hidden; }
 }
 .toast {
   background: var(--panel); color: var(--fg);
-  border: 1px solid var(--hairline-strong); border-left: 3px solid var(--cyan);
-  border-radius: 8px; padding: 10px 14px; font-size: 13px;
+  border: 1px solid var(--hairline-strong); border-top: 2px solid var(--acid);
+  border-radius: 8px 8px 8px 8px; padding: 10px 14px; font-size: 13px;
   box-shadow: var(--shadow-soft);
   animation: toast-in 260ms var(--ease-out-expo);
 }
-.toast-ok { border-left-color: var(--acid); }
-.toast-warn { border-left-color: var(--amber); }
-.toast-err { border-left-color: var(--red); }
+.toast-ok { border-top-color: var(--acid); }
+.toast-warn { border-top-color: var(--amber); }
+.toast-err { border-top-color: var(--red); }
 .toast.out { opacity: 0; transform: translateX(8px); transition: opacity 300ms ease, transform 300ms var(--ease-out-expo); }
 @keyframes toast-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
 
@@ -984,7 +984,7 @@ body.modal-open { overflow: hidden; }
   border: 1px solid var(--line); background: var(--panel-2);
   padding: 14px 20px; margin: 14px 0; border-radius: 4px;
 }
-.seo-stats dt { color: var(--dimmer); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+.seo-stats dt { color: var(--dimmer); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
 .seo-stats dd { color: var(--acid); font-size: 16px; margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
 
 .seo-badge {

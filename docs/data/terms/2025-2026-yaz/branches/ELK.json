@@ -5,8 +5,8 @@
   "branch": "ELK",
   "level": "LS",
   "name": "Electrical Machines Lab.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Derya Ahmet Kocabaş , Ali Saffet Altay",
+  "method": "",
+  "instructor": "Derya Ahmet Kocabaş , / Ali Saffet Altay",
   "buildings": [
    "EEB",
    "EEB"
@@ -19,19 +19,15 @@
    "12:30/14:59",
    "12:30/14:59"
   ],
-  "rooms": [
-   "--",
-   "--"
-  ],
+  "rooms": [],
   "capacity": 45,
-  "enrolled": 28,
-  "reserved": "-",
+  "enrolled": 32,
+  "reserved": "",
   "programs": [
-   "ELK_LS",
-   "ELKE_LS"
+   "ELK_LS, ELKE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30460",
@@ -39,7 +35,7 @@
   "branch": "ELK",
   "level": "LS",
   "name": "Elektrik Makinaları",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Murat İmeryüz",
   "buildings": [
    "EEB",
@@ -59,47 +55,11 @@
   ],
   "capacity": 30,
   "enrolled": 13,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "ELK_LS",
-   "KOM_LS"
+   "ELK_LS, KOM_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "30494",
-  "code": "ELK 322E",
-  "branch": "ELK",
-  "level": "LS",
-  "name": "Power Transmission Systems",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Veysel Murat İstemihan Genç",
-  "buildings": [
-   "EEB",
-   "EEB"
-  ],
-  "days": [
-   "Perşembe",
-   "Perşembe"
-  ],
-  "times": [
-   "08:30/12:29",
-   "13:30/16:29"
-  ],
-  "rooms": [
-   "--",
-   "--"
-  ],
-  "capacity": 30,
-  "enrolled": 19,
-  "reserved": "EEE_LS/10/2 | Diğer/20/17",
-  "programs": [
-   "EEE_LS",
-   "ELK_LS",
-   "ELKE_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

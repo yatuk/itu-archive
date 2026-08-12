@@ -5,7 +5,7 @@
   "branch": "DNK",
   "level": "LS",
   "name": "Dynamics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Mehmet Selim Akay",
   "buildings": [
    "MEDC",
@@ -24,15 +24,13 @@
    "ZA3"
   ],
   "capacity": 50,
-  "enrolled": 16,
-  "reserved": "-",
+  "enrolled": 17,
+  "reserved": "",
   "programs": [
-   "UCK_LS",
-   "UZB_LS",
-   "UZBE_LS"
+   "UCK_LS, UZB_LS, UZBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30373",
@@ -40,7 +38,7 @@
   "branch": "DNK",
   "level": "LS",
   "name": "Dynamics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ünal Aldemir",
   "buildings": [
    "INB",
@@ -57,45 +55,15 @@
    "09:30/12:29",
    "13:30/15:29"
   ],
-  "rooms": [
-   "A202",
-   "A202",
-   "A202"
-  ],
+  "rooms": [],
   "capacity": 25,
-  "enrolled": 14,
-  "reserved": "-",
+  "enrolled": 7,
+  "reserved": "",
   "programs": [
-   "DEN_LS",
-   "DENE_LS",
-   "EHB_LS",
-   "EHBE_LS",
-   "ELK_LS",
-   "ELKE_LS",
-   "GEM_LS",
-   "GEME_LS",
-   "IML_LS",
-   "IMLE_LS",
-   "INS_LS",
-   "INSE_LS",
-   "KOM_LS",
-   "KOME_LS",
-   "MAD_LS",
-   "MADE_LS",
-   "MAK_LS",
-   "MAKE_LS",
-   "MET_LS",
-   "METE_LS",
-   "NAE_LS",
-   "PET_LS",
-   "PETE_LS",
-   "ROS_LS",
-   "ROSE_LS",
-   "UZB_LS",
-   "UZBE_LS"
+   "DEN_LS, DENE_LS, EHB_LS, EHBE_LS, ELK_LS, ELKE_LS, GEM_LS, GEME_LS, IML_LS, IMLE_LS, INS_LS, INSE_LS, KOM_LS, KOME_LS, MAD_LS, MADE_LS, MAK_LS, MAKE_LS, MET_LS, METE_LS, PET_LS, PETE_LS, ROS_LS, ROSE_LS, UZB_LS, UZBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30375",
@@ -103,7 +71,7 @@
   "branch": "DNK",
   "level": "LS",
   "name": "Dinamik",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Erol Demirkan",
   "buildings": [
    "INB",
@@ -120,30 +88,14 @@
    "13:30/16:29",
    "10:30/12:29"
   ],
-  "rooms": [
-   "B206",
-   "B206",
-   "B206"
-  ],
+  "rooms": [],
   "capacity": 50,
-  "enrolled": 42,
-  "reserved": "-",
+  "enrolled": 34,
+  "reserved": "",
   "programs": [
-   "DEN_LS",
-   "EHB_LS",
-   "ELK_LS",
-   "GEM_LS",
-   "IML_LS",
-   "INS_LS",
-   "KOM_LS",
-   "MAD_LS",
-   "MAK_LS",
-   "MET_LS",
-   "PET_LS",
-   "ROS_LS",
-   "UZB_LS"
+   "DEN_LS, EHB_LS, ELK_LS, GEM_LS, IML_LS, INS_LS, KOM_LS, MAD_LS, MAK_LS, MET_LS, PET_LS, ROS_LS, UZB_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

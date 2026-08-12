@@ -5,7 +5,7 @@
   "branch": "UCK",
   "level": "LS",
   "name": "Thermodynamics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Cemil Kurtcebe",
   "buildings": [
    "MEDC",
@@ -24,15 +24,13 @@
    "ZA3"
   ],
   "capacity": 70,
-  "enrolled": 64,
-  "reserved": "-",
+  "enrolled": 62,
+  "reserved": "",
   "programs": [
-   "UCK_LS",
-   "UZB_LS",
-   "UZBE_LS"
+   "UCK_LS, UZB_LS, UZBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30333",
@@ -40,7 +38,7 @@
   "branch": "UCK",
   "level": "LS",
   "name": "Jet Propulsion Principles",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Cemil Kurtcebe",
   "buildings": [
    "MEDC",
@@ -58,17 +56,14 @@
    "ZA3",
    "ZA3"
   ],
-  "capacity": 80,
-  "enrolled": 68,
-  "reserved": "-",
+  "capacity": 70,
+  "enrolled": 64,
+  "reserved": "",
   "programs": [
-   "UCK_LS",
-   "UCK_YD",
-   "UZB_LS",
-   "UZBE_LS"
+   "UCK_LS, UCK_YD, UZB_LS, UZBE_LS"
   ],
-  "prereq": "-",
-  "classReq": "Detay"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30343",
@@ -76,8 +71,8 @@
   "branch": "UCK",
   "level": "LS",
   "name": "Flight Mechanics",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Halit Süleyman Türkmen , Emre Koyuncu",
+  "method": "",
+  "instructor": "Halit Süleyman Türkmen , / Emre Koyuncu",
   "buildings": [
    "MEDC",
    "MEDC"
@@ -95,13 +90,12 @@
    "1D10"
   ],
   "capacity": 40,
-  "enrolled": 25,
-  "reserved": "-",
+  "enrolled": 28,
+  "reserved": "",
   "programs": [
-   "UCK_LS",
-   "UCK_YD"
+   "UCK_LS, UCK_YD"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

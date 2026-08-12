@@ -1,0 +1,547 @@
+[
+ {
+  "crn": "11090",
+  "code": "JEF 111",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeofizik Mühendisliğine Giriş",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Turgay İşseven",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11094",
+  "code": "JEF 207E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Physics of the Earth",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seda Yolsal Çevikbilen",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD",
+   "JEFE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11097",
+  "code": "JEF 321",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Elektrik Prospeksiyon",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ümit Avşar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11098",
+  "code": "JEF 325",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeofizikte Modelleme",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Argun Kocaoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11151",
+  "code": "JEF 311E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Seismology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gonca Örgülü",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29",
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_YD",
+   "JEFE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11152",
+  "code": "JEF 451",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Gravite&Manyetik Prospeksiyon",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Turgay İşseven",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11204",
+  "code": "JEF 425",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Mühendislik Jeofiziği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Caner İmren , İsmail Kaplanvural",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11205",
+  "code": "JEF 368",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeotermal Aramalar",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Doğa Doğan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11207",
+  "code": "JEF 335E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Readings in Geophysics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yasir Bashir",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD",
+   "JEFE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11209",
+  "code": "JEF 370",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Sismik Yorumlama",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hülya Kurt",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11212",
+  "code": "JEF 367",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Maden Jeofiziği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ümit Avşar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11213",
+  "code": "JEF 371",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Paleomanyetizma",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Turgay İşseven",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11215",
+  "code": "JEF 372",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Arkeo-Jeofizik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Caner İmren",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEF_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11217",
+  "code": "JEF 492",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hülya Kurt",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11219",
+  "code": "JEF 492E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hülya Kurt",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEFE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11220",
+  "code": "JEF 4901",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeofizik Müh.Tasarım Projesi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hülya Kurt",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11221",
+  "code": "JEF 4902",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Jeofizik Müh.Tasarım Proje. II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hülya Kurt",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11223",
+  "code": "JEF 4901E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Geophysical Eng. Design Prj. I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hülya Kurt",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEFE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11224",
+  "code": "JEF 4902E",
+  "branch": "JEF",
+  "level": "LS",
+  "name": "Geophysical Eng. Design Prj.II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hülya Kurt",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "JEFE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ }
+]

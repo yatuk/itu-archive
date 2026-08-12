@@ -5,7 +5,7 @@
   "branch": "DEN",
   "level": "LS",
   "name": "Deniz Kirliliği",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Oktay Eren Türeyen",
   "buildings": [
    "MEDC",
@@ -25,13 +25,12 @@
   ],
   "capacity": 30,
   "enrolled": 7,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "DEN_LS",
-   "OSN_YD"
+   "DEN_LS, OSN_YD"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30398",
@@ -39,7 +38,7 @@
   "branch": "DEN",
   "level": "LS",
   "name": "Adv. Manufacturing Process",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Mete Kayıhan",
   "buildings": [
    "MEDC",
@@ -58,14 +57,13 @@
    "2D18"
   ],
   "capacity": 60,
-  "enrolled": 23,
-  "reserved": "-",
+  "enrolled": 29,
+  "reserved": "",
   "programs": [
-   "DEN_LS",
-   "DENE_LS"
+   "DEN_LS, DENE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30399",
@@ -73,7 +71,7 @@
   "branch": "DEN",
   "level": "LS",
   "name": "Stability of Marine Vehicles",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Erdem Üçer",
   "buildings": [
    "MEDC",
@@ -92,13 +90,13 @@
    "2D17"
   ],
   "capacity": 58,
-  "enrolled": 72,
-  "reserved": "-",
+  "enrolled": 58,
+  "reserved": "",
   "programs": [
    "DEN_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30402",
@@ -106,7 +104,7 @@
   "branch": "DEN",
   "level": "LS",
   "name": "Hydrostatics of Marine Vehic.",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ömer Kemal Kınacı",
   "buildings": [
    "MEDC",
@@ -126,11 +124,11 @@
   ],
   "capacity": 40,
   "enrolled": 39,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
    "DEN_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

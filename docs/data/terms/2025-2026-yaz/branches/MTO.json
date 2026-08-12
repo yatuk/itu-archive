@@ -5,7 +5,7 @@
   "branch": "MTO",
   "level": "LS",
   "name": "Atmosfer Termodinamiği",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Kasım Koçak",
   "buildings": [
    "MEDC",
@@ -25,13 +25,12 @@
   ],
   "capacity": 30,
   "enrolled": 15,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "IBM_LS",
-   "MTO_LS"
+   "IBM_LS, MTO_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30271",
@@ -39,7 +38,7 @@
   "branch": "MTO",
   "level": "LS",
   "name": "Data Analysis",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Kasım Koçak",
   "buildings": [
    "MEDC",
@@ -67,13 +66,12 @@
   ],
   "capacity": 30,
   "enrolled": 22,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "IBM_LS",
-   "MTO_LS"
+   "IBM_LS, MTO_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30272",
@@ -81,7 +79,7 @@
   "branch": "MTO",
   "level": "LS",
   "name": "Atmosfer Dinamiği II",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Elçin Tan",
   "buildings": [
    "MEDC",
@@ -101,15 +99,12 @@
   ],
   "capacity": 35,
   "enrolled": 30,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "IBM_LS",
-   "IBM_YD",
-   "MTO_LS",
-   "MTO_YD"
+   "IBM_LS, IBM_YD, MTO_LS, MTO_YD"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30276",
@@ -117,11 +112,11 @@
   "branch": "MTO",
   "level": "LS",
   "name": "Meteo.Uzaktan Algılamanın Tem.",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ahmet Öztopal",
   "buildings": [
-   "INB",
-   "INB"
+   "MEDC",
+   "MEDC"
   ],
   "days": [
    "Salı",
@@ -132,18 +127,17 @@
    "09:30/11:29"
   ],
   "rooms": [
-   "D101",
-   "D101"
+   "2D13",
+   "2D13"
   ],
   "capacity": 20,
   "enrolled": 4,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "IBM_LS",
-   "MTO_LS"
+   "IBM_LS, MTO_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30345",
@@ -151,11 +145,11 @@
   "branch": "MTO",
   "level": "LS",
   "name": "Bilgisayarlı Teknik Resim",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Hüsnü Barbaros Soyer",
   "buildings": [
-   "INB",
-   "INB"
+   "MEDC",
+   "MEDC"
   ],
   "days": [
    "Cuma",
@@ -166,20 +160,17 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "D104",
-   "D104"
+   "1D10",
+   "1D10"
   ],
   "capacity": 40,
-  "enrolled": 12,
-  "reserved": "-",
+  "enrolled": 11,
+  "reserved": "",
   "programs": [
-   "IBM_LS",
-   "IBM_YD",
-   "MTO_LS",
-   "MTO_YD"
+   "IBM_LS, IBM_YD, MTO_LS, MTO_YD"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30480",
@@ -187,7 +178,7 @@
   "branch": "MTO",
   "level": "LS",
   "name": "Comput.Fluid Dyn.in Meteo.Eng.",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Hüseyin Toros",
   "buildings": [
    "MEDC"
@@ -201,14 +192,13 @@
   "rooms": [
    "2D13"
   ],
-  "capacity": 40,
-  "enrolled": 22,
-  "reserved": "-",
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
   "programs": [
-   "IBM_LS",
-   "MTO_LS"
+   "IBM_LS, MTO_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

@@ -5,7 +5,7 @@
   "branch": "BLG",
   "level": "LS",
   "name": "Data Structures",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Muhammet Alkan",
   "buildings": [
    "BBB",
@@ -26,22 +26,19 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "Z-19",
-   "Z-19",
-   "Z-19",
-   "Z-19"
+   "Z-17",
+   "Z-17",
+   "Z-17",
+   "Z-17"
   ],
   "capacity": 60,
-  "enrolled": 60,
-  "reserved": "-",
+  "enrolled": 58,
+  "reserved": "",
   "programs": [
-   "BLG_LS",
-   "BLGE_LS",
-   "CEN_LS",
-   "SECE_LS"
+   "BLG_LS, BLGE_LS, CEN_LS, SECE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30473",
@@ -49,7 +46,7 @@
   "branch": "BLG",
   "level": "LS",
   "name": "Functional Programming",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Yusuf Hüseyin Şahin",
   "buildings": [
    "BBB",
@@ -63,19 +60,14 @@
    "14:00/16:59",
    "08:30/12:29"
   ],
-  "rooms": [
-   "Z-16",
-   "Z-16"
-  ],
+  "rooms": [],
   "capacity": 90,
-  "enrolled": 104,
-  "reserved": "-",
+  "enrolled": 90,
+  "reserved": "",
   "programs": [
-   "BLG_LS",
-   "BLGE_LS",
-   "CEN_LS"
+   "BLG_LS, BLGE_LS, CEN_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

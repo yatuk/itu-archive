@@ -5,7 +5,7 @@
   "branch": "TER",
   "level": "LS",
   "name": "Termodinamik",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Birgül Benli",
   "buildings": [
    "MDB",
@@ -19,23 +19,15 @@
    "08:30/11:59",
    "14:00/17:29"
   ],
-  "rooms": [
-   "A101",
-   "A101"
-  ],
+  "rooms": [],
   "capacity": 50,
-  "enrolled": 31,
-  "reserved": "-",
+  "enrolled": 33,
+  "reserved": "",
   "programs": [
-   "CHZ_LS",
-   "DEN_LS",
-   "EHB_LS",
-   "ISL_LS",
-   "JEO_LS",
-   "KOM_LS"
+   "CHZ_LS, DEN_LS, EHB_LS, ISL_LS, JEO_LS, KOM_LS, KON_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30322",
@@ -43,7 +35,7 @@
   "branch": "TER",
   "level": "LS",
   "name": "Termodinamik",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Halil Saraçoğlu",
   "buildings": [
    "MEDC"
@@ -58,26 +50,13 @@
    "2D15"
   ],
   "capacity": 35,
-  "enrolled": 33,
-  "reserved": "-",
+  "enrolled": 35,
+  "reserved": "",
   "programs": [
-   "CEV_LS",
-   "CHZ_LS",
-   "DEN_LS",
-   "END_LS",
-   "GMI_LS",
-   "ISL_LS",
-   "JEF_LS",
-   "JEO_LS",
-   "KIM_LS",
-   "KOM_LS",
-   "PET_LS",
-   "TEK_LS",
-   "UCK_LS",
-   "UZB_LS"
+   "CEV_LS, CHZ_LS, DEN_LS, END_LS, GID_LS, GMI_LS, ISL_LS, JEF_LS, JEO_LS, KIM_LS, KOM_LS, PET_LS, TEK_LS, UCK_LS, UZB_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30323",
@@ -85,7 +64,7 @@
   "branch": "TER",
   "level": "LS",
   "name": "Thermodynamics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Halil Saraçoğlu",
   "buildings": [
    "MEDC"
@@ -97,26 +76,15 @@
    "09:30/16:29"
   ],
   "rooms": [
-   "3D20"
+   "2D15"
   ],
   "capacity": 45,
-  "enrolled": 47,
-  "reserved": "-",
+  "enrolled": 44,
+  "reserved": "",
   "programs": [
-   "CEVE_LS",
-   "CHZE_LS",
-   "DENE_LS",
-   "ENDE_LS",
-   "ISLE_LS",
-   "JEFE_LS",
-   "JEOE_LS",
-   "KIME_LS",
-   "KOME_LS",
-   "PETE_LS",
-   "TEKE_LS",
-   "UZBE_LS"
+   "CEVE_LS, CHZE_LS, DENE_LS, ENDE_LS, ISLE_LS, JEFE_LS, JEOE_LS, KIME_LS, KOME_LS, PETE_LS, TEKE_LS, UZBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

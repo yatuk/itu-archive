@@ -1,0 +1,62 @@
+[
+ {
+  "crn": "12985",
+  "code": "PHY 125",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Banu Tansel Büyükçelebi",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SDU_LS",
+   "SGM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12987",
+  "code": "PHY 125L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Laboratory",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Banu Tansel Büyükçelebi",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SDU_LS",
+   "SGM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

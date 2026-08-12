@@ -5,7 +5,7 @@
   "branch": "MEK",
   "level": "LS",
   "name": "Engineering Mechanics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Hacı Abdullah Taşdemir",
   "buildings": [
    "MKB",
@@ -24,33 +24,13 @@
    "A501"
   ],
   "capacity": 40,
-  "enrolled": 20,
-  "reserved": "-",
+  "enrolled": 23,
+  "reserved": "",
   "programs": [
-   "CHZE_LS",
-   "END_LS",
-   "ENDE_LS",
-   "GID_LS",
-   "GMI_LS",
-   "GMIE_LS",
-   "IML_LS",
-   "IND_LS",
-   "ISL_LS",
-   "ISLE_LS",
-   "JEF_LS",
-   "JEFE_LS",
-   "JEO_LS",
-   "JEOE_LS",
-   "MAD_LS",
-   "MADE_LS",
-   "MEN_LS",
-   "PET_LS",
-   "PETE_LS",
-   "TEK_LS",
-   "TEKE_LS"
+   "CHZE_LS, END_LS, ENDE_LS, GID_LS, GMI_LS, GMIE_LS, IML_LS, IND_LS, ISL_LS, ISLE_LS, JEF_LS, JEFE_LS, JEO_LS, JEOE_LS, MAD_LS, MADE_LS, MEN_LS, PET_LS, PETE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30449",
@@ -58,7 +38,7 @@
   "branch": "MEK",
   "level": "LS",
   "name": "Mühendislik Mekaniği",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Hacı Abdullah Taşdemir",
   "buildings": [
    "MKB",
@@ -72,26 +52,14 @@
    "13:30/17:29",
    "14:30/17:29"
   ],
-  "rooms": [
-   "--",
-   "--"
-  ],
+  "rooms": [],
   "capacity": 40,
-  "enrolled": 17,
-  "reserved": "-",
+  "enrolled": 24,
+  "reserved": "",
   "programs": [
-   "END_LS",
-   "GID_LS",
-   "GMI_LS",
-   "IML_LS",
-   "ISL_LS",
-   "JEF_LS",
-   "JEO_LS",
-   "MAD_LS",
-   "TEK_LS",
-   "TEKE_LS"
+   "END_LS, GID_LS, GMI_LS, IML_LS, ISL_LS, JEF_LS, JEO_LS, MAD_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

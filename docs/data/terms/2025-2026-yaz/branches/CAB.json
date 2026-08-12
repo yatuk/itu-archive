@@ -5,7 +5,7 @@
   "branch": "CAB",
   "level": "LS",
   "name": "Yrd.Çalgı Piyano VIII",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Alper Rumelioğlu",
   "buildings": [
    "TMB",
@@ -19,21 +19,15 @@
    "10:30/12:29",
    "13:30/16:29"
   ],
-  "rooms": [
-   "--",
-   "--"
-  ],
+  "rooms": [],
   "capacity": 15,
-  "enrolled": 9,
-  "reserved": "-",
+  "enrolled": 8,
+  "reserved": "",
   "programs": [
-   "BST_LS",
-   "CAB_LS",
-   "CEB_LS",
-   "KMP_LS"
+   "BST_LS, CAB_LS, CEB_LS, KMP_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30481",
@@ -41,7 +35,7 @@
   "branch": "CAB",
   "level": "LS",
   "name": "Piyano III",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Alper Rumelioğlu",
   "buildings": [
    "TMB",
@@ -55,21 +49,14 @@
    "10:30/12:29",
    "13:30/16:29"
   ],
-  "rooms": [
-   "--",
-   "--"
-  ],
+  "rooms": [],
   "capacity": 15,
-  "enrolled": 3,
-  "reserved": "-",
+  "enrolled": 0,
+  "reserved": "",
   "programs": [
-   "MTR_LS",
-   "MUT_LS",
-   "MUZ_LS",
-   "MZT_LS",
-   "SES_LS"
+   "MTR_LS, MUT_LS, MUZ_LS, MZT_LS, SES_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

@@ -1,0 +1,2058 @@
+[
+ {
+  "crn": "12140",
+  "code": "END 113",
+  "branch": "END",
+  "level": "LS",
+  "name": "Endüstri Müh. Giriş ve Etik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seçkin Polat",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12141",
+  "code": "END 113E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Int.to Industrial Eng.& Ethics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Durucu",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ENDE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12142",
+  "code": "END 201E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Industrial Engineering Applications in Python",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tuğberk Tunçinan",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "IND_LS/10/0 | Diğer/50/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12143",
+  "code": "END 210",
+  "branch": "END",
+  "level": "LS",
+  "name": "End. Müh.için Doğrusal Cebir",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cafer Erhan Bozdağ",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12144",
+  "code": "END 210E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Linear Algebra for Indust.Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kenan Mengüç",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ENDE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12145",
+  "code": "END 213E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Data Manag.in Industrial Syst.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Başar Öztayşi",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "IND_LS/15/0 | Diğer/65/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12146",
+  "code": "END 213E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Data Manag.in Industrial Syst.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Başar Öztayşi",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "IND_LS/15/0 | Diğer/65/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12147",
+  "code": "END 215",
+  "branch": "END",
+  "level": "LS",
+  "name": "Sistem Düşüncesi ve Analizi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çiğdem Kadaifçi Yanmaz",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12148",
+  "code": "END 215E",
+  "branch": "END",
+  "level": "LS",
+  "name": "System Thinking and Analysis",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çiğdem Kadaifçi Yanmaz",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "IND_LS/25/0 | Diğer/55/0",
+  "programs": [
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12150",
+  "code": "END 232E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Ergonomics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fethi Çalışır",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12151",
+  "code": "END 252E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Theory of Probability",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erkan Işıklı",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "IND_LS/15/0 | Diğer/65/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12153",
+  "code": "END 252E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Theory of Probability",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hatice Tekiner Moğulkoç",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "IND_LS/15/0 | Diğer/65/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12154",
+  "code": "END 305E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Data Analytics for Business",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Yasin Ulukuş",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "IND_LS/15/0 | ECNE_LS/5/0 | Diğer/60/0",
+  "programs": [
+   "ECNE_LS",
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12156",
+  "code": "END 305E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Data Analytics for Business",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Ali Ergün",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "IND_LS/15/0 | ECNE_LS/5/0 | Diğer/60/0",
+  "programs": [
+   "ECNE_LS",
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12157",
+  "code": "END 308",
+  "branch": "END",
+  "level": "LS",
+  "name": "Kalite Mühendisliği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüsnü Bülent Cerit",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12159",
+  "code": "END 312E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Engineering Economics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kenan Mengüç",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "IND_LS/5/0 | Diğer/55/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12161",
+  "code": "END 317E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Database Management and Big Data",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mahmut Sami Sivri",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "MAT_LS/5/0 | IND_LS/5/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "MAT_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12162",
+  "code": "END 318",
+  "branch": "END",
+  "level": "LS",
+  "name": "Sistem Dinamiği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cafer Erhan Bozdağ",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12163",
+  "code": "END 322E",
+  "branch": "END",
+  "level": "LS",
+  "name": "System Simulation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülşah Hançerlioğulları Köksalmış",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12164",
+  "code": "END 327E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Decision Theory",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burhaneddin Sandıkçı",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "VBAE_LS/5/0 | IND_LS/5/0 | ECNE_LS/5/0 | Diğer/35/0",
+  "programs": [
+   "ECNE_LS",
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12165",
+  "code": "END 329E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Quality Management Tools&Tech.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şeyda Serdar Asan",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "IND_LS/10/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12166",
+  "code": "END 331E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Operations Research I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tuğberk Tunçinan",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "IND_LS/5/0 | MAT_LS/5/0 | Diğer/50/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "MAT_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12167",
+  "code": "END 332E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Operations Research II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Özgür Kabak , Yusuf İlker Topcu",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12168",
+  "code": "END 332E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Operations Research II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf İlker Topcu , Özgür Kabak",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12169",
+  "code": "END 339",
+  "branch": "END",
+  "level": "LS",
+  "name": "Proje Yönetimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayberk Soyer",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12170",
+  "code": "END 341",
+  "branch": "END",
+  "level": "LS",
+  "name": "İş Etüdü ve Dizaynı",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşe Elvan Bayraktaroğlu",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12173",
+  "code": "END 341E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Work Analysis and Design",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fethi Çalışır",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ENDE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12174",
+  "code": "END 345",
+  "branch": "END",
+  "level": "LS",
+  "name": "Yönetim Düşüncesinin Evrimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cahit Ali Bayraktar",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12175",
+  "code": "END 357E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Management Information Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Başar Öztayşi",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "IND_LS/10/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12176",
+  "code": "END 382",
+  "branch": "END",
+  "level": "LS",
+  "name": "Üretim Yöntemleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüsnü Bülent Cerit",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12177",
+  "code": "END 411",
+  "branch": "END",
+  "level": "LS",
+  "name": "Bütünleşik Üretim Sistemleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şule Itır Satoğlu",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12178",
+  "code": "END 411E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Integrated Manufacturing Syst",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emre Çevikcan",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ENDE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12179",
+  "code": "END 421",
+  "branch": "END",
+  "level": "LS",
+  "name": "Üretim Planlama ve Kontrol",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baskak",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12181",
+  "code": "END 421E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Production Planning&Control",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülşah Hançerlioğulları Köksalmış",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ENDE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12182",
+  "code": "END 423",
+  "branch": "END",
+  "level": "LS",
+  "name": "Yatırım Planlama",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüsnü Bülent Cerit",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12183",
+  "code": "END 429",
+  "branch": "END",
+  "level": "LS",
+  "name": "Süreç Yönetimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cemil Ceylan",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12184",
+  "code": "END 431",
+  "branch": "END",
+  "level": "LS",
+  "name": "Yönetim ve Organizasyon",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cahit Ali Bayraktar , Seçkin Polat",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12185",
+  "code": "END 431",
+  "branch": "END",
+  "level": "LS",
+  "name": "Yönetim ve Organizasyon",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seçkin Polat , Cahit Ali Bayraktar",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12186",
+  "code": "END 431E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Management and Organization",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gaye Karaçay Aydın",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ENDE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12187",
+  "code": "END 344",
+  "branch": "END",
+  "level": "LS",
+  "name": "Davranış Bilimleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cahit Ali Bayraktar",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12188",
+  "code": "END 435E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Work Safety",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Esra Baş",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "YAN_YD/10/0 | IND_LS/10/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "YAN_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12189",
+  "code": "END 443E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Business Planning & Innovation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çiğdem Kadaifçi Yanmaz",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "IND_LS/10/0 | ECNE_LS/5/0 | Diğer/35/0",
+  "programs": [
+   "ECNE_LS",
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12190",
+  "code": "END 445E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Lean Production Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ufuk Cebeci",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "IND_LS/10/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12191",
+  "code": "END 449",
+  "branch": "END",
+  "level": "LS",
+  "name": "End. Müh. Uyg. Seminer Dersi",
+  "method": "Sanal (Çevrimiçi/Online)",
+  "instructor": "Çiğdem Altın Gümüşsoy",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 300,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12192",
+  "code": "END 451E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Logistics Management",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şeyda Serdar Asan",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "IND_LS/10/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12193",
+  "code": "END 452",
+  "branch": "END",
+  "level": "LS",
+  "name": "Satınalma Yönetimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baskak",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12195",
+  "code": "END 453E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Indus.4.0 & Digital Transform.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Alp Üstündağ",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "IND_LS/10/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12197",
+  "code": "END 456E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Analytical Credit Risk Management",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa Ceran",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "ECNE_LS/5/0 | IND_LS/5/0 | Diğer/40/0",
+  "programs": [
+   "ECNE_LS",
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12198",
+  "code": "END 457E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Heuristic Optimization",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seda Yanık Özbay",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "VBAE_LS/5/0 | IND_LS/5/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12199",
+  "code": "END 471E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Marketing & CRM Analytics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Umut Asan",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "IND_LS/5/0 | VBAE_LS/5/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12201",
+  "code": "END 472E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Advanced Spreadsheet Modeling",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Durucu",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "IND_LS/10/0 | Diğer/40/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12202",
+  "code": "END 492",
+  "branch": "END",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şule Itır Satoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12203",
+  "code": "END 4901",
+  "branch": "END",
+  "level": "LS",
+  "name": "Endüstri Müh. Tasarımı I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şule Itır Satoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12204",
+  "code": "END 4901E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Industrial Engin. Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şule Itır Satoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12205",
+  "code": "END 4902",
+  "branch": "END",
+  "level": "LS",
+  "name": "Endüstri Müh. Tasarımı II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şule Itır Satoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12206",
+  "code": "END 4902E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Industrial Engin. Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şule Itır Satoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12897",
+  "code": "END 500E",
+  "branch": "END",
+  "level": "LU",
+  "name": "Engineering Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erkan Işıklı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12902",
+  "code": "END 506E",
+  "branch": "END",
+  "level": "LU",
+  "name": "Advanced Engineering Economics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cengiz Kahraman",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12903",
+  "code": "END 508E",
+  "branch": "END",
+  "level": "LU",
+  "name": "Mathematical Programming",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hatice Tekiner Moğulkoç",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 34,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12905",
+  "code": "END 513",
+  "branch": "END",
+  "level": "LU",
+  "name": "İleri Istatistiksel Analiz",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Umut Asan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 35,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12906",
+  "code": "END 557E",
+  "branch": "END",
+  "level": "LU",
+  "name": "Heuristic Optimization Methods",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seda Yanık Özbay",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 33,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12907",
+  "code": "END 559",
+  "branch": "END",
+  "level": "LU",
+  "name": "Depo Tasarımı ve Yönetimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baskak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12910",
+  "code": "END 574E",
+  "branch": "END",
+  "level": "LU",
+  "name": "Business Intell.&Mac.Lear.App.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ömer Faruk Beyca",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 39,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12911",
+  "code": "END 596",
+  "branch": "END",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayberk Soyer",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12913",
+  "code": "END 601E",
+  "branch": "END",
+  "level": "LU",
+  "name": "Stochastic Models in Op.Res.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Esra Baş",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 12,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12916",
+  "code": "END 604E",
+  "branch": "END",
+  "level": "LU",
+  "name": "G.Decision Making Under M.Crit",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Özgür Kabak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 12,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12918",
+  "code": "END 606E",
+  "branch": "END",
+  "level": "LU",
+  "name": "Fuzzy Logic and Modelling",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cengiz Kahraman",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 22,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12920",
+  "code": "END 696",
+  "branch": "END",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baskak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13588",
+  "code": "END YLT",
+  "branch": "END",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Başar Öztayşi",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13590",
+  "code": "END DRT",
+  "branch": "END",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Başar Öztayşi",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13591",
+  "code": "END YET",
+  "branch": "END",
+  "level": "LU",
+  "name": "Yeterlik Aşaması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Başar Öztayşi",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

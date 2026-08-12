@@ -5,7 +5,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Geo. Müh. Proje Planlama Yön.",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Reha Metin Alkan",
   "buildings": [
    "INB"
@@ -17,17 +17,16 @@
    "08:30/13:29"
   ],
   "rooms": [
-   "B302"
+   "B204"
   ],
   "capacity": 40,
-  "enrolled": 29,
-  "reserved": "-",
+  "enrolled": 31,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "HTA_LS"
+   "GEO_LS, HTA_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30364",
@@ -35,7 +34,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Fundamentals of Surveying",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Volkan Özbey",
   "buildings": [
    "INB",
@@ -55,15 +54,12 @@
   ],
   "capacity": 40,
   "enrolled": 31,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30365",
@@ -71,7 +67,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Th.of Err. And Ad. C.",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Serdar Erol",
   "buildings": [
    "INB",
@@ -90,16 +86,13 @@
    "B308"
   ],
   "capacity": 40,
-  "enrolled": 27,
-  "reserved": "-",
+  "enrolled": 32,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30366",
@@ -107,7 +100,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Engineering Surveying",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Volkan Özbey",
   "buildings": [
    "INB",
@@ -126,16 +119,13 @@
    "B103"
   ],
   "capacity": 60,
-  "enrolled": 59,
-  "reserved": "-",
+  "enrolled": 60,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30367",
@@ -143,7 +133,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Computer Aided Map Design",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Mehmet Ufuk Özerman",
   "buildings": [
    "INB",
@@ -162,16 +152,13 @@
    "D103"
   ],
   "capacity": 35,
-  "enrolled": 21,
-  "reserved": "-",
+  "enrolled": 22,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30368",
@@ -179,7 +166,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Mathematics for Geomatics Eng.",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Mehmet Ufuk Özerman",
   "buildings": [
    "INB",
@@ -202,16 +189,13 @@
    "A102"
   ],
   "capacity": 50,
-  "enrolled": 49,
-  "reserved": "-",
+  "enrolled": 47,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30369",
@@ -219,7 +203,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Geodesy II and Projections",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Serdar Erol",
   "buildings": [
    "INB",
@@ -238,16 +222,13 @@
    "B308"
   ],
   "capacity": 50,
-  "enrolled": 17,
-  "reserved": "-",
+  "enrolled": 20,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30395",
@@ -255,7 +236,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Coordinate Sys. and Geodesy I",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Bihter Erol",
   "buildings": [
    "INB",
@@ -274,16 +255,13 @@
    "D201"
   ],
   "capacity": 40,
-  "enrolled": 29,
-  "reserved": "-",
+  "enrolled": 32,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30396",
@@ -291,7 +269,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Prob.and Stat. for Geom. Eng.",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Muhammed Enes Atik",
   "buildings": [
    "INB",
@@ -310,16 +288,13 @@
    "D201"
   ],
   "capacity": 50,
-  "enrolled": 22,
-  "reserved": "-",
+  "enrolled": 23,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30483",
@@ -327,7 +302,7 @@
   "branch": "GEO",
   "level": "LS",
   "name": "Cadastre",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Büşra Kartal",
   "buildings": [
    "INB",
@@ -345,16 +320,13 @@
    "B101",
    "B101"
   ],
-  "capacity": 35,
-  "enrolled": 33,
-  "reserved": "-",
+  "capacity": 20,
+  "enrolled": 20,
+  "reserved": "",
   "programs": [
-   "GEO_LS",
-   "GEOE_LS",
-   "HTA_LS",
-   "HTAE_LS"
+   "GEO_LS, GEOE_LS, HTA_LS, HTAE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

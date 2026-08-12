@@ -1,0 +1,1268 @@
+[
+ {
+  "crn": "11922",
+  "code": "PEM 501E",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Project I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fatma Ayçim Türer Başkaya",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11923",
+  "code": "PEM 511",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Çevre Tasarımı I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Lutfiye Kutay Karaçor",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11924",
+  "code": "PEM 523",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Peyzaj Mimarlığında Özel Konu.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülşen Aytaç",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11925",
+  "code": "PEM 525E",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Research Des.in Land.Arc.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Melih Bozkurt",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11926",
+  "code": "PEM 527E",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Plan.&Des. for Coastal Land.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fatma Ayçim Türer Başkaya",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11927",
+  "code": "PEM 596E",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Scien.Rese., Ethic&Seminar",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Melih Bozkurt",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12679",
+  "code": "PEM 119E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Int.Landscape Architec.&Ethics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Arzu Türk",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12685",
+  "code": "PEM 209E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landform & Built Envir.Studio",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Meltem Erdem Kaya",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12687",
+  "code": "PEM 209E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landform & Built Envir.Studio",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nilay Özlü Karaca",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12689",
+  "code": "PEM 209E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landform & Built Envir.Studio",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Arzu Türk",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 9,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12691",
+  "code": "PEM 212E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Melih Bozkurt",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12692",
+  "code": "PEM 311E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Melih Bozkurt",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12693",
+  "code": "PEM 311E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ebru Erbaş Gürler",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12694",
+  "code": "PEM 311E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çisem Demirel Koyun",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12695",
+  "code": "PEM 411E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülşen Aytaç",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 13,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12697",
+  "code": "PEM 411E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fatma Ayçim Türer Başkaya",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 13,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12698",
+  "code": "PEM 411E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Lutfiye Kutay Karaçor",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 13,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12699",
+  "code": "PEM 312E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ikhwan Kım",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 9,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12700",
+  "code": "PEM 312E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Design III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Didem Dizdaroğlu",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 9,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12701",
+  "code": "PEM 4902E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Melih Bozkurt",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "14:00/17:59",
+   "08:00/12:59"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12703",
+  "code": "PEM 492E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ebru Erbaş Gürler",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29",
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12705",
+  "code": "PEM 231E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Plant Material II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Didem Dizdaroğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 35,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12706",
+  "code": "PEM 231E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Plant Material II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Didem Dizdaroğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 35,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12707",
+  "code": "PEM 225E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Hist.Theo.&Crtc.inLndsc.Arc.II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ebru Erbaş Gürler , Çisem Demirel Koyun",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12708",
+  "code": "PEM 205E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Comp. Aided Landscape Arch.",
+  "method": "Sanal (Çevrimiçi/Online)",
+  "instructor": "Safiye Elif Serdar Yakut",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12709",
+  "code": "PEM 242E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Eco.&Its Ref.onDsg.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Meltem Erdem Kaya , Safiye Elif Serdar Yakut",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:00/10:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 85,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13069",
+  "code": "PEM 603E",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Recreational Planning",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ikhwan Kım",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13070",
+  "code": "PEM 613E",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Advan.Topics in Landscape Arc.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nilay Özlü Karaca",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13071",
+  "code": "PEM 696E",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Scien.Rese., Ethic&Seminar",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nilay Özlü Karaca",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13073",
+  "code": "PEM 697",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Uzmanlık Alan Dersi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Lutfiye Kutay Karaçor",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13100",
+  "code": "PEM 303E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Int.to Geographical Inf.Sys.",
+  "method": "Sanal (Çevrimiçi/Online)",
+  "instructor": "Elif Kısar Koramaz , Arzu Türk",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13101",
+  "code": "PEM 307E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Urbanism & Planning Law",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sezen Tarakçı , Mehmet Ronael",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13102",
+  "code": "PEM 305E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Landscape Construction II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 75,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13106",
+  "code": "PEM 407E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Const.Drawi.Tch.in Landsc.Dsgn",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hayriye Eşbah Tunçay",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "13108",
+  "code": "PEM 4012E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Adv.Rendering Tech.inLands.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ikhwan Kım",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13109",
+  "code": "PEM 4013E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Computer.App.in Plan.&Design",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 18,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13115",
+  "code": "PEM 4022E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Urban Furniture and Space",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülşen Aytaç",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "EUT_LS",
+   "EUTE_LS",
+   "ICM_LS",
+   "MIM_LS",
+   "MIME_LS",
+   "PEM_LS",
+   "PEME_LS",
+   "SBP_LS",
+   "SBPE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13118",
+  "code": "PEM 4023E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Urban Visual Analysis",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Lutfiye Kutay Karaçor",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13119",
+  "code": "PEM 4024E",
+  "branch": "PEM",
+  "level": "LS",
+  "name": "Readings About National Landscape Architecture",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çisem Demirel Koyun",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "PEM_LS",
+   "PEME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13542",
+  "code": "PEM YLT",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Lutfiye Kutay Karaçor",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13543",
+  "code": "PEM DRT",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Lutfiye Kutay Karaçor",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13544",
+  "code": "PEM YET",
+  "branch": "PEM",
+  "level": "LU",
+  "name": "Yeterlik Aşaması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Lutfiye Kutay Karaçor",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

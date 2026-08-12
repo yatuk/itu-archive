@@ -5,7 +5,7 @@
   "branch": "MAD",
   "level": "LS",
   "name": "Computer Aided Mine Design",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Kürşat Hasözdemir",
   "buildings": [
    "MDB",
@@ -19,19 +19,14 @@
    "13:30/16:29",
    "08:30/12:29"
   ],
-  "rooms": [
-   "--",
-   "--"
-  ],
+  "rooms": [],
   "capacity": 15,
   "enrolled": 15,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "MAD_LS",
-   "MAD_YD",
-   "MADE_LS"
+   "MAD_LS, MAD_YD, MADE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

@@ -5,7 +5,7 @@
   "branch": "MYZ",
   "level": "LS",
   "name": "Meteorolojide Makine Öğrenmesi",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ahmet Öztopal",
   "buildings": [
    "MEDC",
@@ -25,12 +25,11 @@
   ],
   "capacity": 20,
   "enrolled": 6,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "IBM_LS",
-   "MTO_LS"
+   "IBM_LS, MTO_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

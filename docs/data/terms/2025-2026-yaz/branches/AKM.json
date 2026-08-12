@@ -5,7 +5,7 @@
   "branch": "AKM",
   "level": "LS",
   "name": "Akışkanlar Mekaniği",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Birgül Benli",
   "buildings": [
    "MDB",
@@ -19,24 +19,15 @@
    "08:30/11:59",
    "14:00/17:29"
   ],
-  "rooms": [
-   "A101",
-   "A101"
-  ],
+  "rooms": [],
   "capacity": 50,
-  "enrolled": 45,
-  "reserved": "-",
+  "enrolled": 35,
+  "reserved": "",
   "programs": [
-   "DEN_LS",
-   "GEM_LS",
-   "IBM_LS",
-   "INS_LS",
-   "MTO_LS",
-   "TEK_LS",
-   "UCK_LS"
+   "DEN_LS, GEM_LS, IBM_LS, INS_LS, MTO_LS, TEK_LS, UCK_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30376",
@@ -44,7 +35,7 @@
   "branch": "AKM",
   "level": "LS",
   "name": "Fluid Mechanics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Erdal Kesgin",
   "buildings": [
    "INB",
@@ -58,25 +49,15 @@
    "08:30/12:29",
    "13:30/16:29"
   ],
-  "rooms": [
-   "B103",
-   "B103"
-  ],
+  "rooms": [],
   "capacity": 25,
-  "enrolled": 48,
-  "reserved": "-",
+  "enrolled": 25,
+  "reserved": "",
   "programs": [
-   "INS_LS",
-   "INSE_LS",
-   "MEN_LS",
-   "NAE_LS",
-   "PET_LS",
-   "PETE_LS",
-   "TEK_LS",
-   "TEKE_LS"
+   "INS_LS, INSE_LS, MEN_LS, NAE_LS, PET_LS, PETE_LS, TEK_LS, TEKE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30386",
@@ -84,7 +65,7 @@
   "branch": "AKM",
   "level": "LS",
   "name": "Akışkanlar Mekaniği",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Necati Erdem Ünal",
   "buildings": [
    "INB",
@@ -98,19 +79,15 @@
    "10:00/12:59",
    "13:30/17:29"
   ],
-  "rooms": [
-   "B303",
-   "B303"
-  ],
+  "rooms": [],
   "capacity": 30,
-  "enrolled": 32,
-  "reserved": "-",
+  "enrolled": 30,
+  "reserved": "",
   "programs": [
-   "CEV_LS",
-   "INS_LS"
+   "CEV_LS, INS_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30387",
@@ -118,7 +95,7 @@
   "branch": "AKM",
   "level": "LS",
   "name": "Akışkanlar Mekaniği",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Necati Erdem Ünal",
   "buildings": [
    "INB",
@@ -132,19 +109,15 @@
    "10:00/12:59",
    "13:30/17:29"
   ],
-  "rooms": [
-   "B304",
-   "B304"
-  ],
+  "rooms": [],
   "capacity": 30,
-  "enrolled": 23,
-  "reserved": "-",
+  "enrolled": 17,
+  "reserved": "",
   "programs": [
-   "CEV_LS",
-   "INS_LS"
+   "CEV_LS, INS_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30466",
@@ -152,7 +125,7 @@
   "branch": "AKM",
   "level": "LS",
   "name": "Fluid Mechanics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Cenk Kaya",
   "buildings": [
    "DZB",
@@ -166,19 +139,14 @@
    "08:30/12:29",
    "13:30/16:29"
   ],
-  "rooms": [
-   "--",
-   "--"
-  ],
+  "rooms": [],
   "capacity": 45,
-  "enrolled": 33,
-  "reserved": "-",
+  "enrolled": 24,
+  "reserved": "",
   "programs": [
-   "DUI_LS",
-   "MEN_LS",
-   "MTM_LS"
+   "DUI_LS, MEN_LS, MTM_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

@@ -1,0 +1,1845 @@
+[
+ {
+  "crn": "11752",
+  "code": "MTO 101",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Meteoroloji Müh. Giriş ve Etik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Duran Şahin",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/14:29"
+  ],
+  "rooms": [
+   "ZA3"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11753",
+  "code": "MTO 111E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Intr. to Atmospheric Sciences",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mikdat Kadıoğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "ZD1"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS",
+   "MTOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11754",
+  "code": "MTO 223",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Bilgisayar Grafiğine Giriş",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Önol",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "2D18"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "IBM_YD",
+   "MTO_LS",
+   "MTO_LS",
+   "MTO_YD",
+   "MTOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11755",
+  "code": "MTO 225",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Güneş ve Yer Radyasyonu",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Filiz Türk Katırcıoğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "2D11"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS",
+   "MTOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11756",
+  "code": "MTO 225E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Solar & Terrestrial Radiation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Demirhan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D9"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS",
+   "MTOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11757",
+  "code": "MTO 227",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Ekosistem Ekolojisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Çaldağ",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "2D11"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11758",
+  "code": "MTO 229E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Physics ofClouds&Precipitation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sevinç Asilhan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "2D14"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "IBM_YD",
+   "MTO_LS",
+   "MTO_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11759",
+  "code": "MTO 301",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Meteo.Uzaktan Algılamanın Tem.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Öztopal",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "ZA1"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11760",
+  "code": "MTO 302E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Wheather Analysis and Prediction I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emrah Tuncay Özdemir",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29",
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "2D14",
+   "2D14"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "IBM_YD",
+   "MTO_LS",
+   "MTO_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11761",
+  "code": "MTO 303E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Comput.Fluid Dyn.in Meteo.Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elçin Tan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "1D7"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11762",
+  "code": "MTO 304",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Havacılık Meteorolojisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emrah Tuncay Özdemir",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "2D14"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11763",
+  "code": "MTO 311E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Data Analysis",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kasım Koçak",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "ZD1",
+   "ZD1"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11764",
+  "code": "MTO 323",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmosfer Kimyası",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ceyhan Kahya",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "1D6"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS",
+   "MTOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11765",
+  "code": "MTO 337",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmosfer Dinamiği I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Deniz , Bahtiyar Efe",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/13:29",
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "2D11",
+   "2D11"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "IBM_YD",
+   "MTO_LS",
+   "MTO_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11766",
+  "code": "MTO 337E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmospheric Dynamics I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yurdanur Ünal",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/13:29",
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "2D14",
+   "2D14"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "IBM_YD",
+   "MTO_LS",
+   "MTO_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11767",
+  "code": "MTO 350E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Air Pollution Fundamentals",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ceyhan Kahya",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "1D9"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11768",
+  "code": "MTO 353",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Tarım ve Orman Meteorolojisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Levent Şaylan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "1D7"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11769",
+  "code": "MTO 357E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Physics of Upper Atmosphere",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Zerefşan Kaymaz",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D7"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11770",
+  "code": "MTO 359",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Biyometeoroloji",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Çaldağ",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "1D6"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11771",
+  "code": "MTO 388",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Coğrafi Bilgi Bilimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Filiz Türk Katırcıoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11772",
+  "code": "MTO 406",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hava Analizi ve Öngörü II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şükran Sibel Menteş",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "1D4",
+   "1D6"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "IBM_YD",
+   "MTO_LS",
+   "MTO_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11773",
+  "code": "MTO 455",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hidrometri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kasım Koçak",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D7"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11774",
+  "code": "MTO 464",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "İklim Değişikliği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yurdanur Ünal , Cemre Sonuç",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D6"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11776",
+  "code": "MTO 358",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Hava Kirliliği Meteorolojisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Toros",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "2D16"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11777",
+  "code": "MTO 466E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Atmospheric Optics & Acoustics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Demirhan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "1D6"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11778",
+  "code": "MTO 470E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Oceanography",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elçin Tan",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "1D7"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11779",
+  "code": "MTO 4901",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Meteoroloji Müh. Tasarımı I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Toros",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11780",
+  "code": "MTO 4902",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Meteoroloji Müh. Tasarımı II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Toros",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11781",
+  "code": "MTO 492",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Toros",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11782",
+  "code": "MTO 492E",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Toros",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTO_LS",
+   "MTO_LS",
+   "MTOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11783",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Toros",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11784",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mikdat Kadıoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11785",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Levent Şaylan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11786",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kasım Koçak",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11787",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Zerefşan Kaymaz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11788",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Duran Şahin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11789",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yurdanur Ünal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11790",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şükran Sibel Menteş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11791",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sevinç Asilhan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11792",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Deniz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11793",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Önol",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11794",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emrah Tuncay Özdemir",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11795",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elçin Tan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11796",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Öztopal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11797",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Çaldağ",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11798",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bahtiyar Efe",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11799",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ceyhan Kahya",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11800",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Demirhan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11801",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Filiz Türk Katırcıoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 1,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11802",
+  "code": "MTO 494",
+  "branch": "MTO",
+  "level": "LS",
+  "name": "Araştırma Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cemre Sonuç",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 1,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "13890",
+  "code": "MTO 505",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Atmosferik Sınır Tabaka Teoris",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ceyhan Kahya",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13893",
+  "code": "MTO 575",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "İklim Risk Yönetimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mikdat Kadıoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13895",
+  "code": "MTO 503",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Mikroklimatoloji",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Levent Şaylan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13897",
+  "code": "MTO 509E",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Clouds Physics and Dynamics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sevinç Asilhan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13900",
+  "code": "MTO 506E",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Satellite Meteorology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sante Laviola",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/13:29",
+   "11:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13902",
+  "code": "MTO 515",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "İleri Dinamik Meteoroloji",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şükran Sibel Menteş , Deniz Demirhan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13905",
+  "code": "MTO 596",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Önol",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13906",
+  "code": "MTO 533E",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Visualiz.&Man.Data in Atm.Sci.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Önol",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13907",
+  "code": "MTO 513E",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Statistical Met.Atmospher.Sci.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kasım Koçak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13908",
+  "code": "MTO 607E",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Inst.&Data Pro.Tec.in Sp.Weat.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Zerefşan Kaymaz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13909",
+  "code": "MTO 696",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Önol",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13910",
+  "code": "MTO 610E",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Geophysical Fluid Dynamics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elçin Tan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13911",
+  "code": "MTO 605E",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Atmospheric Turb.Air Poll.Modl",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Toros",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13912",
+  "code": "MTO DRT",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yurdanur Ünal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13913",
+  "code": "MTO YLT",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yurdanur Ünal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13914",
+  "code": "MTO YET",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Yeterlik Aşaması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yurdanur Ünal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

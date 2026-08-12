@@ -5,7 +5,7 @@
   "branch": "CHZ",
   "level": "LS",
   "name": "Endüstriyel Hammaddeler",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Murat Olgaç Kangal",
   "buildings": [
    "MDB",
@@ -19,20 +19,14 @@
    "09:30/12:59",
    "14:00/17:29"
   ],
-  "rooms": [
-   "A101",
-   "A101"
-  ],
+  "rooms": [],
   "capacity": 55,
-  "enrolled": 44,
-  "reserved": "-",
+  "enrolled": 49,
+  "reserved": "",
   "programs": [
-   "CHZ_LS",
-   "CHZ_YD",
-   "MAD_LS",
-   "MAD_YD"
+   "CHZ_LS, CHZ_YD, MAD_LS, MAD_YD"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

@@ -1,0 +1,1358 @@
+[
+ {
+  "crn": "10975",
+  "code": "MET 101E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Int.toMet.&Mat.Engn.&Eng.Ethic",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Faiz Muhaffel , Murat Baydoğan",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "D201"
+  ],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "10976",
+  "code": "MET 213",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Malzeme Biliminin Temelleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gültekin Göller , İpek Akın Karadayı",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "D301"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "10977",
+  "code": "MET 213E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Fund.of Materials Science",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gültekin Göller , İpek Akın Karadayı",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "D301"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "10978",
+  "code": "MET 215",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Metalurji Termodinamiğ. Tem.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nuri Solak",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "D103"
+  ],
+  "capacity": 95,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "10979",
+  "code": "MET 215E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Fund.of Metall.Thermodynamics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nuri Solak",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "D103"
+  ],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "10980",
+  "code": "MET 220",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Mühendislik Matematiği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kübra Onbaşlı",
+  "buildings": [
+   "KMB",
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/13:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "D102",
+   "D102"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10981",
+  "code": "MET 220E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Engineering Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kübra Onbaşlı",
+  "buildings": [
+   "KMB",
+   "KMB"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "11:00/12:59",
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "D104",
+   "D202"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10982",
+  "code": "MET 313",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Kimyasal Metalurji I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Servet İbrahim Timur , Güldem Kartal Şireli",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "D202"
+  ],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10983",
+  "code": "MET 313E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Chemical Metallugry I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Onuralp Yücel , Cevat Bora Derin , Mehmet Şeref Sönmez",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "D203"
+  ],
+  "capacity": 75,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10984",
+  "code": "MET 315E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Fund. of Physical Metallurgy",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Duygu Ağaoğulları",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "D201"
+  ],
+  "capacity": 180,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10985",
+  "code": "MET 317E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Fund. of Transport Phenomena",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Güldem Kartal Şireli",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "D201"
+  ],
+  "capacity": 180,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "10986",
+  "code": "MET 335",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Mlz.Elekt. Many.&Optk Özellik.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Kızıl",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "D203"
+  ],
+  "capacity": 95,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10987",
+  "code": "MET 335E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Elect.,Magn.,Optic.Prop.ofMat.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Kürşat Kazmanlı",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "D104"
+  ],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10988",
+  "code": "MET 337",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Malzeme Karakterizasyon Met.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Özgül Keleş , Billur Deniz Karahan",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "D301"
+  ],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10989",
+  "code": "MET 337E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Materials Characteriz. Meth.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Faiz Muhaffel , Erçin Çağan Duran",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "D104"
+  ],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10990",
+  "code": "MET 339",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Malzeme Karakterizasyon Lab.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erçin Çağan Duran , Aytekin Uzunoğlu , Cevat Fahir Arısoy , Filiz Şahin , Güldem Kartal Şireli , Gültekin Göller , İpek Akın Karadayı , Kübra Onbaşlı , Muhammet Kürşat Kazmanlı , Murat Baydoğan , Özgül Keleş , Sebahattin Gürmen , Servet İbrahim Timur",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "ML2"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10991",
+  "code": "MET 339E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Materials Characterization Lab",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nuri Solak , Onuralp Yücel , Cevat Fahir Arısoy , Duygu Ağaoğulları , Özgül Keleş , Billur Deniz Karahan , Cevat Bora Derin , Hüseyin Kızıl",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "ML2"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10992",
+  "code": "MET 353",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Müh.Uyg.Tasar.Pren&Malz.Seç.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bihter Zeytuncu Gökoğlu",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "D203"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "10993",
+  "code": "MET 353E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Dsn.Prnc.&Mat.Sel for Eng.App.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Özgül Keleş , Billur Deniz Karahan",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "D104"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "10994",
+  "code": "MET 435E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "PST Desg.&Prj.Mng. and Innov.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Özgül Keleş , Billur Deniz Karahan",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "D304"
+  ],
+  "capacity": 110,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10995",
+  "code": "MET 437E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Princip.of Corros.&Corros.Prot",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Kürşat Kazmanlı",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "D301"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10996",
+  "code": "MET 437E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Princip.of Corros.&Corros.Prot",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cem Örnek",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "D104"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10997",
+  "code": "MET 439E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Engineering Polymers",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mohammadreza Nofar",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "D201"
+  ],
+  "capacity": 170,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10998",
+  "code": "MET 453E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Fund. of Ceramics Materials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Filiz Şahin",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "D201"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "10999",
+  "code": "MET 455",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Malzeme Proses Lab.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Faiz Muhaffel , Aytekin Uzunoğlu , Bihter Zeytuncu Gökoğlu , Cem Örnek , Filiz Şahin , Gültekin Göller , İpek Akın Karadayı , Kübra Onbaşlı , Mehmet Şeref Sönmez , Muhammet Kürşat Kazmanlı , Necip Ünlü , Sebahattin Gürmen , Servet İbrahim Timur , Yonca Alkan Göksu",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "ML1"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11000",
+  "code": "MET 455E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Materials Processing Lab.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Faiz Muhaffel , Bihter Zeytuncu Gökoğlu , Cem Örnek , Mehmet Şeref Sönmez , Necip Ünlü , Yonca Alkan Göksu , Billur Deniz Karahan , Cevat Bora Derin , Hüseyin Kızıl , Nuri Solak , Onuralp Yücel",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "ML1"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11001",
+  "code": "MET 457E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Semiconductor Materials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Kızıl",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "D203"
+  ],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11002",
+  "code": "MET 459E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Metal Casting and Technologies",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Necip Ünlü",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "D204"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11003",
+  "code": "MET 474",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Demir Dışı Metal.Ekstrk.Mtlrj.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Onuralp Yücel",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "D203"
+  ],
+  "capacity": 35,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11004",
+  "code": "MET 475E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Powder Metallurgy",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Duygu Ağaoğulları",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "D102"
+  ],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11005",
+  "code": "MET 479E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Iron and Steel Making",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cevat Fahir Arısoy",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "D302"
+  ],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11006",
+  "code": "MET 483",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Hasarsız Malz. Muayenesi. Gir.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Aytekin Uzunoğlu",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "D202"
+  ],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11007",
+  "code": "MET 483E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Intr.to Non Destr.Test.of Mat.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Necip Ünlü",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "D204"
+  ],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11008",
+  "code": "MET 485E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Ceramic Manufacturing",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Filiz Şahin , İpek Akın Karadayı",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "D102"
+  ],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11009",
+  "code": "MET 487E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Deform. Proces.of Materials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baydoğan , Faiz Muhaffel",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "D303"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11010",
+  "code": "MET 4901",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Met. Malz. Müh. Tasarımı I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baydoğan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11011",
+  "code": "MET 4901E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Met. & Mat. Engn. Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baydoğan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11012",
+  "code": "MET 4902",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Met. Malz. Müh. Tasarımı II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baydoğan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11013",
+  "code": "MET 4902E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Met. & Mat. Engn. Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baydoğan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 500,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11014",
+  "code": "MET 492",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Tasarım Projesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baydoğan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11015",
+  "code": "MET 492E",
+  "branch": "MET",
+  "level": "LS",
+  "name": "Design Project",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Baydoğan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11969",
+  "code": "MET 610E",
+  "branch": "MET",
+  "level": "LU",
+  "name": "Principles of Tribology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hüseyin Çimenoğlu , Murat Baydoğan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11970",
+  "code": "MET 603E",
+  "branch": "MET",
+  "level": "LU",
+  "name": "Production of Refractory Metal",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Onuralp Yücel",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:00/12:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11971",
+  "code": "MET 619",
+  "branch": "MET",
+  "level": "LU",
+  "name": "Nadir Toprak&Krit.Met.Metalu.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sebahattin Gürmen , Mehmet Şeref Sönmez",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11972",
+  "code": "MET 618",
+  "branch": "MET",
+  "level": "LU",
+  "name": "Alümin.(Al),Alaş.&Üretim Tekn.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Özgül Keleş , Can Akyıl",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11973",
+  "code": "MET 696",
+  "branch": "MET",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cevat Fahir Arısoy",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11974",
+  "code": "MET DRT",
+  "branch": "MET",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cevat Fahir Arısoy",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11975",
+  "code": "MET YET",
+  "branch": "MET",
+  "level": "LU",
+  "name": "Yeterlik Aşaması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cevat Fahir Arısoy",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

@@ -1,0 +1,390 @@
+[
+ {
+  "crn": "12116",
+  "code": "VBA 111E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Introduction to Data Science and Analytics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muammer Altan Çakır",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "VBAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12121",
+  "code": "VBA 113E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Foundations of Algorithm and Programming",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Güray Güler",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "VBAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12125",
+  "code": "VBA 115E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Fundamentals of Linux",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mahmut Sami Sivri",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "VBAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12126",
+  "code": "VBA 210E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Linear Algebra and Applications",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammed Lütfi Yarar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "VBAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12129",
+  "code": "VBA 211E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Deterministic Models in Data Science",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burhaneddin Sandıkçı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12132",
+  "code": "VBA 213E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Data Visualization",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Ali Ergün",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "VBAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12133",
+  "code": "VBA 215E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Database Management Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mahmut Sami Sivri",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12134",
+  "code": "VBA 311E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Statistics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Güray Güler",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12135",
+  "code": "VBA 313E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Deep Learning",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Yasin Ulukuş",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12136",
+  "code": "VBA 315E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Machine Learning",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Güray Güler",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12137",
+  "code": "VBA 317E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Signal and Image Analytics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ömer Faruk Beyca",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "VBAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12138",
+  "code": "VBA 343E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Recommender Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muammer Altan Çakır",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "VBAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12139",
+  "code": "VBA 319E",
+  "branch": "VBA",
+  "level": "LS",
+  "name": "Ethics and Law in Data Science",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çiçek Ersoy Kekevi",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "VBAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

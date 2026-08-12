@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-09T10:49:40Z",
+ "generatedAt": "2026-08-12T13:07:54Z",
  "nodes": [
   {
    "code": "AKM 202",
@@ -282,7 +282,7 @@
   },
   {
    "code": "BBF 302E",
-   "name": "Veritabanı Sistemleri",
+   "name": "Database Systems",
    "branch": "BBF",
    "requirement": "( BLG 252 MIN. DD Veya BLG 252E MIN. DD ) Veya ( MUH 212 MIN. DD Veya MUH 212E MIN. DD ) Veya ( YZV 201 MIN. DD Veya YZV 201E MIN. DD )"
   },
@@ -346,7 +346,7 @@
   },
   {
    "code": "BHB 203E",
-   "name": "Hesaplamalı Bilim için Nesne Yönelimli Programlama",
+   "name": "Object Oriented Programming for Computational Science",
    "branch": "BHB",
    "requirement": "( EEF 110E MIN. DD Veya EEF 110 MIN. DD ) Veya ( MAT 115 MIN. DD Veya MAT 115E MIN. DD ) Veya YZV 104E MIN. DD Veya ( BLG 102 MIN. DD Veya BLG 102E MIN. DD ) Veya ( BIL 100 MIN. DD Veya BIL 100E MIN. DD ) Veya ( BIL 113 MIN. DD Veya BIL 113E MIN. DD ) Veya ( VBA 113E MIN. DD Veya VBA 113 MIN. DD )"
   },
@@ -1829,7 +1829,7 @@
   },
   {
    "code": "BUS 101E",
-   "name": "Örgütsel Davranış",
+   "name": "Organizational Behavior",
    "branch": "BUS",
    "requirement": "( BUS 103 MIN. DD Veya BUS 103E MIN. DD Veya BUS 103 MIN. DD )"
   },
@@ -1840,7 +1840,7 @@
   },
   {
    "code": "BUS 103E",
-   "name": "",
+   "name": "Principles of Management",
    "branch": "BUS"
   },
   {
@@ -1850,7 +1850,7 @@
   },
   {
    "code": "BUS 110E",
-   "name": "",
+   "name": "Principles of Microeconomics",
    "branch": "BUS"
   },
   {
@@ -1870,7 +1870,7 @@
   },
   {
    "code": "BUS 201E",
-   "name": "",
+   "name": "Financial Accounting",
    "branch": "BUS"
   },
   {
@@ -6835,7 +6835,7 @@
   },
   {
    "code": "EEE 205E",
-   "name": "",
+   "name": "Introduction to Logic Design",
    "branch": "EEE"
   },
   {
@@ -10218,7 +10218,7 @@
   },
   {
    "code": "END 451E",
-   "name": "Lojistik Yönetimi",
+   "name": "Logistics Management",
    "branch": "END",
    "requirement": "( END 331 MIN. DD Veya END 331E MIN. DD ) Ve ( END 252 MIN. DD Veya END 252E MIN. DD )"
   },
@@ -10723,7 +10723,7 @@
   },
   {
    "code": "FIZ 101EL",
-   "name": "",
+   "name": "Physics I Laboratory",
    "branch": "FIZ"
   },
   {
@@ -10743,7 +10743,7 @@
   },
   {
    "code": "FIZ 102EL",
-   "name": "Physics II Laboratory",
+   "name": "",
    "branch": "FIZ"
   },
   {
@@ -11171,7 +11171,7 @@
   },
   {
    "code": "FIZ 315E",
-   "name": "Kuantum Mekaniği I",
+   "name": "Quantum Mechanics I",
    "branch": "FIZ",
    "requirement": "( ( FIZ 252 MIN. DD Veya FIZ 252E MIN. DD ) Veya ( FIZ 215E MIN. DD Veya FIZ 215 MIN. DD ) Veya ( FIZ 313 MIN. DD Veya FIZ 313E MIN. DD ) Veya ( FIZ 201 MIN. DD Veya FIZ 201E MIN. DD ) ) Ve ( ( MAT 281 MIN. DD Veya MAT 281E MIN. DD ) Veya ( MAT 261 MIN. DD Veya MAT 261E MIN. DD ) Veya ( FIZ 210 MIN. DD Veya FIZ 210E MIN. DD ) Veya ( MAT 210 MIN. DD Veya MAT 210E MIN. DD ) Veya ( MAT 141 MIN. DD Veya MAT 141E MIN. DD ) Veya ( MAT 143 MIN. DD Veya MAT 143E MIN. DD ) )"
   },
@@ -11799,7 +11799,7 @@
   },
   {
    "code": "FZT 203E",
-   "name": "Fizikte Gruplar Teorisi",
+   "name": "Theory of Groups in Physics",
    "branch": "FZT",
    "requirement": "( MAT 102 MIN. DD Veya MAT 102E MIN. DD ) Veya ( MAT 104 MIN. DD Veya MAT 104E MIN. DD ) Veya ( MAT 186E MIN. DD Veya MAT 186 MIN. DD ) Veya ( MAT 188 MIN. DD Veya MAT 188E MIN. DD )"
   },
@@ -13599,7 +13599,7 @@
   },
   {
    "code": "GMI 341",
-   "name": "Otomatik Kontrol Sistemleri",
+   "name": "Automatic Control Systems",
    "branch": "GMI",
    "requirement": "( FIZ 102 MIN. DD Veya FIZ 102E MIN. DD )"
   },
@@ -15209,7 +15209,7 @@
   },
   {
    "code": "IND 431E",
-   "name": "",
+   "name": "Management and Organization",
    "branch": "IND"
   },
   {
@@ -18251,7 +18251,7 @@
   },
   {
    "code": "KIM 101EL",
-   "name": "",
+   "name": "General Chemistry I Lab",
    "branch": "KIM"
   },
   {
@@ -19834,7 +19834,7 @@
   },
   {
    "code": "KON 303E",
-   "name": "",
+   "name": "Measurement and Instrumentation",
    "branch": "KON"
   },
   {
@@ -19950,7 +19950,7 @@
   },
   {
    "code": "KON 319E",
-   "name": "Kontrol Sistemlerinin Analizi",
+   "name": "Analysis of Control Systems",
    "branch": "KON",
    "requirement": "( EEF 206 MIN. DD Veya EEF 206E MIN. DD ) Ve ( ( KON 214 MIN. DD Veya KON 214E MIN. DD ) Veya ( KON 301E MIN. DD Veya KON 301 MIN. DD ) )"
   },
@@ -19998,7 +19998,7 @@
   },
   {
    "code": "KON 341E",
-   "name": "Algoritmik Makinalar ve Mikrokontrolörler",
+   "name": "Algorithmic Machines and Microcontrollers",
    "branch": "KON",
    "requirement": "( EEF 205 MIN. DD Veya EEF 205E MIN. DD )"
   },
@@ -20226,7 +20226,7 @@
   },
   {
    "code": "KON 441E",
-   "name": "Doğrusal Olmayan Sistemler için Kontrol Teknikleri",
+   "name": "Control Techniques for Nonlinear Systems",
    "branch": "KON",
    "requirement": "( KON 436E MIN. DD Veya KON 436 MIN. DD )"
   },
@@ -20250,7 +20250,7 @@
   },
   {
    "code": "KON 445E",
-   "name": "Kontrol ve Görselleştirme için Entegre Yazılım Çözümleri",
+   "name": "Integrated Software Solutions for Control and Visualization",
    "branch": "KON",
    "requirement": "( EEF 110E MIN. DD Veya EEF 110 MIN. DD ) Ve ( KON 313 MIN. DD Veya KON 313E MIN. DD )"
   },
@@ -20262,7 +20262,7 @@
   },
   {
    "code": "KON 447E",
-   "name": "Veri Beslemeli Kontrol",
+   "name": "Data Driven Control",
    "branch": "KON",
    "requirement": "( ( EEF 281 MIN. DD Veya EEF 281E MIN. DD ) Ve ( EEF 206 MIN. DD Veya EEF 206E MIN. DD ) ) Veya ( KON 313 MIN. DD Veya KON 313E MIN. DD )"
   },
@@ -22625,7 +22625,7 @@
   },
   {
    "code": "MAT 103",
-   "name": "",
+   "name": "Matematik I",
    "branch": "MAT"
   },
   {
@@ -26675,7 +26675,7 @@
   },
   {
    "code": "MTT 102E",
-   "name": "İleri Lineer Cebir",
+   "name": "Advanced Linear Algebra",
    "branch": "MTT",
    "requirement": "( MAT 143 MIN. DD Veya MAT 143E MIN. DD ) Veya ( MAT 141 MIN. DD Veya MAT 141E MIN. DD ) Veya MAT 121 MIN. DD Veya BBF 102E MIN. DD Veya ( EEF 281 MIN. DD Veya EEF 281E MIN. DD ) Veya ( MAT 261 MIN. DD Veya MAT 261E MIN. DD ) Veya MTH 281 MIN. DD Veya ( MAK 114 MIN. DD Veya MAK 114E MIN. DD )"
   },
@@ -26687,7 +26687,7 @@
   },
   {
    "code": "MTT 201E",
-   "name": "Graf Teorisi",
+   "name": "Graph Theory",
    "branch": "MTT",
    "requirement": "( MAT 148 MIN. DD Veya MAT 148E MIN. DD )"
   },
@@ -27381,7 +27381,7 @@
   },
   {
    "code": "MYZ 301E",
-   "name": "Mühendislik için Yapay Zekaya Giriş",
+   "name": "Introduction to Artificial Intelligence for Engineering",
    "branch": "MYZ",
    "requirement": "( ( BIL 100 MIN. DD Veya BIL 100E MIN. DD ) Veya ( BIL 110 MIN. DD Veya BIL 110E MIN. DD ) ) Ve ( ( MAT 210 MIN. DD Veya MAT 210E MIN. DD ) Veya ( MET 220 MIN. DD Veya MET 220E MIN. DD ) Veya ( GID 210E MIN. DD Veya GID 210 MIN. DD ) Veya ( KMM 210E MIN. DD Veya KMM 210 MIN. DD ) )"
   },
@@ -28313,7 +28313,7 @@
   },
   {
    "code": "ROS 303E",
-   "name": "Robot Kinematik ve Dinamiği",
+   "name": "Robot Kinematics and Dynamics",
    "branch": "ROS",
    "requirement": "( ROS 201E MIN. DD Veya ROS 201 MIN. DD )"
   },
@@ -28384,7 +28384,7 @@
   },
   {
    "code": "SAO 101E",
-   "name": "",
+   "name": "Fundamentals of Programming I",
    "branch": "SAO"
   },
   {
@@ -28395,13 +28395,13 @@
   },
   {
    "code": "SAO 102E",
-   "name": "Temel Programlama II",
+   "name": "Fundamentals of Programming II",
    "branch": "SAO",
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
   },
   {
    "code": "SAO 103",
-   "name": "",
+   "name": "Bilişim ve Ağ Teknolojisinin Temelleri",
    "branch": "SAO"
   },
   {
@@ -28417,13 +28417,13 @@
   },
   {
    "code": "SAO 104E",
-   "name": "Veri Tabanı Uygulamaları ve Güvenliği",
+   "name": "Database Applications and Security",
    "branch": "SAO",
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD ) Ve ( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
   },
   {
    "code": "SAO 105",
-   "name": "",
+   "name": "İşletim Sistemleri & Güvenliği",
    "branch": "SAO"
   },
   {
@@ -28450,7 +28450,7 @@
   },
   {
    "code": "SAO 107E",
-   "name": "",
+   "name": "Mathematics and Logic",
    "branch": "SAO"
   },
   {
@@ -28472,7 +28472,7 @@
   },
   {
    "code": "SAO 109E",
-   "name": "",
+   "name": "Introduction to Cybersecurity",
    "branch": "SAO"
   },
   {
@@ -28507,7 +28507,7 @@
   },
   {
    "code": "SAO 202E",
-   "name": "Siber Olay Yönetimi",
+   "name": "Cyber Incident Management",
    "branch": "SAO",
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD ) Ve ( SAO 103E MIN. DD Veya SAO 103 MIN. DD )"
   },
@@ -28519,7 +28519,7 @@
   },
   {
    "code": "SAO 203E",
-   "name": "Mobil Teknolojiler ve Güvenlik",
+   "name": "Mobile Technologies and Security",
    "branch": "SAO",
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
   },
@@ -28531,7 +28531,7 @@
   },
   {
    "code": "SAO 205E",
-   "name": "Siber Güvenlik Yönetişimi",
+   "name": "Cyber Security Governance",
    "branch": "SAO",
    "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
   },
@@ -28543,7 +28543,7 @@
   },
   {
    "code": "SAO 207E",
-   "name": "Güvenli Yazılım Geliştirme",
+   "name": "Secure Software Development",
    "branch": "SAO",
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
   },
@@ -28663,7 +28663,7 @@
   },
   {
    "code": "SAV 302E",
-   "name": "Ayrık Matematik",
+   "name": "Discrete Mathematics",
    "branch": "SAV",
    "requirement": "( MAT 102 MIN. DD Veya MAT 102E MIN. DD ) Veya ( MAT 104 MIN. DD Veya MAT 104E MIN. DD ) Veya ( MAT 112 MIN. DD Veya MAT 112E MIN. DD ) Veya ( MAT 186E MIN. DD Veya MAT 186 MIN. DD ) Veya ( MAT 188 MIN. DD Veya MAT 188E MIN. DD ) Veya ( MAT 213 MIN. DD Veya MAT 213E MIN. DD ) Veya ( MAT 287 MIN. DD Veya MAT 287E MIN. DD )"
   },
@@ -28943,7 +28943,7 @@
   },
   {
    "code": "SEC 211E",
-   "name": "",
+   "name": "Essentials of Cyber Security",
    "branch": "SEC"
   },
   {
@@ -28954,13 +28954,13 @@
   },
   {
    "code": "SEC 311E",
-   "name": "Bilgisayar Güvenliği",
+   "name": "Computer Security",
    "branch": "SEC",
    "requirement": "SEC 211E MIN. DD Veya ( BLG 336 MIN. DD Veya BLG 336E MIN. DD ) Veya ( BLG 372 MIN. DD Veya BLG 372E MIN. DD )"
   },
   {
    "code": "SEC 312E",
-   "name": "Uygulamalı Kriptografi",
+   "name": "Applied Cryptography",
    "branch": "SEC",
    "requirement": "SEC 221E MIN. DD"
   },
@@ -31745,7 +31745,7 @@
   },
   {
    "code": "VBA 210E",
-   "name": "",
+   "name": "Linear Algebra and Applications",
    "branch": "VBA"
   },
   {
@@ -31756,7 +31756,7 @@
   },
   {
    "code": "VBA 215E",
-   "name": "Veri Tabanı Yönetim Sistemleri",
+   "name": "Database Management Systems",
    "branch": "VBA",
    "requirement": "( VBA 113E MIN. DD Veya VBA 113 MIN. DD ) Veya ( BIL 100 MIN. DD Veya BIL 100E MIN. DD )"
   },
@@ -31810,19 +31810,19 @@
   },
   {
    "code": "VBA 313E",
-   "name": "Derin Öğrenme",
+   "name": "Deep Learning",
    "branch": "VBA",
    "requirement": "VBA 312E MIN. DD Veya ( END 305 MIN. DD Veya END 305E MIN. DD )"
   },
   {
    "code": "VBA 315E",
-   "name": "Makine Öğrenmesi",
+   "name": "Machine Learning",
    "branch": "VBA",
    "requirement": "VBA 312E MIN. DD Veya ( END 305 MIN. DD Veya END 305E MIN. DD )"
   },
   {
    "code": "VBA 317E",
-   "name": "Sinyal Ve Görüntü Analitiği",
+   "name": "Signal and Image Analytics",
    "branch": "VBA",
    "requirement": "( MAT 104 MIN. DD Veya MAT 104E MIN. DD ) Ve ( ( VBA 210E MIN. DD Veya VBA 210 MIN. DD ) Veya ( END 210E MIN. DD Veya END 210 MIN. DD ) )"
   },
@@ -32139,7 +32139,7 @@
   },
   {
    "code": "YZV 449E",
-   "name": "Derin Üretici Yapay Zeka",
+   "name": "Deep Generative AI",
    "branch": "YZV",
    "requirement": "( YZV 302 MIN. DD Veya YZV 302E MIN. DD ) Veya YZV 303E MIN. DD"
   },

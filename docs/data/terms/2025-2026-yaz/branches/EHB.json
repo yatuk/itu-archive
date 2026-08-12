@@ -5,7 +5,7 @@
   "branch": "EHB",
   "level": "LS",
   "name": "Analog Electronic Circuits",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Mustafa Berke Yelten",
   "buildings": [
    "EEB",
@@ -28,15 +28,13 @@
    "5104"
   ],
   "capacity": 80,
-  "enrolled": 54,
-  "reserved": "EEE_LS/5/2 | Diğer/75/52",
+  "enrolled": 58,
+  "reserved": "",
   "programs": [
-   "EEE_LS",
-   "EHB_LS",
-   "EHBE_LS"
+   "EEE_LS, EHB_LS, EHBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30263",
@@ -44,7 +42,7 @@
   "branch": "EHB",
   "level": "LS",
   "name": "Introduction to Electronics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Muhammet Tahir Güneşer",
   "buildings": [
    "EEB",
@@ -63,22 +61,12 @@
    "5102"
   ],
   "capacity": 80,
-  "enrolled": 72,
-  "reserved": "-",
+  "enrolled": 78,
+  "reserved": "",
   "programs": [
-   "BLG_LS",
-   "BLGE_LS",
-   "CEN_LS",
-   "EHB_LS",
-   "EHBE_LS",
-   "ELK_LS",
-   "ELKE_LS",
-   "KOM_LS",
-   "KOME_LS",
-   "ROS_LS",
-   "ROSE_LS"
+   "BLG_LS, BLGE_LS, CEN_LS, EHB_LS, EHBE_LS, ELK_LS, ELKE_LS, KOM_LS, KOME_LS, ROS_LS, ROSE_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

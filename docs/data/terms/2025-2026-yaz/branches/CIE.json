@@ -1,11 +1,44 @@
 [
  {
+  "crn": "30383",
+  "code": "CIE 344",
+  "branch": "CIE",
+  "level": "LS",
+  "name": "Hydraulics and Hydrology",
+  "method": "",
+  "instructor": "Mehmet Özger , / Cihan Bayındır",
+  "buildings": [
+   "INB",
+   "INB",
+   "INB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29",
+   "13:30/17:29",
+   "08:30/12:29"
+  ],
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "",
+  "programs": [
+   "SIN_LS"
+  ],
+  "prereq": "",
+  "classReq": ""
+ },
+ {
   "crn": "30394",
   "code": "CIE 326",
   "branch": "CIE",
   "level": "LS",
   "name": "Reinforced Concrete Design",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Medine İspir Arslan",
   "buildings": [
    "INB",
@@ -25,19 +58,14 @@
    "09:00/11:59",
    "14:00/16:59"
   ],
-  "rooms": [
-   "B205",
-   "B205",
-   "B205",
-   "B205"
-  ],
+  "rooms": [],
   "capacity": 25,
-  "enrolled": 13,
-  "reserved": "-",
+  "enrolled": 11,
+  "reserved": "",
   "programs": [
    "SIN_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

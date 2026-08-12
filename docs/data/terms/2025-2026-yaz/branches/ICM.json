@@ -5,7 +5,7 @@
   "branch": "ICM",
   "level": "LS",
   "name": "Interior Arch.Desgn Studio III",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ethem Gürer",
   "buildings": [
    "MMB",
@@ -28,22 +28,15 @@
    "08:30/12:29",
    "13:30/16:29"
   ],
-  "rooms": [
-   "--",
-   "--",
-   "--",
-   "--",
-   "--"
-  ],
+  "rooms": [],
   "capacity": 7,
   "enrolled": 5,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "IAD_LS",
-   "ICM_LS"
+   "IAD_LS, ICM_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30257",
@@ -51,7 +44,7 @@
   "branch": "ICM",
   "level": "LS",
   "name": "Interior Arch.Desgn Studio IV",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ethem Gürer",
   "buildings": [
    "MMB",
@@ -74,21 +67,14 @@
    "08:30/12:29",
    "14:30/17:29"
   ],
-  "rooms": [
-   "--",
-   "--",
-   "--",
-   "--",
-   "--"
-  ],
-  "capacity": 10,
-  "enrolled": 11,
-  "reserved": "-",
+  "rooms": [],
+  "capacity": 7,
+  "enrolled": 7,
+  "reserved": "",
   "programs": [
-   "IAD_LS",
-   "ICM_LS"
+   "IAD_LS, ICM_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

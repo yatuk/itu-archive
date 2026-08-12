@@ -1,0 +1,1006 @@
+[
+ {
+  "crn": "11354",
+  "code": "MTR 492",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eren Özek",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "11355",
+  "code": "MTR 431",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Dikte Deşifre I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cem Ekmen",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS",
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11358",
+  "code": "MTR 101",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eren Özek",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11361",
+  "code": "MTR 103",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşecan Olgun",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29",
+   "15:30/17:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11363",
+  "code": "MTR 103",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ufuk Biçak",
+  "buildings": [
+   "TMB",
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "15:30/17:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11379",
+  "code": "MTR 317",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Metin Çözümlemeleri I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kemal Hasan Karnal",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11381",
+  "code": "MTR 321",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzikte Metin Çözümlemeleri I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kemal Hasan Karnal",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11382",
+  "code": "MTR 105",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Ritim Uygulama I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erkan Kanat",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11383",
+  "code": "MTR 441",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Dikte Deşifre I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erhan Özdemir",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11384",
+  "code": "MTR 443",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Eser Çözümleme I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Neşe Yeşim Altınel Çoban",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11385",
+  "code": "MTR 205",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorileri Tarihi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülay Karamahmutoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11386",
+  "code": "MTR 207",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Teori Uygulama I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülay Karamahmutoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11387",
+  "code": "MTR 305",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorileri Tarihi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülay Karamahmutoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11388",
+  "code": "MTR 307",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Teori Uygulama III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülay Karamahmutoğlu",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11389",
+  "code": "MTR 301",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "İleri Makam Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Ahıs Yunusoğlu",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11390",
+  "code": "MTR 301",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "İleri Makam Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nurullah Kanık",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11391",
+  "code": "MTR 303",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "İleri Müzik Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşecan Olgun",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11392",
+  "code": "MTR 401",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "İleri Makam Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nurullah Kanık",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11393",
+  "code": "MTR 403",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "İleri Müzik Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ufuk Biçak",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11394",
+  "code": "MTR 309",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Ses Sistemleri I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ufuk Biçak",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11395",
+  "code": "MTR 405",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Dikte ve Deşifre I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Metin Eke",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11396",
+  "code": "MTR 407",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Eser Çözümleme I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Neşe Yeşim Altınel Çoban",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11397",
+  "code": "MTR 433",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Eser Çözümleme I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Neşe Yeşim Altınel Çoban",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11398",
+  "code": "MTR 121",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali İhsan Alemli",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11399",
+  "code": "MTR 123",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Orkun Zafer Özgelen",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "16:00/17:59"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11400",
+  "code": "MTR 223",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Orkun Zafer Özgelen",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11401",
+  "code": "MTR 221",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Serhat Turunç",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29",
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11403",
+  "code": "MTR 141",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şirin Karadeniz",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "CAB_LS",
+   "CEB_LS",
+   "KMP_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11404",
+  "code": "MTR 143",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Özkan",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "CAB_LS",
+   "CEB_LS",
+   "KMP_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11405",
+  "code": "MTR 243",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Özkan",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "CAB_LS",
+   "CEB_LS",
+   "KMP_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11406",
+  "code": "MTR 241",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali İhsan Alemli",
+  "buildings": [
+   "TMB",
+   "TMB"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "CAB_LS",
+   "CEB_LS",
+   "KMP_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

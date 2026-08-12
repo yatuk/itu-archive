@@ -5,7 +5,7 @@
   "branch": "JEO",
   "level": "LS",
   "name": "Genel Jeoloji",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Kürşad Kadir Eriş",
   "buildings": [
    "MDB"
@@ -16,18 +16,15 @@
   "times": [
    "08:30/15:29"
   ],
-  "rooms": [
-   "B204"
-  ],
+  "rooms": [],
   "capacity": 35,
   "enrolled": 9,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "JEO_LS",
-   "MAD_LS"
+   "JEO_LS, MAD_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30301",
@@ -35,7 +32,7 @@
   "branch": "JEO",
   "level": "LS",
   "name": "Sedimenter Kayaç Petrografisi",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Kürşad Kadir Eriş",
   "buildings": [
    "MDB",
@@ -49,18 +46,15 @@
    "08:30/11:29",
    "13:30/17:29"
   ],
-  "rooms": [
-   "B204",
-   "B204"
-  ],
+  "rooms": [],
   "capacity": 25,
-  "enrolled": 7,
-  "reserved": "-",
+  "enrolled": 9,
+  "reserved": "",
   "programs": [
    "JEO_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30467",
@@ -68,7 +62,7 @@
   "branch": "JEO",
   "level": "LS",
   "name": "Türkiye Jeolojisi",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Kürşad Kadir Eriş",
   "buildings": [
    "MDB",
@@ -86,15 +80,14 @@
    "A201",
    "A201"
   ],
-  "capacity": 35,
-  "enrolled": 33,
-  "reserved": "-",
+  "capacity": 30,
+  "enrolled": 28,
+  "reserved": "",
   "programs": [
-   "JEO_LS",
-   "JEO_YD"
+   "JEO_LS, JEO_YD"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30468",
@@ -102,7 +95,7 @@
   "branch": "JEO",
   "level": "LS",
   "name": "Sedimentology",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Emin Çiftçi",
   "buildings": [
    "MDB"
@@ -117,14 +110,12 @@
    "A202"
   ],
   "capacity": 30,
-  "enrolled": 26,
-  "reserved": "-",
+  "enrolled": 27,
+  "reserved": "",
   "programs": [
-   "JEO_LS",
-   "JEO_YD",
-   "JEOE_LS"
+   "JEO_LS, JEO_YD, JEOE_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

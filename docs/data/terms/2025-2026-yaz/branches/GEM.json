@@ -5,7 +5,7 @@
   "branch": "GEM",
   "level": "LS",
   "name": "Dynamics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Mustafa Erden Yıldızdağ",
   "buildings": [
    "MEDC",
@@ -24,13 +24,13 @@
    "ZA1"
   ],
   "capacity": 30,
-  "enrolled": 21,
-  "reserved": "-",
+  "enrolled": 17,
+  "reserved": "",
   "programs": [
    "GEM_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30329",
@@ -38,7 +38,7 @@
   "branch": "GEM",
   "level": "LS",
   "name": "Mukavemet I",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Mustafa Erden Yıldızdağ",
   "buildings": [
    "MEDC",
@@ -58,12 +58,12 @@
   ],
   "capacity": 30,
   "enrolled": 23,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
    "GEM_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30403",
@@ -71,8 +71,8 @@
   "branch": "GEM",
   "level": "LS",
   "name": "Gemi Yapı Elemanları",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Gökhan Tansel Tayyar , Erdem Üçer",
+  "method": "",
+  "instructor": "Gökhan Tansel Tayyar , / Erdem Üçer",
   "buildings": [
    "MEDC",
    "MEDC",
@@ -99,12 +99,12 @@
   ],
   "capacity": 100,
   "enrolled": 31,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
    "GEM_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30443",
@@ -112,7 +112,7 @@
   "branch": "GEM",
   "level": "LS",
   "name": "Reliability Of Ship Structures",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ahmet Ergin",
   "buildings": [
    "MEDC",
@@ -131,14 +131,13 @@
    "2D16"
   ],
   "capacity": 30,
-  "enrolled": 5,
-  "reserved": "-",
+  "enrolled": 3,
+  "reserved": "",
   "programs": [
-   "GEM_LS",
-   "GEME_LS"
+   "GEM_LS, GEME_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30469",
@@ -146,7 +145,7 @@
   "branch": "GEM",
   "level": "LS",
   "name": "Bireysel Bitirme Projesi",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Fuzuli Ağrı Akçay",
   "buildings": [],
   "days": [],
@@ -156,13 +155,12 @@
   "rooms": [],
   "capacity": 1,
   "enrolled": 1,
-  "reserved": "-",
+  "reserved": "",
   "programs": [
-   "GEM_LS",
-   "GEME_LS"
+   "GEM_LS, GEME_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30472",
@@ -170,7 +168,7 @@
   "branch": "GEM",
   "level": "LS",
   "name": "Ship Hydrodynamics(Propulsion)",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Cihad Delen",
   "buildings": [
    "MEDC",
@@ -189,13 +187,12 @@
    "1D3"
   ],
   "capacity": 30,
-  "enrolled": 9,
-  "reserved": "-",
+  "enrolled": 8,
+  "reserved": "",
   "programs": [
-   "GEM_LS",
-   "GEME_LS"
+   "GEM_LS, GEME_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

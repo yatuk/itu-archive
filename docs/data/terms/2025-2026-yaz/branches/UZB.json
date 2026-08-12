@@ -5,7 +5,7 @@
   "branch": "UZB",
   "level": "LS",
   "name": "Heat Transfer",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Cemil Kurtcebe",
   "buildings": [
    "MEDC",
@@ -23,16 +23,14 @@
    "ZA3",
    "ZA3"
   ],
-  "capacity": 85,
-  "enrolled": 81,
-  "reserved": "-",
+  "capacity": 70,
+  "enrolled": 70,
+  "reserved": "",
   "programs": [
-   "UCK_LS",
-   "UZB_LS",
-   "UZBE_LS"
+   "UCK_LS, UZB_LS, UZBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30282",
@@ -40,7 +38,7 @@
   "branch": "UZB",
   "level": "LS",
   "name": "Orbital Mechanics",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Erdem Onur Özyurt",
   "buildings": [
    "MEDC",
@@ -59,15 +57,13 @@
    "ZA4"
   ],
   "capacity": 50,
-  "enrolled": 26,
-  "reserved": "-",
+  "enrolled": 24,
+  "reserved": "",
   "programs": [
-   "UZB_LS",
-   "UZB_YD",
-   "UZBE_LS"
+   "UZB_LS, UZB_YD, UZBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30283",
@@ -75,7 +71,7 @@
   "branch": "UZB",
   "level": "LS",
   "name": "Attitude Determination & Ctrl.",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Erdem Onur Özyurt",
   "buildings": [
    "MEDC",
@@ -94,14 +90,13 @@
    "ZA4"
   ],
   "capacity": 50,
-  "enrolled": 9,
-  "reserved": "-",
+  "enrolled": 15,
+  "reserved": "",
   "programs": [
-   "UZB_LS",
-   "UZBE_LS"
+   "UZB_LS, UZBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30344",
@@ -109,8 +104,8 @@
   "branch": "UZB",
   "level": "LS",
   "name": "Aerospace Structures",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Seher Eken , Aytaç Arıkoğlu",
+  "method": "",
+  "instructor": "Seher Eken , / Aytaç Arıkoğlu",
   "buildings": [
    "MEDC",
    "MEDC",
@@ -132,15 +127,12 @@
    "1D10"
   ],
   "capacity": 50,
-  "enrolled": 28,
-  "reserved": "-",
+  "enrolled": 32,
+  "reserved": "",
   "programs": [
-   "UCK_LS",
-   "UCK_YD",
-   "UZB_LS",
-   "UZBE_LS"
+   "UCK_LS, UCK_YD, UZB_LS, UZBE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

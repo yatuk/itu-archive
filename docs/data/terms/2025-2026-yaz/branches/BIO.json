@@ -5,7 +5,7 @@
   "branch": "BIO",
   "level": "LS",
   "name": "Fundamentals of Biology",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ece Polat",
   "buildings": [
    "FEB",
@@ -24,42 +24,13 @@
    "D101"
   ],
   "capacity": 55,
-  "enrolled": 62,
-  "reserved": "-",
+  "enrolled": 37,
+  "reserved": "",
   "programs": [
-   "CEVE_LS",
-   "CHZ_LS",
-   "CHZE_LS",
-   "EEE_LS",
-   "EHB_LS",
-   "EHBE_LS",
-   "EHS_LS",
-   "ELE_LS",
-   "ELK_LS",
-   "ELKE_LS",
-   "FIZ_LS",
-   "FIZE_LS",
-   "GID_LS",
-   "INS_LS",
-   "INSE_LS",
-   "ISL_LS",
-   "ISLE_LS",
-   "JEO_LS",
-   "JEOE_LS",
-   "KIM_LS",
-   "KIME_LS",
-   "KMM_LS",
-   "KOM_LS",
-   "KOME_LS",
-   "MAD_LS",
-   "MADE_LS",
-   "MET_LS",
-   "METE_LS",
-   "PET_LS",
-   "PETE_LS"
+   "CEVE_LS, CHZ_LS, CHZE_LS, EEE_LS, EHB_LS, EHBE_LS, EHS_LS, ELE_LS, ELH_LS, ELK_LS, ELKE_LS, FIZ_LS, FIZE_LS, GID_LS, INS_LS, INSE_LS, ISL_LS, ISLE_LS, JEO_LS, JEOE_LS, KIM_LS, KIME_LS, KMM_LS, KOM_LS, KOME_LS, MAD_LS, MADE_LS, MET_LS, METE_LS, PET_LS, PETE_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30216",
@@ -67,7 +38,7 @@
   "branch": "BIO",
   "level": "LS",
   "name": "General Biology I",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Ece Polat",
   "buildings": [
    "FEB",
@@ -86,14 +57,12 @@
    "D101"
   ],
   "capacity": 55,
-  "enrolled": 13,
-  "reserved": "-",
+  "enrolled": 12,
+  "reserved": "",
   "programs": [
-   "BIO_LS",
-   "BIO_YD",
-   "BIOE_LS"
+   "BIO_LS, BIO_YD, BIOE_LS"
   ],
-  "prereq": "-",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

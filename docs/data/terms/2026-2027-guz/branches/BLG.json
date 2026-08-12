@@ -1,0 +1,1834 @@
+[
+ {
+  "crn": "12337",
+  "code": "BLG 505",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Doğal Dil İşleme",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gülşen Eryiğit",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/5/0 | BLG_BG_YL/12/0 | Diğer/3/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12338",
+  "code": "BLG 506E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Computer Vision",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cihan Topal",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/5/0 | BLG_BG_YL/15/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12339",
+  "code": "BLG 596",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Alkan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 55,
+  "enrolled": 0,
+  "reserved": "BLG_BG_YL/50/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12341",
+  "code": "BLG 627E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Guided Research",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlkay Öksüz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/35/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_DR"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12342",
+  "code": "BLG 507E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Distributed Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Turgay Altılar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12343",
+  "code": "BLG 558E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Security and Privacy",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şerif Bahtiyar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "BLG_BG_YL/12/0 | BLG_BG_DR/3/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12345",
+  "code": "BLG 622E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Robot Intelligence",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sanem Sarıel Uzer",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "BLG_BG_YL/12/0 | BLG_BG_DR/3/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12346",
+  "code": "BLG 609E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Advanced Topics in Comp. Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hazım Kemal Ekenel",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12347",
+  "code": "BLG 607",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Veri Madenciliği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şule Öğüdücü",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12348",
+  "code": "BLG 638E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Deep Reinforcement Learning",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Keskinöz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "BLG_BG_YL/12/0 | BLG_BG_DR/5/0 | Diğer/3/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12349",
+  "code": "BLG 521E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Artificial Intelligence",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yavuz Köroğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "BLG_BG_YL/23/0 | BLG_BG_DR/2/0 | Diğer/0/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12350",
+  "code": "BLG 561E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Deep Learning",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Faik Boray Tek",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/2/0 | BLG_BG_YL/23/0 | Diğer/0/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12351",
+  "code": "BLG 510E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Security in Computer Networks",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Tahir Sandıkkaya",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/12/0 | BLG_BG_YL/5/0 | Diğer/3/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12353",
+  "code": "BLG 625",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Yazılım Tasarımı Kalitesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Feza Buzluca",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12354",
+  "code": "BLG 603E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Enhanced Processor Architec.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşe Yılmazer Metin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12355",
+  "code": "BLG 557E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Theory of Computation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tolga Ovatman",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/3/0 | BLG_BG_YL/17/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12356",
+  "code": "BLG 553E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Special Topics in Compu.Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Abdül Halim Zaim",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12357",
+  "code": "BLG 514E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Computer Networ. Basic Protoc.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sanem Kabadayı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12358",
+  "code": "BLG 696",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşe Tosun Kühn",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 45,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/40/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_DR"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12359",
+  "code": "BLG 549E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Graph Theory and Algorithms",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tuğçe Bilen",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "BLG_BG_YL/20/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12360",
+  "code": "BLG 527E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Machine Learning",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Yaslan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/2/0 | BLG_BG_YL/23/0 | Diğer/0/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12362",
+  "code": "BLG 538E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Data Compression",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Uluğ Bayazıt",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12363",
+  "code": "BLG 643E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Neuromorphic Computing",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Berk Üstündağ",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12364",
+  "code": "BLG 545E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Discrete Optimization",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Berna Kiraz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "BLG_BG_YL/20/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12366",
+  "code": "BLG 553E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Special Topics in Compu.Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Çakmak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12367",
+  "code": "BLG 551E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Human Computer Interfaces",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gökhan İnce",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12368",
+  "code": "BLG 501E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Discrete Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gökhan Seçinti",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "BLG_BG_DR/2/0 | BLG_BG_YL/18/0 | Diğer/0/0",
+  "programs": [
+   "BLG_BG_DR",
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12369",
+  "code": "BLG 601E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Pattern Recognition",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Behçet Uğur Töreyin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12370",
+  "code": "BLG 513E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Image Processing",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlkay Öksüz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12371",
+  "code": "BLG 563E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Guided Research",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Berk Üstündağ",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "BLG_BG_YL/35/0 | Diğer/5/0",
+  "programs": [
+   "BLG_BG_YL"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12372",
+  "code": "BLG DRT",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlkay Öksüz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12373",
+  "code": "BLG YET",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Yeterlik Aşaması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlkay Öksüz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12374",
+  "code": "BLG YLT",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlkay Öksüz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12462",
+  "code": "BLG 113E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Intr.toComp.Eng.and Ethics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Berk Üstündağ , Gökhan İnce",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 150,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12469",
+  "code": "BLG 223E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Data Structures",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Hüseyin Şahin",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SECE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12472",
+  "code": "BLG 223E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Data Structures",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yavuz Köroğlu",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SECE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12476",
+  "code": "BLG 231E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Digital Circuits",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Feza Buzluca",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "SECE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12477",
+  "code": "BLG 231E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Digital Circuits",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sanem Kabadayı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "SECE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12478",
+  "code": "BLG 231E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Digital Circuits",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa Ersel Kamaşak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "SECE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12486",
+  "code": "BLG 212E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Microprocessor Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşe Yılmazer Metin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12488",
+  "code": "BLG 212E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Microprocessor Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gökhan İnce",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12513",
+  "code": "BLG 351E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Microcomputer Lab.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa Ersel Kamaşak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12548",
+  "code": "BLG 351E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Microcomputer Lab.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Alkan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12550",
+  "code": "BLG 351E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Microcomputer Lab.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Alkan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12552",
+  "code": "BLG 351E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Microcomputer Lab.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Alkan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12554",
+  "code": "BLG 337E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Principles of Computer Comm.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Abdül Halim Zaim",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12566",
+  "code": "BLG 345E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Logic & Computability",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Tahir Sandıkkaya",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12567",
+  "code": "BLG 348E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Introduction to Bioinformatics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Baysan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12568",
+  "code": "BLG 411E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Software Engineering",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşe Tosun Kühn",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "YZVE_LS/10/0 | Diğer/70/0",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "YZVE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12571",
+  "code": "BLG 411E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Software Engineering",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tolga Ovatman",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "YZVE_LS/10/0 | Diğer/70/0",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "YZVE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12573",
+  "code": "BLG 465E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Real-Time Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Turgay Altılar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12575",
+  "code": "BLG 467E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Computer Vision",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hazım Kemal Ekenel",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12576",
+  "code": "BLG 472E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Computer Security",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şerif Bahtiyar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12578",
+  "code": "BLG 368E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Operations Research",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Alkan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "EHB_LS",
+   "ELE_LS",
+   "KOM_LS",
+   "TEL_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12581",
+  "code": "BLG 448E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Project Management in Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Sağlam",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "KOM_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "YZVE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12583",
+  "code": "BLG 422E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Computer Networks",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gökhan Seçinti",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "YZVE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12586",
+  "code": "BLG 4901",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Bilgisayar Müh. Tasarımı I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Hüseyin Şahin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12587",
+  "code": "BLG 4901E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Computer Engineering Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Hüseyin Şahin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12588",
+  "code": "BLG 4902",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Bilgisayar Mühen. Tasarımı II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Hüseyin Şahin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12589",
+  "code": "BLG 4902E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Computer Engineering Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Hüseyin Şahin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12590",
+  "code": "BLG 492",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Bitirme Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Hüseyin Şahin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12591",
+  "code": "BLG 492E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Graduation Project",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "14144",
+  "code": "BLG 463E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Innov. Leadership in Comp.Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Alper Almelek",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:00/12:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14186",
+  "code": "BLG 351E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Microcomputer Lab.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLG_LS",
+   "BLGE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

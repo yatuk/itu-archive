@@ -1,0 +1,1173 @@
+[
+ {
+  "crn": "11985",
+  "code": "DEN 101",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Gemi&Deniz Tek.Müh.Giriş&Etik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayhan Menteş",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "3D20"
+  ],
+  "capacity": 90,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11986",
+  "code": "DEN 210E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Engineering Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayhan Menteş",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "ZA2",
+   "ZD1"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11987",
+  "code": "DEN 211",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Mühendislik Tasarımına Giriş",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kadir Sarıöz , Ebru Sarıöz",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "3D19"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11989",
+  "code": "DEN 323E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Wave Mechanics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şafak Nur Ertürk Bozkurtoğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "ZA4"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS",
+   "OSN_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11990",
+  "code": "DEN 325E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Adv. Manufacturing Process",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Necip Ünlü",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "1D3"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11991",
+  "code": "DEN 327E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Safety Mang.&Risk Analy.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayhan Menteş",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "ZA3"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11992",
+  "code": "DEN 340E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Hydrostatics of Marine Vehic.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hakan Akyıldız",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "2D18"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11993",
+  "code": "DEN 340E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Hydrostatics of Marine Vehic.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ömer Kemal Kınacı",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "1D10"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11994",
+  "code": "DEN 341E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Ship Theory",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hakan Akyıldız",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "3D19"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11995",
+  "code": "DEN 431E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Stgth of Shps & Offshr Strctrs",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Serdar Aytekin Köroğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "3D20"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11996",
+  "code": "DEN 343E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Sensor Systems for Marine Applications",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Güneş",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "1D4"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11997",
+  "code": "DEN 345E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Dynamics of Marine Ecosystems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sevil Deniz Yakan Dündar",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "2D13"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS",
+   "OSN_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11998",
+  "code": "DEN 337E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Intr. to Marine Ecolo. Process",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Karacık",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "2D16"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS",
+   "OSN_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "11999",
+  "code": "DEN 339",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Deniz Kirliliği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Oktay Eren Türeyen",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "2D12"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS",
+   "OSN_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12000",
+  "code": "DEN 351",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Sörvey ve Sertifikasyon Süreçlerine Giriş",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erdal Gedikoğlu",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "2D16"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12001",
+  "code": "DEN 353",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Gemi Yönetimi Sistem.Giriş",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cenk Oral Gezici",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "1D5"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12002",
+  "code": "DEN 405E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Coastal Engineering",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bilge Tutak",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "ZD1"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS",
+   "OSN_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12003",
+  "code": "DEN 411",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Hidrodinamik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Bayraktar Bural",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "ZA4"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12004",
+  "code": "DEN 412E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Underwater Acoustics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burcu Erbaş , Sevil Deniz Yakan Dündar , Ahmet Güneş",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "1D10"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS",
+   "OSN_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12005",
+  "code": "DEN 421E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Ship Propulsion",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ömer Kemal Kınacı",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "3D19"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12006",
+  "code": "DEN 4901E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Shipbuilding&Ocean Eng.Desig.I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kadir Sarıöz , Ebru Sarıöz , Serdar Aytekin Köroğlu , Deniz Bayraktar Bural",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "2D15",
+   "2D15"
+  ],
+  "capacity": 150,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12007",
+  "code": "DEN 4902E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Shipbuilding&Ocean Eng.Dsg.II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ömer Kemal Kınacı , Ceren Bilgin Güney , Sevil Deniz Yakan Dündar , Hakan Akyıldız",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Cuma",
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29",
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "2D11",
+   "2D11"
+  ],
+  "capacity": 150,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12009",
+  "code": "DEN 450E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Ballast Water Management",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ceren Bilgin Güney",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "1D10"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12010",
+  "code": "DEN 436E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Ecotoxicology in the Marine En",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Oktay Eren Türeyen",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "2D12"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS",
+   "OSN_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12011",
+  "code": "DEN 445E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Experim.Design & Data Analysis",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burcu Erbaş",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "2D13"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12012",
+  "code": "DEN 447E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Engineering Optimisation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kadir Sarıöz",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "2D15"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12013",
+  "code": "DEN 449E",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Inr. to the Analysis of Oce.Da",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bilge Tutak",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "2D16"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "DENE_LS",
+   "OSN_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "12014",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayhan Menteş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12015",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hakan Akyıldız",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12016",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kadir Sarıöz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12017",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ömer Kemal Kınacı",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12018",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bilge Tutak",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12019",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ebru Sarıöz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12020",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Karacık",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12021",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burcu Erbaş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12022",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ceren Bilgin Güney",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12023",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Bayraktar Bural",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12024",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Serdar Aytekin Köroğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12025",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sevil Deniz Yakan Dündar",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12026",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şafak Nur Ertürk Bozkurtoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12027",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Güneş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "12028",
+  "code": "DEN 482",
+  "branch": "DEN",
+  "level": "LS",
+  "name": "Bireysel Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Oktay Eren Türeyen",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 3,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ }
+]

@@ -5,7 +5,7 @@
   "branch": "BBF",
   "level": "LS",
   "name": "Analysis of Algorithms I",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Hazım Kemal Ekenel",
   "buildings": [
    "BBB",
@@ -23,22 +23,18 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "Z-16",
-   "Z-16",
-   "Z-16"
+   "104",
+   "104",
+   "104"
   ],
-  "capacity": 90,
-  "enrolled": 87,
-  "reserved": "-",
+  "capacity": 75,
+  "enrolled": 75,
+  "reserved": "",
   "programs": [
-   "BLG_LS",
-   "BLGE_LS",
-   "CEN_LS",
-   "SECE_LS",
-   "YZVE_LS"
+   "BLG_LS, BLGE_LS, CEN_LS, SECE_LS, YZVE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  },
  {
   "crn": "30433",
@@ -46,7 +42,7 @@
   "branch": "BBF",
   "level": "LS",
   "name": "Formal Languages and Automata",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "",
   "instructor": "Gökhan Seçinti",
   "buildings": [
    "BBB",
@@ -60,53 +56,14 @@
    "09:00/12:29",
    "14:00/17:29"
   ],
-  "rooms": [
-   "104",
-   "104"
-  ],
-  "capacity": 60,
-  "enrolled": 66,
-  "reserved": "-",
+  "rooms": [],
+  "capacity": 51,
+  "enrolled": 51,
+  "reserved": "",
   "programs": [
-   "BLG_LS",
-   "BLGE_LS",
-   "SECE_LS",
-   "YZVE_LS"
+   "BLG_LS, BLGE_LS, SECE_LS, YZVE_LS"
   ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "30487",
-  "code": "BBF 204E",
-  "branch": "BBF",
-  "level": "LS",
-  "name": "Formal Languages and Automata",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Tuğçe Bilen",
-  "buildings": [
-   "BBB",
-   "BBB"
-  ],
-  "days": [
-   "Cuma",
-   "Cuma"
-  ],
-  "times": [
-   "09:00/12:29",
-   "14:00/17:29"
-  ],
-  "rooms": [
-   "Z-19",
-   "Z-19"
-  ],
-  "capacity": 60,
-  "enrolled": 10,
-  "reserved": "-",
-  "programs": [
-   "CEN_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
+  "prereq": "",
+  "classReq": ""
  }
 ]

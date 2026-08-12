@@ -1,0 +1,129 @@
+[
+ {
+  "crn": "11693",
+  "code": "MUK 211",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Zahit Mecitoğlu",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "12:30/14:29",
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "ZA1",
+   "ZA1"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "11694",
+  "code": "MUK 211E",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Strength of Materials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Demet Balkan",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "12:30/14:29",
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "ZA2",
+   "ZA2"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "UZB_LS",
+   "UZBE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "12266",
+  "code": "MUK 203",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Oktay Eren Türeyen",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "ZA2"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DEN_LS",
+   "OSN_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14318",
+  "code": "MUK 207E",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Strength of Materials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Levent Önal",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "D381B"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "TEK_LS",
+   "TEKE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

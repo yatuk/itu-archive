@@ -77,6 +77,19 @@ export function buildingOf(place) {
   return s.split('/').pop().split('-')[0].trim();
 }
 
+// Bina kodu → ad ("BBB" → "Bilgisayar ve Bilişim Binası"). docs/data/buildings.json
+// code→name haritasından; eşleşme yoksa kodu aynen döndürür. Saf — testli.
+export function buildingName(code, buildings) {
+  const c = String(code || '').trim();
+  if (!c) return '';
+  const map = buildings && buildings.find ? buildings : null;
+  if (map) {
+    const hit = map.find((b) => b.code === c);
+    if (hit && hit.name) return hit.name;
+  }
+  return c; // eşleşme yoksa kod (eski davranış)
+}
+
 // Türkçe takvim tarihi: "09 Temmuz 2026" -> yerel gece yarısı Date.
 // Çözümlenemeyen girdilerde (biçim bozuk, bilinmeyen ay) null döner.
 const TR_MONTHS = {

@@ -1,0 +1,49 @@
+name: resmi-tanimlar
+
+# Resmî tanım listeleri (bina kodları, program kodları). Nadiren değişir;
+# ayda bir koşar. Her iki kaynak sunucu tarafı tablo — OBS'yi yormaz.
+on:
+  schedule:
+    - cron: '47 5 1 * *' # ayın 1'inde 05:47 UTC (aylık)
+  workflow_dispatch:
+
+concurrency:
+  group: definitions
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  definitions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Tanım listelerini çek
+        run: go run ./cmd/definitions
+
+      - name: Doğrula
+        run: go run ./cmd/validate -quiet -skip-site
+
+      - name: Commit
+        run: |
+          if git diff --quiet -- docs/data/buildings.json docs/data/programs.json; then
+            echo 'Tanımlarda değişiklik yok.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name  'itu-scraper[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/data/buildings.json docs/data/programs.json
+          git commit -m "resmî tanımlar: $(date -u +'%Y-%m-%d') aylık taraması"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1

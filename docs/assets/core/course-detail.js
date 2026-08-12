@@ -6,7 +6,7 @@
 // trendi + dönem tablosu). Ders o dönem açık değilse neden açıklanır, geçmiş
 // yine gösterilir — sessiz boşluk olmaz.
 
-import { $, getJSON, esc, termLabel, sessionHours, fillMeasured } from './utils.js';
+import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName } from './utils.js';
 import { state } from './store.js';
 import { fillBar, trendChart } from './chart.js';
 
@@ -30,6 +30,24 @@ function fillNote(crn) {
 // Saf — test edilebilir.
 export function splitInstructors(instr) {
   return String(instr ?? '').split(/[;,|]/).map((s) => s.trim()).filter(Boolean);
+}
+
+// Bina kodu → ad haritası (docs/data/buildings.json). Bir kez yüklenir, tüm
+// oturum satırlarında kullanılır. Yüklenemezse boş dizi (kodlar aynen gösterilir).
+let buildingsCache = null;
+async function loadBuildings() {
+  if (buildingsCache === null) {
+    buildingsCache = await getJSON('data/buildings.json').catch(() => []);
+  }
+  return buildingsCache;
+}
+// Oturum satırı: "Pazartesi 08:30/11:29 · BBB (Bilgisayar ve Bilişim Binası)"
+function sessionsHtml(sec, buildings) {
+  return sec.days.map((d, i) => {
+    const b = sec.buildings[i];
+    const bld = b ? `${esc(buildingName(b, buildings))}` : '';
+    return [d, sec.times[i] || '', sec.rooms[i] || '', bld].filter(Boolean).join(' · ');
+  }).join('<br>');
 }
 
 // OBS katalog formunun derin bağlantısı. Taban dersNo, kodun sayısal öneki
@@ -64,15 +82,9 @@ function measured(crn) {
   return fillMeasured(state.quotaLast);
 }
 
-// Oturum satırı: "Pazartesi 08:30/11:29 · AYB"
-function sessionsHtml(sec) {
-  return sec.days.map((d, i) => [d, sec.times[i] || '', sec.rooms[i] || '', sec.buildings[i] || '']
-    .filter(Boolean).join(' · ')).join('<br>');
-}
-
 // Tek şube kartı. Öğretim üyesi, dolma süresi, oturumlar, önşart, sınıf/kredi
 // ve rezervasyon alanlarının tümü burada korunur (eski panelin alanları).
-function secCard(s) {
+function secCard(s, buildings) {
   const pct = s.capacity ? `%${Math.round((s.enrolled / s.capacity) * 100)}` : '';
   const hrs = sessionHours(s.times);
   const note = fillNote(s.crn);
@@ -83,7 +95,7 @@ function secCard(s) {
     .filter((n) => n !== '-' && n !== '***')
     .map((n) => `<button type="button" class="btn-ghost d-hist" data-name="${esc(n)}">${esc(n)} geçmişinde ara</button>`)
     .join('');
-  const sessions = sessionsHtml(s);
+  const sessions = sessionsHtml(s, buildings);
   return `
     <div class="d-sec">
       <div class="d-sec-head">
@@ -146,11 +158,12 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   history.replaceState(null, '', '#ders/' + encodeURIComponent(code));
 
   const branch = String(code).split(' ')[0];
-  const [list, hist, cat, gr] = await Promise.all([
+  const [list, hist, cat, gr, buildings] = await Promise.all([
     getJSON(`data/terms/${t}/branches/${branch}.json`).catch(() => []),
     getJSON(`data/history/courses/${branch}.json`).then((all) => all[code] || null).catch(() => null),
     getJSON(`data/catalog/${branch}.json`).then((all) => all[code] || null).catch(() => null),
     getJSON(`data/grades/${branch}.json`).then((all) => (Array.isArray(all) ? all.filter((g) => g.code === code) : [])).catch(() => []),
+    loadBuildings(),
   ]);
   const secs = Array.isArray(list) ? list.filter((s) => s.code === code) : [];
   const obsLink = obsDeepLink(code);
@@ -176,7 +189,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     <div class="d-meta">${[branch, secs[0].level, secs[0].method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
     <section class="d-secs">
       <h4>Bu dönem · ${secs.length} şube</h4>
-      ${secs.map(secCard).join('')}
+      ${secs.map((s) => secCard(s, buildings)).join('')}
     </section>
     <section class="d-progs">
       <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>

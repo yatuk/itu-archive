@@ -1,0 +1,1431 @@
+{
+ "generatedAt": "2026-08-12T22:15:30Z",
+ "programs": [
+  {
+   "code": "SAO_OL",
+   "name": "Siber Güvenlik Analistliği ve Operatörlüğü",
+   "level": 1
+  },
+  {
+   "code": "AIN_LS",
+   "name": "İnşaat Mühendisliği (İngilizce) UOLP (Azerbaycan-AZMIU)",
+   "level": 2
+  },
+  {
+   "code": "ARC_LS",
+   "name": "Mimarlık (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "BES_LS",
+   "name": "Biyomühendislik (İngilizce) UOLP (Saraybosna-IUS)",
+   "level": 2
+  },
+  {
+   "code": "BIOE_LS",
+   "name": "Moleküler Biyoloji ve Genetik (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "BIO_LS",
+   "name": "Moleküler Biyoloji ve Genetik Lisans",
+   "level": 2
+  },
+  {
+   "code": "BLGE_LS",
+   "name": "Bilgisayar Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "BLG_LS",
+   "name": "Bilgisayar Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "BST_LS",
+   "name": "Bestecilik Lisans",
+   "level": 2
+  },
+  {
+   "code": "CAB_LS",
+   "name": "Çalgı Lisans",
+   "level": 2
+  },
+  {
+   "code": "CEB_LS",
+   "name": "Çalgı Eğitimi Lisans",
+   "level": 2
+  },
+  {
+   "code": "CEN_LS",
+   "name": "Bilgisayar Mühendisliği (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "CES_LS",
+   "name": "Bilgisayar Mühendisliği (İngilizce) UOLP (Saraybosna-IUS)",
+   "level": 2
+  },
+  {
+   "code": "CEVE_LS",
+   "name": "Çevre Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "CEV_LS",
+   "name": "Çevre Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "CHZE_LS",
+   "name": "Cevher Hazırlama Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "CHZ_LS",
+   "name": "Cevher Hazırlama Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "DENE_LS",
+   "name": "Gemi ve Deniz Teknolojisi Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "DEN_LS",
+   "name": "Gemi ve Deniz Teknolojisi Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "DUIE_LS",
+   "name": "Deniz Ulaştırma İşletme Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "DUI_LS",
+   "name": "Deniz Ulaştırma İşletme Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "ECNE_LS",
+   "name": "Ekonomi (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "EEE_LS",
+   "name": "Elektrik - Elektronik Mühendisliği (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "EFN_LS",
+   "name": "Ekonomi ve Finans (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "EHBE_LS",
+   "name": "Elektronik ve Haberleşme Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "EHB_LS",
+   "name": "Elektronik ve Haberleşme Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "EHN_LS",
+   "name": "Elektronik ve Haberleşme Mühendisliği (İngilizce) UOLP (ABD-NJIT)",
+   "level": 2
+  },
+  {
+   "code": "EHS_LS",
+   "name": "Elektronik ve Haberleşme Mühendisliği (İngilizce) UOLP (Saraybosna-IUS)",
+   "level": 2
+  },
+  {
+   "code": "ELE_LS",
+   "name": "Elektronik Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "ELKE_LS",
+   "name": "Elektrik Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "ELK_LS",
+   "name": "Elektrik Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "ENDE_LS",
+   "name": "Endüstri Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "END_LS",
+   "name": "Endüstri Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "ENTE_LS",
+   "name": "Endüstriyel Tasarım (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "ENT_LS",
+   "name": "Endüstriyel Tasarım Lisans",
+   "level": 2
+  },
+  {
+   "code": "ESS_LS",
+   "name": "Ekonomi (İngilizce) UOLP (Saraybosna-IUS)",
+   "level": 2
+  },
+  {
+   "code": "EUTE_LS",
+   "name": "Endüstri Ürünleri Tasarımı (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "EUT_LS",
+   "name": "Endüstri Ürünleri Tasarımı Lisans",
+   "level": 2
+  },
+  {
+   "code": "FIZE_LS",
+   "name": "Fizik Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "FIZ_LS",
+   "name": "Fizik Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "FZT_LS",
+   "name": "Fizik",
+   "level": 2
+  },
+  {
+   "code": "GEME_LS",
+   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "GEM_LS",
+   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "GEOE_LS",
+   "name": "Geomatik Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "GEO_LS",
+   "name": "Geomatik Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "GIDE_LS",
+   "name": "Gıda Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "GID_LS",
+   "name": "Gıda Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "GMIE_LS",
+   "name": "Gemi Makinaları İşletme Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "GMI_LS",
+   "name": "Gemi Makinaları İşletme Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "HTAE_LS",
+   "name": "Harita Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "HTA_LS",
+   "name": "Harita Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "IAD_LS",
+   "name": "İç Mimarlık (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "IBM_LS",
+   "name": "İklim Bilimi ve Meteoroloji Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "ICM_LS",
+   "name": "İç Mimarlık Lisans",
+   "level": 2
+  },
+  {
+   "code": "IEBE_LS",
+   "name": "Endüstri Mühendisliği (İngilizce) (TAU)",
+   "level": 2
+  },
+  {
+   "code": "IMLE_LS",
+   "name": "İmalat Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "IML_LS",
+   "name": "İmalat Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "IND_LS",
+   "name": "Endüstri Mühendisliği (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "INSE_LS",
+   "name": "İnşaat Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "INS_LS",
+   "name": "İnşaat Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "ISLE_LS",
+   "name": "İşletme Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "ISL_LS",
+   "name": "İşletme Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "JEFE_LS",
+   "name": "Jeofizik Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "JEF_LS",
+   "name": "Jeofizik Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "JEOE_LS",
+   "name": "Jeoloji Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "JEO_LS",
+   "name": "Jeoloji Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "KIME_LS",
+   "name": "Kimya (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "KIM_LS",
+   "name": "Kimya Lisans",
+   "level": 2
+  },
+  {
+   "code": "KMME_LS",
+   "name": "Kimya Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "KMM_LS",
+   "name": "Kimya Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "KMP_LS",
+   "name": "Kompozisyon Lisans",
+   "level": 2
+  },
+  {
+   "code": "KOME_LS",
+   "name": "Kontrol ve Otomasyon Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "KOM_LS",
+   "name": "Kontrol ve Otomasyon Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "MADE_LS",
+   "name": "Maden Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "MAD_LS",
+   "name": "Maden Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "MAKE_LS",
+   "name": "Makina Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "MAK_LS",
+   "name": "Makina Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "MATE_LS",
+   "name": "Matematik Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "MAT_LS",
+   "name": "Matematik Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "MBI_LS",
+   "name": "Biyomühendislik (İngilizce) UOLP (ABD-Montana State University)",
+   "level": 2
+  },
+  {
+   "code": "MEN_LS",
+   "name": "Gemi Makinaları İşletme Mühendisliği (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "METE_LS",
+   "name": "Metalurji ve Malzeme Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "MET_LS",
+   "name": "Metalurji ve Malzeme Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "MIME_LS",
+   "name": "Mimarlık (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "MIM_LS",
+   "name": "Mimarlık Lisans",
+   "level": 2
+  },
+  {
+   "code": "MMD_LS",
+   "name": "Denizcilik İşletmeleri Yönetimi (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "MSS_LS",
+   "name": "Makina Mühendisliği (İngilizce) UOLP (Saraybosna-IUS)",
+   "level": 2
+  },
+  {
+   "code": "MTM_LS",
+   "name": "Deniz Ulaştırma İşletme Mühendisliği (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "MTOE_LS",
+   "name": "Meteoroloji Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "MTO_LS",
+   "name": "Meteoroloji Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "MTR_LS",
+   "name": "Müzik Teorisi Lisans",
+   "level": 2
+  },
+  {
+   "code": "MTT_LS",
+   "name": "Matematik",
+   "level": 2
+  },
+  {
+   "code": "MUT_LS",
+   "name": "Müzik Teknolojileri Lisans",
+   "level": 2
+  },
+  {
+   "code": "MUZ_LS",
+   "name": "Müzikoloji Lisans",
+   "level": 2
+  },
+  {
+   "code": "MZT_LS",
+   "name": "Müzik Teknolojisi Lisans",
+   "level": 2
+  },
+  {
+   "code": "NAE_LS",
+   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği (İngilizce) (KKTC) Lisans",
+   "level": 2
+  },
+  {
+   "code": "PEME_LS",
+   "name": "Peyzaj Mimarlığı (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "PEM_LS",
+   "name": "Peyzaj Mimarlığı Lisans",
+   "level": 2
+  },
+  {
+   "code": "PETE_LS",
+   "name": "Petrol ve Doğal Gaz Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "PET_LS",
+   "name": "Petrol ve Doğal Gaz Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "ROSE_LS",
+   "name": "Robotik ve Otonom Sistemleri Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "ROS_LS",
+   "name": "Robotik ve Otonom Sistemleri Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "SAS_LS",
+   "name": "Mimarlık (İngilizce) UOLP (Saraybosna-IUS)",
+   "level": 2
+  },
+  {
+   "code": "SBL_LS",
+   "name": "Bilişim Sistemleri Mühendisliği (İngilizce) UOLP (SUNY-Binghamton University)",
+   "level": 2
+  },
+  {
+   "code": "SBPE_LS",
+   "name": "Şehir ve Bölge Planlama (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "SBP_LS",
+   "name": "Şehir ve Bölge Planlama Lisans",
+   "level": 2
+  },
+  {
+   "code": "SDU_LS",
+   "name": "Deniz Ulaştırma İşletme Mühendisliği (İngilizce) UOLP (SUNY-Maritime College)",
+   "level": 2
+  },
+  {
+   "code": "SECE_LS",
+   "name": "Siber Güvenlik Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "SED_LS",
+   "name": "Endüstri Mühendisliği (İngilizce) UOLP (SUNY-Binghamton)",
+   "level": 2
+  },
+  {
+   "code": "SEK_LS",
+   "name": "Ekonomi (İngilizce) UOLP (SUNY-New Paltz)",
+   "level": 2
+  },
+  {
+   "code": "SEN_LS",
+   "name": "Endüstri Mühendisliği (İngilizce) UOLP (ABD-SIUE)",
+   "level": 2
+  },
+  {
+   "code": "SES_LS",
+   "name": "Ses Eğitimi Lisans",
+   "level": 2
+  },
+  {
+   "code": "SES_TH_LS",
+   "name": "Ses Eğitimi (THM) Lisans",
+   "level": 2
+  },
+  {
+   "code": "SES_TS_LS",
+   "name": "Ses Eğitimi (TSM) Lisans",
+   "level": 2
+  },
+  {
+   "code": "SGI_LS",
+   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği (İngilizce) UOLP (UK-Strathclyde)",
+   "level": 2
+  },
+  {
+   "code": "SGM_LS",
+   "name": "Gemi Makinaları İşletme Mühendisliği (İngilizce) UOLP (SUNY-Maritime College)",
+   "level": 2
+  },
+  {
+   "code": "SIN_LS",
+   "name": "İnşaat Mühendisliği (İngilizce) UOLP (SUNY-University at Buffalo)",
+   "level": 2
+  },
+  {
+   "code": "SIS_LS",
+   "name": "İşletme (İngilizce) UOLP (SUNY-New Paltz)",
+   "level": 2
+  },
+  {
+   "code": "SMT_LS",
+   "name": "Moda Tasarımı (İngilizce) UOLP (SUNY - Fashion Institute of Technology)",
+   "level": 2
+  },
+  {
+   "code": "STP_LS",
+   "name": "Tekstil Geliştirme ve Pazarlama (İngilizce) UOLP (SUNY-Fashion Institute of Technology)",
+   "level": 2
+  },
+  {
+   "code": "TEKE_LS",
+   "name": "Tekstil Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "TEK_LS",
+   "name": "Tekstil Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "TEL_LS",
+   "name": "Telekomünikasyon Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "THO_LS",
+   "name": "Türk Halk Oyunları Lisans",
+   "level": 2
+  },
+  {
+   "code": "UCK_LS",
+   "name": "Uçak Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "UZBE_LS",
+   "name": "Uzay Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "UZB_LS",
+   "name": "Uzay Mühendisliği Lisans",
+   "level": 2
+  },
+  {
+   "code": "VBAE_LS",
+   "name": "Veri Bilimi ve Analitiği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "YZVE_LS",
+   "name": "Yapay Zeka ve Veri Mühendisliği (İngilizce) Lisans",
+   "level": 2
+  },
+  {
+   "code": "ADM_AT_YL",
+   "name": "Açık Deniz Mühendisliği (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ADM_AZ_YL",
+   "name": "Açık Deniz Mühendisliği Tezsiz (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "AYN_ATY_YL",
+   "name": "Afet Yönetimi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "AYN_AT_YL",
+   "name": "Afet Yönetimi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "AYN_AY_YL",
+   "name": "Afet Yönetimi Tezsiz Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BBL_BBY_YL",
+   "name": "Bilgisayar Bilimleri Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BBL_BB_YL",
+   "name": "Bilgisayar Bilimleri Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BGM_KRY_YL",
+   "name": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BGM_KR_YL",
+   "name": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BLG_BG_YL",
+   "name": "Bilgisayar Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BLG_HBY_YL",
+   "name": "Bilgi ve Haberleşme Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BLG_HB_YL",
+   "name": "Bilgi ve Haberleşme Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BLS_UY_YL",
+   "name": "Bilişim Uygulamaları Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BTT_BT_YL",
+   "name": "Bilim ve Teknoloji Tarihi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BTT_TT_YL",
+   "name": "Bilim, Teknoloji ve Toplum Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "BVA_IA_YL",
+   "name": "Büyük Veri ve İş Analitiği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "CBT_CTY_YL",
+   "name": "Coğrafi Bilgi Teknolojileri Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "CBT_CT_YL",
+   "name": "Coğrafi Bilgi Teknolojileri Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "CBY_CB_YL",
+   "name": "Çevre Bilimleri Mühendisliği ve Yönetimi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "CEV_CB_YL",
+   "name": "Çevre Bilimleri ve Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "CEV_EB_YL",
+   "name": "Çevre Biyoteknolojisi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "CGS_CS_YL",
+   "name": "Çalgı-Ses Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "CGS_CT_YL",
+   "name": "Çalgı-Ses Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "CVH_CV_YL",
+   "name": "Cevher Hazırlama Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "DEN_DT_YL",
+   "name": "Gemi ve Deniz Teknolojisi Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "DEP_DMY_YL",
+   "name": "Deprem Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "DEP_DM_YL",
+   "name": "Deprem Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "DUM_DU_YL",
+   "name": "Deniz Ulaştırma Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "DZC_DN_YL",
+   "name": "Denizcilik Çalışmaları Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "EBT_EBY_YL",
+   "name": "Enerji Bilim ve Teknoloji Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "EBT_EB_YL",
+   "name": "Enerji Bilim ve Teknoloji Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ELH_BM_YL",
+   "name": "Biyomedikal Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ELH_EL_YL",
+   "name": "Elektronik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ELH_TL_YL",
+   "name": "Telekomünikasyon Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ELK_EL_YL",
+   "name": "Elektrik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "END_EM_YL",
+   "name": "Endüstri Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "END_MY_YL",
+   "name": "Mühendislik Yönetimi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ETY_ET_YL",
+   "name": "Endüstriyel Tasarım Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "EUT_ET_YL",
+   "name": "Endüstri Ürünleri Tasarımı Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "FIZ_FM_YL",
+   "name": "Fizik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "GAM_OE_YL",
+   "name": "Oyun ve Etkileşim Teknolojileri (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "GDP_GD_YL",
+   "name": "Geleneksel Danslar Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "GEM_GI_YL",
+   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "GGP_GG_YL",
+   "name": "Gayrimenkul Geliştirme Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "GID_GM_YL",
+   "name": "Gıda Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "HBM_HBY_YL",
+   "name": "Hesaplamalı Bilim ve Mühendislik Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "HBM_HB_YL",
+   "name": "Hesaplamalı Bilim ve Mühendislik Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ICM_IM_YL",
+   "name": "İç Mimarlık (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "IDB_YSY_YL",
+   "name": "Yer Sistem Bilimi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "IDB_YS_YL",
+   "name": "Yer Sistem Bilimi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "IKT_IK_YL",
+   "name": "İktisat Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "IKT_IN_YL",
+   "name": "İktisat (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "IMT_IM_YL",
+   "name": "İç Mimari Tasarım Uluslararası (IMIAD) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "INK_IK_YL",
+   "name": "İnsan Kaynakları Yönetimi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "INS_HS_YL",
+   "name": "Hidrolik ve Su Kaynakları Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "INS_UL_YL",
+   "name": "Ulaştırma Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "INS_YA_YL",
+   "name": "Yapı Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "INS_YI_YL",
+   "name": "Yapı İşletmesi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "INS_ZG_YL",
+   "name": "Zemin Mekaniği ve Geoteknik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ISL_IM_YL",
+   "name": "İşletme Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ISS_IS_YL",
+   "name": "İşletme Tezsiz Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ISS_IT_YL",
+   "name": "İşletme Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "ITT_TT_YL",
+   "name": "Yenilikçi Teknik Tekstiller (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "JDF_GE_YL",
+   "name": "Geomatik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "JEF_JF_YL",
+   "name": "Jeofizik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "JEO_ATY_YL",
+   "name": "Jeoantropoloji (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "JEO_AT_YL",
+   "name": "Jeoantropoloji (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "JEO_JDY_YL",
+   "name": "Jeodinamik Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "JEO_JD_YL",
+   "name": "Jeodinamik Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "JEO_UJ_YL",
+   "name": "Jeoloji Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "KBM_KB_YL",
+   "name": "Kıyı Bilimleri ve Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "KET_KT_YL",
+   "name": "Kentsel Tasarım Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "KIM_KY_YL",
+   "name": "Kimya Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "KMM_KM_YL",
+   "name": "Kimya Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "KOM_KO_YL",
+   "name": "Kontrol ve Otomasyon Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "KTB_KB_YL",
+   "name": "Kutup Bilimleri (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAD_MM_YL",
+   "name": "Maden Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAK_EN_YL",
+   "name": "Isı Akışkan Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAK_KC_YL",
+   "name": "Katı Cisimlerin Mekaniği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAK_KS_YL",
+   "name": "Konstrüksiyon Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAK_MD_YL",
+   "name": "Makina Dinamiği, Titreşim ve Akustiği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAK_MI_YL",
+   "name": "Malzeme ve İmalat Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAK_OT_YL",
+   "name": "Otomotiv Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAK_SD_YL",
+   "name": "Sistem Dinamiği ve Kontrol Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MAT_MM_YL",
+   "name": "Matematik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MBG_MG_YL",
+   "name": "Moleküler Biyoloji-Genetik ve Biyoteknoloji Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MBM_MB_YL",
+   "name": "Malzeme Bilimi ve Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MDP_MZ_BH",
+   "name": "Müzik (İngilizce) Bilimsel Hazırlık",
+   "level": 3
+  },
+  {
+   "code": "MDP_MZ_YL",
+   "name": "Müzik (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MET_ML_YL",
+   "name": "Malzeme Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MET_SR_YL",
+   "name": "Seramik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MET_UT_YL",
+   "name": "Üretim Metalurjisi ve Teknolojileri Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MIM_CY_YL",
+   "name": "Çevre Kontrolü ve Yapı Teknolojisi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MIM_MS_YL",
+   "name": "Mimari Tasarım Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MIM_PY_YL",
+   "name": "Proje ve Yapım Yönetimi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MIM_RT_YL",
+   "name": "Restorasyon Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MIM_TA_YL",
+   "name": "Mimarlık Tarihi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MIM_TM_YL",
+   "name": "Mimarlık Tezsiz Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MIM_TR_YL",
+   "name": "Restorasyon Tezsiz Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MKM_MK_YL",
+   "name": "Mekatronik Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MTB_MT_YL",
+   "name": "Mimari Tasarımda Bilişim Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MTO_MM_YL",
+   "name": "Atmosfer Bilimleri Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MZJ_MJ_YL",
+   "name": "Müzikoloji Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "MZT_KM_YL",
+   "name": "Müzik Teorisi ve Kompozisyon Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "NAS_NE_YL",
+   "name": "Nano Bilim ve Nano Mühendislik (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "NEM_NEY_YL",
+   "name": "Nükleer Enerji Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "NEM_NE_YL",
+   "name": "Nükleer Enerji Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "PEM_PM_YL",
+   "name": "Peyzaj Mimarlığı Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "PET_PD_YL",
+   "name": "Petrol ve Doğal Gaz Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "PST_PS_YL",
+   "name": "Polimer Bilim ve Teknolojisi (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "RAD_RDY_YL",
+   "name": "Radyasyon Bilim ve Teknoloji Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "RAD_RD_YL",
+   "name": "Radyasyon Bilim ve Teknoloji Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "RSM_RS_YL",
+   "name": "Raylı Sistemler Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "SBP_BP_YL",
+   "name": "Bölge Planlama Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "SBP_SP_YL",
+   "name": "Şehir Planlama Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "SFA_SE_YL",
+   "name": "Sıfır Atık (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "STR_ST_YL",
+   "name": "Sanat Tarihi Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "SUS_SU_YL",
+   "name": "Sürdürülebilirlik (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "SVT_ST_YL",
+   "name": "Savunma Teknolojileri Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "SVT_SVY_YL",
+   "name": "Savunma Teknolojileri Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "SVT_SV_YL",
+   "name": "Savunma Teknolojileri Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "SYC_SY_YL",
+   "name": "Siyaset Çalışmaları (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "TEK_TK_YL",
+   "name": "Tekstil Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "TMP_TM_YL",
+   "name": "Türk Müziği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "UAH_UAY_YL",
+   "name": "Uydu Haberleşmesi ve Uzaktan Algılama Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "UAH_UA_YL",
+   "name": "Uydu Haberleşmesi ve Uzaktan Algılama Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "UUM_UU_YL",
+   "name": "Uçak ve Uzay Mühendisliği Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "UZM_UB_YL",
+   "name": "Uzay Mühendisliği (İngilizce) Yüksek Lisans",
+   "level": 3
+  },
+  {
+   "code": "AKB_TYY_YL",
+   "name": "Akıllı Bina ve Tesis Yönetimi Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "AKB_TY_YL",
+   "name": "Akıllı Bina ve Tesis Yönetimi Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "BTK_BT_YL",
+   "name": "Bilgi Teknolojileri Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "CTT_CT_YL",
+   "name": "Cephe Tasarımı ve Teknolojisi Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "DUY_DU_YL",
+   "name": "Deniz Ulaştırma Yönetimi Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "DZC_DC_YL",
+   "name": "Denizcilik Çalışmaları Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "GYY_GY_YL",
+   "name": "Girişimcilik ve Yenilik Yönetimi Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "HAY_YMY_YL",
+   "name": "Hava Aracı Yapıları ve Malzemeleri Tezsiz (2. Öğretim) (İngilizce) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "HAY_YM_YL",
+   "name": "Hava Aracı Yapıları ve Malzemeleri Tezsiz (2. Öğretim) (İngilizce) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "HGP_MY_YL",
+   "name": "Hazır Giyim Perakende ve Moda Yönetimi Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "HTY_HTY_YL",
+   "name": "Hava Taşımacılığı Yönetimi Tezsiz (İngilizce) (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "HTY_HT_YL",
+   "name": "Hava Taşımacılığı Yönetimi Tezsiz (İngilizce) (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "HUR_HR_YL",
+   "name": "İnsan Kaynakları Yönetimi Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "IPY_IP_YL",
+   "name": "İnşaat Projeleri Yönetimi Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "ISG_IS_YL",
+   "name": "İş Sağlığı ve Güvenliği Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "IST_IT_YL",
+   "name": "İşletme (MBA-İTÜ-KKTC) Tezsiz (2. Öğretim) (İngilizce) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "ITY_IT_YL",
+   "name": "İşletme ve Teknoloji Yönetimi Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "IYB_IYY_YL",
+   "name": "İnşaat Yönetiminde Bilişim Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "IYB_IY_YL",
+   "name": "İnşaat Yönetiminde Bilişim Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "MBA_IS_YL",
+   "name": "Yöneticiler İçin İşletme Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "MHN_MY_YL",
+   "name": "Mühendislik Yönetimi Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "MUZ_MU_YL",
+   "name": "Müzik Tezsiz (2. Öğretim) (İngilizce) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "RHA_RTY_YL",
+   "name": "Rotorlu Hava Araçları Teknolojileri Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "RHA_RT_YL",
+   "name": "Rotorlu Hava Araçları Teknolojileri Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "SSI_SVY_YL",
+   "name": "Savunma Sanayiinde İşletme Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "SSI_SV_YL",
+   "name": "Savunma Sanayiinde İşletme Tezsiz (2. Öğretim) (Türkçe) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "SSY_SS_YL",
+   "name": "Sağlık Sistemleri Yönetimi Tezsiz (2. Öğretim) Yüksek Lisans",
+   "level": 5
+  },
+  {
+   "code": "VIA_IA_YL",
+   "name": "Büyük Veri ve İş Analitiği Tezsiz (2. Öğretim) (İngilizce) Yüksek Lisans",
+   "level": 5
+  }
+ ],
+ "source": "itu-archive"
+}

@@ -64,6 +64,7 @@ func All(root string, skipSite bool) *Result {
 	res.checkCalendar(root)
 	res.checkCatalog(root)
 	res.checkGrades(root)
+	res.checkDefinitions(root)
 	if !skipSite {
 		res.checkSitePages(root)
 	}
@@ -229,10 +230,25 @@ func (r *Result) checkCalendar(root string) {
 		r.errf("data/calendar okunamadı: %v", err)
 		return
 	}
+	// Üst düzeydeki <yearId>.json'lar + tür alt dizinleri (calendar/<tür>/).
+	var files []string
 	for _, e := range entries {
-		if !strings.HasSuffix(e.Name(), ".json") {
-			continue
+		if strings.HasSuffix(e.Name(), ".json") {
+			files = append(files, filepath.Join(calDir, e.Name()))
+		} else if e.IsDir() {
+			sub, err := os.ReadDir(filepath.Join(calDir, e.Name()))
+			if err != nil {
+				continue
+			}
+			for _, se := range sub {
+				if strings.HasSuffix(se.Name(), ".json") {
+					files = append(files, filepath.Join(calDir, e.Name(), se.Name()))
+				}
+			}
 		}
+	}
+	for _, f := range files {
+		rel := strings.TrimPrefix(f, calDir+string(filepath.Separator))
 		var cal struct {
 			Events []struct {
 				Date      string
@@ -241,32 +257,32 @@ func (r *Result) checkCalendar(root string) {
 				End       string
 			}
 		}
-		if err := readJSON(filepath.Join(calDir, e.Name()), &cal); err != nil {
-			r.errf("calendar/%s: çözümlenemedi: %v", e.Name(), err)
+		if err := readJSON(f, &cal); err != nil {
+			r.errf("calendar/%s: çözümlenemedi: %v", rel, err)
 			continue
 		}
 		if len(cal.Events) == 0 {
-			r.errf("calendar/%s: hiç etkinlik yok", e.Name())
+			r.errf("calendar/%s: hiç etkinlik yok", rel)
 			continue
 		}
 		for i, ev := range cal.Events {
 			if strings.TrimSpace(ev.Date) == "" {
-				r.errf("calendar/%s: etkinlik %d: date boş", e.Name(), i)
+				r.errf("calendar/%s: etkinlik %d: date boş", rel, i)
 			}
 			if strings.TrimSpace(ev.Remaining) == "" {
-				r.errf("calendar/%s: etkinlik %d: remaining boş", e.Name(), i)
+				r.errf("calendar/%s: etkinlik %d: remaining boş", rel, i)
 			}
 			// start/end varsa ISO "2006-01-02" olmalı (scraper artık yazıyor).
 			if ev.Start != "" || ev.End != "" {
 				for _, v := range []string{ev.Start, ev.End} {
 					if v != "" {
 						if _, err := time.Parse("2006-01-02", v); err != nil {
-							r.errf("calendar/%s: etkinlik %d: geçersiz ISO tarih %q", e.Name(), i, v)
+							r.errf("calendar/%s: etkinlik %d: geçersiz ISO tarih %q", rel, i, v)
 						}
 					}
 				}
 				if ev.Start != "" && ev.End != "" && ev.End < ev.Start {
-					r.errf("calendar/%s: etkinlik %d: end, start'tan önce (%s < %s)", e.Name(), i, ev.End, ev.Start)
+					r.errf("calendar/%s: etkinlik %d: end, start'tan önce (%s < %s)", rel, i, ev.End, ev.Start)
 				}
 			}
 		}
@@ -370,6 +386,48 @@ func (r *Result) checkGrades(root string) {
 			if sum > g.Total {
 				r.errf("grades/%s: kayıt %d: %q kişi toplamı (%d) totalden (%d) fazla", e.Name(), i, g.Code, sum, g.Total)
 			}
+		}
+	}
+}
+
+// checkDefinitions, resmî tanım dosyalarını (buildings, programs) denetler:
+// kodlar boş olmamalı, tekrarsız olmalı, buildings kodları şube verisinde
+// kullanılan kodlarla çakışmalı. Dosyalar opsiyoneldir — yoksa atlanır.
+func (r *Result) checkDefinitions(root string) {
+	var buildings []struct {
+		Code string `json:"code"`
+		Name string `json:"name"`
+	}
+	if err := readJSON(filepath.Join(root, "data", "buildings.json"), &buildings); err == nil {
+		seen := map[string]bool{}
+		for _, b := range buildings {
+			if b.Code == "" || b.Name == "" {
+				r.errf("buildings.json: boş kayıt %+v", b)
+			}
+			if seen[b.Code] {
+				r.errf("buildings.json: %q kodu tekrar", b.Code)
+			}
+			seen[b.Code] = true
+		}
+	}
+
+	var programs struct {
+		Programs []struct {
+			Code  string `json:"code"`
+			Name  string `json:"name"`
+			Level int    `json:"level"`
+		} `json:"programs"`
+	}
+	if err := readJSON(filepath.Join(root, "data", "programs.json"), &programs); err == nil {
+		seen := map[string]bool{}
+		for _, p := range programs.Programs {
+			if p.Code == "" || p.Name == "" {
+				r.errf("programs.json: boş kayıt %+v", p)
+			}
+			if seen[p.Code] {
+				r.errf("programs.json: %q kodu tekrar", p.Code)
+			}
+			seen[p.Code] = true
 		}
 	}
 }

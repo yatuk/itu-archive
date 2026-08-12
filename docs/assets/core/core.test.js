@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { fold, termLabel, buildingOf, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
+import { fold, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
@@ -30,6 +30,19 @@ test('buildingOf yer alanından bina ayıklar', () => {
   assert.equal(buildingOf('Süleyman Demirel Kültür Merkezi'), 'Süleyman Demirel Kültür Merkezi');
   assert.equal(buildingOf(''), '');
   assert.equal(buildingOf(undefined), '');
+});
+
+test('buildingName kodu resmî adla değiştirir', () => {
+  const buildings = [
+    { code: 'BBB', name: 'Bilgisayar ve Bilişim Binası' },
+    { code: 'undeclared', name: 'İlgili Bölümce Açıklanacak' },
+  ];
+  assert.equal(buildingName('BBB', buildings), 'Bilgisayar ve Bilişim Binası');
+  assert.equal(buildingName('undeclared', buildings), 'İlgili Bölümce Açıklanacak');
+  // Eşleşme yoksa kod aynen döner (eski davranış).
+  assert.equal(buildingName('XXX', buildings), 'XXX');
+  assert.equal(buildingName('', buildings), '');
+  assert.equal(buildingName('BBB', null), 'BBB');
 });
 
 test('parseTurkishDate Türkçe ay adını Date yapar', () => {

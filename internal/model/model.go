@@ -104,10 +104,13 @@ type CalendarEvent struct {
 	End   string `json:"end,omitempty"`
 }
 
-// Calendar, bir akademik yılın tüm takvim satırları.
+// Calendar, bir akademik yılın takvim satırları. Type, takvim türüdür
+// (0 = tümü; 15 lisans, 16 yatay-ÇAP, 17 önkayıt, 18 hazırlık, 19 lisansüstü,
+// 20 II. öğretim lisansüstü). Tek türlü dosyada adla birlikte yazılır.
 type Calendar struct {
 	Year      string          `json:"year"`   // "2026-2027 Eğitim - Öğretim Yılı"
 	YearID    string          `json:"yearId"` // akademikyil parametresi
+	Type      string          `json:"type,omitempty"` // takvim türü adı ("Lisans", ...)
 	ScrapedAt string          `json:"scrapedAt"`
 	Events    []CalendarEvent `json:"events"`
 }

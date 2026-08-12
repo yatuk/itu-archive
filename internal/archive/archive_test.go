@@ -17,6 +17,8 @@ func TestParseCSV(t *testing.T) {
 		"FIZ 101,Fizik I,B, Monday,0930/1229,INB,10,20,-,30001,2017 - 2018 Güz Dönemi\n" +
 		// Bölüm kısıtlaması düz cümle: kod sanılmamalı.
 		"HSS 101,Hukuk,C, Pazartesi,0930/1229,INB,5,10,\"Yabancı Uyruklu Tüm Öğrenciler\",40001,2017 - 2018 Güz Dönemi\n" +
+		// Virgülle ayrılmış program kodları tek tek öğe olmalı (dropdown bu listeden besleniyor).
+		"CEV 205,Çevre Kimyası,D, Pazartesi,0930/1229,INB,30,20,\"AIN, ARC, BIO, BIOE\",50001,2017 - 2018 Güz Dönemi\n" +
 		// Boş CRN'li satır atlanır.
 		"TES 111E,Project,D, Pazartesi,0930/1229,INB,1,2,-,,2017 - 2018 Güz Dönemi\n"
 
@@ -25,8 +27,8 @@ func TestParseCSV(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if len(secs) != 4 {
-		t.Fatalf("4 şube bekleniyordu, %d geldi", len(secs))
+	if len(secs) != 5 {
+		t.Fatalf("5 şube bekleniyordu, %d geldi", len(secs))
 	}
 
 	s0 := secs[0]
@@ -62,6 +64,11 @@ func TestParseCSV(t *testing.T) {
 	s3 := secs[3]
 	if !reflect.DeepEqual(s3.Programs, []string{"Yabancı Uyruklu Tüm Öğrenciler"}) {
 		t.Errorf("cümle program sanılmamalı: %v", s3.Programs)
+	}
+
+	s4 := secs[4]
+	if !reflect.DeepEqual(s4.Programs, []string{"AIN", "ARC", "BIO", "BIOE"}) {
+		t.Errorf("virgüllü program kodları ayrılmalı: %v", s4.Programs)
 	}
 }
 

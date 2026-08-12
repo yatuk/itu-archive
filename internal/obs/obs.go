@@ -274,14 +274,18 @@ func parts(cell string) []string {
 	return out
 }
 
-// csv, "IBM_LS, MTO_LS" biçimindeki program listesini ayırır.
+// csv, "IBM_LS, MTO_LS" biçimindeki program listesini ayırır. Virgül, noktalı
+// virgül ve dik çizgi ayraç olarak kabul edilir (OBS yıllar içinde farklı ayraç
+// kullanabilmiş).
 func csv(cell string) []string {
 	s := text(cell)
 	if s == "" || s == "-" {
 		return []string{}
 	}
 	var out []string
-	for _, p := range strings.Split(s, ",") {
+	for _, p := range strings.FieldsFunc(s, func(r rune) bool {
+		return r == ',' || r == ';' || r == '|'
+	}) {
 		if v := strings.TrimSpace(p); v != "" {
 			out = append(out, v)
 		}

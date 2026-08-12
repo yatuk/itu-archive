@@ -141,19 +141,37 @@ func (idx *Index) addCourse(slug string, s model.Section) {
 }
 
 func (idx *Index) addInstructor(slug string, s model.Section) {
-	name := strings.TrimSpace(s.Instructor)
-	if name == "" || name == "***" || name == "--" || name == "-" {
-		return
+	for _, name := range splitNames(s.Instructor) {
+		in, ok := idx.Instructors[name]
+		if !ok {
+			in = &Instructor{Name: name}
+			idx.Instructors[name] = in
+		}
+		in.Rows = append(in.Rows, InstructorRow{
+			Slug: slug, Code: s.Code, Name: s.Name,
+			Capacity: s.Capacity, Enrolled: s.Enrolled,
+		})
 	}
-	in, ok := idx.Instructors[name]
-	if !ok {
-		in = &Instructor{Name: name}
-		idx.Instructors[name] = in
+}
+
+// splitNames, bir şubenin öğretim üyesi hücresini ayrı isimlere böler. OBS ve
+// arşiv dökümleri ortak ders verenleri virgülle ("Esra Baş, Alp Üstündağ"),
+// " , / " gibi karışık ayraçlarla ("Abdullah Fişne , / Anıl Soylu") yazabiliyor.
+// Her isim kendi kartına girer; ortak verilen bir şube her hocanın kaydına
+// eklenir (aynı CRN birden çok hocanın şube sayısında görünür — bu normaldir).
+func splitNames(instructor string) []string {
+	s := strings.ReplaceAll(instructor, "/", ",")
+	s = strings.ReplaceAll(s, ";", ",")
+	s = strings.ReplaceAll(s, "|", ",")
+	var out []string
+	for _, p := range strings.Split(s, ",") {
+		p = strings.TrimSpace(p)
+		if p == "" || p == "***" || p == "--" || p == "-" {
+			continue
+		}
+		out = append(out, p)
 	}
-	in.Rows = append(in.Rows, InstructorRow{
-		Slug: slug, Code: s.Code, Name: s.Name,
-		Capacity: s.Capacity, Enrolled: s.Enrolled,
-	})
+	return out
 }
 
 // Bucket, bir ismi hangi harf dosyasına koyacağımızı söyler. Türkçe harfler

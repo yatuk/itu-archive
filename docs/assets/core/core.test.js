@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 
 import { fold, termLabel, buildingOf } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
-import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable } from '../views/courses.js';
+import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet } from '../views/program.js';
 import * as fav from './favorites.js';
@@ -194,6 +194,22 @@ test('buildSnippet seçilen CRNleri koda gömer', () => {
   assert.ok(code.includes("'30320'"));
   assert.ok(code.startsWith('!function'));
   assert.ok(code.endsWith('}();'));
+});
+
+// ---- Alabilen programlar (r[10]) normalizasyonu ----
+
+// Tarihsel dönemlerde alan tek öğeli virgüllü string olabiliyor; dropdown ve
+// filtre her biçimi tekil kod listesine indirgemeli.
+test('programList dizi ve virgüllü string girdiyi aynı listeye indirger', () => {
+  assert.deepEqual(programList([null, '', '', '', '', '', 0, 0, '', '', ['AIN_LS', 'BIO_LS']]), ['AIN_LS', 'BIO_LS']);
+  assert.deepEqual(programList([null, '', '', '', '', '', 0, 0, '', '', ['AIN_LS, BIO_LS, CEV_LS']]), ['AIN_LS', 'BIO_LS', 'CEV_LS']);
+  assert.deepEqual(programList([null, '', '', '', '', '', 0, 0, '', '', 'BLG_LS; MAT_LS | TEK_LS']), ['BLG_LS', 'MAT_LS', 'TEK_LS']);
+});
+
+test('programList boş/eksik alanda boş liste döndürür', () => {
+  assert.deepEqual(programList([null, '', '', '', '', '', 0, 0]), []);
+  assert.deepEqual(programList([null, '', '', '', '', '', 0, 0, '', '', []]), []);
+  assert.deepEqual(programList([null, '', '', '', '', '', 0, 0, '', '', null]), []);
 });
 
 // Row biçimi: [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan]

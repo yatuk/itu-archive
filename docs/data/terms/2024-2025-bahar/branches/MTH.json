@@ -57,7 +57,8 @@
   "enrolled": 30,
   "reserved": "",
   "programs": [
-   "MBI_LS, SBL_LS"
+   "MBI_LS",
+   "SBL_LS"
   ],
   "prereq": "",
   "classReq": ""
@@ -181,7 +182,8 @@
   "enrolled": 36,
   "reserved": "",
   "programs": [
-   "SGI_LS, SIN_LS"
+   "SGI_LS",
+   "SIN_LS"
   ],
   "prereq": "",
   "classReq": ""
@@ -303,7 +305,8 @@
   "enrolled": 13,
   "reserved": "",
   "programs": [
-   "ARC_LS, NAE_LS"
+   "ARC_LS",
+   "NAE_LS"
   ],
   "prereq": "",
   "classReq": ""
@@ -403,7 +406,12 @@
   "enrolled": 44,
   "reserved": "",
   "programs": [
-   "ELK_LS, ELKE_LS, KOM_LS, KOME_LS, ROS_LS, ROSE_LS"
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
   ],
   "prereq": "",
   "classReq": ""
@@ -432,7 +440,10 @@
   "enrolled": 22,
   "reserved": "",
   "programs": [
-   "EHB_LS, EHBE_LS, ELK_LS, ELKE_LS"
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS"
   ],
   "prereq": "",
   "classReq": ""
@@ -462,7 +473,8 @@
   "enrolled": 13,
   "reserved": "",
   "programs": [
-   "MEN_LS, MTM_LS"
+   "MEN_LS",
+   "MTM_LS"
   ],
   "prereq": "",
   "classReq": ""
@@ -489,7 +501,8 @@
   "enrolled": 6,
   "reserved": "",
   "programs": [
-   "MEN_LS, MTM_LS"
+   "MEN_LS",
+   "MTM_LS"
   ],
   "prereq": "",
   "classReq": ""
@@ -545,7 +558,9 @@
   "enrolled": 42,
   "reserved": "",
   "programs": [
-   "EHB_LS, ELK_LS, KOM_LS"
+   "EHB_LS",
+   "ELK_LS",
+   "KOM_LS"
   ],
   "prereq": "",
   "classReq": ""
@@ -574,7 +589,8 @@
   "enrolled": 42,
   "reserved": "",
   "programs": [
-   "FIZ_LS, MAT_LS"
+   "FIZ_LS",
+   "MAT_LS"
   ],
   "prereq": "",
   "classReq": ""

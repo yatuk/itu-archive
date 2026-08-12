@@ -154,7 +154,7 @@ func parseCSV(data []byte, levels map[string]string) ([]model.Section, error) {
 			Rooms:      rooms,
 			Capacity:   atoi(get(rec, "Kontenjan")),
 			Enrolled:   atoi(get(rec, "Kayıtlı")),
-			Programs:   splitPrograms(get(rec, "Bölüm Sınırlaması")),
+			Programs:   SplitPrograms(get(rec, "Bölüm Sınırlaması")),
 		})
 	}
 	return out, nil
@@ -191,21 +191,37 @@ func split(s string) []string {
 	return out
 }
 
-var programCodeRe = regexp.MustCompile(`^[A-ZÇĞİÖŞÜ][A-ZÇĞİÖŞÜ0-9_]{1,9}$`)
+var programCodeRe = regexp.MustCompile(`^[A-ZÇĞİÖŞÜ][A-ZÇĞİÖŞÜ0-9_]{1,19}$`)
 
-// splitPrograms, "Bölüm Sınırlaması" kolonunu ayırır. Hücre çoğunlukla boşlukla
-// ayrılmış program kodları içeriyor ("CEV CHZ IML INS"), ama bazı kayıtlarda düz
-// cümle geçiyor ("Yabancı Uyruklu Tüm Lisans ve Lisansüstü Öğrenciler").
-// Cümleyi boşluktan bölmek sahte program kodları üretir, o yüzden yalnızca
-// bütün parçalar kod biçimindeyse bölüyoruz.
-func splitPrograms(cell string) []string {
-	parts := split(cell)
+// SplitPrograms, "Bölüm Sınırlaması" kolonunu program kodları listesine ayırır.
+// Kaynak yıla göre virgül, noktalı virgül, dik çizgi ya da boşlukla ayırabiliyor
+// ("AIN, ARC, BIO", "CEV CHZ IML", "BLG_LS; MAT_LS"). Bazı kayıtlarda düz cümle
+// geçiyor ("Yabancı Uyruklu Tüm Lisans ve Lisansüstü Öğrenciler"); cümleyi
+// bölmek sahte program kodları üretir, o yüzden yalnızca bütün parçalar kod
+// biçimindeyse bölüyoruz, aksi halde hücrenin tamamını tek öğe döndürüyoruz.
+func SplitPrograms(cell string) []string {
+	parts := programTokens(cell)
 	for _, p := range parts {
 		if !programCodeRe.MatchString(p) {
 			return []string{squash(cell)}
 		}
 	}
 	return parts
+}
+
+// programTokens, ayraçları tek standarda indirir: virgül, noktalı virgül ve dik
+// çizgi boşluğa çevrilip tümü tek ayraç sayılır; "-"/"--"/"----" boş hücre
+// gösterimleri atlanır.
+func programTokens(s string) []string {
+	s = strings.NewReplacer(",", " ", ";", " ", "|", " ").Replace(s)
+	var out []string
+	for _, p := range strings.Fields(s) {
+		if p == "-" || p == "--" || p == "----" {
+			continue
+		}
+		out = append(out, p)
+	}
+	return out
 }
 
 // splitPlaces, "Bina" kolonunu bina ve derslik olarak ayırır. Kaynak ikisini tek

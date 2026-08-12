@@ -81,7 +81,9 @@ export async function loadTerm(slug) {
     mSel.value = methods.includes(keepM) ? keepM : '';
 
     // "Alabilen programlar" filtre seçenekleri bu dönemin verisinden gelir.
-    const programs = [...new Set(rows.flatMap((r) => r[10] || []))].sort((a, b) => a.localeCompare(b, 'tr'));
+    // Her satırdaki liste tek tek kodlara indirgenir, tekrarlar alınır ve
+    // alfabetik sıralanır; "hepsi" en üstte sabittir.
+    const programs = [...new Set(rows.flatMap((r) => programList(r)))].sort((a, b) => a.localeCompare(b, 'tr'));
     const pSel = $('#f-program');
     const keepP = pSel.value;
     pSel.innerHTML = '<option value="">hepsi</option>' +
@@ -137,7 +139,7 @@ export function applyFilters() {
     // Seviye/yöntem/program alanları tarihsel dönemlerde yoktur; yoksa filtre uygulanmaz.
     if (level && r[8] && r[8] !== level) return false;
     if (method && r[9] && r[9] !== method) return false;
-    if (program && !(r[10] || []).includes(program)) return false;
+    if (program && !programList(r).includes(program)) return false;
     if (openOnly && r[7] >= r[6]) return false;
     if (!terms.length) return true;
     return terms.every((t) => state.hay[i].includes(t));
@@ -162,6 +164,24 @@ export function applyFilters() {
   updateSelection();
   if (ttOn) renderTimetable();
   saveState();
+}
+
+// "Alabilen programlar" alanı (r[10]) dizi ya da virgüllü tek string olarak
+// gelebilir (tarihsel dönemlerde tek öğe içinde "AIN_LS, BIO_LS" gibi). Her iki
+// durumu da tekil kod listesine indirger. Saf fonksiyon — test edilebilir.
+export function programList(r) {
+  const raw = r[10];
+  if (!raw) return [];
+  const parts = Array.isArray(raw) ? raw : String(raw).split(/[,;|]/);
+  const out = [];
+  for (const p of parts) {
+    // Dizi içindeki tek öğe de virgüllü string olabilir (tarihsel dönemler).
+    for (const q of String(p).split(/[,;|]/)) {
+      const v = q.trim();
+      if (v && !out.includes(v)) out.push(v);
+    }
+  }
+  return out;
 }
 
 // Sıralama için satır değerini döndürür; Doluluk yüzde olarak hesaplanır.

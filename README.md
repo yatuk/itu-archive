@@ -35,7 +35,9 @@ OBS'de sorulamayan şeyler burada sorulabiliyor:
 - Bir öğretim üyesi hangi dersleri veriyor ve kaç dönemdir veriyor
 - Bir şube geçen sefer kaç dakikada doldu
 
-6.264 ders ve 4.148 öğretim üyesi indekslenmiş durumda.
+7.668 ders ve 2.653 öğretim üyesi indekslenmiş durumda. Ortak ders veren
+öğretim üyeleri ayrı kartlarda sayılır; bir şube birden çok hocanın şube
+sayısına girebilir.
 
 Site ayrıca bir ders planı haritası sunuyor. Bir bölüm seçin, o bölümün güncel
 müfredatı dönem sütunları halinde çiziliyor. Önşart ilişkileri ok'larla her

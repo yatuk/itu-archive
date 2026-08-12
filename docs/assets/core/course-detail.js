@@ -11,6 +11,7 @@ import { state } from './store.js';
 import { fillBar, trendChart } from './chart.js';
 
 let lastDetailFocus = null;
+let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
 
 // Dolma süresini insanca yazar: "kayıt başladıktan 3 sa 20 dk sonra doldu".
 // Kontenjan zaman serisi yalnızca aktif dönem için yüklenir (state.quota).
@@ -94,6 +95,11 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   document.body.classList.add('modal-open');
   content.innerHTML = '<p class="empty">yükleniyor…</p>';
   $('#detail-close').focus();
+  // Paylaşılabilir detay bağlantısı: #ders/<kod>. Kapatınca dönülecek görünümü
+  // hatırla (örn. önşart sekmesinden açıldıysa oraya dön). Bağlantıdan
+  // doğrudan açılıyorsa kapatınca dersler görünümüne dön.
+  lastDetailHash = location.hash.startsWith('#ders/') ? null : (location.hash || '#dersler');
+  history.replaceState(null, '', '#ders/' + encodeURIComponent(code));
 
   const branch = String(code).split(' ')[0];
   const [list, hist, cat] = await Promise.all([
@@ -165,6 +171,8 @@ function wireHistButtons(content) {
 export function closeCourseDetail() {
   $('#detail-panel').hidden = true;
   document.body.classList.remove('modal-open');
+  // Detay bağlantısından gelindiyse kapatınca açıldığı görünüme dön.
+  if (location.hash.startsWith('#ders/')) history.replaceState(null, '', lastDetailHash || '#dersler');
   if (lastDetailFocus && typeof lastDetailFocus.focus === 'function') lastDetailFocus.focus();
 }
 

@@ -7,7 +7,7 @@ import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
 import { state, markIndexReady } from './core/store.js';
 import { I18N } from './i18n.js';
 import { initCourses, loadTerm, applyFilters } from './views/courses.js';
-import { initCourseDetail } from './core/course-detail.js';
+import { initCourseDetail, openCourseDetail } from './core/course-detail.js';
 import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
 import { initExams, onShow as examsShow } from './views/exams.js';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
@@ -76,6 +76,7 @@ async function boot() {
   // İlk sekme artık veri hazırken açılır (paylaşılan #program/#takvim/#sinavlar
   // bağlantıları bu sayede doğru çalışır).
   showView(VIEWS.includes(pendingView) ? pendingView : 'dersler', false);
+  openDetailFromHash(pendingView);
 
   await loadTerm(initialSlug);
 
@@ -174,7 +175,10 @@ function wireTabs() {
     const mainEl = document.querySelector('main.wrap');
     if (mainEl) mainEl.classList.toggle('wide', view === 'program');
     const h = location.hash.slice(1);
-    if (h !== view) {
+    // Paylaşılabilir ders detayı (#ders/BLG%20102E) hash'ini, dersler sekmesi
+    // gösterilirken koru; diğer sekme geçişlerinde normal şekilde üzerine yaz.
+    const detail = view === 'dersler' && h.startsWith('ders/');
+    if (!detail && h !== view) {
       if (push) history.pushState(null, '', `#${view}`);
       else history.replaceState(null, '', `#${view}`);
     }
@@ -200,7 +204,16 @@ function wireTabs() {
   window.addEventListener('popstate', () => {
     const v = location.hash.slice(1);
     show(VIEWS.includes(v) ? v : 'dersler', false);
+    openDetailFromHash(v);
   });
+}
+
+// Paylaşılabilir ders detay bağlantısı: #ders/BLG%20102E → dersler sekmesinde
+// o dersin detayını açar. openCourseDetail URL'yi bu biçime yazar.
+function openDetailFromHash(h) {
+  if (!h || !h.startsWith('ders/')) return;
+  const code = decodeURIComponent(h.slice(5)).trim();
+  if (code) openCourseDetail(code, { source: 'link' });
 }
 
 // Detay panelinden "bu hocanın geçmişinde ara" — geçmiş sekmesine geçip arama

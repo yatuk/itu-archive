@@ -8,8 +8,8 @@ OBS'nin ders programı sayfası sadece içinde bulunduğunuz dönemi gösteriyor
 bitiyor, veri gidiyor. Geçen sene bu dersi kim vermişti, kontenjan kaç kişide
 dolmuştu, hangi güne konmuştu? Hiçbirini geriye dönük soramıyorsunuz.
 
-Bu depo o veriyi her gün çekip git'e yazıyor. Şu an 2016-2017 Yaz'dan bugüne 27
-dönem, 64.309 şube kaydı duruyor içinde. Akademik takvim de dahil.
+Bu depo o veriyi her gün çekip git'e yazıyor. Şu an 2016-2017 Yaz'dan bugüne 28
+dönem, 68.773 şube kaydı duruyor içinde. Akademik takvim de dahil.
 
 ## Kaynaklar
 
@@ -19,6 +19,7 @@ dönem, 64.309 şube kaydı duruyor içinde. Akademik takvim de dahil.
 | `obs.itu.edu.tr/public/FinalTakvimi` | Final ve ek sınav takvimi |
 | `obs.itu.edu.tr/public/GenelTanimlamalar/OnsartAra` | Katalogdaki her dersin önşartı |
 | `obs.itu.edu.tr/public/DersPlan` | Her programın güncel müfredatı, dönem dönem (önlisans `_OL`, lisans `_LS`, yüksek lisans `_YL`, doktora `_DR`) |
+| `obs.itu.edu.tr/public/DersKatalog` | Ders katalog formu: kredi (T+U+L/yerel/AKTS), dil, ders tanımı, öğrenme çıktıları, haftalık konular, kaynak kitaplar |
 | `takvim.sis.itu.edu.tr` | 4 akademik yılın takvimi |
 | Tarihsel dökümler | 2016-2017'ye kadar geçmiş dönemler, `-backfill` ile |
 
@@ -59,13 +60,18 @@ günün yanında saat dilimi (sabah/öğle/akşam), seviye (OL/LS/LU/LUI) ve ö�
 yöntemini de kapsıyor. Aktif filtreler tek tıkla kaldırılabilen çipler olarak
 görünüyor. Şubeler seçilebiliyor. Seçilenler ayrı CSV olarak indirilebiliyor ve
 "yalnızca seçilenler" modunda zaman çizelgesinde çakışma kontrolüne sokuluyor.
-Bir dersin adına tıklayınca detay paneli açılıyor: oturumlar, programlar,
-önşart, dolma süresi, hocanın geçmişinde arama. "Zaman çizelgesi" düğmesi gün ×
+Bir dersin adına tıklayınca detay paneli açılıyor: o dönemdeki tüm şubeler,
+haftalık oturum saati, programlar, önşart, dolma süresi, geçmiş dönemler
+(doluluk grafiği) ve varsa katalog bilgisi (kredi, AKTS, dil, içerik, çıktılar,
+kaynak kitaplar). Panel her sekmeyle paylaşılıyor — önşart haritasından, seçmeli
+havuzdan, geçmişten ve sınavlardan da açılıyor — ve kendi paylaşılabilir
+bağlantısına sahip (`#ders/BLG%20102E`). "Zaman çizelgesi" düğmesi gün ×
 saat ızgarasında çakışan dersleri kırmızı işaretler. Sekmeler arası geçiş
 tarayıcı geçmişine yazılıyor, geri/ileri çalışır. Üstteki "görünüm" seçici ile
-fosfor/açık/yüksek kontrast temalar arasında geçebilirsiniz. Geçmiş sekmesinde
-bir dersin detayında dönem dönem kontenjan ve doluluk grafiği var. Sınavlar
-sekmesinde tür ve bina filtresi var.
+sade (varsayılan), fosfor, açık ve yüksek kontrast temalar arasında geçebilirsiniz.
+Sade tema terminal görünümünü yumuşatır; fosfor kimliğini korur ve istenince seçilir.
+Geçmiş sekmesinde bir dersin detayında dönem dönem kontenjan ve doluluk grafiği
+var. Sınavlar sekmesinde tür ve bina filtresi var.
 
 İlk denemede bu grafik force-directed bir yığındı, Obsidian'ın grafik görünümü
 gibi organik ama kaotik. Kenarlar yalnızca bir düğüme tıklanınca netleşiyordu,
@@ -79,6 +85,7 @@ go run ./cmd/scrape            # ders programı, sınav takvimi, önşartlar, ak
 go run ./cmd/scrape -backfill  # geçmiş dönemleri de al, bir kez yeterli
 go run ./cmd/quota             # kontenjan doluluğundan tek ölçüm al
 go run ./cmd/curriculum        # tüm programların müfredatını çek (önlisans + lisansüstü dahil)
+go run ./cmd/catalog           # ders katalog verisini çek (kredi, AKTS, içerik) — haftalık
 go run ./cmd/validate          # docs/data bütünlüğünü denetle (kopya CRN, sarkan kenar...)
 ```
 
@@ -141,6 +148,8 @@ docs/data/
   prereq/graph.json                 # katalogdaki her dersin önşart ilişkisi
   curriculum/index.json             # lisans program listesi
   curriculum/<PROGRAM_LS>.json      # bir programın dönem dönem müfredatı
+  catalog/index.json                # katalog tarama özeti (kapsam sayıları)
+  catalog/<BRANŞ>.json              # ders başına katalog: kredi, AKTS, dil, içerik, çıktılar
 ```
 
 Dönem adları `2025-2026-guz` biçiminde. Branş bazlı bölmenin iki sebebi var:
@@ -230,6 +239,11 @@ Güvenlik Mühendisliği, Yapay Zeka gibi yeni açılan bazı programlar) OBS'de
 yayınlanmış bir plan sürümüne sahip değil. Önlisans (1), yüksek lisans (3) ve
 doktora (4) programları da çekiliyor. İkinci öğretim (ID 5) kodları yüksek
 lisansla (_YL) çakıştığı için kapsam dışı.
+
+Katalog verisi haftalık taramayla doluyor; OBS'de katalog formu olmayan
+(eski/kaldırılmış) dersler bu kapsamda yer almıyor. Bazı derslerin (ör. bitirme
+çalışması) tanım alanı kaynakta boş — kayıt yine yazılıyor, yalnızca içerik
+bölümü panelde görünmüyor. Kapsam sayıları `catalog/index.json`'da.
 
 ## Uyarı
 

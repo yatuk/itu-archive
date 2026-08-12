@@ -857,6 +857,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 }
 .termcard h3 { margin: 0 0 6px; font-size: 16px; color: var(--acid); letter-spacing: .06em; }
 .termcard .meta { color: var(--dim); font-size: 12px; }
+.termcard .meta.warn { color: var(--amber); }
 .termcard .links { display: flex; gap: 8px; flex-wrap: wrap; }
 .termcard a.btn {
   color: var(--cyan); text-decoration: none; border: 1px solid var(--line-hot);

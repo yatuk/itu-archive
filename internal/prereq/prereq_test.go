@@ -3,6 +3,8 @@ package prereq
 import (
 	"reflect"
 	"testing"
+
+	"itu-scraper/internal/model"
 )
 
 // splitCells, OBS'nin kapanış etiketi eksik hücreleriyle başa çıkmalı.
@@ -39,5 +41,32 @@ func TestExtractCodesDedup(t *testing.T) {
 	got := extractCodes("BLG 101E Veya BLG 101E")
 	if len(got) != 1 {
 		t.Errorf("tekrarlar elenmeli: %v", got)
+	}
+}
+
+func TestReverseIndex(t *testing.T) {
+	g := &model.PrereqGraph{
+		Edges: []model.PrereqEdge{
+			{From: "MAT 101", To: "BLG 101E"},
+			{From: "MAT 101", To: "ELE 101"},
+			{From: "BLG 101E", To: "BLG 201"},
+		},
+	}
+	got := ReverseIndex(g)
+	want := map[string][]string{
+		"MAT 101":  {"BLG 101E", "ELE 101"},
+		"BLG 101E": {"BLG 201"},
+	}
+	if len(got) != len(want) {
+		t.Fatalf("ReverseIndex anahtar sayısı = %d, want %d", len(got), len(want))
+	}
+	for k, v := range want {
+		if !reflect.DeepEqual(got[k], v) {
+			t.Errorf("ReverseIndex[%q] = %v, want %v", k, got[k], v)
+		}
+	}
+	// Kenarı olmayan dersler haritada yok (boş dizi yazılmamalı).
+	if _, ok := got["YZV 000"]; ok {
+		t.Error("kenarsız ders ters indekste olmamalı")
 	}
 }

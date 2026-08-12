@@ -523,14 +523,14 @@ function renderTimetable() {
   html += '</tbody></table></div>';
 
   if (conflictCells) {
-    html += `<p class="tt-conflict-note">⚠ <b>${conflictCells}</b> zaman hücresinde birden çok ders çakışıyor. Çipe tıklayınca arama daralır.</p>`;
+    html += `<p class="tt-conflict-note">⚠ <b>${conflictCells}</b> zaman hücresinde birden çok ders çakışıyor. Çipe tıklayınca ders detayı açılır.</p>`;
   }
   wrap.innerHTML = html;
 
+  // Çipe tıklayınca ders detay paneli açılır (Faz 2.2: her yerden aynı panel).
   wrap.querySelectorAll('.tt-chip').forEach((ch) => {
     ch.addEventListener('click', () => {
-      $('#q').value = ch.dataset.code;
-      applyFilters();
+      window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: ch.dataset.code, source: 'tt' } }));
     });
   });
 }

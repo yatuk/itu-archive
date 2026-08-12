@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 
 import { fold, termLabel, buildingOf, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
-import { splitInstructors } from './course-detail.js';
+import { splitInstructors, obsDeepLink } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet } from '../views/program.js';
@@ -123,6 +123,14 @@ test('splitInstructors çoklu hocayı ayırır', () => {
   assert.deepEqual(splitInstructors(''), []);
   assert.deepEqual(splitInstructors(null), []);
   assert.deepEqual(splitInstructors('  '), []);
+});
+
+test('obsDeepLink koddan OBS katalog formu bağlantısı üretir', () => {
+  assert.equal(obsDeepLink('BLG 102E'),
+    'https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=102');
+  assert.ok(obsDeepLink('MAT 101').includes('bransKodu=MAT&dersNo=101'));
+  assert.equal(obsDeepLink(''), '');
+  assert.equal(obsDeepLink('ders'), '');
 });
 
 test('sessionHours oturum sürelerini toplar ve yuvarlar', () => {

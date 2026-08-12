@@ -32,6 +32,29 @@ export function splitInstructors(instr) {
   return String(instr ?? '').split(/[;,|]/).map((s) => s.trim()).filter(Boolean);
 }
 
+// OBS katalog formunun derin bağlantısı. Taban dersNo, kodun sayısal öneki
+// (TR/EN çiftleri tek sayfada birleşir: "BLG 102E" → dersNo=102).
+export function obsDeepLink(code) {
+  const m = String(code ?? '').match(/^([A-ZÇĞİÖŞÜ]{2,5})\s+(\d+)/);
+  if (!m) return '';
+  return 'https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=' +
+    encodeURIComponent(m[1]) + '&dersNo=' + encodeURIComponent(m[2]);
+}
+
+// Ters-önşart bölümünü doldurur: reverse.json'dan "bu dersi önşart isteyenler".
+// Veri yoksa (dosya yok, ders grafikte yok) bölüm sessizce gizlenir.
+async function loadReqBy(sec) {
+  const code = sec.dataset.code;
+  const reverse = await getJSON('data/prereq/reverse.json').catch(() => null);
+  if (!reverse || !reverse[code]) { sec.hidden = true; return; }
+  const reqs = reverse[code];
+  sec.innerHTML = `<h4>Bu dersi önşart isteyenler (${reqs.length})</h4>
+    <div class="d-req-list">${reqs.map((r) => `<button type="button" class="d-req" data-code="${esc(r)}">${esc(r)}</button>`).join('')}</div>`;
+  sec.querySelectorAll('.d-req').forEach((b) => b.addEventListener('click', () => {
+    openCourseDetail(b.dataset.code, { source: 'reverse' });
+  }));
+}
+
 // Doluluk ölçüm zamanı (Faz 0.4): "%100" anlık sanılmasın — kontenjan zaman
 // serisi günde bir tazeleniyor. Yalnızca bu dönem için ölçüm kaydı varsa döner.
 function measured(crn) {
@@ -129,20 +152,25 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     getJSON(`data/catalog/${branch}.json`).then((all) => all[code] || null).catch(() => null),
   ]);
   const secs = Array.isArray(list) ? list.filter((s) => s.code === code) : [];
+  const obsLink = obsDeepLink(code);
 
   if (!secs.length) {
     content.innerHTML = `
-      <h3 id="detail-title">${esc(code)}</h3>
+      <h3 id="detail-title">${esc(code)} ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}</h3>
       <p class="empty">Bu ders <b>${esc(termLabel(t))}</b> döneminde açık değil.</p>
+      <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
+        <p class="empty">yükleniyor…</p></section>
       ${histHtml(hist)}
       ${catalogHtml(cat)}`;
     wireHistButtons(content);
+    const reqBy = content.querySelector('.d-req-by');
+    if (reqBy) loadReqBy(reqBy);
     return;
   }
 
   const programs = [...new Set(secs.flatMap((s) => s.programs || []))];
   content.innerHTML = `
-    <h3 id="detail-title">${esc(code)} <span>${esc(secs[0].name)}</span></h3>
+    <h3 id="detail-title">${esc(code)} <span>${esc(secs[0].name)}</span>${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}</h3>
     <div class="d-meta">${[branch, secs[0].level, secs[0].method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
     <section class="d-secs">
       <h4>Bu dönem · ${secs.length} şube</h4>
@@ -151,12 +179,25 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     <section class="d-progs">
       <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>
       <div class="d-prog-list">${programs.length
-        ? programs.map((p) => `<span class="d-prog">${esc(p)}</span>`).join('')
+        ? programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="Derslerde bu programa göre filtrele">${esc(p)}</button>`).join('')
         : '<span class="d-prog d-prog-none">kısıtlama yok — tüm programlar alabilir</span>'}</div>
     </section>
+    <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
+      <p class="empty">yükleniyor…</p></section>
     ${catalogHtml(cat)}
     ${histHtml(hist)}`;
   wireHistButtons(content);
+  wireProgButtons(content);
+  const reqBy = content.querySelector('.d-req-by');
+  if (reqBy) loadReqBy(reqBy);
+}
+
+// Alabilen program çiplerine tıklayınca dersler sekmesinde o programa göre filtrele.
+function wireProgButtons(content) {
+  content.querySelectorAll('.d-prog[data-program]').forEach((b) => b.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('itu:goto-courses', { detail: { program: b.dataset.program } }));
+    closeCourseDetail();
+  }));
 }
 
 // Katalog bölümü (Faz 3). Veri yoksa hiç render edilmez — panel eski haliyle

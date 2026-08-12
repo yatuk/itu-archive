@@ -256,6 +256,11 @@ func scrapePrereqs(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	if err := st.WriteJSON(graph, "data", "prereq", "graph.json"); err != nil {
 		return err
 	}
+	// Ters indeks (Faz 2.4): detay paneli graph.json'un 1.9 MB'ını yüklemeden
+	// "bu dersi önşart isteyenler"i çeker.
+	if err := st.WriteJSON(prereq.ReverseIndex(graph), "data", "prereq", "reverse.json"); err != nil {
+		return err
+	}
 	logf("önşart grafiği: %d düğüm, %d kenar (%d branş)", len(graph.Nodes), len(graph.Edges), len(branches))
 	return nil
 }

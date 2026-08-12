@@ -27,6 +27,7 @@ const pendingView = location.hash.slice(1);
 async function boot() {
   I18N.translateDOM();
   initTheme();
+  initLangButton();
   wireTabs();
   wireHistoryJump();
   window.addEventListener('itu:goto-program', () => { if (showView) showView('program', true); });
@@ -124,6 +125,16 @@ function initTheme() {
   matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
     if (localStorage.getItem('itu-theme') === 'auto') domApply('auto');
   });
+}
+
+// TR/EN düğmesi (Faz 5.3): mevcut dilin karşıtına geçer. setLang tercihi
+// localStorage'a yazıp ?lang= ile sayfayı yeniden yükler — görünümler boot'ta
+// I18N.t ile yeniden render edilir, çeviri eksiksiz olur.
+function initLangButton() {
+  const btn = $('#lang-btn');
+  if (!btn) return;
+  btn.setAttribute('aria-pressed', String(I18N.lang === 'en'));
+  btn.addEventListener('click', () => I18N.setLang(I18N.lang === 'en' ? 'tr' : 'en'));
 }
 
 // Sade temasında sekme adları düz ("Dersler"), fosfor/CRT'de numaralı

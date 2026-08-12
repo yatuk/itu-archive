@@ -513,6 +513,31 @@ import { state } from './core/store.js';
 
     bindInput() {
       const c = this.canvas;
+      // Klavye erişimi (Faz 5.4): canvas odaklanabilir; ok tuşları odaklanan
+      // düğümü ekrandaki konuma göre yönlendirir. role="img" statik olmaktan
+      // çıkar — arama kutusu zaten aynı focusNode'a gider.
+      c.tabIndex = 0;
+      c.setAttribute('aria-label', 'Önşart haritası — odaklanmak için ok tuşlarını kullan');
+      c.addEventListener('keydown', (e) => {
+        if (!this.nodes || !this.focus) return;
+        const cur = this.byCode.get(this.focus);
+        if (!cur) return;
+        const steps = e.key.startsWith('Arrow') ? 1 : 0;
+        if (!steps) return;
+        e.preventDefault();
+        let best = null, bestD = Infinity;
+        const dir = { ArrowUp: [0, -1], ArrowDown: [0, 1], ArrowLeft: [-1, 0], ArrowRight: [1, 0] }[e.key];
+        for (const n of this.nodes) {
+          if (n.code === this.focus) continue;
+          const dx = n.x - cur.x, dy = n.y - cur.y;
+          // Yönle uyumlu (skaler çarpım pozitif) en yakın düğümü seç.
+          const dot = dx * dir[0] + dy * dir[1];
+          if (dot <= 0) continue;
+          const dist = dx * dx + dy * dy;
+          if (dist < bestD) { bestD = dist; best = n; }
+        }
+        if (best) this.focusNode(best.code);
+      });
       c.addEventListener('wheel', (e) => {
         if (!this.nodes) return;
         e.preventDefault();

@@ -77,6 +77,76 @@ export function buildingOf(place) {
   return s.split('/').pop().split('-')[0].trim();
 }
 
+// Türkçe takvim tarihi: "09 Temmuz 2026" -> yerel gece yarısı Date.
+// Çözümlenemeyen girdilerde (biçim bozuk, bilinmeyen ay) null döner.
+const TR_MONTHS = {
+  Ocak: 0, Şubat: 1, Mart: 2, Nisan: 3, Mayıs: 4, Haziran: 5,
+  Temmuz: 6, Ağustos: 7, Eylül: 8, Ekim: 9, Kasım: 10, Aralık: 11,
+};
+export function parseTurkishDate(str) {
+  const m = String(str ?? '').trim().match(/^(\d{1,2})\s+([^\s\d]+)\s+(\d{4})$/);
+  if (!m) return null;
+  const month = TR_MONTHS[m[2]];
+  if (month === undefined) return null;
+  const day = Number(m[1]);
+  const d = new Date(Number(m[3]), month, day);
+  // Date taşan günü devreder (32 Ocak → 1 Şubat); taşmayı geri al:
+  if (isNaN(d) || d.getDate() !== day || d.getMonth() !== month) return null;
+  return d;
+}
+
+// Takvim tarihleri çoğunlukla aralık olur: "24 - 26 Ağustos 2026",
+// "28 Ağustos - 01 Eylül 2023" veya "29 Aralık 2025 - 02 Ocak 2026".
+// {start, end} Date çiftine çevirir; tek tarihte start === end.
+// Çözümlenemezse null döner.
+export function parseTurkishDateRange(str) {
+  const s = String(str ?? '').trim();
+  if (!s) return null;
+  const one = parseTurkishDate(s);
+  if (one) return { start: one, end: one };
+  let m = s.match(/^(\d{1,2})\s*-\s*(\d{1,2})\s+([^\s\d]+)\s+(\d{4})$/); // "24 - 26 Ağustos 2026"
+  if (m) {
+    const start = parseTurkishDate(`${m[1]} ${m[3]} ${m[4]}`);
+    const end = parseTurkishDate(`${m[2]} ${m[3]} ${m[4]}`);
+    if (start && end && end >= start) return { start, end };
+    return null;
+  }
+  m = s.match(/^(\d{1,2})\s+([^\s\d]+)\s*-\s*(\d{1,2})\s+([^\s\d]+)\s+(\d{4})$/); // "28 Ağustos - 01 Eylül 2023"
+  if (m) {
+    const start = parseTurkishDate(`${m[1]} ${m[2]} ${m[5]}`);
+    const end = parseTurkishDate(`${m[3]} ${m[4]} ${m[5]}`);
+    if (start && end && end >= start) return { start, end };
+    return null;
+  }
+  m = s.match(/^(\d{1,2})\s+([^\s\d]+)\s+(\d{4})\s*-\s*(\d{1,2})\s+([^\s\d]+)\s+(\d{4})$/); // "29 Aralık 2025 - 02 Ocak 2026"
+  if (m) {
+    const start = parseTurkishDate(`${m[1]} ${m[2]} ${m[3]}`);
+    const end = parseTurkishDate(`${m[4]} ${m[5]} ${m[6]}`);
+    if (start && end && end >= start) return { start, end };
+    return null;
+  }
+  return null;
+}
+
+// Takvim etkinliğini bugüne göre sınıflandırır: { past, now, label }.
+// label canlı hesaptır — scrape anına sabitlenmiş `remaining` etiketine
+// güvenmez (bayat kalıp yanlış "geçti" diyebilir). Aralıklı tarihte
+// geçmiş = bitiş bugünden önce, devam = bugün aralık içinde.
+// Tarih çözümlenemezse etkinlik "gelecek" sayılır (boş ekran üretmemek için).
+export function calendarDayState(dateStr, today = new Date()) {
+  const r = parseTurkishDateRange(dateStr);
+  if (!r) return { past: false, now: false, label: '' };
+  const start = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const diff = (d) => Math.round((start - d) / 86400000); // >0 geçmiş, 0 bugün, <0 gelecek
+  const ds = diff(r.start);
+  const de = diff(r.end);
+  if (de > 0) return { past: true, now: false, label: de === 1 ? 'Dün bitti' : `${de} gün geçti` };
+  if (ds > 0) return { past: false, now: true, label: 'Devam ediyor' };
+  const ahead = -ds;
+  if (ahead === 0) return { past: false, now: true, label: 'Bugün' };
+  return { past: false, now: false, label: ahead === 1 ? 'Yarın' : `${ahead} gün kaldı` };
+}
+
 // CSV indirme (Excel için BOM'lu).
 export function downloadCSV(filename, headers, rows) {
   const cell = (v) => {

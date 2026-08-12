@@ -1,7 +1,7 @@
 // Akademik takvim görünümü: seçilen yılın takvimini tabloya göre gruplar,
 // geçmiş etkinlikleri isteğe bağlı gizler.
 
-import { $, getJSON, esc, setStatus } from '../core/utils.js';
+import { $, getJSON, esc, setStatus, calendarDayState, fmtDate } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { initReveal } from '../core/reveal.js';
 
@@ -37,14 +37,16 @@ function renderCalendar() {
 
   const groups = new Map();
   for (const ev of cal.events) {
-    const past = /geçti/.test(ev.remaining);
-    if (upcomingOnly && past) continue;
+    const st = calendarDayState(ev.date);
+    if (upcomingOnly && st.past) continue;
     if (!groups.has(ev.table)) groups.set(ev.table, []);
-    groups.get(ev.table).push({ ...ev, past, now: /devam ediyor/i.test(ev.remaining) });
+    // Etiket canlı hesaptan; tarih çözümlenemediyse kazıyıcının etiketine düş.
+    groups.get(ev.table).push({ ...ev, past: st.past, now: st.now, left: st.label || ev.remaining });
   }
 
   if (!groups.size) {
-    $('#calendar').innerHTML = '<p class="empty">bu yılda gelecek etkinlik kalmadı</p>';
+    $('#calendar').innerHTML = '<p class="empty">bu akademik yıl için gelecek etkinlik yok' +
+      (cal.scrapedAt ? ` · son tarama ${fmtDate(cal.scrapedAt)}` : '') + '</p>';
     return;
   }
 
@@ -54,7 +56,7 @@ function renderCalendar() {
       evs.map((e) => `<li class="${e.now ? 'now' : e.past ? 'past' : ''}">
         <span>${esc(e.title)}</span>
         <span class="date">${esc(e.date)}</span>
-        <span class="left">${esc(e.remaining)}</span></li>`).join('') +
+        <span class="left">${esc(e.left)}</span></li>`).join('') +
       '</ol></section>';
   }
   $('#calendar').innerHTML = html;

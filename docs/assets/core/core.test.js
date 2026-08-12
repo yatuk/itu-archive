@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { fold, termLabel, buildingOf } from './utils.js';
+import { fold, termLabel, buildingOf, parseTurkishDate, parseTurkishDateRange, calendarDayState } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
@@ -29,6 +29,58 @@ test('buildingOf yer alanından bina ayıklar', () => {
   assert.equal(buildingOf('Süleyman Demirel Kültür Merkezi'), 'Süleyman Demirel Kültür Merkezi');
   assert.equal(buildingOf(''), '');
   assert.equal(buildingOf(undefined), '');
+});
+
+test('parseTurkishDate Türkçe ay adını Date yapar', () => {
+  assert.deepEqual(parseTurkishDate('09 Temmuz 2026'), new Date(2026, 6, 9));
+  assert.deepEqual(parseTurkishDate('1 Ocak 2024'), new Date(2024, 0, 1));
+  assert.deepEqual(parseTurkishDate('31 Aralık 2025'), new Date(2025, 11, 31));
+});
+
+test('parseTurkishDate bozuk girdide null döner', () => {
+  assert.equal(parseTurkishDate(''), null);
+  assert.equal(parseTurkishDate('foo'), null);
+  assert.equal(parseTurkishDate('32 Ocak 2026'), null);
+  assert.equal(parseTurkishDate('09 Bogus 2026'), null);
+  assert.equal(parseTurkishDate(null), null);
+});
+
+test('parseTurkishDateRange aralıkları ve tek tarihi çözer', () => {
+  assert.deepEqual(parseTurkishDateRange('24 - 26 Ağustos 2026'),
+    { start: new Date(2026, 7, 24), end: new Date(2026, 7, 26) });
+  assert.deepEqual(parseTurkishDateRange('28 Ağustos - 01 Eylül 2023'),
+    { start: new Date(2023, 7, 28), end: new Date(2023, 8, 1) });
+  assert.deepEqual(parseTurkishDateRange('29 Aralık 2025 - 02 Ocak 2026'),
+    { start: new Date(2025, 11, 29), end: new Date(2026, 0, 2) });
+  const one = parseTurkishDateRange('09 Temmuz 2026');
+  assert.deepEqual(one, { start: new Date(2026, 6, 9), end: new Date(2026, 6, 9) });
+  assert.equal(parseTurkishDateRange('Bilinmiyor'), null);
+  assert.equal(parseTurkishDateRange(''), null);
+});
+
+test('calendarDayState tek tarihte geçmiş/bugün/gelecek sınıflandırır', () => {
+  const today = new Date(2026, 7, 13); // 13 Ağustos 2026
+  assert.deepEqual(calendarDayState('09 Temmuz 2026', today), { past: true, now: false, label: '35 gün geçti' });
+  assert.deepEqual(calendarDayState('13 Ağustos 2026', today), { past: false, now: true, label: 'Bugün' });
+  const future = calendarDayState('09 Aralık 2026', today);
+  assert.equal(future.past, false);
+  assert.equal(future.now, false);
+  assert.ok(future.label.endsWith('gün kaldı'));
+});
+
+test('calendarDayState aralıkta devam/geçmiş/gelecek sınıflandırır', () => {
+  const today = new Date(2026, 7, 13); // 13 Ağustos 2026
+  // Bitmemiş, bugün içinde sürüyor.
+  assert.deepEqual(calendarDayState('10 - 15 Ağustos 2026', today), { past: false, now: true, label: 'Devam ediyor' });
+  // Bitiş bugünden önce -> geçmiş (bitişe göre).
+  assert.equal(calendarDayState('01 - 05 Ağustos 2026', today).past, true);
+  // Başlangıç bugünden sonra -> gelecek (başlangıca göre).
+  assert.equal(calendarDayState('24 - 26 Ağustos 2026', today).past, false);
+  assert.ok(calendarDayState('24 - 26 Ağustos 2026', today).label.includes('11 gün kaldı'));
+});
+
+test('calendarDayState çözümlenemeyen tarihi "gelecek" sayar', () => {
+  assert.deepEqual(calendarDayState('Belirsiz', new Date(2026, 7, 13)), { past: false, now: false, label: '' });
 });
 
 test('fillBar kapasitesiz şubede çubuk basmaz', () => {

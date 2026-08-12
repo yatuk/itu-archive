@@ -1,7 +1,7 @@
 // Akademik takvim görünümü: seçilen yılın takvimini tabloya göre gruplar,
 // geçmiş etkinlikleri isteğe bağlı gizler.
 
-import { $, getJSON, esc, setStatus, calendarDayState, fmtDate } from '../core/utils.js';
+import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { initReveal } from '../core/reveal.js';
 
@@ -16,6 +16,8 @@ export function initCalendar() {
   $('#f-year').addEventListener('change', () => loadCalendar($('#f-year').value, $('#f-caltype').value));
   $('#f-caltype').addEventListener('change', () => loadCalendar($('#f-year').value, $('#f-caltype').value));
   $('#f-upcoming').addEventListener('change', renderCalendar);
+  const ics = $('#cal-ics');
+  if (ics) ics.addEventListener('click', exportICS);
   $('#f-caltype').innerHTML = '<option value="">tümü</option>' +
     CAL_TYPES.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
   inited = true;
@@ -74,4 +76,20 @@ function renderCalendar() {
   }
   $('#calendar').innerHTML = html;
   initReveal($('#calendar'));
+}
+
+// Akademik takvimi .ics olarak dışa aktarır (Faz 4.5). Scraper'ın ISO
+// start/end'i kullanılır; eski dosyalarda (yoksa) Türkçe tarih ayrıştırılır.
+function exportICS() {
+  const cal = state.calendar;
+  if (!cal || !cal.events) return;
+  const events = cal.events.map((e) => ({
+    uid: `${cal.yearId}-${esc(e.title)}`,
+    title: `${e.table}: ${e.title}`,
+    // Scraper ISO start/end; eski dosyalarda yoksa Türkçe date string'i (tüm gün).
+    startISO: e.start || e.date,
+    endISO: e.end || e.date,
+    desc: e.remaining,
+  }));
+  downloadICS(`itu-takvim-${cal.yearId}.ics`, events);
 }

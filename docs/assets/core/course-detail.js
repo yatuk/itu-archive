@@ -228,9 +228,16 @@ function catalogHtml(cat) {
   if (c.ects) parts.push(`AKTS ${c.ects}`);
   const details = (title, open, body) => `<details class="d-cat-details"${open ? ' open' : ''}><summary>${title}</summary>${body}</details>`;
   const list = (items, tag) => items.map((x) => `<li>${esc(x)}</li>`).join('');
+  // Faz 4.2: vize haftası göstergesi — "Hafta N — ... Ara Sınav ..." satırlarını
+  // sayar. Katalog planı yoksa bölüm sessiz.
+  const midterms = (cat.weeklyTopics || []).filter((t) => /ara\s*sınav/i.test(t));
+  const midtermLine = midterms.length
+    ? `<p class="d-cat-midterm">vize: ${esc(midterms.map((t) => t.split(' — ')[0] || t).join(', '))}</p>`
+    : '';
   return `<section class="d-cat">
     <h4>Katalog</h4>
     ${parts.length ? `<p class="d-cat-credits">${esc(parts.join(' · '))}${cat.language ? ` · dil: ${esc(cat.language)}` : ''}</p>` : ''}
+    ${midtermLine}
     ${cat.description ? details('Ders içeriği', false, `<p>${esc(cat.description)}</p>`) : ''}
     ${(cat.outcomes || []).length ? details(`Öğrenme çıktıları (${cat.outcomes.length})`, true, `<ul>${list(cat.outcomes)}</ul>`) : ''}
     ${(cat.weeklyTopics || []).length ? details(`Haftalık konular (${cat.weeklyTopics.length})`, false, `<ol>${list(cat.weeklyTopics)}</ol>`) : ''}

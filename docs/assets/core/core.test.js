@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { fold, termLabel, buildingOf, parseTurkishDate, parseTurkishDateRange, calendarDayState } from './utils.js';
+import { fold, termLabel, buildingOf, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
@@ -81,6 +81,15 @@ test('calendarDayState aralıkta devam/geçmiş/gelecek sınıflandırır', () =
 
 test('calendarDayState çözümlenemeyen tarihi "gelecek" sayar', () => {
   assert.deepEqual(calendarDayState('Belirsiz', new Date(2026, 7, 13)), { past: false, now: false, label: '' });
+});
+
+test('sessionHours oturum sürelerini toplar ve yuvarlar', () => {
+  assert.equal(sessionHours(['08:30/11:29']), 3);
+  assert.equal(sessionHours(['08:30/11:29', '13:00/15:59']), 6);
+  assert.equal(sessionHours(['09:00/12:00', '13:00/16:00', '18:00/21:00']), 9);
+  assert.equal(sessionHours([]), 0);
+  assert.equal(sessionHours(null), 0);
+  assert.equal(sessionHours(['Ders saati ilan edilecek']), 0);
 });
 
 test('fillBar kapasitesiz şubede çubuk basmaz', () => {

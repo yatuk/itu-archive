@@ -59,9 +59,9 @@ function renderExams() {
     ? `<b>${hits.length}</b> / ${state.exams.exams.length} sınav · ${esc(state.exams.term || '')}`
     : 'Bu dönem için sınav takvimi henüz ilan edilmemiş.';
 
-  fillRows($('#erows'), hits.slice(0, 400), (e) => `
+  const frag = fillRows($('#erows'), hits.slice(0, 400), (e) => `
     <tr><td class="crn">${esc(e.crn)}</td>
-        <td class="code"><b>${esc(e.code)}</b></td>
+        <td class="code"><button type="button" class="row-toggle x-detail" data-code="${esc(e.code)}"><b>${esc(e.code)}</b></button></td>
         <td>${esc(e.name)}</td>
         <td>${esc(e.instructor || '—')}</td>
         <td>${esc(e.type)}</td>
@@ -69,4 +69,9 @@ function renderExams() {
         <td>${esc(e.date)}</td>
         <td class="when">${esc(e.day)} ${esc(e.time)}</td></tr>`,
   { empty: 'eşleşen sınav yok', colspan: 8 });
+  if (frag) {
+    frag.querySelectorAll('.x-detail').forEach((b) => b.addEventListener('click', () => {
+      window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: b.dataset.code, source: 'sinavlar' } }));
+    }));
+  }
 }

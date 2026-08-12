@@ -106,7 +106,8 @@ async function showCourse(code, branch) {
   $('#hdetail').innerHTML = `
     <article class="hcard reveal">
       <h3>${esc(c.code)} <span>${esc(c.name)}</span></h3>
-      <p class="meta">${byTerm.size} dönemde açıldı · açıldığı dönemler: ${esc(rhythm)}</p>
+      <p class="meta">${byTerm.size} dönemde açıldı · açıldığı dönemler: ${esc(rhythm)}
+        <button type="button" class="btn-ghost h-detail" data-code="${esc(c.code)}">bu dersi detaylandır</button></p>
       ${trendChart(byTerm)}
       <div class="tablewrap"><table class="htable" aria-label="${esc(c.code)} dönem geçmişi">
         <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th>Gün</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr></thead>
@@ -119,6 +120,12 @@ async function showCourse(code, branch) {
         <td class="when">${esc(r.days || '—')}</td>
         <td class="num">${r.cap}</td><td class="num">${r.enr}</td>
         <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`);
+  const dBtn = $('#hdetail .h-detail');
+  if (dBtn) {
+    dBtn.addEventListener('click', () => {
+      window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: dBtn.dataset.code, source: 'gecmis' } }));
+    });
+  }
   initReveal($('#hdetail'));
   $('#hdetail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }

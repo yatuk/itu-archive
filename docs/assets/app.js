@@ -7,6 +7,7 @@ import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
 import { state, markIndexReady } from './core/store.js';
 import { I18N } from './i18n.js';
 import { initCourses, loadTerm, applyFilters } from './views/courses.js';
+import { initCourseDetail } from './core/course-detail.js';
 import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
 import { initExams, onShow as examsShow } from './views/exams.js';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
@@ -66,6 +67,7 @@ async function boot() {
 
   // Görünümlerin olay bağlantılarını kur (veri yükleme sekme açılınca).
   initCourses();
+  initCourseDetail();
   initCalendar();
   initExams();
   initHistory();

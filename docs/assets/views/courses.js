@@ -12,6 +12,7 @@ import { fillBar } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
+import { openCourseDetail } from '../core/course-detail.js';
 
 const PAGE = 200;
 const TIME_LABEL = { sabah: 'sabah (<12:00)', ogle: 'öğle (12:00-17:00)', aksam: 'akşam (≥17:00)' };
@@ -43,9 +44,6 @@ export function initCourses() {
   $('#sel-clear').addEventListener('click', clearSelection);
   $('#sel-only').addEventListener('change', () => { if (ttOn) renderTimetable(); });
   $('#sel-send').addEventListener('click', sendToProgram);
-  $('#detail-close').addEventListener('click', closeDetail);
-  $('#detail-panel').addEventListener('click', (e) => { if (e.target.id === 'detail-panel') closeDetail(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#detail-panel').hidden) closeDetail(); });
   wireSort();
 }
 
@@ -105,18 +103,6 @@ export async function loadQuota(slug) {
   } catch {
     state.quota = null; // bu dönem için henüz ölçüm yok
   }
-}
-
-// Dolma süresini insanca yazar: "kayıt başladıktan 3 sa 20 dk sonra doldu".
-function fillNote(crn) {
-  const q = state.quota?.get(crn);
-  if (!q || !q.filledAt) return '';
-  const m = q.fillMinutes;
-  if (!m) return 'ilk ölçümde zaten doluydu';
-  const h = Math.floor(m / 60);
-  const rest = m % 60;
-  const span = h ? `${h} sa${rest ? ` ${rest} dk` : ''}` : `${rest} dk`;
-  return `ilk ölçümden ${span} sonra doldu`;
 }
 
 export function applyFilters() {
@@ -378,78 +364,12 @@ function renderRows(append) {
 
 /* ---------- detay paneli (modal) ---------- */
 
-let lastDetailFocus = null;
-
-// termSlug verilmezse DERSLER'deki aktif dönem kullanılır; program görünümü
-// kendi dönemini geçebilir.
-export async function openDetail(row, termSlug) {
-  const [crn, code, name, branch] = row;
-  const t = termSlug || state.termSlug;
-  lastDetailFocus = document.activeElement;
-  const panel = $('#detail-panel');
-  const content = $('#detail-content');
-  panel.hidden = false;
-  document.body.classList.add('modal-open');
-  content.innerHTML = '<p class="empty">yükleniyor…</p>';
-  $('#detail-close').focus();
-
-  let sec = null;
-  try {
-    const list = await getJSON(`data/terms/${t}/branches/${branch}.json`);
-    sec = list.find((s) => s.crn === crn);
-  } catch { /* ağ hatası: aşağıda "detay yok" gösterilir */ }
-
-  if (!sec) {
-    content.innerHTML = '<p class="empty">detay bulunamadı</p>';
-    return;
-  }
-
-  const sessions = sec.days.map((d, i) => [d, sec.times[i] || '', sec.rooms[i] || '', sec.buildings[i] || '']
-    .filter(Boolean).join(' · ')).join('<br>');
-  const pct = sec.capacity ? `%${Math.round((sec.enrolled / sec.capacity) * 100)}` : '';
-  const note = fillNote(crn);
-  const canHistory = sec.instructor && sec.instructor !== '-' && sec.instructor !== '***';
-  const programs = sec.programs || [];
-
-  // "Alabilen programlar" belirgin ve her zaman görünür; boşsa kısıtlama yok.
-  const programsHtml = programs.length
-    ? programs.map((p) => `<span class="d-prog">${esc(p)}</span>`).join('')
-    : '<span class="d-prog d-prog-none">kısıtlama yok — tüm programlar alabilir</span>';
-
-  content.innerHTML = `
-    <h3 id="detail-title">${esc(code)} <span>${esc(name)}</span></h3>
-    <div class="d-meta">${[branch, sec.level, sec.method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
-    <section class="d-progs">
-      <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>
-      <div class="d-prog-list">${programsHtml}</div>
-    </section>
-    <dl>
-      ${field('Öğretim üyesi', sec.instructor)}
-      ${field('Kontenjan', sec.capacity ? `${sec.enrolled} / ${sec.capacity} (${pct})` : '—')}
-      ${note ? field('Dolma', note) : ''}
-      ${sessions ? field('Oturumlar', sessions) : ''}
-      ${sec.prereq && sec.prereq !== '-' ? field('Önşart', sec.prereq) : ''}
-      ${sec.classReq && sec.classReq !== '-' ? field('Sınıf / kredi önşartı', sec.classReq) : ''}
-      ${sec.reserved && sec.reserved !== '-' ? field('Rezervasyon', sec.reserved) : ''}
-    </dl>
-    ${canHistory ? `<button type="button" class="btn-ghost d-hist" data-name="${esc(sec.instructor)}">bu hocanın geçmişinde ara</button>` : ''}`;
-
-  const histBtn = content.querySelector('.d-hist');
-  if (histBtn) {
-    histBtn.addEventListener('click', () => {
-      window.dispatchEvent(new CustomEvent('itu:goto-history', { detail: histBtn.dataset.name }));
-      closeDetail();
-    });
-  }
+// Detay paneli artık ortak bileşende (core/course-detail.js); bu fonksiyon
+// satır bilgisini aktarır. program.js ve tablo aynı imzayla çağırır.
+// termSlug verilmezse Dersler'deki aktif dönem kullanılır.
+export function openDetail(row, termSlug) {
+  openCourseDetail(row[1], { term: termSlug, crn: row[0], source: 'dersler' });
 }
-
-function closeDetail() {
-  $('#detail-panel').hidden = true;
-  document.body.classList.remove('modal-open');
-  if (lastDetailFocus && typeof lastDetailFocus.focus === 'function') lastDetailFocus.focus();
-}
-
-const field = (k, v) => (v ? `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>` : '');
 
 /* ---------- URL durumu ---------- */
 

@@ -147,6 +147,22 @@ export function calendarDayState(dateStr, today = new Date()) {
   return { past: false, now: false, label: ahead === 1 ? 'Yarın' : `${ahead} gün kaldı` };
 }
 
+// Oturum sürelerini toplar: ["08:30/11:29", "13:00/15:59"] -> 6 sa/hafta.
+// Oturum süresidir, resmî T+U+L kredisi değildir (katalog verisiyle gelir).
+// Saf — test edilebilir.
+export function sessionHours(times) {
+  if (!Array.isArray(times) || !times.length) return 0;
+  let mins = 0;
+  for (const t of times) {
+    const m = String(t).match(/^(\d{2}):(\d{2})\/(\d{2}):(\d{2})$/);
+    if (!m) continue;
+    const s = Number(m[1]) * 60 + Number(m[2]);
+    const e = Number(m[3]) * 60 + Number(m[4]);
+    if (e > s) mins += e - s;
+  }
+  return Math.round(mins / 60);
+}
+
 // CSV indirme (Excel için BOM'lu).
 export function downloadCSV(filename, headers, rows) {
   const cell = (v) => {

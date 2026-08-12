@@ -1,0 +1,59 @@
+name: not-dagilimi
+
+# Ders not dağılımları (harf notu → kişi sayısı). Dönem sonunda güncellenir;
+# ayda bir koşuyor. OBS'yi yormamak için rps limiti korunuyor. Kapsam yıl
+# geçmişindeki ders kodlarından türetiliyor; her ders için son 3 yıl çekilir.
+# <10 kişilik sınıflar etik sınır nedeniyle kaydedilmez (scraper tarafında).
+on:
+  schedule:
+    - cron: '41 5 7 * *' # ayın 7'sinde 05:41 UTC (aylık)
+  workflow_dispatch:
+
+concurrency:
+  group: grades
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  grades:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Not dağılımı çek
+        run: go run ./cmd/grades
+
+      - name: Doğrula
+        run: go run ./cmd/validate -quiet -skip-site
+
+      - name: Kapsam özeti
+        run: |
+          python - <<'EOF'
+          import json
+          ix = json.load(open('docs/data/grades/index.json'))
+          print(f"not dağılımı: {ix['terms']} dönem kaydı, {len(ix['branches'])} branş dosyası, yıllar {', '.join(ix['years'])}")
+          EOF
+
+      - name: Commit
+        run: |
+          if git diff --quiet -- docs/data/grades; then
+            echo 'Not dağılımında değişiklik yok.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name  'itu-scraper[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/data/grades
+          git commit -m "not dağılımı: $(date -u +'%Y-%m-%d') aylık taraması"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1

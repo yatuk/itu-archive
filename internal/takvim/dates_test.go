@@ -1,8 +1,11 @@
 package takvim
 
 import (
+	"encoding/json"
 	"strings"
 	"testing"
+
+	"itu-scraper/internal/model"
 )
 
 func TestParseTRDate(t *testing.T) {
@@ -43,15 +46,15 @@ func TestParseTRRange(t *testing.T) {
 		wantEnd   string
 		wantOK    bool
 	}{
-		{"09 Temmuz 2026", "2026-07-09", "2026-07-09", true},                // tek tarih
-		{"24 - 26 Ağustos 2026", "2026-08-24", "2026-08-26", true},          // aynı ay
-		{"28 Ağustos - 01 Eylül 2023", "2023-08-28", "2023-09-01", true},    // ay değişir
-		{"29 Aralık 2025 - 02 Ocak 2026", "2025-12-29", "2026-01-02", true}, // yıl değişir
-		{"07 - 09 Eylül 2026 23:59", "2026-09-07", "2026-09-09", true},      // kapanış saati soneki
-		{"09 Temmuz 2026 17:00", "2026-07-09", "2026-07-09", true},          // tek tarih + saat
-		{"28 Eylül 10:00 - 02 Ekim 2026 17:00", "2026-09-28", "2026-10-02", true}, // gömülü saat + yalnız 2. tarihte yıl
+		{"09 Temmuz 2026", "2026-07-09", "2026-07-09", true},                            // tek tarih
+		{"24 - 26 Ağustos 2026", "2026-08-24", "2026-08-26", true},                      // aynı ay
+		{"28 Ağustos - 01 Eylül 2023", "2023-08-28", "2023-09-01", true},                // ay değişir
+		{"29 Aralık 2025 - 02 Ocak 2026", "2025-12-29", "2026-01-02", true},             // yıl değişir
+		{"07 - 09 Eylül 2026 23:59", "2026-09-07", "2026-09-09", true},                  // kapanış saati soneki
+		{"09 Temmuz 2026 17:00", "2026-07-09", "2026-07-09", true},                      // tek tarih + saat
+		{"28 Eylül 10:00 - 02 Ekim 2026 17:00", "2026-09-28", "2026-10-02", true},       // gömülü saat + yalnız 2. tarihte yıl
 		{"02 Kasım 2026 09:00 - 02 Şubat 2027 17:00", "2026-11-02", "2027-02-02", true}, // iki tarihte de yıl + saat
-		{"30 Eylül 2026-15:30", "2026-09-30", "2026-09-30", true},           // tireyle bitişik saat
+		{"30 Eylül 2026-15:30", "2026-09-30", "2026-09-30", true},                       // tireyle bitişik saat
 		{"26 - 28 Ağustos 2026", "2026-08-26", "2026-08-28", true},
 		{"32 Ocak 2026", "", "", false}, // taşan gün
 		{"boş", "", "", false},
@@ -103,5 +106,22 @@ func TestAddISODates(t *testing.T) {
 func TestAddISODatesMalformed(t *testing.T) {
 	if _, err := AddISODates([]byte("{")); err == nil {
 		t.Error("çözümlenemez JSON hata dönmeli")
+	}
+}
+
+func TestCalendarTypeJSON(t *testing.T) {
+	// Type alanı tek türlü dosyada yazılmalı, birleşikte (boş) olmamalı.
+	cal := model.Calendar{Year: "X", YearID: "854", Type: "Lisans", Events: []model.CalendarEvent{}}
+	b, err := json.Marshal(cal)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(b), `"type":"Lisans"`) {
+		t.Errorf("type alanı yazılmadı: %s", b)
+	}
+	combined := model.Calendar{Year: "X", YearID: "854", Events: []model.CalendarEvent{}}
+	b2, _ := json.Marshal(combined)
+	if strings.Contains(string(b2), `"type"`) {
+		t.Errorf("birleşik takvimde type olmamalı: %s", b2)
 	}
 }

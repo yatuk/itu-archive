@@ -66,9 +66,15 @@ func (c *Client) Years(ctx context.Context) ([]Year, error) {
 	return years, nil
 }
 
-// Fetch, bir akademik yılın tüm takvim satırlarını çeker.
-func (c *Client) Fetch(ctx context.Context, y Year) (*model.Calendar, error) {
-	body, err := c.f.Text(ctx, base+"?akademikyil="+y.ID)
+// Fetch, bir akademik yılın takvim satırlarını çeker. takvimadi=0 ise o yılın
+// tüm tabloları gelir (tek sayfa); 15-20 arası tek bir takvim türünü seçer
+// (lisans, yatay-ÇAP, önkayıt, hazırlık, lisansüstü, II. öğretim).
+func (c *Client) Fetch(ctx context.Context, y Year, takvimadi int) (*model.Calendar, error) {
+	url := base + "?akademikyil=" + y.ID
+	if takvimadi > 0 {
+		url += "&takvimadi=" + fmt.Sprint(takvimadi)
+	}
+	body, err := c.f.Text(ctx, url)
 	if err != nil {
 		return nil, err
 	}

@@ -7,22 +7,33 @@ import { initReveal } from '../core/reveal.js';
 
 let inited = false;
 
+// Takvim türü seçenekleri — scraper'ın yazdığı calendar/<tür>/<yearId>.json ile
+// eşleşir (Faz 3C: lisans, yatay-ÇAP, önkayıt, hazırlık, lisansüstü, II. öğretim).
+const CAL_TYPES = ['Lisans', 'Yatay Geçiş / ÇAP / Yandal', 'Önkayıt', 'İngilizce Hazırlık', 'Lisansüstü', 'II. Öğretim Lisansüstü'];
+
 export function initCalendar() {
   if (inited) return;
-  $('#f-year').addEventListener('change', () => loadCalendar($('#f-year').value));
+  $('#f-year').addEventListener('change', () => loadCalendar($('#f-year').value, $('#f-caltype').value));
+  $('#f-caltype').addEventListener('change', () => loadCalendar($('#f-year').value, $('#f-caltype').value));
   $('#f-upcoming').addEventListener('change', renderCalendar);
+  $('#f-caltype').innerHTML = '<option value="">tümü</option>' +
+    CAL_TYPES.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
   inited = true;
 }
 
 export function onShow() {
   initCalendar();
-  if (!state.calendar && state.index) loadCalendar($('#f-year').value);
+  if (!state.calendar && state.index) loadCalendar($('#f-year').value, $('#f-caltype').value);
 }
 
-export async function loadCalendar(yearId) {
+export async function loadCalendar(yearId, type) {
   $('#calendar').innerHTML = '<p class="empty">yükleniyor…</p>';
   try {
-    state.calendar = await getJSON(`data/calendar/${yearId}.json`);
+    // Tür seçildiyse türe özgü dosya; yoksa birleşik (geriye uyumlu).
+    const path = type
+      ? `data/calendar/${encodeURIComponent(type)}/${yearId}.json`
+      : `data/calendar/${yearId}.json`;
+    state.calendar = await getJSON(path);
   } catch (e) {
     $('#calendar').innerHTML = `<p class="empty error">takvim yüklenemedi (${esc(e.message)})</p>`;
     return;

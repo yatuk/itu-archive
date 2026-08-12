@@ -94,12 +94,18 @@ func (c *Client) Fetch(ctx context.Context, y Year) (*model.Calendar, error) {
 			if len(cs) != 3 || cs[0] == "" {
 				continue
 			}
-			cal.Events = append(cal.Events, model.CalendarEvent{
+			ev := model.CalendarEvent{
 				Table:     section,
 				Title:     cs[0],
 				Date:      cs[1],
 				Remaining: cs[2],
-			})
+			}
+			// Makinece okunur ISO tarihi; çözümlenemeyen tarihte boş kalır
+			// (frontend yine de Türkçe `date`'i ayrıştırır).
+			if start, end, ok := ParseTRRange(ev.Date); ok {
+				ev.Start, ev.End = start, end
+			}
+			cal.Events = append(cal.Events, ev)
 		}
 	}
 	if len(cal.Events) == 0 {

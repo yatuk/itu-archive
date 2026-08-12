@@ -13,6 +13,7 @@ export const state = {
   examHay: [],
   hist: null,      // {codes, names} arama listeleri
   quota: null,     // aktif dönemin dolma özeti, CRN -> kayıt
+  quotaLast: null, // doluluk ölçümünün son zaman damgası (quota/.json "last")
   sort: { key: 'crn', dir: 1 },
   selected: new Set(), // seçili şubeler, "branş|crn" anahtarları
 };

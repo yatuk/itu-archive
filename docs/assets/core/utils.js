@@ -133,8 +133,18 @@ export function parseTurkishDateRange(str) {
 // güvenmez (bayat kalıp yanlış "geçti" diyebilir). Aralıklı tarihte
 // geçmiş = bitiş bugünden önce, devam = bugün aralık içinde.
 // Tarih çözümlenemezse etkinlik "gelecek" sayılır (boş ekran üretmemek için).
-export function calendarDayState(dateStr, today = new Date()) {
-  const r = parseTurkishDateRange(dateStr);
+//
+// isoOpsiyonel: scraper'ın yazdığı makinece okunur { start, end } (ISO "2006-01-02").
+// Varsa Türkçe metin ayrıştırmaya tercih edilir — scraper bazı biçimleri
+// (gömülü saatli aralıklar) JS'ten daha sağlam çözer.
+export function calendarDayState(dateStr, today = new Date(), iso) {
+  let r = null;
+  if (iso && iso.start && iso.end) {
+    const p = (v) => { const [y, m, d] = String(v).split('-').map(Number); return new Date(y, m - 1, d); };
+    const a = p(iso.start), b = p(iso.end);
+    if (!isNaN(a) && !isNaN(b) && b >= a) r = { start: a, end: b };
+  }
+  if (!r) r = parseTurkishDateRange(dateStr);
   if (!r) return { past: false, now: false, label: '' };
   const start = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   const diff = (d) => Math.round((start - d) / 86400000); // >0 geçmiş, 0 bugün, <0 gelecek
@@ -161,6 +171,31 @@ export function sessionHours(times) {
     if (e > s) mins += e - s;
   }
   return Math.round(mins / 60);
+}
+
+// ISO zaman damgasından kısa "ne kadar önce" metni üretir: "şimdi", "4 dk önce",
+// "6 sa önce", "3 gün önce"; 30 günden eskisinde tarih. Saf — test edilebilir.
+export function timeAgo(iso, now = Date.now()) {
+  if (iso == null || String(iso).trim() === '') return ''; // new Date(null) → 1970 tuzağı
+  const t = new Date(iso);
+  if (isNaN(t)) return '';
+  const ms = now - t.getTime();
+  if (ms < 0) return '';
+  const min = Math.floor(ms / 60000);
+  if (min < 1) return 'şimdi';
+  if (min < 60) return `${min} dk önce`;
+  const hr = Math.floor(min / 60);
+  if (hr < 24) return `${hr} sa önce`;
+  const day = Math.floor(hr / 24);
+  if (day < 30) return `${day} gün önce`;
+  return t.toLocaleDateString('tr-TR');
+}
+
+// Doluluk rozetinin ölçüm zamanını küçük etikete çevirir: "en son 6 sa önce
+// ölçüldü". Zaman damgası yoksa (eski dönem/quota yoksa) boş döner — saf, testli.
+export function fillMeasured(lastIso, now = Date.now()) {
+  const ago = timeAgo(lastIso, now);
+  return ago ? `en son ${ago} ölçüldü` : '';
 }
 
 // CSV indirme (Excel için BOM'lu).

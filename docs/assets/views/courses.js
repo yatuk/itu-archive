@@ -6,7 +6,7 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, setStatus } from '../core/utils.js';
+import { $, getJSON, esc, fold, debounce, downloadCSV, setStatus, fillMeasured } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
@@ -100,8 +100,10 @@ export async function loadQuota(slug) {
   try {
     const sum = await getJSON(`data/quota/${slug}.json`);
     state.quota = new Map(sum.courses.map((c) => [c.crn, c]));
+    state.quotaLast = sum.last || null; // doluluk ölçüm zamanı (Faz 0.4)
   } catch {
     state.quota = null; // bu dönem için henüz ölçüm yok
+    state.quotaLast = null;
   }
 }
 
@@ -299,6 +301,16 @@ function sendToProgram() {
 
 /* ---------- tablo ---------- */
 
+// Doluluk rozetinin yanına ölçüm zamanını ekler (Faz 0.4): "%100" anlık sanılmasın —
+// kontenjan günde bir tazeleniyor. Yalnızca bu dönem için ölçüm kaydı varsa göster.
+function measuredNote(crn) {
+  if (!state.quotaLast) return '';
+  const rec = state.quota?.get(crn);
+  if (!rec) return '';
+  const note = fillMeasured(state.quotaLast);
+  return note ? ` · ${note}` : '';
+}
+
 function renderRows(append) {
   const tbody = $('#rows');
   const slice = state.filtered.slice(state.shown, state.shown + PAGE);
@@ -323,7 +335,7 @@ function renderRows(append) {
       <td class="when">${esc(when || '—')}</td>
       <td class="num">${cap}</td>
       <td class="num">${enr}</td>
-      <td class="num">${fillBar(cap, enr)}</td>`;
+      <td class="num">${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
   }, { append });
 
   if (frag) {

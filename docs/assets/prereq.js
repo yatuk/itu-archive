@@ -15,7 +15,8 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-import { esc, fold } from './core/utils.js';
+import { esc, fold, getJSON, termLabel } from './core/utils.js';
+import { state } from './core/store.js';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
@@ -250,6 +251,18 @@ import { esc, fold } from './core/utils.js';
           ctx.fillStyle = dim ? 'rgba(140,160,150,0.35)' : 'rgba(230,245,235,0.92)';
           const label = n.kind === 'elective' ? wrapShort(n.name, 16) : n.code;
           ctx.fillText(label, x + r * 0.95, y + 3);
+          // Seçmeli slot rozeti: kaç alternatifi olduğu tıklamadan görünsün.
+          if (n.kind === 'elective' && n.options && n.options.length) {
+            const badge = String(n.options.length);
+            ctx.font = `bold ${Math.max(8, 9 * this.cam.k)}px ui-monospace, monospace`;
+            const bw = ctx.measureText(badge).width + 8;
+            const bx = x + r * 0.7, by = y - r * 0.95;
+            ctx.fillStyle = 'rgba(10,16,12,0.85)';
+            ctx.fillRect(bx, by, bw, 13 * this.cam.k);
+            ctx.fillStyle = '#ffc857';
+            ctx.fillText(badge, bx + 4, by + 10 * this.cam.k);
+            ctx.fillStyle = dim ? 'rgba(140,160,150,0.35)' : 'rgba(230,245,235,0.92)';
+          }
         }
       }
 
@@ -300,6 +313,12 @@ import { esc, fold } from './core/utils.js';
       this.related = related;
       this.renderDetail(code);
       this.draw();
+      // Seçmeli slot paylaşılabilir URL durumu: ?prog=X&pool=<title>#onsart.
+      const n = this.byCode.get(code);
+      if (n && n.kind === 'elective') {
+        const prog = document.querySelector('.pg-program-select')?.value;
+        if (prog) history.replaceState(null, '', `?prog=${encodeURIComponent(prog)}&pool=${encodeURIComponent(n.name)}#onsart`);
+      }
     }
 
     clearFocus() {
@@ -331,28 +350,148 @@ import { esc, fold } from './core/utils.js';
     renderDetail(code) {
       const n = this.byCode.get(code);
       if (!n) return;
+      if (n.kind === 'elective') { this.renderPool(n); return; }
       const chip = (c) => `<button class="pg-chip" data-code="${esc(c)}">${esc(c)}</button>`;
-
-      if (n.kind === 'elective') {
-        const opts = (n.options || []).slice().sort((a, b) => a.code.localeCompare(b.code));
-        this.detail.innerHTML = `
-          <h3>${esc(n.name)} <span>seçmeli slot</span></h3>
-          <p class="pg-empty">${opts.length} alternatiften biri seçilir. Aşağıdakilerden grafikte de bulunanlar tıklanabilir.</p>
-          <div class="pg-chips">${opts.map((o) => `<button class="pg-chip" data-code="${esc(o.code)}" ${this.byCode.has(o.code) ? '' : 'disabled title="Bu ders grafikte yok"'}>${esc(o.code)}<em>${esc(o.name)}</em></button>`).join('')}</div>`;
-      } else {
-        const req = (this.byTo.get(code) || []).sort();
-        const dep = (this.byFrom.get(code) || []).sort();
-        // Ham ifade yerine ayrıştırılmış VE/VEYA ağacı: "hepsi gerekli" ile
-        // "biri yeterli" ayrımı açıkça görünsün.
-        const tree = n.requirement ? parseReq(n.requirement) : null;
-        this.detail.innerHTML = `
-          <h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3>
-          ${tree ? `<h4>Önşartı</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
-          ${req.length ? `<h4>Gereken dersler (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
-          ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}`;
-      }
+      const req = (this.byTo.get(code) || []).sort();
+      const dep = (this.byFrom.get(code) || []).sort();
+      // Ham ifade yerine ayrıştırılmış VE/VEYA ağacı: "hepsi gerekli" ile
+      // "biri yeterli" ayrımı açıkça görünsün.
+      const tree = n.requirement ? parseReq(n.requirement) : null;
+      this.detail.innerHTML = `
+        <h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3>
+        ${tree ? `<h4>Önşartı</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
+        ${req.length ? `<h4>Gereken dersler (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
+        ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}`;
       this.detail.querySelectorAll('.pg-chip:not([disabled])').forEach((b) =>
         b.addEventListener('click', () => this.panTo(b.dataset.code)));
+    }
+
+    // Seçmeli slotun alternatiflerini aranabilir, branş gruplu, canlı dönem
+    // durumlu bir listeye döker. Veri çekme paralel + önbellekli; liste ilk
+    // anda iskeletle gelir, durumlar geldikçe dolar. Kullanıcı başka düğüme
+    // geçerse eski yükleme kendini iptal eder (version + focus guard).
+    async renderPool(n) {
+      const opts = (n.options || []).slice();
+      const version = (this.poolVersion = (this.poolVersion || 0) + 1);
+      this.detail.innerHTML = `
+        <h3>${esc(n.name)} <span>seçmeli slot</span></h3>
+        <div class="pg-pool-head">
+          <input type="search" class="pg-pool-search" placeholder="ara: kod veya ad…" aria-label="Havuzda ara">
+          <select class="pg-pool-sort" aria-label="Sıralama">
+            <option value="code">koda göre</option>
+            <option value="name">ada göre</option>
+            <option value="open">bu dönem açık olanlar önce</option>
+            <option value="cap">kontenjanı olanlar önce</option>
+          </select>
+        </div>
+        <p class="pg-pool-status">${opts.length} alternatif — durum taranıyor…</p>
+        <div class="pg-pool-groups"></div>`;
+
+      const groupsEl = this.detail.querySelector('.pg-pool-groups');
+      const statusEl = this.detail.querySelector('.pg-pool-status');
+      const status = new Map();
+      let q = '';
+      let sortKey = 'code';
+      const fresh = () => this.poolVersion === version && this.focus === n.code;
+
+      // Olay yetki devri — her render'da yeniden bağlama yok.
+      groupsEl.addEventListener('click', (ev) => {
+        const act = ev.target.closest('[data-act]');
+        if (!act) return;
+        if (act.dataset.act === 'detay') {
+          window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: act.dataset.code } }));
+        } else if (act.dataset.act === 'courses') {
+          window.dispatchEvent(new CustomEvent('itu:goto-courses', { detail: act.dataset.code }));
+        }
+      });
+
+      const render = () => {
+        if (!fresh()) return;
+        const f = fold(q);
+        let list = opts;
+        if (f) list = list.filter((o) => fold(o.code + ' ' + o.name).includes(f));
+        const seat = (s) => (s && s.open && s.cap > 0 ? s.cap - s.enr : -1);
+        const order = {
+          code: (a, b) => a.code.localeCompare(b.code),
+          name: (a, b) => a.name.localeCompare(b.name, 'tr') || a.code.localeCompare(b.code),
+          open: (a, b) => {
+            const oa = status.get(a.code) && status.get(a.code).open ? 0 : 1;
+            const ob = status.get(b.code) && status.get(b.code).open ? 0 : 1;
+            return oa - ob || a.code.localeCompare(b.code);
+          },
+          cap: (a, b) => seat(status.get(b.code)) - seat(status.get(a.code)) || a.code.localeCompare(b.code),
+        }[sortKey];
+        list = list.slice().sort(order);
+
+        const groups = new Map();
+        for (const o of list) {
+          const b = o.code.split(' ')[0];
+          if (!groups.has(b)) groups.set(b, []);
+          groups.get(b).push(o);
+        }
+        const big = opts.length > 30; // büyük havuzda gruplar varsayılan kapalı
+        groupsEl.innerHTML = [...groups].map(([b, items]) => `
+          <details class="pg-pool-group" ${big ? '' : 'open'}>
+            <summary>${esc(b)} <span>${items.length}</span></summary>
+            ${items.map((o) => {
+              const st = status.get(o.code);
+              const badge = !st ? '<span class="loading">…</span>'
+                : st.open
+                  ? `<span class="open">● açık · ${st.sections.length} şube · ${st.enr}/${st.cap || '—'}</span>`
+                  : `<span class="closed">● ${st.last ? 'son ' + esc(termLabel(st.last)) : 'hiç açılmadı'}</span>`;
+              return `<div class="pg-pool-row">
+                <div class="pg-pool-name"><b>${esc(o.code)}</b><em>${esc(o.name)}</em></div>
+                <span class="pg-pool-status-badge">${badge}</span>
+                <span class="pg-pool-actions">
+                  <button data-act="detay" data-code="${esc(o.code)}">detay</button>
+                  <button data-act="courses" data-code="${esc(o.code)}">derslerde aç</button>
+                </span>
+              </div>`;
+            }).join('')}
+          </details>`).join('');
+        const openCount = [...status.values()].filter((s) => s.open).length;
+        statusEl.textContent = `${opts.length} alternatif · ${openCount} tanesi bu dönem açık`;
+      };
+
+      this.detail.querySelector('.pg-pool-search').addEventListener('input', (e) => { q = e.target.value; render(); });
+      this.detail.querySelector('.pg-pool-sort').addEventListener('change', (e) => { sortKey = e.target.value; render(); });
+      render();
+
+      // Aktif dönem branş dosyalarını paralel çek; her seçeneğin durumunu doldur.
+      const byBranch = new Map();
+      for (const o of opts) {
+        const b = o.code.split(' ')[0];
+        if (!byBranch.has(b)) byBranch.set(b, []);
+        byBranch.get(b).push(o);
+      }
+      await Promise.all([...byBranch].map(async ([b, items]) => {
+        const secs = (await activeSections(b)) || [];
+        const byCode = new Map();
+        for (const s of secs) {
+          if (!byCode.has(s.code)) byCode.set(s.code, []);
+          byCode.get(s.code).push(s);
+        }
+        for (const o of items) {
+          const mine = byCode.get(o.code) || [];
+          status.set(o.code, {
+            open: mine.length > 0,
+            sections: mine,
+            enr: mine.reduce((a, s) => a + (Number(s.enrolled) || 0), 0),
+            cap: mine.reduce((a, s) => a + (Number(s.capacity) || 0), 0),
+          });
+        }
+        render();
+      }));
+      if (!fresh()) return;
+
+      // Kapalı olanların geçmişteki son açılışını getir (branş başına bir istek).
+      const closed = opts.filter((o) => status.has(o.code) && !status.get(o.code).open);
+      await Promise.all(closed.map(async (o) => {
+        const last = await lastOpenedTerm(o.code);
+        const st = status.get(o.code);
+        if (st && !st.open) st.last = last;
+      }));
+      render();
     }
 
     search(q) {
@@ -407,7 +546,9 @@ import { esc, fold } from './core/utils.js';
           this.tip.hidden = false;
           this.tip.style.left = (e.clientX - rect.left + 14) + 'px';
           this.tip.style.top = (e.clientY - rect.top + 10) + 'px';
-          this.tip.textContent = n.name ? `${n.code} — ${n.name}` : n.code;
+          this.tip.textContent = n.kind === 'elective'
+            ? `${n.name} · ${(n.options || []).length} seçenek`
+            : (n.name ? `${n.code} — ${n.name}` : n.code);
         } else {
           this.tip.hidden = true;
         }
@@ -539,6 +680,43 @@ import { esc, fold } from './core/utils.js';
   // Seviye filtresi: varsayılan yalnızca lisans. Kullanıcı değiştirirse bu
   // Set üzerinden seçici yeniden kurulur.
   let activeLevels = new Set(['LS']);
+
+  // ---- Seçmeli havuz yardımcıları ----
+  // Havuz listesi her seçmeli slot açılışında branş dosyalarını çeker;
+  // getJSON zaten önbellekliyor, ama eksik dosyayı (null) da modül düzeyinde
+  // tutuyoruz ki aynı branşı her seferinde yeniden denemesin.
+  const poolCache = new Map(); // "slug/KOD" -> sections[] | null; "hist/KOD" -> history map | null
+
+  async function activeSections(branch) {
+    const slug = state.index && state.index.currentSlug;
+    if (!slug) return null;
+    const key = `${slug}/${branch}`;
+    if (!poolCache.has(key)) {
+      try {
+        poolCache.set(key, await getJSON(`data/terms/${slug}/branches/${branch}.json`));
+      } catch {
+        poolCache.set(key, null);
+      }
+    }
+    return poolCache.get(key);
+  }
+
+  // Geçmişteki en son açılış dönemi: history/courses/<BRANŞ>.json'daki
+  // terms[] en yeni önce sıralıdır, ilk eleman son açılıştır.
+  async function lastOpenedTerm(code) {
+    const branch = code.split(' ')[0];
+    const key = `hist/${branch}`;
+    if (!poolCache.has(key)) {
+      try {
+        poolCache.set(key, await getJSON(`data/history/courses/${branch}.json`));
+      } catch {
+        poolCache.set(key, null);
+      }
+    }
+    const rec = poolCache.get(key);
+    const hit = rec && rec[code];
+    return hit && hit.terms && hit.terms.length ? hit.terms[0] : null;
+  }
   const LEVEL_TR = { OL: 'Önlisans', LS: 'Lisans', YL: 'Yüksek Lisans', DR: 'Doktora' };
   const LEVEL_ORDER = ['OL', 'LS', 'YL', 'DR'];
 
@@ -676,7 +854,9 @@ import { esc, fold } from './core/utils.js';
         renderProgramPicker(root);
         root.querySelector('.pg-program-select').addEventListener('change', () => {
           const sel = root.querySelector('.pg-program-select');
-          if (sel.value) selectProgram(root, sel.value);
+          if (!sel.value) return;
+          selectProgram(root, sel.value);
+          history.replaceState(null, '', `?prog=${encodeURIComponent(sel.value)}#onsart`);
         });
         root.querySelector('.pg-search').addEventListener('input', (e) => {
           const results = root.querySelector('.pg-results');
@@ -690,6 +870,26 @@ import { esc, fold } from './core/utils.js';
             b.addEventListener('click', () => graph.panTo(b.dataset.code)));
         });
         root.querySelector('.pg-reset').addEventListener('click', () => graph && graph.clearFocus());
+
+        // Paylaşılabilir URL: ?prog=BLG_LS&pool=<slot>#onsart — programı seç,
+        // grafik kurulunca (varsa) havuz panelini aç.
+        const params = new URLSearchParams(location.search);
+        const wantProg = params.get('prog');
+        if (wantProg) {
+          const sel = root.querySelector('.pg-program-select');
+          const ok = [...sel.options].some((o) => o.value === wantProg);
+          if (ok) {
+            sel.value = wantProg;
+            selectProgram(root, wantProg).then(() => {
+              const wantPool = params.get('pool');
+              if (!wantPool || !graph || !graph.nodes) return;
+              const f = fold(wantPool);
+              const node = graph.nodes.find((nn) => nn.kind === 'elective' && fold(nn.name) === f);
+              if (node) graph.focusNode(node.code);
+            });
+          }
+        }
+
         inited = true;
       }
     },

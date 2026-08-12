@@ -329,18 +329,22 @@ func (b *Builder) Generate() error {
 	}
 
 	// Ders sayfaları (önce — branş sayfaları bunlara link verir).
+	// EN'de üretilmez (Cloudflare 20k dosya limiti); EN branş sayfaları TR
+	// ders sayfalarına link verir.
 	courseSlugs := make(map[string]string) // code -> slug
 	for code := range b.courses {
 		courseSlugs[code] = courseSlug(code)
 	}
-	sortedCodes := make([]string, 0, len(b.courses))
-	for code := range b.courses {
-		sortedCodes = append(sortedCodes, code)
-	}
-	sort.Strings(sortedCodes)
-	for _, code := range sortedCodes {
-		if err := b.writeCoursePage(code, courseSlugs[code], instrSlugs, termLabels); err != nil {
-			return err
+	if b.l.Code != "en" {
+		sortedCodes := make([]string, 0, len(b.courses))
+		for code := range b.courses {
+			sortedCodes = append(sortedCodes, code)
+		}
+		sort.Strings(sortedCodes)
+		for _, code := range sortedCodes {
+			if err := b.writeCoursePage(code, courseSlugs[code], instrSlugs, termLabels); err != nil {
+				return err
+			}
 		}
 	}
 
@@ -421,7 +425,7 @@ func (b *Builder) writeTermPage(tr termRow) error {
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "dersler", tr.tref.Slug, "index.html"),
-		title, lead, canonical, fmtDate(tr.tref.ScrapedAt), content, jsonld)
+		title, lead, canonical, fmtDate(tr.tref.ScrapedAt), content, jsonld, true)
 }
 
 func (b *Builder) writeBranchPage(code string, termLabels map[string]string, courseSlugs map[string]string) error {
@@ -512,7 +516,7 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "brans", code, "index.html"),
-		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
+		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, true)
 }
 
 func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs map[string]string, instrSlugs map[string]string) error {
@@ -673,10 +677,10 @@ func (b *Builder) writeIndexPage(terms []termRow) error {
 	}})
 
 	return b.writePage(filepath.Join(b.outRoot, "index.html"),
-		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
+		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, true)
 }
 
-func (b *Builder) writePage(path, title, desc, canonical, scraped string, content, jsonld template.HTML) error {
+func (b *Builder) writePage(path, title, desc, canonical, scraped string, content, jsonld template.HTML, alt bool) error {
 	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
 		return err
 	}
@@ -685,15 +689,17 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 		return err
 	}
 	defer f.Close()
-	// hreflang alternatif URL'i
+	// hreflang alternatif URL'i (yalnızca diğer dilde karşılığı üretiliyorsa).
 	altURL := ""
 	altLang := ""
-	if b.l.Code == "tr" {
-		altURL = strings.Replace(canonical, baseURL, baseURL+"/en", 1)
-		altLang = "en"
-	} else {
-		altURL = strings.Replace(canonical, baseURL+"/en", baseURL, 1)
-		altLang = "tr"
+	if alt {
+		if b.l.Code == "tr" {
+			altURL = strings.Replace(canonical, baseURL, baseURL+"/en", 1)
+			altLang = "en"
+		} else {
+			altURL = strings.Replace(canonical, baseURL+"/en", baseURL, 1)
+			altLang = "tr"
+		}
 	}
 	return pageTmpl.Execute(f, pageData{
 		Title: title, Description: desc, Canonical: canonical,
@@ -940,7 +946,7 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "hoca", slug, "index.html"),
-		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
+		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, false)
 }
 
 func distinctCodes(rows []instrRow) int {
@@ -1285,7 +1291,7 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "ders", slug, "index.html"),
-		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld)
+		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, false)
 }
 
 // instrLink, hoca adı için varsa hoca sayfasına bağlantı, yoksa düz metin döndürür.

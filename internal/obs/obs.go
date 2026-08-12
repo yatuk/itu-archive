@@ -63,6 +63,26 @@ func (c *Client) ActiveTerm(ctx context.Context, level string) (string, error) {
 	return out.AktifDonem, nil
 }
 
+// PageTerm, DersProgram sayfasındaki statik başlıktan (baslik1) dönem etiketini
+// çıkarır. OBS geçiş dönemlerinde GetAktifDonem ile arama verisi tutarsız
+// olabiliyor (ör. endpoint hâlâ eski dönemi raporlarken arama yeni dönemi
+// döndürüyor). Sayfa başlığı OBS'nin gösterdiği gerçek güncel dönemdir.
+func (c *Client) PageTerm(ctx context.Context) (string, error) {
+	body, err := c.f.Text(ctx, base)
+	if err != nil {
+		return "", err
+	}
+	// <h1 id="baslik1" ...>2026-2027 Güz Dönemi Ders Programları</h1>
+	m := baslik1Re.FindStringSubmatch(body)
+	if len(m) < 2 {
+		return "", fmt.Errorf("sayfa başlığından dönem bulunamadı — OBS sayfası değişmiş olabilir")
+	}
+	label := text(m[1])
+	label = strings.TrimSuffix(label, "Ders Programları")
+	label = strings.TrimSuffix(label, "Ders Programlari")
+	return strings.TrimSpace(label), nil
+}
+
 // Branches, bir seviyedeki tüm ders branş kodlarını döndürür.
 func (c *Client) Branches(ctx context.Context, level string) ([]Branch, error) {
 	b, err := c.f.Bytes(ctx, fmt.Sprintf("%s/SearchBransKoduByProgramSeviye?programSeviyeTipiAnahtari=%s", base, level))
@@ -166,12 +186,13 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int, 
 func key(br Branch) string { return br.Level + "/" + br.Code }
 
 var (
-	rowRe   = regexp.MustCompile(`(?is)<tr[^>]*>(.*?)</tr>`)
-	cellRe  = regexp.MustCompile(`(?is)<td[^>]*>(.*?)</td>`)
-	brRe    = regexp.MustCompile(`(?i)<br\s*/?>`)
-	tagRe   = regexp.MustCompile(`(?s)<[^>]*>`)
-	spaceRe = regexp.MustCompile(`\s+`)
-	tbodyRe = regexp.MustCompile(`(?is)<tbody[^>]*>(.*?)</tbody>`)
+	rowRe    = regexp.MustCompile(`(?is)<tr[^>]*>(.*?)</tr>`)
+	cellRe   = regexp.MustCompile(`(?is)<td[^>]*>(.*?)</td>`)
+	brRe     = regexp.MustCompile(`(?i)<br\s*/?>`)
+	tagRe    = regexp.MustCompile(`(?s)<[^>]*>`)
+	spaceRe  = regexp.MustCompile(`\s+`)
+	tbodyRe  = regexp.MustCompile(`(?is)<tbody[^>]*>(.*?)</tbody>`)
+	baslik1Re = regexp.MustCompile(`(?is)<h1[^>]*id="baslik1"[^>]*>(.*?)</h1>`)
 )
 
 func parseTable(body string, br Branch) ([]model.Section, error) {

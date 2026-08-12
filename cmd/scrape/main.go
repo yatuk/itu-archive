@@ -80,7 +80,11 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 
 	if !skipExams {
 		if currentLabel == "" {
-			label, err := obs.New(f).ActiveTerm(ctx, "LS")
+			oc := obs.New(f)
+			label, err := oc.PageTerm(ctx)
+			if err != nil || label == "" {
+				label, err = oc.ActiveTerm(ctx, "LS")
+			}
 			if err != nil {
 				return err
 			}
@@ -121,7 +125,13 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, workers int) (string, string, error) {
 	oc := obs.New(f)
 
-	label, err := oc.ActiveTerm(ctx, "LS")
+	// Dönem etiketini sayfa başlığından al (OBS geçiş dönemlerinde GetAktifDonem
+	// bazen eski dönemi raporlarken arama verisi yeni dönemi döndürüyor; sayfa
+	// başlığı her zaman OBS'nin gösterdiği gerçek güncel dönemi taşır).
+	label, err := oc.PageTerm(ctx)
+	if err != nil || label == "" {
+		label, err = oc.ActiveTerm(ctx, "LS")
+	}
 	if err != nil {
 		return "", "", err
 	}

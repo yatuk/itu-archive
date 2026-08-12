@@ -270,19 +270,13 @@
   "name": "Digital Signal Processing",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Cuma"
-  ],
+  "buildings": [],
+  "days": [],
   "times": [
-   "08:30/11:29"
+   "-/-"
   ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 75,
+  "rooms": [],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -627,7 +621,9 @@
   "capacity": 75,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "EHB_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },

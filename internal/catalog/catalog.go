@@ -110,16 +110,21 @@ func Parse(body []byte, sourceURL, branch, dersNo string) (*Entry, error) {
 	e.Language = grab(clean, langRe)
 	e.Description = grab(clean, descRe)
 	e.Credits = parseCredits(text)
-
-	// Çekirdek alanlar eksikse yapı değişmiş demektir — sessizce boş yazma.
-	if e.Name == "" || e.Language == "" || e.Description == "" {
-		return nil, fmt.Errorf("çekirdek alanlar eksik (ad=%q dil=%q tanım=%q) — sayfa yapısı değişmiş olabilir",
-			e.Name, e.Language, e.Description)
-	}
-
 	e.Outcomes = parseOutcomes(text)
 	e.WeeklyTopics = parseWeekly(text)
 	e.Textbooks = parseBooks(text)
+
+	// Ad veya dil eksikse sayfa yapısı değişmiş demektir — sessizce boş yazma.
+	if e.Name == "" || e.Language == "" {
+		return nil, fmt.Errorf("çekirdek alanlar eksik (ad=%q dil=%q) — sayfa yapısı değişmiş olabilir",
+			e.Name, e.Language)
+	}
+	// Tanım bazı derslerde kaynakta gerçekten boştur (ör. bitirme çalışması) —
+	// bu yapı hatası değil. Form tamamen boşsa yapı değişmiş olabilir.
+	if e.Description == "" && len(e.Outcomes) == 0 && len(e.WeeklyTopics) == 0 &&
+		len(e.Textbooks) == 0 && e.Credits == (Credits{}) {
+		return nil, fmt.Errorf("form tamamen boş — sayfa yapısı değişmiş olabilir")
+	}
 	return e, nil
 }
 

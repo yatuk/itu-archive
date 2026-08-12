@@ -615,6 +615,20 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 
 .empty { padding: 40px 16px; text-align: center; color: var(--dimmer); }
 
+/* Faz 5.4: yükleme iskeleti — shimmer çizgileri. */
+.skel { display: grid; gap: 8px; padding: 12px; }
+.skel-line {
+  height: 14px; border-radius: 4px;
+  background: linear-gradient(90deg, var(--panel-2) 25%, var(--line-hot) 50%, var(--panel-2) 75%);
+  background-size: 200% 100%;
+  animation: skel-shimmer 1.2s ease-in-out infinite;
+}
+.skel-line.wide { height: 18px; width: 60%; }
+@keyframes skel-shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .skel-line { animation: none; background: var(--panel-2); }
+}
+
 /* ---------- geçmiş ---------- */
 
 /* Eyebrow rozetleri — bölüm etiketleri için mikro hap */
@@ -1023,6 +1037,32 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 640px) {
   .detail-box dl { grid-template-columns: 1fr; gap: 2px 0; }
   .detail-box dd { margin-bottom: 8px; }
+}
+
+/* Faz 5.4: mobilde dersler tablosu kart görünümüne döner. 8 kolonlu tablo
+   360px'te okunmuyor; satırlar etiketli kart olur, tablo başlıkları gizlenir. */
+@media (max-width: 640px) {
+  #results, #results thead, #results tbody { display: block; }
+  #results thead { display: none; }
+  #results tbody { display: grid; gap: 10px; }
+  #results tr {
+    display: grid; grid-template-columns: auto 1fr auto; gap: 6px 10px;
+    background: var(--panel); border: 1px solid var(--hairline-strong);
+    border-radius: var(--radius-card); padding: 10px 12px;
+  }
+  #results td { display: contents; } /* her hücre kendi etiketiyle grid'e yayılır */
+  #results td[data-label]::before {
+    content: attr(data-label); color: var(--dimmer); font-size: 10px;
+    letter-spacing: .08em; text-transform: uppercase; grid-column: 1;
+  }
+  #results td[data-label] > * { grid-column: 2 / 4; }
+  #results .sel { grid-column: 1; grid-row: 1; }
+  #results .fav { grid-column: 3; grid-row: 1; }
+  #results .code[data-label] { grid-column: 2 / 4; grid-row: 1; }
+  #results .code[data-label]::before { display: none; }
+  #results .code b { font-size: 14px; }
+  #results .code small { display: inline; margin-left: 6px; }
+  #results td.when { white-space: normal; }
 }
 
 .p-backup { display: block; color: var(--amber); font-size: 11px; margin-top: 1px; }

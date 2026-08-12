@@ -52,6 +52,10 @@ export async function loadTerm(slug) {
   state.selected.clear(); // seçim döneme özeldir
   updateSelection();
   setStatus($('#resultline'), 'dönem yükleniyor…', { busy: true });
+  // Faz 5.4: iskelet — dönem verisi gelene kadar shimmer satırları.
+  $('#rows').innerHTML = '<div class="skel">' +
+    '<div class="skel-line wide"></div>'.repeat(5) +
+    '</div>';
   try {
     const [rows, meta] = await Promise.all([
       getJSON(`data/terms/${slug}/search.json`),
@@ -328,14 +332,14 @@ function renderRows(append) {
     return `
       <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="Şubeyi seç"${state.selected.has(key) ? ' checked' : ''}></td>
       <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="Favorilere ekle/kaldır" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
-      <td class="crn">${esc(crn)}</td>
-      <td class="code"><b>${esc(code)}</b><small>${esc(branch)}</small></td>
-      <td><button class="row-toggle" type="button" aria-haspopup="dialog">${esc(name)}</button></td>
-      <td>${esc(instructor || '—')}</td>
-      <td class="when">${esc(when || '—')}</td>
-      <td class="num">${cap}</td>
-      <td class="num">${enr}</td>
-      <td class="num">${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
+      <td class="crn" data-label="CRN">${esc(crn)}</td>
+      <td class="code" data-label="Ders"><b>${esc(code)}</b><small>${esc(branch)}</small></td>
+      <td data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${esc(name)}</button></td>
+      <td data-label="Öğretim Üyesi">${esc(instructor || '—')}</td>
+      <td class="when" data-label="Zaman">${esc(when || '—')}</td>
+      <td class="num" data-label="Kont.">${cap}</td>
+      <td class="num" data-label="Yazılan">${enr}</td>
+      <td class="num" data-label="Doluluk">${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
   }, { append });
 
   if (frag) {

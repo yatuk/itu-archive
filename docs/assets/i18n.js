@@ -269,6 +269,17 @@ const I18N = (() => {
     }
   }
 
-  return { t, lang, translateDOM, strings };
+  // Dil değiştirir (Faz 5.3). Görünümler boot'ta I18N.t ile render edildiğinden
+  // en sağlam yol tercihi kalıcılaştırıp sayfayı yenilemektir — görünümler
+  // aynı kodla yeniden çizilir. ?lang= parametresi korunur.
+  function setLang(next) {
+    next = strings[next] ? next : (next === 'en' ? 'tr' : 'en');
+    try { localStorage.setItem('itu-lang', next); } catch (e) {}
+    const params = new URLSearchParams(location.search);
+    params.set('lang', next);
+    location.search = params.toString(); // yeniden yükler
+  }
+
+  return { t, lang, translateDOM, strings, setLang };
 })();
 export { I18N };

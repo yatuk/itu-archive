@@ -1,0 +1,335 @@
+{
+ "SPL 502E": {
+  "code": "SPL 502E",
+  "name": "Advanced GIS in Urban Planning",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders, araştırmalarında veya profesyonel mesleki uygulamalarında ileri CBS tekniklerini kullanmak isteyen öğrencilere yönelik bir derstir. Bu derste işlenen ana konular, coğrafi veri modelleri, raster ve vektör veriler, coğrafi veri işleme ve model oluşturucu, ileri mekânsal analiz teknikleri, enterpolasyon (ara kestirim) teknikleri, zaman serileri analizi ve sunumu, ve network analizidir. Ders materyalleri seminerler ve sunumlar aracılığıyla sunulacaktır. This is an Advanced GIS course for the students who intend to utilize GIS in their research or professional practice. The primary topics are the models of geographic data, data structure, creation of raster and vector data, geoprocessing and model builder, spatial analysis, spatial interpolation, historical pattern analysis and network analysis. Course materials will be presented through lectures and demonstrations.",
+  "outcomes": [
+   "CBS in genel yapısını ve coğrafi veri işleme sürecini öğretmek",
+   "İleri mekansal analiz tekniklerini öğretmek",
+   "Kentsel ve bölgesel konularda mekansal araştırma ve analizi ile ilgili kavramsal konularda öğrencilerin kapasitelerini geliştirmek.",
+   "Şehir Planlama kapsamında CBS uygulamaları yapmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — CBS’nin temel ilkeleri",
+   "Hafta 2 — Coğrafi veri modelleri",
+   "Hafta 3 — Veri sistemleri, veri yapısı veri tabanı oluşturma ve depolama",
+   "Hafta 4 — Veri girişi ve düzenlemesi",
+   "Hafta 5 — Veri işleme",
+   "Hafta 6 — Mekansal analizler-1: Basit zaman serileri analizi ve sunumu",
+   "Hafta 7 — Mekansal analizler-2: Raster veri konsepti, yüzey ve topoğrafik analizler",
+   "Hafta 8 — Mekansal analizler-3: Arazi uygunluk analizi",
+   "Hafta 9 — Model oluşturucu-1",
+   "Hafta 10 — Model oluşturucu-2 Yarıyıl içi sınavı",
+   "Hafta 11 — Mekansal otokorelasyon- Arakestirim teknikleri",
+   "Hafta 12 — Network analizi",
+   "Hafta 13 — Dönem ödevi sunuşları-1",
+   "Hafta 14 — Dönem ödevi sunuşları-2"
+  ],
+  "textbooks": [
+   "Goodchild, M. F. (1986). Spatial autocorrelation (Vol. 47): Geo Books Norwich",
+   "Chrisman, N. (1997) Exploring Geographic Information Systems, N.Y.: John Wiley and Sons.",
+   "DeMers, M. (1997) Fundamentals of Geographic Information Systems, New York: John Wiley and Sons, Inc.",
+   "Berry, J.K., (2001). Map Analysis: Procedures and Applications in GIS Modeling, BASIS Press",
+   "O'Sullivan, D., & Unwin, D. (2003). Geographic information analysis: John Wiley & Sons Inc",
+   "Arctur, D and Zeiler, M. (2004). Designing Geodatabases, ESRI Press",
+   "De Smith, M. J., Goodchild, M. F., & Longley, P. (2007). Geospatial analysis: a comprehensive guide to principles, techniques and software tools: Troubador Pub",
+   "Michael, Z. (2010). Modeling Our World, ESRI Press, Second Edition",
+   "Longley, P., Goodchild, M., Maguire, D.J. and Rhind, D.W. (2011). Geographic Information Systems and Science, Third Edition, John Wiley and Sons"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=502",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SPL 503E": {
+  "code": "SPL 503E",
+  "name": "Urban Planning Project I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Farklı disiplinden gelen öğrenci kompozisyonu doğrultusunda saptanacak olan proje konusu kapsamında, yerleşmelerde (sanayi, turizm, tarım, hizmet, tarihi, liman vd. özelliğe sahip yerleşme veya alanlar) veya yerleşme parçalarında gelişim amaçları doğrultusunda doğal, fiziksel ve sosyo-ekonomik verilerin elde edilmesi, bu veriler doğrultusunda farklı disiplinlerdeki konulara yönelik özel araştırmaların yapılması, sektörel, mekansal ve nüfus projeksiyonların yapılarak geleceğe yönelik kestirimler ve amaçların birlikte değerlendirilmesi ile gelişme stratejileri saptanacaktır. Ayrıca yerleşmenin Alternatifli Gelişim Şemaları ve planlama kararlarını kapsayan açıklayıcı rapor hazırlanacaktır. Depend on the studio subject determined according to the student composition coming from the different disciplines, obtaining natural, physical and socio-economic data in the settlements (settlement which have industrial, tourism, agricultural, service, historical, harbour area properties) or obtaining data in the settlement parts through the development objectives, doing special researchs of different disciplines according to these data, evaluating future estimations and objectives together with the sectoral, spatial and demographic projections to form development strategies. Besides, Alternative Development Schema of the settlement and report explaining the planning decisions will be prepared",
+  "outcomes": [
+   "İnsan çevre etkileşimini çok boyutlu kentsel ilişkiler çerçevesinde kavrayabilmek",
+   "Kent planlama sürecinde disiplinler arası etkileşimi kavrayabilmek",
+   "Çalışma alanına ilişkin eleştirel analiz, sentez ve değerlendirme yapabilmek",
+   "Çalışma alanı ile ilgili konularda karşılaşılan mekansal, sosyal, kültürel ve ekonomik sorunların çözümüne katkıda bulunabilmek",
+   "Yaratıcı ve eleştirel düşünme, sorun çözme, karar verme gibi üst düzey zihinsel süreçleri kullanarak",
+   "Çalışma alanı ile ilgili konularda karşılaşılan toplumsal, bilimsel, kültürel ve etik sorunların çözümüne"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Çalışma konusunun verilmesi, teknik gezi, çalışma takımlarının oluşturulması, katılım modeli tartışması",
+   "Hafta 2 — Kentin bölgesi içinde gelişimine yönelik Stratejik Mekansal Planlama yaklaşımı çerçevesinde sektörel (işgücü, nüfus, ulaşım, kentsel eylem alanları vb.) verilere dayalı GZFT analizinin oluşturulması, literatür taraması",
+   "Hafta 3 — Kentin bölgesi içinde gelişimine yönelik Stratejik Mekansal Planlama yaklaşımı çerçevesinde sektörel (işgücü, nüfus, ulaşım, kentsel eylem alanları vb.) verilere dayalı GZFT analizinin oluşturulması, literatür taraması/odak grup toplantısı",
+   "Hafta 4 — Doğal çevre, yapılaşmış çevre ve sosyo-ekonomik/sosyo-kültürel çevre verilerinin kent ölçeğinde analizi, kentin rekabetçilik gücünün değerlendirilmesi/odak grup toplantısı",
+   "Hafta 5 — Doğal çevre, yapılaşmış çevre ve sosyo-ekonomik/sosyo-kültürel çevre verilerinin kent ölçeğinde analizi, kentin rekabetçilik gücünün değerlendirilmesi",
+   "Hafta 6 — Kent bütünü ölçeğinde alternatif gelişme senaryoların ortaya konulması/odak grup toplantısı",
+   "Hafta 7 — Kent bütünü ölçeğinde alternatif gelişme senaryoların ortaya konulması/odak grup toplantısı",
+   "Hafta 8 — Development of spatial decisions depending on the selected scenario among its alternatives",
+   "Hafta 9 — Seçilen senaryonun alternatifli olarak mekana yansıtılması, stratejilerin belirlenmesi/odak grup toplantısı",
+   "Hafta 10 — Eylem alanlarının planlama ve tasarımı",
+   "Hafta 11 — Eylem alanlarının planlama ve tasarımı",
+   "Hafta 12 — Eylem alanlarının planlama ve tasarımı",
+   "Hafta 13 — Eylem alanlarının planlama ve tasarımı",
+   "Hafta 14 — Eylem alanlarının planlama ve tasarımı"
+  ],
+  "textbooks": [
+   "Cerette, M., Concilio, G. (2010), ”Making Strategies in Spatial Planning”, Springer",
+   "S. Oesterlynck (Ed.), (2010)”Strategic Spatial Projects”, Routledge, London",
+   "M. Tewdwer Jones (Ed.), (2006) ”Territory, Identity and Spatial Planning”, Routledge, London",
+   "H. Dimitriou, R. Thomson (2007), ”Strategic Planning for Regional Development in the UK”, Routledge, London",
+   "S. Davoudi, I. Stronge, (2008) “Conceptions of Space and Place in Strategic Spatial Planning”, Routledge, London"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SPL 504": {
+  "code": "SPL 504",
+  "name": "Konut Politikası",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Konut politikasının tanımlanması. İlgili kuramlar ve kavramlar. Konutlandırmada önemli etmenler. Yasal ve yönetimsel çerçeve. Arazi sunumu. Konut standartları. Finansman sorunu. Konut sunum sistemleri. Konut piyasaları: arz-talep . Konutlandırma planı. Türkiyede konut sektörü ve konut politikaları. Gelişmiş ve gelişmekte olan ülkelerde uygulanan konut politikalarının irdelenmesi ve değerlendirilmesi. Definition of housing policy. Main theories and concepts. General housing policy considerations. Legal and administrative framework. Supply of land. Standards in shelter provision. Provision of finance. Housing supply systems. Housing markets:supply and demand. Housing Plan. Profile of the housing sector and housing policies in Turkey. Review of housing policies in developed and developing countries and evaluation.",
+  "outcomes": [
+   "Konut sorunu ve konut politikaları konularında uzmanlık düzeyinde derinlemesine bilgilenme",
+   "Konut politikaları konusunda kuramsal ve uygulamalı bilgileri kullanabilme",
+   "Kout sorunu ve konut politikaları konusunda bağımsız olarak araştırma yapabilme",
+   "İngilizceyi yetkin bir biçimde kullanarak sözlü ve yazılı iletişim kurabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Konut Politikası Kavramı, Tanımı",
+   "Hafta 2 — Politika Soruları (Konutla İlgili Temel Kararlar)",
+   "Hafta 3 — Konut Politikasına Yönelik Genel Konular",
+   "Hafta 4 — Yasal ve Yönetsel Çerçeve",
+   "Hafta 5 — Arazi Sunumu ve Konut Sunumuna Yönelik Standartlar",
+   "Hafta 6 — Konut Piyasası: Arz ve Talep",
+   "Hafta 7 — Konut Üretim Planı",
+   "Hafta 8 — Türkiye’de Konut Sektörünün Profili",
+   "Hafta 9 — Türkiye’de Konut Politikasının Gelişimi (1980 öncesi)",
+   "Hafta 10 — Türkiye’de Konut Politikasının Gelişimi (1980 sonrası) YIL İÇİ SINAVI",
+   "Hafta 11 — Gelişmiş Ülkelerde Konut Politikasının Karşılaştırmalı Analizi",
+   "Hafta 12 — Gelişmekte Olan Ülkelerde Konut Politikasının Karşılaştırmalı Analizi",
+   "Hafta 13 — Konut Alanları İle İlgili Yeni Yönelimler",
+   "Hafta 14 — General Discussion and Course Evaluation"
+  ],
+  "textbooks": [
+   "United Nations,2008, State Of The World Cities 2010/2011,Un Habitat, Earthscan:London",
+   "Bramley, G., Bartlett,W., Lampert, C., 1995, Planning The Market And Private Housebuilding, London:Ucl",
+   "Oxley,M. And Smith, J., 1996 Housing Policy And Rental Housing In Europe, E&Fn Spon, London",
+   "Harsman, B.,Quigley, J.M.(Eds), ( ) Housing Markets And Housing Institutions, Kluwer Academic Publ. London",
+   "Oxley, M., 2004, Economics, Planning And Housing, Palgrave Macmillan, New York"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=504",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SPL 506E": {
+  "code": "SPL 506E",
+  "name": "Uygulamalı İstatistik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İstatistik ve Olasılık Hesabına Giriş. Alan Araştırması Yöntemi. Örneklem Uzayı ve Olgular. Sonlu olasılık Uzayları. Örnekleme. Gruplama Teknikleri. Tipik Değerler. Karşılaştırmalar. Çıkarımsal-Açıklayıcı Karşılaştırmalar (Korrelasyon Katsayıları). Regresyon Doğrları. Kuramsal-Açıklayıcı Karşılaştırmalar (Ki-Kare Sınaması). İstatistiksel Karar Kuramı. Anlamlılık. Çoklu Refresyon ve Korrelasyon. Uygulamalar. Introduction to Probability and Statistics. Methods for Field Studies. Sample Space and Events. Finite Probability Spaces. Sampling. Grouping Techniques. Typical Values. Comparisons. Inferential-Explanatory Comparisons. Regression Lines. Theoretic-Explanatory Comparisons (Chi-Square Tests). Statistical Decision Theory. Significance. Multiple Regression and Correlation. Exercises.",
+  "outcomes": [
+   "Davranış bilimlerinde ölçme teknikleri kullanımı",
+   "Yöneylem araştırması, oyunlar kuramı gibi tekniklerin planlamada uygulaması",
+   "Kentsel ve bölgesel incelemede istatistik çözümlemeleri",
+   "Kentsel ve bölgesel incelemede sınıflandırma ve değerlendirilmede niceliksel ölçme teknikleri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, İstatistik Bilimi Esasları",
+   "Hafta 2 — Bileşimsel çözümleme",
+   "Hafta 3 — Örnekleme gruplama teknikleri",
+   "Hafta 4 — Orta, Ortanca sapma, bileşimsel ölçüler",
+   "Hafta 5 — Karşılaştırmalar, çıkarımsal karşılaştırmalar",
+   "Hafta 6 — Çıkarımsal karşılaştırmalar",
+   "Hafta 7 — Belirtim katsayısıkarşılaştırmalar",
+   "Hafta 8 — İstatistiksel karar kuramı",
+   "Hafta 9 — Varsayım denemesi ve anlamlılık",
+   "Hafta 10 — Logaritmik dönüşümler",
+   "Hafta 11 — Polinomlar",
+   "Hafta 12 — Polinomlar",
+   "Hafta 13 — Çoklu doğrusal regresyon",
+   "Hafta 14 — Örnekler değerlendirmeler"
+  ],
+  "textbooks": [
+   "Atalık, G. (1996) Şehir ve Bölge Planlaması Öğrencileri için Uygulamalı İstatistik, İ.T.Ü. Istanbul",
+   "Ebdon, D. (1988) Statistics in Geography, Basil Blackwell Ltd. Oxford",
+   "Spiegel, M.R. (1972) Statistics, McGraw-Hill",
+   "Willemain, T.R. (1981) Statistical Methods for Planners, The M.I.T. Press",
+   "Yeomans, K.A. (1976) Applied Statistics, Penguin"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=506",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SPL 507": {
+  "code": "SPL 507",
+  "name": "Şehirlerin Yeniden Yapılanması",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders, küreselleşme etkisinde 1980 sonrası şehirlerin yeniden yapılanması konusunda farklı perspektiflere yer verecek şekilde düzenlenen bir dizi tematik seminerden oluşmaktadır. Ders, bir yandan şehirlerin yeniden yapılandırılması konusunda kuramsal altyapı sunarken, diğer yandan uluslararası ve ulusal örnekler çerçevesinde bu yapılanmada ticari merkezlerin, kıyı alanlarının, kamusal mekanın, ulaşım ve iletişim teknolojilerindeki gelişmelerin, konut politikalarının, tarihi çevrenin, kültür endüstrilerinin, turizmin, ekolojik ve toplum öncelikli yaklaşımların karşılaştırmalı olarak etkisini irdelemektedir. The course is based on a series of thematic sessions to illustrate the restructuring of cities after the 1980s under the influence of globalisation. The course not only provides a theoretical framework on the restructuring of cities under the themes of retail facilities, housing policies, waterfronts, public spaces, historic urban landscapes, cultural industries, tourism and ecologic approaches, but it also investigates political, economic, socio-cultural and technological impacts comparatively through the use of international and national case studies.",
+  "outcomes": [
+   "Şehirlerin yeniden yapılanma açısından potansiyellerini analiz etme",
+   "Küreselleşmenin şehirlerin yeniden yapılanmasındaki politik, sosyo-ekonomik ve fiziksel etkisini anlama ve analiz etme",
+   "Şehirlerin yeniden yapılanması bağlamında mevcut kuram, politika ve uygulamaları eleştirel bir anlayışla değerlendirme",
+   "Araştırma tasarımı, problem tanımlama, veri toplama ve üretme, analiz tekniklerini kullanma",
+   "Teknik ve akademik dille sözlü ve yazılı ifade etme bilgi, beceri ve değerlerini kazanırlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Şehirlerin yeniden yapılandırılmasına kuramsal bir yaklaşım",
+   "Hafta 3 — Şehirlerin evriminde fordist ve postfordist yaklaşımlar",
+   "Hafta 4 — Şehirlerin yeniden yapılandırılması: Trendler ve tehditler",
+   "Hafta 5 — Ticaretin dönüşümü ve mega çarşılar",
+   "Hafta 6 — Gayrımenkul sektörü ve yeniden yapılanma",
+   "Hafta 7 — Kamusal mekan – kamusal alan",
+   "Hafta 8 — Küreselleşme ve ulaşım politikaları",
+   "Hafta 9 — Kültür endüstrileri, mega etkinlikler ve turizm",
+   "Hafta 10 — Neoliberal kentleşme, kentsel yenileme ve tarihi çevrelerin sürdürülebilirliği",
+   "Hafta 11 — Küreselleşme, toplum ve mekan: Kentsel demokrasi",
+   "Hafta 12 — Arasınav / Tartışma",
+   "Hafta 13 — Tartışma: Şehirlerin yeniden yapılandırılmasına örnekler - II",
+   "Hafta 14 — Tartışma: Şehirlerin yeniden yapılandırılmasına örnekler - III"
+  ],
+  "textbooks": [
+   "Castells, M. (1996) The Information Age: Economy, Society,and Culture. Oxford: Blackwell",
+   "Brenner, N. Theodore, N. (2002) Spaces of Neoliberalizm: Urban Restructuring in North America and Western Europe, Oxford: Blackwell",
+   "Newman, P and Thornley, A. (2004) Planning World Cities: Globalization and Urban Politics. Basingstoke, Hampshire: Palgrave Macmillan",
+   "Marcuse, P., Van Kempen, R. (2000) Globalizing Cities: A New Spatial Order? Oxford: Blackwell.",
+   "Harvey, D. (2013) Asi Şehirler: Şehir Hakkından Kentsel Devrime Doğru. Istanbul: Metis"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=507",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SPL 511E": {
+  "code": "SPL 511E",
+  "name": "Planning Theory and Policy",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "19.y.y sonundan günümüze kent planlama disiplininin gelişimi, arazi kullanışı kuramları ve planlama sürecine ilişkin kuramlar. Kamu yararı kavramı, sürdürülebilirlik kavramı, Since late 19. century the development of urban planning discipline , theories in planning and theories of planning, ( theories of urban planning process, theories of urban land use planning.",
+  "outcomes": [
+   "Plancının toplum içindeki rolünü farklı bakış açılarından değerlendirme",
+   "Planlama sorunlarını alternatif çözümler üretebilmek amacıyla tartışabilme",
+   "Problem çözmede kuramsal bilgiyi kullanabilme",
+   "Planlama sürecini plancının çatışan amaçları yönettiği bir süreç olarak algılama ve plancının rolünü değerlendirebilme",
+   "Disiplinin kuramsal temellerini öğrenme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Planlamanın gerekliliği-devlet kuramları",
+   "Hafta 2 — Planlamada arazi kullanışı kuramları",
+   "Hafta 3 — Kent planlama sürecine ilişkin kuramlar",
+   "Hafta 4 — Sürdürülebilirlik kavramı",
+   "Hafta 5 — 1945 lere kadar kent planlama",
+   "Hafta 6 — 1945 den 1990 lara kent planlama- paradigma değişimi",
+   "Hafta 7 — Geniş kapsamlı çok yönlü planlama ve uygulama",
+   "Hafta 8 — Parçacıl planlama-karmaşık tarama",
+   "Hafta 9 — Sistemler ve rasyonel planlama yaklaşımı",
+   "Hafta 10 — Planlamada katılım",
+   "Hafta 11 — Plancının teknik ve politik rolleri",
+   "Hafta 12 — Stratejik planlama",
+   "Hafta 13 — Modernizm-post modernizm-paradigma değişmesi",
+   "Hafta 14 — Genel değerlendirme,"
+  ],
+  "textbooks": [
+   "Melih Ersoy, Ed., 2007, Planlama Kuramı, İmge Yayınları",
+   "Urban Planning Theory Since 1945 Nigel Taylor , Sage Publications 2008",
+   "Alexander, E.R., 1986 Approaches to planning",
+   "Fainsteın, S.S., Cambell, S. (Ed.), 1997, Readings in Urban Theory",
+   "Faludi, A., 1973, Reader Planning Theory"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=511",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SPL 596E": {
+  "code": "SPL 596E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

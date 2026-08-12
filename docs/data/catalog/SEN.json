@@ -1,0 +1,804 @@
+{
+ "SEN 101": {
+  "code": "SEN 101",
+  "name": "Intr.to Industrial Engineering",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Endüstri Mühendisliği’ni bir bilim dalı ve Mühendisliği’nin amaçlarını, kapsamını ve Endüstri Mühendisliği’nin genel bakış açısını anlamaları planlanmaktadır. Introduce Industrial Engineering as a science and as a profession. It is planned to let students understand objectives, scope and general approach of industrial engineering.",
+  "outcomes": [
+   "Endüstri Mühendisliği'nin bir bilim ve meslek olarak ne anlama geldiğini öğrenecekler",
+   "Endüstri Mühendisli'nin temel bakış açılarını öğrenecekler ve temel kavramlara özet bir giriş yapmış olacaklar",
+   "Endüstri Mühendisliği'nin temel uygulama alanları hakkında bilgi edinecekler ve basit uygulamalar geliştirecekler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Endüstri Mühendisliği kavramı ve tanımı",
+   "Hafta 2 — Endüstri Mühendisliği'nin tarihçesi ve evrimi",
+   "Hafta 3 — Kurum kavramı; Örgüt ve çevresi",
+   "Hafta 4 — Örgütsel çevrenin yapısı",
+   "Hafta 5 — Örgütün iç yapısı, örgütün işlevleri, örgütsel dönüşüm",
+   "Hafta 6 — Performans kavramı ve performans iyileştirme",
+   "Hafta 7 — Endüstri Mühendisliği çalışma alanı",
+   "Hafta 8 — Bir bilim olarak Endüstri Mühendisliği",
+   "Hafta 9 — Verimlilik kavramı ve uygulamaları",
+   "Hafta 10 — İş Etüdü",
+   "Hafta 11 — Ergonomi",
+   "Hafta 12 — Tesis Yeri Seçimi",
+   "Hafta 13 — Tesis Yerleşimi",
+   "Hafta 14 — İş Değerlendirme"
+  ],
+  "textbooks": [
+   "Handbook of Industrial Engineering, Salvendy, G. , Wiley, New York, 1992,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=101",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 103": {
+  "code": "SEN 103",
+  "name": "Intr. to Manufacturing",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Üretimin ana kavramları, ürün imalat ilişkisi, geleneksel ve çağdaş üretim sistemlerinin elemanları arasındaki karşılıklı etkileşimlerin anlaşılması ve üretim sistemlerinin değişiminin firma performansını nasıl etkileyeceği öğretilmektedir. Main concepts of manufacturing, product process relation, understanding the interactions between the elements of conventional and contemporary manufacturing systems, the impact of changes on manufacturing on firm performance are examined.",
+  "outcomes": [
+   "İmalatta kullanılan donanımı tanıyabilme",
+   "İmalat elemanları arasındaki etkileşimi anlayabilme",
+   "İmalat sisteminin performansını belirleyebilme",
+   "Basit imalat problemlerini tanımlayabilme ve basit çözümler geliştirebilme",
+   "İmalat sistemi ile firma performansı arasındaki bağlantıyı kurabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Genel tanımlar ve prensipler",
+   "Hafta 2 — Üretim türleri ve stratejileri",
+   "Hafta 3 — Takım tezgahları",
+   "Hafta 4 — CNC/FMS kavramları",
+   "Hafta 5 — Tam zamanında üretim sistemleri",
+   "Hafta 6 — İmalat sistemlerinde kayıplar",
+   "Hafta 7 — Kayıplar için çözümler",
+   "Hafta 8 — İmalat maliyetleri",
+   "Hafta 9 — Malzeme taşıma sistemleri",
+   "Hafta 10 — Malzeme",
+   "Hafta 11 — Malzeme",
+   "Hafta 12 — İmalat yöntemleri",
+   "Hafta 13 — İmalat yöntemleri",
+   "Hafta 14 — Bağlama elemanları"
+  ],
+  "textbooks": [
+   "Fundamentals of Manufacturing Engineering, D.K. Singh, CRC Press, 2008,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=103",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 301": {
+  "code": "SEN 301",
+  "name": "Operations Research I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Bu ders, işletme, üretim, yönetim, yönetici ve sayısal karar vermeyi; model kurma ve modelleme felsefesini öğretmeyi, doğrusal programlama ve Simplex algoritması, Büyük M ve İki Aşamalı Simplex yöntemlerini, dualite ve ekonomik yorumlar ile duyarlılık analizlerini ulaştırma modelleri ve çözüm yöntemlerini kavratmayı, proje yönetimine giriş yapmayı, lindo ve excel çözücüleri kullandırmayı hedeflemektedir. This course aims to teach the production and management concepts, quantitative decision making, modeling philosophy and model building, linear programming and Simplex algorithm, Big M and Two Phase Simplex Methods, Duality and economic analysis, transportation models and solving methods, and the use of Lindo and Excel Solver programs.",
+  "outcomes": [
+   "Farklı matematiksel modelleme tekniklerini kullanabilme",
+   "Doğrusal programlama ile modellenen bir problemi çözebilme",
+   "Bir doğrusal programlama modelinin çözümünü yorumlayabilme",
+   "Çözümün, problemin bazı parametrelerinin değişmesine karşı hassasiyetini belirleyebilme",
+   "Tüm bunları Excel Solver, Lindo, Lingo, GAMS programlarını kullanarak yapabilme",
+   "Bir çözümün en uygun olup olmadığını anlayabilme",
+   "Ulaştırma ve Atama problemlerini, bu problemlere has bir yöntemle çözebilme ve analiz edebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — YA'ya Giriş, Temel Kavramlar, Doğrusal Programlamaya (DP) Giriş, Modelleme (DP'de Formülasyon)",
+   "Hafta 2 — Grafik Çözüm, Simpleks Algoritması",
+   "Hafta 3 — Büyük M Yöntemi,",
+   "Hafta 4 — Dualite",
+   "Hafta 5 — Duyarlılık Analizi",
+   "Hafta 6 — Duyarlılık Analizi",
+   "Hafta 7 — LINDO, LINGO yazılım paketleri ve MS Excel Solver programı",
+   "Hafta 8 — GAMS yazılım paketi",
+   "Hafta 9 — Dual Simpleks",
+   "Hafta 10 — Tümler Gevşeklik Teoremi",
+   "Hafta 11 — Düzeltilmiş Simpleks",
+   "Hafta 12 — Ulaştırma Sorunlarının Formülasyonu, Temel Olurlu Çözümün Bulunması",
+   "Hafta 13 — Ulaştırma Sorunlarının Çözümü",
+   "Hafta 14 — Atama Sorunları, Geçici Konaklama Sorunları"
+  ],
+  "textbooks": [
+   "Operations Research: Applications and Algorithms, Winston, W., Brooks/Cole Thomson Learning, 2004,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=301",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 302": {
+  "code": "SEN 302",
+  "name": "Operations Research II",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Bu ders öğrencilere tam sayılı modeller kurma ve algoritma veya sezgiseller ile modellere uygun çözümleri bulma konusunda yol göstermeyi, doğrusal olmayan ve dinamik programlama problemlerini çözmeyi öğretmeyi ve çok ölçütlü ve çok amaçlı karar verme problemlerini tanıtmayı hedeflemektedir. This course aims to guide students in formulating integer problems and finding appropriate solutions, algorithms or heuristics to solve them, teach students how to tackle non-linear and dynamic programming problems, and introduce multi criteria and multi objective decision problems.",
+  "outcomes": [
+   "Tamsayılı programlama problemlerini modelleme ve çözme",
+   "Doğrusal olmayan programlama problemlerini modelleme ve çözme",
+   "Hedef programlama ve Proje planlama konularında yetkinlik",
+   "Dinamik programlama problemlerini modelleme ve çözme becerilerini kazanırlar."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Tamsayılı programlama problemleri (Bütçeleme ve Sırt Çantası Problemleri)",
+   "Hafta 2 — Tamsayılı programlama problemleri (Sabit Maliyet Problemleri, Veya ve Eğer kısıtları)",
+   "Hafta 3 — Tamsayılı programlama problemleri (Gezgin Satıcı Problemi)",
+   "Hafta 4 — Tamsayılı programlama problemleri (TSP çözme teknikleri 1)",
+   "Hafta 5 — Tamsayılı programlama problemleri (TSP çözme teknikleri 2) Arasınav",
+   "Hafta 6 — Tamsayılı programlama problemleri (TSP çözme teknikleri 3)",
+   "Hafta 7 — Dahili Nokta Algoritması",
+   "Hafta 8 — Doğrusal olmayan programlama problemleri (Modelleme ve kısıtlı problemleri çözme)",
+   "Hafta 9 — Doğrusal olmayan programlama problemleri (Kısıtsız problemlerin çözümü)",
+   "Hafta 10 — Hedef programlama ve Proje planlama Arasınav",
+   "Hafta 11 — Dinamik programlama problemleri (Giriş)",
+   "Hafta 12 — Dinamik programlama problemleri (Modelleme)",
+   "Hafta 13 — Dinamik programlama problemleri (Algoritma ve Sezgiseller)",
+   "Hafta 14 — Genel Tekrar"
+  ],
+  "textbooks": [
+   "Operations Research: Applications and Algorithms 4th Ed., Winston, W., Wadsworth Inc., 2004,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=302",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 303": {
+  "code": "SEN 303",
+  "name": "Ergonomi",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Bu ders ergonomi alanında disiplinler arası bir bakış açısı kazandırmayı hedeflemektedir. Bu disiplinin temelindeki prensiplerin, tasarım/yeniden tasarımda ergonomik nedenlerin ve temel ergonomi araştırmalarının öğrencilere kapsamlı olarak anlatılması amaçlanmaktadır. This course is intended to provide an overview of the interdisciplinary field of ergonomics. Attention is devoted to provide the students with an in-depth understanding of the underlying principles of this discipline, ergonomics considerations in design/redesign, and research basis of ergonomics.",
+  "outcomes": [
+   "İşbilimsel analiz yapma",
+   "Üretim sistemlerinde iş için standart zamanları hesaplama ve verimliliği arttırma",
+   "İş analizi ve tasarımı dersi için önşart olan bilgiye sahip olma yetilerini kazanırlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İşbilimin tanımı ve endüstri mühendisliği eğitiminde önemi. Ders planı ve ödev ve projelerin içerikleri.",
+   "Hafta 2 — Sistem, sistem performansı, iş sistemi tanımı, yapısı ve tipleri. Fiziksel iş.",
+   "Hafta 3 — İşbilim ve diğer bilim dalları arasındaki etkileşim. Antropometrik tasarım.",
+   "Hafta 4 — Bilişsel ergonomi, bilişsel teori.",
+   "Hafta 5 — İnsan bilgi işleme teorileri.",
+   "Hafta 6 — İnsan-bilgisayar etkileşimi ve arayüz tasarım esasları.",
+   "Hafta 7 — Yarıyıl içi Sınavı",
+   "Hafta 8 — Zihinsel iş ve zihinsel performans.",
+   "Hafta 9 — Zihinsel iş yükünün belirlenmesi, önemi ve ölçümü.",
+   "Hafta 10 — Çevre şartlarının zihinsel ve fiziksel işe etkisi.",
+   "Hafta 11 — İnsan hatası ve insan güvenilebilirliği.",
+   "Hafta 12 — İş kazaları, sebepleri, tipleri. Kazaların araştırılması.",
+   "Hafta 13 — Meslek hastalıkları, tipleri ve önleme yöntemleri.",
+   "Hafta 14 — Proje teslimi ve sunumu"
+  ],
+  "textbooks": [
+   "Fundamentals of IE, Pulat, B.M., Waveland Press, 1992,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=303",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 304": {
+  "code": "SEN 304",
+  "name": "Work Analysis & Design",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "İş analizi ve tasarımı alanında disiplinler arası bir bakış açısı kazandırmak ve öğrencilerin etkin görevler ve çalışma alanları tasarlamak için temel yeteneklere, araçlara ve prensiplere sahip olmalarını sağlamak. Provide an overview of the interdisciplinary field of work analysis & design and attention is devoted to equip the students with the basic skills, tools, and principles for designing efficient tasks and workspaces.",
+  "outcomes": [
+   "Ergonomi dersini de almış olan öğrenciler, ergonomik faktörlerin işler ile ilişkilendirebilirler",
+   "İş Analizi ve Tasarımının farklı yönlerinin ve her bir bireyin güvenlik ve verimliliğini etkileyen bağımsız faktörlerin önemini ve bütünlüğünü anlarlar",
+   "Montaj şemaları, operasyon süreç şemaları, akış süreç şemaları, akış diyagramları, fonksiyonlar arası süreç haritaları ve aktivite şemalarını çizebilirler",
+   "Verimlilik kavramının organizasyon için önemini kavrarlar",
+   "Kronometraj yöntemini kullanarak zaman standartlarını belirlerler",
+   "Basit bir iş için iş örneklemesi yaparak, zaman standartlarını belirlerler",
+   "Basit bir durum için önceden belirlenmiş zaman sistemlerini kullanarak, zaman standartlarını belirlerler",
+   "Fiziksel bir çalışma ortamını, ortam sıcaklığı, görsellik, duyma ve gürültü, titreşim açısından değerlendirirler",
+   "Dönem projesi gerçekleştirmek için ekipler halinde çalışırlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İş Etüdüne Giriş, İş etüdünün temel içerikler ve, Ergonomi ile ilişkisi.",
+   "Hafta 2 — Metot Etüdü ve Zaman Etüdü arasındaki farklar. Metot Etüdünün tanımı ve kullanılan önemli şemalar",
+   "Hafta 3 — Zaman Etüdüne Giriş",
+   "Hafta 4 — Stres ve performans ilişkisi, iş etüdünde kas-iskelet sistemini kavramanın rolü",
+   "Hafta 5 — Yorulma, İş ve dinlenme zamanları, zorlanma",
+   "Hafta 6 — Mesleki biyomekanik, Kümülatif travma rahatsızlıkları",
+   "Hafta 7 — Ara Sınav",
+   "Hafta 8 — Kronometraj yöntemi ve REFA (Reich Auschuss fur Arbeitsstudien",
+   "Hafta 9 — İş akışı analizi, iş akışı birimleri, zaman sistemleri, tempo takdiri ve standart zamanların hesaplanması",
+   "Hafta 10 — İşyeri için metot ve zaman etüdü tekniklerinin uygulanması",
+   "Hafta 11 — Önceden belirlenmiş zamanlar sisteminin tanımı ve kullanımı",
+   "Hafta 12 — MTM (Methods Time Measurement) temel hareket metotları, adımları ve uygulamalarının tanımı",
+   "Hafta 13 — MTM Metodu kullanarak standart zamanların hesaplanması",
+   "Hafta 14 — Dönem projelerinin sunulması ve tartışma"
+  ],
+  "textbooks": [
+   "Work Design, 4th Edition, Konz S., Publishing Horizons, Inc. Scottsdale, Arizona, 1995,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=304",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 305": {
+  "code": "SEN 305",
+  "name": "Engineering Economy",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Terminoloji ve nakit akış diyagramları. Faiz faktörleri ve kullanılışları. Nominal ve etkin faiz oranları ve sürekli iskontolama. Şimdiki değer ve kapitalize edilmiş maliyet analizi. Yıllık nakit akış analizi. Verim oranı (artış) analizi. Kazanç / Maliyet oranı analizi. Geri ödeme süresi analizi. Yenileme analizleri. Enflasyon-faiz ilişkileri. Amortisman. Tükenme. Vergi sonrası ekonomik analiz. Başabaş analizi. Bütçe kısıtları altında sermaye bütçeleme. Duyarlılık analizi ve karar ağaçları. Risk altında yatırım analizleri. Terminology and cash flow diagrams. Interest factors and their use. Nominal and effective interest rates. Continuous compounding. Present worth and capitalized cost analysis. Uniform annual cash flow analysis. Rate of return analysis. Internal and external rates of return. Benefit / cost ratio analysis. Payback period analysis. Replacement analysis. Inflation-interest relations. Depreciation. Depletion. After-tax economic analysis. Breakeven analysis. Capital budgeting under budget constraints. Sensitivity analysis and decision trees. Investment analyses under risk.",
+  "outcomes": [
+   "Nakit akış diyagramında bulunan düzgün, aritmetik artışlı, geometrik artışlı nakit akışlarının bileşik faiz kullanılarak iskonto edilebilme",
+   "Nominal ve etkin faiz oranı arasında dönüşüm yapabilme",
+   "Net şimdiki değeri (NŞD), yıllık eşdeğeri, aritmetik artışı hesaplayabilme",
+   "NŞD kullanarak alternatifleri karşılaştırabilme",
+   "Farklı ömürlü ve sonsuz ömürlü alternatifleri karşılaştırabilme",
+   "İç verim oranını hesaplayabilme; karmaşık nakit akışlarının verim oranlarını belirleyebilme",
+   "Alternatifleri verim oranı artış analizi karşılaştırabilme",
+   "Kazanç / Maliyet oranı analizini yapabilme, yenileme analizi yapabilme",
+   "Gelir vergisi, amortisman, enflasyon faktörlerini hesaba katabilme",
+   "Risk ve belirsizlik altında analiz yapabilme, çok ölçütlü değerlendirme yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel kavramlar, terim ve grafikler: Karar vermede mühendislik ekonomisinin rolü, faiz hesapları, denklik",
+   "Hafta 2 — Faiz faktörleri ve kullanımları, çoklu faktörlerin kullanımı, nominal ve etkin faiz oranları ve sürekli iskontolama",
+   "Hafta 3 — Şimdiki değer analizi, kapitalize edilmiş maliyet analizi, farklı ve sonsuz ömürlü alternatifler",
+   "Hafta 4 — Eşdeğer düzgün yıllık değer analizi, farklı ve sonsuz ömürlü alternatifler, verim oranı hesaplamaları, nakit akışlarında işaret değişimi ve dış yatırım tekniği",
+   "Hafta 5 — Verim oranı artış analizi, kazanç/maliyet oranı analizi, gelecek değer analizi",
+   "Hafta 6 — Yenileme analizi, ekonomik ömür, savunucuya karşı aday teçhizat",
+   "Hafta 7 — Yenileme analizi, ekonomik ömür, savunucuya karşı aday teçhizat",
+   "Hafta 8 — Amortisman ve tükenme, gelir vergisi, vergi sonrası ekonomik analiz, enflasyon ve faiz ilişkisi",
+   "Hafta 9 — Başabaş analizi, bağımsız yatırım alternatifleri arasında sermaye bütçeleme",
+   "Hafta 10 — Duyarlılık analizi, beklenen değer kararları, karar ağaçları",
+   "Hafta 11 — Risk altında karar verme, risk ve belirsizlik, simülasyon analizi, belirlilik eşdeğeri, riske göre ayarlanmış nakit",
+   "Hafta 12 — Risk altında karar verme, risk ve belirsizlik, simülasyon analizi, belirlilik eşdeğeri, riske göre ayarlanmış nakit",
+   "Hafta 13 — Yatırım Alternatiflerinin Çok Ölçütlü Değerlendirilmesi",
+   "Hafta 14 — Yatırım Alternatiflerinin Çok Ölçütlü Değerlendirilmesi"
+  ],
+  "textbooks": [
+   "Engineering Economy, 6th Edition, Leland T. Blank, Anthony Tarquin, , McGraw-Hill, 2009, 9780073205342",
+   "Engineering Economics, Riggs, J.L. , McGraw Hill, 1982, 9780070528604",
+   "Advanced Engineering Economics, Park, C.S., Sharp-Bette, G.P., John Wiley and Sons, Inc., 1990, 978047179989"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=305",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 310": {
+  "code": "SEN 310",
+  "name": "Simulation",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "İstatistiksel veri analizi, simülasyon modelleri geliştirmek, simülasyon modeliyle deney yapmak ve deney sonuçlarını analiz etmek. Statistical data analysis, develop simulation models, experiment with the simulation model and to analyze experiment results.",
+  "outcomes": [
+   "Veri analizi ile ilgili olarak koşum testleri, histogram, PP ve QQ grafikleri çizmek, Ki-Kare ve Kolmogorov-Smirnov testlerini uygulama",
+   "Belirli bir olasılık dağılımı için rassal sayıdan rassal değer üretme",
+   "Bir sistemin benzetim modelini kurmak ve el işlemi ile çözme",
+   "ARENA modeli kurmak ve çalıştırmak, doğrulamak, geçerliliğini sağlama",
+   "Benzetim modelleri ile deney tasarlamak ve deneyleri koşturma",
+   "Model parametrelerini belirlemek, sonlanan ve sonlanmayan benzetim modeline karar vermek, koşum sayısı belirlemek, güven aralığını hesaplamak ve çıktıları yorumlama",
+   "Varyans düşürme teknikleri uygulamak: endirekt ölçüm, kontrol değişkenleri, ortak rassal değişkenler, karşıt değişkenler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Dersin ve dönem projesinin tanıtımı. Sistem tanımı, sistem sınıfları ve Monte Carlo simülasyonu",
+   "Hafta 2 — Sistem analizi, problem tanımı, işin amacı, bileşenler, değişkenler, parametreler, kriterler",
+   "Hafta 3 — Sistem durumu, sistem olayı, sistem algoritması",
+   "Hafta 4 — İstatistiksel bilgi, veri analizi ve verinin sınıflandırılması: Bir örnek",
+   "Hafta 5 — Teorik dağılımların kullanımı, uygunluk testleri: Ki-Kare ve Kolmogorov-Smirnov testleri, Örnekler",
+   "Hafta 6 — Ters dönüşüm denklemleri, normal dağılım, düzgün dağılım, üstel dağılım, Poisson dağılımı, ampirik dağılımlar, örnekler Veri olmayan durumlar: Örnekler",
+   "Hafta 7 — 1. Yıl İçi Sınavı",
+   "Hafta 8 — Çıktıların analizi, sonlanan sistemlerde kullanılan yöntemler: nokta tahmini, aralık tahmini",
+   "Hafta 9 — Çıktıların analizi, sonlanmayan sistemlerde kullanılan yöntemler: otokorelasyon, geçiş dönemi",
+   "Hafta 10 — Deney tasarımı",
+   "Hafta 11 — Varyans düşürme teknikleri, I: Dolaylı ölçütler, kontrol değişkenleri, örnekler",
+   "Hafta 12 — 2. Yıl İçi Sınavı",
+   "Hafta 13 — Varyans düşürme teknikleri, II: Eş rassal sayılar, antitetik değişkenler, örnekler",
+   "Hafta 14 — Simülasyon modellerinin geçerlilik sınaması ve doğrulanması"
+  ],
+  "textbooks": [
+   "Simulation Modeling and Analysis, Averill M. Law, W. David Kelton, McGraw-Hill, Boston, 2000."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=310",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 311": {
+  "code": "SEN 311",
+  "name": "Design of Experiments",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "İstatistik temel kavramları; olasılık, rastgele değişkenler, olasılık dağılımları, tahmin yöntemleri, yüzdelik dilimlerin tahmini, tespit sınırı, örnekleme dağılımları. Hipotez testleri ve uyum iyiliği. Korelasyon ve regresyon; doğrusal, doğrusal olmayan ve çoklu doğrusal korelasyon ve regresyon analizi. Otomatik korelasyonun regresyon üzerindeki etkisi. Varyans analizi; deneysel ölçümlerde varyans bileşenlerinin tahmini, çok faktörlü varyans analizi, faktöriyel deney tasarımı. Doğrusal olmayan modellerde parametreleri tahmin etmek için deney tasarlama. Çoklu yanıtlı verilere model uyarlama. Ölçüm hatalarının hesaplanan değerler üzerindeki etkileri. İstatistiksel problemleri incelemek için simülasyon kullanma. Basic concepts of statistics; probability, random variables, probability distributions, estimation methods, estimating percentiles, the limit of detection, sampling distributions. Testing hypotheses and goodness of fit. Correlation and regression; linear, nonlinear and multiple linear correlation and regression analysis. The effect of autocorrelation on regression. Analysis of variance; estimating variance components in experimental measurements, multiple factor analysis of variance, factorial experimental design. Designing experiments to estimate parameters in nonlinear models. Fitting models to multiresponse data. Effects of measurement errors on calculated values. Using simulations to study statistical problems.",
+  "outcomes": [
+   "Deney tasarımının temel prensiplerini öğrenme ve uygulayabilme",
+   "Gölge değişkenlerle regresyon analizi",
+   "Regreyon ve varyans analizleri arasındaki farkı kavrama",
+   "2x2 Faktöriyel deney tasarımı yapabilme",
+   "Sabit ve rassal etmen etkilerinde deney tasarımı yapabilme.",
+   "Çoklu faktöryel deney tasarımı yapabilme",
+   "ANOVA analizleri yapabilme",
+   "Kovaryans analizleri yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel İlkeler; Matrislere genel bakış",
+   "Hafta 2 — Tahmin ve regresyon parametreleri",
+   "Hafta 3 — Gölge değişkenler için regresyon",
+   "Hafta 4 — Regresyonla varyans analizi arasındaki ilişki",
+   "Hafta 5 — Faktöriyel Deney Tasarımı 2x2",
+   "Hafta 6 — Tek yönlü ANOVA",
+   "Hafta 7 — Tek yönlü ANOVA için parametre tahmini; Faktör etkileri; Güven aralıkları ve hipotez testleri",
+   "Hafta 8 — Sabit ve Rassal Etmen Etkilerinde Deney Tasarımı",
+   "Hafta 9 — Çoklu Faktör Analizi; Faktörler Arası Etkiler",
+   "Hafta 10 — Sabit ve Rassal Etmen Etkilerinde Deney Tasarımı",
+   "Hafta 11 — Nested Tasarımları, Nested Modeleri",
+   "Hafta 12 — Değişken Modellerde kısıtlar",
+   "Hafta 13 — ANOVA analizleri",
+   "Hafta 14 — Kovaryans analizleri, ANCOVA Analizleri"
+  ],
+  "textbooks": [
+   "Design of Experiments for Engineers and Scientists, Antony, J, Butterworth-Heinemann, 2003,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=311",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 312": {
+  "code": "SEN 312",
+  "name": "Materials Management",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Stok ve stok maliyeti kavramlarını kazandırmak. Stok yönetimi stratejilerini öğretmek. To provide the concepts of inventory and inventory cost. To provide inventory management strategies.",
+  "outcomes": [
+   "Üretim sistemi performansında envanter yönetim politikalarının etkisini kavramak",
+   "Belirsizliğin etkisini belirlemek ve belirsizlik altında envanter yönetimi yapmak",
+   "Tek dönemli ve çok dönemli envanter modellerinde, en iyi envanter politikasını belirlemek",
+   "Sürekli gözden geçirme gerektiren envanter modellerinde, en iyi envanter politikasını belirlemek",
+   "Sabit ve stokastik talepli baz stok modellerinde, en iyi envanter politikasını belirlemek",
+   "Üretim içi stok yönetimi yapmak ve malzeme ihtiyaç planı oluşturmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Lojistiğin Ekonomi ve Organizasyondaki Rolü",
+   "Hafta 2 — Müşteri Servisi",
+   "Hafta 3 — Lojistik Bilgi Sistemleri",
+   "Hafta 4 — Envanter Kavramı",
+   "Hafta 5 — Envanter Yönetimi",
+   "Hafta 6 — Depolama",
+   "Hafta 7 — Yarıyıl İçi Sınavı",
+   "Hafta 8 — Malzeme Yükleme ve Boşaltma, Otomasyon ve Paketleme",
+   "Hafta 9 — Satın Alma ve Tedarik",
+   "Hafta 10 — Etkin Lojistik için Organizasyonel Yapılanma",
+   "Hafta 11 — Lojistik Performansını Kontrol Yöntemleri",
+   "Hafta 12 — Tedarik Zinciri Yönetimi",
+   "Hafta 13 — Lojistik Stratejisinin Uygulanması",
+   "Hafta 14 — Sunum"
+  ],
+  "textbooks": [
+   "Fundamentals of Logistic Management, Lambert DM, Stook JR., Ellram L.M. , Irwin McGraw-Hill, 1998,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 313": {
+  "code": "SEN 313",
+  "name": "Multiple Criteria Decision Mak",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Karar verme teorisindeki temel kavramlar, karar verme problemlerinin uygulamalarla modellenmesi ve çözüm yöntemleri, karar verme metodolojisi. Basic concepts of decision theory, modeling and solution methods of decision making problems with applications, decision making methodology.",
+  "outcomes": [
+   "Karar verme ile ilgili temel kavramlar hakkında bilgi sahibi olacaklar",
+   "Karar verme problemlerini sınıflandırabilecekler ve modelleyebilecekler",
+   "Modelledikleri problemi uygun çözüm yöntemi ile çözebilecekler",
+   "Gerçek hayatta karşılarına çıkabilecek çelişkili kriterlere sahip problemleri çözebilecekler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Karar Vermeye Giriş",
+   "Hafta 2 — Sorunun Yapılandırılması",
+   "Hafta 3 — Karar Modelinin Kurulması",
+   "Hafta 4 — Sorunun Analizi",
+   "Hafta 5 — Bilişsel Haritalar, Bayesyan Ağlar",
+   "Hafta 6 — Belirsizlik ve Risk Altında Karar Verme",
+   "Hafta 7 — Fayda Teorisi ve Karar Ağaçları",
+   "Hafta 8 — Basit Yöntemler, Değere dayalı Yöntemler",
+   "Hafta 9 — Analitik Hiyerarşi Süreci",
+   "Hafta 10 — Analitik Ağ Süreci",
+   "Hafta 11 — Üstünlük Yöntemleri",
+   "Hafta 12 — Çok Amaçlı Karar Verme",
+   "Hafta 13 — Grup Karar Verme",
+   "Hafta 14 — Dönem Projelerinin Sunumları"
+  ],
+  "textbooks": [
+   "Quantitative Analysis for Management, Render, B., Stair Jr, R.M., and Hanna, M.E. , Pearson Education Inc., New Jersey, 2006,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=313",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 315": {
+  "code": "SEN 315",
+  "name": "Manufacturing Processes",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Üretim sistemlerinin en önemli elemanları olan takım tezgahlarının mekanizmaları ve işlevleri hakkında bilgi vermek ve zamanında tedarik, kalite ve maliyet ölçütleri açısından takım tezgahlarının önemini analiz etmek. To provide information about the mechanisms and functions of machine tools as the most important elements of production systems and To analyze the role of machine tools with respect to the measures of in-time procurement, quality and cost.",
+  "outcomes": [
+   "Temel imalat mühendisliği ile ilgili ilkeleri anlayabilme",
+   "Üretim süreçlerini analiz edebilme, ölçümleyebilme, değerlendirebilme ve üretim süreçlerine ait güç, mil hızı gibi fiziksel özellikleri şu amaçlarla hesaplayabilme: Tornalama, Frezeleme, Delme vs.",
+   "İmlalat maliyet tahmin analizlerini yapma",
+   "İmalatta kullanılan bilgisayarlı yöntemleri öğrenme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş (Okuma: 1.3 & 1.4 bölümler) ve Genel olarak imalat tekniklerine bakış",
+   "Hafta 2 — Döküm",
+   "Hafta 3 — Plastik şekil verme",
+   "Hafta 4 — Kaynak",
+   "Hafta 5 — Isıl işlem ve Metal şekillendirme, tezgahlar, prensipler",
+   "Hafta 6 — Metal talaşlı imalat teorisi",
+   "Hafta 7 — Tornalama",
+   "Hafta 8 — Frezeleme",
+   "Hafta 9 — Delme ve taşlama",
+   "Hafta 10 — Metal işleme maliyet tahmini",
+   "Hafta 11 — Kesme aletleri teknolojisi",
+   "Hafta 12 — İmalatta bilgisayar",
+   "Hafta 13 — CAD/CAM, Parça programlama teknikleri",
+   "Hafta 14 — Esnek imalat sistemleri ve İmalatta robotlar"
+  ],
+  "textbooks": [
+   "Fundamentals of Modern Manufacturing Materials, Processes..., Grover, M. P. , John Wiley & Sons, 2006,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=315",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 317": {
+  "code": "SEN 317",
+  "name": "Intr.to Inform.Processimg Syst",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "İşletmelerdeki bilişim sistemlerini anlamak ve analiz etmek. Bilişim sistemlerini tasarlamak için temel yetkinlikleri kazanmak. To understand the information systems in businesses. To analyze the information systems in businesses. To gain the fundamental qualifications to design information systems in businesses.",
+  "outcomes": [
+   "Sistem kavramını anlayabilme ve bilgi sistemlerini kavrayabilme",
+   "Sistem analizi yaklaşımını edinme",
+   "Yönetim düzeylerini ve karar tiplerini belirleyebilme ve Yönetim Bilişim Sistemlerini kullanabilme",
+   "Veritabanı Yöneyim Sistemlerini kullanabilme",
+   "Karar destek sistemleri kurabilme",
+   "Müşteri İlişkileri Yönetimi ve Tedarik Zinciri Yönetimi uygulayabilme",
+   "Kurumsal Kaynak Planlaması paket programlarını kullanabilme",
+   "E-ticaret uygulamalarını anlayabilme",
+   "Sistem tasarlayabilme, gerçekleştirebilme, değerlendirebilme ve kazanç elde edebilme",
+   "Gerçek dünya sorunlarına çözüm üretebilme ve ilgili yazılım programlarını kullanabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel terminoloji, ders hakkında genel bilgi, sistem kavramı, işletmelerdeki bilgi sistemlerine giriş",
+   "Hafta 2 — Sistem analizi yaklaşımı, bilgi sistemlerinin temelleri, hesap yapmanın internette işleyişi, küreselleşme ve bilgi teknolojisi, iş süreçlerinde değişim mühendisliği, BT ile rekabet avantajı, temel bil",
+   "Hafta 3 — Bir takım çalışması ve sistem analizi uygulaması, veri kaynaklarının girişi, verinin bilgiye çevrilecek şekilde işlenmesi, bilgi tabanlı ürünlerin çıktısı, veri kaynaklarının depolanması, sistemlerin",
+   "Hafta 4 — Yönetim düzeyleri ve karar tipleri, yönetim bilişim sistemleri, bilginin nitel özellikleri, YBS ve rapor tipleri, Çizelgeli, Talep, Kabul ve Kestirimci Raporlar, Bir örnek raporlama aracı",
+   "Hafta 5 — Veritabanı yönetim sistemleri, lojik VTYS yapıları: ağ, ağaç, ilişkisel, çok boyutlu",
+   "Hafta 6 — Programlama dilleri, bir örnek VTYS: İlerleme. Örnekler ve uygulamalar",
+   "Hafta 7 — Karar destek sistemleri: model geliştirme, what if analizi, hedef arama, risk analizi, KDS kurma, bilgi sistemlerinin yapay zeka ve işletme ile bir karşılaştırılması",
+   "Hafta 8 — Yarıyıl içi Sınavı",
+   "Hafta 9 — Müşteri İlişkileri Yönetimi (MİY), Tedarik Zinciri Yönetimi (TZY)",
+   "Hafta 10 — Kurumsal Kaynak Planlaması (ERP) nedir? Ticari ERP paket programları, MRP, MRPII ve ERP arasındaki farklar",
+   "Hafta 11 — E-ticaret uygulamaları. B2B, B2C, gerçek dünya örnekleri",
+   "Hafta 12 — Sistem tasarımı ve gerçekleştirilmesi, form ve raporların, veri akış diyagramlarının, tasarım modüllerinin, yukarıdan aşağı kodlama ve test dönüşümlerinin, bakımın, insanların eğitiminin nasıl tasarla",
+   "Hafta 13 — Bilgisayar sistem değerlendirmesi ve sistem kazancı: teklif için talep geliştirme, yazılım tedarikçisi seçimi",
+   "Hafta 14 — Gerçek dünya sorunları ve yazılım paket programları"
+  ],
+  "textbooks": [
+   "Intelligent Systems for Information Processing: From Represe, Bouchan-Meunier, B., Foulloy, L., Yager, R.R., JAI Press, 2003,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=317",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 318": {
+  "code": "SEN 318",
+  "name": "Statistical Meth. for Engin.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Lisans eğitiminin diğer derslerini desteklemek, analitik düşünme yeteneğini geliştirmek, verilerden sonuç çıkarma yeteneğini geliştirmek ve bir deneyi tasarlama yeteneğini geliştirme. To support the other courses of the Bachelor of Science, to develop the ability of analytical thinking, to draw conclusions from data and to gain inferential abilities and to gain the ability of designing an experiment.",
+  "outcomes": [
+   "Verilerden hareketle sürecin istatistiksel karakterini elde etme,",
+   "İstatistiksel dağılım ve eğilim ölçülerinden hareketle süreç hakkında yorum yapabilme,",
+   "Sürece ait parametreler için istatistiksel tahmin yapabilme,",
+   "Süreç için istatistiksel karar verme altyapısını oluşturma,",
+   "Sürece ait parametreler arasındaki ilişkileri tanımlayabilme,",
+   "Süreç parametrelerinin gelecek değerlerini tahmin etme,",
+   "İstatistiksel paket programları kullanabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Tanımsal istatistik",
+   "Hafta 2 — Tanımsal istatistik",
+   "Hafta 3 — Merkezi eğilim ve dağılım ölçüleri",
+   "Hafta 4 — Grafikler ve frekans dağılımı",
+   "Hafta 5 — Örnekleme ve tahmin etme",
+   "Hafta 6 — Nokta ve aralık tahminleri",
+   "Hafta 7 — Nokta ve aralık tahminleri",
+   "Hafta 8 — İstatistiksel karar vermenin ilkeleri ve hipotez testleri",
+   "Hafta 9 — Ortalamalar, oranlar ve varyanslar için testler",
+   "Hafta 10 — Ortalamalar, oranlar ve varyanslar için testler",
+   "Hafta 11 — Ki-kare testleri",
+   "Hafta 12 — Parametrik olmayan testler",
+   "Hafta 13 — Varyans analizi",
+   "Hafta 14 — Regresyon ve korelasyon"
+  ],
+  "textbooks": [
+   "General Statistics, Chase, W., Bown, F, John Wiley & Sons, Inc., 1992,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=318",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 319": {
+  "code": "SEN 319",
+  "name": "Management and Organization",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Yönetim düşüncesinin gelişimi, yönetim organizasyon’da temel kavramlar, profesyonel yönetim dönemi, yönetim ekolleri/teorileri, yönetim işlevi, yönetimde yeni akımlar ve yaklaşımlar. Evolution of management thought, basic concepts and definition of management and organization, management as a profession, management schools/theories, management functions, the future perspectives on management.",
+  "outcomes": [
+   "Yönetim organizasyon kavram ve teorilerini bilir.",
+   "Bir organizasyonun yönetsel karakteristiklerini tanımlayabilir.",
+   "Yönetici işlevini bilir.",
+   "Yönetim prensiplerini bilir ve değerlendirebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yönetim düşüncesinin gelişimi",
+   "Hafta 2 — Yönetimde temel kavramlar",
+   "Hafta 3 — İnsan kaynağının yönetimi",
+   "Hafta 4 — Güç ve yetki",
+   "Hafta 5 — Organizasyonların yapısı: Ortaya çıkan bölümler",
+   "Hafta 6 — Klasik yönetim",
+   "Hafta 7 — Klasik yönetim",
+   "Hafta 8 — Yönetim işlevleri",
+   "Hafta 9 — Yönetim işlevleri",
+   "Hafta 10 — Yönetim işlevleri",
+   "Hafta 11 — Neo-klasik yönetim",
+   "Hafta 12 — Modern yönetim",
+   "Hafta 13 — Toplam kalite yönetimi",
+   "Hafta 14 — Öğrenen organizasyonlar"
+  ],
+  "textbooks": [
+   "Management, Boone, L.E., Kurtz, D.L. , McGraw Hill, 1992,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=319",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 321": {
+  "code": "SEN 321",
+  "name": "Business Law",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "İş hukuku kavramı, iş hukukunun kaynakları, iş hukukunun gelişimi, iş hukukunun temel özellikleri, bireysel ve toplu iş hukuku, iş hukukuyla ilgili tanımlar, bireysel iş sözleşmesi, iş organizasyonu, iş yerinde esneklik, işçi ve işverenin görevleri, ücretler, iş sağlığı ve güvenliği, iş sağlığı ve güvenliğinden sorumlu mühendisler ve diğer personel, iş yerinde eşit muamele, işçilerin icatları, bireysel iş sözleşmesinin sona ermesi ve kıdem tazminatı. Concept of labor law, the sources of labor law, the development of labor law, main features of labor law, individual and collective labor law, definitions in relation to labor law, individual employment contract, the organization of work, flexibility at work, duties of the employee and employer, wages, health and safety at work, engineers and other personnel who are in charge of health and safety at work, equal treatment at work, inventions by employees, the end of individual employment contract and severance pay.",
+  "outcomes": [
+   "İş hayatında ihtiyaç duyacakları temel İş Hukuku kavram ve ilkeleri kullanabilme",
+   "İş hukuku ile endüstri mühendisliği programının ilişkisini kurabilme",
+   "Uygulamaya yönelik çalışmalarla iş hayatında işçi veya işveren/işveren vekili konumundayken karşılaşabilecekleri iş hukuku sorunlarını çözebilme",
+   "İş sağlığı ve güvenliği konusunda karşılaşabilecekleri tehlikelere karşı önlem alabilme",
+   "Sözlü ve yazılı hukuki iletişim kurabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Açılış (tanıtım ve bilgilendirme)",
+   "Hafta 2 — İş hukukunun konusu, gelişimi ve kaynakları",
+   "Hafta 3 — İş hukukunun temel kavramları (işçi, işveren, çırak, stajyer)",
+   "Hafta 4 — Temel kavramlar (alt işveren, işveren vekili, işyeri)",
+   "Hafta 5 — İş Kanununun uygulama alanı, iş sözleşmesinin türleri",
+   "Hafta 6 — İşçinin borçları",
+   "Hafta 7 — İşverenin borçları",
+   "Hafta 8 — Yıliçi sınavı",
+   "Hafta 9 — Sözleşmenin askıda kalması ve sona ermesi (fesih dışı sona erme ve iş güvencesi)",
+   "Hafta 10 — Süreli fesih",
+   "Hafta 11 — Derhal fesih",
+   "Hafta 12 — Kıdem tazminatı",
+   "Hafta 13 — Çalışma süreleri",
+   "Hafta 14 — İş sağlığı ve güvenliği"
+  ],
+  "textbooks": [
+   "Bireysel İş Hukuku, Eyrenci, Taskent S., Ulucan D., Legal Yayınevi, 2006,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=321",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 325": {
+  "code": "SEN 325",
+  "name": "Supply Chain Management",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Lojistik Kavramı, Lojistik Yönetimi, Tedarik Zinciri Kavramı, Tedarik Zinciri Yönetimi, Lojistikte Amaçlar, Temel Lojistik Faaliyetler, Lojistik Maliyetler, Lojistikte Dış Kaynak Kullanımı, Lojistik Ağ Tasarımı, Taşıma Yönetimi, Depo Yönetimi, Tedarik İşlevi, Tedarik İşlevinin tanımı ve Türleri, Tedarik Politikasının Tanımı ve İlkeleri, Tedarik sisteminin Bir Alt-Sistemi olarak Satınalma, Satınalma İşlevi, Satınalma Faaliyetlerinin Yönetimdeki Yeri ve Önemi, Satınalmanın Aşamaları, Satınalma Sistem Sözleşmeleri, Tedarikçi Seçimi ve Değerlendirme, Kalite Güvence Sisteminde Satınalamanın Önemi, \"Yap- Satın Al\" Kararları, Tam Zamanında Satınalma. Definition of Logistics, Logistics Management, Supply Chain Management, Logistics Activities, Outsourcing in Logistics, Logistics Network Design, Transportation Management, Warehouse Management, Procurement Function, Definition and Types of Procurement Function, Definition and Principles of Procurement Politics, Purchasing Activity as a Subsystems of Procurement System, Purchasing Function, Place and Importance of Purchasing Activities in Business Management, Stages of Purchasing Systems Contracts, Vendor Selection and Evaluation, Importance of Purchasing in Quality Assurance Systems, \"Make or Buy\" Decisions, Just In Time Purchasing, Strategic Purchasing.",
+  "outcomes": [
+   "Tedarik zinciri bileşenlerinin net olarak tanımlanması",
+   "Kestirilebilir ve belirsiz değişkenlerin planlanmasının öğrenilmesi",
+   "bilgi etkileşimlerinin tecrübe edilmesi",
+   "Tedarik zinciri yönetiminin anlaşılması",
+   "Tedarik zinciri performans ölçümünün anlaşılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Tedarik Zincirine Giriş",
+   "Hafta 2 — Tedarik Zinciri Destekleyicileri ve Engelleri",
+   "Hafta 3 — Tedarik Zinciri Ağ Tasarımı",
+   "Hafta 4 — Tedarik Zinciri Dağıtım Tasarımı",
+   "Hafta 5 — Tedarik Zincirinde Talep Tahminleri",
+   "Hafta 6 — Tedarik Zincirinde Toplam Planlama",
+   "Hafta 7 — Tedarik Zincirinde Kestirilebilir Değişikliklerin Yönetimi",
+   "Hafta 8 — Tedarik Zincirinde Ölçek Ekonomisi",
+   "Hafta 9 — Tedarik Zincirinde Belirsizlik Yönetimi",
+   "Hafta 10 — Tedarik Zincirinde Performans Ölçümü",
+   "Hafta 11 — Tedarik Zincirinde en iyi Seviyelerin Tespiti",
+   "Hafta 12 — Tedarik Zinciri Koordinasyonu",
+   "Hafta 13 — Bilişim Sistemleri ve Tedarik Zinciri",
+   "Hafta 14 — Tedarik Zincirinde Fiyatlama ve Gelir Yönetimi"
+  ],
+  "textbooks": [
+   "SUPPLY CHAIN MANAGEMENT 4TH EDITION., SANIL CHOPRA & PETER MENDL, PEARSON, 2008,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=325",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 339": {
+  "code": "SEN 339",
+  "name": "Proje Yönetimi Sistemleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Proje Yönetimin Temel Aşamaları, Proje Yönetim Teknikleri, Bilgisayar Destekli Proje Yönetimi Main Stages of Project Management, Project Management Techniques, Computer Aided Project Management",
+  "outcomes": [
+   "Proje yönetiminin temel aşamalarını öğrenmek",
+   "Proje yönetim araçlarını öğrenmek",
+   "Kritik Yol Yöntemini öğrenmek",
+   "Program Değerlendirme ve Gözden Geçirme Tekniğini öğrenmek",
+   "Kaynak programlamayı öğrenmek",
+   "Projeyi hızlandırmayı öğrenmek",
+   "Proje organizasyon yapılarını öğrenmek",
+   "Projelerde takımlaşma sürecini öğrenmek",
+   "Bilgisayar destekli proje yönetimini öğrenmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Proje Tanımı, Proje Değerlendirme, Proje Planlama Evreleri",
+   "Hafta 2 — Proje Yönetiminin Temel Aşamaları-1",
+   "Hafta 3 — Proje Yönetiminin Temel Aşamaları-2",
+   "Hafta 4 — Proje Yönetim Araçları (İş programları, Kaynak Programları), Şematik Modeller, Ok Diyagramları",
+   "Hafta 5 — Kritik Yol Yöntemi (CPM)",
+   "Hafta 6 — Program Değerlendirme ve Gözden Geçirme Tekniği (PERT)",
+   "Hafta 7 — Blok Diyagramları",
+   "Hafta 8 — Kaynak Programlama (Seri-Paralel Kaynak Tahsis Yöntemleri)",
+   "Hafta 9 — Projenin Hızlandırılması, Kritik Süre ve Hızlandırma Maliyeti Belirlemede Doğrusal Programlama",
+   "Hafta 10 — İş Ayrışım Yapısı, Organizasyon Ayrışım Yapısı",
+   "Hafta 11 — Projelerde Örgütlenme, Takımlaşma Süreci",
+   "Hafta 12 — Bilgisayar Destekli Proje Yönetimi (MS Project)",
+   "Hafta 13 — Proje Sunumları-1",
+   "Hafta 14 — Proje Sunumları-2"
+  ],
+  "textbooks": [
+   "Ders Notları"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=339",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SEN 342": {
+  "code": "SEN 342",
+  "name": "Bilgi ve Yenilik Sistemleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Kurum tarafından toplanan ve kullanılan kantitatif ve kalitatif verinin değerlendirilmesi, yenilik odaklı ve rekabet avantajına odaklanan düşünce yapısı, bilginin eşsiz değerinin teorilerle anlaşılması, bilginin ortak kullanımı ile yaratılan ortaklaşa aklın farkındalığının sağlanması. Evaluation of qualitative and quantitative data collected and used by the enterprise, innovation oriented and competitive advantage focused thinking, an appreciation for the unique value of knowledge through theories, awareness of collective intelligence created by collaborative usage of knowledge.",
+  "outcomes": [
+   "Organizasyon başarısı için bilgi ve bilgi sistemlerinin değerini göstermek",
+   "Bir işletmede bilgi yaratma ve değerlendirme becerisi geliştirmek",
+   "Ortak sistemleri kullanarak bilgi paylaşma isteği kazandırmak.",
+   "Mevcut organizasyonel düşünceyi yenilikçi odaklı bir şekilde değiştirmek",
+   "Bilgi ve yenilik arasındaki ilişkileri saptamak ve değerlendirmek Bilgiyle oluşan rekabet avantajını saptamak ve değerlendirmek",
+   "Bilgiyle oluşan rekabet avantajını saptamak ve değerlendirmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilgiye Dayalı Yenilik Gereksinimleri",
+   "Hafta 2 — Bilgiye Dayalı Yenilik Gereksinimleri",
+   "Hafta 3 — Yenilik Hedefleri",
+   "Hafta 4 — Sorgu Hazırlama",
+   "Hafta 5 — Veri Değerlendirme ve Temizleme",
+   "Hafta 6 — Tahmin ve Kestirim",
+   "Hafta 7 — Tahmin ve Kestirim",
+   "Hafta 8 — Bilgi Modelleme",
+   "Hafta 9 — Bilgi Modelleme",
+   "Hafta 10 — Bilgi Sınıflama",
+   "Hafta 11 — Bilgi Tabanları Oluşturma",
+   "Hafta 12 — Bilgi Paylaşım Yöntemleri",
+   "Hafta 13 — Bilgi Paylaşım Yöntemleri",
+   "Hafta 14 — Bilgi Tabanlı Yeniliğin Ölçütleri"
+  ],
+  "textbooks": [
+   "Hopgood, Adrian, A. “Intelligent systems for engineers and Scientists, CRC Press, 3rd eddition,2012, ISBN-13: 978-1439821206."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=342",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

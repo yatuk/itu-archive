@@ -1,0 +1,525 @@
+{
+ "JFM 501": {
+  "code": "JFM 501",
+  "name": "Mühendislik Matematiği",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Birinci ve ikinci mertebeden basit (ordinary) diferansiyel denklemler; matematiksel fiziğin kısmi diferansiyel denklemleri; Fourier serileri ile ısı ve dalga denklemleri çözümleri; ısı ve dalga denklemlerinin analitik ve sayısal çözümleri; yay-kütle-soğurucu sistemlerinin genel özellikleri; doğru, eğri ve yüzey çakıştırma yöntemleri; vektörel diferansiyel hesap: gradient, diverjans, rotasyon. First and second-order ordinary differential equations; partial diffrerential equations in mathematical physics; solution of heat and wave equations by means of Fourier series; analytical and numerical solutions of heat and wave equations; mass-spring-dashpot dynamic systems; line, curve and surface fit; vectorel analysis: gradient, divergance, rotation.",
+  "outcomes": [
+   "Alelade diferansiyel denklemlerin çözüm yöntemlerini öğrenirler",
+   "Kısmi diferansiyel denklemlerin çözüm yöntemlerini öğrenirler.",
+   "Isı ve dalga denklemlerinin çözümlerini ve bu çözümlerin pratiğe dönük uygulamalarını öğrenirler.",
+   "Doğru, eğri, yüzey çakıştırma yöntemlerini öğrenirler.",
+   "Vektörel diferansiyel hesap öğrenirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Alelade ve kısmi diferansiyel denklemlere giriş.",
+   "Hafta 2 — Birinci ve ikinci mertebeden diferansiyel denklemler.",
+   "Hafta 3 — Yay-kütle-soğurucu sistemleri",
+   "Hafta 4 — Sismograf teorisi.",
+   "Hafta 5 — Isı denkleminin çözümü.",
+   "Hafta 6 — Isı denkleminin çözümü - özel durumlar.",
+   "Hafta 7 — Dalga denkleminin çözümü.",
+   "Hafta 8 — Dalga denkleminin çözümü - özel durumlar.",
+   "Hafta 9 — Diferansiyel denklemlerin sayısal çözümlerine giriş.",
+   "Hafta 10 — Isı denkleminin sayısal çözümü.",
+   "Hafta 11 — Dalga denkleminin sayısal çözümü.",
+   "Hafta 12 — Doğru, eğri çakıştırma yöntemleri.",
+   "Hafta 13 — Yüzey çakıştırma yöntemleri.",
+   "Hafta 14 — Vektörel diferansiyel hesap: gradient, diverjans, rotasyon."
+  ],
+  "textbooks": [
+   "Gustafson, K., 1980, Introduction to Partial Differential Equations and Hilbert Space Methods, , John Wiley and Sons.",
+   "Braun, M., 1983, Differential Equations and Their Applications, Springer Verlag.",
+   "Elmore W.C. and Heald, M.A., 1969, Physics of Waves, Dover Publications.",
+   "Spiegel, M.R., 1959, Vector Analysis, Schaumis Outline Series, McGraw-Hill.",
+   "Çağlıyan, M., Çelebi, O., 2002, Kısmi Diferansiyel Denklemler, Vipaş A.Ş."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 503E": {
+  "code": "JFM 503E",
+  "name": "Signal Analysis in Geophysics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sürekli ve Ayrık Zamanlı Sinyal ve Sistemlerin Matematiksel Tanımları, Doğrusal, Zamanla Değişmeyen (DZD) Sistemler: Ayrık-Zamanlı DZD Sistemler (Evrişim Toplamı) & Sürekli-Zamanlı DZD Sistemler (Evrişim Integrali), Periyodik Sinyallerin Fourier Serileri, Sürekli ve Ayrık Zamanlı Fourier Serilerinin Özellikleri, Sürekli- ve Ayrık-Zamanlı Fourier Dönüşümü, Sürekli- ve Ayrık-Zamanlı Fourier Dönüşümünün Özellikleri, Laplace Dönüşümü, z-Dönüşümü. Introduction of Mathematical Description and Representation of Continuous-Time and Discrete-Time Signals and Systems, Linear Time-Invariant (LTI) Systems: Discrete-Time LTI systems (Convolution Sum) & Continuous-Time LTI systems (Convolution Integral), Fourier Series of Periodic Signals, Properties of Continuous-Time & Discrete-Time Fourier Series, Continuous-Time & Discrete-Time Fourier Transform, Properties of Continuous-Time & Discrete-Time Fourier Transform, Laplace Transform, z-Transform.",
+  "outcomes": [
+   "Sinyaller üzerinde matematiksel işlemleri gerçekleştirme.",
+   "Birim dürtü, birim-basamak, rampa işlevi, sinusoidal sinyaller, karmaşık üsteller gibi sık kullanılan sinyallere aşinalık kazanma, ayrıca ayrık- ve sürekli- zamanlı, periyodik ve periyodik olmayan, çift veya tek simetriye sahip olan sinyalleri sınıflandırma.",
+   "Doğrusal zamanla değişmeyen sistemlerin temel özelliklerini tanımlamak ve yararlanmak.",
+   "Fourier serilerini ve Fourier dönüşümlerini kullanarak sürekli- ve ayrık-zamanlı sinyalleri ve sistemleri analiz etmek.",
+   "Laplace ve z-dönüşümlerini alınması ve yakınsama bölgelerinin tanımlanması.",
+   "Öğrencilerin matlab betiklerine yakınlık kazanması."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sürekli ve ayrık zamanlı sinyaller, değişkenlerin dönüştürülmesi, sinyallerin sınıflandırılması, ve çözümlü örnekler.",
+   "Hafta 2 — Sürekli ve ayrık zamanlı sistemler, temel sistem özellikleri: doğrusallık, zamanla değişmezlik, bellekli/belleksiz sistemler, nedensellik, kararlılık, ve çözümlü örnekler.",
+   "Hafta 3 — Ayrık zamanlı sinyaller için doğrusal ve zamanla değişmeyen (DZS) sistemler: ayrık sinyaller için evrişim, ve çözümlü örnekler.",
+   "Hafta 4 — Sürekli zamanlı sinyaller için DZS sistemler: evrişim integrali, çözümlü örnekler.",
+   "Hafta 5 — DZS sistemlerin özellikleri: yer değiştirme, dağılma ve birleştirme özellikleri, kararlılık, nedensellik ve sistemin hafızalı veya hafızalı olmama özelliği, ve çözümlü örnekler.",
+   "Hafta 6 — Sürekli zamanlı sinyaller için Fourier serileri: doğrusal ve zamanla değişmeyen sistemlerin karmaşık üstel sinyaller için tepkisi, sürekli ve periyodik sinyallerin Fourier serileri, Fourier serilerinin yakınsaması, ve çözümlü örnekler.",
+   "Hafta 7 — Sürekli zamanlı sinyaller için Fourier serilerinin özellikleri: doğrusallık, zamanda ötelenme, zamanda terslenme, zamanda ölçekleme, çarpma, eşlenik ve eşlenik simetri , parseval eşitliği, ve çözümlü örnekler.",
+   "Hafta 8 — Ayrık zamanlı sinyaller için Fourier serileri,ve çözümlü örnekler.",
+   "Hafta 9 — Sürekli zamanlı sinyaller için Fourier Dönüşümü, periyodik olmayan sinyallerin gösterimi, sürekli zamanlı periyodik olmayan sinyallerin Fourier dönüşümü, Fourier Dönüşümünün yakınsaması, ve çözümlü örnekler.",
+   "Hafta 10 — Sürekli zamanlı sinyaller için Fourier Dönüşümünün özellikleri: doğrusallık, zamanda ötelenme, zamanda terslenme, zaman ölçeklemesi, çarpma, eşlenik ve eşlenik simetri, türev ve integrasyon, zaman ve frekans ölçeklemesi, özdeşlik, parseval eşitliği , evrişim özelliği, ve çözümlü örnekler.",
+   "Hafta 11 — Ayrık zamanlı sinyaller için Fourier Dönüşümü, ve çözümlü örnekler.",
+   "Hafta 12 — Ayrık zamanlı sinyaller için Fourier Dönüşümünün özellikleri: Fourier dönüşümünün periyodik olması, doğrusallık, zaman ötelenmesi, frekans ötelenmesi, zamanda terslenme, parseval eşitliği, ve çözümlü örnekler",
+   "Hafta 13 — Laplace Dönüşümü, Laplace dönüşümlerinin yakınsama bölgesi, yakınsama bölgesi üzerinde belirli kısıtlamalar, ve çözümlü örnekler.",
+   "Hafta 14 — Z-dönüşümü, z-dönüşümlerinin yakınsama bölgesi, yakınsama bölgesi üzerinde belirli kısıtlamalar, ve çözümlü örnekler."
+  ],
+  "textbooks": [
+   "Gubbins D., 2004, Time Series Analysis and Inverse Theory for Geophysicists, Cambridge University Press.",
+   "Oppenheim, A. V., Willsky, A., And Nawab S. H., 1997, Signals And Systems, Published By Prentice-Hall International Inc., Pp 1-945.",
+   "Hsu, H.P., 1995, Signals And Systems, Schaum’s Outlines Of Theory And Problems Of Signals And Systems, Published By Mcgraw-Hill, Pp 1-461.",
+   "Haykin, S., Veen, B.V., 1999, Signals And Systems, Published By John Wıley & Sons, Inc., p. 1-438.",
+   "Oppenheim, A. V., Schafer R.W., 1975, Digital Signal Processing, Published By Prentice-Hall Inc., p. 1-585."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 505E": {
+  "code": "JFM 505E",
+  "name": "Physics&Strc.of the EarthCrust",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Okyanus ve kıtasal kabuğun ve üst mantonun evrimi. Okyanus ve kıtasal kabuğun ve üst mantonun fiziksel özellikleri ve yapısı. Okyanus ve kıtasal kabuk ve üst manto kayaçlarının petrolojik özellikleri. Okyanus ve kıtasal kabuk yapılarının fiziksel ve yapısal özelliklerine göre sınıflandırılması. Okyanus ve kıtasal kabuğa ait tektonik yapılar ve Mohorovičić süreksizliği için örnekler. Evolution of the oceanic and continental crust and uppermost mantle. Physical properties and structure of oceanic and continental crust and upper mantle. Petrologic properties of the oceanic and continental crust and upper mantle rocks. Classification of the oceanic and continental crustal structures based on their physical and structural characteristics. Examples for tectonic structures of the oceanic and continental crust and Mohorovičić discontinuity.",
+  "outcomes": [
+   "Yer kabuğu ve üst mantosunun fiziksel ve yapısal özellikleri konusundaki lisans bilgilerini uzmanlık düzeyinde geliştirebilme, derinleştirebilme ve konu ile ilişkili disiplinlerarası etkileşimi kavrayabilme.",
+   "Yer kabuğu ve üst mantosunun fiziksel ve yapısal özellikleri konusundaki uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme.",
+   "Yer kabuğu ve üst mantosunun fiziksel ve yapısal özellikleri konusundaki güncel gelişmeleri sistemli bir şekilde alanındaki ve alan dışındaki gruplara, yazılı, sözlü ve görsel olarak en az Avrupa Dil Portföyü B2 genel düzeyinde bir yabancı dilde aktarabilme.",
+   "Dersle ilgili sınıf içi ve dışı etkinliklerinde bilgisayar yazılımı ile birlikte bilişim ve iletişim teknolojilerini ileri düzeyde kullanabilme.",
+   "Yer kabuğu ve üst mantosunun fiziksel ve yapısal özellikleri konusunda Türkiye ve civarında ileride yapılabilecek çalışmalar için öneriler getirebilme, yazılı ve sözlü sunumlarda bilimsel ve etik değerleri gözetme ve bu değerleri öğretebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş.",
+   "Hafta 2 — Sözlü ve yazılı sunum teknikleri.",
+   "Hafta 3 — Okyanus, kıtasal kabuk ve üst mantonun evrimi. Okyanus kabuğunun fiziksel, yapısal özellikleri ve kayaçları.",
+   "Hafta 4 — Kıtasal kabuğun fiziksel ve yapısal özellikleri ve kayaçları.",
+   "Hafta 5 — Mohorovičić süreksizliğinin fiziksel ve yapısal özellikleri ve üst manto kayaçları.",
+   "Hafta 6 — Okyanus ve kıtasal kabuk yapılarının fiziksel ve yapısal özelliklerine göre sınıflandırılması.",
+   "Hafta 7 — Daha önce kapsanan konuların özetlenmesi.",
+   "Hafta 8 — Tektonik yapıların jeofizik imzaları Seminer : Okyanus ortası sırt sistemleri ve kıtasal riftlerden örnekler.",
+   "Hafta 9 — Tektonik yapıların jeofizik imzaları Seminer : Pasif kıta kenarları ve kratonlardan örnekler.",
+   "Hafta 10 — Tektonik yapıların jeofizik imzaları Seminer : Dalma-batma zonlarından örnekler.",
+   "Hafta 11 — Tektonik yapıların jeofizik imzaları Seminer : Çarpışma sıra dağlarından örnekler.",
+   "Hafta 12 — Tektonik yapıların jeofizik imzaları Seminer : Doğrultu atımlı faylar ve sıcak noktalardan örnekler.",
+   "Hafta 13 — 8-12 haftalarda kapsanan konuların özetlenmesi.",
+   "Hafta 14 — Seminer (Eleştiri Makalesi : Türkiye ve civarındaki kabuk yapıları ve Mohorovičić süreksizliği konularında yapılmış çalışmalar hakkında kaynak taramasının yapılması ve bu çalışmaların boşluklarını doldurabilecek, gelecekte yapılması önerilebilecek çalışmalar konusunda eleştirel bir yazının hazırlanması ve sunulması)."
+  ],
+  "textbooks": [
+   "Bott, M.H.P., 1982, The interior of the Earth: its structure, constitution and evolution, Elsevier, Press.",
+   "Condie, K.C., 1989, Plate Tectonics and Crustal Evolution, Pergamon Press.",
+   "Fowler, C.M.R., 2005, The Solid Earth : An introduction to Global Geophysics, Cambridge University Press.",
+   "Meissner, R., 1986, The continental crust: A geophysical approach, Academic Press.",
+   "Lillie, R., 1999, Whole Earth Geophysics, Prentice Hall, Inc.",
+   "SCI Journals in geophysics, geology, tectonophysics."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=505",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 506": {
+  "code": "JFM 506",
+  "name": "Gravite ve Manyetik Yorumlama",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Karada, denizde ve havada gravite değişimlerinin ölçümünde kullanılan aletler; uygulamada karşılaşılan gravite anomalileri; anomalilerin birbirinden ayrılması ve filtreleme; aşağı ve yukarı analitik uzanım; kayaçların yoğunlukları; modellemede kullanılacak yoğunluk farklarının belirlenmesi; gravite anomalilerinin karakteristik eğriler yöntemi ile değerlendirilmesi; gelişigüzel şekilli kütlelerin gravite anomalileri; kayaçların kalıcı mıknatıslanması; kayaç ve minerallerin manyetik duyarlılıkları; basit şekilli kütlelerin manyetik anomalleri; gelişigüzel şekilli kütlelerin manyetik anomallerinin belirlenmesinde kullanılan hesaplama yöntemleri; manyetik anomallerin modellemesi; seçilmiş gravite ve manyetik yorumlama örnekleri. Instruments used to measure gravity variations on land, at sea and in the air; types of gravity anomalies observed in practice; anomaly seperation and filtering; upward and downward continuations; rock densities; sources of density contrasts to be used in modeling; interpretation of gravity anomalies using characteristic curves; gravity effects of complex shapes; remanent magnetism of rocks; magnetic susceptibility of rocks and minerals; magnetic effects of some simple shaped bodies; methods of calculation of magnetic anomalies of radom shaped bodies; modeling of magnetic anomalies; selected examples of gravity and magnetic interpretation.",
+  "outcomes": [
+   "Gravite ve manyetik anomali verilerini elde edebilmek için ham veriye uygulanması gereken düzeltme ve indirgeme işlemlerini öğrenmek.",
+   "Verileri amaca uygun olarak veri işlem aşamalarından geçirmek ve anomali değerlerini belirlemek.",
+   "Anomaliye neden olan düzgün şekilli kütlelerin geometrik ve fiziksel parametrelerini ters çözüm teknikleriyle belirlemek.",
+   "Gelişigüzel şekilli kütlelerin neden olduğu anomalileri değerlendirerek kütleye ait geometrik ve fiziksel parametreleri belirlemek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Gravite’ye Giriş, Gravite’nin Fizik Esasları, Newton Kanunları, Gravite Birimleri, Potansiyel Alan Eşitlikleri, Çekim Alanı, Sferoid, Geoid Terimleri üzerine tartışma.",
+   "Hafta 2 — Teorik Gravite Bağıntısı, Çekim İvmesi Mutlak Değerinin Ölçülmesi, Çekim İvmesi Farklarının Ölçülmesi, Gravimetreler, Topoğrafik Ölçmeler, Gravimetre Ölçmeleri, Gelgit Etkisinin Belirlenmesi, İndirgeme ve Düzeltmeler.",
+   "Hafta 3 — Gravite Prospeksiyonda uygulanan İndirgeme ve Düzeltmelere ait örnekler ve uygulamalar.",
+   "Hafta 4 — Gravite Anomalileri, Gravite Anomali Haritaları, Anomalilerin Birbirinden Ayrılması.",
+   "Hafta 5 — Kayan Ortalama, Ort. Değer, Sayısal Süzgeçler, Dalgasayısı ortamında Süzgeçleme konularında uygulama.",
+   "Hafta 6 — Yatay ve Düşey İkinci Türev Yöntemleri.",
+   "Hafta 7 — Türev Operatörlerinin düzenlenmesi.",
+   "Hafta 8 — Gravite Prospeksiyon’da yoğunluk tayini ve uygulaması.",
+   "Hafta 9 — Gravite Prospeksiyonda Modelleme, Basit Geometrik Şekle Sahip Kütlelerin Gravite Anomalileri.",
+   "Hafta 10 — Gravite Prospeksiyonda Ters Çözüm ve uygulaması.",
+   "Hafta 11 — Manyetik Prospeksiyonda kullanılan aletler, ölçmeler, Uygulanan Düzeltmeler, Model Kütlelerin Anomalisi.",
+   "Hafta 12 — Manyetik Prospeksiyonda Modelleme, Basit Geometrik Şekle Sahip Kütlelerin Manyetik Anomalileri.",
+   "Hafta 13 — Manyetik Prospeksiyonda Ters Çözüm ve uygulaması (devam).",
+   "Hafta 14 — Talwani Yöntemi ve uygulaması."
+  ],
+  "textbooks": [
+   "Telford, W.M., Geldort, L.P. and Sheriff, R.E., 1990, Applied Geophysics (2nd edition), Cambridge University Press.",
+   "Wahr, J., 1996, Geodesy and Gravity: Samizadat Press, Colarado.",
+   "Nettleton, L.L., Mc Graw- Hill., 1976, Gravity and Magnetics in Oil Prospecting.",
+   "Grant, F.S., West, G.F., 1965, Interpretation Theory in Applied Geophysics.",
+   "Sanver, M. İşseven., T., 2007, Gravite ve Manyetik Arama Yöntemleri. İTÜ-Nobel Yayın Dağıtım Basımı, 1.Baskı, İstanbul. 368 sayfa. ISBN: 978-9944-77-168-9."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=506",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 517": {
+  "code": "JFM 517",
+  "name": "Sismik Veri İşlem",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sismik verilerin rutin veri-işlem aşamalarından geçirilmesi, Disco-Focus veri-işlem programının tanıtımı basit giriş-çıkış işlemleri, Sismik verilerin okutulması yazdırılması, sismik verilerin ayıklanması ve genlik analizi,sismik hattın geometri tayini, filtreleme ve tersevrişim operatörleri, CDP verisi eldesi, hız analizi NMO düzeltmesi ve kesme işlemi, yığma ve yığma sonrası filtreleme ve tersevrişim operatörleri, sismik göç işlemi, sismik verilerin uygun formatta bastırılması. Conventional seismic data processing steps, introduction to Disco/Focus data processing programme, simple I/O, reading and writing of seismic data in Disco/Focus programme, seismic trace editing, gain analysis and geometry definition of seismic lines, filtering and deconvolution operators, CDP gather definition, velocity analysis, NMO correction and mute processes, stacking and filtering and deconvolution applications after stack, seismic migration methods, plotting of seismic result sections in suitable formats.",
+  "outcomes": [
+   "Yerbilimleri ve mühendisliği lisans düzeyi yeterliliklerine dayalı olarak jeofizik alanındaki bilgilerini uzmanlık düzeyinde geliştirebilme, derinleştirebilme ve jeofiziğin ilişkili olduğu disiplinlerarası etkileşimi kavrayabilme.",
+   "Yerbilimleri ve/veya mühendisliğinin disiplinlerarası çalışma ve uzmanlık düzeyinde jeofizik kuramsal ve uygulamalı bilgi ve becerilerini kullanmayı gerektiren problemlerini, ileri düzeyde jeofizik veri toplama, işleme ve yorumlama tekniklerini kullanarak çözebilme ve yeni bilgiler oluşturabilme.",
+   "Jeofizik alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme, jeofizik uzmanlık gerektiren bir çalışmayı bağımsız olarak yürütebilme, uygulamalarda karşılaşılan ve öngörülemeyen karmaşık sorunların çözümü için yeni stratejik yaklaşımlar geliştirebilme ve liderlik seviyesinde sorumluluk alarak çözüm üretebilme.",
+   "Alanının gerektirdiği düzeyde bilgisayar yazılımı ile birlikte bilişim ve iletişim teknolojilerini ileri düzeyde kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sismik Yansıma Veri-İşlem adımlarının tanımlanması.",
+   "Hafta 2 — Temel Linux/Unix komutlarının öğretilmesi, Disco/Focus 5.0 veri-işlem programının tanıtılması",
+   "Hafta 3 — Çok kanallı ve tek kanallı sismik yansıma veri-işlem’e giriş, Ham verilerin Disco-Focus programında okutulması, yazdırılması ve dosyalanması.",
+   "Hafta 4 — Deniz ve kara verisi için sismik hattın geometri tayini.",
+   "Hafta 5 — Atış verilerinin ayıklanması ve genlik analiz yöntemleri.",
+   "Hafta 6 — Atış verilerinin filtrelenmesi (Çentik, alçak geçiren,yüksek geçiren, band geçişli fitrelemeler)",
+   "Hafta 7 — Tekrarlı yansımaların bastırılması (Tersevrişim yöntemleri, Önkestirme, iğnecikleştirme ve Wiener Süzgeçlemeler).",
+   "Hafta 8 — Atış verisinden Ortak Derinlik Noktası verisine Geçiş.",
+   "Hafta 9 — Ortak derinlik noktası verilerinde Hız analizi Açılım kayma Düzeltmesi ve kesme İşlemi.",
+   "Hafta 10 — Yığma işlemi ile sismik kesit elde edilmesi.",
+   "Hafta 11 — Yığma sonrası filtreleme ve tersevrişim uygulamaları.",
+   "Hafta 12 — Sismik Göç İşlemi.",
+   "Hafta 13 — Göç sonrası genliklerin iyileştirilmesi, Sismik kesitlerin uygun formatlarda görüntülerinin alınması.",
+   "Hafta 14 — Ders genel değerlendirme."
+  ],
+  "textbooks": [
+   "Yılmaz, Ö., 1987. Seismic Data Processing, Investigations in Geophysics, Society of Exploration Geophysicsts, Tulsa, U.S.A., ISBN 0-931830-46-X (series), ISBN 0-931830-40-0 (Volume 2).",
+   "Us, E.A., 1998. Sismik Yöntemler ve Yorumlamaya Giriş. Jeofizik Mühendisleri Odası Yayını, 2. Baskı, İstanbul.",
+   "Dondurur, D.,2009. Deniz Sismiğinde Veri İşlem,TMMOB Jeofizik Mühendisleri Odası."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=517",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 596": {
+  "code": "JFM 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 601E": {
+  "code": "JFM 601E",
+  "name": "Special Topics in Seismic Expl",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sismik veri toplama teknikleri; ileri veri-işlem yöntemleri; sismik yöntemlerin hidrokarbon aramalarında, aktif tektonik araştırmalarda ve mühendislik problemlerinde kullanımı. Seismic data collection techniques; advanced data processing methods; application of seismic methods in hydrocarbon exploration, active tectonics research and engineering problems.",
+  "outcomes": [
+   "Sismik veri toplama teknikleri.",
+   "İleri sismik veri-işlem yöntemleri.",
+   "Sismik yöntemlerin hidrokarbon (petrol, doğal gaz, kömür) aramalarında kullanımı.",
+   "Sismik yöntemlerin aktif tektonik araştırmalarda kullanımı.",
+   "Sismik yöntemlerin mühendislik problemlerinde kullanımı."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sismik veri toplama: kaynak türleri ve atış düzenleri.",
+   "Hafta 2 — Sismik veri toplama: algılayıcı türleri ve alıcı düzenleri.",
+   "Hafta 3 — Sismik hız çeşitleri.",
+   "Hafta 4 — Derinlik modelinden zaman modeline geçiş.",
+   "Hafta 5 — Sismik veri işlem: dekonvolüsyon, genel ilkeler ve uygulama alanları.",
+   "Hafta 6 — Dekonvolüsyon: Wiener dekonvolüsyonu.",
+   "Hafta 7 — Dekonvolüsyon: Kestirim dekonvolüsyonu.",
+   "Hafta 8 — Dekonvolüsyon: Binom açılımı ile dekonvolüsyon.",
+   "Hafta 9 — Petrol ve Doğal Gaz aramalarında sismik yöntem uygulamaları.",
+   "Hafta 10 — Kömür aramalarında sismik yöntem uygulamaları.",
+   "Hafta 11 — Sismik yöntemlerin aktif tektonik alan araştırmalarında uygulamaları.",
+   "Hafta 12 — Sismik yöntemlerin mühendislik problemlerinin çözümünde uygulamaları.",
+   "Hafta 13 — Yüksek çözüm güçlü ve sığ sismik yöntem uygulamaları.",
+   "Hafta 14 — Ders konularının genel değerlendirmesi."
+  ],
+  "textbooks": [
+   "Yılmaz, Ö., 2001. Seismic Data Analysis, Vol 1 and Vol 2, Investigations in Geophysics No:10, Society of Exploration Geophysicsts, Tulsa, U.S.A.",
+   "Jones, E.J.W. 1999. Marine Geophysics, Wiley Blackwell, Chichester, 474 pages.",
+   "Sheriff, R. E., Geldart, L. P., 1995, Exploration Seismology, Cambridge University Press, 593 p.",
+   "Al Sadi, H. N., 1982, Seismic Exploration: Birkhauser Verlag, Basel, Boston, Stuttgart, 215 p.",
+   "Sengbush, R. L., 1983, Seismic Exploration Methods: International Human Resources Development Corporation, Boston, 296 p.",
+   "Dondurur, D., 2009, Deniz Sismiğinde Veri İşlem,TMMOB Jeofizik Mühendisleri Odası."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=601",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 603E": {
+  "code": "JFM 603E",
+  "name": "Hydro-geophysics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu derste su yataklarının hidrolojik ve jeofizik yaklaşımlarla nasıl karakterize edileceği doktora düzeyinde ele alınacaktır. Jeofizik yöntemler (doğru akım elektrik özdirenç, elektromanyetik, ground penetrating radar, sismik, uzaktan algılama ve kuyulogları gibi) yardımıyla su yataklarının özelliklerinin nasıl belirleneceği ele alınacaktır. This course covers the fundamentals of hydrological and geophysical characterization of shallow subsurface of the earth that is extremely important as the water bearing zone at doctorate level. How the geophysical techniques such as electrical, controlled source electromagnetic, ground penetrating radar, seismic, well logging, and remote sensing methods can be utilized for the purpose of hydrogeological characterization will be emphasized.",
+  "outcomes": [
+   "Jeofizik alanındaki yüksek lisans yeterliliklerine dayalı olarak, alanındaki güncel ve ileri düzeydeki bilgileri özgün düşünce ve/veya araştırma ile uzmanlık düzeyinde geliştirebilme, derinleştirebilme ve alanına yenilik getirecek özgün tanımlara ulaşabilme, disiplinlerarası etkileşimi gerektiren yeni ve karmaşık yerbilimleri ve/veya mühendisliği problemlerinin jeofizik analiz, sentez ve değerlendirmesinde uzmanlık bilgilerini kullanarak özgün sonuçlara ulaşabilme.",
+   "Yerbilimleri ve/veya mühendisliğinin yeni ve karmaşık problemlerinin sistematik bir yaklaşımla analiz, sentez ve değerlendirilmesini yapabilme, jeofizik veri toplama, işleme ve yorumlamadaki yeni yöntemleri üst düzey beceri seviyesinde kullanarak, yenilik getiren düşünce, yöntem, tasarım ve/veya uygulama geliştirebilme ve/veya bilinen düşünce, yöntem, tasarım ve/veya uygulamayı farklı bir alana uygulama, özgün bir konuyu araştırabilme, kavrayabilme tasarlayabilme, uyarlayabilme ve uygulayabilme.",
+   "Yaratıcı ve eleştirel düşünme, sorun çözme ve karar verme gibi üst düzey zihinsel süreçleri kullanarak jeofizik veri toplama, işleme, modelleme ve yorumlama ile ilgili yeni düşünce, yöntem, tasarım ve/veya uygulama geliştirebilme, yada bilinen bir düşünce, yöntem, tasarım ve/veya uygulamayı farklı bir alana uygulayan özgün bir çalışmayı bağımsız olarak gerçekleştirerek alanındaki ilerlemeye katkıda bulunabilme, özgün ve disiplinlerarası sorunların çözümlenmesini gerektiren ortamlarda liderlik yapabilme.",
+   "Hidrojeolojide karşılaşılan sorunların çözümünde stratejik karar verme süreçlerini kullanarak işlevsel etkileşim kurabilme, jeofizik alanındaki bilimsel, teknolojik sosyal veya kültürel ilerlemeleri tanıtarak, yaşadığı toplumun bilgi toplumu olma ve bunu sürdürebilme sürecine katkıda bulunabilme, alanı ile ilgili konularda karşılaşılan toplumsal, bilimsel, kültürel ve etik sorunların çözümüne katkıda bulunabilme ve bu değerlerin gelişimini destekleyebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Hidrojeofiziğe giriş.",
+   "Hafta 2 — Hidrolik iletimin uzaysal dağılımının belirlenmesinde kullanılan yaklaşımlar.",
+   "Hafta 3 — Jeoistatistik.",
+   "Hafta 4 — Kayaçlarda hidrolik ve elektirik özelliklerler arasındaki ilişki .",
+   "Hafta 5 — DA-özdirenç ve IP metodu.",
+   "Hafta 6 — Hidrojeolojide GPR kullanımı.",
+   "Hafta 7 — Sığ sismik yöntemler.",
+   "Hafta 8 — Kayaçların sismik ve hidrojeolojik özellikleri arasındaki ilişki.",
+   "Hafta 9 — Kayaçların sismik ve hidrojeolojik özellikleri arasındaki ilişki.",
+   "Hafta 10 — Kuyularda jeofizik ölçümler ve hidrojeolojik özelliklerin belirlenmesi.",
+   "Hafta 11 — Örnek vaka – 1: Bölgesel çalışmalar.",
+   "Hafta 12 — Örnek vaka –2: Yerel çalışmalar.",
+   "Hafta 13 — Yeni teknolojiler ve yaklaşımlar.",
+   "Hafta 14 — Yeni teknolojiler ve yaklaşımlar."
+  ],
+  "textbooks": [
+   "Kelly, W.E., S. Mares, 1993, Applied Geophysics in hydrological and engineering practices, Elsevier Science Publishers, Amsterdam.",
+   "Şen, Z., 1995, Applied hydrogeology for scientists and engineers, Lewis Publishers, London.",
+   "Reynolds, John M., 1997, An Introduction to Applied and Environmental Geophysics: John Wiley & Sons.",
+   "Rubin, Y., S. S. Hubbard (editors), 2006, Hydrogeophysics, Springer, 523 pages.",
+   "Kirsch R., 2010, Groundwater geophysics, Springer, 568 pages."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=603",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 605": {
+  "code": "JFM 605",
+  "name": "Elek.Man.Prosp.Özel Konular",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Zaman ortamı elektromanyetik yöntemlerin kuram ve fizik esasları; elektromanyetik alan denklemleri; difüzyon denklemleri; yer yüzeyinde ve havadan zaman ortamı elektromanyetik yöntemlere ait ölçüm sistem ve teknikleri; elektromanyetik kaynak ve alan tanımları; düşey manyetik ve yatay elektrik dipol ile uyartım; tek ve çok kanallı sistemlerle elektromanyetik uyartım ve ölçüm; veri işlem yöntemleri; yığma ve sayısal süzgeçler; sinyaldeki bozulmalar ve giderilmesi; ince iletken katman ve ara dirençli katman problem ve çözünürlüğü; zaman ortamı elektromanyetik yöntemlerle uygulama örnekleri, bir boyutlu modelleme; düz ve ters çözüm algoritmaları; veri değerlendirme ve yorum. Basic theoretical background of time-domain electromagnetic (TDEM) methods; electromagnetic field equations; diffusion equations; definition of apparent resistivity; the field system and measurement techniques of ground and airborne time-domain electromagnetic methods; definition of electromagnetic source and fields; electromagnetic induction with vertical magnetic and horizontal electric dipole; single and multichannel TDEM systems; and measurements; data processing; stacking methods and digital filters; distortions of the signal and their compensations; conductive thin layer and resistive middle layer problem; TDEM applications; one dimensional modeling, forward modeling and inversion; data interpretation.",
+  "outcomes": [
+   "Jeofizik alanındaki yüksek lisans yeterliliklerine dayalı olarak, alanındaki güncel ve ileri düzeydeki bilgileri özgün düşünce ve/veya araştırma ile uzmanlık düzeyinde geliştirebilme, derinleştirebilme ve alanına yenilik getirecek özgün tanımlara ulaşabilme, disiplinlerarası etkileşimi gerektiren yeni ve karmaşık yerbilimleri ve/veya mühendisliği problemlerinin jeofizik analiz, sentez ve değerlendirmesinde uzmanlık bilgilerini kullanarak özgün sonuçlara ulaşabilme.",
+   "Yerbilimleri ve/veya mühendisliğinin yeni ve karmaşık problemlerinin sistematik bir yaklaşımla analiz, sentez ve değerlendirilmesini yapabilme, jeofizik veri toplama, işleme ve yorumlamadaki yeni yöntemleri üst düzey beceri seviyesinde kullanarak, yenilik getiren düşünce, yöntem, tasarım ve/veya uygulama geliştirebilme ve/veya bilinen düşünce, yöntem, tasarım ve/veya uygulamayı farklı bir alana uygulama, özgün bir konuyu araştırabilme, kavrayabilme tasarlayabilme, uyarlayabilme ve uygulayabilme.",
+   "Yaratıcı ve eleştirel düşünme, sorun çözme ve karar verme gibi üst düzey zihinsel süreçleri kullanarak jeofizik veri toplama, işleme, modelleme ve yorumlama ile ilgili yeni düşünce, yöntem, tasarım ve/veya uygulama geliştirebilme, yada bilinen bir düşünce, yöntem, tasarım ve/veya uygulamayı farklı bir alana uygulayan özgün bir çalışmayı bağımsız olarak gerçekleştirerek alanındaki ilerlemeye katkıda bulunabilme, özgün ve disiplinlerarası sorunların çözümlenmesini gerektiren ortamlarda liderlik yapabilme.",
+   "Jeofizik alanı ile ilgili karşılaşılan sorunların çözümünde stratejik karar verme süreçlerini kullanarak işlevsel etkileşim kurabilme, jeofizik alanındaki bilimsel, teknolojik sosyal veya kültürel ilerlemeleri tanıtarak, yaşadığı toplumun bilgi toplumu olma ve bunu sürdürebilme sürecine katkıda bulunabilme, alanı ile ilgili konularda karşılaşılan toplumsal, bilimsel, kültürel ve etik sorunların çözümüne katkıda bulunabilme ve bu değerlerin gelişimini destekleyebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş.",
+   "Hafta 2 — Elektrik ve elektromanyetik yöntemlerle ilgili temel kavramlar.",
+   "Hafta 3 — Zaman ortamı elektromanyetik yöntemlerin kuram ve fizik esasları.",
+   "Hafta 4 — Elektromanyetik dalga ve alan denklemleri; elektromanyetik kaynak ve alan tanımları.",
+   "Hafta 5 — Elektromanyetik difüzyon süreci ve denklemleri, görünür özdirenç tanımı.",
+   "Hafta 6 — Yer yüzeyinde ve havadan zaman ortamı elektromanyetik yöntemlere ait ölçüm sistem ve teknikleri.",
+   "Hafta 7 — Düşey manyetik ve yatay elektrik dipol ile uyartım.",
+   "Hafta 8 — Tek ve çok kanallı sistemlerle elektromanyetik uyartım ve ölçüm.",
+   "Hafta 9 — Veri işlem yöntemleri; yığma ve sayısal süzgeçler; sinyaldeki bozulmalar ve giderilmesi.",
+   "Hafta 10 — İnce iletken katman ve ara dirençli katman problem ve çözünürlüğü.",
+   "Hafta 11 — Zaman ortamı elektromanyetik yöntemlerle uygulama örnekleri.",
+   "Hafta 12 — Bir boyutlu modelleme teknikleri.",
+   "Hafta 13 — Düz ve ters çözüm algoritmaları.",
+   "Hafta 14 — Veri değerlendirme ve yorum."
+  ],
+  "textbooks": [
+   "Kaufmann, A. A., Keller, G. V., 1983, Frequency and Transient Soundings; Elsevier, Amsterdam.",
+   "Zhdanov, M. S., Keller, G. V., 1994, The Geoelectrical Methods in Geophysical Exploration; Elsevier, Amsterdam.",
+   "Ward, S. H., Hohmann, G. W., 1988, Electromagnetic Theory for Geophysical Applications, in Electromagnetic Methods in Applied Geophysics, V.1, M. N. Nabighian, Ed., SEG, p.131-311.",
+   "Strack, K. M., 1992, Exploration with Deep Transient Electromagnetics; Elsevier, Amsterdam.",
+   "Özürlan, G., Ulugergerli, Emin, U., 2005, Jeofizik Mühendisliğinde Elektromanyetik Yöntemler, Birsen Yayınevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=605",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 609": {
+  "code": "JFM 609",
+  "name": "Sismik Nitelik Analizi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders sismik yansıma verilerinin zaman, genlik, faz, frekans, soğurulma gibi özelliklerini kullanarak sismik niteliklerin oluşturulmasını ve bu değerlerden yer içi elastik sabitlerinin araştırılmasını içerir. Sismik nitelikler kullanılarak yeraltında hidrokarbon, petrol ve kömür gibi ekonomik değerlerin varlığının araştırılması ve uzaysal dağılımın saptanmasının yanısıra yer içi yapısal ve stratigrafik yorumu da yapılır. In this course, seismic attributes by using time, amplitude, phase, frequency, and attenuation information of seismic reflection data are introduced. Seismic attributes are used for determining elastic constants of subsurface as well as exploration of petroleum, hydrocarbon, coal etc. energy resources and their spatial distribution. Moreover, structural and stratigraphical features of the subsurface are investigated by seismic attributes.",
+  "outcomes": [
+   "Sismik yansıma verilerini kullanarak sismik nitelikleri türetmek ve nitelik kesitleri oluşturmak.",
+   "Sismik niteliklerin yer içi fiziksel parametreleri ile ilişkileri.",
+   "Yansıma genliklerinin ofset ve/veya geliş açısı ile değişimi (AVO/AVA) verilerini yorumlamak.",
+   "Sismik nitelikleri petrol, doğal gaz ve kömür gibi ekonomik değerlerin araştırmasında kullanmak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ders tanıtım, kaynaklar, sismik niteliklerin temelleri.",
+   "Hafta 2 — Kayaç fiziği ve elastik modüller, akustik empedanslar, düşey geliş yansıma katsayıları.",
+   "Hafta 3 — Knott ve Zoeppritz Denklemleri ve bu denklemlere yaklaşımlar: Bortfeld, Aki ve Richards, Shuey, Smith ve Gidlow, Fatti yaklaşımları.",
+   "Hafta 4 — Sismik yansıma genliğinin ofset ve/veya açı ile değişimi (AVO/AVA), sentetik modeller.",
+   "Hafta 5 — AVO/AVA Analizinde petrofizik uygulamalar; yer içinde litoloji, gözeneklilik, gözenek sıvısı, sıcaklık, basınç, ve derinlik değişimlerinin Vp ve Vs hızları üzerindeki etkileri.",
+   "Hafta 6 — Direkt Hidrokarbon Göstergeleri (DHG); parlak, sönük, yatay nokta kavramları, polarite terslenmesi. DHG ve tuzaklar.",
+   "Hafta 7 — AVO/AVA analizi için sismik veri işlem yöntemleri.",
+   "Hafta 8 — AVO/AVA belirteçleri, kesme ve eğim değerleri, Rutherford ve Williams Sınıflaması.",
+   "Hafta 9 — Yakın ve uzak ofset kısmi kesitleri, kümelenme, akışkan faktörü, gözeneklilik göstergesi.",
+   "Hafta 10 — AVO/AVA analizi ve yorumu, örnek uygulamalar.",
+   "Hafta 11 — Sismik dalga yayılımı; genlik, frekans ve fazı etkileyen faktörler.",
+   "Hafta 12 — Sismik niteliklerin sınıflaması; genliğin zarfı, anlık faz, anlık frekans, görünür polarite.",
+   "Hafta 13 — Sismik nitelikler için veri işlem teknikleri ve tuzaklar.",
+   "Hafta 14 — Sismik niteliklerde örnek uygulamalar."
+  ],
+  "textbooks": [
+   "Castagna, J.P., Backus, M.M., 1993, Offset Dependent Reflectivity: Theory and Practice of AVO Analysis. Investigations in Geophysics, no: 8. SEG publication.",
+   "Yılmaz, Ö., 2001. Seismic Data Analysis, Vol 1 and Vol 2, Investigations in Geophysics No:10, Society of Exploration Geophysicsts, Tulsa, U.S.A.",
+   "Badley, M. E., 1985, Practical Seismic Interpretation: International Human Resources Development Corporation, Boston, 266 p.",
+   "Chapra, S., Marfurt, K.J., 2007, Seismic Attributes for Prospect Identification and Reservuar Characterization, SEG Publication.",
+   "Barnes, A.E., 2007, A tutorial on complex seismic trace analysis, Geophysics, vol. 72, no: 6."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=609",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JFM 696": {
+  "code": "JFM 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

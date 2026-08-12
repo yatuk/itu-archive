@@ -1,0 +1,177 @@
+{
+ "MAM 503E": {
+  "code": "MAM 503E",
+  "name": "Structure&Crystallography",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kafesler ve birim hücreler. Kristal sistemler ve Bravais kafesleri yeniden gözden geçirildi: Bir birim hücredeki konumların koordinatları. Yön ve düzlemlerin Miller indisleri. Yön ve uçak ailesi. Altıgen indeksler. Altıgen sıkı paketlenmiş yapı. Endekslerin dönüşümü. Koordinasyon numarası. Farklı kafesler için paketleme faktörü. Teorik yoğunluk.Kristal yapılar için minimum ve benzersiz simetri elemanları. Simetri operatörleri (ayna, döndürme, ters çevirme, döndürme-ters çevirme), sembolleri ve örnekleri. Nokta simetrisinin tanımı. 32 nokta grubu sınıfı, nokta grubu notasyonlarının anlamı ve ilgili diyagramlar. Hermann-Mauguin notasyonu. 2 boyutlu kafeslerde simetriler. 3-D Bravais kafeslerine özel simetri operatörleri: kaydırma ve vidalama. Diyagramlar kullanarak tüm simetri operatörlerinin açıklaması ve grafiksel gösterimi. Basit Bravais kafesinden başlayarak uzay gruplarının oluşturulması: ortorombik kafesler. Bazı monoklinik, ortorombik, tetragonal ve altıgen Bravais kafesleri için uzay grubu simetri diyagramlarının ve tablolarının sınıf içi çalışılmış çizimleri. Karşılıklı kafes ve kristalografik hesaplamalarda kullanımı.Periyodik tablo yeniden ziyaret edildi. Saf elemanların ortak yapıları ve Strukturbericht notasyonları. Çokyüzlü birimler ve istifleme dizileri. Yakın paketlenmiş yapıların istiflenmesi: fcc, hcp ve karmaşık istifleme dizileri. A1, A2, A3 ve A4 (elmas) yapılarında geçiş sitelerinin tanımı. AB'ye dayalı iyonik yapılar (NaCl, ZnS, BN, NiAs, vb.). Katyon-anyon yarıçap oranına dayalı koordinasyon. Elmas ve ZnS yapıları. Dört yüzlü ve oktahedral boşluklara dayalı yapılar. AB2, A2B3 yapıları, AB2 Lave fazları ve Strukturbericht notasyonları. TiO2 ve ZrO2 yapıları ve polimorflarının detaylı açıklamaları. Silikatların tarihsel tanıtımı ve önemi. SiO4-4 tetrahedron ve tekrar eden birimler. Kristal silika ve polimorfları. Amorf silika (vitreus hali). Köprülü ve köprüsüz oksijen konsepti. Anyon grupları. Silikat ağları. Metasilikatlar. Sac ve halka yapıları. Çerçeve (3-D) yapılar, Bazı yaygın silikat mineral örnekleri. Lattices and unit cells. Crystal systems and Bravais lattices revisited: Coordinates of positions in a unit cell. Miller Indices of directions and planes. Family of directions and planes. Hexagonal indices. Hexagonal close-packed structure. Transformation of indices. Coordination number. Packing factor for different lattices. Theoretical density. Minimum and unique symmetry elements for crystal structures. Symmetry operators (mirror, rotation, inversion, rotation-inversion), their symbols and examples. Definition of point symmetry. 32 point group classes, meaning of point group notations and pertinent diagrams. Hermann-Mauguin notation. Symmetries in 2-D lattices. Symmetry operators specific to 3-D Bravais lattices : glide and screw. Explanation and graphical representation of all symmetry operators using diagrams. Introduction to and generation of space groups starting from simple Bravais lattice : orthorhombic lattices. In-class worked-out drawings of space group symmetry diagrams and tables for some monoclinic, orthorhombic, tetragonal and hexagonal Bravais lattices. Reciprocal lattice and its use in crystallographic calculations. Periodical table revisited. Common structures and Strukturbericht notations of pure elements. Polyhedral units and stacking sequences. Stacking of close-packed structures : fcc, hcp and complex stacking sequences. Definition of interstitial sites in A1, A2, A3 and A4 (diamond) structures. Ionic structures based on AB (NaCl, ZnS, BN, NiAs, etc.). Coordination based on cation-to-anion radii ratio. Diamond and ZnS structures. Structures based on tetrahedral and octahedral interstices. AB2, A2B3 structures, AB2 Lave phases and their Strukturbericht notations. Detailed explanations of TiO2 and ZrO2 structures and polymorphs. Historical introduction and importance of silicates. The SiO4-4 tetrahedron and repeating units. Crystalline silica and its polymorphs. Amorphous silica (vitreous state). Bridging and non-bridging oxygen concept. Anion groups. Silicate networks. Metasilicates. Sheet and ring structures. Framework (3-D) structures, Some common silicate mineral examples.",
+  "outcomes": [
+   "Kristal yapılarının ve Bravais kafeslerinin özelliklerinin kristalografik olarak yorumlanması,",
+   "Eşdeğer kafes konumalrı, koordinasyon, paketleme, istiflenme, kristal yönleri ve düzlemleri,",
+   "Simetri elemanlarının kavranması ve bunların kristal sistemlerine göre uyarlanması,",
+   "Nokta simetrisi ve nokta grubu kavramları ve kristal sistemlerinin nokta gruplarının belirlenmesi,",
+   "Uzay simetrisi kavramı ve Bravais kafeslerinin uzay simetrisi ve uzay gruplarının belirlenmesi,",
+   "Basit, sıkı-paketlenmiş, karmaşık ve düzenli yapılar : notasyonlar, gösterimleri ve simetrileri,",
+   "Dört yüzlü ve sekiz yüzlü arayer konumları ve bunların temelinde ikili inorganik çeşitli AB yapıları,",
+   "AB2, A2B, AxByCz inorganik yapıların çıkarılması ve bunlara ait uzay gruplarının belirlenmesi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Atomsal düzen. Kristalografiye giriş. Kristal sistemleri ve Bravais kafesleri.",
+   "Hafta 2 — Kafes yönleri, düzlemleri, Miller ve Miller-Bravais indislerinin tekrarı. Atomsal dolgu faktörü. Düzlemsel yoğunluk. Eşdeğer konumlar.",
+   "Hafta 3 — Simetri. Simetri operatörleri. Kristallerin minimum simetri elemenları. Nokta simetrisi..",
+   "Hafta 4 — Kristal sistemlerin nokta grubu simetrileri: streografik projeksiyonlar. Nokta grupları arasındaki benzerlikler ve farklılıklar.",
+   "Hafta 5 — Nokta grup simetrilerinin animasyonları. Düzlem simetrileri: 2-boyutlu simetri grupları.",
+   "Hafta 6 — Uzay grup simetrileri. Monoklinik kristal sistemi için çeşitli 3-boyutlu uzay gruplarının ve streogramların çıkarılması.",
+   "Hafta 7 — Ortorhombik ve tetragonal kristal sistemleri için çeşitli 3-boyutlu uzay gruplarının ve streogramların çıkarılması.",
+   "Hafta 8 — Trigonal ve hegzagonal kristal sistemleri için çeşitli 3-boyutlu uzay gruplarının ve streogramların çıkarılması.",
+   "Hafta 9 — Ters kafes ve ters uzay.",
+   "Hafta 10 — Periodik tabloya göre elementlerin yapıları. Element yapıları için Strukturbericht notasyonu. Hume-Rothery and Goldschmidt kuralları. Basit, sıkı-paketlenmiş ve düzenli yapılar.",
+   "Hafta 11 — İkili inorganic yapılar için Strukturbericht notasyonları. Dört yüzlü ve sekiz yüzlü arayer konumları. Çeşitli Bravais kafesleri ve yapılar için arayer boyutlarının çıkarılması ve hesaplanması. Paketleme, koordinasyon ve en yakın komşu kavramı. İyonik yarıçaplar ve katyon ve anyon yarıçap oranları.",
+   "Hafta 12 — Dört yüzlü ve sekiz yüzlü arayer esaslı inorganic ikili AB yapıları : tanım, çıkarım, gösterim ve örnekler.",
+   "Hafta 13 — AB2, A2B ikili inorganik yapıların çıkarımı ve gösterilmesi: ikili inorganik yapılar. Lave fazları. AxBy biledşikleri: örnekler, uzay grupları.",
+   "Hafta 14 — AxByCz inorganik yapıların çıkarılması ve gösterimi ve bu yapıların uzay gruplarının belirlenmesi. Perovskit ve spinel yapıları"
+  ],
+  "textbooks": [
+   "C. S. Barrett and T. B. Massalski, Structure of Metals, 3rd revised Ed., Pergamon Press, Oxford, 1980.",
+   "B. D. Cullity, Elements of X-ray Diffraction, 2nd Edition, Addison-Wesley Publishing Co., Inc., 1978.",
+   "D. R. Askeland, The Science and Engineering of Materials, Wadsworth Inc., 1984.",
+   "T. Kahn, editor, International Tables for X-ray Crystallography, 2nd Edition, Reidel Publishing Co., 1987."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MAM 505": {
+  "code": "MAM 505",
+  "name": "Hasar Analizi",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=505",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MAM 511": {
+  "code": "MAM 511",
+  "name": "Metallerde Deformas.&Kırılma",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Cisimlerde zorlanma türleri. Izotropik Elastiste, Gerilme ve Şekil Değişimi için Mohr Daireleri. Makroskopik Plastiste. Akma Kriterleri. Sünek malzemelerin makroskopik deformasyon davranışı. Kırılma ve Kırılma Mekaniği. Yorulma. Yorulma Çatlak İlerlemesi. Types of Stresses and Strains. Isotrophic Elasticity. Mohr's Circle for Stress and Strain. Macroscopic Plasticity. Yield Criteria. Macroscopic Deformation Behavior of Ductile Materials. Fracture and Fracture Mechanics. Fatigue. Fatşgue Crack Propagation.",
+  "outcomes": [
+   "Malzemelerde deformasyon ve kırılma türlerinin anlaşılması,",
+   "Gerilme ve şekil değiştirme ilişkilerinin anlaşılması,",
+   "Akma kriterlerinin öğrenilmesi,",
+   "Kırılma hasar kriterlerinin anlaşılması,",
+   "Yorulma hasarının nedenlerinin ve sonuçlarının anlaşılması",
+   "Kırılma tokluğu ve yorulma çatlak ilerleme hızının belirlenmesinde kullanılan test metotları",
+   "Birleşik gerilme hallerinde, gerilme ve birim şekil değişimlerinin belirlenmesi,",
+   "Malzemelerde tek ve çok eksenli birim şekil değişiminin ölçülmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Statiğin temel konularına giriş, yük, moment ve denge kavramı",
+   "Hafta 2 — Yükleme türleri eksenel yükleme ve kayma yüklemesi",
+   "Hafta 3 — Yükleme türleri eğme ve burma yüklemeleri",
+   "Hafta 4 — Gerilme ve birim şekil değişim kavramı, gerilme birim şekil değiştirme ilişkileri",
+   "Hafta 5 — Elastik sabitler arasındaki ilişkiler, Elastisite modülü, kayma modülü, hacim modülü ve Poisson oranı",
+   "Hafta 6 — Elastik deformasyon teorileri, gerilme ve birim şekil değişimi için Mohr dairesi",
+   "Hafta 7 — Eğilme ve burma yüklemelerinde gerilme moment ilişkileri",
+   "Hafta 8 — Kırılma mekaniğine giriş, Griffith teorisi",
+   "Hafta 9 — Yorulma kavramı, yorulma türleri ve yorulma dayanımının belirlenmesi",
+   "Hafta 10 — Düzlem şekil değişimi kırılma tokluğu ve ölçüm yöntemleri",
+   "Hafta 11 — Çatlak ilerlemesi kavramı ve yorulma çatlak ilerleme hızı ölçüm yöntemleri",
+   "Hafta 12 — Birleşik gerilme hallerinde gerilme birim şekil değişimi ilişkileri",
+   "Hafta 13 — Basınçlı kaplara etkiyen gerilmeler",
+   "Hafta 14 — Birim şekil değişimi ölçümünde deformasyon ölçerlerin kullanımı"
+  ],
+  "textbooks": [
+   "Lalanne, C., Fatigue Damage, John Wiley & Sons, Ltd, 2014.",
+   "Bathias, C., Fatigue Limit in Metals, John Wiley & Sons Incorporated, 2013.",
+   "D.Roylance, Mechanics of Materials, John Willey and Sons, New York, 1996.",
+   "R.M Caddel, Deformation and Fracture of Solids, Prentice-Hall, New Jersey, 1980.",
+   "M.A.Meyers, K.K.Chawla, Mechanical Behaviour of materials, Rentice-Hall, New Jersey, 1999"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=511",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MAM 596": {
+  "code": "MAM 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "UZM 501E": {
+  "code": "UZM 501E",
+  "name": "Mühendislik Matematiği",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Vektor ve vektor uzayları; Matris gösterimleri ve linear denklem sistemleri; Özdeğer problemleri; Spektral ayrışma; Karakteristik ve minimal polinomlar; İç çarpım uzayları ve ortogonolite; Ortogonal ve Hermityen matrisler; Hilbert uzayları; Fourier serileri ve Fourier transformları; Laplace transformları; Kompleks fonksiyonlarda limit, süreklilik ve türevlenebilirlik; Cauchy-Riemann denklemleri; Kompleks integrasyon ve Cauchy teoremi; Taylor ve Laurent serileri; Kalanlar teoremi; Konform dönüşümler ve sınır değer problemlerine uygulamaları; Vektor didderensiyel ve integral hesaplamalar; Sayısal mathematik. Vectors and vectors spaces; Matris representation and system of linear equations; Eigenvalue problems; Spectral decomposition; Characteristic and minimal polynomials; Inner product spaces and orthogonality; Orthogonal and Hermitian matrices; Hilbert spaces; Fourier series and transform; Laplace transform; Limit, continuity and differentiability of functions of a complex variable; Cauchy-Riemann equations; Complex integration and Cauchy’s theorem; Taylor and Laurent series; Residue theorem; Complex mapping and its application to boundary value problems; Vector differential and integral calculus; Numerical mathematics.",
+  "outcomes": [
+   "Temel vektör ve matris işlemlerini kavrar",
+   "Verilen bir matrisi kanonik forma dönüştürebilir",
+   "Verilen bir matrisin öz değerlerini ve öz vektörlerini hesaplayabilir",
+   "Periyodik bir foksiyona Fourier serisine açabilir ve Fourier transformasyonu kullanabilir",
+   "Laplace transformasyonu kullanabilir",
+   "Bir eğri boyunca kompleks integralleri hesaplayabilir",
+   "Sınır değer problemleri için konfom transformasyondan faydalanabilir",
+   "Gauss divergence teoremii, Stokes’ teoremini ve Green teoremini kullanabilir",
+   "Mühendislik problemlerinde sayısal yöntemleri uygulayabilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Vektor ve vektor uzayları",
+   "Hafta 2 — Matrisler ve lineer denklem sistemleri",
+   "Hafta 3 — Özdeğerler, özvektörler ve köşegenleştirme",
+   "Hafta 4 — Karakteristik ve minimal polinomlar",
+   "Hafta 5 — İç çarpım uzayları ve ortogonolite. Hilbert uzayları",
+   "Hafta 6 — Fourier serileri, Fourier integralleri ve Fourier dönüşümleri",
+   "Hafta 7 — Laplace dönüşümü",
+   "Hafta 8 — Kompleks fonksiyonlarda limit, süreklilik ve türevlenebilirlik",
+   "Hafta 9 — Cauchy-Riemann denklemleri",
+   "Hafta 10 — Kompleks integrasyon ve Cauchy teoremi",
+   "Hafta 11 — Taylor ve Laurent serileri. Kalanlar teoremi",
+   "Hafta 12 — Konform dönüşümler ve sınır değer problemlerine uygulanması",
+   "Hafta 13 — Vektor diferansiyel and integral hesaplamaları",
+   "Hafta 14 — Sayısal matematik"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UZM 508E": {
+  "code": "UZM 508E",
+  "name": "Uzay Aracı Mimarileri ve Alt Sistem Tasarımı",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Uzay aracı görevleri, Görev Yükleri, Sistem isterleri, Uzay Aracı mimarileri. Uzay Aracı kütle bütçesi. Uzay aracı güç bütçesi. Uzay Aracı alt sistemleri, İtki alt Sistemi, Yönelim Belirleme ve Kontrol Alt Sistemi, Komut ve Veri Yönetimi, Haberleşme, Isı ve Yapı, Elektrik Güç, Yer Kesimi, Uzaya Erişim kesimi, Uzay Görev Operasyonları. Spacecraft missions, Payloads, System Requirements, Spacecraft architecture. Spacecraft mass budget. Spacecraft Power budget. Spacecraft subsystems. Propulsion, Attitude Determination and Control, Onboard Data Handling, Communication, Thermal and Structures, Electric Power, Ground Segment, Space Access segment, Space Mission Operations.",
+  "outcomes": [
+   "Mevcut uzay aracı görevleri ve ilgili mimarileri bilir",
+   "Farklı görev profilleri için uzay aracı kütle ve güç bütçelerini hesaplayabilir.",
+   "Farklı göreve dayalı uzay aracı mimarileri için alt sistemleri belirleyebilir.",
+   "Farklı göreve dayalı uzay aracı mimarileri için alt sistemlerin gereksinimlerini tanımlayabilir",
+   "Verilen bir görev için görev tasarımı yapabilir.",
+   "Uzay aracı görev tasarımı ile Uzaya erişim kesimi ve Yer Kesimi ilişkilerini bilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Uzay Teknolojileri ve Güncel Eğilimler",
+   "Hafta 2 — Uydu sınıflamaları, uydu görevleri ve örnekleri",
+   "Hafta 3 — Uydu mimarileri ve uydu bütçeleri",
+   "Hafta 4 — Uydu kütle güç bütçe tahminleri",
+   "Hafta 5 — Uydu Yönetim Alt Sistemi",
+   "Hafta 6 — Uydu Haberleşme Alt Sistemi",
+   "Hafta 7 — Uydu Haberleşme Alt Sistemi ve yer istasyonları",
+   "Hafta 8 — Uydu Elektrik Güç Sistemleri, dış enerji kaynağına dayalı",
+   "Hafta 9 — Uydu Elektrik Güç Sistemleri, iç enerji kaynağına dayalı",
+   "Hafta 10 — Uydu Yörünge ve Yönelim Belirleme ve Kontrol Alt sistemi",
+   "Hafta 11 — Uydu İtki Sistemleri",
+   "Hafta 12 — Uydu Isıl Koruma Sistemleri",
+   "Hafta 13 — Uydu Yapı ve mekanizmalar alt sistemi",
+   "Hafta 14 — Uyduların fırlatılması ve görev operasyonları"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=508",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UZM 509E": {
+  "code": "UZM 509E",
+  "name": "Uzay Fiziği I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Temel plazma fiziğine giriş ve uzay plazma fiziğine yönelik seçilmiş konular. Uzay fiziğinin temel kavramları ve teoriler. Yüklü parçacıkların hareketi. Manyetik alana bağlı parçacıkların hareketi. Çarpışmalar ve iletkenlik. Güneş rüzgarı ve Manyetosferik plazma ortamının temelleri. Konveksiyon ve fırtınalara giriş. Kinetik teorinin temelleri. Uzay plazmalarına makroskopik bakış. Plazma akışında dalgalar. Güneş rüzgarı ve magnetosferik plazmalarında uzay fiziği teorilerinin uygulamaları. Introduction to basic plasma physics and selected fundamentals related to space plasmas. Concepts and theories in space plasma physics. Charged particle motion. Trapped particles. Collisions and conductivity. Basics about solar wind and magnetospheric plazma environment. Convection and substorms. Elements of Kinetic theory. Macroscopic view of space plasma. Waves in plasma fluids. Applications of theories in solar wind and magnetospheric plasma.",
+  "outcomes": [
+   "Uzay plazma fiziğinin temel ilke ve kurallarını öğrenir, tartışabilir",
+   "Dünya’nın ve gezegenlerin uzay ortamında bulunan magnetize olmuş plazmalar konusunda teorik temelleri inceler, anlar, tartışabilir",
+   "Uzay Plazma Fiziği literatüründe mevcut tartışılan teorileri ve metodları analiz edip değerlendirebilir, tartışabilir",
+   "Uzay fiziği konularında problem çözme tekniklerini de entegre ederek bağımsız araştırma yapabilir"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=509",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

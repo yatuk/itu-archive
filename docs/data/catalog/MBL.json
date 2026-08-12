@@ -1,0 +1,824 @@
+{
+ "MBL 513E": {
+  "code": "MBL 513E",
+  "name": "Digital Arch.Design&Modelling",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilgisayar ortamında modelleme ve çizim yazılımlarından birini kullanarak mimari tasarım ürünlerinin modellenmesi; Parametrik nesne tasarımları ve parametrik mimari tasarım uygulamaları; Tasarımların ses ve devingen görüntülerle bütünleştirilmesi; CAD yazılımlarının veri tabanı yapıları ve yönetimi; Bir mimari tasarım sürecinin kavramsal tasarım aşamasından sunuş aşamasına kadar bilgisayar ortamında modellenmesi için gereken yazılım türleri ve kullanımları; Örnekler üzerinde irdelenmesi ve uygulanması. Modelling in computer and modelling of architectural design product by using CAD software; Parametric object design and applications of parametric architectural design; Integration of design with sound and animation; Structures of database of CAD and their management; Software necessary for modelling of an architectural design process from the conceptual phase to the presentation phase in computer environment and their applications; Case studies on architectural design problems by CAD software.",
+  "outcomes": [
+   "Mimari tasarımda bilişim alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme.",
+   "Alanın ilişkili olduğu diğer disiplinlerle arasındaki etkileşimi kavrayabilme, yorumlayabilme ve yeni bilgiler oluşturabilme.",
+   "Alanında edindiği uzmanlık düzeyindeki kuramsal ve uygulamalı bilgileri kullanabilme.",
+   "Alanı ile ilgili karşılaşılan sorunları araştırma yöntemlerini kullanarak çözümleyebilme.",
+   "Alanında uzmanlık gerektiren çalışmaları bağımsız yürütebilme.",
+   "Alanın gerektirdiği düzeyde bilgisayar yazılımı ile birlikte bilişim ve iletişim teknolojilerini ileri düzeyde kullanabilme.",
+   "Mimari tasarımda bilişim alanında özümsedikleri bilgiyi, problem çözme, model geliştirme ve uygulama becerilerini disiplinlerarası çalışmalarda kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temsil ve mimarlıkta temsil kavramı",
+   "Hafta 2 — Modelleme kavramı ve mimari tasarıma getirdiği olanaklar",
+   "Hafta 3 — Katı modelleme paketlerinin tanıtımı",
+   "Hafta 4 — Dönem içi proje konusunun saptanması",
+   "Hafta 5 — Önerilen katı modellme paketinin öğrenci tarafından sunulması",
+   "Hafta 6 — Yarıyıl içi proje çalışması (grup çalışması)",
+   "Hafta 7 — Yarıyıl içi proje çalışmasının sunumu ve modelleme bilgisinin analizi",
+   "Hafta 8 — Dönem sonu projesi önerisi ve yazılım konusunda seçimler",
+   "Hafta 9 — Dönem sonu proje konusunun saptanması",
+   "Hafta 10 — Tasarım konusu ve modelleme paketi üzerine tartışmalar ve kritikler (grup çalışması)",
+   "Hafta 11 — Tasarım konusu ve modelleme paketi üzerine tartışmalar ve kritikler (grup çalışması)",
+   "Hafta 12 — Tasarım konusu ve modelleme paketi üzerine tartışmalar ve kritikler",
+   "Hafta 13 — Dönem projesinin değerlendirilmesi",
+   "Hafta 14 — Dönem projesinin değerlendirilmesi"
+  ],
+  "textbooks": [
+   "Beckmann, J. (ed.), (1999), The Virtual Dimensions: Architecture, Representation and Crash Culture, Amazon, London.",
+   "Gajski, D.D., (1996), Principles of Digital Design, John Wiley & Sons, London.",
+   "Mortenson, M.C., (1997), Geometric Modelling, John Wiley & Sons, London.",
+   "Sanders, K., (1995), The Digital Architect: A Common Sense Guide to Using Computer Technology in Design Practise, John Wiley & Sons, London.",
+   "Sahai, R., (1996), Inside Microstation 95, 4 th Edition, Onword Press, Santa Fe, NM."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=513",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 516E": {
+  "code": "MBL 516E",
+  "name": "Intera.Tools&Enviro.in Dig.De.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Mimari tasarım ve araç ilişkisi; Arayüz kavramı ve arayüzün dijitalleşmesi; Etkileşim kavramı ve etkileşimin kip ve modaliteleri; Dijitalin somutlaşması;Mimari tasarımda dokunulabilir (Tangible and Haptic) Arayüzler; Jeste dayalı etkileşim ortamları; Harekete dayalı etkileşim ortamları;Fiziksel programlama ortamları; Mekan içinde etkileşim, etkileşimin uzamsallığı; Sensörler (ardunio/kinect/leepmotion/wii) ile basit bir arayüz tasarımı; Mimari tasarımda kullanılabilecek bir etkileşim ortamı geliştirilmesine ilişkin uygulamalar. The relationship between architectural design and tools; The interface concept and the affordances of the interfaces; Modes and modalities of interaction; Embodiment of the digital; Tangible and haptic interaction in architectural design; Gesture Based interaction environments; Motion based interaction environments; Physical computing environments; Interaction with/in the space, spatiality of interaction; A simple interface design via sensors (ardunio/ kinect/ leepmotion/ wii); Applications for developing an interaction environment for architectural design process.",
+  "outcomes": [
+   "Mimari tasarımda bilişim alanında edindiği bilgileri, insan-bilgisayar etkileşimi ve psikoloji disiplin alanlarından gelen bilgilerle bütünleştirerek yorumlayabilme;",
+   "Mimari tasarım sürecinde kullanılabilecek etkileşim araç ve ortamları konusunda yeni bilgiler oluşturabilme;",
+   "Parametrik mimari tasarım amacıyla geliştirilen kavramsal modellerin grafik modellere dönüştürülmesi konusunda gerekli düzeyde bilgisayar yazılımı ile birlikte bilişim ve iletişim teknolojilerini ileri düzeyde kullanabilme;",
+   "Mimari tasarımı destekleyen sayısal ve fiziksel artefektlerin arasındaki etkileşimin mantığının özümsenerek, problem çözme ve/veya uygulama becerilerini disiplinlerarası çalışmalarda kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mimari Tasarım ve Araç İlişkisi;",
+   "Hafta 2 — Arayüz Kavramı ve Arayüzün Dijitalleşmesi;",
+   "Hafta 3 — Etkileşim Kavramı, Etkileşimin Kip ve Modaliteleri;",
+   "Hafta 4 — Dijitalin Somutlaşması;",
+   "Hafta 5 — Dokunulabilir (Tangible) Etkileşim",
+   "Hafta 6 — Dokunulabilir(Haptic) Etkileşim",
+   "Hafta 7 — Mimari Tasarımda Dokunulabilir Arayüzler",
+   "Hafta 8 — Jeste Dayalı Etkileşim Ortamları",
+   "Hafta 9 — Harekete Dayalı Etkileşim Ortamları",
+   "Hafta 10 — Fiziksel Programlama Ortamları",
+   "Hafta 11 — Mekan İçinde Etkileşim, Etkileşimin Uzamsallığı",
+   "Hafta 12 — Sensörler(Ardunio/Kinect/Leepmotion/Wii) ile Basit bir Arayüz Tasarımı",
+   "Hafta 13 — Mimari Tasarımda Kullanılabilecek bir Etkileşim Ortamı Geliştirme",
+   "Hafta 14 — Mimari Tasarımda Kullanılabilecek bir Etkileşim Ortamı Geliştirme"
+  ],
+  "textbooks": [
+   "Bongers, B. (2006). Interaction with our electronic environment an e-cological approach to physical interface design,Cahier Book series (no 34) of the Faculty of Journalism and Communication, Hogeschool van Utrecht, April 2004 ISBN 90-77575-02-2.",
+   "Picon, A. (2010). Digital culture in architecture. Birkh user Architecture.",
+   "Paul Dourish. (2004). Where the action is: the foundations of embodied interaction. MIT press.",
+   "Shamonsky, D. J. (2003). Tactile, spatial interfaces for computer-aided design: superimposing physical media and computation (Doctoral dissertation, Massachusetts Institute of Technology)."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=516",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 517E": {
+  "code": "MBL 517E",
+  "name": "Mimari Tasa.Dij.Ür.&Prototip.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilgisayar destekli üretim yaklaşımlarına, araç ve yöntemlerine giriş; 2 boyutlu ve 3 boyutlu tarama teknikleri; Eklemeli üretim süreçleri: hızlı prototipleme; Hızlı prototipleme için üretken yaklaşımlar; Hızlı prototiplemede eniyileme ve rasyonalizasyon; Çıkartmaya dayalı üretim süreçleri: CNC ve lazer kesici; Lazer kesici için bölme ve birleştirme yöntemleri; Birleşik malzemeler için birleştirme yöntemleri; Robotlar ile üretim; birebir ölçekte bir mimari tasarım ürünü için düşünce ve modellerin tartışılması ve geliştirilmesi; tasarım ürününün bileşenlerinin üretimi ve birleştirilmesi. Introduction to the computer aided manufacturing (CAM) approaches, tools and methods; 2D and 3D Scanning techniques; Additive manufacturing processes: rapid prototyping; Generative approaches for rapid prototyping; Optimization and rationalization in rapid prototyping; Subtractive manufacturing processes: CNC and laser cutter; Paneling and assembly methods for laser cutter; Assembly methods for composite materials; Robotic fabrication; Review of the ideas and models for a design product; Manufacturing and assembling the components of the design product.",
+  "outcomes": [
+   "Başlıca sayısal üretim araçlarını kullanabilme;",
+   "Başlıca sayısal üretim araçlarını kullanabilme;",
+   "Sayısal üretim süreçleri için çözümler, modeller ve yaklaşımlar geliştirme bilgi ve becerisi;",
+   "Sayısal üretim süreçleri için çözümler, modeller ve yaklaşımlar geliştirme bilgi ve becerisi;",
+   "Malzeme ve üretim tekniklerini bütünleşik bir biçimde ele alma becerisi;",
+   "Malzeme ve üretim tekniklerini bütünleşik bir biçimde ele alma becerisi;",
+   "Aşağıdan yukarıya ve yukarıdan aşağıya sayısal üretim yaklaşımlarının bir örnek üzerinden deneyimlenmesi.",
+   "Aşağıdan yukarıya ve yukarıdan aşağıya sayısal üretim yaklaşımlarının bir örnek üzerinden deneyimlenmesi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilgisayar destekli üretim yaklaşımlarına, araç ve yöntemlerine giriş",
+   "Hafta 2 — 2 boyutlu ve 3 boyutlu tarama teknikleri",
+   "Hafta 3 — Eklemeli üretim süreçleri: hızlı prototipleme",
+   "Hafta 4 — Hızlı prototipleme için üretken yaklaşımlar",
+   "Hafta 5 — Hızlı prototiplemede eniyileme ve rasyonalizasyon",
+   "Hafta 6 — Çıkartmaya dayalı üretim süreçleri: CNC",
+   "Hafta 7 — Çıkartmaya dayalı üretim süreçleri: Lazer kesici",
+   "Hafta 8 — Lazer kesici için bölme yöntemleri",
+   "Hafta 9 — Lazer kesici için birleştirme yöntemleri",
+   "Hafta 10 — Birleşik malzemeler için birleştirme yöntemleri",
+   "Hafta 11 — Robotlar ile üretim",
+   "Hafta 12 — Bir tasarım ürünü için düşünce ve modellerin tartışılması ve geliştirilmesi",
+   "Hafta 13 — Tasarım ürününün bileşenlerinin üretimi",
+   "Hafta 14 — Tasarım ürününün bileşenlerinin birleştirilmesi"
+  ],
+  "textbooks": [
+   "Gramazio, F., Kohler,M., Langenberg, S. (eds.), (2014), Fabricate: Negotiating Design and Making, Riverside Architectural Press, Zürich.",
+   "Gramazio, F., Kohler,M., Langenberg, S. (eds.), (2014), Fabricate: Negotiating Design and Making, Riverside Architectural Press, Zürich.",
+   "Iwamoto, L. (2013). Digital fabrications: architectural and material techniques. Princeton Architectural Press.",
+   "Iwamoto, L. (2013). Digital fabrications: architectural and material techniques. Princeton Architectural Press.",
+   "Kolarevic, B., & Klinger, K. (Eds.). (2013). Manufacturing Material Effects Kola: Rethinking Design and Making in Architecture. Routledge.",
+   "Kolarevic, B., & Klinger, K. (Eds.). (2013). Manufacturing Material Effects Kola: Rethinking Design and Making in Architecture. Routledge.",
+   "Dunn, N. (2012). Digital fabrication in architecture. Laurence King Publishing.",
+   "Dunn, N. (2012). Digital fabrication in architecture. Laurence King Publishing.",
+   "Corser, R. (Ed.). (2006). Fabricating Architecture: Selected Readings in Digital Design and Manufacturing. Chronicle Books.",
+   "Corser, R. (Ed.). (2006). Fabricating Architecture: Selected Readings in Digital Design and Manufacturing. Chronicle Books."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=517",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 531E": {
+  "code": "MBL 531E",
+  "name": "Mimarlıkta Bilgisay.Program.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilgisayar programlamaya ilişkin temel bilgiler; Algoritma kurma ve geliştirme; Akış diyagramı yapıları; Yapılandırılmış programların genel yapısı ve program oluşturma süreci; Editör kullanma ve dosyalama; Yapılandırılmış bir programlama dilinde değişken ve veri tipleri, İşlemciler, ifadeler; Giriş-Çıkış deyimleri, Kontrol deyimleri, Döngü yapıları ve deyimleri, Alt Program deyimleri; Mimari formun bilgisayara tanımında kullanılan modeller, tanım teknikleri ve uygulamaları; Mimarlık problemlerine dönük algoritma geliştirme ve programalama uygulamaları; Mimarlık problemlerinin çözümünde kullanılabilecek benzetim modelleri geliştirme, algoritmalarını kurma ve programlama uygulamaları. Information about computer programming; developing algorithms; Structures of flow charts; Structures of programs, process of programming; Editing and creating program files. Types of data and variables in structured programming languages; Operators, expressions; Input-output statements, conditional statements, structures of loops, repititive statements, procedures and functions; Description models of architectural forms in computers and their applications; Developing algorithms and computer models for solution of an architectural problem; Developing simulation models which can be used in solving architectural problems, structuring their algorithms and computer programming applications.",
+  "outcomes": [
+   "Mimari tasarımda bilişim alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme;",
+   "Mimari tasarımda bilişim alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme;",
+   "Mimari tasarımda bilişim alanının ilişkili olduğu diğer disiplinlerle arasındaki etkileşimi kavrayabilme;",
+   "Mimari tasarımda bilişim alanının ilişkili olduğu diğer disiplinlerle arasındaki etkileşimi kavrayabilme;",
+   "Mimari tasarımda bilişim alanında edindiği bilgileri farklı disiplin alanlarından gelen bilgilerlerle bütünleştirerek yorumlayabilme ve yeni bilgiler oluşturabilme;",
+   "Mimari tasarımda bilişim alanında edindiği bilgileri farklı disiplin alanlarından gelen bilgilerlerle bütünleştirerek yorumlayabilme ve yeni bilgiler oluşturabilme;",
+   "Mimari tasarımda bilişim alanı ile ilgili karşılaşılan ve öngörülemeyen karmaşık sorunların çözümü için yeni stratejik yaklaşımlar geliştirebilme ve sorumluluk alarak çözüm üretebilme;",
+   "Mimari tasarımda bilişim alanı ile ilgili karşılaşılan ve öngörülemeyen karmaşık sorunların çözümü için yeni stratejik yaklaşımlar geliştirebilme ve sorumluluk alarak çözüm üretebilme;",
+   "Mimari tasarımda bilişim alanının gerektirdiği düzeyde bilgisayar yazılımı ile birlikte bilişim ve iletişim teknolojilerini ileri düzeyde kullanabilme;",
+   "Mimari tasarımda bilişim alanının gerektirdiği düzeyde bilgisayar yazılımı ile birlikte bilişim ve iletişim teknolojilerini ileri düzeyde kullanabilme;",
+   "Mimari tasarımda bilişim alanında özümsedikleri bilgiyi, problem çözme ve/veya uygulama becerilerini disiplinlerarası çalışmalarda kullanabilme.",
+   "Mimari tasarımda bilişim alanında özümsedikleri bilgiyi, problem çözme ve/veya uygulama becerilerini disiplinlerarası çalışmalarda kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Programlamanın temel kavramları; Bir problemin bilgisayar ortamında programlanma süreci",
+   "Hafta 2 — Progamlama arayüzlerinin tanıtımı, standart fonksiyonlar ve giriş-çıkış komutları",
+   "Hafta 3 — Operatörler: Aritmetik, ilişkisel ve mantıksal operatörler",
+   "Hafta 4 — Değişken ve veri tipleri: Standart ve özel veri tipleri; İfadeler",
+   "Hafta 5 — Dizi veri tipleri",
+   "Hafta 6 — Kontrol deyimleri: If, Case",
+   "Hafta 7 — Döngü yapıları ve deyimleri: While, Repeat, For, Goto",
+   "Hafta 8 — Alt program deyimleri: Fonksiyonlar",
+   "Hafta 9 — Alt program deyimleri: Prosedürler",
+   "Hafta 10 — Dosyalama işlemleri: Dosyaya veri yazma, dosyadan veri okuma",
+   "Hafta 11 — Mimari formun bilgisayara tanımında kullanılan modeller, tanım teknikleri",
+   "Hafta 12 — Mimari formun bilgisayara tanımıyla ilgili uygulamalar",
+   "Hafta 13 — Mimarlık problemlerine dönük programlama uygulamaları",
+   "Hafta 14 — Mimarlık problemlerine dönük programlama uygulamaları"
+  ],
+  "textbooks": [
+   "Cormen, T., H., Leiserson, C., E., Rivest, R., L., Stein, C., 2009, Introduction to Algoritms, MIT Press.",
+   "Cormen, T., H., Leiserson, C., E., Rivest, R., L., Stein, C., 2009, Introduction to Algoritms, MIT Press.",
+   "Menges, A., 2011, Computational Design Thinking: Computation Design Thinking, Wiley.",
+   "Menges, A., 2011, Computational Design Thinking: Computation Design Thinking, Wiley.",
+   "Meredith, M., Aranda-lasch, Sasaki, M., 2008, From Comtrol to Design: Parametric/Algorithmic Architecture, Actar.",
+   "Meredith, M., Aranda-lasch, Sasaki, M., 2008, From Comtrol to Design: Parametric/Algorithmic Architecture, Actar.",
+   "Reas, C., McWilliams, C., 2010, Form+Code in Design, Art, and Architecture (Design Briefs), Princeton Architectural Press.",
+   "Reas, C., McWilliams, C., 2010, Form+Code in Design, Art, and Architecture (Design Briefs), Princeton Architectural Press.",
+   "Terzidis, K., 2006, Algorithmic Architecture, Elsevier.",
+   "Terzidis, K., 2006, Algorithmic Architecture, Elsevier."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=531",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 533E": {
+  "code": "MBL 533E",
+  "name": "Bilgisayar Destekli Mimar.Tas.",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Tasarım sürecinde bilgisayarın rolü, farklı modelleme yazılımlarının sürece katkısının araştırılması, parametrik tasarım yöntemleri , düzenleyiciler, dönüştürücüler ve deformasyonlar ile form üretme, malzeme üreteçleri ile form üretme, destek yazılımların kullanımı, görselleştirme teknikleri The role of Computer in Architectural Design, study on the contribution of different modelling softwares on design process, parametric design techniques,form design with tranformers, modifiers and deformers, form design with material generators, using support software, rendering techniques,",
+  "outcomes": [
+   "Farklı yazılımlar arasında bilgi alışverişini doğru kurgulama.",
+   "Farklı yazılımlar arasında bilgi alışverişini doğru kurgulama.",
+   "Modelleme yazılımlarını doğru ve yerinde kullanma becerisi",
+   "Modelleme yazılımlarını doğru ve yerinde kullanma becerisi",
+   "Tasarım sürecinde destek yazılımlardan haberdar olma ve kullanma becerisi",
+   "Tasarım sürecinde destek yazılımlardan haberdar olma ve kullanma becerisi",
+   "Görselleştirme tekniklerinde uzmanlaşma",
+   "Görselleştirme tekniklerinde uzmanlaşma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mimari Tasarımda Bilgisayarın Rolü",
+   "Hafta 2 — CAD Programlarından Örnekler",
+   "Hafta 3 — 3D objeler ile modelleme teknikleri",
+   "Hafta 4 — 2D Şekiller ile modelleme teknikleri",
+   "Hafta 5 — Dönüştürme işlemleri, Deformasyonlar",
+   "Hafta 6 — Kopyalama teknikleri ile model üretimi",
+   "Hafta 7 — Parametrik modelleme",
+   "Hafta 8 — Parametrik modelleme",
+   "Hafta 9 — Dönem projesi ile ilgili hazırlıkların sunumu",
+   "Hafta 10 — Düzenleme işlemleri",
+   "Hafta 11 — Düzenleme işlemleri",
+   "Hafta 12 — Form üretiminde malzemenin rolü",
+   "Hafta 13 — Modelleme sürecinde malzeme kullanımı",
+   "Hafta 14 — Görselleştirme teknikleri"
+  ],
+  "textbooks": [
+   "Kelly L. Murdock, “3DS Max 2010 Bible “,Wiley Publition Inc., 2009",
+   "Kelly L. Murdock, “3DS Max 2010 Bible “,Wiley Publition Inc., 2009",
+   "George Maestri, “3ds Max at a Glance”, Wiley Publition Inc., 2007",
+   "George Maestri, “3ds Max at a Glance”, Wiley Publition Inc., 2007",
+   "Harri Haapasalo, Creative Computer Aided Architectural Design, Oulu University Library, 2000",
+   "Harri Haapasalo, Creative Computer Aided Architectural Design, Oulu University Library, 2000",
+   "Robert J. Krawczyk ,”A Shattered Perfection: Crafting a Virtual Sculpture “,Illinois Institute of Technology, College of Architecture, Chicago, IL.",
+   "Robert J. Krawczyk ,”A Shattered Perfection: Crafting a Virtual Sculpture “,Illinois Institute of Technology, College of Architecture, Chicago, IL.",
+   "Robert J. Krawczyk , Ying-Chun Hsu , “Architectural Interpretation of Cellular Automata”,Illinois Institute of Technology, College of Architecture, Chicago, IL.",
+   "Robert J. Krawczyk , Ying-Chun Hsu , “Architectural Interpretation of Cellular Automata”,Illinois Institute of Technology, College of Architecture, Chicago, IL."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=533",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 537E": {
+  "code": "MBL 537E",
+  "name": "Architectural Design Futures",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Mimari tasarım olgusu: kavram/süreç/ürün/söylem/temsil olarak tanımları ve özellikleri; Elektronik ortamının iletişim ortamı, üretim ortamı, sunum ortamı olarak özellikleri; Tasarım kuramcıları ve tasarımcıların tasarım olgusuna bakış ve yaklaşımları; Tasarım, Bağlı Toplum ve Tasarımda İnovasyon; Tasarım sürecini modelleştirmeye yönelik sistematik yaklaşımlar; Siber uzay, sanallık, etkileşim, simbiosis ve entropi kavramları; Gelecek manifestoları, ütopyalar/karşı-ütopyalar; Elektronik ortam ve bilişim teknolojilerindeki olasılı gelişmelerin fiziksel dünyaya etkileri üzerine tartışmalar Architectural design: definition as concept/product/process/discourse/representation; procedural, structural attributes of architectural design; Characteristics of the electronic media as a mean of communication, production, presentation; Design, The Networked Society and Innovation. Definitions of architectural design in theoretical context and discourse: Systemmatic approaches to modelling design, Approaches to computer aided design models; Concepts of virtuality, cyber‐space, interaction, symbiosis and entropy; Future manifestoes:utopias/distopias, Projections on the futures of electronic media and information technologies; Discussions on the probable impacts of these developments on the physical world.",
+  "outcomes": [
+   "Eleştirel düşünebilme;",
+   "Alanın ilişkili olduğu disiplinlerarası etkileşimi kavrayabilme, özgün sonuçlara ulaşabilme;",
+   "Yeni ve karmaşık düşüncelerin eleştirel analizini, sentezini ve değerlendirmesini yapabilme;",
+   "Alanı ile ilgili konularda karşılaşılan toplumsal, bilimsel, kültürel ve etik sorunların çözümüne katkıda bulunabilme ve bu değerlerin gelişimini destekleyebilme;",
+   "Gelecek öngörüleri ile ilişkili strateji geliştirebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mimari Tasarım Olgusu: kavram/süreç",
+   "Hafta 2 — Mimari Tasarım Olgusu: ürün/söylem",
+   "Hafta 3 — Elektronik İletişim ve Bağlı Toplum",
+   "Hafta 4 — Tasarım Kuramları: Analitik Tasarım Modelleri ve Süreçleri",
+   "Hafta 5 — Tasarım Kuramları: Sezgisel Tasarım Modelleri ve Süreçleri",
+   "Hafta 6 — Yaratıcılık ve Fütürizm",
+   "Hafta 7 — Tasarım Araçları, Teknoloji ve Ortam",
+   "Hafta 8 — 21.yy Zorunlulukları ve Tasarım",
+   "Hafta 9 — Tasarımda İnnovatif Yaklaşımlar",
+   "Hafta 10 — Tasarımda Açık Kaynak Yaklaşımları",
+   "Hafta 11 — Tasarım Modelleme ve Sistematik Yaklaşımlar",
+   "Hafta 12 — Siberuzay, Sanal Gerçeklik, Arttırılmış Gerçeklik Uygulamaları",
+   "Hafta 13 — Gelecek Manifestoları: Ütopya ve Distopyalar",
+   "Hafta 14 — Tasarım ve Gelecek Üzerine Tartışmalar"
+  ],
+  "textbooks": [
+   "Mitchell, W.J., E-topia, Massachusetts: The MIT Press, 1999.",
+   "Helfand, J.(ed.), Six Essays on Design and New Media, New York: W. Drenttel, 1997.",
+   "Benedikt, M., For an Architecture of Reality, New York: Lumen Books, 1987.",
+   "Kolarevic, B., Manufacturing Material Effects: Rethinking Design and Making in Architecture, London: Routledge, 2008.",
+   "Benedikt, M., Cyberspace: first steps, Massachusetts: The MIT Press, 1992.",
+   "Neumeier, M. 2008. The Designful Company: How to build a culture of nonstop innovation, Peachpit Press, San Francisco, CA.",
+   "Poggenpohl S., Sato, K.(eds.) 2009. Design Integrations: Research and Collaboration, Intellect, Bristol, UK.",
+   "Kalay, Y. E. 2004. Architecture's new media: Principles, theories, and methods of computer-aided design. Cambridge, MA: MIT Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=537",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 538": {
+  "code": "MBL 538",
+  "name": "Sanal Mimari Tasar.Stüdyosu",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sanal tasarım stüdyosu çalışmalarının tarihçesi; Sanal tasarım stüdyosu için gereken yazılım ve donanım özellikleri; İnsan-bilgisayar etkileşimi; Bilgisayar aracılığıyla ortak tasarım kavramı; Sanal tasarım stüdyosunun organizasyonu; Tasarım enformasyonunun temsili, dokümantasyonu ve iletişimi; İletişim yaklaşımları: eş zamanlı ve eş olmayan zamanlı işbirliği ortamları; Sanal mimari tasarım stüdyosunda kullanılan yaklaşımlar; Sanal stüdyoda ortak tasarıma katılım modelleri; Sanal stüdyoda mimari tasarım çalışmaları: fiziksel ve sanal obje tasarımları; Ortak sanal tasarım uygulamaları; Sanal tasarım stüdyosunda bir mimari tasarım için bilginin paylaşımı; Sanal stüdyoda tasarım. History of virtual design studio; Hardware and software for virtual design studio; Human-computer interaction; Concept of computer mediated collaborative design; Organizing and running a virtual design studio; Representation, documentation and communication of design information; Communication approaches: synchronous and asynchronous collaboration environment; Approaches in virtual architectural design studio; Models about participation to collaborative design in virtual studio; Architectural design in virtual studio: designing physical and virtual objects; Collaborative virtual architectural design studio; Sharing information for architectural design in virtual design studio; Designing in virtual studio.",
+  "outcomes": [
+   "Mimari tasarımda bilişim alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme.",
+   "Alanın ilişkili olduğu diğer disiplinlerle arasındaki etkileşimi kavrayabilme, yorumlayabilme ve yeni bilgiler oluşturabilme.",
+   "Alanında edindiği uzmanlık düzeyindeki kuramsal ve uygulamalı bilgileri kullanabilme.",
+   "Alanında uzmanlık gerektiren çalışmaları bağımsız yürütebilme.",
+   "Alanın gerektirdiği düzeyde bilgisayar yazılımı ile birlikte bilişim ve iletişim teknolojilerini ileri düzeyde kullanabilme.",
+   "Sosyal ilişkileri geliştirebilme",
+   "Mimari tasarımda bilişim alanında özümsedikleri bilgiyi, problem çözme, model geliştirme ve uygulama becerilerini disiplinlerarası çalışmalarda kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sanal tasarım stüdyosu çalışmalarının tarihçesi",
+   "Hafta 2 — Sanal tasarım stüdyosu için gereken yazılım ve donanım özellikleri",
+   "Hafta 3 — İnsan-bilgisayar etkileşimi; Bilgisayar aracılığıyla ortak tasarım kavramı",
+   "Hafta 4 — Sanal tasarım stüdyosunun organizasyonu",
+   "Hafta 5 — Tasarım enformasyonunun temsili",
+   "Hafta 6 — Tasarım enformasyonunun dokümantasyonu ve iletişimi",
+   "Hafta 7 — İletişim yaklaşımları: eş zamanlı ve eş olmayan zamanlı işbirliği ortamları",
+   "Hafta 8 — Sanal mimari tasarım stüdyosunda kullanılan yaklaşımlar",
+   "Hafta 9 — Sanal stüdyoda ortak tasarıma katılım modelleri",
+   "Hafta 10 — Sanal stüdyoda mimari tasarım çalışmaları",
+   "Hafta 11 — Fiziksel ve sanal obje tasarımları",
+   "Hafta 12 — Ortak sanal tasarım uygulamaları",
+   "Hafta 13 — Sanal tasarım stüdyosunda bir mimari tasarım için bilginin paylaşımı",
+   "Hafta 14 — Sanal stüdyoda tasarım"
+  ],
+  "textbooks": [
+   "Bertol, D., Foell, D., (1997), Designing Digital Space: An Architect’s Guide to Virtual Reality, John Wiley & Sons, U.S.A.",
+   "Eisenstadt,M., Vincent,T., (eds) (2000), The Knowledge Web:Learning and Collaborating on the Net, Kogan Page, London.",
+   "Maher, M.L., Simoff, S., Cicognani, A., (2000), Understanding Virtual Design Studios, Springer-Verlag, London.",
+   "Wojtowicz, J., (1995), Virtual Design Studio, Hong Kong University Press, Hong Kong.",
+   "Zampi, G., Morgan, C.L., (1995), Virtual Architecture, McGraw Hill, New York."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=538",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 549E": {
+  "code": "MBL 549E",
+  "name": "Special Top.in Arch.Des.Comp.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders her açıldığında duyurulacaktır. To be announced whenever the course is offered.",
+  "outcomes": [
+   "Mimari Tasarımda Bilişim alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Mimari Tasarımda Bilişim alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Mimari Tasarımda Bilişim alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Mimari Tasarımda Bilişim alanındaki son gelişmeleri öğrenmek ve kavramak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ders açıldığında duyurulacaktır.",
+   "Hafta 2 — Ders açıldığında duyurulacaktır.",
+   "Hafta 3 — Ders açıldığında duyurulacaktır.",
+   "Hafta 4 — Ders açıldığında duyurulacaktır.",
+   "Hafta 5 — Ders açıldığında duyurulacaktır.",
+   "Hafta 6 — Ders açıldığında duyurulacaktır.",
+   "Hafta 7 — Ders açıldığında duyurulacaktır.",
+   "Hafta 8 — Ders açıldığında duyurulacaktır.",
+   "Hafta 9 — Ders açıldığında duyurulacaktır.",
+   "Hafta 10 — Ders açıldığında duyurulacaktır.",
+   "Hafta 11 — Ders açıldığında duyurulacaktır.",
+   "Hafta 12 — Ders açıldığında duyurulacaktır.",
+   "Hafta 13 — Ders açıldığında duyurulacaktır.",
+   "Hafta 14 — Ders açıldığında duyurulacaktır."
+  ],
+  "textbooks": [
+   "Derste kullanılacak kaynaklar her dönem dersin içeriğine uygun olarak belirlenecektir.",
+   "Derste kullanılacak kaynaklar her dönem dersin içeriğine uygun olarak belirlenecektir."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=549",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 550E": {
+  "code": "MBL 550E",
+  "name": "Design Cognition",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Biliş biliminin gelişimi ve insan bilişi hakkında öne çıkan teoriler; biliş bilimindeki çalışma alanları ve yöntemleri; temsil (şekil ve içerik, zihinsel ve dışsal) ve bellek; usavurum kuramları ve modelleri; arama, problem çözme; protokol analizi yöntemi; konumlanmış biliş, dağılmış biliş ve tasarım; tasarım eylemine dair görüşler; tasarım sureci çalışmaları ve bu çalışmaların bulguları; dışsal temsiller ve (tasarımda düşünme - dışsal temsillerin tasarımdaki rolleri; tasarımda görsel düşünme; tasarımda durum bazlı ve analojik usavurumlar; tasarımda yaratıcılık; tasarımda uzmanlık, tasarım becerisi, tasarımda öğrenme Evolution of the field of cognitive science and the prominent theories about human cognition; areas and methods of research in cognitive science; representation (format and content, mental and external) and memory; the theories and models of reasoning; search, problem solving; the protocol analysis method; situated cognition, distributed cognition and design; views of design activity; studies of the design process and their findings; external representations and design thinking- the roles of external representations in design; visual thinking in design; case-based and analogical reasoning in design; creativity in design; expertise in design; design ability, design learning",
+  "outcomes": [
+   "Biliş bilimindeki araştırma alanlarına aşina olacaklardır.",
+   "Bilişi çalışmak için uyarlayabilecekleri veya üzerinde gelistirmeler yapabilecekleri araştırma yöntemleri hakkında bilgi kazanacaklardır.",
+   "Tasarımda biliş alanında öne çıkan araştırma konuları hakkında derinlemesine bir anlayış kazanacaklardır.",
+   "Tasarımın doğası ile ilgili farklı teoriler hakkında, tasarımcılar nasıl düşünür, nasıl tasarım geliştirir, bilgi edinecek ve yansıtma yapabileceklerdir.",
+   "Tasarım bilişi araştırmasındaki açıklıkları tespit edebilecek, yeni fikirler ve/veya yöntemler geliştirebileceklerdir.",
+   "Analitik okuma, araştırma ve yazma becerilerini geliştireceklerdir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Biliş biliminin gelişimi ve insan bilişi hakkında öne çıkan teoriler",
+   "Hafta 2 — Biliş Bilimi Çalışma Alanları ve Yöntemleri",
+   "Hafta 3 — Temsil, Bellek, Usavurum",
+   "Hafta 4 — Arama, Problem Çözme, Protokol Analizi",
+   "Hafta 5 — Konumlanmış Biliş , Dağılmış Biliş ve Tasarım",
+   "Hafta 6 — Tasarıma dair Görüşler, Tasarım Çalışmaları",
+   "Hafta 7 — Tasarımda Görsel Düşünme",
+   "Hafta 8 — Dışsal Temsiller ve Tasarımda Düşünme I",
+   "Hafta 9 — Dışsal Temsiller ve Tasarımda Düşünme II",
+   "Hafta 10 — Tasarımda Durum Bazlı ve Analojik Usavurum",
+   "Hafta 11 — Tasarımda Yaratıcılık",
+   "Hafta 12 — Tasarımda Uzmanlık",
+   "Hafta 13 — Tasarım Becerisi",
+   "Hafta 14 — Tasarımda Öğrenme"
+  ],
+  "textbooks": [
+   "Bechtel, W. and G. Graham, Eds. (1999). A Companion to Cognitive Science. Blackwell Publishers Ltd, Oxford.",
+   "Cross, N., H. Christiaans, et al., Eds. (1996). Analyzing Design Activity. John Wiley & Sons, Chichester, New York",
+   "Cross, N. (2006) Designerly Ways of Knowing Springer-Verlag Ltd., London, 2006.",
+   "C. Eastman, W. Newstetter, M. McCracken eds. (2000). Design Knowing and Learning: Cognition in Design Education. Elsevier Science Press, Amsterdam, New York.",
+   "Holyak K. J. (2005). The Cambridge Handbook of Thinking and Reasoning. Cambridge, Cambridge University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=550",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 553E": {
+  "code": "MBL 553E",
+  "name": "Tasarım.Hesap.Dil.Kur.&Uygula.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Hesaplamalı tasarım ve hesaplamalı düşünce; hesaplamalı tasarım ve hesaplamalı bilimlerin ilişkisi; hesaplamalı tasarım yöntemi olarak biçim grameri; tasarım matematiği: geometri ve cebir; hesaplamalı tasarım okur yazarlığı; tasarımda biçim ve örüntü algoritması; hesaplamalı tasarım ve üretimde betik (script) dilleri. Computational Design and Computational Thinking; The relation between Computational Design and Computational Science; Shape Grammar as a computational design method; Design mathematics: geometry and algebra; Computational design literacy; form and pattern design algorithms; Script language in computational design and computer aided manufacturing.",
+  "outcomes": [
+   "1. Hesaplamalı tasarım alanında bilgi ve beceri geliştirme,",
+   "2. Hesaplamalı tasarım alanında disiplinler arası etkileşim ve araştırma gerekliliğini kavrama,",
+   "3. Mimaride hesaplamalı tasarım alanında sistematik bilgi kazanımı, sınıflama ve değerlendirme becerileri geliştirme,",
+   "4. Hesaplamalı tasarım alanında yürütülen araştırma geliştirme ve uygulamalarına dair kuramsal araştırma becerisi kazanma,",
+   "5. Hesaplamalı tasarımda okul yazarlık ve betik-görsel programlama dilleri becerisi kazanma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Hesaplamalı tasarım kuramına giriş",
+   "Hafta 2 — Hesaplamalı tasarım tarihine genel bakış",
+   "Hafta 3 — Mimaride hesaplamalı tasarım kuramının temel soru ve sorunları",
+   "Hafta 4 — Hesaplamalı bilimlerin altında hesaplamalı tasarım",
+   "Hafta 5 — Hesaplamalı tasarımda algoritma",
+   "Hafta 6 — Hesaplamalı tasarımda biçim: biçimin matematiksel tanımı",
+   "Hafta 7 — Hesaplamalı tasarım yöntemi olarak biçim grameri",
+   "Hafta 8 — Biçim grameri uygulamaları",
+   "Hafta 9 — Hesaplamalı tasarım modellerinde örüntüler: doğal örüntüler-yapay örüntüler",
+   "Hafta 10 — Biçim grameri ile hesaplamalı örüntü analizi",
+   "Hafta 11 — Biçim grameri ile hesaplamalı örüntü üretimi",
+   "Hafta 12 — Script dili ile hesaplamalı örüntü üretimi",
+   "Hafta 13 — Görsel programlama ile hesaplamalı örüntü üretimi",
+   "Hafta 14 — Hesaplamalı örüntü modellerinin üretim için değerlendirilmesi"
+  ],
+  "textbooks": [
+   "--",
+   "--"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=553",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 555E": {
+  "code": "MBL 555E",
+  "name": "Digital.of Archite.Heritage",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Mimari miras kavramının sayısallaştırılarak belgelenmesi, sunulması ve farklı temsillerinin geliştirilmesi konularına giriş; veri toplama, işleme, görselleştirme ve sunum aşamaları; mimari mirası çevresi ile birlikte bir bütün olarak ele alarak bağlamı oluşturan tüm mimari miras öğelerinin farklı ölçek ve bağlamlarda incelenmesi; mimari mirasın sayısallaştırılması kavramını oluşturan veri toplama ve işleme metotları, hızlı 3B sayısallaştırma metotları ve etkileşimli sarmalayıcı çevre konuları. The concept of digitalization, documentation and representation of architectural heritage from a general perspective; documentation, data collection, processing, visualization and presentation; considering heritage as a whole, dealing with all architectural heritage elements in different scales and contexts; data collection and processing methods, the rapid 3D digitalization methods, and interactive immersive environments which constitute the concept of digitalization of Architectural Heritage.",
+  "outcomes": [
+   "Mimari Mirasın sayısallaştırılması hakkında genel bilgi, veri toplama ve işleme",
+   "Mimari Miras dokümantasyon teknikleri ve uygulamaları",
+   "Mimari Miras sunumlarının sarmalayıcı çevre uygulamalarında geliştirilmesi",
+   "Mimari Miras görselleştirme tekniklerinin geliştirilmesi, uygulanması",
+   "Bir Mimari Miras projesi üzerinden dokümantasyondan görselleştirmeye kadar tüm bir sürecin sunumu."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mimari Miras sayısallaştırma temel kavramları",
+   "Hafta 2 — Mimari Miras sayısallaştırma örnekleri ve uygulamalar",
+   "Hafta 3 — Sayısal ortamda belgeleme teknikleri örnekleri (Lazer tarama- fotogrametri vb.)",
+   "Hafta 4 — Belgeleme teknikleri ve sayısallaştırma",
+   "Hafta 5 — Sayısal Kültür Mirası alanında Alternatif Uygulamalar",
+   "Hafta 6 — Hızlı 3D Sayısallaştırma",
+   "Hafta 7 — Etkileşimli Sarmalayıcı Çevreler",
+   "Hafta 8 — Dönem projesi üzerine tartışma, alan gezisi",
+   "Hafta 9 — Alanda belgeleme tekniklerinin uygulanması ve veri toplama",
+   "Hafta 10 — Sayısal araçlarla veri toplama ve veri işleme",
+   "Hafta 11 — Proje geliştirme ve 3D Modelleme üzerine kritikler",
+   "Hafta 12 — Görselleştirme metodları ve çıktıları üzerine kritikler, Uygulamalar",
+   "Hafta 13 — Görselleştirme aracı olarak alternatif dijital ortamların kullanımı",
+   "Hafta 14 — Üretilen çalışmalar üzerinden tartışmalar"
+  ],
+  "textbooks": [
+   "• Din, H. & Wu, S. (Eds.) Digital Heritage and Culture: Strategy and Implementation, World Scientific, 2014.",
+   "• Ioannides, M., Martins, J., Žarnić, R., Lim, V. (Eds.) Advances in Digital Cultural Heritage, Springer International Publishing AG., 2018",
+   "• Vincent, M.L., López-Menchero Bendicho, V.M., Ioannides, M., Levy, Th.E. (Eds.), Heritage and Archaeology in the Digital Age: Acquisition, Curation and Dissemination of Spatial Cultural Heritage Data, Springer International Publishing AG., 2017.",
+   "• Galani, A., Rhiannon, M., Arrigoni, G. (Eds.) European Heritage, Dialogue and Digital Practices, Routledge Focus, 2019."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=555",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 557E": {
+  "code": "MBL 557E",
+  "name": "Mimarlıkta Malzeme Tabanlı Hesaplamalı Tasarım",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Mimari tasarım sürecinde malzemenin rolünün değerlendirilmesi, doğal sistemlerde malzeme, biçim ve performansın birarada ele alınması, mimarlıkta malzeme tarafından yönetilen hesaplamalı tasarım süreci, malzemenin mimari tasarımı etkileyen özellikleri; malzeme, strüktür, performans, optimizasyon ve sayısal üretim yöntemleri arasındaki ilişki, ölçekler arası tasarım, mimarlıkta malzeme sistemlerini sayısal tasarım ve üretim yöntemleriyle yeniden yorumlama, farklı parametrelerin birlikte değerlendirilmesiyle mimari tasarımda malzeme sentezi. Evaluating role of materials in architectural design process; assessing material, form and performance in natural systems integrally, computational design process run by materials in architecture, properties of materials affecting architectural design, relationship between structure, performance, optimization and digital fabrication methods, design between scales, re-interpreting material systems in architecture by digital design and fabrication methods; material synthesis in architectural design by evaluating different types of parameters.",
+  "outcomes": [
+   "Malzemenin mimari tasarımın sürecine olan katkısının yorumlanması",
+   "Disiplinlerarası bağlamda çalışma becerilerinin artırımı",
+   "Teknolojinin mimari tasarımdaki rolünün içselleştirilmesi",
+   "Mimari tasarımda karmaşık sorunların çözümlerine katılma",
+   "Araştırma, analiz ve yorumlama becerilerinin kazanılması",
+   "Mevcut bilginin geliştirilerek yeni bilgi üretilmesi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mimarlıkta malzeme-tabanlı hesaplamalı tasarım",
+   "Hafta 2 — Doğal sistemlerde malzeme, biçim ve performans arasındaki ilişki",
+   "Hafta 3 — Bütünleşik hesaplamalı tasarım yöntemleri",
+   "Hafta 4 — Mimari tasarım sürecinde malzeme",
+   "Hafta 5 — Yapı malzemesi tür ve özellikleri",
+   "Hafta 6 — Mimari geometri ve malzeme ilişkisi",
+   "Hafta 7 — Farklı strüktür türlerinde malzemeler",
+   "Hafta 8 — Malzemelerin performans değerlendirmeki rolü",
+   "Hafta 9 — Mimari tasarımda optimizasyon süreçleri",
+   "Hafta 10 — Sayısal üretim araçlarında malzeme",
+   "Hafta 11 — Malzeme sistemleri geliştirme",
+   "Hafta 12 — Ölçekler arası tasarım",
+   "Hafta 13 — Mimari tasarım sürecinde prototip oluşturma",
+   "Hafta 14 — Mimari tasarımda malzeme sentezi"
+  ],
+  "textbooks": [
+   "1. Gramazio, F., Kohler, M. and Langenberg, S. (2014). Fabricate: Negotiating design & making, gta Verlag, Zurich.",
+   "2. Kolarevich, B., Klinger, K. (2008). Manufacturing Material Effects Rethinking Design and Making Architecture, Routledge, New York.",
+   "3. Menges, A. (2015). Material synthesis: fusing the physical and the computational, John Wiley & Sons, London.",
+   "4. McDowell, D.L., Pancal, J.H., Choi, H., Seepersad, C.C., Allen, J.K., Mistree, F. (2010). Integrated Design of Multiscale Multifunctional Materials and Products, Elsevier, Burlington-MA.",
+   "5. Terzidis, K. (2006). Algorithmic Architecture, Elsevier, Oxford-UK."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=557",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 559E": {
+  "code": "MBL 559E",
+  "name": "Mimari Tasarımda Makine Öğrenmesi",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Mimari tasarım sürecinde kullanılabilecek makine öğrenmesi araç ve tekniklerine genel bir bakış, makine öğrenmesi metotlarının üretken sistem deneyleri olarak kullanması, mevcut Yapay Zekâ araçlarından bazılarını mimari tasarım ihtiyaçları doğrultusunda seçilerek ve seçilen araçlarla denemeler yapılması, gruplar halinde çalışarak bir veri setini toplanması ve hazırlanması, bazı makine öğrenme modellerini seçip eğitilmesi ve sonunda oluşturulan modeli kullanarak tasarımlar üretilmesi. An overview of machine learning tools and techniques that can be used in architectural design process, applying machine learning workflows as generative experiments, selecting and using some of the Artificial Intelligence tools depending on the needs of architectural design, collecting and preparing the dataset in groups, selecting and training some machine learning model and finally generating designs using the created model.",
+  "outcomes": [
+   "Makine öğrenme modelleri hakkında genel bilgi",
+   "Sinir ağlarının temelleri ve mimarlıktaki uygulamaları",
+   "Tasarım üretimi için makine öğrenme araçlarını deneyimlenmesi",
+   "Makine öğrenimini kullanarak mimari alanların kullanışının öngörülmesi",
+   "Final projesinde kullanılan süreçö metodoloji ve gelecek olanakları açıkça ifade eden bir sunum",
+   "Sunumda, makine öğrenme iş akışlarının potansiyelleri vurgulanarak, konseptten sonuca kadar tüm sürecin anlatılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Makine öğrenmesinin temel kavramları",
+   "Hafta 2 — Olasılık tekrarı",
+   "Hafta 3 — Veri toplanması ve veri kümesi oluşturulması",
+   "Hafta 4 — Regresyon ve mekansal regresyon",
+   "Hafta 5 — Denetimsiz öğrenme, kümeleme",
+   "Hafta 6 — Denetimli öğrenme, resim etiketleme",
+   "Hafta 7 — Destek vektör makineleri ve mimaride uygulamaları",
+   "Hafta 8 — Pekiştirmeli öğrenme",
+   "Hafta 9 — Pekiştirmeli öğrenme uygulamaları, Unity ortamında etmenler",
+   "Hafta 10 — Yapay sinir ağları",
+   "Hafta 11 — Yapay sinir ağlarının mimarlıktaki uygulamaları",
+   "Hafta 12 — Araçlar, Tensorflow, Keras",
+   "Hafta 13 — Araçlar (2) PyTorch",
+   "Hafta 14 — Modellerin veri kümelerine uygulanması"
+  ],
+  "textbooks": [
+   "1. Russell, S., & Norvig, P. (2002). Artificial Intelligence: A Modern Approach",
+   "2. Géron, A. (2019). Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems. O'Reilly Media.",
+   "3. Kelleher, J.D. (2019). Deep Learning, MIT Press Essential Knowledge series."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=559",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 596": {
+  "code": "MBL 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 611": {
+  "code": "MBL 611",
+  "name": "Sayısal Tasar.Fenom.&Herme.",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Mimari tasarım ve yorum ilişkisi; Fenomenoloji ve Hermenötiğin ana kuramları; yorum kavramı ve yorumun kip ve modaliteleri: Heidegger, Ricoeur, Eco, Van Manen ve Ihde’nin yazıları üzerinden tartışmak ve değerlendirmek; mimari tasarımda kurallar ve yorum; dijital teknolojiler etkisinde değişen tasarım araç, süreç ve nesnelerini yeniden anlamak; deneyim ve sayısal düşünme. Architectural design and interpretation; cardinal theories in the field of phenomenology and hermeneutics; concept of interpretation and its modalities: critical discussions and evaluations based on Heidegger’s, Ricoeur’s, Eco’s, Van Manen’s and Ihde’s writings; rules in architectural design and interpretation; re-understanding design tools, processes and objects through developing technologies; experience and computational thinking.",
+  "outcomes": [
+   "Mimari tasarımda bilişim alanının konu ve problemlerine, diğer disiplinlerin (özellikle felsefenin) kuram ve yaklaşımları ile etkileşerek yeni yorumlar üretme;",
+   "Gelişen dijital teknolojileri, mimar ve tasarımcıların bu teknolojiler ile kurdukları farklı ilişki tipolojileri özelinde yeniden anlamlandırabilme;",
+   "Deneyim-yorum ilişkisi üzerinden bütüncül bir anlama süreci oluşturabilme;",
+   "Karmaşık düşüncelerin eleştirel analizini yapabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Zihin ve Metafor",
+   "Hafta 2 — Hermenötik Fenomenoloji kuramı ve ilişkili kavramları",
+   "Hafta 3 — Bir mimari proje olarak yorumlama",
+   "Hafta 4 — Sayısal düşünme ve yorum",
+   "Hafta 5 — Tasarımın kuralları & kuralları tasarlama",
+   "Hafta 6 — Mimari temsil, fenomenoloji ve yorumlama",
+   "Hafta 7 — Teknoloji, deneyim ve sayısal düşünme",
+   "Hafta 8 — Malzemelerin hermenötik fenomenolojisi",
+   "Hafta 9 — Araçların hermenötik fenomenolojisi",
+   "Hafta 10 — Mekanların hermenötik fenomenolojisi",
+   "Hafta 11 — Hermenötik hesaplama modeli olarak tasarım",
+   "Hafta 12 — Hermenötik hesaplama örnekleri",
+   "Hafta 13 — Final makalesinin konuları hakkında açık ve bireysel tartışmalar;",
+   "Hafta 14 — Final makalelerinin sunumları;"
+  ],
+  "textbooks": [
+   "Brown, T. (2002). Mathematics Education and Language: Interpreting Hermeneutics and Post-Structuralism. Kluwer Academic Publishers, Dordrecht, North Holland.",
+   "Snodgrass, A. Coyne, R. (2006). Interpretation in Architecture: Design as a way of thinking. Routledge: Taylor and Francis, New York.",
+   "Winograd, T., & Flores, F. (1986). Understanding computers and cognition: A new foundation for design. Norwood NJ: Ablex.",
+   "Friesen, N., Henriksson, C., Saevi, T. (2012). Hermeneutic Phenomenology in Education. Sense Publishers, Rotterdam.",
+   "Van Manen, M. (2014). Phenomenology of Practice, Left Coast Press.",
+   "Ihde, D. (1999). Expanding Hermeneutics: Visualism in Science. Evanston, IL: Northwestern University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=611",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 621E": {
+  "code": "MBL 621E",
+  "name": "Adv.Topics in Compu.Cognition",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Çok ölçütlü bilişsel karar verme süreçleri olarak mimarlığın tasarımı ve değerlendirilmesi, tasarım sürecinin temsillerinde karar değişkeni alanı, mimari değerlendirmenin temsillerinde karar değişkeni alanı, tasarım sürecinin temsillerinde amaç fonksiyonu alanı, mimari değerlendirme temsilinde amaç fonksiyonu alanı, hesaplamalı bilişte bağlamsal duyarlılık, tasarım bilgisinin hesaplamalı biliş aracılığıyla çıkarımı. Design and evaluation of architecture as cognitive multi-criteria decision making processes, decision variable space in representations of design process, decision variable space in representations of architectural evaluation, objective function space in representations of design process, objective function space in representations of architectural evaluation, context sensitivity in computational cognition, design knowledge elicitation from computational cognition.",
+  "outcomes": [
+   "Tasarım kuramı: tasarım olgusunu bilişin bir tezahürü olarak düşünerek, tasarımın doğası hakkında detaylı bilgiler; hesaplamalı formda olguyu temsil etmekle ilgili ileri teknik bilgi",
+   "Tasarım araştırması: bir tasarım problemini hesaplamalı biliş kullanarak iyileştirecek şekilde formüle etmede ileri beceri",
+   "Mimarlık Kuramı: değerlendirme olgusunu bilişin bir dışavurumu olarak ele alarak, mimari eserin değerlendirilmesine ilişkin ayrıntılı bilgi; hesaplamalı biçim olgusunu temsil etme ile ilgili teknik bilgi",
+   "Mimarlık Araştırması: mimarlığın değerlendirmesi probleminin temsilini hesaplamalı biliş kullanarak iyileştirecek şekilde formüle etmede ileri beceri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Hesaplamalı bilişin mimari tasarım araştırmalarında ikili rolü",
+   "Hafta 2 — Birinci Rol: Hesaplamalı bilişsel tasarım kararlarının temsili",
+   "Hafta 3 — Tasarım problemi formülasyonu I: Karar değişkenleri ve bunların mimari elemanların ayrıntılı özelliklerine uygunluğu",
+   "Hafta 4 — Tasarım problemi formülasyonu II: Amaç fonksiyonlar ve tasarım ölçütlerine uygunluğu",
+   "Hafta 5 — Karar değişkeni alanında baskın olmayan çözümlerin sürekliliğinin tasarımda karar verme bağlamında oluşturulması ve yorumlanması",
+   "Hafta 6 — Bilgisayar Deneyleri I: Hesaplamalı Biliş ile tasarım",
+   "Hafta 7 — Bilgisayar deneylerinden elde edilen sonuçların analizi",
+   "Hafta 8 — İkinci Rolü: Mimarlığın değerlendirilmesi ile ilgili olguları temsil etmek için hesaplama bilişi kullanarak mimari bilgi çıkarımı",
+   "Hafta 9 — Bilgi ortaya çıkarma probleminin formülasyonu I: Karar değişkenleri ve mimarlık deneyimi esnasında ayrıntılı algısal özelliklerdeki karşılıkları",
+   "Hafta 10 — Bilgi ortaya çıkarma problemi formülasyonu II: Amaç fonksiyonlar ve bunların insanın bilişsel sistemindeki hedeflerdeki karşılıkları",
+   "Hafta 11 — Baskın olmayan çözümlerin sürekliliğinin mimarlık değerlendirmesinin temsili bağlamında oluşturulması ve yorumlanması",
+   "Hafta 12 — Bilgisayar deneyleri II: Mimarlığın hesaplamalı bilişle değerlendirilmesini temsili",
+   "Hafta 13 — Bilgisayar deneylerinden elde edilen sonuçların analizi",
+   "Hafta 14 — Mİmarlıkta hsaplamalı biliş araştırmalarının gelecekteki yönelimleri"
+  ],
+  "textbooks": [
+   "M.V. Butz and E. F. Kutter. How the Mind Comes into Being: Introducing Cognitive Science from a Functional and Computational Perspective. Oxford, UK: Oxford University Press, 2017.",
+   "A. Clark. Surfing Uncertainty - Prediction, Action, and the Embodied Mind. New York, USA: Oxford University Press, 2016.",
+   "S. Farrell and S. Lewandowsky. Computational Modeling of Cognition and Behavior. Cambridge, UK: Cambridge University Press, 2018.",
+   "J.M. Keller, D. Liu, and D.B. Fogel. Fundamentals of Computational Intelligence – Neural Networks, Fuzzy Systems, and Evolutionary Computation. Hoboken, USA: Wiley, 2016.",
+   "D. Dutton. The Art Instinct: Beauty, Pleasure & Human Evolution, New York, USA: Bloomsbury Press, 2009."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=621",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MBL 696": {
+  "code": "MBL 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

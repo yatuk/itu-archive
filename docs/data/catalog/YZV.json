@@ -1,0 +1,1322 @@
+{
+ "YZV 101E": {
+  "code": "YZV 101E",
+  "name": "Yapay Zeka ve Veri Mühendisliğine Giriş ve Etik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 8.5
+  },
+  "description": "Yapay Zeka & Veri Mühendisliğine giriş. Yapay Zeka & Veri Mühendisleri için çalışma fırsatları. Yapay Zeka & Veri Mühendisliği programında araştırma alanları. Yapay Zeka & Veri Mühendisliği programında verilen dersler. Yapay Zeka & Veri Mühendisliği eğitimi. Etik tanımı. Yapay Zeka & Veri Mühendisliğindeki alanlardaki etik yükümlülükler. Introduction to Artificial Intelligence & Data Engineering. Employment opportunities for Artificial Intelligence & Data Engineers. Research areas in the Artificial Intelligence & Data Engineering program. Courses offered in the Artificial Intelligence & Data Engineering program. The Artificial Intelligence & Data Engineering education. Definition of Ethics. Ethical obligations for the areas in Artificial Intelligence & Data Engineering.",
+  "outcomes": [
+   "Yapay Zeka & Veri Mühendisliği Programı eğitimini tanımak.",
+   "Yapay Zeka & Veri Mühendisliğindeki iş imkanları ve araştırma alanları hakkında bilgilenmek.",
+   "Etik ve Yapay Zeka & Veri Mühendisliği alanları arasındaki ilişki hakkında bilgilenmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kampüs, fakülte ve bölüm oryantasyonu.",
+   "Hafta 2 — Yapay Zeka & Veri Mühendisliğine giriş.",
+   "Hafta 3 — Programda verilen derslerin sunumu.",
+   "Hafta 4 — Davetli konuşmacı: İş veren olarak bir Yapay Zeka & Veri Mühendisi – Nasıl mühendisler istiyoruz?",
+   "Hafta 5 — Davetli konuşmacı: Çalışan olarak bir Yapay Zeka & Veri Mühendisi – Bilişim endüstrisinde nasıl başarılı olunur?",
+   "Hafta 6 — Davetli konuşmacı: Araştırma ve öğretim görevlisi olarak bir Yapay Zeka & Veri Mühendisi – Nasıl bir Araştırma görevlisi olunur?",
+   "Hafta 7 — Davetli konuşmacı: Son sınıf bir Yapay Zeka & Veri Mühendisliği öğrencisi – Son sınıf öğrencisinden öneriler",
+   "Hafta 8 — Davetli konuşmacı: Yapay Zeka alanında çalışan lisansüstü öğrencisi – Neden yüksek lisans hedefliyorum?",
+   "Hafta 9 — Davetli konuşmacı:Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi- Yapay zekadaki gelişmeler ve etik.",
+   "Hafta 10 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Robotikteki gelişmeler ve etik.",
+   "Hafta 11 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Makine öğrenmesindeki gelişmeler ve etik.",
+   "Hafta 12 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Derin öğrenmedeki gelişmeler ve etik.",
+   "Hafta 13 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Doğal dil işlemedeki gelişmeler ve etik.",
+   "Hafta 14 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Bilgisayar kurdu kültüründeki gelişmeler ve etik."
+  ],
+  "textbooks": [
+   "J. Lance, The Beginner’s Guide to Engineering: Computer Engineering, Quantum Scientific Publishing, 2013."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=101",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 102E": {
+  "code": "YZV 102E",
+  "name": "Veri Bilimi için Programlamaya Giriş (Python)",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 8.5
+  },
+  "description": "Problem modelleme, algoritmalar. Seçme ve yineleme yapıları. Bileşke veri yapıları. Soyutlama. Temel giriş-çıkış işlemleri. Web uygulamaları. Problem modelling, algorithms. Selection and repetition constructs. Composite data types. Abstraction. Basic input/output operations. Web applications.",
+  "outcomes": [
+   "Bir algoritma geliştirerek bilgisayar programı yardımıyla bir problemi çözmek için modellemek.",
+   "Küçük ve orta ölçekli bilgisayar programlarını tasarlayabilmek, gerçekleyebilmek ve sınayabilmek.",
+   "Python programlama dili için geliştirme araçlarıyla tanışıklık edinmek.",
+   "Temel programlama tekniklerine hakim olmak.",
+   "Temel web istemci ve sunucu teknikleriyle tanışıklık edinmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş. Program geliştirme aşamaları. Algoritmalar.",
+   "Hafta 2 — Veri tipleri. İfadeler. Değişkenler.",
+   "Hafta 3 — Karar yapıları.",
+   "Hafta 4 — Yineleme yapıları.",
+   "Hafta 5 — Bileşke veri tipleri.",
+   "Hafta 6 — Fonksiyonlar (I).",
+   "Hafta 7 — Fonksiyonlar (II).",
+   "Hafta 8 — Fonksiyonlar (III).",
+   "Hafta 9 — Sınıflar.",
+   "Hafta 10 — Kalıtım.",
+   "Hafta 11 — Hata denetimi.",
+   "Hafta 12 — Katar ve dosya işlemleri.",
+   "Hafta 13 — Web istemcileri.",
+   "Hafta 14 — Web uygulamaları."
+  ],
+  "textbooks": [
+   "“Python Programming: Introduction to Computer Science” (3rd ed.), John Zelle, Franklin, Beedle & Associates, 2017."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=102",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 103E": {
+  "code": "YZV 103E",
+  "name": "Yapay Zeka ve Veri Mühendisliğine Giriş ve Etik",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 5
+  },
+  "description": "Yapay Zeka & Veri Mühendisliğine giriş. Yapay Zeka & Veri Mühendisleri için çalışma fırsatları. Yapay Zeka & Veri Mühendisliği programında araştırma alanları. Yapay Zeka & Veri Mühendisliği programında verilen dersler. Yapay Zeka & Veri Mühendisliği eğitimi. Etik tanımı. Yapay Zeka & Veri Mühendisliğindeki alanlardaki etik yükümlülükler. Introduction to Artificial Intelligence & Data Engineering. Employment opportunities for Artificial Intelligence & Data Engineers. Research areas in the Artificial Intelligence & Data Engineering program. Courses offered in the Artificial Intelligence & Data Engineering program. The Artificial Intelligence & Data Engineering education. Definition of Ethics. Ethical obligations for the areas in Artificial Intelligence & Data Engineering.",
+  "outcomes": [
+   "1. Yapay Zeka & Veri Mühendisliği Programı eğitimini tanımak",
+   "2. Yapay Zeka & Veri Mühendisliğindeki iş imkanları ve araştırma alanları hakkında bilgilenmek",
+   "3. Etik ve Yapay Zeka & Veri Mühendisliği alanları arasındaki ilişki hakkında bilgilenmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kampüs, fakülte ve bölüm oryantasyonu",
+   "Hafta 2 — Yapay Zeka & Veri Mühendisliğine giriş",
+   "Hafta 3 — Programda verilen derslerin sunumu",
+   "Hafta 4 — Davetli konuşmacı: İş veren olarak bir Yapay Zeka & Veri Mühendisi – Nasıl mühendisler istiyoruz?",
+   "Hafta 5 — Davetli konuşmacı: Çalışan olarak bir Yapay Zeka & Veri Mühendisi – Bilişim endüstrisinde nasıl başarılı olunur?",
+   "Hafta 6 — Davetli konuşmacı: Araştırma ve öğretim görevlisi olarak bir Yapay Zeka & Veri Mühendisi – Nasıl bir Araştırma görevlisi olunur?",
+   "Hafta 7 — Davetli konuşmacı: Son sınıf bir Yapay Zeka & Veri Mühendisliği öğrencisi – Son sınıf öğrencisinden öneriler",
+   "Hafta 8 — Davetli konuşmacı: Yapay Zeka alanında çalışan lisansüstü öğrencisi – Neden yüksek lisans hedefliyorum?",
+   "Hafta 9 — Davetli konuşmacı:Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi- Yapay zekadaki gelişmeler ve etik",
+   "Hafta 10 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Robotikteki gelişmeler ve etik",
+   "Hafta 11 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Makine öğrenmesindeki gelişmeler ve etik",
+   "Hafta 12 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Derin öğrenmedeki gelişmeler ve etik",
+   "Hafta 13 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Doğal dil işlemedeki gelişmeler ve etik",
+   "Hafta 14 — Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Bilgisayar kurdu kültüründeki gelişmeler ve etik"
+  ],
+  "textbooks": [
+   "J. Lance, Mühendisliğe Yeni Başlayanlar İçin Kılavuz: Bilgisayar Mühendisliği, Quantum Scientific Publishing, 2013"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=103",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 104E": {
+  "code": "YZV 104E",
+  "name": "Veri Bilimi için Programlamaya Giriş",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 7
+  },
+  "description": "Problem modelleme, algoritmalar. Seçme ve yineleme yapıları. Bileşke veri yapıları. Soyutlama. Temel giriş-çıkış işlemleri. Bellek yönetimi. Uygulama Geliştirme. Problem modelling, algorithms. Selection and repetition constructs. Composite data types. Abstraction. Basic input/output operations. Memory Management. Application Development.",
+  "outcomes": [
+   "Bir algoritma geliştirerek bilgisayar programı yardımıyla bir problemi çözmek için modellemek.",
+   "Küçük ve orta ölçekli bilgisayar programlarını tasarlayabilmek, gerçekleyebilmek ve sınayabilmek.",
+   "Programlama dili için geliştirme araçlarıyla tanışıklık edinmek.",
+   "Temel programlama tekniklerine hakim olmak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş. Program geliştirme aşamaları. Algoritmalar.",
+   "Hafta 2 — Veri tipleri. İfadeler. Değişkenler.",
+   "Hafta 3 — Karar yapıları.",
+   "Hafta 4 — Yineleme yapıları.",
+   "Hafta 5 — Bileşke veri tipleri.",
+   "Hafta 6 — Fonksiyonlar (I).",
+   "Hafta 7 — Fonksiyonlar (II).",
+   "Hafta 8 — Fonksiyonlar (III).",
+   "Hafta 9 — Sınıflar.",
+   "Hafta 10 — Kalıtım.",
+   "Hafta 11 — Hata denetimi.",
+   "Hafta 12 — Katar ve dosya işlemleri.",
+   "Hafta 13 — Bellek Yönetimi",
+   "Hafta 14 — Uygulama Geliştirme"
+  ],
+  "textbooks": [
+   "C How to Program, (8th Edition), H.M. Deitel & P. J. Deitel, Prentice Hall, 2015 Cay S. Horstmann, C++ For Everyone, 2nd edition, Wiley, 2011, ISBN: 978-0-470-92713-7.",
+   "“Python Programming: Introduction to Computer Science” (3rd ed.), John Zelle, Franklin, Beedle & Associates, 2017."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=104",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 201E": {
+  "code": "YZV 201E",
+  "name": "Veri Yapıları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 1,
+   "lab": 0,
+   "local": 3.5,
+   "ects": 7.5
+  },
+  "description": "Ders temel veri yapıları (yığın, kuyruk, liste, ağaç, ikili sıralama ağacı, heap) ve bu yapılara ilişkin algoritmaları inceleyecektir. The course involves the study of basic data structures (eg, stack, queue, list, tree, binary search tree, heap) and associated algorithms.",
+  "outcomes": [
+   "Öğrenciler, algoritma tasarımı temelleri öğreneceklerdir.",
+   "Öğrenciler temel veri yapıları ve uygulamalarını öğrenip, gerçekleyebileceklerdir.",
+   "Öğrenciler dinamik veri yapılarının temellerini, uygulamalarını ve gerçeklemelerini öğreneceklerdir.",
+   "Öğrenciler, özyineleme gibi ileri programlama kavramlarını kullanarak problemler çözebileceklerdir.",
+   "Öğrenciler, mühendislik uygulamaları için, C++ dilinde programlar tasarlama, gerçekleme, test etme ve hata ayıklamayı öğreneceklerdir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, C/C++’da dosya işlemleri, derse giriş örneği: Telefon defteri",
+   "Hafta 2 — C’de işaretçiler ve diziler",
+   "Hafta 3 — Fonksiyon çağrıları, dinamik bellek, soyut veri tipi",
+   "Hafta 4 — Bağlantılı liste (Lab: Ders örneğinde listeler üzerinde güncelleme işlemi, güncelleme ve aramanın performansının arttırılması)",
+   "Hafta 5 — Bağlantılı liste türleri, liste uygulamaları",
+   "Hafta 6 — Yığın",
+   "Hafta 7 — Kuyruk",
+   "Hafta 8 — Yığın ve kuyruk uygulamaları",
+   "Hafta 9 — Özyinelemeli programlama",
+   "Hafta 10 — Özyinelemeli programlama uygulamaları",
+   "Hafta 11 — Ağaç",
+   "Hafta 12 — İkili sıralama ağacı",
+   "Hafta 13 — Ağaç uygulamaları",
+   "Hafta 14 — Hazır veri yapısı kütüphaneleri"
+  ],
+  "textbooks": [
+   "Ders Notları"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=201",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 202E": {
+  "code": "YZV 202E",
+  "name": "Veri Bilimi için Optimizasyon",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5.5
+  },
+  "description": "Matematiksel optimizasyona giriş, tek boyutlu optimizasyon algoritmaları, gradyan temelli algoritmalar, Newton metodu, Hessian temelli metotlar, en küçük kareler teknikleri, türevsiz optimizasyon metotları, lineer optimizasyon problemleri, nonlinear optimizasyon, veri bilimi uygulamaları Introduction to mathematical optimization, line search methods, gradient based methods, Newton’s method, Hessian based methods, least squares techniques, derivative-free optimization, linear optimization problems, nonlinear optimization, data science applications",
+  "outcomes": [
+   "Veri bilimi problemlerini optimizasyon problemli olarak formülize edebilir",
+   "Optimizasyon problemlerini çözmek için türev alma tabanlı algoritmaları kullanabilir.",
+   "Optimizasyon problemlerini çözmek için türeve ihtiyaç duymayan algoritmaları kullanabilir.",
+   "Lineer optimizasyon problemlerini tanımlayabilir ve çözebilir.",
+   "Kısıtlı nonlineer problemleri Lagrangian yaklaşımı kullanarak çözebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Optimizasyon problemlerine giriş",
+   "Hafta 2 — Optimal çözüm için yeterli ve gerekli şartlar",
+   "Hafta 3 — Tek boyutlu optimizasyon problemleri",
+   "Hafta 4 — Gradyan temelli algoritmalar",
+   "Hafta 5 — Newton’ın metodu",
+   "Hafta 6 — Hessian tabanlı algoritmalar",
+   "Hafta 7 — En küçük kareler tekniği",
+   "Hafta 8 — Türeve ihtiyaç duymayan algoritmalar 1. Bölüm",
+   "Hafta 9 — Türeve ihtiyaç duymayan algoritmalar 2. Bölüm",
+   "Hafta 10 — Lineer Optimizasyon 1. Bölüm",
+   "Hafta 11 — Lineer Optimizasyon 2. Bölüm",
+   "Hafta 12 — Kısıtlı Nonlineer Optimizasyon 1. Bölüm",
+   "Hafta 13 — Kısıtlı Nonlineer Optimizasyon 2. Bölüm",
+   "Hafta 14 — Project Sunumları – Uygulamalar"
+  ],
+  "textbooks": [
+   "● Chong E., Zak S., Optimizasyona Giriş, 2004"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=202",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 211E": {
+  "code": "YZV 211E",
+  "name": "Veri Bilimi ve Mühendisliğine Giriş",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Veri bilimi ve mühendisliğine giriş. Veri bilimi projesinin hayat çevrimi. Veri toplama edinme, temizleme, işleme, yönetme ve görselleştirilmesi. Veri keşfi ve çıkarımsal istatistik ile veri özetleme/analizi. Makine Öğrenmesi yöntemleri ile veri kestirimi, sınıflaması, kümelemesi. İş zekâsı, büyük veri ve veri ambarları. Veri mahremiyeti, güvenliği ve etik konular. Introduction to Data Science and Engineering, Data Science Project Life Cycle. Data collection, cleaning, organization, processing, and visualization. Data exploration. Data summarization, and analysis using basic statistical inference methods. Data prediction, classification, and clustering using basic machine learning methods. Business intelligence, big data, and data warehousing. Data privacy, security and ethical aspects.",
+  "outcomes": [
+   "Veri bilimi ve mühendisliğinin çözüm ürettiği sorunları ve kısıtlarını tespit edebilir.",
+   "Farklı kaynaklardan veri toplama, işleme ve zenginleştirme işlemlerini yapabilir.",
+   "Veriyi görselleştirebilir ve keşifsel veri analizi yapabilir.",
+   "Veri bilimi projesinin hayat çevrimini açıklayabilir.",
+   "Temel makine öğrenmesi yöntemlerini veriye uygulayabilir.",
+   "Temel istatistiksel yöntemlerle veriyi özetleyebilir/analiz edebilir.",
+   "Büyük veri, iş zekası ve analitiği gibi konularla ilgili problemleri ve çözümleri tespit edebilir",
+   "Veri gizliliği, güvenliği ve alan ile ilgili etik kuralları açıklayabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri Bilimi ve Mühendisliğine Giriş",
+   "Hafta 2 — Veri ve Veri Bilimi Hayat Döngüsü",
+   "Hafta 3 — Veri Toplama ve Yönetimi",
+   "Hafta 4 — Veriyi Özetleme ve Görselleştirme",
+   "Hafta 5 — İstatistiksel Çıkarımın Temelleri",
+   "Hafta 6 — Makine Öğrenmesinin Temelleri I",
+   "Hafta 7 — Makine Öğrenmesinin Temelleri II",
+   "Hafta 8 — Derin Öğrenme",
+   "Hafta 9 — Transfer Öğrenme ve Üretken Yapay Zeka",
+   "Hafta 10 — Veri Ambarı ve İş Zekâsı",
+   "Hafta 11 — Büyük Veri Analitiği",
+   "Hafta 12 — Veri Mühendisliği – Yaşam Döngüsü ve Ekosistem, MLOps",
+   "Hafta 13 — Veri Bilimi ve Etik",
+   "Hafta 14 — Proje Sunumları"
+  ],
+  "textbooks": [
+   "Python Veri Bilimi El Kitabı, Jake Vanderplas (2016), Oreilly",
+   "Veri Mühendisliğinin Temelleri (2022). Joel Reis, Matt Housley, Oreilly"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 212E": {
+  "code": "YZV 212E",
+  "name": "Fund.ofArtificial Intelligence",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5.5
+  },
+  "description": "Kuramsal ve pratik Yapay Zeka kavramlarını tanıtır. Karmaşık gerçek yaşam zeka problemlerini çözmek üzere temel yapay zeka prensiplerini öğretir. Yapay Zeka problemlerini tanımlamak üzere gerekli yapı ve araçları sunar. Arama uzayının ve problemin yapısına göre uygun matematiksel ve olasılıksal araçları tanıtır. Introduces theoretical and practical aspects of Artificial Intelligence. Presents foundational AI principles to formulate complex real-world intelligence problems. Presents structures and tools to define Artificial Intelligence problems. Presents mathematical and probabilistic tools to solve problems based on the structure of the problem and the search space.",
+  "outcomes": [
+   "Yapay zeka problemleri için biçimsel tanım oluşturma",
+   "Yapay zeka problemlerinde arama tekniklerini kullanabilme",
+   "Yapay zeka yöntemleri ve algoritmalarını kullanarak biçimsel olarak tanımlanmış problemleri çözme",
+   "Yapay zeka problemlerini matematiksel olarak tanımlama ve çıkarım mekanizmaları geliştirme",
+   "Yapay öğrenme tekniklerini kavrama, tasarlama ve uygulama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay Zekaya Giriş",
+   "Hafta 2 — Arama Teknikleri I: Ağaç Arama, Dinamik Programlama",
+   "Hafta 3 — Arama Teknikleri II: A*, tutarlı sezgi",
+   "Hafta 4 — Kısıt Sağlama Problemi",
+   "Hafta 5 — Oyunlarda Yapay Zeka: Minimax, Değerlendirme fonksiyonları",
+   "Hafta 6 — Makine Öğrenmesi temel bilgileri",
+   "Hafta 7 — Markov Karar Süreçleri I: Strateji Değerlendirme, Iterasyon, Pekiştirmeli Öğrenme",
+   "Hafta 8 — Markov Karar süreçleri II: Q-öğrenmesi, Keşif/Sömürü",
+   "Hafta 9 — Mantık: Sentaks ve Anlam, Önerme Mantığı, Birinci dereceden mantık",
+   "Hafta 10 — Mantıksal Çıkarım",
+   "Hafta 11 — Bayes Ağları: Olasılıksal çıkarım",
+   "Hafta 12 — Planlama",
+   "Hafta 13 — Arama ve Çıkarım Uygulamaları",
+   "Hafta 14 — Toplubakış ve Yapay Zeka’nın geleceği"
+  ],
+  "textbooks": [
+   "Artificial Intelligence: A Modern Approach (4th Edition), Stuart Russell, Peter Norvig, Prentice Hall, 2020"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=212",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 231E": {
+  "code": "YZV 231E",
+  "name": "Veri Bilimleri için Olasılık ve İstatistik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 7.5
+  },
+  "description": "Örnek Uzayı ve Olasılık, Olasılıksal Modeller, Bayes Teoremi, Bağımsızlık, Ayrık Rastgele Değişkenler, Ortalama ve Varyans, Sürekli Rastgele Değişkenler, Olasılık Dağılımları, Normal Rastgele Değişkenler, Kovaryans ve Korelasyon, Markov ve Chebyshev Eşitsizlikleri, Büyük Sayılar Teoremi, Merkezi Sınır Teoremi, Bayesian ve Klasik İstatistik, Hipotez Testleri, Parametre Kestirimi, Lineer Modeller, En Küçük Kareler Analizi, Veri Analizinde Gerçek Hayat Uygulamaları Sample Space and Probability, Probabilistic Models, Bayes Theorem, Independence, Discrete Random Variables, Expectation and Variance, Continuous Random Variables, Probability Distributions, Normal Random Variables, Covariance and Correlation, Markov and Chebyshev Inequalities, Law of Large Numbers, Central Limit Theorem, Bayesian and Classical Statistic, Hypothesis Testing, Parameter Estimation, Linear Models, Least Squares Analysis, Applications and Case Studies in Data Science.",
+  "outcomes": [
+   "Olasılık Aksiyomlarını ve Kanunlarını tanımlamak. Verilen bir rastlantısal deney için örnekleme uzayı ve olasılık modelini kurgulayabilmek",
+   "Olasılık ve Koşullu Olasılıkları oluşturmak. Bunları Bayes kuralları içinde kullanarak basit gerçek hayat problemleri üzerinde çıkarımlar yapmak.",
+   "Rastgele değişkenleri, önemli standart olasılık dağılım fonksiyonlarını (pdf) ve kümülatif dağılım fonksiyonlarını (cdf) tanımlamak ve kullanmak, hem ayrık hem de sürekli uzaylarda",
+   "Birden fazla değişkeni olan modeller için ortak pdf’leri tanımlamak, marjinal ve koşullu pdf’lerle ilişkilendirmek, bağımsızlık ve ilintililik kavramları ile ilişkilendirmek.",
+   "Rastgele değişkenler için ortalama, varyans, kovaryans, momentleri hesaplamak.",
+   "Büyük sayılar teoremi ve Merkezi sınır teoremleri kavramsal olarak bilmek ve kullanabilmek",
+   "Bayesian ve Klasik Kestirim yöntemlerini tanımlamak ve kullanmak: MAP, Hipotez Test etme, Minimum Ortalama Karesi Kestirimi, Lineer Regresyon örneklerinde",
+   "Öğrenme çıktılarını gerçek veri analizi problemleri üzerinde bir programlama ortamında uygulayabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Olasılıksal Modellemeye Giriş I: Örnekleme Uzayı, Olasılık Modelleri",
+   "Hafta 2 — Olasılıksal Modellemeye Giriş II: Bağımsızlık, Şartlı Olasılık",
+   "Hafta 3 — Olasılıksal Modellemeye Giriş III: Bayes Theorem ve uygulamaları",
+   "Hafta 4 — Süreksiz Rastgele Değişkenler. PMFler. CDFler. Ortalama ve Varyans.",
+   "Hafta 5 — Çoklu Süreksiz Rastgele Değişkenler. Birleşik PMFler.",
+   "Hafta 6 — Sürekli Rastgele Değişkenler. PDFler.",
+   "Hafta 7 — Çoklu Sürekli Rastgele Değişkenler. Momentler. Kovaryans. Korelayson. Yinelenen Ortalamalar.",
+   "Hafta 8 — Limit Teoremleri I: Markov ve Chebysev Eşitsizlikleri, Olasılık Dağılımında Yakınsamak",
+   "Hafta 9 — Limit Teoremleri II: Büyük Sayılar Kanunu. Merkezi Sınır Teoremi",
+   "Hafta 10 — Bayesian İstatistik I: Sonsal Dağılım ve MAP Kestirimi",
+   "Hafta 11 — Bayesian İstatistik II: En Küçük Kareler Analizi",
+   "Hafta 12 — Klasik İstatistik I: Parametre Kestirimi, Kestirimci özellikleri.",
+   "Hafta 13 — Klasik İstatistik II: Hipotez Testi, Lineer Regresyon",
+   "Hafta 14 — Gerçek Hayat Uygulamaları"
+  ],
+  "textbooks": [
+   "Bertsekas, Dimitri P., and John N. Tsitsiklis. Introduction to Probability, 2nd Edition Belmont, MA: Athena Scientific"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=231",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 302E": {
+  "code": "YZV 302E",
+  "name": "Derin Öğrenme",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 8
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=302",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 303E": {
+  "code": "YZV 303E",
+  "name": "Deep Learning",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Derin Öğrenme, Sinir Ağları ve Evrişimsel Sinir Ağları, Optimizasyon ve Regularizasyon, Gözetimli ve Gözetimsiz Yöntemler, Ayrıştırıcı Ağlar, Ağların Eğitimi, Derin Üretici Ağlar, Çekişmeli Teknikler, Sınıflandırma uygulamaları, Yinelemeli Sinir Ağları, Zamansal Tahmin Uygulamaları, İleri Derin Öğrenme teknikleri ve uygulamaları, Dikkat mekanizmaları. Deep Learning, Neural Networks and Convolutional Neural Networks, Optimization and Regularization, Supervised and Unsupervised Methods, Discriminative Networks, Training of Networks, Deep Generative Networks, Adversarial methods, Classification applications, Recurrent Neural Networks, Temporal Prediction applications, Advanced deep learning techniques and applications, Attention mechanisms",
+  "outcomes": [
+   "Derin öğrenme alanındaki başlıca problemleri, kullanım alanlarını, teknikleri bilmek ve tartışabilmek",
+   "Derin öğrenme alanında kullanılan temel matematik araçları (optimizasyon, regülarizasyon vb) tanımlamak, oluşturmak ve kullanmak",
+   "Çeşitli tipte evrişimsel, tam bağlantılı ve ardışık sinir ağlarını tasarlamak, derin sinir ağlarının eğitiminde gereken prosedürleri oluşturmak ve çalıştırmak ve sonuçları yorumlamak",
+   "Öğrenmede gözetimli ve gözetimsiz yaklaşımların farklı matematiksel formülasyon ve çözüm tekniklerini bilmek ve uygulamak; özelde ayrıştırıcı ve üretici modeller",
+   "Derin öğrenme uygulamalarını bilgisayar ortamında gerçeklemek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Derin Öğrenme",
+   "Hafta 2 — Temel Konular",
+   "Hafta 3 — Yapay Sinir Ağları",
+   "Hafta 4 — Geriyayılım, Ağ Eğitimi, Regularizasyon Teknikleri",
+   "Hafta 5 — Evrişimsel Sinir Ağları",
+   "Hafta 6 — Yapay Görü Uygulamaları: Obje tespiti, tanıma, bölütleme",
+   "Hafta 7 — Ardışık modeller: Yineleyen Sinir Ağları, LSTMs",
+   "Hafta 8 — Zaman serisi tahmini",
+   "Hafta 9 — Dikkat mekanizmaları",
+   "Hafta 10 — Dönüştürücü mimariler",
+   "Hafta 11 — Gözetimsiz Teknikler ve Otokodlayıcılar",
+   "Hafta 12 — Derin Üretici Ağlar: Çekişmeli teknikler",
+   "Hafta 13 — Derin Öğrenmede Modern Teknikler",
+   "Hafta 14 — Proje Sunumları / Derin Öğrenmede Farklı Uygulamalar"
+  ],
+  "textbooks": [
+   "Understanding Deep Learning, Simon J.D. Prince, MIT Press, 2023"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=303",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 311E": {
+  "code": "YZV 311E",
+  "name": "Data Mining",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Veri Madenciliği ve Bilgi keşfi, Veri temizleme ve önişleme yöntemleri, Sınıflandırma Yöntemleri, Demetleme Yöntemleri, İlişkilendirme Kuralları, Metin madenciliği, Model değerlendirme Data mining and knowledge discovery, Data cleaning and preprocessing methods, classification methods, Clustering methods, Association rules, Text mining, model evaluation",
+  "outcomes": [
+   "Veriyi veri madenciliği uygulamaları için hazırlayabilme",
+   "Uygun veri madenciliği algoritması seçebilme",
+   "Farklı veri madenciliği yöntemlerinin teorik ve algoritmik olarak nasıl çalıştığını anlayabilme",
+   "Farklı model sonuçlarını değerlendirebilme ve yorumlayabilme",
+   "Güncel problemleri inceleyebilme ve bir veri madenciliği yönteminde değişiklik yaparak yeni problemlere uyarlayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri Madenciliğine Giriş",
+   "Hafta 2 — Veri Temizleme ve Hazırlama",
+   "Hafta 3 — Sınıflandırma Yöntemleri",
+   "Hafta 4 — Sınıflandırma yöntemlerini değerlendirme",
+   "Hafta 5 — Demetleme Yöntemleri",
+   "Hafta 6 — İlişkilendirme Kuralları: temel kavramlar",
+   "Hafta 7 — İlişkilendirme Kuralları Algoritmaları",
+   "Hafta 8 — Yıliçi Sınavı",
+   "Hafta 9 — Çizge Veri Madenciliği",
+   "Hafta 10 — Sosyal Ağ analizi",
+   "Hafta 11 — Çizge Sinir Ağları",
+   "Hafta 12 — Bağlantı Tahmini",
+   "Hafta 13 — İleri teknikler",
+   "Hafta 14 — Dönem projeleri sunumları"
+  ],
+  "textbooks": [
+   "Data Mining: Concepts and Techniques. Jiawei Han and Micheline Kamber Morgan Kaufmann Publishers (2006). ISBN 1-55860-489-8."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=311",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 312E": {
+  "code": "YZV 312E",
+  "name": "Veri Madenciliği",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 8
+  },
+  "description": "Veri Madenciliği ve Bilgi keşfi, Veri temizleme ve önişleme yöntemleri, Sınıflandırma Yöntemleri, Demetleme Yöntemleri, İlişkilendirme Kuralları, Metin madenciliği, Model değerlendirme Data mining and knowledge discovery, Data cleaning and preprocessing methods, classification methods, Clustering methods, Association rules, Text mining, model evaluation",
+  "outcomes": [
+   "Veriyi veri madenciliği uygulamaları için hazırlayabilme",
+   "Uygun veri madenciliği algoritması seçebilme",
+   "Farklı veri madenciliği yöntemlerinin teorik ve algoritmik olarak nasıl çalıştığını anlayabilme",
+   "Farklı model sonuçlarını değerlendirebilme ve yorumlayabilme",
+   "Güncel problemleri inceleyebilme ve bir veri madenciliği yönteminde değişiklik yaparak yeni problemlere uyarlayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri Madenciliğine Giriş",
+   "Hafta 2 — Veri Temizleme ve Hazırlama",
+   "Hafta 3 — Sınıflandırma Yöntemleri",
+   "Hafta 4 — Sınıflandırma yöntemlerini değerlendirme",
+   "Hafta 5 — Demetleme Yöntemeri",
+   "Hafta 6 — İlişkilendirme Kuralları: temel kavramlar",
+   "Hafta 7 — İlişkilendirme Kuralları Algoritmaları",
+   "Hafta 8 — Yıliçi sınavı",
+   "Hafta 9 — Çizge Veri Madenciliği",
+   "Hafta 10 — Sosyal Ağ analizi",
+   "Hafta 11 — Çizge Sinir Ağları",
+   "Hafta 12 — Bağlantı Tahmini",
+   "Hafta 13 — İleri teknikler",
+   "Hafta 14 — Dönem projeleri sunumları"
+  ],
+  "textbooks": [
+   "Han, J., and Kamber M., 2006. Data Mining: Concepts and Techniques, Morgan Kaufmann Publishers. ISBN 1-55860-489-8."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 321E": {
+  "code": "YZV 321E",
+  "name": "Yapay Zekanın Temelleri",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 8.5
+  },
+  "description": "Kuramsal ve pratik Yapay Zeka kavramlarını tanıtır. Karmaşık gerçek yaşam zeka problemlerini çözmek üzere temel yapay zeka prensiplerini öğretir. Yapay Zeka problemlerini tanımlamak üzere gerekli yapı ve araçları sunar. Arama uzayının ve problemin yapısına göre uygun matematiksel ve olasılıksal araçları tanıtır. Introduces theoretical and practical aspects of Artificial Intelligence. Presents foundational AI principles to formulate complex real-world intelligence problems. Presents structures and tools to define Artificial Intelligence problems. Presents mathematical and probabilistic tools to solve problems based on the structure of the problem and the search space.",
+  "outcomes": [
+   "Yapay zeka problemleri için biçimsel tanım oluşturma",
+   "Yapay zeka problemlerinde arama tekniklerini kullanabilme",
+   "Yapay zeka yöntemleri ve algoritmalarını kullanarak biçimsel olarak tanımlanmış problemleri çözme",
+   "Yapay zeka problemlerini formüle edebilme ve çıkarım mekanizmaları geliştirme",
+   "Yapay öğrenme tekniklerini kavrama, tasarlama ve uygulama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay Zekaya Giriş",
+   "Hafta 2 — Arama Teknikleri I: Ağaç Arama, Dinamik Programlama",
+   "Hafta 3 — Arama Teknikleri II: A*, tutarlı sezgi",
+   "Hafta 4 — Kısıt Sağlama Problemi",
+   "Hafta 5 — Oyunlarda Yapay Zeka: Minimax, Değerlendirme fonksiyonları",
+   "Hafta 6 — Mantık: Sentaks ve Anlam, Önerme Mantığı, Birinci dereceden mantık",
+   "Hafta 7 — Mantıksal Çıkarım",
+   "Hafta 8 — Bayesian Ağları: Olasılıksal çıkarım",
+   "Hafta 9 — Planlama",
+   "Hafta 10 — Arama ve Çıkarım Uygulamaları",
+   "Hafta 11 — Makine Öğrenmesi temel bilgileri",
+   "Hafta 12 — Markov Karar Süreçleri I: Strateji Değerlendirme, Iterasyon, Pekiştirmeli Öğrenme",
+   "Hafta 13 — Markov Karar süreçleri II: Q-öğrenmesi, Keşif/Sömürü",
+   "Hafta 14 — Toplubakış ve Yapay Zeka’nın geleceği"
+  ],
+  "textbooks": [
+   "Artificial Intelligence: A Modern Approach (3rd Edition), Stuart Russell, Peter Norvig, Prentice Hall, 2010"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=321",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 322E": {
+  "code": "YZV 322E",
+  "name": "Uygulamalı Veri Mühendisliği",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 0,
+   "practice": 0,
+   "lab": 4,
+   "local": 2,
+   "ects": 8.5
+  },
+  "description": "Bu derste öğrenciler bir veri hattı mimarisinde bulunabilecek NoSQL veritabanı, ETL araçları, veri ambarı, veri indeksleme araçları, sistem otomasyonu araçları, görselleştirme yazılımları gibi bileşenleri öğrenecek ve deneyler yapacaktır. Students will learn and use basic components of a data pipeline (such as NoSQL databases, ETL tools, data warehouses, indexing tools, orchestration tools, visulation software).",
+  "outcomes": [
+   "Öğrenciler csv ve json gibi farklı formatlardaki veri dosyalarını işleyebilecektir.",
+   "Öğrenciler NoSQL ve SQL veritabanlarını kullanarak verileri yönetebilecek ve değiştirebilecektir",
+   "Öğrenciler veri çıkarma, temizleme ve doğrulama işlemlerini gerçekleştirebilecektir",
+   "Öğrenciler veri hattı görevi planlamak ve düzenlemek için otomasyon araçlarını kullanabilecektir.",
+   "Öğrenciler verileri görselleştirmek için gösterge panelleri oluşturabilecektir",
+   "Öğrenciler farklı senaryolar için ETL ve doğrulamayı içeren veri hatları oluşturabilecektir",
+   "Öğrenciler veri hatları üzerinde sürüm kontrolü yapabilecektir",
+   "Öğrenciler konteynerler ve sanal makineler arasındaki farkları anlayabilecektir",
+   "Öğrenciler IP adreslerini ve port numaralarını kullanarak birden fazla konak arasında iletişimin nasıl çalıştığını anlayabilecektir.",
+   "Öğrenciler sektörde kullanılan güncel veri mühendisliği araçları hakkında bilgi sahibi olabilecektir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri hattı araçlarının, SQL ve NoSQL veritabanlarının kurulumu ve yapılandırılması",
+   "Hafta 2 — Kurulumu yapılan veri hattı araçlarına ve veritabanlarına hızlı bakış",
+   "Hafta 3 — Dosyaları okuma ve dosyalara yazma",
+   "Hafta 4 — Veritabanları ile çalışma",
+   "Hafta 5 — Verileri Temizleme, Dönüştürme ve Zenginleştirme",
+   "Hafta 6 — Bir veri hattı oluşturma",
+   "Hafta 7 — Veri Doğrulama",
+   "Hafta 8 — Veri hattı Sürüm Kontrolü",
+   "Hafta 9 — Veri hattı izleme",
+   "Hafta 10 — Veri hattı dağıtımı",
+   "Hafta 11 — Üretim Veri Hattı Oluşturma -1",
+   "Hafta 12 — Üretim Veri Hattı Oluşturma -2",
+   "Hafta 13 — Konteynerler, ağ temelleri ve soket programlama",
+   "Hafta 14 — Sektörden davetli konuşmacı"
+  ],
+  "textbooks": [
+   "Paul Crickard, \"Data Engineering with Python,\" Packt Publishing, 2020 Github Linki: https://github.com/PacktPublishing/Data-Engineering-with-Python"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=322",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 401E": {
+  "code": "YZV 401E",
+  "name": "Yapay Zeka ve Veri Mühendisliğinin Hukuki Boyutları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 2
+  },
+  "description": "Bu ders yapay zeka teknolojilerinin ve veri mühendisliğinin hukuksal yönüne ilişkin seçilmiş konuları kapsar. Derse bilgi teknolojilerinin yeni hukuk öğretisi üzerindeki etkilerini tartışarak giriş yapıldıktan sonra kişisel veri koruması ve özellikle büyük veri, iş analitiğine ilişkin yazılımların korunması, telif hakları, dijital haklar yönetimi, yapay zekada cezai ve hukuki sorumluluk gibi konulara değinilecektir. Bilgi teknolojileri alanındaki gelişmelere hukukun nasıl bir tepki verdiği ve ne tür hukuki konuların bilgi toplumu politikasını şekillendirdiği konuları ele alınacaktır. Derste temel olarak Türk hukukuna yoğunlaşılacak olmakla beraber, bazı konular karşılaştırmalı hukuk açısından ele alınacaktır. This course covers a selection of topics regarding the legal aspects in the field of AI technologies engineering. It will begin by considering the debate about the influence of information technology upon the development of new legal doctrine, moving on to consider, through topics such as data protection, especially topics related to big data, software protection regarding AI engineering, copyright and digital rights management, criminal and civil liability in AI, both how the law has responded to the challenges of information technologies, and the extent to which legal issues have shaped the development of information society policy. Although the focus will be initially on turkish law, the comparative aspects will be introduced",
+  "outcomes": [
+   "Yapay zeka uygulamalarına ilişkin hukuki gelişmeleri eleştirel gözle değerlendirebilmek",
+   "Yapay zeka teknolojilerine ilişkin hukuki kural ve teorileri kavramak",
+   "Internet çağında mahremiyet, toplu gözetim ve ifade özgürlüğü konularındaki tartışmalara hakim olmak",
+   "Kişisel verilerin koruması konusunda temel bilgilere sahip olmak",
+   "Veri sorumlusu ve veri işleyen kavramlarını ve bunların yükümlülüklerini anlamak",
+   "Yapay zeka teknolojilerin kişisel verilerin hukuka aykırı işlenmesi konusunda ortaya çıkabilecek problemleri çözme yetisine sahip olmak",
+   "Fikri mülkiyet haklarının yapay zeka uygulamaları üzerindeki etkisini anlamak",
+   "Yazılımların telif hakları veya patent ile korunması konusunu kavramak",
+   "Yapay zekanın rekabet hukuku alanındaki etkilerini anlamak",
+   "Veriye dayalı sektörlerde ortaya çıkabilecek rekabet hukuku sorunlarını anlamak",
+   "Yapay zeka teknolojilerinin verebileceği zararlardan doğacak haksız fiil sorumluluğu kavramını anlamak",
+   "Yapay zeka teknolojilerinin ceza hukuku açısından olası sonuçlarını kavramak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Hukuka Girişi ve Temel Terimler",
+   "Hafta 2 — Mahremiyet, Gözetim, Güvenlik ve Hukuki Boyutları",
+   "Hafta 3 — Kişilik Haklarının Korunması, İfade Özgürlüğü ve Kişisel Veri Kavramı",
+   "Hafta 4 — Kişisel Veri Koruma Hukukunun Temel Prensipleri",
+   "Hafta 5 — Veri sorumlusu ve veri işleyen kavramları",
+   "Hafta 6 — Verinin hukuka uygun işlenmesi",
+   "Hafta 7 — Hukuki açıdan veri güvenliği tedbirleri ve veri sorumlusunun yükümlülükleri",
+   "Hafta 8 — Yapay zeka sistemlerinde fikri mülkiyet hakları",
+   "Hafta 9 — Yapay zeka ve Rekabet Hukuku: Veriye dayalı sektörlerde rekabet hukuku uygulamaları",
+   "Hafta 10 — Yapay zeka ve Rekabet Hukuku: Büyük veriye dayalı pazar gücü, kişiselleştirilmiş fiyatlama ve pazarlama",
+   "Hafta 11 — Yapay zeka ve hukuki ve cezai sorumluluk, temel prensipler",
+   "Hafta 12 — Haksız fiil sorumluluğu ve yapay zeka",
+   "Hafta 13 — Cezai sorumluluk ve yapay zeka",
+   "Hafta 14 — Yapay zekanın sektörel uygulamaları ve hukuki sorunlar (vaka analizi)"
+  ],
+  "textbooks": [
+   "John Buyers, Artificial Intelligence: The Practical Legal Issues, Law Brief Publishing, 2018."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=401",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 403E": {
+  "code": "YZV 403E",
+  "name": "Oyun Kuramı",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Oyun Kuramı teknikleri ile çok oyunculu oyunların stratejilerin çözümleri ve bunların karar verme problemlerinin çözümünde kullanımı, karar verme teknikleri ile işleyen yapay zeka uygulamalarının tasarımı. Using Game Theory techniques to develop multi player strategies and using these techniques in solving decision making problems and artificial intelligence applications.",
+  "outcomes": [
+   "Oyun modelleme felsefesini ve ilkelerini kavramak",
+   "Statik ve dinamik modellemenin yanı sıra model çeşitleri hakkında bilgi sahibi olmak,",
+   "Oyun teorisi problemleriyle ilgili veriyi analiz etmek,",
+   "Bir problemin kavramsal haritasını oluşturmak ve harita üzerinde gerekli süreçleri gerçekleştirmek",
+   "Oyun Teorisi hakkında bilgi sahibi olmak ve ilgili teknikleri uygulamak becerilerini kazanır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Oyun Teorisinin Temelleri",
+   "Hafta 2 — Baskın Stratejiler",
+   "Hafta 3 — Saf Nash Dengesi",
+   "Hafta 4 — Karışık Nash Dengesi",
+   "Hafta 5 — Ajan Modelleri",
+   "Hafta 6 — Çok Aşamalı Oyunlar",
+   "Hafta 7 — Evrimsel Oyun Teorisi",
+   "Hafta 8 — Dinamik Sistemler",
+   "Hafta 9 — Evrimsel Dinamikler",
+   "Hafta 10 — Markov Oyunları – Temeller",
+   "Hafta 11 — Markov Oyunları – Uygulamalar",
+   "Hafta 12 — Diferansiyel Oyunlar",
+   "Hafta 13 — Yapay Zeka Uygulamaları 1",
+   "Hafta 14 — Yapay Zeka Uygulamaları 2"
+  ],
+  "textbooks": [
+   "Prisner, Erich. Game theory through examples. Vol. 46. American Mathematical Soc., 2014."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=403",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 405E": {
+  "code": "YZV 405E",
+  "name": "Doğal Dil İşleme",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Doğal Dil İşleme Seviyeleri ve aralarındaki geçişler, Doğal Dil İşleme Görevleri, Istatistiksel dil modelleri, sinirsel dil modelleri, metin temsilleri, dizilim etiketleme, kodlayıcı kod çözücü modeller, dikkat mekanizmaları, özdikkatli dönüştürücüler. NLP stages and their interaction, NLP tasks, statistical language models, neural language models, text representations, sequence labeling, encoder-decoder models, attention mechanisms, transformers.",
+  "outcomes": [
+   "Öğrenciler doğal dil işlemedeki temel bilgi düzeylerini ve görevlerini öğreneceklerdir.",
+   "Öğrenciler doğal dil işlemedeki bilgi düzeylerinde kullanılan temel yaklaşımları öğreneceklerdir",
+   "Öğrenciler ddi alanında kullanılan kural tabanlı, istatistiksel, makine öğrenmesi ve derin öğrenme yaklaşımlarının temel farklarını öğreneceklerdir.",
+   "Öğrenciler ddi alanında kullanılan kural tabanlı temel yaklaşımları öğreneceklerdir",
+   "Öğrenciler ddi alanında kullanılan temel istatistiksel yaklaşımları öğreneceklerdir.",
+   "Öğrenciler ddi alanında kullanılan temel makine öğrenmesi yaklaşımlarını öğreneceklerdir.",
+   "Öğrenciler ddi alanında kullanılan temel derin öğrenme yaklaşımlarını öğreneceklerdir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Doğal Dil İşlemenin Temelleri",
+   "Hafta 2 — Doğal Dil İşleme Seviyeleri ve Aralarındaki geçişler",
+   "Hafta 3 — İstatistiksel Dil Modelleri",
+   "Hafta 4 — İstatiksel Modeller ile Dizilim Etiketleme (HMM, MEMM, CRF, Viterbi, Forward)",
+   "Hafta 5 — Seyrek Temsiller",
+   "Hafta 6 — Yoğun Temsiller I: Sinirsel Dil Modelleri, word2vec, fasttext",
+   "Hafta 7 — Yoğun Temsiller II: Özyinelemeli Sinir ağları",
+   "Hafta 8 — Yoğun Temsiller III: Kodlayıcı-Kod Çözücü Modelleri",
+   "Hafta 9 — Yoğun Temsiller IV: Evrişimsel Sinir ağları",
+   "Hafta 10 — Yoğun Temsiller V: Dikkat Mekanizmaları ve Öz-Dikkatli Dönüştürücüler",
+   "Hafta 11 — Bağlamsal Temsiller",
+   "Hafta 12 — Doğal Dil İşleme Görevleri ve Modellemeleri I: Biçimbilimsel Çözümleme, Yazım Hatası Düzeltimi, Normalizasyon, Sözcük Etiketleme, Cümle Analizi, Varlık İsmi Tanıma",
+   "Hafta 13 — Doğal Dil İşleme Görevleri ve Modellemeleri II: Sözcük Anlam Belirsizliği Giderme, Semantik Rol Etiketleme, Eşgönderge Çözümlemesi, Anlamsal Analiz",
+   "Hafta 14 — Doğal Dil İşleme Görevleri ve Modellemeleri III: Bilgi Çıkarımı, Bilgi Geri Getirimi, Makine Çevirisi, Sohbet Asistanları, Soru Cevap Sistemleri"
+  ],
+  "textbooks": [
+   "Jurafsky, D., Martin, J. H., 2022. Speech and language processing : An Introduction to Natural Language Processing, computational linguistics, and speech recognition (3rd ed.), Prentice Hall."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=405",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 406E": {
+  "code": "YZV 406E",
+  "name": "Robotik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Robotların farklı türlerini, bileşenlerini ve uygulamalarını, mekanik tasarımlarını ve farklı sensörleri tanıtır. Robotların kontrol mimarilerini, konum bulma, haritalama, yol planlama ve robot görme algoritmalarını sunar. Robotların planlama, bilgi temsili ve öğrenme gibi bilişsel yeteneklere sahip olması için gereken bileşenleri tanıtır. Çoklu robot sistemleri, insan-robot etkileşimi gibi ileri konuları tanıtır. Introduces different types, components and applications of robots, mechanical designs and different sensors. Presents control architectures of robots, localization, mapping, path planning and robot vision algorithms. Introduces cognitive robot skills such as planning, knowledge representation and learning. Presents advanced subjects, such as multirobot systems, and human-robot interaction",
+  "outcomes": [
+   "Robot tipleri, bileşenleri ve uygulamaları konularında geniş bir bakış açısına sahip olma,",
+   "Gerçek dünya problemleri için en uygun robot türünü belirleyebilme,",
+   "Mobil robotların kinematik hesaplamalarını çözme,",
+   "Bir robot sisteminin ana kontrol mimarisini belirleme ve uygulama,",
+   "En uygun konum bulma, haritalama, yol planlama ve görüntü işleme yöntemlerini belirleme ve uygulama,",
+   "Robotlara yüksek düzeyde planlama ve öğrenme yeteneklerini kazandırma ve robotları bilişsel yeteneklerle donatma becerilerini kazanır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Robotlar ve uygulamaları, robot türleri",
+   "Hafta 2 — Robot Kontrol Mimarileri",
+   "Hafta 3 — Robot Mekanikleri ve Hareket Yetenekleri",
+   "Hafta 4 — Robot İşletim Sistemi (ROS)",
+   "Hafta 5 — Gezgin Robot Kinematik Hesapları",
+   "Hafta 6 — Robot Sensörleri",
+   "Hafta 7 — Konum bulma",
+   "Hafta 8 — Haritalama",
+   "Hafta 9 — Yol Planlama",
+   "Hafta 10 — Robot Görüsü",
+   "Hafta 11 — Robotlarda Öğrenme",
+   "Hafta 12 — Robot Nesne-Ortam Etkileşimi",
+   "Hafta 13 — Çoklu robot sistemleri ve İnsan-Robot Etkileşimi",
+   "Hafta 14 — Robot Uygulamaları ve Proje Sunumları"
+  ],
+  "textbooks": [
+   "Introduction to Autonomous Mobile Robots, Roland Siegwart, Illah Reza Nourbakhsh and Davide Scaramuzza,The MIT Press, 2011",
+   "Springer Handbook of Robotics – Bruno Siciliano and Oussama Khatib, Springer, 2016.",
+   "Probabilistic Robotics, Sebastian Thrun, Wolfram Burgard and Dieter Fox, 2005, MIT press",
+   "Developmental robotics: From babies to robots, Angelo Cangelosi, Matthew Schlesinger, 2015, MIT press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=406",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 411E": {
+  "code": "YZV 411E",
+  "name": "Büyük Veri Analitiği",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Ders büyük veri teknolojilerinin güncel kullanımı ve analitik uygulamaları ele alacaktır. Açık kaynaklı büyük veri platformlarının dağıtık bilgisayar kümelerinde optimal kullanımı ve büyük veri sistem mimarileri detaylı olarak ele alınacaktır. The course discuss big data technology utilization skills with analytics applications. Optimal usage of open source big data platforms for computing clusters are going to be discussed in terms of big data architectures",
+  "outcomes": [
+   "Öğrenciler, güncel büyük veri teknolojileri ve analitik uygulamalarının temellerini öğreneceklerdir.",
+   "Öğrenciler yapısal olmayan, yarı yapısal ve yapısal veri yapıları çerçevesinde veri gölü tasarımı, veri indirgeme ve dağıtık saklama uygulamalarını öğrenip, gerçekleyebileceklerdir",
+   "Öğrenciler sabit disk ve bellek üzerinden tasarlanmış büyük veri platformlarını öğrenecek ve büyük veri sistem mimarileri uygulamalarını ve gerçeklemelerini öğreneceklerdir",
+   "Öğrenciler, büyük veri platformları ile gerçek zamanlı veri akışı analitik çözümlemelerinin optimal kullanım ve uygulamalarını karşılaştırmalı öğreneceklerdir.",
+   "Öğrenciler, mühendislik uygulamaları için, Python ve Scala dillerinde programlar tasarlama, gerçekleme, test etme ve hata ayıklamayı öğreneceklerdir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Büyük Veri İşleme Ekosistemi ve Hadoop Temelleri",
+   "Hafta 2 — MapReduce Çerçevesine Genel Bir Bakış",
+   "Hafta 3 — Apache Spark ile Büyük Veri Analitiğine Giriş",
+   "Hafta 4 — RDD/Dataframe ile Spark Programlama Modeli I",
+   "Hafta 5 — RDD/Dataframe ile Spark Programlama Modeli II",
+   "Hafta 6 — Lokal Bilgisayarda Spark Uygulamalarının Çalıştırılması",
+   "Hafta 7 — Hadoop Kümesinde Spark Uygulamalarının Çalıştırılması I",
+   "Hafta 8 — Hadoop Kümesinde Spark Uygulamalarının Çalıştırılması II",
+   "Hafta 9 — Spark SQL Uygulamaları",
+   "Hafta 10 — Spark Streaming – Gerçek Zamanlı Veri İşleme",
+   "Hafta 11 — Spark Uygulamaları ile Makine Öğrenmesi",
+   "Hafta 12 — Spark ile ileri Seviye Analitik Uygulamalar",
+   "Hafta 13 — Gerçek Dünya Uygulamalarının Analizi",
+   "Hafta 14 — Büyük Veri Projeleri Sunumları ve Değerlendirme"
+  ],
+  "textbooks": [
+   "● Chambers B. and Zaharia M., Spark: The Definitive Guide, O’Reilly, 2018",
+   "● White T., Hadoop: The Definitive Guide, O’Reilly, 2016"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=411",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 413E": {
+  "code": "YZV 413E",
+  "name": "Çizge Kuramı ve Algoritmalar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Çizgelerle ilgili veri yapıları, çizgelerin bilgisayar mühendisliğindeki yeri, temel kavramlar, ağaçlar, en kısa yol bulma, düzlemsel çizgeler, bağlılık, Euler ve Hamilton çizgeleri, çizge boyama, eşleme, ağ akışları, yönlü çizgeler, NP-tam problemler, olasılıksal çizge modelleri, çizge modellerinde makine öğrenmesi. Data structures related to graphs, graphs in computer engineering, basic definitions, trees, shortest path algorithms, planar graphs, connectivity, Euler and Hamilton graphs, graph coloring, matching, network flows, digraphs, NP-complete problem, probabilistic graphical models, machine learning on graphs.",
+  "outcomes": [
+   "Çizge kuramıyla ilgili temel kavramları öğrenmek",
+   "Çizge problemlerinin çözümünde kullanılan algoritmaları tanımak",
+   "Çizgelerde karmaşık problemleri tanımak ve çözüm yöntemlerini incelemek",
+   "Düğüm ve kenar analizini etkin kılmak için çizge temelli merkezilik ölçümlerini anlamaya yönelik bir kavrayış geliştirmek",
+   "Çizge tabanlı öğrenme problemlerinin çözümünde çizge sinir ağlarının rolünü incelemek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Çizgelere giriş",
+   "Hafta 2 — Ağaçlar",
+   "Hafta 3 — En kısa yol",
+   "Hafta 4 — Bağlılık, Euler turu, Hamilton çevresi",
+   "Hafta 5 — Düzlemsel çizgeler, Çizge Temelli Merkezilik Ölçümleri",
+   "Hafta 6 — Akışlar, Ağlar",
+   "Hafta 7 — Minimum akış problemleri",
+   "Hafta 8 — Eşleme, Çizge ayrıştırma, Çizge boyama",
+   "Hafta 9 — Olasılıksal Çizge Modelleri",
+   "Hafta 10 — Olasılıksal Çizge Modellerinde Kestirim",
+   "Hafta 11 — Olasılıksal Çizge Modellerinde Öğrenme",
+   "Hafta 12 — Çizgelerde Makine Öğrenmesi - Temeller",
+   "Hafta 13 — Çizgelerde Makine Öğrenmesi - Uygulamalar",
+   "Hafta 14 — Dönem projesi sunumları"
+  ],
+  "textbooks": [
+   "Harary, F., 1972. Graph Theory, ISBN -201-02787-9, Addison-Wesley",
+   "Gibbons, A., 1985. Algorithmic Graph Theory, ISBN 0-521-28881-9, Cambridge University Press.",
+   "Bondy, J. A. , Murty, U. S. R., 1976. Graph Theory with Application, North- Holand. (e-book available through the authors web page)",
+   "Ahuja, R., Magnanti, L., Borlin, J., 1993. Network Flows: Theory, Algorithms, and Application, ISBN 0-136-17549-X",
+   "Koller, D., & Friedman, N. (2009). Probabilistic graphical models: principles and techniques. MIT press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=413",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 415E": {
+  "code": "YZV 415E",
+  "name": "Derin Pekiştirmeli Öğrenme",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Pekiştirmeli Öğrenme Kavramı, Markov Karar Süreçleri, Dinamik Programlama, Modelden Bağımsız Pekiştirmeli Öğrenme, Yaklaşık Dinamik Programlama ve Pekiştirmeli Öğrenme, Derin Pekiştirmeli Öğrenme ve Yapay Sinir Ağları, Keşif Stratejileri, Kısmi Gözlemlenebilir Sistemler, Model Tabanlı Derin Pekiştirmeli Öğrenme, Otonom Sistemler için Uygulamalar Introduction to Reinforcement Learning, Markov Decision Processes, Dynamic Programming, Model Free Reinforcement Learning, Approximate Dynamic Programming and Reinforcement Learning, Deep Reinforcement Learning and Neural Networks, Exploration Strategies, Partially Observable Problems, Model Based Deep Reinforcement Learning, Applications for Autonomous Systems",
+  "outcomes": [
+   "Derin Pekiştirmeli Öğrenme alanındaki temel problemlere, uygulamalara ve çözüm tekniklerine hakim olmak",
+   "Belirsizlik altında karar verme problemlerini Markov Karar Süreci olarak modelleyebilmek",
+   "Çeşitli tipte evrişimsel, tam bağlantılı ve ardışık yapay sinir ağlarının pekiştirmeli öğrenme için nasıl kullanılabileceğini anlamak ve tasarlamak",
+   "Derin pekiştirmeli öğrenme algoritmalarını eğitimi için gerekli optimizasyon algoritmaları ve keşif stratejilerine hakim olmak",
+   "Derin pekiştirmeli öğrenme uygulamalarını bilgisayar ortamında gerçeklemek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Pekiştirmeli Öğrenmeye Kavramı",
+   "Hafta 2 — Markov Karar Süreçleri",
+   "Hafta 3 — Dinamik Programlama",
+   "Hafta 4 — Modelden Bağımsız Pekiştirmeli Öğrenme",
+   "Hafta 5 — Yaklaşık Dinamik Programlama ve Pekiştirmeli Öğrenme",
+   "Hafta 6 — Derin Pekiştirmeli Öğrenmenin Temelleri I: Modeller",
+   "Hafta 7 — Derin Pekiştirmeli Öğrenmenin Temelleri II: Algoritmalar",
+   "Hafta 8 — Keşif Stratejileri ve Monte Carlo Yöntemleri I",
+   "Hafta 9 — Keşif Stratejileri ve Monte Carlo Yöntemleri II",
+   "Hafta 10 — Kısmi Gözlemlenebilir Problemler I",
+   "Hafta 11 — Kısmi Gözlemlenebilir Problemler II",
+   "Hafta 12 — Model Tabanlı Derin Pekiştirmeli Öğrenme",
+   "Hafta 13 — Otonom Sistem Uygulamaları I",
+   "Hafta 14 — Otonom Sistem Uygulamaları II"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=415",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 416E": {
+  "code": "YZV 416E",
+  "name": "Bilgisayarla Görü",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Bilgisayarla Görüye giriş. Görsel/İmge verileri; Noktasal İmge Dönüşümleri; Geometrik Dönüşümler; İmge komşuluk Operasyonları (Uzaysal Filtreler, Kenar Tespit Operatörleri); Öznitelik Çıkarımı (Köşe, Parametrik teknikler: Çizgi, Çember, Elips, Şablon); Temel Bölütleme; Boyut İndirgeme; Dinamik görüntülerde Hareket Tespiti ve Hareket Kestirimi; Öğrenen Algoritmalara dayalı Bilgisayarla Görü Yöntemleri (Ör: Derin Öğrenme tabanlı) Derste işlenen yöntemlerin Programlanarak gerçeklenmesi (Python ile) Introduction to Computer Vision. Visual and Image Data; Pointwise Image Processing; Geometric Transforms; Image Neighborhood Operations, (Spatial Filtering, Edge Detection Operators); Feature Extraction (Corners, Parametric Techniques: Lines, Circles, Ellipses, Templates); Basic Segmentation; Dimensionality Reduction; Motion Detection and Estimation in Dynamic Scenes; Learning-based algorithms of computer vision (e.g. Deep learning based). Programming (e.g. Python) to realize the computer vision algorithms covered in the course.",
+  "outcomes": [
+   "Bilgisayarla (Yapay) Görü alanındaki başlıca problemleri, kullanım alanları ve uygulamalarını bilmek ve tartışabilmek",
+   "Çeşitli imge dönüşümlerini tasarlamak ve gerçeklemek: noktasal intensite dönüşümleri, komşuluk operasyonuna bağlı uzaysal dönüşümler; geometrik (koordinat) dönüşümleri gibi.",
+   "2-boyutlu veya daha yüksek boyutlu verilerde Bölütleme, Öznitelik Çıkarma,Görsel hareket kestirimi algoritmalarını tanımlamak, oluşturmak ve kullanarak imge verilerinden ilgili bilgilerin çıkarımını yapabilmek",
+   "Bilgisayarla görü problemlerine en az kareler yöntemiyle çözümler sunabilmek",
+   "Yüksek boyutlu verilerde boyut indirgeme prensibini açıklamak ve veri işlemede nasıl kullanıldığını bilmek ve uygulamak",
+   "Makine Öğrenme ve Derin Öğrenme tabanlı yaklaşımların Bilgisayarla Görü problemlerine uygulamasını yapmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Görüntü Filtreleme & Konvolüsyonlar",
+   "Hafta 3 — Kenar Algılama",
+   "Hafta 4 — Köşe Algılama",
+   "Hafta 5 — Uydurma (RANSAC)",
+   "Hafta 6 — Uydurma (Hough) II",
+   "Hafta 7 — Özellik Belirleyiciler ve Tanımlayıcılar (Keypoints)",
+   "Hafta 8 — Özellik Belirleyiciler ve Tanımlayıcılar (SIFT) II",
+   "Hafta 9 — Görüntü Sınıflandırma I",
+   "Hafta 10 — Görüntü Sınıflandırma (BoW) II",
+   "Hafta 11 — 2B Dönüşümler",
+   "Hafta 12 — Görüntü Homografileri",
+   "Hafta 13 — Kamera",
+   "Hafta 14 — Proje Sunumları"
+  ],
+  "textbooks": [
+   "Forsyth & Ponce, Bilgisayarlı Görüntü: Modern Bir Yaklaşım"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=416",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 425E": {
+  "code": "YZV 425E",
+  "name": "Bilgi Sistemleri için Mühendislik Sanatı",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Ders, bio-mühendisliğin tasarım düzeyinde gerekli yaratıcı özünü sanat ve bilim felsefesi kuramları eşliğinde ve gerekli bilgi, beceri ve yeterlilik bağlamında irdeler. Bu çerçevede, felsefi ve tarihsel bağlamda sanat ve mühendislik ilişkisi, felsefi ve sanatsal açıdan doğal ve yapay yapıların incelenmesi, mühendislik tasarımında esin kaynağı olarak doğa çözümlemeleri, sanat ve tasarımda kuram kılgı bağıntısı, mühendisliğin disiplinlerarası doğası, tasarımda çok boyutluluk ve bütünlük öncelikle ele alınacaktır. Accompanied by philosophy of art and science, the course investigates the creative essence of bio-engineering on a design level in order to provide the necessary knowledge, skills and competence. Within that context, historical relationship of art and engineering, visual investigation of natural objects and artifacts in art as well as their conceptual status in philosophy, analysis of nature as an inspirational source of design in engineering, relation of theory and practice in art and design, interdisciplinary nature of engineering and finally multi-dimensionality and wholeness as the basic concepts for design will be investigated thoroughly.",
+  "outcomes": [
+   "Mesleki çalışmalarında sanat ve felsefe alanından edindiği bilgi ve becerileri kullanır",
+   "Sanat, tasarım ve felsefe alanında temel kavramları ayırt eder ve tanır",
+   "Sanat, bilim ve felsefe ara kesitinde çığır açan şahsiyetleri ve düşüncelerini tanır. (Platon, Vitruvius, Leonardo Da Vinci, Dürer, El Cezeri, Sinan, Kant, Russel, Wittgenstein, Heidegger, İlhan Koman, Turgut Cansever)",
+   "Sanat ve tasarımda kullanılan temel görsel not alma, analiz, ifade yöntem ve tekniklerini tanır ve geliştirir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Dersin tanıtımı ve söyleşi",
+   "Hafta 2 — Sanat, bilim ve felsefe arakesitinden kısa tarihsel perspektif",
+   "Hafta 3 — Görsel not alma ve analiz",
+   "Hafta 4 — Görsel ifade yöntem ve teknikleri",
+   "Hafta 5 — Doğadaki bir nesnenin yapısal analizi üzerinden bağımsız bir tasarım geliştirme I",
+   "Hafta 6 — Doğadaki bir nesnenin yapısal analizi üzerinden bağımsız bir tasarım geliştirme II",
+   "Hafta 7 — Mesleki vizyon atölyesi",
+   "Hafta 8 — Konferans (Bilim Sanat İlişkisi I)",
+   "Hafta 9 — Konferans (Bilim Sanat İlişkisi II)",
+   "Hafta 10 — Görsel/İşitsel Kayıt Atölye Çalışması (Fotoğraf, video, eskiz ve yazılı sesli notlar)",
+   "Hafta 11 — Dönem araştırma projesi",
+   "Hafta 12 — Dönem araştırma projesi",
+   "Hafta 13 — Dönem araştırma projesi",
+   "Hafta 14 — Dönem araştırma projesi"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=425",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 445E": {
+  "code": "YZV 445E",
+  "name": "Yapay Zeka Projesi",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Her öğrenci grubu, bu ders kapsamında, konsept halindeki projeyi tasarlar, gerçekler ve test eder. Takımın proje gerçekleme aşamasında teknolojiyle ilgili zorlukları çözmesi ve tamamlanmış bir tasarım yaratmaları beklenir. Yazılı teknik raporlar ve sözlü sunumlar gereklidir. In this course, each student team works on a design project from conception through implementation and testing. The team is expected to explore technology related issues over the project, comes up with a solution followed with a complete design. Written technical reports and oral representations are required.",
+  "outcomes": [
+   "Proje gereksinimlerini belirleme ve yazma",
+   "Proje kaynaklarını verimli kullanma",
+   "Ortak amaçları gerçekleştirmek için takımın bir parçası olma",
+   "Başarılı bir proje tasarımı ve gerçeklemesi için gerekli araştırmanın yapılması",
+   "AI projesinin bileşenlerinin tasarımı ve gerçeklenmesi",
+   "Sistemin test edilmesi ve ona göre ayarlanması",
+   "Proje durum raporu hazırlanması",
+   "Teknik içerik ve proje durumunun sunulması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Proje 1’in tanıtımı ve başlaması",
+   "Hafta 2 — Gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+   "Hafta 3 — Final raporu teslimi, gerçekleşmiş yapay zeka projesi teslimi, Proje 2’nin tanıtımı ve başlaması",
+   "Hafta 4 — Proje 1’in sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+   "Hafta 5 — Gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+   "Hafta 6 — Final raporu teslimi, gerçekleşmiş yapay zeka projesi teslimi, Proje 3’ün tanıtımı ve başlaması",
+   "Hafta 7 — Proje 2’nin sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+   "Hafta 8 — Gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+   "Hafta 9 — Final raporu teslimi, gerçekleşmiş yapay zeka projesi teslimi, Proje 4’ün tanıtımı ve başlaması",
+   "Hafta 10 — Proje 3’ün sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+   "Hafta 11 — Gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+   "Hafta 12 — Final raporu teslimi, gerçekleşmiş yapay zeka projesi teslimi, Proje 5’in tanıtımı ve başlaması",
+   "Hafta 13 — Proje 4’ün sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+   "Hafta 14 — Proje 5’in sunumu, Soru&Cevap oturumu"
+  ],
+  "textbooks": [
+   "Interpretable Machine Learning, Christoph Molnar (2019)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=445",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 447E": {
+  "code": "YZV 447E",
+  "name": "Cognitive Neuroscience",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Derste insan beyninin işlevselliği, yapılanması ve üst düzey bağlantı şemaları tanıtılmaktadır. Beynin üstlendiği görevlerin bazıları (ör. Görme, lisan, bellek) için geliştirilmiş olan yapay sinir ağı ve derin öğrenme modelleri ile karşılaştırmalar yapılmaktadır. Ayrıca beynin işlevleriyle ilgili uygulama alanlarında (ör. Beyin-makine arayüzü, nöropsikoloji) kullanılan makine öğrenmesi teknikleriyle beraber yapay sinir ağlarının performansı da incelenmektedir. In this course, the structure of the functional building blocks of the human brain is introduced, as well as their high level connectivity. Comparisons are made between these (eg. vision, language, memory) and their models based on artificial neural nets and deep learning. Furthermore the performance of artificial neural nets and machine learning techniques used in application areas on brain function (eg. Brain computer interface, neuropsychology) are investigated.",
+  "outcomes": [
+   "Doğal ve yapay nöron ağların bilimsel platformdaki rolünü objektif olarak değerlendirebilir",
+   "Insan beynindeki temel bölgeleri ve işlevlerini bilir",
+   "Beynin çalışma prensiplerine öykünen yapay nöron ağlarını ve parçalarını tanımlayabilir",
+   "Yapay nöral ağlarla insan beynini tanımaya ya da taklit etmeye yönelik uygulamaları öğrenmiştir",
+   "Beyni tanımak veya taklit etmeye niyetlenen girişimleri etik açıdan sorgulayabilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş: Bilişsel nörobilim, işlemci gücü, yapay nöral ağların tarihsel karşılaştırması",
+   "Hafta 2 — Giriş:Uzun süreli potansiyaller ve Hebb öğrenmesi, korteksin yapısı",
+   "Hafta 3 — Primer görsel korteks, üst kademeler, LOC, perseptron, konvolusyonel nöral ağlar",
+   "Hafta 4 — Medyal Temporal Lob örüntüleri, nesne tanıma, özellesmis alanlar: fusiform",
+   "Hafta 5 — Uzun süreli bellek, anılar, sahte anılar, bellek kaybı",
+   "Hafta 6 — Prosedürel bellek, kısa süreli bellek, LSTM ağları",
+   "Hafta 7 — Ayna nöronları, dikotomi, lisan ve tekrarlı nöral ağlar",
+   "Hafta 8 — Prefrontal korteks, paryetal korteks, motor ve somatosensoriyel sistemler",
+   "Hafta 9 — Dikkatin türleri, Küresel çalışma alanı, Dönüştürücü, Yayılımcı ağ yapıları",
+   "Hafta 10 — Özelleşmiş ağ bağlantıları (örn. belirginlik, yürütme, ruh hali, dinlenme durumu )",
+   "Hafta 11 — Uygulamalar: Beyin-makine arayüzleri",
+   "Hafta 12 — Uygulamalar: Duygusal etkileşim, otonom sinir sistemi",
+   "Hafta 13 — Uygulamalar: Psikiyatri ve nöropsikoloji",
+   "Hafta 14 — Etik hususlar ve geleceğe yönelik açılımlar (örn. Sensör süreçleri, açıklanabilir yapay zeka)"
+  ],
+  "textbooks": [
+   "The Student’s Guide to Cognitive Neuroscience, Jamie Ward, Ed 4, Routledge, 2020"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=447",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 448E": {
+  "code": "YZV 448E",
+  "name": "Makina Öğrenmesi Sistemlerinin Geliştirilmesi ve İşletilmesi (MLOps)",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Bu ders, yapay öğrenme projelerinin geliştirilmesi, dağıtımı, izlenmesi ve bakımı konularına odaklanır. Öğrenciler, model tasarımı, veri hazırlığı, izleme araçları ve sürüm kontrolü gibi MLOps süreçlerini öğrenirken, bulut teknolojilerinin bu süreçlerdeki rolünü de keşfedeceklerdir. Ayrıca, MLOps araçları, güvenlik ve endüstri uygulamaları hakkında bilgi edinerek, gerçek dünya senaryolarına yönelik pratik çözümler geliştireceklerdir This course focuses on the development, deployment, monitoring, and maintenance of machine learning projects. Students will learn about MLOps processes such as model design, data preparation, monitoring tools, and version control, while also exploring the role of cloud technologies in these processes. Additionally, they will gain knowledge about MLOps tools, security, and industry applications, and develop practical solutions for real-world scenarios.",
+  "outcomes": [
+   "Bulut Bilişim, DevOps ve Makine Öğrenimi Servislerini Öğrenme ve Kullanma",
+   "MLOps Süreçlerini Tasarlama ve Yönetme",
+   "Makine Öğrenimi Çözümlerinde Güvenlik, Otomasyon ve Optimizasyon",
+   "Model İzleme ve Operasyonel Yönetim"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — MLOps'a Giriş MLOps’a genel bakış, hedefler, zorluklar, endüstrideki önemi, bir ML projesinin yaşam döngüsü",
+   "Hafta 2 — Sürüm Kontrolü ve Birlikte Çalışma Sürüm kontrolünün temelleri, sürüm kontrolü ile ML projelerinin yönetilmesi",
+   "Hafta 3 — Bulut Bilişim Temelleri",
+   "Hafta 4 — MLOps’da Veri Yönetimi Veri sürümlendirme ve tekrar edilebilirlik, büyük veri kümelerini ve zamansal veri değişimlerini yönetme",
+   "Hafta 5 — Model Geliştirme ve Deney Yapma Model eğitimi ve testi için en iyi uygulamalar, deney izleme ve loglama",
+   "Hafta 6 — Otomasyon ve ML için CI/CD Sürekli Entegrasyon/Sürekli Canlıya Alma temelleri, akışların otomatikleştirilmesi",
+   "Hafta 7 — Model Canlıya Alma Stratejileri Canlıya alma seçenekleri, canlı ortam platformları",
+   "Hafta 8 — Modellerle Hizmet Verme ve Modelleri İzleme ML Modelleri için ölçeklendirme ve yük dengeleme, model başarımını izleme, sorunları sezme",
+   "Hafta 9 — İleri Düzey Canlıya Alma Teknikleri Sınırlı kullanıcı için canlıya alma, A/B testleri, multi-modal ve çok kiracılı hizmet verme",
+   "Hafta 10 — Canlıda ML Tekrar eğitim iş hatları, otomatik tekrar eğitim sistemleri",
+   "Hafta 11 — MLOps’ta Güvenlik ML sistemlerini ve çalışma hatlarının güvenliğini sağlamak, kişisel veri gizliliği ve uyumluluk, ML modellerinde açıklanabilirlik ve adillik",
+   "Hafta 12 — MLOps’ta Ölçeklendirme Büyük ölçekli ML modelleri için ölçeklendirme altyapıları, dağıtık eğitim ve hizmet",
+   "Hafta 13 — Güncel Konular ve Vaka Çalışmaları AutoML, federe öğrenme, endüstriden vaka örnekleri",
+   "Hafta 14 — Proje Sunumları ve Gözden Geçirme"
+  ],
+  "textbooks": [
+   "Introducing MLOps, Mark Treveil, Nicolas Omount, Clement Stenac, Kendi Lefecre, Du Phan, Joachim Zentici, Adrien Lavoilotte, Makoto Miyazaki, Lynn Heidmann (2021). O’Reilly Publishing, ISBN: 978-1492083290",
+   "Engineering MLOps, Emmanuel Raj (2021). Packt Publishing, ISBN: 978-1800562882"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=448",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 449E": {
+  "code": "YZV 449E",
+  "name": "Derin Üretici Yapay Zeka",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Özbağlanımlı (Otoregresif) Modeller, Maksimum Olabilirlik ile Öğrenme, Gizli Değişkenli Modeller, Kendinden Denetimli Öğrenme, Temsil Öğrenimi, Akış Modelleri, Üretici Çekişmeli Ağlar, Örtük Modeller, Enerji Tabanlı Modeller, Skor Tabanlı Modeller, Difüzyon Modelleri, Üretici Modellerin Değerlendirilmesi, İleri Düzey Konular, Uygulamalar. Autoregressive models, Maximum Likelihood Learning, Latent Variable Models, Self-supervised Learning, Representation Learning, Flow Models, Generative Adversarial Networks, Implicit Models, Energy Based Models, Score Based Models, Diffusion Models, Evaluation of Generative Models, Advanced Topics, Applications.",
+  "outcomes": [
+   "Derin üretici öğrenmenin temel problemlerini, uygulama alanlarını ve başlıca tekniklerini bilmek ve tartışabilmek.",
+   "Olasılık modelleme, ortak olasılık dağılımları ve varyasyonel çıkarım yöntemleri dâhil olmak üzere, derin üretici öğrenmede gerekli matematiksel araçları tanımlamak ve uygulamak.",
+   "Derin üretici sinir ağlarının ve kendinden denetimli öğrenme boru hatlarının eğitimi için gerekli yöntemleri tasarlamak, uygulamak ve değerlendirmek.",
+   "Üretici, denetimsiz ve kendinden denetimli öğrenme modelleri için uygun matematiksel formülasyonları ve çözüm tekniklerini bilmek, karşılaştırmak ve uygulamak.",
+   "Üretici öğrenme modellerinin bilgisayar ortamındaki gerçekleştirimlerini uygulamak ve sistematik deneysel değerlendirme yoluyla doğrulamak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve Derin Öğrenme Temellerinin gözden geçirilmesi",
+   "Hafta 2 — Özbağlanımlı (Otoregresif) Modeller",
+   "Hafta 3 — Maksimum Olabilirlik ile Öğrenme",
+   "Hafta 4 — Gizli Değişkenli Modeller",
+   "Hafta 5 — Kendinden Denetimli Öğrenme",
+   "Hafta 6 — Temsil Öğrenimi",
+   "Hafta 7 — Akış modelleri",
+   "Hafta 8 — Üretici Çekişmeli Ağlar / Örtük Modeller",
+   "Hafta 9 — Enerji Tabanlı Modeller",
+   "Hafta 10 — Skor Tabanlı Modeller",
+   "Hafta 11 — Difüzyon Modelleri",
+   "Hafta 12 — Üretici Modellerin Değerlendirilmesi",
+   "Hafta 13 — İleri düzey konular",
+   "Hafta 14 — Üretici Yapay Zeka Uygulamalar"
+  ],
+  "textbooks": [
+   "Understanding Deep Learning, Simon J.D. Prince, MIT Press, 2023"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=449",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 475E": {
+  "code": "YZV 475E",
+  "name": "Veri Görselleştirme",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Bu ders, veri biliminde öğrenilen veri tipleri ve daha karmaşık veri yapıları üzerinde kullanılabilecek veri görselleştirme tekniklerini öğretir. This course covers data visualization techniques from simple linear data forms to more complex, multi-dimensional data representations, and aims to improve the knowledge on analyzing and interpreting data that are taught in introductory data science courses.",
+  "outcomes": [
+   "Veriyi okuma ve görselleştirmeye uygun dönüşümleri yapma",
+   "Veriyi görselleştirmeye uygun olarak gruplama, filtreleme ve sıralama",
+   "Veriye uygun görselleştirme tekniklerini belirleme",
+   "Verideki ilişkileri görselleştirme ve bir probleme uygun çözümü üretme",
+   "Karmaşık ve çok boyutlu veri tiplerine uygun görselleştirme tekniklerini uygulama",
+   "İnteraktif veri görselleştirme becerilerini kazanır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri görselleştirme temelleri ve hikaye anlatımı konsepti",
+   "Hafta 2 — Verinin dönüştürülmesi, veri kalitesi ve veri görselleştirmesi için filtreleme",
+   "Hafta 3 — Tek veya iki boyutlu verinin görselleştirilmesi: histogramlar, çubuk grafikleri, yoğunluk grafikleri ve dağılımlar",
+   "Hafta 4 — Doğrusal görselleştirme: histogram, bar, yoğunluk, dağılım grafikleri",
+   "Hafta 5 — Birçok Dağılımı aynı anda görselleştirme",
+   "Hafta 6 — Çok boyutlu veride gruplama ve kümeleme",
+   "Hafta 7 — İnteraktif veri görselleştirme",
+   "Hafta 8 — Veri panosunda görselleştirme",
+   "Hafta 9 — Hiyerarşik veride görselleştirme",
+   "Hafta 10 — Coğrafi mekansal veride görselleştirme",
+   "Hafta 11 — Zamana bağlı veride görselleştirme",
+   "Hafta 12 — Ağlar için görselleştirme",
+   "Hafta 13 — Öğrenci proje sunumları ve geri bildirimler I",
+   "Hafta 14 — Öğrenci proje sunumları ve geri bildirimler II"
+  ],
+  "textbooks": [
+   "Bilgi Görselleştirme: Giriş, R. Spence, Üçüncü Baskı, Springer. Veri Görselleştirmenin Temelleri: Bilgilendirici ve Etkileyici Şekiller Oluşturmaya Giriş, C. Wilke, Amazon O'Reilly, 2019"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=475",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 4901E": {
+  "code": "YZV 4901E",
+  "name": "Yapay Zeka ve Veri Mühendisliği Tasarımı I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 4,
+   "lab": 0,
+   "local": 3,
+   "ects": 8
+  },
+  "description": "Bu ders, Yapay zeka ve Veri mühendisliği lisans öğrencilerinin zorunlu olarak tamamlaması gereken iki dönemlik Mühendislik Tasarım dersinin ilk aşamasıdır. Bu ders kapsamında öğrenci danışmanın gözetiminde, tasarım projesinde çalışacağı karmaşık mühendislik problemi hakkında kapsamlı bir literatür araştırması yapar, problemin gerçekçi kısıtlarını belirler, ilgili mühendislik standartlarını göz önüne alarak çözümün isterlerini tarif eder. Öğrenci dönem sonunda sunduğu raporda problemin kapsamı, tasarım kısıtları, ilgili literatür, ilgili mühendislik standartları, uygun çözümler, muhtemel riskleri tarif eder. Bu kapsamda öğrenciler tek veya grup olarak çalışabilir. Danışman veya öğrenci tarafından önerilen tasarıma konu olan mühendislik probleminin yapay zeka ve veri mühendisliği alanında çok disiplinli olması ve birden fazla tasarım kısıtı içermesi gerekmektedir. This course is the first phase of the two-semester Engineering Design course that Artificial Intelligence and Data Engineering undergraduate students must complete. Within the scope of this course, the student, under the supervision of the advisor, conducts a comprehensive literature research on the complex engineering problem he will work on in the design project, determines the realistic constraints of the problem, and describes the requirements of the solution, taking into account the relevant engineering standards. In the report submitted at the end of the semester, the student describes the scope of the problem, design constraints, relevant literature, relevant engineering standards, appropriate solutions and possible risks. In this context, students can work individually or in groups. The engineering problem that is the subject of the design proposed by the consultant or student must be multidisciplinary in the field of artificial intelligence and data engineering and contain more than one design constraint.",
+  "outcomes": [
+   "Bir mühendislik probleminin çözümü için geniş literatür çalışması yapabilme becerisi",
+   "Bir mühendislik problemini tanımlama ve formüle etme becerisi",
+   "Bir problemin çözümü için tasarım kısıtların belirlenme becerisi",
+   "Bir mühendislik problemininin çözümlenmesi için kullanılacak gerekli mühendislik bilgilerini, standartlarını ve proje isterlerini belirleme becerisi",
+   "Bir mühendislik probleminin çözümünün zaman ve iş planını yapabilme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Proje danışmanı öğrenciyle toplantılar düzenler.",
+   "Hafta 2 — Danışmanla toplantı.",
+   "Hafta 3 — Danışmanla toplantı.",
+   "Hafta 4 — Danışmanla toplantı.",
+   "Hafta 5 — Danışmanla toplantı.",
+   "Hafta 6 — Danışmanla toplantı.",
+   "Hafta 7 — Danışmanla toplantı.",
+   "Hafta 8 — Danışmanla toplantı.",
+   "Hafta 9 — Danışmanla toplantı.",
+   "Hafta 10 — Danışmanla toplantı.",
+   "Hafta 11 — Danışmanla toplantı.",
+   "Hafta 12 — Danışmanla toplantı.",
+   "Hafta 13 — Danışmanla toplantı.",
+   "Hafta 14 — Danışmanla toplantı."
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=4901",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 4902E": {
+  "code": "YZV 4902E",
+  "name": "Yapay Zeka ve Veri Mühendisliği Tasarımı II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 8,
+   "lab": 0,
+   "local": 5,
+   "ects": 12
+  },
+  "description": "Bu ders bir proje tasarımı içerir. Proje için 2 veya 3 kişilik gruplar oluşturulabilir. Tasarlanacak proje yazılım veya donanım projesi olabilir. Ders, proje seçiminden, projenin bitirilmesi ve sunulmasına kadar geçen süreci kapsar. Bu ders öğrencilerin eğitimleri boyunca öğrendiklerini kullanmalarını sağlar. This non-lecture course contains a design project. Two or three people groups can be formed for the project. The design project which can be a software or a hardware project should contain all the phases starting with project selection to project completion by giving a presentation. The course leads the students to use the knowledge they gained during their education in the department.",
+  "outcomes": [
+   "İhtiyaçları karşılayacak bir sistem, işlem veya bir bileşeni tasarlama becerisi",
+   "Mühendislik problemi tanımlama, formüle etme ve çözme becerisi",
+   "Modern mühendislik araçlarını ve gerekli teknik mühendislik becerilerini uygulama becerisi",
+   "Verimli iletişim becerisi",
+   "Detaylı proje raporu üretme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Proje danışmanı öğrenciyle toplantılar düzenler.",
+   "Hafta 2 — Danışmanla toplantı.",
+   "Hafta 3 — Danışmanla toplantı.",
+   "Hafta 4 — Danışmanla toplantı.",
+   "Hafta 5 — Danışmanla toplantı.",
+   "Hafta 6 — Danışmanla toplantı.",
+   "Hafta 7 — Danışmanla toplantı.",
+   "Hafta 8 — Danışmanla toplantı.",
+   "Hafta 9 — Danışmanla toplantı.",
+   "Hafta 10 — Danışmanla toplantı.",
+   "Hafta 11 — Danışmanla toplantı.",
+   "Hafta 12 — Danışmanla toplantı.",
+   "Hafta 13 — Danışmanla toplantı.",
+   "Hafta 14 — Danışmanla toplantı."
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=4902",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YZV 495E": {
+  "code": "YZV 495E",
+  "name": "Konuşma ve Ses İşleme",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Bu ders konuşma ve duymaya bir giriş yaparak, konuşma ve sesin sayısal temsillerinin yüksek seviye programlama dilleri (Python veya MATLAB) ile nasıl işlenebileceğine odaklanır. İşleme ve analiz teknikleri, ve seçilmiş konuşma ve ses problemlerine uygulamaları incelenecektir. Bu dersin uygulama ve pratik odaklı bir yaklaşımı vardır. This course provides an introduction to speech and hearing and focuses on how digital representations of speech and audio can be processed using high level programming languages (such as Python, or MATLAB). Processing and analysis techniques and their application to a selection of introductory speech and audio problems will be explored. This course has an application focused, hands-on approach.",
+  "outcomes": [
+   "Konuşma ve ses sinyallerini ve özniteliklerini analiz edebilir.",
+   "Konuşma tanıma ve konuşma sentezi için yapay-zeka temelli modeller yaratabilir.",
+   "Konuşma tanıma için CTC yöntemini kullanabilir.",
+   "Yapay-zeka modelleriyle konuşma ve ses sinyalindeki gürültüyü temizleme algoritmaları yaratabilir.",
+   "Konuşma ve ses örnekleri üzerinde üçüncü parti yazılım kütüphaneleri kullanarak deneyler yapacak programlar yaratabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ayrık Fourier Dönüşümü (DFT), büyüklük ve faz spektrumları",
+   "Hafta 2 — STFT ve spektrogram analizi ile ses özelliklerine giriş",
+   "Hafta 3 — Duyma, ses sınıfları ve mel-spektrogram",
+   "Hafta 4 — Nöral kodekler kullanarak mel-spektrogram ile ses üretimi",
+   "Hafta 5 — LPC analizi ile konuşma sinyalinin modellenmesi",
+   "Hafta 6 — LPC sentezi ile konuşma sinyali üretimi",
+   "Hafta 7 — RNN kullanarak sesten gürültü temizlenmesi",
+   "Hafta 8 — İleri AI modelleri kullanarak sesten gürültü temizlenmesi",
+   "Hafta 9 — Wav2vec yapısı kullanılarak akustik modelleme",
+   "Hafta 10 — CTC decoder ile wav2vec model çıktılarının çözümlenmesi",
+   "Hafta 11 — Whisper yapısı kullanılarak akustik modelleme",
+   "Hafta 12 — Whisper yapısının hedef alan için yeni verilerle eğitilmesi",
+   "Hafta 13 — CTC çözümleyici ile Whisper model çıktılarının çözümlenmesi",
+   "Hafta 14 — N-best yönteminin ve n-gram dil modellerinin CTC çözümleyiciler ile kullanılması"
+  ],
+  "textbooks": [
+   "Konuşma ve Ses Sinyali İşleme: Konuşma ve Müziğin İşlenmesi ve Algılanması. Ben Gold, Nelson Morgan. John Wiley ve Oğulları. 2011"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=495",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

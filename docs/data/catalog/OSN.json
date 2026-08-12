@@ -1,0 +1,87 @@
+{
+ "OSN 421E": {
+  "code": "OSN 421E",
+  "name": "Deniz İzleme Teknikleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Deniz ortamında fiziksel, kimyasal ve kirletici parametrelerin izlenmesine yönelik temel bilgilerin verilmesi. Farklı parametre grupları için örnekleme stratejileri, analitik yöntemler, veri analizi, kalite kontrol süreçleri, ulusal ve uluslararası izleme yaklaşımlarının karşılaştırılması. Introduction to the monitoring of physical, chemical, and pollutant parameters in the marine environment. Sampling strategies, analytical techniques, data processing, quality assurance methods for different parameter groups. Comparative overview of national and international monitoring frameworks.",
+  "outcomes": [
+   "Farklı izleme parametrelerini sınıflandırabilir",
+   "Fiziksel, kimyasal ve kirletici parametreler için örnekleme tekniklerini tanımlar",
+   "İzleme yöntemlerini bilimsel kaynaklar ışığında karşılaştırabilir",
+   "Kalite kontrol ve veri analiz süreçlerini uygulayabilir",
+   "Ulusal ve uluslararası izleme yaklaşımlarını tanır ve analiz eder",
+   "Çevresel raporlama için izleme verilerini kullanabilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve temel kavramlar",
+   "Hafta 2 — Fiziksel parametreler ve ölçüm yöntemleri",
+   "Hafta 3 — Kimyasal parametreler ve ölçüm yöntemleri",
+   "Hafta 4 — Kirletici grupları ve izleme yöntemleri",
+   "Hafta 5 — Pasif örnekleme yöntemi",
+   "Hafta 6 — Örnekleme stratejileri",
+   "Hafta 7 — Örnekleme yöntemlerinin karşılaştırılması",
+   "Hafta 8 — Kalite kontrol teknikleri",
+   "Hafta 9 — İzleme verilerinin analizi",
+   "Hafta 10 — Ulusal izleme programları",
+   "Hafta 11 — Uluslararası izleme yaklaşımları",
+   "Hafta 12 — Vaka Analizleri",
+   "Hafta 13 — İzleme verilerinin raporlanması",
+   "Hafta 14 — İzleme verilerine dayalı karar alma mekanizmaları"
+  ],
+  "textbooks": [
+   "Li, D., & Liu, S. (2018). Water quality monitoring and management: Basis, technology and case studies. Academic Press.",
+   "Ahuja, S. (Ed.). (2013). Monitoring water quality: Pollution assessment, analysis, and remediation. Newnes."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=OSN&dersNo=421",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "OSN 441E": {
+  "code": "OSN 441E",
+  "name": "Okyanus Modellemeye Giriş",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Bu ders, sayısal okyanus modellemesinin ilke ve uygulamalarına yönelik uygulamalı bir giriş sunmaktadır. Öğrenciler, okyanus sirkülasyonunu yöneten temel fizik kurallarını, dönme ve tabakalaşmanın etkileri de dahil olmak üzere öğreneceklerdir. Açık kaynaklı yazılımlar kullanarak adım adım bir yaklaşımla, öğrenciler dalgalar, gelgitler ve rüzgar kaynaklı akıntılar gibi süreçleri simüle etmek için basit modeller oluşturup çalıştıracaklardır. Dersin ikinci yarısında, daha karmaşık ve gerçekçi oşinografik problemleri keşfetmek amacıyla öğrencilere son teknoloji ürünü bölgesel ve küresel okyanus modelleri (örn. ROMS, Oceananigans) tanıtılacaktır. This course provides a hands-on introduction to the principles and practices of numerical ocean modeling. Students will learn the fundamental physics governing ocean circulation, including the effects of rotation and stratification. Using a step-by-step approach with open-source software, students will build and run a series of simple models to simulate processes like waves, tides, and wind-driven flows. The latter part of the course introduces students to state-of-the-art regional and global ocean models (e.g., ROMS, Oceananigans) to explore more complex, realistic oceanographic problems.",
+  "outcomes": [
+   "Jeofiziksel akışkanlar dinamiği modellerinin temelini oluşturan temel korunum ilkelerini (momentum, kütle, enerji) açıklayabilme.",
+   "Basit fiziksel problemleri çözmek için sayısal şemaları (örn. sonlu farklar, zaman adımlama) bir programlama dilinde (FORTRAN) uygulayabilme.",
+   "Eylemsizlik salınımları, dalgalar ve rüzgar kaynaklı girdaplar (gyre) gibi temel okyanus süreçlerini simüle etmek için 1D ve 2D sığ su modelleri geliştirebilme ve çalıştırabilme.",
+   "Fiziksel dinamikleri yorumlamak için bilimsel yazılımlar (SciLab/Python) kullanarak model çıktılarını analiz edebilme ve görselleştirebilme.",
+   "Farklı modelleme yaklaşımlarındaki varsayımları, sınırlılıkları ve hata kaynaklarını (örn. sayısal kararlılık, difüzyon) eleştirel olarak değerlendirebilme.",
+   "Modern bir 3D Genel Dolaşım Modeli (GCM) kullanarak önceden yapılandırılmış bir vaka çalışmasını kurabilme, çalıştırabilme ve sonuçları yorumlayabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve Okyanus Modelleri",
+   "Hafta 2 — Sayısal Yöntemler: Sonlu Farklar",
+   "Hafta 3 — Jeofiziksel Akışkanlar Dinamiğinin Temelleri",
+   "Hafta 4 — Coriolis Kuvveti",
+   "Hafta 5 — 1B Kanalda Uzun Dalgaların Modellenmesi",
+   "Hafta 6 — Kıyısal Süreçler",
+   "Hafta 7 — Rüzgar Kaynaklı Akıntılar (2B)",
+   "Hafta 8 — Ara Sınav",
+   "Hafta 9 — Jeostrofik Akıntı ve Dönme Etkileri",
+   "Hafta 10 — Genel Okyanus Dolaşımı",
+   "Hafta 11 — 3B Okyanus Genel Dolaşım Modelleri",
+   "Hafta 12 — Vaka Çalışması: Açık Kaynak Modeller ile Kıyı Modellemesi",
+   "Hafta 13 — Vaka Çalışması: Oceananigans ile Süreç Modellemesi",
+   "Hafta 14 — Final Projesi Sunumları"
+  ],
+  "textbooks": [
+   "Kämpf, J. (2009). Ocean Modelling for Beginners: Using Open-Source Software. Springer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=OSN&dersNo=441",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

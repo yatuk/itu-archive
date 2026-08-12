@@ -1,0 +1,566 @@
+{
+ "JDM 501E": {
+  "code": "JDM 501E",
+  "name": "Geodynamics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yer küre – iç yapısı ve bileşimi; manto ile kabuk, astenosfer ile litosfer; isostazi kavramı , Levha tektoniği – prensipler ve istisnalar; Kıtasal ve okyanusal kabuk – oluşumu, yapısı, bileşimi ve evrimi; Kıtasal kabukta magmatizma ve magmatik süreçler; Okyanusal kabukta magmatizma ve magmatik süreçler; ofiyolit kavramı; Metamorfizma – tektonik ortamı, metamorfik fasiyesler; Metamorfik olaylar ve reyaksiyonlar; Magmatik ve metamorfik kayalarda izotopik yaş tayini;Jeolojik yapılar – kırılgan ve sünek; Genişlemeli tektonik ortamlar ve riftleşme – deformasyon, magmatizma ve metamorfizma; Dalma-batma – deformasyon, eklenir prizmalar, metamorfizma ve magmatizma; Büyük yanal atımlı faylar – deformasyon ve havza oluşumu; Orojeni – zaman,deformasyon, metamorfizma ve magmatizma. Earth – internal structure and composition; mantle and crust versus astenosphere and lithosphere; the conceptof isostasy; Plate tectonics – principles and exceptions; Continental and oceanic crust – formation, structure, composition and evolution; Magmatism and magmatic processes in the continental crust; Magmatism and magmatic processes in the oceanic crust; ophiolite concept; Metamorphism – tectonic setting, metamorphic facies; Metamorphic processes and reactions; Isotopic dating of magmatic and metamorphic rocks; Geological structures – brittle and ductile; Extensional tectonics and rifting – deformation, magmatism and metamorphism;Subduction – deformation, accretionary complexes, metamorphism and magmatism; Large strike-slip faults – structures and basin formation; Orogeny – time, deformation, metamorphism and magmatism.",
+  "outcomes": [
+   "Litosferin davranış mekanizmasını",
+   "Magmatizmanın oluşum ortamı, çeşitliliği, tektonik ortam ile olan ilişkisini",
+   "Metamorfizmanın oluşum ortamı, metamorfik fasiyeslerin nasıl tanımlandığı ve neyi ifade ettiği, metamorfizmanın tektonik ortamlarını",
+   "Jeolojik yapıların çeşitliliğini, ve hangi tür ortamlarda oluştuğu",
+   "Genişlemeli ve sıkışmalı tektonik ortamlarda meydana gelen yapıları, magmatizma ve metamorfizmayı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yer küre – iç yapısı ve bileşimi; manto ile kabuk, astenosfer ile litosfer; isostazi kavramı",
+   "Hafta 2 — Levha tektoniği – prensipler ve istisnalar",
+   "Hafta 3 — Kıtasal ve okyanusal kabuk – oluşumu, yapısı, bileşimi ve evrimi",
+   "Hafta 4 — Kıtasal kabukta magmatizma ve magmatik süreçler",
+   "Hafta 5 — Okyanusal kabukta magmatizma ve magmatik süreçler; ofiyolit kavramı",
+   "Hafta 6 — Metamorfizma – tektonik ortamı, metamorfik fasiyesler",
+   "Hafta 7 — Metamorfik olaylar ve reyaksiyonlar",
+   "Hafta 8 — Magmatik ve metamorfik kayalarda izotopik yaş tayini",
+   "Hafta 9 — Jeolojik yapılar – kırılgan ve sünek",
+   "Hafta 10 — Genişlemeli tektonik ortamlar ve riftleşme – deformasyon, magmatizma ve metamorfizma",
+   "Hafta 11 — Dalma-batma – deformasyon, eklenir prizmalar, metamorfizma ve magmatizma",
+   "Hafta 12 — Büyük yanal atımlı faylar – deformasyon ve havza oluşumu",
+   "Hafta 13 — Orojeni – zaman, deformasyon, metamorfizma ve magmatizma I",
+   "Hafta 14 — Orojeni – zaman, deformasyon, metamorfizma ve magmatizma II"
+  ],
+  "textbooks": [
+   "P. Kearey, K.A. Klepeis & F.J. Vine, 2009, Global Tectonic s. Wiley-Blackwell, 482 sayfa, ISBN 978-1-4051-0777-8.",
+   "Donald L. Turcotte & Gerald Schubert, 2014, Geodynamics, Cambridge University Press, 636 sayfa, ISBN: 9780521186230."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 502E": {
+  "code": "JDM 502E",
+  "name": "Earth Surface Processes",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Jeomorfolojinin temel prensipleri, ayrışma ve toprak oluşumu, akarsu, buzul, karst, kıyı süreçleri, yaşlandırma teknikleri Basic principles of geomorphology, weathering and soil production, fluvial, glacial, karstic and shoreline processes, dating techniques",
+  "outcomes": [
+   "Jeomorfolojinin temel prensipleri; İçsel süreçler ve iklimin ilişkisi",
+   "Fiziksel ayrışma ve kimyasal çözünme süreçleri;",
+   "Toprak oluşumu",
+   "Yamaç süreçleri ile bunların oluşturdukları yerşekilleri",
+   "Akarsu, yer şekilleri",
+   "Kıyı süreçleri ve yerşekilleri; kıyı çizgisi değişimleri, iklimsel ve tektonik etkileri",
+   "Buzul süreçleri",
+   "Periglasyal ve karst ortamları ve yerşekillerinin oluşum süreçleri;",
+   "Rüzgar süreçleri ile bunların oluşturdukları yerşekilleri",
+   "Karst süreçleri",
+   "Yer şekillerini tarihlendirme yöntemleri;"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Süreç bazlı jeomorfolojinin temel prensiplerine giriş",
+   "Hafta 2 — Ayrışma süreçleri ve yerşekilleri",
+   "Hafta 3 — Toprak oluşumu ve toprak tipleri",
+   "Hafta 4 — Yamaç süreçleri ve yerşekilleri",
+   "Hafta 5 — Akarsu Süreçleri ve Yerşekilleri",
+   "Hafta 6 — Kıyı Süreçleri ve Yerşekilleri",
+   "Hafta 7 — Buzul Süreçleri ve Yerşekilleri",
+   "Hafta 8 — Buzul çevresi Süreçler ve Yerşekilleri",
+   "Hafta 9 — Rüzgar süreçleri ve yer şekilleri",
+   "Hafta 10 — Karst süreçleri ve yer şekilleri",
+   "Hafta 11 — Akarsu kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri",
+   "Hafta 12 — Kıyı kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri",
+   "Hafta 13 — Buzul kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri",
+   "Hafta 14 — Rüzgar ve karst kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri"
+  ],
+  "textbooks": [
+   "Ritter, D.F., Kochel, R.C, Miller, JR., 2006, Process Geomorphology, Waveland Press, 560 pp.",
+   "Sharma, V.K., 2010, Introduction to Process Geomorphology, CRC press, 435 pp."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=502",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 558E": {
+  "code": "JDM 558E",
+  "name": "The Sea Floor",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Denizel Jeolojik tehlikeler, Denizel ve deniz tabanında oluşan süreçlerlerle koşullarının ve özelliklerinin değerlendirmesi, Yerel ve bölgesel mevcut yapıların değerlendirilmesi (denizaltı yapıları, ekosistemlerle alt yapı sistemlerinin faaliyetleri, iç ve dış süreçlerle ilgili etki edecek risklerin tanımlaması), doğal ve insan kaynaklı süreçler ile tetikleyecek kaynaklar ve faaliyetler zararlı sonuçlara dönüştürecek potansiyele sahip koşullarının analizi, jeolojik, jeofiziksel, jeomorfolojik, hidrolojik ve jeoteknik verileri tetikleyici-mekanizmalarla ilişkili senaryolarla tanımlanması. Special topics in Marine Geohazards, Marine geological processes at the seafloor that can affect environmental conditions at sea, on land, and in the atmosphere, risk analysis associated with these processes includes topics such as slope stability and submarine slides, fluids in the subsurface, earthquakes and tsunamis, the frequency of occurrence of natural events, in terms of geological, geophysical, geomophological, hydrological, geotechnical data and scenarios related to triggering mechanisms.",
+  "outcomes": [
+   "1. Denizel ve deniz tabanı koşullarının ve özelliklerinin değerlendirmesi",
+   "2. Yerel ve bölgesel mevcut yapıların değerlendirilmesi",
+   "3. İç ve dış süreçlerle ilgili etki edecek risklerin ve unsurların tanımlaması ve analizi",
+   "4. Örnek risk azaltma çalışmaları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Jeolojik tehlikeler",
+   "Hafta 2 — Deniz tabanı ve denizel ortamlar",
+   "Hafta 3 — Yerel ve bölgesel süreçler",
+   "Hafta 4 — Doğal süreçler ve alt yapı faaliyetleri",
+   "Hafta 5 — Afetler ve hasargörebilirlik",
+   "Hafta 6 — Tehlike ve risk",
+   "Hafta 7 — Tehlike ve risk analizi",
+   "Hafta 8 — Verilerin değerlendirilmesi",
+   "Hafta 9 — Akdenizde denizel tehlikeler",
+   "Hafta 10 — Hint Okyanusu",
+   "Hafta 11 — Japonya",
+   "Hafta 12 — Storegga Denizaltı heyelanı",
+   "Hafta 13 — Risk azaltma ve afet zararlarının yönetimi",
+   "Hafta 14 — Planlama ve örnek çalışmalar"
+  ],
+  "textbooks": [
+   "Okay N., Seasurges In: Encyclopedia of Disaster Relief by K.B. Penuel and M. Statler (Ed.), Thousand Oaks, CA: SAGE Publ. (2011).",
+   "Okay N., Coastal Geo-Hazards around the Mediterranean Sea and Disaster Risk Reduction In: CIESM No.42 Marine Geo-hazards, Mediterranean Case Studies (2011).",
+   "Cochonat P., Person R., Deep seafloor observatories: a new tool for monitoring geohazards, climate change, ecosystem life and evolution, In: Towards an Integrated System of Mediterranean Marine Observatories, CIESM Workshop Monographs, La Spezia, 16-19 Jan 2008, p. 43-52 (2008).",
+   "Sakellariou D., Lykousis V., 2003. Impact of geological processes and hazards on the Aegean civilizations in prehistorical and ancient time. In: Human Records of recent geological evolution in the Mediterranean, Santorini, 22-25 October 2003. CIESM Workshop Monographs, n. 24, p. 85-91 (2003)."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=558",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 566E": {
+  "code": "JDM 566E",
+  "name": "Earthquake Geology",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Depremlerin dağılımı ve Levha tektoniği, Kayaların deformasyonu ve yapısı, Deprem kaynak bölgelerinin jeolojisi, Sismik dalgalar, Sismik dalga, fay yönü ve atım türü arasındaki ilişkiler, Deprem ölçekleri, Tektonik jeodezi, Yerinde gerilme ölçümleri, Kuvaterner zaman ölçeği ve tarihlendirme teknikleri, Tektonik jeomorfoloji, Doğrultu atımlı faylar ve deprem, Normal faylar ve deprem, Ters faylar ve kıvrımlar ve deprem, Dalma-Batma zonları ve deprem, Depremlerde zemin ve kaya davranışı, Deprem tetiklemesi ile gelişen ikincil etkiler (Heyelanlar ve Tsunami, Sıvılaşma) Deterministik ve Probabilisitik yöntemlerle sismik tehlike analizi, Depremlerin önceden belirlenmesi Distribution of earthquakes and Plate Tectonics, Deformation and structure of rocks, Geology of earthquake source regions, Seismic waves, The relationships between seismic waves and fault direction and offset, Scales of earthquakes, Tectonic geodesy, In-situ stress measurements, Quaternary time scale and aging techniques, Strike-slip faults and earthquakes, Thrust faults, folds and earthquakes, Normal and earthquakes, Subduction zones and earthquakes, Behavior of soils and rocks during earthquakes, Earthquake triggered secondary effects (Landslides, Tsunamis and Liquefaction), Seismic risk assessment by using probabilistic and deterministic methods, Earthquake prediction",
+  "outcomes": [
+   "Deprem nedir, nasıl oluşur.",
+   "Deprem üreten fayların özellikleri .",
+   "Deprem dalgaları ve etkileri.",
+   "Deprem riski ve analizi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Depremlerin dağılımı, Levha tektoniği ve depremlerin nedenleri",
+   "Hafta 2 — Kayalarda gerilme-yamulma ilişkileri",
+   "Hafta 3 — Faylar, Aktif faylar, fayların mekanik ve kinematiği",
+   "Hafta 4 — Kıtasal kabuğun yapısı ve Deprem kaynak bölgelerinin jeolojisi",
+   "Hafta 5 — Sismik dalgalar, Sismik dalga, fay yönü ve atım türü arasındaki ilişkiler,",
+   "Hafta 6 — Deprem ölçekleri, Fay nitelikleri deprem büyüklüğü ilişkisi. Tektonik jeodezi, Yerinde gerilme ölçümleri,",
+   "Hafta 7 — Kuvaterner zaman ölçeği.",
+   "Hafta 8 — Fay yüzeyleri ile fay kayalarının tarihlendirme teknikleri",
+   "Hafta 9 — Doğrultu atımlı faylar ve deprem,",
+   "Hafta 10 — Normal faylar ve deprem,",
+   "Hafta 11 — Ters faylar ve kıvrımlar ve deprem,",
+   "Hafta 12 — Dalma-Batma zonları ve deprem,",
+   "Hafta 13 — Depremlerde zemin ve kaya davranışı, Deprem tetiklemesi ile gelişen ikincil etkiler (Heyelanlar ve Tsunami, Sıvılaşma)",
+   "Hafta 14 — Deterministik ve Probabilisitik yöntemlerle sismik tehlike analizi, Depremlerin önceden belirlenmesi"
+  ],
+  "textbooks": [
+   "Yeats, R.S., Sieh, K., Allen, C., 1997, The geology of earthquakes. Oxford University Pres, New York",
+   "Scholz, C.H., The mechanics of Earthquakes and Faulting. Cambridge Press",
+   "Bolt, B.A., 2003, Earthquakes. Fifth edition, W.H. Freeman and Co., New York.",
+   "Dowrick, D., 2003, Earthquake Risk Reduction. John Wiley & Sons, Ltd.",
+   "Reiter, L., 1991, Earthquake hazard analysis : issues and insights. Columbia University Press",
+   "McGuire, R.K., Seismic Hazard and Risk Analysis, EERI"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=566",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 567E": {
+  "code": "JDM 567E",
+  "name": "Bilgisayar Tabanlı Magmatik Petroloji",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "1. Jeokimyasal verilerin R tabanlı açık kaynak kodlu programlarla işlenmesi, 2. Petrolojik sınıflama ve tektonik ayrıtman diyagramları oluşturma, 3. Faz diyagramları oluşturma, 4. Magmatik farklılaşma ve magma odası simülasyonları, 5. Kaynaktan evrime kadar magmatik sistemlerin dinamikleri derinlemesine irdelenecektir. 1. Processing geochemical data using the R-based open-source program, 2. Creating petrographic classification and tectonic discrimination diagrams, 3. Constructing phase diagrams, 4. Simulating magmatic differentiation and magma chamber processes, 5. In-depth examination of the dynamics of magmatic systems from source to evolution.",
+  "outcomes": [
+   "Teorik arkaplan: Bilgisayar tabanlı jeokimya ve termodinamik",
+   "Jeokimyasal veri setinin verimli ve hızlı şekilde değerlendirmek",
+   "Petrolojik sınıflama ve tektonik diskriminasyon diyagramları oluşturmak",
+   "Sığ yerleşimli, derin yerleşimli ve uçucu içeren magma odalarının sıcaklık, basınç, su içeriği ve oksijen fugasitesi gibi özelliklerini modellemek",
+   "Jeokimya ve mineral bileşiminden faz diyagramı elde etmek",
+   "Dersler ve uygulamalar aracılığıyla, petroloji ve jeokimya alanında araştırma veya profesyonel uygulamalar için gerekli beceriler kazanmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel jeokimya ve termodinamik ilkeler",
+   "Hafta 2 — Açık kaynak kodlu yazılımlarda veri kullanımı",
+   "Hafta 3 — Açık kaynak kodlu yazılımlarda petrolojik sınıflandırma ve tektonik ayrım diyagramlarının kullanımı",
+   "Hafta 4 — Bilgisayar tabanlı açık kaynaklı termodinamik hesaplamalar",
+   "Hafta 5 — Basit ve karmaşık kristalleşme süreçlerinin modellenmesi",
+   "Hafta 6 — Kristalleşme sırasının belirlenmesi",
+   "Hafta 7 — Ergiyik bileşiminin belirlenmesi",
+   "Hafta 8 — Farklı P-T koşulları altında magmanın evriminin modellenmesi",
+   "Hafta 9 — Açık sistem süreçlerinin modellenmesi (magma karışımı/AFC)",
+   "Hafta 10 — Su ve uçucu madde içeriğinin etkilerinin modellenmesi",
+   "Hafta 11 — Kısmi erime süreçlerinin modellenmesi",
+   "Hafta 12 — Seçili katı bileşimlerle gelişmiş modelleme",
+   "Hafta 13 — Açık kaynak kodlu yazılımlarla faz diyagramları oluşturma",
+   "Hafta 14 — Gelişmiş modelleme yazılımların entegrasyonu"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=567",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 596": {
+  "code": "JDM 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 596E": {
+  "code": "JDM 596E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 604E": {
+  "code": "JDM 604E",
+  "name": "Selected Topics in Geomorph.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Jeomorfoloji yerşekillerini analiz eden bir bilim dalıdır. Dersin içeriği makro ve mikro yerşekilleri, bunların yeryüzündeki dağılışları, onları oluşturan süreçler. Ayrıca süreçler kendi aralarında etkileşimi, yerşekillerinin gelişimi ve evrimi ile yeni teknolojiler. Geomorphology analysis landforms. What are the macro and micro landforms, how are they distributed, what are the processes that form them? How is the interaction between processes. Developement and evolution of landforms and new technologies",
+  "outcomes": [
+   "Yerşekillerini belirleme",
+   "Yeryüzünü şekillendiren süreçler",
+   "Bu süreçlerin karşılılı etkileşimi",
+   "Yeni teknoloji ve yöntemler",
+   "Küresel Jeolojik olayları anlama ve yorumlama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kayaçların, toprağın ve suyun davranışı, dayanımı ve direnci",
+   "Hafta 2 — Jeomorfolojiye Giriş",
+   "Hafta 3 — Yerkürenin morfolojisi",
+   "Hafta 4 — Büyük-ölçekli topografya",
+   "Hafta 5 — Tektonik jeomorfoloji",
+   "Hafta 6 — Atmosferik süreçler ve jeomorfoloji",
+   "Hafta 7 — Yer yüzeyinin evrimini yöneten taşıma kanunları",
+   "Hafta 8 — Yerşekilleri iklim ve tektoniğini nasıl etkiler ve kaydeder?",
+   "Hafta 9 — İklimin aşınıma etkisi",
+   "Hafta 10 — İklimin tektoniğe etkisi",
+   "Hafta 11 — Yüzey yükselimi, kaya yükselimi ve ekshümasyon",
+   "Hafta 12 — Kozmolojik Nüklidler ve havza aşınımı",
+   "Hafta 13 — Jeomorfolojide zaman kavramı",
+   "Hafta 14 — Yeni Teknolojiler:Yer yüzü süreçlerinin yüksek çözünürlük ve mekanda izlenmesi"
+  ],
+  "textbooks": [
+   "Anderson, R.S., Anderson, S.P., 2010, Geomorphology, The mechanics and chemisty of landscapes. Cambridge",
+   "Merrits, D. (eds). 2008, Landscapes on the edge. New Horizons for Research on Earth’s Surface. National Research Concuil of the National Academies."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=604",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 605E": {
+  "code": "JDM 605E",
+  "name": "Clastic Depositional Environ.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Fasiyes kavramı ve fasiyes modellerinden yararlanarak kırıntı sedimanların çökel ortamlarının gelişimi ele alınacaktır. Akarsu, alüvyal yelpaze, yelpaze deltası ve delta sistemleri ile rüzgar, buzul, gölsel ve gelgit çökel ortamları örnekler aracılığı ile çalışılacaktır. Ayrıca plaj, fırtına, tsunami ve self çökelleri ile derin deniz ortamları, türbiditler ve derin deniz yelpaze sistemi tartışılacaktır. Bunun yanı sıra sedimantasyon ile tektonik arasındaki bağ ele alınacaktır. Son olarak özellikle petrol endüstrisinin önemli konularından biri olan sekans stratigrafisi temel kavramları ele alınacaktır. Process oriented approach to facies characteristics and facies model concepts and interpretation of detritic sedimentary environments. Fluvial, alluvial fan, fan-delta and deltaic systems. Eolian, glacial, lacustrine, lagoonal and tidal flat depositional environments. Beach, storm and tsunami deposits and shelf clastics. Deep marine environments, turbidites and deep sea fans systems. Relationships between sedimentation and tectonics. Basic principles of sequence stratigraphy.",
+  "outcomes": [
+   "Sedimanter birimlerin çökel ortamlarını tanıyabilme",
+   "Havza temelinde birimleri deneştirebilme",
+   "Petrol endüstrisi için önemli temel bilgilere sahip olma ve geliştirme",
+   "Sekans stratigrafisi uygulamaları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş: Stratigrafi ve Senimantoloji’nin temel ilkeleri",
+   "Hafta 2 — Flüvyal sistemler",
+   "Hafta 3 — Alüvyal yelpaze ve yelpaze deltası",
+   "Hafta 4 — Deltalar",
+   "Hafta 5 — Rüzgar ve buzul ortamları",
+   "Hafta 6 — Göl, lagün ve gelgit ortamları",
+   "Hafta 7 — Sahil çökelleri",
+   "Hafta 8 — Öğrencilerin sözlü sunumları",
+   "Hafta 9 — Fırtına ve tsunami çökelleri",
+   "Hafta 10 — Şelf sedimanları",
+   "Hafta 11 — Derin deniz çökelleri ve türbiditler",
+   "Hafta 12 — Derin deniz yelpaze sistemi",
+   "Hafta 13 — Sekans stratigrafisi temel ilkeleri",
+   "Hafta 14 — Sekans stratigrafisi (petrol örnekleri)"
+  ],
+  "textbooks": [
+   "H.G. Reading, 2009. Sedimentary environments: Processes, facies and stratigraphy. Blackwell Pub.",
+   "Gary Nichols, 2013. Sedimentology and Stratigraphy, Wiley-Blackwell, 2nd edition."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=605",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 611E": {
+  "code": "JDM 611E",
+  "name": "Quaternary Geochronology",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kuvaterner yer tarihinin son iki buçuk milyon yılını kapsayan en genç jeolojik dönemdir. Kuvaterner Jeolojisi bu dönemde gelişmiş jeolojik olayların stratigrafisini ve bunların zamansal korelasyonlarını araştıran bir bilim dalıdır. The Quaternary is the most recent geological period, spanning the last two and half millions of the earth history. The Quaternary Geology focuses on the stratigraphy and time-stratigraphic correlations of the Quaternary units units. .",
+  "outcomes": [
+   "Kuvaterner meydana gelen jeolojik ve klimatik olayların tarihini",
+   "Bunların litolojik kanıtlarının belirlenmesini",
+   "Stratigrafilerini anlaşılmasını",
+   "Mekansal ve zamansal korelasyonlarını yapma konularında"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Karasal Çökeller",
+   "Hafta 3 — Denizel çökeller",
+   "Hafta 4 — Kuvaterner Stratigrafisinin ilkeleri",
+   "Hafta 5 — Stratotipler",
+   "Hafta 6 — Litostratigrafi",
+   "Hafta 7 — Biyostratigrafi",
+   "Hafta 8 — Morfostratigrafi",
+   "Hafta 9 — Toprak stratigrafisi",
+   "Hafta 10 — Oksijen-izotop stratigrafisi",
+   "Hafta 11 — Buzul-sondajları stratigrafisi",
+   "Hafta 12 — Kronostratigrafi",
+   "Hafta 13 — Stratigrafik Korelasyonlar",
+   "Hafta 14 — Arazi ve Laboratuvar Yöntemleri"
+  ],
+  "textbooks": [
+   "Lowe and Walker. 1997. Recunstructing Quaternary Environments. Pearson Edu.Ltd.. 298-323.",
+   "Boggs, S. 1995,Principles Of Sedimentology and Stratigrapy. Prentice Hall."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=611",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 613E": {
+  "code": "JDM 613E",
+  "name": "Selected Topics in Geodynamics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Plato oluşumu hakkındaki temel kavramlar verildikten sonra Dünya’nın çeşitli platoları örnekler aracılığı ile tartışılacaktır. Öğrenciler dönem sonunda seçtikleri bir konu hakkında sunum yapacaklardır. Discussions concerning plateau forming mechanisms and examples from selected plateau around the world. Students will give a talk concerning their selected topics.",
+  "outcomes": [
+   "İklim ve tektonizmanın platoların oluşumu etkisi",
+   "Dünya’nın önemli platolarının jeolojik ve jeomorfolojik yapılarının öğrenilmesi",
+   "-",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Plato kavramına giriş",
+   "Hafta 2 — İklim ve topoğrafya kavramları",
+   "Hafta 3 — Tektonizma - topoğrafya ilişkisi",
+   "Hafta 4 — Yüzey yükselimi ve iklim değişimine etkisi",
+   "Hafta 5 — Flüvyal sistemler ve aşındırma oran hesapları",
+   "Hafta 6 — Platoları oluşturan mekanizmalar",
+   "Hafta 7 — Sunumlar",
+   "Hafta 8 — Dünya’dan plato örnekleri: Tibet",
+   "Hafta 9 — Dünya’dan plato örnekleri: Puna-Altiplano",
+   "Hafta 10 — Dünya’dan plato örnekleri: Colorado",
+   "Hafta 11 — Dünya’dan plato örnekleri: Antartika",
+   "Hafta 12 — Dünya’dan plato örnekleri: Adanolu (Doğu kesimi)",
+   "Hafta 13 — Dünya’dan plato örnekleri: Adanolu (Orta kesimi)",
+   "Hafta 14 — Sunumlar"
+  ],
+  "textbooks": [
+   "Tectonics, climate and landscape evolution (Willet et al., 2006)",
+   "Makaleler"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=613",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 628E": {
+  "code": "JDM 628E",
+  "name": "Glacial Geology",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=628",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 630E": {
+  "code": "JDM 630E",
+  "name": "Cosmogenic Isotopes",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=630",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "JDM 631E": {
+  "code": "JDM 631E",
+  "name": "Provenance Analysis",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=631",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

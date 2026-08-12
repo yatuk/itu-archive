@@ -1,0 +1,755 @@
+{
+ "GIT 501": {
+  "code": "GIT 501",
+  "name": "Konumsal Matematik Yöntemler",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Uzay geometrisine giriş. Mantık, Vektörel cebir. Temel koordinat sistemleri ve koordinat dönüşümleri. Projeksiyon sistemleri. İlişkiler, Fonksiyonlar ve doğrusal modeller. Matris cebiri. Venn diyagramları. Boolen cebir ve işlemleri. Topology concept. Graf teorisi, yollar ve çevrimler, bağlantılar. Topolojik bakışlar. Ağ yapılarında akışlar. Harita cebiri. Raster bazlı hesaplamalar. Introduction to space geometry. Logic. Vector algebra. Main coordinate systems and transformations. Projection systems. Relations, functions and linear models. Matrix algebra. Venn diagrams. Boolen algebra and operations. Topoloji kavramı. The graphy theory, paths and cycles, connectivity. Topological views. Flows in networks. Map algebra. Raster-based calculations.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, ilgili program alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme,",
+   "Alanının ilişkili olduğu disiplinler arası etkileşimi kavrayabilme",
+   "Alanında edindiği uzmanlık düzeyindeki kuramsal ve uygulamalı bilgileri kullanabilme",
+   "Alanında edindiği bilgileri farklı disiplin alanlarından gelen bilgilerle bütünleştirerek yorumlayabilme ve yeni bilgiler oluşturabilme",
+   "Alanını ile ilgili karşılaşılan sorunları araştırma yöntemlerini kullanarak çözümleyebilme",
+   "Alanı ile ilgili verilerin toplanması, yorumlanması, uygulanması ve duyurulması aşamalarında toplumsal, bilimsel, kültürel ve etik değerleri gözeterek denetleyebilme ve bu değerleri öğretebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Konumsal Matematiğe Giriş",
+   "Hafta 2 — Uzay Geometrisine Giriş ve Temelleri",
+   "Hafta 3 — Mantık ve CBS",
+   "Hafta 4 — Vektörel Cebir",
+   "Hafta 5 — Matris cebiri, temel koordinat sistemleri ve arasında dönüşümler",
+   "Hafta 6 — Projeksiyon Sistemleri ve Kavramlar",
+   "Hafta 7 — Venn Diyagramları, Boolen Cebir ve İşlemleri",
+   "Hafta 8 — İlişkiler, Fonksiyonlar ve Lineer Modeller",
+   "Hafta 9 — SINAV ve Proje verilmesi",
+   "Hafta 10 — Topoloji kavramı ve konumsal ilişkiler",
+   "Hafta 11 — Graf teorisi, temel prensipler, graf tipleri",
+   "Hafta 12 — Ağ veri yapıları ve problem çözme yaklaşımlar",
+   "Hafta 13 — Harita Cebiri",
+   "Hafta 14 — Raster-Tabanlı Hesaplamalar"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 503E": {
+  "code": "GIT 503E",
+  "name": "Princip.of Geo-Informat.Syste.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilgi sistemlerine genel bakış. Konumsal ve konumsal-olmayan bilgi sistemleri ve uygulama temel alanları. Coğrafi bilgi sistemlerine giriş ve temel tanımlar. Konumsal referans kavramları ve CBS’nin genel işleyişi, çalışma prensipleri, bileşenleri ve fonksiyonları hakkında genel bilgiler. CBS’de veri toplama yöntemleri, sayısallaştırma, editleme teknikleri. Coğrafi bilgi sistemlerinde temel veri yönetim yaklaşımları, yazılım ve donanım sistemleri. A general view of information systems. Spatial and non-spatial information systems and main application areas. Introduction to GIS and basic definitions. Concept of geo-referenced data, and general working styles of GIS, main elements and functions of GIS. Data collection methods, digitizing, and editing techniques in GIS. Basic database management approaches, software and hardware systems in GIS.",
+  "outcomes": [
+   "Coğrafi Bilgi Teknolojileri konusunda temel konuları kavrama",
+   "Coğrafi Bilgi Teknolojilerinin bileşenlerini ayrı ayrı ve bütünleşik olarak değerlendirebilme.",
+   "Konu ile ilgli sorunlara üst düzey çözümler üretebilme.",
+   "Coğrafi bilgi teknolojilerinin kullanımının toplumsal faydalarını kavrama",
+   "Coğrafi Bilgi Teknolojilerinin gelişimini ulusal ve uluslararası düzeyde izleme ve değerlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Coğrafi Bilgi Sistemlerine (CBS) Giriş. CBS'nin Tarihçesi.",
+   "Hafta 2 — Coğrafi Bilgi, Konumsal Veri ve Geo-Bilişim Teknoloji Kavramları.",
+   "Hafta 3 — CBS'nin Temel Fonksiyonları ve Bileşenleri. Konumsal Veri Modelleri.",
+   "Hafta 4 — Gerçek Dünya ve Coğrafi Varlık Kavramları. Veri Girişi ve Hazırlıkları. Topolojik Veri.",
+   "Hafta 5 — Coğrafi Bilginin Bilgisayar Ortamında Gösterimi, Veritabanı Yönetimi.",
+   "Hafta 6 — CBS'de Veri Kalitesi ve Hatalar. Metaveri Kavramı.",
+   "Hafta 7 — CBS’de Konumsal Analizler ve Sorgulamalar. Bindirme Teorileri ve Operasyonlar.",
+   "Hafta 8 — Yakınlık Analizleri. CBS’de Kesme, Silme, Bölme, Kenarlaştırma vb Operasyonlar.",
+   "Hafta 9 — CBS’de Thessien Poligonları, Elastiksel Dönüşümler vb Operasyonlar.",
+   "Hafta 10 — CBS’de Ağ Analizleri, Geometrik ve Grid İşlemleri.",
+   "Hafta 11 — CBS’de Veri Görüntüleme, Haritalama, Çıktı ve Sunum İşlevleri.",
+   "Hafta 12 — CBS Uygulamaları I",
+   "Hafta 13 — CBS Uygulamaları II (Devam)",
+   "Hafta 14 — Tartışma ve Ders Değerlendirme"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 505": {
+  "code": "GIT 505",
+  "name": "Coğrafi Veritabanı Geliştirme",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Coğrafi bilgi teknolojilerinde mevcut durumun irdelenmesi, veritabanı prensipleri, mimarisi, modelleri, paylaşımı ve uygulaması. Coğrafi veritabanı tasarımı, kurulması ve yönetimi. Web tabanlı coğrafi veritabanları ve gelecek eğilimler, tematik uygulama alanında coğrafi veritabanı kurulması, coğrafi veritabanı sistemlerinin gelecek eğilimleri. Analyzing the current status of Geographic Information Technology, Database principles, architecture, models, sharing, and application. Geo-database designing, building, and management. Web based geo-databases and future trends, Building geodatabase for a thematic application area, Future trends of geo-database systems.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, ilgili program alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme",
+   "Alanının ilişkili olduğu disiplinler arası etkileşimi kavrayabilme",
+   "Alanında edindiği bilgileri farklı disiplin alanlarından gelen bilgilerle bütünleştirerek yorumlayabilme ve yeni bilgiler oluşturabilme",
+   "Alanı ile ilgili karşılaşılan sorunları araştırma yöntemlerini kullanarak çözümleyebilme",
+   "Alanı ile ilgili uygulamalarda karşılaşılan ve öngörülemeyen karmaşık sorunların çözümü için yeni stratejik yaklaşımlar geliştirebilme ve sorumluluk alarak çözüm üretebilme",
+   "Alanının gerektirdiği düzeyde bilgisayar yazılımı ile birlikte bilişim ve iletişim teknolojilerini ileri düzeyde kullanabilme",
+   "Alanı ile ilgili verilerin toplanması, yorumlanması, uygulanması ve duyurulması aşamalarında toplumsal, bilimsel, kültürel ve etik değerleri gözeterek denetleyebilme ve bu değerleri öğretebilme",
+   "Alanı ile ilgili konularda strateji, politika ve uygulama planları geliştirebilme ve elde edilen sonuçları, kalite süreçleri çerçevesinde değerlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Coğrafi bilgi teknolojilerinde mevcut durum",
+   "Hafta 2 — Veritabanına giriş",
+   "Hafta 3 — Veritabanı Prensipleri ve Mimarisi",
+   "Hafta 4 — Veritabanı Modelleri ve Veri Modelleme",
+   "Hafta 5 — Coğrafi Veri ve Coğrafi Veritabanı Sistemleri",
+   "Hafta 6 — Coğrafi Veri Paylaşımı, Veri Ambarları ve Federasyonu",
+   "Hafta 7 — Coğrafi Veritabanı Uygulamaları ve Kullanıcı İhtiyaçlarının Değerlendirilmesi",
+   "Hafta 8 — ISO/TC211’e göre veri modelleme ve uygulama şeması geliştirme metodolojisi",
+   "Hafta 9 — Ara sınav ve Ödev verilmesi: Kullanıcı gereksinimlerine göre coğrafi veritabanı tasarımı",
+   "Hafta 10 — Coğrafi Veritabanı Uygulamasında Proje Yönetimi",
+   "Hafta 11 — Web Tabanlı Coğrafi Veritabanı Sistemleri",
+   "Hafta 12 — Uygulama/Proje: Bir uygulama alanında mantıksal coğrafi veritabanı tasarımı",
+   "Hafta 13 — Uygulama/Proje: Bir uygulama alanında fiziksel coğrafi veritabanı kurulması",
+   "Hafta 14 — Coğrafi Veritabanı Sistemlerinin Gelecek Eğilimleri"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=505",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 507": {
+  "code": "GIT 507",
+  "name": "Sayısal Arazi Modelleri",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sayısal Arazi Modelleri (SAM), Sayısal Yükseklik Modelleri (SYM), Sayısal Yüzey Modelleri (SYM), Sayısal arazi modellemesi işlemi, veri kaynakları ve yapıları, entepolasyon ve yüzey modelleme, sayısal arazi modellemesi yaklaşımları, üçgenler ağı üretimi, sayısal arazi modellerinde kalite kontrolu, sayısal arazi modellerinin doğruluğu, sayısal arazi modellerinin görselleştirilmesi, uygulama alanları. Digital Terrain Model (DTM), Digital Elevation Model (DEM), Digital Surface Models (DSM), Process of digital terrain modelling, data sources and types, interpolation and surface modelling, approaches for digital terrain modelling, TIN generation, quality control in DTM, accuracy of DTM, visualization of DTM, application fields.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, coğrafi bilgi teknolojileri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme",
+   "Coğrafi bilgi teknolojilerinde kullanılan mekansal veri yapılarını kavrama",
+   "Sayısal yüzey modellerini oluşturmadai karşılaşılan sorunları CBS araç ve yöntemlerini kullanarak çözümleyebilme",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Sayısal Arazi Modelleri (SAM), Sayısal Yükseklik Modelleri (SYM), Sayısal Yüzey Modelleri (SYM) Kavranları",
+   "Hafta 2 — Sayısal Arazi Modellemesi Işlemi",
+   "Hafta 3 — Veri Kaynakları ve Yapıları",
+   "Hafta 4 — Entepolasyon ve Yüzey Modelleme",
+   "Hafta 5 — Sayısal Arazi Modellemesi Yaklaşımları",
+   "Hafta 6 — Sayısal Arazi Modellemesi Yöntemleri 1",
+   "Hafta 7 — Sayısal Arazi Modellemesi Yöntemleri 2",
+   "Hafta 8 — Sayısal Arazi Modellemesi Yöntemleri 3",
+   "Hafta 9 — Üçgenler Ağı Üretimi",
+   "Hafta 10 — Delaunay Üçgenlemesi",
+   "Hafta 11 — Sayısal Arazi Modellerinde Kalite Kontrolu",
+   "Hafta 12 — Sayısal Arazi Modellerinin Doğruluğu",
+   "Hafta 13 — Sayısal Arazi Modellerinin Görselleştirilmesi",
+   "Hafta 14 — Uygulama Alanları"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=507",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 509E": {
+  "code": "GIT 509E",
+  "name": "GIS Programming",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "CBS’de veri modelleri ve programlama kavramları. Visual Basic ve Python gibi programlama dilleri kapsar. Temel programlama kavramları ile başlar ve çeşitli uygulamalar gerçekleştirilir. Nesne yönelimli ve prosedürel programlamanın temel yaklaşımlarının anlaşılması. CBS’de yazılım özelleştirme. Coğrafi veri ile hesaplama. Data models in GIS and concepts of GIS programming. Covers programming languages such as Visual Basic and Python. Begins with basic programming concepts and progresses to various applications. Understanding the basic ideas of object-oriented and procedural programming. Software customization in GIS. Computing with geospatial data.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, coğrafi bilgi teknolojileri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme.",
+   "CBS ile ilgili karşılaşılan özel sorunları programlama kullanarak çözümleyebilme.",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri uygulama düzeyinde paylaşabilme.",
+   "Coğrafi Bilgi Sistemi projelerindeki disiplinlerarası çalışma gerekliliğini kavrayabilme",
+   "Temel seviyede programlama dillerini kullanarak CBS uygulamaları gerçekleştirme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — CBS'de Veri Modelleri",
+   "Hafta 3 — CBS'de Programlama Kavramları",
+   "Hafta 4 — Python ile Programlamayı Algılamak.",
+   "Hafta 5 — Python ile CBS'de Programlama",
+   "Hafta 6 — Python ile CBS'de Programlama",
+   "Hafta 7 — Visual Basic ile Programlamayı Algılamak.",
+   "Hafta 8 — VB ile CBS'de Programlama",
+   "Hafta 9 — VB ile CBS'de Programlama",
+   "Hafta 10 — CBS’de Yazılım Özelleştirme",
+   "Hafta 11 — CBS’de Yazılım Özelleştirme",
+   "Hafta 12 — CBS’de Yazılım Özelleştirme",
+   "Hafta 13 — CBS’de Yazılım Özelleştirme",
+   "Hafta 14 — CBS’de Yazılım Özelleştirme"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=509",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 511E": {
+  "code": "GIT 511E",
+  "name": "Principles of GNSS",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Uydu bazlı konum belirleme sistemlerine giriş, GPS'e giriş, GPS’de kullanılan datum, koordinat ve zaman sistemleri, sinyal yapısı, Konum belirleme yöntemleri, GPS gözlemleri, Yönteme etki eden hatalar, Veri işleme, GNSS sistemlerinin yaygın kullanım alanları, diğer uydu bazlı konum belirleme sistemleri. Introduction to Space-based Positioning Systems, introduction to GPS and its principles. Datums, oordinate and time systems in GPS. Signal structure, GPS positioning modes, GPS observation techniques, GPS errors and biases, data processing, application fields of GNSS, other satellite navigation systems.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, coğrafi bilgi teknolojileri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme.",
+   "Uydu bazlı konum belirleme sistemlerinin altyapısını ve prensiplerini bilme",
+   "Uydu bazlı konum belirleme sistemlerinin altyapısını ve prensiplerini bilme",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri uygulama düzeyinde paylaşabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Uydularla Konum Belirleme Sistemlerine Giriş (GPS/GNSS)",
+   "Hafta 2 — Datum, GPS'de Kullanılan Koordinat ve Zaman Sistemleri",
+   "Hafta 3 — GPS Sinyal Özellikleri",
+   "Hafta 4 — GPS Ölçülerin Etkileyen Hata Kaynakları",
+   "Hafta 5 — GPS ile Konum Belirleme Yöntemleri",
+   "Hafta 6 — GPS'de Kullanılan Navigasyon Amaçlı Doğruluk Ölçütleri",
+   "Hafta 7 — Arazi Uygulaması",
+   "Hafta 8 — GPS Uygulama Alanları ve GPS'in Diğer Sistemlerle Entegrasyonu",
+   "Hafta 9 — GPS Verilerinin Değerlendirilmesi (Ağ Dengelemesi)",
+   "Hafta 10 — GPS Verilerinin Değerlendirilmesi ve Sonuçarın Elde Edilmesi",
+   "Hafta 11 — GPS Kampanyası Düzenlenmesi",
+   "Hafta 12 — Laboratuvar Uygulaması",
+   "Hafta 13 — Diğer Uydu Sistemleri",
+   "Hafta 14 — Diğer Uydu Sistemleri (Devam)"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=511",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 513": {
+  "code": "GIT 513",
+  "name": "CBS'de Uzaktan algılama",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Temel esaslar, elektromanyetik ışınım, elektromanyetik spektrum, radyasyon kanunları, dünya atmosferi ve yüzeyi ile etkileşim, uzaktan algılamada veri elde etme sistemleri, uzaktan algılama platformları ve algılayıcıları, dijital uzaktan algılanmış verinin özellikleri, radyometrik düzeltme, atmosferik düzeltme, geometrik düzeltme, görüntü zenginleştirme, sınıflandırma, mikrodalga uzaktan algılama, ileri konular. Basic principles, nature of electromagnetic radiation, electromagnetic spectrum, radiation laws, interecations with the earth`s atmosphere and surface, data acquisition systems in remote sensing, , remote sensing platforms and sensors, properties of digital remote sensing data, radiometric correction, atmospheric correction, geometric correction, image enhancement, classification, microwave remote sensing, advanced topics.",
+  "outcomes": [
+   "Matematik, fen ve mühendislik bilgilerini uygulama becerisi",
+   "Mühendisliğin küresel ve toplumsal boyutlarda etkisini kavrama özelliği",
+   "Güncel/çağdaş konulara ilişkin bilgi sahibi olma özelliği",
+   "4. Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Uzaktan Algılamaya Giriş, Temel Esaslar, Elektromanyetik Işınım, Elektromanyetik Spektrum, Radyasyon Kanunları, Planck Kanunu, Stefan-Boltzmann Kanunu ve Wien Kanunu",
+   "Hafta 2 — Atmosfer ile Etkileşim, Saçılma, Yansıma ve Yutulma, Atmosferik Pencereler",
+   "Hafta 3 — Işınımın Yeryüzeyi ile Etkileşimi: Yansıtma, Brdf, Albedo, Yüzey Spektraları, Spektral Özellikler ve Bilgi",
+   "Hafta 4 — Uzaktan Algılamada Veri Elde Etme Sistemleri, Algılayıcı Çeşitleri",
+   "Hafta 5 — Aktif ve Pasif Algılama",
+   "Hafta 6 — Uzaktan Algılama Platformları, Uydu Yörüngeleri, Optik, Yakın Kızılötesi, Termal ve Mikrodalga Uzaktan Algılayıcılar",
+   "Hafta 7 — Dijital Uzaktan Algılanmış Verinin Özellikleri, Formatlar, Veri Işleme. Çözünürlük Kavramı: Spektral, Mekansal, Zamansal ve Radyometrik Çözünürlük",
+   "Hafta 8 — Radyometrik Düzeltme, Atmosferik Düzeltme; Görüntü Tabanlı Yöntemler, Radyatif Transfer Modelleri, Empiric Çizgi Yöntemi",
+   "Hafta 9 — Geometrik Düzeltme: Yörünge Geometri Modeli, Rektifikasyon, Ortho Rektifikasyon",
+   "Hafta 10 — Görüntü Zenginleştirme: Lineer Contrast Gerdirme, Gauss Gerdirme, Yoğunluk Dilimleme",
+   "Hafta 11 — Görüntü Dönüşümleri: Aritmetik Işlemler, Filtreleme, Ana Bileşen Analizi, Intensity-Hue-Saturation, Fourier Ve Wavelet Dönüşümleri",
+   "Hafta 12 — Sınıflandırma: Kontrollü, Kontrolsüz, Fuzzy Sınıflandırma. Sınıflandırma Doğruluğu.",
+   "Hafta 13 — Mikrodalga Uzaktan Algılama",
+   "Hafta 14 — İleri Konular: SAR Interferometresi, LIDAR, Hiperspektral Uzaktan Algılama"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=513",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 514E": {
+  "code": "GIT 514E",
+  "name": "Geostatistics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Konumsal ve konumsal olmayan veri, istatistikte temel kavramlar, tanımlayıcı istatistik, standardizasyon, istatistik ve veri analizi, tek değişkenli ve çok değişkenli analizler, variyogramlar, mekansal bağımlılık, mekansal değişkenliğin ölçekleri, anizotropi, , modeller ve model parametreleri; Kriging, interpolasyon, basit (nokta) kriging, blok kriging, blok kriging, ölçme hataları ve kriging varyansı; Kokriging, çapraz-variyogram, kokriging denklemleri, kokriging varyansı; Coğrafi Bilgi Sistemleri ve jeoistatistik. Definition of spatial and non-spatial data, descriptive statistics, standardization; Statistics and data analysis, bivariate and multivariate analysis, variograms, spatial dependence, scales of spatial variation, anisotropy, Modeling variograms and model parameters; kriging, interpolation, simple kriging, ordinary kriging, indicator kriging, block kriging, kriging with trend, measurement error and the kriging variance, smoothing; Cokriging, the cross-variogram, coregionalization, cokriging equations, cokriging variance, Geographic Information Systems and geostatistics.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, ilgili program alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme",
+   "Alanı ile ilgili uzmanlığın gereksinimlerini anlama",
+   "Alanını ile ilgili karşılaşılan sorunları araştırma yöntemlerini kullanarak çözümleyebilme",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Konumsal ve konumsal olmayan veri, jeoistatitik ve istatistik kavramlari",
+   "Hafta 2 — İstatistikte temel kavramlar, tanımlayıcı istatistik, standardizasyon",
+   "Hafta 3 — İstatistik ve veri analizi, tek değişkenli analizler, çok değişkenli analizler, histogramlar ve olasılık dağılımları, örnek veri seti uygulamaları",
+   "Hafta 4 — Jeoistatistiğin tarihçesi, bölgesel değişkenler, mekansal veri, semivaryans analizleri, otokorelasyon ölçütleri",
+   "Hafta 5 — Variyogramlar, variyogramların kestirimi, konumsal bağımlılık, örnek variyogramın hesaplanması",
+   "Hafta 6 — Konumsal değişimin ölçekleri, anizotropi,h-saçılma diyagramı, variyogram bulutu",
+   "Hafta 7 — Variyogramların modellenmesi, lineer model, küresel model, üssel model, Gauss modeli, kuvvet modeli, model parametreleri, örnek veri seti uygulamaları",
+   "Hafta 8 — Konumsal veride hatalar, doğruluk ve belirsizlik",
+   "Hafta 9 — Kriging, interpolasyon, basit(nokta) kriging,indikatör kriging,",
+   "Hafta 10 — Blok kriging, ölçme hataları ve kriging varyansı, örnek veri seti uygulamaları",
+   "Hafta 11 — Kokriging, çapraz-variyogram, kokriging denklemleri, kokriging varyansı, örnek veri seti uygulamaları",
+   "Hafta 12 — Jeoistatistiksel simülasyonlar: Koşullu simülasyon, koşullu kümülatif dağılım fonksiyonları",
+   "Hafta 13 — Jeoistatistiksel simülasyonlar: Cholesky Çözümlemesi, Sıralı Gauss Simülasyonu",
+   "Hafta 14 — Coğrafi Bilgi Sistemleri, uzaktan algılama ve jeoistatistik"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=514",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 515": {
+  "code": "GIT 515",
+  "name": "Kent Bilgi Sistemleri",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kent bilgi sistemlerinin temelleri. Harita ve tematik haritaların gereksinimi. CBS ve kent bilgi sistemi ilişkilendirmesi. Kent bilgi sistemlerinde konumsal analizler. Kentsel yönetimde bilgi sistemi organizasyonu. Kentsel planlama ve güncelleme için GIS entegrasyonu. Kent bilgi sistemi tasarımı. Kent bilgi sistemlerinin servis bazlı hizmetleri ve örnek uygulama yaklaşımları. Basics of urban information systems. Map and thematic maps requirements. Relation of GIS and urban information systems. Spatial analysis in urban information systems. Organization of information in urban management. Integration of GIS for urban planning and data updating. Design of urban information systems. Services based processes and case studies for urban information systems.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, Kent Bilgi Sistemleri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme.",
+   "Kente ilişkin karşılaşılan sorunları coğrafi bilgi teknolojilerini kullanarak kullanarak çözümleyebilme.",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme.",
+   "Coğrafi bilgi sistemi teknolojisinin kent yönetimi ve planlanmasının farklı aşamalarındaki kullanımını kavrama."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kentsel CBS Ortamına Giriş. Kent Yaşamı için Bilgi Teknolojisinin Genel Yapısı",
+   "Hafta 2 — Kentsel Fonksiyonlar. Haritalar: Kaynaklar'a Karşı Tematikler, Tematik Harita Tipleri",
+   "Hafta 3 — Kent Bilgi Sistemlerinin Bileşenleri ve Fonksiyonları. Organizasyon Ve Yönetim Işleri.",
+   "Hafta 4 — Veri Sınıflama Methodları ve Veri Tedariki",
+   "Hafta 5 — Nicel ve Nitel Bilgi. Kant CBS'de Fayda-Maliyet Analizi",
+   "Hafta 6 — İmar Planı, Temel Haritalar ve Mülkiyet Haritaları İle Veri Girişi",
+   "Hafta 7 — Kent Bilgi Sistemi Tasarımı. Modelleme ve Sistem Yaklaşımları.",
+   "Hafta 8 — Adres Tabanlı Bilgi Sistemleri ve Kent Bilgi Sisteminde Ağ Analizleri",
+   "Hafta 9 — Merkezi ve Yerel İdarelerde CBS Amaçlı Veri Üretimi. Ticari Kaynaklar.",
+   "Hafta 10 — Suç Analizi Örnek Uygulaması",
+   "Hafta 11 — Planlama ve Bakım Amaçlı Harita Altyapısı Örnek Uygulaması",
+   "Hafta 12 — Kent Servisleri için CBS Uygulaması",
+   "Hafta 13 — Kent-Çevre Planlaması",
+   "Hafta 14 — Web Tabanlı Servislerle Kentsel CBS’nin Geleceği"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=515",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 518": {
+  "code": "GIT 518",
+  "name": "CBS ile Taşınmaz Değerlemesi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Arazi değerleme, plan, parsel, taşınmaz vb temel arazi yönetim kavramlarının tanım ve ilişkileri. Taşınmaz değerlemeye genel bakış ve değerleme teknikleri. CBS ile taşınmaz değerleme işlemleri ve birim değer hesaplamaları. Değer haritalarının üretimi ve sunumu. Birim alanda değere dayalı sorgulamalar ve istatistiksel irdelemeler gerçekleştirmek. Land valuation, plan, parcel, real estate, etc. definitions and basic concepts of land management and their relations. Overview of real estate valuation and appraisal techniques. GIS operations and real estate valuation and calculation of unit value. Value production and presentation of maps. Perform spatial queries based on the value per unit area, and statistical considerations.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, ilgili program alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme.",
+   "Alanı ile ilgili karşılaşılan özel sorunları araştırma yöntemlerini kullanarak çözümleyebilme.",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri uygulama düzeyinde paylaşabilme.",
+   "Coğrafi Bilgi Sistemi projelerindeki disiplinlerarası çalışma gerekliliğini kavrayabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, taşınmaz mal terimleri ve değerleme kavramı.",
+   "Hafta 2 — Taşınmaz değerlemenin arazi ekonomisindeki yeri.",
+   "Hafta 3 — Değerlemede geleneksel yöntemler ve değerlemedeki teknik sorunlar.",
+   "Hafta 4 — Karşılaştırma yöntemi ile değerleme amaçlı CBS'den yararlanma.",
+   "Hafta 5 — Gelir yöntemi ile değerleme amaçlı CBS'den yararlanma.",
+   "Hafta 6 — Maliyet yöntemi ile değerleme amaçlı CBS'den yararlanma.",
+   "Hafta 7 — Değerlemede istatistiksel yaklaşımlar ve CBS katkısı",
+   "Hafta 8 — CBS-destekli nominal-değerleme yaklaşımı.",
+   "Hafta 9 — Değerlemede kullanılan kriterlerin seçimi ve CBS ile veri sağlama, işleme.",
+   "Hafta 10 — Değerlemede kullanılan kriterlerin seçimi ve CBS ile veri analizi.",
+   "Hafta 11 — CBS ile değer parametrelerin hesabı ve değer haritası üretimi.",
+   "Hafta 12 — Birim alan bazlı sorgulamalar ve istatistiksel analizler.",
+   "Hafta 13 — Örnek proje değerlendirmeleri.",
+   "Hafta 14 — CBS’nin değerlemeye katkısının tartışılması."
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=518",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 522E": {
+  "code": "GIT 522E",
+  "name": "Coastal and Marine GIS",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kıyı ve denizsel çalışmalarda konumsal veri gereksinimi ve yönetimi. Denizsel veri model tasarımı. Deniz yüzeyi tayinleri ve batimetrik ölçümler. Deniz topoğrafyasının görselleştirilmesi. Kıyı ve denizsel öznitelik bilgilerinin tasarlanması ve ilişkilendirilemesi. Kıyı yönetiminde sorunlar ve idari bölgelemeler. Denizsel çalışmalarda çizgisel sınırların tespiti ve yönetimi. Spatial data needs in coastal and marine studies and management. Marine data model design. Sea surface determination and bathymetric measurements. Visualization of sea topography. Coastal and marine attribute information design and relation. Issues in coastal management and administrative zoning. Detection and management of linear borders in marine works.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, Coğrafi Bilgi Teknolojileri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme",
+   "Coğrafi Bilgi Teknolojileri konusunda uzmanlığın gereksinimlerini anlama",
+   "Coğrafi Bilgi Sistemleri Projelerinde karşılaşılan sorunları teknik ve etik yaklaşımlar dahilinde değerlendirip çözümleyebilme",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Denizsel ve kıyı ölçmeleri",
+   "Hafta 3 — Denizsel veri tipleri ve veri modelleri",
+   "Hafta 4 — Deniz düzeyi ve deniz yüzeyi haritalama",
+   "Hafta 5 — Kıyısal veri altyapısı",
+   "Hafta 6 — Denizsel CBS'ye algoritmik yaklaşım",
+   "Hafta 7 — Elektronik batimetrik görüntüleme bilgi sistemleri",
+   "Hafta 8 — Kıyısal bölge yönetim gösterimleri",
+   "Hafta 9 — CBS ile kıyısal değişimlerin haritalanması ve analizleri",
+   "Hafta 10 — Zamansal seriler ve ölçümlerin uygulanması",
+   "Hafta 11 — Denizsel CBS’de gerçek-zamanlı uygulamalar",
+   "Hafta 12 — Kıyısal ve denizsel CBS’de lineer veri modelleme ve dinamik segmantasyon",
+   "Hafta 13 — Kıyısal yönetimde CBS uygulamaları",
+   "Hafta 14 — Denizsel yönetimde CBS uygulamaları"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=522",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 524E": {
+  "code": "GIT 524E",
+  "name": "Environmental GIS",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Coğrafi Bilgi Sistemlerinin çevresel uygulamalardaki yeri ve önemi, çevresel veri yönetimi ve veri modellerinde CBS uygulamaları. Konumsal doğal kaynak yönetimi, hidrografik ve çevresel kirlilik veri yönetiminde . Karşılaştırmalı arazi örtüsü değişim analizleri, çevresel risk haritalama teknikleri, CBS’nin çevresel planlama ve politikalarındaki rolü. The role and importance of Geographical Information Systems in environmental applications, environmental data management and GIS applications in data models. Spatial natural resource data management, hydrographic and environmental pollution data management. Comparative land cover change analysis, environmental risk mapping techniques, role of GIS in environmental planning and policy.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, ilgili coğrafi bilgi teknolojileri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme",
+   "Alanı ile ilgili uzmanlığın gereksinimlerini anlama",
+   "Çevresel sorunları CBS kullanarak çözümleyebilme",
+   "Edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Çevresel CBS'ne giriş",
+   "Hafta 2 — Çevresel analizlerde konumsal veri yönetimi",
+   "Hafta 3 — Çevresel veri modelleri",
+   "Hafta 4 — Çevresel veritabanları ve haritalama",
+   "Hafta 5 — Çevresel CBS uygulamaları",
+   "Hafta 6 — CBS ile doğal kaynak yönetimi",
+   "Hafta 7 — Su kaynaklarının konumsal yönetimi",
+   "Hafta 8 — Karşılaştırmalı arazi örtüsü değişim analizleri",
+   "Hafta 9 — Hidrografik verinin CBS ile yönetimi",
+   "Hafta 10 — Çevresel kirlilik veri yönetimi",
+   "Hafta 11 — Çevresel risk haritalama",
+   "Hafta 12 — Çevresel planlama ve politikalarında CBS’nin rolü",
+   "Hafta 13 — Uygulama örnekleri",
+   "Hafta 14 — Uygulama örnekleri"
+  ],
+  "textbooks": [
+   "Brimicombe, A., 2010. Coğrafi Bilgi Sistemleri, Çevresel Modelleme ve Mühendislik, CRC Press, ISBN: 978-1439808702",
+   "Goodchild, M. F., Steyaert, L., Parks, B. O., Johnston, C., Maidment, D., Crane, M., Glendinning, S., 1996. Coğrafi Bilgi Sistemleri ve Çevresel Modelleme: Gelişmeler ve Araştırma Konuları, Wiley, ISBN: 978-0470236772.",
+   "Hanaki, K., 2010. Kentsel Çevre Yönetimi ve Teknolojisi, Springer, ISBN: 978-4431998488.",
+   "Lovett, A., Appleton, K., 2007. Çevresel Karar Verme için Coğrafi Bilgi Sistemleri, CRC Press, ISBN: 978-0849374234.",
+   "Scally, R., 2006. Çevre Yönetimi için Coğrafi Bilgi Sistemleri, ESRI Press, ISBN: 978-1589481428"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=524",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 596": {
+  "code": "GIT 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Seminerler; öğretim elemanları, çağrılı konuşmacılar ve derse kayıtlı öğrenciler tarafından verilir. Öğrenci sunumları, tez çalışmaları kapsamında da olabilir. Derste başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında da bilgi verilmektedir. Seminars are given by lecturers, invited speakers and students who are registered to the course. Students' presentations may be within the scope of their thesis topics. The course content also includes tips for a successful presentation.",
+  "outcomes": [
+   "Alanındaki güncel gelişmeleri ve kendi çalışmalarını, nicel ve nitel veriler ile destekleyerek, alanındaki ve alan dışındaki gruplara, yazılı, sözlü ve görsel olarak sistemli biçimde aktarabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Etkili bir sunuş nasıl yapılır (Seminer Koordinatörü)",
+   "Hafta 2 — Çağrılı konuşmacı sunumu",
+   "Hafta 3 — Çağrılı konuşmacı sunumu",
+   "Hafta 4 — Çağrılı konuşmacı sunumu",
+   "Hafta 5 — Çağrılı konuşmacı sunumu",
+   "Hafta 6 — Öğrenci sunumları",
+   "Hafta 7 — Öğrenci sunumları",
+   "Hafta 8 — Öğrenci sunumları",
+   "Hafta 9 — Öğrenci sunumları",
+   "Hafta 10 — Öğrenci sunumları",
+   "Hafta 11 — Öğrenci sunumları",
+   "Hafta 12 — Öğrenci sunumları",
+   "Hafta 13 — Öğrenci sunumları",
+   "Hafta 14 — Öğrenci sunumları"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 601E": {
+  "code": "GIT 601E",
+  "name": "Geo-Data Policy",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kurumsal gereksinimler ve buna bağlı politikaların geliştirilmesi. CBS ile veri saklama, paylaşım ve sunumda mevzuat ilkeleri. Ulusal konumsal veri altyapısı için teknik ve kurumsal ihtiyaçlar. Merkezi ve yerel idarelerin veri sunma politikaları. Veri gizliliği. Metaveri üretim politikaları. CBS’nin kurumsal yapılanması için politik gereksinimler. Institutional requirements and developing policies accordingly. The legislation principles for GIS data storage, sharing and presentation. Technical and institutional requirements for national spatial data infrastructure. Central and local government policies to provide the spatial data. Data privacy. Metadata production policies. Political requirements for corporate structuring of GIS",
+  "outcomes": [
+   "Yüksek Lisans düzeyi yeterliliklerine dayalı olarak, coğrafi bilgi teknolojileri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme.",
+   "Alanı ile ilgili karşılaşılan özel sorunları coğrafi bilgi politikalarını dikkate alarak ve araştırma yöntemlerini kullanarak çözümleyebilme.",
+   "Coğrafi bilgi Teknolojileri Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri uygulama düzeyinde paylaşabilme.",
+   "Coğrafi Bilgi Sistemi projelerindeki disiplinlerarası çalışma gerekliliğini kavrayabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Coğrafi veri kullanım politikasına giriş",
+   "Hafta 2 — Tahsis kaynakları için karar-destek",
+   "Hafta 3 — KVA fenomeni, INSPIRE.",
+   "Hafta 4 — Coğrafi veri değerlendirme ve sınıflandırma",
+   "Hafta 5 — Kamusal açılım için coğrafi veri ihtiyaçları",
+   "Hafta 6 — Coğrafi verinin bir toplum üzerindeki sosyal, ekonomik ve kültürel etkileri",
+   "Hafta 7 — Arazi idare hizmetlerini destek veren CBS uygulamaları",
+   "Hafta 8 — Merkezi idarenin gelişim stratejilerini destekleyecek CBS tabanlı yöntemler",
+   "Hafta 9 — Yerel idarenin gelişim stratejilerini destekleyecek CBS tabanlı yöntemler",
+   "Hafta 10 — Genel politikaların CBS ile desteklenmesi",
+   "Hafta 11 — Bütçe ve finans için karar-desteği",
+   "Hafta 12 — Konumsal veri doğruluğu için ulusal standartlar",
+   "Hafta 13 — Dijital veri dağıtım yöntemleri",
+   "Hafta 14 — Dersin genel değerlendirilmesi"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=601",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 603E": {
+  "code": "GIT 603E",
+  "name": "Professionalism in GI-Techno.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "CBS’de yasal ve etik konular, CBS uygulamalarında telif hakları ve akreditasyon, somut özellikleri açısından CBS projelerinin maliyet-fayda analizi, CBS’de Lisanslama süreci, veri paylaşımı ve fiyatlandırma, CBS meslek kuruluşları. Legal and ethical issues in GIS, Copyrights and accreditation in GIS applications, Cost-benefit analysis of GIS project with respect to in-tangible features, Licensing process in GIS, Data sharing and pricing, GIS professional organizations.",
+  "outcomes": [
+   "Yüksek Lisans düzeyi yeterliliklerine dayalı olarak, Coğrafi Bilgi Teknolojileri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme",
+   "Coğrafi Bilgi Teknolojileri konusunda uzmanlığın gereksinimlerini anlama",
+   "Coğrafi Bilgi Sistemleri Projelerinde karşılaşılan sorunları teknik ve etik yaklaşımlar dahilinde değerlendirip çözümleyebilme",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Profesyonellik, etik bakış, telif hakkı ve akreditasyon kavramlarına genel bakış",
+   "Hafta 2 — Etik bakış neden önemli?",
+   "Hafta 3 — Akademik dürüstlük ilkeleri ve kurallarını anlamak",
+   "Hafta 4 — Profesyonellik için Pugh'ın altı özelliği",
+   "Hafta 5 — Coğrafi Bilgi Teknolojileri alanında ilgili yasal ve etik sorunların açıklanması",
+   "Hafta 6 — CBS alanlarında lisanslama gereksinimi",
+   "Hafta 7 — CBS'de fayda-maliyet analizi",
+   "Hafta 8 — Veri telif hakları, CBS'de paylaşma ve fiyatlandırma",
+   "Hafta 9 — CBS'de profesyonel organizasyonlar",
+   "Hafta 10 — Verilmiş kaynaklar ile Coğrafi bilgi teknolojilerinde mesleki analizler",
+   "Hafta 11 — Sunum: Etik vaka çalışmalarının metodik analizler ile akılcı yürütme becerileri",
+   "Hafta 12 — Sunum: Etik vaka çalışmalarının metodik analizler ile akılcı yürütme becerileri",
+   "Hafta 13 — Sunum: Etik vaka çalışmalarının metodik analizler ile akılcı yürütme becerileri",
+   "Hafta 14 — Dersin genel değerlendirilmesi"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=603",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 605E": {
+  "code": "GIT 605E",
+  "name": "Semantics GIS",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Anlamsal web ve ontoloji kavramı, Anlamsal web prensipleri, Anlamsal CBS, Web Ontoloji Dili (OWL), Kaynak Tanımlama Çerçevesi (RDF), CBS’de OWL ve RDF kavramı, veri bütünleştirme ontolojileri, Anlamsal CBS uygulamaları Semantic web and ontology concept, Principles of semantic web, Semantic GIS, Web Ontology Language (OWL), Resource Description Framework (RDF), OWL and RDF concept in GIS, ontologies for data integration, Semantic GIS applications",
+  "outcomes": [
+   "Yüksek Lisans düzeyi yeterliliklerine dayalı olarak, Coğrafi Bilgi Sistemleri alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme",
+   "Coğrafi Bilgi Sistemleri konusunda uzmanlığın gereksinimlerini anlama",
+   "Coğrafi Bilgi Sistemleri Projelerinde karşılaşılan sorunları teknik ve etik yaklaşımlar dahilinde değerlendirip çözümleyebilme",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Anlamsal ve ontoloji kavramına giriş",
+   "Hafta 2 — Anlamsal birlikte çalışabilirliğe giriş",
+   "Hafta 3 — Anlamsal Web prensipleri",
+   "Hafta 4 — Semantic Web mimarisi; URI, XML, RDF, Ontoloji, vb.",
+   "Hafta 5 — Anlamsa Web ontolojileri",
+   "Hafta 6 — RDF ve RDFS",
+   "Hafta 7 — OWL’ye giriş",
+   "Hafta 8 — OWL kavramı",
+   "Hafta 9 — Anlamsal CBS kavramları ve fonksiyonları",
+   "Hafta 10 — CBS’de OWL kavramı",
+   "Hafta 11 — Coğrafi Web servislerinin keşif ve oluşturulmasında ontoloji",
+   "Hafta 12 — Veri bütünleştirme ontolojileri",
+   "Hafta 13 — Anlamsal CBS uygulamaları",
+   "Hafta 14 — Teoriden uygulamaya irdelemeler"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=605",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 696": {
+  "code": "GIT 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Seminerler; öğretim elemanları, çağrılı konuşmacılar ve derse kayıtlı öğrenciler tarafından verilir. Öğrenci sunumları, tez çalışmaları kapsamında da olabilir. Derste başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında da bilgi verilmektedir. Seminars are given by lecturers, invited speakers and students who are registered to the course. Students' presentations may be within the scope of their thesis topics. The course content also includes tips for a successful presentation.",
+  "outcomes": [
+   "Alanındaki güncel gelişmeleri ve kendi çalışmalarını, nicel ve nitel veriler ile destekleyerek, alanındaki ve alan dışındaki gruplara, yazılı, sözlü ve görsel olarak sistemli biçimde aktarabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Etkili bir sunuş nasıl yapılır (Seminer Koordinatörü)",
+   "Hafta 2 — Çağrılı konuşmacı sunumu",
+   "Hafta 3 — Çağrılı konuşmacı sunumu",
+   "Hafta 4 — Çağrılı konuşmacı sunumu",
+   "Hafta 5 — Çağrılı konuşmacı sunumu",
+   "Hafta 6 — Öğrenci sunumları",
+   "Hafta 7 — Öğrenci sunumları",
+   "Hafta 8 — Öğrenci sunumları",
+   "Hafta 9 — Öğrenci sunumları",
+   "Hafta 10 — Öğrenci sunumları",
+   "Hafta 11 — Öğrenci sunumları",
+   "Hafta 12 — Öğrenci sunumları",
+   "Hafta 13 — Öğrenci sunumları",
+   "Hafta 14 — Öğrenci sunumları"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GIT 801E": {
+  "code": "GIT 801E",
+  "name": "Introduction to Geomatics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 0
+  },
+  "description": "Geomatik’e genel bakış. Konumsal ve konumsal-olmayan bilgi sistemleri ve uygulama temel alanları. Coğrafi bilgi sistemlerine giriş ve temel tanımlar. Konumsal referans kavramları ve CBS’nin genel işleyişi, çalışma ilkeleri, bileşenleri ve fonksiyonları hakkında genel bilgiler. CBS’de veri toplama yöntemleri, sayısallaştırma, editleme teknikleri. Coğrafi bilgi sistemlerinde temel veri yönetim yaklaşımları, yazılım ve donanım sistemleri. A general view of Geomatics. Spatial and non-spatial information systems and main application areas. Introduction to GIS and basic definitions. Concept of geo-referenced data, and general working styles of GIS, main elements and functions of GIS. Data collection methods, digitizing, and editing techniques in GIS. Basic database management approaches, software and hardware systems in GIS.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, ilgili program alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme.",
+   "Alanı ile ilgili karşılaşılan özel sorunları araştırma yöntemlerini kullanarak çözümleyebilme",
+   "Mekansal veri elde etme yöntemlerinin temel özelliklerini bilmek.",
+   "Coğrafi Bilgi Sistemi projelerinde Geomatik Mühendisliğinin ürünlerinin yeri ve önemini bilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Geomatik'e giriş.",
+   "Hafta 2 — Temel harita bilgileri, ölçek, harita projeksiyonları.",
+   "Hafta 3 — Harita üretimi için veri toplama teknikleri. Fotogrametri, GPS, uzaktan algılama.",
+   "Hafta 4 — CBS'ye giriş ve temel tanımlar. CBS, veri/bilgi, geo-bilişim, veritabanı kavramları.",
+   "Hafta 5 — Coğrafi varlıklar ve CBS’de veri modelleri.",
+   "Hafta 6 — CBS'nin temel çalışma prensipleri ve CBS’nin bileşenler.",
+   "Hafta 7 — CBS’de temel veri toplama teknikleri, yaklaşımlar.",
+   "Hafta 8 — CBS’de vektörel veri sayısallaştırma ve editleme.",
+   "Hafta 9 — CBS’de raster veri tarama ve editleme.",
+   "Hafta 10 — Uygulama-I: Grafik ve grafik-olmayan verilerin bütünleştirilmesi",
+   "Hafta 11 — Uygulama-II: Grafik ve grafik-olmayan verilerin sorgulanması",
+   "Hafta 12 — Türkiye’den örnek CBS uygulamaları",
+   "Hafta 13 — Dünya’dan örnek CBS uygulamaları",
+   "Hafta 14 — Tartışma ve Değerlendirme"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=801",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

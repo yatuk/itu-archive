@@ -1,0 +1,171 @@
+{
+ "MTT 102E": {
+  "code": "MTT 102E",
+  "name": "İleri Lineer Cebir",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 4.5
+  },
+  "description": "Ortogonalite ve En Küçük Kareler: Ortogonal izdüşümler, en küçük kareler problemleri, ağırlıklı en küçük kareler, bir lineer operatörün eşleniği, normal ve öz-eşlenik operatörler, birimsel ve ortogonal operatörler ve bunların matrisleri. Özdeğerler ve Özvektörler: Özdeğerler ve özvektörler, köşegenleştirilebilirlik, değişmez alt uzaylar ve Cayley–Hamilton Teoremi, genelleştirilmiş özvektörler ve Jordan kanonik formu. Özdeğer ve Özvektör Uygulamaları: Markov süreci, spektral ayrışım ve tekil değer ayrışımı (SVD), baskın özdeğer ve temel bileşen analizi (PCA), reel kuadratik formlar, konik kesitler, kuadratik yüzeyler. Orthogonality and Least Squares: Orthogonal Projections, Least-Squares Problems, Weighted Least-Squares, the Adjoint of a Linear Operator, Normal and Self-Adjoint Operators, Unitary and Orthogonal Operators and Their Matrices Eigenvalues and Eigenvectors: Eigenvalues and Eigenvectors, Diagonalizability, Invariant Subspaces and the Cayley-Hamilton Theorem, Genelleştirilmiş Özvektörler and Jordan canonical form. Applications of Eigenvalues and Eigenvectors: Markov Process, Spectral Decomposition and Singular Value Decomposition (SVD), Dominant Eigenvalue and Principal Component Analysis (PCA), Real Quadratic Forms, Conic Sections, Quadratic Surfaces",
+  "outcomes": [
+   "İç çarpım uzaylarında diklik ve ortogonal projeksiyon kavramlarını açıklayabilir ve uygulayabilir.",
+   "En küçük kareler yöntemini ve ağırlıklı en küçük kareler problemlerini çözebilir.",
+   "Lineer operatörlerin eşleniğini, normal ve öz-eşlenik operatörleri tanımlayabilir ve bunların özelliklerini kullanabilir.",
+   "Bir matrisin benzerlik dönüşümleri yoluyla köşegenleştirilip köşegenleştirilemeyeceğini belirleyebilir.",
+   "Özdeğer ve özvektörleri hesaplayabilir ve bunları Markov süreçleri, PCA ve kuadratik formlar gibi uygulamalarda kullanabilir.",
+   "Spektral ayrışım ve tekil değer ayrışımını (SVD) temel düzeyde açıklayabilir.",
+   "Lineer cebir kavramlarını analitik geometri problemlerinin çözümünde uygulayabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel lineer cebir kavramları",
+   "Hafta 2 — Ortogonal projeksiyonlar, en küçük kareler yöntemine giriş",
+   "Hafta 3 — En küçük kareler problemleri, aşırı belirlenmiş sistemler, ağırlıklı en küçük kareler",
+   "Hafta 4 — Eşlenik operatör, normal ve öz-eşlenik operatörler, temel özellikler",
+   "Hafta 5 — Birimsel ve ortogonal operatörler; ortogonal/ünitery matrisler",
+   "Hafta 6 — Benzerlik dönüşümleri, diagonalizasyon kavramı",
+   "Hafta 7 — Cayley–Hamilton Teoremi, değişmez alt uzaylar",
+   "Hafta 8 — Genelleştirilmiş özvektörler ve Jordan zincirleri",
+   "Hafta 9 — Jordan kanonik formu, köşegenleştirilemeyen matrislerin yapısı",
+   "Hafta 10 — Özdeğer ve özvektörlerin hesaplanması, uygulamalara giriş",
+   "Hafta 11 — Markov süreçleri, baskın özdeğer, uzun dönem davranışı",
+   "Hafta 12 — Spektral ayrışım, tekil değer ayrışımı (SVD), PCA’ya giriş",
+   "Hafta 13 — Reel kuadratik formlar, konik kesitler",
+   "Hafta 14 — Kuadratik yüzeyler ve analitik geometri uygulamaları"
+  ],
+  "textbooks": [
+   "Bernard Kolman, David R. Hill, 2008, “Elementary Linear Algebra with Applications”, 9th Edition, Prentice Hall, ISBN:0-13-135063-3."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=102",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MTT 201E": {
+  "code": "MTT 201E",
+  "name": "Graf Teorisi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Temel Bilgiler, Tanımlar, Yollar, Çevrimler, Dereceler ve Sayma, Yönlü Graflar. Ağaçlar ve Uzaklık, Temel Özellikler, Geren Ağaçlar, Ağaçların Sayıları. Eşleşmeler ve Faktörler, Eşleşmeler ve Örtüler, Algoritmalar ve Uygulamaları, Eşleşmelerin Özellikleri. Kesikler ve Yollar, Bağlılık, Kesikler ve Bağlılık, K-Bağlı Graflar, Ağlarda Akım. Renklendirme, Düğüm Renklendirmeleri ve Üs Sınırlar, K-Renklendirilebilir Graflar ve Yapısal Özellikleri. Fundamental Concepts, Definitions, Paths,Cycles, Trails, Egrees and Counting. Directed Graphs Trees and Distance, Basic Properties, Spanning Trees and Enumeration. Matchings and Factors, Matchings and Covers, Algorithms and Applications, Matchings in General Graphs. Cuts and Paths, Connectivity, Cuts and Connectivity, K-Connected Graphs, Network Flow. Coloring, Vertex Coloring and Upper Bounds, Structure of K-Chromatic Graphs.",
+  "outcomes": [
+   "Temel graf teori sorularını çözebilir.",
+   "Graf teorinin uygulamalarını bilir.",
+   "Basit ayrık matematiksel modelleme yapabilir.",
+   "Ayrık matematik sorularını anlar ve çözebilir.",
+   "Graflarda temel sınırları bilir.ağaçlar ve uygulamarını öğrenme, becerilerini elde eder."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Grafın tanımı, patikalar çemberle ve yollar",
+   "Hafta 2 — Dereceler, samya ve yönlü graflar",
+   "Hafta 3 — Ağaçların temel özellikleri ve sayıları",
+   "Hafta 4 — Geren ağaçlar",
+   "Hafta 5 — Eşleşmeler ve örtüler",
+   "Hafta 6 — Algoritmalar vegenel graflarda eşleşmeler",
+   "Hafta 7 — Kesikler ve bağlılık",
+   "Hafta 8 — k-bağlı graflar ve Menger teoremi",
+   "Hafta 9 — Menger teoremi",
+   "Hafta 10 — Ağlarda akımlar",
+   "Hafta 11 — Renlendirme ve sınırlar",
+   "Hafta 12 — k-renklendirilebilir grafların yapısal özellikleri",
+   "Hafta 13 — Gömmeler ve Euler formülü",
+   "Hafta 14 — Düzlemsellik"
+  ],
+  "textbooks": [
+   "Introduction to Graph Theory – 3rd Ed., Douglas B. West. Pearson College Div., 2008. ISBN-13:  9780131437371"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=201",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MTT 305E": {
+  "code": "MTT 305E",
+  "name": "Sayılar Teorisi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bölünebilme, Euclid algoritması, asal sayılar, kongrüanslar, Çin kalan teoremi, Fermat küçük teoremi, Wilson teoremi, Euler teoremi, çarpımsal fonksiyonlar, Euler fonksiyonu, Möbius tersleme formülü, primitif kökler, asal kuvvet modüllü kongrüanslar, kuadratik rezidüler, kuadratik reciprosite, Jakobi ve Legendre sembolleri, sürekli kesirler, rasyonel yaklaşım, Diophant denklemler, Pell denklemi Divisibility, Euclidean algorithm, prime numbers, congruences, Chinese remainder theorem, Fermat’s little theorem, Wilson’s theorem, Euler’s theorem, Multiplicative functions, Euler’s function, Möbius inversion formula, primitive roots, congruences with prime power moduli, quadratic residues, quadratic reciprocity, Jacobi and Legendre symbols, continued fractions, rational approximation, Diophantine equations, Pell’s equation",
+  "outcomes": [
+   "Bölünebilme kavram ve özelliklerini anlar. En büyük ortak bölen ve en küçük ortak kat tanımlarını ve özelliklerini bilir.",
+   "Euclid algoritmasını anlar, lineer diofant denklemleri çözebilir, kongrüans kavramını anlar.",
+   "Bir sayının asal olup olmadığını belirleyebilir. Bir sayıyı asal çarpanlarına ayırabilir.",
+   "Kongrüanslarla temel işlemler yapabilir, lineer kongrüans denklemlerinin bütün çözümlerini bulabilir.",
+   "Çinlilerin kalan teoremini uygulayabilir.",
+   "Lineer olmayan kongrüans denklemlerinin çözüm kümelerini belirleyebilir, böyle denklem sistemlerini çözebilir.",
+   "Pirimitif kök nedir ve hangi sayıların primitif kökü vardır bilir.",
+   "Kuadratik rezidü ve kuadratik resiprosite kavramlarını anlar, aritmetik fonksiyoanları anlar ve özelliklerini kullanabilir.",
+   "Rasyonel ve reel sayıların sürekli kesirlerle temsillerini anlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Homework will be assigned for students to undertsand the course better.",
+   "Hafta 2 — Euclid Algoritması, Bezout’s eşitliği, Lineer Diofant Denklemler",
+   "Hafta 3 — Asal Sayılar, Asal Çarpanlara Ayırma, Aritmetiğin Temel Teoremi, Asal Sayıların Dağılımı",
+   "Hafta 4 — Fermat ve Mersenne sayıları, Kongrüanslar, Lineer kongrüans denklemleri",
+   "Hafta 5 — Lineer kongrüans denklem sistemler, Çinlilerin Kalan Teoremi",
+   "Hafta 6 — Polinom kongrüanlar, Asal kuvvet modüllü kongrüanslar Hensel’in yardımcı teoremi / Arasınav 1",
+   "Hafta 7 — Euler phi fonksiyonu, Euler Teoremi, Fermat Küçük Teoremi",
+   "Hafta 8 — Yarı asallar, Asallık testleri, Wilson Teoremi",
+   "Hafta 9 — Çarpımsal aritmetik fonksiyonlar, Möbiüs tersleme formula, Dirichlet iç çarpımı",
+   "Hafta 10 — Primitif kökler",
+   "Hafta 11 — Kuadratik Residüler",
+   "Hafta 12 — Legendre ve Jacobi sembolleri, Kuadratik reciprocite / Arasınav 2",
+   "Hafta 13 — Sürekli Kesirler, Rasyonel Yaklaşım",
+   "Hafta 14 — Diofant denklemleri, Pell denklemi"
+  ],
+  "textbooks": [
+   "K.H. Rosen, Elementary Number Theory and Its Applications, Addison-Wesley, 2011"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=305",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MTT 403": {
+  "code": "MTT 403",
+  "name": "Fonksiyonel Analiz",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Lineer ve normlu uzaylar. Lineer operatörler ve sınırlı lineer operatörler. Lineer fonksiyoneller. Dual uzay. Hilbert uzayları. Ortonormal sistemler ve tam vektörler. Bessel eşitsizliği. Parseval özelliği. Hilbert eşlenik operatörü, kendine eşlenik, üniter ve normal operatörler. Hahn-Banach teoremleri. Birinci ve ikinci kategori kümeleri. Düzgün sınırlılık prensibi. Kuvvetli ve zayıf yakınsaklık. Açık tasvir teoremi. Kapalı çizge teoremi. Linear and normed spaces. Linear operators and bounded linear operators. Linear functionals. Dual space. Hilbert spaces. The system of orthonormal and exact vectors. Bessel’s inequality. Parseval’s identity. Hilbert adjoint operator and self-adjoint, unitary and normal operators. Hahn-Banach Theorems. First and second category sets. The uniform boundedness principle. Strong and weak convergence. Open mapping theorem. Closed graph theorem.",
+  "outcomes": [
+   "Lineer ve normlu uzayların yapısını anlayabilme.",
+   "Lineer operatörler ve lineer fonksiyoneller ile ilgili teoremleri ispatlayabilme.",
+   "Hilbert uzayı ve Hilbert uzayı üzerindeki operatörlerin temel özelliklerini anlayabilme.",
+   "Fonksiyonel Analizin temel üç teoremi; Hahn-Banach teoremi, düzgün sınırlılık prensibi, kapalı çizge teoremini anlayabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Lineer ve normlu uzaylar.",
+   "Hafta 2 — Lineer ve normlu uzaylar.",
+   "Hafta 3 — Lineer operatörler ve sınırlı lineer operatörler, lineer fonksiyoneller.",
+   "Hafta 4 — Dual uzay, Hilbert uzayları.",
+   "Hafta 5 — Ortonormal sistemler ve tam vektörler.",
+   "Hafta 6 — Bessel eşitsizliği, Parseval özelliği.",
+   "Hafta 7 — Hilbert eşlenik operatörü , kendine eşlenik, üniter ve normal operatörler.",
+   "Hafta 8 — Hahn-Banach teoremleri.",
+   "Hafta 9 — Hahn-Banach teoremleri. / Birinci ve ikinci kategori kümeleri.",
+   "Hafta 10 — Birinci ve ikinci kategori kümeleri.",
+   "Hafta 11 — Düzgün sınırlılık prensibi.",
+   "Hafta 12 — Kuvvetli ve zayıf yakınsaklık.",
+   "Hafta 13 — Açık tasvir teoremi, kapalı çizge teoremi.",
+   "Hafta 14 — Örneklerle tekrar gözden geçirme."
+  ],
+  "textbooks": [
+   "E. Kreyszig, Inroductory Functional Analysis with Applications"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=403",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

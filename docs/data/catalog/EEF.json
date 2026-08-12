@@ -1,0 +1,939 @@
+{
+ "EEF 110E": {
+  "code": "EEF 110E",
+  "name": "Programlama Diline Giriş(C)",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 4.5
+  },
+  "description": "Temel programlama mantığının ve tekniklerinin kavranmasında, ileri düzey programlama dili kullanarak öğrencilere problemleri analiz etme ve çözme yeteneği kazandırmak. To give students the ability to analyze and solve problems by using advanced programming language in understanding the basic programming logic and techniques.",
+  "outcomes": [
+   "Bilgisayar sistemlerinde bilgi ve bilgi işlemenin temel kavramlarını anlamak: bilgi meselesi, veri temsili, kodlama sistemleri.",
+   "Bir algoritmanın anlaşılması ve tanımı.",
+   "Bir programlama dili sözdiziminin anlaşılması ve C dili örneği ile tanımı.",
+   "Zorunlu ve yapısal programlamanın temel ilkeleri bilgisi.",
+   "Temel kontrol yapılarını (koşullu ifadeler, döngüler, anahtarlar, dallanma vb.) kullanarak C dilinde basit programlar yazabilme.",
+   "Verilen bir problem için programlanabilir model oluşturabilme.",
+   "Bir fonksiyon kavramını ve fonksiyon argümanları ve parametreleriyle nasıl başa çıkılacağını anlamak.",
+   "Basit durumlarda pointer ve pointer aritmetiğini kullanabilme. C dilinde dizilerle çalışmanın temel bilgileri.",
+   "Savunma amaçlı bir programlama kavramını anlamak. Program yürütme sırasında olası hataları işleme yeteneği.",
+   "Temel programlama kodu stili bilgisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bölüm 1: Bilgisayarlara Giriş",
+   "Hafta 2 — Bölüm 2: C Programlamaya Giriş",
+   "Hafta 3 — Bölüm 2: C Programlamaya Giriş / Bölüm 3: C'de Yapılandırılmış Program Geliştirme",
+   "Hafta 4 — Ch3: C / Ch4'te Yapılandırılmış Program Geliştirme: C Program Kontrolü (döngüler için, switch case, do…while, break ve continue ifadeleri, mantıksal operatörler, eşitlik ve atama operatörleri vb.)",
+   "Hafta 5 — Ch4: C Program Kontrolü (döngüler, switch case, do…while, break ve continue deyimleri, mantıksal operatörler, eşitlik ve atama operatörleri vb. için)",
+   "Hafta 6 — Bölüm 5: C Fonksiyonları",
+   "Hafta 7 — Bölüm 5: C Fonksiyonları",
+   "Hafta 8 — Ara Sınav #1",
+   "Hafta 9 — Ch5: C Fonksiyonları / Ch6: C Dizileri",
+   "Hafta 10 — Bölüm 6: C Dizileri",
+   "Hafta 11 — Ch6: C Dizileri / Ch7: C İşaretçileri",
+   "Hafta 12 — Bölüm 7: C İşaretçileri",
+   "Hafta 13 — Ara Sınav #2",
+   "Hafta 14 — Hafta15 Bölüm 7: C İşaretçileri"
+  ],
+  "textbooks": [
+   "Deitel, Paul J., Deitel, Harvey M., C How to Program: with an introduction to C++, Upper Saddle River, NJ: Pearson, Global Edition, 8th ed., 2016, ISBN-13: 9781292110974"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=110",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 205": {
+  "code": "EEF 205",
+  "name": "Lojik Tasarıma Giriş",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Lojik Sistemler ve İkili Sayılar. Boole Cebrinin Aksiyomlar ile Tanımı. Boole Fonksiyonları. Boole Fonksiyonlarının İndirgenmesi. Lojik Kapılar. Donanım Tanımlama Dilleri (HDL). Kombinezonsal Devrelerin Analiz ve Tasarımı. HDL ile kombinezonsaI devre tasarım örnekleri. Boole Fonksiyonlarının orta (MSl) ölçekli tümdevre elemanları ile gerçeklenmesi. HDL ile MSl elemanlarını kullanarak Boole fonksiyonlarının gerçekleştirilmesi. Bellek Elemanları: Tutucular, Flip-Flop'lar, SR ve D Tutucunun HDL Modelleri. Senkron Ardışıl Devrelerin Analiz ve Tasarımı. Sonlu durum makinelerinin HDL Modelleri. Digital Systems and Binary Numbers. Axiomatic definition of Boolean Algebra. Boolean functions. Minimization. Digital Logic Gates. Hardware Description Languages (HDL). Analysis and Design of Combinational Circuits. Combinational Circuit design examples with HDL. Boolean Function lmplementation with MSl. HDL Model of BooIean Functions by MSl elements. Storage Elements: latches, Flip-Flops, HDL Model of SR and D Latches, Analysis and Design of Synchronous Sequential Circuits, HDL Model of Finite State Machine.",
+  "outcomes": [
+   "Sayısal ve Analog Sistemler Arasındaki Farkları, sayı sistemlerini Anlarlar",
+   "Boole Cebri ve Boole Fonksiyonlarını Bilirler",
+   "BooleFonksiyonlarını İndirgeyebilirler",
+   "Kombinezonsal Devreleri İki Seviyeli olarak Kapılar Kullanarak Tasar|ayabilirler",
+   "BooleFonksiyonlarını Msl Elemanlarınıkullanarak Gerçekleyebilirler",
+   "Senkron Ardışıl Devrelerin Analizini ve Tasarımını Yapabilirler",
+   "Kombinezonsal ve Senkron Ardışıl Devrelerin Donanım Tanımlama Dilleri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sayısal Sistemler, Analog/Sayısal Dönüşüm, Sayı Sistemleri, Sayı Tabanı Dönüşümleri, ikili sayılar",
+   "Hafta 2 — Boole Cebrinin Aksiyomlar ile Tanımı, Temel Teoremler ve Özellikler",
+   "Hafta 3 — Boole Fonksiyonları: Kanonik Gösterilimler. Lojik Kapılar",
+   "Hafta 4 — Donanım Tanımlama Dilleri (HDL), Boole Fonksiyonlarının HDL ile Modellenmesi",
+   "Hafta 5 — Boole Fonksiyonla rı nı n İ ndi rgenmesi: Quinn Mccluskey yöntemi(transformatör, jiratör), Bağımsız kaynaklar, bağımlı kaynaklar, çok uçlu devre elemanları (transistor, işlemsel kuvvetlendirici)",
+   "Hafta 6 — Karnaugh Diyagramları, Keyfi Çıkışlar, Evrense| Kapılar, TÜVE ve TÜVEYA Kapıları ile Gerçekleme",
+   "Hafta 7 — kombinezonsal Devrelerin Analiz ve Tasarımı",
+   "Hafta 8 — HDL ile kombinezonsal devre tasarım örnekleri",
+   "Hafta 9 — Orta ölçekli Tümdevre elemanları (MSl-Kodlayıcı, Kod Çözücü, Veri Toplayıcı, Veri dağıtıcı), Boo|e Fonksiyonlarının MSl elemanları ile gerçeklenmesi",
+   "Hafta 10 — Boole Fonksiyonlarının; MSl elemanlarını alt-blok olarak kullanarak HDL ile Modellenmesi",
+   "Hafta 11 — Bellek Elemanları: Tutucu, Flip-Floplar, SR Tutucu, Kontrol girişli SR Tutucu, D Tipi Tutucu ve D flip-flop un HDL Modelleri",
+   "Hafta 12 — Senkron Ardışıl Devrelerin Analizi, Sonlu Durum Makinalarının Meally ve Moore Modelleri,",
+   "Hafta 13 — Senkron Ardışıl Devrelerin Tasarımı",
+   "Hafta 14 — Sonlu Durum Makinalarının HDL Modelleri"
+  ],
+  "textbooks": [
+   "M. M. Mano, M. D. Ciletti, \"Digital Design\", (4th Edition) Prentice Hall, 2006"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=205",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 205E": {
+  "code": "EEF 205E",
+  "name": "Lojik Tasarıma Giriş",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Lojik Sistemler ve İkili Sayılar. Boole Cebrinin Aksiyomlar ile Tanımı. Boole Fonksiyonları. Boole Fonksiyonlarının İndirgenmesi. Lojik Kapılar. Donanım Tanımlama Dilleri (HDL). Kombinezonsal Devrelerin Analiz ve Tasarımı. HDL ile kombinezonsaI devre tasarım örnekleri. Boole Fonksiyonlarının orta (MSl) ölçekli tümdevre elemanları ile gerçeklenmesi. HDL ile MSl elemanlarını kullanarak Boole fonksiyonlarının gerçekleştirilmesi. Bellek Elemanları: Tutucular, Flip-Flop'lar, SR ve D Tutucunun HDL Modelleri. Senkron Ardışıl Devrelerin Analiz ve Tasarımı. Sonlu durum makinelerinin HDL Modelleri. Digital Systems and Binary Numbers. Axiomatic definition of Boolean Algebra. Boolean functions. Minimization. Digital Logic Gates. Hardware Description Languages (HDL). Analysis and Design of Combinational Circuits. Combinational Circuit design examples with HDL. Boolean Function lmplementation with MSl. HDL Model of BooIean Functions by MSl elements. Storage Elements: latches, Flip-Flops, HDL Model of SR and D Latches, Analysis and Design of Synchronous Sequential Circuits, HDL Model of Finite State Machine.",
+  "outcomes": [
+   "Sayısal ve Analog Sistemler Arasındaki Farkları, sayı sistemlerini Anlarlar",
+   "Boole Cebri ve Boole Fonksiyonlarını Bilirler",
+   "BooleFonksiyonlarını İndirgeyebilirler",
+   "Kombinezonsal Devreleri İki Seviyeli olarak Kapılar Kullanarak Tasar|ayabilirler",
+   "BooleFonksiyonlarını Msl Elemanlarınıkullanarak Gerçekleyebilirler",
+   "Senkron Ardışıl Devrelerin Analizini ve Tasarımını Yapabilirler",
+   "Kombinezonsal ve Senkron Ardışıl Devrelerin Donanım Tanımlama Dilleri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sayısal Sistemler, Analog/Sayısal Dönüşüm, Sayı Sistemleri, Sayı Tabanı Dönüşümleri, ikili sayılar",
+   "Hafta 2 — Boole Cebrinin Aksiyomlar ile Tanımı, Temel Teoremler ve Özellikler",
+   "Hafta 3 — Boole Fonksiyonları: Kanonik Gösterilimler. Lojik Kapılar",
+   "Hafta 4 — Donanım Tanımlama Dilleri (HDL), Boole Fonksiyonlarının HDL ile Modellenmesi",
+   "Hafta 5 — Boole Fonksiyonla rı nı n İ ndi rgenmesi: Quinn Mccluskey yöntemi(transformatör, jiratör), Bağımsız kaynaklar, bağımlı kaynaklar, çok uçlu devre elemanları (transistor, işlemsel kuvvetlendirici)",
+   "Hafta 6 — Karnaugh Diyagramları, Keyfi Çıkışlar, Evrense| Kapılar, TÜVE ve TÜVEYA Kapıları ile Gerçekleme",
+   "Hafta 7 — kombinezonsal Devrelerin Analiz ve Tasarımı",
+   "Hafta 8 — HDL ile kombinezonsal devre tasarım örnekleri",
+   "Hafta 9 — Orta ölçekli Tümdevre elemanları (MSl-Kodlayıcı, Kod Çözücü, Veri Toplayıcı, Veri dağıtıcı), Boo|e Fonksiyonlarının MSl elemanları ile gerçeklenmesi",
+   "Hafta 10 — Boole Fonksiyonlarının; MSl elemanlarını alt-blok olarak kullanarak HDL ile Modellenmesi",
+   "Hafta 11 — Bellek Elemanları: Tutucu, Flip-Floplar, SR Tutucu, Kontrol girişli SR Tutucu, D Tipi Tutucu ve D flip-flop un HDL Modelleri",
+   "Hafta 12 — Senkron Ardışıl Devrelerin Analizi, Sonlu Durum Makinalarının Meally ve Moore Modelleri,",
+   "Hafta 13 — Senkron Ardışıl Devrelerin Tasarımı",
+   "Hafta 14 — Sonlu Durum Makinalarının HDL Modelleri"
+  ],
+  "textbooks": [
+   "M. M. Mano, M. D. Ciletti, \"Digital Design\", (4th Edition) Prentice Hall, 2006"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=205",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 206": {
+  "code": "EEF 206",
+  "name": "İşaret İşleme ve Lineer Sist.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Sürekli zamanlı (SZ) işaret ve sistemlere giriş; SZ işaretlerin sınıflandırılması ve önemli SZ işaretler; SZ sistem özellikleri; SZ lineer zamanla değişmeyen (LZD) sistemler: impuls yanıtı, SZ konvolüsyon integrali, diferansiyel denklemler; SZ Fourier serisi açılımı (SZFS); SZ Fourier dönüşümü (SZFD); SZFD ve SZFS arasındaki ilişki; Laplace dönüşümü; SZ-LZD sistemlerin dönüşüm bölgesi analizi; Örnekleme ve örnekleme teoremi; Düzgün Kuvantalama; Ayrık zamanlı (AZ) işaret ve sistemlere giriş; AZ işaretlerin sınıflandırılması ve önemli AZ işaretler; AZ sistem özellikleri; AZ-LZD sistemler; AZ-LZD sistemlerin zaman bölgesi gösterimi: impuls yanıtı, AZ konvolüsyon toplamı, fark denklemleri; AZ Fourier serisi açılımı (AZFS); AZ Fourier dönüşümü (AZFD); AZFD ve AZFS arasındaki ilişki; z-dönüşümü; AZ-LZD sistemlerin dönüşüm bölgesi analizi; Haberleşme uygulamaları; Modülasyon ve demodülasyon; Süzgeçleme; Çok-boyutlu işaretler; Görüntü işleme uygulamaları. Introduction to continuous-time (CT) signals and systems; Classification of CT signals and important CT signals; CT system properties; CT linear time invariant (LTI) systems: impulse response, CT convolution integral, differential equations; CT Fourier series expansion (CTFS); CT Fourier transform (CTFT); Relationship between CTFT and CTFS; Laplace transform; Transform domain analysis of CT- LTI systems; Sampling and sampling theorem; Uniform Quantization; Introduction to discrete-time (DT) signals and systems; Classification of DT signals and important DT signals; DT system properties; DT-LTI systems; Time domain representations of DT-LTI systems: impulse response, DT convolution sum, difference equations; DT Fourier series expansion (DTFS); DT Fourier transform (CTFT); Relationship between DTFT and DTFS; z-transform; Transform domain analysis of DT- LTI systems; Telecommunication applications; Modulation and demodulation; Filtering; Multidimensional signals; Image processing applications.",
+  "outcomes": [
+   "Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin sınıflandırılması ve özellikleri",
+   "Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin zaman bölgesinde gösterimi ve analizi",
+   "Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin frekans bölgesinde gösterimi ve analizi,",
+   ". Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin dönüşüm bölgesinde gösterimi ve analizi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sürekli-zamanlı işaretler ve sistemler",
+   "Hafta 2 — Sürekli-zamanlı, lineer zamanla-değişmeyen (LZD) sistemler",
+   "Hafta 3 — Sürekli-zamanlı konvolüsyon, sürekli zamanda diferansiyel denklemler",
+   "Hafta 4 — Sürekli-zamanlı Fourier serisi açılımı",
+   "Hafta 5 — Sürekli-zamanlı Fourier dönüşümü",
+   "Hafta 6 — Laplace dönüşümü, sürekli-zamanlı LZD sistemlerin analizi",
+   "Hafta 7 — Örnekleme ve kuvantalama",
+   "Hafta 8 — Ayrık-zamanlı işaretler ve sistemler",
+   "Hafta 9 — Ayrık-zamanlı LZD sistemler, ayrık-zamanlı konvolüsyon, ayrık zamanda fark denklemleri",
+   "Hafta 10 — Ayrık-zamanlı Fourier serisi açılımı",
+   "Hafta 11 — Ayrık-zamanlı Fourier dönüşümü",
+   "Hafta 12 — z-dönüşümü, ayrık-zamanlı LZD sistemlerin analizi",
+   "Hafta 13 — Haberleşme uygulamaları, modülasyon ve demodülasyon, süzgeçleme",
+   "Hafta 14 — Çok-boyutlu işaretler, görüntü işleme uygulamaları"
+  ],
+  "textbooks": [
+   "Alan Oppenheim, Alan Willsky, Signals and Systems, Prentice Hall, 1996."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=206",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 206E": {
+  "code": "EEF 206E",
+  "name": "İşaret İşleme ve Lineer Sist.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Sürekli zamanlı (SZ) işaret ve sistemlere giriş; SZ işaretlerin sınıflandırılması ve önemli SZ işaretler; SZ sistem özellikleri; SZ lineer zamanla değişmeyen (LZD) sistemler: impuls yanıtı, SZ konvolüsyon integrali, diferansiyel denklemler; SZ Fourier serisi açılımı (SZFS); SZ Fourier dönüşümü (SZFD); SZFD ve SZFS arasındaki ilişki; Laplace dönüşümü; SZ-LZD sistemlerin dönüşüm bölgesi analizi; Örnekleme ve örnekleme teoremi; Düzgün Kuvantalama; Ayrık zamanlı (AZ) işaret ve sistemlere giriş; AZ işaretlerin sınıflandırılması ve önemli AZ işaretler; AZ sistem özellikleri; AZ-LZD sistemler; AZ-LZD sistemlerin zaman bölgesi gösterimi: impuls yanıtı, AZ konvolüsyon toplamı, fark denklemleri; AZ Fourier serisi açılımı (AZFS); AZ Fourier dönüşümü (AZFD); AZFD ve AZFS arasındaki ilişki; z-dönüşümü; AZ-LZD sistemlerin dönüşüm bölgesi analizi; Haberleşme uygulamaları; Modülasyon ve demodülasyon; Süzgeçleme; Çok-boyutlu işaretler; Görüntü işleme uygulamaları. Introduction to continuous-time (CT) signals and systems; Classification of CT signals and important CT signals; CT system properties; CT linear time invariant (LTI) systems: impulse response, CT convolution integral, differential equations; CT Fourier series expansion (CTFS); CT Fourier transform (CTFT); Relationship between CTFT and CTFS; Laplace transform; Transform domain analysis of CT- LTI systems; Sampling and sampling theorem; Uniform Quantization; Introduction to discrete-time (DT) signals and systems; Classification of DT signals and important DT signals; DT system properties; DT-LTI systems; Time domain representations of DT-LTI systems: impulse response, DT convolution sum, difference equations; DT Fourier series expansion (DTFS); DT Fourier transform (CTFT); Relationship between DTFT and DTFS; z-transform; Transform domain analysis of DT- LTI systems; Telecommunication applications; Modulation and demodulation; Filtering; Multidimensional signals; Image processing applications.",
+  "outcomes": [
+   "Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin sınıflandırılması ve özellikleri",
+   "Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin zaman bölgesinde gösterimi ve analizi",
+   "Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin frekans bölgesinde gösterimi ve analizi,",
+   ". Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin dönüşüm bölgesinde gösterimi ve analizi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sürekli-zamanlı işaretler ve sistemler",
+   "Hafta 2 — Sürekli-zamanlı, lineer zamanla-değişmeyen (LZD) sistemler",
+   "Hafta 3 — Sürekli-zamanlı konvolüsyon, sürekli zamanda diferansiyel denklemler",
+   "Hafta 4 — Sürekli-zamanlı Fourier serisi açılımı",
+   "Hafta 5 — Sürekli-zamanlı Fourier dönüşümü",
+   "Hafta 6 — Laplace dönüşümü, sürekli-zamanlı LZD sistemlerin analizi",
+   "Hafta 7 — Örnekleme ve kuvantalama",
+   "Hafta 8 — Ayrık-zamanlı işaretler ve sistemler",
+   "Hafta 9 — Ayrık-zamanlı LZD sistemler, ayrık-zamanlı konvolüsyon, ayrık zamanda fark denklemleri",
+   "Hafta 10 — Ayrık-zamanlı Fourier serisi açılımı",
+   "Hafta 11 — Ayrık-zamanlı Fourier dönüşümü",
+   "Hafta 12 — z-dönüşümü, ayrık-zamanlı LZD sistemlerin analizi",
+   "Hafta 13 — Haberleşme uygulamaları, modülasyon ve demodülasyon, süzgeçleme",
+   "Hafta 14 — Çok-boyutlu işaretler, görüntü işleme uygulamaları"
+  ],
+  "textbooks": [
+   "Alan Oppenheim, Alan Willsky, Signals and Systems, Prentice Hall, 1996."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=206",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 210": {
+  "code": "EEF 210",
+  "name": "Diferansiyel Denklemler",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Birinci Mertebeden Diferansiyel Denklemler, İkinci Mertebeden LineerDiferansiyel Denklemler, Yüksek Mertebeden Lineer Diferansiyel Denklemler,Laplace Dönüşümleri, Birinci Mertebeden Lineer Denklem Sistemleri, İkinci Mertebeden Lineer Denklemlerin Seri Çözümleri First Order Differential Equations, Second Order Linear Equations, Higher Order Linear Equations, The Laplace Transform, Systems of First Order Linear Equations, Series Solutions of Second Order Linear Equations",
+  "outcomes": [
+   "Diferansiyel denklemleri belli özelliklerine göre sınıflandırır.",
+   "Birinci mertebeden lineer ve belirli tipte lineer olmayan diferansiyel denklemleri çözer ve çözümleri yorumlar",
+   "Lineer denklem çözümleri için varlık ve teklik koşullarını anlar",
+   "İkinci ve daha yüksek mertebeden sabit katsayılı lineer denklemler için çözüm bulur ve lineer bağımsız çözümlerden tüm çözümleri türetir.",
+   "Laplace dönüşümü kullanarak ilk değer problemleri çözer",
+   "Lineer denklem sistemlerini lineer cebirsel yöntemler çözer.",
+   "İkinci mertebeden lineer denklemler için adi ve düzgün tekil noktalar etrafında seri çözümler bulur."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş. Birinci Mertebeden Diferansiyel Denklemler (Temel Kavramlar, Basit DD Örneği DD’lerin Sınıflandırması)",
+   "Hafta 2 — Birinci Mertebeden Diferansiyel Denklemler (Lineer Denklemler, Ayrılabilir Denklemler, Varlık ve Teklik Teoremi)",
+   "Hafta 3 — Birinci Mertebeden Diferansiyel Denklemler (Tam Denklemler, Homojen Denklemler, Riccati Denklemi)",
+   "Hafta 4 — İkinci Mertebeden Diferansiyel Denklemler (Sabit Katsayılı Homojen Lineer Denklemler, Temel Teoremler, Wronskian, Karakteristik Denklemin Karmaşık Kökleri)",
+   "Hafta 5 — İkinci Mertebeden Diferansiyel Denklemler (Karakteristik Denklerim Tekrarlı Kökleri, Mertebe Düşürme Yöntemi, Homojen Olmayan Denklemler , Belirsiz Katsayılar Yöntemi, Parametrelerin Değişimi Yöntemi )",
+   "Hafta 6 — İkinci Mertebeden Diferansiyel Denklemler (Mekanik ve Elektriksel Salınımlar, Zorlanmış Salınımlar) Yüksek Mertebeden Diferansiyel Denklemler (n’inci Dereceden Lineer Denklemlerin Genel Teorisi)",
+   "Hafta 7 — Yüksek Mertebeden Diferansiyel Denklemler (Sabit Katsayılı Lineer Denklemler, Belirsiz Katsayılar Yöntemi, Parametrelerin DeğişimiYöntemi)",
+   "Hafta 8 — Laplace Dönüşümü ( Laplace Dönüşümünün Tanımı, İlkdeğer Problemleri, Basamak Fonksiyonu)",
+   "Hafta 9 — Laplace Dönüşümü (Süreksiz Zorlama Fonksiyonlu DD’ler, Dürtü Fonksiyonu, Konvolüsyon Integrali)",
+   "Hafta 10 — Birinci Mertebeden Lineer Denklem Sistemleri (Giriş, Birinci Dereceden Lineer Sistemleri Temel Teorisi)",
+   "Hafta 11 — Birinci Mertebeden Lineer Denklem Sistemleri (Sabit Katsayılı Homojen Lineer Sistemler, Karmaşık Özdeğerler, Temel Matrisler)",
+   "Hafta 12 — Birinci Mertebeden Lineer Denklem Sistemleri (Tekrarlı Özdeğerler, Homojen Olmayan Lineer Sistemler)",
+   "Hafta 13 — İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Adi Nokta Etrafında Seri Çözümleri, Euler Denklemler, Regüler Singüler Noktalar)",
+   "Hafta 14 — İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Regüler Singüler Nokta Etrafında Seri Çözümleri)"
+  ],
+  "textbooks": [
+   "Elementary Differential Equations and boundary Value Problems Sixth Edition , William E. Boyce-Richard C. Diprima"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=210",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 210E": {
+  "code": "EEF 210E",
+  "name": "Diferansiyel Denklemler",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Birinci Mertebeden Diferansiyel Denklemler, İkinci Mertebeden LineerDiferansiyel Denklemler, Yüksek Mertebeden Lineer Diferansiyel Denklemler,Laplace Dönüşümleri, Birinci Mertebeden Lineer Denklem Sistemleri, İkinci Mertebeden Lineer Denklemlerin Seri Çözümleri First Order Differential Equations, Second Order Linear Equations, Higher Order Linear Equations, The Laplace Transform, Systems of First Order Linear Equations, Series Solutions of Second Order Linear Equations",
+  "outcomes": [
+   "Diferansiyel denklemleri belli özelliklerine göre sınıflandırır.",
+   "Birinci mertebeden lineer ve belirli tipte lineer olmayan diferansiyel denklemleri çözer ve çözümleri yorumlar",
+   "Lineer denklem çözümleri için varlık ve teklik koşullarını anlar",
+   "İkinci ve daha yüksek mertebeden sabit katsayılı lineer denklemler için çözüm bulur ve lineer bağımsız çözümlerden tüm çözümleri türetir.",
+   "Laplace dönüşümü kullanarak ilk değer problemleri çözer",
+   "Lineer denklem sistemlerini lineer cebirsel yöntemler çözer.",
+   "İkinci mertebeden lineer denklemler için adi ve düzgün tekil noktalar etrafında seri çözümler bulur."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş. Birinci Mertebeden Diferansiyel Denklemler (Temel Kavramlar, Basit DD Örneği DD’lerin Sınıflandırması)",
+   "Hafta 2 — Birinci Mertebeden Diferansiyel Denklemler (Lineer Denklemler, Ayrılabilir Denklemler, Varlık ve Teklik Teoremi)",
+   "Hafta 3 — Birinci Mertebeden Diferansiyel Denklemler (Tam Denklemler, Homojen Denklemler, Riccati Denklemi)",
+   "Hafta 4 — İkinci Mertebeden Diferansiyel Denklemler (Sabit Katsayılı Homojen Lineer Denklemler, Temel Teoremler, Wronskian, Karakteristik Denklemin Karmaşık Kökleri)",
+   "Hafta 5 — İkinci Mertebeden Diferansiyel Denklemler (Karakteristik Denklerim Tekrarlı Kökleri, Mertebe Düşürme Yöntemi, Homojen Olmayan Denklemler , Belirsiz Katsayılar Yöntemi, Parametrelerin Değişimi Yöntemi )",
+   "Hafta 6 — İkinci Mertebeden Diferansiyel Denklemler (Mekanik ve Elektriksel Salınımlar, Zorlanmış Salınımlar) Yüksek Mertebeden Diferansiyel Denklemler (n’inci Dereceden Lineer Denklemlerin Genel Teorisi)",
+   "Hafta 7 — Yüksek Mertebeden Diferansiyel Denklemler (Sabit Katsayılı Lineer Denklemler, Belirsiz Katsayılar Yöntemi, Parametrelerin DeğişimiYöntemi)",
+   "Hafta 8 — Laplace Dönüşümü ( Laplace Dönüşümünün Tanımı, İlkdeğer Problemleri, Basamak Fonksiyonu)",
+   "Hafta 9 — Laplace Dönüşümü (Süreksiz Zorlama Fonksiyonlu DD’ler, Dürtü Fonksiyonu, Konvolüsyon Integrali)",
+   "Hafta 10 — Birinci Mertebeden Lineer Denklem Sistemleri (Giriş, Birinci Dereceden Lineer Sistemleri Temel Teorisi)",
+   "Hafta 11 — Birinci Mertebeden Lineer Denklem Sistemleri (Sabit Katsayılı Homojen Lineer Sistemler, Karmaşık Özdeğerler, Temel Matrisler)",
+   "Hafta 12 — Birinci Mertebeden Lineer Denklem Sistemleri (Tekrarlı Özdeğerler, Homojen Olmayan Lineer Sistemler)",
+   "Hafta 13 — İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Adi Nokta Etrafında Seri Çözümleri, Euler Denklemler, Regüler Singüler Noktalar)",
+   "Hafta 14 — İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Regüler Singüler Nokta Etrafında Seri Çözümleri)"
+  ],
+  "textbooks": [
+   "Elementary Differential Equations and boundary Value Problems Sixth Edition , William E. Boyce-Richard C. Diprima"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=210",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 211": {
+  "code": "EEF 211",
+  "name": "Elektrik Devre Temelleri",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Fiziksel elektrik devreleri. Elektrik devre elemanları ve devrelerin matematiksel modelinin elde edilmesi. Güç ve enerji fonksiyonları. Aktif ve pasif eleman tanımları. Devre teorisinin aksiyomları, tanımsız büyüklükleri. Kirchhoff yasalarına ilişkin denklemlerin yazılması. Graf teorisinin temel tanımları. Devre grafları. Graf matrisleri. Tellegen Teoremi. İki ve çok uçlu devre elemanları: direnç, kapasite, endüktans, memristör. Direnç devrelerine ilişkin devre denklemlerinin elde edilmesi: Kiriş akımları, Dal Gerilimleri, Çevre akımları ve düğüm gerilimleri yöntemleri. Lineer olmayan direnç devrelerinin incelenmesi: Çalışma noktasının ve küçük işaret eşdeğer devresinin elde edilmesi. Thevenin ve Norton teoremleri. Dinamik (RLC) devrelerin incelenmesi: durum denklemleri yöntemi. Birinci ve ikinci mertebeden durum denklemlerinin öz, zorlanmış ve tam çözümü. Physical Electric circuits. Modeling of electrical circuits elements. Power and energy function. Active and passive elements. Axioms of Circuit theory and undefined variables. Kirchhoff’s laws: Current and voltage equations. Basics of graf theory, circuit graphs and graph matrices. Tellegen Theorem. Two and multi-terminal elements: resistor, capacitor, inductor, memristor. Chord Current, Branch Voltage, Node voltage and Mesh current methods for resistive circuits. Analysis of Nonlinear resistive circuits: Operating points, small signal equivalent circuit. Thevenin and Norton theorems. Analysis of dynamic (RLC) circuits: State equations. Zero-input, zero-state and complete solution of first and second order state equations.",
+  "outcomes": [
+   "Elektrik devrelerindeki temel 2- uçlu ve çok uçlu elemanları öğrenmek",
+   "Kirchoff’un akım ve gerilim yasalarının öğrenmek",
+   "Düğüm gerilimleri ve çevre akımı yöntemleri ile dirençli devrelerin analizini yapabilmek",
+   "Lineer olmayan dirençli devrelerin analizini yapabilmek",
+   "Bir RLC devresinin durum denklemlerini elde edebilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektrik devresi ve devre teorisi. Toplu parametreli devreler. Elektrik devre elemanlarının matematiksel modellerinin elde edilmesi: ölçüm grafı ve uç grafı",
+   "Hafta 2 — Kirchhoff'un gerilim ve akım yasaları, Güç ve enerji fonksiyonları. Tellegen teoremi",
+   "Hafta 3 — Graf teorisinde temel tanımlar, devre grafı ve graf matrisleri.",
+   "Hafta 4 — Devre grafında lineer bağımsız akım ve gerilim denklem takımlarının elde edilmesi",
+   "Hafta 5 — Lineer ve Lineer olmayan iki uçlu (Direnç,kapasite, endüktans,memristör) devre elemanları, iki kapılı devre elemanları (transformatör, jiratör), Bağımsız kaynaklar, bağımlı kaynaklar, çok uçlu devre elemanları (transistor, işlemsel kuvvetlendirici",
+   "Hafta 6 — 2-uçlu lineer ve lineer olmayan devre elemanları, paralel-seri bağlantı, Aktif ve pasif eleman tanımları",
+   "Hafta 7 — Dirençli Devrelerin Graf Temelli Analiz Yöntemleri: Kiriş akımları ve Dal Gerilimleri Yöntemleri",
+   "Hafta 8 — Düğüm gerilimleri yöntemi",
+   "Hafta 9 — Çevre akımları yöntemi",
+   "Hafta 10 — Norton ve Thevenin eşdeğer devreleri",
+   "Hafta 11 — Lineer olmayan dirençli devrelerin analizi; Çalışma noktasının bulunması, Küçük işaret analizi",
+   "Hafta 12 — RLC devrelerinin durum denklemlerinin elde edilmesi",
+   "Hafta 13 — RLC ve çok uçlulardan oluşmuş devrelerde durum denklemlerinin elde edilmesi",
+   "Hafta 14 — Birinci ve ikinci mertebeden devrelerin öz, zorlanmış ve tam çözümleri"
+  ],
+  "textbooks": [
+   "LINEAR AND NONLINEAR CIRCUITS: BASIC & ADVANCED CONCEPT, M. PARODI AND M. STORACE, SPRINGER INT. PUB. 2018. (ISSN 1876-1100)."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 211E": {
+  "code": "EEF 211E",
+  "name": "Elektrik Devre Temelleri",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Fiziksel elektrik devreleri. Elektrik devre elemanları ve devrelerin matematiksel modelinin elde edilmesi. Güç ve enerji fonksiyonları. Aktif ve pasif eleman tanımları. Devre teorisinin aksiyomları, tanımsız büyüklükleri. Kirchhoff yasalarına ilişkin denklemlerin yazılması. Graf teorisinin temel tanımları. Devre grafları. Graf matrisleri. Tellegen Teoremi. İki ve çok uçlu devre elemanları: direnç, kapasite, endüktans, memristör. Direnç devrelerine ilişkin devre denklemlerinin elde edilmesi: Kiriş akımları, Dal Gerilimleri, Çevre akımları ve düğüm gerilimleri yöntemleri. Lineer olmayan direnç devrelerinin incelenmesi: Çalışma noktasının ve küçük işaret eşdeğer devresinin elde edilmesi. Thevenin ve Norton teoremleri. Dinamik (RLC) devrelerin incelenmesi: durum denklemleri yöntemi. Birinci ve ikinci mertebeden durum denklemlerinin öz, zorlanmış ve tam çözümü. Physical Electric circuits. Modeling of electrical circuits elements. Power and energy function. Active and passive elements. Axioms of Circuit theory and undefined variables. Kirchhoff’s laws: Current and voltage equations. Basics of graf theory, circuit graphs and graph matrices. Tellegen Theorem. Two and multi-terminal elements: resistor, capacitor, inductor, memristor. Chord Current, Branch Voltage, Node voltage and Mesh current methods for resistive circuits. Analysis of Nonlinear resistive circuits: Operating points, small signal equivalent circuit. Thevenin and Norton theorems. Analysis of dynamic (RLC) circuits: State equations. Zero-input, zero-state and complete solution of first and second order state equations.",
+  "outcomes": [
+   "Elektrik devrelerindeki temel 2- uçlu ve çok uçlu elemanları öğrenmek",
+   "Kirchoff’un akım ve gerilim yasalarının öğrenmek",
+   "Düğüm gerilimleri ve çevre akımı yöntemleri ile dirençli devrelerin analizini yapabilmek",
+   "Lineer olmayan dirençli devrelerin analizini yapabilmek",
+   "Bir RLC devresinin durum denklemlerini elde edebilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektrik devresi ve devre teorisi. Toplu parametreli devreler. Elektrik devre elemanlarının matematiksel modellerinin elde edilmesi: ölçüm grafı ve uç grafı",
+   "Hafta 2 — Kirchhoff'un gerilim ve akım yasaları, Güç ve enerji fonksiyonları. Tellegen teoremi",
+   "Hafta 3 — Graf teorisinde temel tanımlar, devre grafı ve graf matrisleri.",
+   "Hafta 4 — Devre grafında lineer bağımsız akım ve gerilim denklem takımlarının elde edilmesi",
+   "Hafta 5 — Lineer ve Lineer olmayan iki uçlu (Direnç,kapasite, endüktans,memristör) devre elemanları, iki kapılı devre elemanları (transformatör, jiratör), Bağımsız kaynaklar, bağımlı kaynaklar, çok uçlu devre elemanları (transistor, işlemsel kuvvetlendirici",
+   "Hafta 6 — 2-uçlu lineer ve lineer olmayan devre elemanları, paralel-seri bağlantı, Aktif ve pasif eleman tanımları",
+   "Hafta 7 — Dirençli Devrelerin Graf Temelli Analiz Yöntemleri: Kiriş akımları ve Dal Gerilimleri Yöntemleri",
+   "Hafta 8 — Düğüm gerilimleri yöntemi",
+   "Hafta 9 — Çevre akımları yöntemi",
+   "Hafta 10 — Norton ve Thevenin eşdeğer devreleri",
+   "Hafta 11 — Lineer olmayan dirençli devrelerin analizi; Çalışma noktasının bulunması, Küçük işaret analizi",
+   "Hafta 12 — RLC devrelerinin durum denklemlerinin elde edilmesi",
+   "Hafta 13 — RLC ve çok uçlulardan oluşmuş devrelerde durum denklemlerinin elde edilmesi",
+   "Hafta 14 — Birinci ve ikinci mertebeden devrelerin öz, zorlanmış ve tam çözümleri"
+  ],
+  "textbooks": [
+   "LINEAR AND NONLINEAR CIRCUITS: BASIC & ADVANCED CONCEPT, M. PARODI AND M. STORACE, SPRINGER INT. PUB. 2018. (ISSN 1876-1100)."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 212": {
+  "code": "EEF 212",
+  "name": "Elektromagnetik Teori I",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Vektör analizi, vektör diferansiyel operatörler, statik elektrik alan, elektrik potansiyel, iletken ve dielektrik ortamlarda elektrostatik alan, elektrostatik enerji, elektrostatik sınır koşulları, statik magnetik alan, vektör potansiyel, magnetik devreler, magnetik enerji, magnetik alana ilişkin sınır koşulları, yarı-statik alanlar, zamanla değişen alanlar ve Maxwell denklemleri, basit ortamda dalga yayılımı ve frekans domeni dalga büyüklükleri Vector analysis, vectorial differential operators, static electric field, electric potential, electrostatic field analysis in conductors and dielectric media, electrostatic energy, electrostatic boundary conditions, magnetostatic field, vector potential, magnetic circuits, magnetic energy, magnetostatik boundary conditions, quasi-static fields, time varying fields and Maxwell equations, wave propagation in free space and some wave properties in time harmonic case.",
+  "outcomes": [
+   "Vektör cebrini kullanma ve vektör diferansiyel operatörler ile hesaplama yapabilme,",
+   "Elektrostatik alan, kuvvet ve potansiyel hesaplarını yapabilme",
+   "İletken ve dielektrik malzemelerdeki alanları hesaplama",
+   "Statik magnetik alan ve kuvvet hesaplama",
+   "Magnetik malzemelerde statik magnetik alana ilişkin problemleri çözme",
+   "Faraday ve Ampere yasasını kullanarak elektromagnetik alan problemlerini çözme",
+   "Yayılım kavramı, dalgaların temel özellikleri ve büyüklüklerini yorumlayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Vektör analiz ve koordinat sistemleri, Diferansiyel operatörler, Gauss ve Stokes teoremleri, Sıfır denklikleri",
+   "Hafta 2 — Yük dağılımları, Coulomb yasası, Boş uzayda elektrostatik alan, Alan çizgileri, Elektrostatik potansiyel ve iş",
+   "Hafta 3 — Elektrostatik’in temel denklemleri, Gauss ve Poisson bağıntıları, Polarizasyon kavramı, dielektrik ve iletken cisimler, sınır koşulları",
+   "Hafta 4 — Görüntü yöntemi, Kondansatör, elektrostatik enerji yoğunluğu, Depo edilen enerji",
+   "Hafta 5 — Durgun Elektrik Akımı, Akım Yoğunluğu, Ohm Yasası, Direnç, Akım, Gerilim; Kirchoff Akım ve Gerilim Yasası",
+   "Hafta 6 — Boşlukta statik magnetik alan, Lorentz kuvveti, Biot-Savart yasası, Magnetik alan çizgileri",
+   "Hafta 7 — Amperé yasası, Vektör potansiyel, Magnetostatik’in temel denklemleri,",
+   "Hafta 8 — Magnetik malzemeler, Histerezis, Sınır koşulları, Endüktans, Magnetik Enerji",
+   "Hafta 9 — Genelleştirilmiş Amperé yasası, Faraday Yasası, Maxwell denklemleri ve Elektrodinamiğin temelleri",
+   "Hafta 10 — Magnetik devreler, Transformatörler, Elektromekanik enerji dönüşümü",
+   "Hafta 11 — R,L,C elemanlarının zaman domeni bağıntıları, Zamanda Harmonik kaynaklar, Fazör Gösterilim ve devre eşdeğerleri",
+   "Hafta 12 — Zaman ve Frekans domeni Dalga Denklemleri ve Genel Çözümleri",
+   "Hafta 13 — Zamanda Harmonik Dalgalar, Fazör Gösterilim. Elektromagnetik Spektrum",
+   "Hafta 14 — Düzlem Dalgalar, Frekans, Dalga Boyu, Faz Hızı, Elektromagnetik Dalgaların Uygulama alanları"
+  ],
+  "textbooks": [
+   "D. K. Cheng, Field and Wave Electromagnetics"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=212",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 212E": {
+  "code": "EEF 212E",
+  "name": "Elektromagnetik Teori I",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Vektör analizi, vektör diferansiyel operatörler, statik elektrik alan, elektrik potansiyel, iletken ve dielektrik ortamlarda elektrostatik alan, elektrostatik enerji, elektrostatik sınır koşulları, statik magnetik alan, vektör potansiyel, magnetik devreler, magnetik enerji, magnetik alana ilişkin sınır koşulları, yarı-statik alanlar, zamanla değişen alanlar ve Maxwell denklemleri, basit ortamda dalga yayılımı ve frekans domeni dalga büyüklükleri Vector analysis, vectorial differential operators, static electric field, electric potential, electrostatic field analysis in conductors and dielectric media, electrostatic energy, electrostatic boundary conditions, magnetostatic field, vector potential, magnetic circuits, magnetic energy, magnetostatik boundary conditions, quasi-static fields, time varying fields and Maxwell equations, wave propagation in free space and some wave properties in time harmonic case.",
+  "outcomes": [
+   "Vektör cebrini kullanma ve vektör diferansiyel operatörler ile hesaplama yapabilme,",
+   "Elektrostatik alan, kuvvet ve potansiyel hesaplarını yapabilme",
+   "İletken ve dielektrik malzemelerdeki alanları hesaplama",
+   "Statik magnetik alan ve kuvvet hesaplama",
+   "Magnetik malzemelerde statik magnetik alana ilişkin problemleri çözme",
+   "Faraday ve Ampere yasasını kullanarak elektromagnetik alan problemlerini çözme",
+   "Yayılım kavramı, dalgaların temel özellikleri ve büyüklüklerini yorumlayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Vektör analiz ve koordinat sistemleri, Diferansiyel operatörler, Gauss ve Stokes teoremleri, Sıfır denklikleri",
+   "Hafta 2 — Yük dağılımları, Coulomb yasası, Boş uzayda elektrostatik alan, Alan çizgileri, Elektrostatik potansiyel ve iş",
+   "Hafta 3 — Elektrostatik’in temel denklemleri, Gauss ve Poisson bağıntıları, Polarizasyon kavramı, dielektrik ve iletken cisimler, sınır koşulları",
+   "Hafta 4 — Görüntü yöntemi, Kondansatör, elektrostatik enerji yoğunluğu, Depo edilen enerji",
+   "Hafta 5 — Durgun Elektrik Akımı, Akım Yoğunluğu, Ohm Yasası, Direnç, Akım, Gerilim; Kirchoff Akım ve Gerilim Yasası",
+   "Hafta 6 — Boşlukta statik magnetik alan, Lorentz kuvveti, Biot-Savart yasası, Magnetik alan çizgileri",
+   "Hafta 7 — Amperé yasası, Vektör potansiyel, Magnetostatik’in temel denklemleri,",
+   "Hafta 8 — Magnetik malzemeler, Histerezis, Sınır koşulları, Endüktans, Magnetik Enerji",
+   "Hafta 9 — Genelleştirilmiş Amperé yasası, Faraday Yasası, Maxwell denklemleri ve Elektrodinamiğin temelleri",
+   "Hafta 10 — Magnetik devreler, Transformatörler, Elektromekanik enerji dönüşümü",
+   "Hafta 11 — R,L,C elemanlarının zaman domeni bağıntıları, Zamanda Harmonik kaynaklar, Fazör Gösterilim ve devre eşdeğerleri",
+   "Hafta 12 — Zaman ve Frekans domeni Dalga Denklemleri ve Genel Çözümleri",
+   "Hafta 13 — Zamanda Harmonik Dalgalar, Fazör Gösterilim. Elektromagnetik Spektrum",
+   "Hafta 14 — Düzlem Dalgalar, Frekans, Dalga Boyu, Faz Hızı, Elektromagnetik Dalgaların Uygulama alanları"
+  ],
+  "textbooks": [
+   "D. K. Cheng, Field and Wave Electromagnetics"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=212",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 221": {
+  "code": "EEF 221",
+  "name": "Elektrik Devre Temelleri Lab.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 0,
+   "practice": 0,
+   "lab": 2,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi; Çok-uçlu Devre Elemanı Modelleme; RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi; Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi; Devrelerin Thevenin-Norton Eşdeğerinin Bulunması; Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi Introduction of multimeter, oscillator and oscilloscope and realization of the Kirchoff’s Laws; Modelling of multiple terminal circuit elements; Investigation of transient response in RC, RL and RCL circuits; Investigation of steady state response in AC and DC circuits; Finding Thevenin-Norton equivalents of circuits; Investigation of Scaling, Superposition and Reciprocity Theorems",
+  "outcomes": [
+   "Devre elemanlarını, multimetreyi ve osiloskobu öğrenmek",
+   "Çok uçlu devre elemanlarını modelleyebilmek",
+   "RC, RL ve RCL devrelerinde geçici rejimleri anlamak",
+   "AC ve DC devrelerde sürekli hal çözümlerini anlamak",
+   "Devrelerin Thevenin ve Norton eşdeğerlerini bulmayı öğrenmek",
+   "Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerini uygulamak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Grupların Oluşturulması",
+   "Hafta 2 — Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi-I",
+   "Hafta 3 — Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi-II",
+   "Hafta 4 — Çok-uçlu Devre Elemanı Modelleme-I",
+   "Hafta 5 — Çok-uçlu Devre Elemanı Modelleme-II",
+   "Hafta 6 — RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi-I",
+   "Hafta 7 — RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi-II",
+   "Hafta 8 — Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi-II",
+   "Hafta 9 — Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi-II",
+   "Hafta 10 — Devrelerin Thevenin-Norton Eşdeğerinin Bulunması-I",
+   "Hafta 11 — Devrelerin Thevenin-Norton Eşdeğerinin Bulunması-II",
+   "Hafta 12 — Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-I",
+   "Hafta 13 — Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-II",
+   "Hafta 14 — Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-III"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=221",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 221E": {
+  "code": "EEF 221E",
+  "name": "Elektrik Devre Temelleri Lab.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 0,
+   "practice": 0,
+   "lab": 2,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi; Çok-uçlu Devre Elemanı Modelleme; RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi; Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi; Devrelerin Thevenin-Norton Eşdeğerinin Bulunması; Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi Introduction of multimeter, oscillator and oscilloscope and realization of the Kirchoff’s Laws; Modelling of multiple terminal circuit elements; Investigation of transient response in RC, RL and RCL circuits; Investigation of steady state response in AC and DC circuits; Finding Thevenin-Norton equivalents of circuits; Investigation of Scaling, Superposition and Reciprocity Theorems",
+  "outcomes": [
+   "Devre elemanlarını, multimetreyi ve osiloskobu öğrenmek",
+   "Çok uçlu devre elemanlarını modelleyebilmek",
+   "RC, RL ve RCL devrelerinde geçici rejimleri anlamak",
+   "AC ve DC devrelerde sürekli hal çözümlerini anlamak",
+   "Devrelerin Thevenin ve Norton eşdeğerlerini bulmayı öğrenmek",
+   "Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerini uygulamak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Grupların Oluşturulması",
+   "Hafta 2 — Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi-I",
+   "Hafta 3 — Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi-II",
+   "Hafta 4 — Çok-uçlu Devre Elemanı Modelleme-I",
+   "Hafta 5 — Çok-uçlu Devre Elemanı Modelleme-II",
+   "Hafta 6 — RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi-I",
+   "Hafta 7 — RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi-II",
+   "Hafta 8 — Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi-II",
+   "Hafta 9 — Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi-II",
+   "Hafta 10 — Devrelerin Thevenin-Norton Eşdeğerinin Bulunması-I",
+   "Hafta 11 — Devrelerin Thevenin-Norton Eşdeğerinin Bulunması-II",
+   "Hafta 12 — Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-I",
+   "Hafta 13 — Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-II",
+   "Hafta 14 — Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-III"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=221",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 232": {
+  "code": "EEF 232",
+  "name": "Devre ve Sistem Analizi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Sinüzoidal sürekli hal. Dinamik devrelerin ve sistemlerin durum denklemlerinin jw-domeninde elde edilmesi. Fazörler. Kompleks Güç. Üç-fazlı sistemler. Dinamik devrelerin ve sistemlerin durum ve çıkış denklemlerinin s-domeninde elde edilmesi. Empedans ve admitans kavramı. Kararlılık ve Routh kriteri. Devre fonksiyonları ve parametreleri. Sinusoidal steady state. Finding the state equations of dynamic networks and systems in jw-domain. Phasors. Complex Power. Three-phase systems. Finding the state equations of dynamic networks and systems in s-domain. Impedance and admittance. Stability and Routh Criteria. Network functions and parameters.",
+  "outcomes": [
+   "jw-tanım bölgesinde devre analizi yapabilmek",
+   "jw-tanım bölgesinde devrelerin harcadıkları güç ve enerjiyi hesaplayabilmek",
+   "Devre analizi tekniklerini dengeli 3 fazlı sistemlerde uygulayabilmek",
+   "Maksimum güç transferi için empedans uyumlaştırabilmek",
+   "s-tanım bölgesinde devre analizi yapabilmek",
+   "İki kapılılara ilişkin devre parametrelerini elde edebilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Fazör kavramı. Durum denklemlerinin jw-tanım bölgesinde çözümü.",
+   "Hafta 2 — jw-tanım bölgesinde eleman tanım bağıntıları, empedans ve admitans kavramları",
+   "Hafta 3 — jw-tanım bölgesinde devre denklemlerinin elde edilmesi ve çözümü",
+   "Hafta 4 — jw-tanım bölgesinde transfer fonksiyonun bulunması",
+   "Hafta 5 — Rezonans kavramı ve rezonans devreleri.",
+   "Hafta 6 — jw-tanım bölgesinde kompleks güç, aktif güç ve pasif kavramı",
+   "Hafta 7 — Maksimum güç aktarma. Empedans uyumlaştırma devreleri.",
+   "Hafta 8 — Dengeli 3-fazlı sistemler",
+   "Hafta 9 — Dengeli 3-fazlı sistemlerde yıldız ve üçgen bağlı yüklerin kompleks güç hesaplamaları",
+   "Hafta 10 — Laplace dönüşümü, Durum denklemlerinin s-tanım bölgesinde çözümü",
+   "Hafta 11 — s-tanım bölgesinde devre elemanlarının tanım bağıntıları, empedans ve admitans kavramları.",
+   "Hafta 12 — s-tanım bölgesinde devre denklemlerinin elde edilmesi ve çözümü.",
+   "Hafta 13 — Devrelerin Norton ve Thevenin eşdeğerlerinin bulunması. Kararlılık analizi.",
+   "Hafta 14 — Devre fonksiyonları ve parametreleri"
+  ],
+  "textbooks": [
+   "Electric Circuits, James W. Nilsson and Susan A. Riedel, Pearson Prentice Hall, 2008."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=232",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 232E": {
+  "code": "EEF 232E",
+  "name": "Devre ve Sistem Analizi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Sinüzoidal sürekli hal. Dinamik devrelerin ve sistemlerin durum denklemlerinin jw-domeninde elde edilmesi. Fazörler. Kompleks Güç. Üç-fazlı sistemler. Dinamik devrelerin ve sistemlerin durum ve çıkış denklemlerinin s-domeninde elde edilmesi. Empedans ve admitans kavramı. Kararlılık ve Routh kriteri. Devre fonksiyonları ve parametreleri. Sinusoidal steady state. Finding the state equations of dynamic networks and systems in jw-domain. Phasors. Complex Power. Three-phase systems. Finding the state equations of dynamic networks and systems in s-domain. Impedance and admittance. Stability and Routh Criteria. Network functions and parameters.",
+  "outcomes": [
+   "jw-tanım bölgesinde devre analizi yapabilmek",
+   "jw-tanım bölgesinde devrelerin harcadıkları güç ve enerjiyi hesaplayabilmek",
+   "Devre analizi tekniklerini dengeli 3 fazlı sistemlerde uygulayabilmek",
+   "Maksimum güç transferi için empedans uyumlaştırabilmek",
+   "s-tanım bölgesinde devre analizi yapabilmek",
+   "İki kapılılara ilişkin devre parametrelerini elde edebilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Fazör kavramı. Durum denklemlerinin jw-tanım bölgesinde çözümü.",
+   "Hafta 2 — jw-tanım bölgesinde eleman tanım bağıntıları, empedans ve admitans kavramları",
+   "Hafta 3 — jw-tanım bölgesinde devre denklemlerinin elde edilmesi ve çözümü",
+   "Hafta 4 — jw-tanım bölgesinde transfer fonksiyonun bulunması",
+   "Hafta 5 — Rezonans kavramı ve rezonans devreleri.",
+   "Hafta 6 — jw-tanım bölgesinde kompleks güç, aktif güç ve pasif kavramı",
+   "Hafta 7 — Maksimum güç aktarma. Empedans uyumlaştırma devreleri.",
+   "Hafta 8 — Dengeli 3-fazlı sistemler",
+   "Hafta 9 — Dengeli 3-fazlı sistemlerde yıldız ve üçgen bağlı yüklerin kompleks güç hesaplamaları",
+   "Hafta 10 — Laplace dönüşümü, Durum denklemlerinin s-tanım bölgesinde çözümü",
+   "Hafta 11 — s-tanım bölgesinde devre elemanlarının tanım bağıntıları, empedans ve admitans kavramları.",
+   "Hafta 12 — s-tanım bölgesinde devre denklemlerinin elde edilmesi ve çözümü.",
+   "Hafta 13 — Devrelerin Norton ve Thevenin eşdeğerlerinin bulunması. Kararlılık analizi.",
+   "Hafta 14 — Devre fonksiyonları ve parametreleri"
+  ],
+  "textbooks": [
+   "Electric Circuits, James W. Nilsson and Susan A. Riedel, Pearson Prentice Hall, 2008."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=232",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 262": {
+  "code": "EEF 262",
+  "name": "Elektroniğin Temelleri",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Elektroniğin Temelleri dersinin ilk bölümünde katı hal fiziğinin temelleri, yarı iletken malzemelerin özellikleri, akım taşıyıcılar, sürüklenme ve yayınım mekanizmalarının öğrenilir. İkinci bölümde en temel elektronik devre elemanları olan diyotların yapısı, devre analizinde kullanılan diyot modelleri, diyot devreleri ve farklı diyot türleri incelenir. Üçüncü bölümde ise transistor türleri, yapıları, ikincil etkiler ve transistor devreleri incelenir. Dördüncü bölümde kuvvetlendirme kavramın açıklanır ve ideal akım/gerilim/geçiş-iletkenliği/geçiş-direnci kuvvetlendiricilerinin özellikleri incelenir. Sonrasında tranzistorlu (BJT, MOSFET) devrelerin DC ve ısıl hassasiyet analizi yapılır. BJT veMOSFET'in küçük işaret eşdeğeri bulunur ve BJT veMOSFET'li kuvvetlendiricilerin AC analizi gerçekleştirilir. Temel kuvvetlendirici katların kazanç ve giriş/çıkış dirençleri ve kaskat (doğrudan/kapasitif bağlı) kuvvetlendiricilerin analizi yapılır. Kaskod yapı, Darlington yapısı incelenir. Fark kuvvetlendiricisi, fark ve ortak işaret kazancı, ortak işareti bastırma oranı, akım kaynakları, aktif yüklü devreler ve idealsizlikler işlenecektir. Son olarak ideal ve ideal olmayan işlemsel yükselteçlerin doğrusal ve doğrusal olmayan uygulamaları ele alınacaktır. Fundamentals of Electronics course covers structure and operating principles of electronic components. First part of the course focuses on Fundamentals of solid-state physics, properties of semiconductor materials, current carriers, drift and diffusion mechanisms. Second part of the course focuses on the diode. Structure of the pn-junction diode, diode models used in circuit analysis, diode circuits and different diode types are covered. Third part of the lecture focuses on transistors. Different transistor types, their behavior, secondary effects, and transistor circuits are covered. Amplification and the gain concept, amplifier types and circuit models, conceptual function of the transistor in amplification will be discussed. DC and thermal sensitivity analysis of transistor (BJT, MOSFET) circuits will be shown. Small signal equivalents of BJT andMOSFET as well as the AC analysis of BJT and MOSFET amplifiers will be conducted. Gain and input/output resistance of basic amplifier stages will be found and the analysis of cascade (direct/capacitively-coupled) amplifiers is done. The cascode structure, Darlington structure, the differential amplifiers, differential and common-mode gains, common mode rejection ratio will be explained. Current sources, active-loaded circuits, effect of non-idealities on the behavior will be discussed. Finally, the linear and nonlinear applications of ideal and non-ideal operational amplifiers will be considered.",
+  "outcomes": [
+   "Katılardaki iletim mekanizmalarını kavrayıp, iletimle ilgili büyüklükleri hesaplayabilme",
+   "Jonksiyon davranışını kavrayarak, diyotlar ve diyotların temel uygulamaları ile ilgili hesapları yapabilme",
+   "BJT temel parametreleri, modelleri, DC kutuplamalarını hesaplayabilme",
+   "MOSFET temel parametreleri, modelleri, DC kutuplamalarını hesaplayabilme",
+   "BJT ve MOSFET’lerin fiziksel temellerinden yola çıkarak küçük işaret modellerini ortaya koyabilir.",
+   "BJT ve MOSFET’lerin kutuplamalarını nasıl gerçekleştireceklerini anlar",
+   "Kazanç, giriş ve çıkış direnci ifadelerini bularak BJT ve MOSFET kuvvetlendiricilerin küçük işaret analizlerini yapmayı öğrenir",
+   "BJT ve MOSFET’lerin farklı konfigürasyonlarının (kaskod vb.) belirli bir görevi gerçekleştirme (akım kaynağı, akım aynası vs.) amacıyla kullanılabildiklerini kavrar",
+   "Fark kuvvetlendiricilerin kutuplamasını ve küçük işaret analizi yapma yöntemini öğrenir.",
+   "Fark kuvvetlendiricilerindeki ideal dışı halleri ve sonuçlarını anlar",
+   "İşlemsel yükselteçlerin özelliklerini ve uygulamalarını irdeler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Katı hal fiziğinin temelleri, yarı iletkenlerin özellikleri, enerji bantları, direk ve endirekt yarı iletkenler, akım taşıyıcılar, sürüklenme ve yayınım mekanizmaları",
+   "Hafta 2 — Mikrofabrikasyon Temelleri, PN Jonksiyonunun fiziksel yapısı, PN Jonksiyonunun davranışı (denge durumu, düz ve ters kutuplama)",
+   "Hafta 3 — Diyot modelleri ve diyot devreleri, Diyotun küçük işaret modeli, Doğrultucular, DC güç kaynağı tasarımı, Zener diyot, Regülatör devreleri",
+   "Hafta 4 — Bipolar jonksiyonlu transistorun (BJT) fiziksel yapısı ve davranışı, Bipolar jonksiyonlu transistorun (BJT) çalışma bölgeleri, Ebers-Moll Modeli, Early Etkisi, Isıl Hassasiyet Analizi",
+   "Hafta 5 — BJT devrelerinin DC kutuplaması ve küçük işaret modeli",
+   "Hafta 6 — MOSFET’in fiziksel yapısı ve davranışı, MOSFET’in çalışma bölgeleri, önemli ikincil etkiler (kanal boyu modülasyonu, gövde etkisi)",
+   "Hafta 7 — MOSFET devrelerinin DC kutuplaması ve küçük işaret modeli",
+   "Hafta 8 — Transistör temelli Kuvvetlendirmenin Temelleri, BJT Kuvvetlendiricilerin Kutuplanması",
+   "Hafta 9 — BJT Kuvvetlendiricilerin Küçük-İşaret Analizi",
+   "Hafta 10 — MOSFET Kuvvetlendiricilerin Kutuplanması ve Küçük-İşaret Analizi",
+   "Hafta 11 — MOSFET Kuvvetlendiricilerin Küçük-İşaret Analizi, Kaskot Kuvvetlendiriciler",
+   "Hafta 12 — Akım Aynaları, Akım Kaynaklar, Transistör Çifti Kuvvetlendiriciler",
+   "Hafta 13 — Fark Kuvvetlendiricileri, Aktif Yüklü Devreler, Fark Kuvvetlendiricilerinde Ortak İşaret Bastırma Oranı ve Ofset Gerilimi",
+   "Hafta 14 — İşlemsel Yükselteçler ve Doğrusal/Doğrusal Olmayan Uygulamaları"
+  ],
+  "textbooks": [
+   "B. Razavi, “Microelectronics”, 2nd edition, Wiley, 2015"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=262",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 262E": {
+  "code": "EEF 262E",
+  "name": "Elektroniğin Temelleri",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Elektroniğin Temelleri dersinin ilk bölümünde katı hal fiziğinin temelleri, yarı iletken malzemelerin özellikleri, akım taşıyıcılar, sürüklenme ve yayınım mekanizmalarının öğrenilir. İkinci bölümde en temel elektronik devre elemanları olan diyotların yapısı, devre analizinde kullanılan diyot modelleri, diyot devreleri ve farklı diyot türleri incelenir. Üçüncü bölümde ise transistor türleri, yapıları, ikincil etkiler ve transistor devreleri incelenir. Dördüncü bölümde kuvvetlendirme kavramın açıklanır ve ideal akım/gerilim/geçiş-iletkenliği/geçiş-direnci kuvvetlendiricilerinin özellikleri incelenir. Sonrasında tranzistorlu (BJT, MOSFET) devrelerin DC ve ısıl hassasiyet analizi yapılır. BJT veMOSFET'in küçük işaret eşdeğeri bulunur ve BJT veMOSFET'li kuvvetlendiricilerin AC analizi gerçekleştirilir. Temel kuvvetlendirici katların kazanç ve giriş/çıkış dirençleri ve kaskat (doğrudan/kapasitif bağlı) kuvvetlendiricilerin analizi yapılır. Kaskod yapı, Darlington yapısı incelenir. Fark kuvvetlendiricisi, fark ve ortak işaret kazancı, ortak işareti bastırma oranı, akım kaynakları, aktif yüklü devreler ve idealsizlikler işlenecektir. Son olarak ideal ve ideal olmayan işlemsel yükselteçlerin doğrusal ve doğrusal olmayan uygulamaları ele alınacaktır. Fundamentals of Electronics course covers structure and operating principles of electronic components. First part of the course focuses on Fundamentals of solid-state physics, properties of semiconductor materials, current carriers, drift and diffusion mechanisms. Second part of the course focuses on the diode. Structure of the pn-junction diode, diode models used in circuit analysis, diode circuits and different diode types are covered. Third part of the lecture focuses on transistors. Different transistor types, their behavior, secondary effects, and transistor circuits are covered. Amplification and the gain concept, amplifier types and circuit models, conceptual function of the transistor in amplification will be discussed. DC and thermal sensitivity analysis of transistor (BJT, MOSFET) circuits will be shown. Small signal equivalents of BJT andMOSFET as well as the AC analysis of BJT and MOSFET amplifiers will be conducted. Gain and input/output resistance of basic amplifier stages will be found and the analysis of cascade (direct/capacitively-coupled) amplifiers is done. The cascode structure, Darlington structure, the differential amplifiers, differential and common-mode gains, common mode rejection ratio will be explained. Current sources, active-loaded circuits, effect of non-idealities on the behavior will be discussed. Finally, the linear and nonlinear applications of ideal and non-ideal operational amplifiers will be considered.",
+  "outcomes": [
+   "Katılardaki iletim mekanizmalarını kavrayıp, iletimle ilgili büyüklükleri hesaplayabilme",
+   "Jonksiyon davranışını kavrayarak, diyotlar ve diyotların temel uygulamaları ile ilgili hesapları yapabilme",
+   "BJT temel parametreleri, modelleri, DC kutuplamalarını hesaplayabilme",
+   "MOSFET temel parametreleri, modelleri, DC kutuplamalarını hesaplayabilme",
+   "BJT ve MOSFET’lerin fiziksel temellerinden yola çıkarak küçük işaret modellerini ortaya koyabilir.",
+   "BJT ve MOSFET’lerin kutuplamalarını nasıl gerçekleştireceklerini anlar",
+   "Kazanç, giriş ve çıkış direnci ifadelerini bularak BJT ve MOSFET kuvvetlendiricilerin küçük işaret analizlerini yapmayı öğrenir",
+   "BJT ve MOSFET’lerin farklı konfigürasyonlarının (kaskod vb.) belirli bir görevi gerçekleştirme (akım kaynağı, akım aynası vs.) amacıyla kullanılabildiklerini kavrar",
+   "Fark kuvvetlendiricilerin kutuplamasını ve küçük işaret analizi yapma yöntemini öğrenir.",
+   "Fark kuvvetlendiricilerindeki ideal dışı halleri ve sonuçlarını anlar",
+   "İşlemsel yükselteçlerin özelliklerini ve uygulamalarını irdeler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Katı hal fiziğinin temelleri, yarı iletkenlerin özellikleri, enerji bantları, direk ve endirekt yarı iletkenler, akım taşıyıcılar, sürüklenme ve yayınım mekanizmaları",
+   "Hafta 2 — Mikrofabrikasyon Temelleri, PN Jonksiyonunun fiziksel yapısı, PN Jonksiyonunun davranışı (denge durumu, düz ve ters kutuplama)",
+   "Hafta 3 — Diyot modelleri ve diyot devreleri, Diyotun küçük işaret modeli, Doğrultucular, DC güç kaynağı tasarımı, Zener diyot, Regülatör devreleri",
+   "Hafta 4 — Bipolar jonksiyonlu transistorun (BJT) fiziksel yapısı ve davranışı, Bipolar jonksiyonlu transistorun (BJT) çalışma bölgeleri, Ebers-Moll Modeli, Early Etkisi, Isıl Hassasiyet Analizi",
+   "Hafta 5 — BJT devrelerinin DC kutuplaması ve küçük işaret modeli",
+   "Hafta 6 — MOSFET’in fiziksel yapısı ve davranışı, MOSFET’in çalışma bölgeleri, önemli ikincil etkiler (kanal boyu modülasyonu, gövde etkisi)",
+   "Hafta 7 — MOSFET devrelerinin DC kutuplaması ve küçük işaret modeli",
+   "Hafta 8 — Transistör temelli Kuvvetlendirmenin Temelleri, BJT Kuvvetlendiricilerin Kutuplanması",
+   "Hafta 9 — BJT Kuvvetlendiricilerin Küçük-İşaret Analizi",
+   "Hafta 10 — MOSFET Kuvvetlendiricilerin Kutuplanması ve Küçük-İşaret Analizi",
+   "Hafta 11 — MOSFET Kuvvetlendiricilerin Küçük-İşaret Analizi, Kaskot Kuvvetlendiriciler",
+   "Hafta 12 — Akım Aynaları, Akım Kaynaklar, Transistör Çifti Kuvvetlendiriciler",
+   "Hafta 13 — Fark Kuvvetlendiricileri, Aktif Yüklü Devreler, Fark Kuvvetlendiricilerinde Ortak İşaret Bastırma Oranı ve Ofset Gerilimi",
+   "Hafta 14 — İşlemsel Yükselteçler ve Doğrusal/Doğrusal Olmayan Uygulamaları"
+  ],
+  "textbooks": [
+   "B. Razavi, “Microelectronics”, 2nd edition, Wiley, 2015"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=262",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 271": {
+  "code": "EEF 271",
+  "name": "Olasılık ve İstatistik",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Çarpım kuralı, permütasyon, kombinasyon, olasılık kavramı (Kolmogorov aksiomları), şartlı olasılık ve bağımsızlık, rastgele değişken, olasılık yoğunluk fonksiyonu, dağılım fonksiyonu, kesikli dağılımlar: Bernoulli, Binom, Poisson Dağılımları, sürekli dağılımlar: Normal, Gamma ve Eksponansiyel, Beklenen değer, Moment çıkaran fonksiyonu, ortalama, varyans, standart sapma, kovaryans, korelasyon, Chebyshev eşitsizliği, Tahmin edici ve özellikleri, En çok olabilirlik tahmin edicisi, Güven aralığı, Hipotez testi, Tek ve çift Ana Kütle Ortalaması Hipotez Testi, regresyon Product rule, permutation, combination, concept of Probability (Kolmogorov axioms), conditional probability and independency, random variables, Probability density function, distribution function, discrete disributions: Bernoulli, Binomial, Poisson, continuous distributions: Normal, Gamma, Exponential, Expectation, Moment generating function, mean, variance, standart deviation, covariance, correlation, Chebyshev’s inequality, Estimator and its properties, maximum likelihood estimators, Confidence intervals, Hypothesis testing, One and two sample test for means, Regression.",
+  "outcomes": [
+   "Permütasyon ve kombinasyon problemlerini çözebilmek",
+   "Olasılık, Şartlı olasılık ve rasgele değişken kavramlarını anlayabilmek",
+   "Mühendislikteki gerçek hayat problemlerini istatistik kullanarak çözebilmek",
+   "İhtimal fonksiyonlarını detaylarını anlayıp bunların mühendislik uygulamalarını yapabilmek",
+   "Merkezi eğilim ve yayılım ölçülerini hesaplamak",
+   "İstatistiksel testleri anlamak",
+   "Tek ve çift Ana Kütle Ortalaması için Hipotez Testi kurup yapabilmek",
+   "En küçük kareler yöntemini regresyon analizi olarak uygulayabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sayma Teknikleri, permutasyon, kombinasyon",
+   "Hafta 2 — Olasılık Kavramı, Şartlı olasılık",
+   "Hafta 3 — Rastlantı Değişkeni, Olasılık Fonksiyonu",
+   "Hafta 4 — Dağılım fonksiyonu",
+   "Hafta 5 — Kesikli Dağılımlar: Bernoulli, Binom, Poisson",
+   "Hafta 6 — Sürekli dağılımlar: Normal, Gamma, Eksponansiyel",
+   "Hafta 7 — Beklenen değer, Moment çıkaran fonksiyonu",
+   "Hafta 8 — Merkezi eğilim ve yayılım ölçüleri, Chebyshev eşitsizliği",
+   "Hafta 9 — Tahmin edici ve özellikleri",
+   "Hafta 10 — En çok olabilirlik tahmin edicisi",
+   "Hafta 11 — Güven aralığı, Hipotez Testi",
+   "Hafta 12 — Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+   "Hafta 13 — Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+   "Hafta 14 — Regresyon analizi"
+  ],
+  "textbooks": [
+   "Sheldon Ross, 1998, A First Course in Probability, Prentice-Hall International",
+   "Murray R. Spiegel, 1961, Theory and Problems of Statistics, McGraw-Hill Book Company"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=271",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 271E": {
+  "code": "EEF 271E",
+  "name": "Olasılık ve İstatistik",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Çarpım kuralı, permütasyon, kombinasyon, olasılık kavramı (Kolmogorov aksiomları), şartlı olasılık ve bağımsızlık, rastgele değişken, olasılık yoğunluk fonksiyonu, dağılım fonksiyonu, kesikli dağılımlar: Bernoulli, Binom, Poisson Dağılımları, sürekli dağılımlar: Normal, Gamma ve Eksponansiyel, Beklenen değer, Moment çıkaran fonksiyonu, ortalama, varyans, standart sapma, kovaryans, korelasyon, Chebyshev eşitsizliği, Tahmin edici ve özellikleri, En çok olabilirlik tahmin edicisi, Güven aralığı, Hipotez testi, Tek ve çift Ana Kütle Ortalaması Hipotez Testi, regresyon Product rule, permutation, combination, concept of Probability (Kolmogorov axioms), conditional probability and independency, random variables, Probability density function, distribution function, discrete disributions: Bernoulli, Binomial, Poisson, continuous distributions: Normal, Gamma, Exponential, Expectation, Moment generating function, mean, variance, standart deviation, covariance, correlation, Chebyshev’s inequality, Estimator and its properties, maximum likelihood estimators, Confidence intervals, Hypothesis testing, One and two sample test for means, Regression.",
+  "outcomes": [
+   "Permütasyon ve kombinasyon problemlerini çözebilmek",
+   "Olasılık, Şartlı olasılık ve rasgele değişken kavramlarını anlayabilmek",
+   "Mühendislikteki gerçek hayat problemlerini istatistik kullanarak çözebilmek",
+   "İhtimal fonksiyonlarını detaylarını anlayıp bunların mühendislik uygulamalarını yapabilmek",
+   "Merkezi eğilim ve yayılım ölçülerini hesaplamak",
+   "İstatistiksel testleri anlamak",
+   "Tek ve çift Ana Kütle Ortalaması için Hipotez Testi kurup yapabilmek",
+   "En küçük kareler yöntemini regresyon analizi olarak uygulayabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sayma Teknikleri, permutasyon, kombinasyon",
+   "Hafta 2 — Olasılık Kavramı, Şartlı olasılık",
+   "Hafta 3 — Rastlantı Değişkeni, Olasılık Fonksiyonu",
+   "Hafta 4 — Dağılım fonksiyonu",
+   "Hafta 5 — Kesikli Dağılımlar: Bernoulli, Binom, Poisson",
+   "Hafta 6 — Sürekli dağılımlar: Normal, Gamma, Eksponansiyel",
+   "Hafta 7 — Beklenen değer, Moment çıkaran fonksiyonu",
+   "Hafta 8 — Merkezi eğilim ve yayılım ölçüleri, Chebyshev eşitsizliği",
+   "Hafta 9 — Tahmin edici ve özellikleri",
+   "Hafta 10 — En çok olabilirlik tahmin edicisi",
+   "Hafta 11 — Güven aralığı, Hipotez Testi",
+   "Hafta 12 — Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+   "Hafta 13 — Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+   "Hafta 14 — Regresyon analizi"
+  ],
+  "textbooks": [
+   "Sheldon Ross, 1998, A First Course in Probability, Prentice-Hall International",
+   "Murray R. Spiegel, 1961, Theory and Problems of Statistics, McGraw-Hill Book Company"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=271",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 281": {
+  "code": "EEF 281",
+  "name": "Lineer Cebir ve Uygulamaları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Matrisler ve Denklem Sistemleri, Lineer Denklem Sistemleri, Satır Basamak Form, Matris Cebri, Elemanter Matrisler, Determinantlar, Vektör Uzayları, Altuzaylar, Lineer Bağımsızlık, Baz ve Boyut, Bazların Değişimi, Satır Uzayı ve Sütun Uzayı. Ortogonallik, Ortogonal Altuzaylar, Ortonormal Kümeler,Gram-Schmidt Yöntemi, Özdeğerler ve Özvektörler, Köşegenleştirme Matrices and System of Equations, Systems of Linear Equations, Row Echelon Form, Matrix Algebra, Elementary Matrices, Determinants, Vector Spaces, Subspaces, Linear Independence, Basis and Dimension, Change of Basis, Row Space end Column Space, Ortogonallik, Orthogonal Subspaces, Orthonormal Sets, The Gram-Schmidt Orthogonalization Process, Eigenvalues and Eigen vectors, Diagonalization.",
+  "outcomes": [
+   "Lineer denklem sistemlerinin çözümünü bulabilmek, Matrislerle aritmatik işlemler yapabilir, Matrisin tersini bulabilmek",
+   "Vektör uzayları , baz ve boyut kavramlarını öğrenmek",
+   "Gram-Schmidt yöntemi ile bir bazı ortonormal baza çevirebilmek",
+   "Matrislerin özdeğerlerini ve özvektörlerini bulabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Lineer denklemlerin farklı yorumları",
+   "Hafta 2 — Eleme Yöntemi",
+   "Hafta 3 — LU ayrıştırması, matris tersi",
+   "Hafta 4 — Vektör uzayları, alt uzaylar",
+   "Hafta 5 — Bir matrisle ilişkili temel uzaylar",
+   "Hafta 6 — Lineer denklemlerin genel çözümü",
+   "Hafta 7 — Boyut, bazlar",
+   "Hafta 8 — Diklik",
+   "Hafta 9 — İzdüşüm, enküçük kareler",
+   "Hafta 10 — Gram-Schmidt yöntemi, QR ayrıştırması",
+   "Hafta 11 — Determinantlar",
+   "Hafta 12 — Özdeğerler ve özvektörler, köşegenleştirme",
+   "Hafta 13 — Simetrik matrisler, spektral teorem",
+   "Hafta 14 — Fark denklemleri, pozitif belirli matrisler"
+  ],
+  "textbooks": [
+   "Linear Algebra and its Applications, 4th Edition, Gilbert Strang, Wellesley Cambridge Press, 2009"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=281",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 281E": {
+  "code": "EEF 281E",
+  "name": "Lineer Cebir ve Uygulamaları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Matrisler ve Denklem Sistemleri, Lineer Denklem Sistemleri, Satır Basamak Form, Matris Cebri, Elemanter Matrisler, Determinantlar, Vektör Uzayları, Altuzaylar, Lineer Bağımsızlık, Baz ve Boyut, Bazların Değişimi, Satır Uzayı ve Sütun Uzayı. Ortogonallik, Ortogonal Altuzaylar, Ortonormal Kümeler,Gram-Schmidt Yöntemi, Özdeğerler ve Özvektörler, Köşegenleştirme Matrices and System of Equations, Systems of Linear Equations, Row Echelon Form, Matrix Algebra, Elementary Matrices, Determinants, Vector Spaces, Subspaces, Linear Independence, Basis and Dimension, Change of Basis, Row Space end Column Space, Ortogonallik, Orthogonal Subspaces, Orthonormal Sets, The Gram-Schmidt Orthogonalization Process, Eigenvalues and Eigen vectors, Diagonalization.",
+  "outcomes": [
+   "Lineer denklem sistemlerinin çözümünü bulabilmek, Matrislerle aritmatik işlemler yapabilir, Matrisin tersini bulabilmek",
+   "Vektör uzayları , baz ve boyut kavramlarını öğrenmek",
+   "Gram-Schmidt yöntemi ile bir bazı ortonormal baza çevirebilmek",
+   "Matrislerin özdeğerlerini ve özvektörlerini bulabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Lineer denklemlerin farklı yorumları",
+   "Hafta 2 — Eleme Yöntemi",
+   "Hafta 3 — LU ayrıştırması, matris tersi",
+   "Hafta 4 — Vektör uzayları, alt uzaylar",
+   "Hafta 5 — Bir matrisle ilişkili temel uzaylar",
+   "Hafta 6 — Lineer denklemlerin genel çözümü",
+   "Hafta 7 — Boyut, bazlar",
+   "Hafta 8 — Diklik",
+   "Hafta 9 — İzdüşüm, enküçük kareler",
+   "Hafta 10 — Gram-Schmidt yöntemi, QR ayrıştırması",
+   "Hafta 11 — Determinantlar",
+   "Hafta 12 — Özdeğerler ve özvektörler, köşegenleştirme",
+   "Hafta 13 — Simetrik matrisler, spektral teorem",
+   "Hafta 14 — Fark denklemleri, pozitif belirli matrisler"
+  ],
+  "textbooks": [
+   "Linear Algebra and its Applications, 4th Edition, Gilbert Strang, Wellesley Cambridge Press, 2009"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=281",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EEF 311E": {
+  "code": "EEF 311E",
+  "name": "Python ile Sayısal Analiz",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Temel seviye Python programlama. Sayısal Yöntemlerin tanımı ve özellikle mühendislik uygulamalarındaki kullanımının açıklanması. Lineer ve lineer olmayan denklem sistemi çözümleri, yaklaşım yöntemleri, interpolasyon, lineer regresyon, kök bulma, sayısal türev ve integrasyon, başlangıç değer problemleri. Sayısal yöntemlerin Python programlama teknikleriyle uygulanması. Introductory level Python programming. Description of Numerical Methods and application of them particularly in engineering. Numerical methods for the solution of systems (lineer and nonlinear), approximation methods, interpolation, linear regression, root finding, numerical differentiation and integration, initial value problems. Application of numerical methods using Python programming techniques.",
+  "outcomes": [
+   "Bilimsel ve mühendislik hesaplamalarında Python programlama dilini nasıl kullanacaklarını öğrenecek",
+   "Sayısal yöntemlerin temellerini anlayacak",
+   "Mühendislikte bir problemin analizinde sayısal yöntemleri kullanma becerisine sahip olacak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Core Python: Python yorumlayıcısı, veri yapıları, operatörler, karar koşul yapıları ve döngüler",
+   "Hafta 2 — Python Fonksiyon ve Mödülleri: değişken kapsamı, fonksiyonlar, moduller, dosyadan okuma yazma",
+   "Hafta 3 — Python Matematik Modülleri: matematik fonksiyonları, numpy, scipy, matplotlib",
+   "Hafta 4 — Linear Denklem Sistemleri: Çözülebilirlik, Gauss Eliminasyonu",
+   "Hafta 5 — İteratif Metodlar- Jacobi Method, Gauss-Seidel",
+   "Hafta 6 — İnterpolasyon ve Yaklaştırma: Newton bölünmüş farklar yöntemi, Lagrange metodu",
+   "Hafta 7 — İnterpolasyon and Regresyon: şerit fonksiyonları kullanarak interpolasyon, En küçük kareler yaklaşımı",
+   "Hafta 8 — Kök Bulma: İkiye bölme Metodu, Newton-Raphson Metodu",
+   "Hafta 9 — Kök Bulma: Secant Metodu, Sabit Nokta İterasyonu, kararlılık",
+   "Hafta 10 — Sayısal Türev: Sonlu fark yaklaşımı, Richardson Extrapolasyonu",
+   "Hafta 11 — Sayısal İntegrasyon: Trapez ve Simpson Kuralları",
+   "Hafta 12 — Sayısal İntegrasyon: Romberg Sayısal İntegrasyonu",
+   "Hafta 13 — Başlangıç Değer Problemleri: Euler Metodu",
+   "Hafta 14 — Başlangıç Değer Problemleri: Runge-Kutta Metodları"
+  ],
+  "textbooks": [
+   "Numerical Methods in Engineering with Python 3, Jaan Kiusalaas"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=311",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

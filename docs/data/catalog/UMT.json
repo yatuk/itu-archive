@@ -1,0 +1,155 @@
+{
+ "UMT 509E": {
+  "code": "UMT 509E",
+  "name": "The Basic Diag.in Extra.Metal.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş; Tanımlar; Termodinamik esaslar ışığında denge kavramının açıklanması; Faz diyagramları dışındaki temel diyagramların öneminin vurgulanması; Richardson-Ellingham diyagramları (oksit, sülfür, halojenür, sülfat, karbonat, karbür, borür, nitrür, nitrat oluşum diyagramları); Serbest enerji ve standart serbest enerjinin gaz kısmi basıncı / entropi değişimi / standart oksidasyon potansiyeli ile ilişkilendirilmesi; Emf serisinin metal selektivitesi açısından tartışılması; EH-pH (Pourbaix) diyagramları; Tek elektrot potansiyeli tanımı ve polarizasyon-akım yoğunluğu ilişkisinin gösterilmesi; Hidrojen fazla voltajının tarifi; Tafel diyagramları; P-T diyagramları; Metal ve metal bileşiklerinin uçuculuk kavramı; Bauer – Gleissner diyagramları; Kavurma ve mat ergitmede Kellogg ve Yazawa diyagramları; Mc Cabe – Thiele diyagramları Introduction; Definitions; Explanation of equilibrium concept due to the thermodynamical fundaments; accentuate the importance of basic diagrams excluding the phase diagrams in solidification; Richardson-Ellingham diagrams ( oxide, sulphide, halide, sulphate, carbonate, carbide, boride, nitride, nitrate formation diagrams); Associating the free energy and standard free energy with partial pressure / entropy change / standard oxidation potential; discussion of emf series in terms of metal selectivity; EH-pH (Pourbaix) diagrams; Definition of electrode potential and showing the association with polarisation – current density; Definition of hydrogen over voltage; Tafel diagrams; P-T diagrams; Concept of volatility of metals and metals compounds; Bauer – Gleissner diagrams; Kellogg and Yazawa diagrams in matte smelting and roasting; Mc Cabe – Thiele diagrams",
+  "outcomes": [
+   "Metallerin farklı karakterde olduğunu, üretim ve rafinasyon yöntemlerinin bu farklılıklara göre geliştirildiğini öğrenecek,",
+   "Benzer karakterdeki metallerin birbirinden ayrılmasında selektiviteyi arttırmak için değişik kimyasal bileşikler, sıcaklıklar, basınçlar, fiziksel haller vb. oluşturmak gerektiğini kavrayacak,",
+   "Katı halde, gaz fazında, ergimiş durumda veya sulu çözeltide karbon, hidrokarbon, hidrojen, başka bir metal ile veya elektrolik olarak metal redüksiyonunun nasıl mümkün olduğunu öğrenecek,",
+   "Metallerin karakter farkını asitlik-bazlık, elektronegativite, standart oluşum serbest enerjisi, standart oksidasyon potansiyeli ile sayısal olarak ifade etmeyi öğrenecek,",
+   "Ellingham diyagramlarına, Emf serisine, Eh-pH, Tafel polarizasyon diyagramlarına, Kellog diyagramlarına bakarak üretim-rafinasyon koşulları hakkında fikir yürütebilecek,",
+   "Sözkonusu diyagramların çok sayıda faktörü tek adımda değerlendirmeye olanak sağladığını anlayacak; eğrilerin kritk noktalarını hesaplayabilecek; değişik koşullar için bu diyagramları bilgisayar ortamında oluşturabilecek; HSC, Factsage gibi programlardan yararlanmayı öğrenecek",
+   "Metallerin ve metalik malzemelerin üretildiği hammadde kaynaklarının saf sistemler olmadığını, bu nedenle degeye dayalı temel diyagramları başka mühendislik bilgileriyle (stokiyometri, akışkanlar mekaniği, ısı transferi ve reaksiyon kinetiği) birleştirmeyi öğrenecektir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, tanımlar, yerkabuğunda ortalama metal konsantrasyonları, metalurjik hammaddeler, periyodik cetvelin metalurjik yorumu",
+   "Hafta 2 — Termodinamik denge, serbest enerji, standart serbest enerji kavramlarının hatırlatılması, standart serbest enerjinin gaz kısmi basıncı, entropi değişimi, standart oksidasyon potansiyeliyle ilişkilendirilmesi, EMF serisi",
+   "Hafta 3 — Asidik metal/bazik metal kavramı, kısmi basınç yerine iyonik aktivitenin kullanımı, Nernst denklemi",
+   "Hafta 4 — Oksit, sülfür, sülfat, karbonat, karbür, borür, nitrür, nitrat oluşum diyagramları",
+   "Hafta 5 — Oksit oluşum diyagramlarının termal disosiyasyon, oksidasyon/redüksiyon ve metalotermik reaksiyonlar, hidrojen, karbon ve hidrokarbonlarla redüksiyon açısından tartışılması",
+   "Hafta 6 — Metallerde ve bileşiklerinde “uçuculuk” kavramı, basınç-sıcaklık (P-T) diyagramları",
+   "Hafta 7 — Halojenür (özellikle klorür) oluşum diyagramları, bu diyagramların ileri teknolojide kullanımı",
+   "Hafta 8 — Ara Sınav",
+   "Hafta 9 — Sülfür oluşum diyagramları yardımıyla mat modu üzerinden metal üretiminin açıklanması, Kellog ve Yazawa diyagramlarıyla bağlantı kurulması, Sülfat oluşumu ve pirolitik parçalanmanın sülfatlayıcı kavurmada kullanımı, Karbonat oluşum diyagramları üzerinde çözelti arıtımı, su yumuşatma, kobalt çöktürme, sert magnet ve radyoopak cam hammaddesi üretiminin anlatılması",
+   "Hafta 10 — Karbür oluşum diyagramları üzerinde karbotermik alüminyum, volfram, vanadyum, krom vb. üretiminin tartışılması, Borür, nitrür, nitrat oluşum diyagramları",
+   "Hafta 11 — Emf serisinin metal selektivitesi açısından tartışılması, Tek elektrot potansiyeli tanımı ve EH-pH diyagramları, Tafel doğruları ve polarizasyon diyagramları, Hidrojen fazla voltajı tanımı",
+   "Hafta 12 — Bauer-Gleissner diyagramı, Demir oksitlerin redüksiyonunda redüktan olarak karbon ve hidrojen arasında tercih,",
+   "Hafta 13 — Mc-Cabe Thiele diyagramları yardımıyla çinko-kadmiyum destilasyonunda raf sayısının ve solvent ekstraksiyonda kademe sayısının hesaplanması",
+   "Hafta 14 — Ödevlerin Sunumu"
+  ],
+  "textbooks": [
+   "Knacke, O., Kubaschewski, O., Hesselman, K., 1991. Thermochemical Properties of Inorganic Substances, Berlin : Springer-Verlag.",
+   "Pawlek F., 1983. Metallhüttenkunde, Berlin, New York, Walter de Gruyter.",
+   "Terkel Rosenqvist, 1983. Principles of Extractive Metallurgy, Auckland: McGraw-Hill.",
+   "Barin, İ., Knacke, O., Kubaschewski, O., 1977, Thermochemical Properties of Inorganic Substances : Supplement, Springer-Verlag (Berlin and New York), ISBN 0387080317",
+   "Pourbaix, M, 1974, Atlas of Electrochemical Equilibria in Aqueous Solutions, NACE International Cebelcor, ISBN 0-915567-98-9,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=509",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UMT 511E": {
+  "code": "UMT 511E",
+  "name": "Transport Phenomena in Metal.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Metal ekstraksiyonu, döküm ve kaynak gibi metalurjik süreçler içinde momentum, ısı ve kütlenin nasıl aktarıldığını incelemek. To examine how momentum, heat, and mass are transferred in metallurgical processes such as metal extraction, casting, and welding.",
+  "outcomes": [
+   "1.Momentum, ısı ve kütle transferinin metal işleme süreçlerine nasıl etki ettiğini anlamak",
+   "2.Erimiş metallerin ve cürufların fırınlar, kepçeler ve kalıplar içinden akışını analiz etmek.",
+   "Sıcaklık ve bileşimin cüruf ve sıvı metallerin kalınlığı/viskozitesini nasıl etkilediğini araştırmak.",
+   "Yüksek sıcaklıklı ekstraktif ve fiziksel metalurjide ısı iletimi, konveksiyon ve radyasyonu incelemek.",
+   "Faz değişimlerini ve katı hal alaşım difüzyonunu modellemek için Fick difüzyon yasalarını anlamak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Taşınım olaylarına giriş",
+   "Hafta 2 — Kütle, enerji ve momentum korunumu ilkeleri",
+   "Hafta 3 — Laminar vs. turbular akış",
+   "Hafta 4 — Borularsa sürtünme",
+   "Hafta 5 — Sınır kaşulları teorisi",
+   "Hafta 6 — Fourier Yasası",
+   "Hafta 7 — Kararsız durum ısı iletimi",
+   "Hafta 8 — Konvektif ısı transferi",
+   "Hafta 9 — Termal radyasyon",
+   "Hafta 10 — Enerji denklemleri ve ısı eşanjörleri",
+   "Hafta 11 — Fick difüzyonun birinci ve ikinci yasaları",
+   "Hafta 12 — Sıvı metallerde difüzyon",
+   "Hafta 13 — Konvektif kütle transferi",
+   "Hafta 14 — Gaz-sıvı ve sıvı-sıvı reaksiyonları"
+  ],
+  "textbooks": [
+   "Transport Phenomena, Bird R.B., Steward W.E., and Lightfoot E.N., Wiley, 1960.",
+   "Transport Phenomena in Metallurgy, Geiger G.H. and Poirier D.R., Addison Wesley, 1973.",
+   "Transport Processes: Momentum, Heat and Mass, Geankoplis C.J., Allyn and Bacon, Inc., 1983.",
+   "Introduction to Fluid Mechanics, Fox R.W. and McDonald A.T., John Wiley and Sons, 1985.",
+   "Rate Phenomena in Process Metallurgy, Szekely J. and Themelis N.J., Wiley Interscience, 1971."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=511",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UMT 596": {
+  "code": "UMT 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

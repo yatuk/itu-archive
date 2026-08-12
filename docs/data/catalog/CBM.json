@@ -1,0 +1,944 @@
+{
+ "CBM 501": {
+  "code": "CBM 501",
+  "name": "Fizikokimyasal Proses.&Arıtma",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Çevre mühendisliği sistemlerinde yaygın olarak kullanılan fiziksel ve kimyasal proseslerin incelenmesi ve temel kavramların analizinin yapılması. Havalandırma ve gaz transferi, karıştırma, koagülasyon ve flokülasyon, çöktürme, filtrasyon, flotasyon, adsorpsiyon-iyon değişimi, kimyasal oksidasyon ve dezenfeksiyon gibi temel işlem ve proseslerin tanımının yapılması, tasarım ve işletme parametrelerine ilişkin esasların verilmesi Review and analysis of theoretical basis of physical and chemical processes commonly employed in environmental engineering systems and taking place in receiving media. Definition and formulation of design and operation parameters for the unit processes of aeration and gas transfer, mixing, coagulation and flocculation, sedimentation, filtration, flotation, adsorption-ion exchange, chemical oxidation and disinfection.",
+  "outcomes": [
+   "Çevre mühendisliği alanında temel fiziksel ve kimyasal proseslerin ileri teorik bilgileri ve mühendislik analizi (bilgi)",
+   "Havalandırma ve gaz transferi ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Karıştırma-koagülasyon ve flokülasyon ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Çöktürme, filtrasyon, flotasyon ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Nötralizasyon ve pH ayarı ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Kimyasal oksidasyon ve dezenfeksiyon ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Adsorpsiyon, iyon değişimi ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Derse Giriş, Havalandırma",
+   "Hafta 2 — Gaz Transferi",
+   "Hafta 3 — Karıştırma",
+   "Hafta 4 — Koagülasyon-Flokülasyon",
+   "Hafta 5 — Sedimentasyon",
+   "Hafta 6 — Filtrasyon",
+   "Hafta 7 — Flotasyon",
+   "Hafta 8 — Nötralizasyon and pH Ayarı",
+   "Hafta 9 — Kimyasal Oksidasyon",
+   "Hafta 10 — Dezenfeksiyon",
+   "Hafta 11 — Dezenfeksiyon",
+   "Hafta 12 — Adsorpsiyon",
+   "Hafta 13 — İyon Değişimi",
+   "Hafta 14 — Özel konular"
+  ],
+  "textbooks": [
+   "Sincero, A. P., 2002, Physical-Chemical Treatment of Water and Wastewater, CRC Press.",
+   "Henze, M., Harremoes, P. and La Cour Jansen, J., 2001, Wastewater Treatment: Biological and Chemical Processes, Springer Verlag..",
+   "American Water Work Association, Water Quality And Treatment, Mc-Graw Hill, 1999.",
+   "Weber, W. J., 1972, Physicochemical Processes: For Water Quality Control, Wiley- Interscience.",
+   "Hendricks, D., 2006, Water Treatment Unit Processes Physical and Chemical, CRC Press, Taylor and Francis Group, Boca Raton, U.S.A.."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 501E": {
+  "code": "CBM 501E",
+  "name": "Fizikokimyasal Proses.&Arıtma",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Çevre mühendisliği sistemlerinde yaygın olarak kullanılan fiziksel ve kimyasal proseslerin incelenmesi ve temel kavramların analizinin yapılması. Havalandırma ve gaz transferi, karıştırma, koagülasyon ve flokülasyon, çöktürme, filtrasyon, flotasyon, adsorpsiyon-iyon değişimi, kimyasal oksidasyon ve dezenfeksiyon gibi temel işlem ve proseslerin tanımının yapılması, tasarım ve işletme parametrelerine ilişkin esasların verilmesi Review and analysis of theoretical basis of physical and chemical processes commonly employed in environmental engineering systems and taking place in receiving media. Definition and formulation of design and operation parameters for the unit processes of aeration and gas transfer, mixing, coagulation and flocculation, sedimentation, filtration, flotation, adsorption-ion exchange, chemical oxidation and disinfection.",
+  "outcomes": [
+   "Çevre mühendisliği alanında temel fiziksel ve kimyasal proseslerin ileri teorik bilgileri ve mühendislik analizi (bilgi)",
+   "Havalandırma ve gaz transferi ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Karıştırma-koagülasyon ve flokülasyon ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Çöktürme, filtrasyon, flotasyon ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Nötralizasyon ve pH ayarı ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Kimyasal oksidasyon ve dezenfeksiyon ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)",
+   "Adsorpsiyon, iyon değişimi ile ilgili tasarım ve işletim kavramları ve kriterleri (bilgi+beceri+iletişim ve sosyal yetkinlik)"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Derse Giriş, Havalandırma",
+   "Hafta 2 — Gaz Transferi",
+   "Hafta 3 — Karıştırma",
+   "Hafta 4 — Koagülasyon-Flokülasyon",
+   "Hafta 5 — Sedimentasyon",
+   "Hafta 6 — Filtrasyon",
+   "Hafta 7 — Flotasyon",
+   "Hafta 8 — Nötralizasyon and pH Ayarı",
+   "Hafta 9 — Kimyasal Oksidasyon",
+   "Hafta 10 — Dezenfeksiyon",
+   "Hafta 11 — Dezenfeksiyon",
+   "Hafta 12 — Adsorpsiyon",
+   "Hafta 13 — İyon Değişimi",
+   "Hafta 14 — Özel konular"
+  ],
+  "textbooks": [
+   "Sincero, A. P., 2002, Physical-Chemical Treatment of Water and Wastewater, CRC Press.",
+   "Henze, M., Harremoes, P. and La Cour Jansen, J., 2001, Wastewater Treatment: Biological and Chemical Processes, Springer Verlag..",
+   "American Water Work Association, Water Quality And Treatment, Mc-Graw Hill, 1999.",
+   "Weber, W. J., 1972, Physicochemical Processes: For Water Quality Control, Wiley- Interscience.",
+   "Hendricks, D., 2006, Water Treatment Unit Processes Physical and Chemical, CRC Press, Taylor and Francis Group, Boca Raton, U.S.A.."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 502E": {
+  "code": "CBM 502E",
+  "name": "S.Analy.for Exp.Design&Data PR",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş, İstatistikte temel kavramlar, Olasılık Teorisi, Olasılık Dağılımları, Örnekleme Dağılımları, İstatistiksel Hipotez Testi, Regresyon Analizi, Varyans Analizi (ANOVA), tolerans ve tahmin aralıkları, deneysel tasarım yöntemleri, örnek büyüklüğü tayini, amprik modellerde parametre tahmini. Introduction, Basic Concepts of Statistics, Probability Theory, Probability Distributions, SamplingDistributions, Statistical Hypothesis Testing, Regression Analysis, Analysis of Variance (ANOVA), Tolerance intervals and prediction intervals, Experimental design methods, sizing the experiment, Parameter estimation for amprical models",
+  "outcomes": [
+   "Çevre mühendisliği alanında istatistiksel kavramları analiz",
+   "İstatistiksel yöntemleri çevre mühendisliği uygulamalarında etkin biçimde kullanma",
+   "Deneysel verileri/sonuçları değerlendirme ve anlamlılığını irdeleme",
+   "Bilgisayar kullanarak istatistiksel hesaplamaları yapma ve görselleştirme",
+   "İleri istatistiksel araçlar kullanarak deneysel tasarım yapma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş: Mühendislikte istatistiğin önemi, istatistiğin temel kavramları",
+   "Hafta 2 — Olasılık Teorisi: Frekans Analizi ve Parametre Tahmini",
+   "Hafta 3 — Olasılık Dağılımları: Normal Dağılım., Log-Normal Dağılım",
+   "Hafta 4 — Gama Dağılımı, Uç Değer Dağılımı",
+   "Hafta 5 — Örnekleme Dağılımları",
+   "Hafta 6 — İstatistiksel Hipotez Testi",
+   "Hafta 7 — Regresyon Analizi",
+   "Hafta 8 — Regresyon Analizi (devamı): Ara sınav",
+   "Hafta 9 — Çok değişkenli ve doğrusal olmayan regresyon analizi",
+   "Hafta 10 — Bir ortalamanın bir standartla kıyaslanması, Farkların ortalamasının değerlendirilmesi, İki ortalamanın farklarının değerlendirilmesi",
+   "Hafta 11 — k tane ortalamanın çoklu eşleştirme ile kıyaslanması, Tolerans ve tahmin aralıkları",
+   "Hafta 12 — Varyans analizi ile k tane ortalamanın kıyaslanması, Varyansın bileşenleri",
+   "Hafta 13 — Deneysel tasarım, deneyin boyutlandırılması",
+   "Hafta 14 — Faktöriyel deneysel tasarım, kısmi faktöriyel deneysel tasarım, önemli değişkenlerin seçilmesi"
+  ],
+  "textbooks": [
+   "Bayazit, M. and Oğuz, B. 1998. Probability and Statistics for Engineers, Birsen Yayınevi",
+   "Berthoeuex, P. and Brown, LC. 2002. Statistics for Environmental Engineers, Lewis Publishers, FL, USA.",
+   "Box, GEP., Hunter, WG., Hunter, IS. 1978. Statistics for Experimenters: An introduction to design, data analysis and model building, , Wiley Interscience, NY, USA.",
+   "Akkurt, M. 1999. Bilgisayar (Excel) destekli uygulamalı istatistik, Birsen Yayınevi, Istanbul, Türkiye",
+   "Metcalf and Eddy, 2003. Wastewater Engineering: Treatment, Disposal and Reuse, Chapter 3; 15."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=502",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 514": {
+  "code": "CBM 514",
+  "name": "Çevre Sis.Koku ve Emisyon Kont",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Genel Bakış, Koku ve VOC ile ilgili tanımlar, Kaynakta Ve Çevre Havasında Ölçüm Teknikleri, Analitik Koku Ölçüm Yöntemleri, Toksik hava kirleticiler, Çevresel sistemler(atıksu toplama sistemleri, atıksu arıtma tesisleri, çamur çürütme ve kurutma tesisleri, atık yakma tesisleri, gazlaştırma tesisleri, katı atık ve zararlı atık depolama tesisleri, kompost tesisleri) de koku ve VOC oluşumu ve emisyonu. Koku rahatsızlığı ve toplum üzerindeki etkisi.Koku emisyonlarının azaltılması. Atıksu arıtma sistemlerinde koku kontrolü.Biyolojik koku kontrolü, Fizikokimyasal koku kontrolü, Koku modellemesi, Koku ile ilgili yasal düzenlemeler. Introduction, definition of odor and VOC. Odor sampling and measurement techniques on the sources and ambient air.Olfactometric and analytical techniques.Toxic air emission. Odor generation and release on the Environmental Systems(collection systems, wastewater treatment plants, sludge digestion and drying plants, combustion plants, gasification plants, solid and hazardous waste deposition plants, compost plants). Odor emission inventory. Odor nuisance and effects on the public health ıssues.Minimizing odor and fugitif VOC emissions.Containment of odors and emissions from wastewater Treatment plants. Biological, phsycochemical and thermal odor control.odor modeling. Odor pollution legislation",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, ilgili program alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme (yeterli bilgi birikimi) (bilgi).",
+   "Alanında edindiği bilgileri farklı disiplin alanlarından gelen bilgilerle bütünleştirerek yorumlayabilme ve yeni bilgiler oluşturabilme (beceri).",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme (Öğrenme Yetkinliği).",
+   "Alanında özümsedikleri bilgiyi, problem çözme ve/veya uygulama becerilerini, disiplinlerarası çalışmalarda kullanabilme (Alana Özgü Yetkinlik)."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Genel Bakış, Koku ve VOC ile ilgili tanımlar, Toksik hava kirleticiler,. Koku modellemesi, Koku ile ilgili yasal düzenlemeler.",
+   "Hafta 2 — Kaynakta koku numunesi alma, Olfaktometrik ve Analitik Koku Ölçüm Yöntemleri,",
+   "Hafta 3 — Çevre Havasında koku Ölçüm Teknikleri, Olfaktometrik ve Analitik Koku Ölçüm Yöntemleri",
+   "Hafta 4 — Atıksu toplama sistemleri, atıksu arıtma tesisleri, çamur çürütme ve kurutma tesislerinde koku ve VOC Oluşumu",
+   "Hafta 5 — Atık yakma tesisleri, gazlaştırma tesisleri, katı atık ve zararlı atık depolama tesislerinde koku ve VOC oluşumu ve emisyonu.",
+   "Hafta 6 — Kompost tesislerinde koku ve VOC oluşumu ve emisyonu.",
+   "Hafta 7 — Koku emisyon envanteri. Koku rahatsızlığı ve toplum üzerindeki etkisi",
+   "Hafta 8 — Koku ve fugitif VOC emisyonlarının azaltılması.",
+   "Hafta 9 — Atıksu arıtma sistemlerinde koku ve VOC kontrolü.",
+   "Hafta 10 — Biyolojik koku kontrolü,",
+   "Hafta 11 — Fizikokimyasal koku kontrolü",
+   "Hafta 12 — Termal koku kontrolü",
+   "Hafta 13 — Koku modellemesi",
+   "Hafta 14 — Örnek olayların değerlendirilmesi"
+  ],
+  "textbooks": [
+   "Rafson,H.(1998). ”Odor and VOC Control”,McGraw Hill",
+   "Devinny JS, Deshusses MA, Webster TS(2002). “Biofiltration for Air Pollution Control”,Lewis Pub.",
+   "Tata,P.,Witherspoon,J.,Lue-Hing, C.(2003). VOC Emissions from Wastewater Treatment Plants, Characterization, Control and Compliance, Lewis Publ.",
+   "WEF(2004). “Control of odors and Emissions from Wastewater treatment Plants”Manual of Practice No.25, ISBN 978-1-57278-189-4"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=514",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 517E": {
+  "code": "CBM 517E",
+  "name": "Wastewater Reclamation&Reuse",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Atıksu geri kazanım tekrar kullanımına yönelik tanımlar; geri kazanılmış atıksuyun kullanım alternatifleri, atıksu geri kazanımının faydaları, atıksu geri kazanım ihtiyacının artmasının nedenleri, atıksu geri kazanım tekrar kullanım sistemlerinin planlanmasında teknik çerçeve, atıksu geri kazanım teknolojilerinin ve potansiyelinin değerlendirilmesi, yönetmelik ve klavuzlar, tekrar kullanım uygulamaları: kentsel, endüstriyel, tarımsal, yeraltı suyu besleme, rekreasyonel, atıksu tekrar kullanım sistemlerinin finansman alternatifleri Definitions of terms related to water reclamation and reuse; potential uses of reclaimed wastewater; benefits of wastewater reuse; reasons for the growing use of reclaimed wastewater, technical issues in planning wastewater reclamation and reuse systems, Evaluation of the wastewater reuse technology and potential, wastewater reuse regulations and guidelines, Reuse applications: Urban reuse, industrial reuse, agricultural reuse, groundwater recharge, recreational reuse, Funding alternatives for water reuse systems",
+  "outcomes": [
+   "Geri kazanılmış atıksuyun kullanım alternatifleri hakkında ileri düzeyde bilgi sahibi olma (bilgi)",
+   "Atıksu geri kazanım tekrar kullanım sistemlerinin planlanmasında teknik çerçeve ile ilgili bilimsel literatür çalışmalarından edindiği yeni bilgileri değerlendirebilme ve kullanabilme (beceri)",
+   "Atıksu tekrar kullanım konusunda edindiği bilgiyi değerlendirme ve uygulayabilme (beceri)",
+   "Konuyla ilgili ileri düzeyde İngilizce sunum ve rapor hazırlama (İletişim ve Sosyal Yetkinlik)"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kavramların tanımlanması",
+   "Hafta 2 — Geri kazanılmış atıksuyun kullanım alternatifleri",
+   "Hafta 3 — Atıksu geri kazanımının faydaları, atıksu geri kazanım ihtiyacının artmasının nedenleri",
+   "Hafta 4 — Atıksu geri kazanım tekrar kullanım sistemlerinin planlanmasında teknik çerçeve",
+   "Hafta 5 — Atıksu geri kazanım teknolojilerinin ve potansiyelinin değerlendirilmesi",
+   "Hafta 6 — Yönetmelik ve klavuzlar",
+   "Hafta 7 — Tekrar kullanım uygulamaları: kentsel",
+   "Hafta 8 — Tekrar kullanım uygulamaları: tarımsal",
+   "Hafta 9 — Tekrar kullanım uygulamaları: yeraltı suyu besleme",
+   "Hafta 10 — Tekrar kullanım uygulamaları: rekreasyonel",
+   "Hafta 11 — Tekrar kullanım uygulamaları: endüstriyel atıksu gerikazanım metodolojisi",
+   "Hafta 12 — Tekrar kullanım uygulamaları: endüstriyel atıksu gerikazanımında teknik ve ekonomik kısıtlar",
+   "Hafta 13 — Endüstriyel atıksu tekrar kullanımında çeşitli örnekler",
+   "Hafta 14 — Atıksu tekrar kullanım sistemlerinin finansman alternatifleri"
+  ],
+  "textbooks": [
+   "Guidelines for Water Reuse, USEPA, Environmental Protection Agency, 2004.",
+   "Water Reuse An International Survey of current practice, issues and needs Editor(s): Blanca Jimenez and Takashi Asano 2008, IWA Publishing",
+   "Wastewater Reclamation and Reuse (T. Asano ed.), Technomic Publishing Company Inc., 1998.",
+   "Guidelines for Water Reuse, Camp Dresser & Mckee Inc., 1992.",
+   "Wastewater Reuse for Golf Course Irrigation, USGA, Lewis Publisher,1994."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=517",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 533": {
+  "code": "CBM 533",
+  "name": "Çevresel Sistem.Matem.Ana.",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Çevre mühendisliğinde kullanılan lineer cebir ve diferansiyel denklemler aracılığıyla sistem analizi: lineer denklemler, matris yöntemleri, özdeğer/özvektör analizi; doğrusal ve doğrusal olmayan adi diferansiyel denklemlerin (ADD’lerin) çözümü; çoklu denklem takımları ve kararlılık; çevresel süreçlerin (reaktörler, kütle dengeleri, taşınım) modellenmesi ve sayısal uygulamalar. Systems analysis in environmental engineering via linear algebra and differential equations: linear systems, matrix methods, eigenvalue/eigenvector analysis; solution of linear and nonlinear ordinary differential equations (ODEs); systems of equations and stability; modeling of environmental processes (reactors, mass balances, transport) and numerical applications.",
+  "outcomes": [
+   "Lineer denklemler ve matris işlemlerini çevresel sistem problemlerinde uygular",
+   "Özdeğer–özvektör analizini dinamik sistem davranışını incelemede kullanır",
+   "Doğrusal ve doğrusal olmayan ADD’leri analitik ve sayısal yöntemlerle çözer",
+   "Diferansiyel denklem takımlarını kurar, kararlılık ve geçici rejimleri yorumlar",
+   "Kütle/enerji dengeleriyle reaktör ve süreç modelleri oluşturur",
+   "Python/Excel araçlarıyla hesaplamalı uygulamalar geliştirir ve görselleştirir",
+   "Model sonuçlarını belirsizlik, duyarlılık ve fiziksel anlamlılık açısından değerlendirir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Lineer denklemler ve matrisler (I)",
+   "Hafta 2 — Lineer denklemler ve matrisler (II)",
+   "Hafta 3 — Çevre bilimleri ve mühendisliğinde temel işlemler",
+   "Hafta 4 — Çevresel sistemlerin analizine giriş-matris yöntemleri",
+   "Hafta 5 — Doğrusal ve doğrusal olmayan denklem takımlarının çözümü",
+   "Hafta 6 — Özdeğerler ve özvektörler",
+   "Hafta 7 — Doğrusal adi diferansiyel denklemler",
+   "Hafta 8 — Doğrusal adi diferansiyel denklemler ve çevresel sistemlerde uygulamaları (I)",
+   "Hafta 9 — Doğrusal adi diferansiyel denklemler ve çevresel sistemlerde uygulamaları (II)",
+   "Hafta 10 — Doğrusal adi diferansiyel denklemler ve çevresel sistemlerde uygulamaları (III)",
+   "Hafta 11 — Doğrusal adi diferansiyel denklemler ve çevresel sistemlerde uygulamaları (IV)",
+   "Hafta 12 — Doğrusal olmayan adi diferansiyel denklemler",
+   "Hafta 13 — Yüksek mertebeden doğrusal diferansiyel denklemler",
+   "Hafta 14 — Diferansiyel denklem takımları"
+  ],
+  "textbooks": [
+   "Edwards, C.H., Penney, D.H., Calvis, D.T. (2018). Differential Equations & Linear Algebra (4th ed.). Pearson",
+   "Lona, L.M.F. (2018). A Step by Step Approach to the Modeling of Chemical Engineering Processes: Using Excel for Simulation. Springer",
+   "Karadeniz, A. Yüksek Matematik, Cilt 1–3, Çağlayan Kitabevi",
+   "Kreyszig, E., Kreyszig, H., Norminton, E.J. (2011). Advanced Engineering Mathematics. Wiley"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=533",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 535": {
+  "code": "CBM 535",
+  "name": "Çevre Bil.&Müh.Özel Konu.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders her açıldığında duyurulacaktır. To be announced whenever the course is offered.",
+  "outcomes": [
+   "Dersin öğrenme çıktıları, bu ders kapsamında öğretilen konulara gore değişiklik arz edecektir. Bu nedenle her dönem değişmektedir.",
+   "-",
+   "-",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ders açıldığında duyurulacaktır.",
+   "Hafta 2 — Ders açıldığında duyurulacaktır.",
+   "Hafta 3 — Ders açıldığında duyurulacaktır.",
+   "Hafta 4 — Ders açıldığında duyurulacaktır.",
+   "Hafta 5 — Ders açıldığında duyurulacaktır.",
+   "Hafta 6 — Ders açıldığında duyurulacaktır.",
+   "Hafta 7 — Ders açıldığında duyurulacaktır.",
+   "Hafta 8 — Ders açıldığında duyurulacaktır.",
+   "Hafta 9 — Ders açıldığında duyurulacaktır.",
+   "Hafta 10 — Ders açıldığında duyurulacaktır.",
+   "Hafta 11 — Ders açıldığında duyurulacaktır.",
+   "Hafta 12 — Ders açıldığında duyurulacaktır.",
+   "Hafta 13 — Ders açıldığında duyurulacaktır.",
+   "Hafta 14 — Ders açıldığında duyurulacaktır."
+  ],
+  "textbooks": [
+   "Ders kapsamında anlatılan konulara göre değişiklik göstermektedir.",
+   "Ders kapsamında anlatılan konulara göre değişiklik göstermektedir."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=535",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 539": {
+  "code": "CBM 539",
+  "name": "Hava Kirlenmesi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Hava kirlenmesinin temelleri. Hava Kirleticiler.Hava Kirliliğinin canlılar,eşyalar ve ekosistem üzerindeki etkileri. Hava Kirletici Kaynaklar. Hava kirleticilerin oluşum mekanizmaları.Hava kirleticilerin atmosferik dönüşüm ve taşınımları.Atmoferik reaksiyonlar. Hava kirlenmesi meteorolojisi. Dispersiyon modelleri. Çevresel hava kalitesi ölçüm teknikleri.Kaynakta ölçüm teknikleri.Emisyon envanterleri,Sera gazları envanterleri,IPCC yaklaşımı.Hava kalitesi yönetimi Yasal düzenlemeler(Sanayi Kaynaklı Hava Kirliliğinin Kontrolü, Büyük Yakma Tesisleri, Hava Kalitesi Değerlendirme ve Yönetimi,Isınmadan Kaynaklanan HKKY.Global hava kirlenmesi olayları ve etkileri.İklim değişikliği ve hava kalitesi. Fundamentals of air pollution. Air pollutants. Impacts of air pollution on human health, welfare, and ecosystem. Air pollution sources. Air pollutant formation mechanisms. Atmospheric transformation and transport of pollutants. Atmospheric reactions. Meteorology. Dispersion models. Industrial air pollutant control technologies. Air quality measurement techniques. Air pollutant measurement techniques at the source. Immission ınventories,Greenhouse gases inventories, IPCC approximation. Air quality management. Legal statue. ( Control of İndustrial originated air pollution Large Combustion Plants, Ambient Air pollution Evaluation and Management, Control of air pollution originating from Home Heating ) Global air pollution problems and effects. Climate change and air quality.",
+  "outcomes": [
+   "Lisans düzeyi yeterliliklerine dayalı olarak, ilgili program alanında bilgilerini uzmanlık düzeyinde geliştirebilme ve derinleştirebilme (yeterli bilgi birikimi) (bilgi).",
+   "yorumlayabilme ve yeni bilgiler oluşturabilme (beceri).Hava kirlenmesi alanında temel düzeyde bilgi düzeyini yükseltme (bilgi)",
+   "Alanında edindiği uzmanlık düzeyindeki bilgi ve becerileri eleştirel bir yaklaşımla değerlendirebilme ve öğrenmesini yönlendirebilme (Öğrenme Yetkinliği).Hava kirlenmesi problemlerine (bilgi)",
+   "Alanında özümsedikleri bilgiyi, problem çözme ve/veya uygulama becerilerini, disiplinlerarası çalışmalarda kullanabilme (Alana Özgü Yetkinlik).Atmosfer kimyasının katkısı ile hava-su-toprak alıcı ortamlarında kirleticilerin taşınımı hakkında bilgi ve uygulama becerisi kazanma. ( beceri )."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Hava kirlenmesi, tanımlar, hava kirlenmesi ölçekleri, atmosferin genel yapısı atmosferik çevrimler, hava kirleticiler, yarı ömürler, etkileri, birimler, dönüşümler.",
+   "Hafta 2 — Hava kirletici kaynaklar, doğal ve antropolojik kaynaklar, hava kalitesi yönetimi, emisyon faktörleri, emisyon envanterleri, IPCC yaklaşımları.",
+   "Hafta 3 — Yakıtlar ve yanma, Motorlu araçlar, enerji üretim tesisleri, kojenerasyon, enerji tesislerinin emisyonlarının belirlenmesi",
+   "Hafta 4 — Çimento, demir çelik, petrokimya endüstrileri ve emisyonları",
+   "Hafta 5 — Hava Kirlenmesi Meteorolojisi, atmosferin genel çevrimleri, Coriolis kuvvetleri, inversiyonlar, karışım yükseklikleri, türbülans etkisi.",
+   "Hafta 6 — Kirleticilerin atmosferdeki dağılımı, Eulerian ve Lagrangian dispersiyon eşitlikleri, Gaussian Dağılımın temel ifadeleri, hüzme yükselmesi hesapları, Gaussian dağılım uygulamaları.",
+   "Hafta 7 — Atmosferik dağılım modelleri, ISC, Aermod, Callpuff modelleri",
+   "Hafta 8 — Fotokimyasal reaksiyonlar, Troposfer kimyası, troposferde Hidroksil radikallerinin üretimi, NO2, NO, ve O3’nun temel fotokimyasal çevrimi, Karbon monoksitin, metanın atmosferik kimyası, NOx ve NOy’nin üyeleri",
+   "Hafta 9 — Aerosoller, Aerosolllerin kaynakları ve yutakları radyasyonun dağılımı, görüş mesafesi azalması, kuru ve yaş çökelme",
+   "Hafta 10 — Hava Kirleticilerin ölçümü: Kaynakta numune alma ve ölçüm metodları,",
+   "Hafta 11 — Hava Kirleticilerin ölçümü: Çevre Havasında numune alma ve ölçüm metodları",
+   "Hafta 12 — Hava kirliliği ile ilgili yasal düzenlemeler,",
+   "Hafta 13 — Global hava kirliliği problemleri,iklim değişikliği ve etkileri",
+   "Hafta 14 — Örnek olayların değerlendirilmesi"
+  ],
+  "textbooks": [
+   "Wark, K., Warner, C.F., Davis, W.T. (1998). “Air Pollution, Its Origin and Control”, Harper and Row.",
+   "Heinsohn, R.J., Kabel, R.L., “Sources and Control of Air Pollution”, Prentice Hall,1999 (TD883 .H45 1999).",
+   "Lutgens, F.K., Tarbuck, E.J., “The Atmosphere: An Introduction to Meteorology”, Prentice Hall, 2007 (QC861.3 .L88 2007).",
+   "Cooper, C.D., Alley, F.C. (2002). “Air Pollution Control- A Design Approach”, Third edition, Pres Inc.",
+   "Jacob, D.J., “Introduction to Atmospheric Chemistry\", Princeton University Press, 1999 (QC879.6.J33 1999, PDF version available: (http://acmg.seas.harvard.edu/publications/jacobbook/index.html))"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=539",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 542E": {
+  "code": "CBM 542E",
+  "name": "Eutrophication",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ötrofikasyonun tanımı, ötrofikasyonun olumsuz etkileri, ötrofikasyonu etkileyen faktörler, besi maddesi kaynakları, besi maddesi döngüleri, fitoplankton kinetiği, tatlı ve tuzlu su ekosistemleri için trofik seviyenin belirlenmesi, ötrofikasyonun izlenmesi, ötrofikasyon modellemesi, ötrofikasyon kontrol yöntemleri,ötrofikasyonla ilgili politikalar, örnek çalışmalar Definition of eutrophication, adverse effects of eutrophication, factors effecting eutrophication, effect of stratification on eutrophication, sources of nutrients, nutrient cycles, phytoplankton kinetics, assessment of trophic status for freshwater and marine ecosystems, eutrophication monitoring, eutrophication modeling, eutrophication control strategies, eutrophication related policies, case studies",
+  "outcomes": [
+   "Ötrofikasyonuproblemini tanımlanma, olumsuz etkilerini ve ötrofikasyonuetkileyen faktörleri belirleme",
+   "Biyojeokimyasal döngüler ve fitoplankton kinetiğini kavrama",
+   "Tatlı ve tuzlu su ekosistemlerinin trofik seviyelerini belirleme",
+   "Ötrofikasyon kontrolü, yönetimi ve politikaları kavrama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ötrofikasyona giriş, ötrofikasyonun olumsuz etkileri",
+   "Hafta 2 — Ötrofikasyonu etkileyen faktörler (tabakalaşma, hidrolik bekletme süresi, ışık,sıcaklık, besi maddeleri vb.)",
+   "Hafta 3 — Besi maddelerinin kaynakları",
+   "Hafta 4 — Biyojeokimyasal döngüler(Azot, Fosfor, Çözünmüş oksijen)",
+   "Hafta 5 — Fitoplankton kinetiği",
+   "Hafta 6 — Trofikseviyenin belirlenmesi –Tatlı su ekosistemleri",
+   "Hafta 7 — Trofik seviyenin belirlenmesi – Tuzlu su ekosistemleri",
+   "Hafta 8 — Ötrofikasyonun izlenmesi",
+   "Hafta 9 — Ötrofikasyonun modellenmesi",
+   "Hafta 10 — Ötrofikasyon kontrol yöntemleri –Önleyici yöntemler, iyileştirici yöntemler",
+   "Hafta 11 — Ötrofikasyon kontrol yöntemleri – iyileştirici yöntemler",
+   "Hafta 12 — Ötrofikasyonla ilgili politikalar (OSPAR Konvansiyonu, HELCOM Konvansiyonu, Avrupa Birliği yönetmelikleri)",
+   "Hafta 13 — Ulusal ve uluslararası örnek uygulamalar",
+   "Hafta 14 — Ulusal ve uluslararası örnek uygulamalar"
+  ],
+  "textbooks": [
+   "Thoman, R.V., and Mueller, J.A. 1987. Eutrophication (Chapter 7), In: Principles of Surface Water Quality Modeling and Control, Harper and Row Publishers, NY, 385-487.",
+   "J.H. Andersen, D.J. Conley, 2009. The Eutrophication in Coastal Ecosystems,Hydrobiologia, Volume: 629, Springer Publishing, The Netherlands..",
+   "Cooke, G.D., Welch, E.B., Peterson, S.A., Nichols, S.A., 2005. Restoration and management of lakes and reservoirs, 3rd edition,591pp., CRC Press, Boca Raton, FL, USA.",
+   "Gurel, M., Tanık, A., Russo, R.C., Gonenc, I.E. 2005. Biogeochemical Cycles (Chapter 4), In: Coastal Lagoons: Ecosystem Processes, and Modeling for Sustainable Use and Development, Eds: Gonenc, I.E., Wolflin, J., CRC Press, Boca Raton, USA.",
+   "Welch, E.B., Jacoby, M.,Lindell, T. 2004. Pollutant Effects in freshwater, 3rd Edition,Spon Press,UK."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=542",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 546E": {
+  "code": "CBM 546E",
+  "name": "Bütünleşik Havza Yönetimi",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Havza yönetimine giriş; arazi planlaması, afet zararlarının azaltılması ve havza yönetimi, havza bozunma ve su kaynaklı afetlerin kategorileri, Bütünleşik havza yönetimi; yönetim sisteminin geliştirilmesi, kaynak düzenlemeleri, kurumsal/yasal gereksinimler, halkın katılımı, insan kaynağı ve politika geliştirilmesi, Veri toplama, havza yönetimi, arazi varlığı ve afet zararlarının değerlendirilmesi, modeller ve karar destek sistemleri, Havza yönetimi ve afet zararlarının azaltılmasına için opsiyonlar. Introduction to integrated watershed management; land-use planning, disaster mitigation and watershed management, categories of watershed degradation and water-related disasters, Integrated watershed management; development of a management system, funding arrangements, institutional/legal requirements, public involvement, human resource and policy development, Data collection, watershed management, land resource and natural hazard assessment; models and decision-support systems, Options for watershed management and hazard reduction.",
+  "outcomes": [
+   "Bütünleşik havza yönetimi hakkında ileri düzeyde bilgi sahibi olma (bilgi)",
+   "Bütünleşik havza yönetimi ilgili bilimsel literatür çalışmalarından ve uygulamalardan edindiği yeni bilgileri değerlendirebilme ve kullanabilme (beceri).",
+   "Bütünleşik havza yönetimi, arazi planlaması ve su kaynakları yönetimi prensipleri ve uygulamaları ile ilgili bilgileri inceleyebilme, sentezleyebilme ve değerlendirebilme (beceri).",
+   "Bütünleşik havza yönetimi uygulamaları ile ilgili ileri düzeyde İngilizce sunum ve rapor hazırlama (İletişim ve Sosyal Yetkinlik)."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bütünleşik havza yönetimine giriş",
+   "Hafta 2 — Arazi kullanımı planlaması, afet zararlarının azaltılması ve havza yönetimi arasınaki ilişkiler",
+   "Hafta 3 — Havza bozunma ve su kaynaklı afetlerin kategorileri",
+   "Hafta 4 — Bütünleşik havza yönetimi; yönetim sisteminin geliştirilmesi",
+   "Hafta 5 — Bütünleşik havza yönetimi; kaynak düzenlemeleri, kurumsal/yasal gereksinimler",
+   "Hafta 6 — Bütünleşik havza yönetimi; halkın katılımı, insan kaynağı ve politika geliştirilmesi",
+   "Hafta 7 — Veri toplama ve havza yönetimi için bilgi ihtiyaçları",
+   "Hafta 8 — Veri toplama ve havza yönetimi değerlendirmesi; arazi varlığı değerlendirmesi, toprak özellikleri",
+   "Hafta 9 — Veri toplama ve havza yönetimi değerlendirmesi; simulasyon sistemleri, optimizasyon modelleri ve karar destek sistemleri",
+   "Hafta 10 — Arazi yönetim önelemleri, arazi kullanımı kontrol önelemleri; büyük ölçekli yapısal ve mühendislik önlemleri",
+   "Hafta 11 — Havza yönetim çalışmalarında kullanılan güncel modern araçlar; Uzaktan Algılama (UA), Coğrafi Bilgi Sistemleri (CBS), havza ve su kalite modelleme",
+   "Hafta 12 — SUNUMLAR: Gelişmiş ülkelerde bütünleşik havza yönetim uygulamaları",
+   "Hafta 13 — SUNUMLAR: Gelişmekte olan ülkelerde bütünleşik havza yönetim uygulamaları",
+   "Hafta 14 — SUNUMLAR: Gelişmemiş ülkelerde bütünleşik havza yönetim uygulamaları"
+  ],
+  "textbooks": [
+   "Guidelines and Manual on Land-use Planning and Practices in Watershed Management and Disaster Reduction, Economic and Social Commission for Asia and the Pacific, United Nations, 1997.",
+   "Watershed Management; Practice, Policies and Coordination, Robert J. Reimold (edit.), Mc GrawHill, 1998, USA.",
+   "Watersheds; Processes, Assessment and Management, Paul A. DeBarry, John Wiley & Sons, Inc., 2004, New Jersey.",
+   "Restoration and Management f Lakes and Reservoirs, G. Dennis Cooke, Eugene B. Welch, Spencer A. Peterson & Stanley A. Nichols, 3rd edition, Taylor and Francis, CRC Press, 2005, USA.",
+   "Watershed Management; Issues and Approaches, Timothy O. Randhir, IWA Pblishing, 2007, UK."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=546",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 551E": {
+  "code": "CBM 551E",
+  "name": "Energy Effi.in Wastewat.Treat.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Atıksu arıtma tesislerinde enerji verimliliğinin anlamı, önemi ve boyutları, Enerji verimliliğini sağlamak üzere uygulanması gereken temel bilimsel ve teknolojik esaslar, Konvansiyonel atıksu arıtma prosesleri ile enerji verimli arıtma prosesleri arasındaki farklar, Enerji verimli arıtma prosesleri için temel tasarım ve işletme esasları, Mevcut atıksu arıtma proseslerinin performansı ve enerji verimliliğinin arttırılmasında izlenecek yöntemler, Enerji verimli atıksu arıtma sistemlerinin dünyadaki örnekleri. Definition, importance and scope of energy efficiency in wastewater treatment plants, Scientific and technological fundamentals need to be applied to achieve energy efficiency, Differences between conventional wastewater treatment processes and energy efficient treatment processes, Basic design and operational principles for energy efficient treatment processes, Methods for increasing the performance and energy efficiency of existing wastewater treatment processes, World wide application examples of energy efficient wastewater treatment plants.",
+  "outcomes": [
+   "Enerji verimli atıksu arıtımı hakkında güncel ve ileri düzeyde mühendislik bilgisi sahibi olma (bilgi)",
+   "Enerji verimliliği ve biyolojik atıksu arıtma prosesi tasarım ve işletimi konularının ilişkili olduğu disiplinlerarası etkileşimi kavrayabilme (bilgi).",
+   "Enerji verimli atıksu arıtma prosesleri ile ilgili yeni bilgileri sistematik bir yaklaşımla değerlendirebilme ve kullanabilme (beceri).",
+   "Enerji verimliliği kavramını ve proses bilgisini mevcut bir atıksu arıtma tesisinin performansının arttırılabilmesi amacıyla uygulayabilme, (beceri).",
+   "İleri düzeyde İngilizce sunum ve rapor hazırlama (İletişim ve Sosyal Yetkinlik)."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Atıksu ve Enerji; Enerji Yönetimini Gerektiren Etkenler",
+   "Hafta 2 — Konvansiyonel Arıtma Tesislerinde Enerji Kullanımı; Kütle ve Enerji Dengesinin Temelleri",
+   "Hafta 3 — Enerji Verimliliğine Giriş; Atıksu Arıtma Tesislerinde Enerji Kullanımı ve Enerji Tasarrufu Önlemleri",
+   "Hafta 4 — Atıksuların İçerdiği Kimyasal Enerjinin Geri kazanımı ve Kullanımı; Biyokütle Enerjisi; Çamur ve Biyokatılardan Enerji Geri Kazanımı-1",
+   "Hafta 5 — Atıksuların İçerdiği Kimyasal Enerjinin Geri kazanımı ve Kullanımı; Biyokütle Enerjisi; Çamur ve Biyokatılardan Enerji Geri Kazanımı-2",
+   "Hafta 6 — Isı Enerjisi Geri Kazanımı ve Kullanımı; Isı Üretimi; Hidrolik Potansiyel Enerjinin Geri Kazanımı ve Kullanımı",
+   "Hafta 7 — Enerji Verimli İşletme Stratejileri; Enerji Verimli Ekipmanlar; Enerji Verimli Atıksu Arıtıma Tesisi İşletimi için Enstrümantasyon, İzleme ve Gerçek Zamanlı Kontrol Stratejileri",
+   "Hafta 8 — Sürdürülebilir Enerji Yönetimi için Planlama, Yenilenebilir Enerji Kaynakları Kullanılarak Atıksu Arıtma Tesislerinde Sürdürülebilirlik; Atıksu Arıtma Tesislerinde Yan Akımların Belirlenmesi, Karakterizasyonu; Yan Akım Debi ve Yüklerinin Yönetimi",
+   "Hafta 9 — Enerji Verimli Atıksu Arıtma Proseslerindeki Güncel Gelişmeler; Karbon, Azot, Fosfor Gideriminde Yenilikçi Teknolojiler: Anaerobik Membran Biyoreaktörler, Hareketli Yataklı Biyofilm Reaktörler, Adsorbsiyon-Biyooksidasyon Sistemleri",
+   "Hafta 10 — Enerji Verimli Atıksu Arıtma Proseslerindeki Güncel Gelişmeler; Karbon, Azot, Fosfor Gideriminde Yenilikçi Teknolojiler: Anaerobik Membran Biyoreaktörler, Hareketli Yataklı Biyofilm Reaktörler, Adsorbsiyon-Biyooksidasyon Sistemleri",
+   "Hafta 11 — Enerji Verimli Atıksu Arıtma Proseslerindeki Güncel Gelişmeler; Karbon, Azot, Fosfor Gideriminde Yenilikçi Teknolojiler: Anaerobik Membran Biyoreaktörler, Hareketli Yataklı Biyofilm Reaktörler, Adsorbsiyon-Biyooksidasyon Sistemleri",
+   "Hafta 12 — Enerji Yönetimi; Enerji Maliyetlerini Oluşturan Temel Bileşenler; Enerji Maliyetlerinin Azaltımında Enerji Analizinin Kullanılması; Daha Az Havalandırma ve Çamur Üretimi Sağlayan Proses Seçenekleri",
+   "Hafta 13 — Enerji Verimli Atıksu Arıtma Tesislerinin Dünyadaki Örnekleri-1",
+   "Hafta 14 — Enerji Verimli Atıksu Arıtma Tesislerinin Dünyadaki Örnekleri-2"
+  ],
+  "textbooks": [
+   "Spellman, F.R. (2013). Water & Wastewater Infrastructure: Energy Efficiency and Sustainability, CRC Press, Boca Raton, USA.",
+   "Metcalf & Eddy (2014). Wastewater Engineering: Treatment and Resource Recovery, 5. Ed., McGraw-Hill, New York, USA.",
+   "Water Environment Federation (2008). Operation of Municipal Wastewater Treatment Plants Volume: 2-3, WEF Press, McGraw Hill.",
+   "van Haandel A.C., van der Lubbe J.G.M. (2012). Handbook of Biological Wastewater Treatment: Design and Optimisation of Activated Sludge Systems, 2nd ed. IWA Publishing, London, UK",
+   "Ozturk, I., Dereli, R.K., Ersahin, M.E. (2015). Environmental Handbooks: Handbook of Energy Efficiency and Best Operation Practices in Wastewater Treatment Plants, ISTAC Technical Book Series-5, Istanbul, Turkey (in Turkish)."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=551",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 553": {
+  "code": "CBM 553",
+  "name": "Atık&Biyokütle.Enerji Üretimi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Günümüzde atıkların bertarafı ve yenilenebilir enerji konuları dünya da olduğu gibi ülkemizde de gittikçe önem kazanmaktadır. Özellikle iklim değişikliği sebepleri arasında birinci sırayı alan fosil yakıtların karbondioksit emisyonlarının azaltılması için atık ve biokütleden enerji üretimi öncelik kazanmaktadır. Avrupa Birliği hedeflerine yönelik ülkemizde hazırlanan master planlarda atık ve biokütle yakılması için benimsenen hedeflere ulaşılması için çok sayıda bu tür tesise gereksinim bulunmaktadır. Bu ders yüksek lisans öğrencileri atık ve biokütle potansiyelleri, atık ve biokütlelerin karakterizasyonu, termal dönüşüm(yanma, piroliz, gazlaştırma) reaksiyonları, termal dönüşüm sistemleri, enerji geri kazanımları, kirletici(hava, su, katı) oluşumları, oluşan kirleticilerin kontrolleri, kül depolama ve yönetimi, tesislerin çevresel etkileri vb. konuları hakkında bilgi sahibi olacaklar. Nowadays waste disposal and renewable energy issues are becoming increasingly important issue in our country as well as in the world. Especially in order to reduce carbon dioxide emissions of fossil fuels that are taking first place among the reasons of climate change, energy production from waste and biomass are taking primacy. The master plans of our country intended to European Union are pointed out need of waste disposal and renewable energy facilities in order to achive the objectives and goals adopted for waste and biomass combustion. Within this course master students will be familiar about waste and biomass potential, waste and biomass characterization, thermal conversion (combustion, pyrolysis, gasification) reactions, thermal conversion systems, waste recovery, pollutant (air, water, solid) generation, control of generated pollutants, ash storage and management, environmental impacts of facilities.",
+  "outcomes": [
+   "I. Öğrenciler ülkemizdeki biyokütle ve atıkların potansiyelleri, master planlardaki bu tür geri kazanılabilir maddelerle ilgili hedefler hakkında bilgi sahibi olacaklardır (bilgi).",
+   "II. Öğrenciler enerji geri kazanımı için kullanılan termal dönüşüm prosesleri(yakma, birlikte yakma, piroliz, gazlaştırma) hakkında bilgi edinecekler, bu sistemlerin dizaynında temel reaksiyonların hesaplarını yapabilecekler, enerji geri kazanımı ve bu enerjinin kullanımına ilişkin temel uygulamaları(kombine çevrim, kojenerasyon hakkında bilgi sahibi olacaklar (bilgi).",
+   "III. Öğrenciler bu derste termal dönüşüm tekniklerinin atıkları hakkında, bu atıkların yönetimi ve kontrolü ile ilgili bilgi sahibi olacaklar ve bu bilgileri çevre mühendisliği ile ilgili karşılaşılan sorunların çözümünde kullanacaklar (beceri).",
+   "IV. Öğrenciler biyokütle ve atıkların enerjilerinden yararlanmaya yönelik termal sistemlerin değerlendirmesinde diğer mühendislik alanındaki meslektaşları ile iyi iletişim kurmayı, bu proseslerle ilgili sunum hazırlamayı ve derleme makale yazmayı öğrenecekler (iletişim ve sosyal yetkinlik)."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Biokütle ve atık kaynakları, üretimi, Dünyada ve Türkiye’de enerji üretimindeki potansiyelleri",
+   "Hafta 2 — Biokütle ve atıkların sınıflandırılması, karakterizasyonları(Kimyasal analizler ve TGA,PY-GC-MS ve FTIR)",
+   "Hafta 3 — Termal dönüşüm yöntemleri,genel, yakma, piroliz, gazlaştırma, bio rafineriler",
+   "Hafta 4 — Yakma, indirect yakma, birlikte yakma, yanma mekanizmaları, yanma kimyası",
+   "Hafta 5 — Büyük ölçekli yakma, endüstriyel ölçekli yakma,",
+   "Hafta 6 — Gazlaştırma, stokiometrik reaksiyonlar, gazlaştırma teknolojileri",
+   "Hafta 7 — Vize Piroliz, stokiometrik reaksiyonlar, sıvı yakıt(bio oil) üretimi için hızlı piroliz, hızlı piroliz teknolojileri",
+   "Hafta 8 — Ara piroliz teknolojileri, hızlı piroliz ile karşılaştırılması",
+   "Hafta 9 — Bio rafineriler, biokütlenin enzimler ve mikroorganizmalar yardımıyla dönüştürülmesi, gelecekteki potansiyeller",
+   "Hafta 10 — Yanma kirleticileri, yanma kirletiilerinin oluşumu, yanma gazlarının kompozisyonu",
+   "Hafta 11 — Yanma kirleticilerinin (SOx, NOx, yanmamış VOC, PAHs, karbon partikülleri) kontrolü,",
+   "Hafta 12 — Enerji denklemleri, enerji üretimi, kojeneration uygulamaları",
+   "Hafta 13 — Biokütle ve atık termal dönüşüm tesislerinin çevresel etkileri",
+   "Hafta 14 — Sunum"
+  ],
+  "textbooks": [
+   ".Rosendahl,Lasse(editör).”Biomass combustion, science, technology and engineering”, 2013, Woodhead Publishing Limited, ISBN: 9780857097439, Cambridge UK.",
+   "Niessen,R.Walter.”Combustion And Incineration Processes Applications İn Environmental Engineering”,1020, Crc Press Taylor & Francis Group, Isbn 978-1-4398-0503-9 (Hardback),USA.",
+   "Wiebren De Jong, J. Ruud Van Ommen, “Biomass As A Sustainable Energy Source For The Future: Fundamentals Of Conversion Processes”,2014, John Wiley, Print ISBN: 9781118304914, Online ISBN: 9781118916643,New Jersey.",
+   "Pandey,A., Bhaskar, T., Stöcker, M.,Sukuraman, K.R.” Recent Advances In Thermochemıcal Conversıon Of Bıomass”, 2015, ISBN: 9780444632906, Elsevier",
+   "Dahlquist, E.”Technologies for Converting Biomass to Useful Energy Combustion, Gasification, Pyrolysis, Torrefaction And Fermentation”, 2013, CRC Press, ISBN: 978-0-203-12026-2 (e-book),London UK. 6. Jones, J.M., Lea-Langton, A.R.,Ma, L.,Pourkashanian, M., Williams, A. “Pollutants Generated by the Combustion of Solid Biomass Fuels”,2014, Springer, ISBN 978-1-4471-6437-1 (eBook), London."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=553",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 557E": {
+  "code": "CBM 557E",
+  "name": "Microalga.App.with Bioref.App.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu derste, mikroalg sistemlerinin temelleri tartışılacak ve mikroalglerin mikrobiolojisi ile sınıfları anlatılacaktır. Mikroalg sistemlerinin dizaynı ve uygulamaları, enerji analizi ve ekonomik içeriği açıklanacaktır. Geniş uygulama alanlarına sahip ucuz bir hammadde olarak, mikroalglerin kullanım alanları ayrıntılı bir şekilde anlatılacaktır (gıda desteği, hayvan yemi, biyoyakıt, ilaç sektörü, pigmentler vb.) Ayrıca, genetik mühendisliği ile mikroalglerden katma değer maddelerin üretimi anlatılacaktır. Buna ek olarak, mikroalglerin büyük ölçekli uygulamaları incelenerek, mikroalgal proseslerin geleceği ele alınacaktır. In this course, the fundamentals of microalgae systems are discussed. The basics of the microbiology and classes of microalgae are covered. Applications and design of microalgae systems, energy analysis and introductory economics are also covered. As a source of cheap feedstock for a wide range of applications (nutritions, animal food, biofuels, nutraceuticals, pigments etc.) are explained in detail. Moreover, genetic engineering of microalgae will be covered for explanining the production of value-added ingredients. Also, by examining the large scale applications of microalgae, the future of microalgae world will be discussed.",
+  "outcomes": [
+   "I. Algal biyoloji ve ekoloji ile ilgili temel kavramları tanımlayabilmek,",
+   "II. Ötrofikasyon, algal toksinler gibi kritik çevre sorunlarında alglerin oynadığı rolü anlamak,",
+   "III. Algal biyokütle üretimi için fotobiyoreaktör tasarımı yapabilmek",
+   "IV. Biyoteknolojide alglerin temel uygulamalarını tanımlayabilmek (örn. Gıda, Biyoyakıt, vb.)",
+   "V. İleri çalışmalar için algal laboratuvar deneyimine sahip olmak,",
+   "VI. Biyorafineri anlayışını kavramak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Genel Bakış: Alg nedir? Makro ve Mikro algler arasındaki karşılaştırma",
+   "Hafta 2 — Mikroalglerin sınıflandırılması, oluşumu ve dağılımı",
+   "Hafta 3 — Mikroalglerin hücre yapısı, beslenmesi, üremesi ve büyümesi",
+   "Hafta 4 — Alg kültürü ve parametreleri (Çevresel şartlar: Işık, Sıcaklık ve Tuzluluk)",
+   "Hafta 5 — Mikroalgal biyokütle üretimi: Fotobiyoreaktörler",
+   "Hafta 6 — Zehirli algler: Algal Toksinler",
+   "Hafta 7 — Alg Enerjisi: Buna değer mi?",
+   "Hafta 8 — İnsan ve Hayvan Beslenmesinde mikroalg",
+   "Hafta 9 — Mikroalglerden Biyoyakıt Üretimi (biyogaz, biyodizel, biyohidrojen, biyoetanol)",
+   "Hafta 10 — Su ve atıksu arıtmada mikroalg uygulamaları",
+   "Hafta 11 — Yenilikçi mikroalgal pigmentler ve diğer yüksek değerli bileşikleri",
+   "Hafta 12 — Mikroalgal Nutrasötikler ve Biyofarmasötikler",
+   "Hafta 13 — Mikroalgler ve Genetik Mühendisliği: Katma değerli malzemelerin üretimi",
+   "Hafta 14 — Mikroalglerin büyük ölçekli uygulamaları"
+  ],
+  "textbooks": [
+   "Bux, Faizal, and Yusuf Chisti, eds. Algae Biotechnology: Products and Processes. Springer, 2016.",
+   "Becker, E. W. (1994). Microalgae: biotechnology and microbiology (Vol. 10). Cambridge University Press.",
+   "Richmond, A. (Ed.). (2008). Handbook of microalgal culture: biotechnology and applied phycology. John Wiley & Sons.",
+   "Benemann, J. R., Tillett, D. M., & Weissman, J. C. (1987). Microalgae biotechnology. Trends in Biotechnology, 5(2), 47-53.",
+   "Gouveia, L. (2011). Microalgae as a feedstock for biofuels (pp. 1-69). Springer Berlin Heidelberg. Moheimani, N. R., McHenry, M. P., de Boer, K., & Bahri, P. (Eds.). (2015).Biomass and Biofuels from Microalgae: Advances in Engineering and Biology(Vol. 2). Springer. Kim, S. K. (Ed.). (2015). Handbook of Marine Microalgae: Biotechnology Advances. Academic Press. Johansen, M. N. (Ed.). (2012). Microalgae: Biotechnology, Microbiology, and Energy. Nova Science Publisher's."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=557",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 559": {
+  "code": "CBM 559",
+  "name": "Su Yönetimi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Hidrolojik, Su Döngüsü ve İklim Değişikliği, Sürdürülebilir ve Entegre Su Yönetimi (IWRM), Arz ve talep yönetimi, Su Kaynaklarının Korunması, Yeraltı Suyu ve Göl Yönetimi, Su Kalitesi Yönetimi, İklim Değişikliği; Taşkın ve Kuraklık Yönetimi, Havza Yönetimi Planı, Su Yönetiminde Sosyo-Ekonomik Araçlar, Su ekonomisi ve suyun fiyatlandırması, Su Bilgi Sistemleri, Dijitalleşme. Hydrology, Water Cycle and Climate Change, Sustainable and Integrated Water Resources Management (IWRM), Supply and Demand Management, Protection of Water Resources, Groundwater and Lake Management, Water Quality Management, Climate Change; Flood and Drought Management, River Basin Management Plan, Socio-Economic Tools in Water Management, Water Economics and Water Pricing, Water Information Systems, Digitalization.",
+  "outcomes": [
+   "İklim değişikliğinin hidrolojik çevirime etkisini, çevirim sisteminin temel bileşenlerini ve etkileşimlerini açıklar.",
+   "Sürdürülebilir su yönetiminin; arz-talep dengesi, sosyo-ekonomik etkiler, hidrolojik, çevresel ve ekosistem dengesi çerçevesinde su kaynakları yönetimine uygulanması konusunda fikir üretebilir",
+   "Su kalitesinin, yeraltı sularının ve göllerin korunması ilkelerini mühendislik ve yönetim problemlerinin çözümüne uygulayabilir",
+   "Havza yönetim planı, su tahsis planı, kuraklık ve taşkın yönetim planı hazırlanması, suyun fiyatlandırılması konularında mühendislik çözümleri üretebilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve Temel Kavramlar – Su yönetiminin tanımı, sürdürülebilirlik, su yönetimi döngüsü",
+   "Hafta 2 — Hidrolojik Su Döngüsü ve İklim Değişikliği – Su döngüsü, iklim değişikliği, havza kavramı, yüzey ve yeraltı suları, hidrolojik bütçe",
+   "Hafta 3 — Su Kaynaklarının Durumu ve Mevcut Sorunlar – Küresel ve Türkiye özelinde su kaynakları, su stresi, su kıtlığı göstergeleri",
+   "Hafta 4 — Sürdürülebilir ve Entegre Su Yönetimi (IWRM) – Arz ve talep yönetimi, paydaş katılımı, kurumsal yapı, havza ölçeğinde planlama",
+   "Hafta 5 — Yeraltı Suyu ve Göl Yönetimi – Yeraltı suyu bütçesi, sürdürülebilir çekim, yeraltı suyu–göl etkileşimi, göl seviyelerinin korunması, su kütlesi bağlantıları, izleme teknikleri",
+   "Hafta 6 — Su Tahsisi ve Planlama – WEFE Etkileşimi, Sektörel Tahsis, Havza Yönetim Planı",
+   "Hafta 7 — Su Kalitesi Yönetimi – Fiziksel, kimyasal, ekolojik kalite parametreleri, izleme sistemleri, AB Su Çerçeve Direktifi (WFD)",
+   "Hafta 8 — Dönem Ara Tatili",
+   "Hafta 9 — Dönem Ödevi Sunumları",
+   "Hafta 10 — Risk Yönetimi I: İklim Değişikliği ve Kuraklık –, iklim senaryoları, Kuraklık yönetim planı, adaptasyon stratejileri",
+   "Hafta 11 — Risk Yönetimi II: Taşkın Yönetimi – Taşkın risk analizi, erken uyarı sistemleri, taşkın yönetim planları",
+   "Hafta 12 — Su Yönetiminde Sosyo-Ekonomik Araçlar – Su fiyatlandırması, teşvikler, kamu politikası, su diplomasisi",
+   "Hafta 13 — Bilgi Sistemleri ve Dijitalleşme – Su yönetimi bilgi sistemleri, dijitalleşme, uzaktan algılama, otomasyon",
+   "Hafta 14 — Ulusal ve Uluslararası Mevzuat – Türkiye su politikaları, AB Su Çerçeve Direktifi, uluslararası su hukuku"
+  ],
+  "textbooks": [
+   "Öztürk, İ. (Başyazar). (2019). Su, iklim değişikliği ve ortak geleceğimiz. Türkiye Su Enstitüsü",
+   "Bogardi, J. J., Gupta, J., Nandalal, K. D. W., Salamé, L., van Nooijen, R. R. P., Kumar, N., Tingsanchali, T., Bhaduri, A., & Kolechkina, A. G. (Eds.). (2021). Handbook of water resources management: Discourses, concepts and examples. Springer Nature Switzerland AG",
+   "Braga, B., Chartres, C., Cosgrove, W. J., Veiga da Cunha, L., Gleick, P. H., Kabat, P., Ait Kadi, M., Loucks, D. P., Lundqvist, J., Narain, S., & Xia, J. (Eds.). (2014). Water and the future of humanity: Revisiting water security. Calouste Gulbenkian Foundation; Springer",
+   "Loucks, D. P., & van Beek, E. (2017). Water resource systems planning and management: An introduction to methods, models, and applications. UNESCO-IHE",
+   "Grafton, R. Q., & Hussey, K. (2011). Water resources planning and management. Cambridge University Press",
+   "Santamarta Cerezal, J. C., Neris, J., Ritter, A., & Hernández-Gutiérrez, L. E. (2014). Water management and planning. University of La Laguna",
+   "Lükenga, W. (2015). Water resource management (1st ed.)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=559",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 560": {
+  "code": "CBM 560",
+  "name": "İklim Değişikliği ve Karbon Yönetimi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=560",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 596": {
+  "code": "CBM 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 619E": {
+  "code": "CBM 619E",
+  "name": "Adsorp.&Exchan.in Env.Enginn",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Adsorpsiyon/iyon değişimi ve fizikokimyasal prosesler içindeki yeri, Sorpsiyon prosesleri, Adsorpsiyonun temel kavramları, Adsorpsiyon dengesi ve izotermleri, Adsorpsiyon kinetiği (adsorpsiyon adımları, hız kısıtlayıcı adımlar, kütle dengesi, modeller), Adsorpsiyonda etkili faktörler, Adsorpsiyon sistemleri – kesikli/sürekli sistemler, Kırılma noktası analizleri (breakthrough analysis), Aktif karbonun özellikleri, Aktif karbon adsorpsiyon sistemleri, İyon değişiminin esasları/diğer adsorpsiyon tipleriyle karşılaştırılması, İyon değişimi sistemleri ve uygulamaları, Adsorpsiyon/iyon değişimi sistemlerine örnekler. Adsorption/ion exchange as a physicochemical process, Sorption processes, Fundamentals of adsorption, Adsorption equilibria and isotherms, Adsorption kinetics (steps in adsorption, rate limiting steps, mass balance, models), Factors affecting adsorption, Adsorption systems – batch/continuous systems, Breakthrough analysis, Characteristics of activated carbon, Activated carbon adsorption systems, Fundamentals of ion exchange/comparison with other types of adsorption, Ion exchange systems and its practice, Selected examples.",
+  "outcomes": [
+   "Adsorpsiyon/iyon değişimi prosesleri ile ilgili temel kavramlara vakıf olma",
+   "Adsorpsiyon/iyon değişiminin temel kavramlarını çeşitli doğal sistemler ve mühendislik sistemlerinde çevresel gereksinimler için kullanabilme/uygulayabilme,",
+   "Adsorpsiyon/iyon değişimi prosesleri ile ilgili bilimsel veri analizleri, yorum yapabilme ve sonuç çıkarabilme, gereğinde karar verme amaçlı kendi verisini üretebilme altyapısını edinme",
+   "Adsorpsiyon/iyon değişimi konusunda bilimsel literatür çalışmalarını derinine analiz edebilme/sentez yapabilme, değerlendirebilme ve kullanabilme; adsorpsiyon/iyon değişimi konusu örneğinde bilimsel bir yayını eleştirme ve değerlendirme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Tanıtım, giriş, adsorpsiyon ve iyon değişiminin fizikokimyasal prosesler içindeki yeri",
+   "Hafta 2 — Adsorpsiyonun esasları",
+   "Hafta 3 — Adsorpsiyon dengesi ve adsorpsiyon izotermleri",
+   "Hafta 4 — Adsorpsiyon kinetiği – Temel kavramlar",
+   "Hafta 5 — Adsorpsiyon kinetiği – Modeller",
+   "Hafta 6 — Adsorpsiyonda etkili faktörler",
+   "Hafta 7 — Adsorpsiyon sistemleri",
+   "Hafta 8 — Yıliçi sınavı",
+   "Hafta 9 — Adsorplayıcı olarak aktif karbonun özellikleri",
+   "Hafta 10 — Aktif karbon adsorpsiyonu sistemleri",
+   "Hafta 11 — İyon değişiminin esasları",
+   "Hafta 12 — İyon değişimi sistemleri ve uygulamaları",
+   "Hafta 13 — Seçilmiş örneklerin sunumları",
+   "Hafta 14 — Seçilmiş örneklerin sunumları"
+  ],
+  "textbooks": [
+   "Weber, Jr., W.J. (1972) Physicochemical Processes for Water Quality Control, John Wiley & Sons, USA.",
+   "Hendricks, D.W. (2006) Water Treatment Unit Processes Physical and Chemical, CRC Taylor& Francis, USA.",
+   "AWWA (1999) Water Quality & Treatment A Handbook of Community Water Supplies, Mc Graw Hill, USA",
+   "Sleiko, F.L. (1985) Adsorption Technology: A Step-by-step Approach to Process Evaluation and Application, Marcel Dekker, Inc., USA",
+   "Weber, Jr., W.J. (1983) Modeling of Adsorption and Mass Transport Processes in Fixed Bed Adsorbers, Proceedings of Interantional Conference on the Fundamentals of Adsorption, Schloss Elmau, Germany."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=619",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 621E": {
+  "code": "CBM 621E",
+  "name": "Diffuse Pollution",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yayılı kirlilik hakkında genel bilgi, arazi kullanımı, dönüşümü ve yayılı kirlilik ilişkisi, yayılı kirlilik türleri; atmosferik taşınım, erozyon ve çökelme, kentsel ve otoyol kirliliği, tarımsal kirlilik, toksik kirlenme, yeraltı suyu kirlenmesi, alıcı ortam etkileri, havzalar, nehirler ve göllerin yönetimi ve restorasyonu, değişik yayılı kirleticilerin tahmini, tahminde kullanılan kriterler, yayılı kirlilik yönetimi, tarımsal ve hayvan yetiştiriciliği uygulamaları. General information about diffuse pollution, relationship between land-use, land transformation and diffuse pollution, diffuse pollution types; atmospheric deposition, erosion & sedimentation, urban & highway pollution, agricultural pollution, toxic pollution, groundwater contamination, receiving water impacts, management and restoration of streams, lakes, watersheds, estimation of different types of diffuse pollutants, criteria used for estimation, diffuse pollution management; agricultural and livestock breeding practices.",
+  "outcomes": [
+   "Yayılı kirleticiler hakkında ileri düzeyde bilgi sahibi olma (bilgi)",
+   "Yayılı kirleticiler ile ilgili bilimsel literatür çalışmalarından ve uygulamalardan edindiği yeni bilgileri değerlendirebilme ve kullanabilme (beceri).",
+   "Yayılı kirleticiler, arazi kullanımı ve su kaynakları yönetimi prensipleri ve uygulamaları ile ilgili bilgileri inceleyebilme, sentezleyebilme ve değerlendirebilme (beceri).",
+   "Yayılı kirleticilerin yönetim uygulamaları ile ilgili ileri düzeyde İngilizce sunum ve rapor hazırlama (İletişim ve Sosyal Yetkinlik)."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yayılı kirlilik hakkında genel bilgi",
+   "Hafta 2 — Arazi kullanımı, arazi dönüşümü ve yayılı kirlilik ilişkisi",
+   "Hafta 3 — Yayılı kirlilik türleri; atmosferik taşınım",
+   "Hafta 4 — Yayılı kirlilik türleri; erozyon ve çökelme",
+   "Hafta 5 — Kentsel ve otoyol kirliliği",
+   "Hafta 6 — Tarımsal kirlilik",
+   "Hafta 7 — Toksik kirlenme",
+   "Hafta 8 — Yeraltı suyu kirlenmesi; yayılı kirleticilerin alıcı ortama etkileri",
+   "Hafta 9 — Havzalar, nehirler ve göllerin yönetimi ve restorasyonu",
+   "Hafta 10 — Değişik yayılı kirleticilerin tahmini; tahminde kullanılan kriterler",
+   "Hafta 11 — Yayılı kirlilik yönetimi; tarımsal ve hayvan yetiştiriciliği uygulamaları",
+   "Hafta 12 — SUNUMLAR: Çeşitli ülkelerde kentsel yayılı kirlilik yönetim uygulamaları",
+   "Hafta 13 — SUNUMLAR: Çeşitli ülkelerde kırsal yayılı kirlilik yönetim uygulamaları",
+   "Hafta 14 — SUNUMLAR: Çeşitli ülkelerde uygulanan yapısal ve yapısal olmayan kontrol teknikleri"
+  ],
+  "textbooks": [
+   "Water Quality; Diffuse Pollution and Watershed Management, Second Edition, Vladimir Novotny, John Wiley & Sons, Inc., 2003, New Jersey.",
+   "Diffuse Pollution; An Introduction to the Problems and Solutions, Neil Campbell, Brian D’Arcy, Alan Frost, Vladimir Novotny & Anne Sansom, IWA Publishing, 2004, UK.",
+   "Integrated Modelling of Nutrients in Selected River Basins of Turkey- Results of a Bilateral German-Turkish Research Project, Mehmet Karpuzcu, Frank Wendland (editors), 2008, Forschungszentrum Jülich GmbH, Germany.",
+   "Nutrients and Heavy Metals in the Odra River System; Emissions from Point and Diffuse Sources, their Loads, and Scenario Calculations on Possible Changes, Horst Behrendt & Ralf Dannowski (Edts.), 2005, Weibensee Verlag, Berlin, Germany."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=621",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 627": {
+  "code": "CBM 627",
+  "name": "Evsel ve Endüstriyel Atıksuların Kimyasal Arıtımı",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kimyasal arıtma yöntemlerinin uygulama esasları; atıksu yapısının kimyasal proseslerin verimine etkisi; kimyasal arıtma sonrası oluşacak çamur miktarı hesabı; nütrientlerin kimyasal yöntemlerle arıtımı; evsel atıksuların kimyasal arıtımı, endüstriyel atıksuların kimyasal yöntemlerle arıtımı: deri endüstrisi, tekstil endüstrisi, metal son işlemleri endüstrisi, kağıt endüstrisi, ilaç endüstrisi; çöp sızıntı sularının kimyasal yöntemlerle arıtımı. Application basis of chemical treatment methods; effect of wastewater character on chemical process performance; determination of sludge amount produced by chemical treatment; nutrient removal by chemical methods; domestic wastewater treatment by chemical methods; industrial wastewater treatment by chemical methods: leather tanning industry, textile industry, metal finishing industry, pulp and paper industry, pharmaceutical industry; landfill leachate treatment by chemical methods",
+  "outcomes": [
+   "Oldukça geniş bir atıksu karakterine uygulanabilecek kimyasal arıtma proseslerini derinlemesine kavramak (bilgi)",
+   "Değişen atıksu karakteri ve koşullarında yürütülebilecek kimyasal arıtma proseslerinin işletme esaslarını değerlendirebilmek (beceri)",
+   "Kimyasal arıtmayı nütrient giderimi ve geri kazanımı için uygulamak (öğrenme yetkinliği)",
+   "Değişen işletme koşullarında belirli kirletici parametreleri gidermek için kimyasal arıtmayı kullanmak (öğrenme yetkinliği)"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kimyasal Arıtma Uygulama Esasları",
+   "Hafta 2 — Kolloid destabilizasyonu , koagülasyon,",
+   "Hafta 3 — Kimyasal Çöktürme, oksidasyon",
+   "Hafta 4 — Atıksu yapısının kimyasal proseslerin verimine etkisi",
+   "Hafta 5 — Kimyasal arıtma sonrası oluşacak çamur miktarı hesabı",
+   "Hafta 6 — Kimyasal arıtma metotları ile nütrient giderimi- azot",
+   "Hafta 7 — Kimyasal arıtma metotları ile nütrient giderimi-fosfor",
+   "Hafta 8 — Evsel atıksuların kimyasal yöntemlerle arıtımı",
+   "Hafta 9 — Deri endüstrisi atıksularının kimyasal yöntemlerle arıtımı",
+   "Hafta 10 — Tekstil atıksularının kimyasal yöntemlerle arıtımı",
+   "Hafta 11 — Metal son işlemleri atıksularının kimyasal yöntemlerle arıtımı",
+   "Hafta 12 — Kağıt endüstrisi atıksularının kimyasal yöntemlerle arıtımı",
+   "Hafta 13 — İlaç endüstrisi atıksularının kimyasal yöntemlerle arıtımı",
+   "Hafta 14 — Çöp sızıntı sularının kimyasal yöntemlerle arıtımı"
+  ],
+  "textbooks": [
+   "Tünay, O., Kabdaşlı, I., Arslan-Alaton, I. and Ölmez-Hancı, T., 2010: Chemical Oxidation Applications for Industrial Wastewaters, ISBN: ISBN13: 9781843393078, IWA Publishing, London, UK.",
+   "Wang, L. K., Tse-Hung, Y., Lo, H. H. and Yapijakis, C., 2004: Handbook of Industrial Hazardous Waste Treatment, No. 2 nd, ISBN: 0-8247-4114-5, Marcel Dekker Inc.",
+   "Sincero, A. P., 2002: Physical-Chemical Treatment of Water and Wastewater, CRC Press.",
+   "WPCF, 1983: Nutrient Control Manual of Practice FD7, Facilities Design.",
+   "Riikonen, N. and Jones C., 1992: Industrial Wastewater Source Control. An inspection Guide, Technomic Publ. Co. Inc., Lancaster Basel. USA."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=627",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 629E": {
+  "code": "CBM 629E",
+  "name": "Remote Sensing of Air Pollu.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Elektromanyetik işima ve uzaktan algılamanın temelleri. UV-VIS-NIR spektrometreleri (OMI, SCIAMACHY, GOME, GOME-2) ve kirleticiler : O3, NO2, SO2, Formaldehit, Glioksal, CO, CH4, ve aerosoller, VIS-NIR Radyometreleri (AVHRR, MODIS, MISR, MERIS, (A)ATSR(-2), POLDER) ve aerosol optik kalınlığı ve ince/kaba fraksiyonları. TIR Spektrometreleri (MOPITT, IASI, TES) ve Ozon profilleri, CO. Aktif uzaktan algılama: Radarlar, Lidarlar ve aerosol profilleri. Hava kalite alanında uzaktan algılama uygulamaları. Fundamentals of electromagnetic radiation and remote sensing. UV-VIS-NIR spectrometers (OMI, SCIAMACHY, GOME, GOME-2) and retrieved pollutants: O3, NO2, SO2, Formaldehyde, Glyoxal, CO, CH4, and aerosols. VIS-NIR Radiometers (AVHRR, MODIS, MISR, MERIS, (A)ATSR(-2), POLDER) and retrieved parameters: Aerosol optical thickness and fine/coarse fraction. TIR Spectrometers (MOPITT, IASI, TES) and Ozone profiles, CO. Active Remote Sensing: Lidars and Radars (CALIPSO, ATLID) and aerosol profiles.",
+  "outcomes": [
+   "I. Uzaktan algılama bilimi hakkında bilgi birikimine sahip olmak",
+   "II. NO2, SO2 ve aerosoller gibi bir çok kirleticinin uzaktan algılama ile elde edilmiş verilerini değerlendirebilmek ve kullanabilmek",
+   "III. Başka bir bilim alanındaki bilgileri hava kirliliği alanındaki bilgileri ile birleştirerek altyapılarını geliştirmek",
+   "IV. Uzaktan algılama verilerinin bölgesel ve küresel ölçekte hava kalite yönetimi uygulamalarındaki kullanımını ve önemini kavramak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektromanyetik ışımanın doğası. Işıma yasaları. Kara cisim ışınımı",
+   "Hafta 2 — Atmosferin içeriği ve tabakaları. Atmosferik gazların, aerosollerin ve bulutların özellikleri",
+   "Hafta 3 — Uzaktan algılama ilkeleri ve teknikleri. Pasif uzaktan algılama: Spektrometreler",
+   "Hafta 4 — UV-VIS-NIR spektrometreleri: OMI, SCIAMACHY, GOME, GOME-2 O3, NO2, SO2, Formaldehit, Glioksal, CO, CH4, ve emici aerosoller",
+   "Hafta 5 — UV-VIS-NIR spektrometreleri: OMI, SCIAMACHY, GOME, GOME-2 O3, NO2, SO2, Formaldehit, Glioksal, CO, CH4, ve emici aerosoller",
+   "Hafta 6 — VIS-NIR Radyometreleri: AVHRR, MODIS, MISR, MERIS, (A)ATSR(-2), POLDER Aerosol optik kalınlığı ve ince/kaba fraksiyonları",
+   "Hafta 7 — VIS-NIR Radyometreleri: AVHRR, MODIS, MISR, MERIS, (A)ATSR(-2), POLDER Aerosol optik kalınlığı ve ince/kaba fraksiyonları",
+   "Hafta 8 — TIR Spektrometreleri: MOPITT, IASI, TES Ozon profilleri, CO",
+   "Hafta 9 — Aktif uzaktan algılamanın ilkeleri: Radarlar ve Lidarlar",
+   "Hafta 10 — Aktif uzaktan algılama: CALIPSO, ATLID Aerosol profilleri",
+   "Hafta 11 — Hava kalite alanında uzaktan algılama uygulamaları: Model değerlendirmesi",
+   "Hafta 12 — Hava kalite alanında uzaktan algılama uygulamaları: Veri asimilasyonu-1",
+   "Hafta 13 — Hava kalite alanında uzaktan algılama uygulamaları: Veri asimilasyonu-2",
+   "Hafta 14 — Sunum"
+  ],
+  "textbooks": [
+   "1. Stephens G. (1994), Remote Sensing of the Lower Atmosphere: An Introduction, Oxford Univ. Press.",
+   "2. Weng Q. (2012), An introduction to contemporary remote sensing, New York : McGraw-Hill.",
+   "3. Liou, K.N. (2002), An introduction to atmospheric radiation, Second Edition, Academic Press.",
+   "4. Remote sensing of the atmosphere for environmental security (2006), Dordrecht: Springer, published in cooperation with NATO Public Diplomacy Division.",
+   "Scientific manuscripts and NASA, ENVISAT webpages will also be used as reference materials."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=629",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "CBM 696": {
+  "code": "CBM 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CBM&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

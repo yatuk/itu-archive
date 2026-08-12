@@ -1,0 +1,792 @@
+{
+ "VBA 111E": {
+  "code": "VBA 111E",
+  "name": "Veri Bilimi ve Analitiğine Giriş",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Bu derste, veri bilimi ve temel kavramları, veri bilimi analizi, yöntemleri, araçları, veri madenciliği konularına genel bakış ve veri analitiği ilkelerine yönelik konular işlenmektedir. This course covers an overview of data science and its fundamental concepts, including data science analysis, methods, tools, data mining topics, and principles of data analytics.",
+  "outcomes": [
+   "Veri bilimine yönelik temel kavramları anlar",
+   "Veri bilimi analizlerini kavrar",
+   "Veri analitiği hakkında bilgi sahibi olur",
+   "Veri bilimi araçlarını öğrenir",
+   "Veri bilimi ve analitiği projelerinin performans ölçümü hakkında bilgi sahibi olur"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri bilimi ve temel kavramları",
+   "Hafta 2 — Veri analitiği araçları",
+   "Hafta 3 — Veri görselleştirme araçları",
+   "Hafta 4 — Veri tabanı yönetim sistemleri ve SQL yapısı",
+   "Hafta 5 — Veri madenciliği",
+   "Hafta 6 — Sinyal ve görüntü analitiği",
+   "Hafta 7 — Büyük veri ve analitiği",
+   "Hafta 8 — Yüksek başarımlı hesaplama",
+   "Hafta 9 — Siber güvenlik",
+   "Hafta 10 — Nesnelerin interneti ve bulut bilişim",
+   "Hafta 11 — Makine öğrenmesi",
+   "Hafta 12 — Bilgisayarlı görü",
+   "Hafta 13 — Optimizasyon teknikleri",
+   "Hafta 14 — Veri biliminde etik ve hukuk"
+  ],
+  "textbooks": [
+   "Baesens, B. (2014). Analytics in a big data world: The essential guide to data science and its applications. John Wiley & Sons"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=111",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 113E": {
+  "code": "VBA 113E",
+  "name": "Algoritmalar ve Programlamanın Temelleri",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6.5
+  },
+  "description": "Bu ders, Python programlamaya temel bir giriş sağlar. Öğrenciler Python sözdizimi, veri türleri, kontrol yapıları ve döngüler, çeşitli parametrelerle fonksiyon tanımlama ve kullanma, dosyaları yönetme, hataları işleme ve veri manipülasyonu ve analizi için NumPy ve Pandas gibi kütüphanelerden yararlanma gibi temel kavramları öğreneceklerdir. This course provides a foundational introduction to Python programming. Students will learn essential concepts including Python syntax, data types, control structures and looping, defining and using functions with various parameters, managing files, handling errors, and leveraging libraries such as NumPy and Pandas for data manipulation and analysis.",
+  "outcomes": [
+   "Python sözdizimini, değişkenleri ve temel veri türlerini programlama görevlerinde etkin bir şekilde uygulama kabiliyeti",
+   "Farklı koşullara göre program akışını kontrol etmek için koşullu ifadeler ve döngüler uygulama kabiliyeti",
+   "Kodun yeniden kullanılabilirliğini ve kod organizasyonunu desteklemek için parametreler ve dönüş değerleri içeren fonksiyonlar oluşturma kabiliyeti",
+   "Verileri verimli bir şekilde düzenlemek ve işlemek için listeleri, tupleları, sözlükleri ve kümeleri kullanma kabiliyeti.",
+   "Sağlam dosya işlemleri sağlamak için hata işlemeyi de dahil ederek dosyalardan okuma ve dosyalara yazma kabiliyeti",
+   "Veri manipülasyonu ve analiz görevleri için NumPy ve Pandas gibi modülleri ve paketleri kullanma kabiliyeti"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş Seviye Programlama ve Python - Temel Söz Dizimi, Değişkenler ve Veri Tipleri",
+   "Hafta 2 — Kontrol Yapıları: Koşullu İfadeler - Boolean Mantığı, if, elif ve else İfadeleri",
+   "Hafta 3 — Kontrol Yapıları: Döngüler - while Döngüleri, for Döngüleri, break ve continue İfadeleri",
+   "Hafta 4 — Fonksiyonlar: Fonksiyon Tanımlama ve Çağırma, Fonksiyon Parametreleri ve Dönüş Değerleri",
+   "Hafta 5 — Listeler ve Demetler",
+   "Hafta 6 — Dizeler",
+   "Hafta 7 — Sözlükler ve Kümeler",
+   "Hafta 8 — Dosya Girdi/Çıktı",
+   "Hafta 9 — Hata Yönetimi ve İstisnalar",
+   "Hafta 10 — Kapsamlı İfadeler ve Lambda Fonksiyonları",
+   "Hafta 11 — Modüller ve Paketler",
+   "Hafta 12 — Kütüphanelerle Çalışma - NumPy",
+   "Hafta 13 — Kütüphanelerle Çalışma - Pandas",
+   "Hafta 14 — Web Kazıma"
+  ],
+  "textbooks": [
+   "Lambert, Kenneth A. Fundamentals of Python: First Programs. 3rd Edition. Boston, MA: Cengage Learning, 2019."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=113",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 115E": {
+  "code": "VBA 115E",
+  "name": "Linux Temelleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Bu dersi alan öğrencinin Linux işletim sistemi kavramlarını öğrenmesi, aktif olarak kullanması ve işletim sistemine özgü yazılım geliştirebilmesi amaçlanmıştır. Bu kapsamda temel linux işlemleri, ağ ve sunucu yapılandırılması, sistem yönetimi, izleme ve yorumlama becerisinin arttırılması amaçlanmıştır. The aim of this course is for students to learn the concepts of the Linux operating system, use it actively, and develop software specific to the operating system. In this context, the course aims to teach basic Linux operations, network and server configuration, system management, and to enhance monitoring and interpretation skills.",
+  "outcomes": [
+   "Linux işletim sistemi yapısını bilir.",
+   "Temel Linux komutlarını, dosya yapısını bilir, sistemi izler, yönetir.",
+   "Sunucu yönetimi, güvenlik duvarı ve ağ yapılandırmasını yapar, temel ağ işlemlerini kullanır, sistem günlüklerini yorumlar.",
+   "Linux kabuk betik dili (bash vb.) kullanır.",
+   "Python, Vala, c#, Java dillerinden biri ile uygulama geliştirir, dağıtım için paket oluşturur."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Linux tarihçesi ve temel kavramlar, komut satırı temelleri, temel komutlar, Dizin I işlemleri, metin düzenleyicileri, uygulamalar",
+   "Hafta 2 — Linux dosya sistemi, disk ve dosya işlemleri",
+   "Hafta 3 — Yazılım yönetimi, paket yöneticileri kavram ve uygulamaları",
+   "Hafta 4 — Farklı Linux işletim sistemi dağıtımların incelenmesi, farklılık",
+   "Hafta 5 — Sistem yönetimi ve süreçlerin(processes) izlenmesi, yapılandırması",
+   "Hafta 6 — Ağ temelleri ve yönetimi, IP adresleri, alt ağlar, yapılandırma, temel ağ komutları",
+   "Hafta 7 — Temel güvenlik kavramları, güvenlik duvarı kullanımı, yapılandırılması",
+   "Hafta 8 — Sistem günlükleri, yorumlanması, hata giderme işlemleri",
+   "Hafta 9 — Linux sunucu yönetimi, yapılandırılması, izlenmesi",
+   "Hafta 10 — Uygulama geliştirme, Kabuk betik (script) dilleri",
+   "Hafta 11 — Uygulama geliştirme, VALA",
+   "Hafta 12 — Uygulama geliştirme, c#, Java",
+   "Hafta 13 — Uygulama geliştirme, Python",
+   "Hafta 14 — Yazılım paketi oluşturulması"
+  ],
+  "textbooks": [
+   "The Linux Command Line, 2nd Edition: A Complete Introduction, W. Shotts,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=115",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 122E": {
+  "code": "VBA 122E",
+  "name": "Ayrık Matematik",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Kombinasyonlar, Permütasyonlar, Binom Teoremi ve Uygulamaları, Sayma Teknikleri. Algoritmalar ve Analizleri, Yineleme Algoritmaları. Tam sayıların Bilgisayarda Temsili, Euclid Algoritması, RSA Şifreleme Algoritması. Yineleme Bağıntıları, Çözümleme, Algoritma Analizine Uygulama. Çizge Kuramına Giriş. Boole Cebri, Kombinatoryal Devreler. Sonlu Durum Makineleri, Sonlu Durum Otomatları ve Turing Makinesi. Combinations, Permutations, Binomial Theorem and Applications, Counting. Algorithms and Their Analysis, Recursive Algorithms. Representations of Integers, Euclid Algorithm, RSA Cryptosystem. Recurrence Relations, Their Solutions, Application to Analysis of Algorithms. A Basic Introduction to Graph Theory. Boolean Algebra, Combinatorial Circuits, Finite State Machines, Finite State Automata and Turring Machine.",
+  "outcomes": [
+   "İspat yöntemlerini kullanabilir.",
+   "Temel algoritmaları öğrenip analiz edebilir.",
+   "Sayma tekniklerini ve uygulamalarını bilebilir.",
+   "Yineleme ( fark denklemleri ) bağıntıları oluşturabilme, çözebilme, algoritma analizine uygulayabilme, ve sonlu toplamları değerlendirebilir.",
+   "Sayılar teorisinin temel kavramlarını, şifrelemenin temellerini öğrenip Öklid algoritmasını bilebilir.",
+   "Grafların (çizit) temel özelliklerini bilebilir, Euler ve Hamilton çevrimlerini oluşturabilir ve en kısayol, düzlemsel graf algoritmalarını uygulayabilir.",
+   "Ağaçlar ve uygulamalarını bilebilir.",
+   "Boole cebrini öğrenme ve kombinatoryal devre oluşturabilme becerilerini elde edebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İspat Yöntemleri ve Tümevarım ile İspat",
+   "Hafta 2 — Fonksiyonların Büyümesi ve Algoritma Analizi",
+   "Hafta 3 — Algoritma Analizi",
+   "Hafta 4 — Yineleme Bağıntıları ve Çözümleri",
+   "Hafta 5 — Geren Fonksiyonlar",
+   "Hafta 6 — Üslü Geren Fonksiyonlar",
+   "Hafta 7 — Sayılar Teorisi",
+   "Hafta 8 — Graflara Giriş",
+   "Hafta 9 — Euler ve Hamilton Çevrimleri",
+   "Hafta 10 — En Kısa Yol Algoritması, Düzlemsel Graflar",
+   "Hafta 11 — Ağaçlar, İzomorfizm, Huffman, Karar Ağaçları, Örten Ağaçlar",
+   "Hafta 12 — Bool Cebri ve Kombinatoriyal Devreler",
+   "Hafta 13 — Sonlu Durum Makinaları ve Otomatları",
+   "Hafta 14 — Turing Makinesi"
+  ],
+  "textbooks": [
+   "Introductory Combinatorics, R.A Brualdi, V. Ed 2009."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=122",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 124E": {
+  "code": "VBA 124E",
+  "name": "Nesneye Yönelik Programlama",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders, ileri düzeyde programlama becerileri sunar ve nesneye yönelik programlama (OOP) ve tasarımın temel kavramlarına derinlemesine girer. Nesneye yönelik programlama, yazılım bileşenlerini kapsamlı bir yazılım mimarisine entegre etmeyi içerir. Temel kodlama becerileri üzerine inşa edilerek, bu yaklaşım karmaşık programların geliştirilmesini sağlar. Ders, sınıflar, nesneler, veri soyutlama, metodlar, metod aşırı yükleme, kalıtım ve çok biçimlilik gibi nesne yönelimli kavramların anlaşılması ve pratikte ustalaşmaya vurgu yapar. Veri bilimi ve yığınlar, kuyruklar, listeler ve ağaçlar gibi veri yapılarında pratik uygulamalar da incelenecektir. This course offers advanced programming skills and delves into the core concepts of object- oriented programming and design. Object-oriented programming involves integrating software components into a comprehensive software architecture. Building on foundational coding skills, this approach enables the development of complex programs. The course emphasizes understanding and practical mastery of object-oriented concepts, including classes, objects, data abstraction, methods, method overloading, inheritance, and polymorphism. Practical applications in data science and structures such as stacks, queues, lists, and trees will also be explored.",
+  "outcomes": [
+   "Fonksiyonları ve verileri etkin bir şekilde birleştirerek nesne yönelimli programlama kavramlarını kavramak.",
+   "Gürbüz yazılım mimarileri oluşturmak için gerekli nesneleri kavramsallaştırmak amacıyla problem ifadelerini analiz etmek.",
+   "Mevcut kod modüllerini daha büyük ve karmaşık programlara entegre etmek.",
+   "Soyut fikirleri somut yazılım sınıflarına dönüştürmek.",
+   "Çoklu sınıf içeren programlar dahil olmak üzere, gelişmiş yazılımlar geliştirmek için nesne yönelimli programlama prensiplerini kullanmak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, yazılım mühendisliğinin ilkeleri, kodun yeniden kullanılması ve genişletilmesi",
+   "Hafta 2 — Prosedürel programlamanın temellerinin gözden geçirilmesi",
+   "Hafta 3 — Nesneler, veri soyutlama",
+   "Hafta 4 — Bilgi gizleme ve kapsülleme",
+   "Hafta 5 — Yapıcılar, yıkıcılar ve nesne oluşturma",
+   "Hafta 6 — İsim alanı ve referanslar",
+   "Hafta 7 — Sınıf metotları, metot aşırı yükleme",
+   "Hafta 8 — Kalıtım",
+   "Hafta 9 — Kalıtım, çok biçimlilik",
+   "Hafta 10 — Çok biçimlilik",
+   "Hafta 11 — Soyut sınıflar ve metotlar",
+   "Hafta 12 — İstisnalar ve istisna yönetimi",
+   "Hafta 13 — Şablonlar",
+   "Hafta 14 — Nesne Yönelimli Kod Tasarım İlkeleri"
+  ],
+  "textbooks": [
+   "Mastering Object-Oriented Python: Build powerful applications with reusable code using OOP design patterns and Python 3.7, 2nd Edition, Steven F. Lott"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=124",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 210E": {
+  "code": "VBA 210E",
+  "name": "Lineer Cebir ve Uygulamaları",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Doğrusal Denklemler ve Matrisler: Doğrusal denklem sistemleri, matrisler, matris çarpımı, matris işlemlerinin cebirsel özellikleri, özel tipte matrisler (kare, simetrik, dikey, üçgen, köşegen vs.); Doğrusal Sistemlerin Çözümü: Bir matrisin basamak formu ve rankı, doğrusal sistemlerin çözümü, elemanter matrisler, bir matrisin tersi, denk matrisler; Determinantlar: Determinantın tanımı ve özellikleri, kofaktör açılımı ve matris tersi, determinantın diğer uygulamaları, Cramer Kuralı; Reel Vektör Uzayları: Düzlemde ve üç boyutlu uzayda vektörler, vektör uzayının tanımı, alt uzaylar, germe, doğrusal bağımsızlık, taban (baz), boyut, ortonormalleştirme (Gram-Schmidt Yöntemi), projeksiyon matrisi; Özdeğer ve Özvektörler: Köşegenleştirme ve bir matrisin kuvveti, pozitif ve yarı-pozitif tanımlı matrisler, Tekil Değer Ayrışması. Linear Equations and Matrices: Linear systems of equations, matrices, matrix product, algebraic properties of matrix operations, special matrices (square, symmetric, orthogonal, triangular, diagonal, etc.); Solving Linear Systems: Echelon form of a matrix and its rank, solving linear systems, elementary matrices, matrix inverses, equivalent matrices; Determinants: Definition and properties of the determinant, cofactor expansion and finding the inverse of a matrix, applications of the determinant, Cramer’s rule; Real Vector Spaces: Vectors in two- and three-dimensional spaces, definition of a vector space, subspaces, spanning, linear independence, basis, dimension, orthonormalization (Gram-Schmidt process), projection matrix; Eigenvalues and eigenvectors: Diagonalization and the matrix power, positive definite and semi-definite matrices, the Singular Value Decomposition.",
+  "outcomes": [
+   "Çeşitli yöntemler kullanarak doğrusal denklem sistemleri çözmek ve sonuçları yorumlamak.",
+   "Matris tersi ve determinant dahil olmak üzere matris işlemlerini yapmak ve yorumlamak.",
+   "Vektör uzaylarını ve alt uzayları kavramak.",
+   "Doğrusal bağımsızlığı, geren kümeleri ve tabanları kavramak.",
+   "Özdeğerler ve özvektörleri kavramak, özdeğer problemlerini çözmek.",
+   "Matris cebrinin ilkelerini doğrusal dönüşümlere uygulamak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Doğrusal denklem sistemleri, Matrisler, Matris çarpımı",
+   "Hafta 2 — Matris işlemlerinin cebirsel özellikleri, Özel tipte matrisler",
+   "Hafta 3 — Bir matrisin basamak formu ve rankı, Lineer sistemlerin çözümü",
+   "Hafta 4 — Elemanter matrisler, Ters matris, Denk matrisler",
+   "Hafta 5 — Determinant ve özellikleri, Kofaktör açılımı ve matris tersi",
+   "Hafta 6 — Determinantların diğer uygulamaları, Cramer Kuralı",
+   "Hafta 7 — Düzlemde ve üç boyutlu uzayda vektörler, Vektör uzayının tanımı, Alt uzaylar",
+   "Hafta 8 — Germe, Lineer bağımsızlık, Taban (Baz), Boyut",
+   "Hafta 9 — Ortonormalleştirme: Gram-Schmidt Yöntemi, Projeksiyon matrisi ve istatistikte bir uygulaması (En Küçük Kareler Yöntemi)",
+   "Hafta 10 — Özdeğerler, Özvektörler ve stokastik modellemede uygulamaları (Markov geçiş matrisi)",
+   "Hafta 11 — Köşegenleştirme ve bir matrisin kuvveti, Pozitif ve yarı-pozitif tanımlı matrisler",
+   "Hafta 12 — Tekil Değer Ayrışması",
+   "Hafta 13 — Doğrusal dönüşümler ve görüntü işlemede uygulamaları",
+   "Hafta 14 — Kapsayıcı bir uygulama: Simpleks Yöntemi"
+  ],
+  "textbooks": [
+   "Lay, D. C., Lay, S. R., & McDonald, J. J. (2021). Linear Algebra and Its Applications (6th ed.). Pearson."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=210",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 211E": {
+  "code": "VBA 211E",
+  "name": "Veri Biliminde Deterministik Modeller",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Yöneylem ve optimizasyon alanındaki en önemli konuları ve yeni yaklaşımları araştırmak doğrusal, doğrusal olmayan, tamsayılı, dinamik programlama, kombinatoryal ve ağ modelleri ve rassal modelleri gibi modelleme tekniklerini kullanmayı öğretmek, kesin ve sezgisel çözüm metotlarını öğretmek, bu metotları Excel ve uygun optimizasyon programları kullanarak çözmeyi öğretmek ve pazarlama, spor, ulaşım, sağlık, enerji, askeri, üretim planlama, tedarik zinciri yönetimi, finans, ekonomi ve lojistik gibi çeşitli alanlarda optimizasyonun gerçek hayat uygulamalarını öğrencilere tanıtmak. To cover most important and recent topics in operations research and optimization such as linear, nonlinear, integer and dynamic programming, combinatorial and network optimization and stochastic models, to learn exact and heuristic solution methods and to apply these methods in Excel and optimization software packages, to learn about applications of optimization to real problems in areas such as marketing, sports, transportation science, health care, energy, military, manufacturing and production planning, supply chain management, finance and economics, logistics and distribution and others.",
+  "outcomes": [
+   "Modelleme felsefesini ve ilkelerini kavramak",
+   "Model türlerini ve çözüm algoritmalarını tanımlayabilme",
+   "Problemleri nasıl şekillendirilebileceğini öğrenmek",
+   "Önerilen model için veri gereksinimlerini belirlemeyi öğrenmek",
+   "Bir problemi çözmek için kavramsal şekillendirmeden nihai bir matematiksel model oluşturmayı öğrenmek",
+   "Doğrusal, tamsayı, doğrusal olmayan, dinamik ve stokastik programlama modelleri dahil olmak üzere deterministik ve stokastik optimizasyon modelleri hakkında bilgi edinmek",
+   "Doğrusal, tamsayı, doğrusal olmayan, dinamik ve stokastik programlama modelleri dahil olmak üzere deterministik ve stokastik optimizasyon modelleri hakkında bilgi edinmek",
+   "Çözüm yöntemlerini ve bunların belli yazılım paketlerinde uygulamalarını öğrenmek",
+   "Model çözümü analiz etmek, bir çözümün ne kadar sağlam olduğunu ve sonuçların model girdilerine ne kadar duyarlı olduğunu incelemek",
+   "Optimizasyon modellerinin pazarlama, spor, ulaşım, sağlık hizmetleri, enerji, askeriye, üretim, tedarik zinciri yönetimi, finans ve ekonomi, lojistik ve dağıtım gibi çeşitli alanlardaki uygulamaları hakkında bilgi edinmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Derse genel bir bakış; Modellemeye ve problem çözme sürecine giriş",
+   "Hafta 2 — Doğrusal optimizasyon modelleri",
+   "Hafta 3 — Doğrusal modellerde duyarlılık analizi, gölge fiyatlar, indirgenmiş maliyetler",
+   "Hafta 4 — Ağ optimizasyon modelleri",
+   "Hafta 5 — Tam sayılı optimizasyon modelleri",
+   "Hafta 6 — Tam sayılı optimizasyon modelleri",
+   "Hafta 7 — Kombinatoryal optimizasyon modelleri",
+   "Hafta 8 — Kombinatoryal optimizasyon modelleri",
+   "Hafta 9 — Doğrusal olmayan optimizasyon modelleri",
+   "Hafta 10 — Doğrusal olmayan optimizasyon modelleri uygulamaları",
+   "Hafta 11 — Dinamik programlama modelleri",
+   "Hafta 12 — Dinamik programlama modelleri uygulamaları",
+   "Hafta 13 — Stokastik programlama modelleri",
+   "Hafta 14 — Stokastik programlama modelleri uygulamaları"
+  ],
+  "textbooks": [
+   "Nagraj Balakrishnan, Barry Render, Ralph M. Stair, and Chuck Munson (2017). Managerial Decision Modeling: Business Analytics with Spreadsheets, 4th ed. DeG Press. Stephen P. Bradley, Arnoldo C. Hax, and Thomas L. Magnanti (1977). Applied Mathematical Programming. Addison Wesley. ISBN: 0-201-00464-X"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 213E": {
+  "code": "VBA 213E",
+  "name": "Veri Görselleştirme",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Veri analizi araçları ve teknikleri, grafikler, çizimler, haritalar, veri keşfi ve analizi, veri anlamlandırma, veri sunumu, veri hikayeleştirilmesi. Data analysis tools and techniques, graphs, charts, maps, data exploration and analysis, data interpretation, data presentation, data storytelling.",
+  "outcomes": [
+   "Veriyi anlar.",
+   "Veriler üzerinde işlemler gerçekleştirebilir.",
+   "Verileri kullanarak görselleştirmeler gerçekleştirebilir.",
+   "Farklı veri görselleştirme yöntemlerini bilir.",
+   "Veri anlamlandırmada ileri düzey teknikleri uygulayabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Teknikler ve Uygulama Alanları",
+   "Hafta 2 — Veri Görselleştirme Yazılımları",
+   "Hafta 3 — Nicel Veriler",
+   "Hafta 4 — Kategorik Veriler",
+   "Hafta 5 — Aykırı İşlemler",
+   "Hafta 6 — Kayıp İşlemleri",
+   "Hafta 7 — Ortalama Test İşlemleri",
+   "Hafta 8 — Karşılaştırma İşlemleri",
+   "Hafta 9 — Çapraz Tablolama",
+   "Hafta 10 — Korelasyon",
+   "Hafta 11 — Regresyon",
+   "Hafta 12 — Faktör",
+   "Hafta 13 — Kümeleme",
+   "Hafta 14 — Zaman Serisi"
+  ],
+  "textbooks": [
+   "Healy, K. (2018). Data visualization: a practical introduction. Princeton University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=213",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 215E": {
+  "code": "VBA 215E",
+  "name": "Veri Tabanı Yönetim Sistemleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "İlişkisel veri tabanı temel tanımları ve mimarisi, ilişkisle veri modeli, veri modelleme, SQL (Structured Query Language) dili, veri ambarı, ETL (extract, transform, load) araçları, NoSQL veri tabanları, işletmelerde NoSQL veritabanının konumu, kullanım senaryoları, raporlama ve görselleştirme Main concepts of relational databases and architecture, relational data model, data modelling, SQL (structured Query Language), data warehouse, ETL (extract, transform, load) tools, NoSQL databases, positioning NoSQL databases in organization, use cases, reports and visualization",
+  "outcomes": [
+   "Varlık İlişki Diyagramı okuma ve tasarlama becerisi",
+   "Temel SQL komutlarını anlamak, yazmak ve çalıştırma becerisi",
+   "Veri Ambarı tasarlama ve kullanma becerisi",
+   "Temel raporlama becerisi",
+   "İşletmelerde kullanılabilecek NoSQL veri tabanlarının uygunluğunu değerlendirme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri – veri tabanı ve diğer temel kavramların tanıtılması",
+   "Hafta 2 — Veri tabanı geçmişi – ilişkisel veri tabanı temel tanımları ve mimarisi",
+   "Hafta 3 — İlişkisel veri modeli ve veri modelleme",
+   "Hafta 4 — Temel SQL (Structured Query Language)",
+   "Hafta 5 — İleri SQL: Sorgu, tetikleyici, saklı yordamlar",
+   "Hafta 6 — Veri Ambarı ve ETL araçlarına giriş",
+   "Hafta 7 — NoSQL veritabanlarına giriş ve İşletmelerde NoSQL veritabanlarının konumu",
+   "Hafta 8 — NoSQL veri tabanı modelleri",
+   "Hafta 9 — Anahtar-Değer veritabanı modeli",
+   "Hafta 10 — Geniş kolon veritabanı modeli",
+   "Hafta 11 — Doküman temelli veritabanı modeli",
+   "Hafta 12 — Çizge veritabanı modeli",
+   "Hafta 13 — Raporlama ve Görselleştirme",
+   "Hafta 14 — Gerçek dünya uygulamalarının analizi"
+  ],
+  "textbooks": [
+   "Fundamentals of Database Systems, 2016, Ramez Elmasri, Shamkant B. Navathe, Peason"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=215",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 222E": {
+  "code": "VBA 222E",
+  "name": "Veri Yapıları ve Algoritmalar",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Dersin amacı öğrencilerin temel veri yapılarının tasarımı, analizi ve geliştirilmesi konusunda bilgi ve beceri sahip olmasını sağlamaktır. Veri yapılarının sınıflandırılması, algoritmaya giriş ve karmaşıklık analizi, listeler, yığıtlar, kuyruklar, ağaçlar, çizgeler ve yığınlar gibi temel veri yapıları ve türevleri, önemli sıralama algoritmalarının analizi, dinamik bellek ayırımı kullanarak program yazma konusuna vurgu yapmaktır. The aim of the course is to ensure that students have the knowledge and skills regarding the design, analysis, and development of fundamental data structures. The course emphasizes the classification of data structures, introduction to algorithms and complexity analysis, fundamental data structures and their derivatives such as lists, stacks, queues, trees, graphs, and heaps, analysis of important sorting algorithms, and programming with dynamic memory allocation.",
+  "outcomes": [
+   "Temel algoritmalar ve veri yapıları bilgisine sahip olur.",
+   "Soyut Veri Yapılarınının tasarımını yapar ve önemini anlar.",
+   "Öz yineleme algoritmalarını kullanır.",
+   "Bağlı liste ve ikili ağaçlar gibi bağlı yapılara hakim olur.",
+   "Yığın, kuyruk, çizge gibi veri yapılarına hakimiyet ile bu yapıların problem çözümünde kullanımını kavrar.",
+   "Değişik uygulama alanlarında veri yapılarının kullanılma ve karşılaştırabilme becerisi geliştirir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri Yapıları ve Modelleri",
+   "Hafta 2 — Algoritmik Program Tasarımı ve Analizi (Algoritma Karmaşıklığı)",
+   "Hafta 3 — Özyineleme, Soyut Veri Yapıları",
+   "Hafta 4 — Bağlı Listeler I",
+   "Hafta 5 — Bağlı Listeler II",
+   "Hafta 6 — Yığıtlar",
+   "Hafta 7 — Kuyruklar",
+   "Hafta 8 — Çizgeler I",
+   "Hafta 9 — Çizgeler II",
+   "Hafta 10 — Ağaçlar",
+   "Hafta 11 — Dengeli Arama Ağaçları",
+   "Hafta 12 — İkili Arama Ağaçları",
+   "Hafta 13 — Sıralama Algoritmaları I",
+   "Hafta 14 — Sıralama Algoritmaları II"
+  ],
+  "textbooks": [
+   "Michael T. Goodrich, Roberto Tamassia, and Michael H. Goldwasser. Data Structures and Algorithms in Java, 6th Edition. Wiley. ; Jay Wengrow, A Common–Sense Guide to Data Structures and Algorithms, Pragmatic Bookshelf, 2020."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=222",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 224E": {
+  "code": "VBA 224E",
+  "name": "Veri Biliminde Stokastik Modeller",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bu ders, çeşitli alanlarda modelleme ve analiz için gerekli olan olasılık, stokastik süreçler, simülasyon ve optimizasyon tekniklerindeki temel ve ileri konuları kapsamaktadır. Konular arasında Markov zincirleri, Poisson süreçleri, kuyruk sistemleri, Monte Carlo simülasyonu, ajan tabanlı modelleme ve tavlama benzetimi ve genetik algoritmalar gibi sezgisel optimizasyon yöntemleri yer almaktadır. Uygulamalı simülasyonlar ve çok kriterli optimizasyon yaklaşımları aracılığıyla karmaşık sistemleri analiz etme ve karar verme süreçlerini optimize etme konusunda pratik beceriler kazanın. This course covers foundational and advanced topics in probability, stochastic processes, simulation, and optimization techniques essential for modeling and analysis in various domains. Topics include Markov chains, Poisson processes, queueing systems, Monte Carlo simulation, agent-based modeling, and heuristic optimization methods like simulated annealing and genetic algorithms. Gain practical skills in analyzing complex systems and optimizing decision-making processes through hands-on simulations and multi-criteria optimization approaches.",
+  "outcomes": [
+   "Olasılık teorisi, stokastik süreçler ve Markov zincirlerini kullanarak modelleme konusunda yeterlilik göstermek, bunları sistem davranışlarını analiz etmek ve tahmin etmek için uygulayabilmek",
+   "Rastgele sayı üretimi, varyans azaltma yöntemleri ve karar desteği için simülasyon çıktılarının sistematik analizi dahil olmak üzere Monte Carlo simülasyon tekniklerinde uzmanlık kazanmak",
+   "Kuyruk sistemlerini kapsamlı bir şekilde analiz edebilme, doğum ve ölüm süreçlerini ve ilgili modelleri kullanarak operasyonel dinamiklerini ve performans metriklerini anlayabilme",
+   "Gerçek dünyadaki karar verme problemlerini etkin bir şekilde çözmek için çok kriterli optimizasyon tekniklerinin yanı sıra benzetimli tavlama, tabu arama ve genetik algoritmalar gibi sezgisel optimizasyon yöntemlerini uygulama becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Olasılık Tekrarı",
+   "Hafta 2 — Stokastik Süreçlere ve Markov Zincirlerine Giriş",
+   "Hafta 3 — Kesikli Zamanlı Markov Zincirleri – Durumlar, Sınıflar",
+   "Hafta 4 — Kesikli Zamanlı Markov Zincirleri – Geçici ve Durağan Analiz",
+   "Hafta 5 — Üstel ve Poisson Dağılımları, Poisson Süreçleri",
+   "Hafta 6 — Sürekli Zamanlı Markov Zincirleri - Temel Yapı",
+   "Hafta 7 — Sürekli Zamanlı Markov Zincirleri – Durağan Analiz",
+   "Hafta 8 — Sıra Sistemleri – Doğuş ve Ölüm Süreci - M/M/1, M/M/k,M/M/k/N,G/M/1",
+   "Hafta 9 — Benzetim - Monte Carlo Simülasyonu – Monte Carlo Simülasyonunun Temelleri, Rastgele Sayıların ve Rastgele Değişkenlerin Üretilmesi",
+   "Hafta 10 — Benzetim - Monte Carlo Simülasyonu – Varyans Azaltma Teknikleri, Simülasyon Sonuçlarının Analizi",
+   "Hafta 11 — Benzetim - Ajan Tabanlı Modeller – Ajanlar, Ortamlar, Etkileşimler, Ajan Davranışlarının ve Etkileşimlerin Tasarlanması",
+   "Hafta 12 — Sezgisel Optimizasyon Yöntemleri – Simüle Edilmiş Tavlama, Tabu Arama",
+   "Hafta 13 — Sezgisel Optimizasyon Yöntemleri – Genetik Algoritmalar",
+   "Hafta 14 — Çok Kriterli Optimizasyon"
+  ],
+  "textbooks": [
+   "S. Ross, Introduction to Probability Models, 13th edition, Elsevier"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=224",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 252E": {
+  "code": "VBA 252E",
+  "name": "Olasılık Teorisi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Veri Bilimi’nin önemli bir alanı olan Olasılık Teorisi’ne temel bir giriş yapmak. Konuların teorik anlatımına ek olarak örnekler yoluyla olası uygulamaları göstermek. Making a basic introduction to the Theory of Probability which is an important foundation of Data Science. Showing possible applications, in addition to the theoretical presentation of the subjects, through examples.",
+  "outcomes": [
+   "Olasılık Teorisi için temel teorik altyapı bilgisini öğrenmek",
+   "Rassal değişkenleri ve kullanımını öğrenmek",
+   "Beklenen değeri geniş bir bakış açısıyla öğrenmek",
+   "Olasılıklarda bazı sınırları bulmayı öğrenmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kombinasyonal Analiz",
+   "Hafta 2 — Olasılık Aksiyomları",
+   "Hafta 3 — Koşullu Olasılık ve Bağımsızlık",
+   "Hafta 4 — Tekrar",
+   "Hafta 5 — Rassal Değişkenler (Kesikli)",
+   "Hafta 6 — Rassal Değişkenler (Kesikli ve Sürekli)",
+   "Hafta 7 — Rassal Değişkenler (Sürekli)",
+   "Hafta 8 — Tekrar",
+   "Hafta 9 — Bileşik Dağılımlı Rassal Değişkenler",
+   "Hafta 10 — Bileşik Dağılımlı Rassal Değişkenler",
+   "Hafta 11 — Beklenen Değerin Özellikleri",
+   "Hafta 12 — Tekrar",
+   "Hafta 13 — Markov Zincirleri",
+   "Hafta 14 — Limit Teoremleri"
+  ],
+  "textbooks": [
+   "Sheldon Ross; A First Course in Probability, 7th Edition, Prentice Hall International Inc., 2005."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=252",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 311E": {
+  "code": "VBA 311E",
+  "name": "İstatistik",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "I. Lisans eğitiminin diğer derslerini desteklemek. II. Analitik düşünme yeteneğini geliştirmek. III. Verilerden sonuç çıkarma yeteneğini geliştirmek. IV. Bir deneyi tasarlama yeteneğini geliştirmek. I. To support the other courses of the Bachelor of Science. II. To develop the ability of analytical thinking, III. To draw conclusions from data and to gain inferential abilities. IV. To gain the ability of designing an experiment.",
+  "outcomes": [
+   "Verilerden hareketle sürecin istatistiksel karakterini elde etmek",
+   "Merkezi eğilim ve dağılım ölçülerinden hareketle süreç hakkında yorum yapabilmek",
+   "Süreç parametrelerini tahmin etmek",
+   "İstatistiksel karar verme altyapısını oluşturmak",
+   "Süreç parametreleri arasındaki ilişkileri tanımlayabilmek",
+   "Süreç parametrelerinin gelecek değerini tahmin etmek",
+   "İstatistiksel yazılımları kullanabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Tanımsal istatistik",
+   "Hafta 2 — Tanımsal istatistik",
+   "Hafta 3 — Merkezi eğilim ve dağılım ölçüleri",
+   "Hafta 4 — Grafikler ve frekans dağılımı",
+   "Hafta 5 — Örnekleme ve tahmin etme",
+   "Hafta 6 — Nokta ve aralık tahminleri",
+   "Hafta 7 — Nokta ve aralık tahminleri",
+   "Hafta 8 — İstatistiksel karar vermenin ilkeleri ve hipotez testleri",
+   "Hafta 9 — Ortalamalar, oranlar ve varyanslar için testler",
+   "Hafta 10 — Ortalamalar, oranlar ve varyanslar için testler",
+   "Hafta 11 — Ki-kare testleri",
+   "Hafta 12 — Parametrik olmayan testler",
+   "Hafta 13 — Varyans analizi",
+   "Hafta 14 — Regresyon ve korelasyon"
+  ],
+  "textbooks": [
+   "Walpole, Myers, Myers, Ye, Probability and Statistics for Engineers and Scientists, Pearson, 2013"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=311",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 312E": {
+  "code": "VBA 312E",
+  "name": "Veri Analitiği",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bu ders, veri analitiği ve makine öğrenmesine derinlemesine bir giriş sağlar. Konular arasında regresyon, sınıflandırma, model eğitimi, optimizasyon, düzenleme, karar ağaçları, topluluk yöntemleri, destek vektör makineleri, kümeleme ve boyut indirgeme yer alır. Öğrenciler, bu kavramları gerçek dünya veri setlerine uygulayarak becerilerini geliştirecek projeler yapacaktır ve veri analizi ve model oluşturma konularında gerekli becerilerle donanacaklardır. This course provides an in-depth introduction to data analytics and machine learning. Topics include regression, classification, model training, optimization, regularization, decision trees, ensemble methods, support vector machines, clustering, and dimension reduction. Students will engage in hands-on projects to apply these concepts to real-world data sets, equipping them with essential skills in data analysis and model building.",
+  "outcomes": [
+   "Temel veri analitiği ve makine öğrenimi kavramlarını, regresyon, sınıflandırma ve kümeleme gibi, sağlam bir şekilde anlama yeteneği",
+   "Python gibi programlama araçları ve kütüphaneleri etkili bir şekilde kullanarak veri analizi yapma ve makine öğrenimi modelleri oluşturma yeteneği",
+   "Gerçek hayat veri kümelerine çeşitli makine öğrenimi tekniklerini uygulama yeteneği",
+   "Sağlam ve verimli modeller oluşturmak için model seçimi, parametre optimizasyonu, doğrulama ve çapraz doğrulama tekniklerini kullanma yeteneği",
+   "İçgörülerini ve makine öğrenimi sonuçlarını hem teknik hem de teknik olmayan kitlelere etkili bir şekilde iletebilme yeteneği"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri Analitiğine Giriş",
+   "Hafta 2 — Regresyon – Doğrusal ve Polinom Regresyon",
+   "Hafta 3 — Sınıflandırma – KNN ve Naïve Bayes",
+   "Hafta 4 — Lojistik Regresyon",
+   "Hafta 5 — Makine Öğrenimi Modellerini Eğitme – Maliyet Fonksiyonları, Gradyan İniş Yöntemi",
+   "Hafta 6 — Model Seçimi ve Parametre Optimizasyonu – Doğrulama, Çapraz Doğrulama, Grid Arama",
+   "Hafta 7 — Düzenleme – Ridge, LASSO",
+   "Hafta 8 — Karar Ağaçları",
+   "Hafta 9 — Topluluk Öğrenmesi - Bagging ve Random Forests",
+   "Hafta 10 — Topluluk Öğrenmesi - Boosting",
+   "Hafta 11 — Destek Vektör Makineleri",
+   "Hafta 12 — Gözetimsiz Öğrenme – Kümeleme Teknikleri - k-means ve Hiyerarşik Kümeleme, Yoğunluk Tabanlı Teknikler",
+   "Hafta 13 — Boyut Azaltma Teknikleri - Temel Bileşen Analizi",
+   "Hafta 14 — Boyut Azaltma Teknikleri - t-dağıtılmış Stokastik Komşu Gömme, UMAP"
+  ],
+  "textbooks": [
+   "Business Intelligence: Data Mining and Optimization for Decision Making, Vercellis, C., John Wiley & Sons, 2011."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 313E": {
+  "code": "VBA 313E",
+  "name": "Derin Öğrenme",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 8
+  },
+  "description": "Bu ders, temel yapay sinir ağı kavramlarını ve ileri düzey konularını içerir. Öğrenciler, backpropagation, düzenlileştirme, dropout gibi temel teknikleri öğrenir ve TensorFlow, Keras, ve PyTorch gibi popüler derin öğrenme çerçeveleriyle pratik deneyim kazanırlar. Özel konular arasında Evrişimli Sinir Ağları (CNN'ler), VGG ve ResNet gibi ileri mimariler, tekrarlayan ağlar (RNN'ler, GRU'lar, LSTM'ler) ve bunların doğal dil işleme (NLP) ve üretici modellerdeki (otokodlayıcılar, GAN'lar) uygulamaları yer alır. Ayrıca, kurs büyük dil modelleri ve derin takviyeli öğrenmedeki güncel ilerlemeleri de içerir. This course provides a comprehensive introduction to deep learning, covering fundamental neural network concepts and advanced topics. Students will learn key techniques such as backpropagation, regularization, and dropout, and gain practical experience with popular deep learning frameworks like TensorFlow, Keras, and PyTorch. Specialized topics include Convolutional Neural Networks (CNNs), advanced architectures like VGG and ResNet, recurrent networks (RNNs, GRUs, LSTMs), and their applications in natural language processing (NLP) and generative models (autoencoders, GANs). Additionally, the course explores cutting-edge advancements in large language models and deep reinforcement learning.",
+  "outcomes": [
+   "Sinir Ağı Temellerinde Uzmanlaşma",
+   "Derin Öğrenme Çerçevelerinde Yeterlilik kazanma",
+   "Görüntü tanıma için Evrişimsel Sinir Ağları (CNN'ler), dizi modelleme için Tekrarlayan Sinir Ağları (RNN'ler) ve veri üretimi ve anormallik tespiti için GAN'lar gibi üretken modelleri uygulama konusunda uzmanlık kazanmak",
+   "Dil üretimi ve duygu analizi gibi görevler için büyük dil modellerini (GPT gibi) anlamak ve uygulamak da dahil olmak üzere derin öğrenme kullanarak NLP'deki en son teknikleri keşfetmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Derin Öğrenmeye Giriş",
+   "Hafta 2 — Sinir Ağlarının Temelleri",
+   "Hafta 3 — Sinir Ağlarını Eğitme – Geri Yayılım, Kayıp Fonksiyonları, Dropout, Düzenleme",
+   "Hafta 4 — Derin Öğrenme Çerçeveleri - TensorFlow, Keras, PyTorch",
+   "Hafta 5 — Evrişimli Sinir Ağları (CNN'ler)",
+   "Hafta 6 — İleri Düzey CNN Mimarileri – İnce Ayar, Özellik Çıkarma ve Transfer Öğrenme (VGG, ResNet, Inception)",
+   "Hafta 7 — Tekrarlayan Sinir Ağları (RNN'ler) – Mimariler, Kaybolan Gradyan Sorunu",
+   "Hafta 8 — GRU ve LSTM'ler",
+   "Hafta 9 — RNN'lerle Doğal Dil İşleme",
+   "Hafta 10 — Yenileyici Modeller - Otoenkoderler ve Varyasyonel Otoenkoderler (VAE'ler)",
+   "Hafta 11 — Yenileyici Modeller - Generatif Karşıt Ağlar (GAN'lar)",
+   "Hafta 12 — Büyük Dil Modelleri - GPT (Önceden Eğitilmiş Generatif Dönüştürücü) modeller",
+   "Hafta 13 — Büyük Dil Modelleri - Transformer Modelleri ve Dikkat Mekanizmaları",
+   "Hafta 14 — Derin Pekiştirmeli Öğrenme"
+  ],
+  "textbooks": [
+   "Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2023). Dive into Deep Learning. Cambridge University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=313",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 315E": {
+  "code": "VBA 315E",
+  "name": "Makine Öğrenmesi",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Bu kurs, temel makine öğrenimi kavramları üzerine inşa edilmiş olup, ileri teknikler ve uygulamaları derinlemesine içermektedir. Daha önce temel bilgilere sahip öğrenciler için tasarlanmış olup, regresyon, sınıflandırma ve yapay sinir ağları gibi konuları kapsar ve ardından Bayesian yöntemler, derin öğrenme mimarileri, anomali tespiti ve açıklanabilir yapay zeka gibi özelleşmiş konulara yönelir. Finans, doğal dil işleme ve öneri sistemleri gibi pratik uygulamalar, öğrencileri gerçek dünya bağlamında karmaşık veri sorunlarını çözmeye hazırlar, güncel makine öğrenimi araçlarını kullanarak. This course builds upon foundational machine learning concepts, offering in-depth exploration into advanced techniques and applications. Designed for students with prior knowledge, it covers regression, classification, and neural networks before delving into specialized topics like Bayesian methods, graph based methods, deep learning architectures, anomaly detection, and explainable AI. Practical applications in finance, NLP, and recommender systems provide real-world context, preparing students to tackle complex data challenges using cutting-edge machine learning tools.",
+  "outcomes": [
+   "Karmaşık veri setlerini analiz etmek ve doğru tahminler yapmak için gelişmiş regresyon, sınıflandırma ve sinir ağı tekniklerini uygulama konusunda yeterlilik göstermek.",
+   "Bayes makine öğrenimi, derin öğrenme mimarileri (CNN'ler, RNN'ler, LSTM'ler) ve grafik tabanlı modellerde uzmanlık kazanma ve bunları çeşitli alanlarda etkili bir şekilde uygulama.",
+   "Pratik uygulamalar için özellik mühendisliği, veri imputasyonu, dengesiz verilerin işlenmesi",
+   "Zaman serisi analizi, NLP algoritmaları konularında beceriler geliştirmek.",
+   "İstatistiksel yöntemleri, anomali tespit algoritmalarını, açıklanabilir yapay zeka araçlarını (SHAP ve LIME gibi) ve finansal veri analizi, ticaret stratejileri, tavsiye sistemleri ve mevcut araştırma trendlerine ilişkin içgörüler için özel makine öğrenimi tekniklerini kullanmak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Makine Öğrenimi Kavramlarının Genel Bakışı",
+   "Hafta 2 — Regresyon ve Sınıflandırma Teknikleri Genel Bakış",
+   "Hafta 3 — Özellik Mühendisliği Teknikleri",
+   "Hafta 4 — Veri İmputasyon Teknikleri ve Dengesiz Verilerle Başa Çıkma",
+   "Hafta 5 — Bayesian Makine Öğrenimi - Bayesian çıkarım, Gaussian Süreçler",
+   "Hafta 6 — Yapay Sinir Ağları",
+   "Hafta 7 — Kernel Regresyon Yöntemleri",
+   "Hafta 8 — Grafik Tabanlı Makine Öğrenimi",
+   "Hafta 9 — Anomali Tespiti - İstatistiksel yöntemler, İzolasyon Ormanı, Otoenkoderler",
+   "Hafta 10 — Açıklanabilir Yapay Zeka - SHAP, LIME",
+   "Hafta 11 — Zaman Serisi Analizi ve Tahmin",
+   "Hafta 12 — Doğal Dil İşleme",
+   "Hafta 13 — Finans ve Ticaret için Makine Öğrenimi",
+   "Hafta 14 — Öneri Sistemleri"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=315",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 317E": {
+  "code": "VBA 317E",
+  "name": "Sinyal Ve Görüntü Analitiği",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Sinyal ve görüntünün temel özellikleri, zamanda örnekleme ve nicemleme, zamanda filtreleme ve konvülsiyon, zamanda Fourier dönüşümü, gürültü azaltma, kontrast iyileştirme, kenar algılama ve kenar çıkarma. Fundamental characteristics of signals and images, sampling and quantization in time, filtering and convolution in time, Fourier transform in time, noise reduction, contrast enhancement, edge detection, and edge extraction.",
+  "outcomes": [
+   "Ayrık zamanlı sinyallerin temel kavramlarını bilir.",
+   "Sayısal sinyal işleme ve görüntü işlemenin temel kavramlarını bilir ve anlar.",
+   "Programlama dillerini kullanarak uygulama gerçekleştirir.",
+   "Elde edilen sonuçları eleştirel bir şekilde analiz eder."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ayrık zamanlı sinyaller ve sistemler",
+   "Hafta 2 — Ayrık Fourier dönüşümü",
+   "Hafta 3 — Hızlı Fourier dönüşümü",
+   "Hafta 4 — Konvolüsyon",
+   "Hafta 5 — Dalgacık dönüşümü",
+   "Hafta 6 — Veri elde etme",
+   "Hafta 7 — Sayısal filtreler",
+   "Hafta 8 — Sayısal görüntü işlemeye giriş",
+   "Hafta 9 — Görüntü zenginleştirme",
+   "Hafta 10 — Görüntü restorasyonu",
+   "Hafta 11 — Renk uzayları",
+   "Hafta 12 — Görüntü sıkıştırma",
+   "Hafta 13 — Görüntü bölütleme",
+   "Hafta 14 — Görüntü analizi"
+  ],
+  "textbooks": [
+   "Diniz, P. S., Da Silva, E. A., & Netto, S. L. (2010). Digital signal processing: system analysis and design. Cambridge University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=317",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 319E": {
+  "code": "VBA 319E",
+  "name": "Veri Biliminde Etik ve Hukuk",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 3
+  },
+  "description": "Bu derste, veri Bilimi, etik ve hukuk terimleri ve aralarındaki ilişkinin öğrenilmesiyle birlikte, kişisel verilerin işlenmesi, korunması kavramları ile ilgili kanunların özümsenmesi ve ayrıca bilişim teknolojilerinin beraberinde getirdiği hukuki sorunların ortaya konulması, bilişimin hukuku boyutunda hâkim olan ilkeler hakkında bilgi sahibi olunması amaçlanmaktadır. This course aims to provide an understanding of the legal aspects of data science, focusing on the processing and protection of personal data, as well as the legal implications of information technology. It will delve into the core concepts of data science, ethics, and law, exploring their interrelationships. You will gain knowledge of the laws governing personal data processing and protection, understand the legal challenges posed by information technology, and become familiar with the prevailing principles in the legal dimension of computing.",
+  "outcomes": [
+   "Veri Bilimi, Etik ve Hukuk kavramlarına ilişkin teknik ve hukuki kavramların özümser.",
+   "Kişisel Veri ve Kişisel verilerin işlenmesi ve korunması ile ilgili kavramları özümsemek ve bu konudaki Türkiye’deki kanunları öğrenir.",
+   "Bilişim hukuku ile ilgili mevzuatı analiz etmek, yorumlar.",
+   "5651 sayılı kanun ile ilgili bilgi sahibi olur.",
+   "Bilişim suçları ile ilgili temel esaslar hakkında bilgi sahibi olur."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilgi, Etik ve Hukuk nedir?",
+   "Hafta 2 — Hukuk ve Etik İlişkisi nedir?",
+   "Hafta 3 — Etik, Ahlak, Adalet, Hukuk arasındaki ilişkiler nelerdir?",
+   "Hafta 4 — Veri bilimi nedir? Veri bilimi kapsamındaki hukuki konular nelerdir?",
+   "Hafta 5 — Kişisel Veri ve Kişisel verilerin işlenmesi ile ilgili kavramlar",
+   "Hafta 6 — İnsan hakları ve Kişisel Verilen korunması kanunu",
+   "Hafta 7 — Veri Güvenliği ve Türkiye’de Kişisel Verilerin Korunması",
+   "Hafta 8 — Kişisel Verilerin korunması ile ilgili diğer kanunlar",
+   "Hafta 9 — Bilişim Sistemine giriş, Elektronik ortamda sözleşmeler ve yapılan sözleşmelerin yasal çerçevesi",
+   "Hafta 10 — Bilişim Ortamında Fikrî ve Sınai Haklar",
+   "Hafta 11 — 5651 Sayılı Kanun : İnternet Ortamında Yapılan Yayınların Düzenlenmesi Ve Bu Yayınlar Yoluyla İşlenen Suçlarla Mücadele Edilmesi",
+   "Hafta 12 — E-Ticaret",
+   "Hafta 13 — Bilişim Alanında Suçlar",
+   "Hafta 14 — Bilgisayarlarda, Bilgisayar Programlarında ve Kütüklerinde Arama, Kopyalama ve Elkoyma Tedbiri"
+  ],
+  "textbooks": [
+   "Fairfield, J., & Shtein, H. (2014). Big data, big problems: Emerging issues in the ethics of data science and journalism. Journal of Mass Media Ethics, 29(1), 38-51."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=319",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VBA 343E": {
+  "code": "VBA 343E",
+  "name": "Tavsiye Sistemleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Bu derste öneri sistemlerinin temel kavramları olan, algoritmalar ve değerlendirme araçları konularını içermektedir. Ders kapsamında öneri motorlarının uygulanması ve başta e-ticaret siteleri olmak üzere çevrim içi sistemlerde nasıl kullanıldığı anlatılmaktadır. Ayrıca vaka çalışmaları ve literatür taramaları ile güncel algoritma ve uygulamalar işlenmektedir. This course covers the basic concepts of recommender systems, including algorithms and evaluation tools. We will discuss how recommender systems are deployed in e-commerce sites and many other online systems. Additionally, the current applications and academic papers are reviewed via literature review and case studies.",
+  "outcomes": [
+   "Öneri sistemi için kullanılacak veri kümesini belirleme ve hazırlama becerisi",
+   "Karşılaşılan bir duruma en uygun öneri sistemi yaklaşımını belirleme becerisi",
+   "Öneri sistemi modelleme becerisi",
+   "Öneri sisteminin etkin çalışmasını engelleyen olası problemleri tanımlama ve çözme becerisi",
+   "Öneri sistemlerinin sonuçlarını değerlendirme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Öneri sistemlerine tanımı ve temel kavramlar",
+   "Hafta 2 — Bellek tabanlı işbirliğine dayalı filtreleme",
+   "Hafta 3 — Model tabanlı işbirliğine dayalı filtreleme",
+   "Hafta 4 — İçerik tabanlı öneri sistemleri",
+   "Hafta 5 — Öneri sistemlerinde sınıflandırma yöntemlerinin kullanımı",
+   "Hafta 6 — Karma öneri sistemleri",
+   "Hafta 7 — Öneri sistemlerinin değerlendirilmesi",
+   "Hafta 8 — Öneri sistemlerinde temel zorluklar",
+   "Hafta 9 — Sosyal medya ve öneri sistemleri",
+   "Hafta 10 — Lokasyon temelli hizmetler ve öneri sistemleri",
+   "Hafta 11 — Doğal dil işleme yöntemleri ile öneri sistemleri",
+   "Hafta 12 — Matris faktorizasyonu yöntemiyle ile öneri sistemi",
+   "Hafta 13 — Derin öğrenme sistemleri ile öneri sistemleri",
+   "Hafta 14 — Gerçek hayat uygulamalarının analizi"
+  ],
+  "textbooks": [
+   "Jannach D., Zanher M., Felfernig A. Friedrich G. (2011) Recommender Systems an Introduction",
+   "Gorakakal S.K., Usuelli M. (2015) Building a Recommendation System With R, Packt Publishing",
+   "Aggarwal C.C.(2016), Recomender Systems, Springer"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=343",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

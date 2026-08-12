@@ -1,0 +1,590 @@
+{
+ "EHN 101": {
+  "code": "EHN 101",
+  "name": "Mühendislik Etiği",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 0,
+   "lab": 0,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "Etik sözcüğünün kökeni, anlamı, tarihsel gelişimi, Etik Teorileri ve Etik Türleri, Etiğin evrensel ve bireysel özgürlük boyutu; Hak ve Özgürlük kavramları, suç ve ceza ve meslek ahlakının tartışılması; Etik karar verme süreçleri; Mühendislik kavramı ve mühendislik etiğinin ilkelerinin tartışılması. Mesleki sorumluluk ve mesleki risklerin değerlendirilmesi, Mühendislik etiğinin pratik uygulamalar ile tartışılması. Ethics word origin, meaning and historical development. Ethical theories and types of ethic. Ethics, in terms of individual freedom and universal. Discussions of rights and freedom, Crime and punishment and professional ethics. Ethical decision-making processes. Engineering concept and discussion of the principles of engineering ethics. Professional liability and assessment of occupational risks. Discussion of engineering ethics principles in practical applications",
+  "outcomes": [
+   "1) Etik ve meslek etiği kavramlarını tanımlama ve yorumlama",
+   "2) Etiğin evrensel ve bireysel özgürlük boyutunu anlama",
+   "3) Etik karar verme süreçlerini tanıma",
+   "4) Mühendislik kavramı ve mühendislik etiği ilkelerini öğrenme",
+   "5) Mesleki sorumluluğu kavrama ve değerlendirilme",
+   "6) Mesleki risklerin değerlendirilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Tanışma ve dersin içeriğinin tanıtılması",
+   "Hafta 2 — Ahlak ve Etik kavramları",
+   "Hafta 3 — Etik sözcüğünün kökeni, anlamı, tarihsel gelişimi",
+   "Hafta 4 — Etik Teorileri, Etik Türleri, Etiğin bireysel ve evrensel boyutları",
+   "Hafta 5 — Hak ve Özgürlük, suç ve ceza ve meslek ahlakının tartışılması",
+   "Hafta 6 — Etik karar verme süreçleri (Borrom Düğümü), Altın Kurallar, Evrensel Değerler",
+   "Hafta 7 — Mühendis, Mühendislik ve Meslek Etiği",
+   "Hafta 8 — Mühendislik ve Meslek Etiği",
+   "Hafta 9 — Mühendislik etiğinin ilkeleri",
+   "Hafta 10 — Mühendislikte güvenlik ve risk",
+   "Hafta 11 — Profesyonel Sorumluluk ve işveren otoritesi",
+   "Hafta 12 — Meslek Birlikleri ve Abet Mühendislik Etiği Kodları",
+   "Hafta 13 — Mühendislik etiği konusunda vaka çalışmaları",
+   "Hafta 14 — Mühendislik etiği konusunda vaka çalışmaları"
+  ],
+  "textbooks": [
+   "İpbüker C, Göksel Ç, Deniz R. (2005). Mühendislik Etiği Ders Notu. İTÜ İnşaat Fakültesi, İstanbul.",
+   "Fleddermann C. B. (2012). Engineering Ethics, fourth edition. Prentice Hall, Upper Saddle River, New Jersey.",
+   "Hüdaverdi T. (2019). Mühendislik Etiği Vaka Örnekleri. İTÜ Maden Fakültesi, İstanbul."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=101",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 105": {
+  "code": "EHN 105",
+  "name": "Bilim ve Müh Bilg Hesap Giriş(C)",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Problem modelleme, algoritmalar. Seçme ve tekrarlama yapıları. Türemiş veri yapıları, diziler. Soyutlama, yukarıdan-aşağı tasarlama. Temel numerik metotlar. Modelling the problem, algorithms. Selection and repetition constructs. Derived data types, arrays. Abstraction, top-down design. Basic numerical methods.",
+  "outcomes": [
+   "1. Bilgisayar programıyla çözmek üzere bir problemi düzgünce modellemek ve algoritma geliştirmek.",
+   "2. Orta boyutlu bilgisayar programları tasarlama, gerçekleme ve test etme.",
+   "3. C programlama dili geliştirme ortamlarına aşinalık kazanma.",
+   "4. Sıkça kullanılan programlama tekniklerinde uzmanlaşma.",
+   "5. Sıkça kullanılan numerik metot problemleri ve çözümlerine aşinalık kazanma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — C Programı yazma ve derleme, Program geliştirme fazları, Algoritmalar (Akış Diyagramı ve Pseudocode)",
+   "Hafta 2 — C Diline Giriş",
+   "Hafta 3 — C’de yapısal program geliştirme",
+   "Hafta 4 — C Program Kontrolü",
+   "Hafta 5 — C Fonksiyonları",
+   "Hafta 6 — C Fonksiyonları (devam), C dizileri",
+   "Hafta 7 — C dizileri (devam)",
+   "Hafta 8 — C işaretçileri",
+   "Hafta 9 — C işaretçileri (devam), C karakter ve katarlar",
+   "Hafta 10 — C Biçimlendirilmiş Giriş/Çıkış",
+   "Hafta 11 — C Yapılar, Bileşimler, Bit Manipülasyonları ve Numaralandırmalar",
+   "Hafta 12 — C Dosya İşleme",
+   "Hafta 13 — C Veri Yapıları",
+   "Hafta 14 — C Önişlemci, Diğer C konuları"
+  ],
+  "textbooks": [
+   "C How to Program, (Fifth Edition), Harvey M. Deitel, Paul J. Deitel, Prentice Hall, 2007."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=105",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 111": {
+  "code": "EHN 111",
+  "name": "Elektronik ve Haberleşme Mühendisliğine Giriş",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 0,
+   "lab": 0,
+   "local": 1,
+   "ects": 1
+  },
+  "description": "Mühendis kimdir? Elektroniğin tarihçesi, temel ölçü aletlerinin kullanılması, sayısal elektronik, biyolojik işaretler, biyolojik algılayıcılar, ölçme metodolojileri ve hataları, sayı sistemleri, mantık ve devreler, devre elemanları, mühendislik ve etik, etikdışı uygulama örnekleri, kalite ve mühendislik. Who is an engineer? The history of electronics, the usage of the basic measurement devices, digital electronics, biological signals, biomedical sensors, methodologies and errors of the measurement, numerical systems, logic and circuits, circuit elements, ethics in engineering, worst&best examples in engineering ethics, quality in design and implementation.",
+  "outcomes": [
+   "Mühendislik kavramı ve elektroniğin tarihçesi.",
+   "Temel ölçü aletlerinin kullanılması.",
+   "Sayısal elektronik.",
+   "Biyolojik algılayıcılar ve işaretler.",
+   "Ölçme metodolojileri ve hataları",
+   "Sayı sistemleri, mantık ve devreler",
+   "Devre elemanları.",
+   "Mühendislikte etik",
+   "Mühendislik tasarımı ve gerçeklemesinde kalite"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mühendislikte etik kavramına giriş",
+   "Hafta 2 — Mühendislik kavramı",
+   "Hafta 3 — Elektroniğin tarihçesi.",
+   "Hafta 4 — Temel ölçü aletleri",
+   "Hafta 5 — Sayısal elektronik",
+   "Hafta 6 — Biyolojik işaretler",
+   "Hafta 7 — Biyolojik algılayıcılar",
+   "Hafta 8 — Ölçme ve ölçme hataları",
+   "Hafta 9 — Sayı sistemleri",
+   "Hafta 10 — Mantık devreleri",
+   "Hafta 11 — Devre Elemanları",
+   "Hafta 12 — Mühendislik ve etik",
+   "Hafta 13 — Etikdışı uygulama örnekleri",
+   "Hafta 14 — Kalite ve mühendislik"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=111",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 121": {
+  "code": "EHN 121",
+  "name": "Mühendislik Tasarımının Temelleri",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Temel mühendislik kavramları ve elektrik cihaz ve sistemlerin tasarımı ve uygulanması için kullanılan bazı tasarım araçları sunulmaktadır. Öğrenciler, SPICE ve MULTISIM simülasyon yazılımı kullanılarak mühendislik tasarım süreciyle tanıştırılacaktır. Ayrıca mühendislik etiği de dahil olmak üzere mühendislik pratiğindeki temel konuları öğrenilecektir. Tasarım alıştırmaları, öğrencilerin mühendislik derslerinde başarıya uygun tutum ve davranışları benimseyen bireyler olarak tasarım geliştirme alışganlığı kazanmalarını sağlayacaktır. Basic concepts of engineering and some tools used for the design and implementation of devices and systems are presented. Students will be introduced to the engineering design process using the SPICE and MULTISIM simulation software. Students will also learn about key issues in the practice of engineering, including engineering ethics. Design exercises are aimed at helping students with the process of changing, growing, and developing into individuals that focus on and adopt the attitudes and behaviors that are appropriate to success in engineering coursework.",
+  "outcomes": [
+   "Mühendislik alanının kapsadığı çeşitli alanları ve uzmanlıkları anlamak",
+   "Hem bireysel hem de takımın bir parçası olarak problem çözme becerisi",
+   "Kanıta dayalı kaynakları ve bilgileri belirleme ve kullanma becerisi",
+   "Öğrencilerin program uzmanlık alanıyla ilgili en iyi uygulamaları tanıma ve anlama",
+   "Mesleki etik anlayışı",
+   "Ders kitabı ve sınıf içeriğini gerçek mühendislik uygulamalarında kullanma becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mühendislik tasarımına giriş",
+   "Hafta 2 — Elektrik",
+   "Hafta 3 — Elektrik, temel tanımlar",
+   "Hafta 4 — Devre elemenları, Kirchhoff Yasaları",
+   "Hafta 5 — Devre elemenları, basit devrelerin çözümleri",
+   "Hafta 6 — Transistor ve diyot",
+   "Hafta 7 — Sayısal Lojik-1- ikili kodlu sayılar, bool cebri",
+   "Hafta 8 — Sayısal Lojik-2- lojik tümdevreler",
+   "Hafta 9 — Sayısal Lojik-3- Doğruluk tablosu",
+   "Hafta 10 — Uygulama notları -1: Onlu sayısı, darbe üreteci",
+   "Hafta 11 — Uygulama notları -2: kodçözücü, saklayıcı",
+   "Hafta 12 — Bilgisayarlı tasarım araçları: spice",
+   "Hafta 13 — Bilgisayarlı tasarım araçları: multisim",
+   "Hafta 14 — Multisim ile bir tasarım örneği"
+  ],
+  "textbooks": [
+   "Raymond B. Landis, Studying Engineering: A Road Map to a Rewarding Career (4th ed.)."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=121",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 212": {
+  "code": "EHN 212",
+  "name": "Elektromagnetik Alanlara Giriş",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Vektör analizi, vektör diferansiyel operatörler, statik elektrik alan, elektrik potansiyel, iletken ve dielektrik ortamlarda elektrostatik alan, elektrostatik enerji, elektrostatik sınır koşulları, statik manyetik alan, vektör potansiyel, manyetik devreler, manyetik enerji, manyetik alana ilişkin sınır koşulları, yarı-statik alanlar, zamanla değişen alanlar ve Maxwell denklemleri Vector analysis, vectorial differential operators, static electric field, electric potential, electrostatic field analysis in conductors and dielectric media, electrostatic energy, electrostatic boundary conditions, magnetostatic field, vector potential, magnetic circuits, magnetic energy, magnetostatik boundary conditions, quasi-static fields, time varying fields and Maxwell equations",
+  "outcomes": [
+   "Vektör cebrini kullanma ve vektör diferansiyel operatörler ile hesaplama yapabilme",
+   "Elektrostatik alan, kuvvet ve potansiyel hesaplarını yapabilme",
+   "İletken ve dielektrik malzemelerdeki alanları hesaplama",
+   "Statik magnetik alan ve kuvvet hesaplama",
+   "Magnetik malzemelerde statik magnetik alana ilişkin problemleri çözme",
+   "Faraday ve Ampere yasasını kullanarak elektromagnetik alan problemlerini çözme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Vektör analiz ve koordinat sistemleri",
+   "Hafta 2 — Diferansiyel operatörler, gradyan, diverjans ve rotasyonel, Gauss ve Stokes teoremleri",
+   "Hafta 3 — Statik elektrik alanlara giriş, Coulomb yasası",
+   "Hafta 4 — Boş uzayda elektrostatik alan, alan çizgileri, elektrostatik potansiyel ve iş",
+   "Hafta 5 — Gauss ve Poisson bağıntıları, maddesel cisimlerde statik elektrik alan",
+   "Hafta 6 — Polarizasyon kavramı, dielektrik ve iletken cisimler, sınır koşulları",
+   "Hafta 7 — Görüntü yöntemi, kapasite ve kondansatör, elektrostatik enerji yoğunluğu",
+   "Hafta 8 — Boşlukta statik magnetik alan, Lorentz kuvveti, kararlı akım ve Biot-Savart yasası",
+   "Hafta 9 — Magnetik alanın sirkülasyonu, Amperé yasası",
+   "Hafta 10 — Vektör potansiyel ve statik magnetik alanlara ilişkin temel denklemler",
+   "Hafta 11 — Maddesel cisimlerde statik magnetik alan ve sınır koşulları",
+   "Hafta 12 — Magnetik devreler",
+   "Hafta 13 — Zamanla değişen alanlar için Faraday ve Ampere yasası",
+   "Hafta 14 — Maxwell denklemleri ve elektrodinamiğin temelleri"
+  ],
+  "textbooks": [
+   "D. K. Cheng, Field and Wave Electromagnetics"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=212",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 252": {
+  "code": "EHN 252",
+  "name": "İşaretler ve Sistemler",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "İşaretlerin sınıflandırılması, temel işaretler, sistemlerin özellikleri ve sınıflandırılması, doğrusal zamanla değişmez (DZD) sistemlerin zaman bölgesi analizi, Sürekli-Zamanlı ve Ayrık-Zamanlı Fourier Serileri, Sürekli-Zamanlı ve Ayrık-Zamanlı Fourier Dönüşümleri, doğrusal zamanla değişmez (DZD) sistemlerin frekans bölgesi analizi, örnekleme, z-dönüşümü ve uygulamaları. Classification of signals, basic signals, classification and properties of systems, time domain characterization of Linear Time Invariant (LTI) systems, Continuous-Time and Discrete-Time Fourier Series, Continuous-Time and Discrete-Time Fourier Transforms, frequency domain characterization of Linear Time Invariant (LTI) systems, Sampling. z-transform and its applications.",
+  "outcomes": [
+   "I. Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin sınıflandırılması,",
+   "II. Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin zaman bölgesinde analizi,",
+   "III. Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin frekans bölgesinde analizi,",
+   "IV. Sürekli-zamanlı ve ayrık-zamanlı işaret ve sistemlerin dönüşüm bölgesinde analizi becerilerini kazanır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, işaret ve sistemlerin sınıflandırılması, temel işaretler",
+   "Hafta 2 — Doğrusal Zamanla-Değişmez (DZD) sistemler, impuls yanıtı, konvolüsyon",
+   "Hafta 3 — DZD sistemlerin zaman bölgesi analizi",
+   "Hafta 4 — Diferansiyel ve fark denklemleri",
+   "Hafta 5 — Sürekli-Zamanlı Fourier Serileri",
+   "Hafta 6 — Ayrık-Zamanlı Fourier Serileri",
+   "Hafta 7 — Sürekli-Zamanlı Fourier Dönüşümü",
+   "Hafta 8 — Sürekli-Zamanlı Fourier Dönüşümünün Özellikleri",
+   "Hafta 9 — Ayrık-Zamanlı Fourier Dönüşümü",
+   "Hafta 10 — DZD sistemlerin frekans yanıtı",
+   "Hafta 11 — Örnekleme,",
+   "Hafta 12 — z-dönüşümü",
+   "Hafta 13 — Ters z-dönüşümü",
+   "Hafta 14 — DZD sistemlerin z-dönüşümleri yardımıyla tanımlanması ve analizi"
+  ],
+  "textbooks": [
+   "Alan Oppenheim, Alan Willsky, Signals And Systems, Prentice Hall, 1996."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=252",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 262": {
+  "code": "EHN 262",
+  "name": "Elektonik II",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Kuvvetlendirme ve kazanç kavramı, desiBell kavramı, gerilim kuvvetlendiricisi / akım kuvvetlendiricisi / geçiş iletkenliği devresi / geçiş direnci devresi modelleri, kuvvetlendirmede tranzistorun kavramsal işlevi. Tranzistorlu (BJT, MOSFET) devrelerin DC analizi. BJT ve MOSFET'in küçük işaret eşdeğeri, uç dirençleri. BJT ve MOSFET'li kuvvetlendiricilerin AC analizi: Temel kuvvetlendirici katların kazanç ve giriş/çıkış dirençleri, kaskat (doğrudan/kapasitif bağlı) kuvvetlendiricilerin analizi. Kaskod yapı, Darlington yapısı. Fark kuvvetlendiricisi, fark ve ortak işaret kazancı, ortak işareti bastırma oranı. Akım kaynakları, aktif yüklü devreler. İşlemsel kuvvetlendirici, ideal ve gerçek davranış, örnek bir İK'nin iç yapısı, İK'nin doğrusal ve doğrusal olmayan uygulamaları, idealsizliklerin davranışa etkisi Amplification and the gain concept, amplifier types and circuit models, conceptual function of the transistor in amplification. DC analysis of transistorized (BJT, MOSFET) circuits. Small signal equivalents and terminal resistances of BJT and MOSFET. AC analysis of BJT and MOSFET amplifiers: Gain and input/output resistance of basic amplifier stages, analysis of cascade (direct/capacitively-coupled) amplifiers. Cascode structure, Darlington structure. Differential amplifier, differential and common-mode gains, common mode rejection ratio. Current sources, active-loaded circuits. Operational amplifier (OpAmp), ideal and practical behavior, internal structure of a sample Op-Amp. Linear and non-linear applications of the Op-Amp, effect of non-idealities on the behavior.",
+  "outcomes": [
+   "Farklı türlerdeki kuvvetlendiricileri ayırabilir ve kazançlarını ifade edebilir.",
+   "BJT ve MOSFET’lerin fiziksel temellerinden yola çıkarak küçük işaret modellerini ortaya koyabilir",
+   "BJT ve MOSFET’lerin kutuplamalarını nasıl gerçekleştireceklerini anlar.",
+   "Kazanç, giriş ve çıkış direnci ifadelerini bularak BJT ve MOSFET kuvvetlendiricilerin küçük işaret analizlerini yapmayı öğrenir.",
+   "BJT ve MOSFET’lerin farklı konfigürasyonlarının (kaskod vb.) belirli bir görevi gerçekleştirme (akım kaynağı, akım aynası vs.) amacıyla kullanılabildiklerini kavrar.",
+   "Fark kuvvetlendiricilerin kutuplamasını ve küçük işaret analizi yapma yöntemini öğrenir.",
+   "Fark kuvvetlendiricilerindeki ideal dışı halleri ve sonuçlarını anlar.",
+   "İşlemsel kuvvetlendiricilerin doğrusal ve doğrusal olmayan uygulamalarını kavrar.",
+   "Çok katlı analog kuvvetlendiricileri analiz etmeyi ve tasarlamayı öğrenir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Transistör temelli Kuvvetlendirmenin Temelleri",
+   "Hafta 2 — BJT ve MOSFET’lerin Fiziksel Temelleri",
+   "Hafta 3 — BJT Kuvvetlendiricilerin Kutuplanması",
+   "Hafta 4 — MOSFET Kuvvetlendiricilerin Kutuplanması",
+   "Hafta 5 — BJT Kuvvetlendiricilerin Küçük-İşaret Analizi",
+   "Hafta 6 — BJT Kuvvetlendiricilerin Küçük-İşaret Analizi",
+   "Hafta 7 — MOSFET Kuvvetlendiricilerin Küçük-İşaret Analizi",
+   "Hafta 8 — Kaskot Kuvvetlendiriciler, Akım Aynaları",
+   "Hafta 9 — Akım Kaynaklar, Transistör Çifti Kuvvetlendiriciler",
+   "Hafta 10 — Fark Kuvvetlendiricileri",
+   "Hafta 11 — Aktif Yüklü Devreler",
+   "Hafta 12 — Fark Kuvvetlendiricilerinde Ortak İşaret Bastırma Oranı ve Ofset Gerilimi",
+   "Hafta 13 — İşlemsel Kuvvetlendiricilerin Doğrusal ve Doğrusal Olmayan Uygulamaları",
+   "Hafta 14 — Çok Katlı Kuvvetlendiricilerin Analizi ve Tasarımı"
+  ],
+  "textbooks": [
+   "A.S. Sedra, K.C. Smith, \"Microelectronic Circuits\", 7th edition, Oxford University Press, 2015."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=262",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 311": {
+  "code": "EHN 311",
+  "name": "Elektroniğe Giriş Laboratuarı",
+  "language": "English",
+  "credits": {
+   "theory": 0,
+   "practice": 0,
+   "lab": 2,
+   "local": 1,
+   "ects": 2.5
+  },
+  "description": "Besleme gerilimi düzenleri, BJT ve MOSFET'in DC özelliklerinin çıkarılması, tranzistorlu kuvvetlendiriciler, işlemsel kuvvetlendiricilerin doğrusal uygulamaları, lojik kapılar ve ikili devreler, işleınsel kuvvetlendiricilerin doğrusal olmayan uygulamaları DC Power Supplies, DC characteristics of BJTs and MOSFETs, transistor amplifiers, linear applications of operational amplifiers, logic gates and flip-flops, non-linear applications of operational amplifiers",
+  "outcomes": [
+   "Bir deneyi tasarlayıp yürütebilecek,",
+   "Teori ile pratik arasındaki ilişki ve farklılıkları görebilme becerilerini kazanır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Laboratuvara kayıt ve deney gruplarının oluşturulması",
+   "Hafta 2 — Besleme gerilimi düzenleri-I",
+   "Hafta 3 — Besleme gerilimi düzenleri-II",
+   "Hafta 4 — BJT ve MOSFET'in DC özelliklerinin çıkarılması-I",
+   "Hafta 5 — BJT ve MOSFET'in DC özelliklerinin çıkarılması-II",
+   "Hafta 6 — Tranzistorlu kuvvetlendiriciler-I",
+   "Hafta 7 — Tranzistorlu kuvvetlendiriciler-II",
+   "Hafta 8 — İşlemsel kuvvetlendiricilerin doğrusal uygulamaları-I",
+   "Hafta 9 — İşlemsel kuvvetlendiricilerin doğrusal uygulamaları-II",
+   "Hafta 10 — Lojik kapılar ve ikili devreler-I",
+   "Hafta 11 — Lojik kapılar ve ikili devreler-II",
+   "Hafta 12 — İşlemsel kuvvetlendiricilerin doğrusal olmayan uygulamaları-I",
+   "Hafta 13 — İşlemsel kuvvetlendiricilerin doğrusal olmayan uygulamaları-II",
+   "Hafta 14 — İşlemsel kuvvetlendiricilerin doğrusal olmayan uygulamaları-III"
+  ],
+  "textbooks": [
+   "Elektroniğe Giriş Laboratuvar Deney Föyleri"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=311",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 313": {
+  "code": "EHN 313",
+  "name": "Elektromanyetik Dalgalar",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5.5
+  },
+  "description": "Maxwell denklemleri, Dalga olayı ve zamana bağlı dalga denklemi, Zamanda harmonik (Monokromatik) dalgalar, Fazör(Kompleks) gösterilim, Helmholtz denklemi ve çözümleri Monokromatik düzlemsel dalgalar, Polarizasyon, Düzlemsel dalgalara ilişkin yansıma ve kırılma problemleri, Dalga kılavuzları, Mod ve Kesim Frekansı Kavramları Maxwell’s equations, Wave concept and time dependent wave equation, Time harmonic waves, Phasor (complex) representation, Helmholtz equation and it’s solutions. Monochromatic plane waves. Polarization. Reflection and refraction of plane waves from planar boundaries. Wave-guides, Mode and cut-off frequency concepts.",
+  "outcomes": [
+   "Elektromagnetik dalgaların genel karakterini ve yayılma prensiplerini bilir.",
+   "Elektrik alan, magnetik alan ve Poynting vektörlerini bilir.",
+   "Dalga denkleminin düzlem dalga çözümlerini yapabilir ve yorumlar.",
+   "Düzlem dalgaların yüzeylerden yansıma ve kırılma prensiplerini bilir.",
+   "Elektromagnetik dalgaların değişik ortamlardaki davranışını bilir.",
+   "Polarizasyon kavramını bilir",
+   "Dalga kılavuzlarını analiz eder."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Elektromagnetik teorinin genel amaç ve prensipleri. Maxwell denklemleri. Alan büyüklüklerinin ve kaynak terimlerinin tanıtılması. Sınır koşulları",
+   "Hafta 2 — Zamana bağlı dalga denklemi. Bir boyutlu halde zamana bağlı dalga denkleminin genel çözümü. Ortam parametreleri ve dalganın boşlukta yayılma hızı. Elektromagnetik dalgaların diğer dalgalarla (akustik, elastik vb.) kıyaslanması",
+   "Hafta 3 — Zamanda harmonik (Monokromatik) dalgalar. Genlik, faz, faz hızı, yayılma hızı, açısal frekans, frekans, periyot dalga boyu, dalga sayısı kavramları. Elektromagnetik spektrum ve dalgaların kullanım alanlarına göre sınıflandırılması.",
+   "Hafta 4 — Kompleks (Fazör) Gösterilim. Kompleks halde Maxwell denklemleri. Helmholtz (indirgenmiş dalga) denklemi ve bir boyutlu halde genel çözüm. Düzlem dalga kavramı.",
+   "Hafta 5 — Düzlemsel Dalgalar. Yayılma yönü ve eşfaz yüzeyleri. Kayıplı ortamda düzlem dalga yayılımı Kompleks dalga sayısı.",
+   "Hafta 6 — İki ve üç boyutlu halde düzlem dalga çözümleri. Polarizasyon. Poynting vektörü, Poynting teoremi. Alan vektörleri ve Poynting vektörü arasındaki ilişkiler.",
+   "Hafta 7 — Düzlem dalgaların yüzeylerden yansıma ve kırılması. Dik geliş hali",
+   "Hafta 8 — Düzlem dalgaların yansıma ve kırılması. Eğik geliş hali. TE ve TM polarizasyonlar. Snell Yasası.",
+   "Hafta 9 — Düzlem dalgaların yüzeylerden yansıma ve kırılması. Yansıma kırılma olayının ortam parametrelerine bağlılığının analizi. Tam yansıma. Brewster açısı. Yüzey dalgaları.",
+   "Hafta 10 — Düzlem dalgaların yüzeylerden yansıma ve kırılması. Mükemmel iletken yüzeyden yansıma. Tabakalı ortamlarda dalga yayılımı.",
+   "Hafta 11 — Kılavuzlanmış dalgaların genel prensipleri. Kapalı ortamda Maxwell denklemleri. Paralel plakalı dalga kılavuzu. Mod kavramı.",
+   "Hafta 12 — Silindirik Dalga Kılavuzları. TE, TM ve TEM Modlar. Özdeğer Problemi. Kesim Frekansı. Yayılan ve Sönen Modlar. Dispersif Ortamlar, Grup ve faz hızı.",
+   "Hafta 13 — Dikdörtgen kesitli dalga kılavuzlarının analizi.",
+   "Hafta 14 — Daire kesitli dalga kılavuzlarının analizi. Bessel Fonksiyonları."
+  ],
+  "textbooks": [
+   "Ders Kitabı (Textbook) D. K. Cheng, Field and Wave Electromagnetics, 1991"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=313",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 314": {
+  "code": "EHN 314",
+  "name": "Elektronik Elemanları",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=314",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 316": {
+  "code": "EHN 316",
+  "name": "Electronic Devices",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 5.5
+  },
+  "description": "Temel yarıiletken fiziği ve kuantum mekanik bilgisi; temel yarıiletken fiziği ve kuantum mekanik bilgisi, enerji bantları ve yarıiletkenlerdeki yük taşıyıcılar; yarıiletkenlerde ilave yük taşıyıcıları; PN-eklem kuramı; diyotlarda süreklilik denklemleri; diyotlarda ikincil etkiler; metal-yarıiletken eklem kuramı; BJT çalışma ilkesi – BJT kutuplanması; BJT cihaz modelleri – Ebers Moll modeli; BJTlerde ikincil etkiler; MOS kapasitesi; MOSFET, MESFET, HEMT çalışma ilkesi; MOSFETlerdeki ikincil etkiler, optik cihazların fiziği (LED, laser, fotovoltaik hücreler). Basics of semiconductor physics and quantum mechanics; energy bands and charge carriers in semiconductors; excess carriers in semiconductors; PN-junction theory; continuity equations in diodes; secondary effects in diodes; metal-semiconductor junction theory; BJT operation – Biasing of BJTs; BJT device models – Ebers Moll Model; secondary effects in BJTs; MOS capacitor; MOSFET, MESFET, HEMT operation; secondary effects in MOSFETs; physics of optical devices such as light emitting diode, laser, and photovoltaic (solar) cells.",
+  "outcomes": [
+   "Kuantum mekaniğinin temellerini kavrar",
+   "Yarıiletken fiziğinde yük taşıyıcılarını ve enerji bantlarının önemini anlar.",
+   "Yarıiletken fiziğinde ilave yüklerin nasıl meydana geldiklerini ve etkilerinin neler olduğunu öğrenir.",
+   "Diyotların çalışma ilkesini kavrar.",
+   "Diyotlardaki ikincil etkilerin diyot özelliklerini nasıl değiştirdiğini anlar.",
+   "BJT’lerin fiziksel çalışma ilkesini öğrenir.",
+   "BJT modellerini ve BJT’lerdeki ikincil etkilerin önemini kavrar.",
+   "MOSFET’lerin fiziksel çalışma ilkesini öğrenir.",
+   "MOSFET modellerini ve MOSFET’lerdeki ikincil etkilerin önemini kavrar."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel yarıiletken fiziği ve kuantum mekanik bilgisi",
+   "Hafta 2 — Enerji bantları ve yarıiletkenlerdeki yük taşıyıcılar",
+   "Hafta 3 — Yarıiletkenlerde ilave yük taşıyıcıları",
+   "Hafta 4 — PN-eklem kuramı",
+   "Hafta 5 — Diyotlarda süreklilik denklemleri",
+   "Hafta 6 — Diyotlarda ikincil etkiler",
+   "Hafta 7 — Metal-yarıiletken eklem kuramı",
+   "Hafta 8 — BJT çalışma ilkesi – BJT kutuplanması",
+   "Hafta 9 — BJT cihaz modelleri – Ebers Moll modeli",
+   "Hafta 10 — BJTlerde ikincil etkiler",
+   "Hafta 11 — MOS kapasitesi",
+   "Hafta 12 — MOSFET, MESFET, HEMT çalışma ilkesi",
+   "Hafta 13 — MOSFETlerdeki ikincil etkiler",
+   "Hafta 14 — Optik cihazların fiziği"
+  ],
+  "textbooks": [
+   "Ben G. Streetman, Sanjay Banerjee, “Solid State Electronic Devices”, 7th Int. edition, Prentice Hall."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=316",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 317": {
+  "code": "EHN 317",
+  "name": "Otomatik Kontrol Sistemleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "İşaretler ve sistemler, Geri-besleme, Sistemlerde modelleme ve transfer fonksiyonu, Elektriksel sistemlerin modellenmesi, Mekanik ve elektromekanik sistemlerin modellenmesi, Zaman tanım bölgesi ölçütleri, Kararlılık analizi, Köklerin yer eğrisi yöntemi, Kontrolör yapıları ve PID kontrolörü, Frekans tanım bölgesi analizi Signals and Systems, Feedback, Modeling and transfer function of systems, Modeling of electrical systems, Modeling of mechanical and electromechanical systems, Time domain criterions, Stability analysis, Root-locus method, Controller structures and PID controller, Frequency domain analysis,.",
+  "outcomes": [
+   "1. Geri-besleme kavramının öğrenilmesi",
+   "2. Sistemlerde modelleme ve transfer fonksiyonu kavramının öğrenilmesi",
+   "3. Zaman tanım bölgesi ölçütlerinin irdelenmesi",
+   "4. Kararlılık analizi ve köklerin yer eğrisi yönteminin öğrenilmesi",
+   "5. Kontrolör yapıları ve PID kontrolörü ile ilgili temel bilgilerin kavranması",
+   "6. Frekans tanım bölgesi ile ilgili konularİn tanıtılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İşaretler ve sistemler",
+   "Hafta 2 — Geri-besleme, Sistemlerde modelleme ve transfer fonksiyonu",
+   "Hafta 3 — Elektriksel sistemlerin modellenmesi,",
+   "Hafta 4 — Mekanik ve elektromekanik sistemlerin modellenmesi",
+   "Hafta 5 — Zaman tanım bölgesi ölçütleri",
+   "Hafta 6 — Zaman tanım bölgesi ölçütleri",
+   "Hafta 7 — Kararlılık analizi",
+   "Hafta 8 — Kararlılık analizi",
+   "Hafta 9 — Köklerin yer eğrisi yöntemi",
+   "Hafta 10 — Köklerin yer eğrisi yöntemi",
+   "Hafta 11 — Kontrolör yapıları ve PID kontrolör",
+   "Hafta 12 — Kontrolör yapıları ve PID kontrolör",
+   "Hafta 13 — Kontrolör yapıları ve PID kontrolör",
+   "Hafta 14 — Frekans tanım bölgesi analizi"
+  ],
+  "textbooks": [
+   "N. S. NISE, 2004, CONTROL SYSTEMS ENGINEERING, JOHN WILEY, ISBN:978- 04716758",
+   "GOLNARAGHI F., KUO B.C, 2009, AUTOMATIC CONTROL SYSTEMS, WILEY, ISBN:978-04700489."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=317",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 334": {
+  "code": "EHN 334",
+  "name": "Rastgele İşaretler ve Gürültü",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5.5
+  },
+  "description": "Olasılık tekrarı, momentler, Chebyshev eşitsizliği, vektör rastgele değişkenler, koşullu dağılımlar, rastgele değişkenler üzerine dönüşümler, merkezi limit teoremi, rastgele diziler, rastgele süreç tanımı, özilişki ve çapraz-ilişki fonksiyonları, durağan süreçler, güç spektral yoğunluğu, doğrusal sistemlerin durağan süreçlere yanıtı, Wiener süzgeci, Poisson rastgele süreci, Markov süreci, Martingale süreci. Review of probability, moments, Chebyshev inequalities, vector random variables, conditional distributions, transformations over vector random variables, central-limit theorem, random sequences, definition of random processes, autocorrelation and cross-correlation functions, stationary processes, power spectral density, response of linear systems to stationary inputs, Wiener filter, Poisson process, Markov process, Martingale process.",
+  "outcomes": [
+   "Olasılık ve rastgele değişkenler hakkında ileri düzeyde bilgilere sahip olurlar",
+   "Rastgele işaret kavramını öğrenirler ve gerçek hayat problemlerine uygulamak için stokastik işaret modelini kuramsal açıdan yetkin bir analizini yaparlar,",
+   "Mühendislikte ve özellikle haberleşme ve bilişim konularında belirsizlik ve hata modelleme problemlerinin üstesinden gelebilme yetenekleri kazanırlar."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Olasılık: Temel kavramlar, Koşullu olasılık, Önemli rastgele değişkenler",
+   "Hafta 2 — Beklenti, Merkezi moment, Varyans ve Karakteristik Fonksiyon, Moment üreteç fonksiyonu, Chebyshev eşitsizliği, Çok boyutlu (vektör) rastgele değişkenleri",
+   "Hafta 3 — Koşullu dağılımlar, Rastgele değişkenler üzerinde dönüşümler, Çok boyutlu Gauss rastgele değişkeni, Rastgele değişkenlerinin toplamları",
+   "Hafta 4 — Merkezi limit teoremi, Büyük sayılar kanunu, Ratsgele diziler, Yakınsaklık",
+   "Hafta 5 — Rastgele süreçlerin tanımı, istatistiksel özellikleri",
+   "Hafta 6 — Ortalama, özilişki, çapraz ilişki fonksiyonları, Durağan süreçler",
+   "Hafta 7 — Ergodiklik, Güç spektral yoğunluğu, Durağan rastgele işaretlerin bant genişliği",
+   "Hafta 8 — Beyaz gürültü, Doğrusal sistemlerin durağan rastgele süreçlere yanıtı",
+   "Hafta 9 — Çoklu durağan rastgele işaretler, çapraz güç spektral yoğunluk fonksiyonu",
+   "Hafta 10 — Uyumlu süzgeç, Wiener süzgeci",
+   "Hafta 11 — Gauss rastgele Süreci",
+   "Hafta 12 — Poisson, Rastgele Telgraf, Wiener süreçleri",
+   "Hafta 13 — Markov süreçleri",
+   "Hafta 14 — Kalman süzgeci, Martingale süreçleri"
+  ],
+  "textbooks": [
+   "Alberto Leon-Garcia, Probability, Statistics, and Random Processes for Electrical Engineering, Third Ed., 2009 Pearson Prentice Hall"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=334",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 351": {
+  "code": "EHN 351",
+  "name": "Analog Haberleşme",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5.5
+  },
+  "description": "Haberleşme sistemlerine giriş, modülasyon türleri, iletişimdeki kısıtlamalar. Spektral analiz. Enerji ve güç spektral yoğunluğu. İşaretlerin doğrusal sistemlerden iletimi. Genlik modülasyonu (GM) türleri: Taşıyıcılı genlik modülasyonu, taşıyıcısı bastırılmış çift yan band modülasyonu, tek yan band modülasyonu, artık yan band modülasyonu. Genlik modülatörleri, demodülatörleri. Üstel modülasyon türleri: Frekans ve faz modülasyonu (FM, PM). Frekans modülatörleri, demodülatörleri. Frekans bölmeli çoğullama (FDM). GM radyo yayıncılığı, FM radyo yayıncılığı, süperheterodin alıcılar. Stereo FM. Televizyon yayıncılığı. Introduction to communication systems, modulation techniques, limitations in communication. Spectral analysis. Energy and power spectral density. Transmission of signals over linear systems. The amplitude modulation (AM) techniques: Carrier amplitude modulation, suppressed carrier double sideband modulation, single sideband modulation, vestigial sideband modulation. Amplitude modulators, demodulators. Exponential modulation techniques: Frequency and phase (FM, PM) modulation. Frequency modulators, demodulators. Frequency division multiplexing (FDM). AM radio broadcasting, FM radio broadcasting, superheterodyne receivers. Stereo FM. Television broadcasting",
+  "outcomes": [
+   "Analog haberleşmedeki temel kavram ve kısıtlamaları anlama.",
+   "Fourier serisi ve dönüşümü teknikleri ile işaretlerin spektral özelliklerini analiz etme.",
+   "Doğrusal sistemlerden iletimi anlama ve iletim kanallarındaki gürültü, girişim gibi bozucu etkileri tanımlama.",
+   "Çeşitli genlik modülasyonu (GM, ÇYB, TYB, AYB) türlerini anlama, genlik modülasyonlu işaretlerin zaman ve frekans bölgelerinde analizini yapma, modülatör/demodülatör yapılarını tasarlama.",
+   "Üstel modülasyon (FM, PM) türlerini anlama, üstel modülasyonlu işaretlerin zaman ve frekans bölgelerinde analizini yapma, modülatör/demodülatör yapılarını tasarlama.",
+   "Frekans bölmeli çoğullama, stereo FM ve süperheterodin tekniklerini anlama.",
+   "GM ve/veya FM ile radyo-TV yayıncılığı hakkında temel bilgi sahibi olma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Haberleşmede Genel Kavramlar, Modülasyon, İletişimdeki Kısıtlamalar",
+   "Hafta 2 — Spektral Analiz (Fourier Serileri ve Fourier Dönüşümleri)",
+   "Hafta 3 — Spektral Analiz (Devam), Spektral Yoğunluk II",
+   "Hafta 4 — İşaretlerin Doğrusal Sistemlerden İletimi, Bozulma, Süzgeçler",
+   "Hafta 5 — Genlik Modülasyonu (GM), Çift Yan Band (ÇYB) Modülasyonu",
+   "Hafta 6 — Tek Yan Band (TYB) Modülasyonu",
+   "Hafta 7 — Artık Yan Band (AYB) Modülasyonu, Genlik Modülatörleri",
+   "Hafta 8 — Genlik Modülatörleri (Devam)",
+   "Hafta 9 — Demodülasyon, Süperheterodin Alıcılar, Frekans Bölmeli Çoğullama",
+   "Hafta 10 — Açı Modülasyonu (Frekans Modülasyonu-FM, Faz Modülasyonu-PM)",
+   "Hafta 11 — Frekans Modülasyonu (Devam)",
+   "Hafta 12 — Frekans Modülatörleri",
+   "Hafta 13 — Frekans Demodülasyonu",
+   "Hafta 14 — Stereo FM, Radyo ve TV Yayıncılığı"
+  ],
+  "textbooks": [
+   "Fundamentals of Communication Systems, J.G.Proakis and M.Salehi, Pearson, 2nd Edition, 2014."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=351",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EHN 352": {
+  "code": "EHN 352",
+  "name": "Sayısal Haberleşme",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=352",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

@@ -1,0 +1,337 @@
+{
+ "MKM 503E": {
+  "code": "MKM 503E",
+  "name": "Mechatronic System Components",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ölçme sistemleri ve çalışma ilkeleri: mesafe, hareket, kuvvet, moment, basınç, sıcaklık ve akış ölçülmesi. Algılayıcı teknolojileri: optik, mekanik ve ısıl algılayıcılar. Sayısal kodlayıcılar ve kod çözücüler. algılayıcı-bilgisayar ara-yüzleri. Veri toplama düzenekleri. Analog ve sayısal işaret koşullandırma: performans belirtimi ve eleman uyumlaştırma uygulamaları. Mekanik güç aktarma elemanları: mekanik ve hidrolik kavramalar, dişli düzenekler. Hidrolik ve pnömatik devreler: devre elemanları ve matematiksel modelleri. Sayısal hareketlendiriciler: tek ve ardışıl adım motorları, bunların modellenmesi, kontrol düzenekleri, sınıflandırılması ve seçimi. Sürekli sürümlü hareketlendiriciler: doğru akım motorları, fırçasız doğru akım motorları, asenkron ve senkron motorlar, moment motorları, daimi mıknatıslı motorlar, bunların karakteristikleri, seçimi ve kontrolü. Measurement systems and their principles: distance, motion, force, torque, pressure, temperature and flow measurements. Sensor technologies, optical, mechanical, and thermal sensors. Digital encoders and decoders. Sensor-computer interfaces. Data acquisition systems. Analog and digital signal conditioning: performance specification and component matching applications. Power transmission components. Mechanical and hydraulic systems. Gear mechanisms. Hydraulic and pneumatic circuits: circuit components and their mathematical models. Digital transducers: single and multi-stack stepper motors, their modelling, classification and selection. Continuous-drive transducers: d.c. motors, brushless d.c. motors, induction motors, synchronous motors, torque motors, permanent-magnet motors, their charactersitics, selection and control.",
+  "outcomes": [
+   "Mekatronik sistemlerdeki elemanlar ve onların özellikleri,",
+   "Bu elemanların matematik modelleri ve karakteristikleri,",
+   "Bu elemanlarla birlikte mekatronik sistemin davranışını belirleme.",
+   "Bu elemanları en iyileme mantığını kullanarak seçme ve birleştirme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mekatronik, Giriş.",
+   "Hafta 2 — Fiziksel sistem modelleme, Sistem Benzerlikleri: Mekanik, Elektrik, Akışkan ve Isıl Sistemler",
+   "Hafta 3 — Algılayıcı/dönüştürücü Kısım I: Konum ölçümü: doğrusal, dönel, ivme, kuvvet, tork/moment ölçümü",
+   "Hafta 4 — Algılayıcı/ dönüştürücü Kısım II: Akış, sıcaklık, mesafe, ışık algılama, görüntü temelli ölçümler",
+   "Hafta 5 — Algılayıcı/ dönüştürücü Kısım III: Otomotiv, robotik, havacılık sektörlerinden duyarga modeli örnekleri; konvansiyonel olmayan, yeni duyarga teknolojileri.",
+   "Hafta 6 — Hareketlendiriciler Kısım I: Elektrik, elektromekanik: adım motoru, sürekli sürümlü motorlar",
+   "Hafta 7 — Hareketlendiriciler Kısım II: Mekanik güç aktarma elemanları; dişliler, kayış-kasnak, kam mekanizmaları, kavramalar.",
+   "Hafta 8 — Hareketlendiriciler Kısım III: Hidrolik ve pnömatik devreler ve matematik modelleri.",
+   "Hafta 9 — İşaret işleme ve veri toplama düzenekleri",
+   "Hafta 10 — Sistemler ve Kontrol Kısım I: Sayısal mantık ve donanım",
+   "Hafta 11 — Sistemler ve Kontrol Kısım II: Mikroişlemciler ve PLC",
+   "Hafta 12 — Sistemler ve Kontrol Kısım III: Kontrol sistemleri, performans, kararlılık, tasarım.",
+   "Hafta 13 — Uygulamalar, durum/saha çalışmaları (MEAM Laboratuvarları)",
+   "Hafta 14 — Uygulamalar, durum/saha çalışmaları (MEAM Laboratuvarları)"
+  ],
+  "textbooks": [
+   "De Silva, C.W., 2007: Sensors and Actuators—Control System Instrumentation, Taylor & Francis/CRC Press, Boca Raton, FL, USA.",
+   "De Silva, C.W., 2009: Modeling and Control of Engineering Systems, Taylor & Francis/CRC Press, Boca Raton, FL, USA. Instrumentation, Taylor & Francis/CRC Press, Boca Raton, FL, USA.",
+   "Watton, J., 1989: Fluid Power Systems, Prentice-Hall, New York, USA.",
+   "Shetty, D. and Kolk, R., 1997: Mechatronics System Design, PWS Pub., Boston, USA.",
+   "Shigley, J.E., Mischke, C.R., 1996: Standard Hanbook of Machine Design, MacGraw-Hill, New York, USA."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKM&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MKM 504E": {
+  "code": "MKM 504E",
+  "name": "Advanced Topic in Robotics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Uzaysal hız konsepti ve rijit cisimlerde hız yayılımı, rotasyon matrisi ve Rodriguez formulü, Uzaysal Operatör Cebri yöntemiyle seri manipülatörün kinematik modellemesi, seri manipülatörün kinematik modellemesinin Matlab Simulink 3d animation toolbox kullanarak görselleĢtirilmesi, ters kinematik, tekillik ve yüksek serbestlik dereceli manipülatörler, yardımlaĢan manipülatörlerde kinematik kısıtlar, mobil platform üzerinde yardımlaĢan manipülatörlerin kinematik modellemesi, mobil platform üzerinde yardımlaĢan manipülatörlerin ters kinematik modellemesi, mobil platform üzerinde yardımlaĢan manipülatörlerin kinematik modellemesinin Matlab Simulink 3d animation toolbox kullanarak görselleĢtirilmesi, Uzaysal Operatör Cebri yöntemiyle seri manipülatörün dinamik modellemesi, kütle matrisi faktörizasyon tekniği, yardımlaĢan manipülatörlerde dinamik kısıtlar, mobil platform üzerinde yardımlaĢan manipülatörlerin dinamik modellemesi, mobil platform üzerinde yardımlaĢan manipülatörlerin dinamik modellemesinin Matlab Simulink 3d animation toolbox kullanarak görselleĢtirilmesi Spatial velocity concept and rigid body velocity propogation, rotation matrix and Rodriguez formula, kinematical modeling of a serial manipulator using Spatial Operator Algebra, visualization of kinematical modeling of a serial manipulator by Matlab Simulink 3d animation toolbox, inverse kinematics, singularity and redundancy, kinematical constraints of cooperating manipulators, kinematical modeling of cooperating manipulators on a mobile platform, inverse kinematical modeling of cooperating manipulators on a mobile platform, visualization of kinematical modeling of cooperating manipulators on a mobile platform by Matlab Simulink 3d animation toolbox, dynamical modeling of a serial manipulator using Spatial Operator Algebra, mass matrix factorization technique, dynamical constraints of cooperating manipulators, dynamical modeling of cooperating manipulators on a mobile platform, Matlab Simulink 3d animation for dynamical modeling of cooperating manipulators on a mobile platform",
+  "outcomes": [
+   "Robotik mekanizmaların matematik modellemesinde vektörel yöntemleri",
+   "KarmaĢık robotik mekanizmalarının matematik modelini uzaysal vektör kavramıyla kompakt formda elde etmesi",
+   "Robotik sistemlerin matematik modellerinde oluĢan tekillik ve sıfır dinamik kavramları",
+   "ĠĢlem sayısı serbestlik derecesiyle doğrusal olarak artan dinamik modelleme yöntemi konularında temel bilgileri edinip, çalıĢmalarında kullanabilme becerisine sahip olacaktır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Uzaysal hız konsepti ve rijit cisimlerde hız yayılımı",
+   "Hafta 2 — Rotasyon matrisi ve Rodriguez formulü",
+   "Hafta 3 — Uzaysal Operatör Cebri yöntemiyle seri manipülatörün kinematik modellemesi",
+   "Hafta 4 — Seri manipülatörün kinematik modellemesinin Matlab Simulink 3d animation toolbox kullanarak görselleĢtirilmesi",
+   "Hafta 5 — Ters kinematik, tekillik ve yüksek serbestlik dereceli manipülatörler",
+   "Hafta 6 — YardımlaĢan manipülatörlerde kinematik kısıtlar",
+   "Hafta 7 — Mobil platform üzerinde yardımlaĢan manipülatörlerin kinematik modellemesi",
+   "Hafta 8 — Mobil platform üzerinde yardımlaĢan manipülatörlerin ters kinematik modellemesi",
+   "Hafta 9 — Mobil platform üzerinde yardımlaĢan manipülatörlerin kinematik modellemesinin Matlab Simulink 3d animation toolbox kullanarak görselleĢtirilmesi",
+   "Hafta 10 — Uzaysal Operatör Cebri yöntemiyle seri manipülatörün dinamik modellemesi",
+   "Hafta 11 — Kütle matrisi faktörizasyon tekniği",
+   "Hafta 12 — YardımlaĢan manipülatörlerde dinamik kısıtlar",
+   "Hafta 13 — Mobil platform üzerinde yardımlaĢan manipülatörlerin dinamik modellemesi",
+   "Hafta 14 — Mobil platform üzerinde yardımlaĢan manipülatörlerin dinamik modellemesinin Matlab Simulink 3d animation toolbox kullanarak görselleĢtirilmesi"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKM&dersNo=504",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MKM 505E": {
+  "code": "MKM 505E",
+  "name": "Advanced Cont.Meth.Mechatronic",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu derste aĢağıdaki seçilmiĢ konularla sınırlı olmamak üzere ileri kontrol yöntemleri ve bunların mekatronik sistemlere uygulamaları ele alınmaktadır. Çevrim kazancı. Duyarlılık ve eĢ duyarlılık fonksiyonları. Çevrim kazancı ayarlayarak tasarım. Hareket kontrol sistemleri. Öngörü içeren sistemler. Ġki serbestlik dereceli kontrol yapısı. Model regülatörü. Dayanıklı kontrol, optimal kontrol uyarlamalı kontrole giriĢ ve kıyaslama. Belirsizlik modelleri. Parametre uzayı yaklaĢımı. Stabilite analizi. Lyapunov-tabanlı mekatronik/robotik sistem kontrolü. Parametre uzayında kazanç ayarlamalı kontrolcü tasarımı. Frekans domeni kısıtlarının parametre uzayına aktarılması. Uygulama örnekleri Loop gain. Sensitivity. Complementary sensitivity. Loop shaping design. Motion control systems. Preview control systems. Two degree of freedom control architecture. The disturbance observer. Introduction to adaptive, optimal and robust control and comparison. Uncertainty models. The parameter space approach. Stability analysis. Lyapunov-based control of mechatronic/robotic systems. Gain scheduling controller design in parameter space. Mapping of frequency domain bounds to parameter space. Case studies.",
+  "outcomes": [
+   "Mekatronik kontrol sistemlerinin ileri tasarım yöntemleri,",
+   "Bu sistemlerin modellenmesi ve simülasyonu,",
+   "Bu sistemlerin tasarımındaki değiĢik yaklaĢımlar,",
+   "Ġleri kontrol yöntemlerinĢn konvansiyonel yöntemlere olan üstünlüklerini anlamak konularında temel bilgileri edinip, çalıĢmalarında kullanabilme becerisine sahip olacaktır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İleri Kontrol Konularına Giriş, Çevrim kazancı",
+   "Hafta 2 — Duyarlılık ve eĢ duyarlılık fonksiyonları. Çevrim kazancı ayarlayarak tasarım",
+   "Hafta 3 — Hareket kontrol sistemleri.",
+   "Hafta 4 — Öngörü içeren sistemler",
+   "Hafta 5 — Ġki serbestlik dereceli kontrol yapısı",
+   "Hafta 6 — Model regülatörü, Bozucu gözlemleyicisi",
+   "Hafta 7 — Dayanıklı kontrol, optimal kontrol uyarlamalı kontrole giriĢ ve kıyaslama.",
+   "Hafta 8 — Belirsizlik modelleri",
+   "Hafta 9 — Parametre uzayı yaklaĢımı.",
+   "Hafta 10 — Stabilite analizi.",
+   "Hafta 11 — Lyapunov-tabanlı mekatronik/robotik sistem kontrolü",
+   "Hafta 12 — Parametre uzayında kazanç ayarlamalı kontrolcü tasarımı",
+   "Hafta 13 — Frekans domeni kısıtlarının parametre uzayına aktarılması",
+   "Hafta 14 — Uygulama örnekleri"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKM&dersNo=505",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MKM 509": {
+  "code": "MKM 509",
+  "name": "Analog&Sayısal Elektronik",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yarıiletken yapısı; yarıiletken devre elemanları, özeğrileri; tek ve çok katlı kuvvetlendirici devreler; işlemsel kuvvetlendiriciler ve uygulamaları; enstrümantasyon kuvvetlendiriciler, ortak işareti bastırma oranı, offset gerilimi ve kompanzasyon devreleri; güç kuvvetlendiricileri; geribesleme; sayısal elektronik devre elemanları (kapılar); kombinasyonel lojik devre analizi ve tasarımı; kod çözücüler, çoğullayıcılar; bellek elemanları (flip-floplar); senkron ardışıl lojik devre analizi ve tasarımı. Semiconductor structure; semiconductor components, characteristics; single- and multi-stage amplifiers; operational amplifiers and their applications; instrumentation amplifiers, common mode rejection ratio, offset voltage and compensation circuits; power amplifiers; feedback; logic gates; combinational logic circuit analysis and design; decoders, multiplexers; flip-flops; synchronous sequential logic circuit analysis and design.",
+  "outcomes": [
+   "Yarıiletken yapılar hakkında fikir sahibi olur",
+   "Elektronik devrelerin analiz ve tasarımı için sistematik yaklaşım sergiler",
+   "Kuvvetlendirici devresi tasarlar/analiz eder",
+   "Çeşitli elektronik devreler tasarlar/analiz eder",
+   "Kombinasyonel lojik devre tasarlar/analiz eder",
+   "Senkron ardışıl lojik devre tasarlar/analiz eder"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yarıiletken yapılar, p-n jonksiyonu, diyot",
+   "Hafta 2 — Diyot (devam), tranzistor",
+   "Hafta 3 — MOS, yarıiletken elemanların kutuplanışı",
+   "Hafta 4 — Kutuplama devreleri (devam)",
+   "Hafta 5 — Tranzistorlu kuvvetlendiriciler",
+   "Hafta 6 — Çok katlı kuvvetlendiriciler",
+   "Hafta 7 — İşlemsel kuvvetlendiriciler ve uygulamaları",
+   "Hafta 8 — Enstrümantasyon kuvvetlendiriciler, ortak işareti bastırma oranı",
+   "Hafta 9 — Offset gerilimi ve kompanzasyon devreleri; güç kuvvetlendiricileri",
+   "Hafta 10 — Geribesleme",
+   "Hafta 11 — Lojik kapılar; kombinasyonel lojik devre analizi",
+   "Hafta 12 — Kombinasyonel lojik devre tasarımı; kod çözücüler, çoğullayıcılar",
+   "Hafta 13 — Bellek elemanları (flip-floplar); senkron ardışıl lojik devre analizi",
+   "Hafta 14 — Senkron ardışıl lojik devre tasarımı"
+  ],
+  "textbooks": [
+   "M.S.Türköz, “Elektronik Devreleri”, Birsen Yayınevi, 2006",
+   "M.M.Mano, M.D.Ciletti, “Digital Design”, 5th Edition, Prentice Hall, 2013",
+   "D. Leblebici, “Elektronik Elemanları”, Seç Yayın Dağıtım, 2002",
+   "A. R. Hambley, “Electronics”, Prentice-Hall Inc., 2000",
+   "G. E. Williams, “Analog Electronics: Devices, Circuits and Techniques”, West Pub. Co., 1996"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKM&dersNo=509",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MKM 511": {
+  "code": "MKM 511",
+  "name": "Mekatronik Mühendis.Özel Kon.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders her açıldığında duyurulacaktır. To be announced whenever the course is offered.",
+  "outcomes": [
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — -",
+   "Hafta 2 — -",
+   "Hafta 3 — -",
+   "Hafta 4 — -",
+   "Hafta 5 — -",
+   "Hafta 6 — -",
+   "Hafta 7 — -",
+   "Hafta 8 — -",
+   "Hafta 9 — -",
+   "Hafta 10 — -",
+   "Hafta 11 — -",
+   "Hafta 12 — -",
+   "Hafta 13 — -",
+   "Hafta 14 — -"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKM&dersNo=511",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MKM 596": {
+  "code": "MKM 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKM&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MKM 696": {
+  "code": "MKM 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKM&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

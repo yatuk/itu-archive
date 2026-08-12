@@ -1,0 +1,729 @@
+{
+ "MUH 201E": {
+  "code": "MUH 201E",
+  "name": "Dinamik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Parçacık kinematiği: Doğrusal ve eğrisel hareket (kartezyen bileşenler,normal ve teğetsel bileşenler, silindirik bileşenler), bağıl hareket. Parçacık kinetiği: Newton kanunları, hareket denklemleri (Kartezyen, normal ve teğetsel, silindirik koordinatlarda), iş ve enerji ilkesi, korunumlu kuvvetler ve potansiyel enerji, enerjinin korunumu, lineer impuls ve momentum ilkesi, lineer momentumun korunumu, çarpışma, açısal momentum, değişken kütleli hareket. Katı cismin düzlemsel kinematiği ve kinetiği. Parçacık titreşimi: Serbest, zorlanmış, sönümsüz ve sönümlü titreşimler. Kinematics of particle: Rectilinear and curvilinear motions (rectangular, normal and tangential, cylindrical components), relative motion. Kinetics of particle: Newton’s laws, equations of motion (in rectangular, normal and tangential, cylindrical coordinates), principle of work and energy, conservative forces and potential energy, conservation of energy, principle of linear impulse and momentum, conservation of linear momentum, impact, angular momentum, motion of variable mass body. Planar Kinematics and kinetics of rigid bodies. Particle vibration: Free, forced, damped, undamped vibrations.",
+  "outcomes": [
+   "Matematik bilgisini bilim ve mühendislik problemlerine uygulayabilme",
+   "Parçacık hareketini çözebilmek için uygun eksen takımını seçebilme ve kullanabilme",
+   "Parçacık hareketinin kinematik analizini gerçekleştirme",
+   "Parçacık kinetiğinin temel prensiplerini kavrayabilme (kuvvet, iş ve enerji, impuls, momentum),",
+   "Katı cismin düzlem hareketinin kinematik analizini gerçekleştirebilme",
+   "Katı cisim için dinamik model oluşturabilme ve analiz edebilme",
+   "Titreşim problemlerini modelleyebilme ve çözebilme becerilerini elde eder"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel tanımlar, Parçacığın kinematiği: Doğrusal hareket",
+   "Hafta 2 — Doğrusal hareket, Eğrisel hareket: Dik koordinat takımı",
+   "Hafta 3 — Eğrisel hareket (Teğetsel-normal koordinatlar)",
+   "Hafta 4 — Eğrisel Hareket (Teğetsel-normal k., Silindirik koordinatlar)",
+   "Hafta 5 — Mutlak bağımlı hareket, Ötelenen eksenler ile bağıl hareket",
+   "Hafta 6 — Parçacık kinetiği: Newton yasaları, Dik koordinatlarda hareket denklemleri",
+   "Hafta 7 — Teğetsel-normal ve silindirik koordinatlarda hareket denklemleri",
+   "Hafta 8 — Silindirik koordinatlarda hareket denklemleri, İş ve enerji",
+   "Hafta 9 — İş ve enerji ilkesi, Korunumlu kuvvetler, Enerjinin korunumu",
+   "Hafta 10 — İmpuls ve momentum, Çarpışma",
+   "Hafta 11 — Çarpışma, Katı cisimlerin kinematiği",
+   "Hafta 12 — Katı cisimlerin kinematiği",
+   "Hafta 13 — Katı cisimlerin kinetiği",
+   "Hafta 14 — Parçacıkların titreşimi"
+  ],
+  "textbooks": [
+   "Engineering Mechanics-Dynamics( 12th Edition), R.C. Hibbeler, Pearson Prentice Hall, 2010."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=201",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 211": {
+  "code": "MUH 211",
+  "name": "Ayrık Matematik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Kombinasyonlar, permutasyonlar, binom teoremi ve uygulamaları, sayma teknikleri. Algoritmalar ve analizleri, yineleme algoritmaları. Tamsayıların bilgisayarda temsili, Euclid algoritması, RSA şifreleme algoritması. Yineleme bağıntıları, çözümleme, algoritma analizine uygulama. Çizge kuramına giriş. Boole cebri, kombinatoryal devreler. Sonlu durum makinaları, sonlu durum otomatları ve Turing makinası Combinations, permutations, binomial theorem and applications, counting. Algorithms and their analysis, recursive algorithms. Representations of integers, Euclid algorithm, RSA cryptosystem. Recurrence relations, their solutions, application to analysis of algorithms. A basic introduction to graph theory. Boolean algebra, combinatorial circuits, finite state machines, finite state automata and Turing Machine",
+  "outcomes": [
+   "ispat yöntemlerinin kullanımı",
+   "temel algoritmaları öğrenme ve analiz etme",
+   "Sayma tekniklerini ve uygulamalarını bilme",
+   "yineleme ( fark denklemleri ) bağıntıları oluşturabilme, çözebilme, algoritma analizine uygulayabilme, ve sonlu toplamları değerlendirebilme",
+   "sayılar teorisinin temel kavramlarını, şifremenin temellerini ve Öklid algoritmasını öğrenme",
+   "grafların (çizit) temel özelliklerini öğrenme, Euler ve Hamilton çevrimlerini oluşturabilme ve en kısayol, düzlemsel graf algoritmalarını uygulayabilme",
+   "ağaçlar ve uygulamarını öğrenme",
+   "Boole cebrini öğrenme ve kombinatoryal devre oluşturabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İspat yöntemleri ve tümevarım ile ispat",
+   "Hafta 2 — Fonksiyonların büyümesi ve algoritma analizi",
+   "Hafta 3 — Algoritma analizi",
+   "Hafta 4 — Yineleme bağıntıları ve çözümleri",
+   "Hafta 5 — Geren fonsiyonlar",
+   "Hafta 6 — Üslü geren Fonsiyonlar",
+   "Hafta 7 — Sayılar teorisi",
+   "Hafta 8 — Graflara giriş",
+   "Hafta 9 — Euler ve Hamilton çevrimleri",
+   "Hafta 10 — En kısa yol algoritması, düzlemsel graflar",
+   "Hafta 11 — Ağaçlar, izomorfizm, Huffman, karar ağaçları, örten ağaclar",
+   "Hafta 12 — Boole cebri ve kombinatoriyal devreler",
+   "Hafta 13 — Sonlu durum makinaları ve otomatları",
+   "Hafta 14 — Turing makinası"
+  ],
+  "textbooks": [
+   "Discrete Mathematics, R. Johnsonbaugh VII. Ed. 2009 Pearson"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 211E": {
+  "code": "MUH 211E",
+  "name": "Ayrık Matematik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Kombinasyonlar, permutasyonlar, binom teoremi ve uygulamaları, sayma teknikleri. Algoritmalar ve analizleri, yineleme algoritmaları. Tamsayıların bilgisayarda temsili, Euclid algoritması, RSA şifreleme algoritması. Yineleme bağıntıları, çözümleme, algoritma analizine uygulama. Çizge kuramına giriş. Boole cebri, kombinatoryal devreler. Sonlu durum makinaları, sonlu durum otomatları ve Turing makinası Combinations, permutations, binomial theorem and applications, counting. Algorithms and their analysis, recursive algorithms. Representations of integers, Euclid algorithm, RSA cryptosystem. Recurrence relations, their solutions, application to analysis of algorithms. A basic introduction to graph theory. Boolean algebra, combinatorial circuits, finite state machines, finite state automata and Turing Machine",
+  "outcomes": [
+   "ispat yöntemlerinin kullanımı",
+   "temel algoritmaları öğrenme ve analiz etme",
+   "Sayma tekniklerini ve uygulamalarını bilme",
+   "yineleme ( fark denklemleri ) bağıntıları oluşturabilme, çözebilme, algoritma analizine uygulayabilme, ve sonlu toplamları değerlendirebilme",
+   "sayılar teorisinin temel kavramlarını, şifremenin temellerini ve Öklid algoritmasını öğrenme",
+   "grafların (çizit) temel özelliklerini öğrenme, Euler ve Hamilton çevrimlerini oluşturabilme ve en kısayol, düzlemsel graf algoritmalarını uygulayabilme",
+   "ağaçlar ve uygulamarını öğrenme",
+   "Boole cebrini öğrenme ve kombinatoryal devre oluşturabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İspat yöntemleri ve tümevarım ile ispat",
+   "Hafta 2 — Fonksiyonların büyümesi ve algoritma analizi",
+   "Hafta 3 — Algoritma analizi",
+   "Hafta 4 — Yineleme bağıntıları ve çözümleri",
+   "Hafta 5 — Geren fonsiyonlar",
+   "Hafta 6 — Üslü geren Fonsiyonlar",
+   "Hafta 7 — Sayılar teorisi",
+   "Hafta 8 — Graflara giriş",
+   "Hafta 9 — Euler ve Hamilton çevrimleri",
+   "Hafta 10 — En kısa yol algoritması, düzlemsel graflar",
+   "Hafta 11 — Ağaçlar, izomorfizm, Huffman, karar ağaçları, örten ağaclar",
+   "Hafta 12 — Boole cebri ve kombinatoriyal devreler",
+   "Hafta 13 — Sonlu durum makinaları ve otomatları",
+   "Hafta 14 — Turing makinası"
+  ],
+  "textbooks": [
+   "Discrete Mathematics, R. Johnsonbaugh VII. Ed. 2009 Pearson"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 212": {
+  "code": "MUH 212",
+  "name": "Veri Yapıları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Diziler: tek ve çok boyutlu diziler, dizilerin gösterilimi, temel arama ve sıralama algoritmaları. Listeler: Tek ve çok yönlü bağlı listeler, çevrimsel listeler. Yığıt ve kuyruk yapıları ve bu yapılarda eklem silme işlemleri. Özyineli fonksiyonlar. Ağaçlar: ikili arama ağaçları, dengeli arama ağaçları (AVL), ağaçların taranması, heap ve heapsort. AA ağaçları. Genel ağaçlar, B-Ağaçları. Hash fonksiyonu ve hash tablosu. Grafların gösterilimi ve derinlemesine ve genişlemesine taramaları, topolojik sıralaması Arrays: one and multi-dimensional arrays, basic searching and sorting algorithms. Lists: one and double linked lists, circular linked lists. Stacks and queues, insert and delete operations. Trees: binary search trees, balanced binary tree (AVL and AA trees), tree traversals, heap and heapsort. General trees, B-trees. Hash function and table. Graphs, representation, depth-first search, breadth-first search, topological sorting",
+  "outcomes": [
+   "Dizileri bir veri yapısı olarak kullanabilme ve bu yapı üzerinde temel arama, sıralama algoritmalarını uygulayabilme",
+   "Tek ve çok yönlü ve çevrimsel bağlı listelerin gösterimini öğrenme, yığıt ve kuyruk yapılarında ekleme ve silme işlemlerini yapabilme ve dinamik bellek kullanabilme",
+   "Ağaç yapılarının özelliklerini kullanabilme",
+   "Hash fonksiyonu tanımlama ve hash Tablosu oluşturma",
+   "Çizitleri bilgisayar belleğinde gösterebilme, derinlemsine ve genişlemesine taramaları yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve C programla dilinin özeti",
+   "Hafta 2 — C programla dilinin özeti, diziler",
+   "Hafta 3 — Bağlı listeler",
+   "Hafta 4 — Bağlı listeler",
+   "Hafta 5 — Yığıtlar ve kuyruklar, C dilinde özyineli fonksiyonlar",
+   "Hafta 6 — İkili arama ağaçları ve ağaçların taranması",
+   "Hafta 7 — İkili arama ağaçlarında performans analizi",
+   "Hafta 8 — Dengeli ikili ağaçları, AVL ağacı ve AA ağacı",
+   "Hafta 9 — Dengeli ikili ağaçları, AVL ağacı ve AA ağacı",
+   "Hafta 10 — Heap Ağaçları ve Heap sıralama algoritması",
+   "Hafta 11 — Genel ağaçlar ve B-ağaçları",
+   "Hafta 12 — Hash fonksiyonları ve Hash tabloları",
+   "Hafta 13 — Açık ve kapalı hasing teknikleri, çizitlerin gösterimi",
+   "Hafta 14 — Çizitlerin taranması, topolojik sıralama"
+  ],
+  "textbooks": [
+   "M. A. Weiss, \"Data Structures and Algorithm Analysis\", 2nd Ed., Adisson Wesley, 1997."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=212",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 212E": {
+  "code": "MUH 212E",
+  "name": "Veri Yapıları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Diziler: tek ve çok boyutlu diziler, dizilerin gösterilimi, temel arama ve sıralama algoritmaları. Listeler: Tek ve çok yönlü bağlı listeler, çevrimsel listeler. Yığıt ve kuyruk yapıları ve bu yapılarda eklem silme işlemleri. Özyineli fonksiyonlar. Ağaçlar: ikili arama ağaçları, dengeli arama ağaçları (AVL), ağaçların taranması, heap ve heapsort. AA ağaçları. Genel ağaçlar, B-Ağaçları. Hash fonksiyonu ve hash tablosu. Grafların gösterilimi ve derinlemesine ve genişlemesine taramaları, topolojik sıralaması Arrays: one and multi-dimensional arrays, basic searching and sorting algorithms. Lists: one and double linked lists, circular linked lists. Stacks and queues, insert and delete operations. Trees: binary search trees, balanced binary tree (AVL and AA trees), tree traversals, heap and heapsort. General trees, B-trees. Hash function and table. Graphs, representation, depth-first search, breadth-first search, topological sorting",
+  "outcomes": [
+   "Dizileri bir veri yapısı olarak kullanabilme ve bu yapı üzerinde temel arama, sıralama algoritmalarını uygulayabilme",
+   "Tek ve çok yönlü ve çevrimsel bağlı listelerin gösterimini öğrenme, yığıt ve kuyruk yapılarında ekleme ve silme işlemlerini yapabilme ve dinamik bellek kullanabilme",
+   "Ağaç yapılarının özelliklerini kullanabilme",
+   "Hash fonksiyonu tanımlama ve hash Tablosu oluşturma",
+   "Çizitleri bilgisayar belleğinde gösterebilme, derinlemsine ve genişlemesine taramaları yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve C programla dilinin özeti",
+   "Hafta 2 — C programla dilinin özeti, diziler",
+   "Hafta 3 — Bağlı listeler",
+   "Hafta 4 — Bağlı listeler",
+   "Hafta 5 — Yığıtlar ve kuyruklar, C dilinde özyineli fonksiyonlar",
+   "Hafta 6 — İkili arama ağaçları ve ağaçların taranması",
+   "Hafta 7 — İkili arama ağaçlarında performans analizi",
+   "Hafta 8 — Dengeli ikili ağaçları, AVL ağacı ve AA ağacı",
+   "Hafta 9 — Dengeli ikili ağaçları, AVL ağacı ve AA ağacı",
+   "Hafta 10 — Heap Ağaçları ve Heap sıralama algoritması",
+   "Hafta 11 — Genel ağaçlar ve B-ağaçları",
+   "Hafta 12 — Hash fonksiyonları ve Hash tabloları",
+   "Hafta 13 — Açık ve kapalı hasing teknikleri, çizitlerin gösterimi",
+   "Hafta 14 — Çizitlerin taranması, topolojik sıralama"
+  ],
+  "textbooks": [
+   "M. A. Weiss, \"Data Structures and Algorithm Analysis\", 2nd Ed., Adisson Wesley, 1997."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=212",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 302": {
+  "code": "MUH 302",
+  "name": "Sürekli Ortamlar Mekaniği",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Şekil değiştirme, boy, açı, alan ve hacim değişimleri. değişmezler, asal doğrultular. Kinematik; hız, ivme, maddesel türev, Şekil değiştirme hızı, çevri. Hacim integralinin kinematiği. Gerilme, asal gerilmeler. Uygunluk koşulları. Kütle, momentum, açısal momentum ve enerjinin korunumu, Entropi eşitsizliği. Elastik katının bünye denklemleri, Düzlem elastik dalgalar, sonsuz plağın titreşimi, Akışkanların bünye denklemleri, hidrostatik, Newtonyen viskoz akışkanlar, Sıkışmaz akışkanlar için Navier-Stokes denklemleri, yörünge, akım çizgisi, kararlı, kararsız, laminer ve türbülanslı akım Deformation, length, angle, area and volume changes. invariants, principal axes. Kinematics; velocity, acceleration, material derivative. Deformation rate, vorticity. Kinematics of volume integral. Stress, principal stresses. Compatibility conds. Conservation of mass, momentum, angular momentum and energy. Entropy ineq, Constitutive eq. of elastic solid, plane elastic waves, vibration of infinite plate. Constitutive equations of fluids. Hydrostatic, Newtonian viscous fluids, Navier-Stokes eqs. of incompressible fluids, pathline, streamline, steady, unsteady, laminar and turbulent flow",
+  "outcomes": [
+   "İndis notasyonunda formüller türetebilme",
+   "Vektör ve tansör işlemlerini uygulayabilme",
+   "Bir sürekli ortamın şekil değişimi ve hareket denklemleri anlayıp uygulayabilme",
+   "Kütlenin, momentumun, açısal momentumun ve enerjinin korunumu denklemleri anlama ve uygulayabilme",
+   "Gerilme tansörü ve bir yüzeyin gerilme vektörü kavramlarını anlama",
+   "Termodinamiğin temel ilkelerini uygulayabilme",
+   "Elastik katının bünye denklemlerini elde edebilme, bazı temel problemlerini çözebilme",
+   "Akışkanların bünye denklemlerini elde edebilme, bazı temel problemlerini çözebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İndis notasyonu ve toplama uylaşımı, vektör ve tansör işlemleri",
+   "Hafta 2 — Koordinat sistemleri arasındaki dönüşümler, silindirik koordinatlarda operatörler, sonsuz küçük şekil değiştirme, şekil değiştirme tansörleri",
+   "Hafta 3 — Şekil değiştirme tansörleri, Germe, uzunluk, açı ve hacim değişimleri",
+   "Hafta 4 — Şekil değiştirme değişmezleri, Asal şekil değiştirme ve doğrultular, Bazı şekil değiştirme örnekleri",
+   "Hafta 5 — Sürekli ortamın kinematiği; maddesel ve uzaysal koordinatlar, maddesel türev, hız, ivme, şekil değiştirme hızı ve çevri tansörleri, hacim integralinin kinematiği",
+   "Hafta 6 — Gerilme vektörü, gerilme tansörü, asal gerilmeler, en büyük kayma gerilmesi, Bazı integral teoremler",
+   "Hafta 7 — Uygunluk koşulları, kütlenin, momentumun, momentumun momentinin ve enerjinin korunumu",
+   "Hafta 8 — Piola-Kirchhoff gerilme tansörleri, Maddesel koordinatlarda hareket ve enerji denklemleri, Entropi eşitsizliği",
+   "Hafta 9 — Bünye denklemleri; Elastik katı, lineer elastik katı. Elastik ortamlar için Navier denklemleri",
+   "Hafta 10 — Silindirik koordinatlarda Navier denklemleri, Basit uzama, Bir silindirin burulması",
+   "Hafta 11 — Düzlem elastik dalgalar, Sonsuz plağın titreşimi",
+   "Hafta 12 — Sıkışmaz izotrop katının basit uzaması, Sıkışmaz izotrop katı silindirin burulma ve uzaması",
+   "Hafta 13 — Akışkanların bünye denklemleri; Hidrostatik, Newtonyen viskoz akışkanlar, Sıkışmaz akışkanlar için Navier-Stokes denklemleri",
+   "Hafta 14 — Silindirik koordinatlarda Navier-Stokes denklemleri, yörünge, akım çizgisi, kararlı, kararsız, laminer ve türbülanslı akım, Düzlem Coutte akımı, Düzlem Poiseuille akımı"
+  ],
+  "textbooks": [
+   "Lai M., Krempl E., Ruben D., Introduction to Continuum Mechanics, Elsevier, 2010."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=302",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 302E": {
+  "code": "MUH 302E",
+  "name": "Sürekli Ortamlar Mekaniği",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Şekil değiştirme, boy, açı, alan ve hacim değişimleri. değişmezler, asal doğrultular. Kinematik; hız, ivme, maddesel türev, Şekil değiştirme hızı, çevri. Hacim integralinin kinematiği. Gerilme, asal gerilmeler. Uygunluk koşulları. Kütle, momentum, açısal momentum ve enerjinin korunumu, Entropi eşitsizliği. Elastik katının bünye denklemleri, Düzlem elastik dalgalar, sonsuz plağın titreşimi, Akışkanların bünye denklemleri, hidrostatik, Newtonyen viskoz akışkanlar, Sıkışmaz akışkanlar için Navier-Stokes denklemleri, yörünge, akım çizgisi, kararlı, kararsız, laminer ve türbülanslı akım Deformation, length, angle, area and volume changes. invariants, principal axes. Kinematics; velocity, acceleration, material derivative. Deformation rate, vorticity. Kinematics of volume integral. Stress, principal stresses. Compatibility conds. Conservation of mass, momentum, angular momentum and energy. Entropy ineq, Constitutive eq. of elastic solid, plane elastic waves, vibration of infinite plate. Constitutive equations of fluids. Hydrostatic, Newtonian viscous fluids, Navier-Stokes eqs. of incompressible fluids, pathline, streamline, steady, unsteady, laminar and turbulent flow",
+  "outcomes": [
+   "İndis notasyonunda formüller türetebilme",
+   "Vektör ve tansör işlemlerini uygulayabilme",
+   "Bir sürekli ortamın şekil değişimi ve hareket denklemleri anlayıp uygulayabilme",
+   "Kütlenin, momentumun, açısal momentumun ve enerjinin korunumu denklemleri anlama ve uygulayabilme",
+   "Gerilme tansörü ve bir yüzeyin gerilme vektörü kavramlarını anlama",
+   "Termodinamiğin temel ilkelerini uygulayabilme",
+   "Elastik katının bünye denklemlerini elde edebilme, bazı temel problemlerini çözebilme",
+   "Akışkanların bünye denklemlerini elde edebilme, bazı temel problemlerini çözebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İndis notasyonu ve toplama uylaşımı, vektör ve tansör işlemleri",
+   "Hafta 2 — Koordinat sistemleri arasındaki dönüşümler, silindirik koordinatlarda operatörler, sonsuz küçük şekil değiştirme, şekil değiştirme tansörleri",
+   "Hafta 3 — Şekil değiştirme tansörleri, Germe, uzunluk, açı ve hacim değişimleri",
+   "Hafta 4 — Şekil değiştirme değişmezleri, Asal şekil değiştirme ve doğrultular, Bazı şekil değiştirme örnekleri",
+   "Hafta 5 — Sürekli ortamın kinematiği; maddesel ve uzaysal koordinatlar, maddesel türev, hız, ivme, şekil değiştirme hızı ve çevri tansörleri, hacim integralinin kinematiği",
+   "Hafta 6 — Gerilme vektörü, gerilme tansörü, asal gerilmeler, en büyük kayma gerilmesi, Bazı integral teoremler",
+   "Hafta 7 — Uygunluk koşulları, kütlenin, momentumun, momentumun momentinin ve enerjinin korunumu",
+   "Hafta 8 — Piola-Kirchhoff gerilme tansörleri, Maddesel koordinatlarda hareket ve enerji denklemleri, Entropi eşitsizliği",
+   "Hafta 9 — Bünye denklemleri; Elastik katı, lineer elastik katı. Elastik ortamlar için Navier denklemleri",
+   "Hafta 10 — Silindirik koordinatlarda Navier denklemleri, Basit uzama, Bir silindirin burulması",
+   "Hafta 11 — Düzlem elastik dalgalar, Sonsuz plağın titreşimi",
+   "Hafta 12 — Sıkışmaz izotrop katının basit uzaması, Sıkışmaz izotrop katı silindirin burulma ve uzaması",
+   "Hafta 13 — Akışkanların bünye denklemleri; Hidrostatik, Newtonyen viskoz akışkanlar, Sıkışmaz akışkanlar için Navier-Stokes denklemleri",
+   "Hafta 14 — Silindirik koordinatlarda Navier-Stokes denklemleri, yörünge, akım çizgisi, kararlı, kararsız, laminer ve türbülanslı akım, Düzlem Coutte akımı, Düzlem Poiseuille akımı"
+  ],
+  "textbooks": [
+   "Lai M., Krempl E., Ruben D., Introduction to Continuum Mechanics, Elsevier, 2010."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=302",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 311": {
+  "code": "MUH 311",
+  "name": "Sürekli Ortamlar Mek I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Şekil değiştirme, boy ve açı değişimleri, alan ve hacim değişimleri. Şekil değiştirme değişmezleri, asal doğrultular, uygunluk koşulları. Kinematik; hız, ivme, maddesel türev, yörünge, akım ve çıkış çizgileri. Şekil değiştirme hızı, çevri. Çizgi, yüzey ve hacim integrallerinin kinematiği. Gerilme tansörü, asal gerilmeler. Kütlenin korunumu, momentumun, açısal momentumun ve enerjinin denkliği denklemleri. Deformation, length and angle changes, area and volume changes. Strain invariants, principal axes, compatibility conditions. Kinematics; velocity, acceleration, material derivative, path, stream and streak lines. Deformation rate, vorticity. Kinematics of line, surface and volume integrals. Stress tensor, principal stresses. Equations of conservation of mass and balance of, momentum, angular momentum and energy.",
+  "outcomes": [
+   "İndis notasyonunda verilen ifadele ile çalışarak formüller türetebilme",
+   "Verilen bir koordinat sisteminde tansör ve bileşenlerinin fiziksel anlmını kavrayacak ve tansör işlemlerini başarılı bir şekilde uygulayabilm",
+   "Bir ortamın şekil değişimi ve hareketi ilgili temel tanım ve denklemleri anlayıp uygulayabilm",
+   "Kütlenin, momentumun, açısal momentumun ve enerjinin korunumu denklemleri anlayacak ve uygulayabilm",
+   "Gerilme tansörü bir yüzeyin gerilme vektörü kavramlarını anlama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İndis gösterilimi, vektörler ve tansörler",
+   "Hafta 2 — Vektör ve tansör işlemlerinin indis gösteriliminde ve değişik koordinat takımlarında ifade edilme",
+   "Hafta 3 — Şekil değiştirme, maddesel ve uzaysal koordinatlar, şekildeğiştirme tansörleri",
+   "Hafta 4 — Germe, boy, açı değişimler",
+   "Hafta 5 — Asal şekildeğiştirmeler ve doğrultuları",
+   "Hafta 6 — Şekil değiştirme değişmezleri, alan ve hacim değişimleri",
+   "Hafta 7 — Hareket, maddesel türev, hız ve ivme",
+   "Hafta 8 — Şekil değiştirme hızı ve çevri tansörleri",
+   "Hafta 9 — Yay, alan ve hacim elemanlarının maddesel türevleri",
+   "Hafta 10 — Yay, alan ve hacim elemanlarının maddesel türevleri",
+   "Hafta 11 — Eğri, alan ve hacim integrallerinin maddesel türevleri",
+   "Hafta 12 — Kütlenin, momentumun ve açısal momentumun korunumu ilkeleri",
+   "Hafta 13 — Gerilme, gerilme vektörü , gerilme tansörü, normal ve kayma gerilmeleri",
+   "Hafta 14 — Asal gerilmeler ve doğrultuları"
+  ],
+  "textbooks": [
+   "hubi E. S., Sürekli Ortamlar Mekaniği (Giriş), İTÜ Rektörlüğü, 1993."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=311",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 311E": {
+  "code": "MUH 311E",
+  "name": "Sürekli Ortamlar Mek I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Şekil değiştirme, boy ve açı değişimleri, alan ve hacim değişimleri. Şekil değiştirme değişmezleri, asal doğrultular, uygunluk koşulları. Kinematik; hız, ivme, maddesel türev, yörünge, akım ve çıkış çizgileri. Şekil değiştirme hızı, çevri. Çizgi, yüzey ve hacim integrallerinin kinematiği. Gerilme tansörü, asal gerilmeler. Kütlenin korunumu, momentumun, açısal momentumun ve enerjinin denkliği denklemleri. Deformation, length and angle changes, area and volume changes. Strain invariants, principal axes, compatibility conditions. Kinematics; velocity, acceleration, material derivative, path, stream and streak lines. Deformation rate, vorticity. Kinematics of line, surface and volume integrals. Stress tensor, principal stresses. Equations of conservation of mass and balance of, momentum, angular momentum and energy.",
+  "outcomes": [
+   "İndis notasyonunda verilen ifadele ile çalışarak formüller türetebilme",
+   "Verilen bir koordinat sisteminde tansör ve bileşenlerinin fiziksel anlmını kavrayacak ve tansör işlemlerini başarılı bir şekilde uygulayabilm",
+   "Bir ortamın şekil değişimi ve hareketi ilgili temel tanım ve denklemleri anlayıp uygulayabilm",
+   "Kütlenin, momentumun, açısal momentumun ve enerjinin korunumu denklemleri anlayacak ve uygulayabilm",
+   "Gerilme tansörü bir yüzeyin gerilme vektörü kavramlarını anlama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İndis gösterilimi, vektörler ve tansörler",
+   "Hafta 2 — Vektör ve tansör işlemlerinin indis gösteriliminde ve değişik koordinat takımlarında ifade edilme",
+   "Hafta 3 — Şekil değiştirme, maddesel ve uzaysal koordinatlar, şekildeğiştirme tansörleri",
+   "Hafta 4 — Germe, boy, açı değişimler",
+   "Hafta 5 — Asal şekildeğiştirmeler ve doğrultuları",
+   "Hafta 6 — Şekil değiştirme değişmezleri, alan ve hacim değişimleri",
+   "Hafta 7 — Hareket, maddesel türev, hız ve ivme",
+   "Hafta 8 — Şekil değiştirme hızı ve çevri tansörleri",
+   "Hafta 9 — Yay, alan ve hacim elemanlarının maddesel türevleri",
+   "Hafta 10 — Yay, alan ve hacim elemanlarının maddesel türevleri",
+   "Hafta 11 — Eğri, alan ve hacim integrallerinin maddesel türevleri",
+   "Hafta 12 — Kütlenin, momentumun ve açısal momentumun korunumu ilkeleri",
+   "Hafta 13 — Gerilme, gerilme vektörü , gerilme tansörü, normal ve kayma gerilmeleri",
+   "Hafta 14 — Asal gerilmeler ve doğrultuları"
+  ],
+  "textbooks": [
+   "hubi E. S., Sürekli Ortamlar Mekaniği (Giriş), İTÜ Rektörlüğü, 1993."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=311",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 312": {
+  "code": "MUH 312",
+  "name": "Sürekli Ortamlar Mek II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Objektif vektörler ve tansörler, gerilme akısı, Bünye teorisi, bünye aksiyomları, termodinamik kısıtlar, anizotropi, izotropi, invaryant tansör fonksiyonları. Özel bünye denklemleri, elastik ve termoelastik katılar, termoviskoz akışkanlar, viskoelastisite. Lineerleştirilmiş çeşitli teorilerde örnekler Objective vectors and tensors, stress flux. Constitutive theory, constitutive axioms, thermodynamical constraints, anisotropy, isotropy, invariant tensor functions. Special constitutive equations, elastic and thermoelastic solids. thermoviscous fluids, viscoelasticity. Examples from various linearized theories.",
+  "outcomes": [
+   "Termodinamiğin ilkelerini uygulayabilm",
+   "Bünye denklemi kavramını ve bünye aksiyomlarını anlam",
+   "Bünye aksiyomlarını kullanarak elastik, termoelastik, viskoelastik ve viskoz akışkanların bünye denklemlerini elde etme",
+   "Lineer bünye denklemlerini elde edebilme ve bu denklemleri çeşitli problemlere uygulayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Objektif vektörler ve tansörler ve gerilme akıs",
+   "Hafta 2 — Enerjinin korunumu ilkesi",
+   "Hafta 3 — Entropi, entropi prensibi, Clausius-Duhem Eşitsizliği",
+   "Hafta 4 — Bünye denklemleri, Bünye teorisi aksiyomları",
+   "Hafta 5 — Bünye teorisi aksiyomları, izotrop fonksiyonlar",
+   "Hafta 6 — Hiperelastik malzemeler, izotrop elastik malzemeler",
+   "Hafta 7 — Lineer bünye denklemleri",
+   "Hafta 8 — İç ve dış basınç etkisinde sonsuz silindirik boru",
+   "Hafta 9 — Termoelastisite, lineer bünye denklemleri",
+   "Hafta 10 — Termoelastisite, lineer bünye denklemleri",
+   "Hafta 11 — Yarım uzayda sıcaklık yayılılm",
+   "Hafta 12 — Viskoz akışkanlar, lineer bünye denklemleri",
+   "Hafta 13 — Bir boyutlda sıkışmaz viskoz akışkan hareketi, Poiseulle akımı",
+   "Hafta 14 — Viskoelastisite, lineer ve lineer olmayan Kelvin-Voigt cisimleri"
+  ],
+  "textbooks": [
+   "Şuhubi E. S., Sürekli Ortamlar Mekaniği (Giriş), İTÜ Rektörlüğü, 1993."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 312E": {
+  "code": "MUH 312E",
+  "name": "Sürekli Ortamlar Mek II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Objektif vektörler ve tansörler, gerilme akısı, Bünye teorisi, bünye aksiyomları, termodinamik kısıtlar, anizotropi, izotropi, invaryant tansör fonksiyonları. Özel bünye denklemleri, elastik ve termoelastik katılar, termoviskoz akışkanlar, viskoelastisite. Lineerleştirilmiş çeşitli teorilerde örnekler Objective vectors and tensors, stress flux. Constitutive theory, constitutive axioms, thermodynamical constraints, anisotropy, isotropy, invariant tensor functions. Special constitutive equations, elastic and thermoelastic solids. thermoviscous fluids, viscoelasticity. Examples from various linearized theories.",
+  "outcomes": [
+   "Termodinamiğin ilkelerini uygulayabilm",
+   "Bünye denklemi kavramını ve bünye aksiyomlarını anlam",
+   "Bünye aksiyomlarını kullanarak elastik, termoelastik, viskoelastik ve viskoz akışkanların bünye denklemlerini elde etme",
+   "Lineer bünye denklemlerini elde edebilme ve bu denklemleri çeşitli problemlere uygulayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Objektif vektörler ve tansörler ve gerilme akıs",
+   "Hafta 2 — Enerjinin korunumu ilkesi",
+   "Hafta 3 — Entropi, entropi prensibi, Clausius-Duhem Eşitsizliği",
+   "Hafta 4 — Bünye denklemleri, Bünye teorisi aksiyomları",
+   "Hafta 5 — Bünye teorisi aksiyomları, izotrop fonksiyonlar",
+   "Hafta 6 — Hiperelastik malzemeler, izotrop elastik malzemeler",
+   "Hafta 7 — Lineer bünye denklemleri",
+   "Hafta 8 — İç ve dış basınç etkisinde sonsuz silindirik boru",
+   "Hafta 9 — Termoelastisite, lineer bünye denklemleri",
+   "Hafta 10 — Termoelastisite, lineer bünye denklemleri",
+   "Hafta 11 — Yarım uzayda sıcaklık yayılılm",
+   "Hafta 12 — Viskoz akışkanlar, lineer bünye denklemleri",
+   "Hafta 13 — Bir boyutlda sıkışmaz viskoz akışkan hareketi, Poiseulle akımı",
+   "Hafta 14 — Viskoelastisite, lineer ve lineer olmayan Kelvin-Voigt cisimleri"
+  ],
+  "textbooks": [
+   "Şuhubi E. S., Sürekli Ortamlar Mekaniği (Giriş), İTÜ Rektörlüğü, 1993."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 321": {
+  "code": "MUH 321",
+  "name": "Sayısal Yöntemler",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 5
+  },
+  "description": "Matematiksel ön bilgiler ve hata analizi. Doğrusal olmayan denklemin köklerinin bulunması. Doğrusal denklem sistemlerinin çözümü. Eğri uydurma, ara ve dışkestirim hesabı. Sonlu fark yöntemleri. Özdeğer ve özvektör hesabı. Sayısal türev. Sayısal integrasyon. Adi türevli diferansiyel denklemlerin sayısal çözümü. Adi türevli diferansiyel denklem sistemlerinin sayısal çözümü Mathematical background and error analysis. Root finding problems. Solution of linear systems. Curve fitting, interpolation and extrapolation. Finite difference methods. Eigenvalue and eigenvector calculations. Numerical differentiation. Numerical integration. Numerical solution of ordinary differential equations. Numerical solution of system of ordinary differential equations",
+  "outcomes": [
+   "Sayısal algoritma kurabilme",
+   "Matematik model yapma",
+   "Komplike denklemleri sayısal çözme",
+   "Deneysel verileri matematiksel denklem olarak ifade etme",
+   "Hata analizi ve yakınsama yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Hata Analizi",
+   "Hafta 2 — Doğrusal Denklem Sistemlerinin Çözümü",
+   "Hafta 3 — Doğrusal Denklem Sistemlerinin Çözümü",
+   "Hafta 4 — Özdeğer ve Özvektör Hesabı",
+   "Hafta 5 — Doğrusal Olmayan Denklemlerin Çözümü",
+   "Hafta 6 — Doğrusal Olmayan Denklemlerin Çözümü",
+   "Hafta 7 — Sonlu Farklar",
+   "Hafta 8 — Ara Değer Hesabı",
+   "Hafta 9 — Ara Değer Hesabı",
+   "Hafta 10 — Sayısal Türev",
+   "Hafta 11 — Sayısal İntegral",
+   "Hafta 12 — Sayısal İntegral",
+   "Hafta 13 — Adi Diferansiyel Denklemlerin Sayısal Çözümü",
+   "Hafta 14 — Adi Diferansiyel Denklemlerin Sayısal Çözümü"
+  ],
+  "textbooks": [
+   "Numerical Anaysis, R.L. Burden, J.D. Faires, Brooks/Cole, 2001,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=321",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 321E": {
+  "code": "MUH 321E",
+  "name": "Sayısal Yöntemler",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 5
+  },
+  "description": "Matematiksel ön bilgiler ve hata analizi. Doğrusal olmayan denklemin köklerinin bulunması. Doğrusal denklem sistemlerinin çözümü. Eğri uydurma, ara ve dışkestirim hesabı. Sonlu fark yöntemleri. Özdeğer ve özvektör hesabı. Sayısal türev. Sayısal integrasyon. Adi türevli diferansiyel denklemlerin sayısal çözümü. Adi türevli diferansiyel denklem sistemlerinin sayısal çözümü Mathematical background and error analysis. Root finding problems. Solution of linear systems. Curve fitting, interpolation and extrapolation. Finite difference methods. Eigenvalue and eigenvector calculations. Numerical differentiation. Numerical integration. Numerical solution of ordinary differential equations. Numerical solution of system of ordinary differential equations",
+  "outcomes": [
+   "Sayısal algoritma kurabilme",
+   "Matematik model yapma",
+   "Komplike denklemleri sayısal çözme",
+   "Deneysel verileri matematiksel denklem olarak ifade etme",
+   "Hata analizi ve yakınsama yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Hata Analizi",
+   "Hafta 2 — Doğrusal Denklem Sistemlerinin Çözümü",
+   "Hafta 3 — Doğrusal Denklem Sistemlerinin Çözümü",
+   "Hafta 4 — Özdeğer ve Özvektör Hesabı",
+   "Hafta 5 — Doğrusal Olmayan Denklemlerin Çözümü",
+   "Hafta 6 — Doğrusal Olmayan Denklemlerin Çözümü",
+   "Hafta 7 — Sonlu Farklar",
+   "Hafta 8 — Ara Değer Hesabı",
+   "Hafta 9 — Ara Değer Hesabı",
+   "Hafta 10 — Sayısal Türev",
+   "Hafta 11 — Sayısal İntegral",
+   "Hafta 12 — Sayısal İntegral",
+   "Hafta 13 — Adi Diferansiyel Denklemlerin Sayısal Çözümü",
+   "Hafta 14 — Adi Diferansiyel Denklemlerin Sayısal Çözümü"
+  ],
+  "textbooks": [
+   "Numerical Anaysis, R.L. Burden, J.D. Faires, Brooks/Cole, 2001,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=321",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 323": {
+  "code": "MUH 323",
+  "name": "Asimptotik Yöntemler",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "",
+  "outcomes": [
+   "Asimptotik açılım ve asimtotik serileri tanıma",
+   "Cebrik denklemlerin köklerini asimptotik açılım kullanarak bulabilme",
+   "İntegrallerin Asimptotik açılımlarını belirleme",
+   "Lindstendt Pioncaré Tekniğini, Renormalizasyon metodunu, Katlı ölçekler metodunu, Parametrelerin değişimi ve ortalama alma yöntemini uygulama",
+   "Diferansiyel denklemlerin tekil noktalar yakınında çözümlerini belirleme",
+   "Büyük paremetreli diferansiyel denklemleri ve yavaş değişen katsayılara sahip diferansiyel denklemlerin asimptotik analizini yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mertebe sembolleri, asimptotik seriler, asimptotik açılım",
+   "Hafta 2 — Cebrik denklemler; Kuadratik, kübik ve yüksek mertebe denklemler",
+   "Hafta 3 — İntegrallerin açılmları; Kısmi integrasyon,Laplace yöntemi",
+   "Hafta 4 — Endik iniş yöntemi",
+   "Hafta 5 — Duffing denklemi; Lindstend-Pioncaré Tekniği, Renormalizasyon yöntemi,",
+   "Hafta 6 — Duffing denklemi; Katlı ölçekler yöntemi, Parametrelerin değişimi",
+   "Hafta 7 — Lineer sönümlü salınıcı; Doğrudan açılım, Lindsted-Pioncaré Tekniği",
+   "Hafta 8 — Lineer sönümlü salınıcı; Katlı ölçekler yöntemi, Ortalam alma yöntemi",
+   "Hafta 9 — Matheieu Denklemi; Doğrudan Açılım, Floquet Teorisi",
+   "Hafta 10 — Matheieu Denklemi; Katlı ölçekler yöntemi, Ortalam alma yöntemi",
+   "Hafta 11 — Değişken katsayılı lineer diferansiyel denklemler",
+   "Hafta 12 — Düzgün ve düzgün olmayan tekillikler yakınında çözümler",
+   "Hafta 13 — Sonsuzdaki tekillik, Büyük parametreli diferansiyel denklemler ve WKP yaklaşımı",
+   "Hafta 14 — Özdeğer problemleri, yavaş değişen katsayılı diferansiyel denklemler."
+  ],
+  "textbooks": [
+   "A. Nayfeh, Introduction to Perurbation Technique, Wiley, 1981"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=323",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 334": {
+  "code": "MUH 334",
+  "name": "Bilgi İşlem Algoritmaları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=334",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 335": {
+  "code": "MUH 335",
+  "name": "Bilgi İşlem Algoritmaları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Algoritma Matematiği, Mertebe Hesabı, Algoritmalar ve Veri Yapıları ile Problem Çözme, Algoritma Analizi, Çizge Algoritmaları, Açgözlü Algoritmalar, Böl ve Yönet, Dinamik Programlama, Ağ üzerinde Akım, 'P Eşit midir NP' Problemi Mathematics of Algorithms, Order of Magnitude, Problem Solving with Algorithms and Data Structures, Analysis of Algorithms, Graph Algorithms, Greedy Algorithms, Divide and Conquer, Dynamic Programming, Network Flow, P vs NP Problem",
+  "outcomes": [
+   "Birçok bilgi işlem algoritmasını uyarlayabilme ve analiz edebilme,",
+   "Bir algoritmaya en uygun veri yapısını seçebilme",
+   "Çizit algoritmarı ve geometrik algoritmaları anlama,",
+   "NP-tam problemleri anlama",
+   "Genetik algoritmaları anlama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel kavramlar, algoritma analizinin önemi ve örnekler",
+   "Hafta 2 — Fonksiyonların büyümesi, özyineli bağıntıların çözümü ve üretici fonksiyonlar",
+   "Hafta 3 — Yineleme ( rekürsif), böl ve başar yapısında agoritmalar",
+   "Hafta 4 — Master teoremi ve uygulamaları",
+   "Hafta 5 — Sıralama algoritmaları, quicksort, heapsort, mergesort",
+   "Hafta 6 — Arama algoritmaları, temel yöntemler, dengeli ağaçlar, hash fonksiyonu",
+   "Hafta 7 — Karakter zinciri arama algoritmaları: Rabin-Karp, sonlu otomat, Knuth-Morris-Pratt",
+   "Hafta 8 — Dinamik programlama; En uzun ortak alt dizi bulma, çubuk kesim problemi",
+   "Hafta 9 — Aç gözlü algoritmalar ve aç gözlü seçim: Aktivite seçim problemi, Huffman kodları. Geri izleme algoritmaları: Paralı yeniden yapım problemi.",
+   "Hafta 10 — Hesaplamalı Geometri ; dış-bükey kapatıcı bulma, en yakın nokta çiftini bulma.",
+   "Hafta 11 — Çizit Algoritmaları; minimum örten ağaçlar, en kısa yol algoritmaları",
+   "Hafta 12 — Çizit algoritmaları; maksimum akım problemi.",
+   "Hafta 13 — NP-tam problemler. NP-tam problemler.",
+   "Hafta 14 — Genetik algoritmalara giriş ve uygulamaları."
+  ],
+  "textbooks": [
+   "Introduction to Algorithms, T. Cormen, R. Rivest et.al III. Ed. 2009"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=335",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 335E": {
+  "code": "MUH 335E",
+  "name": "Bilgi İşlem Algoritmaları",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Algoritma Matematiği, Mertebe Hesabı, Algoritmalar ve Veri Yapıları ile Problem Çözme, Algoritma Analizi, Çizge Algoritmaları, Açgözlü Algoritmalar, Böl ve Yönet, Dinamik Programlama, Ağ üzerinde Akım, 'P Eşit midir NP' Problemi Mathematics of Algorithms, Order of Magnitude, Problem Solving with Algorithms and Data Structures, Analysis of Algorithms, Graph Algorithms, Greedy Algorithms, Divide and Conquer, Dynamic Programming, Network Flow, P vs NP Problem",
+  "outcomes": [
+   "Birçok bilgi işlem algoritmasını uyarlayabilme ve analiz edebilme,",
+   "Bir algoritmaya en uygun veri yapısını seçebilme",
+   "Çizit algoritmarı ve geometrik algoritmaları anlama,",
+   "NP-tam problemleri anlama",
+   "Genetik algoritmaları anlama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel kavramlar, algoritma analizinin önemi ve örnekler",
+   "Hafta 2 — Fonksiyonların büyümesi, özyineli bağıntıların çözümü ve üretici fonksiyonlar",
+   "Hafta 3 — Yineleme ( rekürsif), böl ve başar yapısında agoritmalar",
+   "Hafta 4 — Master teoremi ve uygulamaları",
+   "Hafta 5 — Sıralama algoritmaları, quicksort, heapsort, mergesort",
+   "Hafta 6 — Arama algoritmaları, temel yöntemler, dengeli ağaçlar, hash fonksiyonu",
+   "Hafta 7 — Karakter zinciri arama algoritmaları: Rabin-Karp, sonlu otomat, Knuth-Morris-Pratt",
+   "Hafta 8 — Dinamik programlama; En uzun ortak alt dizi bulma, çubuk kesim problemi",
+   "Hafta 9 — Aç gözlü algoritmalar ve aç gözlü seçim: Aktivite seçim problemi, Huffman kodları. Geri izleme algoritmaları: Paralı yeniden yapım problemi.",
+   "Hafta 10 — Hesaplamalı Geometri ; dış-bükey kapatıcı bulma, en yakın nokta çiftini bulma.",
+   "Hafta 11 — Çizit Algoritmaları; minimum örten ağaçlar, en kısa yol algoritmaları",
+   "Hafta 12 — Çizit algoritmaları; maksimum akım problemi.",
+   "Hafta 13 — NP-tam problemler. NP-tam problemler.",
+   "Hafta 14 — Genetik algoritmalara giriş ve uygulamaları."
+  ],
+  "textbooks": [
+   "Introduction to Algorithms, T. Cormen, R. Rivest et.al III. Ed. 2009"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=335",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MUH 453": {
+  "code": "MUH 453",
+  "name": "Optimal Kontrol Teorisi",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Optimal kontrol teorisinin tarihsel gelişimi ve güncel problemleri. Varyasyonlar hesabı hakkında temel bilgiler. Optimal kontrol problemlerinin varyasyonlar hesabı problemlerinden temel farkları. Pontryagin'in maksimum ilkesi, ispati ve örnekler. Doğrusal sistemler için Kuadratik amaç durumunda optimal düzenleyicinin Riccati denklemi ile oluşturulması. Sentez problemi ve optimal kapalı düzenleyiciler. Lagrange ilkesi, ispatı ve örnekler. Bellman' ın dinamik programlama yöntemi. Kontrol edilebilir sistemler, analitik karakteristikleri ve Kalman Teorem. Historical development of the optimal control theory and actual problems. Introduction to the calculus of variation. Main differences between optimal control theory and calculus of variations. Pontryagin's maximum principle, its proof and examples. Formation of the optimal regulator with Riccati's equation for the linear systems with quadratic object functional. The synthesis problem and closed optimal loop. Lagrange principle, its proof and examples. Bellman's dynamical programming method. Controllable systems, their analytic characteristics and Kalman's theorem.",
+  "outcomes": [
+   "Optimal kontrol problemlerini, Pontryagin'in maksimum ilkesi, Bellman'ın dinamik programlama yontemi, Lagrange ilkesi ile çözümleme",
+   "Kuadratik amaca sahip dogrusal sistemlerde, optimal kontrolü Riccati tipi Bir diferansiyel denklemin çözümünden bulabilme,",
+   "Kontrol edilebilir sistemlerin analitik karakteristiklerini belirleyebilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Varyasyonlar Hesabı ve Optimal Kontrol",
+   "Hafta 3 — Pontryagin’in Maksimum İlkesi",
+   "Hafta 4 — Pontryagin’in Maksimum İlkesi",
+   "Hafta 5 — Dinamik Programlama",
+   "Hafta 6 — Dinamik Programlama",
+   "Hafta 7 — Doğrusal Kuadratik Optimal Kontrol Sistemleri",
+   "Hafta 8 — Doğrusal Kuadratik Optimal Kontrol Sistemleri",
+   "Hafta 9 — Kısıtlı Optimal Kontrol Sistemleri",
+   "Hafta 10 — Kısıtlı Optimal Kontrol Sistemleri",
+   "Hafta 11 — Lagrange İlkesi",
+   "Hafta 12 — Lagrange İlkesi",
+   "Hafta 13 — Kontrol Edilebilir Sistemler",
+   "Hafta 14 — Kontrol Edilebilir Sistemler"
+  ],
+  "textbooks": [
+   "D. E. Kirk, Optimal Control Theory, Dover, 2004"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=453",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

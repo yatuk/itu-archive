@@ -1,0 +1,436 @@
+{
+ "ULS 501E": {
+  "code": "ULS 501E",
+  "name": "Mathe.&Sta.Meth.in Tran.Eng.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ulaştırma mühendisliğinde matematik ve istatistik yöntemlere giriş, matris cebrine genel bakış, doğrusal programlama, tamsayı programlama, hedef programlama, karar analizi: analitik hiyerarşi yaklaşımı, istatistiksel veriler ve veri toplama yöntemleri, tanımlayıcı istatistitik, ulaştırma mühendisliğinde yaygın kullanılan dağılımlar, varyans analizi, korelasyon, tahmin modelleri: hareketli ortalama, üstel düzeltmeler yönetmi, doğrusal regresyon, çok değişkenli doğrusal olmayan regresyon,kuyruk kuramına giriş Introduction to mathematical and statistical methods in transportation engineering, general properties of matrices, linear programming, ınteger programming, goal programming, desicion analysis: analytic hierarchy process, statistical data and data collection methods, descriptive statistics, commonly used distributions in transportation engineering, analysis of variance, correlation, estimation models: moving average, exponential smoothing methods, linear regression, multiple regression and nonlinear regression, ıntoruction to queueing theory.",
+  "outcomes": [
+   "Karşılaştığı bir sorunun çözümüne uygun sayısal yöntemini seçebilmesi",
+   "Verilerin özellikleri, sayısal işlemleri",
+   "Kısıtlar altında uygun çözümlerin bulunması",
+   "Değişkenler arasındaki ilişkilerin belirlenmesi",
+   "Tahmin modellerini kurulması ve sonuçlarının alınması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ulaştırma mühendisliğinde matematik ve istatistik yöntemlere giriş",
+   "Hafta 2 — Matris cebrine genel bakış",
+   "Hafta 3 — Doğrusal programlama",
+   "Hafta 4 — Tamsayı programlama",
+   "Hafta 5 — Hedef programlama",
+   "Hafta 6 — İstatistiksel veriler ve veri toplama yöntemleri",
+   "Hafta 7 — Tanımlayıcı istatistitik",
+   "Hafta 8 — Ulaştırma mühendisliğinde yaygın kullanılan dağılımlar",
+   "Hafta 9 — Dağılımlarla ilgili testler",
+   "Hafta 10 — Varyans analizi",
+   "Hafta 11 — Korelasyon",
+   "Hafta 12 — Tahmin modelleri: Hareketli ortalama, üstel düzeltmeler yöntemi, doğrusal regresyon",
+   "Hafta 13 — Tahmin modelleri: Hareketli ortalama, üstel düzeltmeler yöntemi, doğrusal regresyon",
+   "Hafta 14 — Çok değişkenli doğrusal olmayan regresyon"
+  ],
+  "textbooks": [
+   "Washington S. P., Karlaftis M. G., Mannering F. L., Statistical and Econometric Methods for Transportation Data Analysis, Second Edition, CRC Press, Taylor and Francis Group, 2011",
+   "Kreyszig, E., Advanced Engineering Mathematics, John Wiley & Sons; 8th edition edition, 2005",
+   "Spiegelman C., Eun Park S., Rilett L. R., Transportation Statistics and Microsimulation, CRC Press, Taylor and Francis Group, 2010",
+   "Bazaraa M. S., Jarvis J. J., Sherali H. D., Linear Programming and Network Flows, John Wiley & Sons, 2010.",
+   "Cascetta E., Transportation Systems Analysis: Models and Applications, Springer, 2009"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ULS 515": {
+  "code": "ULS 515",
+  "name": "Trafik Tekniği Etüdleri",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Trafik akımının asal değişkenleri ve gözlenmesi – Asal değişkenlerin olasılık-istatistik modelleri – Trafik akımının türetilmiş değişkenleri: Akım Hacmi, Yoğunluk, Hız – Türetilmiş değişkenlerin ölçülmesi - Trafik akımının temel bağıntıları: Hız-Yoğunluk bağıntıları, Akım hacmi-Hız bağıntıları, Akım Hacmi-Yoğunluk bağıntıları – Temel bağıntıların matematik modelleri – Kapasite: Kapasite türleri – Yol geometrik standartları ile kapasite ilişkisi – Trafik hacmi ile yol ilişkisi – Karayolu boyutlandırılması – Trafik akımı için temel çözümlemeler: Şok Dalgası, Küme Yayılımı ve, Şişe boynu Kapasite Çözümlemesi – Hız ve yoğunluk etüdleri– Kaza etüdleri Fundamental variables of Traffic Flow: Flow, Density, Speed – Statistical and probabilistic models of flowvariables – Observation of flow variables – Fundamental relationships (diagrams) of traffic flow: Speed-Density, Flow-Speed, Flow-Densitys – Mathematical models of fundamental diagrams – Highway Capacity -Types of highway capacity – Relationship of road geometric standarts with capacity - Traffic volumeestimation and highway design – Basic analyses for traffic flow: Bottleneck capacity analysis, Shockwaveanalysis, Platoon dispersion analysis, Surveys on Speed, Density and Accidents",
+  "outcomes": [
+   "Bir trafik etüdünü tasarlanması",
+   "Trafik akımının asal ve türetilmiş değişkenlerini gözlem ve gösterim yöntemlerini uygulayabilmesi",
+   "Trafik akımının temel ilişkilerini ve modellerini sorgulayabilmesi",
+   "Trafik hacim bilgileri ile karayolu kapasitesi çözümlemesi yapabilmesi.",
+   "Trafiğin yaratacağı etkilerin belirlenmesi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — -",
+   "Hafta 2 — -",
+   "Hafta 3 — -",
+   "Hafta 4 — -",
+   "Hafta 5 — -",
+   "Hafta 6 — -",
+   "Hafta 7 — -",
+   "Hafta 8 — -",
+   "Hafta 9 — -",
+   "Hafta 10 — -",
+   "Hafta 11 — -",
+   "Hafta 12 — -",
+   "Hafta 13 — -",
+   "Hafta 14 — -"
+  ],
+  "textbooks": [
+   "Kutlu, K., Trafik Tekniği, İTÜ Rektörlüğü Sayı 1508, İstanbul, 1993.",
+   "Daganzo, C.F., Fundamentals of Transportation and Traffic Operations, Pergamon-Elsevier, Oxford U.K., 1997.",
+   "May, A.D., Traffic Flow Fundamentals, Printice-Hall, New York, 1990",
+   "TRB Special report no 209, Highway Capacity Manual, Washington, D.C., Transportation Research Board, National Research Council, 20105",
+   "Mannering, F.L., Kilareski, W.P., Principles of Highway Engineering and Traffic Analysis, Fifth edition, Wiley, New York, 2012"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=515",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ULS 515E": {
+  "code": "ULS 515E",
+  "name": "Trafik Tekniği Etüdleri",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Trafik akımının asal değişkenleri ve gözlenmesi – Asal değişkenlerin olasılık-istatistik modelleri – Trafik akımının türetilmiş değişkenleri: Akım Hacmi, Yoğunluk, Hız – Türetilmiş değişkenlerin ölçülmesi - Trafik akımının temel bağıntıları: Hız-Yoğunluk bağıntıları, Akım hacmi-Hız bağıntıları, Akım Hacmi-Yoğunluk bağıntıları – Temel bağıntıların matematik modelleri – Kapasite: Kapasite türleri – Yol geometrik standartları ile kapasite ilişkisi – Trafik hacmi ile yol ilişkisi – Karayolu boyutlandırılması – Trafik akımı için temel çözümlemeler: Şok Dalgası, Küme Yayılımı ve, Şişe boynu Kapasite Çözümlemesi – Hız ve yoğunluk etüdleri– Kaza etüdleri Fundamental variables of Traffic Flow: Flow, Density, Speed – Statistical and probabilistic models of flowvariables – Observation of flow variables – Fundamental relationships (diagrams) of traffic flow: Speed-Density, Flow-Speed, Flow-Densitys – Mathematical models of fundamental diagrams – Highway Capacity -Types of highway capacity – Relationship of road geometric standarts with capacity - Traffic volumeestimation and highway design – Basic analyses for traffic flow: Bottleneck capacity analysis, Shockwaveanalysis, Platoon dispersion analysis, Surveys on Speed, Density and Accidents",
+  "outcomes": [
+   "Bir trafik etüdünü tasarlanması",
+   "Trafik akımının asal ve türetilmiş değişkenlerini gözlem ve gösterim yöntemlerini uygulayabilmesi",
+   "Trafik akımının temel ilişkilerini ve modellerini sorgulayabilmesi",
+   "Trafik hacim bilgileri ile karayolu kapasitesi çözümlemesi yapabilmesi.",
+   "Trafiğin yaratacağı etkilerin belirlenmesi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — -",
+   "Hafta 2 — -",
+   "Hafta 3 — -",
+   "Hafta 4 — -",
+   "Hafta 5 — -",
+   "Hafta 6 — -",
+   "Hafta 7 — -",
+   "Hafta 8 — -",
+   "Hafta 9 — -",
+   "Hafta 10 — -",
+   "Hafta 11 — -",
+   "Hafta 12 — -",
+   "Hafta 13 — -",
+   "Hafta 14 — -"
+  ],
+  "textbooks": [
+   "Kutlu, K., Trafik Tekniği, İTÜ Rektörlüğü Sayı 1508, İstanbul, 1993.",
+   "Daganzo, C.F., Fundamentals of Transportation and Traffic Operations, Pergamon-Elsevier, Oxford U.K., 1997.",
+   "May, A.D., Traffic Flow Fundamentals, Printice-Hall, New York, 1990",
+   "TRB Special report no 209, Highway Capacity Manual, Washington, D.C., Transportation Research Board, National Research Council, 20105",
+   "Mannering, F.L., Kilareski, W.P., Principles of Highway Engineering and Traffic Analysis, Fifth edition, Wiley, New York, 2012"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=515",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ULS 517E": {
+  "code": "ULS 517E",
+  "name": "Ulaştırma.Yönelik Yöneylem Ar.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Matematik Programlama: Doğrusal, Tamsayı ve Kuvadratik Programlar – Doğrusal Programlama: Simpleks ve Dual Simpleks Yöntemleri, Dualite ve Duyarlık Çözümlemesi, Açılımlar – Tamsayı Programlama: Dal Sınır, Kesme ve Ulaştırma Algoritmaları – Doğrusal Olmayan Programlama: Tek Değşikenli Eniyileme, Çok Değişkenli Kısıtlı ve Kısıtsız Eniyileme – Dinamik Programlama – Ağ Çözümlemesi: Enaz Yayılım, En kısa Yol ve Enbüyük Akış Problemleri – Proje Yönetimi: PERT/CPM – Envanter Modelleri – Kestirim Modeleri: Regresyon Yöntemleri, Düzleme Yöntemleri – Oyun Kuramı – Karar Kuramı – Markov Süreçleri – Kuyruklanma Sistemleri: M/M/1, M/M/s, M/M/1/K ve M/M/s/K Sistemleri Mathematical Programming: Linear, Integer and Quadratic Programs - Linear Programming: Simplex and Dual Simplex Methods, Duality and Sensitivity Analysis, Extensions of Linear Programming - Integer Programming: Branch-and-Bound Algorithm, Cut Algorithms, The Transportation Algorithm, Scheduling Models - Non-Linear Programming: Single-Variable Optimization, Multivariable Optimization with & without Constraints - Dynamic Programming - Network Analysis: Minimum-span, Shortest-Route and Maximal-Flow Problems - Project Planning Using PERT/CPM - Inventory Models – Forecasting: Regression Methods, Smoothing Methods - Game Theory - Decision Theory - Markov Processes - Queuing Systems: M/M/1 Systems, M/M/s Systems, M/M/1/K Systems, M/M/s/K Systems",
+  "outcomes": [
+   "Karşılaştığı bir sorunun çözümüne uygun yöneylem araştırma yöntemini seçebilmesi",
+   "Verilen bir doğrusal programlama problemini uygun bir yöntem ile çözebilmesi",
+   "Seçeceği bir yöntemle enkısa yol problemini çözebilmesi",
+   "Seçeceği bir yöntemle enbüyük akış problemini çözebilmesi",
+   "Kuyruklanma kuramından faydalarak bir kuyruk problemini çözebilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Matematik Programlama: Doğrusal, Tamsayı ve Kuvadratik Programlar",
+   "Hafta 2 — Doğrusal Programlama: Simpleks ve Dual Simpleks Yöntemleri, Dualite ve Duyarlık Çözümlemesi, Açılımlar",
+   "Hafta 3 — Tamsayı Programlama: Dal Sınır, Kesme ve Ulaştırma Algoritmaları",
+   "Hafta 4 — Doğrusal Olmayan Programlama: Tek Değişkenli Eniyileme, Çok Değişkenli Kısıtlı ve Kısıtsız Eniyileme",
+   "Hafta 5 — Dinamik Programlama: Çok aşamalı karar süreçleri, rastlantısal çok aşamalı karar süreçleri",
+   "Hafta 6 — Ağ Çözümlemesi: Enaz Yayılım Problemleri",
+   "Hafta 7 — Ağ Çözümlemesi: En kısa Yol ve Enbüyük Akış Problemleri",
+   "Hafta 8 — Proje Yönetimi: PERT/CPM, Envanter Modelleri",
+   "Hafta 9 — Kestirim Modeleri: Regresyon Yöntemleri, Düzleme Yöntemleri, Zaman-serisi analizleri için multiplikatif modeller",
+   "Hafta 10 — Oyun Kuramı",
+   "Hafta 11 — Karar Kuramı: Karar süreçleri, Karar ağaçları",
+   "Hafta 12 — Markov Süreçleri: Sonlu Markov Zincirleri, Markovyan Doğum-Ölüm Süreçleri",
+   "Hafta 13 — Kuyruklanma Sistemleri: Kuyruk özellikleri, Geliş yapıları, Hizmet yapıları, Sistem kapasitesi, Kuyruk düzenleri",
+   "Hafta 14 — Kuyruklanma Sistemleri: M/M/1, M/M/s, M/M/1/K ve M/M/s/K Sistemleri"
+  ],
+  "textbooks": [
+   "Hillier, F.S., Gerald, J.L., Introduction to Operations Research, McGraw-Hill Science/Engineering / Math; 8 edition, 2005",
+   "Barnhart, C., Laporte, G., Handbooks in Operations Research and Management Science: Transportation (Handbooks in Operations Research & Management Science), Elsevier, 2005.",
+   "Belenky, A.S., Operations Research in Transportation Systems: Ideas and Schemes of Optimization Methods for Strategic Planning and Operations Management (Applied Optimization), Kluwer Academic Publishers, 1998",
+   "Larson, R.C., Odoni, A.R., Urban Operations Research, Dynamic Ideas; 2nd edition, 2007",
+   "Bellman, R., Dynamic Programming, Dover Publications; Dover Ed edition, 2003"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=517",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ULS 520E": {
+  "code": "ULS 520E",
+  "name": "Trafik Yönetimi",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Karayolu Kavşaklarında Güvenlik ve Kapasite - Karayolu Kavşaklarının Tasarımı - Eşdüzey Kavşak Tasarımı, Adalarla Trafiğin Yönlendirilmesi ve Denetimsiz Eşdüzey Kavşak Tasarımı, Yuvarlakada Kavşak Tasarımı, Sinyalize Eşdüzey Kavşak Tasarımı: İngiliz Yöntemi, Avusturalya Yöntemi - Kavşaklarda Talep Yönetimi - Sinyal eniyileme yazılımları - Katlı Kavşak Tasarımı - Karayolu Ağ Yönetimi, Kavşak Çiftlerinin Eşgüdümü, Anayoldaki Kavşak Dizisinin Eşgüdümü – Otoyol trafik yönetim ve denetim yöntemleri: Katılım yönetim izlemleri, Katılım denetimi yöntemleri - Otopark Yönetimi - Trafik Yönetiminde Organizasyon – Kuyruklanma Kuramı: Belirlenimci Kuyruk Çözümlemesi, Rassal Kuyruk Çözümlemesi Highway Intersections: Safety and Capacity Issues - Intersection Design - At-grade Junctions - Uncontroled Intersections, Rounabouts - Signalized Intersections: The English method, The Australian Method – Demand Management at Junctions – Overview to Signal Optimization Software – Multilevel Junction Design - Highway Network Management, Coordination of Intersections –- Freeway Traffic Management and Control Methods: Ramp Management Strategies, Ramp Control Methods - Autopark Management - Organization in Traffic Management – Queuing Theory: Deterministic Queuing Analysis – Stochastic Queuing Analysis",
+  "outcomes": [
+   "Trafik akımı kavşak tipi arasındaki ilişkileri bilmesi.",
+   "Yol geometrik özellikleri ile trafik akım özelikleri verilmiş bir pafta üzerinde kavşak tasarımı yapabilmesi.",
+   "Geometrisi ve akım özellikleri veirlen bir kavşakta sinyalize devre hesabı yaparak uygun devre uzunluğunu belirleyebilmesi.",
+   "Karayolu ağ yönetimi denetimi yöntemlerini uygulayabilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Trafik akımı değişkenleri",
+   "Hafta 2 — Karayolu kavşak tipi seçimi, çakışma noktaları",
+   "Hafta 3 — Üçgen görüş uzunlukları",
+   "Hafta 4 — Karayolu kavşaklarının tasarımı: Eşdüzey kavşak tasarımı, Adalarla trafiğin yönlendirilmesi ve Denetimsiz eşdüzey kavşak tasarımı",
+   "Hafta 5 — Karayolu kavşaklarının tasarımı: Eşdüzey kavşak tasarımı, Adalarla trafiğin yönlendirilmesi ve Denetimsiz eşdüzey kavşak tasarımı",
+   "Hafta 6 — Yuvarlakada kavşak tasarımı",
+   "Hafta 7 — Sinyalizasyon tasarımı: Doygunluk akım değeri, Faz düzenleme, devre hesabı, devre düzenleme",
+   "Hafta 8 — İngiliz Yöntemi devre hesabı",
+   "Hafta 9 — Sinyalize kavşaklarda gecikmeler. Devre eniyileme yazılımları",
+   "Hafta 10 — Kuyruk kuramı",
+   "Hafta 11 — Amerikan yöntemi ile devre hesabı",
+   "Hafta 12 — Avusturalya yöntemi ile devre hesabı",
+   "Hafta 13 — Katlı Kavşak Tasarımı",
+   "Hafta 14 — Karayolu ağ yönetimi: Kavşak çiftlerinin eşgüdümü, Anayoldaki kavşak dizisinin eşgüdümü, Katılım Denetimi"
+  ],
+  "textbooks": [
+   "AASHTO, A Policy on Geometric Design of Highways and Streets, AASHTO, 6th ed., 2010.",
+   "Neuman, T.R., Intersection Channelization Design Guide, TRB, Report 279, Washington DC, 1985",
+   "Akçelik, R., Traffic Signals: Capacity and Timing Analysis, Australian Road Research Board, Research Report No 123, Vermont South, 1993",
+   "TRB Special report no 209, Highway Capacity Manual, Washington, D.C., Transportation Research Board, National Research Council, 2010",
+   "US DOT FHWA, Manual on Uniform Traffic Control Devices: Standards and Guides for Traffic Controls for Street and Highway Construction, Maintenance, Utility, and Incident Management Operations, US Department of Transportation, Federal Highway Administration, US Gov. Printing; revised edition, 1994"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=520",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ULS 596": {
+  "code": "ULS 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ULS 605E": {
+  "code": "ULS 605E",
+  "name": "Pavement Management System",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Üstyapı Yönetim Sistemi; -ÜYS Veri Gereksinimleri -Üstyapı Bozulmalarının Değerlendirmesi, Üstyapı Güvenliğinin Değerlendirmesi- Veri Tabanı Yönetimi, Üstyapı Ağının Mevcut Durumu- Mevcut ve Gelecekteki Gereksinimlerin Saptanması, Öncelikli İyileştirme ve Bakım Programları- Üstyapı Bozulması Tahmin Modelleri- Gereksinimlerin Saptanması, İyileştirme ve Bakım Stratejileri- Öncelikli İyileştirme ve Bakım Programları- Proje Düzeyinde Tasarım - ÜYS’nde Değişkenlik, Güvenilirlik ve Risk, Alternatif Tasarım Stratejisi Üretme- İyileştirme Tasarımı, Optimum Tasarım Stratejisi Seçimi- ÜYS’nin Uygulanması, Yapım-Bakım, Araştırma Yönetimi- Uygulamadaki Sistemler The Pavement Management System; -PMS Data Needs-Evaluation of Pavement Structure Capacity-Evaluation of Pavement Distress, Evaluation of Pavement Safety-Data Base Management, Present Status of Pavement Network-Determining Present and Future Needs, Priority Programming of Rehabilitation and Maintenance-Prediction Models for Pavement Deterioration-Determining Needs, Rehabilitation and Maintenance Strategies-Priority Programming of Rehabilitation and Maintenance- Project Level Design Variability, Reliability and Risk in PMS, Generating Alternative Design Strategies-Rehabilitation Design Procedure, Selection of an Optimal Design Strategy-Implementing a PMS, Construction-Maintenance, Research Management- Working Systems.",
+  "outcomes": [
+   "Karayolu üstyapılarındaki bozulma ölçütlerini öğrenmek",
+   "Üstyapı bozulmalarını modelleyebilmeyi öğrenmek",
+   "Üstyapı bakım önceliklerini belirlemeyi kavramak",
+   "Üstyapı bakım stratejilerini belirlemeyi kavramak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Üstyapı Yönetim Sistemine Giriş, Sistem Yapısı ve Sistem Yaklaşımı",
+   "Hafta 2 — Üstyapı Yönetiminde Veri: Üstyapı Performans verisi, Yapısal Dayanım Verileri, Bozulmaları ile ilgili veriler, Karayolu güvenliği ile ilgili veriler",
+   "Hafta 3 — Veri Yönetimi: Yol Ağının Mevcut Durumunun Değerlendirilmesi",
+   "Hafta 4 — Mevcut ve Gelecekteki Durum Için Ihtiyaçların Tanımlanması, Bakım-Onarım Için Önceliklerin Belirlenmesi",
+   "Hafta 5 — Üstyapı Bozulmalarının Modellenmesi",
+   "Hafta 6 — Üstyapı Bakım-Onarım Stratejilerinin Belirlenmesi",
+   "Hafta 7 — Bakım-Onarım Önceliklerinin Belirlenmesi",
+   "Hafta 8 — Uygulama Seviyesi: Tasarım Verileri",
+   "Hafta 9 — Güvenlik, Güvenirlilik ve Risk",
+   "Hafta 10 — Alternatif Tasarım Stratejileri",
+   "Hafta 11 — Bakım-Onarım Tasarım Stratejileri ve En Uygun Tasarım Seçimi",
+   "Hafta 12 — Üstyapı Yönetim Sistemi Uygulamaları",
+   "Hafta 13 — Yapım, Bakım-Onarım Araştırma Yöntemleri",
+   "Hafta 14 — Gelecekteki Araştırmalar ve ÜYS nin Türkiye için Değerlendirilmesi"
+  ],
+  "textbooks": [
+   "Pavement Management System: strategic review. Department for Transport (DfT) Research Database, 2006",
+   "Haas, R., Hudson, W.R., Zaniewski, J., Modern Pavement Management, Krieger Publishing Company, USA, 1994",
+   "Pavement Management System, Nebraska Depaetment of Roads, 2005",
+   "Shahin, M.Y., Pavement Management for Airports, Roads and Parking Lots, Kluwer, London, 1994",
+   "Road Maintenance Management Systems in Developing Countries, OECD, Road Transport Research Report, 1995"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=605",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ULS 607E": {
+  "code": "ULS 607E",
+  "name": "Intelligent Transport.Syst.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Akıllı Ulaştırma Sistemlerinin Bileşenleri ve Mimarisi – Çok Türlü Yolculuk Yönetimi ve Bölgesel Yolcu Bilgi Sistemleri – Trafik Yönetim Sistemleri – Kaza-Arıza Yönetimi ve Acil Durum Yönetim Sistemleri – Gelişmiş Yolcu Bilgi Sistemleri – Elektronik Ödeme Sistemleri ve Tıkanıklık Ücretlendirme – Taşıt Temelli Güvenlik ve Denetim Sistemleri – Gelişmiş Toplu Taşıma Sistemleri – Ticari Araç Denetim Sistemleri – Hava Koşulları Bilgi Sistemleri – Navigasyon Sistemleri – Dinamik Güzergah Yönlendirme – Otoyol Trafik Denetimi – Dinamik Ağ Modellemesinde Akıllı Ulaştırma Sistemleri Components and Architecture of Intelligent Transportation Systems – Multimodal Travel Management Systems – Traffic Management Systems – Incident Management and Emergency Management Systems – Advanced Travel Management and Traveller Information Systems – Electronic Payment Systems and Congestion Pricing – Vehicle-based Safety and Control Systems – Advanced Public Transport Systems – Commercial Vehicle Operations – Weather Information Systems – Navigation Systems – Dynamic Route Guidance – Freeway Traffic Control - Intelligent Transportation Systems in Dynamic Network Modelling",
+  "outcomes": [
+   "Farklı süreçleri içeren bir akıllı system uygulamasının temel akış şemasını belirlemesi",
+   "İlgilenilen soruna özel gelişmiş veri toplama elemanları ile bir trafik etüdü planlaması",
+   "Trafikle ilgili sorunla karşılaştığında; akım özelliklerine uygun, gerçek-zamanlı çözüm izlem ve/veya yöntemini önerebilmesi",
+   "Temel akıllı ulaştırma sistem uygulamalarıyla ilgili bilimsel bir makale hazırlayabilmesi ve böyle bir makaleyi irdeleyebilmesi beklenmektedir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Akıllı Ulaştırma Sistemlerine Genel Bakış, Birleşik Devletler Akıllı Ulaştırma Sistemleri Programı",
+   "Hafta 2 — Akıllı Ulaştırma Sistemlerinin Bileşenleri ve Mimarisi, Çok Türlü Yolculuk Yönetimi ve Bölgesel Yolcu Bilgi Sistemleri",
+   "Hafta 3 — Trafik Yönetimi: Geleneksel ve İleri Sistemler",
+   "Hafta 4 — Trafik Yönetim Sistemleri: Altyapı, Gözlem, Şerit Yönetimi, Bilgi Yayımı",
+   "Hafta 5 — Trafik Yönetim Sistemleri: Arter Yönetim Sistemleri, Uyarlamalı Sinyal Denetim Sistemleri, Eşgüdümlü Sinyal Denetim Sistemleri",
+   "Hafta 6 — Kaza-Arıza Yönetimi: Gözlem ve Algılama, Otomatik Taşıt Konum. Gelişmiş Yolcu Bilgi Sistemleri. Acil Durum Yönetim Sistemleri",
+   "Hafta 7 — Elektronik Ödeme Sistemleri: Gişe Sistemleri, Toplu Taşıma Ödeme Sistemleri, Otopark Ödeme Sistemleri, Çok Kullanımlı Ödeme",
+   "Hafta 8 — Tıkanıklık Ücretlendirme Sistemleri: Değişken Ücretli Şeritler, Değişken Ücretli Gişeler, Kordon Ücretlendirme, Alan Ücretlendirme",
+   "Hafta 9 — Taşıt Temelli Güvenlik ve Denetim Sistemleri, Gelişmiş Toplu Taşıma Sistemleri",
+   "Hafta 10 — Ticari Araç Denetim Sistemleri – Hava Koşulları Bilgi Sistemleri, Navigasyon Sistemleri, Dinamik Güzergah Yönlendirme",
+   "Hafta 11 — Otoyol Trafik Yönetimi: Katılım Denetimi İzlemleri",
+   "Hafta 12 — Otoyol Trafik Yönetimi: Katılım Denetimi Yöntemleri",
+   "Hafta 13 — Otoyol Trafik Denetimi: Katılım Denetimi Yöntemleri, Değişken Hız Denetimi",
+   "Hafta 14 — Dinamik Ağ Modellemesinde Akıllı Ulaştırma Sistemleri"
+  ],
+  "textbooks": [
+   "Sussman, J.M., Perspectives on Intelligent Transportation Systems (ITS), Springer, 2010",
+   "McQueen, J., McQueen, B., Intelligent Transportation Systems Architectures (ITS/GPS), Artech House, 1999",
+   "Bekiaris, E., Nakanishi, Y.J., (eds) Economic Impacts of Intelligent Transportation Systems: Innovations and Case Studies, JAI Press, 2004",
+   "Papageorgiou, M., Applications of Automatic Control Concepts to Traffic Flow Modeling and Control: Lecture Notes in Control and Information Sciences, Springer Verlag, 1983",
+   "Ran, B., Boyce, D., Modeling Dynamic Transportation Networks: An Intelligent Transportation System Oriented Approach, Springer-Verlag Berlin and Heidelberg GmbH & Co. K, 1996"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=607",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ULS 696": {
+  "code": "ULS 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

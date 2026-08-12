@@ -1,0 +1,202 @@
+{
+ "SAV 302E": {
+  "code": "SAV 302E",
+  "name": "Ayrık Matematik",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "-Bu derste, ayrık matematiğin temel konuları olan mantık, kümeler, fonksiyonlar, kombinatorik, grafik kuramı ve cebirsel yapılar ele alınır. Konular savunma teknolojileriyle ilişkili sistem modellemeleri ve optimizasyon problemleri bağlamında işlenir. Ders, öğrencilerin güvenli ve otonom sistemlerde kullanılan ayrık matematiksel yöntemleri kavramasını hedefler. -This course covers fundamental topics of discrete mathematics including logic, sets, functions, combinatorics, graph theory, and algebraic structures. Topics are presented in the context of modeling and optimization problems related to defense technologies. The course aims to equip students with an understanding of discrete methods used in secure and autonomous systems.",
+  "outcomes": [
+   "Mantık, ispat teknikleri ve niceleyicileri kullanarak güvenli sistemlerin temelini oluşturan mantıksal ifadeleri analiz edebilir ve kurabilir.",
+   "Ayrık yapıları kullanarak savunma sistemlerine yönelik problemleri modelleyebilir ve çözümleyebilir",
+   "Ağ güvenliği, haberleşme ve görev planlama gibi alanlarda grafik ve ağaç yapılarını uygulayabilir.",
+   "Sistem optimizasyonuna yönelik problemleri cebirsel yapılar ve ayrık matematiksel yöntemlerle değerlendirebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mantık ve Önermeler",
+   "Hafta 2 — Küme Teorisi",
+   "Hafta 3 — Binary İlişkiler",
+   "Hafta 4 — Fonksiyonlar",
+   "Hafta 5 — Üreten Fonksiyon ve Yinelemeli İlişki",
+   "Hafta 6 — Kombinatorik (Sayma Teknikleri)",
+   "Hafta 7 — Grup Teorisi",
+   "Hafta 8 — Kodlama Teorisi ve Grup Kodları",
+   "Hafta 9 — Diskret Olasılık",
+   "Hafta 10 — Sayı Teorisine Giriş",
+   "Hafta 11 — Graf Teorisine Giriş",
+   "Hafta 12 — Grafik Kuramı ve Uygulamaları",
+   "Hafta 13 — Ağaçlar ve Uygulamaları",
+   "Hafta 14 — Bulanık Küme Teorisine Giriş"
+  ],
+  "textbooks": [
+   "Discrete Mathematics: Essentials and Applications, Ali Grami, Academic Press (Elsevier), 2023"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=302",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAV 303E": {
+  "code": "SAV 303E",
+  "name": "Hava Araçları Güç Sistemine Giriş",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "-Bu derste, hava araçlarında kullanılan güç sistemlerine ilişkin temel termodinamik kavramlar, çevrim analizleri (Brayton, Rankine, Otto, Diesel) ve jet motorları incelenir. Son haftalarda ise elektrikli motorların yapısı, çalışma prensipleri ve hava araçlarındaki uygulamalarına odaklanılır -) Bu derste, hava araçlarında kullanılan güç sistemlerine ilişkin temel termodinamik kavramlar, çevrim analizleri (Brayton, Rankine, Otto, Diesel) ve jet motorları incelenir. Son haftalarda ise elektrikli motorların yapısı, çalışma prensipleri ve hava araçlarındaki uygulamalarına odaklanılır. In this course, fundamental thermodynamic concepts, cycle analysis (Brayton, Rankine, Otto, Diesel) and jet engines related to power systems used in aircraft are examined. In the final weeks, the focus is on the structure, operating principles and applications of electric motors in aircraft.",
+  "outcomes": [
+   "Hal değişimi yasalarına dair temel bilgi sahibi olmak",
+   "Güç sistemlerinin çalışma prensibine dair temel termodinamik yasaları ve çevrimler hakkında bilgi sahibi olmak",
+   "Motor sistemleri hakkında genel bilgi sahibi olmak",
+   "Yardımcı güç sistemleri hakkında bilgi sahibi olmak",
+   "Elektrikli motorlar ve jet motorları ile bunların çalışma prensiplerine dair bilgi sahibi olmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Termodinamiğe Giriş – Tanımlar, sistem türleri, enerji türleri, denge, birimler",
+   "Hafta 2 — Hal değişimleri, basınç–sıcaklık–iş–ısı kavramları, Sıfırıncı Yasa, ideal gaz yasası",
+   "Hafta 3 — Termodinamiğin 1. Yasası: Kapalı sistemler, iç enerji, entalpi, özgül ısılar",
+   "Hafta 4 — Açık Sistemler için 1. Yasa – Sürekli akış süreçleri, kontrol hacmi, enerji korunumu",
+   "Hafta 5 — Termodinamiğin 2. Yasası – Entropi, Clausius eşitsizliği, çevrimlerin olabilirliği",
+   "Hafta 6 — T–s diyagramları ve entropi analizi, tersinirlik, termodinamik sıcaklık ölçeği",
+   "Hafta 7 — Rankine Çevrimi – Buharlı güç çevrimleri, ideal ve gerçek Rankine çevrimi analizi",
+   "Hafta 8 — Brayton Çevrimi – Gaz türbini çevrimleri, rejenerasyon, ideal ve gerçek karşılaştırması",
+   "Hafta 9 — Otto ve Diesel Çevrimleri – Pistonlu içten yanmalı motorlar, hava standart çevrimler",
+   "Hafta 10 — Rankine, Brayton, Otto ve Diesel çevrimlerinin karşılaştırmalı analizi – Verim ve uygulama yorumları",
+   "Hafta 11 — Jet Motorlarına Giriş – Turbojet, turbofan, turboprop sistemler ve bileşenleri",
+   "Hafta 12 — Yardımcı Güç Üniteleri (APU) ve çevrim temelli uçak güç sistemleri",
+   "Hafta 13 — Elektrikli Motorlara Giriş – Çalışma prensipleri, yapısı, AC/DC motor türleri",
+   "Hafta 14 — Elektrikli Motorların Hava Araçlarındaki Uygulamaları – Performans, kontrol, entegrasyon hususları"
+  ],
+  "textbooks": [
+   "Cumpsty and Heyes. Jet Propulsion 3rd Edition, 2015, Cambridge University Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=303",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAV 304E": {
+  "code": "SAV 304E",
+  "name": "Güdüm ve Navigasyona Giriş ve Uygulamaları",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "-Bu ders, güdüm ve navigasyonun temel prensiplerini ve uygulamalarını kapsamaktadır. Öğrencilere temel navigasyon algoritmaları, sensör entegrasyonu, güdüm yasaları ve bu konuların pratik uygulamaları hakkında bilgi verilecektir. Her algoritma ve yöntemin uygulamalı örnekleri ve pratik çalışmaları yapılacaktır -This course covers the fundamental principles and applications of guidance and navigation. Students will be provided with information on basic navigation algorithms, sensor integration, guidance laws, and practical applications of these topics. Practical exercises and examples will be conducted for each algorithm and method",
+  "outcomes": [
+   "Temel navigasyon prensiplerini ve algoritmalarını açıklayabilme.",
+   "Farklı navigasyon sensörlerinin (GPS, IMU, vb.) çalışma prensiplerini ve entegrasyon yöntemlerini anlayabilme.",
+   "Çeşitli güdüm yasalarını ve bunların insansız hava araçları ve robotik sistemler gibi platformlardaki uygulamalarını analiz edebilme.",
+   "Güdüm ve navigasyon problemlerini matematiksel olarak formüle edebilme ve çözümler geliştirebilme.",
+   "Derste öğrenilen algoritmaları ve yöntemleri kullanarak basit güdüm ve navigasyon uygulamalarını kodlayabilme ve test edebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Navigasyona Giriş, Koordinat Sistemleri",
+   "Hafta 2 — Ataletsel Navigasyon Sistemleri Temelleri",
+   "Hafta 3 — Küresel Konumlandırma Sistemleri Temelleri",
+   "Hafta 4 — Sensör Füzyonu ve Kalman Filtresi",
+   "Hafta 5 — Güdüm Prensipleri ve Güdüm Yasaları",
+   "Hafta 6 — Oransal Seyrüsefer Güdümü",
+   "Hafta 7 — En kısa mesafe ve en kısa zaman güdüm stratejileri",
+   "Hafta 8 — Otopilot Sistemleri",
+   "Hafta 9 — İnsansız Hava Aracı (İHA) Güdüm ve Navigasyonu",
+   "Hafta 10 — Robotik Navigasyon ve Engelden Kaçınma",
+   "Hafta 11 — Görsel Odometri ve SLAM",
+   "Hafta 12 — Füze Güdüm Sistemleri",
+   "Hafta 13 — Uzay Araçları Güdüm ve Navigasyonu",
+   "Hafta 14 — İleri Güdüm ve Navigasyon Konuları"
+  ],
+  "textbooks": [
+   "Principles of Navigation, Paul J. Zarchan, Howard Musoff, American Institute of Aeronautics and Astronautics, 2005."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=304",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAV 305E": {
+  "code": "SAV 305E",
+  "name": "Otonom Platformlar için Gömülü Sistem Uygulamaları",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "-Bu ders, otonom sistemler için gömülü yazılım geliştirme süreçlerini gerçek zamanlı uygulamalarla öğretmeyi amaçlar. C/C++ dili kullanılarak mikrodenetleyici programlamaya giriş yapılır ve FreeRTOS benzeri bir RTOS ortamında görev yönetimi, senkronizasyon ve zamanlama konuları işlenir. Sensör ve aktüatör arabirimleriyle sistem kontrol döngüleri oluşturulur. Dersin sonunda öğrenciler, Hardware-in-the-Loop (HIL) altyapısı kullanarak otonom sistem bileşenlerinin yazılım tabanlı kontrolünü gerçekleştirdikleri bir mini proje geliştirirler. -This course introduces the development of embedded software for autonomous systems through real-time applications. Students will learn C/C++ programming for microcontrollers and explore task management, synchronization, and scheduling in a real-time operating system (RTOS) environment such as FreeRTOS. Sensor and actuator interfaces will be used to implement control loops within embedded systems. By the end of the course, students will develop a mini project using a Hardware-in-the-Loop (HIL) setup to implement software based control of autonomous system components",
+  "outcomes": [
+   "Otonom sistemlerde kullanılan gömülü donanım bileşenlerini ve yazılım yapılarını tanımlar.",
+   "Gerçek zamanlı işletim sistemleri ile görev yönetimi, zamanlama ve senkronizasyon işlemlerini uygular.",
+   "Hardware-in-the-Loop (HIL) altyapısıyla sensör-aktüatör döngüleri içeren gömülü sistem uygulamaları geliştirir ve test eder."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Gömülü Sistemlere Giriş ve Otonom Sistem Mimarileri",
+   "Hafta 2 — Mikrodenetleyici Temelleri ve Geliştirme Ortamları",
+   "Hafta 3 — C/C++ ile Gömülü Programlama Temelleri",
+   "Hafta 4 — Gerçek Zamanlı Sistemlere ve RTOS'a Giriş",
+   "Hafta 5 — RTOS ile Görev Yapısı: Process’ler, Thread’ler ve Scheduler",
+   "Hafta 6 — Görev Senkronizasyonu ve Veri Paylaşımı",
+   "Hafta 7 — Sensör Arayüzleri ve Simülasyon Modeliyle Entegrasyon",
+   "Hafta 8 — Aktüatör Sürme ve Simülasyon Modeline Çıkış Yazma",
+   "Hafta 9 — Hardware-in-the-Loop (HIL) Temelleri ve Altyapı Kurulumu",
+   "Hafta 10 — HIL Uygulaması I: Basit sistem modeliyle döngü kurma",
+   "Hafta 11 — HIL Uygulaması II: Uçuş benzetimi senaryosu ve kontrolör testleri",
+   "Hafta 12 — RTOS Performans İzleme, Debugging ve Zamanlama Analizi",
+   "Hafta 13 — Mini Proje Geliştirme: Öğrenci tarafından seçilen görev bazlı HIL sistemi",
+   "Hafta 14 — Proje Sunumları ve HIL Gösterimi"
+  ],
+  "textbooks": [
+   "Valvano, J. W. (2017). Embedded Systems: Real-Time Operating Systems for ARM Cortex-M Microcontrollers (Volume 3, 4th Edition)."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=305",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAV 306E": {
+  "code": "SAV 306E",
+  "name": "İHA Sistemleri için Uygulamalı RF Haberleşmesi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "-Bu ders, insansız hava araçlarında (İHA) kullanılan RF haberleşme sistemlerinin temel prensiplerini ve uygulamalarını ele alır. RF spektrumu, antenler, modülasyon teknikleri, iletişim protokolleri ve elektromanyetik parazit gibi kavramlar teorik ve pratik boyutlarıyla işlenir. Öğrenciler, RTL-SDR ve GNURadio gibi araçlar kullanarak spektrum izleme, RF veri iletimi ve haberleşme performans testleri gerçekleştirirler. Dersin sonunda öğrenciler, gerçek ya da simüle İHA senaryoları için RF haberleşme uygulaması geliştirir ve analiz eder. -This course covers the fundamental principles and practical applications of RF communication systems used in unmanned aerial vehicles (UAVs). Topics include the RF spectrum, antennas, modulation techniques, communication protocols, and electromagnetic interference. Students will use tools such as RTL-SDR and GNURadio to perform spectrum monitoring, RF data transmission, and communication performance tests. By the end of the course, students will design and analyze RF communication applications for real or simulated UAV scenarios.",
+  "outcomes": [
+   "İHA sistemlerinde kullanılan RF haberleşme bileşenlerini, spektrum yapılarını ve modülasyon tekniklerini tanımlar.",
+   "SDR ve RF modem donanımları kullanarak veri iletimi, spektrum izleme ve parazit analizi gerçekleştirir.",
+   "Gerçek ya da simüle İHA senaryolarında RF haberleşme performansını değerlendirir ve sistem tasarımı yapar."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — RF Haberleşmeye Giriş ve Otonom Sistemlerdeki Rolü",
+   "Hafta 2 — RF Spektrumu, Frekans Bantları ve Yasal Düzenlemeler",
+   "Hafta 3 — Temel RF Bileşenleri: Antenler, Transceiver'lar, Filtreler, Kablolar",
+   "Hafta 4 — Yayılım Modelleri: Serbest Uzay, Çok Yollu, Zayıflama ve Kapsama",
+   "Hafta 5 — Modülasyon Tekniklerine Giriş: FSK, PSK, OFDM, LoRa",
+   "Hafta 6 — RF İletişim Protokolleri: Telemetri, Datalink ve Payload Haberleşmesi",
+   "Hafta 7 — RF Güvenilirliği ve Parazit: SNR, EMI/EMC, Paket Kaybı",
+   "Hafta 8 — SDR Nedir? RTL-SDR ile Spektrum İzleme Uygulaması (PC Tabanlı)",
+   "Hafta 9 — GNURadio ile Temel SDR Blokları ve FM/FSK Modülasyon Uygulaması",
+   "Hafta 10 — USB–UART Arayüzüyle RF Transceiver (LoRa, XBee) ile Veri Gönderimi",
+   "Hafta 11 — Datalink Performans Testleri: RSSI, Latency, Paket Kaybı Ölçümü",
+   "Hafta 12 — Temel Spektrum İzleme ve Jamming Fark Etme Teknikleri",
+   "Hafta 13 — Mini Proje Geliştirme: UAV RF Haberleşmesi Senaryosu Kurulumu",
+   "Hafta 14 — Proje Sunumları ve Spektrum Analizi Göstergeleri"
+  ],
+  "textbooks": [
+   "Sobot, R. (2021). Wireless Communication Electronics: Introduction to RF Circuits and Design Techniques (2nd ed.). Springer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=306",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

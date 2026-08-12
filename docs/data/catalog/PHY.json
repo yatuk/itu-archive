@@ -1,0 +1,774 @@
+{
+ "PHY 101": {
+  "code": "PHY 101",
+  "name": "Fizik I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 2,
+   "local": 4,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=101",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 102": {
+  "code": "PHY 102",
+  "name": "Fizik II",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 2,
+   "local": 4,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=102",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 103": {
+  "code": "PHY 103",
+  "name": "Fizik I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 2,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=103",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 107": {
+  "code": "PHY 107",
+  "name": "Fizik I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=107",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 107L": {
+  "code": "PHY 107L",
+  "name": "Fizik I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=107",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 108": {
+  "code": "PHY 108",
+  "name": "Fizik II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=108",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 108L": {
+  "code": "PHY 108L",
+  "name": "Fizik II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=108",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 111": {
+  "code": "PHY 111",
+  "name": "Fizik I",
+  "language": "English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 4
+  },
+  "description": "Vektörler. Bir ve iki boyutta hareket. Newton'un hareket yasaları ve uygulamaları. İş ve enerji. Enerjinin korunumu. Momentum ve sistemlerin hareketi. Katı cisimlerin statik dengesi. Açısal momentum ve dönme. Newton'un evrensel yer çekimi yasası. Vectors. Motion in one and two dimensions. Newton's laws and its applications. Work and energy. Conservation of energy. Momentum and motion of systems. Static equilibrium of rigid bodies. Rotation and angular momentum. Newton's law universal gravitation.",
+  "outcomes": [
+   "Vektörler ile temel işlemleri (toplama, skalar ve vektörel çarpım) yapabilir.",
+   "Bir ve iki boyutta kinematik problemlerini çözebilir",
+   "Newton yasalarını temel problemlere uygulayabilir.",
+   "Korunumlu kuvvet kavramını öğrenir.",
+   "Sabit bir eksen etrafında dönen katı cisimlerin mekaniği ve jiroskop hareketi öğrenir.",
+   "Hareket denklemleri entegre edilemediği zaman korunum yasalarından yararlanır.",
+   "Newton evrensel çekim yasasını uygulayabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Vektörler (vektörlerin toplanması, skaler ve vektörel çarpımı)",
+   "Hafta 2 — Bir ve iki boyutlu hareket; bir ve iki boyutlu hareketin özellikleri, düzgün dairesel hareket",
+   "Hafta 3 — Newton’un Yasaları; Newton’un 1, 2 ve 3. yasaları",
+   "Hafta 4 — Newton Yasalarının uygulanması",
+   "Hafta 5 — İş ve enerji",
+   "Hafta 6 — Potansiyel enerji ve enerjinin korunumu; korunumlu ve korunumsuz kuvvetler",
+   "Hafta 7 — Momentum ve parçacıklı sistemlerin hareketi; kütle merkezinin hareketi",
+   "Hafta 8 — Momentum ve parçacıklı sistemlerin hareketi",
+   "Hafta 9 — Rotasyon I; katı cisimlerin dönme kinematikleri, atalet momenti",
+   "Hafta 10 — Rotasyon II; açısal momentum, kati cisimleri dönmesi",
+   "Hafta 11 — Rotasyon II; açısal momentum, katı cisimlerin dönmesi, denge çarkı",
+   "Hafta 12 — Katı cisimlerin statik dengesi; tork, denge koşulları",
+   "Hafta 13 — Newton’un Evrensel Çekim Yasası",
+   "Hafta 14 — Problem çözümü"
+  ],
+  "textbooks": [
+   "HD Young - RA Freedman (Cev.: H. Unlu vd.), Universite Fiziği, Cilt 1, 12.Baskı, Pearson/Addison Wesley, 2009."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=111",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 123": {
+  "code": "PHY 123",
+  "name": "Fizik I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Fiziksel büyüklükler ve ölçme, birim sistemleri; vektörler; kinematik büyüklükler ve hareketin tasviri; Newton’un Hareket Yasaları; İş ve enerji kavramları, korunumlu kuvvetler ve enerji korunumu; momentum ve parçacık sistemlerinin hareketinin tasviri, momentum korunumu; sabit doğrultulu dönme hareketinin kinematiği ve dinamiği; statik denge; periyodik hareket; kütleçekim. Physical quantities and measurements, unit systems; vectors, kinematic quantities and the description of motion; Newton’s laws of motion; the concepts of work and energy, conservative forces and conservation of energy; momentum and the description of the motion of particle systems, conservation of momentum; kinematics and dynamics of fixed-axis rotation; static equilibrium; harmonic motion; gravity.",
+  "outcomes": [
+   "Fiziksel nicelik kavramı ve bunların ölçümleri ile birim sistemlerini öğrenmek",
+   "Skaler, vektör kavramlarını ve bunların gözlemci/koordinat sistemi ile ilişkilerini ve nasıl tanımlandıklarını, bu tür büyüklüklerle hesap yapmayı öğrenmek",
+   "Bir cismin hareketinin tasviri için gerekli kinematik büyüklükleri, bunların tanımlarını ve nasıl hesaplanacaklarını öğrenmek",
+   "Newton’un Hareket Yasalarını ve bunların bir cismin, bir koordinat sisteminde kinematik büyüklüklerinin hesaplanmasında nasıl kullanacağını öğrenmek",
+   "Kütleçekim kuvvetinin temel özelliklerinin ve uygulamalarını öğrenmek",
+   "Newton Yasalarının, iş, enerji, momentum gibi kavramlar ile nasıl başka şekillerde de ifade edilebileceğini ve bunların kinematik büyüklüklerin elde edilmesinde nasıl kullanılacağını öğrenmek",
+   "Newton Yasalarının, sabit doğrultulu bir eksen çevresinde dönen sistemlere nasıl uygulanacağını öğrenmek",
+   "Küçük salınımları öğrenmek",
+   "Bir cismin statik denge durumunda bulunma şartlarını öğrenmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Birimler, Fiziksel Nicelikler ve Vektörler",
+   "Hafta 2 — Kinematik",
+   "Hafta 3 — Newton'un Hareket Yasaları",
+   "Hafta 4 — Newton Yasalarının Uygulaması",
+   "Hafta 5 — İş ve Kinetik Enerji",
+   "Hafta 6 — Potansiyel Enerji ve Enerjinin Korunumu",
+   "Hafta 7 — Momentum, İtme ve Çarpışma",
+   "Hafta 8 — Momentum, İtme ve Çarpışma (Devam)",
+   "Hafta 9 — Dönme Hareketinin Kinematiği",
+   "Hafta 10 — Dönme Hareketinin Dinamiği",
+   "Hafta 11 — Dönme Hareketinin Dinamiği (Devam)",
+   "Hafta 12 — Kütleçekim",
+   "Hafta 13 — Periyodik Hareket",
+   "Hafta 14 — Periyodik Hareket (Devam)"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=123",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 123L": {
+  "code": "PHY 123L",
+  "name": "Fizik I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Fiziksel büyüklükler ve ölçme, birim sistemleri; vektörler; kinematik büyüklükler ve hareketin tasviri; Newton’un Hareket Yasaları; İş ve enerji kavramları, korunumlu kuvvetler ve enerji korunumu; momentum ve parçacık sistemlerinin hareketinin tasviri, momentum korunumu; sabit doğrultulu dönme hareketinin kinematiği ve dinamiği; statik denge; periyodik hareket; kütleçekim. Physical quantities and measurements, unit systems; vectors, kinematic quantities and the description of motion; Newton’s laws of motion; the concepts of work and energy, conservative forces and conservation of energy; momentum and the description of the motion of particle systems, conservation of momentum; kinematics and dynamics of fixed-axis rotation; static equilibrium; harmonic motion; gravity.",
+  "outcomes": [
+   "Fiziksel nicelik kavramı ve bunların ölçümleri ile birim sistemlerini öğrenmek",
+   "Skaler, vektör kavramlarını ve bunların gözlemci/koordinat sistemi ile ilişkilerini ve nasıl tanımlandıklarını, bu tür büyüklüklerle hesap yapmayı öğrenmek",
+   "Bir cismin hareketinin tasviri için gerekli kinematik büyüklükleri, bunların tanımlarını ve nasıl hesaplanacaklarını öğrenmek",
+   "Newton’un Hareket Yasalarını ve bunların bir cismin, bir koordinat sisteminde kinematik büyüklüklerinin hesaplanmasında nasıl kullanacağını öğrenmek",
+   "Kütleçekim kuvvetinin temel özelliklerinin ve uygulamalarını öğrenmek",
+   "Newton Yasalarının, iş, enerji, momentum gibi kavramlar ile nasıl başka şekillerde de ifade edilebileceğini ve bunların kinematik büyüklüklerin elde edilmesinde nasıl kullanılacağını öğrenmek",
+   "Newton Yasalarının, sabit doğrultulu bir eksen çevresinde dönen sistemlere nasıl uygulanacağını öğrenmek",
+   "Küçük salınımları öğrenmek",
+   "Bir cismin statik denge durumunda bulunma şartlarını öğrenmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Birimler, Fiziksel Nicelikler ve Vektörler",
+   "Hafta 2 — Kinematik",
+   "Hafta 3 — Newton'un Hareket Yasaları",
+   "Hafta 4 — Newton Yasalarının Uygulaması",
+   "Hafta 5 — İş ve Kinetik Enerji",
+   "Hafta 6 — Potansiyel Enerji ve Enerjinin Korunumu",
+   "Hafta 7 — Momentum, İtme ve Çarpışma",
+   "Hafta 8 — Momentum, İtme ve Çarpışma (Devam)",
+   "Hafta 9 — Dönme Hareketinin Kinematiği",
+   "Hafta 10 — Dönme Hareketinin Dinamiği",
+   "Hafta 11 — Dönme Hareketinin Dinamiği (Devam)",
+   "Hafta 12 — Kütleçekim",
+   "Hafta 13 — Periyodik Hareket",
+   "Hafta 14 — Periyodik Hareket (Devam)"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=123",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 124": {
+  "code": "PHY 124",
+  "name": "Fizik II",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Bu, elektrik, manyetizma ve elektromanyetizma hakkında giriş düzeyinde bir fizik dersidir. Ana konular: Coulomb yasası ve elektrik alanı, Gauss yasası, elektrik potansiyel, sığa, elektrostatik enerji ve dielektriklerin özellikleri, akım ve direnç, doğru akım devreleri, manyetik alan, manyetik alan kaynakları, Faraday yasası, indüktans, Maxwell denklemleri ve elektromanyetik dalgalar. This is an introductory level physics course on electricity, magnetism and electromagnetism. The main topics are: Coulomb’s law and electrical field, Gauss’s law, electrical potential, capacitance, electrostatic energy and properties of dielectrics, current and resistance, direct current circuits, magnetic field, sources of magnetic field, Faraday’s law, inductance, Maxwell’s equations and electromagnetic waves.",
+  "outcomes": [
+   "Yükler arasındaki elektrik kuvvetini hesaplamak için Coulomb yasasını kullanma",
+   "Yük dağılımına bağlı elektrik alanını hesaplama",
+   "Elektrik akısının ne anlama geldiğini ve nasıl hesaplanacağını anlama",
+   "Simetrik bir yük dağılımına bağlı elektrik alanını hesaplamak için Gauss yasasını kullanma",
+   "Bir yük topluluğunun elektrik potansiyel enerjisini hesaplama",
+   "Bir yük topluluğunun uzayda bir noktada ürettiği elektrik potansiyelini hesaplama",
+   "Elektrik alanını hesaplamak için elektrik potansiyelini kullanma",
+   "Kapasitörleri n yapısını ve yük depolama yeteneğini ölçen sığanın nasıl hesaplandığını anlama",
+   "Bir şebekeye bağlı kapasitörleri analiz etme",
+   "Bir kapasitörde depolanan enerji miktarını hesaplama",
+   "Dielektriklerin ne olduğunu ve kapasitörleri nasıl daha etkili hale getirdiklerini anlama",
+   "Elektrik akımının anlamını ve bir iletkende yüklerin nasıl hareket ettiğini anlama",
+   "Bir iletkenin direncini boyutlarından ve özdirencinden hesaplama",
+   "Seri veya paralel olarak çoklu dirençli devreleri çözümleme",
+   "Hem direnç hem kapasitör içeren devreleri çözümleme",
+   "Yüklü bir parçacığın manyetik alandaki hareketini çözümleme",
+   "Akım taşıyan iletkenler üzerindeki manyetik kuvvetleri çözümleme",
+   "Hareketli bir yüklü parçacık tarafından üretilen manyetik alanın doğasını anlama",
+   "Akım taşıyan bir iletken elemanı tarafından üretilen manyetik alanı ifade etme",
+   "Akım taşıyan uzun, düz bir tel tarafından üretilen manyetik alanı hesaplama",
+   "Akım taşıyan, çember şeklinde bükülmüş bir telin ürettiği manyetik alanı hesaplama",
+   "Simetrik akım dağılımlarının manyetik alanını hesaplamak için Ampere yasasını kullanma",
+   "Faraday yasasının bir döngüde indüklenen emk ile döngü içindeki manyetik akı değişimini nasıl ilişkilendirdiğini anlama",
+   "Manyetik alanda hareket eden bir iletkende indüklenen emk’yi hesaplama",
+   "Değişen bir manyetik akının, bir yük dağılımınca üretilenden çok farklı bir elektrik alanı oluşturduğunu anlama",
+   "Hem elektrik hem de manyetizmayı tamamen tanımlayan dört temel denklemi anlama",
+   "Bir bobindeki zamanla değişen bir akımın, ikinci, bağımsız bir bobinde nasıl emk oluşturabileceğini anlama",
+   "Bir devrede indüklenen emk’yi aynı devredeki akım değişim hızına ilişkilendirme",
+   "Manyetik alanda depolanan enerjiyi hesaplama",
+   "Bir direnç ve bir indüktör (bobin) içeren devreleri çözümleme",
+   "Hem indüktör hem de kondansatör içeren devrelerde neden elektriksel salınımların oluştuğunu anlama",
+   "Işık hızının, elektrik ve manyetizmanın temel sabitleri ile ilişkisini anlama",
+   "Sinüzoidal bir elektromanyetik dalganın yayılımını betimleme",
+   "Elektromanyetik bir dalganın taşıdığı gücü belirleme becerilerini elde eder"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektrik Yükü ve Elektriksel Kuvvet",
+   "Hafta 2 — Gauss Yasası",
+   "Hafta 3 — Gauss Yasası",
+   "Hafta 4 — Elektrik Potansiyeli",
+   "Hafta 5 — Kapasitans ve Dielektrikler",
+   "Hafta 6 — Akım, Direnç ve Elektromotif Kuvvet",
+   "Hafta 7 — Doğru Akım Devreleri",
+   "Hafta 8 — Manyetik Alan ve Manyetik Kuvetler",
+   "Hafta 9 — Manyetik Alan Kaynakları",
+   "Hafta 10 — Manyetik Alan Kaynakları",
+   "Hafta 11 — Elektromanyetik İndüksiyon",
+   "Hafta 12 — İndüktans",
+   "Hafta 13 — Elektromanyetik Dalgalar",
+   "Hafta 14 — Elektromanyetik Dalgalar"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=124",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 124L": {
+  "code": "PHY 124L",
+  "name": "Fizik II",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Bu, elektrik, manyetizma ve elektromanyetizma hakkında giriş düzeyinde bir fizik dersidir. Ana konular: Coulomb yasası ve elektrik alanı, Gauss yasası, elektrik potansiyel, sığa, elektrostatik enerji ve dielektriklerin özellikleri, akım ve direnç, doğru akım devreleri, manyetik alan, manyetik alan kaynakları, Faraday yasası, indüktans, Maxwell denklemleri ve elektromanyetik dalgalar. This is an introductory level physics course on electricity, magnetism and electromagnetism. The main topics are: Coulomb’s law and electrical field, Gauss’s law, electrical potential, capacitance, electrostatic energy and properties of dielectrics, current and resistance, direct current circuits, magnetic field, sources of magnetic field, Faraday’s law, inductance, Maxwell’s equations and electromagnetic waves.",
+  "outcomes": [
+   "Yükler arasındaki elektrik kuvvetini hesaplamak için Coulomb yasasını kullanma",
+   "Yük dağılımına bağlı elektrik alanını hesaplama",
+   "Elektrik akısının ne anlama geldiğini ve nasıl hesaplanacağını anlama",
+   "Simetrik bir yük dağılımına bağlı elektrik alanını hesaplamak için Gauss yasasını kullanma",
+   "Bir yük topluluğunun elektrik potansiyel enerjisini hesaplama",
+   "Bir yük topluluğunun uzayda bir noktada ürettiği elektrik potansiyelini hesaplama",
+   "Elektrik alanını hesaplamak için elektrik potansiyelini kullanma",
+   "Kapasitörleri n yapısını ve yük depolama yeteneğini ölçen sığanın nasıl hesaplandığını anlama",
+   "Bir şebekeye bağlı kapasitörleri analiz etme",
+   "Bir kapasitörde depolanan enerji miktarını hesaplama",
+   "Dielektriklerin ne olduğunu ve kapasitörleri nasıl daha etkili hale getirdiklerini anlama",
+   "Elektrik akımının anlamını ve bir iletkende yüklerin nasıl hareket ettiğini anlama",
+   "Bir iletkenin direncini boyutlarından ve özdirencinden hesaplama",
+   "Seri veya paralel olarak çoklu dirençli devreleri çözümleme",
+   "Hem direnç hem kapasitör içeren devreleri çözümleme",
+   "Yüklü bir parçacığın manyetik alandaki hareketini çözümleme",
+   "Akım taşıyan iletkenler üzerindeki manyetik kuvvetleri çözümleme",
+   "Hareketli bir yüklü parçacık tarafından üretilen manyetik alanın doğasını anlama",
+   "Akım taşıyan bir iletken elemanı tarafından üretilen manyetik alanı ifade etme",
+   "Akım taşıyan uzun, düz bir tel tarafından üretilen manyetik alanı hesaplama",
+   "Akım taşıyan, çember şeklinde bükülmüş bir telin ürettiği manyetik alanı hesaplama",
+   "Simetrik akım dağılımlarının manyetik alanını hesaplamak için Ampere yasasını kullanma",
+   "Faraday yasasının bir döngüde indüklenen emk ile döngü içindeki manyetik akı değişimini nasıl ilişkilendirdiğini anlama",
+   "Manyetik alanda hareket eden bir iletkende indüklenen emk’yi hesaplama",
+   "Değişen bir manyetik akının, bir yük dağılımınca üretilenden çok farklı bir elektrik alanı oluşturduğunu anlama",
+   "Hem elektrik hem de manyetizmayı tamamen tanımlayan dört temel denklemi anlama",
+   "Bir bobindeki zamanla değişen bir akımın, ikinci, bağımsız bir bobinde nasıl emk oluşturabileceğini anlama",
+   "Bir devrede indüklenen emk’yi aynı devredeki akım değişim hızına ilişkilendirme",
+   "Manyetik alanda depolanan enerjiyi hesaplama",
+   "Bir direnç ve bir indüktör (bobin) içeren devreleri çözümleme",
+   "Hem indüktör hem de kondansatör içeren devrelerde neden elektriksel salınımların oluştuğunu anlama",
+   "Işık hızının, elektrik ve manyetizmanın temel sabitleri ile ilişkisini anlama",
+   "Sinüzoidal bir elektromanyetik dalganın yayılımını betimleme",
+   "Elektromanyetik bir dalganın taşıdığı gücü belirleme becerilerini elde eder"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektrik Yükü ve Elektriksel Kuvvet",
+   "Hafta 2 — Gauss Yasası",
+   "Hafta 3 — Gauss Yasası",
+   "Hafta 4 — Elektrik Potansiyeli",
+   "Hafta 5 — Kapasitans ve Dielektrikler",
+   "Hafta 6 — Akım, Direnç ve Elektromotif Kuvvet",
+   "Hafta 7 — Doğru Akım Devreleri",
+   "Hafta 8 — Manyetik Alan ve Manyetik Kuvetler",
+   "Hafta 9 — Manyetik Alan Kaynakları",
+   "Hafta 10 — Manyetik Alan Kaynakları",
+   "Hafta 11 — Elektromanyetik İndüksiyon",
+   "Hafta 12 — İndüktans",
+   "Hafta 13 — Elektromanyetik Dalgalar",
+   "Hafta 14 — Elektromanyetik Dalgalar"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=124",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 125": {
+  "code": "PHY 125",
+  "name": "Physics I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Vektörler. Bir ve iki boyutta hareket. Newton’un hareket yasaları ve uygulamaları. İş ve enerji. Enerjinin korunumu. Momentum ve sistemlerin hareketi. Açısal momentum ve dönme. Newton’un evrensel yer çekimi yasası. Vectors. Motion in one and two dimensions. Newton's laws and its applications. Work and energy. Conservation of mechanical energy. Momentum and motion of systems. Static equilibrium of rigid bodies. Rotation and angular momentum. Newton's law universal gravitation.",
+  "outcomes": [
+   "Vektörler ile temel işlemler (toplama, skaler ve vektörel çarpım)",
+   "Bir ve iki boyuta kinematik",
+   "Newton yasalarınını temel problemlere uygulamaları",
+   "Korunumlu kuvvet kuvvet kavramı",
+   "Sabit bir eksen etrafında dönen rijid cisimlerin mekaniği, ve jiroskop hareket",
+   "Hareket denklemleri integre edilemediği zaman korunum yasalarından yararlanma",
+   "Newton evrensel çekim yasasını uygulayabilme becerilerini elde eder."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Birimler, Fiziksel Nicelikler ve Vektörler",
+   "Hafta 2 — Kinematik",
+   "Hafta 3 — Newton'un Hareket Yasaları",
+   "Hafta 4 — Newton Yasalarının Uygulaması",
+   "Hafta 5 — İş ve Kinetik Enerji",
+   "Hafta 6 — Potansiyel Enerji ve Enerjinin Korunumu",
+   "Hafta 7 — Momentum, İtme ve Çarpışma",
+   "Hafta 8 — Momentum, İtme ve Çarpışma",
+   "Hafta 9 — Dönme Hareketinin Kinematiği",
+   "Hafta 10 — Dönme Hareketinin Dinamiği",
+   "Hafta 11 — Dönme Hareketinin Dinamiği",
+   "Hafta 12 — Kütleçekim",
+   "Hafta 13 — Periyodik Hareket",
+   "Hafta 14 — Periyodik Hareket"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=125",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 125L": {
+  "code": "PHY 125L",
+  "name": "Physics I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Vektörler. Bir ve iki boyutta hareket. Newton’un hareket yasaları ve uygulamaları. İş ve enerji. Enerjinin korunumu. Momentum ve sistemlerin hareketi. Açısal momentum ve dönme. Newton’un evrensel yer çekimi yasası. Vectors. Motion in one and two dimensions. Newton's laws and its applications. Work and energy. Conservation of mechanical energy. Momentum and motion of systems. Static equilibrium of rigid bodies. Rotation and angular momentum. Newton's law universal gravitation.",
+  "outcomes": [
+   "Vektörler ile temel işlemler (toplama, skaler ve vektörel çarpım)",
+   "Bir ve iki boyuta kinematik",
+   "Newton yasalarınını temel problemlere uygulamaları",
+   "Korunumlu kuvvet kuvvet kavramı",
+   "Sabit bir eksen etrafında dönen rijid cisimlerin mekaniği, ve jiroskop hareket",
+   "Hareket denklemleri integre edilemediği zaman korunum yasalarından yararlanma",
+   "Newton evrensel çekim yasasını uygulayabilme becerilerini elde eder."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Birimler, Fiziksel Nicelikler ve Vektörler",
+   "Hafta 2 — Kinematik",
+   "Hafta 3 — Newton'un Hareket Yasaları",
+   "Hafta 4 — Newton Yasalarının Uygulaması",
+   "Hafta 5 — İş ve Kinetik Enerji",
+   "Hafta 6 — Potansiyel Enerji ve Enerjinin Korunumu",
+   "Hafta 7 — Momentum, İtme ve Çarpışma",
+   "Hafta 8 — Momentum, İtme ve Çarpışma",
+   "Hafta 9 — Dönme Hareketinin Kinematiği",
+   "Hafta 10 — Dönme Hareketinin Dinamiği",
+   "Hafta 11 — Dönme Hareketinin Dinamiği",
+   "Hafta 12 — Kütleçekim",
+   "Hafta 13 — Periyodik Hareket",
+   "Hafta 14 — Periyodik Hareket"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=125",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 126": {
+  "code": "PHY 126",
+  "name": "Physics II",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Bu, elektrik, manyetizma ve elektromanyetizma hakkında giriş düzeyinde bir fizik dersidir. Ana konular: Coulomb yasası ve elektrik alanı, Gauss yasası, elektrik potansiyel, sığa, elektrostatik enerji ve dielektriklerin özellikleri, akım ve direnç, doğru akım devreleri, manyetik alan, manyetik alan kaynakları, Faraday yasası, indüktans, Maxwell denklemleri ve elektromanyetik dalgalar. This is an introductory level physics course on electricity, magnetism and electromagnetism. The main topics are: Coulomb’s law and electrical field, Gauss’s law, electrical potential, capacitance, electrostatic energy and properties of dielectrics, current and resistance, direct current circuits, magnetic field, sources of magnetic field, Faraday’s law, inductance, Maxwell’s equations and electromagnetic waves.",
+  "outcomes": [
+   "Yükler arasındaki elektrik kuvvetini hesaplamak için Coulomb yasasını kullanma",
+   "Yük dağılımına bağlı elektrik alanını hesaplama",
+   "Elektrik akısının ne anlama geldiğini ve nasıl hesaplanacağını anlama",
+   "Simetrik bir yük dağılımına bağlı elektrik alanını hesaplamak için Gauss yasasını kullanma",
+   "Bir yük topluluğunun elektrik potansiyel enerjisini hesaplama",
+   "Bir yük topluluğunun uzayda bir noktada ürettiği elektrik potansiyelini hesaplama",
+   "Elektrik alanını hesaplamak için elektrik potansiyelini kullanma",
+   "Kapasitörleri n yapısını ve yük depolama yeteneğini ölçen sığanın nasıl hesaplandığını anlama",
+   "Bir şebekeye bağlı kapasitörleri analiz etme",
+   "Bir kapasitörde depolanan enerji miktarını hesaplama",
+   "Dielektriklerin ne olduğunu ve kapasitörleri nasıl daha etkili hale getirdiklerini anlama",
+   "Elektrik akımının anlamını ve bir iletkende yüklerin nasıl hareket ettiğini anlama",
+   "Bir iletkenin direncini boyutlarından ve özdirencinden hesaplama",
+   "Seri veya paralel olarak çoklu dirençli devreleri çözümleme",
+   "Hem direnç hem kapasitör içeren devreleri çözümleme",
+   "Yüklü bir parçacığın manyetik alandaki hareketini çözümleme",
+   "Akım taşıyan iletkenler üzerindeki manyetik kuvvetleri çözümleme",
+   "Hareketli bir yüklü parçacık tarafından üretilen manyetik alanın doğasını anlama",
+   "Akım taşıyan bir iletken elemanı tarafından üretilen manyetik alanı ifade etme",
+   "Akım taşıyan uzun, düz bir tel tarafından üretilen manyetik alanı hesaplama",
+   "Akım taşıyan, çember şeklinde bükülmüş bir telin ürettiği manyetik alanı hesaplama",
+   "Simetrik akım dağılımlarının manyetik alanını hesaplamak için Ampere yasasını kullanma",
+   "Faraday yasasının bir döngüde indüklenen emk ile döngü içindeki manyetik akı değişimini nasıl ilişkilendirdiğini anlama",
+   "Manyetik alanda hareket eden bir iletkende indüklenen emk’yi hesaplama",
+   "Değişen bir manyetik akının, bir yük dağılımınca üretilenden çok farklı bir elektrik alanı oluşturduğunu anlama",
+   "Hem elektrik hem de manyetizmayı tamamen tanımlayan dört temel denklemi anlama",
+   "Bir bobindeki zamanla değişen bir akımın, ikinci, bağımsız bir bobinde nasıl emk oluşturabileceğini anlama",
+   "Bir devrede indüklenen emk’yi aynı devredeki akım değişim hızına ilişkilendirme",
+   "Manyetik alanda depolanan enerjiyi hesaplama",
+   "Bir direnç ve bir indüktör (bobin) içeren devreleri çözümleme",
+   "Hem indüktör hem de kondansatör içeren devrelerde neden elektriksel salınımların oluştuğunu anlama",
+   "Işık hızının, elektrik ve manyetizmanın temel sabitleri ile ilişkisini anlama",
+   "Sinüzoidal bir elektromanyetik dalganın yayılımını betimleme",
+   "Elektromanyetik bir dalganın taşıdığı gücü belirleme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektrik Yükü ve Elektriksel Kuvvet",
+   "Hafta 2 — Gauss Yasası",
+   "Hafta 3 — Gauss Yasası",
+   "Hafta 4 — Elektrik Potansiyeli",
+   "Hafta 5 — Kapasitans ve Dielektrikler",
+   "Hafta 6 — Akım, Direnç ve Elektromotif Kuvvet",
+   "Hafta 7 — Doğru Akım Devreleri",
+   "Hafta 8 — Manyetik Alan ve Manyetik Kuvetler",
+   "Hafta 9 — Manyetik Alan Kaynakları",
+   "Hafta 10 — Manyetik Alan Kaynakları",
+   "Hafta 11 — Elektromanyetik İndüksiyon",
+   "Hafta 12 — İndüktans",
+   "Hafta 13 — Elektromanyetik Dalgalar",
+   "Hafta 14 — Elektromanyetik Dalgalar"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=126",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 126L": {
+  "code": "PHY 126L",
+  "name": "Physics II",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Bu, elektrik, manyetizma ve elektromanyetizma hakkında giriş düzeyinde bir fizik dersidir. Ana konular: Coulomb yasası ve elektrik alanı, Gauss yasası, elektrik potansiyel, sığa, elektrostatik enerji ve dielektriklerin özellikleri, akım ve direnç, doğru akım devreleri, manyetik alan, manyetik alan kaynakları, Faraday yasası, indüktans, Maxwell denklemleri ve elektromanyetik dalgalar. This is an introductory level physics course on electricity, magnetism and electromagnetism. The main topics are: Coulomb’s law and electrical field, Gauss’s law, electrical potential, capacitance, electrostatic energy and properties of dielectrics, current and resistance, direct current circuits, magnetic field, sources of magnetic field, Faraday’s law, inductance, Maxwell’s equations and electromagnetic waves.",
+  "outcomes": [
+   "Yükler arasındaki elektrik kuvvetini hesaplamak için Coulomb yasasını kullanma",
+   "Yük dağılımına bağlı elektrik alanını hesaplama",
+   "Elektrik akısının ne anlama geldiğini ve nasıl hesaplanacağını anlama",
+   "Simetrik bir yük dağılımına bağlı elektrik alanını hesaplamak için Gauss yasasını kullanma",
+   "Bir yük topluluğunun elektrik potansiyel enerjisini hesaplama",
+   "Bir yük topluluğunun uzayda bir noktada ürettiği elektrik potansiyelini hesaplama",
+   "Elektrik alanını hesaplamak için elektrik potansiyelini kullanma",
+   "Kapasitörleri n yapısını ve yük depolama yeteneğini ölçen sığanın nasıl hesaplandığını anlama",
+   "Bir şebekeye bağlı kapasitörleri analiz etme",
+   "Bir kapasitörde depolanan enerji miktarını hesaplama",
+   "Dielektriklerin ne olduğunu ve kapasitörleri nasıl daha etkili hale getirdiklerini anlama",
+   "Elektrik akımının anlamını ve bir iletkende yüklerin nasıl hareket ettiğini anlama",
+   "Bir iletkenin direncini boyutlarından ve özdirencinden hesaplama",
+   "Seri veya paralel olarak çoklu dirençli devreleri çözümleme",
+   "Hem direnç hem kapasitör içeren devreleri çözümleme",
+   "Yüklü bir parçacığın manyetik alandaki hareketini çözümleme",
+   "Akım taşıyan iletkenler üzerindeki manyetik kuvvetleri çözümleme",
+   "Hareketli bir yüklü parçacık tarafından üretilen manyetik alanın doğasını anlama",
+   "Akım taşıyan bir iletken elemanı tarafından üretilen manyetik alanı ifade etme",
+   "Akım taşıyan uzun, düz bir tel tarafından üretilen manyetik alanı hesaplama",
+   "Akım taşıyan, çember şeklinde bükülmüş bir telin ürettiği manyetik alanı hesaplama",
+   "Simetrik akım dağılımlarının manyetik alanını hesaplamak için Ampere yasasını kullanma",
+   "Faraday yasasının bir döngüde indüklenen emk ile döngü içindeki manyetik akı değişimini nasıl ilişkilendirdiğini anlama",
+   "Manyetik alanda hareket eden bir iletkende indüklenen emk’yi hesaplama",
+   "Değişen bir manyetik akının, bir yük dağılımınca üretilenden çok farklı bir elektrik alanı oluşturduğunu anlama",
+   "Hem elektrik hem de manyetizmayı tamamen tanımlayan dört temel denklemi anlama",
+   "Bir bobindeki zamanla değişen bir akımın, ikinci, bağımsız bir bobinde nasıl emk oluşturabileceğini anlama",
+   "Bir devrede indüklenen emk’yi aynı devredeki akım değişim hızına ilişkilendirme",
+   "Manyetik alanda depolanan enerjiyi hesaplama",
+   "Bir direnç ve bir indüktör (bobin) içeren devreleri çözümleme",
+   "Hem indüktör hem de kondansatör içeren devrelerde neden elektriksel salınımların oluştuğunu anlama",
+   "Işık hızının, elektrik ve manyetizmanın temel sabitleri ile ilişkisini anlama",
+   "Sinüzoidal bir elektromanyetik dalganın yayılımını betimleme",
+   "Elektromanyetik bir dalganın taşıdığı gücü belirleme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektrik Yükü ve Elektriksel Kuvvet",
+   "Hafta 2 — Gauss Yasası",
+   "Hafta 3 — Gauss Yasası",
+   "Hafta 4 — Elektrik Potansiyeli",
+   "Hafta 5 — Kapasitans ve Dielektrikler",
+   "Hafta 6 — Akım, Direnç ve Elektromotif Kuvvet",
+   "Hafta 7 — Doğru Akım Devreleri",
+   "Hafta 8 — Manyetik Alan ve Manyetik Kuvetler",
+   "Hafta 9 — Manyetik Alan Kaynakları",
+   "Hafta 10 — Manyetik Alan Kaynakları",
+   "Hafta 11 — Elektromanyetik İndüksiyon",
+   "Hafta 12 — İndüktans",
+   "Hafta 13 — Elektromanyetik Dalgalar",
+   "Hafta 14 — Elektromanyetik Dalgalar"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=126",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 127": {
+  "code": "PHY 127",
+  "name": "Physics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Bu, elektrik, manyetizma ve elektromanyetizma hakkında giriş düzeyinde bir fizik dersidir. Ana konular: Coulomb yasası ve elektrik alanı, Gauss yasası, elektrik potansiyel, sığa, elektrostatik enerji ve dielektriklerin özellikleri, akım ve direnç, doğru akım devreleri, manyetik alan, manyetik alan kaynakları, Faraday yasası, indüktans, Maxwell denklemleri ve elektromanyetik dalgalar. This is an introductory level physics course on electricity, magnetism and electromagnetism. The main topics are: Coulomb’s law and electrical field, Gauss’s law, electrical potential, capacitance, electrostatic energy and properties of dielectrics, current and resistance, direct current circuits, magnetic field, sources of magnetic field, Faraday’s law, inductance, Maxwell’s equations and electromagnetic waves.",
+  "outcomes": [
+   "Yükler arasındaki elektrik kuvvetini hesaplamak için Coulomb yasasını kullanma",
+   "Yük dağılımına bağlı elektrik alanını hesaplama",
+   "Elektrik akısının ne anlama geldiğini ve nasıl hesaplanacağını anlama",
+   "Simetrik bir yük dağılımına bağlı elektrik alanını hesaplamak için Gauss yasasını kullanma,",
+   "Bir yük topluluğunun elektrik potansiyel enerjisini hesaplama",
+   "Bir yük topluluğunun uzayda bir noktada ürettiği elektrik potansiyelini hesaplama",
+   "Elektrik alanını hesaplamak için elektrik potansiyelini kullanma",
+   "Kapasitörleri n yapısını ve yük depolama yeteneğini ölçen sığanın nasıl hesaplandığını anlama",
+   "Bir şebekeye bağlı kapasitörleri analiz etme",
+   "Bir kapasitörde depolanan enerji miktarını hesaplama",
+   "Dielektriklerin ne olduğunu ve kapasitörleri nasıl daha etkili hale getirdiklerini anlama",
+   "Elektrik akımının anlamını ve bir iletkende yüklerin nasıl hareket ettiğini anlama",
+   "Bir iletkenin direncini boyutlarından ve özdirencinden hesaplama",
+   "Seri veya paralel olarak çoklu dirençli devreleri çözümleme",
+   "Hem direnç hem kapasitör içeren devreleri çözümleme",
+   "Yüklü bir parçacığın manyetik alandaki hareketini çözümleme",
+   "Akım taşıyan iletkenler üzerindeki manyetik kuvvetleri çözümleme",
+   "Hareketli bir yüklü parçacık tarafından üretilen manyetik alanın doğasını anlama",
+   "Akım taşıyan bir iletken elemanı tarafından üretilen manyetik alanı ifade etme",
+   "Akım taşıyan uzun, düz bir tel tarafından üretilen manyetik alanı hesaplama",
+   "Akım taşıyan, çember şeklinde bükülmüş bir telin ürettiği manyetik alanı hesaplama",
+   "Simetrik akım dağılımlarının manyetik alanını hesaplamak için Ampere yasasını kullanma",
+   "Faraday yasasının bir döngüde indüklenen emk ile döngü içindeki manyetik akı değişimini nasıl ilişkilendirdiğini anlama",
+   "Manyetik alanda hareket eden bir iletkende indüklenen emk’yi hesaplama",
+   "Değişen bir manyetik akının, bir yük dağılımınca üretilenden çok farklı bir elektrik alanı oluşturduğunu anlama",
+   "Hem elektrik hem de manyetizmayı tamamen tanımlayan dört temel denklemi anlama",
+   "Bir bobindeki zamanla değişen bir akımın, ikinci, bağımsız bir bobinde nasıl emk oluşturabileceğini anlama",
+   "Bir devrede indüklenen emk’yi aynı devredeki akım değişim hızına ilişkilendirme",
+   "Manyetik alanda depolanan enerjiyi hesaplama",
+   "Bir direnç ve bir indüktör (bobin) içeren devreleri çözümleme",
+   "Hem indüktör hem de kondansatör içeren devrelerde neden elektriksel salınımların oluştuğunu anlama",
+   "Işık hızının, elektrik ve manyetizmanın temel sabitleri ile ilişkisini anlama",
+   "Sinüzoidal bir elektromanyetik dalganın yayılımını betimleme",
+   "Elektromanyetik bir dalganın taşıdığı gücü belirleme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektrik Yükü ve Elektriksel Kuvvet",
+   "Hafta 2 — Gauss Yasası",
+   "Hafta 3 — Gauss Yasası",
+   "Hafta 4 — Elektrik Potansiyeli",
+   "Hafta 5 — Kapasitans ve Dielektrikler",
+   "Hafta 6 — Akım, Direnç ve Elektromotif Kuvvet",
+   "Hafta 7 — Doğru Akım Devreleri",
+   "Hafta 8 — Manyetik Alan ve Manyetik Kuvetler",
+   "Hafta 9 — Manyetik Alan Kaynakları",
+   "Hafta 10 — Manyetik Alan Kaynakları",
+   "Hafta 11 — Elektromanyetik İndüksiyon",
+   "Hafta 12 — İndüktans",
+   "Hafta 13 — Elektromanyetik Dalgalar",
+   "Hafta 14 — Elektromanyetik Dalgalar"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=127",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "PHY 127L": {
+  "code": "PHY 127L",
+  "name": "Physics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Bu, elektrik, manyetizma ve elektromanyetizma hakkında giriş düzeyinde bir fizik dersidir. Ana konular: Coulomb yasası ve elektrik alanı, Gauss yasası, elektrik potansiyel, sığa, elektrostatik enerji ve dielektriklerin özellikleri, akım ve direnç, doğru akım devreleri, manyetik alan, manyetik alan kaynakları, Faraday yasası, indüktans, Maxwell denklemleri ve elektromanyetik dalgalar. This is an introductory level physics course on electricity, magnetism and electromagnetism. The main topics are: Coulomb’s law and electrical field, Gauss’s law, electrical potential, capacitance, electrostatic energy and properties of dielectrics, current and resistance, direct current circuits, magnetic field, sources of magnetic field, Faraday’s law, inductance, Maxwell’s equations and electromagnetic waves.",
+  "outcomes": [
+   "Yükler arasındaki elektrik kuvvetini hesaplamak için Coulomb yasasını kullanma",
+   "Yük dağılımına bağlı elektrik alanını hesaplama",
+   "Elektrik akısının ne anlama geldiğini ve nasıl hesaplanacağını anlama",
+   "Simetrik bir yük dağılımına bağlı elektrik alanını hesaplamak için Gauss yasasını kullanma,",
+   "Bir yük topluluğunun elektrik potansiyel enerjisini hesaplama",
+   "Bir yük topluluğunun uzayda bir noktada ürettiği elektrik potansiyelini hesaplama",
+   "Elektrik alanını hesaplamak için elektrik potansiyelini kullanma",
+   "Kapasitörleri n yapısını ve yük depolama yeteneğini ölçen sığanın nasıl hesaplandığını anlama",
+   "Bir şebekeye bağlı kapasitörleri analiz etme",
+   "Bir kapasitörde depolanan enerji miktarını hesaplama",
+   "Dielektriklerin ne olduğunu ve kapasitörleri nasıl daha etkili hale getirdiklerini anlama",
+   "Elektrik akımının anlamını ve bir iletkende yüklerin nasıl hareket ettiğini anlama",
+   "Bir iletkenin direncini boyutlarından ve özdirencinden hesaplama",
+   "Seri veya paralel olarak çoklu dirençli devreleri çözümleme",
+   "Hem direnç hem kapasitör içeren devreleri çözümleme",
+   "Yüklü bir parçacığın manyetik alandaki hareketini çözümleme",
+   "Akım taşıyan iletkenler üzerindeki manyetik kuvvetleri çözümleme",
+   "Hareketli bir yüklü parçacık tarafından üretilen manyetik alanın doğasını anlama",
+   "Akım taşıyan bir iletken elemanı tarafından üretilen manyetik alanı ifade etme",
+   "Akım taşıyan uzun, düz bir tel tarafından üretilen manyetik alanı hesaplama",
+   "Akım taşıyan, çember şeklinde bükülmüş bir telin ürettiği manyetik alanı hesaplama",
+   "Simetrik akım dağılımlarının manyetik alanını hesaplamak için Ampere yasasını kullanma",
+   "Faraday yasasının bir döngüde indüklenen emk ile döngü içindeki manyetik akı değişimini nasıl ilişkilendirdiğini anlama",
+   "Manyetik alanda hareket eden bir iletkende indüklenen emk’yi hesaplama",
+   "Değişen bir manyetik akının, bir yük dağılımınca üretilenden çok farklı bir elektrik alanı oluşturduğunu anlama",
+   "Hem elektrik hem de manyetizmayı tamamen tanımlayan dört temel denklemi anlama",
+   "Bir bobindeki zamanla değişen bir akımın, ikinci, bağımsız bir bobinde nasıl emk oluşturabileceğini anlama",
+   "Bir devrede indüklenen emk’yi aynı devredeki akım değişim hızına ilişkilendirme",
+   "Manyetik alanda depolanan enerjiyi hesaplama",
+   "Bir direnç ve bir indüktör (bobin) içeren devreleri çözümleme",
+   "Hem indüktör hem de kondansatör içeren devrelerde neden elektriksel salınımların oluştuğunu anlama",
+   "Işık hızının, elektrik ve manyetizmanın temel sabitleri ile ilişkisini anlama",
+   "Sinüzoidal bir elektromanyetik dalganın yayılımını betimleme",
+   "Elektromanyetik bir dalganın taşıdığı gücü belirleme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektrik Yükü ve Elektriksel Kuvvet",
+   "Hafta 2 — Gauss Yasası",
+   "Hafta 3 — Gauss Yasası",
+   "Hafta 4 — Elektrik Potansiyeli",
+   "Hafta 5 — Kapasitans ve Dielektrikler",
+   "Hafta 6 — Akım, Direnç ve Elektromotif Kuvvet",
+   "Hafta 7 — Doğru Akım Devreleri",
+   "Hafta 8 — Manyetik Alan ve Manyetik Kuvetler",
+   "Hafta 9 — Manyetik Alan Kaynakları",
+   "Hafta 10 — Manyetik Alan Kaynakları",
+   "Hafta 11 — Elektromanyetik İndüksiyon",
+   "Hafta 12 — İndüktans",
+   "Hafta 13 — Elektromanyetik Dalgalar",
+   "Hafta 14 — Elektromanyetik Dalgalar"
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=127",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

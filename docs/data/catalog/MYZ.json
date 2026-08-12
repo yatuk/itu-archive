@@ -1,0 +1,611 @@
+{
+ "MYZ 301": {
+  "code": "MYZ 301",
+  "name": "Mühendislik için Yapay Zekaya Giriş",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=301",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 301E": {
+  "code": "MYZ 301E",
+  "name": "Mühendislik için Yapay Zekaya Giriş",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=301",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 302E": {
+  "code": "MYZ 302E",
+  "name": "Makina Mühendisliği için Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "-Yapay Zeka Temelleri ve Uygulamaları, Veri Görselleştirme Hazırlama ve Analiz Yöntemleri, Keşifsel Veri Analizi ve Model Değerlendirme, Makina Öğrenmesi Temelleri, Sınıflandırma Algoritmaları ve Performans Metrikleri, Denetimsiz Öğrenme Yöntemleri, Doğa İlhamlı Optimizasyon Yöntemleri, Yapay Sinir Ağları, Derin Öğrenme ve Evrişimli Sinir Ağı, Yapay Zeka Destekli Üretken Tasarım, Yapay Zeka Tabanlı Prototipleme ve İmalat Süreçleri. -Artificial Intelligence and its Applications , Data Visualization, Preparation and Analysis Methods, Exploratory Data Analysis and Model Evaluation, Fundamentals of Machine Learning, Classification Algorithms and Performance Metrics, Unsupervised Learning Techniques, Nature-Inspired Optimization Methods, Artificial Neural Networks, Deep Learning and Convolutional Neural Networks, Artificial Intelligence-Driven Generative Design AI-Based Prototyping and Manufacturing Processes.",
+  "outcomes": [
+   "Yapay zekanın temellerini ve anahtar kavramlarını anlayabilir.",
+   "Klasik yapay zeka yöntemleri ile ilgili teorik bilgiye sahip olabilir ve bu yöntemleri pratikte uygulayabilir.",
+   "Derin öğrenme ve bilimsel öğrenme gibi modern yapay zeka yaklaşımlarını öğrenebilir ve bu alanlardaki gelişmeleri kavrayabilir.",
+   "Görüntü işleme ve belirsizlik altında karar verme gibi temel yapay zeka uygulamalarını analiz edebilir ve çözüm geliştirebilir",
+   "Makina öğrenmesi algoritmalarını mühendislik problemleri üzerine uygulayabilir.",
+   "Yapay zeka araçları ve kütüphanelerini etkin bir şekilde kullanabilir.",
+   "Yapay zeka destekli üretken tasarım, prototipleme ve imalat süreçlerinde uygulamalı deneyim kazanarak, mühendislik problemlerine çözüm üretebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay Zeka Araçları ve Uygulamaları",
+   "Hafta 2 — Veri Görselleştirme Teknikleri",
+   "Hafta 3 — Veri Hazırlama ve Anlamlandırmanın Temelleri",
+   "Hafta 4 — Keşifsel Veri Analizi ve Model Değerlendirme",
+   "Hafta 5 — Makina Öğrenmesi Temelleri ve Doğrusal Regresyon",
+   "Hafta 6 — Sınıflandırma Algoritmaları ve Değerlendirme Metrikleri",
+   "Hafta 7 — Denetimsiz Öğrenmenin Temelleri",
+   "Hafta 8 — Doğa İlhamlı Optimizasyon",
+   "Hafta 9 — Yapay Sinir Ağlarına Giriş",
+   "Hafta 10 — Yapay Sinir Ağlarının Eğitimi",
+   "Hafta 11 — Evrişimli Sinir Ağı Temelleri",
+   "Hafta 12 — Evrişimli Sinir Ağı ile Görüntü İşleme",
+   "Hafta 13 — Makina Mühendisliğinde Yapay Zeka Destekli Üretken Tasarım",
+   "Hafta 14 — Prototipleme ve İmalatta Yapay Zeka"
+  ],
+  "textbooks": [
+   "E. Kalay, A. Altınkaynak, E. Söylemez, E. Günpınar, E. Üstündağ, H. Yalçın, M. Kırca Ders notları, İstanbul, 2025"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=302",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 303E": {
+  "code": "MYZ 303E",
+  "name": "İnşaat Mühendisliğinde Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 1,
+   "lab": 0,
+   "local": 2.5,
+   "ects": 4
+  },
+  "description": "Bu ders, inşaat mühendisliği alanında yapay zeka (YZ) tekniklerinin ve uygulamalarının incelenmesini ve geliştirilmesini amaçlar. Ders kapsamında, makine öğrenimi, derin öğrenme, veri madenciliği, model oluşturma ve değerlendirme gibi YZ tekniklerinin teorik altyapısı ve güncel yazılımlarla desteklenmesi ele alınarak, yapı malzemeleri, yapısal analiz, betonarme, ahşap-çelik, geoteknik, hidrolik, ulaştırma, deprem ve inşaat yönetimi gibi çeşitli inşaat mühendisliği problemlerine uygulanması incelenecektir. This course aims to examine and develop artificial intelligence (AI) techniques and applications in the field of civil engineering. The course will cover the theoretical foundations of AI techniques such as machine learning, deep learning, data mining, model building, and evaluation, supported by current software. These techniques will be applied to various civil engineering problems, including construction materials, structural analysis, reinforced concrete, wood and steel structures, geotechnics, hydraulics, transportation, earthquake engineering, and construction management.",
+  "outcomes": [
+   "Yapay zeka kavramlarını ve inşaat mühendisliğindeki uygulama alanlarını tanımlayabilecek.",
+   "Farklı YZ tekniklerinin (makine öğrenimi, derin öğrenme, veri madenciliği vb.) temel prensiplerini anlayabilecek.",
+   "YZ tekniklerini kullanarak inşaat mühendisliği problemlerine yönelik çözümler geliştirebilecek.",
+   "Veri toplama, işleme ve analiz etme becerisi kazanabilecek.",
+   "YZ tabanlı yazılım geliştirmeye yönelik deneyim kazanacak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay Zeka’ya giriş",
+   "Hafta 2 — Yapay Zeka Temel Kavramları ve Teknikleri.",
+   "Hafta 3 — Makine Öğrenimi ve Derin Öğrenme Kavramları",
+   "Hafta 4 — Veri Madenciliği ve Veri Hazırlama Teknikleri",
+   "Hafta 5 — Sınıflandırma, kestirim ve kümeleme Kavramları",
+   "Hafta 6 — Regresyon Analizi ve Türleri",
+   "Hafta 7 — Python ile YZ Uygulamaları/Kütüphanelerine genel bakış",
+   "Hafta 8 — Tensorflow, Pytorch, Scikit Kütüphaneleri",
+   "Hafta 9 — YOLO algoritmaları ve Kütüphaneleri",
+   "Hafta 10 — Model Başarısını Ölçme ve Değerlendirme Yöntemleri ve Metrikleri",
+   "Hafta 11 — Yıliçi Sınavı",
+   "Hafta 12 — İnşaat Mühendisliği YZ Uygulaması - I",
+   "Hafta 13 — İnşaat Mühendisliği YZ Uygulaması - II",
+   "Hafta 14 — İnşaat Mühendisliği YZ Uygulaması - III"
+  ],
+  "textbooks": [
+   "Artificial Intelligence and Machine Learning Techniques for Civil Engineering, Vagelis Plevris, Afaq Ahmad, Nikos D. Lagaros, IGI Global, 2023"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=303",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 304E": {
+  "code": "MYZ 304E",
+  "name": "Çevre Mühendisliğinde Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Yapay zekâ kapsamındaki temel konuların ve güncel uygulamaların aktarıldığı bu derste ayrıca bunların çevre mühendisliğindeki kullanımına yer verilmektedir. This course offers an in-depth exploration of fundamental concepts and contemporary applications in artificial intelligence, with a special focus on how these applications intersect with the field of environmental engineering.",
+  "outcomes": [
+   "Analitik ve sayısal modellere alternatif olarak istatistiksel modelleri kullanabilme becerisi kazanmak",
+   "Verilerle çalışabilme yeteneği kazanmak",
+   "Çevre mühendisliği problemlerinin çözümüne destek olarak kullanılabilecek yapay zeka yaklaşımlarını uygulayabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay Zekaya Giriş",
+   "Hafta 2 — Lineer ve Non-lineer Ampirik Tahmin Modelleri",
+   "Hafta 3 — Yapay Sinir Ağlarına Giriş",
+   "Hafta 4 — Transfer/Aktivasyon Fonksiyonları",
+   "Hafta 5 — Yapay Sinir Ağları Matematiksel Şeması ve Hesaplama",
+   "Hafta 6 — Tanımlayıcı İstatistikler",
+   "Hafta 7 — Python Temel Kodlar",
+   "Hafta 8 — Bilgisayar Destekli Hesaplamalar için Veri Hazırlama",
+   "Hafta 9 — Bilgisayar Destekli Veri İşlenmesi",
+   "Hafta 10 — Veri Görselleştirme Python: Matplotlib, numpy, plotly",
+   "Hafta 11 — Bulut Hesaplama Platformları Jupyter Notebook AWS, Google cloud, Microsoft azure",
+   "Hafta 12 — Çevre mühendisliği uygulaması - I",
+   "Hafta 13 — Çevre mühendisliği uygulaması - II",
+   "Hafta 14 — Çevre mühendisliği uygulaması - III"
+  ],
+  "textbooks": [
+   "Charu C. Aggarwal. Neural Networks and Deep Learning: A Textbook. 2nd Edition, Springer, 2023."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=304",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 305": {
+  "code": "MYZ 305",
+  "name": "Harita Mühendisliğinde Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Yapay zekâ kapsamındaki temel konuların ve güncel uygulamaların aktarıldığı bu derste Geomatik Mühendisliği ile yapay zekanın kesiştiği alanlar vurgulanmaktadır. Bu ders, Geomatik Mühendisliği alanında yapay zeka tekniklerinin ve uygulamalarının incelenmesini ve geliştirilmesini amaçlar. Ders kapsamında, makine öğrenmesi, derin öğrenme, veri madenciliği, model geliştirme ve değerlendirme gibi yapay zeka tekniklerinin teorik altyapısına ve güncel yazılımlarla desteklenmesine odaklanılarak, kentsel/kırsal arazi yönetimi, planlama, çevresel izleme, akıllı tarım gibi çeşitli alanlardaki uygulamaları ele alınmaktadır. This course offers an in-depth exploration of fundamental concepts and contemporary applications in artificial intelligence, with a special focus on how these applications intersect with the field of Geomatics Engineering. It aims to examine and develop artificial intelligence (AI) techniques and applications within the field of Geomatics Engineering. The course covers the theoretical foundations of AI techniques such as machine learning, deep learning, data mining, model development, and evaluation, supported by contemporary software tools. It also addresses applications in various domains, including urban/rural land management, planning, environmental monitoring, and smart agriculture.",
+  "outcomes": [
+   "Analitik ve sayısal modellere alternatif olarak istatistiksel modelleri kullanabilme becerisi kazanmak",
+   "Konumsal verilerle çalışabilme yeteneği kazanmak",
+   "Geomatik Mühendisliği problemlerinin çözümüne destek olarak kullanabilecek yapay zeka yaklaşımlarını uygulayabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay zekaya giriş",
+   "Hafta 2 — Yapay Zeka Temel Kavramları ve Teknikleri",
+   "Hafta 3 — Makine Öğrenimi ve Derin Öğrenme Kavramları",
+   "Hafta 4 — Veri hazırlama",
+   "Hafta 5 — Keşifsel veri analizi",
+   "Hafta 6 — Regresyon",
+   "Hafta 7 — Sınıflandırma",
+   "Hafta 8 — Kümeleme",
+   "Hafta 9 — Özellik mühendisliği, özellik seçimi",
+   "Hafta 10 — Model başarısını değerlendirme",
+   "Hafta 11 — Zaman serileri",
+   "Hafta 12 — Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+   "Hafta 13 — Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+   "Hafta 14 — Uygulama I: Geomatik Mühendisliğinde yapay zeka"
+  ],
+  "textbooks": [
+   "Barber, David. Bayesian reasoning and machine learning. Cambridge University Press, 2012."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=305",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 305E": {
+  "code": "MYZ 305E",
+  "name": "Harita Mühendisliğinde Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Yapay zekâ kapsamındaki temel konuların ve güncel uygulamaların aktarıldığı bu derste Geomatik Mühendisliği ile yapay zekanın kesiştiği alanlar vurgulanmaktadır. Bu ders, Geomatik Mühendisliği alanında yapay zeka tekniklerinin ve uygulamalarının incelenmesini ve geliştirilmesini amaçlar. Ders kapsamında, makine öğrenmesi, derin öğrenme, veri madenciliği, model geliştirme ve değerlendirme gibi yapay zeka tekniklerinin teorik altyapısına ve güncel yazılımlarla desteklenmesine odaklanılarak, kentsel/kırsal arazi yönetimi, planlama, çevresel izleme, akıllı tarım gibi çeşitli alanlardaki uygulamaları ele alınmaktadır. This course offers an in-depth exploration of fundamental concepts and contemporary applications in artificial intelligence, with a special focus on how these applications intersect with the field of Geomatics Engineering. It aims to examine and develop artificial intelligence (AI) techniques and applications within the field of Geomatics Engineering. The course covers the theoretical foundations of AI techniques such as machine learning, deep learning, data mining, model development, and evaluation, supported by contemporary software tools. It also addresses applications in various domains, including urban/rural land management, planning, environmental monitoring, and smart agriculture.",
+  "outcomes": [
+   "Analitik ve sayısal modellere alternatif olarak istatistiksel modelleri kullanabilme becerisi kazanmak",
+   "Konumsal verilerle çalışabilme yeteneği kazanmak",
+   "Geomatik Mühendisliği problemlerinin çözümüne destek olarak kullanabilecek yapay zeka yaklaşımlarını uygulayabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay zekaya giriş",
+   "Hafta 2 — Yapay Zeka Temel Kavramları ve Teknikleri",
+   "Hafta 3 — Makine Öğrenimi ve Derin Öğrenme Kavramları",
+   "Hafta 4 — Veri hazırlama",
+   "Hafta 5 — Keşifsel veri analizi",
+   "Hafta 6 — Regresyon",
+   "Hafta 7 — Sınıflandırma",
+   "Hafta 8 — Kümeleme",
+   "Hafta 9 — Özellik mühendisliği, özellik seçimi",
+   "Hafta 10 — Model başarısını değerlendirme",
+   "Hafta 11 — Zaman serileri",
+   "Hafta 12 — Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+   "Hafta 13 — Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+   "Hafta 14 — Uygulama I: Geomatik Mühendisliğinde yapay zeka"
+  ],
+  "textbooks": [
+   "Barber, David. Bayesian reasoning and machine learning. Cambridge University Press, 2012."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=305",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 306E": {
+  "code": "MYZ 306E",
+  "name": "Mimarlık, Planlama ve Tasarımda Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Mimarlık, planlama ve tasarımda yapay zekanın temel kavramları, uygulamaları ve potansiyeli; yapay zeka destekli tasarım araçları ve yazılımları; tasarım problemlerine yapay zeka destekli çözümler aranması ve geliştirilmesi; yapay zeka ile birlikte ortaya çıkan yeni etik sorunlar ve güncel yaklaşımlar. Basic concepts, applications, and potential of artificial intelligence in architecture, planning, and design; AI-assisted design tools and software; exploration and development of AI-driven solutions for design problems; ethical issues and current approaches emerged with artificial intelligence.",
+  "outcomes": [
+   "Yapay zekanın temelleri ve terminolojisi hakkında bilgi sahibi olacak",
+   "Büyük Dil Modelleri hakkında bilgi sahibi olacak",
+   "Mimarlık, planlama ve tasarım disiplinlerinde güncel yapay zeka yaklaşım, araç ve algoritmaları hakkında temel düzeyde bilgi sahibi olacak",
+   "Yapay zekayı etik değerlerin farkında olarak kullanacak",
+   "Yapay zekayı proje üzerinden kullanma pratiği kazanacak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay Zekanın Temelleri",
+   "Hafta 2 — Yapay Zeka ile İlişkili Terminoloji",
+   "Hafta 3 — Büyük Dil Modelleri: Türleri, Çalışma Prensipleri, İstemler",
+   "Hafta 4 — Yapay Zeka ve Etik: Standartlar ve Etik Düzenlemeler, Yasal Karşılıklar",
+   "Hafta 5 — Yapay Zeka Yaklaşım, Araç ve Algoritmaları: Kavramsal Tasarım",
+   "Hafta 6 — Yapay Zeka Yaklaşım, Araç ve Algoritmaları: Temsil ve Çoklu Ortam Tasarımında",
+   "Hafta 7 — Yapay Zeka Yaklaşım, Araç ve Algoritmaları: Performans Analizinde",
+   "Hafta 8 — Yapay Zeka Yaklaşım, Araç ve Algoritmaları: Üretim/Yapım Süreci ve Kullanım Sonrasında",
+   "Hafta 9 — Yapay Zeka Tabanlı Proje Geliştirme: Yaklaşım Benimseme, Araç ve Algoritma Seçimi",
+   "Hafta 10 — Yapay Zeka Tabanlı Proje Geliştirme: Veri Toplama",
+   "Hafta 11 — Yapay Zeka Tabanlı Proje Geliştirme: Veri Hazırlama ve Temizleme",
+   "Hafta 12 — Yapay Zeka Tabanlı Proje Geliştirme: Yapay Zeka Modelini Geliştirme",
+   "Hafta 13 — Yapay Zeka Tabanlı Proje Geliştirme: Yapay Zeka Modelini Geliştirme Yapay Zeka Tabanlı Proje Geliştirme: Yapay Zeka Modelini Test Etme",
+   "Hafta 14 — Güncel Vaka ve Proje İncelemeleri"
+  ],
+  "textbooks": [
+   "As, I., & Basu, P. (Eds.). (2021). The Routledge companion to artificial intelligence in architecture. Routledge.",
+   "As, I., Basu, P., & Talwar, P. (Eds.). (2022). Artificial intelligence in urban planning and design: Technologies, implementation, and impacts. Elsevier.",
+   "Bernstein, P. (2022). Machine Learning: Architecture in the age of Artificial Intelligence (1st ed.). RIBA Publishing",
+   "Chaillou, S. (2022). Artificial intelligence and architecture: from research to practice. Birkhäuser"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=306",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 307": {
+  "code": "MYZ 307",
+  "name": "Elektrik-Elektronik Mühendisleri için Makine Öğrenmesi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bu ders, öğrencilere elektrik ve elektronik mühendisliği bağlamında makine öğreniminin prensiplerini ve uygulamalarını tanıtır. Öğrenciler, temel makine öğrenimi algoritmalarını ve tekniklerini öğrenecekler ve bunları sinyal işleme, kontrol sistemleri, iletişim sistemleri ve elektrik ve elektronik mühendisliği ile ilgili diğer alanlardaki sorunları çözmek için nasıl uygulayacaklarını öğrenecekler. This course introduces students to the principles and applications of machine learning in the context of electrical and electronics engineering. Students will learn fundamental machine learning algorithms and techniques and how to apply them to solve problems in signal processing, control systems, communication systems, and other areas relevant to electrical and electronics engineering.",
+  "outcomes": [
+   "Bu dersi başarıyla geçen öğrenciler Makine Öğrenmesinin temelleri hakkında bilgi sahibi olacak.",
+   "Bu dersi başarıyla geçen öğrenciler lineer modeller, SVM, PCA, karar ağaçları, bayesci öğrenme gibi klasik makine öğrenme metotları hakkında teorik ve pratik düzeyde bilgi sahibi olacak",
+   "Bu dersi başarıyla geçen öğrenciler derin öğrenme, CNN, Omurga ağ mimarileri gibi modern makine öğrenmesi metotları hakkında bilgi sahibi olacak.",
+   "Bu dersi başarıyla geçen öğrenciler görüntü işleme, zaman serisi analizi, belirsizlik altında karar verme gibi temel makine öğrenmesi uygulamaları hakkında bilgi sahibi olacak.",
+   "Bu dersi başarıyla geçen öğrenciler makine öğrenmesi pratiği kazanacak, mevcut makine öğrenmesi araçlarını kullanmayı öğrenecek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Makine öğrenmesi, yapay zeka, derin öğrenme kavramları, öğrenme yaklaşımları (öğreticili, yarı öğreticili, öğreticisiz), büyük veri modelleme, öznitelik çıkarma, ölçekleme, normalizasyon.",
+   "Hafta 2 — Makine Öğrenmesinin temelleri. Kapasite, Aşırı uyum, Eksik uyum, Hiperparametreler.",
+   "Hafta 3 — Bayesçi öğrenme ve karar verme (Çok boyutlu Gauss dağılımı, kovaryans matrisi, Mahalonobis uzaklığı).",
+   "Hafta 4 — Öğreticili öğrenme, sınıflandırıcı tasarımı, ayırt edici fonksiyon, karar eşiği, karar eğrisi, karar yüzeyi.",
+   "Hafta 5 — Büyük veri önişleme, vektör uzayları ile ilgili temel kavramlar, temel bileşen analizi (PCA), LDA.",
+   "Hafta 6 — k-NN, SVM sınıflandırıcılar. Performans metrikleri (F1, precision, recall).",
+   "Hafta 7 — Öğreticisiz öğrenme (öbekleme, k-ortalamalı öbekleme, ağaç tabanlı öbekleyiciler).",
+   "Hafta 8 — Yapay sinir ağları ile öğrenme. Perceptron, aktivasyon fonksiyonu, örnekler ve sezgiler.",
+   "Hafta 9 — Yapay sinir ağları ile öğrenme. karesel hatanın enküçüklenmesi, ileriye-geriye geçiş. Öğrenme parametrelerinin güncellenmesi.",
+   "Hafta 10 — Temel katmanlar: Konvolüsyonel yapay sinir ağları, Tekrarlayan Sinir Ağları, Otokodlayıcılar.",
+   "Hafta 11 — Konveks optimizasyon ile ağ parametrelerinin öğrenilmesi. SGD (Stochastic Gradient Descent).",
+   "Hafta 12 — Derin öğrenme uygulamaları. Sınıflandırma, tanıma, bölütleme, izleme, … Uygulamalara bağlı olarak kullanılan temel kayıp fonksiyonları. (BCE, MSE, AMSE).",
+   "Hafta 13 — Derin Öğrenmede kullanılan eniyileyiciler (ADAM optimizer) ve temel omurga ağ mimarileri (ResNet).",
+   "Hafta 14 — Derin öğrenmede kullanılan modern katman yapıları (Neural ODE, Physics-Informed Neural Networks, Transformers)."
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=307",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 307E": {
+  "code": "MYZ 307E",
+  "name": "Elektrik-Elektronik Mühendisleri için Makine Öğrenmesi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bu ders, öğrencilere elektrik ve elektronik mühendisliği bağlamında makine öğreniminin prensiplerini ve uygulamalarını tanıtır. Öğrenciler, temel makine öğrenimi algoritmalarını ve tekniklerini öğrenecekler ve bunları sinyal işleme, kontrol sistemleri, iletişim sistemleri ve elektrik ve elektronik mühendisliği ile ilgili diğer alanlardaki sorunları çözmek için nasıl uygulayacaklarını öğrenecekler. This course introduces students to the principles and applications of machine learning in the context of electrical and electronics engineering. Students will learn fundamental machine learning algorithms and techniques and how to apply them to solve problems in signal processing, control systems, communication systems, and other areas relevant to electrical and electronics engineering.",
+  "outcomes": [
+   "Bu dersi başarıyla geçen öğrenciler Makine Öğrenmesinin temelleri hakkında bilgi sahibi olacak.",
+   "Bu dersi başarıyla geçen öğrenciler lineer modeller, SVM, PCA, karar ağaçları, bayesci öğrenme gibi klasik makine öğrenme metotları hakkında teorik ve pratik düzeyde bilgi sahibi olacak",
+   "Bu dersi başarıyla geçen öğrenciler derin öğrenme, CNN, Omurga ağ mimarileri gibi modern makine öğrenmesi metotları hakkında bilgi sahibi olacak.",
+   "Bu dersi başarıyla geçen öğrenciler görüntü işleme, zaman serisi analizi, belirsizlik altında karar verme gibi temel makine öğrenmesi uygulamaları hakkında bilgi sahibi olacak.",
+   "Bu dersi başarıyla geçen öğrenciler makine öğrenmesi pratiği kazanacak, mevcut makine öğrenmesi araçlarını kullanmayı öğrenecek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Makine öğrenmesi, yapay zeka, derin öğrenme kavramları, öğrenme yaklaşımları (öğreticili, yarı öğreticili, öğreticisiz), büyük veri modelleme, öznitelik çıkarma, ölçekleme, normalizasyon.",
+   "Hafta 2 — Makine Öğrenmesinin temelleri. Kapasite, Aşırı uyum, Eksik uyum, Hiperparametreler.",
+   "Hafta 3 — Bayesçi öğrenme ve karar verme (Çok boyutlu Gauss dağılımı, kovaryans matrisi, Mahalonobis uzaklığı).",
+   "Hafta 4 — Öğreticili öğrenme, sınıflandırıcı tasarımı, ayırt edici fonksiyon, karar eşiği, karar eğrisi, karar yüzeyi.",
+   "Hafta 5 — Büyük veri önişleme, vektör uzayları ile ilgili temel kavramlar, temel bileşen analizi (PCA), LDA.",
+   "Hafta 6 — k-NN, SVM sınıflandırıcılar. Performans metrikleri (F1, precision, recall).",
+   "Hafta 7 — Öğreticisiz öğrenme (öbekleme, k-ortalamalı öbekleme, ağaç tabanlı öbekleyiciler).",
+   "Hafta 8 — Yapay sinir ağları ile öğrenme. Perceptron, aktivasyon fonksiyonu, örnekler ve sezgiler.",
+   "Hafta 9 — Yapay sinir ağları ile öğrenme. karesel hatanın enküçüklenmesi, ileriye-geriye geçiş. Öğrenme parametrelerinin güncellenmesi.",
+   "Hafta 10 — Temel katmanlar: Konvolüsyonel yapay sinir ağları, Tekrarlayan Sinir Ağları, Otokodlayıcılar.",
+   "Hafta 11 — Konveks optimizasyon ile ağ parametrelerinin öğrenilmesi. SGD (Stochastic Gradient Descent).",
+   "Hafta 12 — Derin öğrenme uygulamaları. Sınıflandırma, tanıma, bölütleme, izleme, … Uygulamalara bağlı olarak kullanılan temel kayıp fonksiyonları. (BCE, MSE, AMSE).",
+   "Hafta 13 — Derin Öğrenmede kullanılan eniyileyiciler (ADAM optimizer) ve temel omurga ağ mimarileri (ResNet).",
+   "Hafta 14 — Derin öğrenmede kullanılan modern katman yapıları (Neural ODE, Physics-Informed Neural Networks, Transformers)."
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=307",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 308E": {
+  "code": "MYZ 308E",
+  "name": "Deniz Teknolojisinde Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Yapay zekâ kapsamındaki temel konuların ve güncel uygulamaların aktarıldığı bu derste ayrıca deniz mühendisliğine özel uygulamalara yer verilmektedir. This course offers an in-depth exploration of fundamental concepts and contemporary applications in artificial intelligence, with a special focus on how these applications intersect with the field of marine engineering.",
+  "outcomes": [
+   "1. Analitik ve sayısal modellere alternatif olarak istatistiksel modelleri kullanabilme becerisi kazanmak.",
+   "2. Verilerle çalışabilme yeteneği kazanmak.",
+   "3. Deniz mühendisliği problemlerinin çözümüne destek olarak kullanabilecek yapay zeka yaklaşımlarını uygulayabilmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay zekaya giriş",
+   "Hafta 2 — Olasılık ve istatistik",
+   "Hafta 3 — Bayezyen ağları",
+   "Hafta 4 — Optimizasyon",
+   "Hafta 5 — Veri hazırlama",
+   "Hafta 6 — Keşifsel veri analizi",
+   "Hafta 7 — Regresyon ve sınıflandırma",
+   "Hafta 8 — Kümeleme / özellik mühendisliği",
+   "Hafta 9 — Takviyeli öğrenme",
+   "Hafta 10 — Model seçimi",
+   "Hafta 11 — Zaman serileri",
+   "Hafta 12 — Deniz teknolojisi uygulaması - I",
+   "Hafta 13 — Deniz teknolojisi uygulaması - II",
+   "Hafta 14 — Deniz teknolojisi uygulaması - III"
+  ],
+  "textbooks": [
+   "• Barber, David. Bayesian reasoning and machine learning. Cambridge University Press, 2012."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=308",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 309": {
+  "code": "MYZ 309",
+  "name": "Matematik Mühendisliğinde Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Veri analizinde iyi alışkanlıklar. İstatistik, veri bilimi, makine öğrenmesi ve yapay zeka: benzerlikler ve farklılıklar. Denetimli ve denetimsiz öğrenme algoritmalarının arasındaki farklılıklar. Doğrusal regresyon, düzenleme yöntemleri (Lasso ve Ridge), sınıflandırma teknikleri (lojistik regresyon, destek vektör makineleri, ağaç tabanlı yöntemler), model değerlendirme stratejileri (çapraz doğrulama ve performans metrikleri). Boyut indirgeme ve temel bileşen analizi. Kümeleme algoritmaları. Yapar sinir ağları. Yapay zeka uygulamaları. Best practices in data analysis. Statistics, data science, machine learning, and artificial intelligence: similarities and differences. Differences between supervised and unsupervised learning algorithms. Linear regression, regularization methods (Lasso and Ridge), classification techniques (logistic regression, support vector machines, tree-based methods), model evaluation strategies (cross-validation and performance metrics). Dimensionality reduction and principal component analysis. Clustering algorithms. Artificial neural networks. Applications of artificial intelligence.",
+  "outcomes": [
+   "Veri analizindeki temel yapay zeka sorunlarına dair temel bir anlayış geliştirir.",
+   "Yapay zeka problemlerini çözmek için temel istatistiksel ve makine öğrenmesi araçlarını kullanma konusunda pratik beceriler kazanır.",
+   "Ders boyunca geliştirdikleri makine öğrenmesi ve istatistiksel modeller hakkında analitik raporlar yazabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri bilimi, istatistik, makine öğrenmesi ve yapay zeka arasındaki farklar",
+   "Hafta 2 — Veri biliminde iyi alışkanlıklar",
+   "Hafta 3 — Temel istatistik kavramları",
+   "Hafta 4 — Hızlandırılmış Python dersi",
+   "Hafta 5 — Güdümlü ve güdümsüz öğrenme, Çapraz doğrulama yöntemleri",
+   "Hafta 6 — Sınıflandırma ve öbekleme algoritmaları: k-en yakın komşu ve k-ortalamalar",
+   "Hafta 7 — Lojistik regresyon ve Destek vektör makinesi",
+   "Hafta 8 — Karar ağaçları ve rastgele ormanlar",
+   "Hafta 9 — Toplu modeller: bire karşı bir ve bire karşı hepsi",
+   "Hafta 10 — Sürekli modeller, Regresyon modelleri",
+   "Hafta 11 — Sıradan en küçük kareler, destek vektör makinesi ve karar ağacı regresyon modelleri",
+   "Hafta 12 — Düzenlileştirilmiş modeller; Ridge, lasso, elastik net regresyon modelleri",
+   "Hafta 13 — Yapay sinir ağları ve yapay zeka uygulamaları",
+   "Hafta 14 — Örneklerle yapay zeka uygulamaları"
+  ],
+  "textbooks": [
+   "\"The Elements of Statistical Learning: Data Mining, Inference, and Prediction\", T. Hastie, R. Tibshirani, J. Friedman. (2009) Springer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=309",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 309E": {
+  "code": "MYZ 309E",
+  "name": "Matematik Mühendisliğinde Yapay Zeka",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Veri analizinde iyi alışkanlıklar. İstatistik, veri bilimi, makine öğrenmesi ve yapay zeka: benzerlikler ve farklılıklar. Denetimli ve denetimsiz öğrenme algoritmalarının arasındaki farklılıklar. Doğrusal regresyon, düzenleme yöntemleri (Lasso ve Ridge), sınıflandırma teknikleri (lojistik regresyon, destek vektör makineleri, ağaç tabanlı yöntemler), model değerlendirme stratejileri (çapraz doğrulama ve performans metrikleri). Boyut indirgeme ve temel bileşen analizi. Kümeleme algoritmaları. Yapar sinir ağları. Yapay zeka uygulamaları. Best practices in data analysis. Statistics, data science, machine learning, and artificial intelligence: similarities and differences. Differences between supervised and unsupervised learning algorithms. Linear regression, regularization methods (Lasso and Ridge), classification techniques (logistic regression, support vector machines, tree-based methods), model evaluation strategies (cross-validation and performance metrics). Dimensionality reduction and principal component analysis. Clustering algorithms. Artificial neural networks. Applications of artificial intelligence.",
+  "outcomes": [
+   "Veri analizindeki temel yapay zeka sorunlarına dair temel bir anlayış geliştirir.",
+   "Yapay zeka problemlerini çözmek için temel istatistiksel ve makine öğrenmesi araçlarını kullanma konusunda pratik beceriler kazanır.",
+   "Ders boyunca geliştirdikleri makine öğrenmesi ve istatistiksel modeller hakkında analitik raporlar yazabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri bilimi, istatistik, makine öğrenmesi ve yapay zeka arasındaki farklar",
+   "Hafta 2 — Veri biliminde iyi alışkanlıklar",
+   "Hafta 3 — Temel istatistik kavramları",
+   "Hafta 4 — Hızlandırılmış Python dersi",
+   "Hafta 5 — Güdümlü ve güdümsüz öğrenme, Çapraz doğrulama yöntemleri",
+   "Hafta 6 — Sınıflandırma ve öbekleme algoritmaları: k-en yakın komşu ve k-ortalamalar",
+   "Hafta 7 — Lojistik regresyon ve Destek vektör makinesi",
+   "Hafta 8 — Karar ağaçları ve rastgele ormanlar",
+   "Hafta 9 — Toplu modeller: bire karşı bir ve bire karşı hepsi",
+   "Hafta 10 — Sürekli modeller, Regresyon modelleri",
+   "Hafta 11 — Sıradan en küçük kareler, destek vektör makinesi ve karar ağacı regresyon modelleri",
+   "Hafta 12 — Düzenlileştirilmiş modeller; Ridge, lasso, elastik net regresyon modelleri",
+   "Hafta 13 — Yapay sinir ağları ve yapay zeka uygulamaları",
+   "Hafta 14 — Örneklerle yapay zeka uygulamaları"
+  ],
+  "textbooks": [
+   "\"The Elements of Statistical Learning: Data Mining, Inference, and Prediction\", T. Hastie, R. Tibshirani, J. Friedman. (2009) Springer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=309",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 310E": {
+  "code": "MYZ 310E",
+  "name": "Fizikte Makine Öğrenmesi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "-Bu ders temel olarak günümüzün popüler veriye dayalı öğrenme fikirlerini ele alarak doğada var olan rastgele davranışların istatiksel bir çerçevede incelenmesini ele alacaktır. -Ders kapsamında çeşitli fizik, matematik ve programlama detayları bulunmasına ek olarak kuramsal detayların ötesinde, uygulamalar temel alınarak sadece belli bir gruba yönelik değil, tüm veriye dayalı incelemelerde kullanılması mümkün olan bir giriş dersi olarak verilmesi planlanmaktadır. -Doğada çeşitli şekillerde kendini gösteren rastgele davranışların bir bütünü olarak ele alınan ve ölçülen verinin istatiksel kurallar temelinde hesaplamalı güncel bilgisayar uygulamaları ile anlaşılması sağlanacaktır. -This lecture is an attempt to bring together many of the important new ideas in learning, and explain them in a statistical framework. -While some physics/mathematical/computing details are needed, the lecture emphasize the methods and their conceptual underpinnings rather than their theoretical properties. -The lecture is dedicated not just to physicist but also to researchers and practitioners in a wide variety of engineering fields",
+  "outcomes": [
+   "Güncel açık kaynak kodlu veri analizi yazılımları ve kullanımları hakkında genel bilgi sahibi olma",
+   "Güncel programlama dillerini sayısal analizde kullanabilme, bunların bilimsel problemler üzerinde teknik olarak çalışmak",
+   "Çeşitli veri sistemlerini sayısal olarak analiz edebilme, görselleştirme ve anlama",
+   "İstatiksel metotlar arası etkileşim, nesneye yönelik algılama ve kullanıcı arabirimi oluşturmanın veriye dayalı bilimsel problemlere uygulanması hakkında bilgi sahibi olma,",
+   "Kesin çözüm gerektiren durumlarda veriye dayalı tahmin konusunda bilgi sahibi olmak",
+   "Bilimsel ve iş zekâsı konusunda çeşitli projelendirme çalışması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İstatiksel öğrenme dersine giriş ve temel konuların özetlenmesi",
+   "Hafta 2 — Olasılık kuramı olarak belirsizlik ve hata aktarılması",
+   "Hafta 3 — Veri formatları ve görselleştirme",
+   "Hafta 4 — Veri madenciliği ve veri indirgeme",
+   "Hafta 5 — Fiziksel ölçümler: rastgele durumların istatiksel dağılımları ve fikirler",
+   "Hafta 6 — Kompleks fonksiyonların fit edilmesi",
+   "Hafta 7 — Bilgisayar minimizasyonu ve hata matrisi",
+   "Hafta 8 — Gözetimli öğrenime giriş ve fizik problemlerine uygulanması",
+   "Hafta 9 — Regresyon analizi için doğrusal metotlar",
+   "Hafta 10 — Sınıflandırma için doğrusal metotlar",
+   "Hafta 11 — Ek modeller, karar ağaçları ve ilgili metotlar",
+   "Hafta 12 — Derin öğrenime giriş",
+   "Hafta 13 — Veriye dayalı bilimsel ve mühendislik uygulamaları",
+   "Hafta 14 — Proje sunumları ve değerlendirme"
+  ],
+  "textbooks": [
+   "T. HASTIE, H. TIBSHIRANI, J. FRIEDMAN “ELEMENTS OF STATISTICAL LEARNING”, 2009"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=310",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 311E": {
+  "code": "MYZ 311E",
+  "name": "Kimyada Yapay Zeka ve Makine Öğrenmesi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Yapay zeka ve makine öğrenmesinin tanımlanması; makine öğrenmesindeki temel kavramların açıklanması; yapay sinir ağları ve derin öğrenme yöntemlerinin tanıtılması; istatiksel olarak makine öğrenmesi modellerinin performanslarının değerlendirilmesi; kimyasal verilerin bilgisayarlarda işlenmesi ve tanımlanması; makine öğrenmesinin kimyasal sentezde uygulamaları; makine öğrenmesi ile materyal tasarımı; ilaç keşfi için makine öğrenmesi uygulamaları; hesaplamalı kimya ve makine öğrenmesi yöntemlerinin birleştirilmesi; python ile pratik uygulamalar Defining artificial intelligence and machine learning; explaining the basic concepts in machine learning; introducing artificial neural networks and deep learning methods; statistically evaluating the performance of machine learning models; handling and representation of chemical data on computers; applications of machine learning in chemical synthesis; material design with machine learning; machine learning applications for drug design; combining computational chemistry and machine learning methods; practical applications with python",
+  "outcomes": [
+   "Yapay zeka, makine öğrenmesi, derin öğrenme kavramlarını ve aralarındaki ilişkileri açıklayabilmek",
+   "Geleneksel makine öğrenmesi yöntemlerinin örneklerle tanımlayabilmek",
+   "Yapay sinir ağlarının temellerini ve işleyiş prensiplerini kavramak",
+   "Makine öğrenimi yaklaşımlarında kullanılacak kimyasal verileri işleyebilmek ve molekülleri bilgisayarların anlayabileceği şekilde tanımlayabilmek",
+   "Makine öğrenmesi modellerinin performanslarını istatiksel olarak değerlendirebilmek",
+   "Kimyasal sentezde ve malzeme tasarımında makine öğrenimi yaklaşımlarının kullanımını örneklendirebilmek",
+   "Makine öğrenmesi yaklaşımlarının ilaç tasarımındaki yeri ve önemini anlamak",
+   "Hesaplamalı kimya yöntemleri ve makine öğreniminin birlikte nasıl kullanılabileceğini örneklerle açıklayabilmek",
+   "Python programlama dilini kullanarak makine öğrenmesi modelleri kurabilme ve test edebilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay zeka ve makine öğrenmesine giriş",
+   "Hafta 2 — Geleneksel makine öğrenmesi yöntemleri",
+   "Hafta 3 — Derin öğrenme ve yapay sinir ağları yöntemleri",
+   "Hafta 4 — Kimyasal veri ve tanımlayıcılar",
+   "Hafta 5 — Modellerin istatiksel olarak değerlendirilmesi",
+   "Hafta 6 — Kimyasal sentezde makine öğrenmesi uygulamaları",
+   "Hafta 7 — Makine öğrenmesi ile malzeme tasarımı",
+   "Hafta 8 — İlaç keşfi ve tasarımı için makine öğrenmesi uygulamaları",
+   "Hafta 9 — Makine öğrenmesi ile hesaplamalı kimya yöntemlerinin birleştirilmesi",
+   "Hafta 10 — Uygulama: Jupyter Notebook Kullanım Temelleri",
+   "Hafta 11 — Uygulama: Veri toplanması ve işlenmesi",
+   "Hafta 12 — Uygulama: RDKIT ile moleküllerin temsili",
+   "Hafta 13 — Uygulama: Sklearn ile makine öğrenmesi modellerinin oluşturulması ve test edilmesi",
+   "Hafta 14 — Uygulama: Keras ile derin öğrenme modellerinin oluşturulması ve test edilmesi"
+  ],
+  "textbooks": [
+   "Leach A., Gillet V., An Introduction to Chemoinformatics, Springer (2007)",
+   "Cartwright H., Machine learning in chemistry: The impact of artificial intelligence, Royal Society of Chemistry (2020)",
+   "Gasteiger J., Engel T., Chemoinformatics – A Textbook, Wiley-VCH (2003)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=311",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 312": {
+  "code": "MYZ 312",
+  "name": "Meteorolojide Makine Öğrenmesi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 1,
+   "lab": 0,
+   "local": 2.5,
+   "ects": 4.5
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "MYZ 313E": {
+  "code": "MYZ 313E",
+  "name": "Denizcilikte Yapay Zeka Uygulamaları",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=313",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

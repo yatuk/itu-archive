@@ -1,0 +1,336 @@
+{
+ "BBL 000": {
+  "code": "BBL 000",
+  "name": "Tez Çalışması",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 60
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=000",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BBL 539E": {
+  "code": "BBL 539E",
+  "name": "Kuantum Haberleşme",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=539",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BBL 540E": {
+  "code": "BBL 540E",
+  "name": "Kuantum Veri Yapıları ve Algoritmaları",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kompleks matris cebiri, Hal vektörü-yoğunluk matrisi, Kuantum işlemciler, Kuantum mekaniği postulatları, Kuantum hesaplama karmaşıklığı, Kuantum devre bileşenleri, Deutsch-Jozsa algoritması, Kuantum Fourier dönüşümü, Kuantum faz tahmini, Kuantum (Grover) arama algoritması, Kuantum sıra bulma algoritması, Kuantum telenakil, Kuantum yoğun kodlama, Kuantum hata düzeltme, Kuantum algoritmalarının analiz teknikleri, Kuantum algoritmaları için klasik algoritmaların karşılaştırılması, Kuantum sıralama algoritmaları, Kuantum veri yönetimi ve depolama Complex matrix algebra, State vector - density matrix, Quantum processors, Postulates of quantum mechanics, Complexity of quantum computation, Components of quantum circuits, Deutsch-Jozsa algorithm, Quantum Fourier transform, Quantum phase estimation, Quantum (Grover) search algorithm, Quantum sorting algorithm, Quantum teleportation, Quantum dense coding, Quantum error correction, Analysis techniques for quantum algorithms, Comparison of classical algorithms for quantum algorithms, Quantum sorting algorithms, Quantum data management and storage",
+  "outcomes": [
+   "Kuantum veri yapıları ve algoritmalarını tasarlama becerisi,",
+   "Kuantum algoritmalarının karmaşıklığını analiz etme yeteneği,",
+   "Kuantum devre bileşenlerini uygulama becerisi,",
+   "Kuantum algoritmalarını değerlendirme yeteneği,",
+   "Kuantum veri yönetimi ve depolama yöntemlerini uygulama becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kompleks matris cebiri",
+   "Hafta 2 — Hal vektörü - Yoğunluk matrisi / Kuantum mekaniği postulatları",
+   "Hafta 3 — Kuantum işlemciler ve özellikleri",
+   "Hafta 4 — Kuantum devre bileşenleri, Kuantum mantık kapıları",
+   "Hafta 5 — Kuantum hesaplama karmaşıklığı",
+   "Hafta 6 — Deutsch-Jozsa algoritması / Kuantum Fourier dönüşümü",
+   "Hafta 7 — Kuantum faz tahmini / Kuantum arama algoritmaları (Grover)",
+   "Hafta 8 — Kuantum sıralama algoritmaları",
+   "Hafta 9 — Kuantum telenakil/Kuantum yoğun kodlama",
+   "Hafta 10 — Kuantum kanallar, açık kuantum sistemler",
+   "Hafta 11 — Kuantum hata düzeltme Algoritmaları",
+   "Hafta 12 — Kuantum algoritmalarının analiz teknikleri / Klasik algoritmalarla karşılaştırma",
+   "Hafta 13 — Kuantum veri yönetimi / Kuantum depolama yöntemleri",
+   "Hafta 14 — Kuantum algoritmalarının güncel araştırmaları"
+  ],
+  "textbooks": [
+   "Michael A, Nielsen, Isaac L, Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 10th Anniv, Ed,, 2010.",
+   "A, M, Childs & W, van Dam, Introduction to Quantum Algorithms via Linear Algebra, 2nd Ed,, MIT Press, 2022.",
+   "Thomas Wong, Introduction to Classical and Quantum Computing, Cambridge University Press, 2nd Ed,, 2023.",
+   "J, D, Hidary, 2nd Ed,, Quantum Computing: An Applied Approach, Springer, 2023.",
+   "Zhao, A, M, Childs & S, P, Jordan, Quantum Algorithms for Number Theory, Group Theory and Geometry, Cambridge University Press, 2024."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=540",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BBL 541E": {
+  "code": "BBL 541E",
+  "name": "Markov Sistem.Model.&Anal.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Olasılık teorisi ve rassal süreçler, hafızasızlık özelliği, Markov özelliği, yenilenir süreçler, Poisson süreci, ayrık- ve sürekli-zamanlı Markov zincirleri, sınıflamaları, özellikleri, Chapman– Kolmogorov denklemleri, kararlı-zaman çözümleri, doğum-ölüm süreçleri, denge denklemleri, Little kanunu, M/M/1, M/M/k, M/M/k/k ve M/M/k/k/N sistemleri, Erlang formülleri, Markov varış süreci (MAP), faz-tipi servis zaman dağılımları, Aloha sistemleri, bazı özel konular Review of probability theory and random processes, memoryless property, Markov property, renewal processes, Poisson process, discrete- and continuous-time Markov chains, classification, properties, Chapman–Kolmogorov equations, steady-state solutions, birth-death processes, balance equations, Little's Law, M/M/1, M/M/k, M/M/k/k and M/M/k/k/N systems, Erlang formulas, Markovian arrival process (MAP) arrivals, phase-type service times, Aloha systems, other special topics",
+  "outcomes": [
+   "Rasgele değişken ve süreçlerin hafızasızlık ve Markov özellikleri,",
+   "Markov zincirleri",
+   "Markov kuyruk sistemlerinin analiz yöntemleri ve karakteristikleri",
+   "Markov modelleme ve analiz yöntemlerinin gerçek senaryolarda kullanımı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, olasılık teorisi özeti, önemli dağılımlar, hafızasızlık özelliği",
+   "Hafta 2 — Rasgele süreçler özeti, Markov özelliği, yenilenir süreçler, bağımsız artışlı süreçler, Poisson süreci",
+   "Hafta 3 — Ayrık-zamanlı Markov zincirleri, sınıflamaları, özellikleri, Chapman–Kolmogorov denklemleri, kararlı-zaman çözümleri",
+   "Hafta 4 — Sürekli-zamanlı Markov zincirleri, sınıflamaları, özellikleri, sonsuz küçük üreteçler",
+   "Hafta 5 — Sürekli-zamanlı Markov zincirleri için Chapman–Kolmogorov denklemleri, kararlı-zaman çözümleri",
+   "Hafta 6 — Doğum-ölüm süreçleri, Genel ve Detaylı denge denklemleri, M/M/1 sistemi, Little kanunu",
+   "Hafta 7 — M/M/k sistemi, M/M/k/k sistemi, Erlang formülleri",
+   "Hafta 8 — M/M/k/k/N sistemi, Engset formülü",
+   "Hafta 9 — Markov kiplemeli Poisson süreci (MMPP), Markov varış süreci (MAP), MAP/M/1 sistemi",
+   "Hafta 10 — Faz-tipi servis zaman dağılımları, hiper-üstel, hipo-üstel, Erlang dağılımlı service zamanları, M/PH/1 sistemi",
+   "Hafta 11 — Normal ve zaman-dilimli Aloha sistemleri",
+   "Hafta 12 — Özel konular: IEEE 802.11 (Wi-Fi) DCF Bianchi modeli",
+   "Hafta 13 — Özel konular: Markov akışkan kuyruk modellerine giriş",
+   "Hafta 14 — Özel konular, devam"
+  ],
+  "textbooks": [
+   "Fayez Gebali. Analysis of Computer and Communication Networks. Springer, 2008",
+   "Hisashi Kobayashi, Brian L. Mark. System Modeling and Analysis: Foundations of System Performance Evaluation. Pearson/Prentice Hall, 2008",
+   "Sheldon. M. Ross. Introduction to Probability Models. Academic Press, 11th edition, 2014",
+   "Leonard Kleinrock, Queueing Systems: Volume I. Wiley-Interscience, 1975",
+   "Mor Harchol-Balter. Performance Modeling and Design of Computer Systems: Queueing Theory in Action. Cambridge University Press, 2013"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=541",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BBL 588E": {
+  "code": "BBL 588E",
+  "name": "Advanced Topics in Image Analysis",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders görüntü analizi konusunda temel kavramları ve algoritmaları vermektedir. Kapsanan konular arasında, Görüntü algılama ve görüntü elde etme, uzamsal ve sıklık uzayında görüntü iyileştirme, görüntü onarımı: gürültü azaltma, bulanıklık giderme, renkli görüntü işleme, kayıplı ve kayıpsız sıkıştırma, ikili görüntü işleme, Morfolojik görüntü işleme, görüntü bölütleme, ayrıt saptama ve bölgesel bölütleme, su havzaları ile bölütleme, gösrüntü gösterimi ve belirtimi, nesne tanıma yer almaktadır. This course introduces basic concepts and algorithms in image analysis: The course contains: image sensing and acquisition, image enhancement in the Spatial and frequency domains; image restoration: noise removal, deblurring; color image processing; lossy and lossless image compression; Binary image processing, Morphological Image processing, Image segmentation: edge detection, region segmentation, watersheds, Image representation and description, object recognition. .",
+  "outcomes": [
+   "Öğrenciler sayısal görüntü işlemenin matematiksel dayanaklarını öğrenirler",
+   "Öğrenciler görüntü analizi sistemlerini oluşturan bileşenler hakkında bilgi sahibi olurlar",
+   "Öğrenciler ödevler ve projelerle görüntü işleme problemlerine çözüm geliştirmeyi öğrenirler",
+   "Öğrenciler dönem ödevi kapsamında bir konuda derin bilgi sahibi olurlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Dersin ve Görüntü işlemenin tanıtımı",
+   "Hafta 2 — Görüntü işleme temelleri",
+   "Hafta 3 — Görüntü iyileştirme- uzamsal domen",
+   "Hafta 4 — Görüntü iyileştirme-sıklık uzayında",
+   "Hafta 5 — Görüntü onarımı",
+   "Hafta 6 — Kayıpsız Görüntü Sıkıştırma",
+   "Hafta 7 — Kayıplı Görüntü Sıkıştırma",
+   "Hafta 8 — İkili Görüntü işleme",
+   "Hafta 9 — Morfolojik İşlemler, Renkli Görüntü işleme",
+   "Hafta 10 — Görüntü Bölütleme-ayrıt saptama",
+   "Hafta 11 — Görüntü bölütleme-eşikleme, bölge temelli bölütleme, su havzaları",
+   "Hafta 12 — Görüntü gösterimi ve belirteçler",
+   "Hafta 13 — Nesne Tanıma",
+   "Hafta 14 — Dönem projesi sunumları"
+  ],
+  "textbooks": [
+   "Gonzalez, R. C., and Woods, R. E., 2008.Digital Image Processing, Prentice Hall, (3rd Edition).",
+   "Jain, K.,1989. Fundamentals of Digital Image Processing, Prentice Hall.[3] Gonzalez, R. C., and Woods, R. E., Eddins, S., 2004. Digital Image Processing using MATLAB. Pearson, Prentice Hall.",
+   "Sonka, M., Hlavac, V., Boyle, R.,2007. Image Processing: Analysis and Machine Vision, Chapman & Hall Computing, 3rd edition."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=588",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BBL 596E": {
+  "code": "BBL 596E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BBL 606": {
+  "code": "BBL 606",
+  "name": "Veri Madenciliği",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Veri Madenciliği ve Bilgi keşfiVeri temizleme ve önişleme yöntemleri Sınıflandırma YöntemleriDemetleme Yöntemleriİlişkilendirme KurallarıMetin madenciliğiModel değerlendirme Data mining and knowledge discoveryData cleaning and preprocessingClassification methodsClustering methodsAssociation rulesText miningModel Evaluation",
+  "outcomes": [
+   "Veriyi veri madenciliği uygulamaları için hazırlayabilme",
+   "Uygun veri madenciliği algoritması seçebilme",
+   "Farklı veri madenciliği yöntemlerinin teorik ve algoritmik olarak nasıl çalıştığını anlayabilme",
+   "Farklı model sonuçlarını değerlendirebilme ve yorumlayabilme",
+   "Güncel problemleri inceleyebilme ve bir veri madenciliği yönteminde değişiklik yaparak yeni problemlere uyarlayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri Madenciliğine Giriş",
+   "Hafta 2 — Veri Temizleme ve Hazırlama",
+   "Hafta 3 — Sınıflandırma Yöntemleri",
+   "Hafta 4 — Sınıflandırma yöntemlerini değerlendirme",
+   "Hafta 5 — Demetleme Yöntemeri",
+   "Hafta 6 — Çizge demetleme",
+   "Hafta 7 — Demetleme yöntemlerini değerlendirme",
+   "Hafta 8 — Yıliçi sınavı",
+   "Hafta 9 — İlişkilendirme Kuralları",
+   "Hafta 10 — Sıralı diziler",
+   "Hafta 11 — Sosyal ağ analysis",
+   "Hafta 12 — Metin madenciliği",
+   "Hafta 13 — Veri Madenciliği uygulamaları",
+   "Hafta 14 — Dönem projeleri sunumları"
+  ],
+  "textbooks": [
+   "Han, J., and Kamber M., 2006. Data Mining: Concepts and Techniques. Morgan Kaufmann Publishers. ISBN 1-55860-489-8.",
+   "Dunham, M., 2002. Data Mining: Introductory and Advanced Topics. Prentice Hall. ISBN 0130888923.[3]Hand, J. D., Mannila, H., and Smyth, P., 2001. Principles of Data Mining. MIT Press. ISBN 026208290X.",
+   "Tan, P. N., Steinbach, M., Kumar V., 2005. Introduction to Data Mining. Addison Wesley, ISBN: 0-321-32136-7"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=606",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BBL 696E": {
+  "code": "BBL 696E",
+  "name": "Bilimsel Araştırma, Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

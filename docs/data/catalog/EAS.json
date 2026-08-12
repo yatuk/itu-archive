@@ -1,0 +1,161 @@
+{
+ "EAS 111": {
+  "code": "EAS 111",
+  "name": "Teknik Resim",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Mühendislikte teknik resmin önemi ve standart kavramı ile çizim araç ve gereçlerinin tanıtılması. Çizgiler ve anlamları ile teknik yazı. Ölçülendirmenin esasları. İzdüşüm, görünüşler ve kesit görünüşler. To introduce the importance of technical drawing and standard concept with technical drawing tools and materials in engineering. Technical writing with lines and their meanings. Principles of dimensioning. Projection, views of objects and sectional views.",
+  "outcomes": [
+   "Teknik resmin önemini,",
+   "Standart kavramı ile çizim araç ve gereçlerini tanıyabilme",
+   "Çizgiler ve anlamlarını öğrenme",
+   "Teknik yazı yazma",
+   "Ölçülendirmenin ve toleranslandırmanın esaslarını tanıma",
+   "İzdüşüm, görünüşler ve kesit görünüşler çizebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Teknik resmin önemi",
+   "Hafta 2 — Standart kavramı ile çizim araç ve gereçlerinin tanıtılması",
+   "Hafta 3 — Çizgiler ve anlamları",
+   "Hafta 4 — Teknik yazı",
+   "Hafta 5 — Ölçülendirmenin esasları",
+   "Hafta 6 — İzdüşüm, görünüşler ve kesit görünüşler",
+   "Hafta 7 — İzdüşüm, görünüşler ve kesit görünüşler",
+   "Hafta 8 — İzdüşüm, görünüşler ve kesit görünüşler",
+   "Hafta 9 — İzdüşüm, görünüşler ve kesit görünüşlers",
+   "Hafta 10 — İzdüşüm, görünüşler ve kesit görünüşler",
+   "Hafta 11 — İzdüşüm, görünüşler ve kesit görünüşler",
+   "Hafta 12 — İzdüşüm, görünüşler ve kesit görünüşler",
+   "Hafta 13 — İzdüşüm, görünüşler ve kesit görünüşler",
+   "Hafta 14 — İzdüşüm, görünüşler ve kesit görünüşler"
+  ],
+  "textbooks": [
+   "STCW 95’e Uygun Teknik Resim I, Durmuşoğlu, Y.- Emir, A.S., Teknik Resim Ders notları M.Erka, 2010"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=111",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EAS 112": {
+  "code": "EAS 112",
+  "name": "Technical Drawing",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 0
+  },
+  "description": "Endüstri Mühendisliğinde Tasarımın Önemi, Tanımı, Tasarım Araçları, Tasarım Yöntemleri, Tasarım Ölçülerinin Gösterilmesi, Tasarımların İzdüşümü, Üç Boyutlu Tasarımların Farklı Bakış Açıları ile Görünüşlerinin Çizilmesi, Bilgisayar Destekli Tasarım, Yeni Ürün Tasarım ve Geliştirme Süreçleri, Tasarım Mühendisliği Yaklaşımı, Tesis Tasarımı, Makine Parkı Yerleşim Planının Oluşturulması. Importance of Design in Industrial Engineering, Definition, Design Tools, Design Methods, Demonstrating Design Dimensions, Projection of Designs, Drawing Views of Three- Dimensional Designs from Different Perspectives, Computer Aided Design, New Product Design and Development Processes, Design Engineering Approach, Facility Design, Machine Park Layout Plan Creation.",
+  "outcomes": [
+   "Tasarımlarda ve yerleşim planlarında kullanılan materyaller ve öğeler hakkında bilgilenme",
+   "Nesnelerin üç boyutlu görünümünü kavramak, yeni ürünlerin ve planların oluşturulabilmesi",
+   "Farklı eksenlerden görünüşlerin ne ifade ettiğinin anlaşılabilmesi ve tasarlayabilme",
+   "Eldeki görünümlerden tasarımların tam görünümünü anlayabilme, tasarımın geliştirilmesi",
+   "El ile tasarımların yanında bilgisayar ortamında da yeni ürün, üretim ortamı vb. tasarımların oluşturulabilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Endüstri Mühendisliğinde tasarıma giriş, metodolojiler, araç ve teknikler",
+   "Hafta 2 — Tasarım mühendisliğinde kullanılan yapılar ve sınıf içi uygulamaları",
+   "Hafta 3 — Tasarım teknikleri",
+   "Hafta 4 — Tasarımlarda ölçeklendirme, ölçülendirme yöntemleri",
+   "Hafta 5 — Üç boyutlu tasarım görünümünün ve farklı eksenlerden algılaması",
+   "Hafta 6 — Mevcut tasarım görünümlerinden faydalanılarak tasarımın tamamlanması teknikleri",
+   "Hafta 7 — Bilgisayar Destekli Tasarım (CAD) programlarının tanıtılması, temel komutlar",
+   "Hafta 8 — Yeni ürün geliştirme, yerleşim planları, tasarım işlemleri",
+   "Hafta 9 — CAD programları komutları, modifikasyon komutları",
+   "Hafta 10 — CAD programlarında kullanılan stiller, ölçülendirme",
+   "Hafta 11 — Üç eksenden tasarımların gerçekleştirilmesi",
+   "Hafta 12 — CAD programları ile yeni ürün tasarımlarının çizilmesi, geliştirilmesi",
+   "Hafta 13 — Üretim hatları yerleşim tasarımına giriş, makine parkının tasarımı",
+   "Hafta 14 — Modern üretim sistemleri ve gelişimlerinin kavranması, yeni ürün tasarımları geliştirme teknikleri"
+  ],
+  "textbooks": [
+   "Vajna, Sándor (Ed.), 2020, Integrated Design Engineering “Interdisciplinary and Holistic Product Development”, Springer International Publishing, doi: 10.1007/978-3-030-19357- 7."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=112",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EAS 207": {
+  "code": "EAS 207",
+  "name": "Statik",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 1,
+   "lab": 0,
+   "local": 3.5,
+   "ects": 6
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=207",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EAS 208": {
+  "code": "EAS 208",
+  "name": "Dynamics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 3
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=208",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EAS 209": {
+  "code": "EAS 209",
+  "name": "Cisimlerin Mukavemeti",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=209",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "EAS 230": {
+  "code": "EAS 230",
+  "name": "Mühendislik Hesaplamaları (MATLAB)",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=230",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

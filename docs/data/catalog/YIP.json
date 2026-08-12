@@ -1,0 +1,501 @@
+{
+ "YIP 501E": {
+  "code": "YIP 501E",
+  "name": "Management Mathematics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yönetim bilimine giriş, karar vermenin yönetim bilimi açısından önemi, çok kriterli karar verme, çok ölçütlü karar verme, çok amaçlı karar verme, karar destek araçları (AHP, ENTROPY, DEMATEL, CRITIC, TOPSIS, VIKOR, COPRAS, EDAS, MAIRCA, MARCOS, vb.) Introduction to management science, importance of decision making in management, multi-criteria decision making, multi-attribute decision making, multi-objective decision making, decision support tools (e.g., AHP, ENTROPY, DEMATEL, CRITIC, TOPSIS, VIKOR, COPRAS, EDAS, MAIRCA, MARCOS, etc.)",
+  "outcomes": [
+   "yönetim bilimi açısından gerçekçi ve rasyonel karar vermenin önemini",
+   "gerçekçi ve rasyonel karar verme sürecinde gerekli olan verilerin nasıl toplanacağını",
+   "toplanan verilerin nasıl değerlendirileceğini ve analiz edileceğini",
+   "karar destek sistemlerinin çalışma prensiplerini",
+   "karar destek sistemlerinin inşaat yönetimindeki uygulamaları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yönetim bilimine giriş, yönetim bilimi açısından gerçekçi ve rasyonel karar vermenin önemi",
+   "Hafta 2 — Gerçekçi ve rasyonel karar verme sürecinde gerekli olan verilerin toplanması, değerlendirilmesi ve analiz edilmesi",
+   "Hafta 3 — Çok kriterli karar verme prensipleri, çok ölçütlü karar verme prensipleri",
+   "Hafta 4 — Çok amaçlı karar verme prensipleri",
+   "Hafta 5 — AHP ve inşaat yönetimindeki uygulamaları",
+   "Hafta 6 — ENTROPY ve inşaat yönetimindeki uygulamaları",
+   "Hafta 7 — DEMATEL ve inşaat yönetimindeki uygulamaları",
+   "Hafta 8 — CRITIC ve inşaat yönetimindeki uygulamaları",
+   "Hafta 9 — TOPSIS ve inşaat yönetimindeki uygulamaları",
+   "Hafta 10 — VIKOR ve inşaat yönetimindeki uygulamaları",
+   "Hafta 11 — COPRAS ve inşaat yönetimindeki uygulamaları",
+   "Hafta 12 — EDAS ve inşaat yönetimindeki uygulamaları",
+   "Hafta 13 — MAIRCA ve inşaat yönetimindeki uygulamaları",
+   "Hafta 14 — MARCOS ve inşaat yönetimindeki uygulamaları"
+  ],
+  "textbooks": [
+   "D. C. Montgomery and G. C. Runger, Applied Statistics and Probablity for Engineers (John Wiley & Sons, 2003)",
+   "R. S. Witte and J. S. Witte, Statistics (9th ed John Wiley & Sons, 2010)",
+   "S. M. Ross, Introduction to Probability and Statistics for Engineers and Scientists (4th ed Elsevier Academic Press, 2009)",
+   "R. Fellows and A. Liu, Research Methods for Construction (3rd ed (Blackwell Publishing Ltd, 2008)",
+   "W. Mendenhall, R. J. Beaver, B. M. Beaver and S. E. Ahmed, Introduction to Probability and Statistics (2nd ed Nelson Education Ltd, 2011)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 503": {
+  "code": "YIP 503",
+  "name": "Yüklen.Firma.Finan.Rapor.&Çöz.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders kapsamında, muhasebe kavramları, inşaat yöneticisinin mali bilgi gereksinimleri, inşaat işletmelerinde başlıca finansal tablolar ve hesap planı, muhasebe değerleme esasları, hesapların ve yüklenici firmalara özel bilanço hesaplarının işleyişi ve gelir tespit yöntemleri, proje maliyet tahmini, maliyet bütçesi, maliyet izleme ve maliyet kontrolü, proje maliyet yönetiminde kazanılan değer analizi ve maliyet raporlarının okunması, finansal tabloları çözümlemede kullanılan başlıca yöntemler, ve yorumlama bilgileri verilmektedir. Course notes concerns; managerial accounting principles, engineering needs of accounting, essential financial reports, bookkeeping fundamantals,, hierarcy of accounts, financial statement preparation, asset valuations, analyzing construction firms financial data, international project accounting standarts, recognition of income for construction contractors, Project cost estimating, cost budgeting, cost monitoring and cost controling, Earned value analysis and reading cost management reports, methods of financial report analysis.",
+  "outcomes": [
+   "Temel mali tabloları izleyebilme, okuyabilme",
+   "Temel mali tabloları izleyebilme, okuyabilme",
+   "Taahüütle ilgili muhasebe kayıtlarını yorumlayabilme",
+   "Taahüütle ilgili muhasebe kayıtlarını yorumlayabilme",
+   "Temel mali tabloları analiz edebilme",
+   "Temel mali tabloları analiz edebilme",
+   "Maliyet muhasebesi kavramları",
+   "Maliyet muhasebesi kavramları",
+   "Proje maliyet bütçesi raporları oluşturabilme",
+   "Proje maliyet bütçesi raporları oluşturabilme",
+   "Proje maliyet kontrol raporlarını okuyabilme ve proje yönetiminde kullanabilme",
+   "Proje maliyet kontrol raporlarını okuyabilme ve proje yönetiminde kullanabilme",
+   "Temel mali tabloları izleyebilme, okuyabilme",
+   "Taahüütle ilgili muhasebe kayıtlarını yorumlayabilme",
+   "Temel mali tabloları analiz edebilme",
+   "Maliyet muhasebesi kavramları",
+   "Proje maliyet bütçesi raporları oluşturabilme",
+   "Proje maliyet kontrol raporlarını okuyabilme ve proje yönetiminde kullanabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İnşaat yöneticisinin mali bilgi gereksinimleri, Muhasebenin tanımı ve temelkavramları ve genel kabul görmüş muhasebe ilkeleri",
+   "Hafta 2 — Maliyet Muhasebesi ve Maliyet Yönetimi Kavramları",
+   "Hafta 3 — Başabaş Noktası Analizi, Maliyetleme Sistemleri",
+   "Hafta 4 — Proje Maliyet Yönetimine giriş, Maliyet Tahminleme, Bütçeleme",
+   "Hafta 5 — Maliyet İzleme ve Kontrolüne giriş, Maliyet Kontrol Sistemlerinin Kurulması, nakityönetimi",
+   "Hafta 6 — Maliyet Kontrolü, Sapmalarının Analizi, Güncelleme, Raporlama ve Yorumlama",
+   "Hafta 7 — Temel mali tablolar, hesapların sınıflandırılması, Muhasebede kayıt esasları",
+   "Hafta 8 — Muhasebede dönemiçi ve dönem sonu muhasebe kayıtları, Vaka – Cobourg Baronu",
+   "Hafta 9 — Gelir tablosu kayıtları ve yüklenici firmalara özel bilanço hesaplarının işleyişi",
+   "Hafta 10 — Yıllara yaygın taahhüt işlerinde gelir tespit yöntemleri - Örnek Olay",
+   "Hafta 11 — Kısa ve Uzun vadeli varlıklarda değerleme yöntemleri - Örnek Olay",
+   "Hafta 12 — Finansal tablolar analizinin amaçları, araçları, önkoşullar, çözümleme teknikleri",
+   "Hafta 13 — Finansal tablolar çözümleme teknikleri ve yorumlama",
+   "Hafta 14 — Finansal çözümlemede oran analizinde başlıca rasyolar ve yorumlama - Örnek olay"
+  ],
+  "textbooks": [
+   "Halpin, D. W. (1985), Financial and Cost Consept for Construction Management.",
+   "Halpin, D. W. (1985), Financial and Cost Consept for Construction Management.",
+   "Hatiboğlu Z., Gürsoy C. T. (1995), Muhasebeye giriş ve tek düzen hesap sistemi, İstanbul",
+   "Hatiboğlu Z., Gürsoy C. T. (1995), Muhasebeye giriş ve tek düzen hesap sistemi, İstanbul",
+   "Standarts of Practice (2010), Construction Management Association of America",
+   "Standarts of Practice (2010), Construction Management Association of America",
+   "Apak S, Demirel E.(2010), Finansal Yönetim Cilt 2-Finansal tablolar analizi ve Yatırım Yönetimi, Papatya Yayıncılık, İstanbul",
+   "Apak S, Demirel E.(2010), Finansal Yönetim Cilt 2-Finansal tablolar analizi ve Yatırım Yönetimi, Papatya Yayıncılık, İstanbul",
+   "Erden S. A. (1997), “İnşaat Taahüt İşleri Muhasebesi”, Isparta",
+   "Erden S. A. (1997), “İnşaat Taahüt İşleri Muhasebesi”, Isparta",
+   "Halpin, D. W. (1985), Financial and Cost Consept for Construction Management.",
+   "Hatiboğlu Z., Gürsoy C. T. (1995), Muhasebeye giriş ve tek düzen hesap sistemi, İstanbul",
+   "Standarts of Practice (2010), Construction Management Association of America",
+   "Apak S, Demirel E.(2010), Finansal Yönetim Cilt 2-Finansal tablolar analizi ve Yatırım Yönetimi, Papatya Yayıncılık, İstanbul",
+   "Erden S. A. (1997), “İnşaat Taahüt İşleri Muhasebesi”, Isparta"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 505E": {
+  "code": "YIP 505E",
+  "name": "Project(Time) Management",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Proje yönetiminin temelleri, tanımlama, proje organizasyonu, Nesnel tasarım, Proje Aşamaları (Ön tasarım, tasarım,ihale, inşaat ve inşa sonrası), Kapsam yönetimi (Fayda/maliyet analizi,Koşullar ve kısıtlar), Süresel planlama teknikleri, aktivite sürelerinin belirlenmesinde istatistiki yöntemler, İnsan ve makine kaynaklarının yönetimi, Proje yöneticisinin seçilmesi (Kriterler ve seçim kuralları) Pm Body of Knowladge (Project life cycle,PM book framework model), Definitions, Project Organization Forms, Conceptual development, Project Phases (Pre-design, Design, Bid&Award, Construction and Post Construction), Scope Management (Cost/Benefit Analysis,Conditions and Constraints), Time scheduling and Critical Consideration of Scheduling Techniques (Bar chards, Cyclograms, CPM, Precedence Networks), Time Management in Project Phases (Planning Levels,Change Order and Claim Evaluation), Statistical Methods in Determining Activity Duration, Human and Equipment Resource Management, Selection of (Construction) Project Manager (Criteria and Rules of Selection)",
+  "outcomes": [
+   "Genel olarak Proje ve proje çevrimi hakkında fikir sahibi olurlar",
+   "Projelerinin yönetimi hakkında fikir sahibi olurlar",
+   "Kapsam Yönetimi hakkında bilgi sahibi",
+   "Proje Planlama Teknikleri Hakkında bilgi sahibi olurlar",
+   "Aktivite sürelerinin belirlenme tekniklerini öğrenirle",
+   "Proje Yöneticisi seçimi hakkında bilgi sahibi olurlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Proje Yaşam Döngüsü ve yapısı",
+   "Hafta 2 — Tanımlamalar",
+   "Hafta 3 — Proje Organizasyonları",
+   "Hafta 4 — Fikir Geliştirme",
+   "Hafta 5 — Proje Aşamaları (Ön tasarım,,tasarım, ihale, inşaat, yapım sonrası)",
+   "Hafta 6 — Kapsam Yönetimi (Fayda maliyet analizi, Koşullar ve kısıtlar)",
+   "Hafta 7 — Süresel Planlama Teknikleri (Gant chart, devre diyagramları)",
+   "Hafta 8 — Süresel Planlama Teknikleri (CPM)",
+   "Hafta 9 — Süresel Planlama Teknikleri (Kutu diyagramları)",
+   "Hafta 10 — Süresel Planlama Teknikleri (Planlama seviyesi, değişiklik yönetimi ve hak talebi)",
+   "Hafta 11 — Süresel Planlama Teknikleri (Plamlama seviyesi, Kurtarma iş programı)",
+   "Hafta 12 — İş kalemi süre belirlemede istatistik yöntemler",
+   "Hafta 13 — İnsan ve Makina Kaynaklarının yönetimi",
+   "Hafta 14 — Proje Yöneticisi seçim kriterleri"
+  ],
+  "textbooks": [
+   "CMAA Standard of Practise,Constrcution Management Assosiation of America, Professional Construction Management, Berrie D.,1992",
+   "Proje Yönetim Hizmet ve Uygulama Standartları, IMO,2002",
+   "The Revized PMBOOK, Project Management Institute,2000",
+   "Construction Project scheduling, M.Callahan et al.,1992",
+   "İnşaat Sektöründe Bilgisayar destekli Planlama Metot ve Örnekleri,M.Kuruoğlu,Çağlayan Kitabevi,2002"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=505",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 507": {
+  "code": "YIP 507",
+  "name": "İnş. Yön. Sistem Planlama",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sistem düşüncesi ve sistem yaklaşımı, Sistem tanımı ve sınıflandırılması, Sistem yaklaşımı aşamaları, sistem analizi ve tasarımı, sistem işletilmesi, sistem yaklaşımı teknikleri, modelleri, performansı ve ölçülmesi. İnşaat sürecinde sistem yaklaşımı, yapım sürecinde karşılaşılan sistemlerin tanımı, sınıflandırılması, analizi, inşaatta bir sistemin süreç modelinin hazırlanması, inşaatta kullanılan bilgi ve süreç modelleme teknikleri. Conceptual framework of system approach, system definition and classification, steps of system approach, system analysis, design, implementation, techniques, models, performance and assessment. System approach in construction process, classification of system components of construction process, information and process modelling techniques in construction.",
+  "outcomes": [
+   "Genel olarak sistem yaklaşımı hakkında bilgi sahibi olurlar",
+   "Sistem analizi ve tasarımı konusunda bilgi sahibi olurlar",
+   "Sistem tasarlama, onu işletme ve performansını değerlendirme konusunda bilgi sahibi olurlar",
+   "Farklı sistem analizi ve modellemesi tekniklerini öğrenirler",
+   "İnşaat sürecini sistem yaklaşımı ile modellemeyi öğrenirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sistem düşüncesi ve sistem yaklaşımı",
+   "Hafta 2 — Sistem tanımı ve sınıflandırılması",
+   "Hafta 3 — Sistem yaklaşımı aşamaları",
+   "Hafta 4 — Sistem analizi",
+   "Hafta 5 — Sistem analizi",
+   "Hafta 6 — Sistem analizi",
+   "Hafta 7 — Sistem işletilmesi",
+   "Hafta 8 — Ara Sınav",
+   "Hafta 9 — Sistem teknikleri teknikleri ve kıyaslanması",
+   "Hafta 10 — Sistem modelleri ve modelleme teknikleri",
+   "Hafta 11 — Sistem performansı ve ölçülmesi",
+   "Hafta 12 — İnşaat sürecinin sistem yaklaşımı ile modellenmesi, işletilmesi ve performansının ölçülmesi",
+   "Hafta 13 — İnşaat sürecinin sistem yaklaşımı ile modellenmesi, işletilmesi ve performansının ölçülmesi",
+   "Hafta 14 — İnşaat sürecinin sistem yaklaşımı ile modellenmesi, işletilmesi ve performansının ölçülmesi"
+  ],
+  "textbooks": [
+   "Erkut H., (1995) Sistem Yönetimi, Haluk Erkut, Yönetim Bilimleri Dizisi:4, İrfan Yayımcılık, 1995, İstanbul",
+   "Kendall K.E. (2005) System Analysis and Design, Prentice Hall, N.J.,",
+   "Cleland D.I. (1983) Systems Analysis and Project Management, McGraw-Hill, NewYork.",
+   "Marakas, G.M. (2006) Systems Analysis and Design, McGraw-Hill, New York",
+   "Dickinson B. W. (1991) Systems: Analysis, Design and Computation, , Englewood Cliffs, N.J., Prentice Hall"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=507",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 512": {
+  "code": "YIP 512",
+  "name": "Profesyonel İnşaat Yönetimi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Proje teslim sistemleri, malsahibi açısından inşaat yönetimi kavramı, proje yönetim organizasyonu, tasarım ve yapım süreçleri, işgücü, malzeme ve ekipman kullanımı, maliyet tahmini, teklif hazırlama ve sözleşme yönetimi, inşaat planlaması, iş program hazırlama yöntemleri, maliyet izleme, kontrol ve muhasebesi, inşaat yatırımlarının ekonomik değerlendirilmesi, yapım sürecinde kalite kontrol ve iş güvenliği uygulamaları, proje bilgi sistemleri. Project delivery systems, construction management concept from owners’ perspective, project management organization, design and construction processes, utilization of labor, material and equipment, cost estimation, bidding and contract administration, construction planning, scheduling techniques, cost monitoring, control and accounting, economic evaluation of facility investments, quality control and safety applications during construction, project information systems.",
+  "outcomes": [
+   "İnşaat sektöründe kullanılan proje teslim sistemleri,",
+   "İnşaat sektöründe kullanılan proje teslim sistemleri,",
+   "Malsahibi ve yüklenici inşaat işletmeleri açısından inşaat yönetimi kavramlarının benzerlikleri ve farklılıkları,",
+   "Malsahibi ve yüklenici inşaat işletmeleri açısından inşaat yönetimi kavramlarının benzerlikleri ve farklılıkları,",
+   "İnşaat projelerinde yönetim organizasyonları,",
+   "İnşaat projelerinde yönetim organizasyonları,",
+   "İnşaat projelerinde yürütülmesi gereken yönetim faaliyetleri.",
+   "İnşaat projelerinde yürütülmesi gereken yönetim faaliyetleri."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İnşaat sektöründe kullanılan proje teslim sistemleri",
+   "Hafta 2 — Malsahibi ve yüklenici inşaat firması açısından inşaat yönetimi kavramı",
+   "Hafta 3 — Proje yönetimi organizasyonu",
+   "Hafta 4 — Tasarım ve yapım süreçleri",
+   "Hafta 5 — İşgücü, malzeme ve ekipman kullanımı",
+   "Hafta 6 — Maliyet tahminleri",
+   "Hafta 7 — Teklif hazırlama ve sözleşme yönetimi",
+   "Hafta 8 — İnşaat planlama",
+   "Hafta 9 — Temel iş programı hazırlama prosedürleri",
+   "Hafta 10 — İleri iş programı hazırlama teknikleri",
+   "Hafta 11 — Maliyet kontrol, izleme ve muhasebesi",
+   "Hafta 12 — İnşaat yatırımlarının ekonomik değerlendirilmesi",
+   "Hafta 13 — İnşaat sürecinde kalite kontrol ve iş güvenliği",
+   "Hafta 14 — Proje bilgi sistemlerinin organizasyonu ve kullanımı"
+  ],
+  "textbooks": [
+   "C. Hendrickson, Project Management for Construction: Fundamental Concepts for Owners, Engineers, Architects and Builders (http://pmbook.ce.cmu.edu, 2008)",
+   "C. Hendrickson, Project Management for Construction: Fundamental Concepts for Owners, Engineers, Architects and Builders (http://pmbook.ce.cmu.edu, 2008)",
+   "F. Harris, R. McCaffer and F. Edum-Fotve, Modern Construction Management (Blackwell Publishing, 2006)",
+   "F. Harris, R. McCaffer and F. Edum-Fotve, Modern Construction Management (Blackwell Publishing, 2006)",
+   "S. K. Sears, G. A. Sears and R. H. Clough, Construction Project Management: A Practical Guide to Field Construction Management (5th ed John Wiley and Sons Inc, 2008)",
+   "S. K. Sears, G. A. Sears and R. H. Clough, Construction Project Management: A Practical Guide to Field Construction Management (5th ed John Wiley and Sons Inc, 2008)",
+   "D. W. Halpin and B. A. Senior, Construction Management (4th ed John Wiley and Sons Inc, 2011)",
+   "D. W. Halpin and B. A. Senior, Construction Management (4th ed John Wiley and Sons Inc, 2011)",
+   "F. Gould and N. Joyce, Construction Project Management (3rd ed ohn Wiley and Sons Inc, 2008)",
+   "F. Gould and N. Joyce, Construction Project Management (3rd ed ohn Wiley and Sons Inc, 2008)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=512",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 513E": {
+  "code": "YIP 513E",
+  "name": "Contract Administration",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Türkiye'deki İnşaat Sözleşmelerine Giriş; Sözleşme Yönetimi; Sözleşme Yönetimi açısından Temel Hukuk Bilgisi, Sözleşmelerin Esasları; Sözleşme Hukukuyla ilişkili hukuksal kavramlar; Vekalet kapsamında mühendisin hukuki ilişkiler; İnşaat Sözleşmelerinin Türleri; Özel Tip sözleşmeler; Sözleşme tipinin ve yüklenicinin seçimi; Şartnameler, İnşaatlarda denetim, sorumluluk, iş güvenliğini ilişkin sözleşme maddeleri işçi, işveren ve üçüncü şahısların sorumlulukları ve sözleşmelere etkisi, Uluslar arası inşaat sözleşmeleri, FIDIC sözleşmeleri, Alternatif anlaşmazlık çözüm yolları Introduction to construction contracts in Turkey; Contract Administration at each phase of the contruction Project. Basic Lawful subjects for Contract Administration; Essentials of contracts; Legal terms regarding Contract Administration; Agency, legal relationships of the engineer; Types of the construction contracts; Special types of contracts; Selection of contract type and contractor; Specifications; Control, responsibility in construction, occupational safety and health issues concerning different parties (contractor, engineer or third party) and their impact to construction contracts. International construction contracts, FIDIC contracts, alternative dispute resolution methods,",
+  "outcomes": [
+   "Genel inşaat proje yönetimi hakkında fikir sahibi olurlar",
+   "İnşaat projeleri yönetiminin bir parçası olarak Sözleşme İdaresi’ni öğrenirler",
+   "Sözleşme uygulamaları hakkında bilgi sahibi olurlar",
+   "Farklı ülkelerdeki sözleşmeyle ilgili mevzuatı ve uygulamaları öğrenirler",
+   "Sözleşmelerde Risk Değerlendirmesinin nasıl yapılacağını ve proje süresince nasıl uygulanacağını öğrenirler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel kavramlar ve tanımlar, uluslar arası sözleşmeler, tasarım öncesi prosedürler, sözleşme yazmanın temel ilkeleri",
+   "Hafta 2 — İnşaat sözleşmelerinin tipleri ve tanımları. Farklı tip sözleşme yapıları (birim fiyat, anahtar teslim, mühendislik-tedarik-inşaat, tasarla-inşa et) ve risk analizi",
+   "Hafta 3 — ABD, AB, İngiltere ve Türkiye ‘deki yasal sistemler. Uluslararası sözleşmelere giriş",
+   "Hafta 4 — Sözleşmesel ilişkiler, şartlar, haklar, sorumluluklar, mal sahibi, yüklenici ve üçüncü şahısların borçları, sözleşme dökümanlarının yorumlanması, inşaat ortak girişimleri ve ilişki tipleri.",
+   "Hafta 5 — Sözleşmesel ilişkiler, şartlar, haklar, sorumluluklar, mal sahibi, yüklenici ve üçüncü şahısların borçları, sözleşme dökümanlarının yorumlanması, inşaat ortak girişimleri ve ilişki tipleri.",
+   "Hafta 6 — FIDIC Nedir? FIDIC Standart Sözleşme Tipleri, Sözleşme Tipleri arasındaki farklar",
+   "Hafta 7 — Süreyle ilgili şartlar",
+   "Hafta 8 — Mali şartlar",
+   "Hafta 9 — Sözleşmenin sona ermesi, uzatılması, riskler, sorumluluklar ve mücbir sebepler",
+   "Hafta 10 — Hak talepleri, hak taleplerinin tipleri ve sözleşme idaresi",
+   "Hafta 11 — Sözleşmelerinde Uyuşmazlıkların Çözümü (Türkiye’deki mevzuat)",
+   "Hafta 12 — Sözleşmelerde Uyuşmazlıkların Çözümü (Uluslar arası sözleşmeler)",
+   "Hafta 13 — Örnek olaylar",
+   "Hafta 14 — Örnek olaylar"
+  ],
+  "textbooks": [
+   "Construction Management Association of America, (1993), Standards of Practice,",
+   "Sorguç D., (1993) Laws and Contracts, METU Pub., Ankara",
+   "American Water Works Association (1996), Construction Contract Administration, AWWA Pub.",
+   "Wood D., Chynoweth P., Adshead J., Mason J. (2011), Lav annd the Built Environment, Wiley-Blackwell, Sussex",
+   "Knutson, R. (2005). An analysis of International Construction Contracts, Kluwer Law International and International Bar Association."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=513",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 515E": {
+  "code": "YIP 515E",
+  "name": "Sustainable Construction",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sürdürülebilirlik ve sürdürülebilir yapım kavramları. İnşaat sektöründe temel çevre ve kaynak kısıtları. Yeşil Bina Hareketi. Yaşam Döngüsü Maliyeti (LCC) ve Yaşam Döngüsü Değerlendirmesi (LCA). Sürdürülebilir İnşaat: Şantiyede enerji kullanımı ve kirlenme; inşaat atıklarının yönetimi ve malzemelerin geri dönüşümü; arazi ve su kullanımı. Yapımda yenilenebilir teknolojilerin kullanımı. Uluslararası Sürdürülebilirlik ve Yeşil Bina Değerlendirme Sistemleri. Sürdürülebilir yapımda dokümantasyon ve mevzuat. Sustainability and sustainable construction concepts. Major environmental and resource constraints in the construction industry. The Green Building Movement. Total Life Cycle Cost (LCC) and Life Cycle Assessment (LCA). Sustainable Construction Operations: Use of energy and pollution; Construction waste management and Materials Re-Cycling; Land and water use. Use of renewable technologies in construction. International Sustainability and Green Building Assessment Systems. Documentation and Policy in Sustainable Construction.",
+  "outcomes": [
+   "Genel inşaat proje yönetimi hakkında fikir sahibi olurlar",
+   "İnşaat projeleri yönetiminin bir parçası olarak inşaat sektöründe sürdürülebilir yapımı öğrenirler",
+   "Sürdürülebilir yapımın temel unsurları olarak şantiyede inşaat atıklarının yönetimi ve malzemelerin yeniden kullanımı / geri dönüşümü; enerji kullanımı ve kirlenme; arazi ve su kullanımı; işçi sağlığı ve iş güvenliği, yenilenebilir teknolojilerin kullanımı hakkında bilgi sahibi olurlar",
+   "Yaşam Döngüsü Maliyeti (LCC) ve Yaşam Döngüsü Değerlendirmesi (LCA) Yöntemleri ile sürdürülebilir yapımda maliyet ve çevre etkisi analizleri konularında bilgi sahibi olurlar",
+   "Başlıca Sürdürülebilirlik / Yeşil Bina Değerlendirme Sistemleri konularını öğrenirler",
+   "Sürdürülebilir yapımda dokümantasyon ve mevzuat konularını öğrenir ve uygulayabilirler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş: Sürdürülebilirlik ve sürdürülebilir yapım nedir?",
+   "Hafta 2 — İnşaat sektöründe temel çevre ve kaynak kısıtları",
+   "Hafta 3 — Yeşil Bina Hareketi: Geleneksel ve Yeşil Yapım",
+   "Hafta 4 — Yaşam Döngüsü Maliyeti (LCC) ve Yaşam Döngüsü Değerlendirmesi (LCA) Yöntemleri",
+   "Hafta 5 — Sürdürülebilir İnşaat – Şantiyede enerji kullanımı ve kirlenme",
+   "Hafta 6 — Sürdürülebilir İnşaat – Şantiyede inşaat atıklarının yönetimi ve malzemelerin yeniden kullanımı / geri dönüşümü",
+   "Hafta 7 — Sürdürülebilir İnşaat – Şantiyede arazi ve su kullanımı",
+   "Hafta 8 — Sürdürülebilir İnşaat – Şantiyede işçi sağlığı ve iş güvenliği",
+   "Hafta 9 — Yapımda karbon ayak izlerinin azaltılması",
+   "Hafta 10 — Yapımda yenilenebilir teknolojilerin kullanımı",
+   "Hafta 11 — Sürdürülebilirlik / Yeşil Bina Değerlendirme Sistemleri: LEED (ABD)",
+   "Hafta 12 — Sürdürülebilirlik / Yeşil Bina Değerlendirme Sistemleri: BREEAM (İngiltere)",
+   "Hafta 13 — Sürdürülebilir yapımda dokümantasyon",
+   "Hafta 14 — Sürdürülebilir yapımla ilgili mevzuat"
+  ],
+  "textbooks": [
+   "Kibert C., Sustainable Construction, John Wiley, 2008",
+   "Glavinich, Contractor’s Guide to Green Building Construction: Management, Project Delivery, Documentation and Risk Reduction, Wiley - Blackwell, 2008",
+   "Means, Green Building – Project Planning and Cost Estimating, Wiley - Blackwell, 2011",
+   "Vallero, Sustainable Construction: The Science of Sustainability and Green Engineering, Wiley - Blackwell, 2009",
+   "Kohler N., Knig H., Kreissig J., A Life cycle approach to buildings: Sustainable building planning from the outset, CIOB, 2010"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=515",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 516E": {
+  "code": "YIP 516E",
+  "name": "Cost Management",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İnşaat sektörü için maliyet yönetiminin önemi, maliyet yönetimi açısından başarısızlıkla sonuçlanan büyük projelerin incelenmesi, inşaat sektöründe maliyet unsurları, yapım süreci boyunca kullanılan maliyet tahmini yöntemleri, proje yaşam boyu maliyeti, proje maliyetini etkileyen önemli tasarım faktörleri, nakit akış analizi, S eğrisi, işverenin farklı ön ödeme ve kesinti planlarının karşılaştırılması, maliyet kontrolü yöntemleri (kazanılmış değer yöntemi vb.), ekipman ve işçilik maliyetlerinin toplam maliyete yansıtılması. The significance of cost management for construction industry, investigation of cost failures in large-scale projects, main cost items for construction industry, cost estimation method used during project, whole-life costing, design factors that affect the cost of the project, cash flow analysis, S-curve, comparison of different payment schemas of the owner by examining cash flow, overview of cost control methods (e.g., earned value), integrating cost of equipment and labor with total project cost.",
+  "outcomes": [
+   "İnşaat proje yönetiminin önemli bir unsuru olan maliyet yönetimi hakkında bilgi sahibi olurlar",
+   "İnşaat sektörü ana maliyet kalemleri ile bu kalemlerin toplam maliyete etkisini öğrenmiş olurlar",
+   "Fizibilite, tasarım ve inşaat sürecinde maliyet tahmini ve projeksiyonu yaparak en uygun alternatifin belirlenmesi becerisini kazanırlar.",
+   "Fizibilitede projenin tasarım ve inşaat maliyetleri yanı sıra yaşam döngüsü maliyetlerinin de göz önüne alınmasının faydalarını farkederler",
+   "İnşaat süresince maliyet kontrolü yaparak proje maliyetlerindeki sapmayı takip etme ve yorumlayabilme becerisini kazanırlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Maliyet yönetimi ile ilgili temel kavramlar",
+   "Hafta 2 — Maliyet yönetimi açısından başarısızlıkla sonuçlanan projelerin incelenmesi",
+   "Hafta 3 — Projelerin yatırım maliyeti ve yaşam döngüsü maliyetleri",
+   "Hafta 4 — Proje maliyetini etkileyen tasarım faktörleri",
+   "Hafta 5 — Maliyet tahmin yöntemleri – 1",
+   "Hafta 6 — Maliyet tahmin yöntemleri – 2",
+   "Hafta 7 — Nakit akışı analizi ve farklı ödeme planları için nakit ihtiyacının hesaplanması",
+   "Hafta 8 — Maliyet kontrolü",
+   "Hafta 9 — Maliyet muhasebesi hakkında genel bilgi",
+   "Hafta 10 — Kazanılmış değer analizi",
+   "Hafta 11 — İşçilik verilerinin toplanması ve maliyet hesaplarına dahil edilmesi",
+   "Hafta 12 — Ekipman maliyetlerinin hesaplanması -1",
+   "Hafta 13 — Ekipman maliyetlerinin hesaplanması -2",
+   "Hafta 14 — Örnek olay çalışması"
+  ],
+  "textbooks": [
+   "Halpin, D. W., Construction Management, Wiley; 3rd edition, 2005",
+   "Hendrickson, C., Project Management for Construction, online book http://pmbook.ce.cmu.edu/, 2nd edition, 2008",
+   "Knutson, K., Schexnayder, C. J., Fiori, C. M., Mayo, R. E., Construction Management Fundamentals, McGraw Hill, 2nd edition, 2009",
+   "Halpin, D. W., Financial and Cost Concepts for Construction Management, Wiley; 1st edition, 1985"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=516",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 522": {
+  "code": "YIP 522",
+  "name": "İnşaat Projelerin.Kaynak Yön.",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İş programı hazırlama yöntemleri, kaynak yönetimi ile iş programı arasındaki ilişki, kaynak atama, ağ diyagramı tabanlı iş programlarında kaynak dengeleme, mahal tabanlı iş programlarında kaynak dengeleme, inşaat sektöründe insan kaynakları yönetimi. Scheduling methods, the relationship between resource management and scheduling methods, resource allocation, resource leveling in network-based schedules, resource leveling in linear schedules, human resource management in construction.",
+  "outcomes": [
+   "İş programı hazırlama yöntemleri",
+   "Kaynak yönetimi ile iş programı hazırlama yöntemleri arasındaki ilişki,",
+   "Kaynak atama",
+   "Ağ diyagramı tabanlı iş programlarında kaynak dengeleme",
+   "Mahal tabanlı iş programlarında kaynak dengeleme",
+   "İnşaat sektöründe insan kaynakları yönetimi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İş programı hazırlama yöntemleri.",
+   "Hafta 2 — İş programı hazırlama yöntemleri.",
+   "Hafta 3 — Kaynak yönetimi ile iş programı hazırlama yöntemleri arasındaki ilişki.",
+   "Hafta 4 — Kaynak atama.",
+   "Hafta 5 — Kaynak atama.",
+   "Hafta 6 — Kaynak atama.",
+   "Hafta 7 — Ağ diyagramı tabanlı iş programlarında kaynak dengeleme.",
+   "Hafta 8 — Ağ diyagramı tabanlı iş programlarında kaynak dengeleme.",
+   "Hafta 9 — Ağ diyagramı tabanlı iş programlarında kaynak dengeleme.",
+   "Hafta 10 — Mahal tabanlı iş programlarında kaynak dengeleme.",
+   "Hafta 11 — Mahal tabanlı iş programlarında kaynak dengeleme.",
+   "Hafta 12 — Mahal tabanlı iş programlarında kaynak dengeleme.",
+   "Hafta 13 — İnşaat sektöründe insan kaynakları yönetimi.",
+   "Hafta 14 — İnşaat sektöründe insan kaynakları yönetimi."
+  ],
+  "textbooks": [
+   "F.E. Gould, Managing the Construction Process, Estimating, Scheduling, and Project Control (4th edition, Pearson, 2012)",
+   "C. Quiring, T. Foster, Mastering Resource Management Using Microsoft Project and Project Server 2010 (J.Ross Publishing, 2011)",
+   "S. Mubarak, Construction Project Scheduling and Control (2nd Edition, John Wiley & Sons, 2010)",
+   "A. Dainty, M. Loosemore, Human Resource Management in Construction Critical Perspectives (2nd Edition, Taylor&Francis, 2012)",
+   "A. Raiden, A. Dainty, R. Neale, Employee Resourcing in the Construction Industry: Strategic Considerations and Operational Practice (Spon Press, 2009)."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=522",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YIP 596": {
+  "code": "YIP 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YIP&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

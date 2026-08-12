@@ -1,0 +1,679 @@
+{
+ "ISE 100": {
+  "code": "ISE 100",
+  "name": "Orientation",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 0,
+   "lab": 0,
+   "local": 1,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=100",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 101": {
+  "code": "ISE 101",
+  "name": "Bilişim Sistemleri Mühendisliğine Giriş",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 2,
+   "local": 4,
+   "ects": 10
+  },
+  "description": "Derste algoritma tasarımı ve programlamaya giriş amacıyla Python programlama dili öğretilmektedir. Ayrıca programlamanın temel kavramları olan değişkenler, dallanma, döngüler, diziler, fonksiyonlar, dosyalar, veri yapıları, istisnalar vb. kavramlar laboratuvar uygulamaları kullanılarak Python programlama dili vasıtasıyla öğretilmektedir. In this course algorithm design and introduction to coding is taught using Python programming language. The key concepts of programming such as variables, branches, loops, arrays, functions, file IO, data structures, exceptions etc. are taught in the course with Python using lab applications.",
+  "outcomes": [
+   "Değişkenler, kullanıcı ile etkileşim, değişken türlerini öğrenirler,",
+   "Dallanma, döngü kavramlarını öğrenirler,",
+   "Dizi, string, very yapılarını öğrenirler,",
+   "Fonksiyon, dosya giriş/çıkış ve istisna kavramlarını öğrenirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Programlama dillerine giriş",
+   "Hafta 2 — Değişkenler",
+   "Hafta 3 — İsim verme yöntemleri, aritmetik operatörler, kullanıcı giriş/çıkışı",
+   "Hafta 4 — Değişken türleri, tür çevrimi",
+   "Hafta 5 — Boolean cebri",
+   "Hafta 6 — Dallanma",
+   "Hafta 7 — String kavramı",
+   "Hafta 8 — Endeksleme, endeks dilimleri",
+   "Hafta 9 — Döngüler",
+   "Hafta 10 — Diziler",
+   "Hafta 11 — Fonksiyonlar, özyinelemeli fonksiyonlar",
+   "Hafta 12 — İstisnalar, dosya giriş/çıkışı",
+   "Hafta 13 — Tuple",
+   "Hafta 14 — Sözlükler"
+  ],
+  "textbooks": [
+   "Summerfield M., “Programming in Python 3: a complete introduction to the Python language\", Addison-Wesley, c2010."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=101",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 102": {
+  "code": "ISE 102",
+  "name": "Programlama I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 2,
+   "local": 4,
+   "ects": 10
+  },
+  "description": "Derste algoritma tasarımı ve programlamaya giriş amacıyla Python programlama dilinde gelişmiş konular öğretilmektedir. Ayrıca nesne tabanlı programlama, arayüz tasarımı, düzenli ifadeler, veri tabanı kullanımını Python programlama dili vasıtasıyla öğretilmektedir. In this course advanced programming concepts are taught using Python programming language. Object oriented programming, graphical user interface design, database access and regular expressions are taught in the course with Python using lab applications.",
+  "outcomes": [
+   "Nesne tabanlı programlamaya ait ana kavramları",
+   "Arayüze sahip yazılımlar geliştirmeyi",
+   "Düzenli ifadelerin kullanımını,",
+   "Veri tabanına erişimi öğrenirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Nesne tabanlı programlamaya giriş",
+   "Hafta 2 — Sınıf yapısı, yapıcı ve yok ediciler",
+   "Hafta 3 — Yöntem ve özellikler",
+   "Hafta 4 — Overloading",
+   "Hafta 5 — Polimorfizm",
+   "Hafta 6 — Arayüz tasarımına giriş",
+   "Hafta 7 — Tasarım kütüphaneleri",
+   "Hafta 8 — Kullanıcı tetiklemeli kod geliştirme",
+   "Hafta 9 — Örnek yazılımların geliştirilmesi",
+   "Hafta 10 — Düzenli ifadelere giriş",
+   "Hafta 11 — Düzenli ifadeler kullanılarak yazılım geliştirme",
+   "Hafta 12 — Veri tabanına giriş",
+   "Hafta 13 — Veri tabanına ve veriye erişim",
+   "Hafta 14 — Veri tabanı erişimli yazılım geliştirme"
+  ],
+  "textbooks": [
+   "Summerfield M., “Programming in Python 3: a complete introduction to the Python language\", Addison-Wesley, c2010."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=102",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 111": {
+  "code": "ISE 111",
+  "name": "Lineer Cebir",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5.5
+  },
+  "description": "Lineer Denklem Sistemlerine Giriş, Bilişim Sistemlerinde Lineer Denklem Sistemleri Uygulamaları, Gauss Yoketme Metodu, Matrisler ve Matris İşlemleri, Denklem Sistemleri ve Matrisler, Bilişim Sistemlerinde Matrisler, Determinant Hesabı, Determinantın Özellikleri, Vektörlere Giriş, Vektörlerin Normu, Vektör Aritmetiği, Vektörlerin Bilişim Sistemlerinde kullanımı, Skaler Çarpım, Öklid uzayları, Reel Vektör Uzayları, Lineer Bağımsızlık, Özdeğerler ve Özvektörler, İç Çarpım, Bilişim Sistemlerinde iç çarpım. Introduction to Linear Systems, Applications of Linear Systems in Information System Engineering, Gaussian Elimination, Matrices and Matrix Operations, Matrix and Equations, Determinants, Matrices in Information Systems, Evaluating, Introduction to Vectors, Norm of a Vector, Vector Arithmetic, Usage of vectors in Information Systems, Dot Product, Euclidean Space, Real Vector Spaces, Linear Independence, Eigenvalues and Eigenvectors, Inner Product, Application of inner product in Information Systems.",
+  "outcomes": [
+   "Bilişim Sistemleri ve lineer denklem sistemleri ilişkisini bulabilir.",
+   "Bilişim Sistemlerinde matris, determinantı hesap edebilir",
+   "Vektörlerle ilgili temel işlemleri yapabilir.",
+   "Bilişim Sistemleri uygulamalarında vektörleri kullanabilir.",
+   "Vektör uzayları ve ilgili kavramlarını öğrenir.",
+   "İç çarpım kavramını Bilişim Sistemlerinde kullanabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş.",
+   "Hafta 2 — Bilişim Sistemleri Mühendisliğinde Lineer Sistemler.",
+   "Hafta 3 — Lineer Sistemler.",
+   "Hafta 4 — Matris ve açılımları.",
+   "Hafta 5 — Öklid Vektör Uzayları.",
+   "Hafta 6 — Öklid Vektör Uzaylarının Bilişim Sistemleri Müh. Örnekleri",
+   "Hafta 7 — Genel Vektör Uzayları.",
+   "Hafta 8 — Genel Vektör Uzayları.",
+   "Hafta 9 — Bilişim Sistemleri Müh. Vektör Uzayı Uygulamaları / Ara Sınav",
+   "Hafta 10 — Özdeğerler ve Özvektörler",
+   "Hafta 11 — Bilişim Sistemlerinde Özvektörler",
+   "Hafta 12 — İç Çarpım.",
+   "Hafta 13 — İç Çarpım ve Bilişim Sistemleri.",
+   "Hafta 14 — Tekrar."
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=111",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 112": {
+  "code": "ISE 112",
+  "name": "Discrete Mathematics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Matematiksel manıtğın temelleri, Boole Cebri, kümeler, kanıtlama yöntemleri, tümevarım, bağıntılar ve fonksiyonlar, çizgeler, ağaçlar, cebirsel yapılar ve kısmi sıralı kümeler, sayı teorisi temelleri, sayma, toplama, yakınsama ve asimptotik analiz, özyineleme, algoritmik düşünme Basics of Mathematical Logic, Boolean Algebra, Sets, Proof methods, Induction, Relations and Functions, Graphs, Trees, Algebraic Structures and posets, Basics of Number Theory, Counting, Sums, Approximation and Asymptotics, Recurrence, Algorithmic Thinking.",
+  "outcomes": [
+   "Basit bir sistemi biçimsel olarak inceleyebilme",
+   "Matematiksel olarak geçerli bir ispat yapabilmek için gerekli çıkarım yöntemlerini ve metotları anlamak",
+   "Bağıntı ve fonksiyon kavramlarını anlamak ve problem çözmede kullanabilmek",
+   "Çizge kavramını anlamak ve problem çözmede kullanabilmek",
+   "Temel algoritmik düşünme ve özyineleme hakkında bilgi sahibi olmak",
+   "Algoritmik karmaşıklık analizinin temellerini öğrenmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Matematiksel mantığın temelleri",
+   "Hafta 2 — Boole Cebri",
+   "Hafta 3 — Kümeler",
+   "Hafta 4 — kanıtlama yöntemleri",
+   "Hafta 5 — Tümevarım",
+   "Hafta 6 — Bağıntılar ve Fonksiyonlar",
+   "Hafta 7 — Çizgeler",
+   "Hafta 8 — Ağaçlar",
+   "Hafta 9 — Cebirsel yapılar ve kısmi sıralı kümeler",
+   "Hafta 10 — Sayı teorisi temelleri",
+   "Hafta 11 — Sayma",
+   "Hafta 12 — Toplama, yakınsama ve asimptotik analiz",
+   "Hafta 13 — Özyineleme",
+   "Hafta 14 — Algoritmik düşünme"
+  ],
+  "textbooks": [
+   "AYRIK MATEMATİĞİN TEMELLERİ, DAVID J HUNTER, ÜÇÜNCÜ BASKI, JONES VE BARTLETT ÖĞRENİMİ, 2017"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=112",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 302": {
+  "code": "ISE 302",
+  "name": "İşletim Sistemleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Giriş, tarihçe. Süreçler: temel kavramlar, eşzamanlı süreçler, karşılıklı dışlama, süreç yönetimi, çizelgeleme yaklaşımları. Kilitlenme ve kilitlenme önleme yaklaşımları. Bellek yönetimi: segmentasyon, sayfalama, ilgili yöntemler, sanal bellek. Giriş/Çıkış. UNIX ve diğer örnek işletim sistemleri. Introduction, history. Processes: basic concepts, concurrent processes, mutual exclusion, process management, scheduling approaches. Deadlock and deadlock prevention approaches. Memory management: segmentation, paging, related methods, virtual memory. Input/Output. UNIX and other example operating systems.",
+  "outcomes": [
+   "Öğrenciler işletim sistemlerinin temel kavramlarını öğreneceklerdir.",
+   "Öğrenciler süreç yönetiminin temel kavramlarını öğreneceklerdir.",
+   "Öğrenciler, süreçler arası iletişim ve senkronizasyon tekniklerini öğreneceklerdir. Eşzamanlı süreçleri içeren bir problem verildiğinde, probleme bir çözüm tasarlayabilecek ve kodlayabileceklerdir.",
+   "Öğrenciler, süreç çizelgeleme ve kilitlenme tespiti ve kaçınma için bir dizi algoritma öğreneceklerdir.",
+   "Öğrenciler bellek yönetimi (tahsis, sayfalama, segmentasyon, sanal bellek) kavramlarını öğreneceklerdir.",
+   "Öğrenciler, işletim sistemlerinde dosya yönetimi ve girdi / çıktı işlemeyi öğreneceklerdir.",
+   "Öğrenciler Unix sistem çağrılarını öğrenecek ve uygulayabileceklerdir.",
+   "Gerçek dünya problemlerini çözmek için işletim sistemlerinin özelliklerini kullanabilme becerisine sahip olur."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — İşletim sistemleri: temel kavramlar, sınıflandırma, tarihçe",
+   "Hafta 3 — UNIX'te süreç yönetimi, zaman paylaşımı, bağlam değiştirme, süreç yönetimi",
+   "Hafta 4 — İş parçacıkları, iş parçacığı yönetimi, UNIX'te iş parçacığı yönetimi",
+   "Hafta 5 — Süreçler arası iletişim (IPC) ve senkronizasyon, semaforlar, UNIX'te semaforlar",
+   "Hafta 6 — Eşzamanlı süreçlerle ilgili klasik problemler",
+   "Hafta 7 — Sınıf çalışması",
+   "Hafta 8 — UNIX'te kilitlenme, algılama ve kaçınma, paylaşılan bellek",
+   "Hafta 9 — Süreç çizelgeleme algoritmaları, UNIX'te süreç çizelgeleme",
+   "Hafta 10 — Bellek yönetimi, segmentasyon, sayfalama",
+   "Hafta 11 — Bellek tahsisi, sanal bellek yönetimi",
+   "Hafta 12 — Sınıf çalışması",
+   "Hafta 13 — Dosya sistemleri ve yönetimi, UNIX dosya sistemi",
+   "Hafta 14 — Giriş / Çıkış"
+  ],
+  "textbooks": [
+   "\"Modern Operating Systems\", Andrew Tanenbaum, Prentıce Hall, 2007."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=302",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 304": {
+  "code": "ISE 304",
+  "name": "Yazılım Mühendisliği",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bu ders, yazılım sistemlerinin nasıl tasarlanacağını ve uygulanacağını öğretecek ve yazılım mühendisliğine giriş yapacaktır. This course will teach how to design and implement software systems and give an introduction to software engineering.",
+  "outcomes": [
+   "Bir yazılımın tasarımını anlamak",
+   "Planlamanın nasıl yapılacağını öğrenmek",
+   "Tasarım desenini öğrenmek",
+   "Yazılım sistemlerinin verimli bir şekilde uygulanması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yazılım mühendisliğine giriş",
+   "Hafta 2 — Yazılım sisteminin yaşam döngüsü",
+   "Hafta 3 — Planlama",
+   "Hafta 4 — Planlama",
+   "Hafta 5 — Risk Yönetimi",
+   "Hafta 6 — Prototipleme ve Gereksinimler",
+   "Hafta 7 — Gereksinim Mühendisliği",
+   "Hafta 8 — Hedef Modelleme",
+   "Hafta 9 — UML (UML)",
+   "Hafta 10 — Durum şemaları",
+   "Hafta 11 — Tasarım, Bilgi Gizleme",
+   "Hafta 12 — Tasarım Desenleri",
+   "Hafta 13 — Yazılım Mimarisi",
+   "Hafta 14 — Test etme"
+  ],
+  "textbooks": [
+   "Roger Pressman, Yazılım Mühendisliği: Bir Uygulayıcının Yaklaşımı, 6. basım, McGraw Hill, 2005. ISBN 0-07-285318-2."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=304",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 305": {
+  "code": "ISE 305",
+  "name": "Veritabanı Sistemleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 9
+  },
+  "description": "Veritabanı kavramları. İlişkisel model, ilişkisel cebir, sorgular. Uygulama geliştirme. Veritabanı tasarımı, normalizasyon, varlık-ilişki modeli. Eşzamanlılık, işlemler, kilitleme. Nesne yönelimli veri tabanları, nesne/ilişkisel haritalama, XML veri modeli ve sorguları. Database concepts. Relational model, relational algebra, queries. Application development. Database design, normalization, entity-relationship model. Concurrency, transactions, locking. Object-oriented databases, object/relational mapping, XML data model and queries.",
+  "outcomes": [
+   "Etkili bir şekilde işlenebilmeleri için büyük miktarda verinin modellenmesi.",
+   "Büyük miktarda veriyi işleyecek yazılım uygulamaları tasarlamak ve uygulamak.",
+   "Bir projede kullanılacak gerekli veritabanı ve yazılım bileşenleri ile birlikte uygun bir model seçmek.",
+   "Bir ekibin üyesi olarak çalışmak ve bunu bir izleyici önünde sunmak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — İlişkisel Model",
+   "Hafta 3 — Bütünlük",
+   "Hafta 4 — İlişkisel Cebir",
+   "Hafta 5 — SQL Sorguları",
+   "Hafta 6 — Uygulama Geliştirme",
+   "Hafta 7 — Veritabanı Tasarımı ve Normalizasyonu",
+   "Hafta 8 — Problem Çözümü",
+   "Hafta 9 — Sınıf çalışması",
+   "Hafta 10 — İşlemler, Eşzamanlılık",
+   "Hafta 11 — Nesne Yönelimli Veritabanları",
+   "Hafta 12 — XML Veritabanları",
+   "Hafta 13 — Öğrenci Proje Sunumları ve Demoları",
+   "Hafta 14 — Öğrenci Proje Sunumları ve Demoları"
+  ],
+  "textbooks": [
+   "Veritabanı sistemlerine giriş, c.j. tarih, addison-wesley, 2004, isbn 0-321-19784-4"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=305",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 306": {
+  "code": "ISE 306",
+  "name": "Bilgisayar Ağları",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bilgisayar İletişiminden sonra bir takip kursu. Taşıma Katmanı, Uygulama Katmanı, TCP, UDP, Soket Programlama, Performans Modellemesine Giriş, Modern Bilgisayar Ağı terimleri: VPN, gigabit ethernet, optik ağlar, depolama alanı ağları, kişisel alan ağları, PON,..., Standartları ve RFC'ler, Ağ güvenliği A follow-up course after Computer Communication. Transport Layer, Application Layer, TCP, UDP, Socket Programming, Introduction to Performance Modeling, Modern Computer Network terms: VPN, gigabit ethernet, optical networks, storage-area networks, personal-area networks, PON,..., Standards and RFCs, Network security",
+  "outcomes": [
+   "Taşıma katmanının yapısını öğrenmek",
+   "Soket programlamanın temellerini öğrenmek ve ağ uygulamalarını kullanarak program yazabilmek.",
+   "Uygulama katmanının yapısını ve bileşenlerini öğrenmek.",
+   "Bilgisayar ağlarındaki güncel konular hakkında genel bir bilgi sahibi olmak",
+   "Standartların nasıl ve kimler tarafından geliştirildiğini öğrenmek.",
+   "Ağlarda kullanılan çeşitli modern teknolojileri tanımlayabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Katman 1-3 özeti",
+   "Hafta 2 — Taşıma katmanı hizmetleri",
+   "Hafta 3 — Adresleme, bağlantı kurma, akış kontrolü",
+   "Hafta 4 — UDP",
+   "Hafta 5 — TCP",
+   "Hafta 6 — Soket Programlama",
+   "Hafta 7 — Uygulama katmanı: DNS, e-posta",
+   "Hafta 8 — WWW, Http, Xml",
+   "Hafta 9 — Standartlar, Öğrenci sunumları",
+   "Hafta 10 — Öğrenci sunumları",
+   "Hafta 11 — Bilgisayar ağlarında performans sorunları",
+   "Hafta 12 — VPN, Gigabir Ethernet, PON",
+   "Hafta 13 — Depolama alanı ağları, kişisel alan ağları, optik ağlar",
+   "Hafta 14 — Dönem projesi sunumları"
+  ],
+  "textbooks": [
+   "Computer Networks and Internets, D. Comer, 5th Ed., Prentice Hall, 2010"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=306",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 307": {
+  "code": "ISE 307",
+  "name": "Bilgi Teknolojileri Sistemleri Analiz ve Tasarımı",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bu",
+  "outcomes": [
+   "Bir sistem analizinin temel kavramlarını ve yöntemlerini anlama becerisi.",
+   "Bir sistem geliştirme yaşam döngüsünü analiz etme becerisi.",
+   "Sistem analizi sırasında gerekli bilgileri toplamak için temel yöntemlerin altını çizebilme",
+   "Sistem analizi için farklı bakış açılarına sahip olabilme becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilgi Sistemlerinin temel kavramları, Sistem analizi ve tasarım tanımı",
+   "Hafta 2 — Bilgi sistemi türleri:Genel Bakış: Sistem Geliştirme Yaşam Döngüsü, Bilgisayar Destekli Yazılım Mühendisliği araçlarını kullanma.",
+   "Hafta 3 — Bilgisayar Tabanlı Bilgi Sistemleri (CBIS) ve Manuel Sistemler",
+   "Hafta 4 — Sistem geliştirme yaklaşımı",
+   "Hafta 5 — Bilgi Sistemi Türleri",
+   "Hafta 6 — Farklı IS türleri için sistem geliştirme",
+   "Hafta 7 — Vaka Çalışması: -Paydaşlar: Sistem Oyunundaki Oyuncular",
+   "Hafta 8 — Sistem geliştirmede işletme yöneticileri",
+   "Hafta 9 — Sistem geliştirme metodolojisi",
+   "Hafta 10 — Analiz aşaması-1",
+   "Hafta 11 — Analiz aşaması-2",
+   "Hafta 12 — Tasarım aşaması",
+   "Hafta 13 — Uygulama",
+   "Hafta 14 — Prototipleme"
+  ],
+  "textbooks": [
+   "Introduction to Information System O'Brain, Printice Hall, 1997"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=307",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 308": {
+  "code": "ISE 308",
+  "name": "Yapay Zeka ve Uzman Sistemler",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Yapay Zeka kavramlarını tanıtır. İyi tanımlanmış Yapay Zeka problem formülasyonları oluşturmak için araçlar sunar. Akıllı ajan sistemleri tasarlamak için araçları ve yapıları inceler. Sorunun yapısına ve arama alanına dayalı olarak sorunları çözmek için araçlar sunar. Introduces concepts of Artificial Intelligence. Presents tools to form well-defined Artificial Intelligence problem formulations. Studies tools and structures to design intelligent agent systems. Presents tools to solve problems based on the structure of the problem and the search space.",
+  "outcomes": [
+   "Karmaşık bir problem için iyi tanımlanmış bir problem formülasyonu tanımlayın,",
+   "Akıllı ajanlar tasarlayabilir,",
+   "Yapay zeka yöntemlerini ve algoritmalarını kullanarak iyi tanımlanmış problemleri çözebilme,",
+   "Problem çözme ajanları tasarlayabilir,",
+   "Ajanlar için çıkarım mekanizmaları ve planlama yetenekleri geliştirmek,",
+   "Aracılara öğrenme özellikleri ekleyin."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay Zekaya Giriş",
+   "Hafta 2 — Akıllı Aracılar",
+   "Hafta 3 — İyi Tanımlanmış Yapay Zeka Problemleri",
+   "Hafta 4 — Problem Çözme ve Arama",
+   "Hafta 5 — Problem Çözme ve Arama",
+   "Hafta 6 — Kısıt Tatmin Problemleri",
+   "Hafta 7 — Kısıt Tatmin Problemleri",
+   "Hafta 8 — Problem Çözmenin Tekrarı ARA SINAV",
+   "Hafta 9 — Oyun Oynama",
+   "Hafta 10 — Önerme Mantık",
+   "Hafta 11 — Önerme Mantığında Çıkarım",
+   "Hafta 12 — Ajanlarla Planlama",
+   "Hafta 13 — Ajanlarda Öğrenme",
+   "Hafta 14 — Ajanlarda Öğrenme"
+  ],
+  "textbooks": [
+   "Artificial Intelligence: A Modern Approach (3rd Edition), Stuart Russell, Peter Norvig, Prentice Hall, 2010"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=308",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 309": {
+  "code": "ISE 309",
+  "name": "Çoğulortam Sistemleri",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bu ders, multimedya hesaplamanın çeşitli yönlerini öğretir: içerik gösterimi, kodlama, sıkıştırma, dağıtım ve güvenlik, ayrıca çeşitli örnek uygulamalar hakkında bilgi verir. This course teaches several aspects of multimedia computing: content representation, coding, compression, distribution and security, as well as gives information about various sample applications.",
+  "outcomes": [
+   "Çoklu ortam veri gösterim yöntemlerini öğrenmek",
+   "Kodlama, sıkıştırma ve dağıtım tekniklerini öğrenmek",
+   "Bir multimedya sisteminin nasıl tasarlanacağını ve uygulanacağını öğrenmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Çoklu Ortam Hesaplamaya Giriş",
+   "Hafta 2 — Ses ve Konuşma standartları, kodlama, işleme",
+   "Hafta 3 — Konuşma tanıma, konuşmacı günlükleştirme",
+   "Hafta 4 — Görüntü Sıkıştırma Teknikleri ve Algoritmaları",
+   "Hafta 5 — Görüntü İyileştirme ve Segmentasyon",
+   "Hafta 6 — Görüntü Tanıma Teknikleri ve Algoritmaları",
+   "Hafta 7 — İkili Görüntü İşleme Teknikleri ve Paralel Algoritmalar",
+   "Hafta 8 — Dijital Video Kodlama ve Sıkıştırma",
+   "Hafta 9 — Dijital Video İşleme",
+   "Hafta 10 — Multimedya İletişim ve İşletim Sistemleri",
+   "Hafta 11 — Güvenli Multimedya, filigran",
+   "Hafta 12 — Multimedya Uygulamaları 1",
+   "Hafta 13 — Çoklu Ortam Uygulamaları 2",
+   "Hafta 14 — Multimedya Uygulamaları 3"
+  ],
+  "textbooks": [
+   "Multimedya Sistemleri: Algoritmalar, Standartlar ve Endüstri Uygulamaları, Parag Havaldar ve Gerard Medioni, Course Technology, 2009. ISBN-10: 1418835943"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=309",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 312": {
+  "code": "ISE 312",
+  "name": "Elektronik Ticaret",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Ticaret kavramı; geçmişi ve bugünü. Ulusal ve uluslararası ticaretin kural ve yöntemleri. E-Ticaretin türleri: Kurumlar arası, kurumlar ile bireyler arası, bireyler arası ticaret. E-Ticaretin altyapısı: İletişim ortamları. Elektronik veri aktarımı, uluslararası ölçünler (UN-EDI, XML). Güvenlik sağlama ve artırma yöntemleri. E-Ticaret yapılarının oluşturulması. Kurum-banka-müşteri ilişkileri. E-Ticaret uygulamaları Introduction to e-commerce; past and present. Rules and methods of domestic and international trade. Types of e-commerce: Business to business (B-B), Business to customer (B-C), Customer to customer (C-C). Fundamentals of e-commerce. Communication medium. International standards of e-commerce: (UN-EDI, XML). Security and security improvement methods. Implementation of e-commerce systems. Business-bank and customer relations. Application of e-commerce.",
+  "outcomes": [
+   "Ticaretin temel kuralları",
+   "Ulusal ve uluslararası ticaret kuralları",
+   "İletişim altyapıları (VAN, VPN ve Internet)",
+   "EDI, UN-EDI, EDIFACT ve XML ölçünleri",
+   "Güvenlik yöntemleri: Simetrik ve asimetrik şifreleme (DES, RSA, AES)",
+   "Sunum teknikleri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ticaretin temelleri",
+   "Hafta 2 — Elektronik ticaretin dünü ve bugünü",
+   "Hafta 3 — Kurumlar arası ticaret",
+   "Hafta 4 — Kurumlar ve kişiler arası ticaret",
+   "Hafta 5 — Elektronik ticarette kullanılan standartlar : EDI, XML",
+   "Hafta 6 — Güvenlik kavramı, güvenlik yöntemleri ve araçları",
+   "Hafta 7 — Kurum-banka ve müşteri arasındaki bağlantılar",
+   "Hafta 8 — Elektronik ticaret uygulamalarından örnekler",
+   "Hafta 9 — Internet bankacılığı, güvenlik sorunları ve çözüm örnekleri",
+   "Hafta 10 — Öğrenci projelerinin sunumu ve tartışma",
+   "Hafta 11 — Öğrenci projelerinin sunumu ve tartışma",
+   "Hafta 12 — Öğrenci projelerinin sunumu ve tartışma",
+   "Hafta 13 — Öğrenci projelerinin sunumu ve tartışma",
+   "Hafta 14 — Öğrenci projelerinin sunumu ve tartışma"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 313": {
+  "code": "ISE 313",
+  "name": "WEB Analiz ve Tasarım Araçları",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "eXtensible Markup Language (XML)’in temel özellikleri ve XML Schema, Namespaces, XPath, XQuery ve XSL dönüşümleri gibi XML tabanlı diğer teknolojiler. Document Type Declarations (DTD) ve XML Schema kullnılarak XML dokümanlarının sağlamasının yapılması. XML belgelerinin yaratılması, dönüştürülmesi ve işlenmesi. XML ve Restful web servisleri. XML Web servislerinin temel teknolojileri: WSDL, SOAP ve UDDI. Java EE6 platformunda JAX-WS ve JAX-RS kullanılarak uygulama geliştirme. The fundamentals of eXtensible Markup Language (XML) and its significant derivative companion technologies: XML Schema, Namespaces, XPath, XQuery, and XSL Transformations. Validating XML documents using Document Type Declarations (DTDs) and XML Schema. The creation, specification and processing of XML documents. XML and Restful web services and underlying technologies such as WSDL, SOAP, and UDDI are also studied. Writing XML and Restful Web Services on Java EE 6 using JAX-WS and JAX-RS",
+  "outcomes": [
+   "Elektronik Veri Alış-Verişi",
+   "Yapısal Veri Gösterimi",
+   "XML Dokümanların Sağlamasının yapılması",
+   "XML Dokümanlar arasında dönüşüm",
+   "XML Dokümanların İşlenmesi",
+   "XML Web Serisleri",
+   "Restful Web Servisleri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Web Teknolojilerine Giriş",
+   "Hafta 2 — Elektronik veri alış-verişi",
+   "Hafta 3 — XML",
+   "Hafta 4 — DTD ile XML Sağlama",
+   "Hafta 5 — XML Şema",
+   "Hafta 6 — XSL Dönüşümleri",
+   "Hafta 7 — XPath",
+   "Hafta 8 — XQuery",
+   "Hafta 9 — Java ile XML Ayrıştırma",
+   "Hafta 10 — XML ve Restful Web Servisleri",
+   "Hafta 11 — Yıliçi Sınavı",
+   "Hafta 12 — WSDL ve SOAP",
+   "Hafta 13 — JAX-WS ile XML Web Servisi Geliştirme",
+   "Hafta 14 — JAX-RS ile Restful Web Servisi Geliştirme"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=313",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 315": {
+  "code": "ISE 315",
+  "name": "Algoritma Analizi",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 9
+  },
+  "description": "Giriş, ikincil yedekleme birimleri, asimptotik analiz; Yinelemeler; Sıralama, merge ve heap sıralama yöntemleri; Hızlı sıralama, lineer zamanda sıralama; Quicksort, sorting in linear time; Sözlükler, daraltma yöntemi; İkili arama ağaçları, 2-3 ağaçları, 2-3-4 ağaçları, kırmızı ve siyah ağaçlar; B-ağaçları; Binomial heapler; Fibonacci heapler; Introduction, Secondary Storage Devices, Asymptotic Analysis; Recurrences, classwork; Sorting, merge sort, heap sort; Dictionaries, hashing; Binary search trees, 2-3 trees, 2-3-4 trees, red and black trees; B-trees; Binomial heaps; Fibonacci heaps;",
+  "outcomes": [
+   "Asimptotik Gösterim hakkında bilgi verilmesi",
+   "Yinelemelerin (Recurrence) çözümleri",
+   "Sıralama algoritmaları (Merge, Hızlı, Heap",
+   "Verinin daha hızlı saklanması ve erişilmesi için gerekli karmaşık teknikler ve veri yapılarının tanıtılması (daraltma (hashing), Kırmızı-Siyah ağaçlar, B-ağaçları).",
+   "Sıralama ağacı (heap) yapısının, çeşitlerinin (Binomial, Fibonacci) ve uygulamalarının tanıtılması",
+   "İleri veri yapılarının arama, sıralama için gereken zaman performanslarını ölçme ve anlama, ve bir problem için uygun olan veri yapısının hangisi olduğu hakkında fikir sahibi olma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, ikincil yedekleme birimleri",
+   "Hafta 2 — Asimptotik analiz",
+   "Hafta 3 — Yinelemeler",
+   "Hafta 4 — Olasılıksal analiz ve rastgeleleştirilmiş algoritmalar",
+   "Hafta 5 — Heap ve merge sıralama yöntemleri",
+   "Hafta 6 — Hızlı sıralama, lineer zamanda sıralama",
+   "Hafta 7 — Sözlükler, daraltma yöntemi",
+   "Hafta 8 — Ikili arama ağaçları, 2-3 ağaçları",
+   "Hafta 9 — 2-3-4 ağaçları, kırmızı ve siyah ağaçlar,",
+   "Hafta 10 — Veri yapılarını genişletme, amortize analiz",
+   "Hafta 11 — B-ağaçları",
+   "Hafta 12 — B-ağaçları",
+   "Hafta 13 — Binomial heapler",
+   "Hafta 14 — Fibonacci heapler"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=315",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 316": {
+  "code": "ISE 316",
+  "name": "Informatics Ethics & Law",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Felsefede etik ile ilgili kavramlar ve teoriler. Meslek etiği ve davranış kuralları. Gizlilik, veri koruma. Fikri mülkiyet: telif hakkı, patent, lisans anlaşmaları. İnternet ile ilgili konular: ifade özgürlüğü. Siber suç. Bilgi teknolojisinin toplumsal etkileri. Concepts and theories about ethics in philosophy. Professional ethics and codes of conduct. Privacy, data protection. Intellectual property: copyright, patent, license agreements. Issues about the Internet: freedom of expression. Cybercrime. Social implications of information technology.",
+  "outcomes": [
+   "Bilgi teknolojilerinin toplumsal etkilerini ve tartışmalı konularını anlamak.",
+   "Bilgi teknolojileri ile ilgili mesleki davranış kurallarını anlamak.",
+   "Gizlilik ve veri koruma ile ilgili yasal konuları anlamak.",
+   "Fikri mülkiyet ile ilgili yasal konuları anlamak.",
+   "Siber suç ile ilgili yasal konuları anlamak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Etik Teoriler",
+   "Hafta 3 — Meslek Etiği: Etik Kurallar",
+   "Hafta 4 — Mesleki Etik: Sorumluluk",
+   "Hafta 5 — Gizlilik ve Veri Koruma",
+   "Hafta 6 — Gizlilik ve Veri Koruma",
+   "Hafta 7 — Fikri Mülkiyet: Giriş",
+   "Hafta 8 — Fikri Mülkiyet: Telif Hakları",
+   "Hafta 9 — Fikri Mülkiyet: Telif Hakları",
+   "Hafta 10 — Fikri Mülkiyet: Patentler",
+   "Hafta 11 — Fikri Mülkiyet: Lisans Sözleşmeleri",
+   "Hafta 12 — İnternet Düzenlemeleri: Alan Adları, İfade Özgürlüğü",
+   "Hafta 13 — Giriş",
+   "Hafta 14 — Etik Teoriler"
+  ],
+  "textbooks": [
+   "Etik ve Teknoloji: Bilgi ve İletişim Teknolojisi Çağında Etik Sorunlar, Herman T. Tavani, Wiley, 2007, ISBN 0-471-99803-6."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=316",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "ISE 333": {
+  "code": "ISE 333",
+  "name": "Int. to Comp. & Inf. Security",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Bilgisayar ve bilgi güvenliğine giriş. Temel kriptografi. Bilgisayar güvenliğinde insan etkeni. Kötü amaçlı yazılımlardaki problemlerin tartışılması. Kimlik doğrulama ve erişim kontrolünün prensipleri. Yazılım güvenliği, ağ güvenliği ve güvenilir hesaplama kavramları. Fiziksel ve altyapı güvenliğinin anlaşılması. Bilgisayar ve bilgi güvenliği ile ilgili belirli bir konuda araştırma yapmak ve onu bir topluluk önünde sunmak. Introduction to computer and information security. Basic cryptography. Human factors in computer and information security. Discussing security vulnerabilities and threats. Introducing malicious software. Principles of user authentication and access control. Concepts of software security, network security, and trusted computing. Understanding physical and infrastructure security. Emerging issues related to computer and information security. Doing a research on a specific topic about computer and information security and presenting it onto an audience.",
+  "outcomes": [
+   "Bilgisayar ve bilgi güvenliğini sağlamak için gerekli olan temel teorik ve pratik bilgileri kavramak.",
+   "Bilgisayar ve bilgi güvenliğini sağlamak için temek mekanizmaları öğrenmek.",
+   "İnsanın ve fiziksel güvenliğin öneminin ve bunlarla ilgili temellerin anlaşılması."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş. Bilgisayar ve bilgi güvenliğinde temel kavramlar.",
+   "Hafta 2 — Temel kriptografi.",
+   "Hafta 3 — Bilgi güvenliğinde insan etkenleri.",
+   "Hafta 4 — Güvenlik açığı ve tehdit.",
+   "Hafta 5 — Zararlı yazılımlar.",
+   "Hafta 6 — Kimlik doğrulama.",
+   "Hafta 7 — Erişim kontrolü- Dönem projelerinin tartışılması (faz 1) .",
+   "Hafta 8 — Sınıf çalışması - Ara sınav.",
+   "Hafta 9 — Güvenilir hesaplama.",
+   "Hafta 10 — Ağ güvenliğine giriş.",
+   "Hafta 11 — Yazılım güvenliğinin temelleri.",
+   "Hafta 12 — Altyapı güvenliği",
+   "Hafta 13 — Yeni gelişmeler.",
+   "Hafta 14 — Dönem projesi sunumları (faz 2)"
+  ],
+  "textbooks": [
+   "WILLIAM STALLINGS, LAWRIE BROWN, COMPUTER SECURITY: PRINCIPLES AND PRACTICE, 3TH EDITION, PEARSON/PRENTICE HALL, 2015"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=333",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

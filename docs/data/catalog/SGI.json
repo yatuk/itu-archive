@@ -1,0 +1,787 @@
+{
+ "SGI 101": {
+  "code": "SGI 101",
+  "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliğine Giriş ve Etik",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 2
+  },
+  "description": "Gemilerin ve gemi mühendisliğinin genel olarak tanıtılması. Gemi tipleri ve genel yerleştirme. Gemi ağırlığı ve bileşenleri. Gemi hidrostatiği ve stabilitesi. Tonaj ve fribord. Gemi direnci ve sevk. Gemi konstrüksiyonunun tipleri ve bileşenleri. Gemi makine ve sistemleri. Gemi üretiminde kullanılan malzemeler. Gemi üretimi ve tersaneler. Gemi tasarımı ve tasarım ofisleri. Mühendislik etiği. Definitions of ship and naval architecture. Types of ships and general arrangement plan. Ship weight and components. Ship geometry and form plan. Ship hydrostatic and stability. Tonnage freeboard and visible marks. Ship resistance and propulsion. The structure components of ships and construction types. Ship machinery and systems. Materials used in ship production. Ship production and shipyards. Ship design and design offices. Engineering Ethics.",
+  "outcomes": [
+   "Gemi ve gemi mühendisliği kavramına aşina olmak,",
+   "Gemi kavramının bileşenlerini anlar mesela malzeme, üretim, ağırlık, ekonomi vs.,",
+   "Basit denizcilik kurallarından haberdardır,",
+   "Gemi mühendisliğinde kullanılan bilgisayar programlarından haberdar olur mesela tablolama yöntemleri, CAD programları",
+   "Verilen bir çalışma için inisiyatif geliştirebilir ve araştırma yapabilir olmak",
+   "Grup çalışması yapar ve kurallarını öğrenir",
+   "Mühendislik ahlakını anlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Gemi tanımı, gemi mühendisliği tanımı, gemi tipleri, genel yerleştirme",
+   "Hafta 2 — Mühendislik etiği",
+   "Hafta 3 — Gemi geometrisi ve boyutsuz oranlar",
+   "Hafta 4 — Uygulama",
+   "Hafta 5 — Gemi mukavemeti ve gemi elemanları",
+   "Hafta 6 — Gemi hidrostatiği ve stabilitesi",
+   "Hafta 7 — Uygulama",
+   "Hafta 8 — VİZE SINAVI",
+   "Hafta 9 — Gemi ağırlığı ve bileşenleri",
+   "Hafta 10 — Gemi inşaatında kullanılan malzemeler",
+   "Hafta 11 — Gemi direnci ve sevk",
+   "Hafta 12 — Gemi makinaları ve sistemleri",
+   "Hafta 13 — Kurallar ve konvansiyoneller",
+   "Hafta 14 — Tersaneler ve gemi üretimi"
+  ],
+  "textbooks": [
+   "Ders notları"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=101",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 102": {
+  "code": "SGI 102",
+  "name": "Programlamaya Giriş -Python",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 0,
+   "lab": 2,
+   "local": 2,
+   "ects": 4.5
+  },
+  "description": "Python Programlamaya Giriş, Hesaplama Ortamına Giriş Değişkenler, Basit G/Ç, Aritmetik ve Mantıksal Operatörler, Aritmetik ve Mantık Operatörleri, Hatalar ve Hataların Giderilmesi, Veri Tipleri, Diziler, Dizilerin Sıralanması ve Dizilerde Arama, Basit Grafik, Algoritmalara Giriş, Program Akış Kontrol, Mantıksal İfadeler, Seçimsel Yürütme İfadeleri, Yinelemeli Yürütme İfadeleri, Basit İnşaa Blokları (Modüller, Prosedürler, Fonksiyonlar), İleri G/Ç, Dosyalar String ve Karakterler, Matris ve Çok Boyutlu Dizilerde İşlemler, Veri Uydurma, İterasyonlar, SciPy/NumPy Kütüphaneleri, Basit Lineer Cebir ve Polinom Örnekleri Introduction to Python Programming, Computing Environment, Variables, Simple I/O, Arithmetic and Logic Operators, Error Analysis and Debugging, Data Types, Arrays, Sorting Arrays, Searching Arrays, Simple Plot, Introduction to Algorithms, Program Flow Control, Logical Expressions, Selective Execution Statements, Recursive Execution Statements, Basic Building Blocks (Modules, Procedures, Functions, Subroutines), Advanced I/O, Files and Records, Handling String/Characters, Matrices and Multidimensional Arrays, Data fitting, Iterations, SciPy/NumPy Libraries, Linear Algebra Applications, Polynomials Examples,",
+  "outcomes": [
+   "Kullanılan programın syntax yapısını öğrenecek",
+   "Bir problemi analiz edebilecek ve algoritma gelistirebilecek",
+   "Bir programı test edebilecek, hata ayıklama ve dogrulama yapabilecek",
+   "Bilimsel ve mühendislik problemleri için ham verileri (girdi) ve üretilen verileri (çıktı) önişlemesini ve görselleştirmesini anlayabilecek ve yapabilecek",
+   "Programın hazır ve betik fonksiyonlarını kullanarak basit hesaplamaları gerçekleştirebilecek.",
+   "Bilimsel rapor hazırlayabilecek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Python Programlamaya Giriş",
+   "Hafta 2 — Hesaplama Ortamına Giriş",
+   "Hafta 3 — Değişkenler, Operasyonlar",
+   "Hafta 4 — Aritmetik ve Mantık Operatörleri",
+   "Hafta 5 — Algoritmalara Giriş, Program Akış Kontrol,",
+   "Hafta 6 — Fonksiyonlar",
+   "Hafta 7 — Diziler",
+   "Hafta 8 — Basit Denklem Çözme Uygulamaları",
+   "Hafta 9 — Çokterimli Örnekleri",
+   "Hafta 10 — Hatalar ve Hataların Kaynağı",
+   "Hafta 11 — Basit Çizim",
+   "Hafta 12 — İleri G/Ç, Dosya İşlemleri",
+   "Hafta 13 — SciPy/NumPy Kütüphaneleri",
+   "Hafta 14 — Basit Lineer Cebir"
+  ],
+  "textbooks": [
+   "“Starting out with Python”, Tony Gaddis, Pearson Education, 2015."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=102",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 103": {
+  "code": "SGI 103",
+  "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 0,
+   "lab": 2,
+   "local": 2,
+   "ects": 4.5
+  },
+  "description": "Bilimsel ve Mühendislik Hesaplamaya Giriş, Programda Hesaplama Ortamına Değişkenler, Operasyonlar, Basit Grafik ,Algoritmalar ve Mantık Operatörleri, Akış Kontrol, Hatalar ve Hataların Kaynağı, Fonksiyonlar, Lineer Cebir Uygulamaları, Basit Denklem Çözme Uygulamaları, Çokterimli Örnekleri, Eğri Uydurma Uygulamaları, Interpolasyon Uygulamaları, Sayısal Integrasyon Uygulamaları, Sembolik Matematik, Hazır Fonksiyonlar ile Sıradan Türevli Denklem Çözümleri Introduction to Scientific and Engineering Computing, Introduction to Program Computing Environment,Variables, Operations and Simple Plot, Algorithms and Logic Operators, Flow Control, Errors and Source of Errors, Functions, Linear Algebra Applications, Solving Equations Applications, Polynomials Examples, Curve Fitting Applications, Interpolation Applications, Numerical Integration Applications, Symbolic Mathematics, ODE Solutions with built-in functions",
+  "outcomes": [
+   "Güncel mühendislik problemleri ve çözümlerinde kullanılan yöntem ve programlar hakkında genel bilgi kazanacak",
+   "Kullanılan programın syntax yapısını öğrenecek",
+   "Bir problemi analiz edebilecek ve algoritma gelistirebilecek",
+   "Bir programı test edebilecek, hata ayıklama ve dogrulama yapabilecek",
+   "Bilimsel ve mühendislik problemleri için ham verileri (girdi) ve üretilen verileri (çıktı) önişlemesini ve görselleştirmesini anlayabilecek ve yapabilecek",
+   "Programın hazır ve betik fonksiyonlarını kullanarak basit hesaplamaları gerçekleştirebilecek",
+   "Bilimsel rapor hazırlayabilecek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel ve Mühendislik Hesaplamaya Giriş",
+   "Hafta 2 — Kullanılan Programda Hesaplama Ortamına Giriş",
+   "Hafta 3 — Değişkenler, Operasyonlar, Basit Grafik",
+   "Hafta 4 — Algoritmalar ve Mantık Operatörleri",
+   "Hafta 5 — Akış Kontrol, Hatalar ve Hataların Kaynağı",
+   "Hafta 6 — Fonksiyonlar",
+   "Hafta 7 — Diziler",
+   "Hafta 8 — Basit Denklem Çözme Uygulamaları",
+   "Hafta 9 — Çokterimli Örnekleri",
+   "Hafta 10 — Eğri Uydurma Uygulamaları",
+   "Hafta 11 — Interpolasyon Uygulamaları",
+   "Hafta 12 — Sayısal Integrasyon Uygulamaları",
+   "Hafta 13 — Sembolik Matematik",
+   "Hafta 14 — Hazır Fonksiyonlar ile ADD Çözümleri"
+  ],
+  "textbooks": [
+   "William J. Palm, 2005, Introduction to Matlab 7 for Engineers, Mc Graw Hill."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=103",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 112": {
+  "code": "SGI 112",
+  "name": "Bilgisayar Destekli Teknik Resim",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 4,
+   "lab": 0,
+   "local": 3,
+   "ects": 3.5
+  },
+  "description": "Mühendislikte Teknik Resim, Çizgilerin Anlamları, Teknik Yazı, Ölçülendirme Esasları, İzdüşüm Prensipleri, Görünüşlerin Çizilmesi, Yardımcı Görünüşler, Kesit Görünüşler, Perspektif Resimler, Yüzey İşleme Sembolleri, Bağlama Elemanlarının Çizimi, / Bilgisayar Destekli Teknik Resmin Prensipleri, Temel Çizim Komutları, Temel Düzenleme Komutları Technical Drawing in Engineering, Meanings of Line Types, Lettering, Fundamentals of Dimensioning, Principles of Projection, Orthographic views, Auxiliary Views, Sectional Views, Isometric Perspectives, Surface Finishing Symbols, Fasteners. / Principles of Computer Aided Technical Drawing, Sketching Commands, Modifying Commands.",
+  "outcomes": [
+   "Serbest elle çizebilme ve yazma,",
+   "Teknik resimleri ölçülendirme, yüzey işleme sembolleri ve tolerans hesaplama,",
+   "Makina parçalarının görünüşlerini çizebilme,",
+   "Makina parçalarının kesit görünüşlerini çizebilme,",
+   "Yüzey işleme sembollerini resim üzerinde gösterebilme,",
+   "Bağlama elemanlarının teknik resimlerini çizebilme,",
+   "Bilgisayar ortamında 2D boyutlu çizebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Teknik Resme Giriş ve Teknik Yazı / Bilgisayar uygulamaları",
+   "Hafta 2 — Ölçülendirmenin Esasları / Bilgisayar uygulamaları",
+   "Hafta 3 — Yassı Parçalar / Bilgisayar uygulamaları",
+   "Hafta 4 — İzdüşüm Prensipleri ve Görünüşler / Bilgisayar uygulamaları",
+   "Hafta 5 — Görünüşler / Bilgisayar uygulamaları",
+   "Hafta 6 — Kesit Görünüşler / Bilgisayar uygulamaları",
+   "Hafta 7 — Kesit Görünüşler / Bilgisayar uygulamaları",
+   "Hafta 8 — Kesit Görünüşler / Bilgisayar uygulamaları",
+   "Hafta 9 — Kesit Görünüşler / Bilgisayar uygulamaları",
+   "Hafta 10 — Perspektif Resimler/ Bilgisayar uygulamaları",
+   "Hafta 11 — Perspektif Resimler/ Bilgisayar uygulamaları",
+   "Hafta 12 — Bağlama Elemanlarının Çizimi / Bilgisayar uygulamaları",
+   "Hafta 13 — Makina Montaj Resmi / Bilgisayar uygulamaları",
+   "Hafta 14 — Yüzey İşleme Sembolleri ve Tolerans / Bilgisayar uygulamaları"
+  ],
+  "textbooks": [
+   "Mühendislik Çizimin Esasları, S.Kurt, İ.Gerdemeli, C.E.İmrak, Birsen Yayınevi, 2005."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=112",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 201": {
+  "code": "SGI 201",
+  "name": "Statik",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Statiğin ilkeleri, kuvvet vektörü, parçacığın dengesi, kuvvet çifti, rijit cismin dengesi, düzlemde kuvvetler, ağırlık merkezi, Pappus-Guldinus teoremleri, yayılı yükler ve hidrostatik kuvvetler, bağlar ve bağ kuvvetleri, gerber kirişleri, çerçeveler, basit makinalar, kafes sistemler, kablolar, kuru sürtünme, virtüel iş. Principles of statics, force vector, equilibrium of particle, moment of a couple, equilibrium of rigid body, planar forces, center of gravity, Theorem of Pappus-Guldinus, distributed loads and hydrostatics forces, supports and support reactions, Gerber beam, frames, simple machines, trusses, cables, friction, virtual work.",
+  "outcomes": [
+   "Vektör cebri (skaler ve vektörel çarpım, toplama ve çıkarma), kuvvet ve moment tanımı",
+   "Parçacığın ve rijit cismin dengesi",
+   "Ağırlık merkezi hesabı",
+   "Bağlar ve bağ kuvvetleri",
+   "Statikçe belirli taşıyıcı sistemlerin statik dengesi (çubuklar, Gerber kirişleri, kafesler, çerçeveler, kablolar, makinalar), kesit tesir diyagramları",
+   "Yayılı yükler ve hidrostatik kuvvetler",
+   "Virtüel iş hesabı, denge kavramı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Statiğin ilkeleri, vektörler",
+   "Hafta 2 — Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+   "Hafta 3 — Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 4 — Ağırlık merkezi, Pappus-Guldinus teoremleri",
+   "Hafta 5 — Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+   "Hafta 6 — Yükler, kirişler, Gerber kirişleri, kesit tesir diyagramları",
+   "Hafta 7 — Düzlem kafesler ve çözüm yöntemleri",
+   "Hafta 8 — Kablolar ve zincirler 1. Yıliçi sınavı",
+   "Hafta 9 — Sürtünme (kuru sürtünme)",
+   "Hafta 10 — Sürtünme (vida, kayış, yuvarlanma direnci)",
+   "Hafta 11 — Yayılı yükler ve hidrostatik kuvvetler",
+   "Hafta 12 — Uzay kafes sistemler ve çözüm yöntemleri",
+   "Hafta 13 — Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 14 — Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı"
+  ],
+  "textbooks": [
+   "M. Bakioğlu, 2006, Statik, Birsen, ISBn:9755114432.",
+   "M.Omurtag, 2009, Statik, Birsen, ISBn:978975511477."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=201",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 202": {
+  "code": "SGI 202",
+  "name": "Dynamics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Tanımlar ve temel kavramlar. Parçacık kinematigi. Genel düzlemsel ve dogrusal hareket. Izafî hareket. Parçacık kinetigi. Newton kanunları. Parçacıklar sistemi için impuls ve momentum prensipleri. Parçacıklar sistemi için is ve enerji. Merkezcil kuvvet etkisinde hareket. Çarpısma. Degisken kütleli hareket. Katı cisim kinematigi. Katı cisim kinetigi. Katı cisim için is enerji impuls ve momentum. Katı cismin sabit eksenli dönmesi. Katı cismin düzlemsel dönmesi. Katı cismin titresimi. Definitions and principal axioms. Kinematics of particles. Linear, plane and general motions. Relative motion. Kinetics of particles. Newton s laws. Impuls and momentum principle. Work and Energy. Motion with resistance. Central-force Motion systems of particles. Collision. Variablesmass. Kinematics of Rigid Bodies. Kinetics of Rigid Bodies. Work and Energy. Impulse and momentum. Fixed-Axis rotation of rigit body. Plane motion of rigid body. Vibration of rigid body . Relative motion.",
+  "outcomes": [
+   "Parçacık hareketini çözülebilmek için uygun eksen takımını seçebilmek ve kullanabilmek",
+   "Parçacık hareketini seçilen (sabit/hareketli) eksenlere göre tanımlayabilmek",
+   "İvmeli hareket eden eksen takımında dinamik modeli kurabilmek",
+   "Momentumun/enerjinin korunumu gibi integral formdaki hareket denklemlerini parçacık için kullanabilmek",
+   "Momentumun/enerjinin korunumu gibi integral formdaki hareket denklemlerini rijit cisim için kullanabilmek",
+   "Düzlemsel harekette, rijit cisim için dinamik model olusturabilmek ve analiz edebilmek",
+   "Üç boyutlu harekette, rijit cisim için dinamik model olusturabilmek ve analiz edebilmek",
+   "Uzayda iki-cisim problemi yardımı ile yörünge hesabı yapabilmek",
+   "Titreşim durumunda temel basit problemleri modelleyebilmek ve analiz edebilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Maddesel noktaların dogrusal hareketi",
+   "Hafta 2 — Maddesel noktaların egrisel hareketi",
+   "Hafta 3 — Kuvvetler ve ivme",
+   "Hafta 4 — İş enerji ilkesi",
+   "Hafta 5 — İmpuls momentum",
+   "Hafta 6 — İmpuls momentum (devam)",
+   "Hafta 7 — İmpuls momentum (devam)",
+   "Hafta 8 — Katı cisimlerin kinematiğine giris",
+   "Hafta 9 — Katı cisimlerin kinematiği (devam)",
+   "Hafta 10 — Katı cisimlerin kinetiğine giris",
+   "Hafta 11 — Katı cisimlerin kinetiğinde enerji yöntemleri",
+   "Hafta 12 — Katı cisimlerin kinetiğinde enerji yöntemleri (devam)",
+   "Hafta 13 — Katı cisimlerin kinetiğinde momentum yöntemleri",
+   "Hafta 14 — Mekanik titreşimlere giris"
+  ],
+  "textbooks": [
+   "Sandor, B.I., 1983, Engineering Mechanics : Dynamics, Prentice-Hall, inc., ISBN:0-13-278937-.",
+   "Meriam, J.L., Kraige, L.G., 1993, Engineering Mechanics, 13 978-0471-73931-9, Wiley."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=202",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 203": {
+  "code": "SGI 203",
+  "name": "Strength of Materials I",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Giriş, modelleme kavramı ve temel prensipler. Gerilme. Şekil değiştirme. Malzemelerin mekanik özellikleri. Eksenel yük. Burulma. Eğilme. Introduction; Concept of modeling and basic principals. Stress. Strain. Mechanical properties of materials. Axial load. Torsion. Bending.",
+  "outcomes": [
+   "Yapı elemanlarının modellenmesi",
+   "Dış ve iç kuvvet sistemleri",
+   "Eksenel kuvvet ve kesme kuvvetinin oluşturduğu gerilmeler",
+   "Basit bağlantı elemanlarının tasarımı",
+   "Şekil değiştirme. Malzemelerin mekanik özellikleri",
+   "Eksenel kuvvet altındaki çubukların deformasyonu",
+   "Burulma gerilmeleri ve deformasyonu",
+   "Basit eğilme, eğik eğilme",
+   "Statikçe belirsiz elemanlar",
+   "Gerilme yığılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş; Modelleme kavramı ve temel prensipler",
+   "Hafta 2 — Gerilme",
+   "Hafta 3 — Gerilme",
+   "Hafta 4 — Gerilme. Şekil değiştirme",
+   "Hafta 5 — Malzemelerin mekanik özellikleri",
+   "Hafta 6 — Eksenel yük ------- ARA SINAV",
+   "Hafta 7 — Eksenel yük",
+   "Hafta 8 — Eksenel yük",
+   "Hafta 9 — Burulma",
+   "Hafta 10 — Burulma",
+   "Hafta 11 — Burulma ------- ARA SINAV",
+   "Hafta 12 — Eğilme",
+   "Hafta 13 — Eğilme",
+   "Hafta 14 — Eğilme"
+  ],
+  "textbooks": [
+   "R.C. Hibbeler, 2005, Mechanics of Materials, Prentice Hall, ISBN:0131866389.",
+   "Mustafa İnan, 2001, Cisimlerin Mukavemeti, İTÜ Vakfı, ISBN:95574630501.",
+   "Egor P. Popov, Çeviri: Hilmi Demiray, 1990, Mukavemet, Katı Cisimlerin Mekaniğine Giriş, Çağlayan Yayınevi, ISBN:978111112043."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=203",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 204": {
+  "code": "SGI 204",
+  "name": "Strength of Materials II",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Kesme, Birleşik mukavemet halleri, Gerilme dönüşümleri, Şekil değiştirme dönüşümleri, Göçme kriterleri, Kiriş ve şaftların tasarımı, Kiriş ve şaftların çökmesi, Burkulma, Enerji Metotları Transverse shear, Combined loadings, Stress transformations, Strain transformations, Failure criteria, Design of beams and shafts, Deflection of beams and shafts, Buckling, Energy Methods.",
+  "outcomes": [
+   "Kirişlerdeki kayma gerilmeleri ve kayma merkezi",
+   "Birleşik mukavemet halleri ve gerilmelerin süperpozisyonu",
+   "Gerilme ve şekil değiştirme dönüşümleri",
+   "Gerilme analizi ve akma, kırılma kriterlerinin kullanımı",
+   "Kiriş ve şaftların tasarımı",
+   "Kirişlerin elastik eğrisinin elde edilmesi",
+   "Statikçe belirsiz sistem çözüm metotları",
+   "Elastik stabilite, burkulma",
+   "Enerji metotları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kesme",
+   "Hafta 2 — Kesme",
+   "Hafta 3 — Birleşik mukavemet halleri",
+   "Hafta 4 — Gerilme dönüşümleri",
+   "Hafta 5 — Gerilme dönüşümleri",
+   "Hafta 6 — Şekil değiştirme dönüşümleri --- ARA SINAV",
+   "Hafta 7 — Göçme kriterleri",
+   "Hafta 8 — Kirişlerin ve şaftların tasarımı",
+   "Hafta 9 — Kirişlerin ve şaftların çökmesi",
+   "Hafta 10 — Kirişlerin ve şaftların çökmesi",
+   "Hafta 11 — Kirişlerin ve şaftların çökmesi --- ARA SINAV",
+   "Hafta 12 — Burkulma",
+   "Hafta 13 — Enerji metotları",
+   "Hafta 14 — Enerji metotları"
+  ],
+  "textbooks": [
+   "R.C. Hibbeler, 2005, Mechanics of Materials, Prentice Hall, ISBN:0131866389.",
+   "Mustafa İnan, 2001, Cisimlerin Mukavemeti, İTÜ Vakfı, ISBN:95574630501.",
+   "Egor P. Popov, Çeviri: Hilmi Demiray, 1990, Mukavemet, Katı Cisimlerin Mekaniğine Giriş, Çağlayan Yayınevi, ISBN:978111112043."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=204",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 205": {
+  "code": "SGI 205",
+  "name": "Fluid Mechanics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 5
+  },
+  "description": "Temel Kavramlar ve Tanımlar, Akışkanların Kinematiği, Duran akışkanlar, Manometreler ve Basınç ölçümü, Dalmış yüzeylere gelen kuvvetler, Blok halinde öteleme ve dönme, Korunum denklemlerinin integral biçimi, Denetim hacmi ve sistem kavramları, Reynolds Transport Teoremi, Kütle, Momentum ve Enerjinin korunumu,Bernoulli denklemi, Süreklilik, Momentum ve Enerji denklemlerinin diferansiyel formda türetilmesi, Navier-Stokes denklemleri ve uygulamaları, Akım ve potansiyel fonksiyonları, Boyut analizi ve benzerlik, Borularda sürtünmeli akışlar, Laminer ve Türbülanslı akış, Sürekli ve Yersel kayıplar, Dalmış cisimler etrafında akış, Sınır tabaka denklemleri, Sıkıştırılabilir akış, Türbomakinalar, Su darbeleri Basic concepts and definitions. Fluid kinematics. Fluid statics. Manometers and pressure measurements. Hydrostatic forces on immersed bodies. Solid body translation and rotation. Equations of conservation of mass, momentum and energy for systems and control volumes Bernoulli equation and applications. Navier-Stokes equations and its applications. Stream function and flow potential. Dimensional analysis and similarity. Viscous Flow in pipes and ducts. Laminar and turbulent boundary layers. Major and minor losses in pipes. Flow over immersed bodies. Boundary layer equations. Compressible flow. Fluid Machinery. Water hammer.",
+  "outcomes": [
+   "Akışkan kavramını, sıvı ve gazlar arasındaki ortak ve farklı yönleri bilme, vizkosite, yüzeysel gerilime ve buharlaşma basıncı gibi kavramları içeren problemleri çözebilme yeteneği",
+   "Dalmış yüzeylere etkiyen basınç kuvvetini, etki noktasını ve momenti hesaplayabilme",
+   "Akışları üniform/üniform olmayan, daimi /daimi olmayan, sıkıştırılabilir/sıkıştırılamaz, sürtünmeli/sürtünmesiz, laminer/türbülanslı, tek boyutlu/iki boyutlu/üç boyutlu olarak sınıflandırabilme",
+   "Bir akışta kütlesel, hacimsel debiyi ve ortalama hızı hesaplayabilme",
+   "Basınç, hız ve debi ölçme yöntemlerini öğrenmek",
+   "Duran yahut hareket eden saptırıcılara, dirsekler ve lülelere, dönen sistemlere akış dolayısı ile etkiyen kuvvet ve momentleri hareket miktarı denklemi yardımı ile hesaplayabilme",
+   "Boyutsal çözümleme ve benzerlik yasalarını akışkan ve akış problemlerine uygulama",
+   "Boru sistemlerindeki akışlarda boru sürtünme ve yersel yük kayıpları hesapları yapabilme ve Moody diagramını kullanabilme",
+   "Cisimlere akış dolayısı ile etkiyen direnç/sürükleme ve taşıma/kaldırma kuvveti kavramını bilme ve ilgili basit hesaplar yapabilme",
+   "Pompa ve türbin karakteristiklerini bilme; verilen bir akış sistemi için doğru pompa veya türrbini seçme yeteneği"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Genel Kavramlar:, Akışkan ve akışların tanımı, sıkıştırılabilme, buharlaşma-kavitasyon, yüzeysel gerilme ve kılcallık.Hız alanının özellikleri. Temel akış analizi teknikleri. Akış biçimleri:Akım çizgi",
+   "Hafta 2 — Duran akışkanlar: Basınç ve dağılımı,manometreler, dalmış yüzeylere gelen kuvvetler, Katılaştırma prensibi, blok halinde öteleme ve dönme, basınç ölçümü",
+   "Hafta 3 — Devamı",
+   "Hafta 4 — Korunum denklemlerinin integral formu: Denetim hacmi ve sistem kavramları, Reynolds transport teoremi, Kütle, Momentum korunumu (Hareket miktarı denklemi) ve enerji denklemi vueygulamaları",
+   "Hafta 5 — Bernoulli denklemi ve uygulamaları: Statik, dinamik ve toplam basınç kavramları, akışkan hızı, basınç ve debisi ölçüm yöntemleri, Sifon ve kavitasyon, yük ve piyezometre çizgileri",
+   "Hafta 6 — Devamı",
+   "Hafta 7 — Süreklilik, Hareket ve Enerji denklemlerinin diferansiyel formda türetilmesi, Navier-Stokes denklemleri ve uygulamaları, akım ve potansiyel fonksiyonları",
+   "Hafta 8 — Boyut analizi ve benzerlik",
+   "Hafta 9 — Borularda sürtünmeli akış, laminar ve türbülanslı akış, Sürekli ve yerel kayıplar, Boru dizgeleri, Moody diyagramı, Akış",
+   "Hafta 10 — Devamı",
+   "Hafta 11 — Dalmış cisimler etrafında akış, Sınır tabaka denklemleri, deneysel dış akışlar.",
+   "Hafta 12 — Devamı",
+   "Hafta 13 — Sıkıştırılabilir akış, Türbomakinalar",
+   "Hafta 14 — Türbomakinalar ve uygulamaları, Su Darbeleri"
+  ],
+  "textbooks": [
+   "F. M. White, 2005, Fluid Mechanics, 5th Edition, McGraw Hill.",
+   "B.R. Munson, D.F. Young and T. H. Okiishi, 2006, Fundamentals of Fluid Mechanics, 5th Edition, J. Wiley and Sons."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=205",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 206": {
+  "code": "SGI 206",
+  "name": "Thermodynamics",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Giriş ve Temel Kavramlar: Termodinamik ve Enerji, Termodinamiğin Sıfırıncı Yasası, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi, Saf Maddelerin Özelikleri, Kapalı Sistemlerin Enerji Analizi, Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi, Termodinamiğin İkinci Yasası: Isı Makinaları, Soğutma Makinaları ve Isı Pompaları, Carnot Çevrimi, Entropi ve Entropinin Artışı İlkesi, Ekserji: İş Potansiyelinin Bir Ölçüsü Introduction and Basic Concepts: Thermodynamics and Energy, Zeroth Law of Thermodynamics, Energy Conversion and General Energy Analysis, Properties of Pure Substances, Energy Analysis of Closed Systems, Mass and Energy Analysis of Control Volumes, The Second Law of Thermodynamics: Heat Engines, Refrigerators and Heat Pumps, The Carnot Cycle, Entropy and The Increase of Entropy Principle, Exergy: A Measure of Work Potantial",
+  "outcomes": [
+   "Termodinamik kavramını enerji dönüşümü olarak anlama",
+   "Enerji dönüşümleri ile ilgili günlük mühendislik örneklerinden yararlanabilme",
+   "Termodinamik özelikler arasındaki bağıntıları kullanabilme",
+   "Mühendislik hesaplamalarında termodinamik tabloları kullanabilme",
+   "Enerjinin Korunumu ilkesini veya termodinamiğin birinci yasasını anlama ve uygulayabilme",
+   "Açık ve kapalı sistemlerle ilgili problemleri çözme ve ideal gaz denklemini kullanabilme",
+   "Termodinamiğin ikinci yasasını anlama ve uygulayabilme",
+   "Mühendislik sistemlerinin performansını içeren problemleri çözme becerilerini kazanır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve Temel Kavramlar: Termodinamik ve Enerji, Sistemler ve Kontrol Hacimleri, Sistemin Özelikleri, Durum ve Denge, Durum Değişimi ve Çevrim, Sıcaklık ve Termodinamiğin Sıfırıncı Yasası, Basınç",
+   "Hafta 2 — Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerjinin Biçimleri, Isı ile Enerji Geçişi, İş ile Enerji Geçişi, İşin Mekanik Biçimleri",
+   "Hafta 3 — Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerji Dönüşüm Verimleri, Enerji ve Çevre",
+   "Hafta 4 — Saf Maddelerin Özelikleri: Saf Madde, Saf Maddelerin Fazları, Faz Değişim İşlemleri İçin Özelik Diyagramları",
+   "Hafta 5 — Saf Maddelerin Özelikleri: Özelik tabloları, Mükemmel Gaz Durum Denklemi, Sıkıştırılabilme Çarpanı, Diğer Durum Denklemleri",
+   "Hafta 6 — Kapalı Sistemlerin Enerji Analizi: Hareketli Sınır İşi, Kapalı Sistemler İçin Enerji Dengesi, Özgül Isılar",
+   "Hafta 7 — Kapalı Sistemlerin Enerji Analizi: Mükemmel Gazların İç Enerji, Entalpi ve Özgül Isıları, Katı ve Sıvıların İç Enerji, Entalpi ve Özgül ısıları",
+   "Hafta 8 — Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Kütlenin Korunumu İlkesi, Akış İşi ve Akışkanın Enerjisi, Sürekli Akışlı Açık Sistemlerin Enerji Analizi",
+   "Hafta 9 — Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Mühendislikteki Tipik Sürekli Akışlı Açık Sistemler, Zamanla Değişen Açık Sistemlerde Enerjinin Korunumu: Kütlenin Korunumu ve Enerjinin Korunumu ------------------------------------------------------ ARA SINAV I",
+   "Hafta 10 — Termodinamiğin İkinci Yasası: Isıl Enerji Depoları, Isı Makinaları, Soğutma Makinaları ve Isı Pompaları, Devridaim Makinaları, Tersinir ve Tersinmez Durum Değişimleri",
+   "Hafta 11 — Termodinamiğin İkinci Yasası: Carnot Çevrimi, Carnot İlkeleri, Termodinamik Sıcaklık Ölçeği, Carnot Isı Makinası, Carnot Soğutma Makinası ve Isı Pompası",
+   "Hafta 12 — Entropi: Entropinin Artışı İlkesi, Saf Maddelerin Entropi Değişimi, İzantropik Durum Değişimleri, Entropi İçeren Özelik Diyagramları, T ds Bağıntıları, Sıvı ve Katıların Entropi Değişimi",
+   "Hafta 13 — Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi ----------------------------------------------------- ARA SINAV II",
+   "Hafta 14 — Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji Kaybı, Ekserji Dengesi: Kapalı Sistemler ve Kontrol Hacimleri"
+  ],
+  "textbooks": [
+   "Çengel, Y.A. and Boles, M.A., 2007, Thermodynamics, An Engineering Approach, 6th Ed., McGraw-Hill."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=206",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 207": {
+  "code": "SGI 207",
+  "name": "Materials Science",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Malzemeler bilmine giriş ve malzemelerin atomik yapıların sınıflandırılması. Kristal yapıları ve kusurlar. Mühendislik malzemelerinin mekanik ve fiziksel özellikleri. Katı-hal difüzyonu. Faz diyagramları ve katılaşım. Demirli ve demirsiz alaşımlar ve ısı muamelesi. Malzemelerin elektron bağ yapıları ile ilişkili elektrik, optik, ısıl ve magnetik özellikler. Metalik korozyon ve korozyonun önlenmesi. Başlıca jeomalzemeler, özellikleri ve uygulama alanları. Jeomalzemelerde kaliteyi etkileyen doğal olaylar. Introduction to materials science and classification of atomic structures of the materials. Crystal structures and imperfections. Mechanical and physical properties of the engineering materials. Solid-state diffusion. Phase diagrams and solidification. Ferrous / non-ferrous alloys and heat treatment. Electrical, optical, thermal and magnetic properties associated with electron band structures of the materials. Metallic corrosion and prevention from corrosion. Principle geomaterials, their properties and application areas. Deterioration of geomaterials.",
+  "outcomes": [
+   "Kimyasal bileşim, atomic bağlanma ve malzemelerin özellikleri arasındaki ilişkileri",
+   "Düzenli ve düzensiz kristal yapıları ve aralarındaki farkları ve Bravais kafeslerini ve Miller indislerini",
+   "Kristal kusur yapılarının malzeme özellikleri üzerine etkilerini ve mekanik özelliklerin belirlenmesi için kullanılan test tekniklerini",
+   "Difüzyon kavramını, yasalarını ve malzeme özellikleri üzerine etkilerini",
+   "Faz kavramının önemini, faz diyagramlarını ve bunların kullanımını",
+   "Demirli ve demirsiz alaşım sistemlerini ve polimerik ve seramik malzemelerin özelliklerini",
+   "Malzemeleri sağlamlaştırma mekanizmalarını, faz dönüşümlerini ve ısı muamelesini",
+   "Malzemelerin elektronik ve elektriksel, ısıl ve magnetic özelliklerini ve bunların malzeme yapısı ile ilişkilendirilmesini",
+   "Korozyonunun önemini ve önlenmesini öğrenmiş olduğu beklenir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Malzeme Bilimine Genel Giriş: Kavramlar ve Tarihsel Gelişim; Malzemelerin Sınıflaması ve Malzeme Seçiminde Temel Kriterler",
+   "Hafta 2 — Atomik Yapılar ve Elektronik Konfigürasyon; Kristal Geometrisi, Yapı ve Kusurlar; Katılarda Bağlar",
+   "Hafta 3 — Katılarda Difüzyon; Malzemelerin Mekanik Özellikleri ve Mekanik Testler; Malzemelerin Isıl ve Optik Özellikleri; Malzemelerin Elektrik ve Magnetik Özellikleri",
+   "Hafta 4 — Malzemelerin Deformasyonu; Oksidasyon ve Korozyon",
+   "Hafta 5 — Seramikler",
+   "Hafta 6 — Kompozitler; Nano-yapılı Malzemeler",
+   "Hafta 7 — Vize Sınavı",
+   "Hafta 8 — Alaşım Sistemleri; Diğer Alaşım Elementlerinin Etkileri; Faz Diyagramları ve Faz Dönüşümleri; Isı Muamelesi",
+   "Hafta 9 — Yarı İletkenler; Süper İletkenler; Organik Malzemeler",
+   "Hafta 10 — Jeomalzemeler: Sınıflama ve Malzeme Özellikleri Hidrolik Bağlayıcılar: Kireç, Alçı ve Çimento",
+   "Hafta 11 — Agregalar ve Kırma Taşlar; Yapı ve Süsleme Taşları: Sınıflama; Malzeme Özellikleri ve Özelliklerinin Bozulması",
+   "Hafta 12 — Süstaşları: Sınıflama; Bileşim ve Kristal Yapıları; Özellikleri; Kullanım Alanları",
+   "Hafta 13 — Jeotekstil ve Jeomembranlar",
+   "Hafta 14 — Malzeme Karakterizasyon Teknikleri"
+  ],
+  "textbooks": [
+   "Material Science by S. L. Kakani & A. Kakani; New Age International PVT Ltd Publishers (December 1, 2010); ISBN-10: 8122430856; 904 pages"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=207",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 208": {
+  "code": "SGI 208",
+  "name": "Numerical Methods",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Sayısal Yöntemlerin tanımı ve özellikle mühendislik uygulamalarındaki kullanımının açıklanması. Sayısal yöntemlerde hata analizi, analitik çözümler, lineer ve lineer olmayan denklem sistemi çözümleri, yaklaşım yöntemleri, interpolasyon, lineer regresyon, sayısal integrasyon Description of Numerical Methods and application of them particularly in engineering. Error analyses in numerical methods, analitical solutions, numerical methods for the solution of systems (lineer and nonlinear), approximation methods, interpolation, linear regression, numerical integration.",
+  "outcomes": [
+   "Sayısal yöntemlerin temellerini anlayacak",
+   "Mühendislikte bir problemin analizinde sayısal yöntemleri kullanma becerisine sahip olacak",
+   "Belirli bir konuda doğru çözüm yöntemi seçme becerisine sahip olacak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Sayısal İşlemlerde Hatalar",
+   "Hafta 2 — Aritmetik İşlemlerde Hata Yayınımı, Fonksiyon Değerlerinin Hata Hesabı, Hataların Yayılma Yasası (KOH)",
+   "Hafta 3 — Lineer Denklem Takımlarının Çözümleri,Giriş, Direkt Yöntemler,Cramer Yöntemi,Gauss Eliminasyon Yöntemi",
+   "Hafta 4 — Gauss Jordan Yöntemi, LU Ayırımı Yöntemi",
+   "Hafta 5 — Dolittle Yöntemi, Cholesky Yöntemi",
+   "Hafta 6 — Dolaylı Yöntemler, Jacobi Ardışık Yaklaşım Yöntemleri",
+   "Hafta 7 — Gauss Siedel Ardışık Yaklaşım Yöntemi, Lineer Denklem Takımı Çözümlerinde Hata Analizi",
+   "Hafta 8 — Lineer Olmayan Denklemler, Kök Civarının Bulunması",
+   "Hafta 9 — Aralığı ikiye Bölme Yöntemi",
+   "Hafta 10 — Newton Raphson Yöntemi",
+   "Hafta 11 — Yaklaşım Yöntemleri, İnterpolasyon, Lineer Regrasyon, İnterpolasyon Polinomu",
+   "Hafta 12 — Lagrange İnterpolasyonu, Newton İnterpolasyonu",
+   "Hafta 13 — Sayısal İntegrasyon, Pivot Noktası, İnterpolasyon Doğrusu Ve Parabolleri ile İntegrasyon Formülleri, kısa",
+   "Hafta 14 — İnterpolasyon Parabolü ile Sayısal İntegrasyon, Gauss Tipi İntegrasyon, ekstrapolasyon, kısa sunumlar"
+  ],
+  "textbooks": [
+   "James F. Epperson, 2001, An Introduction to Numerical Methods and Analyses,, John Wiley and Sons, ISBN:0471316474."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=208",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 209": {
+  "code": "SGI 209",
+  "name": "Probability and Statistics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Çarpım kuralı, permütasyon, kombinasyon, olasılık kavramı (Kolmogorov aksiomları), şartlı olasılık ve bağımsızlık, rastgele değişken, olasılık yoğunluk fonksiyonu, dağılım fonksiyonu, kesikli dağılımlar: Bernoulli, Binom, Poisson Dağılımları, sürekli dağılımlar: Normal, Gamma ve Eksponansiyel, Beklenen değer, Moment çıkaran fonksiyonu, ortalama, varyans, standart sapma, kovaryans, korelasyon, Chebishev eşitsizliği, Tahmin edici ve özellikleri, En çok olabilirlik tahmin edicisi, Güven aralığı, Hipotez testi, Tek ve çift Ana Kütle Ortalaması Hipotez Testi, regresyon Product rule, permutation, combination, concept of Probability (Kolmogorov axioms), conditional probability and independency, random variables, Probability density function, distribution function, discrete disributions: Bernoulli, Binomial, Poisson, continuous distributions: Normal, Gamma, Exponential, Expectation, Moment generating function, mean, variance, standart deviation, covariance, correlation, Chebchev’s inequality, Estimator and its properties, maximum likelihood estimators, Confidence intervals, Hypothesis testing, One and two sample test for means, Regression.",
+  "outcomes": [
+   "Permütasyon ve kombinasyon problemlerini çözebilme",
+   "Olasılık, Şartlı olasılık ve rasgele değişken kavramlarını anlayabilme",
+   "Mühendislikteki gerçek hayat problemlerini istatistik kullanarak çözebilme.",
+   "İhtimal fonksiyonlarını detaylarını anlayıp bunların mühendislik uygulamalarını yapabilme",
+   "Merkezi eğilim ve yayılım ölçülerini hesaplamak.",
+   "İstatistiksel testleri anlamak.",
+   "Tek ve çift Ana Kütle Ortalaması için Hipotez Testi kurup yapabilmek.",
+   "En küçük kareler yöntemini regresyon analizi olarak uygulayabilme becerilerini kazanır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sayma Teknikleri, permütasyon, kombinasyon",
+   "Hafta 2 — Olasılık Kavramı, Şartlı olasılık",
+   "Hafta 3 — Rastlantı Değişkeni, Olasılık Fonksiyonu",
+   "Hafta 4 — Dağılım fonksiyonu",
+   "Hafta 5 — Kesikli Dağılımlar: Bernoulli, Binom, Poisson",
+   "Hafta 6 — Sürekli dağılımlar: Normal, Gamma, Eksponansiyel",
+   "Hafta 7 — Beklenen değer, Moment çıkaran fonksiyonu",
+   "Hafta 8 — Merkezi eğilim ve yayılım ölçüleri, Chebishev eşitsizliği",
+   "Hafta 9 — Tahmin edici ve özellikleri",
+   "Hafta 10 — En çok olabilirlik tahmin edicisi",
+   "Hafta 11 — Güven aralığı, Hipotez Testi",
+   "Hafta 12 — Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+   "Hafta 13 — Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+   "Hafta 14 — Regresyon analizi"
+  ],
+  "textbooks": [
+   "Sheldon Ross, 1998, A First Course in Probability, Prentice-Hall International.",
+   "Murray R. Spiegel, 1961, Theory and Problems of Statistics, McGraw-Hill Book Company."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=209",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 210": {
+  "code": "SGI 210",
+  "name": "Engineering Mathematics",
+  "language": "English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 5.5
+  },
+  "description": "Matrisler ve Lineer Denklem Sistemleri, Vektör uzayları, Özdeğerler ve Özvektörler, Birinci Mertebeden Diferansiyel Denklemler, Yüksek Mertebeden Lineer Diferansiyel Denklemler, Laplace Dönüşümleri, Birinci Mertebeden Lineer Diferansiyel Denklem Sistemleri. Matrices and Systems of Linear Equations, Vector Spaces, Eigenvalues and Eigenvectors, First Order Differential Equations, Higher Order Linear Equations, The Laplace Transform, Systems of First Order Linear Differential Equations.",
+  "outcomes": [
+   "Lineer denklem sistemlerinin çözümünü bulabilir, matrislerle aritmetik işlemler yapabilir, matrisin tersini bulabilir; matrisin determinantı hesaplayabilir ve Cramer kuralını kullanarak lineer sistemleri çözebilir",
+   "Vektör uzayı, taban ve boyut kavramlarının önemini öğrenebilir; matrislerin özdeğerlerini ve özvektörlerini bulabilir",
+   "Diferansiyel denklemleri belli özelliklerine göre sınıflandırabilir",
+   "Birinci mertebeden lineer ve belirli tipte lineer olmayan diferansiyel denklemleri çözebilir, çözümleri yorumlayabilir ve lineer denklem çözümleri için varlık ve teklik koşullarını anlayabilir,",
+   "Yüksek mertebeden sabit katsayılı lineer denklemler için çözebilir ve lineer bağımsız çözümlerden tüm çözümleri türetebilir; lineer diferansiyel denklem sistemlerini lineer cebir yöntemleriyle çözebilir; Laplace dönüşümü kullanarak başlangıç değer problemleri çözebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Lineer Denklemler ve Matrisler",
+   "Hafta 2 — Lineer Denklemler ve Matrisler",
+   "Hafta 3 — Vektör Uzayları",
+   "Hafta 4 — Vektör Uzayları",
+   "Hafta 5 — Birinci Mertebeden Diferansiyel Denklemler",
+   "Hafta 6 — Birinci Mertebeden Diferansiyel Denklemler",
+   "Hafta 7 — Yüksek Mertebeden Diferansiyel Denklemler",
+   "Hafta 8 — Yüksek Mertebeden Diferansiyel Denklemler",
+   "Hafta 9 — Özdeğerler ve Özvektörler",
+   "Hafta 10 — Özdeğerler ve Özvektörler",
+   "Hafta 11 — Lineer Diferansiyel Denklem Sistemleri",
+   "Hafta 12 — Lineer Diferansiyel Denklem Sistemleri",
+   "Hafta 13 — Laplace Dönüşümü",
+   "Hafta 14 — Laplace Dönüşümü"
+  ],
+  "textbooks": [
+   "Differential Equations & Linear Algebra (3rd Edition), C. H. Edwards, D. E. Penney, (2011) Pearson."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=210",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 211": {
+  "code": "SGI 211",
+  "name": "Ship Geometry",
+  "language": "English",
+  "credits": {
+   "theory": 1,
+   "practice": 0,
+   "lab": 2,
+   "local": 2,
+   "ects": 2.5
+  },
+  "description": "Gemi geometrisinin genel tanıtımı, Geminin boyutlarının tanıtılması, Boyutsuz narinlik katsayıları, Posta kesitleri, su hatları ve profil görüntüleri ve bu düzlemlerdeki resimleri çizimleri, Seri 60 gemi form planları, Geometrik çizim metotları, Tipik gemi formları, Gemi dizaynında kullanılan parametreler, Özel gemilerin geometrik çizimleri, Form karakteristikleri, Çeşitli uygulamalar. General definition of ship geometry, Overview of ship dimensions, Non-dimensional form coefficients, Body plan, Waterline and Profile planes and determination of drawings on these planes, Series 60 ship form plans, Geometrical drawing methods, Typical ship forms, Essential parameters to consider in ship design, Geometrical drawing of special ships, Form characteristics, Various applications.",
+  "outcomes": [
+   "Gemi çizim tekniklerini öğrenip, farklı ölçeklerde gemi çizebileceklerdir.",
+   "Gemi gibi üç boyutlu cisimlerin geometrilerini kavrayacaklardır.",
+   "Üç boyutlu cisimlerden iki boyutlu resimler üretebileceklerdir.",
+   "Çeşitli kesitlerin alan, hacim ve alan merkezlerini hesaplayabileceklerdir.",
+   "Çizdikleri resimleri kontrol eğrileri vasıtasıyla kontrol edebileceklerdir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Genel tanımlar, Projelerin tanıtılması",
+   "Hafta 2 — Geminin ön hesaplarının yapılması ve genel yerleştirme hesapları",
+   "Hafta 3 — Ağ çizgilerinin çizimi",
+   "Hafta 4 — Posta kesitleri resminin çizimi",
+   "Hafta 5 — Profil resminin çizimi",
+   "Hafta 6 — Su hatları resminin çizimi",
+   "Hafta 7 — Batok eğrilerinin çizimi",
+   "Hafta 8 — Meyilli ve trimli su hattının çizimi",
+   "Hafta 9 — ARASINAV",
+   "Hafta 10 — Son düzeltmeler, su hattı alanları eğrisinin çizimi ve 1. Projenin teslimi",
+   "Hafta 11 — 2. projenin tanıtılması ve hesaplarının yapılması",
+   "Hafta 12 — Posta kesitleri ve Profil resminin çizimi",
+   "Hafta 13 — Su hatları resminin çizimi",
+   "Hafta 14 — Batokların çizimi ve 2. Projenin teslimi"
+  ],
+  "textbooks": [
+   "DERS NOTLARI"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 212": {
+  "code": "SGI 212",
+  "name": "Manufacturing Processes",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "İmal usullerinin sınıflandırılması, kıyaslanması, üstünlükleri ve sınırları. Tasarım-imalat ilişkisi, imal usulü seçimi, döküm, kaynak, plastik şekil verme, talaşlı imalat ve toz metalurjisi imal usulleri, plastik ve kompozit malzemelerle imalat, seramik parça üretimi. Principles and classification of processes in manufacturing, advantages, limitations and comparisons of material processing. Design and manufacturing, selection of process. Casting, welding, forming, machining and powder metallurgy. Manufacturing of polymer and composites parts.",
+  "outcomes": [
+   "İmal usulleri prensipleri ve kullanım alanları hakkında temel bilgilere sahip olur",
+   "İmal usullerinin birbirine göre üstünlükleri, sınırlama ve uygulama alanları konusunda bilgi sahibi olur",
+   "İmal usullerinde kullanılan donanımları tanıma ve seçme becerisi kazanır",
+   "Belirli bir makine parçası için tasarım aşamasında en uygun imal usulünü seçme becerisi kazanır",
+   "Geleneksel imal usullerine ait bilgileri kullanma ve temel hesaplama yapabilme becerisi kazanır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Karşılaşma ve ısıl işlem, metal dökümü, döküm mamul özellikleri, döküm alaşımları, ergime ve döküm.",
+   "Hafta 2 — Döküm yöntemleri, bitirme işlemleri, döküm parçalarda kalite",
+   "Hafta 3 — Kalıcı ve geçici kalıplama yöntemlerinin tanıtılması",
+   "Hafta 4 — Plastik şekil vermeye giriş, sıcak-soğuk şekil verme, mekanik esaslar",
+   "Hafta 5 — Şekillendirilebilirlik, kütlesel şekillendirme yöntemleri, dövme",
+   "Hafta 6 — Ekstrüzyon, çubuk, boru çekme, haddeleme",
+   "Hafta 7 — Saç şekillendirme yöntemleri, kesme bükme eğme, germe, derin çekme, diğer yöntemler, imalatın ekonomik yönleri",
+   "Hafta 8 — ARA SINAV",
+   "Hafta 9 — Talaş kaldırma yöntemleri temel kesme parametreleri, kesme sıvıları.",
+   "Hafta 10 — Planyalama, vargelleme, delik delme ve işleme, frezeleme, broşlama, taşlama, honlama, CNC tezgahları",
+   "Hafta 11 — Kaynak yöntemlerinin sınıflandırılması",
+   "Hafta 12 — Eritme kaynağı, direnç kaynağı, ark kaynağı.",
+   "Hafta 13 — Katı hal kaynağı, sürtünme kaynağı, patlamalı kaynak, lehimleme, yapıştırma",
+   "Hafta 14 — ARA SINAV"
+  ],
+  "textbooks": [
+   "Fundamentals of modern manufacturing, M.P. Groover, 3 rd edition, 2007, Wiley"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=212",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 216": {
+  "code": "SGI 216",
+  "name": "Heat Transfer In Engineering",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Giriş ve temel kavramlar, ısı geçişinin temel yasaları, ısı iletim denklemi, sürekli durumda ısı iletimi, ısı üretimi, kanatlı yüzeyler, zamana bağlı ve çok boyutlu ısı iletimi, taşınımın temelleri, sınır tabaka teorisi, zorlanmış taşınım: dış akış, zorlanmış taşınım: iç akış, doğal taşınım, ışınımla ısı geçişi. Introduction and basic concepts, basic laws of heat transfer, heat conduction equation, steady heat conduction, heat generation, extended surfaces, transient and multidimensional heat conduction, fundamentals of convection, boundary layer theory, external forced convection, internal forced convection, natural convection, radiation heat transfer.",
+  "outcomes": [
+   "Enerji dengesi ile ilgili yasaları ve fiziksel kavramları, ısı geçiş mekanizmalarını ve ilgili malzeme özelliklerini anlama",
+   "Bir boyutlu, çok boyutlu, sürekli ve zamana bağlı ısı iletimi kavramları ve ilgili sınır ve başlangıç şartlarını anlama",
+   "İçinde ısı üretimi olan veya genişletilmiş yüzeylerden olan belli ısı iletim problemlerinin çözümünde analitik ve sayısal çözüm metodlarını kullanma",
+   "Bir boyutlu ve toplam kütle yaklaşımı ile zamana bağlı ısı iletim problemlerinin çözümünde analitik ve grafik çözüm tekniklerini kullanma",
+   "Taşınımla olan ısı geçişinin yönetici denklemlerini, yasalarını ve fiziksel kavramlarını anlama. İç ve dış laminer ve türbülanslı akışlarda taşınım la ısı geçişi problemlerinin analizini sınır tabaka kavramının temelleri de dahil olmak üzere anlama. Boyutlu ve boyutsuz ıs taşınım katsayısı için değişik ampirik korelasyonları kullanma ve seçmeyi öğrenme",
+   "Doğal taşınıma neden olan sıcaklığa bağlı boyancy kavramını öğrenme ve doğal taşınımla ısı geçişi hesabında kullanılan boyutsuz Grashof sayısını anlama",
+   "Siyah ve gri cisim ışınımı dahil olmak üzere elektromanyetik dalgalar, güneş ışınımı ve kızılötesi ışınım kavramlarını anlama. Yayma, yutma, yansıtma ve geçirgenlik gibi ışınım özellikleri kavramlarını anlama. Siyah ve gri yüzeyler arasındaki ısıl ışınım hesabını ve görme faktörü kavramını anlama becerilerini kazanır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve Temel Kavramlar: Termodinamik ve ısı transferi, mühendislikte ısı transferi, ısı ve diğer enerji formları, termodinamiğin birinci yasası",
+   "Hafta 2 — Isı Transferi Mekanizmaları: İletim, taşınım ve ışınım, ışınımın taşınım ve iletimle birarada gerçekleşmesi",
+   "Hafta 3 — Isı İletim Denklemi: Bir boyutlu ısı iletim denklemi, genel ısı iletim denklemi, sınır ve başlangıç şartları, sürekli bir boyutlu ısı geçiş problemlerinin çözümü,katılarda ısı üretimi, değişken ısıl iletkenlik",
+   "Hafta 4 — Sürekli Isı iletimi: Düzlem duvarda sürekli ısı iletimi, temas direnci, genelleştirilmiş ısıl direnç ağları, silindir ve kürede ısı iletimi, kritik yalıtım kalınlığı",
+   "Hafta 5 — Sürekli Isı iletimi: Kanatlı yüzeylerden ısı geçişi, iki ve üç boyutlu ısı iletimi",
+   "Hafta 6 — Zamana Bağlı Isı İletimi: Toplam kütle yaklaşımı, büyük düzlem duvar, uzun silindir ve kürede uzamsal etkilerle beraber zamana bağlı ısı iletimi",
+   "Hafta 7 — Zamana Bağlı Isı İletimi:Yarı sonsuz katılarda zamana bağlı ısı iletimi, çok boyutlu sistemlerde zamana bağlı ısı iletimi",
+   "Hafta 8 — Taşınımın Temelleri: Taşınımın fiziksel mekanizması, akışkan akışlarının sınflandırılması, hız sınır tabakası, ısıl sınır tabaka, laminer ve türbülanslı akış, türbülanslı akışta ısı ve momentum geçişi, diferensiyel taşınım denkleminin eldesi",
+   "Hafta 9 — Taşınımın Temelleri: Düzlem levha için taşınım denklmelerinin çözümü, boyutsuz taşınım denklemleri ve benzerlik, sürtünme taşınım katsayılarının fonksiyonel şekilleri, momentum ve ısı geçişi arasında analoji",
+   "Hafta 10 — Zorlanmış Taşınım:Dış Akış, Dış akışta sürüklenme ve ısı transferi, düzlem duvarda paralel akış, silindir ve küre etrafındaki akış, boru demeti üzerindeki akış",
+   "Hafta 11 — Zorlanmış Taşınım: İç Akış, Ortalama hız ve sıcaklık, giriş bölgesi, genel ısı analizi",
+   "Hafta 12 — Zorlanmış Taşınım: İç Akış, Borularda laminer ve türbülanslı akış ARA SINAV",
+   "Hafta 13 — Doğal Taşınım: Doğal taşınımın fiziksel mekanizması, hareket denklemi ve Grashof sayısı, yüzeyler üzerinde doğal taşınım, kanatlı yüzeylerde doğal taşınım, kapalı hacimlerde doğal taşınım, birleşik doğal ve zorlanmış taşınım",
+   "Hafta 14 — Işınımla Isı geçişi: Isıl ışınımın temelleri, siyah ve eşit dağılı yayan gri yüzeylerde ışınmla ısı geçişi"
+  ],
+  "textbooks": [
+   "Çengel, Y.A., 2006, Heat and Mass Transfer, A Practical Approach, Third Edition (SI Units), McGraw-Hill"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=216",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SGI 222": {
+  "code": "SGI 222",
+  "name": "Organic Chemistry",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 3
+  },
+  "description": "Karbon atomu, kimyasal bağlar, Lewis teorisi, hibrit orbitalleri, doymuş hidrokarbonlar, doymamış hidrokarbonlar, alkenler ve alkinler, alkil halojenürler, alkoller, eterler, aromatik bileşikler, aldehit ve ketonlar, karboksilli asitler ve türevleri, aminler The scope of organic chemistry and atomic properties of carbon, chemical bonding, hybrid orbitals, saturated hydrocarbons, unsaturated hydrocarbons, alkyl halides, alcohols, ethers, aromatic compounds, aldehyde and ketone, carboxylic acids and derivatives, amines",
+  "outcomes": [
+   "Organik kimyanın temel kavram ve ilkelerini öğrenip yorum ve uygulama yapar.",
+   "Teorik ve pratik bilgiyi bir bütün olarak verip yorum yapabilir.",
+   "Öğrenciler organik problemleri çözme becerilerini geliştirip sorun çözebilir.",
+   "Organik kimyanın güncel hayatımızdaki önemini anlar.",
+   "Öğrencileri mantıklı ve pozitif düşüncelere yöneltip organik kimyanın mühendislik için önemini anlar.",
+   "Teorik organik bilgiyi laboratuvarda ve endüstriyel olarak uygulayıp üretim yapabilir.",
+   "Laboratuvar ölçeğindeki reaksiyonu fabrika ölçeğinde üretebilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Karbon atomu, kimyasal bağlar, Lewis teorisi, hibrit orbitalleri",
+   "Hafta 2 — Doymuş hidrokarbonlar: Alkanlar",
+   "Hafta 3 — Doymamış hidrokarbonlar I: Alkenler",
+   "Hafta 4 — Doymamış hidrokarbonlar: Alkinler",
+   "Hafta 5 — Alkil halojenürler (Yerdeğiştirme ve eliminasyon tepkimeleri)",
+   "Hafta 6 — Alkoller ve eterler",
+   "Hafta 7 — Karbonil bileşikleri I: Aldehitler",
+   "Hafta 8 — Karbonil bileşikleri II: Ketonlar",
+   "Hafta 9 — Karboksilli asitler: Genel tanım ve sentez yöntemleri",
+   "Hafta 10 — Karboksilli asit türevleri I: Esterler",
+   "Hafta 11 — Karboksilli asit türevleri II: Amid ve Nitriller",
+   "Hafta 12 — Aminler: Genel tanım ve sentez yöntemleri",
+   "Hafta 13 — Aromatik bileşiklerin tanımı",
+   "Hafta 14 — Aromatik bileşiklerin reaksiyonları"
+  ],
+  "textbooks": [
+   "Organic Chemistry 12th edition (T. W. Graham Solomons, Craig B. Fryhle, Scott A. Snyder)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=222",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

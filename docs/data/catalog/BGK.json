@@ -1,0 +1,273 @@
+{
+ "BGK 501E": {
+  "code": "BGK 501E",
+  "name": "Network Security",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İnternet güvenliği. Güvenlik standartları. Yabancılar ve virüsler. E-posta güvenliği. Simetrik ve asimetrik kriptografi. Kriptografik özler. Asıllama sistemleri. Sayısal imzalar. Sayısal sertifikalar. Güncel ağ güvenliği konuları ve yayınları. Web security. Security standards. Intruders and viruses. E-mail security. Firewalls. Secret Key and Public/Private Key Cryptography Cryptographic Hashes and Message Digests Authentication Systems. Digital signatures and certificates. Digital certificates. Current Network Security Topics and Publications.",
+  "outcomes": [
+   "Öğrenciler güvenliğin neden gerektiğini kavrayacaklar.",
+   "Öğrenciler sık karşılaşılan saldırıları ve önlemleri tanıyacaklar.",
+   "Öğrenciler şifreleme yöntemleri konusunda fikir sahibi olacaklar.",
+   "Öğrenciler şifreleme yöntemlerinin kullanılabileceği alanlarla ilgili fikir edinecekler.",
+   "Öğrenciler güvenliğin neden gerektiğini kavrayacaklar.",
+   "Öğrenciler sık karşılaşılan saldırıları ve önlemleri tanıyacaklar.",
+   "Öğrenciler şifreleme yöntemleri konusunda fikir sahibi olacaklar.",
+   "Öğrenciler şifreleme yöntemlerinin kullanılabileceği alanlarla ilgili fikir edinecekler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ağ güvenliği kavramları",
+   "Hafta 2 — Yabancı yazılımlar ve virüsler",
+   "Hafta 3 — Bakışımlı şifreleme",
+   "Hafta 4 — Bakışımsız şifreleme",
+   "Hafta 5 — Öz alma ve elektronik imza",
+   "Hafta 6 — Sertifikalar ve açık anahtar altyapısı",
+   "Hafta 7 — Asıllama",
+   "Hafta 8 — Erişim denetimi",
+   "Hafta 9 — Denetlenebilirlik",
+   "Hafta 10 — Ağ izleme ve güvenlik duvarları",
+   "Hafta 11 — Sızma önleme ve saldırgan yanıltma yöntemleri",
+   "Hafta 12 — Güncel konular",
+   "Hafta 13 — Güncel yayınlar",
+   "Hafta 14 — Güncel yayınlar"
+  ],
+  "textbooks": [
+   "Network Security Essentials Applications and Standards, 5th Ed., William Stallings, 2013, Prentice Hall.",
+   "Network Security Bible, 2nd Ed., Eric Cole, 2009, Wiley.",
+   "Cryptography and Network Security: Principles and Practice, 6th Ed., William Stallings, 2013, Prentice Hall.",
+   "Network Security Essentials: Applications and Standards, 4th Ed., William Stallings, 2010, Prentice Hall.",
+   "Network Security: The Complete Reference, Mark Rhodes-Ousley, Roberta Bragg, Keith Strassberg, 2003, McGraw-Hill Osborne Media.",
+   "Network Security Essentials Applications and Standards, 5th Ed., William Stallings, 2013, Prentice Hall.",
+   "Network Security Bible, 2nd Ed., Eric Cole, 2009, Wiley.",
+   "Cryptography and Network Security: Principles and Practice, 6th Ed., William Stallings, 2013, Prentice Hall.",
+   "Network Security Essentials: Applications and Standards, 4th Ed., William Stallings, 2010, Prentice Hall.",
+   "Network Security: The Complete Reference, Mark Rhodes-Ousley, Roberta Bragg, Keith Strassberg, 2003, McGraw-Hill Osborne Media."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BGK 502E": {
+  "code": "BGK 502E",
+  "name": "İşletim Sistemleri Güvenliği",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İşletim Sistemi ve yaygın kullanılan işletim sistemlerinin (Unix, Linux, Windows, Pardus, Android, iOS) tanıtımı ve temel özellikleri, İşletim sisteminin sağladığı güvenlik olanakları, İşletim sisteminden kaynaklanan güvenlik açıkları, Süreç güvenliği, Erişim güvenliği, Kullanıcıların tanımlanması, Yetkilendirme, Yetkilerin izlenmesi ve denetimi, Kullanım kayıtlarının tutulması, Güvenlik modelleri Introducing operating systems, common operating systems and their distinctive properties. Security facilities of operating systems. Security flaws caused by operating systems. Process security. Access security. User definition and authorization. Access monitoring and auditability. Logging. Security models.",
+  "outcomes": [
+   "İşletim sistemlerinin yapısı öğretilir",
+   "İşletim sistemlerinde güvenliğin nasıl sağlandığı anlatılır",
+   "İşletim sistemlerinde güvenliği sağlamak için kullanılan reçeteler gösterilir",
+   "İşletim sistemlerinin güvenlik açıkları anlatılır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İşletim sistemlerine giriş",
+   "Hafta 2 — Sık kullanılan işletim sistemleri ve özellikleri",
+   "Hafta 3 — Proses kavramı ve proseslerin veriye erişimi",
+   "Hafta 4 — Proseslerin yalıtımı, proses güvenliği",
+   "Hafta 5 — Erişim güvenliği",
+   "Hafta 6 — G/Ç birimleri ve güvenliği",
+   "Hafta 7 — İşletim sisteminin sunduğu güvenlik olanakları",
+   "Hafta 8 — İşletim sisteminden kaynaklanan güvenlik açıkları",
+   "Hafta 9 — Kullanıcı tanımlama ve yetkilendirme",
+   "Hafta 10 — Yetkilerin izlenmesi ve denetimi",
+   "Hafta 11 — Kütükler ve bunların denetimi",
+   "Hafta 12 — Güvenlik modelleri",
+   "Hafta 13 — Güncel konular",
+   "Hafta 14 — Güncel yayınlar"
+  ],
+  "textbooks": [
+   "Modern Operating Systems, 3rd Ed., Andrew S. Tanenbaum, 2007, Prentice Hall.",
+   "Guide to Operating Systems, 4th Ed., Michael Palmer, Michael Walters, 2011, Cengage Learning.",
+   "Operating System Security, Trent Jaeger, 2008, Morgan and Claypool Publishers.",
+   "Guide to Operating Systems Security, Michael Palmer, 2003, Cengage Learning.",
+   "Computer Security: Principles and Practice, 2nd Ed. William Stallings, Lawrie Brown, 2011, Prentice Hall."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=502",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BGK 503E": {
+  "code": "BGK 503E",
+  "name": "Information&Computer Security",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilgi, güvenlik ve bilgisayar güvenliği konularının tanıtımı, Bilgi Güvenliği, Bilgi güvenliği sorunları, Güvenlik sağlama yöntemleri, Verileri gizleme yöntemleri: Şifreleme yöntemleri, Şifreleme yöntemlerinin temelleri ve çeşitleri, Simetrik ve asimetrik şifreleme yöntemleri, Doğrusallık, Kimlik asıllama, e-imza, Açık anahtarlama altyapısı, Saldırı yöntemleri ve karşı önlemler, Güvenlik sınıflamaları ve standartlar Introduction to information, security and computer security. Information security. Threats and defenses of information security. Confidentiality methods: encryption, fundamentals of encryption methods and classes. Symmetric and asymmetric encryption. Linearity, authentication, electronic signature, PKI. Attack methods and counter measurements. Classifications and standards of security.",
+  "outcomes": [
+   "Öğrenciler bilgi ve bilgisayar güvenliği konusunu tanıyacaklardır.",
+   "Öğrenciler şifreleme yöntemleri hakkında temel bilgiye sahip olacaklardır.",
+   "Öğrenciler temel saldırıları ve bunlardan korunma yöntemlerini öğreneceklerdir.",
+   "Öğrenciler bilgisayar güvenliğinin temel kavramlarını bileceklerdir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilgi, güvenlik, entropi kavramları, bilgisayar güvenliğinin kapsamı",
+   "Hafta 2 — Bilgi güvenliği sorunları, güvenlik sağlama yöntemleri",
+   "Hafta 3 — Şifreleme yöntemleri: Şifrelemenin temelleri ve çeşitleri",
+   "Hafta 4 — Bakışımlı ve bakışımsız şifreleme yöntemleri",
+   "Hafta 5 — Veri bütünlüğü ve öz alma yöntemleri",
+   "Hafta 6 — Elektronik imza, sertifikalar ve açık anahtar altyapısı",
+   "Hafta 7 — Asıllama",
+   "Hafta 8 — Veri gizleme",
+   "Hafta 9 — Biyometrik ve istatistik yöntemler",
+   "Hafta 10 — Saldırı yöntemleri ve önlemler",
+   "Hafta 11 — Güvenlik sınıflamaları ve standartları",
+   "Hafta 12 — Erişim denetimi",
+   "Hafta 13 — Erişim modelleri",
+   "Hafta 14 — Güvenlik sertifikasyonu"
+  ],
+  "textbooks": [
+   "Computer Security, 3rd Ed., Dieter Gollmann, 2011, Wiley.",
+   "Computer Security: Principles and Practice, 2nd Ed. William Stallings, Lawrie Brown, 2011, Prentice Hall.",
+   "Computer and Information Security Handbook, 2nd Ed., John R. Vacca, 2013, Morgan Kaufmann.",
+   "Information Security The Complete Reference, 2nd Ed., Mark Rhodes-Ousley, 2013, McGraw-Hill Osborne Media.",
+   "Principles of Information Security, 4th Ed., Michael E. Whitman, Herbert J. Mattord, 2011, Cengage Learning."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BGK 516E": {
+  "code": "BGK 516E",
+  "name": "Cryptography",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Klasik kriptografi: bazı basit kripto sistemleri, basit kripto sistemlerinin analizi. Shannon teorisi: olasılık teorisi, entropinin özellikleri, çarpım kriptosistemleri. Blok şifreleme algoritmaları: değiştirme-permütasyon ağları, lineer kriptanaliz, farksal kriptanaliz, veri şifreleme standardı (DES), ileri şifrelem standardı (AES), şifreleme modları. Kriptografik özet fonksiyonları: özet fonksiyonları ve veri bütünlüğü, özet fonksiyonlarının güvenliği, iteratif özet fonksiyonları, mesaj doğrulama kodları. RSA kriptosistemi: açık anahtarlı kriptosistemlerine giriş, sayı teorisi. Ayrık logaritma problemine dayalı açık anahtarlı kriptosistemleri: ElGamal kriptosistemi, sonlu cisimler, elliptik eğri kriptosistemi. Sayısal imza: sayısal imza sistemlerinin güvenlik gerekleri, ElGamal sayısal imza sistemi, DSA, ECDSA. Classical cryptography: introduction: some simple cryptosystems, cryptanalysis of simple cryptosystems. Shannon's theory: probability theory, entropy, properties of entropy, product cryptosystems. Block ciphers: substiturion-permutation network, linear cryptanalysis, differential cryptanalysis, the data encryption standard (DES), advanced encryption standard (AES), modes of operation. Hash functions: collision-free hash functions, authentication codes. The RSA system and factoring: introduction to public-key cryptography, more number theory, the RSA cryptosystem. Public-key cryptosystems based on discrete logarithm problem: the ElGamal cryptosystem, finite field and elliptic curve systems, galois fields, elliptic curves. Signature schemes: introduction, the ElGamal signature scheme, the digital signature algorithm (DSA), the elliptic curve digital signature algorithm (ECDSA).",
+  "outcomes": [
+   "Bu dersi başarıyla tamamlayan yüksek lisans/doktora öğrencileri aşağıdaki konularda bilgi, beceri ve yetkinlik kazanırlar;",
+   "Klasik kriptografi sistemlerinin hangi sebeple nasıl geliştiğini öğrenirler.",
+   "Olasılık teorisini, entropinin özellikleri öğrenir, çarpım kriptosistemlerini inceleyebilirler.",
+   "Değiştirme-permütasyon ağlarını öğrenirler ve bunlar üzerinde lineer ve farksal kriptanaliz uygulayabilirler.",
+   "Veri şifreleme standardı (DES) ve ileri şifrelem standardını (AES) gerçekleyebilirler.",
+   "Kriptografik özet fonksiyonlarını inceleyebilir ve gerçekleyebilirler.",
+   "RSA kriptosistemini gerçekleyebilirler.",
+   "ElGamal ve elliptik eğri kriptosistemlerini inceleyip gerçekleyebilirler.",
+   "8. ElGamal sayısal imza sistemi, DSA ve ECDSA öğrenirler. bilimlerindeki uygulamalarını öğrenmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Klasik kriptografi: bazı basit kripto sistemleri",
+   "Hafta 2 — Basit kripto sistemlerinin analizi",
+   "Hafta 3 — Shannon teorisi: olasılık teorisi, entropinin özellikleri",
+   "Hafta 4 — Çarpım kriptosistemleri",
+   "Hafta 5 — Blok şifreleme algoritmaları: değiştirme-permütasyon ağları",
+   "Hafta 6 — Lineer kriptanaliz",
+   "Hafta 7 — Farksal kriptanaliz",
+   "Hafta 8 — Veri şifreleme standardı (DES), ileri şifrelem standardı (AES)",
+   "Hafta 9 — Şifreleme modları",
+   "Hafta 10 — Kriptografik özet fonksiyonları: özet fonksiyonları ve veri bütünlüğü, özet fonksiyonlarının güvenliği",
+   "Hafta 11 — İteratif özet fonksiyonları, mesaj doğrulama kodları",
+   "Hafta 12 — RSA kriptosistemi: açık anahtarlı kriptosistemlerine giriş, sayı teorisi",
+   "Hafta 13 — Ayrık logaritma problemine dayalı açık anahtarlı kriptosistemleri: ElGamal kriptosistemi, sonlu cisimler, elliptik eğri kriptosistemi",
+   "Hafta 14 — Sayısal imza: sayısal imza sistemlerinin güvenlik gerekleri, ElGamal sayısal imza sistemi, DSA, ECDSA."
+  ],
+  "textbooks": [
+   "[1] Stinson, D. R., 2005. Cryptography: Theory and Practice, Chapman and Hall/CRC; 3 edition.",
+   "[2] Schneier, B., 1996. Applied Cryptography: Protocols, Algorithms, and Source Code in C, Second Edition, Wiley; 2nd edition.",
+   "[3] Paar, C., 2010. Jan Pelzl, “Understanding Cryptography: A Textbook for Students and Practitioners, Springer; 1st Edition.2nd Printing edition.",
+   "[4] Ferguson, N., Schneier, B., Kohno, T., 2010. Cryptography Engineering: Design Principles and Practical Applications, Wiley; 1 edition."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=516",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BGK 596E": {
+  "code": "BGK 596E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BGK 611E": {
+  "code": "BGK 611E",
+  "name": "Bilgi Güvenliği Mühendisliği ve Kriptografide İleri Konular",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilgi Güvenliği Mühendisliği ve Kriptografideki gelişmeler incelenecektir. To examine advances in Cybersecurity Engineering and Cryptography.",
+  "outcomes": [
+   "Öğrencilerin gelişmeler hakkında bilgilerinin güçlendirilmesi"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=611",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

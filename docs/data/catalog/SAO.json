@@ -1,0 +1,723 @@
+{
+ "SAO 101E": {
+  "code": "SAO 101E",
+  "name": "Temel Programlama I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 5
+  },
+  "description": "Programlama Temelleri & Programlama Mantığı & Python & Python Kütüphaneleri & Python Veri Tipleri Fundamentals of Programming & Logic of Programming & Python & Python Libraries & Python Data Types",
+  "outcomes": [
+   "Siber güvenlik problemlerini tanımlama, formüle etme ve çözme becerisi edinir; bu amaçla uygun analiz ve modelleme yöntemlerini seçme ve uygulama becerisi.",
+   "Siber güvenlikte karşılaşılan karmaşık problemlerin analizi ve çözümü için gerekli yazılım ve donanımı kullanarak veri toplama, sonuçları analiz etme, yorumlama ve de önlem alma.",
+   "Disiplin içi ve çok disiplinli takımlarda etkin biçimde çalışma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Problem Çözme ve Algoritmalar",
+   "Hafta 2 — Programlama Dili Temelleri",
+   "Hafta 3 — Phyton Programlama",
+   "Hafta 4 — Değişkenler, operatörler",
+   "Hafta 5 — Koşullu ifadeler: if, else, elif",
+   "Hafta 6 — Blok Tabanlı Programlama",
+   "Hafta 7 — Nesne Tabanlı Programlama",
+   "Hafta 8 — Veri Yapıları",
+   "Hafta 9 — Karar Yapıları",
+   "Hafta 10 — Arasınav, Döngü Yapıları",
+   "Hafta 11 — Fonksiyonlar",
+   "Hafta 12 — Tarih ve String İşlemleri",
+   "Hafta 13 — Hata Yakalama İşlemleri",
+   "Hafta 14 — Dosya İşlemleri"
+  ],
+  "textbooks": [
+   "Eric Matthes, Python Crash Course: A Hands-On, Project-Based Introduction to Programming, 3rd Edition, No Starch Press, 2023.",
+   "Automate the Boring Stuff with Python, Al Sweigart, No Starch Press, 2015.",
+   "[PDS] Python Data Science Handbook Essential Tools for Working with Data, Jake VanderPlas, O’Reilly Media, 2016",
+   "[DSFS] Data Science from Scratch, First Principles with Python, Joel Grus, CreateSpace, 2015"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=101",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 102E": {
+  "code": "SAO 102E",
+  "name": "Temel Programlama II",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 5
+  },
+  "description": "Veri Yapıları ve Gömülü Fonksiyonlar & Web Scraping & Nesne Tabanlı Programlama & Selenium & SQL’te & Veri Analizi & Veri Görselleştirme & Siber Güvenlik Modülleri Data Structures and Embedded Functions & Web Scraping & Object-oriented programming & Selenium & SQLite & Data Analysis & Data Visualization & Cyber Security Modules",
+  "outcomes": [
+   "1. Python ile veri tabanı oluşturabilme veya düzenleyebilme. Python ile veriyi çeşitli kütüphaneler ile analiz etme ve veriyi görselleştirebilme",
+   "2. Web sitesi geliştirebilme. İnternetten veri çekme veya internetten otomatik veri girebilme. Python ile arayüz tasarlayabilme.",
+   "3. İleri seviye veri yapılarını öğrenme, nesne yönelimli programlama, ileri düzey modüller ve gömülü fonksiyonları öğrenerek ileri düzey programlama algoritmaları geliştirebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel Kavramlar",
+   "Hafta 2 — İleri Seviye Veri Yapıları ve Gömülü Fonksiyonlar",
+   "Hafta 3 — İleri Seviye Fonksiyonlar, Dekoratörler, İteratörler, Jeneratörler",
+   "Hafta 4 — İleri Seviye Modüller ve Web Scraping",
+   "Hafta 5 — Nesne Tabanlı Programlama",
+   "Hafta 6 — Selenium ile Web Sayfalarıyla Etkileşim",
+   "Hafta 7 — SQLite Veritabanı",
+   "Hafta 8 — Arasınav",
+   "Hafta 9 — Kriptografi modülleri",
+   "Hafta 10 — Siber Güvenlik modülleri",
+   "Hafta 11 — Siber Güvenlik modülleri",
+   "Hafta 12 — Numpy ile Veri Analizi",
+   "Hafta 13 — Pandas ile Veri Analizi",
+   "Hafta 14 — Matplotlib ile Veri Görselleştirme"
+  ],
+  "textbooks": [
+   "Eric Matthes, Python Crash Course: A Hands-On, Project-Based Introduction to Programming, 3rd Edition, No Starch Press, 2023.",
+   "David Beasley & Brian K. Jones, Python Cookbook: Recipes for Mastering Python 3, 3rd Edition, O'Reilly Media, Inc., 2013",
+   "Wes McKinney, Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=102",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 103": {
+  "code": "SAO 103",
+  "name": "Bilişim ve Ağ Teknolojisinin Temelleri",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 5
+  },
+  "description": "Bilgisayar ağları & Ağ altyapısı & Ağ iletişimi & Ağ yönetimi & Ağ güvenliği Computer Networks & Network Infrastructure & Network Communication & Network Management & Network Security",
+  "outcomes": [
+   "Ağ altyapısını hazırlayabilme. Ağ bağlantılarını yapılandırabilme.",
+   "Bilgisayar ağları ve internet teknolojilerinin temel prensiplerini açıklayabilme. Ağ iletişimi, ağ yönetimi ve ağ güvenliği konularında pratik beceriler geliştirebilme.",
+   "Bilgisayar sistemlerinin temel prensiplerini anlama. Bilgisayar mimarisi ve işletim sistemleri konusunda temel bir anlayışa sahip olma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilişim Teknolojilerinin Gelişimi",
+   "Hafta 2 — Bilgisayar Türleri, Donanım Birimleri",
+   "Hafta 3 — Yazılım Türleri, İşletim Sistemleri",
+   "Hafta 4 — Bilgisayar Ağlarına Giriş",
+   "Hafta 5 — Protokoller ve Katmanlı Modeller",
+   "Hafta 6 — Fiziksel Katman",
+   "Hafta 7 — Veri Bağlantı Katmanı",
+   "Hafta 8 — Arasınav, Ethernet Protokolü Kavramları",
+   "Hafta 9 — Ağ Katmanı",
+   "Hafta 10 — Ipv4 Adresleme",
+   "Hafta 11 — Ipv6 Adresleme",
+   "Hafta 12 — İletim Katmanı",
+   "Hafta 13 — Uygulama Katmanı",
+   "Hafta 14 — Ağ Güvenliğine Giriş"
+  ],
+  "textbooks": [
+   "CCNAv7: Introduction to Network (2020) James Macfarlane",
+   "Network Routing Basics: Understanding IP Routing in Cisco Systems (2007), John Wiley & Sons."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=103",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 104E": {
+  "code": "SAO 104E",
+  "name": "Veri Tabanı Uygulamaları ve Güvenliği",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 5
+  },
+  "description": "Varlık-İlişki Diyagramı ve DDL İfadeleri & Tablolar & Veri Tipleri ve Bütünlüğü & Normalizasyon & Alt Sorgu & Union ve Join İfadeleri & Veritabanı Saldırı ve Savunma Yöntemleri & SQL Enjeksiyon Saldırıları ve Savunma & Veritabanı yedekleme & Kullanıcı Güvenlik Yönetimi & Uygulama Güvenliği Entity-Relationship Diagram and DLL Expressions & Tables & Data Types and Integrity & Normalization & Subquery & Union and Join Statements & Database Attack and Defense Methods & SQL Injection Attacks and Defense & Database Backup & User Security Management & Application Security",
+  "outcomes": [
+   "1. Veri tabanı yönetim sistemlerini, kurulumunu ve kullanım avantajlarını kavrayabilme",
+   "2. Varlık-ilişki diyagramı ve veri tanımlama dili (DDL) ifadeleri, tablo oluşturma, tablo özellikleri, veri tipleri, bütünlüğü ve aritmetik operatörler gibi temel kavramları kavrayabilme ve bu konularla ilgili problemleri çözebilme",
+   "3. Veritabanı tasarlama, normalizasyon, alt sorgu, veritabanında sorgu oluşturma, union ve join ifadeleri, NoSQL veritabanları ile ilgili temel kavramları anlayabilme ve ilgili problemleri çözebilme ve bu bilgiyi kullanabilme",
+   "4. Veritabanı güvenliği, veritabanı saldırı ve savunma yöntemleri, SQL enjeksiyon saldırıları ve savunma, veritabanı yedekleme, kullanıcı güvenlik yönetimi ve uygulama güvenliği ile ilgili temel kavramları anlayabilme ve ilgili problemleri çözebilme ve bu bilgiyi kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veritabanına Giriş",
+   "Hafta 2 — Veritabanı Temelleri, Veritabanı Çeşitleri",
+   "Hafta 3 — Varlık-İlişki Diyagramı ve Veri Tanımlama Dili (DDL) İfadeleri",
+   "Hafta 4 — Tablo Oluşturmak, Tablo Özellikleri",
+   "Hafta 5 — Veri Tipleri, Bütünlüğü ve Aritmetik Operatörler",
+   "Hafta 6 — Veritabanı Tasarlamak, Normalizasyon, Alt Sorgu, Veritabanında Sorgu Oluşturmak",
+   "Hafta 7 — Union ve Join İfadeleri, NoSQL Veritabanları",
+   "Hafta 8 — Arasınav, Veritabanı Kurulumu ve Yönetimi",
+   "Hafta 9 — Veritabanı Güvenliğine Giriş",
+   "Hafta 10 — Veritabanı Saldırı ve Savunma Yöntemleri",
+   "Hafta 11 — SQL Enjeksiyon Saldırıları ve Savunma",
+   "Hafta 12 — Veritabanı Yedekleme",
+   "Hafta 13 — Kullanıcı Güvenlik Yönetimi",
+   "Hafta 14 — Uygulama Güvenliği: Regülasyonlar ve Uyumluluklar, Genel Denetim, Mimari Denetim"
+  ],
+  "textbooks": [
+   "Database Security: Problems and Solutions, Christopher Diaz, Mercury Learning and Information, (22 Aug. 2022)",
+   "Veri Tabanı Sistemleri, Dr.Yalçın Özkan, Alfa yayınevi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=104",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 105": {
+  "code": "SAO 105",
+  "name": "İşletim Sistemleri & Güvenliği",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "İşletim Sistemi Türleri & Temel İşletim Sistemi Komutları ve Dizin Hiyerarşisi & Diskler ve Dosya Sistemleri & Sistem ve Güvenlik Ayarları & Ağ ve Güvenlik Ayarları & Kullanıcı Ortamı ve Güvenlik Operating System Types & Basic Operating System Commands and Directory Hierarchy & Disks and File Systems & System and Security Settings & Network and Security Settings & User Environment and Security",
+  "outcomes": [
+   "Temel işletim sistemleri kavramlarına uygulamalı olarak hakim olma",
+   "Bir işletim sistemini ayrıcalıklı kullanıcı seviyesinde kullanma, yapılandırma ve yönetme yeteneği kazanma",
+   "İşletim Sistemlerinin güvenli yapılandırılması ve çalıştırılması için temel kavramlara sahip olma ve uygulama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İşletim Sistemlerine Giriş, İşletim Sistemi Türleri",
+   "Hafta 2 — Temel İşletim Sistemi Komutları ve Dizin Hiyerarşisi",
+   "Hafta 3 — Cihazlar ve Cihaz Yapılandırma",
+   "Hafta 4 — Diskler ve Dosya Sistemleri",
+   "Hafta 5 — Yükleme (Boot)",
+   "Hafta 6 — Kullanıcı Uzayını Başlatma",
+   "Hafta 7 — Sistem ve Güvenlik Ayarları",
+   "Hafta 8 — Arasınav, İşlem Yönetimi ve Kaynak Kullanımı",
+   "Hafta 9 — Ağ ve Güvenlik Ayarları",
+   "Hafta 10 — Ağ Uygulamaları ve Servis Güvenliği",
+   "Hafta 11 — Kabuk Programlamaya Giriş",
+   "Hafta 12 — Web ve Tarayıcı Güvenliği",
+   "Hafta 13 — Dosya Paylaşımı ve Güvenliği",
+   "Hafta 14 — Kullanıcı Ortamı ve Güvenlik"
+  ],
+  "textbooks": [
+   "Ward, B. (2021). How Linux works: What every superuser should know. no starch press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=105",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 106": {
+  "code": "SAO 106",
+  "name": "Güvenli Ağ Tasarımı ve Cihaz Yönetimi Secure Network Design and Device Management",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Dersin İçeriği (Course Description) Router konfigürasyonu & DHCP yapılandırma & NAT Servisleri & Switch güvenliği & LAN ve WAN teknolojileri & Alt ağlar & Ağ izleme yapıları & Güvenlik duvarları & Saldırı tespit ve engelleme sistemleri & Web filtreleme çözümleri & Zafiyet tarama ve bulma & Kablosuz ağların güvenliği & VPN ve şifreleme teknolojileri & olay kayıtlarını izleme ve analiz Router configuration & DHCP configuration &NAT Services & Switch security & LAN and WAN technologies & Subnets & Network monitoring structures & Firewalls & Intrusion detection and prevention systems & Web filtering solutions & Vulnerability scanning and detection & Security of wireless networks & VPN and encryption technologies & Monitoring and analyzing event logs",
+  "outcomes": [
+   "Temel bilgisayar ve ağ güvenliği kavramlarını açıklayabilme ve uygulamaları hakkında bilgi sahibi olma",
+   "Bilgisayarlar ve ağlar ile ilgili zafiyetlerin ortaya çıkarılması için uygulanan temel teknikleri açıklayabilme, ağ izleme yapabilme, saldırıları tespit edebilme ve engelleyebilme.",
+   "Ağda yaşanan güvenlik sorunlarının analiz etme, gerekli siber güvenlik çözümlerini tasarlama ve uygulanmasını sağlama."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ip Sınıflandırma ve Alt Ağ Maskesi 1, 2, 3",
+   "Hafta 2 — Switch(VLAN, LAG, STP) ve Firewall Türleri Konfigürasyonu",
+   "Hafta 3 — Network Address Translation (NAT), PAT (Port Address Translation) Servislerin İç-Dış Network Bağlantıları, Router ile Vlanları Haberleştirme 1, 2, 3",
+   "Hafta 4 — Dinamik ve statik yönlendirme, DNS, DHCP yapılandırma-DHCP Relay Agent",
+   "Hafta 5 — Network Bölgeleri WAN-DMZ-LAN",
+   "Hafta 6 — Router yapısı ve Konfigürasyonu",
+   "Hafta 7 — 802.x ailesi, NAC yapıları",
+   "Hafta 8 — Ağ izleme, Port mirroring",
+   "Hafta 9 — Ağ izleme, Port mirroring",
+   "Hafta 10 — Kablosuz ağların güvenliği (Radius ve Microsoft NPS Servislerinin Konfigürasyonu)",
+   "Hafta 11 — Saldırı tespit ve engelleme sistemleri",
+   "Hafta 12 — TCP/IP iletişiminde oturuma müdahale",
+   "Hafta 13 — Web filtreleme çözümleri, FTP, DNS, HTTP, HTTPS vb. protokoller",
+   "Hafta 14 — VPN ve şifreleme teknolojileri, UTM teknolojileri"
+  ],
+  "textbooks": [
+   "William Stallings, Cryptography and Network Security: Principles and Practice 8th Ed, Prentice-Hall (2023)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=106",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 107E": {
+  "code": "SAO 107E",
+  "name": "Matematik ve Mantık",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Mantık & İspat Teknikleri & Kümeler & Bağıntılar & Fonksiyonlar & Sayma ve Çizge Teorisi Logic & Proof Techniques & Sets & Relations & Functions & Counting and Graph Theory",
+  "outcomes": [
+   "Mantık kurallarını uygulayabilme, Kümeler kuramı, fonksiyon gibi konularla ilgili temel kavramları kavrayabilme, ilgili problemleri çözebilme",
+   "Kombinatorik alanında permütasyon, kombinasyon ve sayma gibi temel kavramları kavrayabilme ve bu konularla ilgili problemleri çözebilme",
+   "Çizge kuramıyla ilgili temel kavramları anlayabile ve ilgili problemleri çözebilme ve bu bilgiyi kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kümeler",
+   "Hafta 2 — Fonksiyonlar",
+   "Hafta 3 — Bağıntılar",
+   "Hafta 4 — Sayma teknikleri",
+   "Hafta 5 — Permütasyon, kombinasyon",
+   "Hafta 6 — Klasik olasılık",
+   "Hafta 7 — Diziler,",
+   "Hafta 8 — Aritmetik ve geometrik diziler",
+   "Hafta 9 — Arasınav, Tüme varım yöntemi",
+   "Hafta 10 — Mantık",
+   "Hafta 11 — Önermeler Mantığı",
+   "Hafta 12 — Çizgeler ve ağaçlar",
+   "Hafta 13 — Düzlemsel çizgiler",
+   "Hafta 14 — Renklendirme"
+  ],
+  "textbooks": [
+   "Discrete Mathematics, An Open Introduction, Oscar Levin."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=107",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 108": {
+  "code": "SAO 108",
+  "name": "Sanallaştırma ve Bulut Teknolojileri",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Sanallaştırma ve Sanal Makineler & Sanal Ağlar & Sanal Depolama & Docker-Container & Bulut ve ESXI-Proxmox yönetimi & Bulut Güvenliği & IAM Çözümlerini & Bulut Bilişim & Çoklu Bulut Ortamlarını Yönetme & Büyük Ölçekli Ortamlarda Güvenlik Virtualization and Virtual Machines & Virtual Networks & Virtual Storage & Docker-Container & Cloud and ESXI-Proxmox management & Cloud Security & IAM Solutions & Cloud Computing & Managing Multi-Cloud Environments & Security in Large-Scale Environments,",
+  "outcomes": [
+   "1. Sanallaştırma ve bulut bilişim kavramlarını ve teknolojilerini anlama.",
+   "2. Sanal makineler oluşturabilme, yönetebilme ve ölçeklendirebilme.",
+   "3. Sanal ağlar ve sanal depolama alanları oluşturabilme, yönetebilme ve ölçeklendirebilme",
+   "4. Bulut hizmetlerini kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sanallaştırma Kavramları, Hipervizörler, Sanal Makineler, Sanal Makine Oluşturma",
+   "Hafta 2 — Sanal Makineye Windows Kurulumu, Linux'u Sanal Makineye Kurmak, Sanal Makine için CPU'ları Yönetme, Sanal Makine için Belleği Yönetme, Sanal Makine için Depolamayı Yönetme, Sanal Makine için Ağ Yönetimi",
+   "Hafta 3 — Fiziksel Sistemi Sanal sisteme çevirme, Bir Sanal Makineyi Kopyalama, Sanal Makinelerde Ek Aygıtları Yönetme, Erişilebilirlik",
+   "Hafta 4 — Sunucu Sanallaştırma ve Uygulama Sanallaştırma Yöntemleri",
+   "Hafta 5 — Sanal Ağları ve Sanal Depolama Alanlarını Yönetme, Yüksek Erişilebilirlik ve Hata Toleransı, Ölçülebilirlik, Donanım Gereksinimleri, Sanal Makina Depolama Yönetimi, Snapshotları Kullanma, Sanal Ağları Yönetme, yedekleme politikaları",
+   "Hafta 6 — Sanallaştırma ve Docker-Container, Sanallaştırma ve Bulut : Bulut ve ESXI-Proxmox yönetimi",
+   "Hafta 7 — Bulut Bilişime Giriş, Bulut Bilişim Hizmet Modelleri, Bulut Bilişim Dağıtım Modelleri, Güncel Bulut Bilişim Uygulamaları, Bulut Bilişim Kullanım Alanları, Bulut Bilişim Avantajlar ve Dezavantajları, Mobil Bulut Uygulamaları.",
+   "Hafta 8 — Sanal Sistemleri Hipervizör katmanında güvenliğin sağlanması",
+   "Hafta 9 — Bulut Güvenliğine Giriş",
+   "Hafta 10 — Bilgi İşlem Hizmetlerini Güvenli Hale Getirme, Depolama Hizmetlerini Güvenli Hale Getirme, Ağ Hizmetlerini Güvenli Hale Getirmek",
+   "Hafta 11 — IAM Çözümlerini Uygulamaya Yönelik Etkili Stratejiler",
+   "Hafta 12 — Bulut Ortamlarının İzlenmesi ve Denetlenmesi, Bulut Hizmetlerinde Şifreleme Uygulamak",
+   "Hafta 13 — Bulut Bilişime Yönelik Yaygın Güvenlik Tehditlerini Anlama, Uyum ve Yönetmeliğin İşlenmesi",
+   "Hafta 14 — Bulut Sağlayıcıları ile Etkileşim, Hibrit Bulutları Yönetme, Çoklu Bulut Ortamlarını Yönetme, & Büyük Ölçekli Ortamlarda Güvenlik, Güvenlik Prensipleri - Cloud Control Matrix"
+  ],
+  "textbooks": [
+   "Dac-Nhuong Le, Raghvendra Kumar, Gia Nhu Nguyen, Jyotir Moy Chatterjee, Cloud Computing and Virtualization, Wiley-Scrivener (2018)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=108",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 109E": {
+  "code": "SAO 109E",
+  "name": "Siber Güvenliğe Giriş",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Siber Güvenlik Temel Kavramları & Kimlik Doğrulama Yöntemleri & KVKK & Şifre Bilimi Temelleri & Siber Saldırılar ve Korunma Yöntemleri Cyber Security Basic Concepts & Authentication Methods & KVKK & Password Science Basics & Cyber Attacks and Protection Methods",
+  "outcomes": [
+   "İnternet kullanımı, dijital etkileşimler ve siber güvenlik uygulamalarında etik sınırlar konusunda farkındalık, yasa ve yönergelere uygun davranış sergileme.",
+   "Siber güvenlik alanındaki bilgi güvenliği, siber saldırılar, güvenlik politikaları, güvenlik duvarları, kötü amaçlı yazılımlar ve kimlik doğrulama gibi temel kavramları açıklayabilme. Bu kavramlar ve ilgili anahtar terimler arasındaki ilişkileri kurabilme.",
+   "Farklı siber tehdit türlerini tanıma ve analiz etme. Saldırı yöntemlerini ve siber saldırganların kullanabileceği yaygın teknikleri öğrenme. Savunma stratejileri geliştirmek için temel bir anlayışa sahip olma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel Kavramlar",
+   "Hafta 2 — Temel İlkeler, Siber Etik Kavramı",
+   "Hafta 3 — Kriptografik Yapı Taşları",
+   "Hafta 4 — Kullanıcı Kimlik Doğrulaması",
+   "Hafta 5 — Parolalar, Biyometri ve Alternatifler",
+   "Hafta 6 — Kimlik Doğrulama Protokolleri ve Anahtar Kurulumu",
+   "Hafta 7 — İşletim Sistemi Güvenliği ve Erişim Kontrolü",
+   "Hafta 8 — Arasınav, Yazılım Güvenliği",
+   "Hafta 9 — İstismarlar ve Ayrıcalık Artırma",
+   "Hafta 10 — Kötü Amaçlı Yazılım",
+   "Hafta 11 — Açık Anahtar Sertifika Yönetimi ve Kullanım Örnekleri",
+   "Hafta 12 — Web ve Tarayıcı Güvenliği, Kişisel Veri Hakları, GDPR/ KVKK Düzenlemeleri",
+   "Hafta 13 — Güvenlik Duvarları ve Tüneller",
+   "Hafta 14 — İzinsiz Giriş Tespiti ve Ağ Tabanlı Saldırılar"
+  ],
+  "textbooks": [
+   "Paul C. van Oorschot. Computer Security and the Internet: Tools and Jewels from Malware to Bitcoin (2021), Springer.",
+   "Paul C. van Oorschot, Siber Güvenliğe Giriş, çeviri: Prof. Dr. Kemal Bıçakcı (2021), Palme Yayınevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=109",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 201": {
+  "code": "SAO 201",
+  "name": "Sızma Testi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Keşif ve Bilgi Toplama & Ağ Taraması (NMAP) & Zafiyet Tarama ve Exploitation & Web Uygulama Zafiyetleri & Web Sızma Testi & Etik Hacking’de Şifre Kırma & Sosyal Mühendislik ve Phishing Saldırısı & Antivirüs atlatma teknikleri & Bug Bounty Discovery and Information Gathering &Network Scanning (NMAP) &Vulnerability Scanning and Exploitation & Web Application Vulnerabilities & Web Penetration Testing & Password Cracking in Ethical Hacking & Social Engineering and Phishing Attack & Antivirus bypass techniques & Bug Bounty",
+  "outcomes": [
+   "Güvenlik açığı bulunan işletim sistemlerinin test edilmesi, güvenlik açığı taraması, ağ üzerindeki zafiyetlerin taranması.",
+   "Ağ güvenliğini, sistem güvenliğini, parola güvenliğini test etmek için siber saldırı gerçekleştirebilme. Çeşitli uygulamaların güvenlik açıklarını bularak sisteme sızabilme. Çeşitli antivirüsleri atlatabilme.",
+   "İnsan faktörünü kullanarak sisteme sızabilme. Etik kurallar hakkında bilgi kazanımı."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sızma testi metodolojisi",
+   "Hafta 2 — Gerekli İşletim Sistemlerinin Kurulumu",
+   "Hafta 3 — MITRE ATT&CK Saldırı teknikleri ve taktikleri klavuzu",
+   "Hafta 4 — Keşif ve Bilgi Toplama",
+   "Hafta 5 — Sistem ve Ağ Taraması (NMAP)",
+   "Hafta 6 — Zafiyet Tarama ve Exploitation",
+   "Hafta 7 — AV,EDR,MDR,XDR atlatma teknikleri",
+   "Hafta 8 — Arasınav",
+   "Hafta 9 — Web Sızma Testi",
+   "Hafta 10 — Web Uygulamaları Testleri Metodolojileri (OWASP Testing Guide)",
+   "Hafta 11 — Web Uygulama Zafiyetleri",
+   "Hafta 12 — Bulut Sistemleri Sızma Testi Yöntemleri",
+   "Hafta 13 — Etik Hacking’de Şifre Kırma",
+   "Hafta 14 — Sosyal Mühendislik ve Phishing Saldırısı & CTF Yarışması"
+  ],
+  "textbooks": [
+   "Georgia Weidman, Penetration Testing: A Hands-on Introduction to Hacking, No Starch Press, Inc., 2014."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=201",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 202E": {
+  "code": "SAO 202E",
+  "name": "Siber Olay Yönetimi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Siber Olay Yönetiminin İlkeleri & Siber Olayların Tespiti ve Analizi & Merkezi Kayıt ve Yönetim Sistemleri & Olay İlişkilendirme Sistemleri (SIM) & Temel Ağ Bilgisi ve Analizi & Siber Saldırı Türleri & Bilgi Güvenliği ve Olay Yönetimi (SIEM) & Siber Olaylara Müdahele Ekipleri (SOME) & Log Analizi & Açık Kaynak Kodlu Merkezi Güvenlik İzleme Yazılımı (OSSIM) & Olay Müdahale Senaryo Uygulamaları Principles of Cyber Incident Management & Detection and Analysis of Cyber Incidents & Central Registration and Management Systems & Event Attribution Systems (SIM) & Basic Network Information and Analysis & Types of Cyber Attacks & Security Information and Event Management (SIEM) & Cyber Incident Response Teams (SOME) & Log Analysis & Open-Source Security Information And Event Management System (OSSIM) & Incident Response Scenario Applications",
+  "outcomes": [
+   "Siber saldırı olaylarına müdahale edebilme, siber saldırılara karşı etkili yönetim süreci oluşturabilme ve saldırganın bakış açısından bakarak güvenlik simülasyonunu yapabilme.",
+   "Saldırı simülasyonlarının ölçümünü ve analizini yapabilme, yapılan simülasyonlarda eksik noktaları belirleyebilme ve gerekli iyileştirme planlarını yapabilme",
+   "Yapılan planları raporlayabilme, simüle edilen saldırıları raporlayabilme ve siber güvenlik ile ilgili olaylarda rapor oluşturabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Siber Olay Yönetiminin İlkeleri",
+   "Hafta 2 — Siber Saldırı Türleri",
+   "Hafta 3 — Siber Olayların Tespiti ve Analizi",
+   "Hafta 4 — Merkezi Kayıt ve Yönetim Sistemleri",
+   "Hafta 5 — Olay İlişkilendirme Sistemleri (SIM)",
+   "Hafta 6 — Bilgi Güvenliği ve Olay Yönetimi (SIEM)",
+   "Hafta 7 — Adli Bilişim",
+   "Hafta 8 — Adli Bilişim",
+   "Hafta 9 — SIEM Araçları",
+   "Hafta 10 — Siber Olaylara Müdahele Ekipleri (SOME)",
+   "Hafta 11 — SOME Operasyonel Elemanları ve Proje Planı",
+   "Hafta 12 — Açık Kaynak Kodlu Merkezi Güvenlik İzleme Yazılımı (OSSIM)",
+   "Hafta 13 — Log Analizi",
+   "Hafta 14 — SOC Lab. Çalışması Seviye1 - Olay Müdahale Senaryo Uygulamaları & SOC Lab. Çalışması Seviye1"
+  ],
+  "textbooks": [
+   "Joseph Muniz, Gary McIntyre, Nadhem AlFardan, 2015; Security Operations Center: Building, Operating, and Maintaining your SOC, Cisco Press",
+   "Anton Chuvakin , Kevin Schmidt , Chris Phillips, Logging and Log Management, Elsevier Science",
+   "David R. Miller, Shon Harris, Allen Harper, Stephen VanDyke, Chris Blask, 2010; Security Information and Event Management (SIEM) Implementation, McGraw-Hill Osborne Media",
+   "Gregory Jarpey and R. Scott McCoy (Auth.), 2017; Security Operations Center Guidebook. A Practical Guide for a Successful SOC, Butterworth-Heinemann",
+   "Ric Messier, 2019; CEH v10 Certified Ethical Hacker Study Guide, Sybex"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=202",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 203E": {
+  "code": "SAO 203E",
+  "name": "Mobil Teknolojiler ve Güvenlik",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 6
+  },
+  "description": "Backdoor Uygulamaları &Android Studio & Swift & IOS &Tersine Mühendislik & Root ve JailBreak İşlemleri & Firebase (Cloud Server) Güvenliği & Ağ İçi Saldırılar & API Güvenliği & Sızma Testi Backdoor Applications & Android Studio & Swift & IOS & Reverse Engineering & Root and JailBreak Procedures & Firebase (Cloud Server) Security & In-Network Attacks &API Security & Penetration Testing",
+  "outcomes": [
+   "Temel mobil güvenlik kavramlarına uygulamalı olarak hakim olma.",
+   "Android, IOS gibi bir mobil işletim sistemlerini ayrıcalıklı kullanıcı seviyesinde kullanma, yapılandırma ve yönetme yeteneği kazanma.",
+   "Mobil İşletim Sistemlerinin ve bunlar üzerinde çalıştırılan uygulamaların güvenli yapılandırılması ve çalıştırılması için temel kavramlara sahip olma ve uygulama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mobil Güvenliğe Giriş",
+   "Hafta 2 — Android Studio Temelleri",
+   "Hafta 3 — iOS Temelleri",
+   "Hafta 4 — Swift Temelleri",
+   "Hafta 5 — Tersine Mühendislik Araçları",
+   "Hafta 6 — Root ve JailBreak İşlemleri",
+   "Hafta 7 — Backdoor Uygulamaları",
+   "Hafta 8 — Arasınav",
+   "Hafta 9 — Şifrelenmiş Uygulama Örneği",
+   "Hafta 10 — Firebase (Cloud Server) Güvenliği",
+   "Hafta 11 — Ağ İçi Saldırılar",
+   "Hafta 12 — API Güvenliği",
+   "Hafta 13 — MobSF Açık kaynaklı Uygulama Kullanımı",
+   "Hafta 14 — Mobil Uygulama Sızma Testi & CTF Pratik"
+  ],
+  "textbooks": [
+   "Abhinav Mishra, Mobile App Reverse Engineering: Get started with discovering, analyzing, and exploring the internals of Android and iOS apps, Packt Publishing (2022)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=203",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 204": {
+  "code": "SAO 204",
+  "name": "Girişimcilik ve Kariyer Planlama",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 2
+  },
+  "description": "Kariyer Nedir & Ulusal ve Uluslararası Değişim Programları & Girişimcilik & Sivil Toplum Kuruluşları & İnce Yetenekler & Kamu Sektörü & Diksiyon ve Beden Dili & Özgeçmiş ve Kapak Yazısı Hazırlama & Özel Sektör & Etkili Mülakat Teknikleri &Akademi What is Career & National and International Exchange Programs & Entrepreneurship & Non-Governmental Organizations & Fine Skills & Public Sector & Diction and Body Language & Resume and Cover Letter Preparation & Private Sector & Effective Interview Techniques & Academy",
+  "outcomes": [
+   "Kariyer planlama stratejilerini anlama ve uygulama yeteneklerini geliştirme. Ulusal ve uluslararası değişim programları, sektör günleri etkinlikleri ve girişimcilik konularında edindikleri bilgileri kullanarak kariyer hedeflerine yönelik bilinçli kararlar alma noktasında farkındalık.",
+   "Diksiyon, beden dili, özgeçmiş hazırlama ve etkili mülakat teknikleri konularındaki becerilerini geliştirme, sektör günleri etkinlikleri aracılığıyla farklı sektörlerle etkileşimde bulunma, iş dünyasının beklentilerini anlama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Dersin tanıtımı, temel kavramlar ve motivasyon",
+   "Hafta 2 — Kariyer Nedir",
+   "Hafta 3 — Ulusal ve Uluslararası Değişim Programları",
+   "Hafta 4 — Girişimcilik Nedir",
+   "Hafta 5 — Sektör Günleri-Sivil Toplum Kuruluşları",
+   "Hafta 6 — İnce Yetenekler",
+   "Hafta 7 — Sektör Günleri-Kamu Sektörü",
+   "Hafta 8 — Arasınav, Diksiyon ve Beden Dili",
+   "Hafta 9 — Özgeçmiş ve Kapak Yazısı Hazırlama",
+   "Hafta 10 — Sektör Günleri-Özel Sektör",
+   "Hafta 11 — Etkili Mülakat Teknikleri",
+   "Hafta 12 — Sektör Günleri-Akademi",
+   "Hafta 13 — Sektör Günleri-Girişimcilik",
+   "Hafta 14 — Ders Değerlemesi ve Proje Detayları"
+  ],
+  "textbooks": [
+   "Dersin öğretim üyesi tarafından seçilen destekleyici kitap, dergi, makale ve çevrimiçi kaynaklar.",
+   "Kariyer Ofisi tarafından hazırlanan kılavuzlar",
+   "Beceri/yetkinlik değerleme envanterleri",
+   "Kariyer Merkezi katkısıyla düzenlenen kariyer etkinlikleri (Kariyer Fuarı, Seminerler, Bilgilendirme Oturumları, Mentörlük, Mezunlarla Buluşma, Sektör Panelleri, Vaka Çalışmaları, Mülakat Simülasyonları vb.)",
+   "Örnek video, belgesel ve filmler",
+   "Mülakat simülasyonu, örnek olay/atölye çalışması vb. interaktif etkinlikler.",
+   "Ders içeriği ve öğretim elemanı değerleme formları."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=204",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 205E": {
+  "code": "SAO 205E",
+  "name": "Siber Güvenlik Yönetişimi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Tehdit Modelleme & STRIDE yöntemi & Risk Yönetimi & Yönetişim Unsurları & Sertifikasyon ve Akreditasyon & Bilişim Hukuku & Güvenlik Standartları & Ortak Kriterler Standardı & Denetim Yapıları & Siber Güvenlikte Etik & TR'de Siber Güvenlik Organizasyonu Threat Modeling & STRIDE Method & Risk Management & Governance Elements & Certification and Accreditation & Information Technology Law & Security Standards & Common Criteria Standard & Audit Structures & Ethics in Cybersecurity & Cybersecurity Organization in Turkey",
+  "outcomes": [
+   "Siber güvenlik yönetişiminin temel kavramlarını ve prensiplerini açıklayabilme",
+   "Siber güvenlik yönetişim süreçlerinin etkinliğini değerlendirebilme, gerekli araç ve teknolojileri kullanabilme ve bu alandaki güncel gelişmeleri takip edebilme",
+   "Siber güvenlik yönetişimi alanındaki sorunlara çözüm üretebilme, politikalar ve prosedürler geliştirebilme.",
+   "Siber güvenlikte etik ilkeleri ve değerlerini uygulamak için gerekli adımları açıklayabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel Güvenlik Kavramları ve Prensipleri",
+   "Hafta 2 — Tehdit Modelleme",
+   "Hafta 3 — STRIDE yöntemi",
+   "Hafta 4 — Risk Yönetimi ve Güvenlik Kontrolleri",
+   "Hafta 5 — Yönetişim Unsurları",
+   "Hafta 6 — Sertifikasyon ve Akreditasyon",
+   "Hafta 7 — Bilişim Hukuku Temel Bilgiler",
+   "Hafta 8 — Ara Sınav, Güvenlik Standartları (ISO27xx, KVYS, Yerel SG mevzuatı)",
+   "Hafta 9 — Güvenlik Standartları (ISO27xx, KVYS, Yerel SG mevzuatı)",
+   "Hafta 10 — Ortak Kriterler (Common Criteria) Standardı",
+   "Hafta 11 — Denetim Yapıları",
+   "Hafta 12 — Siber Güvenlikte Etik",
+   "Hafta 13 — TR'de Siber Güvenlik Organizasyonu",
+   "Hafta 14 — TR'de Siber Güvenlik Organizasyonu"
+  ],
+  "textbooks": [
+   "Ryan Ellis and Vivek Mohan (Editor), Rewired: Cybersecurity Governance, Wiley (2019)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=205",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 207E": {
+  "code": "SAO 207E",
+  "name": "Güvenli Yazılım Geliştirme",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 5
+  },
+  "description": "Yazılım Güvenliği & Girdi Denetimi Stratejileri & Kriptografi & Kimlik Doğrulama & Password Reset Stratejileri & Güvenli Oturum Yönetimi & Session Fixation & Session Korsanlığı & Yetkilendirme Yöntemleri & Hata Yönetimi ve Kayıt Tutma & Kod Analizi & Web 2.0 & DevSecOps kavramı Software Security & Input Validation Strategies & Cryptography & Secure Authentication & Password Reset Strategies & Secure Session Management & Session Fixation & Session Hijacking & Authorization Methods & Error Handling, and Logging & Code Analysis & Web 2.0 & DevSecOps Concept",
+  "outcomes": [
+   "Güvenli yazılım geliştirmenin önemini kavrayabilme.",
+   "Yazılım güvenliğinin temel kavramlarını ve tekniklerini anlayabilme.",
+   "Yazılım geliştirme sürecinde güvenlik risklerini tanımlayabilme ve analiz edebilme.",
+   "Yazılım güvenliğini artırmaya yönelik önlemler alabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Güvenli Girdi Denetimi, Yazılım Güvenliği",
+   "Hafta 2 — Girdi Denetimi Stratejileri",
+   "Hafta 3 — Güvenli Kriptografi",
+   "Hafta 4 — Güvenli Kimlik Doğrulama",
+   "Hafta 5 — Güvenli Password Reset Stratejileri",
+   "Hafta 6 — Güvenli Oturum Yönetimi",
+   "Hafta 7 — Session Fixation ve Önlemi",
+   "Hafta 8 — Session Korsanlığı",
+   "Hafta 9 — Güvenli Yetkilendirme",
+   "Hafta 10 — Yetkilendirme Yöntemleri",
+   "Hafta 11 — Güvenli Dizayn, Hata Yönetimi ve Kayıt Tutma",
+   "Hafta 12 — Statik Güvenli Kod Analizi",
+   "Hafta 13 — Güvenli Web 2.0",
+   "Hafta 14 — DevSecOps kavramı"
+  ],
+  "textbooks": [
+   "Michael Howard, David LeBlanc, Writing Secure Code: Practical Strategies and Proven Techniques for Building Secure Applications in a Networked World, 2nd ed. Edition, Microsoft Press (2003)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=207",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 209": {
+  "code": "SAO 209",
+  "name": "Etkili İletişim ve Sunum Teknikleri",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 0,
+   "lab": 0,
+   "local": 1,
+   "ects": 1
+  },
+  "description": "İletişim nedir? & Doğru Anlatma & Sanal İletişim & Yeni Medya Araçları & Etkili İletişim ve Toplumsal Cinsiyet & İletişimde Kalite & Konuşma ve Sunum & Dinleme & Konuşma ve Sunum Teknikleri & Etkileme ve İkna Edici Konuşma & Sunum Türleri & Sunum Teknikleri & Sözsüz İletişim Communication: What is it? & Accurate Expression & Virtual Communication & New Media Tools & Effective Communication and Gender Roles & Quality in Communication & Speaking and Presentation Skills & Listening & Speech and Presentation Techniques & Influential and Persuasive Speaking & Types of Presentations & Presentation Techniques & Non-verbal Communication",
+  "outcomes": [
+   "İletişimin temellerini ve gereğini kavrayabilme",
+   "Etkili iletişimin ve etkili sunumun temel gereksinimlerini kişisel ve profesyonel hayatında uygulayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İletişim nedir?, Motivasyon",
+   "Hafta 2 — İletişimde algının rolü",
+   "Hafta 3 — Doğru Anlatma",
+   "Hafta 4 — Sanal İletişim",
+   "Hafta 5 — Yeni Medya Araçları",
+   "Hafta 6 — Etkili İletişim ve Toplumsal Cinsiyet",
+   "Hafta 7 — İletişimde Kalite",
+   "Hafta 8 — Etkili İletişimde Konuşma ve Sunum",
+   "Hafta 9 — Arasınav, Etkili İletişimde Dinleme",
+   "Hafta 10 — Konuşma ve Sunum Teknikleri",
+   "Hafta 11 — Etkileme ve İkna Edici Konuşma",
+   "Hafta 12 — Sunum Türleri",
+   "Hafta 13 — Sunum Teknikleri",
+   "Hafta 14 — Sözsüz İletişim"
+  ],
+  "textbooks": [
+   "Etkili İletişim Teknikleri, Anadolu Üniversitesi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=209",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 211": {
+  "code": "SAO 211",
+  "name": "Proje Yönetimi Metodolojisi ve Uygulamaları",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 2
+  },
+  "description": "Proje Yöneticisi ve ekibi & Proje Konusu ve Planını Belirleme & İş Akışı ve Takvimlerdirme & Proje Kontrolü &Proje Süreçlerinin Yönetimi & İletişim & Farklılıkları Yönetmek & İzleme ve Kontrol & Proje Sürecinin Sonuçlandırılması Project Manager and Team & Determining Project Subject and Planning & Workflow and Scheduling & Project Control & Management of Project Processes & Communication & Managing Differences & Monitoring and Control & Closing the Project Process",
+  "outcomes": [
+   "Pratik uygulama odaklı olarak, proje yönetimi temel prensiplerini anlama; başlatma, planlama, uygulama, kontrol ve kapanış süreçlerini yönetme.",
+   "Proje odaklı rollerde başarı için gerekli olan pratik proje yönetimi becerileri geliştir profesyonellik, etik davranış ve etkili takım çalışmasına hazır hale gelir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Dersin tanıtımı, temel kavramlar ve motivasyon",
+   "Hafta 2 — Proje Yöneticisi ve ekibi",
+   "Hafta 3 — Proje Konusu ve Planını Belirleme",
+   "Hafta 4 — Proje Planını Belirleme",
+   "Hafta 5 — İş Akışı ve Takvimlerdirme",
+   "Hafta 6 — Proje Kontrolü",
+   "Hafta 7 — Proje Süreçlerinin Yönetimi: Değişilikler",
+   "Hafta 8 — Proje Süreçlerinin Yönetimi: Çıktılar",
+   "Hafta 9 — Arasınav, tekrar",
+   "Hafta 10 — Proje Süreçlerinin Yönetimi: Riskler",
+   "Hafta 11 — Proje Süreçlerinin Yönetimi: Bütçe ve Maliyet",
+   "Hafta 12 — İletişim, Farklılıkları Yönetmek",
+   "Hafta 13 — İzleme ve Kontrol",
+   "Hafta 14 — Proje Sürecinin Sonuçlandırılması"
+  ],
+  "textbooks": [
+   "Horine, Greg. Project Management Absolute Beginner's Guide: Que Publishing, 2012."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "SAO 259": {
+  "code": "SAO 259",
+  "name": "Yapay Zekâ ve Siber Güvenlik",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "- Yapay Zeka, Makine Öğrenme, Derin Öğrenme Kavramları & Veri Analizi ve Problem Tipleri Python Kütüphaneleri &Temel Makine Öğrenme Yöntemleri & Bias-Variance Ödünleşmesi & Hata ve Performans Ölçütleri & Makine Öğrenmesi & Sınıflandırma ve Kümeleme Anomali Tespiti & Makine Öğrenmenin Güvenlikte Uygulama Zorlukları & Düşman (Adversarial) Makine Öğrenme - Artificial Intelligence, Machine Learning, Deep Learning Concepts & Data Analysis and Problem Types & Python Libraries & Basic Machine Learning Methods & Bias-Variance Trade-off & Error and Performance Metrics & Machine Learning & Classification and Clustering Anomaly Detection & Application Challenges of Machine Learning in Security & Adversarial Machine Learning",
+  "outcomes": [
+   "Yapay Zeka, Makine Öğrenmesi, Derin Öğrenme gibi konularla ilgili temel kavramları kavrayabilme, ilgili problemleri çözebilme,",
+   "Temel makine öğrenme yöntemleri, bias-variance ödünleşmesi, hata ve performans ölçütleri gibi temel kavramları kavrayabilme ve bu konularla ilgili problemleri çözebilme",
+   "Sınıflandırma ve kümeleme, anomali tespiti, makine öğrenmenin güvenlikte uygulama zorlukları, düşman (adversarial) makine öğrenme ile ilgili temel kavramları anlayabilme ve ilgili problemleri çözebilme ve bu bilgiyi kullanabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay Zeka, Makine Öğrenme, Derin Öğrenme Kavramları",
+   "Hafta 2 — Veri Analizi ve Problem Tipleri",
+   "Hafta 3 — Python Kütüphaneleri",
+   "Hafta 4 — Temel Makine Öğrenme Yöntemleri",
+   "Hafta 5 — Bias-Variance Ödünleşmesi",
+   "Hafta 6 — Hata ve Performans Ölçütleri",
+   "Hafta 7 — Neden Yapay Zeka ve Güvenlik?",
+   "Hafta 8 — Uygulamada Makine Öğrenme: Çalışılmış Örnekler",
+   "Hafta 9 — Arasınav",
+   "Hafta 10 — Sınıflandırma ve Kümeleme",
+   "Hafta 11 — Anomali Tespiti",
+   "Hafta 12 — Makine Öğrenmenin Güvenlikte Uygulama Zorlukları",
+   "Hafta 13 — Düşman (Adversarial) Makine Öğrenme",
+   "Hafta 14 — Güncel Problemler ve Uygulamalar"
+  ],
+  "textbooks": [
+   "Alessandro Parisi, (2019), Hands-On Artificial Intelligence for Cybersecurity: Implement smart AI systems for preventing cyber attacks and detecting threats and network anomalies, Packt Publishing."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=259",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

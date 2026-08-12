@@ -1,0 +1,390 @@
+{
+ "VIA 502E": {
+  "code": "VIA 502E",
+  "name": "Data Mining for Business",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders işletmelerde veri madenciliği tekniklerinin uygulanmasını kapsamaktadır. Bu bağlamda veri madenciliği dersi temel bileşen analizi, regresyon analizi, sınıflandırma, kümeleme analizi, geçerlilik ve test gibi konuları içermektedir. Bu tekniklerin teorik olarak tartışılmasının yanında sektör uygulamaları gösterilecektir. This course covers data mining techniques for business. The course is designed for graduate students. This course will cover some important and popular data analysis techniques such as principal component analysis, regression, classification, clustering, and validation and testing. Although some theoretical aspects of these techniques will be discussed, the emphasis will be on how to apply and integrate these techniques for solving business problems in manufacturing, and service organizations",
+  "outcomes": [
+   "Veri analizi yöntemlerinin gerçek sektör problemlerinin çözümünde kullanılabilmesi",
+   "İş dünyasında karar verme süreçlerinde veri analizi yöntemlerinden yararlanılması",
+   "Veri madenciliği programlarının kullanılmasının öğrenilmesi",
+   "Büyük veri analizlerinde en son yöntem ve tekniklerin öğrenilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri tiplerinin tanımlanması ve temel istatistik",
+   "Hafta 2 — Veri tiplerinin tanımlanması ve temel istatistik",
+   "Hafta 3 — Temel Bileşen Analizi",
+   "Hafta 4 — Doğrusal Regresyon Analizi",
+   "Hafta 5 — Sınıflandırma Teknikleri (Lojistik Regrasyon ve Ayırt Etme Analizi)",
+   "Hafta 6 — Modelin geçerliliğinin ölçülmesi",
+   "Hafta 7 — Doğrusal olmayan Regresyon Modelleri",
+   "Hafta 8 — Karar Ağacı ve Sentezleme Algoritmaları",
+   "Hafta 9 — Destek Vektör Makineleri",
+   "Hafta 10 — Kümeleme Teknikleri",
+   "Hafta 11 — Veri içindeki anormalliklerin tespiti"
+  ],
+  "textbooks": [
+   "James G., Witten, D., Hastie T., and Tibshirani, R., An Introduction to Statistical Learning, Springer, 2013",
+   "Tan, P.N., Steinbach, M. and Kumar V., Introduction to Data Mining, Pearson, 2006",
+   "Class notes and handouts"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=502",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 504E": {
+  "code": "VIA 504E",
+  "name": "Big Data Technologies&Appli.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilgi ve iletişim teknolojilerinin gelişmesi ve yaygınlaşması büyük veri olarak ifade edilen daha fazla, daha çeşitli ve daha hızlı şekilde akan veriyi de beraberinde getirmiştir. Büyük Veri, geleneksel yazılım ve donanım ile yönetmenin ve işlemenin zor olduğu büyük ve karmaşık veri kümelerini ifade eder. Bugünün rekabetçi ve zor iş dünyasında yeni büyük veri teknolojilerini kullanma ve yönetme talebi çok yüksektir. Büyük veri teknolojileri ve uygulamaları daha efektif veri yönetimi, daha hızlı veri analizi ile yeni fırsatlar yaratma ve kurumsal performansın artışını sağlar. Bu derste öğrenciler, güncel büyük veri teknolojilerini kullanmak ve yönetmek için gerekli aşamaları ve yaşanan zorlukları göreceklerdir. Bu derste büyük veri uygulamalarının vaka analizi yanında, büyük veri teknolojilerini kullanma, büyük veri analizi projesi tasarlama ve uygulama konuları içerilmektedir. The development and widespread use of information and communication technologies has led to big data that have more volume, more variety and more velocity. Big Data refers to large and complex datasets that they are difficult to manage and process with traditional software and hardware. The demand for using and managing big data technologies in current competitive and challenging economy is high. Big data technologies and applications enable new business opportunities and increased enterprise performance with more effective data management and faster data analysis. This course guides students through the phases and complexities in using and managing up-to-date big data technologies. Besides practices in big data applications, topics covered include using big data technologies, big data project design and implementation.",
+  "outcomes": [
+   "Büyük veriyi hangi teknolojiler ile kullanabileceğini saptama ve bu teknolojileri destekleyecek bilişim altyapısı, veri ve bilgileri tanımlama becerisi",
+   "Büyük veriyi daha iyi yönetme ve analiz etmek için yeni teknojiler kullanma becerisi",
+   "Varolan bilgileri ortak kullanıma geçirme becerisi",
+   "Takım çalışması becerilerini geliştirme",
+   "Bilişim dünyasında kalite tanımları içinde yer almış ve uyulmasına önem verilen etik kullara uyma becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Büyük veri işleme ekosistemi ve Hadoop Temelleri",
+   "Hafta 2 — MapReduce Framework'e genel bakış",
+   "Hafta 3 — Hadoop Projeleri ve Vaka Analizleri",
+   "Hafta 4 — Apache Spark ile Veri Analizine Giriş",
+   "Hafta 5 — RDD ile Spark Programlama Modeli",
+   "Hafta 6 — Spark Uygulamalarını Hadoop Üzerinde Çalıştırma",
+   "Hafta 7 — Spark SQL",
+   "Hafta 8 — Spark Streaming",
+   "Hafta 9 — Spark MLib ile Makine Öğrenmesi",
+   "Hafta 10 — Spark ile İleri Analitik Uygulamaları",
+   "Hafta 11 — Dönem Projesi Sunumları"
+  ],
+  "textbooks": [
+   "Tom White, Hadoop: The Definitive Guide, 4th Edition : Storage and Analysis at Internet Scale, O'Reilly Media, 2015",
+   "Holden Karau, Andy Konwinski, Patrick Wendell, Matei Zaharia, Learning Spark : Lightning-Fast Big Data Analysis, O'Reilly Media, 2015.",
+   "Mark Grover, Ted Malaska, Jonathan Seidman, Gwen Shapira, Hadoop Application Architectures : Designing Real-World Big Data Applications, O'Reilly Media, 2015",
+   "Big Data Analytics Beyond Hadoop: Real-Time Applications with Storm, Spark, and More Hadoop Alternatives, Vijay Srinivas Agneeswaran, Pearson Education, 2014."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=504",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 506E": {
+  "code": "VIA 506E",
+  "name": "Optimization&Decision Modell.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders, karar verme teorisindeki temel kavramlar, karar verme problemlerinin uygulamalarla modellenmesi ve çözüm yöntemleri,işletme, üretim, yönetim, yönetici ve sayısal karar vermeyi; model kurma ve modelleme felsefesini öğretmeyi, doğrusal programlama ve Simplex algoritması, dualite ve ekonomik yorumlar ile duyarlılık analizlerini ulaştırma modelleri ve çözüm yöntemlerini kavratmayı, proje yönetimine giriş yapmayı, excel çözücüleri kullandırmayı hedeflemektedir. This course aims to teach basic concepts of decision theory, modeling and solution methods of decision making problems with applications, the production and management concepts, quantitative decision making, modeling philosophy and model building, linear programming and Simplex algorithm, Big M and Two Phase Simplex Methods, Duality and economic analysis, transportation models and solving methods, and the use of Lindo and Excel Solver programs.",
+  "outcomes": [
+   "Karar teorisindeki temel terimleri ve kavramları öğrenmek",
+   "Farklı matematiksel modelleme teknikleri kullanmak",
+   "Bir doğrusal programlama modelini çözmek ve çözümünü yorumlamak",
+   "Çözümün, problemin bazı parametrelerinin değişmesine karşı hassasiyetini belirlemek",
+   "Bir doğrusal programlama modeli kurmak, çözmek ve analiz etmek için bazı bilgisayar yazılımlarını kullanmak",
+   "Bir çözümün en iyi çözüm olup olmadığını anlamak,",
+   "Ulaştırma ve Atama problemlerini, bu problemlere has bir yöntemle çözmek ve analiz etmek",
+   "Proje yönetimi modelini ve çözümünü başarmak",
+   "Çok ölçütlü karar verme yöntemlerini ve uygulama alanlarını öğrenmek becerileri",
+   "Fayda Teorisini uygulamak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — YA'ya Giriş, Temel Kavramlar, Doğrusal Programlamaya (DP) Giriş",
+   "Hafta 2 — Modelleme",
+   "Hafta 3 — Grafik Çözüm, Simpleks Algoritması",
+   "Hafta 4 — Karar verme ile ilgili temel kavramlar",
+   "Hafta 5 — OPL yazılım paketi",
+   "Hafta 6 — Çok ölçütlü karar verme yöntemleri-temel kavramlar, uygulama alanları",
+   "Hafta 7 — Karar Ağacı",
+   "Hafta 8 — Fayda Teorisi",
+   "Hafta 9 — Duyarlılık Analizi",
+   "Hafta 10 — Ulaştırma Sorunlarının Formülasyonu, Temel Olurlu Çözümün Bulunması",
+   "Hafta 11 — Ulaştırma problemlerinin Çözümü, Atama Sorunları, Geçici Konaklama Sorunları"
+  ],
+  "textbooks": [
+   "Winston W.L. (2004) “Operations Research: Applications and Algorithms”,Brooks/Cole – Thomson Learning",
+   "French, S, “Decision Theory:An Introduction to the Mathematics of Rationality”, John Wiley &Sons, NewYork: 1988",
+   "Taha H.A. (2003) \"Operations Research: An Introduction\", Pearson Education Inc",
+   "Taha H.A. (2000) \"Yoneylem Arastirmasi\", Literatur Yayincilik (cev. Alp Baray ve Sakir Esnaf)",
+   "Winston W.L., Albright S.C. (2001) \"Practical Management Science\", Duxbury Press, Wadsworth Inc",
+   "Render B., Stair R.M. Jr., Hanna M.E. (2003) \"Quantitative Analysis for Management\", Pearson Education Inc.",
+   "Taylor B.W. III (2002) \"Introduction to Management Science\", Pearson Education Inc",
+   "Rardin R.L. (1998) \"Optimization in Operations Research\", Prentice Hall Inc",
+   "Walker R.C. (1999) \"Introduction to Mathematical Programming\", Prentice Hall Inc."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=506",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 508E": {
+  "code": "VIA 508E",
+  "name": "Data Visualization and Commun.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Gelişen araçlar ve teknolojiler kullanılarak veri görsel bir biçimde sunulabilmektedir. Bu ders very temizleme, analiz ve görselleştirme konularına giriş niteliği taşımaktadır. Derste gerçek hayat örnekleri üzerinden gidilerek veri görselleştirmenin temelleri anlatılmaktadır. Öğrenciler bu derste ham veriyi farklı kaynaklardan alma, anlamlı bilgileri oluşturma ve görseller oluşturma konusunda çalışmalar yapacaklardır. Using emerging tools and technologies data can be represented and communicated to the target audience visually. This course is an introduction to data cleaning, analysis and visualization. We will teach the basics of data visualization through real-world examples. The students will learn how to take raw data from data sources, extract meaningful information, and make visualizations",
+  "outcomes": [
+   "Veriyi hedef kitleye uygun görseller ile sunma becerisi",
+   "Farklı görselleştirme araçlarını kullanma ve karşılaştırma",
+   "Çeşitli yazılımlar kullanarak aynı veriye ait farklı görseller oluşturma",
+   "Veri yapısına uygun görselleştirme tekniklerini belirleme ve kullanma becerisi",
+   "Görselleri analiz etme, değerlendirme ve güncelleme yapma becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri görselleştirmeye giriş ve temel tanımlar",
+   "Hafta 2 — Veri görselleştirmede kullanılan araçlar",
+   "Hafta 3 — Veri görselleştirme oluşturma süreci",
+   "Hafta 4 — Etkili dijital sunum dosyaları tasarlamak",
+   "Hafta 5 — Keşif amaçlı görselleştirme",
+   "Hafta 6 — Kategorik verileri görselleştirme",
+   "Hafta 7 — Zaman seri verilerini görselleştirme",
+   "Hafta 8 — Çok değişkenli görselleştirme",
+   "Hafta 9 — Coğrafi verileri görselleştirme",
+   "Hafta 10 — Gösterge paneli tasarımı",
+   "Hafta 11 — Proje sunumları"
+  ],
+  "textbooks": [
+   "Nau Y. (2011) Visualize This, Wiley",
+   "Nau Y. (2013) Data Points: Visualization That Means Something, Wiley",
+   "Khan A. (2016) Jumpstart Tableau: A Step-By-Step Guide to Better Data Visualization, Apress"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=508",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 509E": {
+  "code": "VIA 509E",
+  "name": "Machine Learningwith Big Data",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Veri toplama ve saklama teknolojilerinin gelişmesiyle beraber çok büyük miktarda veri kolaylıkla toplanabilmekte ve saklanabilmektedir. Bu kadar büyük veri içinden işe yarar bilgi çıkarmak rekabetci ortam içinde çok büyük önem arz etmektedir. Bu derste büyük veriden değerli bilgiler elde etmek için gözetimli öğrenme (regrasyon ve sınıflandırma) ve gözetimsiz öğrenme (kümeleme) metotları öğretilecektir. Increase in data acquiring and storing technology enables us to collect and store enormous amount of data. Extracting useful information from huge amount of data is crucial to become successful business in competitive industry. In this course, supervised models (regression and classification) and unsupervised models (clustering) will be introduced to extract valuable information from big data.",
+  "outcomes": [
+   "Tahminleme modellerinde temel kavramları anlama becerisi",
+   "Regrasyon ve sınıflandırma problemleri için gözetimli öğrenme metodlarını uygulama",
+   "Kümeleme problemleri için gözetimsiz öğrenme metodlarını uygulama",
+   "Tahminleme metodlarının sonuclarını analiz edebilme ve performanslarını ölçebilme",
+   "Basit makine öğrenmesi algoritmalarını kodlayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Makine öğrenmesine giriş",
+   "Hafta 2 — Gözetimli ve gözetimsiz öğrenme",
+   "Hafta 3 — Lineer regresyon, Lojistik regresyon",
+   "Hafta 4 — Naïve Bayes, K en yakın komşu algoritması",
+   "Hafta 5 — K-means, Hiyerarşik kümeleme",
+   "Hafta 6 — Yapay Sinir Ağları",
+   "Hafta 7 — Destek Vektör Makineleri",
+   "Hafta 8 — Regresyon problemleri için büyük veri örnekleri",
+   "Hafta 9 — Sınıflandırma problemleri için büyük veri örnekleri",
+   "Hafta 10 — Kümeleme problemleri için büyük veri örnekleri",
+   "Hafta 11 — Performans ölçme"
+  ],
+  "textbooks": [
+   "Mü ller, Andreas C., and Sarah Guido. Introduction to machine learning with Python.",
+   "O'Reilly Media, 2017..Raschka, Sebastian. Python machine learning. Packt Publishing Ltd, 2015.",
+   "Grus, Joel. Data Science from Scratch: First Principles with Python. \" O'Reilly Media, Inc.\", 2015."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=509",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 511E": {
+  "code": "VIA 511E",
+  "name": "Time Series and Forecasting",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders modern zaman serisi tekniklerine ve ileri öngörü metodlarına yoğunlaşmaktadır. Ders kapsamında zaman serilerinin özellikleriyle, zaman serisi tekniklerinin klasik ekonometrik yöntemlerden farklılıkları ele alınmaktadır. Ders kapsamında R ekonometrik paket programıyla uygulamalar yapılacaktır. This course focuses on modern time series techniqued and advanced forecast methods. The course also covers the concepts such as time series properties, the diferences between traditional econometric methods and time series methods. The scope of the course included empiricial applications using R software",
+  "outcomes": [
+   "Zaman Serileri özelliklerini analiz edebilme becerisi",
+   "Zaman Serisi Ekonometrisi yöntemlerini uygulayabilme becerisi",
+   "Ortalama için Öngörü yapabilme becerisi",
+   "Varyans için Öngörü yapabilme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Zaman Serilerinin grafiksel gösterimi, Korelogram",
+   "Hafta 2 — Durağanlık, Ergodisite,",
+   "Hafta 3 — Tek değişkenli Durağan Süreçler :AR, MA, ARMA",
+   "Hafta 4 — Üstel Düzleme",
+   "Hafta 5 — Öngörü",
+   "Hafta 6 — Birim Kök testleri",
+   "Hafta 7 — Vektör Otoregresif Süreçler",
+   "Hafta 8 — Eşbütünleşme",
+   "Hafta 9 — Eşbütünleşme vektör tahmincileri",
+   "Hafta 10 — Otoregresif Koşullu Değişen Varyans",
+   "Hafta 11 — Doğrusal Olmayan Zaman Serisi Modelleri"
+  ],
+  "textbooks": [
+   "Introduction to Modern Time Series Kirchgässner G. · Wolters J springer 2007 Analysis of Financial Time Series Ruey TSay , Wiley 2010",
+   "Analysis of Financial Time Series Ruey TSay , Wiley 2010"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=511",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 525E": {
+  "code": "VIA 525E",
+  "name": "Social Network Analy.for Bus.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sosyal ağ analiz en basitinden bir grup insan için uygulanabildiği gibi sosyal ağların kullanılması ile kıtalar arası ilişkilerin analizinde de kullanılmaktadır. Bu derste sosyal ağ analizi yaklaşımları ile dünyada farklı boyutlarda gerçekleşen karmaşık ilişkiler ve irtibatların anlaşılması amaçlanmaktadır. Ders kapsamında özel yazılımlar kullanılarak sosyal ağlara ait verileri toplanması ve ilgili ölçütleri hesaplanarak görselleştirilmesine ait örnekler yer almaktadır Social network analysis, in its simplest form, can be used for a group of people, or it can be used for digital social networks to analysis intercontinental relationships. In this course, it is aimed to explain the complex relations and connections that take place in different dimensions in the world using social network tools and techniques. To this end, examples of collecting social network data using various software are given with calculation of metrics and visualization techniques",
+  "outcomes": [
+   "Sosyal ağ analizini ve iş dünyasındaki olası faydalarını anlama",
+   "Sosyal ağ analizi için veri toplama ve işleme becerisi",
+   "Farklı sosyal ağ analizi yazılımlarını kullanma becerisi",
+   "Veri yapısına uygun sosyal ağ analizi yaklaşımlarını belirleme ve kullanma becerisi",
+   "Sosyal ağ analizi sonuçlarını değerlendirme ve yorumlama"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sosyal ağ analizine giriş ve temel tanımlar",
+   "Hafta 2 — Sosyal medya sistemleri",
+   "Hafta 3 — Sosyal ağ analizi giriş ve temel tanımlar",
+   "Hafta 4 — Ağ tipleri ve özellikleri",
+   "Hafta 5 — Veri toplama ve filtreleme",
+   "Hafta 6 — Kümeleme ve gruplama",
+   "Hafta 7 — Vakalar ile uygulamalar: Eposta",
+   "Hafta 8 — Vakalar ile uygulamalar: Twitter",
+   "Hafta 9 — Vakalar ile uygulamalar: Facebook",
+   "Hafta 10 — Vakalar ile uygulamalar: Youtube",
+   "Hafta 11 — Proje sunumları"
+  ],
+  "textbooks": [
+   "Hansen, D.L, Schneiderman, B., & Smith, M. (2011). Analyzing Social Media Networks with NodeXL: Insights from a Connected World. New York: Morgan Kaufmann",
+   "Hanneman, R. A. & Riddle, M. (2005). Introduction to social network methods. Riverside, CA: University of California, Riverside",
+   "Monge, P. R. & Contractor, N. S. (2003). Theories of Communication Networks. New York: Oxford University Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=525",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 528E": {
+  "code": "VIA 528E",
+  "name": "Deep Learning for Business App",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yapay sinir ağları, geri yayılım, regresyon, sınıflandırma, derin öğrenme, evrişimli öğrenme, uzun kısa süreli bellek, transfer öğrenimi, iş uygulamaları Artificial neural networks, backpropagation, regression, classification, deep learning, convolutional learning, long short-term memory, transfer learning business applications",
+  "outcomes": [
+   "Yapay sinir ağlarının matematiksel altyapısının öğrenilmesi",
+   "Farklı derin öğrenme algoritmalarının çalışma prensibinin öğrenilmesi",
+   "Derin öğrenme algoritmalarının iş uygulamalarında kullanılması",
+   "Derin öğrenme kütüphanelerinin kullanılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay sinir ağlarında temel konular",
+   "Hafta 2 — Tek katmanlı yapay sinir ağları , Öğrenme Kuralları",
+   "Hafta 3 — Çok katmanlı yapay sinir ağları",
+   "Hafta 4 — Evrişimli yapay sinir ağları",
+   "Hafta 5 — Geri Beslemeli Öğrenme, Uzun-kısa dönmeli hafıza",
+   "Hafta 6 — Restricted Boltzman Makineleri",
+   "Hafta 7 — Derin Öğrenme ve İş Uygulamaları",
+   "Hafta 8 — Regresyon analizinde derin öğrenme",
+   "Hafta 9 — Sınıflandırma analizinde derin öğrenme",
+   "Hafta 10 — Tahminleme analizinde derin öğrenme",
+   "Hafta 11 — Yapılı olmayan veri için derin öğrenme"
+  ],
+  "textbooks": [
+   "I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016. http://www. deeplearningbook.org.",
+   "Aggarwal, Charu C. Neural networks and deep learning. Springer,, 2018.",
+   "Class notes and handouts"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=528",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 529E": {
+  "code": "VIA 529E",
+  "name": "Reinforce.Lear.for Busi.App.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders pekiştirilmiş öğrenme yöntemlerinin dayandığı; Markov karar süreçleri, değer fonksiyonları, Monte Carlo tahmini, dinamik programlama, zamansal fark öğrenme, uygunluk izleri ve fonksiyon yakınlaştırma gibi temel konularını içerir. Bununla birlikte, derin pekiştirilmiş öğrenme yöntemlerine de bir giriş yapar. Programlama ödevleri ve projeleri, çeşitli problemler için bu tekniklerin uygulanmasını ve test edilmesini sağlayacaktır. This course provides an introduction to some of the foundational ideas of reinforcement learning, including Markov decision processes, value functions, Monte Carlo estimation, dynamic programming, temporal difference learning, eligibility traces, and function approximation. However, we will also cover additional material drawn from the latest Deep Reinforcement Learning literature. Programming assignments and projects will require implementing and testing these techniques for various business problems.",
+  "outcomes": [
+   "Temel ve ileri pekiştirilmiş öğrenme yöntemleri konusunda bilgi",
+   "Pekiştirilmiş öğrenme yöntemlerinin dayandığı teorinin kavranması",
+   "Uygun yöntemlerin belirlenmesi",
+   "Karar problemlerinin formüle edilmesi, deneysel hesaplamaların yapılıp, sonuçların değerlendirilebilmesi yetkinliği",
+   "Güncel derin pekiştirilmiş öğrenme yöntemlerinin öğrenilmesi ve uygulanması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Pekiştirilmiş Öğrenme Temelleri",
+   "Hafta 2 — Çok Kollu Haydut Problemi",
+   "Hafta 3 — Markov Karar Süreçleri",
+   "Hafta 4 — Değer Yineleme ve Politika Yineleme Yöntemleri",
+   "Hafta 5 — Monte Carlo Yöntemleri",
+   "Hafta 6 — Q-Öğrenme ve SARSA",
+   "Hafta 7 — Uygunluk İzsürümü",
+   "Hafta 8 — Keşif ve Kıymetlendirme Yöntemleri",
+   "Hafta 9 — Fonksiyon Yakınlaştırma: Stokastik gradyan, Yarı gradyan TD Güncellemesi, En küçük kareler TD",
+   "Hafta 10 — İş Uygulamalarında Değer Temelli Derin Pekiştirilmiş Öğrenme: Q-network",
+   "Hafta 11 — Politika Temelli Derin Pekiştirilmiş Öğrenme : REINFORCE"
+  ],
+  "textbooks": [
+   "Reinforcement Learning: An Introduction (second edition). R. Sutton and A. Barto. MIT Press, 2018.",
+   "Bertsekas, Dimitri P. Approximate dynamic programming. Belmont: Athena scientific, 2012.",
+   "Powell, Warren B. Approximate Dynamic Programming: Solving the curses of dimensionality. Vol. 703. John Wiley & Sons, 2007.",
+   "Graesser, Laura, and Wah Loon Keng. Foundations of Deep Reinforcement Learning: Theory and Practice in Python. Addison-Wesley Professional, 2019."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=529",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "VIA 599": {
+  "code": "VIA 599",
+  "name": "Proje",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=599",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

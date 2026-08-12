@@ -1,0 +1,427 @@
+{
+ "GAM 501E": {
+  "code": "GAM 501E",
+  "name": "Introd.to Game Design&Devel.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Video oyunu tasarımı temelleri, oyunlar ve hedefler, oyun geliştirme, oyun mekanikleri, oyun tasarım dokümanı üretimi, oyun nesneleri, oyun nitelikleri, oyun durumları, oyun hareketleri, oyun becerileri, video oyunu arayüzü ve etkileşim, oyun hikayesi ve senaryo, video oyunlarında anlatı, oyuncu deneyimi, dolaylı denetim yöntemleri, video oyunu karakter tasarımı Basics of video game design, games and objectives, game development, game mechanics, creating game design document, game objects, game attributes, game states, game actions, game movements, game skills, video game interface and interaction, game story and scenario, narrative in video games, player experience, indirect control methods, video game character design",
+  "outcomes": [
+   "1. Ticari bir oyunun tasarımını analiz edebilir",
+   "2. Yeni bir oyunu tasarlayabilir",
+   "3. Oyun mekaniklerini tasarımda kullanabilir",
+   "4. Oyun dokümanı yazabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Oyunlar, Oyun Tasarımının Önemi ve Tarihçe",
+   "Hafta 2 — Oyunlar, Oyuncular ve Oyun Tasarımcısı: Tanımlar, Oyun Tasarımı Yöntemleri ve Hedefleri, Tasarım Becerileri",
+   "Hafta 3 — Oyun Mekanikleri",
+   "Hafta 4 — Oyun Mekanikleri: Nesneler, Nitelikler ve Durumlar",
+   "Hafta 5 — Oyun Mekanikleri: Mekan, Hareketler",
+   "Hafta 6 — Oyun Mekanikleri: Kurallar, Beceriler, Şans",
+   "Hafta 7 — Oyun Dengeleme, Bulmacalar",
+   "Hafta 8 — Seçilen Bir Oyunun Analizi",
+   "Hafta 9 — Oyun Tasarımı Dokümanları",
+   "Hafta 10 — Oyun Arayüzü ve Etkileşim, Hikaye, Oyuncu Deneyimi ve Dolaylı Denetim Yöntemleri",
+   "Hafta 11 — Karakter Tasarımı",
+   "Hafta 12 — Bir Oyun Önerisi ve Onun Oyun Dokümanı Taslağı",
+   "Hafta 13 — Oyun Geliştirme Süreçleri",
+   "Hafta 14 — Oyun Geliştirme ve Değerlendirme"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 502E": {
+  "code": "GAM 502E",
+  "name": "Essential Mathema.for Games",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Trigonametri, türev, integral, eşitlikler, vektörler, matrisler, temel geometrik elemanlar, dönüşümler, kuaterniyonlar, oyunlarda matematiksel temsiller. Trigonometry, derivatives, integrals, equation manipulation, vectors, matrices, basic geometric elements, transformations, quaternions, mathematical representations in games",
+  "outcomes": [
+   "1. Vektör ve matrisler üzerinde işlem yapabilme,",
+   "2. Temel matematiksel geometrik elemanları hesaplayabilme",
+   "3. Koordinat eksen dönüşümlerini yapabilme,",
+   "4. Oyunlar için gerekli matematik bilgilerini ilerletebilme becerilerini kazanır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Temel Matematik Bilgileri Tekrarı - Trigonometri",
+   "Hafta 2 — Temel Matematik Bilgileri Tekrarı - Türev, İntegral",
+   "Hafta 3 — Eşitlikler ve Temsiller",
+   "Hafta 4 — Vektörler",
+   "Hafta 5 — Matrisler",
+   "Hafta 6 — Temel Geometrik Elemanlar",
+   "Hafta 7 — Temel Geometrik Elemanların Uygulamaları",
+   "Hafta 8 — Dönüşümler",
+   "Hafta 9 — Dönüşüm Uygulamaları",
+   "Hafta 10 — Kuaterniyonlar",
+   "Hafta 11 — Hızlandırılmış Vektör Cebri",
+   "Hafta 12 — Bilgisayar Grafiğinde Matematiksel Temsiller",
+   "Hafta 13 — Oyunlarda Matematiksel Temsiller",
+   "Hafta 14 — Oyunlarda Matematiksel Temsil uygulamaları"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=502",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 504E": {
+  "code": "GAM 504E",
+  "name": "Ess.of 3D mo.for v.g.:f.de.im.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "3D modelleme, poligon modelleme, doku ve malzeme yaratma, obje modelleme, araç modelleme, karakter modelleme, mekan ve çevre modelleme, 3D oyun haritası tasarlama, oyun motoruna obje aktarma, 3D animasyon, 3D modellerde fizik, 3D modellerde betik, 3D modellerle etkileşim 3D modelling, polygon modelling, creating textures and materials, object modelling, vehicle modelling, character modelling, environment modelling, designing 3D game levels, importing assets to game engine, 3D animation, physics of 3D models, scripting 3D models, interaction with 3D models",
+  "outcomes": [
+   "1. Öklid uzayı ve koordinat sitemleri hakkında bilgi sahibidir.",
+   "2. Öklid uzayında 2D-3D ve 3D-2D dönüşümler yapabilir",
+   "3. Video oyununda kullanılmak üzere oyun haritası tasarımı yapabilir",
+   "4. Video oyununda kullanılmak üzere tasarlanmış bir oyun haritasını 3D modelleme programı ile modelleyebilir",
+   "5. Video oyununda kullanılmak üzere tasarlanmış ve bir modelleme programı ile modellenmiş bir oyun haritasını oyun motorunda işlevsel hale getirebilir",
+   "6. Bir oyun haritasına obje animasyonları ekleyebilir ve etkileşimli hale getirebilir",
+   "7. Bir oyun haritasına oyun atmosferinin gerektirdiği ışıklandırma nesnelerini ekleyebilir ve etkileşimli hale getirebilir",
+   "8. Bir oyun haritasına olay, çevre ve dış sesleri ekleyebilir ve etkileşimli hale getirebilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Dersin içeriği ve koordinasyon sistemine giriş",
+   "Hafta 2 — 2 boyuttan (2D) 3 boyuta (3D) geçiş",
+   "Hafta 3 — 3 boyuttan (3D) 2 boyuta (2D) geçiş",
+   "Hafta 4 — Ön tasarım ve modellemeye geçiş",
+   "Hafta 5 — 3D modelleme programı üzerinde hazırlanmış olan örnek haritalar üzerinde inceleme",
+   "Hafta 6 — Haritalar üzerinde malzeme ve doku çalışmaları",
+   "Hafta 7 — Harita ve malzeme/doku çalışmalarına nesne animasyonları ekleme",
+   "Hafta 8 — Hazırlanmış sahne modellerinin oyun motoruna aktarılmaya hazırlanması",
+   "Hafta 9 — Hazırlanmış sahne modellerinin oyun motoruna aktarılması",
+   "Hafta 10 — Oyun motoru içindeki modüller kullanılarak nesne animasyonları ve sonlu durum makineleri betiklerinin oluşturulması",
+   "Hafta 11 — Oyun motoru içinde ışıklandırma",
+   "Hafta 12 — Oyun motoru içinde seslendirme (olay sesleri, dış ses ve çevresel sesler) tanımlama",
+   "Hafta 13 — Tüm oyunun modellenmeye başlanması",
+   "Hafta 14 — Tüm oyunun modellenmesinin tamamlanması"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=504",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 505E": {
+  "code": "GAM 505E",
+  "name": "Programming for Games",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Değişkenler, Deyişler, Yönergeler, Koşullu ifadeler, Yinelemeler, İşlevler, Katarlar, Kütükler, Listeler, Sözlükler, Çokuzlular, Düzenli ifadeler, Veri görselleştirme, Sınıflar ve Kalıtım. Variables, Expressions, Statements, Conditionals, Iterations, Functions, Strings, Files, Lists, Dictionaries, Tuples, Regular expressions, Data visualization, Classes and Inheritance",
+  "outcomes": [
+   "1. Python ile program tasarlamak ve gerçeklemek",
+   "2. Oyun programlamaya uygun algoritma tasarlamak ve geliştirmek",
+   "3. Python programlama diline alışkanlık kazanmak",
+   "4. Veri yapılarını tanımak ve oyun programlamaya uygun veri yapılarını kullanmak",
+   "5. Sıkça kullanılan programlama tekniklerinde uzmanlaşmak becerilerini kazanır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Derleyici, yorumlayıcı, Geliştirme ortamının kurulumu ve yürütülmesi",
+   "Hafta 2 — Bir programlama dilinin değişkenleri, bir programlama dilinde deyişler, bir programlama dilinde yönergeler",
+   "Hafta 3 — Phyton programlama dilinde koşullu yürütme ile programlama",
+   "Hafta 4 — İşlev çağrıları kullanılarak kod tekrarının engellenmesi ve özyinelemenin kotarılması",
+   "Hafta 5 — Tekrarlayan işlerin üstesinden gelmek için yinelemenin kullanımı",
+   "Hafta 6 — Phyton programlama dilinin hazır Katar sınıfını kullanarak metin düzenleme",
+   "Hafta 7 — Phyton programlama dilinde kütük erişimi",
+   "Hafta 8 — Nesne Listeleri kullanarak verimli programlama teknikleri",
+   "Hafta 9 — Nesne Sözlükleri kullanarak verimli programlama teknikleri",
+   "Hafta 10 — Phyton dilinin hazır Çokuzluları ile herhangi nesneleri herhangi nesnelere eşleştirme",
+   "Hafta 11 — Düzenli ifadelerin kullanımıyla ileri düzeyde metin düzenleme",
+   "Hafta 12 — Phyton programlama dilinde veri görselleştirme teknikleri",
+   "Hafta 13 — Phyton programlama dilinde yeni bir sınıf tanımlamak ve kullanmak",
+   "Hafta 14 — Phyton programlama dilindeki hazır ya da kullanıcı tanımlı sınıfların kalıtımı"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=505",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 506EC": {
+  "code": "GAM 506EC",
+  "name": "Spec.Topics in Game Des.&Dev.",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Animasyon, Kullanıcı Deneyimi, Profesyonel Oyun ve Uyarı/Beğeni (Hype) yönetimi; Masaüstü Oyunları, Ses Mühendisliği, Oyun Üretimi, Oyunlarda özel efektler Oyun yayıncılığı, Bağımsız oyun üretimi, Oyun pazarlama Animation,User Experience, Professional Gaming and Hype Management; Board Games, Sound Engineering, Game Production, Special Effects in Games,Game Publishing, Independent Game Production, Game Marketing",
+  "outcomes": [
+   "1. Oyun piyasasının beklentileri ve sorunları ile ilgili bilgi sahibi olurlar",
+   "2. Oyun piyasasından paydaşlarla oyun tasarımı ve geliştirme için özel konuları incelerler. becerilerini kazanır.",
+   "-",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Animasyon",
+   "Hafta 2 — Kullanıcı Deneyimi",
+   "Hafta 3 — Profesyonel Oyun ve Uyarı/Beğeni (Hype) yönetimi",
+   "Hafta 4 — Masaüstü Oyunları",
+   "Hafta 5 — Ses Mühendisliği",
+   "Hafta 6 — Oyun Üretimi",
+   "Hafta 8 — Oyunlarda Özel Efektler",
+   "Hafta 9 — Oyun Yayıncılığı",
+   "Hafta 10 — Bağımsız Oyun Üretimi",
+   "Hafta 11 — Bağımsız Oyun Üretiminde İleri Teknikler",
+   "Hafta 12 — Oyun Pazarlama",
+   "Hafta 13 — Oyun Pazarlama Uygulamaları",
+   "Hafta 14 — Oyun Tasarımı ve Geliştirme Uygulamaları ve Değerlendirmeler"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=506",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 515E": {
+  "code": "GAM 515E",
+  "name": "Non-digital Games&Narration",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Oyunların sınıflandırılma teknikleri, Dijital olmayan oyunların incelenmesi (Tümleşik Oyunlar, Şans Oyunları, Stratejik Oyunlar, Karma Oyunlar), Hikaye yaratma (Olay Dizisi, Bakış Açısı, Stil, Oyun için hikaye yazımı) Classification methods for games, the analysis of non-digital games: combinatorial games, games of chance, strategic games, mixed games, narration: sequence of events, focus of attention, style, narration for games",
+  "outcomes": [
+   "1. Farklı oyun sınıflandırmalarını anlama",
+   "2. Oyun yapısı tasarlama",
+   "3. Hikaye yaratma becerilerini kazanır.",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Oyunların sınıflandırılma teknikleri",
+   "Hafta 2 — Dijital olmayan oyunların incelenmesi: Tümleşik Oyunlar",
+   "Hafta 3 — Dijital olmayan oyunların incelenmesi: Şans Oyunları",
+   "Hafta 4 — Dijital olmayan oyunların incelenmesi: Stratejik Oyunlar",
+   "Hafta 5 — Dijital olmayan oyunların incelenmesi: Karma Oyunlar",
+   "Hafta 6 — Hikaye yaratmaya giriş: Olay Dizisi",
+   "Hafta 7 — Hikaye yaratmaya giriş: Bakış Açısı",
+   "Hafta 8 — Hikaye yaratmaya giriş: Stil",
+   "Hafta 9 — Oyun için hikaye yazımı: Taslak Hazırlığı",
+   "Hafta 10 — Oyun için hikaye yazımı: Karakterlerin Yaratılışı",
+   "Hafta 11 — Oyun için hikaye yazımı: Hikaye/Oyun Mekaniği İlişkisi",
+   "Hafta 12 — Oyun için hikaye yazımı: Lineer Olmayan Hikayeler",
+   "Hafta 13 — Sunum",
+   "Hafta 14 — Sunum"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=515",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 516E": {
+  "code": "GAM 516E",
+  "name": "Serious Games",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ciddi oyunların temelleri, ciddi oyun geliştirme, eğitim ve öğretimde ciddi oyunlar, sağlık ve tedavi için ciddi oyunlar, politik ve sanatsal ciddi oyunlar, askeriye ve savunma sanayi için ciddi oyunlar, tasarım ölçütleri, geliştirme ölçütleri, eğitim simülasyonları Basics of serious games, development of serious games, serious games for education and training, serious games for healthcare, political and artistic serious games, serious games for military and defense industry, design issues, development issues, training simulations",
+  "outcomes": [
+   "Ciddi oyunları tanımlayabilir",
+   "Video oyunları ve ciddi oyunlar arasındaki gereksinim analizi ve tasarım uygulamalarını belirleyebilir.",
+   ". Ciddi oyun ve simülasyonlarda yaygın olarak kullanılan temel araçları ve algoritmaları anlayabilir ve geliştirebilir.",
+   "Askeri, devlet kurumlarına yönelik, eğitimsel, işbirlikçi, sağlık sektörüne yönelik, ve politik ciddi oyunları tanımlayabilir.",
+   "Ulusal ölçekte tamamlanan veya tasarımı devam eden ciddi oyun uygulamalarını tanır.",
+   "Ulusal ölçekte olası ciddi oyun uygulamaları tasarlayabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ciddi Oyun Tasarımı ve Geliştirme",
+   "Hafta 2 — Ciddi Oyunlar",
+   "Hafta 3 — Tasarım Ölçütleri",
+   "Hafta 4 — Geliştirme Ölçütleri",
+   "Hafta 5 — Askeriye ve Devlet Kurumlarına Yönelik Ciddi Oyunlar",
+   "Hafta 6 — Eğitimsel ve İşbirlikçi Ciddi Oyunlar",
+   "Hafta 7 — Sağlık Sektörüne Yönelik Ciddi Oyunlar",
+   "Hafta 8 — Politik, Dinsel ve Sanatsal Ciddi Oyunlar",
+   "Hafta 9 — Ciddi Oyunların Ara Dönem Gözden Geçirilmesi",
+   "Hafta 10 — Ulusal Ciddi Oyun Uygulamaları",
+   "Hafta 11 — Gelişmiş Ulusal Ciddi Oyun Uygulamaları",
+   "Hafta 12 — Endüstri Semineri: Ciddi Oyunlar",
+   "Hafta 13 — Endüstri Semineri: Eğitim Simülasyonları",
+   "Hafta 14 — Proje Gösterim ve Sunuşları"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=516",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 517E": {
+  "code": "GAM 517E",
+  "name": "3D Perception",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "3D veri; gerçek zamanlı RGBD kameralar, stereo, hareket tabanlı yapısal algılama, lazer tarayıcı; arttırılmış gerçeklik, duygusal zenginleştirilmesi, ve robotik; temel 3B algılama kavramları, dönüştürmeler ve tahmin etme teorisi; yerleştirme, takip etme, bölütleme, tanıma 3D data; real-time using RGBD cameras, stereo, depth-from-motion, laser scanners; augmented reality, sensory augmentation, and robotics; 3D perception, transforms and estimation, registration, tracking, segmentation, recognition",
+  "outcomes": [
+   "1. 3D gösterme ve dönüştürme",
+   "2. Tahmin etme teorisi.",
+   "3. Kamera teori ve kalibrasyon.",
+   "4. Yerleştirme, poz tespit etme ve takip etme.",
+   "5. Bölütleme ve tanıma",
+   "6. Temel makine öğrenme",
+   "7. Haritalama ve modelleme",
+   "8. 3D algılama için yazılım geliştirme.",
+   "9. Ekip çalışması ve işbirlikçi geliştirme.",
+   "10. Teknik iletişim ve sunum."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — 3D algılamanın uygulamaları ve ilkeleri.",
+   "Hafta 2 — 3D geometri dönüştürmeler ve temsil.",
+   "Hafta 3 — Kameralar ve sensörler.",
+   "Hafta 4 — Ayarlama/kalibrasyon",
+   "Hafta 5 — Yerleştirme.",
+   "Hafta 6 — Tahmin etme teorisi",
+   "Hafta 7 — Kamera poz tespit etme ve takip etme.",
+   "Hafta 8 — Nesne poz tespit etme ve takip etme",
+   "Hafta 9 — Bölütleme ve tanıma.",
+   "Hafta 10 — Haritalama ve modelleme.",
+   "Hafta 11 — 3D algılama için makine öğrenme.",
+   "Hafta 12 — Arttırılmış gerçeklik uygulamaları.",
+   "Hafta 13 — Duyusal zenginleştirime uygulamaları",
+   "Hafta 14 — Robot uygulamaları."
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=517",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 520E": {
+  "code": "GAM 520E",
+  "name": "Guided Research",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bir öğretim üyesinin gözetiminde, öğretim üyesi ile yapılan haftalık toplantılar esnasında öğretim üyesinin uygun gördüğü kendi uzmanlık alanındaki bilimsel yayınları incelenmesi; Haftalık toplantılarda incelenen yayınların analizinin ve bu gelecekte izlenebilecek potansiyel araştırma doğrultularının öğretim üyesi ile bir tartışma ortamında paylaşılması; Her 3-4 haftada bir edinilen birikimin, bilimsel alandaki önemli sonuçların ve potansiyel ilerleme doğrultularının özetlendiği kısa bir sunumu öğretim üyesine yapılması; Dönem sonunda yapılan bütün çalışmaların özetlendiği bir dönem raporunun gözetmen öğretim üyesi ve anabilim dalına verilmesi Under the supervision of a faculty member, in weekly meetings, the investigation of scholarly publications that are in a research area of interest to the faculty member and recommended by the faculty member; The analysis of these publications as well as potential directions of research for the future are to be shared with the faculty member in these meetings; Every 3-4 weeks, a concise presentation of the acquired knowledge and background, significant results in the research area as well as potential directions of research is to be made to the supervising faculty member; A term report that summarizes the work carried out during the semester is to be submitted to the supervising faculty member and the department responsible from the program",
+  "outcomes": [
+   "1. Bilimsel yayınlardan bilgi birikimi edinme",
+   "2. Bilimsel yayınları analiz yeteneği.",
+   "3. Bilimsel yayınları yorumlayarak yeni araştırma konu ve yönleri keşfedebilme yeteneği",
+   "4. Alanda uzman bir kişi ile bilimsel tartışma ve iletişim kurabilme yeteneği",
+   "5. Bilimsel sunuş becerisi",
+   "6. Teknik rapor hazırlama becerisi. becerilerini kazanır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Haftalık toplantı (İncelenecek konu ve yayınların belirlenmesi)",
+   "Hafta 2 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 3 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 4 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 5 — Sunum 1",
+   "Hafta 6 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 7 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 8 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 9 — Sunum 2",
+   "Hafta 10 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 11 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 12 — Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+   "Hafta 13 — Sunum 3",
+   "Hafta 14 — Haftalık toplantı ve raporun teslimi"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=520",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "GAM 596E": {
+  "code": "GAM 596E",
+  "name": "Scien.Rese., Ethic&Seminar",
+  "language": "English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi; Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi; Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi. Information about the successful presentation techniques and requirements; Preparation steps for presentation, importance of communication in presentations; Usage of voice and gestures in presentations. The importance of timing in presentation, The impact of visualisation, selection and usage of visual aids, the management of question-answer section.",
+  "outcomes": [
+   "Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma.",
+   "Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenme.",
+   "Sunum esnasında iletişimin önemini kavrama.",
+   "Topluluk önünde rahat konuşma becerisine sahip olma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi.",
+   "Hafta 2 — Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 3 — 3 Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi.",
+   "Hafta 4 — Dönem ödevi sunumu-1",
+   "Hafta 5 — Dönem ödevi sunumu-2",
+   "Hafta 6 — Dönem ödevi sunumu-3",
+   "Hafta 7 — Dönem ödevi sunumu-4",
+   "Hafta 8 — Dönem ödevi sunumu-5",
+   "Hafta 9 — Dönem ödevi sunumu-6",
+   "Hafta 10 — Dönem ödevi sunumu-7",
+   "Hafta 11 — Dönem ödevi sunumu-8",
+   "Hafta 12 — Dönem ödevi sunumu-9",
+   "Hafta 13 — Dönem ödevi sunumu-10",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Martin Manser, Çeviri: A. Babacan, Sunum Sırları, NTV yayınları, 2014",
+   "Andrew Bradbury, Çeviri: H.Elçi, \"Başarılı Sunum Teknikleri\", Kaizen Yayıncılık, Ekim 2006.",
+   "Lazar, J., Feng, J. H., & Hochheiser, H. (2010). Research methods in human-computer interaction. John Wiley & Sons."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

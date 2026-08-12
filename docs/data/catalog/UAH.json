@@ -1,0 +1,415 @@
+{
+ "UAH 513E": {
+  "code": "UAH 513E",
+  "name": "Fourier Ser.&Sınır Değer Prob.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders, Fourier serileri ve Fourier dönüşümleri üzerine kuramsal ve uygulamalı bir temel sunar. Sürekli ve ayrık sinyallerin zaman-frekans analizinde kullanılan Fourier yöntemlerinin matematiksel esasları ayrıntılı olarak incelenir. Ders kapsamında ortogonal fonksiyonlar, Fourier sinüs ve kosinüs serileri, sonlu Fourier serileri, kompleks Fourier serileri, Fourier integrali ve özellikleri ele alınır. Ayrıca, genelleşmiş fonksiyonlar (delta, birim basamak vb.) ile bu fonksiyonların Fourier dönüşümleri de kapsamlı biçimde işlenir. This course provides a comprehensive theoretical and applied foundation in Fourier series and Fourier transforms. It focuses on the mathematical principles underlying Fourier methods used in time-frequency analysis of continuous and discrete signals. Topics include orthogonal functions, Fourier sine and cosine series, finite and complex Fourier series, and the Fourier integral with its key properties. The course also covers generalized functions, such as the Dirac delta and unit step functions, and their Fourier transforms in detail.",
+  "outcomes": [
+   "Sürekli ve ayrık Fourier dönüşümlerinin tanımını yapar ve uygulamalarını gerçekleştirir.",
+   "Zaman ve frekans bölgeleri arasındaki ilişkiyi açıklar ve dönüştürme işlemleri yapar.",
+   "Genelleşmiş fonksiyonları (delta, birim basamak vb.) ve bunların Fourier dönüşümlerini analiz eder.",
+   "Konvolüsyon, türev alma, Parseval teoremi gibi Fourier dönüşümü özelliklerini uygular.",
+   "Diferansiyel denklemleri ve sınır değer problemlerini Fourier teknikleriyle çözer.",
+   "DFT ve FFT algoritmalarını kullanarak sayısal sinyal işleme yapar.",
+   "Fourier analizini mühendislik ve bilimsel problemlere entegre eder, gerçek dünyaya uyarlayabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Fourier analizi temel kavramları ve sürekli/ayrık dönüşümlerin tanımları",
+   "Hafta 2 — Sürekli zaman sinyallerinde Fourier dönüşümü ve temel özellikleri",
+   "Hafta 3 — Ayrık zamanlı sinyallerde DFT tanımı ve örnekleme",
+   "Hafta 4 — Zaman ve frekans bölgeleri arasındaki ilişki ve dönüşüm işlemleri",
+   "Hafta 5 — Genelleşmiş fonksiyonlar ve Fourier dönüşümü analizi",
+   "Hafta 6 — Konvolüsyon, türev alma ve Parseval teoremi gibi Fourier dönüşümü özellikleri",
+   "Hafta 7 — Diferansiyel denklemlerin Fourier dönüşümüyle çözümü",
+   "Hafta 8 — Ara sınav ve uygulamalı problem çözümü",
+   "Hafta 9 — DFT ve FFT algoritmaları ve sayısal Fourier dönüşümü",
+   "Hafta 10 — Sayısal sinyal işleme uygulamaları",
+   "Hafta 11 — Fourier analizinin mühendislik problemlerine entegrasyonu",
+   "Hafta 12 — İleri dönüşüm teknikleri: pencereleme ve kısa zaman Fourier dönüşümü (STFT) tanıtımı",
+   "Hafta 13 — Proje çalışması: Fourier tekniklerinin gerçek problemlerde kullanımı",
+   "Hafta 14 — Final sınavı ve genel ders değerlendirmesi"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=513",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UAH 515E": {
+  "code": "UAH 515E",
+  "name": "Appli.Radar Re.Sen.for Envi.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=515",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UAH 525E": {
+  "code": "UAH 525E",
+  "name": "Principles of Remote Sensing",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Uzaktan algılamanın fiziksel temelleri, elektromanyetik enerji ve elektromanyetik enerjinin atmosfer ve yüzeyde bulunduğu etkileşimler hakkında bilgi verilecektir. Uydu görüntüsü temin etmede kullanılan uydu, algılayıcı ve yer segmentleri hakkında bilgi verilip, uzaktan algılama sistemlerinden elde edilen dijital uydu görüntüleri ve bu görüntülerin özelliklerini belirleyen farklı çözünürlük kavramları aktarılacaktır. Uydu görüntülerindeki distorsiyonların giderilmesi ve bu verilerden bilgi çıkartabilmeye yönelik temel görüntü işleme teknikleri hakkında bilgi verilecektir. Principles of remote sensing, electromagnetic energy (EME) and interactions of EME with atmosphere and surface will be explained. The basic technical principles of satellites, sensors and ground segments in data collection and the properties of the available data from these systems will be described. The principles of digital image processing techniques to remove distortions available on remotely sensed data and information extraction methods will be explained.",
+  "outcomes": [
+   "Uzaktan algılamanın fiziksel temellerini bilir",
+   "Farklı disiplindeki çalışmalar için kullanılması gereken uzaktan algılama verilerini seçer",
+   "Farklı algılayıcı sistemlerinden gelen uzaktan algılama verilerini nitelik ve nicelik yönünden kıyaslayabilir",
+   "Uydu görüntülerinin ön işlemesindeki yöntemleri karşılaştırıp, uygun olan yöntemi seçer",
+   "Görüntüden anlamlı bilgi üretmek amacıyla kullanılabilecek yöntemleri karşılaştırır ve uygun olan yöntemi seçer",
+   "Uydu görüntülerini görsel yorumlama ve dijital görüntü işleme yöntemleri ile analiz eder",
+   "Uzaktan algılama verilerinden ürettiği bilgilerin doğruluğunu analiz eder",
+   "Uzaktan algılama verilerini çevresel problemleri belirlemek ve çözmek için kullanabilir ve bu Problemleri çözmede kullanacağı yöntemleri yazılı ve sözlü olarak sunar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Electromanyetik enerji temelleri ve elektromanyetik spektrum",
+   "Hafta 2 — Elektromanyetik enerjinin atmosfer ve dünya yüzeyi ile etkileşimleri",
+   "Hafta 3 — Spektral yansıtım: Su, toprak ve bitki örtüsünün spectral eğrileri",
+   "Hafta 4 — Dijital görüntüler, çözünürlük kavramı",
+   "Hafta 5 — Uydu platformları, yörüngeler, algılayıcılar ve tarama modları",
+   "Hafta 6 — Görsel yorumlama",
+   "Hafta 7 — Radyometrik hatalar ve düzeltmeleri",
+   "Hafta 8 — Atmosferik düzeltme",
+   "Hafta 9 — Optik görüntülerin topografik düzeltmesi",
+   "Hafta 10 — Geometrik hatalar ve rektifikasyon",
+   "Hafta 11 — Görüntü zenginleştirme",
+   "Hafta 12 — Piksel tabanlı sınıflandırma yöntemleri",
+   "Hafta 13 — Nesne tabanlı sınıflandırma yöntemleri ve doğruluk analizi",
+   "Hafta 14 — Dönem ödevi sunumları"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=525",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UAH 533": {
+  "code": "UAH 533",
+  "name": "Radar&Mikrodalga ile Uzak.Al.",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Radar sitemleri, genel radar çalışma prensibi, radar denklemi, radar hedef kesiti, sürekli dalga radarı, doppler radarı, tipik bir darbe-doppler radar blok diyagramı, radar antenleri, radar dalga propagasyonu, yere nüfuz eden darbe/frekans atlamalı radar (Ground-penetrating radar) sistemi, RF donanım ve anten tasarımları Radar systems, radar operating principles, radar equation, radar cross-section, CW radar, Doppler radar, typical pulse-Doppler radar block diagram, radar antennas, radar wave propagation, ground-penetrating impulse and stepped-frequency radar, RF hardware and antenna designs.",
+  "outcomes": [
+   "Öğrenciler, radar sistemleri hakkında bilgi sahibi olur.",
+   "Öğrenciler, darbeli radar, Sürekli dalga radarı, Doppler radarı ve hareketli hedef göstergesinin çalışma ilkelerini öğrenir.",
+   "Öğrenciler, radar sisteminde hedef menzilini ve hızını hesaplama becerisi kazanır.",
+   "Öğrenciler, radar sisteminin donanımsal bileşenleri hakkında genel bilgi sahibi olur.",
+   "Öğrenciler, radar sistemlerinin belli başlı kullanım alanları ve teknikleri hakkında bilgi sahibi olur."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Radarın çalışma ilkesi, Radarın tarihçesi, Elektromanyetik spektrum",
+   "Hafta 2 — Elektromanyetik dalga teorisinin kısa özeti",
+   "Hafta 3 — Radar denklemi ve Darbeli radarda menzil hesabı",
+   "Hafta 4 — Radar kesit alanı kavramı",
+   "Hafta 5 — Karmaşık şekilli hedeflerin radar kesit alanı benzetim yöntemleri hakkında genel bilgi.",
+   "Hafta 6 — Sürekli dalga radarı",
+   "Hafta 7 — Ara Sınav 1",
+   "Hafta 8 — Kargaşa, Darbe Doppler radarı, Hareketli hedef göstergesi",
+   "Hafta 9 — Radar dalga şekli analizi ve alçak geçiren - bant geçiren işaretler",
+   "Hafta 10 — Uyumlu filtre ve radar belirsizlik fonksiyonu.",
+   "Hafta 11 — Radar dalga propagasyonu, Atmosferik etkiler",
+   "Hafta 12 — Radar antenleri",
+   "Hafta 13 — Hedef izleme",
+   "Hafta 14 — Radarların kullanım alanları ve kullanım teknikleri"
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=533",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UAH 596": {
+  "code": "UAH 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UAH 614E": {
+  "code": "UAH 614E",
+  "name": "Guided Research",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders sırasında öğrenciler seçtikleri alanda araştırma yapacaklardır. Seçilen konuda literatür araştırması ile derinlemesine bilgi sahibi olacak ve bu araştırmadan kazandıkları deneyim ile bir konferans veya dergiye yayın hazırlamayı öğreneceklerdir. Her 3-4 haftada bir elde ettikleri bilgiyi, araştırma alanındaki önemli sonuçları ve araştırmanın ilerleyeceği alanları içeren kısa bir rapor paylaşacaklardır. Yarıyıl boyunca yaptıkları çalışmayı özetleyen dönem sonu raporu ise ders verenler ve öğrencilere verilecek ve sınıfta sunulacaktır. During the course, students carry out research activities on selected research areas. They both gain a deeper knowledge on the selected areas and have experience on how to carry out research on the field from literature survey to writing a manuscript for a conference or journal paper. Every 3-4 weeks, a concise report of the acquired knowledge and background, significant results in the research area as well as potential directions of research is to be shared. A term report that summarizes the work carried out during the semestre is to be submitted and presented to the lecturers and other students in class.",
+  "outcomes": [
+   "Literatür araştırması yapabilme yeteneği",
+   "Güncel yayınlardan yeni araştırma konuları çıkarma yeteneği",
+   "Alanındaki bir uzmanla bilimsel tartışma yapabilme yeteneği",
+   "Bilimsel sunum yapabilme yeteneği",
+   "Teknik rapor yazma yeteneği"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Araştırma alanlarını belirleme",
+   "Hafta 3 — Literatür araştırması",
+   "Hafta 4 — Literatür araştırması",
+   "Hafta 5 — Ara rapor I",
+   "Hafta 6 — Konu çalışması",
+   "Hafta 7 — Konu çalışması",
+   "Hafta 8 — Ara rapor II",
+   "Hafta 9 — Konu çalışması",
+   "Hafta 10 — Konu çalışması",
+   "Hafta 11 — Ara rapor III",
+   "Hafta 12 — Konu çalışması",
+   "Hafta 13 — Konu çalışması",
+   "Hafta 14 — Sunumlar"
+  ],
+  "textbooks": [
+   "Seçilen araştırma konusu ile ilgili güncel yayın ve kitaplar (Current journals and books related by the selected research area)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=614",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UAH 636": {
+  "code": "UAH 636",
+  "name": "Uzaktan Algılamada Özel Uygul.",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş, Uzaktan Algılamanın temellerini özetlemek, Uzaktan algılamada veri akışı ve entegrasyonu, Uzaktan algılamada kullanılan platformlar ve algılayıcılar, Farklı bilimlerde uzaktan algılama uygulamaları, Yeni algılayıcılar, yöntemler, methodlar, algoritmalar ve uygulama alanları, Ödevlerin değerlendirilmesi. Introduction, To summarize the fundamentals of Remote Sensing, Data acquisition and integration in remote sensing, Remote sensing platforms and sensors, Remote sensing applications in different science, New satellite sensor data, methods, algorithms and applications. Evaluation and discussions of Homework",
+  "outcomes": [
+   "Uzaktan algılanmış verileri amacına ve kapsamına uygun olarak seçilmesi",
+   "Uzaktan Algılamada güncel konuların bilinmesi ve yeni araştırmalar",
+   "İleri görüntü işleme yöntemlerinin bilinmesi ve uygulama alanlarının araştırılması",
+   "İleri araştırmalarda Uzaktan Algılama verilerini kullanabilme",
+   "Konuya ilişkin ileri düzeyde uygulamalar geliştirebilme ve sonuçları tartışabilme",
+   "Uzaktan algılanmış verileri amacına ve kapsamına uygun olarak seçilmesi",
+   "Uzaktan Algılamada güncel konuların bilinmesi ve yeni araştırmalar",
+   "İleri görüntü işleme yöntemlerinin bilinmesi ve uygulama alanlarının araştırılması",
+   "İleri araştırmalarda Uzaktan Algılama verilerini kullanabilme",
+   "Konuya ilişkin ileri düzeyde uygulamalar geliştirebilme ve sonuçları tartışabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Uzaktan Algılamada Özel Konular",
+   "Hafta 2 — Uzaktan algılama ile atmosfer arasındaki ilişki",
+   "Hafta 3 — Hidrosfer ve Uzaktan Algılama",
+   "Hafta 4 — Afet Yönetiminde Uzaktan Algılama",
+   "Hafta 5 — Yüzey Sıcaklığı ve Isıl Kızıl ötesi emissiviti",
+   "Hafta 6 — Kutupların izlenmesi ve iklim değişimi",
+   "Hafta 7 — Kensel Uzaktan Algılama",
+   "Hafta 8 — LİDAR ve Uygulamaları",
+   "Hafta 9 — Interfrometri ve Uygulamaları",
+   "Hafta 10 — Bioçeşitlilik ve Uzaktan Algılama",
+   "Hafta 11 — GRACE algılayıcıları ve Uygulamaları",
+   "Hafta 12 — Ödev Sunumları ve Tartışma",
+   "Hafta 13 — Ödev Sunumları ve Tartışma",
+   "Hafta 14 — Ödev Sunumları ve Tartışma"
+  ],
+  "textbooks": [
+   "Liang, S., Li, X., Wang, J., “Advanced Remote Sensing”,Terrestrial Information Extraction and Applications, ISBN 9780123859549, Elsevier, c2012.",
+   "Wynne, J.B., Campbell, R.H., “Introduction to Remote Sensing, Fifth Edition”, ISBN 978-1609181765, The Guilfor Press, c2011.",
+   "Joseph, G. ” Fundamentals of Remote Sensing”, ISBN 8173715351, Universities Press (India) Private Limited, c 2005.",
+   "Liang, S., Li, X., Wang, J., “Advanced Remote Sensing”,Terrestrial Information Extraction and Applications, ISBN 9780123859549, Elsevier, c2012.",
+   "Wynne, J.B., Campbell, R.H., “Introduction to Remote Sensing, Fifth Edition”, ISBN 978-1609181765, The Guilfor Press, c2011.",
+   "Joseph, G. ” Fundamentals of Remote Sensing”, ISBN 8173715351, Universities Press (India) Private Limited, c 2005."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=636",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UAH 641": {
+  "code": "UAH 641",
+  "name": "Fotogrametri&Foto Yorumlama",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Harita ve harita üretim teknikleri, Fotogrametri ile ilgili tanımlar, Fotogrametrinin kısa tarihçesi, Fotogrametrik ürünlerin biçim ve formatları, Fotogrametrik yöntemlerin sınıflandırılması, Fotogrametride kullanılan kamera türleri, kamera kalibrasyonu, Fotoyorumlama, Uzaktan Algılamanın fotoyorumlama amaçlı kullanımı, Görsel yorumlama elemanları (ton, şekil, boyut, desen, gölge vs), Fotogrametrinin ve fotoyorumlamanın kullanıldığı farklı çalışmalar. Maps and map production techniques, photogrammetry and related definitions, brief history of Photogrammetry, forms and formats of photogrammetric products, classification of photogrammetric methods, types of cameras used in photogrammetry, camera calibration, Photo Interpretation, Using Remote Sensing for photointerpretation, the visual interpretation elements (tone, shape, size , pattern, shadow, etc.), different applications which use photogrammetry and photo interpretation.",
+  "outcomes": [
+   "Fotogrametri ve Fotoyorumlama da kullanılan kavram ve yöntemleri kullanarak Fotoğraflar ve uydu görüntülerinden yorumlama ve bilgi edinilmesini gerçekleştirebilir",
+   "Kullanılan yöntemleri araştırıp sorgulayabilir ve bilimsel kriterlere uygun sonuçlar elde edebilir,",
+   "Fotogrametri ve fotoyorumlama konularında farklı disiplinler arası çalışmaları organize edebilir ve gerekli entegrasyonu sağlayabilir.",
+   "Alanında problem süreçlerini analiz etme ve uygun çözümler bulabilme becerisini geliştirebilir.",
+   "Teorik bilgilerin desteğiyle proje hazırlama, yönetme, yapma ve sunma bilgisi kazandırılabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, harita ve harita üretim teknikleri, fotogrametrinin tarihsel gelişimi, fotogrametri ile ilgili tanımlar.",
+   "Hafta 2 — Fotogrametrik ürünlerin biçim ve formatları, fotogrametrik yöntemlerin sınıflandırılması, fotogrametrinin temel ilkeleri.",
+   "Hafta 3 — Fotoğraf, fotogrametride kullanılan kamera türleri, kamera kalibrasyonu, stereoskopik (üç boyutlu) görüş ve ölçme, cep stereoskoplarıyla uygulama.",
+   "Hafta 4 — Fotogrametrinin genel olarak kullanım alanları, fotogrametri ve ilişkili disiplinler, yersel fotogrametri ve kullanım alanları .",
+   "Hafta 5 — Fotoyorumlamanın tarihi ve geçmişten günümüze kullanım alanları.",
+   "Hafta 6 — Görsel yorumlama elemanları.",
+   "Hafta 7 — Görsel yorumlama elemanları ve yorumlama anahtarları.",
+   "Hafta 8 — Uzaktan algılamanın fotoyorumlama ile ilişkisi ve uydu görüntülerine uygulanan ön işlemler.",
+   "Hafta 9 — Görüntü zenginleştirme teknikleri, görüntü dönüşümleri, sınıflandırma teknikleri, sınıflandırma doğruluğunun belirlenmesi, sınıflandırma sonuçlarının fotoyorumlama amaçlı kullanımı.",
+   "Hafta 10 — Anaglif görüntüler yardımıyla üç boyutlu veri elde etme uygulaması ve sonuçlarını değerlendirme.",
+   "Hafta 11 — Farklı kaynaklardan toplanan görüntüler ve özellikleri (Kameralar ve hava fotoğrafı alımı, multispektral algılama, termal algılama, hyperspektral uydu görüntüleri, lazer ve LIDAR verileri).",
+   "Hafta 12 — Fotoyorumlamanın farklı veri kaynakları kullanılarak farklı alanlarda uygulanabilirliğinin irdelenmesi.",
+   "Hafta 13 — Suç analizinde ve jeolojik çalışmalarda görüntü yorumlama tekniklerinin kullanılması, arkeolojik çalışmalarda fotoyorumlama tekniklerinin kullanılması, bitki örtüsünün belirlenmesinde görüntü işleme tekniklerinin kullanılması.",
+   "Hafta 14 — Farklı kaynaklardan gelen iki ayrı görüntünün fotoyorumlama amaçlı kullanabilmesi için sahip olması gereken özellikler nelerdir, Fotoyorumlama ile diğer yöntemlerin maliyet ve zaman açısından irdelenmesi, sonuçların tartışılması."
+  ],
+  "textbooks": [
+   "Fotogrametri Cilt 1 K. Krauss (çeviri: o. Altan, S.Külür, G.Toz, H. Demirel, z.Duran, M. Çelikoyan, 2007)",
+   "K. B. Atkinson, Close Range Photogrammetry and Machine Vision, 1996, Whitles Publishing Company, ISBN: 1-870-325-46-X.",
+   "K. B. Atkinson, Close Range Photogrammetry and Machine Vision, 1996, Whitles Publishing Company, ISBN: 1-870-325-46-X.",
+   "H.M. Karara (Editor) Non Topographic Photogrammetry, ASPRS.",
+   "Lillesand, T., Kiefer, R. W., Chipman, J. (2008) Remote Sensing and Image Interpretation, 6. Baskı, Wiley."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=641",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "UAH 696": {
+  "code": "UAH 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

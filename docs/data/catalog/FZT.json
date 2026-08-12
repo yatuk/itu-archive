@@ -1,0 +1,44 @@
+{
+ "FZT 203E": {
+  "code": "FZT 203E",
+  "name": "Fizikte Gruplar Teorisi",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "Sonlu ve sonsuz gruplar, permütasyon grupları, dihedral gruplar, grup etkileri ve temsil teorisine giriş. Matris temsilleri, indirgenemez temsiller, karakterler. Sürekli gruplar ve Lie cebirleri: SO(2), SO(3), SU(2). Simetriler ve korunum yasaları (Noether Teoremi). SO(N) ve SU(N) gruplarına giriş. Lorentz ve Poincaré gruplarının temelleri. Simetri kavramının klasik mekanik, parçacık fiziği ve katıhal fiziğindeki rolü. Finite and infinite groups, permutation and dihedral groups, group actions and basic representation theory. Matrix representations, irreducible representations, characters. Continuous groups and Lie algebras: SO(2), SO(3), SU(2). Fundamentals of Lorentz and Poincaré groups. Symmetry in classical mechanics, particle physics and solid-state physics.",
+  "outcomes": [
+   "Grup, altgrup, homomorfizma ve koset kavramlarını tanımlar",
+   "Permütasyon ve dihedral grupların yapısını ifade eder.",
+   "Matris temsillerini ve karakter tablolarını kullanabilir",
+   "Lie grupları ve Lie cebirleri arasındaki ilişkiyi kavrar",
+   "Simetri ve korunmuş büyüklük kavramlarını fiziksel örneklerle bağlantılandırabilir",
+   "SO(3) ve SU(2) örnekleriyle açısal momentum kavramına temel oluşturur."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Simetri kavramına giriş, temel matematiksel yapılar.",
+   "Hafta 2 — Grup tanımı, altgruplar, kosetler, Lagrange teoremi.",
+   "Hafta 3 — Permütasyon grupları, S_n ve A_n.",
+   "Hafta 4 — Grup etkileri, dihedral gruplar ve fiziksel simetriler.",
+   "Hafta 5 — Matris temsilleri ve Schur lemması.",
+   "Hafta 6 — Karakter kavramı, basit gruplar için karakter tabloları.",
+   "Hafta 7 — Doğrudan çarpım ve semidirekt çarpım tanıtımı.",
+   "Hafta 8 — Sürekli gruplara giriş: SO(2), SO(3).",
+   "Hafta 9 — SO(3) Lie cebiri, komütasyon ilişkileri.",
+   "Hafta 10 — SU(2) grubu ve SO(3) ile ilişkisi.",
+   "Hafta 11 — Lie cebirleri ve jeneratörler.",
+   "Hafta 12 — Katıhal fiziğinde nokta grupları.",
+   "Hafta 13 — Simetri ve korunmuş nicelikler, Standart Model'e bakış.",
+   "Hafta 14 — Standart Model ötesi grup yapılarına bakış."
+  ],
+  "textbooks": [
+   "J. Bünemann, Group Theory in Physics, Springer, 2024."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FZT&dersNo=203",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

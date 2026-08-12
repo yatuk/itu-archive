@@ -1,0 +1,163 @@
+{
+ "HYM 500E": {
+  "code": "HYM 500E",
+  "name": "Applied Engin.Mathematics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Korunum yasaları ve diferansiyel formları; Korunum denklemleri çıkarılması; Kabuller ve yaklaşımlar; Adi diferansiyel denklemler ve uygulamaları; Kısmi diferansiyel denklemler ve uygulamaları; Analitik çözüm teknikleri ve hata analizi; Bisection metodu; Newton-Raphson metodu; İnterpolasyon; En küçük kareler yöntemi; Gauss eliminasyonu; LU dekompozisyonu ve matris tersi; Newton-Cotes integrasyon formülü; Gauss tümlevi; Runge-Kutta metodu; Crank-Nicolson metodu; Euler metodu; Sonlu hacim yöntemi; Çözümlerin yorumlanması; Uygulama örnekleri: sandviç plaklarda titreşim ve sönümleme analizi. Conservation laws and differential forms; Conservation equations; Assumptions and approaches; Ordinary differential equations and applications; Partial differential equations and applications; Analytical solution techniques and error analysis; Bisection method; Newton-Raphson method; Interpolation; Least square methods; Gauss elimination; LU decomposition and matrix inversion; Newton-Cotes integration formulas; Gauss quadrature; Runge-Kutta methods; Crank-Nicolson method; Implicit Euler method; Finite volume methods; Evaluating the results; Case studies: Vibration and damping analysis of composite sandwich beams and plates.",
+  "outcomes": [
+   "Sürekli mekanik sistemlerin matematiksel modellenmesini ve hata analizi yapabilme,",
+   "2 ve 3 boyutlu malzemelerin sonlu elemanlar yöntemiyle analizinin prensiplerinin kavranması,",
+   "Kompozit plakaların ve kirişlerin noktasal birliktelik yöntemiyle titreşim ve sönümleme analizlerinin yapılma prensiplerini anlayabilir.",
+   "Matematiksel dönüşümler uygulayarak sistemleri çözebilme kabiliyeti."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Uygulamalı mühendislikte numerik metotların temel konseptlerine giriş",
+   "Hafta 2 — Sürekli mekanik problemlerin matematiksel modellenmesi: kinematik ve korunum denklemleri",
+   "Hafta 3 — Sürekli mekanik problemlerin matematiksel modellenmesi: Yapı mekaniği formülasyonu ve akış mekaniği problemleri",
+   "Hafta 4 — Hata analizi, kök bulma ve eğri uydurma ve lineer cebir denklemleri, numerik türev ve integral",
+   "Hafta 5 — Zaman ayrıştırma: dahili harici metodlar",
+   "Hafta 6 — Mekansal ayrıştırma: Sonlu hacim metodu ve sistem üretme; Sonlu eleman metodu ve mesh üretimi",
+   "Hafta 7 — Sonlu hacim metodları: İki boyutta ısı iletimi ve silindir çevresi sıkışıtırılamaz akış",
+   "Hafta 8 — Sonlu eleman metodu: Çubuk, kiriş ve kafeslerde statik lineer elastik çözümler",
+   "Hafta 9 — Sonlu eleman metodu: Plakalarda eğilme statik lineer elastik çözümleri",
+   "Hafta 10 — Nokta düzenleme metodu: quadratik metodun çıkarımı",
+   "Hafta 11 — Nokta düzenleme metodu: Sandviç kiriş ve plakalarda titreşim ve sönümleme analizleri"
+  ],
+  "textbooks": [
+   "Axler, S., Linear Algebra Done Right, Springer, Third Edition, 2015.",
+   "Stroud, K., Advanced Engineering Mathematics, Macmillan International Higher Education, 2011.",
+   "Schäfer, M., Computational Engineering – Introduction to Numerical Methods, 1st edition, Springer, 2006.",
+   "Jeffery, A., Advanced Engineering Mathematics, Harcourt/Academic Press, 2002.",
+   "Strang, G., Computational Science and Engineering, 1st edition, Wellesley-Cambridge Press, 2007."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=500",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "HYM 502E": {
+  "code": "HYM 502E",
+  "name": "Aircraft Structures&Materials",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Hava araçları; Hava araçları malzemeleri temelleri; Üretim tasarımı; Hava araçları temel tasarım prensipleri; Hafif yapıların tasarımı; Uçak yapıları temel tasarım prosesleri, İmalat tasarımı; Yük taşıyan sistemler; Kafes kiriş sistemleri; Yüzey-kiriş panelleri; Bağlantı sistemleri; Perçin ve menteşeler; Perçin türleri ve seçimi; Uçak malzemeleri ve dayanımı; Mühendislik metalleri ve alaşımlar; Yüksek sıcaklığa dayanımlı malzemeler; Fiber takviyeli kompozit malzemeler. Aerospace vehicles; Materials and design principles; Design for manufacturing; Aircraft structures design concepts; Lightweight structures design concepts; Load-bearing systems; Trusses and Space Frames; Skin-Stringer Panels; Fasteners & Joints; Fastener types and selection; Aircraft materials and strength; Structural metals-light; High temperature materials; Fiber reinforced composite materials.",
+  "outcomes": [
+   "Hava aracı yapılarını tanır, malzemeleri ve tasarım konseptlerini anlayabilir,",
+   "Hafif yapıların tasarımı ve malzeme seçimi konusunda çalışma yapabilir,",
+   "Hava-uzay malzemelerinin özelliklerini ve mekanik davranışlarını belirleyebilir,",
+   "Havacılık malzemelerin özelliklerini ve mekanik davranışlarını kavrayabilir,",
+   "Paket programları kullanarak uçak yapılarına ve ince cidarlı yapılara etkiyen kuvvetleri analiz etmek için gereken bilgileri anlayabilirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Hava uzay yapıları tasarım prensipleri",
+   "Hafta 2 — Yapısal mekanik teorilerine giriş",
+   "Hafta 3 — İmalat tasarımı",
+   "Hafta 4 — Temel yapısal analizler ve hafif yapıların tasarımı",
+   "Hafta 5 — Kiriş-çerçeve sistemleri ve yüzey-kiriş panelleri",
+   "Hafta 6 — Perçin ve menteşeler / Bağlantı verimliliği; Perçin türleri ve seçimi",
+   "Hafta 7 — Hafif yapıların tasarımı ve malzeme seçim kriterleri",
+   "Hafta 8 — Uçak malzemeleri ve mukavemeti",
+   "Hafta 9 — Mühendislik metalleri ve alaşımlar",
+   "Hafta 10 — Yüksek ısıl dayanımlı malzemeler",
+   "Hafta 11 — Fiber katkılı kompozit malzemeler"
+  ],
+  "textbooks": [
+   "Megson, T.H.G., Aircraft Structures for Engineering Students, Butterworth-Heinemann, 2016.",
+   "Curtis, H.D., Fundamentals of Aircraft Structural Analysis, Irwin, 1997.",
+   "Raymer, Daniel P., Aircraft Design: A Conceptual Approach, AIAA, 1989.",
+   "Hoskin, B.C. and Baker A.A., Composite Materials for Aircraft Structures, AIAA, 1986."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=502",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "HYM 503E": {
+  "code": "HYM 503E",
+  "name": "Structural Analysis I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yapısal analiz prensipleri; Lineer elastisite denklemleri; Stress Tensör ve Cauchy Formülü; Enerji ve Değişken Prensipler; Sürekli elemanların formülasyonu; Yapı mekaniği enerji teoremleri ve yapısal elemanların formülasyonu; Rtiz metodu ve numerik integrasyon; Sonlu eleman denge denklemleri; Yapısal hasar türleri; 1D,2D ve 3D havacılık yapılarının stress ve deformasyon durumlarının matematiksel ve sayısal modelleri. Principles of structural analysis; Equations of Linear Elasticity; Stress Tensor and the Cauchy Formula; Energy and Variational Principles; Formulation of Continuum Elements; Formulation of Structural Elements and Boundary Value Problems of Elasticity; The Ritz Method and Numerical Integration; Finite Element Equilibrium Equations; Types of Structural Failure; Mathematical and numerical models for the state of stress and deformation of one, two and three dimensional aerospace structures.",
+  "outcomes": [
+   "Yapı analizi ve tasarımının temel kavramlarını anlar,",
+   "Kafes sistemleri, kiriş, çerçeve, levha, plak ve kabuk yapıları modelleyip analiz edebilir ve tasarlayabilir,",
+   "Hava-uzay yapılarında yapıya etki eden yüklerin formülize edip çözebilir,",
+   "Sonlu eleman metodunu ve bir ticari yazılımı yapısal analiz ve tasarımda etkin olarak kullanabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş: Kinetik",
+   "Hafta 2 — Stress Tensör ve Cauchy Formülü",
+   "Hafta 3 — Kinematik; Uygunluk Şartları",
+   "Hafta 4 — Termodinamik prensipler; Elastisitede sınır koşul problemleri",
+   "Hafta 5 — Enerji ve değişken prensiplerine giriş",
+   "Hafta 6 — Enerji denklemleri ve yapısal denklemler",
+   "Hafta 7 — Sürekli elemanların formülasyonu",
+   "Hafta 8 — Yapı mekaniği enerji teoremleri ve yapısal elemanların formülasyonu",
+   "Hafta 9 — Ritz metodu ve numerik integrasyon",
+   "Hafta 10 — Sonlu eleman denge denklemleri",
+   "Hafta 11 — Yapısal hasar türleri"
+  ],
+  "textbooks": [
+   "Bauchau, Olivier A., Craig, James I, Structural Analysis: With Applications to Aerospace Structures, 2009.",
+   "Robert D. Cook, David S. Malkus, Michael E. Plesha and Robert J. Witt, Concepts and Applications of Finite Element Analysis, 4th Edition, John Wiley & Sons, Inc, 2001.",
+   "Megson, T.H.G., Aircraft Structures for Engineering Students, Elsevier, 2016.",
+   "Shames, Irving H., and Clive Dym, Energy and Finite Element Methods in Structural Mechanics, New York, NY: Hemisphere Publishing Corporation, 1985."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "HYM 504E": {
+  "code": "HYM 504E",
+  "name": "Fracture Mechanics&Fatigue",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Gevrek ve sünek kırılma; Lineer elastik kırılma mekaniği; Gerilim yoğunluğu parametrelerinin kararı; Kırılma mekaniği analitiği; Elastik-plastik kırılma mekaniği; J-integral; Enerji salınım oranı; Uygulamalı kırılma mekaniği unsurları; Yorulma mekaniği; Yorulma yüklemesi; Yorulma hasar ilerlemesi; Özel yorulma koşulları; Çevresel etkiler; Uçak yapılarının yorulma ve hasar toleransı. Brittle and ductile fracture; Linear elastic fracture mechanics; Determination of stress intensity factors; Analytics of fracture mechanics; Elastic-plastic fracture mechanics; The J-integral; Energy release rate; Elements of applied fracture mechanics; Mechanics of fatigue; Fatigue loading; Fatigue crack growth; Special Fatigue Conditions; Environmental effects; Fatigue and Damage Tolerance of Aircraft Structures.",
+  "outcomes": [
+   "Hava aracı yapılarında meydana gelen yorulma ve kırılma sebeplerini kavrayabilme",
+   "Kırılma mekanizmasının farklı şartlar altında ilerleme şeklini kavrama",
+   "Malzeme yapısıyla yorulma ve kırılma mekaniğini ilişkilendirebilme",
+   "Malzeme ömrünü yorulma ve kırılma mekanizmaları altında hesaplayabilme ve kontrol edebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Gevrek sünek kırılma kriterleri",
+   "Hafta 2 — Lineer elastik kırılma mekaniği",
+   "Hafta 3 — Teorik mukavemet, gerilim yığılması, çatlak uç alanı, kırılma türleri",
+   "Hafta 4 — Elastik-plastik kırılma mekaniği - I",
+   "Hafta 5 — Elastik-plastik kırılma mekaniği - II",
+   "Hafta 6 — Kırılma mekaniği fiziği",
+   "Hafta 7 — Gerinim ömrü ilişkileri: LCF, HCF - I",
+   "Hafta 8 — Gerinim ömrü ilişkileri: LCF, HCF - II",
+   "Hafta 9 — Çentiklerde yorulma",
+   "Hafta 10 — Çok yönlü yorulma; Zamana bağlı ve yüksek sıcaklıkta yorulma",
+   "Hafta 11 — Yapısal tasarım ve onarımlarda kırılma ve yorulma kontrolü"
+  ],
+  "textbooks": [
+   "Zehnder, Alan T., Fracture Mechanics, Springer, 2012.",
+   "T.L. Anderson, Fracture Mechanics: Fundamentals and Applications, 2nd Edition, CRC Press, 2004.",
+   "K. Hellan, Introduction to Fracture Mechanics, McGraw-Hill, 1984."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=504",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

@@ -1,0 +1,709 @@
+{
+ "YAP 501E": {
+  "code": "YAP 501E",
+  "name": "Engineering Mathematics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Birinci mertebe adi diferansiyel denklemler, Matrisler ve lineer denklem takımları, Mertebe indirgeme teknikleri, Vektör uzayları, Lineer bağımlılık, Baz, Boyut, Altuzay, Özdeğerler ve özvektörler, Diagonalleştirme, Üçgenleştirme, Sabit katsayılı yüksek mertebeden lineer diferansiyel denklemler, Matris fonksiyonları, Matris exponansiyeli, Değişken katsayılı yüksek mertebeden lineer diferansiyel denklemler, Seri çözümleri, Karmaşık değişkenler, Çizgisel integraller, Laplace ve Fourier dönüşümleri First-order ordinary differential equations, Matrices and systems of linear algebraic equations, Reduction-order techniques, Vector spaces, Linear independency, Base, Dimension, Subspaces, Eigenvalues and eigenvectors, Diagonalisation of a matrix, Triangulation of a matrix, Higher-order linear differential equations with constant coefficients, Matrix functions, Matrix exponential, Higher-order linear differential equations with variable coefficients, Solutions by series, Complex variables, Contour integrals, Laplace and Fourier transforms",
+  "outcomes": [
+   "Mühendislik problemlerinin matematik modellerini oluşturmak",
+   "Lineer denklem takımına indirgenmiş problemlerin irdelenmesi",
+   "Sabit katsayılı lineer diferansiyel birinci mertebe diferansiyel denklem",
+   "Değişken katsayılı diferansiyel denklemlerin çözümleri",
+   "Karmaşık değişkenler hakkında genel bilgi ve uygulamaları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Birinci mertebe adi diferansiyel denklemler",
+   "Hafta 2 — Matrisler ve lineer denklem takımları",
+   "Hafta 3 — Matrisler ve lineer denklem takımları, Mertebe indirgeme teknikleri",
+   "Hafta 4 — Vektör uzayları, Lineer bağımlılık, Baz, Boyut, Altuzay",
+   "Hafta 5 — Özdeğerler ve özvektörler, Diagonalleştirme",
+   "Hafta 6 — Yıliçi sınavı",
+   "Hafta 7 — Üçgenleştirme",
+   "Hafta 8 — Homojen olmayan sabit katsayılı yüksek mertebeden lineer diferansiyel denklemler",
+   "Hafta 9 — Matris fonksiyonları, Matris exponensiyeli",
+   "Hafta 10 — Değişken katsayılı yüksek mertebeden lineer diferansiyel denklemler",
+   "Hafta 11 — Seriler",
+   "Hafta 12 — Karmaşık değişkenler ve fonksiyonlar",
+   "Hafta 13 — Çizgisel integral",
+   "Hafta 14 — Laplace ve Fourier dönüşümleri"
+  ],
+  "textbooks": [
+   "Advanced engineering mathematics, C. Ray Wylie, Louis C. Barret, Mc. Graw-Hill",
+   "Linear algebra and differential equations: an integrated approach, Charles G. Cullen, Prindle, Weber &Schmidt",
+   "Advanced Engineering Mathematics, Erwin Kreyzig, John Wiley"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 503E": {
+  "code": "YAP 503E",
+  "name": "Composite Materials",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kompozit malzemelerin tarihçesi ve sınıflandırlması. Bileşim-özellik ilişkileri. Parçacıklarla güçlendirilmiş kompozitler. Gevrek lif-sünek matriks kompozitleri. Matriks ve lif malzemelerinin özellikleri, Weibull analizi. Sürekli lifler ile güçlendirilmiş kompozitlerde rijidlik ve dayanım ilişkileri. Süreksiz lifli kompozitler. Lif yönlenmesinin mekanik özelliklere etkisi. Basınç gerilmeleri altında lifli kompozitler. Karışım optimizasyonu. Sünek lif-gevrek matriksli kompozitler. Tabakalı kompozitlerde gerilme-şekil değiştirme ilişkileri, ortotropik kompozitler, rijidlik ve dayanımın deneysel belirlenmesi. İki eksenli dayanım teorileri. Klasik tabakalı kompozitler teorisi. History and types of composite materials. Composition-property relations. Particle-reinforced composites. Brittle fiber-ductile matrix composites. Properties of matrix and fiber materials, Weibull analysis. Stiffness and strength relations for FRC with continuous fibers. FRC under discontinuous fibers. Effect of fiber orientation on mechanical properties. FRC under compressive stresses. Mix optimization. Ductile fiber-brittle matrix composites. Stress-strain relations for laminated composites, orthotropic composites, experimental determination of stiffness and strength. Biaxial strength theories. Classical lamination theory.",
+  "outcomes": [
+   "Kompozit malzemelerin türleri ve üstünlükleri",
+   "Parçacıkla güçlendirilmiş kompozitlerin mekanik özellikleri",
+   "Kompozit üretiminde kullanılan matriks ve lif malzemelerin özellikleri",
+   "Liflerle güçlendirilmiş sünek malzemelerin mekanik özellikleri",
+   "Liflerin süreksiz ve/veya yönlenmiş olmasının mekanik özelliklere etkisi",
+   "Sünek lif-gevrek matriks kompozitler",
+   "Tabakalı kompozitlerde gerilme-şekil değiştirme ilişkileri",
+   "Ortotropik kompozitler",
+   "İki eksenli dayanım teorileri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kompozit malzemelerin tarihçesi ve sınıflandırılması",
+   "Hafta 2 — Kompozit malzeme modelleri, temel bileşim-özellik ilişkileri",
+   "Hafta 3 — Parçacıklarla güçlendirilmiş kompozitler",
+   "Hafta 4 — Gevrek lif-sünek matriks kompozitleri. Matriks ve lif malzemelerinin özellikleri",
+   "Hafta 5 — Gevrek liflerde Weibull analizi",
+   "Hafta 6 — Sürekli lifler ile güçlendirilmiş kompozitlerde rijidlik ve dayanım ilişkileri",
+   "Hafta 7 — Süreksiz lifler ile güçlendirilmiş kompozitlerde rijidlik ve dayanım ilişkileri",
+   "Hafta 8 — Lif yönlenmesinin mekanik özelliklere etkisi",
+   "Hafta 9 — Basınç gerilmeleri altında lifli kompozitler.",
+   "Hafta 10 — Karışım optimizasyonu.",
+   "Hafta 11 — Sünek lif-gevrek matriksli kompozitler",
+   "Hafta 12 — Tabakalı kompozitlerde gerilme-şekil değiştirme ilişkileri",
+   "Hafta 13 — Ortotropik kompozitler, rijidlik ve dayanımın deneysel belirlenmesi",
+   "Hafta 14 — İki eksenli dayanım teorileri. Klasik tabakalı kompozitler teorisi."
+  ],
+  "textbooks": [
+   "Mechanics of Composite Materials, R. M. Jones, Taylor and Francis Inc., 2nd Ed.1999.",
+   "An Introduction to Composite Materials, D. Hull and T. W. Clyne, Cambridge University Press, 1996.",
+   "Principles of Composite Materials, R. F. Gibson, CRC Press, 3rd Ed. 2012.",
+   "Engineering Composite Materials, B. Harris, 2nd Ed. Maney Pub. 1998.",
+   "Composite Construction Materials Handbook, R. Nichols, 1967."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=503",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 517": {
+  "code": "YAP 517",
+  "name": "İleri Yapı Statiği",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yapı malzemelerinin gerilme-şekildeğiştirme özellikleri ve bünye bağıntıları, yapı sistemlerinin hesap esasları, malzeme bakımından lineer olmayan sistemler, lineer olmayan şekildeğiştirmelerin yayılı olması hali, lineerleştirme teknikleri, lineer olmayan şekildeğiştirmelerin yayılı olmaması hali, plastik mafsal kavramı, limit yük hesabı, Açı Yöntemi, geometri değişimi bakımından lineer olmayan sistemler, II. Mertebe teorisi, burkulma yüklerinin hesabı, tesir çizgilerinin çizimi. Constitutive equations of structural materials, philosophy of structural analysis and design, materially non-linear structures, distributed plasticity, linearization techniques, plastic hinge concepts, ultimate load, slope-deflection method, geometrically non-linear structures, second order theory, determination of buckling loads, influence lines.",
+  "outcomes": [
+   "Yapı malzemelerinin lineer olmayan davranışı ve genel hesap esasları.",
+   "Malzeme bakımından lineer olmayan sistemlerin hesabında ardışık yaklaşıma dayalı hesap yöntemleri.",
+   "Geometri değişimleri bakımından lineer olmayan sistemlerin hesabında ardışık yaklaşıma dayalı hesap yöntemleri ve burkulma yüklerinin bulunması.",
+   "Her iki bakımdan lineer olmayan sistemlerin hesabında ardışık yaklaşıma dayalı hesap yöntemleri.",
+   "Yapı sistemlerinin Açı yöntemi ile hesabı.",
+   "Açı yöntemi ile II. Mertebe hesabı ve burkulma yüklerinin bulunması.",
+   "Açı yöntemi ile tesir çizgilerinin çizilmesi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapı malzemelerinin şekildeğiştirme özellikleri, idealleştirilmiş bünye bağıntıları.",
+   "Hafta 2 — Yapı sistemlerinin hesap esasları, hesapta gözönüne alınacak yönetmelikler.",
+   "Hafta 3 — Yapı sistemlerinin malzeme bakımından lineer olmayan teoriye göre hesabı, kuvvet yöntemi.",
+   "Hafta 4 — Yayılı plastik şekildeğiştirme durumu, ardışık yaklaşım hesap yöntemleri.",
+   "Hafta 5 — Yığılı plastik şekildeğiştirme durumu (plastik mafsal hipotezi).",
+   "Hafta 6 — Yük artımı yöntemleri, limit yükün yük artımı yöntemi ile bulunması.",
+   "Hafta 7 — Plastik hesaba ilişkin temel teoremler, limit yükün doğrudan bulunması (mekanizma yöntemi).",
+   "Hafta 8 — Geometri değişimleri bakımından lineer olmayan sistemlerin ardışık yaklaşım yöntemiyle ve yaklaşık yöntemle hesabı, burkulma yüklerinin bulunması.",
+   "Hafta 9 — İki bakımdan lineer olmayan sistemlerin ardışık yaklaşım yöntemi ile hesabı, II. Mertebe limit yük.",
+   "Hafta 10 — Açı yönteminin esası, çerçeve süreklilik denklemleri.",
+   "Hafta 11 — Açı yöntemi ile denge denklemlerinin yazılması, simetrik ve antimetrik şekildeğiştiren sistemler.",
+   "Hafta 12 — Açı yöntemi ile sıcaklık değişmesi ve mesnet çökmeleri için hesap.",
+   "Hafta 13 — II. mertebe birim deplasman sabitleri, açı yöntemi ile II. Mertebe hesabı ve burkulma yüklerinin bulunması.",
+   "Hafta 14 — Açı yöntemi ile tesir çizgilerinin çizilmesi."
+  ],
+  "textbooks": [
+   "Prof. Dr. Erkan Özer tarafından hazırlanan ders notları (Course notes prepared by Prof. Dr. Erkan Özer)",
+   "Çakıroğlu, A., Özer, E.Malzeme ve Geomeri Değişimi Bakımından Lineer Olmayan Sistemler, Cilt I, İTÜ Kütüphanesi, 1980.",
+   "Çakıroğlu, A. Hiperstatik Sistemlerin Hesap Metotları, İTÜ Kütüphanesi, 1992.",
+   "Chen, W.F. Plasticity in Reinforced Concrete, McGraw Hill, New York, 1982.",
+   "Kotsovos, M.D. Structural Concrete: Finite Element Analysis for Limit-State Design, Thomas Telford, London, 1995.",
+   "Levy, R., Spillers, W.R., Analysis of Geometrically Nonlinear Structures, ChapmanHall, 1995."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=517",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 527": {
+  "code": "YAP 527",
+  "name": "Betonarme Köprüler",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş. Genel bilgiler. Köprü elemanlarının tanımı. Köprülerin çeşitli bakımlardan sınıflandırılması. Projelendirmeden önce yapılması gereken incelemeler.Köprü enkesit ve boykesit tipleri. Ön boyutlandırma.Köprü taşıyıcı sistemlerinin tanıtılması.Köprülere etkiyen yükler.Zati yükler.Trafik yükleri.Deprem etkileri.Düz ve verev plak köprü hesabı. Öngerilme hakkında özet bilgiler. Betonarme ve öngerilmeli prefabrike kirişli köprü hesabı.Muhtelif köprü sistemlerinin tanıtılması.Deprem analizi.Mesnet hesabı.Kenar ve ara ayak tasarımı.Temel tasarımı.Taşıyıcı olmayan köprü elemanlarının detaylandırılması. Örnekler. Introduction. General information. Classification of bridges. Prior investigations before design. Types of cross sections and longitudinal sections. Predesign of bridges. Loads .Dead loads. Traffic loads. Earthquake effects. Summary on prestressed concrete. Design of reinforced concrete and prestressed concrete bridges. Definition of various bridge systems . Earthquake analysis. Design of bearings. Design of abutments, piers and walls. Design of substructure. Details of nonstructural elements. Numerical examples...",
+  "outcomes": [
+   "Köprülere etkiyen yüklerin hesabı",
+   "Köprülere etkiyen yüklerin hesabı",
+   "Ön tasarım",
+   "Ön tasarım",
+   "Deprem hesabı için muhtelif hassasiyette modelleme",
+   "Deprem hesabı için muhtelif hassasiyette modelleme",
+   "Uygulama projesi yapımı",
+   "Uygulama projesi yapımı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Genel bilgiler",
+   "Hafta 3 — Köprü elemanlarının tanımı. Köprülerin çeşitli bakımlardan sınıflandırılması.",
+   "Hafta 4 — Projelendirmeden önce yapılması gereken incelemeler. Köprü enkesit ve boykesit tipleri",
+   "Hafta 5 — Köprü taşıyıcı sistemlerinin tanıtılması, Ön boyutlandırma",
+   "Hafta 6 — Köprülere etkiyen yükler.Zati yükler.Trafik yükleri.Deprem etkileri",
+   "Hafta 7 — Düz ve verev plak köprü hesabı, boyuna ve enine kirişlere yük dağılımı",
+   "Hafta 8 — Öngerilme hakkında özet bilgiler.",
+   "Hafta 9 — Öngerilmeye devam, Betonarme ve öngerilmeli prefabrike kirişli köprü hesabı",
+   "Hafta 10 — Muhtelif köprü sistemlerinin tanıtılması",
+   "Hafta 11 — Deprem analizi. Modelleme örnekleri, Mesnet hesabı",
+   "Hafta 12 — Kenar ve ara ayak tasarımı.Temel tasarımı",
+   "Hafta 13 — Taşıyıcı olmayan köprü elemanlarının detaylandırılması.",
+   "Hafta 14 — Uygulamalar."
+  ],
+  "textbooks": [
+   "Raina V.K.,Concrete Bridge Practice,Analysis, design and economics, Mc.Graw Hill,1991",
+   "Raina V.K.,Concrete Bridge Practice,Analysis, design and economics, Mc.Graw Hill,1991",
+   "Standart Specifications for Higway Bridges,AASHTO,1998",
+   "Standart Specifications for Higway Bridges,AASHTO,1998",
+   "Guide Specifications for Seismic Design of Highway Bridges,AASHTO,2001.",
+   "Guide Specifications for Seismic Design of Highway Bridges,AASHTO,2001.",
+   "Celasun H.,Betonarme Köprüler,Çağlayan Yay.,1980.",
+   "Celasun H.,Betonarme Köprüler,Çağlayan Yay.,1980.",
+   "Ekiz İ., Köprü Problemleri, Çağlayan Yay.,1976.",
+   "Ekiz İ., Köprü Problemleri, Çağlayan Yay.,1976.",
+   "Rowe R.E.,Concrete Bridge Design,Elsevier Publ.Comp.,Amsterdam,1982.",
+   "Rowe R.E.,Concrete Bridge Design,Elsevier Publ.Comp.,Amsterdam,1982."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=527",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 527E": {
+  "code": "YAP 527E",
+  "name": "Betonarme Köprüler",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş. Genel bilgiler. Köprü elemanlarının tanımı. Köprülerin çeşitli bakımlardan sınıflandırılması. Projelendirmeden önce yapılması gereken incelemeler.Köprü enkesit ve boykesit tipleri. Ön boyutlandırma.Köprü taşıyıcı sistemlerinin tanıtılması.Köprülere etkiyen yükler.Zati yükler.Trafik yükleri.Deprem etkileri.Düz ve verev plak köprü hesabı. Öngerilme hakkında özet bilgiler. Betonarme ve öngerilmeli prefabrike kirişli köprü hesabı.Muhtelif köprü sistemlerinin tanıtılması.Deprem analizi.Mesnet hesabı.Kenar ve ara ayak tasarımı.Temel tasarımı.Taşıyıcı olmayan köprü elemanlarının detaylandırılması. Örnekler. Introduction. General information. Classification of bridges. Prior investigations before design. Types of cross sections and longitudinal sections. Predesign of bridges. Loads .Dead loads. Traffic loads. Earthquake effects. Summary on prestressed concrete. Design of reinforced concrete and prestressed concrete bridges. Definition of various bridge systems . Earthquake analysis. Design of bearings. Design of abutments, piers and walls. Design of substructure. Details of nonstructural elements. Numerical examples...",
+  "outcomes": [
+   "Köprülere etkiyen yüklerin hesabı",
+   "Köprülere etkiyen yüklerin hesabı",
+   "Ön tasarım",
+   "Ön tasarım",
+   "Deprem hesabı için muhtelif hassasiyette modelleme",
+   "Deprem hesabı için muhtelif hassasiyette modelleme",
+   "Uygulama projesi yapımı",
+   "Uygulama projesi yapımı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Genel bilgiler",
+   "Hafta 3 — Köprü elemanlarının tanımı. Köprülerin çeşitli bakımlardan sınıflandırılması.",
+   "Hafta 4 — Projelendirmeden önce yapılması gereken incelemeler. Köprü enkesit ve boykesit tipleri",
+   "Hafta 5 — Köprü taşıyıcı sistemlerinin tanıtılması, Ön boyutlandırma",
+   "Hafta 6 — Köprülere etkiyen yükler.Zati yükler.Trafik yükleri.Deprem etkileri",
+   "Hafta 7 — Düz ve verev plak köprü hesabı, boyuna ve enine kirişlere yük dağılımı",
+   "Hafta 8 — Öngerilme hakkında özet bilgiler.",
+   "Hafta 9 — Öngerilmeye devam, Betonarme ve öngerilmeli prefabrike kirişli köprü hesabı",
+   "Hafta 10 — Muhtelif köprü sistemlerinin tanıtılması",
+   "Hafta 11 — Deprem analizi. Modelleme örnekleri, Mesnet hesabı",
+   "Hafta 12 — Kenar ve ara ayak tasarımı.Temel tasarımı",
+   "Hafta 13 — Taşıyıcı olmayan köprü elemanlarının detaylandırılması.",
+   "Hafta 14 — Uygulamalar."
+  ],
+  "textbooks": [
+   "Raina V.K.,Concrete Bridge Practice,Analysis, design and economics, Mc.Graw Hill,1991",
+   "Raina V.K.,Concrete Bridge Practice,Analysis, design and economics, Mc.Graw Hill,1991",
+   "Standart Specifications for Higway Bridges,AASHTO,1998",
+   "Standart Specifications for Higway Bridges,AASHTO,1998",
+   "Guide Specifications for Seismic Design of Highway Bridges,AASHTO,2001.",
+   "Guide Specifications for Seismic Design of Highway Bridges,AASHTO,2001.",
+   "Celasun H.,Betonarme Köprüler,Çağlayan Yay.,1980.",
+   "Celasun H.,Betonarme Köprüler,Çağlayan Yay.,1980.",
+   "Ekiz İ., Köprü Problemleri, Çağlayan Yay.,1976.",
+   "Ekiz İ., Köprü Problemleri, Çağlayan Yay.,1976.",
+   "Rowe R.E.,Concrete Bridge Design,Elsevier Publ.Comp.,Amsterdam,1982.",
+   "Rowe R.E.,Concrete Bridge Design,Elsevier Publ.Comp.,Amsterdam,1982."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=527",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 532": {
+  "code": "YAP 532",
+  "name": "Deneysel Mekanik",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Elastisitenin temel bilgileri, Düzlem problemler, Deneysel mekaniğin ilgili teorik bilimlerin, mukavemet hesaplamalarının, tasarım-optimizasyon yöntemlerinin geliştirilmesindeki yeri, Modellerde yapılmış incelemelerde elde edilmiş verilerin gerçek yapılara transferi için benzeşim teorisinin uygulanması, Deneysel mekanikte, şekil değiştirme-gerilme durumuınun incelenmesi için kullanılan bazı metodlar ve onların uygulanma alanları: Kırılgan kaplamalar, ağ ve replik yöntemler, Moire yöntemi, Optik hassas kaplamalar. Noktasal deformasyon ölçümleri: 1) Strain-gage metodu: a) elektrik direnci vericileri ve kullanılması b) strain-gagelerin yüzeylerde gerilmelerin ölçülmesi için yerleştirilme şemaları 2) Fotoelastisite yöntemi: a) metodun fiziksel esasları b) ışığın düzlem ve dairesel polarizasyonu ve polariskop c) düzlem modelleme d) “dondurma” yöntemi ve üç boyutlu modelleme e) termal ve residüel gerilmelerin incelenmesi f) kırılma mekaniği problemleri g) dinamik problemler Fundamentals of elasticity, Plane problems, Experimental methods in the modern problems of the design-optimisation and theoretical/applied sciences, Application of the analogy theory for the transfer the experimental data to the natural structures, the methods and their applications in the experimental researches: Brittle coatings, mesh methods, Moire, optical sensitive coatings, measurments of the deformations point by point: 1) Strain-gauges 2) Photoelasticity",
+  "outcomes": [
+   "Deneysel metodlarda kullanılan cihazların çalışma prensipleri",
+   "Şekil değiştirme ve gerilmelerin ölçülmesi için kullanılan elemanlar",
+   "Verilen deneysel problemlerin tanımlanması",
+   "İlgili en uygun yöntemin seçilmesi",
+   "Gereken düzeneğin tasarımı ve imalatı",
+   "Deneyin yapılması ve elde edilen verilerin kullanılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elastisitenin temel bilgileri",
+   "Hafta 2 — Düzlem problemler",
+   "Hafta 3 — Deneysel mekaniğin ilgili teorik bilimlerin, mukavemet hesaplamalarının, tasarım-optimizasyon yöntemlerinin geliştirilmesindeki yeri,",
+   "Hafta 4 — Modellerde yapılmış incelemelerde elde edilmiş verilerin gerçek yapılara transferi için benzeşim teorisinin uygulanması,",
+   "Hafta 5 — Deneysel mekanikte, şekil değiştirme-gerilme durumuınun incelenmesi için kullanılan bazı metodlar ve onların uygulanma alanları: Kırılgan kaplamalar, ağ ve replik yöntemler, Moire yöntemi, Optik hassas kaplamalar",
+   "Hafta 6 — Noktasal deformasyon ölçümleri: 1) Strain-gage metodu",
+   "Hafta 7 — Noktasal deformasyon ölçümleri: 1) Strain-gage metodu",
+   "Hafta 8 — Yıliçi Sınavı",
+   "Hafta 9 — Fotoelastisite yöntemi, metodun fiziksel esasları",
+   "Hafta 10 — Işığın düzlem ve dairesel polarizasyonu ve polariskop",
+   "Hafta 11 — Düzlem modelleme",
+   "Hafta 12 — “Dondurma” yöntemi ve üç boyutlu modelleme",
+   "Hafta 13 — Termal ve residüel gerilmelerin incelenmesi",
+   "Hafta 14 — Kırılma mekaniği problemleri ve dinamik problemler"
+  ],
+  "textbooks": [
+   "Dally J.W. & WF.Riley. Experimental stress analisys, McGraw, 1965",
+   "Frocht M.M. Photoelasticity, Vol. I,II, Wiley, 1941, 1948",
+   "Durelli A.J. & W.F.Riley. Introduction to photomechanics, Printice-Hall, 1965",
+   "Timoshenko S.P. & Goodier J.N., Theory of elasticity, Mc. Graw, London, 1970",
+   "James D.F., Modern experimental stress analysis; completing the solution of partially specified problems, Wiley, 2004"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=532",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 535": {
+  "code": "YAP 535",
+  "name": "Elastisite Teorisi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Gerilme hali, şekil değiştirme hali, bünye denklemleri, elastisitenin temel denklemleri, sonlu farklar, Fourier serileri ile çözüm, deneysel elastisite, çok terimliler ile çözüm, kutupsal koordinatlarda iki boyutlu problemler varyasyonel yöntemler ile çözüm, üç boyutlu elastisitede basit problemler, burulma. State of Stress, State of Strain, Constitutive Equations, Basic Equations of Elasticity, Finite Difference Method, Fourier Series Solutions, Experimental Elasticity, Solution by Polynomial, Two Dimensional Problems in Polar Coordinates, Simple Problems in Three Dimensional Elasticity, Torsion.",
+  "outcomes": [
+   "Mühendislik matematiğinin temel bilgileri",
+   "Katı cisimler mekaniğinin temel özellikleri ve problemlerini öğrenmek",
+   "Çeşitli Çözüm Yöntemleri",
+   "Mühendislikte uygulamalı problemler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Gerilme hali",
+   "Hafta 2 — Gerilme hali",
+   "Hafta 3 — Şekil değiştirme hali",
+   "Hafta 4 — Elastisitenin temel denklemleri",
+   "Hafta 5 — Çok terimliler ile çözüm",
+   "Hafta 6 — Sonlu farklar",
+   "Hafta 7 — Fourier serileri ile çözüm",
+   "Hafta 8 — Deneysel elastisite",
+   "Hafta 9 — Kutupsal koordinatlarda iki boyutlu problemler",
+   "Hafta 10 — Kutupsal koordinatlarda iki boyutlu problemler",
+   "Hafta 11 — Kutupsal koordinatlarda iki boyutlu problemler",
+   "Hafta 12 — Mekanik titreşim denklemleri ve Fourier çözümleri",
+   "Hafta 13 — Üç boyutlu elastisitede basit problemler",
+   "Hafta 14 — Burulma"
+  ],
+  "textbooks": [
+   "Düzlemde Elastisite Teorisi: M. İnan, İstanbul Teknik Üniversitesi Kütüphanesi Sayı:750.",
+   "Elastisite Teorisi: S.Sacit Tameroğlu İstanbul Teknik Üniversitesi Kütüphanesi Sayı:1634.",
+   "Theory of Elasticity: S. Timosenko and J.N. Gooier Mc Graw Hill (Çevirisi: Elastisite Teorisi: İ.Kayan ve E. Şuhubi İstanbul Teknik Üniversitesi Kütüphanesi Sayı:757.",
+   "Matematical Theory of Elasticity: I.S. Sokolnikoff, Mc Graw Hill (Çevirisi: Matematik Elastisite Teorisi: S. Şuhubi İstanbul Teknik Üniversitesi Kütüphanesi Sayı: 613.",
+   "Elasticity: R.Wm. Little, Prentice-Hall, Englewood Cliffs, New Jersey,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=535",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 538": {
+  "code": "YAP 538",
+  "name": "Sonlu Elemanlar Yöntemi",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş, Genel kavramlar, Sonlu elemanlar yönteminin üstünlük ve mahzurları. Varyasyonel yaklaşım, Minimum potansiyel enerji ilkesi, Virtüel iş teoremi, Sonlu elemanın esasları. Yapı analizi problemlerinin çözümü için genel bir yaklaşım. Şekil fonksiyonları, Yöntemin yakınsaklığı için sağlanması gereken koşullar. C0 tipi süreklilik Alt sistem yaklaşımı, yüksek mertebeden şekil fonksiyonları, C1 sürekliliği olan şekil fonksiyonları. Bir, iki ve üç boyutlu elemanlar, Eksenel simetrik elemanlar, Gerilme analizi, Düzlem gerilme ve şekil değiştirme durumları. Çubuk, kiriş ve plak eleman rijitlik matrisi ve yük vektörü, Eksenel simetrik gerilme analizi, Üç boyutlu gerilme analizi. Yakınsaklık kriterleri incelenmesi, Eğrisel izoparametrik elemanlar ve sayısal integrasyon, İnce plakların eğilmesi. Introduction. General concepts. Summary of analysis procedure by a simple example. Variational approach, Principal of minimum potential energy and virtual displacement methods. General approach to structural analysis. The shape functions. Parameter functions. Convergence requirements. C0 type continuity, Substructuring, Higher order shape functions, C1 type continuity. One,two and three dimensional elements. Axi-symmetric elements. Stress analysis. Plane stress and plain strain. Beam and frame, plate element rigidity and load matrices. A detailed application. Axi-symmetric and 3D stress analysis. shape functions. Curved isoparametric elements and numerical integration. Bending of thin plates plates.",
+  "outcomes": [
+   "Değişim yöntemleri, enerji yöntemleri",
+   "Değişim yöntemleri, enerji yöntemleri",
+   "Şekil fonksiyonları",
+   "Şekil fonksiyonları",
+   "Eleman matrisleri",
+   "Eleman matrisleri",
+   "Sonlu eleman çözümü",
+   "Sonlu eleman çözümü",
+   "Yakınsaklık ktiterleri",
+   "Yakınsaklık ktiterleri",
+   "Statik ve dinamik analiz",
+   "Statik ve dinamik analiz"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Değişim yöntemleri methods",
+   "Hafta 2 — Enerji yöntemleri",
+   "Hafta 3 — Bünye bağıntıları ve alan denklemleri",
+   "Hafta 4 — Sonlu ve sonsuz küçük yer değiştişrmeler",
+   "Hafta 5 — Hareket denklemleri ve sonlu elemanlara giriş",
+   "Hafta 6 — Şekil fonksiyonları (bir boyutlu)",
+   "Hafta 7 — Şekil fonksiyonları (iki ve üç boyutlu)",
+   "Hafta 8 — Süreklilik koşulları, sayısal integrasyon",
+   "Hafta 9 — Bir boyutlu eleman matrisleri",
+   "Hafta 10 — iki boyutlu eleman matrisleri",
+   "Hafta 11 — Yakınsama kriterleri",
+   "Hafta 12 — Elemanların birleştirilmesi",
+   "Hafta 13 — İnce plakta eğilme problemi",
+   "Hafta 14 — İnce plakta eğilme problemi"
+  ],
+  "textbooks": [
+   "Aydogan M., Omurtag M.H., The Finite Element Method, İ.T.Ü, 2009.",
+   "Aydogan M., Omurtag M.H., The Finite Element Method, İ.T.Ü, 2009.",
+   "Bathe,K.J. Finite element Procedures, Prentice-Hall,1996",
+   "Bathe,K.J. Finite element Procedures, Prentice-Hall,1996",
+   "Prezemieniecki, J.S. Theory of Matrix Structural Analysis, Dover Pub. 1985.",
+   "Prezemieniecki, J.S. Theory of Matrix Structural Analysis, Dover Pub. 1985.",
+   "Hart, G.C., Wong, K. Structural Dynamics for Structural Engineers, J.Wiley, 2000.",
+   "Hart, G.C., Wong, K. Structural Dynamics for Structural Engineers, J.Wiley, 2000.",
+   "Meek, J.L. Matrix Structural Analysis, McGraw-Hill, ISBN 0070413169, 1971.",
+   "Meek, J.L. Matrix Structural Analysis, McGraw-Hill, ISBN 0070413169, 1971.",
+   "Clough, R.W., Penzien, J. Dynamics of Structures, McGraw-Hill, 1996.",
+   "Clough, R.W., Penzien, J. Dynamics of Structures, McGraw-Hill, 1996."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=538",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 554": {
+  "code": "YAP 554",
+  "name": "Beton Malzeme Bilimi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Çimento hamuru fazının boşluk yapısı (çimentonun fiziksel yönü, jel oluşumu, civalı porozimetre deneyi, kritik boşluk çapı), Sertleşmiş çimento hamuru ve beton için nanomikro, mezo ve makro düzey yaklaşımları Sertleşmiş çimento hamuru-agrega ara yüzeyi, Sertleşmiş beton özelikleri arasındaki korelasyonları belirleyen iç yapı etkenleri, Taze beton özelikleri, Sertleşen beton özelikleri, Sertleşmiş beton özelikleri, Betonun kısa süreli şekil değiştirmesi, Betonun zamana bağlı davranışı (sünme ve rötre), Kırılma mekaniğinin betona uygulanması, Betonun yorulması, Betonun dayanıklılığı. Pore structure of cement phase (physical aspects of cement, gel formation, mercury intrusion porosity test, critical pore size), Nano-micro, meso and macro approaches for hardened cement paste and concrete, Hardened cement paste-aggregate interface, Sensitivity of hardened concrete properties to the pore structure of cement paste, Sensitivity degrees, Micro-structural factors determining the correlations between concrete properties, Fresh concrete properties, Hardening properties of concrete, Hardened properties of concrete, Short term deformations of concrete, Time dependent behavior of concrete (creep and shrinkage), Application of fracture mechanics to concrete, Fatigue of concrete, Durability of concrete.",
+  "outcomes": [
+   "Çimento hamuru",
+   "Nano, mikro, mezo, makro kavramları",
+   "Taze beton",
+   "Sertleşen beton",
+   "Sertleşmiş beton",
+   "İçyapı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Çimento hamuru fazının boşluk yapısı",
+   "Hafta 2 — Sertleşmiş çimento hamuru ve beton için nano-mikro mezo ve makro düzey yaklaşımları",
+   "Hafta 3 — Sertleşmiş çimento hamuru – agrega ara yüzeyi",
+   "Hafta 4 — Sertleşmiş beton özeliklerinin çimento hamurunun boşluk yapısına duyarlılığı duyarlık dereceleri",
+   "Hafta 5 — Beton özeliklerini etkileyen iç yapı etkenleri",
+   "Hafta 6 — Beton özeliklerini etkileyen iç yapı etkenleri",
+   "Hafta 7 — Taze beton özelikleri",
+   "Hafta 8 — Sertleşen beton özelikleri",
+   "Hafta 9 — Sertleşmiş beton özelikleri",
+   "Hafta 10 — Sünme ve rötre",
+   "Hafta 11 — Kırılma mekaniğinin betona uygulanması",
+   "Hafta 12 — Kırılma mekaniğinin betona uygulanması",
+   "Hafta 13 — Betonun yorulması",
+   "Hafta 14 — Betonun dayanıklılığı"
+  ],
+  "textbooks": [
+   "The Science And Technology Of Civil Engineering Materials, J. Francis Young (Editor), Sidney Mindess, Robert J. Gray, Arnon Bentur, J. Francis Young.",
+   "Concrete, P. Kumar Mehta, Paulo J.M. Monteiro, 659 Pages, Megraw-Hill Professional; 3 Edition, 2005.",
+   "Advanced Concrete Technology I, Constituent Materials, John Newman, B S Choo, 704 Pages, 2003, Butterworth Hememann.",
+   "Advanced Concrete Technology 2, Concrete Properties John Newman, B S Choo, 704 Pages, 2003, Butterworth Hememann .",
+   "Advanced Concrete Technology 3, Processes, John Newman, B S Choo, 704 Pages, 2003, Butterworth Hememann."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=554",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 561": {
+  "code": "YAP 561",
+  "name": "Beton Katkı Malzemeleri",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Betonu oluşturan malzemeler, Betonda kullanılan katkı malzemelerinin sınıflandırılması ve genel özellikleri, Akışkanlaştırıcılar, viskozite düzenleyici katkılar, Hava sürükleyiciler, Antifriz katkıları, Priz ayarlayıcı katkılar, Korozyon inhibitörleri, Uçucu küller, Öğütülmüş yüksek fırın cürufu, Silis dumanı, Diğer mineral katkılar (tras, metakaolin vd), İzolasyon katkıları, Tamir ve güçlendirme malzemeleri. Constituent materials for concrete, classification of concrete admixtures and general characteristics, Plasticizers, viscosity modifier admixtures, Air entraining admixtures, anti-freeze admixtures,setting admixtures, corrosion inhibitors, fly ash, ground granulated blast furnace slag, silica fume, other mineral additives (metakaolin etc.), admixtures for isolation, admixtures for repair and strengthening.",
+  "outcomes": [
+   "Akışkanlaştırıcılar, viskozite düzenleyici katkılar.",
+   "Hava sürükleyiciler.",
+   "Antifriz katkıları.",
+   "Priz ayarlayıcı katkılar.",
+   "Uçucu küller.",
+   "Öğütülmüş yüksek fırın cürufu.",
+   "Silis dumanı.",
+   "İzolasyon katkıları.",
+   "Tamir ve güçlendirme malzemeleri."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, Betonu oluşturan malzemeler.",
+   "Hafta 2 — Betonda kullanılan katkı malzemelerinin sınıflandırılması ve genel özellikleri.",
+   "Hafta 3 — Akışkanlaştırıcılar, viskozite düzenleyici katkılar.",
+   "Hafta 4 — Hava sürükleyiciler.",
+   "Hafta 5 — Antifriz katkıları.",
+   "Hafta 6 — Priz ayarlayıcı katkılar.",
+   "Hafta 7 — Korozyon inhibitörleri.",
+   "Hafta 8 — Uçucu küller.",
+   "Hafta 9 — Öğütülmüş yüksek fırın cürufu.",
+   "Hafta 10 — Silis dumanı.",
+   "Hafta 11 — Diğer mineral katkılar (tras, metakaolin vd).",
+   "Hafta 12 — İzolasyon katkıları.",
+   "Hafta 13 — Tamir ve güçlendirme malzemeleri.",
+   "Hafta 14 — Tamir ve güçlendirme malzemeleri."
+  ],
+  "textbooks": [
+   "R.Rixom and N.Mailvaganam, Chemical Admixtures for Concrete, E & FN Spon, 1999.",
+   "V. S. Ramachandran, Concrete Admıxtures Handbook, Noyes Publıcatıons, 1995.",
+   "ACI 212.3R, Chemical Admixtures for Concrete, American Concrete Institüte, 2012."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=561",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 596": {
+  "code": "YAP 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 603E": {
+  "code": "YAP 603E",
+  "name": "Partial Differential Equations",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Pfaffian Formları, Birinci Mertebe denklemler, Cauchy Problemi, Genel Halde Birinci Mertebe denklemler, İkinci Mertebe Denklemler, bir Boyutlu dalga Denklemi, Dalga Denklemi İçin Dalembert Çözümü, Birinci Mertebe Denklem Sistemleri, Multi-İndeks notasyonu, Distribusyon Çözümleri Pfaffian Differential Equations, First - Order Equations , Cauchy Problem, General First Order Equation, Second Order Equations, One Dimensional Wave Equation, Dalemberts Solution for the Wave Equation, System of First Order Equations , Multi - Index Notation, Distribution Solutions.",
+  "outcomes": [
+   "Birinci ve ikinci basamak diferansiyel denklemlerim çözümlerinin elde edilmesi",
+   "Cauchy probleminin çözümü",
+   "Dalga denkleminin ve çözümünün elde edilmesi",
+   "Diferansiyel denklem sistemlerinin çözümü",
+   "Multi-İndeks notasyonu gösterimi",
+   "Diferansiyel denklemlerin distribüsyon çözümlerinin elde edilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Pfaffian Formları",
+   "Hafta 2 — Pfaffian Formları",
+   "Hafta 3 — Birinci Mertebe denklemler",
+   "Hafta 4 — Cauchy Problemi",
+   "Hafta 5 — Genel Halde Birinci Mertebe denklemler",
+   "Hafta 6 — Genel Halde Birinci Mertebe denklemler",
+   "Hafta 7 — İkinci Mertebe Denklemler",
+   "Hafta 8 — İkinci Mertebe Denklemler Arasınav I",
+   "Hafta 9 — Bir Boyutlu dalga Denklemi",
+   "Hafta 10 — Dalga Denklemi İçin Dalembert Çözümü",
+   "Hafta 11 — System of First Order Equations",
+   "Hafta 12 — Multi-İndeks notasyonu",
+   "Hafta 13 — Multi-İndeks notasyonu",
+   "Hafta 14 — Distribusyon Çözümleri Arasınav II"
+  ],
+  "textbooks": [
+   "Partial Differential Equations, John F., Springer-Verlag , 1971",
+   "Partial Differential Equations, Friedman A. Holt, Rinehart and Winston, Inc. 1969",
+   "Partial Differential Equations and Boundary Value Problems, Nakhle Asmar, Prentice Hall, 1999"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=603",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 617E": {
+  "code": "YAP 617E",
+  "name": "Nonliear Behav.Renf.Conc.Mem.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Malzeme özellikleri. Aderans, kenetlenme, sıyrılma modelleri. Eğilme etkileri altında davranışı. Lif yaklaşımı. Süneklik ve şekildeğiştirebilme yeteneği. Sargılı beton. Plastik mafsal mekanizması. Hasar. Tekrarlı yükler. Deprem etkileri altında davranış. Kesme etkileri altında davranış. Kesme ve eğilme etkilerinin etkileşimi. Kolon-kiriş birleşim bölgeleri. Birleşimlerde kesme dayanımı. Birleşimde kenetlenme ve kiriş donatısı sıyrılması. Öngerilmeli beton. Kullanılabilirlik. Sehim ve çatlak kontrolü. Uzun süreli etkiler. Materials. Bond and anchorage. Slip modeling. Flexural behavior. Fiber analysis. Ductility and deformability. Confined concrete. Plastic hinge mechanism. Damage. Cyclic effects. Seismic behavior. Shear behavior. Interaction of shear and flexure. Beam-column joints. Shear resisting mechanism of joints. Bond and beam bar slip in joints. Prestressed concrete. Servicability. Control of deflections and cracks. Long term effects.",
+  "outcomes": [
+   "Betonarmeyi oluşturan malzemelerin özelliklerinin özellikleri konusunda bilgi edinilmesi.",
+   "Betonarme elemanların eğilme , eksenel kuvvetler ve kesme etkileri altında davranışı hakkında detaylı bilgi edinilmesi.",
+   "Betonarme kesit, eleman ve yapıların doğrusal olmayan davranışları konusunda detaylı bilgi edinilmesi.",
+   "Elastik davranış ilkeleri kullanılarak kullanılabilirlik ve öngerilmeli beton konusunda bilgi edinilmesi.",
+   "Farklı etkiler altında betonarme davranışının teorik olarak modellenmesi.",
+   "Betonarme davranışının analizi için bilgisayar programlarının geliştirilmesi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Betonarmeyi oluşturan malzemeler: tek, iki ve çok eksenli gerilme-şekildeğiştirme ilişkileri; Kupfer, Hilsdorf ve Rüsch’ün çalışmaları; histeretik modeller; Young modulü, Poisson oranı ve kayma modulü; yükleme hızının etkileri; rötre ve sünme; sargılama etkisi; betonun çekme altında davranışı",
+   "Hafta 2 — Aderans ve kenetlenme: aderans mekanizması; kenetlenme; bindirmeli ekler; donatı ve beton özelliklerinin etkileri; yön değiştiren tekrarlı yükler; sargılama etkisi; betonun kesme etkileri ile dayanımını kaybetmesi; aderans-sıyrılma modelleri; yapısal analizde aderans-sıyrılma modellemesi",
+   "Hafta 3 — Eğilme etkileri altında davranış: temel davranış özellikleri; Rüsch’ün çalışmaları; beton gerilme blokları; şekildeğiştirmeler; göçme modları; tasarım kriterleri; yükleme hızının etkileri; kiriş, kolon ve perdelerin eğilme davranışı",
+   "Hafta 4 — Eğilme etkilerine maruz elemanlarda süneklik: sargılı ve sargısız betonarme kiriş ve kolonlarda süneklik; lif yaklaşımı; moment-eğrilik ve moment-dönme ilişkileri; sargılı beton için gerilme blokları",
+   "Hafta 5 — Eğilme etkileri altındaki betonarme elemanların analizi (bilgisayar kullanımı)",
+   "Hafta 6 — Şekildeğiştirme kapasiteleri ve plastik mafsal mekanizması: sargılı beton modelleri; dönme kapasitesi; plastik mafsal kavramı ve modelleri; kiriş dönmesi kavramı; tekrarlı yükleme durumunda şekildeğiştirmeler; dayanım ve rijitlik azalmaları; çevrim sıkışması; yük-yerdeğiştirme ilişkileri; eleman histeretik modelleri; hasar ve plastik davranışın modellenmesi",
+   "Hafta 7 — Betonarme yapı sistemlerinin deprem davranışı: depreme karşı dayanıklı yapı tasarımı kavramları; yapısal modelleme; düzensizlikler; çözümleme yöntemleri; hasar mekanizması; yeniden dağılım ve çok bağlılık kavramları; kapasite tasarım kavramı; histeretik modeller; performans kavramı; performans değerlendirme kriterleri",
+   "Hafta 8 — Betonarme elemanların deformasyon özelliklerinin incelenmesi (bilgisayar kullanımı); Kısa sınav",
+   "Hafta 9 — Kesme etkileri altında davranış: kesme etkilerine maruz elemanlarda dayanım ve şekildeğiştirmeler; kesme dayanımı mekanizması; diyagonal çatlaklar; kesme açıklığı; kesme hasar mekanizması; kafes mekanizması; kesme ve eğilme etkilerinin etkileşimi; plastik mafsallarda kesme kuvveti; derin kirişlerde etkileşim; kesme,eğilme ve eksenel kuvvet etkileşimi; kesme sürtünmesi; kesme davranışında tekrarlı yükleme etkisi, Kani’nin çalışmaları; Leonhardt kesme deneyleri; Agrega kilitlenmesi-Walraven’in çalışmaları; Toronto Üniversitesi çalışmaları",
+   "Hafta 10 — Kolon-kiriş birleşimleri: İç, dış ve köşe birleşimlerin davranışı; kesme dayanımı mekanizması; enine donatı; birleşimlerin detaylandırılması; aderans ve kiriş donatısının sıyrılması; deprem davranışı; döşeme ve kolon eksenel yükünün birleşim davranışına olan etkisi",
+   "Hafta 11 — Kesme davranışının analizi (bilgisayar kullanımı); yıliçi sınavı",
+   "Hafta 12 — Öngerilmeli beton: öngerme etkileri; elastik eğilme analizi; gerilme limitleri; sünme; rötre; gerilme kayıpları; kesme etkileri, diyagonal çekme ve gövde donatısı; gerilme tarnsferi ve kenetlenme boyu; kenetlenme bölgeleri; sehimler; yüksek dayanımlı beton",
+   "Hafta 13 — Kullanılabilirlik: sehim ve çatlakların kontrolü; elastik teori; çatlama mekanizması; uzun süreli etkiler; servis yükleri altında yapısal performans; lifli betonlar; çatlak genişliğine göre tasarım kavramı",
+   "Hafta 14 — Öngermeli beton ve/veya kullanma yükleri altında davranışın analizi (bilgisayar kullanımı)"
+  ],
+  "textbooks": [
+   "Reinforced Concrete Mechanics and Design, J.K. Wight, J.G. MacGregor, Prentice Hall, 2008.",
+   "Dynamic Behavior of Concrete and Seismic Engineering, J. Mazars, A. Milliard, Wiley, 2009.",
+   "Non-linear Mechanics of Reinforced Concrete, K. Maekawa, H. Okamura, A. Pimanmas, CRC Press, 2003.",
+   "Nonlinear Earthquake Response Analysis of Reinforced Concrete Buildings, S. Otani, Lecture Notes., 2006.",
+   "Displacement Based Design of Structures, M.J.N. Priestley, G.M. Calvi, M.J. Kowalsky, IUSS Press, 2007.",
+   "Seismic Design of Reinforced Concrete and Masonary Buildings, T. Paulay, John Wiley & Sons Ltd, 1992.",
+   "Reinforced Concrete Structures, B. Park, T. Paulay, John Wiley & Sons Ltd, 1975.",
+   "Design of Concrete Structures, A.H. Nilson, G. Winter, McGraw Hill, 1991."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=617",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "YAP 696E": {
+  "code": "YAP 696E",
+  "name": "Scien.Rese., Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YAP&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

@@ -1,0 +1,2596 @@
+{
+ "KMP 101": {
+  "code": "KMP 101",
+  "name": "Kompozisyon I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 3
+  },
+  "description": "Kompozisyon kavramı, kompozisyonu meydana getiren unsurlar, ritm, melodi, armoni, form hakkında genel bilgiler, motif oluşturma çalışması, mevcut eserlerde motif çözümlemesi, mevcut eserlerde cümle çözülmesi, cümle oluşturma çalışması, mevcut eserlerde cümle çözümlemesi, periyod oluşturma çalışması, mevcut eserlerde periyod çözümlemesi, şarkı formlarına giriş, mevcut eserlerde şarkı formları çözümlemesi, tek bölümlü şarkı formunun anlatılması ve bestelenmesi, iki bölümlü şarkı formunun anlatılması ve bestelenmesi, üç bölümlü şarkı formunun anlatılması ve bestelenmesi. The notion of musical composition, some general knowledge on the elements of composition like ritm, melodie, harmony and form, construction and analyses of musical motives, construction and analyses of musical sentences, construction and analyses of musical periods, introduction and analyses of lied forms, creating stylistic compositions in single, binary and ternary forms",
+  "outcomes": [
+   "Kompozisyon konusunda genel bir bakış açısına sahip olma.",
+   "Kompozisyonu meydana getiren unsurları tanıma.",
+   "Şarkı formlarını öğrenme ve kompozisyon uygulamaları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kompozisyon kavramı, tarif, örnekler",
+   "Hafta 2 — Kompozisyonu meydana getiren unsurlar, ritim, melodi, armoni",
+   "Hafta 3 — Temel form bilgisi kavramları, motif, cümle, periyod",
+   "Hafta 4 — Motif oluşturma çalışması",
+   "Hafta 5 — Mevcut eserlerde motif çözümlemesi",
+   "Hafta 6 — Cümle oluşturma çalışması",
+   "Hafta 7 — Mevcut eserlerde cümle çözümlemesi",
+   "Hafta 8 — Periyod oluşturma çalışması",
+   "Hafta 9 — Mevcut eserlerde periyod çözümlemesi",
+   "Hafta 10 — Şarkı formlarına giriş",
+   "Hafta 11 — Mevcut eserlerde şarkı formları çözümlemesi",
+   "Hafta 12 — Tek bölümlü şarkı formu bestelenmesi",
+   "Hafta 13 — İki bölümlü şarkı formu bestelenmesi",
+   "Hafta 14 — Üç bölümlü şarkı formu bestelenmesi"
+  ],
+  "textbooks": [
+   "Usmanbaş, İlhan. 1974, Müzikte Biçimler. İstanbul: Milli Eğitim Basımevi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=101",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 102": {
+  "code": "KMP 102",
+  "name": "Kompozisyon II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 3
+  },
+  "description": "Piyanonun bestecilik açısından özelliklerini tanıma, piyanonun özelliklerini içinde barındıran ve karakter açısından birbirinden farklı 3 ayrı minyatürün bestelenmesi, 1. minyatürde tek sesli bir melodiye en fazla iki sesin eşlik etmesi, 2. minyatürde piyanonun arpej özelliğinden faydalanmak ve sağ elin melodiyi oktavlı çalmasıyla birlikte armoniye de katkıda bulunması, 3. minyatürde sağ ve sol elin aynı yoğunlukta göreve sahip olması. Being a composer gets informed by the features of the piano, acquires the ability of analysing the piano music Composing 3 miniatures for piano; that each one should characteristically be different from the others.",
+  "outcomes": [
+   "Piyanonun bestecilik açısından özelliklerini tanıma",
+   "Piyano için yazılmış eserleri çözümleme",
+   "Piyano için eser besteleme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Piyanonun bestecilik açısından özelliklerini tanıma, piyano için 3 minyatür bestelenmesi amacıyla kısa piyano eserlerinin çözümlenmesi",
+   "Hafta 2 — 1. minyatür için tema oluşturma çalışması",
+   "Hafta 3 — 1. minyatürün temasının genişletilmesi üzerine çalışmalar",
+   "Hafta 4 — 1. minyatürün B temasını oluşturma çalışmaları",
+   "Hafta 5 — 1. minyatürün B temasının genişletilmesi üzerine çalışmalar ve minyatürün tamamlanması",
+   "Hafta 6 — 2.minyatür için tema oluşturma çalışması",
+   "Hafta 7 — 2. minyatürün temasının genişletilmesi üzerine çalışmalar",
+   "Hafta 8 — 2. minyatürün B temasını oluşturma çalışmaları",
+   "Hafta 9 — 2. minyatürün B temasının genişletilmesi üzerine çalışmalar ve minyatürün tamamlanması",
+   "Hafta 10 — 3.minyatür için tema oluşturma çalışması",
+   "Hafta 11 — 3. minyatürün temasının genişletilmesi üzerine çalışmalar",
+   "Hafta 12 — 3. minyatürün B temasını oluşturma çalışmaları",
+   "Hafta 13 — 3. minyatürün B temasının genişletilmesi üzerine çalışmalar ve minyatürün tamamlanması",
+   "Hafta 14 — Bestelenen 3 minyatürün genel değerlendirilmesi"
+  ],
+  "textbooks": [
+   "Usmanbaş,İlhan. 1974, Müzikte Biçimler. İstanbul: Milli Eğitim Basımevi. Yekta, Rauf. 1986. Türk Musikisi, İstanbul:Pan Yayıncılık."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=102",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 113": {
+  "code": "KMP 113",
+  "name": "Klasik Armoni I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Akor bilgileri, kadans kavramı, akor pozisyonları, ezgisel ve armonik gelişimin temel kuralları, akorların birbirine bağlanması şeklindeki yönelimin kuralları, bas ve şan partileri üzerinde beşli, altılı, altı dörtlü akorlar ile armonizasyonun öğretilmesi. Revising the chords, the concept of cadence, the positions of chords, the rules of partwriting.",
+  "outcomes": [
+   "Bir cümlede yapısal ilerlemeyi gösteren kesintisiz bir bas hareketi oluşturma ve armonizasyon yapma.",
+   "Bir bas partisi üzerinde kesintisiz bir şan hareketi oluşturma ve armonizasyon yapma.",
+   "Türk müziğinde çoksesli kompozisyon uygulamaları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Armoniye giriş",
+   "Hafta 2 — Diziler",
+   "Hafta 3 — Tonalite ve modalite",
+   "Hafta 4 — Bir oktav içerisindeki aralıklar",
+   "Hafta 5 — Beşli akorlar,derece kavramı,ana ve yardımcı dereceler.",
+   "Hafta 6 — Dört sesli armonide partilerin konumu, ses genişlikleri ve genel kurallar",
+   "Hafta 7 — Ezgisel gelişimin kuralları",
+   "Hafta 8 — Armonik gelişimin kuralları.",
+   "Hafta 9 — Akor şifreleri ve akorların rakamlanması.",
+   "Hafta 10 — Akorların I. çevrilmeleri",
+   "Hafta 11 — Kadanslar",
+   "Hafta 12 — Akorların II. çevrilmeleri",
+   "Hafta 13 — Bas partileri üzerinde armoni uygulamaları.1",
+   "Hafta 14 — Bas partileri üzerinde armoni uygulamaları.2"
+  ],
+  "textbooks": [
+   "Dubois, Theodore. 1939. Nazari ve Ameli Armoni, çeviren: Cemal Reşit Rey, M. Hulusi. İstanbul: Burhaneddin Basımevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=113",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 114": {
+  "code": "KMP 114",
+  "name": "Klasik Armoni II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Beşli, altılı, altıdörtlü akorları doğrultusunda verilmiş baslar üzerinde armoni çalışmaları, armonide ton değiştirme kuralları, yakın ve uzak tonlara modülasyon ile ilgili armoni çalışmaları, beşli, altılı,altıdörtlü akorları ile modülasyonlu armoni çalışmaları, armoni yürüyüşleri kuralları ve uygulaması, modülasyonlu armoni yürüyüşleri, bilinen akorlar, modülasyon ve armoni yürüyüşleri ile ilgili olarak verilmiş bas partileri üzerinde çözümlemeler, bilinen armonik malzeme ile bas partileri üzerinde armoni, verilmiş şan partisi altında armonizasyonun temel kuralları, çeşitli örnekler üzerinde şan partisi altında armonizasyonun çözümlenmesi, şan partisi altında armonizasyona giriş, şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek, verilmiş şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek. Realising figured basses using triads and their inversions, the concept of modulation, the concept of linear intervallic progressions, harmonizing given melodies.",
+  "outcomes": [
+   "Bir cümlede yapısal ilerlemeyi gösteren kesintisiz bir bas hareketi oluşturur ve armonizasyon yapabilme",
+   "Bir bas partisi üzerinde kesintisiz bir şan hareketi oluşturur ve armonizasyon yapabilme",
+   "Bir şan partisi üzerinde kesintisiz bir hareket oluşturur ve armonizasyon yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Beşli, altılı, altıdörtlü akorları doğrultusunda verilmiş baslar üzerinde armoni çalışmaları",
+   "Hafta 2 — Armonide ton değiştirme kuralları.",
+   "Hafta 3 — Yakın ve uzak tonlara modülasyon ile ilgili armoni çalışmaları",
+   "Hafta 4 — Beşli, altılı,altıdörtlü akorları ile modülasyonlu armoni çalışmaları.",
+   "Hafta 5 — Armoni yürüyüşleri kuralları ve uygulaması.",
+   "Hafta 6 — Modülasyonlu armoni yürüyüşleri.",
+   "Hafta 7 — Bilinen akorlar, modülasyon ve armoni yürüyüşleri ile ilgili olarak verilmiş bas partileri üzerinde çözümlemeler.",
+   "Hafta 8 — Bilinen armonik malzeme ile bas partileri üzerinde armoni I.",
+   "Hafta 9 — Bilinen armonik malzeme ile bas partileri üzerinde armoni II.",
+   "Hafta 10 — Verilmiş şan partisi altında armonizasyonun temel kuralları.",
+   "Hafta 11 — Çeşitli örnekler üzerinde şan partisi altında armonizasyonun çözümlenmesi",
+   "Hafta 12 — Şan partisi altında armonizasyona giriş.",
+   "Hafta 13 — Şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek .",
+   "Hafta 14 — Verilmiş şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek ."
+  ],
+  "textbooks": [
+   "Dubois, Theodore. 1939. Nazari ve Ameli Armoni, çeviren: Cemal Reşit Rey, M. Hulusi. İstanbul: Burhaneddin Basımevi,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=114",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 115": {
+  "code": "KMP 115",
+  "name": "Müzik Formları I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 3
+  },
+  "description": "Formları oluşturan öğeler, türler, biçimler ve yapısal özellikleri bağımsız bölmelerin farklı şekillerde kullanılması, motif, motif işleme yöntemleri, ikiz motif, cümle yapısı, periyod, şarkı formu ve örnek eserlerin çözümlenmesi, süit formu ve örnek eserlerin çözümlenmesi, rondo formu ve örnek eserlerin çözümlenmesi, sonat formu ve örnek eserlerin çözümlenmesi, tema ve değişiklikleri, füg, basso ostinato, passacaglia, chaconne, koral prelüd, motet-madrigal formları ve örnek eserlerin çözümlenmesi, oda Müziği ve örnek eserlerin çözümlenmesi, senfoni formu ve örnek eserlerin çözümlenmesi, konçerto formu ve örnek eserlerin çözümlenmesi, opera ,missa, oratorio, cantata, koral formları ve örnek eserlerin çözümlenmesi The elements of musical form, the various usages of independent structures, repetitive forms and repetition of musical ideas by continuation..",
+  "outcomes": [
+   "Formu oluşturan öğeleri bilme.",
+   "Batı müziği formları hakkında bilgi edinme",
+   "Batı müziği eserlerini, formu oluşturan öğeler doğrultusunda çözümleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Formu oluşturan öğeler",
+   "Hafta 2 — Türler, biçimler ve yapısal özellikleri",
+   "Hafta 3 — Motif, motif işleme yöntemleri, ikiz motif, cümle yapısı, periyod",
+   "Hafta 4 — Şarkı formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 5 — Süit formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 6 — Rondo formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 7 — Sonat formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 8 — Tema ve değişiklikleri, füg",
+   "Hafta 9 — Basso ostinato, passacaglia, chaconne",
+   "Hafta 10 — Koral prelüd, motet-madrigal formları ve örnek eserlerin çözümlenmesi",
+   "Hafta 11 — Oda Müziği ve örnek eserlerin çözümlenmesi",
+   "Hafta 12 — Senfoni formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 13 — Konçerto formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 14 — Opera ,Missa, oratorio, cantata.koral formları ve örnek eserlerin çözümlenmesi"
+  ],
+  "textbooks": [
+   "Hodier, Andre, 1992. Müzik Türleri ve Biçimleri, İstanbul: Pan Yayıncılık"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=115",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 116": {
+  "code": "KMP 116",
+  "name": "Müzik Formları II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 3
+  },
+  "description": "Makam müziği formlarını oluşturan öğeler, çalgı müziği formları, yöresel oyun havaları, sözlü formları oluşturan öğeler ve çözümleme, beste formu ve çözümleme, ağır semai, yürük semai, gazel, şarkı, divan formu ve çözümleme, Köçekçe, tavşanca, operet formu, türküler, koşma, mani, müstezad, semai,yıldız formu ve çözümleme, destan, ninni, kalenderi, kesik kerem, zeybek formu ve çözümleme, dini müzik formları ve çözümleme, ayin formu ve çözümleme, askeri müzik türleri ve çözümleme. Analyses on Turkısh makam music forms.",
+  "outcomes": [
+   "Formu oluşturan öğeleri bilme.",
+   "Makam müziği formları hakkında bilgi edinme",
+   "Makam müziği eserlerini, formu oluşturan öğeler doğrultusunda çözümleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Makam müziği formlarını oluşturan öğeler",
+   "Hafta 2 — Çalgı müziği formları",
+   "Hafta 3 — Yöresel oyun havaları",
+   "Hafta 4 — Sözlü formları oluşturan öğeler ve çözümleme",
+   "Hafta 5 — Beste formu ve çözümleme",
+   "Hafta 6 — Ağır semai, yürük semai, gazel ,şarkı, divan formu ve çözümleme",
+   "Hafta 7 — Köçekçe, tavşanca ve operet formu",
+   "Hafta 8 — Türküler, koşma, mani, müstezad, semai,yıldız formu ve çözümleme",
+   "Hafta 9 — Destan, ninni, kalenderi, kesik kerem, zeybek formu ve çözümleme",
+   "Hafta 10 — Dini müzik formları ve çözümleme-1",
+   "Hafta 11 — Dini müzik formları ve çözümleme-2",
+   "Hafta 12 — Ayin formu ve çözümleme",
+   "Hafta 13 — Askeri müzik türleri ve çözümleme-1",
+   "Hafta 14 — Askeri müzik türleri ve çözümleme-2"
+  ],
+  "textbooks": [
+   "Yavaşça, Alaeddin, 2002. Türk Musikinde Kompozisyon ve Beste Biçimleri, İstanbul: Türk Kültürüne Hizmet Vakfı."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=116",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 1213": {
+  "code": "KMP 1213",
+  "name": "Temel Müzik Solfeji ve Teorisi I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "Harmonic Practice In Tonal Music, Robert Gauldin, , 1997,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=1213",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 193": {
+  "code": "KMP 193",
+  "name": "Armoni I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Akor bilgilerinin hatırlanması, kadans kavramı, akor pozisyonları, ezgisel ve armonik gelişimin temel kuralları, akorların birbirine bağlanması şeklindeki yönelimin kuralları, bas ve şan partileri üzerinde beşli, altılı, altı dörtlü akorlar ile armonizasyonun öğretilmesi. Revising the chords, the concept of cadence, the positions of chords, the rules of partwriting.",
+  "outcomes": [
+   "Bir cümlede yapısal ilerlemeyi gösteren kesintisiz bir bas hareketi oluşturma ve armonizasyon yapma. Bir bas partisi üzerinde kesintisiz bir şan hareketi oluşturma ve armonizasyon yapma. Türk müziğinde çoksesli kompozisyon yapma."
+  ],
+  "textbooks": [
+   "Duboıs, Theodore. 1939. Nazari ve Ameli Armoni, çeviren: Cemal Reşit Rey, M. Hulusi. İstanbul: Burhaneddin Basımevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=193",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 193E": {
+  "code": "KMP 193E",
+  "name": "Armoni I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Akor bilgilerinin hatırlanması, kadans kavramı, akor pozisyonları, ezgisel ve armonik gelişimin temel kuralları, akorların birbirine bağlanması şeklindeki yönelimin kuralları, bas ve şan partileri üzerinde beşli, altılı, altı dörtlü akorlar ile armonizasyonun öğretilmesi. Revising the chords, the concept of cadence, the positions of chords, the rules of partwriting.",
+  "outcomes": [
+   "Bir cümlede yapısal ilerlemeyi gösteren kesintisiz bir bas hareketi oluşturma ve armonizasyon yapma. Bir bas partisi üzerinde kesintisiz bir şan hareketi oluşturma ve armonizasyon yapma. Türk müziğinde çoksesli kompozisyon yapma."
+  ],
+  "textbooks": [
+   "Duboıs, Theodore. 1939. Nazari ve Ameli Armoni, çeviren: Cemal Reşit Rey, M. Hulusi. İstanbul: Burhaneddin Basımevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=193",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 194": {
+  "code": "KMP 194",
+  "name": "Armoni II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Beşli, altılı, altıdörtlü akorları doğrultusunda verilmiş baslar üzerinde armoni çalışmaları, armonide ton değiştirme kuralları, yakın ve uzak tonlara modülasyon ile ilgili armoni çalışmaları, beşli, altılı,altıdörtlü akorları ile modülasyonlu armoni çalışmaları, armoni yürüyüşleri kuralları ve uygulaması, modülasyonlu armoni yürüyüşleri, bilinen akorlar, modülasyon ve armoni yürüyüşleri ile ilgili olarak verilmiş bas partileri üzerinde çözümlemeler, bilinen armonik malzeme ile bas partileri üzerinde armoni, verilmiş şan partisi altında armonizasyonun temel kuralları, çeşitli örnekler üzerinde şan partisi altında armonizasyonun çözümlenmesi, şan partisi altında armonizasyona giriş, şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek, verilmiş şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek. Realising figured basses using triads and their inversions, the concept of modulation, the concept of linear intervallic progressions, harmonizing given melodies.",
+  "outcomes": [
+   "Bir cümlede yapısal ilerlemeyi gösteren kesintisiz bir bas hareketi oluşturur ve armonizasyon yapabilme",
+   "Bir bas partisi üzerinde kesintisiz bir şan hareketi oluşturur ve armonizasyon yapabilme",
+   "Bir şan partisi üzerinde kesintisiz bir hareket oluşturur ve armonizasyon yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Beşli, altılı, altıdörtlü akorları doğrultusunda verilmiş baslar üzerinde armoni çalışmaları",
+   "Hafta 2 — Armonide ton değiştirme kuralları.",
+   "Hafta 3 — Yakın ve uzak tonlara modülasyon ile ilgili armoni çalışmaları.",
+   "Hafta 4 — Beşli, altılı,altıdörtlü akorları ile modülasyonlu armoni çalışmaları.",
+   "Hafta 5 — Armoni yürüyüşleri kuralları ve uygulaması.",
+   "Hafta 6 — Modülasyonlu armoni yürüyüşleri.",
+   "Hafta 7 — Bilinen akorlar, modülasyon ve armoni yürüyüşleri ile ilgili olarak verilmiş bas partileri üzerinde çözümlemeler",
+   "Hafta 8 — Bilinen armonik malzeme ile bas partileri üzerinde armoni I",
+   "Hafta 9 — Bilinen armonik malzeme ile bas partileri üzerinde armoni II.",
+   "Hafta 10 — Verilmiş şan partisi altında armonizasyonun temel kuralları.",
+   "Hafta 11 — Çeşitli örnekler üzerinde şan partisi altında armonizasyonun çözümlenmesi.",
+   "Hafta 12 — Şan partisi altında armonizasyona giriş.",
+   "Hafta 13 — Şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek .",
+   "Hafta 14 — Verilmiş şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek ."
+  ],
+  "textbooks": [
+   "Dubois, Theodore. 1939. Nazari ve Ameli Armoni, çeviren: Cemal Reşit Rey, M. Hulusi. İstanbul: Burhaneddin Basımevi,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=194",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 195": {
+  "code": "KMP 195",
+  "name": "Form Bilgisi I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Formları oluşturan öğeler, türler, biçimler ve yapısal özellikleri bağımsız bölmelerin farklı şekillerde kullanılması, motif, motif işleme yöntemleri, ikiz motif, cümle yapısı, periyod, şarkı formu ve örnek eserlerin çözümlenmesi, süit formu ve örnek eserlerin çözümlenmesi, rondo formu ve örnek eserlerin çözümlenmesi, sonat formu ve örnek eserlerin çözümlenmesi, tema ve değişiklikleri, füg, basso ostinato, passacaglia, chaconne, koral prelüd, motet-madrigal formları ve örnek eserlerin çözümlenmesi, oda Müziği ve örnek eserlerin çözümlenmesi, senfoni formu ve örnek eserlerin çözümlenmesi, konçerto formu ve örnek eserlerin çözümlenmesi, opera ,missa, oratorio, cantata, koral formları ve örnek eserlerin çözümlenmesi The elements of musical form, the various usages of independent structures, repetitive forms and repetition of musical ideas by continuation.",
+  "outcomes": [
+   "Formu oluşturan öğeleri bilme.",
+   "Batı müziği formları hakkında bilgi edinme.",
+   "Batı müziği eserlerini, formu oluşturan öğeler doğrultusunda çözümleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Formu oluşturan öğeler",
+   "Hafta 2 — Türler, biçimler ve yapısal özellikleri",
+   "Hafta 3 — Motif, motif işleme yöntemleri, ikiz motif, cümle yapısı, periyod",
+   "Hafta 4 — Şarkı formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 5 — Süit formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 6 — Rondo formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 7 — Sonat formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 8 — Tema ve değişiklikleri, füg",
+   "Hafta 9 — Basso ostinato, passacaglia, chaconne",
+   "Hafta 10 — Koral prelüd, motet-madrigal formları ve örnek eserlerin çözümlenmesi",
+   "Hafta 11 — Oda Müziği ve örnek eserlerin çözümlenmesi",
+   "Hafta 12 — Senfoni formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 13 — Konçerto formu ve örnek eserlerin çözümlenmesi",
+   "Hafta 14 — Opera ,Missa, oratorio, cantata.koral formları ve örnek eserlerin çözümlenmesi"
+  ],
+  "textbooks": [
+   "Hodier, Andre, 1992. Müzik Türleri ve Biçimleri, İstanbul: Pan Yayıncılık"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=195",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 196": {
+  "code": "KMP 196",
+  "name": "Form Bilgisi II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Makam müziği formlarını oluşturan öğeler, çalgı müziği formları, yöresel oyun havaları, sözlü formları oluşturan öğeler ve çözümleme, beste formu ve çözümleme, ağır semai, yürük semai, gazel, şarkı, divan formu ve çözümleme, Köçekçe, tavşanca, operet formu, türküler, koşma, mani, müstezad, semai,yıldız formu ve çözümleme, destan, ninni, kalenderi, kesik kerem, zeybek formu ve çözümleme, dini müzik formları ve çözümleme, ayin formu ve çözümleme, askeri müzik türleri ve çözümleme. Analyses on Turkısh makam music forms.",
+  "outcomes": [
+   "Formu oluşturan öğeleri bilme.",
+   "Makam müziği formları hakkında bilgi edinme.",
+   "Makam müziği eserlerini, formu oluşturan öğeler doğrultusunda çözümleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Makam müziği formlarını oluşturan öğeler",
+   "Hafta 2 — Çalgı müziği formları .",
+   "Hafta 3 — Yöresel oyun havaları.",
+   "Hafta 4 — Sözlü formları oluşturan öğeler ve çözümleme",
+   "Hafta 5 — Beste formu ve çözümleme",
+   "Hafta 6 — Ağır semai, yürük semai, gazel ,şarkı, divan formu ve çözümleme",
+   "Hafta 7 — Köçekçe, tavşanca, operet formu.",
+   "Hafta 8 — Türküler, koşma, mani, müstezad, semai,yıldız formu ve çözümleme",
+   "Hafta 9 — Destan, ninni, kalenderi, kesik kerem, zeybek formu ve çözümleme",
+   "Hafta 10 — Dini müzik formları ve çözümleme-1",
+   "Hafta 11 — Dini müzik formları ve çözümleme-2",
+   "Hafta 12 — Ayin formu ve çözümleme",
+   "Hafta 13 — Askeri müzik türleri ve çözümleme-1",
+   "Hafta 14 — Askeri müzik türleri ve çözümleme-2"
+  ],
+  "textbooks": [
+   "Yavaşça, Alaeddin, 2002. Türk Musikinde Kompozisyon ve Beste Biçimleri, İstanbul: Türk Kültürüne Hizmet Vakfı."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=196",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 197": {
+  "code": "KMP 197",
+  "name": "Konturpuan-Füg I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 2
+  },
+  "description": "Rönesans ve barok dönem müziği, kontrpuan ve sıkı kontrpuan tekniği hakkında bilgi, her iki tekniği kapsayan melodik yapı hakkında bilgi, 2, 3 ve 4 partili kontrpuan çözümlemeleri ve yazımı, imitasyon ve kanonik taklit çözümlemeleri ve yazımı. The musical styles of Renaissance and Baroque periods, the technique of counterpoint, partwriting rules according to the technique of species counterpoint, partwriting rules according to the rules of free counterpoint, analyses of canonic imitations and exercising them.",
+  "outcomes": [
+   "Rönesans ve Barok müziğini tanıma.",
+   "Sıkı Kontrpuanı bilme.",
+   "2, 3 ve 4 Partili Kontrpuan yazma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Rönesans ve barok dönem müziği",
+   "Hafta 2 — Kontrpuan yazım tekniği",
+   "Hafta 3 — Sıkı kontrpuan yazım tekniği",
+   "Hafta 4 — Kontrpuan’da armonik yapı",
+   "Hafta 5 — Kontrpuan yazılımı ve çözümleme esasları",
+   "Hafta 6 — İki partili kontrpuan yazılımı ve çözümleme 1",
+   "Hafta 7 — İki partili kontrpuan yazılımı ve çözümleme 2– Ara Sınav",
+   "Hafta 8 — Üç partili kontrpuan yazılımı ve çözümleme 1",
+   "Hafta 9 — Üç partili kontrpuan yazılımı ve çözümleme 2",
+   "Hafta 10 — Dört partili kontrpuan yazılımı ve çözümleme",
+   "Hafta 11 — Kanonik taklit yazılımı",
+   "Hafta 12 — Kanonik taklit çözümleme",
+   "Hafta 13 — İmitasyon yazılımı",
+   "Hafta 14 — İmitasyon çözümleme"
+  ],
+  "textbooks": [
+   "Tutu, Tevfik . 1992. “Çözümlemeli Kontrapunt. İzmir: Levent Müzik Evi Morris, R.O. 1976. Counterpoint. New York: Mc Grav Hill Piston, Walter. 1965. Counterpoint. New York: Oxford U. Press Thimann, E.H. 1947. Practical Free Counterpoint. London: Boosey & Hawkes"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=197",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 198": {
+  "code": "KMP 198",
+  "name": "Konturpuan-Füg II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Serbest kontrpuan, 2 partili melodi yazım tekniği, 3 partili melodi yazım tekniği, 4 partili melodi yazım tekniği, kanon, çevrilebilir kanon fugato, stretto, invensiyon, füg, ekpozisyon, 2, 3, 4 sesli füg yazımı. Free counterpoint, handling with 2,3,4 voiced textures, composing stylistic cannons, inventions and fugues.",
+  "outcomes": [
+   "Serbest kontrpuan ve melodi yazım tekniği hakkında detaylı bilgi edinme.",
+   "Kanon, fugato, stretto, invensiyon, füg, ekspozisyon ve özellikleri hakkında bilgi sahibi olma ve yazma.",
+   "2, 3 ve 4 sesli füg yazma tekniklerini öğrenme ve yazma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Serbest kontrpuan",
+   "Hafta 2 — Melodi yazım tekniği",
+   "Hafta 3 — 2 partili melodi yazım tekniği",
+   "Hafta 4 — 3 partili melodi yazım tekniği",
+   "Hafta 5 — 4 partili melodi yazım tekniği",
+   "Hafta 6 — Kanon, çevrilebilir kanon",
+   "Hafta 7 — Fugato,stretto- Ara Sınav",
+   "Hafta 8 — İnvensiyon",
+   "Hafta 9 — 2 partili invensiyon",
+   "Hafta 10 — 3 partili invensiyon",
+   "Hafta 11 — Füg",
+   "Hafta 12 — Ekspozisyon",
+   "Hafta 13 — 2, 3, ve 4 sesli füg yazım tekniği 1",
+   "Hafta 14 — 2, 3, ve 4 sesli füg yazım tekniği 2"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=198",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 199": {
+  "code": "KMP 199",
+  "name": "Çalgılama",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Yaylı çalgılar: keman, viyola, viyolonsel, kontrbas, yaylı çalgı bileşimleri, tahta üflemeli çalgılar: flüt, obua, korno, klarnet, fagot, tahta üflemeli çalgı bileşimleri, Yaylı çalgılar ve tahta üflemeli çalgılar bileşimleri. The technical features of strings instruments, the technical features woodwind instruments, combination of strings and woodwinds",
+  "outcomes": [
+   "Yaylı çalgıları tanıma. Yaylı çalgılarda bileşimler hakkında bilgi sahibi olma. Tahta üflemeli çalgıları tanıma. Tahta üflemeli çalgılarda bileşimler hakkında bilgi sahibi olma. Yaylı ve tahta üflemeli çalgı bileşimleri hakkında bilgi sahibi olma."
+  ],
+  "textbooks": [
+   "Adler, Samuel . 1989. The Study of Orchestration. New York: Oxford U. Press Çalışır, Feridun. 1997. Çalgı Eğitimi. İstanbul: Pan Y. Levent, Necdet. 1997. Çalgı ve Orkestralama Bilgisi. İzmir: Levent Müzik Evi Palmer, King. 1970. Teach Yourself Orchestration. London: English Universities Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=199",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 201": {
+  "code": "KMP 201",
+  "name": "Kompozisyon III",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Piyano ve yanında seçilen bir enstürmanın bestecilik açısından özelliklerini tanıma, piyano ve bir enstrüman için yazılmış eserleri çözümleme, piyano ve seçilen enstrümanın özelliklerini içinde barındıran ve karakter açısından birbirinden farklı tema ve beş varyasyonun bestelenmesi Composing five variations for piano; that each one should characteristically be different from the others.",
+  "outcomes": [
+   "Piyano ve kemanın bestecilik açısından özelliklerini tanıma.",
+   "Piyano ve keman için yazılmış eserleri çözümleme",
+   "Piyano ve keman için eser besteleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Piyano ve kemanın bestecilik açısından özelliklerini tanıma, piyano ve keman için tema ve beş varyasyonun bestelenmesi amacıyla, piyano ve keman eserlerinin çözümlenmesi",
+   "Hafta 2 — Tema oluşturma çalışması",
+   "Hafta 3 — Temanın genişletilmesi üzerine çalışmalar",
+   "Hafta 4 — B temasının oluşturulması, genişletilmesi üzerine çalışmalar ve temayı tamamlama.",
+   "Hafta 5 — 1. varyasyon için tema oluşturma çalışması.",
+   "Hafta 6 — 1. varyasyon için tema genişletilmesi üzerine çalışmalar ve varyasyonun tamamlanması.",
+   "Hafta 7 — 7 2. varyasyon için tema oluşturma çalışması",
+   "Hafta 8 — 2. varyasyon için tema genişletilmesi üzerine çalışmalar ve varyasyonun tamamlanması.",
+   "Hafta 9 — 3. varyasyon için tema oluşturma çalışması",
+   "Hafta 10 — 3. varyasyon için tema genişletilmesi üzerine çalışmalar ve varyasyonun tamamlanması.",
+   "Hafta 11 — 4. varyasyon için tema oluşturma çalışması",
+   "Hafta 12 — 4. varyasyon için tema genişletilmesi üzerine çalışmalar ve varyasyonun tamamlanması.",
+   "Hafta 13 — 5. varyasyon için tema oluşturma çalışması",
+   "Hafta 14 — 5. varyasyon için tema genişletilmesi üzerine çalışmalar ve varyasyonun tamamlanması."
+  ],
+  "textbooks": [
+   "Dandelot, Georges. 1957. Re’sume du Cours de Construction Musicale. Paris: Published by Editions Henry Lemoine."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=201",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 202": {
+  "code": "KMP 202",
+  "name": "Kompozisyon IV",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Piyano ve kemanın bestecilik açısından özelliklerini tanıma, piyano ve keman için yazılmış sonatinleri çözümleme, keman ve piyanonun özelliklerini içinde barındıran sonatin bestelenmesi, sonatin formunun öğrenilmesi. Composing a sonatine for piano and violin.",
+  "outcomes": [
+   "Piyano ve kemanın bestecilik açısından özelliklerini tanıma.",
+   "Piyano ve keman için yazılmış sonatinleri çözümleme.",
+   "Piyano ve keman için yazılmış sonatinleri çözümleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Piyano ve kemanın bestecilik açısından özelliklerini tanıma, piyano ve keman için sonatinin bestelenmesi amacıyla, piyano ve keman eserlerinin çözümlenmesi",
+   "Hafta 2 — 1. bölümün temasını oluşturma çalışması",
+   "Hafta 3 — 1. bölümün temasının genişletilmesi üzerine çalışmalar",
+   "Hafta 4 — 1. bölümün B temasının oluşturulması, genişletilmesi üzerine çalışmalar ve temayı tamamlama",
+   "Hafta 5 — 1. bölümün gelişme kısmının oluşturulması",
+   "Hafta 6 — 1. bölümün tamamlanmasına yönelik çalışmalar ve birinci bölümü tamamlama",
+   "Hafta 7 — 2. bölümün temasını oluşturma çalışması.",
+   "Hafta 8 — 2. bölümün temasının genişletilmesi üzerine çalışmalar",
+   "Hafta 9 — 2. bölümün B temasının oluşturulması, genişletilmesi üzerine çalışmalar ve temayı tamamlama",
+   "Hafta 10 — 2. bölümün tamamlanmasına yönelik çalışmalar.",
+   "Hafta 11 — 3. bölümün temasını oluşturma çalışması.",
+   "Hafta 12 — 3. bölümün temasının genişletilmesi üzerine çalışmalar",
+   "Hafta 13 — 3. bölümün B temasının oluşturulması, genişletilmesi üzerine çalışmalar ve temayı tamamlama",
+   "Hafta 14 — 3. bölümün tamamlanmasına yönelik çalışmalar."
+  ],
+  "textbooks": [
+   "Usmanbaş, İlhan. 1974, Müzikte Biçimler. İstanbul: Milli Eğitim Basımevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=202",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 203": {
+  "code": "KMP 203",
+  "name": "Türk Müziği Literatürü I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 3
+  },
+  "description": "13. yüzyıldan 18. yüzyıla, Osmanlı dönemi Türk makam müziği bestekârlarının yaşadığı sosyo-kültürel konum, bestecilik anlayışları, tarihsel süreç içerisinde kompozisyonların gelişimi, değişimi ve ayırıcı özellikleri. The distinctive qualities of Turkısh makam music composers during the period between 13’th and 18’th centuries, their social statue and their stylistic features",
+  "outcomes": [
+   "13-18.yy. Türk makam müziğinin tarihsel gelişimi ve değişimi hakkında bilgi sahibi olma",
+   "13-18.yy. Türk makam müziği bestekârlarının üslupları hakkında fikir sahibi olma.",
+   "3-18. yy. Türk makam müziği besteleri hakkında bilgi sahibi olma ve çözümleme.",
+   "13-18. yy. Türk makam müziği eserlerini dönemsel olarak tanım"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Türk müziği literatürüne giriş.",
+   "Hafta 2 — 13, 14 ve 15. yüzyıl bestecileri ve eserlerinin çözümlenmesi.",
+   "Hafta 3 — 16. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 4 — 16. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi.",
+   "Hafta 5 — 17. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 6 — 17. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 7 — 17. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi.",
+   "Hafta 8 — 18. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 9 — 18. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 10 — 18. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi",
+   "Hafta 11 — 18. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi.",
+   "Hafta 12 — 18. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi.",
+   "Hafta 13 — 18. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi.",
+   "Hafta 14 — 13.14.15.16.17 ve 18. yüzyıl bestecilerinin karşılaştırılması"
+  ],
+  "textbooks": [
+   "Özalp, Nazmi. 1992, Türk Musikisi Beste Formları. İstanbul"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=203",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 204": {
+  "code": "KMP 204",
+  "name": "Türk Müziği Literatürü II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 3
+  },
+  "description": "19. yüzyıldan 21. yüzyıla kadar, Osmanlı dönemi Türk makam müziği bestekârlarının yaşadığı sosyo-kültürel konum, bestecilik anlayışları, tarihsel süreç içerisinde kompozisyonların gelişimi, değişimi ve ayırıcı özellikleri. The distinctive qualities of Turkısh makam music composers during the period between 19’th and 21’th centuries, their social statue and their stylistic features",
+  "outcomes": [
+   "19-21.yy Türk makam müziğinin tarihsel gelişimi ve değişimi hakkında bilgi sahibi olma",
+   "19-21.yy Türk makam müziği bestekârlarının üslupları hakkında fikir sahibi olma",
+   "19-21. yy Türk makam müziği besteleri hakkında bilgi sahibi olur ve çözümleme yapabilme.",
+   "19-21. yy Türk makam müziği eserlerini dönemsel olarak tanıma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — 13. yüzyıldan 18. yüzyıla kadar besteciler ve eserlerine genel bakış.",
+   "Hafta 2 — 19. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 3 — 19. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 4 — 19. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 5 — 19. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi.",
+   "Hafta 6 — 19. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi.",
+   "Hafta 7 — 20. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 8 — 20. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 9 — 20. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 10 — 20. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi",
+   "Hafta 11 — 20. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi",
+   "Hafta 12 — 21. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 13 — 21. yüzyıl bestecileri ve sözlü formlardaki eserlerinin çözümlenmesi.",
+   "Hafta 14 — 21. yüzyıl bestecileri ve çalgı formlarındaki eserlerinin çözümlenmesi."
+  ],
+  "textbooks": [
+   "Özalp, Nazmi. 1992, Türk Musikisi Beste Formları. İstanbul: TRT Müzik Dairesi Yayınları"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=204",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 205": {
+  "code": "KMP 205",
+  "name": "Kontrpuan- Füg I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Rönesans ve barok dönem müziği, kontrpuan ve sıkı kontrpuan tekniği hakkında bilgi, her iki tekniği kapsayan melodik yapı hakkında bilgi, 2, 3 ve 4 partili kontrpuan çözümlemeleri ve yazımı, imitasyon ve kanonik taklit çözümlemeleri ve yazımı. The musical styles of Renaissance and Baroque periods, the technique of counterpoint, partwriting rules according to the technique of species counterpoint, partwriting rules according to the rules of free counterpoint, analyses of canonic imitations and exercising them.",
+  "outcomes": [
+   "Rönesans ve Barok müziğini tanıma",
+   "Sıkı Kontrpuanı bilme.",
+   "2, 3 ve 4 Partili Kontrpuan yazma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Rönesans ve barok dönem müziği",
+   "Hafta 2 — Kontrpuan yazım tekniği",
+   "Hafta 3 — Sıkı kontrpuan yazım tekniği",
+   "Hafta 4 — Kontrpuan’da armonik yapı",
+   "Hafta 5 — Kontrpuan yazılımı ve çözümleme esasları",
+   "Hafta 6 — İki partili kontrpuan yazılımı ve çözümleme-1",
+   "Hafta 7 — İki partili kontrpuan yazılımı ve çözümleme-2",
+   "Hafta 8 — Üç partili kontrpuan yazılımı ve çözümleme -1",
+   "Hafta 9 — Üç partili kontrpuan yazılımı ve çözümleme-2",
+   "Hafta 10 — Dört partili kontrpuan yazılımı ve çözümleme",
+   "Hafta 11 — Kanonik taklit yazılımı",
+   "Hafta 12 — Kanonik taklit çözümleme",
+   "Hafta 13 — İmitasyon yazılımı",
+   "Hafta 14 — İmitasyon çözümleme"
+  ],
+  "textbooks": [
+   "Tutu, Tevfik . 1992. “Çözümlemeli Kontrapunt. İzmir: Levent Müzik Evi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=205",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 206": {
+  "code": "KMP 206",
+  "name": "Kontrpuan-Füg II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Serbest kontrpuan, 2 partili melodi yazım tekniği, 3 partili melodi yazım tekniği, 4 partili melodi yazım tekniği, kanon, çevrilebilir kanon fugato, stretto, invensiyon, füg, ekpozisyon, 2, 3, 4 sesli füg yazımı. Free counterpoint, handling with 2,3,4 voiced textures, composing stylistic cannons, inventions and fugues.",
+  "outcomes": [
+   "Serbest kontrpuan ve melodi yazım tekniği hakkında detaylı bilgi edinme.",
+   "Kanon, fugato, stretto, invensiyon, füg, ekspozisyon ve özellikleri hakkında bilgi sahibi olma ve yazma.",
+   "2, 3 ve 4 sesli füg yazma tekniklerini öğrenme ve yazma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Serbest kontrpuan",
+   "Hafta 2 — Melodi yazım tekniği",
+   "Hafta 3 — 2 partili melodi yazım tekniği",
+   "Hafta 4 — 3 partili melodi yazım tekniği",
+   "Hafta 5 — 4 partili melodi yazım tekniği",
+   "Hafta 6 — Kanon, çevrilebilir kanon",
+   "Hafta 7 — Fugato,stretto- Ara Sınav",
+   "Hafta 8 — İnvensiyon",
+   "Hafta 9 — 2 partili invensiyon",
+   "Hafta 10 — 3 partili invensiyon",
+   "Hafta 11 — Füg",
+   "Hafta 12 — Ekspozisyon",
+   "Hafta 13 — 2, 3, ve 4 sesli füg yazım tekniği -1",
+   "Hafta 14 — 2, 3, ve 4 sesli füg yazım tekniği -2"
+  ],
+  "textbooks": [
+   "Tutu, Tevfik . 1992. Çözümlemeli Kontrapunt. İzmir: Levent Müzik Evi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=206",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 2211": {
+  "code": "KMP 2211",
+  "name": "Türk Müziği Solfej ve Teorisi III",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "Feridun Öney - Yeşim Altınel Ders Notları, Adil Feridun Öney - Neşe Yeşim Altınel Çoban, , 2005,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=2211",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 2212": {
+  "code": "KMP 2212",
+  "name": "Türk Müziği Solfej ve Teorisi IV",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "Feridun Öney - Yeşim Altınel Ders Notları, Adil Feridun Öney - Neşe Yeşim Altınel Çoban, , 2005,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=2212",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 2213": {
+  "code": "KMP 2213",
+  "name": "Temel Müzik Solfeji ve Teorisi III",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 4,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=2213",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 293": {
+  "code": "KMP 293",
+  "name": "Armoni I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 2
+  },
+  "description": "Akor bilgilerinin hatırlanması, kadans kavramı, akor pozisyonları, ezgisel ve armonik gelişimin temel kuralları, akorların birbirine bağlanması şeklindeki yönelimin kuralları, bas ve şan partileri üzerinde beşli, altılı, altı dörtlü akorlar ile armonizasyonun öğretilmesi. Revising the chords, the concept of cadence, the positions of chords, the rules of partwriting.",
+  "outcomes": [
+   "Bir cümlede yapısal ilerlemeyi gösteren kesintisiz bir bas hareketi oluşturma ve armonizasyon yapma.",
+   "Bir bas partisi üzerinde kesintisiz bir şan hareketi oluşturma ve armonizasyon yapma",
+   "Türk müziğinde çoksesli kompozisyon yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Armoniye giriş",
+   "Hafta 2 — Diziler ve oluşumları",
+   "Hafta 3 — Tonalite ve modalite",
+   "Hafta 4 — Bir oktav içerisindeki aralıklar.",
+   "Hafta 5 — Beşli akorlar,derece kavramı,ana ve yardımcı dereceler.",
+   "Hafta 6 — Dört sesli armonide partilerin konumu, ses genişlikleri ve genel kurallar.",
+   "Hafta 7 — Ezgisel gelişimin kuralları.",
+   "Hafta 8 — Armonik gelişimin kuralları.",
+   "Hafta 9 — Akor şifreleri ve akorların rakamlanması",
+   "Hafta 10 — Akorların I. çevrilmeleri",
+   "Hafta 11 — Kadanslar.",
+   "Hafta 12 — Akorların II. çevrilmeleri",
+   "Hafta 13 — Bas partileri üzerinde öğrenilen akor malzemesi ile armoni uygulamaları.1",
+   "Hafta 14 — Bas partileri üzerinde öğrenilen akor malzemesi ile armoni uygulamaları. 2"
+  ],
+  "textbooks": [
+   "Duboıs, Theodore. 1939. Nazari ve Ameli Armoni, çeviren: Cemal Reşit Rey, M. Hulusi. İstanbul: Burhaneddin Basımevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=293",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 294": {
+  "code": "KMP 294",
+  "name": "Armoni II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 2
+  },
+  "description": "Beşli, altılı, altıdörtlü akorları doğrultusunda verilmiş baslar üzerinde armoni çalışmaları, armonide ton değiştirme kuralları, yakın ve uzak tonlara modülasyon ile ilgili armoni çalışmaları, beşli, altılı,altıdörtlü akorları ile modülasyonlu armoni çalışmaları, armoni yürüyüşleri kuralları ve uygulaması, modülasyonlu armoni yürüyüşleri, bilinen akorlar, modülasyon ve armoni yürüyüşleri ile ilgili olarak verilmiş bas partileri üzerinde çözümlemeler, bilinen armonik malzeme ile bas partileri üzerinde armoni, verilmiş şan partisi altında armonizasyonun temel kuralları, çeşitli örnekler üzerinde şan partisi altında armonizasyonun çözümlenmesi, şan partisi altında armonizasyona giriş, şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek, verilmiş şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek. Realising figured basses using triads and their inversions, the concept of modulation, the concept of linear intervallic progressions, harmonizing given melodies.",
+  "outcomes": [
+   "Bir cümlede yapısal ilerlemeyi gösteren kesintisiz bir bas hareketi oluşturur ve armonizasyon yapabilme",
+   "Bir bas partisi üzerinde kesintisiz bir şan hareketi oluşturur ve armonizasyon yapabilme",
+   "Bir şan partisi üzerinde kesintisiz bir hareket oluşturur ve armonizasyon yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Beşli, altılı, altıdörtlü akorları doğrultusunda verilmiş baslar üzerinde armoni çalışmaları",
+   "Hafta 2 — Armonide ton değiştirme kuralları.",
+   "Hafta 3 — Yakın ve uzak tonlara modülasyon ile ilgili armoni çalışmaları.",
+   "Hafta 4 — Beşli, altılı,altıdörtlü akorları ile modülasyonlu armoni çalışmaları.",
+   "Hafta 5 — Armoni yürüyüşleri kuralları ve uygulaması.",
+   "Hafta 6 — Modülasyonlu armoni yürüyüşleri.",
+   "Hafta 7 — Bilinen akorlar, modülasyon ve armoni yürüyüşleri ile ilgili olarak verilmiş bas partileri üzerinde çözümlemeler.",
+   "Hafta 8 — Bilinen armonik malzeme ile bas partileri üzerinde armoni I.",
+   "Hafta 9 — Bilinen armonik malzeme ile bas partileri üzerinde armoni II.",
+   "Hafta 10 — Verilmiş şan partisi altında armonizasyonun temel kuralları.",
+   "Hafta 11 — Çeşitli örnekler üzerinde şan partisi altında armonizasyonun çözümlenmesi.",
+   "Hafta 12 — Şan partisi altında armonizasyona giriş.",
+   "Hafta 13 — Şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek .",
+   "Hafta 14 — Verilmiş şan partisinin altına genel çizgileri ile temel fonksiyonların yerleştirilmesi, bulunan fonksiyonlara ait akorları armonilemek ."
+  ],
+  "textbooks": [
+   "Dubois, Theodore. 1939. Nazari ve Ameli Armoni, çeviren: Cemal Reşit Rey, M. Hulusi. İstanbul: Burhaneddin Basımevi,"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=294",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 301": {
+  "code": "KMP 301",
+  "name": "Kompozisyon V",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Keman, viyola, viyolonsel ve kontrbas çalgılarının teknik özelliklerinin öğrenilmesi, yaylı çalgılar için bestelenmiş eserleri çözümleme, yaylı çalgıların özelliklerini içinde barındıran yaylı çalgılar orkestrası için tek bölümlü eser bestelenmesi. Composing a single movement piece for strings, which has the specific technical and stylistic features of a string orchestra",
+  "outcomes": [
+   "Yaylı çalgıların kompozisyon açısından özelliklerini tanıma",
+   "Yaylı çalgılar için bestelenmiş eserleri çözümleme",
+   "Yaylı çalgılar orkestrası için eser besteleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Keman, viyola, viyolonsel ve kontrbas çalgılarının teknik özelliklerinin öğrenilmesi.",
+   "Hafta 2 — Yaylı çalgılar için tek bölümlü eser bestelenmesi amacıyla yaylı çalgılar ailesinden keman ve viola çalgılarının çözümlenmesi",
+   "Hafta 3 — Yaylı çalgılar için tek bölümlü eser bestelenmesi amacıyla yaylı çalgılar ailesinden viyolonsel ve kontrbas çalgılarının çözümlenmesi",
+   "Hafta 4 — Temayı oluşturma çalışması.",
+   "Hafta 5 — Temayı geliştirmeye yönelik çalışmalar yapılması -1",
+   "Hafta 6 — Temayı geliştirmeye yönelik çalışmalar yapılması -2",
+   "Hafta 7 — B temasını oluşturma çalışması",
+   "Hafta 8 — B temasını geliştirmeye yönelik çalışmalar yapılması",
+   "Hafta 9 — B temasını sonlandırmaya yönelik çalışmalar yapılması",
+   "Hafta 10 — Gelişme bölümünü oluşturma çalışması.",
+   "Hafta 11 — Gelişme bölümünün genişletilmesine yönelik çalışma yapılması",
+   "Hafta 12 — Gelişme bölümünün sonlandırılmasına yönelik çalışma yapılması",
+   "Hafta 13 — Eserin tamamlanmasına yönelik çalışmalar 1",
+   "Hafta 14 — Eserin tamamlanmasına yönelik çalışmalar 2"
+  ],
+  "textbooks": [
+   "Usmanbaş, İlhan. 1974, Müzikte Biçimler. İstanbul: Milli Eğitim Basımevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=301",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 302": {
+  "code": "KMP 302",
+  "name": "Kompozisyon VI",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Yaylı çalgıların ve Türk müziği çalgılarının özelliklerini tanıma, yaylı çalgıların ve makam müziği çalgılar için bestelenmiş eserleri çözümleme, yaylı çalgıların ve Türk müziği çalgılarının özelliklerini içinde barındıran yaylı çalgılar orkestrası ve Türk müziği çalgıları için eser bestelenmesi. Composing a piece for strings and Turkish music instruments, which has the specific technical and stylistic features of a both sides",
+  "outcomes": [
+   "Yaylı çalgıların ve Türk müziği çalgılarının özelliklerini tanıma",
+   "Yaylı çalgıların ve Türk müziği çalgılar için bestelenmiş eserleri çözümleme.",
+   "Yaylı çalgılar orkestrası ve Türk müziği çalgıları için eser besteleme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yaylı çalgıların ve Türk müziği çalgılarının özelliklerini tanıma, yaylı çalgılar orkestrası ve makam müziği çalgıları için eser bestelenmesi amacıyla eserlerin çözümlenmesi",
+   "Hafta 2 — Yaylı çalgılar orkestrası ve Türk müziği çalgıları için eser bestelenmesi amacıyla ney ve klasik kemençe çalgıların çözümlenmesi",
+   "Hafta 3 — Yaylı çalgılar orkestrası ve Türk müziği çalgıları için eser bestelenmesi amacıyla kanun, ud ve tanbur çalgıların çözümlenmesi",
+   "Hafta 4 — Temayı oluşturma çalışması.",
+   "Hafta 5 — Temayı geliştirmeye yönelik çalışmalar yapılması",
+   "Hafta 6 — Temayı sonlandırmaya yönelik çalışmalar yapılması",
+   "Hafta 7 — B temasını oluşturma çalışması",
+   "Hafta 8 — B temasının geliştirilmesine yönelik çalışma yapılması",
+   "Hafta 9 — B temasının sonlandırılmasına yönelik çalışmalar yapılması",
+   "Hafta 10 — Temanın genişletilmesi üzerine çalışmalara devam edilmesi.",
+   "Hafta 11 — Gelişme bölümünü oluşturma çalışması",
+   "Hafta 12 — Gelişme bölümünün genişletilmesine yönelik çalışma yapılması",
+   "Hafta 13 — Gelişme bölümünün sonlandırılmasına yönelik çalışma yapılması",
+   "Hafta 14 — Eserin tamamlanması"
+  ],
+  "textbooks": [
+   "Hodier,Andre, 1992. Müzik Türleri ve Biçimleri, İstanbul: Pan Yayıncılık."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=302",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 303": {
+  "code": "KMP 303",
+  "name": "Kompozisyon Çözümleme I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "Armonik ve melodik çözümlemede temel ilkeler, diyatonik materyaller, 5li akorlar: tonik, dominant, alt dominant, kadas yapısı içinde toniğin dört-altı akoru, 6’lı akorlar tonik, dominant, alt dominant, tonik üstü akoru, dominant 7’li akorunun çevrimleri, dört- altı akoru, alt medyant ve medyant akorları, eksilmiş 5’li akoru, tonik üstü 7’li akorları, sansibilli ve eksilmiş 7’li akorları. The rules of analysing harmonic and melodic lines, the concept of diatonicsm, triads, the functtions of tonic, dominant, pre dominant, tonal scales and their harmonic functions, various types of seventh chords.",
+  "outcomes": [
+   "Armonik ve Melodik çözümlemenin temel ilkelerini bilme.",
+   "5’li ve 7’li akorların her biri için örnek eserler inceleme.The various usages of triads and seventh chords are denoted in the examples.",
+   "Öğrenilen öğeler doğrultusunda eserlerin çözümlemesini yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Armonik ve melodik analizde temel ilkeler.",
+   "Hafta 2 — Diyatonik materyalleri 5li akorlar: tonik, dominant, alt dominant, kadans yapısı içinde toniğin dört-altı akoru içeren eserlerin çözümlemeleri",
+   "Hafta 3 — 6’lı akorlar: tonik, dominant, alt dominant",
+   "Hafta 4 — Tonik üstü akoru, dominant 7’li akorunun çevrimleri",
+   "Hafta 5 — Dört-altı akoru, alt medyant ve medyant akorları, eksilmiş 5’li akoru",
+   "Hafta 6 — Tonik üstü 7’li akorları, sansiblli ve eksilmiş 7’li akorları.",
+   "Hafta 7 — Diğer diyatonik yapıdaki 7’li akorlar / Ara sınav",
+   "Hafta 8 — Beethoven, Minuet",
+   "Hafta 9 — Schuberte, Dance",
+   "Hafta 10 — Beethoven, Scottish Dance op.33, no.12",
+   "Hafta 11 — Purcell, Rigadoon",
+   "Hafta 12 — Rameau, Minue",
+   "Hafta 13 — Witt, Passacaglia",
+   "Hafta 14 — Grieg, Norsk"
+  ],
+  "textbooks": [
+   "Tovey, Donald Francıs, 1971. Essays in Musical Analysis, Oxford: Oxford University Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=303",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 304": {
+  "code": "KMP 304",
+  "name": "Kompozisyon Çözümleme II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "Kromatik materyaller, ikincil dominantlar, modülasyon : dominanta, ilgili minör moda, ilgili majör moda, alt dominanta, eksilmiş 7’li akorunun farklı kullanımları, napoli altılısı akoru, İtalyan, Alman, Fransız artmış altılı akorları, dominant’ın majör, minör 9’lu akorları Chromatism, secondary, modulation, diminished seventh chords augmented sixth chords",
+  "outcomes": [
+   "Kromatik materyaller hakkında detaylı bilgi sahibi olma. Modülasyon çözümlemesi yapabilme.",
+   "Modülasyon çözümlemesi yapabilme.",
+   "7’li, 9’lu akorlar, Napoli altılısı ve Artmış altılı akorların kullanımları hakkında bilgi sahibi olma.",
+   "Öğrenilen öğeler doğrultusunda eserlerin çözümlemesini yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Kromatik materyaller.",
+   "Hafta 2 — İkincil dominantlar.",
+   "Hafta 3 — Modülasyon :dominanta, ilgili minör moda, ilgili majör moda, alt dominanta",
+   "Hafta 4 — Eksilmiş 7’li akorunun farklı kullanımları",
+   "Hafta 5 — Napoli altılısı akoru",
+   "Hafta 6 — Artmış altılı akoru : İtalyan, Alman, Fransız",
+   "Hafta 7 — Dominant’ın majör, minör 9’lu akorları /Ara sınav",
+   "Hafta 8 — Bach, Cantata No.4, Sinfonia",
+   "Hafta 9 — Mozart, Minuet, K.355",
+   "Hafta 10 — Mendelssohn, Linder obne wörte, op.30,no.3",
+   "Hafta 11 — R.Strauss, Morgen, op,27, no.4",
+   "Hafta 12 — Wagner, Der Engel",
+   "Hafta 13 — Joplin, A Breeze from Alabama",
+   "Hafta 14 — Beethoven, Sonata,op.49, no.1"
+  ],
+  "textbooks": [
+   "Tovey, Donald Francıs, 1971. Essays in Musical Analysis, Oxford: Oxford University Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=304",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 305": {
+  "code": "KMP 305",
+  "name": "Koro Şefliği I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 2
+  },
+  "description": "Koro müziği tarihinin çözümlenmesi, koroyu oluşturan insan sesi gruplarının teknik özelliklerinin öğrenilmesi ve bu grupların çalıştırılması, Türk Makam Müziği’nde koro çalışmalarının çözümlenmesi, barok, klasik ve romantik döneme ait koro müziklerinin çözümlenmesi, koro şefliği ile ilgili uygulamalar. İntroduction to the history of choir, learning the techniqual features of choral voices, analysing examples from various periods of Western music as well as Turkish makam music, practioning conducting.",
+  "outcomes": [
+   "Koro müziği tarihi hakkında bilgi edinme.",
+   "İnsan sesi grupları hakkında bilgi sahibi olma.",
+   "Koro şefliği hakkında tecrübe kazanma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Çoksesliliğin tarihsel gelişiminin çözümlenmesi",
+   "Hafta 2 — Rönesans sonrası dönemlere genel bakış",
+   "Hafta 3 — Barok dönemin çözümlenmesi ve örnek koro müziklerinin dinlenmesi",
+   "Hafta 4 — Barok dönemde, farklı ülke bestecilerine göre üslupların çözümlenmesi",
+   "Hafta 5 — Klasik dönemin çözümlenmesi ve örnek koro müziklerinin dinlenmesi Klasik dönemde, farklı ülke bestecilerine göre üslupların çözümlenmesi",
+   "Hafta 6 — Romantik dönemin çözümlenmesi ve örnek koro müziklerinin dinlenmesi",
+   "Hafta 7 — Romantik dönemde, farklı ülke bestecilerine göre üslupların çözümlenmesi",
+   "Hafta 8 — Türk makam müziğinde koro çalışmalarının çözümlenmesi",
+   "Hafta 9 — Türk makam müziğine ait bir eserin koro ile provasının yapılması",
+   "Hafta 10 — Türk makam müziğine ait bir eserin koro ile provasının yapılması",
+   "Hafta 11 — Türk makam müziğinde polifonik koro çalışmalarının çözümlenmesi",
+   "Hafta 12 — Türk makam müziğine ait polifonik bir eserin koro ile provasının yapılması",
+   "Hafta 13 — Piyano eşlikli klasik batı müziği eserinin koro ile provası",
+   "Hafta 14 — Orkestra eşlikli klasik batı müziği eserinin koro ile provası"
+  ],
+  "textbooks": [
+   "Mc Elheran, Brock. 2004. Conducting Technique. N.Y: Oxford U. Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=305",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 306": {
+  "code": "KMP 306",
+  "name": "Koro Şefliği II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 1,
+   "practice": 1,
+   "lab": 0,
+   "local": 1.5,
+   "ects": 2
+  },
+  "description": "Koro için yazılmış bir eserin partisyonunun melodi, armoni ve form açısından çözümlenmesi, koroyu oluşturan ses gruplarının provada çalıştırılmasının öğrenilmesi, Türk Makam Müziği ve polifonik anlayışlarda bestelenmiş koro eserlerinin provalarının yaptırılması ve konserde sergilenmesi Anaysis of score of a choral piece in terms of melody, harmony, and form. Rehersal practices of different voice types. Rehersal practices of poliphonic choral pieces and pieces from Turkish Makam Music repertory; and their presentation at a concert",
+  "outcomes": [
+   "A capella koro müziği tarihi hakkında bilgi edinme.",
+   "A capella koro şefliği hakkında tecrübe kazanma.",
+   "Polifonik bir Türk müziği ve batı müziği eserini koro ile icra edebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Koro için yazılmış bir eserin partisyonunun melodik açıdan çözümlenmesi",
+   "Hafta 2 — Koro için yazılmış bir eserin partisyonunun armonik açıdan çözümlenmesi",
+   "Hafta 3 — Koro için yazılmış bir eserin partisyonunun form açısından çözümlenmesi",
+   "Hafta 4 — A capella koro müziğinin çözümlenmesi",
+   "Hafta 5 — A capella koro çalıştırma yöntemlerinin çözümlenmesi",
+   "Hafta 6 — A capella koro için yazılmış bir eserin soprano partisinin provasının yapılması",
+   "Hafta 7 — A capella koro için yazılmış bir eserin alto partisinin provasının yapılması",
+   "Hafta 8 — A capella koro için yazılmış bir eserin tenor partisinin provasının yapılması",
+   "Hafta 9 — A capella koro için yazılmış bir eserin bas partisinin provasının yapılması",
+   "Hafta 10 — Koronun prova öncesinde yapacağı ses açma egzersizlerinin çözümlenmesi",
+   "Hafta 11 — Koronun prova öncesinde yapacağı ses açma egzersizlerinin provasının yapılması",
+   "Hafta 12 — Polifonik bir Türk müziği eserinin koro ile provasının yapılması ve konserde sergilenmesi",
+   "Hafta 13 — Polifonik ve piyano eşlikli bir klasik batı müziği eserinin koro ile provasının yapılması ve konserde sergilenmesi",
+   "Hafta 14 — Polifonik ve orkestra eşlikli bir klasik batı müziği eserinin koro ile provasının yapılması konserde sergilenmesi"
+  ],
+  "textbooks": [
+   "Mc Elheran, Brock. 2004. Conducting Technique. N.Y: Oxford U. P."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=306",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 307": {
+  "code": "KMP 307",
+  "name": "Prozodi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "Vurgu çeşitleri, konuşma dili ve edebi dilimizin özellikleri, mânâ prozodisi, şiirin cümle yapısındaki halini melodiye yerleştirmek, hece taksimatını, noktalama işaretlerinin kullanımı. The types of accent, the oral and written language, prosody and the meaning, matching the words with the melody, the usage of syllables and quatation marks",
+  "outcomes": [
+   "Prozodi hakkında bilgi sahibi olma.",
+   "Söz ve müziği uyumlu kullanabilme",
+   "Prozodi hatalarını tespit edebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Dilde prozodi ve önemi",
+   "Hafta 2 — Hece özellikleri ve çeşitleri",
+   "Hafta 3 — Vurgu ve vurgunun uygulama alanları",
+   "Hafta 4 — Güftenin prozodisi",
+   "Hafta 5 — Aruz vezni ve ahenk prozodisi",
+   "Hafta 6 — Konuşma dilinin prozodisi",
+   "Hafta 7 — Günlük konuşma ve edebi konuşma",
+   "Hafta 8 — Müzik dili prozodisi",
+   "Hafta 9 — Hece taksimatından doğan hatalı uygulamalar",
+   "Hafta 10 — Bestede mana prozodisi",
+   "Hafta 11 — Mana Prozodisinde güzellik yaratan uygulama vasıtaları",
+   "Hafta 12 — Mana Prozodisinde hatalı uygulamalar",
+   "Hafta 13 — Güfte noktalamasının kompozisyona yöneltilmesi",
+   "Hafta 14 — Şarkı ve türkülerimizde prozodi çözümlemesi"
+  ],
+  "textbooks": [
+   "Güldaş, Dr. Saadet.2003,Türk Musikisinde Prozodi, İstanbul: Kurtiş Matbacılık."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=307",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 310": {
+  "code": "KMP 310",
+  "name": "Orkestrasyon I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 3
+  },
+  "description": "Orkestra tarihi, orkestra çalgı grupları ve diğer çalgılar, yaylı çalgılar: keman, viyola, viyolonsel, kontrbas orkestrada çalgı bileşimleri, yaylı çalgıların orkestrasyonu, üflemeli çalgılar, tahta üflemeli çalgılar: flütler, obua, korno, klarnet, fagot, tahta üflemelilerin orkestrasyonu, yaylı çalgılarla tahta üflemelilerin bir arada orkestrasyonu. The history of orchestra, the technical features of strings instruments, the technical features woodwind instruments, scoring for strings, scoring for woodwinds, combination of strings and woodwinds",
+  "outcomes": [
+   "Yaylı ve tahta üflemeli çalgılarda bileşimleri kavrama.",
+   "Yaylı ve tahta üflemeli çalgılarda melodi ve armoni dağılımını kavrama",
+   "Farklı grup çalgılar ve küçük orkestra için kompozisyon ve orkestrasyon yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Orkestrasyon’a giriş orkestra tanımı ve çalgı grupları.",
+   "Hafta 2 — Yaylı çalgılar: keman, viyola",
+   "Hafta 3 — Yaylı çalgılar: viyolonsel, kontrbas",
+   "Hafta 4 — Yaylı çalgılarda melodi",
+   "Hafta 5 — Yaylı çalgılarda orkestrasyon",
+   "Hafta 6 — Yaylı çalgılarda armoni",
+   "Hafta 7 — Yaylı çalgılarda bileşimler – Ara Sınav",
+   "Hafta 8 — Tahta üflemeli çalgılar: flüt, obua, korno",
+   "Hafta 9 — Tahta üflemeli çalgılar: klarnet, fagot.",
+   "Hafta 10 — Tahta üflemeli çalgılarda melodi",
+   "Hafta 11 — Tahta üflemeli çalgılarda armoni",
+   "Hafta 12 — Tahta üflemeli çalgılarda bileşimler",
+   "Hafta 13 — Yaylı ve tahta üflemelilerde orkestrasyon",
+   "Hafta 14 — Yaylı ve tahta üflemeli çalgılar için eser yazımı"
+  ],
+  "textbooks": [
+   "Adler, Samuel . 1989. The Study of Orchestration. New York: Oxford U. Press",
+   "Çalışır, Feridun. 1997. Çalgı Eğitimi. İstanbul: Pan Y."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=310",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 3112": {
+  "code": "KMP 3112",
+  "name": "Orkestrasyon II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=3112",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 3113": {
+  "code": "KMP 3113",
+  "name": "Kontrpuan Füg I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 0
+  },
+  "description": "Rönesans ve barok dönem müziği, kontrpuan ve sıkı kontrpuan tekniği hakkında bilgi, her iki tekniği kapsayan melodik yapı hakkında bilgi, 2, 3 ve 4 partili kontrpuan çözümlemeleri ve yazımı, imitasyon ve kanonik taklit çözümlemeleri ve yazımı. The musical styles of Renaissance and Baroque periods, the technique of counterpoint, partwriting rules according to the technique of species counterpoint, partwriting rules according to the rules of free counterpoint, analyses of canonic imitations and exercising them.",
+  "outcomes": [
+   "Rönesans ve Barok müziğini tanıma. Sıkı Kontrpuanı bilme. 2, 3 ve 4 Partili Kontrpuan yazma."
+  ],
+  "textbooks": [
+   "Tutu, Tevfik . 1992. “Çözümlemeli Kontrapunt. İzmir: Levent Müzik Evi Morris, R.O. 1976. Counterpoint. New York: Mc Grav Hill Piston, Walter. 1965. Counterpoint. New York: Oxford U. Press Thimann, E.H. 1947. Practical Free Counterpoint. London: Boosey & Hawkes"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=3113",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 3114": {
+  "code": "KMP 3114",
+  "name": "Kontrpuan Füg II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 0
+  },
+  "description": "Serbest kontrpuan, 2 partili melodi yazım tekniği, 3 partili melodi yazım tekniği, 4 partili melodi yazım tekniği, kanon, çevrilebilir kanon fugato, stretto, invensiyon, füg, ekpozisyon, 2, 3, 4 sesli füg yazımı. Free counterpoint, handling with 2,3,4 voiced textures, composing stylistic cannons, inventions and fugues.",
+  "outcomes": [
+   "Serbest kontrpuan ve melodi yazım tekniği hakkında detaylı bilgi edinme. Kanon, fugato, stretto, invensiyon, füg, ekspozisyon ve özellikleri hakkında bilgi sahibi olma ve yazma. 2, 3 ve 4 sesli füg yazma tekniklerini öğrenme ve yazma."
+  ],
+  "textbooks": [
+   "Tutu, Tevfik . 1992. Çözümlemeli Kontrapunt. İzmir: Levent Müzik Evi Morris, R.O. 1976. Counterpoint. New York: Mc Grav Hill Piston, Walter. 1965. Counterpoint New York: Oxford U. Press Thimann, E.H. 1947. Practical Free Counterpoin. London: Boosey & Hawkes"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=3114",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 312": {
+  "code": "KMP 312",
+  "name": "Türk Makam Müzğnde Kompzsyn",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "Bayati- Acem, Acemkürdi, Acemaşiran, Ferahfeza, Sultanîyegâh, Nihavend, Hicaz, Segâh – Müstear, Hüzzam, Saba, Şedaraban, Hicazkâr, Evcara, Suzidil makamları hakkında bilgi, farklı dönemlere ait eserlerin makam, usul ve form açısından çözümlenmesi, karşılaştırılması ve besteleme. Analyses of Bayati- Acem, Acemkürdi, Acemaşiran, Ferahfeza, Sultanîyegâh, Nihavend, Hicaz, Segâh – Müstear, Hüzzam, Saba, Şedaraban, Hicazkâr, Evcara, Suzidil makams from the perspectives of meter, form, stylistic historical features and composing new pieces in these makams.",
+  "outcomes": [
+   "Öğrenilen makamlara ait eserlerin dönemsel özellikleri ile ilgili karşılaştırmalı çözümleme yapabilme.",
+   "Öğrenilen makamlar doğrultusunda dönemsel özellikleri betimleyen eser yazabilme.",
+   "Öğrenilen makamlar doğrultusunda eser yazabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bayati- acem makamları hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamlarda çeşitli formda eser yazılması.",
+   "Hafta 2 — Acemkürdi hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 3 — Acemaşiran hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 4 — Ferahfeza hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 5 — Sultanîyegâh hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 6 — Nihavent hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 7 — Hicaz hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 8 — Segâh-müstear hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 9 — Hüzzam hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 10 — Saba hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 11 — Şedaraban hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 12 — Hicazkâr hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması.",
+   "Hafta 13 — Suzidil hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması",
+   "Hafta 14 — Evcâra hakkında bilgi, farklı dönemlere ait örnek eserlerin çözümlenmesi, bu makamda çeşitli formda eser yazılması."
+  ],
+  "textbooks": [
+   "Özalp,M., Nazmi, 1992. Türk Musikisi Beste Formları, Ankara: TRT Müzik Dairesi Yayınları."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 3122": {
+  "code": "KMP 3122",
+  "name": "Müzik Analiz Kompozisyon II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=3122",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 321": {
+  "code": "KMP 321",
+  "name": "Batı Müziği Literatürü I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Orta Çağ, Rönesans, Flaman Okulu, Roma Okulu, Barok Dönem, Rokoko Dönemi örnek eserlerinin piyano ile icrası, dinletilmesi ve partisyon takibi, çözümleme yöntemleri ile örnek eserleri ile ilgili tarihsel, yapısal, dönemsel bilgiler. Introduction to the examples of Middle ages, Reneaissance, Flemish school, Roman school, Baroque, Rococo by score reading, analysis on the stylistic features of these periods",
+  "outcomes": [
+   "Ortaçağ dönemi literatürünü tarihsel, yapısal, dönemsel olarak çözümleyip tanımlayabilme.",
+   "Barok dönemi literatürünü tarihsel, yapısal, dönemsel olarak çözümleyip tanımlayabilme",
+   "Rokoko dönemi literatürünü tarihsel, yapısal, dönemsel olarak çözümleyip tanımlayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Orta Çağ dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 2 — Erken Orta Çağ dönemi seçilmiş eserlerinin dinletilmesi ve çözümlem",
+   "Hafta 3 — Doruk Orta çağ dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 4 — Geç Orta Çağ dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 5 — Rönesans dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 6 — Flaman Okulu dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme Analysing the example of apex Baroque",
+   "Hafta 7 — Roma Okulu dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 8 — Barok dönem dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 9 — Erken Barok dönem dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 10 — Erken Barok dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 11 — Doruk Barok dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 12 — Geç Barok dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 13 — Rokoko dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme",
+   "Hafta 14 — Rokoko dönemi seçilmiş eserlerinin dinletilmesi ve çözümleme"
+  ],
+  "textbooks": [
+   "Griffiths, Paul. 2006. A Concise Music History, Cambridge University Press.",
+   "Leonard, Ratner. 1980. Classic Music: Expression, Form and Style, N.Y: Shirmer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=321",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 322": {
+  "code": "KMP 322",
+  "name": "Batı Müziği Literatürü II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Klasik Müzik Dönemi, Ön Klasik, Berlin Okulu, Mannheim Okulu, Viyana Ön Klasikleri, Erken Klasik, Doruk Klasik, Opera- Senfoni Formlarında ayrıca Haydn, Mozart, Beethoven, Bach, Clementi’nin örnek eserlerinin piyano ile icrası, nota takibi ile dinletilmesi ve çözümlenmesi yöntemiyle uluslararası çoksesli müziğin önemli eserlerinin tanıtılması. İntroduction to the examples of Pre-Classical, Classical , Berlin school, Mannheim school, 1. Vienesa school by score reading, analysis on the stylistic features of these eras",
+  "outcomes": [
+   "Klasik dönem literatürünü genel olarak tanıma.",
+   "Klasik dönem solo eserlerini tanıma.",
+   "Klasik dönem orkestra eserlerini tanıma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Klasik Müzik Dönemi",
+   "Hafta 2 — Ön Klasik Müzik Dönemi",
+   "Hafta 3 — Berlin Okulu",
+   "Hafta 4 — Mannheim Okulu",
+   "Hafta 5 — Viyana Ön Klasikleri",
+   "Hafta 6 — Erken Klasik Müzik Dönemi",
+   "Hafta 7 — Doruk Klasik Müzik Dönemi",
+   "Hafta 8 — Doruk Klasik Müzik Dönemi Örnek Eser Dinletisi",
+   "Hafta 9 — Haydn’a ait eserlerin çözümlenmesi ve dinleti",
+   "Hafta 10 — Mozart’a ait eserlerin çözümlenmesi ve dinleti",
+   "Hafta 11 — Beethoven’a ait eserlerin çözümlenmesi ve dinleti",
+   "Hafta 12 — Bach ‘a ait eserlerin çözümlenmesi ve dinleti",
+   "Hafta 13 — Clementi’ye ait eserlerin çözümlenmesi ve dinleti",
+   "Hafta 14 — Opera-Senfoni Formları"
+  ],
+  "textbooks": [
+   "Griffiths, Paul. 2006. A Concise Music History, Cambridge University Press.",
+   "Leonard, Ratner. 1980. Classic Music: Expression, Form and Style, N.Y: Shirmer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=322",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 323": {
+  "code": "KMP 323",
+  "name": "Türk Müziğinde Polifoni I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Polifonik müziğin tarihsel gelişiminin çözümlenmesi, Rönesans sonrası dönemler hakkında bilgi, Barok dönemin incelenmesi ve örnek eserlerin dinlenmesi, Barok dönemde, değişik ülke bestecilerine göre üslup farklılıklarının çözümlenmesi, Klasik dönemin incelenmesi ve örnek eserlerin dinlenmesi, Klasik dönemde, değişik ülke bestecilerine göre üslup farklılıklarının çözümlenmesi, Romantik dönemin incelenmesi ve örnek eserlerin dinlenmesi, Romantik dönemde, değişik ülke bestecilerine göre üslup farklılıklarının çözümlenmesi, Türk Müziğinde bestelenmiş polifonik eserlerin çözümlenmesi, Makam müziği çalgıları için, peşrev ve saz semaisi formlarında polifonik denemeler, Bir solo çalgıya, başka çalgıların eşlik etmesi çalışması İntroduction to the evolution of polyphony, ıntroduction to historical periods after Renaissance, examples from Baroque, Classical, Romantic, periods analyses of Turkish polyphonic music, experimenting polyphony with makam music.",
+  "outcomes": [
+   "Polifoni tarihi hakkında bilgi edinme.",
+   "Türk müziğinde bestelenmiş polifonik çalışmaları çözümleme.",
+   "Türk müziğinde polifonik beste çalışmaları yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Polifonik müziğin tarihsel gelişiminin çözümlenmesi",
+   "Hafta 2 — Rönesans sonrası dönemlere genel bakış",
+   "Hafta 3 — Barok dönemin incelenmesi ve örnek eserlerin dinlenmesi",
+   "Hafta 4 — Barok dönemde, değişik ülke bestecilerine göre üslup farklılıklarının çözümlenmesi",
+   "Hafta 5 — Klasik dönemin incelenmesi ve örnek eserlerin dinlenmesi",
+   "Hafta 6 — Klasik dönemde, değişik ülke bestecilerine göre üslup farklılıklarının çözümlenmesi",
+   "Hafta 7 — Romantik dönemin incelenmesi ve örnek eserlerin dinlenmesi",
+   "Hafta 8 — Romantik dönemde, değişik ülke bestecilerine göre üslup farklılıklarının çözümlenmesi",
+   "Hafta 9 — Türk Müziğinde bestelenmiş polifonik eserlerin çözümlenmesi",
+   "Hafta 10 — Makam müziği çalgıları için, peşrev ve saz semaisi formlarında polifonik denemeler",
+   "Hafta 11 — Bir solo çalgıya, başka bir çalgının eşlik etmesi çalışması: ney, kemençe",
+   "Hafta 12 — Bir solo çalgıya, başka iki çalgının eşlik etmesi çalışması: ney, kemençe, ud",
+   "Hafta 13 — Bir solo çalgıya, başka üç çalgının eşlik etmesi çalışması: ney, kemençe, ud, kanun",
+   "Hafta 14 — Bir solo çalgıya başka dört çalgının eşlik etmesi çalışması. ney, kemençe, ud, kanun, tanbur."
+  ],
+  "textbooks": [
+   "İlerici, Kemal. 1970 Bestecilik Bakımından Türk Müziği ve Armonisi. İstanbul: Milli Eğitim Basımevi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=323",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 324": {
+  "code": "KMP 324",
+  "name": "Türk Müziğinde Polifoni II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Makam müziği çalgıları için yaylı çalgılar eşlikli bestelenmiş eserlerin melodik, armonik ve orkestral açılardan çözümlenmesi, makam müziği çalgıları solistliğinde yaylı çalgılar eşlikli eser besteleme. To compose for makam music instruments by using string accompaniment",
+  "outcomes": [
+   "Çokseslilik hakkında bilgi edinme.",
+   "Türk müziğinde yapılmış çoksesli çalışmaların çözümlenmesi.",
+   "Türk müziğinde çoksesli beste çalışmaları yapma.",
+   "Bestelenen Türk müziği melodisi için armonik karakter tayin edebilme. Yaylı çalgılar ailesini tanıma.",
+   "Yaylı çalgılar ailesini tanıma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Makam müziği çalgıları solistliğinde yaylı çalgılar eşlikli eser yazmak amacıyla, daha önceden yazılmış örneklerin melodik açıdan çözümlenmesi.",
+   "Hafta 2 — Makam müziği çalgıları solistliğinde yaylı çalgılar eşlikli eser yazmak amacıyla, daha önceden yazılmış örneklerin armonik açıdan çözümlenmesi.",
+   "Hafta 3 — Makam müziği çalgıları solistliğinde yaylı çalgılar eşlikli eser yazmak amacıyla, daha önceden yazılmış örneklerin orkestrasyon açısından çözümlenmesi.",
+   "Hafta 4 — Makam müziği çalgıları solistliğinde yaylı çalgılar eşlikli eser yazmak amacıyla, en az 3 makam müziği çalgısı seçilmesi ve eser için solist çalgılara uygun tema hazırlama çalışması.",
+   "Hafta 5 — Makam müziği çalgıları solistliğinde yaylı çalgılar eşlikli eser yazmak amacıyla, solist çalgılara uygun temanın sonlandırılması.",
+   "Hafta 6 — Eserin B temasını oluşturma çalışması.",
+   "Hafta 7 — Eserin B temasının sonlandırılması.",
+   "Hafta 8 — Eserin gelişme bölümünün hazırlanması.",
+   "Hafta 9 — Esere uygun armonik anlayışın oluşturulması.",
+   "Hafta 10 — Eserde kullanılacak eşlik melodilerinin hazırlanılması: kontrşan",
+   "Hafta 11 — Eserde kullanılacak cevap melodilerinin ve bu melodilerin hangi çalgı tarafından seslendirileceğinin tayin edilmesi.",
+   "Hafta 12 — Eserin yaylı çalgılar için düzenlenmeye başlanması.",
+   "Hafta 13 — Eserin her temasına uygun ritmik eşlik karakterinin oluşturulması.",
+   "Hafta 14 — Eserin yaylı çalgılar için düzenlenmesinin tamamlanması."
+  ],
+  "textbooks": [
+   "Forsyth, Cecil. 2010. Orchestration, Newyork: Nabu Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=324",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 326": {
+  "code": "KMP 326",
+  "name": "Partisyon Çözümleme",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Temel ilkeler, yaylı çalgıların yazım teknikleri, üflemeli çalgıların yazım teknikleri, vurmalı çalgıların yazım teknikleri, piyano, gitar, bas, davul gibi çalgıların yazım teknikleri, farklı çalgı grup bileşenlerinin çözümlenmesi ve yazım teknikleri, combo ve big band toplulukları için yazım teknikleri The techniques of analysing and scoring for string, wind, percussive instruments in addition with solo instruments like piano, bass , drums…etc, the techniques of analysing and scoring for combo and big bands.",
+  "outcomes": [
+   "Orkestra yazısının temel ilkelerini öğrenme.",
+   "Yaylı çalgıların, bakır üflemelilerin, tahta üflemeliler, vurmalı çalgıların için yazılmış örnek eser partisyonlarını çözümlemede temel kriterleri öğrenme",
+   "Combo, big band için yazılmış örnek eser partisyonlarını çözümlemede temel kriterleri öğrenme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Orkestra yazısında temel ilkelere giriş.",
+   "Hafta 2 — Orkestral yazım teknikleri ve çözümlemede temel kriterler",
+   "Hafta 3 — Yaylı çalgıların orkestral yazım teknikleri ve çözümlemede temel kriterler1",
+   "Hafta 4 — Yaylı çalgıların orkestral yazım teknikleri ve çözümlemede temel kriterler2",
+   "Hafta 5 — Bakır üflemelilerin orkestral yazım teknikleri ve çözümlemede temel kriterler1",
+   "Hafta 6 — Bakır üflemelilerin orkestral yazım teknikleri ve çözümlemede temel kriterler2",
+   "Hafta 7 — Tahta üflemeliler orkestral yazım teknikleri ve çözümlemede temel kriterler1",
+   "Hafta 8 — Tahta üflemeliler orkestral yazım teknikleri ve çözümlemede temel kriterler2/Ara sınav",
+   "Hafta 9 — Vurmalı çalgıların orkestral yazım teknikleri ve çözümlemede temel kriterler1",
+   "Hafta 10 — Vurmalı çalgıların orkestral yazım teknikleri ve çözümlemede temel kriterler2",
+   "Hafta 11 — Big band, Combo yazım teknikleri ve çözümlemede temel kriterler 1",
+   "Hafta 12 — Big band, Combo yazım teknikleri ve çözümlemede temel kriterler 2",
+   "Hafta 13 — Çeşitli grup bileşimleri yazım teknikleri ve çözümlemede temel kriterler1",
+   "Hafta 14 — Çeşitli grup bileşimleri yazım teknikleri ve çözümlemede temel kriterler2"
+  ],
+  "textbooks": [
+   "Boyd, Bill. 1989, Jazz Chord Progressions. Canada : Hal Leonard Corporation."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=326",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 331": {
+  "code": "KMP 331",
+  "name": "Ölçü ve Vuruş Tekniği I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Ölçü ve vuruş tekniği ile ilgili genel teorik bilgi, temel vuruşlar, sağ ve sol elin fonksiyonları ve eş zamanlı kullanımı, temel nüanslar, çalgı veya çalgı guruplarının yönetimi, 2, 3, 4 ve 6 zamanlı usullerin vurulması ve karşılaştırma Türk müziğinde temel vuruşlar ve nüanslar. Introduction to conducting, beats, the function of the hands, dynamics, conducting different sections of instruments, beating simple and compound meters.",
+  "outcomes": [
+   "Sağ ve sol eli eş zamanlı kullanma.",
+   "Temel nüansları ve vurguları ifade etme.",
+   "Türk müziğinde temel vuruşları eş zamanlı yönetme.",
+   "Çalgı grupları ve küçük orkestra yönetme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ölçü ve vuruş tekniği ile ilgili genel teorik bilgi.",
+   "Hafta 2 — Ölçü ve usul kavramsal kuvvet derecelerinin örneklenmesi",
+   "Hafta 3 — Sağ elin fonksiyonları",
+   "Hafta 4 — 2, 3, 4 ve 6 zamanlı usullerin vurulması ve karşılaştırma",
+   "Hafta 5 — Bir çalgı grubunun içinde dinamikleri takip edebilme ve kavrayabilme.",
+   "Hafta 6 — W. A. Mozart Serenade in G 1. Bölüm 1",
+   "Hafta 7 — W. A. Mozart Serenade in G 1. Bölüm 2- Ara Sınav",
+   "Hafta 8 — W. A. Mozart Serenade in G 2. Bölüm 1",
+   "Hafta 9 — W. A. Mozart Serenade in G 2. Bölüm 2",
+   "Hafta 10 — W. A. Mozart Serenade in G 3. Bölüm 1",
+   "Hafta 11 — W. A. Mozart Serenade in G 3. Bölüm 2",
+   "Hafta 12 — W. A. Mozart Serenade in G 4. Bölüm",
+   "Hafta 13 — Türk Müziğinde küçük usuller",
+   "Hafta 14 — Dede Efendi – Yine bir gülnihal üzerine çalışma"
+  ],
+  "textbooks": [
+   "Mc Elheran, Brock. 2004. Conducting Technique. N.Y: Oxford U. P."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=331",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 3312": {
+  "code": "KMP 3312",
+  "name": "Türk Müziğinde Polifoni II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=3312",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 332": {
+  "code": "KMP 332",
+  "name": "Ölçü ve Vuruş Tekniği II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Sağ ve sol el nüans kullanımı, büyük orkestra yönetimi, saz semai örnek eserlerde çalışmalar, peşrev örnek eserlerde çalışmalar, Türk müziğinde aksak ve büyük usuller. The coordination of hands, conducting symhonic orchestra, exaples of saz semai, peşrev, asymetric structures in Turkish makam music.",
+  "outcomes": [
+   "Sağ ve sol eli eş zamanlı kullanma.",
+   "Türk makam müziği usullerini bilme ve eş zamanlı vurarak yönetme.",
+   "Büyük orkestra yönetme",
+   "Temel nüansları ve vurguları ifade etme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Büyük orkestra yönetim tekniği ile ilgili genel teorik bilgiler",
+   "Hafta 2 — J. Haydn Senfoni No. 100 1. bölüm",
+   "Hafta 3 — L.v. Beethoven 1. Senfoni 1. bölüm",
+   "Hafta 4 — L.v. Beethoven 1. Senfoni 2. bölüm",
+   "Hafta 5 — L.v. Beethoven 1. Senfoni 3. bölüm",
+   "Hafta 6 — L.v. Beethoven 1. Senfoni 4. bölüm",
+   "Hafta 7 — Saz Semai örnek eserlerde çalışmalar Ara Sınavı",
+   "Hafta 8 — Peşrev örnek eserlerde çalışmalar",
+   "Hafta 9 — P.I.Tchaikovsky 4. Senfoni 1. Bölüm",
+   "Hafta 10 — P.I.Tchaikovsky 4. Senfoni 2. Bölüm",
+   "Hafta 11 — P.I.Tchaikovsky 4. Senfoni 3. Bölüm",
+   "Hafta 12 — P.I.Tchaikovsky 4. Senfoni 4. Bölüm",
+   "Hafta 13 — Türk Müziğinde büyük usuller",
+   "Hafta 14 — Itrî- Neva Kâr üzerine çalışma"
+  ],
+  "textbooks": [
+   "Mc Elheran, Brock. 2004. Conducting Technique. N.Y: Oxford U. P."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=332",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 351": {
+  "code": "KMP 351",
+  "name": "Türk Müziği Literatürü",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "13. yüzyıldan 18. yüzyıla, Osmanlı dönemi Türk makam müziği bestekârlarının yaşadığı sosyo-kültürel konum, bestecilik anlayışları, tarihsel süreç içerisinde kompozisyonların gelişimi, değişimi ve ayırıcı özellikleri. The distinctive qualities of Turkısh makam music composers during the period between 13’th and 18’th centuries, their social statue and their stylistic features",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=351",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 361": {
+  "code": "KMP 361",
+  "name": "Türk MzğndeFrmBilg.ve Çzmlme I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Türk makam müziğinde formu oluşturan figür-motif-cümlecik-cümle-periyod gibi temel elemanlar. Fasıl türünü oluşturan formlar: Peşrev, medhal, kar, karçe, kar-ı natık, murabba, nakış, ağır semai, yürük semai, saz semai, sirto, longa, mandra. Marş, semai, şarkı, gazel, köçekçe, divan, kanto, operet, hayal musikisi: karagöz, müstezad, bahariye, türkü. Örnek eser çözümlemeleri ve uygulamaları. Main elements of forms in Turkish Music such as figure, motive, sentence, phrase, period. The forms of Fasıl. Peşrev, medhal, kar, karçe, kar-ı natık, murabba, nakış, ağır semai, yürük semai, saz semai, sirto, longa, mandra. Marş, semai, şarkı, gazel, köçekçe, divan, kanto, operet, hayal musikisi: karagöz, müstezad, bahariye, folk song, Analysis and practices on the works.",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=361",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 361E": {
+  "code": "KMP 361E",
+  "name": "Türk MzğndeFrmBilg.ve Çzmlme I",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Türk makam müziğinde formu oluşturan figür-motif-cümlecik-cümle-periyod gibi temel elemanlar. Fasıl türünü oluşturan formlar: Peşrev, medhal, kar, karçe, kar-ı natık, murabba, nakış, ağır semai, yürük semai, saz semai, sirto, longa, mandra. Marş, semai, şarkı, gazel, köçekçe, divan, kanto, operet, hayal musikisi: karagöz, müstezad, bahariye, türkü. Örnek eser çözümlemeleri ve uygulamaları. Main elements of forms in Turkish Music such as figure, motive, sentence, phrase, period. The forms of Fasıl. Peşrev, medhal, kar, karçe, kar-ı natık, murabba, nakış, ağır semai, yürük semai, saz semai, sirto, longa, mandra. Marş, semai, şarkı, gazel, köçekçe, divan, kanto, operet, hayal musikisi: karagöz, müstezad, bahariye, folk song, Analysis and practices on the works.",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=361",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 362": {
+  "code": "KMP 362",
+  "name": "Türk MzğndeFrmBlg.ve Çzmlme II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Figür, motif, cümlecik, cümle, periyot gibi temel form elemanları. Örnek eserler üzerinde çözümleme çalışmaları. Koşma, mani, semai, türkü, varsağı. Hoyrat, divan, gazel, bozlak, barak, müstezad, maya, gurbet havası, yol havası. Semah, nefes, kalenderi, gülbang, savt. Zeybek, Teke zortlatması, halay, bar, horon, karşılama, kaşık havası. Aşık Müziği. Barana, oturak, sıra gecesi. Basic form elements; figure, motive, sentence, phrase, period. Analysis of various musical forms. Koşma, mani, semai, türkü, varsağı. Hoyrat, divan, gazel, bozlak, barak, müstezad, maya, gurbet havası, yol havası. Semah, nefes, kalenderi, gülbang, savt. Zeybek, Teke zortlatması, halay, bar, horon, karşılama, kaşık havası. Aşık Müziği. Barana, oturak, sıra gecesi.",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=362",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 362E": {
+  "code": "KMP 362E",
+  "name": "Türk MzğndeFrmBlg.ve Çzmlme II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Figür, motif, cümlecik, cümle, periyot gibi temel form elemanları. Örnek eserler üzerinde çözümleme çalışmaları. Koşma, mani, semai, türkü, varsağı. Hoyrat, divan, gazel, bozlak, barak, müstezad, maya, gurbet havası, yol havası. Semah, nefes, kalenderi, gülbang, savt. Zeybek, Teke zortlatması, halay, bar, horon, karşılama, kaşık havası. Aşık Müziği. Barana, oturak, sıra gecesi. Basic form elements; figure, motive, sentence, phrase, period. Analysis of various musical forms. Koşma, mani, semai, türkü, varsağı. Hoyrat, divan, gazel, bozlak, barak, müstezad, maya, gurbet havası, yol havası. Semah, nefes, kalenderi, gülbang, savt. Zeybek, Teke zortlatması, halay, bar, horon, karşılama, kaşık havası. Aşık Müziği. Barana, oturak, sıra gecesi.",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=362",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 364": {
+  "code": "KMP 364",
+  "name": "Batı Mzğnde Frm Bilg.ve Çzmlme",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Formları oluşturan öğeler, türler, biçimler ve yapısal özellikleri bağımsız bölmelerin farklı şekillerde kullanılması, motif, motif işleme yöntemleri, ikiz motif, cümle yapısı, periyod, şarkı formu ve örnek eserlerin çözümlenmesi, süit formu ve örnek eserlerin çözümlenmesi, rondo formu ve örnek eserlerin çözümlenmesi, sonat formu ve örnek eserlerin çözümlenmesi, tema ve değişiklikleri, füg, basso ostinato, passacaglia, chaconne, koral prelüd, motet-madrigal formları ve örnek eserlerin çözümlenmesi, oda Müziği ve örnek eserlerin çözümlenmesi, senfoni formu ve örnek eserlerin çözümlenmesi, konçerto formu ve örnek eserlerin çözümlenmesi, opera ,missa, oratorio, cantata, koral formları ve örnek eserlerin çözümlenmesi The elements of musical form, the various usages of independent structures, repetitive forms and repetition of musical ideas by continuation.",
+  "outcomes": [
+   "Formu oluşturan öğeleri bilme. Batı müziği formları hakkında bilgi edinme. III. Batı müziği eserlerini, formu oluşturan öğeler doğrultusunda çözümleme."
+  ],
+  "textbooks": [
+   "Hodier, Andre, 1992. Müzik Türleri ve Biçimleri, İstanbul: Pan Yayıncılık Koray, Fuad, 1957. Müzik Formları, İstanbul: Maarif Vekâleti Kaplan, Zekai, 1992. Dini Musıki Dersleri, İstanbul: Özalp, M. Nazmi, 1992. Türk Musikisi Beste Formları, Ankara: TRT Müzik Dairesi Yayınları."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=364",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 364E": {
+  "code": "KMP 364E",
+  "name": "Batı Mzğnde Frm Bilg.ve Çzmlme",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 2,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Formları oluşturan öğeler, türler, biçimler ve yapısal özellikleri bağımsız bölmelerin farklı şekillerde kullanılması, motif, motif işleme yöntemleri, ikiz motif, cümle yapısı, periyod, şarkı formu ve örnek eserlerin çözümlenmesi, süit formu ve örnek eserlerin çözümlenmesi, rondo formu ve örnek eserlerin çözümlenmesi, sonat formu ve örnek eserlerin çözümlenmesi, tema ve değişiklikleri, füg, basso ostinato, passacaglia, chaconne, koral prelüd, motet-madrigal formları ve örnek eserlerin çözümlenmesi, oda Müziği ve örnek eserlerin çözümlenmesi, senfoni formu ve örnek eserlerin çözümlenmesi, konçerto formu ve örnek eserlerin çözümlenmesi, opera ,missa, oratorio, cantata, koral formları ve örnek eserlerin çözümlenmesi The elements of musical form, the various usages of independent structures, repetitive forms and repetition of musical ideas by continuation.",
+  "outcomes": [
+   "Formu oluşturan öğeleri bilme. Batı müziği formları hakkında bilgi edinme. III. Batı müziği eserlerini, formu oluşturan öğeler doğrultusunda çözümleme."
+  ],
+  "textbooks": [
+   "Hodier, Andre, 1992. Müzik Türleri ve Biçimleri, İstanbul: Pan Yayıncılık Koray, Fuad, 1957. Müzik Formları, İstanbul: Maarif Vekâleti Kaplan, Zekai, 1992. Dini Musıki Dersleri, İstanbul: Özalp, M. Nazmi, 1992. Türk Musikisi Beste Formları, Ankara: TRT Müzik Dairesi Yayınları."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=364",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 381": {
+  "code": "KMP 381",
+  "name": "Çalgı Müzikleri Besteciliği",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=381",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 401": {
+  "code": "KMP 401",
+  "name": "Kompozisyon VII",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Koroyu oluşturan ses gruplarının teknik özelliklerinin öğrenilmesi: soprano, alto, tenor, bas, a capella koro eserlerini çözümleme, a capella koronun özelliklerini içinde barındıran a capella koro için eser bestelenmesi. Composing a piece for a capella choir, which has the specific technical and stylistic features of a choir.",
+  "outcomes": [
+   "A capella koronun özelliklerini tanıma.",
+   "A capella koro eserlerini çözümleme.",
+   "A capella koro için eser besteleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — A capella koro için eser bestelenmesi amacıyla eserlerinin incelenmesi",
+   "Hafta 2 — Koroda bulunan ses gruplarından soprano ve alto ses gruplarının teknik açıdan incelenmesi",
+   "Hafta 3 — Koroda bulunan ses gruplarından tenor ve bas ses gruplarının teknik açıdan incelenmesi.",
+   "Hafta 4 — Temayı oluşturma çalışması.",
+   "Hafta 5 — Temayı geliştirmeye yönelik çalışma yapılması",
+   "Hafta 6 — Temayı sonlandırmaya yönelik çalışma yapılması",
+   "Hafta 7 — B temasını oluşturma çalışması",
+   "Hafta 8 — B temasını geliştirmeye yönelik çalışma yapılması",
+   "Hafta 9 — B temasını sonlandırmaya yönelik çalışma yapılması",
+   "Hafta 10 — Gelişme bölümünü oluşturma çalışması",
+   "Hafta 11 — Gelişme bölümünü genişletmeye yönelik çalışma yapılması",
+   "Hafta 12 — Gelişme bölümünü sonlandırmaya yönelik çalışma yapılması",
+   "Hafta 13 — Eserin prozodi açısından ve nefes alma yerleri açısından kontrol edilmesi",
+   "Hafta 14 — Eserin tamamlanmasına yönelik çalışmalar ve eseri tamamlama"
+  ],
+  "textbooks": [
+   "Dandelot, Georges. 1957. Re’sume du Cours de Construction Musicale. Paris: Published by Editions Henry Lemoine.",
+   "Hodier,Andre, 1992. Müzik Türleri ve Biçimleri, İstanbul: Pan Yayıncılık.",
+   "Koray, Fuad, 1957. Müzik Formları, İstanbul: Maarif Vekâleti.",
+   "Usmanbaş, İlhan. 1974, Müzikte Biçimler. İstanbul: Milli Eğitim Basımevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=401",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 402": {
+  "code": "KMP 402",
+  "name": "Kompozisyon VIII",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Senfonik müziğin özelliklerini tanıma, ,senfoni orkestrasında bulunan tahta üflemeli çalgıların, bakır üflemeli çalgıların ve vurmalı çalgıların teknik özelliklerinin öğrenilmesi büyük orkestra için bestelenmiş senfonik eserleri çözümleme, büyük orkestranın özelliklerini içinde barındıran senfonik eser bestelenmesi,. Composing a piece for symphonic orchestra, which has the specific technical and stylistic features of a symhonic orchestra.",
+  "outcomes": [
+   "Büyük orkestranın özelliklerini tanıma",
+   "Senfonik müziğin özelliklerini tanıma.",
+   "Büyük orkestra için bestelenmiş senfonik eserleri çözümleme",
+   "Büyük orkestra için senfonik eser besteleme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Büyük orkestranın özelliklerini tanıma, senfonik müziğin özelliklerini tanıma, büyük orkestra için senfonik eser bestelenmesi amacıyla eserlerinin çözümlenmesi",
+   "Hafta 2 — Büyük orkestra için senfonik eser bestelenmesi amacıyla orkestrada bulunan tahta üflemeli sazların çözümlenmesi",
+   "Hafta 3 — Büyük orkestra için senfonik eser bestelenmesi amacıyla orkestrada bulunan bakır üflemeli sazların çözümlenmesi",
+   "Hafta 4 — Büyük orkestra için senfonik eser bestelenmesi amacıyla orkestrada bulunan vurmalı sazların çözümlenmesi",
+   "Hafta 5 — Temayı oluşturmaya yönelik çalışma yapılması",
+   "Hafta 6 — Temayı geliştirmeye yönelik çalışma yapılması",
+   "Hafta 7 — Temayı sonlandırmaya yönelik çalışma yapılması",
+   "Hafta 8 — B temasını oluşturma çalışması",
+   "Hafta 9 — B temasını geliştirmeye yönelik çalışma yapılması",
+   "Hafta 10 — B temasını sonlandırmaya yönelik çalışma yapılması",
+   "Hafta 11 — Gelişme bölümünü oluşturma çalışması.",
+   "Hafta 12 — Gelişme bölümünü genişletmeye yönelik çalışma yapılması",
+   "Hafta 13 — Gelişme bölümünü sonlandırmaya yönelik çalışma yapılması",
+   "Hafta 14 — Eserin tamamlanmasına yönelik çalışmalar ve eseri tamamlama"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=402",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 403": {
+  "code": "KMP 403",
+  "name": "Kompozisyon Çözümleme III",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "Formal Kontrpuan, envansiyon, sinfonia, prelüd, füg ve seçilmiş eserlerin çözümlenmesi. Species counterpoint, two and three-voice invention, prelude, and fugue; and analysis on a selected repertory.",
+  "outcomes": [
+   "Kontrpuan ve eserlerdeki çözümlemesi hakkında bilgi sahibi olma.",
+   "Envansiyon, Sinfonia, Prelüd, Füg hakkında bilgi sahibi olma.",
+   "Öğrenilen öğeler doğrultusunda eserlerin çözümlemesini yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Formal Kontrpuan 1",
+   "Hafta 2 — Formal Kontrpuan 2",
+   "Hafta 3 — Envansiyon",
+   "Hafta 4 — Sinfonia",
+   "Hafta 5 — Prelüd",
+   "Hafta 6 — Füg 1",
+   "Hafta 7 — Füg 2/ Ara sınav",
+   "Hafta 8 — Bach, Cantata.4, sinfonia",
+   "Hafta 9 — Bach, Invention, no.4, BWV 775",
+   "Hafta 10 — Bach, Sinfonia3, BWV 789",
+   "Hafta 11 — Bach, The Well-Tempered Clavier, vol.I,Fugue 2",
+   "Hafta 12 — Bach, The Well-Tempered Clavier, vol.II,Fugue 9",
+   "Hafta 13 — Bach, Chorale Prelude on “ In Dulci Jubilo”",
+   "Hafta 14 — Bach, Chorale Prelude on “ Christ Lag in Todesbanden”"
+  ],
+  "textbooks": [
+   "Tovey, Donald Francıs, 1971. Essays in Musical Analysis, Oxford: Oxford University Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=403",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 404": {
+  "code": "KMP 404",
+  "name": "Kompozisyon Çözümleme IV",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 2
+  },
+  "description": "20.yüzyıl müziği, ilave edilmiş altere akorlar, diyatonik modlar, pantiyatonizm, egzotik diziler, dörtlü armoni, poliarmoni, politonalite, aralık müzik, 12 ton-serializm, öğrenilen öğeler doğrultusunda seçilmiş eserlerin çözümlemesi. 20th Century music, altered chords, diatonic modes, pentatonism, exodic scales, modal harmony, polyharmony, polytonality, and twelve-ton serialism. Analysis on a selected repertory.",
+  "outcomes": [
+   "20.yüzyıl müziğinin temel kavramları hakkında bilgi sahibi olma.",
+   "20.yüzyıl müziğinde kullanılan çok seslilik teknikleri hakkında bilgi sahibi olma.",
+   "Öğrenilen öğeler doğrultusunda eserlerin çözümlemesini yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — 20.yüzyıl müziği",
+   "Hafta 2 — İlave edilmiş altere akorlar",
+   "Hafta 3 — Diyatonik modlar",
+   "Hafta 4 — Pandiyatonizm , egzotik diziler",
+   "Hafta 5 — Dörtlü armoni",
+   "Hafta 6 — Poliarmoni, politonalite",
+   "Hafta 7 — Aralık müzik, 12 ton-serializm/ Ara sınav",
+   "Hafta 8 — Ravel, sonatine,mouv.11",
+   "Hafta 9 — Debussy, Pour le Piano:Serabande",
+   "Hafta 10 — Bartok, sonatina",
+   "Hafta 11 — Prokofiev, Classical Symphony,op.25",
+   "Hafta 12 — Hindemith, Ludus Tonalis, Fuga undecima in B : Canon",
+   "Hafta 13 — Ruggles, Evocations, no.1",
+   "Hafta 14 — Schönberg, Suite für Klavier, op.25,Menuett"
+  ],
+  "textbooks": [
+   "Tovey, Donald Francıs, 1971. Essays in Musical Analysis, Oxford: Oxford University Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=404",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 405": {
+  "code": "KMP 405",
+  "name": "Modern Armoni",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 5
+  },
+  "description": "Post Romantik dönem, armoni malzemesi, kromatizm, empresyonist armoni anlayışı ve armonik birikimleri, çok tonluluk ve 12 ton müziğinde armonik anlayış, modern armonide aralıklar ve suni yedili akorları, yedili, dokuzlu, onbirli, onüçlü akorların modern armonide kullanışla, salkım akorlar, bileşik akorlar, ayna armonisi, modern armonide, armonisel yöneliş ve akor bağlantıları, paralel ve armonik hareketler, modern armonide kadans anlayışı, armonide ritim ve armoninin ritmik kullanılışı, nüans ve süsleme notalarının modern armonideki yeri, armonik genişlemeler, kromatik değiştirimler, modern armonide pedal ve ostinato kavramları, modern armonide ton merkezleri ve ton değiştirme anlayışı, modern armonide yeni form anlayışları ve notalama yöntemleri. Post Romanticism, extended chromatism , stylistic features of empressionism, dodecophony, poly chords, clusters, centricity, formal disorganizarions and the concept of cadence in Modern Music.",
+  "outcomes": [
+   "Yirminci yüzyılda ortaya çıkan müzik dilleri konusunda bilgi sahibi olma.",
+   "Tonal müziğin ortaya koyduğu müzikal prensipler ile bu derste öğrendiklerini karşılaştırarak bütünlüklü bir müzik algısına ulaşma.",
+   "Türk Müziği çok seslendirilmesi konusunda yeni arayışlarda bulunma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Post Romantik dönem, armoni malzemesi, kromatizm.",
+   "Hafta 2 — Empresyonist armoni anlayışı ve armonik birikimleri.",
+   "Hafta 3 — Çok tonluluk ve 12 ton müziğinde armonik anlayış.",
+   "Hafta 4 — Modern armonide aralıklar ve sun’i yedili akorları.",
+   "Hafta 5 — Yedili , dokuzlu, onbirli, onüçlü akorların modern armonide kullanışları.",
+   "Hafta 6 — Salkım akorlar, bileşik akorlar, ayna armonisi. Ara Sınav.",
+   "Hafta 7 — Modern armonide, armonisel yöneliş ve akor bağlantıları. Paralel ve armonik hareketler.",
+   "Hafta 8 — Modern armonide kadans anlayışı",
+   "Hafta 9 — Armonide ritim ve armoninin ritmik kullanılışı.",
+   "Hafta 10 — Nüans ve süsleme notalarının modern armonideki yeri.",
+   "Hafta 11 — Armonik genişlemeler, kromatik değiştirimler.",
+   "Hafta 12 — Modern armonide pedal ve ostinato kavramları.",
+   "Hafta 13 — Modern armonide ton merkezleri ve ton değiştirme anlayışı.",
+   "Hafta 14 — Modern armonide yeni form anlayışları ve notalama yöntemleri."
+  ],
+  "textbooks": [
+   "Usmanbaş, İlhan, 1974, Müzikte Biçimler (XX.yy.Armonisi ek bölümü), İstanbul Milli Eğitim Basımevi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=405",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 411": {
+  "code": "KMP 411",
+  "name": "Orkestrasyon II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 0,
+   "practice": 2,
+   "lab": 0,
+   "local": 1,
+   "ects": 3
+  },
+  "description": "Yaylı çalgılar orkestrası, tahta üflemeli çalgılar orkestrası, bakır üflemeli çalgılar orkestrası: trompet, trombon, korno, tuba, yaylı çalgılar ve üflemeli çalgılar birleşimleri, yaylı çalgılar, üflemeli çalgılar ve vurmalı çalgılar kombinasyonları. İntroduction to brass instruments, percussion instruments and the combinations of brass instruments with percussion instruments, scoring for string, wind and percussion instruments",
+  "outcomes": [
+   "Bakır Üflemeli çalgılarda bileşimleri kavrama.",
+   "Orkestra çalgı gurupları arasında melodi ve armoni dağılımını kavrama.",
+   "Farklı grup çalgılar ve büyük orkestra için kompozisyon ve orkestrasyon yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bakır üflemeli çalgılar: korno, trompet",
+   "Hafta 2 — Bakır üflemeli çalgılar: trombon, tuba",
+   "Hafta 3 — Bakır üflemeli çalgılarda çalgı bileşimleri",
+   "Hafta 4 — Bakır üflemeli çalgılarda melodi",
+   "Hafta 5 — Bakır üflemeli çalgılarda armoni",
+   "Hafta 6 — Vurmalı çalgılar",
+   "Hafta 7 — Orkestralama / Ara sınav",
+   "Hafta 8 — Yaylılar ve tahta üflemeli çalgılar bileşimi 1",
+   "Hafta 9 — Yaylılar ve tahta üflemeli çalgılar bileşimi 2",
+   "Hafta 10 — Bakır ve tahta üflemeli çalgıların bileşimi 1",
+   "Hafta 11 — Bakır ve tahta üflemeli çalgıların bileşimi 2",
+   "Hafta 12 — Bakır üflemeli ve yaylı çalgıların bileşimi 1",
+   "Hafta 13 — Bakır üflemeli ve yaylı çalgıların bileşimi 2",
+   "Hafta 14 — Orkestrada akorların paylaşımı"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=411",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 4116": {
+  "code": "KMP 4116",
+  "name": "Kompozisyon VIII",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=4116",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 4117": {
+  "code": "KMP 4117",
+  "name": "Modern Armoni",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=4117",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 4122": {
+  "code": "KMP 4122",
+  "name": "Müzik Analiz Kompozisyon IV",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 2,
+   "lab": 0,
+   "local": 3,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=4122",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 421": {
+  "code": "KMP 421",
+  "name": "Batı Müziği Literatürü III",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Romantik Dönem, Alman Müziği Romantikleri; Weber, Mendelson, Schumann, İtalyan Müziği Romantikleri; Rossini, Verdi, Donizetti, Bellini, Puccini, Berlioz-Brams , Chopin-Wagner’in örnek eserlerinin piyano ile icrası, nota takibi ile dinletilmesi ve çözümlenmesi yöntemiyle uluslararası çoksesli müziğin önemli eserlerinin tanıtılması İntroduction to the examples of German and İtalian Romaticism; Weber, Mendelssohn, Schuman, Rossini, Verdi, Donizetti, Bellini, Puccini, Berlioz, Brahms, Chopin, Wagner by score reading, analysis on the stylistic features of this era.",
+  "outcomes": [
+   "Romantik dönem literatürünü tarihsel, yapısal, dönemsel olarak çözümleyip tanımlayabilme.",
+   "Romantik dönem solo eserlerini tanıma.",
+   "Romantik dönem orkestra eserlerini tanıma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Romantik döneme giriş",
+   "Hafta 2 — Alman müziği romantikleri",
+   "Hafta 3 — Weber’in örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 4 — Mendelson’un örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 5 — Schumann’ın örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 6 — İtalyan müziği romantikleri",
+   "Hafta 7 — Rossini’nin örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 8 — Verdi’nin örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 9 — Donizetti’nin örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 10 — Bellini’nin örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 11 — Puccini’nin örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 12 — Chopin’in örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 13 — Wagner’in örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 14 — Berlioz-Brams’ın örnek eser çözümlemeleri ve dinletisi"
+  ],
+  "textbooks": [
+   "Griffiths, Paul. 2006. A Concise Music History, Cambridge University Press.",
+   "Leonard, Ratner. 1980. Classic Music: Expression, Form and Style, N.Y: Shirmer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=421",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 422": {
+  "code": "KMP 422",
+  "name": "Batı Müziği Literatürü IV",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Ulusalcılık Akımı, Balakiriev, Cui, Borodin, Mussorgski, Gershwin, Hindemith, Kabalevski, Rachmaninov, Khachaturian, Britten,Copland, Rimski Korsakof ‘un örnek eserlerinin piyano ile icrası, nota takibi ile dinletilmesi ve çözümleme yöntemiyle uluslararası çoksesli müziğin önemli eserlerinin tanıtılması. İntroduction to the examples of Nationalism; Balakiriev, Cui, Borodin, Mussorgski, Gershwin, Kabalevski, Rachmaninov, Khachaturian, Britten, Copland, Rimski Korsakof by score reading, analysis on the stylistic features of this era.",
+  "outcomes": [
+   "Geç romantik dönem literatürünü tarihsel, yapısal, dönemsel olarak çözümleyip tanımlayabilme",
+   "Geç romantik dönem solo eserlerini tanıma.",
+   "Geç romantik dönem orkestra eserlerini tanıma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Ulusalcılık Akımı",
+   "Hafta 2 — Balakiriev’in örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 3 — Cui örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 4 — Borodin’in örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 5 — Mussorgski’nin örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 6 — Prokofiev’in örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 7 — Korsakof ‘un örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 8 — Hindemith’in örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 9 — Kabalevski’nin örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 10 — Rachmaninov’un örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 11 — Khachaturian’ın örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 12 — Britten’in örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 13 — Copland’ın örnek eser çözümlemeleri ve dinletisi",
+   "Hafta 14 — Gershwin’in örnek eser çözümlemeleri ve dinletisi"
+  ],
+  "textbooks": [
+   "Griffiths, Paul. 2006. A Concise Music History, Cambridge University Press.",
+   "Leonard, Ratner. 1980. Classic Music: Expression, Form and Style, N.Y: Shirmer"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=422",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 423": {
+  "code": "KMP 423",
+  "name": "Türk Müziğinde Polifoni III",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Türk müziği çalgıları ve /veya şan solistliğinde senfonik orkestra eşlikli eserlerin melodik, armonik ve orkestral açılardan çözümlenmesi, makam müziği çalgıları ve /veya şan solistliğinde senfonik orkestra eşlikli eser yazmak. To compose for makam music instruments by using string accompaniment",
+  "outcomes": [
+   "Çokseslilik hakkında bilgi edinme.",
+   "Türk müziğinde yapılmış çoksesli çalışmaların çözümlenmesi",
+   "Türk müziğinde çoksesli beste çalışmaları yapma.",
+   "Bestelenen Türk müziği melodisi için armonik karakter tayin edebilme.",
+   "Senfoni orkestrası çalgılarını tanıma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Türk müziği çalgıları ve /veya şan solistliğinde senfonik orkestra eşlikli eser yazmak daha önceden yazılmış örneklerin melodik açıdan çözümlenmesi",
+   "Hafta 2 — Türk müziği çalgıları ve /veya şan solistliğinde senfonik orkestra eşlikli eser yazmak daha önceden yazılmış örneklerin armonik açıdan çözümlenmesi",
+   "Hafta 3 — Türk müziği çalgıları ve /veya şan solistliğinde senfonik orkestra eşlikli eser yazmak daha önceden yazılmış örneklerin orkestrasyon açısından çözümlenmesi",
+   "Hafta 4 — Eserin ana temasını hazırlama çalışması",
+   "Hafta 5 — Eserin ana temasının genişletilmesi ve sonlandırılması çalışması",
+   "Hafta 6 — Eserin B temasının oluşturulması",
+   "Hafta 7 — Eserin B temasının sonlandırılması",
+   "Hafta 8 — Eserin gelişme bölümünün hazırlanması",
+   "Hafta 9 — Esere uygun armonik anlayışın oluşturulması",
+   "Hafta 10 — Eserde kullanılacak eşlik melodilerinin hazırlanılması kontrşan.",
+   "Hafta 11 — Eserde kullanılacak cevap melodilerinin ve bu melodilerin hangi saz tarafından seslendirileceğinin tayin edilmesi",
+   "Hafta 12 — Eserin senfonik orkestra için düzenlenmeye başlanması",
+   "Hafta 13 — Eserin her temasına uygun ritmik eşlik karakterinin oluşturulması",
+   "Hafta 14 — Eserin senfonik orkestra için düzenlenmesinin tamamlanması"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=423",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 424": {
+  "code": "KMP 424",
+  "name": "Türk Müziğinde Polifoni IV",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Herhangi bir solist makam müziği çalgısı olmadan senfoni orkestrası ve koro için eser yazmak daha önceden yazılmış örneklerin melodik, armonik ve orkestral açıdan çözümlenmesi ve herhangi bir solist makam müziği çalgısı olmadan senfoni orkestrası ve koro için eser yazmak daha önceden yazılmış örneklerin melodik açıdan çözümlenmesi. To compose for modern orchestra and choir, in the style of Turkish makam music.",
+  "outcomes": [
+   "Çokseslilik hakkında bilgi edinme",
+   "Türk müziğinde yapılmış çoksesli çalışmaların çözümlenmesi.",
+   "Türk müziğinde çoksesli beste çalışmaları yapma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Herhangi bir solist makam müziği çalgısı olmadan senfoni orkestrası ve koro için eser yazmak daha önceden yazılmış örneklerin melodik açıdan çözümlenmesi",
+   "Hafta 2 — Herhangi bir solist makam müziği çalgısı olmadan senfoni orkestrası ve koro için eser yazmak daha önceden yazılmış örneklerin armonik açıdan çözümlenmesi",
+   "Hafta 3 — Herhangi bir solist makam müziği çalgısı olmadan senfoni orkestrası ve koro için eser yazmak daha önceden yazılmış örneklerin orkestrasyon açısından çözümlenmesi",
+   "Hafta 4 — Eserin ana temasının hazırlanması",
+   "Hafta 5 — Eserin ana temasının geliştirilmesi ve sonlandırılması",
+   "Hafta 6 — Eserin B temasının hazırlanması",
+   "Hafta 7 — Eserin B temasının geliştirilmesi ve sonlandırılması",
+   "Hafta 8 — Eserin gelişme bölümünün hazırlanması",
+   "Hafta 9 — Eserin gelişme bölümünün genişletilmesii ve sonlandırılması",
+   "Hafta 10 — Eserin armonik karakterinin oluşturma çalışması",
+   "Hafta 11 — Eserin içinde kullanılacak makamsal figürlerin belirlenmesi",
+   "Hafta 12 — Eserin her bölümünün eşliği için ayrı ritmik karakter oluşturma çalışması",
+   "Hafta 13 — Eser içinde kullanılacak cevap melodileri ve kontrşanların belirlenmesi",
+   "Hafta 14 — Eserin tamamlanması"
+  ],
+  "textbooks": [
+   "Forsyth, Cecil 2010. Orchestration, Newyork: Nabu Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=424",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 425": {
+  "code": "KMP 425",
+  "name": "Türk Müziğinde Çalgılama I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Yaylı çalgılar : 3 telli kemençe, 4 telli kemençe, yaylı tanbur, rebab, karadeniz kemençesi, kabak kemâne. yaylı çalgılarda bileşimler, tahta üflemeli çalgılar : ney, mey, dilli kaval, zurna, tulum, tahta üflemelilerde bileşimler, tahta nefesliler ve yaylı çalgılarda orkestralama. String instruments: Three, four stringed kemençe, , yaylı tanbur, rebab, karadeniz kemençesi, kabak kemâne, scoring for string instruments , woodwinds : ney, mey, dilli kaval, zurna, tulum, scoring for woodwinds, combination of strings with woodwinds.",
+  "outcomes": [
+   "Türk Müziği çalgılarının yapısı ve teknik kabiliyetlerini detaylı olarak kavrama.",
+   "Türk Müziği yaylı ve tahta üflemeli çalgılarını tanıma.",
+   "Türk Müziği yaylı ve tahta üflemeli çalgılarının bileşimlerini uygulamalı olarak kullanma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yaylı çalgılar : 3 ve 4 Telli Kemençe",
+   "Hafta 2 — Yaylı çalgılar : yaylı tanbur",
+   "Hafta 3 — Yaylı çalgılar : rebab",
+   "Hafta 4 — Yaylı çalgılar : karadeniz kemençesi",
+   "Hafta 5 — Yaylı çalgılar : kabak kemâne",
+   "Hafta 6 — Yaylı çalgılarda bileşimler",
+   "Hafta 7 — Yaylı Çalgılarda Bileşimler - Ara sınav",
+   "Hafta 8 — Tahta üflemeli çalgılar : ney",
+   "Hafta 9 — Tahta üflemeli çalgılar : mey",
+   "Hafta 10 — Tahta üflemeli çalgılar : dilli kaval",
+   "Hafta 11 — Tahta üflemeli çalgılar : zurna",
+   "Hafta 12 — Tahta üflemeli çalgılar : tulum",
+   "Hafta 13 — Tahta üflemelilerde bileşimler",
+   "Hafta 14 — Tahta üflemeliler ve yaylı çalgılarda orkestralama"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=425",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 426": {
+  "code": "KMP 426",
+  "name": "Türk Müziğinde Çalgılama II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Mızraplı çalgılar; ud, lavta, tanbur, bağlama, tar, mızraplı çalgılarda bileşimler, vurmalı çalgılar: kudüm, bendir, def, davul, koltuk davulu, vurmalı çalgılarda bileşimler, yaylı, üflemeli, mızraplı ve vurmalı çalgıların karşılaştırılmasına yönelik yapılan çalışmalar. Plucked instruments; ud, lavta, bağlama, combinations of plucked instruments, percussion instruments, kudüm, bendir, def, davul, koltuk davulu, combinations of percussive instruments, combinations of stringe, wind, plucked and percussion instrıments.",
+  "outcomes": [
+   "Türk müziği çalgılarının yapısı ve teknik kabiliyetlerini detaylı olarak kavrama.",
+   "Makam müziği mızraplı ve vurmalı çalgılarını tanıma",
+   "Makam müziğinde kullanılan mızraplı ve vurmalı çalgılarının bileşimlerini uygulamalı olarak kullanma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Mızraplı çalgılar : ud",
+   "Hafta 2 — Mızraplı çalgılar : lavta",
+   "Hafta 3 — Mızraplı çalgılar : tanbur",
+   "Hafta 4 — Mızraplı çalgılar : bağlama",
+   "Hafta 5 — Mızraplı çalgılar : tar",
+   "Hafta 6 — Mızraplı çalgılarda bileşimler",
+   "Hafta 7 — Mızraplı çalgılarda bileşimler - Ara sınav",
+   "Hafta 8 — Vurma çalgılar : kudüm",
+   "Hafta 9 — Vurma çalgılar : bendir",
+   "Hafta 10 — Vurma çalgılar : def",
+   "Hafta 11 — Vurma çalgılar : davul",
+   "Hafta 12 — Vurma çalgılar : koltuk davulu",
+   "Hafta 13 — Vurma çalgılarda bileşimler",
+   "Hafta 14 — Yaylı, üflemeli, mızraplı çalgıları karşılaştırılması"
+  ],
+  "textbooks": [
+   "Çalışır, Feridun. 1997. Çalgı Eğitimi. İstanbul.: Pan Yayıncılık."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=426",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 427": {
+  "code": "KMP 427",
+  "name": "Türk Müziğinde Orkestrasyon I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Türk müziğinde orkestrasyon, üflemeli-mızraplı-yaylı çalgılarda melodi ve armoni, 2,3,4,5’li grup çalgılarda kompozisyon ve orkestrasyon. Orchestration in Turkish makam music, scoring for strings, winds and plucked instruments.",
+  "outcomes": [
+   "Türk Müziği çalgılarının kendi aralarında oluşturdukları melodik ve armonik yapıyı öğrenme.",
+   "Yaylı, telli ve üflemeli çalgılarda melodi ve armoni dağılımını kavrama.",
+   "Farklı grup çalgılar için kompozisyon ve orkestrasyon yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Türk müziğinde orkestrasyon",
+   "Hafta 2 — Üflemeli çalgılarda melodi",
+   "Hafta 3 — Mızraplı çalgılarda melodi",
+   "Hafta 4 — Yaylı çalgılarda melodi",
+   "Hafta 5 — Üflemeli çalgılarda armoni",
+   "Hafta 6 — Mızraplı çalgılarda armoni",
+   "Hafta 7 — Yaylı çalgılarda armoni - Yarıyıl İçi Sınavı",
+   "Hafta 8 — 2, 3 ve 4’lü grup için kompozisyon -1",
+   "Hafta 9 — 2, 3 ve 4’lü grup için kompozisyon -2",
+   "Hafta 10 — 2, 3 ve 4’lü grup için kompozisyon ve orkestrasyon",
+   "Hafta 11 — 5’li grup için kompozisyon -1",
+   "Hafta 12 — 5’li grup için kompozisyon -2",
+   "Hafta 13 — 5’li grup için kompozisyon ve orkestrasyon -1",
+   "Hafta 14 — 5’li grup için kompozisyon ve orkestrasyon -2"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=427",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 428": {
+  "code": "KMP 428",
+  "name": "Türk Müziğinde Orkestrasyon II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Yaylı, üflemeli, mızraplı, vurmalı Türk müziği çalgıları ve farklı çalgı grupları için orkestrasyon, solo ve gruplar için orkestra eşliği, büyük orkestra için kompozisyon. Orchestration in Turkish makam music, scoring for strings, winds and plucked instruments, scoring orchestral accompaniment for Turkisk makam music instruments",
+  "outcomes": [
+   "Yaylı, telli, üflemeli ve vurmalı çalgılar için orkestrasyon yapma.",
+   "Solo ve grup çalgılar için orkestra eşliği yazma.",
+   "Büyük orkestra için kompozisyon yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Orkestrada Türk müziği çalgıları",
+   "Hafta 2 — Türk müziği çalgılarının orkestra çalgıları ile birleşimi",
+   "Hafta 3 — Solo ve gruplar için orkestra eşliği yazma",
+   "Hafta 4 — Yaylı çalgılar için orkestrasyon",
+   "Hafta 5 — 2’li orkestra içinde yaylı çalgılar",
+   "Hafta 6 — Üflemeli çalgılar için orkestrasyon",
+   "Hafta 7 — 2’li orkestra içinde üflemeli çalgılar - Ara sınav",
+   "Hafta 8 — Mızraplı çalgılar için orkestrasyon",
+   "Hafta 9 — 2’li orkestra içinde mızraplı çalgılar",
+   "Hafta 10 — Vurmalı çalgılar için orkestrasyon",
+   "Hafta 11 — 2’li orkestra içinde vurma çalgılar",
+   "Hafta 12 — Büyük orkestra için kompozisyon 1",
+   "Hafta 13 — Büyük orkestra için kompozisyon 2",
+   "Hafta 14 — Büyük orkestra için kompozisyon 3"
+  ],
+  "textbooks": [
+   "Gunca, Ayhan. 2007. Kemençe, Ney ve Tanbur için Orkestral Yazım Tekniği. İTÜ S.B.E. SY. Tezi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=428",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 4321": {
+  "code": "KMP 4321",
+  "name": "Partisyon Okuma I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 0
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=4321",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 433": {
+  "code": "KMP 433",
+  "name": "Partisyon Okuma I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "İlkçağ, Ortaçağ, Rönesans, Barok dönemler, sosyal, kültürel ve teknik yönden karşılaştırma, orkestra yapısının dönemler arası değişikliklerini inceleme, diğer sanatlarla eşleştirme, tanıma. Analysing the musics of antique, middle ages, baroque eras due to their structural features, making comparison with other arts.",
+  "outcomes": [
+   "İlkçağ, Ortaçağ, Rönesans, Barok dönemlere ait yapısal farklılıkları bilme.",
+   "Bahsedilen dönemlerde orkestra ve yazımına ait yapısal değişiklikleri ayırt edebilme.",
+   "Küçük ölçekli bir partisyonu bütünüyle kavrar, çözümleme ve takibini yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Partisyon okuma hakkında genel bilgi ve partisyona bakış açıları.",
+   "Hafta 2 — Bir ezgi hattını takip edebilme ve kavrayabilme, İlkçağ dönem incelemesi.",
+   "Hafta 3 — Bir çalgı grubunun içinde oluşan ezgi, ritim, dinamikleri takip edebilme ve kavrayabilme.",
+   "Hafta 4 — Bir partisyonda iki çalgı grubunun dinamiklerini aynı anda takip edebilme ve kavrayabilme. , Ortaçağ dönem incelemesi.",
+   "Hafta 5 — Bir partisyonda bütün-parça ilişkisi, Rönesans dönem incelemesi",
+   "Hafta 6 — Partisyon okumada aşağıdan yukarıya doğru taramanın önemi.",
+   "Hafta 7 — Barok dönem çözümlemesi. – Ara sınav",
+   "Hafta 8 — Bir partisyonda müzik fikirlerinin dağılımını ve balanslarını çözümlemek.",
+   "Hafta 9 — 2 müzik fikrini genel hatları ile çalarak partisyonu okumak.",
+   "Hafta 10 — Dönemler arası orkestra değişikliklerini ayırt edebilme.",
+   "Hafta 11 — Ezgisel müzik fikirlerinin çalgı grupları içindeki yönelimi, değişimleri ve gelişimlerini takip etmek.",
+   "Hafta 12 — Armonik gelişimin çalgı grupları içindeki hareketlerini takip edebilmek.",
+   "Hafta 13 — Ritmik yapıların çalgı grupları içindeki yerini ve hareketlerini takip edebilmek.",
+   "Hafta 14 — Küçük ölçekli bir partisyonda ezgisel, armonik ve ritmik dinamikleri takip edebilmek ile ilgili uygulamalar. Ezgi nerede? Hangi çalgı grubunda? Ritim öğesi nerede yoğunlaşmış? Şeklindeki sorularla sağlıklı bir şekilde partisyon okumanın kontrol edilmesi."
+  ],
+  "textbooks": [
+   "Jacop, Gordon. 1944. “How to Read a Score”. London: Boosey&Hawkes"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=433",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 434": {
+  "code": "KMP 434",
+  "name": "Partisyon Okuma II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Klasik, Romantik, Çağdaş dönemler, sosyal, kültürel ve teknik yönden karşılaştırma, orkestra yapısının dönemler arası değişikliklerini çözümleme, diğer sanatlarla eşleştirme, tanıma. Analysing the musics of classic, romantic, contemporary eras due to their structural features, making comparison with other arts.",
+  "outcomes": [
+   "Klasik, Romantik, Çağdaş dönemlere ait yapısal farklılıkları öğrenme.",
+   "Bahsedilen dönemlerde orkestra ve yazımına ait yapısal değişiklikleri ayırt edebilme.",
+   "Büyük orkestra partisyonunu bütünüyle kavrar, çözümleme ve takibini yapma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Büyük orkestra partisyonunu oluşturan elemanları tanıma.",
+   "Hafta 2 — Klasik dönem çözümlemesi, Klasik, Romantik, Çağdaş",
+   "Hafta 3 — Klasik dönem orkestra özellikleri.",
+   "Hafta 4 — W. A. Mozart örnek eser çözümleme.",
+   "Hafta 5 — Romantik dönem çözümlemesi",
+   "Hafta 6 — Romantik dönem orkestra özellikleri.",
+   "Hafta 7 — Beethoven - örnek eser çözümleme – Ara sınav",
+   "Hafta 8 — Çağdaş dönem çözümlemesi.",
+   "Hafta 9 — Çağdaş dönem orkestra özellikleri",
+   "Hafta 10 — Çağdaş dönem içerisindeki çeşitli akımların çözümlenmesi.",
+   "Hafta 11 — Dönemler arası orkestra değişikliklerini ayırt edebilme.",
+   "Hafta 12 — Çağdaş dönem Türk müziği bestecileri partisyon kullanımı",
+   "Hafta 13 — Çağdaş dönem Türk müziği bestecileri partisyon kullanımı ve örnek eser çözümleme. 1",
+   "Hafta 14 — Çağdaş dönem Türk müziği bestecileri partisyon kullanımı ve örnek eser çözümleme. 2"
+  ],
+  "textbooks": [
+   "Jacop, Gordon. 1944. How to Read a Score. London: Boosey&Hawkes."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=434",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 457": {
+  "code": "KMP 457",
+  "name": "Partisyon Çözümleme I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Yaylı çalgılar, bakır üflemeli çalgılar, tahta üflemeli çalgılar, vurmalı çalgılar ile combo ve big band toplulukları, farklı çalgı grup bileşenleri için yazılmış eser partisyonlarını çözümleme kriterleri ve büyük orkestra yazım teknik kriterleri. The techniques of analysing and scoring for string, wind, percussive instruments in addition with solo instruments like piano, bass , drums…etc, the techniques of analysing and scoring for combo and big bands.",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=457",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 458": {
+  "code": "KMP 458",
+  "name": "Partisyon Çözümleme II",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Yaylı çalgılar,tahta üflemeli çalgılar, bakır üflemeli çalgılar, vurmalı çalgılar, combo ve big band toplulukları ,çeşitli çalgı grup bileşenlerinin çözümlenmesi ve orkestral yazım teknikleri. The techniques of analysing and scoring for string, wind, percussive instruments in addition with solo instruments like piano, bass , drums…etc, the techniques of analysing and scoring for combo and big bands.",
+  "outcomes": [
+   "Orkestra yazım teknikleri öğrenme. Yaylı çalgılar,bakır üflemeli çalgılar,tahta üflemeli çalgılar, vurmalı çalgılar,alt yapı çalgıları combo, big band ve çeşitli çalgı grup bileşenlerinden oluşan topluluklar için yazılmış eser partisyonlarını çözümleme. Yaylı çalgılar,bakır üflemeli çalgılar,tahta üflemeli çalgılar, vurmalı çalgılar,alt yapı çalgıları,combo, big band ve farklı çalgı grup bileşenleri için aranjmanlar yapma."
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=458",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 473": {
+  "code": "KMP 473",
+  "name": "İleri Armoni I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 3
+  },
+  "description": "Post Romantik dönem, armoni malzemesi, kromatizm, empresyonist armoni anlayışı ve armonik birikimleri, çok tonluluk ve 12 ton müziğinde armonik anlayış, modern armonide aralıklar ve suni yedili akorları, yedili, dokuzlu, onbirli, onüçlü akorların modern armonide kullanışla, salkım akorlar, bileşik akorlar, ayna armonisi, modern armonide, armonisel yöneliş ve akor bağlantıları, paralel ve armonik hareketler, modern armonide kadans anlayışı, armonide ritim ve armoninin ritmik kullanılışı, nüans ve süsleme notalarının modern armonideki yeri, armonik genişlemeler, kromatik değiştirimler, modern armonide pedal ve ostinato kavramları, modern armonide ton merkezleri ve ton değiştirme anlayışı, modern armonide yeni form anlayışları ve notalama yöntemleri. Post Romanticism, extended chromatism , stylistic features of empressionism, dodecophony, poly chords, clusters, centricity, formal disorganizarions and the concept of cadence in Modern Music.",
+  "outcomes": [
+   "Yirminci yüzyılda ortaya çıkan müzik dilleri konusunda bilgi sahibi olma.",
+   "Tonal müziğin ortaya koyduğu müzikal prensipler ile bu derste öğrendiklerini karşılaştırarak bütünlüklü bir müzik algısına ulaşma.",
+   "Türk Müziği çok seslendirilmesi konusunda yeni arayışlarda bulunma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Post Romantik dönem, armoni malzemesi, kromatizm.",
+   "Hafta 2 — Empresyonist armoni anlayışı ve armonik birikimleri.",
+   "Hafta 3 — Çok tonluluk ve 12 ton müziğinde armonik anlayış.",
+   "Hafta 4 — Modern armonide aralıklar ve suni yedili akorları.",
+   "Hafta 5 — Yedili , dokuzlu, onbirli, onüçlü akorların modern armonide kullanışları",
+   "Hafta 6 — Salkım akorlar, bileşik akorlar, ayna armonisi. Ara Sınav",
+   "Hafta 7 — Modern armonide, armonisel yöneliş ve akor bağlantıları. Paralel ve armonik hareketler",
+   "Hafta 8 — Modern armonide kadans anlayışı",
+   "Hafta 9 — Armonide ritim ve armoninin ritmik kullanılışı.",
+   "Hafta 10 — Nüans ve süsleme notalarının modern armonideki yeri.",
+   "Hafta 11 — Armonik genişlemeler, kromatik değiştirimler.",
+   "Hafta 12 — Modern armonide pedal ve ostinato kavramları",
+   "Hafta 13 — Modern armonide ton merkezleri ve ton değiştirme anlayışı.",
+   "Hafta 14 — Modern armonide yeni form anlayışları ve notalama yöntemleri."
+  ],
+  "textbooks": [
+   "Usmanbaş, İlhan, 1974, Müzikte Biçimler (XX.yy.Armonisi ek bölümü), İstanbul Milli Eğitim Basımevi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=473",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "KMP 492": {
+  "code": "KMP 492",
+  "name": "Bitirme Çalışması",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 0,
+   "practice": 6,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Konunun belirlenmesi, konu hakkında bilgi, klasik takımı oluşturan bölümler hakkında bilgi, klasik takım bestelenmesi, batı müziği türünde besteler hakkında bilgi, batı müziği türünde besteler ve tüm bestelerin bilgisayar ortamında yazılımı. Determination of the subject, gathering info on the subject, gathering info on classical takım, composing a classical takım, gathering info on the Western style of compositions, the process of composing and scoring them using computer technology",
+  "outcomes": [
+   "Lisans dönemindeki birikimlerini besteleriyle ortaya koyma",
+   "Kompozisyonlarını bilgisayar ortamında yazabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Konunun belirlenmesi, konu hakkında bilgi",
+   "Hafta 2 — Klasik takım: peşrev bestelenmesi ve bilgisayar ortamında yazımı",
+   "Hafta 3 — Klasik takım: kar veya karçe bestelenmesi ve bilgisayar ortamında yazımı",
+   "Hafta 4 — Klasik takım beste bestelenmesi ve bilgisayar ortamında yazımı",
+   "Hafta 5 — Klasik takım: ağır semai bestelenmesi ve bilgisayar ortamında yazımı",
+   "Hafta 6 — Klasik takım: yürük semai bestelenmesi ve bilgisayar ortamında yazımı",
+   "Hafta 7 — Klasik takım: saz semai bestelenmesi ve bilgisayar ortamında yazımı",
+   "Hafta 8 — Batı müziği türünde çalışmalar hakkında bilgi",
+   "Hafta 9 — Sonat veya sonatin bestelenmesi 1",
+   "Hafta 10 — Sonat veya sonatin bestelenmesi ve bilgisayar ortamında yazımı 2",
+   "Hafta 11 — Yaylı çalgılar için eser bestelenmesi 1",
+   "Hafta 12 — Yaylı çalgılar için eser bestelenmesi ve bilgisayar ortamında yazımı 2",
+   "Hafta 13 — Üflemeli çalgılar için eser bestelenmesi 1",
+   "Hafta 14 — Üflemeli çalgılar için eser bestelenmesi ve bilgisayar ortamında yazımı 2"
+  ],
+  "textbooks": [
+   "İTÜ TMDK Bitirme Çalışması Kılavuzu, 2020, İstanbul"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KMP&dersNo=492",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

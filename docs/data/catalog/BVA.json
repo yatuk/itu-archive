@@ -1,0 +1,128 @@
+{
+ "BVA 501E": {
+  "code": "BVA 501E",
+  "name": "Advances in Data Science",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Veri Biliminin temel kavramları, Veri Bilimcileri için Python Araçları, Betimsel İstatistik, İstatistiksel Çıkarım, Gözetimli Öğrenme, Regresyon Analizi, Gözetimsiz Öğrenme, Ağ Analizi, Öneri Sistemleri, Duygu analizi, Derin Öğrenme, Pekiştirmeli Öğrenme Fundementals of Data Science, Python Toolboxes for Data Scientists, Descriptive Statistics, Statistical Inference, Supervised Learning,Regression Analysis, Unsupervised Learning, Network Analysis, Recommender Systems, Sentiment Analysis, Deep Learning, Reinforcement Learning",
+  "outcomes": [
+   "Veri bilimindeki temel kavram ve yöntemleri anlama becerisi",
+   "Veri bilimindeki temel yöntem ve teknikleri uygulama becerisi",
+   "Python programlama dili ile uygulama becerisi",
+   "İş dünyasındaki gerçek problemlere veri bilimi ile çözüm geliştirebilme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri Biliminin temel kavramları",
+   "Hafta 2 — Veri Bilimcileri için Python Araçları",
+   "Hafta 3 — Betimsel İstatistik",
+   "Hafta 4 — İstatistiksel Çıkarım",
+   "Hafta 5 — Gözetimli Öğrenme",
+   "Hafta 6 — Regresyon Analizi",
+   "Hafta 7 — Sınıflandırma Analizi",
+   "Hafta 8 — Değişken Seçimi",
+   "Hafta 9 — Gözetimsiz Öğrenme",
+   "Hafta 10 — Öneri Sistemleri",
+   "Hafta 11 — Duygu analizi için İstatiksel Doğal Dil İşleme (NLP)",
+   "Hafta 12 — Ağ Analizi",
+   "Hafta 13 — Derin Öğrenme",
+   "Hafta 14 — Pekiştirmeli Öğrenme"
+  ],
+  "textbooks": [
+   "Laura Igual, Santi Seguí, Introduction to Data Science : A Python Approach to Concepts, Techniques and Applications, Springer, 2017",
+   "Carlo Vercellis, Business Intelligence, Wiley, 2009",
+   "Wes McKinney, Python for Data Analysis, O’Reilly, 2013"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BVA 507E": {
+  "code": "BVA 507E",
+  "name": "Business Analytics for Manager",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Stratejik seviyede iş analitiği, Analitik seviyede iş analitiği, Tanımlayıcı analitikler ve uygulamaları, Kestirimci analitikler ve uygulamaları, Çözümleyici analitikler ve uygulamaları. Business analytics at the strategic level, development of information at functional level, business analytics at the analytical level, descriptive analytics and applications, predictive analytics and applications, prescriptive analytics and applications.",
+  "outcomes": [
+   "Potansiyel iş analitiği uygulamalarının kurumlara katacağı değerleri belirleyebilmek.",
+   "Farklı iş problemleri için uygun iş analitiği yaklaşımları ve modelleri önerebilmek",
+   "Kurum içinde iş analitiğinin farklı seviyelerde nasıl ele alındığını anlamak",
+   "Kurum içindeki veri kaynaklarını değerlendirmek ve belirlenen veriler ile iş analitiği modelleri kurabilmek.",
+   "Alternatif iş analitiği projelerini değerlendirebilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İş analitiğinin temel tanımları",
+   "Hafta 2 — Stratejik seviyede iş analitiği",
+   "Hafta 3 — Fonksiyonel seviyede bilgi oluşturma",
+   "Hafta 4 — Tanımlayıcı analitikler ve uygulamaları – Veri Tanımlama, Özetleme ve Görselleştirme",
+   "Hafta 5 — Kestirimci analitikler ve uygulamaları – İstatistiksel çıkarım",
+   "Hafta 6 — Tahminleyici analitikler ve uygulamaları – Lineer Regresyon",
+   "Hafta 7 — Tahminleyici analitikler ve uygulamaları – Sınıflama ve Lojistik Regresyon",
+   "Hafta 8 — Tahminleyici analitikler ve uygulamaları – Kümeleme ve Boyut Azaltma Yöntemleri",
+   "Hafta 9 — Tahminleyici analitikler ve uygulamaları – Tahminleme modelleri",
+   "Hafta 10 — Tahminleyici analitikler ve uygulamaları – Simüslasyon modelleri",
+   "Hafta 11 — Çözümleyici analitikler ve uygulamaları – Lineer Optimizasyon",
+   "Hafta 12 — Çözümleyici analitikler ve uygulamaları – Lineer Optimizasyon Uygulamaları",
+   "Hafta 13 — Çözümleyici analitikler ve uygulamaları – Tam Sayı Optimizasyon Uygulamaları",
+   "Hafta 14 — Gerçek hayat uygulamalarının analizi"
+  ],
+  "textbooks": [
+   "Evans J.R. (2017) Business Analytics: Methods, Models, Decisions, Pearson",
+   "Laursen G.H.N. ve Thorlund J (2017) Business Analytics for Managers, Wiley",
+   "Smith J. (2016) Data Analytics: What Every Business Must Know About Big Data And Data Science, Pinnacle Publishers"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=507",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BVA 528E": {
+  "code": "BVA 528E",
+  "name": "İşletmelerde Derin Öğrenme Uygulamaları",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yapay sinir ağları, geri yayılım, regresyon, sınıflandırma, derin öğrenme, evrişimli öğrenme, kısa uzun süreli hafıza, transfer öğrğenmesi Artificial neural networks, backpropagation, regression, classification, deep learning, convolution layer, long short-term memory",
+  "outcomes": [
+   "Yapay sinir ağlarının matematiksel altyapısının öğrenilmesi",
+   "Farklı derin öğrenme algoritmalarının çalışma prensibinin öğrenilmesi",
+   "Derin öğrenme algortimalarının uygulanması",
+   "Derin öğrenme kütüphanelerinin kullanılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Yapay sinir ağlarında temel konular",
+   "Hafta 2 — Tek katmanlı yapay sinir ağları, Öğrenme Kuralları",
+   "Hafta 3 — Çok katmanlı yapay sinir ağları",
+   "Hafta 4 — Geri yayılımlı öğrenme",
+   "Hafta 5 — Doğrusal olmayan optimizasyon",
+   "Hafta 6 — Derin Öğrenme Mimarileri",
+   "Hafta 7 — Evrişimli yapay sinir ağları",
+   "Hafta 8 — Geri Beslemeli Öğrenme, Uzun-kısa dönmeli hafıza",
+   "Hafta 9 — Restricted Boltzman Makineleri",
+   "Hafta 10 — Derin Öğrenme Uygulamaları",
+   "Hafta 11 — Regresyon analizinde derin öğrenme",
+   "Hafta 12 — Sınıflandırma analizinde derin öğrenme",
+   "Hafta 13 — Tahminleme analizinde derin öğrenme",
+   "Hafta 14 — Yapılı olmayan veri için derin öğrenme"
+  ],
+  "textbooks": [
+   "I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016. http://www. deeplearningbook.org.",
+   "Aggarwal, Charu C. Neural networks and deep learning. Springer,, 2018."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=528",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

@@ -1,0 +1,268 @@
+{
+ "STA 201": {
+  "code": "STA 201",
+  "name": "Statik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "",
+  "outcomes": [
+   "Vektör cebri (skaler ve vektörel çarpım, toplama ve çıkarma), kuvvet ve moment tanımı",
+   "Parçacığın ve rijit cismin dengesi",
+   "Ağırlık merkezi hesabı",
+   "Bağlar ve bağ kuvvetleri",
+   "Statikçe belirli taşıyıcı sistemlerin statik dengesi (çubuklar, Gerber kirişleri, kafesler, çerçeveler, kablolar, makinalar), kesit tesir diyagramları",
+   "Yayılı yükler ve hidrostatik kuvvetler",
+   "Virtüel iş hesabı, denge kavramı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Statiğin ilkeleri, vektörler",
+   "Hafta 2 — Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+   "Hafta 3 — Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 4 — Ağırlık merkezi, Pappus-Guldinus teoremleri",
+   "Hafta 5 — Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+   "Hafta 6 — Yükler, kirişler, Gerber kirişleri, kesit tesir diyagramları",
+   "Hafta 7 — Düzlem kafesler ve çözüm yöntemleri",
+   "Hafta 8 — Kablolar ve zincirler 1. Yıliçi sınavı",
+   "Hafta 9 — Sürtünme (kuru sürtünme)",
+   "Hafta 10 — Sürtünme (vida, kayış, yuvarlanma direnci)",
+   "Hafta 11 — Yayılı yükler ve hidrostatik kuvvetler",
+   "Hafta 12 — Uzay kafes sistemler ve çözüm yöntemleri",
+   "Hafta 13 — Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 14 — Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı"
+  ],
+  "textbooks": [
+   "Statik, M. Bakioğlu, Birsen, 2006, 9755114432",
+   "Statik, M.Omurtag, Birsen, 2009, 9789755114774"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=201",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "STA 201E": {
+  "code": "STA 201E",
+  "name": "Statik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4
+  },
+  "description": "",
+  "outcomes": [
+   "Vektör cebri (skaler ve vektörel çarpım, toplama ve çıkarma), kuvvet ve moment tanımı",
+   "Parçacığın ve rijit cismin dengesi",
+   "Ağırlık merkezi hesabı",
+   "Bağlar ve bağ kuvvetleri",
+   "Statikçe belirli taşıyıcı sistemlerin statik dengesi (çubuklar, Gerber kirişleri, kafesler, çerçeveler, kablolar, makinalar), kesit tesir diyagramları",
+   "Yayılı yükler ve hidrostatik kuvvetler",
+   "Virtüel iş hesabı, denge kavramı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Statiğin ilkeleri, vektörler",
+   "Hafta 2 — Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+   "Hafta 3 — Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 4 — Ağırlık merkezi, Pappus-Guldinus teoremleri",
+   "Hafta 5 — Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+   "Hafta 6 — Yükler, kirişler, Gerber kirişleri, kesit tesir diyagramları",
+   "Hafta 7 — Düzlem kafesler ve çözüm yöntemleri",
+   "Hafta 8 — Kablolar ve zincirler 1. Yıliçi sınavı",
+   "Hafta 9 — Sürtünme (kuru sürtünme)",
+   "Hafta 10 — Sürtünme (vida, kayış, yuvarlanma direnci)",
+   "Hafta 11 — Yayılı yükler ve hidrostatik kuvvetler",
+   "Hafta 12 — Uzay kafes sistemler ve çözüm yöntemleri",
+   "Hafta 13 — Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 14 — Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı"
+  ],
+  "textbooks": [
+   "Statik, M. Bakioğlu, Birsen, 2006, 9755114432",
+   "Statik, M.Omurtag, Birsen, 2009, 9789755114774"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=201",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "STA 202": {
+  "code": "STA 202",
+  "name": "Statik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 1,
+   "local": 3.5,
+   "ects": 5
+  },
+  "description": "Statiğin ilkeleri, kuvvet vektörü, parçacığın dengesi, kuvvet çifti, rijit cismin dengesi, düzlemde kuvvetler, ağırlık merkezi, Pappus-Guldinus teoremleri, yayılı yükler ve hidrostatik kuvvetler, bağlar ve bağ kuvvetleri, Gerber kirişleri, çerçeveler, basit makinalar, kafes sistemler, kablolar, kuru sürtünme, virtüel iş Principles of statics, force vector, equilibrium of particle, moment of a couple, equilibrium of rigid body, planar forces, center of gravity, Theorem of Pappus-Guldinus, distributed loads and hydrostatics forces, supports and support reactions, Gerber beams, frames, simple machines, trusses, cables, friction, virtual work",
+  "outcomes": [
+   "Vektör cebri (skaler ve vektörel çarpım, toplama ve çıkarma), kuvvet ve moment tanımı",
+   "Parçacığın ve rijit cismin dengesi",
+   "Ağırlık merkezi hesabı",
+   "Bağlar ve bağ kuvvetleri",
+   "Statikçe belirli taşıyıcı sistemlerin statik dengesi (çubuklar, Gerber kirişleri, kafesler, çerçeveler, kablolar, makinalar)",
+   "Yayılı yükler ve hidrostatik kuvvetler",
+   "Virtüel iş hesabı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Statiğin ilkeleri, vektörler",
+   "Hafta 2 — Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+   "Hafta 3 — Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 4 — Ağırlık merkezi, Pappus-Guldinus teoremleri.",
+   "Hafta 5 — Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+   "Hafta 6 — Yükler, kirişler, Gerber kirişleri",
+   "Hafta 7 — Düzlem kafesler ve çözüm yöntemleri",
+   "Hafta 8 — Kablolar 1. Yıliçi Sınavı",
+   "Hafta 9 — Sürtünme (kuru sürtünme)",
+   "Hafta 10 — Sürtünme (vida, kayış, yuvarlanma direnci)",
+   "Hafta 11 — Yayılı yükler ve hidrostatik kuvvetler",
+   "Hafta 12 — Uzay kafes sistemler ve çözüm yöntemleri",
+   "Hafta 13 — Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 14 — Virtüel iş 2. Yıliçi Sınavı"
+  ],
+  "textbooks": [
+   "Statik, M. Bakio&eth;lu, Birsen, 2006, 9755114432",
+   "Statik, M.Omurtag, Birsen, 2009, 978975511477"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=202",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "STA 202E": {
+  "code": "STA 202E",
+  "name": "Statik",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 1,
+   "local": 3.5,
+   "ects": 5
+  },
+  "description": "Statiğin ilkeleri, kuvvet vektörü, parçacığın dengesi, kuvvet çifti, rijit cismin dengesi, düzlemde kuvvetler, ağırlık merkezi, Pappus-Guldinus teoremleri, yayılı yükler ve hidrostatik kuvvetler, bağlar ve bağ kuvvetleri, Gerber kirişleri, çerçeveler, basit makinalar, kafes sistemler, kablolar, kuru sürtünme, virtüel iş Principles of statics, force vector, equilibrium of particle, moment of a couple, equilibrium of rigid body, planar forces, center of gravity, Theorem of Pappus-Guldinus, distributed loads and hydrostatics forces, supports and support reactions, Gerber beams, frames, simple machines, trusses, cables, friction, virtual work",
+  "outcomes": [
+   "Vektör cebri (skaler ve vektörel çarpım, toplama ve çıkarma), kuvvet ve moment tanımı",
+   "Parçacığın ve rijit cismin dengesi",
+   "Ağırlık merkezi hesabı",
+   "Bağlar ve bağ kuvvetleri",
+   "Statikçe belirli taşıyıcı sistemlerin statik dengesi (çubuklar, Gerber kirişleri, kafesler, çerçeveler, kablolar, makinalar)",
+   "Yayılı yükler ve hidrostatik kuvvetler",
+   "Virtüel iş hesabı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Statiğin ilkeleri, vektörler",
+   "Hafta 2 — Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+   "Hafta 3 — Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 4 — Ağırlık merkezi, Pappus-Guldinus teoremleri.",
+   "Hafta 5 — Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+   "Hafta 6 — Yükler, kirişler, Gerber kirişleri",
+   "Hafta 7 — Düzlem kafesler ve çözüm yöntemleri",
+   "Hafta 8 — Kablolar 1. Yıliçi Sınavı",
+   "Hafta 9 — Sürtünme (kuru sürtünme)",
+   "Hafta 10 — Sürtünme (vida, kayış, yuvarlanma direnci)",
+   "Hafta 11 — Yayılı yükler ve hidrostatik kuvvetler",
+   "Hafta 12 — Uzay kafes sistemler ve çözüm yöntemleri",
+   "Hafta 13 — Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 14 — Virtüel iş 2. Yıliçi Sınavı"
+  ],
+  "textbooks": [
+   "Statik, M. Bakio&eth;lu, Birsen, 2006, 9755114432",
+   "Statik, M.Omurtag, Birsen, 2009, 978975511477"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=202",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "STA 204": {
+  "code": "STA 204",
+  "name": "Statik ve Mukavemet",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "",
+  "outcomes": [
+   "Vektör cebri (skaler ve vektörel çarpım, toplama ve çıkarma), kuvvet ve moment tanımı",
+   "Rijit cismin dengesi",
+   "Ağırlık merkezi hesabı",
+   "Bağlar ve bağ kuvvetleri",
+   "Statikçe belirli taşıyıcı sistemlerin statik dengesi (çubuklar, Gerber kirişleri, kafesler, çerçeveler, kablolar), kesit tesir diyagramları",
+   "Eylemsizlik momenti",
+   "Gerilme ve birim şekil değiştirme",
+   "Normal kuvvet, kesme kuvveti, burulma momenti, basit eğilme durumları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Statiğin ilkeleri, vektörler",
+   "Hafta 2 — Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+   "Hafta 3 — Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 4 — Ağırlık merkezi.",
+   "Hafta 5 — Bağ ve bağ kuvvetleri, statikçe belirli sistemler",
+   "Hafta 6 — Yükler, kirişler,",
+   "Hafta 7 — Düzlem kafesler ve çözüm yöntemleri",
+   "Hafta 8 — Kablolar 1. Yıliçi Sınavı",
+   "Hafta 9 — Kesit tesirleri",
+   "Hafta 10 — Gerilme, şekil değiştirme",
+   "Hafta 11 — Normal kuvvet, kesme kuvveti",
+   "Hafta 12 — Eylemsizlik momenti",
+   "Hafta 13 — Burulma,",
+   "Hafta 14 — Basit eğilme 2. Yıliçi Sınavı"
+  ],
+  "textbooks": [
+   "Statik Mukavemet, M. Bakioğlu, Beta, 2007, 9789752956872",
+   "Statik Mukavemet, M. Omurtag, Nobel, 2007, 9789944771887"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=204",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "STA 204E": {
+  "code": "STA 204E",
+  "name": "Statik ve Mukavemet",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "",
+  "outcomes": [
+   "Vektör cebri (skaler ve vektörel çarpım, toplama ve çıkarma), kuvvet ve moment tanımı",
+   "Rijit cismin dengesi",
+   "Ağırlık merkezi hesabı",
+   "Bağlar ve bağ kuvvetleri",
+   "Statikçe belirli taşıyıcı sistemlerin statik dengesi (çubuklar, Gerber kirişleri, kafesler, çerçeveler, kablolar), kesit tesir diyagramları",
+   "Eylemsizlik momenti",
+   "Gerilme ve birim şekil değiştirme",
+   "Normal kuvvet, kesme kuvveti, burulma momenti, basit eğilme durumları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Statiğin ilkeleri, vektörler",
+   "Hafta 2 — Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+   "Hafta 3 — Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+   "Hafta 4 — Ağırlık merkezi.",
+   "Hafta 5 — Bağ ve bağ kuvvetleri, statikçe belirli sistemler",
+   "Hafta 6 — Yükler, kirişler,",
+   "Hafta 7 — Düzlem kafesler ve çözüm yöntemleri",
+   "Hafta 8 — Kablolar 1. Yıliçi Sınavı",
+   "Hafta 9 — Kesit tesirleri",
+   "Hafta 10 — Gerilme, şekil değiştirme",
+   "Hafta 11 — Normal kuvvet, kesme kuvveti",
+   "Hafta 12 — Eylemsizlik momenti",
+   "Hafta 13 — Burulma,",
+   "Hafta 14 — Basit eğilme 2. Yıliçi Sınavı"
+  ],
+  "textbooks": [
+   "Statik Mukavemet, M. Bakioğlu, Beta, 2007, 9789752956872",
+   "Statik Mukavemet, M. Omurtag, Nobel, 2007, 9789944771887"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=204",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

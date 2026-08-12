@@ -1,0 +1,279 @@
+{
+ "DTM 505E": {
+  "code": "DTM 505E",
+  "name": "Ship Design For Seakeeping",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Deniz Araçlarının Tasarımına Genel bir Bakış, Tekne Formunun Geliştirilmesi, Deniz Araçlarının Tasarımında Hidrodinamik Düşünceler, Deniz Araçlarının Tasarımında Denizcilik Düşünceleri, Yaşanabilirlik, Çalışabilirlik, Hareketlilik, Yaşayabilirlik, Özel Denizcilik Tepkileri, Karmaşık Denizlerin Temsili, Deniz Araçlarının Dinamiği, Gemi Hareketlerinin Belirlenmesi, Hareket Denklemleri, Hidrodinamik Katsayılar, Dilim Teorisi, Denizcilik Performansının Değerlendirilmesi, Denizcilik Kriterleri, Denizcilik için Tasarım Yöntemleri, İşletim Bölgeleri, Medel Deneylerine Dayalı Regresyon Denklemleri, Sıralama Yaklaşımı, Ana Boyutların ve Tekne Formunun Denizcilik Üzerindeki Etkileri, Tekne Formu Geliştirme, İleri ve Geri Analiz Yöntemleri, Amaç Fonksiyonunun ve Geometrik Kısıtların Etkisi, Diğer Tasarım Düşünceleri, Tasarım Örnekleri A review of ship design process, Hull form development in design of marine vehicles, Hydrodynamic considerations in design of marine vehicles, Seakeeping consideration in design of marine vehicles, Habitability, Operability, Mobility, Survivability, Specific seakeeping responses, Representation of irregular seaway, Dynamics of ship motions, Prediction of ship motions, Equation of motion, Hydrodynamic coefficients, Strip theory approach, Seakeeping performance assessment, Seakeeping criteria, Seakeeping design methodologies, Operation zones, Regression equations based on model test results, Ranking approach, Influence on main dimensions and form on seakeeping, Hull form generation, Forward and inverse design methods for seakeeping, Effect of objective functon and geometric constraints, Other design considerations, Design examples",
+  "outcomes": [
+   "Gemi dizaynında denizcilik problemlerini kavrama,",
+   "Gemi dizaynında denizcilik performansını belirlemeye yönelik yöntemleri tanıma,",
+   "Gemi dizayn parametreleri ile denizcilik performansı arasındaki ilişkileri kavrama,",
+   "Gemilerin denizcilik perfromansını iyileştirmek için mevcut yöntemleri tanıma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş",
+   "Hafta 2 — Denizcilik Performans Karakteristikleri",
+   "Hafta 3 — Karışık Denizlerin Matematiksel Temsili",
+   "Hafta 4 — Düzenli Dalgalardaki Gemi Hareketleri",
+   "Hafta 5 — Karışık Denizlerdeki Gemi Hareketleri",
+   "Hafta 6 — Denizcilik Kriterleri",
+   "Hafta 7 — Denizcilik Performansını Belirleme Yöntemleri",
+   "Hafta 8 — Denizcilik Performansını Belirleyen Dizayn Parametreleri",
+   "Hafta 9 — Gemi Büyüklüğü ve Ana Boyutların Etkisi",
+   "Hafta 10 — Gemi Formunun Denizcilik Performansına Etkisi",
+   "Hafta 11 — Denizcilik Rankı",
+   "Hafta 12 — Regresyon Analizine Dayalı Yöntemler",
+   "Hafta 13 — Optimizasyon Uygulamaları",
+   "Hafta 14 — Tipik Uygulamalar"
+  ],
+  "textbooks": [
+   "Lewis F.M., 1989 Principles of Naval Architecture, Volume III, Motions in Waves, SNAME Publications.",
+   "Lloyd A.R.J.M.,1989 Seakeeping: Ship behaviour in Rough Weather, Ellis Horwood Limited.",
+   "Faltinsen O.M., 1990 Sea Loads on Ships and Offshore Structures, Cambridge University Press.",
+   "Sarıöz K., Hearn G.E. ve Hills W., 1992 Practical Seakeeping for Design : An Optimised Approach, Proceedings of PRADS 92, Newcastle upon Tyne.",
+   "Kükner A. ve Sarıöz K., 1995 High Speed Hull Form Optimisation for Seakeeping, Journal of Advances ın Engineering Software, Vol. 22."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=505",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "DTM 507E": {
+  "code": "DTM 507E",
+  "name": "Numerical Techn.Eng.Problems",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "hassasiyet analizi ve interpolasyon. Sayısal integrasyon (Uygun olmayan integraller, tekil integraller, v.b.) Matris Hesaplamaları. Lineer Denklem Sistemleri için iteratif yöntemler. Sonlu farklarla türev ifadeleri. Adi Diferansiyel Denklemlerin sayısal çözümü. Adi Diferansiyel Denklemler için başlangıç değer problemleri. Adi Diferansiyel Denklemler için sınır değer problemleri. Kısmi Diferansiyel Denklmelerin sayısal çözümü. Parabolik, Eliptik ve Hiperbolik Kısmi Diferansiyel Denklemler ve Sınır Değer Problemleri. sensitivity analysis, and interpolation. Numerical Integration (Improper Integrals, Singular Integrals, etc.) Matrix Computations. Iterative Methods for Linear Systems. Differentiation with Finite Differences. Numerical Solution of Ordinary Differential Equations. Initial Value Problems for Ordinary Differential Equations. Boundary Value Problems for Ordinary Differential Equations. Numerical Solutions of Partial Differential Equations. Parabolic, Elliptic, and Hyperbolic Partial Differential Equations and Boundary Value Problems.",
+  "outcomes": [
+   "1. Mühendislik problemlerinde karşılaşılan problemlerin çözümüne uygun sayısal teknikleri belirleme,",
+   "2. İnterpolasyon ve sayısal integrasyon konularında farklı yöntemleri seçme ve uygulama",
+   "3. Lineer sistemlere ait matrislerin sayısal çözümlenmesinde farklı yöntemleri uygulama ve probleme uygun olanını seçme",
+   "4. Mühendislikte karşılaşılan başlangıç değer ve sınır değer problemlerine farklı yaklaşımları uygulama,",
+   "5. Parabolik, eliptik ve hiperbolik kısmi diferansiyel denklemlerin mühendislikteki fiziksel anlamlarını kavrama ve farklı yöntemlerle çözme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş, hassasiyet analizi ve interpolasyon",
+   "Hafta 2 — Sayısal İntegrasyon (Uygun olmayan integraller, Tekil integraller, v.b.)",
+   "Hafta 3 — Matris Hesaplamaları",
+   "Hafta 4 — Matris Hesaplamaları (devam)",
+   "Hafta 5 — Matris Hesaplamaları (devam)",
+   "Hafta 6 — Sonlu farklarla türev hesaplamaları",
+   "Hafta 7 — Adi diferansiyel denklemlerin sayısal çözümleri",
+   "Hafta 8 — Adi diferansiyel denklemlerle ifade edilen başlangıç değer problemleri",
+   "Hafta 9 — Adi diferansiyel denklemlerle ifade edilen sınır değer problemleri",
+   "Hafta 10 — Adi diferansiyel denklemlerle ifade edilen sınır değer problemleri (devam)",
+   "Hafta 11 — Kısmi diferansiyel denklemlerin sayısal çözümleri",
+   "Hafta 12 — Parabolik kısmi diferansiyel denklemler ve sınır değer problemleri",
+   "Hafta 13 — Eliptik kısmi diferansiyel denklemler ve sınır değer problemleri",
+   "Hafta 14 — Hiperbolik kısmi diferansiyel denklemler ve sınır değer problemleri"
+  ],
+  "textbooks": [
+   "1. Ralston, A. and Rabinowitz, P. 2001. A First Course in Numerical Analysis. Dover Publications, Mineola, New York.",
+   "2. Stoer, J. and Bulirsch, R. 1992. Introduction to Numerical Analysis. Springer-Verlag, New York.",
+   "3. Prasad, D. 2006. An Introduction to Numerical Analysis. Alpha Science International Ltd., Oxford, U.K.",
+   "4. Kress, R. 1998. Numerical Analysis. Springer, New York.",
+   "5. Press, W.H., and et.al. 1986. Numerical Recipes. Cambridge University Press, Cambridge."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=507",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "DTM 511": {
+  "code": "DTM 511",
+  "name": "Açık Deniz Yapılarına Etkileyen Hidrodinamik Dalga Kuvvetleri",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş ve kabuller. Koordinat sistemleri ve geometri. Problemin sınır şartları (sınır değer probleminin tanıtımı). Gelen dalganın potansiyeli (lineer dalga teorisi) ve Difraksiyon. Green Teoremi ve problemin Green Fonksiyonları. Fredholm Entegral Denklemleri ve irregüler frekanslar (iç potansiyel problemi). Nümerik çözüm metotları. Potansiyeller yardımıyla fiziksel büyüklüklerin (basınç, kuvvet, ek su kütlesi ve sönüm) bulunması ve Hareket Denklemleri. Haskind Bağıntıları. Pertürbasyon Teorisi ve Sürüklenme Kuvveti (drift force) hesabı. Bazı örnekler. Introduction and assumptions. Coordinate systems and geometry. Boundary conditions of the problem (description of the boundary-value problem). Potential of the incident wave (linear wave theory) and diffraction. Green Theorem and the Green Functions of the problem. Fredholm Integral Equations and irregular frequencies (inner potential problem). Numerical solutions. Computation of physical quantities as pressure, force, added mass and potential damping by using velocity potentials. Six degrees of freedom equation of the rijid-body motions. Haskind’s relations. Perturbation Theory and drift force-calculations. Some examples",
+  "outcomes": [
+   "Kompakt Yapı ve Difraksiyon kavramlarına aşina olmak",
+   "Green Teoremini probleme uygulayabilmek ve Green Fonksiyonları hakkında bilgi sahibi olmak,",
+   "Fredholm İntegral Denklemini nümerik olarak çözebilmek (Panel Metodu)",
+   "Basınç, kuvvet, ek su kütlesi ve sönüm gibi büyüklükleri potansiyeller yardımıyla hesaplayabilmek,",
+   "Haskind Bağıntıları hakkında bilgi sahibi olmak",
+   "Lineer olmayan Sürüklenme Kuvvetinin hesabını yapabilmek,",
+   "Gemi ve açık deniz yapılarının hidrodinamiği üzerine araştırma yapabilir ve yol gösterici olmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Giriş ve kabuller. Koordinat sistemleri ve geometri",
+   "Hafta 2 — Problemin sınır şartları (sınır değer probleminin tanıtımı)",
+   "Hafta 3 — Gelen dalganın hız potansiyeli (lineer dalga teorisi) ve Difraksiyon.",
+   "Hafta 4 — Green Teoremi ve problemin Green Fonksiyonları.",
+   "Hafta 5 — Fredholm Entegral Denklemi ve irregüler frekanslar (iç potansiyel problemi).",
+   "Hafta 6 — Nümerik çözüm metotları; Panel Metodu.",
+   "Hafta 7 — Potansiyeller yardımıyla fiziksel büyüklüklerin (basınç, kuvvet, ek su kütlesi ve sönüm) bulunması.",
+   "Hafta 8 — Hareket Denklemleri ve bunların kompleks çözümleri.",
+   "Hafta 9 — Haskind Bağıntıları.",
+   "Hafta 10 — Haskind Bağıntılarının irregüler frekansların yerinin tespitinde kullanılması.",
+   "Hafta 11 — Nonlineer problem ve Pertürbasyon Teorisi.",
+   "Hafta 12 — Sürüklenme Kuvveti (drift force) hesabı; kuvvet alt bileşenlerinin irdelenmesi.",
+   "Hafta 13 — Nümerik hesaba ait bazı uygulamalar.",
+   "Hafta 14 — Genel özet ve örnekler."
+  ],
+  "textbooks": [
+   "Clauss, G., Lehmann, E. and Östergaard, C., 1992. Offshore Structures, Volume I, Springer Verlag, Berlin.",
+   "Chakrabarti, S. K., 1987. Hydrodynamics of Offshore Structures, Computational Mechanics Publications Southampton and Springer Verlag Berlin.",
+   "Faltinsen, O. M., 1993. Sea loads on Ships and Offshore Structures, Cambridge University Press, U.K.",
+   "Chakrabarti, S. K., 1990. Nonlinear Methods in Offshore Engineering, Elsevier Science Publishers B.V. Amsterdam.",
+   "Dean, R. G. and Dalrymple, R. A., 1991. Water Wave Mechanics for Engineers and Scientists, World Scientific Publishing Co. Pte. Ltd. Singapore."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=511",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "DTM 532E": {
+  "code": "DTM 532E",
+  "name": "Oil Spill Mode.,Ana.&Resp.Tec.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Petrol yayılımının yörünge ve akıbet modellemesi. Kıyı bölgelerinde döküntü hareketi. Yörünge takip, fate ve etki değerlendirme modellerinin gelişimi. Petrol yayılımına hazırlık, olasılık planları ve yerinde değerlendirme. Deneysel ve laboratuvar analizler. Kıyıların korunması ve temizliği. Risk değerlendirmesi. Saha deneyleri. Uzaktan algılama. Temizlik çalışmaları. Vaka çalışmaları. Modeling of trajectory and fate of oil spills. Oil spill movement in coastal seas. Evolution of oil trajectory, fate and impact assessment models. Preparing for oil spills, contingency planning and in-situ countermeasures. Experimental and laboratory analysis. Shoreline protection and cleanup. Risk assessment. Field experiments.Remote sensing. Cleanup measures. Case studies..",
+  "outcomes": [
+   "Petrol yayılım modelleri",
+   "Kıyı alanlarında petrolün yayılımı,",
+   "Petrolün yayılımı ve çevreye etkileri",
+   "Petrol yayılımına neden olacak kazalara hazırlık,",
+   "Olasılık ve müdahale planları",
+   "Kıyı bölgelerinin temizlenmesi ve korunması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Petrol yayılımı ve çevresel etkileri",
+   "Hafta 2 — Kıyısal alanlarda petrol döküntüsünün hareketi",
+   "Hafta 3 — Petrol döküntüsünün ayrışması",
+   "Hafta 4 — Petrol yayılımı laboratuvar deneyleri",
+   "Hafta 5 — Yörünge takip, fate ve etki değerlendirme modellerinin gelişimi.",
+   "Hafta 6 — Yörünge takip, fate ve etki değerlendirme modellerinin gelişimi.",
+   "Hafta 7 — Olasılık planlama ve risk değerlendirme",
+   "Hafta 8 — Petrol yayılımı müdahale planları",
+   "Hafta 9 — Ara Sınav",
+   "Hafta 10 — Kıyı bölgelerinin korunması ve temizlenmesi",
+   "Hafta 11 — Kıyı bölgelerinin korunması ve temizlenmesi",
+   "Hafta 12 — Saha deneyleri",
+   "Hafta 13 — Uzaktan algılama",
+   "Hafta 14 — Vaka çalışmaları"
+  ],
+  "textbooks": [
+   "Oil and Hyrdocarbon Spills, Modelling, Analysis and Control, WIT Press, 1998., ISBN: 1-85312-5261",
+   "Oil Spill Science and Technology, Mervin Fingas (Ed.), 2011, Elsevier Inc. ISBN: 978-1-85617-943-0"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=532",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "DTM 533": {
+  "code": "DTM 533",
+  "name": "Sualtı Araş.Bil.Dalış Teknik.",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Dalış güvenliği, dalış fiziği ve fizyolojisi, malzeme bakım ve tamiri, dalış planlaması, ilk yardım, bilimsel dalışlarda kullanılan aletli dalış (SCUBA) teknikleri, bilimsel araştırmalara yönelik öneri sunma, dalış planı ve malzeme listesi hazırlığı yapma, sualtı ortamını, yerel flora ve faunayı tanıma, dalış bilgisayarları kullanımı, sualtı haberleşme sistemleri, yüksek basınç altında kullanılabilecek teknolojik cihazlar, sualtı araştırmalarında kullanılan cihazların tasarımları, sualtı ortamından bilgi toplanması ve değerlendirilmesi. Dive safety, diving physics and physiology, equipment care and maintenance, dive planning, First Aid, Self-Contained Underwater Breathing Apparatus (SCUBA) diving techniques used in the scientific dives, developing a proposal, dive plan, and materials list preparation intended for scientific researches, familiarization to the underwater environment, local flora and fauna, using dive program software, underwater communication systems, technological equipments that could be used under high pressure, design of equipments used in underwater researches, collection and evaluation of underwater data",
+  "outcomes": [
+   "1. Sualtı bilimsel çalışmalarında gerekli malzemelerin düzgün kullanımını ve canlı gözlemini de içerecek şekilde standart bilimsel dalış tekniklerini açıklamak ve kullanmak",
+   "2. Sualtı flora ve faunasını tanımlamak ve tarif etmek",
+   "3. SCUBA ve sualtı örnekleme malzemelerini kullanarak bir saha çalışması tasarlamak ve uygulamak",
+   "4. Bilimsel dalış projelerinde yer alabilmek için seçilebilir nitelikte olmak",
+   "5. Bilimsel dalış ile ilgili çeşitli akademik alanlardaki (biyoloji, jeoloji, denizcilik, deniz teknolojisi çalışmaları gibi) araştırma topluluklarının çoğunlukla kullandığı SCUBA dalış, örnekleme ve sualtı veri toplama yöntemlerinden haberdar olmak.",
+   "6. Sualtı araştırmalarında kullanılan cihazları tanımak ve tasarım prensiplerini öğrenmek",
+   "7. Sualtı çalışma ortamı hakkında fikir sahibi olmak",
+   "8. Sualtı araştırma amaçlı saha çalışmalarının tamamlanmasında küçük gruplarla uyum içinde çalışmak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Derse genel bakış, dalış malzemesi ve yüksek basınç tüpleri, dalış malzemesi kurulumu, yüzme testi, su ve şnorkel yetenekleri",
+   "Hafta 2 — Dalış fiziği, dalış fizyolojisi, dekompresyon teorisi Dalış sistemleri için teorik hesaplamalar ve nümerik simülasyonların hazırlanması",
+   "Hafta 3 — Dalış planı, acil destek planı (EAP), DAN ilk yardım becerileri, kurtarma becerileri (Kısa sınav)",
+   "Hafta 4 — Bilimsel dalış kuralları; yüzerlik becerileri ve görevleri, sualtı seyir becerileri ve görevleri (Dalış)",
+   "Hafta 5 — Bilimsel dalış yöntemleri, becerileri ve görevleri, örnekleme ve yerleştirme yöntemleri; sualtından veri toplanması (Dalış)",
+   "Hafta 6 — Yüksek basınç altında çalışacak ekipman ve sistemlerin tasarımı (sualtında lazer ile kesme gibi)",
+   "Hafta 7 — ROV, AUV gibi deniz teknolojisi araçları ile sualtında bilgi toplanması ve değerlendirilmesi",
+   "Hafta 8 — Sualtı haberleşme sistemleri",
+   "Hafta 9 — Sualtında kullanılan ve kullanılabilecek ölçüm cihazları",
+   "Hafta 10 — Sualtından örnek toplama cihazlarının tasarımı",
+   "Hafta 11 — Sualtı inceleme yöntemleri, sualtında fotoğraf ve video çekimi reknikleri (Dalış)",
+   "Hafta 12 — Sualtı tetkiği, yönetmelikler ve tetkik çihazları",
+   "Hafta 13 — Sualtı inceleme yöntemleri ile toplanan verilerin incelenmesi",
+   "Hafta 14 — Sualtında veri toplama yöntemlerinin geliştirilmesine yönelik çalışmalar"
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=533",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "DTM 610E": {
+  "code": "DTM 610E",
+  "name": "Gemi&Deniz Tekno.Müh.Özel Kon.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders her açıldığında duyurulacaktır. To be announced whenever the course is offered.",
+  "outcomes": [
+   "Gemi ve Deniz Teknolojisi Mühendisliği alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Gemi ve Deniz Teknolojisi Mühendisliği alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Gemi ve Deniz Teknolojisi Mühendisliği alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Gemi ve Deniz Teknolojisi Mühendisliği alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Gemi ve Deniz Teknolojisi Mühendisliği alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Gemi ve Deniz Teknolojisi Mühendisliği alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Gemi ve Deniz Teknolojisi Mühendisliği alanındaki son gelişmeleri öğrenmek ve kavramak.",
+   "Gemi ve Deniz Teknolojisi Mühendisliği alanındaki son gelişmeleri öğrenmek ve kavramak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 2 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 3 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 4 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 5 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 6 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 7 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 8 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 9 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 10 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 11 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 12 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 13 — Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Hafta 14 — Her dönem ders içeriğine bağli olarak belirlenecektir."
+  ],
+  "textbooks": [
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+   "Her dönem ders içeriğine bağli olarak belirlenecektir."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=610",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

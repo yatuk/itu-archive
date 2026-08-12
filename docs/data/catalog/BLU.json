@@ -1,0 +1,550 @@
+{
+ "BLU 501": {
+  "code": "BLU 501",
+  "name": "Elektronik Haberleşme Düzen.",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Elektronik haberleşme sistemleri, elektronik haberleşme pazarına ilişkin büyüklükler, düzenlemelere genel bakış, sabit ve mobil haberleşme operatörlerinin yetkilendirilmesi, rekabet politikası piyasa analizleri, erişim, arabağlantı, maliyet modelleri, tarife düzenlemeleri, spectrum yönetimi, spektrum izleme, numaralandırma rejimi, numara taşınabilirliği, evrensel hizmet. Electronics communication systems (ECS), the sizes related to Electronics communication (EC) market, general view to regulations, authorization of fixed and mobile operators, competition policy, market analyses, access, interconnection, cost models, tariff regulations, spectrum management, spectrum monitoring, numbering regime, number portability, universal service.",
+  "outcomes": [
+   "Sektörel büyüklükleri anlayıp değerlendirebilme,",
+   "Düzenleme niye yapılmalı nasıl yapılmalı ,",
+   "Telekomünikasyon operatörlerinin nasıl yetkilendirileceği,",
+   "Tüketici haklarının neler olduğu,",
+   "Telekomünikasyon hizmetlerinin maliyetlerinin hesaplanması,",
+   "Rekabet ve piyasa analizlerini yapabilmesi,",
+   "Rekabet ihlallerine yönelik neler yapılabileceği,",
+   "Piyasada rekabetin oluşturulması için neler yapılabileceği,"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Elektonik haberleşme sistemleri ve Pazar büyüklükler",
+   "Hafta 2 — Elektronik haberleşme düzenlemelerine genel bakış",
+   "Hafta 3 — Elektronik haberleşme hizmeti sunan işletmecilerin yetkilendirilmesi",
+   "Hafta 4 — Rekabet politikası",
+   "Hafta 5 — Piyasa analizleri",
+   "Hafta 6 — Erişim ve arabağlantı",
+   "Hafta 7 — Maliyet modelleri",
+   "Hafta 8 — Tarife (fiyat) düzenlemeleri",
+   "Hafta 9 — Tüketici hakları",
+   "Hafta 10 — Spektrum yönetimi",
+   "Hafta 11 — Kara, mobil ve deniz sistemleri",
+   "Hafta 12 — Spektrum izleme",
+   "Hafta 13 — Numaralandırma rejimi",
+   "Hafta 14 — Evrensel hizmet"
+  ],
+  "textbooks": [
+   "ITUTrends in Telecommunication Reform 2010",
+   "Colin Blackman and Lara Srivastava, Ed., Telecommunications Regulation Handbook, World Bank 2011",
+   "ICT Regulation Toolkit, World Bank ve Infodev,",
+   "Simon Haykin, “Communication Systems”, Wiley, 1983 ve yeni baskıları"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=501",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 505": {
+  "code": "BLU 505",
+  "name": "İş Süreçleri Yönetimi",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İş Süreçleri Analizi Giriş, Süreçlerle Yönetim, Bir sürecin performansı nasıl ölçülür? İleri Süreç Modelleme, Kalitatif Süreç Analizi, Kantitatif Süreç Analizi, Süreç Yeniden Tasarımı (Re-design), Süreç Modellerinden İhtiyaç Analizine, Süreç Otomasyonu, Süreç İzleme ve Süreç Madenciliği Introduction to BPM, Management by Process, How to measure process performance?, Advanced Process Modeling in BPMN, Quantitative Process Analysis, Qualitative Process Analysis, Process Redesign,Requirements Elicitation for Process Automation, Process Automation, Process Monitoring and Mining",
+  "outcomes": [
+   "İş süreçleri amaçlarını tanımlama",
+   "İş süreçleri kavram ve araçlarını öğrenme",
+   "Süreç modellerinin aktivite ve teknolojilerinin kontrolünde BT kullanımı",
+   "İş süreçlerinin etkinliği konusunda tespit ve tavsiyede bulunma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — İş Süreçleri Analizi GirişSüreçRutinProje",
+   "Hafta 2 — Süreçlerle YönetimSüreç Hiyerarşisi ve ÖnemiSüreç Tipleri",
+   "Hafta 3 — Bir sürecin performansı nasıl ölçülür?",
+   "Hafta 4 — İleri Süreç Modelleme",
+   "Hafta 5 — Kalitatif Süreç Analizi",
+   "Hafta 6 — Kantitatif Süreç Analizi",
+   "Hafta 7 — Vize",
+   "Hafta 8 — Kalitatif Süreç Analizi (Simülasyon ve Kuyruk)",
+   "Hafta 9 — Süreç Yeniden Tasarımı (Re-design)",
+   "Hafta 10 — Süreç Modellerinden İhtiyaç Analizine",
+   "Hafta 11 — Süreç Otomasyonu",
+   "Hafta 12 — Süreç İzleme ve Süreç Madenciliği",
+   "Hafta 13 — Süreç Madenciliği: Kontrol Akış Süreci Analizi",
+   "Hafta 14 — Final"
+  ],
+  "textbooks": [
+   "Weske, M. (2010), \"Business Process Management: Concepts, Languages, Architectures\", Springer-Verlag, Berlin-Heidelberg.",
+   "White, S. A. and Miers, D. (2008), \"BPMN: Modeling and Reference Guide\", Future Strategies Inc., Florida, U.S.A.",
+   "Dumas, M., La Rosa, M., Mendling, J., Reijers, H. (2013) “Fundamentals of Business Process Management” Springer",
+   "http://wwwis.win.tue.nl/~wvdaalst/news/Recommended_BPM_Books.pdf"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=505",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 510E": {
+  "code": "BLU 510E",
+  "name": "Medical Informatics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Tıbbi bilişim konusunda temel kavramlar. Tıpta bilgisayar destekli programlar, insan-bilgisayar arabirimi. Tıpta bilgisayar uygulamaları. Tıbbi kayıtlar, veri-tabanları, veri temsilleri, veri toplama ve sunumu. Biyolojik işaret işleme. Bilgi tabanlı sistemler. Tıpta yapay zeka. Tıpta karar ve analiz. Tıbbi bilişim sistemlerine giriş: Haberleşme ve ağlar. Tele-tıp ve İnternet uygulamaları. Tıbbi bilişimde ileri konular. An introduction to the fundamental principles of medical informatics. Computer-based tools in health care, human computer interfaces. An introduction to computer applications in medicine. Medical records, database, data representation, data acquisition and presentation. Biological signal processing. Knowledge-based systems. Medical artificial intelligence. Medical decision and analysis. Introduction to health information systems: communication and networks. Telemedicine and Internet applications. Advance topics in biomedical informatics.",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=510",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 513E": {
+  "code": "BLU 513E",
+  "name": "Fuzzy Log.Pr.for Sci.&En.App.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Belirsizlik Kavramları; Klasik Kümeler ve Karakteristik Değerleri; Bulanık Kümeler ve Üyelik Dereceleri; Üyelik Fonksiyonları; Bulanıklaştırma; Bulanık Küme İşlemleri, “ve, veya, değil”; Bulanık İlişkiler; Bulanık Matematik, Toplama, Çıkarma, Çarpma ve Bölme; Bulanık Kural Tabanı, “eğer-ise”; Bulanık Mantık Önermeler, Doğrulamalar, Alt bileşenler, Kararlar; Durulaştırma, Bulanık Kurallar ve Sistemler, Disiplinler Arası Çeşitli Problemler Uygulamalar.. Uncertainty Concepts; Classical Sets and Characteristic Values; Fuzzy Sets and Membership Degrees; Membership Functions; Fuzzification; Fuzzy Set Operations, And, Or and Not; Fuzzy Relationships; Fuzzy Mathematics, Addition, Subtraction, Multiplication and Division; Fuzzy Rule Base, “if-then”; Fuzzy Logic Propositions, Predicates, Consequents and Decisions; Defuzzification, Fuzzy Rules and Systems, Applications.",
+  "outcomes": [
+   "Bilimde belirsizlik ilkelerinin önemi",
+   "İkili (Aristo) mantığını ve klasik modelleme",
+   "Bulanık mantık esasları ve bulanık kümeler",
+   "Üyelik fonksiyonlarının belirlenmesi",
+   "Kural tabanının belirlenmesi",
+   "Mamdani ve Sugeno çıkarım motorları ile modelleme",
+   "Bulanık karar verme",
+   "Fonksiyon modelleme; bulanık kümeler ile eğri uydurma",
+   "Bulanık mantık ile diğer yapay zeka tekniklerinin karşılaştırılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Belirsizlik Kavramları",
+   "Hafta 2 — Klasik Kümeler ve Karakteristik Değerleri",
+   "Hafta 3 — Bulanık Kümeler ve Üyelik Dereceleri",
+   "Hafta 4 — Üyelik Fonksiyonları; Bulanıklaştırma",
+   "Hafta 5 — Bulanık Küme Operatörleri ve İşlemleri, “KESİŞİM, BİRLEŞİM, TAMAMLAYICI”",
+   "Hafta 6 — Bulanık İlişkiler; “VE, VEYA”",
+   "Hafta 7 — Bulanık Matematik, Toplama, Çıkarma, Çarpma ve Bölme",
+   "Hafta 8 — Bulanık Kural Tabanı; “EĞER-İSE”, ve Kural tabanlı Sistemler",
+   "Hafta 9 — Bulanık Çıkarım Motoru; Mamdani ve Sugeno",
+   "Hafta 10 — Bulanık Mantık Önermeler, Doğrulamalar, Alt bileşenler, Kararlar",
+   "Hafta 11 — Durulaştırma",
+   "Hafta 12 — Bulanık Kümeler ve Kuralları ile Fonksiyon Modelleme; Eğri Uydurma",
+   "Hafta 13 — Bulanık Mantık ile Modelleme Tekniklerinin Diğer Yapay Zeka Teknikleri ile Karşılaştırılması",
+   "Hafta 14 — Uygulamalar"
+  ],
+  "textbooks": [
+   "Zadeh, L.A.,1965. Fuzzy Sets. Information and Control.",
+   "Şen, Z., 2001, Bulanık Mantık ve Modelleme İlkeleri, Bilge Kültür Sanat Basımevi, 172 sayfa.",
+   "Yen, J., Langari, R., 1999. Fuzzy Logic: Intelligence, Control, and Information, , Prentice Hall,.",
+   "Ross, J. T., 1995. Fuzzy Logic with Engineering Applications, McGraw-Hill, Inc., New York, 593 pp.",
+   "Sivanandam, S. N., Sumathi, S., Deepa, S. N., 2006. Introduction to Fuzzy Logic Using MATLAB, Springer,."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=513",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 520": {
+  "code": "BLU 520",
+  "name": "Katılımcı Demokrasi ve Siyasette Bilişim",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Demokrasi Kültürü ve Katılımcılık, Televizyon Çağında Siyaset, Bilişim Devrimi ve Siyasi Sonuçları, Dijital Okuryazarlık, İletişim, Bilişim ve Demokrasi, Dijital Aktivizm, E-Sivil Toplum, Sosyal Ağ ve Siyaset, Seçim Kampanyaları ve İnternet, İnternet Yönetimi, E-devlet ve E-demokrasi, Elektronik Küresel Köy, Dijital Demokrasi ve Siyasi Güç, Geleceğin Demokrasisi Democracy Culture and Participation, Politics in the Age of Television, Information Revolution and Political Consequences, Digital Literacy, Communication, Information and Democracy, Digital Activism, Communication Information and Democracy, Digital Activism, E-civil society, Social Networking and Politics, Election Campaigns and Internet, Internet Governance, E-Government and E-Democracy, Electronic Global Village, Digital Democracy and Political Power, The Future of Democracy.",
+  "outcomes": [
+   "Siyaset, hükümet, siyasi iktidar, küreselleşme ve sivil katılımla ilgili bilgi iletişim teknolojilerinin etkisini anlayıp değerlendirebilme,",
+   "Eleştirel ve analitik düşünmenin, araştırma ve sunum becerilerinin geliştirilmesi,",
+   "Çevrimiçi kaynaklarını kullanma becerisi,",
+   "Siyasi fikirlerini tartışma yeteneği ve güveninin kazandırılması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Demokrasi Kültürü ve Katılımcılık",
+   "Hafta 2 — Televizyon Çağında Siyaset",
+   "Hafta 3 — Bilişim Devrimi ve Siyasi Sonuçları",
+   "Hafta 4 — Dijital Okuryazarlık",
+   "Hafta 5 — İletişim, Bilişim ve Demokrasi",
+   "Hafta 6 — Dijital Aktivizm",
+   "Hafta 7 — E-Sivil Toplum",
+   "Hafta 8 — Sosyal Ağ ve Siyaset",
+   "Hafta 9 — Seçim Kampanyaları ve İnternet",
+   "Hafta 10 — İnternet Yönetimi",
+   "Hafta 11 — E-devlet ve E-demokrasi",
+   "Hafta 12 — Elektronik Küresel Köy",
+   "Hafta 13 — Dijital Demokrasi ve Siyasi Güç",
+   "Hafta 14 — Geleceğin Demokrasisi"
+  ],
+  "textbooks": [
+   "Richard Davis, The Web of Politics",
+   "Lawrence K. Grossman, The Electronic Republic",
+   "Andrew Chadwick, Internet Politics: States, Citizens, and New Communications Technologies",
+   "Doç.Dr. Süleyman Karaçor, “Yeni İletişim Teknolojileri, Siyasal Katılım, Demokrasi”",
+   "Serdar Paktin, “Change.Org: Katılımcı Demokrasi ve Aktivizm”"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=520",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 537E": {
+  "code": "BLU 537E",
+  "name": "Veri Analizi&Görselleştiril.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Veri analizi uygulamaları, Python veri yapıları, Dizi objeleri ve örüntü araştırmaları için düzenli ifadeler, Sınıf, dosya yönetimi ve önemli python modülleri, Yapısal olmayan veri üzerinde vaka çalışması, Numpy dizi operasyonları, PANDAS kütüphanesi ile veri temizliği ve filtrelenmesi, PANDAS kütüphanesi ile veri birleştirme ve yeniden şekillendirme, PANDAS kütüphanesi ile veri bütünleştirmesi ve grup operasyonları, PANDAS kütüphanesi ile zaman serisi analizleri, Hikaye anlatma ve görsel iletişim, Yaygın grafik tiplerinin uygulamaları, Çoklu grafik, alt\u0002grafik ve figür oluşturma, Şekil ve stilleri özelleştirme Data analysis applications, Data Structures in Python, String objects and regular expressions for pattern search, Class, file management and important modules in Python, Case-study on unstructured data, Numpy array operations, Data Cleaning and Filtering with PANDAS, Data merging, joining and reshaping with PANDAS, Data aggregations and group operations with PANDAS, Time series analysis with PANDAS, Storrytelling and visual communication, Application of common plot types, Plotting Multiple Graphs, Subplots and Figures, Customizing color and styles",
+  "outcomes": [
+   "Temel veri yapıları",
+   "Yapısal olmayan verilerin yönetimi ve analizi",
+   "Veri temizliği",
+   "Veri dönüşümü",
+   "Veri bütünleştirmesi",
+   "Görsel iletişimdeki temel konseptleri",
+   "İleri grafik çizme uygulamaları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Veri analizi uygulamaları",
+   "Hafta 2 — Python veri yapıları",
+   "Hafta 3 — Dizi objeleri ve örüntü araştırmaları için düzenli ifadeler",
+   "Hafta 4 — Sınıf, dosya yönetimi ve önemli python modülleri",
+   "Hafta 5 — Yapısal olmayan veri üzerinde vaka çalışması",
+   "Hafta 6 — Numpy dizi operasyonları",
+   "Hafta 7 — PANDAS kütüphanesi ile veri temizliği ve filtrelenmesi",
+   "Hafta 8 — PANDAS kütüphanesi ile veri birleştirme ve yeniden şekillendirme",
+   "Hafta 9 — PANDAS kütüphanesi ile veri bütünleştirmesi ve grup operasyonları",
+   "Hafta 10 — PANDAS kütüphanesi ile zaman serisi analizleri",
+   "Hafta 11 — Hikaye anlatma ve görsel iletişim",
+   "Hafta 12 — Yaygın grafik tiplerinin uygulamaları",
+   "Hafta 13 — Çoklu grafik, alt-grafik ve figür oluşturma",
+   "Hafta 14 — Şekil ve stilleri özelleştirme"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=537",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 539E": {
+  "code": "BLU 539E",
+  "name": "Spec.Topics in Applied Infor.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilişim uygulamaları; bilgisayar bilimleri, elektronik ve haberleşme gibi alanların yanında biyoloji, sağlık, uzay teknolojileri, astronomi, hukuk, matematik, dilbilim, enerji, sosyal medya, yönetim ve eğitim gibi çok farklı alanlarda yaygın olarak görülmektedir. Bu nedenle bilişim uygulamaları yüksek lisans programında verilen derslerin çeşitliliği büyük önem arz etmektedir. Bu kapsamda, diğer derslerdeki konuları kapsamayan farklı konularda dersler verilecektir. Konular bilişim uygulamarına yönelik yeni araştırma faaliyetlerine göre değişiklik arz edebilir. Aside from fields such as computer science, electronics and communications; informatics applications are encountered in very diverse areas such as biology, health, space technologies, astronomy, law, mathematics, linguistics, energy, social media, business and education. Therefore, the diversity of the courses given in the applied informatics doctoral program has great importance. Within this context, courses with different subjects that do not comprise subjects of other courses will be given. Topics may chance depending on the new research activities in applied informatics.",
+  "outcomes": [
+   "1. Bilişim Uygulamalarındaki özel konularda bilgi edinme",
+   "2. Edinilen bilgilerin çeşitli uygulamalarla pekiştirilmesi"
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=539",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 541E": {
+  "code": "BLU 541E",
+  "name": "Cognitive System Engineering",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=541",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 546": {
+  "code": "BLU 546",
+  "name": "Adli Bilişim",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=546",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 596E": {
+  "code": "BLU 596E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=596",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 602E": {
+  "code": "BLU 602E",
+  "name": "Smart Anten.for Wirele.Com.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Akıllı Anten uygulaması için sistem gereksinimleri. Uyarlanabilir dizilerin yeni iletişim sistemlerine ve uzaktan algılama sistemlerine uygulanması. Akıllı Anten veya algılayıcı sistem tasarımı ve performans değerlendirmesi. Uyarlanabilir dizi anten sistemleri ile gerçekleştirilen konumsal filtreleme çalışması ve uygulanması. System requirements for implementation of an appropriate Smart Antenna implementation. Application of adaptive arrays to modern communication systems and remote sensing systems. Smart Antenna or sensor system design and performance evaluation. The operation and application of spatial filtering accomplished by adaptive array antenna systems.",
+  "outcomes": [
+   "1. Elektromanyetik kavramlar, statik ve zamanla değişen elektromanyetik alanlar",
+   "2. İleri elektromanyetik teorinin gerçek hayattaki uygulama örnekleri",
+   "3. Anten teorisindeki analitik ve sayısal tekniklerin kullanıldığı pratik uygulamalar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Antenler için elektromanyetik teorinin gözden geçirilmesi",
+   "Hafta 2 — Kanal karakteristikleri",
+   "Hafta 3 — Dizi teorisi",
+   "Hafta 4 — Akıllı diziler için anten tasarım özellikleri",
+   "Hafta 5 — Varış algoritmaları açısı",
+   "Hafta 6 — Eğitilmiş algoritmalar",
+   "Hafta 7 — Eğitilmemiş algoritmalar",
+   "Hafta 8 — Akıllı anten uygulmaları",
+   "Hafta 9 — Akıllı anten sistemleri tasarımı",
+   "Hafta 10 — Anten dizileri temelleri: 1 boyutta, dairesel ve düzlemsel",
+   "Hafta 11 — MIMO (Çok giriş çok çıkışlı)",
+   "Hafta 12 — RF haberleşme ve radar antenleri: Parabolik yansıtıcı, Mercek, Yagi-Uda ve Log periyodik dipol dizileri, GSM ve Radyo bağlantı antenleri",
+   "Hafta 13 — GPS, hücresel ve WLAN için uyarlanabilir dizi uygulamaları",
+   "Hafta 14 — Sayısal yöntemler (FDTD. MoM, FEM)"
+  ],
+  "textbooks": [
+   "1. Frank Gross, Smart Antennas with MATLAB, McGraw-Hill,2015"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=602",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 610E": {
+  "code": "BLU 610E",
+  "name": "Advanced Topics in Appl.Infor.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=610",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 614E": {
+  "code": "BLU 614E",
+  "name": "Method of Moment in Electroma.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=614",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 621E": {
+  "code": "BLU 621E",
+  "name": "Computational Neuroscience",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Beynin işleyişi ile ilgili araştırmalar günümüzde artan bir hızla devam etmektedir. Bilişim alanında gerçekleşen ilerlemeler sinir bilimi ile sıkı bir etkileşim ve sinerji içerisindedir. Doktora düzeyindeki bu derste sinir sisteminin bir bilgi işlem ortamı olarak nasıl yapılandığı, çalıştığı, deneysel yöntemlerle nasıl incelendiği ve modellendiği hakkında temel düzeyden başlayıp güncel araştırmalarda kullanılan yöntemlere dek uzanan konular ele alınacaktır. Research on the functioning of the brain continues with an increasing pace. Advances in informatics occur in close correspondence and synergy with neuroscience. In this PhD level course issues about how the nervous system is structured, how it functions, how it is investigated experimentally and modeled as a medium of information processing will be addressed starting from the basics and concluding with current research techniques.",
+  "outcomes": [
+   "Sinir sisteminin anatomi ve fizyolojisinin bilgi akışı ve işlenişini nasıl sağladığı",
+   "Bu bilgi işlem süreçlerinin hücre dışı kayıt teknolojisi ile nasıl izlendiği",
+   "Elde edilen hücre dışı kayıtların istatistiksel modelleme ve işaret işleme yoluyla nasıl açıklandığı",
+   "Sinir hücrelerinin bireysel ve toplu etkinliklerinin modellenmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Sinir sisteminin temel anatomisi. Çevresel ve merkezi sinir sistemi. Duyu sistemleri. Omurilik, beyin sapı ve beyincik. Beyin: korteks ve subkortikal yapılar.",
+   "Hafta 2 — Sinir sisteminin temel fizyolojisi. Duyu sistemlerinde enerji çevrimi. Dokunma, işitme, görme, tat alma, koku alma, denge duyuları. Sinir lif türleri. Bilginin çevreden merkeze ve merkezden çevreye akışı.",
+   "Hafta 3 — Sinir hücrelerinin temel anatomisi. Hücre zarı, dendrit, akson ve sinaps. Hücre iskeleti ve hücreler arası bağlantılar.",
+   "Hafta 4 — Sinir hücrelerinin temel fizyolojisi-1. Hücrenin iç ve dış ortamları, iyonlar, iyon kanalları, Sodyum/Potasyum pompası, zar potansiyeli, Nernst ve Goldman denklemleri",
+   "Hafta 5 — Sinir hücrelerinin temel fizyolojisi-2. Nörotransmitter-kapılı iyon kanalları. Sinaptik salınım ve post-sinaptik potansiyel.",
+   "Hafta 6 — Sinir hücrelerinin temel fizyolojisi-3. Voltaj-kapılı iyon kanalları, aksiyon potansiyeli, Hodgkin-Huxley denklemleri",
+   "Hafta 7 — Elektrofizyoloji-1. Hücre dışı sinirsel kayıtlar. Mikroelektrotlar, ön yükselteç, yükselteç, A/D çevrim, süzgeçler.",
+   "Hafta 8 — Elektrofizyoloji-2. Aksiyon potansiyelleri, yerel potansiyeller ve kortikal elektroensefalogram (EEG).",
+   "Hafta 9 — Hücredışı kayıtlarda aksiyon potansiyellerinin tespiti ve gruplanması. Kırpık olasılık dağılımları. En yüksek olabilirlikli kestirim.",
+   "Hafta 10 — Aksiyon potansiyeli katarlarının analizi. Poisson ve Bernoulli değişkenleri. Noktasal süreç kuramı. Homojen olmayan Poisson ve Bernoulli süreçleri.",
+   "Hafta 11 — Koşullu şiddet işlevi modelleme. Genel doğrusal modeller.",
+   "Hafta 12 — Aksiyon potansiyeli katarlarının benzetimi.",
+   "Hafta 13 — İşlevsel bağlantısallık analizi. Çok değişkenli noktasal süreçler. Ağ olabilirliği modeli. Granger nedenselliği.",
+   "Hafta 14 — Hesaplamalı sinir biliminde güncel araştırma konuları."
+  ],
+  "textbooks": [
+   "Eric R. Kandel, James H. Schwartz, Thomas M. Jessell, Steven A. Siegelbaum, A. J. Hudspeth, Principles of Neural Science, Fifth Edition, McGraw Hill Medical Books, 2013.",
+   "In All Likelihood: Statistical Modelling And Inference Using Likelihood, 1st Edition, Oxford University Press, 2013",
+   "D.J. Daley, D. Vere-Jones, An Introduction to the Theory of Point Processes, Volume 1, Springer, 2007",
+   "P. McCullagh, John A. Nelder, Generalized Linear Models, Chapman & Hall/CRC, 1989",
+   "Richard D. Keynes, Nerve and Muscle, Fourth Edition, Cambridge University Press, 2011."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=621",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ },
+ "BLU 696E": {
+  "code": "BLU 696E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 — Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 — Tez ve Makale yazım teknikleri",
+   "Hafta 3 — Araştırma ve yayın etiği",
+   "Hafta 4 — Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 — Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 — Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 — Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 — Dönem ödevi sunumu-1",
+   "Hafta 9 — Dönem ödevi sunumu-2",
+   "Hafta 10 — Dönem ödevi sunumu-3",
+   "Hafta 11 — Dönem ödevi sunumu-4",
+   "Hafta 12 — Dönem ödevi sunumu-5",
+   "Hafta 13 — Dönem ödevi sunumu-6",
+   "Hafta 14 — Dönem ödevi sunumu-7"
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=696",
+  "fetchedAt": "2026-08-12T21:49:46Z"
+ }
+}

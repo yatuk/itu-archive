@@ -7,7 +7,7 @@ import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
 import { state, markIndexReady } from './core/store.js';
 import { I18N } from './i18n.js';
 import { initCourses, loadTerm, applyFilters } from './views/courses.js';
-import { initCourseDetail } from './core/course-detail.js';
+import { initCourseDetail, openCourseDetail } from './core/course-detail.js';
 import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
 import { initExams, onShow as examsShow } from './views/exams.js';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
@@ -71,10 +71,12 @@ async function boot() {
   initCalendar();
   initExams();
   initHistory();
+  initOnboarding();
 
   // İlk sekme artık veri hazırken açılır (paylaşılan #program/#takvim/#sinavlar
   // bağlantıları bu sayede doğru çalışır).
   showView(VIEWS.includes(pendingView) ? pendingView : 'dersler', false);
+  openDetailFromHash(pendingView);
 
   await loadTerm(initialSlug);
 
@@ -99,6 +101,7 @@ function initTheme() {
   const resolveAuto = () => matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   const domApply = (t) => {
     document.documentElement.setAttribute('data-theme', t === 'auto' ? resolveAuto() : t);
+    applyTabLabels();
     for (const b of btns) {
       b.setAttribute('aria-pressed', String(b.dataset.theme === t));
       b.tabIndex = b.dataset.theme === t ? 0 : -1;
@@ -108,9 +111,9 @@ function initTheme() {
     domApply(t);
     try { localStorage.setItem('itu-theme', t); } catch (e) {}
   };
-  // Kayıtlı tercih (inline script dark/light çözmüş olabilir → cookie oku).
-  let cur = 'dark';
-  try { cur = localStorage.getItem('itu-theme') || 'dark'; } catch (e) {}
+  // Kayıtlı tercih; yoksa varsayılan "sade" (yeni ziyaretçiler).
+  let cur = 'sade';
+  try { cur = localStorage.getItem('itu-theme') || 'sade'; } catch (e) {}
   domApply(cur); // auto ise sistemden çöz
   for (const b of btns) {
     b.addEventListener('click', () => apply(b.dataset.theme));
@@ -119,6 +122,21 @@ function initTheme() {
   matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
     if (localStorage.getItem('itu-theme') === 'auto') domApply('auto');
   });
+}
+
+// Sade temasında sekme adları düz ("Dersler"), fosfor/CRT'de numaralı
+// ("01 · DERSLER") kalır — numaralandırma terminal kimliğinin parçası.
+const TAB_PLAIN = {
+  tr: { dersler: 'Dersler', gecmis: 'Geçmiş', onsart: 'Önşart Haritası', sinavlar: 'Sınavlar', takvim: 'Akademik Takvim', donemler: 'Dönemler', program: 'Program', hakkinda: 'Hakkında' },
+  en: { dersler: 'Courses', gecmis: 'History', onsart: 'Prereq Map', sinavlar: 'Exams', takvim: 'Calendar', donemler: 'Terms', program: 'Schedule', hakkinda: 'About' },
+};
+function applyTabLabels() {
+  const sade = document.documentElement.getAttribute('data-theme') === 'sade';
+  const plain = TAB_PLAIN[I18N.lang] || TAB_PLAIN.tr;
+  for (const b of document.querySelectorAll('.tabs button[data-view]')) {
+    const key = 'tab' + b.dataset.view.charAt(0).toUpperCase() + b.dataset.view.slice(1);
+    b.textContent = sade ? (plain[b.dataset.view] || I18N.t(key)) : I18N.t(key);
+  }
 }
 
 /* ---------- sekmeler ---------- */
@@ -157,7 +175,10 @@ function wireTabs() {
     const mainEl = document.querySelector('main.wrap');
     if (mainEl) mainEl.classList.toggle('wide', view === 'program');
     const h = location.hash.slice(1);
-    if (h !== view) {
+    // Paylaşılabilir ders detayı (#ders/BLG%20102E) hash'ini, dersler sekmesi
+    // gösterilirken koru; diğer sekme geçişlerinde normal şekilde üzerine yaz.
+    const detail = view === 'dersler' && h.startsWith('ders/');
+    if (!detail && h !== view) {
       if (push) history.pushState(null, '', `#${view}`);
       else history.replaceState(null, '', `#${view}`);
     }
@@ -183,7 +204,16 @@ function wireTabs() {
   window.addEventListener('popstate', () => {
     const v = location.hash.slice(1);
     show(VIEWS.includes(v) ? v : 'dersler', false);
+    openDetailFromHash(v);
   });
+}
+
+// Paylaşılabilir ders detay bağlantısı: #ders/BLG%20102E → dersler sekmesinde
+// o dersin detayını açar. openCourseDetail URL'yi bu biçime yazar.
+function openDetailFromHash(h) {
+  if (!h || !h.startsWith('ders/')) return;
+  const code = decodeURIComponent(h.slice(5)).trim();
+  if (code) openCourseDetail(code, { source: 'link' });
 }
 
 // Detay panelinden "bu hocanın geçmişinde ara" — geçmiş sekmesine geçip arama
@@ -205,6 +235,37 @@ window.addEventListener('itu:goto-courses', (e) => {
   $('#q').value = q;
   applyFilters();
 });
+
+// İlk ziyarette tek satırlık yönlendirme — kapatılınca localStorage'a yazılır,
+// bir daha çıkmaz. Örnek aramalar ilgili sekmeye geçip aramayı doldurur.
+function initOnboarding() {
+  const el = $('#onboard');
+  if (!el) return;
+  try { if (localStorage.getItem('itu-onboard')) return; } catch (e) {}
+  el.hidden = false;
+  $('#onboard-close').addEventListener('click', () => {
+    el.hidden = true;
+    try { localStorage.setItem('itu-onboard', '1'); } catch (e) {}
+  });
+  el.querySelectorAll('[data-onboard-view]').forEach((b) => {
+    b.addEventListener('click', () => {
+      el.hidden = true;
+      try { localStorage.setItem('itu-onboard', '1'); } catch (e) {}
+      const view = b.dataset.onboardView;
+      const q = b.dataset.onboardQ;
+      if (view === 'gecmis') {
+        $('#hq').value = q;
+        showView('gecmis', true);
+        historyShow();
+        searchHistory();
+      } else {
+        $('#q').value = q;
+        showView('dersler', true);
+        applyFilters();
+      }
+    });
+  });
+}
 
 // Hakkında sekmesindeki curl örneklerine sitenin gerçek adresini yazar.
 function fillHost() {

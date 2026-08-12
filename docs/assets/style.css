@@ -59,6 +59,10 @@
   --chart-axis: rgba(140, 160, 150, .75);
   --glow: #0b1a12;
   --mono: ui-monospace, "JetBrains Mono", "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --tt-bg: #1a1a1a;
+  --tt-fg: #fff;
+  --tt-onboard-bg: #0e2e22;
   --w: 1180px;
   /* Faz 1 — premium tasarım token'ları */
   --hairline: rgba(255, 255, 255, .08);
@@ -138,6 +142,61 @@
   --grain-opacity: 0;
 }
 [data-theme="contrast"] .scanlines { display: none; }
+
+/* Sade tema — terminal görünümünden ayrışan, genele hitap eden yüz.
+   Renkler tek kaynaktan (değişkenler); fosfor/CRT dekorasyonları kapalı.
+   Vurgu tek ve sakin; kırmızı yalnızca çakışma/dolu şubelerde kalır. */
+[data-theme="sade"] {
+  color-scheme: light;
+  --bg: #f4f6f4;
+  --panel: #ffffff;
+  --panel-2: #eef1ee;
+  --line: #dde4de;
+  --line-hot: #c4d0c6;
+  --fg: #1e2b23;
+  --dim: #4c5f53;
+  --dimmer: #6b7d72;
+  --acid: #1a7a55;
+  --cyan: #1f6f8b;
+  --amber: #9a6b00;
+  --red: #c2303a;
+  --row-hover: #eef2ef;
+  --detail-bg: #f7f9f7;
+  --canvas-bg: #fbfcfb;
+  --now-bg: #e8f2ec;
+  --chart-cap: rgba(26, 122, 85, .14);
+  --chart-cap-edge: rgba(26, 122, 85, .5);
+  --chart-axis: rgba(76, 95, 83, .6);
+  --glow: #ffffff;
+  --hairline: rgba(0, 0, 0, .08);
+  --hairline-strong: rgba(0, 0, 0, .14);
+  --shadow-soft: 0 14px 44px rgba(30, 60, 45, .12), 0 2px 8px rgba(30, 60, 45, .06);
+  --shadow-card: inset 0 1px 0 rgba(255, 255, 255, .7), 0 10px 32px rgba(30, 60, 45, .08);
+  --inset-hi: inset 0 1px 0 rgba(255, 255, 255, .8);
+  --inset-lo: inset 0 -1px 0 rgba(0, 0, 0, .05);
+  --grain-opacity: 0;
+}
+/* Sade'de CRT taraması, film tanesi ve terminal istemi kapalı; başlık düz. */
+[data-theme="sade"] .scanlines,
+[data-theme="sade"] body::after { display: none; }
+[data-theme="sade"] .brand .prompt,
+[data-theme="sade"] .brand .path,
+[data-theme="sade"] .brand .caret { display: none; }
+[data-theme="sade"] .brand h1 { color: var(--fg); text-shadow: none; }
+[data-theme="sade"] .brand h1::after { content: ""; animation: none; }
+/* Sade'de gövde metni sans; veri (kod, CRN, saat, sayı) hâlâ monospace —
+   sayı hizalaması ve "veri" hissi için. */
+[data-theme="sade"] body { font-family: var(--sans); }
+[data-theme="sade"] .crn,
+[data-theme="sade"] .code,
+[data-theme="sade"] .when,
+[data-theme="sade"] .num,
+[data-theme="sade"] .tt-time,
+[data-theme="sade"] .d-crn,
+[data-theme="sade"] .fill,
+[data-theme="sade"] .p-crnlist,
+[data-theme="sade"] code,
+[data-theme="sade"] pre { font-family: var(--mono); }
 
 * { box-sizing: border-box; }
 
@@ -263,6 +322,27 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 @media (prefers-reduced-motion: reduce) { .brand h1::after { animation: none; } }
 
 .tagline { max-width: 70ch; color: var(--dim); margin: 14px 0 22px; }
+
+/* İlk ziyaret yönlendirmesi — tek satır + iki örnek arama, kapatılınca
+   localStorage'a yazılır. */
+.onboard {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  background: var(--panel); border: 1px solid var(--line-hot);
+  border-radius: var(--radius-card); padding: 10px 14px; margin: 16px 0 -6px;
+}
+.onboard p { margin: 0; color: var(--fg); font-size: 13px; flex: 1 1 240px; }
+.onboard p b { color: var(--acid); }
+.onboard-links { display: flex; gap: 8px; flex-wrap: wrap; }
+.onboard-links button {
+  font: inherit; font-size: 12px; cursor: pointer;
+  background: var(--panel-2); color: var(--cyan);
+  border: 1px solid var(--line); padding: 5px 10px; border-radius: 999px;
+}
+.onboard-links button:hover { border-color: var(--cyan); }
+#onboard-close {
+  font: inherit; cursor: pointer; background: transparent; color: var(--dim);
+  border: 1px solid var(--line-hot); border-radius: 50%; width: 26px; height: 26px;
+}
 
 .statbar {
   display: grid; gap: 1px; margin: 0 0 -1px;
@@ -1069,7 +1149,7 @@ body.modal-open { overflow: hidden; }
   position: absolute; top: 100%; left: 50%;
   transform: translateX(-50%) translateY(-4px);
   margin-top: 8px;
-  background: #1a1a1a; color: #fff; font-size: 12px; line-height: 1.4;
+  background: var(--tt-bg); color: var(--tt-fg); font-size: 12px; line-height: 1.4;
   padding: 8px 10px; border-radius: 8px; white-space: nowrap;
   max-width: 80vw;
   box-shadow: 0 4px 14px rgba(0, 0, 0, .45); z-index: 50;
@@ -1080,14 +1160,14 @@ body.modal-open { overflow: hidden; }
 .ttip::before {
   content: ""; position: absolute; top: -5px; left: 50%;
   transform: translateX(-50%);
-  border: 5px solid transparent; border-bottom-color: #1a1a1a;
+  border: 5px solid transparent; border-bottom-color: var(--tt-bg);
 }
 .ttip.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 .ttip-onboard {
-  background: #0e2e22; border: 1px solid var(--acid);
+  background: var(--tt-onboard-bg); border: 1px solid var(--acid);
   white-space: normal; max-width: 240px; text-align: center;
 }
-.ttip-onboard::before { border-bottom-color: #0e2e22; }
+.ttip-onboard::before { border-bottom-color: var(--tt-onboard-bg); }
 
 .btn-primary {
   font: inherit; background: var(--cyan); color: var(--bg);

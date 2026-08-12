@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 
 import { fold, termLabel, buildingOf, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
-import { splitInstructors, obsDeepLink } from './course-detail.js';
+import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet } from '../views/program.js';
@@ -131,6 +131,23 @@ test('obsDeepLink koddan OBS katalog formu bağlantısı üretir', () => {
   assert.ok(obsDeepLink('MAT 101').includes('bransKodu=MAT&dersNo=101'));
   assert.equal(obsDeepLink(''), '');
   assert.equal(obsDeepLink('ders'), '');
+});
+
+test('gradePassPct ≥CC+ geçme oranını yüzde yapar', () => {
+  // AKM 204: AA 42, BA+ 33, BB+ 32, CB+ 34, CC+ 16, FF 19 — toplam 633
+  const g = { AA: 42, 'BA+': 33, 'BB+': 32, 'CB+': 34, 'CC+': 16, FF: 19 };
+  const pct = gradePassPct(g, 633);
+  assert.ok(pct > 0 && pct <= 100);
+  assert.equal(gradePassPct(g, 0), 0);
+  assert.equal(gradePassPct({}, 10), 0);
+});
+
+test('gradeMode en sık harf notunu ve yüzdesini verir', () => {
+  const g = { AA: 25, 'BA+': 6, VF: 42, FF: 19 };
+  const mode = gradeMode(g, 239);
+  assert.equal(mode.grade, 'VF');
+  assert.equal(mode.pct, Math.round((42 / 239) * 100));
+  assert.equal(gradeMode({}, 10).grade, '—');
 });
 
 test('sessionHours oturum sürelerini toplar ve yuvarlar', () => {

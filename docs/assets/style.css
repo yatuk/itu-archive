@@ -957,6 +957,23 @@ footer {
 }
 .d-req:hover { border-color: var(--acid); }
 .d-req:focus-visible { outline: 2px solid var(--acid); }
+
+/* Not dağılımı (Faz 3B) */
+.d-grades { border: 1px solid var(--line-hot); background: var(--panel-2); padding: 10px 14px; margin: 0 0 16px; }
+.d-grades h4 {
+  margin: 0 0 4px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--dimmer);
+}
+.d-grade-stat { color: var(--dim); font-size: 12px; margin: 4px 0 10px; }
+.d-grade-bars { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 14px; }
+.d-grade { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+.d-grade-l { width: 30px; color: var(--dim); text-align: right; font-variant-numeric: tabular-nums; }
+.d-grade-bar { flex: 1; height: 8px; background: var(--line-hot); border-radius: 2px; overflow: hidden; }
+.d-grade-bar i { display: block; height: 100%; background: var(--cyan); opacity: .85; }
+.d-grade-n { width: 24px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.d-grades h5 { margin: 12px 0 2px; font-size: 11px; color: var(--dim); }
+.d-grades-more summary { cursor: pointer; color: var(--cyan); font-size: 11px; margin-top: 8px; }
+.d-grades-more[open] summary { margin-bottom: 6px; }
 .detail-box dl {
   display: grid; grid-template-columns: max-content 1fr; gap: 8px 18px; margin: 0 0 18px;
 }

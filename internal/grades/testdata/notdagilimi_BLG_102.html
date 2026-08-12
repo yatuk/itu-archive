@@ -1,0 +1,158 @@
+        <h3>
+            BLG102 - BLG102E, Programlamaya Giri&#x15F; (C) / Intr to Sci&amp;Eng Comp (C) Not Da&#x11F;&#x131;l&#x131;m&#x131;
+        </h3>
+        <div class="row">
+
+            <div class="col-md-4 col-xs-12" id="table-region">
+                <table class="table table-bordered table-striped table-hover table-responsive" data-role="table">
+                    <thead>
+                        <tr class="table-baslik">
+                            <td>Not</td>
+                            <td>Ki&#x15F;i Say&#x131;s&#x131;</td>
+                            <td>Y&#xFC;zde</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Notu A&#xE7;&#x131;klanan &#xD6;&#x11F;renci Say&#x131;s&#x131;</th>
+                            <th colspan="2" class="text-end" data-role="sum">0</th>
+
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+
+            <div class="col-md-8 col-xs-12">
+                <div class="row mb-5">
+                    <div class="col-md-4 col-xs-12 col-md-offset-8 col-xs-offset-0">
+                        <select id="chartSelect" style="width:100%" class="select2 form-control form-control">
+                                <option value="202620">Bahar D&#xF6;nemi</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <canvas id="notChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+
+
+<script>
+    $(".select2").select2({
+            placeholder: 'Seçiniz',
+            allowClear: false
+    });
+    const ALL_DATA = [{"DonemKodu":"202620","YilAdi":"2025-2026","DonemTipAdi":"Bahar Dönemi","ToplamAciklananOgrenci":239,"Dagilim":[{"HarfNotu":"AA","Sayi":25,"Yuzde":10.46},{"HarfNotu":"BA+","Sayi":6,"Yuzde":2.51},{"HarfNotu":"BA","Sayi":20,"Yuzde":8.37},{"HarfNotu":"BB+","Sayi":21,"Yuzde":8.79},{"HarfNotu":"BB","Sayi":14,"Yuzde":5.86},{"HarfNotu":"CB+","Sayi":14,"Yuzde":5.86},{"HarfNotu":"CB","Sayi":11,"Yuzde":4.60},{"HarfNotu":"CC+","Sayi":16,"Yuzde":6.69},{"HarfNotu":"CC","Sayi":10,"Yuzde":4.18},{"HarfNotu":"DC+","Sayi":13,"Yuzde":5.44},{"HarfNotu":"DC","Sayi":7,"Yuzde":2.93},{"HarfNotu":"DD+","Sayi":15,"Yuzde":6.28},{"HarfNotu":"DD","Sayi":6,"Yuzde":2.51},{"HarfNotu":"FF","Sayi":19,"Yuzde":7.95},{"HarfNotu":"VF","Sayi":42,"Yuzde":17.57}]}];
+
+    let chart;
+    let currentDonemKod = ALL_DATA[0]?.DonemKodu ?? null;
+
+    const $chartSelect = document.getElementById('chartSelect');
+    const $canvas = document.getElementById('notChart');
+
+
+    if (currentDonemKod){
+        $chartSelect.value = currentDonemKod;
+    }
+
+    $('#chartSelect').on('change', function(e) {
+      var donemKodu = e.target.value;
+        renderChart(donemKodu);
+    });
+
+    window.addEventListener('resize', () => {
+        if (chart) chart.resize();
+    });
+
+    renderChart(currentDonemKod);
+
+
+    function buildConfig(notDagilimLabels,notDagilimData) {
+        return {
+            type: 'bar',
+            data: {
+                labels: notDagilimLabels,
+                datasets: [{
+                label:  'Kişi Sayısı',
+                data: notDagilimData,
+                borderWidth: 1
+                }]
+            },
+            options: {
+                responsive:true,
+                maintainAspectRatio : true,
+                scales: {
+                        y: { title: { display: true,  text: 'Öğrenci Sayısı', font :{ size: 16, weight:"bold" }}},
+                        x: { title: { display: true, text: 'Notlar', font :{ size: 16, weight:"bold" }}},
+                },
+                plugins: {
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        color: 'black',
+                        font: {
+                            size:'11'
+                        }
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        };
+    }
+
+    function renderChart(donemKodu) {
+        const donemNotDagilim = ALL_DATA.find(x => x.DonemKodu === donemKodu);
+
+        if (!donemNotDagilim) return;
+
+        if (chart) {
+            chart.destroy();
+            chart = null;
+        }
+
+        const labels = donemNotDagilim.Dagilim.map(function(v){return v.HarfNotu;});
+        const datas = donemNotDagilim.Dagilim.map(function(v){return v.Sayi;});
+        const percentages = donemNotDagilim.Dagilim.map(function(v){return v.Yuzde;});
+        const total = donemNotDagilim.ToplamAciklananOgrenci;
+        const cfg = buildConfig(labels, datas);
+        chart = new Chart($canvas.getContext('2d'), cfg);
+        renderTable('table-region',labels,datas,percentages,total);
+    };
+    function renderTable(container, labels, datas, percentages,total, tTitle) {
+        const tbody = document.getElementById(container).querySelector('[data-role="table"] tbody');
+        const sumEl = document.getElementById(container).querySelector('[data-role="sum"]');
+
+        if (!tbody) return;
+        tbody.innerHTML = '';
+
+        for (let i = 0; i < labels.length; i++) {
+            const label = labels[i];
+            const val   = Number(datas[i] ?? 0);
+            const yuzde   = Number(percentages[i] ?? 0);
+
+
+            const tr = document.createElement('tr');
+            const tdL = document.createElement('td');
+            const tdV = document.createElement('td');
+            const tdY = document.createElement('td');
+            tdL.textContent = label;
+            tdV.className = 'text-end';
+            tdV.textContent = val;
+            tdY.textContent = yuzde + "%";
+            tr.appendChild(tdL);
+            tr.appendChild(tdV);
+            tr.appendChild(tdY);
+            tbody.appendChild(tr);
+        }
+
+        if (sumEl) sumEl.textContent = total;
+
+    }
+</script>

@@ -63,6 +63,7 @@ func All(root string, skipSite bool) *Result {
 	res.checkIndex(root)
 	res.checkCalendar(root)
 	res.checkCatalog(root)
+	res.checkGrades(root)
 	if !skipSite {
 		res.checkSitePages(root)
 	}
@@ -323,6 +324,52 @@ func (r *Result) checkCatalog(root string) {
 				r.warnf("catalog: %q kodu önşart grafiğinde yok", code)
 			}
 			seen[code] = true
+		}
+	}
+}
+
+// checkGrades, not dağılımı dosyalarının bütünlüğünü denetler: dosya adı
+// branşla eşleşmeli, toplam ile kişi sayıları tutarlı olmalı, toplam ≥ 10
+// (etik sınır) ve <10 kişilik kayıt bulunmamalı. Veri opsiyoneldir — dizin
+// yoksa atlanır.
+func (r *Result) checkGrades(root string) {
+	dir := filepath.Join(root, "data", "grades")
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return
+		}
+		r.errf("data/grades okunamadı: %v", err)
+		return
+	}
+	for _, e := range entries {
+		if !strings.HasSuffix(e.Name(), ".json") || e.Name() == "index.json" {
+			continue
+		}
+		branch := strings.TrimSuffix(e.Name(), ".json")
+		var list []struct {
+			Code   string         `json:"code"`
+			Total  int            `json:"total"`
+			Grades map[string]int `json:"grades"`
+		}
+		if err := readJSON(filepath.Join(dir, e.Name()), &list); err != nil {
+			r.errf("grades/%s: çözümlenemedi: %v", e.Name(), err)
+			continue
+		}
+		for i, g := range list {
+			if !strings.HasPrefix(g.Code, branch) {
+				r.errf("grades/%s: kayıt %d: kod %q branş %q ile başlamıyor", e.Name(), i, g.Code, branch)
+			}
+			if g.Total < 10 {
+				r.errf("grades/%s: kayıt %d: %q toplam %d — 10 altı (etik sınır)", e.Name(), i, g.Code, g.Total)
+			}
+			sum := 0
+			for _, n := range g.Grades {
+				sum += n
+			}
+			if sum > g.Total {
+				r.errf("grades/%s: kayıt %d: %q kişi toplamı (%d) totalden (%d) fazla", e.Name(), i, g.Code, sum, g.Total)
+			}
 		}
 	}
 }

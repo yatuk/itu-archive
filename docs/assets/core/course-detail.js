@@ -146,10 +146,11 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   history.replaceState(null, '', '#ders/' + encodeURIComponent(code));
 
   const branch = String(code).split(' ')[0];
-  const [list, hist, cat] = await Promise.all([
+  const [list, hist, cat, gr] = await Promise.all([
     getJSON(`data/terms/${t}/branches/${branch}.json`).catch(() => []),
     getJSON(`data/history/courses/${branch}.json`).then((all) => all[code] || null).catch(() => null),
     getJSON(`data/catalog/${branch}.json`).then((all) => all[code] || null).catch(() => null),
+    getJSON(`data/grades/${branch}.json`).then((all) => (Array.isArray(all) ? all.filter((g) => g.code === code) : [])).catch(() => []),
   ]);
   const secs = Array.isArray(list) ? list.filter((s) => s.code === code) : [];
   const obsLink = obsDeepLink(code);
@@ -160,6 +161,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
       <p class="empty">Bu ders <b>${esc(termLabel(t))}</b> döneminde açık değil.</p>
       <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
         <p class="empty">yükleniyor…</p></section>
+      ${gradesHtml(gr)}
       ${histHtml(hist)}
       ${catalogHtml(cat)}`;
     wireHistButtons(content);
@@ -184,6 +186,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     </section>
     <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
       <p class="empty">yükleniyor…</p></section>
+    ${gradesHtml(gr)}
     ${catalogHtml(cat)}
     ${histHtml(hist)}`;
   wireHistButtons(content);
@@ -220,6 +223,61 @@ function catalogHtml(cat) {
     ${(cat.weeklyTopics || []).length ? details(`Haftalık konular (${cat.weeklyTopics.length})`, false, `<ol>${list(cat.weeklyTopics)}</ol>`) : ''}
     ${(cat.textbooks || []).length ? details('Kaynak kitaplar', false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
     ${cat.sourceUrl ? `<p class="d-cat-src">kaynak: <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">OBS katalog formu</a></p>` : ''}
+  </section>`;
+}
+
+// Harf notu sıralaması (katalogdaki resmî geçme ölçeğine göre değil, kabaca
+// azalan başarı): AA > BA+ > BA > BB+ > BB > CB+ > CB > CC+ > CC > DC+ > DC >
+// DD+ > DD > FF > VF. Geçme eşiği CC+ ve üzeri kabul edilir (İTÜ'de ders bazında
+// değişebilir; bu yalnızca gösterge).
+export const GRADE_ORDER = ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'FF', 'VF'];
+
+// Saf yardımcı: harf notu dağılımından geçme oranı (% ≥CC+). Test edilebilir.
+export function gradePassPct(grades, total) {
+  const pass = GRADE_ORDER.slice(0, 8).reduce((s, g) => s + (grades[g] || 0), 0);
+  return total ? Math.round((pass / total) * 100) : 0;
+}
+
+// Saf yardımcı: en sık harf notu + yüzdesi. Test edilebilir.
+export function gradeMode(grades, total) {
+  const e = Object.entries(grades).sort((a, b) => b[1] - a[1])[0];
+  if (!e) return { grade: '—', pct: 0 };
+  return { grade: e[0], pct: total ? Math.round((e[1] / total) * 100) : 0 };
+}
+
+// gradesHtml, harf notu dağılımını (Faz 3B) çubuk grafik + geçme oranı + mod
+// olarak render eder. Veri yoksa hiç çıktı üretmez (opsiyonel bölüm).
+function gradesHtml(gr) {
+  if (!gr || !gr.length) return '';
+  const total = gr[0].total;
+  const gradeBars = (term) => {
+    const max = Math.max(...Object.values(term.grades), 1);
+    const order = GRADE_ORDER.filter((g) => term.grades[g]);
+    return `<div class="d-grade-bars">${order.map((g) => `
+      <div class="d-grade" title="${esc(g)} · ${term.grades[g]} kişi">
+        <span class="d-grade-l">${esc(g)}</span>
+        <span class="d-grade-bar"><i style="width:${Math.round((term.grades[g] / max) * 100)}%"></i></span>
+        <span class="d-grade-n">${term.grades[g]}</span>
+      </div>`).join('')}</div>`;
+  };
+  const statLine = (term) => {
+    const pct = gradePassPct(term.grades, term.total);
+    const mode = gradeMode(term.grades, term.total);
+    const modeTxt = `${mode.grade} (%${mode.pct})`;
+    return `<p class="d-grade-stat">geçme ≥CC+ %${pct} · en sık ${esc(modeTxt)} · ${term.total} öğrenci</p>`;
+  };
+  // Birden çok dönem varsa en yenisi (donem kodu büyük) üstte; diğerleri
+  // katlanabilir listeye.
+  const sorted = [...gr].sort((a, b) => (b.donem || '').localeCompare(a.donem || ''));
+  const latest = sorted[0];
+  const older = sorted.slice(1);
+  return `<section class="d-grades">
+    <h4>Not dağılımı · ${esc(latest.term)}</h4>
+    ${statLine(latest)}
+    ${gradeBars(latest)}
+    ${older.length ? `<details class="d-grades-more"><summary>önceki dönemler (${older.length})</summary>
+      ${older.map((tm) => `<h5>${esc(tm.term)}</h5>${statLine(tm)}${gradeBars(tm)}`).join('')}
+    </details>` : ''}
   </section>`;
 }
 

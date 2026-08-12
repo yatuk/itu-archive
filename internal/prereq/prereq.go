@@ -283,3 +283,17 @@ func BuildGraph(rows []Row, names map[string]string) *model.PrereqGraph {
 	g.Edges = edges
 	return g
 }
+
+// ReverseIndex, "bu dersi önşart isteyenler" için kompakt ters indeks üretir:
+// { code: [o dersi önşart koşan dersler] }. Graph'ın tamamı 1.9 MB ve önşart
+// sekmesi açılmadan yüklenmiyor; detay paneli bu küçük dosyayı ayrı çeker.
+func ReverseIndex(g *model.PrereqGraph) map[string][]string {
+	rev := map[string][]string{}
+	for _, e := range g.Edges {
+		rev[e.From] = append(rev[e.From], e.To)
+	}
+	for code := range rev {
+		sort.Strings(rev[code])
+	}
+	return rev
+}

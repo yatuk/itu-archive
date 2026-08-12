@@ -230,11 +230,14 @@ function wireHistoryJump() {
   });
 }
 
-// Önşart havuzundan "derslerde aç" — dersler sekmesine geçip aramayı doldurur.
+// "derslerde aç" — dersler sekmesine geçip aramayı/filtreyi doldurur. detail:
+// string ise arama (eski çağrılar), nesne ise { q, program }.
 window.addEventListener('itu:goto-courses', (e) => {
-  const q = String(e.detail || '').trim();
+  const d = e.detail;
+  const q = typeof d === 'string' ? d : (d?.q ?? '');
   if (showView) showView('dersler', true);
   $('#q').value = q;
+  if (typeof d === 'object' && d?.program) $('#f-program').value = d.program;
   applyFilters();
 });
 

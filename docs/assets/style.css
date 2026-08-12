@@ -933,9 +933,30 @@ footer {
 .d-prog-list { display: flex; flex-wrap: wrap; gap: 5px; }
 .d-prog {
   border: 1px solid var(--line-hot); color: var(--cyan); padding: 2px 8px;
-  font-size: 11px; letter-spacing: .04em;
+  font-size: 11px; letter-spacing: .04em; background: none; cursor: pointer;
+  font-family: inherit;
 }
+.d-prog:hover { border-color: var(--cyan); }
+.d-prog:focus-visible { outline: 2px solid var(--cyan); }
 .d-prog-none { color: var(--dim); border-style: dashed; }
+
+/* Başlıktaki OBS derin bağlantısı */
+.d-obs { color: var(--dim); font-size: 11px; text-decoration: none; border-bottom: 1px dashed var(--line-hot); }
+.d-obs:hover { color: var(--cyan); }
+
+/* Bu dersi önşart isteyenler */
+.d-req-by { margin: 0 0 16px; }
+.d-req-by h4 {
+  margin: 0 0 8px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--dimmer);
+}
+.d-req-list { display: flex; flex-wrap: wrap; gap: 5px; }
+.d-req {
+  border: 1px solid var(--line-hot); color: var(--acid); padding: 2px 8px;
+  font-size: 11px; background: none; cursor: pointer; font-family: inherit;
+}
+.d-req:hover { border-color: var(--acid); }
+.d-req:focus-visible { outline: 2px solid var(--acid); }
 .detail-box dl {
   display: grid; grid-template-columns: max-content 1fr; gap: 8px 18px; margin: 0 0 18px;
 }

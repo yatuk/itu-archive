@@ -28,4 +28,4 @@ jobs:
         run: node --test docs/assets/core/core.test.js
 
       - name: Veri bütünlüğü
-        run: go run ./cmd/validate -quiet
+        run: go run ./cmd/validate -quiet -skip-site

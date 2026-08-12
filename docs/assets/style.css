@@ -979,6 +979,40 @@ body.modal-open { overflow: hidden; }
 }
 .p-credits b { color: var(--acid); font-variant-numeric: tabular-nums; }
 
+/* --- CRN doldur bookmarklet + tooltip --- */
+.p-obs-wrap { position: relative; display: inline-flex; }
+#p-obs {
+  cursor: grab; border-color: var(--acid); color: var(--acid);
+  animation: p-obs-pulse 2.4s ease-in-out infinite;
+}
+#p-obs:active { cursor: grabbing; }
+#p-obs.is-disabled { opacity: .45; cursor: not-allowed; animation: none; }
+@keyframes p-obs-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(46, 204, 159, .45); }
+  50% { box-shadow: 0 0 0 8px rgba(46, 204, 159, 0); }
+}
+
+.ttip {
+  position: absolute; bottom: calc(100% + 9px); left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #1a1a1a; color: #fff; font-size: 12px; line-height: 1.4;
+  padding: 8px 10px; border-radius: 8px; white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .45); z-index: 50; pointer-events: none;
+  opacity: 0; visibility: hidden;
+  transition: opacity 150ms ease, transform 150ms ease, visibility 150ms;
+}
+.ttip::after {
+  content: ""; position: absolute; top: 100%; left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent; border-top-color: #1a1a1a;
+}
+.ttip.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+.ttip-onboard {
+  background: #0e2e22; border: 1px solid var(--acid);
+  white-space: normal; max-width: 240px; text-align: center;
+}
+.ttip-onboard::after { border-top-color: #0e2e22; }
+
 .btn-primary {
   font: inherit; background: var(--cyan); color: var(--bg);
   border: 1px solid var(--cyan); padding: 8px 16px; cursor: pointer; border-radius: 999px;

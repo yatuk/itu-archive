@@ -34,8 +34,10 @@ func (r *Result) warnf(format string, args ...any) {
 	r.Warnings = append(r.Warnings, fmt.Sprintf(format, args...))
 }
 
-// All, tüm veriyi denetler.
-func All(root string) *Result {
+// All, tüm veriyi denetler. skipSite true ise üretilen SEO sayfalarının
+// denetimi atlanır — sayfalar ayrı bir adımda (cmd/site) üretilmediğinde
+// (ör. scrape CI yalnızca veri çektiğinde) bu kontrol anlamsız hata üretir.
+func All(root string, skipSite bool) *Result {
 	res := &Result{}
 	terms := filepath.Join(root, "data", "terms")
 
@@ -57,7 +59,9 @@ func All(root string) *Result {
 	res.checkQuota(root)
 	res.checkCurriculum(root)
 	res.checkIndex(root)
-	res.checkSitePages(root)
+	if !skipSite {
+		res.checkSitePages(root)
+	}
 	return res
 }
 

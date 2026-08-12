@@ -94,11 +94,14 @@ export function initProgram() {
   $('#p-clear').addEventListener('click', () => { setProgItems([]); renderProgSelector(); toast('Program temizlendi'); });
   $('#p-csv').addEventListener('click', exportCSV);
   $('#p-share').addEventListener('click', share);
-  $('#p-obs').addEventListener('click', showOBS);
+  $('#p-obs').addEventListener('click', (e) => { e.preventDefault(); showOBS(); });
+  $('#p-obs').addEventListener('mouseenter', () => showTip('p-obs-tt'));
+  $('#p-obs').addEventListener('mouseleave', () => hideTip('p-obs-tt'));
   $('#p-favs').addEventListener('click', addFavorites);
   $('#p-full').addEventListener('change', render);
   document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
   inited = true;
+  maybeOnboard();
 }
 
 // --- program yönetimi ---
@@ -308,6 +311,7 @@ function render() {
   renderGrid(items.map((i) => i.row));
   renderSummary(items);
   updateCredits(items);
+  updateBookmarklet(items);
 }
 
 function renderCRNStrip(items) {
@@ -546,8 +550,8 @@ export function buildSnippet(crns) {
 
 function showOBS() {
   const items = currentItems();
-  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
   const crns = items.map((i) => i.row[0]);
+  if (!crns.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
   const code = buildSnippet(crns);
   const backups = items.filter((i) => i.rec.backup).map((i) => `${i.row[0]} → yedek: ${i.rec.backup}`);
   const box = $('#p-obs-code');
@@ -558,6 +562,44 @@ function showOBS() {
     <pre class="p-code"><code>${esc(code)}</code></pre>
     <button type="button" id="p-copy" class="btn-ghost">kopyala</button>`;
   $('#p-copy').addEventListener('click', () => { copyText(code); toast('CRN kodu kopyalandı'); });
+}
+
+// Bookmarklet href'ini seçili CRN'lerle tazele (her render'da çağrılır).
+function updateBookmarklet(items) {
+  const a = $('#p-obs');
+  if (!a) return;
+  const crns = items.map((i) => i.row[0]);
+  if (!crns.length) {
+    a.setAttribute('href', 'javascript:void(0)');
+    a.classList.add('is-disabled');
+    return;
+  }
+  a.classList.remove('is-disabled');
+  // Bookmarklet: seçili CRN'ler gömülü. OBS kayıt sayfasında çalışır.
+  a.setAttribute('href', 'javascript:' + buildSnippet(crns));
+  a.title = 'Sürükleyip OBS kayıt ekranında tıklamanız yeterli';
+}
+
+// --- tooltip ---
+function showTip(id) {
+  const el = $('#' + id);
+  if (el) el.classList.add('show');
+}
+function hideTip(id) {
+  const el = $('#' + id);
+  if (el) el.classList.remove('show');
+}
+
+// İlk ziyarette onboarding balonu göster, 3sn sonra kapat.
+function maybeOnboard() {
+  let shown = false;
+  try { shown = localStorage.getItem('itu-obs-onboard') === '1'; } catch {}
+  if (shown) return;
+  try { localStorage.setItem('itu-obs-onboard', '1'); } catch {}
+  const el = $('#p-obs-onboard');
+  if (!el) return;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 3000);
 }
 
 function exportCSV() {

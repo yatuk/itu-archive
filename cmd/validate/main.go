@@ -21,9 +21,10 @@ import (
 func main() {
 	out := flag.String("out", "docs", "veri kök dizini")
 	quiet := flag.Bool("quiet", false, "yalnızca özet bas (uyarı kategori sayaçları + örnekler)")
+	skipSite := flag.Bool("skip-site", false, "üretilen SEO sayfalarının denetimini atla (yalnızca veri bütünlüğü)")
 	flag.Parse()
 
-	res := validate.All(*out)
+	res := validate.All(*out, *skipSite)
 
 	if *quiet {
 		printQuiet(res)

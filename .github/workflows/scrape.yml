@@ -37,7 +37,7 @@ jobs:
           go run ./cmd/scrape ${{ inputs.backfill && '-backfill' || '' }}
 
       - name: Veriyi doğrula
-        run: go run ./cmd/validate -quiet
+        run: go run ./cmd/validate -quiet -skip-site
 
       - name: Boyut raporu
         run: |

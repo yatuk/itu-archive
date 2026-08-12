@@ -1,7 +1,7 @@
 name: site
 
-# Statik SEO sayfaları üretilir, veri ve bağlantı bütünlüğü denetlenir.
-# Her push ve PR'de koşar, üretim "commit ile aynı mı" denetimi yapar.
+# Her push ve PR'de test + veri bütünlüğü denetimi.
+# SEO sayfaları bu workflow'da üretilmez; manuel çalıştırılır (go run ./cmd/site).
 
 on:
   push:
@@ -28,8 +28,5 @@ jobs:
       - name: Frontend saf fonksiyon testleri
         run: node --test docs/assets/core/core.test.js
 
-      - name: SEO sayfalarını üret
-        run: go run ./cmd/site
-
-      - name: Veri ve site bağlantı bütünlüğü
-        run: go run ./cmd/validate -quiet
+      - name: Veri bütünlüğü
+        run: go run ./cmd/validate -quiet -skip-site

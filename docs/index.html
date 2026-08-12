@@ -331,7 +331,11 @@
    <div class="p-actions">
     <button type="button" id="p-addrow" class="btn-primary">＋ Ders Ekle</button>
     <button type="button" id="p-dl" class="btn-ghost" title="Takvimi görsel olarak indir">İndir</button>
-    <button type="button" id="p-obs" class="btn-ghost">CRN doldur</button>
+    <div class="p-obs-wrap">
+     <a id="p-obs" class="btn-ghost" href="javascript:void(0)" draggable="true" aria-describedby="p-obs-tt">CRN doldur</a>
+     <div id="p-obs-tt" class="ttip" role="tooltip">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</div>
+     <div id="p-obs-onboard" class="ttip ttip-onboard" role="status">👆 Bu butonu yer imleri çubuğuna sürükleyin!</div>
+    </div>
     <span class="p-credits" title="Toplam kredi">Kredi: <b id="p-credits-val">—</b></span>
    </div>
   </div>

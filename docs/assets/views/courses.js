@@ -144,7 +144,7 @@ export function applyFilters() {
   const total = state.rows.length;
   const n = state.filtered.length;
   $('#resultline').innerHTML = n === total
-    ? `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} branş`
+    ? `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} bölüm`
     : `<b>${n}</b> / ${total} şube eşleşti`;
   renderChips();
   updateSelection();
@@ -216,7 +216,7 @@ function renderChips() {
   const chips = [];
   const q = $('#q').value.trim();
   if (q) chips.push({ key: 'q', label: `"${q}"` });
-  if ($('#f-branch').value) chips.push({ key: 'branch', label: `branş: ${$('#f-branch').value}` });
+  if ($('#f-branch').value) chips.push({ key: 'branch', label: `bölüm: ${$('#f-branch').value}` });
   if ($('#f-code').value.trim()) chips.push({ key: 'code', label: `kod: ${$('#f-code').value.trim()}` });
   if ($('#f-day').value) chips.push({ key: 'day', label: `gün: ${$('#f-day').value}` });
   if ($('#f-time').value) chips.push({ key: 'time', label: `saat: ${TIME_LABEL[$('#f-time').value] || $('#f-time').value}` });

@@ -19,7 +19,7 @@ const I18N = (() => {
       tabProgram: '07 · PROGRAM',
       tabHakkinda: '08 · HAKKINDA',
       filterTerm: 'dönem',
-      filterBranch: 'branş',
+      filterBranch: 'bölüm',
       filterDay: 'gün',
       filterTime: 'saat',
       filterLevel: 'seviye',

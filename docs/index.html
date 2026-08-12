@@ -15,10 +15,11 @@
   try {
     var t = localStorage.getItem('itu-theme');
     if (t && t !== 'auto') { document.documentElement.setAttribute('data-theme', t); }
-    else {
+    else if (t === 'auto') {
       document.documentElement.setAttribute('data-theme',
         matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
     }
+    else { document.documentElement.setAttribute('data-theme', 'sade'); } // yeni ziyaretçi
   } catch (e) {}
 })();
 </script>
@@ -114,7 +115,8 @@
    </div>
    <div class="mast-controls">
     <div class="theme-pick" role="group" aria-label="Görünüm teması">
-     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="true" title="Fosfor (koyu)">◐</button>
+     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" title="Sade (varsayılan)">◎</button>
+     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" title="Fosfor (koyu)">◐</button>
      <button type="button" class="theme-btn" data-theme="light" aria-pressed="false" title="Açık">☀</button>
      <button type="button" class="theme-btn" data-theme="contrast" aria-pressed="false" title="Yüksek kontrast">▣</button>
      <button type="button" class="theme-btn" data-theme="auto" aria-pressed="false" title="Sistem teması">◈</button>
@@ -133,6 +135,15 @@
   </dl>
  </div>
 </header>
+
+<div id="onboard" class="onboard" hidden>
+ <p><b>İTÜ Ders Arşivi</b> — OBS'nin yayınlamadığı geçmiş dönemleri, kontenjan geçmişini ve müfredat haritasını arşivler. Denemek için:</p>
+ <div class="onboard-links">
+  <button type="button" data-onboard-view="gecmis" data-onboard-q="BLG 102E">BLG 102E'yi son yıllarda kim verdi?</button>
+  <button type="button" data-onboard-view="dersler" data-onboard-q="BLG 102E">Bu dönem BLG 102E'nin şubeleri</button>
+ </div>
+ <button type="button" id="onboard-close" aria-label="Kapat">✕</button>
+</div>
 
 <nav class="tabs wrap" role="tablist" aria-label="Bölümler">
  <button role="tab" aria-selected="true" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" data-i18n="tabDersler">01 · DERSLER</button>
@@ -156,7 +167,7 @@
    </label>
    <div class="filters">
     <label>dönem <select id="f-term"></select></label>
-    <label>branş <select id="f-branch"><option value="">hepsi</option></select></label>
+    <label>bölüm <select id="f-branch"><option value="">hepsi</option></select></label>
     <label>gün <select id="f-day">
       <option value="">hepsi</option>
       <option>Pazartesi</option><option>Salı</option><option>Çarşamba</option>
@@ -388,7 +399,7 @@
 
    <h2>Veri nereden geliyor?</h2>
    <ul>
-     <li><code>obs.itu.edu.tr/public/DersProgram</code>: dört program seviyesi (Önlisans, Lisans, Lisansüstü, Lisansüstü 2. Öğretim) ve 337 branş kodu için güncel ders programı.</li>
+     <li><code>obs.itu.edu.tr/public/DersProgram</code>: dört program seviyesi (Önlisans, Lisans, Lisansüstü, Lisansüstü 2. Öğretim) ve 337 bölüm kodu için güncel ders programı.</li>
      <li><code>takvim.sis.itu.edu.tr</code>: dört akademik yılın tam takvimi.</li>
      <li>Tarihsel dökümler: 2016-2017'ye kadar uzanan geçmiş dönemler.</li>
    </ul>
@@ -398,7 +409,7 @@
    <pre><code># aktif dönemin tüm şubeleri (CSV)
 curl -O https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/all.csv
 
-# tek branş (JSON)
+# tek bölüm (JSON)
 curl https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/branches/BIL.json
 
 # dönem ve takvim listesi

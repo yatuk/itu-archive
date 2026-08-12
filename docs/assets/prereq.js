@@ -361,9 +361,16 @@ import { state } from './core/store.js';
         <h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3>
         ${tree ? `<h4>Önşartı</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
         ${req.length ? `<h4>Gereken dersler (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
-        ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}`;
+        ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}
+        <button type="button" class="btn-ghost pg-detail-open" data-code="${esc(n.code)}">bu dersi detaylandır</button>`;
       this.detail.querySelectorAll('.pg-chip:not([disabled])').forEach((b) =>
         b.addEventListener('click', () => this.panTo(b.dataset.code)));
+      const dOpen = this.detail.querySelector('.pg-detail-open');
+      if (dOpen) {
+        dOpen.addEventListener('click', () => {
+          window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: dOpen.dataset.code, source: 'onsart' } }));
+        });
+      }
     }
 
     // Seçmeli slotun alternatiflerini aranabilir, branş gruplu, canlı dönem

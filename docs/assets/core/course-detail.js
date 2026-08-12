@@ -1,11 +1,14 @@
 // Ortak ders detay modalı. Dersler, önşart haritası, seçmeli havuz ve geçmiş
 // sekmelerinin tümü aynı paneli açar — tek giriş openCourseDetail(code, opts).
 //
-// Başlangıçta views/courses.js içindeki openDetail'in birebir taşınmış halidir
-// (saf refactor); detay/geçmiş eklemeleri ayrı commit'lerde gelir.
+// Panel iki bölümden oluşur: (1) seçili dönemdeki tüm şubeler (şube başına
+// hoca, oturum, haftalık saat, doluluk, önşart), (2) geçmiş dönemler (doluluk
+// trendi + dönem tablosu). Ders o dönem açık değilse neden açıklanır, geçmiş
+// yine gösterilir — sessiz boşluk olmaz.
 
-import { $, getJSON, esc } from './utils.js';
+import { $, getJSON, esc, termLabel, sessionHours } from './utils.js';
 import { state } from './store.js';
+import { fillBar, trendChart } from './chart.js';
 
 let lastDetailFocus = null;
 
@@ -22,10 +25,66 @@ function fillNote(crn) {
   return `ilk ölçümden ${span} sonra doldu`;
 }
 
-const field = (k, v) => (v ? `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>` : '');
+// Oturum satırı: "Pazartesi 08:30/11:29 · AYB"
+function sessionsHtml(sec) {
+  return sec.days.map((d, i) => [d, sec.times[i] || '', sec.rooms[i] || '', sec.buildings[i] || '']
+    .filter(Boolean).join(' · ')).join('<br>');
+}
+
+// Tek şube kartı. Öğretim üyesi, dolma süresi, oturumlar, önşart, sınıf/kredi
+// ve rezervasyon alanlarının tümü burada korunur (eski panelin alanları).
+function secCard(s) {
+  const pct = s.capacity ? `%${Math.round((s.enrolled / s.capacity) * 100)}` : '';
+  const hrs = sessionHours(s.times);
+  const note = fillNote(s.crn);
+  const canHistory = s.instructor && s.instructor !== '-' && s.instructor !== '***';
+  const sessions = sessionsHtml(s);
+  return `
+    <div class="d-sec">
+      <div class="d-sec-head">
+        <b class="d-crn">${esc(s.crn)}</b>
+        <span class="d-sec-instr">${esc(s.instructor || '—')}</span>
+        ${canHistory ? `<button type="button" class="btn-ghost d-hist" data-name="${esc(s.instructor)}">geçmişinde ara</button>` : ''}
+      </div>
+      <div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa (oturum)` : ''].filter(Boolean).join(' · ')}</div>
+      ${sessions ? `<div class="d-sec-when">${sessions}</div>` : ''}
+      <div class="d-sec-stats">${fillBar(s.capacity, s.enrolled)} ${s.capacity ? `${s.enrolled} / ${s.capacity} (${pct})` : '—'}${note ? ` · ${esc(note)}` : ''}</div>
+      ${s.prereq && s.prereq !== '-' ? `<div class="d-sec-req"><span>önşart:</span> ${esc(s.prereq)}</div>` : ''}
+      ${s.classReq && s.classReq !== '-' ? `<div class="d-sec-req"><span>sınıf / kredi:</span> ${esc(s.classReq)}</div>` : ''}
+      ${s.reserved && s.reserved !== '-' ? `<div class="d-sec-req"><span>rezervasyon:</span> ${esc(s.reserved)}</div>` : ''}
+    </div>`;
+}
+
+// Geçmiş dönem bölümü: dönem doluluk trendi (trendChart) + dönem tablosu.
+// Veri yoksa neden açıklanır.
+function histHtml(hist) {
+  const byTerm = new Map();
+  for (const [slug, instructor, cap, enr] of hist?.rows || []) {
+    if (!byTerm.has(slug)) byTerm.set(slug, []);
+    byTerm.get(slug).push({ instructor, cap, enr });
+  }
+  if (!byTerm.size) {
+    return `<section class="d-hist"><h4>Geçmiş dönemler</h4>
+      <p class="empty">2019 öncesi dönemlerde dönem bazlı kayıt veri tabanında yok.</p></section>`;
+  }
+  const seasons = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' };
+  const openIn = [...new Set([...byTerm.keys()].map((s) => s.split('-')[2]))].map((s) => seasons[s] || s);
+  const rows = [];
+  for (const [slug, secs] of byTerm) secs.forEach((r, i) => rows.push({ slug, termFirst: i === 0, ...r }));
+  return `<section class="d-hist">
+    <h4>Geçmiş dönemler · ${byTerm.size} dönemde açıldı (${esc(openIn.join(', '))})</h4>
+    ${trendChart(byTerm)}
+    <div class="tablewrap"><table class="htable" aria-label="Dönem geçmişi">
+      <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr></thead>
+      <tbody>${rows.map((r) => `<tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
+        <td>${esc(r.instructor || '—')}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td>
+        <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`).join('')}</tbody>
+    </table></div>
+  </section>`;
+}
 
 // code: "BLG 101E"; term varsayılanı Dersler'deki aktif dönem (state.termSlug).
-// crn verilirse o şubeye gider, verilmezse koddaki ilk şubeye.
+// crn yalnızca odak bilgisidir — panel koddaki tüm şubeleri gösterir.
 export async function openCourseDetail(code, { term, crn, source } = {}) {
   const t = term || state.termSlug;
   lastDetailFocus = document.activeElement;
@@ -37,54 +96,44 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   $('#detail-close').focus();
 
   const branch = String(code).split(' ')[0];
-  let sec = null;
-  try {
-    const list = await getJSON(`data/terms/${t}/branches/${branch}.json`);
-    sec = crn ? list.find((s) => s.crn === crn) : list.find((s) => s.code === code);
-  } catch { /* ağ hatası: aşağıda "detay yok" gösterilir */ }
+  const [list, hist] = await Promise.all([
+    getJSON(`data/terms/${t}/branches/${branch}.json`).catch(() => []),
+    getJSON(`data/history/courses/${branch}.json`).then((all) => all[code] || null).catch(() => null),
+  ]);
+  const secs = Array.isArray(list) ? list.filter((s) => s.code === code) : [];
 
-  if (!sec) {
-    content.innerHTML = '<p class="empty">detay bulunamadı</p>';
+  if (!secs.length) {
+    content.innerHTML = `
+      <h3 id="detail-title">${esc(code)}</h3>
+      <p class="empty">Bu ders <b>${esc(termLabel(t))}</b> döneminde açık değil.</p>
+      ${histHtml(hist)}`;
+    wireHistButtons(content);
     return;
   }
 
-  const sessions = sec.days.map((d, i) => [d, sec.times[i] || '', sec.rooms[i] || '', sec.buildings[i] || '']
-    .filter(Boolean).join(' · ')).join('<br>');
-  const pct = sec.capacity ? `%${Math.round((sec.enrolled / sec.capacity) * 100)}` : '';
-  const note = fillNote(crn);
-  const canHistory = sec.instructor && sec.instructor !== '-' && sec.instructor !== '***';
-  const programs = sec.programs || [];
-
-  // "Alabilen programlar" belirgin ve her zaman görünür; boşsa kısıtlama yok.
-  const programsHtml = programs.length
-    ? programs.map((p) => `<span class="d-prog">${esc(p)}</span>`).join('')
-    : '<span class="d-prog d-prog-none">kısıtlama yok — tüm programlar alabilir</span>';
-
+  const programs = [...new Set(secs.flatMap((s) => s.programs || []))];
   content.innerHTML = `
-    <h3 id="detail-title">${esc(code)} <span>${esc(sec.name)}</span></h3>
-    <div class="d-meta">${[branch, sec.level, sec.method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
+    <h3 id="detail-title">${esc(code)} <span>${esc(secs[0].name)}</span></h3>
+    <div class="d-meta">${[branch, secs[0].level, secs[0].method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
+    <section class="d-secs">
+      <h4>Bu dönem · ${secs.length} şube</h4>
+      ${secs.map(secCard).join('')}
+    </section>
     <section class="d-progs">
       <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>
-      <div class="d-prog-list">${programsHtml}</div>
+      <div class="d-prog-list">${programs.length
+        ? programs.map((p) => `<span class="d-prog">${esc(p)}</span>`).join('')
+        : '<span class="d-prog d-prog-none">kısıtlama yok — tüm programlar alabilir</span>'}</div>
     </section>
-    <dl>
-      ${field('Öğretim üyesi', sec.instructor)}
-      ${field('Kontenjan', sec.capacity ? `${sec.enrolled} / ${sec.capacity} (${pct})` : '—')}
-      ${note ? field('Dolma', note) : ''}
-      ${sessions ? field('Oturumlar', sessions) : ''}
-      ${sec.prereq && sec.prereq !== '-' ? field('Önşart', sec.prereq) : ''}
-      ${sec.classReq && sec.classReq !== '-' ? field('Sınıf / kredi önşartı', sec.classReq) : ''}
-      ${sec.reserved && sec.reserved !== '-' ? field('Rezervasyon', sec.reserved) : ''}
-    </dl>
-    ${canHistory ? `<button type="button" class="btn-ghost d-hist" data-name="${esc(sec.instructor)}">bu hocanın geçmişinde ara</button>` : ''}`;
+    ${histHtml(hist)}`;
+  wireHistButtons(content);
+}
 
-  const histBtn = content.querySelector('.d-hist');
-  if (histBtn) {
-    histBtn.addEventListener('click', () => {
-      window.dispatchEvent(new CustomEvent('itu:goto-history', { detail: histBtn.dataset.name }));
-      closeCourseDetail();
-    });
-  }
+function wireHistButtons(content) {
+  content.querySelectorAll('.d-hist').forEach((b) => b.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('itu:goto-history', { detail: b.dataset.name }));
+    closeCourseDetail();
+  }));
 }
 
 export function closeCourseDetail() {

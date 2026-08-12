@@ -65,11 +65,19 @@ haftalık oturum saati, programlar, önşart, dolma süresi, geçmiş dönemler
 (doluluk grafiği) ve varsa katalog bilgisi (kredi, AKTS, dil, içerik, çıktılar,
 kaynak kitaplar). Panel her sekmeyle paylaşılıyor — önşart haritasından, seçmeli
 havuzdan, geçmişten ve sınavlardan da açılıyor — ve kendi paylaşılabilir
-bağlantısına sahip (`#ders/BLG%20102E`). "Zaman çizelgesi" düğmesi gün ×
-saat ızgarasında çakışan dersleri kırmızı işaretler. Sekmeler arası geçiş
-tarayıcı geçmişine yazılıyor, geri/ileri çalışır. Üstteki "görünüm" seçici ile
-sade (varsayılan), fosfor, açık ve yüksek kontrast temalar arasında geçebilirsiniz.
-Sade tema terminal görünümünü yumuşatır; fosfor kimliğini korur ve istenince seçilir.
+bağlantısına sahip (`#ders/BLG%20102E`). Alabilen program çipleri tıklanınca
+dersler sekmesinde o programa göre filtrelenir; "bu dersi önşart isteyenler"
+listesi ve OBS katalog formu bağlantısı da panelde. Katalog verisi geldiyse
+"Not dağılımı" bölümü çubuk grafik + geçme oranı (≥CC+) + en sık harf notu
+gösterir (10 kişinin altındaki sınıflar etik nedenle gizli).
+"Zaman çizelgesi" düğmesi gün × saat ızgarasında çakışan dersleri kırmızı
+işaretler; Program sekmesi seçili şubelerin final sınavlarını da çakışma
+açısından denetler, katalogdan AKTS toplamını ve dolma hızını gösterir.
+Akademik takvim tek tıkla `.ics` olarak dışa aktarılabilir. Sekmeler arası
+geçiş tarayıcı geçmişine yazılıyor, geri/ileri çalışır. Üstteki "görünüm"
+seçici ile sade (varsayılan), fosfor, açık ve yüksek kontrast temalar arasında
+geçebilirsiniz; yanındaki TR/EN düğmesi arayüzü İngilizceye çevirir. Sade tema
+terminal görünümünü yumuşatır; fosfor kimliğini korur ve istenince seçilir.
 Geçmiş sekmesinde bir dersin detayında dönem dönem kontenjan ve doluluk grafiği
 var. Sınavlar sekmesinde tür ve bina filtresi var.
 
@@ -81,11 +89,14 @@ varsayılan olarak da net.
 ## Çalıştırma
 
 ```bash
-go run ./cmd/scrape            # ders programı, sınav takvimi, önşartlar, akademik takvim
+go run ./cmd/scrape            # ders programı, sınav takvimi, önşartlar, akademik takvim (6 tür)
 go run ./cmd/scrape -backfill  # geçmiş dönemleri de al, bir kez yeterli
 go run ./cmd/quota             # kontenjan doluluğundan tek ölçüm al
 go run ./cmd/curriculum        # tüm programların müfredatını çek (önlisans + lisansüstü dahil)
 go run ./cmd/catalog           # ders katalog verisini çek (kredi, AKTS, içerik) — haftalık
+go run ./cmd/grades            # harf notu dağılımı (son 3 yıl) — aylık
+go run ./cmd/definitions       # resmî tanımlar: bina + program kodları — aylık
+go run ./cmd/backfill-calendar # eski takvim dosyalarına ISO start/end ekler (bir kez)
 go run ./cmd/validate          # docs/data bütünlüğünü denetle (kopya CRN, sarkan kenar...)
 ```
 
@@ -137,7 +148,8 @@ docs/data/
   terms/<dönem>/search.json         # hafif arama indeksi
   terms/<dönem>/branches/<KOD>.json # tam kayıtlar
   terms/<dönem>/all.csv             # tek dosya döküm, Excel için BOM'lu
-  calendar/<yıl>.json               # akademik takvim
+  calendar/<yıl>.json               # akademik takvim (tüm türler, birleşik)
+  calendar/<tür>/<yıl>.json         # tek takvim türü (lisans, yatay-ÇAP, önkayıt, ...)
   exams/<dönem>.json                # final ve ek sınav takvimi
   history/codes.json                # ders arama listesi
   history/names.json                # öğretim üyesi arama listesi
@@ -146,10 +158,15 @@ docs/data/
   quota/<dönem>.jsonl               # kontenjan zaman serisi, append-only
   quota/<dönem>.json                # türetilmiş dolma özeti
   prereq/graph.json                 # katalogdaki her dersin önşart ilişkisi
+  prereq/reverse.json               # ters önşart indeksi ("bunu kim istiyor")
   curriculum/index.json             # lisans program listesi
   curriculum/<PROGRAM_LS>.json      # bir programın dönem dönem müfredatı
   catalog/index.json                # katalog tarama özeti (kapsam sayıları)
   catalog/<BRANŞ>.json              # ders başına katalog: kredi, AKTS, dil, içerik, çıktılar
+  grades/index.json                 # not dağılımı tarama özeti
+  grades/<BRANŞ>.json               # ders başına harf notu dağılımı (AA…VF), <10 kişi gizli
+  buildings.json                    # resmî bina kodu → ad
+  programs.json                     # resmî program kodları, seviye etiketli
 ```
 
 Dönem adları `2025-2026-guz` biçiminde. Branş bazlı bölmenin iki sebebi var:
@@ -244,6 +261,10 @@ Katalog verisi haftalık taramayla doluyor; OBS'de katalog formu olmayan
 (eski/kaldırılmış) dersler bu kapsamda yer almıyor. Bazı derslerin (ör. bitirme
 çalışması) tanım alanı kaynakta boş — kayıt yine yazılıyor, yalnızca içerik
 bölümü panelde görünmüyor. Kapsam sayıları `catalog/index.json`'da.
+
+Not dağılımı yalnızca son üç akademik yılı kapsıyor; eski derslerin veya henüz
+notu açıklanmamış dönemlerin dağılımı yok. 10 kişinin altındaki sınıflar etik
+nedenle kaydedilmiyor (kişi ifşası). Kapsam `grades/index.json`'da.
 
 ## Uyarı
 

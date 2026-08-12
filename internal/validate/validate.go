@@ -59,6 +59,7 @@ func All(root string, skipSite bool) *Result {
 	res.checkQuota(root)
 	res.checkCurriculum(root)
 	res.checkIndex(root)
+	res.checkCalendar(root)
 	if !skipSite {
 		res.checkSitePages(root)
 	}
@@ -123,6 +124,13 @@ func (r *Result) checkTerm(dir, slug string) {
 			if s.Capacity > 0 && s.Enrolled > s.Capacity {
 				r.warnf("%s/%s: CRN %q: yazılan (%d) kontenjandan (%d) fazla", slug, branch, s.CRN, s.Enrolled, s.Capacity)
 			}
+			// programs elemanları tekil program kodu olmalı; virgüllü/ayraçlı
+			// eleman "alabilen program" filtresinin gruplu gelmesi demektir.
+			for _, p := range s.Programs {
+				if strings.ContainsAny(p, ",;|") {
+					r.errf("%s/%s: CRN %q: gruplu program kodu %q", slug, branch, s.CRN, p)
+				}
+			}
 			if _, dup := seen[s.CRN]; dup {
 				r.errf("%s/%s: CRN %q birden çok kez geçiyor", slug, branch, s.CRN)
 			}
@@ -178,13 +186,67 @@ func (r *Result) checkHistory(root string) {
 				continue
 			}
 			name, bucket := fmt.Sprint(n[0]), fmt.Sprint(n[1])
+			// Ayrışma hatası geri dönerse gruplu isim (virgüllü tek satır)
+			// burada yakalanır. Ham şube verisindeki virgüllü instructor
+			// alanına dokunulmaz — orada virgül yasal (ortak ders).
+			if strings.ContainsAny(name, ",;|") {
+				r.errf("history/names.json: gruplu isim %q (ayrışma hatası geri döndü)", name)
+			}
 			var all map[string]*historyInstructor
 			if err := readJSON(filepath.Join(histDir, "instructors", bucket+".json"), &all); err != nil {
 				r.errf("history: %q (%s) için harf dosyası yok", name, bucket)
 				continue
 			}
+			for k := range all {
+				if strings.ContainsAny(k, ",;|") {
+					r.errf("history: %q (%s) dosyasında gruplu isim anahtarı", k, bucket)
+				}
+			}
 			if _, ok := all[name]; !ok {
 				r.errf("history: %q, %s.json içinde yok", name, bucket)
+			}
+		}
+	}
+}
+
+// checkCalendar, takvim dosyalarının içini denetler: en az bir etkinlik
+// olmalı, her etkinlikte date ve remaining alanları dolu olmalı — sessizce
+// boş takvim yazılmasını yakalar. (Biçim katılığına gitmez: tarih çözümleme
+// esnekliği frontend'de calendarDayState'te.)
+func (r *Result) checkCalendar(root string) {
+	calDir := filepath.Join(root, "data", "calendar")
+	entries, err := os.ReadDir(calDir)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return
+		}
+		r.errf("data/calendar okunamadı: %v", err)
+		return
+	}
+	for _, e := range entries {
+		if !strings.HasSuffix(e.Name(), ".json") {
+			continue
+		}
+		var cal struct {
+			Events []struct {
+				Date      string
+				Remaining string
+			}
+		}
+		if err := readJSON(filepath.Join(calDir, e.Name()), &cal); err != nil {
+			r.errf("calendar/%s: çözümlenemedi: %v", e.Name(), err)
+			continue
+		}
+		if len(cal.Events) == 0 {
+			r.errf("calendar/%s: hiç etkinlik yok", e.Name())
+			continue
+		}
+		for i, ev := range cal.Events {
+			if strings.TrimSpace(ev.Date) == "" {
+				r.errf("calendar/%s: etkinlik %d: date boş", e.Name(), i)
+			}
+			if strings.TrimSpace(ev.Remaining) == "" {
+				r.errf("calendar/%s: etkinlik %d: remaining boş", e.Name(), i)
 			}
 		}
 	}

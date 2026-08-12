@@ -112,9 +112,7 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 		return err
 	}
 
-	if err := touchSitemap(out); err != nil {
-		return err
-	}
+	// sitemap artık cmd/site tarafından üretiliyor (dil + tüm sayfalar).
 
 	logf("bitti (%s)", time.Since(started).Round(time.Second))
 	return nil

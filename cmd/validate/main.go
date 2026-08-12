@@ -54,6 +54,7 @@ var warnCategories = []struct {
 	{regexp.MustCompile(`kod .+ ile başlamıyor`), "kod/branş uyuşmazlığı"},
 	{regexp.MustCompile(`dolma süresi negatif`), "quota (negatif dolma süresi)"},
 	{regexp.MustCompile(`hiç dönem içermiyor`), "müfredat (boş program)"},
+	{regexp.MustCompile(`önşart grafiğinde yok`), "katalog (grafikte yok)"},
 }
 
 func categoryOf(msg string) string {

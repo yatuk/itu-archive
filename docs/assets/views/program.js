@@ -1,8 +1,9 @@
 // Program görünümü: seçilen şubelerden haftalık ders programı kurucu.
 //
-// Akış: DERSLER'de şubeler seçilip "programa gönder" ile eklenir ya da buradaki
-// arama (combobox) ile şube eklenir. Seçili liste + çakışma listesi solda,
-// haftalık ızgara sağda. "OBS'ye doldur" CRN doldurma kodunu üretir.
+// Akış: DERSLER'de şubeler seçilip "programa gönder" ile eklenir, buradaki arama
+// (combobox) ile şube eklenir, ya da "Ders Ekle" ile bölüm → ders → CRN zinciri
+// kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
+// Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
 import { $, getJSON, esc, fold, debounce, downloadCSV } from '../core/utils.js';
 import { state, indexReady } from '../core/store.js';
@@ -17,9 +18,59 @@ let inited = false;
 let hits = [];
 let openMenuKey = null;
 let dragFrom = null;
-// Paylaşılan URL'deki crns listesi yalnızca bir kez uygulanır (sekme her
-// açıldığında yeniden eklenmesin).
+// Paylaşılan URL'deki crns listesi yalnızca bir kez uygulanır.
 let crnsApplied = false;
+
+// --- çoklu program (liste) ---
+const PROG_KEY = 'itu-programs';
+const PASTELS = ['#5b8def', '#8a6fe8', '#2ecc9f', '#e8a04c', '#e86f8a', '#5bb8e8', '#a0c94c', '#c96fe8', '#e8c94c', '#4cc9c9'];
+
+function loadPrograms() {
+  try {
+    const p = JSON.parse(localStorage.getItem(PROG_KEY) || 'null');
+    if (p && Array.isArray(p.programs) && p.programs.length) return p;
+  } catch {}
+  return { programs: [{ id: 1, name: 'Program 1', items: [] }], active: 1 };
+}
+function savePrograms(ps) {
+  try { localStorage.setItem(PROG_KEY, JSON.stringify(ps)); } catch {}
+}
+function progItems() {
+  const ps = loadPrograms();
+  const p = ps.programs.find((x) => x.id === ps.active);
+  return p ? p.items.filter((f) => f.term === term) : [];
+}
+function setProgItems(items) {
+  const ps = loadPrograms();
+  const p = ps.programs.find((x) => x.id === ps.active);
+  if (!p) return;
+  p.items = [
+    ...p.items.filter((f) => f.term !== term),
+    ...items.map((i) => ({ ...i, term })),
+  ];
+  savePrograms(ps);
+}
+// Aktif programa kayıt ekler (varsa atlar). Dönen değer: eklendi mi.
+function addToActive(branch, crn) {
+  const ps = loadPrograms();
+  const p = ps.programs.find((x) => x.id === ps.active);
+  if (!p) return false;
+  const key = fav.favKeyOf(branch, crn);
+  if (p.items.some((f) => f.term === term && fav.favKeyOf(f.branch, f.crn) === key)) return false;
+  p.items.push({ term, branch, crn });
+  savePrograms(ps);
+  return true;
+}
+function renderProgSelector() {
+  const ps = loadPrograms();
+  const sel = $('#p-prog');
+  sel.innerHTML = ps.programs.map((p, i) =>
+    `<option value="${p.id}">${esc(p.name)}</option>`).join('');
+  sel.value = String(ps.active);
+  const p = ps.programs.find((x) => x.id === ps.active);
+  $('#p-credits-val').textContent = p ? (p.credits != null ? p.credits : '—') : '—';
+  render();
+}
 
 export function initProgram() {
   if (inited) return;
@@ -33,7 +84,14 @@ export function initProgram() {
     const b = e.target.closest('.p-result');
     if (b) { addRow(hits[Number(b.dataset.i)]); hideResults(); $('#p-q').value = ''; }
   });
-  $('#p-clear').addEventListener('click', () => { fav.clearSchedule(); render(); toast('Program temizlendi'); });
+  $('#p-addrow').addEventListener('click', addRowEntry);
+  $('#p-dl').addEventListener('click', downloadPNG);
+  $('#p-prog').addEventListener('change', (e) => { const ps = loadPrograms(); ps.active = Number(e.target.value); savePrograms(ps); renderProgSelector(); });
+  $('#p-prog-new').addEventListener('click', progNew);
+  $('#p-prog-copy').addEventListener('click', progCopy);
+  $('#p-prog-del').addEventListener('click', progDel);
+  $('#p-prog-rename').addEventListener('click', progRename);
+  $('#p-clear').addEventListener('click', () => { setProgItems([]); renderProgSelector(); toast('Program temizlendi'); });
   $('#p-csv').addEventListener('click', exportCSV);
   $('#p-share').addEventListener('click', share);
   $('#p-obs').addEventListener('click', showOBS);
@@ -43,10 +101,122 @@ export function initProgram() {
   inited = true;
 }
 
+// --- program yönetimi ---
+
+function progNew() {
+  const ps = loadPrograms();
+  const id = Math.max(0, ...ps.programs.map((p) => p.id)) + 1;
+  const name = `Program ${ps.programs.length + 1}`;
+  ps.programs.push({ id, name, items: [] });
+  ps.active = id;
+  savePrograms(ps);
+  renderProgSelector();
+  toast(`Yeni program "${name}" oluşturuldu`);
+}
+function progCopy() {
+  const ps = loadPrograms();
+  const p = ps.programs.find((x) => x.id === ps.active);
+  if (!p) return;
+  const id = Math.max(0, ...ps.programs.map((x) => x.id)) + 1;
+  ps.programs.push({ id, name: p.name + ' (kopya)', items: JSON.parse(JSON.stringify(p.items)) });
+  ps.active = id;
+  savePrograms(ps);
+  renderProgSelector();
+  toast('Program kopyalandı');
+}
+function progDel() {
+  const ps = loadPrograms();
+  if (ps.programs.length <= 1) { toast('En az bir program kalmalı', { kind: 'warn' }); return; }
+  const i = ps.programs.findIndex((x) => x.id === ps.active);
+  if (i < 0) return;
+  if (!confirm(`"${ps.programs[i].name}" silinsin mi?`)) return;
+  ps.programs.splice(i, 1);
+  ps.active = ps.programs[0].id;
+  savePrograms(ps);
+  renderProgSelector();
+  toast('Program silindi');
+}
+function progRename() {
+  const ps = loadPrograms();
+  const p = ps.programs.find((x) => x.id === ps.active);
+  if (!p) return;
+  const name = prompt('Yeni program adı:', p.name);
+  if (!name || !name.trim()) return;
+  p.name = name.trim();
+  savePrograms(ps);
+  renderProgSelector();
+  toast('Program yeniden adlandırıldı');
+}
+
+// --- ders ekleme (bölüm → ders → CRN zinciri) ---
+
+let rowIdx = 0;
+function addRowEntry() {
+  const wrap = $('#p-rows');
+  const id = ++rowIdx;
+  const div = document.createElement('div');
+  div.className = 'p-row';
+  div.dataset.id = id;
+  div.innerHTML = `
+    <select class="p-row-branch" data-id="${id}"><option value="">Bölüm seç</option></select>
+    <select class="p-row-course" data-id="${id}" disabled><option value="">Ders seç</option></select>
+    <select class="p-row-crn" data-id="${id}" disabled><option value="">Şube (CRN) seç</option></select>
+    <button type="button" class="p-row-del p-danger" data-id="${id}">Dersi Sil</button>`;
+  wrap.appendChild(div);
+  const branchSel = div.querySelector('.p-row-branch');
+  const branches = [...new Set(rows.map((r) => r[3]))].sort();
+  branchSel.innerHTML = '<option value="">Bölüm seç</option>' +
+    branches.map((b) => `<option value="${esc(b)}">${esc(b)}</option>`).join('');
+  branchSel.addEventListener('change', () => fillCourseSelect(id, branchSel.value));
+  div.querySelector('.p-row-del').addEventListener('click', () => div.remove());
+  branchSel.focus();
+}
+
+function fillCourseSelect(id, branch) {
+  const div = document.querySelector(`.p-row[data-id="${id}"]`);
+  if (!div) return;
+  const courseSel = div.querySelector('.p-row-course');
+  const crnSel = div.querySelector('.p-row-crn');
+  courseSel.innerHTML = '<option value="">Ders seç</option>';
+  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>';
+  courseSel.disabled = !branch;
+  crnSel.disabled = true;
+  if (!branch) return;
+  const codes = [...new Set(rows.filter((r) => r[3] === branch).map((r) => r[1]))].sort();
+  courseSel.innerHTML = '<option value="">Ders seç</option>' +
+    codes.map((c) => {
+      const name = rows.find((r) => r[1] === c)?.[2] || '';
+      return `<option value="${esc(c)}">${esc(c)} - ${esc(name)}</option>`;
+    }).join('');
+  courseSel.addEventListener('change', () => fillCRNSelect(id, branch, courseSel.value));
+}
+
+function fillCRNSelect(id, branch, code) {
+  const div = document.querySelector(`.p-row[data-id="${id}"]`);
+  if (!div) return;
+  const crnSel = div.querySelector('.p-row-crn');
+  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>';
+  crnSel.disabled = !code;
+  if (!code) return;
+  const secs = rows.filter((r) => r[3] === branch && r[1] === code);
+  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>' +
+    secs.map((r) => `<option value="${esc(r[0])}">${esc(r[0])}: ${esc(r[5] || '—')} · ${esc(r[4] || '—')} · ${r[6] ? `${r[7]}/${r[6]}` : '—'}</option>`).join('');
+  // CRN seçilince ekle ve satırı kaldır.
+  crnSel.addEventListener('change', () => {
+    if (!crnSel.value) return;
+    const r = rows.find((x) => x[0] === crnSel.value);
+    if (r) {
+      const added = addToActive(r[3], r[0]);
+      toast(added ? `${r[1]} eklendi` : `${r[1]} zaten listede`, { kind: added ? 'ok' : 'warn' });
+      render();
+      renderProgSelector();
+    }
+    div.remove();
+  });
+}
+
 export async function onShow() {
   initProgram();
-  // Index yüklenmeden açılırsa (paylaşılan #program bağlantısı ya da erken
-  // tıklama) bekleyip devam et — dönem seçici ve crns ekleme index'e bağlı.
   if (!state.index) await indexReady;
   if (!state.index) {
     toast('Veriler yüklenemedi, sayfayı yenile.', { kind: 'err' });
@@ -59,14 +229,12 @@ export async function onShow() {
       .filter((t) => !t.missing)
       .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ' · canlı' : ''}</option>`).join('');
     sel.value = state.index.currentSlug;
-    // Paylaşılan program URL'i: ?term=&crns=
     if (params.has('term')) {
       const want = params.get('term');
       if ([...sel.options].some((o) => o.value === want)) sel.value = want;
     }
     term = sel.value;
   }
-  // Dönem satırlarını önce yükle; crns ekleme onlarsız yapılamaz.
   await loadTerm(term);
   if (params.has('crns') && !crnsApplied) {
     crnsApplied = true;
@@ -74,10 +242,11 @@ export async function onShow() {
     let added = 0;
     for (const crn of list) {
       const r = rows.find((x) => x[0] === crn);
-      if (r && fav.addToSchedule(term, r[3], crn)) added++;
+      if (r && addToActive(r[3], crn)) added++;
     }
     if (added) toast(`${added} şube paylaşılan programdan yüklendi`);
   }
+  renderProgSelector();
   render();
 }
 
@@ -115,13 +284,14 @@ function hideResults() {
 }
 
 function addRow(r) {
-  const added = fav.addToSchedule(term, r[3], r[0]);
+  const added = addToActive(r[3], r[0]);
   toast(added ? `${r[1]} eklendi` : `${r[1]} zaten listede`, { kind: added ? 'ok' : 'warn' });
   render();
+  renderProgSelector();
 }
 
 function currentItems() {
-  const recs = fav.loadSchedule().filter((f) => f.term === term);
+  const recs = progItems();
   const items = [];
   for (const rec of recs) {
     const r = rows.find((x) => x[3] === rec.branch && x[0] === rec.crn);
@@ -133,9 +303,19 @@ function currentItems() {
 function render() {
   const items = currentItems();
   $('#p-count').textContent = items.length;
+  renderCRNStrip(items);
   renderList(items);
   renderGrid(items.map((i) => i.row));
   renderSummary(items);
+  updateCredits(items);
+}
+
+function renderCRNStrip(items) {
+  const strip = $('#p-crnstrip');
+  const list = $('#p-crnlist');
+  if (!items.length) { strip.hidden = true; list.innerHTML = ''; return; }
+  strip.hidden = false;
+  list.innerHTML = items.map(({ row }) => `<span class="p-crnchip">${esc(row[0])}</span>`).join('');
 }
 
 function renderList(items) {
@@ -147,16 +327,15 @@ function renderList(items) {
     const key = fav.favKeyOf(branch, crn);
     return `<div class="p-item${markFull && full ? ' p-full' : ''}" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
-      <span class="p-crn">${esc(crn)}${rec.backup ? `<small class=\\p-backup\\>yedek: ${esc(rec.backup)}\\</small\>` : ''}</span>
+      <span class="p-crn">${esc(crn)}${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
       <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}</small></div>
       <span class="p-when">${esc(when || '—')}</span>
       <span class="p-fill">${cap ? fillBar(cap, enr) : '—'}</span>
       <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için eylemler" aria-haspopup="menu">⋮</button>
       <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
     </div>`;
-  }).join('') || '<p class="empty">Henüz ders eklenmedi. Arama yapıp şube ekle ya da DERSLER\'de seçip "programa gönder".</p>';
+  }).join('') || '<p class="empty">Henüz ders eklenmedi. "Ders Ekle" ile bölüm → ders → CRN seç ya da DERSLER\'de seçip "programa gönder".</p>';
 
-  // Tıklama → detay; ⋮ menü ayrı.
   box.querySelectorAll('.p-item').forEach((item) => {
     const idx = Number(item.dataset.idx);
     const { row } = items[idx];
@@ -164,18 +343,13 @@ function renderList(items) {
       if (ev.target.closest('.p-menu')) return;
       openDetail(row, term);
     });
-    // Sürükle-bırak: sıralama
     item.addEventListener('dragstart', (ev) => {
       dragFrom = idx;
       item.classList.add('drag');
       ev.dataTransfer.effectAllowed = 'move';
       ev.dataTransfer.setData('text/plain', String(idx));
     });
-    item.addEventListener('dragover', (ev) => {
-      ev.preventDefault();
-      ev.dataTransfer.dropEffect = 'move';
-      item.classList.add('over');
-    });
+    item.addEventListener('dragover', (ev) => { ev.preventDefault(); ev.dataTransfer.dropEffect = 'move'; item.classList.add('over'); });
     item.addEventListener('dragleave', () => item.classList.remove('over'));
     item.addEventListener('drop', (ev) => {
       ev.preventDefault();
@@ -183,10 +357,7 @@ function renderList(items) {
       const from = Number(ev.dataTransfer.getData('text/plain') || dragFrom);
       reorderSchedule(from, idx);
     });
-    item.addEventListener('dragend', () => {
-      item.classList.remove('drag', 'over');
-      dragFrom = null;
-    });
+    item.addEventListener('dragend', () => { item.classList.remove('drag', 'over'); dragFrom = null; });
   });
 
   box.querySelectorAll('.p-menu').forEach((btn) => {
@@ -215,12 +386,11 @@ function renderList(items) {
       const [br, cr] = b.dataset.key.split('|');
       const row = rows.find((x) => x[3] === br && x[0] === cr);
       if (b.dataset.act === 'remove') {
-        fav.removeFromSchedule(term, br, cr);
+        setProgItems(currentItems().filter((i) => fav.favKeyOf(i.rec.branch, i.rec.crn) !== key).map((i) => i.rec));
         toast(`${cr} çıkarıldı`);
-        render();
+        render(); renderProgSelector();
       } else if (b.dataset.act === 'copy') {
-        copyText(cr);
-        toast(`CRN ${cr} kopyalandı`);
+        copyText(cr); toast(`CRN ${cr} kopyalandı`);
       } else if (b.dataset.act === 'detail') {
         if (row) openDetail(row, term);
       } else if (b.dataset.act === 'obs') {
@@ -235,19 +405,28 @@ function renderList(items) {
   });
 }
 
-// Sürüklenen öğeyi seçili listenin içinde taşır; diğer dönem kayıtları korunur.
 function reorderSchedule(from, to) {
   if (from === to) return;
-  const all = fav.loadSchedule();
-  const others = all.filter((f) => f.term !== term);
-  const vis = all.filter((f) => f.term === term);
-  if (from < 0 || from >= vis.length || to < 0 || to >= vis.length) return;
-  const [moved] = vis.splice(from, 1);
+  const items = currentItems();
+  if (from < 0 || from >= items.length || to < 0 || to >= items.length) return;
+  const moved = items[from].rec;
+  const vis = currentItems().map((i) => i.rec);
+  vis.splice(from, 1);
   vis.splice(to, 0, moved);
-  fav.saveSchedule([...vis, ...others]);
+  setProgItems(vis);
   render();
   toast('Sıralama güncellendi');
 }
+
+// Renk atama: aynı ders kodu aynı rengi kullanır (sabit), çakışma kırmızı kenar.
+const colorFor = (() => {
+  const map = new Map();
+  let next = 0;
+  return (code) => {
+    if (!map.has(code)) { map.set(code, PASTELS[next % PASTELS.length]); next++; }
+    return map.get(code);
+  };
+})();
 
 function renderGrid(itemRows) {
   const wrap = $('#p-grid');
@@ -270,7 +449,6 @@ function renderGrid(itemRows) {
     if (di >= 0) byDay[di].push(s);
   }
 
-  // Lane atama: çakışan dersler aynı günde yan yana sıralanır.
   const place = (events) => {
     const evs = events.slice().sort((a, b) => a.start - b.start || a.end - b.end);
     const lanes = [];
@@ -300,8 +478,13 @@ function renderGrid(itemRows) {
       const w = 100 / p.laneCount;
       const left = p.lane * w;
       const conflict = p.laneCount > 1;
+      const color = colorFor(p.row[1]);
       placedRefs.push(p.row);
-      html += `<button type="button" class="tt-block${conflict ? ' tt-block-conf' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px" title="${esc(p.row[1])} · ${esc(p.row[5])}">${esc(p.row[1])}</button>`;
+      html += `<button type="button" class="tt-block${conflict ? ' tt-block-conf' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px;--ttc:${color}" title="${esc(p.row[1])} · ${esc(p.row[5])}">
+        <span class="tt-time">${fmtMin(p.start)} - ${fmtMin(p.end)}</span>
+        <span class="tt-code">${esc(p.row[1])}</span>
+        ${conflict ? '<span class="tt-conf-icon" title="Çakışma">⚠</span>' : ''}
+      </button>`;
     }
     html += `</div>`;
   }
@@ -313,7 +496,6 @@ function renderGrid(itemRows) {
   });
 }
 
-// renderGrid içinde blokların satır referansları (tıklamada detay için).
 let placedRefs = [];
 
 function renderSummary(items) {
@@ -335,20 +517,28 @@ function renderSummary(items) {
   box.innerHTML = html;
 }
 
+function updateCredits(items) {
+  // Kredi verisi arşivde bulunmadığından ders sayısı üzerinden tahmin edilmiyor;
+  // dürüst davranıp bilinmiyor işaretleriz. Gerçek veri geldiğinde hesaplanacak.
+  const el = $('#p-credits-val');
+  const ps = loadPrograms();
+  const p = ps.programs.find((x) => x.id === ps.active);
+  if (p && p.credits != null) { el.textContent = p.credits; return; }
+  el.textContent = items.length ? '—' : '—';
+}
+
 function addFavorites() {
   const favs = fav.loadFavorites().filter((f) => f.term === term);
   let added = 0;
-  for (const f of favs) if (fav.addToSchedule(term, f.branch, f.crn)) added++;
+  for (const f of favs) if (addToActive(f.branch, f.crn)) added++;
   toast(added ? `${added} favori programa eklendi` : 'Bu dönem için favori yok', { kind: added ? 'ok' : 'warn' });
-  render();
+  render(); renderProgSelector();
 }
 
 function currentCRNs() {
   return currentItems().map((i) => i.row[0]);
 }
 
-// OBS kayıt sayfasında görünür sayı girdilerini CRN'lerle dolduran snippet.
-// Saf fonksiyon — test edilebilir.
 export function buildSnippet(crns) {
   const arr = crns.map((c) => `'${c}'`).join(',');
   return `!function(){var e=[${arr}];let t=document.querySelectorAll("input[type='number']"),n=0;t.forEach(t=>{(function e(t){let n=window.getComputedStyle(t);if("none"===n.display||"hidden"===n.visibility)return!1;let l=t.parentElement;for(;l;){let i=window.getComputedStyle(l);if("none"===i.display||"hidden"===i.visibility)return!1;l=l.parentElement}return!0})(t)&&n<e.length&&(t.value=e[n],t.dispatchEvent(new Event("input",{bubbles:!0})),n++)}),setTimeout(function(){let e=document.querySelector('button[type="submit"]:not([disabled])');e&&e.click(),setTimeout(function(){let e=document.querySelector(".card-footer.d-flex.justify-content-end");if(e){let t=e.getElementsByTagName("button");t.length>1&&t[1].click()}},50)},50)}();`;
@@ -379,11 +569,107 @@ function exportCSV() {
   toast('CSV indirildi');
 }
 
+// Takvimi PNG olarak indirir (canvas çizimi).
+function downloadPNG() {
+  const items = currentItems();
+  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  const wrap = $('#p-grid');
+  const rect = wrap.getBoundingClientRect();
+  if (rect.width < 100 || rect.height < 100) { toast('Takvim hazır değil', { kind: 'warn' }); return; }
+  const scale = 2;
+  const canvas = document.createElement('canvas');
+  canvas.width = rect.width * scale;
+  canvas.height = rect.height * scale;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(scale, scale);
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, rect.width, rect.height);
+
+  const t = buildTimetable(items.map((i) => i.row));
+  const days = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+  const TTD = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+  const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+  const W = rect.width, H = rect.height;
+  const timeW = 46, headH = 22, dayW = (W - timeW) / 7;
+  const ROW = 28;
+  const nSlots = t ? t.nSlots : 0;
+
+  ctx.font = '11px sans-serif';
+  ctx.fillStyle = '#666';
+  ctx.textAlign = 'center';
+  ctx.fillText(fmtMin(t.startSlot), 0, headH + 10);
+  TTD.forEach((d, di) => {
+    ctx.fillStyle = '#333';
+    ctx.fillText(d, timeW + dayW * di + dayW / 2, 14);
+    ctx.strokeStyle = '#eee';
+    ctx.beginPath(); ctx.moveTo(timeW + dayW * di, headH); ctx.lineTo(timeW + dayW * di, H); ctx.stroke();
+  });
+  ctx.beginPath(); ctx.moveTo(timeW, headH); ctx.lineTo(W, headH); ctx.stroke();
+
+  for (let si = 0; si <= nSlots; si++) {
+    const y = headH + si * ROW;
+    ctx.strokeStyle = si % 2 === 0 ? '#ddd' : '#f0f0f0';
+    ctx.beginPath(); ctx.moveTo(timeW, y); ctx.lineTo(W, y); ctx.stroke();
+  }
+
+  // Bloklar
+  const byDay = days.map(() => []);
+  if (t) for (const s of t.all) {
+    const di = days.indexOf(s.day);
+    if (di >= 0) byDay[di].push(s);
+  }
+  const place = (events) => {
+    const evs = events.slice().sort((a, b) => a.start - b.start || a.end - b.end);
+    const lanes = [];
+    const out = [];
+    for (const ev of evs) {
+      let lane = lanes.findIndex((end) => end <= ev.start);
+      if (lane === -1) { lane = lanes.length; lanes.push(ev.end); } else lanes[lane] = ev.end;
+      out.push({ ...ev, lane });
+    }
+    const laneCount = Math.max(1, lanes.length);
+    out.forEach((o) => { o.laneCount = laneCount; });
+    return out;
+  };
+  for (let di = 0; di < 7; di++) {
+    const placed = place(byDay[di]);
+    for (const p of placed) {
+      const top = headH + ((p.start - t.startSlot) / 30) * ROW;
+      const height = Math.max(14, ((p.end - p.start) / 30) * ROW);
+      const w = dayW / p.laneCount;
+      const x = timeW + di * dayW + p.lane * w;
+      const color = colorFor(p.row[1]);
+      ctx.fillStyle = color;
+      ctx.globalAlpha = 0.9;
+      ctx.fillRect(x + 1, top + 1, w - 2, height - 2);
+      ctx.globalAlpha = 1;
+      if (p.laneCount > 1) {
+        ctx.strokeStyle = '#e02020';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(x + 1, top + 1, w - 2, height - 2);
+      }
+      ctx.fillStyle = '#fff';
+      ctx.font = 'bold 9px sans-serif';
+      ctx.fillText(p.row[1], x + 4, top + 12);
+      ctx.font = '8px sans-serif';
+      ctx.fillText(`${fmtMin(p.start)}-${fmtMin(p.end)}`, x + 4, top + 22);
+    }
+  }
+
+  canvas.toBlob((blob) => {
+    if (!blob) return;
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `program-${term}.png`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    toast('PNG indirildi');
+  }, 'image/png');
+}
+
 function share() {
   const items = currentItems();
   if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
-  // Mevcut sayfa parametrelerini (q, branch, ...) almayan temiz bir bağlantı
-  // üret — yalnızca dönem ve CRN listesi.
   const p = new URLSearchParams();
   p.set('term', term);
   p.set('crns', items.map((i) => i.row[0]).join(','));
@@ -403,28 +689,31 @@ function setBackup(branch, crn) {
   const input = prompt('Yedek CRN girin (aynı ders koduna ait olmalı):');
   if (!input || !input.trim()) return;
   const backup = input.trim();
-  const all = fav.loadSchedule();
-  const idx = all.findIndex((f) => f.term === term && f.branch === branch && f.crn === crn);
+  const all = loadPrograms();
+  const p = all.programs.find((x) => x.id === all.active);
+  if (!p) return;
+  const idx = p.items.findIndex((f) => f.term === term && f.branch === branch && f.crn === crn);
   if (idx < 0) return;
-  // Yedek CRN kendisi olamaz, aynı branşta olmalı.
   const key = fav.favKeyOf(branch, backup);
-  if (all.some((f) => f.term === term && fav.favKeyOf(f.branch, f.crn) === key)) {
+  if (p.items.some((f) => f.term === term && fav.favKeyOf(f.branch, f.crn) === key)) {
     toast('Bu CRN zaten listede', { kind: 'warn' });
     return;
   }
-  all[idx].backup = backup;
-  fav.saveSchedule(all);
+  p.items[idx].backup = backup;
+  savePrograms(all);
   toast(`Yedek CRN ${backup} eklendi`);
   loadTerm(term);
 }
 
 function removeBackup(branch, crn) {
-  const all = fav.loadSchedule();
-  const idx = all.findIndex((f) => f.term === term && f.branch === branch && f.crn === crn);
+  const all = loadPrograms();
+  const p = all.programs.find((x) => x.id === all.active);
+  if (!p) return;
+  const idx = p.items.findIndex((f) => f.term === term && f.branch === branch && f.crn === crn);
   if (idx < 0) return;
-  const old = all[idx].backup;
-  delete all[idx].backup;
-  fav.saveSchedule(all);
+  const old = p.items[idx].backup;
+  delete p.items[idx].backup;
+  savePrograms(all);
   toast(`Yedek CRN ${old} kaldırıldı`);
   loadTerm(term);
 }

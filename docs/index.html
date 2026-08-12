@@ -315,32 +315,54 @@
 
  <section id="view-program" class="view" role="tabpanel" aria-labelledby="tab-program" hidden>
   <p class="note">
-   Seçtiğin şubelerden haftalık ders programını kur. DERSLER'de şubeleri seçip
-   "programa gönder" ile ekle, ya da buradan ders arayıp ekle. Çakışan dersler
-   kırmızı işaretlenir ve aşağıda listelenir. "OBS'ye doldur" ile kayıt sayfası
-   için CRN doldurma kodu üretebilirsin.
+   Seçtiğin şubelerden haftalık ders programını kur. Bölüm, ders ve şube (CRN)
+   seçerek ekle, birden fazla program oluşturup aralarında geçiş yap. Çakışan
+   dersler kırmızı işaretlenir. "CRN doldur" ile OBS kayıt sayfası için kod üretebilirsin.
   </p>
-  <div class="console">
+
+  <div class="p-toolbar">
+   <div class="p-progsel">
+    <select id="p-prog" class="p-prog-select" aria-label="Program seç"></select>
+    <button type="button" id="p-prog-copy" class="btn-ghost" title="Programı kopyala">⧉</button>
+    <button type="button" id="p-prog-new" class="btn-ghost" title="Yeni program">＋</button>
+    <button type="button" id="p-prog-del" class="btn-ghost p-danger" title="Programı sil">−</button>
+    <button type="button" id="p-prog-rename" class="btn-ghost" title="Programı yeniden adlandır">✎</button>
+   </div>
+   <div class="p-actions">
+    <button type="button" id="p-addrow" class="btn-primary">＋ Ders Ekle</button>
+    <button type="button" id="p-dl" class="btn-ghost" title="Takvimi görsel olarak indir">İndir</button>
+    <button type="button" id="p-obs" class="btn-ghost">CRN doldur</button>
+    <span class="p-credits" title="Toplam kredi">Kredi: <b id="p-credits-val">—</b></span>
+   </div>
+  </div>
+
+  <div class="console p-controls">
    <label>dönem <select id="p-term"></select></label>
    <label class="query">
     <span class="sigil">&gt;</span>
     <input id="p-q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="ders kodu veya adıyla şube ekle…" aria-label="Ders ara ve ekle">
+           placeholder="veya ders kodu / ad / CRN arayıp ekle…" aria-label="Ders ara ve ekle">
    </label>
   </div>
   <div id="p-results" class="p-results" hidden></div>
+
+  <div id="p-rows" class="p-rows" aria-label="Ders satırları"></div>
+
+  <div id="p-crnstrip" class="p-crnstrip" hidden>
+   <span class="p-crnstrip-label">CRN'ler:</span><span id="p-crnlist" class="p-crnlist"></span>
+  </div>
+
   <div class="p-layout">
    <aside class="p-panel">
     <h2 class="eyebrow">Seçili şubeler <span id="p-count">0</span></h2>
     <label class="check p-full"><input type="checkbox" id="p-full"> dolu şubeleri işaretle</label>
     <div id="p-list" class="p-list"></div>
     <div id="p-summary" class="p-summary"></div>
-    <div class="p-actions">
+    <div class="p-actions p-actions-bot">
      <button type="button" id="p-favs" class="btn-ghost">favorileri ekle</button>
-     <button type="button" id="p-obs" class="btn-ghost">OBS'ye doldur</button>
      <button type="button" id="p-csv" class="btn-ghost">CSV</button>
      <button type="button" id="p-share" class="btn-ghost">paylaş</button>
-     <button type="button" id="p-clear" class="btn-ghost">temizle</button>
+     <button type="button" id="p-clear" class="btn-ghost p-danger">temizle</button>
     </div>
     <div id="p-obs-code" class="p-obs-code" hidden></div>
    </aside>

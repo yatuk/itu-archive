@@ -37,7 +37,9 @@ function renderCalendar() {
 
   const groups = new Map();
   for (const ev of cal.events) {
-    const st = calendarDayState(ev.date);
+    // Scraper'ın ISO start/end'i varsa ona güven (JS'in çözemediği gömülü-saatli
+    // aralıklar dahil); yoksa Türkçe metni ayrıştır.
+    const st = calendarDayState(ev.date, new Date(), ev.start && ev.end ? { start: ev.start, end: ev.end } : null);
     if (upcomingOnly && st.past) continue;
     if (!groups.has(ev.table)) groups.set(ev.table, []);
     // Etiket canlı hesaptan; tarih çözümlenemediyse kazıyıcının etiketine düş.

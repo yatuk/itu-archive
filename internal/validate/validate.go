@@ -14,6 +14,7 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
+	"time"
 
 	"itu-scraper/internal/catalog"
 	"itu-scraper/internal/curriculum"
@@ -214,7 +215,9 @@ func (r *Result) checkHistory(root string) {
 // checkCalendar, takvim dosyalarının içini denetler: en az bir etkinlik
 // olmalı, her etkinlikte date ve remaining alanları dolu olmalı — sessizce
 // boş takvim yazılmasını yakalar. (Biçim katılığına gitmez: tarih çözümleme
-// esnekliği frontend'de calendarDayState'te.)
+// esnekliği frontend'de calendarDayState'te.) start/end alanı yazılmışsa
+// geçerli ISO olmalı — takvim uygulamasına aktarım (.ics) bozuk tarihle
+// çıktı üretmesin.
 func (r *Result) checkCalendar(root string) {
 	calDir := filepath.Join(root, "data", "calendar")
 	entries, err := os.ReadDir(calDir)
@@ -233,6 +236,8 @@ func (r *Result) checkCalendar(root string) {
 			Events []struct {
 				Date      string
 				Remaining string
+				Start     string
+				End       string
 			}
 		}
 		if err := readJSON(filepath.Join(calDir, e.Name()), &cal); err != nil {
@@ -249,6 +254,19 @@ func (r *Result) checkCalendar(root string) {
 			}
 			if strings.TrimSpace(ev.Remaining) == "" {
 				r.errf("calendar/%s: etkinlik %d: remaining boş", e.Name(), i)
+			}
+			// start/end varsa ISO "2006-01-02" olmalı (scraper artık yazıyor).
+			if ev.Start != "" || ev.End != "" {
+				for _, v := range []string{ev.Start, ev.End} {
+					if v != "" {
+						if _, err := time.Parse("2006-01-02", v); err != nil {
+							r.errf("calendar/%s: etkinlik %d: geçersiz ISO tarih %q", e.Name(), i, v)
+						}
+					}
+				}
+				if ev.Start != "" && ev.End != "" && ev.End < ev.Start {
+					r.errf("calendar/%s: etkinlik %d: end, start'tan önce (%s < %s)", e.Name(), i, ev.End, ev.Start)
+				}
 			}
 		}
 	}

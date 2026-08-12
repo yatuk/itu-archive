@@ -96,6 +96,12 @@ type CalendarEvent struct {
 	Title     string `json:"title"`
 	Date      string `json:"date"`
 	Remaining string `json:"remaining"`
+	// Start/End, makinece okunur ISO tarihleri ("2006-01-02"). Eskiden yalnızca
+	// Türkçe `date` + scrape anına sabitlenmiş `remaining` vardı; ikisi de takvim
+	// uygulamasına aktarım (.ics) ve bayat-etiket hesabı için yetersizdi.
+	// Geriye uyumluluk: eski dosyalarda yoktur (omitempty).
+	Start string `json:"start,omitempty"`
+	End   string `json:"end,omitempty"`
 }
 
 // Calendar, bir akademik yılın tüm takvim satırları.

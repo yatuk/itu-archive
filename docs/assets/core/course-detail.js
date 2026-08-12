@@ -6,7 +6,7 @@
 // trendi + dönem tablosu). Ders o dönem açık değilse neden açıklanır, geçmiş
 // yine gösterilir — sessiz boşluk olmaz.
 
-import { $, getJSON, esc, termLabel, sessionHours } from './utils.js';
+import { $, getJSON, esc, termLabel, sessionHours, fillMeasured } from './utils.js';
 import { state } from './store.js';
 import { fillBar, trendChart } from './chart.js';
 
@@ -26,6 +26,21 @@ function fillNote(crn) {
   return `ilk ölçümden ${span} sonra doldu`;
 }
 
+// "A, B" / "A; B" / "A | B" → ["A", "B"]. Boşluk-önemsiz. Tek isimde tek eleman.
+// Saf — test edilebilir.
+export function splitInstructors(instr) {
+  return String(instr ?? '').split(/[;,|]/).map((s) => s.trim()).filter(Boolean);
+}
+
+// Doluluk ölçüm zamanı (Faz 0.4): "%100" anlık sanılmasın — kontenjan zaman
+// serisi günde bir tazeleniyor. Yalnızca bu dönem için ölçüm kaydı varsa döner.
+function measured(crn) {
+  if (!state.quotaLast) return '';
+  const rec = state.quota?.get(crn);
+  if (!rec) return '';
+  return fillMeasured(state.quotaLast);
+}
+
 // Oturum satırı: "Pazartesi 08:30/11:29 · AYB"
 function sessionsHtml(sec) {
   return sec.days.map((d, i) => [d, sec.times[i] || '', sec.rooms[i] || '', sec.buildings[i] || '']
@@ -38,18 +53,24 @@ function secCard(s) {
   const pct = s.capacity ? `%${Math.round((s.enrolled / s.capacity) * 100)}` : '';
   const hrs = sessionHours(s.times);
   const note = fillNote(s.crn);
-  const canHistory = s.instructor && s.instructor !== '-' && s.instructor !== '***';
+  // Çoklu hocada ("A, B" / "A; B" / "A | B") her isim için ayrı buton üret —
+  // tek `data-name` ile "A, B" aranınca hiç sonuç çıkmıyordu (Faz 0.3).
+  const names = splitInstructors(s.instructor);
+  const histBtns = names
+    .filter((n) => n !== '-' && n !== '***')
+    .map((n) => `<button type="button" class="btn-ghost d-hist" data-name="${esc(n)}">${esc(n)} geçmişinde ara</button>`)
+    .join('');
   const sessions = sessionsHtml(s);
   return `
     <div class="d-sec">
       <div class="d-sec-head">
         <b class="d-crn">${esc(s.crn)}</b>
         <span class="d-sec-instr">${esc(s.instructor || '—')}</span>
-        ${canHistory ? `<button type="button" class="btn-ghost d-hist" data-name="${esc(s.instructor)}">geçmişinde ara</button>` : ''}
+        ${histBtns}
       </div>
       <div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa (oturum)` : ''].filter(Boolean).join(' · ')}</div>
       ${sessions ? `<div class="d-sec-when">${sessions}</div>` : ''}
-      <div class="d-sec-stats">${fillBar(s.capacity, s.enrolled)} ${s.capacity ? `${s.enrolled} / ${s.capacity} (${pct})` : '—'}${note ? ` · ${esc(note)}` : ''}</div>
+      <div class="d-sec-stats">${fillBar(s.capacity, s.enrolled)} ${s.capacity ? `${s.enrolled} / ${s.capacity} (${pct})` : '—'}${note ? ` · ${esc(note)}` : ''}${measured(s.crn) ? `<small class="fill-measured"> · ${esc(measured(s.crn))}</small>` : ''}</div>
       ${s.prereq && s.prereq !== '-' ? `<div class="d-sec-req"><span>önşart:</span> ${esc(s.prereq)}</div>` : ''}
       ${s.classReq && s.classReq !== '-' ? `<div class="d-sec-req"><span>sınıf / kredi:</span> ${esc(s.classReq)}</div>` : ''}
       ${s.reserved && s.reserved !== '-' ? `<div class="d-sec-req"><span>rezervasyon:</span> ${esc(s.reserved)}</div>` : ''}

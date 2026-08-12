@@ -5,8 +5,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { fold, termLabel, buildingOf, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours } from './utils.js';
+import { fold, termLabel, buildingOf, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
+import { splitInstructors } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet } from '../views/program.js';
@@ -81,6 +82,47 @@ test('calendarDayState aralıkta devam/geçmiş/gelecek sınıflandırır', () =
 
 test('calendarDayState çözümlenemeyen tarihi "gelecek" sayar', () => {
   assert.deepEqual(calendarDayState('Belirsiz', new Date(2026, 7, 13)), { past: false, now: false, label: '' });
+});
+
+test('calendarDayState ISO start/end varsa Türkçe metne tercih eder', () => {
+  const today = new Date(2026, 7, 13); // 13 Ağustos 2026
+  // JS'in çözemediği gömülü saatli aralık, ISO ile doğru sınıflandırılır.
+  const iso = { start: '2026-08-10', end: '2026-08-15' };
+  assert.deepEqual(calendarDayState('28 Eylül 10:00 - 02 Ekim 2026 17:00', today, iso),
+    { past: false, now: true, label: 'Devam ediyor' });
+  // ISO gelecekte: Türkçe metin çözülmese bile doğru.
+  const future = calendarDayState('çözülemez', today, { start: '2026-09-10', end: '2026-09-11' });
+  assert.equal(future.past, false);
+  assert.ok(future.label.includes('gün kaldı'));
+  // Bozuk ISO geri Türkçe metne düşer.
+  assert.equal(calendarDayState('Belirsiz', today, { start: 'xx', end: '' }).label, '');
+});
+
+test('timeAgo kısa "ne kadar önce" metni üretir', () => {
+  const now = Date.UTC(2026, 7, 13, 12, 0, 0);
+  assert.equal(timeAgo('2026-08-13T12:00:00Z', now), 'şimdi');
+  assert.equal(timeAgo('2026-08-13T11:56:00Z', now), '4 dk önce');
+  assert.equal(timeAgo('2026-08-13T06:00:00Z', now), '6 sa önce');
+  assert.equal(timeAgo('2026-08-10T12:00:00Z', now), '3 gün önce');
+  assert.equal(timeAgo('bozuk', now), '');
+});
+
+test('fillMeasured ölçüm zamanı etiketi üretir; zamansız boş', () => {
+  const now = Date.UTC(2026, 7, 13, 12, 0, 0);
+  assert.equal(fillMeasured('2026-08-13T06:00:00Z', now), 'en son 6 sa önce ölçüldü');
+  assert.equal(fillMeasured('2026-08-10T12:00:00Z', now), 'en son 3 gün önce ölçüldü');
+  assert.equal(fillMeasured('', now), '');
+  assert.equal(fillMeasured(null, now), '');
+  assert.equal(fillMeasured('bozuk', now), '');
+});
+
+test('splitInstructors çoklu hocayı ayırır', () => {
+  assert.deepEqual(splitInstructors('Burak Berk Üstündağ, Gökhan İnce'), ['Burak Berk Üstündağ', 'Gökhan İnce']);
+  assert.deepEqual(splitInstructors('A; B | C'), ['A', 'B', 'C']);
+  assert.deepEqual(splitInstructors('Tek Hoca'), ['Tek Hoca']);
+  assert.deepEqual(splitInstructors(''), []);
+  assert.deepEqual(splitInstructors(null), []);
+  assert.deepEqual(splitInstructors('  '), []);
 });
 
 test('sessionHours oturum sürelerini toplar ve yuvarlar', () => {

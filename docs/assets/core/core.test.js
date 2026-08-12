@@ -10,7 +10,8 @@ import { fillBar, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
-import { buildSnippet } from '../views/program.js';
+import { buildSnippet, parseTimeRange, examOverlap, finalsConflict } from '../views/program.js';
+import { icsText } from './utils.js';
 import * as fav from './favorites.js';
 
 test('fold Türkçe karakterleri ASCII katar', () => {
@@ -380,4 +381,50 @@ test('buildTimetable çakışmayan derslerde boş hücre bırakır', () => {
       assert.ok(codes.length <= 1, `çakışma olmamalı: gün ${d} slot ${si}`);
     }
   }
+});
+
+test('parseTimeRange "HH:MM-HH:MM"i dakikaya çevirir', () => {
+  assert.deepEqual(parseTimeRange('09:00-11:00'), [540, 660]);
+  assert.deepEqual(parseTimeRange('13:30-16:00'), [810, 960]);
+  assert.equal(parseTimeRange('09:00'), null);
+  assert.equal(parseTimeRange(''), null);
+  assert.equal(parseTimeRange(null), null);
+});
+
+test('examOverlap aynı gün + örtüşen saatte true', () => {
+  const a = { date: '13 Ağustos 2026', time: '09:00-11:00' };
+  const b = { date: '13 Ağustos 2026', time: '10:00-12:00' };
+  const c = { date: '13 Ağustos 2026', time: '11:00-13:00' }; // bitişik, örtüşme yok
+  const d = { date: '14 Ağustos 2026', time: '09:00-11:00' }; // farklı gün
+  assert.equal(examOverlap(a, b), true);
+  assert.equal(examOverlap(a, c), false);
+  assert.equal(examOverlap(a, d), false);
+  assert.equal(examOverlap({ date: 'X', time: 'bozuk' }, { date: 'X', time: '09:00-11:00' }), false);
+});
+
+test('finalsConflict seçili şubelerde çakışan finalleri bulur', () => {
+  const exams = [
+    { crn: '10001', code: 'BLG 101', date: '13 Ağustos 2026', time: '09:00-11:00' },
+    { crn: '10002', code: 'MAT 101', date: '13 Ağustos 2026', time: '10:00-12:00' },
+    { crn: '10003', code: 'BLG 101', date: '13 Ağustos 2026', time: '13:00-15:00' }, // aynı ders — sayılmaz
+    { crn: '10004', code: 'FIZ 101', date: '15 Ağustos 2026', time: '09:00-11:00' },
+  ];
+  const conf = finalsConflict(exams, ['10001', '10002', '10003', '10004']);
+  assert.equal(conf.length, 1); // yalnızca BLG 101 × MAT 101
+  assert.equal(conf[0][0].code + '×' + conf[0][1].code, 'BLG 101×MAT 101');
+  assert.equal(finalsConflict(exams, ['10003', '10004']).length, 0);
+  assert.equal(finalsConflict([], ['1']).length, 0);
+});
+
+test('icsText VEVENT satırları üretir', () => {
+  const out = icsText([
+    { uid: 'a', title: 'Ders Başı; Hazırlık', startISO: '2026-09-07', endISO: '2026-09-07' },
+    { uid: 'b', title: 'Sınav', startISO: '2026-08-13T09:00:00', endISO: '2026-08-13T11:00:00', desc: 'Final' },
+  ], '2026-08-13T00:00:00');
+  assert.ok(out.startsWith('BEGIN:VCALENDAR'));
+  assert.ok(out.includes('DTSTART:20260907'));
+  assert.ok(out.includes('DTSTART:20260813T090000'));
+  assert.ok(out.includes('SUMMARY:Ders Başı\\; Hazırlık'));
+  assert.ok(out.includes('DESCRIPTION:Final'));
+  assert.ok(out.endsWith('END:VCALENDAR'));
 });

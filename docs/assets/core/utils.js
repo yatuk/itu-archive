@@ -225,3 +225,44 @@ export function downloadCSV(filename, headers, rows) {
   a.click();
   URL.revokeObjectURL(a.href);
 }
+
+// ICS (takvim) metni üretir — saf, testli. events: [{ uid, title, startISO,
+// endISO, desc? }], ISO tarihleri "YYYY-MM-DD" (tüm gün) ya da
+// "YYYY-MM-DDTHH:MM:SS". downloadCSV deseninin yanına ikinci üretici.
+export function icsText(events, stamp = new Date().toISOString().slice(0, 19)) {
+  const escTxt = (v) => String(v ?? '').replace(/[\\;,]/g, (c) => '\\' + c).replace(/\n/g, '\\n');
+  const dt = (iso, allDay) => {
+    const s = String(iso || '');
+    // iCal temel biçim: tüm gün "YYYYMMDD", zamanlı "YYYYMMDDTHHMMSS".
+    return allDay ? s.replace(/T.*$/, '').replace(/-/g, '') : s.replace(/[-:]/g, '').replace(/\..*/, '');
+  };
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//itu-ders//Ders Arşivi//TR',
+    'CALSCALE:GREGORIAN',
+  ];
+  for (const [i, e] of (events || []).entries()) {
+    const allDay = /^\d{4}-\d{2}-\d{2}$/.test(e.startISO || '');
+    lines.push('BEGIN:VEVENT');
+    lines.push(`UID:${escTxt(e.uid || `itu-ders-${i}`)}@itu-ders.com`);
+    lines.push(`DTSTAMP:${dt(stamp, false)}`);
+    lines.push(`DTSTART:${dt(e.startISO, allDay)}`);
+    lines.push(`DTEND:${dt(e.endISO || e.startISO, allDay)}`);
+    lines.push(`SUMMARY:${escTxt(e.title)}`);
+    if (e.desc) lines.push(`DESCRIPTION:${escTxt(e.desc)}`);
+    lines.push('END:VEVENT');
+  }
+  lines.push('END:VCALENDAR');
+  return lines.join('\r\n');
+}
+
+// ICS dışa aktarımı — Faz 4.5. icsText'i dosyaya indirir.
+export function downloadICS(filename, events) {
+  const blob = new Blob([icsText(events)], { type: 'text/calendar;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}

@@ -5,7 +5,7 @@
 // kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
 // Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV } from '../core/utils.js';
+import { $, getJSON, esc, fold, debounce, downloadCSV, parseTurkishDate } from '../core/utils.js';
 import { state, indexReady } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { buildTimetable, openDetail } from './courses.js';
@@ -329,10 +329,11 @@ function renderList(items) {
     const [crn, code, name, branch, instructor, when, cap, enr] = row;
     const full = cap > 0 && enr >= cap;
     const key = fav.favKeyOf(branch, crn);
+    const speed = fillSpeedNote(crn);
     return `<div class="p-item${markFull && full ? ' p-full' : ''}" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
       <span class="p-crn">${esc(crn)}${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
-      <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}</small></div>
+      <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
       <span class="p-when">${esc(when || '—')}</span>
       <span class="p-fill">${cap ? fillBar(cap, enr) : '—'}</span>
       <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için eylemler" aria-haspopup="menu">⋮</button>
@@ -518,7 +519,27 @@ function renderSummary(items) {
   if (pairs.size) {
     html += `<p class="p-conf">⚠ Çakışan dersler:</p><ul class="p-conf-list">${[...pairs].map((p) => `<li>${esc(p)}</li>`).join('')}</ul>`;
   }
+  // Faz 4.1: final çakışması — exams verisi yüklenmişse asenkron ekler.
+  loadFinalsNote(items, box);
   box.innerHTML = html;
+}
+
+let finalsCache = null;
+async function loadFinalsNote(items, box) {
+  try {
+    if (finalsCache === null) {
+      finalsCache = await getJSON(`data/exams/${term}.json`).catch(() => null);
+    }
+    const exams = finalsCache ? finalsCache.exams : null;
+    const crns = items.map((i) => i.row[0]);
+    const conf = finalsConflict(exams, crns);
+    if (!conf.length) return;
+    const pairs = conf.map(([a, b]) => `${esc(a.code)} × ${esc(b.code)} (${esc(a.date)} ${esc(a.time)})`);
+    const wrap = document.createElement('div');
+    wrap.className = 'p-conf';
+    wrap.innerHTML = `⚠ Final çakışması:<ul class="p-conf-list">${pairs.map((p) => `<li>${p}</li>`).join('')}</ul>`;
+    box.appendChild(wrap);
+  } catch { /* finals verisi yoksa sessiz */ }
 }
 
 function updateCredits(items) {
@@ -529,6 +550,77 @@ function updateCredits(items) {
   const p = ps.programs.find((x) => x.id === ps.active);
   if (p && p.credits != null) { el.textContent = p.credits; return; }
   el.textContent = items.length ? '—' : '—';
+  // Faz 4.3: AKTS toplamı — katalog verisi geldiyse toplam gösterilir.
+  if (!items.length) return;
+  ectsTotal(items).then((r) => {
+    if (!r.known) return; // bu dönem için katalog verisi yoksa eski hal kalır
+    el.textContent = `${r.total.toFixed(1)} AKTS${r.known < r.all ? ` · ${r.known}/${r.all} ders için` : ''}`;
+  }).catch(() => {});
+}
+
+// --- Faz 4: kayıt haftası yardımcıları ---
+
+// Final çakışması: seçili şubelerin final sınavları aynı güne + örtüşen saate
+// düşüyorsa döndürür. Veri examHay'dan değil, ham exams listesinden çözülür.
+// Saf fonksiyon — test edilebilir.
+export function finalsConflict(exams, crns) {
+  const byCrn = new Map(crns.map((c) => [c, true]));
+  const mine = (exams || []).filter((e) => byCrn.has(String(e.crn)));
+  const out = [];
+  for (let i = 0; i < mine.length; i++) {
+    for (let j = i + 1; j < mine.length; j++) {
+      const a = mine[i], b = mine[j];
+      if (a.code === b.code) continue; // aynı dersin farklı şubesi finali çakışmaz
+      if (!examOverlap(a, b)) continue;
+      out.push([a, b]);
+    }
+  }
+  return out;
+}
+
+// İki sınavın tarih+saat örtüşmesi: aynı gün ve "HH:MM-HH:MM" aralıkları çakışıyor.
+export function examOverlap(a, b) {
+  if (a.date !== b.date) return false;
+  const ra = parseTimeRange(a.time), rb = parseTimeRange(b.time);
+  if (!ra || !rb) return false;
+  return ra[0] < rb[1] && rb[0] < ra[1];
+}
+
+// "09:00-11:00" → [540, 660]. Saf — testli.
+export function parseTimeRange(t) {
+  const m = String(t || '').match(/^(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})$/);
+  if (!m) return null;
+  return [Number(m[1]) * 60 + Number(m[2]), Number(m[3]) * 60 + Number(m[4])];
+}
+
+// AKTS toplamı: seçili şubelerin branş dosyalarından ECTS'leri toplar.
+// Veri gelmemiş branşlar sessizce atlanır — "X/Y ders için" notu dışarıda.
+export async function ectsTotal(items) {
+  const cache = new Map();
+  let total = 0, known = 0;
+  for (const { row } of items) {
+    const branch = row[3];
+    let map = cache.get(branch);
+    if (map === undefined) {
+      map = await getJSON(`data/catalog/${branch}.json`).catch(() => null);
+      cache.set(branch, map);
+    }
+    const ent = map && map[row[1]];
+    if (ent && ent.credits && ent.credits.ects) { total += ent.credits.ects; known++; }
+  }
+  return { total, known, all: items.length };
+}
+
+// Dolma hızı notu (Faz 4.4): quota kaydından "geçen sefer X sa sonra doldu".
+export function fillSpeedNote(crn) {
+  const q = state.quota?.get(String(crn));
+  if (!q || !q.filledAt) return '';
+  const m = q.fillMinutes;
+  if (!m) return 'geçen sefer ilk ölçümde doluydu';
+  const h = Math.floor(m / 60);
+  const rest = m % 60;
+  const span = h ? `${h} sa${rest ? ` ${rest} dk` : ''}` : `${rest} dk`;
+  return `geçen sefer ${span} sonra doldu`;
 }
 
 function addFavorites() {

@@ -1001,6 +1001,7 @@ footer {
 /* Detay paneli — katalog bölümü (core/course-detail.js catalogHtml) */
 .d-cat { margin: 16px 0 0; }
 .d-cat-credits { color: var(--fg); font-size: 13px; margin: 0 0 8px; }
+.d-cat-midterm { color: var(--amber); font-size: 12px; margin: 0 0 8px; }
 .d-cat-details {
   border: 1px solid var(--line); background: var(--panel);
   margin: 0 0 8px; font-size: 12px;

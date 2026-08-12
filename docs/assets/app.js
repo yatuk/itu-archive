@@ -76,9 +76,11 @@ async function boot() {
   // İlk sekme artık veri hazırken açılır (paylaşılan #program/#takvim/#sinavlar
   // bağlantıları bu sayede doğru çalışır).
   showView(VIEWS.includes(pendingView) ? pendingView : 'dersler', false);
-  openDetailFromHash(pendingView);
 
   await loadTerm(initialSlug);
+  // Paylaşılan #ders/<kod> bağlantısı: detay, aktif dönem yüklendikten sonra
+  // açılır — aksi halde dönem bilinmeden "açık değil" gösterirdi.
+  openDetailFromHash(pendingView);
 
   // Arama ve filtre durumunu URL'den uygula (loadTerm filtre seçeneklerini
   // yeniden kurduğu için bunları ondan sonra yazıyoruz).

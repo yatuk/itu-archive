@@ -95,8 +95,8 @@ export function initProgram() {
   $('#p-csv').addEventListener('click', exportCSV);
   $('#p-share').addEventListener('click', share);
   $('#p-obs').addEventListener('click', (e) => { e.preventDefault(); showOBS(); });
-  $('#p-obs').addEventListener('mouseenter', () => showTip('p-obs-tt'));
-  $('#p-obs').addEventListener('mouseleave', () => hideTip('p-obs-tt'));
+  $('#p-obs').addEventListener('mouseenter', () => showTip());
+  $('#p-obs').addEventListener('mouseleave', () => hideTip());
   $('#p-favs').addEventListener('click', addFavorites);
   $('#p-full').addEventListener('change', render);
   document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
@@ -581,25 +581,33 @@ function updateBookmarklet(items) {
 }
 
 // --- tooltip ---
-function showTip(id) {
-  const el = $('#' + id);
+// Onboarding balonu gösterilirken hover tooltip'i asla aynı anda tetiklenmez.
+let onboardingShowing = false;
+
+function showTip() {
+  if (onboardingShowing) return;
+  const el = $('#p-obs-tt');
   if (el) el.classList.add('show');
 }
-function hideTip(id) {
-  const el = $('#' + id);
+function hideTip() {
+  const el = $('#p-obs-tt');
   if (el) el.classList.remove('show');
 }
 
-// İlk ziyarette onboarding balonu göster, 3sn sonra kapat.
+// İlk ziyarette onboarding balonu göster, 3sn sonra kapat ve bir daha gösterme.
 function maybeOnboard() {
-  let shown = false;
-  try { shown = localStorage.getItem('itu-obs-onboard') === '1'; } catch {}
-  if (shown) return;
-  try { localStorage.setItem('itu-obs-onboard', '1'); } catch {}
+  let seen = false;
+  try { seen = localStorage.getItem('crn_tooltip_seen') === 'true'; } catch {}
+  if (seen) return;
+  try { localStorage.setItem('crn_tooltip_seen', 'true'); } catch {}
   const el = $('#p-obs-onboard');
   if (!el) return;
+  onboardingShowing = true;
   el.classList.add('show');
-  setTimeout(() => el.classList.remove('show'), 3000);
+  setTimeout(() => {
+    el.classList.remove('show');
+    onboardingShowing = false;
+  }, 3000);
 }
 
 function exportCSV() {

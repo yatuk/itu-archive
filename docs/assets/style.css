@@ -993,25 +993,29 @@ body.modal-open { overflow: hidden; }
 }
 
 .ttip {
-  position: absolute; bottom: calc(100% + 9px); left: 50%;
-  transform: translateX(-50%) translateY(4px);
+  /* Sayfa akışından tamamen çıkar — diğer elemanları itmez. */
+  position: absolute; top: 100%; left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  margin-top: 8px;
   background: #1a1a1a; color: #fff; font-size: 12px; line-height: 1.4;
   padding: 8px 10px; border-radius: 8px; white-space: nowrap;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, .45); z-index: 50; pointer-events: none;
-  opacity: 0; visibility: hidden;
-  transition: opacity 150ms ease, transform 150ms ease, visibility 150ms;
+  max-width: 80vw;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .45); z-index: 50;
+  pointer-events: none; opacity: 0;
+  transition: opacity 150ms ease, transform 150ms ease;
 }
-.ttip::after {
-  content: ""; position: absolute; top: 100%; left: 50%;
+/* Butona işaret eden ok (üstte, merkezde). */
+.ttip::before {
+  content: ""; position: absolute; top: -5px; left: 50%;
   transform: translateX(-50%);
-  border: 5px solid transparent; border-top-color: #1a1a1a;
+  border: 5px solid transparent; border-bottom-color: #1a1a1a;
 }
-.ttip.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+.ttip.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 .ttip-onboard {
   background: #0e2e22; border: 1px solid var(--acid);
   white-space: normal; max-width: 240px; text-align: center;
 }
-.ttip-onboard::after { border-top-color: #0e2e22; }
+.ttip-onboard::before { border-bottom-color: #0e2e22; }
 
 .btn-primary {
   font: inherit; background: var(--cyan); color: var(--bg);

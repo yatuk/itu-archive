@@ -96,9 +96,10 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   $('#detail-close').focus();
 
   const branch = String(code).split(' ')[0];
-  const [list, hist] = await Promise.all([
+  const [list, hist, cat] = await Promise.all([
     getJSON(`data/terms/${t}/branches/${branch}.json`).catch(() => []),
     getJSON(`data/history/courses/${branch}.json`).then((all) => all[code] || null).catch(() => null),
+    getJSON(`data/catalog/${branch}.json`).then((all) => all[code] || null).catch(() => null),
   ]);
   const secs = Array.isArray(list) ? list.filter((s) => s.code === code) : [];
 
@@ -106,7 +107,8 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     content.innerHTML = `
       <h3 id="detail-title">${esc(code)}</h3>
       <p class="empty">Bu ders <b>${esc(termLabel(t))}</b> döneminde açık değil.</p>
-      ${histHtml(hist)}`;
+      ${histHtml(hist)}
+      ${catalogHtml(cat)}`;
     wireHistButtons(content);
     return;
   }
@@ -125,8 +127,32 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
         ? programs.map((p) => `<span class="d-prog">${esc(p)}</span>`).join('')
         : '<span class="d-prog d-prog-none">kısıtlama yok — tüm programlar alabilir</span>'}</div>
     </section>
+    ${catalogHtml(cat)}
     ${histHtml(hist)}`;
   wireHistButtons(content);
+}
+
+// Katalog bölümü (Faz 3). Veri yoksa hiç render edilmez — panel eski haliyle
+// çalışır. Kredi satırı, şube kartındaki "oturum süresi"nden ayrı etiketlidir:
+// bu, resmî T+U+L paketidir.
+function catalogHtml(cat) {
+  if (!cat) return '';
+  const c = cat.credits || {};
+  const parts = [];
+  if (c.theory || c.practice || c.lab) parts.push(`${c.theory || 0}+${c.practice || 0}+${c.lab || 0} (T+U+L)`);
+  if (c.local) parts.push(`yerel ${c.local}`);
+  if (c.ects) parts.push(`AKTS ${c.ects}`);
+  const details = (title, open, body) => `<details class="d-cat-details"${open ? ' open' : ''}><summary>${title}</summary>${body}</details>`;
+  const list = (items, tag) => items.map((x) => `<li>${esc(x)}</li>`).join('');
+  return `<section class="d-cat">
+    <h4>Katalog</h4>
+    ${parts.length ? `<p class="d-cat-credits">${esc(parts.join(' · '))}${cat.language ? ` · dil: ${esc(cat.language)}` : ''}</p>` : ''}
+    ${cat.description ? details('Ders içeriği', false, `<p>${esc(cat.description)}</p>`) : ''}
+    ${(cat.outcomes || []).length ? details(`Öğrenme çıktıları (${cat.outcomes.length})`, true, `<ul>${list(cat.outcomes)}</ul>`) : ''}
+    ${(cat.weeklyTopics || []).length ? details(`Haftalık konular (${cat.weeklyTopics.length})`, false, `<ol>${list(cat.weeklyTopics)}</ol>`) : ''}
+    ${(cat.textbooks || []).length ? details('Kaynak kitaplar', false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
+    ${cat.sourceUrl ? `<p class="d-cat-src">kaynak: <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">OBS katalog formu</a></p>` : ''}
+  </section>`;
 }
 
 function wireHistButtons(content) {

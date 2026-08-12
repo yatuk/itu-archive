@@ -15,6 +15,7 @@ import (
 	"regexp"
 	"strings"
 
+	"itu-scraper/internal/catalog"
 	"itu-scraper/internal/curriculum"
 	"itu-scraper/internal/model"
 	"itu-scraper/internal/quota"
@@ -60,6 +61,7 @@ func All(root string, skipSite bool) *Result {
 	res.checkCurriculum(root)
 	res.checkIndex(root)
 	res.checkCalendar(root)
+	res.checkCatalog(root)
 	if !skipSite {
 		res.checkSitePages(root)
 	}
@@ -248,6 +250,46 @@ func (r *Result) checkCalendar(root string) {
 			if strings.TrimSpace(ev.Remaining) == "" {
 				r.errf("calendar/%s: etkinlik %d: remaining boş", e.Name(), i)
 			}
+		}
+	}
+}
+
+// checkCatalog, katalog kayıtlarının bütünlüğünü denetler: dosya adı branşla
+// eşleşmeli, kod kopya olmamalı, kaydın code alanı anahtarla aynı olmalı.
+// Katalog verisi opsiyoneldir — veri yoksa (dizin yok) atlanır, site onsuz
+// çalışır.
+func (r *Result) checkCatalog(root string) {
+	catDir := filepath.Join(root, "data", "catalog")
+	entries, err := os.ReadDir(catDir)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return
+		}
+		r.errf("data/catalog okunamadı: %v", err)
+		return
+	}
+	seen := map[string]bool{}
+	for _, e := range entries {
+		if !strings.HasSuffix(e.Name(), ".json") || e.Name() == "index.json" {
+			continue
+		}
+		branch := strings.TrimSuffix(e.Name(), ".json")
+		var m map[string]catalog.Entry
+		if err := readJSON(filepath.Join(catDir, e.Name()), &m); err != nil {
+			r.errf("catalog/%s: çözümlenemedi: %v", e.Name(), err)
+			continue
+		}
+		for code, ent := range m {
+			if ent.Code != code {
+				r.errf("catalog/%s: %q anahtarının içindeki code %q", e.Name(), code, ent.Code)
+			}
+			if !strings.HasPrefix(code, branch) {
+				r.errf("catalog/%s: %q kodu branş %q ile başlamıyor", e.Name(), code, branch)
+			}
+			if seen[code] {
+				r.errf("catalog: %q kodu birden çok dosyada", code)
+			}
+			seen[code] = true
 		}
 	}
 }

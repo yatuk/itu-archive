@@ -1,0 +1,59 @@
+name: katalog
+
+# Ders katalog verisi (kredi, AKTS, dil, içerik, çıktılar, kaynak kitaplar).
+# İçerik nadiren değiştiği için haftalık çalışıyor; OBS'yi yormamak için rps
+# limiti korunuyor. Kapsam yıl geçmişindeki ders kodlarından türetiliyor.
+on:
+  schedule:
+    - cron: '23 5 * * 1' # pazartesi 05:23 UTC (haftalık)
+  workflow_dispatch:
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Katalog çek
+        run: go run ./cmd/catalog
+
+      - name: Doğrula
+        run: go run ./cmd/validate -quiet -skip-site
+
+      - name: Kapsam özeti
+        run: |
+          python - <<'EOF'
+          import json
+          ix = json.load(open('docs/data/catalog/index.json'))
+          pct = 100 * ix['withContent'] / ix['groups'] if ix['groups'] else 0
+          print(f"katalog: {ix['withContent']}/{ix['groups']} grup içerikli ({pct:.0f}%), {len(ix['branches'])} branş dosyası")
+          EOF
+
+      - name: Commit
+        run: |
+          if git diff --quiet -- docs/data/catalog; then
+            echo 'Katalogda değişiklik yok.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name  'itu-scraper[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/data/catalog
+          git commit -m "katalog: $(date -u +'%Y-%m-%d') haftalık taraması"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1

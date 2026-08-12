@@ -542,7 +542,8 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .pg-detail h4,
 .d-progs h4,
 .d-secs h4,
-.d-hist h4 {
+.d-hist h4,
+.d-cat h4 {
   font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
   color: var(--dimmer);
   display: inline-block; padding: 3px 10px; border-radius: 999px;
@@ -877,6 +878,27 @@ footer {
 .d-sec-stats { margin-top: 2px; font-size: 12px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .d-sec-req { color: var(--dimmer); font-size: 11px; }
 .d-sec-req span { color: var(--dim); text-transform: uppercase; font-size: 10px; letter-spacing: .1em; }
+
+/* Detay paneli — katalog bölümü (core/course-detail.js catalogHtml) */
+.d-cat { margin: 16px 0 0; }
+.d-cat-credits { color: var(--fg); font-size: 13px; margin: 0 0 8px; }
+.d-cat-details {
+  border: 1px solid var(--line); background: var(--panel);
+  margin: 0 0 8px; font-size: 12px;
+}
+.d-cat-details summary {
+  cursor: pointer; list-style: none; padding: 6px 10px;
+  color: var(--cyan); font-weight: 600; letter-spacing: .04em;
+}
+.d-cat-details summary::-webkit-details-marker { display: none; }
+.d-cat-details summary::before { content: "▸ "; color: var(--dimmer); }
+.d-cat-details[open] summary::before { content: "▾ "; }
+.d-cat-details > p, .d-cat-details > ul, .d-cat-details > ol {
+  margin: 0; padding: 4px 12px 10px; color: var(--fg);
+}
+.d-cat-details li { margin-bottom: 4px; }
+.d-cat-src { color: var(--dimmer); font-size: 11px; margin-top: 4px; }
+.d-cat-src a { color: var(--cyan); }
 body.modal-open { overflow: hidden; }
 @media (max-width: 640px) {
   .detail-box dl { grid-template-columns: 1fr; gap: 2px 0; }

@@ -75,6 +75,14 @@ func TestParseShellRejects(t *testing.T) {
 	}
 }
 
+func TestParseCodeMismatchRejects(t *testing.T) {
+	// Sayfadaki kod "BLG102-BLG102E" iken istenen FIZ 101 uyuşmaz — yanlış dersin
+	// içeriği sessizce yazılmamalı (Faz 3.4).
+	if _, err := Parse(readFixture(t, "katalog_BLG_102.html"), "url", "FIZ", "101"); err == nil {
+		t.Error("uyuşmayan kod için hata beklenirdi")
+	}
+}
+
 func TestGroupsFromCodes(t *testing.T) {
 	groups := GroupsFromCodes([]string{"BLG 102E", "BLG 102", "FIZ 101", "no-num", "MAT 101E"})
 	if len(groups) != 3 {

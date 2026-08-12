@@ -119,6 +119,13 @@ func Parse(body []byte, sourceURL, branch, dersNo string) (*Entry, error) {
 		return nil, fmt.Errorf("çekirdek alanlar eksik (ad=%q dil=%q) — sayfa yapısı değişmiş olabilir",
 			e.Name, e.Language)
 	}
+	// Dönen sayfadaki kod, istenen koda uygun olmalı — yanlış dersin içeriğini
+	// sessizce yazma (Faz 3.4). TR/EN çiftleri tek sayfada ("BLG102-BLG102E");
+	// istenen taban (branş + sayısal dersNo) çiftlerden birinin öneki olmalı.
+	if !pageCodeMatches(text, branch, dersNo) {
+		return nil, fmt.Errorf("sayfa kodu istenen kodla uyuşmuyor (branş=%s dersNo=%s) — sayfa yapısı değişmiş olabilir",
+			branch, dersNo)
+	}
 	// Tanım bazı derslerde kaynakta gerçekten boştur (ör. bitirme çalışması) —
 	// bu yapı hatası değil. Form tamamen boşsa yapı değişmiş olabilir.
 	if e.Description == "" && len(e.Outcomes) == 0 && len(e.WeeklyTopics) == 0 &&
@@ -126,6 +133,32 @@ func Parse(body []byte, sourceURL, branch, dersNo string) (*Entry, error) {
 		return nil, fmt.Errorf("form tamamen boş — sayfa yapısı değişmiş olabilir")
 	}
 	return e, nil
+}
+
+// pageCodeMatches, kredi satırının ilk hücresindeki kodu istenen (branş, dersNo)
+// ile karşılaştırır. Sayfadaki kod "BLG102-BLG102E" gibi bir çift olabilir; kabul
+// için taban (branş + sayısal dersNo, boşluksuz) çiftin herhangi bir üyesinin
+// öneki olmalı. Sayfada kod hücresi bulunamazsa (yapı değişikliği) false — Parse
+// hata döner, içerik sessizce yazılmaz.
+func pageCodeMatches(text, branch, dersNo string) bool {
+	for _, row := range rowRe.FindAllStringSubmatch(text, -1) {
+		cells := cellRe.FindAllStringSubmatch(row[1], -1)
+		if len(cells) < 6 {
+			continue
+		}
+		first := cleanHTML(cells[0][1])
+		if !codeRe.MatchString(first) {
+			continue
+		}
+		base := strings.ToUpper(strings.TrimSpace(branch + strings.TrimSpace(dersNo)))
+		for _, part := range strings.FieldsFunc(first, func(r rune) bool { return r == '-' || r == ' ' }) {
+			if strings.HasPrefix(strings.ToUpper(part), base) {
+				return true
+			}
+		}
+		return false // kod hücresi var ama eşleşmiyor — yanlış ders
+	}
+	return false // kod hücresi yok — yapı değişmiş
 }
 
 // parseCredits, "Kod Kredi AKTS Teo Uyg Lab" satırından kredi paketini çözer.

@@ -286,6 +286,18 @@ func (r *Result) checkCatalog(root string) {
 		r.errf("data/catalog okunamadı: %v", err)
 		return
 	}
+	// Katalog tüm kodları kapsamak zorunda değil (DersKatalog'ta olmayan dersler
+	// yasal); ancak kod önşart grafiğinde de geçmiyorsa muhtemelen yanlış aile —
+	// uyarı, hata değil.
+	var g model.PrereqGraph
+	graphOK := readJSON(filepath.Join(root, "data", "prereq", "graph.json"), &g) == nil
+	graphCodes := map[string]bool{}
+	if graphOK {
+		for _, n := range g.Nodes {
+			graphCodes[n.Code] = true
+		}
+	}
+
 	seen := map[string]bool{}
 	for _, e := range entries {
 		if !strings.HasSuffix(e.Name(), ".json") || e.Name() == "index.json" {
@@ -306,6 +318,9 @@ func (r *Result) checkCatalog(root string) {
 			}
 			if seen[code] {
 				r.errf("catalog: %q kodu birden çok dosyada", code)
+			}
+			if graphOK && !graphCodes[code] {
+				r.warnf("catalog: %q kodu önşart grafiğinde yok", code)
 			}
 			seen[code] = true
 		}
@@ -560,7 +575,9 @@ func (r *Result) checkSitePages(root string) {
 	gotDers := map[string]bool{}
 	if ents, err := os.ReadDir(dersDir); err == nil {
 		for _, e := range ents {
-			if !e.IsDir() { continue }
+			if !e.IsDir() {
+				continue
+			}
 			gotDers[e.Name()] = true
 			checkPage(dersDir, e.Name(), false)
 		}
@@ -570,7 +587,9 @@ func (r *Result) checkSitePages(root string) {
 	gotHoca := map[string]bool{}
 	if ents, err := os.ReadDir(hocaDir); err == nil {
 		for _, e := range ents {
-			if !e.IsDir() { continue }
+			if !e.IsDir() {
+				continue
+			}
 			gotHoca[e.Name()] = true
 			checkPage(hocaDir, e.Name(), false)
 		}

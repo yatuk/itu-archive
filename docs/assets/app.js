@@ -196,6 +196,14 @@ function wireHistoryJump() {
   });
 }
 
+// Önşart havuzundan "derslerde aç" — dersler sekmesine geçip aramayı doldurur.
+window.addEventListener('itu:goto-courses', (e) => {
+  const q = String(e.detail || '').trim();
+  if (showView) showView('dersler', true);
+  $('#q').value = q;
+  applyFilters();
+});
+
 // Hakkında sekmesindeki curl örneklerine sitenin gerçek adresini yazar.
 function fillHost() {
   const host = location.host + location.pathname.replace(/\/$/, '');

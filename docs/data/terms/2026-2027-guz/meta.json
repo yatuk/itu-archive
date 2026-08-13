@@ -1,11 +1,11 @@
 {
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-08-12T13:55:31Z",
+ "scrapedAt": "2026-08-13T04:48:16Z",
  "source": "itu-archive",
  "live": true,
- "sections": 4745,
- "courses": 3293,
+ "sections": 4835,
+ "courses": 3356,
  "branches": [
   {
    "code": "ABM",
@@ -617,7 +617,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 16
+   "sections": 15
   },
   {
    "code": "ITA",
@@ -688,7 +688,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 10
+   "sections": 9
   },
   {
    "code": "KET",
@@ -762,6 +762,13 @@
     "LU"
    ],
    "sections": 44
+  },
+  {
+   "code": "MAK",
+   "levels": [
+    "LS"
+   ],
+   "sections": 85
   },
   {
    "code": "MAL",
@@ -910,7 +917,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 3
+   "sections": 9
   },
   {
    "code": "MTO",
@@ -988,7 +995,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 15
+   "sections": 16
   },
   {
    "code": "MZJ",
@@ -1417,11 +1424,11 @@
   }
  ],
  "stats": {
-  "sections": 4745,
-  "courses": 3293,
-  "branches": 198,
-  "instructors": 1607,
-  "capacity": 232287,
+  "sections": 4835,
+  "courses": 3356,
+  "branches": 199,
+  "instructors": 1661,
+  "capacity": 236912,
   "enrolled": 1204
  }
 }

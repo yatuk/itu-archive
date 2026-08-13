@@ -294,6 +294,12 @@ export function downloadICS(filename, events) {
   URL.revokeObjectURL(a.href);
 }
 
+// Binlik ayraç (nokta): 7669 → "7.669" (Türkçe gösterim kuralı). P2-18.
+export function formatInt(n) {
+  const s = String(Math.round(Number(n) || 0));
+  return s.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
 // Kısa, stabil kimlik karması (Faz 4.5 — .ics uid'i uzun/Türkçe başlık yerine).
 // Deterministik FNV-1a; 8 hex basamak çakışma ihtimali pratikte yok.
 export function hashShort(s) {

@@ -33,7 +33,7 @@
 <meta name="twitter:description" content="İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi.">
 <meta name="twitter:image" content="https://itu-ders.com/glitch_effect.gif">
 
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=d20fd2c">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -300,9 +300,9 @@
   </div>
   <p class="resultline" id="eresultline" aria-live="polite">—</p>
    <div class="tablewrap">
-    <table aria-label="Sınav listesi">
+    <table aria-label="Sınav listesi" id="etable">
      <thead>
-      <tr><th>CRN</th><th>Ders</th><th>Adı</th><th>Akademisyen</th><th>Tür</th><th>Yer</th><th>Tarih</th><th>Saat</th></tr>
+      <tr><th>CRN</th><th>Ders</th><th>Adı</th><th>Akademisyen</th><th>Tür</th><th class="yer-col">Yer</th><th>Tarih</th><th>Saat</th></tr>
      </thead>
      <tbody id="erows"></tbody>
     </table>
@@ -520,6 +520,6 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
-<script type="module" src="assets/app.js"></script>
+<script type="module" src="assets/app.js?v=d20fd2c"></script>
 </body>
 </html>

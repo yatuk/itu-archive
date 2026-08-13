@@ -60,9 +60,20 @@ function renderExams() {
   });
   currentHits = hits; // .ics dışa aktarımı için
 
-  $('#eresultline').innerHTML = state.exams.exams.length
+  // P2-17: yer bilgisi tüm satırlarda aynı/ilgisizse ("İlgili Bölümce
+  // Açıklanacak") YER kolonu bilgi taşımıyor — gizle, üstte tek satır not düş.
+  const realPlace = (p) => p && p !== '-' && p !== 'İlgili Bölümce Açıklanacak';
+  const showPlace = hits.some((e) => realPlace(e.place));
+  const etable = $('#etable');
+  if (etable) etable.classList.toggle('hide-yer', !showPlace);
+
+  let resultLine = state.exams.exams.length
     ? `<b>${hits.length}</b> / ${state.exams.exams.length} sınav · ${esc(state.exams.term || '')}`
     : 'Bu dönem için sınav takvimi henüz ilan edilmemiş.';
+  if (!showPlace && hits.length) {
+    resultLine += ' · yer: İlgili Bölümce Açıklanacak';
+  }
+  $('#eresultline').innerHTML = resultLine;
 
   const rows = fillRows($('#erows'), hits.slice(0, 400), (e) => `
     <tr><td class="crn" data-label="CRN">${esc(e.crn)}</td>
@@ -70,10 +81,10 @@ function renderExams() {
         <td data-label="Adı">${esc(e.name)}</td>
         <td data-label="Akademisyen">${esc(e.instructor || '—')}</td>
         <td data-label="Tür">${esc(e.type)}</td>
-        <td class="when" data-label="Yer">${esc(e.place || '—')}</td>
+        ${showPlace ? `<td class="when yer-col" data-label="Yer">${esc(e.place || '—')}</td>` : ''}
         <td data-label="Tarih">${esc(e.date)}</td>
         <td class="when" data-label="Saat">${esc(e.day)} ${esc(e.time)}</td></tr>`,
-  { empty: 'eşleşen sınav yok', colspan: 8 });
+  { empty: 'eşleşen sınav yok', colspan: showPlace ? 8 : 7 });
   if (rows) {
     rows.forEach((tr) => {
       const b = tr.querySelector('.x-detail');

@@ -6,7 +6,7 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, searchMatch, debounce, downloadCSV, setStatus, fillMeasured } from '../core/utils.js';
+import { $, getJSON, esc, fold, normSearch, searchMatch, debounce, downloadCSV, setStatus, fillMeasured, formatInt } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
@@ -347,9 +347,9 @@ function renderRows(append) {
       <td data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${esc(name)}</button></td>
       <td data-label="Öğretim Üyesi">${esc(instructor || '—')}</td>
       <td class="when" data-label="Zaman">${esc(when || '—')}</td>
-      <td class="num" data-label="Kont.">${cap}</td>
-      <td class="num" data-label="Yazılan">${enr}</td>
-      <td class="num" data-label="Doluluk">${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
+      <td class="num" data-label="Kont.">${formatInt(cap)}</td>
+      <td class="num" data-label="Yazılan">${formatInt(enr)}</td>
+      <td class="num" data-label="Doluluk">${cap ? `${formatInt(enr)}/${formatInt(cap)} · ` : ''}${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
   }, { append });
 
   if (rows) {

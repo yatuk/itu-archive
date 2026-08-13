@@ -1169,6 +1169,9 @@ body.modal-open { overflow: hidden; }
   #erows td.when { white-space: normal; }
 }
 
+/* P2-17: tüm satırlarda yer bilgisi aynı/ilgisizse YER kolonu gizlenir. */
+#etable.hide-yer .yer-col { display: none; }
+
 .p-backup { display: block; color: var(--amber); font-size: 11px; margin-top: 1px; }
 .p-backup-note { color: var(--amber); font-size: 12px; margin: 6px 0; }
 

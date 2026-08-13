@@ -149,6 +149,7 @@ type Builder struct {
 	root    string // dataRoot — verinin okunduğu kök (her zaman docs/)
 	outRoot string // sayfaların yazıldığı kök (docs/ veya docs/en/)
 	l       lang
+	version string // asset önbellek kırma: ?v=<kısa commit> (P2-16)
 	index   model.SiteIndex
 	aggs    map[string]*branchAgg
 	courses map[string]*histCourse
@@ -227,14 +228,14 @@ type termRow struct {
 	meta model.TermMeta
 }
 
-func New(dataRoot, langCode string) *Builder {
+func New(dataRoot, langCode, version string) *Builder {
 	l := langTR
 	outRoot := dataRoot
 	if langCode == "en" {
 		outRoot = filepath.Join(dataRoot, "en")
 		l = langEN
 	}
-	return &Builder{root: dataRoot, outRoot: outRoot, l: l}
+	return &Builder{root: dataRoot, outRoot: outRoot, l: l, version: version}
 }
 
 // Generate, dizinde biriken geçmiş sayfaları da temizleyen ana üreticidir.
@@ -597,7 +598,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <link rel="canonical" href="{{.Canonical}}">
 {{if .AltURL}}<link rel="alternate" hreflang="{{.AltLang}}" href="{{.AltURL}}">{{end}}
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={{.AssetV}}">
 <link rel="icon" href="/favicon.png" type="image/png">
 {{.JSONLD}}
 </head>
@@ -635,6 +636,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 type pageData struct {
 	Title, Description, Canonical, Scraped string
 	AltURL, AltLang                        string
+	AssetV                                 string // asset önbellek kırma (?v=)
 	Content                                template.HTML
 	JSONLD                                 template.HTML
 	Lang                                   lang
@@ -704,7 +706,7 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 	return pageTmpl.Execute(f, pageData{
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
-		AltURL: altURL, AltLang: altLang, Lang: b.l,
+		AltURL: altURL, AltLang: altLang, AssetV: b.version, Lang: b.l,
 	})
 }
 

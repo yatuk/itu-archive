@@ -13,8 +13,15 @@ import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
 import { examToIcs } from '../views/exams.js';
 import { topByCount } from '../views/history.js';
-import { icsText, hashShort, foldLine } from './utils.js';
+import { icsText, hashShort, foldLine, formatInt } from './utils.js';
 import * as fav from './favorites.js';
+
+test('formatInt binlik ayracı nokta olarak koyar', () => {
+  assert.equal(formatInt(7669), '7.669');
+  assert.equal(formatInt(60), '60');
+  assert.equal(formatInt(0), '0');
+  assert.equal(formatInt(1234567), '1.234.567');
+});
 
 test('fold Türkçe karakterleri ASCII katar', () => {
   assert.equal(fold('İTÜ Mühendislik ŞŞ ĞĞ'), 'itu muhendislik ss gg');

@@ -174,18 +174,20 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	return label, slug, nil
 }
 
-// takvimTürleri, takvimadi parametresi → tür adı. 0, tüm tabloların birleşik
-// görünümüdür (geriye uyumlu, mevcut calendar/<yearId>.json).
+// takvimTürleri, takvimadi parametresi → (slug, görünür ad). slug dizin adıdır
+// (ASCII, yol-güvenli — Türkçe/`/` dizin yapısını kırıyordu); label kullanıcıya
+// gösterilir. 0, tüm tabloların birleşik görünümüdür (geriye uyumlu).
 var takvimTürleri = []struct {
-	adi  int
-	name string
+	adi   int
+	slug  string
+	label string
 }{
-	{15, "Lisans"},
-	{16, "Yatay Geçiş / ÇAP / Yandal"},
-	{17, "Önkayıt"},
-	{18, "İngilizce Hazırlık"},
-	{19, "Lisansüstü"},
-	{20, "II. Öğretim Lisansüstü"},
+	{15, "lisans", "Lisans"},
+	{16, "yatay-cap-yandal", "Yatay Geçiş / ÇAP / Yandal"},
+	{17, "onkayit", "Önkayıt"},
+	{18, "hazirlik", "İngilizce Hazırlık"},
+	{19, "lisansustu", "Lisansüstü"},
+	{20, "ikinci-ogretim-lisansustu", "II. Öğretim Lisansüstü"},
 }
 
 func scrapeCalendar(ctx context.Context, f *fetch.Client, st *store.Store) error {
@@ -204,14 +206,14 @@ func scrapeCalendar(ctx context.Context, f *fetch.Client, st *store.Store) error
 		if err := st.WriteJSON(all, "data", "calendar", y.ID+".json"); err != nil {
 			return err
 		}
-		// Altı tür ayrı dosyalarda: calendar/<tür>/<yearId>.json.
+		// Altı tür ayrı dosyalarda: calendar/<slug>/<yearId>.json.
 		for _, tt := range takvimTürleri {
 			cal, err := tc.Fetch(ctx, y, tt.adi)
 			if err != nil {
 				return err
 			}
-			cal.Type = tt.name
-			if err := st.WriteJSON(cal, "data", "calendar", tt.name, y.ID+".json"); err != nil {
+			cal.Type = tt.label
+			if err := st.WriteJSON(cal, "data", "calendar", tt.slug, y.ID+".json"); err != nil {
 				return err
 			}
 		}

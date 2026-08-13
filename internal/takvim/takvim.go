@@ -106,6 +106,11 @@ func (c *Client) Fetch(ctx context.Context, y Year, takvimadi int) (*model.Calen
 				Date:      cs[1],
 				Remaining: cs[2],
 			}
+			// Tablo içindeki ikincil başlık satırları ("Bahar Dönemi | Tarih |
+			// Kalan Gün") etkinlik değildir — tür sayfalarında bunlar tekrarlanır.
+			if HeaderDate(ev.Date) {
+				continue
+			}
 			// Makinece okunur ISO tarihi; çözümlenemeyen tarihte boş kalır
 			// (frontend yine de Türkçe `date`'i ayrıştırır).
 			if start, end, ok := ParseTRRange(ev.Date); ok {

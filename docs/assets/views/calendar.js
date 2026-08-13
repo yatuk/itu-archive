@@ -7,9 +7,16 @@ import { initReveal } from '../core/reveal.js';
 
 let inited = false;
 
-// Takvim türü seçenekleri — scraper'ın yazdığı calendar/<tür>/<yearId>.json ile
-// eşleşir (Faz 3C: lisans, yatay-ÇAP, önkayıt, hazırlık, lisansüstü, II. öğretim).
-const CAL_TYPES = ['Lisans', 'Yatay Geçiş / ÇAP / Yandal', 'Önkayıt', 'İngilizce Hazırlık', 'Lisansüstü', 'II. Öğretim Lisansüstü'];
+// Takvim türü seçenekleri — scraper'ın yazdığı calendar/<slug>/<yearId>.json ile
+// eşleşir (Faz 3C). slug yol-güvenli dizin adıdır; label seçicide görünür.
+const CAL_TYPES = [
+  { slug: 'lisans', label: 'Lisans' },
+  { slug: 'yatay-cap-yandal', label: 'Yatay Geçiş / ÇAP / Yandal' },
+  { slug: 'onkayit', label: 'Önkayıt' },
+  { slug: 'hazirlik', label: 'İngilizce Hazırlık' },
+  { slug: 'lisansustu', label: 'Lisansüstü' },
+  { slug: 'ikinci-ogretim-lisansustu', label: 'II. Öğretim Lisansüstü' },
+];
 
 export function initCalendar() {
   if (inited) return;
@@ -19,7 +26,7 @@ export function initCalendar() {
   const ics = $('#cal-ics');
   if (ics) ics.addEventListener('click', exportICS);
   $('#f-caltype').innerHTML = '<option value="">tümü</option>' +
-    CAL_TYPES.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
+    CAL_TYPES.map((t) => `<option value="${esc(t.slug)}">${esc(t.label)}</option>`).join('');
   inited = true;
 }
 
@@ -31,9 +38,9 @@ export function onShow() {
 export async function loadCalendar(yearId, type) {
   $('#calendar').innerHTML = '<p class="empty">yükleniyor…</p>';
   try {
-    // Tür seçildiyse türe özgü dosya; yoksa birleşik (geriye uyumlu).
+    // Tür seçildiyse türe özgü dosya (slug yol-güvenli); yoksa birleşik (geriye uyumlu).
     const path = type
-      ? `data/calendar/${encodeURIComponent(type)}/${yearId}.json`
+      ? `data/calendar/${type}/${yearId}.json`
       : `data/calendar/${yearId}.json`;
     state.calendar = await getJSON(path);
   } catch (e) {

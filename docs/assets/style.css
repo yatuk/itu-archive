@@ -160,6 +160,13 @@
 [data-theme="sade"] .req-op { letter-spacing: .08em; }
 [data-theme="sade"] .p-crnstrip-label { letter-spacing: .05em; }
 [data-theme="sade"] .tt-chip { letter-spacing: .02em; }
+/* Terminal "// " başlık önekleri sade'de kalkar (.h-disc ile tutarlı); Hakkında
+   başlıklarının .2em harf aralığı da geniş-tracking düzeltmesiyle sakinleşir. */
+[data-theme="sade"] .mh::before,
+[data-theme="sade"] .prose h2::before { content: ""; }
+[data-theme="sade"] .prose h2 { letter-spacing: .05em; }
+/* Izgara blok saat metni 9px — sade'de okunurluk için bir kademe büyür. */
+[data-theme="sade"] .tt-block .tt-time { font-size: 10px; }
 
 /* Açık temada arama alanları tekil görünüm: ">" terminal öneki yerine büyüteç,
    kutu görünüm, kenarlık ≥3:1, odakta 2px halka. Fosfor teması ">" önekini korur. */

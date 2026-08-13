@@ -1725,7 +1725,7 @@ body.modal-open { overflow: hidden; }
 }
 .dp-code:hover { text-decoration: underline; }
 .dp-name { color: var(--fg); flex: 1 1 160px; }
-.dp-meta { color: var(--dim); font-size: 12px; white-space: nowrap; }
+.dp-meta { color: var(--dim); font-size: 12px; white-space: normal; overflow-wrap: anywhere; }
 
 .dp-badge {
   font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
@@ -1734,7 +1734,7 @@ body.modal-open { overflow: hidden; }
 .dp-req { color: var(--acid); border-color: var(--acid); }
 .dp-type-b { color: var(--amber); border-color: var(--amber); }
 
-.dp-status { font-size: 12px; white-space: nowrap; }
+.dp-status { font-size: 12px; white-space: normal; overflow-wrap: anywhere; }
 .dp-status.open { color: var(--acid); }
 .dp-status.closed { color: var(--dim); }
 .dp-status.missing { color: var(--dimmer); }
@@ -1751,10 +1751,10 @@ body.modal-open { overflow: hidden; }
 }
 .dp-sections.has-instr { grid-template-columns: 84px 1fr 1.2fr 1.1fr auto; }
 .dp-section { display: contents; }
-.dp-crn { color: var(--dimmer); font-family: var(--mono); }
+.dp-crn { color: var(--dimmer); font-family: var(--mono); overflow-wrap: anywhere; }
 .dp-crn-count { color: var(--dim); font-size: 11px; margin-left: 4px; white-space: nowrap; }
 .dp-instr { color: var(--dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.dp-when { color: var(--dim); }
+.dp-when { color: var(--dim); overflow-wrap: anywhere; min-width: 0; }
 .dp-fill { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
 .dp-full { color: var(--red); font-size: 11px; }
 .dp-actions { display: inline-flex; gap: 8px; justify-content: flex-end; }

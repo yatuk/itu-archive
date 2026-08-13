@@ -251,7 +251,10 @@ function dersplanimParams() {
   if (sems.length) p.set('fsems', sems.join(','));
   const types = [...document.querySelectorAll('#dp-types .on')].map((x) => x.dataset.type);
   if (types.length) p.set('ftypes', types.join(','));
-  if (state.index && termSlug && termSlug !== state.index.currentSlug) p.set('term', termSlug);
+  // Ders Planım'ın kendi dönem seçici (#dp-term) vardır; courses'in state.termSlug'u
+  // değil. Henüz render edilmemişse (?.value undefined) term URL'e yazılmaz.
+  const dpTerm = $('#dp-term')?.value || '';
+  if (state.index && dpTerm && dpTerm !== state.index.currentSlug) p.set('term', dpTerm);
   return p;
 }
 

@@ -13,6 +13,18 @@ export function toast(msg, opts = {}) {
   const el = document.createElement('div');
   el.className = 'toast' + (opts.kind ? ` toast-${opts.kind}` : '');
   el.textContent = msg;
+  // İsteğe bağlı aksiyon butonu ("geri al" gibi) — toast ömrü boyunca canlı.
+  if (opts.action) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'toast-action';
+    btn.textContent = opts.action.label;
+    btn.addEventListener('click', () => {
+      opts.action.fn();
+      el.remove();
+    });
+    el.appendChild(btn);
+  }
   container.appendChild(el);
   setTimeout(() => el.classList.add('out'), 2600);
   setTimeout(() => el.remove(), 3100);

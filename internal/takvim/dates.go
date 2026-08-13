@@ -110,10 +110,23 @@ func ParseTRRange(s string) (start, end string, ok bool) {
 
 func iso(d time.Time) string { return d.Format("2006-01-02") }
 
+// HeaderDate, kaynak tablonun başlık satırının tarih hücresidir. Eski dökümlerde
+// başlık satırı ("Bahar Dönemi | Tarih | Kalan Gün") etkinlik olarak kazınmıştı;
+// kazıyıcı artık atlıyor ama backfill bu kalıntıları da temizler, validate de
+// temiz veri zorlar.
+func HeaderDate(s string) bool {
+	switch strings.TrimSpace(s) {
+	case "Tarih", "TARİH", "Tarihler", "Tarih Aralığı":
+		return true
+	}
+	return false
+}
+
 // AddISODates, bir takvim JSON'undaki her etkinliğe start/end ekleyerek geri döner.
 // Mevcut `date` alanından hesaplar; OBS'a istek atmaz. Eski dosyaların backfill'i
-// (start/end omitempty olduğundan geriye uyumlu). Çözümlenemeyen tarihlerde alan
-// boş kalır — içerik kaybedilmez. Çözümlenemez JSON yapısal hatadır.
+// (start/end omitempty olduğundan geriye uyumlu). Başlık satırı kalıntısı
+// etkinlikler (date="Tarih") çıkarılır — görünümde "Bahar Dönemi | Tarih | Kalan
+// Gün" satırı kalmaz. Çözümlenemez JSON yapısal hatadır.
 func AddISODates(in []byte) ([]byte, error) {
 	var raw struct {
 		Year      string `json:"year"`
@@ -131,18 +144,21 @@ func AddISODates(in []byte) ([]byte, error) {
 	if err := json.Unmarshal(in, &raw); err != nil {
 		return nil, err
 	}
-	changed := false
+	kept := raw.Events[:0]
 	for i := range raw.Events {
-		ev := &raw.Events[i]
+		ev := raw.Events[i]
+		if HeaderDate(ev.Date) {
+			continue // başlık satırı kalıntısı — etkinlik değil
+		}
 		if ev.Start == "" && ev.End == "" {
-			start, end, ok := ParseTRRange(ev.Date)
-			if ok {
+			if start, end, ok := ParseTRRange(ev.Date); ok {
 				ev.Start, ev.End = start, end
-				changed = true
 			}
 		}
+		kept = append(kept, ev)
 	}
-	if !changed {
+	raw.Events = kept
+	if len(kept) == 0 {
 		return in, nil
 	}
 	var buf bytes.Buffer

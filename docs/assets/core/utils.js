@@ -46,6 +46,31 @@ export function fold(s) {
   return String(s).replace(/[İIıŞşĞğÜüÖöÇçÂâÎîÛû]/g, (c) => FOLD[c]).toLowerCase();
 }
 
+// Arama normalizasyonu — Dersler ve Geçmiş sekmelerinde ORTAK. Türkçe katlayıp
+// tüm boşlukları siler: "BLG 102E", "BLG102E" ve "BLG  102  E" aynı anahtarı
+// ("blg102e") üretir. Boşluksuz kod/yazım farkını görmezden gelir.
+export function normSearch(s) {
+  return fold(String(s)).replace(/\s+/g, '');
+}
+
+// Türkçe sayı biçimi: ondalık ayracı virgül; tam sayıda ",0" yazılmaz.
+// 15.0 → "15", 12.5 → "12,5", 3 → "3".
+export function trNum(n) {
+  if (n == null || isNaN(Number(n))) return '';
+  const s = String(Number(n)).replace('.', ',');
+  return s.endsWith(',0') ? s.slice(0, -2) : s;
+}
+
+// Arama eşleştirmesi: normalize edilmiş `hay` içinde `term`'i ara. Kod benzeri
+// terimlerde İngilizce-E soneki yok sayılır ("BLG 102E" hem "BLG 102" hem
+// "BLG 102E"yi bulur). Ters yön zaten eşleşir: boşluk silindiği için
+// "blg102" ⊂ "blg102e…". Saf fonksiyon — test edilebilir.
+export function searchMatch(term, hay) {
+  if (hay.includes(term)) return true;
+  if (/\d[e]$/.test(term) && hay.includes(term.slice(0, -1))) return true;
+  return false;
+}
+
 export function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

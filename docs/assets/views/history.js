@@ -1,7 +1,7 @@
 // Geçmiş görünümü: 27 dönemin birleştirilmiş kaydında ders/hoca arama, ders
 // bazlı dönem geçmişi (trend grafiği dahil) ve hoca bazlı ders listesi.
 
-import { $, getJSON, esc, fold, debounce, termLabel, setStatus } from '../core/utils.js';
+import { $, getJSON, esc, normSearch, searchMatch, debounce, termLabel, setStatus } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { fillBar, trendChart } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
@@ -27,11 +27,12 @@ async function loadHistory() {
       getJSON('data/history/codes.json'),
       getJSON('data/history/names.json'),
     ]);
-    // Arama metinlerini bir kez katlayıp saklıyoruz.
+    // Arama metinlerini bir kez katlayıp boşluksuz anahtarlara indiriyoruz
+    // (Dersler sekmesiyle ortak normSearch — "BLG 102E" ≡ "BLG102E").
     state.hist = {
       codes, names,
-      codeHay: codes.map((c) => fold(`${c[0]} ${c[1]}`)),
-      nameHay: names.map((n) => fold(n[0])),
+      codeHay: codes.map((c) => normSearch(`${c[0]} ${c[1]}`)),
+      nameHay: names.map((n) => normSearch(n[0])),
     };
   } catch (e) {
     setStatus($('#hresultline'), `geçmiş verisi yüklenemedi (${e.message})`, { error: true });
@@ -42,7 +43,7 @@ async function loadHistory() {
 export async function searchHistory() {
   await loadHistory();
   if (!state.hist) return;
-  const q = fold($('#hq').value.trim());
+  const q = normSearch($('#hq').value.trim());
   const box = $('#hmatches');
   $('#hdetail').innerHTML = '';
 
@@ -55,9 +56,9 @@ export async function searchHistory() {
   }
 
   const courses = [];
-  state.hist.codeHay.forEach((h, i) => { if (courses.length < 40 && h.includes(q)) courses.push(state.hist.codes[i]); });
+  state.hist.codeHay.forEach((h, i) => { if (courses.length < 40 && searchMatch(q, h)) courses.push(state.hist.codes[i]); });
   const people = [];
-  state.hist.nameHay.forEach((h, i) => { if (people.length < 40 && h.includes(q)) people.push(state.hist.names[i]); });
+  state.hist.nameHay.forEach((h, i) => { if (people.length < 40 && searchMatch(q, h)) people.push(state.hist.names[i]); });
 
   $('#hresultline').innerHTML = `<b>${courses.length}</b> ders, <b>${people.length}</b> öğretim üyesi eşleşti`;
 

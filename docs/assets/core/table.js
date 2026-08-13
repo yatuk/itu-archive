@@ -4,8 +4,10 @@
 //
 //   fillRows(tbody, items, makeRow, { empty, colspan, append })
 //
-// makeRow(item) -> satırın <tr> iç HTML'i. Dönen DocumentFragment üzerinden
-// satır sonrası event listener bağlanabilir (örn. detay satırı açma).
+// makeRow(item) -> satırın <tr> iç HTML'i. Dönen değer oluşturulan <tr>
+// elemanlarının dizisidir; çağıran bunlar üzerinden event listener bağlar
+// (örn. detay satırı açma). NOT: DocumentFragment değil — appendChild çocukları
+// tbody'ye taşır, fragment sonrasında boşalır; o yüzden tr'ler döndürülür.
 
 import { esc } from './utils.js';
 
@@ -24,6 +26,8 @@ export function fillRows(tbody, items, makeRow, { empty = 'kayıt yok', colspan 
     tr.innerHTML = makeRow(item);
     frag.appendChild(tr);
   }
+  // appendChild çocukları taşır; listener bağlamak için tr'leri önce yakala.
+  const trs = Array.from(frag.children);
   tbody.appendChild(frag);
-  return frag;
+  return trs;
 }

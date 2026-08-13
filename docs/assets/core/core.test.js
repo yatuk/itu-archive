@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { fold, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
+import { fold, normSearch, searchMatch, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
@@ -18,6 +18,40 @@ test('fold Türkçe karakterleri ASCII katar', () => {
   assert.equal(fold('İTÜ Mühendislik ŞŞ ĞĞ'), 'itu muhendislik ss gg');
   assert.equal(fold('BIL 100E'), 'bil 100e');
   assert.equal(fold(''), '');
+});
+
+test('normSearch boşluğu kaldırır — iki sekmede ortak arama anahtarı', () => {
+  // "BLG 102E", "BLG102E" ve "BLG  102  E" aynı anahtarı üretmeli.
+  assert.equal(normSearch('BLG 102E'), 'blg102e');
+  assert.equal(normSearch('BLG102E'), 'blg102e');
+  assert.equal(normSearch('BLG  102  E'), 'blg102e');
+  // Türkçe karakterler de katlanır (fold Ş→s ASCII yapar).
+  assert.equal(normSearch('Mühendislik  Gülşen'), 'muhendislikgulsen');
+  assert.equal(normSearch(''), '');
+});
+
+test('searchMatch boşluksuz ve E-soneki farkını görmezden gelir', () => {
+  // Hay normalizasyonlu gelir (normSearch): boşluksuz yazım eşleşir.
+  assert.equal(searchMatch('blg102e', 'blg102edoğaldilişleme'), true);
+  assert.equal(searchMatch('blg102e', 'blg102e'), true);
+  // E-soneki: "BLG 102E" araması "BLG 102" dersini de bulur.
+  assert.equal(searchMatch('blg102e', 'blg102'), true);
+  assert.equal(searchMatch('blg102', 'blg102e'), true); // ters yön (boşluksuz hay alt-string)
+  // E'siz kelime için E düşürme yok ("blg" → "blg" zaten; "eee" sonu e işe karışmaz).
+  assert.equal(searchMatch('blg', 'blg102e'), true);
+  // İlgisiz hay'da eşleşme yok.
+  assert.equal(searchMatch('blg102e', 'turb101'), false);
+  assert.equal(searchMatch('blg102', 'blg100'), false);
+});
+
+test('trNum Türkçe sayı biçimi: virgül, tam sayıda ,0 yok', () => {
+  assert.equal(trNum(15), '15');
+  assert.equal(trNum(15.0), '15');
+  assert.equal(trNum(12.5), '12,5');
+  assert.equal(trNum(3), '3');
+  assert.equal(trNum(3.5), '3,5');
+  assert.equal(trNum(null), '');
+  assert.equal(trNum(undefined), '');
 });
 
 test('termLabel dönem slug kısaltır', () => {

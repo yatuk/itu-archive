@@ -5,12 +5,13 @@
 // kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
 // Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, parseTurkishDate } from '../core/utils.js';
+import { $, getJSON, esc, fold, debounce, downloadCSV, parseTurkishDate, trNum } from '../core/utils.js';
 import { state, indexReady } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { buildTimetable, openDetail } from './courses.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
+import { confirmDialog, promptDialog } from '../core/dialog.js';
 
 let term = null;
 let rows = [];
@@ -91,7 +92,20 @@ export function initProgram() {
   $('#p-prog-copy').addEventListener('click', progCopy);
   $('#p-prog-del').addEventListener('click', progDel);
   $('#p-prog-rename').addEventListener('click', progRename);
-  $('#p-clear').addEventListener('click', () => { setProgItems([]); renderProgSelector(); toast('Program temizlendi'); });
+  $('#p-clear').addEventListener('click', () => {
+    // Tek tıkla program silinmesin — onay iste (Critique P2).
+    confirmDialog({
+      title: 'Programı temizle',
+      message: `${progItems().length} şube silinecek. Geri alınamaz.`,
+      okLabel: 'Temizle',
+      danger: true,
+    }).then((yes) => {
+      if (!yes) return;
+      setProgItems([]);
+      renderProgSelector();
+      toast('Program temizlendi');
+    });
+  });
   $('#p-csv').addEventListener('click', exportCSV);
   $('#p-share').addEventListener('click', share);
   $('#p-obs').addEventListener('click', (e) => { e.preventDefault(); showOBS(); });
@@ -132,23 +146,37 @@ function progDel() {
   if (ps.programs.length <= 1) { toast('En az bir program kalmalı', { kind: 'warn' }); return; }
   const i = ps.programs.findIndex((x) => x.id === ps.active);
   if (i < 0) return;
-  if (!confirm(`"${ps.programs[i].name}" silinsin mi?`)) return;
-  ps.programs.splice(i, 1);
-  ps.active = ps.programs[0].id;
-  savePrograms(ps);
-  renderProgSelector();
-  toast('Program silindi');
+  // Native confirm yerine stillenmiş onay (Critique P2 — tema dışı diyalog yok).
+  confirmDialog({
+    title: 'Programı sil',
+    message: `"${ps.programs[i].name}" silinsin mi?`,
+    okLabel: 'Sil',
+    danger: true,
+  }).then((yes) => {
+    if (!yes) return;
+    ps.programs.splice(i, 1);
+    ps.active = ps.programs[0].id;
+    savePrograms(ps);
+    renderProgSelector();
+    toast('Program silindi');
+  });
 }
 function progRename() {
   const ps = loadPrograms();
   const p = ps.programs.find((x) => x.id === ps.active);
   if (!p) return;
-  const name = prompt('Yeni program adı:', p.name);
-  if (!name || !name.trim()) return;
-  p.name = name.trim();
-  savePrograms(ps);
-  renderProgSelector();
-  toast('Program yeniden adlandırıldı');
+  promptDialog({
+    title: 'Programı yeniden adlandır',
+    message: 'Yeni program adı:',
+    value: p.name,
+    validate: (v) => v.trim().length > 0,
+  }).then((name) => {
+    if (name == null) return;
+    p.name = name.trim();
+    savePrograms(ps);
+    renderProgSelector();
+    toast('Program yeniden adlandırıldı');
+  });
 }
 
 // --- ders ekleme (bölüm → ders → CRN zinciri) ---
@@ -311,7 +339,37 @@ function render() {
   renderGrid(items.map((i) => i.row));
   renderSummary(items);
   updateCredits(items);
+  renderCredits(items); // satır başına "3 kr · 6 AKTS" (katalog asenkron)
   updateBookmarklet(items);
+}
+
+// Seçili şube satırlarının altına küçük punto kredi/AKTS: "3 kr · 6 AKTS".
+// Katalog verisi olmayan branşlar sessizce atlanır.
+async function renderCredits(items) {
+  const box = $('#p-list');
+  if (!items.length) return;
+  const cache = new Map();
+  for (let i = 0; i < items.length; i++) {
+    const { row } = items[i];
+    const branch = row[3];
+    let map = cache.get(branch);
+    if (map === undefined) {
+      map = await getJSON(`data/catalog/${branch}.json`).catch(() => null);
+      cache.set(branch, map);
+    }
+    const c = map && map[row[1]] && map[row[1]].credits;
+    const item = box.children[i];
+    if (!item || !c) continue;
+    const parts = [];
+    if (c.local != null) parts.push(`${trNum(c.local)} kr`);
+    if (c.ects) parts.push(`${trNum(c.ects)} AKTS`);
+    if (!parts.length) continue;
+    const small = document.createElement('small');
+    small.className = 'p-cred';
+    small.textContent = parts.join(' · ');
+    const code = item.querySelector('.p-code');
+    if (code && !code.querySelector('.p-cred')) code.appendChild(small);
+  }
 }
 
 function renderCRNStrip(items) {
@@ -391,9 +449,13 @@ function renderList(items) {
       const [br, cr] = b.dataset.key.split('|');
       const row = rows.find((x) => x[3] === br && x[0] === cr);
       if (b.dataset.act === 'remove') {
+        // 8 sn içinde "geri al" ile geri getirilebilir (Critique P2).
+        const before = progItems();
         setProgItems(currentItems().filter((i) => fav.favKeyOf(i.rec.branch, i.rec.crn) !== key).map((i) => i.rec));
-        toast(`${cr} çıkarıldı`);
         render(); renderProgSelector();
+        toast(`${cr} çıkarıldı`, {
+          action: { label: 'geri al', fn: () => { setProgItems(before); render(); renderProgSelector(); } },
+        });
       } else if (b.dataset.act === 'copy') {
         copyText(cr); toast(`CRN ${cr} kopyalandı`);
       } else if (b.dataset.act === 'detail') {
@@ -432,6 +494,16 @@ const colorFor = (() => {
     return map.get(code);
   };
 })();
+
+// Blok zeminine göre okunur yazı rengi: parlak zemin → koyu yazı, koyu zemin →
+// açık yazı (WCAG parlaklık formülü). Blok-yazı kontrastı ≥4.5:1 tutulur.
+function fgFor(hex) {
+  const h = hex.replace('#', '');
+  const [r, g, b] = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
+  const lin = (c) => (c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
+  const L = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+  return L > 0.4 ? '#1e2b23' : '#ffffff';
+}
 
 function renderGrid(itemRows) {
   const wrap = $('#p-grid');
@@ -484,8 +556,9 @@ function renderGrid(itemRows) {
       const left = p.lane * w;
       const conflict = p.laneCount > 1;
       const color = colorFor(p.row[1]);
+      const fg = fgFor(color);
       placedRefs.push(p.row);
-      html += `<button type="button" class="tt-block${conflict ? ' tt-block-conf' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px;--ttc:${color}" title="${esc(p.row[1])} · ${esc(p.row[5])}">
+      html += `<button type="button" class="tt-block${conflict ? ' tt-block-conf' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px;--ttc:${color};--tt-fg:${fg}" title="${esc(p.row[1])} · ${esc(p.row[5])}">
         <span class="tt-time">${fmtMin(p.start)} - ${fmtMin(p.end)}</span>
         <span class="tt-code">${esc(p.row[1])}</span>
         ${conflict ? '<span class="tt-conf-icon" title="Çakışma">⚠</span>' : ''}
@@ -543,18 +616,27 @@ async function loadFinalsNote(items, box) {
 }
 
 function updateCredits(items) {
-  // Kredi verisi arşivde bulunmadığından ders sayısı üzerinden tahmin edilmiyor;
-  // dürüst davranıp bilinmiyor işaretleriz. Gerçek veri geldiğinde hesaplanacak.
+  // Kredi ve AKTS ayrı etiketle: "Kredi 12,5 · AKTS 15". Katalog verisi yoksa
+  // dürüstçe "—" kalır. AKTS 30'u aşınca nötr amber rozet (kırmızı çakışma için).
   const el = $('#p-credits-val');
   const ps = loadPrograms();
   const p = ps.programs.find((x) => x.id === ps.active);
   if (p && p.credits != null) { el.textContent = p.credits; return; }
   el.textContent = items.length ? '—' : '—';
-  // Faz 4.3: AKTS toplamı — katalog verisi geldiyse toplam gösterilir.
   if (!items.length) return;
-  ectsTotal(items).then((r) => {
-    if (!r.known) return; // bu dönem için katalog verisi yoksa eski hal kalır
-    el.textContent = `${r.total.toFixed(1)} AKTS${r.known < r.all ? ` · ${r.known}/${r.all} ders için` : ''}`;
+  creditTotals(items).then((r) => {
+    if (!r.ectsKnown && !r.localKnown) return;
+    const parts = [];
+    if (r.localKnown) parts.push(`Kredi ${trNum(r.local)}${r.localKnown < r.all ? '+' : ''}`);
+    if (r.ectsKnown) parts.push(`AKTS ${trNum(r.ects)}`);
+    let txt = parts.join(' · ');
+    const unkLocal = r.all - r.localKnown;
+    if (unkLocal > 0) txt += ` (${unkLocal} dersin kredisi bilinmiyor)`;
+    if (r.ectsKnown && r.ects > 30) {
+      el.innerHTML = `${esc(txt)} <span class="ects-warn" title="Toplam AKTS 30'u aşıyor">AKTS 30+</span>`;
+    } else {
+      el.textContent = txt;
+    }
   }).catch(() => {});
 }
 
@@ -593,11 +675,12 @@ export function parseTimeRange(t) {
   return [Number(m[1]) * 60 + Number(m[2]), Number(m[3]) * 60 + Number(m[4])];
 }
 
-// AKTS toplamı: seçili şubelerin branş dosyalarından ECTS'leri toplar.
-// Veri gelmemiş branşlar sessizce atlanır — "X/Y ders için" notu dışarıda.
-export async function ectsTotal(items) {
+// Kredi/AKTS toplamları: seçili şubelerin branş dosyalarından yerel kredi ve
+// ECTS'leri ayrı ayrı toplar. Katalogu olmayan branşlar sessizce atlanır;
+// bilinmeyen sayısı (all - known) dışarıda bildirilir. Saf — test edilebilir.
+export async function creditTotals(items) {
   const cache = new Map();
-  let total = 0, known = 0;
+  let local = 0, ects = 0, localKnown = 0, ectsKnown = 0;
   for (const { row } of items) {
     const branch = row[3];
     let map = cache.get(branch);
@@ -606,9 +689,12 @@ export async function ectsTotal(items) {
       cache.set(branch, map);
     }
     const ent = map && map[row[1]];
-    if (ent && ent.credits && ent.credits.ects) { total += ent.credits.ects; known++; }
+    if (ent && ent.credits) {
+      if (ent.credits.local != null) { local += ent.credits.local; localKnown++; }
+      if (ent.credits.ects) { ects += ent.credits.ects; ectsKnown++; }
+    }
   }
-  return { total, known, all: items.length };
+  return { local, localKnown, ects, ectsKnown, all: items.length };
 }
 
 // Dolma hızı notu (Faz 4.4): quota kaydından "geçen sefer X sa sonra doldu".
@@ -724,7 +810,16 @@ function downloadPNG() {
   canvas.height = rect.height * scale;
   const ctx = canvas.getContext('2d');
   ctx.scale(scale, scale);
-  ctx.fillStyle = '#ffffff';
+  // PNG çizimi aktif temanın token'larını kullanır (sabit #fff/#666 olmaz —
+  // koyu temada açık zeminli çıktı sürpriz olmasın).
+  const cs = getComputedStyle(document.documentElement);
+  const v = (n) => cs.getPropertyValue(n).trim();
+  const bg = v('--bg') || '#ffffff';
+  const fg = v('--fg') || '#1e2b23';
+  const dim = v('--dim') || '#4c5f53';
+  const line = v('--line') || '#dde4de';
+  const red = v('--red') || '#ff4f6d';
+  ctx.fillStyle = bg;
   ctx.fillRect(0, 0, rect.width, rect.height);
 
   const t = buildTimetable(items.map((i) => i.row));
@@ -737,20 +832,20 @@ function downloadPNG() {
   const nSlots = t ? t.nSlots : 0;
 
   ctx.font = '11px sans-serif';
-  ctx.fillStyle = '#666';
+  ctx.fillStyle = dim;
   ctx.textAlign = 'center';
   ctx.fillText(fmtMin(t.startSlot), 0, headH + 10);
   TTD.forEach((d, di) => {
-    ctx.fillStyle = '#333';
+    ctx.fillStyle = fg;
     ctx.fillText(d, timeW + dayW * di + dayW / 2, 14);
-    ctx.strokeStyle = '#eee';
+    ctx.strokeStyle = line;
     ctx.beginPath(); ctx.moveTo(timeW + dayW * di, headH); ctx.lineTo(timeW + dayW * di, H); ctx.stroke();
   });
   ctx.beginPath(); ctx.moveTo(timeW, headH); ctx.lineTo(W, headH); ctx.stroke();
 
   for (let si = 0; si <= nSlots; si++) {
     const y = headH + si * ROW;
-    ctx.strokeStyle = si % 2 === 0 ? '#ddd' : '#f0f0f0';
+    ctx.strokeStyle = line;
     ctx.beginPath(); ctx.moveTo(timeW, y); ctx.lineTo(W, y); ctx.stroke();
   }
 
@@ -786,11 +881,11 @@ function downloadPNG() {
       ctx.fillRect(x + 1, top + 1, w - 2, height - 2);
       ctx.globalAlpha = 1;
       if (p.laneCount > 1) {
-        ctx.strokeStyle = '#e02020';
+        ctx.strokeStyle = red;
         ctx.lineWidth = 2;
         ctx.strokeRect(x + 1, top + 1, w - 2, height - 2);
       }
-      ctx.fillStyle = '#fff';
+      ctx.fillStyle = fgFor(color); // blok parlaklığına göre okunur metin
       ctx.font = 'bold 9px sans-serif';
       ctx.fillText(p.row[1], x + 4, top + 12);
       ctx.font = '8px sans-serif';
@@ -828,10 +923,14 @@ function copyText(txt) {
 // --- yedek CRN ---
 
 function setBackup(branch, crn) {
-  const input = prompt('Yedek CRN girin (aynı ders koduna ait olmalı):');
-  if (!input || !input.trim()) return;
-  const backup = input.trim();
-  const all = loadPrograms();
+  promptDialog({
+    title: 'Yedek CRN',
+    message: 'Yedek CRN girin (aynı ders koduna ait olmalı):',
+    validate: (v) => v.trim().length > 0,
+  }).then((input) => {
+    if (!input) return;
+    const backup = input.trim();
+    const all = loadPrograms();
   const p = all.programs.find((x) => x.id === all.active);
   if (!p) return;
   const idx = p.items.findIndex((f) => f.term === term && f.branch === branch && f.crn === crn);
@@ -845,6 +944,7 @@ function setBackup(branch, crn) {
   savePrograms(all);
   toast(`Yedek CRN ${backup} eklendi`);
   loadTerm(term);
+  });
 }
 
 function removeBackup(branch, crn) {

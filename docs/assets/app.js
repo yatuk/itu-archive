@@ -46,6 +46,9 @@ async function boot() {
   $('#stat-term').textContent = ix.currentTerm || '—';
   $('#stat-scraped').textContent = fmtDate(ix.scrapedAt);
   $('#stat-terms').textContent = `${ix.terms.filter((t) => !t.missing).length} dönem · ${ix.calendars.length} takvim yılı`;
+  // Geçmiş sekmesi notundaki dönem sayısı (statik kopya bayatlamasın).
+  const histCount = $('#hist-note-count');
+  if (histCount) histCount.textContent = ix.terms.length;
   $('#foot-build').textContent = `${I18N.t('footBuild')} ${fmtDate(ix.scrapedAt)}`;
 
   // Dönem seçici (dersler görünümüne ait) + paylaşılabilir URL durumu.
@@ -72,7 +75,8 @@ async function boot() {
   initCalendar();
   initExams();
   initHistory();
-  initOnboarding();
+  enhanceSearchInputs();
+  wireSearchShortcut();
 
   // İlk sekme artık veri hazırken açılır (paylaşılan #program/#takvim/#sinavlar
   // bağlantıları bu sayede doğru çalışır).
@@ -252,34 +256,44 @@ window.addEventListener('itu:goto-courses', (e) => {
   applyFilters();
 });
 
-// İlk ziyarette tek satırlık yönlendirme — kapatılınca localStorage'a yazılır,
-// bir daha çıkmaz. Örnek aramalar ilgili sekmeye geçip aramayı doldurur.
-function initOnboarding() {
-  const el = $('#onboard');
-  if (!el) return;
-  try { if (localStorage.getItem('itu-onboard')) return; } catch (e) {}
-  el.hidden = false;
-  $('#onboard-close').addEventListener('click', () => {
-    el.hidden = true;
-    try { localStorage.setItem('itu-onboard', '1'); } catch (e) {}
-  });
-  el.querySelectorAll('[data-onboard-view]').forEach((b) => {
-    b.addEventListener('click', () => {
-      el.hidden = true;
-      try { localStorage.setItem('itu-onboard', '1'); } catch (e) {}
-      const view = b.dataset.onboardView;
-      const q = b.dataset.onboardQ;
-      if (view === 'gecmis') {
-        $('#hq').value = q;
-        showView('gecmis', true);
-        historyShow();
-        searchHistory();
-      } else {
-        $('#q').value = q;
-        showView('dersler', true);
-        applyFilters();
-      }
+// Tüm arama alanlarına ortak iyileştirme: içerik varken sağda × temizleme
+// düğmesi + Esc ile temizleme (Critique: arama görünümü tekil).
+function enhanceSearchInputs() {
+  for (const input of document.querySelectorAll('.query input, .pg-search')) {
+    const wrap = input.closest('.query');
+    if (!wrap) continue;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'search-clear';
+    btn.setAttribute('aria-label', 'Aramayı temizle');
+    btn.textContent = '×';
+    wrap.appendChild(btn);
+    const sync = () => { btn.hidden = input.value.length === 0; };
+    input.addEventListener('input', sync);
+    sync();
+    btn.addEventListener('click', () => {
+      input.value = '';
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+      input.focus();
+      sync();
     });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && input.value) btn.click();
+    });
+  }
+}
+
+// Global arama kısayolu: "/" veya Ctrl/Cmd+K → Dersler arama kutusuna odaklan.
+// (Critique-Alex: güçlü kullanıcı 8 sekme geçmeden aramaya atlayabilsin.)
+function wireSearchShortcut() {
+  document.addEventListener('keydown', (e) => {
+    if (e.target.closest('input, select, textarea')) return;
+    if ((e.key === '/' || (e.key.toLowerCase() === 'k' && (e.ctrlKey || e.metaKey)))) {
+      e.preventDefault();
+      const q = $('#q');
+      if (q) { showView('dersler', true); q.focus(); q.select(); }
+    }
   });
 }
 

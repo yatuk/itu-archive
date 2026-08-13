@@ -6,7 +6,7 @@
 // trendi + dönem tablosu). Ders o dönem açık değilse neden açıklanır, geçmiş
 // yine gösterilir — sessiz boşluk olmaz.
 
-import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName } from './utils.js';
+import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum } from './utils.js';
 import { state } from './store.js';
 import { fillBar, trendChart } from './chart.js';
 
@@ -223,9 +223,9 @@ function catalogHtml(cat) {
   if (!cat) return '';
   const c = cat.credits || {};
   const parts = [];
-  if (c.theory || c.practice || c.lab) parts.push(`${c.theory || 0}+${c.practice || 0}+${c.lab || 0} (T+U+L)`);
-  if (c.local) parts.push(`yerel ${c.local}`);
-  if (c.ects) parts.push(`AKTS ${c.ects}`);
+  if (c.theory || c.practice || c.lab) parts.push(`${c.theory || 0}+${c.practice || 0}+${c.lab || 0}`);
+  if (c.local != null) parts.push(`yerel ${trNum(c.local)}`);
+  if (c.ects) parts.push(`AKTS ${trNum(c.ects)}`);
   const details = (title, open, body) => `<details class="d-cat-details"${open ? ' open' : ''}><summary>${title}</summary>${body}</details>`;
   const list = (items, tag) => items.map((x) => `<li>${esc(x)}</li>`).join('');
   // Faz 4.2: vize haftası göstergesi — "Hafta N — ... Ara Sınav ..." satırlarını

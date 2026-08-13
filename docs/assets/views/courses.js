@@ -6,7 +6,7 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, setStatus, fillMeasured } from '../core/utils.js';
+import { $, getJSON, esc, fold, normSearch, searchMatch, debounce, downloadCSV, setStatus, fillMeasured } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
@@ -31,6 +31,14 @@ export function initCourses() {
   $('#more').addEventListener('click', () => renderRows(true));
   $('#csv').addEventListener('click', exportCSV);
   $('#tt-toggle').addEventListener('click', toggleTimetable);
+  // Filtre duvarı: gelişmiş filtreler disclosure içinde (Critique P1 — varsayılan
+  // görünümde yalnızca birincil filtreler görünür).
+  $('#f-more-toggle').addEventListener('click', () => {
+    const more = $('#filters-more');
+    const open = more.hidden;
+    more.hidden = !open;
+    $('#f-more-toggle').setAttribute('aria-expanded', String(open));
+  });
   $('#sel-all').addEventListener('change', () => {
     const on = $('#sel-all').checked;
     for (const r of state.filtered) {
@@ -66,7 +74,7 @@ export async function loadTerm(slug) {
     loadQuota(slug); // dolma sürelerini bu dönem için arka planda yükle
     // Aramayı bir kez katlanmış metin üzerinden yapıyoruz: her tuş vuruşunda
     // 4000 satırı yeniden normalize etmenin anlamı yok.
-    state.hay = rows.map((r) => fold(`${r[0]} ${r[1]} ${r[2]} ${r[4]}`));
+    state.hay = rows.map((r) => normSearch(`${r[0]} ${r[1]} ${r[2]} ${r[4]}`));
 
     const branchSel = $('#f-branch');
     const keep = branchSel.value;
@@ -121,7 +129,9 @@ export function applyFilters() {
   const program = $('#f-program').value;
   const code = $('#f-code').value.trim().toLowerCase();
   const openOnly = $('#f-open').checked;
-  const terms = q ? q.split(/\s+/) : [];
+  // Arama terimleri boşluğa göre bölünür, sonra ortak normalizasyonla boşluksuz
+  // anahtarlara indirilir ("BLG 102E" → ["blg","102e"], "BLG102E" → ["blg102e"]).
+  const terms = q ? q.split(/\s+/).map(normSearch) : [];
 
   state.filtered = state.rows.filter((r, i) => {
     if (branch && r[3] !== branch) return false;
@@ -134,7 +144,7 @@ export function applyFilters() {
     if (program && !programList(r).includes(program)) return false;
     if (openOnly && r[7] >= r[6]) return false;
     if (!terms.length) return true;
-    return terms.every((t) => state.hay[i].includes(t));
+    return terms.every((t) => searchMatch(t, state.hay[i]));
   });
 
   const { key, dir } = state.sort;
@@ -325,13 +335,13 @@ function renderRows(append) {
     return;
   }
 
-  const frag = fillRows(tbody, slice, (r) => {
+  const rows = fillRows(tbody, slice, (r) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = r;
     const key = selKey(r);
     const starred = fav.isFavorite(state.termSlug, branch, crn);
     return `
       <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="Şubeyi seç"${state.selected.has(key) ? ' checked' : ''}></td>
-      <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="Favorilere ekle/kaldır" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
+      <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? 'Favorilerden çıkar' : 'Favorilere ekle'}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
       <td class="crn" data-label="CRN">${esc(crn)}</td>
       <td class="code" data-label="Ders"><b>${esc(code)}</b><small>${esc(branch)}</small></td>
       <td data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${esc(name)}</button></td>
@@ -342,8 +352,8 @@ function renderRows(append) {
       <td class="num" data-label="Doluluk">${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
   }, { append });
 
-  if (frag) {
-    frag.querySelectorAll('tr').forEach((tr, i) => {
+  if (rows) {
+    rows.forEach((tr, i) => {
       const r = slice[i];
       tr.querySelector('.row-toggle').addEventListener('click', () => openDetail(r));
       // Satırın herhangi bir yerine tıklayınca detay açılır; checkbox tıklaması
@@ -367,6 +377,11 @@ function renderRows(append) {
           star.classList.toggle('on', on);
           star.textContent = on ? '★' : '☆';
           star.setAttribute('aria-pressed', String(on));
+          star.setAttribute('aria-label', on ? 'Favorilerden çıkar' : 'Favorilere ekle');
+          // Kısa ölçek animasyonu (reduced-motion CSS'te kapanır).
+          star.classList.remove('pop');
+          void star.offsetWidth;
+          star.classList.add('pop');
           toast(on ? `Favoriye eklendi (${crn})` : `Favoriden çıkarıldı (${crn})`, { kind: on ? 'ok' : 'warn' });
         });
       }

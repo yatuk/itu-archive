@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>İTÜ Ders Arşivi — Ders Programı, Önşart Haritası, Akademik Takvim</title>
-<meta name="description" content="İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi: 2016'dan bugüne 27 dönem, 64.000+ ders kaydı. OBS'nin yayınlamadığı geçmiş dönemleri, kontenjan geçmişini ve bölüm bazlı müfredat haritasını her gün otomatik toplayan açık veri sitesi.">
+<meta name="description" content="İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi: 2016'dan bugüne 29 dönem, 64.000+ ders kaydı. OBS'nin yayınlamadığı geçmiş dönemleri, kontenjan geçmişini ve bölüm bazlı müfredat haritasını her gün otomatik toplayan açık veri sitesi.">
 <meta name="keywords" content="itü ders arşivi, itü önşart, itü ders programı, itü akademik takvim, itü müfredat, itü ders planı, itü kontenjan, istanbul teknik üniversitesi">
 <meta name="author" content="İTÜ Ders Arşivi">
 <meta name="robots" content="index, follow">
@@ -115,11 +115,11 @@
    </div>
    <div class="mast-controls">
     <div class="theme-pick" role="group" aria-label="Görünüm teması">
-     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" title="Sade (varsayılan)">◎</button>
-     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" title="Fosfor (koyu)">◐</button>
-     <button type="button" class="theme-btn" data-theme="light" aria-pressed="false" title="Açık">☀</button>
-     <button type="button" class="theme-btn" data-theme="contrast" aria-pressed="false" title="Yüksek kontrast">▣</button>
-     <button type="button" class="theme-btn" data-theme="auto" aria-pressed="false" title="Sistem teması">◈</button>
+     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)">◎</button>
+     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)">◐</button>
+     <button type="button" class="theme-btn" data-theme="light" aria-pressed="false" aria-label="Açık" title="Açık">☀</button>
+     <button type="button" class="theme-btn" data-theme="contrast" aria-pressed="false" aria-label="Yüksek kontrast" title="Yüksek kontrast">▣</button>
+     <button type="button" class="theme-btn" data-theme="auto" aria-pressed="false" aria-label="Sistem teması" title="Sistem teması">◈</button>
     </div>
     <button type="button" id="lang-btn" class="btn-ghost" title="Dil / Language">TR/EN</button>
    </div>
@@ -137,15 +137,7 @@
  </div>
 </header>
 
-<div id="onboard" class="onboard" hidden>
- <p><b>İTÜ Ders Arşivi</b> — OBS'nin yayınlamadığı geçmiş dönemleri, kontenjan geçmişini ve müfredat haritasını arşivler. Denemek için:</p>
- <div class="onboard-links">
-  <button type="button" data-onboard-view="gecmis" data-onboard-q="BLG 102E">BLG 102E'yi son yıllarda kim verdi?</button>
-  <button type="button" data-onboard-view="dersler" data-onboard-q="BLG 102E">Bu dönem BLG 102E'nin şubeleri</button>
- </div>
- <button type="button" id="onboard-close" aria-label="Kapat">✕</button>
-</div>
-
+<h2 class="sr-only">Bölümler</h2>
 <nav class="tabs wrap" role="tablist" aria-label="Bölümler">
  <button role="tab" aria-selected="true" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" data-i18n="tabDersler">01 · DERSLER</button>
  <button role="tab" aria-selected="false" id="tab-gecmis" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" data-i18n="tabGecmis">02 · GEÇMİŞ</button>
@@ -180,14 +172,18 @@
       <option value="ogle">öğle (12:00-17:00)</option>
       <option value="aksam">akşam (≥17:00)</option>
     </select></label>
-    <label>seviye <select id="f-level">
+    <button type="button" id="f-more-toggle" class="btn-ghost" aria-expanded="false"
+            aria-controls="filters-more" data-i18n="filterMore">gelişmiş filtreler</button>
+    <div class="filters-more" id="filters-more" hidden>
+     <label>seviye <select id="f-level">
       <option value="">hepsi</option>
       <option>OL</option><option>LS</option><option>LU</option><option>LUI</option>
-    </select></label>
-    <label>yöntem <select id="f-method"><option value="">hepsi</option></select></label>
-    <label>alabilen program <select id="f-program"><option value="">hepsi</option></select></label>
-    <label>ders kodu <input id="f-code" type="text" class="f-in" placeholder="BLG 101" spellcheck="false" aria-label="Ders koduna göre filtrele"></label>
-    <label class="check"><input type="checkbox" id="f-open"> yalnızca kontenjanı olanlar</label>
+     </select></label>
+     <label>yöntem <select id="f-method"><option value="">hepsi</option></select></label>
+     <label>alabilen program <select id="f-program"><option value="">hepsi</option></select></label>
+     <label>ders kodu <input id="f-code" type="text" class="f-in" placeholder="BLG 101" spellcheck="false" aria-label="Ders koduna göre filtrele"></label>
+     <label class="check"><input type="checkbox" id="f-open"> yalnızca kontenjanı olanlar</label>
+    </div>
     <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir">CSV indir</button>
     <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle">zaman çizelgesi</button>
    </div>
@@ -230,7 +226,7 @@
 
  <section id="view-gecmis" class="view" role="tabpanel" aria-labelledby="tab-gecmis" hidden>
   <p class="note">
-   27 dönemin birleştirilmiş kaydı. OBS'de sorulamayan şeyler burada sorulabiliyor:
+   <span id="hist-note-count">…</span> dönemin birleştirilmiş kaydı. OBS'de sorulamayan şeyler burada sorulabiliyor:
    bir dersi yıllar içinde <strong>kim verdi</strong>, ders <strong>hangi dönemlerde açılıyor</strong>,
    bir öğretim üyesi <strong>hangi dersleri veriyor</strong>.
   </p>
@@ -274,7 +270,7 @@
     </label>
     <button type="button" class="pg-reset btn-ghost">odağı temizle</button>
    </div>
-   <div class="pg-results"></div>
+   <div class="pg-results" aria-live="polite"></div>
    <p class="pg-status">bir bölüm seçin</p>
    <div class="pg-branches" aria-hidden="true"></div>
    <div class="pg-canvas-wrap">
@@ -398,6 +394,10 @@
     o veri kayboluyor: hangi dersin ne zaman açıldığı, kimin verdiği, kontenjanın ne kadar dolduğu
     bir sonraki dönem sorulamaz hale geliyor. Bu depo o veriyi günlük olarak çekip
     sürüm kontrolüne alıyor.
+   </p>
+   <p>
+    Denemek için: <strong>Geçmiş</strong> sekmesinde "BLG 102E'yi son yıllarda kim verdi?",
+    <strong>Dersler</strong> sekmesinde "Bu dönem BLG 102E'nin şubeleri" sorgularını arayın.
    </p>
 
    <h2>Veri nereden geliyor?</h2>

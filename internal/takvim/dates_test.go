@@ -103,6 +103,40 @@ func TestAddISODates(t *testing.T) {
 	}
 }
 
+func TestAddISODatesFiltersHeaderRow(t *testing.T) {
+	// Kaynak tablonun başlık satırı ("Bahar Dönemi | Tarih | Kalan Gün") eski
+	// dökümlerde etkinlik olarak kazınmıştı; backfill bunları çıkarmalı.
+	in := `{"year":"X","yearId":"854","scrapedAt":"2026-08-12T13:55:35Z","events":[
+		{"table":"Güz","title":"Bahar Dönemi","date":"Tarih","remaining":"Kalan Gün"},
+		{"table":"Güz","title":"Ders Başı","date":"24 - 26 Ağustos 2026","remaining":"1 gün kaldı"}]}`
+	out, err := AddISODates([]byte(in))
+	if err != nil {
+		t.Fatal(err)
+	}
+	s := string(out)
+	if strings.Contains(s, `"title": "Bahar Dönemi"`) || strings.Contains(s, `"date": "Tarih"`) {
+		t.Errorf("başlık satırı etkinliği çıkarılmadı:\n%s", s)
+	}
+	if !strings.Contains(s, `"title": "Ders Başı"`) || !strings.Contains(s, `"start": "2026-08-24"`) {
+		t.Errorf("gerçek etkinlik kayboldu ya da tarihi yazılmadı:\n%s", s)
+	}
+}
+
+func TestHeaderDate(t *testing.T) {
+	yes := []string{"Tarih", "TARİH", "Tarihler", "Tarih Aralığı", "  Tarih  "}
+	for _, s := range yes {
+		if !HeaderDate(s) {
+			t.Errorf("başlık sayılmalıydı: %q", s)
+		}
+	}
+	no := []string{"24 - 26 Ağustos 2026", "Tarih Yaklaşıyor", ""}
+	for _, s := range no {
+		if HeaderDate(s) {
+			t.Errorf("başlık sayılmamalıydı: %q", s)
+		}
+	}
+}
+
 func TestAddISODatesMalformed(t *testing.T) {
 	if _, err := AddISODates([]byte("{")); err == nil {
 		t.Error("çözümlenemez JSON hata dönmeli")

@@ -20,6 +20,7 @@ import (
 	"itu-scraper/internal/curriculum"
 	"itu-scraper/internal/model"
 	"itu-scraper/internal/quota"
+	"itu-scraper/internal/takvim"
 )
 
 // Result, denetim çıktısı.
@@ -266,8 +267,21 @@ func (r *Result) checkCalendar(root string) {
 			continue
 		}
 		for i, ev := range cal.Events {
-			if strings.TrimSpace(ev.Date) == "" {
+			date := strings.TrimSpace(ev.Date)
+			if date == "" {
 				r.errf("calendar/%s: etkinlik %d: date boş", rel, i)
+			}
+			// Kaynak tablonun başlık satırı etkinlik olarak kazınmışsa yakala
+			// ("Bahar Dönemi | Tarih | Kalan Gün"). Kazıyıcı atlamalı, backfill
+			// kalıntıları temizler.
+			if takvim.HeaderDate(date) {
+				r.errf("calendar/%s: etkinlik %d: başlık satırı etkinlik olarak kazınmış (%q)", rel, i, date)
+			} else if date != "" {
+				// Tarih Türkçe biçimde olmalı; çözümlenemiyorsa üretim hatasıdır
+				// (tarayıcı ve .ics ayrıştırıcıları aynı desenleri kullanır).
+				if _, _, ok := takvim.ParseTRRange(date); !ok {
+					r.errf("calendar/%s: etkinlik %d: tarih çözümlenemedi (%q)", rel, i, date)
+				}
 			}
 			if strings.TrimSpace(ev.Remaining) == "" {
 				r.errf("calendar/%s: etkinlik %d: remaining boş", rel, i)

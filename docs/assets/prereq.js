@@ -29,6 +29,49 @@ import { state } from './core/store.js';
     return PALETTE[h % PALETTE.length];
   }
 
+  // Canvas renkleri temaya göre seçilir (WCAG 2.2 AA: kenar ≥3:1, etiket ≥4.5:1).
+  // Açık temada koyu zemin üstüne tasarlanmış renkler okunmaz olur; burada token
+  // değerleri okunur ve açık yüzey için yeniden üretilir. Koyu/contrast temasında
+  // değerler ESKİSİYLE AYNIDIR. Tema değişince canvasColors() taze değer verir.
+  let _canvasColors = null;
+  function canvasColors() {
+    const theme = document.documentElement.dataset.theme || 'dark';
+    if (_canvasColors && _canvasColors.theme === theme) return _canvasColors;
+    const light = theme === 'sade' || theme === 'light';
+    const cs = getComputedStyle(document.documentElement);
+    const v = (n) => cs.getPropertyValue(n).trim();
+    const c = light ? {
+      emptyDim: 'rgba(69,86,76,0.75)',
+      emptyFaint: 'rgba(69,86,76,0.5)',
+      laneHeaderBg: 'rgba(238,241,238,0.92)',
+      laneHeaderFg: 'rgba(30,43,35,0.92)',
+      edge: v('--dim') || 'rgba(69,86,76,0.85)',       // ~7:1, kenar ≥3:1
+      edgeRelated: v('--acid') || 'rgba(26,122,85,1)',  // ~5.3:1
+      edgeDim: 'rgba(120,130,125,0.18)',
+      label: v('--fg') || 'rgba(30,43,35,0.95)',        // ~14:1 + halo
+      labelDim: 'rgba(110,120,115,0.6)',
+      labelHalo: 'rgba(255,255,255,0.92)',
+      focus: v('--acid') || '#1a7a55',
+      hover: v('--cyan') || '#1f6f8b',
+    } : {
+      // Koyu ve yüksek kontrast — mevcut çizim değerleri, değişmez.
+      emptyDim: 'rgba(140,160,150,0.6)',
+      emptyFaint: 'rgba(140,160,150,0.4)',
+      laneHeaderBg: 'rgba(10,16,12,0.85)',
+      laneHeaderFg: 'rgba(230,245,235,0.85)',
+      edge: 'rgba(120,200,170,0.4)',
+      edgeRelated: 'rgba(0,255,156,0.85)',
+      edgeDim: 'rgba(140,160,150,0.08)',
+      label: 'rgba(230,245,235,0.92)',
+      labelDim: 'rgba(140,160,150,0.35)',
+      labelHalo: null,
+      focus: '#00ff9c',
+      hover: 'rgba(53,224,255,0.9)',
+    };
+    _canvasColors = { theme, ...c };
+    return _canvasColors;
+  }
+
   const LANE_PAD = 90;   // ilk/son sütunun kenarla arası
   const ROW_PAD = 46;
   const NODE_R = 15;
@@ -174,14 +217,15 @@ import { state } from './core/store.js';
       const ctx = this.ctx, w = this.canvas.clientWidth, h = this.canvas.clientHeight;
       ctx.clearRect(0, 0, w, h);
 
+      const c = canvasColors();
       // Boş durum: program seçilene kadar kılavuz mesajı.
       if (!this.nodes) {
         ctx.font = '13px ui-monospace, monospace';
         ctx.textAlign = 'center';
-        ctx.fillStyle = 'rgba(140,160,150,0.6)';
+        ctx.fillStyle = c.emptyDim;
         ctx.fillText('> bir bölüm seçin', w / 2, h / 2 - 6);
         ctx.font = '11px ui-monospace, monospace';
-        ctx.fillStyle = 'rgba(140,160,150,0.4)';
+        ctx.fillStyle = c.emptyFaint;
         ctx.fillText('dönem sütunlarında önşart okları burada çizilir', w / 2, h / 2 + 14);
         return;
       }
@@ -204,9 +248,9 @@ import { state } from './core/store.js';
       ctx.font = '11px ui-monospace, monospace';
       this.laneTitles.forEach((title, i) => {
         const [x] = this.worldToScreen(LANE_PAD + i * this.laneW, 0);
-        ctx.fillStyle = 'rgba(10,16,12,0.85)';
+        ctx.fillStyle = c.laneHeaderBg;
         ctx.fillRect(x - (this.laneW / 2) * this.cam.k, 0, this.laneW * this.cam.k, 26);
-        ctx.fillStyle = 'rgba(230,245,235,0.85)';
+        ctx.fillStyle = c.laneHeaderFg;
         ctx.fillText(title, x, 17);
       });
 
@@ -215,7 +259,7 @@ import { state } from './core/store.js';
         const related = focused && this.related.has(e.from.code) && this.related.has(e.to.code);
         const dim = focused && !related;
         drawEdge(ctx, this.worldToScreen(e.from.x, e.from.y), this.worldToScreen(e.to.x, e.to.y), r,
-          dim ? 'rgba(140,160,150,0.08)' : (related ? 'rgba(0,255,156,0.85)' : 'rgba(120,200,170,0.4)'),
+          dim ? c.edgeDim : (related ? c.edgeRelated : c.edge),
           related ? 1.8 : 1.1,
           // Kesikli ok: önşart bir VEYA grubunun parçası — biri yeterli, hepsi değil.
           e.alt && !dim);
@@ -248,10 +292,18 @@ import { state } from './core/store.js';
         for (const n of this.nodes) {
           const dim = focused && !this.related.has(n.code);
           const [x, y] = this.worldToScreen(n.x, n.y);
-          ctx.fillStyle = dim ? 'rgba(140,160,150,0.35)' : 'rgba(230,245,235,0.92)';
+          ctx.fillStyle = dim ? c.labelDim : c.label;
           const label = n.kind === 'elective' ? wrapShort(n.name, 16) : n.code;
+          // Açık temada koyu etiket: parlak düğüm dolgusu üstünde de okunması için
+          // beyaz halo (kontur) eklenir. Koyu temada halo yok — görünüm değişmez.
+          if (c.labelHalo) {
+            ctx.strokeStyle = c.labelHalo;
+            ctx.lineWidth = 3;
+            ctx.strokeText(label, x + r * 0.95, y + 3);
+          }
           ctx.fillText(label, x + r * 0.95, y + 3);
           // Seçmeli slot rozeti: kaç alternatifi olduğu tıklamadan görünsün.
+          // Koyu zemin + açık yazı iki temada da okunur; bilinçli olarak korunur.
           if (n.kind === 'elective' && n.options && n.options.length) {
             const badge = String(n.options.length);
             ctx.font = `bold ${Math.max(8, 9 * this.cam.k)}px ui-monospace, monospace`;
@@ -261,7 +313,7 @@ import { state } from './core/store.js';
             ctx.fillRect(bx, by, bw, 13 * this.cam.k);
             ctx.fillStyle = '#ffc857';
             ctx.fillText(badge, bx + 4, by + 10 * this.cam.k);
-            ctx.fillStyle = dim ? 'rgba(140,160,150,0.35)' : 'rgba(230,245,235,0.92)';
+            ctx.fillStyle = dim ? c.labelDim : c.label;
           }
         }
       }
@@ -280,8 +332,8 @@ import { state } from './core/store.js';
         ctx.stroke();
         ctx.restore();
       };
-      if (this.hover && this.hover !== this.focus) ring(this.hover, r * 0.72 + 3, 1.5, 'rgba(53,224,255,0.9)', 0);
-      if (this.focus) ring(this.focus, r * 0.72 + 4, 2, '#00ff9c', 14);
+      if (this.hover && this.hover !== this.focus) ring(this.hover, r * 0.72 + 3, 1.5, c.hover, 0);
+      if (this.focus) ring(this.focus, r * 0.72 + 4, 2, c.focus, 14);
     }
 
     nodeAt(px, py) {
@@ -707,6 +759,13 @@ import { state } from './core/store.js';
   // ---- Bölüm seçici ve veri hazırlama ----
 
   let graph = null;
+  // Tema değişince canvas renkleri tazelenir ve grafik yeniden çizilir
+  // (canvasColors() tema bazında önbellekler; data-theme değişince yeni değer üretir).
+  if (typeof MutationObserver !== 'undefined' && typeof document !== 'undefined') {
+    new MutationObserver(() => graph && graph.draw()).observe(document.documentElement, {
+      attributes: true, attributeFilter: ['data-theme'],
+    });
+  }
   let programs = null;
   let reqByCode = null;
   // Seviye filtresi: varsayılan yalnızca lisans. Kullanıcı değiştirirse bu

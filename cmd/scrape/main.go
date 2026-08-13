@@ -496,14 +496,29 @@ func writeIndex(root string, st *store.Store) error {
 	calDir := filepath.Join(root, "data", "calendar")
 	if ents, err := os.ReadDir(calDir); err == nil {
 		for _, e := range ents {
+			if !strings.HasSuffix(e.Name(), ".json") {
+				continue // tür dizinleri (lisans/, hazirlik/ ...) JSON değil
+			}
 			b, err := os.ReadFile(filepath.Join(calDir, e.Name()))
 			if err != nil {
 				continue
 			}
 			var c model.Calendar
-			if json.Unmarshal(b, &c) == nil {
-				cals = append(cals, model.CalRef{YearID: c.YearID, Label: c.Year, Events: len(c.Events)})
+			if json.Unmarshal(b, &c) != nil {
+				continue
 			}
+			// Bu yıl için hangi tür dosyaları var? (calendar/<slug>/<yearId>.json)
+			var types []string
+			for _, sub := range ents {
+				if !sub.IsDir() {
+					continue
+				}
+				if _, err := os.Stat(filepath.Join(calDir, sub.Name(), e.Name())); err == nil {
+					types = append(types, sub.Name())
+				}
+			}
+			sort.Strings(types)
+			cals = append(cals, model.CalRef{YearID: c.YearID, Label: c.Year, Events: len(c.Events), Types: types})
 		}
 	}
 	sort.Slice(cals, func(i, j int) bool { return cals[i].Label > cals[j].Label })

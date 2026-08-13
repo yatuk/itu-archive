@@ -140,9 +140,10 @@ type TermRef struct {
 }
 
 type CalRef struct {
-	YearID string `json:"yearId"`
-	Label  string `json:"label"`
-	Events int    `json:"events"`
+	YearID string   `json:"yearId"`
+	Label  string   `json:"label"`
+	Events int      `json:"events"`
+	Types  []string `json:"types,omitempty"` // bu yıl için mevcut takvim türü slug'ları
 }
 
 type SiteStats struct {

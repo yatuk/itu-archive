@@ -576,6 +576,13 @@ func (r *Result) checkIndex(root string) {
 		if _, err := os.Stat(filepath.Join(root, "data", "calendar", c.YearID+".json")); err != nil {
 			r.errf("index: %s takvimi için dosya yok", c.YearID)
 		}
+		// P0-4: ilan edilen her türün dosyası olmalı — yoksa frontend seçicide
+		// "tümü" dışı bir seçenek gösterip "takvim yüklenemedi" hatası verir.
+		for _, slug := range c.Types {
+			if _, err := os.Stat(filepath.Join(root, "data", "calendar", slug, c.YearID+".json")); err != nil {
+				r.errf("index: %s takvimi için ilan edilen tür %q dosyası yok", c.YearID, slug)
+			}
+		}
 	}
 }
 

@@ -7,26 +7,39 @@ import { initReveal } from '../core/reveal.js';
 
 let inited = false;
 
-// Takvim türü seçenekleri — scraper'ın yazdığı calendar/<slug>/<yearId>.json ile
-// eşleşir (Faz 3C). slug yol-güvenli dizin adıdır; label seçicide görünür.
-const CAL_TYPES = [
-  { slug: 'lisans', label: 'Lisans' },
-  { slug: 'yatay-cap-yandal', label: 'Yatay Geçiş / ÇAP / Yandal' },
-  { slug: 'onkayit', label: 'Önkayıt' },
-  { slug: 'hazirlik', label: 'İngilizce Hazırlık' },
-  { slug: 'lisansustu', label: 'Lisansüstü' },
-  { slug: 'ikinci-ogretim-lisansustu', label: 'II. Öğretim Lisansüstü' },
-];
+// Tür slug → görünür etiket. Liste kodda sabit değil — hangi türlerin
+// seçileceğini index.json (seçili yılın types'ı) belirler (P0-4).
+const CAL_TYPE_LABELS = {
+  lisans: 'Lisans',
+  'yatay-cap-yandal': 'Yatay Geçiş / ÇAP / Yandal',
+  onkayit: 'Önkayıt',
+  hazirlik: 'İngilizce Hazırlık',
+  lisansustu: 'Lisansüstü',
+  'ikinci-ogretim-lisansustu': 'II. Öğretim Lisansüstü',
+};
+
+// Tür seçicisini seçili yılın index.json'da ilan edilen türlerinden doldurur:
+// tür dosyası olmayan seçenek "takvim yüklenemedi" hatası üretmesin.
+function populateTypes(yearId) {
+  const sel = $('#f-caltype');
+  const cal = (state.index?.calendars || []).find((c) => c.yearId === yearId);
+  const types = cal?.types || [];
+  sel.innerHTML = '<option value="">tümü</option>' +
+    types.map((slug) => `<option value="${esc(slug)}">${esc(CAL_TYPE_LABELS[slug] || slug)}</option>`).join('');
+  if (!types.includes(sel.value)) sel.value = '';
+}
 
 export function initCalendar() {
   if (inited) return;
-  $('#f-year').addEventListener('change', () => loadCalendar($('#f-year').value, $('#f-caltype').value));
+  $('#f-year').addEventListener('change', () => {
+    populateTypes($('#f-year').value);
+    loadCalendar($('#f-year').value, $('#f-caltype').value);
+  });
   $('#f-caltype').addEventListener('change', () => loadCalendar($('#f-year').value, $('#f-caltype').value));
   $('#f-upcoming').addEventListener('change', renderCalendar);
   const ics = $('#cal-ics');
   if (ics) ics.addEventListener('click', exportICS);
-  $('#f-caltype').innerHTML = '<option value="">tümü</option>' +
-    CAL_TYPES.map((t) => `<option value="${esc(t.slug)}">${esc(t.label)}</option>`).join('');
+  populateTypes($('#f-year').value);
   inited = true;
 }
 

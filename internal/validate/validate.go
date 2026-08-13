@@ -607,10 +607,18 @@ func (r *Result) checkStatus(root string) {
 	}
 	// Aktif dönem önceki dönemden çok küçükse (örn. dönem başı yarım döküm) uyar.
 	var ix struct {
-		Terms []struct {
+		CurrentSlug string `json:"currentSlug"`
+		Terms       []struct {
 			Slug     string `json:"slug"`
 			Sections int    `json:"sections"`
 		} `json:"terms"`
+	}
+	if readJSON(filepath.Join(root, "data", "index.json"), &ix) == nil && ix.CurrentSlug != "" {
+		// Faz A (G1): aktif dönem için kontenjan serisi yoksa uyarı — kayıt
+		// haftası başlayınca (OBS dönemi değişince) otomatik oluşur.
+		if _, err := os.Stat(filepath.Join(root, "data", "quota", ix.CurrentSlug+".json")); err != nil {
+			r.warnf("aktif dönem %s için kontenjan serisi yok (kayıt haftası açılınca oluşur)", ix.CurrentSlug)
+		}
 	}
 	if readJSON(filepath.Join(root, "data", "index.json"), &ix) == nil && len(ix.Terms) >= 2 {
 		prev := ix.Terms[1].Sections

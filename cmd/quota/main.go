@@ -48,6 +48,7 @@ func run(out string, workers int, rps float64) error {
 		return err
 	}
 	slug := term.Slug(label)
+	logf("kontenjan dönemi: %s (%s)", label, slug)
 
 	branches, err := oc.AllBranches(ctx)
 	if err != nil {

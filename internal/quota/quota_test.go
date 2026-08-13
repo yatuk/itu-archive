@@ -1,6 +1,8 @@
 package quota
 
 import (
+	"bytes"
+	"encoding/json"
 	"os"
 	"path/filepath"
 	"testing"
@@ -75,9 +77,10 @@ func TestSummarizeFills(t *testing.T) {
 	t1 := "2026-01-15T10:30:00Z"
 	t2 := "2026-01-15T11:00:00Z"
 
-	// Full: A (20/50), B (39/40 dolu değil). Sonra B 45 ve 50'ye çıkar.
+	// Full: A (20/50), B (39/40 dolu değil), C (10/10 ilk ölçümde dolu).
+	// Sonra B 45 ve 50'ye çıkar.
 	lines := []string{
-		`{"ts":"` + t0 + `","full":true,"cap":{"A":50,"B":40},"enr":{"A":20,"B":39}}`,
+		`{"ts":"` + t0 + `","full":true,"cap":{"A":50,"B":40,"C":10},"enr":{"A":20,"B":39,"C":10}}`,
 		`{"ts":"` + t1 + `","enr":{"B":45}}`,
 		`{"ts":"` + t2 + `","enr":{"B":50}}`,
 	}
@@ -100,11 +103,27 @@ func TestSummarizeFills(t *testing.T) {
 	for _, c := range sum.Courses {
 		byCRN[c.CRN] = c
 	}
-	a, b := byCRN["A"], byCRN["B"]
+	a, b, c := byCRN["A"], byCRN["B"], byCRN["C"]
 	if a.FilledAt != "" || a.FillMinutes != 0 {
 		t.Errorf("A hiç dolmadı, dolu görünüyor: %+v", a)
 	}
 	if b.FilledAt != t1 || b.FillMinutes != 30 {
 		t.Errorf("B ilk ölçümden 30 dk sonra dolmalı: %+v", b)
+	}
+	if c.FilledAt != t0 || c.FillMinutes != 0 {
+		t.Errorf("C ilk ölçümde dolu: FillMinutes 0 olmalı, %+v", c)
+	}
+
+	// JSON serileştirme: FillMinutes > 0 görünür; 0 (ilk ölçümde dolu) omitempty
+	// ile düşer — "0 dakikada doldu" yanlış iddiası üretilmez.
+	raw, err := json.Marshal(sum)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !bytes.Contains(raw, []byte(`"fillMinutes":30`)) {
+		t.Errorf("fillMinutes:30 JSON'da olmalıydı: %s", raw)
+	}
+	if bytes.Contains(raw, []byte(`"fillMinutes":0`)) {
+		t.Errorf("fillMinutes:0 yazılmamalı (omitempty): %s", raw)
 	}
 }

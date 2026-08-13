@@ -215,6 +215,12 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   if (reqFwd) loadPrereqTree(reqFwd, code);
   const reqBy = content.querySelector('.d-req-by');
   if (reqBy) loadReqBy(reqBy);
+
+  // Faz A (G5): EN modunda, katalogda İngilizce ad varsa başlığı onunla değiştir.
+  const titleSpan = content.querySelector('#detail-title span');
+  if (titleSpan && document.documentElement.lang === 'en' && cat?.nameEn) {
+    titleSpan.textContent = cat.nameEn;
+  }
 }
 
 // Panelde dersin önşart VE/VEYA ağacı (P1-9). prereq/graph.json'da kayıtlı

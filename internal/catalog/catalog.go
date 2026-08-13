@@ -55,6 +55,7 @@ type WeeklyTopic struct {
 type Entry struct {
 	Code         string        `json:"code"`
 	Name         string        `json:"name"`
+	NameEn       string        `json:"nameEn,omitempty"` // İngilizce ad (varsa)
 	Language     string        `json:"language"`
 	Credits      Credits       `json:"credits"`
 	Description  string        `json:"description"`
@@ -76,6 +77,8 @@ var (
 	spaceRe = regexp.MustCompile(`\s+`)
 	codeRe  = regexp.MustCompile(`^[A-ZÇĞİÖŞÜ]{2,5}\s*\d{2,4}`)
 	nameRe  = regexp.MustCompile(`(?i)Dersin Adı\s*:\s*(.*?)\s+Course Name`)
+	// İngilizce ad: "Course Name:" sonrası, bir sonraki alan etiketine kadar.
+	nameEnRe = regexp.MustCompile(`(?i)Course Name\s*:\s*(.*?)(?:\s+Bölüm\s*/\s*Program|\s+Kod)`)
 	langRe  = regexp.MustCompile(`(?i)Dersin Dili[^:]*:\s*(.*?)\s+Kod\s*\(?Code\)?`)
 	descRe  = regexp.MustCompile(`(?i)Dersin Tanımı\s*\(Course Description\)\s*(.*?)\s+Dersin Amacı`)
 	outcRe  = regexp.MustCompile(`(?is)Course Learning Outcomes[^<]*</th>\s*<td[^>]*>(.*?)</td>`)
@@ -140,6 +143,7 @@ func Parse(body []byte, sourceURL, branch, dersNo string) (*Entry, error) {
 		SourceURL: sourceURL,
 	}
 	e.Name = grab(clean, nameRe)
+	e.NameEn = grab(clean, nameEnRe)
 	e.Language = grab(clean, langRe)
 	e.Description = grab(clean, descRe)
 	e.Credits = parseCredits(text)

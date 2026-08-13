@@ -51,6 +51,10 @@ func TestParseBlg102(t *testing.T) {
 	if e.Name != "Programlamaya Giriş (C)" {
 		t.Errorf("ad: %q", e.Name)
 	}
+	// Faz A (G5): İngilizce ad da aynı sayfadan çekilmeli.
+	if e.NameEn != "Intr to Sci&Eng Comp (C)" {
+		t.Errorf("nameEn: %q", e.NameEn)
+	}
 	if e.Credits != (Credits{Theory: 3, Practice: 2, Lab: 0, Local: 4, ECTS: 8}) {
 		t.Errorf("kredi: %+v", e.Credits)
 	}

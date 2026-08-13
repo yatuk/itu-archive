@@ -67,7 +67,8 @@ export function sectionsForCode(rows, code) {
 
 // Şubeleri aynı zaman/kontenjan/hoca üzerinden gruplar. Aynı gün/saat ve kontenjana
 // sahip şubeler (ör. 37 kopya şube) tek satıra iner: CRN aralığı · gün/saat · N şube.
-// Dönüş: [{ crns, when, cap, enr, instructor, branch, code, count, crnRange }].
+// Dönüş: [{ crns, when, cap, enr, instructor, branch, code, count, label }] — label
+// düz metindir ("10008–10010"); "<" içeren hiçbir alan üretilmez (render tarafı textContent).
 export function groupSections(sections) {
   const groups = [];
   const byKey = new Map();
@@ -82,7 +83,7 @@ export function groupSections(sections) {
     }
     g.crns.push(s.crn);
   }
-  return groups.map((g) => ({ ...g, count: g.crns.length, crnRange: crnRangeText(g.crns) }));
+  return groups.map((g) => ({ ...g, count: g.crns.length, label: crnRangeText(g.crns) }));
 }
 
 // "-" / "—" gibi yedek hoca işaretleri boş sayılır — hoca kolonu o zaman hiç çizilmez.

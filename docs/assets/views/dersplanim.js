@@ -371,6 +371,9 @@ function renderAll() {
   const historyCodes = [];
 
   const semAvgs = semesterAverages();
+  // Şube grupları (renderSections) DOM node döndürür; kart içindeki placeholder'a
+  // innerHTML sonrası yerleştirilir. slotKey benzersiz olduğundan eşleşme güvenli.
+  const pending = []; // { slot, sec }
   root.innerHTML = sems.map(({ s, i }) => {
     const load = semesterLoad(s);
     const avg = semAvgs[i];
@@ -389,7 +392,9 @@ function renderAll() {
         if (filters.cap && !(st.state === 'open' && st.sections.some((sec) => sec.cap > sec.enr))) return;
         if (st.state === 'open') openCount++; else if (st.state === 'closed') closedCount++;
         shown++;
-        itemHtml += courseRow(c, st, slotKey);
+        const card = courseRow(c, st, slotKey);
+        itemHtml += card.html;
+        if (card.sec) pending.push({ slot: slotKey, sec: card.sec });
       } else if (item.elective) {
         const e = item.elective;
         if (filters.hideTaken && e.options && e.options.every((o) => isTaken(o.code))) return;
@@ -411,6 +416,13 @@ function renderAll() {
   }).join('');
 
   root.innerHTML = root.innerHTML || '<p class="empty">Bu filtrelerle eşleşen ders yok.</p>';
+
+  // Şube grubu placeholder'larını DOM node'larla değiştir (textContent güvenli).
+  root.querySelectorAll('.dp-secslot').forEach((slot) => {
+    const p = pending.find((x) => x.slot === slot.dataset.slot);
+    if (p) slot.replaceWith(p.sec);
+    else slot.remove();
+  });
 
   // "Bu dönem planından N ders açık · M zorunlu · K seçmeli slot"
   $('#dp-result').innerHTML = planSummaryLine(openCount, closedCount, slotOpen, shown);
@@ -462,8 +474,12 @@ function courseRow(c, st, slotKey) {
   const rec = (stored.grades || {})[code] || {};
   const repeat = rec.prev ? `<span class="dp-repeat" title="İTÜ'de son alınan not geçerli, önceki hesaba girmez">tekrar · önceki: ${esc(rec.prev)}</span>` : '';
   const grade = gradeOptions(rec.grade || '', code);
-  const sections = st.state === 'open' ? renderSections(st.sections, code) : '';
-  return `<div class="dp-course">
+  // Şube grupları DOM node olarak döner; ders kartına bir placeholder konur,
+  // renderAll innerHTML sonrası node'u yerleştirir (HTML string yolu yok).
+  const sec = st.state === 'open' ? renderSections(st.sections) : null;
+  const sectionsHtml = sec ? `<div class="dp-secslot" data-slot="${esc(slotKey)}"></div>` : '';
+  return {
+    html: `<div class="dp-course">
     <div class="dp-course-head">
       <button type="button" class="dp-code" data-act="detail" data-code="${esc(code)}">${esc(code)}</button>
       <span class="dp-name">${esc(c.name)}</span>
@@ -473,14 +489,18 @@ function courseRow(c, st, slotKey) {
       <span class="dp-grade-wrap">${grade}</span>
       ${repeat}
     </div>
-    ${sections}
-  </div>`;
+    ${sectionsHtml}
+  </div>`,
+    sec,
+  };
 }
 
 function statusBadge(c, st) {
   const code = canonicalCode(c.code);
   if (st.state === 'open') {
-    return `<span class="dp-status open" title="${esc(code)} bu dönem açık">● açık · ${st.sections.length} şube</span>`;
+    const totalCap = st.sections.reduce((s, x) => s + (x.cap || 0), 0);
+    const capTxt = totalCap > 0 ? ` · toplam kontenjan ${trNum(totalCap)}` : '';
+    return `<span class="dp-status open" title="${esc(code)} bu dönem açık">● açık · ${st.sections.length} şube${capTxt}</span>`;
   }
   if (st.state === 'closed') {
     return `<span class="dp-status closed">● bu dönem açık değil · son ${esc(termLabel(st.lastTerm))}</span>`;
@@ -493,51 +513,101 @@ function statusBadge(c, st) {
 const SECTION_SHOW = 3;
 
 // Şubeleri çizer: aynı zaman/kontenjanlıları gruplar, varsayılan 3 grup + "daha
-// göster". Hoca bilgisi hiçbir şubede yoksa o kolon hiç çizilmez.
-function renderSections(sections, code) {
+// göster". DOM node döndürür — HTML string yolu tamamen bırakıldı (CRN hücresi
+// textContent ile kurulur; ham "<span>" ekranda metin olarak görünmez).
+function renderSections(sections) {
   const groups = groupSections(sections);
   const hasInstr = groups.some((g) => g.instructor);
   const shown = groups.slice(0, SECTION_SHOW);
   const rest = groups.slice(SECTION_SHOW);
   const restCount = rest.reduce((s, g) => s + g.count, 0);
-  const rowHtml = (g) => sectionGroupRow(g, hasInstr);
-  const rows = shown.map(rowHtml).join('');
-  const more = restCount > 0
-    ? `<button type="button" class="dp-more" data-act="dp-more" aria-expanded="false" data-count="${restCount}">${restCount} şube daha göster</button>
-       <div class="dp-more-wrap" hidden>${rest.map(rowHtml).join('')}</div>`
-    : '';
-  const totalCap = sections.reduce((s, x) => s + (x.cap || 0), 0);
-  const totalEnr = sections.reduce((s, x) => s + (x.enr || 0), 0);
-  const total = totalCap > 0
-    ? `<span class="dp-sections-total">toplam kontenjan ${trNum(totalCap)}${totalEnr > 0 ? ` · ${trNum(totalEnr)} yazılan` : ''}</span>`
-    : '';
-  return `<div class="dp-sections ${hasInstr ? 'has-instr' : 'no-instr'}">${rows}${more}${total}</div>`;
+  const wrap = document.createElement('div');
+  wrap.className = `dp-sections ${hasInstr ? 'has-instr' : 'no-instr'}`;
+  for (const g of shown) wrap.appendChild(sectionGroupRow(g, hasInstr));
+  if (restCount > 0) {
+    const more = document.createElement('button');
+    more.type = 'button';
+    more.className = 'dp-more';
+    more.dataset.act = 'dp-more';
+    more.setAttribute('aria-expanded', 'false');
+    more.dataset.count = String(restCount);
+    more.textContent = `${restCount} şube daha göster`;
+    wrap.appendChild(more);
+    const moreWrap = document.createElement('div');
+    moreWrap.className = 'dp-more-wrap';
+    moreWrap.hidden = true;
+    for (const g of rest) moreWrap.appendChild(sectionGroupRow(g, hasInstr));
+    wrap.appendChild(moreWrap);
+  }
+  return wrap;
 }
 
 // Tek şube grubu satırı: CRN aralığı · (hoca) · gün/saat · şube başına doluluk.
 // Toplu kontenjan tek sayı olarak basılmaz; her satır kendi kontenjanını gösterir.
 function sectionGroupRow(g, hasInstr) {
-  const crnTxt = g.count > 1
-    ? `${g.crnRange} <span class="dp-crn-count" title="${esc(g.crns.join(', '))}">${g.count} şube</span>`
-    : g.crnRange;
+  const row = document.createElement('div');
+  row.className = 'dp-section';
+  // CRN hücresi: aralık etiketi + (varsa) şube sayısı rozeti. title tooltip'te
+  // ilk 8 CRN + fazlası; hepsi textContent — esc/innerHTML gerekmez.
+  const crn = document.createElement('span');
+  crn.className = 'dp-crn';
+  crn.title = g.crns.slice(0, 8).join(', ') + (g.crns.length > 8 ? ` … +${g.crns.length - 8}` : '');
+  const range = document.createElement('span');
+  range.textContent = g.label;
+  crn.appendChild(range);
+  if (g.count > 1) {
+    crn.append(' ');
+    const badge = document.createElement('span');
+    badge.className = 'dp-crn-count';
+    badge.textContent = `${g.count} şube`;
+    crn.appendChild(badge);
+  }
+  row.appendChild(crn);
   // hasInstr (bu derste hoca kolonu çiziliyorsa) grubun hocası yoksa boş hücre
   // konur — aksi halde ızgaradaki kolonlar satırlar arasında kayar.
-  const instr = hasInstr
-    ? (g.instructor ? `<span class="dp-instr">${esc(g.instructor)}</span>` : '<span class="dp-instr"></span>')
-    : '';
-  const when = g.when || 'saat yok';
-  const fill = g.cap > 0 ? fillBar(g.cap, g.enr) : 'kontenjan yok';
-  const full = g.cap > 0 && g.enr >= g.cap;
-  return `<div class="dp-section">
-    <span class="dp-crn" title="${esc(g.crns.join(', '))}">${esc(crnTxt)}</span>
-    ${instr}
-    <span class="dp-when">${esc(when)}</span>
-    <span class="dp-fill">${fill}${full ? ' <span class="dp-full">dolu</span>' : ''}</span>
-    <span class="dp-actions">
-      <button type="button" data-act="detail" data-code="${esc(g.code)}">detay</button>
-      <button type="button" data-act="add" data-branch="${esc(g.branch)}" data-crn="${esc(g.crns[0])}" title="${esc(g.crns[0])} şubesini programa ekle">programa ekle</button>
-    </span>
-  </div>`;
+  if (hasInstr) {
+    const instr = document.createElement('span');
+    instr.className = 'dp-instr';
+    if (g.instructor) instr.textContent = g.instructor;
+    row.appendChild(instr);
+  }
+  const when = document.createElement('span');
+  when.className = 'dp-when';
+  when.textContent = g.when || 'saat yok';
+  row.appendChild(when);
+  const fill = document.createElement('span');
+  fill.className = 'dp-fill';
+  if (g.cap > 0) {
+    fill.innerHTML = fillBar(g.cap, g.enr); // fillBar kendi güvenilir motifi üretir
+    if (g.enr >= g.cap) {
+      fill.append(' ');
+      const full = document.createElement('span');
+      full.className = 'dp-full';
+      full.textContent = 'dolu';
+      fill.appendChild(full);
+    }
+  } else {
+    fill.textContent = 'kontenjan yok';
+  }
+  row.appendChild(fill);
+  const actions = document.createElement('span');
+  actions.className = 'dp-actions';
+  const det = document.createElement('button');
+  det.type = 'button';
+  det.dataset.act = 'detail';
+  det.dataset.code = g.code;
+  det.textContent = 'detay';
+  actions.appendChild(det);
+  const add = document.createElement('button');
+  add.type = 'button';
+  add.dataset.act = 'add';
+  add.dataset.branch = g.branch;
+  add.dataset.crn = g.crns[0];
+  add.title = `${g.crns[0]} şubesini programa ekle`;
+  add.textContent = 'programa ekle';
+  actions.appendChild(add);
+  row.appendChild(actions);
+  return row;
 }
 
 function electiveRow(e, open, slotKey) {

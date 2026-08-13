@@ -726,7 +726,7 @@ test('groupSections kopya şubeleri CRN aralığı + sayıyla gruplar', () => {
   const g = groups[0];
   assert.equal(g.count, 3);
   assert.deepEqual(g.crns, ['10008', '10009', '10010']);
-  assert.equal(g.crnRange, '10008–10010');
+  assert.equal(g.label, '10008–10010');
   assert.equal(groups[1].count, 1);
   // Farklı kontenjan/saat gruplanmaz.
   assert.equal(groupSections([
@@ -734,6 +734,23 @@ test('groupSections kopya şubeleri CRN aralığı + sayıyla gruplar', () => {
     { crn: '2', when: 'Cuma 08:30/10:29', cap: 45, enr: 10 },
   ]).length, 2);
   assert.equal(groupSections([]).length, 0);
+});
+
+// Kritik: gruplama YALNIZCA veri döndürür — hiçbir alan HTML ("<") içermez.
+// Render tarafı textContent kullanır; HTML string üretimi tamamen bırakıldı.
+test('groupSections çıktısında hiçbir alan "<" içermez', () => {
+  const groups = groupSections([
+    { crn: '10008', when: 'Cuma 08:30/10:29', cap: 60, enr: 10, instructor: 'Hoca A', branch: 'TUR', code: 'TUR 101' },
+    { crn: '10009', when: 'Cuma 08:30/10:29', cap: 60, enr: 10, instructor: 'Hoca A', branch: 'TUR', code: 'TUR 101' },
+  ]);
+  for (const g of groups) {
+    for (const [k, v] of Object.entries(g)) {
+      assert.ok(!String(v).includes('<'), `${k} alanı "<" içeriyor: ${JSON.stringify(v)}`);
+    }
+    assert.ok(!g.label.includes('<'), g.label);
+    assert.deepEqual(g.crns, ['10008', '10009']);
+    assert.equal(g.count, 2);
+  }
 });
 
 // Hoca bilgisi "-" yedek işaretiyse kolon gizlenmeli (boş sayılır).

@@ -1768,11 +1768,12 @@ body.modal-open { overflow: hidden; }
   border-top: 1px dashed var(--hairline);
   padding: 6px 12px;
   display: grid; gap: 6px 12px; align-items: center; font-size: 13px;
-  grid-template-columns: 84px 1.2fr 1.1fr auto; /* crn · when · doluluk · eylemler */
+  grid-template-columns: 150px 1.2fr 1.1fr auto; /* crn · when · doluluk · eylemler */
 }
-.dp-sections.has-instr { grid-template-columns: 84px 1fr 1.2fr 1.1fr auto; }
+.dp-sections.has-instr { grid-template-columns: 150px 1fr 1.2fr 1.1fr auto; }
 .dp-section { display: contents; }
-.dp-crn { color: var(--dimmer); font-family: var(--mono); overflow-wrap: anywhere; }
+/* CRN aralık + şube sayısı tek satırda kalır (dar hücrede alt alta kırılmaz). */
+.dp-crn { color: var(--dimmer); font-family: var(--mono); white-space: nowrap; }
 .dp-crn-count { color: var(--dim); font-size: 11px; margin-left: 4px; white-space: nowrap; }
 .dp-instr { color: var(--dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .dp-when { color: var(--dim); overflow-wrap: anywhere; min-width: 0; }

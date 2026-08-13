@@ -48,6 +48,7 @@ colors:
   data-white: "#ffffff"
   black: "#000000"
   red-soft: "#ff2828"
+  obs-pulse-teal: "#2ecc9f"
 typography:
   scale:
     micro: "9px"

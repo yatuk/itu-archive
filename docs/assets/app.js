@@ -200,8 +200,8 @@ function initWelcome() {
 // Sade temasında sekme adları düz ("Dersler"), fosfor/CRT'de numaralı
 // ("01 · DERSLER") kalır — numaralandırma terminal kimliğinin parçası.
 const TAB_PLAIN = {
-  tr: { dersler: 'Dersler', gecmis: 'Geçmiş', onsart: 'Önşart Haritası', sinavlar: 'Sınavlar', takvim: 'Akademik Takvim', donemler: 'Dönemler', dersplanim: 'Ders Planım', program: 'Program', hakkinda: 'Hakkında' },
-  en: { dersler: 'Courses', gecmis: 'History', onsart: 'Prereq Map', sinavlar: 'Exams', takvim: 'Calendar', donemler: 'Terms', dersplanim: 'My Plan', program: 'Schedule', hakkinda: 'About' },
+  tr: { dersler: 'Dersler', gecmis: 'Geçmiş', dersplanim: 'Ders Planım/GPA', onsart: 'Önşart Haritası', sinavlar: 'Sınavlar', takvim: 'Akademik Takvim', donemler: 'Dönemler', program: 'Program', hakkinda: 'Hakkında' },
+  en: { dersler: 'Courses', gecmis: 'History', dersplanim: 'My Plan/GPA', onsart: 'Prereq Map', sinavlar: 'Exams', takvim: 'Calendar', donemler: 'Terms', program: 'Schedule', hakkinda: 'About' },
 };
 function applyTabLabels() {
   const sade = document.documentElement.getAttribute('data-theme') === 'sade';
@@ -214,7 +214,7 @@ function applyTabLabels() {
 
 /* ---------- sekmeler ---------- */
 
-const VIEWS = ['dersler', 'gecmis', 'onsart', 'sinavlar', 'takvim', 'donemler', 'dersplanim', 'program', 'hakkinda'];
+const VIEWS = ['dersler', 'gecmis', 'dersplanim', 'onsart', 'sinavlar', 'takvim', 'donemler', 'program', 'hakkinda'];
 
 // Dersler filtrelerini kısa kodlarla query'ye yazar (term yalnızca aktif dönem
 // dışındaysa). Varsayılanlar (boş/"hepsi"/aktif dönem) URL'ye girmez.

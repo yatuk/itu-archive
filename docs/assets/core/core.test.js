@@ -16,9 +16,9 @@ import { topByCount } from '../views/history.js';
 import { icsText, hashShort, foldLine, formatInt } from './utils.js';
 import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
 import { parseCodes } from './taken.js';
-import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary } from './plan.js';
+import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary, canonicalCode, codesMatch, groupSections, crnRangeText, courseMetaLabel } from './plan.js';
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from './grades.js';
-import { setGrade, setElective, buildEntries, exportJSON, importJSON } from './planstore.js';
+import { setGrade, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
 import * as fav from './favorites.js';
 
 test('methodToCode/codeToMethod iki yönlü çevirir', () => {
@@ -587,6 +587,86 @@ test('codeKey kodu büyük/küçük + boşluktan bağımsız tek anahtara indirg
   assert.equal(codeKey(''), '');
 });
 
+// Madde 1-2: OBS çift kod basabilir ("SAO 101E SAO 101"); kanonik kod tek kaynaktır,
+// eşleştirme E sonekini iki yönlü esnetir.
+test('canonicalCode çift koddan E sonekli tek kanonik kodu üretir', () => {
+  assert.equal(canonicalCode('SAO 101E SAO 101'), 'SAO 101E');
+  assert.equal(canonicalCode('SAO 103 SAO 103E'), 'SAO 103E'); // sıralama ters
+  assert.equal(canonicalCode('SAO 107E SAO 107'), 'SAO 107E');
+  assert.equal(canonicalCode('TUR 121'), 'TUR 121');           // tek kod
+  assert.equal(canonicalCode('BLG 102E'), 'BLG 102E');
+  assert.equal(canonicalCode(''), '');
+  assert.equal(canonicalCode('   '), '');
+});
+
+test('codesMatch "SAO 101E" ↔ "SAO 101" her iki yönde eşleşir', () => {
+  assert.equal(codesMatch('SAO 101E', 'SAO 101'), true);
+  assert.equal(codesMatch('SAO 101', 'SAO 101E'), true);
+  assert.equal(codesMatch('BLG 411E', 'BLG 411'), true);
+  assert.equal(codesMatch('BLG 411', 'BLG 411E'), true);
+  assert.equal(codesMatch('BLG 411E', 'BLG 411E'), true);
+  assert.equal(codesMatch('BLG 411', 'BLG 411'), true);
+  assert.equal(codesMatch('BLG 411E', 'TUR 101'), false);
+  assert.equal(codesMatch('BLG 411', 'BLG 411E1'), false);
+  assert.equal(codesMatch('', 'BLG 411'), false);
+});
+
+// Kök hata regresyonu: çift kodlu plan satırı ("SAO 101E SAO 101") dönem şubesi
+// "SAO 101E" ile eşleşmeli — join "eşleşme bulunamadı" dönmemeli.
+test('joinCourse çift kodlu plan kalemini dönem şubesiyle eşleştirir', () => {
+  const rows = [['10001', 'SAO 101E', 'Fund. Prog I', 'SAO', 'Hoca', 'Pazartesi', 60, 30, 'OL', 'Fiziksel', 'SAO_OL']];
+  const st = joinCourse('SAO 101E SAO 101', rows, {});
+  assert.equal(st.state, 'open');
+  assert.equal(st.sections.length, 1);
+  assert.equal(sectionsForCode(rows, 'SAO 101E SAO 101').length, 1);
+});
+
+// Madde 7: aynı zaman/kontenjanlı şubeler tek satıra iner.
+test('groupSections kopya şubeleri CRN aralığı + sayıyla gruplar', () => {
+  const sections = [
+    { crn: '10008', when: 'Cuma 08:30/10:29', cap: 60, enr: 10, instructor: '', branch: 'TUR' },
+    { crn: '10009', when: 'Cuma 08:30/10:29', cap: 60, enr: 10, instructor: '', branch: 'TUR' },
+    { crn: '10010', when: 'Cuma 08:30/10:29', cap: 60, enr: 10, instructor: '', branch: 'TUR' },
+    { crn: '20001', when: 'Salı 13:00/15:59', cap: 60, enr: 10, instructor: '', branch: 'TUR' },
+  ];
+  const groups = groupSections(sections);
+  assert.equal(groups.length, 2);
+  const g = groups[0];
+  assert.equal(g.count, 3);
+  assert.deepEqual(g.crns, ['10008', '10009', '10010']);
+  assert.equal(g.crnRange, '10008–10010');
+  assert.equal(groups[1].count, 1);
+  // Farklı kontenjan/saat gruplanmaz.
+  assert.equal(groupSections([
+    { crn: '1', when: 'Cuma 08:30/10:29', cap: 60, enr: 10 },
+    { crn: '2', when: 'Cuma 08:30/10:29', cap: 45, enr: 10 },
+  ]).length, 2);
+  assert.equal(groupSections([]).length, 0);
+});
+
+// Hoca bilgisi "-" yedek işaretiyse kolon gizlenmeli (boş sayılır).
+test('groupSections "-" hoca işaretini boş sayar', () => {
+  const g = groupSections([{ crn: '1', when: 'Cuma', cap: 60, enr: 10, instructor: '-' }]);
+  assert.equal(g[0].instructor, '');
+  const g2 = groupSections([{ crn: '1', when: 'Cuma', cap: 60, enr: 10, instructor: 'Hoca A' }]);
+  assert.equal(g2[0].instructor, 'Hoca A');
+});
+
+test('crnRangeText bitişik aralığı tireyle, kopukları virgülle yazar', () => {
+  assert.equal(crnRangeText(['10008', '10009', '10010']), '10008–10010');
+  assert.equal(crnRangeText(['10008', '10011']), '10008, 10011');
+  assert.equal(crnRangeText(['10008']), '10008');
+  assert.equal(crnRangeText([]), '');
+  assert.equal(crnRangeText(['ABC-1', 'ABC-2']), 'ABC-1, ABC-2'); // sayısal değil
+});
+
+// Madde 8: kredisiz derste "0 kr" basılır, birim tek başına kalmaz.
+test('courseMetaLabel kredisiz derste "0 kr" yazar', () => {
+  assert.equal(courseMetaLabel({ credits: 0, ects: 2, theory: 2, tutorial: 0, lab: 0 }), '2+0+0 · 0 kr · 2 AKTS');
+  assert.equal(courseMetaLabel({ credits: 4, ects: 5, theory: 3, tutorial: 2, lab: 0 }), '3+2+0 · 4 kr · 5 AKTS');
+  assert.equal(courseMetaLabel({ ects: 2, theory: 2 }), '2+0+0 · 0 kr · 2 AKTS'); // credits eksik
+});
+
 test('joinCourse açık/kapalı/eşleşmeyen üç durumu ayırır', () => {
   // search.json satırı: [crn, kod, ad, branş, hoca, zaman, kont, yazılan, seviye, yöntem, programlar]
   const rows = [
@@ -833,6 +913,35 @@ test('buildEntries + calcGPA: zorunlu + seçmeli notları GANO\'ya girer', () =>
   const entries = buildEntries(planFixture(), stored, catalog);
   const gpa = calcGPA(entries);
   assert.ok(Math.abs(gpa - ((4 * 3 + 3 * 3) / 6)) < 1e-9); // = 3,5
+});
+
+// Madde 6: tür kovaları yalnızca gerçek türleri sayar; Z/S (zorunlu/seçmeli
+// işareti) kovalara sızmaz.
+test('typeBuckets Z/S tür kovalarına sızmaz, yalnızca gerçek türleri sayar', () => {
+  const plan = {
+    semesters: [{
+      items: [
+        { course: { code: 'SAO 101E', type: 'Z', credits: 4 } },      // tür değil
+        { course: { code: 'SAO 109E', type: 'TM', credits: 2 } },
+        { course: { code: 'TUR 121', type: 'ITB', credits: 0 } },
+        { course: { code: 'BLG 411E', type: '', credits: 3 } },        // türsüz
+      ],
+    }],
+  };
+  const entries = [
+    { code: 'SAO 109E', credits: 2, grade: 'BB' },
+    { code: 'TUR 121', credits: 0, grade: 'CC' },
+  ];
+  const buckets = typeBuckets(plan, entries);
+  assert.equal(buckets.has('Z'), false);
+  assert.deepEqual(buckets.get('TM'), { done: 2, total: 2 });
+  assert.deepEqual(buckets.get('ITB'), { done: 0, total: 0 });
+  assert.equal(buckets.has('TB'), false);
+  // Çift kodlu plan satırı da kanonik kodla eşleşir.
+  const plan2 = {
+    semesters: [{ items: [{ course: { code: 'SAO 109 SAO 109E', type: 'TM', credits: 2 } }] }],
+  };
+  assert.deepEqual(typeBuckets(plan2, entries).get('TM'), { done: 2, total: 2 });
 });
 
 test('exportJSON/importJSON yuvarlak döner', () => {

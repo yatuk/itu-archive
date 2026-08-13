@@ -14,7 +14,7 @@
 // not girer (latestOnly/calcGPA). Seçmeli slotta ders seçilmediyse plan kredisi
 // varsayılandır ve `defaultCredit` işareti taşır.
 
-import { parseRange } from './plan.js';
+import { parseRange, canonicalCode } from './plan.js';
 
 const KEY = 'itu-grades';
 
@@ -80,9 +80,12 @@ export function buildEntries(plan, stored, catalogMap = new Map()) {
     sem.items.forEach((item, ii) => {
       const slotKey = `s${si}i${ii}`;
       if (item.course) {
-        const rec = grades[item.course.code] || {};
+        // Kanonik kod: OBS çift kod basabilirdi ("SAO 101E SAO 101"); not anahtarı
+        // ve GANO girdisi tek kodla tutarlı olsun diye burada indirgenir.
+        const code = canonicalCode(item.course.code);
+        const rec = grades[code] || grades[item.course.code] || {};
         entries.push({
-          code: item.course.code,
+          code,
           credits: item.course.credits || 0,
           ects: item.course.ects || 0,
           grade: rec.grade || '',
@@ -120,6 +123,27 @@ export function buildEntries(plan, stored, catalogMap = new Map()) {
     });
   });
   return entries;
+}
+
+// Tür bazlı ilerleme kovaları: yalnızca gerçek türler (TB/TM/MT/ITB/EC) kova olur;
+// türü olmayan ya da "Z"/"S" işaretli dersler sayılmaz. Dönüş Map<tür,{done,total}>
+// — notu girilmiş derslerin kredisi done'a girer. Saf, test edilebilir.
+export function typeBuckets(plan, entries) {
+  const REAL = ['TB', 'TM', 'MT', 'ITB', 'EC'];
+  const out = new Map();
+  const doneByCode = new Map((entries || []).filter((e) => e.grade).map((e) => [e.code, e]));
+  for (const sem of (plan?.semesters || [])) {
+    for (const item of sem.items) {
+      if (!item.course || !REAL.includes(item.course.type)) continue;
+      const t = item.course.type;
+      const cur = out.get(t) || { done: 0, total: 0 };
+      cur.total += item.course.credits || 0;
+      const e = doneByCode.get(canonicalCode(item.course.code));
+      if (e) cur.done += e.credits || 0;
+      out.set(t, cur);
+    }
+  }
+  return out;
 }
 
 // GANO girdilerini yarıyıllara böler (yarıyıl ortalaması için).

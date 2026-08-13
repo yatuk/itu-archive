@@ -21,9 +21,9 @@ import { openCourseDetail } from '../core/course-detail.js';
 import { fillBar } from '../core/chart.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
-import { joinCourse, joinElective, semesterLoad } from '../core/plan.js';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, courseMetaLabel } from '../core/plan.js';
 import { isTaken, getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js';
-import { loadStored, saveStored, setGrade, setElective, buildEntries, exportJSON, importJSON } from '../core/planstore.js';
+import { loadStored, saveStored, setGrade, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js';
 import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js';
 import { confirmDialog } from '../core/dialog.js';
 
@@ -93,25 +93,28 @@ function ensureHost() {
     </div>
     <p class="resultline" id="dp-result" aria-live="polite">program seçiliyor…</p>
     <div id="dp-summary" class="dp-summary"></div>
-    <div class="dp-grades" id="dp-grades" hidden>
-      <div class="dp-grades-grid">
-        <span><b id="dp-gano">—</b><em>GANO (girdiğin notlara göre)</em></span>
-        <span><b id="dp-progress">—</b><em>ilerleme</em></span>
-        <span><b id="dp-target">—</b><em>hedef</em></span>
+    <div class="dp-grades" id="dp-grades">
+      <p class="dp-grades-empty" id="dp-grades-empty">Not girdikçe GANO burada hesaplanır.</p>
+      <div class="dp-grades-body">
+        <div class="dp-grades-grid">
+          <div class="dp-metric"><em>GANO</em><b id="dp-gano">yok</b><small>girdiğin notlara göre</small></div>
+          <div class="dp-metric"><em>ilerleme</em><b id="dp-progress">0/0 kredi</b><small id="dp-progress-sub"></small></div>
+          <div class="dp-metric"><em>hedef</em><b id="dp-target">yok</b><small id="dp-target-sub"></small></div>
+        </div>
+        <div class="dp-types-progress" id="dp-types-progress" aria-live="polite"></div>
+        <div class="dp-transfer">
+          <label>şimdiye kadarki kredi <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal"></label>
+          <label>mevcut GANO <input id="dp-tgpa" type="number" min="0" max="4" step="0.01" inputmode="decimal"></label>
+          <label class="dp-target-gpa">hedef GANO <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00"> <span class="dp-target-hint" id="dp-target-hint"></span></label>
+        </div>
       </div>
-      <div class="dp-transfer">
-        <label>şimdiye kadarki kredi <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal"></label>
-        <label>mevcut GANO <input id="dp-tgpa" type="number" min="0" max="4" step="0.01" inputmode="decimal"></label>
-        <label class="dp-target-gpa">hedef GANO <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00"></label>
-      </div>
-      <div class="dp-types-progress" id="dp-types-progress" aria-live="polite"></div>
       <div class="dp-grades-actions">
         <button type="button" id="dp-export" class="btn-ghost">dışa aktar</button>
         <button type="button" id="dp-import" class="btn-ghost">içe aktar</button>
         <button type="button" id="dp-reset" class="btn-ghost p-danger">tümünü sıfırla</button>
       </div>
       <p class="dp-privacy">Notların yalnızca tarayıcında saklanır (localStorage); sunucuya hiçbir şey gönderilmez.
-      Bu bir transkript değildir — "resmî GANO'n budur" demeyiz, "girdiğin notlara göre" deriz. Yuvarlama,
+      Bu bir transkript değildir, "resmî GANO'n budur" demeyiz, "girdiğin notlara göre" deriz. Yuvarlama,
       koşullu geçme ve tekrar kuralları OBS ile küçük farklar üretebilir; kaynak
       <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">İTÜ not ve başarı yönergesi</a>.</p>
     </div>
@@ -320,9 +323,9 @@ function renderTypeFilter() {
   const wrap = $('#dp-types');
   if (!wrap) return;
   const types = ['ITB', 'TB', 'TM', 'MT', 'EC'];
-  wrap.innerHTML = types.map((t) =>
+  wrap.innerHTML = '<span class="dp-type-label">tür:</span>' + types.map((t) =>
     `<button type="button" class="dp-type ${filters.types.has(t) ? 'on' : ''}" data-type="${t}" aria-pressed="${filters.types.has(t)}">${t}</button>`
-  ).join('') + '<span class="dp-type-label">tür</span>';
+  ).join('');
   wrap.querySelectorAll('.dp-type').forEach((b) =>
     b.addEventListener('click', () => {
       const t = b.dataset.type;
@@ -377,10 +380,11 @@ function renderAll() {
       const slotKey = `s${i}i${ii}`;
       if (item.course) {
         const c = item.course;
+        const code = canonicalCode(c.code);
         if (filters.types.size && (!c.type || !filters.types.has(c.type))) return;
-        if (filters.hideTaken && isTaken(c.code)) return;
-        const st = joinCourse(c.code, rows, historyFor(branchOf(c.code)));
-        if (st.state === 'closed' && !histCache.has(branchOf(c.code))) historyCodes.push(c.code);
+        if (filters.hideTaken && isTaken(code)) return;
+        const st = joinCourse(code, rows, historyFor(branchOf(code)));
+        if (st.state === 'closed' && !histCache.has(branchOf(code))) historyCodes.push(code);
         if (filters.open && st.state !== 'open') return;
         if (filters.cap && !(st.state === 'open' && st.sections.some((sec) => sec.cap > sec.enr))) return;
         if (st.state === 'open') openCount++; else if (st.state === 'closed') closedCount++;
@@ -432,20 +436,36 @@ function planSummaryLine(open, closed, slotOpen, shown) {
   return parts.join(' · ');
 }
 
+// Gerçek ders türleri; "Z"/"S" zorunlu/seçmeli işaretidir, tür değildir.
+const REAL_TYPES = ['TB', 'TM', 'MT', 'ITB', 'EC'];
+
+// Rozetler: ilki Z/S (zorunlu/seçmeli), ikincisi yalnızca gerçek ders türüyse.
+// Tür boş ya da "Z" ise ikinci rozet basılmaz (yedek değer kullanılmaz).
+function badgeHtml(c) {
+  const reqTitle = c.required === 'S' ? 'seçmeli' : 'zorunlu';
+  const badges = [];
+  if (c.required) badges.push(`<span class="dp-badge dp-req" title="${reqTitle}" aria-label="${reqTitle}">${esc(c.required)}</span>`);
+  if (REAL_TYPES.includes(c.type)) {
+    badges.push(`<span class="dp-badge dp-type-b" title="ders türü: ${esc(c.type)}" aria-label="ders türü ${esc(c.type)}">${esc(c.type)}</span>`);
+  }
+  return badges.join('');
+}
+
 function courseRow(c, st, slotKey) {
-  const meta = `${[c.theory, c.tutorial, c.lab].map((n) => n || 0).join('+')} · ${trNum(c.credits)} kr · ${trNum(c.ects)} AKTS`;
-  const badges = [
-    c.required ? `<span class="dp-badge dp-req">${esc(c.required)}</span>` : '',
-    c.type ? `<span class="dp-badge dp-type-b">${esc(c.type)}</span>` : '',
-  ].join('');
+  // Kanonik kod: OBS çift kod basabilirdi ("SAO 101E SAO 101") — ekranda tek kod,
+  // bağlantı ve not anahtarı aynı kaynaktan.
+  const code = canonicalCode(c.code);
+  // Kredi 0/eksik olan ders "0 kr" basmalı — birimi tek başına bırakma.
+  const meta = courseMetaLabel(c);
+  const badges = badgeHtml(c);
   const status = statusBadge(c, st);
-  const rec = (stored.grades || {})[c.code] || {};
-  const repeat = rec.prev ? `<span class="dp-repeat" title="İTÜ'de son alınan not geçerli — önceki hesaba girmez">tekrar · önceki: ${esc(rec.prev)}</span>` : '';
-  const grade = gradeOptions(rec.grade || '', c.code);
-  const sections = st.state === 'open' ? `<div class="dp-sections">${st.sections.map(sectionRow).join('')}</div>` : '';
+  const rec = (stored.grades || {})[code] || {};
+  const repeat = rec.prev ? `<span class="dp-repeat" title="İTÜ'de son alınan not geçerli, önceki hesaba girmez">tekrar · önceki: ${esc(rec.prev)}</span>` : '';
+  const grade = gradeOptions(rec.grade || '', code);
+  const sections = st.state === 'open' ? renderSections(st.sections, code) : '';
   return `<div class="dp-course">
     <div class="dp-course-head">
-      <button type="button" class="dp-code" data-act="detail" data-code="${esc(c.code)}">${esc(c.code)}</button>
+      <button type="button" class="dp-code" data-act="detail" data-code="${esc(code)}">${esc(code)}</button>
       <span class="dp-name">${esc(c.name)}</span>
       ${badges}
       <span class="dp-meta">${meta}</span>
@@ -458,30 +478,64 @@ function courseRow(c, st, slotKey) {
 }
 
 function statusBadge(c, st) {
+  const code = canonicalCode(c.code);
   if (st.state === 'open') {
-    const cap = st.sections.reduce((s, x) => s + (x.cap || 0), 0);
-    const enr = st.sections.reduce((s, x) => s + (x.enr || 0), 0);
-    return `<span class="dp-status open" title="${esc(c.code)} bu dönem açık">● açık · ${st.sections.length} şube · ${enr}/${cap}</span>`;
+    return `<span class="dp-status open" title="${esc(code)} bu dönem açık">● açık · ${st.sections.length} şube</span>`;
   }
   if (st.state === 'closed') {
     return `<span class="dp-status closed">● bu dönem açık değil · son ${esc(termLabel(st.lastTerm))}</span>`;
   }
-  return `<span class="dp-status missing">● eşleşme bulunamadı</span>`;
+  // "eşleşme bulunamadı" teknik bir hata gibi duruyor; kullanıcıya açık olmadığını söyle.
+  return `<span class="dp-status missing">● bu dönem açık değil</span>`;
 }
 
-// Şube alt satırı: CRN · hoca · gün/saat · doluluk + eylemler.
-function sectionRow(sec) {
-  const when = sec.when || '—';
-  const fill = sec.cap > 0 ? fillBar(sec.cap, sec.enr) : '—';
-  const full = sec.cap > 0 && sec.enr >= sec.cap;
+// Varsayılan görünür şube grubu sayısı; fazlası "N şube daha göster" arkasında.
+const SECTION_SHOW = 3;
+
+// Şubeleri çizer: aynı zaman/kontenjanlıları gruplar, varsayılan 3 grup + "daha
+// göster". Hoca bilgisi hiçbir şubede yoksa o kolon hiç çizilmez.
+function renderSections(sections, code) {
+  const groups = groupSections(sections);
+  const hasInstr = groups.some((g) => g.instructor);
+  const shown = groups.slice(0, SECTION_SHOW);
+  const rest = groups.slice(SECTION_SHOW);
+  const restCount = rest.reduce((s, g) => s + g.count, 0);
+  const rowHtml = (g) => sectionGroupRow(g, hasInstr);
+  const rows = shown.map(rowHtml).join('');
+  const more = restCount > 0
+    ? `<button type="button" class="dp-more" data-act="dp-more" aria-expanded="false" data-count="${restCount}">${restCount} şube daha göster</button>
+       <div class="dp-more-wrap" hidden>${rest.map(rowHtml).join('')}</div>`
+    : '';
+  const totalCap = sections.reduce((s, x) => s + (x.cap || 0), 0);
+  const totalEnr = sections.reduce((s, x) => s + (x.enr || 0), 0);
+  const total = totalCap > 0
+    ? `<span class="dp-sections-total">toplam kontenjan ${trNum(totalCap)}${totalEnr > 0 ? ` · ${trNum(totalEnr)} yazılan` : ''}</span>`
+    : '';
+  return `<div class="dp-sections ${hasInstr ? 'has-instr' : 'no-instr'}">${rows}${more}${total}</div>`;
+}
+
+// Tek şube grubu satırı: CRN aralığı · (hoca) · gün/saat · şube başına doluluk.
+// Toplu kontenjan tek sayı olarak basılmaz; her satır kendi kontenjanını gösterir.
+function sectionGroupRow(g, hasInstr) {
+  const crnTxt = g.count > 1
+    ? `${g.crnRange} <span class="dp-crn-count" title="${esc(g.crns.join(', '))}">${g.count} şube</span>`
+    : g.crnRange;
+  // hasInstr (bu derste hoca kolonu çiziliyorsa) grubun hocası yoksa boş hücre
+  // konur — aksi halde ızgaradaki kolonlar satırlar arasında kayar.
+  const instr = hasInstr
+    ? (g.instructor ? `<span class="dp-instr">${esc(g.instructor)}</span>` : '<span class="dp-instr"></span>')
+    : '';
+  const when = g.when || 'saat yok';
+  const fill = g.cap > 0 ? fillBar(g.cap, g.enr) : 'kontenjan yok';
+  const full = g.cap > 0 && g.enr >= g.cap;
   return `<div class="dp-section">
-    <span class="dp-crn">${esc(sec.crn)}</span>
-    <span class="dp-instr">${esc(sec.instructor || '—')}</span>
+    <span class="dp-crn" title="${esc(g.crns.join(', '))}">${esc(crnTxt)}</span>
+    ${instr}
     <span class="dp-when">${esc(when)}</span>
     <span class="dp-fill">${fill}${full ? ' <span class="dp-full">dolu</span>' : ''}</span>
     <span class="dp-actions">
-      <button type="button" data-act="detail" data-code="${esc(sec.code)}">detay</button>
-      <button type="button" data-act="add" data-branch="${esc(sec.branch)}" data-crn="${esc(sec.crn)}">programa ekle</button>
+      <button type="button" data-act="detail" data-code="${esc(g.code)}">detay</button>
+      <button type="button" data-act="add" data-branch="${esc(g.branch)}" data-crn="${esc(g.crns[0])}" title="${esc(g.crns[0])} şubesini programa ekle">programa ekle</button>
     </span>
   </div>`;
 }
@@ -520,10 +574,37 @@ function fmtSemLoad(load) {
 
 // -- özet şeridi --
 
+// Plan toplamları. Sayfa altı değeri 0/çözülemezse (önlisans AKTS gibi) kalemlerden
+// toplanır ve "hesaplandı" işareti konur — sıfır göstermek veri yokluğunu "sıfır AKTS"
+// iddiasına çevirir. Kaynak kazıyıcı totalEctsComputed da yazabilir; eski dosyalarda
+// toplam 0 ise burada yine hesaplanır.
+function planTotal() {
+  let cSum = 0, eSum = 0;
+  for (const sem of (plan?.semesters || [])) {
+    for (const it of sem.items) {
+      if (it.course) { cSum += it.course.credits || 0; eSum += it.course.ects || 0; }
+      else if (it.elective) {
+        cSum += parseRange(it.elective.credits, [0])[0] || 0;
+        eSum += (it.elective.ects && it.elective.ects[0]) || 0;
+      }
+    }
+  }
+  const c = num(plan?.totalCredits);
+  const e = num(plan?.totalEcts);
+  return {
+    credits: c > 0 ? c : cSum,
+    ects: e > 0 ? e : eSum,
+    creditsComputed: plan?.totalCreditsComputed === true || !(c > 0),
+    ectsComputed: plan?.totalEctsComputed === true || !(e > 0),
+  };
+}
+
 function renderSummary(sems) {
   const el = $('#dp-summary');
   if (!el) return;
-  const total = `${trNum(num(plan.totalCredits))} kredi · ${trNum(num(plan.totalEcts))} AKTS`;
+  const tot = planTotal();
+  const total = `${trNum(tot.credits)} kredi · ${trNum(tot.ects)} AKTS`;
+  const computed = (tot.creditsComputed || tot.ectsComputed) ? ' · hesaplandı' : '';
   const load = sems.length === 1
     ? `seçili yarıyıl ${fmtSemLoad(semesterLoad(sems[0]))}`
     : sems.length > 1 ? `${sems.length} yarıyıl` : 'tüm plan';
@@ -533,8 +614,8 @@ function renderSummary(sems) {
   const remainHtml = remain > 0 ? `<span><b>${remain} ders</b><em>kalan zorunlu</em></span>` : '';
   el.innerHTML = `<div class="dp-summary-grid">
     <span><b>${esc(prog)}</b><em>${label || esc(progCode)}</em></span>
-    <span><b>${esc(total)}</b><em>program toplamı</em></span>
-    <span><b>${esc(load)}</b><em>plan yükü</em></span>
+    <span><b>${esc(total)}</b><em>program toplamı${esc(computed)}</em></span>
+    <span><b>${esc(load)}</b><em>plan uzunluğu</em></span>
     ${remainHtml}
   </div>`;
 }
@@ -551,7 +632,7 @@ function remainingRequired() {
   let n = 0;
   for (const sem of plan.semesters) {
     for (const item of sem.items) {
-      if (item.course && item.course.required === 'Z' && !graded.has(item.course.code)) n++;
+      if (item.course && item.course.required === 'Z' && !graded.has(canonicalCode(item.course.code))) n++;
     }
   }
   return n;
@@ -599,59 +680,67 @@ function hasAnyGrade() {
   return allEntries().some((e) => e.grade);
 }
 
-// GANO paneli: ort, ilerleme, hedef + transfer alanları. Hiç not yoksa gizli.
+// GANO paneli: üç sabit hizalı kutu (etiket üstte, değer altta). Hiç not ve
+// transfer yokken tek satır yeter; boş metrikler sıralanmaz.
 function renderGPA() {
   const panel = $('#dp-grades');
   if (!panel) return;
-  if (!hasAnyGrade() && !stored.transfer) {
-    panel.hidden = true;
-    return;
-  }
-  panel.hidden = false;
-  const st = currentState();
-  $('#dp-gano').textContent = st.gpa === null ? '—' : fmtTr2(st.gpa);
-  const p = progress(allEntries(), { credits: plan.totalCredits, ects: plan.totalEcts }, stored.transfer);
-  $('#dp-progress').textContent = `${p.credits.done}/${p.credits.total || '?'} kredi · ${p.ects.done}/${p.ects.total || '?'} AKTS`;
-  $('#dp-target').textContent = targetText(st);
-  $('#dp-types-progress').textContent = typeProgress();
+  const hasGrades = hasAnyGrade();
+  const hasTransfer = Boolean(stored.transfer && Number(stored.transfer.credits) > 0);
+  const empty = !hasGrades && !hasTransfer;
+  const emptyEl = $('#dp-grades-empty');
+  const body = panel.querySelector('.dp-grades-body');
+  if (emptyEl) emptyEl.hidden = !empty;
+  if (body) body.classList.toggle('hidden', empty);
   const t = stored.transfer || {};
   $('#dp-tcredits').value = t.credits ?? '';
   $('#dp-tgpa').value = t.gpa ?? '';
+  if (empty) { setTargetState(true); return; }
+
+  const st = currentState();
+  $('#dp-gano').textContent = st.gpa == null ? 'yok' : fmtTr2(st.gpa);
+  const tot = planTotal();
+  const p = progress(allEntries(), { credits: tot.credits, ects: tot.ects }, stored.transfer);
+  $('#dp-progress').textContent = `${p.credits.done}/${p.credits.total} kredi`;
+  const sub = $('#dp-progress-sub');
+  if (sub) sub.textContent = tot.ects > 0 ? `${p.ects.done}/${p.ects.total} AKTS` : '';
+  $('#dp-target').textContent = targetText(st, tot);
+  $('#dp-types-progress').textContent = typeProgress();
+  setTargetState(st.gpa == null || st.credits === 0);
 }
 
-// Tür bazlı eksik: "ITB kredin 9/12" — plan satırlarındaki type alanından bedava.
+// Hedef GANO alanı, mevcut GANO yokken sonuç üretemez — pasifleştir ve nedenini yaz.
+function setTargetState(off) {
+  const input = $('#dp-targetgpa');
+  const hint = $('#dp-target-hint');
+  if (!input) return;
+  input.disabled = off;
+  if (hint) hint.textContent = off ? 'mevcut GANO yok, önce not gir' : '';
+}
+
+// Tür bazlı eksik: "EC 0/5 kredi" — yalnızca gerçek türler kova olur; türü olmayan
+// dersler sayılmaz, Z/S kovalara sızmaz. Kova hesabı saf planstore.typeBuckets'te.
 function typeProgress() {
-  const planType = new Map();
-  const doneType = new Map();
-  const doneByCode = new Map(allEntries().filter((e) => e.grade).map((e) => [e.code, e]));
-  for (const sem of (plan?.semesters || [])) {
-    for (const item of sem.items) {
-      if (!item.course || !item.course.type) continue;
-      const t = item.course.type;
-      planType.set(t, (planType.get(t) || 0) + (item.course.credits || 0));
-      const e = doneByCode.get(item.course.code);
-      if (e) doneType.set(t, (doneType.get(t) || 0) + (e.credits || 0));
-    }
-  }
-  if (!planType.size) return '';
-  return [...planType.entries()]
+  const buckets = typeBuckets(plan, allEntries());
+  if (!buckets.size) return '';
+  return [...buckets.entries()]
     .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([t, total]) => `${t} kredin ${doneType.get(t) || 0}/${total}`)
+    .map(([t, b]) => `${t} ${b.done}/${b.total} kredi`)
     .join(' · ');
 }
 
-function targetText(st) {
-  if (st.gpa === null) return 'not girilmedikçe hesap yok';
+function targetText(st, tot) {
+  if (st.gpa === null) return 'önce not gir, mevcut GANO yok';
   const target = parseFloat(String($('#dp-targetgpa').value || '3').replace(',', '.'));
   if (isNaN(target)) return '';
-  const total = num(plan.totalCredits);
+  const total = tot.credits;
   const remaining = Math.max(0, total - st.credits);
-  if (remaining === 0) return 'tüm plan kredisi girilmiş — hedef hesabı kalmadı';
+  if (remaining === 0) return 'tüm plan kredisi girilmiş, hedef hesabı kalmadı';
   const r = targetNeeded({ gpa: st.gpa, credits: st.credits }, target, remaining);
   if (!r) return '';
   const rem = Math.round(remaining);
   if (r.needed > 4.0) {
-    return `GANO'yu ${fmtTr2(target)} yapmak için kalan ${rem} kredide ortalama ${fmtTr2(r.needed)} gerekir — 4,00'ü aşmak gerekir, ulaşılamaz`;
+    return `GANO'yu ${fmtTr2(target)} yapmak için kalan ${rem} kredide ortalama ${fmtTr2(r.needed)} gerekir, 4,00'ü aşmak gerekir, ulaşılamaz`;
   }
   return `GANO'yu ${fmtTr2(target)} yapmak için kalan ${rem} kredide ortalama ${fmtTr2(r.needed)} gerekir`;
 }
@@ -795,6 +884,15 @@ function init() {
       toast(ok ? 'programa eklendi' : 'zaten listede');
       act.disabled = true;
       act.textContent = ok ? '✓ eklendi' : 'listedeydi';
+    } else if (a === 'dp-more') {
+      // "N şube daha göster" — sonraki grup satırlarını aç/kapat.
+      const wrap = act.nextElementSibling;
+      const open = wrap ? !wrap.hidden : false;
+      if (wrap) {
+        wrap.hidden = open;
+        act.textContent = open ? 'daha az göster' : `${act.dataset.count || ''} şube daha göster`;
+        act.setAttribute('aria-expanded', String(!open));
+      }
     } else if (a === 'pool') {
       // Seçmeli havuz panelini mevcut akışla aç: URL'yi kur, önşart sekmesine git.
       // Sayfa, ?prog+&pool= URL mekanizmasını çalıştırır — ikinci bir liste yazılmaz.

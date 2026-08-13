@@ -25,33 +25,116 @@ export function codeKey(code) {
   return String(code || '').toUpperCase().replace(/\s+/g, '');
 }
 
+// Ham plan kodunu TEK kanonik koda indirger. OBS müfredatı aynı dersin İngilizce
+// ve Türkçe kodlarını yan yana basabilirdi ("SAO 101E SAO 101"); E sonekli
+// (İngilizce) sürüm kanonik kabul edilir. Görünüm ve eşleştirme bu fonksiyonu
+// tek kaynak kullanır — kod iki kere basılmaz, join çift kodla bozulmaz.
+export function canonicalCode(code) {
+  const parts = String(code || '').trim().split(/\s+/);
+  const tokens = [];
+  for (let i = 0; i + 1 < parts.length; i++) {
+    // "101" ya da "101E" (İngilizce-E sonekli) sayı parçası: "SAO 101E" tek kalem.
+    if (/^\d{2,4}E?$/i.test(parts[i + 1])) {
+      tokens.push(parts[i] + ' ' + parts[i + 1]);
+      i++;
+    }
+  }
+  if (!tokens.length) return String(code || '').trim();
+  return tokens.find((t) => t.endsWith('E')) || tokens[0];
+}
+
+// Plan kodu ↔ dönem şube kodu eşleşmesini ortak saf fonksiyona indirger:
+// boşlukları at, büyük harfe çevir, E sonekini iki yönlü dene — "SAO 101" ↔
+// "SAO 101E" her iki yönde de eşleşir. (E-soneki İngilizce koddur, ders aynıdır.)
+export function codesMatch(a, b) {
+  const ka = codeKey(a);
+  const kb = codeKey(b);
+  if (!ka || !kb) return false;
+  if (ka === kb) return true;
+  return ka.replace(/E$/, '') === kb || kb.replace(/E$/, '') === ka;
+}
+
 // Ders kodunun dönem şubelerini bulur. "BLG 102E" hem "BLG 102E" hem "BLG 102"
 // satırlarıyla eşleşir (İngilizce-E soneki — aramadaki mevcut davranış).
 export function sectionsForCode(rows, code) {
-  const want = codeKey(code);
+  const canonical = canonicalCode(code);
+  const want = codeKey(canonical);
   if (!want) return [];
   return (rows || [])
-    .filter((r) => {
-      const key = codeKey(r[1]);
-      // Satırın E-soneksiz hali sorguya eşitse de eşleşir: "BLG 102" sorgusu
-      // "BLG 102E" şubesini de bulur.
-      return key === want || key.replace(/E$/, '') === want;
-    })
+    .filter((r) => codesMatch(r[1], canonical))
     .map(rowToSection);
+}
+
+// Şubeleri aynı zaman/kontenjan/hoca üzerinden gruplar. Aynı gün/saat ve kontenjana
+// sahip şubeler (ör. 37 kopya şube) tek satıra iner: CRN aralığı · gün/saat · N şube.
+// Dönüş: [{ crns, when, cap, enr, instructor, branch, code, count, crnRange }].
+export function groupSections(sections) {
+  const groups = [];
+  const byKey = new Map();
+  for (const s of (sections || [])) {
+    const instructor = cleanInstructor(s.instructor);
+    const key = [s.when, s.cap, s.enr, instructor, s.branch].join('|');
+    let g = byKey.get(key);
+    if (!g) {
+      g = { crns: [], when: s.when, cap: s.cap, enr: s.enr, instructor, branch: s.branch, code: s.code };
+      byKey.set(key, g);
+      groups.push(g);
+    }
+    g.crns.push(s.crn);
+  }
+  return groups.map((g) => ({ ...g, count: g.crns.length, crnRange: crnRangeText(g.crns) }));
+}
+
+// "-" / "—" gibi yedek hoca işaretleri boş sayılır — hoca kolonu o zaman hiç çizilmez.
+function cleanInstructor(v) {
+  const t = String(v || '').trim();
+  return (t === '-' || t === '—' || t === '–') ? '' : t;
+}
+
+// Ders satırının yük etiketi: "2+0+0 · 0 kr · 2 AKTS". Kredi 0/eksikse "0 kr"
+// basılır — birim tek başına kalmaz, "kr" boş kalmaz.
+export function courseMetaLabel(c) {
+  const tct = [c.theory, c.tutorial, c.lab].map((n) => n || 0).join('+');
+  return `${tct} · ${trNum(c.credits ?? 0)} kr · ${trNum(c.ects ?? 0)} AKTS`;
+}
+
+// "10008, 10009, 10010" → "10008–10010"; sayısal olmayan CRN'ler virgüllü kalır.
+export function crnRangeText(crns) {
+  const nums = (crns || []).map(Number).filter((n) => !isNaN(n));
+  if (nums.length !== (crns || []).length) return (crns || []).join(', ');
+  nums.sort((a, b) => a - b);
+  const parts = [];
+  let start = nums[0], prev = nums[0];
+  for (let i = 1; i <= nums.length; i++) {
+    const cur = nums[i];
+    if (cur !== prev + 1) {
+      parts.push(prev === start ? String(start) : `${start}–${prev}`);
+      start = cur;
+    }
+    prev = cur;
+  }
+  return parts.join(', ');
 }
 
 // Bir ders kodunun durumu: açık (bu dönem şubesi var) / kapalı (geçmişte açıldı)
 // / eşleşme yok (geçmişte de hiç açılmadı ya da kod farklı).
 // history: history/courses/<BRANŞ>.json nesnesi (kod → { code, terms, rows }).
 export function joinCourse(code, rows, history) {
-  const sections = sectionsForCode(rows, code);
+  const canonical = canonicalCode(code);
+  const sections = sectionsForCode(rows, canonical);
   if (sections.length) return { state: 'open', sections };
-  const want = codeKey(code);
-  const rec = (history && (history[code] || history[want])) || null;
+  const rec = historyRecord(history, canonical) || historyRecord(history, code);
   if (rec && rec.terms && rec.terms.length) {
     return { state: 'closed', lastTerm: rec.terms[rec.terms.length - 1] };
   }
   return { state: 'missing' };
+}
+
+// history kaydını kod + kanonik + anahtar biçimlerinin birinde arar.
+function historyRecord(history, code) {
+  if (!history || !code) return null;
+  const c = canonicalCode(code);
+  return history[code] || history[c] || history[codeKey(c)] || history[codeKey(code)] || null;
 }
 
 // Seçmeli slot: her alternatifin durumunu ekleyip bu dönem açık olanları sayar.

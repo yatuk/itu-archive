@@ -121,7 +121,11 @@ type Plan struct {
 	PlanLabel    string     `json:"planLabel"`
 	TotalCredits string     `json:"totalCredits,omitempty"` // sayfa altı "Toplam Kredi"
 	TotalEcts    string     `json:"totalEcts,omitempty"`    // sayfa altı "Toplam AKTS"
-	Semesters    []Semester `json:"semesters"`
+	// OBS bazı programlarda (özellikle önlisans) AKTS toplamını 0,00 basar;
+	// o zaman kalemlerden toplanır ve bu bayrak "hesaplandı" işareti olur.
+	TotalCreditsComputed bool `json:"totalCreditsComputed,omitempty"`
+	TotalEctsComputed    bool `json:"totalEctsComputed,omitempty"`
+	Semesters            []Semester `json:"semesters"`
 }
 
 type Client struct {
@@ -147,6 +151,12 @@ var (
 	planIDRe = regexp.MustCompile(`DersPlanDetay/(\d+)`)
 	totalKrediRe = regexp.MustCompile(`(?i)Toplam\s+Kredi[^0-9]*([0-9.,]+)`)
 	totalEctsRe  = regexp.MustCompile(`(?i)Toplam\s+AKTS[^0-9]*([0-9.,]+)`)
+	// Ders kodu hücresindeki bağlantılar: <a href="...bransKodu=SAO&dersNo=101">SAO 101E</a>.
+	// OBS aynı dersin İngilizce ve Türkçe kodlarını AYRI bağlantılar basar —
+	// clean() bunları yan yana metne çevirip "SAO 101E SAO 101" üretirdi.
+	codeLinkRe = regexp.MustCompile(`(?is)<a[^>]*>(.*?)</a>`)
+	// "SAO 101E" / "BLG 102" / "TUR 121" kod kalıbı (branş + numara + isteğe bağlı E).
+	codeRe = regexp.MustCompile(`(?i)\b([A-ZÇĞİÖŞÜ]{2,5})\s*(\d{2,4})\s*(E)?\b`)
 )
 
 // Programs, tüm seviyelerdeki programların kodunu, seviyesini ve fakültesini
@@ -291,13 +301,13 @@ func (c *Client) Plan(ctx context.Context, p Program) (*Plan, error) {
 				}})
 				continue
 			}
-			sem.Items = append(sem.Items, Item{Course: parseCourse(v)})
+			sem.Items = append(sem.Items, Item{Course: parseCourse(v, cells[0][1])})
 		}
 		if len(sem.Items) > 0 {
 			plan.Semesters = append(plan.Semesters, sem)
 		}
 	}
-	plan.TotalCredits, plan.TotalEcts = planTotals(body)
+	fillPlanTotals(plan, body)
 	return plan, nil
 }
 
@@ -347,14 +357,14 @@ func (c *Client) parseFlatPlan(ctx context.Context, body string, p Program, labe
 			}})
 			continue
 		}
-		sem.Items = append(sem.Items, Item{Course: parseCourse(v)})
+		sem.Items = append(sem.Items, Item{Course: parseCourse(v, cells[0][1])})
 	}
 
 	plan := &Plan{ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, Level: p.Level, PlanLabel: label}
 	if len(sem.Items) > 0 {
 		plan.Semesters = append(plan.Semesters, sem)
 	}
-	plan.TotalCredits, plan.TotalEcts = planTotals(body)
+	fillPlanTotals(plan, body)
 	return plan, nil
 }
 
@@ -382,12 +392,20 @@ func (c *Client) group(ctx context.Context, id string) ([]Course, error) {
 		if first == "" || first == "Ders" {
 			continue
 		}
-		parts := strings.Fields(first)
-		if len(parts) < 3 {
-			continue // "BLG 337E Başlık..." biçiminde değilse atla
+		// Kod hücresinde bağlantı varsa kanonik kodu oradan al (çift kod da olabilir);
+		// yoksa "BRANŞ NUMARA Adı..." biçiminden kırp.
+		code := canonicalCode(cells[0][1])
+		if code == "" {
+			parts := strings.Fields(first)
+			if len(parts) < 3 {
+				continue // "BLG 337E Başlık..." biçiminde değilse atla
+			}
+			code = parts[0] + " " + parts[1]
 		}
-		code := parts[0] + " " + parts[1]
-		name := strings.TrimSpace(strings.Join(parts[2:], " "))
+		name := strings.TrimSpace(first)
+		if code != "" {
+			name = strings.TrimSpace(strings.Replace(first, code, "", 1))
+		}
 		opts = append(opts, Course{Code: code, Name: name})
 	}
 
@@ -475,14 +493,65 @@ func num(s string) float64 {
 }
 
 // parseCourse, plan tablosu satırından Course üretir. Kolonlar: kod, ad, dil,
-// Z/S, kredi, AKTS, teo, uyg, lab, tür (Faz: Ders Planım).
-func parseCourse(v []string) *Course {
+// Z/S, kredi, AKTS, teo, uyg, lab, tür (Faz: Ders Planım). rawCodeCell ham kod
+// hücresinin HTML'idir; tek kanonik kod oradan üretilir (çift kod sorunu).
+func parseCourse(v []string, rawCodeCell string) *Course {
+	code := canonicalCode(rawCodeCell)
+	if code == "" {
+		code = matchCode(at(v, 0))
+	}
 	return &Course{
-		Code: at(v, 0), Name: at(v, 1), Language: at(v, 2), Required: at(v, 3),
+		Code: code, Name: at(v, 1), Language: at(v, 2), Required: at(v, 3),
 		Credits: num(at(v, 4)), Ects: num(at(v, 5)),
 		Theory: int(num(at(v, 6))), Tutorial: int(num(at(v, 7))), Lab: int(num(at(v, 8))),
-		Type: at(v, 9),
+		Type: normType(at(v, 9)),
 	}
+}
+
+// canonicalCode, ders kodu hücresinin HTML'inden TEK kanonik kod üretir. OBS aynı
+// dersin İngilizce ve Türkçe kodlarını ayrı bağlantılar basar ("SAO 101E" + "SAO
+// 101"); E sonekli (İngilizce) sürüm kanonik kabul edilir, yoksa ilk eşleşen alınır.
+func canonicalCode(cellHTML string) string {
+	var codes []string
+	for _, m := range codeLinkRe.FindAllStringSubmatch(cellHTML, -1) {
+		if c := matchCode(clean(m[1])); c != "" {
+			codes = append(codes, c)
+		}
+	}
+	if len(codes) == 0 {
+		return matchCode(clean(cellHTML))
+	}
+	for _, c := range codes {
+		if strings.HasSuffix(c, "E") {
+			return c
+		}
+	}
+	return codes[0]
+}
+
+// matchCode, bir metindeki "SAO 101E" kod kalıbını standart biçime ("SAO 101E")
+// getirir; bulamazsa boş döner.
+func matchCode(s string) string {
+	m := codeRe.FindStringSubmatch(s)
+	if m == nil {
+		return ""
+	}
+	code := m[1] + " " + m[2]
+	if m[3] != "" {
+		code += "E"
+	}
+	return code
+}
+
+// normType, yalnızca gerçek ders türlerini bırakır. OBS önlisans planlarında tür
+// kolonunda "Z"/"S" (zorunlu/seçmeli işareti) da geçiyor — bunlar tür değildir.
+func normType(s string) string {
+	t := strings.ToUpper(strings.TrimSpace(s))
+	switch t {
+	case "TB", "TM", "MT", "ITB", "EC":
+		return t
+	}
+	return ""
 }
 
 // planTotals, sayfa altındaki "Toplam Kredi / Toplam AKTS" değerlerini çözer.
@@ -494,6 +563,56 @@ func planTotals(body string) (string, string) {
 		return ""
 	}
 	return g(totalKrediRe), g(totalEctsRe)
+}
+
+// fillPlanTotals, sayfa altı toplamlarını yazar; toplam 0/çözülemezse kalemlerden
+// toplayıp "hesaplandı" işaretini koyar. OBS bazı programlarda (önlisans) AKTS
+// toplamını kalemlerde AKTS olsa bile 0,00 basar — sıfır göstermek "bu planın
+// AKTS'si yok" iddiasına dönüşmemeli.
+func fillPlanTotals(plan *Plan, body string) {
+	k, e := planTotals(body)
+	plan.TotalCredits, plan.TotalEcts = k, e
+
+	var cSum, eSum float64
+	for _, sem := range plan.Semesters {
+		for _, it := range sem.Items {
+			switch {
+			case it.Course != nil:
+				cSum += it.Course.Credits
+				eSum += it.Course.Ects
+			case it.Elective != nil:
+				if lo := slotCreditLo(it.Elective.Credits); lo > 0 {
+					cSum += lo
+				}
+				if len(it.Elective.Ects) > 0 && it.Elective.Ects[0] > 0 {
+					eSum += it.Elective.Ects[0]
+				}
+			}
+		}
+	}
+	if num(k) == 0 && cSum > 0 {
+		plan.TotalCredits = fmtTotal(cSum)
+		plan.TotalCreditsComputed = true
+	}
+	if num(e) == 0 && eSum > 0 {
+		plan.TotalEcts = fmtTotal(eSum)
+		plan.TotalEctsComputed = true
+	}
+}
+
+// slotCreditLo, seçmeli slot kredi aralığının ilk (varsayılan) değerini verir.
+func slotCreditLo(s string) float64 {
+	for _, p := range strings.FieldsFunc(strings.TrimSpace(s), func(r rune) bool { return r == '/' || r == '-' }) {
+		if f := num(p); f > 0 {
+			return f
+		}
+	}
+	return 0
+}
+
+// fmtTotal, hesaplanan toplamı plan dosyası biçimine ("82,00") çevirir.
+func fmtTotal(f float64) string {
+	return strings.Replace(strconv.FormatFloat(f, 'f', 2, 64), ".", ",", 1)
 }
 
 // parseEctsRange, "4 / 5 / 6" aralığını sayı dizisine çevirir; tek değerse tek

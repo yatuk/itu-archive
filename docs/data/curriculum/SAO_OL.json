@@ -5,65 +5,62 @@
  "level": "OL",
  "planLabel": "Siber Güvenlik Analistliği ve Operatörlüğü Ön Lisans Programı",
  "totalCredits": "82,00",
- "totalEcts": "0,00",
+ "totalEcts": "125,00",
+ "totalEctsComputed": true,
  "semesters": [
   {
    "title": "1. Yarıyıl",
    "items": [
     {
      "course": {
-      "code": "SAO 101E SAO 101",
+      "code": "SAO 101E",
       "name": "Fundamentals of Programming I",
       "language": "English / Türkçe",
       "required": "Z",
       "credits": 4,
       "ects": 5,
       "theory": 3,
-      "tutorial": 2,
-      "type": "Z"
+      "tutorial": 2
      }
     },
     {
      "course": {
-      "code": "SAO 103 SAO 103E",
+      "code": "SAO 103E",
       "name": "Bilişim ve Ağ Teknolojisinin Temelleri",
       "language": "Türkçe / English",
       "required": "Z",
       "credits": 4,
       "ects": 5,
       "theory": 3,
-      "tutorial": 2,
-      "type": "Z"
+      "tutorial": 2
      }
     },
     {
      "course": {
-      "code": "SAO 105 SAO 105E",
-      "name": "İşletim Sistemleri & Güvenliği",
+      "code": "SAO 105E",
+      "name": "İşletim Sistemleri \u0026 Güvenliği",
       "language": "Türkçe / English",
       "required": "Z",
       "credits": 4,
       "ects": 6,
       "theory": 3,
-      "tutorial": 2,
-      "type": "Z"
+      "tutorial": 2
      }
     },
     {
      "course": {
-      "code": "SAO 107E SAO 107",
+      "code": "SAO 107E",
       "name": "Mathematics and Logic",
       "language": "English / Türkçe",
       "required": "Z",
       "credits": 3,
       "ects": 4,
-      "theory": 3,
-      "type": "Z"
+      "theory": 3
      }
     },
     {
      "course": {
-      "code": "SAO 109 SAO 109E",
+      "code": "SAO 109E",
       "name": "Siber Güvenliğe Giriş",
       "language": "Türkçe / English",
       "required": "Z",
@@ -87,7 +84,7 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I",
+      "name": "Atatürk İlk \u0026 İnkılap Trh I",
       "language": "Türkçe",
       "required": "Z",
       "ects": 2,
@@ -114,7 +111,7 @@
    "items": [
     {
      "course": {
-      "code": "SAO 102 SAO 102E",
+      "code": "SAO 102E",
       "name": "Temel Programlama II",
       "language": "Türkçe / English",
       "required": "Z",
@@ -127,7 +124,7 @@
     },
     {
      "course": {
-      "code": "SAO 104 SAO 104E",
+      "code": "SAO 104E",
       "name": "Veri Tabanı Uygulamaları ve Güvenliği",
       "language": "Türkçe / English",
       "required": "Z",
@@ -140,7 +137,7 @@
     },
     {
      "course": {
-      "code": "SAO 106 SAO 106E",
+      "code": "SAO 106E",
       "name": "Güvenli Ağ Tasarımı ve Cihaz Yönetimi Secure Network Design and Device Management",
       "language": "Türkçe / English",
       "required": "Z",
@@ -153,7 +150,7 @@
     },
     {
      "course": {
-      "code": "SAO 108 SAO 108E",
+      "code": "SAO 108E",
       "name": "Sanallaştırma ve Bulut Teknolojileri",
       "language": "Türkçe / English",
       "required": "Z",
@@ -178,7 +175,7 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II",
+      "name": "Atatürk İlk \u0026 İnkılap Trh II",
       "language": "Türkçe",
       "required": "Z",
       "ects": 2,
@@ -188,7 +185,7 @@
     },
     {
      "course": {
-      "code": "ING 112A",
+      "code": "",
       "name": "Basics of Academic Writing",
       "language": "English",
       "required": "Z",
@@ -282,7 +279,7 @@
        },
        {
         "code": "HUK 212",
-        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+        "name": "Sendika.\u0026Toplu İş Sözl.Hukuku"
        },
        {
         "code": "HUK 213",
@@ -374,7 +371,7 @@
        },
        {
         "code": "ISL 465E",
-        "name": "Int.to Entrepreneurship&Innov."
+        "name": "Int.to Entrepreneurship\u0026Innov."
        },
        {
         "code": "ISL 478E",
@@ -438,7 +435,7 @@
        },
        {
         "code": "ITB 037E",
-        "name": "Knowledge, Language & Logic"
+        "name": "Knowledge, Language \u0026 Logic"
        },
        {
         "code": "ITB 087",
@@ -502,7 +499,7 @@
        },
        {
         "code": "ITB 201E",
-        "name": "Introduction to Humanities & Social Sciences"
+        "name": "Introduction to Humanities \u0026 Social Sciences"
        },
        {
         "code": "ITB 202",
@@ -622,7 +619,7 @@
        },
        {
         "code": "ITB 218E",
-        "name": "History of Science&Technology"
+        "name": "History of Science\u0026Technology"
        },
        {
         "code": "ITB 219",
@@ -894,7 +891,7 @@
    "items": [
     {
      "course": {
-      "code": "SAO 201 SAO 201E",
+      "code": "SAO 201E",
       "name": "Sızma Testi",
       "language": "Türkçe / English",
       "required": "Z",
@@ -907,7 +904,7 @@
     },
     {
      "course": {
-      "code": "SAO 203 SAO 203E",
+      "code": "SAO 203E",
       "name": "Mobil Teknolojiler ve Güvenlik",
       "language": "Türkçe / English",
       "required": "Z",
@@ -920,7 +917,7 @@
     },
     {
      "course": {
-      "code": "SAO 205 SAO 205E",
+      "code": "SAO 205E",
       "name": "Siber Güvenlik Yönetişimi",
       "language": "Türkçe / English",
       "required": "Z",
@@ -932,7 +929,7 @@
     },
     {
      "course": {
-      "code": "SAO 207 SAO 207E",
+      "code": "SAO 207E",
       "name": "Güvenli Yazılım Geliştirme",
       "language": "Türkçe / English",
       "required": "Z",
@@ -1058,7 +1055,7 @@
    "items": [
     {
      "course": {
-      "code": "SAO 202 SAO 202E",
+      "code": "SAO 202E",
       "name": "Siber Olay Yönetimi",
       "language": "Türkçe / English",
       "required": "Z",

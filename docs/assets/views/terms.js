@@ -7,7 +7,7 @@ import { initReveal } from '../core/reveal.js';
 
 // Bilinen arşiv boşlukları — README "Eksikler" bölümüyle eşleşir (Faz 6).
 const KNOWN_GAPS = {
-  '2024-2025-guz': 'Bu dönem ne OBS arşivinde ne de dönem başı snapshot\'larında bulunuyor: veri kaynağı yok.',
+  '2024-2025-guz': 'Bu dönem ne OBS arşivinde ne de dönem başı arşiv dökümünde bulunuyor: veri kaynağı yok.',
 };
 
 export function renderTerms() {
@@ -16,7 +16,7 @@ export function renderTerms() {
       const why = KNOWN_GAPS[t.slug];
       return `<article class="termcard reveal missing">
         <div><h3>${esc(t.label)}<span class="badge">veri yok</span></h3>
-        <p class="meta">${why ? esc(why) : 'Bu dönem ne OBS\'de ne de arşiv snapshot\'larında bulunuyor.'}</p></div>
+        <p class="meta">${why ? esc(why) : 'Bu dönem ne OBS\'de ne de arşiv dökümünde bulunuyor.'}</p></div>
         <div class="links"></div></article>`;
     }
     const live = t.live;

@@ -161,7 +161,7 @@ async function selectProgram(code) {
   }
   // Programın planı yoksa (kapanmış program, eksik plan) açık mesaj — boş liste değil.
   if (!plan || !plan.semesters || !plan.semesters.length) {
-    $('#dp-semesters').innerHTML = `<p class="empty">Bu program için yüklenmiş bir ders planı bulunamadı (${esc(code)}).</p>`;
+    $('#dp-semesters').innerHTML = `<p class="empty">Bu programa ait bir ders planı bulunamadı (${esc(code)}).</p>`;
     $('#dp-summary').innerHTML = '';
     setDPResult('');
     return;
@@ -410,7 +410,7 @@ function renderAll() {
     </section>`;
   }).join('');
 
-  root.innerHTML = root.innerHTML || '<p class="empty">Filtreler bu görünümde hiçbir ders bırakmadı.</p>';
+  root.innerHTML = root.innerHTML || '<p class="empty">Bu filtrelerle eşleşen ders yok.</p>';
 
   // "Bu dönem planından N ders açık · M zorunlu · K seçmeli slot"
   $('#dp-result').innerHTML = planSummaryLine(openCount, closedCount, slotOpen, shown);

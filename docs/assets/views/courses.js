@@ -596,7 +596,7 @@ function renderTimetable() {
   const rows = timetableRows();
   const t = buildTimetable(rows);
   if (!t) {
-    wrap.innerHTML = '<p class="empty">seçilen/filtrelenen şubelerde zaman bilgisi yok</p>';
+    wrap.innerHTML = '<p class="empty">seçili şubelerde zaman bilgisi yok — çizelge oluşturulamadı</p>';
     return;
   }
   const { startSlot, nSlots, grid, all } = t;

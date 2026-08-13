@@ -204,6 +204,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     ${histHtml(hist)}`;
   wireHistButtons(content);
   wireProgButtons(content);
+  wireEqButtons(content);
   const reqBy = content.querySelector('.d-req-by');
   if (reqBy) loadReqBy(reqBy);
 }
@@ -227,23 +228,45 @@ function catalogHtml(cat) {
   if (c.local != null) parts.push(`yerel ${trNum(c.local)}`);
   if (c.ects) parts.push(`AKTS ${trNum(c.ects)}`);
   const details = (title, open, body) => `<details class="d-cat-details"${open ? ' open' : ''}><summary>${title}</summary>${body}</details>`;
-  const list = (items, tag) => items.map((x) => `<li>${esc(x)}</li>`).join('');
+  const list = (items) => items.map((x) => `<li>${esc(x)}</li>`).join('');
   // Faz 4.2: vize haftası göstergesi — "Hafta N — ... Ara Sınav ..." satırlarını
   // sayar. Katalog planı yoksa bölüm sessiz.
   const midterms = (cat.weeklyTopics || []).filter((t) => /ara\s*sınav/i.test(t));
   const midtermLine = midterms.length
     ? `<p class="d-cat-midterm">vize: ${esc(midterms.map((t) => t.split(' — ')[0] || t).join(', '))}</p>`
     : '';
+  // Faz 3.5: haftalık plan tablosu (hafta/konu/çıktı). Yapılandırılmış veri yoksa
+  // geriye uyumlu <ol> listesine düş.
+  const hasOut = (cat.weeklyPlan || []).some((w) => w.outcomes);
+  const planHtml = (cat.weeklyPlan || []).length
+    ? `<div class="tablewrap"><table class="d-cat-plan" aria-label="Haftalık ders planı">
+        <thead><tr><th class="num">Hafta</th><th>Konu</th>${hasOut ? '<th>Çıktılar</th>' : ''}</tr></thead>
+        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ' class="d-cat-mid" title="Ara sınav haftası"' : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '—')}</td>` : ''}</tr>`).join('')}</tbody>
+      </table></div>`
+    : (cat.weeklyTopics || []).length ? `<ol>${list(cat.weeklyTopics)}</ol>` : '';
+  // Faz 3.5: denklikler — tıklanınca o dersin detayı açılır.
+  const eqs = cat.equivalents || [];
+  const eqHtml = eqs.length
+    ? `<div class="d-cat-eq"><h4>Ders denklikleri</h4><div class="d-eq-list">${eqs.map((e) => `<button type="button" class="d-eq" data-eq="${esc(e)}">${esc(e)}</button>`).join('')}</div></div>`
+    : '';
   return `<section class="d-cat">
     <h4>Katalog</h4>
     ${parts.length ? `<p class="d-cat-credits">${esc(parts.join(' · '))}${cat.language ? ` · dil: ${esc(cat.language)}` : ''}</p>` : ''}
     ${midtermLine}
+    ${eqHtml}
     ${cat.description ? details('Ders içeriği', false, `<p>${esc(cat.description)}</p>`) : ''}
     ${(cat.outcomes || []).length ? details(`Öğrenme çıktıları (${cat.outcomes.length})`, true, `<ul>${list(cat.outcomes)}</ul>`) : ''}
-    ${(cat.weeklyTopics || []).length ? details(`Haftalık konular (${cat.weeklyTopics.length})`, false, `<ol>${list(cat.weeklyTopics)}</ol>`) : ''}
+    ${planHtml ? details(`Haftalık plan (${(cat.weeklyPlan || cat.weeklyTopics || []).length})`, false, planHtml) : ''}
     ${(cat.textbooks || []).length ? details('Kaynak kitaplar', false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
     ${cat.sourceUrl ? `<p class="d-cat-src">kaynak: <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">OBS katalog formu</a></p>` : ''}
   </section>`;
+}
+
+// Faz 3.5: denklik çipine tıklayınca o dersin ortak detayı açılır.
+function wireEqButtons(content) {
+  content.querySelectorAll('.d-eq[data-eq]').forEach((b) => b.addEventListener('click', () => {
+    openCourseDetail(b.dataset.eq, { source: 'katalog' });
+  }));
 }
 
 // Harf notu sıralaması (katalogdaki resmî geçme ölçeğine göre değil, kabaca

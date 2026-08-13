@@ -75,6 +75,43 @@ func TestParseShellRejects(t *testing.T) {
 	}
 }
 
+func TestParseEquivalents(t *testing.T) {
+	eqs := parseEquivalents(readFixture(t, "dersbilgi_BLG_102.html"))
+	if len(eqs) < 2 {
+		t.Fatalf("denklik sayısı: %d (%v)", len(eqs), eqs)
+	}
+	// BLG 102 → BIL 105, CEN 102 (yalnızca kodlar, adlar değil).
+	want := map[string]bool{"BIL 105": true, "CEN 102": true}
+	for _, c := range eqs {
+		want[c] = false
+	}
+	for c, stillWant := range want {
+		if stillWant {
+			t.Errorf("beklenen denklik kodu eksik: %s (elde: %v)", c, eqs)
+		}
+	}
+}
+
+func TestParseWeeklyPlan(t *testing.T) {
+	e, err := Parse(readFixture(t, "katalog_ABM_604.html"), "url", "ABM", "604")
+	if err != nil {
+		t.Fatalf("Parse: %v", err)
+	}
+	if len(e.WeeklyPlan) < 10 {
+		t.Fatalf("weeklyPlan satır sayısı: %d", len(e.WeeklyPlan))
+	}
+	if e.WeeklyPlan[0].Week != 1 || e.WeeklyPlan[0].Topic == "" {
+		t.Errorf("ilk hafta: %+v", e.WeeklyPlan[0])
+	}
+	// Geriye uyumlu WeeklyTopics aynı satır sayısında dolu.
+	if len(e.WeeklyTopics) != len(e.WeeklyPlan) {
+		t.Errorf("WeeklyTopics(%d) ile WeeklyPlan(%d) sayıları farklı", len(e.WeeklyTopics), len(e.WeeklyPlan))
+	}
+	if !strings.HasPrefix(e.WeeklyTopics[0], "Hafta 1") {
+		t.Errorf("WeeklyTopics[0]: %q", e.WeeklyTopics[0])
+	}
+}
+
 func TestParseCodeMismatchRejects(t *testing.T) {
 	// Sayfadaki kod "BLG102-BLG102E" iken istenen FIZ 101 uyuşmaz — yanlış dersin
 	// içeriği sessizce yazılmamalı (Faz 3.4).

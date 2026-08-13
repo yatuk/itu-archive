@@ -162,7 +162,7 @@ docs/data/
   curriculum/index.json             # lisans program listesi
   curriculum/<PROGRAM_LS>.json      # bir programın dönem dönem müfredatı
   catalog/index.json                # katalog tarama özeti (kapsam sayıları)
-  catalog/<BRANŞ>.json              # ders başına katalog: kredi, AKTS, dil, içerik, çıktılar
+  catalog/<BRANŞ>.json              # ders başına katalog: kredi, AKTS, dil, içerik, çıktılar, haftalık plan, denklikler
   grades/index.json                 # not dağılımı tarama özeti
   grades/<BRANŞ>.json               # ders başına harf notu dağılımı (AA…VF), <10 kişi gizli
   buildings.json                    # resmî bina kodu → ad

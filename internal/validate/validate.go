@@ -303,6 +303,9 @@ func (r *Result) checkCalendar(root string) {
 	}
 }
 
+// Denklik kodu biçimi: "BIL 105", "BLG102E" gibi branş + sayısal (Faz 3.5).
+var catalogCodeRe = regexp.MustCompile(`^[A-ZÇĞİÖŞÜ]{2,5}\s*\d{2,4}`)
+
 // checkCatalog, katalog kayıtlarının bütünlüğünü denetler: dosya adı branşla
 // eşleşmeli, kod kopya olmamalı, kaydın code alanı anahtarla aynı olmalı.
 // Katalog verisi opsiyoneldir — veri yoksa (dizin yok) atlanır, site onsuz
@@ -352,6 +355,20 @@ func (r *Result) checkCatalog(root string) {
 			}
 			if graphOK && !graphCodes[code] {
 				r.warnf("catalog: %q kodu önşart grafiğinde yok", code)
+			}
+			// Faz 3.5: weeklyPlan haftaları 1-14 ve konu dolu; denklik kodları düzgün.
+			for _, w := range ent.WeeklyPlan {
+				if w.Week < 1 || w.Week > 14 {
+					r.errf("catalog/%s: %q weeklyPlan hafta %d (1-14 arası beklenir)", e.Name(), code, w.Week)
+				}
+				if w.Topic == "" {
+					r.errf("catalog/%s: %q weeklyPlan hafta %d konusu boş", e.Name(), code, w.Week)
+				}
+			}
+			for _, eq := range ent.Equivalents {
+				if !catalogCodeRe.MatchString(eq) {
+					r.errf("catalog/%s: %q denklik kodu biçimi bozuk: %q", e.Name(), code, eq)
+				}
 			}
 			seen[code] = true
 		}

@@ -23,11 +23,17 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+	"time"
 
 	"itu-scraper/internal/fetch"
 )
 
 const katalogURL = "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu"
+
+// dersBilgiURL, ders başına "Ders Denklikleri" bölümünü getiren arama ucudur
+// (Faz 3.5). DersBilgi sayfası içeriği XHR ile bu uçtan gelir; katalog formu
+// sayfasında denklik verisi yoktur.
+const dersBilgiURL = "https://obs.itu.edu.tr/public/DersBilgi/DersBilgiSearch"
 
 // Credits, resmî kredi paketi. Local ve ECTS ondalıklı olabilir ("4,5").
 type Credits struct {
@@ -38,18 +44,27 @@ type Credits struct {
 	ECTS     float64 `json:"ects"`     // AKTS
 }
 
+// WeeklyTopic, 14 haftalık ders planının tek satırı (Faz 3.5 — hafta/konu/çıktı).
+type WeeklyTopic struct {
+	Week     int    `json:"week"`
+	Topic    string `json:"topic"`
+	Outcomes string `json:"outcomes,omitempty"`
+}
+
 // Entry, tek bir dersin katalog kaydı.
 type Entry struct {
-	Code         string   `json:"code"`
-	Name         string   `json:"name"`
-	Language     string   `json:"language"`
-	Credits      Credits  `json:"credits"`
-	Description  string   `json:"description"`
-	Outcomes     []string `json:"outcomes"`
-	WeeklyTopics []string `json:"weeklyTopics,omitempty"`
-	Textbooks    []string `json:"textbooks,omitempty"`
-	SourceURL    string   `json:"sourceUrl"`
-	FetchedAt    string   `json:"fetchedAt"`
+	Code         string        `json:"code"`
+	Name         string        `json:"name"`
+	Language     string        `json:"language"`
+	Credits      Credits       `json:"credits"`
+	Description  string        `json:"description"`
+	Outcomes     []string      `json:"outcomes"`
+	WeeklyTopics []string      `json:"weeklyTopics,omitempty"`
+	WeeklyPlan   []WeeklyTopic `json:"weeklyPlan,omitempty"`
+	Equivalents  []string      `json:"equivalents,omitempty"`
+	Textbooks    []string      `json:"textbooks,omitempty"`
+	SourceURL    string        `json:"sourceUrl"`
+	FetchedAt    string        `json:"fetchedAt"`
 }
 
 var (
@@ -67,6 +82,8 @@ var (
 	bookRe  = regexp.MustCompile(`(?is)Ders Kitabı\s*</th>\s*<td[^>]*>(.*?)</td>`)
 	brRe    = regexp.MustCompile(`(?i)<br\s*/?>`)
 	planEnd = regexp.MustCompile(`(?i)>COURSE PLAN<|Ders Kitabı`)
+	// "Ders Denklikleri" başlık hücresinden sonra gelen içerik hücresi.
+	eqRe = regexp.MustCompile(`(?is)Ders Denklikleri</td>.*?<tr[^>]*>\s*<td[^>]*>(.*?)</td>`)
 )
 
 type Client struct{ f *fetch.Client }
@@ -93,6 +110,21 @@ func (c *Client) Catalog(ctx context.Context, branch, dersNo string) (e *Entry, 
 	return e, true, nil
 }
 
+// Equivalents, DersBilgi arama ucuyla bir dersin denk ders kodlarını çeker
+// (ör. BLG 102E → BIL 105, CEN 102). DersBilgi sayfası XHR ile bu uçtan dolar.
+// Denklik best-effort'tur: OBS throttle'ında takılan istek kısa sürede vazgeçer,
+// 45sn'lik ana timeout'u boşa yemez.
+func (c *Client) Equivalents(ctx context.Context, branch, dersNo string) ([]string, error) {
+	ctx, cancel := context.WithTimeout(ctx, 10*time.Second)
+	defer cancel()
+	url := fmt.Sprintf("%s?bransKodu=%s&dersNo=%s", dersBilgiURL, branch, dersNo)
+	body, err := c.f.Text(ctx, url)
+	if err != nil {
+		return nil, err
+	}
+	return parseEquivalents([]byte(body)), nil
+}
+
 // Parse, katalog formu sayfasını çözer. body ham baytlardır — karışık
 // ISO-8859-9/UTF-8 kodlaması fetch.DecodeMixed ile çözülür.
 func Parse(body []byte, sourceURL, branch, dersNo string) (*Entry, error) {
@@ -111,7 +143,7 @@ func Parse(body []byte, sourceURL, branch, dersNo string) (*Entry, error) {
 	e.Description = grab(clean, descRe)
 	e.Credits = parseCredits(text)
 	e.Outcomes = parseOutcomes(text)
-	e.WeeklyTopics = parseWeekly(text)
+	e.WeeklyTopics, e.WeeklyPlan = parseWeekly(text)
 	e.Textbooks = parseBooks(text)
 
 	// Ad veya dil eksikse sayfa yapısı değişmiş demektir — sessizce boş yazma.
@@ -198,18 +230,19 @@ func parseOutcomes(text string) []string {
 	return out
 }
 
-// parseWeekly, Türkçe "Konular" plan tablosundaki hafta satırlarını çözer
-// ("Hafta N — konu"). Plan tablosu yoksa boş döner (opsiyonel alan).
-func parseWeekly(text string) []string {
+// parseWeekly, Türkçe "Konular" plan tablosundaki hafta satırlarını çözer:
+// hem geriye uyumlu "Hafta N — konu" dizesine (WeeklyTopics) hem yapılandırılmış
+// WeeklyPlan'a (hafta/konu/çıktı) yazar. Tablo kolonları: Hafta | Konular | Çıktılar
+// ("Dersin Öğrenme Çıktıları"). Plan tablosu yoksa boş döner (opsiyonel alan).
+func parseWeekly(text string) (topics []string, plan []WeeklyTopic) {
 	start := konuRe.FindStringIndex(text)
 	if start == nil {
-		return nil
+		return nil, nil
 	}
 	seg := text[start[0]:]
 	if end := planEnd.FindStringIndex(seg); end != nil {
 		seg = seg[:end[0]]
 	}
-	var out []string
 	for _, row := range rowRe.FindAllStringSubmatch(seg, -1) {
 		cells := cellRe.FindAllStringSubmatch(row[1], -1)
 		if len(cells) < 2 {
@@ -220,11 +253,19 @@ func parseWeekly(text string) []string {
 		if topic == "" {
 			continue
 		}
-		if _, err := strconv.Atoi(week); err == nil {
-			out = append(out, "Hafta "+week+" — "+topic)
+		if n, err := strconv.Atoi(week); err == nil {
+			topics = append(topics, "Hafta "+week+" — "+topic)
+			out := ""
+			if len(cells) >= 3 {
+				out = cleanHTML(cells[2][1])
+				if out == "-" {
+					out = ""
+				}
+			}
+			plan = append(plan, WeeklyTopic{Week: n, Topic: topic, Outcomes: out})
 		}
 	}
-	return out
+	return topics, plan
 }
 
 // parseBooks, "Ders Kitabı" hücresindeki <br> ayrılmış kaynak kitapları döndürür.
@@ -237,6 +278,28 @@ func parseBooks(text string) []string {
 	for _, part := range brRe.Split(m[1], -1) {
 		if v := cleanHTML(part); v != "" {
 			out = append(out, v)
+		}
+	}
+	return out
+}
+
+// parseEquivalents, DersBilgi arama yanıtındaki "Ders Denklikleri" hücresindeki
+// denk ders kodlarını çözer ("BIL 105 ...", "CEN 102 ..." — <br> ile ayrılır;
+// her satırın başındaki kod alınır, kalanı atılır). Bölüm yoksa boş döner.
+func parseEquivalents(body []byte) []string {
+	text := fetch.DecodeMixed(body)
+	m := eqRe.FindStringSubmatch(text)
+	if m == nil {
+		return nil
+	}
+	var out []string
+	for _, part := range brRe.Split(m[1], -1) {
+		part = cleanHTML(part)
+		if part == "" {
+			continue
+		}
+		if code := codeRe.FindString(part); code != "" {
+			out = append(out, strings.TrimSpace(code))
 		}
 	}
 	return out

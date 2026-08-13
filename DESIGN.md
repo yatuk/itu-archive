@@ -73,10 +73,17 @@ typography:
   data:
     fontFamily: "ui-monospace, JetBrains Mono, SF Mono, Cascadia Mono, Menlo, Consolas, monospace"
 rounded:
+  hairline: "1px"
   sm: "2px"
+  focus: "3px"
+  xs: "4px"
   md: "6px"
-  lg: "14px"
-  xl: "22px"
+  field: "8px"
+  card: "14px"
+  panel: "16px"
+  lg: "22px"
+  pill: "999px"
+  circle: "50%"
 spacing:
   xs: "8px"
   sm: "12px"

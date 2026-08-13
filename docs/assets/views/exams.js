@@ -1,17 +1,21 @@
 // Sınavlar görünümü: aktif dönemin sınav takvimini ders/bina/tür üzerinden
 // arar. Bina filtresi yer alanından çıkarılır (yeni kazıma yok).
 
-import { $, getJSON, esc, fold, debounce, buildingOf, setStatus } from '../core/utils.js';
+import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { fillRows } from '../core/table.js';
+import { toast } from '../core/toast.js';
 
 let inited = false;
+let currentHits = []; // son filtre sonucu — .ics dışa aktarımı için
 
 export function initExams() {
   if (inited) return;
   $('#eq').addEventListener('input', debounce(renderExams, 120));
   $('#f-etype').addEventListener('change', renderExams);
   $('#f-building').addEventListener('change', renderExams);
+  const ics = $('#e-ics');
+  if (ics) ics.addEventListener('click', exportExamsICS);
   inited = true;
 }
 
@@ -54,6 +58,7 @@ function renderExams() {
     if (bld && buildingOf(e.place) !== bld) return false;
     return terms.every((t) => state.examHay[i].includes(t));
   });
+  currentHits = hits; // .ics dışa aktarımı için
 
   $('#eresultline').innerHTML = state.exams.exams.length
     ? `<b>${hits.length}</b> / ${state.exams.exams.length} sınav · ${esc(state.exams.term || '')}`
@@ -77,4 +82,31 @@ function renderExams() {
       });
     });
   }
+}
+
+// Sınav kaydını .ics etkinliğine çevirir: Türkçe tarih + "HH:MM-HH:MM" aralığı →
+// ISO zamanlı başlangıç/bitiş. Saf — test edilebilir. Çözümlenemezse null.
+export function examToIcs(e) {
+  const start = parseTurkishDate(e.date);
+  if (!start) return null;
+  const m = String(e.time || '').match(/^(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})$/);
+  if (!m) return null;
+  const p = (n) => String(n).padStart(2, '0');
+  const iso = (h, mi) => `${start.getFullYear()}-${p(start.getMonth() + 1)}-${p(start.getDate())}T${p(h)}:${p(mi)}:00`;
+  const place = e.place && e.place !== '-' && e.place !== 'İlgili Bölümce Açıklanacak' ? e.place : '';
+  return {
+    uid: `${e.crn}-${e.code}-${e.date}`,
+    title: `${e.code} — ${e.name} (${e.type})`,
+    startISO: iso(+m[1], +m[2]),
+    endISO: iso(+m[3], +m[4]),
+    desc: [e.instructor, place].filter(Boolean).join(' · '),
+  };
+}
+
+// Faz 4.5b: filtrelenmiş sınav listesini .ics olarak dışa aktarır.
+function exportExamsICS() {
+  if (!currentHits.length) { toast('Sınav yok', { kind: 'warn' }); return; }
+  const events = currentHits.map(examToIcs).filter(Boolean);
+  downloadICS(`itu-final-${state.index.currentSlug}.ics`, events);
+  toast(`${events.length} sınav .ics'e aktarıldı`);
 }

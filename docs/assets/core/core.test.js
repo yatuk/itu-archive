@@ -10,7 +10,8 @@ import { fillBar, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
-import { buildSnippet, parseTimeRange, examOverlap, finalsConflict } from '../views/program.js';
+import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
+import { examToIcs } from '../views/exams.js';
 import { icsText } from './utils.js';
 import * as fav from './favorites.js';
 
@@ -461,4 +462,38 @@ test('icsText VEVENT satırları üretir', () => {
   assert.ok(out.includes('SUMMARY:Ders Başı\\; Hazırlık'));
   assert.ok(out.includes('DESCRIPTION:Final'));
   assert.ok(out.endsWith('END:VCALENDAR'));
+});
+
+test('icsText RRULE satırını ekler (Faz 4.5 yinelenen oturum)', () => {
+  const out = icsText([
+    { uid: 'x', title: 'Ders', startISO: '2026-09-07T09:00:00', endISO: '2026-09-07T11:00:00', rrule: 'FREQ=WEEKLY;COUNT=14' },
+  ], '2026-08-13T00:00:00');
+  assert.ok(out.includes('RRULE:FREQ=WEEKLY;COUNT=14'));
+});
+
+test('midtermWeeks katalog haftalık konularından ara sınav haftalarını sayar', () => {
+  const recs = [
+    { weeklyTopics: ['Hafta 1 — Giriş', 'Hafta 7 — Konular + Ara Sınav I', 'Hafta 8 — Konu'] },
+    { weeklyTopics: ['Hafta 7 — Ara Sınav II', 'Hafta 12 — Final öncesi'] },
+  ];
+  const mw = midtermWeeks(recs);
+  assert.equal(mw.get('Hafta 7'), 2);
+  assert.equal(mw.get('Hafta 12'), undefined); // "final öncesi" ara sınav değil
+  assert.equal(mw.size, 1);
+  assert.equal(midtermWeeks([]).size, 0);
+  assert.equal(midtermWeeks([{ weeklyTopics: [] }]).size, 0);
+  assert.equal(midtermWeeks(null).size, 0);
+});
+
+test('examToIcs Türkçe tarih + saat aralığını ISO zamanlı etkinliğe çevirir', () => {
+  const ev = examToIcs({
+    crn: '30054', code: 'SSI 518', name: 'Pazarlama Yönetimi', type: 'Final Sınavı',
+    instructor: 'Elif Karaosmanoğlu', place: 'A101', date: '13 Ağustos 2026', time: '09:00-11:00',
+  });
+  assert.ok(ev);
+  assert.equal(ev.startISO, '2026-08-13T09:00:00');
+  assert.equal(ev.endISO, '2026-08-13T11:00:00');
+  assert.ok(ev.title.includes('SSI 518'));
+  assert.equal(examToIcs({ date: 'çözülemez', time: '09:00-11:00' }), null);
+  assert.equal(examToIcs({ date: '13 Ağustos 2026', time: 'bozuk' }), null);
 });

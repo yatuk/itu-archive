@@ -5,7 +5,7 @@
 // kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
 // Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, parseTurkishDate, trNum } from '../core/utils.js';
+import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum } from '../core/utils.js';
 import { state, indexReady } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { buildTimetable, openDetail } from './courses.js';
@@ -107,6 +107,7 @@ export function initProgram() {
     });
   });
   $('#p-csv').addEventListener('click', exportCSV);
+  $('#p-ics').addEventListener('click', exportScheduleICS);
   $('#p-share').addEventListener('click', share);
   $('#p-obs').addEventListener('click', (e) => { e.preventDefault(); showOBS(); });
   $('#p-obs').addEventListener('mouseenter', () => showTip());
@@ -594,6 +595,8 @@ function renderSummary(items) {
   }
   // Faz 4.1: final çakışması — exams verisi yüklenmişse asenkron ekler.
   loadFinalsNote(items, box);
+  // Faz 4.2: vize haftası yoğunluğu — katalog planlarından asenkron sayar.
+  loadMidtermNote(items, box);
   box.innerHTML = html;
 }
 
@@ -613,6 +616,46 @@ async function loadFinalsNote(items, box) {
     wrap.innerHTML = `⚠ Final çakışması:<ul class="p-conf-list">${pairs.map((p) => `<li>${p}</li>`).join('')}</ul>`;
     box.appendChild(wrap);
   } catch { /* finals verisi yoksa sessiz */ }
+}
+
+// Katalogdaki haftalık konulardan ara sınav haftalarını sayar: "Hafta 7 (4)".
+// course-detail.js'teki vize deseniyle aynı (/ara\s*sınav/i). Saf — test edilebilir.
+export function midtermWeeks(records) {
+  const counts = new Map();
+  for (const rec of records || []) {
+    for (const topic of rec?.weeklyTopics || []) {
+      if (!/ara\s*sınav/i.test(topic)) continue;
+      const week = (String(topic).split(' — ')[0] || topic).trim();
+      counts.set(week, (counts.get(week) || 0) + 1);
+    }
+  }
+  return counts;
+}
+
+// Faz 4.2: seçili şubelerin katalog planlarından "Vize yoğunluğu" satırı üretir.
+// Katalog/branş dosyası yoksa sessizce atlanır (creditTotals deseni).
+let midtermCache = new Map();
+async function loadMidtermNote(items, box) {
+  try {
+    const records = [];
+    for (const { row } of items) {
+      const branch = row[3];
+      if (!midtermCache.has(branch)) {
+        midtermCache.set(branch, await getJSON(`data/catalog/${branch}.json`).catch(() => null));
+      }
+      const map = midtermCache.get(branch);
+      if (map && map[row[1]]) records.push(map[row[1]]);
+    }
+    const mw = midtermWeeks(records);
+    if (!mw.size) return;
+    const parts = [...mw.entries()]
+      .sort((a, b) => a[0].localeCompare(b[0], undefined, { numeric: true }))
+      .map(([k, n]) => `${k} (${n})`).join(' · ');
+    const wrap = document.createElement('div');
+    wrap.className = 'p-conf';
+    wrap.innerHTML = `📝 Vize yoğunluğu: ${esc(parts)}`;
+    box.appendChild(wrap);
+  } catch { /* katalog yoksa sessiz */ }
 }
 
 function updateCredits(items) {
@@ -795,6 +838,48 @@ function exportCSV() {
     ['CRN', 'Ders Kodu', 'Branş', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan'],
     items.map(({ row: r }) => [r[0], r[1], r[3], r[2], r[4], r[5], r[6], r[7]]));
   toast('CSV indirildi');
+}
+
+const P_DAYS = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+
+// Yerel saatten "YYYY-MM-DDTHH:MM:SS" (icsText'in zamanlı etkinlik biçimi).
+function isoDT(d, h, min) {
+  const p = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(h)}:${p(min)}:00`;
+}
+
+// Bu haftanın Pazartesi'si (Pazartesi ise bugün). Program .ics'inin DTSTART tabanı;
+// kullanıcı takvim uygulamasında dönemin başlangıcına kaydırabilir.
+function mondayOfThisWeek() {
+  const now = new Date();
+  const off = (now.getDay() + 6) % 7; // Pzt=0 … Paz=6
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate() - off);
+}
+
+// Faz 4.5c: seçili şubelerin oturumlarını haftalık yinelenen etkinlik olarak .ics'e
+// dışa aktarır. Oturumlar buildTimetable'dan (gün + başlangıç/bitiş dakikası) çözülür;
+// her oturum için bir VEVENT + RRULE:FREQ=WEEKLY (14 haftalık dönem varsayımı).
+function exportScheduleICS() {
+  const items = currentItems();
+  const t = buildTimetable(items.map((i) => i.row));
+  if (!t || !t.all.length) { toast('Zaman bilgisi olan ders yok', { kind: 'warn' }); return; }
+  const monday = mondayOfThisWeek();
+  const events = t.all.map((s) => {
+    const day = P_DAYS.indexOf(s.day);
+    if (day < 0) return null;
+    const start = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + day);
+    const code = s.row[1];
+    return {
+      uid: `${code}-${s.day}-${s.start}`,
+      title: `${code} — ${s.row[5]}`,
+      startISO: isoDT(start, Math.floor(s.start / 60), s.start % 60),
+      endISO: isoDT(start, Math.floor(s.end / 60), s.end % 60),
+      rrule: 'FREQ=WEEKLY;COUNT=14',
+      desc: `CRN ${s.row[0]}`,
+    };
+  }).filter(Boolean);
+  downloadICS(`itu-program-${term}.ics`, events);
+  toast('Program .ics indirildi');
 }
 
 // Takvimi PNG olarak indirir (canvas çizimi).

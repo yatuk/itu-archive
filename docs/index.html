@@ -163,7 +163,14 @@
     <input id="q" type="search" autocomplete="off" spellcheck="false"
            placeholder="ders kodu, ad, CRN veya öğretim üyesi ara…" aria-label="Ders ara">
    </label>
-   <div class="filters">
+   <div class="filters" id="filters">
+    <div class="filters-sheet-head">
+     <span class="eyebrow">Filtreler</span>
+     <div class="fs-actions">
+      <button type="button" id="fs-clear" class="btn-ghost" data-i18n="filterClear">temizle</button>
+      <button type="button" id="fs-apply" class="btn-primary" data-i18n="filterApply">uygula</button>
+     </div>
+    </div>
     <label>dönem <select id="f-term"></select></label>
     <label>bölüm <select id="f-branch"><option value="">hepsi</option></select></label>
     <label>gün <select id="f-day">
@@ -192,8 +199,10 @@
     </div>
     <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir">CSV indir</button>
     <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle">zaman çizelgesi</button>
+    <button type="button" id="f-filter-btn" class="btn-ghost" aria-expanded="false" aria-controls="filters">Filtreler</button>
    </div>
   </div>
+  <div id="filters-scrim" class="filters-scrim" hidden></div>
 
   <p class="resultline" id="resultline" aria-live="polite">—</p>
 

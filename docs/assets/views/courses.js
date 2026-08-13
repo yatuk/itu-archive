@@ -57,6 +57,23 @@ export function initCourses() {
   $('#sel-only').addEventListener('change', () => { if (ttOn) renderTimetable(); });
   $('#sel-send').addEventListener('click', sendToProgram);
   wireSort();
+  // Mobil filtre bottom-sheet: "Filtreler (N)" düğmesi + uygula/temizle + karartma.
+  const fsOpen = (open) => {
+    $('#filters').classList.toggle('open', open);
+    $('#filters-scrim').classList.toggle('show', open);
+    $('#f-filter-btn').setAttribute('aria-expanded', String(open));
+  };
+  $('#f-filter-btn').addEventListener('click', () => fsOpen(!$('#filters').classList.contains('open')));
+  $('#fs-apply').addEventListener('click', () => fsOpen(false));
+  $('#fs-clear').addEventListener('click', () => {
+    for (const sel of ['#f-branch', '#f-day', '#f-time', '#f-level', '#f-method', '#f-program']) $(sel).value = '';
+    $('#f-code').value = '';
+    $('#f-open').checked = false;
+    $('#f-taken').checked = false;
+    fsOpen(false);
+    applyFilters();
+  });
+  $('#filters-scrim').addEventListener('click', () => fsOpen(false));
 }
 
 export async function loadTerm(slug) {
@@ -235,6 +252,13 @@ export function applyFilters() {
   $('#resultline').innerHTML = n === total
     ? `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} bölüm`
     : `<b>${n}</b> / ${total} şube eşleşti${hint}`;
+  // Mobil filtre düğmesi etiketi: aktif filtre sayısı (dönem sayılmaz).
+  const activeCount = [
+    branch, day, time, level, method, program, code.trim(),
+    openOnly ? '1' : '', hideTaken ? '1' : '',
+  ].filter(Boolean).length;
+  const fb = $('#f-filter-btn');
+  if (fb) fb.textContent = `Filtreler (${activeCount})`;
   renderChips();
   updateSelection();
   if (ttOn) renderTimetable();

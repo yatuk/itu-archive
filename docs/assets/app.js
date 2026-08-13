@@ -292,6 +292,10 @@ function wireTabs() {
       const active = b.dataset.view === view;
       b.setAttribute('aria-selected', String(active));
       b.tabIndex = active ? 0 : -1; // roving tabindex: klavye dolaşımı
+      if (active) {
+        // Mobilde kaydırılabilir çubukta aktif sekme görünüme gelsin.
+        b.scrollIntoView({ inline: 'center', block: 'nearest' });
+      }
     }
     for (const s of document.querySelectorAll('.view')) {
       const active = s.id === `view-${view}`;

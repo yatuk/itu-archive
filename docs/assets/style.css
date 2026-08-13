@@ -450,8 +450,16 @@ body.reveal-ready .reveal {
 }
 body.reveal-ready .reveal.revealed { opacity: 1; transform: none; }
 
+/* Sekme çubuğu mobil: tek satıra yatay kaydırma; kenar solması kaydırılabilir
+   olduğunu gösterir. Yapışkan kalır (scroll-padding-top yeterli). */
 @media (max-width: 640px) {
-  .tabs { width: 100%; border-radius: 16px; overflow-x: auto; }
+  .tabs {
+    width: 100%; border-radius: 16px; overflow-x: auto;
+    flex-wrap: nowrap; justify-content: flex-start;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(to right, transparent, #000 14px, #000 calc(100% - 14px), transparent);
+  }
+  .tabs::-webkit-scrollbar { display: none; }
 }
 
 /* ---------- konsol / filtreler ---------- */
@@ -1950,3 +1958,28 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 /* Üst başlık kontrolleri ve önşart plan etiketi 360px'te taşmasın. */
 .mast-controls { flex-wrap: wrap; gap: 8px; }
 .pg-console .pg-plan-label { white-space: normal; overflow-wrap: anywhere; }
+
+/* Filtre bottom-sheet (≤600): .filters alttan açılan panel olur; arama kutusu
+   üstte kalır, "Filtreler (N)" düğmesi paneli açar. Tam ekran modal değil. */
+.filters-sheet-head, #f-filter-btn { display: none; }
+@media (max-width: 600px) {
+  #f-filter-btn { display: inline-flex; align-items: center; gap: 6px; }
+  .filters-sheet-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .fs-actions { display: flex; gap: 8px; }
+  .console .filters {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 61;
+    margin: 0; border-radius: 16px 16px 0 0; background: var(--panel);
+    border: 1px solid var(--hairline-strong); border-bottom: none;
+    padding: 12px 16px calc(16px + env(safe-area-inset-bottom));
+    max-height: 78vh; overflow-y: auto;
+    flex-direction: column; align-items: stretch; gap: 12px;
+    transform: translateY(105%); transition: transform 240ms var(--ease-out-expo);
+    box-shadow: 0 -10px 34px rgba(0, 0, 0, .28);
+  }
+  .console .filters.open { transform: translateY(0); }
+  .filters-scrim {
+    position: fixed; inset: 0; z-index: 60; background: rgba(0, 0, 0, .35);
+    opacity: 0; pointer-events: none; transition: opacity 240ms;
+  }
+  .filters-scrim.show { opacity: 1; pointer-events: auto; }
+}

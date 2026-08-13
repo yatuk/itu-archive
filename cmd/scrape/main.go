@@ -157,6 +157,16 @@ func writeStatus(st *store.Store, out, mode string, started time.Time) error {
 			}
 		}
 	}
+	// Önceki koşunun sections'ı (commit'li status.json) — validate %20 düşüş
+	// kuralı bu değeri kullanır.
+	prevSections := 0
+	if b, err := os.ReadFile(filepath.Join(out, "data", "status.json")); err == nil {
+		var prev struct {
+			Sections int `json:"sections"`
+		}
+		_ = json.Unmarshal(b, &prev)
+		prevSections = prev.Sections
+	}
 	status := map[string]any{
 		"lastRunAt":      now.Format(time.RFC3339),
 		"lastSuccessAt":  now.Format(time.RFC3339),
@@ -165,6 +175,7 @@ func writeStatus(st *store.Store, out, mode string, started time.Time) error {
 		"failedBranches": failedBranches,
 		"durationSec":    int(time.Since(started).Seconds()),
 		"sections":       sections,
+		"prevSections":   prevSections,
 	}
 	return st.WriteJSON(status, "data", "status.json")
 }

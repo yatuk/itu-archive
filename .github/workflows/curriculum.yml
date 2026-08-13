@@ -32,6 +32,9 @@ jobs:
       - name: Müfredatı çek
         run: go run ./cmd/curriculum
 
+      - name: Veriyi doğrula
+        run: go run ./cmd/validate -quiet -skip-site
+
       - name: Commit
         run: |
           if git diff --quiet -- docs/data/curriculum; then

@@ -94,9 +94,8 @@ func run(out string, workers int, rps float64, limit int) error {
 	index := make([]map[string]any, 0, len(branches))
 	for _, b := range branches {
 		entries := byBranch[b]
-		for _, e := range entries {
-			e.FetchedAt = fetchedAt
-		}
+		// Per-entry FetchedAt kaldırıldı (Faz 3, 4.7) — içerik değişmese bile
+		// diff üretiyordu; koşu zamanı catalog/index.json generatedAt'inde.
 		if err := st.WriteJSON(entries, "data", "catalog", b+".json"); err != nil {
 			return err
 		}

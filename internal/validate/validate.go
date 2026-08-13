@@ -66,6 +66,7 @@ func All(root string, skipSite bool) *Result {
 	res.checkCatalog(root)
 	res.checkGrades(root)
 	res.checkDefinitions(root)
+	res.checkStatus(root)
 	if !skipSite {
 		res.checkSitePages(root)
 	}
@@ -580,6 +581,39 @@ func (r *Result) checkIndex(root string) {
 
 // checkSitePages, cmd/site ile üretilen statik sayfaların bağlantı
 // bütünlüğünü, sitemap kapsamını, yetim sayfaları ve iç bağlantıları denetler.
+// checkStatus, docs/data/status.json'u denetler (Faz 3, 4.8): dosya olmalı
+// (koşu sonunda cmd/scrape yazar); şube sayısı bir önceki koşuya göre %20'den
+// fazla düşmemeli (eksik döküm — README'deki 2025-2026 Güz gözlemi); aktif
+// dönem önceki dönemden gözle görülür küçükse uyarı.
+func (r *Result) checkStatus(root string) {
+	var st struct {
+		Sections     int `json:"sections"`
+		PrevSections int `json:"prevSections"`
+	}
+	if err := readJSON(filepath.Join(root, "data", "status.json"), &st); err != nil {
+		r.errf("status.json yazılmamış — koşu sonunda cmd/scrape bunu yazar")
+		return
+	}
+	if st.PrevSections > 0 && st.Sections > 0 && st.Sections < int(float64(st.PrevSections)*0.8) {
+		r.errf("aktif dönem şube sayısı %d → %d (%.0f%% düşüş) — döküm eksik olabilir",
+			st.PrevSections, st.Sections, 100*(1-float64(st.Sections)/float64(st.PrevSections)))
+	}
+	// Aktif dönem önceki dönemden çok küçükse (örn. dönem başı yarım döküm) uyar.
+	var ix struct {
+		Terms []struct {
+			Slug     string `json:"slug"`
+			Sections int    `json:"sections"`
+		} `json:"terms"`
+	}
+	if readJSON(filepath.Join(root, "data", "index.json"), &ix) == nil && len(ix.Terms) >= 2 {
+		prev := ix.Terms[1].Sections
+		if prev > 0 && st.Sections > 0 && st.Sections < int(float64(prev)*0.8) {
+			r.warnf("aktif dönem şube sayısı önceki dönemden %d → %d (%.0f%% düşüş) — döküm eksik olabilir",
+				prev, st.Sections, 100*(1-float64(st.Sections)/float64(prev)))
+		}
+	}
+}
+
 func (r *Result) checkSitePages(root string) {
 	derDir := filepath.Join(root, "dersler")
 	bransDir := filepath.Join(root, "brans")

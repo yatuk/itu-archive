@@ -64,7 +64,8 @@ type Entry struct {
 	Equivalents  []string      `json:"equivalents,omitempty"`
 	Textbooks    []string      `json:"textbooks,omitempty"`
 	SourceURL    string        `json:"sourceUrl"`
-	FetchedAt    string        `json:"fetchedAt"`
+	// FetchedAt kaldırıldı (Faz 3, 4.7): her kayıttaki zaman damgası içerik
+	// değişmese bile diff üretiyordu. Koşu zamanı status.json'da.
 }
 
 var (

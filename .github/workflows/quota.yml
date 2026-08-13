@@ -36,6 +36,9 @@ jobs:
       - name: Ölçüm al
         run: go run ./cmd/quota
 
+      - name: Veriyi doğrula
+        run: go run ./cmd/validate -quiet -skip-site
+
       - name: Commit
         run: |
           if git diff --quiet -- docs/data/quota; then

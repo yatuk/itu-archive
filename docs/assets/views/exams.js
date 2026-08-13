@@ -107,7 +107,7 @@ export function examToIcs(e) {
   const place = e.place && e.place !== '-' && e.place !== 'İlgili Bölümce Açıklanacak' ? e.place : '';
   return {
     uid: `${e.crn}-${e.code}-${e.date}`,
-    title: `${e.code} — ${e.name} (${e.type})`,
+    title: `${e.code}: ${e.name} (${e.type})`,
     startISO: iso(+m[1], +m[2]),
     endISO: iso(+m[3], +m[4]),
     desc: [e.instructor, place].filter(Boolean).join(' · '),

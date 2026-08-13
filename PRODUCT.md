@@ -24,7 +24,7 @@ OBS yalnızca içinde bulunulan dönemi gösterir; dönem bitince veri kaybolur.
 
 ## Operating Context
 
-Kaynaklar: `obs.itu.edu.tr/public/*` (DersProgram, DersKatalog, DersBilgi, DersNotDagilimi, GenelTanimlamalar) ve `takvim.sis.itu.edu.tr`. Ders programı günde bir kez, kontenjan kayıt haftalarında yarım saatte bir taranır; CI (GitHub Actions) ile otomatikleşir. Kullanıcı kayıt haftasında, ders seçme ekranıyla yan yana siteye bakar. Ham veri indirilebilir (JSON/CSV) — sayfa da aynı dosyaları kullanır.
+Kaynaklar: `obs.itu.edu.tr/public/*` (DersProgram, DersKatalog, DersBilgi, DersNotDagilimi, GenelTanimlamalar) ve `takvim.sis.itu.edu.tr`. Ders programı günde bir kez, kontenjan kayıt haftalarında yarım saatte bir taranır; CI (GitHub Actions) ile otomatikleşir. Kullanıcı kayıt haftasında, ders seçme ekranıyla yan yana siteye bakar. Ham veri indirilebilir (JSON/CSV): sayfa da aynı dosyaları kullanır.
 
 ## Capabilities and Constraints
 

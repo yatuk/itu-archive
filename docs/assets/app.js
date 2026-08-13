@@ -63,7 +63,7 @@ async function boot() {
     if ((Date.now() - last.getTime()) / 36e5 > 48) {
       const stEl = $('#stat-status');
       if (stEl) {
-        stEl.textContent = 'veri bayat — son başarılı tarama 2 günden eski';
+        stEl.textContent = 'veri bayat: son başarılı tarama 2 günden eski';
         stEl.className = 'warn';
       }
     }

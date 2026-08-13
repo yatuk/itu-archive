@@ -196,7 +196,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
       <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>
       <div class="d-prog-list">${programs.length
         ? programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="Derslerde bu programa göre filtrele">${esc(p)}</button>`).join('')
-        : '<span class="d-prog d-prog-none">kısıtlama yok — tüm programlar alabilir</span>'}</div>
+        : '<span class="d-prog d-prog-none">kısıtlama yok, tüm programlar alabilir</span>'}</div>
     </section>
     <section class="d-req-fwd" data-code="${esc(code)}"><h4>Önşartı</h4>
       <p class="empty">yükleniyor…</p></section>

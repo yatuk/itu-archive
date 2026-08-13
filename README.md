@@ -63,8 +63,8 @@ görünüyor. Şubeler seçilebiliyor. Seçilenler ayrı CSV olarak indirilebili
 Bir dersin adına tıklayınca detay paneli açılıyor: o dönemdeki tüm şubeler,
 haftalık oturum saati, programlar, önşart, dolma süresi, geçmiş dönemler
 (doluluk grafiği) ve varsa katalog bilgisi (kredi, AKTS, dil, içerik, çıktılar,
-kaynak kitaplar). Panel her sekmeyle paylaşılıyor — önşart haritasından, seçmeli
-havuzdan, geçmişten ve sınavlardan da açılıyor — ve kendi paylaşılabilir
+kaynak kitaplar). Panel her sekmeyle paylaşılıyor (önşart haritasından, seçmeli
+havuzdan, geçmişten ve sınavlardan da açılıyor) ve kendi paylaşılabilir
 bağlantısına sahip (`#ders/BLG%20102E`). Alabilen program çipleri tıklanınca
 dersler sekmesinde o programa göre filtrelenir; "bu dersi önşart isteyenler"
 listesi ve OBS katalog formu bağlantısı da panelde. Katalog verisi geldiyse
@@ -93,9 +93,9 @@ go run ./cmd/scrape            # ders programı, sınav takvimi, önşartlar, ak
 go run ./cmd/scrape -backfill  # geçmiş dönemleri de al, bir kez yeterli
 go run ./cmd/quota             # kontenjan doluluğundan tek ölçüm al
 go run ./cmd/curriculum        # tüm programların müfredatını çek (önlisans + lisansüstü dahil)
-go run ./cmd/catalog           # ders katalog verisini çek (kredi, AKTS, içerik) — haftalık
-go run ./cmd/grades            # harf notu dağılımı (son 3 yıl) — aylık
-go run ./cmd/definitions       # resmî tanımlar: bina + program kodları — aylık
+go run ./cmd/catalog           # ders katalog verisini çek (kredi, AKTS, içerik) · haftalık
+go run ./cmd/grades            # harf notu dağılımı (son 3 yıl) · aylık
+go run ./cmd/definitions       # resmî tanımlar: bina + program kodları · aylık
 go run ./cmd/backfill-calendar # eski takvim dosyalarına ISO start/end ekler (bir kez)
 go run ./cmd/validate          # docs/data bütünlüğünü denetle (kopya CRN, sarkan kenar...)
 ```
@@ -259,7 +259,7 @@ lisansla (_YL) çakıştığı için kapsam dışı.
 
 Katalog verisi haftalık taramayla doluyor; OBS'de katalog formu olmayan
 (eski/kaldırılmış) dersler bu kapsamda yer almıyor. Bazı derslerin (ör. bitirme
-çalışması) tanım alanı kaynakta boş — kayıt yine yazılıyor, yalnızca içerik
+çalışması) tanım alanı kaynakta boş: kayıt yine yazılıyor, yalnızca içerik
 bölümü panelde görünmüyor. Kapsam sayıları `catalog/index.json`'da.
 
 Haftalık plan (`weeklyPlan`) ve ders denklikleri (`equivalents`) alanları katalog

@@ -7,7 +7,7 @@ import { initReveal } from '../core/reveal.js';
 
 // Bilinen arşiv boşlukları — README "Eksikler" bölümüyle eşleşir (Faz 6).
 const KNOWN_GAPS = {
-  '2024-2025-guz': 'Bu dönem ne OBS arşivinde ne de dönem başı snapshot\'larında bulunuyor — veri kaynağı yok.',
+  '2024-2025-guz': 'Bu dönem ne OBS arşivinde ne de dönem başı snapshot\'larında bulunuyor: veri kaynağı yok.',
 };
 
 export function renderTerms() {
@@ -23,7 +23,7 @@ export function renderTerms() {
     const src = live ? 'canlı tarama' : 'arşiv dökümü';
     // Faz 6: 2025-2026 Güz dönem başında alınmış, komşulara göre eksik görünüyor.
     const partial = t.slug === '2025-2026-guz' && t.sections < 3200
-      ? '<p class="meta warn">Dönem başında alınan döküm komşu dönemlerden az — eksik olabilir.</p>'
+      ? '<p class="meta warn">Dönem başında alınan döküm komşu dönemlerden az, eksik olabilir.</p>'
       : '';
     return `<article class="termcard reveal">
       <div>

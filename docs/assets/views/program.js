@@ -871,7 +871,7 @@ function exportScheduleICS() {
     const code = s.row[1];
     return {
       uid: `${code}-${s.day}-${s.start}`,
-      title: `${code} — ${s.row[5]}`,
+      title: `${code}: ${s.row[5]}`,
       startISO: isoDT(start, Math.floor(s.start / 60), s.start % 60),
       endISO: isoDT(start, Math.floor(s.end / 60), s.end % 60),
       rrule: 'FREQ=WEEKLY;COUNT=14',

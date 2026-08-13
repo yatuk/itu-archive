@@ -443,7 +443,7 @@ import { state } from './core/store.js';
             <option value="cap">kontenjanı olanlar önce</option>
           </select>
         </div>
-        <p class="pg-pool-status">${opts.length} alternatif — durum taranıyor…</p>
+        <p class="pg-pool-status">${opts.length} alternatif, durum taranıyor…</p>
         <div class="pg-pool-groups"></div>`;
 
       const groupsEl = this.detail.querySelector('.pg-pool-groups');
@@ -569,7 +569,7 @@ import { state } from './core/store.js';
       // düğümü ekrandaki konuma göre yönlendirir. role="img" statik olmaktan
       // çıkar — arama kutusu zaten aynı focusNode'a gider.
       c.tabIndex = 0;
-      c.setAttribute('aria-label', 'Önşart haritası — odaklanmak için ok tuşlarını kullan');
+      c.setAttribute('aria-label', 'Önşart haritası: odaklanmak için ok tuşlarını kullan');
       c.addEventListener('keydown', (e) => {
         if (!this.nodes || !this.focus) return;
         const cur = this.byCode.get(this.focus);
@@ -632,7 +632,7 @@ import { state } from './core/store.js';
           this.tip.style.top = (e.clientY - rect.top + 10) + 'px';
           this.tip.textContent = n.kind === 'elective'
             ? `${n.name} · ${(n.options || []).length} seçenek`
-            : (n.name ? `${n.code} — ${n.name}` : n.code);
+            : (n.name ? `${n.code}: ${n.name}` : n.code);
         } else {
           this.tip.hidden = true;
         }
@@ -749,7 +749,7 @@ import { state } from './core/store.js';
       return `<li class="req-item req-code">${esc(tree.code)}${tree.detail ? ` <em>${esc(tree.detail)}</em>` : ''}</li>`;
     }
     if (tree.type === 'text') return `<li class="req-item req-text">${esc(tree.raw)}</li>`;
-    const label = tree.type === 'or' ? 'VEYA — biri yeterli' : 'VE — hepsi gerekli';
+    const label = tree.type === 'or' ? 'VEYA: biri yeterli' : 'VE: hepsi gerekli';
     const cls = tree.type === 'or' ? 'req-or' : 'req-and';
     return `<li class="req-item req-group ${cls}">
       <span class="req-op">${label}</span>
@@ -873,7 +873,7 @@ import { state } from './core/store.js';
     root.querySelector('.pg-plan-label').textContent = plan.planLabel || '';
     renderBranchLegend(root, nodes);
     renderSemesterList(root, plan, reqByCode);
-    await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ders/slot — bir düğüme tıkla`);
+    await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ders/slot, bir düğüme tıkla`);
     statusEl.classList.remove('busy');
   }
 
@@ -887,7 +887,7 @@ import { state } from './core/store.js';
       const items = (sem.items || []).map((it) => {
         if (it.course) {
           const req = reqByCode?.req?.get(it.course.code);
-          return `<li><code>${esc(it.course.code)}</code> — ${esc(it.course.name)}${req ? `<span class="pg-list-req"> · önşart: ${esc(req)}</span>` : ''}</li>`;
+          return `<li><code>${esc(it.course.code)}</code>: ${esc(it.course.name)}${req ? `<span class="pg-list-req"> · önşart: ${esc(req)}</span>` : ''}</li>`;
         }
         if (it.elective) {
           const n = it.elective.options ? it.elective.options.length : 0;
@@ -953,7 +953,7 @@ import { state } from './core/store.js';
     for (const p of programs) {
       if (!activeLevels.has(p.level || 'LS')) continue;
       const lvl = LEVEL_TR[p.level] || p.level || 'Lisans';
-      const key = p.faculty ? `${p.faculty} — ${lvl}` : lvl;
+      const key = p.faculty ? `${p.faculty}: ${lvl}` : lvl;
       if (!byGroup.has(key)) byGroup.set(key, []);
       byGroup.get(key).push(p);
     }

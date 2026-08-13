@@ -90,25 +90,25 @@ type lang struct {
 var langTR = lang{
 	Code: "tr",
 	SiteTitle: "İTÜ Ders Arşivi",
-	SiteTagline: "obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri. Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı — kalıcı olarak.",
+	SiteTagline: "obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri. Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı: kalıcı olarak.",
 	NavDersler: "dersler", NavGecmis: "geçmiş", NavOnsart: "önşart", NavSinavlar: "sınavlar", NavTakvim: "takvim", NavProgram: "program", NavHakkinda: "hakkında",
 	CrumbHome: "Ders Arşivi", FootScanned: "son tarama", FootLive: "canlı site", FootSitemap: "sitemap",
 	TermSuffix: "ders programı ve arşivi",
-	TermLeadFmt: "İTÜ %s — %d ders, %d şube, %d branş.",
+	TermLeadFmt: "İTÜ %s: %d ders, %d şube, %d branş.",
 	TermLiveBadge: "aktif dönem · canlı veri", TermBranchHeading: "Bu dönemde açılan branşlar",
 	TermSearchCTA: "bu dönemi canlı ara", TermDataCSV: "CSV", TermDataJSON: "JSON (arama indeksi)", TermDataPrefix: "Tüm veri:",
 	StatSections: "şube", StatCourses: "ders", StatBranches: "branş", StatScanned: "son tarama",
-	BranchTitleFmt: "%s branşı dersleri ve dönem dökümü", BranchLeadFmt: "İTÜ %s branşının tüm dönemlerdeki arşivi — %d ders kodu, %d dönem, %d şube.",
+	BranchTitleFmt: "%s branşı dersleri ve dönem dökümü", BranchLeadFmt: "İTÜ %s branşının tüm dönemlerdeki arşivi: %d ders kodu, %d dönem, %d şube.",
 	BranchH1Fmt: "%s branşı", BranchSearchCTA: "bu branşı canlı ara", BranchCodeHeading: "Ders kodları", BranchTermHeading: "Dönem dökümü",
 	BranchTermCol: "Dönem", BranchSecCol: "Şube",
-	CourseTitleFmt: "%s — %s",
-	CourseLeadFmt: "%s (%s) — İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
+	CourseTitleFmt: "%s: %s",
+	CourseLeadFmt: "%s (%s): İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
 	CourseSearchCTA: "bu dersi canlı ara", CourseStatTerms: "toplam dönem",
 	CourseSectHead: "Son dönem şubeleri", CourseSectCRN: "CRN", CourseSectInstr: "Öğretim Üyesi", CourseSectTime: "Zaman", CourseSectCap: "Kont/Yazılan",
 	CourseHistHead: "Dönem geçmişi", CourseHistTerm: "Dönem", CourseHistInstr: "Öğretim Üyesi", CourseHistCap: "Kont", CourseHistEnr: "Yazılan",
 	CourseQuotaHead: "Kontenjan doluluk geçmişi",
-	InstrTitleFmt: "%s — verdiği dersler",
-	InstrLeadFmt: "%s — İTÜ'de %d dönemde, %d farklı ders.",
+	InstrTitleFmt: "%s: verdiği dersler",
+	InstrLeadFmt: "%s: İTÜ'de %d dönemde, %d farklı ders.",
 	InstrStatTerms: "toplam dönem", InstrStatRecords: "ders kaydı", InstrTableHead: "Verdiği dersler",
 	InstrColCourse: "Ders", InstrColName: "Adı", InstrColTerm: "Dönem", InstrColCap: "Kont", InstrColEnr: "Yazılan",
 }
@@ -116,25 +116,25 @@ var langTR = lang{
 var langEN = lang{
 	Code: "en",
 	SiteTitle: "İTÜ Course Archive",
-	SiteTagline: "Open data automatically collected from obs.itu.edu.tr. Which courses opened in which term, who taught them, how many enrolled — permanently archived.",
+	SiteTagline: "Open data automatically collected from obs.itu.edu.tr. Which courses opened in which term, who taught them, how many enrolled: permanently archived.",
 	NavDersler: "courses", NavGecmis: "history", NavOnsart: "prereqs", NavSinavlar: "exams", NavTakvim: "calendar", NavProgram: "schedule", NavHakkinda: "about",
 	CrumbHome: "Course Archive", FootScanned: "last scrape", FootLive: "live site", FootSitemap: "sitemap",
 	TermSuffix: "course schedule and archive",
-	TermLeadFmt: "İTÜ %s — %d courses, %d sections, %d branches.",
+	TermLeadFmt: "İTÜ %s: %d courses, %d sections, %d branches.",
 	TermLiveBadge: "active term · live data", TermBranchHeading: "Branches open this term",
 	TermSearchCTA: "search this term live", TermDataCSV: "CSV", TermDataJSON: "JSON (search index)", TermDataPrefix: "All data:",
 	StatSections: "sections", StatCourses: "courses", StatBranches: "branches", StatScanned: "last scraped",
-	BranchTitleFmt: "%s branch courses and term breakdown", BranchLeadFmt: "İTÜ %s branch archive across all terms — %d course codes, %d terms, %d sections.",
+	BranchTitleFmt: "%s branch courses and term breakdown", BranchLeadFmt: "İTÜ %s branch archive across all terms: %d course codes, %d terms, %d sections.",
 	BranchH1Fmt: "%s branch", BranchSearchCTA: "search this branch live", BranchCodeHeading: "Course codes", BranchTermHeading: "Term breakdown",
 	BranchTermCol: "Term", BranchSecCol: "Sections",
-	CourseTitleFmt: "%s — %s",
-	CourseLeadFmt: "%s (%s) — offered in %d terms at İTÜ. Historical sections, instructors, and latest schedule.",
+	CourseTitleFmt: "%s: %s",
+	CourseLeadFmt: "%s (%s): offered in %d terms at İTÜ. Historical sections, instructors, and latest schedule.",
 	CourseSearchCTA: "search this course live", CourseStatTerms: "total terms",
 	CourseSectHead: "Latest term sections", CourseSectCRN: "CRN", CourseSectInstr: "Instructor", CourseSectTime: "Time", CourseSectCap: "Cap/Enr",
 	CourseHistHead: "Term history", CourseHistTerm: "Term", CourseHistInstr: "Instructor", CourseHistCap: "Cap", CourseHistEnr: "Enr",
 	CourseQuotaHead: "Enrollment history",
-	InstrTitleFmt: "%s — courses taught",
-	InstrLeadFmt: "%s — taught across %d terms, %d distinct courses at İTÜ.",
+	InstrTitleFmt: "%s: courses taught",
+	InstrLeadFmt: "%s: taught across %d terms, %d distinct courses at İTÜ.",
 	InstrStatTerms: "total terms", InstrStatRecords: "course records", InstrTableHead: "Courses taught",
 	InstrColCourse: "Course", InstrColName: "Name", InstrColTerm: "Term", InstrColCap: "Cap", InstrColEnr: "Enr",
 }
@@ -398,7 +398,7 @@ func (b *Builder) writeTermPage(tr termRow) error {
 
 	canonical := fmt.Sprintf("%s/dersler/%s/", baseURL, tr.tref.Slug)
 	title := tr.tref.Label + " ders programı ve arşivi"
-	lead := fmt.Sprintf("İTÜ %s — %d ders, %d şube, %d branş.",
+	lead := fmt.Sprintf("İTÜ %s: %d ders, %d şube, %d branş.",
 		tr.tref.Label, tr.meta.Courses, tr.meta.Sections, len(tr.meta.Branches))
 
 	jsonld := jsonldScript([]any{
@@ -435,7 +435,7 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 	title := code + " branşı dersleri ve dönem dökümü"
 	codeCount := len(a.codes)
 	termCount := len(a.termSections)
-	lead := fmt.Sprintf("İTÜ %s branşının tüm dönemlerdeki arşivi — %d ders kodu, %d dönem, %d şube.",
+	lead := fmt.Sprintf("İTÜ %s branşının tüm dönemlerdeki arşivi: %d ders kodu, %d dönem, %d şube.",
 		code, codeCount, termCount, a.total)
 
 	// En güncel dönem slug'ı
@@ -593,7 +593,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
 <script>(function(){try{var t=localStorage.getItem('itu-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'sade')}catch(e){}})()</script>
-<title>{{.Title}} — {{.Lang.SiteTitle}}</title>
+<title>{{.Title}} | {{.Lang.SiteTitle}}</title>
 <meta name="description" content="{{.Description}}">
 <link rel="canonical" href="{{.Canonical}}">
 {{if .AltURL}}<link rel="alternate" hreflang="{{.AltLang}}" href="{{.AltURL}}">{{end}}
@@ -659,7 +659,7 @@ func (b *Builder) writeIndexPage(terms []termRow) error {
 	for i, tr := range terms {
 		if i >= 10 { break }
 		recent = append(recent, fmt.Sprintf(
-			`<li><a href="/%sdersler/%s/">%s</a> — %d %s</li>`,
+			`<li><a href="/%sdersler/%s/">%s</a> · %d %s</li>`,
 			prefix, tr.tref.Slug, template.HTMLEscapeString(tr.tref.Label),
 			tr.meta.Sections, b.l.StatSections,
 		))
@@ -893,8 +893,8 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 	}
 
 	canonical := fmt.Sprintf("%s/hoca/%s/", baseURL, slug)
-	title := hi.Name + " — verdiği dersler"
-	lead := fmt.Sprintf("%s — İTÜ'de %d dönemde, %d farklı ders.", hi.Name, hi.Terms, distinctCodes(hi.Rows))
+	title := hi.Name + ": verdiği dersler"
+	lead := fmt.Sprintf("%s: İTÜ'de %d dönemde, %d farklı ders.", hi.Name, hi.Terms, distinctCodes(hi.Rows))
 
 	jsonld := jsonldScript([]any{
 		map[string]any{
@@ -1207,12 +1207,12 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 	}
 
 	canonical := fmt.Sprintf("%s/ders/%s/", baseURL, slug)
-	title := code + " — " + hc.Name
+	title := code + ": " + hc.Name
 	branch := code
 	if idx := strings.IndexByte(code, ' '); idx > 0 {
 		branch = code[:idx]
 	}
-	desc := fmt.Sprintf("%s (%s) — İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
+	desc := fmt.Sprintf("%s (%s): İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
 		code, hc.Name, len(hc.Terms))
 
 	jsonld := jsonldScript([]any{

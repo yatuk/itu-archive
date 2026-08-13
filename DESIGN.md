@@ -161,7 +161,7 @@ Renk kuralları:
 
 ## Components
 
-- **Kontenjan çubuğu (imza öğesi adayı):** `.fill` → `%NN` + `.bar` (46×6px) + iç `i` (genişlik yüzdesi). Normal `--acid`; ≥85% ve %100 `--amber`. `course-detail.js`'te `secCard` farklı bir el yazısı varyant kullanıyor — **tek motife birleştirilecek**. "Cesaret tek yere harcanacak."
+- **Kontenjan çubuğu (imza öğesi):** `.fill` → `%NN` (detay panelinde "yazılan / kapasite · %pct") + `.bar` + iç `i`. Tek kaynak `fillBar(cap, enr, {detail})` (chart.js) — tüm yüzeyler onu kullanır. Sade motifi: 64×8 hap çubuk, %100 kapasite çizgisi, acid gradyan dolgu; ≥85% (`tight`) ve %100 (`full`) amber, dolu = amber çerçeve. Fosfor ince 46×6 terminal çubuğunu korur.
 - **Ders tablosu:** 10 kolon (sel, fav, CRN, kod, ad, hoca, zaman, kont./yazılan, doluluk); satır tıklanınca detay; sort butonları; arama eşleşmesi `<mark>`.
 - **Detay modalı:** `.detail-panel` (fixed, karartma) > `.detail-box` (max 680px) — 6 yüzeyden tek giriş; d-head / meta pill'leri / şube kartları / önşart ağacı / not dağılımı / katalog / geçmiş.
 - **Tabs (Fluid Island):** yapışkan cam hap, 9 sekme; sade'de numarasız düz adlar.

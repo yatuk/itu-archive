@@ -134,6 +134,9 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     // dönem ve sıraya göre belirleniyor, bu yüzden kenarlar her zaman aynı
     // (öngörülebilir) yerde ve net görünüyor.
     layout() {
+      // Veri yüklenmeden canvas resize olabilir (ResizeObserver erken tetiklenir);
+      // boş graf boş döner — TypeError fırlatılmaz.
+      if (!this.nodes || !this.nodes.length) return;
       const w = Math.max(this.canvas.clientWidth, 600);
       const laneCount = this.laneTitles.length;
       const laneW = laneCount > 1 ? (w - LANE_PAD * 2) / (laneCount - 1) : 0;

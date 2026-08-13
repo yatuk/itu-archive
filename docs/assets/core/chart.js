@@ -8,7 +8,7 @@ import { termLabel, esc, formatInt } from './utils.js';
 // sınıfları doluluk durumunu taşır. detail:true → "yazılan / kapasite · %pct"
 // (detay paneli şube kartı); aksi halde "%pct".
 export function fillBar(cap, enr, { detail = false } = {}) {
-  if (!cap) return '—';
+  if (!cap) return '·';
   const pct = Math.min(100, Math.round((enr / cap) * 100));
   const cls = pct >= 100 ? 'full' : pct >= 85 ? 'tight' : '';
   const label = detail ? `${formatInt(enr)} / ${formatInt(cap)} · %${pct}` : `%${pct}`;
@@ -62,6 +62,6 @@ export function trendChart(byTerm, limit = 8) {
       <p class="t-caption" aria-live="polite"></p>
     </div>
     ${rest ? `<button type="button" class="btn-ghost t-more">${rest} dönemin hepsini göster</button>` : ''}
-    <figcaption class="sr-only">Kontenjan ve doluluk zaman çizelgesi — ayrıntı için dönem tablosu.</figcaption>
+    <figcaption class="sr-only">Kontenjan ve doluluk zaman çizelgesi · ayrıntı için dönem tablosu.</figcaption>
   </figure>`;
 }

@@ -155,8 +155,8 @@ async function showCourse(code, branch) {
     </article>`;
   fillRows($('#hdetail tbody'), rows, (r) => `
     <tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
-        <td>${esc(r.instructor || '—')}</td>
-        <td class="when">${esc(r.days || '—')}</td>
+        <td>${esc(r.instructor || '·')}</td>
+        <td class="when">${esc(r.days || '·')}</td>
         <td class="num">${r.cap}</td><td class="num">${r.enr}</td>
         <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`);
   const dBtn = $('#hdetail .h-detail');

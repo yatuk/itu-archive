@@ -89,7 +89,7 @@ export function groupSections(sections) {
 // "-" / "—" gibi yedek hoca işaretleri boş sayılır — hoca kolonu o zaman hiç çizilmez.
 function cleanInstructor(v) {
   const t = String(v || '').trim();
-  return (t === '-' || t === '—' || t === '–') ? '' : t;
+  return (t === '-' || t === '·' || t === '–') ? '' : t;
 }
 
 // Ders satırının yük etiketi: "2+0+0 · 0 kr · 2 AKTS". Kredi 0/eksikse "0 kr"

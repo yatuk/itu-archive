@@ -67,7 +67,7 @@ test('fold Türkçe karakterleri ASCII katar', () => {
   assert.equal(fold(''), '');
 });
 
-test('normSearch boşluğu kaldırır — iki sekmede ortak arama anahtarı', () => {
+test('normSearch boşluğu kaldırır · iki sekmede ortak arama anahtarı', () => {
   // "BLG 102E", "BLG102E" ve "BLG  102  E" aynı anahtarı üretmeli.
   assert.equal(normSearch('BLG 102E'), 'blg102e');
   assert.equal(normSearch('BLG102E'), 'blg102e');
@@ -322,7 +322,7 @@ test('gradeMode en sık harf notunu ve yüzdesini verir', () => {
   const mode = gradeMode(g, 239);
   assert.equal(mode.grade, 'VF');
   assert.equal(mode.pct, Math.round((42 / 239) * 100));
-  assert.equal(gradeMode({}, 10).grade, '—');
+  assert.equal(gradeMode({}, 10).grade, '·');
 });
 
 test('sessionHours oturum sürelerini toplar ve yuvarlar', () => {
@@ -335,7 +335,7 @@ test('sessionHours oturum sürelerini toplar ve yuvarlar', () => {
 });
 
 test('fillBar kapasitesiz şubede çubuk basmaz', () => {
-  assert.equal(fillBar(0, 5), '—');
+  assert.equal(fillBar(0, 5), '·');
   const html = fillBar(50, 25);
   assert.ok(html.includes('%50'));
   assert.ok(html.includes('bar'));
@@ -627,8 +627,8 @@ test('icsText RRULE satırını ekler (Faz 4.5 yinelenen oturum)', () => {
 
 test('midtermWeeks katalog haftalık konularından ara sınav haftalarını sayar', () => {
   const recs = [
-    { weeklyTopics: ['Hafta 1 — Giriş', 'Hafta 7 — Konular + Ara Sınav I', 'Hafta 8 — Konu'] },
-    { weeklyTopics: ['Hafta 7 — Ara Sınav II', 'Hafta 12 — Final öncesi'] },
+    { weeklyTopics: ['Hafta 1 · Giriş', 'Hafta 7 · Konular + Ara Sınav I', 'Hafta 8 · Konu'] },
+    { weeklyTopics: ['Hafta 7 · Ara Sınav II', 'Hafta 12 · Final öncesi'] },
   ];
   const mw = midtermWeeks(recs);
   assert.equal(mw.get('Hafta 7'), 2);

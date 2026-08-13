@@ -15,7 +15,7 @@
   try {
     var t = localStorage.getItem('itu-theme');
     // Yalnızca sade (ana) ve dark (seçenek) var; eski light/contrast/auto
-    // değerleri kaldırılan temalara karşılık gelir — sade'ye düşer.
+    // değerleri kaldırılan temalara karşılık gelir · sade'ye düşer.
     document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'sade');
   } catch (e) {}
 })();
@@ -117,7 +117,7 @@
      <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)">◐</button>
     </div>
     <button type="button" id="lang-btn" class="btn-ghost" title="Dil / Language">TR/EN</button>
-    <button type="button" id="taken-btn" class="btn-ghost" title="Aldığım dersleri gir — önşart/program uygunluğunu gör">aldığım dersler</button>
+    <button type="button" id="taken-btn" class="btn-ghost" title="Aldığım dersleri gir · önşart/program uygunluğunu gör">aldığım dersler</button>
    </div>
   </div>
   <p class="tagline">
@@ -126,9 +126,9 @@
   </p>
   <dl class="statbar" id="statbar" aria-live="polite">
    <div><dt>durum</dt><dd id="stat-status">yükleniyor…</dd></div>
-   <div><dt>aktif dönem</dt><dd id="stat-term">—</dd></div>
-   <div><dt>son tarama</dt><dd id="stat-scraped">—</dd></div>
-   <div><dt>arşivlenen dönem</dt><dd id="stat-terms">—</dd></div>
+   <div><dt>aktif dönem</dt><dd id="stat-term">·</dd></div>
+   <div><dt>son tarama</dt><dd id="stat-scraped">·</dd></div>
+   <div><dt>arşivlenen dönem</dt><dd id="stat-terms">·</dd></div>
   </dl>
  </div>
 </header>
@@ -212,7 +212,7 @@
   </div>
   <div id="filters-scrim" class="filters-scrim" hidden></div>
 
-  <p class="resultline" id="resultline" aria-live="polite">—</p>
+  <p class="resultline" id="resultline" aria-live="polite">·</p>
 
   <div id="chips" class="chips" hidden aria-label="Aktif filtreler"></div>
 
@@ -260,7 +260,7 @@
            placeholder="ders kodu (BLG 102) veya öğretim üyesi adı…" aria-label="Geçmişte ara">
    </label>
   </div>
-  <p class="resultline" id="hresultline" aria-live="polite">—</p>
+  <p class="resultline" id="hresultline" aria-live="polite">·</p>
   <div id="hmatches" class="matches"></div>
   <div id="hdetail"></div>
  </section>
@@ -320,7 +320,7 @@
     <button type="button" id="e-ics" class="btn-ghost" title="Filtrelenmiş sınavları takvime aktar">.ics</button>
    </div>
   </div>
-  <p class="resultline" id="eresultline" aria-live="polite">—</p>
+  <p class="resultline" id="eresultline" aria-live="polite">·</p>
    <div class="tablewrap">
     <table aria-label="Sınav listesi" id="etable">
      <thead>
@@ -378,7 +378,7 @@
      <div id="p-obs-tt" class="ttip" role="tooltip">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</div>
      <div id="p-obs-onboard" class="ttip ttip-onboard" role="status">👆 Bu butonu yer imleri çubuğuna sürükleyin!</div>
     </div>
-    <span class="p-credits" title="Toplam kredi">Kredi: <b id="p-credits-val">—</b></span>
+    <span class="p-credits" title="Toplam kredi">Kredi: <b id="p-credits-val">·</b></span>
    </div>
   </div>
 
@@ -547,7 +547,7 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
 </div>
 
 <footer class="wrap">
- <span id="foot-build">—</span> ·
+ <span id="foot-build">·</span> ·
  <a href="data/index.json">index.json</a> ·
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>

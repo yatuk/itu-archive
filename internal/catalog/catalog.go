@@ -259,7 +259,7 @@ func parseWeekly(text string) (topics []string, plan []WeeklyTopic) {
 			continue
 		}
 		if n, err := strconv.Atoi(week); err == nil {
-			topics = append(topics, "Hafta "+week+" — "+topic)
+			topics = append(topics, "Hafta "+week+" · "+topic)
 			out := ""
 			if len(cells) >= 3 {
 				out = cleanHTML(cells[2][1])

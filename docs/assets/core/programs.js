@@ -17,7 +17,7 @@ export async function loadProgramMap() {
 export async function programLabel(code) {
   const m = await loadProgramMap();
   const p = m.get(code);
-  return p ? `${code} — ${p.name}` : code;
+  return p ? `${code} · ${p.name}` : code;
 }
 
 // Kodun listede olup olmadığını söyler (kapanmış/grafik dışı kodlar için).

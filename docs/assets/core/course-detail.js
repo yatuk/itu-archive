@@ -106,12 +106,12 @@ function secCard(s, buildings, showMeta = true) {
     .join('');
   const sessions = sessionsHtml(s, buildings);
   // Tek satır doluluk: fillBar'ın detail varyantı — tek kaynak (full/tight dahil).
-  const stats = s.capacity ? fillBar(s.capacity, s.enrolled, { detail: true }) : '—';
+  const stats = s.capacity ? fillBar(s.capacity, s.enrolled, { detail: true }) : '·';
   return `
     <div class="d-sec">
       <div class="d-sec-head">
         <b class="d-crn">${esc(s.crn)}</b>
-        <span class="d-sec-instr">${esc(s.instructor || '—')}</span>
+        <span class="d-sec-instr">${esc(s.instructor || '·')}</span>
         ${histBtns}
       </div>
       ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa (oturum)` : ''].filter(Boolean).join(' · ')}</div>` : ''}
@@ -202,7 +202,7 @@ function histHtml(hist) {
     <div class="tablewrap"><table class="htable" aria-label="Dönem geçmişi">
       <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr></thead>
       <tbody>${rows.map((r) => `<tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
-        <td>${esc(r.instructor || '—')}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td>
+        <td>${esc(r.instructor || '·')}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td>
         <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`).join('')}</tbody>
     </table></div>
   </section>`;
@@ -320,7 +320,7 @@ async function enrichProgLabels(content) {
       const code = b.dataset.program;
       const p = m.get(code);
       if (p) {
-        b.textContent = `${code} — ${p.name}`;
+        b.textContent = `${code} · ${p.name}`;
       } else {
         b.classList.add('d-prog-stale');
         b.title = 'Bu program kodu resmî listede yok (kapanmış/grafik dışı olabilir)';
@@ -405,7 +405,7 @@ function catalogHtml(cat) {
   // sayar. Katalog planı yoksa bölüm sessiz.
   const midterms = (cat.weeklyTopics || []).filter((t) => /ara\s*sınav/i.test(t));
   const midtermLine = midterms.length
-    ? `<p class="d-cat-midterm">vize: ${esc(midterms.map((t) => t.split(' — ')[0] || t).join(', '))}</p>`
+    ? `<p class="d-cat-midterm">vize: ${esc(midterms.map((t) => t.split(' · ')[0] || t).join(', '))}</p>`
     : '';
   // Faz 3.5: haftalık plan tablosu (hafta/konu/çıktı). Yapılandırılmış veri yoksa
   // geriye uyumlu <ol> listesine düş.
@@ -413,7 +413,7 @@ function catalogHtml(cat) {
   const planHtml = (cat.weeklyPlan || []).length
     ? `<div class="tablewrap"><table class="d-cat-plan" aria-label="Haftalık ders planı">
         <thead><tr><th class="num">Hafta</th><th>Konu</th>${hasOut ? '<th>Çıktılar</th>' : ''}</tr></thead>
-        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ' class="d-cat-mid" title="Ara sınav haftası"' : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '—')}</td>` : ''}</tr>`).join('')}</tbody>
+        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ' class="d-cat-mid" title="Ara sınav haftası"' : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '·')}</td>` : ''}</tr>`).join('')}</tbody>
       </table></div>`
     : (cat.weeklyTopics || []).length ? `<ol>${list(cat.weeklyTopics)}</ol>` : '';
   // Faz 3.5: denklikler — tıklanınca o dersin detayı açılır.
@@ -456,7 +456,7 @@ export function gradePassPct(grades, total) {
 // Saf yardımcı: en sık harf notu + yüzdesi. Test edilebilir.
 export function gradeMode(grades, total) {
   const e = Object.entries(grades).sort((a, b) => b[1] - a[1])[0];
-  if (!e) return { grade: '—', pct: 0 };
+  if (!e) return { grade: '·', pct: 0 };
   return { grade: e[0], pct: total ? Math.round((e[1] / total) * 100) : 0 };
 }
 

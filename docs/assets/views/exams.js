@@ -92,9 +92,9 @@ function renderExams(append) {
     <tr><td class="crn" data-label="CRN">${esc(e.crn)}</td>
         <td class="code" data-label="Ders"><button type="button" class="row-toggle x-detail" data-code="${esc(e.code)}"><b>${esc(e.code)}</b></button></td>
         <td data-label="Adı">${esc(e.name)}</td>
-        <td data-label="Akademisyen">${esc(e.instructor || '—')}</td>
+        <td data-label="Akademisyen">${esc(e.instructor || '·')}</td>
         <td data-label="Tür">${esc(e.type)}</td>
-        ${showPlace ? `<td class="when yer-col" data-label="Yer">${esc(e.place || '—')}</td>` : ''}
+        ${showPlace ? `<td class="when yer-col" data-label="Yer">${esc(e.place || '·')}</td>` : ''}
         <td data-label="Tarih">${esc(e.date)}</td>
         <td class="when" data-label="Saat">${esc(e.day)} ${esc(e.time)}</td></tr>`,
   { empty: 'eşleşen sınav yok', colspan: showPlace ? 8 : 7 });

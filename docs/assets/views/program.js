@@ -74,7 +74,7 @@ function renderProgSelector() {
     `<option value="${p.id}">${esc(p.name)}</option>`).join('');
   sel.value = String(ps.active);
   const p = ps.programs.find((x) => x.id === ps.active);
-  $('#p-credits-val').textContent = p ? (p.credits != null ? p.credits : '—') : '—';
+  $('#p-credits-val').textContent = p ? (p.credits != null ? p.credits : '·') : '·';
   render();
 }
 
@@ -241,7 +241,7 @@ function fillCRNSelect(id, branch, code) {
   if (!code) return;
   const secs = rows.filter((r) => r[3] === branch && r[1] === code);
   crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>' +
-    secs.map((r) => `<option value="${esc(r[0])}">${esc(r[0])}: ${esc(r[5] || '—')} · ${esc(r[4] || '—')} · ${r[6] ? `${r[7]}/${r[6]}` : '—'}</option>`).join('');
+    secs.map((r) => `<option value="${esc(r[0])}">${esc(r[0])}: ${esc(r[5] || '·')} · ${esc(r[4] || '·')} · ${r[6] ? `${r[7]}/${r[6]}` : '·'}</option>`).join('');
   // CRN seçilince ekle ve satırı kaldır.
   crnSel.addEventListener('change', () => {
     if (!crnSel.value) return;
@@ -315,7 +315,7 @@ function search() {
   box.innerHTML = hits.map((r, idx) => `
     <button type="button" class="p-result" data-i="${idx}">
       <b>${esc(r[1])}</b><span>${esc(r[2])}</span>
-      <em>${esc(r[5] || '—')}</em><em>${r[6] ? `${r[7]}/${r[6]}` : '—'}</em>
+      <em>${esc(r[5] || '·')}</em><em>${r[6] ? `${r[7]}/${r[6]}` : '·'}</em>
     </button>`).join('') || '<p class="empty">eşleşme yok</p>';
 }
 
@@ -402,8 +402,8 @@ function renderList(items) {
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
       <span class="p-crn">${esc(crn)}${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
       <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
-      <span class="p-when">${esc(when || '—')}</span>
-      <span class="p-fill">${cap ? fillBar(cap, enr) : '—'}</span>
+      <span class="p-when">${esc(when || '·')}</span>
+      <span class="p-fill">${cap ? fillBar(cap, enr) : '·'}</span>
       <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için eylemler" aria-haspopup="menu">⋮</button>
       <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
     </div>`;
@@ -767,7 +767,7 @@ export function midtermWeeks(records) {
   for (const rec of records || []) {
     for (const topic of rec?.weeklyTopics || []) {
       if (!/ara\s*sınav/i.test(topic)) continue;
-      const week = (String(topic).split(' — ')[0] || topic).trim();
+      const week = (String(topic).split(' · ')[0] || topic).trim();
       counts.set(week, (counts.get(week) || 0) + 1);
     }
   }
@@ -807,7 +807,7 @@ function updateCredits(items) {
   const ps = loadPrograms();
   const p = ps.programs.find((x) => x.id === ps.active);
   if (p && p.credits != null) { el.textContent = p.credits; return; }
-  el.textContent = items.length ? '—' : '—';
+  el.textContent = items.length ? '·' : '·';
   if (!items.length) return;
   creditTotals(items).then((r) => {
     if (!r.ectsKnown && !r.localKnown) return;

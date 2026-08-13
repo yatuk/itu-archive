@@ -761,7 +761,7 @@ var landingPages = []landingPage{
 		h1:          "İTÜ ders planı",
 		body: []string{
 			"İTÜ Ders Arşivi'nde seçtiğin programın dönem dönem ders planını açabilir, derslerin bu dönem açık olup olmadığını görebilirsin. Ders Planım görünümü, derslere not girip GANO ve dönem ortalamalarını anında hesaplar.",
-			"Planı aç, seçmeli slotlarda dersi seç, notlarını gir — hepsi tarayıcında saklanır, hiçbir veri sunucuya gitmez.",
+			"Planı aç, seçmeli slotlarda dersi seç, notlarını gir · hepsi tarayıcında saklanır, hiçbir veri sunucuya gitmez.",
 		},
 		cta: "/#dersplanim", ctaLabel: "Ders Planım'ı aç",
 	},
@@ -772,7 +772,7 @@ var landingPages = []landingPage{
 		body: []string{
 			"GANO, İTÜ'nün 4.00 ölçeğindeki genel ağırlıklı not ortalamandır. Her harf notu bir katsayı taşır: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0; FF ve VF 0.0.",
 			"Ders Planım görünümünde notlarını ders ders gir; GANO'n ve her yarıyılın ortalaması otomatik hesaplansın. Transfer kredin veya mevcut GANO'n varsa üstteki kutulara yaz.",
-			"Bu bir transkript değildir — resmî GANO için öğrenci bilgi sistemine bak.",
+			"Bu bir transkript değildir · resmî GANO için öğrenci bilgi sistemine bak.",
 		},
 		cta: "/#dersplanim", ctaLabel: "GANO'nu hesapla",
 	},
@@ -827,7 +827,7 @@ var landingPages = []landingPage{
 		cta: "/#onsart", ctaLabel: "Haritayı aç",
 	},
 	{
-		slug: "ders-arsivi", title: "İTÜ ders arşivi — geçmiş dönemler",
+		slug: "ders-arsivi", title: "İTÜ ders arşivi · geçmiş dönemler",
 		description: "İTÜ ders arşivi: 2016'dan bugüne tüm dönemlerin dersleri, kontenjan geçmişi, katalog ve not dağılımı.",
 		h1:          "İTÜ ders arşivi",
 		body: []string{
@@ -923,7 +923,7 @@ func jsonldScript(v any) template.HTML {
 
 func fmtDate(iso string) string {
 	if iso == "" {
-		return "—"
+		return "·"
 	}
 	t, err := time.Parse(time.RFC3339, iso)
 	if err != nil {
@@ -1450,7 +1450,7 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 // instrLink, hoca adı için varsa hoca sayfasına bağlantı, yoksa düz metin döndürür.
 func instrLink(name string, instrSlugs map[string]string) string {
 	if name == "" || name == "***" {
-		return "—"
+		return "·"
 	}
 	if slug, ok := instrSlugs[name]; ok {
 		return fmt.Sprintf(`<a href="/hoca/%s/">%s</a>`, slug, template.HTMLEscapeString(name))

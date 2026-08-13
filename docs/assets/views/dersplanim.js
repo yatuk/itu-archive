@@ -137,7 +137,7 @@ function renderProgramOptions() {
     .map(([fac, ps]) => {
       ps.sort((a, b) => a.code.localeCompare(b.code));
       const opts = ps.map((p) => {
-        const label = p.name !== p.code ? `${p.code} — ${p.name}` : p.code;
+        const label = p.name !== p.code ? `${p.code} · ${p.name}` : p.code;
         return `<option value="${esc(p.code)}">${esc(label)}</option>`;
       }).join('');
       return `<optgroup label="${esc(fac)}">${opts}</optgroup>`;
@@ -277,7 +277,7 @@ function buildGradeSelect(selected, code, kind = 'course', slotKey = '') {
   sel.tabIndex = 0;
   const none = document.createElement('option');
   none.value = '';
-  none.textContent = '—';
+  none.textContent = '·';
   sel.appendChild(none);
   for (const g of GRADE_CHOICES) {
     const o = document.createElement('option');
@@ -312,13 +312,13 @@ function syncGradeClear(select, hasGrade) {
 // Seçmeli slot için ders seçimi + not girişi. Option listeleri esc'li string (güvenli).
 function electiveControls(slotKey, e, pick) {
   const opts = (e.options || []).map((o) =>
-    `<option value="${esc(o.code)}" ${pick?.code === o.code ? 'selected' : ''}>${esc(o.code)} — ${esc(o.name || '')}</option>`
+    `<option value="${esc(o.code)}" ${pick?.code === o.code ? 'selected' : ''}>${esc(o.code)} · ${esc(o.name || '')}</option>`
   ).join('');
-  const defaultOpt = `<option value="" ${!pick?.code ? 'selected' : ''}>— ders seç —</option>`;
+  const defaultOpt = `<option value="" ${!pick?.code ? 'selected' : ''}>· ders seç ·</option>`;
   const pickSel = `<select class="dp-epick" data-slot="${slotKey}" aria-label="Seçmeli ders seç">${defaultOpt}${opts}</select>`;
   const grade = pick?.code
     ? `<span class="dp-grade-wrap"><select class="dp-grade dp-egrade${pick.grade ? ' filled' : ''}" data-gkind="elective" data-gslot="${slotKey}" data-gcode="${esc(pick.code)}" aria-label="${esc(pick.code)} notu" tabindex="0">
-        <option value="">—</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
+        <option value="">·</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
       </select><button type="button" class="dp-grade-clear" data-act="dp-clear" title="notu temizle">×</button></span>`
     : '<span class="dp-grade-hint">önce ders seç</span>';
   return `<div class="dp-elective-inputs">${pickSel}${grade}</div>`;

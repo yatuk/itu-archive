@@ -133,7 +133,7 @@ export async function loadTerm(slug) {
       for (const o of pSel.options) {
         if (!o.value) continue;
         const p = m.get(o.value);
-        if (p) o.textContent = `${o.value} — ${p.name}`;
+        if (p) o.textContent = `${o.value} · ${p.name}`;
       }
     }).catch(() => {});
 
@@ -253,7 +253,7 @@ export function applyFilters() {
     const drop = suggestDrop(terms, countFor);
     if (drop >= 0) {
       const rest = terms.filter((_, j) => j !== drop).map((t) => `'${esc(t)}'`).join(' ve ');
-      hint = ` — yalnızca ${rest} ile aramayı dene`;
+      hint = ` · yalnızca ${rest} ile aramayı dene`;
     }
   }
   $('#resultline').innerHTML = n === total
@@ -454,8 +454,8 @@ function renderRows(append) {
       <td class="crn" data-label="CRN">${markField(crn, 'crn', hitField('crn'))}</td>
       <td class="code" data-label="Ders"><b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small></td>
       <td data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button></td>
-      <td data-label="Öğretim Üyesi">${markField(instructor || '—', 'instructor', hitField('instructor'))}</td>
-      <td class="when" data-label="Zaman">${esc(when || '—')}</td>
+      <td data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
+      <td class="when" data-label="Zaman">${esc(when || '·')}</td>
       <td class="num" data-label="Kont.">${formatInt(cap)}</td>
       <td class="num" data-label="Yazılan">${formatInt(enr)}</td>
       <td class="num" data-label="Doluluk">${cap ? `${formatInt(enr)}/${formatInt(cap)} · ` : ''}${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
@@ -629,7 +629,7 @@ function renderTimetable() {
   const rows = timetableRows();
   const t = buildTimetable(rows);
   if (!t) {
-    wrap.innerHTML = '<p class="empty">seçili şubelerde zaman bilgisi yok — çizelge oluşturulamadı</p>';
+    wrap.innerHTML = '<p class="empty">seçili şubelerde zaman bilgisi yok · çizelge oluşturulamadı</p>';
     return;
   }
   const { startSlot, nSlots, grid, all } = t;

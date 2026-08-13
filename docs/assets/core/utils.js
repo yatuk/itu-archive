@@ -212,7 +212,7 @@ export function debounce(fn, ms) {
 }
 
 export function fmtDate(iso) {
-  if (!iso) return '—';
+  if (!iso) return '·';
   const d = new Date(iso);
   if (isNaN(d)) return iso;
   return d.toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' });
@@ -233,7 +233,7 @@ export function buildingOf(place) {
 }
 
 // Bina kodu → ad ("BBB" → "Bilgisayar ve Bilişim Binası"). docs/data/buildings.json
-// code→name haritasından; eşleşme yoksa kodu aynen döndürür. Saf — testli.
+// code→name haritasından; eşleşme yoksa kodu aynen döndürür. Saf · testli.
 export function buildingName(code, buildings) {
   const c = String(code || '').trim();
   if (!c) return '';
@@ -297,13 +297,13 @@ export function parseTurkishDateRange(str) {
 }
 
 // Takvim etkinliğini bugüne göre sınıflandırır: { past, now, label }.
-// label canlı hesaptır — scrape anına sabitlenmiş `remaining` etiketine
+// label canlı hesaptır · scrape anına sabitlenmiş `remaining` etiketine
 // güvenmez (bayat kalıp yanlış "geçti" diyebilir). Aralıklı tarihte
 // geçmiş = bitiş bugünden önce, devam = bugün aralık içinde.
 // Tarih çözümlenemezse etkinlik "gelecek" sayılır (boş ekran üretmemek için).
 //
 // isoOpsiyonel: scraper'ın yazdığı makinece okunur { start, end } (ISO "2006-01-02").
-// Varsa Türkçe metin ayrıştırmaya tercih edilir — scraper bazı biçimleri
+// Varsa Türkçe metin ayrıştırmaya tercih edilir · scraper bazı biçimleri
 // (gömülü saatli aralıklar) JS'ten daha sağlam çözer.
 export function calendarDayState(dateStr, today = new Date(), iso) {
   let r = null;
@@ -327,7 +327,7 @@ export function calendarDayState(dateStr, today = new Date(), iso) {
 
 // Oturum sürelerini toplar: ["08:30/11:29", "13:00/15:59"] -> 6 sa/hafta.
 // Oturum süresidir, resmî T+U+L kredisi değildir (katalog verisiyle gelir).
-// Saf — test edilebilir.
+// Saf · test edilebilir.
 export function sessionHours(times) {
   if (!Array.isArray(times) || !times.length) return 0;
   let mins = 0;
@@ -342,7 +342,7 @@ export function sessionHours(times) {
 }
 
 // ISO zaman damgasından kısa "ne kadar önce" metni üretir: "şimdi", "4 dk önce",
-// "6 sa önce", "3 gün önce"; 30 günden eskisinde tarih. Saf — test edilebilir.
+// "6 sa önce", "3 gün önce"; 30 günden eskisinde tarih. Saf · test edilebilir.
 export function timeAgo(iso, now = Date.now()) {
   if (iso == null || String(iso).trim() === '') return ''; // new Date(null) → 1970 tuzağı
   const t = new Date(iso);
@@ -381,7 +381,7 @@ export function downloadCSV(filename, headers, rows) {
   URL.revokeObjectURL(a.href);
 }
 
-// ICS (takvim) metni üretir — saf, testli. events: [{ uid, title, startISO,
+// ICS (takvim) metni üretir · saf, testli. events: [{ uid, title, startISO,
 // endISO, desc? }], ISO tarihleri "YYYY-MM-DD" (tüm gün) ya da
 // "YYYY-MM-DDTHH:MM:SS". downloadCSV deseninin yanına ikinci üretici.
 export function icsText(events, stamp = new Date().toISOString().slice(0, 19)) {
@@ -406,7 +406,7 @@ export function icsText(events, stamp = new Date().toISOString().slice(0, 19)) {
     lines.push(`DTEND:${dt(e.endISO || e.startISO, allDay)}`);
     lines.push(`SUMMARY:${escTxt(e.title)}`);
     if (e.desc) lines.push(`DESCRIPTION:${escTxt(e.desc)}`);
-    if (e.rrule) lines.push(`RRULE:${String(e.rrule)}`); // değer sözdizimi ';' içerir — escape edilmez
+    if (e.rrule) lines.push(`RRULE:${String(e.rrule)}`); // değer sözdizimi ';' içerir · escape edilmez
     lines.push('END:VEVENT');
   }
   lines.push('END:VCALENDAR');
@@ -414,7 +414,7 @@ export function icsText(events, stamp = new Date().toISOString().slice(0, 19)) {
   return lines.map((ln) => foldLine(ln)).join('\r\n');
 }
 
-// ICS dışa aktarımı — Faz 4.5. icsText'i dosyaya indirir.
+// ICS dışa aktarımı · Faz 4.5. icsText'i dosyaya indirir.
 export function downloadICS(filename, events) {
   const blob = new Blob([icsText(events)], { type: 'text/calendar;charset=utf-8' });
   const a = document.createElement('a');
@@ -430,7 +430,7 @@ export function formatInt(n) {
   return s.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
-// Kısa, stabil kimlik karması (Faz 4.5 — .ics uid'i uzun/Türkçe başlık yerine).
+// Kısa, stabil kimlik karması (Faz 4.5 · .ics uid'i uzun/Türkçe başlık yerine).
 // Deterministik FNV-1a; 8 hex basamak çakışma ihtimali pratikte yok.
 export function hashShort(s) {
   let h = 2166136261 >>> 0;

@@ -262,6 +262,12 @@ Katalog verisi haftalık taramayla doluyor; OBS'de katalog formu olmayan
 çalışması) tanım alanı kaynakta boş — kayıt yine yazılıyor, yalnızca içerik
 bölümü panelde görünmüyor. Kapsam sayıları `catalog/index.json`'da.
 
+Haftalık plan (`weeklyPlan`) ve ders denklikleri (`equivalents`) alanları katalog
+taramayla doluyor: `weeklyPlan` haftalık `cmd/catalog` çalışmasında, denklikler
+ise OBS'nin DersBilgi arama ucunu (DersBilgiSearch) ayrı ve yavaş biçimde çeken
+`cmd/catalog -equivalents` geçişiyle eklenir. Veri yokken site eski biçimle
+(haftalık konular listesi, denkliksiz) çalışır.
+
 Not dağılımı yalnızca son üç akademik yılı kapsıyor; eski derslerin veya henüz
 notu açıklanmamış dönemlerin dağılımı yok. 10 kişinin altındaki sınıflar etik
 nedenle kaydedilmiyor (kişi ifşası). Kapsam `grades/index.json`'da.

@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Restorasyon Yüksek Lisans Programı",
+ "totalCredits": "30,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Restorasyon Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "RST YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "RST 596",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "LA"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Matematik Dersi",
+      "groupId": "9752",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 521E",
@@ -34,6 +50,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9753",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 501",
@@ -65,6 +86,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9754",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 501",
@@ -96,6 +122,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9755",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 501",
@@ -127,6 +158,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "9756",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 501",
@@ -158,30 +194,35 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "5913",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "5914",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "5915",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "9750",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders V",
+      "groupId": "9751",
       "options": null
      }
     }

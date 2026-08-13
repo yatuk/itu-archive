@@ -4,6 +4,8 @@
  "faculty": "Mimarlık Fakültesi",
  "level": "LS",
  "planLabel": "Şehir ve Bölge Planlama Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "130,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,89 @@
     {
      "course": {
       "code": "TES 112E",
-      "name": "Vis.Comm.I:Visualiz.&Tch.Drw."
+      "name": "Vis.Comm.I:Visualiz.&Tch.Drw.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TES 111E",
-      "name": "Project I"
+      "name": "Project I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 119",
-      "name": "Şehir &Bölge Plan. Giriş &Etik"
+      "name": "Şehir &Bölge Plan. Giriş &Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 1.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 113E",
-      "name": "Basic Design and Visual Arts"
+      "name": "Basic Design and Visual Arts",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 120E",
-      "name": "Intr.to Cmp.Sys.in Urban Std."
+      "name": "Intr.to Cmp.Sys.in Urban Std.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,43 +106,89 @@
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TES 122E",
-      "name": "Vis.CommII:Visualization&Persp"
+      "name": "Vis.CommII:Visualization&Persp",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 121E",
-      "name": "Project II"
+      "name": "Project II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 126",
-      "name": "CBS ve Planlama"
+      "name": "CBS ve Planlama",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "SBP 205E",
-      "name": "Statistics"
+      "name": "Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -105,36 +199,72 @@
     {
      "course": {
       "code": "SBP 223",
-      "name": "Arazi Kullanım Planlaması"
+      "name": "Arazi Kullanım Planlaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 252",
-      "name": "Konut ve Yöre Planlaması"
+      "name": "Konut ve Yöre Planlaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 262",
-      "name": "Peyzaj Planlaması ve Tasarım"
+      "name": "Peyzaj Planlaması ve Tasarım",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 207",
-      "name": "Proje III: Yöre Plan.&Tas."
+      "name": "Proje III: Yöre Plan.&Tas.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 232",
-      "name": "Şehir Tarihi"
+      "name": "Şehir Tarihi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "3.yy Seçime Bağlı ders (MT)",
+      "groupId": "8450",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 365E",
@@ -167,37 +297,75 @@
     {
      "course": {
       "code": "SBP 242E",
-      "name": "Planning Theory and Techniques"
+      "name": "Planning Theory and Techniques",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 218",
-      "name": "Proje IV: Stratejik Planlama & Politika Geliştirme"
+      "name": "Proje IV: Stratejik Planlama & Politika Geliştirme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 208",
-      "name": "Şehir Ekonomisi"
+      "name": "Şehir Ekonomisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 338",
-      "name": "Planlamada Kantitatif Yönteml"
+      "name": "Planlamada Kantitatif Yönteml",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 210",
-      "name": "Şehir Sosyolojisi"
+      "name": "Şehir Sosyolojisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -208,30 +376,60 @@
     {
      "course": {
       "code": "SBP 311",
-      "name": "Proje V: Mekân.Plan.&Kent.Gel."
+      "name": "Proje V: Mekân.Plan.&Kent.Gel.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 13,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 327",
-      "name": "Şehir Hukuku ve Şehir Yönetimi"
+      "name": "Şehir Hukuku ve Şehir Yönetimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 317",
-      "name": "Bölge Bilimi ve Planlama"
+      "name": "Bölge Bilimi ve Planlama",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 245",
-      "name": "Şehirsel Ulaşım"
+      "name": "Şehirsel Ulaşım",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (MT)",
+      "groupId": "8451",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 365E",
@@ -388,24 +586,48 @@
     {
      "course": {
       "code": "SBP 323",
-      "name": "Şehirsel Tasarım"
+      "name": "Şehirsel Tasarım",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 312",
-      "name": "Prj.VI: Mekan.Geliş.&Eyl.Plan."
+      "name": "Prj.VI: Mekan.Geliş.&Eyl.Plan.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 13,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SBP 318",
-      "name": "Koruma ve Planlama"
+      "name": "Koruma ve Planlama",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (MT)",
+      "groupId": "8452",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 354E",
@@ -497,6 +719,11 @@
     {
      "elective": {
       "title": "6th Sem. Minor Elect.Crs. (TM)",
+      "groupId": "8453",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SBP 214E",
@@ -529,24 +756,46 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "SBP 411",
-      "name": "Proje VII: Kentsel Tasarım"
+      "name": "Proje VII: Kentsel Tasarım",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12.5,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7.yy Elective Course (MT)",
+      "groupId": "8454",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 365E",
@@ -742,6 +991,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (MT)",
+      "groupId": "8455",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 365E",
@@ -913,6 +1167,11 @@
     {
      "elective": {
       "title": "7.yy Minor Elec.Course (ITB)",
+      "groupId": "8456",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1321,24 +1580,46 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "SBP 4902",
-      "name": "Diploma Projesi"
+      "name": "Diploma Projesi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 18,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (MT)",
+      "groupId": "8457",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GSB 313",
@@ -1434,6 +1715,11 @@
     {
      "elective": {
       "title": "8.yy Minor Elect. Course(ITB)",
+      "groupId": "8458",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ING 103DD",

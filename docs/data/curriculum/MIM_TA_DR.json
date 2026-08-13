@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "DR",
  "planLabel": "Mimarlık Tarihi Doktora Programı 2022-2023 / Bahar Dönemi Sonrası",
+ "totalCredits": "21,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Mimarlık Tarihi Doktora",
@@ -11,48 +13,70 @@
     {
      "course": {
       "code": "MIT DRT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 150,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "MIT YET",
-      "name": "Yeterlik Aşaması"
+      "name": "Yeterlik Aşaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 30,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "MIT 696",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi I",
+      "groupId": "10805",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi II",
+      "groupId": "10806",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi III",
+      "groupId": "10807",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi IV",
+      "groupId": "10808",
       "options": null
      }
     },
     {
      "elective": {
       "title": "LEE Seçmeli Dersi",
+      "groupId": "10809",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "LEE 901",
@@ -108,12 +132,14 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "10810",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "10811",
       "options": null
      }
     }

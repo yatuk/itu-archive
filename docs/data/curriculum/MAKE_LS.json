@@ -4,6 +4,8 @@
  "faculty": "Makina Fakültesi",
  "level": "LS",
  "planLabel": "Makina Mühendisliği Lisans Programı (%100 İngilizce) 2011-2012 / Güz Dönemi Sonrası",
+ "totalCredits": "154,00",
+ "totalEcts": "244,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,54 +13,110 @@
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAK 111E",
-      "name": "Introduct. to Mechanical Eng."
+      "name": "Introduct. to Mechanical Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "RES 105E",
-      "name": "Technical Drawing"
+      "name": "Technical Drawing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "5227",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -74,12 +132,23 @@
     {
      "course": {
       "code": "ETK 101E",
-      "name": "Engineering Ethics"
+      "name": "Engineering Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Physical Education I (ITB)",
+      "groupId": "5228",
+      "credits": "0",
+      "ects": [
+       1
+      ],
       "options": [
        {
         "code": "BEB 101",
@@ -140,48 +209,97 @@
     {
      "course": {
       "code": "MAK 200E",
-      "name": "Machine Shop Practice"
+      "name": "Machine Shop Practice",
+      "language": "English",
+      "required": "Z",
+      "ects": 6.5,
+      "lab": 8,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "RES 112E",
-      "name": "Computer Aided Tech Drawing"
+      "name": "Computer Aided Tech Drawing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 261E",
-      "name": "Linear Algebra"
+      "name": "Linear Algebra",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "STA 201E",
-      "name": "Statics"
+      "name": "Statics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "5232",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -241,12 +359,23 @@
     {
      "course": {
       "code": "BIO 102E",
-      "name": "Engineering Biology"
+      "name": "Engineering Biology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 2.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "Physical Education II (ITB)",
+      "groupId": "5233",
+      "credits": "0",
+      "ects": [
+       1
+      ],
       "options": [
        {
         "code": "BEB 101",
@@ -307,36 +436,74 @@
     {
      "course": {
       "code": "MAT 201E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DNK 205E",
-      "name": "Dynamics"
+      "name": "Dynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MUK 209E",
-      "name": "Strength of Materials I"
+      "name": "Strength of Materials I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAL 201E",
-      "name": "Materials Science"
+      "name": "Materials Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIL 104E",
-      "name": "Intr. to Programming in C"
+      "name": "Intr. to Programming in C",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "3rd Sem. Elective Course(ITB)",
+      "groupId": "5235",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -540,7 +707,14 @@
     {
      "course": {
       "code": "TER 205E",
-      "name": "Thermodynamics I"
+      "name": "Thermodynamics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     }
    ]
@@ -551,43 +725,90 @@
     {
      "course": {
       "code": "ELK 226E",
-      "name": "Fund.of Electri.& Electro.Eng."
+      "name": "Fund.of Electri.& Electro.Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAK 214E",
-      "name": "Engineering Materials"
+      "name": "Engineering Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "MAT 202E",
-      "name": "Numerical Methods"
+      "name": "Numerical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TER 206E",
-      "name": "Thermodynamics II"
+      "name": "Thermodynamics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MUK 210E",
-      "name": "Strength of Materials II"
+      "name": "Strength of Materials II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "AKM 208E",
-      "name": "Fluid Mechanics I"
+      "name": "Fluid Mechanics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     }
    ]
@@ -598,43 +819,91 @@
     {
      "course": {
       "code": "AKM 209E",
-      "name": "Fluid Mechanics II"
+      "name": "Fluid Mechanics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAK 313E",
-      "name": "Heat Transfer"
+      "name": "Heat Transfer",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAK 341E",
-      "name": "Machine Design I"
+      "name": "Machine Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAK 333E",
-      "name": "System Dynamics and Control"
+      "name": "System Dynamics and Control",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAK 353E",
-      "name": "Manufacturing Processes"
+      "name": "Manufacturing Processes",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAK 315E",
-      "name": "Mechanical Vibrations"
+      "name": "Mechanical Vibrations",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     }
    ]
@@ -645,30 +914,62 @@
     {
      "course": {
       "code": "MAK 342E",
-      "name": "Machine Design II"
+      "name": "Machine Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAK 324E",
-      "name": "Theory of Machines"
+      "name": "Theory of Machines",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAK 312E",
-      "name": "Measurement Systems"
+      "name": "Measurement Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "6th Sem. Elective Course(TB)",
+      "groupId": "5238",
+      "credits": "2,5",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MAK 372E",
@@ -688,6 +989,11 @@
     {
      "elective": {
       "title": "Thermal Design Elct.(MT)",
+      "groupId": "5239",
+      "credits": "2",
+      "ects": [
+       4.5
+      ],
       "options": [
        {
         "code": "MAK 360E",
@@ -703,7 +1009,13 @@
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     }
    ]
@@ -714,24 +1026,48 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAK 401E",
-      "name": "Mechanical Engineering Lab. I"
+      "name": "Mechanical Engineering Lab. I",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAK 403E",
-      "name": "Applied Machine Design"
+      "name": "Applied Machine Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Sem. Elective Group I(MT)",
+      "groupId": "5245",
+      "credits": "2,5",
+      "ects": [
+       5.5
+      ],
       "options": [
        {
         "code": "MAK 4001E",
@@ -795,6 +1131,13 @@
     {
      "elective": {
       "title": "7th Sem. Elective Group II(MT)",
+      "groupId": "5246",
+      "credits": "2,5",
+      "ects": [
+       4,
+       5,
+       5.5
+      ],
       "options": [
        {
         "code": "MAK 4002E",
@@ -954,6 +1297,11 @@
     {
      "elective": {
       "title": "7th Sem.Elective Course(ITB)",
+      "groupId": "5247",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -1033,6 +1381,11 @@
     {
      "elective": {
       "title": "7th Sem. Compuls. Elct. I (MT)",
+      "groupId": "5249",
+      "credits": "2,5",
+      "ects": [
+       5.5
+      ],
       "options": [
        {
         "code": "MAK 4025E",
@@ -1065,18 +1418,37 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAK 492E",
-      "name": "Senior Design Project"
+      "name": "Senior Design Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 10,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Sem.Elective Group III(MT)",
+      "groupId": "5255",
+      "credits": "2,5",
+      "ects": [
+       4,
+       5,
+       5.5
+      ],
       "options": [
        {
         "code": "MAK 4002E",
@@ -1248,6 +1620,11 @@
     {
      "elective": {
       "title": "8th Sem. Elective Course(ITB)",
+      "groupId": "5256",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 201",
@@ -1447,6 +1824,11 @@
     {
      "elective": {
       "title": "8th Sem.Compulsory Elct II(MT)",
+      "groupId": "5258",
+      "credits": "2,5",
+      "ects": [
+       5.5
+      ],
       "options": [
        {
         "code": "MAK 4036E",
@@ -1478,7 +1860,13 @@
     {
      "course": {
       "code": "MAK 402E",
-      "name": "Mechanical Engineering Lab. II"
+      "name": "Mechanical Engineering Lab. II",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "lab": 2,
+      "type": "MT"
      }
     }
    ]

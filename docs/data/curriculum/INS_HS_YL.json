@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Hidrolik ve Su Kaynakları Mühendisliği Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Hidrolik ve Su Kaynakları Mühendisliği Yüksek Lisans",
@@ -11,12 +13,21 @@
     {
      "course": {
       "code": "HSK YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Bilimsel Araş.,Etik ve Seminer",
+      "groupId": "12873",
+      "credits": "0",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "HSK 596",
@@ -56,6 +67,11 @@
     {
      "elective": {
       "title": "Zorunlu Matematik Dersi",
+      "groupId": "12865",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ULS 501E",
@@ -75,6 +91,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "12866",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "HSK 501",
@@ -102,6 +123,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "12867",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "HSK 501E",
@@ -129,6 +155,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "12868",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "HSK 501E",
@@ -156,24 +187,28 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "12869",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "12870",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "12871",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "12872",
       "options": null
      }
     }

@@ -4,6 +4,8 @@
  "faculty": "Maden Fakültesi",
  "level": "LS",
  "planLabel": "Maden Mühendisliği Lisans Programı (%100 İngilizce) 2011-2012 / Güz Dönemi Sonrası",
+ "totalCredits": "154,00",
+ "totalEcts": "236,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,42 +13,86 @@
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 111E",
-      "name": "Introduction to Mining Engineering"
+      "name": "Introduction to Mining Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 101E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6.5,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "RES 103E",
-      "name": "Technical Drawing"
+      "name": "Technical Drawing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "4978",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -67,42 +113,85 @@
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 102E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 7,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 108E",
-      "name": "Intr. to Sci. & Eng.Computing"
+      "name": "Intr. to Sci. & Eng.Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "2.th Sems.Elect. Course (ITB)",
+      "groupId": "4982",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -298,6 +387,12 @@
     {
      "elective": {
       "title": "English II",
+      "groupId": "4984",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -362,43 +457,87 @@
     {
      "course": {
       "code": "MAD 232E",
-      "name": "Surface Mining"
+      "name": "Surface Mining",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 261E",
-      "name": "Linear Algebra"
+      "name": "Linear Algebra",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAD 211E",
-      "name": "Mineralogy"
+      "name": "Mineralogy",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MEK 205E",
-      "name": "Engineering Mechanics"
+      "name": "Engineering Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 241E",
-      "name": "Blasting Tech&its Applications"
+      "name": "Blasting Tech&its Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 202E",
-      "name": "Numerical Methods"
+      "name": "Numerical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     }
    ]
@@ -409,42 +548,90 @@
     {
      "course": {
       "code": "MAT 201E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "JEO 112E",
-      "name": "General Geology"
+      "name": "General Geology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 252E",
-      "name": "Mining and Environment"
+      "name": "Mining and Environment",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 331E",
-      "name": "Petrography"
+      "name": "Petrography",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 243E",
-      "name": "Underground Mining"
+      "name": "Underground Mining",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "4th Sems.Elect. Course (TB)",
+      "groupId": "4986",
+      "credits": "3",
+      "ects": [
+       2,
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 201E",
@@ -528,7 +715,13 @@
     {
      "course": {
       "code": "MAD 254E",
-      "name": "Strngth of Mat.for Mining Eng."
+      "name": "Strngth of Mat.for Mining Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -539,42 +732,86 @@
     {
      "course": {
       "code": "MAD 341E",
-      "name": "Mineral Processing I"
+      "name": "Mineral Processing I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 1,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 311E",
-      "name": "Geophysics"
+      "name": "Geophysics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 361E",
-      "name": "Mineral Deposits"
+      "name": "Mineral Deposits",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 371E",
-      "name": "Haulage and Drainage in Mines"
+      "name": "Haulage and Drainage in Mines",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 351E",
-      "name": "Rock Mechanics"
+      "name": "Rock Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "5th Sems.Elect. Course (ITB)",
+      "groupId": "4989",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EKO 201E",
@@ -590,6 +827,12 @@
     {
      "elective": {
       "title": "5th Sems.Elect. Course (MT)",
+      "groupId": "4990",
+      "credits": "2",
+      "ects": [
+       3,
+       4
+      ],
       "options": [
        {
         "code": "MAD 317E",
@@ -618,36 +861,75 @@
     {
      "course": {
       "code": "MAD 354E",
-      "name": "Mineral Processing II"
+      "name": "Mineral Processing II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 342E",
-      "name": "Hydraulic Power Sys in Mining"
+      "name": "Hydraulic Power Sys in Mining",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 322E",
-      "name": "Dsgn of Sup in Mines & Tunnels"
+      "name": "Dsgn of Sup in Mines & Tunnels",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 312E",
-      "name": "Surveying"
+      "name": "Surveying",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6th Sems.Elect. Course I (MT)",
+      "groupId": "4993",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5
+      ],
       "options": [
        {
         "code": "MAD 313E",
@@ -667,6 +949,12 @@
     {
      "elective": {
       "title": "6th Sems.Elect. Course II (MT)",
+      "groupId": "4994",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5
+      ],
       "options": [
        {
         "code": "MAD 313E",
@@ -691,42 +979,88 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAD 431E",
-      "name": "Coal Preparation &Technology"
+      "name": "Coal Preparation &Technology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 451E",
-      "name": "Mining Machinery"
+      "name": "Mining Machinery",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 461E",
-      "name": "Mine Ventilation"
+      "name": "Mine Ventilation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 441E",
-      "name": "Mine System Analysis"
+      "name": "Mine System Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 471E",
-      "name": "Electro-Techniques in Mines"
+      "name": "Electro-Techniques in Mines",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Sems.Elect. Course (MT)",
+      "groupId": "4997",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "MAD 413E",
@@ -746,6 +1080,11 @@
     {
      "elective": {
       "title": "7th Sems.Elect. Course (ITB)",
+      "groupId": "4998",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -830,48 +1169,96 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAD 492E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 434E",
-      "name": "Mining Legislation"
+      "name": "Mining Legislation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 422E",
-      "name": "Mine Planing and Design"
+      "name": "Mine Planing and Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 8,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 432E",
-      "name": "Mech. in Min. and Tun. Ex."
+      "name": "Mech. in Min. and Tun. Ex.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ETK 101E",
-      "name": "Engineering Ethics"
+      "name": "Engineering Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAD 436E",
-      "name": "Mine Economics"
+      "name": "Mine Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Sems.Elect. Course (MT)",
+      "groupId": "5000",
+      "credits": "2 / 3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MAD 420E",

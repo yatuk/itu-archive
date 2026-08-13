@@ -4,6 +4,8 @@
  "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
  "level": "LS",
  "planLabel": "Gemi İnşaatı ve Gemi Makinaları Mühendisliği Lisans Programı (%100 İngilizce) (KKTC) 2022-2023 / Güz Dönemi Sonrası",
+ "totalCredits": "126,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,86 @@
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "NAE 101E",
-      "name": "Int.to Nav.Arch.&Mar.Eng.&Eth."
+      "name": "Int.to Nav.Arch.&Mar.Eng.&Eth.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 7,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     }
    ]
@@ -58,43 +103,88 @@
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "NAE 102E",
-      "name": "Ship Geometry"
+      "name": "Ship Geometry",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -105,31 +195,61 @@
     {
      "course": {
       "code": "MAT 210E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DNK 201E",
-      "name": "Dynamics"
+      "name": "Dynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 114E",
-      "name": "Materials Scie.&Manufact.Mth."
+      "name": "Materials Scie.&Manufact.Mth.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "NAE 203",
-      "name": "Strength of Materials I"
+      "name": "Strength of Materials I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 202E",
-      "name": "Numerical Methods"
+      "name": "Numerical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     }
    ]
@@ -140,36 +260,73 @@
     {
      "course": {
       "code": "GEM 204E",
-      "name": "Thermodynamics"
+      "name": "Thermodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "AKM 204E",
-      "name": "Fluid Mechanics"
+      "name": "Fluid Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MUK 204E",
-      "name": "Strength of Materials II"
+      "name": "Strength of Materials II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "4th Semester Elective Course (TM)",
+      "groupId": "8754",
+      "credits": "2 / 3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "GEM 214E",
@@ -198,36 +355,74 @@
     {
      "course": {
       "code": "GEM 313E",
-      "name": "Marine Engines"
+      "name": "Marine Engines",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 3,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 321E",
-      "name": "Ship Theory"
+      "name": "Ship Theory",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 325E",
-      "name": "Ship Construction"
+      "name": "Ship Construction",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 327E",
-      "name": "Ship Hydrodynamics(Resistance)"
+      "name": "Ship Hydrodynamics(Resistance)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 329E",
-      "name": "Maritime and Labor Law"
+      "name": "Maritime and Labor Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Course (ITB)",
+      "groupId": "8755",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -672,43 +867,87 @@
     {
      "course": {
       "code": "GEM 324E",
-      "name": "Strength of Ships"
+      "name": "Strength of Ships",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 312E",
-      "name": "Marine Auxiliary Machinery"
+      "name": "Marine Auxiliary Machinery",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 326E",
-      "name": "Ship Design"
+      "name": "Ship Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 353E",
-      "name": "Work Safety & Health Training in Shipbuilding Industry"
+      "name": "Work Safety & Health Training in Shipbuilding Industry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GEM 332E",
-      "name": "Electrical Systems in Ships"
+      "name": "Electrical Systems in Ships",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 328E",
-      "name": "Ship Hydrodynamics(Propulsion)"
+      "name": "Ship Hydrodynamics(Propulsion)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -719,42 +958,86 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GEM 4901E",
-      "name": "Naval Architecture & Marine Engeneering Design I"
+      "name": "Naval Architecture & Marine Engeneering Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 421E",
-      "name": "Ship Motions and Maneuvering"
+      "name": "Ship Motions and Maneuvering",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 407E",
-      "name": "Methods of Ship Production"
+      "name": "Methods of Ship Production",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 331E",
-      "name": "Shipping Economics"
+      "name": "Shipping Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 409E",
-      "name": "Ship Vibration"
+      "name": "Ship Vibration",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Course I (MT)",
+      "groupId": "8756",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "GEM 427E",
@@ -774,6 +1057,11 @@
     {
      "elective": {
       "title": "7th Semester Elective Course II (MT)",
+      "groupId": "8757",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "GEM 417E",
@@ -810,36 +1098,71 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GEM 4902E",
-      "name": "Naval Architecture & Marine Engeneering Design II"
+      "name": "Naval Architecture & Marine Engeneering Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEM 430E",
-      "name": "Shipyard Organization"
+      "name": "Shipyard Organization",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GEM 410E",
-      "name": "Computational Fluid Mechanics"
+      "name": "Computational Fluid Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 7,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elective Course I (MT)",
+      "groupId": "8758",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "GEM 418E",
@@ -879,6 +1202,11 @@
     {
      "elective": {
       "title": "8th Semester Elective Course II (MT)",
+      "groupId": "8759",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "GEM 416E",

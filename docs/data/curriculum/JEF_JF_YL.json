@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Jeofizik Mühendisliği Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Jeofizik Mühendisliği Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "JFM YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "JFM 596",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Matematik Dersi",
+      "groupId": "12723",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "CHZ 511",
@@ -42,6 +58,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "12724",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "JFM 503E",
@@ -61,6 +82,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "12725",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "JFM 503E",
@@ -80,6 +106,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "12726",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "JFM 503E",
@@ -99,24 +130,28 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "12727",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "12728",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "12730",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "12729",
       "options": null
      }
     }

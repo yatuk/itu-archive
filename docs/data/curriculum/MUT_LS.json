@@ -4,6 +4,8 @@
  "faculty": "Türk Musikisi Devlet Konservatuvarı",
  "level": "LS",
  "planLabel": "Müzik Teknolojileri Lisans Programı (Türkçe) 2012-2013 / Güz Dönemi Sonrası",
+ "totalCredits": "143,50",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,18 +13,37 @@
     {
      "course": {
       "code": "MTR 101",
-      "name": "Makam Teorisi I"
+      "name": "Makam Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 103",
-      "name": "Müzik Teorisi I"
+      "name": "Müzik Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "Stüdyo I",
+      "groupId": "6222",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "MUT 101",
@@ -42,6 +63,11 @@
     {
      "elective": {
       "title": "Meslek Teknolojisi I",
+      "groupId": "6223",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MUT 153",
@@ -57,12 +83,23 @@
     {
      "course": {
       "code": "MUT 131",
-      "name": "Akustik I"
+      "name": "Akustik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Çalgı I",
+      "groupId": "6224",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 1013",
@@ -118,13 +155,26 @@
     {
      "course": {
       "code": "ING 105",
-      "name": "English I"
+      "name": "English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "BIL 109",
-      "name": "Bilgisayar"
+      "name": "Bilgisayar",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "ITB"
      }
     }
    ]
@@ -135,18 +185,37 @@
     {
      "course": {
       "code": "MTR 102",
-      "name": "Makam Teorisi II"
+      "name": "Makam Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 104",
-      "name": "Müzik Teorisi II"
+      "name": "Müzik Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "Stüdyo II",
+      "groupId": "6225",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "MUT 102",
@@ -166,6 +235,11 @@
     {
      "elective": {
       "title": "Meslek Teknolojisi II",
+      "groupId": "6226",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MUT 154",
@@ -181,12 +255,23 @@
     {
      "course": {
       "code": "MUT 132",
-      "name": "Akustik II"
+      "name": "Akustik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Çalgı II",
+      "groupId": "6227",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 1014",
@@ -242,7 +327,13 @@
     {
      "course": {
       "code": "ING 106",
-      "name": "English II"
+      "name": "English II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     }
    ]
@@ -253,30 +344,61 @@
     {
      "course": {
       "code": "MTR 203",
-      "name": "Müzik Teorisi III"
+      "name": "Müzik Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 201",
-      "name": "Makam Teorisi III"
+      "name": "Makam Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 205",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Stüdyo III",
+      "groupId": "6228",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "MUT 201",
@@ -296,6 +418,11 @@
     {
      "elective": {
       "title": "Meslek Teknolojisi III",
+      "groupId": "6229",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MUT 253",
@@ -311,6 +438,11 @@
     {
      "elective": {
       "title": "Çalgı III",
+      "groupId": "6230",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 2013",
@@ -371,30 +503,61 @@
     {
      "course": {
       "code": "MTR 204",
-      "name": "Müzik Teorisi IV"
+      "name": "Müzik Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 202",
-      "name": "Makam Teorisi IV"
+      "name": "Makam Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 206",
-      "name": "English IV"
+      "name": "English IV",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Stüdyo IV",
+      "groupId": "6231",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "MUT 202",
@@ -414,6 +577,11 @@
     {
      "elective": {
       "title": "Meslek Teknolojisi IV",
+      "groupId": "6232",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MUT 254",
@@ -429,6 +597,11 @@
     {
      "elective": {
       "title": "Çalgı IV",
+      "groupId": "6233",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 2014",
@@ -489,24 +662,48 @@
     {
      "course": {
       "code": "MUT 361",
-      "name": "Çalgı Bilgisi I"
+      "name": "Çalgı Bilgisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 103",
-      "name": "Atatürk İlke ve Ink.Tarihi"
+      "name": "Atatürk İlke ve Ink.Tarihi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4,
+      "theory": 4,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MUT 363",
-      "name": "Serbest Proje Çalışması I"
+      "name": "Serbest Proje Çalışması I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Stüdyo V",
+      "groupId": "6234",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "MUT 301",
@@ -526,6 +723,11 @@
     {
      "elective": {
       "title": "Meslek Teknolojisi V",
+      "groupId": "6235",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MUT 267",
@@ -541,6 +743,11 @@
     {
      "elective": {
       "title": "5.yy. Seçime Bağlı Ders (MT)",
+      "groupId": "6236",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "MUT 303",
@@ -584,6 +791,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "6237",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -944,24 +1156,49 @@
     {
      "course": {
       "code": "MUT 368",
-      "name": "Çalgı Bilgisi II"
+      "name": "Çalgı Bilgisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUT 386",
-      "name": "Serbest Proje Çalışması II"
+      "name": "Serbest Proje Çalışması II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUT 388",
-      "name": "Müzik Tek.Tasarım & Geliştirme"
+      "name": "Müzik Tek.Tasarım & Geliştirme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Stüdyo VI",
+      "groupId": "6238",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "MUT 302",
@@ -981,6 +1218,11 @@
     {
      "elective": {
       "title": "Meslek Teknolojisi VI",
+      "groupId": "6239",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MUT 390",
@@ -996,6 +1238,12 @@
     {
      "elective": {
       "title": "6.yy. Seçime Bağlı Ders (MT)",
+      "groupId": "6240",
+      "credits": "2",
+      "ects": [
+       3,
+       4
+      ],
       "options": [
        {
         "code": "MUT 324",
@@ -1043,6 +1291,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "6241",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1383,12 +1636,24 @@
     {
      "course": {
       "code": "MUT 463",
-      "name": "Serbest Proje Çalışması III"
+      "name": "Serbest Proje Çalışması III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Stüdyo VII",
+      "groupId": "6242",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "MUT 401",
@@ -1408,6 +1673,11 @@
     {
      "elective": {
       "title": "Meslek Teknolojisi VII",
+      "groupId": "6243",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MUT 382",
@@ -1423,6 +1693,11 @@
     {
      "elective": {
       "title": "7.yy. Seçime Bağlı Ders (MT)",
+      "groupId": "6244",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "KMP 473",
@@ -1474,6 +1749,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "6245",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1834,18 +2114,36 @@
     {
      "course": {
       "code": "MUT 486",
-      "name": "Serbest Proje Çalışması IV"
+      "name": "Serbest Proje Çalışması IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUT 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Stüdyo VIII",
+      "groupId": "6246",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "MUT 402",
@@ -1865,6 +2163,11 @@
     {
      "elective": {
       "title": "Meslek Teknolojisi VIII",
+      "groupId": "6247",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MUT 381",
@@ -1880,6 +2183,11 @@
     {
      "elective": {
       "title": "8.yy. Seçime Bağlı Ders (MT)",
+      "groupId": "6248",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "KMP 474",
@@ -1935,6 +2243,11 @@
     {
      "elective": {
       "title": "8.yy. Seçime Bağlı Ders (ITB)",
+      "groupId": "6249",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",

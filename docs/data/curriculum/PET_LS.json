@@ -4,6 +4,8 @@
  "faculty": "Maden Fakültesi",
  "level": "LS",
  "planLabel": "Petrol ve Doğal Gaz Mühendisliği Lisans Programı 2009-2010 / Güz Dönemi Sonrası",
+ "totalCredits": "150,50",
+ "totalEcts": "236,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,48 +13,97 @@
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101L",
-      "name": "Genel Kimya I Laboratuvarı"
+      "name": "Genel Kimya I Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "PET 111E",
-      "name": "Introduction to Petroleum and Natural Gas Engineering"
+      "name": "Introduction to Petroleum and Natural Gas Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 101",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6.5,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "6625",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -73,48 +124,98 @@
     {
      "course": {
       "code": "PET 112",
-      "name": "Beden Eğitimi"
+      "name": "Beden Eğitimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KIM 102",
-      "name": "Genel Kimya II"
+      "name": "Genel Kimya II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 102L",
-      "name": "Genel Kimya II Lab"
+      "name": "Genel Kimya II Lab",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 102",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 7,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 106E",
-      "name": "Intr toSci& Eng Comp (Fortran)"
+      "name": "Intr toSci& Eng Comp (Fortran)",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "6635",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -179,43 +280,85 @@
     {
      "course": {
       "code": "MAT 201",
-      "name": "Diferansiyel Denklemler"
+      "name": "Diferansiyel Denklemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EKO 201",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KIM 202",
-      "name": "Fiziksel Kimya"
+      "name": "Fiziksel Kimya",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 202L",
-      "name": "Fiziksel Kimya Lab."
+      "name": "Fiziksel Kimya Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "JEO 112E",
-      "name": "General Geology"
+      "name": "General Geology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MEK 205",
-      "name": "Mühendislik Mekaniği"
+      "name": "Mühendislik Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -226,42 +369,87 @@
     {
      "course": {
       "code": "AKM 204",
-      "name": "Akışkanlar Mekaniği"
+      "name": "Akışkanlar Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "PET 212E",
-      "name": "Rock Properties"
+      "name": "Rock Properties",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 202",
-      "name": "Sayısal Yöntemler"
+      "name": "Sayısal Yöntemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "STA 204",
-      "name": "Statik ve Mukavemet"
+      "name": "Statik ve Mukavemet",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "4.yy Seçime Bağlı Ders (TB)",
+      "groupId": "6639",
+      "credits": "3",
+      "ects": [
+       2,
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 201E",
@@ -358,43 +546,85 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "PET 311E",
-      "name": "Fluid Properties"
+      "name": "Fluid Properties",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 271",
-      "name": "Olasılık ve İstatistik"
+      "name": "Olasılık ve İstatistik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "PET 321",
-      "name": "Petrol & Doğal Gaz Laboratuarı"
+      "name": "Petrol & Doğal Gaz Laboratuarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 445E",
-      "name": "Petroleum and Natural Gas Geo."
+      "name": "Petroleum and Natural Gas Geo.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PET 331",
-      "name": "Sondaj Mühendisliği I"
+      "name": "Sondaj Mühendisliği I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TER 201",
-      "name": "Termodinamik"
+      "name": "Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -405,36 +635,71 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "PET 342E",
-      "name": "Reservoir Engineering"
+      "name": "Reservoir Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PET 322",
-      "name": "Sondaj Laboratuvarı"
+      "name": "Sondaj Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PET 312",
-      "name": "Taşınım Olayları"
+      "name": "Taşınım Olayları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "PET 332",
-      "name": "Üretim Mühendisliği ve Yüzey Tesisleri"
+      "name": "Üretim Mühendisliği ve Yüzey Tesisleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "6644",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -770,6 +1035,13 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (MT)",
+      "groupId": "6645",
+      "credits": "3",
+      "ects": [
+       0,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "PET 316",
@@ -822,30 +1094,59 @@
     {
      "course": {
       "code": "PET 441E",
-      "name": "Enhanced Oil Recovery"
+      "name": "Enhanced Oil Recovery",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PET 421",
-      "name": "Formasyon Değerlendirmesi"
+      "name": "Formasyon Değerlendirmesi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PET 431E",
-      "name": "Natural Gas Systems Eng."
+      "name": "Natural Gas Systems Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PET 411",
-      "name": "Yöneylem Araştırması"
+      "name": "Yöneylem Araştırması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (MT)",
+      "groupId": "6650",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "PET 417",
@@ -913,6 +1214,17 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (TM)",
+      "groupId": "6651",
+      "credits": "2 / 2,5 / 3 / 3,5 / 4",
+      "ects": [
+       0,
+       3,
+       4,
+       4.5,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 444E",
@@ -1029,24 +1341,47 @@
     {
      "course": {
       "code": "PET 492",
-      "name": "Bitirme Tasarım Projesi"
+      "name": "Bitirme Tasarım Projesi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 10,
+      "lab": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ETK 101",
-      "name": "Mühendislik Etiği"
+      "name": "Mühendislik Etiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "PET 412",
-      "name": "Petroluem& Natural Gas Eco."
+      "name": "Petroluem& Natural Gas Eco.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Elective Course (MT)",
+      "groupId": "6660",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "PET 346E",
@@ -1086,6 +1421,13 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (MT)",
+      "groupId": "6661",
+      "credits": "3",
+      "ects": [
+       0,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "PET 316",
@@ -1149,6 +1491,11 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (ITB)",
+      "groupId": "6662",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -1296,6 +1643,11 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II(ITB)",
+      "groupId": "6663",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",

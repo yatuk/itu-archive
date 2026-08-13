@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Sürdürülebilirlik (İngilizce) Yüksek Lisans Programı",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Sürdürülebilirlik (İngilizce) Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "SUS YLT",
-      "name": "Thesis"
+      "name": "Thesis",
+      "language": "English",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "SUS 596E",
-      "name": "Scientific Research, Ethic and Seminar"
+      "name": "Scientific Research, Ethic and Seminar",
+      "language": "English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "11632",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ANT 501E",
@@ -94,6 +110,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "11633",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ANT 501E",
@@ -165,6 +186,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "11634",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ANT 501E",
@@ -236,6 +262,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "11635",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ANT 501E",
@@ -307,6 +338,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "11636",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BPL 502E",
@@ -374,6 +410,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "11637",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BPL 502E",
@@ -441,6 +482,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "11638",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BPL 502E",
@@ -508,6 +554,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "11639",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BPL 502E",

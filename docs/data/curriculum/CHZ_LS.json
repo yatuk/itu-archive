@@ -4,6 +4,8 @@
  "faculty": "Maden Fakültesi",
  "level": "LS",
  "planLabel": "Cevher Hazırlama Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "135,50",
+ "totalEcts": "245,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,99 @@
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CHZ 103",
-      "name": "Cevher Haz. Müh. Giriş ve Etik"
+      "name": "Cevher Haz. Müh. Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -64,49 +116,100 @@
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "RES 111E",
-      "name": "Technical Drawing (CAD)"
+      "name": "Technical Drawing (CAD)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MDN 210",
-      "name": "Mineraloji ve Petrografi"
+      "name": "Mineraloji ve Petrografi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MDN 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -117,42 +220,90 @@
     {
      "course": {
       "code": "MAT 210",
-      "name": "Mühendislik Matematiği"
+      "name": "Mühendislik Matematiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TER 201",
-      "name": "Termodinamik"
+      "name": "Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "CHZ 224E",
-      "name": "Surface and Colloid Chemistry"
+      "name": "Surface and Colloid Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CHZ 213",
-      "name": "Zenginlstirme Önc.Haz. İşlml."
+      "name": "Zenginlstirme Önc.Haz. İşlml.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders (TB)",
+      "groupId": "8979",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 201E",
@@ -213,42 +364,88 @@
     {
      "course": {
       "code": "CHZ 214",
-      "name": "Tanecik Teknolojisi"
+      "name": "Tanecik Teknolojisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 202",
-      "name": "Sayısal Yöntemler"
+      "name": "Sayısal Yöntemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "CHZ 216",
-      "name": "Fiziksel Zeng. Yöntemleri"
+      "name": "Fiziksel Zeng. Yöntemleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 242",
-      "name": "Proses Mineralojisi"
+      "name": "Proses Mineralojisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CHZ 306",
-      "name": "Cevher Haz.Akışkanlar Mek."
+      "name": "Cevher Haz.Akışkanlar Mek.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "STA 204",
-      "name": "Statik ve Mukavemet"
+      "name": "Statik ve Mukavemet",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "8978",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -809,42 +1006,87 @@
     {
      "course": {
       "code": "CHZ 314",
-      "name": "Cevher Haz. Tesis Otomasyonu"
+      "name": "Cevher Haz. Tesis Otomasyonu",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CHZ 321",
-      "name": "Kömür Hazırlama"
+      "name": "Kömür Hazırlama",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 316E",
-      "name": "Metallurgy I"
+      "name": "Metallurgy I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAD 213",
-      "name": "Maden Üretim Teknolojisi"
+      "name": "Maden Üretim Teknolojisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CHZ 323E",
-      "name": "Ore Deposits"
+      "name": "Ore Deposits",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders I (TM)",
+      "groupId": "8976",
+      "credits": "3",
+      "ects": [
+       4.5,
+       5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "ELK 221",
@@ -872,6 +1114,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders II (ITB)",
+      "groupId": "8977",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EKO 201",
@@ -892,48 +1139,97 @@
     {
      "course": {
       "code": "CHZ 318",
-      "name": "Endüstriyel Hammaddeler"
+      "name": "Endüstriyel Hammaddeler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 320E",
-      "name": "Metallurgy II"
+      "name": "Metallurgy II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CHZ 332",
-      "name": "Flotasyon ve Flokülasyon"
+      "name": "Flotasyon ve Flokülasyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 328E",
-      "name": "Comp. Appl. in Mineral Proces."
+      "name": "Comp. Appl. in Mineral Proces.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "CHZ 308",
-      "name": "Cevher Hazırlamada İş Güven."
+      "name": "Cevher Hazırlamada İş Güven.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "CHZ 352",
-      "name": "Kömür Teknolojisi"
+      "name": "Kömür Teknolojisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6th Sem. Elective Course (MT)",
+      "groupId": "8975",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "CHZ 358E",
@@ -962,36 +1258,73 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "CHZ 452E",
-      "name": "Mineral Process. & Environment"
+      "name": "Mineral Process. & Environment",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 4901",
-      "name": "Cevher Hazırl. Müh. Tasarımı I"
+      "name": "Cevher Hazırl. Müh. Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 421",
-      "name": "Cevher Haz. Proses Tasarımı"
+      "name": "Cevher Haz. Proses Tasarımı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 348E",
-      "name": "Bulk Materials Handling"
+      "name": "Bulk Materials Handling",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Sem. Elective Course I (MT)",
+      "groupId": "8973",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "CHZ 443E",
@@ -1011,6 +1344,12 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8974",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "CHZ 437",
@@ -1035,36 +1374,73 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "CHZ 424",
-      "name": "Cev.Haz.Tesis Yönetimi ve Ekon"
+      "name": "Cev.Haz.Tesis Yönetimi ve Ekon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 432",
-      "name": "Cevher Haz. Tesis Tasarımı"
+      "name": "Cevher Haz. Tesis Tasarımı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5.5,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 4902",
-      "name": "Cevher Hazırl. Müh.Tasarımı II"
+      "name": "Cevher Hazırl. Müh.Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CHZ 412",
-      "name": "Susuzlandırma ve Kurutma"
+      "name": "Susuzlandırma ve Kurutma",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (MT)",
+      "groupId": "8972",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "CHZ 446",

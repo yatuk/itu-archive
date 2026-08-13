@@ -4,6 +4,8 @@
  "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
  "level": "LS",
  "planLabel": "Uzay Mühendisliği Lisans Programı (%100 İngilizce) 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "131,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,88 @@
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 110E",
-      "name": "Intr. to Prog. Language (C)"
+      "name": "Intr. to Prog. Language (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "UZB 112E",
-      "name": "Computer Aided Drafting"
+      "name": "Computer Aided Drafting",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,49 +105,99 @@
     {
      "course": {
       "code": "UZB 106E",
-      "name": "Int.Astronaut. Eng.&Des."
+      "name": "Int.Astronaut. Eng.&Des.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "STA 201E",
-      "name": "Statics"
+      "name": "Statics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 261E",
-      "name": "Linear Algebra"
+      "name": "Linear Algebra",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     }
    ]
@@ -111,37 +208,72 @@
     {
      "course": {
       "code": "MAT 201E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DNK 201E",
-      "name": "Dynamics"
+      "name": "Dynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MUK 211E",
-      "name": "Strength of Materials"
+      "name": "Strength of Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "UCK 217E",
-      "name": "Aerospace Materials"
+      "name": "Aerospace Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UCK 207E",
-      "name": "Thermodynamics"
+      "name": "Thermodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -152,43 +284,85 @@
     {
      "course": {
       "code": "AKM 219E",
-      "name": "Fluid Mechanics"
+      "name": "Fluid Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 202E",
-      "name": "Numerical Methods"
+      "name": "Numerical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "UCK 203E",
-      "name": "Circuits, Signals and Systems"
+      "name": "Circuits, Signals and Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UZB 337E",
-      "name": "Aerospace Structures"
+      "name": "Aerospace Structures",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4.5,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "UZB 220E",
-      "name": "Mechanical Vibrations"
+      "name": "Mechanical Vibrations",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -199,36 +373,73 @@
     {
      "course": {
       "code": "UCK 305E",
-      "name": "Aerodynamics"
+      "name": "Aerodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UZB 352E",
-      "name": "Orbital Mechanics"
+      "name": "Orbital Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UZB 301E",
-      "name": "Measurement Techniques"
+      "name": "Measurement Techniques",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UCK 303E",
-      "name": "Automatic Control"
+      "name": "Automatic Control",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UZB 411E",
-      "name": "Space Environment"
+      "name": "Space Environment",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Course I (ITB)",
+      "groupId": "9090",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -692,6 +903,14 @@
     {
      "elective": {
       "title": "5th Semester Elective Course II (TB)",
+      "groupId": "9089",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "FIZ 201E",
@@ -728,36 +947,72 @@
     {
      "course": {
       "code": "UZB 310E",
-      "name": "Compressible Aerodynamics"
+      "name": "Compressible Aerodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UCK 304E",
-      "name": "Experimental Engineering"
+      "name": "Experimental Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 5,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UZB 421E",
-      "name": "Attitude Determination & Ctrl."
+      "name": "Attitude Determination & Ctrl.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UZB 314E",
-      "name": "Heat Transfer"
+      "name": "Heat Transfer",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UZB 451E",
-      "name": "Spacecraft Communications"
+      "name": "Spacecraft Communications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "6th Semester Elective Course (TM)",
+      "groupId": "9088",
+      "credits": "2,5 / 3",
+      "ects": [
+       5,
+       5.5
+      ],
       "options": [
        {
         "code": "BIL 310E",
@@ -830,30 +1085,63 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "UZB 4901E",
-      "name": "Astronautical Eng. Design I"
+      "name": "Astronautical Eng. Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 441E",
-      "name": "Rocket Propulsion"
+      "name": "Rocket Propulsion",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UZB 419E",
-      "name": "Spacecraft Systems Design I"
+      "name": "Spacecraft Systems Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Course I (MT)",
+      "groupId": "9087",
+      "credits": "2,5 / 3",
+      "ects": [
+       4.5,
+       5,
+       5.5,
+       7
+      ],
       "options": [
        {
         "code": "MAK 434E",
@@ -913,6 +1201,12 @@
     {
      "elective": {
       "title": "7th Semester Elective Course II (TM)",
+      "groupId": "9086",
+      "credits": "2,5 / 3",
+      "ects": [
+       5,
+       5.5
+      ],
       "options": [
        {
         "code": "BIL 310E",
@@ -989,24 +1283,49 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "UZB 4902E",
-      "name": "Astronautical Eng. Design II"
+      "name": "Astronautical Eng. Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 420E",
-      "name": "Spacecraft Systems Design II"
+      "name": "Spacecraft Systems Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 9,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elective Course I (ITB)",
+      "groupId": "9085",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1482,6 +1801,14 @@
     {
      "elective": {
       "title": "8th Semester Elective Course II (MT)",
+      "groupId": "9084",
+      "credits": "2,5 / 3",
+      "ects": [
+       4.5,
+       5,
+       5.5,
+       7
+      ],
       "options": [
        {
         "code": "MAK 434E",

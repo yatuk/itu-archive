@@ -4,6 +4,8 @@
  "faculty": "Bilişim Enstitüsü",
  "level": "DR",
  "planLabel": "Coğrafi Bilgi Teknolojileri Doktora Programı 2026-2027 / Güz Dönemi Sonrası",
+ "totalCredits": "21,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Coğrafi Bilgi Teknolojileri Doktora",
@@ -11,48 +13,70 @@
     {
      "course": {
       "code": "GIT DRT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 150,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "GIT YET",
-      "name": "Yeterlik Aşaması"
+      "name": "Yeterlik Aşaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 30,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "GIT 696",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi I",
+      "groupId": "13405",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi II",
+      "groupId": "13406",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi III",
+      "groupId": "13407",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi IV",
+      "groupId": "13408",
       "options": null
      }
     },
     {
      "elective": {
       "title": "LEE Seçmeli Dersi",
+      "groupId": "13409",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "LEE 901E",
@@ -108,12 +132,14 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "13410",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "13411",
       "options": null
      }
     }

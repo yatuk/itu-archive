@@ -4,6 +4,8 @@
  "faculty": "Kimya - Metalurji Fakültesi",
  "level": "LS",
  "planLabel": "Kimya Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "133,00",
+ "totalEcts": "244,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,99 @@
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "RES 107",
-      "name": "Teknik Resim"
+      "name": "Teknik Resim",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KMM 111",
-      "name": "Kimya Müh. Giriş ve Etik"
+      "name": "Kimya Müh. Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -64,49 +116,99 @@
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 206",
-      "name": "Analitik Kimya & Enst Analizi"
+      "name": "Analitik Kimya & Enst Analizi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 206L",
-      "name": "Ana. Kimya & Enst Anz. Lab."
+      "name": "Ana. Kimya & Enst Anz. Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -117,43 +219,84 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KMM 210E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KMM 211",
-      "name": "Kütle ve Enerji Denklikleri"
+      "name": "Kütle ve Enerji Denklikleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EKO 201",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -164,37 +307,74 @@
     {
      "course": {
       "code": "KMM 222E",
-      "name": "Computati. Meth. in Chem. Eng."
+      "name": "Computati. Meth. in Chem. Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 104",
-      "name": "Organik Kimya"
+      "name": "Organik Kimya",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 104L",
-      "name": "Organik Kimya Lab."
+      "name": "Organik Kimya Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KMM 224",
-      "name": "Kimya Müh.Termodinamiği"
+      "name": "Kimya Müh.Termodinamiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KMM 220",
-      "name": "Akışkanlar Mekaniği"
+      "name": "Akışkanlar Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -205,24 +385,47 @@
     {
      "course": {
       "code": "MAL 201",
-      "name": "Malzeme Bilimi"
+      "name": "Malzeme Bilimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KMM 315E",
-      "name": "Physical Che.for Chemical Eng."
+      "name": "Physical Che.for Chemical Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KMM 305E",
-      "name": "Heat and Mass Transfer"
+      "name": "Heat and Mass Transfer",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders I (ITB)",
+      "groupId": "9019",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -778,6 +981,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders II (TM)",
+      "groupId": "9020",
+      "credits": "3",
+      "ects": [
+       4.5
+      ],
       "options": [
        {
         "code": "ELK 221",
@@ -793,6 +1001,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders III (TB)",
+      "groupId": "9022",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "BIO 214",
@@ -829,30 +1042,60 @@
     {
      "course": {
       "code": "KMM 332",
-      "name": "Ayırma İşlemleri"
+      "name": "Ayırma İşlemleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7.5,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMM 308E",
-      "name": "Chem Reac Eng"
+      "name": "Chem Reac Eng",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KMM 342E",
-      "name": "Math Modelling in Chemical Eng"
+      "name": "Math Modelling in Chemical Eng",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "9018",
+      "credits": "3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "KMM 413",
@@ -940,6 +1183,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders II (ITB)",
+      "groupId": "9015",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -1032,36 +1280,73 @@
     {
      "course": {
       "code": "KMM 4901",
-      "name": "Kimya Mühendisliği Tasarımı I"
+      "name": "Kimya Mühendisliği Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMM 451",
-      "name": "Kimya Mühendisliği Lab. I"
+      "name": "Kimya Mühendisliği Lab. I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "lab": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMM 411E",
-      "name": "Process Control"
+      "name": "Process Control",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMM 412",
-      "name": "Kimyasal Teknolojiler"
+      "name": "Kimyasal Teknolojiler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMM 483",
-      "name": "Araştırma Projesi I"
+      "name": "Araştırma Projesi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "9016",
+      "credits": "3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "KMM 413",
@@ -1149,6 +1434,12 @@
     {
      "elective": {
       "title": "7th Semester Elect.Courses(MT)",
+      "groupId": "9017",
+      "credits": "3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "KMM 413E",
@@ -1197,30 +1488,61 @@
     {
      "course": {
       "code": "KMM 4902E",
-      "name": "Chem. Eng. Design II"
+      "name": "Chem. Eng. Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 10,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMM 462",
-      "name": "Kimya Mühendisliği Lab II"
+      "name": "Kimya Mühendisliği Lab II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 7,
+      "lab": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMM 434",
-      "name": "Kalite,Çevre ve Güvenlik"
+      "name": "Kalite,Çevre ve Güvenlik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMM 484",
-      "name": "Araştırma Projesi II"
+      "name": "Araştırma Projesi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "9014",
+      "credits": "3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "KMM 413",

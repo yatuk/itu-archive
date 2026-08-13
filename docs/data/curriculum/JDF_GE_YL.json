@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Geomatik Mühendisliği Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Geomatik Mühendisliği Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "GEO YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "GEO 596 GEO 596E",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "LA"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Matematik Dersi",
+      "groupId": "12927",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BLG 501E",
@@ -230,6 +246,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "12928",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GEO 506E",
@@ -253,6 +274,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "12929",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GEO 506E",
@@ -276,6 +302,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "12930",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GEO 506E",
@@ -299,24 +330,28 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "12931",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "12932",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "12933",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "12934",
       "options": null
      }
     }

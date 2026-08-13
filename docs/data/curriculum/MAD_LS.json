@@ -4,6 +4,8 @@
  "faculty": "Maden Fakültesi",
  "level": "LS",
  "planLabel": "Maden Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "131,00",
+ "totalEcts": "244,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,88 @@
     {
      "course": {
       "code": "MAD 111",
-      "name": "Maden Müh Giriş"
+      "name": "Maden Müh Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAD 101E",
-      "name": "Tech.Draw.Appl.in Mining Eng."
+      "name": "Tech.Draw.Appl.in Mining Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 110E",
-      "name": "Intr. to Prog. Language (C)"
+      "name": "Intr. to Prog. Language (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,54 +105,108 @@
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ETK 101",
-      "name": "Mühendislik Etiği"
+      "name": "Mühendislik Etiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "2.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "8414",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -642,43 +743,86 @@
     {
      "course": {
       "code": "MAD 232",
-      "name": "Açık İşletmeler"
+      "name": "Açık İşletmeler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 112",
-      "name": "Genel Jeoloji"
+      "name": "Genel Jeoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MEK 205",
-      "name": "Mühendislik Mekaniği"
+      "name": "Mühendislik Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 241E",
-      "name": "Blasting Tech&its Applications"
+      "name": "Blasting Tech&its Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 210",
-      "name": "Mühendislik Matematiği"
+      "name": "Mühendislik Matematiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -689,42 +833,84 @@
     {
      "course": {
       "code": "MAT 202",
-      "name": "Sayısal Yöntemler"
+      "name": "Sayısal Yöntemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MDN 210",
-      "name": "Mineraloji ve Petrografi"
+      "name": "Mineraloji ve Petrografi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MDN 271",
-      "name": "Olasılık ve İstatistik"
+      "name": "Olasılık ve İstatistik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAD 243",
-      "name": "Yeraltı Maden İşletmeciliği"
+      "name": "Yeraltı Maden İşletmeciliği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 254E",
-      "name": "Strngth of Mat.for Mining Eng."
+      "name": "Strngth of Mat.for Mining Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "4.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "8994",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1261,48 +1447,98 @@
     {
      "course": {
       "code": "MAD 307",
-      "name": "Cevher Hazırlama I"
+      "name": "Cevher Hazırlama I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 311",
-      "name": "Jeofizik"
+      "name": "Jeofizik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 361",
-      "name": "Maden Yatakları"
+      "name": "Maden Yatakları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAD 362",
-      "name": "Mühendislik Jeolojisi"
+      "name": "Mühendislik Jeolojisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 351E",
-      "name": "Rock Mechanics"
+      "name": "Rock Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAD 327",
-      "name": "Madenlerde Ulaşım ve Su Atımı"
+      "name": "Madenlerde Ulaşım ve Su Atımı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (TM)",
+      "groupId": "8995",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5
+      ],
       "options": [
        {
         "code": "AKM 204E",
@@ -1335,49 +1571,100 @@
     {
      "course": {
       "code": "MAD 302E",
-      "name": "Mining and Environment"
+      "name": "Mining and Environment",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 342",
-      "name": "Madenlerde Hidrolik Güç Sist."
+      "name": "Madenlerde Hidrolik Güç Sist.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 322E",
-      "name": "Dsgn of Sup in Mines & Tunnels"
+      "name": "Dsgn of Sup in Mines & Tunnels",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 314",
-      "name": "Topoğrafya"
+      "name": "Topoğrafya",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAD 308",
-      "name": "Cevher Hazırlama II"
+      "name": "Cevher Hazırlama II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 304E",
-      "name": "Drilling Techniques"
+      "name": "Drilling Techniques",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 436",
-      "name": "Maden Ekonomisi"
+      "name": "Maden Ekonomisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -1388,36 +1675,76 @@
     {
      "course": {
       "code": "MAD 461",
-      "name": "Madenlerde Havalandırma"
+      "name": "Madenlerde Havalandırma",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 407",
-      "name": "Maden Makinaları"
+      "name": "Maden Makinaları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 4901",
-      "name": "Maden Müh.Tasarım Projesi I"
+      "name": "Maden Müh.Tasarım Projesi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 441E",
-      "name": "Mine System Analysis"
+      "name": "Mine System Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 471",
-      "name": "Maden Elekrotekniği"
+      "name": "Maden Elekrotekniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th.Smst.Elective Course I (MT)",
+      "groupId": "8996",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "MAD 435E",
@@ -1441,6 +1768,12 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8997",
+      "credits": "2 / 2,5 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "CHZ 321",
@@ -1469,36 +1802,74 @@
     {
      "course": {
       "code": "MAD 4902",
-      "name": "Maden Müh.Tasarım Projesi II"
+      "name": "Maden Müh.Tasarım Projesi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 434",
-      "name": "Maden Hukuku"
+      "name": "Maden Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 422E",
-      "name": "Mine Planing and Design"
+      "name": "Mine Planing and Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 8,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 432",
-      "name": "Maden. ve Tünellerde Kazı Mek."
+      "name": "Maden. ve Tünellerde Kazı Mek.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 406",
-      "name": "Madenlerde İş Sağlığı ve Güv."
+      "name": "Madenlerde İş Sağlığı ve Güv.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th.Smst.Elective Course I (MT)",
+      "groupId": "8998",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "MAD 317E",
@@ -1522,6 +1893,13 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8999",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       4.5,
+       6
+      ],
       "options": [
        {
         "code": "CHZ 318",

@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Denizcilik Çalışmaları Yüksek Lisans Programı",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Denizcilik Çalışmaları Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "DZC YLT",
-      "name": "Tez çalışması"
+      "name": "Tez çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "DZC 596 DZC 596E",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9406",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DZC 503",
@@ -58,6 +74,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9407",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DZC 503",
@@ -93,6 +114,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9408",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DZC 503",
@@ -128,6 +154,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "9409",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DZC 503",
@@ -163,6 +194,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "9410",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DZC 501",
@@ -378,6 +414,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "9411",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DZC 501",
@@ -593,6 +634,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "9412",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DZC 501",
@@ -808,6 +854,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "9413",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DZC 501",

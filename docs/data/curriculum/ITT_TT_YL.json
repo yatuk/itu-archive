@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Yenilikçi Teknik Tekstiller (%100 İngilizce) Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Yenilikçi Teknik Tekstiller (İngilizce) Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "YTT YLT",
-      "name": "Tez çalışması"
+      "name": "Tez çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "YTT 596E",
-      "name": "Scien.Rese., Ethic&Seminar"
+      "name": "Scien.Rese., Ethic&Seminar",
+      "language": "English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Matematik Dersi",
+      "groupId": "12943",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "CHZ 511",
@@ -78,6 +94,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "12944",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "YTT 501E",
@@ -121,6 +142,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "12945",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "YTT 501E",
@@ -164,6 +190,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "12946",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "YTT 501E",
@@ -207,24 +238,28 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "12947",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "12948",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "12949",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "12950",
       "options": null
      }
     }

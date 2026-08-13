@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "DR",
  "planLabel": "Nano Bilim ve Nano Mühendislik (%100 İngilizce) Doktora Programı 2022-2023 / Bahar Dönemi Sonrası",
+ "totalCredits": "21,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Nano Bilim ve Nano Mühendislik (İngilizce) Doktora",
@@ -11,48 +13,70 @@
     {
      "course": {
       "code": "NSE DRT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 150,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "NSE YET",
-      "name": "Yeterlik Aşaması"
+      "name": "Yeterlik Aşaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 30,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "NSE 696E",
-      "name": "Scien.Rese., Ethic&Seminar"
+      "name": "Scien.Rese., Ethic&Seminar",
+      "language": "English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi I",
+      "groupId": "10883",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi II",
+      "groupId": "10884",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi III",
+      "groupId": "10885",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi IV",
+      "groupId": "10886",
       "options": null
      }
     },
     {
      "elective": {
       "title": "LEE Seçmeli Dersi",
+      "groupId": "10887",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "LEE 901",
@@ -108,12 +132,14 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "10888",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "10889",
       "options": null
      }
     }

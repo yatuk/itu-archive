@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Proje ve Yapım Yönetimi Yüksek Lisans Programı",
+ "totalCredits": "30,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Proje ve Yapım Yönetimi Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "PYY YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "PYY 596 PYY 596E",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Matematik Dersi",
+      "groupId": "9741",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "PYY 504E",
@@ -42,6 +58,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9742",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "PYY 502",
@@ -77,6 +98,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9743",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "PYY 502",
@@ -112,6 +138,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9744",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "PYY 502",
@@ -147,6 +178,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "9745",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "PYY 502",
@@ -182,30 +218,35 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "5898",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "5899",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "5900",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "5901",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders V",
+      "groupId": "9740",
       "options": null
      }
     }

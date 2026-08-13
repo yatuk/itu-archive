@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Geleneksel Danslar Yüksek Lisans Programı",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Geleneksel Danslar Yüksek Lisans",
@@ -11,18 +13,33 @@
     {
      "course": {
       "code": "GDP YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "GDP 596",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9502",
+      "credits": "0 / 3",
+      "ects": [
+       60,
+       7.5
+      ],
       "options": [
        {
         "code": "GDP 502E",
@@ -58,6 +75,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9503",
+      "credits": "0 / 3",
+      "ects": [
+       60,
+       7.5
+      ],
       "options": [
        {
         "code": "GDP 502",
@@ -93,6 +116,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9504",
+      "credits": "0 / 3",
+      "ects": [
+       60,
+       7.5
+      ],
       "options": [
        {
         "code": "GDP 502",
@@ -128,6 +157,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "9505",
+      "credits": "0 / 3",
+      "ects": [
+       60,
+       7.5
+      ],
       "options": [
        {
         "code": "GDP 502",
@@ -163,6 +198,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "9506",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GDP 501",
@@ -230,6 +270,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "9507",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GDP 501",
@@ -297,6 +342,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "9508",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GDP 501",
@@ -364,6 +414,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "9509",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GDP 501",

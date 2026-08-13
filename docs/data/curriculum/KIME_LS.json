@@ -4,6 +4,8 @@
  "faculty": "Fen - Edebiyat Fakültesi",
  "level": "LS",
  "planLabel": "Kimya Lisans Programı (%100 İngilizce) 2010-2011 / Güz Dönemi Sonrası",
+ "totalCredits": "152,50",
+ "totalEcts": "237,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,42 +13,85 @@
     {
      "course": {
       "code": "KIM 111E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 111EL",
-      "name": "General Chemistry I Laboratory"
+      "name": "General Chemistry I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "English CourseI",
+      "groupId": "4371",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -67,42 +112,86 @@
     {
      "course": {
       "code": "KIM 112E",
-      "name": "General Chemistry II"
+      "name": "General Chemistry II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 112EL",
-      "name": "General Chemistry II Laboratory"
+      "name": "General Chemistry II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 108E",
-      "name": "Intr. to Sci. & Eng.Computing"
+      "name": "Intr. to Sci. & Eng.Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "4373",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -167,31 +256,61 @@
     {
      "course": {
       "code": "KIM 211E",
-      "name": "Analytical Chemistry"
+      "name": "Analytical Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 201E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 231E",
-      "name": "Organic Chemistry I"
+      "name": "Organic Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -202,36 +321,72 @@
     {
      "course": {
       "code": "KIM 221E",
-      "name": "Analytical Chemistry Laboratory"
+      "name": "Analytical Chemistry Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "lab": 6,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 262E",
-      "name": "Int. Quantum Chemistry"
+      "name": "Int. Quantum Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 252E",
-      "name": "Chemical Thermodynamics"
+      "name": "Chemical Thermodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 232E",
-      "name": "Organic Chemistry II"
+      "name": "Organic Chemistry II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 242E",
-      "name": "Organic Chemistry I Laboratory"
+      "name": "Organic Chemistry I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "lab": 6,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "4th Semester Elective Crse(MT)",
+      "groupId": "4375",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BIO 323E",
@@ -304,36 +459,72 @@
     {
      "course": {
       "code": "KIM 351E",
-      "name": "Inorganic Chamistry I"
+      "name": "Inorganic Chamistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 311E",
-      "name": "Physical Chemistry I"
+      "name": "Physical Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 321E",
-      "name": "Physical Chemistry Laboratory I"
+      "name": "Physical Chemistry Laboratory I",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "lab": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 331E",
-      "name": "Organic Chemistry III"
+      "name": "Organic Chemistry III",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 341E",
-      "name": "Organic Chemistry Laboratory II"
+      "name": "Organic Chemistry Laboratory II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "lab": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Crse(MT)",
+      "groupId": "4376",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -405,6 +596,11 @@
     {
      "elective": {
       "title": "5th Semester Elective Crse-ITB",
+      "groupId": "4377",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -489,42 +685,86 @@
     {
      "course": {
       "code": "KIM 362E",
-      "name": "Inorganic Chemistry Laboratory"
+      "name": "Inorganic Chemistry Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 332E",
-      "name": "Electrochemistry"
+      "name": "Electrochemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 312E",
-      "name": "Physical Chemistry II"
+      "name": "Physical Chemistry II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 322E",
-      "name": "Physical Chemistry Laboratory II"
+      "name": "Physical Chemistry Laboratory II",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "lab": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 352E",
-      "name": "Inorganic Chemistry II"
+      "name": "Inorganic Chemistry II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6th Semester Elect.Crse(MT)",
+      "groupId": "4378",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 323E",
@@ -601,42 +841,84 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KIM 421E",
-      "name": "Industrial Chemistry"
+      "name": "Industrial Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 4,
+      "theory": 3,
+      "lab": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 212E",
-      "name": "Instrumental Analytic. Methods"
+      "name": "Instrumental Analytic. Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 222E",
-      "name": "Instrumental Analysis Methods Laboratory"
+      "name": "Instrumental Analysis Methods Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "lab": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 431E",
-      "name": "Organic Reactions"
+      "name": "Organic Reactions",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "HUK 201",
-      "name": "İş Hukuku"
+      "name": "İş Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Crse-ITB",
+      "groupId": "4379",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -832,6 +1114,13 @@
     {
      "elective": {
       "title": "7th Semester Elective Crse(MT)",
+      "groupId": "4380",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -912,30 +1201,61 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KIM 492E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 452E",
-      "name": "Coordination Chemistry"
+      "name": "Coordination Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 432E",
-      "name": "Organic Structure Analysis"
+      "name": "Organic Structure Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elective Crse-MT",
+      "groupId": "4381",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BIO 323E",
@@ -999,6 +1319,11 @@
     {
      "elective": {
       "title": "8th Semester Elective Crse-ITB",
+      "groupId": "4382",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -1194,6 +1519,12 @@
     {
      "elective": {
       "title": "8th Semester Elective Crse-MT",
+      "groupId": "4383",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BIO 323E",

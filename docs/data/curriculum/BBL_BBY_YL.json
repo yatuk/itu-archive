@@ -4,6 +4,8 @@
  "faculty": "Bilişim Enstitüsü",
  "level": "YL",
  "planLabel": "Bilgisayar Bilimleri Yüksek Lisans Programı 2026-2027 / Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Bilgisayar Bilimleri Yüksek Lisans",
@@ -11,12 +13,21 @@
     {
      "course": {
       "code": "BBL YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seminer Dersi",
+      "groupId": "13394",
+      "credits": "0",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 596E",
@@ -44,6 +55,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "13386",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 501E",
@@ -103,6 +119,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "13387",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 512E",
@@ -162,6 +183,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "13388",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 512E",
@@ -229,6 +255,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "13389",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 501E",
@@ -292,6 +323,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "13390",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 502E",
@@ -539,6 +575,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "13391",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 502E",
@@ -794,6 +835,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "13392",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 502",
@@ -1049,6 +1095,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "13393",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 502",

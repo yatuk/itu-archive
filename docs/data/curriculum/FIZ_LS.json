@@ -4,6 +4,8 @@
  "faculty": "Fen - Edebiyat Fakültesi",
  "level": "LS",
  "planLabel": "Fizik Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "122,00",
+ "totalEcts": "247,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,87 @@
     {
      "course": {
       "code": "FIZ 113",
-      "name": "Genel Fizik I"
+      "name": "Genel Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 113EL",
-      "name": "General Physics I Laboratory"
+      "name": "General Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 115",
-      "name": "Fizik Müh. Giriş & Etik"
+      "name": "Fizik Müh. Giriş & Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2.5,
+      "theory": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -58,49 +104,100 @@
     {
      "course": {
       "code": "FIZ 116",
-      "name": "Genel Fizik II"
+      "name": "Genel Fizik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 116EL",
-      "name": "General Physics II Laboratory"
+      "name": "General Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 112E",
-      "name": "Intr.to Prog.Language(FORTRAN)"
+      "name": "Intr.to Prog.Language(FORTRAN)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -111,43 +208,88 @@
     {
      "course": {
       "code": "FIZ 210",
-      "name": "Fizikte Matematiksel Yöntemlere Giriş"
+      "name": "Fizikte Matematiksel Yöntemlere Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 233E",
-      "name": "Electronics I"
+      "name": "Electronics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 241E",
-      "name": "Symblc & Numrc Tchnqs in Physc"
+      "name": "Symblc & Numrc Tchnqs in Physc",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 233EL",
-      "name": "Electronics I Lab."
+      "name": "Electronics I Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "FIZ 214",
-      "name": "Dalgalar Fiziği"
+      "name": "Dalgalar Fiziği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 214EL",
-      "name": "Wave Physics Laboratory"
+      "name": "Wave Physics Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "lab": 2,
+      "type": "TB"
      }
     }
    ]
@@ -158,37 +300,76 @@
     {
      "course": {
       "code": "FIZ 284",
-      "name": "Klasik Mekanik I"
+      "name": "Klasik Mekanik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 272E",
-      "name": "Computatnl Methods in Physics"
+      "name": "Computatnl Methods in Physics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 215",
-      "name": "Modern Fizik"
+      "name": "Modern Fizik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 274",
-      "name": "Fizikçiler için Termodinamik"
+      "name": "Fizikçiler için Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 215EL",
-      "name": "Modern Physics Laboratory"
+      "name": "Modern Physics Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 274EL",
-      "name": "Termodynamics Laboratory"
+      "name": "Termodynamics Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "lab": 2,
+      "type": "TB"
      }
     }
    ]
@@ -199,24 +380,46 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "FIZ 323",
-      "name": "Fizikte Matematiksel Yönteml I"
+      "name": "Fizikte Matematiksel Yönteml I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 5,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 315",
-      "name": "Kuantum Mekaniği I"
+      "name": "Kuantum Mekaniği I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 5,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (SNT)",
+      "groupId": "8806",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 201",
@@ -372,6 +575,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders(ITB)",
+      "groupId": "8393",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -952,31 +1160,62 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "FIZ 374",
-      "name": "Fizikte Deneysel Yöntemler I"
+      "name": "Fizikte Deneysel Yöntemler I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 310",
-      "name": "İstatistik Fizik"
+      "name": "İstatistik Fizik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 316",
-      "name": "Kuantum Mekaniği II"
+      "name": "Kuantum Mekaniği II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 5,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 374EL",
-      "name": "Methods of Exp. Physics Lab."
+      "name": "Methods of Exp. Physics Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "lab": 2,
+      "type": "TM"
      }
     }
    ]
@@ -987,18 +1226,39 @@
     {
      "course": {
       "code": "FIZ 411",
-      "name": "Elektromanyetik Teori I"
+      "name": "Elektromanyetik Teori I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 4901",
-      "name": "Fizik Mühendisliği Tasarımı I"
+      "name": "Fizik Mühendisliği Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8807",
+      "credits": "3 / 4",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "EKO 201",
@@ -1198,6 +1458,13 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8808",
+      "credits": "3 / 4",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "EKO 201",
@@ -1394,24 +1661,50 @@
     {
      "course": {
       "code": "FIZ 4902",
-      "name": "Fizik Mühendisliği Tasarımı II"
+      "name": "Fizik Mühendisliği Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "FIZ 412",
-      "name": "Elektromanyetik Teori II"
+      "name": "Elektromanyetik Teori II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8809",
+      "credits": "3 / 4",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -1791,6 +2084,13 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8810",
+      "credits": "3 / 4",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",

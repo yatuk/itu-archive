@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Şehir Planlama Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Şehir Planlama Yüksek Lisans",
@@ -11,12 +13,21 @@
     {
      "course": {
       "code": "SPL YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Bilimsel Araş.,Etik ve Seminer",
+      "groupId": "12812",
+      "credits": "0",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BPL 596E",
@@ -36,6 +47,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "12808",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "SPL 503E",
@@ -59,6 +75,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "12809",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "SPL 503E",
@@ -82,6 +103,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "12810",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "SPL 503E",
@@ -105,6 +131,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "12811",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "SPL 503E",
@@ -128,6 +159,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "12804",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BPL 516",
@@ -183,18 +219,21 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "12805",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "12806",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "12807",
       "options": null
      }
     }

@@ -4,6 +4,8 @@
  "faculty": "Denizcilik Fakültesi",
  "level": "LS",
  "planLabel": "Gemi Makinaları İşletme Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "133,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,61 +13,123 @@
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DFH 113",
-      "name": "Denizde Güvenlik I"
+      "name": "Denizde Güvenlik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "lab": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GMI 118",
-      "name": "Gemi Mak. İşl.Müh.Gir.veEtik"
+      "name": "Gemi Mak. İşl.Müh.Gir.veEtik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 114",
-      "name": "Malz.Bilgisi ve Üretim Yöntem."
+      "name": "Malz.Bilgisi ve Üretim Yöntem.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -76,61 +140,121 @@
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GMI 132E",
-      "name": "Numerical Analy. of Eng.Syst."
+      "name": "Numerical Analy. of Eng.Syst.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DFH 112",
-      "name": "Denizde Güvenlik II"
+      "name": "Denizde Güvenlik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 115",
-      "name": "Bilgisayar Dest. Teknik Resim"
+      "name": "Bilgisayar Dest. Teknik Resim",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 171E",
-      "name": "Maritime English I"
+      "name": "Maritime English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -141,54 +265,109 @@
     {
      "course": {
       "code": "MAT 210",
-      "name": "Mühendislik Matematiği"
+      "name": "Mühendislik Matematiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MEK 205E",
-      "name": "Engineering Mechanics"
+      "name": "Engineering Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DFH 201",
-      "name": "Temel Yüzme Becerisi"
+      "name": "Temel Yüzme Becerisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 206",
-      "name": "Atölye"
+      "name": "Atölye",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 320",
-      "name": "Gemi İnşaatı ve Stabilite"
+      "name": "Gemi İnşaatı ve Stabilite",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 254",
-      "name": "Gemi Yardımcı Makineleri I"
+      "name": "Gemi Yardımcı Makineleri I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 202",
-      "name": "Gemilerde Acil Durum. Müdahale"
+      "name": "Gemilerde Acil Durum. Müdahale",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "9101",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -305,48 +484,101 @@
     {
      "course": {
       "code": "GMI 213",
-      "name": "Termodinamik"
+      "name": "Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 214",
-      "name": "Hidrolik ve Pnömatik"
+      "name": "Hidrolik ve Pnömatik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 225",
-      "name": "Gemi Dizel Makineleri I"
+      "name": "Gemi Dizel Makineleri I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GMI 228",
-      "name": "Temel Elektronik"
+      "name": "Temel Elektronik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 261E",
-      "name": "Fluid Mechanics"
+      "name": "Fluid Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 256",
-      "name": "Elektroteknik"
+      "name": "Elektroteknik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders (TM)",
+      "groupId": "8528",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "GMI 209",
@@ -366,6 +598,12 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders(TB)",
+      "groupId": "8529",
+      "credits": "3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "FIZ 449",
@@ -394,54 +632,112 @@
     {
      "course": {
       "code": "GMI 341E",
-      "name": "Automatic Control Systems"
+      "name": "Automatic Control Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 301",
-      "name": "Deniz Hukuku"
+      "name": "Deniz Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 313",
-      "name": "Gemi Buhar Kazanları & Operas."
+      "name": "Gemi Buhar Kazanları & Operas.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 333",
-      "name": "Gemi Dizel Makineleri II"
+      "name": "Gemi Dizel Makineleri II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 324",
-      "name": "Gemi Mak. Operasyon&Bakımı"
+      "name": "Gemi Mak. Operasyon&Bakımı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 342E",
-      "name": "Maritime Rules & Regulations"
+      "name": "Maritime Rules & Regulations",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 352",
-      "name": "Isı Geçişi"
+      "name": "Isı Geçişi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 384E",
-      "name": "Engine Room Simulator (ERS) I"
+      "name": "Engine Room Simulator (ERS) I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "9100",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "DFH 228",
@@ -518,7 +814,13 @@
     {
      "course": {
       "code": "GMI 393E",
-      "name": "Long Term Sea Training (6 ay)"
+      "name": "Long Term Sea Training (6 ay)",
+      "language": "English",
+      "required": "Z",
+      "credits": 8,
+      "ects": 28,
+      "tutorial": 16,
+      "type": "MT"
      }
     }
    ]
@@ -529,36 +831,76 @@
     {
      "course": {
       "code": "GMI 454",
-      "name": "Gemi Yardımcı Makineleri II"
+      "name": "Gemi Yardımcı Makineleri II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 457",
-      "name": "Gemi Elektrotekniği"
+      "name": "Gemi Elektrotekniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 473",
-      "name": "Gemi Dizel Makineleri III"
+      "name": "Gemi Dizel Makineleri III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 4901",
-      "name": "Gemi Mak. İşl. Müh. Tasarımı I"
+      "name": "Gemi Mak. İşl. Müh. Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 270E",
-      "name": "Maritime English II"
+      "name": "Maritime English II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "9099",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "GMI 470E",
@@ -622,6 +964,12 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "9098",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "GMI 470E",
@@ -690,30 +1038,62 @@
     {
      "course": {
       "code": "GMI 4902",
-      "name": "Gemi Mak. İşl. Müh.Tasarımı II"
+      "name": "Gemi Mak. İşl. Müh.Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 484E",
-      "name": "Engine Room Simulator (ERS) II"
+      "name": "Engine Room Simulator (ERS) II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 462",
-      "name": "Buhar & Gaz Türbinleri Operas."
+      "name": "Buhar & Gaz Türbinleri Operas.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "9097",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "GMI 470E",
@@ -777,6 +1157,12 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "9096",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "GMI 470E",

@@ -4,6 +4,8 @@
  "faculty": "Türk Musikisi Devlet Konservatuvarı",
  "level": "LS",
  "planLabel": "Ses Eğitimi (TSM) Lisans Programı 2005-2006 / Güz ile 2010-2011 / Güz Dönemleri Arası",
+ "totalCredits": "147,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,42 +13,78 @@
     {
      "course": {
       "code": "TEB 1111",
-      "name": "Türk Müz.Solfeji ve Teor. I"
+      "name": "Türk Müz.Solfeji ve Teor. I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TEB 1113",
-      "name": "Tem.Müzik Solf.ve Teorisi I"
+      "name": "Tem.Müzik Solf.ve Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SES 1115",
-      "name": "Ses Tekniği I"
+      "name": "Ses Tekniği I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 1121",
-      "name": "Piyano I"
+      "name": "Piyano I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEB 1711",
-      "name": "English I"
+      "name": "English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TEB 1713",
-      "name": "Türkçe"
+      "name": "Türkçe",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Çalgı I (MT)",
+      "groupId": "7019",
+      "credits": "1",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 1911",
@@ -71,36 +109,67 @@
     {
      "course": {
       "code": "TEB 1112",
-      "name": "Türk Müz.Solfeji ve Teor. II"
+      "name": "Türk Müz.Solfeji ve Teor. II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TEB 1114",
-      "name": "Tem.Müzik Solf.ve Teorisi II"
+      "name": "Tem.Müzik Solf.ve Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SES 1116",
-      "name": "Ses Tekniği II"
+      "name": "Ses Tekniği II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 1122",
-      "name": "Piyano II"
+      "name": "Piyano II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEB 1712",
-      "name": "English II"
+      "name": "English II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Çalgı II (MT)",
+      "groupId": "7023",
+      "credits": "1",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 1912",
@@ -120,7 +189,12 @@
     {
      "course": {
       "code": "SES 2119",
-      "name": "Prozodi"
+      "name": "Prozodi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -131,36 +205,68 @@
     {
      "course": {
       "code": "TEB 2111",
-      "name": "Türk Müz.Solfeji ve Teor. III"
+      "name": "Türk Müz.Solfeji ve Teor. III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TEB 2113",
-      "name": "Tem.Müzik Solf.ve Teorisi III"
+      "name": "Tem.Müzik Solf.ve Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SES 2117",
-      "name": "Repertuar I"
+      "name": "Repertuar I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 2123",
-      "name": "Ses Eğitimi I"
+      "name": "Ses Eğitimi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3.5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TEB 2711",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Çalgı III(MT)",
+      "groupId": "7026",
+      "credits": "1",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 2911",
@@ -180,7 +286,12 @@
     {
      "course": {
       "code": "SES 3119",
-      "name": "Mimik Diksiyon"
+      "name": "Mimik Diksiyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     }
    ]
@@ -191,30 +302,57 @@
     {
      "course": {
       "code": "TEB 2112",
-      "name": "Türk Müz.Solfeji ve Teor. IV"
+      "name": "Türk Müz.Solfeji ve Teor. IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TEB 2114",
-      "name": "Tem.Müzik Solf.ve Teorisi IV"
+      "name": "Tem.Müzik Solf.ve Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SES 2118",
-      "name": "Repertuar II"
+      "name": "Repertuar II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 2124",
-      "name": "Ses Eğitimi II"
+      "name": "Ses Eğitimi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3.5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Çalgı IV (MT)",
+      "groupId": "7030",
+      "credits": "1",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 2912",
@@ -234,13 +372,23 @@
     {
      "course": {
       "code": "SES 3122",
-      "name": "Sahne Tekniği"
+      "name": "Sahne Tekniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEB 2732",
-      "name": "English IV"
+      "name": "English IV",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "theory": 3,
+      "type": "ITB"
      }
     }
    ]
@@ -251,30 +399,56 @@
     {
      "course": {
       "code": "SES 3113",
-      "name": "Dikte Deşifre I"
+      "name": "Dikte Deşifre I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 3117",
-      "name": "Üslup Repertuar I"
+      "name": "Üslup Repertuar I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "theory": 3,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 3211",
-      "name": "Yorum I"
+      "name": "Yorum I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEB 4116",
-      "name": "Türk Halk Müziği Bilgileri"
+      "name": "Türk Halk Müziği Bilgileri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Çalgı V (MT)",
+      "groupId": "7034",
+      "credits": "1",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 3911",
@@ -294,6 +468,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (MT)",
+      "groupId": "7035",
+      "credits": "2",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 3313",
@@ -317,6 +496,12 @@
     {
      "elective": {
       "title": "5.yy Seçmeli Ders (ITB)",
+      "groupId": "7036",
+      "credits": "3",
+      "ects": [
+       0,
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -685,24 +870,45 @@
     {
      "course": {
       "code": "SES 3114",
-      "name": "Dikte Deşifre II"
+      "name": "Dikte Deşifre II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 3118",
-      "name": "Üslup Repertuar II"
+      "name": "Üslup Repertuar II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "theory": 3,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 3212",
-      "name": "Yorum II"
+      "name": "Yorum II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Çalgı VI (MT)",
+      "groupId": "7042",
+      "credits": "1",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 3912",
@@ -722,6 +928,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (MT)",
+      "groupId": "7043",
+      "credits": "2",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 3314",
@@ -745,12 +956,23 @@
     {
      "course": {
       "code": "SES 4126",
-      "name": "Müzik Estetiği"
+      "name": "Müzik Estetiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçmeli Ders (ITB)",
+      "groupId": "7044",
+      "credits": "3",
+      "ects": [
+       0,
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1119,24 +1341,46 @@
     {
      "course": {
       "code": "SES 4111",
-      "name": "Türk Halk Müziği Repertuarı I"
+      "name": "Türk Halk Müziği Repertuarı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 4117",
-      "name": "Üslup Repertuar III"
+      "name": "Üslup Repertuar III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "theory": 3,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TEB 4711",
-      "name": "Atatürk İlkeleri ve Ink.Tarihi"
+      "name": "Atatürk İlkeleri ve Ink.Tarihi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 4,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (MT)",
+      "groupId": "7050",
+      "credits": "2",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "SES 3124",
@@ -1164,6 +1408,12 @@
     {
      "elective": {
       "title": "7.yy. Seçime Bağlı Ders (ITB)",
+      "groupId": "7051",
+      "credits": "3",
+      "ects": [
+       0,
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1523,13 +1773,23 @@
     {
      "course": {
       "code": "SES 4122",
-      "name": "Repertuar Hazırlama Teknikleri"
+      "name": "Repertuar Hazırlama Teknikleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 4211",
-      "name": "Toplu İcra I"
+      "name": "Toplu İcra I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     }
    ]
@@ -1540,30 +1800,58 @@
     {
      "course": {
       "code": "SES 4112",
-      "name": "Türk Halk Müziği Repertuarı II"
+      "name": "Türk Halk Müziği Repertuarı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 4118",
-      "name": "Üslup Repertuar IV"
+      "name": "Üslup Repertuar IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "theory": 3,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 4212",
-      "name": "Toplu İcra II"
+      "name": "Toplu İcra II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (MT)",
+      "groupId": "7057",
+      "credits": "2",
+      "ects": [
+       0
+      ],
       "options": [
        {
         "code": "MUZ 4356",
@@ -1583,6 +1871,12 @@
     {
      "elective": {
       "title": "8.yy. Seçime Bağlı Ders (ITB)",
+      "groupId": "7058",
+      "credits": "3",
+      "ects": [
+       0,
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",

@@ -4,6 +4,8 @@
  "faculty": "İşletme Fakültesi",
  "level": "LS",
  "planLabel": "İşletme Mühendisliği Lisans Programı (%100 İngilizce) 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "127,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,97 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ISL 121E",
-      "name": "Int.to Management Eng.&Ethics"
+      "name": "Int.to Management Eng.&Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -64,54 +114,108 @@
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "2nd Semester Elec. Courses(TM)",
+      "groupId": "8498",
+      "credits": "3",
+      "ects": [
+       4.5,
+       5
+      ],
       "options": [
        {
         "code": "ELK 221E",
@@ -144,31 +248,61 @@
     {
      "course": {
       "code": "MAT 210E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ISL 233E",
-      "name": "Microeconomics"
+      "name": "Microeconomics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ISL 223E",
-      "name": "Fundm.of Production Management"
+      "name": "Fundm.of Production Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ISL 213E",
-      "name": "Statistics I"
+      "name": "Statistics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ISL 224E",
-      "name": "Cost Accounting"
+      "name": "Cost Accounting",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -179,42 +313,86 @@
     {
      "course": {
       "code": "ISL 234E",
-      "name": "Management and Organization"
+      "name": "Management and Organization",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ISL 244E",
-      "name": "Macroeconomics"
+      "name": "Macroeconomics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ISL 214E",
-      "name": "Statistics II"
+      "name": "Statistics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ISL 333E",
-      "name": "Finance"
+      "name": "Finance",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "4th Semester Elective Course I (TM)",
+      "groupId": "9062",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4.5
+      ],
       "options": [
        {
         "code": "ELK 221E",
@@ -243,30 +421,60 @@
     {
      "course": {
       "code": "ISL 353E",
-      "name": "Marketing"
+      "name": "Marketing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ISL 323E",
-      "name": "Operations Research"
+      "name": "Operations Research",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ISL 363E",
-      "name": "Human Resources Management"
+      "name": "Human Resources Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ISL 334E",
-      "name": "Quality for Engineers"
+      "name": "Quality for Engineers",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Course (MT)",
+      "groupId": "9063",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BHB 203E",
@@ -307,31 +515,62 @@
     {
      "course": {
       "code": "ISL 374E",
-      "name": "Management Eng. Design I"
+      "name": "Management Eng. Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ISL 364E",
-      "name": "Business Law"
+      "name": "Business Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ISL 360E",
-      "name": "Quantitative Rsrch&DataAnlys."
+      "name": "Quantitative Rsrch&DataAnlys.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ISL 384E",
-      "name": "Production Planning&Control"
+      "name": "Production Planning&Control",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ISL 343E",
-      "name": "Management Information Syst."
+      "name": "Management Information Syst.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -342,30 +581,63 @@
     {
      "course": {
       "code": "ISL 453E",
-      "name": "Management Eng. Design II"
+      "name": "Management Eng. Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ISL 443E",
-      "name": "Project Design and Manag."
+      "name": "Project Design and Manag.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ISL 4901E",
-      "name": "Manage. Engin. Design Proj. I"
+      "name": "Manage. Engin. Design Proj. I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7.5,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ISL 344E",
-      "name": "Strategic Manage. for Engin."
+      "name": "Strategic Manage. for Engin.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Course (MT)",
+      "groupId": "9064",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "END 213E",
@@ -438,24 +710,48 @@
     {
      "course": {
       "code": "ISL 4902E",
-      "name": "Manage. Engin. Design Proj.II"
+      "name": "Manage. Engin. Design Proj.II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ISL 433",
-      "name": "İş Hukuku"
+      "name": "İş Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elective Course I (MT)",
+      "groupId": "9065",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "END 426E",
@@ -507,6 +803,12 @@
     {
      "elective": {
       "title": "8th Semester Elective Course II (MT)",
+      "groupId": "9066",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ISL 421E",
@@ -558,6 +860,11 @@
     {
      "elective": {
       "title": "8th Semester Elective Course III (ITB)",
+      "groupId": "9067",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",

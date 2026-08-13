@@ -4,6 +4,8 @@
  "faculty": "Fen - Edebiyat Fakültesi",
  "level": "LS",
  "planLabel": "Moleküler Biyoloji ve Genetik Lisans Programı (%100 İngilizce) 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "127,50",
+ "totalEcts": "241,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,98 @@
     {
      "course": {
       "code": "BIO 105E",
-      "name": "General Biology I"
+      "name": "General Biology I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIO 103E",
-      "name": "Int.to Mol.Biol.&Genet.&Ethics"
+      "name": "Int.to Mol.Biol.&Genet.&Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -64,49 +115,98 @@
     {
      "course": {
       "code": "KIM 203E",
-      "name": "Analytical Chemistry"
+      "name": "Analytical Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIO 106E",
-      "name": "General Biology II"
+      "name": "General Biology II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIO 106EL",
-      "name": "General Biology II Lab."
+      "name": "General Biology II Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "lab": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -117,37 +217,74 @@
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "BIO 207E",
-      "name": "Cell Biology"
+      "name": "Cell Biology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 210E",
-      "name": "Mathematics for Biologists"
+      "name": "Mathematics for Biologists",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 202E",
-      "name": "Physical Chemistry"
+      "name": "Physical Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIO 207EL",
-      "name": "Cell Biology Lab."
+      "name": "Cell Biology Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 322E",
-      "name": "Physiology"
+      "name": "Physiology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     }
    ]
@@ -158,36 +295,71 @@
     {
      "course": {
       "code": "BIO 212E",
-      "name": "Genetics"
+      "name": "Genetics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 216E",
-      "name": "Microbiology"
+      "name": "Microbiology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIO 232E",
-      "name": "Organic Chem. for Biologists"
+      "name": "Organic Chem. for Biologists",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIO 216EL",
-      "name": "Microbiology Lab."
+      "name": "Microbiology Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "4th Semester Elect. Course-ITB",
+      "groupId": "8349",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -604,43 +776,86 @@
     {
      "course": {
       "code": "BIO 341E",
-      "name": "General Biotechnology"
+      "name": "General Biotechnology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIO 315EL",
-      "name": "Biochemistry I Lab."
+      "name": "Biochemistry I Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 317E",
-      "name": "Molecular Genetics"
+      "name": "Molecular Genetics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 317EL",
-      "name": "Molecular Genetics Lab."
+      "name": "Molecular Genetics Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 315E",
-      "name": "Biochemistry I"
+      "name": "Biochemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 325E",
-      "name": "Ecology"
+      "name": "Ecology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     }
    ]
@@ -651,42 +866,85 @@
     {
      "course": {
       "code": "BIO 326E",
-      "name": "Mol. Evolution & Biodiversity"
+      "name": "Mol. Evolution & Biodiversity",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 328EL",
-      "name": "Biochemistry II Lab."
+      "name": "Biochemistry II Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 328E",
-      "name": "Biochemistry II"
+      "name": "Biochemistry II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 417E",
-      "name": "Molecular Biology"
+      "name": "Molecular Biology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 415EL",
-      "name": "Molecular Biology Lab."
+      "name": "Molecular Biology Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "6th Sem. Tech. Elect. Crse(MT)",
+      "groupId": "8626",
+      "credits": "3",
+      "ects": [
+       6,
+       7
+      ],
       "options": [
        {
         "code": "BIO 332E",
@@ -771,30 +1029,59 @@
     {
      "course": {
       "code": "BIO 351E",
-      "name": "Biophysics"
+      "name": "Biophysics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 4901E",
-      "name": "Mol Bio & Genetics Design I"
+      "name": "Mol Bio & Genetics Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Crse(MT)",
+      "groupId": "8627",
+      "credits": "3",
+      "ects": [
+       6,
+       7
+      ],
       "options": [
        {
         "code": "BIO 332E",
@@ -878,6 +1165,12 @@
     {
      "elective": {
       "title": "7th Semester Elective Crse(MT)",
+      "groupId": "8628",
+      "credits": "3",
+      "ects": [
+       6,
+       7
+      ],
       "options": [
        {
         "code": "BIO 332E",
@@ -966,24 +1259,46 @@
     {
      "course": {
       "code": "BIO 4902E",
-      "name": "Mol Bio & Genetics Design II"
+      "name": "Mol Bio & Genetics Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elect. Crse(ITB)",
+      "groupId": "8629",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1383,6 +1698,12 @@
     {
      "elective": {
       "title": "8th Sem. Tech. Elect. Crse(MT)",
+      "groupId": "8630",
+      "credits": "3",
+      "ects": [
+       6,
+       7
+      ],
       "options": [
        {
         "code": "BIO 332E",
@@ -1454,6 +1775,11 @@
     {
      "elective": {
       "title": "8th Semester Elect. Course-SNT",
+      "groupId": "8631",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",

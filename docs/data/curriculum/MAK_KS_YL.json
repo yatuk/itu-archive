@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Konstrüksiyon Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Konstrüksiyon Yüksek Lisans",
@@ -11,12 +13,21 @@
     {
      "course": {
       "code": "MKS YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Bilimsel Araş.,Etik ve Seminer",
+      "groupId": "12765",
+      "credits": "0",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MDK 596",
@@ -80,6 +91,11 @@
     {
      "elective": {
       "title": "Zorunlu Matematik Dersi",
+      "groupId": "12761",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MDK 501E",
@@ -115,6 +131,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "12762",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MKS 535",
@@ -134,6 +155,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "12763",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MKS 535",
@@ -153,6 +179,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "12764",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MKS 535",
@@ -172,6 +203,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "12757",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MTA 558",
@@ -183,6 +219,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "12758",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MTA 558",
@@ -194,6 +235,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "12759",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MTA 558",
@@ -205,6 +251,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "12760",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MTA 558",

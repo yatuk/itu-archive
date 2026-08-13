@@ -4,6 +4,8 @@
  "faculty": "Kimya - Metalurji Fakültesi",
  "level": "LS",
  "planLabel": "Gıda Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "133,00",
+ "totalEcts": "241,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,97 @@
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GID 113E",
-      "name": "Int.to Food Eng. and Ethics"
+      "name": "Int.to Food Eng. and Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -64,55 +114,110 @@
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 104",
-      "name": "Organik Kimya"
+      "name": "Organik Kimya",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 104L",
-      "name": "Organik Kimya Lab."
+      "name": "Organik Kimya Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -123,49 +228,99 @@
     {
      "course": {
       "code": "EKO 201",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GID 210E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GID 216E",
-      "name": "Mass and Energy Balances"
+      "name": "Mass and Energy Balances",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "RES 107",
-      "name": "Teknik Resim"
+      "name": "Teknik Resim",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GID 223E",
-      "name": "Food Chemistry"
+      "name": "Food Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -176,43 +331,84 @@
     {
      "course": {
       "code": "KIM 206",
-      "name": "Analitik Kimya & Enst Analizi"
+      "name": "Analitik Kimya & Enst Analizi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 206L",
-      "name": "Ana. Kimya & Enst Anz. Lab."
+      "name": "Ana. Kimya & Enst Anz. Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GID 204E",
-      "name": "Momentum Transfer"
+      "name": "Momentum Transfer",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GID 224",
-      "name": "Gıda Toksik.,Kontamin.&Katk."
+      "name": "Gıda Toksik.,Kontamin.&Katk.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 226E",
-      "name": "Microbiology"
+      "name": "Microbiology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 214",
-      "name": "Termodinamik"
+      "name": "Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -223,36 +419,72 @@
     {
      "course": {
       "code": "GID 331E",
-      "name": "Food Eng Unit Operations I"
+      "name": "Food Eng Unit Operations I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 311",
-      "name": "Gıda Mikrobiyolojisi I"
+      "name": "Gıda Mikrobiyolojisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 323",
-      "name": "Gıda Mikrobiyolojisi Lab"
+      "name": "Gıda Mikrobiyolojisi Lab",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "lab": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 341",
-      "name": "Isı Aktarımı"
+      "name": "Isı Aktarımı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GID 351",
-      "name": "Kütle Aktarımı"
+      "name": "Kütle Aktarımı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders I (TB)",
+      "groupId": "9012",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BIO 215",
@@ -280,6 +512,17 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders I (TM)",
+      "groupId": "9013",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       3.5,
+       4,
+       4.5,
+       5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "CEV 250",
@@ -332,36 +575,73 @@
     {
      "course": {
       "code": "GID 306E",
-      "name": "Food Plant Design & Economics"
+      "name": "Food Plant Design & Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 322",
-      "name": "Gıda Müh Temel İşlemler II"
+      "name": "Gıda Müh Temel İşlemler II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 332",
-      "name": "Gıda Mühendisliği Laboratuarı"
+      "name": "Gıda Mühendisliği Laboratuarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "lab": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 421E",
-      "name": "Food Technology"
+      "name": "Food Technology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 312E",
-      "name": "Food Microbiology II"
+      "name": "Food Microbiology II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (MT)",
+      "groupId": "9011",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "GID 337E",
@@ -450,30 +730,60 @@
     {
      "course": {
       "code": "GID 4901E",
-      "name": "Food Engineering Design I"
+      "name": "Food Engineering Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 433",
-      "name": "Gıda Kalite Kontrol Lab"
+      "name": "Gıda Kalite Kontrol Lab",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "lab": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 409",
-      "name": "Proses Kontrol"
+      "name": "Proses Kontrol",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GID 424",
-      "name": "Gıda Kalite Kontrol"
+      "name": "Gıda Kalite Kontrol",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (ITB)",
+      "groupId": "9009",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1033,6 +1343,13 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "9010",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "GID 337E",
@@ -1117,24 +1434,49 @@
     {
      "course": {
       "code": "GID 4902",
-      "name": "Gıda Mühendisliği Tasarımı II"
+      "name": "Gıda Mühendisliği Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 408E",
-      "name": "Statistical Methods"
+      "name": "Statistical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GID 450",
-      "name": "Gıda Müh. Özel Konular"
+      "name": "Gıda Müh. Özel Konular",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (ITB)",
+      "groupId": "9007",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1834,6 +2176,13 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "9008",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "GID 337E",

@@ -4,6 +4,8 @@
  "faculty": "Maden Fakültesi",
  "level": "LS",
  "planLabel": "Jeoloji Mühendisliği Lisans Programı (%100 İngilizce) 2011-2012 / Güz Dönemi Sonrası",
+ "totalCredits": "153,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,48 +13,98 @@
     {
      "course": {
       "code": "JEO 131E",
-      "name": "Introduction to Geological Engineering"
+      "name": "Introduction to Geological Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 111E",
-      "name": "Crystallography"
+      "name": "Crystallography",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 101E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6.5,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "STA 201E",
-      "name": "Statics"
+      "name": "Statics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEO 121E",
-      "name": "Design in Earth Sciences"
+      "name": "Design in Earth Sciences",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "4218",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -73,48 +125,99 @@
     {
      "course": {
       "code": "JEO 114E",
-      "name": "General Geology"
+      "name": "General Geology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 6.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 102E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 7,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "4222",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -179,43 +282,88 @@
     {
      "course": {
       "code": "MAT 201E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "JEO 223E",
-      "name": "Paleontology"
+      "name": "Paleontology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAL 201E",
-      "name": "Materials Science"
+      "name": "Materials Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEO 211E",
-      "name": "Mineralogy"
+      "name": "Mineralogy",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUK 203E",
-      "name": "Strength of Materials I"
+      "name": "Strength of Materials I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIL 108E",
-      "name": "Intr. to Sci. & Eng.Computing"
+      "name": "Intr. to Sci. & Eng.Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     }
    ]
@@ -226,42 +374,91 @@
     {
      "course": {
       "code": "JEO 272E",
-      "name": "Thermodynamics in Geology"
+      "name": "Thermodynamics in Geology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEO 222E",
-      "name": "Geomechanics"
+      "name": "Geomechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEO 242E",
-      "name": "Optical Mineralogy"
+      "name": "Optical Mineralogy",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 262E",
-      "name": "Stratigraphy"
+      "name": "Stratigraphy",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 256E",
-      "name": "Structural Geology"
+      "name": "Structural Geology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAD 312E",
-      "name": "Surveying"
+      "name": "Surveying",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4th Smstr Elective Course (TB)",
+      "groupId": "4224",
+      "credits": "3",
+      "ects": [
+       2,
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 201E",
@@ -358,30 +555,63 @@
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "JEF 341E",
-      "name": "Geophysics"
+      "name": "Geophysics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEO 349E",
-      "name": "Magm.&Metamor.Rokcs Petrog."
+      "name": "Magm.&Metamor.Rokcs Petrog.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "5th Smstr Elective Course (TM)",
+      "groupId": "4226",
+      "credits": "3",
+      "ects": [
+       3,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "DNK 201E",
@@ -413,19 +643,40 @@
     {
      "course": {
       "code": "JEO 323E",
-      "name": "Geochemistry"
+      "name": "Geochemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEO 348E",
-      "name": "Sedimentary Rocks Petrography"
+      "name": "Sedimentary Rocks Petrography",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 343E",
-      "name": "Drilling Techniques"
+      "name": "Drilling Techniques",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     }
    ]
@@ -436,30 +687,61 @@
     {
      "course": {
       "code": "JEO 322E",
-      "name": "Hydrogeology"
+      "name": "Hydrogeology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 4,
+      "theory": 3,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "JEO 312E",
-      "name": "Field Geology"
+      "name": "Field Geology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6th Smstr Elective Course(ITB)",
+      "groupId": "4229",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -539,6 +821,11 @@
     {
      "elective": {
       "title": "6th smstr Elective Course (MT)",
+      "groupId": "4230",
+      "credits": "3",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "JEO 326E",
@@ -562,7 +849,14 @@
     {
      "course": {
       "code": "JEO 341E",
-      "name": "Sedimentology"
+      "name": "Sedimentology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     }
    ]
@@ -573,24 +867,49 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "JEO 431E",
-      "name": "Engineering Geology"
+      "name": "Engineering Geology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 3,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 411E",
-      "name": "Tectonics"
+      "name": "Tectonics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 6,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Smstr Elective Course(ITB)",
+      "groupId": "4234",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -786,6 +1105,12 @@
     {
      "elective": {
       "title": "7th Smstr Elective Crse I (MT)",
+      "groupId": "4235",
+      "credits": "3",
+      "ects": [
+       3,
+       4
+      ],
       "options": [
        {
         "code": "JEO 316E",
@@ -849,6 +1174,12 @@
     {
      "elective": {
       "title": "7th Smstr Elective Crse II(MT)",
+      "groupId": "4236",
+      "credits": "3",
+      "ects": [
+       3,
+       4
+      ],
       "options": [
        {
         "code": "JEO 316E",
@@ -912,7 +1243,14 @@
     {
      "course": {
       "code": "JEO 339E",
-      "name": "Ore Deposits"
+      "name": "Ore Deposits",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     }
    ]
@@ -923,30 +1261,61 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "JEO 492E",
-      "name": "Graduation Design Project"
+      "name": "Graduation Design Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 10,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 412E",
-      "name": "Industrial Materials"
+      "name": "Industrial Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ETK 101E",
-      "name": "Engineering Ethics"
+      "name": "Engineering Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8th Smstr Elective Course (MT)",
+      "groupId": "4239",
+      "credits": "3",
+      "ects": [
+       3,
+       4,
+       5
+      ],
       "options": [
        {
         "code": "JEO 418E",
@@ -970,6 +1339,11 @@
     {
      "elective": {
       "title": "8th Smstr Elective Course(ITB)",
+      "groupId": "4240",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -1165,7 +1539,14 @@
     {
      "course": {
       "code": "JEO 347E",
-      "name": "Applied Rock Mechanics"
+      "name": "Applied Rock Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 7,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     }
    ]

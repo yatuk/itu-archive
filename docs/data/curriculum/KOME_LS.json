@@ -4,6 +4,8 @@
  "faculty": "Elektrik - Elektronik Fakültesi",
  "level": "LS",
  "planLabel": "Kontrol ve Otomasyon Mühendisliği Lisans Programı (%100 İngilizce) 2025-2026 / Güz Dönemi Sonrası",
+ "totalCredits": "133,00",
+ "totalEcts": "245,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,85 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KON 103E",
-      "name": "Intr.toCont.& Auto.Eng.&Ethics"
+      "name": "Intr.toCont.& Auto.Eng.&Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,54 +102,108 @@
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 110E",
-      "name": "Intr. to Prog. Language (C)"
+      "name": "Intr. to Prog. Language (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "EEF 281E",
-      "name": "Linear Algebra & Applications"
+      "name": "Linear Algebra & Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "2th Semester Elective Course (SNT)",
+      "groupId": "13008",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101E",
@@ -210,36 +308,74 @@
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "EEF 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 211E",
-      "name": "Basics of Electrical Circuits"
+      "name": "Basics of Electrical Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 210E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 205E",
-      "name": "Introduction to Logic Design"
+      "name": "Introduction to Logic Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "3rd Semester Elective Course I (TB)",
+      "groupId": "12989",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -279,6 +415,14 @@
     {
      "elective": {
       "title": "3rd Semester Elective Course I (TM)",
+      "groupId": "12990",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "DNK 201E",
@@ -319,30 +463,61 @@
     {
      "course": {
       "code": "KON 301E",
-      "name": "System Modelling&Simulation"
+      "name": "System Modelling&Simulation",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EHB 222E",
-      "name": "Introduction to Electronics"
+      "name": "Introduction to Electronics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 232E",
-      "name": "Circuit and System Analysis"
+      "name": "Circuit and System Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 206E",
-      "name": "Signal Processing&Linear Syst."
+      "name": "Signal Processing&Linear Syst.",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4. Semester Compulsory Elective Course(TM)",
+      "groupId": "13009",
+      "credits": "3 / 4",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "EEF 212E",
@@ -367,24 +542,49 @@
     {
      "course": {
       "code": "KON 303E",
-      "name": "Measurement and Instrumentation"
+      "name": "Measurement and Instrumentation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KON 319E",
-      "name": "Analysis of Control Systems"
+      "name": "Analysis of Control Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KON 325E",
-      "name": "Industrial Automation Systems"
+      "name": "Industrial Automation Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5th Semester Compulsory Elective Course I (MT)",
+      "groupId": "13010",
+      "credits": "1",
+      "ects": [
+       3.5,
+       4.5
+      ],
       "options": [
        {
         "code": "KON 307E",
@@ -400,6 +600,11 @@
     {
      "elective": {
       "title": "5th Semester Compulsory Elective Course II (MT)",
+      "groupId": "13011",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "KON 309E",
@@ -419,6 +624,13 @@
     {
      "elective": {
       "title": "5th Semester Elective Course III (MT)",
+      "groupId": "12992",
+      "credits": "2,5 / 3",
+      "ects": [
+       4.5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "EHB 354E",
@@ -446,6 +658,13 @@
     {
      "elective": {
       "title": "5th Semester Elective Course IV (MT)",
+      "groupId": "13012",
+      "credits": "2,5 / 3",
+      "ects": [
+       4.5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "EHB 354E",
@@ -478,24 +697,48 @@
     {
      "course": {
       "code": "KON 314E",
-      "name": "Control System Design"
+      "name": "Control System Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KON 304E",
-      "name": "Measurement and Instrumentation Laboratory"
+      "name": "Measurement and Instrumentation Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KON 405E",
-      "name": "State Space Meth.in Contr.Syst"
+      "name": "State Space Meth.in Contr.Syst",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6th Semester Elective Course I (MT)",
+      "groupId": "12993",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "EHB 334E",
@@ -543,6 +786,11 @@
     {
      "elective": {
       "title": "6th Semester Compulsory Elective CourseII (MT)",
+      "groupId": "12994",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "KON 414E",
@@ -570,6 +818,11 @@
     {
      "elective": {
       "title": "6th Semester Compulsory Elective Course III",
+      "groupId": "12995",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "KON 414E",
@@ -602,24 +855,52 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KON 403E",
-      "name": "Control Laboratory"
+      "name": "Control Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 5,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KON 4901E",
-      "name": "Contr.&Automation Eng.Design I"
+      "name": "Contr.&Automation Eng.Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Course I (MT)",
+      "groupId": "12996",
+      "credits": "2 / 2,5 / 3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "EHB 326E",
@@ -727,6 +1008,16 @@
     {
      "elective": {
       "title": "7th Semester Elective Course II (MT)",
+      "groupId": "12997",
+      "credits": "2 / 2,5 / 3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "EHB 326E",
@@ -830,6 +1121,16 @@
     {
      "elective": {
       "title": "7th Semester Elective Course III (MT)",
+      "groupId": "13013",
+      "credits": "2 / 2,5 / 3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "EHB 326E",
@@ -933,6 +1234,11 @@
     {
      "elective": {
       "title": "7th Semester Elective Course (ITB)",
+      "groupId": "12998",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1417,18 +1723,35 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KON 4902E",
-      "name": "Contr.&Automation Eng.DesignII"
+      "name": "Contr.&Automation Eng.DesignII",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Semester Restricted Elective Course (ITB)",
+      "groupId": "12999",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BLG 448E",
@@ -1448,6 +1771,13 @@
     {
      "elective": {
       "title": "8th Semester Elective Course I (MT)",
+      "groupId": "13000",
+      "credits": "3",
+      "ects": [
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "EHB 419E",
@@ -1531,6 +1861,11 @@
     {
      "elective": {
       "title": "8th Semester Elective Course II (MT)",
+      "groupId": "13001",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "EHB 419E",

@@ -4,6 +4,8 @@
  "faculty": "Kimya - Metalurji Fakültesi",
  "level": "LS",
  "planLabel": "Metalurji ve Malzeme Mühendisliği Lisans Programı (%100 İngilizce) 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "131,00",
+ "totalEcts": "240,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,55 +13,110 @@
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MET 101E",
-      "name": "Int.toMet.&Mat.Engn.&Eng.Ethic"
+      "name": "Int.toMet.&Mat.Engn.&Eng.Ethic",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -70,61 +127,122 @@
     {
      "course": {
       "code": "KIM 203E",
-      "name": "Analytical Chemistry"
+      "name": "Analytical Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "RES 107E",
-      "name": "Technical Drawing"
+      "name": "Technical Drawing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -135,31 +253,64 @@
     {
      "course": {
       "code": "MET 220E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MET 213E",
-      "name": "Fund.of Materials Science"
+      "name": "Fund.of Materials Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 215E",
-      "name": "Fund.of Metall.Thermodynamics"
+      "name": "Fund.of Metall.Thermodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     }
    ]
@@ -170,43 +321,88 @@
     {
      "course": {
       "code": "MET 214E",
-      "name": "Fund. of Sol. Thermodynamics"
+      "name": "Fund. of Sol. Thermodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MET 224E",
-      "name": "Phase Equilibrium Diagrams"
+      "name": "Phase Equilibrium Diagrams",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 252E",
-      "name": "Sta and Dyn. Strng ofMaterials"
+      "name": "Sta and Dyn. Strng ofMaterials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MET 246E",
-      "name": "Materials Physics"
+      "name": "Materials Physics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 228E",
-      "name": "Materials Chemistry"
+      "name": "Materials Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 248E",
-      "name": "Mass & Energy Balance"
+      "name": "Mass & Energy Balance",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     }
    ]
@@ -217,49 +413,101 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MET 313E",
-      "name": "Chemical Metallugry I"
+      "name": "Chemical Metallugry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 315E",
-      "name": "Fund. of Physical Metallurgy"
+      "name": "Fund. of Physical Metallurgy",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 317E",
-      "name": "Fund. of Transport Phenomena"
+      "name": "Fund. of Transport Phenomena",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 335E",
-      "name": "Elect.,Magn.,Optic.Prop.ofMat."
+      "name": "Elect.,Magn.,Optic.Prop.ofMat.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 337E",
-      "name": "Materials Characteriz. Meth."
+      "name": "Materials Characteriz. Meth.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 339E",
-      "name": "Materials Characterization Lab"
+      "name": "Materials Characterization Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 353E",
-      "name": "Dsn.Prnc.&Mat.Sel for Eng.App."
+      "name": "Dsn.Prnc.&Mat.Sel for Eng.App.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     }
    ]
@@ -270,42 +518,85 @@
     {
      "course": {
       "code": "MET 326E",
-      "name": "Chemical Metallurgy II"
+      "name": "Chemical Metallurgy II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 328E",
-      "name": "Introduction to Biomaterials"
+      "name": "Introduction to Biomaterials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 344E",
-      "name": "Mech. Properties of Materials"
+      "name": "Mech. Properties of Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 346E",
-      "name": "Mod.&Sim.of Met.&Mat.Process"
+      "name": "Mod.&Sim.of Met.&Mat.Process",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 348E",
-      "name": "Quality Engineering"
+      "name": "Quality Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 364E",
-      "name": "Extractive Metallurgy Lab."
+      "name": "Extractive Metallurgy Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6th Semester Elective Course I (MT)",
+      "groupId": "9030",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       6
+      ],
       "options": [
        {
         "code": "ELK 336E",
@@ -341,6 +632,12 @@
     {
      "elective": {
       "title": "6th Semester Elective Course II (MT)",
+      "groupId": "9031",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       6
+      ],
       "options": [
        {
         "code": "ELK 336E",
@@ -376,6 +673,11 @@
     {
      "elective": {
       "title": "6th Semester Elective Course III (ITB)",
+      "groupId": "9032",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -780,42 +1082,87 @@
     {
      "course": {
       "code": "MET 4901E",
-      "name": "Met. & Mat. Engn. Design I"
+      "name": "Met. & Mat. Engn. Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 437E",
-      "name": "Princip.of Corros.&Corros.Prot"
+      "name": "Princip.of Corros.&Corros.Prot",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 439E",
-      "name": "Engineering Polymers"
+      "name": "Engineering Polymers",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 453E",
-      "name": "Fund. of Ceramics Materials"
+      "name": "Fund. of Ceramics Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 455E",
-      "name": "Materials Processing Lab."
+      "name": "Materials Processing Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 435E",
-      "name": "PST Desg.&Prj.Mng. and Innov."
+      "name": "PST Desg.&Prj.Mng. and Innov.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Course I (MT)",
+      "groupId": "9033",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "MET 445E",
@@ -867,6 +1214,11 @@
     {
      "elective": {
       "title": "7th Semester Elective Course II (SNT)",
+      "groupId": "9034",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -951,30 +1303,61 @@
     {
      "course": {
       "code": "MET 4902E",
-      "name": "Met. & Mat. Engn. Design II"
+      "name": "Met. & Mat. Engn. Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 442E",
-      "name": "Fund. of Composite Materials"
+      "name": "Fund. of Composite Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 444E",
-      "name": "Iron&Steel Mat.in Eng. App"
+      "name": "Iron&Steel Mat.in Eng. App",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MET 446E",
-      "name": "Envir.&Ethc.inMet.&Mat.Proces"
+      "name": "Envir.&Ethc.inMet.&Mat.Proces",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elective Course I (MT)",
+      "groupId": "9036",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       6
+      ],
       "options": [
        {
         "code": "MET 462E",
@@ -1006,6 +1389,12 @@
     {
      "elective": {
       "title": "8th Semester Elective Course II (MT)",
+      "groupId": "9037",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       6
+      ],
       "options": [
        {
         "code": "MET 462E",

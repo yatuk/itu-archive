@@ -4,6 +4,8 @@
  "faculty": "Elektrik - Elektronik Fakültesi",
  "level": "LS",
  "planLabel": "Elektrik Mühendisliği Lisans Programı (%100 İngilizce) 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "134,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,85 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ELK 101E",
-      "name": "Intr.to Electr. Eng.&Eng.Eth."
+      "name": "Intr.to Electr. Eng.&Eng.Eth.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,49 +102,98 @@
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 110E",
-      "name": "Intr. to Prog. Language (C)"
+      "name": "Intr. to Prog. Language (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "EEF 281E",
-      "name": "Linear Algebra & Applications"
+      "name": "Linear Algebra & Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     }
    ]
@@ -111,36 +204,74 @@
     {
      "course": {
       "code": "EEF 210E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 211E",
-      "name": "Basics of Electrical Circuits"
+      "name": "Basics of Electrical Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "EEF 205E",
-      "name": "Introduction to Logic Design"
+      "name": "Introduction to Logic Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "3rd Sems.Elect. Course (TM)",
+      "groupId": "8538",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5
+      ],
       "options": [
        {
         "code": "DNK 201E",
@@ -168,6 +299,13 @@
     {
      "elective": {
       "title": "3rd Sems.Elect. Course (TB)",
+      "groupId": "8539",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -216,36 +354,72 @@
     {
      "course": {
       "code": "EEF 232E",
-      "name": "Circuit and System Analysis"
+      "name": "Circuit and System Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 212E",
-      "name": "Electromagnetic Theory I"
+      "name": "Electromagnetic Theory I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 262E",
-      "name": "Fundamentals of Electronics"
+      "name": "Fundamentals of Electronics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 206E",
-      "name": "Signal Processing&Linear Syst."
+      "name": "Signal Processing&Linear Syst.",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 221E",
-      "name": "Basics of Elec. Circuits Lab."
+      "name": "Basics of Elec. Circuits Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4th Sems.Elect. Course (TM)",
+      "groupId": "8540",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 368E",
@@ -286,30 +460,61 @@
     {
      "course": {
       "code": "ELK 307E",
-      "name": "Illumination Techniques"
+      "name": "Illumination Techniques",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 343E",
-      "name": "Electromech. Energy Conversion"
+      "name": "Electromech. Energy Conversion",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 331E",
-      "name": "Power Electronic Circuits"
+      "name": "Power Electronic Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KON 313E",
-      "name": "Feedback Control Systems"
+      "name": "Feedback Control Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Course I (MT)",
+      "groupId": "8869",
+      "credits": "3",
+      "ects": [
+       6,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212E",
@@ -345,6 +550,11 @@
     {
      "elective": {
       "title": "5th Semester Elective Course I (ITB)",
+      "groupId": "8870",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EKO 201E",
@@ -365,36 +575,70 @@
     {
      "course": {
       "code": "ELK 356E",
-      "name": "Electrical Machines"
+      "name": "Electrical Machines",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 342E",
-      "name": "Power Electronics Laboratory"
+      "name": "Power Electronics Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 322E",
-      "name": "Power Transmission Systems"
+      "name": "Power Transmission Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 312E",
-      "name": "High Voltage Technique"
+      "name": "High Voltage Technique",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6th Semester Elective Course I (ITB)",
+      "groupId": "8871",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -874,6 +1118,11 @@
     {
      "elective": {
       "title": "6th Semester Elective Course II (MT)",
+      "groupId": "8872",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "ELK 308E",
@@ -914,36 +1163,72 @@
     {
      "course": {
       "code": "ELK 421E",
-      "name": "Generat. of Electrical Energy"
+      "name": "Generat. of Electrical Energy",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 431E",
-      "name": "Electrical Machines Lab."
+      "name": "Electrical Machines Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 405E",
-      "name": "High Voltage Lab."
+      "name": "High Voltage Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 4901E",
-      "name": "Electrical Eng. Design I"
+      "name": "Electrical Eng. Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Course I (MT)",
+      "groupId": "8873",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "ELK 334E",
@@ -991,6 +1276,12 @@
     {
      "elective": {
       "title": "7th Semester Elective Course II (MT)",
+      "groupId": "8876",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "ELK 334E",
@@ -1039,24 +1330,49 @@
     {
      "course": {
       "code": "ELK 4902E",
-      "name": "Electrical Eng. Design II"
+      "name": "Electrical Eng. Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 406E",
-      "name": "Distribution of Electr. Energy"
+      "name": "Distribution of Electr. Energy",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 420E",
-      "name": "Electr. Distrib. Autom. Lab."
+      "name": "Electr. Distrib. Autom. Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elective Course I (MT)",
+      "groupId": "8875",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "ELK 428E",
@@ -1100,6 +1416,12 @@
     {
      "elective": {
       "title": "8th Semester Elective Course II (MT)",
+      "groupId": "8877",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "ELK 428E",
@@ -1143,6 +1465,11 @@
     {
      "elective": {
       "title": "8th Semester Elective Course III (MT-Project)",
+      "groupId": "8878",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "ELK 458E",

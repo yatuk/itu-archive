@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Açık Deniz Mühendisliği (%100 İngilizce) Yüksek Lisans Programı 2025-2026 Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Açık Deniz Mühendisliği (İngilizce) Yüksek Lisans",
@@ -11,12 +13,21 @@
     {
      "course": {
       "code": "ADM YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Scien.Rese., Ethic&Seminar",
+      "groupId": "12667",
+      "credits": "0",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ADM 596E",
@@ -32,6 +43,11 @@
     {
      "elective": {
       "title": "Zorunlu Matematik",
+      "groupId": "12659",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "DUM 501E",
@@ -91,6 +107,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "12660",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ADM 501E",
@@ -122,6 +143,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "12661",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ADM 501E",
@@ -153,6 +179,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "12662",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ADM 501E",
@@ -184,6 +215,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "12663",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ADM 503E",
@@ -267,6 +303,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "12664",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ADM 503E",
@@ -350,6 +391,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "12665",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ADM 503E",
@@ -433,6 +479,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "12666",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ADM 503E",

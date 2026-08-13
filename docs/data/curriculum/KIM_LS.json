@@ -4,6 +4,8 @@
  "faculty": "Fen - Edebiyat Fakültesi",
  "level": "LS",
  "planLabel": "Kimya Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "128,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,86 @@
     {
      "course": {
       "code": "KIM 111",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 111L",
-      "name": "Genel Kimya I Lab"
+      "name": "Genel Kimya I Lab",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 113",
-      "name": "Kimyaya Giriş ve Etik"
+      "name": "Kimyaya Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,49 +103,99 @@
     {
      "course": {
       "code": "KIM 114",
-      "name": "Genel Kimya II"
+      "name": "Genel Kimya II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 114L",
-      "name": "Genel Kimya II Lab."
+      "name": "Genel Kimya II Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3.5,
+      "lab": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -111,37 +206,73 @@
     {
      "course": {
       "code": "KIM 211E",
-      "name": "Analytical Chemistry"
+      "name": "Analytical Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 271",
-      "name": "Kimyacılar için Matematik"
+      "name": "Kimyacılar için Matematik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 211L",
-      "name": "Analitik Kimya Lab"
+      "name": "Analitik Kimya Lab",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "lab": 5,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KIM 223",
-      "name": "Anorganik Kimya I"
+      "name": "Anorganik Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -152,37 +283,72 @@
     {
      "course": {
       "code": "KIM 252",
-      "name": "Kimyasal Termodinamik"
+      "name": "Kimyasal Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 224E",
-      "name": "Inorganic Chemistry II"
+      "name": "Inorganic Chemistry II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 223L",
-      "name": "Anorganik Kimya Lab."
+      "name": "Anorganik Kimya Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "lab": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 262E",
-      "name": "Int. Quantum Chemistry"
+      "name": "Int. Quantum Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 231",
-      "name": "Organik Kimya I"
+      "name": "Organik Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -193,42 +359,81 @@
     {
      "course": {
       "code": "KIM 311",
-      "name": "Fiziksel Kimya I"
+      "name": "Fiziksel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 231L",
-      "name": "Organik Kimya Lab. I"
+      "name": "Organik Kimya Lab. I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "lab": 5,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 232",
-      "name": "Organik Kimya II"
+      "name": "Organik Kimya II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KIM 326E",
-      "name": "Introduction to Biochemistry"
+      "name": "Introduction to Biochemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Course (ITB)",
+      "groupId": "8811",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -657,36 +862,73 @@
     {
      "course": {
       "code": "KIM 232L",
-      "name": "Organik Kimya Lab. II"
+      "name": "Organik Kimya Lab. II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "lab": 5,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 212",
-      "name": "Enstrumental Analitik Yönteml"
+      "name": "Enstrumental Analitik Yönteml",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 312",
-      "name": "Fiziksel Kimya II"
+      "name": "Fiziksel Kimya II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 311L",
-      "name": "Fiziksel Kimya Lab. I"
+      "name": "Fiziksel Kimya Lab. I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "lab": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 212L",
-      "name": "Enstrumental Analitik Yön.Lab."
+      "name": "Enstrumental Analitik Yön.Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "lab": 5,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (MT)",
+      "groupId": "8812",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "KIM 210",
@@ -827,18 +1069,36 @@
     {
      "course": {
       "code": "KIM 4901",
-      "name": "Araştırma Projesi I"
+      "name": "Araştırma Projesi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 312L",
-      "name": "Fiziksel Kimya Lab. II"
+      "name": "Fiziksel Kimya Lab. II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "lab": 4,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "7.yy Sınırlı Seçimli Ders I (MT)",
+      "groupId": "8813",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "KIM 422",
@@ -878,6 +1138,11 @@
     {
      "elective": {
       "title": "7.yy Sınırlı Seçimli Ders II (MT)",
+      "groupId": "8814",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "KIM 422",
@@ -917,6 +1182,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (SNT)",
+      "groupId": "8815",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -1065,12 +1335,26 @@
     {
      "course": {
       "code": "KIM 4902",
-      "name": "Araştırma Projesi II"
+      "name": "Araştırma Projesi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8816",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "KIM 210",
@@ -1206,6 +1490,14 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8817",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "KIM 210",
@@ -1345,6 +1637,11 @@
     {
      "elective": {
       "title": "8.yy Sınırlı Seçimli Ders I (MT)",
+      "groupId": "8818",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "KIM 481",
@@ -1384,6 +1681,11 @@
     {
      "elective": {
       "title": "8.yy Sınırlı Seçimli Ders II (MT)",
+      "groupId": "8819",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "KIM 481",

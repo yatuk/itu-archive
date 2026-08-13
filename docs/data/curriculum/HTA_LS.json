@@ -4,6 +4,8 @@
  "faculty": "İnşaat Fakültesi",
  "level": "LS",
  "planLabel": "Harita Mühendisliği Lisans Programı 2024-2025 / Güz Dönemi Sonrası",
+ "totalCredits": "132,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,101 @@
     {
      "course": {
       "code": "GEO 101E",
-      "name": "Intro. to Info. Technologies"
+      "name": "Intro. to Info. Technologies",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 103",
-      "name": "Temel Ölçme Bilgisi"
+      "name": "Temel Ölçme Bilgisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 109",
-      "name": "Analitik Geometri&Vektör Hesab"
+      "name": "Analitik Geometri&Vektör Hesab",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 111",
-      "name": "Geomatik Müh. Giriş ve Etik"
+      "name": "Geomatik Müh. Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -64,43 +118,88 @@
     {
      "course": {
       "code": "GEO 108E",
-      "name": "Fundamentals of Programming"
+      "name": "Fundamentals of Programming",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 114",
-      "name": "Yersel Ölçme Don. Ve Yaz."
+      "name": "Yersel Ölçme Don. Ve Yaz.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -111,49 +210,102 @@
     {
      "course": {
       "code": "GEO 201",
-      "name": "Kartografya I"
+      "name": "Kartografya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 209",
-      "name": "Taşınmaz Hukuku"
+      "name": "Taşınmaz Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GEO 213",
-      "name": "Konum Bel. Yönt. ve Sist."
+      "name": "Konum Bel. Yönt. ve Sist.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 220",
-      "name": "Geomatik Müh.İçin Müh. Mat."
+      "name": "Geomatik Müh.İçin Müh. Mat.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 221E",
-      "name": "Num. Meth. for Geomatics Eng."
+      "name": "Num. Meth. for Geomatics Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 225E",
-      "name": "Prob.and Stat. for Geom. Eng."
+      "name": "Prob.and Stat. for Geom. Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 227",
-      "name": "İş Hukuku,İşçi Sağl.&İş Güv."
+      "name": "İş Hukuku,İşçi Sağl.&İş Güv.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -164,49 +316,103 @@
     {
      "course": {
       "code": "GEO 204",
-      "name": "Hata Teo ve Dengeleme"
+      "name": "Hata Teo ve Dengeleme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 208",
-      "name": "Uzaktan Algılama I"
+      "name": "Uzaktan Algılama I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 210",
-      "name": "Yükseklik Ölçmeleri"
+      "name": "Yükseklik Ölçmeleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 212",
-      "name": "Mühendislik Ölçmeleri"
+      "name": "Mühendislik Ölçmeleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 216",
-      "name": "Bilgisayar Dest. Harita Tas."
+      "name": "Bilgisayar Dest. Harita Tas.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 292",
-      "name": "Geomatik Projesi 10"
+      "name": "Geomatik Projesi 10",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 10,
+      "theory": 3,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 325E",
-      "name": "Databases in Engineering"
+      "name": "Databases in Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 327",
-      "name": "Arazi Modelleme"
+      "name": "Arazi Modelleme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     }
    ]
@@ -217,49 +423,101 @@
     {
      "course": {
       "code": "GEO 203",
-      "name": "Koord. Sist. Ve Jeodezi I"
+      "name": "Koord. Sist. Ve Jeodezi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 303",
-      "name": "Kadastro Bilgisi"
+      "name": "Kadastro Bilgisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 307",
-      "name": "Kartografya II"
+      "name": "Kartografya II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 309",
-      "name": "Fotogrametri I"
+      "name": "Fotogrametri I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 311",
-      "name": "Jeodezik Altyapı ve Ağlar"
+      "name": "Jeodezik Altyapı ve Ağlar",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 313E",
-      "name": "Digital Image Processing"
+      "name": "Digital Image Processing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 315E",
-      "name": "Fund. of Geographic Inf. Sys."
+      "name": "Fund. of Geographic Inf. Sys.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 321",
-      "name": "Özel Ölçme Uygulamaları"
+      "name": "Özel Ölçme Uygulamaları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     }
    ]
@@ -270,48 +528,101 @@
     {
      "course": {
       "code": "GEO 306",
-      "name": "Fotogrametri II"
+      "name": "Fotogrametri II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 308",
-      "name": "Taşınmaz Değerlemesi"
+      "name": "Taşınmaz Değerlemesi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 310",
-      "name": "Uzaktan Algılama II"
+      "name": "Uzaktan Algılama II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 312E",
-      "name": "Spatial Analy. and Alg.in GIS"
+      "name": "Spatial Analy. and Alg.in GIS",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 314",
-      "name": "Jeodezi-II ve Projeksiyonlar"
+      "name": "Jeodezi-II ve Projeksiyonlar",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 322",
-      "name": "Arazi Yönetimi"
+      "name": "Arazi Yönetimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 392",
-      "name": "Geomatik Projesi 20"
+      "name": "Geomatik Projesi 20",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 10,
+      "theory": 3,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı I GE (ITB)",
+      "groupId": "11667",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1016,36 +1327,71 @@
     {
      "course": {
       "code": "GEO 401",
-      "name": "Fiziksel Jeodezi"
+      "name": "Fiziksel Jeodezi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 403",
-      "name": "CBS Projeleri"
+      "name": "CBS Projeleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 4901",
-      "name": "Geomatik Müh. Tasarımı I"
+      "name": "Geomatik Müh. Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 1,
+      "lab": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III (MT)",
+      "groupId": "11668",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 411",
@@ -1165,6 +1511,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı I (TM)",
+      "groupId": "11669",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 456",
@@ -1184,6 +1535,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı II (TB)",
+      "groupId": "11670",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 413",
@@ -1212,24 +1568,46 @@
     {
      "course": {
       "code": "GEO 4902",
-      "name": "Geomatik Müh. Tasarımı II"
+      "name": "Geomatik Müh. Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "lab": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders MT IV",
+      "groupId": "11671",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 411",
@@ -1349,6 +1727,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders MT V",
+      "groupId": "11672",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 411",
@@ -1468,6 +1851,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders MT VI",
+      "groupId": "11673",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 411",

@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Bilim, Teknoloji ve Toplum Yüksek Lisans Programı",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Bilim, Teknoloji ve Toplum Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "BTT YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "BTT 596E BTT 596",
-      "name": "Scien.Rese., Ethic&Seminar"
+      "name": "Scien.Rese., Ethic&Seminar",
+      "language": "English / Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "776",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BTT 501E",
@@ -46,6 +62,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "777",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BTT 501E",
@@ -73,6 +94,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "778",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BTT 501E",
@@ -96,6 +122,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "779",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BTT 501E",
@@ -119,6 +150,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "772",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BTT 501E",
@@ -186,6 +222,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "773",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BTT 501E",
@@ -253,6 +294,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "774",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BTT 501E",
@@ -320,6 +366,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "775",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BTT 501E",

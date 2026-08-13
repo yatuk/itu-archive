@@ -4,6 +4,8 @@
  "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
  "level": "LS",
  "planLabel": "Uzay Mühendisliği Lisans Programı 2009-2010 / Güz Dönemi Sonrası",
+ "totalCredits": "153,00",
+ "totalEcts": "223,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,48 +13,97 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101L",
-      "name": "Genel Kimya I Laboratuvarı"
+      "name": "Genel Kimya I Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "UZB 111",
-      "name": "Uzay Müh. Giriş ve Etik"
+      "name": "Uzay Müh. Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "7665",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -73,48 +124,99 @@
     {
      "course": {
       "code": "UZB 112",
-      "name": "Bilgisayarla Teknik Resim"
+      "name": "Bilgisayarla Teknik Resim",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "STA 201",
-      "name": "Statik"
+      "name": "Statik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 261",
-      "name": "Lineer Cebir"
+      "name": "Lineer Cebir",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 104E",
-      "name": "Intr. to Programming in C"
+      "name": "Intr. to Programming in C",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "7673",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -179,37 +281,73 @@
     {
      "course": {
       "code": "MAT 201",
-      "name": "Diferansiyel Denklemler"
+      "name": "Diferansiyel Denklemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DNK 201",
-      "name": "Dinamik"
+      "name": "Dinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAL 201",
-      "name": "Malzeme Bilimi"
+      "name": "Malzeme Bilimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MUK 203",
-      "name": "Mukavemet I"
+      "name": "Mukavemet I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ELK 221",
-      "name": "Elektrik Mühen. Temelleri"
+      "name": "Elektrik Mühen. Temelleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -220,36 +358,74 @@
     {
      "course": {
       "code": "MUK 204",
-      "name": "Mukavemet II"
+      "name": "Mukavemet II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UCK 212",
-      "name": "Termodinamik"
+      "name": "Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "AKM 205",
-      "name": "Akışkanlar Mekaniği"
+      "name": "Akışkanlar Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4.yy Seçime Bağlı Ders(TB)",
+      "groupId": "7678",
+      "credits": "3",
+      "ects": [
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "FIZ 201",
@@ -277,7 +453,13 @@
     {
      "course": {
       "code": "MAT 202E",
-      "name": "Numerical Methods"
+      "name": "Numerical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     }
    ]
@@ -288,30 +470,61 @@
     {
      "course": {
       "code": "UCK 351",
-      "name": "Aerodinamik"
+      "name": "Aerodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 4.5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UCK 361E",
-      "name": "Design of Machine Elements"
+      "name": "Design of Machine Elements",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 331",
-      "name": "Hava Uzay Yapıları"
+      "name": "Hava Uzay Yapıları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 341",
-      "name": "Ölçme Tekniği"
+      "name": "Ölçme Tekniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders(ITB)",
+      "groupId": "7682",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "END 339",
@@ -467,6 +680,13 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders(TB)",
+      "groupId": "7683",
+      "credits": "3",
+      "ects": [
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "FIZ 201",
@@ -494,7 +714,13 @@
     {
      "course": {
       "code": "UZB 232",
-      "name": "Isı Geçişi"
+      "name": "Isı Geçişi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -505,30 +731,60 @@
     {
      "course": {
       "code": "UCK 362E",
-      "name": "Automatic Control"
+      "name": "Automatic Control",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "UCK 372",
-      "name": "Deneysel Mühendislik"
+      "name": "Deneysel Mühendislik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 352",
-      "name": "Yörünge Mekaniği"
+      "name": "Yörünge Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 362E",
-      "name": "Compressible Aerodynamics"
+      "name": "Compressible Aerodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders(ITB)",
+      "groupId": "7688",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -876,6 +1132,16 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders(TM)",
+      "groupId": "7689",
+      "credits": "3",
+      "ects": [
+       2,
+       3.5,
+       4,
+       4.5,
+       5,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",
@@ -940,24 +1206,47 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "UZB 421E",
-      "name": "Attitude Determination & Ctrl."
+      "name": "Attitude Determination & Ctrl.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 411E",
-      "name": "Space Environment"
+      "name": "Space Environment",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders(ITB)",
+      "groupId": "7694",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1305,13 +1594,25 @@
     {
      "course": {
       "code": "UZB 441E",
-      "name": "Rocket Propulsion"
+      "name": "Rocket Propulsion",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 451E",
-      "name": "Spacecraft Communications"
+      "name": "Spacecraft Communications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     }
    ]
@@ -1322,24 +1623,47 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "UZB 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "UZB 422E",
-      "name": "Spacecraft Systems Design"
+      "name": "Spacecraft Systems Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders(ITB)",
+      "groupId": "7700",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EKO 201",
@@ -1355,6 +1679,14 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "7701",
+      "credits": "3 / 4",
+      "ects": [
+       0,
+       4,
+       5,
+       7.5
+      ],
       "options": [
        {
         "code": "MAK 351",
@@ -1450,6 +1782,13 @@
     {
      "elective": {
       "title": "8.yy Seçmeli Ders II(MT)",
+      "groupId": "7702",
+      "credits": "3 / 4",
+      "ects": [
+       4,
+       5,
+       7.5
+      ],
       "options": [
        {
         "code": "MAK 351",

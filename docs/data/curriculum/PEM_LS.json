@@ -4,6 +4,8 @@
  "faculty": "Mimarlık Fakültesi",
  "level": "LS",
  "planLabel": "Peyzaj Mimarlığı Lisans Programı",
+ "totalCredits": "150,00",
+ "totalEcts": "218,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,30 +13,61 @@
     {
      "course": {
       "code": "MIM 121E",
-      "name": "Basic Design and Visual Arts"
+      "name": "Basic Design and Visual Arts",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MIM 111",
-      "name": "Arch.Design I-Rendering Techni"
+      "name": "Arch.Design I-Rendering Techni",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "theory": 2,
+      "lab": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 131",
-      "name": "Peyzaj Mimarlığına Giriş"
+      "name": "Peyzaj Mimarlığına Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "1.yySınırlıSeçimDersi(ITB)",
+      "groupId": "6534",
+      "credits": "3",
+      "ects": [
+       0,
+       4
+      ],
       "options": [
        {
         "code": "EUT 222E",
@@ -74,6 +107,11 @@
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "6535",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -94,42 +132,88 @@
     {
      "course": {
       "code": "PEM 132",
-      "name": "Bitki Materyali I"
+      "name": "Bitki Materyali I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 152",
-      "name": "Doğal Sistemler ile Tasarım"
+      "name": "Doğal Sistemler ile Tasarım",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MIM 112",
-      "name": "Mimari Proje II"
+      "name": "Mimari Proje II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 142E",
-      "name": "Perspective"
+      "name": "Perspective",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 124",
-      "name": "His.ofLandscape Architecture I"
+      "name": "His.ofLandscape Architecture I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "6537",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -194,37 +278,75 @@
     {
      "course": {
       "code": "PEM 231",
-      "name": "Bitki Materyali II"
+      "name": "Bitki Materyali II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "PEM 251E",
-      "name": "Introduction to Geographical Information Systems"
+      "name": "Introduction to Geographical Information Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 211",
-      "name": "Mimari Proje III"
+      "name": "Mimari Proje III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 241",
-      "name": "Peyzaj Mimarlığı Kuramı"
+      "name": "Peyzaj Mimarlığı Kuramı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 223",
-      "name": "Peyzaj Mimarlığı Tarihi II"
+      "name": "Peyzaj Mimarlığı Tarihi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -235,36 +357,73 @@
     {
      "course": {
       "code": "PEM 232",
-      "name": "Bitki Materyali III"
+      "name": "Bitki Materyali III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 252E",
-      "name": "Landscape Construction & Materials"
+      "name": "Landscape Construction & Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 242",
-      "name": "Landscape Eco.&Its Ref.onDsg."
+      "name": "Landscape Eco.&Its Ref.onDsg.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 212",
-      "name": "Peyzaj Mimarlığı Projesi I"
+      "name": "Peyzaj Mimarlığı Projesi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 9,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 222",
-      "name": "Toprak Bilgisi"
+      "name": "Toprak Bilgisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "4.yy Seçime Bağlı Ders (MT)",
+      "groupId": "6539",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GSB 313",
@@ -317,36 +476,74 @@
     {
      "course": {
       "code": "PEM 331",
-      "name": "Ağaçlandırma ve Dikim Teknik."
+      "name": "Ağaçlandırma ve Dikim Teknik.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 341",
-      "name": "Bitkilendirme Tasarımı"
+      "name": "Bitkilendirme Tasarımı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "PEM 311",
-      "name": "Peyzaj Mimarlığı Projesi II"
+      "name": "Peyzaj Mimarlığı Projesi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 9,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "5.yy Elective Course (MT)",
+      "groupId": "6540",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "MIM 377E",
@@ -386,6 +583,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "6541",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -538,42 +740,86 @@
     {
      "course": {
       "code": "PEM 332",
-      "name": "Kentsel Peyzaj Planlaması"
+      "name": "Kentsel Peyzaj Planlaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 322",
-      "name": "Kentsel Tasarım"
+      "name": "Kentsel Tasarım",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 342",
-      "name": "Kırsal Peyzaj Planlaması"
+      "name": "Kırsal Peyzaj Planlaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 352E",
-      "name": "Lanscape Engineering"
+      "name": "Lanscape Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 312",
-      "name": "Peyzaj Mimarlığı Projesi III"
+      "name": "Peyzaj Mimarlığı Projesi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 9,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6.yy Elective Course (MT)",
+      "groupId": "6542",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EUT 448E",
@@ -630,24 +876,48 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "PEM 411",
-      "name": "Peyzaj Mimarlığı Projesi IV"
+      "name": "Peyzaj Mimarlığı Projesi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 9,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "PEM 421",
-      "name": "Peyzaj Uygulama Teknikleri"
+      "name": "Peyzaj Uygulama Teknikleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Elective Course (MT)",
+      "groupId": "6543",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EUT 449E",
@@ -699,6 +969,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "6544",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1054,6 +1329,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (MT)",
+      "groupId": "6545",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EUT 339E",
@@ -1182,18 +1462,35 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "PEM 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 19,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Elective Course (MT)",
+      "groupId": "6546",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EUT 448E",
@@ -1249,6 +1546,11 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (MT)",
+      "groupId": "6547",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ICM 317",

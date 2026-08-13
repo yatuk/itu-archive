@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Afet Yönetimi Tezsiz Yüksek Lisans Programı",
+ "totalCredits": "30,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Afet Yönetimi Tezsiz Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "AFY 598",
-      "name": "Proje Çalışması"
+      "name": "Proje Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "AFY 596",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9899",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "AFY 511E",
@@ -54,6 +70,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9900",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "AFY 513",
@@ -73,6 +94,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9901",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "AFY 511E",
@@ -104,6 +130,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "9902",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "AFY 511E",
@@ -135,6 +166,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders V",
+      "groupId": "9903",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "AFY 511E",
@@ -166,30 +202,35 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "9904",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "9905",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "9906",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "9907",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders V",
+      "groupId": "9908",
       "options": null
      }
     }

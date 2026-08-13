@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Restorasyon (Tezsiz) (YL)",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Restorasyon Tezsiz Yüksek Lisans",
@@ -11,12 +13,18 @@
     {
      "elective": {
       "title": "Seçmeli Ders",
+      "groupId": "5951",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Ders",
+      "groupId": "5955",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 501",
@@ -44,12 +52,18 @@
     {
      "elective": {
       "title": "Seçmeli Ders",
+      "groupId": "5952",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Ders",
+      "groupId": "5956",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 501",
@@ -77,12 +91,18 @@
     {
      "elective": {
       "title": "Seçmeli Ders",
+      "groupId": "5953",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Ders",
+      "groupId": "5957",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 501",
@@ -110,12 +130,18 @@
     {
      "elective": {
       "title": "Seçmeli Ders",
+      "groupId": "5954",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Ders",
+      "groupId": "5958",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "RST 501",

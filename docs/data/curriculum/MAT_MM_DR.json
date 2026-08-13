@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "DR",
  "planLabel": "Matematik Mühendisliği Doktora Programı 2022-2023 / Bahar Dönemi Sonrası",
+ "totalCredits": "21,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Matematik Mühendisliği Doktora",
@@ -11,48 +13,70 @@
     {
      "course": {
       "code": "MAT DRT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 150,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "MAT YET",
-      "name": "Yeterlik Aşaması"
+      "name": "Yeterlik Aşaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 30,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "MAT 696 MAT 696E",
-      "name": "Scien.Rese., Ethic&Seminar"
+      "name": "Scien.Rese., Ethic&Seminar",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi I",
+      "groupId": "10677",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi II",
+      "groupId": "10678",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi III",
+      "groupId": "10679",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi IV",
+      "groupId": "10680",
       "options": null
      }
     },
     {
      "elective": {
       "title": "LEE Seçmeli Dersi",
+      "groupId": "10681",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "LEE 901",
@@ -108,12 +132,14 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "10682",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "10683",
       "options": null
      }
     }

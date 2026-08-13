@@ -4,6 +4,8 @@
  "faculty": "Türk Musikisi Devlet Konservatuvarı",
  "level": "LS",
  "planLabel": "Çalgı Eğitimi Lisans Programı 2020-2021 / Güz Dönemi Sonrası",
+ "totalCredits": "145,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,48 +13,99 @@
     {
      "course": {
       "code": "MTR 141",
-      "name": "Makam Teorisi I"
+      "name": "Makam Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 143",
-      "name": "Müzik Teorisi I"
+      "name": "Müzik Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "CAB 143",
-      "name": "Yrd.Çalgı Piyano I"
+      "name": "Yrd.Çalgı Piyano I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KMP 293",
-      "name": "Armoni I"
+      "name": "Armoni I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 105",
-      "name": "English I"
+      "name": "English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "BIL 109",
-      "name": "Bilgisayar"
+      "name": "Bilgisayar",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "1.yy Seçime Bağlı Ders (TM)",
+      "groupId": "1337",
+      "credits": "2",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "CAB 731",
@@ -72,6 +125,11 @@
     {
      "elective": {
       "title": "Çalgı I",
+      "groupId": "1338",
+      "credits": "2",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "CAB 100",
@@ -180,36 +238,73 @@
     {
      "course": {
       "code": "MTR 142",
-      "name": "Makam Teorisi II"
+      "name": "Makam Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 144",
-      "name": "Müzik Teorisi II"
+      "name": "Müzik Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "CAB 144",
-      "name": "Yrd.Çalgı Piyano II"
+      "name": "Yrd.Çalgı Piyano II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 106",
-      "name": "English II"
+      "name": "English II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Çalgı II",
+      "groupId": "1339",
+      "credits": "2",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "CAB 104",
@@ -313,6 +408,11 @@
     {
      "elective": {
       "title": "2.yy Seçime Bağlı Ders (TM)",
+      "groupId": "1340",
+      "credits": "2",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "CAB 732",
@@ -332,7 +432,14 @@
     {
      "course": {
       "code": "KMP 294",
-      "name": "Armoni II"
+      "name": "Armoni II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     }
    ]
@@ -343,48 +450,98 @@
     {
      "course": {
       "code": "MTR 241",
-      "name": "Makam Teorisi III"
+      "name": "Makam Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 243",
-      "name": "Müzik Teorisi III"
+      "name": "Müzik Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "CAB 243",
-      "name": "Yrd.Çalgı Piyano III"
+      "name": "Yrd.Çalgı Piyano III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KMP 197",
-      "name": "Konturpuan-Füg I"
+      "name": "Konturpuan-Füg I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTR 431",
-      "name": "Dikte Deşifre I"
+      "name": "Dikte Deşifre I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 427",
-      "name": "Sahne Bilgisi ve Jest Mimik"
+      "name": "Sahne Bilgisi ve Jest Mimik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 205",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "Çalgı III",
+      "groupId": "1341",
+      "credits": "2",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "CAB 200",
@@ -488,6 +645,11 @@
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders (TM)",
+      "groupId": "1342",
+      "credits": "2",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "CAB 741",
@@ -512,42 +674,85 @@
     {
      "course": {
       "code": "MTR 242",
-      "name": "Makam Teorisi IV"
+      "name": "Makam Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 244",
-      "name": "Müzik Teorisi IV"
+      "name": "Müzik Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "CAB 244",
-      "name": "Yrd.Çalgı Piyano IV"
+      "name": "Yrd.Çalgı Piyano IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KMP 198",
-      "name": "Konturpuan-Füg II"
+      "name": "Konturpuan-Füg II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTR 432",
-      "name": "Dikte Deşifre II"
+      "name": "Dikte Deşifre II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 206",
-      "name": "English IV"
+      "name": "English IV",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "Çalgı IV",
+      "groupId": "1343",
+      "credits": "2",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "CAB 204",
@@ -651,6 +856,11 @@
     {
      "elective": {
       "title": "4.yy Seçime Bağlı Ders (TM)",
+      "groupId": "1344",
+      "credits": "2",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "CAB 742",
@@ -675,42 +885,83 @@
     {
      "course": {
       "code": "MUZ 121",
-      "name": "Müzik Tarihi I"
+      "name": "Müzik Tarihi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUZ 475",
-      "name": "Türk Halk Müziği Bilgileri I"
+      "name": "Türk Halk Müziği Bilgileri I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUZ 321",
-      "name": "Organolojiye Giriş"
+      "name": "Organolojiye Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMP 195",
-      "name": "Form Bilgisi I"
+      "name": "Form Bilgisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CAB 343",
-      "name": "Yrd.Çalgı Piyano V"
+      "name": "Yrd.Çalgı Piyano V",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTR 433",
-      "name": "Eser Çözümleme I"
+      "name": "Eser Çözümleme I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "1345",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "CAB 767",
@@ -742,6 +993,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders II(MT)",
+      "groupId": "1346",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "CAB 1105",
@@ -809,6 +1065,11 @@
     {
      "elective": {
       "title": "Çalgı V",
+      "groupId": "1347",
+      "credits": "2",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "CAB 300",
@@ -912,6 +1173,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (TM)",
+      "groupId": "1348",
+      "credits": "2",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "CAB 751",
@@ -936,36 +1202,71 @@
     {
      "course": {
       "code": "MUZ 122",
-      "name": "Müzik Tarihi II"
+      "name": "Müzik Tarihi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUZ 476",
-      "name": "Türk Halk Müziği Bilgileri II"
+      "name": "Türk Halk Müziği Bilgileri II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KMP 196",
-      "name": "Form Bilgisi II"
+      "name": "Form Bilgisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTR 434",
-      "name": "Eser Çözümleme II"
+      "name": "Eser Çözümleme II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CAB 344",
-      "name": "Yrd.Çalgı Piyano VI"
+      "name": "Yrd.Çalgı Piyano VI",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "1349",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "CAB 770",
@@ -1001,6 +1302,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders II(MT)",
+      "groupId": "1350",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "CAB 1106",
@@ -1076,6 +1382,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "1351",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1431,6 +1742,11 @@
     {
      "elective": {
       "title": "Çalgı VI",
+      "groupId": "1352",
+      "credits": "2",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "CAB 304",
@@ -1534,6 +1850,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (TM)",
+      "groupId": "1353",
+      "credits": "2",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "CAB 752",
@@ -1558,24 +1879,47 @@
     {
      "course": {
       "code": "CAB 443",
-      "name": "Yrd.Çalgı Piyano VII"
+      "name": "Yrd.Çalgı Piyano VII",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MUZ 486",
-      "name": "Müzik Pedagojisine Giriş"
+      "name": "Müzik Pedagojisine Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ATA 103",
-      "name": "Atatürk İlke ve Ink.Tarihi"
+      "name": "Atatürk İlke ve Ink.Tarihi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4,
+      "theory": 4,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "1354",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "CAB 791",
@@ -1603,6 +1947,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II(MT)",
+      "groupId": "1355",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "CAB 2105",
@@ -1646,6 +1995,11 @@
     {
      "elective": {
       "title": "Çalgı VII",
+      "groupId": "1356",
+      "credits": "2",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "CAB 400",
@@ -1749,6 +2103,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (TM)",
+      "groupId": "1357",
+      "credits": "2",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "CAB 761",
@@ -1768,6 +2127,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "1358",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -2128,24 +2492,47 @@
     {
      "course": {
       "code": "MUZ 498",
-      "name": "Müzik Estetiğine Giriş"
+      "name": "Müzik Estetiğine Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CAB 444",
-      "name": "Yrd.Çalgı Piyano VIII"
+      "name": "Yrd.Çalgı Piyano VIII",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CAB 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "1359",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "CAB 790",
@@ -2173,6 +2560,11 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II(MT)",
+      "groupId": "1360",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "CAB 2106",
@@ -2212,6 +2604,11 @@
     {
      "elective": {
       "title": "Çalgı VIII",
+      "groupId": "1361",
+      "credits": "2",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "CAB 404",
@@ -2315,6 +2712,11 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (TM)",
+      "groupId": "1362",
+      "credits": "2",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "CAB 762",
@@ -2334,6 +2736,11 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "1363",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",

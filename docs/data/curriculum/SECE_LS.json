@@ -4,6 +4,8 @@
  "faculty": "Bilgisayar ve Bilişim Fakültesi",
  "level": "LS",
  "planLabel": "Siber Güvenlik Mühendisliği Lisans Programı (%100 İngilizce) 2024-2025 / Güz Dönemi Sonrası",
+ "totalCredits": "134,50",
+ "totalEcts": "241,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,88 @@
     {
      "course": {
       "code": "BBF 101E",
-      "name": "Introduction to Information Systems"
+      "name": "Introduction to Information Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BBF 102E",
-      "name": "Linear Algebra and Applications"
+      "name": "Linear Algebra and Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SEC 113E",
-      "name": "Intr. to Cyber Sec. Eng & Ethics"
+      "name": "Intr. to Cyber Sec. Eng & Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,43 +105,87 @@
     {
      "course": {
       "code": "BBF 103E",
-      "name": "Discrete Mathematics"
+      "name": "Discrete Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BLG 102E",
-      "name": "Intr to Sci&Eng Comp (C)"
+      "name": "Intr to Sci&Eng Comp (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -105,37 +196,74 @@
     {
      "course": {
       "code": "SEC 211E",
-      "name": "Essentials of Cyber Security"
+      "name": "Essentials of Cyber Security",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BBF 201E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BLG 223E",
-      "name": "Data Structures"
+      "name": "Data Structures",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 231E",
-      "name": "Digital Circuits"
+      "name": "Digital Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -146,36 +274,71 @@
     {
      "course": {
       "code": "SEC 221E",
-      "name": "Fundamentals of Cryptography"
+      "name": "Fundamentals of Cryptography",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 202E",
-      "name": "Numerical Methods in Computer Engineering"
+      "name": "Numerical Methods in Computer Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 203E",
-      "name": "Object Oriented Programming"
+      "name": "Object Oriented Programming",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BBF 204E",
-      "name": "Formal Languages and Automata"
+      "name": "Formal Languages and Automata",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BLG 222E",
-      "name": "Computer Organization"
+      "name": "Computer Organization",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "ITB Elective I",
+      "groupId": "11990",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -611,7 +774,12 @@
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -622,24 +790,49 @@
     {
      "course": {
       "code": "SEC 311E",
-      "name": "Computer Security"
+      "name": "Computer Security",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SEC 312E",
-      "name": "Applied Cryptography"
+      "name": "Applied Cryptography",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BBF 301E",
-      "name": "Analysis of Algorithms I"
+      "name": "Analysis of Algorithms I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "TM Elective I",
+      "groupId": "11993",
+      "credits": "3",
+      "ects": [
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BBF 302E",
@@ -687,6 +880,12 @@
     {
      "elective": {
       "title": "MT Elective I",
+      "groupId": "11991",
+      "credits": "3",
+      "ects": [
+       5,
+       8
+      ],
       "options": [
        {
         "code": "BLG 411E",
@@ -742,6 +941,11 @@
     {
      "elective": {
       "title": "ITB Elective II",
+      "groupId": "11992",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1169,7 +1373,12 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -1180,30 +1389,60 @@
     {
      "course": {
       "code": "SEC 321E",
-      "name": "Computer Forensics"
+      "name": "Computer Forensics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 7,
+      "theory": 3,
+      "lab": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SEC 322E",
-      "name": "Secure Programming"
+      "name": "Secure Programming",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BBF 303E",
-      "name": "Analysis of Algorithms II"
+      "name": "Analysis of Algorithms II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BLG 312E",
-      "name": "Computer Operating Systems"
+      "name": "Computer Operating Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "ITB Elective III",
+      "groupId": "11994",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1639,7 +1878,12 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -1650,18 +1894,38 @@
     {
      "course": {
       "code": "SEC 411E",
-      "name": "Cloud Computing & Security"
+      "name": "Cloud Computing & Security",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SEC 4901E",
-      "name": "Cyber Security Engineering Design I"
+      "name": "Cyber Security Engineering Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "TM Elective II",
+      "groupId": "11996",
+      "credits": "3",
+      "ects": [
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BBF 302E",
@@ -1709,6 +1973,12 @@
     {
      "elective": {
       "title": "MT Elective II",
+      "groupId": "11997",
+      "credits": "3",
+      "ects": [
+       5,
+       8
+      ],
       "options": [
        {
         "code": "BLG 411E",
@@ -1764,6 +2034,11 @@
     {
      "elective": {
       "title": "ITB Elective IV",
+      "groupId": "11995",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -2204,18 +2479,37 @@
     {
      "course": {
       "code": "SEC 4902E",
-      "name": "Cyber Security Engineering Design II"
+      "name": "Cyber Security Engineering Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "MT Elective III",
+      "groupId": "11999",
+      "credits": "3",
+      "ects": [
+       5,
+       8
+      ],
       "options": [
        {
         "code": "BLG 411E",
@@ -2271,6 +2565,12 @@
     {
      "elective": {
       "title": "MT Elective IV",
+      "groupId": "12000",
+      "credits": "3",
+      "ects": [
+       5,
+       8
+      ],
       "options": [
        {
         "code": "BLG 411E",
@@ -2326,6 +2626,11 @@
     {
      "elective": {
       "title": "ITB Elective V",
+      "groupId": "11998",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",

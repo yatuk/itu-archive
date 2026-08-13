@@ -4,6 +4,8 @@
  "faculty": "Elektrik - Elektronik Fakültesi",
  "level": "LS",
  "planLabel": "Elektrik Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "134,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,85 @@
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ELK 101",
-      "name": "Elk. Müh. Giriş ve Müh. Etiği"
+      "name": "Elk. Müh. Giriş ve Müh. Etiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,49 +102,98 @@
     {
      "course": {
       "code": "FIZ 102",
-      "name": "Fizik II (Elektrik Fiziği)"
+      "name": "Fizik II (Elektrik Fiziği)",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 110E",
-      "name": "Intr. to Prog. Language (C)"
+      "name": "Intr. to Prog. Language (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "EEF 281",
-      "name": "Lineer Cebir ve Uygulamaları"
+      "name": "Lineer Cebir ve Uygulamaları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -111,36 +204,74 @@
     {
      "course": {
       "code": "EEF 210",
-      "name": "Diferansiyel Denklemler"
+      "name": "Diferansiyel Denklemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 211",
-      "name": "Elektrik Devre Temelleri"
+      "name": "Elektrik Devre Temelleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 205",
-      "name": "Lojik Tasarıma Giriş"
+      "name": "Lojik Tasarıma Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders I (TM)",
+      "groupId": "8854",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5
+      ],
       "options": [
        {
         "code": "DNK 201",
@@ -180,6 +311,13 @@
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders II (TB)",
+      "groupId": "8855",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -240,36 +378,72 @@
     {
      "course": {
       "code": "EEF 232",
-      "name": "Devre ve Sistem Analizi"
+      "name": "Devre ve Sistem Analizi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 212",
-      "name": "Elektromagnetik Teori I"
+      "name": "Elektromagnetik Teori I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 262",
-      "name": "Elektroniğin Temelleri"
+      "name": "Elektroniğin Temelleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 206",
-      "name": "İşaret İşleme ve Lineer Sist."
+      "name": "İşaret İşleme ve Lineer Sist.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 221",
-      "name": "Elektrik Devre Temelleri Lab."
+      "name": "Elektrik Devre Temelleri Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4.yy Seçime Bağlı Ders (TM)",
+      "groupId": "8856",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 368E",
@@ -326,30 +500,61 @@
     {
      "course": {
       "code": "ELK 343 ELK 343E",
-      "name": "Elektromekanik Enerji Dönüşümü"
+      "name": "Elektromekanik Enerji Dönüşümü",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 331 ELK 331E",
-      "name": "Güç Elektroniği Devreleri"
+      "name": "Güç Elektroniği Devreleri",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 307 ELK 307E",
-      "name": "Aydınlatma Tekniği"
+      "name": "Aydınlatma Tekniği",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KON 313",
-      "name": "Geribeslemeli Kontrol Sist."
+      "name": "Geribeslemeli Kontrol Sist.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8859",
+      "credits": "3",
+      "ects": [
+       6,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",
@@ -401,6 +606,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders II (ITB)",
+      "groupId": "8858",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "EKO 201E",
@@ -421,36 +631,70 @@
     {
      "course": {
       "code": "ELK 356 ELK 356E",
-      "name": "Elektrik Makinaları"
+      "name": "Elektrik Makinaları",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 342",
-      "name": "Güç Elektroniği Laboratuvarı"
+      "name": "Güç Elektroniği Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 312",
-      "name": "Yüksek Gerilim Tekniği"
+      "name": "Yüksek Gerilim Tekniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 322E ELK 322",
-      "name": "Power Transmission Systems"
+      "name": "Power Transmission Systems",
+      "language": "English / Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders I (ITB)",
+      "groupId": "8860",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1122,6 +1366,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8863",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "ELK 308E",
@@ -1178,36 +1427,72 @@
     {
      "course": {
       "code": "ELK 421",
-      "name": "Elektrik Enerjisi Üretimi"
+      "name": "Elektrik Enerjisi Üretimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 405",
-      "name": "Yüksek Gerilim Laboratuvarı"
+      "name": "Yüksek Gerilim Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 431 ELK 431E",
-      "name": "Elektrik Makinaları Lab."
+      "name": "Elektrik Makinaları Lab.",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 4901 ELK 4901E",
-      "name": "Elektrik Müh. Tasarımı I"
+      "name": "Elektrik Müh. Tasarımı I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8864",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "ELK 334",
@@ -1291,6 +1576,12 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8865",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "ELK 334",
@@ -1371,24 +1662,49 @@
     {
      "course": {
       "code": "ELK 4902 ELK 4902E",
-      "name": "Elektrik Müh. Tasarımı II"
+      "name": "Elektrik Müh. Tasarımı II",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 420 ELK 420E",
-      "name": "Elektrik Dağıtım Otomas. Lab."
+      "name": "Elektrik Dağıtım Otomas. Lab.",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELK 406 ELK 406E",
-      "name": "Elektrik Enerjisi Dağıtımı"
+      "name": "Elektrik Enerjisi Dağıtımı",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8866",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "ELK 414",
@@ -1472,6 +1788,12 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8867",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "ELK 414",
@@ -1555,6 +1877,11 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders III (MT-Proje)",
+      "groupId": "8868",
+      "credits": "2",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "ELK 458",

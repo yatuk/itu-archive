@@ -4,6 +4,8 @@
  "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
  "level": "LS",
  "planLabel": "Meteoroloji Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "130,50",
+ "totalEcts": "241,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,55 +13,112 @@
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTO 111E",
-      "name": "Intr. to Atmospheric Sciences"
+      "name": "Intr. to Atmospheric Sciences",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTO 101",
-      "name": "Meteoroloji Müh. Giriş ve Etik"
+      "name": "Meteoroloji Müh. Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -70,49 +129,101 @@
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTO 112",
-      "name": "Meteoroloji Alet & Gözlem Usul"
+      "name": "Meteoroloji Alet & Gözlem Usul",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 112E",
-      "name": "Intr.to Prog.Language(FORTRAN)"
+      "name": "Intr.to Prog.Language(FORTRAN)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTO 102",
-      "name": "Bilgisayarlı Teknik Resim"
+      "name": "Bilgisayarlı Teknik Resim",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -123,36 +234,75 @@
     {
      "course": {
       "code": "MAT 271",
-      "name": "Olasılık ve İstatistik"
+      "name": "Olasılık ve İstatistik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 210",
-      "name": "Mühendislik Matematiği"
+      "name": "Mühendislik Matematiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTO 225",
-      "name": "Güneş ve Yer Radyasyonu"
+      "name": "Güneş ve Yer Radyasyonu",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTO 223",
-      "name": "Bilgisayar Grafiğine Giriş"
+      "name": "Bilgisayar Grafiğine Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders(TB)",
+      "groupId": "8536",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "MTO 227",
@@ -177,37 +327,76 @@
     {
      "course": {
       "code": "MTO 222",
-      "name": "Hidroloji"
+      "name": "Hidroloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTO 214",
-      "name": "Atmosfer Termodinamiği"
+      "name": "Atmosfer Termodinamiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "AKM 204E",
-      "name": "Fluid Mechanics"
+      "name": "Fluid Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTO 254",
-      "name": "İklim Bilimi"
+      "name": "İklim Bilimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 202E",
-      "name": "Numerical Methods"
+      "name": "Numerical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "STA 204",
-      "name": "Statik ve Mukavemet"
+      "name": "Statik ve Mukavemet",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -218,36 +407,74 @@
     {
      "course": {
       "code": "MTO 337",
-      "name": "Atmosfer Dinamiği I"
+      "name": "Atmosfer Dinamiği I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTO 229E",
-      "name": "Physics ofClouds&Precipitation"
+      "name": "Physics ofClouds&Precipitation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTO 301",
-      "name": "Meteo.Uzaktan Algılamanın Tem."
+      "name": "Meteo.Uzaktan Algılamanın Tem.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTO 311E",
-      "name": "Data Analysis"
+      "name": "Data Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTO 303E",
-      "name": "Comput.Fluid Dyn.in Meteo.Eng."
+      "name": "Comput.Fluid Dyn.in Meteo.Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders I (ITB)",
+      "groupId": "9073",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -399,6 +626,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "9074",
+      "credits": "2,5",
+      "ects": [
+       4.5
+      ],
       "options": [
        {
         "code": "MTO 350E",
@@ -435,30 +667,61 @@
     {
      "course": {
       "code": "MTO 302",
-      "name": "Hava Analizi ve Öngörü I"
+      "name": "Hava Analizi ve Öngörü I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTO 304",
-      "name": "Havacılık Meteorolojisi"
+      "name": "Havacılık Meteorolojisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTO 340",
-      "name": "Atmosfer Dinamiği II"
+      "name": "Atmosfer Dinamiği II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ETK 101",
-      "name": "Mühendislik Etiği"
+      "name": "Mühendislik Etiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders I (ITB)",
+      "groupId": "9071",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -882,6 +1145,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "9072",
+      "credits": "2,5",
+      "ects": [
+       4.5
+      ],
       "options": [
        {
         "code": "MTO 351",
@@ -930,30 +1198,59 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MTO 406",
-      "name": "Hava Analizi ve Öngörü II"
+      "name": "Hava Analizi ve Öngörü II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MTO 4901",
-      "name": "Meteoroloji Müh. Tasarımı I"
+      "name": "Meteoroloji Müh. Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (TM)",
+      "groupId": "9070",
+      "credits": "2",
+      "ects": [
+       5.5
+      ],
       "options": [
        {
         "code": "MTO 388",
@@ -969,6 +1266,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "9069",
+      "credits": "2,5",
+      "ects": [
+       5.5
+      ],
       "options": [
        {
         "code": "MTO 358",
@@ -1033,42 +1335,83 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MTO 4902",
-      "name": "Meteoroloji Müh. Tasarımı II"
+      "name": "Meteoroloji Müh. Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MTO 426E",
-      "name": "Micrometeorology"
+      "name": "Micrometeorology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 7.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTO 494",
-      "name": "Araştırma Projesi"
+      "name": "Araştırma Projesi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 6,
+      "tutorial": 5,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (MT)",
+      "groupId": "9068",
+      "credits": "2,5",
+      "ects": [
+       4.5
+      ],
       "options": [
        {
         "code": "MTO 361",

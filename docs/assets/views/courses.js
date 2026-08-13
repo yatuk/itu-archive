@@ -6,7 +6,7 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, searchMatch, debounce, downloadCSV, setStatus, fillMeasured, formatInt } from '../core/utils.js';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt } from '../core/utils.js';
 import { methodToCode } from '../core/urlcodes.js';
 import { loadProgramMap } from '../core/programs.js';
 import { state } from '../core/store.js';
@@ -76,9 +76,10 @@ export async function loadTerm(slug) {
     state.rows = rows;
     state.meta = meta;
     loadQuota(slug); // dolma sürelerini bu dönem için arka planda yükle
-    // Aramayı bir kez katlanmış metin üzerinden yapıyoruz: her tuş vuruşunda
-    // 4000 satırı yeniden normalize etmenin anlamı yok.
-    state.hay = rows.map((r) => normSearch(`${r[0]} ${r[1]} ${r[2]} ${r[4]}`));
+    // Aramayı bir kez alan bazlı katlanmış indekse çeviriyoruz: her tuş vuruşunda
+    // 4000 satırı yeniden normalize etmenin anlamı yok. Kod boşluksuz (normSearch),
+    // ad/hoca boşluklu (fold) — kelime sınırı ve kod yazımı esnekliği korunur.
+    state.search = buildSearchIndex(rows);
 
     const branchSel = $('#f-branch');
     const keep = branchSel.value;
@@ -118,6 +119,17 @@ export async function loadTerm(slug) {
   }
 }
 
+// Alan bazlı arama indeksi: her satırın crn/kod/ad/hoca alanı ayrı normalize
+// edilir (kod boşluksuz, ad/hoca boşluklu). Satır sırası state.rows ile aynıdır.
+function buildSearchIndex(rows) {
+  return {
+    crn: rows.map((r) => fold(r[0])),
+    code: rows.map((r) => normSearch(r[1])),
+    name: rows.map((r) => fold(r[2])),
+    instructor: rows.map((r) => fold(r[4])),
+  };
+}
+
 // Kontenjan zaman serisini arka planda yükler; detay panelindeki dolma
 // süresi bilgisi buradan gelir.
 export async function loadQuota(slug) {
@@ -145,8 +157,11 @@ export function applyFilters() {
   // Arama terimleri boşluğa göre bölünür, sonra ortak normalizasyonla boşluksuz
   // anahtarlara indirilir ("BLG 102E" → ["blg","102e"], "BLG102E" → ["blg102e"]).
   const terms = q ? q.split(/\s+/).map(normSearch) : [];
+  // Yüklenmemişse indeksi kur (dönem hatası sonrası güvenlik).
+  if (!state.search) state.search = buildSearchIndex(state.rows);
 
-  state.filtered = state.rows.filter((r, i) => {
+  // Serbest-metin dışı filtreler. Sorgudan bağımsız; 0 sonuç önerisi de bunu kullanır.
+  const passBase = (r) => {
     if (branch && r[3] !== branch) return false;
     if (code && !r[1].toLowerCase().includes(code)) return false;
     if (day && !matchesDay(r[5], day)) return false;
@@ -157,25 +172,69 @@ export function applyFilters() {
     if (program && !programList(r).includes(program)) return false;
     if (openOnly && r[7] >= r[6]) return false;
     if (hideTaken && isTaken(r[1])) return false;
-    if (!terms.length) return true;
-    return terms.every((t) => searchMatch(t, state.hay[i]));
+    return true;
+  };
+  const fieldsOf = (i) => ({
+    crn: state.search.crn[i],
+    code: state.search.code[i],
+    name: state.search.name[i],
+    instructor: state.search.instructor[i],
   });
 
+  // Alan bazlı eşleştirme: her satır için skor + hangi alan/konum eşleştiği
+  // (satırda <mark> vurgusu için). Sorgu boşsa marks boş kalır, vurgu yok.
+  state.marks = new Map(); // selKey → { score, hits }
+  const scoreOf = new Map();
+  state.filtered = [];
+  for (let i = 0; i < state.rows.length; i++) {
+    const r = state.rows[i];
+    if (!passBase(r)) continue;
+    if (terms.length) {
+      const m = matchRow(terms, fieldsOf(i));
+      if (!m) continue;
+      state.marks.set(selKey(r), m);
+      scoreOf.set(selKey(r), m.score);
+    }
+    state.filtered.push(r);
+  }
+
   const { key, dir } = state.sort;
-  state.filtered.sort((a, b) => {
+  const bySort = (a, b) => {
     const va = sortValue(a, key), vb = sortValue(b, key);
     if (typeof va === 'number' && typeof vb === 'number') return (va - vb) * dir;
     return String(va).localeCompare(String(vb), 'tr') * dir;
-  });
+  };
+  if (terms.length) {
+    // Sorgu aktifken sonuçlar alaka skoruyla listelenir (kod tam > kod başı >
+    // ad kelime başı > hoca kelime başı > kelime ortası); eşitlikte sütun sıralaması.
+    state.filtered.sort((a, b) => {
+      const d = (scoreOf.get(selKey(b)) ?? 0) - (scoreOf.get(selKey(a)) ?? 0);
+      return d || bySort(a, b);
+    });
+  } else {
+    state.filtered.sort(bySort);
+  }
 
   state.shown = 0;
   renderRows(false);
 
   const total = state.rows.length;
   const n = state.filtered.length;
+  // 0 sonuçta terim düşürme önerisi: gürültü katan terimi düşürüp en kesin
+  // kalanı öner ("engineering ma" → yalnızca 'engineering').
+  let hint = '';
+  if (n === 0 && terms.length > 1) {
+    const countFor = (sub) => state.rows.reduce(
+      (acc, r, i) => acc + (passBase(r) && matchRow(sub, fieldsOf(i)) ? 1 : 0), 0);
+    const drop = suggestDrop(terms, countFor);
+    if (drop >= 0) {
+      const rest = terms.filter((_, j) => j !== drop).map((t) => `'${esc(t)}'`).join(' ve ');
+      hint = ` — yalnızca ${rest} ile aramayı dene`;
+    }
+  }
   $('#resultline').innerHTML = n === total
     ? `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} bölüm`
-    : `<b>${n}</b> / ${total} şube eşleşti`;
+    : `<b>${n}</b> / ${total} şube eşleşti${hint}`;
   renderChips();
   updateSelection();
   if (ttOn) renderTimetable();
@@ -353,13 +412,16 @@ function renderRows(append) {
     const [crn, code, name, branch, instructor, when, cap, enr] = r;
     const key = selKey(r);
     const starred = fav.isFavorite(state.termSlug, branch, crn);
+    // Arama eşleşmesini <mark> ile göster — "neden çıktı" görünür olsun.
+    const hits = state.marks?.get(key)?.hits || null;
+    const hitField = (f) => (hits ? hits.filter((h) => h.field === f) : null);
     return `
       <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="Şubeyi seç"${state.selected.has(key) ? ' checked' : ''}></td>
       <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? 'Favorilerden çıkar' : 'Favorilere ekle'}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
-      <td class="crn" data-label="CRN">${esc(crn)}</td>
-      <td class="code" data-label="Ders"><b>${esc(code)}</b><small>${esc(branch)}</small></td>
-      <td data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${esc(name)}</button></td>
-      <td data-label="Öğretim Üyesi">${esc(instructor || '—')}</td>
+      <td class="crn" data-label="CRN">${markField(crn, 'crn', hitField('crn'))}</td>
+      <td class="code" data-label="Ders"><b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small></td>
+      <td data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button></td>
+      <td data-label="Öğretim Üyesi">${markField(instructor || '—', 'instructor', hitField('instructor'))}</td>
       <td class="when" data-label="Zaman">${esc(when || '—')}</td>
       <td class="num" data-label="Kont.">${formatInt(cap)}</td>
       <td class="num" data-label="Yazılan">${formatInt(enr)}</td>

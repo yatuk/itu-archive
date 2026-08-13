@@ -71,6 +71,136 @@ export function searchMatch(term, hay) {
   return false;
 }
 
+/* --- alan bazlı arama eşleştirmesi (Dersler görünümü) ---
+   Tek boşluksuz yığın (state.hay) yerine her alan kendi normalizasyonuyla
+   saklanır: kod boşluksuz (normSearch) — "blg411e" ↔ "BLG 411E"; ad/hoca/crn
+   fold ile — boşluklar korunur ki kelime sınırı kavramı kaybolmasın.
+   Skor hiyerarşisi (büyük önce): kod tam > kod başı > ad kelime başı >
+   hoca kelime başı > kod/kelime ortası. <3 karakterli terimler YALNIZCA
+   kelime başından eşleşir (Ovatman içindeki "ma" gibi ortalar elenir). */
+
+const SCORE = {
+  codeExact: 10000,
+  codeStart: 8000,
+  crn: 8000,
+  nameStart: 6000,
+  instrStart: 5000,
+  codeMid: 4000,
+  wordMid: 2000,
+};
+
+// Tek bir normalize alanda terimin en iyi eşleşmesini puanlar.
+// kind: 'code' | 'crn' | 'name' | 'instructor'. Kod/crn boşluksuz alandır —
+// kelime başı yalnızca index 0; ad/hoca boşluklu olduğundan kelime başı = bir
+// önceki karakter [a-z0-9] değilse. Dönüş: { at, len, score } | null.
+function bestInField(term, field, kind) {
+  if (!field) return null;
+  const cands = [term];
+  // İngilizce-E soneki yalnızca kod alanında yok sayılır ("blg102e" → "blg102"),
+  // böylece "BLG 102E" araması "BLG 102" dersini de bulur.
+  if (kind === 'code' && /\d[e]$/.test(term)) cands.push(term.slice(0, -1));
+  let best = null;
+  for (const cand of cands) {
+    let at = 0;
+    while ((at = field.indexOf(cand, at)) >= 0) {
+      const wordStart = at === 0 || !/[a-z0-9]/.test(field[at - 1]);
+      if (term.length < 3 && !wordStart) { at++; continue; }
+      let score;
+      const exact = cand === field;
+      if (kind === 'code') score = exact ? SCORE.codeExact : wordStart ? SCORE.codeStart : SCORE.codeMid;
+      else if (kind === 'crn') score = wordStart ? SCORE.crn : SCORE.wordMid;
+      else if (kind === 'name') score = wordStart ? SCORE.nameStart : SCORE.wordMid;
+      else score = wordStart ? SCORE.instrStart : SCORE.wordMid;
+      if (!best || score > best.score) best = { at, len: cand.length, score };
+      at++;
+    }
+  }
+  return best;
+}
+
+// Bir satırın tüm alanları üzerinden terimlerin eşleşme skoru.
+// fields: { crn, code, name, instructor } — önceden normalize edilmiş.
+// Dönüş: { score, hits } | null; hits her terim için tek { field, at, len }.
+export function matchRow(terms, fields) {
+  const hits = [];
+  let score = 0;
+  for (const term of terms) {
+    let best = null;
+    for (const [field, kind] of [['code', 'code'], ['crn', 'crn'], ['name', 'name'], ['instructor', 'instructor']]) {
+      const m = bestInField(term, fields[field], kind);
+      if (m && (!best || m.score > best.score)) best = { field, ...m };
+    }
+    if (!best) return null;
+    hits.push(best);
+    score += best.score;
+  }
+  // Çok terimli sorguda en az bir terim kod veya ad alanında eşleşmeli; yalnızca
+  // hocadan gelen çoklu eşleşme sonuç üretmesin (tek terimde hoca eşleşmesi geçerli).
+  if (terms.length > 1 && !hits.some((h) => h.field === 'code' || h.field === 'name')) return null;
+  return { score, hits };
+}
+
+// Eşleşen parçaları <mark> ile sarar (esc'li HTML). field: 'code'|'crn'|'name'|'instructor'.
+// hits [{at,len}] normalize uzayda; kod/crn boşluksuz olduğundan orijinal metindeki
+// boşluklar sayılarak geri eşlenir (fold uzunluk koruduğu için diğer alanlarda birebir).
+export function markField(text, field, hits) {
+  const str = String(text ?? '');
+  if (!hits || !hits.length) return esc(str);
+  const spaceless = field === 'code' || field === 'crn';
+  const mapRange = (at, len) => {
+    if (!spaceless) {
+      const s = Math.max(0, at);
+      const e = Math.min(str.length, at + len);
+      return e > s ? [s, e] : null;
+    }
+    const findIdx = (n) => {
+      let c = 0;
+      for (let i = 0; i < str.length; i++) {
+        if (/\s/.test(str[i])) continue;
+        if (c === n) return i;
+        c++;
+      }
+      return -1;
+    };
+    const s = findIdx(at);
+    if (s < 0) return null;
+    const e = findIdx(at + len - 1);
+    if (e < 0) return null;
+    return [s, e + 1];
+  };
+  const ranges = hits.map((h) => mapRange(h.at, h.len)).filter(Boolean)
+    .sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  if (!ranges.length) return esc(str);
+  const merged = [];
+  for (const [s, e] of ranges) {
+    const last = merged[merged.length - 1];
+    if (last && s <= last[1]) last[1] = Math.max(last[1], e);
+    else merged.push([s, e]);
+  }
+  let out = '';
+  let prev = 0;
+  for (const [s, e] of merged) {
+    out += esc(str.slice(prev, s)) + '<mark>' + esc(str.slice(s, e)) + '</mark>';
+    prev = e;
+  }
+  out += esc(str.slice(prev));
+  return out;
+}
+
+// 0 sonuçta düşürülecek terimi seçer: geriye kalan sorgu en az (ama sıfırdan
+// çok) sonuç vereni bırak — en kesin öneri. countFor(subset) → eşleşen satır
+// sayısı; hiçbir alt küme sonuç vermiyorsa -1 döner. Saf — test edilebilir.
+export function suggestDrop(terms, countFor) {
+  if (terms.length < 2) return -1; // düşürülecek terim yok
+  let drop = -1;
+  let best = Infinity;
+  for (let i = 0; i < terms.length; i++) {
+    const c = countFor(terms.filter((_, j) => j !== i));
+    if (c > 0 && c < best) { best = c; drop = i; }
+  }
+  return drop;
+}
+
 export function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

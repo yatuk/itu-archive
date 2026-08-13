@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { fold, normSearch, searchMatch, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
+import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
@@ -89,6 +89,86 @@ test('searchMatch boşluksuz ve E-soneki farkını görmezden gelir', () => {
   // İlgisiz hay'da eşleşme yok.
   assert.equal(searchMatch('blg102e', 'turb101'), false);
   assert.equal(searchMatch('blg102', 'blg100'), false);
+});
+
+// Alan bazlı arama eşleştirmesi (matchRow): alanlar courses.js'teki gibi
+// normalize edilir — kod boşluksuz (normSearch), ad/hoca boşluklu (fold).
+const searchFields = (o) => ({
+  crn: fold(o.crn ?? ''),
+  code: normSearch(o.code ?? ''),
+  name: fold(o.name ?? ''),
+  instructor: fold(o.instructor ?? ''),
+});
+
+test('matchRow: "engineering ma" BLG 411E eşleşmez (kısa terim kelime ortasında)', () => {
+  const f = searchFields({ crn: '12345', code: 'BLG 411E', name: 'Software Engineering', instructor: 'Tolga Ovatman' });
+  // "engineering" ad kelime başında ama "ma" (2 karakter) yalnızca kelime başından
+  // eşleşir — "Ovatman" içinde ortada, kod/ad/crn'de yok → terim elenir.
+  assert.equal(matchRow(['engineering', 'ma'], f), null);
+});
+
+test('matchRow: "blg411e" / "BLG 411E" / "blg 411" BLG 411E eşleştirir', () => {
+  const f = searchFields({ crn: '12345', code: 'BLG 411E', name: 'Software Engineering', instructor: 'Tolga Ovatman' });
+  assert.ok(matchRow(['blg411e'], f), 'boşluksuz kod');
+  assert.ok(matchRow(['blg', '411e'], f), '"BLG 411E" iki terime bölünür');
+  assert.ok(matchRow(['blg', '411'], f), '"blg 411" kod ortası eşleşmesi (411 ≥3 karakter)');
+  // E-sonek: "BLG 102E" araması "BLG 102" dersini de bulur.
+  const g = searchFields({ crn: '1', code: 'BLG 102', name: 'Doğal Dil İşleme', instructor: 'X' });
+  assert.ok(matchRow(['blg102e'], g), 'E-sonek kod alanında yok sayılır');
+});
+
+test('matchRow: tek terim hoca eşleşmesi geçerli ("ovatman")', () => {
+  const f = searchFields({ crn: '12345', code: 'BLG 411E', name: 'Software Engineering', instructor: 'Tolga Ovatman' });
+  const m = matchRow(['ovatman'], f);
+  assert.ok(m);
+  assert.equal(m.hits[0].field, 'instructor');
+});
+
+test('matchRow: çok terimde yalnızca hoca eşleşmesi sonuç üretmez', () => {
+  const f = searchFields({ crn: '12345', code: 'BLG 411E', name: 'Software Engineering', instructor: 'Tolga Ovatman' });
+  // İki terim de yalnızca hoca alanında (kod/ad eşleşmesi yok) → çoklu hoca eşleşmesi elenir.
+  assert.equal(matchRow(['tolga', 'ovatman'], f), null);
+});
+
+test('matchRow: ad kelime başı hoca kelime başından önce skorlanır', () => {
+  const nameHit = matchRow(['software'], searchFields({ code: 'BLG 411E', name: 'Software Engineering', instructor: 'Zeynep' }));
+  const instrHit = matchRow(['software'], searchFields({ code: 'BLG 512E', name: 'Algorithms', instructor: 'Software Ovatman' }));
+  assert.ok(nameHit && instrHit);
+  assert.ok(nameHit.score > instrHit.score, 'ad kelime başı hoca kelime başından üstte');
+});
+
+test('matchRow: "ısı"↔"isi", "İST"↔"ist" karşılıklı (fold katlar)', () => {
+  const isi = searchFields({ code: 'ISI 201E', name: 'Isı Transferi', instructor: 'Z' });
+  assert.ok(matchRow(['isi'], isi), '"ısı" araması "Isı"yı bulur');
+  assert.ok(matchRow(['isi'], searchFields({ code: 'ISI 201E', name: 'Isı Transferi', instructor: 'Z' })));
+  const ist = searchFields({ code: 'IST 102E', name: 'İstatistik', instructor: 'Z' });
+  assert.ok(matchRow(['ist'], ist), '"İST" araması "ist" koduyla bulur');
+});
+
+test('matchRow: "ma" kelime başı verir, Ovatman\'ı vermez', () => {
+  assert.ok(matchRow(['ma'], searchFields({ code: 'MAT 101E', name: 'Matematik', instructor: 'A' })), '"ma" Matematikte kelime başı');
+  assert.ok(matchRow(['ma'], searchFields({ code: 'MAL 201', name: 'Malzeme Bilimi', instructor: 'B' })), '"ma" Malzemede kelime başı');
+  assert.equal(matchRow(['ma'], searchFields({ code: 'BLG 411E', name: 'Software Engineering', instructor: 'Tolga Ovatman' })), null, '"ma" Ovatman içinde ortada');
+});
+
+test('markField: kod alanında boşluk geri eşlemesi', () => {
+  assert.equal(markField('BLG 411E', 'code', [{ at: 0, len: 6 }]), '<mark>BLG 411</mark>E');
+  assert.equal(markField('BLG 411E', 'code', [{ at: 3, len: 3 }]), 'BLG <mark>411</mark>E');
+  assert.equal(markField('Software Engineering', 'name', [{ at: 0, len: 8 }]), '<mark>Software</mark> Engineering');
+  // Örtüşen aralıklar birleşir; vuruş yoksa metin aynen kalır.
+  assert.equal(markField('BLG 411E', 'code', [{ at: 0, len: 6 }, { at: 0, len: 3 }]), '<mark>BLG 411</mark>E');
+  assert.equal(markField('BLG 411E', 'code', null), 'BLG 411E');
+});
+
+test('suggestDrop en kesin terimi önerir (engineering ma → engineering)', () => {
+  // "ma" düşünce "engineering" az sonuç verir (kesin); "engineering" düşünce
+  // "ma" çok sonuç verir (gürültü). En az sonuç bırakanı düşür → 'engineering' öner.
+  const countFor = (sub) => (sub.length === 1 && sub[0] === 'engineering' ? 1 : 50);
+  assert.equal(suggestDrop(['engineering', 'ma'], countFor), 1); // 'ma' düşer
+  // Hiçbir alt küme sonuç vermiyorsa öneri yok.
+  assert.equal(suggestDrop(['x', 'y'], () => 0), -1);
+  // Tek terimde düşürme anlamsız.
+  assert.equal(suggestDrop(['engineering'], countFor), -1);
 });
 
 test('trNum Türkçe sayı biçimi: virgül, tam sayıda ,0 yok', () => {

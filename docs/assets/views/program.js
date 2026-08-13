@@ -8,7 +8,7 @@
 import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum } from '../core/utils.js';
 import { state, indexReady } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
-import { buildTimetable, openDetail } from './courses.js';
+import { buildTimetable, parseWhen, openDetail } from './courses.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
 import { confirmDialog, promptDialog } from '../core/dialog.js';
@@ -21,6 +21,9 @@ let openMenuKey = null;
 let dragFrom = null;
 // Paylaşılan URL'deki crns listesi yalnızca bir kez uygulanır.
 let crnsApplied = false;
+// Izgara görünüm seçenekleri: boş hafta sonu sütunlarını açma ve tam gün aralığı.
+let showWeekend = false;
+let showFullDay = false;
 
 // --- çoklu program (liste) ---
 const PROG_KEY = 'itu-programs';
@@ -114,6 +117,9 @@ export function initProgram() {
   $('#p-obs').addEventListener('mouseleave', () => hideTip());
   $('#p-favs').addEventListener('click', addFavorites);
   $('#p-full').addEventListener('change', render);
+  // Izgara görünüm seçenekleri (hafta sonu sütunları / tam gün aralığı).
+  $('#p-weekend').addEventListener('change', (e) => { showWeekend = e.target.checked; render(); });
+  $('#p-fullday').addEventListener('change', (e) => { showFullDay = e.target.checked; render(); });
   document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
   inited = true;
   maybeOnboard();
@@ -496,37 +502,76 @@ const colorFor = (() => {
   };
 })();
 
-// Blok zeminine göre okunur yazı rengi: parlak zemin → koyu yazı, koyu zemin →
-// açık yazı (WCAG parlaklık formülü). Blok-yazı kontrastı ≥4.5:1 tutulur.
+// Blok zeminine göre okunur yazı rengi: koyu (#1e2b23) ve açık (#fff) metinden
+// WCAG kontrast oranı yüksek olanı seçer (≥4.5:1 hedeflenir).
 function fgFor(hex) {
-  const h = hex.replace('#', '');
-  const [r, g, b] = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
+  const L = lumOf(hex);
+  return 1.05 / (L + 0.05) >= (L + 0.05) / 0.074 ? '#ffffff' : '#1e2b23';
+}
+
+// WCAG göreli parlaklık (0..1).
+function lumOf(hex) {
+  const h = String(hex).replace('#', '');
   const lin = (c) => (c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
-  const L = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
-  return L > 0.4 ? '#1e2b23' : '#ffffff';
+  const r = lin(parseInt(h.slice(0, 2), 16) / 255);
+  const g = lin(parseInt(h.slice(2, 4), 16) / 255);
+  const b = lin(parseInt(h.slice(4, 6), 16) / 255);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+// Açık temada pastel bloklar üzerinde açık renkli saat metni eşiğin altında
+// kalabiliyor; zemin, seçilen metin rengiyle ≥4.5:1 sağlanana kadar koyulaştırılır.
+// Fosfor teması pastel tonlarını korur (yalnızca sade temasında çağrılır).
+function blockContrast(color) {
+  let bg = color, L = lumOf(bg);
+  for (let i = 0; i < 12; i++) {
+    if (1.05 / (L + 0.05) >= 4.5 || (L + 0.05) / 0.074 >= 4.5) break;
+    bg = '#' + [1, 3, 5].map((s) => Math.round(parseInt(bg.slice(s, s + 2), 16) * 0.8).toString(16).padStart(2, '0')).join('');
+    L = lumOf(bg);
+  }
+  return { bg, fg: fgFor(bg) };
 }
 
 function renderGrid(itemRows) {
   const wrap = $('#p-grid');
   const t = buildTimetable(itemRows);
+  // Zaman bilgisi olmayan şubeyi sessizce yutma — ızgaranın altına not düş (G).
+  const noTime = itemRows.filter((r) => !parseWhen(r[5]).length);
+  const noTimeNote = noTime.length
+    ? `<p class="tt-no-time">⚠ ${noTime.length} şubenin zaman bilgisi yok: ${noTime.map((r) => `${esc(r[1])} (${esc(r[0])})`).join(', ')}</p>`
+    : '';
   if (!t || !t.all.length) {
-    wrap.innerHTML = '<p class="empty">Zaman bilgisi olan ders eklenmedi.</p>';
+    wrap.innerHTML = '<p class="empty">Zaman bilgisi olan ders eklenmedi.</p>' + noTimeNote;
     return;
   }
   placedRefs = [];
-  const { startSlot, nSlots } = t;
-  const ROW = 28;
-  const H = nSlots * ROW;
-  const days = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+  const FULL = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
   const TTD = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
   const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+  const ROW = 28;
 
-  const byDay = days.map(() => []);
+  // Görünür günler: seçili şubelerin hiçbiri hafta sonuna denk gelmiyorsa CMT/PAZ
+  // gizlenir; "hafta sonunu göster" ile açılabilir (D).
+  const hasDay = FULL.map((d) => t.all.some((s) => s.day === d));
+  const visIdx = showWeekend || hasDay[5] || hasDay[6] ? [0, 1, 2, 3, 4, 5, 6] : [0, 1, 2, 3, 4];
+
+  // Izgara aralığı içeriğe göre daralır: en erken dersten 1 sa önce, en geç
+  // dersten 1 sa sonra. "Tüm günü göster" açıksa 07:00-23:00 (D).
+  let startSlot = showFullDay ? 7 * 60 : t.startSlot - 60;
+  let endSlot = showFullDay ? 23 * 60 : (t.startSlot + t.nSlots * 30) + 60;
+  startSlot = Math.max(0, Math.min(1380, startSlot));
+  endSlot = Math.max(60, Math.min(1440, endSlot));
+  const nSlots = (endSlot - startSlot) / 30;
+  const H = nSlots * ROW;
+
+  const byDay = FULL.map(() => []);
   for (const s of t.all) {
-    const di = days.indexOf(s.day);
+    const di = FULL.indexOf(s.day);
     if (di >= 0) byDay[di].push(s);
   }
 
+  // Çakışan blokları yan yana şeritlere böler; kırmızı işaret YALNIZCA gerçek
+  // çakışmada — aynı gün içinde zaman aralığı örtüşen bloklar (tüm gün değil).
   const place = (events) => {
     const evs = events.slice().sort((a, b) => a.start - b.start || a.end - b.end);
     const lanes = [];
@@ -538,37 +583,73 @@ function renderGrid(itemRows) {
     }
     const laneCount = Math.max(1, lanes.length);
     out.forEach((o) => { o.laneCount = laneCount; });
+    for (const o of out) {
+      o.conflict = out.some((o2) => o2 !== o && o.start < o2.end && o2.start < o.end);
+    }
     return out;
   };
 
+  // Sade temada blok zeminini koyulaştırıp metin kontrastını ≥4.5:1'e garantile.
+  const isSade = document.documentElement.dataset.theme === 'sade';
+
   let html = `<p class="tt-note"><b>${t.all.length}</b> oturum · <b>${itemRows.length}</b> şube</p>`;
-  html += `<div class="tt-scroll"><div class="tt-grid">`;
-  html += `<div class="tt-head tt-corner"></div>${TTD.map((d) => `<div class="tt-head tt-dayhead">${d}</div>`).join('')}`;
+  html += `<div class="tt-scroll">`;
+  // Başlık satırı scroll kapsayıcının doğrudan çocuğu — sticky-top bu sayede
+  // çalışır (grid item'a hapsolmaz); corner yatay kaydırmada sticky-left (F).
+  html += `<div class="tt-headrow"><div class="tt-head tt-corner"></div>`;
+  for (const di of visIdx) html += `<div class="tt-head tt-dayhead">${TTD[di]}</div>`;
+  html += `</div>`;
+  // Gövde: saat sütunu + gün sütunları aynı yatay şeritte. Timecol bu şeridin
+  // doğrudan çocuğu — containing block'u tüm genişlik olduğundan sticky-left çalışır.
+  html += `<div class="tt-body">`;
   html += `<div class="tt-timecol">`;
   for (let si = 0; si < nSlots; si++) html += `<div class="tt-timeslot">${fmtMin(startSlot + si * 30)}</div>`;
   html += `</div>`;
-  for (let di = 0; di < 7; di++) {
+  html += `<div class="tt-days">`;
+  const now = new Date();
+  const todayIdx = (now.getDay() + 6) % 7; // Pzt=0 … Paz=6 (TTD sırası)
+  const nowMin = now.getHours() * 60 + now.getMinutes();
+  const showNow = term === state.index?.currentSlug
+    && now.getDay() >= 1 && now.getDay() <= 5
+    && visIdx.includes(todayIdx)
+    && nowMin >= startSlot && nowMin < endSlot;
+  const nowTop = ((nowMin - startSlot) / 30) * ROW;
+  for (const di of visIdx) {
     const placed = place(byDay[di]);
-    html += `<div class="tt-day" style="height:${H}px">`;
+    html += `<div class="tt-day${di >= 5 ? ' tt-wknd' : ''}" style="height:${H}px">`;
+    // Şu anki zaman çizgisi (C): bugünün sütununda, vurgu rengi (kırmızı çakışma için ayrıldı).
+    if (showNow && di === todayIdx) {
+      html += `<div class="tt-now" style="top:${nowTop}px" role="presentation"></div>`;
+    }
     for (const p of placed) {
       const top = ((p.start - startSlot) / 30) * ROW;
       const height = Math.max(20, ((p.end - p.start) / 30) * ROW);
       const w = 100 / p.laneCount;
       const left = p.lane * w;
-      const conflict = p.laneCount > 1;
       const color = colorFor(p.row[1]);
-      const fg = fgFor(color);
+      const { bg, fg } = isSade ? blockContrast(color) : { bg: color, fg: fgFor(color) };
+      const narrow = height <= 56; // ≤ 1 saat: yalnızca kod, gerisi tooltip (E)
       placedRefs.push(p.row);
-      html += `<button type="button" class="tt-block${conflict ? ' tt-block-conf' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px;--ttc:${color};--tt-fg:${fg}" title="${esc(p.row[1])} · ${esc(p.row[5])}">
+      html += `<button type="button" class="tt-block${p.conflict ? ' tt-block-conf' : ''}${narrow ? ' tt-block-narrow' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px;--ttc:${bg};--tt-fg:${fg}" title="${esc(p.row[1])} · ${esc(p.row[5])} · CRN ${esc(p.row[0])}">
         <span class="tt-time">${fmtMin(p.start)} - ${fmtMin(p.end)}</span>
         <span class="tt-code">${esc(p.row[1])}</span>
-        ${conflict ? '<span class="tt-conf-icon" title="Çakışma">⚠</span>' : ''}
+        <span class="tt-crn">CRN ${esc(p.row[0])}</span>
+        ${p.conflict ? '<span class="tt-conf-icon" title="Çakışma">⚠</span>' : ''}
       </button>`;
     }
     html += `</div>`;
   }
-  html += `</div></div>`;
+  html += `</div></div></div>`;
+  html += noTimeNote;
   wrap.innerHTML = html;
+
+  // Sütun sayısı görünür gün sayısına göre değişir; tam saat çizgilerinin fazı
+  // başlangıç yarım saatteyse (08:30) tek slot kayar (A).
+  const days = wrap.querySelector('.tt-days');
+  if (days) {
+    days.style.gridTemplateColumns = `repeat(${visIdx.length}, 1fr)`;
+    days.style.setProperty('--tt-halfshift', startSlot % 60 === 30 ? '28px' : '0px');
+  }
 
   wrap.querySelectorAll('.tt-block').forEach((b, i) => {
     b.addEventListener('click', () => openDetail(placedRefs[i], term));
@@ -951,6 +1032,9 @@ function downloadPNG() {
     }
     const laneCount = Math.max(1, lanes.length);
     out.forEach((o) => { o.laneCount = laneCount; });
+    for (const o of out) {
+      o.conflict = out.some((o2) => o2 !== o && o.start < o2.end && o2.start < o.end);
+    }
     return out;
   };
   for (let di = 0; di < 7; di++) {
@@ -965,7 +1049,7 @@ function downloadPNG() {
       ctx.globalAlpha = 0.9;
       ctx.fillRect(x + 1, top + 1, w - 2, height - 2);
       ctx.globalAlpha = 1;
-      if (p.laneCount > 1) {
+      if (p.conflict) {
         ctx.strokeStyle = red;
         ctx.lineWidth = 2;
         ctx.strokeRect(x + 1, top + 1, w - 2, height - 2);

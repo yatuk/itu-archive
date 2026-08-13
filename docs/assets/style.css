@@ -63,6 +63,9 @@
   --tt-bg: #1a1a1a;
   --tt-fg: #fff;
   --tt-onboard-bg: #0e2e22;
+  /* Zaman çizelgesi ızgarası çizgi tonları (fosfor mevcut --line tonunu korur). */
+  --tt-line: var(--line);
+  --tt-line-soft: color-mix(in srgb, var(--line) 55%, transparent);
   --w: 1180px;
   /* Faz 1 — premium tasarım token'ları */
   --hairline: rgba(255, 255, 255, .08);
@@ -106,6 +109,9 @@
   --detail-bg: #f7f9f7;
   --canvas-bg: #fbfcfb;
   --now-bg: #e8f2ec;
+  /* Zaman çizelgesi ızgarası çizgileri — yönlendirici, metin değil (~1.5:1). */
+  --tt-line: #c2cec5;
+  --tt-line-soft: color-mix(in srgb, #c2cec5 55%, transparent);
   --chart-cap: rgba(26, 122, 85, .14);
   --chart-cap-edge: rgba(26, 122, 85, .5);
   --chart-axis: rgba(76, 95, 83, .6);
@@ -569,6 +575,9 @@ table.tt td.tt-conflict {
 .tt-chip:hover { color: var(--acid); border-color: var(--acid); }
 .tt-chip:focus-visible { outline: 2px solid var(--cyan); }
 .tt-conflict-note { color: var(--red); font-size: 12px; margin-top: 10px; }
+
+/* Arama eşleşmesi vurgusu (Dersler): "neden eşleşti" görünür; her temada okunur. */
+td mark { background: color-mix(in srgb, var(--acid) 28%, transparent); color: inherit; border-radius: 3px; padding: 0 1px; }
 
 td.crn { color: var(--dimmer); }
 td.code b { color: var(--cyan); font-weight: 700; white-space: nowrap; }
@@ -1334,24 +1343,58 @@ body.modal-open { overflow: hidden; }
 
 .p-main { min-width: 0; }
 .p-grid { min-width: 0; }
+/* Izgara görünüm seçenekleri (hafta sonu / tüm gün) — ızgaranın üstünde. */
+.p-gridopts {
+  display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 8px;
+  color: var(--dim); font-size: 12px;
+}
+.p-gridopts .check { display: inline-flex; align-items: center; gap: 6px; }
 
 /* Blok çizelge: ders saatleri tek dikdörtgen blok olarak (30dk hücreleri tekrarlanmaz) */
-.tt-grid {
-  display: grid; grid-template-columns: 56px repeat(7, 1fr); min-width: 720px;
-  border-collapse: collapse;
+/* Program ızgarası dikey kaydırmada içeride kalır — başlık sticky-top böyle çalışır (F). */
+.p-grid .tt-scroll { max-height: min(68vh, 760px); }
+/* Başlık satırı scroll kapsayıcının doğrudan çocuğu: sticky-top tüm yükseklikte geçerli
+   (grid item'a hapsolmaz); corner yatay kaydırmada sticky-left. */
+.tt-headrow {
+  display: flex; min-width: 720px; position: sticky; top: 0; z-index: 3;
+  background: var(--panel-2); border-bottom: 1px solid var(--hairline-strong);
 }
 .tt-head {
   font-size: 10px; letter-spacing: .12em; text-transform: uppercase; text-align: center;
-  color: var(--dimmer); padding: 6px 2px; border-bottom: 1px solid var(--hairline-strong);
-  position: sticky; top: 0; z-index: 2; background: var(--panel-2);
+  color: var(--dimmer); padding: 6px 2px; flex: 1;
 }
-.tt-corner { background: transparent; border: none; }
-.tt-timecol { display: flex; flex-direction: column; }
+.tt-headrow .tt-corner {
+  flex: 0 0 56px; position: sticky; left: 0; z-index: 4;
+  background: var(--panel-2); border: none;
+}
+/* Gövde: sol saat sütunu + gün sütunları aynı yatay şeritte. Timecol bu şeridin
+   doğrudan çocuğu — containing block'u tüm genişlik olduğundan sticky-left çalışır. */
+.tt-body { display: flex; min-width: 720px; }
+.tt-timecol {
+  flex: 0 0 56px; display: flex; flex-direction: column;
+  position: sticky; left: 0; z-index: 2; background: var(--panel);
+}
+.tt-days {
+  flex: 1; display: grid; min-width: 0;
+  /* Sütun sayısı görünür gün sayısına göre JS'te inline olarak ayarlanır (5 ya da 7). */
+}
 .tt-timeslot {
   height: 28px; color: var(--dim); font-size: 10px; text-align: right;
-  padding-right: 8px; line-height: 28px; border-top: 1px solid var(--line);
+  padding-right: 8px; line-height: 28px;
 }
-.tt-day { position: relative; border-left: 1px solid var(--line); }
+/* Yatay saat çizgileri (A): gövdeye repeating-linear-gradient. Tam saatler koyu
+   (56px aralık), yarım saatler açık (28px aralık). Başlangıç yarım saatteyse
+   (08:30) --tt-halfshift ile faz kayar — satır etiketleriyle piksel hizalı. */
+.tt-day {
+  position: relative; border-left: 1px solid var(--tt-line);
+  background-image:
+    repeating-linear-gradient(to bottom, var(--tt-line-soft) 0 1px, transparent 1px 28px),
+    repeating-linear-gradient(to bottom, var(--tt-line) 0 1px, transparent 1px 56px);
+  background-position: 0 0, 0 var(--tt-halfshift, 0px);
+  background-repeat: repeat;
+}
+/* Hafta sonu sütunları (CMT/PAZ) görsel olarak biraz daha soluk zeminde durur (B). */
+.tt-day.tt-wknd { background-color: color-mix(in srgb, var(--panel-2) 55%, transparent); }
 .tt-block {
   position: absolute; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   border-radius: 6px; padding: 2px 6px; font-size: 11px; text-align: left;
@@ -1362,8 +1405,12 @@ body.modal-open { overflow: hidden; }
   display: flex; flex-direction: column; gap: 1px;
   transition: filter 140ms var(--ease-out-expo), transform 140ms var(--ease-spring);
 }
-.tt-block .tt-time { font-size: 9px; opacity: .85; letter-spacing: .02em; }
+.tt-block .tt-time { font-size: 9px; letter-spacing: .02em; }
 .tt-block .tt-code { font-weight: 600; font-size: 11px; overflow: hidden; text-overflow: ellipsis; }
+.tt-block .tt-crn { font-size: 9px; }
+/* Dar blok (≤ ~1 saat): yalnızca kod kalır; saat/CRN tooltip'te (E). */
+.tt-block-narrow .tt-time,
+.tt-block-narrow .tt-crn { display: none; }
 .tt-block:hover { filter: brightness(1.1); transform: scale(1.02); }
 .tt-block:focus-visible { outline: 2px solid var(--acid); outline-offset: 1px; }
 .tt-block-conf {
@@ -1371,6 +1418,17 @@ body.modal-open { overflow: hidden; }
   border-color: var(--red);
 }
 .tt-conf-icon { position: absolute; top: 3px; right: 4px; font-size: 11px; color: var(--tt-fg, #fff); }
+/* Şu anki zaman çizgisi (C): vurgu rengi — kırmızı çakışma için ayrıldı. */
+.tt-now {
+  position: absolute; left: 0; right: 0; height: 2px; background: var(--acid);
+  z-index: 2; pointer-events: none;
+}
+.tt-now::before {
+  content: ''; position: absolute; left: -3px; top: -3px;
+  width: 8px; height: 8px; border-radius: 50%; background: var(--acid);
+}
+/* Zaman bilgisi olmayan şube notu (G) — amber, kırmızı değil. */
+.tt-no-time { color: var(--amber); font-size: 12px; margin-top: 8px; }
 
 .p-toolbar {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;

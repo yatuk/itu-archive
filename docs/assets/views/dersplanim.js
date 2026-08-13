@@ -36,11 +36,17 @@ let rows = [];          // o dönemin search.json satırları
 const histCache = new Map(); // branş → history nesnesi
 let stored = {};        // program bazlı not verisi (localStorage)
 const catalogMap = new Map(); // seçilen seçmeli ders kodu → { local, ects }
+let initialParams = null; // onShow'da senkron yakalanan URL parametreleri
 
 // Filtre durumu (URL'den okunur, DOM'dan yazılır).
 const filters = { open: false, cap: false, hideTaken: false, semesters: new Set(), types: new Set() };
 
 export async function onShow() {
+  // URL parametrelerini SENKRON yakala: app.js writeViewUrl, await sırasında
+  // sekme URL'sini yeniden yazıp prog'u düşürebilir (DOM henüz boşken) —
+  // doğrudan ?prog=X#dersplanim bağlantısı bu yüzden programı kaybetmemeli.
+  const urlParams = new URLSearchParams(location.search);
+  initialParams = urlParams;
   ensureHost();
   if (!inited) {
     init();
@@ -51,9 +57,8 @@ export async function onShow() {
   }
   const sel = $('#dp-prog');
   if (sel.options.length === 0) sel.innerHTML = renderProgramOptions();
-  const params = new URLSearchParams(location.search);
-  const want = params.get('prog') || '';
-  applyParams(params);
+  const want = urlParams.get('prog') || '';
+  applyParams(urlParams);
   // URL'deki program geçerliyse onu, değilse ilk programı seç (URL kaynaktır).
   const current = progIndex.some((p) => p.code === want) ? want : (progIndex[0]?.code || '');
   sel.value = current;
@@ -182,8 +187,7 @@ async function ensureTerm() {
       .filter((t) => !t.missing)
       .map((t) => `<option value="${t.slug}">${t.label}</option>`).join('');
   }
-  const params = new URLSearchParams(location.search);
-  const want = params.get('term');
+  const want = (initialParams || new URLSearchParams(location.search)).get('term');
   termSlug = (want && state.index?.terms.some((t) => t.slug === want)) ? want : (state.index?.currentSlug || '');
   sel.value = termSlug;
 }

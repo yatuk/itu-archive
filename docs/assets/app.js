@@ -240,7 +240,9 @@ function derslerParams() {
 // değişince app.js kapsama kuralıyla düşer).
 function dersplanimParams() {
   const p = new URLSearchParams();
-  const prog = $('#dp-prog')?.value;
+  // DOM henüz hazır değilken (ilk açılışta yazma, görünüm yüklenmeden) gelen
+  // URL'deki prog korunur — ?prog=X#dersplanim bağlantısı sıyrılmasın.
+  const prog = $('#dp-prog')?.value || new URLSearchParams(location.search).get('prog') || '';
   if (prog) p.set('prog', prog);
   if ($('#dp-open')?.checked) p.set('fopen', '1');
   if ($('#dp-cap')?.checked) p.set('fcap', '1');

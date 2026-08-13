@@ -431,7 +431,9 @@ function renderRows(append) {
   if (rows) {
     rows.forEach((tr, i) => {
       const r = slice[i];
-      tr.querySelector('.row-toggle').addEventListener('click', () => openDetail(r));
+      // Toggle tıklaması satıra kabarcıklanıp openDetail'i iki kez çağırmasın
+      // (ikinci çağrı odak-dönüş kaydını ezdiği için WCAG 2.4.3'ü bozuyordu).
+      tr.querySelector('.row-toggle').addEventListener('click', (ev) => { ev.stopPropagation(); openDetail(r); });
       // Satırın herhangi bir yerine tıklayınca detay açılır; checkbox tıklaması
       // seçim için ayrıdır ve satır tıklamasını tetiklemez.
       tr.addEventListener('click', () => openDetail(r));

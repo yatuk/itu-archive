@@ -66,6 +66,8 @@
   /* Zaman çizelgesi ızgarası çizgi tonları (fosfor mevcut --line tonunu korur). */
   --tt-line: var(--line);
   --tt-line-soft: color-mix(in srgb, var(--line) 55%, transparent);
+  /* Modal karartısı — fosfor değeri donmuştur; sade açık temada hafif perdeye iner. */
+  --scrim: rgba(3, 5, 4, .72);
   --w: 1180px;
   /* Faz 1 — premium tasarım token'ları */
   --hairline: rgba(255, 255, 255, .08);
@@ -112,6 +114,8 @@
   /* Zaman çizelgesi ızgarası çizgileri — yönlendirici, metin değil (~1.5:1). */
   --tt-line: #c2cec5;
   --tt-line-soft: color-mix(in srgb, #c2cec5 55%, transparent);
+  /* Sade modal perdesi: fosforun siyahı yerine hafif nötr ton — kimlikle çelişmez. */
+  --scrim: rgba(30, 43, 35, .22);
   --chart-cap: rgba(26, 122, 85, .14);
   --chart-cap-edge: rgba(26, 122, 85, .5);
   --chart-axis: rgba(76, 95, 83, .6);
@@ -167,6 +171,24 @@
 [data-theme="sade"] .prose h2 { letter-spacing: .05em; }
 /* Izgara blok saat metni 9px — sade'de okunurluk için bir kademe büyür. */
 [data-theme="sade"] .tt-block .tt-time { font-size: 10px; }
+/* Detay paneli — sade yüzeyi: şube kartları beyaz üstüne soluk çizgiyle kayboluyor;
+   hafif panel-2 zemini + belirgin kenarlık verilir (fosfor beyaz kartını korur). */
+[data-theme="sade"] .d-sec,
+[data-theme="sade"] .d-cat-details {
+  background: var(--panel-2);
+  border-color: var(--line-hot);
+  border-radius: var(--radius-card);
+}
+/* Panel içi küçük notlarda `.empty`'nin 40px dolgusu gereksiz şişiriyor. */
+[data-theme="sade"] .detail-box .empty { padding: 10px 12px; text-align: left; }
+/* Uzun program adlı çipler tam-genişlik kutuya dönüşmesin. */
+[data-theme="sade"] .d-prog { display: inline-block; max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: middle; }
+/* Panel bölüm başlıkları (.d-* h4) sade'de fosforun geniş-tracking'ini taşıyor. */
+[data-theme="sade"] .d-progs h4,
+[data-theme="sade"] .d-secs h4,
+[data-theme="sade"] .d-hist h4,
+[data-theme="sade"] .d-cat h4,
+[data-theme="sade"] .d-req-by h4 { letter-spacing: .05em; }
 
 /* Açık temada arama alanları tekil görünüm: ">" terminal öneki yerine büyüteç,
    kutu görünüm, kenarlık ≥3:1, odakta 2px halka. Fosfor teması ">" önekini korur. */
@@ -1012,7 +1034,7 @@ footer {
 
 .detail-panel {
   position: fixed; inset: 0; z-index: 200;
-  background: rgba(3, 5, 4, .72);
+  background: var(--scrim);
   display: flex; align-items: flex-start; justify-content: center;
   padding: 6vh 16px; overflow-y: auto;
   animation: detail-fade 200ms var(--ease-out-expo);
@@ -1021,7 +1043,7 @@ footer {
 /* Stillenmiş onay/metin diyaloğu (core/dialog.js) — native confirm/prompt yerine. */
 .dlg {
   position: fixed; inset: 0; z-index: 210;
-  background: rgba(3, 5, 4, .72);
+  background: var(--scrim);
   display: flex; align-items: center; justify-content: center;
   padding: 20px;
   animation: detail-fade 200ms var(--ease-out-expo);
@@ -1071,6 +1093,8 @@ footer {
   position: absolute; top: 10px; right: 12px; font: inherit; cursor: pointer;
   background: transparent; color: var(--dim); border: none; font-size: 18px; line-height: 1;
 }
+/* Kapatma butonunun tıklama alanı görseli büyütmeden genişler (WCAG 2.5.8). */
+.detail-close::after { content: ''; position: absolute; inset: -6px; }
 .detail-close:hover { color: var(--acid); }
 .detail-close:focus-visible { outline: 2px solid var(--cyan); }
 .detail-box h3 { margin: 0 0 6px; font-size: 17px; color: var(--acid); letter-spacing: .04em; }

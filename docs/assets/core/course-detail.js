@@ -521,12 +521,33 @@ export function closeCourseDetail() {
   if (lastDetailFocus && typeof lastDetailFocus.focus === 'function') lastDetailFocus.focus();
 }
 
+// Modal içinde Tab döngüsü (aria-modal için odak tuzağı): odak panel dışına kaçmaz.
+function trapDetailFocus(e) {
+  if (e.key !== 'Tab') return;
+  const panel = $('#detail-panel');
+  if (!panel || panel.hidden) return;
+  const focusables = [...panel.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')]
+    .filter((el) => !el.disabled && el.offsetParent !== null);
+  if (!focusables.length) return;
+  const first = focusables[0];
+  const last = focusables[focusables.length - 1];
+  const active = document.activeElement;
+  if (e.shiftKey && (!panel.contains(active) || active === first)) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && (!panel.contains(active) || active === last)) {
+    e.preventDefault();
+    first.focus();
+  }
+}
+
 // Modal kapama + dış kaynaklardan (havuz, önşart) gelen istekleri bağlar.
 // app.js boot'ta bir kez çağırır.
 export function initCourseDetail() {
   $('#detail-close').addEventListener('click', closeCourseDetail);
   $('#detail-panel').addEventListener('click', (e) => { if (e.target.id === 'detail-panel') closeCourseDetail(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#detail-panel').hidden) closeCourseDetail(); });
+  document.addEventListener('keydown', trapDetailFocus);
   window.addEventListener('itu:course-detail', (e) => {
     const d = e.detail || {};
     if (d.code) openCourseDetail(d.code, { term: d.term, source: d.source });

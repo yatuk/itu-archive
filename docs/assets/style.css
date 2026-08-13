@@ -1262,6 +1262,9 @@ body.modal-open { overflow: hidden; }
 /* Faz 5.4: mobilde dersler tablosu kart görünümüne döner. 8 kolonlu tablo
    360px'te okunmuyor; satırlar etiketli kart olur, tablo başlıkları gizlenir. */
 @media (max-width: 640px) {
+  /* Kart görünümünü bozan global min-width sıfırlanır — 360px'te kartlar
+     gerçek genişliğe oturur, yatay kaydırma kalkar. */
+  #results, #etable { min-width: 0; }
   #results, #results thead, #results tbody { display: block; }
   #results thead { display: none; }
   #results tbody { display: grid; gap: 10px; }
@@ -1284,9 +1287,10 @@ body.modal-open { overflow: hidden; }
   #results .code small { display: inline; margin-left: 6px; }
   #results td.when { white-space: normal; }
 
-  /* Faz 5.4: sınavlar tablosu da mobilde kart görünümüne döner. */
-  #erows thead { display: none; }
-  #erows tbody { display: grid; gap: 10px; }
+  /* Faz 5.4: sınavlar tablosu da mobilde kart görünümüne döner.
+     #erows zaten tbody'dir — seçiciler #etable thead + #erows olmalı. */
+  #etable thead { display: none; }
+  #erows { display: grid; gap: 10px; }
   #erows tr {
     display: grid; grid-template-columns: 40% 1fr; gap: 2px 10px;
     background: var(--panel); border: 1px solid var(--hairline-strong);
@@ -1902,3 +1906,47 @@ body.modal-open { overflow: hidden; }
 }
 
 .dp-types-progress { color: var(--dim); font-size: 12px; margin-top: 8px; }
+
+/* ================= MOBİL UYUM =================
+   Yalnızca yerleşim/fonksiyon — renk/tipografi değil. Fosfor masaüstünde piksel
+   düzeyinde değişmez (bu kurallar dar ekranlarda uygulanır). Kırılma noktaları:
+   ≤600 mobil · 601-1024 tablet · >1024 masaüstü. Cihaz tespiti yok. */
+
+/* Safe area: iPhone çentik / ev çubuğu payı. */
+body { padding-bottom: env(safe-area-inset-bottom); }
+
+/* Form font ≥16px — iOS Safari odakta zoom yapmasın. Desktop/fosfor 14px kalır. */
+@media (max-width: 600px) {
+  input, select, textarea { font-size: 16px; }
+  /* Açıkça 12-14px verilen formlar da 16px'e çıkar (zoom tuzağı). */
+  .f-in, .dp-grade, .dp-epick, .dp-transfer input, .dp-target-gpa input,
+  .dlg-input, .taken-codes, .taken-program { font-size: 16px; }
+  .dp-grade { width: 76px; }
+  /* Mobil gövde okunabilirliği: 16px taban; yoğun veri öğeleri kendi boyutunda. */
+  body { font-size: 16px; }
+  main.wrap { padding-bottom: calc(40px + env(safe-area-inset-bottom)); }
+}
+
+/* Dokunma hedefleri ≥44px. Yoğun satırlarda görseli büyütmeden ::after ile
+   tıklama alanı genişletilir; formlar/butonlar min-height alır. */
+@media (max-width: 600px) {
+  .tabs button, .btn-ghost, .btn-primary, .theme-btn, #lang-btn, #taken-btn,
+  .th-sort, .row-toggle, .dp-code, .dp-more, .dp-actions button,
+  .d-prog, .d-req, .d-eq, .p-menu, .p-menu-pop button, .p-result,
+  .dp-type, .dp-sec-btn, .dp-repeat-btn, .dp-grade-clear, .chip-x, .w-close,
+  .search-clear, .pg-level, .pg-chip, .dp-grade, .dp-epick, select, .f-in {
+    min-height: 44px;
+  }
+  .fav-star { position: relative; }
+  .fav-star::after { content: ''; position: absolute; inset: -14px; }
+  /* Dar görünümlü butonlar: görseli büyütmeden tıklama alanı 44px+ */
+  .theme-btn, .w-close, .search-clear, .dp-grade-clear, .dp-sec-btn, .dp-repeat-btn, .chip-x, .d-prog, .d-req, .d-eq, .dp-code { position: relative; }
+  .theme-btn::after, .w-close::after, .search-clear::after, .dp-grade-clear::after, .dp-sec-btn::after, .dp-repeat-btn::after, .chip-x::after, .d-prog::after, .d-req::after, .d-eq::after, .dp-code::after { content: ''; position: absolute; inset: -8px; }
+  .w-close::after { inset: -12px; }
+  .row-sel { width: 22px; height: 22px; }
+  .detail-close::after { inset: -13px; }
+}
+
+/* Üst başlık kontrolleri ve önşart plan etiketi 360px'te taşmasın. */
+.mast-controls { flex-wrap: wrap; gap: 8px; }
+.pg-console .pg-plan-label { white-space: normal; overflow-wrap: anywhere; }

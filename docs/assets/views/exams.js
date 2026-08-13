@@ -8,6 +8,8 @@ import { toast } from '../core/toast.js';
 
 let inited = false;
 let currentHits = []; // son filtre sonucu — .ics dışa aktarımı için
+// Sınav listesi sayfalama: 400'lük tavan yerine "daha fazla" ile artar.
+let examsShown = 400;
 
 export function initExams() {
   if (inited) return;
@@ -17,6 +19,8 @@ export function initExams() {
   $('#f-ebranch').addEventListener('change', renderExams);
   const ics = $('#e-ics');
   if (ics) ics.addEventListener('click', exportExamsICS);
+  const emore = $('#emore');
+  if (emore) emore.addEventListener('click', () => { examsShown += 200; renderExams(true); });
   inited = true;
 }
 
@@ -52,8 +56,9 @@ async function loadExams() {
   renderExams();
 }
 
-function renderExams() {
+function renderExams(append) {
   if (!state.exams) return;
+  if (!append) examsShown = 400;
   const q = fold($('#eq').value.trim());
   const type = $('#f-etype').value;
   const bld = $('#f-building').value;
@@ -83,7 +88,7 @@ function renderExams() {
   }
   $('#eresultline').innerHTML = resultLine;
 
-  const rows = fillRows($('#erows'), hits.slice(0, 400), (e) => `
+  const rows = fillRows($('#erows'), hits.slice(0, examsShown), (e) => `
     <tr><td class="crn" data-label="CRN">${esc(e.crn)}</td>
         <td class="code" data-label="Ders"><button type="button" class="row-toggle x-detail" data-code="${esc(e.code)}"><b>${esc(e.code)}</b></button></td>
         <td data-label="Adı">${esc(e.name)}</td>
@@ -93,6 +98,11 @@ function renderExams() {
         <td data-label="Tarih">${esc(e.date)}</td>
         <td class="when" data-label="Saat">${esc(e.day)} ${esc(e.time)}</td></tr>`,
   { empty: 'eşleşen sınav yok', colspan: showPlace ? 8 : 7 });
+  const emore = $('#emore');
+  if (emore) {
+    emore.hidden = hits.length <= examsShown;
+    emore.textContent = `daha fazla göster (${hits.length - examsShown} kaldı)`;
+  }
   if (rows) {
     rows.forEach((tr) => {
       const b = tr.querySelector('.x-detail');

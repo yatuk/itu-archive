@@ -289,9 +289,9 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     });
   }
   const reqFwd = content.querySelector('.d-req-fwd');
-  if (reqFwd) loadPrereqTree(reqFwd, code);
+  if (reqFwd) loadPrereqWhenVisible(reqFwd, () => loadPrereqTree(reqFwd, code));
   const reqBy = content.querySelector('.d-req-by');
-  if (reqBy) loadReqBy(reqBy);
+  if (reqBy) loadPrereqWhenVisible(reqBy, () => loadReqBy(reqBy));
 
   // Faz A (G5): EN modunda, katalogda İngilizce ad varsa başlığı onunla değiştir.
   const titleSpan = content.querySelector('#detail-title span');
@@ -342,6 +342,18 @@ if (typeof window !== 'undefined') {
 // Panelde dersin önşart VE/VEYA ağacı (P1-9). prereq/graph.json'da kayıtlı
 // önşartı olan ders için yapılandırılmış ağaç; yoksa "kayıtlı önşartı yok".
 // graph.json önşart sekmesinde zaten lazy yüklenir; burada önbellekli.
+// graph.json (1,9MB) + reverse.json (288KB) YALNIZCA önşart bölümü görünüme
+// girince yüklenir — her detay açılışında ağa gidilmez (mobil veri maliyeti).
+function loadPrereqWhenVisible(section, loader) {
+  if (!section || !('IntersectionObserver' in window)) { loader(); return; }
+  const io = new IntersectionObserver((entries) => {
+    if (entries.some((e) => e.isIntersecting)) {
+      io.disconnect();
+      loader();
+    }
+  }, { rootMargin: '240px' });
+  io.observe(section);
+}
 let reqGraphCache = null;
 async function loadReqGraph() {
   if (reqGraphCache === null) {

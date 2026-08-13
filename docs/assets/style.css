@@ -1694,8 +1694,8 @@ body.modal-open { overflow: hidden; }
 /* ---------- Ders Planım sekmesi (Faz: ders-planim) ---------- */
 
 .dp-console { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.dp-console label { display: inline-flex; align-items: center; gap: 6px; }
-.dp-prog-select { max-width: 420px; }
+.dp-console label { display: inline-flex; align-items: center; gap: 6px; min-width: 0; }
+.dp-prog-select { max-width: min(420px, 100%); }
 
 .dp-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin: 12px 0 4px; }
 .dp-filters .check { color: var(--dim); font-size: 13px; }
@@ -1724,7 +1724,14 @@ body.modal-open { overflow: hidden; }
 .dp-summary-grid em { color: var(--dimmer); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; font-style: normal; }
 .dp-plan-label { text-transform: none; letter-spacing: normal; font-size: 12px; }
 
-.dp-sem { margin-bottom: 22px; }
+/* Yarıyıl blokları: geniş ekranda iki kolon, her yarıyıl kendi çerçevesinde.
+   Dar ekranda tek kolona iner. */
+.dp-semesters { display: grid; gap: 16px; align-items: start; }
+@media (min-width: 900px) { .dp-semesters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.dp-sem {
+  border: 1px solid var(--hairline); background: var(--panel);
+  border-radius: var(--radius-card); padding: 12px 14px 14px;
+}
 .dp-sem-head {
   display: flex; align-items: baseline; gap: 12px;
   border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 8px;
@@ -1732,41 +1739,66 @@ body.modal-open { overflow: hidden; }
 }
 .dp-load { color: var(--dim); font-size: 12px; font-weight: 400; }
 
+/* Ders/seçmeli satırı — sabit 5 hücreli ızgara: kredi | ders | tekrar | not | durum.
+   Şube listesi (.dp-secslot) satırın ALTINDA katlı — satır yüksekliği şube sayısından
+   bağımsızdır (tek şubeli ve 48 şubeli aynı yükseklik). Tam DOM, ham HTML yok. */
 .dp-course, .dp-elective {
   border: 1px solid var(--hairline); background: var(--panel);
-  margin-bottom: 6px;
+  border-radius: var(--radius-card); margin-bottom: 6px; padding: 4px 0;
 }
-.dp-course-head {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px;
-  padding: 8px 12px;
+.dp-row, .dp-colhead {
+  display: grid; grid-template-columns: 32px minmax(0, 1fr) 26px auto auto;
+  gap: 6px 10px; align-items: center; padding: 2px 12px;
 }
+.dp-colhead {
+  color: var(--dimmer); font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+}
+.dp-credit {
+  min-width: 28px; height: 28px; padding: 0 5px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-size: 12px; font-weight: 700;
+  color: var(--fg); background: var(--panel-2); border: 1px solid var(--line-hot);
+}
+.dp-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; min-width: 0; overflow-wrap: anywhere; }
 .dp-code {
   font: inherit; cursor: pointer; color: var(--cyan); font-weight: 700;
-  background: none; border: none; padding: 0; text-align: left;
+  background: none; border: none; padding: 0; text-align: left; white-space: nowrap;
 }
 .dp-code:hover { text-decoration: underline; }
-.dp-name { color: var(--fg); flex: 1 1 160px; }
-.dp-meta { color: var(--dim); font-size: 12px; white-space: normal; overflow-wrap: anywhere; }
-
-.dp-badge {
-  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
-  border: 1px solid var(--line-hot); color: var(--dim); padding: 1px 5px;
+.dp-name { color: var(--fg); }
+.dp-repeat-btn {
+  font: inherit; font-size: 14px; line-height: 1; cursor: pointer;
+  color: var(--dimmer); background: none; border: 1px solid transparent;
+  border-radius: 6px; padding: 3px 4px;
 }
-.dp-req { color: var(--acid); border-color: var(--acid); }
-.dp-type-b { color: var(--amber); border-color: var(--amber); }
-
-.dp-status { font-size: 12px; white-space: normal; overflow-wrap: anywhere; }
-.dp-status.open { color: var(--acid); }
-.dp-status.closed { color: var(--dim); }
-.dp-status.missing { color: var(--dimmer); }
+.dp-repeat-btn:hover { color: var(--amber); border-color: var(--line-hot); }
+.dp-repeat-btn.on { color: var(--amber); border-color: var(--amber); }
+.dp-grade-wrap { display: inline-flex; align-items: center; gap: 4px; }
+.dp-grade {
+  font: inherit; font-size: 12px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line-hot); padding: 3px 4px; width: 64px;
+}
+.dp-grade:focus { outline: 2px solid var(--acid); outline-offset: 1px; }
+.dp-grade.filled { background: var(--panel-2); border-color: var(--acid); font-weight: 600; }
+.dp-grade-clear {
+  font: inherit; font-size: 13px; line-height: 1; cursor: pointer;
+  color: var(--dim); background: none; border: none; padding: 2px 3px;
+}
+.dp-grade-clear:hover { color: var(--red); }
+.dp-sec-btn {
+  justify-self: end; font: inherit; font-size: 12px; cursor: pointer;
+  color: var(--cyan); background: none; border: none; white-space: nowrap; padding: 2px 0;
+}
+.dp-sec-btn:hover { text-decoration: underline; }
+.dp-sec-btn.closed { color: var(--dim); cursor: default; }
+.dp-sec-btn.closed:hover { text-decoration: none; }
+.dp-secslot { border-top: 1px dashed var(--hairline); margin-top: 6px; padding: 6px 12px 8px; }
+.dp-secslot[hidden] { display: none; }
 
 /* Şube listesi: tüm satırlar TEK ızgarada (her .dp-section display:contents ile
    doğrudan .dp-sections'ın grid hücreleri olur). Hoca bilgisi yoksa instr kolonu
-   hiç çizilmez (no-instr) — "-" basılmaz. Her satır şube başına kontenjan gösterir;
-   toplam ayrı etikettir. */
+   hiç çizilmez (no-instr) — "-" basılmaz. Her satır şube başına kontenjan gösterir. */
 .dp-sections {
-  border-top: 1px dashed var(--hairline);
-  padding: 6px 12px;
   display: grid; gap: 6px 12px; align-items: center; font-size: 13px;
   grid-template-columns: 150px 1.2fr 1.1fr auto; /* crn · when · doluluk · eylemler */
 }
@@ -1796,8 +1828,13 @@ body.modal-open { overflow: hidden; }
 .dp-more-wrap[hidden] { display: none; }
 .dp-sections-total { grid-column: 1 / -1; color: var(--dimmer); font-size: 11px; }
 
-.dp-elective .dp-actions { padding: 0 12px 8px; }
 .dp-elective-name { font-style: italic; }
+.dp-elective-inputs { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.dp-epick {
+  font: inherit; font-size: 12px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line-hot); padding: 3px 4px; max-width: 260px;
+}
+.dp-grade-hint { color: var(--dimmer); font-size: 12px; font-style: italic; }
 
 @media (max-width: 720px) {
   .dp-sections, .dp-sections.has-instr { display: block; }
@@ -1853,23 +1890,15 @@ body.modal-open { overflow: hidden; }
 
 .dp-sem-avg { color: var(--amber); font-size: 12px; font-weight: 400; margin-left: auto; white-space: nowrap; }
 
-.dp-grade-wrap { display: inline-flex; align-items: center; gap: 6px; }
-.dp-grade {
-  font: inherit; font-size: 12px; color: var(--fg); background: var(--bg);
-  border: 1px solid var(--line-hot); padding: 3px 4px; min-width: 60px;
-}
-.dp-grade:focus { outline: 2px solid var(--acid); outline-offset: 1px; }
+/* Geçersiz transfer değeri — yalnızca gerçekten geçersizken kırmızı (placeholder aralığı söyler). */
+.dp-transfer input.dp-invalid { border-color: var(--red); }
+.dp-transfer input.dp-invalid:focus { outline-color: var(--red); }
 
-.dp-repeat { color: var(--amber); font-size: 11px; border: 1px solid var(--amber); padding: 1px 5px; white-space: nowrap; }
-
-.dp-elective-inputs {
-  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
-  padding: 4px 12px 8px;
+/* 480px altı: tekrar sütunu gizlenir — dört sütun (kredi|ders|not|durum) taşmaz. */
+@media (max-width: 480px) {
+  .dp-row, .dp-colhead { grid-template-columns: 30px minmax(0, 1fr) auto auto; }
+  .dp-repeat-btn, .dp-repeat-cell, .dp-colhead span:nth-child(3) { display: none; }
+  .dp-epick { max-width: 160px; }
 }
-.dp-epick {
-  font: inherit; font-size: 12px; color: var(--fg); background: var(--bg);
-  border: 1px solid var(--line-hot); padding: 3px 4px; max-width: 300px;
-}
-.dp-grade-hint { color: var(--dimmer); font-size: 12px; font-style: italic; }
 
 .dp-types-progress { color: var(--dim); font-size: 12px; margin-top: 8px; }

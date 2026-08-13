@@ -16,9 +16,9 @@ import { topByCount } from '../views/history.js';
 import { icsText, hashShort, foldLine, formatInt } from './utils.js';
 import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
 import { parseCodes } from './taken.js';
-import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary, canonicalCode, codesMatch, groupSections, crnRangeText, courseMetaLabel } from './plan.js';
+import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary, canonicalCode, codesMatch, groupSections, crnRangeText, courseMetaLabel, creditBadge } from './plan.js';
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from './grades.js';
-import { setGrade, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
+import { setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
 import * as fav from './favorites.js';
 
 test('methodToCode/codeToMethod iki yönlü çevirir', () => {
@@ -1061,6 +1061,38 @@ test('exportJSON/importJSON yuvarlak döner', () => {
   assert.deepEqual(back.data.grades['BLG 101E'], { grade: 'AA' });
   assert.equal(back.data.transfer.credits, 20);
   assert.equal(importJSON('bozuk'), null);
+});
+
+test('setRepeat işareti açar/kapatır, grade/prev korunur', () => {
+  let data = setGrade({}, 'BLG 101E', 'FF');
+  data = setGrade(data, 'BLG 101E', 'BB'); // prev: FF
+  data = setRepeat(data, 'BLG 101E', true);
+  assert.equal(data.grades['BLG 101E'].repeat, true);
+  assert.equal(data.grades['BLG 101E'].grade, 'BB');
+  assert.equal(data.grades['BLG 101E'].prev, 'FF');
+  data = setRepeat(data, 'BLG 101E', false);
+  assert.equal(data.grades['BLG 101E'].repeat, false);
+});
+
+test('setGrade mevcut repeat işaretini korur', () => {
+  let data = setRepeat({}, 'MAT 101', true);
+  data = setGrade(data, 'MAT 101', 'CB');
+  assert.equal(data.grades['MAT 101'].repeat, true);
+});
+
+test('repeat işareti GANO hesabına girmez (buildEntries+calcGPA)', () => {
+  const plan = { semesters: [{ items: [{ course: { code: 'BLG 101E', credits: 3, ects: 6 } }] }] };
+  const withRep = buildEntries(plan, { grades: { 'BLG 101E': { grade: 'AA', repeat: true } } });
+  const without = buildEntries(plan, { grades: { 'BLG 101E': { grade: 'AA' } } });
+  assert.deepEqual(withRep, without);
+  assert.ok(Math.abs(calcGPA(withRep) - 4.0) < 1e-9);
+});
+
+test('creditBadge kredi değerini Türkçe yazar, sıfır/eksikte "0"', () => {
+  assert.equal(creditBadge({ credits: 3 }), '3');
+  assert.equal(creditBadge({ credits: 1.5 }), '1,5');
+  assert.equal(creditBadge({ credits: 0 }), '0');
+  assert.equal(creditBadge({}), '0');
 });
 
 test('examToIcs Türkçe tarih + saat aralığını ISO zamanlı etkinliğe çevirir', () => {

@@ -21,9 +21,9 @@ import { openCourseDetail } from '../core/course-detail.js';
 import { fillBar } from '../core/chart.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, courseMetaLabel } from '../core/plan.js';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge } from '../core/plan.js';
 import { isTaken, getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js';
-import { loadStored, saveStored, setGrade, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js';
 import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js';
 import { confirmDialog } from '../core/dialog.js';
 
@@ -103,15 +103,15 @@ function ensureHost() {
         </div>
         <div class="dp-types-progress" id="dp-types-progress" aria-live="polite"></div>
         <div class="dp-transfer">
-          <label>şimdiye kadarki kredi <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal"></label>
-          <label>mevcut GANO <input id="dp-tgpa" type="number" min="0" max="4" step="0.01" inputmode="decimal"></label>
-          <label class="dp-target-gpa">hedef GANO <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00"> <span class="dp-target-hint" id="dp-target-hint"></span></label>
+          <label>şimdiye kadarki kredi <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0–250"></label>
+          <label>mevcut GANO <input id="dp-tgpa" type="number" min="0" max="4" step="0.01" inputmode="decimal" placeholder="0–4"></label>
+          <label class="dp-target-gpa">hedef GANO <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00" placeholder="0–4"> <span class="dp-target-hint" id="dp-target-hint"></span></label>
         </div>
       </div>
       <div class="dp-grades-actions">
         <button type="button" id="dp-export" class="btn-ghost">dışa aktar</button>
         <button type="button" id="dp-import" class="btn-ghost">içe aktar</button>
-        <button type="button" id="dp-reset" class="btn-ghost p-danger">tümünü sıfırla</button>
+        <button type="button" id="dp-reset" class="btn-ghost">tümünü sıfırla</button>
       </div>
       <p class="dp-privacy">Notların yalnızca tarayıcında saklanır (localStorage); sunucuya hiçbir şey gönderilmez.
       Bu bir transkript değildir, "resmî GANO'n budur" demeyiz, "girdiğin notlara göre" deriz. Yuvarlama,
@@ -266,14 +266,50 @@ const GRADE_GROUPS = {
   e: ['E'],
 };
 
-function gradeOptions(selected, code) {
-  const opts = ['<option value="">—</option>']
-    .concat(GRADE_CHOICES.map((g) => `<option value="${g}" ${g === selected ? 'selected' : ''}>${g}</option>`))
-    .join('');
-  return `<select class="dp-grade" data-gkind="course" data-gcode="${esc(code)}" aria-label="${esc(code)} notu" tabindex="0">${opts}</select>`;
+// Not seçici: dar select (DOM node). data-gkind course/elective; seçiliyse "filled".
+function buildGradeSelect(selected, code, kind = 'course', slotKey = '') {
+  const sel = document.createElement('select');
+  sel.className = 'dp-grade';
+  sel.dataset.gkind = kind;
+  sel.dataset.gcode = code;
+  if (kind === 'elective') sel.dataset.gslot = slotKey;
+  sel.setAttribute('aria-label', `${code} notu`);
+  sel.tabIndex = 0;
+  const none = document.createElement('option');
+  none.value = '';
+  none.textContent = '—';
+  sel.appendChild(none);
+  for (const g of GRADE_CHOICES) {
+    const o = document.createElement('option');
+    o.value = g;
+    o.textContent = g;
+    if (g === selected) o.selected = true;
+    sel.appendChild(o);
+  }
+  if (selected) sel.classList.add('filled');
+  return sel;
 }
 
-// Seçmeli slot için ders seçimi + not girişi.
+function makeClearBtn() {
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'dp-grade-clear';
+  b.dataset.act = 'dp-clear';
+  b.textContent = '×';
+  b.title = 'notu temizle';
+  return b;
+}
+
+// Not seçiliyse yanına × ekler, boşsa kaldırır.
+function syncGradeClear(select, hasGrade) {
+  const wrap = select.closest('.dp-grade-wrap');
+  if (!wrap) return;
+  let clear = wrap.querySelector('.dp-grade-clear');
+  if (hasGrade && !clear) wrap.appendChild(makeClearBtn());
+  else if (!hasGrade && clear) clear.remove();
+}
+
+// Seçmeli slot için ders seçimi + not girişi. Option listeleri esc'li string (güvenli).
 function electiveControls(slotKey, e, pick) {
   const opts = (e.options || []).map((o) =>
     `<option value="${esc(o.code)}" ${pick?.code === o.code ? 'selected' : ''}>${esc(o.code)} — ${esc(o.name || '')}</option>`
@@ -281,9 +317,9 @@ function electiveControls(slotKey, e, pick) {
   const defaultOpt = `<option value="" ${!pick?.code ? 'selected' : ''}>— ders seç —</option>`;
   const pickSel = `<select class="dp-epick" data-slot="${slotKey}" aria-label="Seçmeli ders seç">${defaultOpt}${opts}</select>`;
   const grade = pick?.code
-    ? `<select class="dp-grade dp-egrade" data-gkind="elective" data-gslot="${slotKey}" data-gcode="${esc(pick.code)}" aria-label="${esc(pick.code)} notu" tabindex="0">
+    ? `<span class="dp-grade-wrap"><select class="dp-grade dp-egrade${pick.grade ? ' filled' : ''}" data-gkind="elective" data-gslot="${slotKey}" data-gcode="${esc(pick.code)}" aria-label="${esc(pick.code)} notu" tabindex="0">
         <option value="">—</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
-      </select>`
+      </select><button type="button" class="dp-grade-clear" data-act="dp-clear" title="notu temizle">×</button></span>`
     : '<span class="dp-grade-hint">önce ders seç</span>';
   return `<div class="dp-elective-inputs">${pickSel}${grade}</div>`;
 }
@@ -369,16 +405,36 @@ function renderAll() {
 
   const root = $('#dp-semesters');
   const historyCodes = [];
-
   const semAvgs = semesterAverages();
-  // Şube grupları (renderSections) DOM node döndürür; kart içindeki placeholder'a
-  // innerHTML sonrası yerleştirilir. slotKey benzersiz olduğundan eşleşme güvenli.
-  const pending = []; // { slot, sec }
-  root.innerHTML = sems.map(({ s, i }) => {
+  const frag = document.createDocumentFragment();
+  let any = false;
+
+  for (const { s, i } of sems) {
     const load = semesterLoad(s);
     const avg = semAvgs[i];
-    const avgHtml = avg == null ? '' : `<span class="dp-sem-avg" title="Bu yarıyılın ortalaması (girdiğin notlara göre)">ort ${fmtTr2(avg)}</span>`;
-    let itemHtml = '';
+    const sem = document.createElement('section');
+    sem.className = 'dp-sem';
+    sem.dataset.si = i;
+    const head = document.createElement('h3');
+    head.className = 'dp-sem-head';
+    const t = document.createElement('span');
+    t.textContent = s.title;
+    head.appendChild(t);
+    const loadEl = document.createElement('span');
+    loadEl.className = 'dp-load';
+    loadEl.textContent = fmtSemLoad(load);
+    head.appendChild(loadEl);
+    if (avg != null) {
+      const avgEl = document.createElement('span');
+      avgEl.className = 'dp-sem-avg';
+      avgEl.title = 'Bu yarıyılın ortalaması (girdiğin notlara göre)';
+      avgEl.textContent = `ort ${fmtTr2(avg)}`;
+      head.appendChild(avgEl);
+    }
+    sem.appendChild(head);
+    sem.appendChild(buildColHead());
+
+    let hasRows = false;
     s.items.forEach((item, ii) => {
       const slotKey = `s${i}i${ii}`;
       if (item.course) {
@@ -392,9 +448,8 @@ function renderAll() {
         if (filters.cap && !(st.state === 'open' && st.sections.some((sec) => sec.cap > sec.enr))) return;
         if (st.state === 'open') openCount++; else if (st.state === 'closed') closedCount++;
         shown++;
-        const card = courseRow(c, st, slotKey);
-        itemHtml += card.html;
-        if (card.sec) pending.push({ slot: slotKey, sec: card.sec });
+        sem.appendChild(courseRow(c, st, slotKey));
+        hasRows = true;
       } else if (item.elective) {
         const e = item.elective;
         if (filters.hideTaken && e.options && e.options.every((o) => isTaken(o.code))) return;
@@ -405,30 +460,41 @@ function renderAll() {
         if (filters.cap && !(joined.options.some((o) => o.status.state === 'open' && o.status.sections.some((sec) => sec.cap > sec.enr)))) return;
         if (open) slotOpen++;
         shown++;
-        itemHtml += electiveRow(joined, open, slotKey);
+        sem.appendChild(electiveRow(joined, open, slotKey));
+        hasRows = true;
       }
     });
-    if (!itemHtml) return '';
-    return `<section class="dp-sem" data-si="${i}">
-      <h3 class="dp-sem-head">${esc(s.title)} <span class="dp-load">${esc(fmtSemLoad(load))}</span>${avgHtml}</h3>
-      ${itemHtml}
-    </section>`;
-  }).join('');
+    if (!hasRows) continue;
+    any = true;
+    frag.appendChild(sem);
+  }
 
-  root.innerHTML = root.innerHTML || '<p class="empty">Bu filtrelerle eşleşen ders yok.</p>';
-
-  // Şube grubu placeholder'larını DOM node'larla değiştir (textContent güvenli).
-  root.querySelectorAll('.dp-secslot').forEach((slot) => {
-    const p = pending.find((x) => x.slot === slot.dataset.slot);
-    if (p) slot.replaceWith(p.sec);
-    else slot.remove();
-  });
+  if (any) root.replaceChildren(frag);
+  else {
+    const p = document.createElement('p');
+    p.className = 'empty';
+    p.textContent = 'Bu filtrelerle eşleşen ders yok.';
+    root.replaceChildren(p);
+  }
 
   // "Bu dönem planından N ders açık · M zorunlu · K seçmeli slot"
   $('#dp-result').innerHTML = planSummaryLine(openCount, closedCount, slotOpen, shown);
 
   renderGPA();
   if (historyCodes.length) ensureHistoryFor(historyCodes);
+}
+
+// Sütun başlık satırı — blok başında bir kez: kredi | ders | tekrar | not (+ durum boş).
+function buildColHead() {
+  const h = document.createElement('div');
+  h.className = 'dp-colhead';
+  for (const lbl of ['kredi', 'ders', 'tekrar', 'not']) {
+    const s = document.createElement('span');
+    s.textContent = lbl;
+    h.appendChild(s);
+  }
+  h.appendChild(document.createElement('span'));
+  return h;
 }
 
 function matchesElectiveType(e, types) {
@@ -448,65 +514,93 @@ function planSummaryLine(open, closed, slotOpen, shown) {
   return parts.join(' · ');
 }
 
-// Gerçek ders türleri; "Z"/"S" zorunlu/seçmeli işaretidir, tür değildir.
-const REAL_TYPES = ['TB', 'TM', 'MT', 'ITB', 'EC'];
-
-// Rozetler: ilki Z/S (zorunlu/seçmeli), ikincisi yalnızca gerçek ders türüyse.
-// Tür boş ya da "Z" ise ikinci rozet basılmaz (yedek değer kullanılmaz).
-function badgeHtml(c) {
-  const reqTitle = c.required === 'S' ? 'seçmeli' : 'zorunlu';
-  const badges = [];
-  if (c.required) badges.push(`<span class="dp-badge dp-req" title="${reqTitle}" aria-label="${reqTitle}">${esc(c.required)}</span>`);
-  if (REAL_TYPES.includes(c.type)) {
-    badges.push(`<span class="dp-badge dp-type-b" title="ders türü: ${esc(c.type)}" aria-label="ders türü ${esc(c.type)}">${esc(c.type)}</span>`);
-  }
-  return badges.join('');
-}
-
+// Ders satırı — sabit 5 hücreli ızgara: kredi | ders | tekrar | not | durum.
+// Şube listesi satırın ALTINDA katlı (varsayılan kapalı) — satır yüksekliği şube
+// sayısından bağımsızdır. Tam DOM (createElement + textContent): ham HTML yok.
 function courseRow(c, st, slotKey) {
-  // Kanonik kod: OBS çift kod basabilirdi ("SAO 101E SAO 101") — ekranda tek kod,
-  // bağlantı ve not anahtarı aynı kaynaktan.
   const code = canonicalCode(c.code);
-  // Kredi 0/eksik olan ders "0 kr" basmalı — birimi tek başına bırakma.
-  const meta = courseMetaLabel(c);
-  const badges = badgeHtml(c);
-  const status = statusBadge(c, st);
   const rec = (stored.grades || {})[code] || {};
-  const repeat = rec.prev ? `<span class="dp-repeat" title="İTÜ'de son alınan not geçerli, önceki hesaba girmez">tekrar · önceki: ${esc(rec.prev)}</span>` : '';
-  const grade = gradeOptions(rec.grade || '', code);
-  // Şube grupları DOM node olarak döner; ders kartına bir placeholder konur,
-  // renderAll innerHTML sonrası node'u yerleştirir (HTML string yolu yok).
-  const sec = st.state === 'open' ? renderSections(st.sections) : null;
-  const sectionsHtml = sec ? `<div class="dp-secslot" data-slot="${esc(slotKey)}"></div>` : '';
-  return {
-    html: `<div class="dp-course">
-    <div class="dp-course-head">
-      <button type="button" class="dp-code" data-act="detail" data-code="${esc(code)}">${esc(code)}</button>
-      <span class="dp-name">${esc(c.name)}</span>
-      ${badges}
-      <span class="dp-meta">${meta}</span>
-      ${status}
-      <span class="dp-grade-wrap">${grade}</span>
-      ${repeat}
-    </div>
-    ${sectionsHtml}
-  </div>`,
-    sec,
-  };
-}
 
-function statusBadge(c, st) {
-  const code = canonicalCode(c.code);
+  const card = document.createElement('div');
+  card.className = 'dp-course';
+
+  const row = document.createElement('div');
+  row.className = 'dp-row';
+
+  // 1) kredi rozeti — sadece sayı ("3", "1,5", "0")
+  const credit = document.createElement('span');
+  credit.className = 'dp-credit';
+  credit.textContent = creditBadge(c);
+  credit.title = `${trNum(c.credits ?? 0)} kredi`;
+  row.appendChild(credit);
+
+  // 2) ders: kod (kalın buton) + ad (normal) — tek satır, taşarsa alt satıra
+  const title = document.createElement('span');
+  title.className = 'dp-title';
+  const codeBtn = document.createElement('button');
+  codeBtn.type = 'button';
+  codeBtn.className = 'dp-code';
+  codeBtn.dataset.act = 'detail';
+  codeBtn.dataset.code = code;
+  codeBtn.textContent = code;
+  const name = document.createElement('span');
+  name.className = 'dp-name';
+  name.textContent = c.name;
+  title.append(codeBtn, name);
+  row.appendChild(title);
+
+  // 3) tekrar — saklanan işaret (GANO'ya etkisiz)
+  const rep = document.createElement('button');
+  rep.type = 'button';
+  rep.className = 'dp-repeat-btn' + (rec.repeat ? ' on' : '');
+  rep.dataset.act = 'dp-repeat';
+  rep.dataset.gcode = code;
+  rep.setAttribute('aria-pressed', rec.repeat ? 'true' : 'false');
+  rep.title = rec.prev
+    ? `tekrar olarak işaretli · önceki: ${rec.prev}`
+    : 'tekrar olarak işaretle';
+  rep.textContent = rec.repeat ? '↻' : '↺';
+  row.appendChild(rep);
+
+  // 4) not: dar select + seçiliyse ×
+  const wrap = document.createElement('span');
+  wrap.className = 'dp-grade-wrap';
+  const sel = buildGradeSelect(rec.grade || '', code);
+  wrap.appendChild(sel);
+  if (rec.grade) wrap.appendChild(makeClearBtn());
+  row.appendChild(wrap);
+
+  // 5) durum / şube disclosure: "● N" tıklanınca şubeler açılır
   if (st.state === 'open') {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'dp-sec-btn open';
+    btn.dataset.act = 'dp-sec';
+    btn.setAttribute('aria-expanded', 'false');
     const totalCap = st.sections.reduce((s, x) => s + (x.cap || 0), 0);
-    const capTxt = totalCap > 0 ? ` · toplam kontenjan ${trNum(totalCap)}` : '';
-    return `<span class="dp-status open" title="${esc(code)} bu dönem açık">● açık · ${st.sections.length} şube${capTxt}</span>`;
+    btn.title = `${st.sections.length} şube · toplam kontenjan ${trNum(totalCap)}`;
+    btn.textContent = `● ${st.sections.length}`;
+    row.appendChild(btn);
+  } else {
+    const span = document.createElement('span');
+    span.className = 'dp-sec-btn closed';
+    span.textContent = st.state === 'closed' ? '● kapalı' : '● yok';
+    span.title = st.state === 'closed'
+      ? `bu dönem açık değil · son ${termLabel(st.lastTerm)}`
+      : 'bu dönem açık değil';
+    row.appendChild(span);
   }
-  if (st.state === 'closed') {
-    return `<span class="dp-status closed">● bu dönem açık değil · son ${esc(termLabel(st.lastTerm))}</span>`;
-  }
-  // "eşleşme bulunamadı" teknik bir hata gibi duruyor; kullanıcıya açık olmadığını söyle.
-  return `<span class="dp-status missing">● bu dönem açık değil</span>`;
+
+  card.appendChild(row);
+
+  // şube bölümü — satırın altında, varsayılan kapalı
+  const secWrap = document.createElement('div');
+  secWrap.className = 'dp-secslot';
+  secWrap.hidden = true;
+  if (st.state === 'open') secWrap.appendChild(renderSections(st.sections));
+  card.appendChild(secWrap);
+
+  return card;
 }
 
 // Varsayılan görünür şube grubu sayısı; fazlası "N şube daha göster" arkasında.
@@ -610,30 +704,48 @@ function sectionGroupRow(g, hasInstr) {
   return row;
 }
 
+// Seçmeli slot — aynı 5 hücreli ızgara: kredi (slot varsayılanı) | slot başlığı
+// | (tekrar boş) | ders seç → not | durum (havuzu aç). DOM node.
 function electiveRow(e, open, slotKey) {
-  const meta = fmtSlotLoad(e);
   const total = e.options ? e.options.length : 0;
-  const label = open
-    ? `${total} alternatiften ${open} tanesi bu dönem açık`
-    : `${total} alternatif · bu dönem açık değil`;
   const pick = (stored.elective || {})[slotKey] || null;
-  return `<div class="dp-elective">
-    <div class="dp-course-head">
-      <span class="dp-name dp-elective-name">${esc(e.title || 'Seçmeli')}</span>
-      <span class="dp-meta">${meta}</span>
-      <span class="dp-status ${open ? 'open' : 'closed'}">● ${esc(label)}</span>
-    </div>
-    ${electiveControls(slotKey, e, pick)}
-    <div class="dp-actions">
-      <button type="button" class="btn-ghost" data-act="pool" data-title="${esc(e.title || '')}">havuzu aç →</button>
-    </div>
-  </div>`;
-}
+  const el = document.createElement('div');
+  el.className = 'dp-elective dp-course';
+  const row = document.createElement('div');
+  row.className = 'dp-row';
 
-function fmtSlotLoad(e) {
-  const cr = e.credits ? `kr: ${esc(e.credits)}` : '';
-  const ec = e.ects && e.ects.length ? `AKTS: ${e.ects.map((n) => trNum(n)).join('/')}` : '';
-  return [cr, ec].filter(Boolean).join(' · ');
+  const credit = document.createElement('span');
+  credit.className = 'dp-credit';
+  credit.textContent = creditBadge({ credits: parseRange(e.credits, [0])[0] });
+  row.appendChild(credit);
+
+  const title = document.createElement('span');
+  title.className = 'dp-title dp-elective-name';
+  title.textContent = e.title || 'Seçmeli';
+  row.appendChild(title);
+
+  const repCell = document.createElement('span');
+  repCell.className = 'dp-repeat-cell';
+  row.appendChild(repCell);
+
+  const notCell = document.createElement('div');
+  notCell.className = 'dp-elective-inputs';
+  notCell.innerHTML = electiveControls(slotKey, e, pick);
+  row.appendChild(notCell);
+
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'dp-sec-btn ' + (open ? 'open' : 'closed');
+  btn.dataset.act = 'pool';
+  if (e.title) btn.dataset.title = e.title;
+  btn.textContent = open ? `● ${open}` : '● kapalı';
+  btn.title = open
+    ? `${total} alternatiften ${open} tanesi açık · havuzu aç`
+    : 'bu dönem açık değil · havuzu aç';
+  row.appendChild(btn);
+
+  el.appendChild(row);
+  return el;
 }
 
 function fmtSemLoad(load) {
@@ -834,6 +946,9 @@ function refreshAverages() {
 // stored.grades'a, seçmeli seçim notu stored.elective slotuna yazılır.
 function commitGrade(select) {
   const gcode = select.dataset.gcode;
+  const filled = select.value !== '';
+  select.classList.toggle('filled', filled);
+  syncGradeClear(select, filled);
   if (select.dataset.gkind === 'elective') {
     stored = setElective(stored, select.dataset.gslot, gcode, select.value);
     saveStored(progCode, stored);
@@ -845,22 +960,10 @@ function commitGrade(select) {
   saveStored(progCode, stored);
   syncTakenFromGrades();
   refreshAverages();
+  // Tekrar butonunun tooltip'i: önceki not varsa göster.
   const rec = stored.grades[gcode];
-  // Tekrar işaretini güncelle (önceki not varsa) — odağı bozmadan.
-  const row = select.closest('.dp-course');
-  if (!row) return;
-  let rep = row.querySelector('.dp-repeat');
-  if (rec?.prev) {
-    if (!rep) {
-      rep = document.createElement('span');
-      rep.className = 'dp-repeat';
-      row.querySelector('.dp-course-head').appendChild(rep);
-    }
-    rep.title = "İTÜ'de son alınan not geçerli — önceki hesaba girmez";
-    rep.textContent = `tekrar · önceki: ${rec.prev}`;
-  } else if (rep) {
-    rep.remove();
-  }
+  const rep = select.closest('.dp-row')?.querySelector('.dp-repeat-btn');
+  if (rep) rep.title = rec?.prev ? `tekrar olarak işaretli · önceki: ${rec.prev}` : 'tekrar olarak işaretle';
 }
 
 // Klavye (delege): harf → kademeli döngü (b → BA → BA+ → …); Tab → sıradaki
@@ -963,6 +1066,31 @@ function init() {
         act.textContent = open ? 'daha az göster' : `${act.dataset.count || ''} şube daha göster`;
         act.setAttribute('aria-expanded', String(!open));
       }
+    } else if (a === 'dp-sec') {
+      // "● N" — satırın altındaki şube listesini aç/kapat.
+      const card = act.closest('.dp-course');
+      const secWrap = card && card.querySelector('.dp-secslot');
+      if (secWrap) {
+        secWrap.hidden = !secWrap.hidden;
+        act.setAttribute('aria-expanded', String(!secWrap.hidden));
+      }
+    } else if (a === 'dp-clear') {
+      // Notu temizle (×) — select'i boşalt, commitGrade filled/×'ı günceller.
+      const wrap = act.closest('.dp-grade-wrap');
+      const sel = wrap && wrap.querySelector('.dp-grade');
+      if (sel) { sel.value = ''; commitGrade(sel); }
+    } else if (a === 'dp-repeat') {
+      // Tekrar işareti — saklanan bayrak, GANO'ya etkisiz (refreshAverages çağrılmaz).
+      const code = act.dataset.gcode;
+      const cur = (stored.grades || {})[code] || {};
+      stored = setRepeat(stored, code, !cur.repeat);
+      saveStored(progCode, stored);
+      act.classList.toggle('on', !cur.repeat);
+      act.setAttribute('aria-pressed', String(!cur.repeat));
+      act.textContent = !cur.repeat ? '↻' : '↺';
+      act.title = cur.prev
+        ? `tekrar olarak işaretli · önceki: ${cur.prev}`
+        : 'tekrar olarak işaretle';
     } else if (a === 'pool') {
       // Seçmeli havuz panelini mevcut akışla aç: URL'yi kur, önşart sekmesine git.
       // Sayfa, ?prog+&pool= URL mekanizmasını çalıştırır — ikinci bir liste yazılmaz.
@@ -986,7 +1114,7 @@ function init() {
       const found = electiveBySlot(slot);
       if (found) {
         const inputs = sel.closest('.dp-elective-inputs');
-        if (inputs) inputs.outerHTML = electiveControls(slot, found.elective, { code: sel.value, grade: '' });
+        if (inputs) inputs.innerHTML = electiveControls(slot, found.elective, { code: sel.value, grade: '' });
       }
       refreshAverages();
     }
@@ -997,9 +1125,23 @@ function init() {
   });
 
   // Transfer (yatay geçiş) başlangıç ağırlığı.
+  // Geçersiz değere kırmızı çerçeve (yalnızca gerçekten geçersizken; boş alan geçerli).
+  const setInvalid = (sel, on) => {
+    const el = $(sel);
+    if (el) {
+      el.classList.toggle('dp-invalid', on);
+      el.setAttribute('aria-invalid', String(on));
+    }
+    return !on;
+  };
   const wireTransfer = () => {
-    const credits = parseFloat(String($('#dp-tcredits').value || '').replace(',', '.'));
-    const gpa = parseFloat(String($('#dp-tgpa').value || '').replace(',', '.'));
+    const crRaw = String($('#dp-tcredits').value || '').trim();
+    const gpRaw = String($('#dp-tgpa').value || '').trim();
+    const credits = parseFloat(crRaw.replace(',', '.'));
+    const gpa = parseFloat(gpRaw.replace(',', '.'));
+    const crOk = setInvalid('#dp-tcredits', crRaw !== '' && (isNaN(credits) || credits < 0 || credits > 250));
+    const gpOk = setInvalid('#dp-tgpa', gpRaw !== '' && (isNaN(gpa) || gpa < 0 || gpa > 4));
+    if (!crOk || !gpOk) return; // geçersizse saklanmaz
     const t = {};
     if (!isNaN(credits) && credits > 0) t.credits = credits;
     if (!isNaN(gpa)) t.gpa = gpa;

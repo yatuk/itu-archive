@@ -34,10 +34,20 @@ export function saveStored(prog, data) {
 }
 
 // Zorunlu ders notunu yazar; mevcut not varsa eskiye taşınır (tekrar işareti).
+// Manuel "tekrar" işareti (setRepeat) korunur — GANO hesabına girmez.
 export function setGrade(data, code, grade) {
   const grades = { ...(data.grades || {}) };
   const cur = grades[code];
-  grades[code] = { grade, prev: cur && cur.grade ? cur.grade : '' };
+  grades[code] = { grade, prev: cur && cur.grade ? cur.grade : '', repeat: cur?.repeat || false };
+  return { ...data, grades };
+}
+
+// Dersin "tekrar" işaretini açar/kapatır. Yalnızca saklanan işaret — not/prev
+// korunur, GANO hesabı (buildEntries) repeat'i yok sayar.
+export function setRepeat(data, code, repeat) {
+  const grades = { ...(data.grades || {}) };
+  const cur = grades[code] || {};
+  grades[code] = { ...cur, repeat: Boolean(repeat) };
   return { ...data, grades };
 }
 

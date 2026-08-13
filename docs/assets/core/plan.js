@@ -99,6 +99,11 @@ export function courseMetaLabel(c) {
   return `${tct} · ${trNum(c.credits ?? 0)} kr · ${trNum(c.ects ?? 0)} AKTS`;
 }
 
+// Satırdaki kredi rozetinin metni — yalnızca sayı ("3", "1,5", "0"). Saf, testli.
+export function creditBadge(c) {
+  return trNum(c.credits ?? 0);
+}
+
 // "10008, 10009, 10010" → "10008–10010"; sayısal olmayan CRN'ler virgüllü kalır.
 export function crnRangeText(crns) {
   const nums = (crns || []).map(Number).filter((n) => !isNaN(n));

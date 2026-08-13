@@ -280,7 +280,8 @@ export function icsText(events, stamp = new Date().toISOString().slice(0, 19)) {
     lines.push('END:VEVENT');
   }
   lines.push('END:VCALENDAR');
-  return lines.join('\r\n');
+  // RFC 5545: uzun satırları 75 oktette katla (bazı takvim uygulamaları reddeder).
+  return lines.map((ln) => foldLine(ln)).join('\r\n');
 }
 
 // ICS dışa aktarımı — Faz 4.5. icsText'i dosyaya indirir.
@@ -291,4 +292,29 @@ export function downloadICS(filename, events) {
   a.download = filename;
   a.click();
   URL.revokeObjectURL(a.href);
+}
+
+// Kısa, stabil kimlik karması (Faz 4.5 — .ics uid'i uzun/Türkçe başlık yerine).
+// Deterministik FNV-1a; 8 hex basamak çakışma ihtimali pratikte yok.
+export function hashShort(s) {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return (h >>> 0).toString(16).padStart(8, '0');
+}
+
+// RFC 5545 satır katlaması: 75 okteti aşan mantıksal satır, CRLF + boşlukla
+// devam satırlarına bölünür. Bazı takvim uygulamaları uzun satırı reddeder.
+export function foldLine(text, limit = 75) {
+  if (text.length <= limit) return text;
+  const out = [text.slice(0, limit)];
+  let rest = text.slice(limit);
+  while (rest.length > limit - 1) {
+    out.push(' ' + rest.slice(0, limit - 1));
+    rest = rest.slice(limit - 1);
+  }
+  if (rest) out.push(' ' + rest);
+  return out.join('\r\n');
 }

@@ -48,10 +48,13 @@ export async function searchHistory() {
   $('#hdetail').innerHTML = '';
 
   if (q.length < 2) {
-    box.innerHTML = '';
+    box.innerHTML = discoveryHtml();
     $('#hresultline').innerHTML =
       `<b>${state.hist.codes.length.toLocaleString('tr')}</b> ders · ` +
       `<b>${state.hist.names.length.toLocaleString('tr')}</b> öğretim üyesi indekslendi`;
+    for (const b of box.querySelectorAll('.chip[data-q]')) {
+      b.addEventListener('click', () => { $('#hq').value = b.dataset.q; searchHistory(); });
+    }
     return;
   }
 
@@ -80,6 +83,28 @@ export async function searchHistory() {
       ? showCourse(b.dataset.key, b.dataset.branch)
       : showPerson(b.dataset.key, b.dataset.bucket));
   }
+}
+
+// Bir diziyi sayısal alana göre azalan sırayla sıralayıp ilk n öğeyi döner.
+// Saf, deterministik (dengeli sıralama) — test edilebilir.
+export function topByCount(arr, countIdx, n) {
+  return arr.slice().sort((a, b) => (b[countIdx] || 0) - (a[countIdx] || 0)).slice(0, n);
+}
+
+// Boş sorguda keşif kısayolları (P1-12): ne arayacağını bilmeyene başlangıç
+// noktası — en çok dönem açılan dersler, en çok şubesi olan öğretim üyeleri.
+function discoveryHtml() {
+  const h = state.hist;
+  if (!h) return '';
+  const topCourses = topByCount(h.codes, 3, 6);
+  const topPeople = topByCount(h.names, 3, 6);
+  const chips = (items, label) =>
+    `<h3 class="mh">${label}</h3><div class="chips">` +
+    items.map((c) => `<button class="chip" data-q="${esc(c[0])}"><b>${esc(c[0])}</b><span>${esc(c[1] || '')}</span></button>`).join('') +
+    '</div>';
+  return `<p class="h-intro">Bir dersin kodunu, adını ya da bir öğretim üyesini ara. Ne arayacağını bilmiyorsan:</p>
+    ${chips(topCourses, 'En çok dönem açılan dersler')}
+    ${chips(topPeople, 'En çok şubesi olan öğretim üyeleri')}`;
 }
 
 async function showCourse(code, branch) {

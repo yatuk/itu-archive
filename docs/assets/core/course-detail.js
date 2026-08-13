@@ -9,6 +9,7 @@
 import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum } from './utils.js';
 import { state } from './store.js';
 import { fillBar, trendChart } from './chart.js';
+import { parseReq, renderReqTree } from '../prereq.js';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
@@ -197,6 +198,8 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
         ? programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="Derslerde bu programa göre filtrele">${esc(p)}</button>`).join('')
         : '<span class="d-prog d-prog-none">kısıtlama yok — tüm programlar alabilir</span>'}</div>
     </section>
+    <section class="d-req-fwd" data-code="${esc(code)}"><h4>Önşartı</h4>
+      <p class="empty">yükleniyor…</p></section>
     <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
       <p class="empty">yükleniyor…</p></section>
     ${gradesHtml(gr)}
@@ -205,8 +208,33 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   wireHistButtons(content);
   wireProgButtons(content);
   wireEqButtons(content);
+  const reqFwd = content.querySelector('.d-req-fwd');
+  if (reqFwd) loadPrereqTree(reqFwd, code);
   const reqBy = content.querySelector('.d-req-by');
   if (reqBy) loadReqBy(reqBy);
+}
+
+// Panelde dersin önşart VE/VEYA ağacı (P1-9). prereq/graph.json'da kayıtlı
+// önşartı olan ders için yapılandırılmış ağaç; yoksa "kayıtlı önşartı yok".
+// graph.json önşart sekmesinde zaten lazy yüklenir; burada önbellekli.
+let reqGraphCache = null;
+async function loadReqGraph() {
+  if (reqGraphCache === null) {
+    reqGraphCache = await getJSON('data/prereq/graph.json').catch(() => null);
+  }
+  return reqGraphCache;
+}
+async function loadPrereqTree(box, code) {
+  try {
+    const g = await loadReqGraph();
+    const node = (g?.nodes || []).find((n) => n.code === code);
+    const req = node?.requirement;
+    if (!req) {
+      box.innerHTML = '<p class="empty">Kayıtlı önşartı yok.</p>';
+      return;
+    }
+    box.innerHTML = `<ul class="req-tree">${renderReqTree(parseReq(req))}</ul>`;
+  } catch { /* graph yoksa sessiz */ }
 }
 
 // Alabilen program çiplerine tıklayınca dersler sekmesinde o programa göre filtrele.

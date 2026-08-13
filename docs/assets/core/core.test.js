@@ -12,7 +12,8 @@ import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programLi
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
 import { examToIcs } from '../views/exams.js';
-import { icsText } from './utils.js';
+import { topByCount } from '../views/history.js';
+import { icsText, hashShort, foldLine } from './utils.js';
 import * as fav from './favorites.js';
 
 test('fold Türkçe karakterleri ASCII katar', () => {
@@ -483,6 +484,32 @@ test('midtermWeeks katalog haftalık konularından ara sınav haftalarını saya
   assert.equal(midtermWeeks([]).size, 0);
   assert.equal(midtermWeeks([{ weeklyTopics: [] }]).size, 0);
   assert.equal(midtermWeeks(null).size, 0);
+});
+
+test('hashShort deterministik ve kısa (ics uid)', () => {
+  const a = hashShort('854|Ders Başı'), b = hashShort('854|Ders Başı');
+  assert.equal(a, b);
+  assert.equal(a.length, 8);
+  assert.notEqual(a, hashShort('854|Ders Bitiş'));
+});
+
+test('foldLine uzun satırı 75 oktette devam satırlarına böler', () => {
+  const long = 'x'.repeat(160);
+  const folded = foldLine(long);
+  const segs = folded.split('\r\n');
+  assert.ok(segs.length > 1, 'katlanmalı');
+  assert.ok(segs[0].length <= 75, 'ilk satır ≤75');
+  for (const s of segs.slice(1)) {
+    assert.ok(s.startsWith(' '), 'devam satırı boşlukla başlar');
+  }
+  assert.equal(foldLine('kısa'), 'kısa');
+});
+
+test('topByCount sayısal alana göre azalan sıralayıp ilk n döner', () => {
+  const rows = [['A', 'x', 3], ['B', 'y', 9], ['C', 'z', 1]];
+  const top = topByCount(rows, 2, 2);
+  assert.deepEqual(top.map((r) => r[0]), ['B', 'A']);
+  assert.equal(topByCount(rows, 2, 0).length, 0);
 });
 
 test('examToIcs Türkçe tarih + saat aralığını ISO zamanlı etkinliğe çevirir', () => {

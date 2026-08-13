@@ -1,7 +1,7 @@
 // Akademik takvim görünümü: seçilen yılın takvimini tabloya göre gruplar,
 // geçmiş etkinlikleri isteğe bağlı gizler.
 
-import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS } from '../core/utils.js';
+import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, hashShort } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { initReveal } from '../core/reveal.js';
 
@@ -104,7 +104,8 @@ function exportICS() {
   const cal = state.calendar;
   if (!cal || !cal.events) return;
   const events = cal.events.map((e) => ({
-    uid: `${cal.yearId}-${esc(e.title)}`,
+    // Kırılgan uzun/Türkçe uid yerine kısa deterministik karma + sabit alan.
+    uid: `${hashShort(cal.yearId + '|' + e.title)}@itu-ders.com`,
     title: `${e.table}: ${e.title}`,
     // Scraper ISO start/end; eski dosyalarda yoksa Türkçe date string'i (tüm gün).
     startISO: e.start || e.date,

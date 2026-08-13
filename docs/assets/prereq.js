@@ -743,7 +743,8 @@ import { state } from './core/store.js';
 
   // renderReqTree, önşart ağacını okunur HTML'e çevirir: VE/VEYA grupları
   // iç içe listeler halinde, biri yeter / hepsi gerekli etiketleriyle.
-  function renderReqTree(tree) {
+  // Detay paneli de aynı ağacı gösterir (P1-9) — export.
+  export function renderReqTree(tree) {
     if (tree.type === 'code') {
       return `<li class="req-item req-code">${esc(tree.code)}${tree.detail ? ` <em>${esc(tree.detail)}</em>` : ''}</li>`;
     }

@@ -30,6 +30,7 @@ import (
 	"fmt"
 	"html"
 	"regexp"
+	"strconv"
 	"strings"
 	"sync"
 
@@ -78,14 +79,27 @@ type Program struct {
 	Level   string // "OL" | "LS" | "YL" | "DR"
 }
 
+// Course (Faz: Ders Planım) — plan satırındaki tüm kolonlar. Alan eklemeli,
+// geriye uyumlu: eski {code,name} kayıtları yine okunur.
 type Course struct {
-	Code string `json:"code"`
-	Name string `json:"name"`
+	Code     string  `json:"code"`
+	Name     string  `json:"name"`
+	Language string  `json:"language,omitempty"` // ders dili
+	Required string  `json:"required,omitempty"` // "Z" zorunlu | "S" seçmeli
+	Credits  float64 `json:"credits,omitempty"`  // Kredi (Türkçe virgül → sayı)
+	Ects     float64 `json:"ects,omitempty"`     // AKTS
+	Theory   int     `json:"theory,omitempty"`   // Teo.
+	Tutorial int     `json:"tutorial,omitempty"` // Uyg.
+	Lab      int     `json:"lab,omitempty"`      // Lab.
+	Type     string  `json:"type,omitempty"`     // TB/TM/MT/ITB/EC
 }
 
 type Elective struct {
-	Title   string   `json:"title"`
-	Options []Course `json:"options"`
+	Title   string    `json:"title"`
+	GroupID string    `json:"groupId,omitempty"` // _DersGrupSearch?grupId=
+	Credits string    `json:"credits,omitempty"` // aralık olabilir: "3 / 4"
+	Ects    []float64 `json:"ects,omitempty"`    // aralık: "4 / 5 / 6" → [4,5,6]
+	Options []Course  `json:"options"`
 }
 
 // Item, bir dönemdeki tek bir slot: ya sabit bir ders ya da bir seçmeli grup.
@@ -100,12 +114,14 @@ type Semester struct {
 }
 
 type Plan struct {
-	ProgramCode string     `json:"programCode"`
-	ProgramName string     `json:"programName"`
-	Faculty     string     `json:"faculty"`
-	Level       string     `json:"level"`
-	PlanLabel   string     `json:"planLabel"`
-	Semesters   []Semester `json:"semesters"`
+	ProgramCode  string     `json:"programCode"`
+	ProgramName  string     `json:"programName"`
+	Faculty      string     `json:"faculty"`
+	Level        string     `json:"level"`
+	PlanLabel    string     `json:"planLabel"`
+	TotalCredits string     `json:"totalCredits,omitempty"` // sayfa altı "Toplam Kredi"
+	TotalEcts    string     `json:"totalEcts,omitempty"`    // sayfa altı "Toplam AKTS"
+	Semesters    []Semester `json:"semesters"`
 }
 
 type Client struct {
@@ -129,6 +145,8 @@ var (
 	tableRe  = regexp.MustCompile(`(?is)<table[^>]*>(.*?)</table>`)
 	grupIDRe = regexp.MustCompile(`grupId=(\d+)`)
 	planIDRe = regexp.MustCompile(`DersPlanDetay/(\d+)`)
+	totalKrediRe = regexp.MustCompile(`(?i)Toplam\s+Kredi[^0-9]*([0-9.,]+)`)
+	totalEctsRe  = regexp.MustCompile(`(?i)Toplam\s+AKTS[^0-9]*([0-9.,]+)`)
 )
 
 // Programs, tüm seviyelerdeki programların kodunu, seviyesini ve fakültesini
@@ -268,15 +286,18 @@ func (c *Client) Plan(ctx context.Context, p Program) (*Plan, error) {
 				if err != nil {
 					return nil, err
 				}
-				sem.Items = append(sem.Items, Item{Elective: &Elective{Title: v[1], Options: opts}})
+				sem.Items = append(sem.Items, Item{Elective: &Elective{
+					Title: v[1], GroupID: grp[1], Credits: at(v, 4), Ects: parseEctsRange(at(v, 5)), Options: opts,
+				}})
 				continue
 			}
-			sem.Items = append(sem.Items, Item{Course: &Course{Code: v[0], Name: v[1]}})
+			sem.Items = append(sem.Items, Item{Course: parseCourse(v)})
 		}
 		if len(sem.Items) > 0 {
 			plan.Semesters = append(plan.Semesters, sem)
 		}
 	}
+	plan.TotalCredits, plan.TotalEcts = planTotals(body)
 	return plan, nil
 }
 
@@ -321,16 +342,19 @@ func (c *Client) parseFlatPlan(ctx context.Context, body string, p Program, labe
 			if err != nil {
 				return nil, err
 			}
-			sem.Items = append(sem.Items, Item{Elective: &Elective{Title: v[1], Options: opts}})
+			sem.Items = append(sem.Items, Item{Elective: &Elective{
+				Title: v[1], GroupID: grp[1], Credits: at(v, 4), Ects: parseEctsRange(at(v, 5)), Options: opts,
+			}})
 			continue
 		}
-		sem.Items = append(sem.Items, Item{Course: &Course{Code: first, Name: v[1]}})
+		sem.Items = append(sem.Items, Item{Course: parseCourse(v)})
 	}
 
 	plan := &Plan{ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, Level: p.Level, PlanLabel: label}
 	if len(sem.Items) > 0 {
 		plan.Semesters = append(plan.Semesters, sem)
 	}
+	plan.TotalCredits, plan.TotalEcts = planTotals(body)
 	return plan, nil
 }
 
@@ -430,6 +454,61 @@ func clean(s string) string {
 	s = html.UnescapeString(s)
 	s = strings.ReplaceAll(s, " ", " ")
 	return strings.TrimSpace(spaceRe.ReplaceAllString(s, " "))
+}
+
+// at, satır vektörünün i. elemanını döndürür (taşarsa boş).
+func at(v []string, i int) string {
+	if i < len(v) {
+		return v[i]
+	}
+	return ""
+}
+
+// num, "4,5" gibi Türkçe ondalık virgülü sayıya çevirir; boşsa 0.
+func num(s string) float64 {
+	s = strings.ReplaceAll(strings.TrimSpace(s), ",", ".")
+	if s == "" {
+		return 0
+	}
+	f, _ := strconv.ParseFloat(s, 64)
+	return f
+}
+
+// parseCourse, plan tablosu satırından Course üretir. Kolonlar: kod, ad, dil,
+// Z/S, kredi, AKTS, teo, uyg, lab, tür (Faz: Ders Planım).
+func parseCourse(v []string) *Course {
+	return &Course{
+		Code: at(v, 0), Name: at(v, 1), Language: at(v, 2), Required: at(v, 3),
+		Credits: num(at(v, 4)), Ects: num(at(v, 5)),
+		Theory: int(num(at(v, 6))), Tutorial: int(num(at(v, 7))), Lab: int(num(at(v, 8))),
+		Type: at(v, 9),
+	}
+}
+
+// planTotals, sayfa altındaki "Toplam Kredi / Toplam AKTS" değerlerini çözer.
+func planTotals(body string) (string, string) {
+	g := func(re *regexp.Regexp) string {
+		if m := re.FindStringSubmatch(body); m != nil {
+			return m[1]
+		}
+		return ""
+	}
+	return g(totalKrediRe), g(totalEctsRe)
+}
+
+// parseEctsRange, "4 / 5 / 6" aralığını sayı dizisine çevirir; tek değerse tek
+// elemanlı dizi, boşsa nil.
+func parseEctsRange(s string) []float64 {
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return nil
+	}
+	parts := strings.FieldsFunc(s, func(r rune) bool { return r == '/' || r == '-' })
+	out := make([]float64, 0, len(parts))
+	for _, p := range parts {
+		out = append(out, num(p))
+	}
+	return out
 }
 
 // Count, verilen seviyedeki program sayısını döndürür.

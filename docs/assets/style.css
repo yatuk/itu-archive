@@ -295,6 +295,9 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 .prompt { color: var(--acid); }
 .path { color: var(--cyan); }
 .caret { color: var(--dim); }
+/* itü_ari logosu — yalnızca sade temada; fosfor/CRT'de o alanı terminal istemi tutar. */
+.brand-logo { display: none; width: 30px; height: 30px; object-fit: contain; align-self: center; margin-right: 2px; border-radius: 6px; }
+[data-theme="sade"] .brand-logo { display: inline-block; }
 
 .brand h1 {
   margin: 0 0 0 6px;

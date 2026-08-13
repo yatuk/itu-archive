@@ -193,6 +193,14 @@
 }
 /* Sonuç sayacı ile arama kutusu çakışmasın — yeterli boşluk (sadece açık tema). */
 [data-theme="sade"] .pg-search { margin-bottom: 8px; }
+/* Açık temada form köşe yarıçapı tek değere (8px, arama kutusuyla aynı) birleşir;
+   fosfor teması 2px köşeli terminal görünümünü korur. */
+[data-theme="sade"] select,
+[data-theme="sade"] .f-in,
+[data-theme="sade"] .p-prog-select,
+[data-theme="sade"] .dp-prog-select { border-radius: 8px; }
+/* Sade'de şube seçim onay kutusu dokunma için biraz büyür (fosfor 15px varsayılan kalır). */
+[data-theme="sade"] .row-sel { width: 18px; height: 18px; }
 
 * { box-sizing: border-box; }
 /* Ekran okuyucu için görünür-bezli başlık (başlık hiyerarşisi: h1→h2→h3). */
@@ -550,6 +558,12 @@ tbody tr:hover td:first-child { box-shadow: inset 2px 0 0 var(--acid); }
 .th-sort {
   all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;
   font: inherit; letter-spacing: inherit; text-transform: inherit; color: inherit;
+}
+/* Sıralama butonunun tıklama alanı metinden büyür — negatif margin görsel kaymayı
+   iptal eder (WCAG 2.5.8 min 24px; fosfor teması piksel değişmez). */
+.th-sort {
+  display: flex; justify-content: center; align-items: center;
+  padding: 8px 10px; margin: -8px -10px;
 }
 .th-sort:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
 th.sortable .th-sort::after { content: " ⇅"; font-size: 9px; opacity: .45; }
@@ -1257,6 +1271,10 @@ body.modal-open { overflow: hidden; }
 .fav-star:hover { color: var(--amber); transform: scale(1.15); }
 .fav-star.on { color: var(--amber); }
 .fav-star:focus-visible { outline: 2px solid var(--cyan); border-radius: 3px; }
+/* Dokunma hedefi görünür yıldızdan büyük (WCAG 2.5.8 min 24px) — görsel piksel
+   değişmez, yalnızca tıklama alanı genişler (her iki temada, satır ritmi korunur). */
+.fav-star { position: relative; }
+.fav-star::after { content: ''; position: absolute; inset: -6px; }
 /* Dolu yıldız tıklamada kısa ölçek patlaması (1→1.25→1). reduced-motion'da
    animasyon kapalı — durum değişimi (★/☆ + renk) yine görünür. */
 .fav-star.pop { animation: fav-pop 150ms var(--ease-spring); }

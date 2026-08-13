@@ -52,6 +52,24 @@ async function boot() {
   if (histCount) histCount.textContent = ix.terms.length;
   $('#foot-build').textContent = `${I18N.t('footBuild')} ${fmtDate(ix.scrapedAt)}`;
 
+  // Faz 1: koşu özeti (status.json) — son tarama zamanını gösterir, veri
+  // bayatsa uyarı basar. Dosya yoksa sessizce index.json değerine düşer.
+  getJSON('data/status.json').then((st) => {
+    if (!st || !st.lastSuccessAt) return;
+    const last = new Date(st.lastSuccessAt);
+    if (isNaN(last)) return;
+    $('#stat-scraped').textContent = fmtDate(st.lastSuccessAt);
+    $('#foot-build').textContent = `${I18N.t('footBuild')} ${fmtDate(st.lastSuccessAt)}`;
+    if ((Date.now() - last.getTime()) / 36e5 > 48) {
+      const stEl = $('#stat-status');
+      if (stEl) {
+        stEl.textContent = 'veri bayat — son başarılı tarama 2 günden eski';
+        stEl.className = 'warn';
+      }
+    }
+  }).catch(() => {});
+
+
   // Dönem seçici (dersler görünümüne ait) + paylaşılabilir URL durumu.
   const termSel = $('#f-term');
   termSel.innerHTML = ix.terms

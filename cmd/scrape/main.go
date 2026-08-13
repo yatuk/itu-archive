@@ -46,15 +46,16 @@ func main() {
 		skipCalendar = flag.Bool("skip-calendar", false, "akademik takvimi atla")
 		skipExams    = flag.Bool("skip-exams", false, "sınav takvimini atla")
 		skipPrereq   = flag.Bool("skip-prereq", false, "önşart grafiğini atla")
+		mode         = flag.String("mode", "tam", "koşu modu (tam/hafif) — status.json'a yazılır")
 	)
 	flag.Parse()
 
-	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams, *skipPrereq); err != nil {
+	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams, *skipPrereq, *mode); err != nil {
 		log.Fatalf("hata: %v", err)
 	}
 }
 
-func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams, skipPrereq bool) error {
+func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams, skipPrereq bool, mode string) error {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
@@ -118,8 +119,46 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 
 	// sitemap artık cmd/site tarafından üretiliyor (dil + tüm sayfalar).
 
+	// Faz 1: koşu özeti — site bayatlığı ve izleme için. Her koşuda yazılır;
+	// içerik değişmese bile commit edilir (keepalive, 4.6).
+	if err := writeStatus(st, out, mode, started); err != nil {
+		return err
+	}
+
 	logf("bitti (%s)", time.Since(started).Round(time.Second))
 	return nil
+}
+
+// writeStatus, docs/data/status.json'a koşu özetini yazar: site "son tarama"
+// bilgisini buradan okur, veri bayatsa uyarı basar. partial/failedBranches Faz 2
+// (kısmi başarı) ile dolar; şimdilik başarılı koşu varsayımı.
+func writeStatus(st *store.Store, out, mode string, started time.Time) error {
+	now := time.Now().UTC()
+	sections := 0
+	if b, err := os.ReadFile(filepath.Join(out, "data", "index.json")); err == nil {
+		var ix struct {
+			CurrentSlug string `json:"currentSlug"`
+		}
+		if json.Unmarshal(b, &ix) == nil && ix.CurrentSlug != "" {
+			if mb, err := os.ReadFile(filepath.Join(out, "data", "terms", ix.CurrentSlug, "meta.json")); err == nil {
+				var mt struct {
+					Sections int `json:"sections"`
+				}
+				_ = json.Unmarshal(mb, &mt)
+				sections = mt.Sections
+			}
+		}
+	}
+	status := map[string]any{
+		"lastRunAt":      now.Format(time.RFC3339),
+		"lastSuccessAt":  now.Format(time.RFC3339),
+		"mode":           mode,
+		"partial":        false,
+		"failedBranches": []string{},
+		"durationSec":    int(time.Since(started).Seconds()),
+		"sections":       sections,
+	}
+	return st.WriteJSON(status, "data", "status.json")
 }
 
 func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, workers int) (string, string, error) {

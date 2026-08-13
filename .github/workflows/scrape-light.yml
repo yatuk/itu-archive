@@ -1,0 +1,94 @@
+name: scrape-light
+
+on:
+  schedule:
+    # Hafif tarama — yalnızca ders programı: 11:17 / 17:17 / 23:17 TRT.
+    # Takvim, sınavlar ve önşart tam taramada (günde bir) gelir.
+    - cron: '17 8,14,20 * * *'
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: 'Tarihsel arşivi de yeniden içeri al'
+        type: boolean
+        default: false
+
+# Tüm veri yazıcıları aynı dala push eder; ortak grup sıraya sokar.
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Veriyi çek (ders programı)
+        run: |
+          go run ./cmd/scrape -mode hafif -skip-calendar -skip-exams -skip-prereq ${{ inputs.backfill && '-backfill' || '' }}
+
+      - name: Veriyi doğrula
+        run: go run ./cmd/validate -quiet -skip-site
+
+      - name: Değişiklikleri özetle
+        id: diff
+        run: |
+          # Veri değişimi (status.json hariç) mi, yoksa yalnızca status.json mu?
+          # status.json her koşuda tazelenir; tek başına değiştiyse yalnızca
+          # bayatken commit edilir (keepalive — sessiz dönemde commit gürültüsü).
+          data_changed=false
+          if ! git diff --quiet -- docs/data ':!docs/data/status.json'; then
+            data_changed=true
+          fi
+          status_stale=false
+          if python3 - 2>/dev/null <<'PY'
+import json, subprocess, time, sys
+try:
+    committed = subprocess.check_output(['git', 'show', 'HEAD:docs/data/status.json'], stderr=subprocess.DEVNULL)
+    last = json.loads(committed)['lastRunAt']
+    age = time.time() - time.mktime(time.strptime(last, '%Y-%m-%dT%H:%M:%SZ'))
+    sys.exit(0 if age > 86400 else 1)   # 24 saatten eski = bayat
+except Exception:
+    sys.exit(0)                          # HEAD'de yok/bozuk → ilk commit
+PY
+          then
+            status_stale=true
+          fi
+          if [ "$data_changed" = true ] || [ "$status_stale" = true ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo '## Değişen veri'
+              echo '```'
+              git diff --stat -- docs/data | tail -40
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo 'Değişiklik yok.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  'itu-scraper[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/data
+          git commit -m "veri (hafif): $(date -u +'%Y-%m-%d %H:%M') UTC taraması"
+          # Eşzamanlı bir commit araya girmişse rebase edip artan beklemeyle tekrar dene.
+          for wait in 5 10 20 40; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep "$wait"
+          done
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push
+          exit $?

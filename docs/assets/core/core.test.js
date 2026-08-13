@@ -512,11 +512,19 @@ test('foldLine uzun satırı 75 oktette devam satırlarına böler', () => {
   assert.equal(foldLine('kısa'), 'kısa');
 });
 
-test('topByCount sayısal alana göre azalan sıralayıp ilk n döner', () => {
+test('topByCount sayısal alana göre azalan sıralar; eşitlikte ad alfabetik', () => {
   const rows = [['A', 'x', 3], ['B', 'y', 9], ['C', 'z', 1]];
   const top = topByCount(rows, 2, 2);
   assert.deepEqual(top.map((r) => r[0]), ['B', 'A']);
   assert.equal(topByCount(rows, 2, 0).length, 0);
+  // Eşit sayıda → ad alfabetik (deterministik, diff gürültüsü olmasın).
+  const ties = [['Zeynep', 'z', 5], ['Ali', 'a', 5], ['Mehmet', 'm', 5]];
+  assert.deepEqual(topByCount(ties, 2, 3).map((r) => r[0]), ['Ali', 'Mehmet', 'Zeynep']);
+  // Kart alt satırı için dönem/şube alanları dolu gelmeli (shard harfi değil).
+  const people = [['Gülşah Sönmez', 'g', 18, 24]];
+  const p = topByCount(people, 3, 1)[0];
+  assert.equal(p[2], 18); // dönem
+  assert.equal(p[3], 24); // şube
 });
 
 test('examToIcs Türkçe tarih + saat aralığını ISO zamanlı etkinliğe çevirir', () => {

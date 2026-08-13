@@ -642,6 +642,12 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .mh { margin: 22px 0 10px; }
 .mh::before { content: "// "; }
 
+/* Geçmiş keşif başlıkları: cümle düzeni, okunur kontrast (≥4.5:1). "//" yalnızca
+   fosfor temasında (terminal kimliği); sade'de kalkar. */
+.h-disc { margin: 20px 0 10px; font-size: 13px; font-weight: 600; color: var(--fg); }
+.h-disc::before { content: "// "; color: var(--dim); }
+[data-theme="sade"] .h-disc::before { content: ""; }
+
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
   font: inherit; text-align: left; cursor: pointer;

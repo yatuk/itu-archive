@@ -52,8 +52,10 @@ export async function searchHistory() {
     $('#hresultline').innerHTML =
       `<b>${state.hist.codes.length.toLocaleString('tr')}</b> ders · ` +
       `<b>${state.hist.names.length.toLocaleString('tr')}</b> öğretim üyesi indekslendi`;
-    for (const b of box.querySelectorAll('.chip[data-q]')) {
-      b.addEventListener('click', () => { $('#hq').value = b.dataset.q; searchHistory(); });
+    for (const b of box.querySelectorAll('.chip')) {
+      b.addEventListener('click', () => b.dataset.kind === 'course'
+        ? showCourse(b.dataset.key, b.dataset.branch)
+        : showPerson(b.dataset.key, b.dataset.bucket));
     }
     return;
   }
@@ -86,25 +88,36 @@ export async function searchHistory() {
 }
 
 // Bir diziyi sayısal alana göre azalan sırayla sıralayıp ilk n öğeyi döner.
-// Saf, deterministik (dengeli sıralama) — test edilebilir.
+// Eşitlikte ad alfabetik (deterministik — her taramada aynı sıra, diff gürültüsü
+// olmaz). Saf — test edilebilir.
 export function topByCount(arr, countIdx, n) {
-  return arr.slice().sort((a, b) => (b[countIdx] || 0) - (a[countIdx] || 0)).slice(0, n);
+  return arr.slice().sort((a, b) => {
+    const d = (b[countIdx] || 0) - (a[countIdx] || 0);
+    return d !== 0 ? d : String(a[0]).localeCompare(String(b[0]), 'tr');
+  }).slice(0, n);
 }
 
 // Boş sorguda keşif kısayolları (P1-12): ne arayacağını bilmeyene başlangıç
-// noktası — en çok dönem açılan dersler, en çok şubesi olan öğretim üyeleri.
+// noktası. Kartlar doğrudan ilgili geçmişe gider (ders veya hoca); alt satır
+// sıralama ölçütünü gösterir — shard/harf değil.
 function discoveryHtml() {
   const h = state.hist;
   if (!h) return '';
   const topCourses = topByCount(h.codes, 3, 6);
   const topPeople = topByCount(h.names, 3, 6);
-  const chips = (items, label) =>
-    `<h3 class="mh">${label}</h3><div class="chips">` +
-    items.map((c) => `<button class="chip" data-q="${esc(c[0])}"><b>${esc(c[0])}</b><span>${esc(c[1] || '')}</span></button>`).join('') +
-    '</div>';
+  if (!topCourses.length && !topPeople.length) return '';
+  const courseChips = topCourses.length
+    ? `<h3 class="h-disc">En çok dönem açılan dersler</h3><div class="chips">` +
+      topCourses.map((c) => `<button class="chip" data-kind="course" data-key="${esc(c[0])}" data-branch="${esc(c[2])}">
+        <b>${esc(c[0])}</b><span>${esc(c[1])} · ${c[3]} dönem</span></button>`).join('') + '</div>'
+    : '';
+  const personChips = topPeople.length
+    ? `<h3 class="h-disc">En çok şubesi olan öğretim üyeleri</h3><div class="chips">` +
+      topPeople.map((n) => `<button class="chip" data-kind="person" data-key="${esc(n[0])}" data-bucket="${esc(n[1])}">
+        <b>${esc(n[0])}</b><span>${n[3]} şube · ${n[2]} dönem</span></button>`).join('') + '</div>'
+    : '';
   return `<p class="h-intro">Bir dersin kodunu, adını ya da bir öğretim üyesini ara. Ne arayacağını bilmiyorsan:</p>
-    ${chips(topCourses, 'En çok dönem açılan dersler')}
-    ${chips(topPeople, 'En çok şubesi olan öğretim üyeleri')}`;
+    ${courseChips}${personChips}`;
 }
 
 async function showCourse(code, branch) {

@@ -380,6 +380,13 @@ func (b *Builder) Generate() error {
 		if err := b.writeIndexPage(terms); err != nil {
 			return err
 		}
+	} else {
+		// İniş sayfaları ("İTÜ ders planı", "GANO hesaplama" vb.) — yalnızca TR.
+		for _, p := range landingPages {
+			if err := b.writeLandingPage(p); err != nil {
+				return err
+			}
+		}
 	}
 
 	return b.writeSitemap(terms, brCodes, courseSlugs, instrSlugs)
@@ -526,32 +533,53 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	out.WriteString(`<?xml version="1.0" encoding="UTF-8"?>` + "\n")
 	out.WriteString(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">` + "\n")
 
-	sitemapURL(&out, baseURL+"/", rootDate, "daily", "1.0")
+	// Dil öneki: EN sitemap yalnız /en/ altındaki gerçek EN sayfaları içerir.
+	prefix := ""
+	rootPrio := "1.0"
 	if b.l.Code == "en" {
-		sitemapURL(&out, baseURL+"/en/", rootDate, "daily", "0.9")
+		prefix = "/en"
+		rootPrio = "0.9"
 	}
+	sitemapURL(&out, baseURL+prefix+"/", rootDate, "daily", rootPrio)
 
 	for _, tr := range terms {
 		td := dateOf(tr.tref.ScrapedAt)
 		if td == "" {
 			td = rootDate
 		}
-		sitemapURL(&out, fmt.Sprintf("%s/dersler/%s/", baseURL, tr.tref.Slug), td, "monthly", "0.7")
+		sitemapURL(&out, fmt.Sprintf("%s%s/dersler/%s/", baseURL, prefix, tr.tref.Slug), td, "monthly", "0.7")
 	}
 	for _, c := range brCodes {
-		sitemapURL(&out, fmt.Sprintf("%s/brans/%s/", baseURL, c), rootDate, "monthly", "0.6")
+		sitemapURL(&out, fmt.Sprintf("%s%s/brans/%s/", baseURL, prefix, c), rootDate, "monthly", "0.6")
 	}
-	// Ders sayfaları.
-	cslugList := make([]string, 0, len(courseSlugs))
-	for _, s := range courseSlugs { cslugList = append(cslugList, s) }
-	sort.Strings(cslugList)
-	for _, s := range cslugList {
-		sitemapURL(&out, fmt.Sprintf("%s/ders/%s/", baseURL, s), rootDate, "monthly", "0.8")
-	}
-	// Hoca sayfaları (yalnızca TR).
+	// İniş sayfaları (yalnızca TR) — elle yazılmış içerik; lastmod yok (scrape ile değişmez).
 	if b.l.Code != "en" {
+		for _, p := range landingPages {
+			sitemapURL(&out, fmt.Sprintf("%s/%s/", baseURL, p.slug), "", "yearly", "0.8")
+		}
+	}
+	// Ders sayfaları (yalnızca TR üretilir — EN sitemap'e girmez).
+	if b.l.Code != "en" {
+		cslugList := make([]string, 0, len(courseSlugs))
+		for _, s := range courseSlugs {
+			cslugList = append(cslugList, s)
+		}
+		sort.Strings(cslugList)
+		for _, s := range cslugList {
+			sitemapURL(&out, fmt.Sprintf("%s/ders/%s/", baseURL, s), rootDate, "monthly", "0.8")
+		}
+	}
+	// Hoca sayfaları (yalnızca TR) — tekilleştirilmiş (aynı slug'a düşen isimler bir kez).
+	if b.l.Code != "en" {
+		seen := make(map[string]bool, len(instrSlugs))
 		hslugList := make([]string, 0, len(instrSlugs))
-		for _, s := range instrSlugs { hslugList = append(hslugList, s) }
+		for _, s := range instrSlugs {
+			if seen[s] {
+				continue
+			}
+			seen[s] = true
+			hslugList = append(hslugList, s)
+		}
 		sort.Strings(hslugList)
 		for _, s := range hslugList {
 			sitemapURL(&out, fmt.Sprintf("%s/hoca/%s/", baseURL, s), rootDate, "monthly", "0.6")
@@ -708,6 +736,129 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 		Scraped: scraped, Content: content, JSONLD: jsonld,
 		AltURL: altURL, AltLang: altLang, AssetV: b.version, Lang: b.l,
 	})
+}
+
+// --- iniş sayfaları (araç/bilgi sayfaları) ---
+// "İTÜ ders planı", "GANO hesaplama" gibi Türkçe arama sorgularına karşılık gelen
+// elle yazılmış içerik sayfaları. CTA ile SPA özelliğine (/#dersplanim vb.) bağlanır.
+// Yalnızca TR üretilir (alt=false — hreflang yok). lastmod sitemap'te verilmez:
+// içerik elle yazıldığı için scrape tarihiyle değişmemeli.
+
+type landingPage struct {
+	slug        string
+	title       string
+	description string
+	h1          string
+	body        []string // düz paragraf metinleri (<p> ile sarılır)
+	cta         string   // href (hash ya da SPA URL'i)
+	ctaLabel    string
+}
+
+var landingPages = []landingPage{
+	{
+		slug: "ders-plani", title: "İTÜ ders planı oluştur",
+		description: "İTÜ ders planını görüntüle: bölümünün planını aç, derslerini işaretle, notlarını gir ve GANO'nu hesapla.",
+		h1:          "İTÜ ders planı",
+		body: []string{
+			"İTÜ Ders Arşivi'nde seçtiğin programın dönem dönem ders planını açabilir, derslerin bu dönem açık olup olmadığını görebilirsin. Ders Planım görünümü, derslere not girip GANO ve dönem ortalamalarını anında hesaplar.",
+			"Planı aç, seçmeli slotlarda dersi seç, notlarını gir — hepsi tarayıcında saklanır, hiçbir veri sunucuya gitmez.",
+		},
+		cta: "/#dersplanim", ctaLabel: "Ders Planım'ı aç",
+	},
+	{
+		slug: "gano-hesaplama", title: "İTÜ GANO hesaplama",
+		description: "İTÜ GANO (genel ağırlıklı not ortalaması) hesaplama aracı: harf notu katsayılarıyla notlarını gir, GANO'n hesaplansın.",
+		h1:          "İTÜ GANO hesaplama",
+		body: []string{
+			"GANO, İTÜ'nün 4.00 ölçeğindeki genel ağırlıklı not ortalamandır. Her harf notu bir katsayı taşır: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0; FF ve VF 0.0.",
+			"Ders Planım görünümünde notlarını ders ders gir; GANO'n ve her yarıyılın ortalaması otomatik hesaplansın. Transfer kredin veya mevcut GANO'n varsa üstteki kutulara yaz.",
+			"Bu bir transkript değildir — resmî GANO için öğrenci bilgi sistemine bak.",
+		},
+		cta: "/#dersplanim", ctaLabel: "GANO'nu hesapla",
+	},
+	{
+		slug: "not-ortalamasi", title: "İTÜ not ortalaması ve harf notları",
+		description: "İTÜ harf notu katsayıları ve not ortalaması: AA'dan FF'ye ölçek, muaf/geçti notları ve ortalamanın nasıl hesaplandığı.",
+		h1:          "İTÜ not ortalaması ve harf notları",
+		body: []string{
+			"İTÜ'de dersler 4.00 ölçeğinde harf notuyla değerlendirilir: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0, FF 0.0. '+' işaretli notlar (BA+, BB+) ara katsayı taşır.",
+			"Muaf (M), geçti (G), devamsız (VF) ve kredisi sayılmayan durumlar ortalamayı farklı etkiler. Ders Planım'da bu notları işaretleyip ortalamanı görebilirsin.",
+		},
+		cta: "/#dersplanim", ctaLabel: "Notlarını gir",
+	},
+	{
+		slug: "ders-programi", title: "İTÜ ders programı",
+		description: "İTÜ ders programı: bu dönem açık dersleri, şubeleri, öğretim üyelerini, gün/saati ve kontenjan doluluğunu ara.",
+		h1:          "İTÜ ders programı",
+		body: []string{
+			"OBS'nin yayınladığı ders programını arşivden ara: ders kodu, ad, CRN veya öğretim üyesiyle filtrele; şubelerin gün/saatini, kontenjanını ve doluluk oranını gör.",
+			"Kayıt haftasında kontenjan doluluğu yarım saatte bir tazelenir.",
+		},
+		cta: "/#dersler", ctaLabel: "Dersleri ara",
+	},
+	{
+		slug: "kontenjan", title: "İTÜ ders kontenjanları ve doluluk",
+		description: "İTÜ ders kontenjanları: şube başına kontenjan/yazılan sayısı, doluluk oranı ve dolma hızı geçmişi.",
+		h1:          "İTÜ ders kontenjanları",
+		body: []string{
+			"Her şubenin kontenjanı, yazılan öğrenci sayısı ve doluluk yüzdesi tabloda görünür. Dolu ve kritik (≥%85) şubeler ayrı işaretlenir.",
+			"Bir dersin geçmiş dönemlerde ne kadar hızlı dolduğunu detay sayfasında görebilirsin.",
+		},
+		cta: "/#dersler", ctaLabel: "Kontenjanları gör",
+	},
+	{
+		slug: "ders-secimi", title: "İTÜ ders seçimi rehberi",
+		description: "İTÜ ders seçimi: önşartları kontrol et, final çakışmasını gör, kontenjanı ve dolma hızını değerlendir, programını kur.",
+		h1:          "İTÜ ders seçimi rehberi",
+		body: []string{
+			"Ders seçmeden önce: önşartları karşılıyor musun, finaller çakışıyor mu, kontenjan dolmak üzere mi?",
+			"Arşivde dersin önşart haritasını aç, final takviminde çakışmayı kontrol et, Program görünümünde haftalık çizelgeni kur ve çakışmaları gör.",
+		},
+		cta: "/#dersler", ctaLabel: "Aramaya başla",
+	},
+	{
+		slug: "onsart-haritasi", title: "İTÜ önşart haritası",
+		description: "İTÜ önşart haritası: bir programın dersleri arasındaki önşart ilişkilerini yarıyıl yarıyıl gör.",
+		h1:          "İTÜ önşart haritası",
+		body: []string{
+			"Önşart haritası, bir programın derslerini yarıyıl sütunlarında ve önşart bağlantılarını ok olarak gösterir. Bir dersi alabilmek için hangi dersleri bitirmen gerektiğini gör.",
+			"Program seçmek için Dersler'de arayarak başlayabilirsin.",
+		},
+		cta: "/#onsart", ctaLabel: "Haritayı aç",
+	},
+	{
+		slug: "ders-arsivi", title: "İTÜ ders arşivi — geçmiş dönemler",
+		description: "İTÜ ders arşivi: 2016'dan bugüne tüm dönemlerin dersleri, kontenjan geçmişi, katalog ve not dağılımı.",
+		h1:          "İTÜ ders arşivi",
+		body: []string{
+			"OBS yalnızca içinde bulunulan dönemi gösterir; dönem bitince veri kaybolur. Bu arşiv 2016'dan beri her dönemi sürüm kontrolüne alır.",
+			"Geçmiş görünümünde bir dersin hangi dönemlerde, hangi hocayla ve kaç şube açıldığını ara; not dağılımı ve katalog bilgisini gör.",
+		},
+		cta: "/#gecmis", ctaLabel: "Geçmişi ara",
+	},
+}
+
+func (b *Builder) writeLandingPage(p landingPage) error {
+	if b.l.Code == "en" {
+		return nil // iniş sayfaları yalnızca TR (EN karşılığı yok)
+	}
+	canonical := fmt.Sprintf("%s/%s/", baseURL, p.slug)
+	var paras strings.Builder
+	for _, t := range p.body {
+		paras.WriteString("<p>" + template.HTMLEscapeString(t) + "</p>\n")
+	}
+	content := template.HTML(buildContent(
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(p.h1)),
+		paras.String(),
+		fmt.Sprintf(`<p class="cta"><a class="btn" href="%s">%s</a></p>`,
+			template.HTMLEscapeString(p.cta), template.HTMLEscapeString(p.ctaLabel)),
+	))
+	jsonld := jsonldScript([]any{map[string]any{
+		"@context": "https://schema.org", "@type": "WebPage",
+		"url": canonical, "name": p.title, "description": p.description,
+	}})
+	return b.writePage(filepath.Join(b.outRoot, p.slug, "index.html"),
+		p.title, p.description, canonical, dateOf(b.index.ScrapedAt), content, jsonld, false)
 }
 
 // --- helpers ---

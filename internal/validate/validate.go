@@ -914,6 +914,18 @@ func (r *Result) checkSitePages(root string) {
 		}
 	}
 
+	// İniş sayfaları ("İTÜ ders planı", "GANO hesaplama" vb.) — site.go'daki
+	// landingPages ile aynı slug listesi; kök dizininde <slug>/index.html.
+	landingSlugs := []string{
+		"ders-plani", "gano-hesaplama", "not-ortalamasi", "ders-programi",
+		"kontenjan", "ders-secimi", "onsart-haritasi", "ders-arsivi",
+	}
+	gotLanding := map[string]bool{}
+	for _, s := range landingSlugs {
+		gotLanding[s] = true
+		checkPage(root, s, false)
+	}
+
 	// Sitemap kapsamı: sitedeki her sayfa sitemap'te, sitemap'teki her loc dosyada.
 	b, err := os.ReadFile(filepath.Join(root, "sitemap.xml"))
 	if err != nil {
@@ -957,6 +969,13 @@ func (r *Result) checkSitePages(root string) {
 		expected := fmt.Sprintf("https://itu-ders.com/hoca/%s/", s)
 		if !smLocs[expected] {
 			r.errf("seo: sitemap'te eksik hoca: %s", s)
+		}
+		delete(smLocs, expected)
+	}
+	for s := range gotLanding {
+		expected := fmt.Sprintf("https://itu-ders.com/%s/", s)
+		if !smLocs[expected] {
+			r.errf("seo: sitemap'te eksik iniş sayfası: %s", s)
 		}
 		delete(smLocs, expected)
 	}

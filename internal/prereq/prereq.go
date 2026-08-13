@@ -120,7 +120,9 @@ func (c *Client) Requirements(ctx context.Context, br Branch) ([]Row, error) {
 	return parse(body, br.Code)
 }
 
-func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) ([]Row, error) {
+// ScrapeAll, tüm branşları eşzamanlı çeker. Per-branş hataları failed'da
+// toplanır, diğerleri devam eder (Faz 2: kısmi başarı).
+func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) ([]Row, []string, error) {
 	type result struct {
 		rows []Row
 		err  error
@@ -153,20 +155,18 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) 
 	go func() { wg.Wait(); close(results) }()
 
 	var all []Row
-	var firstErr error
+	var failed []string
 	for r := range results {
 		if r.err != nil {
-			if firstErr == nil {
-				firstErr = fmt.Errorf("%s: %w", r.code, r.err)
-			}
+			failed = append(failed, fmt.Sprintf("%s: %v", r.code, r.err))
 			continue
 		}
 		all = append(all, r.rows...)
 	}
-	if firstErr != nil {
-		return nil, firstErr
+	if ctx.Err() != nil {
+		return nil, failed, ctx.Err()
 	}
-	return all, nil
+	return all, failed, nil
 }
 
 func parse(body, branch string) ([]Row, error) {

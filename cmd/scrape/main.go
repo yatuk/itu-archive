@@ -47,20 +47,22 @@ func main() {
 		skipExams    = flag.Bool("skip-exams", false, "sınav takvimini atla")
 		skipPrereq   = flag.Bool("skip-prereq", false, "önşart grafiğini atla")
 		mode         = flag.String("mode", "tam", "koşu modu (tam/hafif) — status.json'a yazılır")
+		dumpDir      = flag.String("dump-dir", "/tmp/itu-scrape-dump", "hatalı yanıtların ham gövdesinin saklanacağı dizin (K8)")
 	)
 	flag.Parse()
 
-	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams, *skipPrereq, *mode); err != nil {
+	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams, *skipPrereq, *mode, *dumpDir); err != nil {
 		log.Fatalf("hata: %v", err)
 	}
 }
 
-func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams, skipPrereq bool, mode string) error {
+func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams, skipPrereq bool, mode, dumpDir string) error {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
 	started := time.Now()
 	f := fetch.New(rps, workers)
+	f.DumpDir = dumpDir
 	st := store.New(out)
 
 	var currentSlug, currentLabel string
@@ -135,6 +137,8 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 func writeStatus(st *store.Store, out, mode string, started time.Time) error {
 	now := time.Now().UTC()
 	sections := 0
+	partial := false
+	var failedBranches []string
 	if b, err := os.ReadFile(filepath.Join(out, "data", "index.json")); err == nil {
 		var ix struct {
 			CurrentSlug string `json:"currentSlug"`
@@ -142,10 +146,14 @@ func writeStatus(st *store.Store, out, mode string, started time.Time) error {
 		if json.Unmarshal(b, &ix) == nil && ix.CurrentSlug != "" {
 			if mb, err := os.ReadFile(filepath.Join(out, "data", "terms", ix.CurrentSlug, "meta.json")); err == nil {
 				var mt struct {
-					Sections int `json:"sections"`
+					Sections       int      `json:"sections"`
+					Partial        bool     `json:"partial"`
+					FailedBranches []string `json:"failedBranches"`
 				}
 				_ = json.Unmarshal(mb, &mt)
 				sections = mt.Sections
+				partial = mt.Partial
+				failedBranches = mt.FailedBranches
 			}
 		}
 	}
@@ -153,12 +161,35 @@ func writeStatus(st *store.Store, out, mode string, started time.Time) error {
 		"lastRunAt":      now.Format(time.RFC3339),
 		"lastSuccessAt":  now.Format(time.RFC3339),
 		"mode":           mode,
-		"partial":        false,
-		"failedBranches": []string{},
+		"partial":        partial,
+		"failedBranches": failedBranches,
 		"durationSec":    int(time.Since(started).Seconds()),
 		"sections":       sections,
 	}
 	return st.WriteJSON(status, "data", "status.json")
+}
+
+// partialGate, kısmi başarı eşiğini uygular (Faz 2): başarısız oran %5'in
+// altındaysa uyarıyla devam edilir (meta.partial işaretlenecek); üstündeyse
+// hata döner — iş kırmızı, commit olmaz, bozuk/eksik arşiv sessizce yayınlanmaz.
+func partialGate(total int, failed []string) error {
+	if len(failed) == 0 {
+		return nil
+	}
+	if total <= 0 {
+		return fmt.Errorf("branş listesi boş")
+	}
+	rate := float64(len(failed)) / float64(total)
+	if rate >= 0.05 {
+		sample := failed
+		if len(sample) > 5 {
+			sample = failed[:5]
+		}
+		return fmt.Errorf("%d/%d branş hatalı (%0.1f%%) — eşiğin üstünde; örnekler: %s",
+			len(failed), total, rate*100, strings.Join(sample, "; "))
+	}
+	logf("UYARI: %d/%d branş hatalı (%0.1f%%) — kısmi tarama yazılıyor", len(failed), total, rate*100)
+	return nil
 }
 
 func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, workers int) (string, string, error) {
@@ -184,7 +215,7 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	logf("%d branş kodu bulundu", len(branches))
 
 	var done int64
-	byBranch, err := oc.ScrapeAll(ctx, branches, workers, func(br obs.Branch, n int) {
+	byBranch, failed, err := oc.ScrapeAll(ctx, branches, workers, func(br obs.Branch, n int) {
 		if d := atomic.AddInt64(&done, 1); d%50 == 0 || int(d) == len(branches) {
 			logf("  %d/%d branş", d, len(branches))
 		}
@@ -208,6 +239,18 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	meta, err := st.WriteTerm(label, slug, time.Now().UTC().Format(time.RFC3339), true, sections)
 	if err != nil {
 		return "", "", err
+	}
+	// Faz 2: kısmi başarı — başarısız oran %5'in altındaysa uyarıyla devam,
+	// üstündeyse kırmızı (veri yine yazılır ama iş hata sayar, commit olmaz).
+	if err := partialGate(len(branches), failed); err != nil {
+		return "", "", err
+	}
+	if len(failed) > 0 {
+		meta.Partial = true
+		meta.FailedBranches = failed
+		if err := st.WriteJSON(meta, "data", "terms", slug, "meta.json"); err != nil {
+			return "", "", err
+		}
 	}
 	logf("%s: %d şube, %d ders, %d branş yazıldı", slug, meta.Sections, meta.Courses, len(meta.Branches))
 	return label, slug, nil
@@ -267,8 +310,11 @@ func scrapeExams(ctx context.Context, f *fetch.Client, st *store.Store, workers 
 	if err != nil {
 		return err
 	}
-	exams, err := fc.ScrapeAll(ctx, branches, workers)
+	exams, failed, err := fc.ScrapeAll(ctx, branches, workers)
 	if err != nil {
+		return err
+	}
+	if err := partialGate(len(branches), failed); err != nil {
 		return err
 	}
 	if len(exams) == 0 {
@@ -308,8 +354,11 @@ func scrapePrereqs(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	if err != nil {
 		return err
 	}
-	rows, err := pc.ScrapeAll(ctx, branches, workers)
+	rows, failed, err := pc.ScrapeAll(ctx, branches, workers)
 	if err != nil {
+		return err
+	}
+	if err := partialGate(len(branches), failed); err != nil {
 		return err
 	}
 

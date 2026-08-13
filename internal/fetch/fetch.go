@@ -5,10 +5,15 @@ package fetch
 import (
 	"context"
 	"fmt"
+	"hash/fnv"
 	"io"
 	"math/rand"
 	"net/http"
+	"os"
+	"path/filepath"
+	"strconv"
 	"strings"
+	"sync"
 	"time"
 	"unicode"
 	"unicode/utf8"
@@ -18,11 +23,39 @@ import (
 
 const userAgent = "itu-scraper/1.0 (+https://github.com/topics/itu; public schedule archiver)"
 
+// Retry-After üst sınırı: 60 sn'nin üzeri runner timeout'una takılır.
+const maxRetryAfter = 60 * time.Second
+
+// Ardışık 429 eşiği: bu kadar art arda throttle gelirse hız koşu boyunca yarıya
+// iner (kayıt haftasında OBS'yi zorlamamak, veriden önemli).
+const adaptThreshold = 5
+
 // Client, tüm scraper'ların paylaştığı istemci.
 type Client struct {
 	http    *http.Client
 	limiter *rate.Limiter
 	Retries int
+
+	// Faz 2 (K3): ardışık 429 sayacı + uyarlanabilir hız. Eşzamanlı worker'lar
+	// Bytes'ı paylaştığı için sayaç kilit altında.
+	mu             sync.Mutex
+	consecutive429 int
+	rateHalved     bool
+
+	// Faz 2 (K8): ayarlanırsa hatalı yanıtların ham gövdesi bu dizine yazılır —
+	// şema değişikliği ancak böyle teşhis edilir.
+	DumpDir string
+}
+
+// Dump, ham gövdeyi DumpDir altına yazar (varsa). Hata sessizdir.
+func (c *Client) Dump(body []byte, name string) {
+	if c.DumpDir == "" || len(body) == 0 {
+		return
+	}
+	if err := os.MkdirAll(c.DumpDir, 0o755); err != nil {
+		return
+	}
+	_ = os.WriteFile(filepath.Join(c.DumpDir, name), body, 0o644)
 }
 
 // New, saniyede rps istek yapan bir istemci döndürür.
@@ -41,15 +74,22 @@ func New(rps float64, burst int) *Client {
 }
 
 // Bytes, url'yi çeker ve ham gövdeyi döndürür. 5xx ve ağ hatalarında yeniden dener.
+// 429/503'te sunucunun Retry-After dediği süreye uyar (Faz 2, K3); yoksa üstel backoff.
 func (c *Client) Bytes(ctx context.Context, url string) ([]byte, error) {
 	var lastErr error
+	var lastBody []byte
+	wait := time.Duration(0) // Retry-After'dan gelen bekleme (sonraki denemede kullanılır)
 	for attempt := 0; attempt <= c.Retries; attempt++ {
 		if attempt > 0 {
-			// 0.5s, 1s, 2s, 4s + jitter
-			backoff := time.Duration(500<<uint(attempt-1)) * time.Millisecond
-			jitter := time.Duration(rand.Int63n(int64(backoff / 2)))
+			// Sunucu Retry-After vermişse ona uy (üst sınır 60 sn); yoksa 0.5s,1s,2s,4s + jitter.
+			backoff := wait
+			if backoff == 0 {
+				backoff = time.Duration(500<<uint(attempt-1)) * time.Millisecond
+				backoff += time.Duration(rand.Int63n(int64(backoff / 2)))
+			}
+			wait = 0
 			select {
-			case <-time.After(backoff + jitter):
+			case <-time.After(backoff):
 			case <-ctx.Done():
 				return nil, ctx.Err()
 			}
@@ -77,17 +117,80 @@ func (c *Client) Bytes(ctx context.Context, url string) ([]byte, error) {
 			lastErr = err
 			continue
 		}
+		lastBody = body
 		if resp.StatusCode >= 500 || resp.StatusCode == 429 {
 			lastErr = fmt.Errorf("%s: HTTP %d", url, resp.StatusCode)
+			if resp.StatusCode == 429 {
+				wait = retryAfter(resp.Header.Get("Retry-After"))
+				c.note429()
+			} else {
+				c.reset429()
+			}
 			continue
 		}
 		if resp.StatusCode != http.StatusOK {
-			// 4xx'te yeniden denemenin anlamı yok.
+			// 4xx'te yeniden denemenin anlamı yok. Hatalı sayfayı sakla (K8).
+			c.Dump(lastBody, dumpName(resp.StatusCode, url))
 			return nil, fmt.Errorf("%s: HTTP %d", url, resp.StatusCode)
 		}
 		return body, nil
 	}
+	// Denemeler tükendi — son hatalı yanıtı sakla.
+	c.Dump(lastBody, dumpName(0, url))
 	return nil, fmt.Errorf("%s: %d deneme sonrası başarısız: %w", url, c.Retries+1, lastErr)
+}
+
+// dumpName, hatalı yanıt dosyası için benzersiz bir ad üretir: durum kodu +
+// URL'nin kısa karması (eşzamanlı hatalar birbirinin üzerine yazmasın).
+func dumpName(code int, url string) string {
+	h := fnv.New32a()
+	_, _ = h.Write([]byte(url))
+	return fmt.Sprintf("http-%d-%x.html", code, h.Sum32())
+}
+
+// retryAfter, HTTP Retry-After başlığını çözer (saniye veya HTTP tarihi).
+// Çözülemezse 0 (sabit backoff); 60 sn üst sınırında kesilir.
+func retryAfter(v string) time.Duration {
+	v = strings.TrimSpace(v)
+	if v == "" {
+		return 0
+	}
+	if secs, err := strconv.Atoi(v); err == nil {
+		d := time.Duration(secs) * time.Second
+		if d > maxRetryAfter {
+			return maxRetryAfter
+		}
+		return d
+	}
+	if t, err := http.ParseTime(v); err == nil {
+		d := time.Until(t)
+		if d <= 0 {
+			return 0
+		}
+		if d > maxRetryAfter {
+			return maxRetryAfter
+		}
+		return d
+	}
+	return 0
+}
+
+// note429, ardışık 429 sayacını artırır; eşik aşılınca limiter hızını yarıya düşürür.
+func (c *Client) note429() {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.consecutive429++
+	if c.consecutive429 >= adaptThreshold && !c.rateHalved {
+		c.rateHalved = true
+		c.limiter.SetLimit(c.limiter.Limit() / 2)
+	}
+}
+
+// reset429, ardışık 429 sayacını sıfırlar (5xx'te).
+func (c *Client) reset429() {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.consecutive429 = 0
 }
 
 // Text, gövdeyi çeker ve DecodeMixed ile metne çevirir.

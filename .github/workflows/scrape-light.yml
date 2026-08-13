@@ -19,6 +19,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write        # kırmızı koşuda issue açmak için
 
 jobs:
   scrape:
@@ -92,3 +93,30 @@ PY
           done
           git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push
           exit $?
+
+      - name: Hatalı sayfaları sakla (K8)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hatali-sayfalar
+          path: /tmp/itu-scrape-dump/
+          retention-days: 7
+
+      - name: Kırmızı koşuda issue aç (K4)
+        if: failure()
+        run: |
+          title="scrape kırmızı: $(date -u +'%Y-%m-%d %H:%M') UTC"
+          if gh issue list --state open --search "scrape kırmızı" --json number -q 'length > 0' 2>/dev/null; then
+            echo "Açık benzer issue var, atlandı."
+          else
+            gh issue create --title "$title" \
+              --body "Scrape workflow'u kırmızıya düştü: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi
+
+      - name: Nabız (K4)
+        if: always()
+        run: |
+          url="${{ secrets.HEARTBEAT_URL }}"
+          [ -z "$url" ] && exit 0
+          [ "${{ job.status }}" != "success" ] && url="${url}/fail"
+          curl -fsS -m 10 --retry 3 "$url" || true

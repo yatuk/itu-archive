@@ -54,9 +54,14 @@ func run(out string, workers int, rps float64) error {
 		return err
 	}
 
-	byBranch, err := oc.ScrapeAll(ctx, branches, workers, nil)
+	byBranch, failed, err := oc.ScrapeAll(ctx, branches, workers, nil)
 	if err != nil {
 		return err
+	}
+	if len(failed) > 0 {
+		// Kontenjan ölçümü best-effort'tur: birkaç branş hatalıysa ölçümü
+		// boşa düşürme; uyarı yaz, başarılı branşlarla devam et.
+		fmt.Fprintf(os.Stderr, "· UYARI: %d/%d branş hatalı, ölçüm bunlarsız yazılıyor\n", len(failed), len(branches))
 	}
 	var sections []model.Section
 	for _, secs := range byBranch {

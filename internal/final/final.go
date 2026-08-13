@@ -86,8 +86,9 @@ func (c *Client) Exams(ctx context.Context, br Branch) ([]model.Exam, error) {
 	return parse(body, br.Code)
 }
 
-// ScrapeAll, tüm branşları eşzamanlı çeker.
-func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) ([]model.Exam, error) {
+// ScrapeAll, tüm branşları eşzamanlı çeker. Per-branş hataları failed'da
+// toplanır, diğerleri devam eder (Faz 2: kısmi başarı).
+func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) ([]model.Exam, []string, error) {
 	type result struct {
 		exams []model.Exam
 		err   error
@@ -120,18 +121,16 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) 
 	go func() { wg.Wait(); close(results) }()
 
 	var all []model.Exam
-	var firstErr error
+	var failed []string
 	for r := range results {
 		if r.err != nil {
-			if firstErr == nil {
-				firstErr = fmt.Errorf("%s: %w", r.code, r.err)
-			}
+			failed = append(failed, fmt.Sprintf("%s: %v", r.code, r.err))
 			continue
 		}
 		all = append(all, r.exams...)
 	}
-	if firstErr != nil {
-		return nil, firstErr
+	if ctx.Err() != nil {
+		return nil, failed, ctx.Err()
 	}
 	sort.Slice(all, func(i, j int) bool {
 		if all[i].CRN != all[j].CRN {
@@ -139,7 +138,7 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) 
 		}
 		return all[i].Type < all[j].Type
 	})
-	return all, nil
+	return all, failed, nil
 }
 
 func parse(body, branch string) ([]model.Exam, error) {

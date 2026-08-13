@@ -2,8 +2,29 @@ package fetch
 
 import (
 	"testing"
+	"time"
 	"unicode/utf8"
 )
+
+// retryAfter, saniye biçimini, HTTP tarihini ve 60 sn üst sınırını çözer (Faz 2, K3).
+func TestRetryAfter(t *testing.T) {
+	if d := retryAfter("30"); d != 30*time.Second {
+		t.Errorf("saniye: %v", d)
+	}
+	if d := retryAfter("500"); d != maxRetryAfter {
+		t.Errorf("üst sınır: %v", d)
+	}
+	if d := retryAfter(""); d != 0 {
+		t.Errorf("boş: %v", d)
+	}
+	if d := retryAfter("çözülemez"); d != 0 {
+		t.Errorf("bozuk: %v", d)
+	}
+	// HTTP tarihi: geçmiş bir tarih → 0 (bekleme süresi geçmiş).
+	if d := retryAfter("Wed, 01 Jan 2020 00:00:00 GMT"); d != 0 {
+		t.Errorf("geçmiş tarih: %v", d)
+	}
+}
 
 // DecodeMixed, aynı belgede UTF-8 ve ISO-8859-9 baytlarını karışık kullanan
 // takvim.sis.itu.edu.tr gibi sayfaları çözmeli.

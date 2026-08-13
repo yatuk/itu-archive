@@ -43,6 +43,10 @@ type TermMeta struct {
 	Courses   int          `json:"courses"`
 	Branches  []BranchMeta `json:"branches"`
 	Stats     SiteStats    `json:"stats"`
+	// Kısmi tarama (Faz 2): bazı branşlar çekilemedi — site "veri eksik olabilir"
+	// diyebilsin, sessizce yanlış sayı göstermesin.
+	Partial        bool     `json:"partial,omitempty"`
+	FailedBranches []string `json:"failedBranches,omitempty"`
 }
 
 // Exam, final sınav takvimindeki tek bir satır.

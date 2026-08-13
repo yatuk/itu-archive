@@ -128,9 +128,10 @@ func (c *Client) AllBranches(ctx context.Context) ([]Branch, error) {
 	return all, nil
 }
 
-// ScrapeAll, tüm branşları eşzamanlı çeker. Tek bir branşın hatası tüm çalıştırmayı
-// düşürür — yarım arşiv, eksik olduğu belli olmayan arşivden iyidir.
-func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int, progress func(Branch, int)) (map[string][]model.Section, error) {
+// ScrapeAll, tüm branşları eşzamanlı çeker. Per-branş hataları failed'da
+// toplanır, diğer branşlar devam eder ve başarılı veri döner (Faz 2: kısmi
+// başarı). ctx iptalinde (SIGTERM) fatal hata döner — yarım yazılmaz.
+func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int, progress func(Branch, int)) (map[string][]model.Section, []string, error) {
 	type result struct {
 		br   Branch
 		secs []model.Section
@@ -164,12 +165,10 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int, 
 	go func() { wg.Wait(); close(results) }()
 
 	out := make(map[string][]model.Section, len(branches))
-	var firstErr error
+	var failed []string
 	for r := range results {
 		if r.err != nil {
-			if firstErr == nil {
-				firstErr = fmt.Errorf("%s (%s): %w", r.br.Code, r.br.Level, r.err)
-			}
+			failed = append(failed, fmt.Sprintf("%s (%s): %v", r.br.Code, r.br.Level, r.err))
 			continue
 		}
 		out[key(r.br)] = r.secs
@@ -177,10 +176,10 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int, 
 			progress(r.br, len(r.secs))
 		}
 	}
-	if firstErr != nil {
-		return nil, firstErr
+	if ctx.Err() != nil {
+		return nil, failed, ctx.Err()
 	}
-	return out, nil
+	return out, failed, nil
 }
 
 func key(br Branch) string { return br.Level + "/" + br.Code }

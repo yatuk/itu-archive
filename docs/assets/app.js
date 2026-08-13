@@ -14,6 +14,7 @@ import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
 import { onShow as programShow } from './views/program.js';
 import { PrereqGraph } from './prereq.js';
+import { methodToCode, codeToMethod, slugToCode } from './core/urlcodes.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -113,7 +114,12 @@ async function boot() {
   if (params.has('day')) $('#f-day').value = params.get('day');
   if (params.has('time')) $('#f-time').value = params.get('time');
   if (params.has('level')) $('#f-level').value = params.get('level');
-  if (params.has('method')) $('#f-method').value = params.get('method');
+  // method URL'de kısa kodla (f/c/h) gelir; eski uzun biçim (geriye uyumlu)
+  // aynen kabul edilir — applyFilters/saveState kısa koda çevirip sadeleştirir.
+  if (params.has('method')) {
+    const m = params.get('method');
+    $('#f-method').value = codeToMethod(m) || m;
+  }
   if (params.has('program')) $('#f-program').value = params.get('program');
   if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
@@ -205,6 +211,43 @@ function applyTabLabels() {
 
 const VIEWS = ['dersler', 'gecmis', 'onsart', 'sinavlar', 'takvim', 'donemler', 'program', 'hakkinda'];
 
+// Dersler filtrelerini kısa kodlarla query'ye yazar (term yalnızca aktif dönem
+// dışındaysa). Varsayılanlar (boş/"hepsi"/aktif dönem) URL'ye girmez.
+function derslerParams() {
+  const p = new URLSearchParams();
+  if (state.index && state.termSlug && state.termSlug !== state.index.currentSlug) p.set('term', state.termSlug);
+  const q = $('#q').value.trim();
+  if (q) p.set('q', q);
+  if ($('#f-branch').value) p.set('branch', $('#f-branch').value);
+  if ($('#f-day').value) p.set('day', $('#f-day').value);
+  if ($('#f-time').value) p.set('time', $('#f-time').value);
+  if ($('#f-level').value) p.set('level', $('#f-level').value);
+  const method = methodToCode($('#f-method').value);
+  if (method) p.set('method', method);
+  if ($('#f-program').value) p.set('program', $('#f-program').value);
+  if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
+  if ($('#f-open').checked) p.set('open', '1');
+  return p;
+}
+
+// URL'yi sekmeye göre kapsar: query'de yalnızca görünümün parametreleri kalır
+// (term global). Sekme değişiminde hedef görünüme ait olmayanlar düşer; dersler
+// filtreleri DOM'da durduğundan geri dönünce yeniden yazılır. push=true →
+// tarayıcı geçmişi (geri/ileri), değilse mevcut giriş (filtre değişimi).
+function writeViewUrl(view, push) {
+  const h = location.hash.slice(1);
+  const isDetail = h.startsWith('ders/');
+  const hash = (view === 'dersler' && isDetail) ? h : view;
+  const p = view === 'dersler' ? derslerParams() : new URLSearchParams();
+  if (view !== 'dersler' && state.index && state.termSlug && state.termSlug !== state.index.currentSlug) {
+    p.set('term', state.termSlug);
+  }
+  const qs = p.toString();
+  const url = location.pathname + (qs ? '?' + qs : '') + '#' + hash;
+  if (push) history.pushState(null, '', url);
+  else history.replaceState(null, '', url);
+}
+
 // show, sekme görünürlüğünü ve URL hash'ini yönetir. push=true ise tarayıcı
 // geçmişine yazılır (geri/ileri çalışır), değilse mevcut girişi değiştirir
 // (ilk yükleme ve popstate).
@@ -236,14 +279,7 @@ function wireTabs() {
     // Program oluşturucu daha geniş alan kullanır.
     const mainEl = document.querySelector('main.wrap');
     if (mainEl) mainEl.classList.toggle('wide', view === 'program');
-    const h = location.hash.slice(1);
-    // Paylaşılabilir ders detayı (#ders/BLG%20102E) hash'ini, dersler sekmesi
-    // gösterilirken koru; diğer sekme geçişlerinde normal şekilde üzerine yaz.
-    const detail = view === 'dersler' && h.startsWith('ders/');
-    if (!detail && h !== view) {
-      if (push) history.pushState(null, '', `#${view}`);
-      else history.replaceState(null, '', `#${view}`);
-    }
+    writeViewUrl(view, push);
   };
   showView = show;
 
@@ -274,7 +310,8 @@ function wireTabs() {
 // o dersin detayını açar. openCourseDetail URL'yi bu biçime yazar.
 function openDetailFromHash(h) {
   if (!h || !h.startsWith('ders/')) return;
-  const code = decodeURIComponent(h.slice(5)).trim();
+  // #ders/EHB-222E (slug) veya eski #ders/EHB%20222E (kodlu) — ikisini de çöz.
+  const code = slugToCode(decodeURIComponent(h.slice(5))).trim();
   if (code) openCourseDetail(code, { source: 'link' });
 }
 

@@ -10,6 +10,7 @@ import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, t
 import { state } from './store.js';
 import { fillBar, trendChart } from './chart.js';
 import { parseReq, renderReqTree } from '../prereq.js';
+import { codeToSlug } from './urlcodes.js';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
@@ -156,7 +157,9 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   // hatırla (örn. önşart sekmesinden açıldıysa oraya dön). Bağlantıdan
   // doğrudan açılıyorsa kapatınca dersler görünümüne dön.
   lastDetailHash = location.hash.startsWith('#ders/') ? null : (location.hash || '#dersler');
-  history.replaceState(null, '', '#ders/' + encodeURIComponent(code));
+  // #ders/<slug> (boşluksuz, kararlı) — URL temizliği. Eski #ders/...%20... kodlu
+  // bağlantılar yine çözülür (openDetailFromHash slugToCode).
+  history.replaceState(null, '', '#ders/' + codeToSlug(code));
 
   const branch = String(code).split(' ')[0];
   const [list, hist, cat, gr, buildings] = await Promise.all([

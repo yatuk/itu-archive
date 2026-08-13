@@ -7,6 +7,7 @@
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
 import { $, getJSON, esc, fold, normSearch, searchMatch, debounce, downloadCSV, setStatus, fillMeasured, formatInt } from '../core/utils.js';
+import { methodToCode } from '../core/urlcodes.js';
 import { state } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
@@ -407,14 +408,16 @@ export function openDetail(row, termSlug) {
 // Dönem + arama + filtre durumunu URL'ye yazar; bağlantı paylaşılabilir olur.
 function saveState() {
   const p = new URLSearchParams();
-  if (state.termSlug) p.set('term', state.termSlug);
+  // term yalnızca aktif dönem dışındaysa yaz (varsayılan URL'ye girmez).
+  if (state.termSlug && state.termSlug !== state.index?.currentSlug) p.set('term', state.termSlug);
   const q = $('#q').value.trim();
   if (q) p.set('q', q);
   if ($('#f-branch').value) p.set('branch', $('#f-branch').value);
   if ($('#f-day').value) p.set('day', $('#f-day').value);
   if ($('#f-time').value) p.set('time', $('#f-time').value);
   if ($('#f-level').value) p.set('level', $('#f-level').value);
-  if ($('#f-method').value) p.set('method', $('#f-method').value);
+  const method = methodToCode($('#f-method').value);
+  if (method) p.set('method', method);
   if ($('#f-program').value) p.set('program', $('#f-program').value);
   if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');

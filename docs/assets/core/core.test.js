@@ -14,7 +14,34 @@ import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks
 import { examToIcs } from '../views/exams.js';
 import { topByCount } from '../views/history.js';
 import { icsText, hashShort, foldLine, formatInt } from './utils.js';
+import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
 import * as fav from './favorites.js';
+
+test('methodToCode/codeToMethod iki yönlü çevirir', () => {
+  assert.equal(methodToCode('Fiziksel (Yüz yüze)'), 'f');
+  assert.equal(methodToCode('Sanal (Çevrimiçi/Online)'), 'c');
+  assert.equal(methodToCode('Bilinmeyen'), '');
+  assert.equal(codeToMethod('f'), 'Fiziksel (Yüz yüze)');
+  assert.equal(codeToMethod('x'), '');
+});
+
+test('codeToSlug/slugToCode çift yönlü (EHB 222E ↔ EHB-222E, BLG 102E)', () => {
+  for (const code of ['EHB 222E', 'BLG 102E']) {
+    const slug = codeToSlug(code);
+    assert.ok(!slug.includes(' '), `${code} → boşluksuz slug: ${slug}`);
+    assert.equal(slugToCode(slug), code);
+  }
+});
+
+test('scopeParams görünüme göre parametreleri kapsar (term global)', () => {
+  const p = new URLSearchParams('term=2026-2027-guz&time=ogle&level=LS&method=f&prog=CEN_LS');
+  const scoped = scopeParams('onsart', p);
+  assert.equal(scoped.get('term'), '2026-2027-guz');
+  assert.equal(scoped.get('prog'), 'CEN_LS');
+  assert.equal(scoped.get('time'), null);   // dersler'e ait, onsart'ta yok
+  assert.equal(scoped.get('level'), null);
+  assert.equal(scoped.get('method'), null);
+});
 
 test('formatInt binlik ayracı nokta olarak koyar', () => {
   assert.equal(formatInt(7669), '7.669');

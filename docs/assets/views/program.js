@@ -993,7 +993,7 @@ function share() {
   const items = currentItems();
   if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
   const p = new URLSearchParams();
-  p.set('term', term);
+  if (term !== state.index?.currentSlug) p.set('term', term); // aktif dönemi yazma
   p.set('crns', items.map((i) => i.row[0]).join(','));
   copyText(`${location.origin}${location.pathname}?${p.toString()}#program`);
   toast('Paylaşım bağlantısı kopyalandı');

@@ -4,6 +4,8 @@
  "faculty": "Makina Fakültesi",
  "level": "LS",
  "planLabel": "İmalat Mühendisliği Lisans Programı 2017-2018 / Güz ile 2026-2027 / Güz Dönemleri Arası",
+ "totalCredits": "154,00",
+ "totalEcts": "240,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,60 +13,121 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101L",
-      "name": "Genel Kimya I Laboratuvarı"
+      "name": "Genel Kimya I Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAK 105",
-      "name": "Makine Tasarımına Giriş"
+      "name": "Makine Tasarımına Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "IML 110",
-      "name": "İmalat Müh. Giriş ve Etik"
+      "name": "İmalat Müh. Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DAN 101",
-      "name": "Akademik Danışmanlık"
+      "name": "Akademik Danışmanlık",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112",
-      "name": "English I"
+      "name": "English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "Beden Eğitimi I (ITB)",
+      "groupId": "3368",
+      "credits": "0",
+      "ects": [
+       1
+      ],
       "options": [
        {
         "code": "BEB 101",
@@ -125,54 +188,110 @@
     {
      "course": {
       "code": "MAK 200",
-      "name": "Atölye"
+      "name": "Atölye",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 6.5,
+      "lab": 8,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAK 110E",
-      "name": "Comput.Aided Technical Drawing"
+      "name": "Comput.Aided Technical Drawing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAK 104E",
-      "name": "Intr to Comp in Mech. Eng (C)"
+      "name": "Intr to Comp in Mech. Eng (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAK 114",
-      "name": "Lineer Cebir ve Uygulamaları"
+      "name": "Lineer Cebir ve Uygulamaları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "Beden Eğitimi II (ITB)",
+      "groupId": "3384",
+      "credits": "0",
+      "ects": [
+       1
+      ],
       "options": [
        {
         "code": "BEB 101",
@@ -233,42 +352,88 @@
     {
      "course": {
       "code": "MAK 210E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MEK 207",
-      "name": "Mühendislik Mekaniği"
+      "name": "Mühendislik Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAK 213",
-      "name": "Malzeme Bilimi"
+      "name": "Malzeme Bilimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAK 211E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "IML 205",
-      "name": "Termodinamik"
+      "name": "Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "3.yy Elective Course (ITB)",
+      "groupId": "3389",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -681,48 +846,100 @@
     {
      "course": {
       "code": "ELK 226",
-      "name": "Elektrik-Elektronik Müh. Tem."
+      "name": "Elektrik-Elektronik Müh. Tem.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MUK 205",
-      "name": "Mukavemet"
+      "name": "Mukavemet",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 6,
+      "theory": 4,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "IML 206",
-      "name": "Akışkanlar Mekaniği"
+      "name": "Akışkanlar Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAK 224E",
-      "name": "Engineering Materials"
+      "name": "Engineering Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAK 230E",
-      "name": "Alg.Dev.& Comp.App.with Python"
+      "name": "Alg.Dev.& Comp.App.with Python",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAK 202E",
-      "name": "Numerical Meth.for Mech. Eng."
+      "name": "Numerical Meth.for Mech. Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "4. yy Seçmeli Ders (ITB)",
+      "groupId": "3390",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -875,37 +1092,79 @@
     {
      "course": {
       "code": "MAK 312",
-      "name": "Ölçme Değerlendirme"
+      "name": "Ölçme Değerlendirme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAK 333",
-      "name": "Sistem Dinamiği ve Kontrol"
+      "name": "Sistem Dinamiği ve Kontrol",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 337",
-      "name": "İmalat Planlama ve Kontrol"
+      "name": "İmalat Planlama ve Kontrol",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 311",
-      "name": "İmal Usülleri I"
+      "name": "İmal Usülleri I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 320",
-      "name": "Makina Elemanları"
+      "name": "Makina Elemanları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 305",
-      "name": "Isı Geçişi"
+      "name": "Isı Geçişi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     }
    ]
@@ -916,48 +1175,100 @@
     {
      "course": {
       "code": "IML 324E",
-      "name": "Comp.Aided Manufacturing Eng."
+      "name": "Comp.Aided Manufacturing Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "IML 338",
-      "name": "İmalat Sistemleri"
+      "name": "İmalat Sistemleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 322",
-      "name": "İmalatta Otomasyon"
+      "name": "İmalatta Otomasyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 312",
-      "name": "İmal Usülleri II"
+      "name": "İmal Usülleri II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5.5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 326E",
-      "name": "Manuf. of Nonmetalic Prod."
+      "name": "Manuf. of Nonmetalic Prod.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DAN 301",
-      "name": "Kariyer Danışmanlığı"
+      "name": "Kariyer Danışmanlığı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders(TB)",
+      "groupId": "3399",
+      "credits": "2,5",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MAK 372E",
@@ -978,24 +1289,50 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "IML 401",
-      "name": "İmalat Lab I"
+      "name": "İmalat Lab I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 4901",
-      "name": "İmalat Müh. Tasarımı I"
+      "name": "İmalat Müh. Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçmeli Ders I (MT)",
+      "groupId": "3414",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       5.5
+      ],
       "options": [
        {
         "code": "END 316",
@@ -1019,6 +1356,12 @@
     {
      "elective": {
       "title": "7.yy Seçmeli Ders II (MT)",
+      "groupId": "3415",
+      "credits": "2,5",
+      "ects": [
+       4,
+       5.5
+      ],
       "options": [
        {
         "code": "MAK 4021",
@@ -1038,6 +1381,14 @@
     {
      "elective": {
       "title": "7.yy Seçmeli Ders III (MT)",
+      "groupId": "3417",
+      "credits": "2,5 / 3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5
+      ],
       "options": [
        {
         "code": "END 316",
@@ -1125,6 +1476,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "3416",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "END 344",
@@ -1149,36 +1505,77 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "IML 4902",
-      "name": "İmalat Müh. Tasarımı II"
+      "name": "İmalat Müh. Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 438E",
-      "name": "Tool Design"
+      "name": "Tool Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IML 404E",
-      "name": "Comp.Simulations in Manuf.Eng."
+      "name": "Comp.Simulations in Manuf.Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAK 405",
-      "name": "Mak. Müh. Yenilikçi Tas. Yönt."
+      "name": "Mak. Müh. Yenilikçi Tas. Yönt.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçimeli Ders I (MT)",
+      "groupId": "3431",
+      "credits": "2,5 / 3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5
+      ],
       "options": [
        {
         "code": "END 316",
@@ -1262,6 +1659,11 @@
     {
      "elective": {
       "title": "8.yy Seçimeli Ders II (MT)",
+      "groupId": "3432",
+      "credits": "2,5",
+      "ects": [
+       5.5
+      ],
       "options": [
        {
         "code": "MAK 4049",
@@ -1285,6 +1687,12 @@
     {
      "elective": {
       "title": "8.yy Seçimeli Ders III (MT)",
+      "groupId": "3433",
+      "credits": "2,5",
+      "ects": [
+       4,
+       5.5
+      ],
       "options": [
        {
         "code": "MAK 4021",

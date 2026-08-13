@@ -4,6 +4,8 @@
  "faculty": "Mimarlık Fakültesi",
  "level": "LS",
  "planLabel": "Endüstri Ürünleri Tasarımı Lisans Programı (%100 İngilizce) 2017-2018 / Güz Dönemi Sonrası",
+ "totalCredits": "158,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,101 @@
     {
      "course": {
       "code": "EUT 119E",
-      "name": "Int.to Indus.Prod.Dsgn.&Ethics"
+      "name": "Int.to Indus.Prod.Dsgn.&Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 111E",
-      "name": "Project I"
+      "name": "Project I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 112E",
-      "name": "Vis.Comm.I:Visualiz.&Tch.Drw."
+      "name": "Vis.Comm.I:Visualiz.&Tch.Drw.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TES 113E",
-      "name": "Basic Design and Visual Arts"
+      "name": "Basic Design and Visual Arts",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 125E",
-      "name": "Statics"
+      "name": "Statics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DAN 101",
-      "name": "Akademik Danışmanlık"
+      "name": "Akademik Danışmanlık",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112",
-      "name": "English I"
+      "name": "English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -64,43 +118,90 @@
     {
      "course": {
       "code": "TES 122E",
-      "name": "Vis.CommII:Visualization&Persp"
+      "name": "Vis.CommII:Visualization&Persp",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 121E",
-      "name": "Project II"
+      "name": "Project II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 128E",
-      "name": "Design Theories and Methods"
+      "name": "Design Theories and Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 126E",
-      "name": "Materials in Design"
+      "name": "Materials in Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 126E",
-      "name": "Strength of Materials"
+      "name": "Strength of Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -111,36 +212,76 @@
     {
      "course": {
       "code": "EUT 239E",
-      "name": "Model Making I"
+      "name": "Model Making I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 241E",
-      "name": "Computer Aided Design"
+      "name": "Computer Aided Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 211E",
-      "name": "Project III"
+      "name": "Project III",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 271E",
-      "name": "Research for Product Design"
+      "name": "Research for Product Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 204E",
-      "name": "Manufacturing Methods"
+      "name": "Manufacturing Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "3rd Sem. Elective Course(MT)",
+      "groupId": "2563",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ENT 231E",
@@ -232,6 +373,12 @@
     {
      "elective": {
       "title": "3rd Sem.Elective CoursesII(MT)",
+      "groupId": "2564",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ENT 231E",
@@ -328,24 +475,49 @@
     {
      "course": {
       "code": "EUT 240E",
-      "name": "Model Making II"
+      "name": "Model Making II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 282E",
-      "name": "Computer Aided 3D Modeling"
+      "name": "Computer Aided 3D Modeling",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 272E",
-      "name": "Human Factors inProduct Design"
+      "name": "Human Factors inProduct Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "4thSemesterElectiveCourse(ITB)",
+      "groupId": "2567",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -801,19 +973,39 @@
     {
      "course": {
       "code": "EUT 246E",
-      "name": "History of Design I"
+      "name": "History of Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 220E",
-      "name": "Industrial Design Studio I"
+      "name": "Industrial Design Studio I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 206E",
-      "name": "Statistics"
+      "name": "Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TB"
      }
     }
    ]
@@ -824,24 +1016,49 @@
     {
      "course": {
       "code": "EUT 367E",
-      "name": "Intr. to Mechanical Design"
+      "name": "Intr. to Mechanical Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "5thSemester ElectiveCourse(MT)",
+      "groupId": "2570",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ENT 374E",
@@ -1105,13 +1322,26 @@
     {
      "course": {
       "code": "EUT 325E",
-      "name": "History of Design II"
+      "name": "History of Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 319E",
-      "name": "Industrial Design Studio II"
+      "name": "Industrial Design Studio II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     }
    ]
@@ -1122,30 +1352,60 @@
     {
      "course": {
       "code": "EUT 352E",
-      "name": "Strategic Design & Management"
+      "name": "Strategic Design & Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 342E",
-      "name": "Law and Legal Issues in Design"
+      "name": "Law and Legal Issues in Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ISL 353E",
-      "name": "Marketing"
+      "name": "Marketing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6thSemester Elect.Course I(MT)",
+      "groupId": "2575",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 374E",
@@ -1405,6 +1665,11 @@
     {
      "elective": {
       "title": "6thSemester Elect.CourseII(MT)",
+      "groupId": "2576",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 374E",
@@ -1664,13 +1929,26 @@
     {
      "course": {
       "code": "EUT 320E",
-      "name": "Industrial Design Studio III"
+      "name": "Industrial Design Studio III",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DAN 301",
-      "name": "Kariyer Danışmanlığı"
+      "name": "Kariyer Danışmanlığı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -1681,30 +1959,61 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "EUT 441E",
-      "name": "New Product Development"
+      "name": "New Product Development",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 419E",
-      "name": "Industrial Design Studio IV"
+      "name": "Industrial Design Studio IV",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EUT 423E",
-      "name": "Cult.and Com.in Product Design"
+      "name": "Cult.and Com.in Product Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7thSemester Elect.Course I(MT)",
+      "groupId": "2583",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ENT 450E",
@@ -1944,6 +2253,12 @@
     {
      "elective": {
       "title": "7thSemester Elect.CourseII(MT)",
+      "groupId": "2584",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ENT 450E",
@@ -2179,6 +2494,11 @@
     {
      "elective": {
       "title": "7thSemesterElectiveCourse(ITB)",
+      "groupId": "2585",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -2627,18 +2947,36 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "EUT 4902E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 15,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8thSemester Elect CourseII(MT)",
+      "groupId": "2592",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 450E",
@@ -2858,6 +3196,11 @@
     {
      "elective": {
       "title": "8thSemesterElect.CourseIII(MT)",
+      "groupId": "2593",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 450E",
@@ -3077,6 +3420,11 @@
     {
      "elective": {
       "title": "8thSemesterElectiveCourseI(MT)",
+      "groupId": "2594",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 431E",

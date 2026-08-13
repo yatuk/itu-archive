@@ -4,6 +4,8 @@
  "faculty": "Maden Fakültesi",
  "level": "LS",
  "planLabel": "Jeofizik Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "129,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,98 @@
     {
      "course": {
       "code": "BIL 112E",
-      "name": "Intr.to Prog.Language(FORTRAN)"
+      "name": "Intr.to Prog.Language(FORTRAN)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEF 111",
-      "name": "Jeofizik Mühendisliğine Giriş"
+      "name": "Jeofizik Mühendisliğine Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "JEO 112E",
-      "name": "General Geology"
+      "name": "General Geology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     }
    ]
@@ -64,49 +115,99 @@
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "JEO 121",
-      "name": "Yer Bilimlerinde Tas. Geometri"
+      "name": "Yer Bilimlerinde Tas. Geometri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "GE"
      }
     }
    ]
@@ -117,42 +218,84 @@
     {
      "course": {
       "code": "MAT 210",
-      "name": "Mühendislik Matematiği"
+      "name": "Mühendislik Matematiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MEK 205",
-      "name": "Mühendislik Mekaniği"
+      "name": "Mühendislik Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MDN 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "JEF 207E",
-      "name": "Physics of the Earth"
+      "name": "Physics of the Earth",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ETK 101",
-      "name": "Mühendislik Etiği"
+      "name": "Mühendislik Etiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders (GE)",
+      "groupId": "8987",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -689,37 +832,76 @@
     {
      "course": {
       "code": "JEF 212E",
-      "name": "Data Processing"
+      "name": "Data Processing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MDN 210",
-      "name": "Mineraloji ve Petrografi"
+      "name": "Mineraloji ve Petrografi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 202E",
-      "name": "Numerical Methods"
+      "name": "Numerical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "JEF 222",
-      "name": "Arama Jeofiziğinin Temelleri"
+      "name": "Arama Jeofiziğinin Temelleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEF 208E",
-      "name": "Comp. Appl. in Geophy."
+      "name": "Comp. Appl. in Geophy.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     }
    ]
@@ -730,30 +912,64 @@
     {
      "course": {
       "code": "JEF 321",
-      "name": "Elektrik Prospeksiyon"
+      "name": "Elektrik Prospeksiyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEF 325",
-      "name": "Jeofizikte Modelleme"
+      "name": "Jeofizikte Modelleme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEF 311E",
-      "name": "Seismology"
+      "name": "Seismology",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "GE"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders I (TM)",
+      "groupId": "8986",
+      "credits": "3",
+      "ects": [
+       4.5,
+       5,
+       7
+      ],
       "options": [
        {
         "code": "AKM 204E",
@@ -781,6 +997,14 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders II (TB)",
+      "groupId": "8985",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "DEN 345E",
@@ -821,42 +1045,86 @@
     {
      "course": {
       "code": "JEF 322",
-      "name": "Jeomanyetizma"
+      "name": "Jeomanyetizma",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 2,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEF 334",
-      "name": "Sismik Prospeksiyon"
+      "name": "Sismik Prospeksiyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEF 331",
-      "name": "Elektromanyetik Prospeksiyon"
+      "name": "Elektromanyetik Prospeksiyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEO 315",
-      "name": "Jeolojide Arz. ve Hrta Tekn."
+      "name": "Jeolojide Arz. ve Hrta Tekn.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEF 346",
-      "name": "Jeofizikte Ölçmeler"
+      "name": "Jeofizikte Ölçmeler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders II (GE/SNT)",
+      "groupId": "8984",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -1009,30 +1277,67 @@
     {
      "course": {
       "code": "JEF 451",
-      "name": "Gravite&Manyetik Prospeksiyon"
+      "name": "Gravite&Manyetik Prospeksiyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEF 4901",
-      "name": "Jeofizik Müh.Tasarım Projesi I"
+      "name": "Jeofizik Müh.Tasarım Projesi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEF 425",
-      "name": "Mühendislik Jeofiziği"
+      "name": "Mühendislik Jeofiziği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "JEO 222",
-      "name": "Jeomekanik"
+      "name": "Jeomekanik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (MT)",
+      "groupId": "8983",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       3.5,
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "JEO 254",
@@ -1077,24 +1382,48 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "JEF 4902",
-      "name": "Jeofizik Müh.Tasarım Proje. II"
+      "name": "Jeofizik Müh.Tasarım Proje. II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "JEF 446E",
-      "name": "Engineering Seismology"
+      "name": "Engineering Seismology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8982",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "JEF 360E",
@@ -1130,6 +1459,13 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8981",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "JEF 365",
@@ -1165,6 +1501,12 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders III (MT)",
+      "groupId": "8980",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "JEF 370",

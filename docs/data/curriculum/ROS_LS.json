@@ -4,6 +4,8 @@
  "faculty": "Elektrik - Elektronik Fakültesi",
  "level": "LS",
  "planLabel": "Robotik ve Otonom Sistemleri Mühendisliği Lisans Programı 2024-2025 / Güz Dönemi Sonrası",
+ "totalCredits": "132,00",
+ "totalEcts": "244,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,85 @@
     {
      "course": {
       "code": "ROS 103",
-      "name": "Robotik ve Otonom Sistemler Mühendisliğine Giriş ve Etik"
+      "name": "Robotik ve Otonom Sistemler Mühendisliğine Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,49 +102,98 @@
     {
      "course": {
       "code": "EEF 110E",
-      "name": "Intr. to Prog. Language (C)"
+      "name": "Intr. to Prog. Language (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 281",
-      "name": "Lineer Cebir ve Uygulamaları"
+      "name": "Lineer Cebir ve Uygulamaları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102",
-      "name": "Fizik II (Elektrik Fiziği)"
+      "name": "Fizik II (Elektrik Fiziği)",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -111,36 +204,74 @@
     {
      "course": {
       "code": "EEF 205",
-      "name": "Lojik Tasarıma Giriş"
+      "name": "Lojik Tasarıma Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 210E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EEF 211",
-      "name": "Elektrik Devre Temelleri"
+      "name": "Elektrik Devre Temelleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders (TB)",
+      "groupId": "13014",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -204,6 +335,14 @@
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders (TM)",
+      "groupId": "13015",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "DNK 201",
@@ -268,36 +407,71 @@
     {
      "course": {
       "code": "EEF 206",
-      "name": "İşaret İşleme ve Lineer Sist."
+      "name": "İşaret İşleme ve Lineer Sist.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 221",
-      "name": "Elektrik Devre Temelleri Lab."
+      "name": "Elektrik Devre Temelleri Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EEF 232E",
-      "name": "Circuit and System Analysis"
+      "name": "Circuit and System Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EHB 222E",
-      "name": "Introduction to Electronics"
+      "name": "Introduction to Electronics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ROS 201E",
-      "name": "Foundational Mathematics for Robotics"
+      "name": "Foundational Mathematics for Robotics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4. yy Zorunlu Seçmeli Ders (TM)",
+      "groupId": "13016",
+      "credits": "3 / 4",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "EEF 212E",
@@ -326,30 +500,61 @@
     {
      "course": {
       "code": "KON 313",
-      "name": "Geribeslemeli Kontrol Sist."
+      "name": "Geribeslemeli Kontrol Sist.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ROS 301E",
-      "name": "Programming Techniques for Robotics"
+      "name": "Programming Techniques for Robotics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4.5,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ROS 303E",
-      "name": "Robot Kinematics and Dynamics"
+      "name": "Robot Kinematics and Dynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MYZ 307",
-      "name": "Elektrik-Elektronik Mühendisleri için Makine Öğrenmesi"
+      "name": "Elektrik-Elektronik Mühendisleri için Makine Öğrenmesi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5.yy Zorunlu Seç. Ders (MT)",
+      "groupId": "13017",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 467E",
@@ -393,6 +598,13 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (MT)",
+      "groupId": "13018",
+      "credits": "2,5 / 3",
+      "ects": [
+       4.5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "EHB 354E",
@@ -448,6 +660,11 @@
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (SNT)",
+      "groupId": "13019",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -644,18 +861,35 @@
     {
      "course": {
       "code": "ROS 302E",
-      "name": "Robot Motion Planning & Control"
+      "name": "Robot Motion Planning & Control",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KON 414E",
-      "name": "Principles of Robot Autonomy"
+      "name": "Principles of Robot Autonomy",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçimli Ders I (MT)",
+      "groupId": "13020",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "EHB 334E",
@@ -771,6 +1005,11 @@
     {
      "elective": {
       "title": "6.yy Seçimli Ders II (MT)",
+      "groupId": "13021",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "EHB 334E",
@@ -890,6 +1129,11 @@
     {
      "elective": {
       "title": "6.yy Zorunlu Seçimli Ders III (MT)",
+      "groupId": "13022",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "KON 323E",
@@ -917,6 +1161,11 @@
     {
      "elective": {
       "title": "6.yy Zorunlu Seçimli Ders IV (MT)",
+      "groupId": "13023",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "KON 323E",
@@ -949,24 +1198,48 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ROS 401",
-      "name": "Robotik Laboratuvarı"
+      "name": "Robotik Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 5,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ROS 4901",
-      "name": "Robotik ve Otonom Sistemler Mühendisliği Tasarımı I"
+      "name": "Robotik ve Otonom Sistemler Mühendisliği Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Compulsory Elective Course (MT)",
+      "groupId": "13024",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "EHB 472E",
@@ -1002,6 +1275,16 @@
     {
      "elective": {
       "title": "7. yy Elective Course II (MT)",
+      "groupId": "13025",
+      "credits": "2 / 2,5 / 3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "EHB 326",
@@ -1165,6 +1448,16 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders III (MT)",
+      "groupId": "13026",
+      "credits": "2 / 2,5 / 3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "EHB 326",
@@ -1320,6 +1613,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "13027",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -2076,18 +2374,36 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ROS 4902",
-      "name": "Robotik ve Otonom Sistemler Mühendisliği Tasarımı II"
+      "name": "Robotik ve Otonom Sistemler Mühendisliği Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "13028",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "EHB 419",
@@ -2219,6 +2535,12 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "13029",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "EHB 419",
@@ -2350,6 +2672,11 @@
     {
      "elective": {
       "title": "8.yySınırlı Seç.Bağ. Ders (ITB)",
+      "groupId": "13030",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BLG 448",

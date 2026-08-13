@@ -4,6 +4,8 @@
  "faculty": "Fen - Edebiyat Fakültesi",
  "level": "LS",
  "planLabel": "Fizik Mühendisliği Lisans Programı (%100 İngilizce) 2010-2011 / Güz Dönemi Sonrası",
+ "totalCredits": "151,50",
+ "totalEcts": "228,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,36 +13,74 @@
     {
      "course": {
       "code": "FIZ 111E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 7,
+      "theory": 4,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 121E",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 261E",
-      "name": "Linear Algebra"
+      "name": "Linear Algebra",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 101E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6.5,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "2701",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -61,42 +101,87 @@
     {
      "course": {
       "code": "FIZ 132E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 5,
+      "theory": 4,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 142E",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 102E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 7,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 106E",
-      "name": "Intr toSci& Eng Comp (Fortran)"
+      "name": "Intr toSci& Eng Comp (Fortran)",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "2703",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -161,37 +246,76 @@
     {
      "course": {
       "code": "MAT 201E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 231E",
-      "name": "Electronics I"
+      "name": "Electronics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 211E",
-      "name": "Physics III"
+      "name": "Physics III",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5,
+      "theory": 3,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 221E",
-      "name": "Physics III Laboratory"
+      "name": "Physics III Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 241E",
-      "name": "Symblc & Numrc Tchnqs in Physc"
+      "name": "Symblc & Numrc Tchnqs in Physc",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -202,48 +326,102 @@
     {
      "course": {
       "code": "FIZ 282E",
-      "name": "Analytical Mechanics"
+      "name": "Analytical Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 4,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 292E",
-      "name": "Computer Aided Dsgn & Modellng"
+      "name": "Computer Aided Dsgn & Modellng",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 272E",
-      "name": "Computatnl Methods in Physics"
+      "name": "Computatnl Methods in Physics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 262E",
-      "name": "Modern Physics Lab."
+      "name": "Modern Physics Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 252E",
-      "name": "Modern Physics"
+      "name": "Modern Physics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "4th Semester Elective Crse(MT)",
+      "groupId": "2705",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "AKM 204E",
@@ -400,36 +578,74 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "FIZ 331E",
-      "name": "Stat.Physics&Thermodynamics"
+      "name": "Stat.Physics&Thermodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 341E",
-      "name": "Stat. Phy.&Thermodynamics Lab."
+      "name": "Stat. Phy.&Thermodynamics Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "FIZ 311E",
-      "name": "Quantum Mechanics I"
+      "name": "Quantum Mechanics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 321E",
-      "name": "Mathematical Mthds in Physc I"
+      "name": "Mathematical Mthds in Physc I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Crse-ITB",
+      "groupId": "2706",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "END 329E",
@@ -518,36 +734,78 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "FIZ 372E",
-      "name": "Experimental Physics"
+      "name": "Experimental Physics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 352E",
-      "name": "Quantum Mechanics II"
+      "name": "Quantum Mechanics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 362E",
-      "name": "Mathematical Mthds in Physc II"
+      "name": "Mathematical Mthds in Physc II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4,
+      "theory": 3,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "HUK 201",
-      "name": "İş Hukuku"
+      "name": "İş Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "6th Semester Elective Crse(MT)",
+      "groupId": "2707",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       0,
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "AKM 204E",
@@ -724,18 +982,39 @@
     {
      "course": {
       "code": "FIZ 411E",
-      "name": "Electromagnetic Theory I"
+      "name": "Electromagnetic Theory I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 421E",
-      "name": "Advanced Physics Project Lab."
+      "name": "Advanced Physics Project Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "lab": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective CrseI-MT",
+      "groupId": "2708",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -895,6 +1174,14 @@
     {
      "elective": {
       "title": "7th Semester Elect. CrseII(MT)",
+      "groupId": "2709",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -1042,6 +1329,14 @@
     {
      "elective": {
       "title": "7th Semester Elect. CrseIII-MT",
+      "groupId": "2710",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1169,6 +1464,11 @@
     {
      "elective": {
       "title": "7th Semester Elective Crse-ITB",
+      "groupId": "2711",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "END 329E",
@@ -1373,12 +1673,27 @@
     {
      "course": {
       "code": "FIZ 492E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 12.5,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elective CrseI-MT",
+      "groupId": "2712",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       0,
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1518,6 +1833,14 @@
     {
      "elective": {
       "title": "8th Semester Elect. CrseII-MT",
+      "groupId": "2713",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1653,6 +1976,15 @@
     {
      "elective": {
       "title": "8th Semester Elect. CrseIII-MT",
+      "groupId": "2714",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       0,
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1792,6 +2124,15 @@
     {
      "elective": {
       "title": "8th Semester Elect. Crse IV-MT",
+      "groupId": "2715",
+      "credits": "3 / 3,5 / 4",
+      "ects": [
+       0,
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1931,6 +2272,11 @@
     {
      "elective": {
       "title": "8th Semester Elect. Crse(ITB)",
+      "groupId": "2716",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "END 329E",

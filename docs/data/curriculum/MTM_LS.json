@@ -4,6 +4,8 @@
  "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
  "level": "LS",
  "planLabel": "Deniz Ulaştırma İşletme Mühendisliği Lisans Programı (%100 İngilizce) (KKTC) 2022-2023 / Güz Dönemi Sonrası",
+ "totalCredits": "134,50",
+ "totalEcts": "243,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,55 +13,113 @@
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DUI 103E",
-      "name": "Seamanship"
+      "name": "Seamanship",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 113E",
-      "name": "Int.toMarit.Trnsp.Mng.Eng.&Eth"
+      "name": "Int.toMarit.Trnsp.Mng.Eng.&Eth",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 203E",
-      "name": "Basic Swimming Skills"
+      "name": "Basic Swimming Skills",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DFH 113E",
-      "name": "Maritime Safety I"
+      "name": "Maritime Safety I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "lab": 1,
+      "type": "MT"
      }
     }
    ]
@@ -70,60 +130,124 @@
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DUI 102E",
-      "name": "Introduction to Navigation"
+      "name": "Introduction to Navigation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 112E",
-      "name": "Watchkeeping I"
+      "name": "Watchkeeping I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "RES 102E",
-      "name": "Com.Aided Technical Drawing"
+      "name": "Com.Aided Technical Drawing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DFH 112E",
-      "name": "Maritime Safety II"
+      "name": "Maritime Safety II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 172E",
-      "name": "Maritime English I"
+      "name": "Maritime English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "2.yy Elective Course (ITB)",
+      "groupId": "8722",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -552,49 +676,103 @@
     {
      "course": {
       "code": "DUI 231E",
-      "name": "Marine Communication"
+      "name": "Marine Communication",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 251E",
-      "name": "Meteorology"
+      "name": "Meteorology",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DUI 215E",
-      "name": "Terrestrial Navigation"
+      "name": "Terrestrial Navigation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 213E",
-      "name": "Ship Constrct.and Stability"
+      "name": "Ship Constrct.and Stability",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 222E",
-      "name": "Maritime English II"
+      "name": "Maritime English II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 210E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DUI 202E",
-      "name": "Electronic Navigation"
+      "name": "Electronic Navigation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     }
    ]
@@ -605,72 +783,143 @@
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DFH 254E",
-      "name": "Maritime Conventions"
+      "name": "Maritime Conventions",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DUI 231EL",
-      "name": "Marine Communication Lab."
+      "name": "Marine Communication Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 278E",
-      "name": "Maritime Economics"
+      "name": "Maritime Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DFH 202E",
-      "name": "Ship Emergency Response"
+      "name": "Ship Emergency Response",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DFH 232E",
-      "name": "Business Logistics"
+      "name": "Business Logistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DUI 214E",
-      "name": "Astronomy"
+      "name": "Astronomy",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DUI 208E",
-      "name": "Cargo&Crew Safety"
+      "name": "Cargo&Crew Safety",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 490E",
-      "name": "E-Navigation Systems"
+      "name": "E-Navigation Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "4th Semester Elective Course (TM)",
+      "groupId": "8723",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "AKM 204E",
@@ -691,54 +940,111 @@
     {
      "course": {
       "code": "DUI 371E",
-      "name": "Watchkeeping II"
+      "name": "Watchkeeping II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DUI 321E",
-      "name": "Maritime Law I"
+      "name": "Maritime Law I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DUI 341E",
-      "name": "Maritime Practical Studies"
+      "name": "Maritime Practical Studies",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 311E",
-      "name": "Celestial Navigation"
+      "name": "Celestial Navigation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 361E",
-      "name": "Technical Ship Management"
+      "name": "Technical Ship Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 305E",
-      "name": "Ship Hndl.and Manouvering"
+      "name": "Ship Hndl.and Manouvering",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "5th Sem. Elective Course (MT1)",
+      "groupId": "8724",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       6
+      ],
       "options": [
        {
         "code": "DUI 381E",
@@ -767,7 +1073,13 @@
     {
      "course": {
       "code": "DUI 393E",
-      "name": "Long Term SeaTraining(6Months)"
+      "name": "Long Term SeaTraining(6Months)",
+      "language": "English",
+      "required": "Z",
+      "credits": 8,
+      "ects": 31.5,
+      "tutorial": 16,
+      "type": "MT"
      }
     }
    ]
@@ -778,30 +1090,62 @@
     {
      "course": {
       "code": "DUI 461E",
-      "name": "Ship Surveying Procedures"
+      "name": "Ship Surveying Procedures",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 407E",
-      "name": "Cargo Handl and Stowage"
+      "name": "Cargo Handl and Stowage",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 405E",
-      "name": "Marine Engines"
+      "name": "Marine Engines",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 4901E",
-      "name": "MaritimeTrans.Mng.Eng.Design I"
+      "name": "MaritimeTrans.Mng.Eng.Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Sem. Elective Course (MT2)",
+      "groupId": "8725",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       6
+      ],
       "options": [
        {
         "code": "DFH 212E",
@@ -845,6 +1189,12 @@
     {
      "elective": {
       "title": "7th Sem. Elective Course (MT3)",
+      "groupId": "8726",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       6
+      ],
       "options": [
        {
         "code": "DFH 212E",
@@ -893,30 +1243,63 @@
     {
      "course": {
       "code": "DUI 472E",
-      "name": "Oceanography"
+      "name": "Oceanography",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DUI 4902E",
-      "name": "MaritimeTrans.Mng.Eng.DesignII"
+      "name": "MaritimeTrans.Mng.Eng.DesignII",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 474E",
-      "name": "Bridge Team and Resource Management"
+      "name": "Bridge Team and Resource Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 402E",
-      "name": "Maritime Law II"
+      "name": "Maritime Law II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8th Sem. Elective Course (SNT-ITB)",
+      "groupId": "8727",
+      "credits": "3",
+      "ects": [
+       3,
+       4
+      ],
       "options": [
        {
         "code": "DFH 226E",
@@ -1056,6 +1439,13 @@
     {
      "elective": {
       "title": "8th Sem. Elective Course (MT4)",
+      "groupId": "8728",
+      "credits": "2 / 3",
+      "ects": [
+       2,
+       3,
+       6
+      ],
       "options": [
        {
         "code": "DFH 414E",

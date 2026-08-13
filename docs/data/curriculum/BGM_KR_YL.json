@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans Programı 2026-2027 / Güz Dönemi Öncesi",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Bilgi Güvenliği Mühendisliği ve Kriptografi Yüksek Lisans",
@@ -11,12 +13,21 @@
     {
      "course": {
       "code": "BGK YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Bilimsel Araş., Etik ve Seminer",
+      "groupId": "12050",
+      "credits": "0",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BBL 596",
@@ -56,6 +67,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9297",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BGK 501E",
@@ -91,6 +107,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9298",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BGK 501E",
@@ -126,6 +147,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9299",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BGK 501E",
@@ -161,6 +187,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "9300",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BGK 501E",
@@ -200,6 +231,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "9301",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BGK 506",
@@ -339,6 +375,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "9302",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BGK 506",
@@ -482,6 +523,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "9303",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BGK 502E",
@@ -637,6 +683,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "9304",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "BGK 502E",

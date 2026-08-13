@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "İç Mimarlık (%100 İngilizce) Yüksek Lisans Programı",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "İç Mimarlık (İngilizce) Yüksek Lisans",
@@ -11,12 +13,21 @@
     {
      "course": {
       "code": "ICM YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Scien.Rese., Ethic&Seminar",
+      "groupId": "13272",
+      "credits": "0",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 596E",
@@ -28,6 +39,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "13273",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 503E",
@@ -51,6 +67,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "13274",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 503E",
@@ -74,6 +95,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "13275",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 503E",
@@ -97,6 +123,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "13276",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 503E",
@@ -120,6 +151,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "13277",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 501E",
@@ -147,6 +183,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "13278",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 501E",
@@ -174,6 +215,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "13279",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 501E",
@@ -201,6 +247,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "13280",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ICM 501E",

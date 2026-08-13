@@ -13,6 +13,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strconv"
 	"strings"
 	"time"
 
@@ -528,8 +529,11 @@ func (r *Result) checkQuota(root string) {
 	}
 }
 
-// checkCurriculum, her program dosyasının geçerli olduğunu ve indeksle
-// eşleştiğini denetler.
+// checkCurriculum, her program dosyasının geçerli olduğunu, zenginleştirilmiş
+// alanların (Faz A: kredi/AKTS/dil/Z-S/tür) tutarlı olduğunu ve sayfa altı
+// "Toplam Kredi / AKTS" satırının kalemlerin toplamıyla kabaca tutarlılığını
+// denetler. Toplam kontrolü uyarıdır, hata değil: seçmeli aralıklar ve sayfa
+// altı toplamının kapsamı birebir tutmayabilir.
 func (r *Result) checkCurriculum(root string) {
 	curDir := filepath.Join(root, "data", "curriculum")
 	var index []map[string]string
@@ -554,7 +558,137 @@ func (r *Result) checkCurriculum(root string) {
 		if len(plan.Semesters) == 0 {
 			r.warnf("curriculum: %q hiç dönem içermiyor", code)
 		}
+		r.checkPlanItems(code, &plan)
 	}
+}
+
+// checkPlanItems, bir planın satırlarını denetler: alan sayısallığı, Z/S ve tür
+// değerleri ve toplam satırının kalemlerle uyumu.
+func (r *Result) checkPlanItems(code string, plan *curriculum.Plan) {
+	var cMin, cMax, eMin, eMax float64
+	checkCourse := func(c curriculum.Course) {
+		if c.Code == "" {
+			r.warnf("curriculum: %q: kodsuz ders satırı (%q)", code, c.Name)
+		}
+		if c.Credits < 0 || c.Ects < 0 {
+			r.errf("curriculum: %q: %s kredi/AKTS negatif (%.1f/%.1f)", code, c.Code, c.Credits, c.Ects)
+		}
+		if c.Required != "" && c.Required != "Z" && c.Required != "S" {
+			r.warnf("curriculum: %q: %s Z/S değeri %q (Z veya S beklenir)", code, c.Code, c.Required)
+		}
+		if c.Type != "" && !validCourseType(c.Type) {
+			r.warnf("curriculum: %q: %s bilinmeyen tür %q (TB/TM/MT/ITB/EC)", code, c.Code, c.Type)
+		}
+		cMin += c.Credits
+		cMax += c.Credits
+		eMin += c.Ects
+		eMax += c.Ects
+	}
+	for _, sem := range plan.Semesters {
+		for _, it := range sem.Items {
+			if it.Course != nil {
+				checkCourse(*it.Course)
+				continue
+			}
+			if it.Elective == nil {
+				r.warnf("curriculum: %q: %s boş satır (ders ya da seçmeli olmalı)", code, sem.Title)
+				continue
+			}
+			e := it.Elective
+			if e.Credits == "" && len(e.Ects) == 0 {
+				r.warnf("curriculum: %q: %s seçmeli slotun kredi/AKTS bilgisi yok", code, e.Title)
+			}
+			if lo, hi, ok := creditRange(e.Credits); ok {
+				cMin += lo
+				cMax += hi
+			}
+			if len(e.Ects) > 0 {
+				for _, v := range e.Ects {
+					if v < 0 {
+						r.errf("curriculum: %q: %s AKTS aralığında negatif değer %v", code, e.Title, v)
+					}
+				}
+				lo, hi := minMax(e.Ects)
+				eMin += lo
+				eMax += hi
+			}
+			for _, o := range e.Options {
+				if o.Code == "" {
+					r.warnf("curriculum: %q: %s havuzunda kodsuz alternatif", code, e.Title)
+				}
+			}
+		}
+	}
+	r.checkPlanTotal(code, plan, cMin, cMax, eMin, eMax)
+}
+
+// validCourseType, tür rozeti kümesini doğrular.
+func validCourseType(t string) bool {
+	switch t {
+	case "TB", "TM", "MT", "ITB", "EC":
+		return true
+	}
+	return false
+}
+
+// creditRange, "4 / 5" kredi aralığını (min, max) döndürür; tek değerde ikisi
+// eşittir, çözülemeyen değerde ok=false.
+func creditRange(s string) (lo, hi float64, ok bool) {
+	nums := []float64{}
+	for _, part := range strings.Split(s, "/") {
+		v, err := strconv.ParseFloat(strings.ReplaceAll(strings.TrimSpace(part), ",", "."), 64)
+		if err == nil {
+			nums = append(nums, v)
+		}
+	}
+	if len(nums) == 0 {
+		return 0, 0, false
+	}
+	lo, hi = minMax(nums)
+	return lo, hi, true
+}
+
+func minMax(nums []float64) (float64, float64) {
+	lo, hi := nums[0], nums[0]
+	for _, v := range nums[1:] {
+		if v < lo {
+			lo = v
+		}
+		if v > hi {
+			hi = v
+		}
+	}
+	return lo, hi
+}
+
+// checkPlanTotal, sayfa altı "Toplam Kredi/AKTS" değerini kalemlerin min/max
+// toplamıyla karşılaştırır. Fark makul sınırı aşıyorsa uyarır — seçmeli aralıklar
+// ve sayfa altı toplamının plan dışı kalemleri (hazırlık vb.) yüzünden birebir
+// tutması beklenmez. Boş toplam (zenginleştirilmemiş veri) sessizce atlanır.
+func (r *Result) checkPlanTotal(code string, plan *curriculum.Plan, cMin, cMax, eMin, eMax float64) {
+	const margin = 1.5 // yarım kredi üstü farklar uyarır; aralıklar esnek
+	if t := planTotalNum(plan.TotalCredits); t > 0 {
+		if cMax > 0 && (t < cMin-margin || t > cMax+margin) {
+			r.warnf("curriculum: %q: toplam kredi %v kalemlerin [%.1f, %.1f] aralığıyla uyuşmuyor", code, t, cMin, cMax)
+		}
+	}
+	if t := planTotalNum(plan.TotalEcts); t > 0 {
+		if eMax > 0 && (t < eMin-margin || t > eMax+margin) {
+			r.warnf("curriculum: %q: toplam AKTS %v kalemlerin [%.1f, %.1f] aralığıyla uyuşmuyor", code, t, eMin, eMax)
+		}
+	}
+}
+
+// planTotalNum, "134" veya "134,0" toplam stringini sayıya çevirir; çözülemezse 0.
+func planTotalNum(s string) float64 {
+	if strings.TrimSpace(s) == "" {
+		return 0
+	}
+	v, err := strconv.ParseFloat(strings.ReplaceAll(strings.TrimSpace(s), ",", "."), 64)
+	if err != nil {
+		return 0
+	}
+	return v
 }
 
 // checkIndex, site indeksindeki referansların dosyalarla eşleştiğini denetler.

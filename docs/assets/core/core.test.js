@@ -16,6 +16,9 @@ import { topByCount } from '../views/history.js';
 import { icsText, hashShort, foldLine, formatInt } from './utils.js';
 import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
 import { parseCodes } from './taken.js';
+import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary } from './plan.js';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from './grades.js';
+import { setGrade, setElective, buildEntries, exportJSON, importJSON } from './planstore.js';
 import * as fav from './favorites.js';
 
 test('methodToCode/codeToMethod iki yönlü çevirir', () => {
@@ -576,6 +579,270 @@ test('topByCount sayısal alana göre azalan sıralar; eşitlikte ad alfabetik',
   const p = topByCount(people, 3, 1)[0];
   assert.equal(p[2], 18); // dönem
   assert.equal(p[3], 24); // şube
+});
+
+test('codeKey kodu büyük/küçük + boşluktan bağımsız tek anahtara indirger', () => {
+  assert.equal(codeKey('BLG 102E'), 'BLG102E');
+  assert.equal(codeKey('blg 102e'), 'BLG102E');
+  assert.equal(codeKey(''), '');
+});
+
+test('joinCourse açık/kapalı/eşleşmeyen üç durumu ayırır', () => {
+  // search.json satırı: [crn, kod, ad, branş, hoca, zaman, kont, yazılan, seviye, yöntem, programlar]
+  const rows = [
+    ['10001', 'BLG 101E', 'Intr.', 'BLG', 'Hoca A', 'Pazartesi', 100, 60, 'LS', 'Fiziksel', 'BLG_LS'],
+    ['10002', 'BLG 101E', 'Intr.', 'BLG', 'Hoca B', 'Salı', 100, 100, 'LS', 'Fiziksel', 'BLG_LS'],
+    ['10003', 'MAT 103E', 'Math I', 'MAT', 'Hoca C', 'Çarşamba', 50, 10, 'LS', 'Fiziksel', 'BLG_LS'],
+  ];
+  const hist = {
+    'BLG 101E': { code: 'BLG 101E', terms: ['2023-2024-guz', '2024-2025-bahar'] },
+    'CEN 102': { code: 'CEN 102', terms: ['2022-2023-guz'] },
+  };
+  // açık: bu dönem iki şubesi var
+  const open = joinCourse('BLG 101E', rows, hist);
+  assert.equal(open.state, 'open');
+  assert.equal(open.sections.length, 2);
+  assert.equal(open.sections[0].crn, '10001');
+  // kapalı: bu dönem yok ama geçmişte açıldı — son açılış tarihi döner
+  const closed = joinCourse('CEN 102', rows, hist);
+  assert.equal(closed.state, 'closed');
+  assert.equal(closed.lastTerm, '2022-2023-guz');
+  // eşleşme yok: ne bu dönem ne geçmişte
+  assert.equal(joinCourse('XYZ 999', rows, hist).state, 'missing');
+  // E-soneksiz sorgu da açık dersi bulur
+  assert.equal(joinCourse('BLG 101', rows, hist).state, 'open');
+});
+
+test('sectionsForCode İngilizce-E sonekini esnetir', () => {
+  const rows = [['1', 'BLG 102E', 'CS', 'BLG', '', '', 0, 0]];
+  assert.equal(sectionsForCode(rows, 'BLG 102').length, 1);
+  assert.equal(sectionsForCode(rows, 'BLG 102E').length, 1);
+  assert.equal(sectionsForCode(rows, 'BLG 112').length, 0);
+});
+
+test('parseRange kredi/AKTS aralığını sayı dizisine çevirir', () => {
+  assert.deepEqual(parseRange('4 / 5', [0]), [4, 5]);
+  assert.deepEqual(parseRange('3', [0]), [3]);
+  assert.deepEqual(parseRange('4,5', [0]), [4.5]); // Türkçe virgül
+  assert.deepEqual(parseRange('', [0]), [0]);
+  assert.deepEqual(parseRange('', [2]), [2]);
+});
+
+test('semesterLoad aralıklı seçmeli slotta toplamı aralık döndürür', () => {
+  const sem = {
+    title: '1. Yarıyıl',
+    items: [
+      { course: { code: 'A', credits: 3, ects: 6 } },
+      { course: { code: 'B', credits: 2, ects: 4 } },
+      // seçmeli slot: kredi aralıklı, AKTS [4,5,6] — tek ders seçilmediği için
+      // toplam aralık olarak kalmalı.
+      { elective: { title: 'Seçmeli', credits: '4 / 5', ects: [4, 5, 6], options: [] } },
+    ],
+  };
+  const load = semesterLoad(sem);
+  assert.deepEqual(load.credits, { min: 9, max: 10 });
+  assert.deepEqual(load.ects, { min: 14, max: 16 });
+  assert.equal(load.credits.min + load.ects.max, 25);
+});
+
+test('semesterLoad tek değerli kalemlerde tek sayı döner', () => {
+  const sem = {
+    title: '1. Yarıyıl',
+    items: [{ course: { code: 'A', credits: 3, ects: 6 } }],
+  };
+  assert.equal(semesterLoad(sem).credits, 3);
+  assert.equal(semesterLoad(sem).ects, 6);
+});
+
+test('planSummary açık/kapalı/seçmeli slot özetini hesaplar', () => {
+  const plan = {
+    programCode: 'BLG_LS', totalCredits: '134', totalEcts: '245',
+    semesters: [{
+      title: '1. Yarıyıl',
+      items: [
+        { course: { code: 'BLG 101E', credits: 3 } },
+        { course: { code: 'CEN 102', credits: 3 } },
+        { course: { code: 'XYZ 999', credits: 3 } },
+        { elective: { title: 'ITB', credits: '3 / 4', ects: [5, 6], options: [
+          { code: 'BLG 101E' }, { code: 'XYZ 999' },
+        ] } },
+      ],
+    }],
+  };
+  const rows = [['1', 'BLG 101E', '', 'BLG', '', '', 10, 0]];
+  const hist = { 'CEN 102': { code: 'CEN 102', terms: ['2022-2023-guz'] } };
+  const s = planSummary(plan, rows, hist);
+  assert.equal(s.courses, 3);
+  assert.equal(s.open, 1);
+  assert.equal(s.closed, 1);
+  assert.equal(s.missing, 1);
+  assert.equal(s.slots, 1);
+  assert.equal(s.slotOpen, 1); // BLG 101E alternatifi açık
+  assert.equal(s.totalCredits, '134');
+});
+
+test('GRADE_POINTS eksiksiz ölçeği içerir (AA..VF, muaf ayrı)', () => {
+  assert.equal(GRADE_POINTS.AA, 4.0);
+  assert.equal(GRADE_POINTS.FF, 0.0);
+  assert.equal(GRADE_POINTS['BA+'], 3.75);
+  assert.equal(GRADE_POINTS.DD, 1.0);
+  assert.ok(EXEMPT.has('M') && EXEMPT.has('G') && EXEMPT.has('BL') && EXEMPT.has('E'));
+  assert.equal(GRADE_POINTS.M, undefined);
+});
+
+test('calcGPA: AA 3 kredi + FF 3 kredi → 2,00 (FF paydada sayılır)', () => {
+  const gpa = calcGPA([{ credits: 3, grade: 'AA' }, { credits: 3, grade: 'FF' }]);
+  assert.ok(gpa !== null);
+  assert.ok(Math.abs(gpa - 2.0) < 1e-9);
+  // VF de aynı: katsayı 0, kredi paydada.
+  const vf = calcGPA([{ credits: 3, grade: 'AA' }, { credits: 3, grade: 'VF' }]);
+  assert.ok(Math.abs(vf - 2.0) < 1e-9);
+});
+
+test('calcGPA: 0 kredilik AA ortalamayı değiştirmez', () => {
+  const gpa = calcGPA([{ credits: 0, grade: 'AA' }, { credits: 3, grade: 'BB' }]);
+  assert.ok(Math.abs(gpa - 3.0) < 1e-9);
+});
+
+test('calcGPA: muaf/geçti/kredisiz hem paydan hem payadan çıkar', () => {
+  const gpa = calcGPA([
+    { credits: 3, grade: 'M' },
+    { credits: 3, grade: 'G' },
+    { credits: 3, grade: 'BL' },
+    { credits: 3, grade: 'E' },
+    { credits: 3, grade: 'AA' },
+  ]);
+  assert.ok(Math.abs(gpa - 4.0) < 1e-9); // yalnızca AA sayılır
+});
+
+test('calcGPA: hiç hesaba giren yoksa null', () => {
+  assert.equal(calcGPA([]), null);
+  assert.equal(calcGPA([{ credits: 3, grade: '' }]), null);
+  assert.equal(calcGPA([{ credits: 3, grade: 'M' }]), null);
+});
+
+test('latestOnly: tekrarda yalnızca son not sayılır (FF sonra BB)', () => {
+  const recs = [
+    { code: 'BLG 102E', credits: 3, grade: 'FF', seq: 1 },
+    { code: 'MAT 103E', credits: 5, grade: 'AA', seq: 1 },
+    { code: 'BLG 102E', credits: 3, grade: 'BB', seq: 2 }, // tekrar — sonraki
+  ];
+  const entries = latestOnly(recs);
+  const blg = entries.find((e) => e.code === 'BLG 102E');
+  assert.equal(blg.grade, 'BB');
+  const gpa = calcGPA(entries);
+  // (BB 3.0×3 + AA 4.0×5) / 8 = 29/8 = 3,625
+  assert.ok(Math.abs(gpa - 3.625) < 1e-9);
+});
+
+test('targetNeeded: erişilemez hedefte reachable:false ve uygun mesaj verir', () => {
+  const r = targetNeeded({ gpa: 1.5, credits: 100 }, 3.0, 10);
+  assert.ok(r && r.reachable === false); // 10 kredide 1.5→3.0 imkânsız
+  assert.ok(r.needed > 4.0);
+  // Ulaşılabilir örnek: 2.0 × 30 + kalan 72'de hedef 3.0 → gerekli ortalama
+  const ok = targetNeeded({ gpa: 2.0, credits: 30 }, 3.0, 72);
+  assert.ok(ok && ok.reachable === true);
+  const need = ((3.0 * (30 + 72)) - (2.0 * 30)) / 72; // = 3,25
+  assert.ok(Math.abs(ok.needed - need) < 1e-9);
+  assert.equal(targetNeeded({ gpa: 3.0, credits: 30 }, 3.0, 0), null);
+});
+
+test('progress: plan toplamına göre tamamlanan kredi/AKTS', () => {
+  const p = progress(
+    [{ credits: 3, ects: 6, grade: 'AA' }, { credits: 2, ects: 4, grade: '' }, { credits: 4, ects: 7, grade: 'BB' }],
+    { credits: '134', ects: '241' },
+    { credits: 10, ects: 15 }, // transfer
+  );
+  assert.deepEqual(p.credits, { done: 17, total: 134 });
+  assert.deepEqual(p.ects, { done: 28, total: 241 });
+});
+
+test('fmtTr2 Türkçe iki ondalıklı biçim: 2.1 → "2,10"', () => {
+  assert.equal(fmtTr2(2.1), '2,10');
+  assert.equal(fmtTr2(2.0), '2,00');
+  assert.equal(fmtTr2(3.625), '3,63');
+  assert.equal(fmtTr2(null), '');
+});
+
+const planFixture = () => ({
+  programCode: 'BLG_LS',
+  semesters: [{
+    title: '1. Yarıyıl',
+    items: [
+      { course: { code: 'BLG 101E', credits: 3, ects: 6 } },
+      { elective: { title: '4.yy Seçime Bağlı Ders (ITB)', credits: '3', ects: [4, 5], options: [
+        { code: 'SNT 102', name: 'Fotoğraf' }, { code: 'SNT 101', name: 'Heykel' },
+      ] } },
+    ],
+  }],
+});
+
+test('setGrade: not yazılır, ikinci not eskiye taşınır (tekrar işareti)', () => {
+  let data = {};
+  data = setGrade(data, 'BLG 101E', 'FF');
+  assert.equal(data.grades['BLG 101E'].grade, 'FF');
+  assert.equal(data.grades['BLG 101E'].prev, '');
+  data = setGrade(data, 'BLG 101E', 'BB');
+  assert.equal(data.grades['BLG 101E'].grade, 'BB');
+  assert.equal(data.grades['BLG 101E'].prev, 'FF'); // önceki saklanır
+});
+
+test('setElective: ders seçilir, not ayrı yazılır, önceki korunur', () => {
+  let data = {};
+  data = setElective(data, 's0i1', 'SNT 102', 'CC');
+  assert.equal(data.elective['s0i1'].code, 'SNT 102');
+  assert.equal(data.elective['s0i1'].grade, 'CC');
+  data = setElective(data, 's0i1', 'SNT 102', 'BB');
+  assert.equal(data.elective['s0i1'].grade, 'BB');
+  assert.equal(data.elective['s0i1'].prev, 'CC');
+});
+
+test('buildEntries: seçmeli slotta ders seçilmeden plan kredisi kullanılır, varsayılan işaretli', () => {
+  const entries = buildEntries(planFixture(), {});
+  assert.equal(entries.length, 2);
+  const e = entries[1];
+  assert.equal(e.required, false);
+  assert.equal(e.credits, 3);         // slot kredisi "3"
+  assert.equal(e.ects, 4);            // AKTS aralığından ilk değer
+  assert.equal(e.defaultCredit, true);
+  assert.equal(e.slot, 's0i1');
+  assert.equal(e.grade, '');
+});
+
+test('buildEntries: seçilen dersin kredisi katalogdan gelir (yoksa varsayılan)', () => {
+  const stored = { elective: { s0i1: { code: 'SNT 102', grade: 'AA' } } };
+  const catalog = new Map([['SNT 102', { local: 3, ects: 4.5 }]]);
+  const entries = buildEntries(planFixture(), stored, catalog);
+  const e = entries[1];
+  assert.equal(e.code, 'SNT 102');
+  assert.equal(e.credits, 3);
+  assert.equal(e.ects, 4.5);
+  assert.equal(e.defaultCredit, false);
+  // Katalogda yoksa slot varsayılanına düşer + işaretlenir
+  const noCat = buildEntries(planFixture(), stored);
+  assert.equal(noCat[1].defaultCredit, true);
+  assert.equal(noCat[1].credits, 3);
+});
+
+test('buildEntries + calcGPA: zorunlu + seçmeli notları GANO\'ya girer', () => {
+  const stored = {
+    grades: { 'BLG 101E': { grade: 'AA' } },
+    elective: { s0i1: { code: 'SNT 102', grade: 'BB' } },
+  };
+  const catalog = new Map([['SNT 102', { local: 3, ects: 4.5 }]]);
+  const entries = buildEntries(planFixture(), stored, catalog);
+  const gpa = calcGPA(entries);
+  assert.ok(Math.abs(gpa - ((4 * 3 + 3 * 3) / 6)) < 1e-9); // = 3,5
+});
+
+test('exportJSON/importJSON yuvarlak döner', () => {
+  const data = { grades: { 'BLG 101E': { grade: 'AA' } }, elective: {}, transfer: { credits: 20, gpa: 2.8 } };
+  const json = exportJSON('BLG_LS', data);
+  const back = importJSON(json);
+  assert.equal(back.program, 'BLG_LS');
+  assert.deepEqual(back.data.grades['BLG 101E'], { grade: 'AA' });
+  assert.equal(back.data.transfer.credits, 20);
+  assert.equal(importJSON('bozuk'), null);
 });
 
 test('examToIcs Türkçe tarih + saat aralığını ISO zamanlı etkinliğe çevirir', () => {

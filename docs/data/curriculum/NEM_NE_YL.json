@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Nükleer Enerji Mühendisliği Yüksek Lisans Programı 2026-2027 / Güz Dönemi Öncesi",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Nükleer Enerji Mühendisliği Yüksek Lisans",
@@ -11,24 +13,44 @@
     {
      "course": {
       "code": "NUK YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "NUK 596 NUK 596E",
-      "name": "Bilimsel Araştırma, Etik ve Seminer"
+      "name": "Bilimsel Araştırma, Etik ve Seminer",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "NUK 501E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 3,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "11930",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "EBT 511E",
@@ -76,6 +98,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "11931",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "EBT 511E",
@@ -123,6 +150,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "11932",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "EBT 511E",
@@ -170,24 +202,28 @@
     {
      "elective": {
       "title": "Seçmeli Ders I",
+      "groupId": "11933",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders II",
+      "groupId": "11934",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders III",
+      "groupId": "11935",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders IV",
+      "groupId": "11936",
       "options": null
      }
     }

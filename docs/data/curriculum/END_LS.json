@@ -4,6 +4,8 @@
  "faculty": "İşletme Fakültesi",
  "level": "LS",
  "planLabel": "Endüstri Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "128,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,97 @@
     {
      "course": {
       "code": "END 113",
-      "name": "Endüstri Müh. Giriş ve Etik"
+      "name": "Endüstri Müh. Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -64,49 +114,98 @@
     {
      "course": {
       "code": "FIZ 102",
-      "name": "Fizik II (Elektrik Fiziği)"
+      "name": "Fizik II (Elektrik Fiziği)",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "END 112E",
-      "name": "Intr. to Manufacturing Systems"
+      "name": "Intr. to Manufacturing Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -117,37 +216,74 @@
     {
      "course": {
       "code": "END 213E",
-      "name": "Data Manag.in Industrial Syst."
+      "name": "Data Manag.in Industrial Syst.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "END 210",
-      "name": "End. Müh.için Doğrusal Cebir"
+      "name": "End. Müh.için Doğrusal Cebir",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "EKO 201",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "END 215",
-      "name": "Sistem Düşüncesi ve Analizi"
+      "name": "Sistem Düşüncesi ve Analizi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "END 252E",
-      "name": "Theory of Probability"
+      "name": "Theory of Probability",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -158,37 +294,74 @@
     {
      "course": {
       "code": "MEK 205",
-      "name": "Mühendislik Mekaniği"
+      "name": "Mühendislik Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "END 232",
-      "name": "İşbilim"
+      "name": "İşbilim",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "END 311",
-      "name": "İstatistik"
+      "name": "İstatistik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "END 331",
-      "name": "Yöneylem Araştırması I"
+      "name": "Yöneylem Araştırması I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "END 201E",
-      "name": "Industrial Engineering Applications in Python"
+      "name": "Industrial Engineering Applications in Python",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "HUK 201",
-      "name": "İş Hukuku"
+      "name": "İş Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     }
    ]
@@ -199,30 +372,62 @@
     {
      "course": {
       "code": "END 341",
-      "name": "İş Etüdü ve Dizaynı"
+      "name": "İş Etüdü ve Dizaynı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "END 421",
-      "name": "Üretim Planlama ve Kontrol"
+      "name": "Üretim Planlama ve Kontrol",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "END 332E",
-      "name": "Operations Research II"
+      "name": "Operations Research II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "END 305E",
-      "name": "Data Analytics for Business"
+      "name": "Data Analytics for Business",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders(Fonksiyonel)-MT",
+      "groupId": "8380",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "ECN 410E",
@@ -330,6 +535,15 @@
     {
      "elective": {
       "title": "Seçmeli Ders(Analitik)-MT",
+      "groupId": "8381",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 201E",
@@ -418,24 +632,51 @@
     {
      "course": {
       "code": "END 312",
-      "name": "Mühendislik Ekonomisi"
+      "name": "Mühendislik Ekonomisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "END 322",
-      "name": "Sistem Simülasyonu"
+      "name": "Sistem Simülasyonu",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "END 308",
-      "name": "Kalite Mühendisliği"
+      "name": "Kalite Mühendisliği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders(Fonksiyonel)-MT",
+      "groupId": "8382",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "ECN 421E",
@@ -531,6 +772,11 @@
     {
      "elective": {
       "title": "Seçmeli Ders (ITB)",
+      "groupId": "8383",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1234,6 +1480,13 @@
     {
      "elective": {
       "title": "Seçmeli Ders(Analitik)-MT",
+      "groupId": "8384",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -1342,30 +1595,62 @@
     {
      "course": {
       "code": "END 4901",
-      "name": "Endüstri Müh. Tasarımı I"
+      "name": "Endüstri Müh. Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "END 411",
-      "name": "Bütünleşik Üretim Sistemleri"
+      "name": "Bütünleşik Üretim Sistemleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 7,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "END 431",
-      "name": "Yönetim ve Organizasyon"
+      "name": "Yönetim ve Organizasyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "END 449 END 449E",
-      "name": "End. Müh. Uyg. Seminer Dersi"
+      "name": "End. Müh. Uyg. Seminer Dersi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 2,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders(Fonksiyonel)-MT",
+      "groupId": "8385",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "ECN 410E",
@@ -1473,6 +1758,15 @@
     {
      "elective": {
       "title": "Seçmeli Ders(Analitik)-MT",
+      "groupId": "8386",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 201E",
@@ -1561,30 +1855,62 @@
     {
      "course": {
       "code": "END 4902",
-      "name": "Endüstri Müh. Tasarımı II"
+      "name": "Endüstri Müh. Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 10,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "END 412",
-      "name": "İnsan Kaynakları Yönetiminin Temelleri"
+      "name": "İnsan Kaynakları Yönetiminin Temelleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders(Fonksiyonel)-MT",
+      "groupId": "8387",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "ECN 421E",
@@ -1680,6 +2006,13 @@
     {
      "elective": {
       "title": "Seçmeli Ders(Analitik)-MT",
+      "groupId": "8388",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",

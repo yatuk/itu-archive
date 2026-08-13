@@ -4,6 +4,8 @@
  "faculty": "Türk Musikisi Devlet Konservatuvarı",
  "level": "LS",
  "planLabel": "Türk Halk Oyunları Lisans Programı (Türkçe) 2012-2013 / Güz Dönemi Sonrası",
+ "totalCredits": "151,50",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,55 +13,112 @@
     {
      "course": {
       "code": "MTR 123",
-      "name": "Müzik Teorisi I"
+      "name": "Müzik Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 121",
-      "name": "Makam Teorisi I"
+      "name": "Makam Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "THO 113",
-      "name": "Oyun Tekniği I"
+      "name": "Oyun Tekniği I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 109",
-      "name": "Oyun Ritim Bilgisi I"
+      "name": "Oyun Ritim Bilgisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 115",
-      "name": "Bale I"
+      "name": "Bale I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 111",
-      "name": "Hareket Anatomisi I"
+      "name": "Hareket Anatomisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "THO 117",
-      "name": "Kondisyon Ve Esneme I (Krdsz)"
+      "name": "Kondisyon Ve Esneme I (Krdsz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 105",
-      "name": "English I"
+      "name": "English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "BIL 109",
-      "name": "Bilgisayar"
+      "name": "Bilgisayar",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "ITB"
      }
     }
    ]
@@ -70,55 +129,111 @@
     {
      "course": {
       "code": "MTR 124",
-      "name": "Müzik Teorisi II"
+      "name": "Müzik Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 122",
-      "name": "Makam Teorisi II"
+      "name": "Makam Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "THO 114",
-      "name": "Oyun Tekniği II"
+      "name": "Oyun Tekniği II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 116",
-      "name": "Bale II"
+      "name": "Bale II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 110",
-      "name": "Oyun Ritim Bilgisi II"
+      "name": "Oyun Ritim Bilgisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 112",
-      "name": "Hareket Anatomisi II"
+      "name": "Hareket Anatomisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "THO 120",
-      "name": "Halk Oyunları Bilgisi"
+      "name": "Halk Oyunları Bilgisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 118",
-      "name": "Kondisyon Ve Esneme II (Krdsz)"
+      "name": "Kondisyon Ve Esneme II (Krdsz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 106",
-      "name": "English II"
+      "name": "English II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -129,42 +244,86 @@
     {
      "course": {
       "code": "MTR 221",
-      "name": "Makam Teorisi III"
+      "name": "Makam Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "THO 201",
-      "name": "Oyun Ritim Bilgisi III"
+      "name": "Oyun Ritim Bilgisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 205",
-      "name": "Oyunda Yöresel Tavırlar I"
+      "name": "Oyunda Yöresel Tavırlar I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTR 223",
-      "name": "Müzik Teorisi III"
+      "name": "Müzik Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "THO 207",
-      "name": "Oyun Repertuvarı I"
+      "name": "Oyun Repertuvarı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 203",
-      "name": "Türk Halk Oyunları I"
+      "name": "Türk Halk Oyunları I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Çalgı I",
+      "groupId": "7431",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 1103",
@@ -224,13 +383,25 @@
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 205",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -241,30 +412,61 @@
     {
      "course": {
       "code": "MTR 224",
-      "name": "Müzik Teorisi IV"
+      "name": "Müzik Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 222",
-      "name": "Makam Teorisi IV"
+      "name": "Makam Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "THO 206",
-      "name": "Oyunda Yöresel Tavırlar II"
+      "name": "Oyunda Yöresel Tavırlar II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 208",
-      "name": "Oyun Repertuvarı II"
+      "name": "Oyun Repertuvarı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Çalgı II",
+      "groupId": "7437",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 1104",
@@ -324,25 +526,50 @@
     {
      "course": {
       "code": "THO 204",
-      "name": "Türk Halk Oyunları II"
+      "name": "Türk Halk Oyunları II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 202",
-      "name": "Oyun Ritim Bilgisi IV"
+      "name": "Oyun Ritim Bilgisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 206",
-      "name": "English IV"
+      "name": "English IV",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -353,30 +580,59 @@
     {
      "course": {
       "code": "MTR 431",
-      "name": "Dikte Deşifre I"
+      "name": "Dikte Deşifre I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "THO 311",
-      "name": "Oyun Analizi I"
+      "name": "Oyun Analizi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 303",
-      "name": "Türk Halk Oyunları III"
+      "name": "Türk Halk Oyunları III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 305",
-      "name": "Oyunda Yöresel Tavırlar III"
+      "name": "Oyunda Yöresel Tavırlar III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Çalgı III",
+      "groupId": "7445",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 2103",
@@ -436,6 +692,11 @@
     {
      "elective": {
       "title": "5.yy Seçmeli Ders(ITB)",
+      "groupId": "7446",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -791,25 +1052,48 @@
     {
      "course": {
       "code": "THO 307",
-      "name": "Oyun Repertuvarı III"
+      "name": "Oyun Repertuvarı III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 313",
-      "name": "Koreoloji I"
+      "name": "Koreoloji I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "THO 309",
-      "name": "Halk Oyunları Sahne Bilgisi"
+      "name": "Halk Oyunları Sahne Bilgisi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "THO 317",
-      "name": "Sahne Projesi I (Kredisiz)"
+      "name": "Sahne Projesi I (Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "tutorial": 4,
+      "type": "-"
      }
     }
    ]
@@ -820,30 +1104,59 @@
     {
      "course": {
       "code": "MTR 432",
-      "name": "Dikte Deşifre II"
+      "name": "Dikte Deşifre II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "THO 312",
-      "name": "Oyun Analizi II"
+      "name": "Oyun Analizi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 304",
-      "name": "Türk Halk Oyunları IV"
+      "name": "Türk Halk Oyunları IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 306",
-      "name": "Oyunda Yöresel Tavırlar IV"
+      "name": "Oyunda Yöresel Tavırlar IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Çalgı IV",
+      "groupId": "7454",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 2104",
@@ -903,6 +1216,11 @@
     {
      "elective": {
       "title": "6.yy Seçmeli Ders(ITB)",
+      "groupId": "7455",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1258,25 +1576,49 @@
     {
      "course": {
       "code": "THO 308",
-      "name": "Oyun Repertuvarı IV"
+      "name": "Oyun Repertuvarı IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "THO 314",
-      "name": "Koreoloji II"
+      "name": "Koreoloji II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUZ 322",
-      "name": "Alan Araştırma Metodları"
+      "name": "Alan Araştırma Metodları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "THO 318",
-      "name": "Sahne Projesi II (Kredisiz)"
+      "name": "Sahne Projesi II (Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "tutorial": 4,
+      "type": "-"
      }
     }
    ]
@@ -1287,18 +1629,35 @@
     {
      "course": {
       "code": "THO 409",
-      "name": "20.yy'da Dans"
+      "name": "20.yy'da Dans",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "THO 411",
-      "name": "Geleneksel Giyim Kuşam I"
+      "name": "Geleneksel Giyim Kuşam I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçmeli Ders I (MT)",
+      "groupId": "7469",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "THO 421",
@@ -1338,6 +1697,11 @@
     {
      "elective": {
       "title": "7.yy Seçmeli Ders II(MT)",
+      "groupId": "7470",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "SES 473",
@@ -1369,6 +1733,11 @@
     {
      "elective": {
       "title": "7.yy Seçmeli Ders(ITB)",
+      "groupId": "7471",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1724,6 +2093,11 @@
     {
      "elective": {
       "title": "7.yy Seçmeli Ders III (MT)",
+      "groupId": "7472",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "MUZ 475",
@@ -1763,19 +2137,37 @@
     {
      "course": {
       "code": "THO 413",
-      "name": "Jest-Mimik"
+      "name": "Jest-Mimik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "THO 417",
-      "name": "Sahne Projesi III (Kredisiz)"
+      "name": "Sahne Projesi III (Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "tutorial": 4,
+      "type": "-"
      }
     },
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -1786,18 +2178,34 @@
     {
      "course": {
       "code": "THO 412",
-      "name": "Geleneksel Giyim Kuşam II"
+      "name": "Geleneksel Giyim Kuşam II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "THO 418",
-      "name": "Sahne Projesi IV (Kredisiz)"
+      "name": "Sahne Projesi IV (Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "tutorial": 4,
+      "type": "-"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçmeli Ders I (MT)",
+      "groupId": "7481",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "THO 422",
@@ -1837,18 +2245,35 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "THO 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 9,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçmeli Ders II(MT)",
+      "groupId": "7482",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "THO 442",
@@ -1876,6 +2301,11 @@
     {
      "elective": {
       "title": "8.yy Seçmeli Ders III(MT)",
+      "groupId": "7483",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "MUZ 421",
@@ -1919,6 +2349,11 @@
     {
      "elective": {
       "title": "8.yy Seçmeli Ders (ITB)",
+      "groupId": "7484",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",

@@ -4,6 +4,8 @@
  "faculty": "Avrasya Yer Bilimleri Enstitüsü",
  "level": "YL",
  "planLabel": "Yer Sistem Bilimi Yüksek Lisans Programı 2026-2027 / Güz Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Yer Sistem Bilimi Yüksek Lisans",
@@ -11,18 +13,33 @@
     {
      "course": {
       "code": "YSB YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "YSB 596 YSB 596E",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "13356",
+      "credits": "0 / 3",
+      "ects": [
+       0,
+       7.5
+      ],
       "options": [
        {
         "code": "YSB 526E",
@@ -54,6 +71,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "13357",
+      "credits": "0 / 3",
+      "ects": [
+       0,
+       7.5
+      ],
       "options": [
        {
         "code": "YSB 526E",
@@ -85,6 +108,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "13358",
+      "credits": "0 / 3",
+      "ects": [
+       0,
+       7.5
+      ],
       "options": [
        {
         "code": "YSB 526E",
@@ -116,6 +145,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "13359",
+      "credits": "0 / 3",
+      "ects": [
+       0,
+       7.5
+      ],
       "options": [
        {
         "code": "YSB 526E",
@@ -147,24 +182,28 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "13360",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "13361",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "13362",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "13363",
       "options": null
      }
     }

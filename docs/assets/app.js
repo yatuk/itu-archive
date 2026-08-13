@@ -13,8 +13,9 @@ import { initExams, onShow as examsShow } from './views/exams.js';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
 import { onShow as programShow } from './views/program.js';
+import { onShow as dersplanimShow } from './views/dersplanim.js';
 import { PrereqGraph } from './prereq.js';
-import { methodToCode, codeToMethod, slugToCode } from './core/urlcodes.js';
+import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js';
 import { openTakenEditor } from './core/taken-ui.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
@@ -126,6 +127,7 @@ async function boot() {
   if (params.has('program')) $('#f-program').value = params.get('program');
   if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
+  if (params.get('taken') === '1') $('#f-taken').checked = true;
   applyFilters();
 }
 
@@ -198,8 +200,8 @@ function initWelcome() {
 // Sade temasında sekme adları düz ("Dersler"), fosfor/CRT'de numaralı
 // ("01 · DERSLER") kalır — numaralandırma terminal kimliğinin parçası.
 const TAB_PLAIN = {
-  tr: { dersler: 'Dersler', gecmis: 'Geçmiş', onsart: 'Önşart Haritası', sinavlar: 'Sınavlar', takvim: 'Akademik Takvim', donemler: 'Dönemler', program: 'Program', hakkinda: 'Hakkında' },
-  en: { dersler: 'Courses', gecmis: 'History', onsart: 'Prereq Map', sinavlar: 'Exams', takvim: 'Calendar', donemler: 'Terms', program: 'Schedule', hakkinda: 'About' },
+  tr: { dersler: 'Dersler', gecmis: 'Geçmiş', onsart: 'Önşart Haritası', sinavlar: 'Sınavlar', takvim: 'Akademik Takvim', donemler: 'Dönemler', dersplanim: 'Ders Planım', program: 'Program', hakkinda: 'Hakkında' },
+  en: { dersler: 'Courses', gecmis: 'History', onsart: 'Prereq Map', sinavlar: 'Exams', takvim: 'Calendar', donemler: 'Terms', dersplanim: 'My Plan', program: 'Schedule', hakkinda: 'About' },
 };
 function applyTabLabels() {
   const sade = document.documentElement.getAttribute('data-theme') === 'sade';
@@ -212,7 +214,7 @@ function applyTabLabels() {
 
 /* ---------- sekmeler ---------- */
 
-const VIEWS = ['dersler', 'gecmis', 'onsart', 'sinavlar', 'takvim', 'donemler', 'program', 'hakkinda'];
+const VIEWS = ['dersler', 'gecmis', 'onsart', 'sinavlar', 'takvim', 'donemler', 'dersplanim', 'program', 'hakkinda'];
 
 // Dersler filtrelerini kısa kodlarla query'ye yazar (term yalnızca aktif dönem
 // dışındaysa). Varsayılanlar (boş/"hepsi"/aktif dönem) URL'ye girmez.
@@ -230,18 +232,43 @@ function derslerParams() {
   if ($('#f-program').value) p.set('program', $('#f-program').value);
   if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');
+  if ($('#f-taken').checked) p.set('taken', '1');
+  return p;
+}
+
+// Ders Planım filtreleri DOM'dan okunur (sekme açıkken URL'de kalır, sekme
+// değişince app.js kapsama kuralıyla düşer).
+function dersplanimParams() {
+  const p = new URLSearchParams();
+  // DOM henüz hazır değilken (ilk açılışta yazma, görünüm yüklenmeden) gelen
+  // URL'deki prog korunur — ?prog=X#dersplanim bağlantısı sıyrılmasın.
+  const prog = $('#dp-prog')?.value || new URLSearchParams(location.search).get('prog') || '';
+  if (prog) p.set('prog', prog);
+  if ($('#dp-open')?.checked) p.set('fopen', '1');
+  if ($('#dp-cap')?.checked) p.set('fcap', '1');
+  if ($('#dp-hide')?.checked) p.set('fhide', '1');
+  const sems = [...document.querySelectorAll('#dp-sems input:checked')].map((x) => x.value);
+  if (sems.length) p.set('fsems', sems.join(','));
+  const types = [...document.querySelectorAll('#dp-types .on')].map((x) => x.dataset.type);
+  if (types.length) p.set('ftypes', types.join(','));
+  if (state.index && termSlug && termSlug !== state.index.currentSlug) p.set('term', termSlug);
   return p;
 }
 
 // URL'yi sekmeye göre kapsar: query'de yalnızca görünümün parametreleri kalır
 // (term global). Sekme değişiminde hedef görünüme ait olmayanlar düşer; dersler
-// filtreleri DOM'da durduğundan geri dönünce yeniden yazılır. push=true →
+// ve dersplanim filtreleri DOM'da durduğundan geri dönünce yeniden yazılır.
+// Diğer görünümler mevcut query'yi hedef görünümün parametrelerine göre kapsar
+// (örn. onsart'ta ?prog&pool korunur — seçmeli havuz paylaşım linki). push=true →
 // tarayıcı geçmişi (geri/ileri), değilse mevcut giriş (filtre değişimi).
 function writeViewUrl(view, push) {
   const h = location.hash.slice(1);
   const isDetail = h.startsWith('ders/');
   const hash = (view === 'dersler' && isDetail) ? h : view;
-  const p = view === 'dersler' ? derslerParams() : new URLSearchParams();
+  let p;
+  if (view === 'dersler') p = derslerParams();
+  else if (view === 'dersplanim') p = dersplanimParams();
+  else p = scopeParams(view, new URLSearchParams(location.search));
   if (view !== 'dersler' && state.index && state.termSlug && state.termSlug !== state.index.currentSlug) {
     p.set('term', state.termSlug);
   }
@@ -278,10 +305,11 @@ function wireTabs() {
     if (view === 'sinavlar') examsShow();
     if (view === 'gecmis') historyShow();
     if (view === 'program') programShow();
+    if (view === 'dersplanim') dersplanimShow();
     if (view === 'onsart') PrereqGraph.init('#pg-root');
-    // Program oluşturucu daha geniş alan kullanır.
+    // Program oluşturucu ve Ders Planım daha geniş alan kullanır.
     const mainEl = document.querySelector('main.wrap');
-    if (mainEl) mainEl.classList.toggle('wide', view === 'program');
+    if (mainEl) mainEl.classList.toggle('wide', view === 'program' || view === 'dersplanim');
     writeViewUrl(view, push);
   };
   showView = show;

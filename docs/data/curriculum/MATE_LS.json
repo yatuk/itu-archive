@@ -4,6 +4,8 @@
  "faculty": "Fen - Edebiyat Fakültesi",
  "level": "LS",
  "planLabel": "Matematik Mühendisliği Lisans Programı (%100 İngilizce) 2010-2011 / Güz Dönemi Sonrası",
+ "totalCredits": "151,50",
+ "totalEcts": "241,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,54 +13,109 @@
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 111E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 5,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 175E",
-      "name": "Abstract Mathematics"
+      "name": "Abstract Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 141E",
-      "name": "Linear Algebra I"
+      "name": "Linear Algebra I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "5450",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -79,36 +136,74 @@
     {
      "course": {
       "code": "FIZ 106E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 106EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 112E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 7.5,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 142E",
-      "name": "Linear Algebra II"
+      "name": "Linear Algebra II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 104E",
-      "name": "Intr. to Programming in C"
+      "name": "Intr. to Programming in C",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "5452",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -173,37 +268,74 @@
     {
      "course": {
       "code": "MUH 211E",
-      "name": "Discrete Mathematics"
+      "name": "Discrete Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 213E",
-      "name": "Mathematics III"
+      "name": "Mathematics III",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 221E",
-      "name": "Probability Theory"
+      "name": "Probability Theory",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DNK 201E",
-      "name": "Dynamics"
+      "name": "Dynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 322E",
-      "name": "Algebra I"
+      "name": "Algebra I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -214,37 +346,73 @@
     {
      "course": {
       "code": "MAT 232E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 214E",
-      "name": "Mathematics IV"
+      "name": "Mathematics IV",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MUH 212E",
-      "name": "Data Structures"
+      "name": "Data Structures",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 242E",
-      "name": "Statistics"
+      "name": "Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -255,30 +423,59 @@
     {
      "course": {
       "code": "MAT 331E",
-      "name": "Partial Differential Equations"
+      "name": "Partial Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MUH 321E",
-      "name": "Numerical Methods"
+      "name": "Numerical Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5,
+      "theory": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MUH 311E",
-      "name": "Continuum Mechanics I"
+      "name": "Continuum Mechanics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 341E",
-      "name": "Complex Analysis"
+      "name": "Complex Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Crse-ITB",
+      "groupId": "5454",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -474,6 +671,12 @@
     {
      "elective": {
       "title": "5th Semester Elective Crse(MT)",
+      "groupId": "5455",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       6
+      ],
       "options": [
        {
         "code": "ECN 307E",
@@ -546,30 +749,59 @@
     {
      "course": {
       "code": "MAT 355E",
-      "name": "Topology"
+      "name": "Topology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 342E",
-      "name": "Differential Geometry"
+      "name": "Differential Geometry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 332E",
-      "name": "Real Analysis I"
+      "name": "Real Analysis I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MUH 312E",
-      "name": "Continuum Mechanics II"
+      "name": "Continuum Mechanics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "6th Semester Elective Crse-ITB",
+      "groupId": "5456",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -765,6 +997,13 @@
     {
      "elective": {
       "title": "6th Sem. Rest. Elect. Crse(MT)",
+      "groupId": "5457",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -861,12 +1100,25 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "7th Sem. Rest. Elec. CrseI(MT)",
+      "groupId": "5458",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1086,6 +1338,13 @@
     {
      "elective": {
       "title": "7th Sem. Res. Elect. CrseII-MT",
+      "groupId": "5459",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1305,6 +1564,13 @@
     {
      "elective": {
       "title": "7th Sem. Elect. CrseIII-MT",
+      "groupId": "5460",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1524,6 +1790,13 @@
     {
      "elective": {
       "title": "7th Sem. Rest. Elec. CrseIV-MT",
+      "groupId": "5461",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -1747,6 +2020,11 @@
     {
      "elective": {
       "title": "7th Sem. Elec. Crse(SNT)",
+      "groupId": "5462",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -1831,24 +2109,49 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 492E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 15,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8th Sem. Res. Elect. Crse I-MT",
+      "groupId": "5463",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",
@@ -2068,6 +2371,13 @@
     {
      "elective": {
       "title": "8th Sem. Rest. Elec. CrseII-MT",
+      "groupId": "5464",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 361E",

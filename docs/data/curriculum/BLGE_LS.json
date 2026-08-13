@@ -4,6 +4,8 @@
  "faculty": "Bilgisayar ve Bilişim Fakültesi",
  "level": "LS",
  "planLabel": "Bilgisayar Mühendisliği Lisans Programı (%100 İngilizce) 2024-2025 / Güz Dönemi Sonrası",
+ "totalCredits": "130,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,88 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 101E",
-      "name": "Introduction to Information Systems"
+      "name": "Introduction to Information Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BLG 113E",
-      "name": "Intr.toComp.Eng.and Ethics"
+      "name": "Intr.toComp.Eng.and Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 102E",
-      "name": "Linear Algebra and Applications"
+      "name": "Linear Algebra and Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,43 +105,87 @@
     {
      "course": {
       "code": "BBF 103E",
-      "name": "Discrete Mathematics"
+      "name": "Discrete Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BLG 102E",
-      "name": "Intr to Sci&Eng Comp (C)"
+      "name": "Intr to Sci&Eng Comp (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -105,37 +196,74 @@
     {
      "course": {
       "code": "BBF 201E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BLG 223E",
-      "name": "Data Structures"
+      "name": "Data Structures",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 231E",
-      "name": "Digital Circuits"
+      "name": "Digital Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EHB 222E",
-      "name": "Introduction to Electronics"
+      "name": "Introduction to Electronics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -146,42 +274,83 @@
     {
      "course": {
       "code": "BBF 202E",
-      "name": "Numerical Methods in Computer Engineering"
+      "name": "Numerical Methods in Computer Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 203E",
-      "name": "Object Oriented Programming"
+      "name": "Object Oriented Programming",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BBF 204E",
-      "name": "Formal Languages and Automata"
+      "name": "Formal Languages and Automata",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BLG 222E",
-      "name": "Computer Organization"
+      "name": "Computer Organization",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 242E",
-      "name": "Logic Circuits Laboratory"
+      "name": "Logic Circuits Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 4,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "TM Elective I",
+      "groupId": "11778",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BLG 337E",
@@ -230,42 +399,82 @@
     {
      "course": {
       "code": "BBF 301E",
-      "name": "Analysis of Algorithms I"
+      "name": "Analysis of Algorithms I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BBF 302E",
-      "name": "Database Systems"
+      "name": "Database Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 212E",
-      "name": "Microprocessor Systems"
+      "name": "Microprocessor Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 351E",
-      "name": "Microcomputer Lab."
+      "name": "Microcomputer Lab.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EHB 311E",
-      "name": "Intr.to Electronics Laboratory"
+      "name": "Intr.to Electronics Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "ITB Elective I",
+      "groupId": "11779",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BLG 346E",
@@ -345,6 +554,12 @@
     {
      "elective": {
       "title": "TM Elective II",
+      "groupId": "11780",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BLG 337E",
@@ -393,36 +608,72 @@
     {
      "course": {
       "code": "BBF 303E",
-      "name": "Analysis of Algorithms II"
+      "name": "Analysis of Algorithms II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BBF 304E",
-      "name": "Learning From Data"
+      "name": "Learning From Data",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BLG 312E",
-      "name": "Computer Operating Systems"
+      "name": "Computer Operating Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 322E",
-      "name": "Computer Architecture"
+      "name": "Computer Architecture",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 354E",
-      "name": "Signal&Systems for Comp.Eng."
+      "name": "Signal&Systems for Comp.Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "TM Elective III",
+      "groupId": "11781",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BLG 337E",
@@ -471,24 +722,48 @@
     {
      "course": {
       "code": "BLG 411E",
-      "name": "Software Engineering"
+      "name": "Software Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 417E",
-      "name": "Artificial Intelligence"
+      "name": "Artificial Intelligence",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 4901E",
-      "name": "Computer Engineering Design I"
+      "name": "Computer Engineering Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "MT Elective I",
+      "groupId": "11782",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "BLG 420E",
@@ -600,6 +875,11 @@
     {
      "elective": {
       "title": "ITB Elective II",
+      "groupId": "11783",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -902,6 +1182,10 @@
         "name": "Toplics in Literature and Society"
        },
        {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
         "code": "ITB 215E",
         "name": "Topics in Hist.and Society"
        },
@@ -1004,24 +1288,47 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "BLG 4902E",
-      "name": "Computer Engineering Design II"
+      "name": "Computer Engineering Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "MT Elective II",
+      "groupId": "11785",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "BLG 420E",
@@ -1133,6 +1440,11 @@
     {
      "elective": {
       "title": "MT Elective III",
+      "groupId": "11786",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "BLG 420E",

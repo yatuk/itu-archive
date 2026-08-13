@@ -4,6 +4,8 @@
  "faculty": "Denizcilik Fakültesi",
  "level": "LS",
  "planLabel": "Gemi Makinaları İşletme Mühendisliği Lisans Programı (%100 İngilizce) 2011-2012 / Güz Dönemi Sonrası",
+ "totalCredits": "158,00",
+ "totalEcts": "241,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,55 +13,114 @@
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DFH 111E",
-      "name": "Maritime Safety I"
+      "name": "Maritime Safety I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "lab": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "RES 102E",
-      "name": "Com.Aided Technical Drawing"
+      "name": "Com.Aided Technical Drawing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAL 203E",
-      "name": "Material Science"
+      "name": "Material Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     }
    ]
@@ -70,55 +131,113 @@
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GMI 105E",
-      "name": "Introduction to Marine Engineering and Ethics"
+      "name": "Introduction to Marine Engineering and Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 171E",
-      "name": "Maritime English I"
+      "name": "Maritime English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 123E",
-      "name": "Manufacturing Processes"
+      "name": "Manufacturing Processes",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 205E",
-      "name": "Workshop"
+      "name": "Workshop",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 261E",
-      "name": "Linear Algebra"
+      "name": "Linear Algebra",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DFH 112E",
-      "name": "Maritime Safety II"
+      "name": "Maritime Safety II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -129,55 +248,113 @@
     {
      "course": {
       "code": "MAT 201E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GMI 231E",
-      "name": "Numerical Analysis of Engineering System"
+      "name": "Numerical Analysis of Engineering System",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MEK 205E",
-      "name": "Engineering Mechanics"
+      "name": "Engineering Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 261E",
-      "name": "Fluid Mechanics"
+      "name": "Fluid Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 232E",
-      "name": "Marine Diesel Engines I"
+      "name": "Marine Diesel Engines I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 202E",
-      "name": "Marine Electrotechnics"
+      "name": "Marine Electrotechnics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 108E",
-      "name": "Intr. to Sci. & Eng.Computing"
+      "name": "Intr. to Sci. & Eng.Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BED 201E",
-      "name": "Physical Education"
+      "name": "Physical Education",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 270E",
-      "name": "Maritime English II"
+      "name": "Maritime English II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -188,54 +365,116 @@
     {
      "course": {
       "code": "GMI 213E",
-      "name": "Thermodynamics"
+      "name": "Thermodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MUK 208E",
-      "name": "Strength of Materials"
+      "name": "Strength of Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 214E",
-      "name": "Hydraulic and Pneumatic"
+      "name": "Hydraulic and Pneumatic",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 253E",
-      "name": "Marine Auxiliary Machinery I"
+      "name": "Marine Auxiliary Machinery I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 4,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 233E",
-      "name": "Marine Diesel Engines II"
+      "name": "Marine Diesel Engines II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 220E",
-      "name": "Naval Architecture and Stability"
+      "name": "Naval Architecture and Stability",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 224E",
-      "name": "Marine Electronics"
+      "name": "Marine Electronics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 223E",
-      "name": "Maritime Safety III"
+      "name": "Maritime Safety III",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Elective Course (TB)",
+      "groupId": "3233",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
       "options": [
        {
         "code": "FIZ 201E",
@@ -260,55 +499,115 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 352E",
-      "name": "Heat Transfer"
+      "name": "Heat Transfer",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 323E",
-      "name": "Machinery Elements"
+      "name": "Machinery Elements",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 341E",
-      "name": "Automatic Control Systems"
+      "name": "Automatic Control Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GMI 383E",
-      "name": "Engine Room Simulator (ERS) I"
+      "name": "Engine Room Simulator (ERS) I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 312E",
-      "name": "Marine Boilers and Operation"
+      "name": "Marine Boilers and Operation",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 322E",
-      "name": "Operation and Maintenance of Marine Engines"
+      "name": "Operation and Maintenance of Marine Engines",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 342E",
-      "name": "Maritime Rules & Regulations"
+      "name": "Maritime Rules & Regulations",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -319,7 +618,13 @@
     {
      "course": {
       "code": "GMI 392E",
-      "name": "Long Term Sea Training"
+      "name": "Long Term Sea Training",
+      "language": "English",
+      "required": "Z",
+      "credits": 12,
+      "ects": 30,
+      "tutorial": 24,
+      "type": "MT"
      }
     }
    ]
@@ -330,48 +635,99 @@
     {
      "course": {
       "code": "GMI 461E",
-      "name": "Oper. of Steam & Gas Turbines"
+      "name": "Oper. of Steam & Gas Turbines",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 453E",
-      "name": "Marine Auxiliary Machinery II"
+      "name": "Marine Auxiliary Machinery II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 443E",
-      "name": "Marine Diesel Engines III"
+      "name": "Marine Diesel Engines III",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 433E",
-      "name": "Refrigeration and HVAC Systems"
+      "name": "Refrigeration and HVAC Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Course (ITB)",
+      "groupId": "3235",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 105E",
@@ -395,6 +751,12 @@
     {
      "elective": {
       "title": "Elective Course (MT)",
+      "groupId": "3236",
+      "credits": "2",
+      "ects": [
+       0,
+       2
+      ],
       "options": [
        {
         "code": "GMI 402E",
@@ -451,42 +813,85 @@
     {
      "course": {
       "code": "GMI 492E",
-      "name": "Design Project"
+      "name": "Design Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 483E",
-      "name": "Engine Room Simulator (ERS) II"
+      "name": "Engine Room Simulator (ERS) II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 463E",
-      "name": "Deck Machinery"
+      "name": "Deck Machinery",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GMI 491E",
-      "name": "Maritime English III"
+      "name": "Maritime English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 432E",
-      "name": "Quality & Safety Managm. Syst."
+      "name": "Quality & Safety Managm. Syst.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GMI 301E",
-      "name": "Maritime Law"
+      "name": "Maritime Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Course (MT)",
+      "groupId": "3238",
+      "credits": "2",
+      "ects": [
+       0,
+       2
+      ],
       "options": [
        {
         "code": "GMI 402E",
@@ -538,6 +943,11 @@
     {
      "elective": {
       "title": "Elective Course (ITB)",
+      "groupId": "3239",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ITB 151E",

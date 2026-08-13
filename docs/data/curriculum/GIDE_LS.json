@@ -4,6 +4,8 @@
  "faculty": "Kimya - Metalurji Fakültesi",
  "level": "LS",
  "planLabel": "Gıda Mühendisliği Lisans Programı (%100 İngilizce) 2013-2014 / Güz Dönemi Sonrası",
+ "totalCredits": "150,50",
+ "totalEcts": "239,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,54 +13,110 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101E",
-      "name": "General Chemistry I"
+      "name": "General Chemistry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "RES 107E",
-      "name": "Technical Drawing"
+      "name": "Technical Drawing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "3178",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -79,54 +137,110 @@
     {
      "course": {
       "code": "GID 112E",
-      "name": "Introduction to Food Science and Technologies"
+      "name": "Introduction to Food Science and Technologies",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 104E",
-      "name": "Organic Chemistry"
+      "name": "Organic Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 104EL",
-      "name": "Organic Chemistry Laboratory"
+      "name": "Organic Chemistry Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 108E",
-      "name": "Intr. to Sci. & Eng.Computing"
+      "name": "Intr. to Sci. & Eng.Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "3182",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -191,36 +305,77 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 201E",
-      "name": "Differential Equations"
+      "name": "Differential Equations",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "GID 221E",
-      "name": "Food Chemistry"
+      "name": "Food Chemistry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 211E",
-      "name": "Mass and Energy Balances"
+      "name": "Mass and Energy Balances",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "3rd Smstr Elective Course (TM)",
+      "groupId": "3184",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       3.5,
+       4,
+       4.5,
+       5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "CEV 250E",
@@ -281,43 +436,85 @@
     {
      "course": {
       "code": "KIM 206E",
-      "name": "Analytical Chemistry and Instrumental Analysis"
+      "name": "Analytical Chemistry and Instrumental Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 206EL",
-      "name": "Analitical Chemistry and Instrumental Analysis Laboratory"
+      "name": "Analitical Chemistry and Instrumental Analysis Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "AKM 204E",
-      "name": "Fluid Mechanics"
+      "name": "Fluid Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GID 232E",
-      "name": "Food Chemistry II"
+      "name": "Food Chemistry II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 222E",
-      "name": "Microbiology"
+      "name": "Microbiology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 212E",
-      "name": "Thermodynamics"
+      "name": "Thermodynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 4,
+      "type": "TM"
      }
     }
    ]
@@ -328,42 +525,84 @@
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GID 331E",
-      "name": "Food Eng Unit Operations I"
+      "name": "Food Eng Unit Operations I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 311E",
-      "name": "Food Microbiology"
+      "name": "Food Microbiology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 321E",
-      "name": "Food Microbiology Laboratory"
+      "name": "Food Microbiology Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 341E",
-      "name": "Heat Transfer"
+      "name": "Heat Transfer",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GID 351E",
-      "name": "Mass Transfer"
+      "name": "Mass Transfer",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "5th Smstr Elective Course (TB)",
+      "groupId": "3186",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BIO 215E",
@@ -404,30 +643,59 @@
     {
      "course": {
       "code": "GID 312E",
-      "name": "Food Microbiology II"
+      "name": "Food Microbiology II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 322E",
-      "name": "Food Engineering Unit Operations II"
+      "name": "Food Engineering Unit Operations II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 332E",
-      "name": "Food Engineering Laboratory"
+      "name": "Food Engineering Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "lab": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "6th Smstr Elective Course(ITB)",
+      "groupId": "3190",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -507,6 +775,11 @@
     {
      "elective": {
       "title": "6th Smstr Elective Course (MT)",
+      "groupId": "3191",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GID 314E",
@@ -526,6 +799,17 @@
     {
      "elective": {
       "title": "6th Smstr Elective Course (TM)",
+      "groupId": "3192",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       3.5,
+       4,
+       4.5,
+       5,
+       6,
+       7
+      ],
       "options": [
        {
         "code": "CEV 250E",
@@ -586,36 +870,71 @@
     {
      "course": {
       "code": "GID 411E",
-      "name": "Food Engineering Design I"
+      "name": "Food Engineering Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 421E",
-      "name": "Food Technology"
+      "name": "Food Technology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 441E",
-      "name": "Process Control"
+      "name": "Process Control",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GID 424E",
-      "name": "Food Quality Control"
+      "name": "Food Quality Control",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 432E",
-      "name": "Food Quality Control Laboratory"
+      "name": "Food Quality Control Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4.5,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Smstr Elective Course(ITB)",
+      "groupId": "3195",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 201",
@@ -815,6 +1134,11 @@
     {
      "elective": {
       "title": "7th Smstr Elective Course (MT)",
+      "groupId": "3196",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GID 413E",
@@ -843,18 +1167,36 @@
     {
      "course": {
       "code": "GID 492E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 12,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GID 402E",
-      "name": "Food Engineering Design II"
+      "name": "Food Engineering Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 10,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Smstr Elective Course (MT)",
+      "groupId": "3199",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GID 416E",
@@ -870,6 +1212,11 @@
     {
      "elective": {
       "title": "8th Smstr Elective Course(ITB)",
+      "groupId": "3200",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 201",

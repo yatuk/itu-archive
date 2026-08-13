@@ -4,6 +4,8 @@
  "faculty": "Türk Musikisi Devlet Konservatuvarı",
  "level": "LS",
  "planLabel": "Ses Eğitimi (THM) Lisans Programı (Türkçe) 2010-2011 / Güz Dönemi Sonrası",
+ "totalCredits": "153,50",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,60 +13,120 @@
     {
      "course": {
       "code": "SES 111",
-      "name": "THM Repertuvarı I"
+      "name": "THM Repertuvarı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 113",
-      "name": "Ses Eğitimi I"
+      "name": "Ses Eğitimi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTR 131",
-      "name": "Makam Teorisi I"
+      "name": "Makam Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 133",
-      "name": "Müzik Teorisi I"
+      "name": "Müzik Teorisi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SES 105",
-      "name": "Korrepetisyon I"
+      "name": "Korrepetisyon I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 0.5,
+      "ects": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CAB 177",
-      "name": "Piyano I"
+      "name": "Piyano I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 105",
-      "name": "English I"
+      "name": "English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "BIL 109",
-      "name": "Bilgisayar"
+      "name": "Bilgisayar",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Çalgı I (MT)",
+      "groupId": "6976",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 155",
@@ -85,60 +147,120 @@
     {
      "course": {
       "code": "MTR 132",
-      "name": "Makam Teorisi II"
+      "name": "Makam Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 134",
-      "name": "Müzik Teorisi II"
+      "name": "Müzik Teorisi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SES 112",
-      "name": "THM Repertuvarı II"
+      "name": "THM Repertuvarı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 2,
+      "lab": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 114",
-      "name": "Ses Eğitimi II"
+      "name": "Ses Eğitimi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 106",
-      "name": "Korrepetisyon II"
+      "name": "Korrepetisyon II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 0.5,
+      "ects": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 122",
-      "name": "Diksiyon"
+      "name": "Diksiyon",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "CAB 178",
-      "name": "Piyano II"
+      "name": "Piyano II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 106",
-      "name": "English II"
+      "name": "English II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Çalgı II (MT)",
+      "groupId": "6980",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 156",
@@ -159,60 +281,118 @@
     {
      "course": {
       "code": "MTR 233",
-      "name": "Müzik Teorisi III"
+      "name": "Müzik Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 231",
-      "name": "Makam Teorisi III"
+      "name": "Makam Teorisi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SES 211",
-      "name": "THM Repertuvarı III"
+      "name": "THM Repertuvarı III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 203",
-      "name": "Ağız ve Hançere Teknikleri I"
+      "name": "Ağız ve Hançere Teknikleri I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 213",
-      "name": "Ses Eğitimi III"
+      "name": "Ses Eğitimi III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 209",
-      "name": "Korrepetisyon III"
+      "name": "Korrepetisyon III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 0.5,
+      "ects": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CAB 277",
-      "name": "Piyano III"
+      "name": "Piyano III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 221",
-      "name": "Koro I (Kredisiz)"
+      "name": "Koro I (Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 205",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Çalgı III (MT)",
+      "groupId": "6983",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 255",
@@ -233,54 +413,106 @@
     {
      "course": {
       "code": "MTR 234",
-      "name": "Müzik Teorisi IV"
+      "name": "Müzik Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTR 232",
-      "name": "Makam Teorisi IV"
+      "name": "Makam Teorisi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "SES 212",
-      "name": "TSM Repertuvarı IV"
+      "name": "TSM Repertuvarı IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 214",
-      "name": "Ses Eğitimi IV"
+      "name": "Ses Eğitimi IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 204",
-      "name": "Ağız ve Hançere Teknikleri II"
+      "name": "Ağız ve Hançere Teknikleri II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "CAB 278",
-      "name": "Piyano IV"
+      "name": "Piyano IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 222",
-      "name": "Koro II (Kredisiz)"
+      "name": "Koro II (Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 206",
-      "name": "English IV"
+      "name": "English IV",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Çalgı IV (MT)",
+      "groupId": "6987",
+      "credits": "1",
+      "ects": [
+       2
+      ],
       "options": [
        {
         "code": "CAB 256",
@@ -296,7 +528,13 @@
     {
      "course": {
       "code": "SES 210",
-      "name": "Korrepetisyon IV"
+      "name": "Korrepetisyon IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 0.5,
+      "ects": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     }
    ]
@@ -307,48 +545,94 @@
     {
      "course": {
       "code": "SES 311",
-      "name": "THM Repertuvarı V"
+      "name": "THM Repertuvarı V",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 307",
-      "name": "Yöre Ağızları I"
+      "name": "Yöre Ağızları I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTR 431",
-      "name": "Dikte Deşifre I"
+      "name": "Dikte Deşifre I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUZ 121",
-      "name": "Müzik Tarihi I"
+      "name": "Müzik Tarihi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTR 317",
-      "name": "Müzik Metin Çözümlemeleri I"
+      "name": "Müzik Metin Çözümlemeleri I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 305",
-      "name": "Resital 1"
+      "name": "Resital 1",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 0.5,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 321",
-      "name": "Koro III (Kredisiz)"
+      "name": "Koro III (Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5.yy. Seçime Bağlı Ders I (MT)",
+      "groupId": "6993",
+      "credits": "1",
+      "ects": [
+       0,
+       2
+      ],
       "options": [
        {
         "code": "CAB 185",
@@ -376,6 +660,12 @@
     {
      "elective": {
       "title": "5.yy. Seçime Bağlı Ders II(MT)",
+      "groupId": "6994",
+      "credits": "2",
+      "ects": [
+       0,
+       3
+      ],
       "options": [
        {
         "code": "KMP 193",
@@ -407,6 +697,11 @@
     {
      "elective": {
       "title": "5.yy. Seçime Bağlı Ders (ITB)",
+      "groupId": "6995",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -755,6 +1050,12 @@
     {
      "elective": {
       "title": "6.yy. Seçime Bağlı Ders I (MT)",
+      "groupId": "7001",
+      "credits": "1",
+      "ects": [
+       0,
+       2
+      ],
       "options": [
        {
         "code": "CAB 186",
@@ -782,6 +1083,11 @@
     {
      "elective": {
       "title": "6.yy. Seçime Bağlı Ders II(MT)",
+      "groupId": "7002",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "KMP 194",
@@ -817,6 +1123,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders(ITB)",
+      "groupId": "7003",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1160,43 +1471,83 @@
     {
      "course": {
       "code": "SES 312",
-      "name": "THM Repertuvarı VI"
+      "name": "THM Repertuvarı VI",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 308",
-      "name": "Yöre Ağızları II"
+      "name": "Yöre Ağızları II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTR 432",
-      "name": "Dikte Deşifre II"
+      "name": "Dikte Deşifre II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUZ 122",
-      "name": "Müzik Tarihi II"
+      "name": "Müzik Tarihi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MTR 318",
-      "name": "Müzikte Metin Çözümlemeleri II"
+      "name": "Müzikte Metin Çözümlemeleri II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 306",
-      "name": "Resital 2"
+      "name": "Resital 2",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 0.5,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 322",
-      "name": "Koro IV(Kredisiz)"
+      "name": "Koro IV(Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 4,
+      "type": "TM"
      }
     }
    ]
@@ -1207,6 +1558,12 @@
     {
      "elective": {
       "title": "7.yy. Seçime Bağlı Ders I (MT)",
+      "groupId": "7008",
+      "credits": "1",
+      "ects": [
+       0,
+       2
+      ],
       "options": [
        {
         "code": "CAB 285",
@@ -1234,6 +1591,11 @@
     {
      "elective": {
       "title": "7.yy. Seçime Bağlı Ders (ITB)",
+      "groupId": "7009",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -1577,6 +1939,11 @@
     {
      "elective": {
       "title": "7.yy. Seçime Bağlı Ders II(MT)",
+      "groupId": "7010",
+      "credits": "2",
+      "ects": [
+       3
+      ],
       "options": [
        {
         "code": "KMP 195",
@@ -1604,43 +1971,84 @@
     {
      "course": {
       "code": "SES 411",
-      "name": "THM Repertuvarı VII"
+      "name": "THM Repertuvarı VII",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 407",
-      "name": "Yöre Ağızları III"
+      "name": "Yöre Ağızları III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 423",
-      "name": "Yrd. Repertuvar I (TSM)"
+      "name": "Yrd. Repertuvar I (TSM)",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 103",
-      "name": "Atatürk İlke ve Ink.Tarihi"
+      "name": "Atatürk İlke ve Ink.Tarihi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4,
+      "theory": 4,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "SES 427",
-      "name": "Sahne Bilgisi ve Jest Mimik"
+      "name": "Sahne Bilgisi ve Jest Mimik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 405",
-      "name": "Resital III"
+      "name": "Resital III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 0.5,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "SES 421",
-      "name": "Koro V (Kredisiz)"
+      "name": "Koro V (Kredisiz)",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     }
    ]
@@ -1651,30 +2059,60 @@
     {
      "course": {
       "code": "SES 412",
-      "name": "THM RepertuvarıVIII"
+      "name": "THM RepertuvarıVIII",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 408",
-      "name": "Yöre Ağızları IV"
+      "name": "Yöre Ağızları IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 424",
-      "name": "Yrd. Repertuvar II (TSM)"
+      "name": "Yrd. Repertuvar II (TSM)",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MUZ 446",
-      "name": "Dünya Vokal Kültürleri"
+      "name": "Dünya Vokal Kültürleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy. Seçime Bağlı Ders I (MT)",
+      "groupId": "7015",
+      "credits": "1",
+      "ects": [
+       0,
+       2
+      ],
       "options": [
        {
         "code": "CAB 286",
@@ -1702,6 +2140,11 @@
     {
      "elective": {
       "title": "8.yy. Seçime Bağlı Ders (ITB)",
+      "groupId": "7016",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -2045,18 +2488,36 @@
     {
      "course": {
       "code": "SES 406",
-      "name": "Resital IV"
+      "name": "Resital IV",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 0.5,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "SES 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy. Seçime Bağlı Ders II(MT)",
+      "groupId": "7017",
+      "credits": "2",
+      "ects": [
+       0,
+       2,
+       3
+      ],
       "options": [
        {
         "code": "KMP 196",

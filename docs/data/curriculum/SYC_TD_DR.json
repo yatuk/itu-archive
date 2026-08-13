@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "DR",
  "planLabel": "Siyasal ve Toplumsal Düşünceler (%100 İngilizce) Doktora Programı 2022-2023 / Bahar Dönemi Sonrası",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Siyasal ve Toplumsal Düşünceler (İngilizce) Doktora",
@@ -11,48 +13,70 @@
     {
      "course": {
       "code": "STD",
-      "name": "Tez çalışması"
+      "name": "Tez çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 150,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "STD YET",
-      "name": "Yeterlik Aşaması"
+      "name": "Yeterlik Aşaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 30,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "STD 696E",
-      "name": "Scientific Research, Ethics and Seminar"
+      "name": "Scientific Research, Ethics and Seminar",
+      "language": "English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi I",
+      "groupId": "10987",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi II",
+      "groupId": "10988",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi III",
+      "groupId": "10989",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi IV",
+      "groupId": "10990",
       "options": null
      }
     },
     {
      "elective": {
       "title": "LEE Seçmeli Dersi",
+      "groupId": "10991",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "LEE 901E",
@@ -88,18 +112,21 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "10992",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "10993",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "10994",
       "options": null
      }
     }

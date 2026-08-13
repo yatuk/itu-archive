@@ -4,6 +4,8 @@
  "faculty": "Mimarlık Fakültesi",
  "level": "LS",
  "planLabel": "İç Mimarlık Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "127,50",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,37 +13,76 @@
     {
      "course": {
       "code": "TES 112E",
-      "name": "Vis.Comm.I:Visualiz.&Tch.Drw."
+      "name": "Vis.Comm.I:Visualiz.&Tch.Drw.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TES 111E",
-      "name": "Project I"
+      "name": "Project I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 113E",
-      "name": "Basic Design and Visual Arts"
+      "name": "Basic Design and Visual Arts",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 119E",
-      "name": "Int.to Interior Archit.&Ethics"
+      "name": "Int.to Interior Archit.&Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -52,43 +93,89 @@
     {
      "course": {
       "code": "MIM 106",
-      "name": "Yapı Mekaniği"
+      "name": "Yapı Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 104",
-      "name": "İç Mimarlıkta Tarih ve Kuram I"
+      "name": "İç Mimarlıkta Tarih ve Kuram I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 121E",
-      "name": "Project II"
+      "name": "Project II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 122E",
-      "name": "Vis.CommII:Visualization&Persp"
+      "name": "Vis.CommII:Visualization&Persp",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -99,31 +186,65 @@
     {
      "course": {
       "code": "MIM 203E",
-      "name": "Building and Const inArch."
+      "name": "Building and Const inArch.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "ICM 204",
-      "name": "İç Mimarlıkta Tarih & Kuram II"
+      "name": "İç Mimarlıkta Tarih & Kuram II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 209E",
-      "name": "Inter.Arch.Design Fund.Studio"
+      "name": "Inter.Arch.Design Fund.Studio",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 233",
-      "name": "Yapı Malzemesi"
+      "name": "Yapı Malzemesi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     }
    ]
@@ -134,30 +255,62 @@
     {
      "course": {
       "code": "MIM 246E",
-      "name": "Environmental Control Studio"
+      "name": "Environmental Control Studio",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 246 ICM 246E",
-      "name": "İç Mimarlık Projesi I"
+      "name": "İç Mimarlık Projesi I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 11,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 205",
-      "name": "İç Mimarlıkta Tarih &Kuram III"
+      "name": "İç Mimarlıkta Tarih &Kuram III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 206E",
-      "name": "Surv andRepr.Tch.in Intr.Arch."
+      "name": "Surv andRepr.Tch.in Intr.Arch.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Elective Course (ITB)",
+      "groupId": "8397",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ICM 4018E",
@@ -326,37 +479,76 @@
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ICM 349 ICM 349E",
-      "name": "Iç Mimarlık Projesi II"
+      "name": "Iç Mimarlık Projesi II",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 11,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 219",
-      "name": "Tasarım Araştırmalarına Giriş"
+      "name": "Tasarım Araştırmalarına Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 351E",
-      "name": "Space And Furniture"
+      "name": "Space And Furniture",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 355E",
-      "name": "Invstg.Colr&Light in Int.Arch"
+      "name": "Invstg.Colr&Light in Int.Arch",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -367,30 +559,61 @@
     {
      "course": {
       "code": "ICM 374",
-      "name": "Meslek Pratiği"
+      "name": "Meslek Pratiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 366E",
-      "name": "Interior Arch.Desgn Studio III"
+      "name": "Interior Arch.Desgn Studio III",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 11,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 368E",
-      "name": "Dsgn Prins of Intr. Fins. Sys"
+      "name": "Dsgn Prins of Intr. Fins. Sys",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Course I (MT)",
+      "groupId": "8838",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 324E",
@@ -674,6 +897,11 @@
     {
      "elective": {
       "title": "Elective Course II (MT)",
+      "groupId": "8839",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 324E",
@@ -966,24 +1194,48 @@
     {
      "course": {
       "code": "ICM 449 ICM 449E",
-      "name": "İç Mimarlık Projesi IV"
+      "name": "İç Mimarlık Projesi IV",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 11,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 447E",
-      "name": "Prdgms&Cse Std in Adpt.Re-Use"
+      "name": "Prdgms&Cse Std in Adpt.Re-Use",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 7,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Course I (MT)",
+      "groupId": "8840",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 354E",
@@ -1231,6 +1483,11 @@
     {
      "elective": {
       "title": "Elective Course II (ITB)",
+      "groupId": "8841",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1678,6 +1935,11 @@
     {
      "elective": {
       "title": "Elective Course III (MT)",
+      "groupId": "8842",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 354E",
@@ -1930,24 +2192,48 @@
     {
      "course": {
       "code": "ICM 4902 ICM 4902E",
-      "name": "Diploma Projesi"
+      "name": "Diploma Projesi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 14,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ICM 408E",
-      "name": "Comm Design In Interior Arch."
+      "name": "Comm Design In Interior Arch.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Course I (MT)",
+      "groupId": "8843",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 354E",
@@ -2163,6 +2449,11 @@
     {
      "elective": {
       "title": "Elective Course II (ITB)",
+      "groupId": "8844",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",

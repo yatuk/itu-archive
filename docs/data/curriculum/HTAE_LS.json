@@ -4,6 +4,8 @@
  "faculty": "İnşaat Fakültesi",
  "level": "LS",
  "planLabel": "Harita Mühendisliği Lisans Programı (%100 İngilizce) 2024-2025 / Güz Dönemi Sonrası",
+ "totalCredits": "132,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,101 @@
     {
      "course": {
       "code": "GEO 101E",
-      "name": "Intro. to Info. Technologies"
+      "name": "Intro. to Info. Technologies",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 103E",
-      "name": "Fundamentals of Surveying"
+      "name": "Fundamentals of Surveying",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 109E",
-      "name": "Analy. Geom. and Vect. Algeb."
+      "name": "Analy. Geom. and Vect. Algeb.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 111E",
-      "name": "Intro. to Geomat. Eng.&Ethics"
+      "name": "Intro. to Geomat. Eng.&Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -64,43 +118,88 @@
     {
      "course": {
       "code": "GEO 108E",
-      "name": "Fundamentals of Programming"
+      "name": "Fundamentals of Programming",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 114E",
-      "name": "Terr. Surv. Equip. and Soft."
+      "name": "Terr. Surv. Equip. and Soft.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -111,49 +210,102 @@
     {
      "course": {
       "code": "GEO 201E",
-      "name": "Cartography I"
+      "name": "Cartography I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 209E",
-      "name": "Real Estate's Law"
+      "name": "Real Estate's Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "GEO 213E",
-      "name": "Positioning Method and Systems"
+      "name": "Positioning Method and Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 220E",
-      "name": "Mathematics for Geomatics Eng."
+      "name": "Mathematics for Geomatics Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 221E",
-      "name": "Num. Meth. for Geomatics Eng."
+      "name": "Num. Meth. for Geomatics Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 225E",
-      "name": "Prob.and Stat. for Geom. Eng."
+      "name": "Prob.and Stat. for Geom. Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 227E",
-      "name": "Labor Law,Occupati.Health&Saf."
+      "name": "Labor Law,Occupati.Health&Saf.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -164,49 +316,103 @@
     {
      "course": {
       "code": "GEO 204E",
-      "name": "Th.of Err. And Ad. C."
+      "name": "Th.of Err. And Ad. C.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 208E",
-      "name": "Remote Sensing I"
+      "name": "Remote Sensing I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 210E",
-      "name": "Fundamentals of Levelling"
+      "name": "Fundamentals of Levelling",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 212E",
-      "name": "Engineering Surveying"
+      "name": "Engineering Surveying",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 216E",
-      "name": "Computer Aided Map Design"
+      "name": "Computer Aided Map Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 292E",
-      "name": "Geomatics Project 10"
+      "name": "Geomatics Project 10",
+      "language": "English",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 10,
+      "theory": 3,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 325E",
-      "name": "Databases in Engineering"
+      "name": "Databases in Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 327E",
-      "name": "Terrain Modelling"
+      "name": "Terrain Modelling",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     }
    ]
@@ -217,49 +423,101 @@
     {
      "course": {
       "code": "GEO 203E",
-      "name": "Coordinate Sys. and Geodesy I"
+      "name": "Coordinate Sys. and Geodesy I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 303E",
-      "name": "Cadastre"
+      "name": "Cadastre",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 307E",
-      "name": "Cartography II"
+      "name": "Cartography II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "GEO 309E",
-      "name": "Photogrammetry I"
+      "name": "Photogrammetry I",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 311E",
-      "name": "Geodetic Infrast. and Network"
+      "name": "Geodetic Infrast. and Network",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 313E",
-      "name": "Digital Image Processing"
+      "name": "Digital Image Processing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 315E",
-      "name": "Fund. of Geographic Inf. Sys."
+      "name": "Fund. of Geographic Inf. Sys.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 321E",
-      "name": "Special Surveying Applications"
+      "name": "Special Surveying Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     }
    ]
@@ -270,48 +528,101 @@
     {
      "course": {
       "code": "GEO 306E",
-      "name": "Photogrammetry II"
+      "name": "Photogrammetry II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 308E",
-      "name": "Real Estate Valuation"
+      "name": "Real Estate Valuation",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 310E",
-      "name": "Remote Sensing II"
+      "name": "Remote Sensing II",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 312E",
-      "name": "Spatial Analy. and Alg.in GIS"
+      "name": "Spatial Analy. and Alg.in GIS",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 314E",
-      "name": "Geodesy II and Projections"
+      "name": "Geodesy II and Projections",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 3.5,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 322E",
-      "name": "Land Management"
+      "name": "Land Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2.5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 392E",
-      "name": "Geomatics Project 20"
+      "name": "Geomatics Project 20",
+      "language": "English",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 10,
+      "theory": 3,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6th Smster Electv Course(ITB)",
+      "groupId": "11674",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -800,36 +1111,71 @@
     {
      "course": {
       "code": "GEO 401E",
-      "name": "Physical Geodesy"
+      "name": "Physical Geodesy",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "GEO 403E",
-      "name": "GIS Projects"
+      "name": "GIS Projects",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "GEO 4901E",
-      "name": "Geomatics Eng. Design I"
+      "name": "Geomatics Eng. Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 1,
+      "lab": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Courses III(MT)",
+      "groupId": "11677",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 411E",
@@ -945,6 +1291,11 @@
     {
      "elective": {
       "title": "Elective Courses I(TM)",
+      "groupId": "11675",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 456E",
@@ -964,6 +1315,11 @@
     {
      "elective": {
       "title": "Elective Courses II(TB)",
+      "groupId": "11676",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 413E",
@@ -992,24 +1348,46 @@
     {
      "course": {
       "code": "GEO 4902E",
-      "name": "Geomatics Eng. Design II"
+      "name": "Geomatics Eng. Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "lab": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Courses IV (MT)",
+      "groupId": "11678",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 411E",
@@ -1125,6 +1503,11 @@
     {
      "elective": {
       "title": "Elective Courses V (MT)",
+      "groupId": "11679",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 411E",
@@ -1240,6 +1623,11 @@
     {
      "elective": {
       "title": "Elective Courses VI (MT)",
+      "groupId": "11680",
+      "credits": "2",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GEO 411E",

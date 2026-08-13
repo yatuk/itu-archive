@@ -33,7 +33,7 @@
 <meta name="twitter:description" content="İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi.">
 <meta name="twitter:image" content="https://itu-ders.com/glitch_effect.gif">
 
-<link rel="stylesheet" href="assets/style.css?v=d20fd2c">
+<link rel="stylesheet" href="assets/style.css?v=9392bc226">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -149,8 +149,9 @@
  <button role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar" data-i18n="tabSinavlar">04 · SINAVLAR</button>
  <button role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" data-i18n="tabTakvim">05 · AKADEMİK TAKVİM</button>
  <button role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" data-i18n="tabDonemler">06 · DÖNEMLER</button>
- <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">07 · PROGRAM</button>
- <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">08 · HAKKINDA</button>
+ <button role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" data-i18n="tabDersplanim">07 · DERS PLANIM</button>
+ <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">08 · PROGRAM</button>
+ <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">09 · HAKKINDA</button>
 </nav>
 
 <main class="wrap">
@@ -187,6 +188,7 @@
      <label>alabilen program <select id="f-program"><option value="">hepsi</option></select></label>
      <label>ders kodu <input id="f-code" type="text" class="f-in" placeholder="BLG 101" spellcheck="false" aria-label="Ders koduna göre filtrele"></label>
      <label class="check"><input type="checkbox" id="f-open"> yalnızca kontenjanı olanlar</label>
+     <label class="check"><input type="checkbox" id="f-taken"> aldıklarımı gizle</label>
     </div>
     <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir">CSV indir</button>
     <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle">zaman çizelgesi</button>
@@ -329,6 +331,10 @@
    bazı alanlar eksik olabilir. <strong>2024-2025 Güz</strong> hiçbir kaynakta bulunmuyor.
   </p>
   <div id="terms"></div>
+ </section>
+
+ <section id="view-dersplanim" class="view" role="tabpanel" aria-labelledby="tab-dersplanim" hidden>
+  <div id="dp-root"><!-- views/dersplanim.js ile doldurulur --></div>
  </section>
 
  <section id="view-program" class="view" role="tabpanel" aria-labelledby="tab-program" hidden>
@@ -523,6 +529,6 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
-<script type="module" src="assets/app.js?v=d20fd2c"></script>
+<script type="module" src="assets/app.js?v=9392bc226"></script>
 </body>
 </html>

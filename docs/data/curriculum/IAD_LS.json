@@ -4,6 +4,8 @@
  "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
  "level": "LS",
  "planLabel": "İç Mimarlık Lisans Programı (%100 İngilizce) (KKTC) 2022-2023 / Güz Dönemi Sonrası",
+ "totalCredits": "127,50",
+ "totalEcts": "240,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,37 +13,76 @@
     {
      "course": {
       "code": "TES 112E",
-      "name": "Vis.Comm.I:Visualiz.&Tch.Drw."
+      "name": "Vis.Comm.I:Visualiz.&Tch.Drw.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TES 111E",
-      "name": "Project I"
+      "name": "Project I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 113E",
-      "name": "Basic Design and Visual Arts"
+      "name": "Basic Design and Visual Arts",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "IAD 119E",
-      "name": "Int.to Interior Archit.&Ethics"
+      "name": "Int.to Interior Archit.&Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -52,43 +93,89 @@
     {
      "course": {
       "code": "ARC 106E",
-      "name": "Structural Mechanics"
+      "name": "Structural Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 104E",
-      "name": "History&Theo.in Inte. Archit.I"
+      "name": "History&Theo.in Inte. Archit.I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 121E",
-      "name": "Project II"
+      "name": "Project II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 122E",
-      "name": "Vis.CommII:Visualization&Persp"
+      "name": "Vis.CommII:Visualization&Persp",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102E",
-      "name": "Entrepreneurship and Career Advising"
+      "name": "Entrepreneurship and Career Advising",
+      "language": "English",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -99,31 +186,65 @@
     {
      "course": {
       "code": "ARC 203E",
-      "name": "Building and Const inArch."
+      "name": "Building and Const inArch.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "IAD 204E",
-      "name": "History&Theo.in Inte.Archit.II"
+      "name": "History&Theo.in Inte.Archit.II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 209E",
-      "name": "Inter.Arch.Design Fund.Studio"
+      "name": "Inter.Arch.Design Fund.Studio",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 233E",
-      "name": "Building Materials"
+      "name": "Building Materials",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     }
    ]
@@ -134,30 +255,62 @@
     {
      "course": {
       "code": "ARC 246E",
-      "name": "Environmental Control Studio"
+      "name": "Environmental Control Studio",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 246E",
-      "name": "Interior Arch. Design Studio I"
+      "name": "Interior Arch. Design Studio I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 11,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 205E",
-      "name": "History&Theo.inInte.Archit.III"
+      "name": "History&Theo.inInte.Archit.III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 206E",
-      "name": "Surv andRepr.Tch.in Intr.Arch."
+      "name": "Surv andRepr.Tch.in Intr.Arch.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Elective Course (ITB)",
+      "groupId": "8768",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ICM 4018E",
@@ -234,37 +387,76 @@
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "IAD 349E",
-      "name": "Interior Arch.Design Studio II"
+      "name": "Interior Arch.Design Studio II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 11,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 219E",
-      "name": "Intr. to Research in Design"
+      "name": "Intr. to Research in Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 351E",
-      "name": "Space And Furniture"
+      "name": "Space And Furniture",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 355E",
-      "name": "Invstg.Colr&Light in Int.Arch"
+      "name": "Invstg.Colr&Light in Int.Arch",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -275,30 +467,62 @@
     {
      "course": {
       "code": "IAD 374E",
-      "name": "Profesional Practice"
+      "name": "Profesional Practice",
+      "language": "English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 366E",
-      "name": "Interior Arch.Desgn Studio III"
+      "name": "Interior Arch.Desgn Studio III",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 11,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 368E",
-      "name": "Dsgn Prins of Intr. Fins. Sys"
+      "name": "Dsgn Prins of Intr. Fins. Sys",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Course I (MT)",
+      "groupId": "8769",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ICM 101E",
@@ -418,6 +642,12 @@
     {
      "elective": {
       "title": "Elective Course II (MT)",
+      "groupId": "8770",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ICM 101E",
@@ -542,24 +772,49 @@
     {
      "course": {
       "code": "IAD 449E",
-      "name": "Interior Arch.Desgn Studio IV"
+      "name": "Interior Arch.Desgn Studio IV",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 11,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 447E",
-      "name": "Prdgms&Cse Std in Adpt.Re-Use"
+      "name": "Prdgms&Cse Std in Adpt.Re-Use",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 7,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Course I (MT)",
+      "groupId": "8771",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ICM 101E",
@@ -679,6 +934,12 @@
     {
      "elective": {
       "title": "Elective Course II (ITB)",
+      "groupId": "8772",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1094,6 +1355,12 @@
     {
      "elective": {
       "title": "Elective Course III (MT)",
+      "groupId": "8773",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ICM 101E",
@@ -1218,24 +1485,49 @@
     {
      "course": {
       "code": "IAD 4902E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 14,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "IAD 408E",
-      "name": "Comm Design In Interior Arch."
+      "name": "Comm Design In Interior Arch.",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Elective Course I (MT)",
+      "groupId": "8774",
+      "credits": "2 / 3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "ICM 101E",
@@ -1355,6 +1647,11 @@
     {
      "elective": {
       "title": "Elective Course II (ITB)",
+      "groupId": "8775",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",

@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "İşletme Tezsiz Yüksek Lisans Programı",
+ "totalCredits": "33,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "İşletme Tezsiz Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "ISS 598 ISS 598E",
-      "name": "Proje"
+      "name": "Proje",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "ISS 596",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "10074",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -90,6 +106,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "10075",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -157,6 +178,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "10076",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -224,6 +250,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "10077",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -291,6 +322,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders V",
+      "groupId": "10078",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -358,6 +394,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "10079",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -509,6 +550,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "10080",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -656,6 +702,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "10081",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -807,6 +858,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "10082",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 501",
@@ -954,6 +1010,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders V",
+      "groupId": "10083",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",
@@ -1105,6 +1166,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders VI",
+      "groupId": "10084",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "ISS 500E",

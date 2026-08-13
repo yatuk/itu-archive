@@ -4,6 +4,8 @@
  "faculty": "Fen - Edebiyat Fakültesi",
  "level": "LS",
  "planLabel": "Moleküler Biyoloji ve Genetik Lisans Programı 2009-2010 / Güz Dönemi Sonrası",
+ "totalCredits": "149,00",
+ "totalEcts": "239,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,54 +13,109 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIO 111",
-      "name": "Genel Biyoloji I"
+      "name": "Genel Biyoloji I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101L",
-      "name": "Genel Kimya I Laboratuvarı"
+      "name": "Genel Kimya I Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "21",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -79,48 +136,99 @@
     {
      "course": {
       "code": "KIM 203",
-      "name": "Analitik Kimya"
+      "name": "Analitik Kimya",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIO 112",
-      "name": "Genel Biyoloji II"
+      "name": "Genel Biyoloji II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 4,
+      "theory": 3,
+      "lab": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 108E",
-      "name": "Intr. to Sci. & Eng.Computing"
+      "name": "Intr. to Sci. & Eng.Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "31",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -185,31 +293,62 @@
     {
      "course": {
       "code": "BIO 211E",
-      "name": "Cell Biology"
+      "name": "Cell Biology",
+      "language": "English",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 12,
+      "theory": 3,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 201",
-      "name": "Diferansiyel Denklemler"
+      "name": "Diferansiyel Denklemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 202",
-      "name": "Fiziksel Kimya"
+      "name": "Fiziksel Kimya",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KIM 303",
-      "name": "Organik Kimya I"
+      "name": "Organik Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TB"
      }
     }
    ]
@@ -220,43 +359,86 @@
     {
      "course": {
       "code": "BIO 222",
-      "name": "Sistematik Biyoloji"
+      "name": "Sistematik Biyoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 261",
-      "name": "Lineer Cebir"
+      "name": "Lineer Cebir",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 271",
-      "name": "Olasılık ve İstatistik"
+      "name": "Olasılık ve İstatistik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "BIO 321",
-      "name": "Mikrobiyoloji"
+      "name": "Mikrobiyoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 8,
+      "theory": 3,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "KIM 304",
-      "name": "Organik Kimya II"
+      "name": "Organik Kimya II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "TB"
      }
     }
    ]
@@ -267,37 +449,75 @@
     {
      "course": {
       "code": "BIO 351",
-      "name": "Biyofizik"
+      "name": "Biyofizik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 311",
-      "name": "Biyokimya I"
+      "name": "Biyokimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 7,
+      "theory": 3,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 341",
-      "name": "Genel Biyoteknoloji"
+      "name": "Genel Biyoteknoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIO 221",
-      "name": "Ekoloji"
+      "name": "Ekoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 322",
-      "name": "Fizyoloji"
+      "name": "Fizyoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 212",
-      "name": "Genetik"
+      "name": "Genetik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     }
    ]
@@ -308,24 +528,49 @@
     {
      "course": {
       "code": "BIO 312",
-      "name": "Biyokimya II"
+      "name": "Biyokimya II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4.5,
+      "ects": 7,
+      "theory": 3,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 332E",
-      "name": "Modern Techniques in Biology"
+      "name": "Modern Techniques in Biology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIO 331E",
-      "name": "Molecular Genetics"
+      "name": "Molecular Genetics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 2,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Elective Course(ITB)",
+      "groupId": "37",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 102E",
@@ -405,6 +650,11 @@
     {
      "elective": {
       "title": "6.yy Techn. Elect.Course(MT)",
+      "groupId": "38",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "BIO 342E",
@@ -429,18 +679,37 @@
     {
      "course": {
       "code": "BIO 411",
-      "name": "Moleküler Biyoloji"
+      "name": "Moleküler Biyoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 5.5,
+      "ects": 9,
+      "theory": 4,
+      "lab": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIO 491",
-      "name": "Moleküler Biyoteknoloji"
+      "name": "Moleküler Biyoteknoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Limited Elect.Course(MT)",
+      "groupId": "45",
+      "credits": "3",
+      "ects": [
+       6,
+       7
+      ],
       "options": [
        {
         "code": "BIO 412E",
@@ -468,6 +737,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders(ITB)",
+      "groupId": "46",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -803,6 +1077,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders(MT)",
+      "groupId": "47",
+      "credits": "3",
+      "ects": [
+       7
+      ],
       "options": [
        {
         "code": "BIO 442",
@@ -835,18 +1114,35 @@
     {
      "course": {
       "code": "BIO 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 11,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "HUK 201",
-      "name": "İş Hukuku"
+      "name": "İş Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8.yy Techn.Elect.Course(MT)",
+      "groupId": "54",
+      "credits": "3",
+      "ects": [
+       6
+      ],
       "options": [
        {
         "code": "BIO 342E",
@@ -870,6 +1166,11 @@
     {
      "elective": {
       "title": "8.yy Elective Course(ITB)",
+      "groupId": "55",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -1065,6 +1366,14 @@
     {
      "elective": {
       "title": "8.yy Sınırlı Seçmeli Ders(TM)",
+      "groupId": "56",
+      "credits": "2 / 3",
+      "ects": [
+       0,
+       3,
+       4,
+       6
+      ],
       "options": [
        {
         "code": "BIO 421E",

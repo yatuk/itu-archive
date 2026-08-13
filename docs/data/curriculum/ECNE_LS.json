@@ -4,6 +4,8 @@
  "faculty": "İşletme Fakültesi",
  "level": "LS",
  "planLabel": "Ekonomi Lisans Programı (%100 İngilizce) 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "120,50",
+ "totalEcts": "243,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,48 +13,96 @@
     {
      "course": {
       "code": "ECN 105E",
-      "name": "Principles of Microeconomics"
+      "name": "Principles of Microeconomics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ECN 103E",
-      "name": "Markets and Ethics"
+      "name": "Markets and Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "Humanities Elective",
+      "groupId": "8370",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -465,42 +515,85 @@
     {
      "course": {
       "code": "ECN 102E",
-      "name": "Principles of Macroeconomics"
+      "name": "Principles of Macroeconomics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 7.5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Humanities Elective",
+      "groupId": "8371",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -693,30 +786,62 @@
     {
      "course": {
       "code": "ECN 211E",
-      "name": "Statistical Meth. in Economics"
+      "name": "Statistical Meth. in Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 9,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ECN 201E",
-      "name": "Intermediate Microeconomics"
+      "name": "Intermediate Microeconomics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "ECN 207E",
-      "name": "Mathematical Economics"
+      "name": "Mathematical Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "EB"
      }
     },
     {
      "elective": {
       "title": "Arts and Humanities Elective",
+      "groupId": "8372",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -973,36 +1098,71 @@
     {
      "course": {
       "code": "ECN 208E",
-      "name": "Public Economics"
+      "name": "Public Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 202E",
-      "name": "Intermediate Macroeconomics"
+      "name": "Intermediate Macroeconomics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 8,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 210E",
-      "name": "Financial Accounting"
+      "name": "Financial Accounting",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "ISL 364E",
-      "name": "Business Law"
+      "name": "Business Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "elective": {
       "title": "Arts and Humanities Elective",
+      "groupId": "8373",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -1267,31 +1427,62 @@
     {
      "course": {
       "code": "ECN 301E",
-      "name": "Econometrics I"
+      "name": "Econometrics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 8,
+      "theory": 3,
+      "lab": 1,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 303E",
-      "name": "Development Economics"
+      "name": "Development Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 305E",
-      "name": "Industrial Organisation"
+      "name": "Industrial Organisation",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 311E",
-      "name": "International Trade"
+      "name": "International Trade",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 309E",
-      "name": "Money, Banking&Financial Mark."
+      "name": "Money, Banking&Financial Mark.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     }
    ]
@@ -1302,31 +1493,62 @@
     {
      "course": {
       "code": "ECN 302E",
-      "name": "Econometrics II"
+      "name": "Econometrics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 8,
+      "theory": 3,
+      "lab": 1,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 314E",
-      "name": "Financial Economics"
+      "name": "Financial Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 308E",
-      "name": "Competition Law and Policy"
+      "name": "Competition Law and Policy",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 312E",
-      "name": "International Finance"
+      "name": "International Finance",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "course": {
       "code": "ECN 432E",
-      "name": "Labor Economics"
+      "name": "Labor Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     }
    ]
@@ -1337,12 +1559,26 @@
     {
      "course": {
       "code": "ECN 401E",
-      "name": "Turkish Economy"
+      "name": "Turkish Economy",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "EB"
      }
     },
     {
      "elective": {
       "title": "Quant.Analy.&Dec.Mak.Elec.I",
+      "groupId": "8374",
+      "credits": "3 / 4",
+      "ects": [
+       4,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "BHB 201E",
@@ -1430,6 +1666,14 @@
     {
      "elective": {
       "title": "Sectoral&Regulations Elect. I",
+      "groupId": "8375",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "ECN 410E",
@@ -1513,6 +1757,14 @@
     {
      "elective": {
       "title": "Sectoral&Regulations Elect. II",
+      "groupId": "8376",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "ECN 410E",
@@ -1601,12 +1853,27 @@
     {
      "course": {
       "code": "ECN 4902E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7.5,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "EB"
      }
     },
     {
      "elective": {
       "title": "Sectoral&Regulat. Elect. III",
+      "groupId": "8377",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "ECN 410E",
@@ -1690,6 +1957,14 @@
     {
      "elective": {
       "title": "Quant.Analy.&Dec.Mak.Elec.II",
+      "groupId": "8378",
+      "credits": "3 / 4",
+      "ects": [
+       4,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "BHB 201E",
@@ -1777,6 +2052,14 @@
     {
      "elective": {
       "title": "Sectoral&Regulations Elect. IV",
+      "groupId": "8379",
+      "credits": "3",
+      "ects": [
+       4,
+       5,
+       5.5,
+       6
+      ],
       "options": [
        {
         "code": "ECN 410E",

@@ -4,6 +4,8 @@
  "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
  "level": "LS",
  "planLabel": "Denizcilik İşletmeleri Yönetimi Lisans Programı (%100 İngilizce) (KKTC) 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "139,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,97 @@
     {
      "course": {
       "code": "MMD 233E",
-      "name": "Microeconomics"
+      "name": "Microeconomics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MMD 111E",
-      "name": "Intr. to Business Analytics"
+      "name": "Intr. to Business Analytics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 1,
+      "lab": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "MMD 101E",
-      "name": "Intr.to Maritime Bus.Administ."
+      "name": "Intr.to Maritime Bus.Administ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "MMD 102E",
-      "name": "Ethics for Maritime Business"
+      "name": "Ethics for Maritime Business",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -64,49 +114,99 @@
     {
      "course": {
       "code": "MMD 244E",
-      "name": "Macroeconomics"
+      "name": "Macroeconomics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "DFH 172E",
-      "name": "Maritime English I"
+      "name": "Maritime English I",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "EFN 207E",
-      "name": "Business Law"
+      "name": "Business Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "DUI 103E",
-      "name": "Seamanship"
+      "name": "Seamanship",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "GE"
      }
     }
    ]
@@ -117,43 +217,86 @@
     {
      "course": {
       "code": "MMD 203E",
-      "name": "Research Methods"
+      "name": "Research Methods",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 211E",
-      "name": "Accounting&Financial Stat.Anl."
+      "name": "Accounting&Financial Stat.Anl.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 207E",
-      "name": "Marine Tourism"
+      "name": "Marine Tourism",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 497E",
-      "name": "Org.Mngt &Behavior in Maritime"
+      "name": "Org.Mngt &Behavior in Maritime",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "MMD 209E",
-      "name": "Transportation Planning&Mng."
+      "name": "Transportation Planning&Mng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 213E",
-      "name": "Maritime Policy"
+      "name": "Maritime Policy",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     }
    ]
@@ -164,49 +307,96 @@
     {
      "course": {
       "code": "MMD 204E",
-      "name": "Maritime Law"
+      "name": "Maritime Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 278E",
-      "name": "Maritime Economics"
+      "name": "Maritime Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MMD 424E",
-      "name": "Shipping Law"
+      "name": "Shipping Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "DFH 414E",
-      "name": "Port Management"
+      "name": "Port Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 206E",
-      "name": "Cargo Operations"
+      "name": "Cargo Operations",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 208E",
-      "name": "İnternational Trade Policies"
+      "name": "İnternational Trade Policies",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     }
    ]
@@ -217,42 +407,81 @@
     {
      "course": {
       "code": "DFH 361E",
-      "name": "Ship Supply Chain Management"
+      "name": "Ship Supply Chain Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 353E",
-      "name": "Marketing"
+      "name": "Marketing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 305E",
-      "name": "Operations Research"
+      "name": "Operations Research",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 311E",
-      "name": "Maritime Organiz.&Conv."
+      "name": "Maritime Organiz.&Conv.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 303E",
-      "name": "Practical Training"
+      "name": "Practical Training",
+      "language": "English",
+      "required": "Z",
+      "ects": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 319E",
-      "name": "Yachting and Marina Management"
+      "name": "Yachting and Marina Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Course I (MT)",
+      "groupId": "8730",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MMD 320E",
@@ -301,42 +530,83 @@
     {
      "course": {
       "code": "MMD 302E",
-      "name": "Brokering and Chartering"
+      "name": "Brokering and Chartering",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 304E",
-      "name": "Maritime Insurance Law"
+      "name": "Maritime Insurance Law",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 306E",
-      "name": "Strategic Management"
+      "name": "Strategic Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 318E",
-      "name": "Navigation and Meteorology"
+      "name": "Navigation and Meteorology",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DFH 472E",
-      "name": "Commercial Ship Management"
+      "name": "Commercial Ship Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "MMD 310E",
-      "name": "Logistics Information System"
+      "name": "Logistics Information System",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "GE"
      }
     },
     {
      "elective": {
       "title": "6th Semester Elective Course I (MT)",
+      "groupId": "8731",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MMD 320E",
@@ -385,36 +655,72 @@
     {
      "course": {
       "code": "MMD 411E",
-      "name": "Maritime Business Oper. Manag."
+      "name": "Maritime Business Oper. Manag.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 413E",
-      "name": "Purchasing&Inventory Manag."
+      "name": "Purchasing&Inventory Manag.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 403E",
-      "name": "Custom Operations"
+      "name": "Custom Operations",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 401E",
-      "name": "Shipp.Lines&Freight Forwarding"
+      "name": "Shipp.Lines&Freight Forwarding",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 443E",
-      "name": "Project Design and Managment"
+      "name": "Project Design and Managment",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7th Semester Elective Course I (MT)",
+      "groupId": "8732",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MMD 420E",
@@ -446,6 +752,11 @@
     {
      "elective": {
       "title": "7th Semester Elective Course II (ITB)",
+      "groupId": "8733",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -858,30 +1169,60 @@
     {
      "course": {
       "code": "DFH 226E",
-      "name": "Economic Geography"
+      "name": "Economic Geography",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "GE"
      }
     },
     {
      "course": {
       "code": "MMD 408E",
-      "name": "Graduation Project"
+      "name": "Graduation Project",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 10,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DUI 361E",
-      "name": "Technical Ship Management"
+      "name": "Technical Ship Management",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MMD 404E",
-      "name": "Numerical Anl.forMaritime Adm."
+      "name": "Numerical Anl.forMaritime Adm.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8th Semester Elective Course I (MT)",
+      "groupId": "8734",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "MMD 420E",
@@ -913,6 +1254,11 @@
     {
      "elective": {
       "title": "8th Semester Elective Course II (ITB)",
+      "groupId": "8735",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 103E",

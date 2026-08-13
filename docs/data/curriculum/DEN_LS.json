@@ -4,6 +4,8 @@
  "faculty": "Gemi İnşaatı ve Deniz Bilimleri Fakültesi",
  "level": "LS",
  "planLabel": "Gemi ve Deniz Teknolojisi Mühendisliği Lisans Programı 2026-2027 / Güz Dönemi Sonrası",
+ "totalCredits": "131,50",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,49 +13,98 @@
     {
      "course": {
       "code": "DEN 101",
-      "name": "Gemi&Deniz Tek.Müh.Giriş&Etik"
+      "name": "Gemi&Deniz Tek.Müh.Giriş&Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 100E",
-      "name": "Intr.to Prog.Language(PYTHON)"
+      "name": "Intr.to Prog.Language(PYTHON)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -64,54 +115,107 @@
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 104",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "STA 201",
-      "name": "Statik"
+      "name": "Statik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders (ITB)",
+      "groupId": "13603",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -740,37 +844,73 @@
     {
      "course": {
       "code": "DEN 210E",
-      "name": "Engineering Mathematics"
+      "name": "Engineering Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DNK 201E",
-      "name": "Dynamics"
+      "name": "Dynamics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DEN 213",
-      "name": "Mühendislik Tasarımına Giriş"
+      "name": "Mühendislik Tasarımına Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 202",
-      "name": "Sayısal Yöntemler"
+      "name": "Sayısal Yöntemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MUK 207",
-      "name": "Mukavemet"
+      "name": "Mukavemet",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -781,37 +921,75 @@
     {
      "course": {
       "code": "AKM 204",
-      "name": "Akışkanlar Mekaniği"
+      "name": "Akışkanlar Mekaniği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAL 201E",
-      "name": "Materials Science"
+      "name": "Materials Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DEN 204E",
-      "name": "Data Analysis for Marine Applications"
+      "name": "Data Analysis for Marine Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TER 201",
-      "name": "Termodinamik"
+      "name": "Termodinamik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ELK 226",
-      "name": "Elektrik-Elektronik Müh. Tem."
+      "name": "Elektrik-Elektronik Müh. Tem.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -822,37 +1000,74 @@
     {
      "course": {
       "code": "DEN 323E",
-      "name": "Wave Mechanics"
+      "name": "Wave Mechanics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MYZ 308E",
-      "name": "Artificial Intelligence in Marine Technology"
+      "name": "Artificial Intelligence in Marine Technology",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 309E",
-      "name": "Marine Structural Engineering"
+      "name": "Marine Structural Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 343E",
-      "name": "Sensor Systems for Marine Applications"
+      "name": "Sensor Systems for Marine Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 310E",
-      "name": "Marine Propulsion"
+      "name": "Marine Propulsion",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 340E",
-      "name": "Hydrostatics of Marine Vehic."
+      "name": "Hydrostatics of Marine Vehic.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -863,31 +1078,61 @@
     {
      "course": {
       "code": "DEN 336E",
-      "name": "Marine Energy Conversion Systems"
+      "name": "Marine Energy Conversion Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 302E",
-      "name": "Hydrodynamics of Marine Vehicles"
+      "name": "Hydrodynamics of Marine Vehicles",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 306E",
-      "name": "Marine Design"
+      "name": "Marine Design",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 304E",
-      "name": "Oceanography"
+      "name": "Oceanography",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "DEN 308E",
-      "name": "Stability of Marine Vehicles"
+      "name": "Stability of Marine Vehicles",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 6,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -898,36 +1143,76 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DEN 4901",
-      "name": "Gemi & Dnz. Tek. Müh. Tasarımı I"
+      "name": "Gemi & Dnz. Tek. Müh. Tasarımı I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 332",
-      "name": "Deniz ve İş Hukuku"
+      "name": "Deniz ve İş Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DEN 451",
-      "name": "Gemi ve Oşinografi Lab."
+      "name": "Gemi ve Oşinografi Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "DEN 448E",
-      "name": "Mechanics of Mooring Lines"
+      "name": "Mechanics of Mooring Lines",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "13601",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4,
+       4.5,
+       5,
+       7.5
+      ],
       "options": [
        {
         "code": "DEN 326",
@@ -1051,6 +1336,15 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "13640",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4,
+       4.5,
+       5,
+       7.5
+      ],
       "options": [
        {
         "code": "DEN 326",
@@ -1179,18 +1473,36 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "DEN 4902",
-      "name": "Gemi& Dnz.Tek.Müh. Tasarımı II"
+      "name": "Gemi& Dnz.Tek.Müh. Tasarımı II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (TB)",
+      "groupId": "13641",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4
+      ],
       "options": [
        {
         "code": "DEN 337E",
@@ -1214,6 +1526,12 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (TM)",
+      "groupId": "13642",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4
+      ],
       "options": [
        {
         "code": "DEN 434E",
@@ -1249,6 +1567,15 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders III (MT)",
+      "groupId": "13596",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4,
+       4.5,
+       5,
+       7.5
+      ],
       "options": [
        {
         "code": "DEN 326",
@@ -1372,6 +1699,15 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders IV (MT)",
+      "groupId": "13597",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4,
+       4.5,
+       5,
+       7.5
+      ],
       "options": [
        {
         "code": "DEN 326",
@@ -1495,6 +1831,15 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders V (MT)",
+      "groupId": "13643",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4,
+       4.5,
+       5,
+       7.5
+      ],
       "options": [
        {
         "code": "DEN 326",
@@ -1618,6 +1963,15 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders VII (MT)",
+      "groupId": "13644",
+      "credits": "2 / 3",
+      "ects": [
+       3,
+       4,
+       4.5,
+       5,
+       7.5
+      ],
       "options": [
        {
         "code": "DEN 326",

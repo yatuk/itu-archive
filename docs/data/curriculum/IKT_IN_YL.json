@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "İktisat (%100 İngilizce) Yüksek Lisans Programı",
+ "totalCredits": "27,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "İktisat (İngilizce) Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "IKE YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "IKE 596E",
-      "name": "Scien.Rese., Ethic&Seminar"
+      "name": "Scien.Rese., Ethic&Seminar",
+      "language": "English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9880",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "IKE 501E",
@@ -54,6 +70,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9881",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "IKE 501E",
@@ -85,6 +106,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9882",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "IKE 501E",
@@ -116,6 +142,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "9883",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "IKE 501E",
@@ -147,6 +178,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders V",
+      "groupId": "9884",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "IKE 501E",
@@ -178,6 +214,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders VI",
+      "groupId": "9885",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "IKE 501E",
@@ -209,18 +250,21 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "9886",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "9887",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "9888",
       "options": null
      }
     }

@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Mimarlık Tezsiz Yüksek Lisans Programı",
+ "totalCredits": "36,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Mimarlık Tezsiz Yüksek Lisans",
@@ -11,12 +13,22 @@
     {
      "course": {
       "code": "MTZ 599E",
-      "name": "Term Project"
+      "name": "Term Project",
+      "language": "English",
+      "required": "Z",
+      "ects": 30,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9909",
+      "credits": "3 / 6",
+      "ects": [
+       12,
+       7.5
+      ],
       "options": [
        {
         "code": "MTZ 501E",
@@ -40,6 +52,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9910",
+      "credits": "3 / 6",
+      "ects": [
+       12,
+       7.5
+      ],
       "options": [
        {
         "code": "MTZ 501E",
@@ -63,6 +81,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9911",
+      "credits": "3 / 6",
+      "ects": [
+       12,
+       7.5
+      ],
       "options": [
        {
         "code": "MTZ 501E",
@@ -86,6 +110,12 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "5940",
+      "credits": "3 / 6",
+      "ects": [
+       12,
+       7.5
+      ],
       "options": [
        {
         "code": "MTZ 501E",
@@ -109,24 +139,28 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "5936",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "5937",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "5938",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "5939",
       "options": null
      }
     }

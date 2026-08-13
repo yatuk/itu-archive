@@ -4,6 +4,8 @@
  "faculty": "Bilgisayar ve Bilişim Fakültesi",
  "level": "LS",
  "planLabel": "Yapay Zeka ve Veri Mühendisliği Lisans Programı (%100 İngilizce) 2024-2025 / Güz Dönemi Sonrası",
+ "totalCredits": "128,00",
+ "totalEcts": "241,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,43 +13,88 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 101E",
-      "name": "Introduction to Information Systems"
+      "name": "Introduction to Information Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "YZV 103E",
-      "name": "Intr. to AI & Data Eng& Ethics"
+      "name": "Intr. to AI & Data Eng& Ethics",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 102E",
-      "name": "Linear Algebra and Applications"
+      "name": "Linear Algebra and Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -58,49 +105,98 @@
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 103E",
-      "name": "Discrete Mathematics"
+      "name": "Discrete Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "YZV 104E",
-      "name": "Introduction to Programming for Data Science"
+      "name": "Introduction to Programming for Data Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -111,36 +207,72 @@
     {
      "course": {
       "code": "BBF 201E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "YZV 201E",
-      "name": "Data Structures"
+      "name": "Data Structures",
+      "language": "English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 7.5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "YZV 211E",
-      "name": "Intro to Data Science and Eng."
+      "name": "Intro to Data Science and Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "ITB Elective I",
+      "groupId": "11790",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -557,37 +689,73 @@
     {
      "course": {
       "code": "BBF 202E",
-      "name": "Numerical Methods in Computer Engineering"
+      "name": "Numerical Methods in Computer Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 203E",
-      "name": "Object Oriented Programming"
+      "name": "Object Oriented Programming",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BBF 204E",
-      "name": "Formal Languages and Automata"
+      "name": "Formal Languages and Automata",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BBF 304E",
-      "name": "Learning From Data"
+      "name": "Learning From Data",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "YZV 202E",
-      "name": "Optimization for Data Science"
+      "name": "Optimization for Data Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "YZV 212E",
-      "name": "Fund.ofArtificial Intelligence"
+      "name": "Fund.ofArtificial Intelligence",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     }
    ]
@@ -598,42 +766,83 @@
     {
      "course": {
       "code": "BBF 301E",
-      "name": "Analysis of Algorithms I"
+      "name": "Analysis of Algorithms I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BBF 302E",
-      "name": "Database Systems"
+      "name": "Database Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "YZV 303E",
-      "name": "Deep Learning"
+      "name": "Deep Learning",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "YZV 311E",
-      "name": "Data Mining"
+      "name": "Data Mining",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "YZV 401E",
-      "name": "Legal Aspects of AI&Data Eng."
+      "name": "Legal Aspects of AI&Data Eng.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "TM Elective I",
+      "groupId": "11791",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BLG 368E",
@@ -670,30 +879,60 @@
     {
      "course": {
       "code": "BBF 303E",
-      "name": "Analysis of Algorithms II"
+      "name": "Analysis of Algorithms II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "YZV 322E",
-      "name": "Applied Data Engineering"
+      "name": "Applied Data Engineering",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 8.5,
+      "lab": 4,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "YZV 405E",
-      "name": "Natural Language Processing"
+      "name": "Natural Language Processing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "YZV 416E",
-      "name": "Computer Vision"
+      "name": "Computer Vision",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "TM Elective II",
+      "groupId": "11792",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BLG 368E",
@@ -730,24 +969,50 @@
     {
      "course": {
       "code": "YZV 406E",
-      "name": "Robotics"
+      "name": "Robotics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "YZV 411E",
-      "name": "Big Data Analytics"
+      "name": "Big Data Analytics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "YZV 4901E",
-      "name": "AI &Data Engineering Design I"
+      "name": "AI &Data Engineering Design I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "MT Elective I",
+      "groupId": "11793",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BLG 312E",
@@ -815,6 +1080,11 @@
     {
      "elective": {
       "title": "ITB Elective II (SNT)",
+      "groupId": "11794",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BLG 346E",
@@ -903,24 +1173,49 @@
     {
      "course": {
       "code": "YZV 4902E",
-      "name": "AI& Data Engineering Design II"
+      "name": "AI& Data Engineering Design II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "EKO 201E",
-      "name": "Economics"
+      "name": "Economics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "MT Elective II",
+      "groupId": "11795",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BLG 312E",
@@ -988,6 +1283,13 @@
     {
      "elective": {
       "title": "MT Elective III",
+      "groupId": "11796",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BLG 312E",

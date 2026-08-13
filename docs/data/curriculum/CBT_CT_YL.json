@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Coğrafi Bilgi Teknolojileri Yüksek Lisans Programı 2026-2027 / Güz Dönemi Öncesi",
+ "totalCredits": "24,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Coğrafi Bilgi Teknolojileri Yüksek Lisans",
@@ -11,12 +13,21 @@
     {
      "course": {
       "code": "GIT YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Bilimsel Araş., Etik ve Seminer",
+      "groupId": "12051",
+      "credits": "0",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GEO 596E",
@@ -40,6 +51,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "1333",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 501",
@@ -67,6 +83,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "1334",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 501",
@@ -94,6 +115,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "1335",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 501",
@@ -121,6 +147,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "1336",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 501",
@@ -148,6 +179,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "1329",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 505",
@@ -279,6 +315,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "1330",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 505",
@@ -410,6 +451,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "1332",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 505",
@@ -541,6 +587,11 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "1331",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 505",

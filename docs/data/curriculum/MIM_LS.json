@@ -4,6 +4,8 @@
  "faculty": "Mimarlık Fakültesi",
  "level": "LS",
  "planLabel": "Mimarlık Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "132,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,36 +13,74 @@
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TES 111E",
-      "name": "Project I"
+      "name": "Project I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 112E",
-      "name": "Vis.Comm.I:Visualiz.&Tch.Drw."
+      "name": "Vis.Comm.I:Visualiz.&Tch.Drw.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 113E",
-      "name": "Basic Design and Visual Arts"
+      "name": "Basic Design and Visual Arts",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "tutorial": 4,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "elective": {
       "title": "1.yy Serbest Seçmeli Ders(ITB)",
+      "groupId": "8435",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -705,42 +745,87 @@
     {
      "course": {
       "code": "TES 121E",
-      "name": "Project II"
+      "name": "Project II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 106 MIM 106E",
-      "name": "Yapı Mekaniği"
+      "name": "Yapı Mekaniği",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TES 122E",
-      "name": "Vis.CommII:Visualization&Persp"
+      "name": "Vis.CommII:Visualization&Persp",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 120E",
-      "name": "Int.toCmp.Ds.Tools&Mth.inArch."
+      "name": "Int.toCmp.Ds.Tools&Mth.inArch.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "2.yy Serbest Seçmeli Ders(ITB)",
+      "groupId": "8436",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1273,37 +1358,78 @@
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "MIM 209 MIM 209E",
-      "name": "Mimarlık Tarihi I"
+      "name": "Mimarlık Tarihi I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 231 MIM 231E",
-      "name": "Yapı Malzemesi"
+      "name": "Yapı Malzemesi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 208 MIM 208E",
-      "name": "Yapısal Analiz ve Tasarım I"
+      "name": "Yapısal Analiz ve Tasarım I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 203 MIM 203E",
-      "name": "Mimarlıkta Yapı ve Yapım"
+      "name": "Mimarlıkta Yapı ve Yapım",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 3,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 211 MIM 211E",
-      "name": "Mimari Proje III"
+      "name": "Mimari Proje III",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     }
    ]
@@ -1314,31 +1440,65 @@
     {
      "course": {
       "code": "MIM 210 MIM 210E",
-      "name": "Mimarlık Tarihi II"
+      "name": "Mimarlık Tarihi II",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 213 MIM 213E",
-      "name": "Yapısal Analiz ve Tasarım II"
+      "name": "Yapısal Analiz ve Tasarım II",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 212 MIM 212E",
-      "name": "Mimari Proje IV"
+      "name": "Mimari Proje IV",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 8,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 204 MIM 204E",
-      "name": "Mimarlık. Yapı Elemanları Tas."
+      "name": "Mimarlık. Yapı Elemanları Tas.",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 246 MIM 246E",
-      "name": "Çevre Kontrolü Stüdyosu"
+      "name": "Çevre Kontrolü Stüdyosu",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     }
    ]
@@ -1349,43 +1509,86 @@
     {
      "course": {
       "code": "EKO 201 EKO 201E",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MIM 351 MIM 351E",
-      "name": "Mimari Proje V"
+      "name": "Mimari Proje V",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MIM 333 MIM 333E",
-      "name": "Yapım Sistemleri"
+      "name": "Yapım Sistemleri",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 304 MIM 304E",
-      "name": "Mimarlık Tarihi III"
+      "name": "Mimarlık Tarihi III",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 322 MIM 322E",
-      "name": "Tarihi Çevre Koruma & Restr"
+      "name": "Tarihi Çevre Koruma & Restr",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 306 MIM 306E",
-      "name": "Şehircilik ve İmar Hukuku"
+      "name": "Şehircilik ve İmar Hukuku",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 1,
+      "tutorial": 3,
+      "type": "MT"
      }
     }
    ]
@@ -1396,30 +1599,61 @@
     {
      "course": {
       "code": "MIM 312 MIM 312E",
-      "name": "Mimari Proje VI"
+      "name": "Mimari Proje VI",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MIM 359 MIM 359E",
-      "name": "Yapım Yönetimi ve Ekonomisi"
+      "name": "Yapım Yönetimi ve Ekonomisi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 361 MIM 361E",
-      "name": "Rölöve ve Restorasyon Stüdyosu"
+      "name": "Rölöve ve Restorasyon Stüdyosu",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Elective Course (MT)",
+      "groupId": "8437",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 354E",
@@ -1695,6 +1929,11 @@
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8438",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GSB 313",
@@ -1931,24 +2170,48 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MIM 411 MIM 411E",
-      "name": "Mimari Proje VII"
+      "name": "Mimari Proje VII",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 10,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "MIM 484 MIM 484E",
-      "name": "Uygulama Projesi"
+      "name": "Uygulama Projesi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 12,
+      "theory": 2,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I(MT)",
+      "groupId": "8439",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GSB 313",
@@ -2164,6 +2427,11 @@
     {
      "elective": {
       "title": "7.yy Elective Course II(MT)",
+      "groupId": "8440",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ENT 354E",
@@ -2440,18 +2708,35 @@
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MIM 4902 MIM 4902E",
-      "name": "Diploma Projesi"
+      "name": "Diploma Projesi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 18,
+      "theory": 1,
+      "tutorial": 8,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders (MT)",
+      "groupId": "8441",
+      "credits": "2 / 3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "GSB 313",

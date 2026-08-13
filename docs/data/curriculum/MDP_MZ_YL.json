@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "YL",
  "planLabel": "Müzik (%100 İngilizce) Yüksek Lisans Programı",
+ "totalCredits": "36,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Müzik (İngilizce) Yüksek Lisans",
@@ -11,18 +13,32 @@
     {
      "course": {
       "code": "MYE YLT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 60,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "MYE 5096E",
-      "name": "Scien.Rese., Ethic&Seminar"
+      "name": "Scien.Rese., Ethic&Seminar",
+      "language": "English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders I",
+      "groupId": "9708",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MYE 501E",
@@ -110,6 +126,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders II",
+      "groupId": "9709",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MYE 501E",
@@ -197,6 +218,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders III",
+      "groupId": "9710",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MYE 501E",
@@ -280,6 +306,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders IV",
+      "groupId": "9711",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MYE 501E",
@@ -363,6 +394,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders V",
+      "groupId": "9712",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MYE 501E",
@@ -446,6 +482,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli Ders VI",
+      "groupId": "9713",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "MYE 501E",
@@ -529,36 +570,42 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "9714",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "9715",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders III",
+      "groupId": "9716",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders IV",
+      "groupId": "9717",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders V",
+      "groupId": "9718",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders VI",
+      "groupId": "9719",
       "options": null
      }
     }

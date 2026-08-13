@@ -4,6 +4,8 @@
  "faculty": "Elektrik - Elektronik Fakültesi",
  "level": "LS",
  "planLabel": "Telekomünikasyon Mühendisliği Lisans Programı 2009-2010 / Güz Dönemi Sonrası",
+ "totalCredits": "152,50",
+ "totalEcts": "234,50",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,54 +13,108 @@
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101L",
-      "name": "Fizik I Lab"
+      "name": "Fizik I Lab",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101L",
-      "name": "Genel Kimya I Laboratuvarı"
+      "name": "Genel Kimya I Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 281",
-      "name": "Lineer Cebir ve Uygulamaları"
+      "name": "Lineer Cebir ve Uygulamaları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 101E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6.5,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TEL 111",
-      "name": "Telekomünikasyon Müh. Grş."
+      "name": "Telekomünikasyon Müh. Grş.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 101",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "English Course I",
+      "groupId": "7329",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
       "options": [
        {
         "code": "ING 101",
@@ -79,48 +135,98 @@
     {
      "course": {
       "code": "FIZ 106",
-      "name": "Fizik II"
+      "name": "Fizik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 106L",
-      "name": "Fizik II Laboratuvarı"
+      "name": "Fizik II Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "BIL 101E",
-      "name": "Int to Comp and Inf Systems"
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 102E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 7,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 271",
-      "name": "Olasılık ve İstatistik"
+      "name": "Olasılık ve İstatistik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 271E",
-      "name": "Probability and Statistics"
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 102",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "English Course II",
+      "groupId": "7337",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
       "options": [
        {
         "code": "ING 102",
@@ -185,36 +291,72 @@
     {
      "course": {
       "code": "MAT 201",
-      "name": "Diferansiyel Denklemler"
+      "name": "Diferansiyel Denklemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ELE 211",
-      "name": "Elektrik Devre Temelleri"
+      "name": "Elektrik Devre Temelleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ELE 211E",
-      "name": "Basics of Electrical Circuits"
+      "name": "Basics of Electrical Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAL 201",
-      "name": "Malzeme Bilimi"
+      "name": "Malzeme Bilimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BIL 104E",
-      "name": "Intr. to Programming in C"
+      "name": "Intr. to Programming in C",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "7350",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -362,6 +504,14 @@
     {
      "elective": {
       "title": "3.yy Seçime Bağlı Ders (TB)",
+      "groupId": "7351",
+      "credits": "3",
+      "ects": [
+       2,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -430,42 +580,85 @@
     {
      "course": {
       "code": "TEL 232",
-      "name": "Analog İşaret İşleme"
+      "name": "Analog İşaret İşleme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TEL 212",
-      "name": "Elektromagnetik Alanlara Giriş"
+      "name": "Elektromagnetik Alanlara Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 201",
-      "name": "English III"
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "BLG 221",
-      "name": "Veri Yapıları"
+      "name": "Veri Yapıları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELE 221",
-      "name": "Elektrik Devre Temelleri Laboratuarı"
+      "name": "Elektrik Devre Temelleri Laboratuarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2.5,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ELE 232",
-      "name": "Devre ve Sistem Analizi"
+      "name": "Devre ve Sistem Analizi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4.yy Seçime Bağlı Ders (TB)",
+      "groupId": "7355",
+      "credits": "3",
+      "ects": [
+       2,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -521,13 +714,25 @@
     {
      "course": {
       "code": "EHB 222",
-      "name": "Elektroniğe Giriş"
+      "name": "Elektroniğe Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "EHB 222E",
-      "name": "Introduction to Electronics"
+      "name": "Introduction to Electronics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     }
    ]
@@ -538,60 +743,119 @@
     {
      "course": {
       "code": "TEL 351",
-      "name": "Analog Haberleşme"
+      "name": "Analog Haberleşme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELE 341",
-      "name": "Elektronik Devreleri"
+      "name": "Elektronik Devreleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEL 313",
-      "name": "Elektromanyetik Dalgalar"
+      "name": "Elektromanyetik Dalgalar",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEL 313E",
-      "name": "Electromagnetic Waves"
+      "name": "Electromagnetic Waves",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BLG 231",
-      "name": "Sayısal Devreler"
+      "name": "Sayısal Devreler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "BLG 231E",
-      "name": "Digital Circuits"
+      "name": "Digital Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TEL 311",
-      "name": "Digital Signal Processing"
+      "name": "Digital Signal Processing",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TEL 311E",
-      "name": "Digital Signal Processing"
+      "name": "Digital Signal Processing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ELE 311",
-      "name": "Elektroniğe Giriş Laboratuarı"
+      "name": "Elektroniğe Giriş Laboratuarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2.5,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "5.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "7359",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "BEB 120",
@@ -932,48 +1196,98 @@
     {
      "course": {
       "code": "EKO 201",
-      "name": "Ekonomi"
+      "name": "Ekonomi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "KON 317",
-      "name": "Otomatik Kontrol Sistemleri"
+      "name": "Otomatik Kontrol Sistemleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TEL 352",
-      "name": "Sayısal Haberleşme"
+      "name": "Sayısal Haberleşme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEL 352E",
-      "name": "Digital Communication"
+      "name": "Digital Communication",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEL 362",
-      "name": "Mikrodalga Mühendisliği"
+      "name": "Mikrodalga Mühendisliği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "ELE 342",
-      "name": "Sayısal Sistemler Lab."
+      "name": "Sayısal Sistemler Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 5,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TEL 332",
-      "name": "Sayısal İşaret İşleme Lab."
+      "name": "Sayısal İşaret İşleme Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 5,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "6.yy Seçime Bağlı Ders (TM)",
+      "groupId": "7363",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
       "options": [
        {
         "code": "BLG 368",
@@ -1018,18 +1332,36 @@
     {
      "course": {
       "code": "ATA 101",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TEL 441",
-      "name": "Temel Haberleşme Lab."
+      "name": "Temel Haberleşme Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 5,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Elective Course (ITB)",
+      "groupId": "7379",
+      "credits": "3",
+      "ects": [
+       0,
+       4
+      ],
       "options": [
        {
         "code": "HUK 211",
@@ -1229,6 +1561,13 @@
     {
      "elective": {
       "title": "7.yy Elective Course (MT)",
+      "groupId": "7380",
+      "credits": "3",
+      "ects": [
+       0,
+       5,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",
@@ -1256,6 +1595,13 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "7381",
+      "credits": "3",
+      "ects": [
+       5,
+       5.5,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",
@@ -1303,6 +1649,13 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "7382",
+      "credits": "3",
+      "ects": [
+       5,
+       5.5,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",
@@ -1350,6 +1703,13 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders III(MT)",
+      "groupId": "7383",
+      "credits": "3",
+      "ects": [
+       5,
+       5.5,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",
@@ -1402,18 +1762,35 @@
     {
      "course": {
       "code": "ATA 102",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "TEL 492",
-      "name": "Bitirme Çalışması"
+      "name": "Bitirme Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "8.yy Elective Course (MT)",
+      "groupId": "7396",
+      "credits": "3",
+      "ects": [
+       5
+      ],
       "options": [
        {
         "code": "TEL 424E",
@@ -1453,6 +1830,12 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "7397",
+      "credits": "3",
+      "ects": [
+       5,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",
@@ -1496,6 +1879,12 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "7398",
+      "credits": "3",
+      "ects": [
+       5,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",
@@ -1539,6 +1928,12 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders III(MT)",
+      "groupId": "7399",
+      "credits": "3",
+      "ects": [
+       5,
+       7
+      ],
       "options": [
        {
         "code": "BLG 212",

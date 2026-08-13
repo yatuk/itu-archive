@@ -4,6 +4,8 @@
  "faculty": "Fen - Edebiyat Fakültesi",
  "level": "LS",
  "planLabel": "Matematik Lisans Programı 2026-2027 / Güz Dönemi Sonrası",
+ "totalCredits": "130,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,55 +13,108 @@
     {
      "course": {
       "code": "FIZ 101E",
-      "name": "Physics I"
+      "name": "Physics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 175",
-      "name": "Soyut Matematik"
+      "name": "Soyut Matematik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 143E",
-      "name": "Linear Algebra"
+      "name": "Linear Algebra",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "MAT 185",
-      "name": "Matematik I"
+      "name": "Matematik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "MTT 101",
-      "name": "Matematik Giriş & Etik"
+      "name": "Matematik Giriş & Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "MT"
      }
     }
    ]
@@ -70,55 +125,108 @@
     {
      "course": {
       "code": "FIZ 102E",
-      "name": "Physics II"
+      "name": "Physics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 186",
-      "name": "Matematik II"
+      "name": "Matematik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 148",
-      "name": "Ayrık Matematik"
+      "name": "Ayrık Matematik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTT 102E",
-      "name": "Advanced Linear Algebra"
+      "name": "Advanced Linear Algebra",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 4.5,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -129,30 +237,61 @@
     {
      "course": {
       "code": "MTT 201E",
-      "name": "Graph Theory"
+      "name": "Graph Theory",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MAT 287",
-      "name": "Matematik III"
+      "name": "Matematik III",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 232",
-      "name": "Diferansiyel Denklemler"
+      "name": "Diferansiyel Denklemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 7,
+      "theory": 4,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 116E",
-      "name": "Advanced Sci. & Eng. Computing"
+      "name": "Advanced Sci. & Eng. Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5.5,
+      "theory": 2,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders (SNT)",
+      "groupId": "13206",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "SNT 101",
@@ -301,18 +440,38 @@
     {
      "course": {
       "code": "MAT 234",
-      "name": "Kısmi Diferansiyel Denklemler"
+      "name": "Kısmi Diferansiyel Denklemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 324",
-      "name": "Cebir"
+      "name": "Cebir",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13207",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -472,6 +631,14 @@
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13208",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -631,6 +798,14 @@
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13209",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -791,24 +966,50 @@
     {
      "course": {
       "code": "MTT 301E",
-      "name": "Real Analysis I"
+      "name": "Real Analysis I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTT 303",
-      "name": "Cebir II"
+      "name": "Cebir II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTT 305E",
-      "name": "Number Theory"
+      "name": "Number Theory",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13210",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -968,6 +1169,14 @@
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13211",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -1132,24 +1341,47 @@
     {
      "course": {
       "code": "MAT 342E",
-      "name": "Differential Geometry"
+      "name": "Differential Geometry",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 345E",
-      "name": "Complex Analysis"
+      "name": "Complex Analysis",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MTT 302",
-      "name": "Reel Analiz II"
+      "name": "Reel Analiz II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders (ITB)",
+      "groupId": "13213",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1693,6 +1925,14 @@
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13212",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -1857,30 +2097,64 @@
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "MTT 401",
-      "name": "Topoloji"
+      "name": "Topoloji",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTT 403",
-      "name": "Fonksiyonel Analiz"
+      "name": "Fonksiyonel Analiz",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "MTT 4901",
-      "name": "Araştırma Projesi I"
+      "name": "Araştırma Projesi I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 10,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13214",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -2045,12 +2319,24 @@
     {
      "course": {
       "code": "MTT 4902",
-      "name": "Araştırma Projesi II"
+      "name": "Araştırma Projesi II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 10,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Seçmeli Ders (ITB)",
+      "groupId": "13216",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -2598,6 +2884,14 @@
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13215",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -2757,6 +3051,14 @@
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13217",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",
@@ -2916,6 +3218,14 @@
     {
      "elective": {
       "title": "Seçmeli Ders (MT)",
+      "groupId": "13218",
+      "credits": "3 / 3,5",
+      "ects": [
+       6,
+       6.5,
+       7,
+       8
+      ],
       "options": [
        {
         "code": "ECN 207E",

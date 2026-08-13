@@ -4,6 +4,8 @@
  "faculty": "İşletme Fakültesi",
  "level": "LS",
  "planLabel": "Veri Bilimi ve Analitiği Lisans Programı (%100 İngilizce) 2024 - 2025 / Güz Dönemi Sonrası",
+ "totalCredits": "128,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,37 +13,74 @@
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "VBA 111E",
-      "name": "Introduction to Data Science and Analytics"
+      "name": "Introduction to Data Science and Analytics",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 113E",
-      "name": "Foundations of Algorithm and Programming"
+      "name": "Foundations of Algorithm and Programming",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "VBA 115E",
-      "name": "Fundamentals of Linux"
+      "name": "Fundamentals of Linux",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "VBA 210E",
-      "name": "Linear Algebra and Applications"
+      "name": "Linear Algebra and Applications",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "ITB"
      }
     }
    ]
@@ -52,37 +91,74 @@
     {
      "course": {
       "code": "MAT 104E",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "VBA 122E",
-      "name": "Discrete Mathematics"
+      "name": "Discrete Mathematics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "VBA 124E",
-      "name": "Object Oriented Programming"
+      "name": "Object Oriented Programming",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7.5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "VBA 252E",
-      "name": "Theory of Probability"
+      "name": "Theory of Probability",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     }
    ]
@@ -93,42 +169,81 @@
     {
      "course": {
       "code": "VBA 211E",
-      "name": "Deterministic Models in Data Science"
+      "name": "Deterministic Models in Data Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "VBA 213E",
-      "name": "Data Visualization"
+      "name": "Data Visualization",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 215E",
-      "name": "Database Management Systems"
+      "name": "Database Management Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 311E",
-      "name": "Statistics"
+      "name": "Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Elective Course(ITB-1)",
+      "groupId": "11656",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -617,36 +732,71 @@
     {
      "course": {
       "code": "VBA 222E",
-      "name": "Data Structures and Algorithms"
+      "name": "Data Structures and Algorithms",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "VBA 224E",
-      "name": "Stochastic Models in Data Science"
+      "name": "Stochastic Models in Data Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "VBA 312E",
-      "name": "Data Analytics"
+      "name": "Data Analytics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Restricted Elective Crs.(MT-1)",
+      "groupId": "11657",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -758,6 +908,11 @@
     {
      "elective": {
       "title": "Elective Course (ITB-2)",
+      "groupId": "11658",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -1246,30 +1401,61 @@
     {
      "course": {
       "code": "VBA 313E",
-      "name": "Deep Learning"
+      "name": "Deep Learning",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 315E",
-      "name": "Machine Learning"
+      "name": "Machine Learning",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 317E",
-      "name": "Signal and Image Analytics"
+      "name": "Signal and Image Analytics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 319E",
-      "name": "Ethics and Law in Data Science"
+      "name": "Ethics and Law in Data Science",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "Restricted Elective Crs.(MT-2)",
+      "groupId": "11659",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -1381,6 +1567,13 @@
     {
      "elective": {
       "title": "Restricted Elective Crs.(MT-3)",
+      "groupId": "11660",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -1497,30 +1690,61 @@
     {
      "course": {
       "code": "VBA 322E",
-      "name": "Computer Vision"
+      "name": "Computer Vision",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 324E",
-      "name": "Fundamentals of Natural Language Processing"
+      "name": "Fundamentals of Natural Language Processing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 326E",
-      "name": "Big Data and Analytics"
+      "name": "Big Data and Analytics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 328E",
-      "name": "High Performance Computing"
+      "name": "High Performance Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Restricted Elective Crs.(MT-4)",
+      "groupId": "11661",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -1637,24 +1861,50 @@
     {
      "course": {
       "code": "VBA 411E",
-      "name": "Internet of Things"
+      "name": "Internet of Things",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 413E",
-      "name": "Cyber Security"
+      "name": "Cyber Security",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 7,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 4901E",
-      "name": "Graduation Project I"
+      "name": "Graduation Project I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Restricted Elective Crs.(MT-5)",
+      "groupId": "11662",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -1766,6 +2016,14 @@
     {
      "elective": {
       "title": "Elective Course (MT-1)",
+      "groupId": "11663",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       5.5,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -1946,18 +2204,39 @@
     {
      "course": {
       "code": "VBA 422E",
-      "name": "Cloud Computing"
+      "name": "Cloud Computing",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 8,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "VBA 4902E",
-      "name": "Graduation Project II"
+      "name": "Graduation Project II",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 10,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "Elective Course (MT-2)",
+      "groupId": "11664",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       5.5,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -2133,6 +2412,14 @@
     {
      "elective": {
       "title": "Elective Course (MT-3)",
+      "groupId": "11665",
+      "credits": "3 / 3,5",
+      "ects": [
+       4,
+       5.5,
+       6,
+       8
+      ],
       "options": [
        {
         "code": "BHB 202E",
@@ -2308,6 +2595,11 @@
     {
      "elective": {
       "title": "Elective Course (ITB-3)",
+      "groupId": "11666",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",

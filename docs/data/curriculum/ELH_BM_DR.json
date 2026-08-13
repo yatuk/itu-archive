@@ -4,6 +4,8 @@
  "faculty": "Lisansüstü Eğitim Enstitüsü",
  "level": "DR",
  "planLabel": "Biyomedikal Mühendisliği (%100 İngilizce) Doktora Programı 2022-2023 / Bahar Dönemi Sonrası",
+ "totalCredits": "21,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Biyomedikal Mühendisliği (İngilizce) Doktora",
@@ -11,24 +13,42 @@
     {
      "course": {
       "code": "BYM DRT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 150,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "BYM YET",
-      "name": "Yeterlik Aşaması"
+      "name": "Yeterlik Aşaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 30,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "BYM 696E",
-      "name": "Sci. Research, Ethic & Seminar"
+      "name": "Sci. Research, Ethic & Seminar",
+      "language": "English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi I",
+      "groupId": "11647",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "KOM 505E",
@@ -44,6 +64,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi II",
+      "groupId": "11648",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "KOM 505E",
@@ -59,6 +84,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi III",
+      "groupId": "11649",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "KOM 505E",
@@ -74,6 +104,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi IV",
+      "groupId": "11650",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "KOM 505",
@@ -89,6 +124,11 @@
     {
      "elective": {
       "title": "LEE Seçmeli Dersi",
+      "groupId": "11651",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "LEE 901E",
@@ -124,12 +164,14 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "11652",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "11653",
       "options": null
      }
     }

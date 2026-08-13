@@ -4,6 +4,8 @@
  "faculty": "İnşaat Fakültesi",
  "level": "LS",
  "planLabel": "İnşaat Mühendisliği Lisans Programı 2021-2022 / Güz Dönemi Sonrası",
+ "totalCredits": "132,00",
+ "totalEcts": "240,00",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -11,55 +13,112 @@
     {
      "course": {
       "code": "FIZ 101",
-      "name": "Fizik I"
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101",
-      "name": "Genel Kimya I"
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "MAT 103E",
-      "name": "Mathematics I"
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "INS 101",
-      "name": "Teknik Resim"
+      "name": "Teknik Resim",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "FIZ 101EL",
-      "name": "Physics I Laboratory"
+      "name": "Physics I Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "KIM 101EL",
-      "name": "General Chemistry I Lab"
+      "name": "General Chemistry I Lab",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "INS 111",
-      "name": "İnşaat Müh. Giriş ve Etik"
+      "name": "İnşaat Müh. Giriş ve Etik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "INS 107E",
-      "name": "Int. to Prog. Lang. (Python)"
+      "name": "Int. to Prog. Lang. (Python)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "ING 100",
-      "name": "EAP Through Global Goals"
+      "name": "EAP Through Global Goals",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
      }
     }
    ]
@@ -70,48 +129,98 @@
     {
      "course": {
       "code": "FIZ 102 FIZ 102E",
-      "name": "Fizik II (Elektrik Fiziği)"
+      "name": "Fizik II (Elektrik Fiziği)",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "FIZ 102EL",
-      "name": "Physics II Laboratory"
+      "name": "Physics II Laboratory",
+      "language": "English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "INS 102 INS 102E",
-      "name": "Statik"
+      "name": "Statik",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "INS 112 INS 112E",
-      "name": "İnşaat Mühendisleri İçin Yer Bilimi"
+      "name": "İnşaat Mühendisleri İçin Yer Bilimi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 112A",
-      "name": "Basics of Academic Writing"
+      "name": "Basics of Academic Writing",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     },
     {
      "course": {
       "code": "MAT 104E MAT 104",
-      "name": "Mathematics II"
+      "name": "Mathematics II",
+      "language": "English / Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 6.5,
+      "theory": 3,
+      "tutorial": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "DAN 102",
-      "name": "Girişimcilik & Kariyer Danış."
+      "name": "Girişimcilik & Kariyer Danış.",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 1,
+      "tutorial": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "2.yy Serbest Seçim Dersi (ITB)",
+      "groupId": "8401",
+      "credits": "3",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "ALM 101",
@@ -852,43 +961,87 @@
     {
      "course": {
       "code": "DNK 201 DNK 201E",
-      "name": "Dinamik"
+      "name": "Dinamik",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "INS 210 INS 210E",
-      "name": "İnşaat Mühendisleri için Matematik"
+      "name": "İnşaat Mühendisleri için Matematik",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5.5,
+      "theory": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "INS 217 INS 217E",
-      "name": "Mukavemet I"
+      "name": "Mukavemet I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 121",
-      "name": "Türk Dili I"
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "INS 215 INS 215E",
-      "name": "Malzeme Bilimi"
+      "name": "Malzeme Bilimi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 5,
+      "theory": 2,
+      "lab": 1,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "INS 202 INS 202E",
-      "name": "İnşaat Müh. Sayısal Yöntemler"
+      "name": "İnşaat Müh. Sayısal Yöntemler",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "ING 201A",
-      "name": "Essentials of Res.Paper Writ."
+      "name": "Essentials of Res.Paper Writ.",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3.5,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "EC"
      }
     }
    ]
@@ -899,42 +1052,88 @@
     {
      "course": {
       "code": "AKM 204 AKM 204E",
-      "name": "Akışkanlar Mekaniği"
+      "name": "Akışkanlar Mekaniği",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "INS 218 INS 218E",
-      "name": "Mukavemet II"
+      "name": "Mukavemet II",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "INS 232 INS 232E",
-      "name": "Ölçme Bilgisi"
+      "name": "Ölçme Bilgisi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 1,
+      "tutorial": 1,
+      "lab": 1,
+      "type": "TM"
      }
     },
     {
      "course": {
       "code": "TUR 122",
-      "name": "Türk Dili II"
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "INS 230 INS 230E",
-      "name": "Yapı Malzemesi"
+      "name": "Yapı Malzemesi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4.5,
+      "theory": 2,
+      "lab": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "BIL 113E",
-      "name": "Intr.to Sci& Eng.Comp.(MATLAB)"
+      "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+      "language": "English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 4.5,
+      "theory": 1,
+      "lab": 2,
+      "type": "TM"
      }
     },
     {
      "elective": {
       "title": "4th Semester Elective Course (TB)",
+      "groupId": "8961",
+      "credits": "3",
+      "ects": [
+       4,
+       5
+      ],
       "options": [
        {
         "code": "BIO 301E",
@@ -983,42 +1182,87 @@
     {
      "course": {
       "code": "INS 360 INS 360E",
-      "name": "Hidrolik"
+      "name": "Hidrolik",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 323 INS 323E",
-      "name": "Yapı Statiği I"
+      "name": "Yapı Statiği I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 325 INS 325E",
-      "name": "Demiryolu Müh."
+      "name": "Demiryolu Müh.",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 303 INS 303E",
-      "name": "Zemin Mekaniği I"
+      "name": "Zemin Mekaniği I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3.5,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 1,
+      "lab": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 305 INS 305E",
-      "name": "Olasılık ve İstatistik"
+      "name": "Olasılık ve İstatistik",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 5,
+      "theory": 2,
+      "type": "TB"
      }
     },
     {
      "course": {
       "code": "INS 301 INS 301E",
-      "name": "Mühendislik Ekonomisi"
+      "name": "Mühendislik Ekonomisi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "5th Semester Elective Course (TM)",
+      "groupId": "8960",
+      "credits": "2,5",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "INS 335E",
@@ -1055,43 +1299,91 @@
     {
      "course": {
       "code": "INS 338 INS 338E",
-      "name": "Betonarme I"
+      "name": "Betonarme I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 354 INS 354E",
-      "name": "Hidroloji"
+      "name": "Hidroloji",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 1,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 302 INS 302E",
-      "name": "Karayolu Mühendisliği"
+      "name": "Karayolu Mühendisliği",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 336 INS 336E",
-      "name": "Yapı Statiği II"
+      "name": "Yapı Statiği II",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 332E INS 332",
-      "name": "Foundation Engineering I"
+      "name": "Foundation Engineering I",
+      "language": "English / Türkçe",
+      "required": "Z",
+      "credits": 2.5,
+      "ects": 4,
+      "theory": 2,
+      "tutorial": 1,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 304 INS 304E",
-      "name": "Yapı İşletmesi"
+      "name": "Yapı İşletmesi",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3,
+      "theory": 3,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 344 INS 344E",
-      "name": "Çelik Yapılar I"
+      "name": "Çelik Yapılar I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     }
    ]
@@ -1102,36 +1394,72 @@
     {
      "course": {
       "code": "ATA 121",
-      "name": "Atatürk İlk & İnkılap Trh I"
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "INS 433 INS 433E",
-      "name": "Betonarme II"
+      "name": "Betonarme II",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 405 INS 405E",
-      "name": "İnş.İşçi Sağlığı ve İş Güven."
+      "name": "İnş.İşçi Sağlığı ve İş Güven.",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "INS 401 INS 401E",
-      "name": "Su Kaynakları"
+      "name": "Su Kaynakları",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 2,
+      "ects": 3,
+      "theory": 2,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "INS 4901 INS 4901E",
-      "name": "İnşaat Müh. Tasarımı I"
+      "name": "İnşaat Müh. Tasarımı I",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 8,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8962",
+      "credits": "2 / 2,5",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "INS 4031",
@@ -1267,6 +1595,11 @@
     {
      "elective": {
       "title": "7.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8963",
+      "credits": "2 / 2,5",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "INS 4031",
@@ -1407,30 +1740,59 @@
     {
      "course": {
       "code": "INS 462 INS 462E",
-      "name": "Mühendislik Etiği"
+      "name": "Mühendislik Etiği",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "ATA 122",
-      "name": "Atatürk İlk & İnkılap Trh II"
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
      }
     },
     {
      "course": {
       "code": "INS 4902 INS 4902E",
-      "name": "İnşaat Müh. Tasarımı II"
+      "name": "İnşaat Müh. Tasarımı II",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "credits": 4,
+      "ects": 12,
+      "theory": 1,
+      "tutorial": 6,
+      "type": "MT"
      }
     },
     {
      "course": {
       "code": "HUK 201",
-      "name": "İş Hukuku"
+      "name": "İş Hukuku",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "ITB"
      }
     },
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders I (MT)",
+      "groupId": "8964",
+      "credits": "2 / 2,5",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "CEV 476",
@@ -1562,6 +1924,11 @@
     {
      "elective": {
       "title": "8.yy Seçime Bağlı Ders II (MT)",
+      "groupId": "8965",
+      "credits": "2 / 2,5",
+      "ects": [
+       4
+      ],
       "options": [
        {
         "code": "CEV 476",

@@ -4,6 +4,8 @@
  "faculty": "Bilişim Enstitüsü",
  "level": "DR",
  "planLabel": "Uydu Haberleşmesi ve Uzaktan Algılama Doktora Programı 2026-2027 / Güz Dönemi Sonrası",
+ "totalCredits": "21,00",
+ "totalEcts": "0,00",
  "semesters": [
   {
    "title": "Uydu Haberleşmesi ve Uzaktan Algılama Doktora",
@@ -11,24 +13,42 @@
     {
      "course": {
       "code": "UAH DRT",
-      "name": "Tez Çalışması"
+      "name": "Tez Çalışması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 150,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "UAH YET",
-      "name": "Yeterlik Aşaması"
+      "name": "Yeterlik Aşaması",
+      "language": "Türkçe",
+      "required": "Z",
+      "ects": 30,
+      "type": "Z"
      }
     },
     {
      "course": {
       "code": "UAH 696 UAH 696E",
-      "name": "Bilimsel Araş.,Etik ve Seminer"
+      "name": "Bilimsel Araş.,Etik ve Seminer",
+      "language": "Türkçe / English",
+      "required": "Z",
+      "ects": 7.5,
+      "theory": 2,
+      "type": "Z"
      }
     },
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi I",
+      "groupId": "13470",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 606E",
@@ -60,6 +80,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi II",
+      "groupId": "13471",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 606E",
@@ -91,6 +116,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi III",
+      "groupId": "13472",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 606E",
@@ -122,6 +152,11 @@
     {
      "elective": {
       "title": "Zorunlu Seçmeli ABD Dersi IV",
+      "groupId": "13473",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "GIT 606E",
@@ -153,6 +188,11 @@
     {
      "elective": {
       "title": "LEE Seçmeli Dersi",
+      "groupId": "13474",
+      "credits": "3",
+      "ects": [
+       7.5
+      ],
       "options": [
        {
         "code": "LEE 901E",
@@ -208,12 +248,14 @@
     {
      "elective": {
       "title": "Seçime Bağlı Ders I",
+      "groupId": "13475",
       "options": null
      }
     },
     {
      "elective": {
       "title": "Seçime Bağlı Ders II",
+      "groupId": "13476",
       "options": null
      }
     }

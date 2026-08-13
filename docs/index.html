@@ -149,8 +149,9 @@
  <button role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar" data-i18n="tabSinavlar">04 · SINAVLAR</button>
  <button role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" data-i18n="tabTakvim">05 · AKADEMİK TAKVİM</button>
  <button role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" data-i18n="tabDonemler">06 · DÖNEMLER</button>
- <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">07 · PROGRAM</button>
- <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">08 · HAKKINDA</button>
+ <button role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" data-i18n="tabDersplanim">07 · DERS PLANIM</button>
+ <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">08 · PROGRAM</button>
+ <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">09 · HAKKINDA</button>
 </nav>
 
 <main class="wrap">
@@ -329,6 +330,10 @@
    bazı alanlar eksik olabilir. <strong>2024-2025 Güz</strong> hiçbir kaynakta bulunmuyor.
   </p>
   <div id="terms"></div>
+ </section>
+
+ <section id="view-dersplanim" class="view" role="tabpanel" aria-labelledby="tab-dersplanim" hidden>
+  <div id="dp-root"><!-- views/dersplanim.js ile doldurulur --></div>
  </section>
 
  <section id="view-program" class="view" role="tabpanel" aria-labelledby="tab-program" hidden>

@@ -1753,6 +1753,7 @@ body.modal-open { overflow: hidden; }
 .dp-sem {
   border: 1px solid var(--hairline); background: var(--panel);
   border-radius: var(--radius-card); padding: 12px 14px 14px;
+  min-width: 0; /* grid öğesi içeriğine göre büyüyüp taşmasın */
 }
 .dp-sem-head {
   display: flex; align-items: baseline; gap: 12px;
@@ -2055,3 +2056,20 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .dp-metric { min-width: 0; }
   #dp-semesters { scroll-margin-bottom: 120px; }
 }
+
+/* Tablet (601-1024): tablolar 900px taşmasın — görünüme sığsın (kart değil,
+   masaüstü tablo korunur ama min-width sıfırlanır). */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #results, #etable, .htable { min-width: 0; }
+}
+
+/* Taşma düzeltmeleri: Program toolbar ve Ders Planım aksiyonları sarar. */
+.p-progsel, .p-actions { flex-wrap: wrap; }
+.p-prog-select { min-width: 0; }
+.dp-grades-actions { flex-wrap: wrap; }
+/* OBS tooltip'i dar ekranda taşmasın. */
+.p-obs-wrap .ttip { max-width: min(260px, calc(100vw - 32px)); }
+
+/* Gizli tooltip sayfayı taşırmasın (position:absolute + opacity:0 yine de
+   scroll alanına girer; display:none kaldırır). */
+.ttip:not(.show) { display: none; }

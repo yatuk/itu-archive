@@ -15,6 +15,7 @@ import { fillRows } from '../core/table.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
 import { openCourseDetail } from '../core/course-detail.js';
+import { isTaken } from '../core/taken.js';
 
 const PAGE = 200;
 const TIME_LABEL = { sabah: 'sabah (<12:00)', ogle: 'öğle (12:00-17:00)', aksam: 'akşam (≥17:00)' };
@@ -29,6 +30,7 @@ export function initCourses() {
   $('#f-program').addEventListener('change', applyFilters);
   $('#f-code').addEventListener('input', debounce(applyFilters, 120));
   $('#f-open').addEventListener('change', applyFilters);
+  $('#f-taken').addEventListener('change', applyFilters);
   $('#f-term').addEventListener('change', () => loadTerm($('#f-term').value));
   $('#more').addEventListener('click', () => renderRows(true));
   $('#csv').addEventListener('click', exportCSV);
@@ -139,6 +141,7 @@ export function applyFilters() {
   const program = $('#f-program').value;
   const code = $('#f-code').value.trim().toLowerCase();
   const openOnly = $('#f-open').checked;
+  const hideTaken = $('#f-taken').checked;
   // Arama terimleri boşluğa göre bölünür, sonra ortak normalizasyonla boşluksuz
   // anahtarlara indirilir ("BLG 102E" → ["blg","102e"], "BLG102E" → ["blg102e"]).
   const terms = q ? q.split(/\s+/).map(normSearch) : [];
@@ -153,6 +156,7 @@ export function applyFilters() {
     if (method && r[9] && r[9] !== method) return false;
     if (program && !programList(r).includes(program)) return false;
     if (openOnly && r[7] >= r[6]) return false;
+    if (hideTaken && isTaken(r[1])) return false;
     if (!terms.length) return true;
     return terms.every((t) => searchMatch(t, state.hay[i]));
   });
@@ -430,6 +434,7 @@ function saveState() {
   if ($('#f-program').value) p.set('program', $('#f-program').value);
   if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');
+  if ($('#f-taken').checked) p.set('taken', '1');
   const qs = p.toString();
   const url = location.pathname + (qs ? '?' + qs : '') + location.hash;
   history.replaceState(null, '', url);

@@ -127,6 +127,7 @@ async function boot() {
   if (params.has('program')) $('#f-program').value = params.get('program');
   if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
+  if (params.get('taken') === '1') $('#f-taken').checked = true;
   applyFilters();
 }
 
@@ -231,6 +232,7 @@ function derslerParams() {
   if ($('#f-program').value) p.set('program', $('#f-program').value);
   if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');
+  if ($('#f-taken').checked) p.set('taken', '1');
   return p;
 }
 

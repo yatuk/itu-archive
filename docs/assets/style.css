@@ -1648,3 +1648,49 @@ body.modal-open { overflow: hidden; }
   .dp-when { grid-column: 2 / 4; }
   .dp-fill { grid-column: 1 / 4; justify-content: flex-start; }
 }
+
+/* ---------- Ders Planım — not girişi + GANO (Faz: ders-planim) ---------- */
+
+.dp-grades {
+  margin: 0 0 18px; border: 1px solid var(--hairline); background: var(--panel); padding: 12px 14px;
+}
+.dp-grades[hidden] { display: none; }
+.dp-grades-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.dp-grades-grid span {
+  display: inline-flex; flex-direction: column; gap: 2px; min-width: 150px;
+}
+.dp-grades-grid b { color: var(--fg); font-size: 18px; }
+.dp-grades-grid em { color: var(--dimmer); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; font-style: normal; }
+
+.dp-transfer { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 12px 0 8px; }
+.dp-transfer label { display: inline-flex; align-items: center; gap: 6px; color: var(--dim); font-size: 13px; }
+.dp-transfer input, .dp-target-gpa input {
+  font: inherit; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line-hot); padding: 4px 8px; width: 84px;
+}
+.dp-grades-actions { display: flex; gap: 8px; margin: 6px 0 10px; }
+.dp-privacy { color: var(--dimmer); font-size: 12px; margin: 0; line-height: 1.5; }
+.dp-privacy a { color: var(--cyan); }
+
+.dp-sem-avg { color: var(--amber); font-size: 12px; font-weight: 400; margin-left: auto; white-space: nowrap; }
+
+.dp-grade-wrap { display: inline-flex; align-items: center; gap: 6px; }
+.dp-grade {
+  font: inherit; font-size: 12px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line-hot); padding: 3px 4px; min-width: 60px;
+}
+.dp-grade:focus { outline: 2px solid var(--acid); outline-offset: 1px; }
+
+.dp-repeat { color: var(--amber); font-size: 11px; border: 1px solid var(--amber); padding: 1px 5px; white-space: nowrap; }
+
+.dp-elective-inputs {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  padding: 4px 12px 8px;
+}
+.dp-epick {
+  font: inherit; font-size: 12px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line-hot); padding: 3px 4px; max-width: 300px;
+}
+.dp-grade-hint { color: var(--dimmer); font-size: 12px; font-style: italic; }
+
+.dp-types-progress { color: var(--dim); font-size: 12px; margin-top: 8px; }

@@ -871,8 +871,45 @@ import { state } from './core/store.js';
 
     root.querySelector('.pg-plan-label').textContent = plan.planLabel || '';
     renderBranchLegend(root, nodes);
+    renderSemesterList(root, plan, reqByCode);
     await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ders/slot — bir düğüme tıkla`);
     statusEl.classList.remove('busy');
+  }
+
+  // Faz 5.4 (D2): grafiğin dönem-dönem metin karşılığı. Ekran okuyucu için her
+  // zaman DOM'da (sr-only), mobilde "listeye dön" ile görünür olur. Course /
+  // elective item'ları müfredat şemasından, önşart grafik indeksinden gelir.
+  function renderSemesterList(root, plan, reqByCode) {
+    const box = root.querySelector('.pg-semester-list');
+    if (!box) return;
+    box.innerHTML = (plan.semesters || []).map((sem) => {
+      const items = (sem.items || []).map((it) => {
+        if (it.course) {
+          const req = reqByCode?.req?.get(it.course.code);
+          return `<li><code>${esc(it.course.code)}</code> — ${esc(it.course.name)}${req ? `<span class="pg-list-req"> · önşart: ${esc(req)}</span>` : ''}</li>`;
+        }
+        if (it.elective) {
+          const n = it.elective.options ? it.elective.options.length : 0;
+          return `<li><span class="pg-list-elect">Seçmeli havuz:</span> ${esc(it.elective.title)} (${n} seçenek)</li>`;
+        }
+        return '';
+      }).filter(Boolean).join('');
+      return items ? `<li><h3>${esc(sem.title)}</h3><ul>${items}</ul></li>` : '';
+    }).filter(Boolean).join('');
+  }
+
+  // Faz 5.4 (D1): mobilde grafik yerine dönem-dönem listeye geçiş. Liste her
+  // programda üretilir; grafik modunda sr-only (ekran okuyucu yine erişir).
+  function initListToggle(root) {
+    const btn = root.querySelector('.pg-list-toggle');
+    const box = root.querySelector('.pg-semester-list');
+    if (!btn || !box) return;
+    btn.addEventListener('click', () => {
+      const on = root.classList.toggle('pg-list-mode');
+      btn.textContent = on ? 'grafiğe dön' : 'listeye dön';
+      btn.setAttribute('aria-pressed', String(on));
+      box.classList.toggle('sr-only', !on);
+    });
   }
 
   // renderBranchLegend, grafikteki renklerin hangi branşa ait olduğunu
@@ -961,6 +998,7 @@ import { state } from './core/store.js';
             b.addEventListener('click', () => graph.panTo(b.dataset.code)));
         });
         root.querySelector('.pg-reset').addEventListener('click', () => graph && graph.clearFocus());
+        initListToggle(root);
 
         // Paylaşılabilir URL: ?prog=BLG_LS&pool=<slot>#onsart — programı seç,
         // grafik kurulunca (varsa) havuz panelini aç.

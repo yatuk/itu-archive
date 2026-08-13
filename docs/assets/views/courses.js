@@ -284,7 +284,7 @@ function clearSelection() {
 }
 
 function rowsToCSV(rows, filename) {
-  const headers = ['CRN', 'Ders Kodu', 'Branş', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan', 'Doluluk (%)'];
+  const headers = ['CRN', 'Ders Kodu', 'Bölüm', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan', 'Doluluk (%)'];
   const data = rows.map((r) => [
     r[0], r[1], r[3], r[2], r[4], r[5], r[6], r[7],
     r[6] ? Math.round((r[7] / r[6]) * 100) : '',

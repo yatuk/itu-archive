@@ -131,6 +131,14 @@
  </div>
 </header>
 
+<div id="welcome" class="welcome wrap" hidden>
+ <div class="welcome-text">
+  <p><b>Ders Arşivi</b> OBS'nin yayınlamadığını saklar: geçmiş dönemler, kontenjan geçmişi, müfredat ve önşart haritası. Bir dersin kodunu ya da adını aramayı dene — kayıt kararını OBS'den önce buradan ver.</p>
+  <p class="welcome-examples">Örnek: <button type="button" class="w-example" data-q="BLG 102E">BLG 102E</button> · <button type="button" class="w-example" data-q="Mimari">Mimari</button></p>
+ </div>
+ <button type="button" id="w-close" class="w-close" aria-label="Karşılamayı kapat" title="Kapat">×</button>
+</div>
+
 <h2 class="sr-only">Bölümler</h2>
 <nav class="tabs wrap" role="tablist" aria-label="Bölümler">
  <button role="tab" aria-selected="true" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" data-i18n="tabDersler">01 · DERSLER</button>
@@ -263,6 +271,7 @@
             placeholder="seçili bölümde ders kodu veya adı ara…" aria-label="Ders planında ara">
     </label>
     <button type="button" class="pg-reset btn-ghost">odağı temizle</button>
+    <button type="button" class="pg-list-toggle btn-ghost" aria-pressed="false">listeye dön</button>
    </div>
    <div class="pg-results" aria-live="polite"></div>
    <p class="pg-status">bir bölüm seçin</p>
@@ -271,6 +280,7 @@
     <canvas aria-label="Ders planı önşart haritası — müfredat dönem sütunlarında, önşartlar oklarla. Detay için düğümlere tıklayın." role="img"></canvas>
     <div class="pg-tooltip" hidden></div>
    </div>
+   <ol class="pg-semester-list sr-only" aria-label="Müfredat dönem dönem liste görünümü"></ol>
    <div class="pg-detail"></div>
   </div>
  </section>

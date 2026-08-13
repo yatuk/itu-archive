@@ -65,14 +65,14 @@ function renderExams() {
     : 'Bu dönem için sınav takvimi henüz ilan edilmemiş.';
 
   const rows = fillRows($('#erows'), hits.slice(0, 400), (e) => `
-    <tr><td class="crn">${esc(e.crn)}</td>
-        <td class="code"><button type="button" class="row-toggle x-detail" data-code="${esc(e.code)}"><b>${esc(e.code)}</b></button></td>
-        <td>${esc(e.name)}</td>
-        <td>${esc(e.instructor || '—')}</td>
-        <td>${esc(e.type)}</td>
-        <td class="when">${esc(e.place || '—')}</td>
-        <td>${esc(e.date)}</td>
-        <td class="when">${esc(e.day)} ${esc(e.time)}</td></tr>`,
+    <tr><td class="crn" data-label="CRN">${esc(e.crn)}</td>
+        <td class="code" data-label="Ders"><button type="button" class="row-toggle x-detail" data-code="${esc(e.code)}"><b>${esc(e.code)}</b></button></td>
+        <td data-label="Adı">${esc(e.name)}</td>
+        <td data-label="Akademisyen">${esc(e.instructor || '—')}</td>
+        <td data-label="Tür">${esc(e.type)}</td>
+        <td class="when" data-label="Yer">${esc(e.place || '—')}</td>
+        <td data-label="Tarih">${esc(e.date)}</td>
+        <td class="when" data-label="Saat">${esc(e.day)} ${esc(e.time)}</td></tr>`,
   { empty: 'eşleşen sınav yok', colspan: 8 });
   if (rows) {
     rows.forEach((tr) => {

@@ -835,7 +835,7 @@ function exportCSV() {
   const items = currentItems();
   if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
   downloadCSV(`program-${term}.csv`,
-    ['CRN', 'Ders Kodu', 'Branş', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan'],
+    ['CRN', 'Ders Kodu', 'Bölüm', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan'],
     items.map(({ row: r }) => [r[0], r[1], r[3], r[2], r[4], r[5], r[6], r[7]]));
   toast('CSV indirildi');
 }

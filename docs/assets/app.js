@@ -28,6 +28,7 @@ async function boot() {
   I18N.translateDOM();
   initTheme();
   initLangButton();
+  initWelcome();
   wireTabs();
   wireHistoryJump();
   window.addEventListener('itu:goto-program', () => { if (showView) showView('program', true); });
@@ -136,6 +137,35 @@ function initLangButton() {
   if (!btn) return;
   btn.setAttribute('aria-pressed', String(I18N.lang === 'en'));
   btn.addEventListener('click', () => I18N.setLang(I18N.lang === 'en' ? 'tr' : 'en'));
+}
+
+// Faz 5.4: ilk ziyaret karşılaması — üç satırlık band, localStorage ile bir kez.
+// Örnek arama butonları Dersler sekmesine filtreli atlar (app.js'teki global
+// arama deseni gibi #q'yu doldurur + input tetikler).
+function initWelcome() {
+  const w = $('#welcome');
+  if (!w) return;
+  let seen = false;
+  try { seen = localStorage.getItem('itu_welcome_seen') === '1'; } catch {}
+  if (seen) return;
+  w.hidden = false;
+  const close = () => {
+    w.hidden = true;
+    try { localStorage.setItem('itu_welcome_seen', '1'); } catch {}
+  };
+  const closeBtn = $('#w-close');
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  for (const b of w.querySelectorAll('.w-example')) {
+    b.addEventListener('click', () => {
+      close();
+      const q = $('#q');
+      if (q) {
+        q.value = b.dataset.q;
+        q.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+      showView('dersler', true);
+    });
+  }
 }
 
 // Sade temasında sekme adları düz ("Dersler"), fosfor/CRT'de numaralı

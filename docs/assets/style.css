@@ -1029,6 +1029,8 @@ footer {
 .d-prog:hover { border-color: var(--cyan); }
 .d-prog:focus-visible { outline: 2px solid var(--cyan); }
 .d-prog-none { color: var(--dim); border-style: dashed; }
+/* Faz B (G7): resmî listede olmayan program kodu — soluk (kapanmış olabilir). */
+.d-prog-stale { opacity: .55; }
 
 /* Başlıktaki OBS derin bağlantısı */
 .d-obs { color: var(--dim); font-size: 11px; text-decoration: none; border-bottom: 1px dashed var(--line-hot); }

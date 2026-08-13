@@ -8,6 +8,7 @@
 
 import { $, getJSON, esc, fold, normSearch, searchMatch, debounce, downloadCSV, setStatus, fillMeasured, formatInt } from '../core/utils.js';
 import { methodToCode } from '../core/urlcodes.js';
+import { loadProgramMap } from '../core/programs.js';
 import { state } from '../core/store.js';
 import { fillBar } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
@@ -98,8 +99,16 @@ export async function loadTerm(slug) {
     const pSel = $('#f-program');
     const keepP = pSel.value;
     pSel.innerHTML = '<option value="">hepsi</option>' +
-      programs.map((p) => `<option>${esc(p)}</option>`).join('');
+      programs.map((p) => `<option value="${esc(p)}">${esc(p)}</option>`).join('');
     pSel.value = programs.includes(keepP) ? keepP : '';
+    // Faz B (G7): resmî listeden okunur adı yaz (varsa) — kod + ad görünür.
+    loadProgramMap().then((m) => {
+      for (const o of pSel.options) {
+        if (!o.value) continue;
+        const p = m.get(o.value);
+        if (p) o.textContent = `${o.value} — ${p.name}`;
+      }
+    }).catch(() => {});
 
     applyFilters();
   } catch (e) {

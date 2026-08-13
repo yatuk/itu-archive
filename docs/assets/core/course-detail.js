@@ -11,6 +11,7 @@ import { state } from './store.js';
 import { fillBar, trendChart } from './chart.js';
 import { parseReq, renderReqTree } from '../prereq.js';
 import { codeToSlug } from './urlcodes.js';
+import { loadProgramMap } from './programs.js';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
@@ -221,6 +222,27 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   if (titleSpan && document.documentElement.lang === 'en' && cat?.nameEn) {
     titleSpan.textContent = cat.nameEn;
   }
+
+  // Faz B (G7): "alabilen programlar" çiplerine resmî listeden okunur ad yaz;
+  // listede olmayan kodları soluk işaretle (kapanmış/grafik dışı).
+  enrichProgLabels(content);
+}
+
+// programs.json'dan kod → okunur ad. Kod resmî listede yoksa "kapanmış" soluk.
+async function enrichProgLabels(content) {
+  try {
+    const m = await loadProgramMap();
+    for (const b of content.querySelectorAll('.d-prog[data-program]')) {
+      const code = b.dataset.program;
+      const p = m.get(code);
+      if (p) {
+        b.textContent = `${code} — ${p.name}`;
+      } else {
+        b.classList.add('d-prog-stale');
+        b.title = 'Bu program kodu resmî listede yok (kapanmış/grafik dışı olabilir)';
+      }
+    }
+  } catch { /* liste yoksa sessiz — yalnız kodlar görünür */ }
 }
 
 // Panelde dersin önşart VE/VEYA ağacı (P1-9). prereq/graph.json'da kayıtlı

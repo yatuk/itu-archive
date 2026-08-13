@@ -14,6 +14,7 @@ export function initExams() {
   $('#eq').addEventListener('input', debounce(renderExams, 120));
   $('#f-etype').addEventListener('change', renderExams);
   $('#f-building').addEventListener('change', renderExams);
+  $('#f-ebranch').addEventListener('change', renderExams);
   const ics = $('#e-ics');
   if (ics) ics.addEventListener('click', exportExamsICS);
   inited = true;
@@ -38,6 +39,11 @@ async function loadExams() {
       .sort((a, b) => a.localeCompare(b, 'tr'));
     $('#f-building').innerHTML = '<option value="">hepsi</option>' +
       buildings.map((b) => `<option>${esc(b)}</option>`).join('');
+    // Faz B (G9): branş filtresi — e.branch veride vardı, şimdi kullanılıyor.
+    const branches = [...new Set(sched.exams.map((e) => e.branch).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, 'tr'));
+    $('#f-ebranch').innerHTML = '<option value="">hepsi</option>' +
+      branches.map((b) => `<option>${esc(b)}</option>`).join('');
   } catch (e) {
     state.exams = { exams: [] };
     state.examHay = [];
@@ -51,11 +57,13 @@ function renderExams() {
   const q = fold($('#eq').value.trim());
   const type = $('#f-etype').value;
   const bld = $('#f-building').value;
+  const ebranch = $('#f-ebranch').value;
   const terms = q ? q.split(/\s+/) : [];
 
   const hits = state.exams.exams.filter((e, i) => {
     if (type && e.type !== type) return false;
     if (bld && buildingOf(e.place) !== bld) return false;
+    if (ebranch && e.branch !== ebranch) return false;
     return terms.every((t) => state.examHay[i].includes(t));
   });
   currentHits = hits; // .ics dışa aktarımı için

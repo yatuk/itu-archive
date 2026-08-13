@@ -1,6 +1,12 @@
 {
   "detector": {
-    "ignoreRules": [],
+    "ignoreRules": [
+      "dark-glow",
+      "repeating-stripes-gradient",
+      "codex-grid-background",
+      "radial-halo",
+      "ai-color-palette"
+    ],
     "ignoreFiles": [],
     "ignoreValues": [
       {

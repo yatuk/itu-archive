@@ -16,7 +16,7 @@ Birincil kullanıcı **İTÜ öğrencisidir**; ders seçimi ve kayıt haftaları
 
 ## Product Purpose
 
-OBS'nin yayınlamadığı İTÜ ders verisini kalıcılaştırır ve aranabilir yapar: geçmiş dönemler, kontenjan zaman serisi, müfredat/önşart haritası, sınav takvimi, akademik takvim (6 tür), katalog ve not dağılımı. Başarı: öğrenci kayıt haftasında bilinçli karar verir; kaybolan dönem verisi artık "sorulamaz" değildir.
+OBS'nin yayınlamadığı İTÜ ders verisini kalıcılaştırır ve aranabilir yapar: geçmiş dönemler, kontenjan zaman serisi, müfredat/önşart haritası, sınav takvimi, akademik takvim (6 tür), katalog ve not dağılımı. Kullanıcının tek işi: **"bu dersi alabilir miyim, ne zaman, kimden, yer var mı"** sorusunu OBS'den hızlı cevaplamak. Başarı: öğrenci kayıt haftasında bilinçli karar verir; kaybolan dönem verisi artık "sorulamaz" değildir.
 
 ## Positioning
 
@@ -24,7 +24,7 @@ OBS yalnızca içinde bulunulan dönemi gösterir; dönem bitince veri kaybolur.
 
 ## Operating Context
 
-Kaynaklar: `obs.itu.edu.tr/public/*` (DersProgram, DersKatalog, DersBilgi, DersNotDagilimi, GenelTanimlamalar) ve `takvim.sis.itu.edu.tr`. Ders programı günde bir kez, kontenjan kayıt haftalarında yarım saatte bir taranır; CI (GitHub Actions) ile otomatikleşir. Kullanıcı kayıt haftasında, ders seçme ekranıyla yan yana siteye bakar. Ham veri indirilebilir (JSON/CSV): sayfa da aynı dosyaları kullanır.
+Kaynaklar: `obs.itu.edu.tr/public/*` (DersProgram, DersKatalog, DersBilgi, DersNotDagilimi, GenelTanimlamalar) ve `takvim.sis.itu.edu.tr`. Ders programı günde bir kez, kontenjan kayıt haftalarında yarım saatte bir taranır; CI (GitHub Actions) ile otomatikleşir. Kullanıcı kayıt haftasında, çoğunlukla **telefondan, telaşlı ve zaman baskısıyla** siteye bakar; ders seçme ekranıyla yan yana. Teknik okuryazarlığı yüksektir ama vakit yoktur. Ham veri indirilebilir (JSON/CSV): sayfa da aynı dosyaları kullanır.
 
 ## Capabilities and Constraints
 
@@ -37,7 +37,7 @@ Kaynaklar: `obs.itu.edu.tr/public/*` (DersProgram, DersKatalog, DersBilgi, DersN
 
 ## Brand Commitments
 
-Ad: **İTÜ Ders Arşivi** (domain `itu-ders.com`, GitHub `yatuk/itu-archive`). Terminal/retro kimlik: scanlines, monospace `root@itu:~/arsiv$` prompt'u, "DERS ARŞİVİ" masthead. Tema adları: sade (varsayılan), fosfor/koyu. Dil: TR birincil, EN ikincil.
+Ad: **İTÜ Ders Arşivi** (domain `itu-ders.com`, GitHub `yatuk/itu-archive`). Terminal/retro kimlik: scanlines, monospace `root@itu:~/arsiv$` prompt'u, "DERS ARŞİVİ" masthead. Ton: **Türkçe, sade, kurumsal değil; arşivin sakinliği — şaka yok, pazarlama dili yok.** İki tema: **"sade"** (açık, varsayılan) iyileştirme yüzeyidir; **"fosfor"** (koyu terminal) kasıtlı kimliktir ve **piksel düzeyinde dondurulmuştur — değiştirilmez**. **Kırmızı yalnızca ders çakışması ve %100 dolu kontenjan için** ayrılmıştır. Dil: TR birincil, EN ikincil.
 
 ## Evidence on Hand
 
@@ -50,6 +50,7 @@ Ad: **İTÜ Ders Arşivi** (domain `itu-ders.com`, GitHub `yatuk/itu-archive`). 
 3. **Mahremiyet:** not dağılımı yalnızca toplu; birey ifşasına yol açabilecek <10 kişilik sınıflar kaydedilmez.
 4. **Eklemeli uyumluluk:** şema geriye uyumlu büyür, mevcut veri kırılmaz.
 5. **Doğrulama önce:** kayıt kararı için her zaman OBS'nin kendi sayfası referans gösterilir.
+6. **Fosfor dondurulmuştur:** koyu terminal teması sitenin başlangıç kimliğidir; görsel değişiklik yalnızca "sade" yüzeyine dokunur.
 
 ## Accessibility & Inclusion
 

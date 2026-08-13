@@ -525,16 +525,32 @@ function renderSummary(sems) {
     : sems.length > 1 ? `${sems.length} yarıyıl` : 'tüm plan';
   const prog = plan.programName || progCode;
   const label = plan.planLabel ? `<span class="dp-plan-label">${esc(plan.planLabel)}</span>` : '';
+  const remain = remainingRequired();
+  const remainHtml = remain > 0 ? `<span><b>${remain} ders</b><em>kalan zorunlu</em></span>` : '';
   el.innerHTML = `<div class="dp-summary-grid">
     <span><b>${esc(prog)}</b><em>${label || esc(progCode)}</em></span>
     <span><b>${esc(total)}</b><em>program toplamı</em></span>
     <span><b>${esc(load)}</b><em>plan yükü</em></span>
+    ${remainHtml}
   </div>`;
 }
 
 function num(s) {
   const n = parseFloat(String(s || '').replace(',', '.'));
   return isNaN(n) ? 0 : n;
+}
+
+// Notu girilmemiş (henüz alınmamış) zorunlu ders sayısı — "kalan zorunlu dersler".
+function remainingRequired() {
+  if (!plan) return 0;
+  const graded = new Set(allEntries().filter((e) => e.grade).map((e) => e.code));
+  let n = 0;
+  for (const sem of plan.semesters) {
+    for (const item of sem.items) {
+      if (item.course && item.course.required === 'Z' && !graded.has(item.course.code)) n++;
+    }
+  }
+  return n;
 }
 
 // -- GANO hesapları (Faz: Ders Planım not girişi) --

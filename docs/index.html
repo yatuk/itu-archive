@@ -14,12 +14,9 @@
 (function () {
   try {
     var t = localStorage.getItem('itu-theme');
-    if (t && t !== 'auto') { document.documentElement.setAttribute('data-theme', t); }
-    else if (t === 'auto') {
-      document.documentElement.setAttribute('data-theme',
-        matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-    }
-    else { document.documentElement.setAttribute('data-theme', 'sade'); } // yeni ziyaretçi
+    // Yalnızca sade (ana) ve dark (seçenek) var; eski light/contrast/auto
+    // değerleri kaldırılan temalara karşılık gelir — sade'ye düşer.
+    document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'sade');
   } catch (e) {}
 })();
 </script>
@@ -117,9 +114,6 @@
     <div class="theme-pick" role="group" aria-label="Görünüm teması">
      <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)">◎</button>
      <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)">◐</button>
-     <button type="button" class="theme-btn" data-theme="light" aria-pressed="false" aria-label="Açık" title="Açık">☀</button>
-     <button type="button" class="theme-btn" data-theme="contrast" aria-pressed="false" aria-label="Yüksek kontrast" title="Yüksek kontrast">▣</button>
-     <button type="button" class="theme-btn" data-theme="auto" aria-pressed="false" aria-label="Sistem teması" title="Sistem teması">◈</button>
     </div>
     <button type="button" id="lang-btn" class="btn-ghost" title="Dil / Language">TR/EN</button>
    </div>

@@ -591,7 +591,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
-<script>(function(){try{var t=localStorage.getItem('itu-theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t);else document.documentElement.setAttribute('data-theme',matchMedia('(prefers-color-scheme:light)').matches?'light':'dark')}catch(e){}})()</script>
+<script>(function(){try{var t=localStorage.getItem('itu-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'sade')}catch(e){}})()</script>
 <title>{{.Title}} — {{.Lang.SiteTitle}}</title>
 <meta name="description" content="{{.Description}}">
 <link rel="canonical" href="{{.Canonical}}">

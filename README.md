@@ -75,8 +75,8 @@ işaretler; Program sekmesi seçili şubelerin final sınavlarını da çakışm
 açısından denetler, katalogdan AKTS toplamını ve dolma hızını gösterir.
 Akademik takvim tek tıkla `.ics` olarak dışa aktarılabilir. Sekmeler arası
 geçiş tarayıcı geçmişine yazılıyor, geri/ileri çalışır. Üstteki "görünüm"
-seçici ile sade (varsayılan), fosfor, açık ve yüksek kontrast temalar arasında
-geçebilirsiniz; yanındaki TR/EN düğmesi arayüzü İngilizceye çevirir. Sade tema
+seçici ile sade (varsayılan) ve fosfor/koyu temalar arasında geçebilirsiniz;
+yanındaki TR/EN düğmesi arayüzü İngilizceye çevirir. Sade tema
 terminal görünümünü yumuşatır; fosfor kimliğini korur ve istenince seçilir.
 Geçmiş sekmesinde bir dersin detayında dönem dönem kontenjan ve doluluk grafiği
 var. Sınavlar sekmesinde tür ve bina filtresi var.

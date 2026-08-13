@@ -31,13 +31,13 @@ import { state } from './core/store.js';
 
   // Canvas renkleri temaya göre seçilir (WCAG 2.2 AA: kenar ≥3:1, etiket ≥4.5:1).
   // Açık temada koyu zemin üstüne tasarlanmış renkler okunmaz olur; burada token
-  // değerleri okunur ve açık yüzey için yeniden üretilir. Koyu/contrast temasında
-  // değerler ESKİSİYLE AYNIDIR. Tema değişince canvasColors() taze değer verir.
+  // değerleri okunur ve açık yüzey için yeniden üretilir. Koyu temada değerler
+  // ESKİSİYLE AYNIDIR. Tema değişince canvasColors() taze değer verir.
   let _canvasColors = null;
   function canvasColors() {
     const theme = document.documentElement.dataset.theme || 'dark';
     if (_canvasColors && _canvasColors.theme === theme) return _canvasColors;
-    const light = theme === 'sade' || theme === 'light';
+    const light = theme === 'sade';
     const cs = getComputedStyle(document.documentElement);
     const v = (n) => cs.getPropertyValue(n).trim();
     const c = light ? {

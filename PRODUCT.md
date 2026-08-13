@@ -37,7 +37,7 @@ Kaynaklar: `obs.itu.edu.tr/public/*` (DersProgram, DersKatalog, DersBilgi, DersN
 
 ## Brand Commitments
 
-Ad: **İTÜ Ders Arşivi** (domain `itu-ders.com`, GitHub `yatuk/itu-archive`). Terminal/retro kimlik: scanlines, monospace `root@itu:~/arsiv$` prompt'u, "DERS ARŞİVİ" masthead. Tema adları: sade (varsayılan), fosfor/koyu, açık, yüksek kontrast, sistem. Dil: TR birincil, EN ikincil.
+Ad: **İTÜ Ders Arşivi** (domain `itu-ders.com`, GitHub `yatuk/itu-archive`). Terminal/retro kimlik: scanlines, monospace `root@itu:~/arsiv$` prompt'u, "DERS ARŞİVİ" masthead. Tema adları: sade (varsayılan), fosfor/koyu. Dil: TR birincil, EN ikincil.
 
 ## Evidence on Hand
 

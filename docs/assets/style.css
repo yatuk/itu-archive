@@ -79,71 +79,8 @@
   --grain-opacity: .05;
 }
 
-/* Açık tema — fosfor koyuluğunu tersine çevirir, değişkenler tek kaynaktan yönetilir.
-   Zemin düz ve tek renkli: grain deseni ve scanlines bu temada kapalı. */
-[data-theme="light"] {
-  color-scheme: light;
-  /* Açık tema da sade ile aynı ölçeği kullanır (bkz. sade bloğundaki
-     kontrast hedefleri). Koyu / yüksek kontrast teması etkilenmez. */
-  --bg: #fbfcfb;
-  --panel: #ffffff;
-  --panel-2: #f0f3f1;
-  --line: #cdd7cf;          /* dekoratif ayraç · #fff'te 1.5:1 */
-  --line-hot: #73877b;      /* form kenarlığı · #fff'te 3.8:1 (≥3:1) */
-  --fg: #143525;            /* gövde · #fff'te ~16:1 */
-  --dim: #41544a;           /* ikincil metin · #fff'te ~8:1 */
-  --dimmer: #54665b;        /* etiket/başlık/placeholder · #fff'te ~6:1 */
-  --acid: #007a4d;          /* vurgu · #fff'te ~5.9:1 */
-  --cyan: #00749a;          /* bağlantı/odak · #fff'te ~6.3:1 */
-  --amber: #875b00;         /* uyarı · #fff'te ~6:1 */
-  --red: #c2283f;           /* çakışma · #fff'te ~5.8:1 */
-  --row-hover: #e7efe9;
-  --detail-bg: #f2f6f3;
-  --canvas-bg: #f9fbfa;
-  --now-bg: #e9f3ec;
-  --chart-cap: rgba(0, 122, 77, .14);
-  --chart-cap-edge: rgba(0, 122, 77, .5);
-  --chart-axis: rgba(47, 93, 69, .6);
-  --glow: #fbfcfb;
-  --hairline: rgba(0, 0, 0, .08);
-  --hairline-strong: rgba(0, 0, 0, .16);
-  --shadow-soft: 0 14px 44px rgba(30, 60, 45, .14), 0 2px 8px rgba(30, 60, 45, .08);
-  --shadow-card: inset 0 1px 0 rgba(255, 255, 255, .65), 0 10px 32px rgba(30, 60, 45, .10);
-  --inset-hi: inset 0 1px 0 rgba(255, 255, 255, .75);
-  --inset-lo: inset 0 -1px 0 rgba(0, 0, 0, .05);
-  --grain-opacity: 0;
-}
-/* Açık temada CRT taraması ve grain kapalı: düz, tek renkli zemin. */
-[data-theme="light"] .scanlines { display: none; }
-
-/* Yüksek kontrast — sınırlar ve metinler netleşir. */
-[data-theme="contrast"] {
-  --bg: #000;
-  --panel: #000;
-  --panel-2: #0d0d0d;
-  --line: #ffffff;
-  --line-hot: #ffffff;
-  --fg: #ffffff;
-  --dim: #ffffff;
-  --dimmer: #d9d9d9;
-  --acid: #00ff9c;
-  --cyan: #35e0ff;
-  --amber: #ffc857;
-  --red: #ff4f6d;
-  --row-hover: #161616;
-  --detail-bg: #000;
-  --canvas-bg: #000;
-  --now-bg: #151515;
-  --glow: #000;
-  --hairline: rgba(255, 255, 255, .9);
-  --hairline-strong: #ffffff;
-  --shadow-soft: 0 0 0 1px #fff;
-  --shadow-card: 0 0 0 1px #fff;
-  --inset-hi: none;
-  --inset-lo: none;
-  --grain-opacity: 0;
-}
-[data-theme="contrast"] .scanlines { display: none; }
+/* light ve contrast temaları kaldırıldı — yalnızca sade (ana) + dark (seçenek).
+   Sade açık yüzeydir; dark, yukarıdaki :root token'larından beslenir (fosfor). */
 
 /* Sade tema — terminal görünümünden ayrışan, genele hitap eden yüz.
    Renkler tek kaynaktan (değişkenler); fosfor/CRT dekorasyonları kapalı.
@@ -206,43 +143,30 @@
 /* Açık temalarda küçük/harf aralıklı etiket tipografisi düzeltilir:
    koyu ve yüksek kontrast temasındaki görünüm PİKSEL DEĞİŞMEZ (yalnızca
    light/sade için geçersiz kılınır). */
-[data-theme="sade"] thead th,
-[data-theme="light"] thead th {
+[data-theme="sade"] thead th {
   font-weight: 600; letter-spacing: .05em; font-size: 12px;
 }
-[data-theme="sade"] .statbar dt,
-[data-theme="light"] .statbar dt { letter-spacing: .06em; }
-[data-theme="sade"] .eyebrow,
-[data-theme="light"] .eyebrow { font-size: 12px; letter-spacing: .05em; }
+[data-theme="sade"] .statbar dt { letter-spacing: .06em; }
+[data-theme="sade"] .eyebrow { font-size: 12px; letter-spacing: .05em; }
 /* Küçük/harf aralıklı etiketlerde wide-tracking azaltılır (koyu tema korunur). */
-[data-theme="sade"] .detail dt,
-[data-theme="light"] .detail dt { letter-spacing: .06em; }
-[data-theme="sade"] .badge,
-[data-theme="light"] .badge { letter-spacing: .08em; }
-[data-theme="sade"] .req-op,
-[data-theme="light"] .req-op { letter-spacing: .08em; }
-[data-theme="sade"] .p-crnstrip-label,
-[data-theme="light"] .p-crnstrip-label { letter-spacing: .05em; }
-[data-theme="sade"] .tt-chip,
-[data-theme="light"] .tt-chip { letter-spacing: .02em; }
+[data-theme="sade"] .detail dt { letter-spacing: .06em; }
+[data-theme="sade"] .badge { letter-spacing: .08em; }
+[data-theme="sade"] .req-op { letter-spacing: .08em; }
+[data-theme="sade"] .p-crnstrip-label { letter-spacing: .05em; }
+[data-theme="sade"] .tt-chip { letter-spacing: .02em; }
 
 /* Açık temada arama alanları tekil görünüm: ">" terminal öneki yerine büyüteç,
    kutu görünüm, kenarlık ≥3:1, odakta 2px halka. Fosfor teması ">" önekini korur. */
-[data-theme="sade"] .query,
-[data-theme="light"] .query { position: relative; }
-[data-theme="sade"] .query .sigil,
-[data-theme="light"] .query .sigil { display: none; }
-[data-theme="sade"] .query::before,
-[data-theme="light"] .query::before {
+[data-theme="sade"] .query { position: relative; }
+[data-theme="sade"] .query .sigil { display: none; }
+[data-theme="sade"] .query::before {
   content: '';
   width: 16px; height: 16px; flex: none;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23566a5d' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M21 21l-4.3-4.3'/%3E%3C/svg%3E") center/contain no-repeat;
   opacity: .75;
 }
 [data-theme="sade"] .query input,
-[data-theme="light"] .query input,
-[data-theme="sade"] .pg-search,
-[data-theme="light"] .pg-search {
+[data-theme="sade"] .pg-search {
   background: var(--panel);
   border: 1px solid var(--line-hot); /* #73877b — beyazda 3.8:1 (≥3:1) */
   border-radius: 8px;
@@ -250,15 +174,12 @@
   box-shadow: none;
 }
 [data-theme="sade"] .query input:focus,
-[data-theme="light"] .query input:focus,
-[data-theme="sade"] .pg-search:focus,
-[data-theme="light"] .pg-search:focus {
+[data-theme="sade"] .pg-search:focus {
   outline: 2px solid var(--cyan); outline-offset: 1px;
   border-color: var(--cyan);
 }
 /* Sonuç sayacı ile arama kutusu çakışmasın — yeterli boşluk (sadece açık tema). */
-[data-theme="sade"] .pg-search,
-[data-theme="light"] .pg-search { margin-bottom: 8px; }
+[data-theme="sade"] .pg-search { margin-bottom: 8px; }
 
 * { box-sizing: border-box; }
 /* Ekran okuyucu için görünür-bezli başlık (başlık hiyerarşisi: h1→h2→h3). */
@@ -787,8 +708,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .pg-branch i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
 /* Açık temada pastel lejant noktaları açık zemine karşı kaybolabilir — iç
    sınır halkası noktayı ≥3:1 tanımlanabilir yapar (1.4.11). */
-[data-theme="sade"] .pg-branch i,
-[data-theme="light"] .pg-branch i { box-shadow: inset 0 0 0 1px rgba(30, 43, 35, .5); }
+[data-theme="sade"] .pg-branch i { box-shadow: inset 0 0 0 1px rgba(30, 43, 35, .5); }
 .pg-status.busy { color: var(--amber); }
 
 .btn-ghost {

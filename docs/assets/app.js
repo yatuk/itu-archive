@@ -105,9 +105,8 @@ async function boot() {
 
 function initTheme() {
   const btns = [...document.querySelectorAll('.theme-btn')];
-  const resolveAuto = () => matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   const domApply = (t) => {
-    document.documentElement.setAttribute('data-theme', t === 'auto' ? resolveAuto() : t);
+    document.documentElement.setAttribute('data-theme', t);
     applyTabLabels();
     for (const b of btns) {
       b.setAttribute('aria-pressed', String(b.dataset.theme === t));
@@ -118,17 +117,15 @@ function initTheme() {
     domApply(t);
     try { localStorage.setItem('itu-theme', t); } catch (e) {}
   };
-  // Kayıtlı tercih; yoksa varsayılan "sade" (yeni ziyaretçiler).
+  // Yalnızca sade (ana) ve dark (seçenek) var. Eski light/contrast/auto
+  // tercihleri kaldırılan temalara karşılık gelir — sade'ye düşer (yoksa
+  // :root koyusu görünürdü, çünkü light/contrast CSS blokları silindi).
   let cur = 'sade';
-  try { cur = localStorage.getItem('itu-theme') || 'sade'; } catch (e) {}
-  domApply(cur); // auto ise sistemden çöz
+  try { cur = localStorage.getItem('itu-theme') === 'dark' ? 'dark' : 'sade'; } catch (e) {}
+  domApply(cur);
   for (const b of btns) {
     b.addEventListener('click', () => apply(b.dataset.theme));
   }
-  // Sistem teması değişince auto modunda güncelle.
-  matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
-    if (localStorage.getItem('itu-theme') === 'auto') domApply('auto');
-  });
 }
 
 // TR/EN düğmesi (Faz 5.3): mevcut dilin karşıtına geçer. setLang tercihi

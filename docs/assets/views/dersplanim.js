@@ -1003,7 +1003,12 @@ function focusNextGrade(current) {
   const all = [...document.querySelectorAll('#dp-semesters .dp-grade, #dp-semesters .dp-epick')];
   const idx = all.indexOf(current);
   const next = all[idx + 1];
-  if (next) { next.focus(); next.select?.(); }
+  if (next) {
+    next.focus();
+    next.select?.();
+    // Klavye açıkken seçili satır görünürde kalsın (scroll-margin + pay).
+    next.scrollIntoView({ block: 'nearest' });
+  }
 }
 
 function electiveBySlot(slotKey) {

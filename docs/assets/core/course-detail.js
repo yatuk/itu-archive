@@ -17,6 +17,12 @@ import { TAKEN_CHANGED, getTaken } from './taken.js';
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
 
+// İçerik bazlı mobil tespiti (user-agent değil): dar ekranda panel/grafik
+// davranışı farklılaşır (trend 6 dönem, katlanabilirler kapalı, tam ekran panel).
+function isMobile() {
+  return window.matchMedia('(max-width: 600px)').matches;
+}
+
 // Dolma süresini insanca yazar: "kayıt başladıktan 3 sa 20 dk sonra doldu".
 // Kontenjan zaman serisi yalnızca aktif dönem için yüklenir (state.quota).
 function fillNote(crn) {
@@ -192,7 +198,7 @@ function histHtml(hist) {
   for (const [slug, secs] of byTerm) secs.forEach((r, i) => rows.push({ slug, termFirst: i === 0, ...r }));
   return `<section class="d-hist">
     <h4>Geçmiş dönemler · ${byTerm.size} dönemde açıldı (${esc(openIn.join(', '))})</h4>
-    ${trendChart(byTerm)}
+    ${trendChart(byTerm, isMobile() ? 6 : 8)}
     <div class="tablewrap"><table class="htable" aria-label="Dönem geçmişi">
       <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr></thead>
       <tbody>${rows.map((r) => `<tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
@@ -217,9 +223,10 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   // hatırla (örn. önşart sekmesinden açıldıysa oraya dön). Bağlantıdan
   // doğrudan açılıyorsa kapatınca dersler görünümüne dön.
   lastDetailHash = location.hash.startsWith('#ders/') ? null : (location.hash || '#dersler');
-  // #ders/<slug> (boşluksuz, kararlı) — URL temizliği. Eski #ders/...%20... kodlu
-  // bağlantılar yine çözülür (openDetailFromHash slugToCode).
-  history.replaceState(null, '', '#ders/' + codeToSlug(code));
+  // #ders/<slug> (boşluksuz, kararlı). pushState: tarayıcı GERİ düğmesi paneli kapatır.
+  // Eski #ders/...%20... kodlu bağlantılar yine çözülür (openDetailFromHash slugToCode).
+  const slug = codeToSlug(code);
+  if (!location.hash.startsWith('#ders/')) history.pushState(null, '', '#ders/' + slug);
 
   const branch = String(code).split(' ')[0];
   const [list, hist, cat, gr, buildings] = await Promise.all([
@@ -420,7 +427,7 @@ function catalogHtml(cat) {
     ${midtermLine}
     ${eqHtml}
     ${cat.description ? details('Ders içeriği', false, `<p>${esc(cat.description)}</p>`) : ''}
-    ${(cat.outcomes || []).length ? details(`Öğrenme çıktıları (${cat.outcomes.length})`, true, `<ul>${list(cat.outcomes)}</ul>`) : ''}
+    ${(cat.outcomes || []).length ? details(`Öğrenme çıktıları (${cat.outcomes.length})`, !isMobile(), `<ul>${list(cat.outcomes)}</ul>`) : ''}
     ${planHtml ? details(`Haftalık plan (${(cat.weeklyPlan || cat.weeklyTopics || []).length})`, false, planHtml) : ''}
     ${(cat.textbooks || []).length ? details('Kaynak kitaplar', false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
     ${cat.sourceUrl ? `<p class="d-cat-src">kaynak: <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">OBS katalog formu</a></p>` : ''}
@@ -557,6 +564,27 @@ export function initCourseDetail() {
   $('#detail-panel').addEventListener('click', (e) => { if (e.target.id === 'detail-panel') closeCourseDetail(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#detail-panel').hidden) closeCourseDetail(); });
   document.addEventListener('keydown', trapDetailFocus);
+  // Geri tuşu: hash #ders/ dışına dönünce panel kapanır (pushState ile).
+  window.addEventListener('hashchange', () => {
+    const panel = $('#detail-panel');
+    if (panel && !panel.hidden && !location.hash.startsWith('#ders/')) closeCourseDetail();
+  });
+  // Mobil: başlığı aşağı sürükleyerek kapat (aşağı çekme).
+  const box = $('#detail-box');
+  if (box) {
+    let drag = null;
+    box.addEventListener('pointerdown', (e) => {
+      if (!isMobile() || !e.target.closest('.d-head, #detail-close')) return;
+      drag = { y: e.clientY, id: e.pointerId };
+    });
+    box.addEventListener('pointermove', (e) => {
+      if (drag && drag.id === e.pointerId && e.clientY - drag.y > 60) {
+        drag = null;
+        closeCourseDetail();
+      }
+    });
+    box.addEventListener('pointerup', () => { drag = null; });
+  }
   window.addEventListener('itu:course-detail', (e) => {
     const d = e.detail || {};
     if (d.code) openCourseDetail(d.code, { term: d.term, source: d.source });

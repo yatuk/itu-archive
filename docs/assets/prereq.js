@@ -608,24 +608,51 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
         this.draw();
       }, { passive: false });
 
-      c.addEventListener('mousedown', (e) => { this.drag = { x: e.clientX, y: e.clientY, moved: false }; });
-      window.addEventListener('mousemove', (e) => {
-        if (!this.drag) return;
+      // Dokunma + fare: pointer olayları tekelleşir (mobilde pan + dokunuş).
+      // touch-action:none zaten var — sayfa kaydırması çalınmaz.
+      this.pointers = new Map();
+      this.pinch = null;
+      const pDist = () => {
+        const ps = [...this.pointers.values()];
+        return ps.length >= 2 ? Math.hypot(ps[0].x - ps[1].x, ps[0].y - ps[1].y) : 0;
+      };
+      c.addEventListener('pointerdown', (e) => {
+        this.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+        if (this.pointers.size === 1) this.drag = { x: e.clientX, y: e.clientY, moved: false, id: e.pointerId };
+        else if (this.pointers.size === 2) {
+          this.pinch = { dist: pDist(), startK: this.cam.k };
+          this.drag = null;
+        }
+      });
+      window.addEventListener('pointermove', (e) => {
+        if (!this.pointers.has(e.pointerId)) return;
+        this.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+        if (this.pinch && this.pointers.size >= 2) {
+          const d = pDist();
+          if (d > 0) { this.cam.k = Math.max(0.4, Math.min(3, this.pinch.startK * (d / this.pinch.dist))); this.draw(); }
+          return;
+        }
+        if (!this.drag || this.drag.id !== e.pointerId) return;
         const dx = e.clientX - this.drag.x, dy = e.clientY - this.drag.y;
         if (Math.abs(dx) + Math.abs(dy) > 3) this.drag.moved = true;
         this.cam.x += dx; this.cam.y += dy;
         this.drag.x = e.clientX; this.drag.y = e.clientY;
         this.draw();
       });
-      window.addEventListener('mouseup', (e) => {
-        if (this.drag && !this.drag.moved && this.nodes) {
-          const rect = c.getBoundingClientRect();
-          const n = this.nodeAt(e.clientX - rect.left, e.clientY - rect.top);
-          if (n) this.focusNode(n.code);
-          else this.clearFocus();
+      window.addEventListener('pointerup', (e) => {
+        this.pointers.delete(e.pointerId);
+        if (this.pinch && this.pointers.size < 2) this.pinch = null;
+        if (this.drag && this.drag.id === e.pointerId) {
+          if (!this.drag.moved && this.nodes) {
+            const rect = c.getBoundingClientRect();
+            const n = this.nodeAt(e.clientX - rect.left, e.clientY - rect.top);
+            if (n) this.focusNode(n.code);
+            else this.clearFocus();
+          }
+          this.drag = null;
         }
-        this.drag = null;
       });
+      window.addEventListener('pointercancel', () => { this.pointers.clear(); this.pinch = null; this.drag = null; });
       c.addEventListener('mousemove', (e) => {
         if (!this.nodes) return;
         const rect = c.getBoundingClientRect();
@@ -933,6 +960,13 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     const btn = root.querySelector('.pg-list-toggle');
     const box = root.querySelector('.pg-semester-list');
     if (!btn || !box) return;
+    // Mobilde varsayılan LİSTE görünümü; "grafiğe dön" ile canvas'a geçilir.
+    if (window.matchMedia('(max-width: 600px)').matches && !root.classList.contains('pg-list-mode')) {
+      root.classList.add('pg-list-mode');
+      btn.textContent = 'grafiğe dön';
+      btn.setAttribute('aria-pressed', 'true');
+      box.classList.remove('sr-only');
+    }
     btn.addEventListener('click', () => {
       const on = root.classList.toggle('pg-list-mode');
       btn.textContent = on ? 'grafiğe dön' : 'listeye dön';

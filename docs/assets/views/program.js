@@ -24,6 +24,8 @@ let crnsApplied = false;
 // Izgara görünüm seçenekleri: boş hafta sonu sütunlarını açma ve tam gün aralığı.
 let showWeekend = false;
 let showFullDay = false;
+// Mobilde varsayılan gün listesidir; "ızgara görünümü" ile ızgaraya geçilir.
+let showGrid = false;
 
 // --- çoklu program (liste) ---
 const PROG_KEY = 'itu-programs';
@@ -117,7 +119,8 @@ export function initProgram() {
   $('#p-obs').addEventListener('mouseleave', () => hideTip());
   $('#p-favs').addEventListener('click', addFavorites);
   $('#p-full').addEventListener('change', render);
-  // Izgara görünüm seçenekleri (hafta sonu sütunları / tam gün aralığı).
+  // Izgara görünüm seçenekleri (hafta sonu sütunları / tam gün aralığı / ızgara).
+  $('#p-gridview').addEventListener('change', (e) => { showGrid = e.target.checked; render(); });
   $('#p-weekend').addEventListener('change', (e) => { showWeekend = e.target.checked; render(); });
   $('#p-fullday').addEventListener('change', (e) => { showFullDay = e.target.checked; render(); });
   document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
@@ -544,6 +547,11 @@ function renderGrid(itemRows) {
     wrap.innerHTML = '<p class="empty">Zaman bilgisi olan ders eklenmedi.</p>' + noTimeNote;
     return;
   }
+  // Mobilde varsayılan GÜN LİSTESİ; "ızgara görünümü" ile yatay ızgaraya geçilir.
+  if (window.matchMedia('(max-width: 600px)').matches && !showGrid) {
+    renderDayList(itemRows, t, noTime, noTimeNote);
+    return;
+  }
   placedRefs = [];
   const FULL = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
   const TTD = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
@@ -654,6 +662,59 @@ function renderGrid(itemRows) {
   wrap.querySelectorAll('.tt-block').forEach((b, i) => {
     b.addEventListener('click', () => openDetail(placedRefs[i], term));
   });
+}
+
+// Mobil GÜN LİSTESİ: gün başlıkları altında dersler zaman sırasıyla; çakışanlar
+// üst üste "çakışıyor" etiketiyle (kırmızı kenarlık). Yatay ızgaranın yerine.
+function renderDayList(itemRows, t, noTime, noTimeNote) {
+  const wrap = $('#p-grid');
+  const FULL = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+  const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+  const byDay = FULL.map(() => []);
+  for (const s of t.all) { const di = FULL.indexOf(s.day); if (di >= 0) byDay[di].push(s); }
+  const visIdx = showWeekend || byDay[5].length || byDay[6].length ? [0, 1, 2, 3, 4, 5, 6] : [0, 1, 2, 3, 4];
+  const list = document.createElement('div');
+  list.className = 'dp-daylist';
+  for (const di of visIdx) {
+    if (!byDay[di].length) continue;
+    const day = document.createElement('div');
+    day.className = 'dp-day';
+    const h = document.createElement('h4');
+    h.textContent = FULL[di];
+    day.appendChild(h);
+    const sessions = byDay[di].slice().sort((a, b) => a.start - b.start || a.end - b.end);
+    for (const s of sessions) {
+      const conflict = sessions.some((o) => o !== s && s.start < o.end && o.start < s.end);
+      const row = document.createElement('button');
+      row.type = 'button';
+      row.className = 'dp-sess' + (conflict ? ' dp-sess-conf' : '');
+      row.title = `${s.row[1]} · ${s.row[5] || ''} · CRN ${s.row[0]}`;
+      const code = document.createElement('b');
+      code.textContent = s.row[1];
+      const time = document.createElement('span');
+      time.textContent = `${fmtMin(s.start)}–${fmtMin(s.end)}`;
+      const crn = document.createElement('span');
+      crn.textContent = `CRN ${s.row[0]}`;
+      row.append(code, ' ', time, ' ', crn);
+      if (conflict) {
+        row.append(' ');
+        const tag = document.createElement('em');
+        tag.className = 'dp-sess-conf-tag';
+        tag.textContent = 'çakışıyor';
+        row.appendChild(tag);
+      }
+      row.addEventListener('click', () => openDetail(s.row, term));
+      day.appendChild(row);
+    }
+    list.appendChild(day);
+  }
+  if (noTime.length) {
+    const note = document.createElement('p');
+    note.className = 'tt-no-time';
+    note.textContent = noTimeNote.replace(/<[^>]+>/g, '');
+    list.appendChild(note);
+  }
+  wrap.replaceChildren(list);
 }
 
 let placedRefs = [];

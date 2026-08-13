@@ -33,7 +33,7 @@
 <meta name="twitter:description" content="İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi.">
 <meta name="twitter:image" content="https://itu-ders.com/glitch_effect.gif">
 
-<link rel="stylesheet" href="assets/style.css?v=9392bc226">
+<link rel="stylesheet" href="assets/style.css?v=afc575c58">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -143,15 +143,15 @@
 
 <h2 class="sr-only">Bölümler</h2>
 <nav class="tabs wrap" role="tablist" aria-label="Bölümler">
- <button role="tab" aria-selected="true" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" data-i18n="tabDersler">01 · DERSLER</button>
- <button role="tab" aria-selected="false" id="tab-gecmis" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" data-i18n="tabGecmis">02 · GEÇMİŞ</button>
- <button role="tab" aria-selected="false" id="tab-onsart" aria-controls="view-onsart" tabindex="-1" data-view="onsart" data-i18n="tabOnsart">03 · ÖNŞART HARİTASI</button>
- <button role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar" data-i18n="tabSinavlar">04 · SINAVLAR</button>
- <button role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" data-i18n="tabTakvim">05 · AKADEMİK TAKVİM</button>
- <button role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" data-i18n="tabDonemler">06 · DÖNEMLER</button>
- <button role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" data-i18n="tabDersplanim">07 · DERS PLANIM</button>
- <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">08 · PROGRAM</button>
- <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">09 · HAKKINDA</button>
+ <button role="tab" aria-selected="true" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" data-i18n="tabDersler">01 DERSLER</button>
+ <button role="tab" aria-selected="false" id="tab-gecmis" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" data-i18n="tabGecmis">02 GEÇMİŞ</button>
+ <button role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" data-i18n="tabDersplanim">03 DERS PLANIM/GPA</button>
+ <button role="tab" aria-selected="false" id="tab-onsart" aria-controls="view-onsart" tabindex="-1" data-view="onsart" data-i18n="tabOnsart">04 ÖNŞART HARİTASI</button>
+ <button role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar" data-i18n="tabSinavlar">05 SINAVLAR</button>
+ <button role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" data-i18n="tabTakvim">06 AKADEMİK TAKVİM</button>
+ <button role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" data-i18n="tabDonemler">07 DÖNEMLER</button>
+ <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">08 PROGRAM</button>
+ <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">09 HAKKINDA</button>
 </nav>
 
 <main class="wrap">
@@ -396,6 +396,10 @@
     <div id="p-obs-code" class="p-obs-code" hidden></div>
    </aside>
    <div class="p-main">
+    <div class="p-gridopts">
+     <label class="check"><input type="checkbox" id="p-weekend"> hafta sonunu göster</label>
+     <label class="check"><input type="checkbox" id="p-fullday"> tüm günü göster</label>
+    </div>
     <div id="p-grid" class="p-grid"></div>
    </div>
   </div>
@@ -529,6 +533,6 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
-<script type="module" src="assets/app.js?v=9392bc226"></script>
+<script type="module" src="assets/app.js?v=afc575c58"></script>
 </body>
 </html>

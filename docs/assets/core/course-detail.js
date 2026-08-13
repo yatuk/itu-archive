@@ -99,11 +99,8 @@ function secCard(s, buildings, showMeta = true) {
     .map((n) => `<button type="button" class="btn-ghost d-hist" data-name="${esc(n)}">${esc(n)} geçmişinde ara</button>`)
     .join('');
   const sessions = sessionsHtml(s, buildings);
-  // Tek satır doluluk: "0/60 · %0" + tek çubuk (yüzde iki kez yazılmaz).
-  const pct = s.capacity ? Math.round((s.enrolled / s.capacity) * 100) : null;
-  const stats = s.capacity
-    ? `<span class="fill">${formatInt(s.enrolled)} / ${formatInt(s.capacity)} · %${pct}<span class="bar"><i style="width:${pct}%"></i></span></span>`
-    : '—';
+  // Tek satır doluluk: fillBar'ın detail varyantı — tek kaynak (full/tight dahil).
+  const stats = s.capacity ? fillBar(s.capacity, s.enrolled, { detail: true }) : '—';
   return `
     <div class="d-sec">
       <div class="d-sec-head">

@@ -347,6 +347,18 @@ test('fillBar tam ve kritik doluluk sınıflarını verir', () => {
   assert.ok(fillBar(20, 10).includes('bar '));
 });
 
+test('fillBar detail varyantı: yazılan/kapasite · %pct + aynı sınıflar', () => {
+  const d = fillBar(60, 40, { detail: true });
+  assert.ok(d.includes('40 / 60 · %67'), d);
+  assert.ok(d.includes('bar '), 'tight sınıfı eklenmezken bar mevcut');
+  const full = fillBar(60, 60, { detail: true });
+  assert.ok(full.includes('60 / 60 · %100') && full.includes('full'), full);
+  const tight = fillBar(60, 55, { detail: true });
+  assert.ok(tight.includes('tight'), tight);
+  // Varsayılan davranış değişmez.
+  assert.ok(!fillBar(60, 40).includes('40 / 60'));
+});
+
 test('trendChart dönem bazında SVG üretir (iç içe çubuk + tam etiket)', () => {
   const byTerm = new Map([
     ['2025-2026-guz', [{ cap: 50, enr: 30 }, { cap: 50, enr: 40 }]],

@@ -639,6 +639,27 @@ td.when { color: var(--dim); white-space: pre-line; }
 .bar i { position: absolute; inset: 0 auto 0 0; background: var(--acid); }
 .bar.full i { background: var(--amber); }
 .bar.tight i { background: var(--amber); }
+/* Kontenjan çubuğu — imza öğesi (sade). Tek kaynak fillBar; %100 çizgisi, hap
+   şeklindeki dolgu ve amber durum ayrımı. Fosfor teması ince/terminal çubuğu korur. */
+[data-theme="sade"] .bar {
+  width: 64px; height: 8px; border-radius: 999px;
+  background: var(--panel-2); border: 1px solid var(--line);
+  position: relative; overflow: visible; box-sizing: border-box;
+}
+[data-theme="sade"] .bar i {
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--acid), color-mix(in srgb, var(--acid) 72%, #000));
+}
+/* %100 çizgisi — kapasite dolmadan da sınır görünür (arşiv göstergesi). */
+[data-theme="sade"] .bar::after {
+  content: ''; position: absolute; right: 1px; top: -3px; bottom: -3px; width: 2px;
+  border-radius: 1px; background: var(--line-hot); opacity: .55;
+}
+[data-theme="sade"] .bar.full i,
+[data-theme="sade"] .bar.tight i { background: var(--amber); }
+/* Dolu = amber çerçeve + dolu çizgi; yakın (tight) = yalnızca amber dolgu. */
+[data-theme="sade"] .bar.full { border-color: var(--amber); }
+[data-theme="sade"] .bar.full::after { background: var(--amber); opacity: 1; }
 
 tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line-hot); }
 .detail dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 0; }

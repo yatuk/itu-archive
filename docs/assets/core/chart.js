@@ -1,14 +1,18 @@
 // Görselleştirme yardımcıları: doluluk çubuğu ve dönem trend grafiği.
 // Saf string üreticileri — DOM'a dokunmazlar, test edilebilirler.
 
-import { termLabel, esc } from './utils.js';
+import { termLabel, esc, formatInt } from './utils.js';
 
-// fillBar, kontenjan/yazılan için yüzde + çubuk üretir.
-export function fillBar(cap, enr) {
+// fillBar, kontenjan/yazılan için yüzde + çubuk üretir — kontenjan çubuğunun
+// TEK kaynağı (tablo, geçmiş, program, ders planım, detay paneli). full/tight
+// sınıfları doluluk durumunu taşır. detail:true → "yazılan / kapasite · %pct"
+// (detay paneli şube kartı); aksi halde "%pct".
+export function fillBar(cap, enr, { detail = false } = {}) {
   if (!cap) return '—';
   const pct = Math.min(100, Math.round((enr / cap) * 100));
   const cls = pct >= 100 ? 'full' : pct >= 85 ? 'tight' : '';
-  return `<span class="fill">%${pct}<span class="bar ${cls}"><i style="width:${pct}%"></i></span></span>`;
+  const label = detail ? `${formatInt(enr)} / ${formatInt(cap)} · %${pct}` : `%${pct}`;
+  return `<span class="fill">${label}<span class="bar ${cls}"><i style="width:${pct}%"></i></span></span>`;
 }
 
 // trendChart (Faz: panel elden geçirme): iç içe (nested) çubuk — açık çerçeve

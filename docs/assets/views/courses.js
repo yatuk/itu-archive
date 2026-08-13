@@ -57,6 +57,13 @@ export function initCourses() {
   $('#sel-only').addEventListener('change', () => { if (ttOn) renderTimetable(); });
   $('#sel-send').addEventListener('click', sendToProgram);
   wireSort();
+  // Mobil "sırala" seçicisi: masaüstü sıralama başlıklarının yerine.
+  $('#mobile-sort').addEventListener('change', (e) => {
+    const key = e.target.value;
+    state.sort = { key, dir: state.sort.key === key ? state.sort.dir : 1 };
+    updateSortUI();
+    applyFilters();
+  });
   // Mobil filtre bottom-sheet: "Filtreler (N)" düğmesi + uygula/temizle + karartma.
   const fsOpen = (open) => {
     $('#filters').classList.toggle('open', open);
@@ -320,6 +327,8 @@ function updateSortUI() {
     th.classList.toggle('sorted', on);
     th.setAttribute('aria-sort', on ? (state.sort.dir === 1 ? 'ascending' : 'descending') : 'none');
   }
+  const ms = $('#mobile-sort');
+  if (ms) ms.value = state.sort.key;
 }
 
 /* ---------- filtre çipleri ---------- */

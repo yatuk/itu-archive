@@ -1276,24 +1276,34 @@ body.modal-open { overflow: hidden; }
   #results, #results thead, #results tbody { display: block; }
   #results thead { display: none; }
   #results tbody { display: grid; gap: 10px; }
+  /* Kompakt kart: [★] KOD · CRN / ad / hoca / zaman / sağ alt doluluk. */
   #results tr {
-    display: grid; grid-template-columns: auto 1fr auto; gap: 6px 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "fav title crn"
+      "name name name"
+      "instr instr instr"
+      "when when when"
+      "fill fill fill";
+    gap: 3px 8px;
     background: var(--panel); border: 1px solid var(--hairline-strong);
     border-radius: var(--radius-card); padding: 10px 12px;
   }
-  #results td { display: contents; } /* her hücre kendi etiketiyle grid'e yayılır */
-  #results td[data-label]::before {
-    content: attr(data-label); color: var(--dimmer); font-size: 10px;
-    letter-spacing: .08em; text-transform: uppercase; grid-column: 1;
-  }
-  #results td[data-label] > * { grid-column: 2 / 4; }
-  #results .sel { grid-column: 1; grid-row: 1; }
-  #results .fav { grid-column: 3; grid-row: 1; }
-  #results .code[data-label] { grid-column: 2 / 4; grid-row: 1; }
-  #results .code[data-label]::before { display: none; }
-  #results .code b { font-size: 14px; }
-  #results .code small { display: inline; margin-left: 6px; }
-  #results td.when { white-space: normal; }
+  #results td { display: block; }
+  #results .sel { display: none; } /* toplu seçim masaüstü işi */
+  #results .fav { grid-area: fav; align-self: center; }
+  #results .code { grid-area: title; }
+  #results .code b { font-size: 15px; }
+  #results .code small { display: none; }
+  #results .crn { grid-area: crn; color: var(--dimmer); align-self: center; }
+  #results .crn::before { content: '· '; }
+  #results td[data-label="Adı"] { grid-area: name; }
+  #results td[data-label="Öğretim Üyesi"] { grid-area: instr; color: var(--dim); }
+  #results .when { grid-area: when; white-space: normal; }
+  #results td[data-label="Doluluk"] { grid-area: fill; justify-self: end; }
+  #results td[data-label="Kont."], #results td[data-label="Yazılan"] { display: none; }
+  #results td[data-label]::before { display: none; }
 
   /* Faz 5.4: sınavlar tablosu da mobilde kart görünümüne döner.
      #erows zaten tbody'dir — seçiciler #etable thead + #erows olmalı. */
@@ -1982,4 +1992,13 @@ body { padding-bottom: env(safe-area-inset-bottom); }
     opacity: 0; pointer-events: none; transition: opacity 240ms;
   }
   .filters-scrim.show { opacity: 1; pointer-events: auto; }
+}
+
+/* Mobil "sırala" seçicisi — masaüstü sıralama başlıklarının yerine. */
+.mobile-sort { display: none; }
+@media (max-width: 600px) {
+  .mobile-sort {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--dim); font-size: 13px;
+  }
 }

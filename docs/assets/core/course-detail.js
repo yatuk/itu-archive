@@ -6,7 +6,7 @@
 // trendi + dönem tablosu). Ders o dönem açık değilse neden açıklanır, geçmiş
 // yine gösterilir — sessiz boşluk olmaz.
 
-import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum } from './utils.js';
+import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum, formatInt } from './utils.js';
 import { state } from './store.js';
 import { fillBar, trendChart } from './chart.js';
 import { parseReq, renderReqTree } from '../prereq.js';
@@ -88,18 +88,22 @@ function measured(crn) {
 
 // Tek şube kartı. Öğretim üyesi, dolma süresi, oturumlar, önşart, sınıf/kredi
 // ve rezervasyon alanlarının tümü burada korunur (eski panelin alanları).
-function secCard(s, buildings) {
-  const pct = s.capacity ? `%${Math.round((s.enrolled / s.capacity) * 100)}` : '';
+// Tek şube kartı (Faz: panel elden geçirme). method/saat liste başlığında
+// tekrar ediliyorsa showMeta=false (kartta yalnız derslik/süre kalır).
+function secCard(s, buildings, showMeta = true) {
   const hrs = sessionHours(s.times);
   const note = fillNote(s.crn);
-  // Çoklu hocada ("A, B" / "A; B" / "A | B") her isim için ayrı buton üret —
-  // tek `data-name` ile "A, B" aranınca hiç sonuç çıkmıyordu (Faz 0.3).
   const names = splitInstructors(s.instructor);
   const histBtns = names
     .filter((n) => n !== '-' && n !== '***')
     .map((n) => `<button type="button" class="btn-ghost d-hist" data-name="${esc(n)}">${esc(n)} geçmişinde ara</button>`)
     .join('');
   const sessions = sessionsHtml(s, buildings);
+  // Tek satır doluluk: "0/60 · %0" + tek çubuk (yüzde iki kez yazılmaz).
+  const pct = s.capacity ? Math.round((s.enrolled / s.capacity) * 100) : null;
+  const stats = s.capacity
+    ? `<span class="fill">${formatInt(s.enrolled)} / ${formatInt(s.capacity)} · %${pct}<span class="bar"><i style="width:${pct}%"></i></span></span>`
+    : '—';
   return `
     <div class="d-sec">
       <div class="d-sec-head">
@@ -107,14 +111,70 @@ function secCard(s, buildings) {
         <span class="d-sec-instr">${esc(s.instructor || '—')}</span>
         ${histBtns}
       </div>
-      <div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa (oturum)` : ''].filter(Boolean).join(' · ')}</div>
+      ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa (oturum)` : ''].filter(Boolean).join(' · ')}</div>` : ''}
       ${sessions ? `<div class="d-sec-when">${sessions}</div>` : ''}
-      <div class="d-sec-stats">${fillBar(s.capacity, s.enrolled)} ${s.capacity ? `${s.enrolled} / ${s.capacity} (${pct})` : '—'}${note ? ` · ${esc(note)}` : ''}${measured(s.crn) ? `<small class="fill-measured"> · ${esc(measured(s.crn))}</small>` : ''}</div>
+      <div class="d-sec-stats">${stats}${note ? ` · ${esc(note)}` : ''}${measured(s.crn) ? `<small class="fill-measured"> · ${esc(measured(s.crn))}</small>` : ''}</div>
       ${s.prereq && s.prereq !== '-' ? `<div class="d-sec-req"><span>önşart:</span> ${esc(s.prereq)}</div>` : ''}
       ${s.classReq && s.classReq !== '-' ? `<div class="d-sec-req"><span>sınıf / kredi:</span> ${esc(s.classReq)}</div>` : ''}
       ${s.reserved && s.reserved !== '-' ? `<div class="d-sec-req"><span>rezervasyon:</span> ${esc(s.reserved)}</div>` : ''}
     </div>`;
 }
+
+// Özdeş şubelerin grup anahtarı: method + gün/saat + kapasite + hoca.
+function secSignature(s) {
+  const when = `${(s.days || []).join('|')}|${(s.times || []).join('|')}`;
+  const instr = (s.instructor && s.instructor !== '-' && s.instructor !== '***') ? s.instructor : '';
+  return [s.method, when, s.capacity, instr].join('§');
+}
+
+// Şube listesi (Faz: panel elden geçirme): varsayılan ilk 3 grubu göster,
+// "N daha göster" ile hepsi açılır. Özdeş şubeler tek kartta gruplanır;
+// method+saat tüm şubelerde aynıysa liste başlığına bir kez yazılır.
+function renderSecList(secs, buildings) {
+  // Dolu (kap>0) olanlar önce, sonra CRN sırası.
+  const ordered = secs.slice().sort((a, b) =>
+    (a.capacity > 0 ? 0 : 1) - (b.capacity > 0 ? 0 : 1) ||
+    Number(a.crn) - Number(b.crn) || String(a.crn).localeCompare(b.crn));
+
+  const groups = [];
+  for (const s of ordered) {
+    const k = secSignature(s);
+    const g = groups.find((x) => x.k === k);
+    if (g) g.secs.push(s); else groups.push({ k, secs: [s] });
+  }
+
+  const uniformMethod = [...new Set(secs.map((s) => s.method).filter(Boolean))].length <= 1;
+  const uniformHrs = [...new Set(secs.map((s) => sessionHours(s.times)))].length <= 1;
+  const hrs = uniformHrs ? sessionHours(secs[0].times) : 0;
+  const head = [];
+  if (uniformMethod && secs[0].method) head.push(secs[0].method === 'Fiziksel (Yüz yüze)' ? 'yüz yüze' : secs[0].method);
+  if (uniformHrs && hrs) head.push(`haftada ${hrs} sa`);
+  const listHeader = head.length ? `<p class="d-secs-head">${secs.length} şube · ${esc(head.join(' · '))}</p>` : '';
+
+  const card = (g) => {
+    if (g.secs.length === 1) return secCard(g.secs[0], buildings, !uniformMethod || !uniformHrs);
+    const first = g.secs[0];
+    const crns = g.secs.map((s) => s.crn).sort();
+    const range = crns.length > 2 ? `${crns[0]}–${crns[crns.length - 1]}` : crns.join(' · ');
+    const allEmpty = g.secs.every((s) => !s.enrolled);
+    const allFull = g.secs.every((s) => s.capacity && s.enrolled >= s.capacity);
+    const state = allFull ? 'hepsi dolu' : allEmpty ? 'hepsi boş' : '';
+    return `<div class="d-sec d-sec-group">
+      <div class="d-sec-head"><b class="d-crn">${esc(range)}</b><span class="d-sec-instr">${g.secs.length} şube${state ? ` · ${state}` : ''}</span></div>
+      <div class="d-sec-when">${sessionsHtml(first, buildings)}</div>
+    </div>`;
+  };
+
+  const MAX = 3;
+  const showAll = groups.length > MAX;
+  const html = groups.slice(0, MAX).map(card).join('') +
+    (showAll ? `<div class="d-secs-more" hidden>${groups.slice(MAX).map(card).join('')}</div>
+      <button type="button" class="btn-ghost d-secs-toggle">${groups.length - MAX} şube daha göster</button>` : '');
+
+  return `<div class="d-sec-list">${listHeader}${html}</div>`;
+}
+
+let lastHistTerms = null; // trend "hepsini göster" için güncel byTerm
 
 // Geçmiş dönem bölümü: dönem doluluk trendi (trendChart) + dönem tablosu.
 // Veri yoksa neden açıklanır.
@@ -128,6 +188,7 @@ function histHtml(hist) {
     return `<section class="d-hist"><h4>Geçmiş dönemler</h4>
       <p class="empty">2019 öncesi dönemlerde dönem bazlı kayıt veri tabanında yok.</p></section>`;
   }
+  lastHistTerms = byTerm; // trend "hepsini göster" yeniden çizimi için
   const seasons = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' };
   const openIn = [...new Set([...byTerm.keys()].map((s) => s.split('-')[2]))].map((s) => seasons[s] || s);
   const rows = [];
@@ -176,7 +237,10 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
 
   if (!secs.length) {
     content.innerHTML = `
-      <h3 id="detail-title">${esc(code)} ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}</h3>
+      <div class="d-head">
+        <h3 id="detail-title">${esc(code)}</h3>
+        ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}
+      </div>
       <p class="empty">Bu ders <b>${esc(termLabel(t))}</b> döneminde açık değil.</p>
       <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
         <p class="empty">yükleniyor…</p></section>
@@ -191,11 +255,14 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
 
   const programs = [...new Set(secs.flatMap((s) => s.programs || []))];
   content.innerHTML = `
-    <h3 id="detail-title">${esc(code)} <span>${esc(secs[0].name)}</span>${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}</h3>
+    <div class="d-head">
+      <h3 id="detail-title"><span class="d-code">${esc(code)}</span> <span class="d-name">${esc(secs[0].name)}</span></h3>
+      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}
+    </div>
     <div class="d-meta">${[branch, secs[0].level, secs[0].method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
     <section class="d-secs">
       <h4>Bu dönem · ${secs.length} şube</h4>
-      ${secs.map((s) => secCard(s, buildings)).join('')}
+      ${renderSecList(secs, buildings)}
     </section>
     <section class="d-progs">
       <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>
@@ -213,6 +280,17 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   wireHistButtons(content);
   wireProgButtons(content);
   wireEqButtons(content);
+  wireTrendChart(content);
+  const secToggle = content.querySelector('.d-secs-toggle');
+  if (secToggle) {
+    secToggle.addEventListener('click', () => {
+      const more = content.querySelector('.d-secs-more');
+      const open = more.hidden;
+      more.hidden = !open;
+      secToggle.textContent = open ? 'daha az göster' : `${content.querySelectorAll('.d-secs-more .d-sec').length} şube daha göster`;
+      secToggle.setAttribute('aria-expanded', String(open));
+    });
+  }
   const reqFwd = content.querySelector('.d-req-fwd');
   if (reqFwd) loadPrereqTree(reqFwd, code);
   const reqBy = content.querySelector('.d-req-by');
@@ -400,6 +478,32 @@ function gradesHtml(gr) {
       ${older.map((tm) => `<h5>${esc(tm.term)}</h5>${statLine(tm)}${gradeBars(tm)}`).join('')}
     </details>` : ''}
   </section>`;
+}
+
+// Trend grafiği etkileşimi: caption sabit satır (hover/focus ile güncellenir,
+// kırpılan ipucu kutusu yerine) + "hepsini göster" (8 dönem → tümü).
+function wireTrendChart(content) {
+  const chart = content.querySelector('.trend');
+  if (!chart) return;
+  const caption = chart.querySelector('.t-caption');
+  const bars = [...chart.querySelectorAll('.t-bar')];
+  const last = bars[bars.length - 1];
+  const setCap = (bar) => { if (caption && bar) caption.textContent = bar.dataset.caption || ''; };
+  if (caption && last) caption.textContent = last.dataset.caption || '';
+  for (const b of bars) {
+    b.addEventListener('mouseenter', () => setCap(b));
+    b.addEventListener('focus', () => setCap(b));
+    b.addEventListener('mouseleave', () => setCap(last));
+    b.addEventListener('blur', () => setCap(last));
+  }
+  const more = chart.querySelector('.t-more');
+  if (more) {
+    more.addEventListener('click', () => {
+      const parent = chart.parentElement;
+      chart.outerHTML = trendChart(lastHistTerms || new Map(), 0); // limit 0 = hepsi
+      if (parent) wireTrendChart(parent);
+    });
+  }
 }
 
 function wireHistButtons(content) {

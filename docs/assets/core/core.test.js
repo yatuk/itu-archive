@@ -264,7 +264,7 @@ test('fillBar tam ve kritik doluluk sınıflarını verir', () => {
   assert.ok(fillBar(20, 10).includes('bar '));
 });
 
-test('trendChart dönem bazında SVG üretir', () => {
+test('trendChart dönem bazında SVG üretir (iç içe çubuk + tam etiket)', () => {
   const byTerm = new Map([
     ['2025-2026-guz', [{ cap: 50, enr: 30 }, { cap: 50, enr: 40 }]],
     ['2025-2026-bahar', [{ cap: 60, enr: 60 }]],
@@ -272,10 +272,26 @@ test('trendChart dönem bazında SVG üretir', () => {
   const svg = trendChart(byTerm);
   assert.ok(svg.startsWith('<figure class="trend">'));
   assert.ok(svg.includes('<svg'));
-  // Dönem başına bir çubuk çifti (kontenjan + doluluk) ve bir eksen etiketi.
+  // Dönem başına bir iç içe çubuk (kontenjan çerçeve + doluluk dolu).
   assert.equal((svg.match(/<rect /g) || []).length, 4);
-  assert.ok(svg.includes('>26G<'));
-  assert.ok(svg.includes('>26B<'));
+  assert.ok(svg.includes('>2026 Güz<'));
+  assert.ok(svg.includes('>2026 Bahar<'));
+  // 8'den az dönem: "hepsini göster" yok; kronolojik sıra.
+  assert.ok(!svg.includes('t-more'));
+});
+
+test('trendChart 8+ dönemde "hepsini göster" üretir, limit=0 hepsini çizer', () => {
+  const byTerm = new Map();
+  for (let i = 0; i < 14; i++) {
+    const slug = `20${String(20 + Math.floor(i / 3)).padStart(2, '0')}-20${String(20 + Math.floor(i / 3) + 1).slice(2)}-${['guz', 'bahar', 'yaz'][i % 3]}`;
+    byTerm.set(slug, [{ cap: 60, enr: 40 + i }]);
+  }
+  const svg8 = trendChart(byTerm);
+  assert.ok(svg8.includes('t-more')); // >8 dönem → hepsini göster
+  assert.equal((svg8.match(/<rect /g) || []).length, 16); // 8 × 2
+  const svgAll = trendChart(byTerm, 0);
+  assert.ok(!svgAll.includes('t-more'));
+  assert.equal((svgAll.match(/<rect /g) || []).length, 28); // 14 × 2
 });
 
 test('trendChart boş girdide bozulmaz', () => {

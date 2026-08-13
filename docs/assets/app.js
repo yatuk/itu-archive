@@ -15,6 +15,7 @@ import { renderTerms } from './views/terms.js';
 import { onShow as programShow } from './views/program.js';
 import { PrereqGraph } from './prereq.js';
 import { methodToCode, codeToMethod, slugToCode } from './core/urlcodes.js';
+import { openTakenEditor } from './core/taken-ui.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -30,6 +31,8 @@ async function boot() {
   initTheme();
   initLangButton();
   initWelcome();
+  const takenBtn = $('#taken-btn');
+  if (takenBtn) takenBtn.addEventListener('click', openTakenEditor);
   wireTabs();
   wireHistoryJump();
   window.addEventListener('itu:goto-program', () => { if (showView) showView('program', true); });

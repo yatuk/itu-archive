@@ -804,6 +804,11 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .req-and > .req-op { color: var(--cyan); }
 .req-code { color: var(--cyan); }
 .req-code em { color: var(--dimmer); font-style: normal; font-size: 11px; }
+/* Faz D (G8): "aldığım dersler"e göre — alınmış yeşil, alınmamış soluk. */
+.req-taken { color: var(--acid); }
+.req-untaken { opacity: .55; }
+.req-satisfied .req-op { color: var(--acid); }
+.req-unsatisfied .req-op { opacity: .6; }
 .req-text { color: var(--dim); }
 
 .pg-chip {
@@ -841,6 +846,9 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .pg-pool-status-badge .loading { color: var(--dimmer); }
 .pg-pool-status-badge .open { color: var(--acid); }
 .pg-pool-status-badge .closed { color: var(--dimmer); }
+/* Faz D (G8): havuzda "zaten aldım" işareti. */
+.taken-mark { color: var(--acid); font-size: 11px; margin-right: 6px; }
+.pg-pool-taken { opacity: .6; }
 .pg-pool-actions { display: flex; gap: 4px; }
 .pg-pool-actions button {
   font: inherit; font-size: 11px; cursor: pointer; background: transparent;
@@ -982,6 +990,16 @@ footer {
 .dlg-body[hidden] { display: none; }
 .dlg-input { width: 100%; }
 .dlg-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 6px; }
+
+/* Faz D: "Aldığım dersler" düzenleyici alanları. */
+.dlg-field { font-size: 12px; color: var(--dim); margin-top: 4px; }
+.taken-codes, .taken-program {
+  background: var(--panel); border: 1px solid var(--line-hot); border-radius: 6px;
+  color: var(--fg); font-family: var(--mono); font-size: 13px; padding: 6px 8px; width: 100%;
+}
+.taken-codes:focus, .taken-program:focus { outline: 2px solid var(--cyan); outline-offset: 1px; }
+.dlg-note { font-size: 12px; color: var(--dimmer); line-height: 1.5; margin: 4px 0 0; }
+.dlg-row { display: flex; gap: 8px; margin-top: 4px; }
 .dlg-close {
   position: absolute; top: 12px; right: 12px;
   background: transparent; border: none; color: var(--dimmer);
@@ -1031,6 +1049,8 @@ footer {
 .d-prog-none { color: var(--dim); border-style: dashed; }
 /* Faz B (G7): resmî listede olmayan program kodu — soluk (kapanmış olabilir). */
 .d-prog-stale { opacity: .55; }
+/* Faz D (G8): kullanıcının beyan ettiği program — yeşil kenarlık. */
+.d-prog-mine { border-color: var(--acid); color: var(--acid); }
 
 /* Başlıktaki OBS derin bağlantısı */
 .d-obs { color: var(--dim); font-size: 11px; text-decoration: none; border-bottom: 1px dashed var(--line-hot); }

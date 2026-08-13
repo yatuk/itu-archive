@@ -15,6 +15,7 @@ import { examToIcs } from '../views/exams.js';
 import { topByCount } from '../views/history.js';
 import { icsText, hashShort, foldLine, formatInt } from './utils.js';
 import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
+import { parseCodes } from './taken.js';
 import * as fav from './favorites.js';
 
 test('methodToCode/codeToMethod iki yönlü çevirir', () => {
@@ -41,6 +42,13 @@ test('scopeParams görünüme göre parametreleri kapsar (term global)', () => {
   assert.equal(scoped.get('time'), null);   // dersler'e ait, onsart'ta yok
   assert.equal(scoped.get('level'), null);
   assert.equal(scoped.get('method'), null);
+});
+
+test('parseCodes virgül/boşluk/satırla ayrılmış kodları temizler', () => {
+  assert.deepEqual(parseCodes('blg 102e, MAT 101E\nCEN 102'), ['BLG 102E', 'MAT 101E', 'CEN 102']);
+  assert.deepEqual(parseCodes('BLG 102E BLG 102E MAT 101E'), ['BLG 102E', 'MAT 101E']); // boşluk ayraçlı + tekrar
+  assert.deepEqual(parseCodes('BLG102E'), ['BLG 102E']); // boşluksuz
+  assert.deepEqual(parseCodes(''), []);
 });
 
 test('formatInt binlik ayracı nokta olarak koyar', () => {

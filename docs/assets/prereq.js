@@ -17,6 +17,7 @@
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
 import { esc, fold, getJSON, termLabel } from './core/utils.js';
 import { state } from './core/store.js';
+import { isTaken, TAKEN_CHANGED } from './core/taken.js';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
@@ -430,6 +431,7 @@ import { state } from './core/store.js';
     // anda iskeletle gelir, durumlar geldikçe dolar. Kullanıcı başka düğüme
     // geçerse eski yükleme kendini iptal eder (version + focus guard).
     async renderPool(n) {
+      lastPoolNode = n; // TAKEN_CHANGED'te yeniden çizmek için (Faz D)
       const opts = (n.options || []).slice();
       const version = (this.poolVersion = (this.poolVersion || 0) + 1);
       this.detail.innerHTML = `
@@ -494,13 +496,14 @@ import { state } from './core/store.js';
             <summary>${esc(b)} <span>${items.length}</span></summary>
             ${items.map((o) => {
               const st = status.get(o.code);
+              const taken = isTaken(o.code);
               const badge = !st ? '<span class="loading">…</span>'
                 : st.open
                   ? `<span class="open">● açık · ${st.sections.length} şube · ${st.enr}/${st.cap || '—'}</span>`
                   : `<span class="closed">● ${st.last ? 'son ' + esc(termLabel(st.last)) : 'hiç açılmadı'}</span>`;
-              return `<div class="pg-pool-row">
+              return `<div class="pg-pool-row${taken ? ' pg-pool-taken' : ''}">
                 <div class="pg-pool-name"><b>${esc(o.code)}</b><em>${esc(o.name)}</em></div>
-                <span class="pg-pool-status-badge">${badge}</span>
+                <span class="pg-pool-status-badge">${taken ? '<span class="taken-mark">✓ aldım</span>' : ''}${badge}</span>
                 <span class="pg-pool-actions">
                   <button data-act="detay" data-code="${esc(o.code)}">detay</button>
                   <button data-act="courses" data-code="${esc(o.code)}">derslerde aç</button>
@@ -743,28 +746,50 @@ import { state } from './core/store.js';
 
   // renderReqTree, önşart ağacını okunur HTML'e çevirir: VE/VEYA grupları
   // iç içe listeler halinde, biri yeter / hepsi gerekli etiketleriyle.
-  // Detay paneli de aynı ağacı gösterir (P1-9) — export.
+  // Detay paneli de aynı ağacı gösterir (P1-9) — export. Faz D (G8): "aldığım
+  // dersler"e göre alınmış dersler yeşil, alınmamışlar soluk; grup tatmini
+  // (VE=hepsi, VEYA=biri) etiketinde.
   export function renderReqTree(tree) {
     if (tree.type === 'code') {
-      return `<li class="req-item req-code">${esc(tree.code)}${tree.detail ? ` <em>${esc(tree.detail)}</em>` : ''}</li>`;
+      const taken = isTaken(tree.code);
+      return `<li class="req-item req-code${taken ? ' req-taken' : ' req-untaken'}">${esc(tree.code)}${tree.detail ? ` <em>${esc(tree.detail)}</em>` : ''}</li>`;
     }
     if (tree.type === 'text') return `<li class="req-item req-text">${esc(tree.raw)}</li>`;
     const label = tree.type === 'or' ? 'VEYA: biri yeterli' : 'VE: hepsi gerekli';
     const cls = tree.type === 'or' ? 'req-or' : 'req-and';
-    return `<li class="req-item req-group ${cls}">
+    const codes = collectCodes(tree);
+    const satisfied = tree.type === 'or'
+      ? codes.some((c) => isTaken(c))
+      : codes.every((c) => isTaken(c));
+    return `<li class="req-item req-group ${cls}${satisfied ? ' req-satisfied' : ' req-unsatisfied'}">
       <span class="req-op">${label}</span>
       <ul>${tree.items.map(renderReqTree).join('')}</ul>
     </li>`;
   }
 
+  // Ağaçtaki tüm yaprak ders kodlarını toplar (grup tatmini için).
+  function collectCodes(tree, out = []) {
+    if (tree.type === 'code') out.push(tree.code);
+    else if (tree.items) for (const it of tree.items) collectCodes(it, out);
+    return out;
+  }
+
   // ---- Bölüm seçici ve veri hazırlama ----
 
   let graph = null;
+  let lastPoolNode = null;
   // Tema değişince canvas renkleri tazelenir ve grafik yeniden çizilir
   // (canvasColors() tema bazında önbellekler; data-theme değişince yeni değer üretir).
   if (typeof MutationObserver !== 'undefined' && typeof document !== 'undefined') {
     new MutationObserver(() => graph && graph.draw()).observe(document.documentElement, {
       attributes: true, attributeFilter: ['data-theme'],
+    });
+  }
+  // Faz D (G8): "aldığım dersler" değişince açık havuzdaki "✓ aldım" işaretleri
+  // tazelenir (kayıttan sonra havuzu yeniden açmaya gerek kalmaz).
+  if (typeof window !== 'undefined') {
+    window.addEventListener(TAKEN_CHANGED, () => {
+      if (graph && lastPoolNode) graph.renderPool(lastPoolNode);
     });
   }
   let programs = null;

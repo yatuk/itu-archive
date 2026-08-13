@@ -12,6 +12,7 @@ import { fillBar, trendChart } from './chart.js';
 import { parseReq, renderReqTree } from '../prereq.js';
 import { codeToSlug } from './urlcodes.js';
 import { loadProgramMap } from './programs.js';
+import { TAKEN_CHANGED, getTaken } from './taken.js';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
@@ -228,10 +229,11 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   enrichProgLabels(content);
 }
 
-// programs.json'dan kod → okunur ad. Kod resmî listede yoksa "kapanmış" soluk.
+// programs.json'dan kod → okunur ad. Kod resmî listede yoksa "kapanmış" soluk;
+// kullanıcının beyan ettiği programı varsa işaretle (Faz D, G8).
 async function enrichProgLabels(content) {
   try {
-    const m = await loadProgramMap();
+    const [m, taken] = await Promise.all([loadProgramMap(), Promise.resolve(getTaken())]);
     for (const b of content.querySelectorAll('.d-prog[data-program]')) {
       const code = b.dataset.program;
       const p = m.get(code);
@@ -241,8 +243,25 @@ async function enrichProgLabels(content) {
         b.classList.add('d-prog-stale');
         b.title = 'Bu program kodu resmî listede yok (kapanmış/grafik dışı olabilir)';
       }
+      if (taken.program && code === taken.program) {
+        b.classList.add('d-prog-mine');
+        b.title = 'Senin programın';
+      }
     }
   } catch { /* liste yoksa sessiz — yalnız kodlar görünür */ }
+}
+
+// Faz D: "aldığım dersler" değişince açık paneldeki önşart + program etiketleri
+// tazelenir (kullanıcı kaydettikten sonra paneli yeniden açmasına gerek kalmaz).
+if (typeof window !== 'undefined') {
+  window.addEventListener(TAKEN_CHANGED, () => {
+    const content = $('#detail-content');
+    if (!content || content.hidden) return;
+    const reqFwd = content.querySelector('.d-req-fwd');
+    const code = reqFwd?.dataset.code;
+    if (reqFwd && code) loadPrereqTree(reqFwd, code);
+    enrichProgLabels(content);
+  });
 }
 
 // Panelde dersin önşart VE/VEYA ağacı (P1-9). prereq/graph.json'da kayıtlı

@@ -1415,7 +1415,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 20,
+  "capacity": 50,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -2251,6 +2251,74 @@
    "ELK_LS",
    "ELKE_LS",
    "TEL_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14933",
+  "code": "EHB 208E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Data Structures & Programming",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Arda İnceoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14934",
+  "code": "EHB 433E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Digital Filters and Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bekir Sıddık Binboğa Yarman",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

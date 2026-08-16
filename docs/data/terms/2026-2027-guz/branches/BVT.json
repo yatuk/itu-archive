@@ -1,39 +1,12 @@
 [
  {
-  "crn": "14777",
-  "code": "KOM 610E",
-  "branch": "KOM",
+  "crn": "14937",
+  "code": "BVT 501",
+  "branch": "BVT",
   "level": "LU",
-  "name": "Nonlinear Control Systems",
+  "name": "Astronomi Tarihi",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mustafa Doğan",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Cuma"
-  ],
-  "times": [
-   "08:30/11:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 30,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14778",
-  "code": "KOM 613E",
-  "branch": "KOM",
-  "level": "LU",
-  "name": "Probabilistics Methods in Robo",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Hakan Temeltaş",
+  "instructor": "Kazım Yavuz Ekşi",
   "buildings": [
    "undeclared"
   ],
@@ -41,34 +14,7 @@
    "Pazartesi"
   ],
   "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 30,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14779",
-  "code": "KOM 696",
-  "branch": "KOM",
-  "level": "LU",
-  "name": "Bilimsel Araş.,Etik ve Seminer",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ahmet Onat",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
+   "14:30/17:29"
   ],
   "rooms": [
    "--"
@@ -81,13 +27,13 @@
   "classReq": "-"
  },
  {
-  "crn": "14780",
-  "code": "KOM 501E",
-  "branch": "KOM",
+  "crn": "14938",
+  "code": "BVT 502E",
+  "branch": "BVT",
   "level": "LU",
-  "name": "Cont.Sist.With Paramet. Uncert",
+  "name": "Historiogr.for History of Sci.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mehmet Turan Söylemez",
+  "instructor": "Hasan Karataş",
   "buildings": [
    "undeclared"
   ],
@@ -95,12 +41,12 @@
    "Pazartesi"
   ],
   "times": [
-   "09:30/12:29"
+   "08:30/11:29"
   ],
   "rooms": [
    "--"
   ],
-  "capacity": 24,
+  "capacity": 10,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -108,26 +54,26 @@
   "classReq": "-"
  },
  {
-  "crn": "14781",
-  "code": "KOM 505",
-  "branch": "KOM",
+  "crn": "14939",
+  "code": "BVT 504E",
+  "branch": "BVT",
   "level": "LU",
-  "name": "Olasılık Kuramı&Rastlan.Süreçl",
+  "name": "Scientific Revolution",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Müjde Güzelkaya",
+  "instructor": "Hasan Karataş",
   "buildings": [
    "undeclared"
   ],
   "days": [
-   "Salı"
+   "Pazartesi"
   ],
   "times": [
-   "12:30/15:29"
+   "11:30/14:29"
   ],
   "rooms": [
    "--"
   ],
-  "capacity": 60,
+  "capacity": 10,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -135,94 +81,13 @@
   "classReq": "-"
  },
  {
-  "crn": "14782",
-  "code": "KOM 505E",
-  "branch": "KOM",
+  "crn": "14940",
+  "code": "BVT 512",
+  "branch": "BVT",
   "level": "LU",
-  "name": "Probability Theory&Stochast.Pr",
+  "name": "Tarihte Savaş ve Teknoloji",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mehmet Akif Yazıcı",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14783",
-  "code": "KOM 505E",
-  "branch": "KOM",
-  "level": "LU",
-  "name": "Probability Theory&Stochast.Pr",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mustafa Doğan",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Cuma"
-  ],
-  "times": [
-   "14:00/16:59"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 50,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14784",
-  "code": "KOM 509E",
-  "branch": "KOM",
-  "level": "LU",
-  "name": "Design of Discrete Cont.Sys.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Farzad Hashemzadeh",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 50,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14785",
-  "code": "KOM 507E",
-  "branch": "KOM",
-  "level": "LU",
-  "name": "Numerical Methods in Optimiz.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Tufan Kumbasar",
+  "instructor": "Tuncay Zorlu",
   "buildings": [
    "undeclared"
   ],
@@ -235,36 +100,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 15,
-  "enrolled": 0,
-  "reserved": "KOM_KO_YL/10/0 | Diğer/5/0",
-  "programs": [
-   "KOM_KO_YL"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14786",
-  "code": "KOM 508",
-  "branch": "KOM",
-  "level": "LU",
-  "name": "Endüstriyel Otomasyon Sist.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Yaprak Yalçın",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 50,
+  "capacity": 10,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -272,67 +108,13 @@
   "classReq": "-"
  },
  {
-  "crn": "14787",
-  "code": "KOM 518E",
-  "branch": "KOM",
+  "crn": "14941",
+  "code": "BVT 514",
+  "branch": "BVT",
   "level": "LU",
-  "name": "Model Predictive Control",
+  "name": "Teknolojinin Gelişim Tarihi",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Yaprak Yalçın",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 50,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14788",
-  "code": "KOM 521E",
-  "branch": "KOM",
-  "level": "LU",
-  "name": "Learning Based Control Systems",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Kemal Uçak",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:30/16:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 50,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14789",
-  "code": "KOM 596",
-  "branch": "KOM",
-  "level": "LU",
-  "name": "Bilimsel Araş.,Etik ve Seminer",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Şeref Naci Engin",
+  "instructor": "Aytekin Çökelez",
   "buildings": [
    "undeclared"
   ],
@@ -340,12 +122,12 @@
    "Perşembe"
   ],
   "times": [
-   "12:30/14:29"
+   "11:30/14:29"
   ],
   "rooms": [
    "--"
   ],
-  "capacity": 40,
+  "capacity": 10,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -353,20 +135,26 @@
   "classReq": "-"
  },
  {
-  "crn": "14790",
-  "code": "KOM DRT",
-  "branch": "KOM",
+  "crn": "14942",
+  "code": "BVT 596",
+  "branch": "BVT",
   "level": "LU",
-  "name": "Tez Çalışması",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ahmet Onat",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "instructor": "Aytekin Çökelez",
+  "buildings": [
+   "undeclared"
   ],
-  "rooms": [],
-  "capacity": 100,
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -374,13 +162,13 @@
   "classReq": "-"
  },
  {
-  "crn": "14791",
-  "code": "KOM YET",
-  "branch": "KOM",
+  "crn": "14943",
+  "code": "BVT YLT",
+  "branch": "BVT",
   "level": "LU",
-  "name": "Yeterlik Aşaması",
+  "name": "Tez çalışması",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ahmet Onat",
+  "instructor": "Aytekin Çökelez",
   "buildings": [],
   "days": [],
   "times": [
@@ -395,20 +183,203 @@
   "classReq": "-"
  },
  {
-  "crn": "14792",
-  "code": "KOM YLT",
-  "branch": "KOM",
+  "crn": "14944",
+  "code": "BVT 606E",
+  "branch": "BVT",
   "level": "LU",
-  "name": "Tez Çalışması",
+  "name": "History of ScienceTexts",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ahmet Onat",
+  "instructor": "Tuncay Zorlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14945",
+  "code": "BVT 609",
+  "branch": "BVT",
+  "level": "LU",
+  "name": "Elektrik Tarihi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Barutçu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14946",
+  "code": "BVT 612E",
+  "branch": "BVT",
+  "level": "LU",
+  "name": "History of the Balkan Cities",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fatma Sel Turhan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14947",
+  "code": "BVT 625",
+  "branch": "BVT",
+  "level": "LU",
+  "name": "Osmanlı Türkçesi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mustafa İnce",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14948",
+  "code": "BVT 628",
+  "branch": "BVT",
+  "level": "LU",
+  "name": "Ölçümün Tarihi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Aytekin Çökelez",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14949",
+  "code": "BVT 696",
+  "branch": "BVT",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Aytekin Çökelez",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14950",
+  "code": "BVT DRT",
+  "branch": "BVT",
+  "level": "LU",
+  "name": "Tez çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Aytekin Çökelez",
   "buildings": [],
   "days": [],
   "times": [
    "-/-"
   ],
   "rooms": [],
-  "capacity": 100,
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14951",
+  "code": "BVT YET",
+  "branch": "BVT",
+  "level": "LU",
+  "name": "Yeterlik Aşaması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Aytekin Çökelez",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 15,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

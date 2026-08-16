@@ -146,7 +146,7 @@
  },
  {
   "crn": "11146",
-  "code": "GMI 341",
+  "code": "GMI 341E",
   "branch": "GMI",
   "level": "LS",
   "name": "Automatic Control Systems",
@@ -707,10 +707,10 @@
    "undeclared"
   ],
   "days": [
-   "Pazartesi"
+   "Salı"
   ],
   "times": [
-   "10:30/13:29"
+   "12:30/15:29"
   ],
   "rooms": [
    "--"
@@ -1165,30 +1165,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11321",
-  "code": "GMI 392E",
-  "branch": "GMI",
-  "level": "LS",
-  "name": "Long Term Sea Training",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "İsmail Çiçek",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 100,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "GMI_LS",
-   "GMIE_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "11840",
   "code": "GMI 474E",
   "branch": "GMI",
@@ -1244,6 +1220,30 @@
    "GMI_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14952",
+  "code": "GMI 393E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Long Term Sea Training (6 ay)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İsmail Çiçek",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "GMI_LS",
+   "GMIE_LS"
+  ],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

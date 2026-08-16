@@ -1,11 +1,11 @@
 {
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-08-13T04:48:16Z",
+ "scrapedAt": "2026-08-16T20:42:50Z",
  "source": "itu-archive",
  "live": true,
- "sections": 4835,
- "courses": 3356,
+ "sections": 4894,
+ "courses": 3402,
  "branches": [
   {
    "code": "ABM",
@@ -96,7 +96,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 32
+   "sections": 34
   },
   {
    "code": "BIO",
@@ -111,7 +111,7 @@
     "LS",
     "LU"
    ],
-   "sections": 64
+   "sections": 66
   },
   {
    "code": "BLU",
@@ -147,6 +147,13 @@
     "LU"
    ],
    "sections": 3
+  },
+  {
+   "code": "BVT",
+   "levels": [
+    "LU"
+   ],
+   "sections": 15
   },
   {
    "code": "CAB",
@@ -322,14 +329,14 @@
    "levels": [
     "LS"
    ],
-   "sections": 36
+   "sections": 38
   },
   {
    "code": "EHB",
    "levels": [
     "LS"
    ],
-   "sections": 69
+   "sections": 71
   },
   {
    "code": "EHN",
@@ -532,7 +539,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 44
+   "sections": 43
   },
   {
    "code": "IKE",
@@ -659,7 +666,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 19
+   "sections": 20
   },
   {
    "code": "JEO",
@@ -739,7 +746,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 4
+   "sections": 5
   },
   {
    "code": "LAT",
@@ -768,7 +775,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 85
+   "sections": 111
   },
   {
    "code": "MAL",
@@ -868,7 +875,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 148
+   "sections": 149
   },
   {
    "code": "MIT",
@@ -910,7 +917,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 23
+   "sections": 10
   },
   {
    "code": "MTH",
@@ -932,7 +939,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 32
+   "sections": 38
   },
   {
    "code": "MTS",
@@ -988,7 +995,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 39
+   "sections": 38
   },
   {
    "code": "MYZ",
@@ -1003,6 +1010,13 @@
     "LU"
    ],
    "sections": 15
+  },
+  {
+   "code": "NSE",
+   "levels": [
+    "LU"
+   ],
+   "sections": 13
   },
   {
    "code": "NUK",
@@ -1067,7 +1081,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 5
+   "sections": 6
   },
   {
    "code": "ROS",
@@ -1124,7 +1138,7 @@
     "LS",
     "LU"
    ],
-   "sections": 67
+   "sections": 68
   },
   {
    "code": "SEC",
@@ -1329,7 +1343,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 30
+   "sections": 31
   },
   {
    "code": "UZB",
@@ -1424,11 +1438,11 @@
   }
  ],
  "stats": {
-  "sections": 4835,
-  "courses": 3356,
-  "branches": 199,
-  "instructors": 1661,
-  "capacity": 236912,
+  "sections": 4894,
+  "courses": 3402,
+  "branches": 201,
+  "instructors": 1689,
+  "capacity": 238659,
   "enrolled": 1204
  }
 }

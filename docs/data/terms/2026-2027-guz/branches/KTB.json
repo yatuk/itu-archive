@@ -6,7 +6,7 @@
   "level": "LU",
   "name": "Polar Magmatism",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Şafak Altunkaynak",
+  "instructor": "Şafak Altunkaynak , Alp Ünal",
   "buildings": [
    "undeclared"
   ],
@@ -95,6 +95,33 @@
   ],
   "rooms": [],
   "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14911",
+  "code": "KTB 501E",
+  "branch": "KTB",
+  "level": "LU",
+  "name": "Polar Meteorology and Climate",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bilge Tutak , Sinan Yirmibeşoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

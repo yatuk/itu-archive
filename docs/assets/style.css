@@ -222,7 +222,8 @@
 [data-theme="sade"] select,
 [data-theme="sade"] .f-in,
 [data-theme="sade"] .p-prog-select,
-[data-theme="sade"] .dp-prog-select { border-radius: 8px; }
+[data-theme="sade"] .dp-prog-select,
+[data-theme="sade"] .dp-fac-select { border-radius: 8px; }
 /* Sade'de şube seçim onay kutusu dokunma için biraz büyür (fosfor 15px varsayılan kalır). */
 [data-theme="sade"] .row-sel { width: 18px; height: 18px; }
 
@@ -520,8 +521,6 @@ body.reveal-ready .reveal.revealed { opacity: 1; transform: none; }
   display: flex; gap: 18px; flex-wrap: wrap; align-items: center; color: var(--dim);
   flex-basis: 100%;
 }
-.filters-more[hidden] { display: none; }
-#f-more-toggle { font-size: 13px; padding: 6px 12px; }
 /* Filtre kutuları: select ve metin girdisi birebir aynı görünüm (renk,
    kenarlık, köşe, yükseklik, padding). */
 select, .f-in {
@@ -808,7 +807,9 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
   display: flex; gap: 12px; align-items: center; margin-bottom: 10px;
   background: var(--panel); border: 1px solid var(--line); padding: 10px 12px;
 }
-.pg-program-select { width: 100%; max-width: none; }
+/* Fakulte + bolum: iki adimli secim, ikisi de daralabilir (min-width:0). */
+.pg-faculty-select,
+.pg-program-select { flex: 1 1 0; min-width: 0; max-width: none; width: auto; }
 .pg-plan-label { color: var(--dimmer); font-size: 11px; white-space: nowrap; }
 
 /* Seviye filtresi: seçili seviyeler vurgulanır, kapalılar soluk kalır. */
@@ -1744,7 +1745,8 @@ body.modal-open { overflow: hidden; }
 
 .dp-console { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .dp-console label { display: inline-flex; align-items: center; gap: 6px; min-width: 0; }
-.dp-prog-select { max-width: min(420px, 100%); }
+.dp-fac-select,
+.dp-prog-select { flex: 1 1 0; min-width: 0; max-width: min(420px, 100%); }
 
 .dp-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin: 12px 0 4px; }
 .dp-filters .check { color: var(--dim); font-size: 13px; }

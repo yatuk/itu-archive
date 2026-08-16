@@ -7,6 +7,7 @@ package main
 
 import (
 	"context"
+	"encoding/csv"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -334,6 +335,20 @@ func scrapeExams(ctx context.Context, f *fetch.Client, st *store.Store, workers 
 		logf("sınav takvimi henüz ilan edilmemiş, atlandı")
 		return nil
 	}
+	// OBS'nin sınav ucunda dönem parametresi yok: o an ne yayınlıyorsa onu verir.
+	// Dönem döndükten sonra yeni dönemin takvimi ilan edilene kadar OBS hâlâ
+	// ÖNCEKİ dönemin takvimini servis eder. Bunu aktif dönemin etiketiyle
+	// yazarsak yaz finalleri "Güz" diye görünür (yaşanmış hata: 2026-2027 Güz
+	// dosyası 2025-2026 Yaz finallerini taşıyordu).
+	//
+	// Sınavlar o dönemin kendi şubelerine ait olmalı: CRN'ler dönemin ders
+	// listesinde yoksa takvim başka döneme aittir.
+	oran, olcum := examCRNOverlap(st, slug, exams)
+	if olcum && oran < examOverlapMin {
+		logf("sınav takvimi aktif dönemin şubeleriyle yalnızca %%%.0f örtüşüyor "+
+			"(eşik %%%.0f) — başka döneme ait, yazılmadı", oran*100, examOverlapMin*100)
+		return nil
+	}
 	sched := &model.ExamSchedule{
 		Term: label, Slug: slug,
 		ScrapedAt: time.Now().UTC().Format(time.RFC3339),
@@ -344,6 +359,55 @@ func scrapeExams(ctx context.Context, f *fetch.Client, st *store.Store, workers 
 	}
 	logf("sınav takvimi: %d kayıt (%d branş)", len(exams), len(branches))
 	return nil
+}
+
+// examOverlapMin, sınav takvimini aktif döneme yazmak için gereken en düşük
+// CRN örtüşmesi. Gerçek değerler net ayrışıyor: doğru dönemde ~%78, yanlış
+// dönemde ~%5 (sınav takvimi tüm şubeleri kapsamaz, o yüzden eşik 1 değil).
+const examOverlapMin = 0.40
+
+// examCRNOverlap, sınav CRN'lerinin ne kadarının dönemin kendi ders listesinde
+// bulunduğunu döner. İkinci dönüş değeri ölçümün yapılabildiğini söyler —
+// dönemin all.csv'si yoksa (ör. -skip-courses) karar veremeyiz, engellemeyiz.
+func examCRNOverlap(st *store.Store, slug string, exams []model.Exam) (float64, bool) {
+	if len(exams) == 0 {
+		return 0, false
+	}
+	donemCRN, err := termCRNs(st.Path("data", "terms", slug, "all.csv"))
+	if err != nil || len(donemCRN) == 0 {
+		return 0, false
+	}
+	var eslesen int
+	for _, e := range exams {
+		if _, ok := donemCRN[e.CRN]; ok {
+			eslesen++
+		}
+	}
+	return float64(eslesen) / float64(len(exams)), true
+}
+
+// termCRNs, dönem dökümündeki CRN kümesini okur (all.csv'nin ilk kolonu).
+func termCRNs(yol string) (map[string]struct{}, error) {
+	f, err := os.Open(yol)
+	if err != nil {
+		return nil, err
+	}
+	defer f.Close()
+
+	r := csv.NewReader(f)
+	r.FieldsPerRecord = -1
+	kayitlar, err := r.ReadAll()
+	if err != nil || len(kayitlar) < 2 {
+		return nil, err
+	}
+	crns := make(map[string]struct{}, len(kayitlar)-1)
+	for _, satir := range kayitlar[1:] { // başlık atlanır
+		if len(satir) > 0 {
+			// İlk hücrede BOM olabilir; CRN saf rakam.
+			crns[strings.TrimFunc(satir[0], func(r rune) bool { return r < '0' || r > '9' })] = struct{}{}
+		}
+	}
+	return crns, nil
 }
 
 func buildHistory(root string, st *store.Store) (*history.Index, error) {

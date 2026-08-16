@@ -189,9 +189,7 @@
       <option value="ogle">öğle (12:00-17:00)</option>
       <option value="aksam">akşam (≥17:00)</option>
     </select></label>
-    <button type="button" id="f-more-toggle" class="btn-ghost" aria-expanded="false"
-            aria-controls="filters-more" data-i18n="filterMore">gelişmiş filtreler</button>
-    <div class="filters-more" id="filters-more" hidden>
+    <div class="filters-more" id="filters-more">
      <label>seviye <select id="f-level">
       <option value="">hepsi</option>
       <option>OL</option><option>LS</option><option>LU</option><option>LUI</option>
@@ -284,6 +282,7 @@
    <div class="console pg-console">
     <label class="query">
      <span class="sigil">&gt;</span>
+     <select class="pg-faculty-select" aria-label="Fakülte seç"><option>yükleniyor…</option></select>
      <select class="pg-program-select" aria-label="Bölüm seç"><option>yükleniyor…</option></select>
     </label>
     <span class="pg-plan-label"></span>

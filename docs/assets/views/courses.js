@@ -35,14 +35,8 @@ export function initCourses() {
   $('#more').addEventListener('click', () => renderRows(true));
   $('#csv').addEventListener('click', exportCSV);
   $('#tt-toggle').addEventListener('click', toggleTimetable);
-  // Filtre duvarı: gelişmiş filtreler disclosure içinde (Critique P1 — varsayılan
-  // görünümde yalnızca birincil filtreler görünür).
-  $('#f-more-toggle').addEventListener('click', () => {
-    const more = $('#filters-more');
-    const open = more.hidden;
-    more.hidden = !open;
-    $('#f-more-toggle').setAttribute('aria-expanded', String(open));
-  });
+  // Tüm filtreler her zaman görünür: kayıt haftasında seviye/yöntem/program
+  // birincil filtreler kadar sık kullanılıyor, tıklama arkasına saklanmıyor.
   $('#sel-all').addEventListener('change', () => {
     const on = $('#sel-all').checked;
     for (const r of state.filtered) {

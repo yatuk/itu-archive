@@ -37,6 +37,9 @@ func (s *Store) path(parts ...string) string {
 	return filepath.Join(append([]string{s.root}, parts...)...)
 }
 
+// Path, kök altındaki bir yolu dışarıya verir (var olan dosyaları okumak için).
+func (s *Store) Path(parts ...string) string { return s.path(parts...) }
+
 // WriteJSON, deterministik (girintili, sıralı) JSON yazar. Girinti şart:
 // tek satırlık JSON'da git diff'i işe yaramaz hale geliyor.
 func (s *Store) WriteJSON(v any, parts ...string) error {

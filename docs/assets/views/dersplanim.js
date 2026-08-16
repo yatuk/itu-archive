@@ -55,12 +55,17 @@ export async function onShow() {
   if (!progIndex.length) {
     progIndex = (await getJSON('data/curriculum/index.json').catch(() => []));
   }
+  const fac = $('#dp-fac');
   const sel = $('#dp-prog');
-  if (sel.options.length === 0) sel.innerHTML = renderProgramOptions();
+  if (fac.options.length === 0) fac.innerHTML = renderFacultyOptions();
   const want = urlParams.get('prog') || '';
   applyParams(urlParams);
   // URL'deki program geçerliyse onu, değilse ilk programı seç (URL kaynaktır).
-  const current = progIndex.some((p) => p.code === want) ? want : (progIndex[0]?.code || '');
+  const secili = progIndex.find((p) => p.code === want) || progIndex[0];
+  const current = secili?.code || '';
+  // Fakülte seçimi programdan türetilir: paylaşılan link doğru fakülteyi açar.
+  fac.value = secili ? facultyOf(secili) : fac.options[0]?.value || '';
+  sel.innerHTML = renderProgramOptions(fac.value);
   sel.value = current;
   await selectProgram(current);
 }
@@ -79,7 +84,8 @@ function ensureHost() {
     <div class="console dp-console">
       <label class="query">
         <span class="sigil">&gt;</span>
-        <select id="dp-prog" class="dp-prog-select" aria-label="Program seç"></select>
+        <select id="dp-fac" class="dp-fac-select" aria-label="Fakülte seç"></select>
+        <select id="dp-prog" class="dp-prog-select" aria-label="Bölüm seç"></select>
       </label>
       <label>dönem <select id="dp-term" aria-label="Dönem seç"></select></label>
       <button type="button" id="dp-refresh" class="btn-ghost" title="Durumları yenile">↻</button>
@@ -123,26 +129,28 @@ function ensureHost() {
 
 // -- program seçici --
 
-function renderProgramOptions() {
-  // Fakülteye göre gruplu; aynı bölümün farklı planları (KKTC/İngilizce vb.)
-  // planLabel ile ayrışsın — kullanıcı yanlış planı seçmesin (Faz F).
-  const byFac = new Map();
-  for (const p of progIndex) {
-    const f = p.faculty || 'Diğer';
-    if (!byFac.has(f)) byFac.set(f, []);
-    byFac.get(f).push(p);
-  }
-  const groups = [...byFac.entries()]
-    .sort((a, b) => a[0].localeCompare(b[0], 'tr'))
-    .map(([fac, ps]) => {
-      ps.sort((a, b) => a.code.localeCompare(b.code));
-      const opts = ps.map((p) => {
-        const label = p.name !== p.code ? `${p.code} · ${p.name}` : p.code;
-        return `<option value="${esc(p.code)}">${esc(label)}</option>`;
-      }).join('');
-      return `<optgroup label="${esc(fac)}">${opts}</optgroup>`;
-    }).join('');
-  return groups;
+// Önce fakülte, sonra bölüm: 313 programlık tek liste yerine iki adım.
+// 22 fakültenin arasından seçmek, uzun gruplu listede kaydırmaktan hızlı.
+
+function facultyOf(p) {
+  return p.faculty || 'Diğer';
+}
+
+function renderFacultyOptions() {
+  const facs = [...new Set(progIndex.map(facultyOf))].sort((a, b) => a.localeCompare(b, 'tr'));
+  return facs.map((f) => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
+}
+
+// Verilen fakültenin bölümleri. Aynı bölümün farklı planları (KKTC/İngilizce vb.)
+// kod + ad ile ayrışsın — kullanıcı yanlış planı seçmesin (Faz F).
+function renderProgramOptions(faculty) {
+  const ps = progIndex
+    .filter((p) => facultyOf(p) === faculty)
+    .sort((a, b) => a.code.localeCompare(b.code));
+  return ps.map((p) => {
+    const label = p.name !== p.code ? `${p.code} · ${p.name}` : p.code;
+    return `<option value="${esc(p.code)}">${esc(label)}</option>`;
+  }).join('');
 }
 
 async function selectProgram(code) {
@@ -1037,6 +1045,15 @@ function init() {
     histCache.clear();
     await reloadRows();
     renderAll();
+  });
+  // Fakülte değişince bölüm listesi yenilenir ve ilk bölüm seçilir.
+  $('#dp-fac').addEventListener('change', () => {
+    const sel = $('#dp-prog');
+    sel.innerHTML = renderProgramOptions($('#dp-fac').value);
+    if (sel.options.length) {
+      sel.value = sel.options[0].value;
+      selectProgram(sel.value);
+    }
   });
   $('#dp-prog').addEventListener('change', () => {
     selectProgram($('#dp-prog').value);

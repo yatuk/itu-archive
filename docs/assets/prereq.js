@@ -1007,24 +1007,33 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       `<button type="button" class="pg-level${activeLevels.has(lv) ? ' active' : ''}" data-level="${lv}" aria-pressed="${activeLevels.has(lv)}">${LEVEL_TR[lv]}</button>`).join('');
   }
 
-  // Seçiciyi yalnızca aktif seviyedeki programlarla kurar. Seçili program
-  // görünmeyen bir seviyeye düştüyse seçimi temizleyip grafiği sıfırlar.
+  // Önce fakülte, sonra bölüm: tek uzun gruplu liste yerine iki adım.
+  // Her iki liste de yalnızca aktif seviyedeki programları gösterir.
+
+  function visibleProgs() {
+    return programs.filter((p) => activeLevels.has(p.level || 'LS'));
+  }
+
+  // Seçili fakülteyi korur; o fakülte artık görünmüyorsa ilkine düşer.
+  function renderFacultyPicker(root) {
+    const sel = root.querySelector('.pg-faculty-select');
+    const facs = [...new Set(visibleProgs().map((p) => p.faculty || 'Diğer'))]
+      .sort((a, b) => a.localeCompare(b, 'tr'));
+    const prev = sel.value;
+    sel.innerHTML = facs.map((f) => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
+    sel.value = facs.includes(prev) ? prev : (facs[0] || '');
+    return sel.value;
+  }
+
+  // Seçiciyi seçili fakültenin (ve aktif seviyenin) programlarıyla kurar.
+  // Seçili program listeden düştüyse seçimi temizleyip grafiği sıfırlar.
   function renderProgramPicker(root) {
+    const faculty = renderFacultyPicker(root);
     const sel = root.querySelector('.pg-program-select');
-    const byGroup = new Map();
-    for (const p of programs) {
-      if (!activeLevels.has(p.level || 'LS')) continue;
-      const lvl = LEVEL_TR[p.level] || p.level || 'Lisans';
-      const key = p.faculty ? `${p.faculty}: ${lvl}` : lvl;
-      if (!byGroup.has(key)) byGroup.set(key, []);
-      byGroup.get(key).push(p);
-    }
-    let html = '<option value="">Bölüm seçiniz…</option>';
-    for (const [group, ps] of byGroup) {
-      html += `<optgroup label="${esc(group)}">` +
-        ps.map((p) => `<option value="${esc(p.code)}">${esc(p.name)}</option>`).join('') +
-        '</optgroup>';
-    }
+    const ps = visibleProgs().filter((p) => (p.faculty || 'Diğer') === faculty);
+    const lvlAdi = (p) => LEVEL_TR[p.level] || p.level || 'Lisans';
+    const html = '<option value="">Bölüm seçiniz…</option>' +
+      ps.map((p) => `<option value="${esc(p.code)}">${esc(p.name)} · ${esc(lvlAdi(p))}</option>`).join('');
     const prev = sel.value;
     sel.innerHTML = html;
     const stillThere = prev && [...sel.options].some((o) => o.value === prev);
@@ -1043,6 +1052,10 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       if (!inited) {
         initLevelFilter(root);
         renderProgramPicker(root);
+        // Fakülte değişince bölüm listesi yenilenir (seçim temizlenir).
+        root.querySelector('.pg-faculty-select').addEventListener('change', () => {
+          renderProgramPicker(root);
+        });
         root.querySelector('.pg-program-select').addEventListener('change', () => {
           const sel = root.querySelector('.pg-program-select');
           if (!sel.value) return;
@@ -1068,6 +1081,17 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
         const params = new URLSearchParams(location.search);
         const wantProg = params.get('prog');
         if (wantProg) {
+          // Paylaşılan link başka bir fakültenin programına işaret edebilir:
+          // önce o programın fakültesini aç, sonra bölüm listesini kur.
+          const hedef = programs.find((p) => p.code === wantProg);
+          if (hedef) {
+            const facSel = root.querySelector('.pg-faculty-select');
+            const fac = hedef.faculty || 'Diğer';
+            if ([...facSel.options].some((o) => o.value === fac)) {
+              facSel.value = fac;
+              renderProgramPicker(root);
+            }
+          }
           const sel = root.querySelector('.pg-program-select');
           const ok = [...sel.options].some((o) => o.value === wantProg);
           if (ok) {

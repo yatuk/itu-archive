@@ -52,6 +52,16 @@ test.describe('SPA (ana sayfa)', () => {
     expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
   });
 
+  test('gelişmiş filtreler tıklama arkasında değil, hep görünür', async ({ page }) => {
+    await page.goto('/');
+    // Kayıt haftasında seviye/yöntem/program birincil filtreler kadar sık
+    // kullanılıyor; disclosure kaldırıldı.
+    await expect(page.locator('#f-more-toggle')).toHaveCount(0);
+    for (const sel of ['#f-level', '#f-method', '#f-program', '#f-code', '#f-open', '#f-taken']) {
+      await expect(page.locator(sel)).toBeVisible();
+    }
+  });
+
   test('iki tema da uygulanır ve tarayıcı çubuğu rengi eşleşir', async ({ page }) => {
     await page.goto('/');
 
@@ -89,6 +99,45 @@ test.describe('SPA (ana sayfa)', () => {
 
     // Hedefi gerçekten var mı?
     await expect(page.locator('#icerik')).toHaveCount(1);
+  });
+});
+
+test.describe('Program seçimi (fakülte → bölüm)', () => {
+  test('Ders Planım: fakülte seçimi bölüm listesini daraltır', async ({ page }) => {
+    await page.goto('/');
+    await page.locator('#tab-dersplanim').click();
+    // Müfredat indeksi geç yüklenir; fakülteler dolana kadar bekle.
+    await expect.poll(
+      async () => page.locator('#dp-fac option').count(),
+      { timeout: 20000, message: 'fakülte seçicisi dolmalı' }
+    ).toBeGreaterThan(10);
+
+    await page.selectOption('#dp-fac', { label: 'Mimarlık Fakültesi' });
+    const bolumler = await page.locator('#dp-prog option').allTextContents();
+
+    expect(bolumler.length).toBeGreaterThan(0);
+    // Daralma gerçek olmalı: 313 programın tamamı listelenmemeli.
+    expect(bolumler.length).toBeLessThan(50);
+    expect(bolumler.some((b) => /Mimarlık/i.test(b))).toBe(true);
+    // Seçim otomatik ilk bölüme düşer, boş kalmaz.
+    await expect(page.locator('#dp-prog')).not.toHaveValue('');
+  });
+
+  test('Önşart: fakülte seçicisi dolar, bölüm listesi gruplu değil', async ({ page }) => {
+    await page.goto('/');
+    await page.locator('#tab-onsart').click();
+
+    const fac = page.locator('.pg-faculty-select');
+    // Önşart grafiği veriyi geç yükler: yer tutucu ("yükleniyor…") gerçek
+    // fakültelerle değişene kadar bekle.
+    await expect.poll(
+      async () => fac.locator('option').count(),
+      { timeout: 20000, message: 'fakülte seçicisi dolmalı' }
+    ).toBeGreaterThan(5);
+    await expect(fac).not.toHaveValue(/yükleniyor/i);
+
+    // İki adımlı seçimde tek listedeki optgroup gruplaması kalkar.
+    expect(await page.locator('.pg-program-select optgroup').count()).toBe(0);
   });
 });
 

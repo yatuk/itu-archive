@@ -113,14 +113,34 @@ test.describe('Program seçimi (fakülte → bölüm)', () => {
     ).toBeGreaterThan(10);
 
     await page.selectOption('#dp-fac', { label: 'Mimarlık Fakültesi' });
-    const bolumler = await page.locator('#dp-prog option').allTextContents();
 
-    expect(bolumler.length).toBeGreaterThan(0);
+    // Liste yeniden kurulurken okumamak için dolmasını bekle.
+    await expect.poll(
+      async () => page.locator('#dp-prog option').count(),
+      { timeout: 20000, message: 'bölüm listesi seçilen fakülteyle dolmalı' }
+    ).toBeGreaterThan(0);
+
+    const bolumler = await page.locator('#dp-prog option').allTextContents();
     // Daralma gerçek olmalı: 313 programın tamamı listelenmemeli.
     expect(bolumler.length).toBeLessThan(50);
     expect(bolumler.some((b) => /Mimarlık/i.test(b))).toBe(true);
     // Seçim otomatik ilk bölüme düşer, boş kalmaz.
     await expect(page.locator('#dp-prog')).not.toHaveValue('');
+  });
+
+  test('Seçmeli slot adı ders seçicinin altında ezilmez', async ({ page }) => {
+    // <select>'in doğal genişliği en uzun ders adından gelir; ızgaranın `auto`
+    // sütununu şişirip slot adını tek karakter genişliğine ezerdi
+    // ("S/e/ç/m/e/l/i" dikey akıyordu).
+    await page.goto('/?prog=SAO_OL#dersplanim');
+    await page.locator('#tab-dersplanim').click();
+
+    const ad = page.locator('.dp-elective .dp-elective-name').first();
+    await expect(ad).toBeVisible({ timeout: 20000 });
+
+    const kutu = await ad.boundingBox();
+    expect(kutu.width, 'slot adı okunabilir genişlikte olmalı').toBeGreaterThan(120);
+    expect(kutu.height, 'slot adı birkaç satıra sarmamalı').toBeLessThan(40);
   });
 
   test('Önşart: fakülte seçicisi dolar, bölüm listesi gruplu değil', async ({ page }) => {

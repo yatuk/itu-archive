@@ -1882,9 +1882,16 @@ body.modal-open { overflow: hidden; }
 
 .dp-elective-name { font-style: italic; }
 .dp-elective-inputs { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+/* Seçmeli satırı: <select>'in doğal genişliği en uzun ders adından gelir ve
+   ızgaranın `auto` sütununu şişirip slot adını ("Seçmeli II") tek karaktere
+   ezerdi. min-width:0 sütunun küçülmesine izin verir; slot adına da taban
+   genişlik verilir. */
+.dp-elective .dp-row { grid-template-columns: 32px minmax(9ch, 1fr) 26px minmax(0, 240px) auto; }
+.dp-elective-inputs { min-width: 0; }
 .dp-epick {
   font: inherit; font-size: 12px; color: var(--fg); background: var(--bg);
-  border: 1px solid var(--line-hot); padding: 3px 4px; max-width: 260px;
+  border: 1px solid var(--line-hot); padding: 3px 4px;
+  min-width: 0; flex: 0 1 260px; max-width: 260px;
 }
 .dp-grade-hint { color: var(--dimmer); font-size: 12px; font-style: italic; }
 
@@ -1949,8 +1956,15 @@ body.modal-open { overflow: hidden; }
 /* 480px altı: tekrar sütunu gizlenir — dört sütun (kredi|ders|not|durum) taşmaz. */
 @media (max-width: 480px) {
   .dp-row, .dp-colhead { grid-template-columns: 30px minmax(0, 1fr) auto auto; }
+  /* Seçmeli satırı: dar ekranda ders seçici kendi satırına iner, böylece slot
+     adı ("Seçmeli II") tam genişlikte okunur — yan yana sığmıyordu. */
+  .dp-elective .dp-row { grid-template-columns: 30px minmax(0, 1fr) auto; }
+  .dp-elective .dp-credit { grid-area: 1 / 1; }
+  .dp-elective .dp-title { grid-area: 1 / 2; }
+  .dp-elective .dp-sec-btn { grid-area: 1 / 3; }
+  .dp-elective .dp-elective-inputs { grid-area: 2 / 1 / auto / -1; }
   .dp-repeat-btn, .dp-repeat-cell, .dp-colhead span:nth-child(3) { display: none; }
-  .dp-epick { max-width: 160px; }
+  .dp-epick { max-width: 140px; }
 }
 
 .dp-types-progress { color: var(--dim); font-size: 12px; margin-top: 8px; }

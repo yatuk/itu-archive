@@ -7,11 +7,18 @@
 /quota.exe
 
 # node / npm / wrangler
+# package-lock.json bilerek commit edilir: CI'daki `npm ci` ve setup-node
+# önbelleği kilit dosyasına dayanır (Playwright sürümü sabitlensin).
 node_modules/
-package-lock.json
 wrangler.jsonc
 wrangler.toml
 .wrangler/
+
+# playwright çıktıları
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 
 # yerel araç ayarları
 .claude/

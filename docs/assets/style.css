@@ -134,8 +134,10 @@
 [data-theme="sade"] .brand .prompt,
 [data-theme="sade"] .brand .path,
 [data-theme="sade"] .brand .caret { display: none; }
-[data-theme="sade"] .brand h1 { color: var(--fg); text-shadow: none; }
-[data-theme="sade"] .brand h1::after { content: ""; animation: none; }
+[data-theme="sade"] .brand h1,
+[data-theme="sade"] .brand .brand-title { color: var(--fg); text-shadow: none; }
+[data-theme="sade"] .brand h1::after,
+[data-theme="sade"] .brand .brand-title::after { content: ""; animation: none; }
 /* Sade'de gövde metni sans; veri (kod, CRN, saat, sayı) hâlâ monospace —
    sayı hizalaması ve "veri" hissi için. */
 [data-theme="sade"] body { font-family: var(--sans); }
@@ -332,6 +334,16 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 
 .wrap { max-width: var(--w); margin: 0 auto; padding: 0 20px; }
 
+/* Klavye kullanıcısı masthead + 9 sekmeyi geçmeden içeriğe inebilsin.
+   Yalnızca odaklanınca görünür. */
+.skip-link {
+  position: absolute; left: 8px; top: -100px; z-index: 300;
+  padding: 10px 16px; border-radius: var(--radius-field, 8px);
+  background: var(--panel); color: var(--fg);
+  border: 1px solid var(--line-hot); text-decoration: none;
+}
+.skip-link:focus { top: 8px; outline: 2px solid var(--cyan); outline-offset: 2px; }
+
 /* CRT taraması — dekoratif, hareket duyarlılığında kapanır */
 .scanlines {
   position: fixed; inset: 0; z-index: 100; pointer-events: none;
@@ -352,7 +364,9 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 .brand-logo { display: none; width: 30px; height: 30px; object-fit: contain; align-self: center; margin-right: 2px; border-radius: 6px; }
 [data-theme="sade"] .brand-logo { display: inline-block; }
 
-.brand h1 {
+/* SPA'da masthead sayfanın h1'idir; SEO sayfalarında içerik başlığı h1 olur,
+   marka .brand-title'a düşer (sayfa başına tek h1). Görünüm aynı. */
+.brand h1, .brand .brand-title {
   margin: 0 0 0 6px;
   font-family: "Space Grotesk", var(--mono);
   font-size: clamp(22px, 4.2vw, 38px);
@@ -361,14 +375,16 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
   color: var(--acid);
   text-shadow: 0 0 18px rgba(0, 255, 156, .35);
 }
-.brand h1::after {
+.brand h1::after, .brand .brand-title::after {
   content: "█";
   animation: blink 1.1s steps(1) infinite;
   color: var(--acid);
   margin-left: 6px;
 }
 @keyframes blink { 50% { opacity: 0; } }
-@media (prefers-reduced-motion: reduce) { .brand h1::after { animation: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .brand h1::after, .brand .brand-title::after { animation: none; }
+}
 
 .tagline { max-width: 70ch; color: var(--dim); margin: 14px 0 22px; }
 
@@ -419,16 +435,19 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
   -webkit-backdrop-filter: blur(10px);
   position: sticky; top: 12px; z-index: 30;
 }
-.tabs button {
+/* SPA sekmeleri <button>, SEO sayfalarınınki <a> (taranabilir olmalı) —
+   ikisi de aynı hapı paylaşır. */
+.tabs button, .tabs a {
   font: inherit; letter-spacing: .1em; cursor: pointer;
   background: transparent; color: var(--dim);
   border: none; padding: 8px 16px; border-radius: 999px;
+  text-decoration: none; white-space: nowrap;
 }
-.tabs button:hover { color: var(--fg); background: var(--panel-2); }
-.tabs button[aria-selected="true"] {
+.tabs button:hover, .tabs a:hover { color: var(--fg); background: var(--panel-2); }
+.tabs button[aria-selected="true"], .tabs a[aria-current="page"] {
   color: var(--bg); background: var(--acid); font-weight: 700;
 }
-.tabs button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.tabs button:focus-visible, .tabs a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
 
 main { padding: 0 20px 60px; }
 /* Program oluşturucu daha geniş alan kullanır */
@@ -1066,6 +1085,8 @@ footer {
   background: var(--scrim);
   display: flex; align-items: flex-start; justify-content: center;
   padding: 6vh 16px; overflow-y: auto;
+  /* Modal kaydırması arka sayfaya zincirlenmesin (mobilde belirgin). */
+  overscroll-behavior: contain;
   animation: detail-fade 200ms var(--ease-out-expo);
 }
 
@@ -1112,6 +1133,7 @@ footer {
   position: relative; width: min(680px, 100%);
   background: var(--panel); border: 1px solid var(--line-hot);
   padding: 22px 24px; max-height: 86vh; overflow-y: auto;
+  overscroll-behavior: contain;
   animation: detail-in 340ms var(--ease-out-expo);
 }
 @keyframes detail-in {
@@ -1690,7 +1712,10 @@ body.modal-open { overflow: hidden; }
   padding: 2px 6px; font-size: 12px; border-radius: 2px;
 }
 
-.seo-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+/* Geniş SEO tablosu kendi kabında kayar; sayfa gövdesi yatay kaymaz.
+   Global `table { min-width: 900px }` SPA'nın 10 kolonlu tablosu içindir. */
+.seo-tablewrap { overflow-x: auto; margin: 12px 0; }
+.seo-table { width: 100%; min-width: 0; border-collapse: collapse; margin: 0; }
 .seo-table th { text-align: left; color: var(--dimmer); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; border-bottom: 1px solid var(--line); }
 .seo-table td { padding: 5px 10px; border-bottom: 1px solid var(--hairline); }
 .seo-table a { color: var(--cyan); }
@@ -1705,8 +1730,10 @@ body.modal-open { overflow: hidden; }
 .data-link { color: var(--dimmer); font-size: 13px; margin-top: 20px; }
 .data-link a { color: var(--dim); }
 
-.masthead h1 a { color: inherit; text-decoration: none; }
-.masthead h1 a:hover { color: var(--cyan); }
+.masthead h1 a,
+.masthead .brand-title a { color: inherit; text-decoration: none; }
+.masthead h1 a:hover,
+.masthead .brand-title a:hover { color: var(--cyan); }
 
 .seo-spark-wrap { display: inline-flex; align-items: center; gap: 6px; margin-right: 16px; }
 .seo-spark-wrap code { font-size: 11px; color: var(--dimmer); background: var(--panel-2); padding: 1px 4px; border-radius: 2px; }

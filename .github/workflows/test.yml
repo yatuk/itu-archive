@@ -29,3 +29,35 @@ jobs:
 
       - name: Veri bütünlüğü
         run: go run ./cmd/validate -quiet -skip-site
+
+  # Tarayıcı duman testi: sayfayı gerçekten açar. Go/node testleri ve validate
+  # sayfayı hiç açmıyordu — stil hiç uygulanmaması, yatay taşma, veri gelmesine
+  # rağmen boş tablo gibi hatalar yalnızca burada görünür.
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Bağımlılıklar
+        run: npm ci
+
+      - name: Chromium indir
+        run: npx playwright install --with-deps chromium
+
+      - name: Duman testleri
+        run: npx playwright test
+
+      - name: Hata raporunu sakla
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-raporu
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7

@@ -37,6 +37,7 @@ type lang struct {
 	NavProgram        string
 	NavHakkinda       string
 	CrumbHome         string
+	SkipToContent     string // klavye kullanıcısı için ilk odak bağlantısı
 	FootScanned       string
 	FootLive          string
 	FootSitemap       string
@@ -92,7 +93,8 @@ var langTR = lang{
 	SiteTitle: "İTÜ Ders Arşivi",
 	SiteTagline: "obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri. Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı: kalıcı olarak.",
 	NavDersler: "dersler", NavGecmis: "geçmiş", NavOnsart: "önşart", NavSinavlar: "sınavlar", NavTakvim: "takvim", NavProgram: "program", NavHakkinda: "hakkında",
-	CrumbHome: "Ders Arşivi", FootScanned: "son tarama", FootLive: "canlı site", FootSitemap: "sitemap",
+	CrumbHome: "Ders Arşivi", SkipToContent: "İçeriğe atla",
+	FootScanned: "son tarama", FootLive: "canlı site", FootSitemap: "sitemap",
 	TermSuffix: "ders programı ve arşivi",
 	TermLeadFmt: "İTÜ %s: %d ders, %d şube, %d branş.",
 	TermLiveBadge: "aktif dönem · canlı veri", TermBranchHeading: "Bu dönemde açılan branşlar",
@@ -118,7 +120,8 @@ var langEN = lang{
 	SiteTitle: "İTÜ Course Archive",
 	SiteTagline: "Open data automatically collected from obs.itu.edu.tr. Which courses opened in which term, who taught them, how many enrolled: permanently archived.",
 	NavDersler: "courses", NavGecmis: "history", NavOnsart: "prereqs", NavSinavlar: "exams", NavTakvim: "calendar", NavProgram: "schedule", NavHakkinda: "about",
-	CrumbHome: "Course Archive", FootScanned: "last scrape", FootLive: "live site", FootSitemap: "sitemap",
+	CrumbHome: "Course Archive", SkipToContent: "Skip to content",
+	FootScanned: "last scrape", FootLive: "live site", FootSitemap: "sitemap",
 	TermSuffix: "course schedule and archive",
 	TermLeadFmt: "İTÜ %s: %d courses, %d sections, %d branches.",
 	TermLiveBadge: "active term · live data", TermBranchHeading: "Branches open this term",
@@ -518,9 +521,9 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 		`<h2>Ders kodları</h2>`,
 		fmt.Sprintf(`<p class="seo-codes">%s</p>`, strings.Join(codeSpans, " ")),
 		`<h2>Dönem dökümü</h2>`,
-		`<table class="seo-table"><thead><tr><th>Dönem</th><th>Şube</th></tr></thead><tbody>`+
+		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>Dönem</th><th>Şube</th></tr></thead><tbody>`+
 			strings.Join(termRows, "")+
-			`</tbody></table>`,
+			`</tbody></table></div>`,
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "brans", code, "index.html"),
@@ -620,7 +623,8 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
-<script>(function(){try{var t=localStorage.getItem('itu-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'sade')}catch(e){}})()</script>
+<meta name="theme-color" content="#f4f6f4">
+<script>(function(){try{var t=localStorage.getItem('itu-theme')==='dark'?'dark':'sade';document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='dark'?'#050806':'#f4f6f4')}catch(e){}})()</script>
 <title>{{.Title}} | {{.Lang.SiteTitle}}</title>
 <meta name="description" content="{{.Description}}">
 <link rel="canonical" href="{{.Canonical}}">
@@ -631,13 +635,15 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 {{.JSONLD}}
 </head>
 <body>
+<a class="skip-link" href="#icerik">{{.Lang.SkipToContent}}</a>
 <div class="scanlines" aria-hidden="true"></div>
 <header class="masthead">
  <div class="wrap">
   <div class="mast-top">
    <div class="brand">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
-    <h1><a href="/">{{.Lang.SiteTitle}}</a></h1>
+    <img class="brand-logo" src="/itü_ari.png" alt="" aria-hidden="true" width="32" height="31">
+    <p class="brand-title" translate="no"><a href="/">{{.Lang.SiteTitle}}</a></p>
    </div>
   </div>
   <p class="tagline">{{.Lang.SiteTagline}}</p>
@@ -652,7 +658,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
  <a href="/#program">{{.Lang.NavProgram}}</a>
  <a href="/#hakkinda">{{.Lang.NavHakkinda}}</a>
 </nav>
-<main class="wrap">
+<main class="wrap" id="icerik">
 {{.Content}}
 </main>
 <footer class="wrap">
@@ -1094,8 +1100,8 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 			fmt.Sprintf(`<div><dt>ders kaydı</dt><dd>%d</dd></div>`, len(hi.Rows))+
 			`</dl>`,
 		`<h2>Verdiği dersler</h2>`,
-		`<table class="seo-table"><thead><tr><th>Ders</th><th>Adı</th><th>Dönem</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
-			strings.Join(rows, "")+`</tbody></table>`,
+		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>Ders</th><th>Adı</th><th>Dönem</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
+			strings.Join(rows, "")+`</tbody></table></div>`,
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "hoca", slug, "index.html"),
@@ -1392,8 +1398,8 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			))
 		}
 		sectHTML = `<h2>Son dönem şubeleri</h2>` +
-			`<table class="seo-table"><thead><tr><th>CRN</th><th>Öğretim Üyesi</th><th>Zaman</th><th>Kont/Yazılan</th></tr></thead><tbody>` +
-			strings.Join(rows, "") + `</tbody></table>`
+			`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>CRN</th><th>Öğretim Üyesi</th><th>Zaman</th><th>Kont/Yazılan</th></tr></thead><tbody>` +
+			strings.Join(rows, "") + `</tbody></table></div>`
 	}
 
 	// Kontenjan serisi (yalnızca veri varsa).
@@ -1439,8 +1445,8 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 		sectHTML,
 		quotaHTML,
 		`<h2>Dönem geçmişi</h2>`,
-		`<table class="seo-table"><thead><tr><th>Dönem</th><th>Öğretim Üyesi</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
-			strings.Join(histRows, "")+`</tbody></table>`,
+		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>Dönem</th><th>Öğretim Üyesi</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
+			strings.Join(histRows, "")+`</tbody></table></div>`,
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "ders", slug, "index.html"),

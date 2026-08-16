@@ -4,24 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
-<script>(function(){try{var t=localStorage.getItem('itu-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'sade')}catch(e){}})()</script>
+<meta name="theme-color" content="#f4f6f4">
+<script>(function(){try{var t=localStorage.getItem('itu-theme')==='dark'?'dark':'sade';document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='dark'?'#050806':'#f4f6f4')}catch(e){}})()</script>
 <title>UAH branşı dersleri ve dönem dökümü | İTÜ Ders Arşivi</title>
 <meta name="description" content="İTÜ UAH branşının tüm dönemlerdeki arşivi: 12 ders kodu, 1 dönem, 12 şube.">
 <link rel="canonical" href="https://itu-ders.com/brans/UAH/">
 <link rel="alternate" hreflang="en" href="https://itu-ders.com/en/brans/UAH/">
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="/assets/style.css?v=3617436">
+<link rel="stylesheet" href="/assets/style.css?v=1a6d9cd">
 <link rel="icon" href="/favicon.png" type="image/png">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","description":"İTÜ UAH branşının tüm dönemlerdeki arşivi: 12 ders kodu, 1 dönem, 12 şube.","inLanguage":"tr-TR","name":"UAH branşı dersleri ve dönem dökümü","url":"https://itu-ders.com/brans/UAH/"}]</script>
 </head>
 <body>
+<a class="skip-link" href="#icerik">İçeriğe atla</a>
 <div class="scanlines" aria-hidden="true"></div>
 <header class="masthead">
  <div class="wrap">
   <div class="mast-top">
    <div class="brand">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
-    <h1><a href="/">İTÜ Ders Arşivi</a></h1>
+    <img class="brand-logo" src="/itü_ari.png" alt="" aria-hidden="true" width="32" height="31">
+    <p class="brand-title" translate="no"><a href="/">İTÜ Ders Arşivi</a></p>
    </div>
   </div>
   <p class="tagline">obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri. Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı: kalıcı olarak.</p>
@@ -36,7 +39,7 @@
  <a href="/#program">program</a>
  <a href="/#hakkinda">hakkında</a>
 </nav>
-<main class="wrap">
+<main class="wrap" id="icerik">
 <nav class="crumb"><a href="/">Ders Arşivi</a> › <span>UAH</span></nav>
 <h1>UAH branşı</h1>
 <p class="lead">İTÜ UAH branşının tüm dönemlerdeki arşivi: 12 ders kodu, 1 dönem, 12 şube.</p>
@@ -45,7 +48,7 @@
 <h2>Ders kodları</h2>
 <p class="seo-codes"><a href="/ders/uah-513e/"><code>UAH 513E</code></a> <a href="/ders/uah-515e/"><code>UAH 515E</code></a> <a href="/ders/uah-525e/"><code>UAH 525E</code></a> <a href="/ders/uah-533/"><code>UAH 533</code></a> <a href="/ders/uah-596/"><code>UAH 596</code></a> <a href="/ders/uah-614e/"><code>UAH 614E</code></a> <a href="/ders/uah-636/"><code>UAH 636</code></a> <a href="/ders/uah-641/"><code>UAH 641</code></a> <a href="/ders/uah-696/"><code>UAH 696</code></a> <a href="/ders/uah-drt/"><code>UAH DRT</code></a> <a href="/ders/uah-yet/"><code>UAH YET</code></a> <a href="/ders/uah-ylt/"><code>UAH YLT</code></a></p>
 <h2>Dönem dökümü</h2>
-<table class="seo-table"><thead><tr><th>Dönem</th><th>Şube</th></tr></thead><tbody><tr><td><a href="/dersler/2026-2027-guz/">2026-2027 Güz Dönemi</a></td><td>12 şube</td></tr></tbody></table>
+<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>Dönem</th><th>Şube</th></tr></thead><tbody><tr><td><a href="/dersler/2026-2027-guz/">2026-2027 Güz Dönemi</a></td><td>12 şube</td></tr></tbody></table></div>
 </main>
 <footer class="wrap">
  <span>son tarama 13 Ağustos 2026</span> · <a href="/">canlı site</a> · <a href="/sitemap.xml">sitemap</a>

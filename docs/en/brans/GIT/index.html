@@ -4,24 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
-<script>(function(){try{var t=localStorage.getItem('itu-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'sade')}catch(e){}})()</script>
+<meta name="theme-color" content="#f4f6f4">
+<script>(function(){try{var t=localStorage.getItem('itu-theme')==='dark'?'dark':'sade';document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='dark'?'#050806':'#f4f6f4')}catch(e){}})()</script>
 <title>GIT branşı dersleri ve dönem dökümü | İTÜ Course Archive</title>
 <meta name="description" content="İTÜ GIT branşının tüm dönemlerdeki arşivi: 21 ders kodu, 1 dönem, 21 şube.">
 <link rel="canonical" href="https://itu-ders.com/brans/GIT/">
 <link rel="alternate" hreflang="tr" href="https://itu-ders.com/brans/GIT/">
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="/assets/style.css?v=3617436">
+<link rel="stylesheet" href="/assets/style.css?v=1a6d9cd">
 <link rel="icon" href="/favicon.png" type="image/png">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","description":"İTÜ GIT branşının tüm dönemlerdeki arşivi: 21 ders kodu, 1 dönem, 21 şube.","inLanguage":"tr-TR","name":"GIT branşı dersleri ve dönem dökümü","url":"https://itu-ders.com/brans/GIT/"}]</script>
 </head>
 <body>
+<a class="skip-link" href="#icerik">Skip to content</a>
 <div class="scanlines" aria-hidden="true"></div>
 <header class="masthead">
  <div class="wrap">
   <div class="mast-top">
    <div class="brand">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
-    <h1><a href="/">İTÜ Course Archive</a></h1>
+    <img class="brand-logo" src="/itü_ari.png" alt="" aria-hidden="true" width="32" height="31">
+    <p class="brand-title" translate="no"><a href="/">İTÜ Course Archive</a></p>
    </div>
   </div>
   <p class="tagline">Open data automatically collected from obs.itu.edu.tr. Which courses opened in which term, who taught them, how many enrolled: permanently archived.</p>
@@ -36,7 +39,7 @@
  <a href="/#program">schedule</a>
  <a href="/#hakkinda">about</a>
 </nav>
-<main class="wrap">
+<main class="wrap" id="icerik">
 <nav class="crumb"><a href="/">Ders Arşivi</a> › <span>GIT</span></nav>
 <h1>GIT branşı</h1>
 <p class="lead">İTÜ GIT branşının tüm dönemlerdeki arşivi: 21 ders kodu, 1 dönem, 21 şube.</p>
@@ -45,7 +48,7 @@
 <h2>Ders kodları</h2>
 <p class="seo-codes"><a href="/ders/git-501/"><code>GIT 501</code></a> <a href="/ders/git-503e/"><code>GIT 503E</code></a> <a href="/ders/git-505/"><code>GIT 505</code></a> <a href="/ders/git-507/"><code>GIT 507</code></a> <a href="/ders/git-509e/"><code>GIT 509E</code></a> <a href="/ders/git-511e/"><code>GIT 511E</code></a> <a href="/ders/git-513/"><code>GIT 513</code></a> <a href="/ders/git-514e/"><code>GIT 514E</code></a> <a href="/ders/git-515/"><code>GIT 515</code></a> <a href="/ders/git-518/"><code>GIT 518</code></a> <a href="/ders/git-522e/"><code>GIT 522E</code></a> <a href="/ders/git-524e/"><code>GIT 524E</code></a> <a href="/ders/git-596/"><code>GIT 596</code></a> <a href="/ders/git-601e/"><code>GIT 601E</code></a> <a href="/ders/git-603e/"><code>GIT 603E</code></a> <a href="/ders/git-605e/"><code>GIT 605E</code></a> <a href="/ders/git-696/"><code>GIT 696</code></a> <a href="/ders/git-801e/"><code>GIT 801E</code></a> <a href="/ders/git-drt/"><code>GIT DRT</code></a> <a href="/ders/git-yet/"><code>GIT YET</code></a> <a href="/ders/git-ylt/"><code>GIT YLT</code></a></p>
 <h2>Dönem dökümü</h2>
-<table class="seo-table"><thead><tr><th>Dönem</th><th>Şube</th></tr></thead><tbody><tr><td><a href="/dersler/2026-2027-guz/">2026-2027 Güz Dönemi</a></td><td>21 şube</td></tr></tbody></table>
+<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>Dönem</th><th>Şube</th></tr></thead><tbody><tr><td><a href="/dersler/2026-2027-guz/">2026-2027 Güz Dönemi</a></td><td>21 şube</td></tr></tbody></table></div>
 </main>
 <footer class="wrap">
  <span>last scrape 13 Ağustos 2026</span> · <a href="/">live site</a> · <a href="/sitemap.xml">sitemap</a>

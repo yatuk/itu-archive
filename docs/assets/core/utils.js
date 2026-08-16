@@ -2,7 +2,13 @@
 // test edilebilir; veri/UX yardımcıları (getJSON, setStatus) tüm görünümlerin
 // tek kaynağıdır — kopyalar burada toplanır.
 
+import { I18N } from '../i18n.js';
+
 const cache = new Map();
+
+// Tarih/saat biçimi görüntü dilini izler; veri ayrıştırma (parseTurkishDate)
+// her zaman kaynağın Türkçe yazımına bakar, o tarafa dokunulmaz.
+const locale = () => (I18N.lang === 'en' ? 'en-GB' : 'tr-TR');
 
 export const $ = (sel) => document.querySelector(sel);
 
@@ -215,14 +221,14 @@ export function fmtDate(iso) {
   if (!iso) return '·';
   const d = new Date(iso);
   if (isNaN(d)) return iso;
-  return d.toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' });
+  return d.toLocaleString(locale(), { dateStyle: 'medium', timeStyle: 'short' });
 }
 
-// "2025-2026-guz" -> "2025-26 Güz"
+// "2025-2026-guz" -> "2025-26 Güz" (EN: "2025-26 Fall")
 export function termLabel(slug) {
   const [y1, y2, season] = slug.split('-');
   const s = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' }[season] || season;
-  return `${y1}-${String(y2).slice(2)} ${s}`;
+  return `${y1}-${String(y2).slice(2)} ${I18N.seasonName(s)}`;
 }
 
 // Yer alanındaki binayı ayıklar: "Ayazağa/İnşaat Binası-D100" -> "İnşaat Binası".
@@ -318,11 +324,11 @@ export function calendarDayState(dateStr, today = new Date(), iso) {
   const diff = (d) => Math.round((start - d) / 86400000); // >0 geçmiş, 0 bugün, <0 gelecek
   const ds = diff(r.start);
   const de = diff(r.end);
-  if (de > 0) return { past: true, now: false, label: de === 1 ? 'Dün bitti' : `${de} gün geçti` };
-  if (ds > 0) return { past: false, now: true, label: 'Devam ediyor' };
+  if (de > 0) return { past: true, now: false, label: de === 1 ? I18N.t('calEndedYesterday') : I18N.t('calDaysPassed', { n: de }) };
+  if (ds > 0) return { past: false, now: true, label: I18N.t('calOngoing') };
   const ahead = -ds;
-  if (ahead === 0) return { past: false, now: true, label: 'Bugün' };
-  return { past: false, now: false, label: ahead === 1 ? 'Yarın' : `${ahead} gün kaldı` };
+  if (ahead === 0) return { past: false, now: true, label: I18N.t('calToday') };
+  return { past: false, now: false, label: ahead === 1 ? I18N.t('calTomorrow') : I18N.t('calDaysLeft', { n: ahead }) };
 }
 
 // Oturum sürelerini toplar: ["08:30/11:29", "13:00/15:59"] -> 6 sa/hafta.
@@ -350,20 +356,20 @@ export function timeAgo(iso, now = Date.now()) {
   const ms = now - t.getTime();
   if (ms < 0) return '';
   const min = Math.floor(ms / 60000);
-  if (min < 1) return 'şimdi';
-  if (min < 60) return `${min} dk önce`;
+  if (min < 1) return I18N.t('agoNow');
+  if (min < 60) return I18N.t('agoMin', { n: min });
   const hr = Math.floor(min / 60);
-  if (hr < 24) return `${hr} sa önce`;
+  if (hr < 24) return I18N.t('agoHour', { n: hr });
   const day = Math.floor(hr / 24);
-  if (day < 30) return `${day} gün önce`;
-  return t.toLocaleDateString('tr-TR');
+  if (day < 30) return I18N.t('agoDay', { n: day });
+  return t.toLocaleDateString(locale());
 }
 
 // Doluluk rozetinin ölçüm zamanını küçük etikete çevirir: "en son 6 sa önce
 // ölçüldü". Zaman damgası yoksa (eski dönem/quota yoksa) boş döner — saf, testli.
 export function fillMeasured(lastIso, now = Date.now()) {
   const ago = timeAgo(lastIso, now);
-  return ago ? `en son ${ago} ölçüldü` : '';
+  return ago ? I18N.t('fillMeasured', { ago }) : '';
 }
 
 // CSV indirme (Excel için BOM'lu).

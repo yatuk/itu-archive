@@ -10,8 +10,10 @@
 // tbody'ye taşır, fragment sonrasında boşalır; o yüzden tr'ler döndürülür.
 
 import { esc } from './utils.js';
+import { I18N } from '../i18n.js';
 
-export function fillRows(tbody, items, makeRow, { empty = 'kayıt yok', colspan = 1, append = false } = {}) {
+export function fillRows(tbody, items, makeRow, { empty = null, colspan = 1, append = false } = {}) {
+  if (empty === null) empty = I18N.t('tableEmpty');
   if (!append) tbody.innerHTML = '';
   if (!items.length) {
     // Sayfalama eklemesinde boş dilim geldiyse mevcut satırları bozma.

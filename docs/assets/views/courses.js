@@ -16,9 +16,11 @@ import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
 import { openCourseDetail } from '../core/course-detail.js';
 import { isTaken } from '../core/taken.js';
+import { I18N } from '../i18n.js';
 
 const PAGE = 200;
-const TIME_LABEL = { sabah: 'sabah (<12:00)', ogle: 'öğle (12:00-17:00)', aksam: 'akşam (≥17:00)' };
+const TIME_LABEL = { sabah: 'timeMorning', ogle: 'timeNoon', aksam: 'timeEvening' };
+const timeLabel = (v) => (TIME_LABEL[v] ? I18N.t(TIME_LABEL[v]) : v);
 
 export function initCourses() {
   $('#q').addEventListener('input', debounce(applyFilters, 120));
@@ -87,7 +89,7 @@ export async function loadTerm(slug) {
   state.termSlug = slug;
   state.selected.clear(); // seçim döneme özeldir
   updateSelection();
-  setStatus($('#resultline'), 'dönem yükleniyor…', { busy: true });
+  setStatus($('#resultline'), I18N.t('termLoading'), { busy: true });
   // Faz 5.4: iskelet — dönem verisi gelene kadar shimmer satırları.
   $('#rows').innerHTML = '<div class="skel">' +
     '<div class="skel-line wide"></div>'.repeat(5) +
@@ -139,7 +141,7 @@ export async function loadTerm(slug) {
 
     applyFilters();
   } catch (e) {
-    setStatus($('#resultline'), `veri yüklenemedi (${e.message})`, { error: true });
+    setStatus($('#resultline'), I18N.t('dataLoadFail', { msg: e.message }), { error: true });
   }
 }
 
@@ -252,13 +254,13 @@ export function applyFilters() {
       (acc, r, i) => acc + (passBase(r) && matchRow(sub, fieldsOf(i)) ? 1 : 0), 0);
     const drop = suggestDrop(terms, countFor);
     if (drop >= 0) {
-      const rest = terms.filter((_, j) => j !== drop).map((t) => `'${esc(t)}'`).join(' ve ');
-      hint = ` · yalnızca ${rest} ile aramayı dene`;
+      const rest = terms.filter((_, j) => j !== drop).map((t) => `'${esc(t)}'`).join(` ${I18N.t('and')} `);
+      hint = ` · ${I18N.t('searchDropHint', { rest })}`;
     }
   }
   $('#resultline').innerHTML = n === total
-    ? `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} bölüm`
-    : `<b>${n}</b> / ${total} şube eşleşti${hint}`;
+    ? I18N.t('resAll', { n: `<b>${n}</b>`, courses: state.meta.courses, branches: state.meta.branches.length })
+    : I18N.t('resMatched', { n: `<b>${n}</b>`, total }) + hint;
   // Mobil filtre düğmesi etiketi: aktif filtre sayısı (dönem sayılmaz).
   const activeCount = [
     branch, day, time, level, method, program, code.trim(),
@@ -338,19 +340,19 @@ function renderChips() {
   const chips = [];
   const q = $('#q').value.trim();
   if (q) chips.push({ key: 'q', label: `"${q}"` });
-  if ($('#f-branch').value) chips.push({ key: 'branch', label: `bölüm: ${$('#f-branch').value}` });
-  if ($('#f-code').value.trim()) chips.push({ key: 'code', label: `kod: ${$('#f-code').value.trim()}` });
-  if ($('#f-day').value) chips.push({ key: 'day', label: `gün: ${$('#f-day').value}` });
-  if ($('#f-time').value) chips.push({ key: 'time', label: `saat: ${TIME_LABEL[$('#f-time').value] || $('#f-time').value}` });
-  if ($('#f-level').value) chips.push({ key: 'level', label: `seviye: ${$('#f-level').value}` });
-  if ($('#f-method').value) chips.push({ key: 'method', label: `yöntem: ${$('#f-method').value}` });
-  if ($('#f-program').value) chips.push({ key: 'program', label: `program: ${$('#f-program').value}` });
-  if ($('#f-open').checked) chips.push({ key: 'open', label: 'yalnızca kontenjan' });
+  if ($('#f-branch').value) chips.push({ key: 'branch', label: `${I18N.t('filterBranch')}: ${$('#f-branch').value}` });
+  if ($('#f-code').value.trim()) chips.push({ key: 'code', label: `${I18N.t('filterCode')}: ${$('#f-code').value.trim()}` });
+  if ($('#f-day').value) chips.push({ key: 'day', label: `${I18N.t('filterDay')}: ${I18N.dayName($('#f-day').value)}` });
+  if ($('#f-time').value) chips.push({ key: 'time', label: `${I18N.t('filterTime')}: ${timeLabel($('#f-time').value)}` });
+  if ($('#f-level').value) chips.push({ key: 'level', label: `${I18N.t('filterLevel')}: ${$('#f-level').value}` });
+  if ($('#f-method').value) chips.push({ key: 'method', label: `${I18N.t('filterMethod')}: ${$('#f-method').value}` });
+  if ($('#f-program').value) chips.push({ key: 'program', label: `${I18N.t('filterProgram')}: ${$('#f-program').value}` });
+  if ($('#f-open').checked) chips.push({ key: 'open', label: I18N.t('chipOpenOnly') });
 
   box.hidden = !chips.length;
   if (!chips.length) { box.innerHTML = ''; return; }
   box.innerHTML = chips.map((c) =>
-    `<button type="button" class="chip-x" data-key="${c.key}" title="Filtreyi kaldır">${esc(c.label)} ✕</button>`).join('');
+    `<button type="button" class="chip-x" data-key="${c.key}" title="${esc(I18N.t('chipRemove'))}">${esc(c.label)} ✕</button>`).join('');
   box.querySelectorAll('.chip-x').forEach((b) =>
     b.addEventListener('click', () => { clearFilter(b.dataset.key); applyFilters(); }));
 }
@@ -377,7 +379,7 @@ function updateSelection() {
   const n = state.selected.size;
   $('#sepet').hidden = !n;
   if (!n) { $('#sel-all').checked = false; return; }
-  $('#sel-count').textContent = `${n} şube seçili`;
+  $('#sel-count').textContent = I18N.t('selCount', { n });
   $('#sel-all').checked = state.filtered.length > 0 && state.filtered.every((r) => state.selected.has(selKey(r)));
 }
 
@@ -390,7 +392,7 @@ function clearSelection() {
 }
 
 function rowsToCSV(rows, filename) {
-  const headers = ['CRN', 'Ders Kodu', 'Bölüm', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan', 'Doluluk (%)'];
+  const headers = [I18N.t('thCrn'), I18N.t('csvCode'), I18N.t('filterBranch'), I18N.t('csvName'), I18N.t('thInstr'), I18N.t('thWhen'), I18N.t('detailCap'), I18N.t('thEnr'), I18N.t('csvFillPct')];
   const data = rows.map((r) => [
     r[0], r[1], r[3], r[2], r[4], r[5], r[6], r[7],
     r[6] ? Math.round((r[7] / r[6]) * 100) : '',
@@ -410,12 +412,12 @@ function exportSelectedCSV() {
 
 // Seçili şubeleri program oluşturucuya ekleyip o sekmeye geçer.
 function sendToProgram() {
-  if (!state.selected.size) { toast('Önce şube seç', { kind: 'warn' }); return; }
+  if (!state.selected.size) { toast(I18N.t('selectFirst'), { kind: 'warn' }); return; }
   let added = 0;
   for (const r of state.rows) {
     if (state.selected.has(selKey(r)) && fav.addToSchedule(state.termSlug, r[3], r[0])) added++;
   }
-  toast(added ? `${added} şube programa gönderildi` : 'Seçili şubeler zaten programda', { kind: added ? 'ok' : 'warn' });
+  toast(added ? I18N.t('sentToProgram', { n: added }) : I18N.t('alreadyInProgram'), { kind: added ? 'ok' : 'warn' });
   window.dispatchEvent(new CustomEvent('itu:goto-program'));
 }
 
@@ -436,7 +438,7 @@ function renderRows(append) {
   const slice = state.filtered.slice(state.shown, state.shown + PAGE);
 
   if (!slice.length && !state.shown) {
-    fillRows(tbody, [], null, { empty: 'eşleşen ders yok', colspan: 10 });
+    fillRows(tbody, [], null, { empty: I18N.t('noCourseMatch'), colspan: 10 });
     $('#more').hidden = true;
     return;
   }
@@ -449,16 +451,16 @@ function renderRows(append) {
     const hits = state.marks?.get(key)?.hits || null;
     const hitField = (f) => (hits ? hits.filter((h) => h.field === f) : null);
     return `
-      <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="Şubeyi seç"${state.selected.has(key) ? ' checked' : ''}></td>
-      <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? 'Favorilerden çıkar' : 'Favorilere ekle'}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
-      <td class="crn" data-label="CRN">${markField(crn, 'crn', hitField('crn'))}</td>
-      <td class="code" data-label="Ders"><b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small></td>
-      <td data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button></td>
-      <td data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
-      <td class="when" data-label="Zaman">${esc(when || '·')}</td>
-      <td class="num" data-label="Kont.">${formatInt(cap)}</td>
-      <td class="num" data-label="Yazılan">${formatInt(enr)}</td>
-      <td class="num" data-label="Doluluk">${cap ? `${formatInt(enr)}/${formatInt(cap)} · ` : ''}${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
+      <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="${esc(I18N.t('selectSection'))}"${state.selected.has(key) ? ' checked' : ''}></td>
+      <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${esc(starred ? I18N.t('favRemove') : I18N.t('favAdd'))}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
+      <td class="crn" data-label="${esc(I18N.t('thCrn'))}">${markField(crn, 'crn', hitField('crn'))}</td>
+      <td class="code" data-label="${esc(I18N.t('thCode'))}"><b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small></td>
+      <td data-label="${esc(I18N.t('thName'))}"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button></td>
+      <td data-label="${esc(I18N.t('thInstr'))}">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
+      <td class="when" data-label="${esc(I18N.t('thWhen'))}">${esc(when || '·')}</td>
+      <td class="num" data-label="${esc(I18N.t('thCap'))}">${formatInt(cap)}</td>
+      <td class="num" data-label="${esc(I18N.t('thEnr'))}">${formatInt(enr)}</td>
+      <td class="num" data-label="${esc(I18N.t('thFill'))}">${cap ? `${formatInt(enr)}/${formatInt(cap)} · ` : ''}${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
   }, { append });
 
   if (rows) {
@@ -488,12 +490,12 @@ function renderRows(append) {
           star.classList.toggle('on', on);
           star.textContent = on ? '★' : '☆';
           star.setAttribute('aria-pressed', String(on));
-          star.setAttribute('aria-label', on ? 'Favorilerden çıkar' : 'Favorilere ekle');
+          star.setAttribute('aria-label', on ? I18N.t('favRemove') : I18N.t('favAdd'));
           // Kısa ölçek animasyonu (reduced-motion CSS'te kapanır).
           star.classList.remove('pop');
           void star.offsetWidth;
           star.classList.add('pop');
-          toast(on ? `Favoriye eklendi (${crn})` : `Favoriden çıkarıldı (${crn})`, { kind: on ? 'ok' : 'warn' });
+          toast(on ? I18N.t('favAdded', { crn }) : I18N.t('favRemoved', { crn }), { kind: on ? 'ok' : 'warn' });
         });
       }
     });
@@ -501,7 +503,7 @@ function renderRows(append) {
 
   state.shown += slice.length;
   $('#more').hidden = state.shown >= state.filtered.length;
-  $('#more').textContent = `daha fazla göster (${state.filtered.length - state.shown} kaldı)`;
+  $('#more').textContent = I18N.t('moreLeft', { n: state.filtered.length - state.shown });
 }
 
 /* ---------- detay paneli (modal) ---------- */
@@ -629,15 +631,15 @@ function renderTimetable() {
   const rows = timetableRows();
   const t = buildTimetable(rows);
   if (!t) {
-    wrap.innerHTML = '<p class="empty">seçili şubelerde zaman bilgisi yok · çizelge oluşturulamadı</p>';
+    wrap.innerHTML = `<p class="empty">${esc(I18N.t('ttNoTime'))}</p>`;
     return;
   }
   const { startSlot, nSlots, grid, all } = t;
 
   let conflictCells = 0;
-  let html = `<p class="tt-note"><b>${all.length}</b> oturum · <b>${rows.length}</b> şube</p>`;
+  let html = `<p class="tt-note"><b>${all.length}</b> ${esc(I18N.t('prgSessions'))} · <b>${rows.length}</b> ${esc(I18N.t('prgSube'))}</p>`;
   html += `<div class="tt-scroll"><table class="tt">
-    <thead><tr><th class="tt-time">saat</th>${TT_DAYS.map((d) => `<th>${d.slice(0, 3)}</th>`).join('')}</tr></thead><tbody>`;
+    <thead><tr><th class="tt-time">${esc(I18N.t('filterTime'))}</th>${I18N.dayShortList().map((d) => `<th>${esc(d)}</th>`).join('')}</tr></thead><tbody>`;
 
   for (let si = 0; si < nSlots; si++) {
     html += `<tr><th class="tt-time">${fmtMin(startSlot + si * 30)}</th>`;
@@ -646,7 +648,7 @@ function renderTimetable() {
       const codes = [...new Set(cell.map((c) => c.row[1]))];
       const conflict = codes.length > 1;
       if (conflict) conflictCells++;
-      html += `<td class="tt-cell${conflict ? ' tt-conflict' : ''}"${conflict ? ` title="Çakışma: ${esc(codes.join(', '))}"` : ''}>`;
+      html += `<td class="tt-cell${conflict ? ' tt-conflict' : ''}"${conflict ? ` title="${esc(I18N.t('ttConflictTitle', { codes: codes.join(', ') }))}"` : ''}>`;
       html += cell.map((c) =>
         `<button type="button" class="tt-chip" data-code="${esc(c.row[1])}" title="${esc(c.row[2])}">${esc(c.row[1])}</button>`).join('');
       html += '</td>';
@@ -656,7 +658,7 @@ function renderTimetable() {
   html += '</tbody></table></div>';
 
   if (conflictCells) {
-    html += `<p class="tt-conflict-note">⚠ <b>${conflictCells}</b> zaman hücresinde birden çok ders çakışıyor. Çipe tıklayınca ders detayı açılır.</p>`;
+    html += `<p class="tt-conflict-note">⚠ <b>${conflictCells}</b> ${esc(I18N.t('ttConflictNote'))}</p>`;
   }
   wrap.innerHTML = html;
 

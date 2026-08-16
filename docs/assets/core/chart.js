@@ -2,6 +2,7 @@
 // Saf string üreticileri — DOM'a dokunmazlar, test edilebilirler.
 
 import { termLabel, esc, formatInt } from './utils.js';
+import { I18N } from '../i18n.js';
 
 // fillBar, kontenjan/yazılan için yüzde + çubuk üretir — kontenjan çubuğunun
 // TEK kaynağı (tablo, geçmiş, program, ders planım, detay paneli). full/tight
@@ -35,6 +36,7 @@ export function trendChart(byTerm, limit = 8) {
   const gap = 8;
   const barW = n ? Math.min(52, (W - pad * 2 - gap * (n - 1)) / n) : 0;
 
+  // Slug mevsimi veride Türkçe; etiket görüntü diline çevrilir.
   const seasonFull = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' };
   const refY = H - 14 - (H - 26); // %100 referansı — sıfır tabanlı tepe
   let bars = '';
@@ -45,9 +47,9 @@ export function trendChart(byTerm, limit = 8) {
     const yBase = H - 14;
     const full = a.cap > 0 && a.enr >= a.cap;
     const [, y2, season] = a.slug.split('-');
-    const label = `${y2} ${seasonFull[season] || ''}`.trim();
+    const label = `${y2} ${I18N.seasonName(seasonFull[season]) || ''}`.trim();
     bars += `
-      <g class="t-bar" tabindex="0" data-caption="${esc(termLabel(a.slug))} · kontenjan ${a.cap} · yazılan ${a.enr} · %${a.cap ? Math.round((a.enr / a.cap) * 100) : 0}">
+      <g class="t-bar" tabindex="0" data-caption="${esc(termLabel(a.slug))} · ${I18N.t('chartCap')} ${a.cap} · ${I18N.t('chartEnr')} ${a.enr} · %${a.cap ? Math.round((a.enr / a.cap) * 100) : 0}">
         <rect x="${x}" y="${yBase - capH}" width="${barW}" height="${capH}" fill="var(--chart-cap)" stroke="var(--chart-cap-edge)"/>
         <rect x="${x}" y="${yBase - enrH}" width="${barW}" height="${enrH}" fill="${full ? 'var(--red)' : 'var(--acid)'}"/>
         ${season === 'yaz' ? `<line x1="${x}" y1="${H - 2}" x2="${x + barW}" y2="${H - 2}" stroke="var(--amber)"/>` : ''}
@@ -61,7 +63,7 @@ export function trendChart(byTerm, limit = 8) {
       <svg viewBox="0 0 ${W} ${H}" aria-hidden="true">${refLine}${bars}</svg>
       <p class="t-caption" aria-live="polite"></p>
     </div>
-    ${rest ? `<button type="button" class="btn-ghost t-more">${rest} dönemin hepsini göster</button>` : ''}
-    <figcaption class="sr-only">Kontenjan ve doluluk zaman çizelgesi · ayrıntı için dönem tablosu.</figcaption>
+    ${rest ? `<button type="button" class="btn-ghost t-more">${esc(I18N.t('chartShowAll', { n: rest }))}</button>` : ''}
+    <figcaption class="sr-only">${esc(I18N.t('chartCaption'))}</figcaption>
   </figure>`;
 }

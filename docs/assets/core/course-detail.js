@@ -13,6 +13,7 @@ import { parseReq, renderReqTree } from '../prereq.js';
 import { codeToSlug } from './urlcodes.js';
 import { loadProgramMap } from './programs.js';
 import { TAKEN_CHANGED, getTaken } from './taken.js';
+import { I18N } from '../i18n.js';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
@@ -29,11 +30,11 @@ function fillNote(crn) {
   const q = state.quota?.get(crn);
   if (!q || !q.filledAt) return '';
   const m = q.fillMinutes;
-  if (!m) return 'ilk ölçümde zaten doluydu';
+  if (!m) return I18N.t('fillAlreadyFull');
   const h = Math.floor(m / 60);
   const rest = m % 60;
-  const span = h ? `${h} sa${rest ? ` ${rest} dk` : ''}` : `${rest} dk`;
-  return `ilk ölçümden ${span} sonra doldu`;
+  const span = h ? I18N.t(rest ? 'spanHourMin' : 'spanHour', { h, m: rest }) : I18N.t('spanMin', { m: rest });
+  return I18N.t('fillFilledAfter', { span });
 }
 
 // "A, B" / "A; B" / "A | B" → ["A", "B"]. Boşluk-önemsiz. Tek isimde tek eleman.
@@ -76,7 +77,7 @@ async function loadReqBy(sec) {
   const reverse = await getJSON('data/prereq/reverse.json').catch(() => null);
   if (!reverse || !reverse[code]) { sec.hidden = true; return; }
   const reqs = reverse[code];
-  sec.innerHTML = `<h4>Bu dersi önşart isteyenler (${reqs.length})</h4>
+  sec.innerHTML = `<h4>${esc(I18N.t('detailReqByN', { n: reqs.length }))}</h4>
     <div class="d-req-list">${reqs.map((r) => `<button type="button" class="d-req" data-code="${esc(r)}">${esc(r)}</button>`).join('')}</div>`;
   sec.querySelectorAll('.d-req').forEach((b) => b.addEventListener('click', () => {
     openCourseDetail(b.dataset.code, { source: 'reverse' });
@@ -102,7 +103,7 @@ function secCard(s, buildings, showMeta = true) {
   const names = splitInstructors(s.instructor);
   const histBtns = names
     .filter((n) => n !== '-' && n !== '***')
-    .map((n) => `<button type="button" class="btn-ghost d-hist" data-name="${esc(n)}">${esc(n)} geçmişinde ara</button>`)
+    .map((n) => `<button type="button" class="btn-ghost d-hist" data-name="${esc(n)}">${esc(I18N.t('detailSearchHistoryOf', { name: n }))}</button>`)
     .join('');
   const sessions = sessionsHtml(s, buildings);
   // Tek satır doluluk: fillBar'ın detail varyantı — tek kaynak (full/tight dahil).
@@ -114,12 +115,12 @@ function secCard(s, buildings, showMeta = true) {
         <span class="d-sec-instr">${esc(s.instructor || '·')}</span>
         ${histBtns}
       </div>
-      ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa (oturum)` : ''].filter(Boolean).join(' · ')}</div>` : ''}
+      ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? I18N.t('detailHrsWeekSession', { n: hrs }) : ''].filter(Boolean).join(' · ')}</div>` : ''}
       ${sessions ? `<div class="d-sec-when">${sessions}</div>` : ''}
       <div class="d-sec-stats">${stats}${note ? ` · ${esc(note)}` : ''}${measured(s.crn) ? `<small class="fill-measured"> · ${esc(measured(s.crn))}</small>` : ''}</div>
-      ${s.prereq && s.prereq !== '-' ? `<div class="d-sec-req"><span>önşart:</span> ${esc(s.prereq)}</div>` : ''}
-      ${s.classReq && s.classReq !== '-' ? `<div class="d-sec-req"><span>sınıf / kredi:</span> ${esc(s.classReq)}</div>` : ''}
-      ${s.reserved && s.reserved !== '-' ? `<div class="d-sec-req"><span>rezervasyon:</span> ${esc(s.reserved)}</div>` : ''}
+      ${s.prereq && s.prereq !== '-' ? `<div class="d-sec-req"><span>${esc(I18N.t('detailPrereqLbl'))}</span> ${esc(s.prereq)}</div>` : ''}
+      ${s.classReq && s.classReq !== '-' ? `<div class="d-sec-req"><span>${esc(I18N.t('detailClassCreditLbl'))}</span> ${esc(s.classReq)}</div>` : ''}
+      ${s.reserved && s.reserved !== '-' ? `<div class="d-sec-req"><span>${esc(I18N.t('detailReservedLbl'))}</span> ${esc(s.reserved)}</div>` : ''}
     </div>`;
 }
 
@@ -150,9 +151,9 @@ function renderSecList(secs, buildings) {
   const uniformHrs = [...new Set(secs.map((s) => sessionHours(s.times)))].length <= 1;
   const hrs = uniformHrs ? sessionHours(secs[0].times) : 0;
   const head = [];
-  if (uniformMethod && secs[0].method) head.push(secs[0].method === 'Fiziksel (Yüz yüze)' ? 'yüz yüze' : secs[0].method);
-  if (uniformHrs && hrs) head.push(`haftada ${hrs} sa`);
-  const listHeader = head.length ? `<p class="d-secs-head">${secs.length} şube · ${esc(head.join(' · '))}</p>` : '';
+  if (uniformMethod && secs[0].method) head.push(secs[0].method === 'Fiziksel (Yüz yüze)' ? I18N.t('methodFaceToFace') : secs[0].method);
+  if (uniformHrs && hrs) head.push(I18N.t('detailHrsWeek', { n: hrs }));
+  const listHeader = head.length ? `<p class="d-secs-head">${esc(I18N.t('histSecCount', { n: secs.length }))} · ${esc(head.join(' · '))}</p>` : '';
 
   const card = (g) => {
     if (g.secs.length === 1) return secCard(g.secs[0], buildings, !uniformMethod || !uniformHrs);
@@ -161,9 +162,9 @@ function renderSecList(secs, buildings) {
     const range = crns.length > 2 ? `${crns[0]}–${crns[crns.length - 1]}` : crns.join(' · ');
     const allEmpty = g.secs.every((s) => !s.enrolled);
     const allFull = g.secs.every((s) => s.capacity && s.enrolled >= s.capacity);
-    const state = allFull ? 'hepsi dolu' : allEmpty ? 'hepsi boş' : '';
+    const state = allFull ? I18N.t('detailAllFull') : allEmpty ? I18N.t('detailAllEmpty') : '';
     return `<div class="d-sec d-sec-group">
-      <div class="d-sec-head"><b class="d-crn">${esc(range)}</b><span class="d-sec-instr">${g.secs.length} şube${state ? ` · ${state}` : ''}</span></div>
+      <div class="d-sec-head"><b class="d-crn">${esc(range)}</b><span class="d-sec-instr">${esc(I18N.t('histSecCount', { n: g.secs.length }))}${state ? ` · ${esc(state)}` : ''}</span></div>
       <div class="d-sec-when">${sessionsHtml(first, buildings)}</div>
     </div>`;
   };
@@ -172,7 +173,7 @@ function renderSecList(secs, buildings) {
   const showAll = groups.length > MAX;
   const html = groups.slice(0, MAX).map(card).join('') +
     (showAll ? `<div class="d-secs-more" hidden>${groups.slice(MAX).map(card).join('')}</div>
-      <button type="button" class="btn-ghost d-secs-toggle">${groups.length - MAX} şube daha göster</button>` : '');
+      <button type="button" class="btn-ghost d-secs-toggle">${esc(I18N.t('detailMoreSections', { n: groups.length - MAX }))}</button>` : '');
 
   return `<div class="d-sec-list">${listHeader}${html}</div>`;
 }
@@ -188,19 +189,19 @@ function histHtml(hist) {
     byTerm.get(slug).push({ instructor, cap, enr });
   }
   if (!byTerm.size) {
-    return `<section class="d-hist"><h4>Geçmiş dönemler</h4>
-      <p class="empty">2019 öncesi dönemlerde dönem bazlı kayıt veri tabanında yok.</p></section>`;
+    return `<section class="d-hist"><h4>${esc(I18N.t('detailPastTerms'))}</h4>
+      <p class="empty">${esc(I18N.t('detailNoPre2019'))}</p></section>`;
   }
   lastHistTerms = byTerm; // trend "hepsini göster" yeniden çizimi için
   const seasons = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' };
-  const openIn = [...new Set([...byTerm.keys()].map((s) => s.split('-')[2]))].map((s) => seasons[s] || s);
+  const openIn = [...new Set([...byTerm.keys()].map((s) => s.split('-')[2]))].map((s) => I18N.seasonName(seasons[s] || s));
   const rows = [];
   for (const [slug, secs] of byTerm) secs.forEach((r, i) => rows.push({ slug, termFirst: i === 0, ...r }));
   return `<section class="d-hist">
-    <h4>Geçmiş dönemler · ${byTerm.size} dönemde açıldı (${esc(openIn.join(', '))})</h4>
+    <h4>${esc(I18N.t('detailPastTerms'))} · ${esc(I18N.t('detailOpenedInN', { n: byTerm.size, seasons: openIn.join(', ') }))}</h4>
     ${trendChart(byTerm, isMobile() ? 6 : 8)}
-    <div class="tablewrap"><table class="htable" aria-label="Dönem geçmişi">
-      <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr></thead>
+    <div class="tablewrap"><table class="htable" aria-label="${esc(I18N.t('histTermHistory'))}">
+      <thead><tr><th>${esc(I18N.t('filterTerm'))}</th><th>${esc(I18N.t('thInstr'))}</th><th class="num">${esc(I18N.t('thCap'))}</th><th class="num">${esc(I18N.t('thEnr'))}</th><th class="num">${esc(I18N.t('thFill'))}</th></tr></thead>
       <tbody>${rows.map((r) => `<tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
         <td>${esc(r.instructor || '·')}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td>
         <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`).join('')}</tbody>
@@ -217,7 +218,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   const content = $('#detail-content');
   panel.hidden = false;
   document.body.classList.add('modal-open');
-  content.innerHTML = '<p class="empty">yükleniyor…</p>';
+  content.innerHTML = `<p class="empty">${esc(I18N.t('statLoading'))}</p>`;
   $('#detail-close').focus();
   // Paylaşılabilir detay bağlantısı: #ders/<kod>. Kapatınca dönülecek görünümü
   // hatırla (örn. önşart sekmesinden açıldıysa oraya dön). Bağlantıdan
@@ -243,11 +244,11 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     content.innerHTML = `
       <div class="d-head">
         <h3 id="detail-title">${esc(code)}</h3>
-        ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}
+        ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="${esc(I18N.t('detailObsForm'))}">${esc(I18N.t('detailOpenInObs'))} ↗</a>` : ''}
       </div>
-      <p class="empty">Bu ders <b>${esc(termLabel(t))}</b> döneminde açık değil.</p>
-      <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
-        <p class="empty">yükleniyor…</p></section>
+      <p class="empty">${I18N.t('detailNotOpenIn', { term: `<b>${esc(termLabel(t))}</b>` })}</p>
+      <section class="d-req-by" data-code="${esc(code)}"><h4>${esc(I18N.t('detailReqBy'))}</h4>
+        <p class="empty">${esc(I18N.t('statLoading'))}</p></section>
       ${gradesHtml(gr)}
       ${histHtml(hist)}
       ${catalogHtml(cat)}`;
@@ -261,23 +262,23 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   content.innerHTML = `
     <div class="d-head">
       <h3 id="detail-title"><span class="d-code">${esc(code)}</span> <span class="d-name">${esc(secs[0].name)}</span></h3>
-      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}
+      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="${esc(I18N.t('detailObsForm'))}">${esc(I18N.t('detailOpenInObs'))} ↗</a>` : ''}
     </div>
     <div class="d-meta">${[branch, secs[0].level, secs[0].method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
     <section class="d-secs">
-      <h4>Bu dönem · ${secs.length} şube</h4>
+      <h4>${esc(I18N.t('detailThisTerm'))} · ${esc(I18N.t('histSecCount', { n: secs.length }))}</h4>
       ${renderSecList(secs, buildings)}
     </section>
     <section class="d-progs">
-      <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>
+      <h4>${esc(I18N.t('detailEligiblePrograms'))}${programs.length ? ` (${programs.length})` : ''}</h4>
       <div class="d-prog-list">${programs.length
-        ? programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="Derslerde bu programa göre filtrele">${esc(p)}</button>`).join('')
-        : '<span class="d-prog d-prog-none">kısıtlama yok, tüm programlar alabilir</span>'}</div>
+        ? programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="${esc(I18N.t('detailFilterByProgram'))}">${esc(p)}</button>`).join('')
+        : `<span class="d-prog d-prog-none">${esc(I18N.t('detailNoProgramLimit'))}</span>`}</div>
     </section>
-    <section class="d-req-fwd" data-code="${esc(code)}"><h4>Önşartı</h4>
-      <p class="empty">yükleniyor…</p></section>
-    <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
-      <p class="empty">yükleniyor…</p></section>
+    <section class="d-req-fwd" data-code="${esc(code)}"><h4>${esc(I18N.t('detailPrereq'))}</h4>
+      <p class="empty">${esc(I18N.t('statLoading'))}</p></section>
+    <section class="d-req-by" data-code="${esc(code)}"><h4>${esc(I18N.t('detailReqBy'))}</h4>
+      <p class="empty">${esc(I18N.t('statLoading'))}</p></section>
     ${gradesHtml(gr)}
     ${catalogHtml(cat)}
     ${histHtml(hist)}`;
@@ -291,7 +292,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
       const more = content.querySelector('.d-secs-more');
       const open = more.hidden;
       more.hidden = !open;
-      secToggle.textContent = open ? 'daha az göster' : `${content.querySelectorAll('.d-secs-more .d-sec').length} şube daha göster`;
+      secToggle.textContent = open ? I18N.t('showLess') : I18N.t('detailMoreSections', { n: content.querySelectorAll('.d-secs-more .d-sec').length });
       secToggle.setAttribute('aria-expanded', String(open));
     });
   }
@@ -323,11 +324,11 @@ async function enrichProgLabels(content) {
         b.textContent = `${code} · ${p.name}`;
       } else {
         b.classList.add('d-prog-stale');
-        b.title = 'Bu program kodu resmî listede yok (kapanmış/grafik dışı olabilir)';
+        b.title = I18N.t('detailProgStale');
       }
       if (taken.program && code === taken.program) {
         b.classList.add('d-prog-mine');
-        b.title = 'Senin programın';
+        b.title = I18N.t('detailProgMine');
       }
     }
   } catch { /* liste yoksa sessiz — yalnız kodlar görünür */ }
@@ -374,7 +375,7 @@ async function loadPrereqTree(box, code) {
     const node = (g?.nodes || []).find((n) => n.code === code);
     const req = node?.requirement;
     if (!req) {
-      box.innerHTML = '<p class="empty">Kayıtlı önşartı yok.</p>';
+      box.innerHTML = `<p class="empty">${esc(I18N.t('detailNoPrereq'))}</p>`;
       return;
     }
     box.innerHTML = `<ul class="req-tree">${renderReqTree(parseReq(req))}</ul>`;
@@ -405,32 +406,32 @@ function catalogHtml(cat) {
   // sayar. Katalog planı yoksa bölüm sessiz.
   const midterms = (cat.weeklyTopics || []).filter((t) => /ara\s*sınav/i.test(t));
   const midtermLine = midterms.length
-    ? `<p class="d-cat-midterm">vize: ${esc(midterms.map((t) => t.split(' · ')[0] || t).join(', '))}</p>`
+    ? `<p class="d-cat-midterm">${esc(I18N.t('catMidterm'))}: ${esc(midterms.map((t) => t.split(' · ')[0] || t).join(', '))}</p>`
     : '';
   // Faz 3.5: haftalık plan tablosu (hafta/konu/çıktı). Yapılandırılmış veri yoksa
   // geriye uyumlu <ol> listesine düş.
   const hasOut = (cat.weeklyPlan || []).some((w) => w.outcomes);
   const planHtml = (cat.weeklyPlan || []).length
-    ? `<div class="tablewrap"><table class="d-cat-plan" aria-label="Haftalık ders planı">
-        <thead><tr><th class="num">Hafta</th><th>Konu</th>${hasOut ? '<th>Çıktılar</th>' : ''}</tr></thead>
-        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ' class="d-cat-mid" title="Ara sınav haftası"' : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '·')}</td>` : ''}</tr>`).join('')}</tbody>
+    ? `<div class="tablewrap"><table class="d-cat-plan" aria-label="${esc(I18N.t('catWeeklyPlanLbl'))}">
+        <thead><tr><th class="num">${esc(I18N.t('catWeek'))}</th><th>${esc(I18N.t('catTopic'))}</th>${hasOut ? `<th>${esc(I18N.t('catOutcomes'))}</th>` : ''}</tr></thead>
+        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ` class="d-cat-mid" title="${esc(I18N.t('catMidtermWeek'))}"` : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '·')}</td>` : ''}</tr>`).join('')}</tbody>
       </table></div>`
     : (cat.weeklyTopics || []).length ? `<ol>${list(cat.weeklyTopics)}</ol>` : '';
   // Faz 3.5: denklikler — tıklanınca o dersin detayı açılır.
   const eqs = cat.equivalents || [];
   const eqHtml = eqs.length
-    ? `<div class="d-cat-eq"><h4>Ders denklikleri</h4><div class="d-eq-list">${eqs.map((e) => `<button type="button" class="d-eq" data-eq="${esc(e)}">${esc(e)}</button>`).join('')}</div></div>`
+    ? `<div class="d-cat-eq"><h4>${esc(I18N.t('catEquivalents'))}</h4><div class="d-eq-list">${eqs.map((e) => `<button type="button" class="d-eq" data-eq="${esc(e)}">${esc(e)}</button>`).join('')}</div></div>`
     : '';
   return `<section class="d-cat">
-    <h4>Katalog</h4>
-    ${parts.length ? `<p class="d-cat-credits">${esc(parts.join(' · '))}${cat.language ? ` · dil: ${esc(cat.language)}` : ''}</p>` : ''}
+    <h4>${esc(I18N.t('catTitle'))}</h4>
+    ${parts.length ? `<p class="d-cat-credits">${esc(parts.join(' · '))}${cat.language ? ` · ${esc(I18N.t('catLanguage'))}: ${esc(cat.language)}` : ''}</p>` : ''}
     ${midtermLine}
     ${eqHtml}
-    ${cat.description ? details('Ders içeriği', false, `<p>${esc(cat.description)}</p>`) : ''}
-    ${(cat.outcomes || []).length ? details(`Öğrenme çıktıları (${cat.outcomes.length})`, !isMobile(), `<ul>${list(cat.outcomes)}</ul>`) : ''}
-    ${planHtml ? details(`Haftalık plan (${(cat.weeklyPlan || cat.weeklyTopics || []).length})`, false, planHtml) : ''}
-    ${(cat.textbooks || []).length ? details('Kaynak kitaplar', false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
-    ${cat.sourceUrl ? `<p class="d-cat-src">kaynak: <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">OBS katalog formu</a></p>` : ''}
+    ${cat.description ? details(I18N.t('catDescription'), false, `<p>${esc(cat.description)}</p>`) : ''}
+    ${(cat.outcomes || []).length ? details(`${I18N.t('catOutcomesTitle')} (${cat.outcomes.length})`, !isMobile(), `<ul>${list(cat.outcomes)}</ul>`) : ''}
+    ${planHtml ? details(`${I18N.t('catWeeklyPlan')} (${(cat.weeklyPlan || cat.weeklyTopics || []).length})`, false, planHtml) : ''}
+    ${(cat.textbooks || []).length ? details(I18N.t('catTextbooks'), false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
+    ${cat.sourceUrl ? `<p class="d-cat-src">${esc(I18N.t('catSource'))}: <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">${esc(I18N.t('detailObsForm'))}</a></p>` : ''}
   </section>`;
 }
 
@@ -469,7 +470,7 @@ function gradesHtml(gr) {
     const max = Math.max(...Object.values(term.grades), 1);
     const order = GRADE_ORDER.filter((g) => term.grades[g]);
     return `<div class="d-grade-bars">${order.map((g) => `
-      <div class="d-grade" title="${esc(g)} · ${term.grades[g]} kişi">
+      <div class="d-grade" title="${esc(g)} · ${esc(I18N.t('gradeStudents', { n: term.grades[g] }))}">
         <span class="d-grade-l">${esc(g)}</span>
         <span class="d-grade-bar"><i style="width:${Math.round((term.grades[g] / max) * 100)}%"></i></span>
         <span class="d-grade-n">${term.grades[g]}</span>
@@ -479,7 +480,7 @@ function gradesHtml(gr) {
     const pct = gradePassPct(term.grades, term.total);
     const mode = gradeMode(term.grades, term.total);
     const modeTxt = `${mode.grade} (%${mode.pct})`;
-    return `<p class="d-grade-stat">geçme ≥CC+ %${pct} · en sık ${esc(modeTxt)} · ${term.total} öğrenci</p>`;
+    return `<p class="d-grade-stat">${esc(I18N.t('gradePassLine', { pct, mode: modeTxt, total: term.total }))}</p>`;
   };
   // Birden çok dönem varsa en yenisi (donem kodu büyük) üstte; diğerleri
   // katlanabilir listeye.
@@ -487,10 +488,10 @@ function gradesHtml(gr) {
   const latest = sorted[0];
   const older = sorted.slice(1);
   return `<section class="d-grades">
-    <h4>Not dağılımı · ${esc(latest.term)}</h4>
+    <h4>${esc(I18N.t('gradeTitle'))} · ${esc(latest.term)}</h4>
     ${statLine(latest)}
     ${gradeBars(latest)}
-    ${older.length ? `<details class="d-grades-more"><summary>önceki dönemler (${older.length})</summary>
+    ${older.length ? `<details class="d-grades-more"><summary>${esc(I18N.t('gradeOlderTerms'))} (${older.length})</summary>
       ${older.map((tm) => `<h5>${esc(tm.term)}</h5>${statLine(tm)}${gradeBars(tm)}`).join('')}
     </details>` : ''}
   </section>`;

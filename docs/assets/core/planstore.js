@@ -15,6 +15,7 @@
 // varsayılandır ve `defaultCredit` işareti taşır.
 
 import { parseRange, canonicalCode } from './plan.js';
+import { I18N } from '../i18n.js';
 
 const KEY = 'itu-grades';
 
@@ -120,7 +121,7 @@ export function buildEntries(plan, stored, catalogMap = new Map()) {
           });
         } else {
           entries.push({
-            code: item.elective.title || 'Seçmeli',
+            code: item.elective.title || I18N.t('planElective'),
             credits: slotDefaultCredits(item.elective),
             ects: slotDefaultEcts(item.elective),
             grade: '',

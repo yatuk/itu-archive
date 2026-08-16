@@ -3,6 +3,7 @@
 // olayı fırlar, görünümler (önşart/program/havuz) yeniden çizer.
 
 import { getTaken, saveTaken, parseCodes, exportTaken, importTaken, notifyTakenChanged } from './taken.js';
+import { I18N } from '../i18n.js';
 
 let host = null;
 let bound = false;
@@ -13,22 +14,22 @@ function ensureHost() {
   host.className = 'dlg';
   host.hidden = true;
   host.innerHTML = `<div class="dlg-box" role="dialog" aria-modal="true" aria-labelledby="taken-title">
-    <button type="button" class="dlg-close" aria-label="Kapat">✕</button>
-    <h3 class="dlg-title" id="taken-title">Aldığım dersler</h3>
+    <button type="button" class="dlg-close" aria-label="${I18N.t('detailClose')}">✕</button>
+    <h3 class="dlg-title" id="taken-title">${I18N.t('takenTitle')}</h3>
     <div class="dlg-body">
-      <label class="dlg-field" for="taken-codes">Dersler (virgül / boşluk / satırla ayır)</label>
+      <label class="dlg-field" for="taken-codes">${I18N.t('takenCodesLabel')}</label>
       <textarea id="taken-codes" class="taken-codes" rows="5" spellcheck="false" placeholder="BLG 102E, MAT 101E, CEN 102"></textarea>
-      <label class="dlg-field" for="taken-program">Programım (opsiyonel, örn. BLG_LS)</label>
+      <label class="dlg-field" for="taken-program">${I18N.t('takenProgLabel')}</label>
       <input id="taken-program" class="taken-program" type="text" placeholder="BLG_LS">
-      <p class="dlg-note">Beyanınız transkript değildir; sunucuya gönderilmez, tarayıcınızda kalır. Sonuçlar "girdiğiniz derslere göre" görünür.</p>
+      <p class="dlg-note">${I18N.t('takenNote')}</p>
       <div class="dlg-row">
-        <button type="button" class="btn-ghost taken-export">dışa aktar</button>
-        <button type="button" class="btn-ghost taken-import">içe aktar</button>
+        <button type="button" class="btn-ghost taken-export">${I18N.t('takenExport')}</button>
+        <button type="button" class="btn-ghost taken-import">${I18N.t('takenImport')}</button>
       </div>
     </div>
     <div class="dlg-actions">
-      <button type="button" class="dlg-ok btn-primary">Kaydet</button>
-      <button type="button" class="dlg-cancel btn-ghost">Vazgeç</button>
+      <button type="button" class="dlg-ok btn-primary">${I18N.t('takenSave')}</button>
+      <button type="button" class="dlg-cancel btn-ghost">${I18N.t('dlgCancel')}</button>
     </div>
   </div>`;
   document.body.appendChild(host);
@@ -50,7 +51,7 @@ function ensureHost() {
     URL.revokeObjectURL(a.href);
   });
   host.querySelector('.taken-import').addEventListener('click', () => {
-    const val = window.prompt('Daha önce dışa aktardığın JSON’u yapıştır:');
+    const val = window.prompt(I18N.t('takenImportPrompt'));
     if (val && importTaken(val)) {
       const t = getTaken();
       host.querySelector('.taken-codes').value = t.codes.join(', ');

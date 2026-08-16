@@ -133,11 +133,39 @@ workflow'u yok, gerek de yok. Scraper zaten `docs/` altına yazıyor, her commit
 kendiliğinden yayına giriyor.
 
 Özel alan `itu-ders.com` (`docs/CNAME` içinde). DNS kayıtları Cloudflare'da,
-sitedeki canonical/og/sitemap URL'leri yeni adrese yazıyor.
+sitedeki canonical/og/sitemap URL'leri yeni adrese yazıyor. Cloudflare yalnızca
+DNS: dosya sayısı sınırı olan Cloudflare Pages kullanılmıyor, dolayısıyla
+`docs/` altındaki sayfa sayısı GitHub Pages'in 1 GB boyut sınırıyla sınırlı.
 
 Bot'un commit atabilmesi için Settings > Actions > General kısmında workflow
 izinleri "Read and write" olmalı. Bunu unutursanız Actions yeşil görünür ama
 hiçbir şey push edilmez.
+
+## İki dillilik
+
+Site TR birincil, EN ikincildir; ikisi de eksiksizdir.
+
+Arayüz: tüm görünür metin `docs/assets/i18n.js`'teki tek sözlükten gelir (483
+anahtar, iki dilde birebir). Statik kabuk `data-i18n` (metin),
+`data-i18n-placeholder` / `-title` / `-aria` (öznitelik), `data-i18n-html`
+(biçimli kopya) ve `data-lang="tr|en"` (uzun anlatı blokları — Hakkında sekmesi)
+ile çevrilir. Dil değişince sayfa `?lang=` ile yeniden yüklenir; görünümler tek
+seferde doğru dilde çizilir.
+
+Veri Türkçe kalır: gün adları, dönem etiketleri ve OBS'nin `Fiziksel (Yüz yüze)`
+gibi alan değerleri eşleşme anahtarıdır, çevrilmez. Görüntülerken
+`I18N.dayName/seasonName/monthName` üzerinden dile çevrilir.
+
+`node --test` altında dört denetim bunu bozulmaya karşı korur: anahtar kümesi
+eşitliği, yinelenen anahtar, kullanılan ama tanımsız anahtar ve `{yer tutucu}`
+adlarının iki dilde aynı olması. Sonuncular olmadan eksik bir anahtar sessizce
+anahtar adının kendisini ekrana basıyordu.
+
+SEO sayfaları: `cmd/site` her sayfayı iki dilde üretir — dönem, branş, ders
+(7.669), hoca (2.635) ve iniş sayfaları. TR kökte, EN `/en/` altında; ikisi
+`hreflang` ile eşleşir. İniş sayfalarının slug'ı dile göre ayrıdır
+(`gano-hesaplama` ↔ `en/itu-gpa-calculator`), çünkü sayfanın tamamı bir arama
+sorgusuna karşılık gelir.
 
 ## Veri düzeni
 

@@ -18,6 +18,7 @@
 import { esc, fold, getJSON, termLabel } from './core/utils.js';
 import { state } from './core/store.js';
 import { isTaken, TAKEN_CHANGED } from './core/taken.js';
+import { I18N } from './i18n.js';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
@@ -227,10 +228,10 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
         ctx.font = '13px ui-monospace, monospace';
         ctx.textAlign = 'center';
         ctx.fillStyle = c.emptyDim;
-        ctx.fillText('> bir bölüm seçin', w / 2, h / 2 - 6);
+        ctx.fillText(`> ${I18N.t('pgPickProgram')}`, w / 2, h / 2 - 6);
         ctx.font = '11px ui-monospace, monospace';
         ctx.fillStyle = c.emptyFaint;
-        ctx.fillText('dönem sütunlarında önşart okları burada çizilir', w / 2, h / 2 + 14);
+        ctx.fillText(I18N.t('pgEmptyHint'), w / 2, h / 2 + 14);
         return;
       }
       const focused = !!this.related;
@@ -393,7 +394,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       this.focus = null;
       this.related = null;
       this.detail.innerHTML = '';
-      this.status.textContent = 'bir bölüm seçin';
+      this.status.textContent = I18N.t('pgPickProgram');
       this.draw();
     }
 
@@ -415,10 +416,10 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       const tree = n.requirement ? parseReq(n.requirement) : null;
       this.detail.innerHTML = `
         <h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3>
-        ${tree ? `<h4>Önşartı</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
-        ${req.length ? `<h4>Gereken dersler (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
-        ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}
-        <button type="button" class="btn-ghost pg-detail-open" data-code="${esc(n.code)}">bu dersi detaylandır</button>`;
+        ${tree ? `<h4>${esc(I18N.t('detailPrereq'))}</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : `<p class="pg-empty">${esc(I18N.t('pgNoPrereqInProgram'))}</p>`}
+        ${req.length ? `<h4>${esc(I18N.t('pgRequiredCourses'))} (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
+        ${dep.length ? `<h4>${esc(I18N.t('pgRequiredBy'))} (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}
+        <button type="button" class="btn-ghost pg-detail-open" data-code="${esc(n.code)}">${esc(I18N.t('histShowDetail'))}</button>`;
       this.detail.querySelectorAll('.pg-chip:not([disabled])').forEach((b) =>
         b.addEventListener('click', () => this.panTo(b.dataset.code)));
       const dOpen = this.detail.querySelector('.pg-detail-open');
@@ -438,17 +439,17 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       const opts = (n.options || []).slice();
       const version = (this.poolVersion = (this.poolVersion || 0) + 1);
       this.detail.innerHTML = `
-        <h3>${esc(n.name)} <span>seçmeli slot</span></h3>
+        <h3>${esc(n.name)} <span>${esc(I18N.t('pgElectiveSlot'))}</span></h3>
         <div class="pg-pool-head">
-          <input type="search" class="pg-pool-search" placeholder="ara: kod veya ad…" aria-label="Havuzda ara">
-          <select class="pg-pool-sort" aria-label="Sıralama">
-            <option value="code">koda göre</option>
-            <option value="name">ada göre</option>
-            <option value="open">bu dönem açık olanlar önce</option>
-            <option value="cap">kontenjanı olanlar önce</option>
+          <input type="search" class="pg-pool-search" placeholder="${esc(I18N.t('pgPoolSearch'))}" aria-label="${esc(I18N.t('pgPoolSearchLbl'))}">
+          <select class="pg-pool-sort" aria-label="${esc(I18N.t('pgSortLbl'))}">
+            <option value="code">${esc(I18N.t('pgSortCode'))}</option>
+            <option value="name">${esc(I18N.t('pgSortName'))}</option>
+            <option value="open">${esc(I18N.t('pgSortOpen'))}</option>
+            <option value="cap">${esc(I18N.t('pgSortCap'))}</option>
           </select>
         </div>
-        <p class="pg-pool-status">${opts.length} alternatif, durum taranıyor…</p>
+        <p class="pg-pool-status">${esc(I18N.t('pgPoolScanning', { n: opts.length }))}</p>
         <div class="pg-pool-groups"></div>`;
 
       const groupsEl = this.detail.querySelector('.pg-pool-groups');
@@ -502,20 +503,20 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
               const taken = isTaken(o.code);
               const badge = !st ? '<span class="loading">…</span>'
                 : st.open
-                  ? `<span class="open">● açık · ${st.sections.length} şube · ${st.enr}/${st.cap || '—'}</span>`
-                  : `<span class="closed">● ${st.last ? 'son ' + esc(termLabel(st.last)) : 'hiç açılmadı'}</span>`;
+                  ? `<span class="open">● ${esc(I18N.t('pgOpen'))} · ${esc(I18N.t('histSecCount', { n: st.sections.length }))} · ${st.enr}/${st.cap || '—'}</span>`
+                  : `<span class="closed">● ${st.last ? esc(I18N.t('pgLastOffered', { term: termLabel(st.last) })) : esc(I18N.t('pgNeverOffered'))}</span>`;
               return `<div class="pg-pool-row${taken ? ' pg-pool-taken' : ''}">
                 <div class="pg-pool-name"><b>${esc(o.code)}</b><em>${esc(o.name)}</em></div>
-                <span class="pg-pool-status-badge">${taken ? '<span class="taken-mark">✓ aldım</span>' : ''}${badge}</span>
+                <span class="pg-pool-status-badge">${taken ? `<span class="taken-mark">✓ ${esc(I18N.t('pgTaken'))}</span>` : ''}${badge}</span>
                 <span class="pg-pool-actions">
-                  <button data-act="detay" data-code="${esc(o.code)}">detay</button>
-                  <button data-act="courses" data-code="${esc(o.code)}">derslerde aç</button>
+                  <button data-act="detay" data-code="${esc(o.code)}">${esc(I18N.t('prgMenuDetail'))}</button>
+                  <button data-act="courses" data-code="${esc(o.code)}">${esc(I18N.t('pgOpenInCourses'))}</button>
                 </span>
               </div>`;
             }).join('')}
           </details>`).join('');
         const openCount = [...status.values()].filter((s) => s.open).length;
-        statusEl.textContent = `${opts.length} alternatif · ${openCount} tanesi bu dönem açık`;
+        statusEl.textContent = I18N.t('pgPoolSummary', { n: opts.length, open: openCount });
       };
 
       this.detail.querySelector('.pg-pool-search').addEventListener('input', (e) => { q = e.target.value; render(); });
@@ -575,7 +576,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       // düğümü ekrandaki konuma göre yönlendirir. role="img" statik olmaktan
       // çıkar — arama kutusu zaten aynı focusNode'a gider.
       c.tabIndex = 0;
-      c.setAttribute('aria-label', 'Önşart haritası: odaklanmak için ok tuşlarını kullan');
+      c.setAttribute('aria-label', I18N.t('pgCanvasLbl'));
       c.addEventListener('keydown', (e) => {
         if (!this.nodes || !this.focus) return;
         const cur = this.byCode.get(this.focus);
@@ -664,7 +665,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
           this.tip.style.left = (e.clientX - rect.left + 14) + 'px';
           this.tip.style.top = (e.clientY - rect.top + 10) + 'px';
           this.tip.textContent = n.kind === 'elective'
-            ? `${n.name} · ${(n.options || []).length} seçenek`
+            ? `${n.name} · ${I18N.t('pgOptionCount', { n: (n.options || []).length })}`
             : (n.name ? `${n.code}: ${n.name}` : n.code);
         } else {
           this.tip.hidden = true;
@@ -864,7 +865,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     const hit = rec && rec[code];
     return hit && hit.terms && hit.terms.length ? hit.terms[0] : null;
   }
-  const LEVEL_TR = { OL: 'Önlisans', LS: 'Lisans', YL: 'Yüksek Lisans', DR: 'Doktora' };
+  const LEVEL_KEYS = { OL: 'levelOL', LS: 'levelLS', YL: 'levelYL', DR: 'levelDR' };
   const LEVEL_ORDER = ['OL', 'LS', 'YL', 'DR'];
 
   async function ensureData(root) {
@@ -879,7 +880,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
   function buildProgramGraph(plan, prereqEdges, reqMap) {
     const nodes = [];
     const seen = new Set();
-    const laneTitles = plan.semesters.map((s) => s.title.replace('. Yarıyıl', '. Dönem'));
+    const laneTitles = plan.semesters.map((s) => I18N.t('pgSemester', { n: parseInt(s.title, 10) || s.title }));
     plan.semesters.forEach((sem, laneIdx) => {
       sem.items.forEach((item, slot) => {
         if (item.course) {
@@ -909,7 +910,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
   async function selectProgram(root, code) {
     const { graph } = await ensureData(root);
     const statusEl = root.querySelector('.pg-status');
-    statusEl.textContent = 'müfredat indiriliyor…';
+    statusEl.textContent = I18N.t('pgLoadingPlan');
     statusEl.classList.add('busy');
     const [plan, g] = await Promise.all([
       fetch(`data/curriculum/${code}.json`).then((r) => r.json()),
@@ -928,7 +929,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     root.querySelector('.pg-plan-label').textContent = plan.planLabel || '';
     renderBranchLegend(root, nodes);
     renderSemesterList(root, plan, reqByCode);
-    await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ders/slot, bir düğüme tıkla`);
+    await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${I18N.t('pgNodeHint', { n: nodes.length })}`);
     statusEl.classList.remove('busy');
   }
 
@@ -942,11 +943,11 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       const items = (sem.items || []).map((it) => {
         if (it.course) {
           const req = reqByCode?.req?.get(it.course.code);
-          return `<li><code>${esc(it.course.code)}</code>: ${esc(it.course.name)}${req ? `<span class="pg-list-req"> · önşart: ${esc(req)}</span>` : ''}</li>`;
+          return `<li><code>${esc(it.course.code)}</code>: ${esc(it.course.name)}${req ? `<span class="pg-list-req"> · ${esc(I18N.t('detailPrereqLbl'))} ${esc(req)}</span>` : ''}</li>`;
         }
         if (it.elective) {
           const n = it.elective.options ? it.elective.options.length : 0;
-          return `<li><span class="pg-list-elect">Seçmeli havuz:</span> ${esc(it.elective.title)} (${n} seçenek)</li>`;
+          return `<li><span class="pg-list-elect">${esc(I18N.t('pgElectivePool'))}:</span> ${esc(it.elective.title)} (${esc(I18N.t('pgOptionCount', { n }))})</li>`;
         }
         return '';
       }).filter(Boolean).join('');
@@ -963,13 +964,13 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     // Mobilde varsayılan LİSTE görünümü; "grafiğe dön" ile canvas'a geçilir.
     if (window.matchMedia('(max-width: 600px)').matches && !root.classList.contains('pg-list-mode')) {
       root.classList.add('pg-list-mode');
-      btn.textContent = 'grafiğe dön';
+      btn.textContent = I18N.t('pgBackToGraph');
       btn.setAttribute('aria-pressed', 'true');
       box.classList.remove('sr-only');
     }
     btn.addEventListener('click', () => {
       const on = root.classList.toggle('pg-list-mode');
-      btn.textContent = on ? 'grafiğe dön' : 'listeye dön';
+      btn.textContent = on ? I18N.t('pgBackToGraph') : I18N.t('pgBackToList');
       btn.setAttribute('aria-pressed', String(on));
       box.classList.toggle('sr-only', !on);
     });
@@ -1004,7 +1005,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
 
   function renderLevelFilter(box) {
     box.innerHTML = LEVEL_ORDER.map((lv) =>
-      `<button type="button" class="pg-level${activeLevels.has(lv) ? ' active' : ''}" data-level="${lv}" aria-pressed="${activeLevels.has(lv)}">${LEVEL_TR[lv]}</button>`).join('');
+      `<button type="button" class="pg-level${activeLevels.has(lv) ? ' active' : ''}" data-level="${lv}" aria-pressed="${activeLevels.has(lv)}">${esc(I18N.t(LEVEL_KEYS[lv] || lv))}</button>`).join('');
   }
 
   // Seçiciyi yalnızca aktif seviyedeki programlarla kurar. Seçili program
@@ -1014,12 +1015,12 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     const byGroup = new Map();
     for (const p of programs) {
       if (!activeLevels.has(p.level || 'LS')) continue;
-      const lvl = LEVEL_TR[p.level] || p.level || 'Lisans';
+      const lvl = LEVEL_KEYS[p.level] ? I18N.t(LEVEL_KEYS[p.level]) : (p.level || I18N.t('levelLS'));
       const key = p.faculty ? `${p.faculty}: ${lvl}` : lvl;
       if (!byGroup.has(key)) byGroup.set(key, []);
       byGroup.get(key).push(p);
     }
-    let html = '<option value="">Bölüm seçiniz…</option>';
+    let html = `<option value="">${esc(I18N.t('pgSelectProgram'))}</option>`;
     for (const [group, ps] of byGroup) {
       html += `<optgroup label="${esc(group)}">` +
         ps.map((p) => `<option value="${esc(p.code)}">${esc(p.name)}</option>`).join('') +
@@ -1054,7 +1055,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
           if (!graph || !graph.nodes) { results.innerHTML = ''; return; }
           const hits = graph.search(e.target.value);
           results.innerHTML = hits.map((n) => n.kind === 'elective'
-            ? `<button class="pg-chip" data-code="${esc(n.code)}">${esc(n.name)}<em>seçmeli slot</em></button>`
+            ? `<button class="pg-chip" data-code="${esc(n.code)}">${esc(n.name)}<em>${esc(I18N.t('pgElectiveSlot'))}</em></button>`
             : `<button class="pg-chip" data-code="${esc(n.code)}">${esc(n.code)}<em>${esc(n.name || '')}</em></button>`
           ).join('');
           results.querySelectorAll('.pg-chip').forEach((b) =>

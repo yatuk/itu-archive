@@ -60,6 +60,10 @@ type lang struct {
 	BranchTermHeading string // "Dönem dökümü"
 	BranchTermCol     string // "Dönem"
 	BranchSecCol      string // "Şube"
+	BranchStatCodes   string // "ders kodu"
+	BranchStatTerms   string // "dönem"
+	BranchStatSecs    string // "toplam şube"
+	Locale            string // JSON-LD inLanguage ("tr-TR" / "en")
 	CourseTitleFmt    string // "%s — ..."
 	CourseLeadFmt     string // "%s (%s) — İTÜ'de %d dönemde..."
 	CourseSearchCTA   string
@@ -88,54 +92,58 @@ type lang struct {
 }
 
 var langTR = lang{
-	Code: "tr",
-	SiteTitle: "İTÜ Ders Arşivi",
+	Code:        "tr",
+	SiteTitle:   "İTÜ Ders Arşivi",
 	SiteTagline: "obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri. Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı: kalıcı olarak.",
-	NavDersler: "dersler", NavGecmis: "geçmiş", NavOnsart: "önşart", NavSinavlar: "sınavlar", NavTakvim: "takvim", NavProgram: "program", NavHakkinda: "hakkında",
+	NavDersler:  "dersler", NavGecmis: "geçmiş", NavOnsart: "önşart", NavSinavlar: "sınavlar", NavTakvim: "takvim", NavProgram: "program", NavHakkinda: "hakkında",
 	CrumbHome: "Ders Arşivi", FootScanned: "son tarama", FootLive: "canlı site", FootSitemap: "sitemap",
-	TermSuffix: "ders programı ve arşivi",
-	TermLeadFmt: "İTÜ %s: %d ders, %d şube, %d branş.",
+	TermSuffix:    "ders programı ve arşivi",
+	TermLeadFmt:   "İTÜ %s: %d ders, %d şube, %d branş.",
 	TermLiveBadge: "aktif dönem · canlı veri", TermBranchHeading: "Bu dönemde açılan branşlar",
 	TermSearchCTA: "bu dönemi canlı ara", TermDataCSV: "CSV", TermDataJSON: "JSON (arama indeksi)", TermDataPrefix: "Tüm veri:",
 	StatSections: "şube", StatCourses: "ders", StatBranches: "branş", StatScanned: "son tarama",
 	BranchTitleFmt: "%s branşı dersleri ve dönem dökümü", BranchLeadFmt: "İTÜ %s branşının tüm dönemlerdeki arşivi: %d ders kodu, %d dönem, %d şube.",
 	BranchH1Fmt: "%s branşı", BranchSearchCTA: "bu branşı canlı ara", BranchCodeHeading: "Ders kodları", BranchTermHeading: "Dönem dökümü",
 	BranchTermCol: "Dönem", BranchSecCol: "Şube",
-	CourseTitleFmt: "%s: %s",
-	CourseLeadFmt: "%s (%s): İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
+	BranchStatCodes: "ders kodu", BranchStatTerms: "dönem", BranchStatSecs: "toplam şube",
+	Locale:          "tr-TR",
+	CourseTitleFmt:  "%s: %s",
+	CourseLeadFmt:   "%s (%s): İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
 	CourseSearchCTA: "bu dersi canlı ara", CourseStatTerms: "toplam dönem",
 	CourseSectHead: "Son dönem şubeleri", CourseSectCRN: "CRN", CourseSectInstr: "Öğretim Üyesi", CourseSectTime: "Zaman", CourseSectCap: "Kont/Yazılan",
 	CourseHistHead: "Dönem geçmişi", CourseHistTerm: "Dönem", CourseHistInstr: "Öğretim Üyesi", CourseHistCap: "Kont", CourseHistEnr: "Yazılan",
 	CourseQuotaHead: "Kontenjan doluluk geçmişi",
-	InstrTitleFmt: "%s: verdiği dersler",
-	InstrLeadFmt: "%s: İTÜ'de %d dönemde, %d farklı ders.",
-	InstrStatTerms: "toplam dönem", InstrStatRecords: "ders kaydı", InstrTableHead: "Verdiği dersler",
+	InstrTitleFmt:   "%s: verdiği dersler",
+	InstrLeadFmt:    "%s: İTÜ'de %d dönemde, %d farklı ders.",
+	InstrStatTerms:  "toplam dönem", InstrStatRecords: "ders kaydı", InstrTableHead: "Verdiği dersler",
 	InstrColCourse: "Ders", InstrColName: "Adı", InstrColTerm: "Dönem", InstrColCap: "Kont", InstrColEnr: "Yazılan",
 }
 
 var langEN = lang{
-	Code: "en",
-	SiteTitle: "İTÜ Course Archive",
+	Code:        "en",
+	SiteTitle:   "İTÜ Course Archive",
 	SiteTagline: "Open data automatically collected from obs.itu.edu.tr. Which courses opened in which term, who taught them, how many enrolled: permanently archived.",
-	NavDersler: "courses", NavGecmis: "history", NavOnsart: "prereqs", NavSinavlar: "exams", NavTakvim: "calendar", NavProgram: "schedule", NavHakkinda: "about",
+	NavDersler:  "courses", NavGecmis: "history", NavOnsart: "prereqs", NavSinavlar: "exams", NavTakvim: "calendar", NavProgram: "schedule", NavHakkinda: "about",
 	CrumbHome: "Course Archive", FootScanned: "last scrape", FootLive: "live site", FootSitemap: "sitemap",
-	TermSuffix: "course schedule and archive",
-	TermLeadFmt: "İTÜ %s: %d courses, %d sections, %d branches.",
+	TermSuffix:    "course schedule and archive",
+	TermLeadFmt:   "İTÜ %s: %d courses, %d sections, %d branches.",
 	TermLiveBadge: "active term · live data", TermBranchHeading: "Branches open this term",
 	TermSearchCTA: "search this term live", TermDataCSV: "CSV", TermDataJSON: "JSON (search index)", TermDataPrefix: "All data:",
 	StatSections: "sections", StatCourses: "courses", StatBranches: "branches", StatScanned: "last scraped",
 	BranchTitleFmt: "%s branch courses and term breakdown", BranchLeadFmt: "İTÜ %s branch archive across all terms: %d course codes, %d terms, %d sections.",
 	BranchH1Fmt: "%s branch", BranchSearchCTA: "search this branch live", BranchCodeHeading: "Course codes", BranchTermHeading: "Term breakdown",
 	BranchTermCol: "Term", BranchSecCol: "Sections",
-	CourseTitleFmt: "%s: %s",
-	CourseLeadFmt: "%s (%s): offered in %d terms at İTÜ. Historical sections, instructors, and latest schedule.",
+	BranchStatCodes: "course codes", BranchStatTerms: "terms", BranchStatSecs: "total sections",
+	Locale:          "en",
+	CourseTitleFmt:  "%s: %s",
+	CourseLeadFmt:   "%s (%s): offered in %d terms at İTÜ. Historical sections, instructors, and latest schedule.",
 	CourseSearchCTA: "search this course live", CourseStatTerms: "total terms",
 	CourseSectHead: "Latest term sections", CourseSectCRN: "CRN", CourseSectInstr: "Instructor", CourseSectTime: "Time", CourseSectCap: "Cap/Enr",
 	CourseHistHead: "Term history", CourseHistTerm: "Term", CourseHistInstr: "Instructor", CourseHistCap: "Cap", CourseHistEnr: "Enr",
 	CourseQuotaHead: "Enrollment history",
-	InstrTitleFmt: "%s: courses taught",
-	InstrLeadFmt: "%s: taught across %d terms, %d distinct courses at İTÜ.",
-	InstrStatTerms: "total terms", InstrStatRecords: "course records", InstrTableHead: "Courses taught",
+	InstrTitleFmt:   "%s: courses taught",
+	InstrLeadFmt:    "%s: taught across %d terms, %d distinct courses at İTÜ.",
+	InstrStatTerms:  "total terms", InstrStatRecords: "course records", InstrTableHead: "Courses taught",
 	InstrColCourse: "Course", InstrColName: "Name", InstrColTerm: "Term", InstrColCap: "Cap", InstrColEnr: "Enr",
 }
 
@@ -146,13 +154,13 @@ var trMonths = []string{
 
 // Builder, docs kökünden veriyi okuyup sayfaları yazar.
 type Builder struct {
-	root    string // dataRoot — verinin okunduğu kök (her zaman docs/)
-	outRoot string // sayfaların yazıldığı kök (docs/ veya docs/en/)
-	l       lang
-	version string // asset önbellek kırma: ?v=<kısa commit> (P2-16)
-	index   model.SiteIndex
-	aggs    map[string]*branchAgg
-	courses map[string]*histCourse
+	root        string // dataRoot — verinin okunduğu kök (her zaman docs/)
+	outRoot     string // sayfaların yazıldığı kök (docs/ veya docs/en/)
+	l           lang
+	version     string // asset önbellek kırma: ?v=<kısa commit> (P2-16)
+	index       model.SiteIndex
+	aggs        map[string]*branchAgg
+	courses     map[string]*histCourse
 	courseSects map[string][]sectRow
 	instructors map[string]*histInstr
 	quotaSeries map[string][]quotaPoint
@@ -167,9 +175,9 @@ type branchAgg struct {
 
 // histCourse, history/courses/<branch>.json'dan gelen tek bir ders.
 type histCourse struct {
-	Name  string              `json:"name"`
-	Terms []string            `json:"-"`
-	Rows  []histCourseRow     `json:"-"`
+	Name  string          `json:"name"`
+	Terms []string        `json:"-"`
+	Rows  []histCourseRow `json:"-"`
 }
 
 type histCourseRow struct {
@@ -303,17 +311,13 @@ func (b *Builder) Generate() error {
 		}
 	}
 
-	// Hoca geçmişi (EN'de atlanır — Cloudflare dosya limiti).
+	// Hoca geçmişi (iki dilde de üretilir).
 	instrSlugs := map[string]string{}
-	if b.l.Code != "en" {
-		if err := b.loadInstructors(); err != nil {
-			return err
-		}
-		for name := range b.instructors {
-			instrSlugs[name] = instructorSlug(name)
-		}
-	} else {
-		b.instructors = map[string]*histInstr{}
+	if err := b.loadInstructors(); err != nil {
+		return err
+	}
+	for name := range b.instructors {
+		instrSlugs[name] = instructorSlug(name)
 	}
 	// Kontenjan zaman serisi (grafikler için).
 	b.loadQuotaSeries()
@@ -330,36 +334,30 @@ func (b *Builder) Generate() error {
 	}
 
 	// Ders sayfaları (önce — branş sayfaları bunlara link verir).
-	// EN'de üretilmez (Cloudflare 20k dosya limiti); EN branş sayfaları TR
-	// ders sayfalarına link verir.
 	courseSlugs := make(map[string]string) // code -> slug
 	for code := range b.courses {
 		courseSlugs[code] = courseSlug(code)
 	}
-	if b.l.Code != "en" {
-		sortedCodes := make([]string, 0, len(b.courses))
-		for code := range b.courses {
-			sortedCodes = append(sortedCodes, code)
-		}
-		sort.Strings(sortedCodes)
-		for _, code := range sortedCodes {
-			if err := b.writeCoursePage(code, courseSlugs[code], instrSlugs, termLabels); err != nil {
-				return err
-			}
+	sortedCodes := make([]string, 0, len(b.courses))
+	for code := range b.courses {
+		sortedCodes = append(sortedCodes, code)
+	}
+	sort.Strings(sortedCodes)
+	for _, code := range sortedCodes {
+		if err := b.writeCoursePage(code, courseSlugs[code], instrSlugs, termLabels); err != nil {
+			return err
 		}
 	}
 
-	// Hoca sayfaları (yalnızca TR — Cloudflare 20k dosya limiti).
-	if b.l.Code != "en" {
-		instrSlugList := make([]string, 0, len(b.instructors))
-		for name := range b.instructors {
-			instrSlugList = append(instrSlugList, instructorSlug(name))
-		}
-		sort.Strings(instrSlugList)
-		for _, slug := range instrSlugList {
-			if err := b.writeInstructorPage(slug, instrSlugs, courseSlugs, termLabels); err != nil {
-				return err
-			}
+	// Hoca sayfaları.
+	instrSlugList := make([]string, 0, len(b.instructors))
+	for name := range b.instructors {
+		instrSlugList = append(instrSlugList, instructorSlug(name))
+	}
+	sort.Strings(instrSlugList)
+	for _, slug := range instrSlugList {
+		if err := b.writeInstructorPage(slug, instrSlugs, courseSlugs, termLabels); err != nil {
+			return err
 		}
 	}
 
@@ -380,12 +378,12 @@ func (b *Builder) Generate() error {
 		if err := b.writeIndexPage(terms); err != nil {
 			return err
 		}
-	} else {
-		// İniş sayfaları ("İTÜ ders planı", "GANO hesaplama" vb.) — yalnızca TR.
-		for _, p := range landingPages {
-			if err := b.writeLandingPage(p); err != nil {
-				return err
-			}
+	}
+	// İniş sayfaları ("İTÜ ders planı" / "İTÜ GPA calculator" vb.) iki dilde de
+	// üretilir; slug'lar dile göre ayrıdır, hreflang ile eşleşirler.
+	for _, p := range landingPages {
+		if err := b.writeLandingPage(p); err != nil {
+			return err
 		}
 	}
 
@@ -399,51 +397,52 @@ func (b *Builder) writeTermPage(tr termRow) error {
 			Code:     br.Code,
 			Levels:   strings.Join(br.Levels, ", "),
 			Sections: br.Sections,
-			URL:      fmt.Sprintf("/brans/%s/", br.Code),
+			URL:      fmt.Sprintf("%s/brans/%s/", b.pfx(), br.Code),
 		})
 	}
 
 	canonical := fmt.Sprintf("%s/dersler/%s/", baseURL, tr.tref.Slug)
-	title := tr.tref.Label + " ders programı ve arşivi"
-	lead := fmt.Sprintf("İTÜ %s: %d ders, %d şube, %d branş.",
-		tr.tref.Label, tr.meta.Courses, tr.meta.Sections, len(tr.meta.Branches))
+	title := b.termLabel(tr.tref.Label) + " " + b.l.TermSuffix
+	lead := fmt.Sprintf(b.l.TermLeadFmt,
+		b.termLabel(tr.tref.Label), tr.meta.Courses, tr.meta.Sections, len(tr.meta.Branches))
 
 	jsonld := jsonldScript([]any{
 		map[string]any{
-			"@context":        "https://schema.org",
-			"@type":           "WebPage",
-			"url":             canonical,
-			"name":            title,
-			"description":     lead,
-			"inLanguage":      "tr-TR",
+			"@context":    "https://schema.org",
+			"@type":       "WebPage",
+			"url":         canonical,
+			"name":        title,
+			"description": lead,
+			"inLanguage":  b.l.Locale,
 		},
 	})
 
 	content := template.HTML(buildContent(
-		fmt.Sprintf(`<nav class="crumb"><a href="/">Ders Arşivi</a> › <span>%s</span></nav>`, template.HTMLEscapeString(tr.tref.Label)),
-		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(tr.tref.Label)),
+		fmt.Sprintf(`<nav class="crumb"><a href="%s/">%s</a> › <span>%s</span></nav>`, b.pfx(), template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(b.termLabel(tr.tref.Label))),
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(b.termLabel(tr.tref.Label))),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(lead)),
-		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s">bu dönemi canlı ara</a></p>`, tr.tref.Slug),
+		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s%s">%s</a></p>`,
+			tr.tref.Slug, b.langQuery(), template.HTMLEscapeString(b.l.TermSearchCTA)),
 		buildStats(b.statsFromMeta(tr.meta)),
-		trBadge(tr.meta.Live),
-		`<h2>Bu dönemde açılan branşlar</h2>`,
-		buildBranchLinks(bls),
-		fmt.Sprintf(`<p class="data-link">Tüm veri: <a href="/data/terms/%s/all.csv">CSV</a> · <a href="/data/terms/%s/search.json">JSON (arama indeksi)</a></p>`,
-			tr.tref.Slug, tr.tref.Slug),
+		b.trBadge(tr.meta.Live),
+		fmt.Sprintf(`<h2>%s</h2>`, template.HTMLEscapeString(b.l.TermBranchHeading)),
+		buildBranchLinks(bls, b.l.StatSections),
+		fmt.Sprintf(`<p class="data-link">%s <a href="/data/terms/%s/all.csv">%s</a> · <a href="/data/terms/%s/search.json">%s</a></p>`,
+			template.HTMLEscapeString(b.l.TermDataPrefix), tr.tref.Slug, template.HTMLEscapeString(b.l.TermDataCSV),
+			tr.tref.Slug, template.HTMLEscapeString(b.l.TermDataJSON)),
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "dersler", tr.tref.Slug, "index.html"),
-		title, lead, canonical, fmtDate(tr.tref.ScrapedAt), content, jsonld, true)
+		title, lead, canonical, b.fmtDate(tr.tref.ScrapedAt), content, jsonld, true)
 }
 
 func (b *Builder) writeBranchPage(code string, termLabels map[string]string, courseSlugs map[string]string) error {
 	a := b.aggs[code]
 	canonical := fmt.Sprintf("%s/brans/%s/", baseURL, code)
-	title := code + " branşı dersleri ve dönem dökümü"
+	title := fmt.Sprintf(b.l.BranchTitleFmt, code)
 	codeCount := len(a.codes)
 	termCount := len(a.termSections)
-	lead := fmt.Sprintf("İTÜ %s branşının tüm dönemlerdeki arşivi: %d ders kodu, %d dönem, %d şube.",
-		code, codeCount, termCount, a.total)
+	lead := fmt.Sprintf(b.l.BranchLeadFmt, code, codeCount, termCount, a.total)
 
 	// En güncel dönem slug'ı
 	var latestSlug string
@@ -464,12 +463,12 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 
 	jsonld := jsonldScript([]any{
 		map[string]any{
-			"@context":        "https://schema.org",
-			"@type":           "WebPage",
-			"url":             canonical,
-			"name":            title,
-			"description":     lead,
-			"inLanguage":      "tr-TR",
+			"@context":    "https://schema.org",
+			"@type":       "WebPage",
+			"url":         canonical,
+			"name":        title,
+			"description": lead,
+			"inLanguage":  b.l.Locale,
 		},
 	})
 
@@ -488,8 +487,8 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 				label = s
 			}
 			termRows = append(termRows, fmt.Sprintf(
-				`<tr><td><a href="/dersler/%s/">%s</a></td><td>%d şube</td></tr>`,
-				s, template.HTMLEscapeString(label), a.termSections[s],
+				`<tr><td><a href="%s/dersler/%s/">%s</a></td><td>%d %s</td></tr>`,
+				b.pfx(), s, template.HTMLEscapeString(b.termLabel(label)), a.termSections[s], b.l.StatSections,
 			))
 		}
 	}
@@ -498,33 +497,34 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 	srt := sortedKeys(a.codes)
 	for _, c := range srt {
 		if slug, ok := courseSlugs[c]; ok {
-			codeSpans = append(codeSpans, fmt.Sprintf(`<a href="/ders/%s/"><code>%s</code></a>`, slug, template.HTMLEscapeString(c)))
+			codeSpans = append(codeSpans, fmt.Sprintf(`<a href="%s/ders/%s/"><code>%s</code></a>`, b.pfx(), slug, template.HTMLEscapeString(c)))
 		} else {
 			codeSpans = append(codeSpans, fmt.Sprintf(`<code>%s</code>`, template.HTMLEscapeString(c)))
 		}
 	}
 
 	content := template.HTML(buildContent(
-		fmt.Sprintf(`<nav class="crumb"><a href="/">Ders Arşivi</a> › <span>%s</span></nav>`, template.HTMLEscapeString(code)),
-		fmt.Sprintf(`<h1>%s branşı</h1>`, template.HTMLEscapeString(code)),
+		fmt.Sprintf(`<nav class="crumb"><a href="%s/">%s</a> › <span>%s</span></nav>`, b.pfx(), template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(code)),
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(fmt.Sprintf(b.l.BranchH1Fmt, code))),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(lead)),
-		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&branch=%s">bu branşı canlı ara</a></p>`,
-			latestSlug, code),
+		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&branch=%s%s">%s</a></p>`,
+			latestSlug, code, b.langQuery(), template.HTMLEscapeString(b.l.BranchSearchCTA)),
 		`<dl class="seo-stats">`+
-			fmt.Sprintf(`<div><dt>ders kodu</dt><dd>%d</dd></div>`, codeCount)+
-			fmt.Sprintf(`<div><dt>dönem</dt><dd>%d</dd></div>`, termCount)+
-			fmt.Sprintf(`<div><dt>toplam şube</dt><dd>%d</dd></div>`, a.total)+
+			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.BranchStatCodes), codeCount)+
+			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.BranchStatTerms), termCount)+
+			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.BranchStatSecs), a.total)+
 			`</dl>`,
-		`<h2>Ders kodları</h2>`,
+		fmt.Sprintf(`<h2>%s</h2>`, template.HTMLEscapeString(b.l.BranchCodeHeading)),
 		fmt.Sprintf(`<p class="seo-codes">%s</p>`, strings.Join(codeSpans, " ")),
-		`<h2>Dönem dökümü</h2>`,
-		`<table class="seo-table"><thead><tr><th>Dönem</th><th>Şube</th></tr></thead><tbody>`+
+		fmt.Sprintf(`<h2>%s</h2>`, template.HTMLEscapeString(b.l.BranchTermHeading)),
+		fmt.Sprintf(`<table class="seo-table"><thead><tr><th>%s</th><th>%s</th></tr></thead><tbody>`,
+			template.HTMLEscapeString(b.l.BranchTermCol), template.HTMLEscapeString(b.l.BranchSecCol))+
 			strings.Join(termRows, "")+
 			`</tbody></table>`,
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "brans", code, "index.html"),
-		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, true)
+		title, lead, canonical, b.fmtDate(b.index.ScrapedAt), content, jsonld, true)
 }
 
 func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs map[string]string, instrSlugs map[string]string) error {
@@ -552,38 +552,40 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	for _, c := range brCodes {
 		sitemapURL(&out, fmt.Sprintf("%s%s/brans/%s/", baseURL, prefix, c), rootDate, "monthly", "0.6")
 	}
-	// İniş sayfaları (yalnızca TR) — elle yazılmış içerik; lastmod yok (scrape ile değişmez).
-	if b.l.Code != "en" {
-		for _, p := range landingPages {
-			sitemapURL(&out, fmt.Sprintf("%s/%s/", baseURL, p.slug), "", "yearly", "0.8")
-		}
-	}
-	// Ders sayfaları (yalnızca TR üretilir — EN sitemap'e girmez).
-	if b.l.Code != "en" {
-		cslugList := make([]string, 0, len(courseSlugs))
-		for _, s := range courseSlugs {
-			cslugList = append(cslugList, s)
-		}
-		sort.Strings(cslugList)
-		for _, s := range cslugList {
-			sitemapURL(&out, fmt.Sprintf("%s/ders/%s/", baseURL, s), rootDate, "monthly", "0.8")
-		}
-	}
-	// Hoca sayfaları (yalnızca TR) — tekilleştirilmiş (aynı slug'a düşen isimler bir kez).
-	if b.l.Code != "en" {
-		seen := make(map[string]bool, len(instrSlugs))
-		hslugList := make([]string, 0, len(instrSlugs))
-		for _, s := range instrSlugs {
-			if seen[s] {
+	// İniş sayfaları — elle yazılmış içerik; lastmod yok (scrape ile değişmez).
+	// EN sürümü kendi slug'ıyla /en/ altında yayımlanır.
+	for _, p := range landingPages {
+		slug := p.slug
+		if b.l.Code == "en" {
+			if p.en.slug == "" {
 				continue
 			}
-			seen[s] = true
-			hslugList = append(hslugList, s)
+			slug = p.en.slug
 		}
-		sort.Strings(hslugList)
-		for _, s := range hslugList {
-			sitemapURL(&out, fmt.Sprintf("%s/hoca/%s/", baseURL, s), rootDate, "monthly", "0.6")
+		sitemapURL(&out, fmt.Sprintf("%s%s/%s/", baseURL, prefix, slug), "", "yearly", "0.8")
+	}
+	// Ders sayfaları.
+	cslugList := make([]string, 0, len(courseSlugs))
+	for _, s := range courseSlugs {
+		cslugList = append(cslugList, s)
+	}
+	sort.Strings(cslugList)
+	for _, s := range cslugList {
+		sitemapURL(&out, fmt.Sprintf("%s%s/ders/%s/", baseURL, prefix, s), rootDate, "monthly", "0.8")
+	}
+	// Hoca sayfaları — tekilleştirilmiş (aynı slug'a düşen isimler bir kez).
+	seen := make(map[string]bool, len(instrSlugs))
+	hslugList := make([]string, 0, len(instrSlugs))
+	for _, s := range instrSlugs {
+		if seen[s] {
+			continue
 		}
+		seen[s] = true
+		hslugList = append(hslugList, s)
+	}
+	sort.Strings(hslugList)
+	for _, s := range hslugList {
+		sitemapURL(&out, fmt.Sprintf("%s%s/hoca/%s/", baseURL, prefix, s), rootDate, "monthly", "0.6")
 	}
 
 	out.WriteString("</urlset>\n")
@@ -685,10 +687,12 @@ func (b *Builder) writeIndexPage(terms []termRow) error {
 
 	var recent []string
 	for i, tr := range terms {
-		if i >= 10 { break }
+		if i >= 10 {
+			break
+		}
 		recent = append(recent, fmt.Sprintf(
 			`<li><a href="/%sdersler/%s/">%s</a> · %d %s</li>`,
-			prefix, tr.tref.Slug, template.HTMLEscapeString(tr.tref.Label),
+			prefix, tr.tref.Slug, template.HTMLEscapeString(b.termLabel(tr.tref.Label)),
 			tr.meta.Sections, b.l.StatSections,
 		))
 	}
@@ -707,10 +711,60 @@ func (b *Builder) writeIndexPage(terms []termRow) error {
 	}})
 
 	return b.writePage(filepath.Join(b.outRoot, "index.html"),
-		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, true)
+		title, desc, canonical, b.fmtDate(b.index.ScrapedAt), content, jsonld, true)
+}
+
+// pfx, site-içi mutlak yolların dil önekidir: TR "" , EN "/en". Sayfalar arası
+// bağlantılar (ders → hoca → branş) aynı dilde kalsın diye her href'e uygulanır.
+// langQuery, SPA'ya giden bağlantılara dil parametresi ekler (EN sayfadan
+// açılan uygulama İngilizce açılsın).
+func (b *Builder) langQuery() string {
+	if b.l.Code == "en" {
+		return "&lang=en"
+	}
+	return ""
+}
+
+// termLabel, veriden gelen Türkçe dönem etiketini görüntü diline çevirir:
+// "2026-2027 Güz Dönemi" → "2026-2027 Fall Term". Sözcük dağarcığı kapalıdır
+// (Güz/Bahar/Yaz + Dönemi); tanınmayan etiket olduğu gibi kalır.
+var termLabelEN = strings.NewReplacer(
+	"Güz Dönemi", "Fall Term",
+	"Bahar Dönemi", "Spring Term",
+	"Yaz Dönemi", "Summer Term",
+	"Yaz Okulu", "Summer School",
+)
+
+func (b *Builder) termLabel(s string) string {
+	if b.l.Code != "en" {
+		return s
+	}
+	return termLabelEN.Replace(s)
+}
+
+func (b *Builder) pfx() string {
+	if b.l.Code == "en" {
+		return "/en"
+	}
+	return ""
 }
 
 func (b *Builder) writePage(path, title, desc, canonical, scraped string, content, jsonld template.HTML, alt bool) error {
+	// Varsayılan eşleme: aynı yol, /en öneki eklenir/çıkarılır.
+	altURL, altLang := "", ""
+	if alt {
+		if b.l.Code == "tr" {
+			altURL, altLang = strings.Replace(canonical, baseURL, baseURL+"/en", 1), "en"
+		} else {
+			altURL, altLang = strings.Replace(canonical, baseURL+"/en", baseURL, 1), "tr"
+		}
+	}
+	return b.writePageAlt(path, title, desc, canonical, scraped, content, jsonld, altURL, altLang)
+}
+
+// writePageAlt, hreflang karşılığı yol eşlemesinden türetilemeyen sayfalar için
+// (iniş sayfaları: TR ve EN slug'ları farklı) açık alternatif URL alır.
+func (b *Builder) writePageAlt(path, title, desc, canonical, scraped string, content, jsonld template.HTML, altURL, altLang string) error {
 	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
 		return err
 	}
@@ -719,18 +773,6 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 		return err
 	}
 	defer f.Close()
-	// hreflang alternatif URL'i (yalnızca diğer dilde karşılığı üretiliyorsa).
-	altURL := ""
-	altLang := ""
-	if alt {
-		if b.l.Code == "tr" {
-			altURL = strings.Replace(canonical, baseURL, baseURL+"/en", 1)
-			altLang = "en"
-		} else {
-			altURL = strings.Replace(canonical, baseURL+"/en", baseURL, 1)
-			altLang = "tr"
-		}
-	}
 	return pageTmpl.Execute(f, pageData{
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
@@ -752,6 +794,20 @@ type landingPage struct {
 	body        []string // düz paragraf metinleri (<p> ile sarılır)
 	cta         string   // href (hash ya da SPA URL'i)
 	ctaLabel    string
+	en          landingCopy // İngilizce karşılığı (slug dahil — anahtar kelime İngilizce)
+}
+
+// landingCopy, bir iniş sayfasının tek dildeki metnidir. EN slug'ı bilerek
+// Türkçesinden farklıdır: iniş sayfasının tamamı bir arama sorgusuna karşılık
+// gelir, o yüzden yol da o dilin sorgusuyla eşleşmeli ("itu gpa calculator").
+// İki sürüm hreflang ile birbirine bağlanır (writeLandingPage).
+type landingCopy struct {
+	slug        string
+	title       string
+	description string
+	h1          string
+	body        []string
+	ctaLabel    string
 }
 
 var landingPages = []landingPage{
@@ -764,6 +820,16 @@ var landingPages = []landingPage{
 			"Planı aç, seçmeli slotlarda dersi seç, notlarını gir · hepsi tarayıcında saklanır, hiçbir veri sunucuya gitmez.",
 		},
 		cta: "/#dersplanim", ctaLabel: "Ders Planım'ı aç",
+		en: landingCopy{
+			slug: "itu-course-plan", title: "İTÜ course plan builder",
+			description: "View your İTÜ course plan: open your program's plan, mark the courses you have taken, enter grades and calculate your GPA.",
+			h1:          "İTÜ course plan",
+			body: []string{
+				"On İTÜ Course Archive you can open the term-by-term course plan of your program and see whether each course is offered this term. The My Plan view calculates your GPA and semester averages the moment you enter grades.",
+				"Open the plan, pick a course in each elective slot, enter your grades · everything stays in your browser, nothing is sent to a server.",
+			},
+			ctaLabel: "Open My Plan",
+		},
 	},
 	{
 		slug: "gano-hesaplama", title: "İTÜ GANO hesaplama",
@@ -775,6 +841,17 @@ var landingPages = []landingPage{
 			"Bu bir transkript değildir · resmî GANO için öğrenci bilgi sistemine bak.",
 		},
 		cta: "/#dersplanim", ctaLabel: "GANO'nu hesapla",
+		en: landingCopy{
+			slug: "itu-gpa-calculator", title: "İTÜ GPA calculator",
+			description: "İTÜ GPA (grade point average) calculator: enter your grades with the official letter-grade coefficients and get your GPA.",
+			h1:          "İTÜ GPA calculator",
+			body: []string{
+				"GPA is your cumulative grade point average on İTÜ's 4.00 scale. Each letter grade carries a coefficient: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0; FF and VF are 0.0.",
+				"Enter your grades course by course in the My Plan view and your GPA and each semester's average are calculated automatically. If you have transfer credits or an existing GPA, put them in the boxes at the top.",
+				"This is not a transcript · check the student information system for your official GPA.",
+			},
+			ctaLabel: "Calculate your GPA",
+		},
 	},
 	{
 		slug: "not-ortalamasi", title: "İTÜ not ortalaması ve harf notları",
@@ -785,6 +862,16 @@ var landingPages = []landingPage{
 			"Muaf (M), geçti (G), devamsız (VF) ve kredisi sayılmayan durumlar ortalamayı farklı etkiler. Ders Planım'da bu notları işaretleyip ortalamanı görebilirsin.",
 		},
 		cta: "/#dersplanim", ctaLabel: "Notlarını gir",
+		en: landingCopy{
+			slug: "itu-letter-grades", title: "İTÜ letter grades and grade average",
+			description: "İTÜ letter grade coefficients and grade average: the scale from AA to FF, exempt/pass grades, and how the average is calculated.",
+			h1:          "İTÜ letter grades and grade average",
+			body: []string{
+				"At İTÜ courses are graded with letters on a 4.00 scale: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0, FF 0.0. Grades with a '+' (BA+, BB+) carry an intermediate coefficient.",
+				"Exempt (M), pass (G), absent (VF) and non-credit cases affect the average differently. You can mark these grades in My Plan and see your average.",
+			},
+			ctaLabel: "Enter your grades",
+		},
 	},
 	{
 		slug: "ders-programi", title: "İTÜ ders programı",
@@ -795,6 +882,16 @@ var landingPages = []landingPage{
 			"Kayıt haftasında kontenjan doluluğu yarım saatte bir tazelenir.",
 		},
 		cta: "/#dersler", ctaLabel: "Dersleri ara",
+		en: landingCopy{
+			slug: "itu-course-schedule", title: "İTÜ course schedule",
+			description: "İTÜ course schedule: search the courses offered this term, their sections, instructors, day/time and quota fill.",
+			h1:          "İTÜ course schedule",
+			body: []string{
+				"Search the course schedule OBS publishes, from the archive: filter by course code, name, CRN or instructor; see each section's day and time, quota and fill rate.",
+				"During registration week quota fill is refreshed every half hour.",
+			},
+			ctaLabel: "Search courses",
+		},
 	},
 	{
 		slug: "kontenjan", title: "İTÜ ders kontenjanları ve doluluk",
@@ -805,6 +902,16 @@ var landingPages = []landingPage{
 			"Bir dersin geçmiş dönemlerde ne kadar hızlı dolduğunu detay sayfasında görebilirsin.",
 		},
 		cta: "/#dersler", ctaLabel: "Kontenjanları gör",
+		en: landingCopy{
+			slug: "itu-course-quotas", title: "İTÜ course quotas and fill rates",
+			description: "İTÜ course quotas: capacity and enrolled counts per section, fill rate, and how fast sections filled in past terms.",
+			h1:          "İTÜ course quotas",
+			body: []string{
+				"Every section's quota, the number of students enrolled and the fill percentage are shown in the table. Full and critical (≥85%) sections are marked separately.",
+				"You can see how quickly a course filled in past terms on its detail panel.",
+			},
+			ctaLabel: "See the quotas",
+		},
 	},
 	{
 		slug: "ders-secimi", title: "İTÜ ders seçimi rehberi",
@@ -815,6 +922,16 @@ var landingPages = []landingPage{
 			"Arşivde dersin önşart haritasını aç, final takviminde çakışmayı kontrol et, Program görünümünde haftalık çizelgeni kur ve çakışmaları gör.",
 		},
 		cta: "/#dersler", ctaLabel: "Aramaya başla",
+		en: landingCopy{
+			slug: "itu-course-registration-guide", title: "İTÜ course registration guide",
+			description: "İTÜ course registration: check prerequisites, spot final exam conflicts, weigh quota and fill speed, and build your schedule.",
+			h1:          "İTÜ course registration guide",
+			body: []string{
+				"Before you register: do you meet the prerequisites, do any finals clash, is the quota about to fill?",
+				"Open the course's prerequisite map in the archive, check the final exam schedule for clashes, then build your weekly timetable in the Schedule view and see the conflicts.",
+			},
+			ctaLabel: "Start searching",
+		},
 	},
 	{
 		slug: "onsart-haritasi", title: "İTÜ önşart haritası",
@@ -825,6 +942,16 @@ var landingPages = []landingPage{
 			"Program seçmek için Dersler'de arayarak başlayabilirsin.",
 		},
 		cta: "/#onsart", ctaLabel: "Haritayı aç",
+		en: landingCopy{
+			slug: "itu-prerequisite-map", title: "İTÜ prerequisite map",
+			description: "İTÜ prerequisite map: see the prerequisite relations between a program's courses, semester by semester.",
+			h1:          "İTÜ prerequisite map",
+			body: []string{
+				"The prerequisite map lays out a program's courses in semester columns and draws the prerequisite links as arrows. See which courses you must finish before you can take a given course.",
+				"You can start by searching in Courses to pick a program.",
+			},
+			ctaLabel: "Open the map",
+		},
 	},
 	{
 		slug: "ders-arsivi", title: "İTÜ ders arşivi · geçmiş dönemler",
@@ -835,40 +962,76 @@ var landingPages = []landingPage{
 			"Geçmiş görünümünde bir dersin hangi dönemlerde, hangi hocayla ve kaç şube açıldığını ara; not dağılımı ve katalog bilgisini gör.",
 		},
 		cta: "/#gecmis", ctaLabel: "Geçmişi ara",
+		en: landingCopy{
+			slug: "itu-course-archive", title: "İTÜ course archive · past terms",
+			description: "İTÜ course archive: every term since 2016 with its courses, quota history, catalog and grade distribution.",
+			h1:          "İTÜ course archive",
+			body: []string{
+				"OBS only shows the term you are in; when a term ends the data is gone. This archive has put every term under version control since 2016.",
+				"In the History view, search which terms a course was offered in, with which instructor and how many sections; see its grade distribution and catalog information.",
+			},
+			ctaLabel: "Search the history",
+		},
 	},
 }
 
 func (b *Builder) writeLandingPage(p landingPage) error {
-	if b.l.Code == "en" {
-		return nil // iniş sayfaları yalnızca TR (EN karşılığı yok)
+	// Sayfanın bu dildeki metni + her iki dildeki kalıcı URL'i. Slug'lar dile
+	// göre farklı olduğu için hreflang çifti burada elle kurulur.
+	trURL := fmt.Sprintf("%s/%s/", baseURL, p.slug)
+	enURL := fmt.Sprintf("%s/en/%s/", baseURL, p.en.slug)
+
+	c := landingCopy{
+		slug: p.slug, title: p.title, description: p.description,
+		h1: p.h1, body: p.body, ctaLabel: p.ctaLabel,
 	}
-	canonical := fmt.Sprintf("%s/%s/", baseURL, p.slug)
+	canonical, altURL, altLang := trURL, enURL, "en"
+	if b.l.Code == "en" {
+		c = p.en
+		canonical, altURL, altLang = enURL, trURL, "tr"
+	}
+	// EN metni yazılmamışsa sayfa hiç üretilmez — yarım çevrilmiş sayfa
+	// yayımlamaktansa yokluğu dürüsttür.
+	if c.slug == "" || c.h1 == "" {
+		return nil
+	}
+
 	var paras strings.Builder
-	for _, t := range p.body {
+	for _, t := range c.body {
 		paras.WriteString("<p>" + template.HTMLEscapeString(t) + "</p>\n")
 	}
+	// CTA hedefi (SPA hash'i) dilden bağımsız; EN'de arayüz ?lang=en ile açılır.
+	// p.cta "/#dersplanim" biçiminde: sorgu, yol ile hash ARASINA girmeli.
+	cta := p.cta
+	if b.l.Code == "en" {
+		path, hash, _ := strings.Cut(strings.TrimPrefix(p.cta, "/"), "#")
+		cta = "/" + path + "?lang=en"
+		if hash != "" {
+			cta += "#" + hash
+		}
+	}
 	content := template.HTML(buildContent(
-		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(p.h1)),
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(c.h1)),
 		paras.String(),
 		fmt.Sprintf(`<p class="cta"><a class="btn" href="%s">%s</a></p>`,
-			template.HTMLEscapeString(p.cta), template.HTMLEscapeString(p.ctaLabel)),
+			template.HTMLEscapeString(cta), template.HTMLEscapeString(c.ctaLabel)),
 	))
 	jsonld := jsonldScript([]any{map[string]any{
 		"@context": "https://schema.org", "@type": "WebPage",
-		"url": canonical, "name": p.title, "description": p.description,
+		"url": canonical, "name": c.title, "description": c.description,
 	}})
-	return b.writePage(filepath.Join(b.outRoot, p.slug, "index.html"),
-		p.title, p.description, canonical, dateOf(b.index.ScrapedAt), content, jsonld, false)
+	return b.writePageAlt(filepath.Join(b.outRoot, c.slug, "index.html"),
+		c.title, c.description, canonical, dateOf(b.index.ScrapedAt), content, jsonld, altURL, altLang)
 }
 
 // --- helpers ---
 
 func (b *Builder) statsFromMeta(m model.TermMeta) []statEntry {
 	return []statEntry{
-		{"şube", strconv.Itoa(m.Sections)},
-		{"ders", strconv.Itoa(m.Courses)},
-		{"branş", strconv.Itoa(len(m.Branches))},
-		{"son tarama", fmtDate(m.ScrapedAt)},
+		{b.l.StatSections, strconv.Itoa(m.Sections)},
+		{b.l.StatCourses, strconv.Itoa(m.Courses)},
+		{b.l.StatBranches, strconv.Itoa(len(m.Branches))},
+		{b.l.StatScanned, b.fmtDate(m.ScrapedAt)},
 	}
 }
 
@@ -884,18 +1047,19 @@ func buildStats(entries []statEntry) string {
 	return b.String()
 }
 
-func trBadge(live bool) string {
+func (b *Builder) trBadge(live bool) string {
 	if !live {
 		return ""
 	}
-	return `<span class="seo-badge">aktif dönem · canlı veri</span>`
+	return `<span class="seo-badge">` + template.HTMLEscapeString(b.l.TermLiveBadge) + `</span>`
 }
 
-func buildBranchLinks(bls []branchLink) string {
+// sectionWord, "şube" / "sections" — dil struct'ından geçirilir.
+func buildBranchLinks(bls []branchLink, sectionWord string) string {
 	var b strings.Builder
 	b.WriteString(`<ul class="seo-branchlist">`)
 	for _, bl := range bls {
-		extra := fmt.Sprintf("%d şube", bl.Sections)
+		extra := fmt.Sprintf("%d %s", bl.Sections, sectionWord)
 		if bl.Levels != "" {
 			extra += " · " + bl.Levels
 		}
@@ -921,13 +1085,18 @@ func jsonldScript(v any) template.HTML {
 
 // --- tarih yardımcıları ---
 
-func fmtDate(iso string) string {
+// fmtDate, ISO damgayı görüntü diline uygun okunur tarihe çevirir:
+// TR "13 Ağustos 2026", EN "13 August 2026".
+func (b *Builder) fmtDate(iso string) string {
 	if iso == "" {
 		return "·"
 	}
 	t, err := time.Parse(time.RFC3339, iso)
 	if err != nil {
 		return iso
+	}
+	if b.l.Code == "en" {
+		return fmt.Sprintf("%d %s %d", t.Day(), t.Month(), t.Year())
 	}
 	return fmt.Sprintf("%d %s %d", t.Day(), trMonths[int(t.Month())], t.Year())
 }
@@ -982,7 +1151,9 @@ func instructorSlug(name string) string {
 const maxSlugLen = 80
 
 func trimSlug(s string) string {
-	if len(s) <= maxSlugLen { return s }
+	if len(s) <= maxSlugLen {
+		return s
+	}
 	return s[:maxSlugLen]
 }
 
@@ -1004,9 +1175,9 @@ func (b *Builder) loadInstructors() error {
 		}
 		for name, r := range raw {
 			var full struct {
-				Name  string    `json:"name"`
-				Rows  [][]any   `json:"rows"`
-				Terms int       `json:"terms"`
+				Name  string  `json:"name"`
+				Rows  [][]any `json:"rows"`
+				Terms int     `json:"terms"`
 			}
 			if err := json.Unmarshal(r, &full); err != nil {
 				return fmt.Errorf("%s/%s: %w", e.Name(), name, err)
@@ -1015,11 +1186,23 @@ func (b *Builder) loadInstructors() error {
 			for _, row := range full.Rows {
 				if len(row) >= 5 {
 					ir := instrRow{}
-					if s, ok := row[0].(string); ok { ir.Term = s }
-					if s, ok := row[1].(string); ok { ir.Code = s }
-					if s, ok := row[2].(string); ok { ir.Name = s }
-					switch v := row[3].(type) { case float64: ir.Cap = int(v) }
-					switch v := row[4].(type) { case float64: ir.Enr = int(v) }
+					if s, ok := row[0].(string); ok {
+						ir.Term = s
+					}
+					if s, ok := row[1].(string); ok {
+						ir.Code = s
+					}
+					if s, ok := row[2].(string); ok {
+						ir.Name = s
+					}
+					switch v := row[3].(type) {
+					case float64:
+						ir.Cap = int(v)
+					}
+					switch v := row[4].(type) {
+					case float64:
+						ir.Enr = int(v)
+					}
 					hi.Rows = append(hi.Rows, ir)
 				}
 			}
@@ -1044,8 +1227,8 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 	}
 
 	canonical := fmt.Sprintf("%s/hoca/%s/", baseURL, slug)
-	title := hi.Name + ": verdiği dersler"
-	lead := fmt.Sprintf("%s: İTÜ'de %d dönemde, %d farklı ders.", hi.Name, hi.Terms, distinctCodes(hi.Rows))
+	title := fmt.Sprintf(b.l.InstrTitleFmt, hi.Name)
+	lead := fmt.Sprintf(b.l.InstrLeadFmt, hi.Name, hi.Terms, distinctCodes(hi.Rows))
 
 	jsonld := jsonldScript([]any{
 		map[string]any{
@@ -1073,33 +1256,38 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 		}
 		codeHTML := template.HTMLEscapeString(r.Code)
 		if cs, ok := courseSlugs[r.Code]; ok {
-			codeHTML = fmt.Sprintf(`<a href="/ders/%s/">%s</a>`, cs, template.HTMLEscapeString(r.Code))
+			codeHTML = fmt.Sprintf(`<a href="%s/ders/%s/">%s</a>`, b.pfx(), cs, template.HTMLEscapeString(r.Code))
 		}
 		rows = append(rows, fmt.Sprintf(
-			`<tr><td>%s</td><td>%s</td><td><a href="/dersler/%s/">%s</a></td><td>%d</td><td>%d</td></tr>`,
+			`<tr><td>%s</td><td>%s</td><td><a href="%s/dersler/%s/">%s</a></td><td>%d</td><td>%d</td></tr>`,
 			codeHTML,
 			template.HTMLEscapeString(r.Name),
+			b.pfx(),
 			template.HTMLEscapeString(r.Term),
-			template.HTMLEscapeString(label),
+			template.HTMLEscapeString(b.termLabel(label)),
 			r.Cap, r.Enr,
 		))
 	}
 
 	content := template.HTML(buildContent(
-		fmt.Sprintf(`<nav class="crumb"><a href="/">Ders Arşivi</a> › <span>%s</span></nav>`, template.HTMLEscapeString(hi.Name)),
+		fmt.Sprintf(`<nav class="crumb"><a href="%s/">%s</a> › <span>%s</span></nav>`, b.pfx(), template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(hi.Name)),
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(hi.Name)),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(lead)),
 		`<dl class="seo-stats">`+
-			fmt.Sprintf(`<div><dt>toplam dönem</dt><dd>%d</dd></div>`, hi.Terms)+
-			fmt.Sprintf(`<div><dt>ders kaydı</dt><dd>%d</dd></div>`, len(hi.Rows))+
+			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.InstrStatTerms), hi.Terms)+
+			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.InstrStatRecords), len(hi.Rows))+
 			`</dl>`,
-		`<h2>Verdiği dersler</h2>`,
-		`<table class="seo-table"><thead><tr><th>Ders</th><th>Adı</th><th>Dönem</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
+		fmt.Sprintf(`<h2>%s</h2>`, template.HTMLEscapeString(b.l.InstrTableHead)),
+		fmt.Sprintf(`<table class="seo-table"><thead><tr><th>%s</th><th>%s</th><th>%s</th><th>%s</th><th>%s</th></tr></thead><tbody>`,
+			template.HTMLEscapeString(b.l.InstrColCourse), template.HTMLEscapeString(b.l.InstrColName),
+			template.HTMLEscapeString(b.l.InstrColTerm), template.HTMLEscapeString(b.l.InstrColCap),
+			template.HTMLEscapeString(b.l.InstrColEnr))+
 			strings.Join(rows, "")+`</tbody></table>`,
 	))
 
+	// Artık iki dilde de üretiliyor → hreflang çifti kurulabilir (aynı slug).
 	return b.writePage(filepath.Join(b.outRoot, "hoca", slug, "index.html"),
-		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, false)
+		title, lead, canonical, b.fmtDate(b.index.ScrapedAt), content, jsonld, true)
 }
 
 func distinctCodes(rows []instrRow) int {
@@ -1143,11 +1331,11 @@ func (b *Builder) loadQuotaSeries() {
 				continue
 			}
 			var snap struct {
-				TS   string           `json:"ts"`
-				Full bool             `json:"full,omitempty"`
-				Cap  map[string]int   `json:"cap,omitempty"`
-				Enr  map[string]int   `json:"enr,omitempty"`
-				Gone []string         `json:"gone,omitempty"`
+				TS   string         `json:"ts"`
+				Full bool           `json:"full,omitempty"`
+				Cap  map[string]int `json:"cap,omitempty"`
+				Enr  map[string]int `json:"enr,omitempty"`
+				Gone []string       `json:"gone,omitempty"`
 			}
 			if err := json.Unmarshal(line, &snap); err != nil {
 				continue
@@ -1170,10 +1358,16 @@ func (b *Builder) loadQuotaSeries() {
 			}
 			// bu snapshot'ta değişen CRN'leri seriye ekle.
 			changed := map[string]bool{}
-			for c := range snap.Enr { changed[c] = true }
-			for c := range snap.Cap { changed[c] = true }
+			for c := range snap.Enr {
+				changed[c] = true
+			}
+			for c := range snap.Cap {
+				changed[c] = true
+			}
 			if snap.Full {
-				for c := range state { changed[c] = true }
+				for c := range state {
+					changed[c] = true
+				}
 			}
 			for crn := range changed {
 				p := state[crn]
@@ -1196,10 +1390,16 @@ func quotaSparkline(points []quotaPoint) template.HTML {
 		if p.Cap > 0 {
 			vals[i] = float64(p.Enr) / float64(p.Cap)
 		}
-		if vals[i] < min { min = vals[i] }
-		if vals[i] > max { max = vals[i] }
+		if vals[i] < min {
+			min = vals[i]
+		}
+		if vals[i] > max {
+			max = vals[i]
+		}
 	}
-	if max <= min { max = min + 0.01 }
+	if max <= min {
+		max = min + 0.01
+	}
 	rng := max - min
 	// 60x20 SVG.
 	w, h := 60, 20
@@ -1272,9 +1472,9 @@ func (b *Builder) loadCourseData(terms []termRow) error {
 			}
 			// terms haricinde rows'ları da çöz.
 			var full struct {
-				Name string          `json:"name"`
-				Terms []string       `json:"terms"`
-				Rows  [][]any        `json:"rows"`
+				Name  string   `json:"name"`
+				Terms []string `json:"terms"`
+				Rows  [][]any  `json:"rows"`
 			}
 			if err := json.Unmarshal(r, &full); err != nil {
 				return fmt.Errorf("%s/%s rows: %w", e.Name(), code, err)
@@ -1284,11 +1484,23 @@ func (b *Builder) loadCourseData(terms []termRow) error {
 			for _, row := range full.Rows {
 				if len(row) >= 5 {
 					hr := histCourseRow{}
-					if s, ok := row[0].(string); ok { hr.Term = s }
-					if s, ok := row[1].(string); ok { hr.Instructor = s }
-					switch v := row[2].(type) { case float64: hr.Capacity = int(v) }
-					switch v := row[3].(type) { case float64: hr.Enrolled = int(v) }
-					if s, ok := row[4].(string); ok { hr.Days = s }
+					if s, ok := row[0].(string); ok {
+						hr.Term = s
+					}
+					if s, ok := row[1].(string); ok {
+						hr.Instructor = s
+					}
+					switch v := row[2].(type) {
+					case float64:
+						hr.Capacity = int(v)
+					}
+					switch v := row[3].(type) {
+					case float64:
+						hr.Enrolled = int(v)
+					}
+					if s, ok := row[4].(string); ok {
+						hr.Days = s
+					}
 					hc.Rows = append(hc.Rows, hr)
 				}
 			}
@@ -1322,7 +1534,9 @@ func (b *Builder) loadCourseData(terms []termRow) error {
 			continue
 		}
 		codeSet := map[string]bool{}
-		for _, c := range codes { codeSet[c] = true }
+		for _, c := range codes {
+			codeSet[c] = true
+		}
 		for _, r := range rows {
 			if len(r) < 8 {
 				continue
@@ -1358,13 +1572,12 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 	}
 
 	canonical := fmt.Sprintf("%s/ders/%s/", baseURL, slug)
-	title := code + ": " + hc.Name
+	title := fmt.Sprintf(b.l.CourseTitleFmt, code, hc.Name)
 	branch := code
 	if idx := strings.IndexByte(code, ' '); idx > 0 {
 		branch = code[:idx]
 	}
-	desc := fmt.Sprintf("%s (%s): İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
-		code, hc.Name, len(hc.Terms))
+	desc := fmt.Sprintf(b.l.CourseLeadFmt, code, hc.Name, len(hc.Terms))
 
 	jsonld := jsonldScript([]any{
 		map[string]any{
@@ -1373,7 +1586,7 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			"url":         canonical,
 			"name":        code,
 			"description": hc.Name,
-			"inLanguage":  "tr-TR",
+			"inLanguage":  b.l.Locale,
 			"provider":    map[string]string{"@type": "CollegeOrUniversity", "name": "İstanbul Teknik Üniversitesi"},
 		},
 	})
@@ -1386,13 +1599,15 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			rows = append(rows, fmt.Sprintf(
 				`<tr><td>%s</td><td>%s</td><td>%s</td><td>%d/%d</td></tr>`,
 				template.HTMLEscapeString(s.CRN),
-				instrLink(s.Instructor, instrSlugs),
+				instrLink(s.Instructor, instrSlugs, b.pfx()),
 				template.HTMLEscapeString(s.When),
 				s.Capacity, s.Enrolled,
 			))
 		}
-		sectHTML = `<h2>Son dönem şubeleri</h2>` +
-			`<table class="seo-table"><thead><tr><th>CRN</th><th>Öğretim Üyesi</th><th>Zaman</th><th>Kont/Yazılan</th></tr></thead><tbody>` +
+		sectHTML = fmt.Sprintf(`<h2>%s</h2>`, template.HTMLEscapeString(b.l.CourseSectHead)) +
+			fmt.Sprintf(`<table class="seo-table"><thead><tr><th>%s</th><th>%s</th><th>%s</th><th>%s</th></tr></thead><tbody>`,
+				template.HTMLEscapeString(b.l.CourseSectCRN), template.HTMLEscapeString(b.l.CourseSectInstr),
+				template.HTMLEscapeString(b.l.CourseSectTime), template.HTMLEscapeString(b.l.CourseSectCap)) +
 			strings.Join(rows, "") + `</tbody></table>`
 	}
 
@@ -1407,7 +1622,7 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 		}
 	}
 	if quotaHTML != "" {
-		quotaHTML = `<h2>Kontenjan doluluk geçmişi</h2><p class="seo-spark-line">` + quotaHTML + `</p>`
+		quotaHTML = fmt.Sprintf(`<h2>%s</h2><p class="seo-spark-line">`, template.HTMLEscapeString(b.l.CourseQuotaHead)) + quotaHTML + `</p>`
 	}
 
 	// Dönem geçmişi.
@@ -1418,42 +1633,48 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			label = l
 		}
 		histRows = append(histRows, fmt.Sprintf(
-			`<tr><td><a href="/dersler/%s/">%s</a></td><td>%s</td><td>%d</td><td>%d</td></tr>`,
+			`<tr><td><a href="%s/dersler/%s/">%s</a></td><td>%s</td><td>%d</td><td>%d</td></tr>`,
+			b.pfx(),
 			template.HTMLEscapeString(r.Term),
-			template.HTMLEscapeString(label),
-			instrLink(r.Instructor, instrSlugs),
+			template.HTMLEscapeString(b.termLabel(label)),
+			instrLink(r.Instructor, instrSlugs, b.pfx()),
 			r.Capacity, r.Enrolled,
 		))
 	}
 
 	content := template.HTML(buildContent(
-		fmt.Sprintf(`<nav class="crumb"><a href="/">Ders Arşivi</a> › <a href="/brans/%s/">%s</a> › <span>%s</span></nav>`,
+		fmt.Sprintf(`<nav class="crumb"><a href="%s/">%s</a> › <a href="%s/brans/%s/">%s</a> › <span>%s</span></nav>`,
+			b.pfx(), template.HTMLEscapeString(b.l.CrumbHome), b.pfx(),
 			template.HTMLEscapeString(branch), template.HTMLEscapeString(branch), template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(hc.Name)),
-		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&code=%s">bu dersi canlı ara</a></p>`,
-			b.index.CurrentSlug, template.HTMLEscapeString(code)),
+		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&code=%s%s">%s</a></p>`,
+			b.index.CurrentSlug, template.HTMLEscapeString(code), b.langQuery(),
+			template.HTMLEscapeString(b.l.CourseSearchCTA)),
 		`<dl class="seo-stats">`+
-			fmt.Sprintf(`<div><dt>toplam dönem</dt><dd>%d</dd></div>`, len(hc.Terms))+
+			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.CourseStatTerms), len(hc.Terms))+
 			`</dl>`,
 		sectHTML,
 		quotaHTML,
-		`<h2>Dönem geçmişi</h2>`,
-		`<table class="seo-table"><thead><tr><th>Dönem</th><th>Öğretim Üyesi</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
+		fmt.Sprintf(`<h2>%s</h2>`, template.HTMLEscapeString(b.l.CourseHistHead)),
+		fmt.Sprintf(`<table class="seo-table"><thead><tr><th>%s</th><th>%s</th><th>%s</th><th>%s</th></tr></thead><tbody>`,
+			template.HTMLEscapeString(b.l.CourseHistTerm), template.HTMLEscapeString(b.l.CourseHistInstr),
+			template.HTMLEscapeString(b.l.CourseHistCap), template.HTMLEscapeString(b.l.CourseHistEnr))+
 			strings.Join(histRows, "")+`</tbody></table>`,
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "ders", slug, "index.html"),
-		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, false)
+		title, desc, canonical, b.fmtDate(b.index.ScrapedAt), content, jsonld, true)
 }
 
 // instrLink, hoca adı için varsa hoca sayfasına bağlantı, yoksa düz metin döndürür.
-func instrLink(name string, instrSlugs map[string]string) string {
+// pfx, dil önekidir (Builder.pfx) — EN sayfası EN hoca sayfasına bağlanır.
+func instrLink(name string, instrSlugs map[string]string, pfx string) string {
 	if name == "" || name == "***" {
 		return "·"
 	}
 	if slug, ok := instrSlugs[name]; ok {
-		return fmt.Sprintf(`<a href="/hoca/%s/">%s</a>`, slug, template.HTMLEscapeString(name))
+		return fmt.Sprintf(`<a href="%s/hoca/%s/">%s</a>`, pfx, slug, template.HTMLEscapeString(name))
 	}
 	return template.HTMLEscapeString(name)
 }

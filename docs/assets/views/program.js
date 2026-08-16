@@ -12,6 +12,7 @@ import { buildTimetable, parseWhen, openDetail } from './courses.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
 import { confirmDialog, promptDialog } from '../core/dialog.js';
+import { I18N } from '../i18n.js';
 
 let term = null;
 let rows = [];
@@ -100,15 +101,15 @@ export function initProgram() {
   $('#p-clear').addEventListener('click', () => {
     // Tek tıkla program silinmesin — onay iste (Critique P2).
     confirmDialog({
-      title: 'Programı temizle',
-      message: `${progItems().length} şube silinecek. Geri alınamaz.`,
-      okLabel: 'Temizle',
+      title: I18N.t('prgClearTitle'),
+      message: I18N.t('prgClearMsg', { n: progItems().length }),
+      okLabel: I18N.t('prgClear'),
       danger: true,
     }).then((yes) => {
       if (!yes) return;
       setProgItems([]);
       renderProgSelector();
-      toast('Program temizlendi');
+      toast(I18N.t('prgCleared'));
     });
   });
   $('#p-csv').addEventListener('click', exportCSV);
@@ -133,34 +134,34 @@ export function initProgram() {
 function progNew() {
   const ps = loadPrograms();
   const id = Math.max(0, ...ps.programs.map((p) => p.id)) + 1;
-  const name = `Program ${ps.programs.length + 1}`;
+  const name = I18N.t('prgDefaultName', { n: ps.programs.length + 1 });
   ps.programs.push({ id, name, items: [] });
   ps.active = id;
   savePrograms(ps);
   renderProgSelector();
-  toast(`Yeni program "${name}" oluşturuldu`);
+  toast(I18N.t('prgCreated', { name }));
 }
 function progCopy() {
   const ps = loadPrograms();
   const p = ps.programs.find((x) => x.id === ps.active);
   if (!p) return;
   const id = Math.max(0, ...ps.programs.map((x) => x.id)) + 1;
-  ps.programs.push({ id, name: p.name + ' (kopya)', items: JSON.parse(JSON.stringify(p.items)) });
+  ps.programs.push({ id, name: `${p.name} (${I18N.t('prgCopySuffix')})`, items: JSON.parse(JSON.stringify(p.items)) });
   ps.active = id;
   savePrograms(ps);
   renderProgSelector();
-  toast('Program kopyalandı');
+  toast(I18N.t('prgCopied2'));
 }
 function progDel() {
   const ps = loadPrograms();
-  if (ps.programs.length <= 1) { toast('En az bir program kalmalı', { kind: 'warn' }); return; }
+  if (ps.programs.length <= 1) { toast(I18N.t('prgKeepOne'), { kind: 'warn' }); return; }
   const i = ps.programs.findIndex((x) => x.id === ps.active);
   if (i < 0) return;
   // Native confirm yerine stillenmiş onay (Critique P2 — tema dışı diyalog yok).
   confirmDialog({
-    title: 'Programı sil',
-    message: `"${ps.programs[i].name}" silinsin mi?`,
-    okLabel: 'Sil',
+    title: I18N.t('prgDelTitle'),
+    message: I18N.t('prgDelMsg', { name: ps.programs[i].name }),
+    okLabel: I18N.t('prgDelOk'),
     danger: true,
   }).then((yes) => {
     if (!yes) return;
@@ -168,7 +169,7 @@ function progDel() {
     ps.active = ps.programs[0].id;
     savePrograms(ps);
     renderProgSelector();
-    toast('Program silindi');
+    toast(I18N.t('prgDeleted'));
   });
 }
 function progRename() {
@@ -176,8 +177,8 @@ function progRename() {
   const p = ps.programs.find((x) => x.id === ps.active);
   if (!p) return;
   promptDialog({
-    title: 'Programı yeniden adlandır',
-    message: 'Yeni program adı:',
+    title: I18N.t('prgRenameTitle'),
+    message: I18N.t('prgRenameMsg'),
     value: p.name,
     validate: (v) => v.trim().length > 0,
   }).then((name) => {
@@ -185,7 +186,7 @@ function progRename() {
     p.name = name.trim();
     savePrograms(ps);
     renderProgSelector();
-    toast('Program yeniden adlandırıldı');
+    toast(I18N.t('prgRenamed'));
   });
 }
 
@@ -199,14 +200,14 @@ function addRowEntry() {
   div.className = 'p-row';
   div.dataset.id = id;
   div.innerHTML = `
-    <select class="p-row-branch" data-id="${id}"><option value="">Bölüm seç</option></select>
-    <select class="p-row-course" data-id="${id}" disabled><option value="">Ders seç</option></select>
-    <select class="p-row-crn" data-id="${id}" disabled><option value="">Şube (CRN) seç</option></select>
-    <button type="button" class="p-row-del p-danger" data-id="${id}">Dersi Sil</button>`;
+    <select class="p-row-branch" data-id="${id}"><option value="">${esc(I18N.t('prgPickBranch'))}</option></select>
+    <select class="p-row-course" data-id="${id}" disabled><option value="">${esc(I18N.t('prgPickCourse'))}</option></select>
+    <select class="p-row-crn" data-id="${id}" disabled><option value="">${esc(I18N.t('prgPickCRN'))}</option></select>
+    <button type="button" class="p-row-del p-danger" data-id="${id}">${esc(I18N.t('prgDelCourse'))}</button>`;
   wrap.appendChild(div);
   const branchSel = div.querySelector('.p-row-branch');
   const branches = [...new Set(rows.map((r) => r[3]))].sort();
-  branchSel.innerHTML = '<option value="">Bölüm seç</option>' +
+  branchSel.innerHTML = `<option value="">${esc(I18N.t('prgPickBranch'))}</option>` +
     branches.map((b) => `<option value="${esc(b)}">${esc(b)}</option>`).join('');
   branchSel.addEventListener('change', () => fillCourseSelect(id, branchSel.value));
   div.querySelector('.p-row-del').addEventListener('click', () => div.remove());
@@ -218,13 +219,13 @@ function fillCourseSelect(id, branch) {
   if (!div) return;
   const courseSel = div.querySelector('.p-row-course');
   const crnSel = div.querySelector('.p-row-crn');
-  courseSel.innerHTML = '<option value="">Ders seç</option>';
-  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>';
+  courseSel.innerHTML = `<option value="">${esc(I18N.t('prgPickCourse'))}</option>`;
+  crnSel.innerHTML = `<option value="">${esc(I18N.t('prgPickCRN'))}</option>`;
   courseSel.disabled = !branch;
   crnSel.disabled = true;
   if (!branch) return;
   const codes = [...new Set(rows.filter((r) => r[3] === branch).map((r) => r[1]))].sort();
-  courseSel.innerHTML = '<option value="">Ders seç</option>' +
+  courseSel.innerHTML = `<option value="">${esc(I18N.t('prgPickCourse'))}</option>` +
     codes.map((c) => {
       const name = rows.find((r) => r[1] === c)?.[2] || '';
       return `<option value="${esc(c)}">${esc(c)} - ${esc(name)}</option>`;
@@ -236,11 +237,11 @@ function fillCRNSelect(id, branch, code) {
   const div = document.querySelector(`.p-row[data-id="${id}"]`);
   if (!div) return;
   const crnSel = div.querySelector('.p-row-crn');
-  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>';
+  crnSel.innerHTML = `<option value="">${esc(I18N.t('prgPickCRN'))}</option>`;
   crnSel.disabled = !code;
   if (!code) return;
   const secs = rows.filter((r) => r[3] === branch && r[1] === code);
-  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>' +
+  crnSel.innerHTML = `<option value="">${esc(I18N.t('prgPickCRN'))}</option>` +
     secs.map((r) => `<option value="${esc(r[0])}">${esc(r[0])}: ${esc(r[5] || '·')} · ${esc(r[4] || '·')} · ${r[6] ? `${r[7]}/${r[6]}` : '·'}</option>`).join('');
   // CRN seçilince ekle ve satırı kaldır.
   crnSel.addEventListener('change', () => {
@@ -260,7 +261,7 @@ export async function onShow() {
   initProgram();
   if (!state.index) await indexReady;
   if (!state.index) {
-    toast('Veriler yüklenemedi, sayfayı yenile.', { kind: 'err' });
+    toast(I18N.t('toastVeriYok'), { kind: 'err' });
     return;
   }
   const params = new URLSearchParams(location.search);
@@ -268,7 +269,7 @@ export async function onShow() {
     const sel = $('#p-term');
     sel.innerHTML = state.index.terms
       .filter((t) => !t.missing)
-      .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ' · canlı' : ''}</option>`).join('');
+      .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ` · ${I18N.t('termLive')}` : ''}</option>`).join('');
     sel.value = state.index.currentSlug;
     if (params.has('term')) {
       const want = params.get('term');
@@ -285,7 +286,7 @@ export async function onShow() {
       const r = rows.find((x) => x[0] === crn);
       if (r && addToActive(r[3], crn)) added++;
     }
-    if (added) toast(`${added} şube paylaşılan programdan yüklendi`);
+    if (added) toast(`${added} ${I18N.t('prgLoaded')}`);
   }
   renderProgSelector();
   render();
@@ -297,7 +298,7 @@ async function loadTerm(slug) {
     rows = await getJSON(`data/terms/${slug}/search.json`);
   } catch (e) {
     rows = [];
-    toast(`Dönem verisi yüklenemedi (${e.message})`, { kind: 'err' });
+    toast(`${I18N.t('toastTermFail')} (${e.message})`, { kind: 'err' });
   }
   render();
 }
@@ -316,7 +317,7 @@ function search() {
     <button type="button" class="p-result" data-i="${idx}">
       <b>${esc(r[1])}</b><span>${esc(r[2])}</span>
       <em>${esc(r[5] || '·')}</em><em>${r[6] ? `${r[7]}/${r[6]}` : '·'}</em>
-    </button>`).join('') || '<p class="empty">eşleşme yok</p>';
+    </button>`).join('') || `<p class="empty">${esc(I18N.t('emptyRow'))}</p>`;
 }
 
 function hideResults() {
@@ -400,14 +401,14 @@ function renderList(items) {
     const speed = fillSpeedNote(crn);
     return `<div class="p-item${markFull && full ? ' p-full' : ''}" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
-      <span class="p-crn">${esc(crn)}${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
+      <span class="p-crn">${esc(crn)}${rec.backup ? `<small class="p-backup">${esc(I18N.t('prgBackupLbl'))}: ${esc(rec.backup)}</small>` : ''}</span>
       <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
       <span class="p-when">${esc(when || '·')}</span>
       <span class="p-fill">${cap ? fillBar(cap, enr) : '·'}</span>
-      <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için eylemler" aria-haspopup="menu">⋮</button>
+      <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(I18N.t('prgActionsFor', { code }))}" aria-haspopup="menu">⋮</button>
       <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
     </div>`;
-  }).join('') || '<p class="empty">Henüz ders eklenmedi. "Ders Ekle" ile bölüm → ders → CRN seç ya da DERSLER\'de seçip "programa gönder".</p>';
+  }).join('') || `<p class="empty">${esc(I18N.t('prgEmptyLong'))}</p>`;
 
   box.querySelectorAll('.p-item').forEach((item) => {
     const idx = Number(item.dataset.idx);
@@ -444,13 +445,13 @@ function renderList(items) {
       pop.hidden = false;
       const rec = items.find((it) => fav.favKeyOf(it.rec.branch, it.rec.crn) === key);
       pop.innerHTML = `
-        <button type="button" data-act="detail" data-key="${key}">detay</button>
-        <button type="button" data-act="copy" data-key="${key}">CRN kopyala</button>
-        <button type="button" data-act="obs" data-key="${key}">OBS'de ara</button>
+        <button type="button" data-act="detail" data-key="${key}">${esc(I18N.t('prgMenuDetail'))}</button>
+        <button type="button" data-act="copy" data-key="${key}">${esc(I18N.t('prgMenuCopy'))}</button>
+        <button type="button" data-act="obs" data-key="${key}">${esc(I18N.t('prgMenuObs'))}</button>
         ${rec && rec.rec.backup
-          ? `<button type="button" data-act="rmbackup" data-key="${key}">yedek CRN kaldır</button>`
-          : `<button type="button" data-act="backup" data-key="${key}">yedek CRN belirle</button>`}
-        <button type="button" data-act="remove" data-key="${key}">çıkar</button>`;
+          ? `<button type="button" data-act="rmbackup" data-key="${key}">${esc(I18N.t('prgBackupRemove'))}</button>`
+          : `<button type="button" data-act="backup" data-key="${key}">${esc(I18N.t('prgBackupSet'))}</button>`}
+        <button type="button" data-act="remove" data-key="${key}">${esc(I18N.t('prgMenuRemove'))}</button>`;
     });
   });
   box.querySelectorAll('[data-act]').forEach((b) => {
@@ -463,11 +464,11 @@ function renderList(items) {
         const before = progItems();
         setProgItems(currentItems().filter((i) => fav.favKeyOf(i.rec.branch, i.rec.crn) !== key).map((i) => i.rec));
         render(); renderProgSelector();
-        toast(`${cr} çıkarıldı`, {
-          action: { label: 'geri al', fn: () => { setProgItems(before); render(); renderProgSelector(); } },
+        toast(`${cr} ${I18N.t('prgRemoved')}`, {
+          action: { label: I18N.t('prgUndo'), fn: () => { setProgItems(before); render(); renderProgSelector(); } },
         });
       } else if (b.dataset.act === 'copy') {
-        copyText(cr); toast(`CRN ${cr} kopyalandı`);
+        copyText(cr); toast(`CRN ${cr} ${I18N.t('prgCopiedSuffix')}`);
       } else if (b.dataset.act === 'detail') {
         if (row) openDetail(row, term);
       } else if (b.dataset.act === 'obs') {
@@ -492,7 +493,7 @@ function reorderSchedule(from, to) {
   vis.splice(to, 0, moved);
   setProgItems(vis);
   render();
-  toast('Sıralama güncellendi');
+  toast(I18N.t('prgOrdered'));
 }
 
 // Renk atama: aynı ders kodu aynı rengi kullanır (sabit), çakışma kırmızı kenar.
@@ -541,10 +542,10 @@ function renderGrid(itemRows) {
   // Zaman bilgisi olmayan şubeyi sessizce yutma — ızgaranın altına not düş (G).
   const noTime = itemRows.filter((r) => !parseWhen(r[5]).length);
   const noTimeNote = noTime.length
-    ? `<p class="tt-no-time">⚠ ${noTime.length} şubenin zaman bilgisi yok: ${noTime.map((r) => `${esc(r[1])} (${esc(r[0])})`).join(', ')}</p>`
+    ? `<p class="tt-no-time">⚠ ${esc(I18N.t('prgNoTimeFor', { n: noTime.length }))}: ${noTime.map((r) => `${esc(r[1])} (${esc(r[0])})`).join(', ')}</p>`
     : '';
   if (!t || !t.all.length) {
-    wrap.innerHTML = '<p class="empty">Zaman bilgisi olan ders eklenmedi.</p>' + noTimeNote;
+    wrap.innerHTML = `<p class="empty">${esc(I18N.t('prgNoTime'))}</p>` + noTimeNote;
     return;
   }
   // Mobilde varsayılan GÜN LİSTESİ; "ızgara görünümü" ile yatay ızgaraya geçilir.
@@ -554,7 +555,7 @@ function renderGrid(itemRows) {
   }
   placedRefs = [];
   const FULL = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
-  const TTD = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+  const TTD = I18N.dayShortList();
   const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
   const ROW = 28;
 
@@ -600,7 +601,7 @@ function renderGrid(itemRows) {
   // Sade temada blok zeminini koyulaştırıp metin kontrastını ≥4.5:1'e garantile.
   const isSade = document.documentElement.dataset.theme === 'sade';
 
-  let html = `<p class="tt-note"><b>${t.all.length}</b> oturum · <b>${itemRows.length}</b> şube</p>`;
+  let html = `<p class="tt-note"><b>${t.all.length}</b> ${esc(I18N.t('prgSessions'))} · <b>${itemRows.length}</b> ${esc(I18N.t('prgSube'))}</p>`;
   html += `<div class="tt-scroll">`;
   // Başlık satırı scroll kapsayıcının doğrudan çocuğu — sticky-top bu sayede
   // çalışır (grid item'a hapsolmaz); corner yatay kaydırmada sticky-left (F).
@@ -642,7 +643,7 @@ function renderGrid(itemRows) {
         <span class="tt-time">${fmtMin(p.start)} - ${fmtMin(p.end)}</span>
         <span class="tt-code">${esc(p.row[1])}</span>
         <span class="tt-crn">CRN ${esc(p.row[0])}</span>
-        ${p.conflict ? '<span class="tt-conf-icon" title="Çakışma">⚠</span>' : ''}
+        ${p.conflict ? `<span class="tt-conf-icon" title="${esc(I18N.t('prgConflictWord'))}">⚠</span>` : ''}
       </button>`;
     }
     html += `</div>`;
@@ -700,7 +701,7 @@ function renderDayList(itemRows, t, noTime, noTimeNote) {
         row.append(' ');
         const tag = document.createElement('em');
         tag.className = 'dp-sess-conf-tag';
-        tag.textContent = 'çakışıyor';
+        tag.textContent = I18N.t('prgConflicts');
         row.appendChild(tag);
       }
       row.addEventListener('click', () => openDetail(s.row, term));
@@ -730,10 +731,10 @@ function renderSummary(items) {
       if (codes.length > 1) pairs.add(codes.join(' × '));
     }
   }
-  let html = `<p><b>${items.length}</b> şube · <b>${t ? t.all.length : 0}</b> oturum</p>`;
-  if (full) html += `<p class="p-warn">⚠ ${full} dolu şube</p>`;
+  let html = `<p><b>${items.length}</b> ${esc(I18N.t('prgSube'))} · <b>${t ? t.all.length : 0}</b> ${esc(I18N.t('prgSessions'))}</p>`;
+  if (full) html += `<p class="p-warn">⚠ ${full} ${esc(I18N.t('prgFullSections'))}</p>`;
   if (pairs.size) {
-    html += `<p class="p-conf">⚠ Çakışan dersler:</p><ul class="p-conf-list">${[...pairs].map((p) => `<li>${esc(p)}</li>`).join('')}</ul>`;
+    html += `<p class="p-conf">${esc(I18N.t('prgConflict'))}</p><ul class="p-conf-list">${[...pairs].map((p) => `<li>${esc(p)}</li>`).join('')}</ul>`;
   }
   // Faz 4.1: final çakışması — exams verisi yüklenmişse asenkron ekler.
   loadFinalsNote(items, box);
@@ -755,7 +756,7 @@ async function loadFinalsNote(items, box) {
     const pairs = conf.map(([a, b]) => `${esc(a.code)} × ${esc(b.code)} (${esc(a.date)} ${esc(a.time)})`);
     const wrap = document.createElement('div');
     wrap.className = 'p-conf';
-    wrap.innerHTML = `⚠ Final çakışması:<ul class="p-conf-list">${pairs.map((p) => `<li>${p}</li>`).join('')}</ul>`;
+    wrap.innerHTML = `⚠ ${esc(I18N.t('prgFinalConflict'))}:<ul class="p-conf-list">${pairs.map((p) => `<li>${p}</li>`).join('')}</ul>`;
     box.appendChild(wrap);
   } catch { /* finals verisi yoksa sessiz */ }
 }
@@ -795,7 +796,7 @@ async function loadMidtermNote(items, box) {
       .map(([k, n]) => `${k} (${n})`).join(' · ');
     const wrap = document.createElement('div');
     wrap.className = 'p-conf';
-    wrap.innerHTML = `📝 Vize yoğunluğu: ${esc(parts)}`;
+    wrap.innerHTML = `📝 ${esc(I18N.t('prgMidtermLoad'))}: ${esc(parts)}`;
     box.appendChild(wrap);
   } catch { /* katalog yoksa sessiz */ }
 }
@@ -812,13 +813,13 @@ function updateCredits(items) {
   creditTotals(items).then((r) => {
     if (!r.ectsKnown && !r.localKnown) return;
     const parts = [];
-    if (r.localKnown) parts.push(`Kredi ${trNum(r.local)}${r.localKnown < r.all ? '+' : ''}`);
-    if (r.ectsKnown) parts.push(`AKTS ${trNum(r.ects)}`);
+    if (r.localKnown) parts.push(`${I18N.t('prgCredit')} ${trNum(r.local)}${r.localKnown < r.all ? '+' : ''}`);
+    if (r.ectsKnown) parts.push(`${I18N.t('prgEcts')} ${trNum(r.ects)}`);
     let txt = parts.join(' · ');
     const unkLocal = r.all - r.localKnown;
-    if (unkLocal > 0) txt += ` (${unkLocal} dersin kredisi bilinmiyor)`;
+    if (unkLocal > 0) txt += ` (${I18N.t('prgCreditUnknown', { n: unkLocal })})`;
     if (r.ectsKnown && r.ects > 30) {
-      el.innerHTML = `${esc(txt)} <span class="ects-warn" title="Toplam AKTS 30'u aşıyor">AKTS 30+</span>`;
+      el.innerHTML = `${esc(txt)} <span class="ects-warn" title="${esc(I18N.t('prgEctsOver'))}">${esc(I18N.t('prgEcts'))} 30+</span>`;
     } else {
       el.textContent = txt;
     }
@@ -887,18 +888,18 @@ export function fillSpeedNote(crn) {
   const q = state.quota?.get(String(crn));
   if (!q || !q.filledAt) return '';
   const m = q.fillMinutes;
-  if (!m) return 'geçen sefer ilk ölçümde doluydu';
+  if (!m) return I18N.t('speedAlreadyFull');
   const h = Math.floor(m / 60);
   const rest = m % 60;
-  const span = h ? `${h} sa${rest ? ` ${rest} dk` : ''}` : `${rest} dk`;
-  return `geçen sefer ${span} sonra doldu`;
+  const span = h ? I18N.t(rest ? 'spanHourMin' : 'spanHour', { h, m: rest }) : I18N.t('spanMin', { m: rest });
+  return I18N.t('speedFilledAfter', { span });
 }
 
 function addFavorites() {
   const favs = fav.loadFavorites().filter((f) => f.term === term);
   let added = 0;
   for (const f of favs) if (addToActive(f.branch, f.crn)) added++;
-  toast(added ? `${added} favori programa eklendi` : 'Bu dönem için favori yok', { kind: added ? 'ok' : 'warn' });
+  toast(added ? `${added} ${I18N.t('prgFavAdded')}` : I18N.t('prgFavNone'), { kind: added ? 'ok' : 'warn' });
   render(); renderProgSelector();
 }
 
@@ -914,17 +915,17 @@ export function buildSnippet(crns) {
 function showOBS() {
   const items = currentItems();
   const crns = items.map((i) => i.row[0]);
-  if (!crns.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  if (!crns.length) { toast(I18N.t('prgNeedsTerm'), { kind: 'warn' }); return; }
   const code = buildSnippet(crns);
-  const backups = items.filter((i) => i.rec.backup).map((i) => `${i.row[0]} → yedek: ${i.rec.backup}`);
+  const backups = items.filter((i) => i.rec.backup).map((i) => `${i.row[0]} → ${I18N.t('prgBackupLbl')}: ${i.rec.backup}`);
   const box = $('#p-obs-code');
   box.hidden = false;
-  box.innerHTML = `<h2 class="eyebrow">OBS kayıt sayfası için CRN doldurma</h2>
-    <p>Bu kodu OBS'nin ders seçme sayfasında konsola yapıştırıp çalıştır, ya da tarayıcı yer imi olarak kaydet. ${crns.length} CRN doldurur.</p>
-    ${backups.length ? `<p class="p-backup-note">Yedek CRN'ler: ${esc(backups.join(' · '))}</p>` : ''}
+  box.innerHTML = `<h2 class="eyebrow">${esc(I18N.t('obsTitle'))}</h2>
+    <p>${esc(I18N.t('obsLongDesc', { n: crns.length }))}</p>
+    ${backups.length ? `<p class="p-backup-note">${esc(I18N.t('prgBackupsLbl'))}: ${esc(backups.join(' · '))}</p>` : ''}
     <pre class="p-code"><code>${esc(code)}</code></pre>
-    <button type="button" id="p-copy" class="btn-ghost">kopyala</button>`;
-  $('#p-copy').addEventListener('click', () => { copyText(code); toast('CRN kodu kopyalandı'); });
+    <button type="button" id="p-copy" class="btn-ghost">${esc(I18N.t('obsBtn'))}</button>`;
+  $('#p-copy').addEventListener('click', () => { copyText(code); toast(I18N.t('prgCRNCodeCopied')); });
 }
 
 // Bookmarklet href'ini seçili CRN'lerle tazele (her render'da çağrılır).
@@ -940,7 +941,7 @@ function updateBookmarklet(items) {
   a.classList.remove('is-disabled');
   // Bookmarklet: seçili CRN'ler gömülü. OBS kayıt sayfasında çalışır.
   a.setAttribute('href', 'javascript:' + buildSnippet(crns));
-  a.title = 'Sürükleyip OBS kayıt ekranında tıklamanız yeterli';
+  a.title = I18N.t('prgBookmarkletTip');
 }
 
 // --- tooltip ---
@@ -975,11 +976,11 @@ function maybeOnboard() {
 
 function exportCSV() {
   const items = currentItems();
-  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  if (!items.length) { toast(I18N.t('prgNeedsTerm'), { kind: 'warn' }); return; }
   downloadCSV(`program-${term}.csv`,
-    ['CRN', 'Ders Kodu', 'Bölüm', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan'],
+    [I18N.t('thCrn'), I18N.t('csvCode'), I18N.t('filterBranch'), I18N.t('csvName'), I18N.t('thInstr'), I18N.t('thWhen'), I18N.t('detailCap'), I18N.t('thEnr')],
     items.map(({ row: r }) => [r[0], r[1], r[3], r[2], r[4], r[5], r[6], r[7]]));
-  toast('CSV indirildi');
+  toast(I18N.t('prgCSVDone'));
 }
 
 const P_DAYS = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
@@ -1027,10 +1028,10 @@ function exportScheduleICS() {
 // Takvimi PNG olarak indirir (canvas çizimi).
 function downloadPNG() {
   const items = currentItems();
-  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  if (!items.length) { toast(I18N.t('prgNeedsTerm'), { kind: 'warn' }); return; }
   const wrap = $('#p-grid');
   const rect = wrap.getBoundingClientRect();
-  if (rect.width < 100 || rect.height < 100) { toast('Takvim hazır değil', { kind: 'warn' }); return; }
+  if (rect.width < 100 || rect.height < 100) { toast(I18N.t('prgGridNotReady'), { kind: 'warn' }); return; }
   const scale = 2;
   const canvas = document.createElement('canvas');
   canvas.width = rect.width * scale;
@@ -1051,7 +1052,7 @@ function downloadPNG() {
 
   const t = buildTimetable(items.map((i) => i.row));
   const days = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
-  const TTD = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+  const TTD = I18N.dayShortList();
   const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
   const W = rect.width, H = rect.height;
   const timeW = 46, headH = 22, dayW = (W - timeW) / 7;
@@ -1136,12 +1137,12 @@ function downloadPNG() {
 
 function share() {
   const items = currentItems();
-  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  if (!items.length) { toast(I18N.t('prgNeedsTerm'), { kind: 'warn' }); return; }
   const p = new URLSearchParams();
   if (term !== state.index?.currentSlug) p.set('term', term); // aktif dönemi yazma
   p.set('crns', items.map((i) => i.row[0]).join(','));
   copyText(`${location.origin}${location.pathname}?${p.toString()}#program`);
-  toast('Paylaşım bağlantısı kopyalandı');
+  toast(I18N.t('prgCopied'));
 }
 
 function copyText(txt) {
@@ -1154,8 +1155,8 @@ function copyText(txt) {
 
 function setBackup(branch, crn) {
   promptDialog({
-    title: 'Yedek CRN',
-    message: 'Yedek CRN girin (aynı ders koduna ait olmalı):',
+    title: I18N.t('prgBackupTitle'),
+    message: I18N.t('prgBackupMsg'),
     validate: (v) => v.trim().length > 0,
   }).then((input) => {
     if (!input) return;
@@ -1167,12 +1168,12 @@ function setBackup(branch, crn) {
   if (idx < 0) return;
   const key = fav.favKeyOf(branch, backup);
   if (p.items.some((f) => f.term === term && fav.favKeyOf(f.branch, f.crn) === key)) {
-    toast('Bu CRN zaten listede', { kind: 'warn' });
+    toast(I18N.t('prgCRNDup'), { kind: 'warn' });
     return;
   }
   p.items[idx].backup = backup;
   savePrograms(all);
-  toast(`Yedek CRN ${backup} eklendi`);
+  toast(I18N.t('prgBackupAdded', { crn: backup }));
   loadTerm(term);
   });
 }
@@ -1186,7 +1187,7 @@ function removeBackup(branch, crn) {
   const old = p.items[idx].backup;
   delete p.items[idx].backup;
   savePrograms(all);
-  toast(`Yedek CRN ${old} kaldırıldı`);
+  toast(I18N.t('prgBackupRemoved', { crn: old }));
   loadTerm(term);
 }
 

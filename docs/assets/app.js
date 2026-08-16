@@ -42,7 +42,7 @@ async function boot() {
   } catch (e) {
     markIndexReady(); // yükleme başarısız olsa da bekleyenleri serbest bırak
     setStatus($('#stat-status'), I18N.t('statVeriYok'), { error: true });
-    $('#rows').innerHTML = `<tr><td colspan="9" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
+    $('#rows').innerHTML = `<tr><td colspan="9" class="empty">${esc(I18N.t('bootDataFail', { msg: e.message }))}</td></tr>`;
     return;
   }
 
@@ -51,7 +51,10 @@ async function boot() {
   $('#stat-status').className = 'ok';
   $('#stat-term').textContent = ix.currentTerm || '—';
   $('#stat-scraped').textContent = fmtDate(ix.scrapedAt);
-  $('#stat-terms').textContent = `${ix.terms.filter((t) => !t.missing).length} dönem · ${ix.calendars.length} takvim yılı`;
+  $('#stat-terms').textContent = I18N.t('statTermsValue', {
+    terms: ix.terms.filter((t) => !t.missing).length,
+    years: ix.calendars.length,
+  });
   // Geçmiş sekmesi notundaki dönem sayısı (statik kopya bayatlamasın).
   const histCount = $('#hist-note-count');
   if (histCount) histCount.textContent = ix.terms.length;
@@ -68,7 +71,7 @@ async function boot() {
     if ((Date.now() - last.getTime()) / 36e5 > 48) {
       const stEl = $('#stat-status');
       if (stEl) {
-        stEl.textContent = 'veri bayat: son başarılı tarama 2 günden eski';
+        stEl.textContent = I18N.t('statStale');
         stEl.className = 'warn';
       }
     }
@@ -79,7 +82,7 @@ async function boot() {
   const termSel = $('#f-term');
   termSel.innerHTML = ix.terms
     .filter((t) => !t.missing)
-    .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ' · canlı' : ''}</option>`)
+    .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ` · ${I18N.t('termLive')}` : ''}</option>`)
     .join('');
   const params = new URLSearchParams(location.search);
   let initialSlug = ix.currentSlug;
@@ -385,7 +388,7 @@ function enhanceSearchInputs() {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'search-clear';
-    btn.setAttribute('aria-label', 'Aramayı temizle');
+    btn.setAttribute('aria-label', I18N.t('searchClear'));
     btn.textContent = '×';
     wrap.appendChild(btn);
     const sync = () => { btn.hidden = input.value.length === 0; };

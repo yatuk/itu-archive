@@ -4,19 +4,21 @@
 import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, hashShort } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { initReveal } from '../core/reveal.js';
+import { I18N } from '../i18n.js';
 
 let inited = false;
 
 // Tür slug → görünür etiket. Liste kodda sabit değil — hangi türlerin
 // seçileceğini index.json (seçili yılın types'ı) belirler (P0-4).
-const CAL_TYPE_LABELS = {
-  lisans: 'Lisans',
-  'yatay-cap-yandal': 'Yatay Geçiş / ÇAP / Yandal',
-  onkayit: 'Önkayıt',
-  hazirlik: 'İngilizce Hazırlık',
-  lisansustu: 'Lisansüstü',
-  'ikinci-ogretim-lisansustu': 'II. Öğretim Lisansüstü',
+const CAL_TYPE_KEYS = {
+  lisans: 'calTypeLisans',
+  'yatay-cap-yandal': 'calTypeYatay',
+  onkayit: 'calTypeOnkayit',
+  hazirlik: 'calTypeHazirlik',
+  lisansustu: 'calTypeLisansustu',
+  'ikinci-ogretim-lisansustu': 'calTypeIkinciOgretim',
 };
+const calTypeLabel = (slug) => (CAL_TYPE_KEYS[slug] ? I18N.t(CAL_TYPE_KEYS[slug]) : slug);
 
 // Tür seçicisini seçili yılın index.json'da ilan edilen türlerinden doldurur:
 // tür dosyası olmayan seçenek "takvim yüklenemedi" hatası üretmesin.
@@ -24,8 +26,8 @@ function populateTypes(yearId) {
   const sel = $('#f-caltype');
   const cal = (state.index?.calendars || []).find((c) => c.yearId === yearId);
   const types = cal?.types || [];
-  sel.innerHTML = '<option value="">tümü</option>' +
-    types.map((slug) => `<option value="${esc(slug)}">${esc(CAL_TYPE_LABELS[slug] || slug)}</option>`).join('');
+  sel.innerHTML = `<option value="">${esc(I18N.t('filterAll'))}</option>` +
+    types.map((slug) => `<option value="${esc(slug)}">${esc(calTypeLabel(slug))}</option>`).join('');
   if (!types.includes(sel.value)) sel.value = '';
 }
 
@@ -49,7 +51,7 @@ export function onShow() {
 }
 
 export async function loadCalendar(yearId, type) {
-  $('#calendar').innerHTML = '<p class="empty">yükleniyor…</p>';
+  $('#calendar').innerHTML = `<p class="empty">${esc(I18N.t('calLoading'))}</p>`;
   try {
     // Tür seçildiyse türe özgü dosya (slug yol-güvenli); yoksa birleşik (geriye uyumlu).
     const path = type
@@ -57,7 +59,7 @@ export async function loadCalendar(yearId, type) {
       : `data/calendar/${yearId}.json`;
     state.calendar = await getJSON(path);
   } catch (e) {
-    $('#calendar').innerHTML = `<p class="empty error">takvim yüklenemedi (${esc(e.message)})</p>`;
+    $('#calendar').innerHTML = `<p class="empty error">${esc(I18N.t('calLoadFail', { msg: e.message }))}</p>`;
     return;
   }
   renderCalendar();
@@ -80,8 +82,8 @@ function renderCalendar() {
   }
 
   if (!groups.size) {
-    $('#calendar').innerHTML = '<p class="empty">bu akademik yıl için gelecek etkinlik yok' +
-      (cal.scrapedAt ? ` · son tarama ${fmtDate(cal.scrapedAt)}` : '') + '</p>';
+    $('#calendar').innerHTML = `<p class="empty">${esc(I18N.t('calNoUpcoming'))}` +
+      (cal.scrapedAt ? ` · ${esc(I18N.t('statScraped'))} ${fmtDate(cal.scrapedAt)}` : '') + '</p>';
     return;
   }
 

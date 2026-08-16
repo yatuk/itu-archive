@@ -2,6 +2,7 @@
 // yerine. Tema token'larından beslenir; koyu ve açık temada tutarlı görünür
 // (native diyalog tema dışıydı). confirmDialog → true|null, promptDialog → metin|null.
 import { $, esc } from './utils.js';
+import { I18N } from '../i18n.js';
 
 let host = null;
 function ensureHost() {
@@ -10,7 +11,7 @@ function ensureHost() {
   host.className = 'dlg';
   host.hidden = true;
   host.innerHTML = `<div class="dlg-box" role="dialog" aria-modal="true" aria-labelledby="dlg-title">
-    <button type="button" class="dlg-close" aria-label="Kapat">✕</button>
+    <button type="button" class="dlg-close" aria-label="${I18N.t('detailClose')}">✕</button>
     <h3 class="dlg-title" id="dlg-title"></h3>
     <p class="dlg-msg"></p>
     <div class="dlg-body" hidden></div>
@@ -27,7 +28,7 @@ const STAY = Symbol('stay');
 
 // openDialog: diyaloğu açar. onOk(dialog) OK'te çağrılır; STAY dönerse açık
 // kalır (doğrulama veto), aksi halde dönüş değeriyle çözülür. Vazgeç/Esc → null.
-function openDialog({ title, message = '', body = null, okLabel = 'Tamam', cancelLabel = 'Vazgeç', danger = false, onOk }) {
+function openDialog({ title, message = '', body = null, okLabel = I18N.t('dlgOk'), cancelLabel = I18N.t('dlgCancel'), danger = false, onOk }) {
   return new Promise((resolve) => {
     const h = ensureHost();
     const ok = h.querySelector('.dlg-ok');

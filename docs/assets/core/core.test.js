@@ -4,6 +4,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 
 import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, trendChart } from './chart.js';
@@ -1106,4 +1107,85 @@ test('examToIcs Türkçe tarih + saat aralığını ISO zamanlı etkinliğe çev
   assert.ok(ev.title.includes('SSI 518'));
   assert.equal(examToIcs({ date: 'çözülemez', time: '09:00-11:00' }), null);
   assert.equal(examToIcs({ date: '13 Ağustos 2026', time: 'bozuk' }), null);
+});
+
+/* ---------- i18n bütünlüğü ----------
+   Bu testler bir kez gerçekten kaçmış bir hatayı kalıcı olarak kapatır:
+   index.html `data-i18n="filterClear"` diyordu ama anahtar sözlükte yoktu, ve
+   translateDOM eksik anahtarda anahtarın KENDİSİNİ yazdığı için düğmede
+   "filterClear" görünüyordu — iki dilde birden. Sessiz bozulma; ancak gözle
+   fark edilir. Aşağıdaki dört denetim onu derleme zamanına taşır. */
+
+const I18N_SRC = readFileSync(new URL('../i18n.js', import.meta.url), 'utf8');
+
+function i18nBlocks() {
+  const iTr = I18N_SRC.indexOf('    tr: {');
+  const iEn = I18N_SRC.indexOf('    en: {');
+  const iEnd = I18N_SRC.indexOf('  };');
+  assert.ok(iTr >= 0 && iEn > iTr && iEnd > iEn, 'i18n.js sözlük blokları bulunamadı');
+  return { tr: I18N_SRC.slice(iTr, iEn), en: I18N_SRC.slice(iEn, iEnd) };
+}
+
+// Anahtar adları: sözlük girdileri tam 6 boşlukla girintili.
+const keysOf = (block) => (block.match(/^ {6}[A-Za-z0-9_]+:\s/gm) || [])
+  .map((s) => s.trim().slice(0, -1));
+
+test('i18n: tr ve en aynı anahtar kümesine sahip', () => {
+  const { tr, en } = i18nBlocks();
+  const kt = new Set(keysOf(tr));
+  const ke = new Set(keysOf(en));
+  const missingEn = [...kt].filter((k) => !ke.has(k));
+  const missingTr = [...ke].filter((k) => !kt.has(k));
+  assert.deepEqual(missingEn, [], `EN'de eksik anahtar: ${missingEn.join(', ')}`);
+  assert.deepEqual(missingTr, [], `TR'de eksik anahtar: ${missingTr.join(', ')}`);
+});
+
+test('i18n: aynı anahtar iki kez tanımlanmaz', () => {
+  const { tr, en } = i18nBlocks();
+  for (const [lang, block] of [['tr', tr], ['en', en]]) {
+    const list = keysOf(block);
+    const dups = list.filter((k, i) => list.indexOf(k) !== i);
+    assert.deepEqual(dups, [], `${lang} yinelenen anahtar: ${dups.join(', ')}`);
+  }
+});
+
+test('i18n: kullanılan her anahtar tanımlı (eksikte anahtar adı ekrana basılır)', () => {
+  const defined = new Set(keysOf(i18nBlocks().tr));
+  const files = [
+    'app.js', 'prereq.js',
+    'core/chart.js', 'core/course-detail.js', 'core/dialog.js', 'core/planstore.js',
+    'core/table.js', 'core/taken-ui.js', 'core/utils.js',
+    'views/calendar.js', 'views/courses.js', 'views/dersplanim.js', 'views/exams.js',
+    'views/history.js', 'views/program.js', 'views/terms.js',
+  ].map((p) => new URL(`../${p}`, import.meta.url));
+  files.push(new URL('../../index.html', import.meta.url));
+
+  const used = new Set();
+  for (const url of files) {
+    const src = readFileSync(url, 'utf8');
+    for (const m of src.matchAll(/I18N\.t\(\s*'([A-Za-z0-9_]+)'/g)) used.add(m[1]);
+    for (const m of src.matchAll(/data-i18n(?:-html|-placeholder|-title|-aria)?="([A-Za-z0-9_]+)"/g)) used.add(m[1]);
+  }
+  const missing = [...used].filter((k) => !defined.has(k)).sort();
+  assert.deepEqual(missing, [], `tanımsız i18n anahtarı: ${missing.join(', ')}`);
+});
+
+test('i18n: {yer tutucu} adları iki dilde aynı', () => {
+  const { tr, en } = i18nBlocks();
+  const parse = (block) => {
+    const out = new Map();
+    for (const m of block.matchAll(/^ {6}([A-Za-z0-9_]+):\s*(['"])(.*?)\2,?\s*$/gm)) {
+      out.set(m[1], new Set([...m[3].matchAll(/\{(\w+)\}/g)].map((x) => x[1])));
+    }
+    return out;
+  };
+  const pt = parse(tr); const pe = parse(en);
+  const bad = [];
+  for (const [k, vars] of pt) {
+    const other = pe.get(k);
+    if (!other) continue;
+    const same = vars.size === other.size && [...vars].every((v) => other.has(v));
+    if (!same) bad.push(k);
+  }
+  assert.deepEqual(bad, [], `yer tutucu uyuşmazlığı: ${bad.join(', ')}`);
 });

@@ -626,7 +626,7 @@
   ],
   "capacity": 80,
   "enrolled": 0,
-  "reserved": "ECNE_LS/5/0 | MMD_LS/8/0 | Diğer/67/0",
+  "reserved": "ECNE_LS/5/0 | MMD_LS/12/0 | Diğer/63/0",
   "programs": [
    "ECNE_LS",
    "ENTE_LS",
@@ -660,7 +660,7 @@
   ],
   "capacity": 80,
   "enrolled": 0,
-  "reserved": "ECNE_LS/5/0 | MMD_LS/8/0 | Diğer/67/0",
+  "reserved": "ECNE_LS/5/0 | MMD_LS/12/0 | Diğer/63/0",
   "programs": [
    "ECNE_LS",
    "ENTE_LS",
@@ -694,7 +694,7 @@
   ],
   "capacity": 60,
   "enrolled": 0,
-  "reserved": "END_LS/3/0 | ENDE_LS/5/0 | IND_LS/5/0 | Diğer/47/0",
+  "reserved": "END_LS/3/0 | ENDE_LS/5/0 | IND_LS/10/0 | Diğer/42/0",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -969,7 +969,7 @@
   ],
   "capacity": 80,
   "enrolled": 0,
-  "reserved": "MMD_LS/5/0 | Diğer/75/0",
+  "reserved": "MMD_LS/10/0 | Diğer/70/0",
   "programs": [
    "ISL_LS",
    "ISLE_LS",
@@ -1000,7 +1000,7 @@
   ],
   "capacity": 80,
   "enrolled": 0,
-  "reserved": "MMD_LS/5/0 | Diğer/75/0",
+  "reserved": "MMD_LS/10/0 | Diğer/70/0",
   "programs": [
    "ISL_LS",
    "ISLE_LS",
@@ -1092,7 +1092,7 @@
   ],
   "capacity": 40,
   "enrolled": 0,
-  "reserved": "ECNE_LS/5/0 | EFN_LS/5/0 | END_LS/3/0 | ENDE_LS/3/0 | Diğer/24/0",
+  "reserved": "ECNE_LS/5/0 | EFN_LS/10/0 | END_LS/3/0 | ENDE_LS/3/0 | Diğer/19/0",
   "programs": [
    "ECNE_LS",
    "EFN_LS",
@@ -1562,10 +1562,10 @@
  },
  {
   "crn": "14803",
-  "code": "ISL 533E",
+  "code": "ISL 533",
   "branch": "ISL",
   "level": "LU",
-  "name": "Data Mining",
+  "name": "Veri Madenciliği",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Tuncay Özcan",
   "buildings": [

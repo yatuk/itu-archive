@@ -564,7 +564,7 @@
   "code": "ICM 4026",
   "branch": "ICM",
   "level": "LS",
-  "name": "Sanat ve Ku?ltu?r Tarihi",
+  "name": "Sanat ve Kültür Tarihi",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Deniz Çalışır Pençe",
   "buildings": [
@@ -1020,7 +1020,7 @@
    "--",
    "--"
   ],
-  "capacity": 1,
+  "capacity": 15,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -1191,39 +1191,6 @@
   ],
   "prereq": "Detay",
   "classReq": "Detay"
- },
- {
-  "crn": "13996",
-  "code": "ICM 312",
-  "branch": "ICM",
-  "level": "LS",
-  "name": "İç Mimarlık Projesi III",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Suat Apak",
-  "buildings": [
-   "undeclared",
-   "undeclared"
-  ],
-  "days": [
-   "Pazartesi",
-   "Perşembe"
-  ],
-  "times": [
-   "13:30/17:29",
-   "13:30/17:29"
-  ],
-  "rooms": [
-   "--",
-   "--"
-  ],
-  "capacity": 3,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MIM_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
  },
  {
   "crn": "14714",

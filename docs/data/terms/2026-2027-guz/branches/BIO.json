@@ -213,7 +213,10 @@
   "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIOE_LS"
+  ],
   "prereq": "-",
   "classReq": "-"
  },
@@ -240,7 +243,11 @@
   "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIO_YD",
+   "BIOE_LS"
+  ],
   "prereq": "-",
   "classReq": "-"
  },
@@ -267,7 +274,10 @@
   "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -294,7 +304,11 @@
   "capacity": 80,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIO_YD",
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -321,7 +335,9 @@
   "capacity": 80,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -348,7 +364,40 @@
   "capacity": 90,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "CEV_LS",
+   "CEVE_LS",
+   "CHZ_LS",
+   "CHZE_LS",
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "EHS_LS",
+   "ELE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "FIZ_LS",
+   "FIZE_LS",
+   "GID_LS",
+   "INS_LS",
+   "INSE_LS",
+   "ISL_LS",
+   "ISLE_LS",
+   "JEO_LS",
+   "JEOE_LS",
+   "KIM_LS",
+   "KIME_LS",
+   "KMM_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "MAD_LS",
+   "MADE_LS",
+   "MET_LS",
+   "METE_LS",
+   "PET_LS",
+   "PETE_LS",
+   "TEL_LS"
+  ],
   "prereq": "-",
   "classReq": "-"
  },
@@ -375,7 +424,10 @@
   "capacity": 80,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -402,7 +454,10 @@
   "capacity": 80,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -429,7 +484,11 @@
   "capacity": 80,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIO_YD",
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -456,7 +515,10 @@
   "capacity": 80,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -513,7 +575,10 @@
   "capacity": 80,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -601,7 +666,9 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
+   "BIO_LS",
    "BIOE_LS",
+   "FIZ_LS",
    "FIZE_LS"
   ],
   "prereq": "Detay",
@@ -632,6 +699,7 @@
   "reserved": "-",
   "programs": [
    "BIO_LS",
+   "BIO_YD",
    "BIOE_LS"
   ],
   "prereq": "Detay",
@@ -662,7 +730,7 @@
   "reserved": "-",
   "programs": [
    "BIO_LS",
-   "BIO_LS",
+   "BIO_YD",
    "BIOE_LS"
   ],
   "prereq": "Detay",
@@ -693,6 +761,7 @@
   "reserved": "-",
   "programs": [
    "BIO_LS",
+   "BIO_YD",
    "BIOE_LS"
   ],
   "prereq": "Detay",
@@ -721,7 +790,11 @@
   "capacity": 45,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "BIO_LS",
+   "BIO_YD",
+   "BIOE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  },
@@ -749,7 +822,9 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "BIO_LS"
+   "BIO_LS",
+   "BIO_YD",
+   "BIOE_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -778,7 +853,8 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "BIO_LS"
+   "BIO_LS",
+   "BIOE_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -838,6 +914,7 @@
   "reserved": "-",
   "programs": [
    "BIO_LS",
+   "BIO_YD",
    "BIOE_LS"
   ],
   "prereq": "Detay",
@@ -861,6 +938,7 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
+   "BIO_LS",
    "BIOE_LS"
   ],
   "prereq": "Detay",
@@ -884,6 +962,7 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
+   "BIO_LS",
    "BIOE_LS"
   ],
   "prereq": "Detay",

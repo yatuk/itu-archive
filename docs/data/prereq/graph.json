@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-13T04:49:39Z",
+ "generatedAt": "2026-08-16T19:02:38Z",
  "nodes": [
   {
    "code": "AKM 202",
@@ -1421,7 +1421,7 @@
   },
   {
    "code": "BLG 353E",
-   "name": "Kuantum Programlama",
+   "name": "Quantum Programming",
    "branch": "BLG",
    "requirement": "( BLG 102 MIN. DD Veya BLG 102E MIN. DD ) Veya ( BIL 105 MIN. DD Veya BIL 105E MIN. DD )"
   },
@@ -1439,7 +1439,7 @@
   },
   {
    "code": "BLG 355E",
-   "name": "Kuantum Hesaplamaya Giriş",
+   "name": "Introduction to Quantum Computing",
    "branch": "BLG",
    "requirement": "( FIZ 102 MIN. DD Veya FIZ 102E MIN. DD )"
   },
@@ -13599,7 +13599,7 @@
   },
   {
    "code": "GMI 341",
-   "name": "Automatic Control Systems",
+   "name": "Otomatik Kontrol Sistemleri",
    "branch": "GMI",
    "requirement": "( FIZ 102 MIN. DD Veya FIZ 102E MIN. DD )"
   },
@@ -17019,6 +17019,12 @@
    "classReq": "95,00"
   },
   {
+   "code": "ISL 451E",
+   "name": "Teknoloji ve Küreselleşme",
+   "branch": "ISL",
+   "requirement": "( ISL 244 MIN. DD Veya ISL 244E MIN. DD )"
+  },
+  {
    "code": "ISL 452",
    "name": "Menkul Kıym.ve Portf. Yönetimi",
    "branch": "ISL",
@@ -17091,6 +17097,13 @@
    "name": "Turkish Economy",
    "branch": "ISL",
    "requirement": "( ISL 244 MIN. DD Veya ISL 244E MIN. DD )"
+  },
+  {
+   "code": "ISL 464E",
+   "name": "İşletme Uygulamaları ile Derin Öğrenme",
+   "branch": "ISL",
+   "requirement": "( ( MAT 210 MIN. DD Veya MAT 210E MIN. DD ) Ve ( ISL 214 MIN. DD Veya ISL 214E MIN. DD ) ) Veya ( ( END 311 MIN. DD Veya END 311E MIN. DD )",
+   "classReq": "95,00"
   },
   {
    "code": "ISL 467",
@@ -26312,6 +26325,12 @@
    "requirement": "( MTO 321 MIN. DD Veya MTO 321E MIN. DD ) Veya ( MTO 344 MIN. DD Veya MTO 344E MIN. DD ) Veya ( MTO 302 MIN. DD Veya MTO 302E MIN. DD )"
   },
   {
+   "code": "MTO 408E",
+   "name": "Mikrometeoroloji",
+   "branch": "MTO",
+   "requirement": "( MTO 333 MIN. DD Veya MTO 333E MIN. DD ) Veya ( MTO 337 MIN. DD Veya MTO 337E MIN. DD )"
+  },
+  {
    "code": "MTO 426E",
    "name": "Micrometeorology",
    "branch": "MTO",
@@ -28433,13 +28452,13 @@
   },
   {
    "code": "SAO 106",
-   "name": "Güvenli Ağ Tasarımı ve Cihaz Yönetimi Secure Network Design and Device Management",
+   "name": "Güvenli Ağ Tasarımı ve Cihaz Yönetimi",
    "branch": "SAO",
    "requirement": "( SAO 103E MIN. DD Veya SAO 103 MIN. DD )"
   },
   {
    "code": "SAO 106E",
-   "name": "Güvenli Ağ Tasarımı ve Cihaz Yönetimi Secure Network Design and Device Management",
+   "name": "Güvenli Ağ Tasarımı ve Cihaz Yönetimi",
    "branch": "SAO",
    "requirement": "( SAO 103E MIN. DD Veya SAO 103 MIN. DD )"
   },
@@ -28548,6 +28567,18 @@
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
   },
   {
+   "code": "SAO 214",
+   "name": "İşletmede Mesleki Eğitim",
+   "branch": "SAO",
+   "requirement": "( SAO 106E MIN. DD Veya SAO 106 MIN. DD )"
+  },
+  {
+   "code": "SAO 214E",
+   "name": "İşletmede Mesleki Eğitim",
+   "branch": "SAO",
+   "requirement": "( SAO 106E MIN. DD Veya SAO 106 MIN. DD )"
+  },
+  {
    "code": "SAO 251",
    "name": "Kriptolojinin Temelleri",
    "branch": "SAO",
@@ -28654,6 +28685,54 @@
    "name": "Yapay Zekâ ve Siber Güvenlik",
    "branch": "SAO",
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD ) Ve ( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 260",
+   "name": "Adli Bilişim",
+   "branch": "SAO",
+   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 260E",
+   "name": "Adli Bilişim",
+   "branch": "SAO",
+   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 261",
+   "name": "Bilişim Hukuku",
+   "branch": "SAO",
+   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 261E",
+   "name": "Bilişim Hukuku",
+   "branch": "SAO",
+   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 262",
+   "name": "İnternet Programlama",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
+  },
+  {
+   "code": "SAO 262E",
+   "name": "İnternet Programlama",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
+  },
+  {
+   "code": "SAO 263",
+   "name": "Yapay Zekâ ve Siber Güvenlik",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD ) ( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 263E",
+   "name": "Yapay Zekâ ve Siber Güvenlik",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD ) ( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
   },
   {
    "code": "SAV 302",
@@ -52119,6 +52198,10 @@
   },
   {
    "from": "END 311",
+   "to": "ISL 464E"
+  },
+  {
+   "from": "END 311",
    "to": "VBA 312E"
   },
   {
@@ -52248,6 +52331,10 @@
   {
    "from": "END 311E",
    "to": "ISL 355E"
+  },
+  {
+   "from": "END 311E",
+   "to": "ISL 464E"
   },
   {
    "from": "END 311E",
@@ -65563,6 +65650,10 @@
   },
   {
    "from": "ISL 214",
+   "to": "ISL 464E"
+  },
+  {
+   "from": "ISL 214",
    "to": "ISL 467"
   },
   {
@@ -65608,6 +65699,10 @@
   {
    "from": "ISL 214E",
    "to": "ISL 360E"
+  },
+  {
+   "from": "ISL 214E",
+   "to": "ISL 464E"
   },
   {
    "from": "ISL 214E",
@@ -65967,6 +66062,10 @@
   },
   {
    "from": "ISL 244",
+   "to": "ISL 451E"
+  },
+  {
+   "from": "ISL 244",
    "to": "ISL 462"
   },
   {
@@ -65992,6 +66091,10 @@
   {
    "from": "ISL 244E",
    "to": "ISL 447E"
+  },
+  {
+   "from": "ISL 244E",
+   "to": "ISL 451E"
   },
   {
    "from": "ISL 244E",
@@ -83215,6 +83318,10 @@
   },
   {
    "from": "MAT 210",
+   "to": "ISL 464E"
+  },
+  {
+   "from": "MAT 210",
    "to": "JEF 311E"
   },
   {
@@ -83732,6 +83839,10 @@
   {
    "from": "MAT 210E",
    "to": "ISL 439E"
+  },
+  {
+   "from": "MAT 210E",
+   "to": "ISL 464E"
   },
   {
    "from": "MAT 210E",
@@ -92247,6 +92358,10 @@
   },
   {
    "from": "MTO 333",
+   "to": "MTO 408E"
+  },
+  {
+   "from": "MTO 333",
    "to": "MTO 426E"
   },
   {
@@ -92299,6 +92414,10 @@
   },
   {
    "from": "MTO 333E",
+   "to": "MTO 408E"
+  },
+  {
+   "from": "MTO 333E",
    "to": "MTO 426E"
   },
   {
@@ -92343,6 +92462,10 @@
   },
   {
    "from": "MTO 337",
+   "to": "MTO 408E"
+  },
+  {
+   "from": "MTO 337",
    "to": "MTO 426E"
   },
   {
@@ -92384,6 +92507,10 @@
   {
    "from": "MTO 337E",
    "to": "MTO 344E"
+  },
+  {
+   "from": "MTO 337E",
+   "to": "MTO 408E"
   },
   {
    "from": "MTO 337E",
@@ -95934,6 +96061,22 @@
    "to": "SAO 259E"
   },
   {
+   "from": "SAO 101",
+   "to": "SAO 262"
+  },
+  {
+   "from": "SAO 101",
+   "to": "SAO 262E"
+  },
+  {
+   "from": "SAO 101",
+   "to": "SAO 263"
+  },
+  {
+   "from": "SAO 101",
+   "to": "SAO 263E"
+  },
+  {
    "from": "SAO 101E",
    "to": "SAO 102"
   },
@@ -96006,6 +96149,22 @@
    "to": "SAO 259E"
   },
   {
+   "from": "SAO 101E",
+   "to": "SAO 262"
+  },
+  {
+   "from": "SAO 101E",
+   "to": "SAO 262E"
+  },
+  {
+   "from": "SAO 101E",
+   "to": "SAO 263"
+  },
+  {
+   "from": "SAO 101E",
+   "to": "SAO 263E"
+  },
+  {
    "from": "SAO 102",
    "to": "SAO 253"
   },
@@ -96118,6 +96277,14 @@
    "to": "SAO 201E"
   },
   {
+   "from": "SAO 106",
+   "to": "SAO 214"
+  },
+  {
+   "from": "SAO 106",
+   "to": "SAO 214E"
+  },
+  {
    "from": "SAO 106E",
    "to": "SAO 200"
   },
@@ -96134,6 +96301,14 @@
    "to": "SAO 201E"
   },
   {
+   "from": "SAO 106E",
+   "to": "SAO 214"
+  },
+  {
+   "from": "SAO 106E",
+   "to": "SAO 214E"
+  },
+  {
    "from": "SAO 107",
    "to": "SAO 251"
   },
@@ -96214,6 +96389,30 @@
    "to": "SAO 259E"
   },
   {
+   "from": "SAO 109",
+   "to": "SAO 260"
+  },
+  {
+   "from": "SAO 109",
+   "to": "SAO 260E"
+  },
+  {
+   "from": "SAO 109",
+   "to": "SAO 261"
+  },
+  {
+   "from": "SAO 109",
+   "to": "SAO 261E"
+  },
+  {
+   "from": "SAO 109",
+   "to": "SAO 263"
+  },
+  {
+   "from": "SAO 109",
+   "to": "SAO 263E"
+  },
+  {
    "from": "SAO 109E",
    "to": "SAO 104"
   },
@@ -96260,6 +96459,30 @@
   {
    "from": "SAO 109E",
    "to": "SAO 259E"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 260"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 260E"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 261"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 261E"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 263"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 263E"
   },
   {
    "from": "SBP 111",

@@ -1,12 +1,39 @@
 [
  {
-  "crn": "12809",
-  "code": "ULS 520E",
-  "branch": "ULS",
+  "crn": "14914",
+  "code": "NSE 803E",
+  "branch": "NSE",
   "level": "LU",
-  "name": "Traffic Management",
+  "name": "Intro.to NanoScie.&Nano Eng.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Kemal Selçuk Öğüt",
+  "instructor": "Nilgün Yavuz , Esra Zayim",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14915",
+  "code": "NSE 505E",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Properties of Nanomaterials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Caner Ünlü , Faiz Muhaffel",
   "buildings": [
    "undeclared"
   ],
@@ -14,12 +41,12 @@
    "Perşembe"
   ],
   "times": [
-   "14:00/16:59"
+   "08:30/11:29"
   ],
   "rooms": [
    "--"
   ],
-  "capacity": 15,
+  "capacity": 30,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -27,121 +54,13 @@
   "classReq": "-"
  },
  {
-  "crn": "12847",
-  "code": "ULS 517E",
-  "branch": "ULS",
+  "crn": "14916",
+  "code": "NSE 517E",
+  "branch": "NSE",
   "level": "LU",
-  "name": "Ulaştırma.Yönelik Yöneylem Ar.",
+  "name": "Environmental Nanotechnology",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mustafa Can Özkan",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 10,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12848",
-  "code": "ULS 605E",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Pavement Management System",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Halit Özen",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "09:00/11:59"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 10,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12849",
-  "code": "ULS 515",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Trafik Tekniği Etüdleri",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Hilmi Berk Çelikoğlu",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "10:30/13:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 15,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12850",
-  "code": "ULS 607E",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Intelligent Transport.Syst.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Hilmi Berk Çelikoğlu",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "13:30/16:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 15,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12851",
-  "code": "ULS 501E",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Mathe.&Sta.Meth.in Tran.Eng.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Oğuz Tengilimoğlu",
+  "instructor": "İsmail Koyuncu , Bihter Zeytuncu Gökoğlu",
   "buildings": [
    "undeclared"
   ],
@@ -154,7 +73,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 15,
+  "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -162,130 +81,13 @@
   "classReq": "-"
  },
  {
-  "crn": "12853",
-  "code": "ULS 596",
-  "branch": "ULS",
+  "crn": "14917",
+  "code": "NSE 523E",
+  "branch": "NSE",
   "level": "LU",
-  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "name": "Surfaces&Interfaces",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Halit Özen , Mustafa Can Özkan",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:00/14:59"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 15,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12854",
-  "code": "ULS 696",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Bilimsel Araş.,Etik ve Seminer",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Halit Özen , Oğuz Tengilimoğlu",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "15:00/16:59"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 10,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13581",
-  "code": "ULS YLT",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Tez Çalışması",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Halit Özen",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 200,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13582",
-  "code": "ULS DRT",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Tez Çalışması",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Halit Özen",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 200,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13583",
-  "code": "ULS YET",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Yeterlik Aşaması",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Halit Özen",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 200,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14981",
-  "code": "ULS 505E",
-  "branch": "ULS",
-  "level": "LU",
-  "name": "Transportation Sys. Analysis",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Hüseyin Onur Tezcan",
+  "instructor": "Birgül Benli",
   "buildings": [
    "undeclared"
   ],
@@ -293,7 +95,232 @@
    "Perşembe"
   ],
   "times": [
-   "10:30/13:29"
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14918",
+  "code": "NSE 596E",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Scien.Rese., Ethic&Seminar",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bihter Zeytuncu Gökoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14919",
+  "code": "NSE 603E",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Radiation Proc.for Nanomateris",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nilgün Baydoğan , Sevilay Hacıyakupoğlu , Nesrin Altınsoy , Sema Erentürk",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14920",
+  "code": "NSE 607E",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Elec.,Diel.&Mag.Pro.of Nanom.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Filiz Altay , Ali Saffet Altay",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14922",
+  "code": "NSE 611E",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Spec.Topics in Nanosc.&Nanoen.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nurcan Doğan Bingölbali",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14923",
+  "code": "NSE 696E",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Scien.Rese., Ethic&Seminar",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Birgül Benli",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14924",
+  "code": "NSE DRT",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bihter Zeytuncu Gökoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14925",
+  "code": "NSE YET",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Yeterlik Aşaması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bihter Zeytuncu Gökoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14926",
+  "code": "NSE YLT",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bihter Zeytuncu Gökoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14936",
+  "code": "NSE 612E",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "2-Dimensional Advanced Materials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Tekin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
   ],
   "rooms": [
    "--"

@@ -1143,18 +1143,12 @@
   "name": "Microprocessor Systems",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gökhan İnce",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
+  "buildings": [],
+  "days": [],
   "times": [
-   "08:30/11:29"
+   "-/-"
   ],
-  "rooms": [
-   "--"
-  ],
+  "rooms": [],
   "capacity": 90,
   "enrolled": 0,
   "reserved": "-",
@@ -1828,6 +1822,60 @@
    "BLG_LS",
    "BLGE_LS"
   ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14985",
+  "code": "BLG 353E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Quantum Programming",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Turgay Altılar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14986",
+  "code": "BLG 355E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Introduction to Quantum Computing",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Türkpençe",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
   "prereq": "Detay",
   "classReq": "-"
  }

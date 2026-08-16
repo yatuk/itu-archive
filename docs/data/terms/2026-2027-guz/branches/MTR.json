@@ -54,47 +54,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11358",
-  "code": "MTR 101",
-  "branch": "MTR",
-  "level": "LS",
-  "name": "Makam Teorisi I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Eren Özek",
-  "buildings": [
-   "TMB",
-   "TMB",
-   "TMB"
-  ],
-  "days": [
-   "Salı",
-   "Çarşamba",
-   "Perşembe"
-  ],
-  "times": [
-   "10:30/12:29",
-   "10:30/12:29",
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--",
-   "--",
-   "--"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "MUT_LS",
-   "MUZ_LS",
-   "MZT_LS",
-   "SES_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "11361",
   "code": "MTR 103",
   "branch": "MTR",
@@ -1010,17 +969,324 @@
   "level": "LS",
   "name": "Makam Teorisi I",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "instructor": "Eren Özek",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
   ],
-  "rooms": [],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
   "capacity": 40,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14913",
+  "code": "MTR 201",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Ahıs Yunusoğlu",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "10:30/12:29",
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14921",
+  "code": "MTR 201",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nurullah Kanık",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "13:30/15:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14927",
+  "code": "MTR 201",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali İhsan Alemli",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "08:30/10:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14928",
+  "code": "MTR 203",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşecan Olgun",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14929",
+  "code": "MTR 203",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ufuk Biçak",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "13:30/15:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "14931",
+  "code": "MTR 101",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Elif Ahıs Yunusoğlu",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29",
+   "08:30/10:29",
+   "16:00/17:59"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14932",
+  "code": "MTR 101",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eren Özek",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "13:30/15:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
   "prereq": "-",
   "classReq": "-"
  }

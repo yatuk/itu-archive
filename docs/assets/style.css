@@ -2073,3 +2073,84 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 /* Gizli tooltip sayfayı taşırmasın (position:absolute + opacity:0 yine de
    scroll alanına girer; display:none kaldırır). */
 .ttip:not(.show) { display: none; }
+
+/* ---------- Not Kutusu ----------
+   Kayıtlar dış bağlantıdır (arşiv dosya barındırmaz). Bunun iki görsel
+   sonucu var: nereye gidildiği (host) tıklamadan görünmeli ve ölü bağlantı
+   gizlenmemeli. Ölü/uyarı rengi AMBER — kırmızı yalnızca ders çakışması ve
+   %100 dolu kontenjan için ayrılmış durumda. */
+
+.n-link { font-weight: 600; }
+.n-meta { display: block; color: var(--dimmer); font-size: 12px; margin-top: 2px; }
+
+/* Host, lisans ve tür veri hücresidir: monospace + tabular hizalama. */
+.n-host, .n-lic, .n-kind {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--dim);
+  white-space: nowrap;
+}
+.n-lic { letter-spacing: .02em; }
+
+.n-dead {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--amber);
+  border: 1px solid var(--amber);
+  border-radius: 999px;
+  padding: 0 6px;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+/* Ölü kaydın satırı soluk ama okunur kalır — silinmiş gibi görünmemeli. */
+#nrows tr:has(.n-dead) .n-link { opacity: .75; }
+
+.n-rules {
+  color: var(--dim);
+  font-size: 13px;
+  border-left: 2px solid var(--amber);
+  padding-left: 12px;
+  margin-top: 22px;
+  max-width: 72ch;
+}
+
+.n-add { white-space: nowrap; text-decoration: none; }
+
+/* ---- detay panelindeki Not Kutusu bölümü ---- */
+
+.d-notes { margin-top: 18px; }
+
+.d-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+.d-note:last-of-type { border-bottom: 0; }
+.d-note > a { font-weight: 600; }
+
+.d-note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--dimmer);
+}
+
+.d-note-host::before { content: "· "; }
+.d-note-lic::before { content: "· "; }
+
+.d-note-warn { color: var(--amber); }
+.d-note-dead > a { opacity: .75; }
+
+.d-note-cta { margin-top: 10px; }
+.d-note-add { font-size: 13px; }
+
+@media (max-width: 600px) {
+  .d-note { gap: 2px; }
+  .d-note-meta { width: 100%; }
+}

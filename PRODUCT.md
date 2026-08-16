@@ -33,7 +33,7 @@ Kaynaklar: `obs.itu.edu.tr/public/*` (DersProgram, DersKatalog, DersBilgi, DersN
 - **Etik sınır:** not dağılımında toplam yazılan < 10 ise kaydedilmez (kişi ifşası).
 - **Veri boşlukları:** 2024-2025 Güz hiçbir kaynakta yok; 2025-2026 Güz dönem başı dökümü komşu dönemlerden eksik görünüyor; katalog tüm kodları kapsamaz (grafik dışı kodlar yasaldır).
 - Veri şeması geriye uyumlu: alan eklenir, silinmez.
-- Statik site, arka uç yok; kod/veri açık kaynak, ODC-By lisansıyla.
+- Statik site, arka uç yok; kod MIT, arşiv verisi ODC-By, Not Kutusu katkıları kayıt başına CC0/CC-BY/CC-BY-SA lisanslı.
 
 ## Brand Commitments
 

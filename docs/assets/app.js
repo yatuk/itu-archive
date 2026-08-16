@@ -14,6 +14,7 @@ import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
 import { onShow as programShow } from './views/program.js';
 import { onShow as dersplanimShow } from './views/dersplanim.js';
+import { onShow as notesShow } from './views/notlar.js';
 import { PrereqGraph } from './prereq.js';
 import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js';
 import { openTakenEditor } from './core/taken-ui.js';
@@ -203,8 +204,8 @@ function initWelcome() {
 // Sade temasında sekme adları düz ("Dersler"), fosfor/CRT'de numaralı
 // ("01 · DERSLER") kalır — numaralandırma terminal kimliğinin parçası.
 const TAB_PLAIN = {
-  tr: { dersler: 'Dersler', gecmis: 'Geçmiş', dersplanim: 'Ders Planım/GPA', onsart: 'Önşart Haritası', sinavlar: 'Sınavlar', takvim: 'Akademik Takvim', donemler: 'Dönemler', program: 'Program', hakkinda: 'Hakkında' },
-  en: { dersler: 'Courses', gecmis: 'History', dersplanim: 'My Plan/GPA', onsart: 'Prereq Map', sinavlar: 'Exams', takvim: 'Calendar', donemler: 'Terms', program: 'Schedule', hakkinda: 'About' },
+  tr: { dersler: 'Dersler', gecmis: 'Geçmiş', dersplanim: 'Ders Planım/GPA', onsart: 'Önşart Haritası', sinavlar: 'Sınavlar', takvim: 'Akademik Takvim', donemler: 'Dönemler', program: 'Program', notlar: 'Not Kutusu', hakkinda: 'Hakkında' },
+  en: { dersler: 'Courses', gecmis: 'History', dersplanim: 'My Plan/GPA', onsart: 'Prereq Map', sinavlar: 'Exams', takvim: 'Calendar', donemler: 'Terms', program: 'Schedule', notlar: 'Note Box', hakkinda: 'About' },
 };
 function applyTabLabels() {
   const sade = document.documentElement.getAttribute('data-theme') === 'sade';
@@ -217,7 +218,7 @@ function applyTabLabels() {
 
 /* ---------- sekmeler ---------- */
 
-const VIEWS = ['dersler', 'gecmis', 'dersplanim', 'onsart', 'sinavlar', 'takvim', 'donemler', 'program', 'hakkinda'];
+const VIEWS = ['dersler', 'gecmis', 'dersplanim', 'onsart', 'sinavlar', 'takvim', 'donemler', 'program', 'notlar', 'hakkinda'];
 
 // Dersler filtrelerini kısa kodlarla query'ye yazar (term yalnızca aktif dönem
 // dışındaysa). Varsayılanlar (boş/"hepsi"/aktif dönem) URL'ye girmez.
@@ -316,6 +317,7 @@ function wireTabs() {
     if (view === 'gecmis') historyShow();
     if (view === 'program') programShow();
     if (view === 'dersplanim') dersplanimShow();
+    if (view === 'notlar') notesShow();
     if (view === 'onsart') PrereqGraph.init('#pg-root');
     // Program oluşturucu ve Ders Planım daha geniş alan kullanır.
     const mainEl = document.querySelector('main.wrap');

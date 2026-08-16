@@ -1,0 +1,153 @@
+name: not-kutusu
+
+# Not Kutusu katkı akışı. Sunucu yok: GitHub'ın kendisi hem form hem inceleme
+# arayüzü. Issue formu doldurulur -> bu workflow ayrıştırıp doğrular -> geçerse
+# PR açar. MODERASYON PR'I BİRLEŞTİRMEKTİR; doğrudan main'e yazılmaz.
+#
+# Ayrıca haftalık bağlantı denetimi: ölen bağlantı silinmez, işaretlenir.
+on:
+  issues:
+    types: [opened, edited, labeled]
+  schedule:
+    - cron: '19 4 * * 2' # salı 04:19 UTC — haftalık bağlantı denetimi
+  workflow_dispatch:
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  # --- katkı: issue -> PR ------------------------------------------------
+  ekle:
+    if: github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'not-kutusu')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Issue gövdesini dosyaya al
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: printf '%s' "$BODY" > /tmp/issue-body.md
+
+      - name: Kaydı üret ve doğrula
+        id: add
+        run: |
+          set -o pipefail
+          go run ./cmd/notes -from-issue /tmp/issue-body.md \
+            -issue ${{ github.event.issue.number }} 2>&1 | tee /tmp/notes-out.txt
+
+      - name: Hata varsa issue'ya yaz
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let out = '';
+            try { out = fs.readFileSync('/tmp/notes-out.txt', 'utf8'); } catch {}
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: [
+                'Kayıt eklenemedi:',
+                '',
+                '```',
+                (out || 'bilinmeyen hata').trim(),
+                '```',
+                '',
+                'Issue’yu düzenleyip kaydedersen tekrar denenir.',
+              ].join('\n'),
+            });
+
+      - name: PR aç
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          if git diff --quiet -- docs/data/notes; then
+            echo "değişiklik yok"; exit 0
+          fi
+          BRANCH="not-kutusu/issue-$ISSUE"
+          git config user.name  "itu-archive-bot"
+          git config user.email "actions@github.com"
+          git checkout -b "$BRANCH"
+          git add docs/data/notes
+          git commit -m "not kutusu: #$ISSUE katkısı"
+          git push -f origin "$BRANCH"
+          # PR zaten açıksa yeniden açmaya çalışma (issue düzenlenince tekrar koşar).
+          if ! gh pr view "$BRANCH" >/dev/null 2>&1; then
+            {
+              cat /tmp/notes-out.txt
+              echo
+              echo "Kapatır #$ISSUE"
+              echo
+              echo "Birleştirmeden önce: bağlantı açılıyor mu, içerik gerçekten"
+              echo "katkıcının kendi notu mu, lisans uygun mu?"
+            } > /tmp/pr-body.md
+            gh pr create --base main --head "$BRANCH" \
+              --title "Not Kutusu: #$ISSUE" --body-file /tmp/pr-body.md
+          fi
+
+      - name: Issue'ya sonucu yaz
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let out = '';
+            try { out = fs.readFileSync('/tmp/notes-out.txt', 'utf8'); } catch {}
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: [
+                'Kayıt doğrulandı, inceleme için PR açıldı:',
+                '',
+                '```',
+                out.trim(),
+                '```',
+              ].join('\n'),
+            });
+
+  # --- haftalık bağlantı denetimi ----------------------------------------
+  denetle:
+    if: github.event_name != 'issues'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Bağlantıları denetle
+        run: go run ./cmd/notes -check
+
+      - name: Değişiklik varsa commit'le
+        run: |
+          if git diff --quiet -- docs/data/notes; then
+            echo "değişen bağlantı durumu yok"; exit 0
+          fi
+          git config user.name  "itu-archive-bot"
+          git config user.email "actions@github.com"
+          git add docs/data/notes
+          git commit -m "not kutusu: bağlantı denetimi"
+          git push

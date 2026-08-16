@@ -29,3 +29,6 @@ jobs:
 
       - name: Veri bütünlüğü
         run: go run ./cmd/validate -quiet -skip-site
+
+      - name: Not Kutusu kayıtları
+        run: go run ./cmd/notes -validate

@@ -13,6 +13,7 @@ import { parseReq, renderReqTree } from '../prereq.js';
 import { codeToSlug } from './urlcodes.js';
 import { loadProgramMap } from './programs.js';
 import { TAKEN_CHANGED, getTaken } from './taken.js';
+import { safeHref } from './utils.js';
 import { I18N } from '../i18n.js';
 
 let lastDetailFocus = null;
@@ -230,12 +231,15 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   if (!location.hash.startsWith('#ders/')) history.pushState(null, '', '#ders/' + slug);
 
   const branch = String(code).split(' ')[0];
-  const [list, hist, cat, gr, buildings] = await Promise.all([
+  const [list, hist, cat, gr, buildings, notes] = await Promise.all([
     getJSON(`data/terms/${t}/branches/${branch}.json`).catch(() => []),
     getJSON(`data/history/courses/${branch}.json`).then((all) => all[code] || null).catch(() => null),
     getJSON(`data/catalog/${branch}.json`).then((all) => all[code] || null).catch(() => null),
     getJSON(`data/grades/${branch}.json`).then((all) => (Array.isArray(all) ? all.filter((g) => g.code === code) : [])).catch(() => []),
     loadBuildings(),
+    // Not Kutusu: dosya barındırılmaz, kayıtlar dış bağlantıdır. Dosya yoksa
+    // (o branşta hiç katkı yok) bölüm hiç çizilmez.
+    getJSON(`data/notes/${branch}.json`).then((all) => (Array.isArray(all) ? all.filter((n) => n.code === code) : [])).catch(() => []),
   ]);
   const secs = Array.isArray(list) ? list.filter((s) => s.code === code) : [];
   const obsLink = obsDeepLink(code);
@@ -249,6 +253,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
       <p class="empty">${I18N.t('detailNotOpenIn', { term: `<b>${esc(termLabel(t))}</b>` })}</p>
       <section class="d-req-by" data-code="${esc(code)}"><h4>${esc(I18N.t('detailReqBy'))}</h4>
         <p class="empty">${esc(I18N.t('statLoading'))}</p></section>
+      ${notesHtml(notes, code)}
       ${gradesHtml(gr)}
       ${histHtml(hist)}
       ${catalogHtml(cat)}`;
@@ -279,6 +284,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
       <p class="empty">${esc(I18N.t('statLoading'))}</p></section>
     <section class="d-req-by" data-code="${esc(code)}"><h4>${esc(I18N.t('detailReqBy'))}</h4>
       <p class="empty">${esc(I18N.t('statLoading'))}</p></section>
+    ${notesHtml(notes, code)}
     ${gradesHtml(gr)}
     ${catalogHtml(cat)}
     ${histHtml(hist)}`;
@@ -459,6 +465,60 @@ export function gradeMode(grades, total) {
   const e = Object.entries(grades).sort((a, b) => b[1] - a[1])[0];
   if (!e) return { grade: '·', pct: 0 };
   return { grade: e[0], pct: total ? Math.round((e[1] / total) * 100) : 0 };
+}
+
+// notesHtml, Not Kutusu bölümü: bu derse paylaşılmış not bağlantıları.
+//
+// Arşiv dosya barındırmaz; her satır dışarıya çıkan bir bağlantıdır. O yüzden
+// nereye gidildiği (host) tıklamadan görünür ve bağlantılar nofollow/ugc ile
+// işaretlenir — katkı içeriği arşivin kendi verisi değildir.
+//
+// Ölü bağlantı gizlenmez, "yanıt vermiyor" diye gösterilir (cmd/notes -check
+// işaretler). Hiç not yoksa katkı çağrısıyla birlikte tek satır çıkar.
+// Bkz. views/notlar.js linkOrText — güvenli olmayan şema bağlantı olmaz.
+function noteLink(n) {
+  const href = safeHref(n.url);
+  if (!href) return `<span class="d-note-bad" title="${esc(I18N.t('notesBadLinkTitle'))}">${esc(n.title)}</span>`;
+  return `<a href="${esc(href)}" target="_blank" rel="noopener nofollow ugc">${esc(n.title)} ↗</a>`;
+}
+
+function notesHtml(list, code) {
+  const alive = (list || []).filter((n) => !n.dead);
+  const dead = (list || []).filter((n) => n.dead);
+  const addURL = 'https://github.com/yatuk/itu-archive/issues/new?template=not-kutusu.yml&labels=not-kutusu';
+  const add = `<a class="d-note-add" href="${esc(addURL)}" target="_blank" rel="noopener">${esc(I18N.t('notesAdd'))} ↗</a>`;
+
+  if (!alive.length && !dead.length) {
+    return `<section class="d-notes">
+      <h4>${esc(I18N.t('notesForCourse'))}</h4>
+      <p class="empty">${esc(I18N.t('notesNone'))} ${add}</p>
+    </section>`;
+  }
+
+  const row = (n) => `
+    <div class="d-note${n.dead ? ' d-note-dead' : ''}">
+      ${noteLink(n)}
+      <span class="d-note-meta">
+        <span class="d-note-kind">${esc(kindLabel(n.kind))}</span>
+        <span class="d-note-host">${esc(n.host || '')}</span>
+        <span class="d-note-lic">${esc(n.license)}</span>
+        ${n.dead ? `<span class="d-note-warn" title="${esc(I18N.t('notesDeadTitle'))}">${esc(I18N.t('notesDead'))}</span>` : ''}
+      </span>
+    </div>`;
+
+  return `<section class="d-notes">
+    <h4>${esc(I18N.t('notesForCourse'))} (${alive.length})</h4>
+    ${alive.map(row).join('')}
+    ${dead.map(row).join('')}
+    <p class="d-note-cta">${add}</p>
+  </section>`;
+}
+
+// Tür anahtarını çeviriye çevirir (views/notlar.js ile aynı kural).
+function kindLabel(kind) {
+  const key = 'noteKind' + String(kind || '').replace(/(^|-)([a-z])/g, (_, __, c) => c.toUpperCase());
+  const v = I18N.t(key);
+  return v === key ? kind : v;
 }
 
 // gradesHtml, harf notu dağılımını (Faz 3B) çubuk grafik + geçme oranı + mod

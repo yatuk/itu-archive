@@ -97,6 +97,8 @@ go run ./cmd/catalog           # ders katalog verisini çek (kredi, AKTS, içeri
 go run ./cmd/grades            # harf notu dağılımı (son 3 yıl) · aylık
 go run ./cmd/definitions       # resmî tanımlar: bina + program kodları · aylık
 go run ./cmd/backfill-calendar # eski takvim dosyalarına ISO start/end ekler (bir kez)
+go run ./cmd/notes -validate   # Not Kutusu kayıtlarını denetle
+go run ./cmd/notes -check      # not bağlantılarını denetle (ölüyse işaretle) · haftalık
 go run ./cmd/validate          # docs/data bütünlüğünü denetle (kopya CRN, sarkan kenar...)
 ```
 
@@ -141,6 +143,34 @@ Bot'un commit atabilmesi için Settings > Actions > General kısmında workflow
 izinleri "Read and write" olmalı. Bunu unutursanız Actions yeşil görünür ama
 hiçbir şey push edilmez.
 
+## Not Kutusu
+
+Öğrencilerin ders notlarını paylaştığı bölüm — arşivin dışarıdan yazma kabul
+eden tek parçası.
+
+**Dosya barındırılmaz.** Her kayıt, notun kendi durduğu adrese (Drive, OneDrive,
+Notion) giden bir bağlantı + üstveridir. Sebebi üç katlı: GitHub Pages siteyi
+1 GB ile sınırlıyor ve `docs/` zaten 269 MB (ortalama 8 MB'lık taramayla yüz not
+bile sığmaz); git'te binary silmek geçmişten silmez, yani yanlış yüklenen dosya
+geri alınamaz; ve telif talebine cevap, bağlantı kaydında tek satır silmektir.
+
+Katkı akışı sunucusuz: issue formu → `cmd/notes -from-issue` ayrıştırıp doğrular
+→ workflow PR açar → **moderasyon PR'ı birleştirmektir**. Doğrudan `main`'e
+yazılmaz.
+
+Doğrulama zorlayıcıdır ve `LICENSE.md` ile birlikte okunmalı: ders kodu arşivde
+gerçekten var olmalı, bağlantı `https` olmalı, aynı URL aynı derse iki kez
+eklenemez ve **lisans beyanı zorunludur** (CC0 / CC-BY / CC-BY-SA). Lisans alanı
+bilerek `omitempty` değil — telif ayrımını kural olarak değil veri modeli olarak
+zorlamanın tek yolu bu.
+
+`cmd/notes -check` haftalık koşar; kalıcı olarak yok olan bağlantıyı (404/410)
+`dead: true` işaretler. Geçici hata (5xx, ağ, zaman aşımı) kaydı bozmaz — yanlış
+"ölü" işareti, çalışan bir bağlantıyı gizlemekten kötüdür. Ölü kayıt silinmez;
+arayüz "yanıt vermiyor" der, sessizce kaybolmaz.
+
+Kimlik istenmez: katkıcı adı isteğe bağlı bir takma addır.
+
 ## İki dillilik
 
 Site TR birincil, EN ikincildir; ikisi de eksiksizdir.
@@ -183,6 +213,8 @@ docs/data/
   history/names.json                # öğretim üyesi arama listesi
   history/courses/<BRANŞ>.json      # ders bazlı dönem geçmişi
   history/instructors/<harf>.json   # öğretim üyesi bazlı geçmiş
+  notes/index.json                  # Not Kutusu kapsam özeti
+  notes/<BRANŞ>.json                # paylaşılan not bağlantıları (dosya DEĞİL, üstveri)
   quota/<dönem>.jsonl               # kontenjan zaman serisi, append-only
   quota/<dönem>.json                # türetilmiş dolma özeti
   prereq/graph.json                 # katalogdaki her dersin önşart ilişkisi
@@ -299,6 +331,16 @@ ise OBS'nin DersBilgi arama ucunu (DersBilgiSearch) ayrı ve yavaş biçimde çe
 Not dağılımı yalnızca son üç akademik yılı kapsıyor; eski derslerin veya henüz
 notu açıklanmamış dönemlerin dağılımı yok. 10 kişinin altındaki sınıflar etik
 nedenle kaydedilmiyor (kişi ifşası). Kapsam `grades/index.json`'da.
+
+## Lisans
+
+| Ne | Lisans |
+|---|---|
+| Kaynak kod (`cmd/`, `internal/`, `docs/assets/`) | MIT — [`LICENSE`](LICENSE) |
+| Arşiv verisi (`docs/data/`) | ODC-By 1.0 |
+| Not Kutusu katkıları | kayıt başına CC0 / CC-BY / CC-BY-SA |
+
+Ayrıntı ve katkı kuralları için [`LICENSE.md`](LICENSE.md).
 
 ## Uyarı
 

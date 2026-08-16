@@ -151,7 +151,8 @@
  <button role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" data-i18n="tabTakvim">06 AKADEMİK TAKVİM</button>
  <button role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" data-i18n="tabDonemler">07 DÖNEMLER</button>
  <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">08 PROGRAM</button>
- <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">09 HAKKINDA</button>
+ <button role="tab" aria-selected="false" id="tab-notlar" aria-controls="view-notlar" tabindex="-1" data-view="notlar" data-i18n="tabNotlar">09 NOT KUTUSU</button>
+ <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">10 HAKKINDA</button>
 </nav>
 
 <main class="wrap">
@@ -429,6 +430,65 @@
   </div>
  </section>
 
+ <section id="view-notlar" class="view" role="tabpanel" aria-labelledby="tab-notlar" hidden>
+  <p class="note" data-i18n-html="notesNoteLong">
+   Öğrencilerin paylaştığı ders notları. Arşiv <strong>dosya barındırmaz</strong>:
+   her kayıt, notun kendi Drive/OneDrive/Notion adresine giden bir bağlantıdır —
+   tıklayınca oraya gidersiniz. Not eklemek herkese açık; <strong>yalnızca kendi
+   notunu ya da açıkça özgür lisanslı materyali</strong> ekleyebilirsin.
+  </p>
+  <div class="console">
+   <label class="query">
+    <span class="sigil">&gt;</span>
+    <input id="nq" type="search" autocomplete="off" spellcheck="false"
+           data-i18n-placeholder="notesSearchPlaceholder" data-i18n-aria="notesSearchLbl"
+           placeholder="ders kodu, başlık, hoca ya da katkıcı ara…" aria-label="Not ara">
+   </label>
+   <div class="filters">
+    <label><span data-i18n="filterBranch">bölüm</span> <select id="f-nbranch"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+    <label><span data-i18n="notesKind">tür</span> <select id="f-nkind">
+      <option value="" data-i18n="filterAll">hepsi</option>
+      <option value="ozet" data-i18n="noteKindOzet">özet</option>
+      <option value="ders-notu" data-i18n="noteKindDersNotu">ders notu</option>
+      <option value="soru-cozumu" data-i18n="noteKindSoruCozumu">soru çözümü</option>
+      <option value="formul" data-i18n="noteKindFormul">formül kağıdı</option>
+      <option value="lab" data-i18n="noteKindLab">laboratuvar</option>
+      <option value="proje" data-i18n="noteKindProje">proje / ödev</option>
+      <option value="diger" data-i18n="noteKindDiger">diğer</option>
+    </select></label>
+    <label><span data-i18n="filterLang">dil</span> <select id="f-nlang">
+      <option value="" data-i18n="filterAll">hepsi</option>
+      <option value="tr" data-i18n="langTr">Türkçe</option>
+      <option value="en" data-i18n="langEn">İngilizce</option>
+    </select></label>
+    <label class="check"><input type="checkbox" id="f-ndead"> <span data-i18n="notesShowDead">yanıt vermeyenleri de göster</span></label>
+    <a class="btn-primary n-add" href="#" target="_blank" rel="noopener" data-i18n="notesAdd">not ekle</a>
+   </div>
+  </div>
+  <p class="resultline" id="nresultline" aria-live="polite">·</p>
+  <div class="tablewrap">
+   <table id="ntable" data-i18n-aria="notesListLbl" aria-label="Not listesi">
+    <thead>
+     <tr>
+      <th data-i18n="thCode">Ders</th>
+      <th data-i18n="notesTitle">Not</th>
+      <th data-i18n="notesKind">Tür</th>
+      <th data-i18n="notesHost">Nerede</th>
+      <th data-i18n="notesLicense">Lisans</th>
+     </tr>
+    </thead>
+    <tbody id="nrows"></tbody>
+   </table>
+  </div>
+  <button type="button" id="nmore" class="more" hidden data-i18n="more">daha fazla göster</button>
+  <p class="n-rules" data-i18n-html="notesRules">
+   Hoca slaytı, kitap taraması, çözümlü kitap ve yayımlanmamış sınav sorusu
+   <strong>kabul edilmez</strong> — bunlar başkasının telifi. Her not bir lisansla
+   (CC0 / CC-BY / CC-BY-SA) paylaşılır. Kaldırılmasını istediğin bir bağlantı
+   varsa depoda issue açman yeterli.
+  </p>
+ </section>
+
  <section id="view-hakkinda" class="view" role="tabpanel" aria-labelledby="tab-hakkinda" hidden>
   <div class="prose" data-lang="tr">
    <h2>Bu ne?</h2>
@@ -448,6 +508,22 @@
      <li><code>obs.itu.edu.tr/public/DersProgram</code>: dört program seviyesi (Önlisans, Lisans, Lisansüstü, Lisansüstü 2. Öğretim) ve 337 bölüm kodu için güncel ders programı.</li>
      <li><code>takvim.sis.itu.edu.tr</code>: dört akademik yılın tam takvimi.</li>
      <li>Tarihsel dökümler: 2016-2017'ye kadar uzanan geçmiş dönemler.</li>
+   </ul>
+
+   <h2>Not Kutusu kuralları</h2>
+   <p>
+    Not Kutusu, öğrencilerin kendi ders notlarını paylaştığı bölümdür. Arşiv
+    <strong>dosya barındırmaz</strong>: her kayıt, notun bulunduğu adrese
+    (Drive, OneDrive, Notion vb.) giden bir bağlantıdır. Bunun sebebi hem alan
+    hem de kaldırma kolaylığı — bir talebe cevap tek satır silmektir.
+   </p>
+   <ul>
+     <li><strong>Yalnızca kendi notunu</strong> ya da açıkça özgür lisanslı materyali ekleyebilirsin.</li>
+     <li>Hoca slaytı, kitap taraması, çözümlü kitap ve yayımlanmamış sınav sorusu kabul edilmez: bunlar başkasının telifi.</li>
+     <li>Her not bir lisansla paylaşılır — CC0, CC-BY ya da CC-BY-SA.</li>
+     <li>Katkıcı adı isteğe bağlıdır; takma ad yeterli. Öğrenci numarası, e-posta ya da gerçek ad hiçbir zaman istenmez.</li>
+     <li>Bağlantılar haftalık denetlenir; yanıt vermeyenler silinmez, "yanıt vermiyor" diye işaretlenir.</li>
+     <li>Kaldırılmasını istediğin bir bağlantı varsa depoda issue açman yeterli.</li>
    </ul>
 
    <h2>Ham veriye erişim</h2>
@@ -558,6 +634,22 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
      <li><code>obs.itu.edu.tr/public/DersProgram</code>: the current course schedule for four program levels (Associate, Undergraduate, Graduate, Evening Graduate) and 337 branch codes.</li>
      <li><code>takvim.sis.itu.edu.tr</code>: the full academic calendar for four academic years.</li>
      <li>Historical dumps: past terms going back to 2016-2017.</li>
+   </ul>
+
+   <h2>Note Box rules</h2>
+   <p>
+    The Note Box is where students share their own lecture notes. The archive
+    <strong>hosts no files</strong>: every entry is a link to the note where it
+    already lives (Drive, OneDrive, Notion and so on). That is both a space
+    decision and a removal one — answering a takedown means deleting one line.
+   </p>
+   <ul>
+     <li><strong>Only your own notes</strong>, or clearly openly licensed material, may be added.</li>
+     <li>Instructor slides, book scans, solution manuals and unpublished exam papers are not accepted: those are someone else's copyright.</li>
+     <li>Every note is shared under a license — CC0, CC-BY or CC-BY-SA.</li>
+     <li>A contributor name is optional; a pseudonym is enough. Student ID, e-mail or real name are never requested.</li>
+     <li>Links are checked weekly; unreachable ones are not deleted but marked "not responding".</li>
+     <li>If you want a link removed, opening an issue on the repository is enough.</li>
    </ul>
 
    <h2>Raw data access</h2>

@@ -372,6 +372,23 @@ export function fillMeasured(lastIso, now = Date.now()) {
   return ago ? I18N.t('fillMeasured', { ago }) : '';
 }
 
+// safeHref, dış bağlantıyı DOM'a koymadan önce şemasını doğrular.
+//
+// Not Kutusu kullanıcı katkısı taşır: kayıtlar cmd/notes tarafından doğrulanır
+// (https zorunlu), ama JSON elle düzenlenebilir ya da bir PR gözden kaçabilir.
+// esc() `javascript:` şemasını nötrleştirmez — içinde kaçırılacak karakter yok.
+// Bu yüzden render tarafında ikinci bir kapı: yalnızca http(s) geçer, geri
+// kalanı boş döner ve arayüz bağlantı yerine düz metin gösterir.
+export function safeHref(raw) {
+  const s = String(raw ?? '').trim();
+  try {
+    const u = new URL(s);
+    return (u.protocol === 'https:' || u.protocol === 'http:') ? s : '';
+  } catch {
+    return ''; // göreli/bozuk adres — dış bağlantı olarak kabul edilmez
+  }
+}
+
 // CSV indirme (Excel için BOM'lu).
 export function downloadCSV(filename, headers, rows) {
   const cell = (v) => {

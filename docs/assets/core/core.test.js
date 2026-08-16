@@ -13,8 +13,9 @@ import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programLi
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
 import { examToIcs } from '../views/exams.js';
+import { filterNotes, kindLabel, noteRow } from '../views/notlar.js';
 import { topByCount } from '../views/history.js';
-import { icsText, hashShort, foldLine, formatInt } from './utils.js';
+import { icsText, hashShort, foldLine, formatInt, safeHref } from './utils.js';
 import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
 import { parseCodes } from './taken.js';
 import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary, canonicalCode, codesMatch, groupSections, crnRangeText, courseMetaLabel, creditBadge } from './plan.js';
@@ -1156,7 +1157,7 @@ test('i18n: kullanılan her anahtar tanımlı (eksikte anahtar adı ekrana bası
     'core/chart.js', 'core/course-detail.js', 'core/dialog.js', 'core/planstore.js',
     'core/table.js', 'core/taken-ui.js', 'core/utils.js',
     'views/calendar.js', 'views/courses.js', 'views/dersplanim.js', 'views/exams.js',
-    'views/history.js', 'views/program.js', 'views/terms.js',
+    'views/history.js', 'views/notlar.js', 'views/program.js', 'views/terms.js',
   ].map((p) => new URL(`../${p}`, import.meta.url));
   files.push(new URL('../../index.html', import.meta.url));
 
@@ -1188,4 +1189,95 @@ test('i18n: {yer tutucu} adları iki dilde aynı', () => {
     if (!same) bad.push(k);
   }
   assert.deepEqual(bad, [], `yer tutucu uyuşmazlığı: ${bad.join(', ')}`);
+});
+
+/* ---------- Not Kutusu ---------- */
+
+test('filterNotes: arama ASCII katlamalı, Türkçe I tuzağına düşmez', () => {
+  const list = [
+    { code: 'BLG 102E', title: 'Vize özeti', branch: 'BLG', kind: 'ozet', language: 'tr', host: 'drive.google.com' },
+    { code: 'MAT 101', title: 'İntegral formülleri', branch: 'MAT', kind: 'formul', language: 'tr', host: 'notion.so' },
+  ];
+  // "integral" (noktasız/ASCII) "İntegral"i bulmalı.
+  assert.equal(filterNotes(list, { q: 'integral' }).length, 1);
+  assert.equal(filterNotes(list, { q: 'INTEGRAL' }).length, 1);
+  // Çok terimli arama: hepsi eşleşmeli.
+  assert.equal(filterNotes(list, { q: 'blg vize' }).length, 1);
+  assert.equal(filterNotes(list, { q: 'blg integral' }).length, 0);
+});
+
+test('filterNotes: branş / tür / dil filtreleri', () => {
+  const list = [
+    { code: 'BLG 102E', title: 'a', branch: 'BLG', kind: 'ozet', language: 'tr' },
+    { code: 'BLG 210E', title: 'b', branch: 'BLG', kind: 'lab', language: 'en' },
+    { code: 'MAT 101', title: 'c', branch: 'MAT', kind: 'ozet', language: 'tr' },
+  ];
+  assert.equal(filterNotes(list, { branch: 'BLG' }).length, 2);
+  assert.equal(filterNotes(list, { kind: 'ozet' }).length, 2);
+  assert.equal(filterNotes(list, { lang: 'en' }).length, 1);
+  assert.equal(filterNotes(list, { branch: 'BLG', kind: 'ozet' }).length, 1);
+});
+
+// Ölü bağlantı varsayılan olarak gizlenir ama SİLİNMEZ — kullanıcı isterse
+// görebilmeli, aksi halde kayıt sessizce yok olmuş gibi görünür.
+test('filterNotes: ölü kayıt varsayılanda gizli, istenince görünür', () => {
+  const list = [
+    { code: 'BLG 102E', title: 'canlı', branch: 'BLG', kind: 'ozet' },
+    { code: 'BLG 102E', title: 'ölü', branch: 'BLG', kind: 'ozet', dead: true },
+  ];
+  assert.equal(filterNotes(list).length, 1);
+  assert.equal(filterNotes(list, { showDead: true }).length, 2);
+});
+
+test('kindLabel: tür anahtarını çeviriye çevirir, bilinmeyeni olduğu gibi bırakır', () => {
+  assert.equal(kindLabel('ozet'), 'özet');
+  assert.equal(kindLabel('ders-notu'), 'ders notu');
+  assert.equal(kindLabel('soru-cozumu'), 'soru çözümü');
+  assert.equal(kindLabel('bilinmeyen'), 'bilinmeyen');
+});
+
+// safeHref: Not Kutusu kullanıcı katkısı taşır. Doğrulayıcı ingest sırasında
+// https zorunlu kılar, ama JSON elle düzenlenebilir ya da bir PR gözden
+// kaçabilir — render tarafındaki ikinci kapı bu. esc() `javascript:` şemasını
+// nötrleştiremez (kaçırılacak karakter yok), o yüzden şema denetimi şart.
+test('safeHref yalnızca http(s) geçirir, tehlikeli şemaları düşürür', () => {
+  assert.equal(safeHref('https://drive.google.com/x'), 'https://drive.google.com/x');
+  assert.equal(safeHref('http://example.com/x'), 'http://example.com/x');
+  assert.equal(safeHref('javascript:alert(1)'), '');
+  assert.equal(safeHref('JaVaScRiPt:alert(1)'), '');
+  assert.equal(safeHref('data:text/html,<script>alert(1)</script>'), '');
+  assert.equal(safeHref('vbscript:msgbox(1)'), '');
+  assert.equal(safeHref('file:///etc/passwd'), '');
+  assert.equal(safeHref('/goreli/yol'), '');
+  assert.equal(safeHref(''), '');
+  assert.equal(safeHref(null), '');
+  assert.equal(safeHref('  https://x.tr/a  '), 'https://x.tr/a');
+});
+
+// Not Kutusu kullanıcı katkısı taşıyor: başlık, katkıcı adı ve URL dışarıdan
+// geliyor. Satır üreticisi bunları HTML'e gömdüğü için kaçış testi zorunlu.
+test('noteRow kullanıcı metnini kaçırır (XSS)', () => {
+  const html = noteRow({
+    code: 'BLG 102E', title: '<img src=x onerror=alert(1)>', url: 'https://x.tr/a',
+    host: 'x.tr', kind: 'ozet', license: 'CC0', contributor: '"><script>bad()</script>',
+  });
+  assert.ok(!html.includes('<img src=x'), 'başlık ham HTML olarak geçti');
+  assert.ok(!html.includes('<script>'), 'katkıcı adı ham HTML olarak geçti');
+  assert.ok(html.includes('&lt;img'), 'başlık kaçırılmış olmalı');
+});
+
+test('noteRow güvensiz şemayı bağlantı yapmaz', () => {
+  const bad = noteRow({ code: 'BLG 102E', title: 'kotu', url: 'javascript:alert(1)', kind: 'ozet', license: 'CC0' });
+  assert.ok(!bad.includes('<a '), 'javascript: bağlantı olarak render edildi');
+  assert.ok(bad.includes('n-badlink'), 'güvensiz bağlantı işaretlenmeli');
+
+  const good = noteRow({ code: 'BLG 102E', title: 'iyi', url: 'https://x.tr/a', kind: 'ozet', license: 'CC0' });
+  assert.ok(good.includes('<a '), 'https bağlantı olmalı');
+  assert.ok(good.includes('rel="noopener nofollow ugc"'), 'dış katkı nofollow/ugc taşımalı');
+});
+
+test('noteRow ölü kaydı gizlemez, işaretler', () => {
+  const html = noteRow({ code: 'BLG 102E', title: 'x', url: 'https://x.tr/a', kind: 'ozet', license: 'CC0', dead: true });
+  assert.ok(html.includes('n-dead'), 'ölü rozeti yok');
+  assert.ok(html.includes('x'), 'başlık yine görünmeli');
 });

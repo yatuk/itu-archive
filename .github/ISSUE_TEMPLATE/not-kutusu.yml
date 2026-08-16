@@ -1,0 +1,111 @@
+name: Not Kutusu · not ekle
+description: Bir derse ait notunun bağlantısını arşive ekle.
+title: "[not] "
+labels: ["not-kutusu"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Arşiv **dosya barındırmaz**: notun kendi Drive/OneDrive/Notion hesabında
+        kalır, buraya yalnızca bağlantısı ve künyesi eklenir. Bağlantının
+        **herkese açık** olduğundan emin ol, yoksa tıklayan kimse açamaz.
+
+        **Yalnızca kendi tuttuğun notları ya da açıkça özgür lisanslı materyali
+        ekle.** Hoca slaytı, kitap taraması, çözümlü kitap PDF'i ve yayımlanmamış
+        sınav soruları kabul edilmez — bunlar başkasının telifi.
+
+  - type: input
+    id: kod
+    attributes:
+      label: Ders kodu
+      description: Arşivde geçtiği biçimiyle. Büyük/küçük harf ve boşluk düzeltilir.
+      placeholder: BLG 102E
+    validations:
+      required: true
+
+  - type: input
+    id: baslik
+    attributes:
+      label: Başlık
+      description: Notun ne olduğunu bir bakışta anlatsın (en fazla 120 karakter).
+      placeholder: 2025 Güz vize özeti · tüm konular
+    validations:
+      required: true
+
+  - type: input
+    id: baglanti
+    attributes:
+      label: Bağlantı
+      description: https ile başlamalı ve herkese açık olmalı.
+      placeholder: https://drive.google.com/file/d/.../view
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tur
+    attributes:
+      label: Tür
+      options:
+        - ozet · ders özeti
+        - ders-notu · derste tutulan not
+        - soru-cozumu · çözülmüş soru / çıkmış soru çözümü
+        - formul · formül kağıdı
+        - lab · laboratuvar / uygulama
+        - proje · proje ya da ödev örneği
+        - diger · diğer
+    validations:
+      required: true
+
+  - type: dropdown
+    id: lisans
+    attributes:
+      label: Lisans
+      description: >
+        Notunu başkalarının nasıl kullanabileceğini seç. Üçü de yeniden
+        kullanıma izin verir — Not Kutusu'nun amacı bu.
+      options:
+        - CC-BY · atıfla kullanılabilir
+        - CC-BY-SA · atıfla, aynı lisansla paylaşılmak şartıyla
+        - CC0 · tamamen serbest, atıf bile gerekmez
+    validations:
+      required: true
+
+  - type: input
+    id: donem
+    attributes:
+      label: Dönem
+      description: Notun hangi dönemin dersine ait olduğu (biliniyorsa).
+      placeholder: 2025-2026-guz
+
+  - type: input
+    id: hoca
+    attributes:
+      label: Öğretim üyesi
+      description: Dersi veren hoca (biliniyorsa) — aynı dersin farklı hocaları çok farklı işliyor olabilir.
+
+  - type: dropdown
+    id: dil
+    attributes:
+      label: Dil
+      options:
+        - Türkçe
+        - İngilizce
+
+  - type: input
+    id: takmaad
+    attributes:
+      label: Takma ad
+      description: >
+        İstersen adın görünsün. Boş bırakabilirsin — öğrenci numarası, e-posta
+        ya da gerçek ad asla istenmez.
+      placeholder: anon42
+
+  - type: checkboxes
+    id: onay
+    attributes:
+      label: Onay
+      options:
+        - label: Bu not bana ait ya da açıkça özgür lisanslı; başkasının telifli materyalini yüklemiyorum.
+          required: true
+        - label: Bağlantı herkese açık ve seçtiğim lisansla paylaşılmasını kabul ediyorum.
+          required: true

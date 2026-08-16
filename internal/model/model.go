@@ -154,3 +154,52 @@ type SiteStats struct {
 	Capacity    int `json:"capacity"`
 	Enrolled    int `json:"enrolled"`
 }
+
+// Note, Not Kutusu'ndaki tek bir paylaşım kaydıdır.
+//
+// Arşiv dosya BARINDIRMAZ: not, öğrencinin kendi seçtiği bir yerde durur
+// (Drive, OneDrive, Notion, kişisel site) ve burada yalnızca üstverisi tutulur.
+// Sebebi hem alan (GitHub Pages 1 GB, docs/ zaten 269 MB) hem de kaldırma
+// kolaylığı: bir talebe cevap tek JSON satırı silmek.
+//
+// License bilerek omitempty DEĞİL — lisansı beyan edilmemiş kayıt geçersizdir.
+type Note struct {
+	ID     string `json:"id"`     // "blg-102e-01" · kararlı, yeniden kullanılmaz
+	Code   string `json:"code"`   // "BLG 102E"
+	Branch string `json:"branch"` // "BLG"
+	Title  string `json:"title"`
+	URL    string `json:"url"`  // dış barındırma adresi (https)
+	Host   string `json:"host"` // "drive.google.com" — kullanıcı nereye gittiğini görsün
+	Kind   string `json:"kind"` // NoteKinds
+	// License, NoteLicenses'ten biri. Katkı formunda zorunlu alan.
+	License string `json:"license"`
+	// Aşağısı opsiyonel: veri varsa filtrelenebilir, yoksa arayüz sessiz geçer.
+	Term       string `json:"term,omitempty"`       // "2025-2026-guz"
+	Instructor string `json:"instructor,omitempty"` // notun alındığı dersin hocası
+	Language   string `json:"language,omitempty"`   // "tr" | "en"
+	// Contributor takma addır; öğrenci numarası/e-posta asla istenmez.
+	Contributor string `json:"contributor,omitempty"`
+	Issue       int    `json:"issue,omitempty"` // katkının geldiği issue numarası
+	AddedAt     string `json:"addedAt"`
+	// CheckedAt/Dead, cmd/notes -check tarafından yazılır. Ölü bağlantı silinmez,
+	// işaretlenir: arayüz "yanıt vermiyor" desin, kayıt sessizce kaybolmasın.
+	CheckedAt string `json:"checkedAt,omitempty"`
+	Dead      bool   `json:"dead,omitempty"`
+}
+
+// NoteKinds, kabul edilen not türleri (katkı formundaki açılır listeyle aynı).
+var NoteKinds = []string{"ozet", "ders-notu", "soru-cozumu", "formul", "lab", "proje", "diger"}
+
+// NoteLicenses, kabul edilen lisanslar. Hepsi yeniden kullanıma izin verir —
+// "işbirliği kültürü" ancak paylaşılan şey yeniden kullanılabilirse gerçek olur.
+var NoteLicenses = []string{"CC0", "CC-BY", "CC-BY-SA"}
+
+// NotesIndex, docs/data/notes/index.json — kapsam özeti.
+type NotesIndex struct {
+	GeneratedAt string         `json:"generatedAt"`
+	Notes       int            `json:"notes"`
+	Branches    int            `json:"branches"`
+	Courses     int            `json:"courses"`
+	Dead        int            `json:"dead"`
+	ByBranch    map[string]int `json:"byBranch"`
+}

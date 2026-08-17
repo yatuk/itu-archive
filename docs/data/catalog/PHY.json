@@ -2,6 +2,7 @@
  "PHY 101": {
   "code": "PHY 101",
   "name": "Fizik I",
+  "nameEn": "Physics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=101"
  },
  "PHY 102": {
   "code": "PHY 102",
   "name": "Fizik II",
+  "nameEn": "Physics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,12 +35,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=102"
  },
  "PHY 103": {
   "code": "PHY 103",
   "name": "Fizik I",
+  "nameEn": "Physics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -53,12 +54,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=103"
  },
  "PHY 107": {
   "code": "PHY 107",
   "name": "Fizik I",
+  "nameEn": "Physics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -72,12 +73,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=107",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=107"
  },
  "PHY 107L": {
   "code": "PHY 107L",
   "name": "Fizik I",
+  "nameEn": "Physics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -91,12 +92,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=107",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=107"
  },
  "PHY 108": {
   "code": "PHY 108",
   "name": "Fizik II",
+  "nameEn": "Physics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -110,12 +111,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=108",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=108"
  },
  "PHY 108L": {
   "code": "PHY 108L",
   "name": "Fizik II",
+  "nameEn": "Physics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -129,12 +130,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=108",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=108"
  },
  "PHY 111": {
   "code": "PHY 111",
   "name": "Fizik I",
+  "nameEn": "Physics I",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -169,15 +170,73 @@
    "Hafta 13 · Newton’un Evrensel Çekim Yasası",
    "Hafta 14 · Problem çözümü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Vektörler (vektörlerin toplanması, skaler ve vektörel çarpımı)"
+   },
+   {
+    "week": 2,
+    "topic": "Bir ve iki boyutlu hareket; bir ve iki boyutlu hareketin özellikleri, düzgün dairesel hareket"
+   },
+   {
+    "week": 3,
+    "topic": "Newton’un Yasaları; Newton’un 1, 2 ve 3. yasaları"
+   },
+   {
+    "week": 4,
+    "topic": "Newton Yasalarının uygulanması"
+   },
+   {
+    "week": 5,
+    "topic": "İş ve enerji"
+   },
+   {
+    "week": 6,
+    "topic": "Potansiyel enerji ve enerjinin korunumu; korunumlu ve korunumsuz kuvvetler"
+   },
+   {
+    "week": 7,
+    "topic": "Momentum ve parçacıklı sistemlerin hareketi; kütle merkezinin hareketi"
+   },
+   {
+    "week": 8,
+    "topic": "Momentum ve parçacıklı sistemlerin hareketi"
+   },
+   {
+    "week": 9,
+    "topic": "Rotasyon I; katı cisimlerin dönme kinematikleri, atalet momenti"
+   },
+   {
+    "week": 10,
+    "topic": "Rotasyon II; açısal momentum, kati cisimleri dönmesi"
+   },
+   {
+    "week": 11,
+    "topic": "Rotasyon II; açısal momentum, katı cisimlerin dönmesi, denge çarkı"
+   },
+   {
+    "week": 12,
+    "topic": "Katı cisimlerin statik dengesi; tork, denge koşulları"
+   },
+   {
+    "week": 13,
+    "topic": "Newton’un Evrensel Çekim Yasası"
+   },
+   {
+    "week": 14,
+    "topic": "Problem çözümü"
+   }
+  ],
   "textbooks": [
    "HD Young - RA Freedman (Cev.: H. Unlu vd.), Universite Fiziği, Cilt 1, 12.Baskı, Pearson/Addison Wesley, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=111"
  },
  "PHY 123": {
   "code": "PHY 123",
   "name": "Fizik I",
+  "nameEn": "Physics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -214,15 +273,87 @@
    "Hafta 13 · Periyodik Hareket",
    "Hafta 14 · Periyodik Hareket (Devam)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Birimler, Fiziksel Nicelikler ve Vektörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kinematik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Newton'un Hareket Yasaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Newton Yasalarının Uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "İş ve Kinetik Enerji",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Potansiyel Enerji ve Enerjinin Korunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Momentum, İtme ve Çarpışma",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Momentum, İtme ve Çarpışma (Devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Dönme Hareketinin Kinematiği",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Dönme Hareketinin Dinamiği",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Dönme Hareketinin Dinamiği (Devam)",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Kütleçekim",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Periyodik Hareket",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Periyodik Hareket (Devam)",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=123",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=123"
  },
  "PHY 123L": {
   "code": "PHY 123L",
   "name": "Fizik I",
+  "nameEn": "Physics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -259,15 +390,87 @@
    "Hafta 13 · Periyodik Hareket",
    "Hafta 14 · Periyodik Hareket (Devam)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Birimler, Fiziksel Nicelikler ve Vektörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kinematik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Newton'un Hareket Yasaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Newton Yasalarının Uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "İş ve Kinetik Enerji",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Potansiyel Enerji ve Enerjinin Korunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Momentum, İtme ve Çarpışma",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Momentum, İtme ve Çarpışma (Devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Dönme Hareketinin Kinematiği",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Dönme Hareketinin Dinamiği",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Dönme Hareketinin Dinamiği (Devam)",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Kütleçekim",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Periyodik Hareket",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Periyodik Hareket (Devam)",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=123",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=123"
  },
  "PHY 124": {
   "code": "PHY 124",
   "name": "Fizik II",
+  "nameEn": "Physics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -329,15 +532,87 @@
    "Hafta 13 · Elektromanyetik Dalgalar",
    "Hafta 14 · Elektromanyetik Dalgalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik Yükü ve Elektriksel Kuvvet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gauss Yasası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Gauss Yasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Elektrik Potansiyeli",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kapasitans ve Dielektrikler",
+    "outcomes": "8-9-10-11"
+   },
+   {
+    "week": 6,
+    "topic": "Akım, Direnç ve Elektromotif Kuvvet",
+    "outcomes": "12-13"
+   },
+   {
+    "week": 7,
+    "topic": "Doğru Akım Devreleri",
+    "outcomes": "14-15"
+   },
+   {
+    "week": 8,
+    "topic": "Manyetik Alan ve Manyetik Kuvetler",
+    "outcomes": "16-17"
+   },
+   {
+    "week": 9,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "18-19"
+   },
+   {
+    "week": 10,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "20-21-22"
+   },
+   {
+    "week": 11,
+    "topic": "Elektromanyetik İndüksiyon",
+    "outcomes": "23-24-25-26"
+   },
+   {
+    "week": 12,
+    "topic": "İndüktans",
+    "outcomes": "27-28-29-30-31"
+   },
+   {
+    "week": 13,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "32-33"
+   },
+   {
+    "week": 14,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "33-34"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=124",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=124"
  },
  "PHY 124L": {
   "code": "PHY 124L",
   "name": "Fizik II",
+  "nameEn": "Physics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -399,15 +674,87 @@
    "Hafta 13 · Elektromanyetik Dalgalar",
    "Hafta 14 · Elektromanyetik Dalgalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik Yükü ve Elektriksel Kuvvet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gauss Yasası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Gauss Yasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Elektrik Potansiyeli",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kapasitans ve Dielektrikler",
+    "outcomes": "8-9-10-11"
+   },
+   {
+    "week": 6,
+    "topic": "Akım, Direnç ve Elektromotif Kuvvet",
+    "outcomes": "12-13"
+   },
+   {
+    "week": 7,
+    "topic": "Doğru Akım Devreleri",
+    "outcomes": "14-15"
+   },
+   {
+    "week": 8,
+    "topic": "Manyetik Alan ve Manyetik Kuvetler",
+    "outcomes": "16-17"
+   },
+   {
+    "week": 9,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "18-19"
+   },
+   {
+    "week": 10,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "20-21-22"
+   },
+   {
+    "week": 11,
+    "topic": "Elektromanyetik İndüksiyon",
+    "outcomes": "23-24-25-26"
+   },
+   {
+    "week": 12,
+    "topic": "İndüktans",
+    "outcomes": "27-28-29-30-31"
+   },
+   {
+    "week": 13,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "32-33"
+   },
+   {
+    "week": 14,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "33-34"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=124",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=124"
  },
  "PHY 125": {
   "code": "PHY 125",
   "name": "Physics I",
+  "nameEn": "Physics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -442,15 +789,87 @@
    "Hafta 13 · Periyodik Hareket",
    "Hafta 14 · Periyodik Hareket"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Birimler, Fiziksel Nicelikler ve Vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kinematik",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Newton'un Hareket Yasaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Newton Yasalarının Uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İş ve Kinetik Enerji",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Potansiyel Enerji ve Enerjinin Korunumu",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Momentum, İtme ve Çarpışma",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Momentum, İtme ve Çarpışma",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Dönme Hareketinin Kinematiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Dönme Hareketinin Dinamiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Dönme Hareketinin Dinamiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Kütleçekim",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Periyodik Hareket",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Periyodik Hareket",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=125",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=125"
  },
  "PHY 125L": {
   "code": "PHY 125L",
   "name": "Physics I",
+  "nameEn": "Physics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -485,15 +904,87 @@
    "Hafta 13 · Periyodik Hareket",
    "Hafta 14 · Periyodik Hareket"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Birimler, Fiziksel Nicelikler ve Vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kinematik",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Newton'un Hareket Yasaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Newton Yasalarının Uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İş ve Kinetik Enerji",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Potansiyel Enerji ve Enerjinin Korunumu",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Momentum, İtme ve Çarpışma",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Momentum, İtme ve Çarpışma",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Dönme Hareketinin Kinematiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Dönme Hareketinin Dinamiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Dönme Hareketinin Dinamiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Kütleçekim",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Periyodik Hareket",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Periyodik Hareket",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=125",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=125"
  },
  "PHY 126": {
   "code": "PHY 126",
   "name": "Physics II",
+  "nameEn": "Physics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -555,15 +1046,87 @@
    "Hafta 13 · Elektromanyetik Dalgalar",
    "Hafta 14 · Elektromanyetik Dalgalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik Yükü ve Elektriksel Kuvvet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gauss Yasası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Gauss Yasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Elektrik Potansiyeli",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kapasitans ve Dielektrikler",
+    "outcomes": "8-9-10-11"
+   },
+   {
+    "week": 6,
+    "topic": "Akım, Direnç ve Elektromotif Kuvvet",
+    "outcomes": "12-13"
+   },
+   {
+    "week": 7,
+    "topic": "Doğru Akım Devreleri",
+    "outcomes": "14-15"
+   },
+   {
+    "week": 8,
+    "topic": "Manyetik Alan ve Manyetik Kuvetler",
+    "outcomes": "16-17"
+   },
+   {
+    "week": 9,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "18-19"
+   },
+   {
+    "week": 10,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "20-21-22"
+   },
+   {
+    "week": 11,
+    "topic": "Elektromanyetik İndüksiyon",
+    "outcomes": "23-24-25-26"
+   },
+   {
+    "week": 12,
+    "topic": "İndüktans",
+    "outcomes": "27-28-29-30-31"
+   },
+   {
+    "week": 13,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "32-33"
+   },
+   {
+    "week": 14,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "33-34"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=126",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=126"
  },
  "PHY 126L": {
   "code": "PHY 126L",
   "name": "Physics II",
+  "nameEn": "Physics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -625,15 +1188,87 @@
    "Hafta 13 · Elektromanyetik Dalgalar",
    "Hafta 14 · Elektromanyetik Dalgalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik Yükü ve Elektriksel Kuvvet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gauss Yasası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Gauss Yasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Elektrik Potansiyeli",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kapasitans ve Dielektrikler",
+    "outcomes": "8-9-10-11"
+   },
+   {
+    "week": 6,
+    "topic": "Akım, Direnç ve Elektromotif Kuvvet",
+    "outcomes": "12-13"
+   },
+   {
+    "week": 7,
+    "topic": "Doğru Akım Devreleri",
+    "outcomes": "14-15"
+   },
+   {
+    "week": 8,
+    "topic": "Manyetik Alan ve Manyetik Kuvetler",
+    "outcomes": "16-17"
+   },
+   {
+    "week": 9,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "18-19"
+   },
+   {
+    "week": 10,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "20-21-22"
+   },
+   {
+    "week": 11,
+    "topic": "Elektromanyetik İndüksiyon",
+    "outcomes": "23-24-25-26"
+   },
+   {
+    "week": 12,
+    "topic": "İndüktans",
+    "outcomes": "27-28-29-30-31"
+   },
+   {
+    "week": 13,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "32-33"
+   },
+   {
+    "week": 14,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "33-34"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=126",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=126"
  },
  "PHY 127": {
   "code": "PHY 127",
   "name": "Physics",
+  "nameEn": "Physics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -695,15 +1330,87 @@
    "Hafta 13 · Elektromanyetik Dalgalar",
    "Hafta 14 · Elektromanyetik Dalgalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik Yükü ve Elektriksel Kuvvet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gauss Yasası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Gauss Yasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Elektrik Potansiyeli",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kapasitans ve Dielektrikler",
+    "outcomes": "8-9-10-11"
+   },
+   {
+    "week": 6,
+    "topic": "Akım, Direnç ve Elektromotif Kuvvet",
+    "outcomes": "12-13"
+   },
+   {
+    "week": 7,
+    "topic": "Doğru Akım Devreleri",
+    "outcomes": "14-15"
+   },
+   {
+    "week": 8,
+    "topic": "Manyetik Alan ve Manyetik Kuvetler",
+    "outcomes": "16-17"
+   },
+   {
+    "week": 9,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "18-19"
+   },
+   {
+    "week": 10,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "20-21-22"
+   },
+   {
+    "week": 11,
+    "topic": "Elektromanyetik İndüksiyon",
+    "outcomes": "23-24-25-26"
+   },
+   {
+    "week": 12,
+    "topic": "İndüktans",
+    "outcomes": "27-28-29-30-31"
+   },
+   {
+    "week": 13,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "32-33"
+   },
+   {
+    "week": 14,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "33-34"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=127",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=127"
  },
  "PHY 127L": {
   "code": "PHY 127L",
   "name": "Physics",
+  "nameEn": "Physics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -765,10 +1472,81 @@
    "Hafta 13 · Elektromanyetik Dalgalar",
    "Hafta 14 · Elektromanyetik Dalgalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik Yükü ve Elektriksel Kuvvet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gauss Yasası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Gauss Yasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Elektrik Potansiyeli",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kapasitans ve Dielektrikler",
+    "outcomes": "8-9-10-11"
+   },
+   {
+    "week": 6,
+    "topic": "Akım, Direnç ve Elektromotif Kuvvet",
+    "outcomes": "12-13"
+   },
+   {
+    "week": 7,
+    "topic": "Doğru Akım Devreleri",
+    "outcomes": "14-15"
+   },
+   {
+    "week": 8,
+    "topic": "Manyetik Alan ve Manyetik Kuvetler",
+    "outcomes": "16-17"
+   },
+   {
+    "week": 9,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "18-19"
+   },
+   {
+    "week": 10,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "20-21-22"
+   },
+   {
+    "week": 11,
+    "topic": "Elektromanyetik İndüksiyon",
+    "outcomes": "23-24-25-26"
+   },
+   {
+    "week": 12,
+    "topic": "İndüktans",
+    "outcomes": "27-28-29-30-31"
+   },
+   {
+    "week": 13,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "32-33"
+   },
+   {
+    "week": 14,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "33-34"
+   }
+  ],
   "textbooks": [
    "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=127",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PHY&dersNo=127"
  }
 }

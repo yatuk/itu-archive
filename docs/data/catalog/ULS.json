@@ -2,6 +2,7 @@
  "ULS 501E": {
   "code": "ULS 501E",
   "name": "Mathe.&Sta.Meth.in Tran.Eng.",
+  "nameEn": "Mathe.&Sta.Meth.in Tran.Eng.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,6 +35,77 @@
    "Hafta 13 · Tahmin modelleri: Hareketli ortalama, üstel düzeltmeler yöntemi, doğrusal regresyon",
    "Hafta 14 · Çok değişkenli doğrusal olmayan regresyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ulaştırma mühendisliğinde matematik ve istatistik yöntemlere giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Matris cebrine genel bakış",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal programlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Tamsayı programlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Hedef programlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "İstatistiksel veriler ve veri toplama yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Tanımlayıcı istatistitik",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ulaştırma mühendisliğinde yaygın kullanılan dağılımlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Dağılımlarla ilgili testler",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Varyans analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Korelasyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Tahmin modelleri: Hareketli ortalama, üstel düzeltmeler yöntemi, doğrusal regresyon",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tahmin modelleri: Hareketli ortalama, üstel düzeltmeler yöntemi, doğrusal regresyon",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Çok değişkenli doğrusal olmayan regresyon"
+   }
+  ],
   "textbooks": [
    "Washington S. P., Karlaftis M. G., Mannering F. L., Statistical and Econometric Methods for Transportation Data Analysis, Second Edition, CRC Press, Taylor and Francis Group, 2011",
    "Kreyszig, E., Advanced Engineering Mathematics, John Wiley & Sons; 8th edition edition, 2005",
@@ -41,12 +113,128 @@
    "Bazaraa M. S., Jarvis J. J., Sherali H. D., Linear Programming and Network Flows, John Wiley & Sons, 2010.",
    "Cascetta E., Transportation Systems Analysis: Models and Applications, Springer, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=501"
+ },
+ "ULS 505E": {
+  "code": "ULS 505E",
+  "name": "Ulaştırma Sistemleri Analizi",
+  "nameEn": "Transportation Sys. Analysis",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ulaştırma sistemleri analizi- Ulaştırma sistemi ve etkinlikler sistemi arasındaki ilişkiler- Ulaştırma talebinin kestirilmesi: Ayrık davranış modelleri-Yarar fonsiyonları ve kayıtsızlık eğrisi- Deterministik tüketici davranışı modeli- Stokastik tüketici davranışı modeli-Toplulaştırılmış davranış modelleri- Ulaştırma sunusu: Maliyet fonksiyonları- Dışsal maliyetlerin içselleştirilmesi, tıkanıklık fiyatlandırması-Ulaştırma sistemlerinin performansları ve performans fonksiyonları-İşletme planları- Ağ analizi- Değerlendirme ve seçim süreci- Ulaştırma projelerinin değerlendirilmesinde fayda-maliyet analizi ve çok ölçütlü değerlendirme teknikleri- Genel değerlendirme. The profession of transportation systems analysis- Interrelationships between transportation system and activity system- The demand for transportation: Disaggregate prediction of behaviour- Utility functions and indifference curve- Deterministic model for consumer behaviour- Stochastic model for consumer behaviour- Aggregate prediction of behaviour- Transportation supply: Cost functions- Internalisation of external costs: Congestion charging- Transportation system performance: Understanding performance functions- Carrier operations planning- Network analysis- Evaluation and choice- Cost-benefit analysis and multicriteria evaluation techniques of transportation projects.",
+  "outcomes": [
+   "Ulaştırma talebi- arazi kullanımı ve ulaştırma sistemi arasındaki 3 temel ilişkiyi anlamak.",
+   "Ulaştırma talebinin tahmini için kullanılan tüketici davranışı modellerini öğrenmek.",
+   "Ulaştırma arzının temel özelliklerini öğrenmek.",
+   "Ulaştırmada performans değerlendirmesini öğrenmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Ulaştırma sistemleri analizi tanımı ve amaçları.",
+   "Hafta 2 · Ulaştırma sistemi ile etkinlikler sistemi arasındaki etkileşimler.",
+   "Hafta 3 · Ulaştırma talebi: Bireysel davranışların öngörülmesi.",
+   "Hafta 4 · Yarar fonksiyonları ve kayıtsızlık eğrisi.",
+   "Hafta 5 · Tüketici davranışının deterministik modeli.",
+   "Hafta 6 · Tüketici davranışının stokastik modeli.",
+   "Hafta 7 · Yıliçi sınavı.",
+   "Hafta 8 · Davranışların toplulaştırılmış öngörülmesi: Yolculuk talebinin esneklikleri.",
+   "Hafta 9 · Ulaştırma sunusu (arzı): Maliyet fonksiyonları.",
+   "Hafta 10 · Dışsal maliyetlerin içselleştirilmesi: Tıkanıklık fiyatlandırması.",
+   "Hafta 11 · Ulaştırma sisteminin performansı: Performans fonksiyonları.",
+   "Hafta 12 · Ağ analizi.",
+   "Hafta 13 · Değerlendirme ve seçim.",
+   "Hafta 14 · Fayda-maliyet analizi ve çok ölçütlü değerlendirme yöntemleri."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ulaştırma sistemleri analizi tanımı ve amaçları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ulaştırma sistemi ile etkinlikler sistemi arasındaki etkileşimler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ulaştırma talebi: Bireysel davranışların öngörülmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yarar fonksiyonları ve kayıtsızlık eğrisi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tüketici davranışının deterministik modeli.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Tüketici davranışının stokastik modeli.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yıliçi sınavı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Davranışların toplulaştırılmış öngörülmesi: Yolculuk talebinin esneklikleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Ulaştırma sunusu (arzı): Maliyet fonksiyonları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Dışsal maliyetlerin içselleştirilmesi: Tıkanıklık fiyatlandırması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Ulaştırma sisteminin performansı: Performans fonksiyonları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Ağ analizi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Değerlendirme ve seçim.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Fayda-maliyet analizi ve çok ölçütlü değerlendirme yöntemleri."
+   }
+  ],
+  "textbooks": [
+   "Marvin L. Manheim: Fundamentals of Transportation Systems Analysis, The MIT Press, 1979.",
+   "Kanafani, A. Transportation Demand Analysis, McGraw-Hill, 1983.",
+   "Hensher, D.A., Button, K.J.,Handbook of Transport Modelling, Pergamon, 2000.",
+   "Button, K.J., Hensher, D.A., Handbook of Transport Systems and Traffic Control, Pergamon, 2001.",
+   "Button, K.J., Hensher, D.A., Handbook of Transport Strategy, Policy and Institutions, Pergamon, 2005.",
+   "Papacostas, C.S., Prevedouros, P.D., Transportation Engineering and Planning, 3rd Edition, Prentice Hall, 2001."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=505"
  },
  "ULS 515": {
   "code": "ULS 515",
   "name": "Trafik Tekniği Etüdleri",
+  "nameEn": "Traffic Technics and Studies",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -79,6 +267,77 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "Kutlu, K., Trafik Tekniği, İTÜ Rektörlüğü Sayı 1508, İstanbul, 1993.",
    "Daganzo, C.F., Fundamentals of Transportation and Traffic Operations, Pergamon-Elsevier, Oxford U.K., 1997.",
@@ -86,57 +345,12 @@
    "TRB Special report no 209, Highway Capacity Manual, Washington, D.C., Transportation Research Board, National Research Council, 20105",
    "Mannering, F.L., Kilareski, W.P., Principles of Highway Engineering and Traffic Analysis, Fifth edition, Wiley, New York, 2012"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
- },
- "ULS 515E": {
-  "code": "ULS 515E",
-  "name": "Trafik Tekniği Etüdleri",
-  "language": "Türkçe/English",
-  "credits": {
-   "theory": 3,
-   "practice": 0,
-   "lab": 0,
-   "local": 3,
-   "ects": 7.5
-  },
-  "description": "Trafik akımının asal değişkenleri ve gözlenmesi – Asal değişkenlerin olasılık-istatistik modelleri – Trafik akımının türetilmiş değişkenleri: Akım Hacmi, Yoğunluk, Hız – Türetilmiş değişkenlerin ölçülmesi - Trafik akımının temel bağıntıları: Hız-Yoğunluk bağıntıları, Akım hacmi-Hız bağıntıları, Akım Hacmi-Yoğunluk bağıntıları – Temel bağıntıların matematik modelleri – Kapasite: Kapasite türleri – Yol geometrik standartları ile kapasite ilişkisi – Trafik hacmi ile yol ilişkisi – Karayolu boyutlandırılması – Trafik akımı için temel çözümlemeler: Şok Dalgası, Küme Yayılımı ve, Şişe boynu Kapasite Çözümlemesi – Hız ve yoğunluk etüdleri– Kaza etüdleri Fundamental variables of Traffic Flow: Flow, Density, Speed – Statistical and probabilistic models of flowvariables – Observation of flow variables – Fundamental relationships (diagrams) of traffic flow: Speed-Density, Flow-Speed, Flow-Densitys – Mathematical models of fundamental diagrams – Highway Capacity -Types of highway capacity – Relationship of road geometric standarts with capacity - Traffic volumeestimation and highway design – Basic analyses for traffic flow: Bottleneck capacity analysis, Shockwaveanalysis, Platoon dispersion analysis, Surveys on Speed, Density and Accidents",
-  "outcomes": [
-   "Bir trafik etüdünü tasarlanması",
-   "Trafik akımının asal ve türetilmiş değişkenlerini gözlem ve gösterim yöntemlerini uygulayabilmesi",
-   "Trafik akımının temel ilişkilerini ve modellerini sorgulayabilmesi",
-   "Trafik hacim bilgileri ile karayolu kapasitesi çözümlemesi yapabilmesi.",
-   "Trafiğin yaratacağı etkilerin belirlenmesi."
-  ],
-  "weeklyTopics": [
-   "Hafta 1 · -",
-   "Hafta 2 · -",
-   "Hafta 3 · -",
-   "Hafta 4 · -",
-   "Hafta 5 · -",
-   "Hafta 6 · -",
-   "Hafta 7 · -",
-   "Hafta 8 · -",
-   "Hafta 9 · -",
-   "Hafta 10 · -",
-   "Hafta 11 · -",
-   "Hafta 12 · -",
-   "Hafta 13 · -",
-   "Hafta 14 · -"
-  ],
-  "textbooks": [
-   "Kutlu, K., Trafik Tekniği, İTÜ Rektörlüğü Sayı 1508, İstanbul, 1993.",
-   "Daganzo, C.F., Fundamentals of Transportation and Traffic Operations, Pergamon-Elsevier, Oxford U.K., 1997.",
-   "May, A.D., Traffic Flow Fundamentals, Printice-Hall, New York, 1990",
-   "TRB Special report no 209, Highway Capacity Manual, Washington, D.C., Transportation Research Board, National Research Council, 20105",
-   "Mannering, F.L., Kilareski, W.P., Principles of Highway Engineering and Traffic Analysis, Fifth edition, Wiley, New York, 2012"
-  ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=515"
  },
  "ULS 517E": {
   "code": "ULS 517E",
   "name": "Ulaştırma.Yönelik Yöneylem Ar.",
+  "nameEn": "Ulaştırma.Yönelik Yöneylem Ar.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -169,6 +383,77 @@
    "Hafta 13 · Kuyruklanma Sistemleri: Kuyruk özellikleri, Geliş yapıları, Hizmet yapıları, Sistem kapasitesi, Kuyruk düzenleri",
    "Hafta 14 · Kuyruklanma Sistemleri: M/M/1, M/M/s, M/M/1/K ve M/M/s/K Sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Matematik Programlama: Doğrusal, Tamsayı ve Kuvadratik Programlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal Programlama: Simpleks ve Dual Simpleks Yöntemleri, Dualite ve Duyarlık Çözümlemesi, Açılımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tamsayı Programlama: Dal Sınır, Kesme ve Ulaştırma Algoritmaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrusal Olmayan Programlama: Tek Değişkenli Eniyileme, Çok Değişkenli Kısıtlı ve Kısıtsız Eniyileme",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Dinamik Programlama: Çok aşamalı karar süreçleri, rastlantısal çok aşamalı karar süreçleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Ağ Çözümlemesi: Enaz Yayılım Problemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ağ Çözümlemesi: En kısa Yol ve Enbüyük Akış Problemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Proje Yönetimi: PERT/CPM, Envanter Modelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Kestirim Modeleri: Regresyon Yöntemleri, Düzleme Yöntemleri, Zaman-serisi analizleri için multiplikatif modeller",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Oyun Kuramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Karar Kuramı: Karar süreçleri, Karar ağaçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Markov Süreçleri: Sonlu Markov Zincirleri, Markovyan Doğum-Ölüm Süreçleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Kuyruklanma Sistemleri: Kuyruk özellikleri, Geliş yapıları, Hizmet yapıları, Sistem kapasitesi, Kuyruk düzenleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "Kuyruklanma Sistemleri: M/M/1, M/M/s, M/M/1/K ve M/M/s/K Sistemleri"
+   }
+  ],
   "textbooks": [
    "Hillier, F.S., Gerald, J.L., Introduction to Operations Research, McGraw-Hill Science/Engineering / Math; 8 edition, 2005",
    "Barnhart, C., Laporte, G., Handbooks in Operations Research and Management Science: Transportation (Handbooks in Operations Research & Management Science), Elsevier, 2005.",
@@ -176,12 +461,12 @@
    "Larson, R.C., Odoni, A.R., Urban Operations Research, Dynamic Ideas; 2nd edition, 2007",
    "Bellman, R., Dynamic Programming, Dover Publications; Dover Ed edition, 2003"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=517"
  },
  "ULS 520E": {
   "code": "ULS 520E",
   "name": "Trafik Yönetimi",
+  "nameEn": "Traffic Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -213,6 +498,77 @@
    "Hafta 13 · Katlı Kavşak Tasarımı",
    "Hafta 14 · Karayolu ağ yönetimi: Kavşak çiftlerinin eşgüdümü, Anayoldaki kavşak dizisinin eşgüdümü, Katılım Denetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Trafik akımı değişkenleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Karayolu kavşak tipi seçimi, çakışma noktaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Üçgen görüş uzunlukları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Karayolu kavşaklarının tasarımı: Eşdüzey kavşak tasarımı, Adalarla trafiğin yönlendirilmesi ve Denetimsiz eşdüzey kavşak tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Karayolu kavşaklarının tasarımı: Eşdüzey kavşak tasarımı, Adalarla trafiğin yönlendirilmesi ve Denetimsiz eşdüzey kavşak tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Yuvarlakada kavşak tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Sinyalizasyon tasarımı: Doygunluk akım değeri, Faz düzenleme, devre hesabı, devre düzenleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "İngiliz Yöntemi devre hesabı",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Sinyalize kavşaklarda gecikmeler. Devre eniyileme yazılımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Kuyruk kuramı",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Amerikan yöntemi ile devre hesabı",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Avusturalya yöntemi ile devre hesabı",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Katlı Kavşak Tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Karayolu ağ yönetimi: Kavşak çiftlerinin eşgüdümü, Anayoldaki kavşak dizisinin eşgüdümü, Katılım Denetimi"
+   }
+  ],
   "textbooks": [
    "AASHTO, A Policy on Geometric Design of Highways and Streets, AASHTO, 6th ed., 2010.",
    "Neuman, T.R., Intersection Channelization Design Guide, TRB, Report 279, Washington DC, 1985",
@@ -220,12 +576,12 @@
    "TRB Special report no 209, Highway Capacity Manual, Washington, D.C., Transportation Research Board, National Research Council, 2010",
    "US DOT FHWA, Manual on Uniform Traffic Control Devices: Standards and Guides for Traffic Controls for Street and Highway Construction, Maintenance, Utility, and Incident Management Operations, US Department of Transportation, Federal Highway Administration, US Gov. Printing; revised edition, 1994"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=520",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=520"
  },
  "ULS 596": {
   "code": "ULS 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -269,6 +625,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -281,12 +708,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=596"
  },
  "ULS 605E": {
   "code": "ULS 605E",
   "name": "Pavement Management System",
+  "nameEn": "Pavement Management System",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -318,6 +745,77 @@
    "Hafta 13 · Yapım, Bakım-Onarım Araştırma Yöntemleri",
    "Hafta 14 · Gelecekteki Araştırmalar ve ÜYS nin Türkiye için Değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Üstyapı Yönetim Sistemine Giriş, Sistem Yapısı ve Sistem Yaklaşımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Üstyapı Yönetiminde Veri: Üstyapı Performans verisi, Yapısal Dayanım Verileri, Bozulmaları ile ilgili veriler, Karayolu güvenliği ile ilgili veriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Yönetimi: Yol Ağının Mevcut Durumunun Değerlendirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mevcut ve Gelecekteki Durum Için Ihtiyaçların Tanımlanması, Bakım-Onarım Için Önceliklerin Belirlenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Üstyapı Bozulmalarının Modellenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Üstyapı Bakım-Onarım Stratejilerinin Belirlenmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Bakım-Onarım Önceliklerinin Belirlenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Uygulama Seviyesi: Tasarım Verileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Güvenlik, Güvenirlilik ve Risk",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Alternatif Tasarım Stratejileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Bakım-Onarım Tasarım Stratejileri ve En Uygun Tasarım Seçimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Üstyapı Yönetim Sistemi Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Yapım, Bakım-Onarım Araştırma Yöntemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gelecekteki Araştırmalar ve ÜYS nin Türkiye için Değerlendirilmesi"
+   }
+  ],
   "textbooks": [
    "Pavement Management System: strategic review. Department for Transport (DfT) Research Database, 2006",
    "Haas, R., Hudson, W.R., Zaniewski, J., Modern Pavement Management, Krieger Publishing Company, USA, 1994",
@@ -325,12 +823,12 @@
    "Shahin, M.Y., Pavement Management for Airports, Roads and Parking Lots, Kluwer, London, 1994",
    "Road Maintenance Management Systems in Developing Countries, OECD, Road Transport Research Report, 1995"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=605",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=605"
  },
  "ULS 607E": {
   "code": "ULS 607E",
   "name": "Intelligent Transport.Syst.",
+  "nameEn": "Intelligent Transport.Syst.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -362,6 +860,77 @@
    "Hafta 13 · Otoyol Trafik Denetimi: Katılım Denetimi Yöntemleri, Değişken Hız Denetimi",
    "Hafta 14 · Dinamik Ağ Modellemesinde Akıllı Ulaştırma Sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Akıllı Ulaştırma Sistemlerine Genel Bakış, Birleşik Devletler Akıllı Ulaştırma Sistemleri Programı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Akıllı Ulaştırma Sistemlerinin Bileşenleri ve Mimarisi, Çok Türlü Yolculuk Yönetimi ve Bölgesel Yolcu Bilgi Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Trafik Yönetimi: Geleneksel ve İleri Sistemler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Trafik Yönetim Sistemleri: Altyapı, Gözlem, Şerit Yönetimi, Bilgi Yayımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Trafik Yönetim Sistemleri: Arter Yönetim Sistemleri, Uyarlamalı Sinyal Denetim Sistemleri, Eşgüdümlü Sinyal Denetim Sistemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kaza-Arıza Yönetimi: Gözlem ve Algılama, Otomatik Taşıt Konum. Gelişmiş Yolcu Bilgi Sistemleri. Acil Durum Yönetim Sistemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Elektronik Ödeme Sistemleri: Gişe Sistemleri, Toplu Taşıma Ödeme Sistemleri, Otopark Ödeme Sistemleri, Çok Kullanımlı Ödeme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Tıkanıklık Ücretlendirme Sistemleri: Değişken Ücretli Şeritler, Değişken Ücretli Gişeler, Kordon Ücretlendirme, Alan Ücretlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Taşıt Temelli Güvenlik ve Denetim Sistemleri, Gelişmiş Toplu Taşıma Sistemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ticari Araç Denetim Sistemleri – Hava Koşulları Bilgi Sistemleri, Navigasyon Sistemleri, Dinamik Güzergah Yönlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Otoyol Trafik Yönetimi: Katılım Denetimi İzlemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Otoyol Trafik Yönetimi: Katılım Denetimi Yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Otoyol Trafik Denetimi: Katılım Denetimi Yöntemleri, Değişken Hız Denetimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dinamik Ağ Modellemesinde Akıllı Ulaştırma Sistemleri"
+   }
+  ],
   "textbooks": [
    "Sussman, J.M., Perspectives on Intelligent Transportation Systems (ITS), Springer, 2010",
    "McQueen, J., McQueen, B., Intelligent Transportation Systems Architectures (ITS/GPS), Artech House, 1999",
@@ -369,12 +938,12 @@
    "Papageorgiou, M., Applications of Automatic Control Concepts to Traffic Flow Modeling and Control: Lecture Notes in Control and Information Sciences, Springer Verlag, 1983",
    "Ran, B., Boyce, D., Modeling Dynamic Transportation Networks: An Intelligent Transportation System Oriented Approach, Springer-Verlag Berlin and Heidelberg GmbH & Co. K, 1996"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=607",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=607"
  },
  "ULS 696": {
   "code": "ULS 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -418,6 +987,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -430,7 +1070,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ULS&dersNo=696"
  }
 }

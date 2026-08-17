@@ -2,6 +2,7 @@
  "MBL 513E": {
   "code": "MBL 513E",
   "name": "Digital Arch.Design&Modelling",
+  "nameEn": "Digital Arch.Design&Modelling",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -36,6 +37,77 @@
    "Hafta 13 · Dönem projesinin değerlendirilmesi",
    "Hafta 14 · Dönem projesinin değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temsil ve mimarlıkta temsil kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Modelleme kavramı ve mimari tasarıma getirdiği olanaklar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Katı modelleme paketlerinin tanıtımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dönem içi proje konusunun saptanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Önerilen katı modellme paketinin öğrenci tarafından sunulması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yarıyıl içi proje çalışması (grup çalışması)",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Yarıyıl içi proje çalışmasının sunumu ve modelleme bilgisinin analizi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem sonu projesi önerisi ve yazılım konusunda seçimler",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem sonu proje konusunun saptanması",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım konusu ve modelleme paketi üzerine tartışmalar ve kritikler (grup çalışması)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım konusu ve modelleme paketi üzerine tartışmalar ve kritikler (grup çalışması)",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım konusu ve modelleme paketi üzerine tartışmalar ve kritikler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem projesinin değerlendirilmesi",
+    "outcomes": "3-4-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projesinin değerlendirilmesi"
+   }
+  ],
   "textbooks": [
    "Beckmann, J. (ed.), (1999), The Virtual Dimensions: Architecture, Representation and Crash Culture, Amazon, London.",
    "Gajski, D.D., (1996), Principles of Digital Design, John Wiley & Sons, London.",
@@ -43,12 +115,12 @@
    "Sanders, K., (1995), The Digital Architect: A Common Sense Guide to Using Computer Technology in Design Practise, John Wiley & Sons, London.",
    "Sahai, R., (1996), Inside Microstation 95, 4 th Edition, Onword Press, Santa Fe, NM."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=513"
  },
  "MBL 516E": {
   "code": "MBL 516E",
   "name": "Intera.Tools&Enviro.in Dig.De.",
+  "nameEn": "Intera.Tools&Enviro.in Dig.De.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -80,18 +152,89 @@
    "Hafta 13 · Mimari Tasarımda Kullanılabilecek bir Etkileşim Ortamı Geliştirme",
    "Hafta 14 · Mimari Tasarımda Kullanılabilecek bir Etkileşim Ortamı Geliştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mimari Tasarım ve Araç İlişkisi;",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arayüz Kavramı ve Arayüzün Dijitalleşmesi;",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Etkileşim Kavramı, Etkileşimin Kip ve Modaliteleri;",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Dijitalin Somutlaşması;",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Dokunulabilir (Tangible) Etkileşim",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Dokunulabilir(Haptic) Etkileşim",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Mimari Tasarımda Dokunulabilir Arayüzler",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Jeste Dayalı Etkileşim Ortamları",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Harekete Dayalı Etkileşim Ortamları",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Fiziksel Programlama Ortamları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Mekan İçinde Etkileşim, Etkileşimin Uzamsallığı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Sensörler(Ardunio/Kinect/Leepmotion/Wii) ile Basit bir Arayüz Tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Mimari Tasarımda Kullanılabilecek bir Etkileşim Ortamı Geliştirme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Mimari Tasarımda Kullanılabilecek bir Etkileşim Ortamı Geliştirme"
+   }
+  ],
   "textbooks": [
    "Bongers, B. (2006). Interaction with our electronic environment an e-cological approach to physical interface design,Cahier Book series (no 34) of the Faculty of Journalism and Communication, Hogeschool van Utrecht, April 2004 ISBN 90-77575-02-2.",
    "Picon, A. (2010). Digital culture in architecture. Birkh user Architecture.",
    "Paul Dourish. (2004). Where the action is: the foundations of embodied interaction. MIT press.",
    "Shamonsky, D. J. (2003). Tactile, spatial interfaces for computer-aided design: superimposing physical media and computation (Doctoral dissertation, Massachusetts Institute of Technology)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=516",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=516"
  },
  "MBL 517E": {
   "code": "MBL 517E",
   "name": "Mimari Tasa.Dij.Ür.&Prototip.",
+  "nameEn": "Digit.Fabr.&Proto.in Arch.Des.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -127,6 +270,77 @@
    "Hafta 13 · Tasarım ürününün bileşenlerinin üretimi",
    "Hafta 14 · Tasarım ürününün bileşenlerinin birleştirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgisayar destekli üretim yaklaşımlarına, araç ve yöntemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "2 boyutlu ve 3 boyutlu tarama teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Eklemeli üretim süreçleri: hızlı prototipleme",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Hızlı prototipleme için üretken yaklaşımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Hızlı prototiplemede eniyileme ve rasyonalizasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Çıkartmaya dayalı üretim süreçleri: CNC",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çıkartmaya dayalı üretim süreçleri: Lazer kesici",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Lazer kesici için bölme yöntemleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Lazer kesici için birleştirme yöntemleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Birleşik malzemeler için birleştirme yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Robotlar ile üretim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Bir tasarım ürünü için düşünce ve modellerin tartışılması ve geliştirilmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım ürününün bileşenlerinin üretimi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım ürününün bileşenlerinin birleştirilmesi"
+   }
+  ],
   "textbooks": [
    "Gramazio, F., Kohler,M., Langenberg, S. (eds.), (2014), Fabricate: Negotiating Design and Making, Riverside Architectural Press, Zürich.",
    "Gramazio, F., Kohler,M., Langenberg, S. (eds.), (2014), Fabricate: Negotiating Design and Making, Riverside Architectural Press, Zürich.",
@@ -139,12 +353,12 @@
    "Corser, R. (Ed.). (2006). Fabricating Architecture: Selected Readings in Digital Design and Manufacturing. Chronicle Books.",
    "Corser, R. (Ed.). (2006). Fabricating Architecture: Selected Readings in Digital Design and Manufacturing. Chronicle Books."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=517"
  },
  "MBL 531E": {
   "code": "MBL 531E",
   "name": "Mimarlıkta Bilgisay.Program.",
+  "nameEn": "Computer Program. in Archit.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -184,6 +398,77 @@
    "Hafta 13 · Mimarlık problemlerine dönük programlama uygulamaları",
    "Hafta 14 · Mimarlık problemlerine dönük programlama uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Programlamanın temel kavramları; Bir problemin bilgisayar ortamında programlanma süreci",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Progamlama arayüzlerinin tanıtımı, standart fonksiyonlar ve giriş-çıkış komutları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Operatörler: Aritmetik, ilişkisel ve mantıksal operatörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Değişken ve veri tipleri: Standart ve özel veri tipleri; İfadeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Dizi veri tipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kontrol deyimleri: If, Case",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Döngü yapıları ve deyimleri: While, Repeat, For, Goto",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Alt program deyimleri: Fonksiyonlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Alt program deyimleri: Prosedürler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Dosyalama işlemleri: Dosyaya veri yazma, dosyadan veri okuma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Mimari formun bilgisayara tanımında kullanılan modeller, tanım teknikleri",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Mimari formun bilgisayara tanımıyla ilgili uygulamalar",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Mimarlık problemlerine dönük programlama uygulamaları",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Mimarlık problemlerine dönük programlama uygulamaları"
+   }
+  ],
   "textbooks": [
    "Cormen, T., H., Leiserson, C., E., Rivest, R., L., Stein, C., 2009, Introduction to Algoritms, MIT Press.",
    "Cormen, T., H., Leiserson, C., E., Rivest, R., L., Stein, C., 2009, Introduction to Algoritms, MIT Press.",
@@ -196,12 +481,12 @@
    "Terzidis, K., 2006, Algorithmic Architecture, Elsevier.",
    "Terzidis, K., 2006, Algorithmic Architecture, Elsevier."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=531",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=531"
  },
  "MBL 533E": {
   "code": "MBL 533E",
   "name": "Bilgisayar Destekli Mimar.Tas.",
+  "nameEn": "Computer Aided Arch.Design",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -237,6 +522,77 @@
    "Hafta 13 · Modelleme sürecinde malzeme kullanımı",
    "Hafta 14 · Görselleştirme teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mimari Tasarımda Bilgisayarın Rolü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "CAD Programlarından Örnekler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "3D objeler ile modelleme teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "2D Şekiller ile modelleme teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Dönüştürme işlemleri, Deformasyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Kopyalama teknikleri ile model üretimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Parametrik modelleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Parametrik modelleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem projesi ile ilgili hazırlıkların sunumu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Düzenleme işlemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Düzenleme işlemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Form üretiminde malzemenin rolü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Modelleme sürecinde malzeme kullanımı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Görselleştirme teknikleri"
+   }
+  ],
   "textbooks": [
    "Kelly L. Murdock, “3DS Max 2010 Bible “,Wiley Publition Inc., 2009",
    "Kelly L. Murdock, “3DS Max 2010 Bible “,Wiley Publition Inc., 2009",
@@ -249,12 +605,12 @@
    "Robert J. Krawczyk , Ying-Chun Hsu , “Architectural Interpretation of Cellular Automata”,Illinois Institute of Technology, College of Architecture, Chicago, IL.",
    "Robert J. Krawczyk , Ying-Chun Hsu , “Architectural Interpretation of Cellular Automata”,Illinois Institute of Technology, College of Architecture, Chicago, IL."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=533",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=533"
  },
  "MBL 537E": {
   "code": "MBL 537E",
   "name": "Architectural Design Futures",
+  "nameEn": "Architectural Design Futures",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -287,6 +643,77 @@
    "Hafta 13 · Gelecek Manifestoları: Ütopya ve Distopyalar",
    "Hafta 14 · Tasarım ve Gelecek Üzerine Tartışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mimari Tasarım Olgusu: kavram/süreç",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Mimari Tasarım Olgusu: ürün/söylem",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Elektronik İletişim ve Bağlı Toplum",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarım Kuramları: Analitik Tasarım Modelleri ve Süreçleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım Kuramları: Sezgisel Tasarım Modelleri ve Süreçleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yaratıcılık ve Fütürizm",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Tasarım Araçları, Teknoloji ve Ortam",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "21.yy Zorunlulukları ve Tasarım",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Tasarımda İnnovatif Yaklaşımlar",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarımda Açık Kaynak Yaklaşımları",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım Modelleme ve Sistematik Yaklaşımlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Siberuzay, Sanal Gerçeklik, Arttırılmış Gerçeklik Uygulamaları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Gelecek Manifestoları: Ütopya ve Distopyalar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım ve Gelecek Üzerine Tartışmalar"
+   }
+  ],
   "textbooks": [
    "Mitchell, W.J., E-topia, Massachusetts: The MIT Press, 1999.",
    "Helfand, J.(ed.), Six Essays on Design and New Media, New York: W. Drenttel, 1997.",
@@ -297,12 +724,12 @@
    "Poggenpohl S., Sato, K.(eds.) 2009. Design Integrations: Research and Collaboration, Intellect, Bristol, UK.",
    "Kalay, Y. E. 2004. Architecture's new media: Principles, theories, and methods of computer-aided design. Cambridge, MA: MIT Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=537",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=537"
  },
  "MBL 538": {
   "code": "MBL 538",
   "name": "Sanal Mimari Tasar.Stüdyosu",
+  "nameEn": "Virtual Architectural Design Studio",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -337,6 +764,77 @@
    "Hafta 13 · Sanal tasarım stüdyosunda bir mimari tasarım için bilginin paylaşımı",
    "Hafta 14 · Sanal stüdyoda tasarım"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sanal tasarım stüdyosu çalışmalarının tarihçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sanal tasarım stüdyosu için gereken yazılım ve donanım özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İnsan-bilgisayar etkileşimi; Bilgisayar aracılığıyla ortak tasarım kavramı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sanal tasarım stüdyosunun organizasyonu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım enformasyonunun temsili",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarım enformasyonunun dokümantasyonu ve iletişimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "İletişim yaklaşımları: eş zamanlı ve eş olmayan zamanlı işbirliği ortamları",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Sanal mimari tasarım stüdyosunda kullanılan yaklaşımlar",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Sanal stüdyoda ortak tasarıma katılım modelleri",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Sanal stüdyoda mimari tasarım çalışmaları",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Fiziksel ve sanal obje tasarımları",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Ortak sanal tasarım uygulamaları",
+    "outcomes": "4-5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Sanal tasarım stüdyosunda bir mimari tasarım için bilginin paylaşımı",
+    "outcomes": "4-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Sanal stüdyoda tasarım"
+   }
+  ],
   "textbooks": [
    "Bertol, D., Foell, D., (1997), Designing Digital Space: An Architect’s Guide to Virtual Reality, John Wiley & Sons, U.S.A.",
    "Eisenstadt,M., Vincent,T., (eds) (2000), The Knowledge Web:Learning and Collaborating on the Net, Kogan Page, London.",
@@ -344,12 +842,12 @@
    "Wojtowicz, J., (1995), Virtual Design Studio, Hong Kong University Press, Hong Kong.",
    "Zampi, G., Morgan, C.L., (1995), Virtual Architecture, McGraw Hill, New York."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=538",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=538"
  },
  "MBL 549E": {
   "code": "MBL 549E",
   "name": "Special Top.in Arch.Des.Comp.",
+  "nameEn": "Special Top.in Arch.Des.Comp.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -381,16 +879,87 @@
    "Hafta 13 · Ders açıldığında duyurulacaktır.",
    "Hafta 14 · Ders açıldığında duyurulacaktır."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Ders açıldığında duyurulacaktır."
+   }
+  ],
   "textbooks": [
    "Derste kullanılacak kaynaklar her dönem dersin içeriğine uygun olarak belirlenecektir.",
    "Derste kullanılacak kaynaklar her dönem dersin içeriğine uygun olarak belirlenecektir."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=549",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=549"
  },
  "MBL 550E": {
   "code": "MBL 550E",
   "name": "Design Cognition",
+  "nameEn": "Design Cognition",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -424,6 +993,77 @@
    "Hafta 13 · Tasarım Becerisi",
    "Hafta 14 · Tasarımda Öğrenme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biliş biliminin gelişimi ve insan bilişi hakkında öne çıkan teoriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biliş Bilimi Çalışma Alanları ve Yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temsil, Bellek, Usavurum",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Arama, Problem Çözme, Protokol Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Konumlanmış Biliş , Dağılmış Biliş ve Tasarım",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarıma dair Görüşler, Tasarım Çalışmaları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tasarımda Görsel Düşünme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Dışsal Temsiller ve Tasarımda Düşünme I",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dışsal Temsiller ve Tasarımda Düşünme II",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarımda Durum Bazlı ve Analojik Usavurum",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarımda Yaratıcılık",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarımda Uzmanlık",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım Becerisi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarımda Öğrenme"
+   }
+  ],
   "textbooks": [
    "Bechtel, W. and G. Graham, Eds. (1999). A Companion to Cognitive Science. Blackwell Publishers Ltd, Oxford.",
    "Cross, N., H. Christiaans, et al., Eds. (1996). Analyzing Design Activity. John Wiley & Sons, Chichester, New York",
@@ -431,12 +1071,12 @@
    "C. Eastman, W. Newstetter, M. McCracken eds. (2000). Design Knowing and Learning: Cognition in Design Education. Elsevier Science Press, Amsterdam, New York.",
    "Holyak K. J. (2005). The Cambridge Handbook of Thinking and Reasoning. Cambridge, Cambridge University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=550",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=550"
  },
  "MBL 553E": {
   "code": "MBL 553E",
   "name": "Tasarım.Hesap.Dil.Kur.&Uygula.",
+  "nameEn": "Theo.&App.of Comp.Lang.in Des.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -469,16 +1109,87 @@
    "Hafta 13 · Görsel programlama ile hesaplamalı örüntü üretimi",
    "Hafta 14 · Hesaplamalı örüntü modellerinin üretim için değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hesaplamalı tasarım kuramına giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Hesaplamalı tasarım tarihine genel bakış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Mimaride hesaplamalı tasarım kuramının temel soru ve sorunları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Hesaplamalı bilimlerin altında hesaplamalı tasarım",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Hesaplamalı tasarımda algoritma",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Hesaplamalı tasarımda biçim: biçimin matematiksel tanımı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Hesaplamalı tasarım yöntemi olarak biçim grameri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Biçim grameri uygulamaları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Hesaplamalı tasarım modellerinde örüntüler: doğal örüntüler-yapay örüntüler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Biçim grameri ile hesaplamalı örüntü analizi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Biçim grameri ile hesaplamalı örüntü üretimi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Script dili ile hesaplamalı örüntü üretimi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Görsel programlama ile hesaplamalı örüntü üretimi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Hesaplamalı örüntü modellerinin üretim için değerlendirilmesi"
+   }
+  ],
   "textbooks": [
    "--",
    "--"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=553",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=553"
  },
  "MBL 555E": {
   "code": "MBL 555E",
   "name": "Digital.of Archite.Heritage",
+  "nameEn": "Digital.of Archite.Heritage",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -511,18 +1222,89 @@
    "Hafta 13 · Görselleştirme aracı olarak alternatif dijital ortamların kullanımı",
    "Hafta 14 · Üretilen çalışmalar üzerinden tartışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mimari Miras sayısallaştırma temel kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mimari Miras sayısallaştırma örnekleri ve uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Sayısal ortamda belgeleme teknikleri örnekleri (Lazer tarama- fotogrametri vb.)",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Belgeleme teknikleri ve sayısallaştırma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sayısal Kültür Mirası alanında Alternatif Uygulamalar",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Hızlı 3D Sayısallaştırma",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Etkileşimli Sarmalayıcı Çevreler",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem projesi üzerine tartışma, alan gezisi",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 9,
+    "topic": "Alanda belgeleme tekniklerinin uygulanması ve veri toplama",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal araçlarla veri toplama ve veri işleme",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Proje geliştirme ve 3D Modelleme üzerine kritikler",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Görselleştirme metodları ve çıktıları üzerine kritikler, Uygulamalar",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Görselleştirme aracı olarak alternatif dijital ortamların kullanımı",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Üretilen çalışmalar üzerinden tartışmalar"
+   }
+  ],
   "textbooks": [
    "• Din, H. & Wu, S. (Eds.) Digital Heritage and Culture: Strategy and Implementation, World Scientific, 2014.",
    "• Ioannides, M., Martins, J., Žarnić, R., Lim, V. (Eds.) Advances in Digital Cultural Heritage, Springer International Publishing AG., 2018",
    "• Vincent, M.L., López-Menchero Bendicho, V.M., Ioannides, M., Levy, Th.E. (Eds.), Heritage and Archaeology in the Digital Age: Acquisition, Curation and Dissemination of Spatial Cultural Heritage Data, Springer International Publishing AG., 2017.",
    "• Galani, A., Rhiannon, M., Arrigoni, G. (Eds.) European Heritage, Dialogue and Digital Practices, Routledge Focus, 2019."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=555",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=555"
  },
  "MBL 557E": {
   "code": "MBL 557E",
   "name": "Mimarlıkta Malzeme Tabanlı Hesaplamalı Tasarım",
+  "nameEn": "Mater.Based Comp.Des.in Archi.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -556,6 +1338,77 @@
    "Hafta 13 · Mimari tasarım sürecinde prototip oluşturma",
    "Hafta 14 · Mimari tasarımda malzeme sentezi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mimarlıkta malzeme-tabanlı hesaplamalı tasarım",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Doğal sistemlerde malzeme, biçim ve performans arasındaki ilişki",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Bütünleşik hesaplamalı tasarım yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Mimari tasarım sürecinde malzeme",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yapı malzemesi tür ve özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Mimari geometri ve malzeme ilişkisi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Farklı strüktür türlerinde malzemeler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Malzemelerin performans değerlendirmeki rolü",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Mimari tasarımda optimizasyon süreçleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal üretim araçlarında malzeme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Malzeme sistemleri geliştirme",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Ölçekler arası tasarım",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Mimari tasarım sürecinde prototip oluşturma",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Mimari tasarımda malzeme sentezi"
+   }
+  ],
   "textbooks": [
    "1. Gramazio, F., Kohler, M. and Langenberg, S. (2014). Fabricate: Negotiating design & making, gta Verlag, Zurich.",
    "2. Kolarevich, B., Klinger, K. (2008). Manufacturing Material Effects Rethinking Design and Making Architecture, Routledge, New York.",
@@ -563,12 +1416,12 @@
    "4. McDowell, D.L., Pancal, J.H., Choi, H., Seepersad, C.C., Allen, J.K., Mistree, F. (2010). Integrated Design of Multiscale Multifunctional Materials and Products, Elsevier, Burlington-MA.",
    "5. Terzidis, K. (2006). Algorithmic Architecture, Elsevier, Oxford-UK."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=557",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=557"
  },
  "MBL 559E": {
   "code": "MBL 559E",
   "name": "Mimari Tasarımda Makine Öğrenmesi",
+  "nameEn": "Machine Learn.for Arch.Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -602,17 +1455,88 @@
    "Hafta 13 · Araçlar (2) PyTorch",
    "Hafta 14 · Modellerin veri kümelerine uygulanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makine öğrenmesinin temel kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık tekrarı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Veri toplanması ve veri kümesi oluşturulması",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Regresyon ve mekansal regresyon",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Denetimsiz öğrenme, kümeleme",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Denetimli öğrenme, resim etiketleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Destek vektör makineleri ve mimaride uygulamaları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Pekiştirmeli öğrenme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Pekiştirmeli öğrenme uygulamaları, Unity ortamında etmenler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Yapay sinir ağları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Yapay sinir ağlarının mimarlıktaki uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Araçlar, Tensorflow, Keras",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Araçlar (2) PyTorch",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Modellerin veri kümelerine uygulanması"
+   }
+  ],
   "textbooks": [
    "1. Russell, S., & Norvig, P. (2002). Artificial Intelligence: A Modern Approach",
    "2. Géron, A. (2019). Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems. O'Reilly Media.",
    "3. Kelleher, J.D. (2019). Deep Learning, MIT Press Essential Knowledge series."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=559",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=559"
  },
  "MBL 596": {
   "code": "MBL 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -656,6 +1580,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -668,12 +1663,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=596"
  },
  "MBL 611": {
   "code": "MBL 611",
   "name": "Sayısal Tasar.Fenom.&Herme.",
+  "nameEn": "Phenomenology and Hermeneutics in Computational Design",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -705,6 +1700,77 @@
    "Hafta 13 · Final makalesinin konuları hakkında açık ve bireysel tartışmalar;",
    "Hafta 14 · Final makalelerinin sunumları;"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Zihin ve Metafor",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Hermenötik Fenomenoloji kuramı ve ilişkili kavramları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Bir mimari proje olarak yorumlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sayısal düşünme ve yorum",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarımın kuralları & kuralları tasarlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Mimari temsil, fenomenoloji ve yorumlama",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Teknoloji, deneyim ve sayısal düşünme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Malzemelerin hermenötik fenomenolojisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Araçların hermenötik fenomenolojisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Mekanların hermenötik fenomenolojisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Hermenötik hesaplama modeli olarak tasarım",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Hermenötik hesaplama örnekleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Final makalesinin konuları hakkında açık ve bireysel tartışmalar;",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Final makalelerinin sunumları;"
+   }
+  ],
   "textbooks": [
    "Brown, T. (2002). Mathematics Education and Language: Interpreting Hermeneutics and Post-Structuralism. Kluwer Academic Publishers, Dordrecht, North Holland.",
    "Snodgrass, A. Coyne, R. (2006). Interpretation in Architecture: Design as a way of thinking. Routledge: Taylor and Francis, New York.",
@@ -713,12 +1779,12 @@
    "Van Manen, M. (2014). Phenomenology of Practice, Left Coast Press.",
    "Ihde, D. (1999). Expanding Hermeneutics: Visualism in Science. Evanston, IL: Northwestern University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=611",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=611"
  },
  "MBL 621E": {
   "code": "MBL 621E",
   "name": "Adv.Topics in Compu.Cognition",
+  "nameEn": "Adv.Topics in Compu.Cognition",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -750,6 +1816,77 @@
    "Hafta 13 · Bilgisayar deneylerinden elde edilen sonuçların analizi",
    "Hafta 14 · Mİmarlıkta hsaplamalı biliş araştırmalarının gelecekteki yönelimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hesaplamalı bilişin mimari tasarım araştırmalarında ikili rolü",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Birinci Rol: Hesaplamalı bilişsel tasarım kararlarının temsili",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım problemi formülasyonu I: Karar değişkenleri ve bunların mimari elemanların ayrıntılı özelliklerine uygunluğu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarım problemi formülasyonu II: Amaç fonksiyonlar ve tasarım ölçütlerine uygunluğu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Karar değişkeni alanında baskın olmayan çözümlerin sürekliliğinin tasarımda karar verme bağlamında oluşturulması ve yorumlanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Bilgisayar Deneyleri I: Hesaplamalı Biliş ile tasarım",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Bilgisayar deneylerinden elde edilen sonuçların analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "İkinci Rolü: Mimarlığın değerlendirilmesi ile ilgili olguları temsil etmek için hesaplama bilişi kullanarak mimari bilgi çıkarımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgi ortaya çıkarma probleminin formülasyonu I: Karar değişkenleri ve mimarlık deneyimi esnasında ayrıntılı algısal özelliklerdeki karşılıkları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgi ortaya çıkarma problemi formülasyonu II: Amaç fonksiyonlar ve bunların insanın bilişsel sistemindeki hedeflerdeki karşılıkları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Baskın olmayan çözümlerin sürekliliğinin mimarlık değerlendirmesinin temsili bağlamında oluşturulması ve yorumlanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgisayar deneyleri II: Mimarlığın hesaplamalı bilişle değerlendirilmesini temsili",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgisayar deneylerinden elde edilen sonuçların analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Mİmarlıkta hsaplamalı biliş araştırmalarının gelecekteki yönelimleri"
+   }
+  ],
   "textbooks": [
    "M.V. Butz and E. F. Kutter. How the Mind Comes into Being: Introducing Cognitive Science from a Functional and Computational Perspective. Oxford, UK: Oxford University Press, 2017.",
    "A. Clark. Surfing Uncertainty - Prediction, Action, and the Embodied Mind. New York, USA: Oxford University Press, 2016.",
@@ -757,12 +1894,12 @@
    "J.M. Keller, D. Liu, and D.B. Fogel. Fundamentals of Computational Intelligence – Neural Networks, Fuzzy Systems, and Evolutionary Computation. Hoboken, USA: Wiley, 2016.",
    "D. Dutton. The Art Instinct: Beauty, Pleasure & Human Evolution, New York, USA: Bloomsbury Press, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=621",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=621"
  },
  "MBL 696": {
   "code": "MBL 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -806,6 +1943,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -818,7 +2026,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBL&dersNo=696"
  }
 }

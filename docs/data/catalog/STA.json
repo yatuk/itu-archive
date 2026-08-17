@@ -2,6 +2,7 @@
  "STA 201": {
   "code": "STA 201",
   "name": "Statik",
+  "nameEn": "Statics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -36,16 +37,88 @@
    "Hafta 13 · Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
    "Hafta 14 · Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Statiğin ilkeleri, vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağırlık merkezi, Pappus-Guldinus teoremleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yükler, kirişler, Gerber kirişleri, kesit tesir diyagramları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem kafesler ve çözüm yöntemleri",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kablolar ve zincirler 1. Yıliçi sınavı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sürtünme (kuru sürtünme)",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sürtünme (vida, kayış, yuvarlanma direnci)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yayılı yükler ve hidrostatik kuvvetler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Uzay kafes sistemler ve çözüm yöntemleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Statik, M. Bakioğlu, Birsen, 2006, 9755114432",
    "Statik, M.Omurtag, Birsen, 2009, 9789755114774"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=201"
  },
  "STA 201E": {
   "code": "STA 201E",
   "name": "Statik",
+  "nameEn": "Statics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -80,16 +153,88 @@
    "Hafta 13 · Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
    "Hafta 14 · Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Statiğin ilkeleri, vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağırlık merkezi, Pappus-Guldinus teoremleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yükler, kirişler, Gerber kirişleri, kesit tesir diyagramları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem kafesler ve çözüm yöntemleri",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kablolar ve zincirler 1. Yıliçi sınavı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sürtünme (kuru sürtünme)",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sürtünme (vida, kayış, yuvarlanma direnci)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yayılı yükler ve hidrostatik kuvvetler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Uzay kafes sistemler ve çözüm yöntemleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Statik, M. Bakioğlu, Birsen, 2006, 9755114432",
    "Statik, M.Omurtag, Birsen, 2009, 9789755114774"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=201"
  },
  "STA 202": {
   "code": "STA 202",
   "name": "Statik",
+  "nameEn": "Statics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -124,16 +269,88 @@
    "Hafta 13 · Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
    "Hafta 14 · Virtüel iş 2. Yıliçi Sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Statiğin ilkeleri, vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağırlık merkezi, Pappus-Guldinus teoremleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yükler, kirişler, Gerber kirişleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem kafesler ve çözüm yöntemleri",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kablolar 1. Yıliçi Sınavı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sürtünme (kuru sürtünme)",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sürtünme (vida, kayış, yuvarlanma direnci)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yayılı yükler ve hidrostatik kuvvetler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Uzay kafes sistemler ve çözüm yöntemleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Virtüel iş 2. Yıliçi Sınavı",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Statik, M. Bakio&eth;lu, Birsen, 2006, 9755114432",
    "Statik, M.Omurtag, Birsen, 2009, 978975511477"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=202"
  },
  "STA 202E": {
   "code": "STA 202E",
   "name": "Statik",
+  "nameEn": "Statics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -168,16 +385,88 @@
    "Hafta 13 · Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
    "Hafta 14 · Virtüel iş 2. Yıliçi Sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Statiğin ilkeleri, vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağırlık merkezi, Pappus-Guldinus teoremleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yükler, kirişler, Gerber kirişleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem kafesler ve çözüm yöntemleri",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kablolar 1. Yıliçi Sınavı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sürtünme (kuru sürtünme)",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sürtünme (vida, kayış, yuvarlanma direnci)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yayılı yükler ve hidrostatik kuvvetler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Uzay kafes sistemler ve çözüm yöntemleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Virtüel iş 2. Yıliçi Sınavı",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Statik, M. Bakio&eth;lu, Birsen, 2006, 9755114432",
    "Statik, M.Omurtag, Birsen, 2009, 978975511477"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=202"
  },
  "STA 204": {
   "code": "STA 204",
   "name": "Statik ve Mukavemet",
+  "nameEn": "Statics&Strength of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -213,16 +502,88 @@
    "Hafta 13 · Burulma,",
    "Hafta 14 · Basit eğilme 2. Yıliçi Sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Statiğin ilkeleri, vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağırlık merkezi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bağ ve bağ kuvvetleri, statikçe belirli sistemler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yükler, kirişler,",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem kafesler ve çözüm yöntemleri",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kablolar 1. Yıliçi Sınavı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kesit tesirleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Gerilme, şekil değiştirme",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Normal kuvvet, kesme kuvveti",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 12,
+    "topic": "Eylemsizlik momenti",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Burulma,",
+    "outcomes": "2-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Basit eğilme 2. Yıliçi Sınavı",
+    "outcomes": "2-6-7"
+   }
+  ],
   "textbooks": [
    "Statik Mukavemet, M. Bakioğlu, Beta, 2007, 9789752956872",
    "Statik Mukavemet, M. Omurtag, Nobel, 2007, 9789944771887"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=204"
  },
  "STA 204E": {
   "code": "STA 204E",
   "name": "Statik ve Mukavemet",
+  "nameEn": "Statics&Strength of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -258,11 +619,82 @@
    "Hafta 13 · Burulma,",
    "Hafta 14 · Basit eğilme 2. Yıliçi Sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Statiğin ilkeleri, vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağırlık merkezi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bağ ve bağ kuvvetleri, statikçe belirli sistemler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yükler, kirişler,",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem kafesler ve çözüm yöntemleri",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kablolar 1. Yıliçi Sınavı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kesit tesirleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Gerilme, şekil değiştirme",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Normal kuvvet, kesme kuvveti",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 12,
+    "topic": "Eylemsizlik momenti",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Burulma,",
+    "outcomes": "2-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Basit eğilme 2. Yıliçi Sınavı",
+    "outcomes": "2-6-7"
+   }
+  ],
   "textbooks": [
    "Statik Mukavemet, M. Bakioğlu, Beta, 2007, 9789752956872",
    "Statik Mukavemet, M. Omurtag, Nobel, 2007, 9789944771887"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STA&dersNo=204"
  }
 }

@@ -2,6 +2,7 @@
  "KET 506E": {
   "code": "KET 506E",
   "name": "Envir.Evalu.of Urban Open Spac",
+  "nameEn": "Envir.Evalu.of Urban Open Spac",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -33,6 +34,77 @@
    "Hafta 13 · Yaşam kalitesi konusunda araştırma örnekleri",
    "Hafta 14 · Yaşam kalitesi konusunda araştırma örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin içeriği ve hedeflerinin tanıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Şehirsel açık alanlar: Tanımlar, çeşitler ve ilgili araştırmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kamusal mekan ve kamusal yaşam: Kamusal alanın değeri ve tarihsel gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Açık alan aktiviteleri ve yaşam kalitesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Çevre değerlendirme araştırmalarına giriş",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çevre değerlendirme araştırmaları: Çevre değerlendirme konusunda araştırma tasarımı, soru formunun hazırlanması, soruşturma teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çevre değerlendirme araştırmaları: Veri toplama ve veri analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Konut alanları değerlendirilmesinde araştırma örnekleri, Yarıyıl içi sınavı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kullanıcıların konut alanlarını değerlendirmesi konusunda araştırma örnekleri: Algılama,tercih, memnuniyet,bağlılık, hareketlilik ve yer değiştirme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Özürlüler, çocuklar ve yaşlılar açısından konut çevresinin değerlendirilmesi konusunda araştırma örnekleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kullanıcıların kamusal alanları değerlendirmesi konusunda araştırma örnekleri: Parklar, sokaklar, meydanlar ve diğer şehirsel açık alanlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Şehir imaji ve kimlik konusunda araştırma örnekleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yaşam kalitesi konusunda araştırma örnekleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yaşam kalitesi konusunda araştırma örnekleri"
+   }
+  ],
   "textbooks": [
    "Moore G.T. and Marans R (1997) Volume 4: Toward the Integration of Theory, Methods, Research, and Utilization, Series: Advances in Environment, Behavior and Design, Vol. 4 Springer,",
    "Francis, M (1987) Urban Open Spaces in Advances in Environment Behavior and Design, Volume 1, Chapter 4, E.H. Zube&G.T. Moore (eds.by) NY: Plenum Press.",
@@ -40,12 +112,12 @@
    "Carr, S., Francis M., Rivlin, L.G.& Stone, A.M.: Public Space, Cambridge University Presss",
    "Whyte, W (1988) City: Rediscovering the City Center, NY: Double Day"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=506",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=506"
  },
  "KET 509": {
   "code": "KET 509",
   "name": "Kentsel Tasarım Kuramı",
+  "nameEn": "Urban Design Theory",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -77,6 +149,77 @@
    "Hafta 13 · Toplumbilim kökenli kuramsal yaklaşımlar",
    "Hafta 14 · Ekolojik tasarım kuramları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yerleşmeler sistemi ve düzeni, mekan,",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kentsel mekan tanımlamaları, içerik ve yorumları,",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kullanıcı yapısı, psikolojik, duyusal özellikleri, kültürü, yaşam biçimi ve davranış kalıpları,",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Algılama, anlamlandırma, değerlendirme sistemleri,",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Bilinç, bellek ve karar oluşturma yetisi ile ilgili süreçler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Kentsel mekan tasarımı ile ilgili kuramlar;",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Karar kuramı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Davranışsal kuramlar,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Algılama kuramı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Bilişsel kuram,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Mekana biçimsel yaklaşım ve değerlendirmeler getiren kuramlar, -Gestalt Kuramı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Varoluşsal mekan kuramı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Toplumbilim kökenli kuramsal yaklaşımlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Ekolojik tasarım kuramları"
+   }
+  ],
   "textbooks": [
    "Thorns, David C., (2002), The Transformation Of Cities Urban Theory And Urban Life, Houndmills, Balsingstoke, Hampshire ; New York : Palgrave,",
    "Arnheim, R. , (1996), Anschauliches Denken,Köln,Dumont.",
@@ -84,12 +227,12 @@
    "Rudez, Z. (1988), Stadtraum, Köln.",
    "Cliff, M., (1992), Urban Design Street And Square, Oxford."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=509"
  },
  "KET 511": {
   "code": "KET 511",
   "name": "Kentsel Tasarım Projesi I",
+  "nameEn": "Studio I (Urban Design Project)",
   "language": "Türkçe",
   "credits": {
    "theory": 6,
@@ -121,6 +264,77 @@
    "Hafta 13 · Çağdaş ve geleceğe dönük olarak tasarlanan yerleşme düzeninin kurgusunun iki ve üç boyutlu tekniklerle ifadesi.",
    "Hafta 14 · Rapor ve sunuşların hazırlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çeşitli işlevleri içeren yeni bir yerleşme alanında yapısal, sosyal, ekonomik, kültürel niteliklerin belirlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Fiziksel çevre -yerleşme dokusu ilişkilerinin belirlenmesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Arazi kullanımı,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Ulaşım sistemi,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yapı düzeni çözümlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Diğer ilişkilerin çözümlenmesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yerleşme dokusunu oluşturan diğer öğelerin belirlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Öğeler arasındaki ilişkilerin belirlenmesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Planlama alternatifleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Planlama alternatifleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Proje ön çalışmaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Proje geliştirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çağdaş ve geleceğe dönük olarak tasarlanan yerleşme düzeninin kurgusunun iki ve üç boyutlu tekniklerle ifadesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Rapor ve sunuşların hazırlanması"
+   }
+  ],
   "textbooks": [
    "Alex Krieger And William S. Saunders, (Editors), (2009), Urban Design, Imprint Minneapolis : University Of Minnesota Press,",
    "Allen, J., Massey, D., Pryke, M., (1999), Understanding Cities-Unsettling Cities, The Open University.",
@@ -129,12 +343,12 @@
    "Lowe, M.D., (1992), Shaping Cities, Worldwatch Institute, New-York.",
    "Moughtin, C., (1992), Urban Design, Jordan Hill, Oxford."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=511"
  },
  "KET 521E": {
   "code": "KET 521E",
   "name": "Research Meth.for Urban Design",
+  "nameEn": "Research Meth.for Urban Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -167,6 +381,77 @@
    "Hafta 13 · Coğrafi bilgi sistemleri, alan araştırmaları; örnek olay",
    "Hafta 14 · Araştırma etiği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma kavramı,",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Niteliksel ve sayısal içerikli araştırmalar ve türleri,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırmanın aşamaları, araştırma süreci,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma tasarımı ve ön planlama aşaması: Kapsam, süreç ve zaman planlaması.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma teknikleri, anket tasarımı, gözlem,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Görüşme teknikleri, örneklem yöntemleri,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Varsayımların oluşturulması.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Veri toplanması, çözümlenmesi ve değerlendirilmesi,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Temel istatistik metodları ve kullanım amaçlarının tanıtılması: regresyon,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Korelasyon, çok değişkenli analiz teknikleri,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sınıflandırma, hipotez sınama vb. amaçlarla kullanılan ileri istatistik teknikleri.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yere ilişkin araştırma yöntemleri,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Coğrafi bilgi sistemleri, alan araştırmaları; örnek olay",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma etiği"
+   }
+  ],
   "textbooks": [
    "Creswell, John W. (2008), Research Design: Qualitative, Quantitative, and Mixed Methods Approaches, Sage Publications, Inc; 3rd edition ,",
    "Fowler, F.J., (2009), Survey Research Methods, Sage Publication Inc., London",
@@ -176,12 +461,12 @@
    "Zeisel, J., (1981), Inquiry by Design: Tools for Environment-Behavior Research, Cambridge: Cambridge University Press.",
    "Groat, L., Wang D., (2001) Architectural Research Methods, Wiley"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=521"
  },
  "KET 522": {
   "code": "KET 522",
   "name": "Arsa Geliştirme Süreci",
+  "nameEn": "Land Development Process",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -213,6 +498,77 @@
    "Hafta 13 · Trampa, Trampanın hukuki ve teknik boyutları, Satın alma, inşaat sözleşmeleri, arsa payı (kat karşılığı) inşaat sözleşmeleri, arsa satışı karşılığı gelir paylaşımı inşaat sözleşmeleri",
    "Hafta 14 · Arsa geliştirme sürecine yönelik örneklerin incelemesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Arsa geliştirme sürecinin tanımlanması ve arsa geliştirme sürecinde yer alan aktörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arsa geliştirme sürecinin tanımlanması ve arsa geliştirme sürecinde yer alan aktörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Uluslararası çerçevede arsa geliştirme süreçleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Uluslararası çerçevede arsa geliştirme süreçleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Ülkemizde arsa geliştirme süreci ve arsa geliştirme sürecinde yer alan aktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ülkemizde arsa geliştirmenin farklı modları, kentsel alanda kamu tarafından kentsel arsa geliştirilmesi,",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Ülkemizde arsa geliştirmenin farklı modları, kentsel alanda kamu tarafından kentsel arsa geliştirilmesi,",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Kentsel alanda özel ve tüzel kişiler tarafından kentsel arsa geliştirilmesi,",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Ülkemizde arazi edinim metodları ve kullanımları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Arazi ve arsa düzenlemesi, arazi ve arsa düzenlemesinin hukuki niteliği, arazi ve arsa düzenlemesinin teknik boyutları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Bireysel istek üzerine yapılan imar uygulamaları, tevhit (birleştirme), ifraz (ayırma), yola terk işlemleri, İsteğe bağlı uygulamaların hukuki yönü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Kamulaştırma, kamulaştırmada kamu yararı kavramı, kamulaştırma süreci hukuki ve teknik boyutu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Trampa, Trampanın hukuki ve teknik boyutları, Satın alma, inşaat sözleşmeleri, arsa payı (kat karşılığı) inşaat sözleşmeleri, arsa satışı karşılığı gelir paylaşımı inşaat sözleşmeleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Arsa geliştirme sürecine yönelik örneklerin incelemesi"
+   }
+  ],
   "textbooks": [
    "Türk, C. , Türk, Ş.Ş., Hukuki ve Teknik Boyutları ile Arazi ve Arsa Düzenlemesi (Land Readjustment with Legal and Technical Dimension ), Beta Yayınevi, 2006, ISBN 975-295-560-6.",
    "Ünal, Y., Türk Şehir Hukuku, Yetkin Kitapevi, 2003, Ankara.",
@@ -222,12 +578,12 @@
    "Dieterrich, H., Dransfeld, E., Voss, W., European urban land and property markets, London, UCL Press, 1993.",
    "Johnson, D.E., Residential Land Development Practices: A Textbook on Developing Land into Finished Lots, ASCE, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=522",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=522"
  },
  "KET 531E": {
   "code": "KET 531E",
   "name": "Ecologi.Prac.in Urban Design",
+  "nameEn": "Ecologi.Prac.in Urban Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -263,16 +619,87 @@
    "Hafta 13 · Ekolojik Kentsel Tasarıma Yönelik Çağdaş Yaklaşımlar ve Uygulamalar: Örnekler: Yeşil Altyapı, Süreç Temelli Tasarım, Dirençli Kentler, Sürdürülebilir Tasarım",
    "Hafta 14 · Ekolojik Kentsel Tasarıma Yönelik Çağdaş Yaklaşımlar ve Uygulamalar: Örnekler: Ekolojinin Temsili, Kavramsallaştırma, Haritalama, Kentsel atıl mekanlara yönelik rejeneratif Yaklaşımlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Neden Ekolojik Tasarım ? /Kentleşme süreci ve ekoloji temelli Problemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Ekoloji, Kentsel Tasarım, Kent Ekolojisi ve Ekolojik Tasarım",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Ekolojik Kentsel Tasarımda Eşikler / Kentsel Tasasarım Ekolojik Yaklaşımlar / Ekolojik Şehircilik, Yeşil Şehircilik, Sürüdürlebilir Şehircilik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kentsel Tasarımda Ekolojik Yaklaşımlar/ Peyzaj Şehirciliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Kent Formu, Strüktürü ve Dinamikleri. Peyzaj Ekolojisinden Öğrenmek / Mekansal Bir Teori Olarak Desen- Koridor Matris Modeli",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kent Ekolojisi: Kent içinde Ekoloji / Kentin Ekolojisi / Ekosistem olarak Kent / Kent hidrolojisi, toprağı, mikro-iklimi, florası, biyo-çeşitlilik, koridorlar, bağlantısallık",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Ekolojik Tasarım İlkeleri",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Performans: Kentsel mekan tasarımında ekolojik performans / Ekosistem hizmerleri kavramı",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Akışlar: Kent ve Su / Yağmur Suyu Yönetimi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Akışlar: Enerji, Materyal ve Atık. Haritalama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kentte Kenar Etkisi: Dinamik İlişkiler, Karılşamalar. Haritalama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Temalar ve Yaklaşımlar: Altyapı kavramı. Altyapı Şehirciliği, Bir altyapı olarak peyzaj",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Ekolojik Kentsel Tasarıma Yönelik Çağdaş Yaklaşımlar ve Uygulamalar: Örnekler: Yeşil Altyapı, Süreç Temelli Tasarım, Dirençli Kentler, Sürdürülebilir Tasarım",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Ekolojik Kentsel Tasarıma Yönelik Çağdaş Yaklaşımlar ve Uygulamalar: Örnekler: Ekolojinin Temsili, Kavramsallaştırma, Haritalama, Kentsel atıl mekanlara yönelik rejeneratif Yaklaşımlar"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=531",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=531"
  },
  "KET 532": {
   "code": "KET 532",
   "name": "İstanbulda Konut",
+  "nameEn": "Housing in Istanbul",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -304,6 +731,77 @@
    "Hafta 13 · İstanbul’da dönüşüm ve soylulaştırma",
    "Hafta 14 · Sosyal ve mekansal ayrışma: Kapalı siteler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İstanbul, konut-kent dokusu, teorik çerçeve ve tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İstanbul’da konut dokusunun tarihsel gelişimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Konut tipolojileri ve farklı aktörler: Tasarımcı, yüklenici firma, konut kullanıcısı arasındaki ilişkiler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "İstanbul’da göç, kentleşme, iktidar, güç ve politikalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yoğunluk: İstanbul’un konut alanlarındaki yoğunluk değişimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Hibridleşme: Kültür ve konutun çeşitlenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Modernleşme: Apartmanlaşma, sosyal, kültürel ve ekonomik dinamikler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Standartlaşma (tek tipleşme): Yap-satçılık ve TOKİ uygulamaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Konutta katılım ve sosyal dayanışma: Çekirdek konut ve büyüme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yerel mimari ya da mimarsız mimarlık: Gecekondulaşma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Küreselleşme ve İstanbul’da konut ve yerleşim alanlarındaki dönüşümler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "İstanbul’da değişim ve katmanlaşma: Gündelik yaşamda konut",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "İstanbul’da dönüşüm ve soylulaştırma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Sosyal ve mekansal ayrışma: Kapalı siteler"
+   }
+  ],
   "textbooks": [
    "Clapham, D. F., Clark, W., The SAGE Handbook of Housing Studies, Sage Publications, Ltd., 2012.",
    "Lefebvre, H., The Production of Space, Blackwell, Mass., 1997.",
@@ -311,12 +809,12 @@
    "Bartu Candan, A. , ÖzbayC., Yeni İstanbul Çalışmaları, Metis Yayıncılık, İstanbul, 2014.",
    "Perouse, J. F., Milyonluk Manzara, Kentsel Dönüşümün Resimleri, İletişim. 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=532",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=532"
  },
  "KET 596E": {
   "code": "KET 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -360,6 +858,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -372,7 +941,6 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KET&dersNo=596"
  }
 }

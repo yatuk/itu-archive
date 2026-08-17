@@ -2,6 +2,7 @@
  "UZM 501E": {
   "code": "UZM 501E",
   "name": "Mühendislik Matematiği",
+  "nameEn": "Enginering Mathematics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -38,18 +39,90 @@
    "Hafta 13 · Vektor diferansiyel and integral hesaplamaları",
    "Hafta 14 · Sayısal matematik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Vektor ve vektor uzayları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Matrisler ve lineer denklem sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Özdeğerler, özvektörler ve köşegenleştirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Karakteristik ve minimal polinomlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "İç çarpım uzayları ve ortogonolite. Hilbert uzayları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Fourier serileri, Fourier integralleri ve Fourier dönüşümleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Laplace dönüşümü",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Kompleks fonksiyonlarda limit, süreklilik ve türevlenebilirlik",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Cauchy-Riemann denklemleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Kompleks integrasyon ve Cauchy teoremi",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Taylor ve Laurent serileri. Kalanlar teoremi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Konform dönüşümler ve sınır değer problemlerine uygulanması",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Vektor diferansiyel and integral hesaplamaları",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Sayısal matematik",
+    "outcomes": "8-9"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=501"
  },
  "UZM 508E": {
   "code": "UZM 508E",
   "name": "Uzay Aracı Mimarileri ve Alt Sistem Tasarımı",
+  "nameEn": "Spacecraft Architecture and Subsystems Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -83,18 +156,90 @@
    "Hafta 13 · Uydu Yapı ve mekanizmalar alt sistemi",
    "Hafta 14 · Uyduların fırlatılması ve görev operasyonları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uzay Teknolojileri ve Güncel Eğilimler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uydu sınıflamaları, uydu görevleri ve örnekleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Uydu mimarileri ve uydu bütçeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Uydu kütle güç bütçe tahminleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Uydu Yönetim Alt Sistemi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Uydu Haberleşme Alt Sistemi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Uydu Haberleşme Alt Sistemi ve yer istasyonları",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Uydu Elektrik Güç Sistemleri, dış enerji kaynağına dayalı",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Uydu Elektrik Güç Sistemleri, iç enerji kaynağına dayalı",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Uydu Yörünge ve Yönelim Belirleme ve Kontrol Alt sistemi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Uydu İtki Sistemleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Uydu Isıl Koruma Sistemleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Uydu Yapı ve mekanizmalar alt sistemi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Uyduların fırlatılması ve görev operasyonları",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=508",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=508"
  },
  "UZM 509E": {
   "code": "UZM 509E",
   "name": "Uzay Fiziği I",
+  "nameEn": "Space Physics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -117,7 +262,6 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UZM&dersNo=509"
  }
 }

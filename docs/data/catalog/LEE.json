@@ -2,6 +2,7 @@
  "LEE 901E": {
   "code": "LEE 901E",
   "name": "Akademik Girişimcilik",
+  "nameEn": "Academic Entrepreneurship",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -37,6 +38,77 @@
    "Hafta 13 · Finans: Tohum ve Girişim Sermayesi",
    "Hafta 14 · İş Vakası Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Akademik Girişimcilik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Girişimleri Riskten Arındırmak",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Fikri Mülkiyet",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yalın Başlatma Paneli Metodolojisi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "İş Modeli Kanvası",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Müşteri Segmentleri ve Türleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Değer Önerisi Tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İnovasyon Vaka Çalışması(Değer Önerisi)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Müşteri Keşfi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Girişimci Yatırımcı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sorun ve Önerilen Çözüm - Proje Geliştirme Planı (A/B/C)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Değer Önerisi ve Müşteri Keşfi Doğrulaması - Proje Geliştirme Planı (A/B/C)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Finans: Tohum ve Girişim Sermayesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "İş Vakası Sunumları"
+   }
+  ],
   "textbooks": [
    "Osterwalder, A., Pigneur, Y., & Clark, T. (2010). Business model generation: A handbook for visionaries, game changers, and challengers. Hoboken, NJ: Wiley.",
    "Osterwalder, A., Pigneur, Y., & Clark, T. (2010). Business model generation: A handbook for visionaries, game changers, and challengers. Hoboken, NJ: Wiley.",
@@ -49,12 +121,12 @@
    "Hartung, H. & Rottenberg, S. (2019). Human-centered design: Understanding Customer’s needs through discovery and interviewing. Academic Entrepreneurship for Medical and Health Scientists, 1(4), 1-8",
    "Hartung, H. & Rottenberg, S. (2019). Human-centered design: Understanding Customer’s needs through discovery and interviewing. Academic Entrepreneurship for Medical and Health Scientists, 1(4), 1-8"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=901"
  },
  "LEE 904": {
   "code": "LEE 904",
   "name": "Yönlendirilmiş Çalışmalar",
+  "nameEn": "Directed Studies",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -90,15 +162,86 @@
    "Hafta 13 · Yayın Değerlendirme",
    "Hafta 14 · Sunumlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Araştırma Sorusunun Oluşturulması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Literatür Taraması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma Tasarımı: Nicel ve Nitel Yöntemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma Önerisinin Değerlendirilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Veri Toplama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ara Rapor 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Toplama Yöntemlerinin Değerlendirilmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Veri Analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yayın İçeriğinin Oluşturulması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Ara Rapor 2",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Bulguların Metin, Tablo ve Grafik Formatlarda Raporlanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tartışma ve Sonuçlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yayın Değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=904",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=904"
  },
  "LEE 905": {
   "code": "LEE 905",
   "name": "İnovas.Teknik.&Patent Süreç.",
+  "nameEn": "Inovations Techniques and Patent Processes",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -136,10 +279,80 @@
    "Hafta 13 · Patent Proje Sunum",
    "Hafta 14 · Patent Proje Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnovasyon ve yenilikçi düşünce",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İnovasyon kaynakları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İnovasyon türleri ve inovasyonda yaşanan zorluklar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "İnovasyon teknikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Triz ve metodolojisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Triz matrisleri oluşturma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Triz ve örnek olaylar üzerine çalışmalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Patent ve süreçleri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Patent taraması ve yazımı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Patent koruma",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Patentin ürüne dönüştürülmesi",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Patentin ticarileştirilmesi",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Patent Proje Sunum",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Patent Proje Sunum"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=905",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=905"
  }
 }

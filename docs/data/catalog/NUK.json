@@ -2,6 +2,7 @@
  "NUK 501E": {
   "code": "NUK 501E",
   "name": "Engineering Mathematics",
+  "nameEn": "Engineering Mathematics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -35,6 +36,64 @@
    "Hafta 13 · Veri analizi ve olasılık teoremi, dağılımlar, rastgele değişkenler",
    "Hafta 14 · Matematiksel istatistik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Birinci mertebe adi diferansiyel denklemler"
+   },
+   {
+    "week": 2,
+    "topic": "İkinci mertebe lineer diferansiyel denklemler"
+   },
+   {
+    "week": 3,
+    "topic": "Yüksek mertebe lineer diferansiyel denklemler"
+   },
+   {
+    "week": 4,
+    "topic": "Adi diferansiyel denklemlerin serilerle çözümleri, özel fonksiyonlar (Legendre polinomları, asosiye Legendre fonksiyonları, Bessel denklemi, Bessel fonksiyonları, Sturm-Liouville özdeğer problemleri)"
+   },
+   {
+    "week": 5,
+    "topic": "Laplace dönüşümü, Dirac delta fonksiyonu"
+   },
+   {
+    "week": 6,
+    "topic": "Lineer cebir: matrisler, vektörler, determinantlar, lineer sistemler"
+   },
+   {
+    "week": 7,
+    "topic": "Lineer cebir: matris özdeğer problemleri"
+   },
+   {
+    "week": 8,
+    "topic": "Vektör diferansiyel hesabı: Grad, Div, Curl, Laplasyen operatörünün öz fonksiyonları ve özdeğerleri"
+   },
+   {
+    "week": 9,
+    "topic": "Laplace Denklemi, Gauss teoremi, Green fonksiyonları"
+   },
+   {
+    "week": 10,
+    "topic": "Fourier serileri, integralleri, transformu"
+   },
+   {
+    "week": 11,
+    "topic": "Kısmi türevli diferansiyel denklemler, dalga denklemi, Helmholtz denklemi"
+   },
+   {
+    "week": 12,
+    "topic": "Fonksiyonların seriye açılımı, Taylor serisi açılımı"
+   },
+   {
+    "week": 13,
+    "topic": "Veri analizi ve olasılık teoremi, dağılımlar, rastgele değişkenler"
+   },
+   {
+    "week": 14,
+    "topic": "Matematiksel istatistik"
+   }
+  ],
   "textbooks": [
    "Stroud K.A., (2020). Advanced Engineering Mathematics, 6th Edition, Red Globe Press.",
    "Kreyszig, E., (2015). Advanced Engineering Mathematics, 10th Edition, Wiley.",
@@ -42,12 +101,12 @@
    "Greenberg, M.D., (2013). Advanced Engineering Mathematics, 2nd Edition, Pearson.",
    "Haberman, H., (2004). Elementary Applied PDEs, Prentice-Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=501"
  },
  "NUK 507": {
   "code": "NUK 507",
   "name": "Radyasyon Fiziği",
+  "nameEn": "Radiation Physics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -89,6 +148,64 @@
    "Hafta 13 · Nükleer kazalar ve alınacak tedbirler",
    "Hafta 14 · Derinliğine nükleer güvenlik ve uygulama prensipleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Atom fiziğine genel bakış"
+   },
+   {
+    "week": 2,
+    "topic": "İyonizan ve iyonizan olmayan radyasyonlar"
+   },
+   {
+    "week": 3,
+    "topic": "Radyoaktif bozunum Kinetiği ve farklı bozunum mekanizmaları"
+   },
+   {
+    "week": 4,
+    "topic": "Karakteristik ve frenleme tipi X- ışınları, Auger elektronları"
+   },
+   {
+    "week": 5,
+    "topic": "Nükleer reaksiyonların kinematiği, Bateman eşitliği"
+   },
+   {
+    "week": 6,
+    "topic": "Yüklü parçacıkların madde ile etkileşmeleri, min. ve maks. enerji transferi ve ortalama iyonizasyon, pozitron yayınım mekanizmaları, anhilasyon radyasyonu"
+   },
+   {
+    "week": 7,
+    "topic": "Fotonların madde ile etkileşimi; Fotoelektrik olay, Compton saçılması ve Çift oluşumu, Thompson saçılması, Reighleigh saçılması, fotonükleer etkileşimler"
+   },
+   {
+    "week": 8,
+    "topic": "Radyasyonun malzemeye nüfuziyeti ve enerji absorbsiyonu, absorbsiyon katsayıları ve maksimum nüfuziyet derinliği"
+   },
+   {
+    "week": 9,
+    "topic": "Nötronların madde ile etkileşimi: absorbsiyon mekanizmaları, elastik saçılma, elastik olmayan saçılma"
+   },
+   {
+    "week": 10,
+    "topic": "Fisyon reaksiyonu ve fisyon ürünleri, ani fisyon, proton yayınlanması ve nötron yayınlanması"
+   },
+   {
+    "week": 11,
+    "topic": "Füzyon reaksiyonu"
+   },
+   {
+    "week": 12,
+    "topic": "Radyasyon Kazaları ve alınacak tedbirler"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleer kazalar ve alınacak tedbirler"
+   },
+   {
+    "week": 14,
+    "topic": "Derinliğine nükleer güvenlik ve uygulama prensipleri"
+   }
+  ],
   "textbooks": [
    "Podgorsak, E. B., Radiation Physics for Medical Physicists, Spriger, 3rd Edition, Heidelberg, 2016.",
    "Podgorsak, E. B., Radiation Physics for Medical Physicists, Spriger, 3rd Edition, Heidelberg, 2016.",
@@ -103,12 +220,12 @@
    "Turner, J., Atoms, Radiation and Radiation Protection, Wiley-Verlag, Weinhem, 2007.",
    "Turner, J., Atoms, Radiation and Radiation Protection, Wiley-Verlag, Weinhem, 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=507"
  },
  "NUK 515E": {
   "code": "NUK 515E",
   "name": "Nükleer Güç Santrallarının Termodinamik Analizi",
+  "nameEn": "Thermodynamic Analysis of Nuclear Power Plants",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -148,6 +265,64 @@
    "Hafta 13 · GCR-buhar (Rankine çevrimli) nükleer güç santrallarındaki basit ve çift basınç kademeli çevrimler",
    "Hafta 14 · Hızlı üretken reaktörler (FBR) ve FBR nükleer güç santrallarının analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Termodinamiğin temel kavramları"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleer reaktör sistemleri ve bu sistemlerin güç üretimine uygulanması"
+   },
+   {
+    "week": 3,
+    "topic": "İdeal çevrimlerin ve tersinmez bir çevrimle çalışan bir nükleer santralin ısıl verimi ve işi"
+   },
+   {
+    "week": 4,
+    "topic": "Kaynar sulu reaktör (BWR) nükleer güç santrallarının (NGS’lerin) termodinamik analizi"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrudan ve çift çevrimli BWR nükleer güç santralları"
+   },
+   {
+    "week": 6,
+    "topic": "Kaynar sulu reaktör (BWR) nükleer güç santrallarında yük takibi ve tesis gücü kontrolü."
+   },
+   {
+    "week": 7,
+    "topic": "Basınçlı su reaktörleri (PWR). Su soğutmalı reaktörleri için malzemeler. Buhar üreteçleri. Reaktör sistemi basınçlandırıcıları. Gücün kimyasal kontrolü"
+   },
+   {
+    "week": 8,
+    "topic": "Basınçlı su reaktörü (PWR) güç santrallarının termodinamik analizi"
+   },
+   {
+    "week": 9,
+    "topic": "Basınçlı ağır su reaktörü (PHWR, CANDU) güç tesisleri ve termodinamik analizi"
+   },
+   {
+    "week": 10,
+    "topic": "Gaz soğutuculu reaktörler (GCR). GCR güç santrallarında kullanılan termodinamik çevrimler"
+   },
+   {
+    "week": 11,
+    "topic": "Doğrudan çevrimli GCR NGS uygulamalarında gaz soğutucularının termodinamik karşılaştırması"
+   },
+   {
+    "week": 12,
+    "topic": "Brayton çevrimli GCR nükleer güç santrallarının termodinamik analizi"
+   },
+   {
+    "week": 13,
+    "topic": "GCR-buhar (Rankine çevrimli) nükleer güç santrallarındaki basit ve çift basınç kademeli çevrimler"
+   },
+   {
+    "week": 14,
+    "topic": "Hızlı üretken reaktörler (FBR) ve FBR nükleer güç santrallarının analizi"
+   }
+  ],
   "textbooks": [
    "Zohuri, B., McDaniel, P. (2015), Thermodynamics in Nuclear Power Plant Systems, Springer International Publishing AG Switzerland.",
    "Zohuri, B., McDaniel, P. (2015), Thermodynamics in Nuclear Power Plant Systems, Springer International Publishing AG Switzerland.",
@@ -160,12 +335,12 @@
    "Aybers, N., Bayülken, A. (1988), Nükleer Güç Reaktörlerinin Termodinamik Analizi, İTÜ Nükleer Enerji Enstitüsü, Genel Yayın No: 19.",
    "Aybers, N., Bayülken, A. (1988), Nükleer Güç Reaktörlerinin Termodinamik Analizi, İTÜ Nükleer Enerji Enstitüsü, Genel Yayın No: 19."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=515"
  },
  "NUK 517E": {
   "code": "NUK 517E",
   "name": "Plazma Fiziğinin Esasları",
+  "nameEn": "Fundamentals of Plasma Physics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -201,6 +376,64 @@
    "Hafta 13 · Plazma titreşimleri ve Landau sönümü",
    "Hafta 14 · Manyetik sınırlama ilkeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Plazma fiziğine giriş, gazların iyonizasyonu."
+   },
+   {
+    "week": 2,
+    "topic": "Tanecikler arası çarpışmalar; Coulomb çarpışmaları; Maskeleme, Debye uzaklığı"
+   },
+   {
+    "week": 3,
+    "topic": "Elektriksel nötrlük, ambipolar difüzyon"
+   },
+   {
+    "week": 4,
+    "topic": "Elektromanyetik dalga yayımı"
+   },
+   {
+    "week": 5,
+    "topic": "Yüklü taneciklerin üniform ve sabit E ve B alanlarında hareketleri; adyabatik invaryantlar."
+   },
+   {
+    "week": 6,
+    "topic": "Üniform olmayan E ve B alanlarında hareket, dönme merkezi sürüklenmesi"
+   },
+   {
+    "week": 7,
+    "topic": "Plazmaların akışkan olarak incelenmesi; diyamanyetik sürüklenmeler."
+   },
+   {
+    "week": 8,
+    "topic": "B’ye dik ve parallel sıvı sürüklenme hareketleri"
+   },
+   {
+    "week": 9,
+    "topic": "MHD yaklaşımı; tek-akışkan denklemleri; sınırlama geometrilerinde hidromanyetik denge."
+   },
+   {
+    "week": 10,
+    "topic": "Maxwell denklemleri ve ilgili konular; dielektrik tansör."
+   },
+   {
+    "week": 11,
+    "topic": "Dağılım fonksiyonu ve plazma kinetik teorisine giriş"
+   },
+   {
+    "week": 12,
+    "topic": "Plazma titreşimleri ve Landau sönümü"
+   },
+   {
+    "week": 13,
+    "topic": "Plazma titreşimleri ve Landau sönümü"
+   },
+   {
+    "week": 14,
+    "topic": "Manyetik sınırlama ilkeleri"
+   }
+  ],
   "textbooks": [
    "Chen, F.F., (2016). Introduction to Plasma Physics and Controlled Fusion, 3nd edition, Springer International Publishing Switzerland",
    "Chen, F.F., (2016). Introduction to Plasma Physics and Controlled Fusion, 3nd edition, Springer International Publishing Switzerland",
@@ -213,12 +446,12 @@
    "Bittencourt, J.A., (2004). Fundamentals of Plasma Physics, Springer-Verlag New York.",
    "Bittencourt, J.A., (2004). Fundamentals of Plasma Physics, Springer-Verlag New York."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=517"
  },
  "NUK 519": {
   "code": "NUK 519",
   "name": "Nükleer Yakıt Teknolojisi",
+  "nameEn": "Nuclear Fuel Technology",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -258,6 +491,64 @@
    "Hafta 13 · Uranyumun reaktör yakıtı olarak hazırlanması",
    "Hafta 14 · Yakıt üretimi, nükleer yakıt teknolojisinin diğer konuları, uranyum zenginleştirme yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer yakıt teknolojisi ve temel bölümlerinin (yakıt hazırlama, tekrar işleme ve atık idaresi) ve nükleer yakıt çevriminin tanıtılması, fisyon teorisi, fisyon enerjisi, fisyon ürünlerinin kütle ve enerji dağılımı"
+   },
+   {
+    "week": 2,
+    "topic": "Zincirleme reaksiyon, çoğalma faktörü, tesir kesitleri ve ortalama yol hesapları, zincirleme reaksiyon kontrolu, kritik kütlenin hesaplanması, tesir kesitleri ve ortalama serbest yol hesapları"
+   },
+   {
+    "week": 3,
+    "topic": "Nükleer reaktörlerin temel bileşenleri (yakıt, yavaşlatıcı, soğutucu, kontrol çubukları ve yansıtıcı), görevleri ve yapı malzemelerinin tanıtılması"
+   },
+   {
+    "week": 4,
+    "topic": "Homojen ve heterojen reaktörler, termal nükleer reaktörlerin prensipleri, dört çarpan formülü, η faktörü ve çeşitli yakıt zenginliklerinde hesaplanması"
+   },
+   {
+    "week": 5,
+    "topic": "Reaktörün gücü ve hesaplanması, reaktörlerin sınıflandırılması ve yakıt tipleri"
+   },
+   {
+    "week": 6,
+    "topic": "Yakıt teknolojisinde önemli uranyum bileşikleri, uranyum kaynakları, uranyum ihtiva eden başlıca mineraller"
+   },
+   {
+    "week": 7,
+    "topic": "Uranyumun kimyası, uranyum çözelti kimyası"
+   },
+   {
+    "week": 8,
+    "topic": "Cevherden uranyum ekstraksiyonu, uranyum cevher işleme"
+   },
+   {
+    "week": 9,
+    "topic": "Özüteme kimyası, asit ve alkali özütleme, özütleme parametreleri ve yöntemleri, özütleme çözeltisinin deriştirilmesi, iyon değiştiriciler"
+   },
+   {
+    "week": 10,
+    "topic": "Solvent ekstraksiyonunun temel prensipleri, temel komponentleri, görevleri ve uygulamaları"
+   },
+   {
+    "week": 11,
+    "topic": "Uranyumun çöktürülmesi, sarı pasta üretimi"
+   },
+   {
+    "week": 12,
+    "topic": "Uranyum rafinasyonu ve uranyum rafinerileri, ilgili uranyum bileşiklerinin eldesi"
+   },
+   {
+    "week": 13,
+    "topic": "Uranyumun reaktör yakıtı olarak hazırlanması"
+   },
+   {
+    "week": 14,
+    "topic": "Yakıt üretimi, nükleer yakıt teknolojisinin diğer konuları, uranyum zenginleştirme yöntemleri"
+   }
+  ],
   "textbooks": [
    "Piro M.H.A., Advances in Nuclear Fuel Chemistry, Woodhead Publishing Series in Energy, 2020.",
    "Piro M.H.A., Advances in Nuclear Fuel Chemistry, Woodhead Publishing Series in Energy, 2020.",
@@ -272,12 +563,12 @@
    "Chopin G. R., Rydberg J., Nuclear Chemistry, Pergamon Press, England, 1980.",
    "Chopin G. R., Rydberg J., Nuclear Chemistry, Pergamon Press, England, 1980."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=519",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=519"
  },
  "NUK 521E": {
   "code": "NUK 521E",
   "name": "Çevresel Analizlerde Radyometrik Yöntemler",
+  "nameEn": "Radiometric Techniques in Environmental Analysis",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -315,6 +606,64 @@
    "Hafta 13 · Tarım yapılan alanlarda serpinti radyonüklidleri ile toprak erozyonu belirlenmesi",
    "Hafta 14 · İşlenmemiş alanlarda serpinti radyonüklidleri ile toprak erozyonu belirlenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Doğal ve yapay radyasyon kaynakları"
+   },
+   {
+    "week": 2,
+    "topic": "Çevresel örnekleme yöntemleri"
+   },
+   {
+    "week": 3,
+    "topic": "Çevresel radyoaktif izleyici elemanlar"
+   },
+   {
+    "week": 4,
+    "topic": "Radyometrik ve radyokimyasal ölçümler ve ilgili hesaplamalar"
+   },
+   {
+    "week": 5,
+    "topic": "Radon ve bozunum ürünleri"
+   },
+   {
+    "week": 6,
+    "topic": "Radon ölçüm teknikleri"
+   },
+   {
+    "week": 7,
+    "topic": "Çevresel eser element analizi yöntemleri"
+   },
+   {
+    "week": 8,
+    "topic": "Radyometrik yaş belirleme yöntemleri"
+   },
+   {
+    "week": 9,
+    "topic": "Düşük seviyeli radyoaktivite ölçüm sistemleri ve kalibrasyonları"
+   },
+   {
+    "week": 10,
+    "topic": "Doğal ortam radyasyonunun kaynakları ve azaltılması için yöntemler"
+   },
+   {
+    "week": 11,
+    "topic": "Çernobil serpintisinden etkilenen alanlarda radyometrik incelemeler"
+   },
+   {
+    "week": 12,
+    "topic": "Cs-137 radyonüklitinin derinlemesine değişimi"
+   },
+   {
+    "week": 13,
+    "topic": "Tarım yapılan alanlarda serpinti radyonüklidleri ile toprak erozyonu belirlenmesi"
+   },
+   {
+    "week": 14,
+    "topic": "İşlenmemiş alanlarda serpinti radyonüklidleri ile toprak erozyonu belirlenmesi"
+   }
+  ],
   "textbooks": [
    "Zhang, C., Fundamentals of Environmental Sampling and Analysis 1st Edition, Wiley, 2022.",
    "Zhang, C., Fundamentals of Environmental Sampling and Analysis 1st Edition, Wiley, 2022.",
@@ -327,12 +676,12 @@
    "Froehlich, K. Environmental Radionuclides, Elsevier Science, Amsterdam, 2009.",
    "Froehlich, K. Environmental Radionuclides, Elsevier Science, Amsterdam, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=521"
  },
  "NUK 525": {
   "code": "NUK 525",
   "name": "Endüstri ve Tıpta Radyoizotop Uygulamaları",
+  "nameEn": "Industrial and Medical Applications of Radioisotopes",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -374,6 +723,64 @@
    "Hafta 13 · Tıpta tedavi amaçlı radyoizotop kullanımı,",
    "Hafta 14 · Tıbbi radyografinin temelleri ve tıpta kullanılan radyografi cihazları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstride kullanılan radyoizotopların üretilmesi,"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleer reaktörlerde radyoizotop üretimi,"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer hızlandırıcılarda radyoizotop üretimi,"
+   },
+   {
+    "week": 4,
+    "topic": "Radyoizotop teknikleri kullanılarak malzeme özelliklerinin saptanması,"
+   },
+   {
+    "week": 5,
+    "topic": "Endüstriyel problemler için ölçüm sistemleri,"
+   },
+   {
+    "week": 6,
+    "topic": "Endüstriyel radyografi ve ışınlama hesapları,"
+   },
+   {
+    "week": 7,
+    "topic": "Endüstride kullanılan radyografi cihazları,"
+   },
+   {
+    "week": 8,
+    "topic": "Radyoaktif izleme tekniklerinin prensipleri"
+   },
+   {
+    "week": 9,
+    "topic": "Radyoaktif izleyicilerin endüstrideki uygulamaları,"
+   },
+   {
+    "week": 10,
+    "topic": "Radyofarmasotikler ve işaretleme metotları,"
+   },
+   {
+    "week": 11,
+    "topic": "Radyofarmasotiklerde kalite kontrol,"
+   },
+   {
+    "week": 12,
+    "topic": "Tıpta tanı amaçlı radyoizotop kullanımı,"
+   },
+   {
+    "week": 13,
+    "topic": "Tıpta tedavi amaçlı radyoizotop kullanımı,"
+   },
+   {
+    "week": 14,
+    "topic": "Tıbbi radyografinin temelleri ve tıpta kullanılan radyografi cihazları."
+   }
+  ],
   "textbooks": [
    "Al Nabhani, Applications of Nuclear and Radioisotope Technology, Academic Press, 2021.",
    "Al Nabhani, Applications of Nuclear and Radioisotope Technology, Academic Press, 2021.",
@@ -386,12 +793,12 @@
    "Fajans, K., Radioelements and Isotopes: Chemical Forces and Optical Properties of Substances, Dover Phoenix Editions, Amsterdam, 2005.",
    "Fajans, K., Radioelements and Isotopes: Chemical Forces and Optical Properties of Substances, Dover Phoenix Editions, Amsterdam, 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=525"
  },
  "NUK 527": {
   "code": "NUK 527",
   "name": "Radyasyonla Görüntüleme",
+  "nameEn": "Radiation Imaging",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -431,6 +838,64 @@
    "Hafta 13 · Filtrelenmiş geriye izdüşürme tekniği.",
    "Hafta 14 · Bilgisayarda yeniden görüntü oluşturma uygulaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer tıbba giriş, gama kameralar; tipleri, klinik uygulamalar."
+   },
+   {
+    "week": 2,
+    "topic": "Özel görüntüleme yöntemleri"
+   },
+   {
+    "week": 3,
+    "topic": "Temel verimlilik karakteristikleri, uzaysal ayırma gücü, sayım hızı, sayım verimi"
+   },
+   {
+    "week": 4,
+    "topic": "Nükleer tıpta görüntü kalitesi ve hata analizi."
+   },
+   {
+    "week": 5,
+    "topic": "Sayısal veri toplama yöntemleri."
+   },
+   {
+    "week": 6,
+    "topic": "İletim tomografisi: X-ışını bilgisayarlı tomografi"
+   },
+   {
+    "week": 7,
+    "topic": "Yayınım tomografisi, radyofarmostikler."
+   },
+   {
+    "week": 8,
+    "topic": "PET/SPECT, MRI yöntemleri."
+   },
+   {
+    "week": 9,
+    "topic": "Yeniden görüntü oluşturma yöntemlerinin temelleri."
+   },
+   {
+    "week": 10,
+    "topic": "Tekrarlayıcı teknikler"
+   },
+   {
+    "week": 11,
+    "topic": "Fourier teknikleri, Fourier kesit teoremi, görüntü filtreleri."
+   },
+   {
+    "week": 12,
+    "topic": "Doğrudan Fourier dönüşümü tekniği."
+   },
+   {
+    "week": 13,
+    "topic": "Filtrelenmiş geriye izdüşürme tekniği."
+   },
+   {
+    "week": 14,
+    "topic": "Bilgisayarda yeniden görüntü oluşturma uygulaması"
+   }
+  ],
   "textbooks": [
    "Statikiewicz, MA, Workbook for Radiation Protection in Medical Radiography, Mosby, St. Louise, 2021.",
    "Statikiewicz, MA, Workbook for Radiation Protection in Medical Radiography, Mosby, St. Louise, 2021.",
@@ -443,12 +908,12 @@
    "Prince, J.L., Links, J., Medical Imaging Systems and Signals, Prentice Hall, New Jersey, 2005.",
    "Prince, J.L., Links, J., Medical Imaging Systems and Signals, Prentice Hall, New Jersey, 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=527",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=527"
  },
  "NUK 529E": {
   "code": "NUK 529E",
   "name": "Radyolojik Malzemeler",
+  "nameEn": "Radiological Materials",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -490,6 +955,64 @@
    "Hafta 13 · Malzeme üzerine radyasyonun etkisi ile ortaya çıkan kusurlar ve tanıtımı",
    "Hafta 14 · Malzemelerde radyasyon hasarı kinematiği ve ilgili korelasyonlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radyolojik malzemelerin genel değerlendirmesi ve malzeme seçiminin önemi"
+   },
+   {
+    "week": 2,
+    "topic": "Radyoaktif malzemeler"
+   },
+   {
+    "week": 3,
+    "topic": "Nükleer teknolojide kullanılan ana malzemeler ve özellikleri, ilgili faz diyagramları"
+   },
+   {
+    "week": 4,
+    "topic": "Radyasyon teknolojisinde kullanılan ana malzemeler, seçim kriterleri ve özellikleri"
+   },
+   {
+    "week": 5,
+    "topic": "Radyasyon kaynağı malzemeler; sınıflandırması ve kalite standartları"
+   },
+   {
+    "week": 6,
+    "topic": "Radyoizotoplar; ve kullanım kriterleri"
+   },
+   {
+    "week": 7,
+    "topic": "Radyasyon üreten cihazların malzemeleri ve kalite standartları"
+   },
+   {
+    "week": 8,
+    "topic": "Radyasyon için absorbant malzemeler ve mukayeseli değerlendirmeleri"
+   },
+   {
+    "week": 9,
+    "topic": "Radyasyona duyarlı malzemeler ve nanoteknolojik gelişmeler"
+   },
+   {
+    "week": 10,
+    "topic": "Radyasyon zırhlama malzemeleri ve gelişim teknolojisi"
+   },
+   {
+    "week": 11,
+    "topic": "Nükleer malzemelerde kalite kavramı"
+   },
+   {
+    "week": 12,
+    "topic": "Radyolojik malzemelerde kalite kavramı"
+   },
+   {
+    "week": 13,
+    "topic": "Malzeme üzerine radyasyonun etkisi ile ortaya çıkan kusurlar ve tanıtımı"
+   },
+   {
+    "week": 14,
+    "topic": "Malzemelerde radyasyon hasarı kinematiği ve ilgili korelasyonlar"
+   }
+  ],
   "textbooks": [
    "National Academies of Sciences, Engineering, and Medicine, Radioactive Sources, Applications and Alternative Technologies, The National Academies Press, 2021.",
    "National Academies of Sciences, Engineering, and Medicine, Radioactive Sources, Applications and Alternative Technologies, The National Academies Press, 2021.",
@@ -502,12 +1025,12 @@
    "Was, G. S., Fundamentals of Radiation Materials Science, Springer, Berlin, 2007.",
    "Was, G. S., Fundamentals of Radiation Materials Science, Springer, Berlin, 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=529",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=529"
  },
  "NUK 531E": {
   "code": "NUK 531E",
   "name": "Radyokimya",
+  "nameEn": "Radiochemistry",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -543,6 +1066,64 @@
    "Hafta 13 · İzotop ayırma yöntemlerinin karşılaştırılması",
    "Hafta 14 · Kullanılmış yakıtların yeniden işlenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radyokimyaya giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Radyokimyasal donanımlar"
+   },
+   {
+    "week": 3,
+    "topic": "Radyonüklid üretimi"
+   },
+   {
+    "week": 4,
+    "topic": "Radyasyonla oluşan kimyasal etkileşimler ve iyonizan radyasyonlar ile polimerizasyon"
+   },
+   {
+    "week": 5,
+    "topic": "Radyoliz"
+   },
+   {
+    "week": 6,
+    "topic": "Radyokimyasal analiz yöntemleri"
+   },
+   {
+    "week": 7,
+    "topic": "Radyokimyasal ayırma yöntemleri"
+   },
+   {
+    "week": 8,
+    "topic": "Sıcak atom kimyası"
+   },
+   {
+    "week": 9,
+    "topic": "Uranyum bileşikleri ve özellikleri"
+   },
+   {
+    "week": 10,
+    "topic": "Toryum bileşikleri ve özellikleri"
+   },
+   {
+    "week": 11,
+    "topic": "Uranyum cevherinin işlenmesi"
+   },
+   {
+    "week": 12,
+    "topic": "Uranyumun izotoplarından ayrılması"
+   },
+   {
+    "week": 13,
+    "topic": "İzotop ayırma yöntemlerinin karşılaştırılması"
+   },
+   {
+    "week": 14,
+    "topic": "Kullanılmış yakıtların yeniden işlenmesi"
+   }
+  ],
   "textbooks": [
    "Adloff, JP., Guillaumont, R., Fundamentals of Radiochemistry, CRC Press, 2018.",
    "Adloff, JP., Guillaumont, R., Fundamentals of Radiochemistry, CRC Press, 2018.",
@@ -555,12 +1136,12 @@
    "Friedlander, G., Introduction of Radiochemistry, John Wiley&Sons, New York, 2008.",
    "Friedlander, G., Introduction of Radiochemistry, John Wiley&Sons, New York, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=531",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=531"
  },
  "NUK 533": {
   "code": "NUK 533",
   "name": "Radyobiyoloji",
+  "nameEn": "Radiobiology",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -598,6 +1179,64 @@
    "Hafta 13 · Kontaminasyon ve dekontaminasyon",
    "Hafta 14 · Radyasyon hasarı görmüşlere uygulanabilecek tedaviler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radyasyon biyolojisine giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Radyasyonun kimyasal etkileri"
+   },
+   {
+    "week": 3,
+    "topic": "Radyasyonun biyokimyasal etkileri"
+   },
+   {
+    "week": 4,
+    "topic": "Radyasyon sendromunun temelleri"
+   },
+   {
+    "week": 5,
+    "topic": "Radyasyon tedavisi"
+   },
+   {
+    "week": 6,
+    "topic": "Radyasyonun bütün vücut ve tek organ etkisi"
+   },
+   {
+    "week": 7,
+    "topic": "Dokudaki radyasyon soğurması ve doz hesabı"
+   },
+   {
+    "week": 8,
+    "topic": "Hücre etkilenmesi mekanizmaları"
+   },
+   {
+    "week": 9,
+    "topic": "Radyasyon kazaları"
+   },
+   {
+    "week": 10,
+    "topic": "Radyasyon sonrası etkiler"
+   },
+   {
+    "week": 11,
+    "topic": "Radyasyonun somatik ve genetik etkileri"
+   },
+   {
+    "week": 12,
+    "topic": "Müsaade edilebilir radyasyon ışınlaması ve ışınlama kontrolü"
+   },
+   {
+    "week": 13,
+    "topic": "Kontaminasyon ve dekontaminasyon"
+   },
+   {
+    "week": 14,
+    "topic": "Radyasyon hasarı görmüşlere uygulanabilecek tedaviler"
+   }
+  ],
   "textbooks": [
    "Michael C. Joiner, Albert J. van der Kogel, Basic Clinical Radiobiology, 5th Edition, CRC Press, 2018.",
    "Michael C. Joiner, Albert J. van der Kogel, Basic Clinical Radiobiology, 5th Edition, CRC Press, 2018.",
@@ -610,12 +1249,12 @@
    "Stabin, M.G., Radiation Protection and Dosimetry: An Introduction of Health Physics, Springer, New York, 2007.",
    "Stabin, M.G., Radiation Protection and Dosimetry: An Introduction of Health Physics, Springer, New York, 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=533",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=533"
  },
  "NUK 596": {
   "code": "NUK 596",
   "name": "Bilimsel Araştırma, Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -659,6 +1298,64 @@
    "Hafta 13 · Dönem ödevi sunumu-4",
    "Hafta 14 · Dönem ödevi sunumu-5"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık"
+   },
+   {
+    "week": 7,
+    "topic": "sürecindeki adımlar, sunumda iletişimin önemi."
+   },
+   {
+    "week": 8,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel"
+   },
+   {
+    "week": 9,
+    "topic": "etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi."
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-1"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-2"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-3"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-5"
+   }
+  ],
   "textbooks": [
    "John G D'Angelo, Ethics in Science, Ethical Misconduct in Scientific Research, Second Edition, 2018, CRC Press, 160 Pages.",
    "John G D'Angelo, Ethics in Science, Ethical Misconduct in Scientific Research, Second Edition, 2018, CRC Press, 160 Pages.",
@@ -671,12 +1368,12 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”,Springer e-book",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”,Springer e-book"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=596"
  },
  "NUK 603E": {
   "code": "NUK 603E",
   "name": "Monte Carlo Metodları",
+  "nameEn": "Monte Carlo Methods",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -712,6 +1409,77 @@
    "Hafta 13 · Stokastik gradiyent ile öğrenme",
    "Hafta 14 · Parçacık transportu ile ilgili uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Monte Carlo Metotlarına genel bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İstatistik, olasılık kavramları, rastgele sayıların üretimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Örneklemeler, varyans azaltma, öncelik örneklemesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Markov zincir metodu (MCMC)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "MCMC ile ilgili uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Metropolis-Hastings Algoritması ve örneklemeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Örneklemeler ve skorlamalar üzerine uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Gibbs örnekleyicisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Küme örnekleme metotları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "MCMC metodunun kovaryans analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Veri sürücülü Markov Zinciri Metotu",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Hamiltonyan ve Langevin Monte Carlo Metodu",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Stokastik gradiyent ile öğrenme",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Parçacık transportu ile ilgili uygulamalar"
+   }
+  ],
   "textbooks": [
    "Barbu, A., Zhu, S., (2020). Monte Carlo Methods, Springer Nature Singapore Pte Ltd.",
    "Barbu, A., Zhu, S., (2020). Monte Carlo Methods, Springer Nature Singapore Pte Ltd.",
@@ -724,12 +1492,12 @@
    "Liang, F., Liu, C., Carroll, R.J., (2010). Advanced Markov Chain Monte Carlo Methods: Learning from Past Samples, John Wiley & Sons, Ltd",
    "Liang, F., Liu, C., Carroll, R.J., (2010). Advanced Markov Chain Monte Carlo Methods: Learning from Past Samples, John Wiley & Sons, Ltd"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=603"
  },
  "NUK 605": {
   "code": "NUK 605",
   "name": "Nükleer Enerji Politika&Hukuku",
+  "nameEn": "Nuclear Energy Policy and Law",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -765,6 +1533,77 @@
    "Hafta 13 · Nükleer maddelerin idaresi ve kontrolü",
    "Hafta 14 · Nükleer teknolojinin hukuktaki yeri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer Enerji; Nükleer silahlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tarihsel gelişim; Nükleer kazaların azaltılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Toplumların tercihi ve devlet yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Uluslararası organizasyon, Uluslararası Atom Enerjisi Ajansı",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Ulusal organizasyon, İdari hukuk ve kanunlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Nükleer Düzenleme Kurumu",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Uluslararası hukuk, Uluslararası antlaşmalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ulusal ve uluslararası yönetmelikler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Nükleer silahların yayılmasını önleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Uluslararası örgütlenme",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Yönergeler; Ulusal nükleer enerji politikası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Radyasyondan korunma mevzuatı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleer maddelerin idaresi ve kontrolü",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Nükleer teknolojinin hukuktaki yeri"
+   }
+  ],
   "textbooks": [
    "Glaser C. L., (2016). Analyzing Strategic Nuclear Policy, Princeton University Press.",
    "Glaser C. L., (2016). Analyzing Strategic Nuclear Policy, Princeton University Press.",
@@ -777,12 +1616,12 @@
    "Stoiber C., Baer A., Pelzer N., Tonhauser W., Handbook on Nuclear Law, IAEA International Atomic Energy Agency, 2003.",
    "Stoiber C., Baer A., Pelzer N., Tonhauser W., Handbook on Nuclear Law, IAEA International Atomic Energy Agency, 2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=605",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=605"
  },
  "NUK 696": {
   "code": "NUK 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -796,7 +1635,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NUK&dersNo=696"
  }
 }

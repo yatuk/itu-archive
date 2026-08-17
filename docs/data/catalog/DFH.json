@@ -2,6 +2,7 @@
  "DFH 102E": {
   "code": "DFH 102E",
   "name": "Denizde Güvenlik ve Emnniyet",
+  "nameEn": "Maritime Safety and Security",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=102"
  },
  "DFH 111": {
   "code": "DFH 111",
   "name": "Denizde Güvenlik I",
+  "nameEn": "Maritime Safety I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -55,6 +56,78 @@
    "Hafta 13 · Güvenlik tanıtımı ve güvenlik farkındalığı (artırılmış farkındalık ile denizde güvenliğin geliştirilmesine katkıda bulunma, güvenlik tehditlerini tanıma, güvenlik konusunda farkındalığı ve teyakkuzda olmayı sağlayacak yöntemleri ve bu yöntemlere neden gereksinim duyulduğunu anlama).",
    "Hafta 14 · Belirlenmiş güvenlik görevleri (gemi güvenlik planı altında belirlenen şartları oluşturma, güvenlik risklerini ve tehditlerini tanıma, geminin düzenli güvenlik denetimlerini yürütme, varsa güvenlik donanımlarının ve sistemlerinin uygun şekilde kullanılmaları)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Canlı kalma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Canlı kalma laboratuvar ve havuz uygulaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Can kurtarma araçları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Can kurtarma araçları laboratuvar ve deniz uygulaması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yangın ve yangınla mücadele.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yangınla mücadele laboratuvar uygulaması ve yangın merkezinde uygulama.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Temel ilk yardım.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Temel ilk yardım laboratuvar uygulaması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Personel güvenliği, sosyal sorumluluk.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Personel emniyet prosedürleri ve yorgunluk kontrolü.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemide etkin iletişim, etkin insan ilişkileri ve takım yönetimi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Denizde emniyet ve güvenlik kuralları, gemilerden kaynaklı kirlilik ve önleme yöntemleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenlik tanıtımı ve güvenlik farkındalığı (artırılmış farkındalık ile denizde güvenliğin geliştirilmesine katkıda bulunma, güvenlik tehditlerini tanıma, güvenlik konusunda farkındalığı ve teyakkuzda olmayı sağlayacak yöntemleri ve bu yöntemlere neden gereksinim duyulduğunu anlama).",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Belirlenmiş güvenlik görevleri (gemi güvenlik planı altında belirlenen şartları oluşturma, güvenlik risklerini ve tehditlerini tanıma, geminin düzenli güvenlik denetimlerini yürütme, varsa güvenlik donanımlarının ve sistemlerinin uygun şekilde kullanılmaları).",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "IMO, Elementary First Aid, Model Course 1.13, 2000.",
    "IMO, Medical First Aid, Model Course 1.14, 2000.",
@@ -62,12 +135,12 @@
    "IMO, Fire Prevention and Fire Fighting, Model Course 1.20, 2000.",
    "IMO, Security Awareness Training for all Seafarers, Model Course 3.27, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=111"
  },
  "DFH 111E": {
   "code": "DFH 111E",
   "name": "Denizde Güvenlik I",
+  "nameEn": "Maritime Safety I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -102,6 +175,78 @@
    "Hafta 13 · Güvenlik tanıtımı ve güvenlik farkındalığı (artırılmış farkındalık ile denizde güvenliğin geliştirilmesine katkıda bulunma, güvenlik tehditlerini tanıma, güvenlik konusunda farkındalığı ve teyakkuzda olmayı sağlayacak yöntemleri ve bu yöntemlere neden gereksinim duyulduğunu anlama).",
    "Hafta 14 · Belirlenmiş güvenlik görevleri (gemi güvenlik planı altında belirlenen şartları oluşturma, güvenlik risklerini ve tehditlerini tanıma, geminin düzenli güvenlik denetimlerini yürütme, varsa güvenlik donanımlarının ve sistemlerinin uygun şekilde kullanılmaları)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Canlı kalma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Canlı kalma laboratuvar ve havuz uygulaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Can kurtarma araçları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Can kurtarma araçları laboratuvar ve deniz uygulaması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yangın ve yangınla mücadele.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yangınla mücadele laboratuvar uygulaması ve yangın merkezinde uygulama.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Temel ilk yardım.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Temel ilk yardım laboratuvar uygulaması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Personel güvenliği, sosyal sorumluluk.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Personel emniyet prosedürleri ve yorgunluk kontrolü.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemide etkin iletişim, etkin insan ilişkileri ve takım yönetimi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Denizde emniyet ve güvenlik kuralları, gemilerden kaynaklı kirlilik ve önleme yöntemleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenlik tanıtımı ve güvenlik farkındalığı (artırılmış farkındalık ile denizde güvenliğin geliştirilmesine katkıda bulunma, güvenlik tehditlerini tanıma, güvenlik konusunda farkındalığı ve teyakkuzda olmayı sağlayacak yöntemleri ve bu yöntemlere neden gereksinim duyulduğunu anlama).",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Belirlenmiş güvenlik görevleri (gemi güvenlik planı altında belirlenen şartları oluşturma, güvenlik risklerini ve tehditlerini tanıma, geminin düzenli güvenlik denetimlerini yürütme, varsa güvenlik donanımlarının ve sistemlerinin uygun şekilde kullanılmaları).",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "IMO, Elementary First Aid, Model Course 1.13, 2000.",
    "IMO, Medical First Aid, Model Course 1.14, 2000.",
@@ -109,12 +254,12 @@
    "IMO, Fire Prevention and Fire Fighting, Model Course 1.20, 2000.",
    "IMO, Security Awareness Training for all Seafarers, Model Course 3.27, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=111"
  },
  "DFH 112": {
   "code": "DFH 112",
   "name": "Denizde Güvenlik II",
+  "nameEn": "Maritime Safety II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -146,16 +291,88 @@
    "Hafta 13 · Güvenlik farkındalığı (arttırılmış farkındalık ile denizde güvenliğin geliştirilmesine katkıda bulunma, güvenlik tehditlerini tanıma, güvenlik konusunda farkındalığı ve teyakkuzda olmayı sağlayacak yöntemleri ve bu yöntemlere neden gereksinim duyulduğunu anlama)",
    "Hafta 14 · Belirlenmiş güvenlik görevleri (gemi güvenlik planı altında belirlenen şartları oluşturma, güvenlik risklerini ve tehditlerini tanıma, geminin düzenli güvenlik denetimlerini yürütme, varsa güvenlik donanımlarının ve sistemlerinin uygun şekilde kullanılmaları)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yangın teorisi, gemilerde yangın kontrolü ve yangınla mücadele organizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yangınla mücadele eğitimi ve yöntemleri, yangın araç ve gereçlerinin kontrol ve bakımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yangınla mücadelede oluşan tehlikeler, yan araştırma ve rapor etme",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yangın merkezi uygulama eğitimi ve değerlendirme",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yangın merkezi uygulama eğitimi ve değerlendirme",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Tıbbi ilk yardım ve tıbbi bakıma giriş",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Telsizle alınan tıbbi rehber ve tavsiyelerin gemide uygulanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Vücut yapısı ve işlevi, hasta muayenesi ve gemilerdeki zehirleyici maddeler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Omurga yaralanması ve yanıklar, kırıklar, çıkıklar, adale yaralanmaları, kurtarılan kişilerin tıbbi bakımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Hipotermi, soğuğun etkisi ve radyo ile tıbbi yardım",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Farmakoloji, sterilizasyon, kalp durması, boğulma ve asfeksi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Güvenlikle ilgili tanıtım",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenlik farkındalığı (arttırılmış farkındalık ile denizde güvenliğin geliştirilmesine katkıda bulunma, güvenlik tehditlerini tanıma, güvenlik konusunda farkındalığı ve teyakkuzda olmayı sağlayacak yöntemleri ve bu yöntemlere neden gereksinim duyulduğunu anlama)",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Belirlenmiş güvenlik görevleri (gemi güvenlik planı altında belirlenen şartları oluşturma, güvenlik risklerini ve tehditlerini tanıma, geminin düzenli güvenlik denetimlerini yürütme, varsa güvenlik donanımlarının ve sistemlerinin uygun şekilde kullanılmaları)",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Nautical Institute, The Naval Handbook for Ship Firefighters, 2006.",
    "Maritime and Coastguard Agency, The Ship Captain's Medical Guide, 2012 Ed."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=112"
  },
  "DFH 112E": {
   "code": "DFH 112E",
   "name": "Denizde Güvenlik II",
+  "nameEn": "Maritime Safety II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -187,16 +404,88 @@
    "Hafta 13 · Güvenlik farkındalığı (arttırılmış farkındalık ile denizde güvenliğin geliştirilmesine katkıda bulunma, güvenlik tehditlerini tanıma, güvenlik konusunda farkındalığı ve teyakkuzda olmayı sağlayacak yöntemleri ve bu yöntemlere neden gereksinim duyulduğunu anlama)",
    "Hafta 14 · Belirlenmiş güvenlik görevleri (gemi güvenlik planı altında belirlenen şartları oluşturma, güvenlik risklerini ve tehditlerini tanıma, geminin düzenli güvenlik denetimlerini yürütme, varsa güvenlik donanımlarının ve sistemlerinin uygun şekilde kullanılmaları)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yangın teorisi, gemilerde yangın kontrolü ve yangınla mücadele organizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yangınla mücadele eğitimi ve yöntemleri, yangın araç ve gereçlerinin kontrol ve bakımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yangınla mücadelede oluşan tehlikeler, yan araştırma ve rapor etme",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yangın merkezi uygulama eğitimi ve değerlendirme",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yangın merkezi uygulama eğitimi ve değerlendirme",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Tıbbi ilk yardım ve tıbbi bakıma giriş",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Telsizle alınan tıbbi rehber ve tavsiyelerin gemide uygulanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Vücut yapısı ve işlevi, hasta muayenesi ve gemilerdeki zehirleyici maddeler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Omurga yaralanması ve yanıklar, kırıklar, çıkıklar, adale yaralanmaları, kurtarılan kişilerin tıbbi bakımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Hipotermi, soğuğun etkisi ve radyo ile tıbbi yardım",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Farmakoloji, sterilizasyon, kalp durması, boğulma ve asfeksi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Güvenlikle ilgili tanıtım",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenlik farkındalığı (arttırılmış farkındalık ile denizde güvenliğin geliştirilmesine katkıda bulunma, güvenlik tehditlerini tanıma, güvenlik konusunda farkındalığı ve teyakkuzda olmayı sağlayacak yöntemleri ve bu yöntemlere neden gereksinim duyulduğunu anlama)",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Belirlenmiş güvenlik görevleri (gemi güvenlik planı altında belirlenen şartları oluşturma, güvenlik risklerini ve tehditlerini tanıma, geminin düzenli güvenlik denetimlerini yürütme, varsa güvenlik donanımlarının ve sistemlerinin uygun şekilde kullanılmaları)",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Nautical Institute, The Naval Handbook for Ship Firefighters, 2006.",
    "Maritime and Coastguard Agency, The Ship Captain's Medical Guide, 2012 Ed."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=112"
  },
  "DFH 113": {
   "code": "DFH 113",
   "name": "Denizde Güvenlik I",
+  "nameEn": "Maritime Safety I",
   "language": "English/Türkçe",
   "credits": {
    "theory": 1,
@@ -229,6 +518,78 @@
    "Hafta 13 · Kişisel güvenlik prosedürleri, sosyal sorumluluk ve yorgunluk kontrolü",
    "Hafta 14 · Etkin iletişim, insan ilişkileri ve takım yönetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizde kişisel can kurtarma teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Denizde kişisel can kurtarma teknikleri ve uygulaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Denizde kişisel can kurtarma teknikleri ve uygulaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Can kurtarma araçlarını kullanabilme",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Can kurtarma araçlarını kullanabilme ve uygulaması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Can kurtarma araçlarını kullanabilme ve uygulaması",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yangın önleme ve yangınla mücadele",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yangın önleme ve yangınla mücadele ve uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yangın önleme ve yangınla mücadele ve uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Temel ilk yardım",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Temel ilk yardım ve uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Temel ilk yardım ve uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kişisel güvenlik prosedürleri, sosyal sorumluluk ve yorgunluk kontrolü",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Etkin iletişim, insan ilişkileri ve takım yönetimi",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "IMO, Elementary First Aid, Model Course 1.13, 2000.",
    "IMO, Medical First Aid, Model Course 1.14, 2000.",
@@ -236,12 +597,12 @@
    "IMO, Fire Prevention and Fire Fighting, Model Course 1.20, 2000.",
    "IMO, Security Awareness Training for all Seafarers, Model Course 3.27, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=113",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=113"
  },
  "DFH 113E": {
   "code": "DFH 113E",
   "name": "Denizde Güvenlik I",
+  "nameEn": "Maritime Safety I",
   "language": "English/Türkçe",
   "credits": {
    "theory": 1,
@@ -274,6 +635,78 @@
    "Hafta 13 · Kişisel güvenlik prosedürleri, sosyal sorumluluk ve yorgunluk kontrolü",
    "Hafta 14 · Etkin iletişim, insan ilişkileri ve takım yönetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizde kişisel can kurtarma teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Denizde kişisel can kurtarma teknikleri ve uygulaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Denizde kişisel can kurtarma teknikleri ve uygulaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Can kurtarma araçlarını kullanabilme",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Can kurtarma araçlarını kullanabilme ve uygulaması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Can kurtarma araçlarını kullanabilme ve uygulaması",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yangın önleme ve yangınla mücadele",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yangın önleme ve yangınla mücadele ve uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yangın önleme ve yangınla mücadele ve uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Temel ilk yardım",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Temel ilk yardım ve uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Temel ilk yardım ve uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kişisel güvenlik prosedürleri, sosyal sorumluluk ve yorgunluk kontrolü",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Etkin iletişim, insan ilişkileri ve takım yönetimi",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "IMO, Elementary First Aid, Model Course 1.13, 2000.",
    "IMO, Medical First Aid, Model Course 1.14, 2000.",
@@ -281,12 +714,12 @@
    "IMO, Fire Prevention and Fire Fighting, Model Course 1.20, 2000.",
    "IMO, Security Awareness Training for all Seafarers, Model Course 3.27, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=113",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=113"
  },
  "DFH 121E": {
   "code": "DFH 121E",
   "name": "Denizcilik Kimyası",
+  "nameEn": "Maritime Chemistry",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -319,15 +752,86 @@
    "Hafta 13 · Yakıt ve yağ kirliliği",
    "Hafta 14 · Balast suyu kaynaklı kirlilik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz suyunun bileşenleri, kimyasal ve fiziksel özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tuzluluk (iletkenlik), sıcaklık ve yoğunluk kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İz elementler ve ışım etkin izleyiciler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz suyunda eriyik halde bulunan oksijen ve diğer gazlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz suyunda eriyik halde bulunan oksijen ve diğer gazlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Karbondioksit ve karbon sistemleri, iklim değişikliği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "pH ve denizel asitleşme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Besleyici öğeler ve su kalitesi"
+   },
+   {
+    "week": 9,
+    "topic": "Atık su temizleme üniteleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Atık su temizleme üniteleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi ve tersane kaynaklı deniz kirliliği,tehlikeli maddeler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Boya kaynaklı kirlilik,korozyon ve kontrolü",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yakıt ve yağ kirliliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Balast suyu kaynaklı kirlilik",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "R. E. Hester, R. M. Harrison, Chemistry in the Marine Environment, Birmingham, UK, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=121",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=121"
  },
  "DFH 121EL": {
   "code": "DFH 121EL",
   "name": "Denizcilik Kimyası",
+  "nameEn": "Maritime Chemistry",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -360,15 +864,86 @@
    "Hafta 13 · Yakıt ve yağ kirliliği",
    "Hafta 14 · Balast suyu kaynaklı kirlilik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz suyunun bileşenleri, kimyasal ve fiziksel özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tuzluluk (iletkenlik), sıcaklık ve yoğunluk kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İz elementler ve ışım etkin izleyiciler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz suyunda eriyik halde bulunan oksijen ve diğer gazlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz suyunda eriyik halde bulunan oksijen ve diğer gazlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Karbondioksit ve karbon sistemleri, iklim değişikliği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "pH ve denizel asitleşme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Besleyici öğeler ve su kalitesi"
+   },
+   {
+    "week": 9,
+    "topic": "Atık su temizleme üniteleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Atık su temizleme üniteleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi ve tersane kaynaklı deniz kirliliği,tehlikeli maddeler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Boya kaynaklı kirlilik,korozyon ve kontrolü",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yakıt ve yağ kirliliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Balast suyu kaynaklı kirlilik",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "R. E. Hester, R. M. Harrison, Chemistry in the Marine Environment, Birmingham, UK, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=121",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=121"
  },
  "DFH 172E": {
   "code": "DFH 172E",
   "name": "Denizcilik İngilizcesi I",
+  "nameEn": "Maritime English I",
   "language": "English/Türkçe",
   "credits": {
    "theory": 1,
@@ -402,15 +977,87 @@
    "Hafta 13 · Gemideki Ekipmanlara ait Kullanma Kılavuzlarının Okunması.",
    "Hafta 14 · LSA Kod ve SOLAS Eğitim El Kitabında Geçen Kalıplar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizcilik İngilizcesi Kavramı – İngiliz Dilinde Kelime ve Telaffuz.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "IMO SMCP Genel Kurallar ve Mesaj Betimleyicileri.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "IMO SMCP Demirleme, Yanaşma ve Ayrılma.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "IMO SMCP Vardiya Devretme.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Seyir Haritalarında Kullanılan Kelimeler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Denizcilik Emniyet Bilgilendirme Bültenlerinin Okunması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Denizde Çevresel Koşulların Tarif Edilmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Liman ve Seyirle ilgili Referans Kitapların Okunması.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yük ve Liman Evraklarının Hazırlanması.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "IMO SMCP Yük Elleçleme.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Denizde Form ve Kontrol Listelerinin Doldurulması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Resmi Belgelerin Okunması.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Gemideki Ekipmanlara ait Kullanma Kılavuzlarının Okunması.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "LSA Kod ve SOLAS Eğitim El Kitabında Geçen Kalıplar.",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Belirtilen konular üzerine ders notları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=172",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=172"
  },
  "DFH 180": {
   "code": "DFH 180",
   "name": "Kürek ve Kano Sporları",
+  "nameEn": "Rowing and Canoe-Kayak Sports",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -442,15 +1089,87 @@
    "Hafta 13 · Kano uygulama.",
    "Hafta 14 · Kano uygulama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Su sporlarının tanımı ve tarihsel gelişim süreçleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Su sporlarının çeşitleri ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kano-Kayak sporunda branşların ve tekne çeşitlerinin tanıtımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kano-Kayak sporunda kullanılan teknikler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Tekne üzerinde denge ve kürek çekme.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kano uygulama.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kürek sporunda branşların ve tekne çeşitlerinin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kürek sporunda kullanılan teknikler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Tekne üzerinde denge kurma ve kürek çekme.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kürek uygulama.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kürek teknesine ayar yapma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Kano teknesine ayar yapma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Kano uygulama.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Kano uygulama.",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Atmaca S.(2008). Amatör Denizci El Kitabı. Amatör Denizcilik Federasyonu, İstanbul."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=180",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=180"
  },
  "DFH 180E": {
   "code": "DFH 180E",
   "name": "Kürek ve Kano Sporları",
+  "nameEn": "Rowing and Canoe-Kayak Sports",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -482,15 +1201,87 @@
    "Hafta 13 · Kano uygulama.",
    "Hafta 14 · Kano uygulama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Su sporlarının tanımı ve tarihsel gelişim süreçleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Su sporlarının çeşitleri ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kano-Kayak sporunda branşların ve tekne çeşitlerinin tanıtımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kano-Kayak sporunda kullanılan teknikler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Tekne üzerinde denge ve kürek çekme.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kano uygulama.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kürek sporunda branşların ve tekne çeşitlerinin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kürek sporunda kullanılan teknikler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Tekne üzerinde denge kurma ve kürek çekme.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kürek uygulama.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kürek teknesine ayar yapma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Kano teknesine ayar yapma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Kano uygulama.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Kano uygulama.",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Atmaca S.(2008). Amatör Denizci El Kitabı. Amatör Denizcilik Federasyonu, İstanbul."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=180",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=180"
  },
  "DFH 182": {
   "code": "DFH 182",
   "name": "Sualtı Dalış Teknikleri",
+  "nameEn": "Underwater Diving Techniques",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -524,16 +1315,88 @@
    "Hafta 13 · Su altında kulak ayarlaması-dekompresyon-ventilasyon-çipleme.",
    "Hafta 14 · İlk yardım ve insan anatomisi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tarihçe ve ilk donanımlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dalış teknikleri tipleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Ekipman ve donanımlar çeşitleri özellikleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Dalış emniyeti prosedürleri talimatlarının hazırlanması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Fiziksel esaslar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Acil durum planları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Dalış işaretleri(gece-gündüz).",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Dalış yeri kural ve uygulama zorunlulukları ABC Malzeme.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "SCUBA ekipmanları kademe detayları-tüpler-BC.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Aletli dalış tekniği.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Serbest dalış tekniği.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Su altında ekipman kuşanma.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Su altında kulak ayarlaması-dekompresyon-ventilasyon-çipleme.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "İlk yardım ve insan anatomisi.",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "TSSF Bir yıldız dalıcı kurs notları.",
    "CMAS ders notları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=182",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=182"
  },
  "DFH 184": {
   "code": "DFH 184",
   "name": "Denizcilik Gelenekleri",
+  "nameEn": "Customs of Maritime",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -566,15 +1429,87 @@
    "Hafta 13 · Deniz ulaştırma işletme mühendisi etik ilkeleri, topluma karşı sorumluluk, doğaya ve çevreye karşı sorumluluk.",
    "Hafta 14 · Denizcilik örf ve adetleri hakkında uygulamalar (gemide)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz ulaştırma işletme mühendisinin görev, yetki ve sorumlulukları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Deniz ulaştırma işletme mühendisinin görev, yetki ve sorumlulukları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ulaştırma modellerinin tanıtımı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ulaştırma modellerinin türleri ve entegrasyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz ulaştırmasının gelişimi ve temel unsurları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Deniz ulaştırmasının gelişimi ve temel unsurları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Denizde yük taşımacılığı ve taşıma biçimleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Denizde yük taşımacılığı ve taşıma biçimleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi işletmesinin temel kavramları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Etiğin anlamı ve tarihsel gelişim süreci, etik ile ahlak ilişkisi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Etik gerekçelendirme ve temellendirmeler, etiğin evrensel boyutu.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz ulaştırma işletme mühendisi etik ilkeleri, topluma karşı sorumluluk, doğaya ve çevreye karşı sorumluluk.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Deniz ulaştırma işletme mühendisi etik ilkeleri, topluma karşı sorumluluk, doğaya ve çevreye karşı sorumluluk.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Denizcilik örf ve adetleri hakkında uygulamalar (gemide).",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Myer Kutz, Handbook of Transportation Engineering: Systems and Operations, 2nd Ed., McGraw-Hill Professional, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=184",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=184"
  },
  "DFH 186": {
   "code": "DFH 186",
   "name": "Gemicilik Uygulamaları",
+  "nameEn": "Shipping Applications",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -606,15 +1541,87 @@
    "Hafta 13 · Gemide yangın, gemiyi terk, role vb. uygulamalar.",
    "Hafta 14 · Gemide yangın, gemiyi terk, role vb. uygulamalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi kısımlarını ve hiyerarşisini tanıma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemicilikte kullanılan raspa ekipmanları, boya ve malzemeleri, kerye, radansa, kilitler vb.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemicilikte kullanılan raspa ekipmanları, boya ve malzemeleri, kerye, radansa, kilitler vb.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gemicilik terimlerinden dümen, halat, demir komutları vb.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gemicilikte kullanılan bağlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Manevra ekipmanları; halatların cinsleri ve kalınlıklarının ölçülmesi, zincir, ırgat vb.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Manevra ekipmanlarından ırgat, demir, el incesi vb. kullanma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Manevra ekipmanlarından ırgat, demir, el incesi vb. kullanma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Manevra ekipmanlarının kontrolleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Manevrada karşılaşılan kazalar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "EPIRB, SART, pyroteknik malzemeler vb.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Dümen tutma uygulaması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemide yangın, gemiyi terk, role vb. uygulamalar.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Gemide yangın, gemiyi terk, role vb. uygulamalar.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=186",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=186"
  },
  "DFH 186E": {
   "code": "DFH 186E",
   "name": "Gemicilik Uygulamaları",
+  "nameEn": "Shipping Applications",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -646,15 +1653,87 @@
    "Hafta 13 · Gemide yangın, gemiyi terk, role vb. uygulamalar.",
    "Hafta 14 · Gemide yangın, gemiyi terk, role vb. uygulamalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi kısımlarını ve hiyerarşisini tanıma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemicilikte kullanılan raspa ekipmanları, boya ve malzemeleri, kerye, radansa, kilitler vb.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemicilikte kullanılan raspa ekipmanları, boya ve malzemeleri, kerye, radansa, kilitler vb.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gemicilik terimlerinden dümen, halat, demir komutları vb.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gemicilikte kullanılan bağlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Manevra ekipmanları; halatların cinsleri ve kalınlıklarının ölçülmesi, zincir, ırgat vb.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Manevra ekipmanlarından ırgat, demir, el incesi vb. kullanma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Manevra ekipmanlarından ırgat, demir, el incesi vb. kullanma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Manevra ekipmanlarının kontrolleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Manevrada karşılaşılan kazalar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "EPIRB, SART, pyroteknik malzemeler vb.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Dümen tutma uygulaması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemide yangın, gemiyi terk, role vb. uygulamalar.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Gemide yangın, gemiyi terk, role vb. uygulamalar.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=186",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=186"
  },
  "DFH 188": {
   "code": "DFH 188",
   "name": "Yelkencilik",
+  "nameEn": "Sailing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -687,16 +1766,88 @@
    "Hafta 13 · Karada teknik çalışmalar.",
    "Hafta 14 · Denizde yelkenli tekne seyri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Su sporlarının tanımı ve yelken sporunun tarihsel gelişimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yelken çeşitleri ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yelken sporunda branşların ve tekne çeşitlerinin tanıtımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yelkenli tekne donanımlarının tanıtılması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yelkenli teknelerde kullanılan temel gemici düğümleri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Rüzgar ve yön bilgisi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yelkenli teknenin seyre hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Yelken seyirleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Yelken Trimi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yelken manevraları ve kerteriz alma.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Tehlike durumuna ilişkin farkındalık çalışmaları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Tekne üstünde denge kullanımı.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Karada teknik çalışmalar.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Denizde yelkenli tekne seyri.",
+    "outcomes": "2-4-5"
+   }
+  ],
   "textbooks": [
    "Seidman D.(2011). The Complete Sailor. McGraw Hill, Blacklick,OH.",
    "Alpagut A, Soyer O.(2011). Lazer ve Ötesi Genç Yelkenci El Kitabı. Amatör Denizcilik Federasyonu, İstanbul."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=188",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=188"
  },
  "DFH 201": {
   "code": "DFH 201",
   "name": "Temel Yüzme Becerisi",
+  "nameEn": "Basic Swimming Skills",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -727,15 +1878,87 @@
    "Hafta 13 · Serbest stilde yüzme, çivileme atlama.",
    "Hafta 14 · Serbest stilde yüzme, balıklama atlama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Suya uyum çalışması, nefes çalışması.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Suya uyum çalışması, nefes çalışması, ayak vuruşu, makas hareketi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Nefes çalışması, ayak vuruşu, makas hareketi, yan ayak vuruşu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nefes çalışması, ayak vuruşu, yan ayak vuruşu, makas hareketi, yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yandan nefes alarak ayak vuruşu koordinasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yandan nefes alarak ayak vuruşu koordinasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Serbest stilde kol çekişi tekniği.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yandan nefes, kol çekişi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Serbest stilde kol çekişi, ayak vuruşu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Serbest stilde kol çekişi, ayak vuruşu, yan ayak.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Serbest stilde kol çekişi, yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Serbest stilde yüzme, çivileme atlama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Serbest stilde yüzme, balıklama atlama.",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=201"
  },
  "DFH 201E": {
   "code": "DFH 201E",
   "name": "Temel Yüzme Becerisi",
+  "nameEn": "Basic Swimming Skills",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -766,15 +1989,87 @@
    "Hafta 13 · Serbest stilde yüzme, çivileme atlama.",
    "Hafta 14 · Serbest stilde yüzme, balıklama atlama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Suya uyum çalışması, nefes çalışması.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Suya uyum çalışması, nefes çalışması, ayak vuruşu, makas hareketi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Nefes çalışması, ayak vuruşu, makas hareketi, yan ayak vuruşu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nefes çalışması, ayak vuruşu, yan ayak vuruşu, makas hareketi, yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yandan nefes alarak ayak vuruşu koordinasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yandan nefes alarak ayak vuruşu koordinasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Serbest stilde kol çekişi tekniği.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yandan nefes, kol çekişi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Serbest stilde kol çekişi, ayak vuruşu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Serbest stilde kol çekişi, ayak vuruşu, yan ayak.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Serbest stilde kol çekişi, yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Serbest stilde yüzme, çivileme atlama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Serbest stilde yüzme, balıklama atlama.",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=201"
  },
  "DFH 202": {
   "code": "DFH 202",
   "name": "Gemilerde Acil Durum. Müdahale",
+  "nameEn": "Ship Emergency Response",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -808,15 +2103,87 @@
    "Hafta 13 · Güvenlik deklarasyonu, güvenlik kontrolleri ve role talimleri.",
    "Hafta 14 · Güvenlik deklarasyonu, güvenlik kontrolleri ve role talimleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Acil durumlar ve yapılması gerekenler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geminin oturması durumunda ve sonrasında yapılacaklar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Geminin tekrar yüzdürülmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Geminin çatışması durumunda yapılacaklar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Geminin su alması durumunda yapılacaklar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Dümen arızası.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Acil durumlarda arama kurtarma faaliyetleri ile ilgili bilgiler.",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Deniz kirliliğine müdahale.",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Deniz kirliliğine müdahale.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Gemiyi terk talimleri ve gemiden kaçış yolları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi içinde emniyetli çalışma ortamı oluşturulması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Güvenlik seviyeleri, güvenlik acil durum planları ve güvenlik önlemleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenlik deklarasyonu, güvenlik kontrolleri ve role talimleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Güvenlik deklarasyonu, güvenlik kontrolleri ve role talimleri.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Maritime and Coastguard Agency, Code of Safe Working Practices for Merchant Seamen, London, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=202"
  },
  "DFH 202E": {
   "code": "DFH 202E",
   "name": "Gemilerde Acil Durum. Müdahale",
+  "nameEn": "Ship Emergency Response",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -850,15 +2217,87 @@
    "Hafta 13 · Güvenlik deklarasyonu, güvenlik kontrolleri ve role talimleri.",
    "Hafta 14 · Güvenlik deklarasyonu, güvenlik kontrolleri ve role talimleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Acil durumlar ve yapılması gerekenler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geminin oturması durumunda ve sonrasında yapılacaklar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Geminin tekrar yüzdürülmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Geminin çatışması durumunda yapılacaklar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Geminin su alması durumunda yapılacaklar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Dümen arızası.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Acil durumlarda arama kurtarma faaliyetleri ile ilgili bilgiler.",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Deniz kirliliğine müdahale.",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Deniz kirliliğine müdahale.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Gemiyi terk talimleri ve gemiden kaçış yolları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi içinde emniyetli çalışma ortamı oluşturulması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Güvenlik seviyeleri, güvenlik acil durum planları ve güvenlik önlemleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenlik deklarasyonu, güvenlik kontrolleri ve role talimleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Güvenlik deklarasyonu, güvenlik kontrolleri ve role talimleri.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Maritime and Coastguard Agency, Code of Safe Working Practices for Merchant Seamen, London, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=202"
  },
  "DFH 203": {
   "code": "DFH 203",
   "name": "Temel Yüzme Becerisi",
+  "nameEn": "Basic Swimming Skills",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -889,15 +2328,87 @@
    "Hafta 13 · Serbest stilde yüzme, çivileme atlama.",
    "Hafta 14 · Serbest stilde yüzme, balıklama atlama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Suya uyum çalışması, nefes çalışması.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Suya uyum çalışması, nefes çalışması, ayak vuruşu, makas hareketi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Nefes çalışması, ayak vuruşu, makas hareketi, yan ayak vuruşu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nefes çalışması, ayak vuruşu, yan ayak vuruşu, makas hareketi, yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yandan nefes alarak ayak vuruşu koordinasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yandan nefes alarak ayak vuruşu koordinasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Serbest stilde kol çekişi tekniği.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yandan nefes, kol çekişi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Serbest stilde kol çekişi, ayak vuruşu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Serbest stilde kol çekişi, ayak vuruşu, yan ayak.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Serbest stilde kol çekişi, yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Serbest stilde yüzme, çivileme atlama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Serbest stilde yüzme, balıklama atlama.",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=203"
  },
  "DFH 203E": {
   "code": "DFH 203E",
   "name": "Temel Yüzme Becerisi",
+  "nameEn": "Basic Swimming Skills",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -928,15 +2439,87 @@
    "Hafta 13 · Serbest stilde yüzme, çivileme atlama.",
    "Hafta 14 · Serbest stilde yüzme, balıklama atlama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Suya uyum çalışması, nefes çalışması.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Suya uyum çalışması, nefes çalışması, ayak vuruşu, makas hareketi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Nefes çalışması, ayak vuruşu, makas hareketi, yan ayak vuruşu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nefes çalışması, ayak vuruşu, yan ayak vuruşu, makas hareketi, yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yandan nefes alarak ayak vuruşu koordinasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yandan nefes alarak ayak vuruşu koordinasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Serbest stilde kol çekişi tekniği.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yandan nefes, kol çekişi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Serbest stilde kol çekişi, ayak vuruşu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Serbest stilde kol çekişi, ayak vuruşu, yan ayak.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Serbest stilde kol çekişi, yandan nefes.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Serbest stilde yüzme, çivileme atlama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Serbest stilde yüzme, balıklama atlama.",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=203"
  },
  "DFH 211": {
   "code": "DFH 211",
   "name": "Kürek ve Kano Sporları",
+  "nameEn": "Rowing and Canoe-Kayak Sports",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -950,12 +2533,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=211"
  },
  "DFH 211E": {
   "code": "DFH 211E",
   "name": "Kürek ve Kano Sporları",
+  "nameEn": "Rowing and Canoe-Kayak Sports",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -969,12 +2552,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=211"
  },
  "DFH 212": {
   "code": "DFH 212",
   "name": "Denizcilikte İnsan Kaynak.Yön.",
+  "nameEn": "Human Resources Management in Maritime",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1007,18 +2590,90 @@
    "Hafta 13 · Uluslararası ve Stratejik İKY kavramları.",
    "Hafta 14 · İKY ve teknolojik gelişim, denizcilikteki uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnsan Kaynakları Yönetimi (İKY) kavramı ve kapsamı. İKY’nin amaçları ve fonksiyonları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Denizcilikte personel yönetiminden İKY’ne geçiş ve şirket-gemi organizasyonu.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Deniz ulaştırması alanında İKY planlaması, amaç ve süreci. Personel gereksinmesi türleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemiadamı temini ve seçimi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gemiadamı eğitim ve geliştirmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemiadamı eğitim süreci ve belgelendirmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Gemiadamı performans değerlemesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Gemiadamı olarak kariyer planlaması ve gelişimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "İş analizleri, iş (görev) tanımları ve gerekleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Gemiadamı ücret yönetimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Denizcilikte kullanılan İKY Bilgi Sistemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemiadamının deniz yaşamı ve gemiye uyumlaştırılması; iletişim ve kişilerarası iletişim.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası ve Stratejik İKY kavramları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "İKY ve teknolojik gelişim, denizcilikteki uygulamaları.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Canan Çetin ve Esra Dinç Özcan, İnsan Kaynakları Yönetimi, Beta Basın Yayım, 2013.",
    "Zeyyat Sabuncuoğlu, İnsan Kaynakları Yönetimi (Uygulama Örnekleriyle), Beta Basın Yayım, 2013.",
    "Stewart, I. and Stewart, D.K., Maritime Leadership Politics, UBC Press, 2007.",
    "IMO, Personal Safety and Social Responsibilities, Model Course 1.21, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=212"
  },
  "DFH 212E": {
   "code": "DFH 212E",
   "name": "Denizcilikte İnsan Kaynak.Yön.",
+  "nameEn": "Human Resources Management in Maritime",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1051,18 +2706,90 @@
    "Hafta 13 · Uluslararası ve Stratejik İKY kavramları.",
    "Hafta 14 · İKY ve teknolojik gelişim, denizcilikteki uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnsan Kaynakları Yönetimi (İKY) kavramı ve kapsamı. İKY’nin amaçları ve fonksiyonları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Denizcilikte personel yönetiminden İKY’ne geçiş ve şirket-gemi organizasyonu.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Deniz ulaştırması alanında İKY planlaması, amaç ve süreci. Personel gereksinmesi türleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemiadamı temini ve seçimi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gemiadamı eğitim ve geliştirmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemiadamı eğitim süreci ve belgelendirmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Gemiadamı performans değerlemesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Gemiadamı olarak kariyer planlaması ve gelişimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "İş analizleri, iş (görev) tanımları ve gerekleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Gemiadamı ücret yönetimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Denizcilikte kullanılan İKY Bilgi Sistemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemiadamının deniz yaşamı ve gemiye uyumlaştırılması; iletişim ve kişilerarası iletişim.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası ve Stratejik İKY kavramları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "İKY ve teknolojik gelişim, denizcilikteki uygulamaları.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Canan Çetin ve Esra Dinç Özcan, İnsan Kaynakları Yönetimi, Beta Basın Yayım, 2013.",
    "Zeyyat Sabuncuoğlu, İnsan Kaynakları Yönetimi (Uygulama Örnekleriyle), Beta Basın Yayım, 2013.",
    "Stewart, I. and Stewart, D.K., Maritime Leadership Politics, UBC Press, 2007.",
    "IMO, Personal Safety and Social Responsibilities, Model Course 1.21, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=212"
  },
  "DFH 221E": {
   "code": "DFH 221E",
   "name": "Denizcilik İngilizcesi I",
+  "nameEn": "Maritime English I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1076,12 +2803,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=221",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=221"
  },
  "DFH 222E": {
   "code": "DFH 222E",
   "name": "Denizcilik İngilizcesi II",
+  "nameEn": "Maritime English II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1115,16 +2842,88 @@
    "Hafta 13 · Tıbbi Tavsiye ve Tıbbi Yardım Talep Etme.",
    "Hafta 14 · ITU Listeleri ve ALRS Kitaplarında Kullanılan Kelimeler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizde İletişim Kavramı ve İletişim Sorunları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "IMO SMCP Kılavuzluk İletişimleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "IMO SMCP GTH İletişimleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Telsiz Üzerinden Gemi Raporlama.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi Kiralama ve Sigorta ile ilgili Klozları Okuma.",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Denizde Rapor ve Mektupların Yazımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Denetleme ve Sörveylerde Sözlü İletişim.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Telsiz Haberleşmesinde Yazılı Mesaj Hazırlama.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "IMO SMCP Tehlike Haberleşmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "IMO SMCP Arama Kurtarma Haberleşmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "IMO SMCP İvedilik Haberleşmesi.",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 12,
+    "topic": "IMO SMCP Emniyet Haberleşmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Tıbbi Tavsiye ve Tıbbi Yardım Talep Etme.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "ITU Listeleri ve ALRS Kitaplarında Kullanılan Kelimeler.",
+    "outcomes": "1-3-4"
+   }
+  ],
   "textbooks": [
    "IMO Standard Marine Communication Phrases",
    "International Code Of Signals"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=222",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=222"
  },
  "DFH 223": {
   "code": "DFH 223",
   "name": "Denizde Güvenlik III",
+  "nameEn": "Maritime Safety III",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1138,12 +2937,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=223",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=223"
  },
  "DFH 223E": {
   "code": "DFH 223E",
   "name": "Denizde Güvenlik III",
+  "nameEn": "Maritime Safety III",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1157,12 +2956,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=223",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=223"
  },
  "DFH 224": {
   "code": "DFH 224",
   "name": "Ekonomik Coğrafya",
+  "nameEn": "Economic Geography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1199,16 +2998,88 @@
    "Hafta 13 · Bilgi, Yaratıcılık ve Bölgesel Kalkınma.",
    "Hafta 14 · Alternatif Ekonomik Coğrafyalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ekonomik Coğrafya ’ya Giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ekonomik Coğrafya Yaklaşımları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Anahtar Aktörler ve Süreçler: Kapitalist Ekonominin Şekillendirmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Üretim ve Tüketim Coğrafyası.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ekonomik Korumacılık.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Devlet ve Ekonomi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Çokuluslu Şirketlerin Değişen Coğrafyası.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İş ve İstihdam Coğrafyalarını Değiştirme.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kalkınma Coğrafyası.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Sınav 1.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Eşit Olmayan Mali Coğrafyalar.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Ürün Zincirleri ve Küresel Üretim Ağları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgi, Yaratıcılık ve Bölgesel Kalkınma.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Alternatif Ekonomik Coğrafyalar.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Tümertekin, Erol; Ekonomik Coğrafya, İst. Üniv. Edebiyat Fak. Yay. İstanbul 1984.",
    "Kadıoğlu, Muhsin; Ekonomik Coğrafya, Google Play Books."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=224",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=224"
  },
  "DFH 225": {
   "code": "DFH 225",
   "name": "Türk Denizcilik Tarihi&Kültürü",
+  "nameEn": "Turkish Maritime History and Culture",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1243,15 +3114,87 @@
    "Hafta 13 · Büyük Türk Denizcileri (Barbaros, Kılıç Ali Paşa, Piri Reis, Seydi Ali Paşa, vd.)",
    "Hafta 14 · Türkiye’de Denizcilik Eğitimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Türk Denizcilik tarihine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Türklerde deniz, nehir ve su sevgisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Anadolu Selçuklu Devletinde Döneminde Denizcilik Faaliyetleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Osmanlı İmparatorluğu Döneminde Denizcilik Faaliyetleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Osmanlı İmparatorluğu’nda Tersaneler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Osmanlı İmparatorluğu’nda Askeri Gemiler ve Ticari Gemiler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kaptan Paşa ve Sancakları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Osmanlı İmparatorluğu’nda Askeri ve Ticari Gemi Törenleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Osmanlı İmparatorluğu’nun Yükselme Döneminde Denizcilik Politikaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Osmanlı İmparatorluğu’nun Gerileme Döneminde Denizcilik Politikaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Osmanlı İmparatorluğu’nda Gemi Personeli ve Yardımcıları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Türk Denizciliğinin Yükselişi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Büyük Türk Denizcileri (Barbaros, Kılıç Ali Paşa, Piri Reis, Seydi Ali Paşa, vd.)",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye’de Denizcilik Eğitimi",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Uzunçarşılı, İ. Hakkı. Osmanlı Devletinin Merkez ve Bahriye Teşkilatı, Atatürk Kültür, Dil ve Tarih Yüksek Kurumu, Türk Tarih Kurumu Yay. VIII Dizi, Ankara, 1984."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=225",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=225"
  },
  "DFH 225E": {
   "code": "DFH 225E",
   "name": "Türk Denizcilik Tarihi&Kültürü",
+  "nameEn": "Turkish Maritime History and Culture",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1286,15 +3229,87 @@
    "Hafta 13 · Büyük Türk Denizcileri (Barbaros, Kılıç Ali Paşa, Piri Reis, Seydi Ali Paşa, vd.)",
    "Hafta 14 · Türkiye’de Denizcilik Eğitimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Türk Denizcilik tarihine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Türklerde deniz, nehir ve su sevgisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Anadolu Selçuklu Devletinde Döneminde Denizcilik Faaliyetleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Osmanlı İmparatorluğu Döneminde Denizcilik Faaliyetleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Osmanlı İmparatorluğu’nda Tersaneler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Osmanlı İmparatorluğu’nda Askeri Gemiler ve Ticari Gemiler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kaptan Paşa ve Sancakları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Osmanlı İmparatorluğu’nda Askeri ve Ticari Gemi Törenleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Osmanlı İmparatorluğu’nun Yükselme Döneminde Denizcilik Politikaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Osmanlı İmparatorluğu’nun Gerileme Döneminde Denizcilik Politikaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Osmanlı İmparatorluğu’nda Gemi Personeli ve Yardımcıları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Türk Denizciliğinin Yükselişi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Büyük Türk Denizcileri (Barbaros, Kılıç Ali Paşa, Piri Reis, Seydi Ali Paşa, vd.)",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye’de Denizcilik Eğitimi",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Uzunçarşılı, İ. Hakkı. Osmanlı Devletinin Merkez ve Bahriye Teşkilatı, Atatürk Kültür, Dil ve Tarih Yüksek Kurumu, Türk Tarih Kurumu Yay. VIII Dizi, Ankara, 1984."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=225",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=225"
  },
  "DFH 226": {
   "code": "DFH 226",
   "name": "Ekonomik Coğrafya",
+  "nameEn": "Economic Geography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1331,16 +3346,88 @@
    "Hafta 13 · Bilgi, Yaratıcılık ve Bölgesel Kalkınma.",
    "Hafta 14 · Alternatif Ekonomik Coğrafyalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ekonomik Coğrafya ’ya Giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ekonomik Coğrafya Yaklaşımları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Anahtar Aktörler ve Süreçler: Kapitalist Ekonominin Şekillendirmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Üretim ve Tüketim Coğrafyası.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ekonomik Korumacılık.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Devlet ve Ekonomi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Çokuluslu Şirketlerin Değişen Coğrafyası.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İş ve İstihdam Coğrafyalarını Değiştirme.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kalkınma Coğrafyası.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Sınav 1.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Eşit Olmayan Mali Coğrafyalar.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Ürün Zincirleri ve Küresel Üretim Ağları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgi, Yaratıcılık ve Bölgesel Kalkınma.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Alternatif Ekonomik Coğrafyalar.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Tümertekin, Erol; Ekonomik Coğrafya, İst. Üniv. Edebiyat Fak. Yay. İstanbul 1984.",
    "Kadıoğlu, Muhsin; Ekonomik Coğrafya, Google Play Books."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=226",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=226"
  },
  "DFH 226E": {
   "code": "DFH 226E",
   "name": "Ekonomik Coğrafya",
+  "nameEn": "Economic Geography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1377,16 +3464,88 @@
    "Hafta 13 · Bilgi, Yaratıcılık ve Bölgesel Kalkınma.",
    "Hafta 14 · Alternatif Ekonomik Coğrafyalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ekonomik Coğrafya ’ya Giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ekonomik Coğrafya Yaklaşımları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Anahtar Aktörler ve Süreçler: Kapitalist Ekonominin Şekillendirmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Üretim ve Tüketim Coğrafyası.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ekonomik Korumacılık.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Devlet ve Ekonomi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Çokuluslu Şirketlerin Değişen Coğrafyası.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İş ve İstihdam Coğrafyalarını Değiştirme.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kalkınma Coğrafyası.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Sınav 1.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Eşit Olmayan Mali Coğrafyalar.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Ürün Zincirleri ve Küresel Üretim Ağları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgi, Yaratıcılık ve Bölgesel Kalkınma.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Alternatif Ekonomik Coğrafyalar.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Tümertekin, Erol; Ekonomik Coğrafya, İst. Üniv. Edebiyat Fak. Yay. İstanbul 1984.",
    "Kadıoğlu, Muhsin; Ekonomik Coğrafya, Google Play Books."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=226",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=226"
  },
  "DFH 228": {
   "code": "DFH 228",
   "name": "Denizcilik Psikolojisi",
+  "nameEn": "Maritime Psychology",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -1419,16 +3578,74 @@
    "Hafta 13 · Sektörde sık karşılaşılan psikolojik problemler.",
    "Hafta 14 · Gemide yaşam ve çalışmanın psikolojik etkileri; izolasyon, yalnızlık, iş-yaşam dengesi,"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizcilik psikolojisinin tanımı, kapsamı ve teorik çerçevesi,"
+   },
+   {
+    "week": 2,
+    "topic": "Denizcilikte pozitif psikoloji ve mürettebatın refahını artırma yolları"
+   },
+   {
+    "week": 3,
+    "topic": "Denizde yıldırma (mobbing) ve başa çıkma stratejileri"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik sektöründe yorgunluğun psikolojik etkileri, tükenmişlik ve önleme yöntemleri"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz kazalarının ardından psikolojik destek ve etkili risk iletişimi, stratejileri"
+   },
+   {
+    "week": 6,
+    "topic": "Denizcilik iş ortamında bireysel psikolojik özelliklerin rolü"
+   },
+   {
+    "week": 7,
+    "topic": "Görev performansını etkileyen bilişsel, davranışsal faktörler ve durumsal farkındalık"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilikte iletişim ve ekip çalışmasının psikolojik dinamikleri,"
+   },
+   {
+    "week": 9,
+    "topic": "Denizcilik organizasyonlarında kültür,"
+   },
+   {
+    "week": 10,
+    "topic": "Toplumsal cinsiyet ve psikolojik güvenliğin önemi"
+   },
+   {
+    "week": 11,
+    "topic": "Kişisel farkındalık gelişimi, ben kimim?,"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz çalışanlarının sorunlarla başa edebilmesi, maqğduriyetler ve haklarının tanımlanması"
+   },
+   {
+    "week": 13,
+    "topic": "Sektörde sık karşılaşılan psikolojik problemler."
+   },
+   {
+    "week": 14,
+    "topic": "Gemide yaşam ve çalışmanın psikolojik etkileri; izolasyon, yalnızlık, iş-yaşam dengesi,"
+   }
+  ],
   "textbooks": [
    "MacLachlan, M. (2017). Maritime Psychology. Springer",
    "Güney S. (2022). Davranış Bilimleri, Nobel Yayınevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=228",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=228"
  },
  "DFH 228E": {
   "code": "DFH 228E",
   "name": "Denizcilik Psikolojisi",
+  "nameEn": "Maritime Psychology",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -1461,16 +3678,74 @@
    "Hafta 13 · Sektörde sık karşılaşılan psikolojik problemler.",
    "Hafta 14 · Gemide yaşam ve çalışmanın psikolojik etkileri; izolasyon, yalnızlık, iş-yaşam dengesi,"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizcilik psikolojisinin tanımı, kapsamı ve teorik çerçevesi,"
+   },
+   {
+    "week": 2,
+    "topic": "Denizcilikte pozitif psikoloji ve mürettebatın refahını artırma yolları"
+   },
+   {
+    "week": 3,
+    "topic": "Denizde yıldırma (mobbing) ve başa çıkma stratejileri"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik sektöründe yorgunluğun psikolojik etkileri, tükenmişlik ve önleme yöntemleri"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz kazalarının ardından psikolojik destek ve etkili risk iletişimi, stratejileri"
+   },
+   {
+    "week": 6,
+    "topic": "Denizcilik iş ortamında bireysel psikolojik özelliklerin rolü"
+   },
+   {
+    "week": 7,
+    "topic": "Görev performansını etkileyen bilişsel, davranışsal faktörler ve durumsal farkındalık"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilikte iletişim ve ekip çalışmasının psikolojik dinamikleri,"
+   },
+   {
+    "week": 9,
+    "topic": "Denizcilik organizasyonlarında kültür,"
+   },
+   {
+    "week": 10,
+    "topic": "Toplumsal cinsiyet ve psikolojik güvenliğin önemi"
+   },
+   {
+    "week": 11,
+    "topic": "Kişisel farkındalık gelişimi, ben kimim?,"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz çalışanlarının sorunlarla başa edebilmesi, maqğduriyetler ve haklarının tanımlanması"
+   },
+   {
+    "week": 13,
+    "topic": "Sektörde sık karşılaşılan psikolojik problemler."
+   },
+   {
+    "week": 14,
+    "topic": "Gemide yaşam ve çalışmanın psikolojik etkileri; izolasyon, yalnızlık, iş-yaşam dengesi,"
+   }
+  ],
   "textbooks": [
    "MacLachlan, M. (2017). Maritime Psychology. Springer",
    "Güney S. (2022). Davranış Bilimleri, Nobel Yayınevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=228",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=228"
  },
  "DFH 231E": {
   "code": "DFH 231E",
   "name": "Ulaştırma Sistemleri",
+  "nameEn": "Transportation Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1484,12 +3759,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=231",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=231"
  },
  "DFH 232E": {
   "code": "DFH 232E",
   "name": "İşletme Lojistiği",
+  "nameEn": "Business Logistics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1521,15 +3796,87 @@
    "Hafta 13 · Lojistik ve Gemi İşletmeciliği.",
    "Hafta 14 · Lojistik ve Liman Yönetimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lojistiğin Tanımı, Lojistiğin Hedefleri ve Fonksiyonları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Lojistiğin Ekonomi ve Organizasyondaki Rolü, Lojistik ve Müşteri Hizmetleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İhale ve Dış Alım, Lojistik Tedarikinde Önemli Hususlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tedarik Zinciri Yönetiminde Stok Yönetimi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Hammadde Yönetimi, Hammadde Planlaması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ulaştırma, Ulaştırma Modları, Ulaştırma İktisadının etkileyen Faktörler.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Depolama/Dağıtım, Depolama Yönetim Sistemi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Paketleme, Paketleme Materyali Seçimini Etkileyen Faktörler.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Küresel Lojistik ve Küresel Tedarik Zinciri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Lojistik Bilgi Sistemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Lojistik Performansı ve Finans.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Entegre Lojistik, Entegre Lojistik Merkezleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Lojistik ve Gemi İşletmeciliği.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Lojistik ve Liman Yönetimi.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Ballou, Ronald H., Business Logistics: Supply Chain Management, Prentice Hall, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=232"
  },
  "DFH 241E": {
   "code": "DFH 241E",
   "name": "Denizci Çevre Koruması",
+  "nameEn": "Marine Environment Protection",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1543,12 +3890,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=241",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=241"
  },
  "DFH 242E": {
   "code": "DFH 242E",
   "name": "Genel İngilizce II",
+  "nameEn": "General English-II",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1562,12 +3909,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=242",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=242"
  },
  "DFH 251E": {
   "code": "DFH 251E",
   "name": "Genel İngilizce I",
+  "nameEn": "General English I",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1581,12 +3928,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=251",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=251"
  },
  "DFH 254E": {
   "code": "DFH 254E",
   "name": "Denizcilik Sözleşmesi",
+  "nameEn": "Maritime Conventions",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1619,16 +3966,88 @@
    "Hafta 13 · ILO (Uluslararası Çalışma Örgütü) tanıtımı ve MLC 2006.",
    "Hafta 14 · Uluslararası sözleşmelere göre gemide bulundurulacak belgeler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uluslararası örgüt oluşumunu, UN ve Uluslararası Denizcilik Örgütü (IMO) yapısı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası sözleşmelerin ve anlaşmaların ulusal mevzuata geçiş kuralları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "STCW 78 sözleşmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "COLREG 72 sözleşmesi, Uluslararası Sağlık Sözleşmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "FAL 65 ve LC 72 ve HNS 96 sözleşmeleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "LLMC 76/96 ve FUND sözleşmeleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "CLC 69/92 ve SUA 88 sözleşmeleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "SALVAGE 89, BUNKER 2001 ve BWM 2004 sözleşmeleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "MARPOL 73/38 sözleşmesi ve Ek I-II-III.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "MARPOL 73/38 sözleşmesi ve Ek IV-V-VI.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Yükleme Hatları ve SOLAS 74 sözleşmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "SOLAS 74, ISM kod ve ISPS Kod tanıtımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "ILO (Uluslararası Çalışma Örgütü) tanıtımı ve MLC 2006.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası sözleşmelere göre gemide bulundurulacak belgeler.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Ders Notları.",
    "International Labour Organization, Maritime Labour Conventions and Recommendations, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=254",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=254"
  },
  "DFH 261": {
   "code": "DFH 261",
   "name": "Yelkencilik",
+  "nameEn": "Sailing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1642,12 +4061,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=261",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=261"
  },
  "DFH 278E": {
   "code": "DFH 278E",
   "name": "Denizcilik Ekonomisi",
+  "nameEn": "Maritime Economics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1679,15 +4098,87 @@
    "Hafta 13 · Yatçılık ve marinacılık sektörleri.",
    "Hafta 14 · Türkiye kıyıları ve deniz ulaştırma işletmeciliği potansiyeli."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dünya ekonomisinin tarihsel gelişimi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Liberal iktisat teorisi ve ilgili iktisadi teorilerin tarihsel gelişimi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Mal ve Hizmet üretim sektörlerine giriş.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Ulaştırma ve deniz ulaştırması sektörlerine giriş.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz ulaştırmasında optimizasyon.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Deniz ulaştırma işletmeciliğini etkileyen uluslararası mevzuat.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Liman işletmeciliği.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Denizde insan taşımacılığı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Denizde yük taşımacılığı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi inşa sektörü.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Deniz turizmi sektörü.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Balıkçılık Sektörü.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yatçılık ve marinacılık sektörleri.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye kıyıları ve deniz ulaştırma işletmeciliği potansiyeli.",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Stopfort, M. (2009). Maritime Economics, Routledge-London."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=278",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=278"
  },
  "DFH 281": {
   "code": "DFH 281",
   "name": "Denizel Çevre Kimyası",
+  "nameEn": "Marine Environmental Chemistry",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1721,15 +4212,87 @@
    "Hafta 13 · Yakıt ve yağ kirliliği.",
    "Hafta 14 · Yakıt ve yağ kirliliği, balast suyu kaynaklı kirlilik."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz suyunun bileşenleri, kimyasal ve fiziksel özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tuzluluk (iletkenlik), sıcaklık ve yoğunluk kavramları (CTD).",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İz elementler ve ışınetkin izleyiciler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz suyunda eriyik halde bulunan oksijen ve diğer gazlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Karbondioksit ve karbon sistemler. İklim değişikliği.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Ph ve denizel asitleşme.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Organik maddeler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Deniz suyunda besleyici öğeler. Fosfor, nitrojen ve silikon.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Besleyici öğeler ve su kalitesi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Atık su temizleme üniteleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi ve tersane kaynaklı deniz kirliliği. Tehlikeli maddeler.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Boya kaynaklı kirlilik. Korozyon ve kontrolü.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Yakıt ve yağ kirliliği.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Yakıt ve yağ kirliliği, balast suyu kaynaklı kirlilik.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "R. E. Hester, R. M. Harrison, Chemistry in the Marine Environment, Birmingham, UK, 2006, ISBN: 978-0-85404-260-9."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=281",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=281"
  },
  "DFH 282": {
   "code": "DFH 282",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1761,15 +4324,87 @@
    "Hafta 13 · Sınır tabaka, cisimler etrafındaki laminer ve türbülanslı akış ve viskoz direnç.",
    "Hafta 14 · Boyut analizi ve benzerlik yasaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel akışkan bilgisi, hidrostatik.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bir noktada basınç ve üç boyutlu basınç denklemi, basınç dağılımı, manometreler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Düz ve eğrisel yüzeyler üzerinde hidrostatik basınç kuvveti ve etki noktası.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Düz ve eğrisel yüzeyler üzerinde hidrostatik basınç kuvveti ve etki noktası.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Kaldırma kuvveti, yüzme, kararlılık, rijit cisim hareketinde basınç dağılımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Süreklilik, enerji ve impals-momentum denklemleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Süreklilik, enerji ve impals-momentum denklemleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Süreklilik, enerji ve impals-momentum denklemlerinin uygulamaları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Navier-Stokes denklemleri ve uygulamaları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Akışkanların bir, iki ve üç boyutlu akımları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Akışkanların bir, iki ve üç boyutlu akımları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Borularda sürtünmeli akışlar, laminer ve türbülanslı akış, basınç kayıpları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Sınır tabaka, cisimler etrafındaki laminer ve türbülanslı akış ve viskoz direnç.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Boyut analizi ve benzerlik yasaları.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "White F. M., Fluid Mechanics, McGraw Hill, 2016."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=282",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=282"
  },
  "DFH 292E": {
   "code": "DFH 292E",
   "name": "Denizde Güvenlik III",
+  "nameEn": "Marine Safety III",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1783,12 +4418,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=292",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=292"
  },
  "DFH 321E": {
   "code": "DFH 321E",
   "name": "Denizcilikte Örgütsel Yönetim ve Davranış",
+  "nameEn": "Organizational Management and Behavior in Maritime",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1802,12 +4437,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=321"
  },
  "DFH 331E": {
   "code": "DFH 331E",
   "name": "Uluslararası İlişkiler ve Denizcilik Politikaları",
+  "nameEn": "International Relations and Maritime Policies",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1821,12 +4456,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=331",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=331"
  },
  "DFH 341E": {
   "code": "DFH 341E",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1840,12 +4475,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=341",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=341"
  },
  "DFH 351E": {
   "code": "DFH 351E",
   "name": "Gemi İşletme Finansmanı",
+  "nameEn": "Shipping Finance",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1879,15 +4514,87 @@
    "Hafta 13 · Kısa vadeli finansal planlama ve çalışma sermayesi yönetimi (Likidite yönetimi).",
    "Hafta 14 · Navlun türevleri: Navlun opsiyonları, FFA & Sermaye finansmanı: Halka arz ve şirket bonoları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi İşletme Finansmanına Giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi İşletmeciliği ve Denizcilik Ekonomisinde Temel Konular.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yatırım, Finansman Kararları ve Kurumsal Yönetim.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Paranın Zaman Değeri, Net Şimdiki Değer ve diğer yatırım kriterleri-1.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Paranın Zaman Değeri, Net Şimdiki Değer ve diğer yatırım kriterleri-2.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Risk ve Getiri: İflas riski ile Fırsat risklerinin karşılaştırmalı incelemesi.",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Gemi işletmesinde maliyetler ve gelirler-1.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Gemi işletmesinde maliyetler ve gelirler-2.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Borç Finansmanı ve Gemi Proje Fizibilitesi -1: Kredi sözleşmesi, Teminatlar, Güvenceler.",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Borç Finansmanı ve Gemi Proje Fizibilitesi -2: NPV, Başabaş analizi.",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Uzun vadeli finansal planlama ve yatırım yönetimi -1: İş döngüsü modeli.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Uzun vadeli finansal planlama ve yatırım yönetimi -2: Yatırım zamanlaması ve iş modellemesi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Kısa vadeli finansal planlama ve çalışma sermayesi yönetimi (Likidite yönetimi).",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Navlun türevleri: Navlun opsiyonları, FFA & Sermaye finansmanı: Halka arz ve şirket bonoları.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Institute of Chartered Shipbrokers, Shipping Finance, London, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=351"
  },
  "DFH 361": {
   "code": "DFH 361",
   "name": "Gemi Tedarik Zinciri Yönetimi",
+  "nameEn": "Ship Supply Chain Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1920,6 +4627,78 @@
    "Hafta 13 · Her bir öğrenci grubu temin ettiği güncel veriler, derste bahsedilen yöntem ve bilgiler ışığında, gemi tedarik zinciri planı hazırlar ve sunar.",
    "Hafta 14 · Denizcilik firmasından gelen yöneticilerle tedarik zinciri yönetimi ile ilgili genel bir değerlendirme."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tedarik zinciri yönetimi kavramı, bileşenleri, temel fonksiyonları, faydaları.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Satın alma ve tedarik zinciri ilkeleri, tedarik zinciri stratejileri, kamçı etkisi. Tedarik zincirinde taktiksel, operasyonla, stratejik kararlar, kullanılan performans ölçütleri, stok yönetimi yaklaşımları.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 3,
+    "topic": "Maliyet yönetimi, proje yönetimi, pazarlama yönetimi, dağıtım kanalları ve perakende yönetimi. Tedarik zinciri yönetiminde modelleme, bilgi teknolojileri, lojistik planlama.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 4,
+    "topic": "Dünyada ve Türkiye’de tedarik zinciri yönetimi anlayışının gelişimi ve uygulamaları.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi yönetiminde tedarik zinciri bileşenleri ve optimizasyon.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi teknik yönetiminde kullanılan ve tedarik zinciri planlamasında yer edinen malzeme ve ekipmanlarla ilgili genel bilgilendirme.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Gemi teknik yönetiminde kullanılan ve tedarik zinciri planlamasında yer edinen malzeme ve ekipmanlarla ilgili genel bilgilendirme.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Uluslararası/Avrupa Birliği/Ulusal standart ve yasal düzenlemeler hakkında bilgi verilmesi.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi arzına ilişkin risk değerlendirmesi ve öngörüleme.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi arzına ilişkin planlamalar (yakıt, kumanya, malzeme, stok vb.).",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Alım emri/talebi ve lojistik entegrasyon.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemiler için tedarik zinciri yönetimi ve sürecinin kurgulanması.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Her bir öğrenci grubu temin ettiği güncel veriler, derste bahsedilen yöntem ve bilgiler ışığında, gemi tedarik zinciri planı hazırlar ve sunar.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Denizcilik firmasından gelen yöneticilerle tedarik zinciri yönetimi ile ilgili genel bir değerlendirme.",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "H. K. Güleç, T. Paksoy, H. Bülbül, E. Özceylan, Tedarik Zinciri Yönetimi: Stratejik Planlama, Modelleme ve Optimizasyon, Gazi Kitapevi, 2010.",
    "Ö. F. Görcün, Örnek Olay ve Uygulamalarla Tedarik Zinciri Yönetimi, Beta Yayınevi, İstanbul, 2013.",
@@ -1928,12 +4707,12 @@
    "IMPA, Marine Stores Guide, Fifth Edition, 2008.",
    "EU Marine Equipment Directive, 96/98/EC of 20 December 1996 on Marine Equipment."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=361",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=361"
  },
  "DFH 361E": {
   "code": "DFH 361E",
   "name": "Gemi Tedarik Zinciri Yönetimi",
+  "nameEn": "Ship Supply Chain Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1966,6 +4745,78 @@
    "Hafta 13 · Her bir öğrenci grubu temin ettiği güncel veriler, derste bahsedilen yöntem ve bilgiler ışığında, gemi tedarik zinciri planı hazırlar ve sunar.",
    "Hafta 14 · Denizcilik firmasından gelen yöneticilerle tedarik zinciri yönetimi ile ilgili genel bir değerlendirme."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tedarik zinciri yönetimi kavramı, bileşenleri, temel fonksiyonları, faydaları.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Satın alma ve tedarik zinciri ilkeleri, tedarik zinciri stratejileri, kamçı etkisi. Tedarik zincirinde taktiksel, operasyonla, stratejik kararlar, kullanılan performans ölçütleri, stok yönetimi yaklaşımları.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 3,
+    "topic": "Maliyet yönetimi, proje yönetimi, pazarlama yönetimi, dağıtım kanalları ve perakende yönetimi. Tedarik zinciri yönetiminde modelleme, bilgi teknolojileri, lojistik planlama.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 4,
+    "topic": "Dünyada ve Türkiye’de tedarik zinciri yönetimi anlayışının gelişimi ve uygulamaları.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi yönetiminde tedarik zinciri bileşenleri ve optimizasyon.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi teknik yönetiminde kullanılan ve tedarik zinciri planlamasında yer edinen malzeme ve ekipmanlarla ilgili genel bilgilendirme.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Gemi teknik yönetiminde kullanılan ve tedarik zinciri planlamasında yer edinen malzeme ve ekipmanlarla ilgili genel bilgilendirme.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Uluslararası/Avrupa Birliği/Ulusal standart ve yasal düzenlemeler hakkında bilgi verilmesi.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi arzına ilişkin risk değerlendirmesi ve öngörüleme.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi arzına ilişkin planlamalar (yakıt, kumanya, malzeme, stok vb.).",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Alım emri/talebi ve lojistik entegrasyon.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemiler için tedarik zinciri yönetimi ve sürecinin kurgulanması.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Her bir öğrenci grubu temin ettiği güncel veriler, derste bahsedilen yöntem ve bilgiler ışığında, gemi tedarik zinciri planı hazırlar ve sunar.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Denizcilik firmasından gelen yöneticilerle tedarik zinciri yönetimi ile ilgili genel bir değerlendirme.",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "H. K. Güleç, T. Paksoy, H. Bülbül, E. Özceylan, Tedarik Zinciri Yönetimi: Stratejik Planlama, Modelleme ve Optimizasyon, Gazi Kitapevi, 2010.",
    "Ö. F. Görcün, Örnek Olay ve Uygulamalarla Tedarik Zinciri Yönetimi, Beta Yayınevi, İstanbul, 2013.",
@@ -1974,12 +4825,12 @@
    "IMPA, Marine Stores Guide, Fifth Edition, 2008.",
    "EU Marine Equipment Directive, 96/98/EC of 20 December 1996 on Marine Equipment."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=361",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=361"
  },
  "DFH 401": {
   "code": "DFH 401",
   "name": "Araştırma Yöntemleri ve İstatistik",
+  "nameEn": "Research Method and Statistics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1993,12 +4844,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=401"
  },
  "DFH 401E": {
   "code": "DFH 401E",
   "name": "Araştırma Yöntemleri ve İstatistik",
+  "nameEn": "Research Method and Statistics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2012,12 +4863,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=401"
  },
  "DFH 402E": {
   "code": "DFH 402E",
   "name": "Denizcilikte Güvenlik ve Kalite Yönetim Sistemleri",
+  "nameEn": "Maritime Security and Quality Management Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2031,12 +4882,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=402"
  },
  "DFH 411E": {
   "code": "DFH 411E",
   "name": "Ticari Deniz İşletmeciliği",
+  "nameEn": "Commercial Ship Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2050,12 +4901,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=411"
  },
  "DFH 412E": {
   "code": "DFH 412E",
   "name": "Denizde Emniyet",
+  "nameEn": "Maritime Safety",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2069,12 +4920,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=412",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=412"
  },
  "DFH 414E": {
   "code": "DFH 414E",
   "name": "Liman Yönetimi",
+  "nameEn": "Port Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2108,15 +4959,87 @@
    "Hafta 13 · Limanlarda Bilişim Sistemleri ve Otomasyon.",
    "Hafta 14 · Türkiye’de Limanlar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Limancılık Terimleri ve Temel Kavramlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dünya’da Liman Trendleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Limanlarda Altyapı ve Terminaller.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Terminal Türleri I: Konteyner, Ro-Ro ve Yolcu Terminalleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Terminal Türleri II: Sıvı ve Kuru Dökme Yük Terminalleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Terminal Operasyonları I: Yükleme, Tahliye ve İstif.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Terminal Operasyonları II: Kapı, CFS, Depolama, Gümrük ve Lojistik.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Limancılık Ekonomisi I: Operasyonların Verimliliği.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Limancılık Ekonomisi II: İşgücü ve Vardiya Planlaması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Limancılık Ekonomisi III: Liman Pazarlaması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Liman Otoritesi ve Yanaşma Prosedürleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Limancılık ile ilgili Uluslararası Anlaşmalar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Limanlarda Bilişim Sistemleri ve Otomasyon.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye’de Limanlar.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Song, D.W. and Panayides, P. M., 2012, Maritime Logistics: A Complete Guide to Effective Shipping and Port Management, 1st Edition."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=414",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=414"
  },
  "DFH 421": {
   "code": "DFH 421",
   "name": "Gemiadamı Sağlığı ve İş Emniyeti",
+  "nameEn": "Seafarer's Health and Safety",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2130,12 +5053,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=421"
  },
  "DFH 421E": {
   "code": "DFH 421E",
   "name": "Gemiadamı Sağlığı ve İş Emniyeti",
+  "nameEn": "Seafarer's Health and Safety",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2149,12 +5072,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=421"
  },
  "DFH 422": {
   "code": "DFH 422",
   "name": "Deniz Kazaları&Emniyet Kültürü",
+  "nameEn": "Marine Accidents and Safety Culture",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2190,17 +5113,88 @@
    "Hafta 13 · Değişik sektörlerde emniyet kültürü uygulamaları.",
    "Hafta 14 · Denizcilik alanında emniyet kültürü geliştirme metotları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel tanımlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Deniz kazaları ile ilgili ulusal ve uluslararası düzenlemeler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Denizcilikte meydana gelmiş büyük deniz kazaları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz kazalarının incelenmesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz kazalarının incelenmesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Kaza araştırma kurumları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "İnsan faktörü.",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Vize."
+   },
+   {
+    "week": 9,
+    "topic": "Emniyet kültürü.",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Emniyet iklimi.",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kök sebep analizi.",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Kök sebep analiz yöntem ve teknikleri.",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Değişik sektörlerde emniyet kültürü uygulamaları.",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Denizcilik alanında emniyet kültürü geliştirme metotları.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Messer, T. A., Maritime casualties: causes and consequences, Cornell Maritime Press, 2015.",
    "Trafford, S.M., Maritime Safety: The Human Factors, Book Guild Publishing, 2009.",
    "Grech, M.R., Horberry, T. and Koester, T., Human Factors in the Maritime Domain, CRC Press, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=422",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=422"
  },
  "DFH 430E": {
   "code": "DFH 430E",
   "name": "Profes. Maritime Communication",
+  "nameEn": "Profes. Maritime Communication",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2232,15 +5226,87 @@
    "Hafta 13 · İleri seviyede mesleki yayın okuma, anlama,çeviri, yorum",
    "Hafta 14 · Uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İletişimsel Perspektifte olası senaryolar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Farklı diyalektlerde Denizcilik İngilizcesi çalışmaları türünde konuşmaları anlama, yorum yapma, konuşma uygulamaları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Dinleme ve konuşma pratikleri (diyalog, bilgilendirme)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Anlama yorum yapma uygulamaları (diyalog",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Spesifik bir konuda (şikayet, deport, acil durum sonrası vs) yazılı/ sözlü raporlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Senaryo uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Mesleki bir konuda meslektaş/şirket /otoriteye kısa/ detaylı bilgi verme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Senaryo uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Sözlü sunum hazırlama ve yapma teknikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Uygulama",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulama",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "İş görüşmesi için öz video uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "İleri seviyede mesleki yayın okuma, anlama,çeviri, yorum",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=430",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=430"
  },
  "DFH 431": {
   "code": "DFH 431",
   "name": "Etkili İletişim",
+  "nameEn": "Effective Communication",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2254,12 +5320,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=431",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=431"
  },
  "DFH 432": {
   "code": "DFH 432",
   "name": "Deniz Trafik Mühendisliğine Giriş",
+  "nameEn": "Introduction to Maritime Traffic Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2273,12 +5339,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=432"
  },
  "DFH 441": {
   "code": "DFH 441",
   "name": "Denizcilikte Yönetimsel Davranış ve Performans",
+  "nameEn": "Managerial Behaviour and Performance in Maritime",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2292,12 +5358,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=441",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=441"
  },
  "DFH 441E": {
   "code": "DFH 441E",
   "name": "Denizcilikte Yönetimsel Davranış ve Performans",
+  "nameEn": "Managerial Behaviour and Performance in Maritime",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2311,12 +5377,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=441",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=441"
  },
  "DFH 452": {
   "code": "DFH 452",
   "name": "Güverte Makineleri",
+  "nameEn": "Deck Machinery",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2350,15 +5416,87 @@
    "Hafta 13 · Yük işlem pompaları.",
    "Hafta 14 · Yük işlem pompaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güverte kreynleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Güverte kreynleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mataforalar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Baş-kıç ırgat.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Baş-kıç ırgat.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Dümen donanımları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Dümen donanımları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Ambar kapakları ve tipleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Ambar kapakları ve tipleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Ro-Ro gemilerindeki sistemler; rampalar, kapaklar ve araç asansörleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Ro-Ro gemilerindeki sistemler; rampalar, kapaklar ve araç asansörleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Baş-kıç iticiler.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yük işlem pompaları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Yük işlem pompaları.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Ders Notu."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=452",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=452"
  },
  "DFH 462E": {
   "code": "DFH 462E",
   "name": "Deniz Buzulları",
+  "nameEn": "Sea Ice",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -2393,17 +5531,89 @@
    "Hafta 13 · Kutup Bölgelerinde gemi bakım tutumu ve emniyetli işletme.",
    "Hafta 14 · Antarktika Antlaşmalar Sistemi ve Arktik Konsey."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz buzu özellikleri ve türlerine göre farklılıkları.",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 2,
+    "topic": "Seyir bölgelerindeki deniz buzu oluşumları ve hareketleri.",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 3,
+    "topic": "Arktik ve Antarktika’daki deniz buzu farklılıkları ve gemilerin seyirleri.",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 4,
+    "topic": "Buz kaplı bölgelerde deniz gözlem teknikleri (ASPeCt gözlemleri).",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kutup Kodu ve IMO kararları.",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 6,
+    "topic": "Düşük sıcaklık için gemi dizaynları ve kutup sınıfları.",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 7,
+    "topic": "Kutup Bölgelerinde emniyetli seyir ve oluşabilecek sorunlar.",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 8,
+    "topic": "Kutup Bölgelerinde gerçekleşen gemi kazaları ve IMO operasyon standartları.",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 9,
+    "topic": "Deniz haberleşme ve arama kurtarma alanları.",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 10,
+    "topic": "Düşük sıcaklıktaki tehlikeler, mürettebat hazırlığı ve hayatta kalma ekipmanları.",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 11,
+    "topic": "MARPOL ve uygulama alanları.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz kirliliklerine müdahale ve önleme.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Kutup Bölgelerinde gemi bakım tutumu ve emniyetli işletme.",
+    "outcomes": "2-3-4-5-7"
+   },
+   {
+    "week": 14,
+    "topic": "Antarktika Antlaşmalar Sistemi ve Arktik Konsey.",
+    "outcomes": "4-7"
+   }
+  ],
   "textbooks": [
    "Wadhams, P. (2000), Ice in the Ocean, Routledge Curzon.",
    "International Code for Ships Operating in Polar Waters (Polar Code).",
    "Standards of Training, Certification & Watchkeeping (STCW)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=462",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=462"
  },
  "DFH 472E": {
   "code": "DFH 472E",
   "name": "Ticari Deniz İşletmeciliği",
+  "nameEn": "Commercial Ship Management",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2436,16 +5646,88 @@
    "Hafta 13 · Acente işlemleri.",
    "Hafta 14 · Gemi kiralama ve Brokerlik."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizcilik işletmelerine giriş ve kavramları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kargo kapasitesinin maksimizasyonu.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kargo kapasitesi ile ilgili uygulamalar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemilerde yakıt yönetimine ticari bakış.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Gemilerde yakıt yönetimi ile ilgili uygulamalar.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sefer maliyet hesabı ve uygulaması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Finansal maliyet planlaması ve uygulaması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Navlun mukavelelerinin ticari içeriği.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Çarter parti seçimi, taşıma koşulları, sefer talimatları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi sigorta işlemleri; tanımı, çeşitleri, deniz sigortaları, sigorta poliçesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Kulüp sigortaları; kapsam ve koşulları, firmalarla ilişkiler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Navlun nakit akışı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Acente işlemleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi kiralama ve Brokerlik.",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Stopforth, Martin, Maritime Economics, London: Routledge, 2005.",
    "Brodie, Peter R, Commercial Shipping Handbook 2nd Ed. 2006."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=472",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=472"
  },
  "DFH 474": {
   "code": "DFH 474",
   "name": "Denizcilikte Yön.Dav.&Perf.",
+  "nameEn": "Managerial Behaviour and Performance in Maritime",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2480,16 +5762,88 @@
    "Hafta 13 · İletişim ve çatışma konularına ilişkin örnek olaylar ve çözümlemeleri.",
    "Hafta 14 · Gemi ortamında psikolojik taciz ve başa çıkma yöntemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yönetim psikolojisi ve temel konu alanları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemideki yaşam koşullarının birey psikolojisine ve performansa etkileri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yalnızlık dürtüsü, kaygı, stres ve başa çıkma teknikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İnsan davranışını anlama modelleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bireyin kendisini tanıma ve geliştirme yolları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ekip performansını etkileyen faktörlere psikolojik yaklaşımlar/bakış açısı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yönetimsel psikoloji açısından liderlik.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Örgütsel yaşamda kontrol ve güç.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kriz anında karar verme ve davranış.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "İletişim psikolojisi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kültürün insan davranışlarına ve iletişime etkisi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Çatışmanın bilişsel nedenleri ve çözüm yolları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "İletişim ve çatışma konularına ilişkin örnek olaylar ve çözümlemeleri.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi ortamında psikolojik taciz ve başa çıkma yöntemleri.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Baldwin,T,T., Bommer, W, H., Rubin, R, S. (2013) Managing Organizational Behavior, 2nd Edition, McGraw-Will.",
    "Eren, E.(2012) Örgütsel Davranış ve Yönetim Psikolojisi, Beta Yayınları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=474",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=474"
  },
  "DFH 476": {
   "code": "DFH 476",
   "name": "Etkili İletişim",
+  "nameEn": "Effective Communication",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2523,16 +5877,88 @@
    "Hafta 13 · Denizcilikte iletişime ilişkin örnek olaylar.",
    "Hafta 14 · Toplantı yönetimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İletişim kavramı, iletişimin nitelikleri ve denizcilikte iletişimin önemi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Örgüt kavramı ve denizcilikte örgüt türleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Örgütlerin özellikleri ve örgüt yapılarının iletişime etkisi / Örgüt kuramları ve iletişim.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İletişim türleri ve iletişim süreci.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Sözsüz iletişim ve beden dili.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Gruplarda ve örgütlerde bireysel iletişim.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Bireysel iletişimin engelleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bireysel iletişim geliştirme teknikleri.",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Örgütsel iletişim ağ modelleri ve örgütsel iletişim kanalları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Örgütlerde yazılı iletişim.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Örgütlerde iletişimin engelleri ve örgütsel iletişimin etkin yönetimi.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kültürün iletişime etkisi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Denizcilikte iletişime ilişkin örnek olaylar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Toplantı yönetimi.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Tutar,H.Ö.(2009). Örgütsel İletişim,SeçkinYayınları, Ankara.",
    "Sabuncuoğlu, Z., Gümüş M. (2008). Örgütlerde İletişim, Arıkan BasımYayım, İstanbul."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=476",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=476"
  },
  "DFH 478E": {
   "code": "DFH 478E",
   "name": "Ro-ro / Passenger Ship Operat.",
+  "nameEn": "Ro-ro / Passenger Ship Operat.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -2564,15 +5990,87 @@
    "Hafta 13 · RoRo ve yolcu Gemilerinde Can Kurtarma Ekipmanları – Yolcu Gemilerinde Gemi Terk.",
    "Hafta 14 · IMO Model Kurs 1.29, içeriğinin incelenmesi ve Yolcu Gemilerinde Kalabalık Yönetimi ve Acil Durum Müdahale."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "RoRo ve Yolcu Gemileri ve türlerinin tanıtımı ve terminoloji.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dünyada ve Türkiye’de RoRo ve Yolcu taşımacılığı hakkında bilgi trend hatların incelenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "RoRo ve RoPax Gemilerinde yükleme ve tahliye operasyonları I.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "RoRo Gemilerinde IMDG ve spesifik yüklerin yüklenmesi.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Anti-heeling, Flume Tank, spesifik ekipmanların .",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Rampa ve Hidrolik Kapaklar,ventilasyon spesifik ekipmanların.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yolcu ve RoRo Gemilerinde enerji verimliliği ve çevre dostu yapılan çalışmaların incelenmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Code of Practice for RoRo ships, Requirements for Ro-Ro passenger ships incelenmesi.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Titanic Gemi Kazası, SOLAS ve Yolcu Can Güvenliği.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Estonia ve diğer RoRo ve Yolcu Gemi Kazalarının incelenmesi ve Su Geçirmezlik ile İlgili Kurallar.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "RoRo ve Yolcu Gemilerinde Yangının İncelenmesi.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "RoRo ve Yolcu Gemileri için Sabit yangın Söndürme Sistemlerinin İncelenmesi.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "RoRo ve yolcu Gemilerinde Can Kurtarma Ekipmanları – Yolcu Gemilerinde Gemi Terk.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "IMO Model Kurs 1.29, içeriğinin incelenmesi ve Yolcu Gemilerinde Kalabalık Yönetimi ve Acil Durum Müdahale.",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=478",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=478"
  },
  "DFH 482E": {
   "code": "DFH 482E",
   "name": "Cargo Handling Simulator",
+  "nameEn": "Cargo Handling Simulator",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -2604,6 +6102,78 @@
    "Hafta 13 · Kimyasal Tankerde tank yıkaması",
    "Hafta 14 · LPG/LNG operasyonları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tankerlerde kullanılan yükleme – boşaltma donanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tankerlerde yük hesaplamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tanker operasyonları – stabilite ilişkisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ham Petrol yükleme ve balast operasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Ham petrol tankerinde inert gaz operasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ham petrol tankerinde tahliye ve balast operasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Ham Petrolle Yıkama (COW) operasyonu, TOT",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Ham Petrol Tankerinde tank yıkama ve ODME operasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Kimyasal tanker yükleme hazırlıkları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Kimyasal tanker yükleme ve balast operasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Kimyasal tanker tahliye ve balast operasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Nitrojen Jeneratörü, SIRE",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Kimyasal Tankerde tank yıkaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "LPG/LNG operasyonları",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "IMO Model Course 1.02, Specialized Trainings for Oil Tankers, London, 2006.",
    "IMO Model Course 1.04, Specialized Trainings for Chemical Tankers, London, 2006.",
@@ -2613,12 +6183,12 @@
    "IMO Model Course 1.37, Chemical Tanker Cargo and Ballast Handling Simulator, London, 2007.",
    "IMO Model Course 2.06, Oil Tanker Cargo and Ballast Handling Simulator, International Maritime Organization, London, 2002."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=482",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=482"
  },
  "DFH 484": {
   "code": "DFH 484",
   "name": "Deniz Sigortaları",
+  "nameEn": "Marine Insurances",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2650,15 +6220,87 @@
    "Hafta 13 · Nesnel kanıt kapsamındaki evrakların gemilerde tutulması.",
    "Hafta 14 · Nesnel kanıt kapsamındaki evrakların gemilerde tutulması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sigorta kavramlarına giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sigorta sözleşmesi, unsurları, tarafları, tarafların borç ve yükümlülükleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sigorta sözleşmesi, unsurları, tarafları, tarafların borç ve yükümlülükleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik risklerine karşı sigortalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Denizcilik risklerine karşı sigortalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Tekne ve makine teçhizat sigortası.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Kulüp sigortaları, ek sigortalar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Muafiyetler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yük sigortaları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "FDND (navlun, sürastarya ve savunma giderlerine ilişkin sigorta) ve diğer sigortaların irdelenmesi.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Gemilerin teknik işletmecilik kuralları ve sigorta kuralları arasındaki ilişkilerin irdelenmesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gemilerin teknik işletmecilik kuralları ve sigorta kuralları arasındaki ilişkilerin irdelenmesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Nesnel kanıt kapsamındaki evrakların gemilerde tutulması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Nesnel kanıt kapsamındaki evrakların gemilerde tutulması.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "A. L. Parks, The Practice of Marine Insurance and Average, London, 2001."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=484",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=484"
  },
  "DFH 486E": {
   "code": "DFH 486E",
   "name": "Chartering",
+  "nameEn": "Chartering",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -2690,17 +6332,89 @@
    "Hafta 13 · Çarter Sözleşmesinin türüne göre taraflar arasındaki masrafların dağıtılması.",
    "Hafta 14 · Uygulamada kullanılan çarter parti örneklerinin incelenmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çartere giriş. Kavramlar ve taraflar.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Çarter piyasası. Kuru yük piyasası, tanker piyasası, karma yük piyasası.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çarter uygulamasında donatan, piyasa faaliyetleri ve bilgi kanalları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Satım sözleşmesi ve taşıma sözleşmesi arasındaki hukuki ilişki.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Çarter sözleşmesi ve hukuki mahiyeti. Çarter sözleşmelerinde kanunlar ihtilafı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Çartere ilişkin uluslararası hukuk düzenlemeleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Çartere ilişkin ulusal hukuk düzenlemeleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Çarter Türleri: Gemi Kirası.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Çarter Türleri: Zaman Çarteri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çarter Türleri: Yolculuk Çarteri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Çarter Türleri: Uygulamadaki diğer çarter sözleşmeleri.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Çarterparti. Tanımı, şekli, sınıflandırılması.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çarter Sözleşmesinin türüne göre taraflar arasındaki masrafların dağıtılması.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamada kullanılan çarter parti örneklerinin incelenmesi.",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Ülgener, F. M., Çarter Sözleşmeleri - I, İstanbul, 2010.",
    "Ülgener, F. M., Çarter Sözleşmeleri - II, İstanbul, 2016.",
    "Gorton, L., Hillenius, P., Ihre, R., Sandevarn, A., Shipbroking and Chartering Practice, London, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=486",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=486"
  },
  "DFH 490E": {
   "code": "DFH 490E",
   "name": "E-Seyir Sistemleri",
+  "nameEn": "E-Navigation Systems",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -2733,6 +6447,78 @@
    "Hafta 13 · Entegre Köprüüstü ve Seyir Sistemleri.",
    "Hafta 14 · E-Seyir uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radarın genel yapısı ve çalışma prensibi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Radar sistemleri, yapısı ve işleyişi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Radar görüntü çeşitleri. Radar sembol ve kontrolleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Radar Plotlaması ve uygulamaları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Otomatik Plotlama Cihazı (ARPA) yapısı, işleyişi ve fonksiyonları. ARPA sembol ve kontrolleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Radar ve ARPA’nın seyirde kullanılması, yeteneklerini belirleyen unsurlar.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Elektronik haritalar, elektronik seyir haritalarının özellikleri. ECDIS yapısı ve işletim fonksiyonları",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "ECDIS veri tabanı. ECDIS ile Radar-ARPA’nın birlikte kullanımı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "ECDIS ile seyir planlaması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Otomatik Tanımlama Sistemi (AIS); çalışma prensibi, unsurları. AIS Dinamik ve statik bilgi akışı. Uzak Mesafeden Gemileri Tanımlanma ve Takip Sistemi (LRIT). Uygulama kuralları ve yürürlük.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sefer Veri Kayıtçıları (VDR); çalışma prensibi, kaydedilecek bilgiler ve bilgilerin kullanımı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Köprüüstü elektronik seyir cihazları için IMO Performans Standartları.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Entegre Köprüüstü ve Seyir Sistemleri.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "E-Seyir uygulamaları.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Belirdi, N., Gemi Elektroniği, 2003.",
    "Radar ve Radar Plotlama, Tunçer, G., 2003 (Ders Notları).",
@@ -2742,12 +6528,12 @@
    "IMO, Operational Use of Integrated Bridge Systems including Integrated Navigation System, Model Course 1.32, 2005.",
    "IMO, Automatic Identification System (AIS), Model Course 1.34, 2006."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=490",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=490"
  },
  "DFH 491E": {
   "code": "DFH 491E",
   "name": "Deniz Güvenliği",
+  "nameEn": "Maritime Security",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2783,6 +6569,78 @@
    "Hafta 13 · Denizcilik Alanında Güvenlik Tehdidi Olarak İnsan Faktörü.",
    "Hafta 14 · Denizcilikte Güvenlik Risk Değerlendirmeleri; Denizcilikte Güvenlik Denetimleri ve Planlama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güvenlik Kavramı ve Teorik Temelleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Denizcilik Alanında Güvenliğin Rolü; Denizcilikte Güvenlik ile İlgili Ulusal ve Uluslararası Regülasyonlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Liman Güvenliği Kavramı ve Limanlarda Güvenlik Dinamikleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Limanlarda Güvenlik Yönetim Sisteminin Kurulması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Denizcilikte Terörizm ve Korsanlık.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Denizel Alanda Enerji Güvenliği Kavramları, İndeksleri ve Ölçütleri.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Denizcilikte Ulusal ve Uluslararası Enerji Güvenlik Politikaları.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Denizel Alanda Enerji Güvenliği Stratejisi.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Denizcilikte Siber Güvenlik Kavramları, Tehditleri, Önlem ve Uygulamaları.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Denizcilikte Siber Uzaya Yönelik Gerçekleşmiş Saldırılar ve Vaka Analizleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Denizcilikte Siber Güvenlik Farkındalığı ve Dinamikleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Denizcilik Alanındaki Güvenlik Regülasyonları ve Siber Güvenlik.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Denizcilik Alanında Güvenlik Tehdidi Olarak İnsan Faktörü.",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Denizcilikte Güvenlik Risk Değerlendirmeleri; Denizcilikte Güvenlik Denetimleri ve Planlama.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Pascual, C., & Elkind, J. (Eds.). (2010). Energy security: economics, politics, strategies, and implications. Brookings Institution Press.",
    "Yergin, D. (2011). The quest: energy, security, and the remaking of the modern world. Penguin.",
@@ -2791,12 +6649,12 @@
    "Benny D.J., Ph.D. (2015), Maritime Security: Protection of Marinas, Ports, Small Watercraft, Yachts, and Ships, CRC Press.",
    "The Guidelines on Cyber Security onboard, BIMCO, CLIA, ICS, INTERCARGO, INTERTANKO, 2016."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=491",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=491"
  },
  "DFH 494E": {
   "code": "DFH 494E",
   "name": "Intercult.Comm.in Marit.Domain",
+  "nameEn": "Intercult.Comm.in Marit.Domain",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -2830,16 +6688,88 @@
    "Hafta 13 · Gemiadamları sosyal yaşamında kültürel farklılıkların iletişime etkisi.",
    "Hafta 14 · Acil durumlarda kültürler arası iletişim."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kültür, gemi adamları ortak denizcilik kültürü ve iletişim kavramları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kültürler arası iletişimde “Lingua Franca” ve İngiliz Dili.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kültürler arası iletişim sorunları ve SMCP.",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz telsiz haberleşmesinde kültürler arası etkiler.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Çok uluslu köprüüstü ve makine dairesi personel yapısında iletişim.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kılavuzluk operasyonlarında kültürler arası etkin bilgi paylaşımı.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Liman ve terminal operasyonlarında kültürel farklılıkların iletişime etkisi.",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Sörvey ve denetlemelerde dikkat edilmesi gereken kültürel iletişim özellikleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Gümrük, acente vb. kıyı birimlerle iletişimde kültürel etkiler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kurvaziyer yolcu gemilerinde, gemi personeli ve yolcular arasında iletişim.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Denizde kültürler arası iletişimde işaretlerin kullanımı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi işletmeciliği yazılı haberleşmesinde kültürler arası iletişim.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemiadamları sosyal yaşamında kültürel farklılıkların iletişime etkisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Acil durumlarda kültürler arası iletişim.",
+    "outcomes": "4-5-6"
+   }
+  ],
   "textbooks": [
    "Beyond Language-Intercultural Communication for English as a Second Language - Deena R.Levin, Mara B. Adelman-Prentice Hall Regents, Englewood Cliffs NJ, 1982.",
    "52 Activities for Improving Cross-Cultural Communication, Donna M.Stringer, Patricia A.Cassiday, Intercultural Press-Boston, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=494",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=494"
  },
  "DFH 495": {
   "code": "DFH 495",
   "name": "Gemiadamı Sağlığı&İş Emniyeti",
+  "nameEn": "Seafarer's Health and Safety",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2878,16 +6808,87 @@
    "Hafta 13 · Sağlık ve Güvenlik İşaretleri.",
    "Hafta 14 · İş Kazalarının ve Meslek Hastalıklarının Önlenmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel tanımlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İş kazaları ve meslek hastalıkları tanımları, İş kazalarının analizi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "OHSAS 18001 gerekleri, ISO 9001, ISO 14001.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik sektöründe OHSAS 18001 uygulamaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Denizcilik sektöründe OHSAS 18001 uygulamaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "İş güvenliği ile ilgili ulusal kurumlar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "İş Güvenliği ile ilgili Uluslararası Mevzuat.",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Vize."
+   },
+   {
+    "week": 9,
+    "topic": "İş Sağlığı ve Güvenliği Yönetim Sistemi denetimleri.",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "İş Sağlığı ve Güvenliği Yönetim Sistemi denetimleri.",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Ağır ve tehlikeli iş sınıfı.",
+    "outcomes": "11"
+   },
+   {
+    "week": 12,
+    "topic": "Acil Durum Planları.",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Sağlık ve Güvenlik İşaretleri.",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "İş Kazalarının ve Meslek Hastalıklarının Önlenmesi.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "BİLİR, N. 2016. İş Sağlığı ve Güvenliği, Güneş Tıp Kitabevleri, ISBN: 9789752776418.",
    "SELEK, H. S. 2016. İş Sağlığı ve Güvenliği (İSG) Temel Konular. Seçkin Yayıncılık."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=495",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=495"
  },
  "DFH 495E": {
   "code": "DFH 495E",
   "name": "Gemiadamı Sağlığı&İş Emniyeti",
+  "nameEn": "Seafarer's Health and Safety",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2926,16 +6927,87 @@
    "Hafta 13 · Sağlık ve Güvenlik İşaretleri.",
    "Hafta 14 · İş Kazalarının ve Meslek Hastalıklarının Önlenmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel tanımlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İş kazaları ve meslek hastalıkları tanımları, İş kazalarının analizi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "OHSAS 18001 gerekleri, ISO 9001, ISO 14001.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik sektöründe OHSAS 18001 uygulamaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Denizcilik sektöründe OHSAS 18001 uygulamaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "İş güvenliği ile ilgili ulusal kurumlar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "İş Güvenliği ile ilgili Uluslararası Mevzuat.",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Vize."
+   },
+   {
+    "week": 9,
+    "topic": "İş Sağlığı ve Güvenliği Yönetim Sistemi denetimleri.",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "İş Sağlığı ve Güvenliği Yönetim Sistemi denetimleri.",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Ağır ve tehlikeli iş sınıfı.",
+    "outcomes": "11"
+   },
+   {
+    "week": 12,
+    "topic": "Acil Durum Planları.",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Sağlık ve Güvenlik İşaretleri.",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "İş Kazalarının ve Meslek Hastalıklarının Önlenmesi.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "BİLİR, N. 2016. İş Sağlığı ve Güvenliği, Güneş Tıp Kitabevleri, ISBN: 9789752776418.",
    "SELEK, H. S. 2016. İş Sağlığı ve Güvenliği (İSG) Temel Konular. Seçkin Yayıncılık."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=495",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=495"
  },
  "DFH 497E": {
   "code": "DFH 497E",
   "name": "Denizcilikte Örgütsel Yönetim ve Davranış",
+  "nameEn": "Org.Mngt &Behavior in Maritime",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2968,18 +7040,90 @@
    "Hafta 13 · Örgütsel değişim, değişime direnç ve yönetimi, örgüt geliştirimi.",
    "Hafta 14 · Stres ve yönetimi; tükenmişlik sendromu. Sosyal sorumluluk ve etik. Denizcilik şirketi ve gemideki durum."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yönetim tanımı ve unsurları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Örgüt kavramı ve çeşitleri, örgüt süreci ve ilkeleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemi organizasyonu ve denizcilikteki diğer örgütler ile ilişkiler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tutum, değer, birey, kişilik ve kişilik tipleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Algılama, Atfetme ve Öğrenme.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İş tatmini ve örgütsel bağlılık, denizcilik şirketlerinde gemiadamlarının durumu.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Motivasyon ve motivasyon kuramları, denizcilik sektöründe motivasyon faktörleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Örgütlerde grup/takım yönetimi; grup/takım oluşumu, çeşitleri ve özellikleri: gemi örgütlenmesinden örnekler.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Liderlik, liderlik yaklaşımları ve gemide liderlik uygulamalarına örnekler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Bireysel ve örgütsel çatışma, müzakere; gemide sosyal yaşama ilişkin yorumlar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Örgütsel çevre ve teknoloji: gemi organizasyonu örneği.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Örgüt kültürü ve örgütsel iletişim; örgüt içi ve örgütler arası, çok kültürlü gemide çalışma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Örgütsel değişim, değişime direnç ve yönetimi, örgüt geliştirimi.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Stres ve yönetimi; tükenmişlik sendromu. Sosyal sorumluluk ve etik. Denizcilik şirketi ve gemideki durum.",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Stephen P. Robbins and Timothy A. Judge (2010), Organizational Behavior, 14th Ed., Pearson, 2011.",
    "IMO, Personal Safety and Social Responsibilities, Model Course 1.21, 2000.",
    "IMO, Crowd Management, Passenger Safety, Model Course 1.28, 2000.",
    "IMO, Proficiency in Crisis Management and Human Behaviour Training, Model Course 1.29, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=497",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=497"
  },
  "DFH 498": {
   "code": "DFH 498",
   "name": "Hızlı Okuma Teknikleri",
+  "nameEn": "Sepeed Reading Techniques",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -3015,15 +7159,87 @@
    "Hafta 13 · Hafızayı kuvvetlendirme ve dikkati geliştirme testleri.",
    "Hafta 14 · İleri derecede hızlı okuma teknikleri (Göz gezdirerek okuma, ana fikir için okuma)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Anlayarak hızlı okumanın tarihçesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Okuma hızı ve anlama puanının belirlenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Göz duruşları ve göz ritmi teknikleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Hızlı görme teknikleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Hızlı görme teknikleri II.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "İki kelime görme teknikleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "İkili bloklar halinde okuma teknikleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üç kelime görme teknikleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Üçlü bloklar halinde okuma teknikleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Üçlü bloklar halinde okuma teknikleri II.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Dört kelime görme teknikleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Dörtlü bloklar halinde okuma teknikleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Hafızayı kuvvetlendirme ve dikkati geliştirme testleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "İleri derecede hızlı okuma teknikleri (Göz gezdirerek okuma, ana fikir için okuma).",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Kadıoğlu, Muhsin. Anlayarak Çok Hızlı Okuma Teknikleri, 11. Baskı, Postiga Yay. İstanbul, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=498",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=498"
  },
  "DFH 499": {
   "code": "DFH 499",
   "name": "Liderlik ve Kriz Yönetimi",
+  "nameEn": "Leadership and Crisis Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -3059,12 +7275,82 @@
    "Hafta 13 · Kriz yönetiminde örgütleme ve eğitim.",
    "Hafta 14 · Gemilerde risk değerlendirmesi ve yönetimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Liderlik kavramı, tanımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Liderlik çeşitleri, Köprüüstü takım yönetiminde liderlik, görev ve sorumluluklar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Köprüüstü takım yönetiminde liderlik, görev ve sorumluluklar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Emniyetli seyir için liderlik ve yönetimsel becerilerin rolü.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İnsan Faktörü.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Acil durumlar ve acil durum prosedürleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Dönem Ara Tatili."
+   },
+   {
+    "week": 8,
+    "topic": "Kriz Yönetimi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Acil durumlarda Köprüsütü Takım Çalışması ve Liderlik.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Acil durumlarda iletişim.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Topluluk yönetimi.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Gemilerde kriz durumlarında stres yönetimi.",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Kriz yönetiminde örgütleme ve eğitim.",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Gemilerde risk değerlendirmesi ve yönetimi.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "The Essential Guide to Managing Corporate Crises: A Step-by-Step Handbook for Surviving Major Catastrophes Hardcover – May 23, 1996.",
    "Liderlik – by Brian Tracy 2016.",
    "Liderlik – Prof. Dr. İsmet Barutçugil-Kariyer Yayınları, 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=499",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DFH&dersNo=499"
  }
 }

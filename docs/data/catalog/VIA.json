@@ -2,6 +2,7 @@
  "VIA 502E": {
   "code": "VIA 502E",
   "name": "Data Mining for Business",
+  "nameEn": "Data Mining for Business",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -30,17 +31,74 @@
    "Hafta 10 · Kümeleme Teknikleri",
    "Hafta 11 · Veri içindeki anormalliklerin tespiti"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri tiplerinin tanımlanması ve temel istatistik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Veri tiplerinin tanımlanması ve temel istatistik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel Bileşen Analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrusal Regresyon Analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sınıflandırma Teknikleri (Lojistik Regrasyon ve Ayırt Etme Analizi)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Modelin geçerliliğinin ölçülmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Doğrusal olmayan Regresyon Modelleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Karar Ağacı ve Sentezleme Algoritmaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Destek Vektör Makineleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kümeleme Teknikleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Veri içindeki anormalliklerin tespiti",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "James G., Witten, D., Hastie T., and Tibshirani, R., An Introduction to Statistical Learning, Springer, 2013",
    "Tan, P.N., Steinbach, M. and Kumar V., Introduction to Data Mining, Pearson, 2006",
    "Class notes and handouts"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=502"
  },
  "VIA 504E": {
   "code": "VIA 504E",
   "name": "Big Data Technologies&Appli.",
+  "nameEn": "Big Data Technologies&Appli.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -70,18 +128,75 @@
    "Hafta 10 · Spark ile İleri Analitik Uygulamaları",
    "Hafta 11 · Dönem Projesi Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Büyük veri işleme ekosistemi ve Hadoop Temelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "MapReduce Framework'e genel bakış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Hadoop Projeleri ve Vaka Analizleri",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Apache Spark ile Veri Analizine Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "RDD ile Spark Programlama Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Spark Uygulamalarını Hadoop Üzerinde Çalıştırma",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Spark SQL",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Spark Streaming",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Spark MLib ile Makine Öğrenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Spark ile İleri Analitik Uygulamaları",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem Projesi Sunumları",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Tom White, Hadoop: The Definitive Guide, 4th Edition : Storage and Analysis at Internet Scale, O'Reilly Media, 2015",
    "Holden Karau, Andy Konwinski, Patrick Wendell, Matei Zaharia, Learning Spark : Lightning-Fast Big Data Analysis, O'Reilly Media, 2015.",
    "Mark Grover, Ted Malaska, Jonathan Seidman, Gwen Shapira, Hadoop Application Architectures : Designing Real-World Big Data Applications, O'Reilly Media, 2015",
    "Big Data Analytics Beyond Hadoop: Real-Time Applications with Storm, Spark, and More Hadoop Alternatives, Vijay Srinivas Agneeswaran, Pearson Education, 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=504",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=504"
  },
  "VIA 506E": {
   "code": "VIA 506E",
   "name": "Optimization&Decision Modell.",
+  "nameEn": "Optimization&Decision Modell.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -116,6 +231,63 @@
    "Hafta 10 · Ulaştırma Sorunlarının Formülasyonu, Temel Olurlu Çözümün Bulunması",
    "Hafta 11 · Ulaştırma problemlerinin Çözümü, Atama Sorunları, Geçici Konaklama Sorunları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "YA'ya Giriş, Temel Kavramlar, Doğrusal Programlamaya (DP) Giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Modelleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Grafik Çözüm, Simpleks Algoritması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Karar verme ile ilgili temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "OPL yazılım paketi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Çok ölçütlü karar verme yöntemleri-temel kavramlar, uygulama alanları",
+    "outcomes": "5-9"
+   },
+   {
+    "week": 7,
+    "topic": "Karar Ağacı",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "Fayda Teorisi",
+    "outcomes": "1-5-10"
+   },
+   {
+    "week": 9,
+    "topic": "Duyarlılık Analizi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Ulaştırma Sorunlarının Formülasyonu, Temel Olurlu Çözümün Bulunması",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ulaştırma problemlerinin Çözümü, Atama Sorunları, Geçici Konaklama Sorunları",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Winston W.L. (2004) “Operations Research: Applications and Algorithms”,Brooks/Cole – Thomson Learning",
    "French, S, “Decision Theory:An Introduction to the Mathematics of Rationality”, John Wiley &Sons, NewYork: 1988",
@@ -127,12 +299,12 @@
    "Rardin R.L. (1998) \"Optimization in Operations Research\", Prentice Hall Inc",
    "Walker R.C. (1999) \"Introduction to Mathematical Programming\", Prentice Hall Inc."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=506",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=506"
  },
  "VIA 508E": {
   "code": "VIA 508E",
   "name": "Data Visualization and Commun.",
+  "nameEn": "Data Visualization and Commun.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -162,17 +334,74 @@
    "Hafta 10 · Gösterge paneli tasarımı",
    "Hafta 11 · Proje sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri görselleştirmeye giriş ve temel tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri görselleştirmede kullanılan araçlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Veri görselleştirme oluşturma süreci",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Etkili dijital sunum dosyaları tasarlamak",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Keşif amaçlı görselleştirme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kategorik verileri görselleştirme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Zaman seri verilerini görselleştirme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Çok değişkenli görselleştirme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Coğrafi verileri görselleştirme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Gösterge paneli tasarımı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Proje sunumları",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Nau Y. (2011) Visualize This, Wiley",
    "Nau Y. (2013) Data Points: Visualization That Means Something, Wiley",
    "Khan A. (2016) Jumpstart Tableau: A Step-By-Step Guide to Better Data Visualization, Apress"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=508",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=508"
  },
  "VIA 509E": {
   "code": "VIA 509E",
   "name": "Machine Learningwith Big Data",
+  "nameEn": "Machine Learningwith Big Data",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -202,17 +431,74 @@
    "Hafta 10 · Kümeleme problemleri için büyük veri örnekleri",
    "Hafta 11 · Performans ölçme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makine öğrenmesine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gözetimli ve gözetimsiz öğrenme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer regresyon, Lojistik regresyon",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Naïve Bayes, K en yakın komşu algoritması",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "K-means, Hiyerarşik kümeleme",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yapay Sinir Ağları",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Destek Vektör Makineleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Regresyon problemleri için büyük veri örnekleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sınıflandırma problemleri için büyük veri örnekleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kümeleme problemleri için büyük veri örnekleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Performans ölçme",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Mü ller, Andreas C., and Sarah Guido. Introduction to machine learning with Python.",
    "O'Reilly Media, 2017..Raschka, Sebastian. Python machine learning. Packt Publishing Ltd, 2015.",
    "Grus, Joel. Data Science from Scratch: First Principles with Python. \" O'Reilly Media, Inc.\", 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=509"
  },
  "VIA 511E": {
   "code": "VIA 511E",
   "name": "Time Series and Forecasting",
+  "nameEn": "Time Series and Forecasting",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -241,16 +527,73 @@
    "Hafta 10 · Otoregresif Koşullu Değişen Varyans",
    "Hafta 11 · Doğrusal Olmayan Zaman Serisi Modelleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Zaman Serilerinin grafiksel gösterimi, Korelogram",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Durağanlık, Ergodisite,",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tek değişkenli Durağan Süreçler :AR, MA, ARMA",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Üstel Düzleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Öngörü",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Birim Kök testleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Vektör Otoregresif Süreçler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Eşbütünleşme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Eşbütünleşme vektör tahmincileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Otoregresif Koşullu Değişen Varyans",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Doğrusal Olmayan Zaman Serisi Modelleri",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Introduction to Modern Time Series Kirchgässner G. · Wolters J springer 2007 Analysis of Financial Time Series Ruey TSay , Wiley 2010",
    "Analysis of Financial Time Series Ruey TSay , Wiley 2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=511"
  },
  "VIA 525E": {
   "code": "VIA 525E",
   "name": "Social Network Analy.for Bus.",
+  "nameEn": "Social Network Analy.for Bus.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -280,17 +623,74 @@
    "Hafta 10 · Vakalar ile uygulamalar: Youtube",
    "Hafta 11 · Proje sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sosyal ağ analizine giriş ve temel tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sosyal medya sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sosyal ağ analizi giriş ve temel tanımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağ tipleri ve özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Veri toplama ve filtreleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kümeleme ve gruplama",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Vakalar ile uygulamalar: Eposta",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Vakalar ile uygulamalar: Twitter",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Vakalar ile uygulamalar: Facebook",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Vakalar ile uygulamalar: Youtube",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Proje sunumları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Hansen, D.L, Schneiderman, B., & Smith, M. (2011). Analyzing Social Media Networks with NodeXL: Insights from a Connected World. New York: Morgan Kaufmann",
    "Hanneman, R. A. & Riddle, M. (2005). Introduction to social network methods. Riverside, CA: University of California, Riverside",
    "Monge, P. R. & Contractor, N. S. (2003). Theories of Communication Networks. New York: Oxford University Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=525"
  },
  "VIA 528E": {
   "code": "VIA 528E",
   "name": "Deep Learning for Business App",
+  "nameEn": "Deep Learning for Business App",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -319,17 +719,74 @@
    "Hafta 10 · Tahminleme analizinde derin öğrenme",
    "Hafta 11 · Yapılı olmayan veri için derin öğrenme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay sinir ağlarında temel konular",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tek katmanlı yapay sinir ağları , Öğrenme Kuralları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Çok katmanlı yapay sinir ağları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Evrişimli yapay sinir ağları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Geri Beslemeli Öğrenme, Uzun-kısa dönmeli hafıza",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Restricted Boltzman Makineleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Derin Öğrenme ve İş Uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Regresyon analizinde derin öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sınıflandırma analizinde derin öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tahminleme analizinde derin öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yapılı olmayan veri için derin öğrenme",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016. http://www. deeplearningbook.org.",
    "Aggarwal, Charu C. Neural networks and deep learning. Springer,, 2018.",
    "Class notes and handouts"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=528",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=528"
  },
  "VIA 529E": {
   "code": "VIA 529E",
   "name": "Reinforce.Lear.for Busi.App.",
+  "nameEn": "Reinforce.Lear.for Busi.App.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -359,18 +816,75 @@
    "Hafta 10 · İş Uygulamalarında Değer Temelli Derin Pekiştirilmiş Öğrenme: Q-network",
    "Hafta 11 · Politika Temelli Derin Pekiştirilmiş Öğrenme : REINFORCE"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Pekiştirilmiş Öğrenme Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çok Kollu Haydut Problemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Markov Karar Süreçleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Değer Yineleme ve Politika Yineleme Yöntemleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Monte Carlo Yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Q-Öğrenme ve SARSA",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Uygunluk İzsürümü",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Keşif ve Kıymetlendirme Yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Fonksiyon Yakınlaştırma: Stokastik gradyan, Yarı gradyan TD Güncellemesi, En küçük kareler TD",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "İş Uygulamalarında Değer Temelli Derin Pekiştirilmiş Öğrenme: Q-network",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Politika Temelli Derin Pekiştirilmiş Öğrenme : REINFORCE",
+    "outcomes": "1-3-5"
+   }
+  ],
   "textbooks": [
    "Reinforcement Learning: An Introduction (second edition). R. Sutton and A. Barto. MIT Press, 2018.",
    "Bertsekas, Dimitri P. Approximate dynamic programming. Belmont: Athena scientific, 2012.",
    "Powell, Warren B. Approximate Dynamic Programming: Solving the curses of dimensionality. Vol. 703. John Wiley & Sons, 2007.",
    "Graesser, Laura, and Wah Loon Keng. Foundations of Deep Reinforcement Learning: Theory and Practice in Python. Addison-Wesley Professional, 2019."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=529",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=529"
  },
  "VIA 599": {
   "code": "VIA 599",
   "name": "Proje",
+  "nameEn": "Project",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -384,7 +898,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=599",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=599"
  }
 }

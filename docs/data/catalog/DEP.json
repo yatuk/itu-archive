@@ -2,6 +2,7 @@
  "DEP 503E": {
   "code": "DEP 503E",
   "name": "Yapı Dinamiği",
+  "nameEn": "Structural Dynamics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -39,6 +40,77 @@
    "Hafta 13 · Yayılı parametrelere sahip sistemler, eğilme ve kesme titreşimleri.",
    "Hafta 14 · Pasif titreşim kontrolü: TSD ve ÇSD sistemler için ayarlı kütle sönümleyicilerin (TMD) dinamik teorisi. TSD sistemler için taban izolasyonu yöntemi, sismik tepkiler için değiştirilmiş TSD model."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tek serbestlik dereceli sistemler (TSD): Kütle-yay-sönümleyici idealleştirmesi, dinamik hareket denklemi. Sönümsüz serbest titreşim, sönümlü serbest titreşim, sıvılı sönümlü serbest titreşim.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "TSD: Zorlanmış titreşim tepkisi, harmonik titreşim tepkisi. Kuvvetin aktarımı ve titreşim izolasyonu, yer hareketine sistemin tepkisi. Eşdeğer viskoz sönüm.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "TSD: Birim itme yüküne tepki, basamak fonksiyonuna tepki, darbe yükü altında çözüm, genel yükleme altında çözüm. Darbe yükünün şeklinin etkisi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dinamik tepkinin sayısal çözümlemesi: İteratif metotlar, merkezi farklar metodu, Newmark yöntemi",
+    "outcomes": "1-2-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "TSD sistemlerin frekans tanım alanında tepkileri: Kompleks frekans tepki fonksiyonu, kompleks Fourier serileri, ayrık Fourier dönüşümü (DFT) ile genel yükleme altında çözümleme.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "TSD rijit sistemlerin titreşimleri. Kütlesi ve rijitliği yayılı olan sistemler, Rayleigh metodu ile doğal titreşim frekanslarının bulunması. Şekil fonksiyonlarının seçilmesi.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Deprem hareketi, deprem hareketine maruz kalan tek serbestlik dereceli sistemler. Elastik deprem spektrumu: Yerdeğiştirme, sözde-hız ve sözde-ivme. Elastik tasarım spektrumu.",
+    "outcomes": "1-1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Çok serbestlik dereceli sistemler (ÇSD): Dış yüklemeler ve deprem etkisi altında hareket denklemi. Statik indirgeme (yoğunlaştırma) yöntemi. Simetrik planlı sistemler, simetrik olmayan planlı binalar.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "ÇSD: Sönümsüz serbest titreşim, doğal frekanslar ve mod şekilleri. Modların dikgenliği prensibi, yerdeğiştirmelerin modal açılımı. Klasik sönümlü sistemler ve klasik sönüm matrisi ve serbest titreşim tepkileri.",
+    "outcomes": "2-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Özdeğer problemi için çözüm yöntemleri: Rayleigh katsayısı, ters vektör iterasyonu ve kaydırmalı vektör iterasyonu.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Doğrusal ÇSD sistemlerin tepkileri: Modal analiz, modal tepki katkıları, titreşim vektörünün modal açılımı. Modal tepkiler ve gerekli mod sayısı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Doğrusal ÇSD sistemlerin deprem etkisine cevapları: Zaman tanım alanında analiz, planı simetrik ve simetrik olmayan çok katlı binalar. Tepki spektrumu analizi. En büyük modal tepki değerleri ve modal birleştirme yöntemleri. ÇSD sistemler için farklı yönetmeliklere bakış: Etkin mod için doğal periyodun tahmin edilmesi, minimum taban kesme kuvveti gereksinimleri, sismik yükün dağılımı, yaklaşık burulma analizleri.",
+    "outcomes": "1-1-2-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yayılı parametrelere sahip sistemler, eğilme ve kesme titreşimleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Pasif titreşim kontrolü: TSD ve ÇSD sistemler için ayarlı kütle sönümleyicilerin (TMD) dinamik teorisi. TSD sistemler için taban izolasyonu yöntemi, sismik tepkiler için değiştirilmiş TSD model."
+   }
+  ],
   "textbooks": [
    "Chopra, A.K.; “Dynamics of Structures”, Prentice Hall, 2006.",
    "Chopra, A.K., Dynamics of Structures 5th Edition in SI Units, Pearson, 2020.",
@@ -51,12 +123,12 @@
    "Craig, R. R., “Structural Dynamics: An Introduction to Computer Methods”, John Wiley & Sons, 1981.",
    "Craig, R. R., Structural Dynamics: An Introduction to Computer Methods, John Wiley & Sons, 1981."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=503"
  },
  "DEP 507": {
   "code": "DEP 507",
   "name": "Yapıların Onarım ve Güçlendrlm",
+  "nameEn": "Repair and Strengthening of Structures",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -90,6 +162,77 @@
    "Hafta 13 · Deprem yalıtımı ve yapısal sönümleyicilerle güçlendirme tasarımı, konvansiyonel yöntemlerle kıyaslaması ve alternatiflerin değerlendirilmesi",
    "Hafta 14 · Deprem yalıtımı ve yapısal sönümleyicilerle güçlendirme uygulaması örnekleri ve detaylandırma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapısal onarım ve güçlendirmenin açıklanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Genel hasarlar, tanımlar, Deprem hasar türleri; duvar, döşeme, kiriş, kolon, kiriş-kolon birleşim bölgesi, perde ve temel hasarları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hasar belirlenmesi, değerlendirilmesi ve sınıflandırma, Proje (dönem ödevi) donelerinin verilmesi, açıklama yapılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Deprem sonrası yapılarda alınması gerekli geçici önlemler, Onarım malzemeleri, Genel onarım prensipleri.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Onarım işinin planlanması, yüzey hazırlığı, tamir harçlarının kullanımı, Püskürtme beton, epoksi reçinesi, çatlak onarımı, korozyon hasarı ve onarımı. Proje ile ilgili kısa değerlendirme raporu hazırlanması ve kısa sunumlar.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Proje ile ilgili açıklama, Türkiye Bina Deprem Yönetmeliği-2018 yapısal değerlendirme bölümleri hakkında bilgiler (Bölüm 5-15)",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Türkiye Bina Deprem Yönetmeliği-2018 yapısal güçlendirme bölümleri hakkında bilgiler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Betonarme Eleman ve Taşıyıcı sistem güçlendirmesine ilişkin detaylar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Taşıyıcı sistemlerin güçlendirilmesine ilişkin uygulama örnekleri, fotoğraflar.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çelik şeritlerle ve lif takviyeli polimer levhalarla onarım ve güçlendirme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yığma yapılarda onarım ve güçlendirme; Uygulamadan örnekler,",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Yenilikçi yapısal güçlendirme yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Deprem yalıtımı ve yapısal sönümleyicilerle güçlendirme tasarımı, konvansiyonel yöntemlerle kıyaslaması ve alternatiflerin değerlendirilmesi",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Deprem yalıtımı ve yapısal sönümleyicilerle güçlendirme uygulaması örnekleri ve detaylandırma"
+   }
+  ],
   "textbooks": [
    "ASCE 41-22 Seismic Design and Retrofit of Existing Buildings. American Society of Civil Engineering, 2022.",
    "Celep Z., Deprem Mühendisliğine Giriş ve Depreme Dayanıklı Yapı Tasarımı, Beta Dağıtım, 2019.",
@@ -97,12 +240,12 @@
    "Penelis G.G.,and Kappos A.J., Earthquake-resistant concrete structures, Taylor&Francis, 2019 . ISBN 9780367864491",
    "N. Bayülke, Depremde Hasar Gören Yapıların Onarım ve Güçlendirilmesi, İnşaat Mühendisleri Odası, 1999."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=507"
  },
  "DEP 510E": {
   "code": "DEP 510E",
   "name": "Deprem Mühendisliğine Giriş",
+  "nameEn": "Introduct.to Earthquake Eng.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -135,6 +278,77 @@
    "Hafta 13 · Deprem etkisindeki bina türü sistemler için kullanılan analiz yöntemleri",
    "Hafta 14 · Deprem etkisindeki bina türü sistemler için kullanılan analiz yöntemlerinin sayısal uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deprem mühendisliğinin önemi. Depremlerin etkileri. Bina ve yaşam hatlarında oluşabilecek deprem hasarları. İnsani ve finansal kayıplar. Altyapılarda deprem hasarı. Dolaylı etkiler: Tsunami, seyçe, yangın.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Depremlerin oluşum mekanizmaları. Depremlerin karakteristik özellikleri. Tarihsel yıkıcı depremler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Depremlerin büyüklük ve şiddet ölçütleri. Deprem merkezinin kestirilmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Malzeme ve kesit bünye bağıntıları, yayılı ve yığılı şekildeğiştirme kuramları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kesit, eleman ve sistem karakteristik yük-yerdeğiştirme ilişkileri. Yapısal davranış parametreleri: Rijitlik, dayanım ve süneklik kavramları.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sönüm, süneklik ve dayanım fazlalığı kavramları, aralarındaki ilişkilerin tanımlanması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Elastik ve inelastik spektrumlar. Tasarım spektrumları.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yapısal elemanlar (Kiriş, kolon, mesnetler, birleşimler, diyaframlar, duvarlar, çerçeve, perdeler vb.) ve deprem etkisindeki davranışları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yapısal modelleme, Eşdeğer basitleştirilmiş modeller, çubuk sistemler ve ayrıntılı sonlu eleman modelleri.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Dünya Deprem Yönetmeliklerine bakış. Geçmişten günümüze Türk Deprem Yönetmelikleri.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Geleneksel taşıyıcı sistemlerin deprem etkisinde davranışı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yenilikçi taşıyıcı sistemlerin deprem etkisinde davranışı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Deprem etkisindeki bina türü sistemler için kullanılan analiz yöntemleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Deprem etkisindeki bina türü sistemler için kullanılan analiz yöntemlerinin sayısal uygulamaları"
+   }
+  ],
   "textbooks": [
    "Chian, S. C., Kolathayar, S., Recent Advances in Earthquake Engineering, Springer, 2021.",
    "Cimellaro, G. P., Marasco, S., Introduction to Dynamics of Structures and Earthquake Engineering, Springer, 2018",
@@ -142,12 +356,12 @@
    "Sucuoglu, H., Akkar, S., Basic Earthquake Engineering: From Seismology to Analysis and Design, Springer, 2014.",
    "Brebbia, C. A., Earthquake Resistant Engineering Structures, Wit Press, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=510",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=510"
  },
  "DEP 513E": {
   "code": "DEP 513E",
   "name": "Geotek.Dep.Müh.Model.&Hesap.",
+  "nameEn": "Model.&Comp.inGeotec.Ear.Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -185,6 +399,77 @@
    "Hafta 13 · Geoteknik Deprem Mühendisliğinde Nonlineer Dinamik Analiz",
    "Hafta 14 · Dinamik Sonlu Elemanlar Analizi Uygulaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nümerik Modelleme ve Bilgisayarla Analizlerin Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geoteknik Deprem Mühendisliğinde Analitik Yöntemler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Yeraltısuyu Akımı ve 1-Boyutlu Konsolidasyona Tam Çözümler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dalga Denklemi ve Deprem Etkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "2-Boyutlu Yarı-Statik ve Dinamik Bağlantılı Akım ve Deformasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Nümerik Yöntemler, Sonlu Farklar Yöntemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Sonlu Farklar Yöntemi ve Geoteknik Deprem Mühendisliği ve Zemin Mekaniğine Uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sonlu Elemanlar Yönteminin Temelleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sonlu Elemanlar Yönteminin Zeminlerin Deprem Etkisi Altındaki Davranışına Uygulaması ve Dinamik Gerilme ve Deformasyon Analizleri",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "1-2 Boyutlu Dinamik Bağlantılı Akım ve Deformasyon Problemi, Sıvılaşma ve Diğer Uygulamalar",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Deprem Etkisi Altında Zeminlerde Stabilite Kayıpları ve Elementel Modellemeye Giriş",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Zemin Plastisitesinin Nümerik Modellenmesi ve Tekrarlı Plastisite",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Geoteknik Deprem Mühendisliğinde Nonlineer Dinamik Analiz",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Dinamik Sonlu Elemanlar Analizi Uygulaması"
+   }
+  ],
   "textbooks": [
    "Rahman, MS ve Ülker, MBC Modeling and Computing in Geotechnical Engineering: An Introduction, (2018) CRC Press, Bacon Rota, FL.",
    "Rahman, MS ve Ülker, MBC Modeling and Computing in Geotechnical Engineering: An Introduction, (2018) CRC Press, Bacon Rota, FL.",
@@ -197,12 +482,12 @@
    "Y.M. Cheng, J.H. Wang, L. Liang, W.H. Ivan, (2020), Numerical Methods and Implementation in Geotechnical Engineering – Part 2, Bentham Science Publishers.",
    "Y.M. Cheng, J.H. Wang, L. Liang, W.H. Ivan, (2020), Numerical Methods and Implementation in Geotechnical Engineering – Part 2, Bentham Science Publishers."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=513"
  },
  "DEP 517E": {
   "code": "DEP 517E",
   "name": "Uydu Görüntü.Hasar Tespiti",
+  "nameEn": "Earth.Dama.Asses.with Mac.Lea.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -238,18 +523,76 @@
    "Hafta 13 · Hasar tespiti ve hata analizi için ileri kriterler, McNeamer testi, Kappa istatistiksel analizi.",
    "Hafta 14 · Presentation of term project"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hasar belirlemeye giriş, hasar türleri (deprem, sel, tsunami vd.), afet yönetimi, hasar ölçekleri, uzaktan algılama, hasar belirlemede coğrafi bilgi sistemleri ve GPS teknolojileri, yazılımlar ve araçlar, deprem veri setleri, dünyadaki hasar tespit kurumları."
+   },
+   {
+    "week": 2,
+    "topic": "Hasar belirlemede uzaktan algılama teknolojileri (algılayıcılar, platformlar ve çözünürlük, görüş açısı ve izleme, veri tipleri,…), Optik görüntüler üzerinden hasar tespiti."
+   },
+   {
+    "week": 3,
+    "topic": "Yapay açıklıklı radar üzerinden hasar tespiti ."
+   },
+   {
+    "week": 4,
+    "topic": "Sayısal yüzey modeli, LiDAR ve INSAR kullanarak hasarın tespit edilmesi."
+   },
+   {
+    "week": 5,
+    "topic": "Hasar belirleme teknikleri, tekli ve çoklu zamansal yaklaşımlar, piksel, doku ve nesne tabanlı sınıflandırma yöntemleri, deprem hasar indeksi, deprem hasar tespitinden örnekler."
+   },
+   {
+    "week": 6,
+    "topic": "Afet sonrası hasar tespit teknikleri, Denetimli sınıflandırma yöntemleri (en gelişmiş yöntemler), Bayes sınıflandırıcısı."
+   },
+   {
+    "week": 7,
+    "topic": "Destek vektör makineleri & Karar ağaçları."
+   },
+   {
+    "week": 8,
+    "topic": "Denetimsiz sınıflandırma yöntemleri, K en yakın komşuluk, ISODATA yöntemi."
+   },
+   {
+    "week": 9,
+    "topic": "Çok yüksek çözünürlüklü görüntüler ile değişim tespiti teknikleri, ön işleme teknikleri, görüntü çakıştırma, atmosferik düzeltme, çoklu zamansal görüntü analizi, görüntü farklama, görüntü oranlama ve değişim vektör analizi."
+   },
+   {
+    "week": 10,
+    "topic": "Hasar öznitelik örüntülerinin elde edilmesi, istatistiksel tanımlayıcılar, kenar saptama, çizgi saptama."
+   },
+   {
+    "week": 11,
+    "topic": "Öznitelik yorumlama, öznitelik seçimi, filter, wrapper ve embedded yöntemler (SVM-RFE, ileri ve geri öznitelik seçimi)."
+   },
+   {
+    "week": 12,
+    "topic": "Öznitelik çıkartılımı yöntemleri, birincil bileşen analizi."
+   },
+   {
+    "week": 13,
+    "topic": "Hasar tespiti ve hata analizi için ileri kriterler, McNeamer testi, Kappa istatistiksel analizi."
+   },
+   {
+    "week": 14,
+    "topic": "Presentation of term project"
+   }
+  ],
   "textbooks": [
    "David A. Landgrebe. Signal Theory Methods in Multispectral Remote Sensing, Wiley Interscience, 2003. [ISBN: 0-471-42028-X].",
    "Gustavo Camps-Valls, Lorenzo Bruzzone. Kernel Methods for Remote Sensing Data Analysis. John Wiley & Sons. 2009. [ISBN:978-0-470-72211-4]",
    "Deren Li, Jie Shan, Jianya Gong. Geospatial Technology for Earth Observation. Springer. 2009. [ISBN:978-1-4419-0049-4]",
    "Classification Methods for Remotely Sensed Data, Taylor&Francis Group. 2009. [ISBN: 978-1420090727]."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=517"
  },
  "DEP 522": {
   "code": "DEP 522",
   "name": "Kentsel Deprem Risk Değerlendirmesi",
+  "nameEn": "Urban Earthquake Risk Assessment",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -263,12 +606,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=522",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=522"
  },
  "DEP 596": {
   "code": "DEP 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -312,6 +655,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -324,12 +738,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=596"
  },
  "DEP 611": {
   "code": "DEP 611",
   "name": "Yüksek Binal.Sismik Davranışı",
+  "nameEn": "Seismic Behavi.of Tall Buildi.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -371,6 +785,77 @@
    "Hafta 13 · Yüksek bina tasarımında özel konular",
    "Hafta 14 · Dünyada yüksek bina tasarımı yaklaşımları, uygulamalar ve kısıtlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yüksek binaların tarihçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yüksek bina mimarisi, betonarme, çelik ya da kompozit yapısal sistemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Depreme dayanıklı tasarım felsefesi ve genel kurallar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Depreme dayanıklı tasarım konusunda ulusal ve uluslararası yönetmelikler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yüksek binalarda yapısal analiz yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrusal davranış ve modelleme yaklaşımları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yüksek binalarda doğrusal olmayan davranış ve modelleme yaklaşımları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Deplasmana dayalı tasarımın ilkeleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Türkiye Bina Deprem Yönetmeliğine göre yüksek bina tanımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Türkiye Bina Deprem Yönetmeliğine göre tasarım ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Rüzgar mühendisliği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Yer hareketi seçimi ve ölçeklendirmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Yüksek bina tasarımında özel konular",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dünyada yüksek bina tasarımı yaklaşımları, uygulamalar ve kısıtlar"
+   }
+  ],
   "textbooks": [
    "An Alternative Procedure for Seismic Analysis and Design of Tall Buildings Located in the Los Angeles Region, LATBSDC, 2020.",
    "An Alternative Procedure for Seismic Analysis and Design of Tall Buildings Located in the Los Angeles Region, LATBSDC, 2020.",
@@ -383,12 +868,12 @@
    "Hart, G.C. and Wong, K.; Structural Dynamics for Structural Engineers, John Wiley, 2000.",
    "Hart, G.C. and Wong, K.; Structural Dynamics for Structural Engineers, John Wiley, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=611",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=611"
  },
  "DEP 613E": {
   "code": "DEP 613E",
   "name": "Seismic Isolation of Structur.",
+  "nameEn": "Seismic Isolation of Structur.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -430,6 +915,77 @@
    "Hafta 13 · Yalıtıcı Testleri, Proje Örnekleri",
    "Hafta 14 · Sönümleyiciler ve Sönümleyicili İzolasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapı dinamiği ve Tek Serbestlik Dereceli Sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çok Serbestlik Dereceli Sistemler, Lineer Denklem Sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Matrisler ve Temel Matris Operasyonları, Özdeğer Problemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Deprem Yalıtım Felsefesi ve Deprem Yalıtımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yalıtımlı Yapıların Matematiksel Modellemesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yalıtıcı Çeşitleri, Özellikleri, Davranış ve Modellemesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Yalıtım elemanlarında burkulma ve düşey kararlılık",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Yalıtımlı Bina Yapılarının Tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Yalıtımlı Yapı Analizleri Zaman-Tanım Alanında Analizler: •Doğrudan Çözüm •Modal Toplama",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Spektral Analizler: •Tasarım spektrumu•Modal Birleştirme",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Mevcut yapılarda Deprem yalıtımı",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Yalıtımlı Köprü Yapılarının Tasarımı",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Yalıtıcı Testleri, Proje Örnekleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Sönümleyiciler ve Sönümleyicili İzolasyon"
+   }
+  ],
   "textbooks": [
    "Skinner RI, Robinson WH and McVerry GH (1993) “An Introduction to Seismic Isolation,” John Wiley and Sons.",
    "Naeim F and Kelly JM (1999) “Design of Seismic Isolated Structures,” John Wiley and Sons.",
@@ -442,12 +998,12 @@
    "Naeim F and Kelly JM (1999) Design of Seismic Isolated Structures, John Wiley and Sons.",
    "Skinner RI, Robinson WH and McVerry GH (1993) An Introduction to Seismic Isolation, John Wiley and Sons."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=613",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=613"
  },
  "DEP 615E": {
   "code": "DEP 615E",
   "name": "Depre.Müh.Yapı Sağl.İzle.",
+  "nameEn": "Stru.He.Mo.in Earthq.En.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -503,6 +1059,77 @@
    "Hafta 13 · Binalardan alınan gerçek kayıtların değerlendirilmesi ve sistem tanımlama",
    "Hafta 14 · İyi uygulama örnekleri ve tartışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapısal sağlık izlemenin temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "2 ve 3-boyutlu hareketlerin ölçülmesi",
+    "outcomes": "1-14"
+   },
+   {
+    "week": 3,
+    "topic": "Sensörler ve kayıt sistemleri",
+    "outcomes": "1-12-13-15"
+   },
+   {
+    "week": 4,
+    "topic": "Fourier transformları",
+    "outcomes": "1-15"
+   },
+   {
+    "week": 5,
+    "topic": "Ayrık-zamanlı sinyaller ve sistemler",
+    "outcomes": "1-15"
+   },
+   {
+    "week": 6,
+    "topic": "Z transformları",
+    "outcomes": "1-15"
+   },
+   {
+    "week": 7,
+    "topic": "Filtreleme",
+    "outcomes": "1-15"
+   },
+   {
+    "week": 8,
+    "topic": "Sistem tanımlaması için spektral (parametrik-olmayan) metotlar",
+    "outcomes": "1-15"
+   },
+   {
+    "week": 9,
+    "topic": "Sistem tanımlaması için zaman-tanım alanında parametrik metotlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Sistem tanımlaması için basit yöntemler",
+    "outcomes": "1-14"
+   },
+   {
+    "week": 11,
+    "topic": "Sensör ve kayıt cihazlarının kullanılışına yönelik pratik saha uygulamaları",
+    "outcomes": "1-12-13-14"
+   },
+   {
+    "week": 12,
+    "topic": "Gerçek kayıtlara dayalı sistem tanımlama",
+    "outcomes": "1-12-13-14"
+   },
+   {
+    "week": 13,
+    "topic": "Binalardan alınan gerçek kayıtların değerlendirilmesi ve sistem tanımlama",
+    "outcomes": "1-12-13-14"
+   },
+   {
+    "week": 14,
+    "topic": "İyi uygulama örnekleri ve tartışmalar"
+   }
+  ],
   "textbooks": [
    "• Şafak, E. (1988). Analysis of Recordings in Structural Engineering: Adaptive Filtering, Prediction, and Control, USGS Open file Report 88-647.",
    "Şafak, E. (1988). Analysis of Recordings in Structural Engineering: Adaptive Filtering, Prediction, and Control, USGS Open file Report 88-647.",
@@ -530,12 +1157,12 @@
    "Şafak, E. (1995). Detection and Identification of Soil-Structure Interaction in Buildings from Vibration Recordings, ASCE Journal of Structural Engineering, 5,121,899-906.",
    "Lennart, L. (1998). System Identification: Theory fo the User, Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=615",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=615"
  },
  "DEP 616E": {
   "code": "DEP 616E",
   "name": "Strong Ground Motion",
+  "nameEn": "Strong Ground Motion",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -578,6 +1205,64 @@
    "Hafta 13 · Kuvvetli yer hareketinin yüksek frekans simülasyonu",
    "Hafta 14 · Kuvvetli yer hareketinin geniş bant simülasyonunun ilkeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deprem fiziğinin gözden geçirilmesi, levha tektoniği, deprem kaynağı ve faylanma, depremlerin ölçümü"
+   },
+   {
+    "week": 2,
+    "topic": "Sismik dalgalar, gerilme ve şekil değiştirme ilişkileri"
+   },
+   {
+    "week": 3,
+    "topic": "Sismik dalga yayılımı ve kaydedilen güçlü yer hareketine etkileri."
+   },
+   {
+    "week": 4,
+    "topic": "Kuvvetli yer hareket ölçüm aletlerin teorisi ve uygulamaları"
+   },
+   {
+    "week": 5,
+    "topic": "Kuvvetli yer hareket ağları"
+   },
+   {
+    "week": 6,
+    "topic": "Matlab ve Python kullanarak kuvvetli yer hareket verisi işlemesi"
+   },
+   {
+    "week": 7,
+    "topic": "Deprem kaynağı ve dalga yayılımı kuvvetli hareketin zaman ve frekans alanı özelliklerine etkilerini irdelenmesi."
+   },
+   {
+    "week": 8,
+    "topic": "Matlab ve Python kullanarak Fourier, davranış, tasarım spektrumları, dalgacık (wavelet) spektrumları elde edilmesi"
+   },
+   {
+    "week": 9,
+    "topic": "Kuvvetli yer hareketi modelleri ve azalım ilişkileri"
+   },
+   {
+    "week": 10,
+    "topic": "Yer hareketi kayıtlarının genlik ölçeklendirmesi"
+   },
+   {
+    "week": 11,
+    "topic": "Yer hareketi kayıtlarının frekans alanı ölçeklendirmesi"
+   },
+   {
+    "week": 12,
+    "topic": "Yapay olarak üretilmiş deprem kayıtları, Yüksek frekanslı yer hareketinin stokastik simülasyonu"
+   },
+   {
+    "week": 13,
+    "topic": "Kuvvetli yer hareketinin yüksek frekans simülasyonu"
+   },
+   {
+    "week": 14,
+    "topic": "Kuvvetli yer hareketinin geniş bant simülasyonunun ilkeleri"
+   }
+  ],
   "textbooks": [
    "Chen W-F, Schawtorn C. (2003), Earthquake Engineering Handbook, CRC Press, 2003",
    "Erdik M.Ö, Toksöz N. (2005), Strong Ground Motion Seismology, Springer, 2005, ISBN: 978-90-481-8440-8",
@@ -590,12 +1275,12 @@
    "Norman Abrahamson, Zeynep Gülerce (2020), Regionalized Ground-Motion Models for Subduction Earthquakes Based on the NGA-SUB Database, PEER Report 2020/25.",
    "Türkiye Köprü Deprem Yönetmeliği (Turkish Bridge Earthquake Regulation), 2020"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=616",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=616"
  },
  "DEP 696E": {
   "code": "DEP 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -639,6 +1324,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -651,7 +1407,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEP&dersNo=696"
  }
 }

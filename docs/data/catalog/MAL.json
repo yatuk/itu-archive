@@ -2,6 +2,7 @@
  "MAL 201": {
   "code": "MAL 201",
   "name": "Malzeme Bilimi",
+  "nameEn": "Materials Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -38,17 +39,89 @@
    "Hafta 13 · Malzemelerin yarıiletkenlik ve optik özellikleri, piezo elektrik ve manyetik malzemeler",
    "Hafta 14 · Korozyon ve korunma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik malzemelerine giriş: atomik yapı ve bağlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kristalin malzemeler, kristal yapıları, kristal hataları ve malzemeler içerisinde atomik hareketler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Malzemelerin mekanik özellikleri: çekme testi, elastik, plastik deformasyon, kırılma",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Malzemelerin mekanik özellikleri: aşınma, yorulma, sürünme ve sertlik",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Faz diyagramları",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Faz diyagramları ve katılaşma",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Mukavement arttırıcı mekanizmalar: tane sınırı, katı çözelti, çökelme sertleşmesi, deformasyon sertleşmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Tavlama, faz dönüşümü ve ısıl işlem",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Tavlama, faz dönüşümü ve ısıl işlem",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Demir-çelik ve Demir dışı Alaşımlar",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Seramik, Polimerler ve Kompozit malzemeler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Malzemelerin elektrik, dielektrik ve termal özellikleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Malzemelerin yarıiletkenlik ve optik özellikleri, piezo elektrik ve manyetik malzemeler",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Korozyon ve korunma",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "The Science and Engineering of Materials, D.R. Askeland, PWS Pub. Co., 1994, 0534934234",
    "Materials Science and Engineering An Introduction, W.D. Callister Jr., John Wiley&Sons, 2003, 9780471135760",
    "Introduction to Materials Science for Engineers , J. F. Shackelford, McMillan Pub. Co., 1999, 9780130112873"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAL&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAL&dersNo=201"
  },
  "MAL 201E": {
   "code": "MAL 201E",
   "name": "Malzeme Bilimi",
+  "nameEn": "Materials Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -85,17 +158,89 @@
    "Hafta 13 · Malzemelerin yarıiletkenlik ve optik özellikleri, piezo elektrik ve manyetik malzemeler",
    "Hafta 14 · Korozyon ve korunma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik malzemelerine giriş: atomik yapı ve bağlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kristalin malzemeler, kristal yapıları, kristal hataları ve malzemeler içerisinde atomik hareketler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Malzemelerin mekanik özellikleri: çekme testi, elastik, plastik deformasyon, kırılma",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Malzemelerin mekanik özellikleri: aşınma, yorulma, sürünme ve sertlik",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Faz diyagramları",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Faz diyagramları ve katılaşma",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Mukavement arttırıcı mekanizmalar: tane sınırı, katı çözelti, çökelme sertleşmesi, deformasyon sertleşmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Tavlama, faz dönüşümü ve ısıl işlem",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Tavlama, faz dönüşümü ve ısıl işlem",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Demir-çelik ve Demir dışı Alaşımlar",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Seramik, Polimerler ve Kompozit malzemeler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Malzemelerin elektrik, dielektrik ve termal özellikleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Malzemelerin yarıiletkenlik ve optik özellikleri, piezo elektrik ve manyetik malzemeler",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Korozyon ve korunma",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "The Science and Engineering of Materials, D.R. Askeland, PWS Pub. Co., 1994, 0534934234",
    "Materials Science and Engineering An Introduction, W.D. Callister Jr., John Wiley&Sons, 2003, 9780471135760",
    "Introduction to Materials Science for Engineers , J. F. Shackelford, McMillan Pub. Co., 1999, 9780130112873"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAL&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAL&dersNo=201"
  },
  "MAL 203": {
   "code": "MAL 203",
   "name": "Malzeme Bilgisi",
+  "nameEn": "Material Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -109,7 +254,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAL&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAL&dersNo=203"
  }
 }

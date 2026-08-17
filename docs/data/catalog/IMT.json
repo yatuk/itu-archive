@@ -2,6 +2,7 @@
  "IMT 501E": {
   "code": "IMT 501E",
   "name": "İç Mimarlık Projesi I",
+  "nameEn": "Interior Architecture Project I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 5,
@@ -34,6 +35,64 @@
    "Hafta 13 · Pin-Up: öğrenci sunumları ve değerlendirme çalışmaları",
    "Hafta 14 · Teslim ve proje sunum teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma, İç Mimarlık proje konusunun tanımlanması"
+   },
+   {
+    "week": 2,
+    "topic": "Proje konusu ile ilgili yer ve bina inceleme gezisi, araştırma ve analizler"
+   },
+   {
+    "week": 3,
+    "topic": "Pin-Up: öğrenci sunumları/araştırma-analiz-senteze dayalı ilk yaratıcı fikirler"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarım alternatifleri geliştirme: proje söylemi, konsept kararları, zoning kararları-I"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım alternatifleri geliştirme: proje söylemi, konsept kararları, zoning kararları-II"
+   },
+   {
+    "week": 6,
+    "topic": "Juri – değerlendirme çalışmaları: öğrenci sunumları"
+   },
+   {
+    "week": 7,
+    "topic": "Proje geliştirme: Konsept geliştirme, 2 ve 3 boyutlu teknik anlatımlar, fiziksel ve digital modellemeler-I"
+   },
+   {
+    "week": 8,
+    "topic": "Proje geliştirme: Konsept geliştirme, 2 ve 3 boyutlu teknik anlatımlar, fiziksel ve digital modellemeler-II"
+   },
+   {
+    "week": 9,
+    "topic": "Juri – değerlendirme çalışmaları: öğrenci sunumları"
+   },
+   {
+    "week": 10,
+    "topic": "Proje geliştirme: Bina sistemleri, mobilya, malzeme ve renk kararları, bitirmeler, aydınlatma elemanlarının seçimi ve tasarımı, 2 ve 3 boyutlu teknik anlatımlar, fiziksel ve digital modellemeler-I"
+   },
+   {
+    "week": 11,
+    "topic": "Proje geliştirme: Bina sistemleri, mobilya, malzeme ve renk kararları, bitirmeler, aydınlatma elemanlarının seçimi ve tasarımı, 2 ve 3 boyutlu teknik anlatımlar, fiziksel ve digital modellemeler-II"
+   },
+   {
+    "week": 12,
+    "topic": "Kesin proje, Detay tasarımı ve çözümleri"
+   },
+   {
+    "week": 13,
+    "topic": "Pin-Up: öğrenci sunumları ve değerlendirme çalışmaları"
+   },
+   {
+    "week": 14,
+    "topic": "Teslim ve proje sunum teknikleri"
+   }
+  ],
   "textbooks": [
    "Dodsworth, S. (2009). The Fundamentals of Interior Design, Ava Publishing, 2009.",
    "Sally S. & Brooker, G., Basics Interior Architecture: Elements / Objects, Ava Publishing.",
@@ -41,12 +100,12 @@
    "Sally S. & Brooker, G. (2007). Basics Interior Architecture: Form + Structure, Ava Publishing.",
    "Zumthor, P., (2006). Atmospheres: Architectural Environments - Surrounding Objects, 5th ed., Birkhäuser Architecture."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=501"
  },
  "IMT 502": {
   "code": "IMT 502",
   "name": "Yapı Teknolojisi",
+  "nameEn": "Building Technology",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -82,6 +141,77 @@
    "Hafta 13 · Güncel örnekler üzerinde tartışma- Ödev 2 Teslimi",
    "Hafta 14 · Çalışmaların değerlendirilmesi ve sunumlar üzerine tartışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse giriş ve açıklamalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Işık ve mekan ilişkisi, aydınlatmanın mekansal tanımlamadaki etkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İç mekanın oluşturulmasında aydınlatma ile ilgili tasarlama parametreleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Doğal-yapma ve bütünleşik aydınlatma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Güncel örnekler üzerinde tartışma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "İç mekanda kullanılan güncel malzemeler",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Malzemelerin dayanımları, renk ve doku ile olan ilişkileri",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Malzemelerin mekansal algı ve deneyime olan etkisi",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Güncel örnekler üzerinde tartışma- Ödev 1 Teslimi",
+    "outcomes": "1-2-3-4-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "İç mekanda ışık, malzeme ve konstrüksiyonun mekansal bütünlük açısından bir araya getirilme özellikleri-I",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "İç mekanda ışık, malzeme ve konstrüksiyonun mekansal bütünlük açısından bir araya getirilme özellikleri-II",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Güncel örnekler üzerinde tartışma",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Güncel örnekler üzerinde tartışma- Ödev 2 Teslimi",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Çalışmaların değerlendirilmesi ve sunumlar üzerine tartışmalar"
+   }
+  ],
   "textbooks": [
    "ASHRAE Handbook of Fundamentals, Ashrae Publications, 2009.",
    "Karlen, M., Benya, J., (2004). “Lighting Design Basics”, John Wiley&Sons Ltd, New Jersey.",
@@ -90,12 +220,12 @@
    "Cowan, H., (1991).“Handbook of Architectural Technology”, Von Nostrand Reinhold, NY.",
    "Rosen, H, J., (1979). “Construction Materials Evaluation and Selection”, John Wiley and Sons, Canada."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=502"
  },
  "IMT 503": {
   "code": "IMT 503",
   "name": "İletişim ve Müşteri İlişkileri",
+  "nameEn": "Communication and Client Relationships",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -128,6 +258,64 @@
    "Hafta 13 · Tasarımcılar için pazarlama temelleri: Olası müşterilerle ilişki kurmak ve müşterileri gelecekteki işler için korumak",
    "Hafta 14 · Tasarım hizmetleri satışıÇeşitli tasarım firmalarının pazarlama stratejilerinin incelenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: İletişimin önemi, iletişim süreci, iletişim teorileri"
+   },
+   {
+    "week": 2,
+    "topic": "Kişilerarası iletişim ve grup iletişimi"
+   },
+   {
+    "week": 3,
+    "topic": "Örgütsel iletişim; etkin bir iletişim kültürünün oluşturulması; uygun iletişim yollarının seçilmesi ve iletişimde kültürel farklılıklar"
+   },
+   {
+    "week": 4,
+    "topic": "Görsel iletişim ve Kurumsal kimlik"
+   },
+   {
+    "week": 5,
+    "topic": "Kurumsal kimliğe ilişkin araştırma ve makalelerin incelenmesi"
+   },
+   {
+    "week": 6,
+    "topic": "Çeşitli firmaların kurumsal kimliklerinin incelenmesi"
+   },
+   {
+    "week": 7,
+    "topic": "İnşaat sektöründe iletişim ve müşteri ilişkileri: Tasarım, yapım, kullanım ve değerlendirme sürecinde iletişimKonuya ilişkin araştırma ve makalelerin incelenmesi ve tartışma"
+   },
+   {
+    "week": 8,
+    "topic": "İkna kavramı ve ikna edici iletişim Toplantı yönetimi"
+   },
+   {
+    "week": 9,
+    "topic": "Çatışma yönetimi"
+   },
+   {
+    "week": 10,
+    "topic": "İncelenen konulara ilişkin film gösterimi"
+   },
+   {
+    "week": 11,
+    "topic": "İnşaat sektöründe çatışma nedenleri ve çözüm yolları Konuya ilişkin araştırma ve makalelerin incelenmesi ve tartışma"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarımcılar için pazarlama temelleri: Pazarda bir niş bulmak ve pazarlama planı oluşturmak"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarımcılar için pazarlama temelleri: Olası müşterilerle ilişki kurmak ve müşterileri gelecekteki işler için korumak"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım hizmetleri satışıÇeşitli tasarım firmalarının pazarlama stratejilerinin incelenmesi"
+   }
+  ],
   "textbooks": [
    "Dainty, A., Moore D. And Murray M., (2006). Communication in Construction, Taylor & Francis, Londra.",
    "Emmitt S and Gorse, C., (2007). Communication in Construction Teams, Taylor & Francis, Londra.",
@@ -135,12 +323,12 @@
    "Napoles, V., (1988). Corporate identity design, John Wiley & Sons, New York.",
    "Martin, J., D. and Knoo, N. (1995). Marketing basics for designers : a sourcebook of strategies and ideas, J. Wiley & Sons, New York."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=503"
  },
  "IMT 504E": {
   "code": "IMT 504E",
   "name": "Research for Interior Archite.",
+  "nameEn": "Research for Interior Archite.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -174,6 +362,64 @@
    "Hafta 13 · Araştırma Sonuçlarının Duyurulması ve Araştırma Etiği.",
    "Hafta 14 · Sunumlar: Tartışma ve Değerlendirmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Araştırma Nedir? Bilimsel Araştırma Nedir?"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma Yaklaşımları ve Türleri"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırmanın Niceliksel ve Niteliksel Yönleri"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma Probleminin Tanımlanması ve Biçimlendirilmesi"
+   },
+   {
+    "week": 5,
+    "topic": "Varsayımların Oluşturulması, Araştırma Tasarımı: Kapsam, Süreç ve Zaman Planlaması"
+   },
+   {
+    "week": 6,
+    "topic": "Veri Elde Etme Yöntem ve Teknikleri: Görsel Araştırma Teknikleri (Fiziksel İz , Davranış Gözlem Tekniği)"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Elde Etme Yöntem ve Teknikleri: Görüşme, Anket,"
+   },
+   {
+    "week": 8,
+    "topic": "Veri Elde Etme Yöntem ve Teknikleri: Arşiv Tarama ve Belgesel Gözlem"
+   },
+   {
+    "week": 9,
+    "topic": "Veri Çözümleme ve Değerlendirme: Anlamsal Farklılaşma Cetveli,"
+   },
+   {
+    "week": 10,
+    "topic": "Veri Çözümleme ve Değerlendirme: Verilerin İstatistiksel Olarak Sunumu"
+   },
+   {
+    "week": 11,
+    "topic": "Analiz Teknikleri: Chart, grafik, tablo vb."
+   },
+   {
+    "week": 12,
+    "topic": "Rapor, Bildiri, Makale Yazım Yöntemleri"
+   },
+   {
+    "week": 13,
+    "topic": "Araştırma Sonuçlarının Duyurulması ve Araştırma Etiği."
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar: Tartışma ve Değerlendirmeler"
+   }
+  ],
   "textbooks": [
    "Fowler, Floyd, J. (2009) Survey Research Methods, Los Angeles Sage Publication.",
    "Creswell, John W. (2009) Research Design: Qualitative, Quantitative, and Mixed Methods Approaches, Sage Publications.",
@@ -181,12 +427,12 @@
    "Kerlinger, F.N. (2008) Foundations of Behavioral Research, Wadsworth Publishing.",
    "Borden, I., Ruedi K. (2006). The Dissertation, An Architecture Student’s Handbook, Architectural Press: Oxford."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=504",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=504"
  },
  "IMT 505": {
   "code": "IMT 505",
   "name": "Kültür Tarihi",
+  "nameEn": "History of Culture",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -218,17 +464,75 @@
    "Hafta 13 · Kültür okumaları: Öğrenci sunumları-II",
    "Hafta 14 · Kültür okumaları: Öğrenci sunumları -III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Görsel Kültür teorileri"
+   },
+   {
+    "week": 2,
+    "topic": "Zamanın ruhu; seçilmiş kaynakça ve tartışma"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım konuları; seçilmiş kaynakça ve tartışma"
+   },
+   {
+    "week": 4,
+    "topic": "Moda: Kıyafetin bir yaşam stili olarak okunması"
+   },
+   {
+    "week": 5,
+    "topic": "Yeni buluşlar; tasarım ve teknoloji"
+   },
+   {
+    "week": 6,
+    "topic": "Kimlik ve imge; Film, fotograf, resim vs. analizi"
+   },
+   {
+    "week": 7,
+    "topic": "Sosyal ve politik konular; seçilmiş kaynakça ve tartışma"
+   },
+   {
+    "week": 8,
+    "topic": "İktidar; Film, fotograf, resim vb. analizi"
+   },
+   {
+    "week": 9,
+    "topic": "Ürün ve tüketim; seçilmiş kaynakça ve tartışma"
+   },
+   {
+    "week": 10,
+    "topic": "Cinsiyet konuları; Film, fotograf, resim vb. analizi"
+   },
+   {
+    "week": 11,
+    "topic": "Ötekiler; Film, fotograf, resim vs. analizi"
+   },
+   {
+    "week": 12,
+    "topic": "Kültür okumaları: Öğrenci sunumları-I"
+   },
+   {
+    "week": 13,
+    "topic": "Kültür okumaları: Öğrenci sunumları-II"
+   },
+   {
+    "week": 14,
+    "topic": "Kültür okumaları: Öğrenci sunumları -III"
+   }
+  ],
   "textbooks": [
    "Monaco, J.( 2009). How to Read a Film: Movies, Media and Beyond, Oxford University Press, USA.",
    "Rose, G. (2006). Visual Methodologies: An Introduction to the Interpretation of Visual Materials, Sage Publications Ltd; UK.",
    "Mirzoeff, Nicholas. (2002). The Visual Culture Reader, Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=505"
  },
  "IMT 509E": {
   "code": "IMT 509E",
   "name": "Interior Architect.Project III",
+  "nameEn": "Interior Architect.Project III",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -262,6 +566,64 @@
    "Hafta 13 · Detay tasarımı ve çözümleri Pin-Up-değerlendirme çalışmaları: öğrenci sunumları ve değerlendirme",
    "Hafta 14 · Teslim ve proje sunum teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Workshop-I"
+   },
+   {
+    "week": 2,
+    "topic": "Workshop-II"
+   },
+   {
+    "week": 3,
+    "topic": "Ders içeriği kapsamı/amacı hakkında bilgilendirme"
+   },
+   {
+    "week": 4,
+    "topic": "Tez ve proje konusu: konu/ yer/işlev/kapsam önerileri"
+   },
+   {
+    "week": 5,
+    "topic": "Tez ve proje konusu ile ilgili alan gezisi, bilgi toplama, analiz çalışmaları ve ilk yaratıcı fikirlerPin-Up: öğrenci sunumları ve değerlendirme"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarım alternatifleri geliştirme: proje söylemi, konsept kararları, zoning kararları-I"
+   },
+   {
+    "week": 7,
+    "topic": "Juri – değerlendirme çalışmaları: öğrenci sunumları ve değerlendirme-I"
+   },
+   {
+    "week": 8,
+    "topic": "Tasarım alternatifleri geliştirme: proje söylemi, konsept kararları, zoning kararları-II"
+   },
+   {
+    "week": 9,
+    "topic": "Tasarım çözümü geliştirme: Konsept geliştirme, 2 ve 3 boyutlu teknik anlatımlar, fiziksel ve digital modellemeler"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım çözümü geliştirme: ilgili yasa ve yönetmelikler ve kanunlar çerçevesinde, bina ve yapım sistemleri, mobilya, malzeme ve renk kararları, bitirmeler, aydınlatma elemanlarının seçimi ve tasarımı, 2 ve 3 boyutlu teknik anlatımlar, fiziksel ve digital modellemeler"
+   },
+   {
+    "week": 11,
+    "topic": "Juri – değerlendirme çalışmaları: öğrenci sunumları ve değerlendirme-II"
+   },
+   {
+    "week": 12,
+    "topic": "Kesin proje, Detay tasarımı ve çözümleri"
+   },
+   {
+    "week": 13,
+    "topic": "Detay tasarımı ve çözümleri Pin-Up-değerlendirme çalışmaları: öğrenci sunumları ve değerlendirme"
+   },
+   {
+    "week": 14,
+    "topic": "Teslim ve proje sunum teknikleri"
+   }
+  ],
   "textbooks": [
    "Pallasma, J. (2009). The Thinking Hand, 1st ed., Wiley.",
    "John Coles and Naomi House. (2007). The Fundamentals of Interior Architecture, 1st Edition, Ava Publishing.",
@@ -269,12 +631,12 @@
    "Bachelard, G. (2005). The Poetics of Space, first published in 1969, Princeton Architectural Press, Princeton.",
    "Leach, N. (2002). The Hieroglyphics of Space: Reading and Experiencing the Modern Metropolis, Routledge, ed: London and NewYork."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=509"
  },
  "IMT 510E": {
   "code": "IMT 510E",
   "name": "İç Mimarlık Proje Semineri II",
+  "nameEn": "Interior Architecture Project Seminar II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -306,15 +668,73 @@
    "Hafta 13 · Sunumlar: Tartışma ve Değerlendirmeler",
    "Hafta 14 · Sunumlar: Tartışma ve Değerlendirmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 2,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 3,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 4,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 5,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 6,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 7,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 8,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 9,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 10,
+    "topic": "Tez Konusu ile İlgili Seminer:Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 11,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 12,
+    "topic": "Tez Konusu ile İlgili Seminer: Tartışma ve Değerlendirme"
+   },
+   {
+    "week": 13,
+    "topic": "Sunumlar: Tartışma ve Değerlendirmeler"
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar: Tartışma ve Değerlendirmeler"
+   }
+  ],
   "textbooks": [
    "Araştıma alanının gerektirdiği akademik yayınlardan seçilecektir. (The references will be selected by academic publication related to the research area.)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=510",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=510"
  },
  "IMT 511": {
   "code": "IMT 511",
   "name": "Meslek Pratiği ve Yönetimi",
+  "nameEn": "Professional Practice and Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -346,6 +766,64 @@
    "Hafta 13 · Finansal Analizler",
    "Hafta 14 · Yıl sonu Sunumu ve Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İç Mimarlık Kapsamında Üstlenilebilecek Farklı Roller / Görevler"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Fikri, Amaçları"
+   },
+   {
+    "week": 3,
+    "topic": "Proje Geliştirme Süreci ve Değerlendirme Yöntemleri"
+   },
+   {
+    "week": 4,
+    "topic": "İş Geliştirme Planı: Mevzuat ve Yönetim"
+   },
+   {
+    "week": 5,
+    "topic": "Proje ile İlgili Pazar Analizleri"
+   },
+   {
+    "week": 6,
+    "topic": "Pazarlama Stratejileri"
+   },
+   {
+    "week": 7,
+    "topic": "İş Sistemi ve Organizasyon"
+   },
+   {
+    "week": 8,
+    "topic": "Gerçekleştirme Süreci: Aktiviteler, Kaynaklar, Zaman Yönetimi (Proje Planlama ve Kurumsal Kaynak Planlama-ERP)"
+   },
+   {
+    "week": 9,
+    "topic": "Yıl içi Sunumu ve Değerlendirme"
+   },
+   {
+    "week": 10,
+    "topic": "Risk Analizi ve Yönetimi"
+   },
+   {
+    "week": 11,
+    "topic": "İhale ve Teklif süreçleri, Sözleşme Yönetimi"
+   },
+   {
+    "week": 12,
+    "topic": "Finans Yönetimi"
+   },
+   {
+    "week": 13,
+    "topic": "Finansal Analizler"
+   },
+   {
+    "week": 14,
+    "topic": "Yıl sonu Sunumu ve Değerlendirme"
+   }
+  ],
   "textbooks": [
    "Preddy, S. (2011). How to Run a Successful Design Business, Gower Publishing Company, Burlington USA.",
    "Piotrowski, C. M. (2004). Becoming an Interior Designer: A Guide to Careers in Design, John Wiley, New York.",
@@ -353,12 +831,12 @@
    "Crawford, T. (2001). Business and Legal Forms for Interior Designers, Allworth Press, New York.",
    "Harmon, S.K. & Kennon K.E. (2001). The Codes Guidebook for Interiors, John Wiley, New York."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=511"
  },
  "IMT 512E": {
   "code": "IMT 512E",
   "name": "Human Scienc.Interior Architec",
+  "nameEn": "Human Scienc.Interior Architec",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -391,6 +869,64 @@
    "Hafta 13 · Sunumlar: Tartışma ve Değerlendirme-I",
    "Hafta 14 · Sunumlar: Tartışma ve Değerlendirme-II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Mimari Mekanın Tanımı"
+   },
+   {
+    "week": 3,
+    "topic": "İnsan Bilimleri ve Mimarlık İlişkileri"
+   },
+   {
+    "week": 4,
+    "topic": "Kullanıcı-Mekan Etkileşimi (özne-nesne ilişkisi)"
+   },
+   {
+    "week": 5,
+    "topic": "İnsan-Çevre, İnsan-Toplum-Çevre Etkileşimi Konusunda Ortaya Atılan Kuramlar-I"
+   },
+   {
+    "week": 6,
+    "topic": "İnsan-Çevre, İnsan-Toplum-Çevre Etkileşimi Konusunda Ortaya Atılan Kuramlar-II"
+   },
+   {
+    "week": 7,
+    "topic": "Sosyal İlişkiler Açısından Mekan"
+   },
+   {
+    "week": 8,
+    "topic": "Mekanda Kimlik"
+   },
+   {
+    "week": 9,
+    "topic": "Mekanın Psikolojik Açıdan Tanımlanması ve Farklı Yaklaşımlar (gizlilik-kalabalık, vb.)-I"
+   },
+   {
+    "week": 10,
+    "topic": "Mekanın Psikolojik Açıdan Tanımlanması ve Farklı Yaklaşımlar (gizlilik-kalabalık, vb.)-II"
+   },
+   {
+    "week": 11,
+    "topic": "Mekanın Algılanması ve Tasarlama Kuramları (öğrenme-bilme-kurma)"
+   },
+   {
+    "week": 12,
+    "topic": "Mekan ve Donatı Düzeyinde Ergonomik İlişkiler (verimlilik, yorgunluk kavramları vb.)"
+   },
+   {
+    "week": 13,
+    "topic": "Sunumlar: Tartışma ve Değerlendirme-I"
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar: Tartışma ve Değerlendirme-II"
+   }
+  ],
   "textbooks": [
    "Rapoport, A. (2005). Culture, Architecture and Desig, Locke Science Publishing Company, Chicago.",
    "Willats, S. (2002). Beyond the Plan: The Transformation of Personal Space in Housing, Academy Press, London.",
@@ -398,12 +934,12 @@
    "Walmsley, D.J. & Lewis, G.J. (1993). People & Environment, Second Edition, New York: Longman Scientific & Technical",
    "Altman, I. & Chemers, M. (1984). Culture and Environment, Cambridge University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=512",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=512"
  },
  "IMT 513E": {
   "code": "IMT 513E",
   "name": "Critic.Debate inDesign&Theory",
+  "nameEn": "Critic.Debate inDesign&Theory",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -435,15 +971,87 @@
    "Hafta 13 · Bir Oluş Olarak Mekan: Kartezyen Mekana Karşı Uzam-Zaman; Monad Kavramı; Heterojen Uzam",
    "Hafta 14 · Bir Oluş Olarak Mekan: Tasarımda Mekanik/Topolojik/Biyolojik Modeller"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Özne Ve Nesne Diyalektiği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Varoluş: Bedenin Konumlanışı Ve İfadesi; Yerleşim-Beden-Varlık; Bedenin Temsiliyeti Ve Perspektif Mefhumu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Varoluş: Bedensel Mevcudiyet Ve Mükemmeliyet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ayırıcı Sentez: Heterojenlik; Kök-Sapsal İlişksii; Asamblaj",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Oluş: Bedensiz Mevcudiyetler; Organsız Bedenler; Deleuzyen; Geçiş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ara-Sınav: Sunumlar Ve Sınıf-İçi Tartışmalar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Minör: Minor Kavramı; Kaçış Çizgileri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Minör Karşitliklar: Spinoza",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Minör Karşitliklar: Nietzsche",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Minör Karşitliklar: Bergson",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Hangı Zamanda? Ezel-Ebedi/Döngüsel/Çizgisel Zaman; Sure Kavramı; Çizgisel Olmayan Zaman; Kronos/Ayon; Zamanın Sentezleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Olayın Felsefesi: Yatay Ve Düşey Okumalar; Olay/Yaratıcılık; Çokluk Kavramı; Bir/Çok/Filtreler; Virtuel-Aktüel, Olasılık-Gerçek",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bir Oluş Olarak Mekan: Kartezyen Mekana Karşı Uzam-Zaman; Monad Kavramı; Heterojen Uzam",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Bir Oluş Olarak Mekan: Tasarımda Mekanik/Topolojik/Biyolojik Modeller",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=513"
  },
  "IMT 515E": {
   "code": "IMT 515E",
   "name": "Methodo&Techni.in Digit.Desig.",
+  "nameEn": "Methodo&Techni.in Digit.Desig.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -476,6 +1084,64 @@
    "Hafta 13 · Çok boyutlu Mimarlıklar",
    "Hafta 14 · Son Makale Hazırlığı, Tartışma ve Değerlendirmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarımda Bilgisayarın Yeri"
+   },
+   {
+    "week": 3,
+    "topic": "Çağdaş Tasarım Süreçleri"
+   },
+   {
+    "week": 4,
+    "topic": "Sayısal Mimarlık-I"
+   },
+   {
+    "week": 5,
+    "topic": "Sayısal Mimarlık-II"
+   },
+   {
+    "week": 6,
+    "topic": "Kurala-dayalı Stratejiler"
+   },
+   {
+    "week": 7,
+    "topic": "Dönem Ödevi Sunumu, Tartışma ve Değerlendirmeler"
+   },
+   {
+    "week": 8,
+    "topic": "Algoritmik Tasarım-I"
+   },
+   {
+    "week": 9,
+    "topic": "Algoritmik Tasarım-II"
+   },
+   {
+    "week": 10,
+    "topic": "Algoritmik Tasarım-III"
+   },
+   {
+    "week": 11,
+    "topic": "Evrimsel Stratejiler"
+   },
+   {
+    "week": 12,
+    "topic": "Disiplinötesi Mimarlıklar"
+   },
+   {
+    "week": 13,
+    "topic": "Çok boyutlu Mimarlıklar"
+   },
+   {
+    "week": 14,
+    "topic": "Son Makale Hazırlığı, Tartışma ve Değerlendirmeler"
+   }
+  ],
   "textbooks": [
    "Weinstock M., Hensel M., Menges A. (2006). Techniques And Technologies In Morphogenetic Design, Academy Press.",
    "Leach N. (2002). Designing for a Digital World, Academy Press.",
@@ -483,7 +1149,6 @@
    "Allen, S. (1999). Points And Lines: Diagrams And Projects For The City, Princeton Architectural Press.",
    "Puglisi L. P. (1999). Hyperarchitecture: Spaces In The Electronic Age, Birkhäuser Basel."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IMT&dersNo=515"
  }
 }

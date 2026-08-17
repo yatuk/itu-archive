@@ -2,6 +2,7 @@
  "CHZ 101": {
   "code": "CHZ 101",
   "name": "Cevher Hazırlama Mühendisliğine Giriş",
+  "nameEn": "Intr. to Mineral Processing Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -33,15 +34,87 @@
    "Hafta 13 · Atıkların İşlenmesi ve Geri Kazanımı",
    "Hafta 14 · Cevher ve Kömür Hazırlama Tesislerinden Örnekler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher hazırlama ve zenginleştirmenin tanımı ve tarihçesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Cevher Karakterizasyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Boyut Küçültme ve Sınıflandırma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Fiziksel Zenginleştirme İşlemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Yüzey Kimyası ve Flotasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Katı/Sıvı Ayırımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Metalurjik İşlemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Au, Ag ve Diğer Değerli Metallerin Kazanımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Endüstriyel Hammaddeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Kömür Hazırlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Cevher ve Kömür Hazırlamada Modelleme, Simülasyon ve Optimizasyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Cevher Hazırlama Tesis Tasarımı ve Kontrolü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Atıkların İşlenmesi ve Geri Kazanımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Cevher ve Kömür Hazırlama Tesislerinden Örnekler",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Mineral Processing Technology, 3rd Edition, B.A. Wills , Pergamon Press, 1985,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=101"
  },
  "CHZ 103": {
   "code": "CHZ 103",
   "name": "Cevher Haz. Müh. Giriş ve Etik",
+  "nameEn": "Intr. to Mineral Processing Engineering and Ethics",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -63,12 +136,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=103"
  },
  "CHZ 104": {
   "code": "CHZ 104",
   "name": "Mineraloji ve Petrografi",
+  "nameEn": "Mineralogy and Petrography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -86,12 +159,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=104",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=104"
  },
  "CHZ 211": {
   "code": "CHZ 211",
   "name": "Parça Mekaniği",
+  "nameEn": "Particle Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -127,16 +200,88 @@
    "Hafta 13 · Laboratuvar Çalışmalarının ve Raporlarının Tamamlanması, Yıl içi Ödevlerin Sunumu",
    "Hafta 14 · Yıl içi Ödevlerin Sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Parça Mekaniğinin Tanımı ve Önemi, Parçalı Malzeme Özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Parçalı Malzemede Ortalama Boyutlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Parçalı Malzemede Şekil Faktörü",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Özgül Ağırlık ve Yığın Ağırlığı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Boyut Ölçüm Yöntemleri (Genel)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Boyut Ölçüm Yöntemleri: Mikroskop ve Görüntü Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Boyut Dağılım Fonksiyonları: Frekans Dağılım Histogram ve GGS",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Boyut Dağılım Fonkiyonları: RRB ve Log Normal (Gauss)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Log-Log Dağılım Fonksiyonu ve Boyut Dağılım Fonksiyonlarının Karşılaştırılması",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Parçalı Malzemenin Yüzey Özellikleri ve Özgül Yüzey Alanı",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Katı Tanelerin Akışkan Ortamdaki Hareketleri ve Cevher Hazırlama Uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Hidrodinamik Benzerliğe Dayanan Ölçüm Yöntemleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Laboratuvar Çalışmalarının ve Raporlarının Tamamlanması, Yıl içi Ödevlerin Sunumu",
+    "outcomes": "1-2-3-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Yıl içi Ödevlerin Sunumu",
+    "outcomes": "1-2-3-5-6-7"
+   }
+  ],
   "textbooks": [
    "Parça Mekaniği Ders Notları, G. Önal ve V. Gürkan , , 2006,",
    "Particle Technology, C. C. Harris , Columbia University, 1986,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=211"
  },
  "CHZ 211E": {
   "code": "CHZ 211E",
   "name": "Parça Mekaniği",
+  "nameEn": "Particle Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -172,16 +317,88 @@
    "Hafta 13 · Laboratuvar Çalışmalarının ve Raporlarının Tamamlanması, Yıl içi Ödevlerin Sunumu",
    "Hafta 14 · Yıl içi Ödevlerin Sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Parça Mekaniğinin Tanımı ve Önemi, Parçalı Malzeme Özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Parçalı Malzemede Ortalama Boyutlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Parçalı Malzemede Şekil Faktörü",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Özgül Ağırlık ve Yığın Ağırlığı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Boyut Ölçüm Yöntemleri (Genel)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Boyut Ölçüm Yöntemleri: Mikroskop ve Görüntü Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Boyut Dağılım Fonksiyonları: Frekans Dağılım Histogram ve GGS",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Boyut Dağılım Fonkiyonları: RRB ve Log Normal (Gauss)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Log-Log Dağılım Fonksiyonu ve Boyut Dağılım Fonksiyonlarının Karşılaştırılması",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Parçalı Malzemenin Yüzey Özellikleri ve Özgül Yüzey Alanı",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Katı Tanelerin Akışkan Ortamdaki Hareketleri ve Cevher Hazırlama Uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Hidrodinamik Benzerliğe Dayanan Ölçüm Yöntemleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Laboratuvar Çalışmalarının ve Raporlarının Tamamlanması, Yıl içi Ödevlerin Sunumu",
+    "outcomes": "1-2-3-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Yıl içi Ödevlerin Sunumu",
+    "outcomes": "1-2-3-5-6-7"
+   }
+  ],
   "textbooks": [
    "Parça Mekaniği Ders Notları, G. Önal ve V. Gürkan , , 2006,",
    "Particle Technology, C. C. Harris , Columbia University, 1986,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=211"
  },
  "CHZ 212": {
   "code": "CHZ 212",
   "name": "Tanecik Teknolojisi",
+  "nameEn": "Particle Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -205,12 +422,12 @@
    "G. Önal ve V. Gürkan (2003-2006), Parça Mekaniği Ders Notları",
    "C. C. Harris (1986), Particle Technology, Columbia Univ."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=212"
  },
  "CHZ 213": {
   "code": "CHZ 213",
   "name": "Zenginlstirme Önc.Haz. İşlml.",
+  "nameEn": "Zenginlstirme Önc.Haz. İşlml.",
   "language": "Türkçe",
   "credits": {
    "theory": 1,
@@ -232,12 +449,12 @@
   "textbooks": [
    "Cevher Hazırlama, Y. Kaytaz, İTÜ Gümüşsuyu Matbaası, 1990,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=213",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=213"
  },
  "CHZ 214": {
   "code": "CHZ 214",
   "name": "Tanecik Teknolojisi",
+  "nameEn": "Particle Technology",
   "language": "Türkçe",
   "credits": {
    "theory": 1,
@@ -261,12 +478,12 @@
    "G. Önal ve V. Gürkan (2003-2006), Parça Mekaniği Ders Notları",
    "C. C. Harris (1986), Particle Technology, Columbia Univ."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=214"
  },
  "CHZ 216": {
   "code": "CHZ 216",
   "name": "Fiziksel Zeng. Yöntemleri",
+  "nameEn": "Physical Beneficiation Methods",
   "language": "Türkçe",
   "credits": {
    "theory": 1,
@@ -289,12 +506,12 @@
   "textbooks": [
    "Cevher Hazırlamada Flotasyon Dışındaki Zenginleştirme Yöntem, G. Önal, İ.T.U.Maden Fakültesi Yayını, 1985,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=216",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=216"
  },
  "CHZ 224E": {
   "code": "CHZ 224E",
   "name": "Surface and Colloid Chemistry",
+  "nameEn": "Surface and Colloid Chemistry",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -303,7 +520,7 @@
    "local": 2.5,
    "ects": 5
   },
-  "description": "Bu ders, flotasyon prosesinde yüzey ve kolloid kimyasının rolünü ayrıntılı olarak ele alır. Çözelti kimyası, mineral tanelerinin elektrokinetik özellikleri, su ortamındaki kolloidal davranışları ve flotasyonda kullanılan reaktiflerin yüzey aktif özellikleri ile bu özellikleri belirleyen mekanizmalar üzerinde durulur. Ayrıca, susuzlandırma prosesleri ve bunun alt aşamaları olan koagülasyon ve flokülasyonun anlaşılması amacıyla tane-tane ve tane-kabarcık etkileşimlerini yöneten kuvvetler ve bunların mekanizmaları incelenir. This course provides a detailed examination of the role of surface and colloid chemistry in flotation. It covers solution chemistry, electrokinetic properties of mineral particles, their colloidal behavior in aqueous media, and the surface-active properties of flotation reagents along with the mechanisms controlling them. In addition, the course addresses dewatering processes and its subprocesses·coagulation and flocculation·by focusing on the forces and mechanisms governing particle-particle and bubble-particle interactions.",
+  "description": "Bu ders, flotasyon prosesinde yüzey ve kolloid kimyasının rolünü ayrıntılı olarak ele alır. Çözelti kimyası, mineral tanelerinin elektrokinetik özellikleri, su ortamındaki kolloidal davranışları ve flotasyonda kullanılan reaktiflerin yüzey aktif özellikleri ile bu özellikleri belirleyen mekanizmalar üzerinde durulur. Ayrıca, susuzlandırma prosesleri ve bunun alt aşamaları olan koagülasyon ve flokülasyonun anlaşılması amacıyla tane-tane ve tane-kabarcık etkileşimlerini yöneten kuvvetler ve bunların mekanizmaları incelenir. This course provides a detailed examination of the role of surface and colloid chemistry in flotation. It covers solution chemistry, electrokinetic properties of mineral particles, their colloidal behavior in aqueous media, and the surface-active properties of flotation reagents along with the mechanisms controlling them. In addition, the course addresses dewatering processes and its subprocesses—coagulation and flocculation—by focusing on the forces and mechanisms governing particle-particle and bubble-particle interactions.",
   "outcomes": [
    "Yüzey kimyasının flotasyonda ve diğer zenginleştirme proseslerinde önemi",
    "Çeşitli arayüzeylerde etkin olan yüzey gerilimi, temas açısı, yayılma, ıslanabilirlik gibi olaylarım denetleyen mekanizmaları ve uygulama alanları",
@@ -316,12 +533,12 @@
    "Introduction to Colloid and Surface Chemistry, D.J. Shaw, , 1992,",
    "Surface and Colloid Chemistry Handbook, K.S. Birdi, CRC Press, 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=224",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=224"
  },
  "CHZ 232": {
   "code": "CHZ 232",
   "name": "Zenginlstirme Önc.Haz. İşlml.",
+  "nameEn": "Processes Prior to Concentration",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -356,15 +573,87 @@
    "Hafta 13 · Dönem içi Ödev Seminerleri",
    "Hafta 14 · Siklon ve pülp hesapları, Dönem içi Ödev Seminerleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher Hazırlamaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boyut Küçültme İşlemleri, Kırmanın tanımı ve kırıcıların sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kırmanın tanımı ve kırıcıların sınıflandırılması (devam), Kırma Devreleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Öğütme Sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Öğütme Sistemleri (devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Boyut Küçültmede Yeni Geliştirilmiş Öğütücüler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Boyuta Göre Ayırma",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Endüstriyel Eleme, tanımı ve sınıflandırması, çalışma prensipleri ve hesaplamalar, Boyut Dağılım Eğrisi uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Klasifikasyon, tanımı, tanelerin akışkan ortam içindeki hareketleri, boyuta göre ayırma prensipleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Numune hazırlama + kırma + kuru eleme deneyi, Uygulama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Öğütme + yaş eleme deneyi, Uygulama",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Klasifikasyon, Siklon Deneyi, Uygulama",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem içi Ödev Seminerleri",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Siklon ve pülp hesapları, Dönem içi Ödev Seminerleri",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "Cevher Hazırlama, Y. Kaytaz, İTÜ Gümüşsuyu Matbaası, 1990,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=232"
  },
  "CHZ 232E": {
   "code": "CHZ 232E",
   "name": "Zenginlstirme Önc.Haz. İşlml.",
+  "nameEn": "Processes Prior to Concentration",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -399,15 +688,87 @@
    "Hafta 13 · Dönem içi Ödev Seminerleri",
    "Hafta 14 · Siklon ve pülp hesapları, Dönem içi Ödev Seminerleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher Hazırlamaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boyut Küçültme İşlemleri, Kırmanın tanımı ve kırıcıların sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kırmanın tanımı ve kırıcıların sınıflandırılması (devam), Kırma Devreleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Öğütme Sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Öğütme Sistemleri (devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Boyut Küçültmede Yeni Geliştirilmiş Öğütücüler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Boyuta Göre Ayırma",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Endüstriyel Eleme, tanımı ve sınıflandırması, çalışma prensipleri ve hesaplamalar, Boyut Dağılım Eğrisi uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Klasifikasyon, tanımı, tanelerin akışkan ortam içindeki hareketleri, boyuta göre ayırma prensipleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Numune hazırlama + kırma + kuru eleme deneyi, Uygulama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Öğütme + yaş eleme deneyi, Uygulama",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Klasifikasyon, Siklon Deneyi, Uygulama",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem içi Ödev Seminerleri",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Siklon ve pülp hesapları, Dönem içi Ödev Seminerleri",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "Cevher Hazırlama, Y. Kaytaz, İTÜ Gümüşsuyu Matbaası, 1990,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=232"
  },
  "CHZ 242": {
   "code": "CHZ 242",
   "name": "Proses Mineralojisi",
+  "nameEn": "Process Mineralogy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -441,15 +802,87 @@
    "Hafta 13 · Cevher özelliklerinin proses planlaması açısından önemi",
    "Hafta 14 · Cevher özelliklerinin tesis performansı açısından önemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uygulamalı mineralojiye giriş, numune alma esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikroskop numunelerinin hazırlanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Serbestleşme boyutunun belirlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Mineral tayininde uygulanan yöntemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mineral tayininde uygulanan yöntemler (devam)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Boyut ölçüm sonuçlarının değerlendirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Cevherlerin yapısal, dokusal özellikleri ve zenginleştirme açısından önemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Cevherlerin yapısal, dokusal özellikleri ve zenginleştirme açısından önemi (devam)",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Cevher bileşimindeki safsızlıkların zenginleştirmeye etkisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Cevher bileşimindeki safsızlıkların zenginleştirmeye etkisi (devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Minerallerde izlenen ayrışma şekilleri ve zenginleştirmeye etkisi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Zenginleştirme deney sonuçlarının değerlendirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Cevher özelliklerinin proses planlaması açısından önemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Cevher özelliklerinin tesis performansı açısından önemi",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Applied Mineralogy in Mining Industry, Petruk, W., Elsevier, 2000,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=242",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=242"
  },
  "CHZ 242E": {
   "code": "CHZ 242E",
   "name": "Proses Mineralojisi",
+  "nameEn": "Process Mineralogy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -483,15 +916,87 @@
    "Hafta 13 · Cevher özelliklerinin proses planlaması açısından önemi",
    "Hafta 14 · Cevher özelliklerinin tesis performansı açısından önemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uygulamalı mineralojiye giriş, numune alma esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikroskop numunelerinin hazırlanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Serbestleşme boyutunun belirlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Mineral tayininde uygulanan yöntemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mineral tayininde uygulanan yöntemler (devam)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Boyut ölçüm sonuçlarının değerlendirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Cevherlerin yapısal, dokusal özellikleri ve zenginleştirme açısından önemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Cevherlerin yapısal, dokusal özellikleri ve zenginleştirme açısından önemi (devam)",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Cevher bileşimindeki safsızlıkların zenginleştirmeye etkisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Cevher bileşimindeki safsızlıkların zenginleştirmeye etkisi (devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Minerallerde izlenen ayrışma şekilleri ve zenginleştirmeye etkisi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Zenginleştirme deney sonuçlarının değerlendirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Cevher özelliklerinin proses planlaması açısından önemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Cevher özelliklerinin tesis performansı açısından önemi",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Applied Mineralogy in Mining Industry, Petruk, W., Elsevier, 2000,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=242",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=242"
  },
  "CHZ 306": {
   "code": "CHZ 306",
   "name": "Cevher Haz.Akışkanlar Mek.",
+  "nameEn": "Fluid Mechanics in Mineral Processing",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -512,12 +1017,12 @@
    "Akışkanlar Mekaniğine Girişi",
    "Akışkanlar Mekaniği"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=306",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=306"
  },
  "CHZ 308": {
   "code": "CHZ 308",
   "name": "Cevher Hazırlamada İş Güven.",
+  "nameEn": "Occupational Safety in Mineral Processing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -537,12 +1042,12 @@
   "textbooks": [
    "İş sağlığı ve Güvenliği; D. Baybora(edt.), 2014, 1093 p.., Hardcover, ISBN: 978975061746-1"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=308",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=308"
  },
  "CHZ 310": {
   "code": "CHZ 310",
   "name": "Cevher Haz. Tesis Otomasyonu",
+  "nameEn": "Mineral Processing Plant Automation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -579,15 +1084,87 @@
    "Hafta 13 · PLC cihazları, SCADA programı",
    "Hafta 14 · Cevher Hazirlama Tesislerinde otomasyon örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher hazırlamada Tesis Otomasyonunun tanımı, önemi ve uygulama alanları",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 2,
+    "topic": "P ve I diagramları ve Etiket numaraları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Seviye ölçerler, Sinyaller",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Havalı sistemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Elektronik malzemeler, Karakteristikler",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "DP Hücreleri, Akış: Orifisler",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Akış Ölçümü",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Seviye ölçümü",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Ağırlık ölçümü",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Wheatstone köprüsü ve Yük Hücreleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "pH ölçümü, Sıcaklık Ölçümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Sıcaklık Ölçümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "PLC cihazları, SCADA programı",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Cevher Hazirlama Tesislerinde otomasyon örnekleri",
+    "outcomes": "8-9"
+   }
+  ],
   "textbooks": [
    "Process Automation Handbook, A Guide to Theory and Practice, J. Love, , 2007, 9781846282812"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=310",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=310"
  },
  "CHZ 310E": {
   "code": "CHZ 310E",
   "name": "Cevher Haz. Tesis Otomasyonu",
+  "nameEn": "Mineral Processing Plant Automation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -624,15 +1201,87 @@
    "Hafta 13 · PLC cihazları, SCADA programı",
    "Hafta 14 · Cevher Hazirlama Tesislerinde otomasyon örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher hazırlamada Tesis Otomasyonunun tanımı, önemi ve uygulama alanları",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 2,
+    "topic": "P ve I diagramları ve Etiket numaraları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Seviye ölçerler, Sinyaller",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Havalı sistemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Elektronik malzemeler, Karakteristikler",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "DP Hücreleri, Akış: Orifisler",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Akış Ölçümü",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Seviye ölçümü",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Ağırlık ölçümü",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Wheatstone köprüsü ve Yük Hücreleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "pH ölçümü, Sıcaklık Ölçümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Sıcaklık Ölçümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "PLC cihazları, SCADA programı",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Cevher Hazirlama Tesislerinde otomasyon örnekleri",
+    "outcomes": "8-9"
+   }
+  ],
   "textbooks": [
    "Process Automation Handbook, A Guide to Theory and Practice, J. Love, , 2007, 9781846282812"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=310",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=310"
  },
  "CHZ 311": {
   "code": "CHZ 311",
   "name": "Fiziksel Zeng. Yöntemleri",
+  "nameEn": "Physical Beneficiation Methods",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -668,15 +1317,87 @@
    "Hafta 13 · Yüksek alan şiddetli manyetik ayırıcılar",
    "Hafta 14 · Elektrostatik ayırma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher hazırlamada fiziksel zenginleştirmenin tanımı ve önemi, uygulama amacı ve uygulama alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fiziksel zenginleştirmede yararlanılan mineral özellikleri, zenginleştirme yöntemleri ve yöntem seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel zenginleştirme devre tertipleri, zenginleştirme sonuçlarının değerlendirilmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Tane serbestleşmesi",
+    "outcomes": "4-8"
+   },
+   {
+    "week": 5,
+    "topic": "Boyuta göre sınıflandırma ile zenginleştirme",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 6,
+    "topic": "Ayıklama ile zenginleştirme",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 7,
+    "topic": "Tanelerin akışkan ortamlardaki hareketleri, gravite zenginleştirmesindeki önemi, ağır ortam ile zenginleştirme yöntemleri",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 8,
+    "topic": "Ağır ortam ile zenginleştirme yöntemleri (devam)",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 9,
+    "topic": "Ağır ortam ile zenginleştirme yöntemleri (devam)",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 10,
+    "topic": "Jig ile zenginleştirme",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 11,
+    "topic": "Tabaka halinde akış ile zenginleştirme ve santrifüjlü ayırıcılar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Manyetik ayırma",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Yüksek alan şiddetli manyetik ayırıcılar",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Elektrostatik ayırma",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Cevher Hazırlamada Flotasyon Dışındaki Zenginleştirme Yöntem, G. Önal, İ.T.U.Maden Fakültesi Yayını, 1985,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=311"
  },
  "CHZ 311E": {
   "code": "CHZ 311E",
   "name": "Fiziksel Zeng. Yöntemleri",
+  "nameEn": "Physical Beneficiation Methods",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -712,15 +1433,87 @@
    "Hafta 13 · Yüksek alan şiddetli manyetik ayırıcılar",
    "Hafta 14 · Elektrostatik ayırma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher hazırlamada fiziksel zenginleştirmenin tanımı ve önemi, uygulama amacı ve uygulama alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fiziksel zenginleştirmede yararlanılan mineral özellikleri, zenginleştirme yöntemleri ve yöntem seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel zenginleştirme devre tertipleri, zenginleştirme sonuçlarının değerlendirilmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Tane serbestleşmesi",
+    "outcomes": "4-8"
+   },
+   {
+    "week": 5,
+    "topic": "Boyuta göre sınıflandırma ile zenginleştirme",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 6,
+    "topic": "Ayıklama ile zenginleştirme",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 7,
+    "topic": "Tanelerin akışkan ortamlardaki hareketleri, gravite zenginleştirmesindeki önemi, ağır ortam ile zenginleştirme yöntemleri",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 8,
+    "topic": "Ağır ortam ile zenginleştirme yöntemleri (devam)",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 9,
+    "topic": "Ağır ortam ile zenginleştirme yöntemleri (devam)",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 10,
+    "topic": "Jig ile zenginleştirme",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 11,
+    "topic": "Tabaka halinde akış ile zenginleştirme ve santrifüjlü ayırıcılar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Manyetik ayırma",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Yüksek alan şiddetli manyetik ayırıcılar",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Elektrostatik ayırma",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Cevher Hazırlamada Flotasyon Dışındaki Zenginleştirme Yöntem, G. Önal, İ.T.U.Maden Fakültesi Yayını, 1985,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=311"
  },
  "CHZ 312E": {
   "code": "CHZ 312E",
   "name": "Metalurji I",
+  "nameEn": "Metallurgy I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -753,15 +1546,87 @@
    "Hafta 13 · Öğrenci dönem projeleri ve sunumları",
    "Hafta 14 · Öğrenci dönem projeleri ve sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Metalurjinin tanımı ve sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Metalurjik Ön İşlemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Aglomerasyon tanımı ve sınıflandırılması, nodülleme, biriketleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sinterleme, peletleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Pirometalurjinin tanımı ve sınıflandırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Kurutma, kalsinasyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Kavurma",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Ergitme",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Ateşte rafinasyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Demir ve Çelik Üretimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Bakır ergitme ve rafinasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Pirometalurjik Çinko Üretimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci dönem projeleri ve sunumları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci dönem projeleri ve sunumları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Textbook of Pyrometallurgy, F. Habashi, Laval University, 2002, 29226860501"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=312"
  },
  "CHZ 314": {
   "code": "CHZ 314",
   "name": "Cevher Haz. Tesis Otomasyonu",
+  "nameEn": "Mineral Processing Plant Automation",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -798,15 +1663,73 @@
    "Hafta 13 · SCADA programı kullanım alanları",
    "Hafta 14 · Cevher Hazirlama Tesislerinde otomasyon örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher hazırlamada Tesis Otomasyonunun tanımı, önemi ve uygulama alanları"
+   },
+   {
+    "week": 2,
+    "topic": "P&I diagramları ve Etiket numaraları"
+   },
+   {
+    "week": 3,
+    "topic": "Elektronik malzemeler, Karakteristikler"
+   },
+   {
+    "week": 4,
+    "topic": "Sinyaller ve havalı sistemler"
+   },
+   {
+    "week": 5,
+    "topic": "DP Hücreleri, Akış: Orifisler"
+   },
+   {
+    "week": 6,
+    "topic": "Akış Ölçümü"
+   },
+   {
+    "week": 7,
+    "topic": "Seviye ölçümü"
+   },
+   {
+    "week": 8,
+    "topic": "Ağırlık ölçümü, Yük hücreleri"
+   },
+   {
+    "week": 9,
+    "topic": "pH ölçümü, ve Sıcaklık Ölçümü"
+   },
+   {
+    "week": 10,
+    "topic": "PLC cihazları,"
+   },
+   {
+    "week": 11,
+    "topic": "PLC cihazları,ve SCADA programı"
+   },
+   {
+    "week": 12,
+    "topic": "PLC Programlama yöntemleri"
+   },
+   {
+    "week": 13,
+    "topic": "SCADA programı kullanım alanları"
+   },
+   {
+    "week": 14,
+    "topic": "Cevher Hazirlama Tesislerinde otomasyon örnekleri"
+   }
+  ],
   "textbooks": [
    "Process Automation Handbook, A Guide to Theory and Practice, J. Love, , 2007, 9781846282812"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=314",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=314"
  },
  "CHZ 316E": {
   "code": "CHZ 316E",
   "name": "Metallurgy I",
+  "nameEn": "Metallurgy I",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -826,12 +1749,12 @@
   "textbooks": [
    "Textbook of Pyrometallurgy, F. Habashi, Laval University, 2002, 29226860501"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=316",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=316"
  },
  "CHZ 318": {
   "code": "CHZ 318",
   "name": "Endüstriyel Hammaddeler",
+  "nameEn": "Industrial Raw Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -864,15 +1787,87 @@
    "Hafta 13 · Yarı Kıymetli Taşlar ve Nadir Toprak Mineraller.",
    "Hafta 14 · ÖDEV TESLİMİ VE YIL İÇİ SINAVI."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstriyel Mineraller ve günlük yaşamdaki yeri.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Seramik Hammaddeleri:Feldspat, kaolen, seramik killeri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Seramik Hammaddeleri:Vollastonit, Talk, Pirofillit, Zirkon.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Refrakter:Manyezit, Kromit, Refrakter kil, Mika, DÖNEM ÖDEV KONULARININ VERILMESI.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Refrakter: Disten, Dolomit, Boksit, Grafit, 1. KISA SINAV.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Cam:Kuvars, Trona, Nefelinli Siyenit, Lityum.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Dolgu ve Filtrasyon: Sepiyolit, Zeolit, Diyatomit, Bentonit, Kalsit.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İnşaat ve Çimento: Kireçtaşı, Pomza, Perlit, Tras, Kum, 2. KISA SINAV.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Kimya-Boya ve Deterjan: Bor Mineralleri, Tuz, Sodyum Sülfat.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Kimya-Boya ve Deterjan:Florit, Barit, Selestit, Demir ve Titan Oksitli Mineraller.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gübre: Fosfat Kayacı, Apatit, Kükürt.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Mermer-ve Aşındırıcılar: Elmas, Korund, Zımpara Taşı, Garnet, Spinel.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yarı Kıymetli Taşlar ve Nadir Toprak Mineraller.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "ÖDEV TESLİMİ VE YIL İÇİ SINAVI.",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Endüstriyel Hammaddeler Envanteri, İMMİB,1999"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=318",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=318"
  },
  "CHZ 318E": {
   "code": "CHZ 318E",
   "name": "Endüstriyel Hammaddeler",
+  "nameEn": "Industrial Raw Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -905,15 +1900,87 @@
    "Hafta 13 · Yarı Kıymetli Taşlar ve Nadir Toprak Mineraller.",
    "Hafta 14 · ÖDEV TESLİMİ VE YIL İÇİ SINAVI."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstriyel Mineraller ve günlük yaşamdaki yeri.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Seramik Hammaddeleri:Feldspat, kaolen, seramik killeri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Seramik Hammaddeleri:Vollastonit, Talk, Pirofillit, Zirkon.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Refrakter:Manyezit, Kromit, Refrakter kil, Mika, DÖNEM ÖDEV KONULARININ VERILMESI.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Refrakter: Disten, Dolomit, Boksit, Grafit, 1. KISA SINAV.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Cam:Kuvars, Trona, Nefelinli Siyenit, Lityum.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Dolgu ve Filtrasyon: Sepiyolit, Zeolit, Diyatomit, Bentonit, Kalsit.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İnşaat ve Çimento: Kireçtaşı, Pomza, Perlit, Tras, Kum, 2. KISA SINAV.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Kimya-Boya ve Deterjan: Bor Mineralleri, Tuz, Sodyum Sülfat.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Kimya-Boya ve Deterjan:Florit, Barit, Selestit, Demir ve Titan Oksitli Mineraller.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gübre: Fosfat Kayacı, Apatit, Kükürt.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Mermer-ve Aşındırıcılar: Elmas, Korund, Zımpara Taşı, Garnet, Spinel.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yarı Kıymetli Taşlar ve Nadir Toprak Mineraller.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "ÖDEV TESLİMİ VE YIL İÇİ SINAVI.",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Endüstriyel Hammaddeler Envanteri, İMMİB,1999"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=318",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=318"
  },
  "CHZ 320E": {
   "code": "CHZ 320E",
   "name": "Metalurji II",
+  "nameEn": "Metallurgy II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -933,12 +2000,12 @@
   "textbooks": [
    "Textbook of Hydrometallurgy, F. Habashi, Laval University, 1999, 2980324779"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=320",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=320"
  },
  "CHZ 321": {
   "code": "CHZ 321",
   "name": "Kömür Hazırlama",
+  "nameEn": "Coal Preparation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -959,12 +2026,12 @@
   "textbooks": [
    "KÖMÜR HAZIRLAMA VE TEKNOLOJISI, YAZAR: PROF. DR. GÜNDÜZ ATEŞOK, YURT MADENCİLİĞİNİ GELİŞTİRME VAKFI KİTAPLARI, GENİŞLETİLMİŞ 2. BASKI (ISBN: 975-7946-22-2)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=321"
  },
  "CHZ 321E": {
   "code": "CHZ 321E",
   "name": "Kömür Hazırlama",
+  "nameEn": "Coal Preparation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -985,12 +2052,12 @@
   "textbooks": [
    "KÖMÜR HAZIRLAMA VE TEKNOLOJISI, YAZAR: PROF. DR. GÜNDÜZ ATEŞOK, YURT MADENCİLİĞİNİ GELİŞTİRME VAKFI KİTAPLARI, GENİŞLETİLMİŞ 2. BASKI (ISBN: 975-7946-22-2)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=321"
  },
  "CHZ 323": {
   "code": "CHZ 323",
   "name": "Maden Yatakları",
+  "nameEn": "Ore Deposits",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1010,12 +2077,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=323"
  },
  "CHZ 323E": {
   "code": "CHZ 323E",
   "name": "Maden Yatakları",
+  "nameEn": "Ore Deposits",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1035,12 +2102,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=323"
  },
  "CHZ 325": {
   "code": "CHZ 325",
   "name": "Kömür Hazırlama",
+  "nameEn": "Coal Preparation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1074,15 +2141,86 @@
    "Hafta 13 · Kömür analiz yöntemleri, Temiz kömür Teknolojileri ve İnce boyutlu kömürlerin değerlendirme yöntemleri.",
    "Hafta 14 · Temiz kömür Teknolojileri ve İnce boyutlu kömürlerin değerlendirme yöntemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kömürün tanımı ve özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kömürlerin sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kömürün fiziksel, kimyasal ve petrografik özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kömür özelliklerinin tüketimdeki yeri ve Türk kömürleri, taş kömürleri, linyit, artıkların kullanımı (1. Kısa sınav).",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Kömürde numune alma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kömür hazırlama, yıkama eğrisi, M-eğrisi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kömürde yaş zenginleştirme.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "(YILİÇİ SINAVI), Laboratuar çalışması; Yüzdürme Batırma Deneyi-1."
+   },
+   {
+    "week": 9,
+    "topic": "Kömürde kuru zenginleştirme, Laboratuar çalışması; Yüzdürme Batırma Deneyi-2.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Kömürde kükürt miktarının düşürülmesi, Laboratuar çalışması; Yüzdürme Batırma Deney Sonuçlarının değerlendirilmesi-Kömür Analiz Yöntemleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Kömürde rutubet miktarının azaltılması, Laboratuar çalışması; Kömür Hazırlama Tesislerinde Proses Değerlendirme Deneyi-1.",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "(2. Kısa sınav), Laboratuar çalışması; Kömür Hazırlama Tesislerinde Proses Değerlendirme Deneyi-2, Kömür hazırlamada yardımcı işlemler, Laboratuar çalışması; Kömür Hazırlama Tesislerinde Proses Değerlendirme Deneyinin Sonuçlarının değerlendirilmesi-Kömür Analiz Yöntemleri.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kömür analiz yöntemleri, Temiz kömür Teknolojileri ve İnce boyutlu kömürlerin değerlendirme yöntemleri.",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Temiz kömür Teknolojileri ve İnce boyutlu kömürlerin değerlendirme yöntemleri.",
+    "outcomes": "2-6"
+   }
+  ],
   "textbooks": [
    "KÖMÜR HAZIRLAMA VE TEKNOLOJISI, YAZAR: PROF. DR. GÜNDÜZ ATEŞOK, YURT MADENCİLİĞİNİ GELİŞTİRME VAKFI KİTAPLARI, GENİŞLETİLMİŞ 2. BASKI (ISBN: 975-7946-22-2)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=325",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=325"
  },
  "CHZ 328E": {
   "code": "CHZ 328E",
   "name": "Cevher Hazırlamada Bilgisayar Uygulamaları",
+  "nameEn": "Comp. Appl. in Mineral Proces.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1106,12 +2244,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=328",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=328"
  },
  "CHZ 332E": {
   "code": "CHZ 332E",
   "name": "Flotasyon ve Flokülasyon",
+  "nameEn": "Flotation and Flocculation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1145,17 +2283,89 @@
    "Hafta 13 · Flotasyon makinaları, flotasyon devreleri, kolon, Jameson ve jet flotasyonu, flotasyon hücrelerinin dizaynı",
    "Hafta 14 · İnce parçaların flotasyonu, şlamla kaplanma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Flotasyonun önemi ve tarihsel gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kimyasal bağlar, flotasyonda gaz, sıvı ve katı fazlar, kristal yapı, pH nın flotasyonda önemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yüzey gerilimi, Gibbs adsopsiyon denklemi, temas açısının belirlenmesi ve önemi, yüzeylerin ıslanabilirliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Hidroliz, çözünme ve çökme reaksiyonlarının belirlenmesi ve örnek problemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Flotasyonda yüzey ve kolloid kimyası, kimyasal potansiyel, elektiriksel çift tabaka, minerallerin sıfır yük noktası, potansiyeli belirleyen iyonlar, zp ölçümleri, arayüzeylerin termodinamiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Flotasyon reaktiflerinin sınıflandırılması; toplayıcılar, köpürtücüler ve modife ediciler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Mineral süspansiyonlarında denge, flokülasyon ve koagülasyonun prensipleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Oksit ve silikat minerallerinin katyonik toplayıcılarla flotasyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sülfürlü minerallerin flotasyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Okside olmuş sülfür minerallerinin flotasyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Tuz ve çözünür tuzların flotasyonu, kömür ve hidrofobik minerallerin flotasyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Flotasyon prosesleri, cevherlerin özellikleri, serbestleşme pülp özellikleri, pülp kontrolü ve reaktiflerin beslenmesi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Flotasyon makinaları, flotasyon devreleri, kolon, Jameson ve jet flotasyonu, flotasyon hücrelerinin dizaynı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "İnce parçaların flotasyonu, şlamla kaplanma",
+    "outcomes": "2-6"
+   }
+  ],
   "textbooks": [
    "Surface Chemistry of Froth Flotation: Reagents and mechanism, Rao, S.R., Leja, J. , Plenum Press, 2004,",
    "The Flotation Process, T. A. Rickard, Kessinger Publishing, 2007, 1432645579",
    "Flotasyon İlkeleri ve Uygulaması, S. Atak, İTÜ Vakfı, 1990,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=332",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=332"
  },
  "CHZ 342E": {
   "code": "CHZ 342E",
   "name": "Cevher Hazırlamada Bilgisayar Uygulamaları",
+  "nameEn": "Comp. Appl. in Mineral Proces.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1191,15 +2401,87 @@
    "Hafta 13 · Boyut Küçültme Devrelerinin Simülasyonu",
    "Hafta 14 · Boyut Küçültme Devrelerinin Simülasyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Simülasyon ve Modellemeye Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Matematiksel işlemlerin bilgisayarda yapılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Boyut Küçültme Proseslerinin Matematiksel Modellemesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Boyut Küçültme Proseslerinin Matematiksel Modellemesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Boyut Küçültme Proseslerinin Matematiksel Modellemesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Konili Kırıcıların Matematiksel Modellemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Konili Kırıcıların Matematiksel Modellemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Çubuklu Değirmenlerin Matematiksel Modellemesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Bilyalı Değirmenlerin Matematiksel Modellemesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Bilyalı Değirmenlerin Matematiksel Modellemesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Eleklerin ve Hidrosiklonların Matematiksel Modellemesi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Hidrosiklonların Matematiksel Modellemesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Boyut Küçültme Devrelerinin Simülasyonu",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Boyut Küçültme Devrelerinin Simülasyonu",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Modeling and Simulation of Mineral Processing Systems, R.P. King, Butterworth Heinemann Publishing, 2001,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=342"
  },
  "CHZ 348E": {
   "code": "CHZ 348E",
   "name": "Bulk Materials Handling",
+  "nameEn": "Bulk Materials Handling",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1221,12 +2503,12 @@
   "textbooks": [
    "Basic Principles of Bulk Solids: Storage, Flow and Handling, A.W. Roberts, Institute for Bulk Materials Handling Research, l992,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=348",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=348"
  },
  "CHZ 352": {
   "code": "CHZ 352",
   "name": "Kömür Teknolojisi",
+  "nameEn": "Coal Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1259,16 +2541,88 @@
    "Hafta 13 · Kömürün Yanması ve Yanma Mekanizmaları",
    "Hafta 14 · Kömürün Yanması ve Yanma Mekanizmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dünya ve Avrupa Birliğinde Enerji Görünümü ve Kömür Politikaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Türkiyede Enerji Görünümü ve Kömür Politikaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kömür Kullanımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Termik Santraller: Kömür Miktar ve Kalitesinin Önemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Termik Santraller: Kömürün Homojenizasyonu ve Buhar Elektrik Üretimi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Termik Santraller: Yanma Sonucu Oluşan Ürünler ve Davranışları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Termik Santrallerin Türkiyedeki Uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Temiz Kömür Teknolojileri 1: Kömürün Gazlaştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kömürün Gazlaştırılması ile İlgili Dünyadaki Gelişmeler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Temiz Kömür Teknolojileri 2: Kömürün Sıvılaştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kömürün Koklaştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kömürün Biriketlenmesi ve Kömür Su Karışımları Teknolojisi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kömürün Yanması ve Yanma Mekanizmaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Kömürün Yanması ve Yanma Mekanizmaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Kömür Hazırlama Teknolojileri, G. Ateşok, Yurt Madenciliğini Geliştirme Vakfı Yayını, 2004,",
    "Kömür Kullanımı ve Temiz Kömür Teknolojileri, G. Ateşok, Yurt Madenciliğini Geliştirme Vakfı Yayını, 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=352",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=352"
  },
  "CHZ 352E": {
   "code": "CHZ 352E",
   "name": "Kömür Teknolojisi",
+  "nameEn": "Coal Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1301,16 +2655,88 @@
    "Hafta 13 · Kömürün Yanması ve Yanma Mekanizmaları",
    "Hafta 14 · Kömürün Yanması ve Yanma Mekanizmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dünya ve Avrupa Birliğinde Enerji Görünümü ve Kömür Politikaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Türkiyede Enerji Görünümü ve Kömür Politikaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kömür Kullanımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Termik Santraller: Kömür Miktar ve Kalitesinin Önemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Termik Santraller: Kömürün Homojenizasyonu ve Buhar Elektrik Üretimi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Termik Santraller: Yanma Sonucu Oluşan Ürünler ve Davranışları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Termik Santrallerin Türkiyedeki Uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Temiz Kömür Teknolojileri 1: Kömürün Gazlaştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kömürün Gazlaştırılması ile İlgili Dünyadaki Gelişmeler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Temiz Kömür Teknolojileri 2: Kömürün Sıvılaştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kömürün Koklaştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kömürün Biriketlenmesi ve Kömür Su Karışımları Teknolojisi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kömürün Yanması ve Yanma Mekanizmaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Kömürün Yanması ve Yanma Mekanizmaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Kömür Hazırlama Teknolojileri, G. Ateşok, Yurt Madenciliğini Geliştirme Vakfı Yayını, 2004,",
    "Kömür Kullanımı ve Temiz Kömür Teknolojileri, G. Ateşok, Yurt Madenciliğini Geliştirme Vakfı Yayını, 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=352",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=352"
  },
  "CHZ 354": {
   "code": "CHZ 354",
   "name": "Susuzlandırma ve Kurutma",
+  "nameEn": "Dewatering and Drying",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1343,15 +2769,87 @@
    "Hafta 13 · Kurutucu çeşitleri",
    "Hafta 14 · Konsantrelerin nem oranı ve önemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Susuzlandırmanın amacı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çöktürme ve kıvamlandırma hakkındaki temel kavramlar ve kurallar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çöktürme ve kıvamlandırma hakkındaki temel kavramlar ve kurallar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mineral süspansiyonlarında flokülasyon ve koagülasyon dengeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mineral süspansiyonlarında flokülasyon ve koagülasyon dengeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Susuzlandırmada polimer kullanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Gravite çökelmesi ve tikinerler. Tikinerlerin tasarımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Tikiner çeşitleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Tikiner çeşitleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Santrifüj çöktürmeler ve santrifüjlü çöktürücüler",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Filtre ortamı ve filtreler",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Kurutma ve kurutma sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kurutucu çeşitleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Konsantrelerin nem oranı ve önemi",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "A Theory of Sedimentation, Kynch, G. J., Trans. Faraday Soc., 1952,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=354",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=354"
  },
  "CHZ 354E": {
   "code": "CHZ 354E",
   "name": "Susuzlandırma ve Kurutma",
+  "nameEn": "Dewatering and Drying",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1384,15 +2882,87 @@
    "Hafta 13 · Kurutucu çeşitleri",
    "Hafta 14 · Konsantrelerin nem oranı ve önemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Susuzlandırmanın amacı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çöktürme ve kıvamlandırma hakkındaki temel kavramlar ve kurallar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çöktürme ve kıvamlandırma hakkındaki temel kavramlar ve kurallar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mineral süspansiyonlarında flokülasyon ve koagülasyon dengeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mineral süspansiyonlarında flokülasyon ve koagülasyon dengeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Susuzlandırmada polimer kullanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Gravite çökelmesi ve tikinerler. Tikinerlerin tasarımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Tikiner çeşitleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Tikiner çeşitleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Santrifüj çöktürmeler ve santrifüjlü çöktürücüler",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Filtre ortamı ve filtreler",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Kurutma ve kurutma sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kurutucu çeşitleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Konsantrelerin nem oranı ve önemi",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "A Theory of Sedimentation, Kynch, G. J., Trans. Faraday Soc., 1952,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=354",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=354"
  },
  "CHZ 358E": {
   "code": "CHZ 358E",
   "name": "Perform. Eva.in Coal Prp.Plnts",
+  "nameEn": "Perform. Eva.in Coal Prp.Plnts",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1412,12 +2982,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=358",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=358"
  },
  "CHZ 411E": {
   "code": "CHZ 411E",
   "name": "Metalurji II",
+  "nameEn": "Metallurgy II",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1450,15 +3020,87 @@
    "Hafta 13 · Öğrenci dönem ödevi sunumları",
    "Hafta 14 · Öğrenci dönem ödevi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hidrometalurjinin tanımı ve sınıflandırılması, çözücülerin tanımı ve sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Liç yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Katı sıvı ayırımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Çözeltilerden metallerin kazanımı (solvent extraksiyon iyon değiştirme, çöktürme, elektroliz)",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Çözeltilerden metallerin kazanımı (solvent extraksiyon iyon değiştirme, çöktürme, elektroliz)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hidrometalurjik proseslerden örnekler (bakır, çinko, altın, gümüş, vs.)",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Elektrometalurji: elektrolitik kazanım ve elektrolitik rafinasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Bakır, çinko ve alüminyum elektrolizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Fiziksel metalurji",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Döküm yolu ile şekillendirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Plastik şekillendirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Korozyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci dönem ödevi sunumları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci dönem ödevi sunumları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Textbook of Hydrometallurgy, F. Habashi, Laval University, 1999, 2980324779"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=411"
  },
  "CHZ 412": {
   "code": "CHZ 412",
   "name": "Susuzlandırma ve Kurutma",
+  "nameEn": "Dewatering and Drying",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1478,12 +3120,12 @@
   "textbooks": [
    "A Theory of Sedimentation, Kynch, G. J., Trans. Faraday Soc., 1952,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=412",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=412"
  },
  "CHZ 421": {
   "code": "CHZ 421",
   "name": "Cevher Haz. Proses Tasarımı",
+  "nameEn": "Process Dsg.in Min.Beneficiat.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1516,15 +3158,87 @@
    "Hafta 13 · Flotasyon devrelerinin tasarımı ve malzeme dengesi",
    "Hafta 14 · Zenginleştirme tesislerine ait proseslerden örnekler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proses planlama ve cevher hazırlamadaki önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Numune almanın ve mineralojinin proses planlamadaki önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kırma ve eleme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kırma ve eleme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Öğütme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Öğütme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "YILİÇİ SINAVI, Temel zenginleştirme devre tertipleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Fiziksel zenginleştirme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Fiziksel zenginleştirme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Fiziksel zenginleştirme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Fiziksel zenginleştirme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Flotasyon devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Flotasyon devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Zenginleştirme tesislerine ait proseslerden örnekler",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Mineral Processing Plant Design, A.L.Mular and R.B.Bhappu, Society of Mining Engineers of AIME, 1978,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=421"
  },
  "CHZ 421E": {
   "code": "CHZ 421E",
   "name": "Cevher Haz. Proses Tasarımı",
+  "nameEn": "Process Dsg.in Min.Beneficiat.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1557,15 +3271,87 @@
    "Hafta 13 · Flotasyon devrelerinin tasarımı ve malzeme dengesi",
    "Hafta 14 · Zenginleştirme tesislerine ait proseslerden örnekler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proses planlama ve cevher hazırlamadaki önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Numune almanın ve mineralojinin proses planlamadaki önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kırma ve eleme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kırma ve eleme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Öğütme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Öğütme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "YILİÇİ SINAVI, Temel zenginleştirme devre tertipleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Fiziksel zenginleştirme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Fiziksel zenginleştirme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Fiziksel zenginleştirme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Fiziksel zenginleştirme devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Flotasyon devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Flotasyon devrelerinin tasarımı ve malzeme dengesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Zenginleştirme tesislerine ait proseslerden örnekler",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Mineral Processing Plant Design, A.L.Mular and R.B.Bhappu, Society of Mining Engineers of AIME, 1978,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=421"
  },
  "CHZ 422": {
   "code": "CHZ 422",
   "name": "Cevher Hazırlamada Tesis Yönetimi ve Ekonomisi",
+  "nameEn": "Mng.&Eco.inMineral Procs.Plnts",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1600,15 +3386,87 @@
    "Hafta 13 · Cevher Hazırlama Tesisleri Ürün Satış Yönetimi Uluslararası Piyasalar",
    "Hafta 14 · Ürün Satış Cezaları ve ekstra gelirler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Ürün Stratejileri ve Planlama",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tesis Yöneticisinin Özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yöneticinin Kontrol Fonksiyonları Organizasyon Planlama",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Tesis Denetimi İdari Denetim, Teknik Denetim",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Cevher Hazırlama Zenginleştirme Sonuçlarının Değerlendirilmesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Cevher Hazırlama Tesislerinin Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Cevher Hazırlama Tesislerinin Fizibilitesi Ekonomik Analizler",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Fizibilite Uygulaması",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Fizibilite Uygulaması",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kömür Zenginleştirme Tesislerinin Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kömür Zenginleştirme Tesislerinin Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Cevher Hazırlama Tesisleri Ürün Satış Yönetimi Uluslararası Piyasalar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Cevher Hazırlama Tesisleri Ürün Satış Yönetimi Uluslararası Piyasalar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Ürün Satış Cezaları ve ekstra gelirler",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Cevher Hazırlama Tesislerinin İşletimi Denetimi ve Ekonomisi, G. Onal, A. Guney , YMGV Yayını, 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=422",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=422"
  },
  "CHZ 422E": {
   "code": "CHZ 422E",
   "name": "Cevher Hazırlamada Tesis Yönetimi ve Ekonomisi",
+  "nameEn": "Mng.&Eco.inMineral Procs.Plnts",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1643,15 +3501,87 @@
    "Hafta 13 · Cevher Hazırlama Tesisleri Ürün Satış Yönetimi Uluslararası Piyasalar",
    "Hafta 14 · Ürün Satış Cezaları ve ekstra gelirler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Ürün Stratejileri ve Planlama",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tesis Yöneticisinin Özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yöneticinin Kontrol Fonksiyonları Organizasyon Planlama",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Tesis Denetimi İdari Denetim, Teknik Denetim",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Cevher Hazırlama Zenginleştirme Sonuçlarının Değerlendirilmesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Cevher Hazırlama Tesislerinin Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Cevher Hazırlama Tesislerinin Fizibilitesi Ekonomik Analizler",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Fizibilite Uygulaması",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Fizibilite Uygulaması",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kömür Zenginleştirme Tesislerinin Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kömür Zenginleştirme Tesislerinin Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Cevher Hazırlama Tesisleri Ürün Satış Yönetimi Uluslararası Piyasalar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Cevher Hazırlama Tesisleri Ürün Satış Yönetimi Uluslararası Piyasalar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Ürün Satış Cezaları ve ekstra gelirler",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Cevher Hazırlama Tesislerinin İşletimi Denetimi ve Ekonomisi, G. Onal, A. Guney , YMGV Yayını, 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=422",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=422"
  },
  "CHZ 424": {
   "code": "CHZ 424",
   "name": "Cev.Haz.Tesis Yönetimi ve Ekon",
+  "nameEn": "Management and Economy in Mineral Processing Plants",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1673,12 +3603,12 @@
    "Sarıaslan, H., “Yatırım Projelerinin Hazırlanması ve Değerlendirilmesi,, Turhan Kitapevi, Ankara, ISBN: 9757425265, 360 p, 1997",
    "TolgaE., Kahraman, C, “Mühendislik Ekonomisi, İtu Matbaası, İstanbul, ISBN: 9755610308, 530p, 1994"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=424",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=424"
  },
  "CHZ 431E": {
   "code": "CHZ 431E",
   "name": "Katı Malzemelerin Depolanması",
+  "nameEn": "Bulk Materials Handling",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1713,15 +3643,87 @@
    "Hafta 13 · Oluk tasarımında sürtünmenin ve adezyonun etkisi",
    "Hafta 14 · Segregasyon ve harmanlama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Masif katılara giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Masif katıların depolanması ve akış özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Depolama sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Temel malzeme özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Katıların akış özellikleri, akış kanalları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Katıların akış özelliklerinin belirlenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Katıların akış özelliklerinin belirlenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Silo tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Silo tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Silo tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Duvar basınçları, besleyiciler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Duvar basınçları, besleyiciler",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Oluk tasarımında sürtünmenin ve adezyonun etkisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Segregasyon ve harmanlama",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Basic Principles of Bulk Solids: Storage, Flow and Handling, A.W. Roberts, Institute for Bulk Materials Handling Research, l992,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=431",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=431"
  },
  "CHZ 432": {
   "code": "CHZ 432",
   "name": "Cevher Haz. Tesis Tasarımı",
+  "nameEn": "Mineral Processing Plant Dsgn",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1757,15 +3759,87 @@
    "Hafta 13 · Çöktürme ve filtrasyon sistemlerinin boyulandırılması",
    "Hafta 14 · Stoklama ve stoktan alma sistemlerinin boyutlandırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bir Cevher Hazırlama Tesisinde yer alan ana unsurlar ve tasarımında etkili olan faktörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tesis yeri seçiminde etkili olan faktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Kırma sistemlerinin tasarımı (birincil ve ikincil kırma sistemleri)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kırma sistemlerinin tasarımı (üçüncül ve dördüncül kırma sistemleri)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Öğütme sistemlerinin tasarımı (çubuklu değirmenler)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Öğütme sistemlerinin tasarımı (bilyalı değirmenler)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Öğütücü ortam boyutlandırılması ve değirmen astarlar seçimi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Eleme sistemlerinin tasarımı ve boyutlandırılması",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Klasifikasyon sistemlerinin tasarımı ve boyutlandırılması",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 10,
+    "topic": "Hidrosiklon tasarımı",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 11,
+    "topic": "Bant konveyör ve pompa seçimi ve boyutlandırılması",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Gravite ve Manyetik ayırma ve Flotasyon sistemleri boyutlandırılması",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 13,
+    "topic": "Çöktürme ve filtrasyon sistemlerinin boyulandırılması",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Stoklama ve stoktan alma sistemlerinin boyutlandırılması",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Mineral Processing Technology, B.A. Wills , Pergamon Press, 1988,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=432"
  },
  "CHZ 432E": {
   "code": "CHZ 432E",
   "name": "Cevher Haz. Tesis Tasarımı",
+  "nameEn": "Mineral Processing Plant Dsgn",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1801,15 +3875,87 @@
    "Hafta 13 · Çöktürme ve filtrasyon sistemlerinin boyulandırılması",
    "Hafta 14 · Stoklama ve stoktan alma sistemlerinin boyutlandırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bir Cevher Hazırlama Tesisinde yer alan ana unsurlar ve tasarımında etkili olan faktörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tesis yeri seçiminde etkili olan faktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Kırma sistemlerinin tasarımı (birincil ve ikincil kırma sistemleri)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kırma sistemlerinin tasarımı (üçüncül ve dördüncül kırma sistemleri)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Öğütme sistemlerinin tasarımı (çubuklu değirmenler)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Öğütme sistemlerinin tasarımı (bilyalı değirmenler)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Öğütücü ortam boyutlandırılması ve değirmen astarlar seçimi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Eleme sistemlerinin tasarımı ve boyutlandırılması",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Klasifikasyon sistemlerinin tasarımı ve boyutlandırılması",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 10,
+    "topic": "Hidrosiklon tasarımı",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 11,
+    "topic": "Bant konveyör ve pompa seçimi ve boyutlandırılması",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Gravite ve Manyetik ayırma ve Flotasyon sistemleri boyutlandırılması",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 13,
+    "topic": "Çöktürme ve filtrasyon sistemlerinin boyulandırılması",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Stoklama ve stoktan alma sistemlerinin boyutlandırılması",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Mineral Processing Technology, B.A. Wills , Pergamon Press, 1988,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=432"
  },
  "CHZ 433E": {
   "code": "CHZ 433E",
   "name": "Bor Zenginleştirme ve Uygulamaları",
+  "nameEn": "Boron Processing and Applications",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1842,15 +3988,87 @@
    "Hafta 13 · Tesis Raporlarının Sunulması ve tartışma",
    "Hafta 14 · Türkiyedeki bor araştırmaları ve Borun geleceği Lab. (telafi)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin içeriği ve programı hakkında öğrencileri bilgilendirme, Bor Mineralleri ve kimyası, jeolojisi hakkında kısa bilgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dünya bor rezervleri, Türkiyenin yeri, Türkiye için borun önemi, Türkiyedeki bor yatakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dünyada Bor Madenciliği, Türkiyede Bor madenciliği, Borun Yaş ve Kuru yöntemlerle Genel Zenginleştirilme İlkeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bor Zenginleştirmesinde klasik cevher hazırlama yöntemleri, Yaş ve kuru yöntemlerin mukayesesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bor zenginleştiren tesislerden örnekler, Türkiyedeki tesisler, akım şemalarının incelenmesi, tesislerin üretim bilgileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Yarı mamül bor üretim teknolojileri, Türkiyedeki durum Lab.I : Scrubbing yöntemi ile Borun zenginleştirilmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Bor teknolojisi, endüstriyel kullanım alanları, Lab 2: Borun ısıl işlemle zenginleştirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Bor Atıkları ve Atıkların Değerlendirilmesi, Lab II: Borun flotasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Bor Atıklarının Çevresel değerlendirilmesi, atık barajları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "İleri bor teknoloji ürünlerinin üretimi ve uygulanması: stratejik ürünler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "İleri bor teknoloji ürünlerinin üretimi ve uygulanması: nanoteknolojiler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Dünyada ve Türkiyede Bor Ticareti ve pazarlaması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tesis Raporlarının Sunulması ve tartışma",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiyedeki bor araştırmaları ve Borun geleceği Lab. (telafi)",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Borates: handbook of deposits, processing, properties..., D.E. Garrett, Academic Press, 1998,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=433",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=433"
  },
  "CHZ 434": {
   "code": "CHZ 434",
   "name": "Çimento Hammad. ve Tekn.",
+  "nameEn": "Cement Raw Materials & Tech.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1872,12 +4090,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=434",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=434"
  },
  "CHZ 434E": {
   "code": "CHZ 434E",
   "name": "Çimento Hammad. ve Tekn.",
+  "nameEn": "Cement Raw Materials & Tech.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1899,12 +4117,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=434",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=434"
  },
  "CHZ 435E": {
   "code": "CHZ 435E",
   "name": "Cevher Hazırlamada Biyoteknoloji",
+  "nameEn": "Biotech. in Mineral Processing",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1939,15 +4157,87 @@
    "Hafta 13 · Altın ve gümüş kazanımında biyoliç uygulama ve örnekleri",
    "Hafta 14 · Siyanür bozundurmada biyo teknolojilerin kullanımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyoteknolojinin tanımı ve cevher hazırlamada kullanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyooksidasyon proseslerinin temel prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Biyoliç proseslerinin temel prensipleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Mikroorganizmaların oksidasyon ve redüksiyon karakteristikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bakterilerin türleri, üretilmesi, geliştirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Bakteri tanımlama ve analiz yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Sülfürlü cevher ve konsantrelere direkt ve endirekt bakteri liçi yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sülfür dışı minerallere uygulanan biyoliç yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kömürden kükürt uzaklaştırmada biyo desülfürizasyon ve uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Atıklardan metallerin kazanılması ve çöktürülmesinde biyoteknolojik prosesler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Atık sulardan metallerin temizlenmesi ve çöktürülmesinde biyoteknolojik prosesler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Uranyum ve bakır için biyoliç uygulama ve örnekleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Altın ve gümüş kazanımında biyoliç uygulama ve örnekleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Siyanür bozundurmada biyo teknolojilerin kullanımı",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Microbes, Minerals and Environment, K.A.Natarajan, Geological Survey of India, 1998,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=435",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=435"
  },
  "CHZ 436": {
   "code": "CHZ 436",
   "name": "İleri Teknoloji Hammaddeleri",
+  "nameEn": "High Technology Raw Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1979,16 +4269,88 @@
    "Hafta 13 · Radyoaktif metallerin kazanım yöntemleri",
    "Hafta 14 · Tesislerden örnek akım şemaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İleri teknoloji hammaddelerinin tanımı ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Önemi ve kullanıldığı yerler. (Dönem Ödev Konularının Verilmesi)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Türkiyede ileri teknoloji hammaddeleri.(1.Kısa Sınav)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Dünyada ileri teknoloji hammaddeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Nadir metallerin (In, Bi, Se, Te, Ge, Re gibi) doğada bulunuş şekilleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Nadir toprak metallerinin (Ce, La, Pr, Nd, Sm, Sc gibi) doğada bulunuş şekilleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Radyoaktif metallerin (U, Th) doğada bulunuş şekilleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "YILİÇİ SINAVI",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Nadir metallerin cevherlerden, araürünlerden ve atıklardan kazanım yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tesislerden örnek akım şemaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Nadir toprak metallerinin kazanım yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Tesislerden örnek akım şemaları. (2. Kısa Sınav)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Radyoaktif metallerin kazanım yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tesislerden örnek akım şemaları",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Metals and Minerals Annual Review, , , 1993,",
    "Minerals Year Book, , , 2001,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=436",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=436"
  },
  "CHZ 436E": {
   "code": "CHZ 436E",
   "name": "İleri Teknoloji Hammaddeleri",
+  "nameEn": "High Technology Raw Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2020,16 +4382,88 @@
    "Hafta 13 · Radyoaktif metallerin kazanım yöntemleri",
    "Hafta 14 · Tesislerden örnek akım şemaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İleri teknoloji hammaddelerinin tanımı ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Önemi ve kullanıldığı yerler. (Dönem Ödev Konularının Verilmesi)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Türkiyede ileri teknoloji hammaddeleri.(1.Kısa Sınav)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Dünyada ileri teknoloji hammaddeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Nadir metallerin (In, Bi, Se, Te, Ge, Re gibi) doğada bulunuş şekilleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Nadir toprak metallerinin (Ce, La, Pr, Nd, Sm, Sc gibi) doğada bulunuş şekilleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Radyoaktif metallerin (U, Th) doğada bulunuş şekilleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "YILİÇİ SINAVI",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Nadir metallerin cevherlerden, araürünlerden ve atıklardan kazanım yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tesislerden örnek akım şemaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Nadir toprak metallerinin kazanım yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Tesislerden örnek akım şemaları. (2. Kısa Sınav)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Radyoaktif metallerin kazanım yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tesislerden örnek akım şemaları",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Metals and Minerals Annual Review, , , 1993,",
    "Minerals Year Book, , , 2001,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=436",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=436"
  },
  "CHZ 437": {
   "code": "CHZ 437",
   "name": "Kömür Hazırlamada Model.&Sim.",
+  "nameEn": "Modelling and Simulation in Coal Processing",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2048,12 +4482,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=437",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=437"
  },
  "CHZ 439": {
   "code": "CHZ 439",
   "name": "Çimento Hammad. ve Tekn.",
+  "nameEn": "Cement Raw Materials and Technology",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2075,12 +4509,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=439",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=439"
  },
  "CHZ 440E": {
   "code": "CHZ 440E",
   "name": "Atık Barajlarının Yönetimi",
+  "nameEn": "Managment of Tailing Dams",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2115,15 +4549,87 @@
    "Hafta 13 · Siyanür ve tehlikeli kimyasallar yönetimi",
    "Hafta 14 · Genel değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher hazırlama ve metalurjik tesis atıklarının tanımı, sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Cevher ve kömür tesis atıkları (katı, sıvı, kimyasal), Atık Deşarj Standartları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Katı ve sıvı atıkların düzenli ve sürekli depolanma kriterleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Cevher ve kömür atıkları için Çevresel Etki Değerlendirmesi. (ÇED) raporu hazırlığı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Atıkların ve atık alanlarının temel mühendislik özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Atık baraj alanı seçim kriterleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Atık barajı inşasında tasarım kriterleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Atık Barajı tipleri, baraj inşası yöntemleri, hesaplamalar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Barajların terk edilmesi, fiziksel ve kimyasal stabilizasyon",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Baraj alanlarının rehabilitasyonu ,reklamasyonu ve doğaya geri kazandırma",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Genel ve tehlikeli atıkların depolanması, deşarj limitleri, atık yönetimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Atık barajları ve atık barajı kazalarına ait örnekler",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Siyanür ve tehlikeli kimyasallar yönetimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Genel değerlendirme",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Mine Wastes: Characterization Treatment and Environmental, B. G. Lottermeser, Springer-Verlag, 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=440",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=440"
  },
  "CHZ 442E": {
   "code": "CHZ 442E",
   "name": "Endüstriyel ve Mineral Atıkların Islahı",
+  "nameEn": "Remdtn of Indus.&Minerl Wastes",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2155,17 +4661,89 @@
    "Hafta 13 · Geri kazanılan artıkların, inşaat, çimento, seramik gibi sektörlerde uygulamaları",
    "Hafta 14 · Geri kazanılan artıkların, inşaat, çimento, seramik gibi sektörlerde uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Maden, cevher hazırlama ve metalurji tesis artıklarının çeşitleri, çevre kirliliği açısından önemi ve ekolojik hayata etkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Cevher hazırlama tesislerinde oluşan çeşitli tesis katı, sıvı ve gaz atıkların (artıkların) karakterizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Süspansiyon halindeki ince partiküllerin çevreye etkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tesis artıklarının susuzlaştırılması ve zenginleştirilmesi için geliştirilmiş yöntemler; sedimantasyon, koagülasyon, flokülasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Metal iyonlarının oluşturduğu kirlilikler ve bertaraf yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Flotasyon reaktiflerinin ve çeşitli petrol kökenli kimyasal maddelerin doğurduğu kirlilikler.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çevre kirliliğinin azaltılması için geliştirilmiş yöntemler:Ayırma, metal iyonlarını çöktürme, adsorpsiyon, hidrometalurjik yöntemler, membran, ters ozmoz, ve biyolojik yöntemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Çevre kirliliğinin azaltılması için geliştirilmiş yöntemler:Ayırma, metal iyonlarını çöktürme, adsorpsiyon, hidrometalurjik yöntemler, membran, ters ozmoz, ve biyolojik yöntemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Atıksız teknolojilerin tanımı ve çeşitli endüstrilerden örnekler: Kömür su karışımları. alümina, baz metal, kömür, altın gümüş, fosfat ve potas",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Atıksız teknolojilerin tanımı ve çeşitli endüstrilerden örnekler: Kömür su karışımları. alümina, baz metal, kömür, altın gümüş, fosfat ve potas",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Atıksız teknolojilerin tanımı ve çeşitli endüstrilerden örnekler: Kömür su karışımları. alümina, baz metal, kömür, altın gümüş, fosfat ve potas",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Artık depolama yöntemleri ve örnekleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Geri kazanılan artıkların, inşaat, çimento, seramik gibi sektörlerde uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Geri kazanılan artıkların, inşaat, çimento, seramik gibi sektörlerde uygulamaları",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Mine Wastes:Characterization, Treatment and Environmental..., B. G. Lottermeser, Springer-Verlag, 2003,",
    "Tailings Management, Ritchey, G.R., , Elsevier, 1989,",
    "Cevher Hazırlama Tesis Artıkları, Çevreye olan Etkileri, M. Karadeniz , MTA Yayını, 1996,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=442",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=442"
  },
  "CHZ 443E": {
   "code": "CHZ 443E",
   "name": "Bor Zenginleştirme ve Uygulamaları",
+  "nameEn": "Boron Processing and Applic.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -2185,12 +4763,12 @@
   "textbooks": [
    "Borates: handbook of deposits, processing, properties..., D.E. Garrett, Academic Press, 1998,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=443",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=443"
  },
  "CHZ 446": {
   "code": "CHZ 446",
   "name": "İleri Teknoloji Hammaddeleri",
+  "nameEn": "High Technology Raw Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2210,12 +4788,12 @@
    "Metals and Minerals Annual Review, , , 1993,",
    "Minerals Year Book, , , 2001,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=446",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=446"
  },
  "CHZ 447": {
   "code": "CHZ 447",
   "name": "Flotasyon",
+  "nameEn": "Flotation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2249,15 +4827,87 @@
    "Hafta 13 · Kömür ve hidrofobik minerallerin flotasyonu.",
    "Hafta 14 · Flotasyon prosesleri, cevherlerin özellikleri, serbestleşme pülp özellikleri, pülp kontrolü ve reaktiflerin beslenmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Flotasyonun önemi ve tarihsel gelişimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kimyasal bağlar, flotasyonda gaz, sıvı ve katı fazlar, kristal yapı, pH’nın flotasyonda önemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yüzey gerilimi, Gibbs adsopsiyon denklemi, temas açısının belirlenmesi ve önemi, yüzeylerin ıslanabilirliği.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Hidroliz, çözünme ve çökme reaksiyonlarının belirlenmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Flotasyonda yüzey ve kolloid kimyası, kimyasal potansiyel, elektiriksel çift tabaka, minerallerin sıfır yük noktası, potansiyeli belirleyen iyonlar, zeta potansiyel ölçümleri, arayüzeylerin termodinamiği.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Flotasyon reaktiflerinin sınıflandırılması; toplayıcılar, köpürtücüler ve modife ediciler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Flotasyon reaktiflerinin sınıflandırılması; toplayıcılar, köpürtücüler ve modife ediciler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Mineral süspansiyonlarında denge, flokülasyon ve koagülasyonun prensipleri.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Oksit ve silikat minerallerinin katyonik toplayıcılarla flotasyonu.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sülfürlü minerallerin flotasyonu.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Okside olmuş sülfür minerallerinin flotasyonu.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Tuz ve çözünür tuzların flotasyonu.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kömür ve hidrofobik minerallerin flotasyonu.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Flotasyon prosesleri, cevherlerin özellikleri, serbestleşme pülp özellikleri, pülp kontrolü ve reaktiflerin beslenmesi.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "S. Atak, Flotasyon Cevher Hazırlamada 100 Yıl, İTÜ Vakfı, Kitap Yayın, İstanbul, 2017"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=447",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=447"
  },
  "CHZ 450": {
   "code": "CHZ 450",
   "name": "Agrega Haz. ve Teknolojisi",
+  "nameEn": "Aggregate Preparation and Technology",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2278,12 +4928,12 @@
   "textbooks": [
    "Cevher Hazırlama, N.Yıldız, Ertem Basım Yayın Dağ.San.Tic.Ltd.Şti, 2007, 9789759677916"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=450",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=450"
  },
  "CHZ 452E": {
   "code": "CHZ 452E",
   "name": "Cevher Hazırlama ve Çevre",
+  "nameEn": "Mineral Process. & Environment",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -2306,12 +4956,12 @@
    "Mineral Processing and the Environment, (1998), (NATO Science Partnership Sub-Series: 2, Edts: G. P. Gallios, K.A Matis, Springer; 1st edition, ISBN-10: 0792350855",
    "Tailings and Mine Waste '08, (2002), CRC; 1st edition, ISBN-10: 0415486343,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=452",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=452"
  },
  "CHZ 454": {
   "code": "CHZ 454",
   "name": "Susuzlandırma ve Kurutma",
+  "nameEn": "Dewatering and Drying",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2331,12 +4981,12 @@
   "textbooks": [
    "A Theory of Sedimentation, Kynch, G. J., Trans. Faraday Soc., 1952,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=454",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=454"
  },
  "CHZ 454E": {
   "code": "CHZ 454E",
   "name": "Susuzlandırma ve Kurutma",
+  "nameEn": "Dewatering and Drying",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2356,12 +5006,12 @@
   "textbooks": [
    "A Theory of Sedimentation, Kynch, G. J., Trans. Faraday Soc., 1952,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=454",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=454"
  },
  "CHZ 458E": {
   "code": "CHZ 458E",
   "name": "Endüstriyel ve Mineral Atıkların Islahı",
+  "nameEn": "Remdtn of Indus.&Minerl Wastes",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -2382,12 +5032,12 @@
    "Tailings Management, Ritchey, G.R., , Elsevier, 1989,",
    "Cevher Hazırlama Tesis Artıkları, Çevreye olan Etkileri, M. Karadeniz , MTA Yayını, 1996,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=458",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=458"
  },
  "CHZ 4901": {
   "code": "CHZ 4901",
   "name": "Cevher Hazırl. Müh. Tasarımı I",
+  "nameEn": "Mineral Processing Engineerinc Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2407,12 +5057,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=4901"
  },
  "CHZ 4902": {
   "code": "CHZ 4902",
   "name": "Cevher Hazırl. Müh.Tasarımı II",
+  "nameEn": "Mineral Processing Engineerinc Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2431,12 +5081,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=4902"
  },
  "CHZ 492": {
   "code": "CHZ 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Thesis",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2468,15 +5118,87 @@
    "Hafta 13 · Laboratuvar sonuçlarının teorik bilgilerle birleştirilmesi ve rapor yazımı",
    "Hafta 14 · Rapor sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher ve Kömür Hazırlama Alanında Araştırma Konularının Belirlenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Öğrencilere konu dağıtımı ve danışmanların belirlenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tez konularında öğrencilerin bilgi toplaması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tez konularında öğrencilerin bilgi toplaması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Laboratuvar çalışmasının tasarlanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Laboratuvar sonuçlarının değerlendirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Laboratuvar sonuçlarının teorik bilgilerle birleştirilmesi ve rapor yazımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Rapor sunumu",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=492"
  },
  "CHZ 492E": {
   "code": "CHZ 492E",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Thesis",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2508,15 +5230,87 @@
    "Hafta 13 · Laboratuvar sonuçlarının teorik bilgilerle birleştirilmesi ve rapor yazımı",
    "Hafta 14 · Rapor sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cevher ve Kömür Hazırlama Alanında Araştırma Konularının Belirlenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Öğrencilere konu dağıtımı ve danışmanların belirlenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tez konularında öğrencilerin bilgi toplaması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tez konularında öğrencilerin bilgi toplaması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Laboratuvar çalışmasının tasarlanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Laboratuvarda deneylerin yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Laboratuvar sonuçlarının değerlendirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Laboratuvar sonuçlarının teorik bilgilerle birleştirilmesi ve rapor yazımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Rapor sunumu",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=492"
  },
  "CHZ 509": {
   "code": "CHZ 509",
   "name": "Değerli Metallerin Zenginleşt.",
+  "nameEn": "Mineral Processing of Precious Metals",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2548,6 +5342,77 @@
    "Hafta 13 · Platin grubu metallerinin doğada bulunuş şekilleri ve özellikleri",
    "Hafta 14 · Cevherlerden platin grubu metallerin kazanım prosesleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Doğada bulunan altın gümüş mineralleri, özellikleri, altın ve gümüş yatakları ve sınıflandırılmaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Cevherlerden altın ve gümüşün zenginleştirilmesinde kullanılan fiziksel ve fizikokimyasal zenginleştirme yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Cevherlerden altın ve gümüşün kazanılmasında kullanılan kimyasal zenginleştirme yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Cevherlerden altın ve gümüşün kazanılmasında uygulanan siyanür prosesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Siyanür prosesinin ve endüstriyel uygulamaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Cevherlerden altın ve gümüşün kazanılmasında uygulanan siyanür prosesi alternatifleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Cevher mineralojisine bağlı olarak test ve çözündürme proseslerinin seçim kriterleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav, siyanür liçinin kimyası ve termodinamik özellikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Konsantre ve çözeltilerden altın ve gümüşün kazanılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Endüstride uygulanmakta olan altın-gümüş proseslerinden örnekler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Siyanürlü artıkların yönetimi (siyanür bozundurma/uzaklaştırma/geri kazanım yöntemleri)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Altın-gümüş tesis artıklarının çevresel etkileri, uygulanan standartlar, tehlikeli katı ve sıvı atıklar. yönetmeliği ve irdelenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Platin grubu metallerinin doğada bulunuş şekilleri ve özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Cevherlerden platin grubu metallerin kazanım prosesleri"
+   }
+  ],
   "textbooks": [
    "Yannapoulos J.C. (1991), The Extractive Metallurgy of Gold, VNR New York USA",
    "Introduction to Precious Metals, Mark Grimwade, A & C Black Publishers Ltd (January 19, 2010), ISBN-10: 1408122634, ISBN-13: 978-1408122631",
@@ -2556,12 +5421,12 @@
    "The Chemistry of Gold Extraction, John Marsden, Iain House, Society for Mining Metallurgy & Exploration; 2 edition (March 5, 2006), ISBN-10: 0873352408, ISBN-13: 978-0873352406",
    "Advances in Gold Ore Processing, Volume 15 (Developments in Mineral Processing), M.D. Adams (Editor), Elsevier Science (December 13, 2005), ISBN-10: 0444517308, ISBN-13: 978-0444517302"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=509"
  },
  "CHZ 511": {
   "code": "CHZ 511",
   "name": "Mühendislik Matematiği",
+  "nameEn": "Engineering Mathematics",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2598,6 +5463,78 @@
    "Hafta 13 · Olasılık ve istatistik: dağılımlar, beklenti ve momentler",
    "Hafta 14 · Deney tasarımına giriş: faktöriyel tasarım matrisi ve yanıt yüzeyi yönteminin temelleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik problemlerinin matematiksel formülasyonu; vektörler, matrisler ve lineer denklem sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gauss eliminasyonu, determinant ve ters matris; çözümün varlığı, tekliği ve koşullanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "En küçük kareler ve ağırlıklı en küçük kareler; kütle balansı ve veri denkleştirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Özdeğer, özvektör ve kararlı durum; cevher hazırlamada matris uygulamaları",
+    "outcomes": "2-9"
+   },
+   {
+    "week": 5,
+    "topic": "Türev, Taylor açılımı ve lineerleştirme; kök bulma (Newton-Raphson, sekant)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Kısmi türev ve gradyan; ölçüm belirsizliğinin yayılımı",
+    "outcomes": "4-9"
+   },
+   {
+    "week": 7,
+    "topic": "Yıl İçi Sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İnterpolasyon, eğri uydurma ve regresyon; varyans ayrışımı (kareler toplamı, F oranı)",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sayısal türev ve integrasyon: yamuk ve Simpson kuralları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Diferansiyel denklemler: kuruluş ve analitik çözüm teknikleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Diferansiyel denklemlerin sayısal çözümü: Euler ve Runge-Kutta yöntemleri",
+    "outcomes": "6-9"
+   },
+   {
+    "week": 12,
+    "topic": "Optimizasyon ve parametre kestirimi: gradyan tabanlı yöntemler, Gauss-Newton",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 13,
+    "topic": "Olasılık ve istatistik: dağılımlar, beklenti ve momentler",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Deney tasarımına giriş: faktöriyel tasarım matrisi ve yanıt yüzeyi yönteminin temelleri",
+    "outcomes": "8-9"
+   }
+  ],
   "textbooks": [
    "Bird, J. (2014). Higher engineering mathematics (7th ed.). Abingdon: Routledge.",
    "Kreyszig, E. (2011). Advanced engineering mathematics (10th ed.). Hoboken, NJ: John Wiley & Sons.",
@@ -2605,12 +5542,12 @@
    "Margalit, D., & Rabinoff, J. (2019). Interactive linear algebra. Atlanta, GA: Georgia Institute of Technology.",
    "King, R. P. (2012). Modeling and simulation of mineral processing systems (2nd ed.). Englewood, CO: Society for Mining, Metallurgy & Exploration."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=511"
  },
  "CHZ 521E": {
   "code": "CHZ 521E",
   "name": "Ultrafine Grinding Technologie",
+  "nameEn": "Ultrafine Grinding Technologie",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2642,6 +5579,77 @@
    "Hafta 13 · Mikronize öğütmede devre tasarımı",
    "Hafta 14 · Mikronize öğütmede yeni gelişmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikronize öğütme teknolojisini giriş, tanımlar, mikronize öğütmenin amaçları, kullanım alanları (Kimyasal Tozlar, Polimerler, Alev geciktiriciler, Mineraller, Dolgu Maddesi Üretimi, Pigment Üretimi),",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikronize Öğütme Teknolojisi, Kule Değirmenler, Titreşimli Değirmenler, Karıştırmalı Değirmenler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mikronize Öğütme Teknolojisi Jet Değirmenler, Santrifüj Değirmenler, Dik Değirmenler, Yatay Değirmeler, Pülverizatörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Değirmen Parametreleri (Öğütücü ortam boyutu, Değirmen Hızı, Ortam Şarjı, Ortam malzemesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Mikronize öğütmede sınıflandırma (Havalı Seperatörler, Havalı siklonlar),",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Mikronize öğütmede sınıflandırma (Havalı Seperatörler, Havalı siklonlar),",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Endüstriyel hammadde kullanımında mikronize öğütme ve devre tertipleri, Endüstriden Örnekler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Endüstriyel hammadde kullanımında mikronize öğütme ve devre tertipleri, Endüstriden Örnekler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Cevher Zenginleştirmede mikronize öğütme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Enerji endüstrinde mikronize öğütme sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Termik Santrallerde öğütme devreleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Mikronize öğütmede paketleme işlemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Mikronize öğütmede devre tasarımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Mikronize öğütmede yeni gelişmeler"
+   }
+  ],
   "textbooks": [
    "Ultrafine Grinding and Seperation of Industrial Minerals, Subhas G. Malghan Ed. AIME ISBN 0895204193, 1983.",
    "Kawatra, S. K., Advances in comminution, SME, ISBN 0873352467, 9780873352468, 2006",
@@ -2652,12 +5660,12 @@
    "Ellis,S., Gao, M., The development of Ultra-fine Grinding at KCGM. SME Annual Meeting, February 25-17, 2002 Phoenix, USA.",
    "Wills B.A., “Mineral Processing Technology”, 4. Edt., Pergamon Press, Oxford, 1988"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=521"
  },
  "CHZ 522": {
   "code": "CHZ 522",
   "name": "Cev.Haz.&Diğer Tes.Atık.Değer.",
+  "nameEn": "Handling of Mineral Processing Tailings and Other Plants Waste",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2691,18 +5699,89 @@
    "Hafta 13 · Artıkların değerlendirilmesinin çevre açısından önemi",
    "Hafta 14 · Öğrenci ödevlerinin sunumu ve tartışılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mineral artıkların özellikleri, artıkların kökeni, tesis artıklarının ekonomik ve teknolojik açıdan önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Cevher hazırlama tesis artıkları ve genel özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Metalürji tesis artıkları ve genel özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Termik santral artıkları ve genel özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Artıkların yeniden değerlendirilmesinde kullanılan genel yöntemler-1",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Artıkların yeniden değerlendirilmesinde kullanılan genel yöntemler-2",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Dünya’dan ve Türkiye’den bu tür artıklara örnekler",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 8,
+    "topic": "Bor artıkları, Eski işletme ve maden artıklarının yeniden değerlendirilmesi",
+    "outcomes": "2-3-6"
+   },
+   {
+    "week": 9,
+    "topic": "Curuflar, baca tozları ve termik santral küllerinden metalik değerlerin kazanımı",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Artıkların diğer kullanım alanları ve kullanım alanlarına uygun malzeme hazırlanması (Kırma, Öğütme, Sınıflandırma vs.).-1",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Artıkların diğer kullanım alanları ve kullanım alanlarına uygun malzeme hazırlanması (Kırma, Öğütme, Sınıflandırma vs.).-2",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Artıkların değerlendirilmesinin ekonomisi",
+    "outcomes": "1-2-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Artıkların değerlendirilmesinin çevre açısından önemi",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci ödevlerinin sunumu ve tartışılması"
+   }
+  ],
   "textbooks": [
    "M. Karadeniz, 1996. Cevher Zenginleştirme Tesis Artıkları, Çevreye Etkileri, Önlemler, Maden Mühendisleri Odası Yayını, Ankara",
    "G. M. Ritcey, 1989. Tailing Management, Canada, Elsevier",
    "M.A. Reuter, U.M.J. Boin, A. Van Schaik, E. Verhoef, K. Heiskanen Yongxiang Yang G. Georgalli, 2005, The Metrics of Material and Metal Ecology Harmonizing the resource, technology and environmental cycles(Developments in Mineral Processing, Volume 16), Elsevier Science.",
    "P.Aarne Vesiling, William A. Worrell, Debra R., Reinhart, 2005. Solid Waste Engineering, Brooks/Cole, USA"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=522",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=522"
  },
  "CHZ 523E": {
   "code": "CHZ 523E",
   "name": "Cevher Hazır.Müh.Özel Kon.",
+  "nameEn": "Cevher Hazır.Müh.Özel Kon.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2734,16 +5813,87 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=523",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=523"
  },
  "CHZ 524": {
   "code": "CHZ 524",
   "name": "Cevher Hazır.Bilg.Uygu.&Progr.",
+  "nameEn": "Cevher Hazır.Bilg.Uygu.&Progr.",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2757,12 +5907,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=524",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=524"
  },
  "CHZ 596": {
   "code": "CHZ 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2806,6 +5956,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -2818,12 +6039,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=596"
  },
  "CHZ 596E": {
   "code": "CHZ 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2867,6 +6088,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -2879,12 +6171,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=596"
  },
  "CHZ 597": {
   "code": "CHZ 597",
   "name": "Uzmanlık Alan Dersi",
+  "nameEn": "Uzmanlık Alan Dersi",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2916,16 +6208,87 @@
    "Hafta 13 · Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
    "Hafta 14 · Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir."
+   }
+  ],
   "textbooks": [
    "Tez konusu kapsamındaki ulusal-uluslararası kitaplar, makaleler, bildiriler",
    "National and international books, articles, publications on the topic of the thesis"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=597",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=597"
  },
  "CHZ 601E": {
   "code": "CHZ 601E",
   "name": "Surfaces&Interfa. in Flotation",
+  "nameEn": "Surfaces&Interfa. in Flotation",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2957,6 +6320,77 @@
    "Hafta 13 · Kabarcık-tane etkileşimlerinin hidrodinamiği ve kimyası",
    "Hafta 14 · Kabarcık-tane etkileşimlerinin AFM yardımı ile irdelenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "ESCA, FTIR tekniklerinin flotasyonda karşılaşılan yüzeylere uygulanması ve yorumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "AUGER, SEM/EDX tekniklerinin flotasyonda karşılaşılan yüzeylere uygulanması ve yorumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "RAMAN ve elipsometri gibi tekniklerin flotasyonda karşılaşılan yüzeylere uygulanması ve yorumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Atom ve moleküller arasındaki kuvvetler, termodinamik ilişkiler, kovalent ve kulombik kuvvetlerin analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Polar ve apolar moleküller ve yüzeyler, van der Waaals kuvvretleri, itme kuvvetleri, hidrojen bağı, hidrofobik ve hidrofilik kuvvetler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Taneler ve yüzeyler arasındaki kuvvetlerin analizi: ven dar Waals kuvvetleri ve elektrostatik kuvvetler",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Taneler ve yüzeyler arasındaki kuvvetlerin analizi: solvasyon, yapısal ve hidratasyon kuvvetleri, sterik kuvvetler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Taneler ve yüzeyler arasındaki kuvvetlerin analizi: DLVO ve non-DLVO kuvvetlerin analizi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Atomik Kuvvet Mikroskobu (AFM) ile yüzeylerin topografyasının belirlenmesi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "AFM ile taneler arası kuvvetlerin ölçümü ve yorumu",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "MD simülasyonu ile yüzeylerin ve moleküllerin tanımları ve flotasyona uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "MD simülasyonu ile mineral reaktif etkileşimlerinin yorumlanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Kabarcık-tane etkileşimlerinin hidrodinamiği ve kimyası",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Kabarcık-tane etkileşimlerinin AFM yardımı ile irdelenmesi"
+   }
+  ],
   "textbooks": [
    "Hunter, R.J., 1988. Zeta Potential in Colloid Science, Academic Press.",
    "Israelachvili, J., 2009. Intermolecular Surface Forces, Academic Press, Third edition",
@@ -2964,12 +6398,12 @@
    "Morris, V.J., Gunning, A.P., Kirby, A.R., 1999. The Atomic Force Microscope (AFM) for Biologists.",
    "Rao, S.R. and Leja, J., 2004. Surface Chemistry of Froth Flotation, Plenum Press, Second edition."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=601"
  },
  "CHZ 604": {
   "code": "CHZ 604",
   "name": "Aglomerasyon Teknolojileri",
+  "nameEn": "Agglomeration Technologies",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -3002,6 +6436,77 @@
    "Hafta 13 · Sinterleme makinaları, sinter tesislerinden örnekler",
    "Hafta 14 · Granülasyon, tanımı, oluşum mekanizmaları, örnekler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aglomerasyonun tanımı, sınıflandırılması ve uygulama alanları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Peletlemenin tanımı, pelet oluşum mekanizmaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bağlayıcı sistemleri, peletleme proses kademeleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Peletlenen malzemelerin özellikleri, peletlerde uygulanan testler, peletlerde aranan özellikler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Peletleme makinaları, pelet tesislerinden örnekler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Briketlemenin tanımı ve oluşum mekanizması,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Briket üretimi, briketlemede kullanılan bağlayıcılar, briketleme proses kademeleri, briketlenen malzemelerde aranan özellikler, briketlere uygulanan testler, briketlerde aranan özellikler",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Briketleme makinaları, briket tesislerinden örnekler",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sinterlemenin tanımı, sinter oluşum mekanizmaları,",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sinter teknolojisi (kesikli veya sürekli), sinterleme uygulama alanları,",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Sinterlenen malzemelerin özellikleri, sinterleme proses kademeleri, sinterlemede kullanılan katkı maddeleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Sinterlerde aranan özellikler, sinter karakterizasyonu",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Sinterleme makinaları, sinter tesislerinden örnekler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Granülasyon, tanımı, oluşum mekanizmaları, örnekler"
+   }
+  ],
   "textbooks": [
    "Pietsch, W., 2005. Agglomeration in Industry, Occurence and Applications, 1, Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim",
    "Sastry, K.V.S., 1977. Agglomeration. AIME Inc.; New York 1977.",
@@ -3009,12 +6514,12 @@
    "Kellerwessel, H., 1991. Aufbereitung disperser Feststoffe, Mineralische",
    "Rohstoffe- Sekundaer Rohstoffe-Abfaelle, VDI Verlag, Düsseldorf"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=604",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=604"
  },
  "CHZ 615E": {
   "code": "CHZ 615E",
   "name": "Cevher Hazırla.Müh.İleri Kon.",
+  "nameEn": "Advan.Top.in Min.Proc.Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -3046,16 +6551,87 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=615",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=615"
  },
  "CHZ 616": {
   "code": "CHZ 616",
   "name": "Mineral Esaslı Nanote.Hammad.",
+  "nameEn": "Mineral Based Nanotehnology Raw Materials",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -3088,6 +6664,78 @@
    "Hafta 13 · Nanokompozitler, nanobiyokompozitlerin hazırlanması ve uygulama örnekleri, öğrenci proje sunumları",
    "Hafta 14 · Nanoteknolojinin Gelecek Potansiyeli, Çevresel/Biyolojik Riskleri ve Nanofobi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nanoteknolojiye Giriş: Tanımı, Temel İlkelere Genel Bakış ve Tarihsel Gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nano Boyutta Tanelerin Üretim Yöntemleri (Top-down ve Bottom-up Yaklaşımları)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Nano boyutta tanelerin boyut ve morfoloji analiz yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Atomik Kuvvet Mikroskobu (AFM) çalışma ilkesi ve uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Karbon Nanoyapıları (Grafen, Karbon Nanotüpler/CNT), Yarı İletken ve Manyetik Nanopartiküller",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sentetik ve doğal tabakalı nano killerin özellikleri, üretimi ve karakterizasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Fiber yapılı nano killerin (Sepiyolit, Halloysit vb.) özellikleri, üretimi ve karakterizasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Organo-kil üretimi ve su bazlı kil/polimer kompozitlerinin hazırlanması ve karakterizasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Solvent bazlı kil/polimer kompozitlerinin üretimi, karakterizasyonu ve endüstriyel uygulamaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Endüstriyel Hammaddelerden Nanoparçacık Üretimi: Bor ve Bor Bazlı Nanomalzemeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Endüstriyel Hammaddelerden Nanoparçacık Üretimi: Silika ve Mineral Katkılı Nanokompozitler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Nanokompozitler, nanobiyokompozitlerin hazırlanması ve uygulama örnekleri, öğrenci proje sunumları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Nanokompozitler, nanobiyokompozitlerin hazırlanması ve uygulama örnekleri, öğrenci proje sunumları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Nanoteknolojinin Gelecek Potansiyeli, Çevresel/Biyolojik Riskleri ve Nanofobi",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "RAMSDEN, J. (2016). APPLIED NANOTECHNOLOGY: THE CONCEPTS AND APPLICATIONS OF NANOENGINEERING (2ND ED.). WILLIAM ANDREW",
    "MITTAL, V. (ED.). (2020). CHARACTERIZATION TECHNIQUES FOR POLYMER NANOCOMPOSITES. WILEY-VCH.",
@@ -3095,12 +6743,12 @@
    "OZIN, G.A. (2009). NANOCHEMISTRY: A CHEMICAL APPROACH TO NANOMATERIALS. GOBI E-BOOKS",
    "THEODORE, L., & KUNZ, R.G. (2005). NANOTECHNOLOGY: ENVIRONMENTAL IMPLICATIONS AND SOLUTIONS. WILEY-INTERSCIENCE."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=616",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=616"
  },
  "CHZ 696": {
   "code": "CHZ 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -3144,6 +6792,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -3156,12 +6875,12 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=696"
  },
  "CHZ 696E": {
   "code": "CHZ 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -3205,6 +6924,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -3217,12 +7007,12 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=696"
  },
  "CHZ 697": {
   "code": "CHZ 697",
   "name": "Uzmanlık Alan Dersi",
+  "nameEn": "Uzmanlık Alan Dersi",
   "language": "Türkçe",
   "credits": {
    "theory": 4,
@@ -3254,11 +7044,81 @@
    "Hafta 13 · Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
    "Hafta 14 · Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir."
+   }
+  ],
   "textbooks": [
    "Tez konusu kapsamındaki ulusal-uluslararası kitaplar, makaleler, bildiriler",
    "National and international books, articles, publications on the topic of the thesis"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=697",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHZ&dersNo=697"
  }
 }

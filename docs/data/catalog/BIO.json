@@ -2,6 +2,7 @@
  "BIO 101": {
   "code": "BIO 101",
   "name": "Genel Biology",
+  "nameEn": "General Biology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -37,15 +38,73 @@
    "Hafta 13 · Protein sentezi",
    "Hafta 14 · Mikrobiyal model olarak bakteri ve virüsler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Metabolizma"
+   },
+   {
+    "week": 2,
+    "topic": "Metabolizma"
+   },
+   {
+    "week": 3,
+    "topic": "Ökaryot hücre ve zarın yapısı ve işlevleri"
+   },
+   {
+    "week": 4,
+    "topic": "Ökaryot hücre ve zarın yapısı ve işlevleri"
+   },
+   {
+    "week": 5,
+    "topic": "Hücre solunumu ve fotosentez"
+   },
+   {
+    "week": 6,
+    "topic": "Hücre solunumu ve fotosentez"
+   },
+   {
+    "week": 7,
+    "topic": "Hücre haberleşmesi"
+   },
+   {
+    "week": 8,
+    "topic": "Hücre döngüsü, Mayoz ve Mitoz bölünme"
+   },
+   {
+    "week": 9,
+    "topic": "Hücre döngüsü, Mayoz ve Mitoz bölünme"
+   },
+   {
+    "week": 10,
+    "topic": "Hücre döngüsü, Mayoz ve Mitoz bölünme"
+   },
+   {
+    "week": 11,
+    "topic": "Kalıtımın kromozomal ve moleküler temeli"
+   },
+   {
+    "week": 12,
+    "topic": "Kalıtımın kromozomal ve moleküler temeli"
+   },
+   {
+    "week": 13,
+    "topic": "Protein sentezi"
+   },
+   {
+    "week": 14,
+    "topic": "Mikrobiyal model olarak bakteri ve virüsler"
+   }
+  ],
   "textbooks": [
    "Biology ; N. A. Campbell, J. B. Reece, L. A. Urry, M. L. Cain, S. A. Wasserman, P. V. Minorsky, R. B. Jackson; Pearson Education, Inc.; 2015"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=101"
  },
  "BIO 102": {
   "code": "BIO 102",
   "name": "Mühendislik Biyolojisi",
+  "nameEn": "Engineering Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -59,12 +118,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=102"
  },
  "BIO 102E": {
   "code": "BIO 102E",
   "name": "Mühendislik Biyolojisi",
+  "nameEn": "Engineering Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -78,12 +137,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=102"
  },
  "BIO 103E": {
   "code": "BIO 103E",
   "name": "Moleküler Biyoloyi ve Genetiğe Giriş ve Etik",
+  "nameEn": "Int.to Mol.Biol.&Genet.&Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -115,15 +174,87 @@
    "Hafta 13 · Hayvan çalışmalarında etik",
    "Hafta 14 · İnsan çalışmalarında etik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genlerden hücrelere",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Kök hücreler ve gelişim",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Epigenetik ve kromatin",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Enzimler, yeni enzimlerin keşfi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Proteinler, protein-protein etkileşimleri, kanser ve tedavisinde rolleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Mikrobiyal biyoteknoloji",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Biyoteknoloji uygulamaları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sentetik biyoloji",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Aşı biliminin temelleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Nörobiyoloji ve davranış",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Biyolojik sistemlerde genetik olarak kodlanmış göstergeler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Biyolojide hesaplamalı yöntemler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Hayvan çalışmalarında etik",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "İnsan çalışmalarında etik",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=103"
  },
  "BIO 105E": {
   "code": "BIO 105E",
   "name": "Genel Biyoloji I",
+  "nameEn": "General Biology I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -159,15 +290,87 @@
    "Hafta 13 · Protein sentezi",
    "Hafta 14 · Gen anlatımının regülasyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Metabolizma",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Metabolizma",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ökaryot hücre ve zarın yapısı ve işlevleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ökaryot hücre ve zarın yapısı ve işlevleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Hücre solunumu ve fotosentez",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Hücre solunumu ve fotosentez",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Hücre haberleşmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Hücre döngüsü, Mayoz ve Mitoz bölünme",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Hücre döngüsü, Mayoz ve Mitoz bölünme",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kalıtımın kromozomal ve moleküler temeli",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kalıtımın kromozomal ve moleküler temeli",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Kalıtımın kromozomal ve moleküler temeli",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Protein sentezi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Gen anlatımının regülasyonu",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Biology N. A. Campbell, J. B. Reece, L. A. Urry, M. L. Cain, S. A. Wasserman, P. V. Minorsky, R. B. Jackson; Pearson Education, Inc.; 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=105",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=105"
  },
  "BIO 106E": {
   "code": "BIO 106E",
   "name": "Genel Biyoloji II",
+  "nameEn": "General Biology II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -204,15 +407,87 @@
    "Hafta 13 · Hayvanlarda osmoregülasyon ve boşaltım sistemi",
    "Hafta 14 · Hayvanlarda hormonlar ve endokrin sistem"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Değişiklik taşıyan soylar, evrimin temel kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Populasyon genetiği, mikroevrim",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tür kavramı, türleşme, makroevrim",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bitki yapısı ve büyüme",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bitkilerde taşınım, bitkilerde beslenme",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Bitkilerde üreme",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Bitkilerde sinyal iletimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Hayvan yapı ve işlevinin temel ilkeleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Hayvan beslenmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Hayvanlarda dolaşım",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Hayvanlardaki gaz alışverişi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Hayvanlarda bağışıklık sistemi",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Hayvanlarda osmoregülasyon ve boşaltım sistemi",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Hayvanlarda hormonlar ve endokrin sistem",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Biology; N. A. Campbell, J. B. Reece, L. A. Urry, M. L. Cain, S. A. Wasserman, P. V. Minorsky, R. B. Jackson; 10th edition, Pearson Education, Inc.; 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=106",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=106"
  },
  "BIO 106EL": {
   "code": "BIO 106EL",
   "name": "Genel Biyoloji II",
+  "nameEn": "General Biology II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -249,15 +524,87 @@
    "Hafta 13 · Hayvanlarda osmoregülasyon ve boşaltım sistemi",
    "Hafta 14 · Hayvanlarda hormonlar ve endokrin sistem"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Değişiklik taşıyan soylar, evrimin temel kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Populasyon genetiği, mikroevrim",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tür kavramı, türleşme, makroevrim",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bitki yapısı ve büyüme",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bitkilerde taşınım, bitkilerde beslenme",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Bitkilerde üreme",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Bitkilerde sinyal iletimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Hayvan yapı ve işlevinin temel ilkeleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Hayvan beslenmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Hayvanlarda dolaşım",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Hayvanlardaki gaz alışverişi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Hayvanlarda bağışıklık sistemi",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Hayvanlarda osmoregülasyon ve boşaltım sistemi",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Hayvanlarda hormonlar ve endokrin sistem",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Biology; N. A. Campbell, J. B. Reece, L. A. Urry, M. L. Cain, S. A. Wasserman, P. V. Minorsky, R. B. Jackson; 10th edition, Pearson Education, Inc.; 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=106",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=106"
  },
  "BIO 111E": {
   "code": "BIO 111E",
   "name": "Genel Biyoloji I",
+  "nameEn": "General Biology I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -293,15 +640,87 @@
    "Hafta 13 · Protein sentezi",
    "Hafta 14 · Mikrobiyal model olarak bakteri ve virüsler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Metabolizma",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Metabolizma",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ökaryot hücre ve zarın yapısı ve işlevleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ökaryot hücre ve zarın yapısı ve işlevleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Hücre solunumu ve fotosentez",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Hücre solunumu ve fotosentez ARA SINAV",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Hücre haberleşmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Hücre döngüsü, Mayoz ve Mitoz bölünme",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Hücre döngüsü, Mayoz ve Mitoz bölünme",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Hücre döngüsü, Mayoz ve Mitoz bölünme",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kalıtımın kromozomal ve moleküler temeli",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Kalıtımın kromozomal ve moleküler temeli ARA SINAV",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Protein sentezi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Mikrobiyal model olarak bakteri ve virüsler",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "BIOLOGY, J.B. REECE , N.A. CAMPBELL, Benjamin Cummings; 6th Edition , 2001, 0805366245"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=111"
  },
  "BIO 207E": {
   "code": "BIO 207E",
   "name": "Hücre Biyolojisi",
+  "nameEn": "Cell Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -337,15 +756,87 @@
    "Hafta 13 · Ekstraselüler matriks",
    "Hafta 14 · Dokular ve kanser"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hücre, organelleri ve mikroskopiye giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Membran yapısı",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Membran taşınım süreçleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Protein ve vesiküler trafik",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mitokondri ve işlevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Salgılama ve endositik yolaklar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Reseptörler ve ligandları",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "G-protein ve enzim bağlantılı reseptörler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Mikrotübüller ve orta filamentler",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrofilamentler ve kasılma",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Hücre bölünmesi ve hücre döngüsü",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Programlı hücre ölümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Ekstraselüler matriks",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Dokular ve kanser",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "ALBERTS, ESSENTIAL CELL BIOLOGY 5.BASKI, 2019."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=207"
  },
  "BIO 207EL": {
   "code": "BIO 207EL",
   "name": "Hücre Biyolojisi",
+  "nameEn": "Cell Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -381,15 +872,87 @@
    "Hafta 13 · Ekstraselüler matriks",
    "Hafta 14 · Dokular ve kanser"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hücre, organelleri ve mikroskopiye giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Membran yapısı",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Membran taşınım süreçleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Protein ve vesiküler trafik",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mitokondri ve işlevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Salgılama ve endositik yolaklar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Reseptörler ve ligandları",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "G-protein ve enzim bağlantılı reseptörler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Mikrotübüller ve orta filamentler",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrofilamentler ve kasılma",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Hücre bölünmesi ve hücre döngüsü",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Programlı hücre ölümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Ekstraselüler matriks",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Dokular ve kanser",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "ALBERTS, ESSENTIAL CELL BIOLOGY 5.BASKI, 2019."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=207"
  },
  "BIO 210E": {
   "code": "BIO 210E",
   "name": "Biyologlar İçin Matematik",
+  "nameEn": "Mathematics for Biologists",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -422,15 +985,87 @@
    "Hafta 13 · Lineer Diferansiyel Denklem Sistemleri",
    "Hafta 14 · Lineer Diferansiyel Denklem Sistemleri Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Matrisler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Matris İşlemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer Denklemler ve Matrisler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Lineer Denklem Uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Vektör Uzayları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Özdeğerler ve Özvektörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Özdeğer ve Özvektör Kavramlarının Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Diferansiyel Denklemler - Genel Kavramlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Birinci Mertebeden Diferansiyel Denklemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Birinci Mertebeden Diferansiyel Denklem Uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yüksek Mertebeden Diferansiyel Denklemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Yüksek Mertebeden Diferansiyel Denklem Uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Lineer Diferansiyel Denklem Sistemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Lineer Diferansiyel Denklem Sistemleri Uygulamaları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Differential Equations & Linear Algebra (3rd Edition), C. H. Edwards, D. E. Penney, (2011) Pearson"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=210"
  },
  "BIO 211E": {
   "code": "BIO 211E",
   "name": "Hücre Biyolojisi",
+  "nameEn": "Cell Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -465,15 +1100,87 @@
    "Hafta 13 · Hücre bölünmesi ve hücre döngüsü",
    "Hafta 14 · Dokular ve kanser"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hücre ve organelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hücrelerin ortak ve farklı özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hücre biyolojisinde mikroskopi kullanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Enerji, kataliz ve biyosentez tepkimeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Protein yapısı ve fonksiyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Membran yapısı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "I.ARA SINAV",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Membran taşınım süreçleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Hücre içi kompartmanlar ve taşınım",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Hücre iletişimi ve sinyal iletim süreçleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Sitoskeleton ve bileşenleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "II.ARA SINAV",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Hücre bölünmesi ve hücre döngüsü",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Dokular ve kanser",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Essential Cell Biology, Alberts B., et al, Garland Publishers, 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=211"
  },
  "BIO 212E": {
   "code": "BIO 212E",
   "name": "Genetik",
+  "nameEn": "Genetics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -507,16 +1214,88 @@
    "Hafta 13 · Genetik problem çözme çalışmaları",
    "Hafta 14 · Makale tartışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genetiğe giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Genomiks, genomların haritalanması ve dizilenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mendel genetiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kalıtımın kromozomal temeli",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mendel genetiğinden sapmalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ökaryotik genomların haritalanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Bakteri ve bakteriyofajların genetiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Genetik çeşitlilik ve mutasyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kromozom yapısı ve sayısındaki çeşitlilik",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Gelişim genetiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Popülasyon genetiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Moleküler evrim",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Genetik problem çözme çalışmaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Makale tartışması",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "iGenetics: A Molecular Approach by Peter J. Russell, Pearson (3rd edition)",
    "Concepts of Genetics by Klug, Cummings, Spencer and Palladino, Pearson (12th Edition)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=212"
  },
  "BIO 214": {
   "code": "BIO 214",
   "name": "Mikrobiyoloji",
+  "nameEn": "Microbiology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -547,15 +1326,87 @@
    "Hafta 13 · Mikroorganizmaların korunma yöntemleri, dondurarak kurutma, kültür toplama, fermentasyon ve ilgili uygulamalar",
    "Hafta 14 · Fermentasyon uygulamalarının incelenmesi: Antibiyotik üretimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikroorganizmaların sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bakterilerin yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mantarların yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mikrobiyal büyüme ve morfoloji",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bakterilerin büyüme ortamları ve çoğalmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Aerobik bakterilerin kültür yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Anaerobik bakterilerin kültür yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ortamın mikroorganizmalara ve kültür koşullarına etkisi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bakterilerin genetiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Bakterilerin metabolizmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Sterilizasyon yöntemleri ve ilgili uygulamalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Dezenfeksiyon yöntemleri ve ilgili uygulamalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Mikroorganizmaların korunma yöntemleri, dondurarak kurutma, kültür toplama, fermentasyon ve ilgili uygulamalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Fermentasyon uygulamalarının incelenmesi: Antibiyotik üretimi",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Microbiology, Daniel Lim, Mc Graw-Hill Companies, 1998, 2"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=214"
  },
  "BIO 214E": {
   "code": "BIO 214E",
   "name": "Mikrobiyoloji",
+  "nameEn": "Microbiology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -586,15 +1437,87 @@
    "Hafta 13 · Mikroorganizmaların korunma yöntemleri, dondurarak kurutma, kültür toplama, fermentasyon ve ilgili uygulamalar",
    "Hafta 14 · Fermentasyon uygulamalarının incelenmesi: Antibiyotik üretimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikroorganizmaların sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bakterilerin yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mantarların yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mikrobiyal büyüme ve morfoloji",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bakterilerin büyüme ortamları ve çoğalmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Aerobik bakterilerin kültür yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Anaerobik bakterilerin kültür yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ortamın mikroorganizmalara ve kültür koşullarına etkisi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bakterilerin genetiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Bakterilerin metabolizmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Sterilizasyon yöntemleri ve ilgili uygulamalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Dezenfeksiyon yöntemleri ve ilgili uygulamalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Mikroorganizmaların korunma yöntemleri, dondurarak kurutma, kültür toplama, fermentasyon ve ilgili uygulamalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Fermentasyon uygulamalarının incelenmesi: Antibiyotik üretimi",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Microbiology, Daniel Lim, Mc Graw-Hill Companies, 1998, 2"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=214"
  },
  "BIO 215": {
   "code": "BIO 215",
   "name": "Biyokimya",
+  "nameEn": "Biochemistry",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -626,15 +1549,87 @@
    "Hafta 13 · Yağ asitlerinin oksidasyonu, keton cisimciklerinin oluşumu, yağ asitlerinin ve trigliseridlerin biyosentezi",
    "Hafta 14 · Amino asit metabolizması: proteinlerin sindirimi, amino asitlerin yıkımı ve üre çevrimi, amino asitlerin ve türevlerinin biyosentezi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyokimya ve biyoteknolojinin tanımı; biyoteknolojinin gelişimi, güncel genetik ve enzimatik araştırmalar hakkında bilgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hücre yapısı; su ve sulu çözeltilerin özellikleri; proteinler: proteinlerin görevleri, amino asitler ve bunların yapısı ve özellikleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Proteinlerin oluşumu, peptid bağı ve özellikleri, proteinlerin yükü ve izoelektrik noktalarının hesabı, proteinlerin çözünürlüğü",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Proteinlerin primer, sekonder ve tersiyer yapıları, Amino asit diziniminin belirlenmesi; enzimler, sınıflandırılması, aktivitelerine etki eden faktörler, enzimlerin denaturasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Karbonhidratlar: monosakkaritler, glikozidik bağ ve özellikleri, disakkaritler ve polisakkaritler (nişaşta, selüloz, glikojen) hakkında bilgi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Lipidler: tanımı, görevleri; genel yağ asitlerinin özellikleri, esansiyel ve omega-3 ve omega-6 yağ asitleri hakkında bilgi",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Trigliseridler, fosfolipidler, glikolipidler, mumlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Steroidler ve terpenler; Nükleik asitler: purin ve primidin bazları, nükleositler, nükleotidler, nükleik asitler, DNA ve RNA yapıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Metabolizma ve biyoenerjetikler, hücrelerin karbon ve enerji kaynakları, C ve N çevrimi, ATP, anabolizma ve katabolizma; metabolizmanın bütünlüğü ve metabolik koordinasyon; kontrol mekanizmaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Karbonhidrat metabolizması: karbonhidratların sindirimi, glukoz oksidasyonu: glikoliz; fermantasyon, laktik asit oluşumu, sitrik asit çevrimi, oksidatif fosforilasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Glukoz oksidasyonu: pentoz fosfat yolu; glukoz sentezi: glukoneogenez, fotosentez reaksiyonları, glikojen metabolizması",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Lipid metabolizması: yağların sindirimi, lipoproteinler",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Yağ asitlerinin oksidasyonu, keton cisimciklerinin oluşumu, yağ asitlerinin ve trigliseridlerin biyosentezi",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Amino asit metabolizması: proteinlerin sindirimi, amino asitlerin yıkımı ve üre çevrimi, amino asitlerin ve türevlerinin biyosentezi",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Lehninger Biyokimyanın İlkeleri, Çeviri Editörü: Prof.Dr. Necdet Kılıç, Palme Yayıncılık, 3. Baskı, 2005"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=215"
  },
  "BIO 215E": {
   "code": "BIO 215E",
   "name": "Biyokimya",
+  "nameEn": "Biochemistry",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -666,15 +1661,87 @@
    "Hafta 13 · Yağ asitlerinin oksidasyonu, keton cisimciklerinin oluşumu, yağ asitlerinin ve trigliseridlerin biyosentezi",
    "Hafta 14 · Amino asit metabolizması: proteinlerin sindirimi, amino asitlerin yıkımı ve üre çevrimi, amino asitlerin ve türevlerinin biyosentezi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyokimya ve biyoteknolojinin tanımı; biyoteknolojinin gelişimi, güncel genetik ve enzimatik araştırmalar hakkında bilgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hücre yapısı; su ve sulu çözeltilerin özellikleri; proteinler: proteinlerin görevleri, amino asitler ve bunların yapısı ve özellikleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Proteinlerin oluşumu, peptid bağı ve özellikleri, proteinlerin yükü ve izoelektrik noktalarının hesabı, proteinlerin çözünürlüğü",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Proteinlerin primer, sekonder ve tersiyer yapıları, Amino asit diziniminin belirlenmesi; enzimler, sınıflandırılması, aktivitelerine etki eden faktörler, enzimlerin denaturasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Karbonhidratlar: monosakkaritler, glikozidik bağ ve özellikleri, disakkaritler ve polisakkaritler (nişaşta, selüloz, glikojen) hakkında bilgi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Lipidler: tanımı, görevleri; genel yağ asitlerinin özellikleri, esansiyel ve omega-3 ve omega-6 yağ asitleri hakkında bilgi",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Trigliseridler, fosfolipidler, glikolipidler, mumlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Steroidler ve terpenler; Nükleik asitler: purin ve primidin bazları, nükleositler, nükleotidler, nükleik asitler, DNA ve RNA yapıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Metabolizma ve biyoenerjetikler, hücrelerin karbon ve enerji kaynakları, C ve N çevrimi, ATP, anabolizma ve katabolizma; metabolizmanın bütünlüğü ve metabolik koordinasyon; kontrol mekanizmaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Karbonhidrat metabolizması: karbonhidratların sindirimi, glukoz oksidasyonu: glikoliz; fermantasyon, laktik asit oluşumu, sitrik asit çevrimi, oksidatif fosforilasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Glukoz oksidasyonu: pentoz fosfat yolu; glukoz sentezi: glukoneogenez, fotosentez reaksiyonları, glikojen metabolizması",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Lipid metabolizması: yağların sindirimi, lipoproteinler",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Yağ asitlerinin oksidasyonu, keton cisimciklerinin oluşumu, yağ asitlerinin ve trigliseridlerin biyosentezi",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Amino asit metabolizması: proteinlerin sindirimi, amino asitlerin yıkımı ve üre çevrimi, amino asitlerin ve türevlerinin biyosentezi",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Lehninger Biyokimyanın İlkeleri, Çeviri Editörü: Prof.Dr. Necdet Kılıç, Palme Yayıncılık, 3. Baskı, 2005"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=215"
  },
  "BIO 216E": {
   "code": "BIO 216E",
   "name": "Mikrobiyoloji",
+  "nameEn": "Microbiology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -708,15 +1775,87 @@
    "Hafta 13 · Konak-mikroorganizma etkileşimleri",
    "Hafta 14 · Uygulamalı mikrobiyoloji"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikrobiyolojiye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrobiyolojinin kapsamı ve tarihçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mikroskopi ve boyama teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sterilizasyon ve dezenfeksiyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Prokaryotik ve ökaryotik hücrelerin özellikleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Mikrobiyal üreme ve mikrobiyal kültürler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Mikrobiyal üremeyi etkileyen faktörler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Mikrobiyal genetik I",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Mikrobiyal genetik II",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrobiyal genetik uygulamaları I",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Mikrobiyal genetik uygulamaları II",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Antimikrobiyal terapi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Konak-mikroorganizma etkileşimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalı mikrobiyoloji",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Brock Biology of Microorganisms, 15th Edition, 2019.Madigan, Bender, Buckley, Sattley and Stahl. Pearson Yayınevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=216",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=216"
  },
  "BIO 216EL": {
   "code": "BIO 216EL",
   "name": "Mikrobiyoloji",
+  "nameEn": "Microbiology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -750,15 +1889,87 @@
    "Hafta 13 · Konak-mikroorganizma etkileşimleri",
    "Hafta 14 · Uygulamalı mikrobiyoloji"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikrobiyolojiye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrobiyolojinin kapsamı ve tarihçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mikroskopi ve boyama teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sterilizasyon ve dezenfeksiyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Prokaryotik ve ökaryotik hücrelerin özellikleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Mikrobiyal üreme ve mikrobiyal kültürler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Mikrobiyal üremeyi etkileyen faktörler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Mikrobiyal genetik I",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Mikrobiyal genetik II",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrobiyal genetik uygulamaları I",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Mikrobiyal genetik uygulamaları II",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Antimikrobiyal terapi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Konak-mikroorganizma etkileşimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalı mikrobiyoloji",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Brock Biology of Microorganisms, 15th Edition, 2019.Madigan, Bender, Buckley, Sattley and Stahl. Pearson Yayınevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=216",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=216"
  },
  "BIO 221E": {
   "code": "BIO 221E",
   "name": "Ekoloji",
+  "nameEn": "Ecology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -791,15 +2002,87 @@
    "Hafta 13 · II.ARA SINAV",
    "Hafta 14 · Ekosistemler üzerindeki insan etkileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ekolojinin temel kavramlarına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ana kara ve deniz biyomları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hayatın fiziksel ve kimyasal ortamı",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Hayat evreleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Popülasyon parametreleri ve dinamikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "I.ARA SINAV",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Türlerin etkileşimi I",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Türlerin etkileşimi II",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Topluluklar: dengeler ve değişimler I",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Topluluklar: dengeler ve değişimler II",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Besin ağları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Ekosistemlerde enerji ve madde akışları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "II.ARA SINAV",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Ekosistemler üzerindeki insan etkileri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Ecology: Concepts and Applications, M.C. Molles, McGraw-Hill, 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=221",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=221"
  },
  "BIO 222E": {
   "code": "BIO 222E",
   "name": "Sistematik Biyoloji",
+  "nameEn": "Systematic Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -833,15 +2116,87 @@
    "Hafta 13 · Taksonomi ve diğer disiplinler arasındaki ilişki",
    "Hafta 14 · Taksonomi ve diğer disiplinler arasındaki ilişki"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Canlıların sınıflandırılmasına (taksonomi) giriş ve tarih",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Canlı çeşitliliği ve türler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Canlı çeşitliliği ve türler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Canlı çeşitliliği ve türler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Modern taksonomi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Modern taksonomi ARA SINAV",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Modern taksonomi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Modern taksonomi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Filogeni",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Filogeni",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Taksonomiye fenetik ve kladistik yaklaşımlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Taksonomiye fenetik ve kladistik yaklaşımlar ARA SINAV",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Taksonomi ve diğer disiplinler arasındaki ilişki",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Taksonomi ve diğer disiplinler arasındaki ilişki",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Phylogenetic Systematics, W. HENNIG, D.D. DAVIS, R. ZANGERL, U. of Illinois Press, 1999, 0252068149"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=222",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=222"
  },
  "BIO 224E": {
   "code": "BIO 224E",
   "name": "Moleküler Biyoloji",
+  "nameEn": "Molecular Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -875,16 +2230,88 @@
    "Hafta 13 · Labrotuarda moleküler biyoloji uygulamaları",
    "Hafta 14 · Hastalık tanımlamalarında moleküler biyoloji"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yaşamın kimyasal temeli ve moleküler evrim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Hücre fizyolojisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Membran biyolojisi ve pompalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Reseptörler ve taşıyıcı sistmler",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Taşıyıcı sistemler ve kargo proteinleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Enerji metabolizması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Sinyal iletimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "DNA ve RNA sentezi",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "mRNA sentezi ve U1RNP ailesi, Ribozomlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Koruyucular, katlanır kusurlar, kabarcıklı taşıma",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Moleküler biyolojinin endüstriyel uygulamaları-I",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Moleküler biyolojinin endüstriyel uygulamaları-II",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Labrotuarda moleküler biyoloji uygulamaları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Hastalık tanımlamalarında moleküler biyoloji",
+    "outcomes": "1-3"
+   }
+  ],
   "textbooks": [
    "Cell and Molecular Biology, Concept and Experiments, 2nd ed., Gerald Karp, John Wiley and Sons, 1999,",
    "Biochemistry, C.K. Mathews, K.E.van Holde, Benjamin/Cummings Pub. Comp., 1990,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=224",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=224"
  },
  "BIO 232E": {
   "code": "BIO 232E",
   "name": "Organic Chem. for Biologists",
+  "nameEn": "Organic Chem. for Biologists",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -920,15 +2347,87 @@
    "Hafta 13 · Makromoleküller",
    "Hafta 14 · Organik kimya ve biyokimyada kataliz"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Atomik ve moleküler orbitaller, hibritleşme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Moleküler geometri, konformasyon, stereokimya",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Alkan, alken, alkin yapıları",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Alkan, alken, alkin tepkimeleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 5,
+    "topic": "Alkan, alken, alkin tepkimeleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 6,
+    "topic": "Alkoller, eterler ve tepkimeleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 7,
+    "topic": "Aldehitler, ketonlar ve tepkimeleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 8,
+    "topic": "Aminler ve tepkimeleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 9,
+    "topic": "Karboksilik asitler ve tepkimeleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 10,
+    "topic": "Aromatik bileşikler ve tepkimeleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 11,
+    "topic": "Asit-baz tepkimeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Radikaller ve tepkimeleri",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 13,
+    "topic": "Makromoleküller",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Organik kimya ve biyokimyada kataliz",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Organic Chemistry Solomons & Fryhle, 12th Ed.,2016, J&Wiley"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=232"
  },
  "BIO 301E": {
   "code": "BIO 301E",
   "name": "Biyolojinin Temelleri",
+  "nameEn": "Fundamentals of Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -963,15 +2462,87 @@
    "Hafta 13 · Popülasyonların Evrimi",
    "Hafta 14 · Türlerin Kökeni"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyolojiye Giriş ve Yaşamın Kimyası",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyolojik Makromoleküllerin Yapı ve Fonksiyonları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Hücre",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Hücre Zar Yapısı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Metabolizmaya Giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Hücre Döngüsü",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Mayoz ve Seksüel Yaşam Döngüleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Mendel ve Gen Fikri",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Kalıtımın Kromozomal Temeli",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kalıtımın Moleküler Temeli",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Genden Proteine",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Türeyerek Üreme: Darwin’in Yaşam Fikri",
+    "outcomes": "1-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Popülasyonların Evrimi",
+    "outcomes": "1-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Türlerin Kökeni",
+    "outcomes": "1-6-7"
+   }
+  ],
   "textbooks": [
    "J.B. REECE , N.A. CAMPBELL, BIOLOGY, Benjamin Cummings; 9th Edition 2011, ISBN-10: 0321558235"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=301"
  },
  "BIO 302E": {
   "code": "BIO 302E",
   "name": "Biyoteknolojinin Temelleri",
+  "nameEn": "Fundamentals of Biotechnology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1004,15 +2575,87 @@
    "Hafta 13 · Biyoteknolojinin uygulamaları",
    "Hafta 14 · Biyoteknolojinin uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikrobiyel büyüme kinetiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrobiyal metabolizma",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Biyoreaktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Biyoreaktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Biyoreaktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Arasınav 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Rec DNA teknolojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Rec DNA teknolojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "RecDNA teknolojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Enzim teknolojisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Enzim teknolojisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Arasınav 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Biyoteknolojinin uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Biyoteknolojinin uygulamaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Introduction to Biotechnology, Thiemann, WJ, Palladino, MA, Benjamin Cummings, 2008, 0321491459"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=302"
  },
  "BIO 303": {
   "code": "BIO 303",
   "name": "Biyomalzemeler",
+  "nameEn": "Biomaterials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1046,15 +2689,87 @@
    "Hafta 13 · Biyomalzeme tasarımı",
    "Hafta 14 · Standartlar ve biyomalzemelerin geleceği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Biyomalzeme ve biyouyumluluk tanımları, Biyomalzemelerin sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyomalzemelerin kütle ve yüzey özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Polimerik biyomalzemeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Metalik ve seramik biyomalzemeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Doğal biyomalzemeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kompozit biyomalzemeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Doku-biyomalzeme etkileşimleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Biyomalzemelerin karakterizasyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Biyomalzemelerin uygulamaları ve kullanım alanları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Yapay organlar ve implantlar",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Akıllı jeller ve ilaç salım sistemleri",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Biyopolimerlerin parçalanması ve çevresel boyutlar",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Biyomalzeme tasarımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Standartlar ve biyomalzemelerin geleceği",
+    "outcomes": "1-3-6"
+   }
+  ],
   "textbooks": [
    "Buddy D. Ratner, Allan S. Hoffman, Frederick J. Schoen, Jack E. Lemons, Biomaterials Science: An Introduction to Materials in Medicine, 2nd Edition, 2004"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=303"
  },
  "BIO 311E": {
   "code": "BIO 311E",
   "name": "Biyokimya I",
+  "nameEn": "Biochemistry I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1087,15 +2802,87 @@
    "Hafta 13 · Biyomoleküllerin Saflaştırılması",
    "Hafta 14 · Biyomoleküllerin Saflaştırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyokimyaya Giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Hücreler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Amino Asitler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Peptitler ve Proteinler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Protein Yapısı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Protein Fonksiyonu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "I.ARA SINAV",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Enzimlere Giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Nükleik asitler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Karbohidratlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Lipitler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "II.ARA SINAV",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Biyomoleküllerin Saflaştırılması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Biyomoleküllerin Saflaştırılması",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Lehninger Biochemistry 3rd Edition, D.L. Nelson, M.M. Cox, Worth Publishers: New York , 2000,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=311"
  },
  "BIO 312E": {
   "code": "BIO 312E",
   "name": "Biyokimya II",
+  "nameEn": "Biochemistry II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1131,15 +2918,87 @@
    "Hafta 13 · Nükleik Asitlerin Degradasyonu ve Biyosentezi",
    "Hafta 14 · Metabolik Proseslerde Regulasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyolojik Zarlar ve Transport Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyoenerjetiğin Prensipleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Metabolizmaya Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Metabolizmanın Aydınlatılmasında Deneysel Yaklaşımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Glikoliz",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yağ asidi Oksidasyonu",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "I.ARA SINAV",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Amino Asit Oksidasyonu ve Krebs Döngüsü",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 9,
+    "topic": "Oksidatif Fosforilasyon ve Fotofosforilasyon",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 10,
+    "topic": "Karbohidrat Biyosentezi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Lipid Biyosentezi ve Amino asitlerin Biyosentezir",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "II.ARA SINAV",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleik Asitlerin Degradasyonu ve Biyosentezi",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 14,
+    "topic": "Metabolik Proseslerde Regulasyon",
+    "outcomes": "3-8"
+   }
+  ],
   "textbooks": [
    "Lehninger Biochemistry, D.L. Nelson, M.M., Cox, Worth Publishers, 2000,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=312"
  },
  "BIO 315E": {
   "code": "BIO 315E",
   "name": "Biyokimya I",
+  "nameEn": "Biochemistry I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1172,15 +3031,87 @@
    "Hafta 13 · Biyomoleküllerin Saflaştırılması",
    "Hafta 14 · Biyomoleküllerin Saflaştırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyokimyaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hücreler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Amino Asitler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Peptitler ve Proteinler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Protein Yapısı",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Protein Fonksiyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Protein Fonksiyonu: Hemoglobin Miyoglobin",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Enzimlere Giriş",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Enzim inhibisyon sistemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Nükleik asitler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Karbohidratlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Lipitler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Biyomoleküllerin Saflaştırılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Biyomoleküllerin Saflaştırılması",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Lehninger Biochemistry, , 3rd Edition, D.L. Nelson, M.M. Cox, Worth Publishers: New York 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=315"
  },
  "BIO 315EL": {
   "code": "BIO 315EL",
   "name": "Biyokimya I",
+  "nameEn": "Biochemistry I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1213,15 +3144,87 @@
    "Hafta 13 · Biyomoleküllerin Saflaştırılması",
    "Hafta 14 · Biyomoleküllerin Saflaştırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyokimyaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hücreler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Amino Asitler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Peptitler ve Proteinler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Protein Yapısı",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Protein Fonksiyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Protein Fonksiyonu: Hemoglobin Miyoglobin",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Enzimlere Giriş",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Enzim inhibisyon sistemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Nükleik asitler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Karbohidratlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Lipitler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Biyomoleküllerin Saflaştırılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Biyomoleküllerin Saflaştırılması",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Lehninger Biochemistry, , 3rd Edition, D.L. Nelson, M.M. Cox, Worth Publishers: New York 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=315"
  },
  "BIO 317E": {
   "code": "BIO 317E",
   "name": "Moleküler Genetik",
+  "nameEn": "Molecular Genetics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1255,16 +3258,88 @@
    "Hafta 13 · Genom düzenleme",
    "Hafta 14 · Epigenetik ve kanser"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gen ve genom",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Genomun İçeriği: Kümeler ve Tekrarlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mobil DNA elementleri ve retrovirüsler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kromozomlar ve kromatin",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Replikasyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Rekombinasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "DNA tamir mekanizmaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Prokaryotik transkripsiyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ökaryotik transkripsiyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "RNA’nın işlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Protein Translasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gen ekspresyonu regülasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Genom düzenleme",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Epigenetik ve kanser",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Molecular Biology of the Cell,7th Edition by Bruce Alberts",
    "Lewin’s Genes XI. Jocelyn Krebs, Stephen Kilpatrick, and Elliott Goldstein"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=317",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=317"
  },
  "BIO 317EL": {
   "code": "BIO 317EL",
   "name": "Moleküler Genetik",
+  "nameEn": "Molecular Genetics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1298,16 +3373,88 @@
    "Hafta 13 · Genom düzenleme",
    "Hafta 14 · Epigenetik ve kanser"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gen ve genom",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Genomun İçeriği: Kümeler ve Tekrarlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mobil DNA elementleri ve retrovirüsler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kromozomlar ve kromatin",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Replikasyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Rekombinasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "DNA tamir mekanizmaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Prokaryotik transkripsiyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ökaryotik transkripsiyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "RNA’nın işlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Protein Translasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gen ekspresyonu regülasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Genom düzenleme",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Epigenetik ve kanser",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Molecular Biology of the Cell,7th Edition by Bruce Alberts",
    "Lewin’s Genes XI. Jocelyn Krebs, Stephen Kilpatrick, and Elliott Goldstein"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=317",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=317"
  },
  "BIO 321E": {
   "code": "BIO 321E",
   "name": "Mikrobiyoloji",
+  "nameEn": "Microbiology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1343,15 +3490,87 @@
    "Hafta 13 · Konak-mikroorganizma ilişkileri",
    "Hafta 14 · Uygulamalı mikrobiyoloji"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikrobiyolojinin amaçları ve tarihçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikroskopik yöntemler ve boyama teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sterilizasyon ve dezenfeksiyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Prokaryotik ve ökaryotik hücrelerin özellikleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Mikroorganizmaların büyüme özellikleri ve mikrobiyel kültürler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Bakteri taksonomisi ve sınıflandırılmaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "I.ARA SINAV",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Virüslerin genel özellikleri, sınıflandırılmaları, viroidler, prionlar,virüs-kanser ilişkisi",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Mikrobiyel genetik",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrobiyel genetik uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Antimikrobiyel terapi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "II.ARA SINAV",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Konak-mikroorganizma ilişkileri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalı mikrobiyoloji",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Brock Biology of Microorganisms (12th Edition), Michael T. Madigan, John M. Martinko, Paul V. Dunlap, David , Benjamin Cummings Publ., 2008, 0132324601"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=321"
  },
  "BIO 322E": {
   "code": "BIO 322E",
   "name": "Fizyoloji",
+  "nameEn": "Physiology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1384,15 +3603,87 @@
    "Hafta 13 · Endokrin Fizyolojisi",
    "Hafta 14 · Üreme Fizyolojisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hücresel Fizyoloji",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kas Sistemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sinir Sistemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Nörofizyoloji",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Kardiovasküler Fizyoloji",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Solunum Fizyolojisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Solunum Fizyolojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Vücudun Savunma Mekanizması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Boşaltım Fizyolojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Asit-Baz Fizyolojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Gastro-intestinal Fizyoloji",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gastro-intestinal Fizyoloji",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Endokrin Fizyolojisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Üreme Fizyolojisi",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "COSTANZO L.S. , PHYSIOLOGY, ELSEVIER,2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=322",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=322"
  },
  "BIO 323E": {
   "code": "BIO 323E",
   "name": "Biyokimya I",
+  "nameEn": "Biochemistry I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1424,15 +3715,87 @@
    "Hafta 13 · Biyomoleküllerin Saflaştırılması",
    "Hafta 14 · Biyomoleküllerin Saflaştırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyokimyaya Giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Hücreler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Amino asitler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Peptidler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Proteinler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Protein Yapısı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "I. ARA SINAV",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Protein Fonksiyonu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Enzimlere Giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Nükleik Asitler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Karbohidratlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Lipitler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Biyomoleküllerin Saflaştırılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Biyomoleküllerin Saflaştırılması",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Principles of Biochemistry, D.L. Nelson, M.M. Cox, Worth Publishers: New York , 2000,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=323"
  },
  "BIO 324E": {
   "code": "BIO 324E",
   "name": "Biyokimya II",
+  "nameEn": "Biochemistry II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1468,15 +3831,87 @@
    "Hafta 13 · Nükleik asitlerin Degradasyonu ve Biyosentezi",
    "Hafta 14 · Metabolik Proseslerde Regulasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyolojik Zarlar ve Transport Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyoenerjetiğin Prensipleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Metabolizmaya Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Metabolizmanın Aydınlatılmasında Deneysel Yaklaşımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Glikoliz",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yağ Asidi Oksidasyonu",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "I. VİZE",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "Amino Asit Oksidasyonu ve Krebs Döngüsü",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 9,
+    "topic": "Oksidatif Fosforilasyon ve Fotofosforilasyon",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 10,
+    "topic": "Karbohidrat Biyosentezi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Lipit Biyosentezi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Amino asitlerin Biyosentezi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleik asitlerin Degradasyonu ve Biyosentezi",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 14,
+    "topic": "Metabolik Proseslerde Regulasyon",
+    "outcomes": "3-8"
+   }
+  ],
   "textbooks": [
    "Principles of Biochemistry, D.L. Nelson, M.M. Cox, Worth Publishers: New York , 2000,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=324",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=324"
  },
  "BIO 325E": {
   "code": "BIO 325E",
   "name": "Ekoloji",
+  "nameEn": "Ecology",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1510,15 +3945,87 @@
    "Hafta 13 · Ekosistemlerde enerji ve madde akışları",
    "Hafta 14 · Ekosistemler üzerindeki insan etkileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ekolojinin temel kavramlarına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ana kara ve deniz biyomları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hayatın fiziksel ve kimyasal ortamı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ekoloji ve Evrim",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Hayat evreleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Popülasyon parametreleri ve dinamikleri -1",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Popülasyon parametreleri ve dinamikleri -2",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Türlerin etkileşimi I",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Türlerin etkileşimi II",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Topluluklar: dengeler ve değişimler I",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Topluluklar: dengeler ve değişimler II",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Besin ağları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Ekosistemlerde enerji ve madde akışları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Ekosistemler üzerindeki insan etkileri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "“Ecology”, Cain, M., Bowman, W.D. (2nd, 3rd, 4th ed)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=325",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=325"
  },
  "BIO 326E": {
   "code": "BIO 326E",
   "name": "Mol. Evolution & Biodiversity",
+  "nameEn": "Mol. Evolution & Biodiversity",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1552,15 +4059,87 @@
    "Hafta 13 · Taksonomi ve diğer disiplinler arasındaki ilişki",
    "Hafta 14 · Taksonomi ve diğer disiplinler arasındaki ilişki"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Canlıların sınıflandırılmasına (taksonomi) giriş ve tarih",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Canlı çeşitliliği ve türler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Canlı çeşitliliği ve türler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Canlı çeşitliliği ve türler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Modern taksonomi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Modern taksonomi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Modern taksonomi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Modern taksonomi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Filogeni",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Filogeni",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Taksonomiye fenetik ve kladistik yaklaşımlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Taksonomiye fenetik ve kladistik yaklaşımlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Taksonomi ve diğer disiplinler arasındaki ilişki",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Taksonomi ve diğer disiplinler arasındaki ilişki",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "W. HENNIG, D.D. DAVIS, R. ZANGERL, Phylogenetic Systematics, U. of Illinois Press, 1999, ISBN-10: 0252068149"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=326",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=326"
  },
  "BIO 328E": {
   "code": "BIO 328E",
   "name": "Biyokimya II",
+  "nameEn": "Biochemistry II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1596,15 +4175,87 @@
    "Hafta 13 · Nükleik Asitlerin Metabolizması",
    "Hafta 14 · Metabolik Proseslerde Regulasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyolojik Zarlar ve Transport Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyoenerjinin Prensipleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Metabolizmaya Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Metabolizmanın Aydınlatılmasında Deneysel Yaklaşımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Glikoliz",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Yağ asidi Oksidasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Amino Asit Oksidasyonu",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Krebs Döngüsü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Oksidatif Fosforilasyon ve Fotofosforilasyon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Karbohidrat Biyosentezi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Lipid Biyosentezi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Amino asitlerin Biyosentezi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleik Asitlerin Metabolizması",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Metabolik Proseslerde Regulasyon",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "LEHNINGER BIOCHEMISTRY, , 7TH EDITION; D.L. Nelson, M.M. Cox, MCMILLAN LEARNING"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=328",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=328"
  },
  "BIO 328EL": {
   "code": "BIO 328EL",
   "name": "Biyokimya II",
+  "nameEn": "Biochemistry II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1640,15 +4291,87 @@
    "Hafta 13 · Nükleik Asitlerin Metabolizması",
    "Hafta 14 · Metabolik Proseslerde Regulasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyolojik Zarlar ve Transport Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyoenerjinin Prensipleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Metabolizmaya Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Metabolizmanın Aydınlatılmasında Deneysel Yaklaşımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Glikoliz",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Yağ asidi Oksidasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Amino Asit Oksidasyonu",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Krebs Döngüsü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Oksidatif Fosforilasyon ve Fotofosforilasyon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Karbohidrat Biyosentezi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Lipid Biyosentezi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Amino asitlerin Biyosentezi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleik Asitlerin Metabolizması",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Metabolik Proseslerde Regulasyon",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "LEHNINGER BIOCHEMISTRY, , 7TH EDITION; D.L. Nelson, M.M. Cox, MCMILLAN LEARNING"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=328",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=328"
  },
  "BIO 331E": {
   "code": "BIO 331E",
   "name": "Moleküler Genetik",
+  "nameEn": "Molecular Genetics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1682,15 +4405,87 @@
    "Hafta 13 · İnsan genomunda epigenetik modifikasyonlar",
    "Hafta 14 · Kanserin moleküler genetiği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Moleküler Genetiğe giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bakteri genetiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Virüs genetiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mobil DNA elementleri ve mekanizmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "DNA Tamir mekanizmaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Moleküler Rekombinasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "1.Arasınav",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "DNA replikasyon mekanizmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "RNA Transkripsyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Protein Translasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gen ekspresyonu regülasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "2.Arasınav",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "İnsan genomunda epigenetik modifikasyonlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Kanserin moleküler genetiği",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "GENETICS, ANALYSIS OF GENES AND GENOMES, 6.BASKI, HARTL DL VE JONES EW., , , 2005, ISBN 0-7637-1"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=331",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=331"
  },
  "BIO 332E": {
   "code": "BIO 332E",
   "name": "Biyolojide Modern Teknikler",
+  "nameEn": "Modern Techniques in Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1722,15 +4517,87 @@
    "Hafta 13 · Moleküler Metodlarda Güncel Konular (Microarray, Fluidics, NGSeq)",
    "Hafta 14 · Moleküler Metodlarda Güncel Konular (Raman and LaserDissection Microscopy etc)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırmanın temel prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Örnekleme Metodları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Laboratuvar Çalışma Kuralları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Temel Teknikler: Mikroskopi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Temel Teknikler: Kültür Teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Temel Teknikler: Kromatografik ve Spektroskopik Teknikler",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Temel Teknikler: Santrifüj ve Filtrasyon Teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Nükleik Asit Teknikleri (DNA/RNA) İzolasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Polimeraz Zincir Reaksiyonu ve Çeşitleri (Q-RTPCR vb)",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Elektroforez Teknikleri (Agarose, Acrylamide, 2D, DGGE, SSCP vb)",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Klonlama",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Dizi Analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Moleküler Metodlarda Güncel Konular (Microarray, Fluidics, NGSeq)",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Moleküler Metodlarda Güncel Konular (Raman and LaserDissection Microscopy etc)",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Molecular Biomethods Handbook, Ralph Rapley, John M. Walker, Humana Press, 2008,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=332",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=332"
  },
  "BIO 341E": {
   "code": "BIO 341E",
   "name": "Genel Biyoteknoloji",
+  "nameEn": "General Biotechnology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1766,15 +4633,87 @@
    "Hafta 13 · Adli tıpta biyoteknoloji",
    "Hafta 14 · Biyoteknolojide regülasyonlar ve biyoetik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyoteknolojinin temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Recombinant DNA teknolojisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Laboratuvar teknikleri ve rekombinant DNA teknolojisi uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Omiks bilimleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Biyoinformatik araçlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Proteinler ve protein mühendisliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Protein üretimi ve proteomiks",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Mikrobiyal biyoteknoloji",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Bitki biyoteknolojisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Hayvan biyoteknolojisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Medikal biyoteknoloji",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Biyoremediyasyon",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Adli tıpta biyoteknoloji",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Biyoteknolojide regülasyonlar ve biyoetik",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "W. J. Thieman Ve M. A. Palladino, Introduction To Biotechnology, Benjamin Cummings; 2019 (Global edition – 4th edition)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=341",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=341"
  },
  "BIO 342E": {
   "code": "BIO 342E",
   "name": "Enzimoloji",
+  "nameEn": "Enzymology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1810,15 +4749,87 @@
    "Hafta 13 · Ödev sunumları ve tartışmalar",
    "Hafta 14 · Ödev sunumları ve tartışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enzimlerin yapısı, sentezi ve özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enzimlerin yapısı, sentezi ve özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Enzimlerin yapısı, sentezi ve özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Enzimin saflaştırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Enzim aktivitesinin özgüllüğü",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Enzimolojinin klinik önemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Enzim kinetiği ve inhibasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Enzim kinetiği ve inhibasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Enzim kinetiği ve inhibasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Enzim kataliz mekanizmaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Tutuklanmış enzimler ve enzimlerin endüstriyel uygulamaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Tutuklanmış enzimler ve enzimlerin endüstriyel uygulamaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev sunumları ve tartışmalar",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Ödev sunumları ve tartışmalar",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "FUNDAMENTALS OF ENZYMOLOGY, N.C. PRICE AND L. STEVENS, Oxford Science Publications , 1989, 0198552963"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=342"
  },
  "BIO 351E": {
   "code": "BIO 351E",
   "name": "Biyofizik",
+  "nameEn": "Biophysics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1851,15 +4862,87 @@
    "Hafta 13 · Nöronların ve nöronal sinyal iletiminin fiziksel modeller ile açıklanması I",
    "Hafta 14 · Nöronların ve nöronal sinyal iletiminin fiziksel modeller ile açıklanması II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyofiziksel araştırmaların ne olduğunu ve ne amaclar güdülerek yapıldığının, bu konuyla ilgili basit örnekler verilerek açıklanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kleiber kanununun açıklanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Moleküler biyofizik hakkındaki temel bilgilerin verilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Protein ve nükleik asit yapılarının incelenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Polimer fiziği yasalarının biomoleküllerin fiziksel özelliklerinin anlaşılmasındaki öneminin tartışılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "DNA ve protein elektroforezinin fiziksel temellerinin anlatılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "NMR tekniklerinin biyomoleküllerin yapı ve dinamik analizlerindeki kullanım şekilleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "X ışınları kristalleştirme tekniklerinin biyomoleküllerin yapı ve dinamik analizlerindeki kullanım şekilleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Biyolojik hareketin bakteriyel sistemler örnek verilerek anlatılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Biyolojik sistemlerin elektromagnetizm ile ilişkilendirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Görmenin fiziksel temellerinin anlatılması",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Rhodopsin ve nöronel sinyal iletimi hakkında bilgilendirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Nöronların ve nöronal sinyal iletiminin fiziksel modeller ile açıklanması I",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Nöronların ve nöronal sinyal iletiminin fiziksel modeller ile açıklanması II",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Principles of Physical Biochemistry , Van Holde, K. E. / Johnson, W. C. / Ho, P. S., , 1998"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=351"
  },
  "BIO 411E": {
   "code": "BIO 411E",
   "name": "Moleküler Biyoloji",
+  "nameEn": "Molecular Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -1892,16 +4975,88 @@
    "Hafta 13 · a-Hücre döngüsü b-Hücre döngüsünün kontrolü c-Kanser: Apoptoz ve hücre yaşamı",
    "Hafta 14 · a-Hücreler arası ortam b-Fertilizasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "a- DNAdan RNA, DNA ve RNA yapılarının incelenmesi b- RNAdan protein üretilmesi, prokaryot ve ökaryotlardaki ribozom yapılarının incelenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Protein katlanması, moleküler şaperonlar, gen ekspresyonun kontrolü, DNAya bağlanan gen regülator protein motifleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bakteriyel ve ökaryotik gen seviyesindeki genetik kontrol sisteminin nasıl çalıştığı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Özelleşmiş hücrelerin nasıl oluştuğu",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Posttranskripsiyonel modifikasyonlar ve bunların gen ekspresyonun kontrolündeki rolü",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Hücre zarı yapısı, iyon kanalları ve örnekleri, zarladan moleküllerin taşınması ve 1. vize",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Hücrelerde proteinlerin mitokondriler ve kloraplastlara olan taşınması, peroksizomlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "a- ER, SRP sistemleri b- Hücre içi vesiküler trafik",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Hücreler arası komünikasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Hücreler arası komünikasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Cytoskeleton ve 2. vize",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Miyozin süper ailesi, aktin ve yapısı, hücre hareketi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "a-Hücre döngüsü b-Hücre döngüsünün kontrolü c-Kanser: Apoptoz ve hücre yaşamı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "a-Hücreler arası ortam b-Fertilizasyon",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Molecular Bıology of the Cell , Bruce Alberts, Alexander Johnson, Julian Lewis, Martin Raff,, , 2007,",
    "Molecular Cell Bıology , Harvey F. Lodish, David Baltimore, Arnold Berk, S. Lawrence , , 2007,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=411"
  },
  "BIO 412E": {
   "code": "BIO 412E",
   "name": "Rekombinant DNA Teknolojisi",
+  "nameEn": "Recombinant DNA Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1937,15 +5092,87 @@
    "Hafta 13 · Bitki hücrelerine gen transfer teknikleri ve dönem önem ödevi sunumu",
    "Hafta 14 · Hayvan hücrelerine gen transfer teknikleri ve dönem ödevi sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders planının verilmesi ve derse genel giriş",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan Temel Teknikler: Agaroz jel elektroforez teknikleri, RNA, DNA ve protein blotlama ve Nükleik asit hibridizasyon teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kullanılan Temel Teknikler: Polimeraz zincir reaksiyonı ve çeşitli uygualamaları, Transformasyon teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "DNA kesim ve birleştirme teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Klonlama vektörleri: Plazmid vektörleri, Faj vektörleri, Tek- zincir DNA vektörleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Fajmitler, cozmitler ve özel amaçlı vektörler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Rekombinant proteinlerin fazlaca üretilmesi: ekspresyon vektörleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Klonlama stratejileri: gen kütüphanesi kurulması ve tarama teknikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Klonlama stratejileri: cDNA klonlama teknikleri, Kromozom üzerinde yürüme ve atlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Klonlama stratejileri: ekspresyon ve diferansiyel klonlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "DNA dizileme teknikleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Güncel mutasyon teknikleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Bitki hücrelerine gen transfer teknikleri ve dönem önem ödevi sunumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Hayvan hücrelerine gen transfer teknikleri ve dönem ödevi sunumu",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Brock Biology of Microorganisms, 15th Edition, 2019.Madigan, Bender, Buckley, Sattley and Stahl. Pearson Yayınevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=412",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=412"
  },
  "BIO 415E": {
   "code": "BIO 415E",
   "name": "Moleküler Biyoloji",
+  "nameEn": "Molecular Biology",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -1959,12 +5186,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=415",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=415"
  },
  "BIO 415EL": {
   "code": "BIO 415EL",
   "name": "Moleküler Biyoloji",
+  "nameEn": "Molecular Biology",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -1978,12 +5205,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=415",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=415"
  },
  "BIO 417E": {
   "code": "BIO 417E",
   "name": "Moleküler Biyoloji",
+  "nameEn": "Molecular Biology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2016,15 +5243,87 @@
    "Hafta 13 · CRISPR",
    "Hafta 14 · Zarsız Organeller"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Membran Trafiği (Proteinlerin Hücre Zarı ve Organellerine Taşınması, Veziküler Trafik vb.)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Endositoz- Eksositoz",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Nükleer Transport ve Nükleer Zarf",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Membran Yapısı ve Taşıma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Hücre İletişimi, Hücre Sinyali İletimi Yolakları",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Gen İfadesini Düzenleyen Sinyal Yolakları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Hücre İskeleti",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Hücre Döngüsü",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Hücre Bağlantıları, Hücre Matriks Etkileşimi, Ekstraselüler Matriks",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Programlı Hücre Ölümü, Apoptoz",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kanser",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kök Hücreler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "CRISPR",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Zarsız Organeller",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Molecular Biology of the Cell (by Bruce Alberts, Alexander Johnson, Julian Lewis, Martin Raff, Keith Roberts, Peter Walter)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=417",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=417"
  },
  "BIO 432E": {
   "code": "BIO 432E",
   "name": "Mikrobial Fizyoloji",
+  "nameEn": "Microbial Physiology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2056,15 +5355,87 @@
    "Hafta 13 · Moleküler Mikrobiyal Ekoloji ve Uygulama Sahaları",
    "Hafta 14 · Moleküler Mikrobiyal Ekoloji ve Uygulama Sahaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Mikrobiyolojiye Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Mikrobiyolojiye Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Temel Mikrobiyolojiye Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Başlıca Mikroorganizma Grupları Hakkında Bilgilendirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sınıflandırma",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Doğadaki Mikroorganizmalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Doğadaki Mikroorganizmalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Mikroorganizmaların Biyojeokimyasal döngülerdeki rolü ve önemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Moleküler Mikrobiyal Ekoloji ve Uygulama Sahaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Moleküler Mikrobiyal Ekoloji ve Uygulama Sahaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Moleküler Mikrobiyal Ekoloji ve Uygulama Sahaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Moleküler Mikrobiyal Ekoloji ve Uygulama Sahaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Moleküler Mikrobiyal Ekoloji ve Uygulama Sahaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Moleküler Mikrobiyal Ekoloji ve Uygulama Sahaları",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "BROCK MICROBIOLOGY, Madigan, Martinko and Parker, Prentice Hall , 2008,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=432"
  },
  "BIO 441E": {
   "code": "BIO 441E",
   "name": "Biyolojik Sistemler Modelleme",
+  "nameEn": "Modelling in Biological System",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2100,15 +5471,87 @@
    "Hafta 13 · Moleküler mekanik yöntemleri",
    "Hafta 14 · QM/MM yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Potansiyel enerji yüzeyi, z-matrix, enerji minimizasyon algoritmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kuantum mekaniğinin temelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Atomik ve moleküler orbitaller, moleküler hamiltonian, Slater determinantı",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Hückel ve diğer yarı deneysel yöntemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Hartree-Fock yöntemi, basis set",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Post-HF ab initio yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "DFT yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Termodinamik fonksiyonlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Çözücü etkisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgisayar ortamında kuantum yöntemleri uygulamalarına giriş",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulamalı olarak yöntem, basis set ve çözücü etkisinin hesaplamalara etkisinin incelenmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Tepkime ve aktivasyon enerjilerinin hesaplanması, tepkime mekanizması tespiti uygulamaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Moleküler mekanik yöntemleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "QM/MM yöntemleri",
+    "outcomes": "4-5-8"
+   }
+  ],
   "textbooks": [
    "Molecular Modelling: Principles and Applications, A. R. Leach, Prentice Hall, 2001,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=441",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=441"
  },
  "BIO 442E": {
   "code": "BIO 442E",
   "name": "Moleküler İmmünoloji",
+  "nameEn": "Molecular Immunology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2141,15 +5584,87 @@
    "Hafta 13 · Aşılar",
    "Hafta 14 · Mucosal Immunity"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Immün Sisteme Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İmmün Sistemin Organları ve Hücreleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğal Bağışıklık",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Antijen tanıma- T ve B hücre reseptörleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İmmünoglobülin Gen Düzenlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ana doku uyumluluk kompleksi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "İmmün sistem reseptörlerinden sinyal uyarımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Antijenlerin İşlenmesi ve T hücrelerine Sunumu",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Edinsel Bağışıklık sistemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Edinsel Bağışıklık sistemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "İmmün tolerans",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Aşırı Duyarlılık Reaksiyonları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Aşılar",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Mucosal Immunity",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "ABBAS A.K., LICHTMAN A.H.H., CELLULAR AND MOLECULAR IMMUNOLOGY, ELSEVIER"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=442",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=442"
  },
  "BIO 451E": {
   "code": "BIO 451E",
   "name": "Endüstriyel Mikrobiyoloji",
+  "nameEn": "Industrial Microbiology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2183,16 +5698,88 @@
    "Hafta 13 · Antibiyotiklerin keşfi ve endüstriyel üretimi",
    "Hafta 14 · Mikroorganizmaların çevresel rolleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstriyel mikrobiyolojinin tarihçesi ve kapsamı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrobiyal metabolizma",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Endüstriyel öneme sahip mikroorganizmalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Fermentasyon teknolojileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Biyoreaktörler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Alkol bazlı ürünlerin fermentasyon ile üretimi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Fermente gıdaların endüstriyel üretimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Tek hücre proteinlerinin endüstriyel üretimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Mikrobiyal enzimlerin endüstriyel üretimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Kimyasal ürünlerin biyotransformasyon ile eldesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Amino asitlerin ve vitaminlerin endüstriyel üretimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Aşıların geliştirilmesi ve endüstriyel üretimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Antibiyotiklerin keşfi ve endüstriyel üretimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Mikroorganizmaların çevresel rolleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "D.B. Wilson, H. Sahm, K.P. Stahmann, M. Koffas, Industrial Microbiology, Wiley, 2020",
    "P. Verma, Industrial Microbiology and Biotechnology, Springer, 2022"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=451",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=451"
  },
  "BIO 452E": {
   "code": "BIO 452E",
   "name": "Viroloji",
+  "nameEn": "Virology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2225,17 +5812,89 @@
    "Hafta 13 · Viral virülens",
    "Hafta 14 · Aşılar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Virüsler ve virolojiye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Virüslerin yapısı, morfolojisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Virüslerin sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Virüs genetiği (I)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Virüs genetiği (II)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Yeni çıkan virüsler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Virüslerin moleküler biyolojisi (I)",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Virüslerin moleküler biyolojisi (II)",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Virüslerin moleküler biyolojisi (III)",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Virüs konak hücre ilişkisi: Giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Virüs-konak hücre ilişkisi: Virüs ekfeksiyon siklusları, Virüslerin hastalık yapıcı özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Virüs-konak hücre ilişkisi: viruslere karşı bağışıklık siteminin aktivasyonu, viruslere karşı tedavi yöntemleri (antiviraller ve aşılar)",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Viral virülens",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Aşılar",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Virology: Principles and Applications, John Carter, John Wiley, High Education, 2007,",
    "Viruses: Biology, applications, control” by David R Harper, Garland Science",
    "Principles of Molecular Virology” Alan J Cann, Elsevier"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=452",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=452"
  },
  "BIO 462E": {
   "code": "BIO 462E",
   "name": "Protein Yapı-İşlev İlişkileri",
+  "nameEn": "Prot. Struct.-Function Relat.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2268,16 +5927,88 @@
    "Hafta 13 · Protein çalışmalarında kullanılan farklı kütle spektrometresi yöntemlerinin anlatılması",
    "Hafta 14 · Protein katlanması ile ilgili yeni yöntemler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Potein yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Protein katlanma sorunu nedir",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Katlanma mekanizmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Katlanma mekanizmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Protein katlanamaması ve buna bağlı oluşan hastalıklar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Protein katlanamaması ve buna bağlı oluşan hastalıklar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Protein katlanması ve dinamiklerinin sirküler dikroizm ile çalışılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Protein katlanması ve dinamiklerinin farklı fluoresan teknikleriyle çalışılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Protein yapı analizlerinin kristalleştirme sonucu X-ışınları ile incelenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Protein yapı analizlerinin sıvı içersinde NMR ile yapılması ve bu yöntem ile protein dinamik analiz metodlarının da gösterilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Protein yapı analizlerinin sıvı içersinde NMR ile yapılması ve bu yöntem ile protein dinamik analiz metodlarının da gösterilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Protein çalışmalarında kullanılan farklı kütle spektrometresi yöntemlerinin anlatılması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Protein çalışmalarında kullanılan farklı kütle spektrometresi yöntemlerinin anlatılması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Protein katlanması ile ilgili yeni yöntemler",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Introduction to Protein Structure , Branden & Tooze, , 2009,",
    "Structure and Mechanism in Protein Science , Alan Fersht, , 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=462",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=462"
  },
  "BIO 463E": {
   "code": "BIO 463E",
   "name": "Moleküler Nörobiyoloji",
+  "nameEn": "Molecular Neurobiology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2316,16 +6047,88 @@
    "Hafta 13 · Hücre ölümü ve nörotrofik faktörler",
    "Hafta 14 · Kök hücreler ve yetişkinlerde nörogenez"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nörobiyolojiye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Merkezi, periferik ve otonom sinir sistemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Nörofizyoloji ve sinir fonksiyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nöronun elektriksel özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sinaptik iletim ve nörotransmiterler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Duyusal işleme ve motor fonksiyon",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Biliş, öğrenme ve hafıza",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Davranışın nörobiyolojisi",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Nörodejeneratif ve psikiyatrik bozukluklar, nörofarmakoloji",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Nöral indüksiyon ve beyin bölgelerinin oluşumu",
+    "outcomes": "9"
+   },
+   {
+    "week": 11,
+    "topic": "Nörogenez, nöral indüksiyon",
+    "outcomes": "9-10"
+   },
+   {
+    "week": 12,
+    "topic": "Akson yönlendirmesi ve sinaps oluşumu",
+    "outcomes": "10"
+   },
+   {
+    "week": 13,
+    "topic": "Hücre ölümü ve nörotrofik faktörler",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "Kök hücreler ve yetişkinlerde nörogenez",
+    "outcomes": "11"
+   }
+  ],
   "textbooks": [
    "ERIC R. KANDEL, PRINCIPLES OF NEURAL SCIENCE, 6. BASKI, 2021",
    "DAN H. SANES, DEVELOPMENT OF THE NERVOUS SYSTEM, 4. BASKI, 2019."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=463",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=463"
  },
  "BIO 466E": {
   "code": "BIO 466E",
   "name": "Gelişim Biyolojisi",
+  "nameEn": "Developmental Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2362,15 +6165,87 @@
    "Hafta 13 · Genom düzenleme ve gelişim",
    "Hafta 14 · Kök hücreler, tıbbi uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gen ekspresyonunun gelişimsel kontrolü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sinyal ileti mekanizmaları, hücre yazgısı ve determinasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Zigotun gelişimi-döllenme ve bölünme",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Gastrülasyon",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Embriyonik indüksiyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Nörülasyon",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 7,
+    "topic": "Merkezi sinir siteminin gelişimi",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Nöral krest, akson yönlenme mekanizmaları ve sinapsların oluşumu",
+    "outcomes": "7-9"
+   },
+   {
+    "week": 9,
+    "topic": "Moleküler evrim",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Somit gelişimi, kas ve kemik oluşumu",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 11,
+    "topic": "Uzuvların gelişimi",
+    "outcomes": "9"
+   },
+   {
+    "week": 12,
+    "topic": "Kalp ve böbrek gelişimi",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Genom düzenleme ve gelişim",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Kök hücreler, tıbbi uygulamaları",
+    "outcomes": "2"
+   }
+  ],
   "textbooks": [
    "GILBERT SF, DEVELOPMENTAL BIOLOGY 12.BASKI, 2019."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=466",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=466"
  },
  "BIO 468E": {
   "code": "BIO 468E",
   "name": "Ekolojide Güncel Konular",
+  "nameEn": "Current Topics in Ecology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2403,15 +6278,87 @@
    "Hafta 13 · Güncel ve geleceğe yönelik ekolojik sorunlar ve araştırma alanları hakkında tartışma",
    "Hafta 14 · Güncel ve geleceğe yönelik ekolojik sorunlar ve araştırma alanları hakkında tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ekolojide güncel araştırma alanlarına genel giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yaş ve evre tabanlı popülasyon dinamiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Popülasyon genetiği ve ekolojik açıdan önemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Peyzajlarda uzaysal-zamansal örüntü dinamiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Biyoçeşitlilik ve ekosistem yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Biyoçeşitlilik ve ekosistem yapısı ve kararlılığıyla ilgili sorunlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Kuvaterner paleoekolojiye giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Küresel iklim değişikliği ve etkileri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kuvaterner paleoekolojinin küresel iklim değişimi etkilerinin öngörülmesindeki rolü",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Uzun Vadeli Ekoloji Araştırma Sitleri (LTER): Genel bilgi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Uzun Vadeli Ekoloji Araştırma Sitleri (LTER): Uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Biosphere 2 deneyi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Güncel ve geleceğe yönelik ekolojik sorunlar ve araştırma alanları hakkında tartışma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Güncel ve geleceğe yönelik ekolojik sorunlar ve araştırma alanları hakkında tartışma",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Ecology: Concepts and Applications, Manuel C. Molles, Jr., McGraw-Hill , , 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=468",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=468"
  },
  "BIO 471E": {
   "code": "BIO 471E",
   "name": "Protein Biyoteknolojisi",
+  "nameEn": "Protein Biotechnology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2444,15 +6391,87 @@
    "Hafta 13 · Diğer endüstriyel enzimler",
    "Hafta 14 · Katalitik olmayan endüstriyel proteinler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve protein yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Protein kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Protein saflaştırma ve karakterizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Protein saflaştırma büyük ölçek",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Terapötik proteinler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Kan ürünleri ve aşılar",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Terapötik antikorlar ve enzimler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Terapötik hormonlar, büyüme faktörleri, interferonlar, interlökinler, regülatör faktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Analitik amaçlı proteinler",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Endüstriyel enzimler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Endüstriyel enzimler: proteazlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Endüstriyel enzimler: karbohidrazlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Diğer endüstriyel enzimler",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Katalitik olmayan endüstriyel proteinler",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Proteins, Biochemistry and Biotechnology, Gary Walsh, John Wiley and Sons, , 2002,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=471",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=471"
  },
  "BIO 4901E": {
   "code": "BIO 4901E",
   "name": "Moleküler Biyoloji ve Genetik Tasarımı I",
+  "nameEn": "Mol Bio & Genetics Design I",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -2486,15 +6505,87 @@
    "Hafta 13 · Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
    "Hafta 14 · Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laboratuarda güvenlik ve iyi laboratuar pratiği ilkelerini öğrenme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Laboratuarda güvenlik ve iyi laboratuar pratiği ilkelerini öğrenme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=4901"
  },
  "BIO 4902E": {
   "code": "BIO 4902E",
   "name": "Moleküler Biyoloji ve Genetik Tasarımı II",
+  "nameEn": "Mol Bio & Genetics Design II",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -2527,15 +6618,87 @@
    "Hafta 13 · Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir tez hazırlamak",
    "Hafta 14 · Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir tez hazırlamak"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir tez hazırlamak",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir tez hazırlamak",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=4902"
  },
  "BIO 490E": {
   "code": "BIO 490E",
   "name": "Kanser Biyolojisi",
+  "nameEn": "Cancer Biology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2566,16 +6729,88 @@
    "Hafta 13 · Virusler ve onkogenesis",
    "Hafta 14 · Kalıtımsal Meme ve yumurtalık kanseri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kanser biyolojisine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Hücre döngüsü kontrolu ve apoptoz",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Apoptoz ve anastazis",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kanser gen tanımlama için genetic yaklaşımlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kanser genetiği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "DNA hasarı ve tamiri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Metastaz",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bağışıklık sistemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Immunoterapi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kök hücre ve kanser kök hücresi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Kanser çalışmalarında teknikler: crispr",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Kanser çalışmalarında teknikler: hibridoma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Virusler ve onkogenesis",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Kalıtımsal Meme ve yumurtalık kanseri",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "PRINCIPLES OF CANCER BIOLOGY, LEWIS KLIENSMITH",
    "THE BIOLOGY OF CANCER, ROBERT WEINBERG"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=490",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=490"
  },
  "BIO 491E": {
   "code": "BIO 491E",
   "name": "Moleküler Biyoteknoloji",
+  "nameEn": "Molecular Biotechnology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2608,17 +6843,89 @@
    "Hafta 13 · İleri Biyoteknoloji Uygulamaları 1",
    "Hafta 14 · İleri Biyoteknoloji Uygulamaları 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nanobiyoteknoloji",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Biyonanoteknoloji",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Moleküler Biyomimetik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Moleküler Biyomimetik 2",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Biyomimetik Hücre Zarları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Biyosensörler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Biyomalzemeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Hücre Kültürü",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Doku Mühendisliği",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Nanotıp",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kontrollü Salım Sistemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "İleri Biyoteknoloji Uygulamaları 1",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "İleri Biyoteknoloji Uygulamaları 2",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Gazit, E. (2007). Plenty of Room for Biology at the Bottom: An Introduction to Bionanotechnology. World Scientific",
    "Altintas, Z. (Ed.). (2017). Biosensors and Nanotechnology: Applications in Health Care Diagnostics. John Wiley & Sons",
    "Hasirci, V., & Hasirci, N. (2018). Fundamentals of Biomaterials. Springer New York"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=491",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=491"
  },
  "BIO 492": {
   "code": "BIO 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2652,15 +6959,87 @@
    "Hafta 13 · Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
    "Hafta 14 · Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laboratuarda güvenlik ve iyi laboratuar pratiği ilkelerini öğrenme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Laboratuarda güvenlik ve iyi laboratuar pratiği ilkelerini öğrenme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=492"
  },
  "BIO 492E": {
   "code": "BIO 492E",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2694,10 +7073,81 @@
    "Hafta 13 · Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
    "Hafta 14 · Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laboratuarda güvenlik ve iyi laboratuar pratiği ilkelerini öğrenme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Laboratuarda güvenlik ve iyi laboratuar pratiği ilkelerini öğrenme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Çalıştığı proje içindeki laboratuar tekniklerini uygulama ve teorilerini anlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Deney verilerini işlemek, grafikler ve tablolar haline getirmek, bir rapor hazırlamak",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIO&dersNo=492"
  }
 }

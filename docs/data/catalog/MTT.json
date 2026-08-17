@@ -2,6 +2,7 @@
  "MTT 102E": {
   "code": "MTT 102E",
   "name": "İleri Lineer Cebir",
+  "nameEn": "Advanced Linear Algebra",
   "language": "English/Türkçe",
   "credits": {
    "theory": 4,
@@ -36,15 +37,87 @@
    "Hafta 13 · Reel kuadratik formlar, konik kesitler",
    "Hafta 14 · Kuadratik yüzeyler ve analitik geometri uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel lineer cebir kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ortogonal projeksiyonlar, en küçük kareler yöntemine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "En küçük kareler problemleri, aşırı belirlenmiş sistemler, ağırlıklı en küçük kareler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Eşlenik operatör, normal ve öz-eşlenik operatörler, temel özellikler",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Birimsel ve ortogonal operatörler; ortogonal/ünitery matrisler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Benzerlik dönüşümleri, diagonalizasyon kavramı",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Cayley–Hamilton Teoremi, değişmez alt uzaylar",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Genelleştirilmiş özvektörler ve Jordan zincirleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Jordan kanonik formu, köşegenleştirilemeyen matrislerin yapısı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Özdeğer ve özvektörlerin hesaplanması, uygulamalara giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Markov süreçleri, baskın özdeğer, uzun dönem davranışı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Spektral ayrışım, tekil değer ayrışımı (SVD), PCA’ya giriş",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Reel kuadratik formlar, konik kesitler",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Kuadratik yüzeyler ve analitik geometri uygulamaları",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Bernard Kolman, David R. Hill, 2008, “Elementary Linear Algebra with Applications”, 9th Edition, Prentice Hall, ISBN:0-13-135063-3."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=102"
  },
  "MTT 201E": {
   "code": "MTT 201E",
   "name": "Graf Teorisi",
+  "nameEn": "Graph Theory",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -77,15 +150,87 @@
    "Hafta 13 · Gömmeler ve Euler formülü",
    "Hafta 14 · Düzlemsellik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Grafın tanımı, patikalar çemberle ve yollar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dereceler, samya ve yönlü graflar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ağaçların temel özellikleri ve sayıları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Geren ağaçlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Eşleşmeler ve örtüler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Algoritmalar vegenel graflarda eşleşmeler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kesikler ve bağlılık",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "k-bağlı graflar ve Menger teoremi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Menger teoremi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Ağlarda akımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Renlendirme ve sınırlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "k-renklendirilebilir grafların yapısal özellikleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Gömmeler ve Euler formülü",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Düzlemsellik",
+    "outcomes": "2-4-5"
+   }
+  ],
   "textbooks": [
    "Introduction to Graph Theory – 3rd Ed., Douglas B. West. Pearson College Div., 2008. ISBN-13:  9780131437371"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=201"
  },
  "MTT 305E": {
   "code": "MTT 305E",
   "name": "Sayılar Teorisi",
+  "nameEn": "Number Theory",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -122,15 +267,87 @@
    "Hafta 13 · Sürekli Kesirler, Rasyonel Yaklaşım",
    "Hafta 14 · Diofant denklemleri, Pell denklemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Homework will be assigned for students to undertsand the course better.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Euclid Algoritması, Bezout’s eşitliği, Lineer Diofant Denklemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Asal Sayılar, Asal Çarpanlara Ayırma, Aritmetiğin Temel Teoremi, Asal Sayıların Dağılımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Fermat ve Mersenne sayıları, Kongrüanslar, Lineer kongrüans denklemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Lineer kongrüans denklem sistemler, Çinlilerin Kalan Teoremi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Polinom kongrüanlar, Asal kuvvet modüllü kongrüanslar Hensel’in yardımcı teoremi / Arasınav 1",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Euler phi fonksiyonu, Euler Teoremi, Fermat Küçük Teoremi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yarı asallar, Asallık testleri, Wilson Teoremi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Çarpımsal aritmetik fonksiyonlar, Möbiüs tersleme formula, Dirichlet iç çarpımı",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Primitif kökler",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Kuadratik Residüler",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Legendre ve Jacobi sembolleri, Kuadratik reciprocite / Arasınav 2",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Sürekli Kesirler, Rasyonel Yaklaşım",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Diofant denklemleri, Pell denklemi",
+    "outcomes": "4-6"
+   }
+  ],
   "textbooks": [
    "K.H. Rosen, Elementary Number Theory and Its Applications, Addison-Wesley, 2011"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=305"
  },
  "MTT 403": {
   "code": "MTT 403",
   "name": "Fonksiyonel Analiz",
+  "nameEn": "Functional Analysis",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -162,10 +379,81 @@
    "Hafta 13 · Açık tasvir teoremi, kapalı çizge teoremi.",
    "Hafta 14 · Örneklerle tekrar gözden geçirme."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lineer ve normlu uzaylar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Lineer ve normlu uzaylar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer operatörler ve sınırlı lineer operatörler, lineer fonksiyoneller.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dual uzay, Hilbert uzayları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Ortonormal sistemler ve tam vektörler.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Bessel eşitsizliği, Parseval özelliği.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Hilbert eşlenik operatörü , kendine eşlenik, üniter ve normal operatörler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Hahn-Banach teoremleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Hahn-Banach teoremleri. / Birinci ve ikinci kategori kümeleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Birinci ve ikinci kategori kümeleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Düzgün sınırlılık prensibi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Kuvvetli ve zayıf yakınsaklık.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Açık tasvir teoremi, kapalı çizge teoremi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Örneklerle tekrar gözden geçirme.",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "E. Kreyszig, Inroductory Functional Analysis with Applications"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=403",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTT&dersNo=403"
  }
 }

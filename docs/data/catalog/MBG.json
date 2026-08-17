@@ -2,6 +2,7 @@
  "MBG 511E": {
   "code": "MBG 511E",
   "name": "Fermentation Technology",
+  "nameEn": "Fermentation Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -37,18 +38,89 @@
    "Hafta 13 · Öğrenci Sunumları",
    "Hafta 14 · Öğrenci Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyoteknolojik Proseslere Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikroorganizmaların Yapısı ve Fonksiyonları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Metabolik Yollar ve Mikrobiyal Enerjetik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Üreme ve Ürün Oluşumu",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Biyolojik Reaksiyonların Stokiyometrisi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Biyolojik Reaksiyonların Termodinamiği",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Reaksiyon Hızı: Üreme ve Ürün Oluşum Hızları,",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Endüstride Kullanılan Fermentörlerin Sınıflandırılması ve Yapısı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Fermentörlerde Isı ve Kütle Aktarımı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Kesikli, Yarı Kesikli ve Sürekli Prosesler",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kesikli, Yarı Kesikli ve Sürekli Prosesler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Fermentasyon Endüstrisinde Besiyeri Hazırlama, Sterilizasyon ve Hava Filtrasyonu",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Sunumları"
+   }
+  ],
   "textbooks": [
    "Mustafa Türker, Biyoreaksiyon Mühendisliği, Su Vakfı Yayınları, 2005,",
    "ML Shuler and F Kargı, Bioprocess Engineering Principles, Prentice Hall, 2002,",
    "N. Okafor, Modern Industrial Microbiology and Biotechnology, Science Publishers, 2007",
    "N. Mosier ve MR Ladisch, Modern Biotechnology; Connecting Innovations in Microbiology and Biochemistry to Engineering Fundamentals, Wiley, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=511"
  },
  "MBG 513": {
   "code": "MBG 513",
   "name": "Enzim Kinetiği",
+  "nameEn": "Enzyme Kinetics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -81,18 +153,89 @@
    "Hafta 13 · Enzimlerde katalizleme mekanizmaları",
    "Hafta 14 · Canlıların metabolizmasında enzim kooperativitesinin önemi, örnekler, Ara sınav-3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar; Enzimler ve yapısı, biyotermodinamik",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enzim kinetiği; Tek substratlı, Michealis-Menten, Lineweaver-Burk ve Eadie-Hofstee eşitlikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İnhibitörler, yarışan-yarışmayan-sınırlı yarışan inhibitörler, Substrat ve ürün inhibisyonu",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Aktivasyon, sıcaklık ve pH etkisi, Ara Sınav-1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Enzim Kinetiği; Tek ve çok substratlı",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "İnhibisyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Aktivasyon,sıcaklık ve pH etkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Sigmoid kinetiği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Allosterik enzimler , immobilize enzimler,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "İmmobilizasyon yöntemleri ve uygulamaları , Ara Sınav-2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "İmmobilizasyonun kinetik parametrelere etkisi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Enzim aktivitesinin deneysel olarak ölçümü; ilk hız ölçümleri, analiz yöntemleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Enzimlerde katalizleme mekanizmaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Canlıların metabolizmasında enzim kooperativitesinin önemi, örnekler, Ara sınav-3"
+   }
+  ],
   "textbooks": [
    "Segel H.I., Enzyme Kinetics:Behaviour an Analysis of Rapid Equilibrium and Steady State Enzyme System, John Wiley& Sons, NewYork,1993.",
    "Bisswanger Hans (Translated by Leonic Bubenheim), Enzyme Kinetics – Principles and Methohs, John Wiley-VCH, NY, 2002",
    "Nicholas C. Price and Lewis Stevens, Fundamentals of Enzymology: The Cell and Molecular Biology of Catalytic Proteins, Oxford Uninersity Press, Oxford, 1999.",
    "Kenneth B. Taylor, Enzyme Kinetics and Mechanisms (Electronic Resource), Kluwer Academic Pub., Boston, 2002"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=513"
  },
  "MBG 521": {
   "code": "MBG 521",
   "name": "Advanced Cell Biology",
+  "nameEn": "Advanced Cell Biology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -126,18 +269,89 @@
    "Hafta 13 · Hücre ölümü ve regülasyonu",
    "Hafta 14 · Kök Hücre ve Kanser"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Membranlar ve hücre kompartmanlaşması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Moleküllerin Transportu, Pompalar, Kanallar, Transport kapılar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Proteinlerin işlenmesi ve trafiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Vesiküler transport, salgılama yolakları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Reseptörler ve sinyal iletimi, G proteinine-bağlı reseptörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Enzime -bağlı reseptörler ve diğer sinyal iletim mekanizmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Hücre iskeleti, aktin ve hücre hareketliliğ",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Mikrotubuller ve motorlar, Ara filamentler",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Hücre siklüsü ve hücre bölünmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Nükleer matriks-hücre siklüsü ve transkripsiyonel regulasyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Hücre dışı matriksi, hücre adhezyonu, hücre bağlantıları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Hücrelerden doku oluşumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Hücre ölümü ve regülasyonu",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Kök Hücre ve Kanser"
+   }
+  ],
   "textbooks": [
    "MOLECULAR BIOLOGY OF THE CELL, ALBERTS ET AL 2008, GARLAND SCIENCE",
    "MOLECULAR CELL BIOLOGY, LODISH ET AL 2008, W. H. FREEMAN CELL AND MOLECULAR BIOLOGY: CONCEPTS AND EXPERIMENTS, KARP ET AL 2010, WILEY",
    "THE CELL: A MOLECULAR APPROACH, GEOFFREY M. COOPER AND ROBERT E. HAUSMAN 2009, SINAUER ASSOCIATES",
    "THE WORLD OF THE CELL, WAYNE M. BECKER, ET AL 2008, BENJAMIN CUMMINGS"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=521"
  },
  "MBG 523E": {
   "code": "MBG 523E",
   "name": "Advanced Molecular Biology",
+  "nameEn": "Advanced Molecular Biology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -176,18 +390,89 @@
    "Hafta 13 · Kromozom paketlenmesi: Kromatin ve nükleosomlar, histone protein yapıları",
    "Hafta 14 · RNA prosesleri: RNA splicing mekanizmaları, mRNA döngüsü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genetik metaryeller: DNA nın üç boyutlu yapısı ve özellikleri, moleküler genetik tarihindeki önemli olaylar, kişiler ve deneyler,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gen konsepti: Prokaryotik ve ökaryotic gen yapıları ve özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Genom muhteviyatı: genom haritala metodları, prokaryotik ve ökaryotik genomların yapısal farklılıkları, insan genomunun yapısı, organel genomu",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Protein sentezi: mRNA yapısı ve özellikleri,",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Protein sentezi:Translasyon mekanizması, t-RNA, r-RNA, ribozom yapısı ve özellikleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Protein sentezi: Genetik şifreleme, translasyon doğruluk mekanizmaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Protein lokalizasyonu",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Transkripsiyonun moleküler mekanizması, RNA polymerazların yapısı, promotör bölgesinin yapısı",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Operon oganizyonu: pozitif ve negatif regülasyon sistemleri, lac operonu, lac operonun baskılanma ve aktive edilmesinin moleküler mekanizması",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Gen ifadesi kontrol sistemleri: Glükoz baskılaması, ppGpp”stringent” kontrol sistemi, kendi kendine kontrol, zayıflatmalar, antisense RNA , mikroRNAs",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "DNA replikasyon mekanizması ve kontrolü",
+    "outcomes": "9"
+   },
+   {
+    "week": 12,
+    "topic": "Prokaryotik and ökayotik genom organizasyonu: kromozom yapıları",
+    "outcomes": "1-10"
+   },
+   {
+    "week": 13,
+    "topic": "Kromozom paketlenmesi: Kromatin ve nükleosomlar, histone protein yapıları",
+    "outcomes": "1-10"
+   },
+   {
+    "week": 14,
+    "topic": "RNA prosesleri: RNA splicing mekanizmaları, mRNA döngüsü"
+   }
+  ],
   "textbooks": [
    "Benjamin, L., 2007. GENES IX. Jones Barlett Publishers,Sudburry,Massachusets",
    "Watson JD, Baker, T.A., Bell, S.P., Gann, A., Levine, M.,Losick, R. 2007. Molecular Biology of the Gene, 6th. Ed., Pearson Benjamin Cummings Publishing Company ve Cold Spring Harbour Laboratory Press, New York",
    "Weaver, R. F., 2005. Molecular Biology,3th Ed., McGraw-Hill, USA",
    "Malacinski, G.M.2003. Essentials of Molecular Biology, 4th Ed., Jones Barlett Publishers,Sudburry,Massachusets"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=523",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=523"
  },
  "MBG 535E": {
   "code": "MBG 535E",
   "name": "Laboratuvar Araştırması",
+  "nameEn": "Laboratory Research",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -219,16 +504,87 @@
    "Hafta 13 · Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
    "Hafta 14 · Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel laboratuvar güvenlik ve temel çalışma kurallarının öğrenilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Genel laboratuvar güvenlik ve temel çalışma kurallarının öğrenilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Seçtikleri araştırma alanında uygulanan temel laboratuvar tekniklerini uygulama ve teoriğini öğrenme"
+   }
+  ],
   "textbooks": [
    "Molecular cloning : a laboratory manual Sambrook, Joseph Cold Spring Harbor, N.Y. : Cold Spring Harbor Laboratory Press, 2001",
    "J. Sambrook E.F. Fritsch T. Maniatis1989. Molecular cloning:a laboratory manual (3 Volume) 2nd Edition.Cold Spring Harbor Laboratory"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=535",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=535"
  },
  "MBG 611": {
   "code": "MBG 611",
   "name": "Enzim Bilim ve Tek.İleri Konu.",
+  "nameEn": "Advanced Topics in Enzyme Science and Technolgy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -260,6 +616,77 @@
    "Hafta 13 · Bitki biyoteknolojisi üzerine yapılan çalışmaların ve uygulamaların Türkiye ve Dünyadaki yeri ; Bu konuda yapılmış bir çalışmanın incelenmesi; Örnek makale üzerinde sınıf içi çalışma",
    "Hafta 14 · Biyopolimerler; Örnek bir makale üzerinde tartışma; Örnek makale üzerinde sınıf içi çalışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanımı, işleniş şekli hakkında genel bilgiler ve konuların dağılımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enzim teknolojisi konusunda yürüttüğümüz YL tezleri konusundaki son makalelerimizden örnekler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enzim teknolojisi konusunda yürüttüğümüz YL tezleri konusundaki son makalelerimizden örnekler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Oksidoreduktaz grubu enzimler: Üretim ve endüstriyel uygulamaları; Örnek bir makale üzerinde sınıf içi çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Transferaz grubu enzimler: Üretim ve endüstriyel uygulamaları; Örnek bir makale üzerinde sınıf içi çalışma.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Hidrolaz grubu enzimler: Üretim ve endüstriyel uygulamaları; Örnek bir makale üzerinde sınıf içi çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Liyaz grubu enzimler: Üretim ve endüstriyel uygulamaları; Örnek bir makale üzerinde sınıf içi çalışma.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "İzomeraz grubu enzimler: Üretim ve endüstriyel uygulamaları; Örnek bir makale üzerinde sınıf içi çalışma.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ligaz grubu enzimler: Üretim ve endüstriyel uygulamaları; Örnek bir makale üzerinde sınıf içi çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Biyofilm oluşumu ve önlemek için uygulanan yöntemler; Örnek makale üzerinde sınıf içi çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Bakteriyal selüloz üretimi ve endüstriyel uygulamaları; Örnek makale üzerinde sınıf içi çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Hayvan ve tıp biyoteknolojisi üzerine yapılan çalışmaların Türkiye ve Dünyadaki yeri; Bu konuda yapılmış bir çalışmanın incelenmesi; Örnek makale üzerinde sınıf içi çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Bitki biyoteknolojisi üzerine yapılan çalışmaların ve uygulamaların Türkiye ve Dünyadaki yeri ; Bu konuda yapılmış bir çalışmanın incelenmesi; Örnek makale üzerinde sınıf içi çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Biyopolimerler; Örnek bir makale üzerinde tartışma; Örnek makale üzerinde sınıf içi çalışma"
+   }
+  ],
   "textbooks": [
    "All of the Journals about enzyme and biotechnology",
    "Uhlig, H., 1998. Industrial Enzymes and Their Applications, John Wiley, New York, USA.",
@@ -268,12 +695,12 @@
    "Chaplin, M. F., Bucke, C., Enzyme Technology, Cambridge University Press, UK.",
    "Kennedy, J. F., 1987. Enzyme Technology, VCH Verlagsgesellschaft GmbH, Germany."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=611",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=611"
  },
  "MBG 621E": {
   "code": "MBG 621E",
   "name": "Nucleic Acids&Protein Biochemi",
+  "nameEn": "Nucleic Acids&Protein Biochemi",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -310,6 +737,77 @@
    "Hafta 13 · Nükleik asitler ve proteinlerin yapı ve mekanizma aydınlatılmasında kullanılan yöntemler",
    "Hafta 14 · Nükleik asit ve protein biyokimyasında güncel konular ve uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleik asit ve protein biyokimyasına giriş, kullanılan temel terim ve tanımlamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleik asitlerin yapısı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Nükleik asitlerin fiziksel özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Nükleik asitlerin işlevi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Proteinlerin yapısal özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Proteinlerin fiziksel özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Proteinlerin işlevi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Nükleik asitlerin sentez ve yıkım mekanizmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Proteinlerin sentez ve yıkım mekanizmaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Protein katlanması",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Nükleik asitlerin purifikasyon prosesleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Proteinlerin purifikasyon prosesleriprosesleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleik asitler ve proteinlerin yapı ve mekanizma aydınlatılmasında kullanılan yöntemler",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Nükleik asit ve protein biyokimyasında güncel konular ve uygulamalar"
+   }
+  ],
   "textbooks": [
    "R.H. Sarma, M.H. Sarma. Structure and Function : Nucleic Acids, Proteins, 1992. Adenine Pr; ISBN: 0940030365.",
    "Harald Tschesche. Modern Methods in Protein-And Nucleic Acid Research. 1991. Walter De Gruyter; ISBN: 3110122758.",
@@ -317,12 +815,12 @@
    "Felicia Y.H. Wu, Cheng-Wen Wu. Structure and Function of Nucleic Acids and Proteins. 1990. Amazon books. ASIN: 0881676780.",
    "Joseph N.M. Mol, Alexander R. Van Der Krol. Antisense Nucleic Acids and Proteins. 1991. Marcel Dekker; ISBN: 0824785169."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=621",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=621"
  },
  "MBG 626E": {
   "code": "MBG 626E",
   "name": "Neurobiology",
+  "nameEn": "Neurobiology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -356,6 +854,77 @@
    "Hafta 13 · Programlı Hücre Ölümü ve Nörotrofik Faktörler",
    "Hafta 14 · Nörodejeneratif Hastalıkların Kliniği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sinir Sistemine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nöronların Hücre Biyolojisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Pirimidin Moleküllerinin Sinyal İleti Yolaklarında ve Nöroproteksiyon Mekanizmalarındaki Rolleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Nöronal Dallanma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Akson Kılavuzluk Mekanizmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sinir Sisteminin Gelişimi-Nörogenez ve Gliyogenez",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Nöromuskular Sinapsların Oluşumu",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Koku ve Diğer Duyu Sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Nörorejenerasyon",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Nörodejenerasyon’da Serbest Radikallerin Rolü",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Nörodejenerasyon’da Vitaminlerin Rolü",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Nörodejeneratif Hastalıklarda Hücre Döngüsü Aktivasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Programlı Hücre Ölümü ve Nörotrofik Faktörler",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 14,
+    "topic": "Nörodejeneratif Hastalıkların Kliniği"
+   }
+  ],
   "textbooks": [
    "FUNDAMENTAL NEUROSCIENCE, SQUIRE ET AL. 2008, ACADEMIC PRESS",
    "NEUROSCIENCE, PURVES ET AL. 2008, SINAUER ASSOCIATES",
@@ -363,12 +932,12 @@
    "PRINCIPLES OF NEUROSCIENCE, KANDEL AND SCHWARTZ 2000, MCGRAW-HILL MEDICAL",
    "FROM NEURON TO BRAIN, NICHOLLS, MARTIN AND WALLACE 2001, SINAUER ASSOCIATES"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=626",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=626"
  },
  "MBG 627E": {
   "code": "MBG 627E",
   "name": "İnsan Genetiği",
+  "nameEn": "Human Genetics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -404,16 +973,87 @@
    "Hafta 13 · Gen Terapileri",
    "Hafta 14 · Biyoetik konular"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genom, transkriptom ve proteom",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Karşılaştırmalı genomik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kromozomlar - Kromozom Anomalileri ve Sitogenetik analizler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Genetik Çeşitlilik: Mutasyon ve Polimorfizmlerin hastalık patogenizleri ile ilişkileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Mutasyon analizler teknikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Epigenetik regülasyonlar –kanserde epigenetik",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Tek genli kalıtım özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Tek gen hastalıkları örnekleri; Talasemiler, Kistik Fibroz, Hemofili genetiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kompleks kalıtım özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kompleks kalıtım örnekleri; Nöropsikiyatrik ve İmmün hastalıklar genetiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Haritalama: Fiziksel ve Genetik Haritalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Genetik Tanı ve Genetik Danışmanlık",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Gen Terapileri",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Biyoetik konular"
+   }
+  ],
   "textbooks": [
    "HUMAN MOLECULAR GENETICS 3, STRACHAN T VE READ AP, GARLAND SCIENCE, 3RD EDITION, ISBN 978-0815341499, 2010",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=627",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=627"
  },
  "MBG 632E": {
   "code": "MBG 632E",
   "name": "Danışmanlı Araştırmalar",
+  "nameEn": "Guided Research",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -445,16 +1085,87 @@
    "Hafta 13 · Araştırma sonuçlarının toplanıp, irdelenerek, araştırma sonuç raporunu hazırlanması",
    "Hafta 14 · Araştırma sonuçlarının toplanıp, irdelenerek, araştırma sonuç raporunu hazırlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma konusunun belirlenmesi ve literatür araştırması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma ve deney planlarının oluşturulması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çalıştığı proje içindeki araştırma ve analiz methodlarını uygulama ve teorilerini anlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Araştırma sonuçlarının toplanıp, irdelenerek, araştırma sonuç raporunu hazırlanması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma sonuçlarının toplanıp, irdelenerek, araştırma sonuç raporunu hazırlanması"
+   }
+  ],
   "textbooks": [
    "Projenin içeriğine göre danışman önerisi ile belirlenecek, yayın süreçleri yakın döneme yayılan bilimsel makaleler.",
    "Recent scientific publications related to the project, that are selected according to advisors' recommendations."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=632",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=632"
  },
  "MBG 640E": {
   "code": "MBG 640E",
   "name": "Bioenergy&Biofuels",
+  "nameEn": "Bioenergy&Biofuels",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -488,17 +1199,88 @@
    "Hafta 13 · Mikrobiyal yakıt hücrelerinde hidrojen yakıt üretimi",
    "Hafta 14 · Enerji üretiminde mikrop genomlarından faydalanılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enerji, biyokütle kaynaklı ve biyolojik olmayan enerji üretimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yenilenebilir enerji kaynağı olarak fotosentetik bitkiler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Biyolojik yakıt üretimleri; etanol, metan, methanol",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Biyolojik yakıt üretimleri; diğer alkoller ve organic solventler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mikrobiyal petrol eldesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Düşük maliyetli biyodizel için hammaddeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Biyodizel bileşenleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yakıt olarak bitkisel yağlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Yakıt hücrelerine giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrobiyal yakıt hücreleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Mikrobiyal yakıt hücrelerinde farklı tasarımlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Mikrobiyal yakıt hücrelerinde elektrik üretimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Mikrobiyal yakıt hücrelerinde hidrojen yakıt üretimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Enerji üretiminde mikrop genomlarından faydalanılması"
+   }
+  ],
   "textbooks": [
    "Bioenergy Wall, Judy Harwood, Caroline S. Demain, Arnold L. Pages: 463 Publisher: ASM Press, Washington, DC, USA Date Published: 2008 ISBN: 9781555815547",
    "Biofuels Refining and Performance Nag, Ahindra Pages: 330 Publisher: McGraw-Hill Professional Publishing, Columbus, OH, USA Date Published: 2007 ISBN: 978007159478",
    "INTERNET ÜZERİNDEN VERİLECEK MAKALELER."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=640",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=640"
  },
  "MBG 696E": {
   "code": "MBG 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -542,6 +1324,78 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -554,7 +1408,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MBG&dersNo=696"
  }
 }

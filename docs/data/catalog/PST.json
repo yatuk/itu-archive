@@ -2,6 +2,7 @@
  "PST 507E": {
   "code": "PST 507E",
   "name": "Fiber Formation",
+  "nameEn": "Fiber Formation",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -33,6 +34,77 @@
    "Hafta 13 · İplik Sarımı: Yüksek-hızda iplik sarımının mekaniği",
    "Hafta 14 · Yüksek-hızda iplik sarımı ile ilgili problemler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lif oluşumuna giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Yüksek-hizda filament üretiminin endüstriyel yönleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel bilimsel problemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Eriyikten Üretme: Eriyikten üretme işleminin matematiksel modellenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Eriyikten üretmenin dinamiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Yüksek-hızlı üretim sırasında lif oluşumu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Moleküler oryantasyonun teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Moleküler oryantasyonun teorisi II",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Yüksek-hızda üretilmiş filamentlerin fiziksel özellikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Yüksek-hızda üretilmiş filamentlerin yapı gelişimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Eriyikten ıslak ve kuru teknikle lif çekimi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Diğer lif üretim teknikleri: ıslak ve kuru",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "İplik Sarımı: Yüksek-hızda iplik sarımının mekaniği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Yüksek-hızda iplik sarımı ile ilgili problemler"
+   }
+  ],
   "textbooks": [
    "Ziabicki, A. & Kawai, H. (Eds.). (1985). High-speed Fibre Spinning. New York: John Wiley&Sons.",
    "Ziabicki, A. (1975). Fundamentals of Fibre Formation. London: Wiley Interscience.",
@@ -40,12 +112,12 @@
    "Walczak, Z. (1977). Formation of Synthetic Fibres. New York: Gordon and Breach Science Publishers",
    "Nakajima,T. (1994). Advanced Fiber Spinning Technology. Cambridge: Woodhead Publishing Ltd."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=507"
  },
  "PST 511E": {
   "code": "PST 511E",
   "name": "Fun. of Polymer Chemistry",
+  "nameEn": "Fun. of Polymer Chemistry",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -78,6 +150,77 @@
    "Hafta 13 · Emülsiyon, katı hal, gaz faz ve plazma polimerizasyonları",
    "Hafta 14 · Polimerlerin sentez ve uygulama alanları ile ilgili sunumlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tarihsel gelişim, maddenin temel özellikleri, bağlar, polimerlere giriş, tanım ve sınıflamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Polimerlerde mikro yapı (Morfoloji: amorf, kristallik özellikleri, termal geçişler, molekül ağırlığı tayini, sterik etkiler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Polimerleşme mekanizmaları, kondenzasyon polimerleşmesine giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Kondenzasyon polimerleşmesi, kinetiği, diğer basamaklı polimerleşme reaksiyonları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Katılma polimerleşmesine giriş, Serbest radikal katılma reaksiyonları, başlatıcı, monomer ve çözücü sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Zincir reaksiyonları, ,ilerleme, transfer, sonlanma reaksiyonları, serbest radikal polimerizasyon kinetiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Serbest radikal polimerleşmede jel etkisi, kafes etkisi önleme ve geciktirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İyonik polimerizasyona giriş, Anyonik polimerleşme",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Koordinasyon polimerleşmesi ve taktisite",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Katyonik polimerleşme , Halka açılması polimerleşmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Kopolimerleşme",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Polimerleşme sistemlerine giriş, kütle, çözücü, süspansiyon polimerleşmeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Emülsiyon, katı hal, gaz faz ve plazma polimerizasyonları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Polimerlerin sentez ve uygulama alanları ile ilgili sunumlar"
+   }
+  ],
   "textbooks": [
    "Carraher, C. E. (2011). Carraher’s Polmer Chemistry (8th ed). Florida Atlantic University, Boca Raton, USA: CRC Press.",
    "Younf, R. & Lowell, P.A. (2011). Introduction to Polymers (3rd ed). UK: CRC Press.",
@@ -85,12 +228,12 @@
    "Gnanou, Y. & Fontanille, M. (2008) Organic and Physical Chemistry of Polymers. Hoboken, NJ: Wiley.",
    "Calhoun, A. & Peacock, A. (2006) Polymer Chemistry: Properties and applications. Cincinnati: Hanser G.Publishers"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=511"
  },
  "PST 524E": {
   "code": "PST 524E",
   "name": "Polymer Processing",
+  "nameEn": "Polymer Processing",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -123,6 +266,77 @@
    "Hafta 13 · Kalenderleme, elastomer sistemler için karıştırma ve şekillendirme sistemleri",
    "Hafta 14 · Polimer işleme için önemli malzeme özellikleri ve karakterizasyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Polimer Ürün Tasarımı, temel kademeler, bazı ürünler için tasarım çalışmaları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Ekstrüzyon prosesi, ekstruderler, ekstruder vidaları ve diğer ekipmanlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Ekstrüzyonda proses değişkenleri, çalışma prensipleri, ısı ve basınş ölçüm ve kontrolü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ekstrüzyonda polimer akışı, erime mekanizması, karışma",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ekstrüzyon ile granül, film, levha, profil, boru üretimi, şişirme ile kalıplama, film şişirme, kablo üretimi vb.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Enjeksiyonla kalıplama, enjeksiyon makineleri ve çalışma prensipleri, kalıplar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Enjeksiyonla kalıplamada polimer akışı, devir (cycle), proses değişkenleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Enjeksiyonla kalıplama uygulama örnekleri, klasik enjeksiyon, sandviç kalıplama, RIM prosesi, köpük enjeksiyon vb.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Isı ile şekillendirme, (basınçla, vakulma), Döndürerek kalıplama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Baskı ile kalıplama, Transfer kalıplama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Kompozit malzemelerin şekillendirilmesi, pultrüzyon, elyaf sarma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Daldırarak kalıplama, akışkan yatak şekillendirme.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Kalenderleme, elastomer sistemler için karıştırma ve şekillendirme sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Polimer işleme için önemli malzeme özellikleri ve karakterizasyonu"
+   }
+  ],
   "textbooks": [
    "Osswald, T. A. (1998). Polymer Processing Fundamentals. Munich: Carl Hanser Verlag.",
    "Rauwendaal, C. (2001). Polymer Extrusion (4th ed). Munich: Carl Hanser Verlag.",
@@ -130,12 +344,12 @@
    "Berins, M. L. &Reinhold, Van N. (Eds.). (1991).Plastics Engineering Handbook of the Society of the Plastics Industry, Inc. (5th ed). USA: KluwerAcademic Publishers.",
    "Crawford, R. J. (Ed.). (1989). Plastics Engineering (2nd ed). Oxford: Pergamon Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=524",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=524"
  },
  "PST 530E": {
   "code": "PST 530E",
   "name": "Polymer Characterization",
+  "nameEn": "Polymer Characterization",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -171,16 +385,87 @@
    "Hafta 13 · Polimerlerin TGA analizi",
    "Hafta 14 · Polimerlerde MALDI-TOF tekniği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "UV-vis spektroskopisinin temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Polimer kimyasında UV-vis spektroskopisi: tepkime kinetiği ve molekül ağırlığı tayini",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "IR spektroskopisinin temelleri, absorpsiyon bantları ile fonksiyonel grup ilişkisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tepkime kinetiğinin IR spektroskopisi ile takibi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "NMR: teorisi ve uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tepkime kinetiğinin 1H-NMR ile takibi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Polimerlerin molekül ağırlığı tayini ve komposizyonunun belirlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "13C-NMR spektroskopisinin polimer kimyasındaki uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "GPC ile molekül ağırlığı özelliklerinin tayini",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "GPC’de kalibrasyon metotları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Tepkime kinetiğinin GC ile takibi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Polimerlerin DSC analizi",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Polimerlerin TGA analizi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Polimerlerde MALDI-TOF tekniği"
+   }
+  ],
   "textbooks": [
    "Stuart, B.H. (2002). Polymer Analysis. England: John Wiley & Sons.",
    "Fried, J. H. (2003). Polymer Science & Technology (2nd ed). New Jersey: Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=530",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=530"
  },
  "PST 545E": {
   "code": "PST 545E",
   "name": "Inorganic Polymers",
+  "nameEn": "Inorganic Polymers",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -214,6 +499,77 @@
    "Hafta 13 · Anorganik polimer kimyasının pratik uygulamaları",
    "Hafta 14 · Anorganik polimerlerden güncel örnekler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Anorganik polimerler uygulamalarının temel konuları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Anorganik polimerlerin sentezi",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Anorganik polimerlerin karakterizasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Polisiloksanlar ve ilgili polimerler",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Polisilanlar ve ilgili polimerler",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Polifosfazenler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Polifosfazenlerin uygulamaları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ferrosen-temelli polimerler ve diğer fosfor içeren polimerler",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Çeşitli anorganik polimerler",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Anorganik-organik hibrid kompozitler",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Preseramik anorganik polimerler",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Bor içeren polimerler",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Anorganik polimer kimyasının pratik uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Anorganik polimerlerden güncel örnekler"
+   }
+  ],
   "textbooks": [
    "1. De Jaeger, R., Gleria, M. 2007: Inorganic Polymers, Nova Science Publishers Inc",
    "2. Mark, J.E., Allcock, H.R., West, R., 2005: Inorganic Polymers, Second Edition, New York : Oxford University Press.",
@@ -221,12 +577,12 @@
    "4. Chandrasekhar, V., 2005: Inorganic and Organometallic Polymers, Springer-Verlag",
    "5. Müller, W. E. G. , 2013: Biomedical Inorganic Polymers Bioactivity and Applications of Natural and Synthetic Polymeric Inorganic Molecules, Springer"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=545",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=545"
  },
  "PST 596E": {
   "code": "PST 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -270,6 +626,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -282,12 +709,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=596"
  },
  "PST 603E": {
   "code": "PST 603E",
   "name": "Modification of Polymers",
+  "nameEn": "Modification of Polymers",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -321,16 +748,87 @@
    "Hafta 13 · Modifiye polimerlerin uygulamaları",
    "Hafta 14 · Polimer modifikasyon dersi ile ilgili bir konuyu araştırma, hazırlama ve sunma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Polimerlerin modifikasyon metotları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Poli vinil klorür’ün Modifikasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Polistiren’in Modifikasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Poliamid’in Modifikasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Polietilen ve polipropilen’in Modifikasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Epoksit içeren polimerlerin Modifikasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Selüloz’un Modifikasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Nişasta’nın Modifikasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Kitin ve Kitosan’ın Modifikasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Lignin ve Diğer Doğal Polimerlerin Modifikasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Akrilat ve Metakrilat Polimerlerin Modifikasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Fenol-formaldehit Reçine Modifikasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Modifiye polimerlerin uygulamaları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Polimer modifikasyon dersi ile ilgili bir konuyu araştırma, hazırlama ve sunma"
+   }
+  ],
   "textbooks": [
    "Meister, J. J. (2000). Polymer. Modification Principles, Techniques and Applications, New York: Marcel Dekker.",
    "Carraher, C. & Moore, J.A. (Eds.). (1983). Modification of Polymers."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=603"
  },
  "PST 621E": {
   "code": "PST 621E",
   "name": "Supramolecular Polymers",
+  "nameEn": "Supramolecular Polymers",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -366,16 +864,87 @@
    "Hafta 13 · Supramoleküler polimerlerin karakterizasyon yöntemleri",
    "Hafta 14 · Supramoleküler polimerlerin uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Supramoleküler sistemlere bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Supramoleküler polimerlerin tanımı ve genel özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Supramoleküler polimerlerin oluşumunda rol alan etkileşimler ve supramoleküler polimerlerin oluşum mekanizmaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Hidrojen bağ motiflerinin genel konsepti, çoklu hidrojen bağları ve çoklu hidrojen bağ dizileri, hidrofobik etkileşimler ve supramoleküler polimerizasyona etkileri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Siklodekstrin bazlı supramoleküler polimerler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Pillararen bazlı supramoleküler polimerler.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kaliksaren bazlı supramoleküler polimerler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Taç eter bazlı supramoleküler polimerler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kalikspirol bazlı supramoleküler polimerler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Suıpramoleküler çapraz bağlı polimer",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Suıpramoleküler çapraz bağlı polimer",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Suıpramoleküler çapraz bağlı jeller",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Supramoleküler polimerlerin karakterizasyon yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Supramoleküler polimerlerin uygulamaları"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=621",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=621"
  },
  "PST 696E": {
   "code": "PST 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -419,6 +988,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -431,7 +1071,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=696"
  }
 }

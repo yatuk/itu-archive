@@ -2,6 +2,7 @@
  "MDN 210": {
   "code": "MDN 210",
   "name": "Mineraloji ve Petrografi",
+  "nameEn": "Mineralogy and Petrography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDN&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDN&dersNo=210"
  },
  "MDN 210E": {
   "code": "MDN 210E",
   "name": "Mineraloji ve Petrografi",
+  "nameEn": "Mineralogy and Petrography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -34,12 +35,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDN&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDN&dersNo=210"
  },
  "MDN 271": {
   "code": "MDN 271",
   "name": "Olasılık ve İstatistik",
+  "nameEn": "Probability and Statistics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -72,18 +73,76 @@
    "Hafta 13 · Hipotez Testi II: İleri düzey hipotez testi teknikleri",
    "Hafta 14 · İleri Konular ve Ders Tekrarı: İleri istatistiksel konuların incelenmesi ve genel tekrar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Ders genel bakış ve temel kavramlar"
+   },
+   {
+    "week": 2,
+    "topic": "Betimsel İstatistikler: Veriyi özetleme ve tanımlama teknikleri"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Görselleştirme: Etkili istatistiksel grafikler oluşturma"
+   },
+   {
+    "week": 4,
+    "topic": "Olasılık Teorisi: Olasılık ve olayların temelleri"
+   },
+   {
+    "week": 5,
+    "topic": "Kesikli Rastgele Değişkenler: Kesikli veri için olasılık dağılımları"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli Rastgele Değişkenler: Sürekli veri için olasılık dağılımları"
+   },
+   {
+    "week": 7,
+    "topic": "Örnekleme Dağılımları ve Merkezi Limit Teoremi: Örneklemeyi ve Merkezi Limit Teoremini anlama"
+   },
+   {
+    "week": 8,
+    "topic": "Örnekleme Dağılımları ve MLT Uygulamaları: MLT'nin pratik uygulamaları ve problemler"
+   },
+   {
+    "week": 9,
+    "topic": "Güven Aralıkları: Tahmin ve güven aralığı oluşturma"
+   },
+   {
+    "week": 10,
+    "topic": "Korelasyon ve Regresyon I: Değişkenler arasındaki ilişkileri analiz etme"
+   },
+   {
+    "week": 11,
+    "topic": "Korelasyon ve Regresyon II: Regresyon modelleri ve uygulamaları"
+   },
+   {
+    "week": 12,
+    "topic": "Hipotez Testi I: Hipotez testine giriş ve temel testler"
+   },
+   {
+    "week": 13,
+    "topic": "Hipotez Testi II: İleri düzey hipotez testi teknikleri"
+   },
+   {
+    "week": 14,
+    "topic": "İleri Konular ve Ders Tekrarı: İleri istatistiksel konuların incelenmesi ve genel tekrar"
+   }
+  ],
   "textbooks": [
    "Ron, L. (2023). Elementary Statistics - Picturing the World (8th ed.). Pearson.",
    "Herzog, M. H. (with Francis, G., & Clarke, A.). (2019). Understanding Statistics and Experimental Design: How to Not Lie with Statistics. Springer International Publishing AG.",
    "Montgomery, D. C., & Runger, G. C. (2018). Applied statistics and probability for engineers (Seventh edition). Wiley.",
    "Ross, S. M. (2014). Introduction to Probability and Statistics for Engineers and Scientists (5th ed). Elsevier Science & Technology."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDN&dersNo=271",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDN&dersNo=271"
  },
  "MDN 271E": {
   "code": "MDN 271E",
   "name": "Olasılık ve İstatistik",
+  "nameEn": "Probability and Statistics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -116,13 +175,70 @@
    "Hafta 13 · Hipotez Testi II: İleri düzey hipotez testi teknikleri",
    "Hafta 14 · İleri Konular ve Ders Tekrarı: İleri istatistiksel konuların incelenmesi ve genel tekrar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Ders genel bakış ve temel kavramlar"
+   },
+   {
+    "week": 2,
+    "topic": "Betimsel İstatistikler: Veriyi özetleme ve tanımlama teknikleri"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Görselleştirme: Etkili istatistiksel grafikler oluşturma"
+   },
+   {
+    "week": 4,
+    "topic": "Olasılık Teorisi: Olasılık ve olayların temelleri"
+   },
+   {
+    "week": 5,
+    "topic": "Kesikli Rastgele Değişkenler: Kesikli veri için olasılık dağılımları"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli Rastgele Değişkenler: Sürekli veri için olasılık dağılımları"
+   },
+   {
+    "week": 7,
+    "topic": "Örnekleme Dağılımları ve Merkezi Limit Teoremi: Örneklemeyi ve Merkezi Limit Teoremini anlama"
+   },
+   {
+    "week": 8,
+    "topic": "Örnekleme Dağılımları ve MLT Uygulamaları: MLT'nin pratik uygulamaları ve problemler"
+   },
+   {
+    "week": 9,
+    "topic": "Güven Aralıkları: Tahmin ve güven aralığı oluşturma"
+   },
+   {
+    "week": 10,
+    "topic": "Korelasyon ve Regresyon I: Değişkenler arasındaki ilişkileri analiz etme"
+   },
+   {
+    "week": 11,
+    "topic": "Korelasyon ve Regresyon II: Regresyon modelleri ve uygulamaları"
+   },
+   {
+    "week": 12,
+    "topic": "Hipotez Testi I: Hipotez testine giriş ve temel testler"
+   },
+   {
+    "week": 13,
+    "topic": "Hipotez Testi II: İleri düzey hipotez testi teknikleri"
+   },
+   {
+    "week": 14,
+    "topic": "İleri Konular ve Ders Tekrarı: İleri istatistiksel konuların incelenmesi ve genel tekrar"
+   }
+  ],
   "textbooks": [
    "Ron, L. (2023). Elementary Statistics - Picturing the World (8th ed.). Pearson.",
    "Herzog, M. H. (with Francis, G., & Clarke, A.). (2019). Understanding Statistics and Experimental Design: How to Not Lie with Statistics. Springer International Publishing AG.",
    "Montgomery, D. C., & Runger, G. C. (2018). Applied statistics and probability for engineers (Seventh edition). Wiley.",
    "Ross, S. M. (2014). Introduction to Probability and Statistics for Engineers and Scientists (5th ed). Elsevier Science & Technology."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDN&dersNo=271",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDN&dersNo=271"
  }
 }

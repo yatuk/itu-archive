@@ -2,6 +2,7 @@
  "MYZ 301": {
   "code": "MYZ 301",
   "name": "Mühendislik için Yapay Zekaya Giriş",
+  "nameEn": "Introduction to Artificial Intelligence for Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=301"
  },
  "MYZ 301E": {
   "code": "MYZ 301E",
   "name": "Mühendislik için Yapay Zekaya Giriş",
+  "nameEn": "Introduction to Artificial Intelligence for Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -34,12 +35,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=301"
  },
  "MYZ 302E": {
   "code": "MYZ 302E",
   "name": "Makina Mühendisliği için Yapay Zeka",
+  "nameEn": "Artificial Intelligence for Mechanical Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -74,15 +75,87 @@
    "Hafta 13 · Makina Mühendisliğinde Yapay Zeka Destekli Üretken Tasarım",
    "Hafta 14 · Prototipleme ve İmalatta Yapay Zeka"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Zeka Araçları ve Uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Görselleştirme Teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Hazırlama ve Anlamlandırmanın Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Keşifsel Veri Analizi ve Model Değerlendirme",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Makina Öğrenmesi Temelleri ve Doğrusal Regresyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Sınıflandırma Algoritmaları ve Değerlendirme Metrikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Denetimsiz Öğrenmenin Temelleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Doğa İlhamlı Optimizasyon",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yapay Sinir Ağlarına Giriş",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yapay Sinir Ağlarının Eğitimi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Evrişimli Sinir Ağı Temelleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Evrişimli Sinir Ağı ile Görüntü İşleme",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Makina Mühendisliğinde Yapay Zeka Destekli Üretken Tasarım",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Prototipleme ve İmalatta Yapay Zeka",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "E. Kalay, A. Altınkaynak, E. Söylemez, E. Günpınar, E. Üstündağ, H. Yalçın, M. Kırca Ders notları, İstanbul, 2025"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=302"
  },
  "MYZ 303E": {
   "code": "MYZ 303E",
   "name": "İnşaat Mühendisliğinde Yapay Zeka",
+  "nameEn": "Artificial Intelligence in Civil Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -115,15 +188,87 @@
    "Hafta 13 · İnşaat Mühendisliği YZ Uygulaması - II",
    "Hafta 14 · İnşaat Mühendisliği YZ Uygulaması - III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Zeka’ya giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Yapay Zeka Temel Kavramları ve Teknikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Makine Öğrenimi ve Derin Öğrenme Kavramları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Veri Madenciliği ve Veri Hazırlama Teknikleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Sınıflandırma, kestirim ve kümeleme Kavramları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Regresyon Analizi ve Türleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Python ile YZ Uygulamaları/Kütüphanelerine genel bakış",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Tensorflow, Pytorch, Scikit Kütüphaneleri",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "YOLO algoritmaları ve Kütüphaneleri",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Model Başarısını Ölçme ve Değerlendirme Yöntemleri ve Metrikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "İnşaat Mühendisliği YZ Uygulaması - I",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "İnşaat Mühendisliği YZ Uygulaması - II",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "İnşaat Mühendisliği YZ Uygulaması - III",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Artificial Intelligence and Machine Learning Techniques for Civil Engineering, Vagelis Plevris, Afaq Ahmad, Nikos D. Lagaros, IGI Global, 2023"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=303"
  },
  "MYZ 304E": {
   "code": "MYZ 304E",
   "name": "Çevre Mühendisliğinde Yapay Zeka",
+  "nameEn": "Artificial Intelligence in Environmental Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -154,15 +299,87 @@
    "Hafta 13 · Çevre mühendisliği uygulaması - II",
    "Hafta 14 · Çevre mühendisliği uygulaması - III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Zekaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Lineer ve Non-lineer Ampirik Tahmin Modelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yapay Sinir Ağlarına Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Transfer/Aktivasyon Fonksiyonları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yapay Sinir Ağları Matematiksel Şeması ve Hesaplama",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Tanımlayıcı İstatistikler",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Python Temel Kodlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgisayar Destekli Hesaplamalar için Veri Hazırlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgisayar Destekli Veri İşlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Veri Görselleştirme Python: Matplotlib, numpy, plotly",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Bulut Hesaplama Platformları Jupyter Notebook AWS, Google cloud, Microsoft azure",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Çevre mühendisliği uygulaması - I",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Çevre mühendisliği uygulaması - II",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Çevre mühendisliği uygulaması - III",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Charu C. Aggarwal. Neural Networks and Deep Learning: A Textbook. 2nd Edition, Springer, 2023."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=304",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=304"
  },
  "MYZ 305": {
   "code": "MYZ 305",
   "name": "Harita Mühendisliğinde Yapay Zeka",
+  "nameEn": "Artificial Intelligence in Geomatics Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -193,15 +410,87 @@
    "Hafta 13 · Uygulama I: Geomatik Mühendisliğinde yapay zeka",
    "Hafta 14 · Uygulama I: Geomatik Mühendisliğinde yapay zeka"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay zekaya giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapay Zeka Temel Kavramları ve Teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Makine Öğrenimi ve Derin Öğrenme Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Veri hazırlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Keşifsel veri analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Regresyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Sınıflandırma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kümeleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Özellik mühendisliği, özellik seçimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Model başarısını değerlendirme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Zaman serileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Barber, David. Bayesian reasoning and machine learning. Cambridge University Press, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=305"
  },
  "MYZ 305E": {
   "code": "MYZ 305E",
   "name": "Harita Mühendisliğinde Yapay Zeka",
+  "nameEn": "Artificial Intelligence in Geomatics Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -232,15 +521,87 @@
    "Hafta 13 · Uygulama I: Geomatik Mühendisliğinde yapay zeka",
    "Hafta 14 · Uygulama I: Geomatik Mühendisliğinde yapay zeka"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay zekaya giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapay Zeka Temel Kavramları ve Teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Makine Öğrenimi ve Derin Öğrenme Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Veri hazırlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Keşifsel veri analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Regresyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Sınıflandırma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kümeleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Özellik mühendisliği, özellik seçimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Model başarısını değerlendirme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Zaman serileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama I: Geomatik Mühendisliğinde yapay zeka",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Barber, David. Bayesian reasoning and machine learning. Cambridge University Press, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=305"
  },
  "MYZ 306E": {
   "code": "MYZ 306E",
   "name": "Mimarlık, Planlama ve Tasarımda Yapay Zeka",
+  "nameEn": "Artificial Intelligence in Architecture, Planning and Design",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -273,18 +634,90 @@
    "Hafta 13 · Yapay Zeka Tabanlı Proje Geliştirme: Yapay Zeka Modelini Geliştirme Yapay Zeka Tabanlı Proje Geliştirme: Yapay Zeka Modelini Test Etme",
    "Hafta 14 · Güncel Vaka ve Proje İncelemeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Zekanın Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapay Zeka ile İlişkili Terminoloji",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Büyük Dil Modelleri: Türleri, Çalışma Prensipleri, İstemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yapay Zeka ve Etik: Standartlar ve Etik Düzenlemeler, Yasal Karşılıklar",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Yapay Zeka Yaklaşım, Araç ve Algoritmaları: Kavramsal Tasarım",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yapay Zeka Yaklaşım, Araç ve Algoritmaları: Temsil ve Çoklu Ortam Tasarımında",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yapay Zeka Yaklaşım, Araç ve Algoritmaları: Performans Analizinde",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yapay Zeka Yaklaşım, Araç ve Algoritmaları: Üretim/Yapım Süreci ve Kullanım Sonrasında",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yapay Zeka Tabanlı Proje Geliştirme: Yaklaşım Benimseme, Araç ve Algoritma Seçimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Yapay Zeka Tabanlı Proje Geliştirme: Veri Toplama",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yapay Zeka Tabanlı Proje Geliştirme: Veri Hazırlama ve Temizleme",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Yapay Zeka Tabanlı Proje Geliştirme: Yapay Zeka Modelini Geliştirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yapay Zeka Tabanlı Proje Geliştirme: Yapay Zeka Modelini Geliştirme Yapay Zeka Tabanlı Proje Geliştirme: Yapay Zeka Modelini Test Etme",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Güncel Vaka ve Proje İncelemeleri",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "As, I., & Basu, P. (Eds.). (2021). The Routledge companion to artificial intelligence in architecture. Routledge.",
    "As, I., Basu, P., & Talwar, P. (Eds.). (2022). Artificial intelligence in urban planning and design: Technologies, implementation, and impacts. Elsevier.",
    "Bernstein, P. (2022). Machine Learning: Architecture in the age of Artificial Intelligence (1st ed.). RIBA Publishing",
    "Chaillou, S. (2022). Artificial intelligence and architecture: from research to practice. Birkhäuser"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=306",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=306"
  },
  "MYZ 307": {
   "code": "MYZ 307",
   "name": "Elektrik-Elektronik Mühendisleri için Makine Öğrenmesi",
+  "nameEn": "Machine Learning for Electrical and Electronics Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -317,15 +750,87 @@
    "Hafta 13 · Derin Öğrenmede kullanılan eniyileyiciler (ADAM optimizer) ve temel omurga ağ mimarileri (ResNet).",
    "Hafta 14 · Derin öğrenmede kullanılan modern katman yapıları (Neural ODE, Physics-Informed Neural Networks, Transformers)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makine öğrenmesi, yapay zeka, derin öğrenme kavramları, öğrenme yaklaşımları (öğreticili, yarı öğreticili, öğreticisiz), büyük veri modelleme, öznitelik çıkarma, ölçekleme, normalizasyon.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Makine Öğrenmesinin temelleri. Kapasite, Aşırı uyum, Eksik uyum, Hiperparametreler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bayesçi öğrenme ve karar verme (Çok boyutlu Gauss dağılımı, kovaryans matrisi, Mahalonobis uzaklığı).",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Öğreticili öğrenme, sınıflandırıcı tasarımı, ayırt edici fonksiyon, karar eşiği, karar eğrisi, karar yüzeyi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Büyük veri önişleme, vektör uzayları ile ilgili temel kavramlar, temel bileşen analizi (PCA), LDA.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "k-NN, SVM sınıflandırıcılar. Performans metrikleri (F1, precision, recall).",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Öğreticisiz öğrenme (öbekleme, k-ortalamalı öbekleme, ağaç tabanlı öbekleyiciler).",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Yapay sinir ağları ile öğrenme. Perceptron, aktivasyon fonksiyonu, örnekler ve sezgiler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yapay sinir ağları ile öğrenme. karesel hatanın enküçüklenmesi, ileriye-geriye geçiş. Öğrenme parametrelerinin güncellenmesi.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Temel katmanlar: Konvolüsyonel yapay sinir ağları, Tekrarlayan Sinir Ağları, Otokodlayıcılar.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Konveks optimizasyon ile ağ parametrelerinin öğrenilmesi. SGD (Stochastic Gradient Descent).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Derin öğrenme uygulamaları. Sınıflandırma, tanıma, bölütleme, izleme, … Uygulamalara bağlı olarak kullanılan temel kayıp fonksiyonları. (BCE, MSE, AMSE).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Derin Öğrenmede kullanılan eniyileyiciler (ADAM optimizer) ve temel omurga ağ mimarileri (ResNet).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Derin öğrenmede kullanılan modern katman yapıları (Neural ODE, Physics-Informed Neural Networks, Transformers).",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=307",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=307"
  },
  "MYZ 307E": {
   "code": "MYZ 307E",
   "name": "Elektrik-Elektronik Mühendisleri için Makine Öğrenmesi",
+  "nameEn": "Machine Learning for Electrical and Electronics Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -358,15 +863,87 @@
    "Hafta 13 · Derin Öğrenmede kullanılan eniyileyiciler (ADAM optimizer) ve temel omurga ağ mimarileri (ResNet).",
    "Hafta 14 · Derin öğrenmede kullanılan modern katman yapıları (Neural ODE, Physics-Informed Neural Networks, Transformers)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makine öğrenmesi, yapay zeka, derin öğrenme kavramları, öğrenme yaklaşımları (öğreticili, yarı öğreticili, öğreticisiz), büyük veri modelleme, öznitelik çıkarma, ölçekleme, normalizasyon.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Makine Öğrenmesinin temelleri. Kapasite, Aşırı uyum, Eksik uyum, Hiperparametreler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bayesçi öğrenme ve karar verme (Çok boyutlu Gauss dağılımı, kovaryans matrisi, Mahalonobis uzaklığı).",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Öğreticili öğrenme, sınıflandırıcı tasarımı, ayırt edici fonksiyon, karar eşiği, karar eğrisi, karar yüzeyi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Büyük veri önişleme, vektör uzayları ile ilgili temel kavramlar, temel bileşen analizi (PCA), LDA.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "k-NN, SVM sınıflandırıcılar. Performans metrikleri (F1, precision, recall).",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Öğreticisiz öğrenme (öbekleme, k-ortalamalı öbekleme, ağaç tabanlı öbekleyiciler).",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Yapay sinir ağları ile öğrenme. Perceptron, aktivasyon fonksiyonu, örnekler ve sezgiler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yapay sinir ağları ile öğrenme. karesel hatanın enküçüklenmesi, ileriye-geriye geçiş. Öğrenme parametrelerinin güncellenmesi.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Temel katmanlar: Konvolüsyonel yapay sinir ağları, Tekrarlayan Sinir Ağları, Otokodlayıcılar.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Konveks optimizasyon ile ağ parametrelerinin öğrenilmesi. SGD (Stochastic Gradient Descent).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Derin öğrenme uygulamaları. Sınıflandırma, tanıma, bölütleme, izleme, … Uygulamalara bağlı olarak kullanılan temel kayıp fonksiyonları. (BCE, MSE, AMSE).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Derin Öğrenmede kullanılan eniyileyiciler (ADAM optimizer) ve temel omurga ağ mimarileri (ResNet).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Derin öğrenmede kullanılan modern katman yapıları (Neural ODE, Physics-Informed Neural Networks, Transformers).",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=307",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=307"
  },
  "MYZ 308E": {
   "code": "MYZ 308E",
   "name": "Deniz Teknolojisinde Yapay Zeka",
+  "nameEn": "Artificial Intelligence in Marine Technology",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -397,15 +974,73 @@
    "Hafta 13 · Deniz teknolojisi uygulaması - II",
    "Hafta 14 · Deniz teknolojisi uygulaması - III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay zekaya giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık ve istatistik"
+   },
+   {
+    "week": 3,
+    "topic": "Bayezyen ağları"
+   },
+   {
+    "week": 4,
+    "topic": "Optimizasyon"
+   },
+   {
+    "week": 5,
+    "topic": "Veri hazırlama"
+   },
+   {
+    "week": 6,
+    "topic": "Keşifsel veri analizi"
+   },
+   {
+    "week": 7,
+    "topic": "Regresyon ve sınıflandırma"
+   },
+   {
+    "week": 8,
+    "topic": "Kümeleme / özellik mühendisliği"
+   },
+   {
+    "week": 9,
+    "topic": "Takviyeli öğrenme"
+   },
+   {
+    "week": 10,
+    "topic": "Model seçimi"
+   },
+   {
+    "week": 11,
+    "topic": "Zaman serileri"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz teknolojisi uygulaması - I"
+   },
+   {
+    "week": 13,
+    "topic": "Deniz teknolojisi uygulaması - II"
+   },
+   {
+    "week": 14,
+    "topic": "Deniz teknolojisi uygulaması - III"
+   }
+  ],
   "textbooks": [
    "• Barber, David. Bayesian reasoning and machine learning. Cambridge University Press, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=308",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=308"
  },
  "MYZ 309": {
   "code": "MYZ 309",
   "name": "Matematik Mühendisliğinde Yapay Zeka",
+  "nameEn": "Artificial Intelligence in Mathematical Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -436,15 +1071,87 @@
    "Hafta 13 · Yapay sinir ağları ve yapay zeka uygulamaları",
    "Hafta 14 · Örneklerle yapay zeka uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri bilimi, istatistik, makine öğrenmesi ve yapay zeka arasındaki farklar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri biliminde iyi alışkanlıklar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Temel istatistik kavramları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Hızlandırılmış Python dersi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Güdümlü ve güdümsüz öğrenme, Çapraz doğrulama yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sınıflandırma ve öbekleme algoritmaları: k-en yakın komşu ve k-ortalamalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Lojistik regresyon ve Destek vektör makinesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Karar ağaçları ve rastgele ormanlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Toplu modeller: bire karşı bir ve bire karşı hepsi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sürekli modeller, Regresyon modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Sıradan en küçük kareler, destek vektör makinesi ve karar ağacı regresyon modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Düzenlileştirilmiş modeller; Ridge, lasso, elastik net regresyon modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Yapay sinir ağları ve yapay zeka uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Örneklerle yapay zeka uygulamaları",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "\"The Elements of Statistical Learning: Data Mining, Inference, and Prediction\", T. Hastie, R. Tibshirani, J. Friedman. (2009) Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=309",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=309"
  },
  "MYZ 309E": {
   "code": "MYZ 309E",
   "name": "Matematik Mühendisliğinde Yapay Zeka",
+  "nameEn": "Artificial Intelligence in Mathematical Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -475,15 +1182,87 @@
    "Hafta 13 · Yapay sinir ağları ve yapay zeka uygulamaları",
    "Hafta 14 · Örneklerle yapay zeka uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri bilimi, istatistik, makine öğrenmesi ve yapay zeka arasındaki farklar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri biliminde iyi alışkanlıklar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Temel istatistik kavramları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Hızlandırılmış Python dersi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Güdümlü ve güdümsüz öğrenme, Çapraz doğrulama yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sınıflandırma ve öbekleme algoritmaları: k-en yakın komşu ve k-ortalamalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Lojistik regresyon ve Destek vektör makinesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Karar ağaçları ve rastgele ormanlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Toplu modeller: bire karşı bir ve bire karşı hepsi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sürekli modeller, Regresyon modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Sıradan en küçük kareler, destek vektör makinesi ve karar ağacı regresyon modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Düzenlileştirilmiş modeller; Ridge, lasso, elastik net regresyon modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Yapay sinir ağları ve yapay zeka uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Örneklerle yapay zeka uygulamaları",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "\"The Elements of Statistical Learning: Data Mining, Inference, and Prediction\", T. Hastie, R. Tibshirani, J. Friedman. (2009) Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=309",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=309"
  },
  "MYZ 310E": {
   "code": "MYZ 310E",
   "name": "Fizikte Makine Öğrenmesi",
+  "nameEn": "Machine Learning in Physics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -517,15 +1296,87 @@
    "Hafta 13 · Veriye dayalı bilimsel ve mühendislik uygulamaları",
    "Hafta 14 · Proje sunumları ve değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İstatiksel öğrenme dersine giriş ve temel konuların özetlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık kuramı olarak belirsizlik ve hata aktarılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Veri formatları ve görselleştirme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Veri madenciliği ve veri indirgeme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Fiziksel ölçümler: rastgele durumların istatiksel dağılımları ve fikirler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kompleks fonksiyonların fit edilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Bilgisayar minimizasyonu ve hata matrisi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Gözetimli öğrenime giriş ve fizik problemlerine uygulanması",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Regresyon analizi için doğrusal metotlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sınıflandırma için doğrusal metotlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ek modeller, karar ağaçları ve ilgili metotlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Derin öğrenime giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Veriye dayalı bilimsel ve mühendislik uygulamaları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları ve değerlendirme",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "T. HASTIE, H. TIBSHIRANI, J. FRIEDMAN “ELEMENTS OF STATISTICAL LEARNING”, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=310",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=310"
  },
  "MYZ 311E": {
   "code": "MYZ 311E",
   "name": "Kimyada Yapay Zeka ve Makine Öğrenmesi",
+  "nameEn": "Artificial Intelligence and Machine Learning in Chemistry",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -562,17 +1413,75 @@
    "Hafta 13 · Uygulama: Sklearn ile makine öğrenmesi modellerinin oluşturulması ve test edilmesi",
    "Hafta 14 · Uygulama: Keras ile derin öğrenme modellerinin oluşturulması ve test edilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay zeka ve makine öğrenmesine giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Geleneksel makine öğrenmesi yöntemleri"
+   },
+   {
+    "week": 3,
+    "topic": "Derin öğrenme ve yapay sinir ağları yöntemleri"
+   },
+   {
+    "week": 4,
+    "topic": "Kimyasal veri ve tanımlayıcılar"
+   },
+   {
+    "week": 5,
+    "topic": "Modellerin istatiksel olarak değerlendirilmesi"
+   },
+   {
+    "week": 6,
+    "topic": "Kimyasal sentezde makine öğrenmesi uygulamaları"
+   },
+   {
+    "week": 7,
+    "topic": "Makine öğrenmesi ile malzeme tasarımı"
+   },
+   {
+    "week": 8,
+    "topic": "İlaç keşfi ve tasarımı için makine öğrenmesi uygulamaları"
+   },
+   {
+    "week": 9,
+    "topic": "Makine öğrenmesi ile hesaplamalı kimya yöntemlerinin birleştirilmesi"
+   },
+   {
+    "week": 10,
+    "topic": "Uygulama: Jupyter Notebook Kullanım Temelleri"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulama: Veri toplanması ve işlenmesi"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulama: RDKIT ile moleküllerin temsili"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama: Sklearn ile makine öğrenmesi modellerinin oluşturulması ve test edilmesi"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama: Keras ile derin öğrenme modellerinin oluşturulması ve test edilmesi"
+   }
+  ],
   "textbooks": [
    "Leach A., Gillet V., An Introduction to Chemoinformatics, Springer (2007)",
    "Cartwright H., Machine learning in chemistry: The impact of artificial intelligence, Royal Society of Chemistry (2020)",
    "Gasteiger J., Engel T., Chemoinformatics – A Textbook, Wiley-VCH (2003)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=311"
  },
  "MYZ 312": {
   "code": "MYZ 312",
   "name": "Meteorolojide Makine Öğrenmesi",
+  "nameEn": "Machine Learning in Meteorology",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -586,12 +1495,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=312"
  },
  "MYZ 313E": {
   "code": "MYZ 313E",
   "name": "Denizcilikte Yapay Zeka Uygulamaları",
+  "nameEn": "Applications of Artificial Intelligence in Maritime",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -605,7 +1514,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYZ&dersNo=313"
  }
 }

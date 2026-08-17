@@ -2,6 +2,7 @@
  "VBA 111E": {
   "code": "VBA 111E",
   "name": "Veri Bilimi ve Analitiğine Giriş",
+  "nameEn": "Introduction to Data Science and Analytics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -34,15 +35,87 @@
    "Hafta 13 · Optimizasyon teknikleri",
    "Hafta 14 · Veri biliminde etik ve hukuk"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri bilimi ve temel kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri analitiği araçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Veri görselleştirme araçları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Veri tabanı yönetim sistemleri ve SQL yapısı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Veri madenciliği",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Sinyal ve görüntü analitiği",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Büyük veri ve analitiği",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yüksek başarımlı hesaplama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Siber güvenlik",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Nesnelerin interneti ve bulut bilişim",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Makine öğrenmesi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgisayarlı görü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Optimizasyon teknikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Veri biliminde etik ve hukuk",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Baesens, B. (2014). Analytics in a big data world: The essential guide to data science and its applications. John Wiley & Sons"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=111"
  },
  "VBA 113E": {
   "code": "VBA 113E",
   "name": "Algoritmalar ve Programlamanın Temelleri",
+  "nameEn": "Foundations of Algorithm and Programming",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -76,15 +149,87 @@
    "Hafta 13 · Kütüphanelerle Çalışma - Pandas",
    "Hafta 14 · Web Kazıma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş Seviye Programlama ve Python - Temel Söz Dizimi, Değişkenler ve Veri Tipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kontrol Yapıları: Koşullu İfadeler - Boolean Mantığı, if, elif ve else İfadeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Kontrol Yapıları: Döngüler - while Döngüleri, for Döngüleri, break ve continue İfadeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Fonksiyonlar: Fonksiyon Tanımlama ve Çağırma, Fonksiyon Parametreleri ve Dönüş Değerleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Listeler ve Demetler",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Dizeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Sözlükler ve Kümeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Dosya Girdi/Çıktı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Hata Yönetimi ve İstisnalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kapsamlı İfadeler ve Lambda Fonksiyonları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Modüller ve Paketler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Kütüphanelerle Çalışma - NumPy",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Kütüphanelerle Çalışma - Pandas",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Web Kazıma",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Lambert, Kenneth A. Fundamentals of Python: First Programs. 3rd Edition. Boston, MA: Cengage Learning, 2019."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=113",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=113"
  },
  "VBA 115E": {
   "code": "VBA 115E",
   "name": "Linux Temelleri",
+  "nameEn": "Fundamentals of Linux",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -117,15 +262,87 @@
    "Hafta 13 · Uygulama geliştirme, Python",
    "Hafta 14 · Yazılım paketi oluşturulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Linux tarihçesi ve temel kavramlar, komut satırı temelleri, temel komutlar, Dizin I işlemleri, metin düzenleyicileri, uygulamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Linux dosya sistemi, disk ve dosya işlemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Yazılım yönetimi, paket yöneticileri kavram ve uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Farklı Linux işletim sistemi dağıtımların incelenmesi, farklılık",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sistem yönetimi ve süreçlerin(processes) izlenmesi, yapılandırması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ağ temelleri ve yönetimi, IP adresleri, alt ağlar, yapılandırma, temel ağ komutları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Temel güvenlik kavramları, güvenlik duvarı kullanımı, yapılandırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Sistem günlükleri, yorumlanması, hata giderme işlemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Linux sunucu yönetimi, yapılandırılması, izlenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Uygulama geliştirme, Kabuk betik (script) dilleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulama geliştirme, VALA",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulama geliştirme, c#, Java",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama geliştirme, Python",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılım paketi oluşturulması",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "The Linux Command Line, 2nd Edition: A Complete Introduction, W. Shotts,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=115",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=115"
  },
  "VBA 122E": {
   "code": "VBA 122E",
   "name": "Ayrık Matematik",
+  "nameEn": "Discrete Mathematics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -161,15 +378,87 @@
    "Hafta 13 · Sonlu Durum Makinaları ve Otomatları",
    "Hafta 14 · Turing Makinesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İspat Yöntemleri ve Tümevarım ile İspat",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fonksiyonların Büyümesi ve Algoritma Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Algoritma Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yineleme Bağıntıları ve Çözümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Geren Fonksiyonlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Üslü Geren Fonksiyonlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Sayılar Teorisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Graflara Giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Euler ve Hamilton Çevrimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "En Kısa Yol Algoritması, Düzlemsel Graflar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Ağaçlar, İzomorfizm, Huffman, Karar Ağaçları, Örten Ağaçlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Bool Cebri ve Kombinatoriyal Devreler",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Sonlu Durum Makinaları ve Otomatları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Turing Makinesi",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Introductory Combinatorics, R.A Brualdi, V. Ed 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=122",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=122"
  },
  "VBA 124E": {
   "code": "VBA 124E",
   "name": "Nesneye Yönelik Programlama",
+  "nameEn": "Object Oriented Programming",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -202,15 +491,87 @@
    "Hafta 13 · Şablonlar",
    "Hafta 14 · Nesne Yönelimli Kod Tasarım İlkeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, yazılım mühendisliğinin ilkeleri, kodun yeniden kullanılması ve genişletilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Prosedürel programlamanın temellerinin gözden geçirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Nesneler, veri soyutlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bilgi gizleme ve kapsülleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yapıcılar, yıkıcılar ve nesne oluşturma",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "İsim alanı ve referanslar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Sınıf metotları, metot aşırı yükleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Kalıtım",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kalıtım, çok biçimlilik",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Çok biçimlilik",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Soyut sınıflar ve metotlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "İstisnalar ve istisna yönetimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Şablonlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Nesne Yönelimli Kod Tasarım İlkeleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Mastering Object-Oriented Python: Build powerful applications with reusable code using OOP design patterns and Python 3.7, 2nd Edition, Steven F. Lott"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=124",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=124"
  },
  "VBA 210E": {
   "code": "VBA 210E",
   "name": "Lineer Cebir ve Uygulamaları",
+  "nameEn": "Linear Algebra and Applications",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -244,15 +605,87 @@
    "Hafta 13 · Doğrusal dönüşümler ve görüntü işlemede uygulamaları",
    "Hafta 14 · Kapsayıcı bir uygulama: Simpleks Yöntemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Doğrusal denklem sistemleri, Matrisler, Matris çarpımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Matris işlemlerinin cebirsel özellikleri, Özel tipte matrisler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Bir matrisin basamak formu ve rankı, Lineer sistemlerin çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Elemanter matrisler, Ters matris, Denk matrisler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Determinant ve özellikleri, Kofaktör açılımı ve matris tersi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Determinantların diğer uygulamaları, Cramer Kuralı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlemde ve üç boyutlu uzayda vektörler, Vektör uzayının tanımı, Alt uzaylar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Germe, Lineer bağımsızlık, Taban (Baz), Boyut",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ortonormalleştirme: Gram-Schmidt Yöntemi, Projeksiyon matrisi ve istatistikte bir uygulaması (En Küçük Kareler Yöntemi)",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Özdeğerler, Özvektörler ve stokastik modellemede uygulamaları (Markov geçiş matrisi)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Köşegenleştirme ve bir matrisin kuvveti, Pozitif ve yarı-pozitif tanımlı matrisler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Tekil Değer Ayrışması",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Doğrusal dönüşümler ve görüntü işlemede uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Kapsayıcı bir uygulama: Simpleks Yöntemi",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Lay, D. C., Lay, S. R., & McDonald, J. J. (2021). Linear Algebra and Its Applications (6th ed.). Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=210"
  },
  "VBA 211E": {
   "code": "VBA 211E",
   "name": "Veri Biliminde Deterministik Modeller",
+  "nameEn": "Deterministic Models in Data Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -290,15 +723,73 @@
    "Hafta 13 · Stokastik programlama modelleri",
    "Hafta 14 · Stokastik programlama modelleri uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse genel bir bakış; Modellemeye ve problem çözme sürecine giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal optimizasyon modelleri"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal modellerde duyarlılık analizi, gölge fiyatlar, indirgenmiş maliyetler"
+   },
+   {
+    "week": 4,
+    "topic": "Ağ optimizasyon modelleri"
+   },
+   {
+    "week": 5,
+    "topic": "Tam sayılı optimizasyon modelleri"
+   },
+   {
+    "week": 6,
+    "topic": "Tam sayılı optimizasyon modelleri"
+   },
+   {
+    "week": 7,
+    "topic": "Kombinatoryal optimizasyon modelleri"
+   },
+   {
+    "week": 8,
+    "topic": "Kombinatoryal optimizasyon modelleri"
+   },
+   {
+    "week": 9,
+    "topic": "Doğrusal olmayan optimizasyon modelleri"
+   },
+   {
+    "week": 10,
+    "topic": "Doğrusal olmayan optimizasyon modelleri uygulamaları"
+   },
+   {
+    "week": 11,
+    "topic": "Dinamik programlama modelleri"
+   },
+   {
+    "week": 12,
+    "topic": "Dinamik programlama modelleri uygulamaları"
+   },
+   {
+    "week": 13,
+    "topic": "Stokastik programlama modelleri"
+   },
+   {
+    "week": 14,
+    "topic": "Stokastik programlama modelleri uygulamaları"
+   }
+  ],
   "textbooks": [
    "Nagraj Balakrishnan, Barry Render, Ralph M. Stair, and Chuck Munson (2017). Managerial Decision Modeling: Business Analytics with Spreadsheets, 4th ed. DeG Press. Stephen P. Bradley, Arnoldo C. Hax, and Thomas L. Magnanti (1977). Applied Mathematical Programming. Addison Wesley. ISBN: 0-201-00464-X"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=211"
  },
  "VBA 213E": {
   "code": "VBA 213E",
   "name": "Veri Görselleştirme",
+  "nameEn": "Data Visualization",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -331,15 +822,87 @@
    "Hafta 13 · Kümeleme",
    "Hafta 14 · Zaman Serisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Teknikler ve Uygulama Alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Görselleştirme Yazılımları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Nicel Veriler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kategorik Veriler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Aykırı İşlemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kayıp İşlemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Ortalama Test İşlemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Karşılaştırma İşlemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Çapraz Tablolama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Korelasyon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Regresyon",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Faktör",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kümeleme",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Zaman Serisi",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Healy, K. (2018). Data visualization: a practical introduction. Princeton University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=213",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=213"
  },
  "VBA 215E": {
   "code": "VBA 215E",
   "name": "Veri Tabanı Yönetim Sistemleri",
+  "nameEn": "Database Management Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -372,15 +935,87 @@
    "Hafta 13 · Raporlama ve Görselleştirme",
    "Hafta 14 · Gerçek dünya uygulamalarının analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri – veri tabanı ve diğer temel kavramların tanıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri tabanı geçmişi – ilişkisel veri tabanı temel tanımları ve mimarisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İlişkisel veri modeli ve veri modelleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Temel SQL (Structured Query Language)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İleri SQL: Sorgu, tetikleyici, saklı yordamlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Veri Ambarı ve ETL araçlarına giriş",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "NoSQL veritabanlarına giriş ve İşletmelerde NoSQL veritabanlarının konumu",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "NoSQL veri tabanı modelleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Anahtar-Değer veritabanı modeli",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Geniş kolon veritabanı modeli",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Doküman temelli veritabanı modeli",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Çizge veritabanı modeli",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Raporlama ve Görselleştirme",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Gerçek dünya uygulamalarının analizi",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Database Systems, 2016, Ramez Elmasri, Shamkant B. Navathe, Peason"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=215"
  },
  "VBA 222E": {
   "code": "VBA 222E",
   "name": "Veri Yapıları ve Algoritmalar",
+  "nameEn": "Data Structures and Algorithms",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -414,15 +1049,87 @@
    "Hafta 13 · Sıralama Algoritmaları I",
    "Hafta 14 · Sıralama Algoritmaları II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Yapıları ve Modelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Algoritmik Program Tasarımı ve Analizi (Algoritma Karmaşıklığı)",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 3,
+    "topic": "Özyineleme, Soyut Veri Yapıları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bağlı Listeler I",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Bağlı Listeler II",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Yığıtlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Kuyruklar",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Çizgeler I",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Çizgeler II",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Ağaçlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Dengeli Arama Ağaçları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "İkili Arama Ağaçları",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Sıralama Algoritmaları I",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Sıralama Algoritmaları II",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Michael T. Goodrich, Roberto Tamassia, and Michael H. Goldwasser. Data Structures and Algorithms in Java, 6th Edition. Wiley. ; Jay Wengrow, A Common–Sense Guide to Data Structures and Algorithms, Pragmatic Bookshelf, 2020."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=222",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=222"
  },
  "VBA 224E": {
   "code": "VBA 224E",
   "name": "Veri Biliminde Stokastik Modeller",
+  "nameEn": "Stochastic Models in Data Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -454,15 +1161,87 @@
    "Hafta 13 · Sezgisel Optimizasyon Yöntemleri – Genetik Algoritmalar",
    "Hafta 14 · Çok Kriterli Optimizasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Olasılık Tekrarı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Stokastik Süreçlere ve Markov Zincirlerine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kesikli Zamanlı Markov Zincirleri – Durumlar, Sınıflar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kesikli Zamanlı Markov Zincirleri – Geçici ve Durağan Analiz",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Üstel ve Poisson Dağılımları, Poisson Süreçleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli Zamanlı Markov Zincirleri - Temel Yapı",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Sürekli Zamanlı Markov Zincirleri – Durağan Analiz",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Sıra Sistemleri – Doğuş ve Ölüm Süreci - M/M/1, M/M/k,M/M/k/N,G/M/1",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Benzetim - Monte Carlo Simülasyonu – Monte Carlo Simülasyonunun Temelleri, Rastgele Sayıların ve Rastgele Değişkenlerin Üretilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Benzetim - Monte Carlo Simülasyonu – Varyans Azaltma Teknikleri, Simülasyon Sonuçlarının Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Benzetim - Ajan Tabanlı Modeller – Ajanlar, Ortamlar, Etkileşimler, Ajan Davranışlarının ve Etkileşimlerin Tasarlanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Sezgisel Optimizasyon Yöntemleri – Simüle Edilmiş Tavlama, Tabu Arama",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Sezgisel Optimizasyon Yöntemleri – Genetik Algoritmalar",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Çok Kriterli Optimizasyon",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "S. Ross, Introduction to Probability Models, 13th edition, Elsevier"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=224",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=224"
  },
  "VBA 252E": {
   "code": "VBA 252E",
   "name": "Olasılık Teorisi",
+  "nameEn": "Theory of Probability",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -494,15 +1273,87 @@
    "Hafta 13 · Markov Zincirleri",
    "Hafta 14 · Limit Teoremleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kombinasyonal Analiz",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık Aksiyomları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Koşullu Olasılık ve Bağımsızlık",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tekrar",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Rassal Değişkenler (Kesikli)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Rassal Değişkenler (Kesikli ve Sürekli)",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Rassal Değişkenler (Sürekli)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Tekrar",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Bileşik Dağılımlı Rassal Değişkenler",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Bileşik Dağılımlı Rassal Değişkenler",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Beklenen Değerin Özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Tekrar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Markov Zincirleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Limit Teoremleri",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Sheldon Ross; A First Course in Probability, 7th Edition, Prentice Hall International Inc., 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=252",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=252"
  },
  "VBA 311E": {
   "code": "VBA 311E",
   "name": "İstatistik",
+  "nameEn": "Statistics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -537,15 +1388,87 @@
    "Hafta 13 · Varyans analizi",
    "Hafta 14 · Regresyon ve korelasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanımsal istatistik",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tanımsal istatistik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Merkezi eğilim ve dağılım ölçüleri",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 4,
+    "topic": "Grafikler ve frekans dağılımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Örnekleme ve tahmin etme",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Nokta ve aralık tahminleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 7,
+    "topic": "Nokta ve aralık tahminleri",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 8,
+    "topic": "İstatistiksel karar vermenin ilkeleri ve hipotez testleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ortalamalar, oranlar ve varyanslar için testler",
+    "outcomes": "4-5-7"
+   },
+   {
+    "week": 10,
+    "topic": "Ortalamalar, oranlar ve varyanslar için testler",
+    "outcomes": "4-5-7"
+   },
+   {
+    "week": 11,
+    "topic": "Ki-kare testleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Parametrik olmayan testler",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Varyans analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Regresyon ve korelasyon",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Walpole, Myers, Myers, Ye, Probability and Statistics for Engineers and Scientists, Pearson, 2013"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=311"
  },
  "VBA 312E": {
   "code": "VBA 312E",
   "name": "Veri Analitiği",
+  "nameEn": "Data Analytics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -578,15 +1501,87 @@
    "Hafta 13 · Boyut Azaltma Teknikleri - Temel Bileşen Analizi",
    "Hafta 14 · Boyut Azaltma Teknikleri - t-dağıtılmış Stokastik Komşu Gömme, UMAP"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Analitiğine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Regresyon – Doğrusal ve Polinom Regresyon",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 3,
+    "topic": "Sınıflandırma – KNN ve Naïve Bayes",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Lojistik Regresyon",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Makine Öğrenimi Modellerini Eğitme – Maliyet Fonksiyonları, Gradyan İniş Yöntemi",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Model Seçimi ve Parametre Optimizasyonu – Doğrulama, Çapraz Doğrulama, Grid Arama",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Düzenleme – Ridge, LASSO",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Karar Ağaçları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Topluluk Öğrenmesi - Bagging ve Random Forests",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Topluluk Öğrenmesi - Boosting",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Destek Vektör Makineleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Gözetimsiz Öğrenme – Kümeleme Teknikleri - k-means ve Hiyerarşik Kümeleme, Yoğunluk Tabanlı Teknikler",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Boyut Azaltma Teknikleri - Temel Bileşen Analizi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Boyut Azaltma Teknikleri - t-dağıtılmış Stokastik Komşu Gömme, UMAP",
+    "outcomes": "1-2-3-5"
+   }
+  ],
   "textbooks": [
    "Business Intelligence: Data Mining and Optimization for Decision Making, Vercellis, C., John Wiley & Sons, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=312"
  },
  "VBA 313E": {
   "code": "VBA 313E",
   "name": "Derin Öğrenme",
+  "nameEn": "Deep Learning",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -618,15 +1613,87 @@
    "Hafta 13 · Büyük Dil Modelleri - Transformer Modelleri ve Dikkat Mekanizmaları",
    "Hafta 14 · Derin Pekiştirmeli Öğrenme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derin Öğrenmeye Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sinir Ağlarının Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sinir Ağlarını Eğitme – Geri Yayılım, Kayıp Fonksiyonları, Dropout, Düzenleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Derin Öğrenme Çerçeveleri - TensorFlow, Keras, PyTorch",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Evrişimli Sinir Ağları (CNN'ler)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İleri Düzey CNN Mimarileri – İnce Ayar, Özellik Çıkarma ve Transfer Öğrenme (VGG, ResNet, Inception)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Tekrarlayan Sinir Ağları (RNN'ler) – Mimariler, Kaybolan Gradyan Sorunu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "GRU ve LSTM'ler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "RNN'lerle Doğal Dil İşleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Yenileyici Modeller - Otoenkoderler ve Varyasyonel Otoenkoderler (VAE'ler)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yenileyici Modeller - Generatif Karşıt Ağlar (GAN'lar)",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Büyük Dil Modelleri - GPT (Önceden Eğitilmiş Generatif Dönüştürücü) modeller",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Büyük Dil Modelleri - Transformer Modelleri ve Dikkat Mekanizmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Derin Pekiştirmeli Öğrenme",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2023). Dive into Deep Learning. Cambridge University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=313"
  },
  "VBA 315E": {
   "code": "VBA 315E",
   "name": "Makine Öğrenmesi",
+  "nameEn": "Machine Learning",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -659,15 +1726,87 @@
    "Hafta 13 · Finans ve Ticaret için Makine Öğrenimi",
    "Hafta 14 · Öneri Sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makine Öğrenimi Kavramlarının Genel Bakışı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Regresyon ve Sınıflandırma Teknikleri Genel Bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Özellik Mühendisliği Teknikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Veri İmputasyon Teknikleri ve Dengesiz Verilerle Başa Çıkma",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bayesian Makine Öğrenimi - Bayesian çıkarım, Gaussian Süreçler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Yapay Sinir Ağları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Kernel Regresyon Yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Grafik Tabanlı Makine Öğrenimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Anomali Tespiti - İstatistiksel yöntemler, İzolasyon Ormanı, Otoenkoderler",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "Açıklanabilir Yapay Zeka - SHAP, LIME",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Zaman Serisi Analizi ve Tahmin",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Doğal Dil İşleme",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Finans ve Ticaret için Makine Öğrenimi",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "Öneri Sistemleri",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=315"
  },
  "VBA 317E": {
   "code": "VBA 317E",
   "name": "Sinyal Ve Görüntü Analitiği",
+  "nameEn": "Signal and Image Analytics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -699,15 +1838,87 @@
    "Hafta 13 · Görüntü bölütleme",
    "Hafta 14 · Görüntü analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ayrık zamanlı sinyaller ve sistemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Ayrık Fourier dönüşümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Hızlı Fourier dönüşümü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Konvolüsyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Dalgacık dönüşümü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Veri elde etme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sayısal filtreler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sayısal görüntü işlemeye giriş",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Görüntü zenginleştirme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Görüntü restorasyonu",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Renk uzayları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Görüntü sıkıştırma",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Görüntü bölütleme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Görüntü analizi",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Diniz, P. S., Da Silva, E. A., & Netto, S. L. (2010). Digital signal processing: system analysis and design. Cambridge University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=317",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=317"
  },
  "VBA 319E": {
   "code": "VBA 319E",
   "name": "Veri Biliminde Etik ve Hukuk",
+  "nameEn": "Ethics and Law in Data Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -740,15 +1951,86 @@
    "Hafta 13 · Bilişim Alanında Suçlar",
    "Hafta 14 · Bilgisayarlarda, Bilgisayar Programlarında ve Kütüklerinde Arama, Kopyalama ve Elkoyma Tedbiri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgi, Etik ve Hukuk nedir?",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hukuk ve Etik İlişkisi nedir?",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Etik, Ahlak, Adalet, Hukuk arasındaki ilişkiler nelerdir?",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Veri bilimi nedir? Veri bilimi kapsamındaki hukuki konular nelerdir?",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kişisel Veri ve Kişisel verilerin işlenmesi ile ilgili kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İnsan hakları ve Kişisel Verilen korunması kanunu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Güvenliği ve Türkiye’de Kişisel Verilerin Korunması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kişisel Verilerin korunması ile ilgili diğer kanunlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bilişim Sistemine giriş, Elektronik ortamda sözleşmeler ve yapılan sözleşmelerin yasal çerçevesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Bilişim Ortamında Fikrî ve Sınai Haklar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "5651 Sayılı Kanun : İnternet Ortamında Yapılan Yayınların Düzenlenmesi Ve Bu Yayınlar Yoluyla İşlenen Suçlarla Mücadele Edilmesi",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "E-Ticaret"
+   },
+   {
+    "week": 13,
+    "topic": "Bilişim Alanında Suçlar",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Bilgisayarlarda, Bilgisayar Programlarında ve Kütüklerinde Arama, Kopyalama ve Elkoyma Tedbiri",
+    "outcomes": "2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Fairfield, J., & Shtein, H. (2014). Big data, big problems: Emerging issues in the ethics of data science and journalism. Journal of Mass Media Ethics, 29(1), 38-51."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=319",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=319"
  },
  "VBA 343E": {
   "code": "VBA 343E",
   "name": "Tavsiye Sistemleri",
+  "nameEn": "Recommender Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -781,12 +2063,83 @@
    "Hafta 13 · Derin öğrenme sistemleri ile öneri sistemleri",
    "Hafta 14 · Gerçek hayat uygulamalarının analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Öneri sistemlerine tanımı ve temel kavramlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bellek tabanlı işbirliğine dayalı filtreleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Model tabanlı işbirliğine dayalı filtreleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İçerik tabanlı öneri sistemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Öneri sistemlerinde sınıflandırma yöntemlerinin kullanımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Karma öneri sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Öneri sistemlerinin değerlendirilmesi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Öneri sistemlerinde temel zorluklar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sosyal medya ve öneri sistemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Lokasyon temelli hizmetler ve öneri sistemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Doğal dil işleme yöntemleri ile öneri sistemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Matris faktorizasyonu yöntemiyle ile öneri sistemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Derin öğrenme sistemleri ile öneri sistemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gerçek hayat uygulamalarının analizi",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Jannach D., Zanher M., Felfernig A. Friedrich G. (2011) Recommender Systems an Introduction",
    "Gorakakal S.K., Usuelli M. (2015) Building a Recommendation System With R, Packt Publishing",
    "Aggarwal C.C.(2016), Recomender Systems, Springer"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=343",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VBA&dersNo=343"
  }
 }

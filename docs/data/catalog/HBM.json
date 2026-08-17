@@ -2,6 +2,7 @@
  "HBM 511": {
   "code": "HBM 511",
   "name": "Bilimsel Hesaplama I",
+  "nameEn": "Scientific Computing I",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -37,6 +38,77 @@
    "Hafta 13 · Genelleştirilmiş En Küçük Artık (GMRES) algoritması",
    "Hafta 14 · Önkoşullama ve uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sonlu aritmetik, hatalar, bir problemin koşul sayısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Algoritmaların kararlılığı, makina sayıları ile hesap",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Vektör ve matris uzayları, vektör ve matris normları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrusal denklem sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Gauss elemesi, pivotlama, LU ayrıştırımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Cholesky ayrıştırımı, Givens döndürmeleri, bant matrisler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Özdeğer problemi, Jacobi yöntemi, kuvvet yöntemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Gram-Schmidt dikleştirimi ve QR algoritması",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 9,
+    "topic": "Doğrusal sistemler için iteratif yöntemler ve hata analizi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Jacobi, Gauss-Seidel ve SOR yöntemleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Durağan olmayan iteratif yöntemler",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Krylov alt uzayları, Conjugate Gradient yöntemi",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Genelleştirilmiş En Küçük Artık (GMRES) algoritması",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Önkoşullama ve uygulamaları"
+   }
+  ],
   "textbooks": [
    "1. W. Gander, M. J. Gander, F. Kwok, (2014) “Scientific Computing”, Springer.",
    "2. A. Tveito, H. P. Langtangen, B. F. Nielsen, X. Cai (2010) “Elements of Scientific Computing”, Springer.",
@@ -44,12 +116,12 @@
    "4. L. N. Trefethen, D. Bau Ill (1997) “Numerical Linear Algebra”, SIAM.",
    "5. R. L. Burden, J. D. Faires (2017) “Numerical Analysis 9th Edn”, Brooks/Cole."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=511"
  },
  "HBM 513E": {
   "code": "HBM 513E",
   "name": "Parallel&Distributed Comput.",
+  "nameEn": "Parallel&Distributed Comput.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -84,6 +156,77 @@
    "Hafta 13 · Paylaşım Bellekli Programlama III: Meraklı, dizin, dağıtık dizin tabanlı önbellek eşevreli sistemler",
    "Hafta 14 · Tamamlayıcı Ders + Dönem Projesi Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Koşutluğa giriş",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Koşut hesaplama mimarileri",
+    "outcomes": "1-2-5-6-7"
+   },
+   {
+    "week": 3,
+    "topic": "Bellek hiyerarşisi",
+    "outcomes": "1-3-5-6-7"
+   },
+   {
+    "week": 4,
+    "topic": "Önbellek, sanal bellek ve programlama performansı",
+    "outcomes": "1-3-5-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Mesaj aktarımlı hesaplama I: noktadan noktaya, eşzamanlı, eşzamansız mesaj aktarımı",
+    "outcomes": "1-2-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Mesaj aktarımlı hesaplama II: Tamponlu, tamponsuz haberleşme, toplu haberleşmeler",
+    "outcomes": "1-2-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Koşut Teknikler I: Mükemmel düzeyde koşut algoritmalar, ideal koşut hesaplama",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Koşut Teknikler II: Bölütleme, böl ve yönet stratejileri, ardışıklaştırılmış hesaplamalar",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Koşut Teknikler III: Eş zamanlı ve veri koşut hesaplamalar",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Koşut Teknikler IV: Dinamik yük dengeleme ve sonlandırma tespit algoritmaları",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Paylaşım Bellekli Programlama I: Mimari, izlekler, paylaşılmış veri, önbellek eşevreli",
+    "outcomes": "1-3-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Paylaşım Bellekli Programlama II: OpenMP’ye giriş, talimatlar ve değişken paylaşımı",
+    "outcomes": "1-3-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Paylaşım Bellekli Programlama III: Meraklı, dizin, dağıtık dizin tabanlı önbellek eşevreli sistemler",
+    "outcomes": "1-3-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Tamamlayıcı Ders + Dönem Projesi Sunumları"
+   }
+  ],
   "textbooks": [
    "Wilkinson, B. ve Allen, M. (1999). Parallel Programming, Prentice Hall.",
    "Pacheco, P.S. (1997). Parallel Programming With MPI, Morgan Kaufmann.",
@@ -91,12 +234,12 @@
    "Gropp,W., Lusk, E. ve Skjellum, A. (1999). Using MPI, MIT Press.",
    "Grama, A., Gupta, A., Karypis, G. ve Kumar, V. (2003). Introduction to Parallel Computing, 2. Baskı, Pearson & Addision Wasley."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=513"
  },
  "HBM 516E": {
   "code": "HBM 516E",
   "name": "Scientific Visualization",
+  "nameEn": "Scientific Visualization",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -130,6 +273,77 @@
    "Hafta 13 · Visit",
    "Hafta 14 · Catalyst ile Yerinde Görselleştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel Görselleştirme (Temel Tanımlar, Renk Teorisi)",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayar Grafiği (Nesne ve Mesh Tanımları ve Dönüşümler)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bilimsel Veri Gösterimi (Veri Yapıları, Ön Veri, Temel Veri Formatları)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Görselleştirme Araçları (VTK Mimarisi)",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 5,
+    "topic": "Görselleştirme Akışı",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 6,
+    "topic": "Veri İşletme (Filtreleme, Dönüşüm ve Interpolasyon)",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 7,
+    "topic": "Görsel Eşleme ve Teknikleri",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 8,
+    "topic": "Sayıl Veri ve Eş Yüzeyler (Direk Olmayan Hacim Oluşturma Teknikleri)",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 9,
+    "topic": "Hacim Oluşturma (Direk Teknikler)",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Yöney Görselleştirme",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Zaman Tabanlı Görselleştirme (Animasyon)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Büyük Modellerin Görselleştirilmesi",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Visit",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 14,
+    "topic": "Catalyst ile Yerinde Görselleştirme"
+   }
+  ],
   "textbooks": [
    "Charles D. Hansen and Chris Johnson, The Visualization Handbook (1st Edition), Academic Press, 2004.",
    "Helen Wright, Introduction to Scientific Visualization, Springer, 2007.",
@@ -137,12 +351,12 @@
    "Will Schroeder, Ken Martin, Bill Lorensen, Visualization Toolkit: An Object-Oriented Approach to 3D Graphics, 4th edition, Kitware, 2006",
    "Gregory M. Nielson, Heinrich Müller, Hans Hagen, Scientific Visualization: Overviews, Methodologies, and Techniques, IEEE Press, 1997."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=516",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=516"
  },
  "HBM 538E": {
   "code": "HBM 538E",
   "name": "Mat.Met.in Data Ana.&Mac.Lear.",
+  "nameEn": "Mat.Met.in Data Ana.&Mac.Lear.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -176,6 +390,77 @@
    "Hafta 13 · Evrişimsel sinir ağları ve öğrenme fonksiyonu",
    "Hafta 14 · Çizgelerde öbek tayini"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Matris uzayları, matrislerin çarpanlara ayrılışı, ortogonal matrisler",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Özdeğer ve özvektörler, artı ve yarı-artı tanımlı matrisler, tekil değer ayrıştırımı (TDA)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Eckart-Young Teoremi, vektör ve matris normları, temel bileşen analizi (TBA)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "En küçük kareler yöntemi ve analizi",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 5,
+    "topic": "Ax=b lineer denklem sistemi ve çözüm yolları",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Özdeğer ve tekil değerlerin bulunmasında hesaplamalı yöntemler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Üstel matrisler ve matrislerin türevleri, tekil değerlerin türevleri ve analizi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 8,
+    "topic": "TDA, LU, QR ayrıştırımları ve eyer noktalarının hesaplanması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Minmax problemi ve eyer noktalarıyla ilişkisi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Fonksiyon minimizasyonu, gradyan iniş yöntemi ve hızlandırılması",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Stokastik gradyan iniş yöntemi ve analizi",
+    "outcomes": "1-3-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Yapay sinir ağları ve geri yayılım algoritması, kısmi türevler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Evrişimsel sinir ağları ve öğrenme fonksiyonu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Çizgelerde öbek tayini"
+   }
+  ],
   "textbooks": [
    "Gilbert Strang, (2019) “Linear Algebra and Learning from Data”, Wellesley-Cambridge Press.",
    "W. Martinez, A. Martinez, J. Sofka (2010) “Exploratory Data Analysis with MATLAB”, Chapman & Hall CRC Press.",
@@ -183,12 +468,12 @@
    "Slawomir Kuziel, Xin-She Yang (2011) “Computational Optimization, Methods and Algorithms”, Springer.",
    "Wei Qi Yan, (2021) “Computational Methods for Learning”, Springer"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=538",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=538"
  },
  "HBM 539": {
   "code": "HBM 539",
   "name": "Uygulamalı Biyoinformatik",
+  "nameEn": "Applied Bioinformatics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -202,12 +487,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=539",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=539"
  },
  "HBM 596": {
   "code": "HBM 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -251,6 +536,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -263,12 +619,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=596"
  },
  "HBM 597E": {
   "code": "HBM 597E",
   "name": "Uzmanlık Alan Dersi",
+  "nameEn": "Specialization Field Course",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -285,12 +641,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=597",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=597"
  },
  "HBM 615E": {
   "code": "HBM 615E",
   "name": "Hesaplamalı Bilim ve Mühendislikte İleri Konular",
+  "nameEn": "Advanced Topics in Computational Science and Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -304,12 +660,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=615",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=615"
  },
  "HBM 621E": {
   "code": "HBM 621E",
   "name": "Chemoinformatics",
+  "nameEn": "Chemoinformatics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -345,6 +701,77 @@
    "Hafta 13 · Sanal tarama ve kenetlenme",
    "Hafta 14 · Birleşimsel kimya ve kütüphane tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kemoenformatiğin gelişimi ve kapsamı",
+    "outcomes": "1-2-6-7"
+   },
+   {
+    "week": 2,
+    "topic": "2 boyutlu moleküler yapıların simgelenmesi ve işlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "3 boyutlu moleküler yapıların simgelenmesi ve işlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "SMILES – Molekül ve rekasiyonlar icin bir bilgisayar dili",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Veritabanları ve veri kaynakları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Fiziksel ve kimyasal verilerin hesaplanması: moleküler mekanik ve quantum mekaniği",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "I. Veri analizi için metotlar: kimyada özdevimli öğrenme, sinir ağları, evrimsel algoritmalar ve kümeleme teknikleri",
+    "outcomes": "4-8"
+   },
+   {
+    "week": 8,
+    "topic": "II. Veri analizi için metotlar: kimyada özdevimli öğrenme, sinir ağları, evrimsel algoritmalar ve kümeleme teknikleri",
+    "outcomes": "4-8"
+   },
+   {
+    "week": 9,
+    "topic": "Moleküler tanımlayıcılar",
+    "outcomes": "3-5-6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal yapı – aktivite ilişkisi",
+    "outcomes": "3-5-6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Benzerlik metotları",
+    "outcomes": "3-5-6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Yüksek giripçıktılı tarama verilerinin analizi",
+    "outcomes": "3-5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Sanal tarama ve kenetlenme",
+    "outcomes": "3-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Birleşimsel kimya ve kütüphane tasarımı"
+   }
+  ],
   "textbooks": [
    "A. R. Leach and V. J. Gillet, An Introduction to Chemoinformatics, Springer, 2007.",
    "J. Gasteiger, Handbook of Chemoinformatics, Wiley, 2003.",
@@ -352,12 +779,12 @@
    "J. Bajorath, Chemoinformatics: Concepts, Methods, and Tools for Drug Discovery, Humana Press, 2004.",
    "A. Varnek and A. Tropsha, Chemoinformatics Approaches to Virtual Screening, RSC Publishing, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=621",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=621"
  },
  "HBM 631E": {
   "code": "HBM 631E",
   "name": "Comp.Ass.Drug Des.:Funda.&App.",
+  "nameEn": "Comp.Ass.Drug Des.:Funda.&App.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -391,18 +818,89 @@
    "Hafta 13 · Farmakofor Modellemesi, Biçim Bazlı Yöntemler",
    "Hafta 14 · AUTODOCK ile Protein-Ligant Kenetlenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İlaç Keşfi ve İlaç Tasarımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "İstatistiksel Regresyon ve Kısmi En Küçük Kareler Analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Konformasyonel Analiz ve Moleküler Yüzeyler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Lipofilisite ve Partisyon Katsayısı (Log P)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İlaç Tasarımında Kullanılan Hesaplama Yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Veritabanları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "2D Nicel Yapı Aktivite İlişkileri",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "3D-QSAR Karşılaştırmalı Moleküler Alan Analizi (CoMFA)",
+    "outcomes": "1-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "3D-QSAR: Karşılaştırmalı Moleküler Benzerlik Analizi (CoMSIA)",
+    "outcomes": "1-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Kenetlenme Yöntemleri: Arama Algoritmaları, Puanlama, Sonuçların Doğrulanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sanal Tarama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Homoloji Model Yapılanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Farmakofor Modellemesi, Biçim Bazlı Yöntemler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "AUTODOCK ile Protein-Ligant Kenetlenmesi"
+   }
+  ],
   "textbooks": [
    "David Young (2009), Computational Drug Design: A Guide for Computational and Medicinal Chemists, Wiley.",
    "Kenneth M. Merz, Jr., Dagmar Ringe, Charles H. Reynolds (2010), Drug Design: Structure- and Ligand-Based Approaches, Cambridge University Press.",
    "Matthias Dehmer, Kurt Varmuza, Danail Bonchev, Frank Emmert-Streib. (2012), Statistical Modelling of Molecular Descriptors in QSAR/QSPR,Wiley-Blackwell.",
    "Paul S. Charifson (1997) Practical Application Of Computer-Aided Drug Design CRC Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=631",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=631"
  },
  "HBM 696": {
   "code": "HBM 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -446,6 +944,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -458,12 +1027,12 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=696"
  },
  "HBM 801": {
   "code": "HBM 801",
   "name": "Temel Bilişim Yazılımları",
+  "nameEn": "Fundamental Software of Informatics",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -527,6 +1096,77 @@
    "Hafta 13 · Veri yapıları: Soyut Veri Tipleri, Diziler, Yığınlar, kuyruklar ve hash tablosu",
    "Hafta 14 · Veri yapıları: Kuyruklar, Ağaçlar, Hash Tablosu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Linux İşletim Sistemi: Dosya Sistemleri, Kernel, Temel Komutlar",
+    "outcomes": "1-16"
+   },
+   {
+    "week": 2,
+    "topic": "Linux İşletim Sistemi: Vi ve Sed Metin Düzenleyicileri, AWK Betikleri Yazma",
+    "outcomes": "1-14-16"
+   },
+   {
+    "week": 3,
+    "topic": "Kabuk programlama",
+    "outcomes": "14"
+   },
+   {
+    "week": 4,
+    "topic": "Gnuplot Grafik Hazırlama Uygulaması",
+    "outcomes": "15"
+   },
+   {
+    "week": 5,
+    "topic": "Fortran: Programlama Mantığı, Veri İşleme, Yapı Blokları",
+    "outcomes": "13-16"
+   },
+   {
+    "week": 6,
+    "topic": "Fortran: Döngüler, Diziler, Girdi ve Çıktıların Düzenlenmesi, Makefile",
+    "outcomes": "13-16"
+   },
+   {
+    "week": 7,
+    "topic": "Fortran: Bilim ve Mühendislik Uygulamaları",
+    "outcomes": "13-16"
+   },
+   {
+    "week": 8,
+    "topic": "Octave: Octave’ ın Temelleri ve Octave ile Sayısal Hesaplama",
+    "outcomes": "13-16"
+   },
+   {
+    "week": 9,
+    "topic": "Octave: Bilim ve Mühendislik Uygulamaları",
+    "outcomes": "13-16"
+   },
+   {
+    "week": 10,
+    "topic": "Python: Python’ a giriş",
+    "outcomes": "13-16"
+   },
+   {
+    "week": 11,
+    "topic": "Python: Numpy, Scipy, Matplotlib",
+    "outcomes": "13-16"
+   },
+   {
+    "week": 12,
+    "topic": "Python: Bilim ve Mühendislik Uygulamaları",
+    "outcomes": "13-16"
+   },
+   {
+    "week": 13,
+    "topic": "Veri yapıları: Soyut Veri Tipleri, Diziler, Yığınlar, kuyruklar ve hash tablosu",
+    "outcomes": "12-16"
+   },
+   {
+    "week": 14,
+    "topic": "Veri yapıları: Kuyruklar, Ağaçlar, Hash Tablosu"
+   }
+  ],
   "textbooks": [
    "J. Keogh ve K. Davidson, Data Structures Demystified, McGraw-Hill, 2004.",
    "J. Keogh ve K. Davidson, Data Structures Demystified, McGraw-Hill, 2004.",
@@ -559,12 +1199,12 @@
    "A. Robbins ve N. H. F. Beebe, Shell Scripting, O’Reilly Media, 1st. Ed., 2005.",
    "A. Robbins ve N. H. F. Beebe, Shell Scripting, O’Reilly Media, 1st. Ed., 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=801",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=801"
  },
  "HBM 803E": {
   "code": "HBM 803E",
   "name": "Object Orient.Prog.Techn.",
+  "nameEn": "Object Orient.Prog.Techn.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -599,6 +1239,77 @@
    "Hafta 13 · STL ile Uygulamalar: Arama, Sıralama, vb.",
    "Hafta 14 · Üçüncül Kütüphaneler ile Uygulama: netCDF, …"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş (Eclipse IDE, Temel Yapılar)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Hafıza Kullanımı (Adresler, Diziler and Çıktı Birimleri)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Nesne Tabanlı Programlamaya Giriş (Nesne ve Sınıflar)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Operatör Aşırı Yükleme (Temel Operatörler, Tip Dönüşümleri)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Kalıtım ve Ad Alanı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Çok Biçimlilik ve Sanal Fonksyonlar",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Çoklu Kaynak Kodu Yönetimi ve “Makefile” Yapısı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Çok Biçimlilik ve Şablonlar",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Hata Yönetimi (Özel Durumlar, Makrolar ve Hata Ayıklama)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Katar Sınıfı ve Girdi/Çıktı Operasyonları",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Standard Şablon Kütüphanesi’nin (STL) Kullanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Üçünçül Kütüphanelerin Kullanımı (Octave)",
+    "outcomes": "1-2-3-4-7"
+   },
+   {
+    "week": 13,
+    "topic": "STL ile Uygulamalar: Arama, Sıralama, vb.",
+    "outcomes": "1-2-3-4-7"
+   },
+   {
+    "week": 14,
+    "topic": "Üçüncül Kütüphaneler ile Uygulama: netCDF, …"
+   }
+  ],
   "textbooks": [
    "Deitel and Deitel, 2006. C++ How to program, Prentice Hall",
    "Drodzek, A., 2004. Data structures and and algorithms in C++ (3rd \u2028Edition), Course Technology, 776 pages",
@@ -606,7 +1317,6 @@
    "Stroustrup, B., 1997. The C++ Programming Language (3rd Edition), Addison-Wesley Professional, 1040 pages",
    "Eckel, B., 2000. Thinking in C++: Introduction to Standard C++, Volume One (2nd Edition) (Vol 1), Prentice Hall, 814 pages"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=803",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HBM&dersNo=803"
  }
 }

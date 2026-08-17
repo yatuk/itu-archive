@@ -2,6 +2,7 @@
  "DUM 501E": {
   "code": "DUM 501E",
   "name": "Engineering Mathematics",
+  "nameEn": "Engineering Mathematics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -36,6 +37,77 @@
    "Hafta 13 · Analitik fonksiyonlar ve Kompleks fonksiyonlar",
    "Hafta 14 · Kompleks fonksiyonlar ve integralleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Vektörel analize giriş; skaler ve vektörel büyüklükler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Vektörel alanlar; iş, akı, sirkülasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Eğrisel integral ve mühendislik uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Düzlemde Green Teoremi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yüzey alanı ve yüzey integralleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Stoks teoremi ve mühendislik uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Genel ve mühendislik ugulamaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Diverjans teoremi ve mühendislik ugulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Özel koordinat sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Ortogonal eğrisel koordinatlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulama ve problem çözümleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Karmaşık değişken, kompleks değişkenli elamanter",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Analitik fonksiyonlar ve Kompleks fonksiyonlar",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Kompleks fonksiyonlar ve integralleri"
+   }
+  ],
   "textbooks": [
    "Spiegel M.R. (2001), Advanced Mathematics for Engineers and Scientists, McGraw-Hill, Schaum’s Outline Series. 2. Hildebrand F.B. (1976), Advanced Calculus for Applications, M.I.T. 3. Spiegel M.R. (1994), Theory and Problems of Complex Variables, McGraw-Hill, Schaum’s Outline Series. 4. Thomas G.B. and Finney R.L. (1998), Calculus and Analytic Geometry, 9th Edition, Naval Postgraduate School-Monterey, M.I.T. 5. Hildebrand F.B. (1976), Applied Mathematics for Engineers, M.I.T.",
    "Spiegel M.R. (2001), Advanced Mathematics for Engineers and Scientists, McGraw-Hill, Schaum’s Outline Series.",
@@ -44,12 +116,12 @@
    "Thomas G.B. and Finney R.L. (1998), Calculus and Analytic Geometry, 9th Edition, Naval Postgraduate School-Monterey, M.I.T.",
    "Hildebrand F.B. (1976), Applied Mathematics for Engineers, M.I.T."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=501"
  },
  "DUM 505E": {
   "code": "DUM 505E",
   "name": "Denizcilik Örgütleri/Birlikleri",
+  "nameEn": "Maritime Organizations",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -81,18 +153,89 @@
    "Hafta 13 · Ulusal denizcilik kurumları",
    "Hafta 14 · Ulusal denizcilik kurumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uluslararası örgüt oluşumunu ve tanınırlığı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası örgüt oluşumunu ve tanınırlığı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "UN ve Uluslararası Denizcilik Örgütü (IMO)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "UN ve Uluslararası Denizcilik Örgütü (IMO)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "UN ve Uluslararası Denizcilik Örgütü (IMO)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Diğer uluslararası denizcilik kurumları; ILO (Uluslararası Çalışma Örgütü)",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "EMSA (Avrupa Birliği Denizcilik Emniyeti Ajansı) European Maritime Safety Agency",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "International Hydrographic Organization-IHO, International Chamber of Shipping, Baltic and International Maritime Council-BIMCO",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "International Association of Marine Aids to Navigation and Lighthouse Authorities-IALA",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Imso, Iacs, Impa, Itf",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Ocımf, Sıgtto, Intertanko",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "IAMU-International Association of Maritime Universities, IAME-International Association of Maritime Economists, vb.",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Ulusal denizcilik kurumları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Ulusal denizcilik kurumları"
+   }
+  ],
   "textbooks": [
    "Archer, C., 2015. International Organizations, 4th Ed., Routledge, NY, ISBN: 978-0-415-61475-7.",
    "Bekiashev, K.A. and Serebriakov, V.V., 1981. International Maritime Organization, Martinus Nijhoff Publishers, ISBN: 90-247-2464-3.",
    "Nordquist, M.H. and Moore, J.N., 1999. Current Maritime Issues and the International Maritime Organization, Center For Oceans Law and Policy, Martinus Nijhoff Publishers, ISBN: 90-411-1293-6.",
    "Ders notu (Lecturer’s notes)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=505"
  },
  "DUM 511": {
   "code": "DUM 511",
   "name": "Gemilerde Enerji Yönetimi",
+  "nameEn": "Ship Energy Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -126,6 +269,77 @@
    "Hafta 13 · Yardımcı makinelerin verimli işletimi",
    "Hafta 14 · Gemilerin verimli işletimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enerji kavramı, enerji çeşitleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji dönüşüm prensipleri ve verim",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemilerde enerji verimliliği ile ilgili Uluslararası sözleşmeler (SEEMP, EEDI, EOI)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemilerde enerji verimliliğine etki eden faktörler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi dizaynının enerji verimliliğine etkileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemilerde tahrik sitemlerinin enerji verimliliğine etkileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Gemilere ana makine seçimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Gemilere tahrik sistemi seçimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Gemilere yardımcı makine seçimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Atık ısının kullanım yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemilerde atık ısının kullanımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Ana makinelerin verimli işletimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Yardımcı makinelerin verimli işletimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Gemilerin verimli işletimi"
+   }
+  ],
   "textbooks": [
    "Bejan, Adrian (2006), Advanced Engineering Thermodynamics, John Wiley and Sons, New York",
    "Anthony F. Molland (2008),The Maritime Engineering Reference Book: A Guide to Ship Design, Construction and Operation, Elsevier",
@@ -133,12 +347,12 @@
    "C. N. Hughes (1989), Shipping: A Techno-Economic Approach, LLP, London.",
    "C. N. Hughes (1989), Shipping: Ship Perormance, LLP,London."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=511"
  },
  "DUM 518": {
   "code": "DUM 518",
   "name": "Denizcilikte Risk Yönetimi",
+  "nameEn": "Maritime Risk Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -171,6 +385,77 @@
    "Hafta 13 · TMSA’nın gözden geçirilmesi (TMSA 12 Elementi; 1- Yönetim, Liderlik ve Sorumluluk, 2- Kara Personelinin Güçlendirilmesi ve İdaresi, 3- Gemi Personelinin Güçlendirilmesi ve İdaresi, 4- Bakım ve Güvenilirlik Standartları, 5- Seyir Emniyeti, 6- Yük, Balast ve Halat (Bağlama) Operasyonları)",
    "Hafta 14 · TMSA’nın gözden geçirilmesi (7- Değişim Yönetimi, 8- Kaza araştırma ve analizleri, 9- Emniyet Yönetimi, 10- Çevre Yönetimi, 11- Acil durumlara hazırlık ve beklenmedik olayların planlanması, 12- Ölçüm, analiz ve (iyileştirme) düzeltmeleri)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel risk kavramları; güvenilirlik, tehlike, olasılık ve olasılık dağılımları, sebep-sonuç ilişkilerinin belirlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tehlike ve riskin tanımlanması, risk analiz teknikleri (nitel ve nicel risk değerlendirmeleri)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Risk analiz tekniklerinin kullanımı (Hata Ağacı Analizi (FTA), Olay Ağacı Analizi (ETA), Tehlike Analizleri (HA), Hata Şekilleri, Etki ve Kritiklik Analizi (FMECA))",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Risk yönetimi (ISO: 31000)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Risk algılamaları ve risk gösterimleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Risk analiz çıktılarının değerlendirilmesi, riskin kabul edilebilirliği",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Risk azaltma yöntemleri, risk kontrol seçenekleri, emniyet önlemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Fayda maliyet değerlendirmesi ve karar verme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Denizcilikte kaza ve kaza sebepleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Denizcilikte emniyet kavramı ve emniyet değerlendirmeleri, Tankerlerde Yönetim ve Öz Değerlendirme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Denizcilikte risk değerlendirme metotları ve uygulamaları (TMSA dahilinde)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Formal Emniyet Değerlendirmesi (FSA) ve örnek uygulama",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "TMSA’nın gözden geçirilmesi (TMSA 12 Elementi; 1- Yönetim, Liderlik ve Sorumluluk, 2- Kara Personelinin Güçlendirilmesi ve İdaresi, 3- Gemi Personelinin Güçlendirilmesi ve İdaresi, 4- Bakım ve Güvenilirlik Standartları, 5- Seyir Emniyeti, 6- Yük, Balast ve Halat (Bağlama) Operasyonları)",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "TMSA’nın gözden geçirilmesi (7- Değişim Yönetimi, 8- Kaza araştırma ve analizleri, 9- Emniyet Yönetimi, 10- Çevre Yönetimi, 11- Acil durumlara hazırlık ve beklenmedik olayların planlanması, 12- Ölçüm, analiz ve (iyileştirme) düzeltmeleri)"
+   }
+  ],
   "textbooks": [
    "Kristiansen, S. (2005), Maritime Transportation Safety Management and Risk Analysis, Elsevier Butterworth Heinemann, Burlington.",
    "Managing Risk in Shipping: A Practical Guide (1999), The Nautical Science Institute.",
@@ -182,12 +467,12 @@
    "Mandaraka-Sheppard, A., Modern maritime law and risk management, London: Informa, 2009.",
    "ISO: 31000 Risk Management, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=518",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=518"
  },
  "DUM 520": {
   "code": "DUM 520",
   "name": "Deniz Ulaş.Örgütsel Psikoloji",
+  "nameEn": "Organizational Psychology in Maritime Transportation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -222,6 +507,77 @@
    "Hafta 13 · Örgütlerde çatışma yönetimi; Çatışma tipleri, çatışma kaynakları ve çatışma giderim yaklaşımları",
    "Hafta 14 · Denizcilik sektöründe çatışma yönetimi ve bu konudaki makalelerin incelenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Örgütsel Davranış ve Psikolojisi’ne giriş: Örgütsel psikolojinin tarihsel gelişimi, yönetim ve davranış bilimleri arasındaki ilişkiler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kişilik ve kişisel farklılıkların analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Örgüt içinde birey; bireysel davranışın temelleri, değerler, tutumlar ve iş tatmini",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Örgütlerde motivasyon: motivasyona genel bakış, motivasyon teorileri, bilişsel yetenek",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Denizcilik sektöründe motivasyona ilişkin olarak yapılmış çalışmalar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Örgütlerde ekip yönetimi: Takım, ekip ve grup kavramları, ekip oluşturma, ekip verimliliğini etkileyen faktörler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "İnsan makine etkileşimi, insan kaynaklı deniz kazalarının önlenmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Liderlik: Liderlik teorileri, lider ve yönetici arasındaki farklılıklar",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 9,
+    "topic": "İş ortamında amaç karşıtı davranışlar, psikolojik şiddet",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi adamı iş performansı değerlendirmesi ve geri bildirim",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kişilerarası ilişkiler ve iletişim; İletişim stilleri",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 12,
+    "topic": "Denizcilik sektöründe iletişim stilleri ve bu konudaki makalelerin incelenmesi",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 13,
+    "topic": "Örgütlerde çatışma yönetimi; Çatışma tipleri, çatışma kaynakları ve çatışma giderim yaklaşımları",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 14,
+    "topic": "Denizcilik sektöründe çatışma yönetimi ve bu konudaki makalelerin incelenmesi"
+   }
+  ],
   "textbooks": [
    "Anderson, N. (2009). Handbook of industrial, work and organizational psychology: personnel psychology‎, (Editörler) Öneş, S, D., Sinangil, K, H., Viswervaran, C. Literatür yayıncılık.",
    "Eren, E .(2010). Örgütsel davranış ve yönetim psikolojisi, Beta yayınevi.",
@@ -229,12 +585,12 @@
    "Jex, M, S., Britt, T,W. (2008). Organizational psychology, A Scientist-Practitioner Approach - 2nd Edition, John Willey & sons publication.",
    "Furnham, A. (2005).The psychology of behaviour at work: the individual in the organization‎. Academic press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=520",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=520"
  },
  "DUM 521E": {
   "code": "DUM 521E",
   "name": "Maritime Safety Engineering",
+  "nameEn": "Maritime Safety Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -267,17 +623,88 @@
    "Hafta 13 · Denizcilik emniyet yönetimi sisteminin gözlem ve denetlenmesi",
    "Hafta 14 · Davranış ve seçim odaklı emniyet yönetiminin denizcilikteki önemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Emniyet esasları ve modern emniyet yönetimi prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Emniyet yönetimine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Emniyet yönetiminin temel öğeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Emniyet analizi teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Emniyet analizi teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Emniyet analizi teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Denizcilik emniyet yönetim sistemi performans ölçüm yöntem ve araçları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilik emniyet yönetim sistemi performans ölçüm yöntem ve araçları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Biçimsel Emniyet Değerlendirmesi (BED): BED’in prensipleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Biçimsel Emniyet Değerlendirmesi (BED): BED’in sayısallaştırılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Biçimsel Emniyet Değerlendirmesi (BED): BED’in sayısallaştırılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Denizcilik emniyet yönetimi sisteminin gözlem ve denetlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Denizcilik emniyet yönetimi sisteminin gözlem ve denetlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Davranış ve seçim odaklı emniyet yönetiminin denizcilikteki önemi"
+   }
+  ],
   "textbooks": [
    "Gustin, J.F. (2008). Safety Management: A Guide for Facility Managers. The Fairmont Press, Lilburn.",
    "Kristiansen, S. (2005) Maritime transportation: Safety management and risk analysis. Elsevier Butterworth-Heinemann, Oxford.",
    "Spellman, F.R., Whiting, N.E. (2010). The Handbook of Safety Engineering: Principles and Applications. An imprint of The Scarecrow Press, Inc, Maryland."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=521"
  },
  "DUM 525E": {
   "code": "DUM 525E",
   "name": "Rese.Metho.in Marit.Trans.Eng.",
+  "nameEn": "Rese.Metho.in Marit.Trans.Eng.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -309,6 +736,77 @@
    "Hafta 13 · Tez yazımı",
    "Hafta 14 · Araştırma bulgularının yaygınlaştırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma ve tez",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma felsefesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bilimsel araştırmada etik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nicel araştırma süreci",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Problem tanımlama; hipotezlerin/araştırma sorularının belirlenmesi ve araştırma tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Örnekleme; örneklem türleri tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Veri toplama; veri türleri; anket formu tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Güvenilirlik ve geçerlilik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "İstatistik yazılımları ile veri analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Nitel araştırma süreci",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Nicel araştırma süreci",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Nicel ve nitel araştırma yöntemlerinin karşılaştırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Tez yazımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma bulgularının yaygınlaştırılması"
+   }
+  ],
   "textbooks": [
    "Adam Weintrit, Tomasz Neumann, Methods and Algorithms in Navigation, 2011, CRC Press,",
    "Frankfort, C. and Nachmias, D., 2000: Research Methods in the Social Sciences,6th ed. New York: Worth Publishers.",
@@ -320,12 +818,12 @@
    "Trochim, W.M.K., 2001: Research Methods Knowledge Base. Cornell University.",
    "Alireza Haghighat, 2014, Monte Carlo Methods for Particle Transport, CRC Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=525"
  },
  "DUM 527": {
   "code": "DUM 527",
   "name": "Liman ve Terminal Yönetimi",
+  "nameEn": "Port and Terminal Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -359,6 +857,77 @@
    "Hafta 13 · Limanlarda Bilişim Sistemleri ve Otomasyon",
    "Hafta 14 · Liman emniyeti ve Türkiye’de Limanlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Taşıma türleri, Limancılık Terimleri ve Temel Kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Liman ve terminal tasarım, limanların idari yapısı ve organizasyonu , Dünya’da liman trendleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Liman ve terminal tasarımı, Limanlarda Altyapı ve Terminaller",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Terminal Türleri I : Konteyner, Ro-Ro ve Yolcu Terminalleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Terminal Türleri II : Sıvı ve Kuru Dökme Yük Terminalleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Terminal Operasyonları I: Yükleme, Tahliye ve İstif",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Terminal Operasyonları II: Kapı, CFS, Depolama, Gümrük ve Lojistik",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Limancılık Ekonomisi I: Operasyonların Verimliliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Limancılık Ekonomisi II: İşgücü ve Vardiya Planlaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Limancılık Ekonomisi III: Liman Pazarlaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Liman Otoritesi ve Yanaşma Prosedürleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Limancılık ile Alakalı Uluslararası Anlaşmalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Limanlarda Bilişim Sistemleri ve Otomasyon",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Liman emniyeti ve Türkiye’de Limanlar"
+   }
+  ],
   "textbooks": [
    "Song, D.W. and Panayides, P. M., 2012, Maritime Logistics: A Complete Guide to Effective Shipping and Port Management, 1st Edition",
    "Agerschou, H., 2004, Planning and Design of Ports And Marine Terminals, 2nd Edition.",
@@ -369,56 +938,12 @@
    "Baykal R. “Limanlar ve Terminaller”, Birsen Yayınevi, 2012",
    "Yasalar, Yönetmelikler, Yönergeler (Laws, Regulations, Instructions)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=527",
-  "fetchedAt": "2026-08-12T21:49:46Z"
- },
- "DUM 529E": {
-  "code": "DUM 529E",
-  "name": "Maritime Technology&Innovation",
-  "language": "English",
-  "credits": {
-   "theory": 3,
-   "practice": 0,
-   "lab": 0,
-   "local": 3,
-   "ects": 7.5
-  },
-  "description": "Teknoloji ve yenilik yönetimi temel kavramları; teknoloji ve yenilik yönetiminin denizcilik endüstrisi stratejik yönetim süreçleri içerisindeki yeri ve önemi; denizcilik endüstrisine yönelik teknoloji ve yenilik yönetimi stratejileri geliştirilmesi; teknoloji ve yenilik yönetiminin denizcilik endüstrisi stratejik yönetim süreçleri ile entegrasyonu; deniz endüstrisi alanında hizmet veren düşük, orta ve yüksek teknolojili organizasyonlarının teknoloji ve yenilik yönetimi yaklaşımlarının analizi ve geliştirilmesi. Basic terms of Technology and Innovation Management; The Importance of Technology and Innovation Management in Strategic Management Processes of Maritime Industry; Development of Technology and Innovation Management Strategy for Maritime Industry; Integration of Technology and Innovation Management with Maritime Industry Strategic Management Processes; Analysis and Development of Technology and Innovation Management Approaches of Low, Medium and High Tech Organizations in Maritime Industry.",
-  "outcomes": [
-   "Teknoloji ve yenilik ile ilgili temel kavram ve prensipleri tanımlayabilir.",
-   "Teknoloji ve yenilik yönetiminin denizcilik endüstrisi kritik süreçleri içerisindeki yeri ve önemini anlayabilir.",
-   "Denizcilik endüstrisinin teknoloji ve yenilik yönetimi ihtiyaçlarını tespit edebilir.",
-   "Denizcilik endüstrisi stratejik süreçleri içerisine teknoloji ve yenilik yönetimini entegre edebilir.",
-   "Teknoloji ve yenilik yönetimi izleme ve değerlendirme sistemi oluşturabilir."
-  ],
-  "weeklyTopics": [
-   "Hafta 1 · Teknoloji ve yenilik yönetimi temel kavramları",
-   "Hafta 2 · Teknoloji ve yenilik yönetimi temel kavramları",
-   "Hafta 3 · Teknoloji ve yenilik yönetiminin denizcilik endüstrisi stratejik yönetim süreçleri içerisindeki yeri ve önemi",
-   "Hafta 4 · Teknoloji ve yenilik yönetiminin denizcilik endüstrisi stratejik yönetim süreçleri içerisindeki yeri ve önemi",
-   "Hafta 5 · Denizcilik endüstrisine yönelik teknoloji ve yenilik yönetimi stratejileri geliştirilmesi",
-   "Hafta 6 · Denizcilik endüstrisine yönelik teknoloji ve yenilik yönetimi stratejileri geliştirilmesi",
-   "Hafta 7 · Denizcilik endüstrisine yönelik teknoloji ve yenilik yönetimi stratejileri geliştirilmesi",
-   "Hafta 8 · Teknoloji ve yenilik yönetiminin denizcilik endüstrisi stratejik yönetim süreçleri ile entegrasyonu",
-   "Hafta 9 · Teknoloji ve yenilik yönetiminin denizcilik endüstrisi stratejik yönetim süreçleri ile entegrasyonu",
-   "Hafta 10 · Teknoloji ve yenilik yönetiminin denizcilik endüstrisi stratejik yönetim süreçleri ile entegrasyonu",
-   "Hafta 11 · Deniz endüstrisi alanında hizmet veren düşük, orta ve yüksek teknolojili organizasyonlarının teknoloji ve yenilik yönetimi yaklaşımlarının analizi",
-   "Hafta 12 · Deniz endüstrisi alanında hizmet veren düşük, orta ve yüksek teknolojili organizasyonlarının teknoloji ve yenilik yönetimi yaklaşımlarının analizi",
-   "Hafta 13 · Deniz endüstrisi alanında hizmet veren düşük, orta ve yüksek teknolojili organizasyonlarının teknoloji ve yenilik yönetimi yaklaşımlarının analizi",
-   "Hafta 14 · Deniz endüstrisi alanında hizmet veren düşük, orta ve yüksek teknolojili organizasyonlarının teknoloji ve yenilik yönetimi yaklaşımlarının analizi"
-  ],
-  "textbooks": [
-   "Burgelman R., Christensen C., Maidique M., Wheelwright S. (2007) Strategic Management of Technology and Innovation. McGraw Hill.",
-   "Friedman, R.S. (2008) Principle Concepts of Technology and Innovation Management - Critical Research Models.IGI Global.",
-   "Schilling, M. (2006) Strategic Management of Technological Innovation. McGraw Hill.",
-   "White, M.A. and Bruton, G.D. (2010) The Management of Technology and Innovation: A Strategic Approach. South-Western Cengage Learning."
-  ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=529",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=527"
  },
  "DUM 531E": {
   "code": "DUM 531E",
   "name": "Kiralama ve Brokerlik",
+  "nameEn": "Chartering and Brokering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -450,18 +975,205 @@
    "Hafta 13 · Çarter partiden doğan ihtilaflar",
    "Hafta 14 · Anlaşmazlıklar ve tahkim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi kiralamaya giriş,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Market yapısı ve brokerlik,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Brokerin rolü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Broker yetkileri ve sorumlulukları,",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kiralama terimleri, Kiralama sözleşmeleri,",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Çerter parti klozları,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Navlunun tahsili",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Acenta işlemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Tarafların sorumluluk ve ödevleri,",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Kiralama çeşitleri,",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Liman performansı, Starya ve sürastarya hesabı,",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi alım satımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çarter partiden doğan ihtilaflar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Anlaşmazlıklar ve tahkim"
+   }
+  ],
   "textbooks": [
    "Pagonis, J. T., The Chartering Practice Manual,Dimelis Publication, 2009.",
    "Gorton L., Ihre R., Hillenius P.,Sandevarn A., Shipbroking and Chartering Practice, Informa Law,2009",
    "Stopforth, Martin, Maritime Economics, London: Routledge, 2005.",
    "Brodie, Peter R, Commercial Shipping Handbook 2nd Ed. 2006."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=531",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=531"
+ },
+ "DUM 539E": {
+  "code": "DUM 539E",
+  "name": "Deniz Taşımacılığında Alternatif Yakıtlar",
+  "nameEn": "Alterna.Fuels in Mariti.Trans.",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Emisyon azaltma teknolojileri, hava kirliliğini önlemeye yönelik denizcilik sözleşmeleri ve stratejileri, alternatif deniz yakıtlarıyla alakalı sözleşmeler ve rehberler, gaz ve sıvı haldeki alternatif deniz yakıtlarının fiziksel, kimyasal ve yakıt çeşidine has özellikleri, alternatif deniz yakıtlarının üretim yöntemleri ve işlemleri, alternatif deniz yakıtlarına ait yanma konseptleri, alternatif deniz yakıtlarına ait depolama yöntemleri, devre elemanları ve ana makine modifikasyonları, alternatif deniz yakıtlarıyla gemi operasyonları, risk değerlendirmesi ve tehlike kontrolü, acil durumlar Emission abatement technologies, maritime conventions and strategies for air pollution prevention, alternative marine fuel rules, regulations, and guidelines, physical, chemical, and special properties of gaseous and liquid alternative marine fuels, production processes and methods of alternative marine fuels, combustion concepts for alternative marine fuels, fuelling, storage, and main engine systems of alternative marine fuels, shipboard operations with alternative marine fuels, risk assessment and hazard control, emergency situations",
+  "outcomes": [
+   "Uluslararası deniz taşımacılığının emisyonlar açısından durumunu, emisyon azaltma yöntemlerini ve emisyonları azaltmaya yönelik uluslararası denizcilik kurallarını öğrenir",
+   "Gemilerde kullanılan alternatif yakıtların fiziksel ve kimyasal özelliklerini öğrenir",
+   "Gemilerde kullanılan alternatif yakıtların yanma konseptlerini öğrenir",
+   "Gemilerde kullanılan alternatif yakıtların depolama, transfer ve gemi ana makinesinde yakılması ile alakalı sistem ve prosedür gerekliliklerini değerlendirir",
+   "Gemilerde kullanılan alternatif yakıtlarla alakalı rutin gemi operasyonlarını, acil durumları ve risk değerlendirmesini anlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Gemi kaynaklı emisyonlar, emisyon azaltma teknolojileri ve alternatif deniz yakıtları",
+   "Hafta 2 · Hava kirliliğini önlemeye yönelik denizcilik sözleşmeleri ve stratejileri",
+   "Hafta 3 · Alternatif deniz yakıtlarıyla alakalı uluslararası denizcilik sözleşmeleri ve rehberleri",
+   "Hafta 4 · Gaz haldeki alternatif deniz yakıtlarının fiziksel, kimyasal ve yakıt çeşidine has özellikleri",
+   "Hafta 5 · Sıvı haldeki alternatif deniz yakıtlarının fiziksel, kimyasal ve yakıt çeşidine has özellikleri",
+   "Hafta 6 · Alternatif deniz yakıtlarının üretim yöntemleri ve işlemleri",
+   "Hafta 7 · Alternatif deniz yakıtlarının yaşam döngüsü",
+   "Hafta 8 · Geleneksel gemi dizel makineleri ve alternatif deniz yakıtları için çift yakıtlı yanma konsepti",
+   "Hafta 9 · Alternatif deniz yakıtları için ileri yanma konseptleri",
+   "Hafta 10 · Alternatif deniz yakıtlarına ait depolama yöntemleri ve devre elemanları",
+   "Hafta 11 · Alternatif deniz yakıtları için ana makine ve yardımcı makinelere ait sistemler",
+   "Hafta 12 · Alternatif deniz yakıtlarıyla gemi operasyonları",
+   "Hafta 13 · Alternatif deniz yakıları için risk değerlendirmesi ve tehlike kontrolü",
+   "Hafta 14 · Alternatif yakıtlarla ilgili acil durumlar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi kaynaklı emisyonlar, emisyon azaltma teknolojileri ve alternatif deniz yakıtları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hava kirliliğini önlemeye yönelik denizcilik sözleşmeleri ve stratejileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Alternatif deniz yakıtlarıyla alakalı uluslararası denizcilik sözleşmeleri ve rehberleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gaz haldeki alternatif deniz yakıtlarının fiziksel, kimyasal ve yakıt çeşidine has özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sıvı haldeki alternatif deniz yakıtlarının fiziksel, kimyasal ve yakıt çeşidine has özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Alternatif deniz yakıtlarının üretim yöntemleri ve işlemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Alternatif deniz yakıtlarının yaşam döngüsü",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Geleneksel gemi dizel makineleri ve alternatif deniz yakıtları için çift yakıtlı yanma konsepti",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Alternatif deniz yakıtları için ileri yanma konseptleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Alternatif deniz yakıtlarına ait depolama yöntemleri ve devre elemanları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Alternatif deniz yakıtları için ana makine ve yardımcı makinelere ait sistemler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Alternatif deniz yakıtlarıyla gemi operasyonları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Alternatif deniz yakıları için risk değerlendirmesi ve tehlike kontrolü",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Alternatif yakıtlarla ilgili acil durumlar"
+   }
+  ],
+  "textbooks": [
+   "Singh, A. P., Sharma, Y. C., Mustafi, N. N., Agarwal, A. K. (Eds.). (2020). Alternative Fuels and Their Utilization Strategies in Internal Combustion Engines. Springer Nature Singapore Pte. Ltd. ISBN 978-981-15-0417-4",
+   "Singh, A. P., Agarwal, R. A., Agarwal, A. K., Dhar, A., Shukla, M. K. (Eds.) (2018). Prospects of Alternative Transportation Fuels. Springer. ISBN 978-981-10-7517-9",
+   "Ramadhas, A. S. (Ed.) (2011). Alternative Fuels for Transportation. CRC Press, Taylor & Francis Group. ISBN 978-1-4398-1957-9",
+   "Heywood, J. B. (2018). Internal Combustion Engine Fundamentals, Second Edition. McGraw-Hill Education. ISBN 9781260116106",
+   "Maurya, R. K. (2018). Characteristics and Control of Low Temperature Combustion Engines, Employing Gasoline, Ethanol and Methanol. Springer International Publishing AG. ISBN 978-3-319-68507-6"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=539"
  },
  "DUM 596E": {
   "code": "DUM 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -505,6 +1217,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -517,12 +1300,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=596"
  },
  "DUM 601": {
   "code": "DUM 601",
   "name": "Deniz Sigorta Hukuku&Analizi",
+  "nameEn": "Deniz Sigorta Hukuku&Analizi",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -554,6 +1337,77 @@
    "Hafta 13 · Yargı kararlarının değerlendirilmesi",
    "Hafta 14 · Uygulama ve örnekler üzerinde çalışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sigorta sözleşmesi, unsurları, tarafları,",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Taraflara düşen borç ve yükümlülükler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sigorta himayesi ve sigorta kapsamı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik rizikolarına karşı sigortalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Tekne ve makine teçhizat sigortası, ek sigortalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "(P&I) koruma ve tazminat sigortası",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "\"Karşılıklı\" ve \"sabit\" çalışma sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "\"Muafiyetler\", \"halefiyet\"",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yük sigortaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "FDND (navlun, sürastarya ve savunma giderlerine ilişkin sigorta) incelenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "CMR (uluslararası kara nakliye sigortası) ve diğer sigortaların incelenmesi, değerlendirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Denizcilik sigortaları konusunda yaşanan sorunları incelemek, çözüm önerileri getirmek",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Yargı kararlarının değerlendirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama ve örnekler üzerinde çalışma"
+   }
+  ],
   "textbooks": [
    "Clarke, M. A., \"The law of insurance contracts\", London 2009",
    "Butterworth insurance law handbook\", London, 2009",
@@ -561,12 +1415,12 @@
    "Haywards, H., \"Insurance law handbook\", West Sussex: Tottel Pub., 2008",
    "Cox, R., \"Private International law of insurance\", London, 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=601"
  },
  "DUM 607E": {
   "code": "DUM 607E",
   "name": "Marine Engine Design&Princi.",
+  "nameEn": "Marine Engine Design&Princi.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -598,6 +1452,77 @@
    "Hafta 13 · Yakıt ve yağlama yağı sistemleri",
    "Hafta 14 · Motor tipleri ve Motor test işlemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Diesel motorları teorisi ve aşırı doldurma teorisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yakıtlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yanma",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Isıl Yükler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Emme sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Egzost sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Pistonlar, segmanlar ve laynerler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Yataklar",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Motorun dengelenmesi ve burulma titreşimleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Dizel Motorlarında kullanılan malzemeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "İlk hareket sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Soğutma sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Yakıt ve yağlama yağı sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Motor tipleri ve Motor test işlemleri."
+   }
+  ],
   "textbooks": [
    "Doug Woodyard (2008), Pounder’s Marine Diesel Engines and Gas Turbines, Butterworth-Heinemann, 9th edition.",
    "Klaus Mollenhauer and Helmut Tschöke (2010), Handbook of Diesel Engines, Springer.",
@@ -605,12 +1530,12 @@
    "Heywood, J.B. (1998), Internal Combustion Engine Fundamentals, McGraw Hill Press, Second Edition.",
    "Qianfan Xin (2011), Diesel engine system design, Woodhead Publishing Limited."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=607",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=607"
  },
  "DUM 615E": {
   "code": "DUM 615E",
   "name": "Deniz Ulaştırma Müh.Özel Konu.",
+  "nameEn": "Adv.Top.in Mariti.Transp.Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -642,16 +1567,87 @@
    "Hafta 13 · Ders açıldığında duyurulacaktır.",
    "Hafta 14 · Ders açıldığında duyurulacaktır."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Ders açıldığında duyurulacaktır.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Ders açıldığında duyurulacaktır."
+   }
+  ],
   "textbooks": [
    "Derste kullanılacak kaynaklar her dönem dersin içeriğine uygun olarak belirlenecektir.",
    "References for course will be specified according to course description in every semester."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=615",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=615"
  },
  "DUM 624E": {
   "code": "DUM 624E",
   "name": "Modelling&Simulati.in Mariti.",
+  "nameEn": "Modelling&Simulati.in Mariti.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -684,6 +1680,77 @@
    "Hafta 13 · Simülasyon ve Denizcilik Uygulamaları",
    "Hafta 14 · M&S’a bağlı karar destek sistemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Modelleme ve Simülasyon (M&S) yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mühendislik problemlerinde modelleme ve analiz ile çözüm metotları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "M&S yöntemlerinin simülasyonlarda kullanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Discrete-zaman modellemesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kontrol simülasyonları ve dinamik sistem simülasyonları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Akıllı Sistemler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "2 ve 3 boyutlu simülatör uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kullanıcı arabirimi ve diğer simülasyon arayüzleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Markov Süreci ve Monte Karlo Simülasyonları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Simülasyon Projelerinde Sistem Mühendisliği Yaklaşımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Simülasyon Yazılım Uygulamaları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Simülasyon Projesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Simülasyon ve Denizcilik Uygulamaları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "M&S’a bağlı karar destek sistemleri."
+   }
+  ],
   "textbooks": [
    "John A. Sokolowski, Catherine M. Banks, “Principles of Modeling and Simulation: A Multidisciplinary Approach,” Wiley; 1 edition, 2009, ISBN-10: 0470289430.",
    "Harold Klee and Randal Allen, “Simulation of Dynamic Systems with MATLAB and Simulink,” Second Edition, CRC Press; 2 edition (February 16, 2011), ISBN-10: 1439836736",
@@ -693,12 +1760,12 @@
    "George S. Fishman, “Discrete-Event Simulation: Modeling, Programming and Analysis”, Springer-Verlag New York, Inc., 2001.",
    "Jerry Banks, “Handbook of Simulation: Principles, Methodology, Advances Applications, and Practice”, John Wiley & Sons, Inc., 1998."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=624",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=624"
  },
  "DUM 628E": {
   "code": "DUM 628E",
   "name": "Maritime Organization Manage.",
+  "nameEn": "Maritime Organization Manage.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -733,6 +1800,77 @@
    "Hafta 13 · Gemi Kaptanı olarak etkin örgüt yönetimini gerçekleştirme ve değerlendirme yöntemleri",
    "Hafta 14 · Gemi Kaptanı olarak etkin örgüt yönetimini gerçekleştirme ve değerlendirme yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi ve şirket organizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Denizcilik organizasyonları ve örgütler arası ilişkiler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Denizcilikte iş tatmini ve örgütsel bağlılık",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik sektöründe motivasyon faktörleri. Denizci olma ve denize bağlanma",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "STCW liderlik unsurları, gemide liderlik uygulamaları ve değerlendirmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemide takım çalışması. Şirkette takım çalışması. Denizcilik örgütleri olarak takım çalışması ve değerlendirmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Organizational climate on board. Situation in multi-cultural crew and assessment",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilik şirketlerinde ve denizcilikte örgüt kültürü değerlendirmeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Communication functions and communication in organization",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi-şirket-kara haberleşmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemide sosyal yaşama ilişkin yorumlar ve gemide çatışma yönetimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Gemide stres yönetimi ve değerlendirmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi Kaptanı olarak etkin örgüt yönetimini gerçekleştirme ve değerlendirme yöntemleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi Kaptanı olarak etkin örgüt yönetimini gerçekleştirme ve değerlendirme yöntemleri"
+   }
+  ],
   "textbooks": [
    "IMO, Personal Safety and Social Responsibilities, Model Course 1.21, 2000",
    "IMO, Crowd Management, Passenger Safety, Model Course 1.28, 2000.",
@@ -741,12 +1879,12 @@
    "Manuel, M.E., Maritime risk and organizational learning, Burlington/Ashgate, 2011.",
    "Theotokas, I. and Harlaftis, G., Leadership in world shipping: Greek family firms in international business, Palgrave Macmillan, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=628",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=628"
  },
  "DUM 636E": {
   "code": "DUM 636E",
   "name": "Deniz ve Diğer Yüzer Yapılı Güneş Enerji Sistemleri",
+  "nameEn": "Marine and Other Floating Solar Energy Systems",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -760,12 +1898,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=636",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=636"
  },
  "DUM 696E": {
   "code": "DUM 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -809,6 +1947,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -821,7 +2030,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=696"
  }
 }

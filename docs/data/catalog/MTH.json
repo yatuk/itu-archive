@@ -2,6 +2,7 @@
  "MTH 101": {
   "code": "MTH 101",
   "name": "Calculus I",
+  "nameEn": "Calculus I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -34,15 +35,87 @@
    "Hafta 13 · Belirli İntegralin Uygulamaları",
    "Hafta 14 · Belirli İntegralin Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fonksiyonlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Transandan Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "L’Hôpital Kuralı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İntegrasyon Teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Genelleştirilmiş İntegraller",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Thomas' Calculus (13th Edition) G. B. Thomas, M. D. Weir J. R. Hass (2014) Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=101"
  },
  "MTH 101T": {
   "code": "MTH 101T",
   "name": "Calculus I",
+  "nameEn": "Calculus I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -75,15 +148,87 @@
    "Hafta 13 · Belirli İntegralin Uygulamaları",
    "Hafta 14 · Belirli İntegralin Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fonksiyonlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Transandan Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "L’Hôpital Kuralı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İntegrasyon Teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Genelleştirilmiş İntegraller",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Thomas' Calculus (13th Edition) G. B. Thomas, M. D. Weir J. R. Hass (2014) Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=101"
  },
  "MTH 102": {
   "code": "MTH 102",
   "name": "Calculus II",
+  "nameEn": "Calculus II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -117,15 +262,87 @@
    "Hafta 13 · Çok Katlı İntegraller",
    "Hafta 14 · Çok Katlı İntegraller"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Parametrik Denklemler ve Kutupsal Koordinatlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Parametrik Denklemler ve Kutupsal Koordinatlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Vektörler ve Uzay Geometrisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Vektörler ve Uzay Geometrisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Thomas' Calculus (13th Edition), G. B. Thomas, M. D. Weir, J. R. Hass, (2014) Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=102"
  },
  "MTH 103": {
   "code": "MTH 103",
   "name": "Calculus I",
+  "nameEn": "Calculus I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -158,15 +375,87 @@
    "Hafta 13 · Belirli İntegralin Uygulamaları",
    "Hafta 14 · Belirli İntegralin Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fonksiyonlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Transandan Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "L’Hôpital Kuralı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İntegrasyon Teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Genelleştirilmiş İntegraller",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Thomas' Calculus (13th Edition) G. B. Thomas, M. D. Weir J. R. Hass (2014) Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=103"
  },
  "MTH 104": {
   "code": "MTH 104",
   "name": "Calculus II",
+  "nameEn": "Calculus II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -200,15 +489,87 @@
    "Hafta 13 · Çok Katlı İntegraller",
    "Hafta 14 · Çok Katlı İntegraller"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Parametrik Denklemler ve Kutupsal Koordinatlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Parametrik Denklemler ve Kutupsal Koordinatlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Vektörler ve Uzay Geometrisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Vektörler ve Uzay Geometrisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Thomas' Calculus (13th Edition) G. B. Thomas, M. D. Weir J. R. Hass (2014) Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=104",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=104"
  },
  "MTH 105": {
   "code": "MTH 105",
   "name": "Calculus I",
+  "nameEn": "Calculus I",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -242,15 +603,87 @@
    "Hafta 13 · Türev Kuralları",
    "Hafta 14 · Türevin Zincir kuralı ve Türev Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cebirsel bilgileri hatırlatma",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Denklemler ve Eşitsizlikler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Denklemler ve Eşitsizliklere Bazı Uygulamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Bazı Uygulamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Fonksiyonlar ve Grafikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrular, Paraboller",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Denklem Sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üstel ve Logaritmik Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Üstel ve Logaritmik Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Limit, Sonsuz Limit",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Sonsuzda Limit ve Süreklilik",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sürekliliğin Eşitsizliklere Uygulamaları, Türev",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Türev Kuralları",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Türevin Zincir kuralı ve Türev Uygulamaları",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Introductory Mathematical Analysis, For Business, Economics, and The Life and Social Sciences, 14th Edition, Ernest F. Haeussler, Richard S. Paul, Richard J. Wood."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=105",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=105"
  },
  "MTH 106": {
   "code": "MTH 106",
   "name": "Calculus II",
+  "nameEn": "Calculus II",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -284,16 +717,87 @@
    "Hafta 13 · Kısmi Türev",
    "Hafta 14 · Çok değişkenli fonksiyonlarda maksimum minimum problemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İleri türev alma teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Eğri çizimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Tek değişkenli fonksiyonlarda maksimum minumum problemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "İntegral",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "İntegral",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Ara Sınav 1",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "İntegral",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İntegral alma teknikleri ve integralin uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "İntegral alma teknikleri ve integralin uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "İntegral alma teknikleri ve integralin uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Ara Sınav 2"
+   },
+   {
+    "week": 12,
+    "topic": "Çok değişkenli fonksiyonlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Kısmi Türev",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Çok değişkenli fonksiyonlarda maksimum minimum problemleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Introductory Mathematical Analysis for Business,Economics and the Life And Social Studies(Ernst F.Haeussler,Jr--Richard S. Paul)(Prentice Hall)",
    "Science, Ernest F. Haeussler Jr., Richard S. Paul, Richard J. Wood, 14th Ed., Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=106",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=106"
  },
  "MTH 107": {
   "code": "MTH 107",
   "name": "Calculus I",
+  "nameEn": "Calculus I",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -326,15 +830,87 @@
    "Hafta 13 · İntegral Teknikleri",
    "Hafta 14 · İntegral Teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fonksiyonlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Transandan Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Transandan Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "İntegral Teknikleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "İntegral Teknikleri",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Thomas’ Calculus, 15th Edition; J.R. Hass, C. Heil, M.D. Weir."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=107",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=107"
  },
  "MTH 108": {
   "code": "MTH 108",
   "name": "Calculus II",
+  "nameEn": "Calculus II",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -369,15 +945,87 @@
    "Hafta 13 · Seriler",
    "Hafta 14 · Seriler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uzayda Vektörler",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Vektör Değerli Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 3,
+    "topic": "Çok Değişkenli Fonksiyonlar ve kısmi türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Çok Değişkenli Fonksiyonlar ve kısmi türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Çok Değişkenli Fonksiyonlar ve kısmi türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Çok Değişkenli Fonksiyonlar ve kısmi türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Çok Katlı İntegraller/Arasınav",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Vektör alanları üzerinde integraller",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Vektör alanları üzerinde integraller",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Sayı Dizileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Seriler",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Thomas’ Calculus, 10th Edition, G.B Thomas, R. L. Finney, M.D.Weir, F.R.Giordano, Addison- Wesley, 2005"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=108",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=108"
  },
  "MTH 111": {
   "code": "MTH 111",
   "name": "Linear Algebra",
+  "nameEn": "Linear Algebra",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -411,15 +1059,87 @@
    "Hafta 13 · Özdeğerler ve Özvektörler",
    "Hafta 14 · Özdeğerler ve Özvektörler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lineer Denklem Sistemleri ve Matrisler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Lineer Denklem Sistemleri ve Matrisler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer Denklem Sistemleri ve Matrisler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Determinantlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Determinantlar/ 2- ve 3-boyutta vektörler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "2- ve 3-boyutta vektörler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "2- ve 3-boyutta vektörler/ ARA SINAV 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Öklid Vektör Uzayları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Öklid Vektör Uzayları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Genel Vektör Uzayları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Genel Vektör Uzayları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Genel Vektör Uzayları/ ARA SINAV 2",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Özdeğerler ve Özvektörler",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Özdeğerler ve Özvektörler",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Elementary Linear Algebra, 9th Edition, Howard Anton, John Wiley & Sons, Inc."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=111"
  },
  "MTH 112": {
   "code": "MTH 112",
   "name": "Discrete Mathematics",
+  "nameEn": "Discrete Mathematics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -433,12 +1153,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=112"
  },
  "MTH 113": {
   "code": "MTH 113",
   "name": "Probability",
+  "nameEn": "Probability",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -452,12 +1172,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=113",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=113"
  },
  "MTH 117": {
   "code": "MTH 117",
   "name": "Mathematics I",
+  "nameEn": "Mathematics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -471,12 +1191,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=117",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=117"
  },
  "MTH 118": {
   "code": "MTH 118",
   "name": "Mathematics II",
+  "nameEn": "Mathematics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -490,12 +1210,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=118",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=118"
  },
  "MTH 121": {
   "code": "MTH 121",
   "name": "Calculus I",
+  "nameEn": "Calculus I",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -530,15 +1250,87 @@
    "Hafta 13 · İntegral teknikleri",
    "Hafta 14 · Belirsizlik şekilleri ve L’Hospital Kuralı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tek değişkenli fonksiyonlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Limit ve süreklilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Limit ve süreklilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Türev ve türev uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Türev ve türev uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Eğri çizimi ve asimptotlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Türevde maksimum ve minimum problemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İntegral",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İntegral hesabının temel teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "İntegralin uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İntegralin uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Transandant fonksiyonlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "İntegral teknikleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Belirsizlik şekilleri ve L’Hospital Kuralı",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "A. Karadeniz, Yüksek Matematik Cilt I, Çağlayan Kitapevi, İstanbul 2002."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=121",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=121"
  },
  "MTH 122": {
   "code": "MTH 122",
   "name": "Mathematics I",
+  "nameEn": "Mathematics I",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -552,12 +1344,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=122",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=122"
  },
  "MTH 123": {
   "code": "MTH 123",
   "name": "Calculus",
+  "nameEn": "Calculus",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -591,15 +1383,87 @@
    "Hafta 13 · Türev",
    "Hafta 14 · Türev"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cebirsel bilgileri hatırlatma",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Cebirsel bilgileri hatırlatma",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bazı Uygulamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Bazı Uygulamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Fonksiyonlar ve Grafikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrular, Paraboller, ve Sistemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Doğrular, Paraboller, ve Sistemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üstel ve Logaritmik Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Türev",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Türev",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Türev",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Introductory Mathematical Analysis, For Business, Economics, and The Life and Social Sciences, 14th Edition, Ernest F. Haeussler, Richard S. Paul, Richard J. Wood."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=123",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=123"
  },
  "MTH 124": {
   "code": "MTH 124",
   "name": "Mathematics II",
+  "nameEn": "Mathematics II",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -613,12 +1477,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=124",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=124"
  },
  "MTH 131": {
   "code": "MTH 131",
   "name": "Mathematics I",
+  "nameEn": "Mathematics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -651,15 +1515,87 @@
    "Hafta 13 · Belirli İntegralin Uygulamaları",
    "Hafta 14 · Belirli İntegralin Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fonksiyonlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Limit ve Süreklilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Türev",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Türevin Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İntegral",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Transandan Fonksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "L’Hôpital Kuralı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İntegrasyon Teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Genelleştirilmiş İntegraller",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Belirli İntegralin Uygulamaları",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Thomas' Calculus (13th Edition) G. B. Thomas, M. D. Weir J. R. Hass (2014) Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=131",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=131"
  },
  "MTH 132": {
   "code": "MTH 132",
   "name": "Mathematics II",
+  "nameEn": "Mathematics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -693,15 +1629,87 @@
    "Hafta 13 · Çok Katlı İntegraller",
    "Hafta 14 · Çok Katlı İntegraller"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Parametrik Denklemler ve Kutupsal Koordinatlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Parametrik Denklemler ve Kutupsal Koordinatlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Vektörler ve Uzay Geometrisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Vektörler ve Uzay Geometrisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Thomas' Calculus (13th Edition) G. B. Thomas, M. D. Weir J. R. Hass (2014) Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=132",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=132"
  },
  "MTH 203": {
   "code": "MTH 203",
   "name": "Differential Equations",
+  "nameEn": "Differential Equations",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -715,12 +1723,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=203"
  },
  "MTH 204": {
   "code": "MTH 204",
   "name": "Linear Algebra",
+  "nameEn": "Linear Algebra",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -734,12 +1742,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=204"
  },
  "MTH 271": {
   "code": "MTH 271",
   "name": "Probability and Statistics",
+  "nameEn": "Probability and Statistics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -775,16 +1783,88 @@
    "Hafta 13 · Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
    "Hafta 14 · Regresyon analizi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayma teknikleri, permütasyon, kombinasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık kavramı, şartlı olasılık",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Rastlantı değişkeni, olasılık fonksiyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Dağılım fonksiyonu",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kesikli dağılımlar: Bernoulli, binom, Poisson",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli dağılımlar: Normal, Gamma, Eksponansiyel",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Beklenen değer, moment çıkaran fonksiyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Merkezi eğilim ve yayılım ölçüleri, Chebyshev eşitsizliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Tahmin edici ve özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "En çok olabilirlik tahmin edicisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Güven aralığı, hipotez testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Regresyon analizi.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Sheldon Ross, 1998, A First Course in Probability, Prentice-Hall International.",
    "Murray R. Spiegel, 1961, Theory and Problems of Statistics, McGraw-Hill Book Company."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=271",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=271"
  },
  "MTH 281": {
   "code": "MTH 281",
   "name": "Linear Algebra and Applicat.",
+  "nameEn": "Linear Algebra and Applicat.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -816,15 +1896,87 @@
    "Hafta 13 · Simetrik matrisler, spektral teorem",
    "Hafta 14 · Fark denklemleri, pozitif belirli matrisler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lineer denklemlerin farklı yorumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Eleme Yöntemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "LU ayrıştırması, matris tersi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Vektör uzayları, alt uzaylar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bir matrisle ilişkili temel uzaylar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Lineer denklemlerin genel çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Boyut, bazlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Diklik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "İzdüşüm, enküçük kareler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Gram-Schmidt yöntemi, QR ayrıştırması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Determinantlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Özdeğerler ve özvektörler, köşegenleştirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Simetrik matrisler, spektral teorem",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Fark denklemleri, pozitif belirli matrisler",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Linear Algebra and its Applications, 4th Edition, Gilbert Strang, Wellesley Cambridge Press, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=281",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=281"
  },
  "MTH 301": {
   "code": "MTH 301",
   "name": "Numerical Methods",
+  "nameEn": "Numerical Methods",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -838,12 +1990,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=301"
  },
  "MTH 306": {
   "code": "MTH 306",
   "name": "Differential Equations",
+  "nameEn": "Differential Equations",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -857,12 +2009,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=306",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=306"
  },
  "MTH 401E": {
   "code": "MTH 401E",
   "name": "RlsC-V Mimarisi ve işlemciTasanmı",
+  "nameEn": "RISC-V Architecture &Processor",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -894,15 +2046,87 @@
    "Hafta 13 · Sırasız ve çoklu iş parçacıklı işlemci mimarileri",
    "Hafta 14 · Vektör, VLIW ve GPU mimarileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayısal devre tasarımı ve mantık sistemlerinin gözden geçirilmesi, donanım tasarlama dilleri (Verilog, SystemVerilog)",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Donanım tasarlama dilleri (Verilog, SystemVerilog)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Komut seti mimarileri ve RISC-V",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "RISC-V komut seti mimarisi ve programlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "RISC-V işlemci tasarımı: mikro mimariye genel bakış, tek döngü ve ardışık düzen mimarileri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "RISC-V işlemci tasarımı: kısıtlamalar ve yürütme birimleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "RISC-V işlemci tasarımı: bellek hiyerarşisi ve önbellek tasarımı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "RISC-V işlemci tasarımı: getir birimi ve dal tahmincileri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "RISC-V işlemci tasarımı: sanal bellek",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "RISC-V işlemci tasarımı: çoklu yürütme",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "İşlemci ara bağlantılarına ve G/Ç'ye giriş",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "İşlemci ara bağlantıları ve çevre birimleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sırasız ve çoklu iş parçacıklı işlemci mimarileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Vektör, VLIW ve GPU mimarileri",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=401"
  },
  "MTH 402": {
   "code": "MTH 402",
   "name": "Uçuş Mekaniği & Uygulamaları",
+  "nameEn": "Flight Mechanics and Applications",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -916,12 +2140,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=402"
  },
  "MTH 402E": {
   "code": "MTH 402E",
   "name": "Uçuş Mekaniği & Uygulamaları",
+  "nameEn": "Flight Mechanics and Applications",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -935,12 +2159,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=402"
  },
  "MTH 403E": {
   "code": "MTH 403E",
   "name": "Otomotive Endüstrisinde Fonksiyonel Emniyet ve Güç Aktarma Organları Uygulamaları",
+  "nameEn": "Fnc.Safety&PwrtrainAppAutoInd",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -954,12 +2178,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=403",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=403"
  },
  "MTH 405E": {
   "code": "MTH 405E",
   "name": "Uçuş Kontrol Sistemleri",
+  "nameEn": "Flight Control Systems",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -973,12 +2197,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=405",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=405"
  },
  "MTH 406": {
   "code": "MTH 406",
   "name": "Model Tabanlı Tasarım ve Yapay Zeka",
+  "nameEn": "Model-Based Desing and Artifical Intelligence",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -992,12 +2216,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=406",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=406"
  },
  "MTH 407": {
   "code": "MTH 407",
   "name": "Otomatik Hedef İzleme Temelleri",
+  "nameEn": "Fundamentals of Automatic Target Tracking",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -1037,15 +2261,87 @@
    "Hafta 13 · Kalman Filtresinde Parametre seçimi ve uygunluğunun tespiti",
    "Hafta 14 · Genişletilmiş Kalman Filtresi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Olasılık teorisine giriş: temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel olasılık dağılımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sistem dinamikleri ve durum uzayı modelleme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kestirim problemi tanımı",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 5,
+    "topic": "Kestirim problemi ölçüm hataları ve hataların olasılık dağılımları",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 6,
+    "topic": "Kestirim problemi çözüm yöntemleri",
+    "outcomes": "8-10"
+   },
+   {
+    "week": 7,
+    "topic": "Kestirim problemi çözüm uygulamaları",
+    "outcomes": "8-10"
+   },
+   {
+    "week": 8,
+    "topic": "Optimal bir çözüm yöntemi - Kalman Filtresi tanımı",
+    "outcomes": "8-10"
+   },
+   {
+    "week": 9,
+    "topic": "Kalman Filtresi uygulamaları",
+    "outcomes": "8-10"
+   },
+   {
+    "week": 10,
+    "topic": "Hareket ve ölçüm denkleminde Kalman Filtresinde kurgulanması ve uygulamaları",
+    "outcomes": "9-11"
+   },
+   {
+    "week": 11,
+    "topic": "Farklı tip problemler için Kalman Filtresinin kurgulanması",
+    "outcomes": "9-11"
+   },
+   {
+    "week": 12,
+    "topic": "Kalman Filtresi tutarlılığı için yöntemler",
+    "outcomes": "10-12"
+   },
+   {
+    "week": 13,
+    "topic": "Kalman Filtresinde Parametre seçimi ve uygunluğunun tespiti",
+    "outcomes": "11-12"
+   },
+   {
+    "week": 14,
+    "topic": "Genişletilmiş Kalman Filtresi",
+    "outcomes": "11-12"
+   }
+  ],
   "textbooks": [
    "Yaakov Bar-Shalom, X.-Rong Li, Thiagalingam Kirubarajan, Estimation with Applications to Tracking and Navigation: Theory, Algorithms and Software, John Wiley & Sons, 2001."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=407",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=407"
  },
  "MTH 408": {
   "code": "MTH 408",
   "name": "Uzay Radyasyon Ortamı ve Etkileri",
+  "nameEn": "Space Radiation Environment and Effects",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -1059,7 +2355,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=408",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTH&dersNo=408"
  }
 }

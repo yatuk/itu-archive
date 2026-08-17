@@ -2,6 +2,7 @@
  "SGI 101": {
   "code": "SGI 101",
   "name": "Gemi İnşaatı ve Gemi Makinaları Mühendisliğine Giriş ve Etik",
+  "nameEn": "Int.to Nav.Arch.&Mar.Eng.&Eth.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -36,15 +37,86 @@
    "Hafta 13 · Kurallar ve konvansiyoneller",
    "Hafta 14 · Tersaneler ve gemi üretimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi tanımı, gemi mühendisliği tanımı, gemi tipleri, genel yerleştirme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Mühendislik etiği",
+    "outcomes": "6"
+   },
+   {
+    "week": 3,
+    "topic": "Gemi geometrisi ve boyutsuz oranlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Uygulama",
+    "outcomes": "7"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi mukavemeti ve gemi elemanları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi hidrostatiği ve stabilitesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Uygulama",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "VİZE SINAVI"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi ağırlığı ve bileşenleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi inşaatında kullanılan malzemeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi direnci ve sevk",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi makinaları ve sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Kurallar ve konvansiyoneller",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tersaneler ve gemi üretimi",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Ders notları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=101"
  },
  "SGI 102": {
   "code": "SGI 102",
   "name": "Programlamaya Giriş -Python",
+  "nameEn": "Intr.to Prog.Language(PYTHON)",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -78,15 +150,87 @@
    "Hafta 13 · SciPy/NumPy Kütüphaneleri",
    "Hafta 14 · Basit Lineer Cebir"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Python Programlamaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hesaplama Ortamına Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Değişkenler, Operasyonlar",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Aritmetik ve Mantık Operatörleri",
+    "outcomes": "2-3-4-6"
+   },
+   {
+    "week": 5,
+    "topic": "Algoritmalara Giriş, Program Akış Kontrol,",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Fonksiyonlar",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Diziler",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Basit Denklem Çözme Uygulamaları",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Çokterimli Örnekleri",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Hatalar ve Hataların Kaynağı",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Basit Çizim",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "İleri G/Ç, Dosya İşlemleri",
+    "outcomes": "2-3-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "SciPy/NumPy Kütüphaneleri",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Basit Lineer Cebir",
+    "outcomes": "2-3-4-6"
+   }
+  ],
   "textbooks": [
    "“Starting out with Python”, Tony Gaddis, Pearson Education, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=102"
  },
  "SGI 103": {
   "code": "SGI 103",
   "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+  "nameEn": "Intr.to Sci& Eng.Comp.(MATLAB)",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -121,15 +265,87 @@
    "Hafta 13 · Sembolik Matematik",
    "Hafta 14 · Hazır Fonksiyonlar ile ADD Çözümleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel ve Mühendislik Hesaplamaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan Programda Hesaplama Ortamına Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Değişkenler, Operasyonlar, Basit Grafik",
+    "outcomes": "2-5-6-7"
+   },
+   {
+    "week": 4,
+    "topic": "Algoritmalar ve Mantık Operatörleri",
+    "outcomes": "2-3-4-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Akış Kontrol, Hatalar ve Hataların Kaynağı",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 6,
+    "topic": "Fonksiyonlar",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Diziler",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Basit Denklem Çözme Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Çokterimli Örnekleri",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Eğri Uydurma Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Interpolasyon Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal Integrasyon Uygulamaları",
+    "outcomes": "2-3-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Sembolik Matematik",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Hazır Fonksiyonlar ile ADD Çözümleri",
+    "outcomes": "2-3-4-6"
+   }
+  ],
   "textbooks": [
    "William J. Palm, 2005, Introduction to Matlab 7 for Engineers, Mc Graw Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=103"
  },
  "SGI 112": {
   "code": "SGI 112",
   "name": "Bilgisayar Destekli Teknik Resim",
+  "nameEn": "Comp. Aided Technical Drawing",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -164,15 +380,87 @@
    "Hafta 13 · Makina Montaj Resmi / Bilgisayar uygulamaları",
    "Hafta 14 · Yüzey İşleme Sembolleri ve Tolerans / Bilgisayar uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Teknik Resme Giriş ve Teknik Yazı / Bilgisayar uygulamaları",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 2,
+    "topic": "Ölçülendirmenin Esasları / Bilgisayar uygulamaları",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 3,
+    "topic": "Yassı Parçalar / Bilgisayar uygulamaları",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 4,
+    "topic": "İzdüşüm Prensipleri ve Görünüşler / Bilgisayar uygulamaları",
+    "outcomes": "2-3-7"
+   },
+   {
+    "week": 5,
+    "topic": "Görünüşler / Bilgisayar uygulamaları",
+    "outcomes": "2-3-7"
+   },
+   {
+    "week": 6,
+    "topic": "Kesit Görünüşler / Bilgisayar uygulamaları",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 7,
+    "topic": "Kesit Görünüşler / Bilgisayar uygulamaları",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 8,
+    "topic": "Kesit Görünüşler / Bilgisayar uygulamaları",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 9,
+    "topic": "Kesit Görünüşler / Bilgisayar uygulamaları",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 10,
+    "topic": "Perspektif Resimler/ Bilgisayar uygulamaları",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 11,
+    "topic": "Perspektif Resimler/ Bilgisayar uygulamaları",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 12,
+    "topic": "Bağlama Elemanlarının Çizimi / Bilgisayar uygulamaları",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Makina Montaj Resmi / Bilgisayar uygulamaları",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Yüzey İşleme Sembolleri ve Tolerans / Bilgisayar uygulamaları",
+    "outcomes": "2-4-5-7"
+   }
+  ],
   "textbooks": [
    "Mühendislik Çizimin Esasları, S.Kurt, İ.Gerdemeli, C.E.İmrak, Birsen Yayınevi, 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=112"
  },
  "SGI 201": {
   "code": "SGI 201",
   "name": "Statik",
+  "nameEn": "Statics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -207,16 +495,88 @@
    "Hafta 13 · Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
    "Hafta 14 · Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Statiğin ilkeleri, vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest cisim diyagramı, moment, Varignon teoremi, kuvvet çifti",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Düzlem kuvvetler, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağırlık merkezi, Pappus-Guldinus teoremleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Mesnetler ve bağ kuvvetleri, statikçe belirli sistemler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yükler, kirişler, Gerber kirişleri, kesit tesir diyagramları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem kafesler ve çözüm yöntemleri",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kablolar ve zincirler 1. Yıliçi sınavı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sürtünme (kuru sürtünme)",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sürtünme (vida, kayış, yuvarlanma direnci)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yayılı yükler ve hidrostatik kuvvetler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Uzay kafes sistemler ve çözüm yöntemleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Üç boyutlu kuvvet sistemleri, kuvvetler sisteminde bileşke, denge denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Virtüel iş, dengenin kararlılığı ve potansiyel enerji 2. Yıliçi Sınavı",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "M. Bakioğlu, 2006, Statik, Birsen, ISBn:9755114432.",
    "M.Omurtag, 2009, Statik, Birsen, ISBn:978975511477."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=201"
  },
  "SGI 202": {
   "code": "SGI 202",
   "name": "Dynamics",
+  "nameEn": "Dynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -253,16 +613,88 @@
    "Hafta 13 · Katı cisimlerin kinetiğinde momentum yöntemleri",
    "Hafta 14 · Mekanik titreşimlere giris"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Maddesel noktaların dogrusal hareketi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Maddesel noktaların egrisel hareketi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kuvvetler ve ivme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İş enerji ilkesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "İmpuls momentum",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "İmpuls momentum (devam)",
+    "outcomes": "1-2-4-8"
+   },
+   {
+    "week": 7,
+    "topic": "İmpuls momentum (devam)",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Katı cisimlerin kinematiğine giris",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 9,
+    "topic": "Katı cisimlerin kinematiği (devam)",
+    "outcomes": "1-2-3-7"
+   },
+   {
+    "week": 10,
+    "topic": "Katı cisimlerin kinetiğine giris",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Katı cisimlerin kinetiğinde enerji yöntemleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Katı cisimlerin kinetiğinde enerji yöntemleri (devam)",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Katı cisimlerin kinetiğinde momentum yöntemleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 14,
+    "topic": "Mekanik titreşimlere giris",
+    "outcomes": "1-2-9"
+   }
+  ],
   "textbooks": [
    "Sandor, B.I., 1983, Engineering Mechanics : Dynamics, Prentice-Hall, inc., ISBN:0-13-278937-.",
    "Meriam, J.L., Kraige, L.G., 1993, Engineering Mechanics, 13 978-0471-73931-9, Wiley."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=202"
  },
  "SGI 203": {
   "code": "SGI 203",
   "name": "Strength of Materials I",
+  "nameEn": "Strength of Materials I",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -300,17 +732,89 @@
    "Hafta 13 · Eğilme",
    "Hafta 14 · Eğilme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş; Modelleme kavramı ve temel prensipler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gerilme",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Gerilme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Gerilme. Şekil değiştirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Eksenel yük ------- ARA SINAV",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Eksenel yük",
+    "outcomes": "6-9"
+   },
+   {
+    "week": 8,
+    "topic": "Eksenel yük",
+    "outcomes": "6-10"
+   },
+   {
+    "week": 9,
+    "topic": "Burulma",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Burulma",
+    "outcomes": "7-9"
+   },
+   {
+    "week": 11,
+    "topic": "Burulma ------- ARA SINAV",
+    "outcomes": "7-10"
+   },
+   {
+    "week": 12,
+    "topic": "Eğilme",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 13,
+    "topic": "Eğilme",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Eğilme",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "R.C. Hibbeler, 2005, Mechanics of Materials, Prentice Hall, ISBN:0131866389.",
    "Mustafa İnan, 2001, Cisimlerin Mukavemeti, İTÜ Vakfı, ISBN:95574630501.",
    "Egor P. Popov, Çeviri: Hilmi Demiray, 1990, Mukavemet, Katı Cisimlerin Mekaniğine Giriş, Çağlayan Yayınevi, ISBN:978111112043."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=203"
  },
  "SGI 204": {
   "code": "SGI 204",
   "name": "Strength of Materials II",
+  "nameEn": "Strength of Materials II",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -347,17 +851,89 @@
    "Hafta 13 · Enerji metotları",
    "Hafta 14 · Enerji metotları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kesme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kesme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Birleşik mukavemet halleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gerilme dönüşümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gerilme dönüşümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Şekil değiştirme dönüşümleri --- ARA SINAV",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Göçme kriterleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kirişlerin ve şaftların tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kirişlerin ve şaftların çökmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kirişlerin ve şaftların çökmesi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Kirişlerin ve şaftların çökmesi --- ARA SINAV",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Burkulma",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji metotları",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Enerji metotları",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "R.C. Hibbeler, 2005, Mechanics of Materials, Prentice Hall, ISBN:0131866389.",
    "Mustafa İnan, 2001, Cisimlerin Mukavemeti, İTÜ Vakfı, ISBN:95574630501.",
    "Egor P. Popov, Çeviri: Hilmi Demiray, 1990, Mukavemet, Katı Cisimlerin Mekaniğine Giriş, Çağlayan Yayınevi, ISBN:978111112043."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=204"
  },
  "SGI 205": {
   "code": "SGI 205",
   "name": "Fluid Mechanics",
+  "nameEn": "Fluid Mechanics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -395,16 +971,88 @@
    "Hafta 13 · Sıkıştırılabilir akış, Türbomakinalar",
    "Hafta 14 · Türbomakinalar ve uygulamaları, Su Darbeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel Kavramlar:, Akışkan ve akışların tanımı, sıkıştırılabilme, buharlaşma-kavitasyon, yüzeysel gerilme ve kılcallık.Hız alanının özellikleri. Temel akış analizi teknikleri. Akış biçimleri:Akım çizgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Duran akışkanlar: Basınç ve dağılımı,manometreler, dalmış yüzeylere gelen kuvvetler, Katılaştırma prensibi, blok halinde öteleme ve dönme, basınç ölçümü",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Devamı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Korunum denklemlerinin integral formu: Denetim hacmi ve sistem kavramları, Reynolds transport teoremi, Kütle, Momentum korunumu (Hareket miktarı denklemi) ve enerji denklemi vueygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 5,
+    "topic": "Bernoulli denklemi ve uygulamaları: Statik, dinamik ve toplam basınç kavramları, akışkan hızı, basınç ve debisi ölçüm yöntemleri, Sifon ve kavitasyon, yük ve piyezometre çizgileri",
+    "outcomes": "6"
+   },
+   {
+    "week": 6,
+    "topic": "Devamı",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Süreklilik, Hareket ve Enerji denklemlerinin diferansiyel formda türetilmesi, Navier-Stokes denklemleri ve uygulamaları, akım ve potansiyel fonksiyonları",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Boyut analizi ve benzerlik",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Borularda sürtünmeli akış, laminar ve türbülanslı akış, Sürekli ve yerel kayıplar, Boru dizgeleri, Moody diyagramı, Akış",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Devamı",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Dalmış cisimler etrafında akış, Sınır tabaka denklemleri, deneysel dış akışlar.",
+    "outcomes": "9"
+   },
+   {
+    "week": 12,
+    "topic": "Devamı",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Sıkıştırılabilir akış, Türbomakinalar",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "Türbomakinalar ve uygulamaları, Su Darbeleri",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "F. M. White, 2005, Fluid Mechanics, 5th Edition, McGraw Hill.",
    "B.R. Munson, D.F. Young and T. H. Okiishi, 2006, Fundamentals of Fluid Mechanics, 5th Edition, J. Wiley and Sons."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=205"
  },
  "SGI 206": {
   "code": "SGI 206",
   "name": "Thermodynamics",
+  "nameEn": "Thermodynamics",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -440,15 +1088,87 @@
    "Hafta 13 · Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi ----------------------------------------------------- ARA SINAV II",
    "Hafta 14 · Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji Kaybı, Ekserji Dengesi: Kapalı Sistemler ve Kontrol Hacimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Temel Kavramlar: Termodinamik ve Enerji, Sistemler ve Kontrol Hacimleri, Sistemin Özelikleri, Durum ve Denge, Durum Değişimi ve Çevrim, Sıcaklık ve Termodinamiğin Sıfırıncı Yasası, Basınç",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerjinin Biçimleri, Isı ile Enerji Geçişi, İş ile Enerji Geçişi, İşin Mekanik Biçimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerji Dönüşüm Verimleri, Enerji ve Çevre",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Saf Maddelerin Özelikleri: Saf Madde, Saf Maddelerin Fazları, Faz Değişim İşlemleri İçin Özelik Diyagramları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Saf Maddelerin Özelikleri: Özelik tabloları, Mükemmel Gaz Durum Denklemi, Sıkıştırılabilme Çarpanı, Diğer Durum Denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kapalı Sistemlerin Enerji Analizi: Hareketli Sınır İşi, Kapalı Sistemler İçin Enerji Dengesi, Özgül Isılar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Kapalı Sistemlerin Enerji Analizi: Mükemmel Gazların İç Enerji, Entalpi ve Özgül Isıları, Katı ve Sıvıların İç Enerji, Entalpi ve Özgül ısıları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Kütlenin Korunumu İlkesi, Akış İşi ve Akışkanın Enerjisi, Sürekli Akışlı Açık Sistemlerin Enerji Analizi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Mühendislikteki Tipik Sürekli Akışlı Açık Sistemler, Zamanla Değişen Açık Sistemlerde Enerjinin Korunumu: Kütlenin Korunumu ve Enerjinin Korunumu ------------------------------------------------------ ARA SINAV I",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Termodinamiğin İkinci Yasası: Isıl Enerji Depoları, Isı Makinaları, Soğutma Makinaları ve Isı Pompaları, Devridaim Makinaları, Tersinir ve Tersinmez Durum Değişimleri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Termodinamiğin İkinci Yasası: Carnot Çevrimi, Carnot İlkeleri, Termodinamik Sıcaklık Ölçeği, Carnot Isı Makinası, Carnot Soğutma Makinası ve Isı Pompası",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Entropi: Entropinin Artışı İlkesi, Saf Maddelerin Entropi Değişimi, İzantropik Durum Değişimleri, Entropi İçeren Özelik Diyagramları, T ds Bağıntıları, Sıvı ve Katıların Entropi Değişimi",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi ----------------------------------------------------- ARA SINAV II",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji Kaybı, Ekserji Dengesi: Kapalı Sistemler ve Kontrol Hacimleri",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Çengel, Y.A. and Boles, M.A., 2007, Thermodynamics, An Engineering Approach, 6th Ed., McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=206"
  },
  "SGI 207": {
   "code": "SGI 207",
   "name": "Materials Science",
+  "nameEn": "Materials Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -485,15 +1205,87 @@
    "Hafta 13 · Jeotekstil ve Jeomembranlar",
    "Hafta 14 · Malzeme Karakterizasyon Teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Malzeme Bilimine Genel Giriş: Kavramlar ve Tarihsel Gelişim; Malzemelerin Sınıflaması ve Malzeme Seçiminde Temel Kriterler",
+    "outcomes": "1-8"
+   },
+   {
+    "week": 2,
+    "topic": "Atomik Yapılar ve Elektronik Konfigürasyon; Kristal Geometrisi, Yapı ve Kusurlar; Katılarda Bağlar",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 3,
+    "topic": "Katılarda Difüzyon; Malzemelerin Mekanik Özellikleri ve Mekanik Testler; Malzemelerin Isıl ve Optik Özellikleri; Malzemelerin Elektrik ve Magnetik Özellikleri",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 4,
+    "topic": "Malzemelerin Deformasyonu; Oksidasyon ve Korozyon",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 5,
+    "topic": "Seramikler",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 6,
+    "topic": "Kompozitler; Nano-yapılı Malzemeler",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 7,
+    "topic": "Vize Sınavı",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 8,
+    "topic": "Alaşım Sistemleri; Diğer Alaşım Elementlerinin Etkileri; Faz Diyagramları ve Faz Dönüşümleri; Isı Muamelesi",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 9,
+    "topic": "Yarı İletkenler; Süper İletkenler; Organik Malzemeler",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 10,
+    "topic": "Jeomalzemeler: Sınıflama ve Malzeme Özellikleri Hidrolik Bağlayıcılar: Kireç, Alçı ve Çimento",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 11,
+    "topic": "Agregalar ve Kırma Taşlar; Yapı ve Süsleme Taşları: Sınıflama; Malzeme Özellikleri ve Özelliklerinin Bozulması",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 12,
+    "topic": "Süstaşları: Sınıflama; Bileşim ve Kristal Yapıları; Özellikleri; Kullanım Alanları",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 13,
+    "topic": "Jeotekstil ve Jeomembranlar",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 14,
+    "topic": "Malzeme Karakterizasyon Teknikleri",
+    "outcomes": "1-9"
+   }
+  ],
   "textbooks": [
    "Material Science by S. L. Kakani & A. Kakani; New Age International PVT Ltd Publishers (December 1, 2010); ISBN-10: 8122430856; 904 pages"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=207"
  },
  "SGI 208": {
   "code": "SGI 208",
   "name": "Numerical Methods",
+  "nameEn": "Numerical Methods",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -524,15 +1316,87 @@
    "Hafta 13 · Sayısal İntegrasyon, Pivot Noktası, İnterpolasyon Doğrusu Ve Parabolleri ile İntegrasyon Formülleri, kısa",
    "Hafta 14 · İnterpolasyon Parabolü ile Sayısal İntegrasyon, Gauss Tipi İntegrasyon, ekstrapolasyon, kısa sunumlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Sayısal İşlemlerde Hatalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Aritmetik İşlemlerde Hata Yayınımı, Fonksiyon Değerlerinin Hata Hesabı, Hataların Yayılma Yasası (KOH)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer Denklem Takımlarının Çözümleri,Giriş, Direkt Yöntemler,Cramer Yöntemi,Gauss Eliminasyon Yöntemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Gauss Jordan Yöntemi, LU Ayırımı Yöntemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Dolittle Yöntemi, Cholesky Yöntemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Dolaylı Yöntemler, Jacobi Ardışık Yaklaşım Yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Gauss Siedel Ardışık Yaklaşım Yöntemi, Lineer Denklem Takımı Çözümlerinde Hata Analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Lineer Olmayan Denklemler, Kök Civarının Bulunması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Aralığı ikiye Bölme Yöntemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Newton Raphson Yöntemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yaklaşım Yöntemleri, İnterpolasyon, Lineer Regrasyon, İnterpolasyon Polinomu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Lagrange İnterpolasyonu, Newton İnterpolasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Sayısal İntegrasyon, Pivot Noktası, İnterpolasyon Doğrusu Ve Parabolleri ile İntegrasyon Formülleri, kısa",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "İnterpolasyon Parabolü ile Sayısal İntegrasyon, Gauss Tipi İntegrasyon, ekstrapolasyon, kısa sunumlar",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "James F. Epperson, 2001, An Introduction to Numerical Methods and Analyses,, John Wiley and Sons, ISBN:0471316474."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=208",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=208"
  },
  "SGI 209": {
   "code": "SGI 209",
   "name": "Probability and Statistics",
+  "nameEn": "Probability and Statistics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -568,16 +1432,88 @@
    "Hafta 13 · Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
    "Hafta 14 · Regresyon analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayma Teknikleri, permütasyon, kombinasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık Kavramı, Şartlı olasılık",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Rastlantı Değişkeni, Olasılık Fonksiyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Dağılım fonksiyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Kesikli Dağılımlar: Bernoulli, Binom, Poisson",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli dağılımlar: Normal, Gamma, Eksponansiyel",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Beklenen değer, Moment çıkaran fonksiyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Merkezi eğilim ve yayılım ölçüleri, Chebishev eşitsizliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Tahmin edici ve özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "En çok olabilirlik tahmin edicisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Güven aralığı, Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Regresyon analizi",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Sheldon Ross, 1998, A First Course in Probability, Prentice-Hall International.",
    "Murray R. Spiegel, 1961, Theory and Problems of Statistics, McGraw-Hill Book Company."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=209"
  },
  "SGI 210": {
   "code": "SGI 210",
   "name": "Engineering Mathematics",
+  "nameEn": "Engineering Mathematics",
   "language": "English",
   "credits": {
    "theory": 4,
@@ -610,15 +1546,87 @@
    "Hafta 13 · Laplace Dönüşümü",
    "Hafta 14 · Laplace Dönüşümü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lineer Denklemler ve Matrisler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Lineer Denklemler ve Matrisler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Vektör Uzayları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Vektör Uzayları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Birinci Mertebeden Diferansiyel Denklemler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Birinci Mertebeden Diferansiyel Denklemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Yüksek Mertebeden Diferansiyel Denklemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Yüksek Mertebeden Diferansiyel Denklemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Özdeğerler ve Özvektörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Özdeğerler ve Özvektörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Lineer Diferansiyel Denklem Sistemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Lineer Diferansiyel Denklem Sistemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Laplace Dönüşümü",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Laplace Dönüşümü",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Differential Equations & Linear Algebra (3rd Edition), C. H. Edwards, D. E. Penney, (2011) Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=210"
  },
  "SGI 211": {
   "code": "SGI 211",
   "name": "Ship Geometry",
+  "nameEn": "Ship Geometry",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -651,15 +1659,86 @@
    "Hafta 13 · Su hatları resminin çizimi",
    "Hafta 14 · Batokların çizimi ve 2. Projenin teslimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel tanımlar, Projelerin tanıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geminin ön hesaplarının yapılması ve genel yerleştirme hesapları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ağ çizgilerinin çizimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Posta kesitleri resminin çizimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Profil resminin çizimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Su hatları resminin çizimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Batok eğrilerinin çizimi",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "Meyilli ve trimli su hattının çizimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "ARASINAV"
+   },
+   {
+    "week": 10,
+    "topic": "Son düzeltmeler, su hattı alanları eğrisinin çizimi ve 1. Projenin teslimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "2. projenin tanıtılması ve hesaplarının yapılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Posta kesitleri ve Profil resminin çizimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Su hatları resminin çizimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Batokların çizimi ve 2. Projenin teslimi",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "DERS NOTLARI"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=211"
  },
  "SGI 212": {
   "code": "SGI 212",
   "name": "Manufacturing Processes",
+  "nameEn": "Manufacturing Processes",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -692,15 +1771,85 @@
    "Hafta 13 · Katı hal kaynağı, sürtünme kaynağı, patlamalı kaynak, lehimleme, yapıştırma",
    "Hafta 14 · ARA SINAV"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Karşılaşma ve ısıl işlem, metal dökümü, döküm mamul özellikleri, döküm alaşımları, ergime ve döküm.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Döküm yöntemleri, bitirme işlemleri, döküm parçalarda kalite",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıcı ve geçici kalıplama yöntemlerinin tanıtılması",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Plastik şekil vermeye giriş, sıcak-soğuk şekil verme, mekanik esaslar",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 5,
+    "topic": "Şekillendirilebilirlik, kütlesel şekillendirme yöntemleri, dövme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ekstrüzyon, çubuk, boru çekme, haddeleme",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Saç şekillendirme yöntemleri, kesme bükme eğme, germe, derin çekme, diğer yöntemler, imalatın ekonomik yönleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "ARA SINAV"
+   },
+   {
+    "week": 9,
+    "topic": "Talaş kaldırma yöntemleri temel kesme parametreleri, kesme sıvıları.",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Planyalama, vargelleme, delik delme ve işleme, frezeleme, broşlama, taşlama, honlama, CNC tezgahları",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kaynak yöntemlerinin sınıflandırılması",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Eritme kaynağı, direnç kaynağı, ark kaynağı.",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Katı hal kaynağı, sürtünme kaynağı, patlamalı kaynak, lehimleme, yapıştırma",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "ARA SINAV"
+   }
+  ],
   "textbooks": [
    "Fundamentals of modern manufacturing, M.P. Groover, 3 rd edition, 2007, Wiley"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=212"
  },
  "SGI 216": {
   "code": "SGI 216",
   "name": "Heat Transfer In Engineering",
+  "nameEn": "Heat Transfer In Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -735,15 +1884,87 @@
    "Hafta 13 · Doğal Taşınım: Doğal taşınımın fiziksel mekanizması, hareket denklemi ve Grashof sayısı, yüzeyler üzerinde doğal taşınım, kanatlı yüzeylerde doğal taşınım, kapalı hacimlerde doğal taşınım, birleşik doğal ve zorlanmış taşınım",
    "Hafta 14 · Işınımla Isı geçişi: Isıl ışınımın temelleri, siyah ve eşit dağılı yayan gri yüzeylerde ışınmla ısı geçişi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Temel Kavramlar: Termodinamik ve ısı transferi, mühendislikte ısı transferi, ısı ve diğer enerji formları, termodinamiğin birinci yasası",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Isı Transferi Mekanizmaları: İletim, taşınım ve ışınım, ışınımın taşınım ve iletimle birarada gerçekleşmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Isı İletim Denklemi: Bir boyutlu ısı iletim denklemi, genel ısı iletim denklemi, sınır ve başlangıç şartları, sürekli bir boyutlu ısı geçiş problemlerinin çözümü,katılarda ısı üretimi, değişken ısıl iletkenlik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sürekli Isı iletimi: Düzlem duvarda sürekli ısı iletimi, temas direnci, genelleştirilmiş ısıl direnç ağları, silindir ve kürede ısı iletimi, kritik yalıtım kalınlığı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli Isı iletimi: Kanatlı yüzeylerden ısı geçişi, iki ve üç boyutlu ısı iletimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Zamana Bağlı Isı İletimi: Toplam kütle yaklaşımı, büyük düzlem duvar, uzun silindir ve kürede uzamsal etkilerle beraber zamana bağlı ısı iletimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Zamana Bağlı Isı İletimi:Yarı sonsuz katılarda zamana bağlı ısı iletimi, çok boyutlu sistemlerde zamana bağlı ısı iletimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Taşınımın Temelleri: Taşınımın fiziksel mekanizması, akışkan akışlarının sınflandırılması, hız sınır tabakası, ısıl sınır tabaka, laminer ve türbülanslı akış, türbülanslı akışta ısı ve momentum geçişi, diferensiyel taşınım denkleminin eldesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Taşınımın Temelleri: Düzlem levha için taşınım denklmelerinin çözümü, boyutsuz taşınım denklemleri ve benzerlik, sürtünme taşınım katsayılarının fonksiyonel şekilleri, momentum ve ısı geçişi arasında analoji",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Zorlanmış Taşınım:Dış Akış, Dış akışta sürüklenme ve ısı transferi, düzlem duvarda paralel akış, silindir ve küre etrafındaki akış, boru demeti üzerindeki akış",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Zorlanmış Taşınım: İç Akış, Ortalama hız ve sıcaklık, giriş bölgesi, genel ısı analizi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Zorlanmış Taşınım: İç Akış, Borularda laminer ve türbülanslı akış ARA SINAV",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Doğal Taşınım: Doğal taşınımın fiziksel mekanizması, hareket denklemi ve Grashof sayısı, yüzeyler üzerinde doğal taşınım, kanatlı yüzeylerde doğal taşınım, kapalı hacimlerde doğal taşınım, birleşik doğal ve zorlanmış taşınım",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Işınımla Isı geçişi: Isıl ışınımın temelleri, siyah ve eşit dağılı yayan gri yüzeylerde ışınmla ısı geçişi",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Çengel, Y.A., 2006, Heat and Mass Transfer, A Practical Approach, Third Edition (SI Units), McGraw-Hill"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=216",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=216"
  },
  "SGI 222": {
   "code": "SGI 222",
   "name": "Organic Chemistry",
+  "nameEn": "Organic Chemistry",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -778,10 +1999,81 @@
    "Hafta 13 · Aromatik bileşiklerin tanımı",
    "Hafta 14 · Aromatik bileşiklerin reaksiyonları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Karbon atomu, kimyasal bağlar, Lewis teorisi, hibrit orbitalleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Doymuş hidrokarbonlar: Alkanlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Doymamış hidrokarbonlar I: Alkenler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Doymamış hidrokarbonlar: Alkinler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Alkil halojenürler (Yerdeğiştirme ve eliminasyon tepkimeleri)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Alkoller ve eterler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Karbonil bileşikleri I: Aldehitler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Karbonil bileşikleri II: Ketonlar",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Karboksilli asitler: Genel tanım ve sentez yöntemleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Karboksilli asit türevleri I: Esterler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Karboksilli asit türevleri II: Amid ve Nitriller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Aminler: Genel tanım ve sentez yöntemleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Aromatik bileşiklerin tanımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Aromatik bileşiklerin reaksiyonları",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Organic Chemistry 12th edition (T. W. Graham Solomons, Craig B. Fryhle, Scott A. Snyder)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=222",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SGI&dersNo=222"
  }
 }

@@ -2,6 +2,7 @@
  "MUK 201": {
   "code": "MUK 201",
   "name": "Mukavemet I",
+  "nameEn": "Strength of Materials I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -38,17 +39,89 @@
    "Hafta 13 · Basit eğilme hali Ara Sınav",
    "Hafta 14 · Basit eğilme hali"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, gerilme hali",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gerilme hali, şekil değiştirme hali",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Şekil değiştirme hali",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Kırılma ve akma varsayımları, şekil değiştirme enerjisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Kesit tesirleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Kesit tesirleri, çubuk mukavemetine giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Normal kuvvet hali Ara Sınav",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Normal kuvvet hali",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kesme hali, eylemsizlik momentleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Burulma hali",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Burulma hali",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Basit eğilme hali Ara Sınav",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Basit eğilme hali",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Cisimlerin Mukavemeti , Mustafa İnan, İTÜ Vakfı, 2001, 95574630501",
    "Cisimlerin Mukavemeti Cilt 1, Mehmet Bakioğlu, Beta Basım Yayın Dağıtım , 2009, 9786053770039",
    "Mukavemet Cilt 1, Mehmet Omurtag, Birsen Yayınevi, 2007, 9755114319"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=201"
  },
  "MUK 201E": {
   "code": "MUK 201E",
   "name": "Mukavemet I",
+  "nameEn": "Strength of Materials I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -85,17 +158,89 @@
    "Hafta 13 · Basit eğilme hali Ara Sınav",
    "Hafta 14 · Basit eğilme hali"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, gerilme hali",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gerilme hali, şekil değiştirme hali",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Şekil değiştirme hali",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Kırılma ve akma varsayımları, şekil değiştirme enerjisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Kesit tesirleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Kesit tesirleri, çubuk mukavemetine giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Normal kuvvet hali Ara Sınav",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Normal kuvvet hali",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kesme hali, eylemsizlik momentleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Burulma hali",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Burulma hali",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Basit eğilme hali Ara Sınav",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Basit eğilme hali",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Cisimlerin Mukavemeti , Mustafa İnan, İTÜ Vakfı, 2001, 95574630501",
    "Cisimlerin Mukavemeti Cilt 1, Mehmet Bakioğlu, Beta Basım Yayın Dağıtım , 2009, 9786053770039",
    "Mukavemet Cilt 1, Mehmet Omurtag, Birsen Yayınevi, 2007, 9755114319"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=201"
  },
  "MUK 202": {
   "code": "MUK 202",
   "name": "Mukavemet II",
+  "nameEn": "Strength of Materials II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -130,17 +275,89 @@
    "Hafta 13 · Elastik stabilite",
    "Hafta 14 · Elastik stabilite"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kesmeli eğilme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kesmeli eğilme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kayma merkezi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Elastik eğri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Elastik eğri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Statikçe belirsiz sistemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Dış merkezli normal kuvvet",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Dış merkezli normal kuvvet",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Diğer mukavemet halleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Enerji yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Enerji yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Enerji yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Elastik stabilite",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Elastik stabilite",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Cisimlerin Mukavemeti, Mustafa İnan, İTÜ Vakfı, 2001, 97574630501",
    "Cisimlerin Mukavemeti Cilt 2, Mehmet Bakioğlu, Beta Yayıncılık, 2009,",
    "Mukavemet Cilt 2, Mehmet Omurtag, Birsen Yayınevi, 2005, 9755114327"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=202"
  },
  "MUK 202E": {
   "code": "MUK 202E",
   "name": "Mukavemet II",
+  "nameEn": "Strength of Materials II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -175,17 +392,89 @@
    "Hafta 13 · Elastik stabilite",
    "Hafta 14 · Elastik stabilite"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kesmeli eğilme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kesmeli eğilme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kayma merkezi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Elastik eğri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Elastik eğri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Statikçe belirsiz sistemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Dış merkezli normal kuvvet",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Dış merkezli normal kuvvet",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Diğer mukavemet halleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Enerji yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Enerji yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Enerji yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Elastik stabilite",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Elastik stabilite",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Cisimlerin Mukavemeti, Mustafa İnan, İTÜ Vakfı, 2001, 97574630501",
    "Cisimlerin Mukavemeti Cilt 2, Mehmet Bakioğlu, Beta Yayıncılık, 2009,",
    "Mukavemet Cilt 2, Mehmet Omurtag, Birsen Yayınevi, 2005, 9755114327"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=202"
  },
  "MUK 203": {
   "code": "MUK 203",
   "name": "Mukavemet I",
+  "nameEn": "Strength of Materials I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -223,17 +512,89 @@
    "Hafta 13 · Eğilme",
    "Hafta 14 · Eğilme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş; Modelleme kavramı ve temel prensipler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gerilme",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Gerilme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Gerilme. Şekil değiştirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Eksenel yük ARA SINAV",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Eksenel yük",
+    "outcomes": "6-9"
+   },
+   {
+    "week": 8,
+    "topic": "Eksenel yük",
+    "outcomes": "6-10"
+   },
+   {
+    "week": 9,
+    "topic": "Burulma",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Burulma",
+    "outcomes": "7-9"
+   },
+   {
+    "week": 11,
+    "topic": "Burulma ARA SINAV",
+    "outcomes": "7-10"
+   },
+   {
+    "week": 12,
+    "topic": "Eğilme",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 13,
+    "topic": "Eğilme",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Eğilme",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Mechanics of Materials, R.C. Hibbeler, Prentice Hall, 2005, 0131866389",
    "Cisimlerin Mukavemeti, Mustafa İnan, İTÜ Vakfı, 2001, 95574630501",
    "Mukavemet, Katı Cisimlerin Mekaniğine Giriş, Egor P. Popov, Çeviri: Hilmi Demiray, Çağlayan Yayınevi, 1990, 9781111120436"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=203"
  },
  "MUK 203E": {
   "code": "MUK 203E",
   "name": "Mukavemet I",
+  "nameEn": "Strength of Materials I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -271,17 +632,89 @@
    "Hafta 13 · Eğilme",
    "Hafta 14 · Eğilme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş; Modelleme kavramı ve temel prensipler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gerilme",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Gerilme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Gerilme. Şekil değiştirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Eksenel yük ARA SINAV",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Eksenel yük",
+    "outcomes": "6-9"
+   },
+   {
+    "week": 8,
+    "topic": "Eksenel yük",
+    "outcomes": "6-10"
+   },
+   {
+    "week": 9,
+    "topic": "Burulma",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Burulma",
+    "outcomes": "7-9"
+   },
+   {
+    "week": 11,
+    "topic": "Burulma ARA SINAV",
+    "outcomes": "7-10"
+   },
+   {
+    "week": 12,
+    "topic": "Eğilme",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 13,
+    "topic": "Eğilme",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Eğilme",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Mechanics of Materials, R.C. Hibbeler, Prentice Hall, 2005, 0131866389",
    "Cisimlerin Mukavemeti, Mustafa İnan, İTÜ Vakfı, 2001, 95574630501",
    "Mukavemet, Katı Cisimlerin Mekaniğine Giriş, Egor P. Popov, Çeviri: Hilmi Demiray, Çağlayan Yayınevi, 1990, 9781111120436"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=203"
  },
  "MUK 204": {
   "code": "MUK 204",
   "name": "Mukavemet II",
+  "nameEn": "Strength of Materials II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -318,17 +751,89 @@
    "Hafta 13 · Enerji metodları",
    "Hafta 14 · Enerji metodları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kesme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kesme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Birleşik mukavemet halleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gerilme dönüşümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gerilme dönüşümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Şekil değiştirme dönüşümleri ARA SINAV",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Göçme kriterleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kirişlerin ve şaftların tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kirişlerin ve şaftların çökmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kirişlerin ve şaftların çökmesi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Kirişlerin ve şafların çökmesi ARA SINAV",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Burkulma",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji metodları",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Enerji metodları",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Mechanics of Materials, R.C. Hibbeler, Prentice Hall, 2005, 0131866389",
    "Cisimlerin Mukavemeti, Mustafa İnan, İTÜ Vakfı, 2001, 95574630501",
    "Mukavemet, Katı Cisimlerin Mekaniğine Giriş, Egor P. Popov, Çeviri: Hilmi Demiray, Çağlayan Yayınevi, 1990, 9781111120436"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=204"
  },
  "MUK 204E": {
   "code": "MUK 204E",
   "name": "Mukavemet II",
+  "nameEn": "Strength of Materials II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -365,17 +870,89 @@
    "Hafta 13 · Enerji metodları",
    "Hafta 14 · Enerji metodları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kesme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kesme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Birleşik mukavemet halleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gerilme dönüşümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gerilme dönüşümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Şekil değiştirme dönüşümleri ARA SINAV",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Göçme kriterleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kirişlerin ve şaftların tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kirişlerin ve şaftların çökmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kirişlerin ve şaftların çökmesi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Kirişlerin ve şafların çökmesi ARA SINAV",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Burkulma",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji metodları",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Enerji metodları",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Mechanics of Materials, R.C. Hibbeler, Prentice Hall, 2005, 0131866389",
    "Cisimlerin Mukavemeti, Mustafa İnan, İTÜ Vakfı, 2001, 95574630501",
    "Mukavemet, Katı Cisimlerin Mekaniğine Giriş, Egor P. Popov, Çeviri: Hilmi Demiray, Çağlayan Yayınevi, 1990, 9781111120436"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=204"
  },
  "MUK 205": {
   "code": "MUK 205",
   "name": "Mukavemet",
+  "nameEn": "Strenght of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -413,16 +990,88 @@
    "Hafta 13 · Mukavemet Hipotezleri. Birleşik Zorlanmalar",
    "Hafta 14 · Yorulma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Alan Eylemsizlik Momentleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Taşıyıcı Sistemlerde Kesit Tesirleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Mukavemetin Esasları. İç Kuvvet ve Gerilme Kavramı",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Eksenel Kuvvet Hali. Termal Gerilmeler. Hiperstatik Problemler",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 5,
+    "topic": "İnce Cidarlı Basınçlı Kaplar. Kesme Zorlanması. Basit Eğilme",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Basit Eğilme ve Eğik Eğilme Halleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kesmeli Eğilme. Elastik Eğri",
+    "outcomes": "4-5-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Elastik Eğri, Burulma Zorlanması ARA SINAV I",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Burulma Zorlanması, Burkulma",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Burkulma, Gerilme durumları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Şekil Değiştirme Durumları. Gerilme-Şekil Değiştirme Bağıntıları",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Deneysel Gerilme Analizi.Strain-Gage Uygulamaları. Mukavemet Hipotezleri ARA SINAV II",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Mukavemet Hipotezleri. Birleşik Zorlanmalar",
+    "outcomes": "5-6-9"
+   },
+   {
+    "week": 14,
+    "topic": "Yorulma",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "Mukavemet, Teorik Esaslar, Çözümlü Problemler, Mustafa Savcı, Alaeddin Arpacı, Birsen Yayınevi Ltd. Şti., 2007, 975-511-106-9",
    "Mechanics of Materials, Ferdinand P. Beer, E. Russel Johnston, Jr., John T. DeWolf, McGraw-Hill Companies, 2004, 007-123568-X"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=205"
  },
  "MUK 207": {
   "code": "MUK 207",
   "name": "Mukavemet",
+  "nameEn": "Strength of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -459,16 +1108,88 @@
    "Hafta 13 · Mukavemet Hipotezleri.",
    "Hafta 14 · Birleşik Zorlanmalar.."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Alan Eylemsizlik Momentleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Taşıyıcı Sistemlerde Kesit Tesirleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Mukavemetin Esasları. İç Kuvvet ve Gerilme Kavramı",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Eksenel Kuvvet Hali. Termal Gerilmeler. İnce Cidarlı Silindirik Kaplar. Hiperstatik Problemler",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 5,
+    "topic": "Kesme Zorlanması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Eğilme Zorlanması. Düz Eğilme.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Eğik Eğilme.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Elastik Eğri. Ara Sınav I",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Elastik Eğri. Burulma Zorlanması.",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Burulma Zorlanması. Kolon Burkulması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gerilme Durumları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Şekil Değiştirme Durumları. Ara Sınav II",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Mukavemet Hipotezleri.",
+    "outcomes": "6-9"
+   },
+   {
+    "week": 14,
+    "topic": "Birleşik Zorlanmalar..",
+    "outcomes": "6-9"
+   }
+  ],
   "textbooks": [
    "Mukavemet, Teorik Esaslar, Çözümlü Problemler, Mustafa Savcı, Alaeddin Arpacı, Birsen Yayınevi Ltd. Şti., 2007, 975-511-106",
    "Mechanics of Materials, Ferdinand P. Beer, E.Russel Johnston, Jr., John T. DeWolf, McGraw-Hill Companies, 2004, 007-123568-X"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=207"
  },
  "MUK 207E": {
   "code": "MUK 207E",
   "name": "Mukavemet",
+  "nameEn": "Strength of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -505,16 +1226,88 @@
    "Hafta 13 · Mukavemet Hipotezleri.",
    "Hafta 14 · Birleşik Zorlanmalar.."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Alan Eylemsizlik Momentleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Taşıyıcı Sistemlerde Kesit Tesirleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Mukavemetin Esasları. İç Kuvvet ve Gerilme Kavramı",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Eksenel Kuvvet Hali. Termal Gerilmeler. İnce Cidarlı Silindirik Kaplar. Hiperstatik Problemler",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 5,
+    "topic": "Kesme Zorlanması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Eğilme Zorlanması. Düz Eğilme.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Eğik Eğilme.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Elastik Eğri. Ara Sınav I",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Elastik Eğri. Burulma Zorlanması.",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Burulma Zorlanması. Kolon Burkulması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gerilme Durumları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Şekil Değiştirme Durumları. Ara Sınav II",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Mukavemet Hipotezleri.",
+    "outcomes": "6-9"
+   },
+   {
+    "week": 14,
+    "topic": "Birleşik Zorlanmalar..",
+    "outcomes": "6-9"
+   }
+  ],
   "textbooks": [
    "Mukavemet, Teorik Esaslar, Çözümlü Problemler, Mustafa Savcı, Alaeddin Arpacı, Birsen Yayınevi Ltd. Şti., 2007, 975-511-106",
    "Mechanics of Materials, Ferdinand P. Beer, E.Russel Johnston, Jr., John T. DeWolf, McGraw-Hill Companies, 2004, 007-123568-X"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=207"
  },
  "MUK 208": {
   "code": "MUK 208",
   "name": "Mukavemet",
+  "nameEn": "Strength of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -528,12 +1321,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=208",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=208"
  },
  "MUK 208E": {
   "code": "MUK 208E",
   "name": "Mukavemet",
+  "nameEn": "Strength of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -547,12 +1340,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=208",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=208"
  },
  "MUK 209": {
   "code": "MUK 209",
   "name": "Mukavemet I",
+  "nameEn": "Strength of Materials I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -566,12 +1359,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=209"
  },
  "MUK 209E": {
   "code": "MUK 209E",
   "name": "Mukavemet I",
+  "nameEn": "Strength of Materials I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -585,12 +1378,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=209"
  },
  "MUK 210": {
   "code": "MUK 210",
   "name": "Mukavemet II",
+  "nameEn": "Strength of Materials II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -604,12 +1397,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=210"
  },
  "MUK 210E": {
   "code": "MUK 210E",
   "name": "Mukavemet II",
+  "nameEn": "Strength of Materials II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -623,12 +1416,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=210"
  },
  "MUK 211": {
   "code": "MUK 211",
   "name": "Mukavemet",
+  "nameEn": "Strength of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -665,15 +1458,87 @@
    "Hafta 13 · Simetrik olmayan eğilme",
    "Hafta 14 · Gerilme yığılmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gerilme bileşenleri, Ortalama normal gerilme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ortalama Kayma gerilmesi, Emniyet gerilmesi ve emniyet katsayısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Basit bağlantıların tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Deformasyon, şekil değiştirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Eksenel yüklü elemanların elastik deformasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Süperpozisyon ilkesi, statikçe belirsiz eksenel yüklü elemanlar",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 8,
+    "topic": "Eksenel yüklü elemanlarda ısıl gerilmeler, gerilme yığılmaları",
+    "outcomes": "5-9"
+   },
+   {
+    "week": 9,
+    "topic": "Dairesel bir şaftın burulma deformasyonu, burulma gerilmesi formülü",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Güç nakli, burulma açısı, statikçe belirsiz tork yüklü elemanlar",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 11,
+    "topic": "Kapalı kesitli ince cidarlı tüpler, gerilme yığılmaları",
+    "outcomes": "6-9"
+   },
+   {
+    "week": 12,
+    "topic": "Düz bir elemanın eğilme deformasyonu, eğilme gerilmesi formülü",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Simetrik olmayan eğilme",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Gerilme yığılmaları",
+    "outcomes": "7-9"
+   }
+  ],
   "textbooks": [
    "Ders Kitabı (Textbook) T. H. G. Megson, Aircraft structures for engineering students. Elsevier, 2016."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=211"
  },
  "MUK 211E": {
   "code": "MUK 211E",
   "name": "Mukavemet",
+  "nameEn": "Strength of Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -710,10 +1575,81 @@
    "Hafta 13 · Simetrik olmayan eğilme",
    "Hafta 14 · Gerilme yığılmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gerilme bileşenleri, Ortalama normal gerilme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ortalama Kayma gerilmesi, Emniyet gerilmesi ve emniyet katsayısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Basit bağlantıların tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Deformasyon, şekil değiştirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Eksenel yüklü elemanların elastik deformasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Süperpozisyon ilkesi, statikçe belirsiz eksenel yüklü elemanlar",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 8,
+    "topic": "Eksenel yüklü elemanlarda ısıl gerilmeler, gerilme yığılmaları",
+    "outcomes": "5-9"
+   },
+   {
+    "week": 9,
+    "topic": "Dairesel bir şaftın burulma deformasyonu, burulma gerilmesi formülü",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Güç nakli, burulma açısı, statikçe belirsiz tork yüklü elemanlar",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 11,
+    "topic": "Kapalı kesitli ince cidarlı tüpler, gerilme yığılmaları",
+    "outcomes": "6-9"
+   },
+   {
+    "week": 12,
+    "topic": "Düz bir elemanın eğilme deformasyonu, eğilme gerilmesi formülü",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Simetrik olmayan eğilme",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Gerilme yığılmaları",
+    "outcomes": "7-9"
+   }
+  ],
   "textbooks": [
    "Ders Kitabı (Textbook) T. H. G. Megson, Aircraft structures for engineering students. Elsevier, 2016."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUK&dersNo=211"
  }
 }

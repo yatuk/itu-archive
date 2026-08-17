@@ -2,6 +2,7 @@
  "EEF 110E": {
   "code": "EEF 110E",
   "name": "Programlama Diline Giriş(C)",
+  "nameEn": "Intr. to Prog. Language (C)",
   "language": "English/Türkçe",
   "credits": {
    "theory": 1,
@@ -39,15 +40,85 @@
    "Hafta 13 · Ara Sınav #2",
    "Hafta 14 · Hafta15 Bölüm 7: C İşaretçileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bölüm 1: Bilgisayarlara Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bölüm 2: C Programlamaya Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Bölüm 2: C Programlamaya Giriş / Bölüm 3: C'de Yapılandırılmış Program Geliştirme",
+    "outcomes": "1-2-3-4-9-10"
+   },
+   {
+    "week": 4,
+    "topic": "Ch3: C / Ch4'te Yapılandırılmış Program Geliştirme: C Program Kontrolü (döngüler için, switch case, do…while, break ve continue ifadeleri, mantıksal operatörler, eşitlik ve atama operatörleri vb.)",
+    "outcomes": "4-5-9-10"
+   },
+   {
+    "week": 5,
+    "topic": "Ch4: C Program Kontrolü (döngüler, switch case, do…while, break ve continue deyimleri, mantıksal operatörler, eşitlik ve atama operatörleri vb. için)",
+    "outcomes": "5-6-9-10"
+   },
+   {
+    "week": 6,
+    "topic": "Bölüm 5: C Fonksiyonları",
+    "outcomes": "7-9-10"
+   },
+   {
+    "week": 7,
+    "topic": "Bölüm 5: C Fonksiyonları",
+    "outcomes": "7-9-10"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav #1"
+   },
+   {
+    "week": 9,
+    "topic": "Ch5: C Fonksiyonları / Ch6: C Dizileri",
+    "outcomes": "7-8-9-10"
+   },
+   {
+    "week": 10,
+    "topic": "Bölüm 6: C Dizileri",
+    "outcomes": "8-9-10"
+   },
+   {
+    "week": 11,
+    "topic": "Ch6: C Dizileri / Ch7: C İşaretçileri",
+    "outcomes": "8-9-10"
+   },
+   {
+    "week": 12,
+    "topic": "Bölüm 7: C İşaretçileri",
+    "outcomes": "8-9-10"
+   },
+   {
+    "week": 13,
+    "topic": "Ara Sınav #2"
+   },
+   {
+    "week": 14,
+    "topic": "Hafta15 Bölüm 7: C İşaretçileri",
+    "outcomes": "8-9-10"
+   }
+  ],
   "textbooks": [
    "Deitel, Paul J., Deitel, Harvey M., C How to Program: with an introduction to C++, Upper Saddle River, NJ: Pearson, Global Edition, 8th ed., 2016, ISBN-13: 9781292110974"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=110",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=110"
  },
  "EEF 205": {
   "code": "EEF 205",
   "name": "Lojik Tasarıma Giriş",
+  "nameEn": "Introduction to Logic Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -82,15 +153,87 @@
    "Hafta 13 · Senkron Ardışıl Devrelerin Tasarımı",
    "Hafta 14 · Sonlu Durum Makinalarının HDL Modelleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayısal Sistemler, Analog/Sayısal Dönüşüm, Sayı Sistemleri, Sayı Tabanı Dönüşümleri, ikili sayılar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boole Cebrinin Aksiyomlar ile Tanımı, Temel Teoremler ve Özellikler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Boole Fonksiyonları: Kanonik Gösterilimler. Lojik Kapılar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Donanım Tanımlama Dilleri (HDL), Boole Fonksiyonlarının HDL ile Modellenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Boole Fonksiyonla rı nı n İ ndi rgenmesi: Quinn Mccluskey yöntemi(transformatör, jiratör), Bağımsız kaynaklar, bağımlı kaynaklar, çok uçlu devre elemanları (transistor, işlemsel kuvvetlendirici)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Karnaugh Diyagramları, Keyfi Çıkışlar, Evrense| Kapılar, TÜVE ve TÜVEYA Kapıları ile Gerçekleme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "kombinezonsal Devrelerin Analiz ve Tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "HDL ile kombinezonsal devre tasarım örnekleri",
+    "outcomes": "3-4-7"
+   },
+   {
+    "week": 9,
+    "topic": "Orta ölçekli Tümdevre elemanları (MSl-Kodlayıcı, Kod Çözücü, Veri Toplayıcı, Veri dağıtıcı), Boo|e Fonksiyonlarının MSl elemanları ile gerçeklenmesi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Boole Fonksiyonlarının; MSl elemanlarını alt-blok olarak kullanarak HDL ile Modellenmesi",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 11,
+    "topic": "Bellek Elemanları: Tutucu, Flip-Floplar, SR Tutucu, Kontrol girişli SR Tutucu, D Tipi Tutucu ve D flip-flop un HDL Modelleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Senkron Ardışıl Devrelerin Analizi, Sonlu Durum Makinalarının Meally ve Moore Modelleri,",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Senkron Ardışıl Devrelerin Tasarımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Sonlu Durum Makinalarının HDL Modelleri",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "M. M. Mano, M. D. Ciletti, \"Digital Design\", (4th Edition) Prentice Hall, 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=205"
  },
  "EEF 205E": {
   "code": "EEF 205E",
   "name": "Lojik Tasarıma Giriş",
+  "nameEn": "Introduction to Logic Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -125,15 +268,87 @@
    "Hafta 13 · Senkron Ardışıl Devrelerin Tasarımı",
    "Hafta 14 · Sonlu Durum Makinalarının HDL Modelleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayısal Sistemler, Analog/Sayısal Dönüşüm, Sayı Sistemleri, Sayı Tabanı Dönüşümleri, ikili sayılar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boole Cebrinin Aksiyomlar ile Tanımı, Temel Teoremler ve Özellikler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Boole Fonksiyonları: Kanonik Gösterilimler. Lojik Kapılar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Donanım Tanımlama Dilleri (HDL), Boole Fonksiyonlarının HDL ile Modellenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Boole Fonksiyonla rı nı n İ ndi rgenmesi: Quinn Mccluskey yöntemi(transformatör, jiratör), Bağımsız kaynaklar, bağımlı kaynaklar, çok uçlu devre elemanları (transistor, işlemsel kuvvetlendirici)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Karnaugh Diyagramları, Keyfi Çıkışlar, Evrense| Kapılar, TÜVE ve TÜVEYA Kapıları ile Gerçekleme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "kombinezonsal Devrelerin Analiz ve Tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "HDL ile kombinezonsal devre tasarım örnekleri",
+    "outcomes": "3-4-7"
+   },
+   {
+    "week": 9,
+    "topic": "Orta ölçekli Tümdevre elemanları (MSl-Kodlayıcı, Kod Çözücü, Veri Toplayıcı, Veri dağıtıcı), Boo|e Fonksiyonlarının MSl elemanları ile gerçeklenmesi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Boole Fonksiyonlarının; MSl elemanlarını alt-blok olarak kullanarak HDL ile Modellenmesi",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 11,
+    "topic": "Bellek Elemanları: Tutucu, Flip-Floplar, SR Tutucu, Kontrol girişli SR Tutucu, D Tipi Tutucu ve D flip-flop un HDL Modelleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Senkron Ardışıl Devrelerin Analizi, Sonlu Durum Makinalarının Meally ve Moore Modelleri,",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Senkron Ardışıl Devrelerin Tasarımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Sonlu Durum Makinalarının HDL Modelleri",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "M. M. Mano, M. D. Ciletti, \"Digital Design\", (4th Edition) Prentice Hall, 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=205"
  },
  "EEF 206": {
   "code": "EEF 206",
   "name": "İşaret İşleme ve Lineer Sist.",
+  "nameEn": "Signal Processing&Linear Syst.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -165,15 +380,87 @@
    "Hafta 13 · Haberleşme uygulamaları, modülasyon ve demodülasyon, süzgeçleme",
    "Hafta 14 · Çok-boyutlu işaretler, görüntü işleme uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sürekli-zamanlı işaretler ve sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli-zamanlı, lineer zamanla-değişmeyen (LZD) sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sürekli-zamanlı konvolüsyon, sürekli zamanda diferansiyel denklemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sürekli-zamanlı Fourier serisi açılımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli-zamanlı Fourier dönüşümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Laplace dönüşümü, sürekli-zamanlı LZD sistemlerin analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Örnekleme ve kuvantalama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Ayrık-zamanlı işaretler ve sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Ayrık-zamanlı LZD sistemler, ayrık-zamanlı konvolüsyon, ayrık zamanda fark denklemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Ayrık-zamanlı Fourier serisi açılımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Ayrık-zamanlı Fourier dönüşümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "z-dönüşümü, ayrık-zamanlı LZD sistemlerin analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Haberleşme uygulamaları, modülasyon ve demodülasyon, süzgeçleme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Çok-boyutlu işaretler, görüntü işleme uygulamaları",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Alan Oppenheim, Alan Willsky, Signals and Systems, Prentice Hall, 1996."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=206"
  },
  "EEF 206E": {
   "code": "EEF 206E",
   "name": "İşaret İşleme ve Lineer Sist.",
+  "nameEn": "Signal Processing&Linear Syst.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -205,15 +492,87 @@
    "Hafta 13 · Haberleşme uygulamaları, modülasyon ve demodülasyon, süzgeçleme",
    "Hafta 14 · Çok-boyutlu işaretler, görüntü işleme uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sürekli-zamanlı işaretler ve sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli-zamanlı, lineer zamanla-değişmeyen (LZD) sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sürekli-zamanlı konvolüsyon, sürekli zamanda diferansiyel denklemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sürekli-zamanlı Fourier serisi açılımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli-zamanlı Fourier dönüşümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Laplace dönüşümü, sürekli-zamanlı LZD sistemlerin analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Örnekleme ve kuvantalama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Ayrık-zamanlı işaretler ve sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Ayrık-zamanlı LZD sistemler, ayrık-zamanlı konvolüsyon, ayrık zamanda fark denklemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Ayrık-zamanlı Fourier serisi açılımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Ayrık-zamanlı Fourier dönüşümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "z-dönüşümü, ayrık-zamanlı LZD sistemlerin analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Haberleşme uygulamaları, modülasyon ve demodülasyon, süzgeçleme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Çok-boyutlu işaretler, görüntü işleme uygulamaları",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Alan Oppenheim, Alan Willsky, Signals and Systems, Prentice Hall, 1996."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=206"
  },
  "EEF 210": {
   "code": "EEF 210",
   "name": "Diferansiyel Denklemler",
+  "nameEn": "Differential Equations",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -248,15 +607,87 @@
    "Hafta 13 · İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Adi Nokta Etrafında Seri Çözümleri, Euler Denklemler, Regüler Singüler Noktalar)",
    "Hafta 14 · İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Regüler Singüler Nokta Etrafında Seri Çözümleri)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş. Birinci Mertebeden Diferansiyel Denklemler (Temel Kavramlar, Basit DD Örneği DD’lerin Sınıflandırması)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Birinci Mertebeden Diferansiyel Denklemler (Lineer Denklemler, Ayrılabilir Denklemler, Varlık ve Teklik Teoremi)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Birinci Mertebeden Diferansiyel Denklemler (Tam Denklemler, Homojen Denklemler, Riccati Denklemi)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemler (Sabit Katsayılı Homojen Lineer Denklemler, Temel Teoremler, Wronskian, Karakteristik Denklemin Karmaşık Kökleri)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemler (Karakteristik Denklerim Tekrarlı Kökleri, Mertebe Düşürme Yöntemi, Homojen Olmayan Denklemler , Belirsiz Katsayılar Yöntemi, Parametrelerin Değişimi Yöntemi )",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemler (Mekanik ve Elektriksel Salınımlar, Zorlanmış Salınımlar) Yüksek Mertebeden Diferansiyel Denklemler (n’inci Dereceden Lineer Denklemlerin Genel Teorisi)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yüksek Mertebeden Diferansiyel Denklemler (Sabit Katsayılı Lineer Denklemler, Belirsiz Katsayılar Yöntemi, Parametrelerin DeğişimiYöntemi)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Laplace Dönüşümü ( Laplace Dönüşümünün Tanımı, İlkdeğer Problemleri, Basamak Fonksiyonu)",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Laplace Dönüşümü (Süreksiz Zorlama Fonksiyonlu DD’ler, Dürtü Fonksiyonu, Konvolüsyon Integrali)",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Birinci Mertebeden Lineer Denklem Sistemleri (Giriş, Birinci Dereceden Lineer Sistemleri Temel Teorisi)",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Birinci Mertebeden Lineer Denklem Sistemleri (Sabit Katsayılı Homojen Lineer Sistemler, Karmaşık Özdeğerler, Temel Matrisler)",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Birinci Mertebeden Lineer Denklem Sistemleri (Tekrarlı Özdeğerler, Homojen Olmayan Lineer Sistemler)",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Adi Nokta Etrafında Seri Çözümleri, Euler Denklemler, Regüler Singüler Noktalar)",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Regüler Singüler Nokta Etrafında Seri Çözümleri)",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Elementary Differential Equations and boundary Value Problems Sixth Edition , William E. Boyce-Richard C. Diprima"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=210"
  },
  "EEF 210E": {
   "code": "EEF 210E",
   "name": "Diferansiyel Denklemler",
+  "nameEn": "Differential Equations",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -291,15 +722,87 @@
    "Hafta 13 · İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Adi Nokta Etrafında Seri Çözümleri, Euler Denklemler, Regüler Singüler Noktalar)",
    "Hafta 14 · İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Regüler Singüler Nokta Etrafında Seri Çözümleri)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş. Birinci Mertebeden Diferansiyel Denklemler (Temel Kavramlar, Basit DD Örneği DD’lerin Sınıflandırması)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Birinci Mertebeden Diferansiyel Denklemler (Lineer Denklemler, Ayrılabilir Denklemler, Varlık ve Teklik Teoremi)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Birinci Mertebeden Diferansiyel Denklemler (Tam Denklemler, Homojen Denklemler, Riccati Denklemi)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemler (Sabit Katsayılı Homojen Lineer Denklemler, Temel Teoremler, Wronskian, Karakteristik Denklemin Karmaşık Kökleri)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemler (Karakteristik Denklerim Tekrarlı Kökleri, Mertebe Düşürme Yöntemi, Homojen Olmayan Denklemler , Belirsiz Katsayılar Yöntemi, Parametrelerin Değişimi Yöntemi )",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemler (Mekanik ve Elektriksel Salınımlar, Zorlanmış Salınımlar) Yüksek Mertebeden Diferansiyel Denklemler (n’inci Dereceden Lineer Denklemlerin Genel Teorisi)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yüksek Mertebeden Diferansiyel Denklemler (Sabit Katsayılı Lineer Denklemler, Belirsiz Katsayılar Yöntemi, Parametrelerin DeğişimiYöntemi)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Laplace Dönüşümü ( Laplace Dönüşümünün Tanımı, İlkdeğer Problemleri, Basamak Fonksiyonu)",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Laplace Dönüşümü (Süreksiz Zorlama Fonksiyonlu DD’ler, Dürtü Fonksiyonu, Konvolüsyon Integrali)",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Birinci Mertebeden Lineer Denklem Sistemleri (Giriş, Birinci Dereceden Lineer Sistemleri Temel Teorisi)",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Birinci Mertebeden Lineer Denklem Sistemleri (Sabit Katsayılı Homojen Lineer Sistemler, Karmaşık Özdeğerler, Temel Matrisler)",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Birinci Mertebeden Lineer Denklem Sistemleri (Tekrarlı Özdeğerler, Homojen Olmayan Lineer Sistemler)",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Adi Nokta Etrafında Seri Çözümleri, Euler Denklemler, Regüler Singüler Noktalar)",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "İkinci Mertebeden Diferansiyel Denklemlerin Seri Çözümleri (Regüler Singüler Nokta Etrafında Seri Çözümleri)",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Elementary Differential Equations and boundary Value Problems Sixth Edition , William E. Boyce-Richard C. Diprima"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=210"
  },
  "EEF 211": {
   "code": "EEF 211",
   "name": "Elektrik Devre Temelleri",
+  "nameEn": "Basics of Electrical Circuits",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -332,15 +835,87 @@
    "Hafta 13 · RLC ve çok uçlulardan oluşmuş devrelerde durum denklemlerinin elde edilmesi",
    "Hafta 14 · Birinci ve ikinci mertebeden devrelerin öz, zorlanmış ve tam çözümleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik devresi ve devre teorisi. Toplu parametreli devreler. Elektrik devre elemanlarının matematiksel modellerinin elde edilmesi: ölçüm grafı ve uç grafı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kirchhoff'un gerilim ve akım yasaları, Güç ve enerji fonksiyonları. Tellegen teoremi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Graf teorisinde temel tanımlar, devre grafı ve graf matrisleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Devre grafında lineer bağımsız akım ve gerilim denklem takımlarının elde edilmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Lineer ve Lineer olmayan iki uçlu (Direnç,kapasite, endüktans,memristör) devre elemanları, iki kapılı devre elemanları (transformatör, jiratör), Bağımsız kaynaklar, bağımlı kaynaklar, çok uçlu devre elemanları (transistor, işlemsel kuvvetlendirici",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "2-uçlu lineer ve lineer olmayan devre elemanları, paralel-seri bağlantı, Aktif ve pasif eleman tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Dirençli Devrelerin Graf Temelli Analiz Yöntemleri: Kiriş akımları ve Dal Gerilimleri Yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Düğüm gerilimleri yöntemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Çevre akımları yöntemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Norton ve Thevenin eşdeğer devreleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Lineer olmayan dirençli devrelerin analizi; Çalışma noktasının bulunması, Küçük işaret analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "RLC devrelerinin durum denklemlerinin elde edilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "RLC ve çok uçlulardan oluşmuş devrelerde durum denklemlerinin elde edilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Birinci ve ikinci mertebeden devrelerin öz, zorlanmış ve tam çözümleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "LINEAR AND NONLINEAR CIRCUITS: BASIC & ADVANCED CONCEPT, M. PARODI AND M. STORACE, SPRINGER INT. PUB. 2018. (ISSN 1876-1100)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=211"
  },
  "EEF 211E": {
   "code": "EEF 211E",
   "name": "Elektrik Devre Temelleri",
+  "nameEn": "Basics of Electrical Circuits",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -373,15 +948,87 @@
    "Hafta 13 · RLC ve çok uçlulardan oluşmuş devrelerde durum denklemlerinin elde edilmesi",
    "Hafta 14 · Birinci ve ikinci mertebeden devrelerin öz, zorlanmış ve tam çözümleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik devresi ve devre teorisi. Toplu parametreli devreler. Elektrik devre elemanlarının matematiksel modellerinin elde edilmesi: ölçüm grafı ve uç grafı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kirchhoff'un gerilim ve akım yasaları, Güç ve enerji fonksiyonları. Tellegen teoremi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Graf teorisinde temel tanımlar, devre grafı ve graf matrisleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Devre grafında lineer bağımsız akım ve gerilim denklem takımlarının elde edilmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Lineer ve Lineer olmayan iki uçlu (Direnç,kapasite, endüktans,memristör) devre elemanları, iki kapılı devre elemanları (transformatör, jiratör), Bağımsız kaynaklar, bağımlı kaynaklar, çok uçlu devre elemanları (transistor, işlemsel kuvvetlendirici",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "2-uçlu lineer ve lineer olmayan devre elemanları, paralel-seri bağlantı, Aktif ve pasif eleman tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Dirençli Devrelerin Graf Temelli Analiz Yöntemleri: Kiriş akımları ve Dal Gerilimleri Yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Düğüm gerilimleri yöntemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Çevre akımları yöntemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Norton ve Thevenin eşdeğer devreleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Lineer olmayan dirençli devrelerin analizi; Çalışma noktasının bulunması, Küçük işaret analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "RLC devrelerinin durum denklemlerinin elde edilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "RLC ve çok uçlulardan oluşmuş devrelerde durum denklemlerinin elde edilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Birinci ve ikinci mertebeden devrelerin öz, zorlanmış ve tam çözümleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "LINEAR AND NONLINEAR CIRCUITS: BASIC & ADVANCED CONCEPT, M. PARODI AND M. STORACE, SPRINGER INT. PUB. 2018. (ISSN 1876-1100)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=211"
  },
  "EEF 212": {
   "code": "EEF 212",
   "name": "Elektromagnetik Teori I",
+  "nameEn": "Electromagnetic Theory I",
   "language": "English/Türkçe",
   "credits": {
    "theory": 4,
@@ -416,15 +1063,87 @@
    "Hafta 13 · Zamanda Harmonik Dalgalar, Fazör Gösterilim. Elektromagnetik Spektrum",
    "Hafta 14 · Düzlem Dalgalar, Frekans, Dalga Boyu, Faz Hızı, Elektromagnetik Dalgaların Uygulama alanları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Vektör analiz ve koordinat sistemleri, Diferansiyel operatörler, Gauss ve Stokes teoremleri, Sıfır denklikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yük dağılımları, Coulomb yasası, Boş uzayda elektrostatik alan, Alan çizgileri, Elektrostatik potansiyel ve iş",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Elektrostatik’in temel denklemleri, Gauss ve Poisson bağıntıları, Polarizasyon kavramı, dielektrik ve iletken cisimler, sınır koşulları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Görüntü yöntemi, Kondansatör, elektrostatik enerji yoğunluğu, Depo edilen enerji",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Durgun Elektrik Akımı, Akım Yoğunluğu, Ohm Yasası, Direnç, Akım, Gerilim; Kirchoff Akım ve Gerilim Yasası",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Boşlukta statik magnetik alan, Lorentz kuvveti, Biot-Savart yasası, Magnetik alan çizgileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Amperé yasası, Vektör potansiyel, Magnetostatik’in temel denklemleri,",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Magnetik malzemeler, Histerezis, Sınır koşulları, Endüktans, Magnetik Enerji",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Genelleştirilmiş Amperé yasası, Faraday Yasası, Maxwell denklemleri ve Elektrodinamiğin temelleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Magnetik devreler, Transformatörler, Elektromekanik enerji dönüşümü",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "R,L,C elemanlarının zaman domeni bağıntıları, Zamanda Harmonik kaynaklar, Fazör Gösterilim ve devre eşdeğerleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Zaman ve Frekans domeni Dalga Denklemleri ve Genel Çözümleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Zamanda Harmonik Dalgalar, Fazör Gösterilim. Elektromagnetik Spektrum",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Düzlem Dalgalar, Frekans, Dalga Boyu, Faz Hızı, Elektromagnetik Dalgaların Uygulama alanları",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "D. K. Cheng, Field and Wave Electromagnetics"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=212"
  },
  "EEF 212E": {
   "code": "EEF 212E",
   "name": "Elektromagnetik Teori I",
+  "nameEn": "Electromagnetic Theory I",
   "language": "English/Türkçe",
   "credits": {
    "theory": 4,
@@ -459,15 +1178,87 @@
    "Hafta 13 · Zamanda Harmonik Dalgalar, Fazör Gösterilim. Elektromagnetik Spektrum",
    "Hafta 14 · Düzlem Dalgalar, Frekans, Dalga Boyu, Faz Hızı, Elektromagnetik Dalgaların Uygulama alanları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Vektör analiz ve koordinat sistemleri, Diferansiyel operatörler, Gauss ve Stokes teoremleri, Sıfır denklikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yük dağılımları, Coulomb yasası, Boş uzayda elektrostatik alan, Alan çizgileri, Elektrostatik potansiyel ve iş",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Elektrostatik’in temel denklemleri, Gauss ve Poisson bağıntıları, Polarizasyon kavramı, dielektrik ve iletken cisimler, sınır koşulları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Görüntü yöntemi, Kondansatör, elektrostatik enerji yoğunluğu, Depo edilen enerji",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Durgun Elektrik Akımı, Akım Yoğunluğu, Ohm Yasası, Direnç, Akım, Gerilim; Kirchoff Akım ve Gerilim Yasası",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Boşlukta statik magnetik alan, Lorentz kuvveti, Biot-Savart yasası, Magnetik alan çizgileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Amperé yasası, Vektör potansiyel, Magnetostatik’in temel denklemleri,",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Magnetik malzemeler, Histerezis, Sınır koşulları, Endüktans, Magnetik Enerji",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Genelleştirilmiş Amperé yasası, Faraday Yasası, Maxwell denklemleri ve Elektrodinamiğin temelleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Magnetik devreler, Transformatörler, Elektromekanik enerji dönüşümü",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "R,L,C elemanlarının zaman domeni bağıntıları, Zamanda Harmonik kaynaklar, Fazör Gösterilim ve devre eşdeğerleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Zaman ve Frekans domeni Dalga Denklemleri ve Genel Çözümleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Zamanda Harmonik Dalgalar, Fazör Gösterilim. Elektromagnetik Spektrum",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Düzlem Dalgalar, Frekans, Dalga Boyu, Faz Hızı, Elektromagnetik Dalgaların Uygulama alanları",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "D. K. Cheng, Field and Wave Electromagnetics"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=212"
  },
  "EEF 221": {
   "code": "EEF 221",
   "name": "Elektrik Devre Temelleri Lab.",
+  "nameEn": "Basics of Elec. Circuits Lab.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -501,15 +1292,87 @@
    "Hafta 13 · Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-II",
    "Hafta 14 · Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Grupların Oluşturulması",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 2,
+    "topic": "Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi-I",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi-II",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Çok-uçlu Devre Elemanı Modelleme-I",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Çok-uçlu Devre Elemanı Modelleme-II",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi-I",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi-II",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi-II",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi-II",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Devrelerin Thevenin-Norton Eşdeğerinin Bulunması-I",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Devrelerin Thevenin-Norton Eşdeğerinin Bulunması-II",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-I",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-II",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-III",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=221",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=221"
  },
  "EEF 221E": {
   "code": "EEF 221E",
   "name": "Elektrik Devre Temelleri Lab.",
+  "nameEn": "Basics of Elec. Circuits Lab.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -543,15 +1406,87 @@
    "Hafta 13 · Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-II",
    "Hafta 14 · Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Grupların Oluşturulması",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 2,
+    "topic": "Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi-I",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Avometre, Osilatör ile Osiloskop Tanıtımı ve Kirchoff Yasalarının Gerçeklenmesi-II",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Çok-uçlu Devre Elemanı Modelleme-I",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Çok-uçlu Devre Elemanı Modelleme-II",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi-I",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "RC, RL ve RCL Devrelerinde Geçici Rejimlerin İncelenmesi-II",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi-II",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Doğru ve Alternatif Akımda Sürekli Rejimlerin İncelenmesi-II",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Devrelerin Thevenin-Norton Eşdeğerinin Bulunması-I",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Devrelerin Thevenin-Norton Eşdeğerinin Bulunması-II",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-I",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-II",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Çarpımsallık, Toplamsallık ve Karşılılık Teoremlerinin İncelenmesi-III",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=221",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=221"
  },
  "EEF 232": {
   "code": "EEF 232",
   "name": "Devre ve Sistem Analizi",
+  "nameEn": "Circuit and System Analysis",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -585,15 +1520,87 @@
    "Hafta 13 · Devrelerin Norton ve Thevenin eşdeğerlerinin bulunması. Kararlılık analizi.",
    "Hafta 14 · Devre fonksiyonları ve parametreleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fazör kavramı. Durum denklemlerinin jw-tanım bölgesinde çözümü.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "jw-tanım bölgesinde eleman tanım bağıntıları, empedans ve admitans kavramları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "jw-tanım bölgesinde devre denklemlerinin elde edilmesi ve çözümü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "jw-tanım bölgesinde transfer fonksiyonun bulunması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Rezonans kavramı ve rezonans devreleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "jw-tanım bölgesinde kompleks güç, aktif güç ve pasif kavramı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Maksimum güç aktarma. Empedans uyumlaştırma devreleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Dengeli 3-fazlı sistemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Dengeli 3-fazlı sistemlerde yıldız ve üçgen bağlı yüklerin kompleks güç hesaplamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Laplace dönüşümü, Durum denklemlerinin s-tanım bölgesinde çözümü",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "s-tanım bölgesinde devre elemanlarının tanım bağıntıları, empedans ve admitans kavramları.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "s-tanım bölgesinde devre denklemlerinin elde edilmesi ve çözümü.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Devrelerin Norton ve Thevenin eşdeğerlerinin bulunması. Kararlılık analizi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Devre fonksiyonları ve parametreleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Electric Circuits, James W. Nilsson and Susan A. Riedel, Pearson Prentice Hall, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=232"
  },
  "EEF 232E": {
   "code": "EEF 232E",
   "name": "Devre ve Sistem Analizi",
+  "nameEn": "Circuit and System Analysis",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -627,15 +1634,87 @@
    "Hafta 13 · Devrelerin Norton ve Thevenin eşdeğerlerinin bulunması. Kararlılık analizi.",
    "Hafta 14 · Devre fonksiyonları ve parametreleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fazör kavramı. Durum denklemlerinin jw-tanım bölgesinde çözümü.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "jw-tanım bölgesinde eleman tanım bağıntıları, empedans ve admitans kavramları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "jw-tanım bölgesinde devre denklemlerinin elde edilmesi ve çözümü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "jw-tanım bölgesinde transfer fonksiyonun bulunması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Rezonans kavramı ve rezonans devreleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "jw-tanım bölgesinde kompleks güç, aktif güç ve pasif kavramı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Maksimum güç aktarma. Empedans uyumlaştırma devreleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Dengeli 3-fazlı sistemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Dengeli 3-fazlı sistemlerde yıldız ve üçgen bağlı yüklerin kompleks güç hesaplamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Laplace dönüşümü, Durum denklemlerinin s-tanım bölgesinde çözümü",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "s-tanım bölgesinde devre elemanlarının tanım bağıntıları, empedans ve admitans kavramları.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "s-tanım bölgesinde devre denklemlerinin elde edilmesi ve çözümü.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Devrelerin Norton ve Thevenin eşdeğerlerinin bulunması. Kararlılık analizi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Devre fonksiyonları ve parametreleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Electric Circuits, James W. Nilsson and Susan A. Riedel, Pearson Prentice Hall, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=232"
  },
  "EEF 262": {
   "code": "EEF 262",
   "name": "Elektroniğin Temelleri",
+  "nameEn": "Fundamentals of Electronics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -674,15 +1753,87 @@
    "Hafta 13 · Fark Kuvvetlendiricileri, Aktif Yüklü Devreler, Fark Kuvvetlendiricilerinde Ortak İşaret Bastırma Oranı ve Ofset Gerilimi",
    "Hafta 14 · İşlemsel Yükselteçler ve Doğrusal/Doğrusal Olmayan Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Katı hal fiziğinin temelleri, yarı iletkenlerin özellikleri, enerji bantları, direk ve endirekt yarı iletkenler, akım taşıyıcılar, sürüklenme ve yayınım mekanizmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrofabrikasyon Temelleri, PN Jonksiyonunun fiziksel yapısı, PN Jonksiyonunun davranışı (denge durumu, düz ve ters kutuplama)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Diyot modelleri ve diyot devreleri, Diyotun küçük işaret modeli, Doğrultucular, DC güç kaynağı tasarımı, Zener diyot, Regülatör devreleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Bipolar jonksiyonlu transistorun (BJT) fiziksel yapısı ve davranışı, Bipolar jonksiyonlu transistorun (BJT) çalışma bölgeleri, Ebers-Moll Modeli, Early Etkisi, Isıl Hassasiyet Analizi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "BJT devrelerinin DC kutuplaması ve küçük işaret modeli",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "MOSFET’in fiziksel yapısı ve davranışı, MOSFET’in çalışma bölgeleri, önemli ikincil etkiler (kanal boyu modülasyonu, gövde etkisi)",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "MOSFET devrelerinin DC kutuplaması ve küçük işaret modeli",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Transistör temelli Kuvvetlendirmenin Temelleri, BJT Kuvvetlendiricilerin Kutuplanması",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "BJT Kuvvetlendiricilerin Küçük-İşaret Analizi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "MOSFET Kuvvetlendiricilerin Kutuplanması ve Küçük-İşaret Analizi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "MOSFET Kuvvetlendiricilerin Küçük-İşaret Analizi, Kaskot Kuvvetlendiriciler",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Akım Aynaları, Akım Kaynaklar, Transistör Çifti Kuvvetlendiriciler",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Fark Kuvvetlendiricileri, Aktif Yüklü Devreler, Fark Kuvvetlendiricilerinde Ortak İşaret Bastırma Oranı ve Ofset Gerilimi",
+    "outcomes": "9-10"
+   },
+   {
+    "week": 14,
+    "topic": "İşlemsel Yükselteçler ve Doğrusal/Doğrusal Olmayan Uygulamaları",
+    "outcomes": "11"
+   }
+  ],
   "textbooks": [
    "B. Razavi, “Microelectronics”, 2nd edition, Wiley, 2015"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=262",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=262"
  },
  "EEF 262E": {
   "code": "EEF 262E",
   "name": "Elektroniğin Temelleri",
+  "nameEn": "Fundamentals of Electronics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -721,15 +1872,87 @@
    "Hafta 13 · Fark Kuvvetlendiricileri, Aktif Yüklü Devreler, Fark Kuvvetlendiricilerinde Ortak İşaret Bastırma Oranı ve Ofset Gerilimi",
    "Hafta 14 · İşlemsel Yükselteçler ve Doğrusal/Doğrusal Olmayan Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Katı hal fiziğinin temelleri, yarı iletkenlerin özellikleri, enerji bantları, direk ve endirekt yarı iletkenler, akım taşıyıcılar, sürüklenme ve yayınım mekanizmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrofabrikasyon Temelleri, PN Jonksiyonunun fiziksel yapısı, PN Jonksiyonunun davranışı (denge durumu, düz ve ters kutuplama)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Diyot modelleri ve diyot devreleri, Diyotun küçük işaret modeli, Doğrultucular, DC güç kaynağı tasarımı, Zener diyot, Regülatör devreleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Bipolar jonksiyonlu transistorun (BJT) fiziksel yapısı ve davranışı, Bipolar jonksiyonlu transistorun (BJT) çalışma bölgeleri, Ebers-Moll Modeli, Early Etkisi, Isıl Hassasiyet Analizi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "BJT devrelerinin DC kutuplaması ve küçük işaret modeli",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "MOSFET’in fiziksel yapısı ve davranışı, MOSFET’in çalışma bölgeleri, önemli ikincil etkiler (kanal boyu modülasyonu, gövde etkisi)",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "MOSFET devrelerinin DC kutuplaması ve küçük işaret modeli",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Transistör temelli Kuvvetlendirmenin Temelleri, BJT Kuvvetlendiricilerin Kutuplanması",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "BJT Kuvvetlendiricilerin Küçük-İşaret Analizi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "MOSFET Kuvvetlendiricilerin Kutuplanması ve Küçük-İşaret Analizi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "MOSFET Kuvvetlendiricilerin Küçük-İşaret Analizi, Kaskot Kuvvetlendiriciler",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Akım Aynaları, Akım Kaynaklar, Transistör Çifti Kuvvetlendiriciler",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Fark Kuvvetlendiricileri, Aktif Yüklü Devreler, Fark Kuvvetlendiricilerinde Ortak İşaret Bastırma Oranı ve Ofset Gerilimi",
+    "outcomes": "9-10"
+   },
+   {
+    "week": 14,
+    "topic": "İşlemsel Yükselteçler ve Doğrusal/Doğrusal Olmayan Uygulamaları",
+    "outcomes": "11"
+   }
+  ],
   "textbooks": [
    "B. Razavi, “Microelectronics”, 2nd edition, Wiley, 2015"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=262",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=262"
  },
  "EEF 271": {
   "code": "EEF 271",
   "name": "Olasılık ve İstatistik",
+  "nameEn": "Probability and Statistics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -765,16 +1988,88 @@
    "Hafta 13 · Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
    "Hafta 14 · Regresyon analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayma Teknikleri, permutasyon, kombinasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık Kavramı, Şartlı olasılık",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Rastlantı Değişkeni, Olasılık Fonksiyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Dağılım fonksiyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Kesikli Dağılımlar: Bernoulli, Binom, Poisson",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli dağılımlar: Normal, Gamma, Eksponansiyel",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Beklenen değer, Moment çıkaran fonksiyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Merkezi eğilim ve yayılım ölçüleri, Chebyshev eşitsizliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Tahmin edici ve özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "En çok olabilirlik tahmin edicisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Güven aralığı, Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Regresyon analizi",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Sheldon Ross, 1998, A First Course in Probability, Prentice-Hall International",
    "Murray R. Spiegel, 1961, Theory and Problems of Statistics, McGraw-Hill Book Company"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=271",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=271"
  },
  "EEF 271E": {
   "code": "EEF 271E",
   "name": "Olasılık ve İstatistik",
+  "nameEn": "Probability and Statistics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -810,16 +2105,88 @@
    "Hafta 13 · Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
    "Hafta 14 · Regresyon analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayma Teknikleri, permutasyon, kombinasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık Kavramı, Şartlı olasılık",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Rastlantı Değişkeni, Olasılık Fonksiyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Dağılım fonksiyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Kesikli Dağılımlar: Bernoulli, Binom, Poisson",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli dağılımlar: Normal, Gamma, Eksponansiyel",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Beklenen değer, Moment çıkaran fonksiyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Merkezi eğilim ve yayılım ölçüleri, Chebyshev eşitsizliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Tahmin edici ve özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "En çok olabilirlik tahmin edicisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Güven aralığı, Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Tek ve çift Ana Kütle Ortalaması Hipotez Testi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Regresyon analizi",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Sheldon Ross, 1998, A First Course in Probability, Prentice-Hall International",
    "Murray R. Spiegel, 1961, Theory and Problems of Statistics, McGraw-Hill Book Company"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=271",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=271"
  },
  "EEF 281": {
   "code": "EEF 281",
   "name": "Lineer Cebir ve Uygulamaları",
+  "nameEn": "Linear Algebra & Applications",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -851,15 +2218,87 @@
    "Hafta 13 · Simetrik matrisler, spektral teorem",
    "Hafta 14 · Fark denklemleri, pozitif belirli matrisler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lineer denklemlerin farklı yorumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Eleme Yöntemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "LU ayrıştırması, matris tersi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Vektör uzayları, alt uzaylar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bir matrisle ilişkili temel uzaylar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Lineer denklemlerin genel çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Boyut, bazlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Diklik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "İzdüşüm, enküçük kareler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Gram-Schmidt yöntemi, QR ayrıştırması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Determinantlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Özdeğerler ve özvektörler, köşegenleştirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Simetrik matrisler, spektral teorem",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Fark denklemleri, pozitif belirli matrisler",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Linear Algebra and its Applications, 4th Edition, Gilbert Strang, Wellesley Cambridge Press, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=281",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=281"
  },
  "EEF 281E": {
   "code": "EEF 281E",
   "name": "Lineer Cebir ve Uygulamaları",
+  "nameEn": "Linear Algebra & Applications",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -891,15 +2330,87 @@
    "Hafta 13 · Simetrik matrisler, spektral teorem",
    "Hafta 14 · Fark denklemleri, pozitif belirli matrisler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lineer denklemlerin farklı yorumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Eleme Yöntemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "LU ayrıştırması, matris tersi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Vektör uzayları, alt uzaylar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bir matrisle ilişkili temel uzaylar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Lineer denklemlerin genel çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Boyut, bazlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Diklik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "İzdüşüm, enküçük kareler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Gram-Schmidt yöntemi, QR ayrıştırması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Determinantlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Özdeğerler ve özvektörler, köşegenleştirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Simetrik matrisler, spektral teorem",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Fark denklemleri, pozitif belirli matrisler",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Linear Algebra and its Applications, 4th Edition, Gilbert Strang, Wellesley Cambridge Press, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=281",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=281"
  },
  "EEF 311E": {
   "code": "EEF 311E",
   "name": "Python ile Sayısal Analiz",
+  "nameEn": "Numerical Analysis with Python",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -930,10 +2441,81 @@
    "Hafta 13 · Başlangıç Değer Problemleri: Euler Metodu",
    "Hafta 14 · Başlangıç Değer Problemleri: Runge-Kutta Metodları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Core Python: Python yorumlayıcısı, veri yapıları, operatörler, karar koşul yapıları ve döngüler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Python Fonksiyon ve Mödülleri: değişken kapsamı, fonksiyonlar, moduller, dosyadan okuma yazma",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Python Matematik Modülleri: matematik fonksiyonları, numpy, scipy, matplotlib",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Linear Denklem Sistemleri: Çözülebilirlik, Gauss Eliminasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "İteratif Metodlar- Jacobi Method, Gauss-Seidel",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İnterpolasyon ve Yaklaştırma: Newton bölünmüş farklar yöntemi, Lagrange metodu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "İnterpolasyon and Regresyon: şerit fonksiyonları kullanarak interpolasyon, En küçük kareler yaklaşımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kök Bulma: İkiye bölme Metodu, Newton-Raphson Metodu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kök Bulma: Secant Metodu, Sabit Nokta İterasyonu, kararlılık",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal Türev: Sonlu fark yaklaşımı, Richardson Extrapolasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Sayısal İntegrasyon: Trapez ve Simpson Kuralları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal İntegrasyon: Romberg Sayısal İntegrasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Başlangıç Değer Problemleri: Euler Metodu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Başlangıç Değer Problemleri: Runge-Kutta Metodları",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Numerical Methods in Engineering with Python 3, Jaan Kiusalaas"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EEF&dersNo=311"
  }
 }

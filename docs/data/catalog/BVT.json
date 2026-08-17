@@ -1,0 +1,1266 @@
+{
+ "BVT 501": {
+  "code": "BVT 501",
+  "name": "Astronomi Tarihi",
+  "nameEn": "Astronomi Tarihi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Çıplak-göz astronomisinin temel kavramları; Takvim sistemleri ve zamanın ölçümü; Teleskop öncesi astronomi aletleri; Babil ve Asur astronomisi; Eski Yunan astronomisi; Eski Mısır astronomisi; Çin astronomisi, Hint astronomisi; Aztek ve Mayalarda astronomi; Ortaçağ İslam Dünyasında Astronomi; Osmanlı İmpartorluğu’nda Astronomi; Kopernik devrimi ve modern astronominin doğuşu; Modern astronominin Osmanlı İmparatorluğu’na gelişi; 20. yy. Batı Dünyası’nda astronomi; Modern Türkiye’de astronomi çalışmaları Fundamental concepts of naked eye atronomy; Calender systems and timekeeping; pre-telescope instruments; Babylonian and Assyrian astronomy; Ancient Greek Astronomy; Ancient Egyptian astronomy; Chinese Astronomy; Indian Astronomy; Astronomy in Aztecs and Maya’s; Astronomy in the Medieval Islamic World; Astronomy in the Ottoman Empire; Copernican revolution and the birh of modern astronomy; Transition of modern astronomy to the Ottoman Empire; Astronomy in the 20th century Western World; astronomy studies in Modern Turkey",
+  "outcomes": [
+   "Her uygarlığın astronomi bilgisini o uygarlığın coğrafyası, kültürü, bulunduğu çağ ve diğer bilimlerdeki gelişmişlikleri çerçevesinde değerlendirebilecekler;",
+   "Astronominin uygarlık tarihindeki rollerini kavrayacaklar;",
+   "Astronominin geçmişten günümüze toplumdaki değişen rolleriyle ilgili etkin iletişim kurma ve tartışma yeteneğini geliştirecekler;",
+   "Astronomik nesne ve kavramların değişen kuramsal düşüncelerle çerçevesinde kazandığı farklı anlamları değerlendirebilecek;",
+   "Metin okuma, anlama, araştırma yapma ve yazı yazma yeteneğini geliştirecekler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Çıplak-göz astronomisinin temel kavramları: gökküre, sabit yıldızlar, takımyıldızlar, gezegenler, zodyak, ayın evreleri, mevsimler, gündönümü, gece-gündüz eşitliği, gelgit, paralaks",
+   "Hafta 2 · Astronomik takvim sistemleri, zamanın ölçümü ve gece-gündüz eşitliğinin gerilemesi",
+   "Hafta 3 · Teleskop-öncesi dönemin astronomi aletleri: usturlap, sekstant, kadran vs.",
+   "Hafta 4 · Babil ve Asur uygarlıklarında astronomi",
+   "Hafta 5 · Eski Yunan astronomisi",
+   "Hafta 6 · Eski Mısır uygarlığında astronomi",
+   "Hafta 7 · Çin ve Hint uygarlıklarında astronomi",
+   "Hafta 8 · Aztek ve Maya uygarlıklarında astronomi",
+   "Hafta 9 · Ortaçağ İslam dünyasında astronomi",
+   "Hafta 10 · Osmanlı İmpartorluğu’nda Astronomi",
+   "Hafta 11 · Kopernik devrimi ve modern astronominin doğuşu",
+   "Hafta 12 · Modern astronominin Osmanlı İmparatorluğu’na gelişi",
+   "Hafta 13 · 20. yy.da Batı’da astronomi (modern kozmoloji, yıldız astronomisi, X-ışını astronomisi, radyo astronomisi, nötrino astronomisi ve gravitastonel dalga astronomisinin gelişimi)",
+   "Hafta 14 · Modern Türkiye’de astronomi çalışmaları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çıplak-göz astronomisinin temel kavramları: gökküre, sabit yıldızlar, takımyıldızlar, gezegenler, zodyak, ayın evreleri, mevsimler, gündönümü, gece-gündüz eşitliği, gelgit, paralaks",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 2,
+    "topic": "Astronomik takvim sistemleri, zamanın ölçümü ve gece-gündüz eşitliğinin gerilemesi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Teleskop-öncesi dönemin astronomi aletleri: usturlap, sekstant, kadran vs.",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Babil ve Asur uygarlıklarında astronomi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Eski Yunan astronomisi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Eski Mısır uygarlığında astronomi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Çin ve Hint uygarlıklarında astronomi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Aztek ve Maya uygarlıklarında astronomi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ortaçağ İslam dünyasında astronomi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Osmanlı İmpartorluğu’nda Astronomi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kopernik devrimi ve modern astronominin doğuşu",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Modern astronominin Osmanlı İmparatorluğu’na gelişi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "20. yy.da Batı’da astronomi (modern kozmoloji, yıldız astronomisi, X-ışını astronomisi, radyo astronomisi, nötrino astronomisi ve gravitastonel dalga astronomisinin gelişimi)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Modern Türkiye’de astronomi çalışmaları"
+   }
+  ],
+  "textbooks": [
+   "Magli, G. (2016), Archaeoastronomy: Introduction to the Science of Stars and Stones, Springer International Publishing",
+   "Alexus McLeod (2016), Astronomy in the Ancient World: Early and Modern Views on Celestial Events, Springer International Publishing.",
+   "Ragep, S.P. (2017), Jaghmini’s Mulakhkhas: An Islamic Introduction to Ptolemaic Astronomy, Springer",
+   "Belmonte J.A., Kragh H., Pankenier D.W. et al. (2015), Ancient Astronomy: India, Egypt, China, Maya, Inca, Aztec, Greece, Rome, Genesis, Hebrews, Christians, the Neolithic and Paleolithic, Cosmology Science Publishers",
+   "Dolan, M. (2017), Astronomical Knowledge Transmission Through Illustrated Aratea Manuscripts, Springer"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=501"
+ },
+ "BVT 502E": {
+  "code": "BVT 502E",
+  "name": "Historiogr.for History of Sci.",
+  "nameEn": "Historiogr.for History of Sci.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Efsaneler Dönemi Tarih Anlayışı; Greko-Romen Tarihçilik; Dinlerin Tarihe Yaklaşımları, Aydınlanmacı Tarih Anlayışı; Bilimsel Tarihyazımının Başlaması; Annales Tarih Okulu; Post-modern Tarihçilik; Teolojik, Pozitivist, Romantik, Pragmatik, İdealist, Marksist, Yapısalcı, Frankfurt Okulu, Bağımlılık, Maduniyet Okulu Tarih Anlayışları; Tarihyazımında Temel Kavramlar; Tarihçi ve Etik Sorumluluk; Tarih Araştırmalarında Kaynak Çeşitleri ve Kullanımı; Tarih Metinlerinde Atıf Yapma ve Dipnot Gösterme; Bir Tarih Metni Nasıl İnşa Edilir? Historiography and Legends; Greco-Roman Historiography; Religions’ Approaches to History; Historical Writing in Enlightenment; Beginning of a Scientific Historiography (19.yy) (Ranke, Langlois, Seignobos); Annales School; Post-Modern Historiography; General History Approaches (Teological, Psitivist, Romantic, Pragmatic, Idealist, Marxist, Constructivist, Frankfurt School, Dependency, Subaltern Approaches); Basic Concepts in Historiography; Historian and Ethical Responsibility; Types and Uses of Historiacal Sources; Methods of Quatations and Reference; How to Build a Historical Text?",
+  "outcomes": [
+   "Bilim tarihi yazıcılığının tarihsel aşamalarını kavrayabileceklerdir;",
+   "Bilim tarihi yazıcılığının tarihsel aşamalarını kavrayabileceklerdir;",
+   "Bilim tarihine yön veren felsefi ve düşünsel yaklaşımlara aşina olacaklardır;",
+   "Bilim tarihine yön veren felsefi ve düşünsel yaklaşımlara aşina olacaklardır;",
+   "Bilim tarihine ilişkin, kavramlara, araştırma yöntemlerine ve kaynaklara aşina olacaklardır;",
+   "Bilim tarihine ilişkin, kavramlara, araştırma yöntemlerine ve kaynaklara aşina olacaklardır;",
+   "Bilim tarihine ilişkin yeni bir metin inşa edebilecekler, başkaları tarafından inşa edilmiş bir metni anlamladırabilecekler, bu alanla ilgili metin okuma, anlama, araştırma yapma ve yazı yazma yeteneği kazanacaklardır.",
+   "Bilim tarihine ilişkin yeni bir metin inşa edebilecekler, başkaları tarafından inşa edilmiş bir metni anlamladırabilecekler, bu alanla ilgili metin okuma, anlama, araştırma yapma ve yazı yazma yeteneği kazanacaklardır.",
+   "Bilim tarihi yazıcılığının tarihsel aşamalarını kavrayabileceklerdir;",
+   "Bilim tarihine yön veren felsefi ve düşünsel yaklaşımlara aşina olacaklardır;",
+   "Bilim tarihine ilişkin, kavramlara, araştırma yöntemlerine ve kaynaklara aşina olacaklardır;",
+   "Bilim tarihine ilişkin yeni bir metin inşa edebilecekler, başkaları tarafından inşa edilmiş bir metni anlamladırabilecekler, bu alanla ilgili metin okuma, anlama, araştırma yapma ve yazı yazma yeteneği kazanacaklardır.",
+   "Bilim tarihi yazıcılığının tarihsel aşamalarını kavrayabileceklerdir;",
+   "Bilim tarihine yön veren felsefi ve düşünsel yaklaşımlara aşina olacaklardır;",
+   "Bilim tarihine ilişkin, kavramlara, araştırma yöntemlerine ve kaynaklara aşina olacaklardır;",
+   "Bilim tarihine ilişkin yeni bir metin inşa edebilecekler, başkaları tarafından inşa edilmiş bir metni anlamladırabilecekler, bu alanla ilgili metin okuma, anlama, araştırma yapma ve yazı yazma yeteneği kazanacaklardır.",
+   "Bilim tarihi yazıcılığının tarihsel aşamalarını kavrayabileceklerdir;",
+   "Bilim tarihine yön veren felsefi ve düşünsel yaklaşımlara aşina olacaklardır;",
+   "Bilim tarihine ilişkin, kavramlara, araştırma yöntemlerine ve kaynaklara aşina olacaklardır;",
+   "Bilim tarihine ilişkin yeni bir metin inşa edebilecekler, başkaları tarafından inşa edilmiş bir metni anlamladırabilecekler, bu alanla ilgili metin okuma, anlama, araştırma yapma ve yazı yazma yeteneği kazanacaklardır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Efsaneler ve Tarihyazımı",
+   "Hafta 2 · Greko-Romen Tarihyazımı",
+   "Hafta 3 · Dinlerin Tarihyazımı Görüşleri",
+   "Hafta 4 · Aydınlanmacı Gelenekte Tarihyazımı",
+   "Hafta 5 · Bilimsel Tarihyazımının Başlaması (19yy) (Ranke, Langlois, Seignobos)",
+   "Hafta 6 · Annales Tarih Okulu",
+   "Hafta 7 · Post-modern Tarihçilik",
+   "Hafta 8 · Genel Tarih Anlayışları-I (Teolojik, Pozitivist, Romantik, Pragmatik, İdealist Tarih Anlayışları)",
+   "Hafta 9 · Genel Tarih Anlayışları-II (Marksist, Yapısalcı, Frankfurt Okulu, Bağımlılık, Maduniyet)",
+   "Hafta 10 · Tarihyazımında Temel Kavramlar",
+   "Hafta 11 · Tarihçi ve Etik Sorumluluk",
+   "Hafta 12 · Tarih Araştırmalarında Kaynak Çeşitleri ve Kullanımı",
+   "Hafta 13 · Tarih Metinlerinde Atıf Yapma ve Dipnot Gösterme",
+   "Hafta 14 · Bir Tarih Metni Nasıl İnşa Edilir?"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Efsaneler ve Tarihyazımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Greko-Romen Tarihyazımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Dinlerin Tarihyazımı Görüşleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Aydınlanmacı Gelenekte Tarihyazımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bilimsel Tarihyazımının Başlaması (19yy) (Ranke, Langlois, Seignobos)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Annales Tarih Okulu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Post-modern Tarihçilik",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Genel Tarih Anlayışları-I (Teolojik, Pozitivist, Romantik, Pragmatik, İdealist Tarih Anlayışları)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Genel Tarih Anlayışları-II (Marksist, Yapısalcı, Frankfurt Okulu, Bağımlılık, Maduniyet)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Tarihyazımında Temel Kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Tarihçi ve Etik Sorumluluk",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tarih Araştırmalarında Kaynak Çeşitleri ve Kullanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Tarih Metinlerinde Atıf Yapma ve Dipnot Gösterme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Bir Tarih Metni Nasıl İnşa Edilir?"
+   }
+  ],
+  "textbooks": [
+   "George Sarton, Bilim Tarihinde Yöntem (Doruk Yayınları, 1997).",
+   "George Sarton, Bilim Tarihinde Yöntem (Doruk Yayınları, 1997).",
+   "Marc Bloch, Tarihin Savunusu ya da Tarihçilik Mesleği, çev. M.A. Kılıçbay (İstanbul, 1994).",
+   "Georg G. Iggers, 20. Yüzyılda Tarihyazımı: Bilimsel Nesnellikten Postmodernizme (İstanbul: Tarih Vakfı Yurt Yayınları, 2011).",
+   "Peter Burke, Fransız Tarih Devrimi: Annales Okulu, Çev: Mehmet Küçük (Ankara: Doğu-Batı Yay., 2002)",
+   "Georg G. Iggers, 20. Yüzyılda Tarihyazımı: Bilimsel Nesnellikten Postmodernizme (İstanbul: Tarih Vakfı Yurt Yayınları, 2011).",
+   "Peter Burke, Fransız Tarih Devrimi: Annales Okulu, Çev: Mehmet Küçük (Ankara: Doğu-Batı Yay., 2002)",
+   "Suraiya Faroqhi, Osmanlı Tarihi Nasıl İncelenir? (İstanbul: Tarih Vakfı Yurt Yayınları, 2009).",
+   "Tarih Nasıl Yazılır: Tarihyazımı İçin Çağdaş Bir Metodoloji (ed. Ahmet Şimşek) (İstanbul: Tarihçi Kitabevi, 2011)",
+   "Suraiya Faroqhi, Osmanlı Tarihi Nasıl İncelenir? (İstanbul: Tarih Vakfı Yurt Yayınları, 2009).",
+   "George Sarton, Bilim Tarihinde Yöntem (Doruk Yayınları, 1997).",
+   "Georg G. Iggers, 20. Yüzyılda Tarihyazımı: Bilimsel Nesnellikten Postmodernizme (İstanbul: Tarih Vakfı Yurt Yayınları, 2011).",
+   "Peter Burke, Fransız Tarih Devrimi: Annales Okulu, Çev: Mehmet Küçük (Ankara: Doğu-Batı Yay., 2002)",
+   "Suraiya Faroqhi, Osmanlı Tarihi Nasıl İncelenir? (İstanbul: Tarih Vakfı Yurt Yayınları, 2009).",
+   "Tarih Nasıl Yazılır: Tarihyazımı İçin Çağdaş Bir Metodoloji (ed. Ahmet Şimşek) (İstanbul: Tarihçi Kitabevi, 2011)",
+   "George Sarton, Bilim Tarihinde Yöntem (Doruk Yayınları, 1997).",
+   "Georg G. Iggers, 20. Yüzyılda Tarihyazımı: Bilimsel Nesnellikten Postmodernizme (İstanbul: Tarih Vakfı Yurt Yayınları, 2011).",
+   "Peter Burke, Fransız Tarih Devrimi: Annales Okulu, Çev: Mehmet Küçük (Ankara: Doğu-Batı Yay., 2002)",
+   "Suraiya Faroqhi, Osmanlı Tarihi Nasıl İncelenir? (İstanbul: Tarih Vakfı Yurt Yayınları, 2009).",
+   "Tarih Nasıl Yazılır: Tarihyazımı İçin Çağdaş Bir Metodoloji (ed. Ahmet Şimşek) (İstanbul: Tarihçi Kitabevi, 2011)",
+   "Georg G. Iggers, 20. Yüzyılda Tarihyazımı: Bilimsel Nesnellikten Postmodernizme (İstanbul: Tarih Vakfı Yurt Yayınları, 2011).",
+   "Peter Burke, Fransız Tarih Devrimi: Annales Okulu, Çev: Mehmet Küçük (Ankara: Doğu-Batı Yay., 2002)",
+   "Suraiya Faroqhi, Osmanlı Tarihi Nasıl İncelenir? (İstanbul: Tarih Vakfı Yurt Yayınları, 2009).",
+   "İhan Tekeli, Tarih Yazımı Üzerine Düşünmek (Ankara: Dost Kitabevi Yay., 1998).",
+   "Tarih Nasıl Yazılır: Tarihyazımı İçin Çağdaş Bir Metodoloji (ed. Ahmet Şimşek) (İstanbul: Tarihçi Kitabevi, 2011)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=502"
+ },
+ "BVT 504E": {
+  "code": "BVT 504E",
+  "name": "Bilimsel Devrim",
+  "nameEn": "Scientific Revolution",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Modern bilimin erken modern Avrupa’daki temelleri; bilimsel devrimin tarihi ve tarihyazımı; onbeşinci ve onsekizinci yüzyıllar arasında Avrupa’da bilimsel bilginin üretimi ve yayılmasının siyasi ve toplumsal arkaplanı; yeni bilimsel tecessüs metodunun kurumları, hamileri ve ilişki ağları; deneyci bilimin doğuşu hikayesinin ana aktörleri, tartışmaları ve eserleri. Origins of Modern Science in Early Modern Europe; history and historiography of the Scientific Revolution; social and political context of the production and dissemination of scientific knowledge in Europe between 15th and 18th centuries; institutions, patrons and networks of new scientific enquiry; major figures, debates and intellectual output behind the rise of experimental science.",
+  "outcomes": [
+   "Erken Modern dönemde modern bilimin doğuşu hakkındaki bilgilerini arttıracaklar;",
+   "Bilimsel bilgi üretimini belirli toplumsal ve siyasi bağlamlara oturtabilecekler;",
+   "Bilimsel Devrime dair tarihyazıcılığının kavram ve metodlarına vukufiyet sağlayacaklar;",
+   "İyi kurgulanmış bir akademik metin bünyesinde temelli bir tarihsel argüman üretebilecekler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel kavramlar",
+   "Hafta 2 · Bilimsel Devrime İki Temel Yaklaşım: İçsel ve Dışsal Tarih",
+   "Hafta 3 · Bilimsel Devrim Öncesi Bilim: Antik ve Orta Çağlar",
+   "Hafta 4 · Aristocu Felsefe ve Evren Modeline İlk İtirazlar",
+   "Hafta 5 · Rönesans Dünyasında Sanat, Mühendislik ve Bilim",
+   "Hafta 6 · Galieo Galilei’nin Dünyası",
+   "Hafta 7 · Fünun-u Hafiye’den Bilimsellige",
+   "Hafta 8 · Kuşkuculuk ve Optik Bilimi",
+   "Hafta 9 · Mekanist Felsefe",
+   "Hafta 10 · Muazzam Deneyler; Büyük Deneyciler",
+   "Hafta 11 · Bilimsel Tecrübenin Kurumları: Akademiler, Cemiyetler ve Üniversiteler",
+   "Hafta 12 · Bilimsel Devrimin Zirvesi: Newtonun Sentezi",
+   "Hafta 13 · Bilimsel Devrimin Küresel Bağlamı: İslam Dünyası ve Çin",
+   "Hafta 14 · Sunumlar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilimsel Devrime İki Temel Yaklaşım: İçsel ve Dışsal Tarih",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Bilimsel Devrim Öncesi Bilim: Antik ve Orta Çağlar",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Aristocu Felsefe ve Evren Modeline İlk İtirazlar",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Rönesans Dünyasında Sanat, Mühendislik ve Bilim",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Galieo Galilei’nin Dünyası",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Fünun-u Hafiye’den Bilimsellige",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kuşkuculuk ve Optik Bilimi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Mekanist Felsefe",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Muazzam Deneyler; Büyük Deneyciler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Bilimsel Tecrübenin Kurumları: Akademiler, Cemiyetler ve Üniversiteler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bilimsel Devrimin Zirvesi: Newtonun Sentezi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bilimsel Devrimin Küresel Bağlamı: İslam Dünyası ve Çin",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar"
+   }
+  ],
+  "textbooks": [
+   "Peter Burke. A Social History of Knowledge: From Gutenberg to Diderot, Cambridge, 2000.",
+   "Euan Cameron. Early Modern Europe; An Oxford History. Oxford, 2001.",
+   "Bernard Cohen, Revolution in Science. Belknapp Press, Harvard, 1985",
+   "Peter Dear. Revolutionizing Sciences: European Knowledge and Its Ambitions, 1500-1750. Princeton University Press, Princeton, 2001.",
+   "Lisa Jardine. Ingenious Pursuits: Building the Scientific Revolution. Anchor, 2000."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=504"
+ },
+ "BVT 512": {
+  "code": "BVT 512",
+  "name": "Tarihte Savaş ve Teknoloji",
+  "nameEn": "Warfare&Technology in History",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Savaş ve Teknoloji (Kaynaklar ve Yöntem); Batı Tarzı Savaş; Yanaşık Nizam Piyade Çağı; Kargir Kaleler Çağı; Yelken ve Top Çağı; Mekanize Savaş Çağı; Savaş, Teknoloji ve Etik; Askeri Devrim; Osmanlı Devleti’nde Asker Toplama Stratejileri, Ordunun Finansmanı, Lojistiği ve Mobilizasyonu; Ateşli ve Ateşsiz Osmanlı Silahları; Osmanlı Deniz Teknolojisi; Osmanlılarda Askeri Mühendislik ve Haberleşme Teknikleri; Osmanlı Hava gücünün Oluşumu; Savaş ve Tıp konuları War and Technology (Sorces and Methodology); Western Way of War; The Age of Massed Infantry; The Age of Stone Fortifications; The Age of Guns and Sails;The Age of Mechanized Warfare; War, Technology and Ethics; Military Revolution in Europe; Ottoman Military Conscription Methods, and Finance, Logistics and Mobilisation of Army; Ottoman Weapons (Traditional ones and Firearms); Ottoman Naval Technology; Ottoman Military Engineering and Communication Techniques; Making of the Ottoman Airforces; and War and Medicine",
+  "outcomes": [
+   "Savaş ve Teknoloji konularını bilimsel, teknolojik, tarihsel ve sosyal bağlamı içinde değerlendirebilecekler;",
+   "Savaş ve Teknoloji konularını bilimsel, teknolojik, tarihsel ve sosyal bağlamı içinde değerlendirebilecekler;",
+   "Savaş, bilim, teknoloji ve toplumsal dönüşümler tarihi konusunda kuramsal ve kavramsal düşünce yeteneğini geliştirecekler;",
+   "Savaş, bilim, teknoloji ve toplumsal dönüşümler tarihi konusunda kuramsal ve kavramsal düşünce yeteneğini geliştirecekler;",
+   "Savaş, bilim, teknoloji ve toplumla ilgili konularda etkin bir şekilde iletişim kurma ve tartışma yeteneğini geliştirecekler;",
+   "Savaş, bilim, teknoloji ve toplumla ilgili konularda etkin bir şekilde iletişim kurma ve tartışma yeteneğini geliştirecekler;",
+   "Metin okuma, anlama, araştırma yapma ve yazı yazma yeteneğini geliştirecekler.",
+   "Metin okuma, anlama, araştırma yapma ve yazı yazma yeteneğini geliştirecekler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Savaş ve Teknoloji (Kaynaklar ve Yöntem)",
+   "Hafta 2 · Batı Tarzı Savaş",
+   "Hafta 3 · Yanaşık Nizam Piyade Çağı",
+   "Hafta 4 · Kargir Kaleler Çağı",
+   "Hafta 5 · Yelken ve Top Çağı",
+   "Hafta 6 · Mekanize Savaş Çağı",
+   "Hafta 7 · Savaş, Teknoloji ve Etik",
+   "Hafta 8 · Askeri Devrim",
+   "Hafta 9 · Osmanlı Devleti’nde Asker Toplama Stratejileri, Ordunun Finansmanı, Lojistiği ve Mobilizasyonu",
+   "Hafta 10 · Ateşli ve Ateşsiz Osmanlı Silahları",
+   "Hafta 11 · Osmanlı Deniz Teknolojisi",
+   "Hafta 12 · Osmanlılarda Askeri Mühendislik ve Haberleşme Teknikleri",
+   "Hafta 13 · Osmanlı Hava Gücünün Oluşumu",
+   "Hafta 14 · Savaş ve Tıp"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Savaş ve Teknoloji (Kaynaklar ve Yöntem)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Batı Tarzı Savaş",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Yanaşık Nizam Piyade Çağı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kargir Kaleler Çağı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yelken ve Top Çağı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Mekanize Savaş Çağı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Savaş, Teknoloji ve Etik",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Askeri Devrim",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Osmanlı Devleti’nde Asker Toplama Stratejileri, Ordunun Finansmanı, Lojistiği ve Mobilizasyonu",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ateşli ve Ateşsiz Osmanlı Silahları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Osmanlı Deniz Teknolojisi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Osmanlılarda Askeri Mühendislik ve Haberleşme Teknikleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Osmanlı Hava Gücünün Oluşumu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Savaş ve Tıp"
+   }
+  ],
+  "textbooks": [
+   "AGOSTON, Gabor. Osmanlı’da Ateşli Silahlar ve Askeri Devrim Tartışmaları, haz. Kahraman Şakul (İş Bankası, 2017).",
+   "AGOSTON, Gabor. Osmanlı’da Ateşli Silahlar ve Askeri Devrim Tartışmaları, haz. Kahraman Şakul (İş Bankası, 2017).",
+   "AKSAN, Virginia. Kuşatılmış Bir İmparatorluk: Osmanlı Harpleri, 1700-1870, çev. Gül Çağalı Güven (İstanbul: İş Bankası, 2010).",
+   "AKSAN, Virginia. Kuşatılmış Bir İmparatorluk: Osmanlı Harpleri, 1700-1870, çev. Gül Çağalı Güven (İstanbul: İş Bankası, 2010).",
+   "BOSTAN, İdris. Osmanlı Bahriye Teşkilatı: VII. Yüzyılda Tersâne-i Âmire (Ankara: TTK, 1992).",
+   "BOZKURT, Rıza. Osmanlı İmparatorluğu’nda Kollar, Ulak ve İaşe Menzilleri (Ankara, 1966).",
+   "EMECEN, Feridun. Osmanlı Klasik Çağında Savaş (İstanbul, 2010).",
+   "BOZKURT, Rıza. Osmanlı İmparatorluğu’nda Kollar, Ulak ve İaşe Menzilleri (Ankara, 1966).",
+   "PARKER, Geoffrey. Cambridge Savaş Tarihi (İstanbul: İş Bankası Kültür Yay. 2014).",
+   "ŞAKUL, Kahraman (haz.), Savaş, Teknoloji ve Deneysel Çalışmalar (Tarih Vakfı, 2013)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=512"
+ },
+ "BVT 514": {
+  "code": "BVT 514",
+  "name": "Teknolojinin Gelişim Tarihi",
+  "nameEn": "History of Development of Technology",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Teknolojinin farklı kültürle etkileşimi ve tarih öncesi dönemlerden başlayarak günümüze kadar geçirdiği gelişim evreler, Temel kavramlar, Teknolojinin bilimler ve toplumla ilişkisi, Teknolojinin doğası ve farklı kültürlerle olan etkileşimi, Teknoloji tarihinde dönüm noktaları, Tarih öncesi çağlarda teknoloji, Antik Yunan ve Helenistik dönemlerde teknoloji, Roma döneminde teknoloji, Orta çağda teknoloji, Rönesans ve aydınlanma döneminde teknoloji, Osmanlılarda teknoloji, İlk modern çağda teknoloji, Modern çağda teknoloji. The evolutionary stages of technology from prehistoric times to the present day.Basic concepts, Relationship between technology, sciences, and society, The nature of technology and its interaction with different cultures, Turning points in history of technology, Technology in prehistoric times, Technology in Ancient Greek and Hellenistic Periods, Technology in Roman Period, Technology in middle ages, Technology in Renaissance and Enlightenment period, Technology in Ottoman, Technology in early modern age, Technology in modern age.",
+  "outcomes": [
+   "Temel kavramları bilirler,",
+   "Teknolojinin farklı kültürlerle olan etkileşimini bilirler,",
+   "Teknolojinin tarih öncesi dönemlerden başlayarak günümüze kadar geçirdiği gelişim evrelerini bilirler.",
+   "Teknolojiyi etkileyen faktörleri bilirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel kavramlar",
+   "Hafta 2 · Teknolojinin bilimler ve toplumla ilişkisi",
+   "Hafta 3 · Teknolojinin doğası ve farklı kültürlerle olan etkileşimi",
+   "Hafta 4 · Teknoloji tarihinde dönüm noktaları",
+   "Hafta 5 · Teknoloji tarihinde dönüm noktaları",
+   "Hafta 6 · Tarih öncesi çağlarda teknoloji",
+   "Hafta 7 · Antik Yunan ve Helenistik dönemlerde teknoloji",
+   "Hafta 8 · Roma döneminde teknoloji",
+   "Hafta 9 · Orta çağda teknoloji",
+   "Hafta 10 · Rönesans ve aydınlanma döneminde teknoloji",
+   "Hafta 11 · Osmanlılarda teknoloji",
+   "Hafta 12 · İlk modern çağda teknoloji",
+   "Hafta 13 · Modern çağda teknoloji",
+   "Hafta 14 · Modern çağda teknoloji"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Teknolojinin bilimler ve toplumla ilişkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Teknolojinin doğası ve farklı kültürlerle olan etkileşimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Teknoloji tarihinde dönüm noktaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Teknoloji tarihinde dönüm noktaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tarih öncesi çağlarda teknoloji",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Antik Yunan ve Helenistik dönemlerde teknoloji",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Roma döneminde teknoloji",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Orta çağda teknoloji",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Rönesans ve aydınlanma döneminde teknoloji",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Osmanlılarda teknoloji",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "İlk modern çağda teknoloji",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Modern çağda teknoloji",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Modern çağda teknoloji"
+   }
+  ],
+  "textbooks": [
+   "Çalışkan, D. (2015). Cezeri’nin olağanüstü makineleri. İstanbul: Papersense Yayınları.",
+   "Kazancıgil, A. (1999). Osmanlılarda bilim ve teknoloji. İstanbul: Ufuk Kitapları.",
+   "Levis, E.E. (Çev. B.Çölgeçen) (2005). Teknolojinin başyapıtları. İstanbul: Güncel yayıncılık.",
+   "Singer, C.E., Holmyard, E.J. and Hall, A.R. (eds). (1954). A history of technology. London: OUP.",
+   "Tez, Z. (2005). Tekniğin evrimi. Ankara: Paragraf Yayınevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=514"
+ },
+ "BVT 596": {
+  "code": "BVT 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=596"
+ },
+ "BVT 606E": {
+  "code": "BVT 606E",
+  "name": "History of ScienceTexts",
+  "nameEn": "History of ScienceTexts",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bilim tarihinde yöntem, kaynaklar ve örnek metinlerin tanıtımı, Joseph Needham, Çin’de Bilim ve Medeniyet, William Shea, Galileo, Isaac Newton Principia, Charles Darwin, Türlerin Kökenleri, Alexandre Koyre, Bilim Tarihi Yazıları, Thomas S. Khun, Bilimsel Devrimlerin Yapısı, Marie Curie (Biyografi tahlili), Nicola Tesla (Biyografi tahlili), Albert Einstein (Biyografi tahlili), Franz Rosenthal, Bilginin Zaferi, İbn Sina, Kanun fit’Tıb, Aydın Sayılı, İslam Dünyasında Rasathane gibi bilim tarihine yön veren önemli isimler ve onların meydana getirdikleri metinler. Pioneering personalities and their major texts regarding history of science. Main themes are Methodology, Sources, and Selected History of Science Texts, Joseph Needham, Science and Civilisation in China, William Shea, Galileo, Isaac Newton Principia, Charles Darwin, Origin of Species, Thomas S. Khun, Structure of Scientific Revolutions, Maria Curie (Biography Analysis), Nicola Tesla (Biography Analysis),Albert Einstein (Biography Analysis), Franz Rosenthal, Knowledge Triumphant, İbn Sina, Kanun fit’Tıb, A.Adnan Adıvar, Osmanlı Türklerinde İlim, Aydın Sayılı, Observatory in Islam",
+  "outcomes": [
+   "Bilim tarihinin önde gelen isimlerine ve çalışmalarına aşina olacaklardır;",
+   "Bilim tarihine yön veren seçkin bilim insanlarının başlıca eserlerini tanıyacaklardır;",
+   "Bilim tarihinin önemli metinlerini, uygun yöntemler ve araştırma teknikleriyle analiz edebileceklerdir;",
+   "Bilim tarihine ilişkin yeni bir metin inşa edebilecekler, başkaları tarafından inşa edilmiş bir metni anlamlandırabilecekler, bu alanla ilgili metin okuma, anlama, araştırma yapma ve yazı yazma yeteneği kazanacaklardır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Yöntem, kaynaklar ve örnek metinlerin tanıtımı",
+   "Hafta 2 · George Sarton, Bilim Tarihine Giriş",
+   "Hafta 3 · Joseph Needham, Çin’de Bilim ve Medeniyet",
+   "Hafta 4 · William Shea, Galileo",
+   "Hafta 5 · Isaac Newton Principia",
+   "Hafta 6 · Charles Darwin, Türlerin Kökenleri",
+   "Hafta 7 · Alexandre Koyre, Bilim Tarihi Yazıları",
+   "Hafta 8 · Thomas S. Khun, Bilimsel Devrimlerin Yapısı",
+   "Hafta 9 · Marie Curie (Biyografi tahlili)",
+   "Hafta 10 · Nicola Tesla (Biyografi tahlili)",
+   "Hafta 11 · Albert Einstein (Biyografi tahlili)",
+   "Hafta 12 · Franz Rosenthal, Bilginin Zaferi",
+   "Hafta 13 · İbn Sina, Kanun fit’Tıb",
+   "Hafta 14 · Aydın Sayılı, İslam Dünyasında Rasathane"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yöntem, kaynaklar ve örnek metinlerin tanıtımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 2,
+    "topic": "George Sarton, Bilim Tarihine Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Joseph Needham, Çin’de Bilim ve Medeniyet",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "William Shea, Galileo",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Isaac Newton Principia",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Charles Darwin, Türlerin Kökenleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Alexandre Koyre, Bilim Tarihi Yazıları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Thomas S. Khun, Bilimsel Devrimlerin Yapısı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Marie Curie (Biyografi tahlili)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Nicola Tesla (Biyografi tahlili)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Albert Einstein (Biyografi tahlili)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Franz Rosenthal, Bilginin Zaferi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "İbn Sina, Kanun fit’Tıb",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Aydın Sayılı, İslam Dünyasında Rasathane"
+   }
+  ],
+  "textbooks": [
+   "A.Adnan Adıvar, Osmanlı Türklerinde İlim (Remzi, 2000)",
+   "Aydın Sayılı, Observatory in Islam (TTK, 1988)",
+   "Charles Darwin, Origin of Species (E book. Release Date: March, 1998)",
+   "Franz Rosenthal, Knowledge Triumphant (Brill, 2006)",
+   "Isaac Newton Principia (İstanbul: 2011)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=606"
+ },
+ "BVT 609": {
+  "code": "BVT 609",
+  "name": "Elektrik Tarihi",
+  "nameEn": "Elektrik Tarihi",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=609"
+ },
+ "BVT 612E": {
+  "code": "BVT 612E",
+  "name": "History of the Balkan Cities",
+  "nameEn": "History of the Balkan Cities",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=612"
+ },
+ "BVT 625": {
+  "code": "BVT 625",
+  "name": "Osmanlı Türkçesi I",
+  "nameEn": "Ottoman Turkish I",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Derse Giriş: Ödev, Okuma ve Konuların Tanıtımı / Alfabenin tanıtılması, Türkçe Unsurlar I: Alfabedeki Türkçe harfler, yardımcı sesli harfler, fiil kökleri, ismin halleri, Türkçe Unsurlar II: Zamirler, sıfatlar, fiil kipleri, imlası klişeleşmiş ekler, Arapça Unsurlar I: Kelime yapısı, sülasi masdarlar , Arapça Unsurlar II: Mezidün fih masdarlar, Arapça Unsurlar III: İsimler, Arapça Unsurlar IV: Sıfatlar ve dişil/eril kelime yapıları , Arapça Unsurlar V: Çoğullar ve tamlama yapıları, Arapça Unsurlar VI: Aksam-ı seb‘a, sahih ve illetli harfler, Farsça Unsurlar I: Tamlama yapıları, sık kullanılan son ekler, Farsça Unsurlar II: Çoğullar, bileşik yapılar ve sık kullanılan ön ekler, Rik‘a Okuma ve Anlama Alıştırmaları, Rik‘a Okuma ve Anlama Alıştırmaları, Rik‘a Okuma ve Anlama Alıştırmaları Introduction of course material including topics and assignments / Ottoman Alphabet, Turkish Elements I: Turkish letters, auxiliary wovels, verb structure, noun cases , Turkish Elements II: Pronouns, adjectives, verbs, prefix and suffixes, Arabic Elements I: Word structure, triliteral roots, Arabic Elements II: Verbs: augmentation forms, Arabic Elements III: Nouns, Arabic Elements IV: Adjectives, gender , Arabic Elements V: Plurals ve noun/adjective phrases, Arabic Elements VI: Verbs: Weak Forms, Persian Elements I: Ezafe Construction, oft-used suffixes, Persian Elements II: Plurals, compound structures and oft-used prefixes, Reading and Comprehension in Rik‘a script",
+  "outcomes": [
+   "Osmanlı Türkçesi temel gramer, ortografi ve kelime yapısını öğrenecekler,",
+   "Osmanlıca içindeki Arapça unsurları tespit edip, okuyarak anlamlandıracaklar,",
+   "Farsça kelime, tamlama vb. yapılarının Osmanlıca kullanımı hakkında bilgi sahibi olacaklar,",
+   "Rika hattıyla yazılmış bir Osmanlıca metni okuyup, anlayıp analiz edebileceklerdir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Derse Giriş: Ödev, Okuma ve Konuların Tanıtımı / Alfabenin tanıtılması",
+   "Hafta 2 · Türkçe Unsurlar I: Alfabedeki Türkçe harfler, yardımcı sesli harfler, fiil kökleri, ismin halleri",
+   "Hafta 3 · Türkçe Unsurlar II: Zamirler, sıfatlar, fiil kipleri, imlası klişeleşmiş ekler",
+   "Hafta 4 · Arapça Unsurlar I: Kelime yapısı, sülasi masdarlar",
+   "Hafta 5 · Arapça Unsurlar II: Mezidün fih masdarlar",
+   "Hafta 6 · Arapça Unsurlar III: İsimler",
+   "Hafta 7 · Arapça Unsurlar IV: Sıfatlar ve dişil/eril kelime yapıları",
+   "Hafta 8 · Arapça Unsurlar V: Çoğullar ve tamlama yapıları",
+   "Hafta 9 · Arapça Unsurlar VI: Aksam-ı seb‘a, sahih ve illetli harfler",
+   "Hafta 10 · Farsça Unsurlar I: Tamlama yapıları, sık kullanılan son ekler",
+   "Hafta 11 · Farsça Unsurlar II: Çoğullar, bileşik yapılar ve sık kullanılan ön ekler",
+   "Hafta 12 · Rik‘a Okuma ve Anlama Alıştırmaları",
+   "Hafta 13 · Rik‘a Okuma ve Anlama Alıştırmaları",
+   "Hafta 14 · Rik‘a Okuma ve Anlama Alıştırmaları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse Giriş: Ödev, Okuma ve Konuların Tanıtımı / Alfabenin tanıtılması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Türkçe Unsurlar I: Alfabedeki Türkçe harfler, yardımcı sesli harfler, fiil kökleri, ismin halleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Türkçe Unsurlar II: Zamirler, sıfatlar, fiil kipleri, imlası klişeleşmiş ekler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Arapça Unsurlar I: Kelime yapısı, sülasi masdarlar",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Arapça Unsurlar II: Mezidün fih masdarlar",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Arapça Unsurlar III: İsimler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Arapça Unsurlar IV: Sıfatlar ve dişil/eril kelime yapıları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Arapça Unsurlar V: Çoğullar ve tamlama yapıları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Arapça Unsurlar VI: Aksam-ı seb‘a, sahih ve illetli harfler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Farsça Unsurlar I: Tamlama yapıları, sık kullanılan son ekler",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Farsça Unsurlar II: Çoğullar, bileşik yapılar ve sık kullanılan ön ekler",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Rik‘a Okuma ve Anlama Alıştırmaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Rik‘a Okuma ve Anlama Alıştırmaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Rik‘a Okuma ve Anlama Alıştırmaları"
+   }
+  ],
+  "textbooks": [
+   "Ders Kitabı: Yılmaz Kurt. Osmanlıca Dersleri I . Ankara: Akçağ, 1996. Yardımcı Kitaplar: Hayati Develi. Osmanlı Türkçesi Kılavuzu I. İstanbul, 2005. Muharrem Ergin, Osmanlıca Dersleri. İstanbul: Boğaziçi, 1986. Şinasi Tekin. Osmanlıca El Kitabı. Harvard: Harvard University, 2002. Faruk Kadri Timurtaş, Osmanlı Türkçesine Giriş I.. İstanbul: Alfa, 2000 Sözlükler: James W. Redhouse. A Turkish and English Lexicon. Lebanon, 1996 Ferit Devellioğlu. Osmanlıca- Türkçe Ansiklopedik Lügat: Eski ve Yeni Harflerle. Yay. Haz. Aydın Sami Güneyçal, Aydın Kitabevi, Ankara, 1999. Şemseddin Sâmi, (1850-1904.) Kamus-i Türkî : kâffe-yi lügat-i Türkiye ile lisan-i Türkîde müstamil kelimat ve ıstılahât-i Arabiye ve Farisiye ve ecnebiyeyi cami olarak lisanımızın mükemmel lügat kitabıdır. İkdam Matbaası, Dersaadet [İstanbul], 1317-1318 [1899-1900]"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=625"
+ },
+ "BVT 628": {
+  "code": "BVT 628",
+  "name": "Ölçümün Tarihi",
+  "nameEn": "History of Measurement",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ölçümün anlamı, ölçüm, sayılar ve matematik, birimlerin belirlenmesi, doğanın ölçülmesi, atomların ölçülmesi, dünyanın ölçülmesi, evrenin ölçülmesi, insanın ölçülmesi, düşüncenin ölçülmesi, vücudun ölçülmesi, toplumun ölçülmesi The meaning of measuring, going metric, number and mathematics, customary units, instruments and techniques, measuring nature, measuring atoms, measuring earth, measuring universe, measuring man, measuring mind, measuring body, measuring society.",
+  "outcomes": [
+   "Ölçümün tarihçesi ile ilgili konuları, ilgili yöntemleri, yaklaşımları ve literatürü tanırlar,",
+   "Birimlerin nasıl ortaya çıktığını öğrenirler,",
+   "Farklı büyüklüklerin tarihte ve günümüzde nasıl ölçüldüğü öğrenirler,",
+   "Metin okuma, anlama, ölçümle ilgili araştırma yapma ve yazı yazma becerisini geliştirmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Ölçümün anlamı,",
+   "Hafta 2 · Ölçüm,",
+   "Hafta 3 · Sayılar ve matematik,",
+   "Hafta 4 · Birimlerin belirlenmesi,",
+   "Hafta 5 · Ölçüm aletleri ve yöntemler",
+   "Hafta 6 · Ölçüm aletleri ve yöntemler",
+   "Hafta 7 · Doğanın ölçülmesi,",
+   "Hafta 8 · Atomların ölçülmesi,",
+   "Hafta 9 · Dünyanın ölçülmesi,",
+   "Hafta 10 · Evrenin ölçülmesi,",
+   "Hafta 11 · İnsanın ölçülmesi,",
+   "Hafta 12 · Düşüncenin ölçülmesi,",
+   "Hafta 13 · Vücudun ölçülmesi,",
+   "Hafta 14 · Toplumun ölçülmesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ölçümün anlamı,",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Ölçüm,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Sayılar ve matematik,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Birimlerin belirlenmesi,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçüm aletleri ve yöntemler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ölçüm aletleri ve yöntemler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Doğanın ölçülmesi,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Atomların ölçülmesi,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Dünyanın ölçülmesi,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Evrenin ölçülmesi,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "İnsanın ölçülmesi,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Düşüncenin ölçülmesi,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Vücudun ölçülmesi,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Toplumun ölçülmesi"
+   }
+  ],
+  "textbooks": [
+   "Robinson, A. (2007). The Story of Measurement. London: Thames & Hudson.",
+   "Darton,M. and Clark, J. (1984). The Dent Dictionary of Measurement, N.Y.: MacMillan.",
+   "Hebra, A. (2003). Measure for Measure: The Story of Imperial, Metric, and Other Units. John Hopkings University Press.",
+   "Danson, E. (2006). Weighing the world: The quest to measure the Earth, Oxford: Oxford university Press.",
+   "Bond, Shirly. (1996). Home measures: The essential reference guide to sizes and measurements for home, office and kithchen, London: Grub Street."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=628"
+ },
+ "BVT 696": {
+  "code": "BVT 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVT&dersNo=696"
+ }
+}

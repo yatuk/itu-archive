@@ -2,6 +2,7 @@
  "ECO 101": {
   "code": "ECO 101",
   "name": "Principles of Microeconomics",
+  "nameEn": "Principles of Microeconomics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,15 +35,87 @@
    "Hafta 13 · Piyasalar III: Oligopol",
    "Hafta 14 · Oyun Teorisi ve Strateji"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İktisat, İktisadın Konuları; İktisadi Analiz Araçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arz, Talep ve Piyasa",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Esneklik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Refah Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tüketici Davranışı I",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tüketici Davranışı II",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Tüketici Davranışı III",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üretici Davranışı I",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Üretici Davranışı II",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Üretici Davranışı III",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Piyasalar I: Tam Rekabet Piyasası",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Piyasalar II: Tekel ve Tekelci Rekabet",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Piyasalar III: Oligopol",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Oyun Teorisi ve Strateji",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Microeconomics, Pindyck, R. S. and D. L. Rubinfield, Prentice-Hall, 2009, 9780132080"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=101"
  },
  "ECO 102": {
   "code": "ECO 102",
   "name": "Principles of Macroeconomics",
+  "nameEn": "Principles of Macroeconomics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -74,15 +147,87 @@
    "Hafta 13 · Çıktı, Faiz Oranı ve Döviz Kuru",
    "Hafta 14 · Döviz Kuru Rejimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makroiktisadi Büyüklükler ve Ölçüm",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ulusal Gelirin Ölçümü, Büyüme ve Yaşam Maliyeti",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Para, Bankacılık ve Finansal Sistem",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Mal Piyasası",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Finans Piyasası",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Mal ve Finans Piyasasında Eşanlı Denge: IS-LM Modeli",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "İşgücü Piyasası",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Tüm Piyasalarda Denge: AS-AD Modeli",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Enflasyon ve İşsizlik",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Büyüme, Tasarruf ve Sermaye Birikimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Mal ve Finans Piyasalarında Açıklık",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Açık Ekonomide Mal Piyasası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çıktı, Faiz Oranı ve Döviz Kuru",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Döviz Kuru Rejimleri",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Macroeconomics, Olivier Blanchard, Prentice Hall, 2006, 9780131860261"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=102"
  },
  "ECO 201": {
   "code": "ECO 201",
   "name": "Intermediate Microeconomics",
+  "nameEn": "Intermediate Microeconomics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -115,15 +260,87 @@
    "Hafta 13 · Piyasalar III: Oligopol",
    "Hafta 14 · Oyun Teorisi ve Strateji"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İktisat, İktisadın Konuları; İktisadi Analiz Araçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arz, Talep ve Piyasa",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Esneklik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Refah Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tüketici Davranışı I",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tüketici Davranışı II",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Tüketici Davranışı III",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üretici Davranışı I",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Üretici Davranışı II",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Üretici Davranışı III",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Piyasalar I: Tam Rekabet Piyasası",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Piyasalar II: Tekel ve Tekelci Rekabet",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Piyasalar III: Oligopol",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Oyun Teorisi ve Strateji",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Microeconomics, Pindyck, R. S. and D. L. Rubinfield, Prentice-Hall, 2009, 9780132080"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=201"
  },
  "ECO 203": {
   "code": "ECO 203",
   "name": "Mathematical Economics",
+  "nameEn": "Mathematical Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -159,15 +376,87 @@
    "Hafta 13 · Birden Çok Seçim Değişkeni Olması Durumunda Optimizasyon",
    "Hafta 14 · Kısıt Altında Optimizasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Ekonomik Modeller: küme kavramı, ilişki ve fonksiyonlar, Ekonomide Denge Çözümlemesi: denge, doğrusal modelde kısmi piyasa dengesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ekonomide Denge Çözümlemesi: doğrusal olmayan modelde kısmi piyasa dengesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ekonomide Denge Çözümlemesi: Genel denge çözümlemesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Matris Cebiri: matris ve vektörler, matris işlemleri, transpoze ve ters matris",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal Modeller ve Matris Cebiri: tekil omayan matrisler, determinantlar, matrisin tersini bulma, Cramer kuralı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrusal Modeller ve Matris Cebiri: piyasa ve ulusal gelir modeli uygulamaları, Leontief girdi-çıktı modelleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Karşılaştırmalı Durağanlık ve Türev Kavramı: türev ve eğim, limit kavramı, süreklilik, türev alınabilirlik",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Türev Alma Kuralları ve Karşılaştırmalı Durağanlık Uygulamaları: türev alma kuralları, kısmi türev, Jakobyen determinantlar, uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Genel Fonksiyon Modellerinde Karşılaştırmalı Durağanlık Çözümlemesi: türevseller, türevsel kuralları, toplam türevler",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Genel Fonksiyon Modellerinde Karşılaştırmalı Durağanlık Çözümlemesi: örtük fonksiyon türevleri, genel fonksiyon modellerinde karşılaştırmalı durağanlık uygulamaları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Optimizasyon: birinci ve ikinci dereceden türevler, Maclaurin ve Taylor serileri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Üstel ve Logaritmik Fonksiyonlar",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Birden Çok Seçim Değişkeni Olması Durumunda Optimizasyon",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Kısıt Altında Optimizasyon",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Fundamental Methods of Mathematical Economics, Chiang, K. Wainwright, McGraw Hill, 2005, 978007010813"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=203"
  },
  "ECO 204": {
   "code": "ECO 204",
   "name": "International Trade",
+  "nameEn": "International Trade",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -181,12 +470,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=204"
  },
  "ECO 205": {
   "code": "ECO 205",
   "name": "Econometrics I",
+  "nameEn": "Econometrics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -219,15 +508,87 @@
    "Hafta 13 · Seçilmiş Makalelerin Tartışılması",
    "Hafta 14 · Seçilmiş Makalelerin Sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Basit Regresyon Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Regresyon Katsayılarının Özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Hipotez Testi, Paket Program Uygulaması",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Çoklu Regresyon Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Değişken Dönüşümleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrusal Olmayan Modeller",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Çoklubağlılık",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Doğrusal Kısıtların Testi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yapma Değişkenler , Paket Program Uygulaması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Model Tanımlaması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Proxy Değişkenler",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Değişken Varyans",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Seçilmiş Makalelerin Tartışılması",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Seçilmiş Makalelerin Sunumu",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Introduction to Econometrics, Christopher Dougherty, Oxford University Press, 2007, 9780195693249"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=205"
  },
  "ECO 206": {
   "code": "ECO 206",
   "name": "Econometrics II",
+  "nameEn": "Econometrics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -260,15 +621,87 @@
    "Hafta 13 · Seçilmiş Makalelerin Tartışılması",
    "Hafta 14 · Seçilmiş Makalelerin Sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Stochastic Açıklayıcı Değişkenler ve Ölçme Hataları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Eşanlı Denklem Sistemi ve Tanımlanma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Eşanlı Denklem Sistemlerinin Tahmini",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Ençok Olabililirlik Tahmini",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ençok Olabililirlik Tahmini",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Zaman Serisi Analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Dinamik Modeller",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Durağanlık, Bütünleşme ve Eşbütünleşme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Hata Düzeltmeli Model",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "VAR Modeli",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "VEC Modeli",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Panel Veri Modelleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Seçilmiş Makalelerin Tartışılması",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Seçilmiş Makalelerin Sunumu",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Introduction to Econometrics, Christopher Dougherty, Oxford University Press, 2007, 9780195693249"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=206"
  },
  "ECO 210": {
   "code": "ECO 210",
   "name": "Income Distribution and Poverty",
+  "nameEn": "Income Distribution and Poverty",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -282,12 +715,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=210"
  },
  "ECO 300": {
   "code": "ECO 300",
   "name": "International Finance",
+  "nameEn": "International Finance",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -301,12 +734,12 @@
   "textbooks": [
    "International Economics: Theory and Policy, P. Krugman and M. Obstfeld, Harper-Collins, London, 1991,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=300",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=300"
  },
  "ECO 301": {
   "code": "ECO 301",
   "name": "Economics of Development",
+  "nameEn": "Economics of Development",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -340,15 +773,87 @@
    "Hafta 13 · Kalkınmanın makroekonomisi: Politikalar, programlar ve uluslararası kurumsal çerçevesi",
    "Hafta 14 · Değişik konu başlıklarında sınıf sunumları Dersin değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kalkınma İktisadına giriş: konular ve başlıklar Belgesel Film gösterimi: Yaşam ve Borç",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 2,
+    "topic": "Kalkınmışlığı ve kalkınmamışlığı anlamak: Ekonomik büyüme ve kalkınmanın ölçütleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tarihsel bakış açısından kalkınma",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Ekonomik kalkınma ve büyüme kuramları: Klasik ve neoklasik kuramlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Kalkınmacı ve heterodoks kuramlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Endojen büyüme kuramları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Neoliberalizm, küreselleşme ve devletin rolü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Yapısal dönüşüm: Sanayi Kalkınması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Yapısal dönüşüm: Tarım ve kırsal kalkınma",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Nüfus büyümesi, eğitim ve insan sermayesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Teknolojik dönüşüm ve kalkınma",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Kalkınmanın makroekonomisi: ödemeler dengesi ve dış borç sorunu",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Kalkınmanın makroekonomisi: Politikalar, programlar ve uluslararası kurumsal çerçevesi",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Değişik konu başlıklarında sınıf sunumları Dersin değerlendirilmesi",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "The Process of Economic Development, J.M. Cypher and J.L. Dietz, Routledge: NY, USA., 2008, 978041511028"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=301"
  },
  "ECO 304": {
   "code": "ECO 304",
   "name": "Turkish Economy",
+  "nameEn": "Turkish Economy",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -381,15 +886,87 @@
    "Hafta 13 · 2004-2005 Yılında Türkiye Ekonomisi",
    "Hafta 14 · Türkiye ekonomisinin güncel sorunları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cumhuriyetten 1960lara Türkiye Ekonomisi, Türkiyede Birincil Sermaye Birikimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Planlı Gelişme ve İthal İkameci Politikalar: 1960-80",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ekonomi politikasında köklü dönüşüm: İhracat yönelimli büyüme, 1980-89",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "1980 sonrası ikinci köklü dönüşüm: Sermaye Hareketlerinin serbestleşmesi, 1989 - 94",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Türkiyede Kamu Sektörü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Türkiyede Finansal Sektör ve Para Politikası",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Türkiyede Reel Ekonomi, Yatırımlar, Büyüme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "1994 Ekonomik Krizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Örnek olay: Türkiye-1994 ve Güney Kore-1997 krizlerinin karşılaştırılması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "2000 istikrar paketi ve döviz kuru çıpasına dayalı anti-enflasyon programı, Niyet Mektubu (Türkçe)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "2001 krizi ve dalgalı kura dönüş, Bankacılık Sektörünün Yeniden Yapılandırılamsı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "2004-2005 Yılında Türkiye Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye ekonomisinin güncel sorunları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Türkiye Ekonomisi, Yakup Kepenek, Nurhan Yentürk, Remzi Kitabevi, 2007, ISBN:97514071"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=304",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=304"
  },
  "ECO 305": {
   "code": "ECO 305",
   "name": "Economic Globalization",
+  "nameEn": "Economic Globalization",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -423,15 +1000,87 @@
    "Hafta 13 · Küresel Ekonomi İçinde Kazananlar ve Kaybedenler: Gelişmiş Ülkeler",
    "Hafta 14 · Küresel Ekonomi İçinde Kazananlar ve Kaybedenler: Gelişmekte Olan Ülkeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Küreselleşme Kavramına Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Küreselleşme Kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Küresel Ekonominin Değişen Haritası",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Küreselleşme ve Teknoloji",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Küreselleşme ve Devlet",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Devlet Politikalarında Farklılaşmalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Çokuluslu Şirketler",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Küresel Üretim Ağları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Çokuluslu Şirketler ve Devlet",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Sektörel Tartışmalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Sektörel Tartışmalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Küresel Ekonomi İçinde Kazananlar ve Kaybedenler: Genel Bir Değerlendirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Küresel Ekonomi İçinde Kazananlar ve Kaybedenler: Gelişmiş Ülkeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Küresel Ekonomi İçinde Kazananlar ve Kaybedenler: Gelişmekte Olan Ülkeler",
+    "outcomes": "2"
+   }
+  ],
   "textbooks": [
    "Global Shift, Peter Dicken, Sage, London, 2007,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=305"
  },
  "ECO 307": {
   "code": "ECO 307",
   "name": "European Economy ve Türkiye",
+  "nameEn": "European Economy ve Türkiye",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -445,12 +1094,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=307",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=307"
  },
  "ECO 311": {
   "code": "ECO 311",
   "name": "Global Change",
+  "nameEn": "Global Change",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -464,7 +1113,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECO&dersNo=311"
  }
 }

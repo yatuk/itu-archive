@@ -2,6 +2,7 @@
  "OSN 421E": {
   "code": "OSN 421E",
   "name": "Deniz İzleme Teknikleri",
+  "nameEn": "Marine Monitoring Techniques",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -35,16 +36,88 @@
    "Hafta 13 · İzleme verilerinin raporlanması",
    "Hafta 14 · İzleme verilerine dayalı karar alma mekanizmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fiziksel parametreler ve ölçüm yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kimyasal parametreler ve ölçüm yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kirletici grupları ve izleme yöntemleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Pasif örnekleme yöntemi",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 6,
+    "topic": "Örnekleme stratejileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Örnekleme yöntemlerinin karşılaştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kalite kontrol teknikleri",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 9,
+    "topic": "İzleme verilerinin analizi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 10,
+    "topic": "Ulusal izleme programları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Uluslararası izleme yaklaşımları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Vaka Analizleri",
+    "outcomes": "2-3-6"
+   },
+   {
+    "week": 13,
+    "topic": "İzleme verilerinin raporlanması",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "İzleme verilerine dayalı karar alma mekanizmaları",
+    "outcomes": "2-4-5-6"
+   }
+  ],
   "textbooks": [
    "Li, D., & Liu, S. (2018). Water quality monitoring and management: Basis, technology and case studies. Academic Press.",
    "Ahuja, S. (Ed.). (2013). Monitoring water quality: Pollution assessment, analysis, and remediation. Newnes."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=OSN&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=OSN&dersNo=421"
  },
  "OSN 441E": {
   "code": "OSN 441E",
   "name": "Okyanus Modellemeye Giriş",
+  "nameEn": "Introduction to Ocean Modeling",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -78,10 +151,79 @@
    "Hafta 13 · Vaka Çalışması: Oceananigans ile Süreç Modellemesi",
    "Hafta 14 · Final Projesi Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Okyanus Modelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sayısal Yöntemler: Sonlu Farklar",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Jeofiziksel Akışkanlar Dinamiğinin Temelleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Coriolis Kuvveti",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "1B Kanalda Uzun Dalgaların Modellenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kıyısal Süreçler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Rüzgar Kaynaklı Akıntılar (2B)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav"
+   },
+   {
+    "week": 9,
+    "topic": "Jeostrofik Akıntı ve Dönme Etkileri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Genel Okyanus Dolaşımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "3B Okyanus Genel Dolaşım Modelleri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 12,
+    "topic": "Vaka Çalışması: Açık Kaynak Modeller ile Kıyı Modellemesi",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Vaka Çalışması: Oceananigans ile Süreç Modellemesi",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Final Projesi Sunumları"
+   }
+  ],
   "textbooks": [
    "Kämpf, J. (2009). Ocean Modelling for Beginners: Using Open-Source Software. Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=OSN&dersNo=441",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=OSN&dersNo=441"
  }
 }

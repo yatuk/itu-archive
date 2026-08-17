@@ -2,6 +2,7 @@
  "BED 102E": {
   "code": "BED 102E",
   "name": "Beden Yeterliliği",
+  "nameEn": "Physical Education",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -34,15 +35,87 @@
    "Hafta 13 · Yüzme performans geliştirme çalışmaları",
    "Hafta 14 · Tüm tekniklerin değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yüzme kara çalışmaları, suya alışma-yüzme guruplarının oluşturulması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Su üzerinde kalabilme çalışmaları, havuz kuralları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Suda nefes çalışmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Suda ayak vuruş çalışmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Suda kol çalışmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Suda ayak, kol koordinasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Suda nefes, ayak, kol, koordinasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Serbest yüzme tekniği uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Sırt üstü yüzme tekniği uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Kurbağalama yüzme tekniği uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Atlama teknikleri (balıklama-çivileme)",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Dalma teknikleri (sudan-dışarıdan)",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Yüzme performans geliştirme çalışmaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tüm tekniklerin değerlendirilmesi",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BED&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BED&dersNo=102"
  },
  "BED 201": {
   "code": "BED 201",
   "name": "Beden Yeterliliği",
+  "nameEn": "Physical Education",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -56,12 +129,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BED&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BED&dersNo=201"
  },
  "BED 201E": {
   "code": "BED 201E",
   "name": "Beden Yeterliliği",
+  "nameEn": "Physical Education",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -75,7 +148,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BED&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BED&dersNo=201"
  }
 }

@@ -2,6 +2,7 @@
  "LAT 111": {
   "code": "LAT 111",
   "name": "Beden Eğitimi I",
+  "nameEn": "Physical Education I",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=111"
  },
  "LAT 147": {
   "code": "LAT 147",
   "name": "Adli Lif Analizi",
+  "nameEn": "The Forensics of Fiber Analys.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -54,15 +55,87 @@
    "Hafta 13 · Liflerin kimyasal analizi",
    "Hafta 14 · Yeni lifler (yüksek performanslı lifler, modifiye selüloz lifleri, vb.)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lif tanımı, genel bilgiler. Liflerin fiziksel ve kimyasal özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Liflerin sınıflandırılması. Doğal liflerin özellikleri, kullanım alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Selülozun yapısı, özellikleri. Pamuk, keten, kenevir, jüt, rami, vb. bitkisel liflerin özellikleri, uygulanan işlemler, kullanım alanları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Proteinin yapısı, özellikleri. Yün ve diğer kıl kökenli hayvansal liflerin ve salgı kökenli ipek lifinin özellikleri, uygulanan işlemler, kullanım alanları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Liflerin yapısı, polimerler, polimerizasyon işlemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Yapay lif üretim metodları, uygulanan ard işlemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Yapay liflerin (viskoz, asetat, vb.) özellikleri, üretimi ve kullanım alanları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yapay liflerin (viskoz, asetat, vb.) özellikleri, üretimi ve kullanım alanları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yapay liflerin (poliamid, polipropilen, poliester, özellikleri, üretimi ve kullanım alanları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Yapay liflerin (poliakrilik, poliüretan, termoplastik elastomer vb.) özellikleri, üretimi ve kullanım alanları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yakma testi ile liflerin ayırt edilmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Liflerin mikroskobik analizi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Liflerin kimyasal analizi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yeni lifler (yüksek performanslı lifler, modifiye selüloz lifleri, vb.)",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=147",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=147"
  },
  "LAT 161": {
   "code": "LAT 161",
   "name": "İngilizce Kompozisyon",
+  "nameEn": "English Composition",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -93,15 +166,87 @@
    "Hafta 13 · Farklı Türlerde Yazma – Raporlar, mektuplar ve profesyonel belgeler",
    "Hafta 14 · Dönem Projesi Sunumları – Final denemelerinin/araştırma makalelerinin teslimi ve tartışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İngilizce Kompozisyona Giriş – Dersin genel görünümü, amacı ve beklentiler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Yazma Süreci – Ön yazım, beyin fırtınası, taslak hazırlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Paragraf Yapısı – Konu cümleleri, destekleyici detaylar, bütünlük",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kompozisyon/Deneme Yapısı – Giriş, gelişme, sonuç",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Tez Cümleleri – Güçlü ve tartışılabilir tezler oluşturma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Tutarlılık ve Bütünlük – Geçişler, mantıksal akış, paragraf birliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Dilbilgisi ve Yazım Kuralları – Cümle yapısı, noktalama, zamanlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav – Yazma ve analiz",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Araştırma Becerileri – Güvenilir kaynak bulma, not alma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Kaynakları Entegre Etme – Alıntılama, yeniden ifade etme, özetleme ve intihalden kaçınma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Akademik Üslup – Resmî ton, anlatım, açıklık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Gözden Geçirme ve Düzenleme – Arkadaş değerlendirme oturumları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Farklı Türlerde Yazma – Raporlar, mektuplar ve profesyonel belgeler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Projesi Sunumları – Final denemelerinin/araştırma makalelerinin teslimi ve tartışması",
+    "outcomes": "1-3"
+   }
+  ],
   "textbooks": [
    "Bullock, R. (2006). The Norton Field Guide to Writing."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=161",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=161"
  },
  "LAT 173": {
   "code": "LAT 173",
   "name": "Uygarlık ve Sanat Tarihi: Rönesans?tan Bugüne",
+  "nameEn": "Hist.of Art&Civ.:Renais.to Md",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -132,15 +277,87 @@
    "Hafta 13 · 19.yy sanat akımları: Neoklasikler, romantikler, realistler, emresyonistler",
    "Hafta 14 · 20.yy başları sanat akımları: post empresyonistler, ekspresyonistler, kübikler, Dadaizm, sürrealizm ve modern art."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İtalyada ilk Rönesans hareketleri: Tarihsel ve kültürel geçmiş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Rönesans öncesi mimarlık, heykel ve resim sanatı ile ilgili örnekler Antikiteden Ortaçağ’a kısa bir bakış",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Hıristiyanlık merkezindeki hayat",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "İtalya Rönesans dönemi özellikleri: Kültürel merkez olarak Roma, Leonardo Da Vinci, Michelangelo I-III",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "İtalya Rönesans dönemi özellikleri:Bramante, Raphael,",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "İtalya Rönesans dönemi özellikleri:Bramante, Raphael,",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Mediciler ve Sanata verilen destek; Fransa’da Renaissance",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kuzeyde Rönesans dönemi :Almanya ve Hollanda",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Protestanizm ve Sanat",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "İtalyan – Fransız Barok tarzının gelişimi: Bernini",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Barok sonrası ve Müzikteki etkiler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Aydınlanma Çağı, İnsan Hakları Beyannamesi ve Amerikan Özgürlük Bildirisi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "19.yy sanat akımları: Neoklasikler, romantikler, realistler, emresyonistler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "20.yy başları sanat akımları: post empresyonistler, ekspresyonistler, kübikler, Dadaizm, sürrealizm ve modern art.",
+    "outcomes": "1-3"
+   }
+  ],
   "textbooks": [
    "Mark Kishlansky, Patrick Geary, Patricia O'Brien, A Brief History of Western Civilization: The Unfinished Legacy, Combined Volume (5th Edition) 5th Edition 2015"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=173",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=173"
  },
  "LAT 215": {
   "code": "LAT 215",
   "name": "Erkek Giyimin Tarihçesi",
+  "nameEn": "History of Menswear",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -172,15 +389,87 @@
    "Hafta 13 · Armani ve erkek giyimin yükselişi",
    "Hafta 14 · Armani ve erkek giyimin yükselişi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Batı kostüm tarihinin esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Batı kostüm tarihinin esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Modanın orjini: Erkek için Rönesans",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Modanın orjini: Erkek için Rönesans",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "17. ve 18. Yüzyıllar ve erkek giyim",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "17. ve 18. Yüzyıllar ve erkek giyim",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Dandizm ve erkek giyiminde devrim: 1775-1914",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dandizm ve erkek giyiminde devrim: 1775-1914",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Müze ziyaretleri ve rapor hazırlama",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Müze ziyaretleri ve rapor hazırlama",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Modern ve post modern erkek giyim:1994-1990",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Modern ve post modern erkek giyim:1994-1990",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Armani ve erkek giyimin yükselişi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Armani ve erkek giyimin yükselişi",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=215"
  },
  "LAT 245": {
   "code": "LAT 245",
   "name": "Kültürlerarası İletişim",
+  "nameEn": "Intercultural Communication",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -213,16 +502,88 @@
    "Hafta 13 · Etik ve Pratik uygulamalar",
    "Hafta 14 · Dönem sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kültürler arası iletişime giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ulusal ve uluslararası anlamda küresel kültür",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Kimlik-etnik köken, farklılık ve güç",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "İlişkisel İçerik-Dil ve sözlü iletişim, cinsiyet",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Küresel ekonomi ve sosyal sınıflar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Deneyime dayalı öğrenme uygulaması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Küresel medya, Marka kültürü ve ağ toplumu",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kültürlerarası iletişim ve topluluk doğası",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ara dönem tekrarı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Çatışma ve işbirliği: Askeri uygulama ve hükümetlerin yönetimi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Çatışma ve işbirliği: Çatışmalar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Vatadaşlık, şehirler ve üniversiteler- kültür ve gelişme konuları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Etik ve Pratik uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem sunumları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Martin, Judith and Thomas Nakayama. Intercultural Communication in Contexts. 5th ed. McGraw Hill: CA, 2010.",
    "Hall, Edward T. Beyond Culture. Garden City, NY: Doubleday, 1981."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=245",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=245"
  },
  "LAT 261": {
   "code": "LAT 261",
   "name": "Küçük Ölçekli iş Kurma",
+  "nameEn": "Starting A Small Bussiness",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -253,15 +614,87 @@
    "Hafta 13 · Küçük ölçekli bir iş planı oluşturma",
    "Hafta 14 · Küçük ölçekli bir iş planı oluşturma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Küçük ölçekli firmalara genel bakış.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yasal hususlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İş ortamı: sanayinin analizi ve iş modelleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İş ortamı: sanayinin analizi ve iş modelleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Hedef pazarlar ve Pazar talepleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Pazarlama planı ve satış stratejileri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Pazarlama planı ve satış stratejileri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Finansal konular.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Finansal konular.",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Finansal destek kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Küçük işletmelerle ilgili sosyal ve etik konular.",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Küçük işletmelerle ilgili sosyal ve etik konular.",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Küçük ölçekli bir iş planı oluşturma",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Küçük ölçekli bir iş planı oluşturma",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=261",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=261"
  },
  "LAT 311": {
   "code": "LAT 311",
   "name": "Beden Eğitimi II",
+  "nameEn": "Physical Education II",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -275,12 +708,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=311"
  },
  "LAT 312": {
   "code": "LAT 312",
   "name": "Girişimcilik",
+  "nameEn": "Entrepreneurship",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -312,15 +745,87 @@
    "Hafta 13 · Girişimciler için yasal mevzuatlar",
    "Hafta 14 · Girişimciler için yasal mevzuatlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Girişimciliğe Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yaratıcı ve bilinçli araştırma: İş fikri bulma",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "İş fikrini geliştirme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "İş fikrini geliştirme: Bir ekiple iş modeli oluşturma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "İş modeli üretme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Girişimci pazarlama",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Üretimi planlama ve değer teklifinin dağıtımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Girişimciler için finans",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "İş tahminleme ve senaryo analizi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Organizasyon tasarımı ve liderlik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "İş planını oluşturma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "İş planlarının iletişimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Girişimciler için yasal mevzuatlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Girişimciler için yasal mevzuatlar",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Barringer, B. R. and Ireland, D. 2016. Entrepreneurship: Successfully Launching New Ventures, 5th Edition. Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=312"
  },
  "LAT 313": {
   "code": "LAT 313",
   "name": "Renk ve Işık",
+  "nameEn": "Color and Light",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -334,12 +839,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=313"
  },
  "LAT 315": {
   "code": "LAT 315",
   "name": "Renk ve Işık Laboratuvarı",
+  "nameEn": "Color and Light Lab.",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -353,7 +858,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LAT&dersNo=315"
  }
 }

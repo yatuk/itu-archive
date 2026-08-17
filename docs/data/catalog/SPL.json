@@ -2,6 +2,7 @@
  "SPL 502E": {
   "code": "SPL 502E",
   "name": "Advanced GIS in Urban Planning",
+  "nameEn": "Advanced GIS in Urban Planning",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -33,6 +34,77 @@
    "Hafta 13 · Dönem ödevi sunuşları-1",
    "Hafta 14 · Dönem ödevi sunuşları-2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "CBS’nin temel ilkeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Coğrafi veri modelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Veri sistemleri, veri yapısı veri tabanı oluşturma ve depolama",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Veri girişi ve düzenlemesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Veri işleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Mekansal analizler-1: Basit zaman serileri analizi ve sunumu",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Mekansal analizler-2: Raster veri konsepti, yüzey ve topoğrafik analizler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Mekansal analizler-3: Arazi uygunluk analizi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Model oluşturucu-1",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Model oluşturucu-2 Yarıyıl içi sınavı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Mekansal otokorelasyon- Arakestirim teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Network analizi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunuşları-1",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunuşları-2"
+   }
+  ],
   "textbooks": [
    "Goodchild, M. F. (1986). Spatial autocorrelation (Vol. 47): Geo Books Norwich",
    "Chrisman, N. (1997) Exploring Geographic Information Systems, N.Y.: John Wiley and Sons.",
@@ -44,12 +116,12 @@
    "Michael, Z. (2010). Modeling Our World, ESRI Press, Second Edition",
    "Longley, P., Goodchild, M., Maguire, D.J. and Rhind, D.W. (2011). Geographic Information Systems and Science, Third Edition, John Wiley and Sons"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=502"
  },
  "SPL 503E": {
   "code": "SPL 503E",
   "name": "Urban Planning Project I",
+  "nameEn": "Urban Planning Project I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -83,6 +155,77 @@
    "Hafta 13 · Eylem alanlarının planlama ve tasarımı",
    "Hafta 14 · Eylem alanlarının planlama ve tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çalışma konusunun verilmesi, teknik gezi, çalışma takımlarının oluşturulması, katılım modeli tartışması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kentin bölgesi içinde gelişimine yönelik Stratejik Mekansal Planlama yaklaşımı çerçevesinde sektörel (işgücü, nüfus, ulaşım, kentsel eylem alanları vb.) verilere dayalı GZFT analizinin oluşturulması, literatür taraması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kentin bölgesi içinde gelişimine yönelik Stratejik Mekansal Planlama yaklaşımı çerçevesinde sektörel (işgücü, nüfus, ulaşım, kentsel eylem alanları vb.) verilere dayalı GZFT analizinin oluşturulması, literatür taraması/odak grup toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Doğal çevre, yapılaşmış çevre ve sosyo-ekonomik/sosyo-kültürel çevre verilerinin kent ölçeğinde analizi, kentin rekabetçilik gücünün değerlendirilmesi/odak grup toplantısı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Doğal çevre, yapılaşmış çevre ve sosyo-ekonomik/sosyo-kültürel çevre verilerinin kent ölçeğinde analizi, kentin rekabetçilik gücünün değerlendirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kent bütünü ölçeğinde alternatif gelişme senaryoların ortaya konulması/odak grup toplantısı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kent bütünü ölçeğinde alternatif gelişme senaryoların ortaya konulması/odak grup toplantısı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Development of spatial decisions depending on the selected scenario among its alternatives",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Seçilen senaryonun alternatifli olarak mekana yansıtılması, stratejilerin belirlenmesi/odak grup toplantısı",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Eylem alanlarının planlama ve tasarımı",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Eylem alanlarının planlama ve tasarımı",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Eylem alanlarının planlama ve tasarımı",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Eylem alanlarının planlama ve tasarımı",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Eylem alanlarının planlama ve tasarımı"
+   }
+  ],
   "textbooks": [
    "Cerette, M., Concilio, G. (2010), ”Making Strategies in Spatial Planning”, Springer",
    "S. Oesterlynck (Ed.), (2010)”Strategic Spatial Projects”, Routledge, London",
@@ -90,12 +233,12 @@
    "H. Dimitriou, R. Thomson (2007), ”Strategic Planning for Regional Development in the UK”, Routledge, London",
    "S. Davoudi, I. Stronge, (2008) “Conceptions of Space and Place in Strategic Spatial Planning”, Routledge, London"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=503"
  },
  "SPL 504": {
   "code": "SPL 504",
   "name": "Konut Politikası",
+  "nameEn": "Housing Policy",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -127,6 +270,77 @@
    "Hafta 13 · Konut Alanları İle İlgili Yeni Yönelimler",
    "Hafta 14 · General Discussion and Course Evaluation"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konut Politikası Kavramı, Tanımı",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Politika Soruları (Konutla İlgili Temel Kararlar)",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Konut Politikasına Yönelik Genel Konular",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yasal ve Yönetsel Çerçeve",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Arazi Sunumu ve Konut Sunumuna Yönelik Standartlar",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Konut Piyasası: Arz ve Talep",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Konut Üretim Planı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Türkiye’de Konut Sektörünün Profili",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Türkiye’de Konut Politikasının Gelişimi (1980 öncesi)",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Türkiye’de Konut Politikasının Gelişimi (1980 sonrası) YIL İÇİ SINAVI",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Gelişmiş Ülkelerde Konut Politikasının Karşılaştırmalı Analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Gelişmekte Olan Ülkelerde Konut Politikasının Karşılaştırmalı Analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Konut Alanları İle İlgili Yeni Yönelimler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "General Discussion and Course Evaluation"
+   }
+  ],
   "textbooks": [
    "United Nations,2008, State Of The World Cities 2010/2011,Un Habitat, Earthscan:London",
    "Bramley, G., Bartlett,W., Lampert, C., 1995, Planning The Market And Private Housebuilding, London:Ucl",
@@ -134,12 +348,12 @@
    "Harsman, B.,Quigley, J.M.(Eds), ( ) Housing Markets And Housing Institutions, Kluwer Academic Publ. London",
    "Oxley, M., 2004, Economics, Planning And Housing, Palgrave Macmillan, New York"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=504",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=504"
  },
  "SPL 506E": {
   "code": "SPL 506E",
   "name": "Uygulamalı İstatistik",
+  "nameEn": "Applied Statistics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -171,6 +385,77 @@
    "Hafta 13 · Çoklu doğrusal regresyon",
    "Hafta 14 · Örnekler değerlendirmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, İstatistik Bilimi Esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bileşimsel çözümleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Örnekleme gruplama teknikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Orta, Ortanca sapma, bileşimsel ölçüler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Karşılaştırmalar, çıkarımsal karşılaştırmalar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Çıkarımsal karşılaştırmalar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Belirtim katsayısıkarşılaştırmalar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İstatistiksel karar kuramı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Varsayım denemesi ve anlamlılık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Logaritmik dönüşümler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Polinomlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Polinomlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çoklu doğrusal regresyon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Örnekler değerlendirmeler"
+   }
+  ],
   "textbooks": [
    "Atalık, G. (1996) Şehir ve Bölge Planlaması Öğrencileri için Uygulamalı İstatistik, İ.T.Ü. Istanbul",
    "Ebdon, D. (1988) Statistics in Geography, Basil Blackwell Ltd. Oxford",
@@ -178,12 +463,12 @@
    "Willemain, T.R. (1981) Statistical Methods for Planners, The M.I.T. Press",
    "Yeomans, K.A. (1976) Applied Statistics, Penguin"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=506",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=506"
  },
  "SPL 507": {
   "code": "SPL 507",
   "name": "Şehirlerin Yeniden Yapılanması",
+  "nameEn": "Urban Restructuring",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -216,6 +501,77 @@
    "Hafta 13 · Tartışma: Şehirlerin yeniden yapılandırılmasına örnekler - II",
    "Hafta 14 · Tartışma: Şehirlerin yeniden yapılandırılmasına örnekler - III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Şehirlerin yeniden yapılandırılmasına kuramsal bir yaklaşım",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Şehirlerin evriminde fordist ve postfordist yaklaşımlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Şehirlerin yeniden yapılandırılması: Trendler ve tehditler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ticaretin dönüşümü ve mega çarşılar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gayrımenkul sektörü ve yeniden yapılanma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kamusal mekan – kamusal alan",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Küreselleşme ve ulaşım politikaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kültür endüstrileri, mega etkinlikler ve turizm",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Neoliberal kentleşme, kentsel yenileme ve tarihi çevrelerin sürdürülebilirliği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Küreselleşme, toplum ve mekan: Kentsel demokrasi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Arasınav / Tartışma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tartışma: Şehirlerin yeniden yapılandırılmasına örnekler - II",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tartışma: Şehirlerin yeniden yapılandırılmasına örnekler - III"
+   }
+  ],
   "textbooks": [
    "Castells, M. (1996) The Information Age: Economy, Society,and Culture. Oxford: Blackwell",
    "Brenner, N. Theodore, N. (2002) Spaces of Neoliberalizm: Urban Restructuring in North America and Western Europe, Oxford: Blackwell",
@@ -223,12 +579,12 @@
    "Marcuse, P., Van Kempen, R. (2000) Globalizing Cities: A New Spatial Order? Oxford: Blackwell.",
    "Harvey, D. (2013) Asi Şehirler: Şehir Hakkından Kentsel Devrime Doğru. Istanbul: Metis"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=507"
  },
  "SPL 511E": {
   "code": "SPL 511E",
   "name": "Planning Theory and Policy",
+  "nameEn": "Planning Theory and Policy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -261,6 +617,77 @@
    "Hafta 13 · Modernizm-post modernizm-paradigma değişmesi",
    "Hafta 14 · Genel değerlendirme,"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Planlamanın gerekliliği-devlet kuramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Planlamada arazi kullanışı kuramları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kent planlama sürecine ilişkin kuramlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sürdürülebilirlik kavramı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "1945 lere kadar kent planlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "1945 den 1990 lara kent planlama- paradigma değişimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Geniş kapsamlı çok yönlü planlama ve uygulama",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Parçacıl planlama-karmaşık tarama",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Sistemler ve rasyonel planlama yaklaşımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Planlamada katılım",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Plancının teknik ve politik rolleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Stratejik planlama",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Modernizm-post modernizm-paradigma değişmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Genel değerlendirme,"
+   }
+  ],
   "textbooks": [
    "Melih Ersoy, Ed., 2007, Planlama Kuramı, İmge Yayınları",
    "Urban Planning Theory Since 1945 Nigel Taylor , Sage Publications 2008",
@@ -268,12 +695,12 @@
    "Fainsteın, S.S., Cambell, S. (Ed.), 1997, Readings in Urban Theory",
    "Faludi, A., 1973, Reader Planning Theory"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=511"
  },
  "SPL 596E": {
   "code": "SPL 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -317,6 +744,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -329,7 +827,6 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SPL&dersNo=596"
  }
 }

@@ -2,6 +2,7 @@
  "BIL 100E": {
   "code": "BIL 100E",
   "name": "Programlamaya Giriş -Python",
+  "nameEn": "Intr.to Prog.Language(PYTHON)",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=100",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=100"
  },
  "BIL 101E": {
   "code": "BIL 101E",
   "name": "Bilgisayar ve Bilgi Sistemlerine Giriş",
+  "nameEn": "Int to Comp and Inf Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -54,15 +55,87 @@
    "Hafta 13 · Sembolik Hesaplama",
    "Hafta 14 · Programlama Dilleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Bilgisayar Bilgisi, Giriş/Çıkış, Depolama, Veri İşleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İşletim Sistemlerine Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ağ ve Bilgisayar Ağı",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "İnternet, Kablolu/Kablosuz İletişim",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Yaygın Bilgisayar Yazılımları ile ilgili Temel Beceriler (Kelime İşlemci)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yaygın Bilgisayar Yazılımları ile ilgili Temel Beceriler (Çizelge Uygulamaları)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Yaygın Bilgisayar Yazılımları ile ilgili Temel Beceriler (Çizelge Uygulamaları)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Yaygın Bilgisayar Yazılımları ile ilgili Temel Beceriler (Bilimsel Görselleştirme)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Yaygın Bilgisayar Yazılımları ile ilgili Temel Beceriler (Sunuş Hazırlama)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Hesaplamaya Giriş, Sayılar, Hata",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Algoritmalar, Mantık Yapıları, Yinelemeli Yapılar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Algoritmalar, Mantık Yapıları, Yinelemeli Yapılar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sembolik Hesaplama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Programlama Dilleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Computers are your future, Daley, Prentice Hall, 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=101"
  },
  "BIL 103E": {
   "code": "BIL 103E",
   "name": "Bilişim Sist.&Bilg.Müh. Giriş",
+  "nameEn": "Intr. to Inf. Syst.&Comp. Eng",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -96,15 +169,87 @@
    "Hafta 13 · Yordam Soyutlaması",
    "Hafta 14 · Bilgisayar Mühendisliğinin Araştırma Konuları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgisayar Mühendisliğine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayar Donanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Bilgisayar İşletim Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sözcük İşleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Veri İşleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Resim İşleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Belge İşleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Sunum Hazırlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Web Sayfası Hazırlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Programlamaya Giriş",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Temel Programlama Yapıları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Akış Denetimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Yordam Soyutlaması",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Bilgisayar Mühendisliğinin Araştırma Konuları",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=103"
  },
  "BIL 104E": {
   "code": "BIL 104E",
   "name": "Programlamaya Giriş C",
+  "nameEn": "Intr. to Programming in C",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -139,15 +284,87 @@
    "Hafta 13 · Yapı tanımlamaları, başlatılması; yapı elemanlarına erişim",
    "Hafta 14 · Yapıların fonksiyonlar içinde kullanılması, typedef, birleştirme, bit operatörleri, bit alanları, döküm sabitleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "C programlama dilinin tanıtım; basit giriş/çıkış işlemleri; hafıza yapısı, matematiksel operatörler ve öncelikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Algoritmalar, if, if/else, while yapıları, atama operatörleri; azaltma ve artırma operatörleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Döngü temelleri, sayaç kontrollü döngüler, for döngüsü , switch çoklu seçim. Do/While döngüleri, break & continue, mantıksal operatörler, eşitlik ve atama operatörleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "C dilinde program modülleri, matematik kütüphane fonksiyonları, fonksiyonlar; tanımları, prototipleri, başlık dosyaları",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Fonksiyon çağırma, rastgele sayı üretimi, depolama sınıfları, faaliyet alanı kuralları, özyineleme, özyinelemeye karşı yineleme",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Diziler, dizi tanımlama, dizilerin fonksiyonlara gönderilmesi, dizilerde sıralama, arama; çok boyutlu diziler",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "İşaretçi değişkenlerin tanımlanması ve ilk değerlerinin atanması, fonksiyonların referans ile çağrılması, const yapısının kullanılması, işaretçilerle niteleme",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Referans yöntemiyle bubble sıralamasının kullanılması, işaretçiler üzerinde matematiksel işlemler, dizi ile işaretçiler arasındaki ilişki, işaretçi dizileri, fonksiyon işaretçileri",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Karakterler ve karakter dizi temelleri (katar), karakterlerle ilgili kütüphane, standart Giriş/Çıkış , katar işlemleri; karşılaştırma, arama ve hafıza işlemleri",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Biçimli giriş/çıkış, akışlar , printf ile biçimli çıktı yazma; tamsayılar, ondalık sayılar, katar ve karakterler, alan genişlikleri ve hassaslık. Bayrak kullanımı, değişmezler ve kaçış sekansları,",
+    "outcomes": "1-3-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Veri hiyerarşisi, dosyalar ve uzantıları, sıralı erişim dosyası yaratma, sıralı erişim dosyasından okuma yapma, rastgele erişim dosyaları yaratma",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Rasgele erişilmiş dosyadan rastgele very yazma ve okuma, Bilimsel görselleştirme (gnuplot)",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Yapı tanımlamaları, başlatılması; yapı elemanlarına erişim",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Yapıların fonksiyonlar içinde kullanılması, typedef, birleştirme, bit operatörleri, bit alanları, döküm sabitleri",
+    "outcomes": "3-4-5-6"
+   }
+  ],
   "textbooks": [
    "C How to Program, Deitel & Deitel, Prentice Hall, 2007, 0132404168"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=104",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=104"
  },
  "BIL 105E": {
   "code": "BIL 105E",
   "name": "Bilim ve Müh Bilg Hesap Giriş(C)",
+  "nameEn": "Int to Scientific and Engineering Computing (C)",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -180,15 +397,87 @@
    "Hafta 13 · Dosya işlemleri, graf dolaşımı",
    "Hafta 14 · Önişleyici, projeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri ve algoritmalar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "C Programlama Dili'ne giriş ve Matematiksel hesaplamalar",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 3,
+    "topic": "Seçme Blokları, birim dönüşümleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Yineleme Blokları, Seri toplamlarını hesaplama",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Türetilmiş veri tipleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Diziler, karakter katarları, istatistiksel hesaplamalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çok boyutlu diziler, Gauss eleminasyon yöntemi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Yıl İçi sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "İşaretçiler. Polinom hesaplamaları.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Soyutlama, Fonksiyonlar, Parametre Kapsamı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Parametre aktarımı, Newton-Raphson Metodu",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Özyineleme",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Dosya işlemleri, graf dolaşımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Önişleyici, projeler",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "C++ HOW TO PROGRAM, H. M. DEITEL, P. J. DEITEL, PRENTICE-HALL, 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=105",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=105"
  },
  "BIL 106E": {
   "code": "BIL 106E",
   "name": "Programlamaya Giriş (Fortran)",
+  "nameEn": "Intr toSci& Eng Comp (Fortran)",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -222,15 +511,87 @@
    "Hafta 13 · Basit Mühendislik Uygulamalar",
    "Hafta 14 · Basit Mühendislik Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Programlama, Akış Şemaları, Algoritma Tasarımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Fortran Programlama Dilini Tanıtım, Basit Giriş/Çıkış İşlemleri, Matematiksel Operatörler, Veri Türleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "3 Mantık İfadeleri, Kontrol İfadeleri: IF yapıları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kontrol İfadeleri: CASE yapıları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Tekrarlamalı İfadeler: DO, WHILE Döngüleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Biçimlendirilmiş I/O",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Dosyalar ve Kayıtlar",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Yapısal Bloklar (modüller ve prosedürler)",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Yapısal Bloklar (fonksiyonlar ve altprogramlar)",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Dizinler (bir ve iki boyutlu)",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Dizinler (Sıralama algoritmaları ve matris işlemleri)",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Diğer veri tipleri (kullanıcı tanımlı veri tipleri)",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Basit Mühendislik Uygulamalar",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Basit Mühendislik Uygulamalar",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Fortran 95/2003 for Scientists & Engineers, Stephen J. Chapman, McGraw-Hill, 2007,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=106",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=106"
  },
  "BIL 108": {
   "code": "BIL 108",
   "name": "Bilim&Müh Bilg Hesap Giriş",
+  "nameEn": "Intr. to Sci. & Eng.Computing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -265,15 +626,87 @@
    "Hafta 13 · Sembolik Matematik",
    "Hafta 14 · Hazır Fonksiyonlar ile ADD Çözümleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel ve Mühendislik Hesaplamaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan Programda Hesaplama Ortamına Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Değişkenler, Operasyonlar, Basit Grafik",
+    "outcomes": "2-5-6-7"
+   },
+   {
+    "week": 4,
+    "topic": "Algoritmalar ve Mantık Operatörleri",
+    "outcomes": "2-3-4-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Akış Kontrol, Hatalar ve Hataların Kaynağı",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 6,
+    "topic": "Fonksiyonlar",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Diziler",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Basit Denklem Çözme Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Çokterimli Örnekleri",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Eğri Uydurma Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Interpolasyon Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal Integrasyon Uygulamaları",
+    "outcomes": "2-3-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Sembolik Matematik",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Hazır Fonksiyonlar ile ADD Çözümleri",
+    "outcomes": "2-3-4-6"
+   }
+  ],
   "textbooks": [
    "Introduction to Matlab 7 for Engineers, William J. Palm, Mc Graw Hill, 2005,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=108",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=108"
  },
  "BIL 108E": {
   "code": "BIL 108E",
   "name": "Bilim&Müh Bilg Hesap Giriş",
+  "nameEn": "Intr. to Sci. & Eng.Computing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -308,15 +741,87 @@
    "Hafta 13 · Sembolik Matematik",
    "Hafta 14 · Hazır Fonksiyonlar ile ADD Çözümleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel ve Mühendislik Hesaplamaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan Programda Hesaplama Ortamına Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Değişkenler, Operasyonlar, Basit Grafik",
+    "outcomes": "2-5-6-7"
+   },
+   {
+    "week": 4,
+    "topic": "Algoritmalar ve Mantık Operatörleri",
+    "outcomes": "2-3-4-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Akış Kontrol, Hatalar ve Hataların Kaynağı",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 6,
+    "topic": "Fonksiyonlar",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Diziler",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Basit Denklem Çözme Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Çokterimli Örnekleri",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Eğri Uydurma Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Interpolasyon Uygulamaları",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal Integrasyon Uygulamaları",
+    "outcomes": "2-3-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Sembolik Matematik",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Hazır Fonksiyonlar ile ADD Çözümleri",
+    "outcomes": "2-3-4-6"
+   }
+  ],
   "textbooks": [
    "Introduction to Matlab 7 for Engineers, William J. Palm, Mc Graw Hill, 2005,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=108",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=108"
  },
  "BIL 109": {
   "code": "BIL 109",
   "name": "Bilgisayar",
+  "nameEn": "Computer",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -330,12 +835,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=109",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=109"
  },
  "BIL 109E": {
   "code": "BIL 109E",
   "name": "Bilgisayar",
+  "nameEn": "Computer",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -349,12 +854,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=109",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=109"
  },
  "BIL 110E": {
   "code": "BIL 110E",
   "name": "Programlamaya Giriş -C",
+  "nameEn": "Intr. to Prog. Language (C)",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -370,12 +875,12 @@
   "textbooks": [
    "Deitel & Deitel, 2012, C ile Programlama , Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=110",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=110"
  },
  "BIL 112E": {
   "code": "BIL 112E",
   "name": "Programlamaya Giriş -Fortran",
+  "nameEn": "Intr.to Prog.Language(FORTRAN)",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -389,12 +894,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=112"
  },
  "BIL 113E": {
   "code": "BIL 113E",
   "name": "Programlamaya Giriş - MATLAB",
+  "nameEn": "Intr.to Sci& Eng.Comp.(MATLAB)",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -408,7 +913,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=113",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BIL&dersNo=113"
  }
 }

@@ -2,6 +2,7 @@
  "BLU 501": {
   "code": "BLU 501",
   "name": "Elektronik Haberleşme Düzen.",
+  "nameEn": "Electronics Communication Regulations",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -37,18 +38,90 @@
    "Hafta 13 · Numaralandırma rejimi",
    "Hafta 14 · Evrensel hizmet"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektonik haberleşme sistemleri ve Pazar büyüklükler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektronik haberleşme düzenlemelerine genel bakış",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Elektronik haberleşme hizmeti sunan işletmecilerin yetkilendirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Rekabet politikası",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Piyasa analizleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Erişim ve arabağlantı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Maliyet modelleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Tarife (fiyat) düzenlemeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Tüketici hakları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Spektrum yönetimi",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kara, mobil ve deniz sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Spektrum izleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Numaralandırma rejimi",
+    "outcomes": "2-4-6-8"
+   },
+   {
+    "week": 14,
+    "topic": "Evrensel hizmet",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "ITUTrends in Telecommunication Reform 2010",
    "Colin Blackman and Lara Srivastava, Ed., Telecommunications Regulation Handbook, World Bank 2011",
    "ICT Regulation Toolkit, World Bank ve Infodev,",
    "Simon Haykin, “Communication Systems”, Wiley, 1983 ve yeni baskıları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=501"
  },
  "BLU 505": {
   "code": "BLU 505",
   "name": "İş Süreçleri Yönetimi",
+  "nameEn": "Business Process Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -80,18 +153,90 @@
    "Hafta 13 · Süreç Madenciliği: Kontrol Akış Süreci Analizi",
    "Hafta 14 · Final"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş Süreçleri Analizi GirişSüreçRutinProje",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Süreçlerle YönetimSüreç Hiyerarşisi ve ÖnemiSüreç Tipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bir sürecin performansı nasıl ölçülür?",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İleri Süreç Modelleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kalitatif Süreç Analizi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kantitatif Süreç Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Vize",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Kalitatif Süreç Analizi (Simülasyon ve Kuyruk)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Süreç Yeniden Tasarımı (Re-design)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Süreç Modellerinden İhtiyaç Analizine",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Süreç Otomasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Süreç İzleme ve Süreç Madenciliği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Süreç Madenciliği: Kontrol Akış Süreci Analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Final",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Weske, M. (2010), \"Business Process Management: Concepts, Languages, Architectures\", Springer-Verlag, Berlin-Heidelberg.",
    "White, S. A. and Miers, D. (2008), \"BPMN: Modeling and Reference Guide\", Future Strategies Inc., Florida, U.S.A.",
    "Dumas, M., La Rosa, M., Mendling, J., Reijers, H. (2013) “Fundamentals of Business Process Management” Springer",
    "http://wwwis.win.tue.nl/~wvdaalst/news/Recommended_BPM_Books.pdf"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=505"
  },
  "BLU 510E": {
   "code": "BLU 510E",
   "name": "Medical Informatics",
+  "nameEn": "Medical Informatics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -105,12 +250,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=510",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=510"
  },
  "BLU 513E": {
   "code": "BLU 513E",
   "name": "Fuzzy Log.Pr.for Sci.&En.App.",
+  "nameEn": "Fuzzy Log.Pr.for Sci.&En.App.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -147,6 +292,78 @@
    "Hafta 13 · Bulanık Mantık ile Modelleme Tekniklerinin Diğer Yapay Zeka Teknikleri ile Karşılaştırılması",
    "Hafta 14 · Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Belirsizlik Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Klasik Kümeler ve Karakteristik Değerleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bulanık Kümeler ve Üyelik Dereceleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Üyelik Fonksiyonları; Bulanıklaştırma",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Bulanık Küme Operatörleri ve İşlemleri, “KESİŞİM, BİRLEŞİM, TAMAMLAYICI”",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Bulanık İlişkiler; “VE, VEYA”",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Bulanık Matematik, Toplama, Çıkarma, Çarpma ve Bölme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Bulanık Kural Tabanı; “EĞER-İSE”, ve Kural tabanlı Sistemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Bulanık Çıkarım Motoru; Mamdani ve Sugeno",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Bulanık Mantık Önermeler, Doğrulamalar, Alt bileşenler, Kararlar",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 11,
+    "topic": "Durulaştırma",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Bulanık Kümeler ve Kuralları ile Fonksiyon Modelleme; Eğri Uydurma",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 13,
+    "topic": "Bulanık Mantık ile Modelleme Tekniklerinin Diğer Yapay Zeka Teknikleri ile Karşılaştırılması",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalar",
+    "outcomes": "3-4-5-6-7-8"
+   }
+  ],
   "textbooks": [
    "Zadeh, L.A.,1965. Fuzzy Sets. Information and Control.",
    "Şen, Z., 2001, Bulanık Mantık ve Modelleme İlkeleri, Bilge Kültür Sanat Basımevi, 172 sayfa.",
@@ -154,12 +371,12 @@
    "Ross, J. T., 1995. Fuzzy Logic with Engineering Applications, McGraw-Hill, Inc., New York, 593 pp.",
    "Sivanandam, S. N., Sumathi, S., Deepa, S. N., 2006. Introduction to Fuzzy Logic Using MATLAB, Springer,."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=513"
  },
  "BLU 520": {
   "code": "BLU 520",
   "name": "Katılımcı Demokrasi ve Siyasette Bilişim",
+  "nameEn": "IT in Politics&Partic.Democ.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -191,6 +408,77 @@
    "Hafta 13 · Dijital Demokrasi ve Siyasi Güç",
    "Hafta 14 · Geleceğin Demokrasisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Demokrasi Kültürü ve Katılımcılık",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Televizyon Çağında Siyaset",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bilişim Devrimi ve Siyasi Sonuçları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dijital Okuryazarlık",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "İletişim, Bilişim ve Demokrasi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Dijital Aktivizm",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "E-Sivil Toplum",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Sosyal Ağ ve Siyaset",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Seçim Kampanyaları ve İnternet",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "İnternet Yönetimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "E-devlet ve E-demokrasi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Elektronik Küresel Köy",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Dijital Demokrasi ve Siyasi Güç",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Geleceğin Demokrasisi"
+   }
+  ],
   "textbooks": [
    "Richard Davis, The Web of Politics",
    "Lawrence K. Grossman, The Electronic Republic",
@@ -198,12 +486,12 @@
    "Doç.Dr. Süleyman Karaçor, “Yeni İletişim Teknolojileri, Siyasal Katılım, Demokrasi”",
    "Serdar Paktin, “Change.Org: Katılımcı Demokrasi ve Aktivizm”"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=520",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=520"
  },
  "BLU 537E": {
   "code": "BLU 537E",
   "name": "Veri Analizi&Görselleştiril.",
+  "nameEn": "Data Analysis&Visualization",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -238,15 +526,73 @@
    "Hafta 13 · Çoklu grafik, alt-grafik ve figür oluşturma",
    "Hafta 14 · Şekil ve stilleri özelleştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri analizi uygulamaları"
+   },
+   {
+    "week": 2,
+    "topic": "Python veri yapıları"
+   },
+   {
+    "week": 3,
+    "topic": "Dizi objeleri ve örüntü araştırmaları için düzenli ifadeler"
+   },
+   {
+    "week": 4,
+    "topic": "Sınıf, dosya yönetimi ve önemli python modülleri"
+   },
+   {
+    "week": 5,
+    "topic": "Yapısal olmayan veri üzerinde vaka çalışması"
+   },
+   {
+    "week": 6,
+    "topic": "Numpy dizi operasyonları"
+   },
+   {
+    "week": 7,
+    "topic": "PANDAS kütüphanesi ile veri temizliği ve filtrelenmesi"
+   },
+   {
+    "week": 8,
+    "topic": "PANDAS kütüphanesi ile veri birleştirme ve yeniden şekillendirme"
+   },
+   {
+    "week": 9,
+    "topic": "PANDAS kütüphanesi ile veri bütünleştirmesi ve grup operasyonları"
+   },
+   {
+    "week": 10,
+    "topic": "PANDAS kütüphanesi ile zaman serisi analizleri"
+   },
+   {
+    "week": 11,
+    "topic": "Hikaye anlatma ve görsel iletişim"
+   },
+   {
+    "week": 12,
+    "topic": "Yaygın grafik tiplerinin uygulamaları"
+   },
+   {
+    "week": 13,
+    "topic": "Çoklu grafik, alt-grafik ve figür oluşturma"
+   },
+   {
+    "week": 14,
+    "topic": "Şekil ve stilleri özelleştirme"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=537",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=537"
  },
  "BLU 539E": {
   "code": "BLU 539E",
   "name": "Spec.Topics in Applied Infor.",
+  "nameEn": "Spec.Topics in Applied Infor.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -263,12 +609,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=539",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=539"
  },
  "BLU 541E": {
   "code": "BLU 541E",
   "name": "Cognitive System Engineering",
+  "nameEn": "Cognitive System Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -282,12 +628,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=541",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=541"
  },
  "BLU 546": {
   "code": "BLU 546",
   "name": "Adli Bilişim",
+  "nameEn": "Digital Forensics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -301,12 +647,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=546",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=546"
  },
  "BLU 596E": {
   "code": "BLU 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -350,6 +696,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -362,12 +779,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=596"
  },
  "BLU 602E": {
   "code": "BLU 602E",
   "name": "Smart Anten.for Wirele.Com.",
+  "nameEn": "Smart Anten.for Wirele.Com.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -398,15 +815,73 @@
    "Hafta 13 · GPS, hücresel ve WLAN için uyarlanabilir dizi uygulamaları",
    "Hafta 14 · Sayısal yöntemler (FDTD. MoM, FEM)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Antenler için elektromanyetik teorinin gözden geçirilmesi"
+   },
+   {
+    "week": 2,
+    "topic": "Kanal karakteristikleri"
+   },
+   {
+    "week": 3,
+    "topic": "Dizi teorisi"
+   },
+   {
+    "week": 4,
+    "topic": "Akıllı diziler için anten tasarım özellikleri"
+   },
+   {
+    "week": 5,
+    "topic": "Varış algoritmaları açısı"
+   },
+   {
+    "week": 6,
+    "topic": "Eğitilmiş algoritmalar"
+   },
+   {
+    "week": 7,
+    "topic": "Eğitilmemiş algoritmalar"
+   },
+   {
+    "week": 8,
+    "topic": "Akıllı anten uygulmaları"
+   },
+   {
+    "week": 9,
+    "topic": "Akıllı anten sistemleri tasarımı"
+   },
+   {
+    "week": 10,
+    "topic": "Anten dizileri temelleri: 1 boyutta, dairesel ve düzlemsel"
+   },
+   {
+    "week": 11,
+    "topic": "MIMO (Çok giriş çok çıkışlı)"
+   },
+   {
+    "week": 12,
+    "topic": "RF haberleşme ve radar antenleri: Parabolik yansıtıcı, Mercek, Yagi-Uda ve Log periyodik dipol dizileri, GSM ve Radyo bağlantı antenleri"
+   },
+   {
+    "week": 13,
+    "topic": "GPS, hücresel ve WLAN için uyarlanabilir dizi uygulamaları"
+   },
+   {
+    "week": 14,
+    "topic": "Sayısal yöntemler (FDTD. MoM, FEM)"
+   }
+  ],
   "textbooks": [
    "1. Frank Gross, Smart Antennas with MATLAB, McGraw-Hill,2015"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=602",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=602"
  },
  "BLU 610E": {
   "code": "BLU 610E",
   "name": "Advanced Topics in Appl.Infor.",
+  "nameEn": "Advanced Topics in Appl.Infor.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -415,17 +890,20 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "",
-  "outcomes": null,
+  "description": "Bilişim uygulamaları; bilgisayar bilimleri, elektronik ve haberleşme gibi alanların yanında biyoloji, sağlık, uzay teknolojileri, astronomi, hukuk, matematik, dilbilim, enerji, sosyal medya, yönetim ve eğitim gibi çok farklı alanlarda yaygın olarak görülmektedir. Bu nedenle bilişim uygulamaları doktora programında verilen derslerin çeşitliliği büyük önem arz etmektedir. Bu kapsamda, diğer derslerdeki konuları kapsamayan farklı konularda dersler verilecektir. Konular bilişim uygulamarına yönelik yeni araştırma faaliyetlerine göre değişiklik arz edebilir. Aside from fields such as computer science, electronics and communications; informatics applications are encountered in very diverse areas such as biology, health, space technologies, astronomy, law, mathematics, linguistics, energy, social media, business and education. Therefore, the diversity of the courses given in the applied informatics doctoral program has great importance. Within this context, courses with different subjects that do not comprise subjects of other courses will be given. Topics may chance depending on the new research activities in applied informatics.",
+  "outcomes": [
+   "1. Bilişim Uygulamalarındaki özel konularda bilgi edinme",
+   "2. Edinilen bilgilerin çeşitli uygulamalarla pekiştirilmesi"
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=610",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=610"
  },
  "BLU 614E": {
   "code": "BLU 614E",
   "name": "Method of Moment in Electroma.",
+  "nameEn": "Method of Moment in Electroma.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -434,17 +912,95 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "",
-  "outcomes": null,
-  "textbooks": [
-   "-"
+  "description": "Moment Yöntemi (MoM)’nin temel kavramları, çeşitli bir, iki ve üç boyutlu sınırdeğer problemlerinin Moment Yöntemi çerçevesinde modellenmesi, MoM algoritma ve programların oluşturulması. Radyasyon ve saçılma . Matris denkleminin çözümü. İnce tel. İki boyutlu problemler. Basic concepts of the Moment Method (Mom), Modeling of some one-, two- and three-dimensional boundary-value problem by using Moment Method, make an algorithms and computer’s program using of the MoM. Radiation and scattering. Solution of matrix equation. Thin wires. Two dimensional problems.",
+  "outcomes": [
+   "1. Uygulamalı elektromanyetikteki karışık sınır değer problemlerinin analiz yöntemlerinin temellerini anlamaya yönelik sistematik ve teorik yaklaşımlar ve bunlara yönelik yeni tekniklerin geliştirilmesi",
+   "2. Özgün yöntem oluşturma süreçleri",
+   "3. Analitik düşünme ve problem çözme yaklaşımları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=614",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "weeklyTopics": [
+   "Hafta 1 · Elektromanyetik problemlerin sınıflandırılması",
+   "Hafta 2 · Moment yöntemine (MoM) giriş, MoM için test ve baz fonksiyonları",
+   "Hafta 3 · İntegral Denklemler: Bessel Fonksiyonlarını İçeren İntegraller ve Seriler.",
+   "Hafta 4 · Hankel Dönüşümleri ve Assosiye Legendre Fonksiyonları.",
+   "Hafta 5 · İlk Temel Problem: Elektrik Yüklü Disk Problemi: Weber Çözümü, Beltrami Simetrik Potansiyelleri.",
+   "Hafta 6 · Yatık Spheroidal Koordinatlarda Problemin Formülasyonu ve Çözümü, Corpon Çözümü, Beltrami yöntemi.",
+   "Hafta 7 · Düal İntegral Denklemlerinin Elemanter Çözümü: Harmonik Fonksiyonların İntegral Gösterilimine Dayalı Yöntemler, Düal İntegral Denklemler.",
+   "Hafta 8 · Titchmarsh Tipinde Düal İntegral Denklemler, Peter Çözümü, Titchmarsh Çözümü.",
+   "Hafta 9 · Nöble Çözümü, Gordon-Copson Çözümü, Düal İntegral Denklemlerin Çözümünden Türetilen Fonksiyonlar.Özel Durumlar: Hankel Çekirdeği, Keyfi Ağırlık Fonksiyonu.",
+   "Hafta 10 · Genel Problem: İntegral Gösterilim Yöntemi, Yaklaşık Çözümler. Simültane Denklemler: Düal Seri Denklemleri.",
+   "Hafta 11 · Üçlü Denklemler: Titchmarsh Üçlü İntegral Denklemleri ve Çözümleri.",
+   "Hafta 12 · Kobayashi Potansiyelleri: Dovnorovich Çözümü, Galin teoremi, Green Çözümü.",
+   "Hafta 13 · Elektrostatik Uygulamaları: Dairesel Levhalı Kondansatör, Love İntegral Denklem Çözümü, Karışık Küresel Geometrilerle İlgili Problemler.",
+   "Hafta 14 · Güncel araştırma problemlerinin tanıtılması. Yeni yöntemlerin tanıtılması."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektromanyetik problemlerin sınıflandırılması"
+   },
+   {
+    "week": 2,
+    "topic": "Moment yöntemine (MoM) giriş, MoM için test ve baz fonksiyonları"
+   },
+   {
+    "week": 3,
+    "topic": "İntegral Denklemler: Bessel Fonksiyonlarını İçeren İntegraller ve Seriler."
+   },
+   {
+    "week": 4,
+    "topic": "Hankel Dönüşümleri ve Assosiye Legendre Fonksiyonları."
+   },
+   {
+    "week": 5,
+    "topic": "İlk Temel Problem: Elektrik Yüklü Disk Problemi: Weber Çözümü, Beltrami Simetrik Potansiyelleri."
+   },
+   {
+    "week": 6,
+    "topic": "Yatık Spheroidal Koordinatlarda Problemin Formülasyonu ve Çözümü, Corpon Çözümü, Beltrami yöntemi."
+   },
+   {
+    "week": 7,
+    "topic": "Düal İntegral Denklemlerinin Elemanter Çözümü: Harmonik Fonksiyonların İntegral Gösterilimine Dayalı Yöntemler, Düal İntegral Denklemler."
+   },
+   {
+    "week": 8,
+    "topic": "Titchmarsh Tipinde Düal İntegral Denklemler, Peter Çözümü, Titchmarsh Çözümü."
+   },
+   {
+    "week": 9,
+    "topic": "Nöble Çözümü, Gordon-Copson Çözümü, Düal İntegral Denklemlerin Çözümünden Türetilen Fonksiyonlar.Özel Durumlar: Hankel Çekirdeği, Keyfi Ağırlık Fonksiyonu."
+   },
+   {
+    "week": 10,
+    "topic": "Genel Problem: İntegral Gösterilim Yöntemi, Yaklaşık Çözümler. Simültane Denklemler: Düal Seri Denklemleri."
+   },
+   {
+    "week": 11,
+    "topic": "Üçlü Denklemler: Titchmarsh Üçlü İntegral Denklemleri ve Çözümleri."
+   },
+   {
+    "week": 12,
+    "topic": "Kobayashi Potansiyelleri: Dovnorovich Çözümü, Galin teoremi, Green Çözümü."
+   },
+   {
+    "week": 13,
+    "topic": "Elektrostatik Uygulamaları: Dairesel Levhalı Kondansatör, Love İntegral Denklem Çözümü, Karışık Küresel Geometrilerle İlgili Problemler."
+   },
+   {
+    "week": 14,
+    "topic": "Güncel araştırma problemlerinin tanıtılması. Yeni yöntemlerin tanıtılması."
+   }
+  ],
+  "textbooks": [
+   "1. Walton C. Gibson, 2014. The Method of Moments in Electromagnetics, CRC Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=614"
  },
  "BLU 621E": {
   "code": "BLU 621E",
   "name": "Computational Neuroscience",
+  "nameEn": "Computational Neuroscience",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -476,6 +1032,78 @@
    "Hafta 13 · İşlevsel bağlantısallık analizi. Çok değişkenli noktasal süreçler. Ağ olabilirliği modeli. Granger nedenselliği.",
    "Hafta 14 · Hesaplamalı sinir biliminde güncel araştırma konuları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sinir sisteminin temel anatomisi. Çevresel ve merkezi sinir sistemi. Duyu sistemleri. Omurilik, beyin sapı ve beyincik. Beyin: korteks ve subkortikal yapılar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sinir sisteminin temel fizyolojisi. Duyu sistemlerinde enerji çevrimi. Dokunma, işitme, görme, tat alma, koku alma, denge duyuları. Sinir lif türleri. Bilginin çevreden merkeze ve merkezden çevreye akışı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sinir hücrelerinin temel anatomisi. Hücre zarı, dendrit, akson ve sinaps. Hücre iskeleti ve hücreler arası bağlantılar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sinir hücrelerinin temel fizyolojisi-1. Hücrenin iç ve dış ortamları, iyonlar, iyon kanalları, Sodyum/Potasyum pompası, zar potansiyeli, Nernst ve Goldman denklemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Sinir hücrelerinin temel fizyolojisi-2. Nörotransmitter-kapılı iyon kanalları. Sinaptik salınım ve post-sinaptik potansiyel.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Sinir hücrelerinin temel fizyolojisi-3. Voltaj-kapılı iyon kanalları, aksiyon potansiyeli, Hodgkin-Huxley denklemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Elektrofizyoloji-1. Hücre dışı sinirsel kayıtlar. Mikroelektrotlar, ön yükselteç, yükselteç, A/D çevrim, süzgeçler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Elektrofizyoloji-2. Aksiyon potansiyelleri, yerel potansiyeller ve kortikal elektroensefalogram (EEG).",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Hücredışı kayıtlarda aksiyon potansiyellerinin tespiti ve gruplanması. Kırpık olasılık dağılımları. En yüksek olabilirlikli kestirim.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Aksiyon potansiyeli katarlarının analizi. Poisson ve Bernoulli değişkenleri. Noktasal süreç kuramı. Homojen olmayan Poisson ve Bernoulli süreçleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Koşullu şiddet işlevi modelleme. Genel doğrusal modeller.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Aksiyon potansiyeli katarlarının benzetimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "İşlevsel bağlantısallık analizi. Çok değişkenli noktasal süreçler. Ağ olabilirliği modeli. Granger nedenselliği.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Hesaplamalı sinir biliminde güncel araştırma konuları.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Eric R. Kandel, James H. Schwartz, Thomas M. Jessell, Steven A. Siegelbaum, A. J. Hudspeth, Principles of Neural Science, Fifth Edition, McGraw Hill Medical Books, 2013.",
    "In All Likelihood: Statistical Modelling And Inference Using Likelihood, 1st Edition, Oxford University Press, 2013",
@@ -483,12 +1111,12 @@
    "P. McCullagh, John A. Nelder, Generalized Linear Models, Chapman & Hall/CRC, 1989",
    "Richard D. Keynes, Nerve and Muscle, Fourth Edition, Cambridge University Press, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=621",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=621"
  },
  "BLU 696E": {
   "code": "BLU 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -532,6 +1160,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -544,7 +1243,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=696"
  }
 }

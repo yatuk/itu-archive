@@ -2,6 +2,7 @@
  "EHN 101": {
   "code": "EHN 101",
   "name": "Mühendislik Etiği",
+  "nameEn": "Engineering Ethics",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -35,17 +36,89 @@
    "Hafta 13 · Mühendislik etiği konusunda vaka çalışmaları",
    "Hafta 14 · Mühendislik etiği konusunda vaka çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma ve dersin içeriğinin tanıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ahlak ve Etik kavramları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Etik sözcüğünün kökeni, anlamı, tarihsel gelişimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Etik Teorileri, Etik Türleri, Etiğin bireysel ve evrensel boyutları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Hak ve Özgürlük, suç ve ceza ve meslek ahlakının tartışılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Etik karar verme süreçleri (Borrom Düğümü), Altın Kurallar, Evrensel Değerler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Mühendis, Mühendislik ve Meslek Etiği",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Mühendislik ve Meslek Etiği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Mühendislik etiğinin ilkeleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Mühendislikte güvenlik ve risk",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Profesyonel Sorumluluk ve işveren otoritesi",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Meslek Birlikleri ve Abet Mühendislik Etiği Kodları",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Mühendislik etiği konusunda vaka çalışmaları",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Mühendislik etiği konusunda vaka çalışmaları",
+    "outcomes": "2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "İpbüker C, Göksel Ç, Deniz R. (2005). Mühendislik Etiği Ders Notu. İTÜ İnşaat Fakültesi, İstanbul.",
    "Fleddermann C. B. (2012). Engineering Ethics, fourth edition. Prentice Hall, Upper Saddle River, New Jersey.",
    "Hüdaverdi T. (2019). Mühendislik Etiği Vaka Örnekleri. İTÜ Maden Fakültesi, İstanbul."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=101"
  },
  "EHN 105": {
   "code": "EHN 105",
   "name": "Bilim ve Müh Bilg Hesap Giriş(C)",
+  "nameEn": "Intr to Sci&Eng Comp (C)",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -78,15 +151,73 @@
    "Hafta 13 · C Veri Yapıları",
    "Hafta 14 · C Önişlemci, Diğer C konuları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "C Programı yazma ve derleme, Program geliştirme fazları, Algoritmalar (Akış Diyagramı ve Pseudocode)"
+   },
+   {
+    "week": 2,
+    "topic": "C Diline Giriş"
+   },
+   {
+    "week": 3,
+    "topic": "C’de yapısal program geliştirme"
+   },
+   {
+    "week": 4,
+    "topic": "C Program Kontrolü"
+   },
+   {
+    "week": 5,
+    "topic": "C Fonksiyonları"
+   },
+   {
+    "week": 6,
+    "topic": "C Fonksiyonları (devam), C dizileri"
+   },
+   {
+    "week": 7,
+    "topic": "C dizileri (devam)"
+   },
+   {
+    "week": 8,
+    "topic": "C işaretçileri"
+   },
+   {
+    "week": 9,
+    "topic": "C işaretçileri (devam), C karakter ve katarlar"
+   },
+   {
+    "week": 10,
+    "topic": "C Biçimlendirilmiş Giriş/Çıkış"
+   },
+   {
+    "week": 11,
+    "topic": "C Yapılar, Bileşimler, Bit Manipülasyonları ve Numaralandırmalar"
+   },
+   {
+    "week": 12,
+    "topic": "C Dosya İşleme"
+   },
+   {
+    "week": 13,
+    "topic": "C Veri Yapıları"
+   },
+   {
+    "week": 14,
+    "topic": "C Önişlemci, Diğer C konuları"
+   }
+  ],
   "textbooks": [
    "C How to Program, (Fifth Edition), Harvey M. Deitel, Paul J. Deitel, Prentice Hall, 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=105",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=105"
  },
  "EHN 111": {
   "code": "EHN 111",
   "name": "Elektronik ve Haberleşme Mühendisliğine Giriş",
+  "nameEn": "Intr.to Electronics& Comm.Eng.",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -123,15 +254,87 @@
    "Hafta 13 · Etikdışı uygulama örnekleri",
    "Hafta 14 · Kalite ve mühendislik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislikte etik kavramına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mühendislik kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Elektroniğin tarihçesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Temel ölçü aletleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sayısal elektronik",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Biyolojik işaretler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Biyolojik algılayıcılar",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Ölçme ve ölçme hataları",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Sayı sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Mantık devreleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Devre Elemanları",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Mühendislik ve etik",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Etikdışı uygulama örnekleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Kalite ve mühendislik",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=111"
  },
  "EHN 121": {
   "code": "EHN 121",
   "name": "Mühendislik Tasarımının Temelleri",
+  "nameEn": "Fundamentals of Eng. Dsgn.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -165,15 +368,87 @@
    "Hafta 13 · Bilgisayarlı tasarım araçları: multisim",
    "Hafta 14 · Multisim ile bir tasarım örneği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik tasarımına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektrik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Elektrik, temel tanımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Devre elemenları, Kirchhoff Yasaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Devre elemenları, basit devrelerin çözümleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Transistor ve diyot",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sayısal Lojik-1- ikili kodlu sayılar, bool cebri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sayısal Lojik-2- lojik tümdevreler",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sayısal Lojik-3- Doğruluk tablosu",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Uygulama notları -1: Onlu sayısı, darbe üreteci",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulama notları -2: kodçözücü, saklayıcı",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgisayarlı tasarım araçları: spice",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgisayarlı tasarım araçları: multisim",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Multisim ile bir tasarım örneği",
+    "outcomes": "1-2-3-5"
+   }
+  ],
   "textbooks": [
    "Raymond B. Landis, Studying Engineering: A Road Map to a Rewarding Career (4th ed.)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=121",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=121"
  },
  "EHN 212": {
   "code": "EHN 212",
   "name": "Elektromagnetik Alanlara Giriş",
+  "nameEn": "Intr.to Electromagnetic Fields",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -207,15 +482,87 @@
    "Hafta 13 · Zamanla değişen alanlar için Faraday ve Ampere yasası",
    "Hafta 14 · Maxwell denklemleri ve elektrodinamiğin temelleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Vektör analiz ve koordinat sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Diferansiyel operatörler, gradyan, diverjans ve rotasyonel, Gauss ve Stokes teoremleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Statik elektrik alanlara giriş, Coulomb yasası",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Boş uzayda elektrostatik alan, alan çizgileri, elektrostatik potansiyel ve iş",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gauss ve Poisson bağıntıları, maddesel cisimlerde statik elektrik alan",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Polarizasyon kavramı, dielektrik ve iletken cisimler, sınır koşulları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Görüntü yöntemi, kapasite ve kondansatör, elektrostatik enerji yoğunluğu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Boşlukta statik magnetik alan, Lorentz kuvveti, kararlı akım ve Biot-Savart yasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Magnetik alanın sirkülasyonu, Amperé yasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Vektör potansiyel ve statik magnetik alanlara ilişkin temel denklemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Maddesel cisimlerde statik magnetik alan ve sınır koşulları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Magnetik devreler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Zamanla değişen alanlar için Faraday ve Ampere yasası",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Maxwell denklemleri ve elektrodinamiğin temelleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "D. K. Cheng, Field and Wave Electromagnetics"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=212"
  },
  "EHN 252": {
   "code": "EHN 252",
   "name": "İşaretler ve Sistemler",
+  "nameEn": "Signals and Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -247,15 +594,87 @@
    "Hafta 13 · Ters z-dönüşümü",
    "Hafta 14 · DZD sistemlerin z-dönüşümleri yardımıyla tanımlanması ve analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, işaret ve sistemlerin sınıflandırılması, temel işaretler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal Zamanla-Değişmez (DZD) sistemler, impuls yanıtı, konvolüsyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "DZD sistemlerin zaman bölgesi analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Diferansiyel ve fark denklemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli-Zamanlı Fourier Serileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrık-Zamanlı Fourier Serileri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sürekli-Zamanlı Fourier Dönüşümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Sürekli-Zamanlı Fourier Dönüşümünün Özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Ayrık-Zamanlı Fourier Dönüşümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "DZD sistemlerin frekans yanıtı",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Örnekleme,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "z-dönüşümü",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Ters z-dönüşümü",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "DZD sistemlerin z-dönüşümleri yardımıyla tanımlanması ve analizi",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Alan Oppenheim, Alan Willsky, Signals And Systems, Prentice Hall, 1996."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=252",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=252"
  },
  "EHN 262": {
   "code": "EHN 262",
   "name": "Elektonik II",
+  "nameEn": "Electronics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -292,15 +711,87 @@
    "Hafta 13 · İşlemsel Kuvvetlendiricilerin Doğrusal ve Doğrusal Olmayan Uygulamaları",
    "Hafta 14 · Çok Katlı Kuvvetlendiricilerin Analizi ve Tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Transistör temelli Kuvvetlendirmenin Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "BJT ve MOSFET’lerin Fiziksel Temelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "BJT Kuvvetlendiricilerin Kutuplanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "MOSFET Kuvvetlendiricilerin Kutuplanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "BJT Kuvvetlendiricilerin Küçük-İşaret Analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "BJT Kuvvetlendiricilerin Küçük-İşaret Analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "MOSFET Kuvvetlendiricilerin Küçük-İşaret Analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kaskot Kuvvetlendiriciler, Akım Aynaları",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Akım Kaynaklar, Transistör Çifti Kuvvetlendiriciler",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Fark Kuvvetlendiricileri",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Aktif Yüklü Devreler",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Fark Kuvvetlendiricilerinde Ortak İşaret Bastırma Oranı ve Ofset Gerilimi",
+    "outcomes": "4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "İşlemsel Kuvvetlendiricilerin Doğrusal ve Doğrusal Olmayan Uygulamaları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Çok Katlı Kuvvetlendiricilerin Analizi ve Tasarımı",
+    "outcomes": "6-9"
+   }
+  ],
   "textbooks": [
    "A.S. Sedra, K.C. Smith, \"Microelectronic Circuits\", 7th edition, Oxford University Press, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=262",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=262"
  },
  "EHN 311": {
   "code": "EHN 311",
   "name": "Elektroniğe Giriş Laboratuarı",
+  "nameEn": "Intr.to Electronics Laboratory",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -330,15 +821,87 @@
    "Hafta 13 · İşlemsel kuvvetlendiricilerin doğrusal olmayan uygulamaları-II",
    "Hafta 14 · İşlemsel kuvvetlendiricilerin doğrusal olmayan uygulamaları-III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laboratuvara kayıt ve deney gruplarının oluşturulması",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 2,
+    "topic": "Besleme gerilimi düzenleri-I",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 3,
+    "topic": "Besleme gerilimi düzenleri-II",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 4,
+    "topic": "BJT ve MOSFET'in DC özelliklerinin çıkarılması-I",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 5,
+    "topic": "BJT ve MOSFET'in DC özelliklerinin çıkarılması-II",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 6,
+    "topic": "Tranzistorlu kuvvetlendiriciler-I",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 7,
+    "topic": "Tranzistorlu kuvvetlendiriciler-II",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 8,
+    "topic": "İşlemsel kuvvetlendiricilerin doğrusal uygulamaları-I",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 9,
+    "topic": "İşlemsel kuvvetlendiricilerin doğrusal uygulamaları-II",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 10,
+    "topic": "Lojik kapılar ve ikili devreler-I",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 11,
+    "topic": "Lojik kapılar ve ikili devreler-II",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 12,
+    "topic": "İşlemsel kuvvetlendiricilerin doğrusal olmayan uygulamaları-I",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 13,
+    "topic": "İşlemsel kuvvetlendiricilerin doğrusal olmayan uygulamaları-II",
+    "outcomes": "1-1"
+   },
+   {
+    "week": 14,
+    "topic": "İşlemsel kuvvetlendiricilerin doğrusal olmayan uygulamaları-III",
+    "outcomes": "1-1"
+   }
+  ],
   "textbooks": [
    "Elektroniğe Giriş Laboratuvar Deney Föyleri"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=311"
  },
  "EHN 313": {
   "code": "EHN 313",
   "name": "Elektromanyetik Dalgalar",
+  "nameEn": "Electromagnetic Waves",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -373,15 +936,87 @@
    "Hafta 13 · Dikdörtgen kesitli dalga kılavuzlarının analizi.",
    "Hafta 14 · Daire kesitli dalga kılavuzlarının analizi. Bessel Fonksiyonları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Elektromagnetik teorinin genel amaç ve prensipleri. Maxwell denklemleri. Alan büyüklüklerinin ve kaynak terimlerinin tanıtılması. Sınır koşulları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Zamana bağlı dalga denklemi. Bir boyutlu halde zamana bağlı dalga denkleminin genel çözümü. Ortam parametreleri ve dalganın boşlukta yayılma hızı. Elektromagnetik dalgaların diğer dalgalarla (akustik, elastik vb.) kıyaslanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Zamanda harmonik (Monokromatik) dalgalar. Genlik, faz, faz hızı, yayılma hızı, açısal frekans, frekans, periyot dalga boyu, dalga sayısı kavramları. Elektromagnetik spektrum ve dalgaların kullanım alanlarına göre sınıflandırılması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kompleks (Fazör) Gösterilim. Kompleks halde Maxwell denklemleri. Helmholtz (indirgenmiş dalga) denklemi ve bir boyutlu halde genel çözüm. Düzlem dalga kavramı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Düzlemsel Dalgalar. Yayılma yönü ve eşfaz yüzeyleri. Kayıplı ortamda düzlem dalga yayılımı Kompleks dalga sayısı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İki ve üç boyutlu halde düzlem dalga çözümleri. Polarizasyon. Poynting vektörü, Poynting teoremi. Alan vektörleri ve Poynting vektörü arasındaki ilişkiler.",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem dalgaların yüzeylerden yansıma ve kırılması. Dik geliş hali",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Düzlem dalgaların yansıma ve kırılması. Eğik geliş hali. TE ve TM polarizasyonlar. Snell Yasası.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Düzlem dalgaların yüzeylerden yansıma ve kırılması. Yansıma kırılma olayının ortam parametrelerine bağlılığının analizi. Tam yansıma. Brewster açısı. Yüzey dalgaları.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Düzlem dalgaların yüzeylerden yansıma ve kırılması. Mükemmel iletken yüzeyden yansıma. Tabakalı ortamlarda dalga yayılımı.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Kılavuzlanmış dalgaların genel prensipleri. Kapalı ortamda Maxwell denklemleri. Paralel plakalı dalga kılavuzu. Mod kavramı.",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 12,
+    "topic": "Silindirik Dalga Kılavuzları. TE, TM ve TEM Modlar. Özdeğer Problemi. Kesim Frekansı. Yayılan ve Sönen Modlar. Dispersif Ortamlar, Grup ve faz hızı.",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 13,
+    "topic": "Dikdörtgen kesitli dalga kılavuzlarının analizi.",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 14,
+    "topic": "Daire kesitli dalga kılavuzlarının analizi. Bessel Fonksiyonları.",
+    "outcomes": "1-7"
+   }
+  ],
   "textbooks": [
    "Ders Kitabı (Textbook) D. K. Cheng, Field and Wave Electromagnetics, 1991"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=313"
  },
  "EHN 314": {
   "code": "EHN 314",
   "name": "Elektronik Elemanları",
+  "nameEn": "Electronic Devices",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -395,12 +1030,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=314",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=314"
  },
  "EHN 316": {
   "code": "EHN 316",
   "name": "Electronic Devices",
+  "nameEn": "Electronic Devices",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -437,15 +1072,87 @@
    "Hafta 13 · MOSFETlerdeki ikincil etkiler",
    "Hafta 14 · Optik cihazların fiziği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel yarıiletken fiziği ve kuantum mekanik bilgisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji bantları ve yarıiletkenlerdeki yük taşıyıcılar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yarıiletkenlerde ilave yük taşıyıcıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "PN-eklem kuramı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Diyotlarda süreklilik denklemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Diyotlarda ikincil etkiler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Metal-yarıiletken eklem kuramı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "BJT çalışma ilkesi – BJT kutuplanması",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 9,
+    "topic": "BJT cihaz modelleri – Ebers Moll modeli",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "BJTlerde ikincil etkiler",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "MOS kapasitesi",
+    "outcomes": "2-3-8"
+   },
+   {
+    "week": 12,
+    "topic": "MOSFET, MESFET, HEMT çalışma ilkesi",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 13,
+    "topic": "MOSFETlerdeki ikincil etkiler",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Optik cihazların fiziği",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Ben G. Streetman, Sanjay Banerjee, “Solid State Electronic Devices”, 7th Int. edition, Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=316",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=316"
  },
  "EHN 317": {
   "code": "EHN 317",
   "name": "Otomatik Kontrol Sistemleri",
+  "nameEn": "Control Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -479,16 +1186,88 @@
    "Hafta 13 · Kontrolör yapıları ve PID kontrolör",
    "Hafta 14 · Frekans tanım bölgesi analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İşaretler ve sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geri-besleme, Sistemlerde modelleme ve transfer fonksiyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Elektriksel sistemlerin modellenmesi,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Mekanik ve elektromekanik sistemlerin modellenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Zaman tanım bölgesi ölçütleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Zaman tanım bölgesi ölçütleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kararlılık analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kararlılık analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Köklerin yer eğrisi yöntemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Köklerin yer eğrisi yöntemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Kontrolör yapıları ve PID kontrolör",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Kontrolör yapıları ve PID kontrolör",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Kontrolör yapıları ve PID kontrolör",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Frekans tanım bölgesi analizi",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "N. S. NISE, 2004, CONTROL SYSTEMS ENGINEERING, JOHN WILEY, ISBN:978- 04716758",
    "GOLNARAGHI F., KUO B.C, 2009, AUTOMATIC CONTROL SYSTEMS, WILEY, ISBN:978-04700489."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=317",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=317"
  },
  "EHN 334": {
   "code": "EHN 334",
   "name": "Rastgele İşaretler ve Gürültü",
+  "nameEn": "Random Signals and Noise",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -519,15 +1298,87 @@
    "Hafta 13 · Markov süreçleri",
    "Hafta 14 · Kalman süzgeci, Martingale süreçleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Olasılık: Temel kavramlar, Koşullu olasılık, Önemli rastgele değişkenler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Beklenti, Merkezi moment, Varyans ve Karakteristik Fonksiyon, Moment üreteç fonksiyonu, Chebyshev eşitsizliği, Çok boyutlu (vektör) rastgele değişkenleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Koşullu dağılımlar, Rastgele değişkenler üzerinde dönüşümler, Çok boyutlu Gauss rastgele değişkeni, Rastgele değişkenlerinin toplamları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Merkezi limit teoremi, Büyük sayılar kanunu, Ratsgele diziler, Yakınsaklık",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Rastgele süreçlerin tanımı, istatistiksel özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ortalama, özilişki, çapraz ilişki fonksiyonları, Durağan süreçler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Ergodiklik, Güç spektral yoğunluğu, Durağan rastgele işaretlerin bant genişliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Beyaz gürültü, Doğrusal sistemlerin durağan rastgele süreçlere yanıtı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Çoklu durağan rastgele işaretler, çapraz güç spektral yoğunluk fonksiyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Uyumlu süzgeç, Wiener süzgeci",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Gauss rastgele Süreci",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Poisson, Rastgele Telgraf, Wiener süreçleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Markov süreçleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Kalman süzgeci, Martingale süreçleri",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Alberto Leon-Garcia, Probability, Statistics, and Random Processes for Electrical Engineering, Third Ed., 2009 Pearson Prentice Hall"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=334",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=334"
  },
  "EHN 351": {
   "code": "EHN 351",
   "name": "Analog Haberleşme",
+  "nameEn": "Analog Communications",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -562,15 +1413,87 @@
    "Hafta 13 · Frekans Demodülasyonu",
    "Hafta 14 · Stereo FM, Radyo ve TV Yayıncılığı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Haberleşmede Genel Kavramlar, Modülasyon, İletişimdeki Kısıtlamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Spektral Analiz (Fourier Serileri ve Fourier Dönüşümleri)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Spektral Analiz (Devam), Spektral Yoğunluk II",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İşaretlerin Doğrusal Sistemlerden İletimi, Bozulma, Süzgeçler",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Genlik Modülasyonu (GM), Çift Yan Band (ÇYB) Modülasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Tek Yan Band (TYB) Modülasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Artık Yan Band (AYB) Modülasyonu, Genlik Modülatörleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Genlik Modülatörleri (Devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Demodülasyon, Süperheterodin Alıcılar, Frekans Bölmeli Çoğullama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Açı Modülasyonu (Frekans Modülasyonu-FM, Faz Modülasyonu-PM)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Frekans Modülasyonu (Devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Frekans Modülatörleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Frekans Demodülasyonu",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Stereo FM, Radyo ve TV Yayıncılığı",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Communication Systems, J.G.Proakis and M.Salehi, Pearson, 2nd Edition, 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=351"
  },
  "EHN 352": {
   "code": "EHN 352",
   "name": "Sayısal Haberleşme",
+  "nameEn": "Digital Communications",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -584,7 +1507,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=352",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EHN&dersNo=352"
  }
 }

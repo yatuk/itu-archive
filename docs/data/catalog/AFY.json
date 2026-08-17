@@ -2,6 +2,7 @@
  "AFY 511E": {
   "code": "AFY 511E",
   "name": "Afet ve Acil Durum Yönetiminin Esasları",
+  "nameEn": "Principles of Disaster and Emergency Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -36,15 +37,86 @@
    "Hafta 13 · Motivasyon ve Programın Güncelleştirilmesi",
    "Hafta 14 · Ödevlerin Sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Afet ve Acil Durum",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Afet ve Acil Durum Yönetiminin Esasları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Afet ve Acil Durum Yönetiminin Dört Evresi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Afet ve Acil Durum Yönetimi Merkezi ve Saha Komuta Merkezleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bütünleşik Afet ve Acil Durum Yönetimi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Afet ve Acil Durum Yönetiminde Planlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Afet ve Acil Durum Yönetiminde Koordinasyon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Afet ve Acil Durum Yönetiminde Karar Verme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Hazırlık, Zarar Azaltma, Müdahale ve İyileştirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Tatbikat Türleri, Tasarımı ve Değerlendirmesi",
+    "outcomes": "2-5-7"
+   },
+   {
+    "week": 11,
+    "topic": "Teknik Gezi",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 12,
+    "topic": "Afet ve Acil Durum Yöneticileri, Liderlik, İnsan Kaynakları Yönetimi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 13,
+    "topic": "Motivasyon ve Programın Güncelleştirilmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Ödevlerin Sunumu"
+   }
+  ],
   "textbooks": [
    "ders notları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=511"
  },
  "AFY 512": {
   "code": "AFY 512",
   "name": "Zarar Azaltmanın Esasları ve Uygulamaları",
+  "nameEn": "Principles and Practices of Hazard Mitigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -82,6 +154,77 @@
    "Hafta 13 · Rüzgar Etkilerine Karşı Zarar Azaltma",
    "Hafta 14 · Önek Uygulamalar, Ödevlerin Sunumu ve Sınav II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Afetler ve Zarar azaltmanın önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Afetler ve yoksulluk, mağduriyet, zarargörebilirlik kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Risklere dayalı zarar azaltma-odaklı afet yönetimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Zarar Azaltma Çalışmalarındaki Sorumlular SEÇTİK Kriterleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Zarar Azaltma Planlaması ve örnek uygulamalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kapasiteyi Arttırmaya yönelik Risk/Zarar Azaltma Çalışmaları (İşletmeler, yerel yönetimler)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Yapısal Olmayan Zarar Azaltma Önlemleri (ev-işyeri-hastane-müze vb)",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Bilişim Teknolojilerinde Zarar Azaltma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Örnek uygulamalar, Sınav I",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Depreme Karşı Zarar Azaltma",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Yapısal Güçlendirme, Kentsel Dönüşüm",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Yangına Karşı Zarar Azaltma",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Rüzgar Etkilerine Karşı Zarar Azaltma",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Önek Uygulamalar, Ödevlerin Sunumu ve Sınav II"
+   }
+  ],
   "textbooks": [
    "Kadıoğlu M., Özdamar, E., Afet Zararlarını Azaltmanın Temel İlkeleri, JICA Yayınları, Ankara (2008).",
    "Kadıoğlu M., Özdamar, E., Afet Zararlarını Azaltmanın Temel İlkeleri, JICA Yayınları, Ankara (2008).",
@@ -94,12 +237,12 @@
    "Afetlere İlişkin Acil Yardım Teşkilatı ve Planlama Esaslarına Dair Yönetmelik, TC Bayındırlık Bakanlığı, Afet İşleri Genel Müdürlüğü, Ankara (1997).",
    "Afetlere İlişkin Acil Yardım Teşkilatı ve Planlama Esaslarına Dair Yönetmelik, TC Bayındırlık Bakanlığı, Afet İşleri Genel Müdürlüğü, Ankara (1997)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=512",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=512"
  },
  "AFY 521": {
   "code": "AFY 521",
   "name": "Kriz Yönetimi, İyileştirme ve İş Sürekliliği",
+  "nameEn": "Crisis Management, Disaster Recovery and Business Continuity",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -141,6 +284,77 @@
    "Hafta 13 · İşletmeler için iyileştirme",
    "Hafta 14 · İş etiği ve afet yönetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Afetler, kriz ve İş sürekliliğinin önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Acil durum ve afet yönetimi açısından özel sektör",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Afet zararlarının azaltılması ve işletmelerin kapasitesinin arttırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Risk yönetimi süreçleri (sorumluluklar, kriterler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tehlike ve risklerin belirlenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "İş sürekliliği planlaması I",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "İş sürekliliği planlaması II",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İşletmelerde risk odaklı hazırlık programları, tatbikatlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "İşletmelerde risk odaklı hazırlık programları, tatbikatlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kamu-özel sektör ilişkisi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Risk odaklı kriz yönetimi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Müdahale yönetimi, operasyonları",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 13,
+    "topic": "İşletmeler için iyileştirme",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 14,
+    "topic": "İş etiği ve afet yönetimi"
+   }
+  ],
   "textbooks": [
    "Laye, John. (2002). Avoiding Disaster: How to Keep Your Business Going When Catastrophe Strikes. Hoboken, NJ. John Wiley and Sons",
    "Laye, John. (2002). Avoiding Disaster: How to Keep Your Business Going When Catastrophe Strikes. Hoboken, NJ. John Wiley and Sons.",
@@ -151,12 +365,12 @@
    "Harrald, John R. “A Strategic Framework for Corporate Crisis Management.” The International. Lerbinger, Otto. The Crisis Manager – Facing Risk and Responsibility. Mahwah, NJ: Lawrence Erlbaum Associates., 1997.",
    "Harrald, John R. “A Strategic Framework for Corporate Crisis Management.” The International. Lerbinger, Otto. The Crisis Manager – Facing Risk and Responsibility. Mahwah, NJ: Lawrence Erlbaum Associates., 1997"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=521"
  },
  "AFY 522": {
   "code": "AFY 522",
   "name": "Yangın Risk ve Acil Durum Yönetimi",
+  "nameEn": "Fire Risks and Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -188,18 +402,89 @@
    "Hafta 13 · Örnek Olayların İrdelenmesi",
    "Hafta 14 · Yangın ile İlgili Kanunlar, Tüzükler, Yönetmelikler ve Diğer Mevzuat"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Genel Yangın Bilgileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yangın Çeşitleri, Yangın ile Mücadele",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yangın Söndürme Mekanizmaları ve Prensipleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Yangın Sonucu Oluşabilecek Tehlikeler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yangınların İnsan Sağlığına ve Çevreye Olan Zararlı Etkileri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yangın Tedbirleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yangın Algılama ve Uyarı Sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yapısal Riskler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yangın Risk Yönetimi (Yarıyıl Sınavı)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Yangın Risk Yönetimi Planlaması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yangınlarda Tahliye Planlaması ve Yönetimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Özel Yangınlar ve Müdahale Yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Örnek Olayların İrdelenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yangın ile İlgili Kanunlar, Tüzükler, Yönetmelikler ve Diğer Mevzuat"
+   }
+  ],
   "textbooks": [
    "Firefighting Principles and Practices, William E. Clark, Pennwell Corp, 2nd edition, 1991, ISBN-13: 978-0878149209, USA",
    "Strategic Concepts in Fire Fighting, Edward P. McAniff, McAniff Associates, 1st edition, ASIN: B0006CEB0W, NY, USA, 1974",
    "Practical Fire and Arson Investigation, John J. O'Connor, Elsevier, NY, USA, 1987 The Scientific Investigation of Fire Causes, J. Thatcher, Lawbook Company, Sydney, AUS, 2000",
    "Principles of Fire Protection, Cote, A.E., and P. Bugbee, 2nd Edition, National Fire Protection Association, Quincy, Massachusetts, 1988"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=522",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=522"
  },
  "AFY 531E": {
   "code": "AFY 531E",
   "name": "Risk Yönetiminin Esasları ve Planlama",
+  "nameEn": "Principles of Risk Management and Planning",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -231,15 +516,87 @@
    "Hafta 13 · Planların test edilmesi ve güncellenmesi",
    "Hafta 14 · Vaka çalışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tehlike risk yönetimi modellerine bakiş",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Tehlike ve tehlike profilinin belirlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Mağduriyet ve etkilerin belirlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Risk değerlendirme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Risklerin önceliklerinin belirlenmesi ve derecelendirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Risk azaltma önerilerinin belirlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Risk/zarar azaltma planlamasına hazırlık ve başlatılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Risk odaklı karar verme",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Risk odaklı müdahale organizasyonu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kamu-özel işbirliğinin kurulması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Risk yönetimi planının yürütülmesi ve uygulanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Planların test edilmesi ve güncellenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Vaka çalışması",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "ders notları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=531",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=531"
  },
  "AFY 542": {
   "code": "AFY 542",
   "name": "Acil Durum Yönetiminde İletişim Becerileri ve Yön.Kar.",
+  "nameEn": "Managerial Decision Making and Communication Skills in Disaster Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -271,15 +628,87 @@
    "Hafta 13 · Örneklemeler ve Uygulamalar",
    "Hafta 14 · Acil Durum Basın ve Halkla İlişkilerin Planlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Acil Durum Yönetimi Basın ve Halkla İlişkiler Sorumlusu/BHS",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Basın ve Halkla İlişkiler Sorumlusu/BHS Görevleri, Temel Beceriler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Medya Çeşitleri, İhtiyaçları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Acil Durum Yönetiminde Medyanın Rolü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yazma Becerilerinin Geliştirilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gruplara Konuşma Yapılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Haber Röportajı, Basın Bildirileri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Basın Toplantıları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Vücut Dili (Yarıyıl Sınavı)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Bilinçlendirme Kampanyaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Basının Yazılı, İşitsel ve Görsel İhtiyaçları, Brifingler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Acil Durum Yayın Sistemi, Ortak Bilgilendirme Merkezi/Sistemi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Örneklemeler ve Uygulamalar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Acil Durum Basın ve Halkla İlişkilerin Planlanması",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "ders notları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=542",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=542"
  },
  "AFY 561E": {
   "code": "AFY 561E",
   "name": "Afete Dayanıklı Yerleş.Yapıl.",
+  "nameEn": "Building Disaster Resilient Communities",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -313,15 +742,87 @@
    "Hafta 13 · Doğal ve teknolojik tehditlere karşı direncin sağlanmasında ulusal stratejiler",
    "Hafta 14 · Toplumsal dayanıklı programlarının, gelişim süreçlerinin, uygulamalarının, başarı ölçütlerinin, geri beslemelerinin, başarılarının ve uzun vadede somut sonuçlarının değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Şehirsel ve bölgesel kalkınma, sürdürülebilirlik, akıllı (sağlıklı) büyüme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Doğal ve teknolojik tehlikelerin anlaşılması ve değerlendirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Şehir ve bölge ölçeğinde hasar görebilirliği tanımlamak",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Dayanıklı kavramı, kökeni, tartışmalar, değerlendirme parametreleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Şehirsel alanlarda fiziksel ve çevresel dayanıklı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Sosyo-ekonomik ve yönetimsel dayanıklı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Risk iletişimi, risk algılama, toplum katılımı, toplum bilincini artırma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kamu ve özel sektör işbirliği, yatırımlar, rol ve sorumluluklar, yasal çerçeve",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Zarar azaltma planları, güçlendirme, tehdit altındaki mülklerin yer değişimi, maddi imkanlar, afet sonrası kalkınma planları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Zarar azaltma süreci kapsamında tehdit altında bulunan şehirsel alanlarda dayanıklı seviyesinin değerlendirilmesi (risk yönetiminin birinci döngüsü)",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Afet sonrası yeniden yapılanma sürecinde şehirsel alanlarda dayanıklı seviyesinin değerlendirilmesi (risk yönetiminin ikinci döngüsü)",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Toplumsal direncin kalkınma planlarına dahil edilmesinde yerel stratejiler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Doğal ve teknolojik tehditlere karşı direncin sağlanmasında ulusal stratejiler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Toplumsal dayanıklı programlarının, gelişim süreçlerinin, uygulamalarının, başarı ölçütlerinin, geri beslemelerinin, başarılarının ve uzun vadede somut sonuçlarının değerlendirilmesi",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "ders notları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=561",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=561"
  },
  "AFY 563E": {
   "code": "AFY 563E",
   "name": "Deprem Zararlarının Yönetimi",
+  "nameEn": "Earthquake Hazard Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -355,15 +856,87 @@
    "Hafta 13 · Deprem zararlarını azaltılmasına yönelik yasalar",
    "Hafta 14 · Deprem zararlarını yönetme örneği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Levha Tektoniği ve Levha hareketleri, Fay Zonları ve Deprem Kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Büyüklük, Şiddet, Deprem ve ikincil tehlikelerin belirlenmesi ve Sismik mikrobölgeleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Depremin etkileri ve mağduriyet, deprem riski",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Risk-odaklı Bütünleşik Afet Yönetimi, 4K ve depremlerle başedebilme, kapasite arttırma, TAME, Yerleşim Unitesi Tehlike Avı",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Olası Hasar ve ihtiyaçlarının tespiti (RADIUS methodu)",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yerleşimlerde kapsamlı tehlike analzi ve zarar azaltma planlaması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Şehir planlama ile deprem zararları azaltma politikaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Örnek vaka çalışmalarının tartışılması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Deprem mühendisliği ve sismik parametreler ve kaynaklar",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Deprem hasarları ve yapılar açısından değerlendirme ölçütleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Deprem sonrasında müdaheledeki hasar tespit çalışmaları",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Deprem zararlarının yönetilmesindeki kaynaklar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Deprem zararlarını azaltılmasına yönelik yasalar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Deprem zararlarını yönetme örneği",
+    "outcomes": "1-6"
+   }
+  ],
   "textbooks": [
    "ders notları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=563",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=563"
  },
  "AFY 564": {
   "code": "AFY 564",
   "name": "Endüstri ve Kritik Altyapı Tesislerinde Natech Risk Yönetimi",
+  "nameEn": "Natech Risk Management in Industry and Critical Infrastructures",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -377,12 +950,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=564",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=564"
  },
  "AFY 567E": {
   "code": "AFY 567E",
   "name": "AfetYön.Erk.Uy.veAcl.Müd.Sist.",
+  "nameEn": "Ear.War.Rap.Res.Sys.inDis.Mng.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -396,12 +969,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=567",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=567"
  },
  "AFY 583E": {
   "code": "AFY 583E",
   "name": "Afet ve Acil Durum Yönetiminde Özel Konular",
+  "nameEn": "Spe.Top.in Disas.&Emerg.Manag.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -415,12 +988,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=583",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=583"
  },
  "AFY 596": {
   "code": "AFY 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -456,6 +1029,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
@@ -463,7 +1107,6 @@
    "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AFY&dersNo=596"
  }
 }

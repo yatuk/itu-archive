@@ -2,6 +2,7 @@
  "MUH 201E": {
   "code": "MUH 201E",
   "name": "Dinamik",
+  "nameEn": "Dynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -36,15 +37,87 @@
    "Hafta 13 · Katı cisimlerin kinetiği",
    "Hafta 14 · Parçacıkların titreşimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel tanımlar, Parçacığın kinematiği: Doğrusal hareket",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal hareket, Eğrisel hareket: Dik koordinat takımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Eğrisel hareket (Teğetsel-normal koordinatlar)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Eğrisel Hareket (Teğetsel-normal k., Silindirik koordinatlar)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Mutlak bağımlı hareket, Ötelenen eksenler ile bağıl hareket",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Parçacık kinetiği: Newton yasaları, Dik koordinatlarda hareket denklemleri",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 7,
+    "topic": "Teğetsel-normal ve silindirik koordinatlarda hareket denklemleri",
+    "outcomes": "1-2-6-7"
+   },
+   {
+    "week": 8,
+    "topic": "Silindirik koordinatlarda hareket denklemleri, İş ve enerji",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 9,
+    "topic": "İş ve enerji ilkesi, Korunumlu kuvvetler, Enerjinin korunumu",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 10,
+    "topic": "İmpuls ve momentum, Çarpışma",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 11,
+    "topic": "Çarpışma, Katı cisimlerin kinematiği",
+    "outcomes": "1-2-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Katı cisimlerin kinematiği",
+    "outcomes": "1-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Katı cisimlerin kinetiği",
+    "outcomes": "1-4-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Parçacıkların titreşimi",
+    "outcomes": "1-4-6-7"
+   }
+  ],
   "textbooks": [
    "Engineering Mechanics-Dynamics( 12th Edition), R.C. Hibbeler, Pearson Prentice Hall, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=201"
  },
  "MUH 211": {
   "code": "MUH 211",
   "name": "Ayrık Matematik",
+  "nameEn": "Discrete Mathematics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -80,15 +153,87 @@
    "Hafta 13 · Sonlu durum makinaları ve otomatları",
    "Hafta 14 · Turing makinası"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İspat yöntemleri ve tümevarım ile ispat",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fonksiyonların büyümesi ve algoritma analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Algoritma analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yineleme bağıntıları ve çözümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Geren fonsiyonlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Üslü geren Fonsiyonlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Sayılar teorisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Graflara giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Euler ve Hamilton çevrimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "En kısa yol algoritması, düzlemsel graflar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Ağaçlar, izomorfizm, Huffman, karar ağaçları, örten ağaclar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Boole cebri ve kombinatoriyal devreler",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Sonlu durum makinaları ve otomatları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Turing makinası",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Discrete Mathematics, R. Johnsonbaugh VII. Ed. 2009 Pearson"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=211"
  },
  "MUH 211E": {
   "code": "MUH 211E",
   "name": "Ayrık Matematik",
+  "nameEn": "Discrete Mathematics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -124,15 +269,87 @@
    "Hafta 13 · Sonlu durum makinaları ve otomatları",
    "Hafta 14 · Turing makinası"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İspat yöntemleri ve tümevarım ile ispat",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fonksiyonların büyümesi ve algoritma analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Algoritma analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yineleme bağıntıları ve çözümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Geren fonsiyonlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Üslü geren Fonsiyonlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Sayılar teorisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Graflara giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Euler ve Hamilton çevrimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "En kısa yol algoritması, düzlemsel graflar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Ağaçlar, izomorfizm, Huffman, karar ağaçları, örten ağaclar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Boole cebri ve kombinatoriyal devreler",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Sonlu durum makinaları ve otomatları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Turing makinası",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Discrete Mathematics, R. Johnsonbaugh VII. Ed. 2009 Pearson"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=211"
  },
  "MUH 212": {
   "code": "MUH 212",
   "name": "Veri Yapıları",
+  "nameEn": "Data Structures",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -165,15 +382,87 @@
    "Hafta 13 · Açık ve kapalı hasing teknikleri, çizitlerin gösterimi",
    "Hafta 14 · Çizitlerin taranması, topolojik sıralama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve C programla dilinin özeti",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "C programla dilinin özeti, diziler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bağlı listeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bağlı listeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yığıtlar ve kuyruklar, C dilinde özyineli fonksiyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "İkili arama ağaçları ve ağaçların taranması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "İkili arama ağaçlarında performans analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Dengeli ikili ağaçları, AVL ağacı ve AA ağacı",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Dengeli ikili ağaçları, AVL ağacı ve AA ağacı",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Heap Ağaçları ve Heap sıralama algoritması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Genel ağaçlar ve B-ağaçları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Hash fonksiyonları ve Hash tabloları",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Açık ve kapalı hasing teknikleri, çizitlerin gösterimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Çizitlerin taranması, topolojik sıralama",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "M. A. Weiss, \"Data Structures and Algorithm Analysis\", 2nd Ed., Adisson Wesley, 1997."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=212"
  },
  "MUH 212E": {
   "code": "MUH 212E",
   "name": "Veri Yapıları",
+  "nameEn": "Data Structures",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -206,15 +495,87 @@
    "Hafta 13 · Açık ve kapalı hasing teknikleri, çizitlerin gösterimi",
    "Hafta 14 · Çizitlerin taranması, topolojik sıralama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve C programla dilinin özeti",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "C programla dilinin özeti, diziler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bağlı listeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bağlı listeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yığıtlar ve kuyruklar, C dilinde özyineli fonksiyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "İkili arama ağaçları ve ağaçların taranması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "İkili arama ağaçlarında performans analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Dengeli ikili ağaçları, AVL ağacı ve AA ağacı",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Dengeli ikili ağaçları, AVL ağacı ve AA ağacı",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Heap Ağaçları ve Heap sıralama algoritması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Genel ağaçlar ve B-ağaçları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Hash fonksiyonları ve Hash tabloları",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Açık ve kapalı hasing teknikleri, çizitlerin gösterimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Çizitlerin taranması, topolojik sıralama",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "M. A. Weiss, \"Data Structures and Algorithm Analysis\", 2nd Ed., Adisson Wesley, 1997."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=212"
  },
  "MUH 302": {
   "code": "MUH 302",
   "name": "Sürekli Ortamlar Mekaniği",
+  "nameEn": "Continuum Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -250,15 +611,87 @@
    "Hafta 13 · Akışkanların bünye denklemleri; Hidrostatik, Newtonyen viskoz akışkanlar, Sıkışmaz akışkanlar için Navier-Stokes denklemleri",
    "Hafta 14 · Silindirik koordinatlarda Navier-Stokes denklemleri, yörünge, akım çizgisi, kararlı, kararsız, laminer ve türbülanslı akım, Düzlem Coutte akımı, Düzlem Poiseuille akımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İndis notasyonu ve toplama uylaşımı, vektör ve tansör işlemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Koordinat sistemleri arasındaki dönüşümler, silindirik koordinatlarda operatörler, sonsuz küçük şekil değiştirme, şekil değiştirme tansörleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Şekil değiştirme tansörleri, Germe, uzunluk, açı ve hacim değişimleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Şekil değiştirme değişmezleri, Asal şekil değiştirme ve doğrultular, Bazı şekil değiştirme örnekleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli ortamın kinematiği; maddesel ve uzaysal koordinatlar, maddesel türev, hız, ivme, şekil değiştirme hızı ve çevri tansörleri, hacim integralinin kinematiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gerilme vektörü, gerilme tansörü, asal gerilmeler, en büyük kayma gerilmesi, Bazı integral teoremler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Uygunluk koşulları, kütlenin, momentumun, momentumun momentinin ve enerjinin korunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Piola-Kirchhoff gerilme tansörleri, Maddesel koordinatlarda hareket ve enerji denklemleri, Entropi eşitsizliği",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Bünye denklemleri; Elastik katı, lineer elastik katı. Elastik ortamlar için Navier denklemleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Silindirik koordinatlarda Navier denklemleri, Basit uzama, Bir silindirin burulması",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Düzlem elastik dalgalar, Sonsuz plağın titreşimi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Sıkışmaz izotrop katının basit uzaması, Sıkışmaz izotrop katı silindirin burulma ve uzaması",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Akışkanların bünye denklemleri; Hidrostatik, Newtonyen viskoz akışkanlar, Sıkışmaz akışkanlar için Navier-Stokes denklemleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Silindirik koordinatlarda Navier-Stokes denklemleri, yörünge, akım çizgisi, kararlı, kararsız, laminer ve türbülanslı akım, Düzlem Coutte akımı, Düzlem Poiseuille akımı",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Lai M., Krempl E., Ruben D., Introduction to Continuum Mechanics, Elsevier, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=302"
  },
  "MUH 302E": {
   "code": "MUH 302E",
   "name": "Sürekli Ortamlar Mekaniği",
+  "nameEn": "Continuum Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -294,15 +727,87 @@
    "Hafta 13 · Akışkanların bünye denklemleri; Hidrostatik, Newtonyen viskoz akışkanlar, Sıkışmaz akışkanlar için Navier-Stokes denklemleri",
    "Hafta 14 · Silindirik koordinatlarda Navier-Stokes denklemleri, yörünge, akım çizgisi, kararlı, kararsız, laminer ve türbülanslı akım, Düzlem Coutte akımı, Düzlem Poiseuille akımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İndis notasyonu ve toplama uylaşımı, vektör ve tansör işlemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Koordinat sistemleri arasındaki dönüşümler, silindirik koordinatlarda operatörler, sonsuz küçük şekil değiştirme, şekil değiştirme tansörleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Şekil değiştirme tansörleri, Germe, uzunluk, açı ve hacim değişimleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Şekil değiştirme değişmezleri, Asal şekil değiştirme ve doğrultular, Bazı şekil değiştirme örnekleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli ortamın kinematiği; maddesel ve uzaysal koordinatlar, maddesel türev, hız, ivme, şekil değiştirme hızı ve çevri tansörleri, hacim integralinin kinematiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gerilme vektörü, gerilme tansörü, asal gerilmeler, en büyük kayma gerilmesi, Bazı integral teoremler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Uygunluk koşulları, kütlenin, momentumun, momentumun momentinin ve enerjinin korunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Piola-Kirchhoff gerilme tansörleri, Maddesel koordinatlarda hareket ve enerji denklemleri, Entropi eşitsizliği",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Bünye denklemleri; Elastik katı, lineer elastik katı. Elastik ortamlar için Navier denklemleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Silindirik koordinatlarda Navier denklemleri, Basit uzama, Bir silindirin burulması",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Düzlem elastik dalgalar, Sonsuz plağın titreşimi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Sıkışmaz izotrop katının basit uzaması, Sıkışmaz izotrop katı silindirin burulma ve uzaması",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Akışkanların bünye denklemleri; Hidrostatik, Newtonyen viskoz akışkanlar, Sıkışmaz akışkanlar için Navier-Stokes denklemleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Silindirik koordinatlarda Navier-Stokes denklemleri, yörünge, akım çizgisi, kararlı, kararsız, laminer ve türbülanslı akım, Düzlem Coutte akımı, Düzlem Poiseuille akımı",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Lai M., Krempl E., Ruben D., Introduction to Continuum Mechanics, Elsevier, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=302"
  },
  "MUH 311": {
   "code": "MUH 311",
   "name": "Sürekli Ortamlar Mek I",
+  "nameEn": "Continuum Mechanics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -335,15 +840,87 @@
    "Hafta 13 · Gerilme, gerilme vektörü , gerilme tansörü, normal ve kayma gerilmeleri",
    "Hafta 14 · Asal gerilmeler ve doğrultuları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İndis gösterilimi, vektörler ve tansörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Vektör ve tansör işlemlerinin indis gösteriliminde ve değişik koordinat takımlarında ifade edilme",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Şekil değiştirme, maddesel ve uzaysal koordinatlar, şekildeğiştirme tansörleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Germe, boy, açı değişimler",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Asal şekildeğiştirmeler ve doğrultuları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Şekil değiştirme değişmezleri, alan ve hacim değişimleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Hareket, maddesel türev, hız ve ivme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Şekil değiştirme hızı ve çevri tansörleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yay, alan ve hacim elemanlarının maddesel türevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Yay, alan ve hacim elemanlarının maddesel türevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Eğri, alan ve hacim integrallerinin maddesel türevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Kütlenin, momentumun ve açısal momentumun korunumu ilkeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gerilme, gerilme vektörü , gerilme tansörü, normal ve kayma gerilmeleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Asal gerilmeler ve doğrultuları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "hubi E. S., Sürekli Ortamlar Mekaniği (Giriş), İTÜ Rektörlüğü, 1993."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=311"
  },
  "MUH 311E": {
   "code": "MUH 311E",
   "name": "Sürekli Ortamlar Mek I",
+  "nameEn": "Continuum Mechanics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -376,15 +953,87 @@
    "Hafta 13 · Gerilme, gerilme vektörü , gerilme tansörü, normal ve kayma gerilmeleri",
    "Hafta 14 · Asal gerilmeler ve doğrultuları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İndis gösterilimi, vektörler ve tansörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Vektör ve tansör işlemlerinin indis gösteriliminde ve değişik koordinat takımlarında ifade edilme",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Şekil değiştirme, maddesel ve uzaysal koordinatlar, şekildeğiştirme tansörleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Germe, boy, açı değişimler",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Asal şekildeğiştirmeler ve doğrultuları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Şekil değiştirme değişmezleri, alan ve hacim değişimleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Hareket, maddesel türev, hız ve ivme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Şekil değiştirme hızı ve çevri tansörleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yay, alan ve hacim elemanlarının maddesel türevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Yay, alan ve hacim elemanlarının maddesel türevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Eğri, alan ve hacim integrallerinin maddesel türevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Kütlenin, momentumun ve açısal momentumun korunumu ilkeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gerilme, gerilme vektörü , gerilme tansörü, normal ve kayma gerilmeleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Asal gerilmeler ve doğrultuları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "hubi E. S., Sürekli Ortamlar Mekaniği (Giriş), İTÜ Rektörlüğü, 1993."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=311"
  },
  "MUH 312": {
   "code": "MUH 312",
   "name": "Sürekli Ortamlar Mek II",
+  "nameEn": "Continuum Mechanics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -416,15 +1065,87 @@
    "Hafta 13 · Bir boyutlda sıkışmaz viskoz akışkan hareketi, Poiseulle akımı",
    "Hafta 14 · Viskoelastisite, lineer ve lineer olmayan Kelvin-Voigt cisimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Objektif vektörler ve tansörler ve gerilme akıs",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerjinin korunumu ilkesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Entropi, entropi prensibi, Clausius-Duhem Eşitsizliği",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Bünye denklemleri, Bünye teorisi aksiyomları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bünye teorisi aksiyomları, izotrop fonksiyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hiperelastik malzemeler, izotrop elastik malzemeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Lineer bünye denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İç ve dış basınç etkisinde sonsuz silindirik boru",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Termoelastisite, lineer bünye denklemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Termoelastisite, lineer bünye denklemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Yarım uzayda sıcaklık yayılılm",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Viskoz akışkanlar, lineer bünye denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bir boyutlda sıkışmaz viskoz akışkan hareketi, Poiseulle akımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Viskoelastisite, lineer ve lineer olmayan Kelvin-Voigt cisimleri",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Şuhubi E. S., Sürekli Ortamlar Mekaniği (Giriş), İTÜ Rektörlüğü, 1993."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=312"
  },
  "MUH 312E": {
   "code": "MUH 312E",
   "name": "Sürekli Ortamlar Mek II",
+  "nameEn": "Continuum Mechanics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -456,15 +1177,87 @@
    "Hafta 13 · Bir boyutlda sıkışmaz viskoz akışkan hareketi, Poiseulle akımı",
    "Hafta 14 · Viskoelastisite, lineer ve lineer olmayan Kelvin-Voigt cisimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Objektif vektörler ve tansörler ve gerilme akıs",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerjinin korunumu ilkesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Entropi, entropi prensibi, Clausius-Duhem Eşitsizliği",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Bünye denklemleri, Bünye teorisi aksiyomları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bünye teorisi aksiyomları, izotrop fonksiyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hiperelastik malzemeler, izotrop elastik malzemeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Lineer bünye denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İç ve dış basınç etkisinde sonsuz silindirik boru",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Termoelastisite, lineer bünye denklemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Termoelastisite, lineer bünye denklemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Yarım uzayda sıcaklık yayılılm",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Viskoz akışkanlar, lineer bünye denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bir boyutlda sıkışmaz viskoz akışkan hareketi, Poiseulle akımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Viskoelastisite, lineer ve lineer olmayan Kelvin-Voigt cisimleri",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Şuhubi E. S., Sürekli Ortamlar Mekaniği (Giriş), İTÜ Rektörlüğü, 1993."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=312"
  },
  "MUH 321": {
   "code": "MUH 321",
   "name": "Sayısal Yöntemler",
+  "nameEn": "Numerical Methods",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -497,15 +1290,87 @@
    "Hafta 13 · Adi Diferansiyel Denklemlerin Sayısal Çözümü",
    "Hafta 14 · Adi Diferansiyel Denklemlerin Sayısal Çözümü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hata Analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal Denklem Sistemlerinin Çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal Denklem Sistemlerinin Çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Özdeğer ve Özvektör Hesabı",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal Olmayan Denklemlerin Çözümü",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrusal Olmayan Denklemlerin Çözümü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sonlu Farklar",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Değer Hesabı",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ara Değer Hesabı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal Türev",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sayısal İntegral",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal İntegral",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Adi Diferansiyel Denklemlerin Sayısal Çözümü",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Adi Diferansiyel Denklemlerin Sayısal Çözümü",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Numerical Anaysis, R.L. Burden, J.D. Faires, Brooks/Cole, 2001,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=321"
  },
  "MUH 321E": {
   "code": "MUH 321E",
   "name": "Sayısal Yöntemler",
+  "nameEn": "Numerical Methods",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -538,15 +1403,87 @@
    "Hafta 13 · Adi Diferansiyel Denklemlerin Sayısal Çözümü",
    "Hafta 14 · Adi Diferansiyel Denklemlerin Sayısal Çözümü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hata Analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal Denklem Sistemlerinin Çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal Denklem Sistemlerinin Çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Özdeğer ve Özvektör Hesabı",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal Olmayan Denklemlerin Çözümü",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrusal Olmayan Denklemlerin Çözümü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sonlu Farklar",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Değer Hesabı",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ara Değer Hesabı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal Türev",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sayısal İntegral",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal İntegral",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Adi Diferansiyel Denklemlerin Sayısal Çözümü",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Adi Diferansiyel Denklemlerin Sayısal Çözümü",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Numerical Anaysis, R.L. Burden, J.D. Faires, Brooks/Cole, 2001,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=321"
  },
  "MUH 323": {
   "code": "MUH 323",
   "name": "Asimptotik Yöntemler",
+  "nameEn": "Asymptotic Methods",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -580,15 +1517,87 @@
    "Hafta 13 · Sonsuzdaki tekillik, Büyük parametreli diferansiyel denklemler ve WKP yaklaşımı",
    "Hafta 14 · Özdeğer problemleri, yavaş değişen katsayılı diferansiyel denklemler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mertebe sembolleri, asimptotik seriler, asimptotik açılım",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Cebrik denklemler; Kuadratik, kübik ve yüksek mertebe denklemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "İntegrallerin açılmları; Kısmi integrasyon,Laplace yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Endik iniş yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Duffing denklemi; Lindstend-Pioncaré Tekniği, Renormalizasyon yöntemi,",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Duffing denklemi; Katlı ölçekler yöntemi, Parametrelerin değişimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Lineer sönümlü salınıcı; Doğrudan açılım, Lindsted-Pioncaré Tekniği",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Lineer sönümlü salınıcı; Katlı ölçekler yöntemi, Ortalam alma yöntemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Matheieu Denklemi; Doğrudan Açılım, Floquet Teorisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Matheieu Denklemi; Katlı ölçekler yöntemi, Ortalam alma yöntemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Değişken katsayılı lineer diferansiyel denklemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Düzgün ve düzgün olmayan tekillikler yakınında çözümler",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sonsuzdaki tekillik, Büyük parametreli diferansiyel denklemler ve WKP yaklaşımı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Özdeğer problemleri, yavaş değişen katsayılı diferansiyel denklemler.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "A. Nayfeh, Introduction to Perurbation Technique, Wiley, 1981"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=323"
  },
  "MUH 334": {
   "code": "MUH 334",
   "name": "Bilgi İşlem Algoritmaları",
+  "nameEn": "Computing Algorithms",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -602,12 +1611,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=334",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=334"
  },
  "MUH 335": {
   "code": "MUH 335",
   "name": "Bilgi İşlem Algoritmaları",
+  "nameEn": "Data Processing Algorithms",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -640,15 +1649,87 @@
    "Hafta 13 · NP-tam problemler. NP-tam problemler.",
    "Hafta 14 · Genetik algoritmalara giriş ve uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, algoritma analizinin önemi ve örnekler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fonksiyonların büyümesi, özyineli bağıntıların çözümü ve üretici fonksiyonlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yineleme ( rekürsif), böl ve başar yapısında agoritmalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Master teoremi ve uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Sıralama algoritmaları, quicksort, heapsort, mergesort",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Arama algoritmaları, temel yöntemler, dengeli ağaçlar, hash fonksiyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Karakter zinciri arama algoritmaları: Rabin-Karp, sonlu otomat, Knuth-Morris-Pratt",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik programlama; En uzun ortak alt dizi bulma, çubuk kesim problemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Aç gözlü algoritmalar ve aç gözlü seçim: Aktivite seçim problemi, Huffman kodları. Geri izleme algoritmaları: Paralı yeniden yapım problemi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Hesaplamalı Geometri ; dış-bükey kapatıcı bulma, en yakın nokta çiftini bulma.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Çizit Algoritmaları; minimum örten ağaçlar, en kısa yol algoritmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çizit algoritmaları; maksimum akım problemi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "NP-tam problemler. NP-tam problemler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Genetik algoritmalara giriş ve uygulamaları.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Introduction to Algorithms, T. Cormen, R. Rivest et.al III. Ed. 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=335",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=335"
  },
  "MUH 335E": {
   "code": "MUH 335E",
   "name": "Bilgi İşlem Algoritmaları",
+  "nameEn": "Data Processing Algorithms",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -681,15 +1762,87 @@
    "Hafta 13 · NP-tam problemler. NP-tam problemler.",
    "Hafta 14 · Genetik algoritmalara giriş ve uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, algoritma analizinin önemi ve örnekler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fonksiyonların büyümesi, özyineli bağıntıların çözümü ve üretici fonksiyonlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yineleme ( rekürsif), böl ve başar yapısında agoritmalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Master teoremi ve uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Sıralama algoritmaları, quicksort, heapsort, mergesort",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Arama algoritmaları, temel yöntemler, dengeli ağaçlar, hash fonksiyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Karakter zinciri arama algoritmaları: Rabin-Karp, sonlu otomat, Knuth-Morris-Pratt",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik programlama; En uzun ortak alt dizi bulma, çubuk kesim problemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Aç gözlü algoritmalar ve aç gözlü seçim: Aktivite seçim problemi, Huffman kodları. Geri izleme algoritmaları: Paralı yeniden yapım problemi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Hesaplamalı Geometri ; dış-bükey kapatıcı bulma, en yakın nokta çiftini bulma.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Çizit Algoritmaları; minimum örten ağaçlar, en kısa yol algoritmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çizit algoritmaları; maksimum akım problemi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "NP-tam problemler. NP-tam problemler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Genetik algoritmalara giriş ve uygulamaları.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Introduction to Algorithms, T. Cormen, R. Rivest et.al III. Ed. 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=335",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=335"
  },
  "MUH 453": {
   "code": "MUH 453",
   "name": "Optimal Kontrol Teorisi",
+  "nameEn": "Optimal Control Theory",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -720,10 +1873,81 @@
    "Hafta 13 · Kontrol Edilebilir Sistemler",
    "Hafta 14 · Kontrol Edilebilir Sistemler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Varyasyonlar Hesabı ve Optimal Kontrol",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Pontryagin’in Maksimum İlkesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Pontryagin’in Maksimum İlkesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Dinamik Programlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Dinamik Programlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Doğrusal Kuadratik Optimal Kontrol Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Doğrusal Kuadratik Optimal Kontrol Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Kısıtlı Optimal Kontrol Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Kısıtlı Optimal Kontrol Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Lagrange İlkesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Lagrange İlkesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Kontrol Edilebilir Sistemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Kontrol Edilebilir Sistemler",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "D. E. Kirk, Optimal Control Theory, Dover, 2004"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=453",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUH&dersNo=453"
  }
 }

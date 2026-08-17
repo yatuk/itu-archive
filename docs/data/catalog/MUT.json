@@ -2,6 +2,7 @@
  "MUT 101": {
   "code": "MUT 101",
   "name": "Kemençe Yapımı I",
+  "nameEn": "Kemençe Making I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -36,15 +37,87 @@
    "Hafta 13 · Gomalak cilanın hazırlanması ve uygulanması.",
    "Hafta 14 · Burguların, eşiğin, candireğinin ve tellerin takılması ve reglaj uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Üç Telli Kemençe’nin anatomik yapısı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Malzeme, araç ve gereçlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Şablonların yapımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Ağacın yan ve ön görünüş şablonları ile işaretlenmesi ve kesimi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gövde dış formunun tesviye edilmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tekne iç formunun tesviye edilmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Tekne iç ölçülendirilmesinin yapılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ses tablasının tekneye alıştırılması, geçici yapıştırma ve dış formunun tesviyesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ses tablasının ölçülendirilmesi, ses deliklerinin açılması ve gövdeye yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Tuşun hazırlanması ve sapa yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Ses tablasının etrafına fileto kanallarının açılması ve filetolarının yapıştırılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Üstyüzey işlemleri yapılarak çalgının cilaya hazırlanması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gomalak cilanın hazırlanması ve uygulanması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Burguların, eşiğin, candireğinin ve tellerin takılması ve reglaj uygulamaları.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1999. Klasik Kemençe Yapım Sanatı ve sanatçıları, İstanbul: Emek Basımevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=101"
  },
  "MUT 102": {
   "code": "MUT 102",
   "name": "Kemençe Yapımı II",
+  "nameEn": "Kemençe Making II",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -79,15 +152,87 @@
    "Hafta 13 · Gomalak cilanın hazırlanması ve uygulanması.",
    "Hafta 14 · Burguların, eşiğin, can direğinin ve tellerin takılarak icraya hazırlanması. Reglaj uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dört Telli Kemençe’nin anatomik yapısı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapımında kullanılan malzemelerin, araç ve gereçlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Şablonların yapımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ağacın yan ve ön görünüş şablonları ile işaretlenmesi ve kesimi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Gövde dış formunun tesviye edilmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tekne iç formunun tesviye edilmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Tekne iç ölçülendirilmesinin yapılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ses tablasının tekneye alıştırılması, geçici yapıştırma ve dış formunun tesviyesi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ses tablasının ölçülendirilmesi, ses deliklerinin açılması ve gövdeye yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Ses tablasının etrafına fileto kanallarının açılması ve filetolarının yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Tuşun hazırlanması ve sapa yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Üstyüzey işlemleri yapılarak cilaya hazırlanması.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Gomalak cilanın hazırlanması ve uygulanması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Burguların, eşiğin, can direğinin ve tellerin takılarak icraya hazırlanması. Reglaj uygulamaları.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1999. Klasik Kemençe Yapım Sanatı ve sanatçıları, İstanbul: Emek Basımevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=102"
  },
  "MUT 111": {
   "code": "MUT 111",
   "name": "Tanbur Yapımı",
+  "nameEn": "Tanbur Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -122,6 +267,78 @@
    "Hafta 13 · Perdelerin bağlanması, eşik, başeşik ve burguların hazırlanıp montajı.",
    "Hafta 14 · Tanbura tel takılması ve reglaj uygulaması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanburun anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı. Takozların kalıba montajı ve tesviyesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 3",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Teknenin tamamlanması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Sapın takılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ses tablasının hazırlanması ve tekneye montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Filetoların montajı.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Üstyüzey işlemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gomalak cila hazırlanması ve uygulaması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Perdelerin bağlanması, eşik, başeşik ve burguların hazırlanıp montajı.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Tanbura tel takılması ve reglaj uygulaması.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1999. Klasik Kemençe Yapım Sanatı ve sanatçıları, İstanbul: Emek Basımevi.",
    "Öksüz, Mustafa Aydın. 1999. Türk Musikisinde Tanbur Sazının Gelişimi",
@@ -130,12 +347,12 @@
    "Jahner, Franz. 1977. Die Gitarre und ihr Bau, Frankfurt am Main: Verlag Das Musik Instrument.",
    "Picken, Laurence. 1975. Folk Musical Instrument of Turkey, London: Oxford University Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=111"
  },
  "MUT 112": {
   "code": "MUT 112",
   "name": "Bağlama Yapımı",
+  "nameEn": "Baglama Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -170,15 +387,87 @@
    "Hafta 13 · Perdelerin bağlanması, eşik, başeşik ve burguların hazırlanıp montajı.",
    "Hafta 14 · Bağlamaya tel takılması ve reglaj uygulaması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bağlamanın anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı. Takozların kalıba montajı ve tesviyesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 3",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Teknenin tamamlanması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sapın takılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ses tablasının hazırlanması ve tekneye montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Filetoların montajı.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Üstyüzey işlemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gomalak cila hazırlanması ve uygulaması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Perdelerin bağlanması, eşik, başeşik ve burguların hazırlanıp montajı.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Bağlamaya tel takılması ve reglaj uygulaması.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=112"
  },
  "MUT 131": {
   "code": "MUT 131",
   "name": "Akustik I",
+  "nameEn": "Acoustics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -213,17 +502,89 @@
    "Hafta 13 · Elektro akustik sistemler 1",
    "Hafta 14 · Elektro akustik sistemler 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Akustiğin tanımı, işlevi ve kolları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fizik olarak ses ve temel büyüklükleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Fizik olarak ses ve sesin yayılma alanları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Yansıma, kırılma, eğilme.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Fizyolojik olarak ses: Kulağın yapısı ve işitme.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Algılamada rol oynayan sese ilişkin faktörler.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Müziksel sesler ve müzik araçları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Karmaşık seslerin doğası, teller, borular, zarlar. Ara sınav.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Yaylı çalgıların akustik özellikleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Üflemeli çalgıların akustik özellikleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Hacim Akustiği",
+    "outcomes": "2-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Kapalı hacimlerin akustik özelliği.",
+    "outcomes": "2-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Elektro akustik sistemler 1",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Elektro akustik sistemler 2",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Zeren, Ayhan. 1975. Müzik Fiziği. Istanbul: Pan Yayıncılık",
    "Rossing, D. Thomas. 1997. The Science of Sound. Addison-Wesley Publishing.",
    "Tıraş, Murat. t.y. Akustik."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=131",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=131"
  },
  "MUT 132": {
   "code": "MUT 132",
   "name": "Akustik II",
+  "nameEn": "Acoustics II",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -258,17 +619,89 @@
    "Hafta 13 · Oda akustiği 2",
    "Hafta 14 · Çevrenin müziğe etkileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Müzik terminolojisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektrik ve manyetizmanın temel presipleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sesi yeniden oluşturmak 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Sesi yeniden oluşturmak 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Mikrofonlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Hoparlörler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Elektronik müzik 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Elektronik müzik 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Akustik malzemeler",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Tiyatro akustiği",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Stüdyo akustiği",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Oda akustiği 1",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Oda akustiği 2",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Çevrenin müziğe etkileri",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "Zeren, Ayhan. 1975. Müzik Fiziği. Istanbul: Pan Yayıncılık.",
    "Rossing, D. Thomas. 1997. The Science of Sound. Addison-Wesley Publishing.",
    "Tıraş, Murat. t.y. Akustik."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=132",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=132"
  },
  "MUT 141": {
   "code": "MUT 141",
   "name": "Kayıt Teknikleri",
+  "nameEn": "Recording Techniques",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -300,15 +733,87 @@
    "Hafta 13 · Vokal ve farklı çalgılar için mikrofonlama teknikleri 3",
    "Hafta 14 · Karmaşık teknikler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikrofonlara giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrofon tipleri ve karakteristikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Akustik ortamda oluşabilecek efektler",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Kayıt ortamı ve mikrofon yerleşimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Mono yakın mikrofonlama teknikleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Mono uzak mikrofonlama teknikleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Mono karma mikrofonlama teknikleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Stereo mikrofonlama teknikleri: XY ve AB",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Stereo mikrofonlama teknikleri: MS ve ORTF",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Vokal için mikrofonlama teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Vokal ve farklı çalgılar için mikrofonlama teknikleri 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Vokal ve farklı çalgılar için mikrofonlama teknikleri 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Vokal ve farklı çalgılar için mikrofonlama teknikleri 3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Karmaşık teknikler",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Huber, David Miles. 2017. Modern Recording Techniques. Audio Engineering Society Presents. 9th ed. New York: Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=141",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=141"
  },
  "MUT 142": {
   "code": "MUT 142",
   "name": "Ses Düzenleme ve Editing",
+  "nameEn": "Sound Editing",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -340,15 +845,87 @@
    "Hafta 13 · Örnek projenin tüm çalgı editlemeleri 1",
    "Hafta 14 · Örnek projenin tüm çalgı editlemeleri 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Editing tanımı, şekilleri ve kullanılan yerler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Vurmalı çalgıların editlenmesi, dinleme ve uygulamaları 1",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Vurmalı çalgıların editlenmesi, dinleme ve uygulamaları 2",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Vurmalı çalgıların editlenmesi, dinleme ve uygulamaları 3",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yaylı çalgıların editlenmesi, dinleme ve uygulamaları 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yaylı çalgıların editlenmesi, dinleme ve uygulamaları 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yaylı çalgıların editlenmesi, dinleme ve uygulamaları 3",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Mızraplı çalgıların editlenmesi, dinleme ve uygulamaları 1",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Mızraplı çalgıların editlenmesi, dinleme ve uygulamaları 2",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Mızraplı çalgıların editlenmesi, dinleme ve uygulamaları 3",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Üflemeli çalgıların editlenmesi, dinleme ve uygulamaları 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Üflemeli çalgıların editlenmesi, dinleme ve uygulamaları 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Örnek projenin tüm çalgı editlemeleri 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Örnek projenin tüm çalgı editlemeleri 2",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Huber, David Miles. 2017. Modern Recording Techniques. Audio Engineering Society Presents. 9th ed. New York: Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=142",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=142"
  },
  "MUT 153": {
   "code": "MUT 153",
   "name": "Sayısal Ses Çalışma Ortamları",
+  "nameEn": "Digital Audio Workstations",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -380,15 +957,87 @@
    "Hafta 13 · Ableton Live yazılımı 2",
    "Hafta 14 · Çoklu yazılım kullanımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayısal ses çalışma ortamlarına giriş",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Cubase yazılımı 1",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Cubase yazılımı 2",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Cubase yazılımı 3",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Reason yazılımı 1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Reason yazılımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Reason yazılımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Rewire sistem ve senkronizasyon 1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Rewire sistem ve senkronizasyon 2",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Pro Tools yazılım ve donanımı 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Pro Tools yazılım ve donanımı 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Ableton Live yazılımı 1",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ableton Live yazılımı 2",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Çoklu yazılım kullanımı",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Hosken, Dan. 2015. An Introduction to Music Technology. 2nd ed. New York: Routledge"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=153",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=153"
  },
  "MUT 154": {
   "code": "MUT 154",
   "name": "Ses Tasarımı",
+  "nameEn": "Sound Design",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -420,15 +1069,87 @@
    "Hafta 13 · İleri seviye çalgı örneklemeleri 3",
    "Hafta 14 · İleri seviye çalgı örneklemeleri 4"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ses tasarımı hakkında temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Vurmalı çalgı ses tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Vurmalı çalgı seslerinin yeniden yaratılması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Akustik uzay tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Çevresel ses kaydı",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ses işleme teknikleri 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Ses işleme teknikleri 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Ses işleme teknikleri 3",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Filtreleme teknikleri 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Filtreleme teknikleri 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "İleri seviye çalgı örneklemeleri 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "İleri seviye çalgı örneklemeleri 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "İleri seviye çalgı örneklemeleri 3",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "İleri seviye çalgı örneklemeleri 4",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Farnell, Andy. 2010. Designing Sound. Cambridge, MA: MIT Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=154",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=154"
  },
  "MUT 161": {
   "code": "MUT 161",
   "name": "Ağaç Teknolojisi",
+  "nameEn": "Wood Technology",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -461,15 +1182,87 @@
    "Hafta 13 · Doğal kurutma. Suni kurutma.",
    "Hafta 14 · Ağaçların biçilmesi ve sınıflandırılması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ağacın genel yapısının incelenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ağacın botanik ve kimyasal yapısı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ağacın gelişimi ve dokuları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ağacın fiziksel özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Ağaç kesitlerinin incelenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Ağaç cinslerinin gruplandırılması. Ladin ve kırmızı gürgen ağaçlarının özellikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Akçaağaç ve ıhlamur ağaçlarının özellikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Köknar, çınar, sedir ve akgürgen ağaçlarının özellikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Maun, abanoz, pelesenk ve kavak ağaçlarının özellikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Gül, selvi, ardıç ve meşe ağaçlarının özellikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Ağaçlarda görülen özür ve nedenleri. Ağaç hastalıkları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ağaçta nem ve nem ölçme.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Doğal kurutma. Suni kurutma.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Ağaçların biçilmesi ve sınıflandırılması.",
+    "outcomes": "2"
+   }
+  ],
   "textbooks": [
    "Dinçel, Kemal; Çelebi, Necati; Şanıvar, Nazım. 1977. Ağaç Teknolojisi İstanbul: Milli Eğitim Basımevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=161",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=161"
  },
  "MUT 162": {
   "code": "MUT 162",
   "name": "Makina ve Takım Bilgisi",
+  "nameEn": "The Knowledge of Machine and Tools",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -502,15 +1295,87 @@
    "Hafta 13 · Torna makinesi.",
    "Hafta 14 · Tutkallama ve sıkma aletleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aletleri etkileyen fizik ve mekanik kurallar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Rendeleme aletlerinin tanımı ve yapısı. Rendeleme işleminin mekanik incelenmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Biçme aletlerinin tanımı ve yapısı. Testere türleri. Testerenin bilenmesi. Testerede çapraz işlemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Eğeler, törpüler ve kesici kalemler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bileme makineleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Perdah aletleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Şerit testere makinesi.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Daire testere makinesi. Ara sınav.",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Delme makineleri.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Planya makinesi.",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kalınlık ve kalibre makineleri.",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "El freze ve zımpara makineleri.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Torna makinesi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tutkallama ve sıkma aletleri.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "• Afyonlu, A. Safa. 1981. Ağaçişleri Takım Ve Makine Bilgisi, İstanbul: Milli Eğitim Basımevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=162",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=162"
  },
  "MUT 201": {
   "code": "MUT 201",
   "name": "Kemane Yapımı",
+  "nameEn": "Kemane Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -545,15 +1410,87 @@
    "Hafta 13 · Üstyüzey işlemleri ve cila.",
    "Hafta 14 · Eşiğinin, başeşiğin, burguların ve telin takulması. Reglaj uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kemanenin anatomik yapısı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Malzeme, araç ve gereçlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Şablonların yapımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Kalıbın tornalanarak tesviye edilmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Takozların hazırlanması, montajı ve dillim taksimatlarının işaretlenmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Dilimlerin kalıp formuna göre bükülmesi ve kalıp üzerine yapıştırılması. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Dilimlerin kalıp formuna göre bükülmesi ve kalıp üzerine yapıştırılması. 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Dilimlerin kalıp formuna göre bükülmesi ve kalıp üzerine yapıştırılması. 3",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Tekne iç ve dış tesviyesinin yapılması. Tekne destek parçalarının yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Sap malzemesinin kesimi ve tesviyesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Tuş ve pikin yapıştırılması. Sapın tekneye alıştırılması ve montajı.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Tekne kısmına ince hayvan derisinin gerdirilerek yapıştırılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Üstyüzey işlemleri ve cila.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Eşiğinin, başeşiğin, burguların ve telin takulması. Reglaj uygulamaları.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1994. Enstruman Bilimi (Organoloji), İstanbul: Yeni Doğan Basımevi Ltd. Şti."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=201"
  },
  "MUT 202": {
   "code": "MUT 202",
   "name": "Keman Yapımı I",
+  "nameEn": "Violin Making I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -588,16 +1525,88 @@
    "Hafta 13 · Tuşun, burguların ve baş eşiğinin takılması.",
    "Hafta 14 · Tellerin takılarak icraya hazırlanması. Reglaj uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kemanın anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı. Takozların kalıba montajı ve tesviyesi.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Mukavemet çıtalarının dönülmesi ve tabloların yanlığa geçici olarak yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Tablo kenar tesviyelerinin bitirilmesi ve filetolarının yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tablo bombelerinin verilmesi ve alt tablonun ölçülen dirilerek yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Üst tablonun ölçümlendirilmesi. Ses deliklerinin açılması ve bas balkonun yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üst tablonun yapıştırılması ve sapın yapımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Sapın yapılması ve yerine takılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Üstyüzey işlemlerinin yapılması ve cilaya hazırlanması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Temel cilanın yapımı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Cilanın tamamlanması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tuşun, burguların ve baş eşiğinin takılması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Tellerin takılarak icraya hazırlanması. Reglaj uygulamaları.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 2000. Keman Yapım Sanatı ve Sanatçıları, İstanbul: Emek Basımevi.",
    "Strobel, A. Henry. 1995. Useful Measurements For Violin Makers, USA."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=202"
  },
  "MUT 211": {
   "code": "MUT 211",
   "name": "Ud Yapımı",
+  "nameEn": "Ud Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -632,15 +1641,87 @@
    "Hafta 13 · Eşik, başeşik, kafes, mızraplık ve burguların hazırlanıp yerlerine montajı.",
    "Hafta 14 · Tellerin takılması ve reglaj uygulaması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Udun anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı. Takozların kalıba montajı ve tesviyesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 3",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Sapın takılması, tesviyesi ve dilimlerin montajı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ses tablasının hazırlanıp tekneye montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Tuşun hazırlanması ve montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Filetoların montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Burguluğun hazırlanması ve yerine takılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Üst yüzey işlemleri ve cila yapılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Eşik, başeşik, kafes, mızraplık ve burguların hazırlanıp yerlerine montajı.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Tellerin takılması ve reglaj uygulaması.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=211"
  },
  "MUT 212": {
   "code": "MUT 212",
   "name": "Lavta Yapımı",
+  "nameEn": "Laute Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -675,15 +1756,87 @@
    "Hafta 13 · Eşik, başeşik, kafes, mızraplık ve burguların hazırlanıp, yerlerine montajı. Perdelerin bağlanması",
    "Hafta 14 · Tellerin takılması ve reglaj uygulaması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lavtanın anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı. Takozların kalıba montajı ve tesviyesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Dilimlerin hazırlanıp kalıp üstüne montajı. 3",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Sapın takılması, tesviyesi ve dilimlerin montajı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ses tablasının hazırlanıp tekneye montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Tuşun hazırlanması ve montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Filetoların montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Burguluğun hazırlanması ve yerine takılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Üst yüzey işlemleri ve cila yapılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Eşik, başeşik, kafes, mızraplık ve burguların hazırlanıp, yerlerine montajı. Perdelerin bağlanması",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Tellerin takılması ve reglaj uygulaması.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=212"
  },
  "MUT 241": {
   "code": "MUT 241",
   "name": "İleri Kayıt Teknikleri",
+  "nameEn": "Advanced Recording Techniques",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -715,15 +1868,87 @@
    "Hafta 13 · Reverb örnekleme teknikleri 1",
    "Hafta 14 · Reverb örnekleme teknikleri 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Orkestra yerleşim şekilleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Genel mikrofonlamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Re-amp tekniği",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Çoklu mikrofon amplifikatör kaydı1",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Çoklu mikrofon amplifikatör kaydı 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Senfoni orkestrası kaydı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Canlı Türk müziği topluluğu kaydı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Canlı pop/rock orkestrası kaydı",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Canlı akustik orkestra kaydı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Monitörlü stüdyo vokal kaydı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Çevresel seslerin kayıt teknikleri 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Çevresel seslerin kayıt teknikleri 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Reverb örnekleme teknikleri 1",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Reverb örnekleme teknikleri 2",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Huber, David Miles. 2017. Modern Recording Techniques. Audio Engineering Society Presents. 9th ed. New York: Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=241",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=241"
  },
  "MUT 242": {
   "code": "MUT 242",
   "name": "Elektronik Ortam ve Müzik",
+  "nameEn": "Electronic Environment and Music",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -755,15 +1980,87 @@
    "Hafta 13 · Kontrolör tasarımı uygulama 1",
    "Hafta 14 · Kontrolör tasarımı uygulama 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "MIDI tanımı ve temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "MIDI temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "MIDI sistemler ve bağlantı biçimleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ses örnekleme ve sampler kullanımı 1",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ses örnekleme ve sampler kullanımı 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Sentezleyiciler ve devreleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Sentezleyiciler ve filtreler",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sentezleyiciler ve modülasyon devreleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kontrolörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Elektronik çalgılar 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Elektronik çalgılar 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Kontrolör tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Kontrolör tasarımı uygulama 1",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Kontrolör tasarımı uygulama 2",
+    "outcomes": "2"
+   }
+  ],
   "textbooks": [
    "Hermes, Kirsten. 2022. Performing Electronic Music Live. New York: Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=242",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=242"
  },
  "MUT 253": {
   "code": "MUT 253",
   "name": "Prodüksiyon Analizi",
+  "nameEn": "Production Analysis",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -795,16 +2092,88 @@
    "Hafta 13 · Tüm albüm prodüksiyonu analiziyle ilgili uygulamalı proje 3",
    "Hafta 14 · Tüm albüm prodüksiyonu analiziyle ilgili uygulamalı proje 4"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Prodüksiyon mantığı, kavramlar ve terimler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Analitik dinleme ve prodüksiyon aşamaları hakkında bilgiler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Türk müziği prodüksiyonu analizi 1",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Türk müziği prodüksiyonu analizi 2",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Pop müzik prodüksiyonu analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Rock müzik prodüksiyonu analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Jazz müzik prodüksiyonu analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Klasik müzik prodüksiyonu analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Elektronik müzik prodüksiyonu analizi 1",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Elektronik müzik prodüksiyonu analizi 2",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Tüm albüm prodüksiyonu analiziyle ilgili uygulamalı proje 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Tüm albüm prodüksiyonu analiziyle ilgili uygulamalı proje 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tüm albüm prodüksiyonu analiziyle ilgili uygulamalı proje 3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tüm albüm prodüksiyonu analiziyle ilgili uygulamalı proje 4",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Moylan, William. 2020. Recording Analysis: How the Record Shapes the Song. New York: Routledge.",
    "Corey, Jason. 2016. Audio Production and Critical Listening: Technical Ear Training. 2nd ed. Focal Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=253",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=253"
  },
  "MUT 254": {
   "code": "MUT 254",
   "name": "Sayısal Ses",
+  "nameEn": "Digital Audio",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -835,15 +2204,87 @@
    "Hafta 13 · ADC yüksek örnekleme dönöştürücüleri 2",
    "Hafta 14 · ADC yüksek örnekleme dönöştürücüleri 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayısal sese giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boole Cebri, ikilik sistemler 1",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Boole Cebri, ikilik sistemler 2",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Örnekleme Teorisi 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Örnekleme Teorisi 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Örnekleme Teorisi 3",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Quantization Teorisi 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Quantization Teorisi 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Quantization Teorisi 3",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "FIR ve IIR spektrum dengeleyicileri 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "FIR ve IIR spektrum dengeleyicileri 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "ADC yüksek örnekleme dönöştürücüleri 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "ADC yüksek örnekleme dönöştürücüleri 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "ADC yüksek örnekleme dönöştürücüleri 3",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Pohlmann, Ken C. 2011. Principles of Digital Audio. 6th ed. New York: McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=254",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=254"
  },
  "MUT 2626": {
   "code": "MUT 2626",
   "name": "Keman IV",
+  "nameEn": "Violin IV",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -857,12 +2298,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=2626",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=2626"
  },
  "MUT 263": {
   "code": "MUT 263",
   "name": "Ölçme ve Kontrol Bilgisi",
+  "nameEn": "The Knowledge of Measuring and Control",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -893,16 +2334,88 @@
    "Hafta 13 · Çalgı yapımında kullanılan özel ölçme, markalama ve kontrol aletleri.",
    "Hafta 14 · Çalgı yapımında kullanılan özel ölçme, markalama ve kontrol aletleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ölçme – kontol tanımı, amaç ve tarifi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ölçme ve kontrolü etkileyen faktörler. Ölçme hataları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Direkt ve endirekt ölçme.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Metrik sistem. İngiliz ve Amerikan sistemleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçme, markalama ve kontrol aletleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Çelik cetveller ve metreler. Ara sınav.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kumpaslar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Mikrometreler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yüzey kontrol aletleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Şablonlar ve mastarlar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Gönyeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Nişangeçler",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Çalgı yapımında kullanılan özel ölçme, markalama ve kontrol aletleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Çalgı yapımında kullanılan özel ölçme, markalama ve kontrol aletleri.",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Köken, Rahmi. 1974. Ölçme ve Kontrol, Ankara: Baylan Matbaası.",
    "Bağcı, Mustafa, ERİŞKİN, Yakup. 1988. Ölçme Bilgisi ve Kontrol, İstanbul: Milli Eğitim Basımevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=263",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=263"
  },
  "MUT 264": {
   "code": "MUT 264",
   "name": "Üst Yüzey İşlemleri",
+  "nameEn": "Outside Surfece Processes",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -935,15 +2448,87 @@
    "Hafta 13 · İspirtolu vernik. Selülozik vernik. Yağlı vernik.",
    "Hafta 14 · Sentetik vernik. Polyester vernik. Poliüretan vernik."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ağaç yapısının üstyüzey işlemleri açısından incelenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sıvı ve gaz cisimlerin ağaçla ilişkisi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Ağaç seçmenin üstyüzey işlemleri açısından önemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Koruyucu örtü gereçleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Üst yüzey işlerinde kullanılan eritici-inceltici sıvılar.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Üstyüzey işlemlerinde boyalar ve temel bilgiler.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Boya reçeteleri. Ara sınav.",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Bazı ağaçlarda boya uygulamaları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Patine boyama.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Tutkalların üstyüzey işlemlerine etkileri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Gözenek macunları ve dolgu gereçleri.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Gomalak cila.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "İspirtolu vernik. Selülozik vernik. Yağlı vernik.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Sentetik vernik. Polyester vernik. Poliüretan vernik.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Şanıvar, Nazım. 1978. Ağaçişleri Üstyüzey İşlemleri, İstanbul: Milli Eğitim Basımevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=264",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=264"
  },
  "MUT 267": {
   "code": "MUT 267",
   "name": "Stüdyo Akustiği",
+  "nameEn": "Studio Acoustics",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -975,15 +2560,87 @@
    "Hafta 13 · Salon ve Stüdyo Akustiği 1",
    "Hafta 14 · Salon ve Stüdyo Akustiği 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel fizik bilgisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ses kaynağının özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Yayılma ortamının özellikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Fizyolojik olarak ses : kulağın yapısı, işitme olayı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Algılamada rol oynayan sese ilişkin faktörler",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Müzik Sesi Kaynakları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Çalgı Akustiği 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Çalgı Akustiği 2 .Ara Sınav.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Sesin Elektriğe Çevrilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Elektriğin Sese Çevrilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Akustik malzemelerin özellikleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Oda Akustiği",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Salon ve Stüdyo Akustiği 1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Salon ve Stüdyo Akustiği 2",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Newell, Philip. 2017. Recording Studio Design. 4th ed. New York: Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=267",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=267"
  },
  "MUT 269": {
   "code": "MUT 269",
   "name": "Çalgı Teknik Resmi I",
+  "nameEn": "Musical Instrument Technical Drawing I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1018,15 +2675,87 @@
    "Hafta 13 · Kemençe gövde kısmının önden çizimi.",
    "Hafta 14 · Kemane gövde kısmının yandan çizimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Teknik resim ve çizim aletlerinin tanıtılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kurşun kalemle yazı çalışmaları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Çini Mürekkebi ile çizgi ve şekil çalışmaları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Geometrik çizimler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gönye, cetvel, pergel kullanarak açı çizimleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Çember içine düzgün çokgenlerin çizimleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Elips, parabol, hiperbol, spiral daire açınımı çizimleri. Ara sınav.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ölçülendirme ve kuralları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "İzdüşüm ve görünüş çıkarmak.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Önden, üstten, yandan görünüşlerin seçimi ve çizimleri, perspektif çizimler.",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Ud burguluğunun önden ve yandan çizimi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Tar burguluğunun önden, üstten ve yandan çizimi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kemençe gövde kısmının önden çizimi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Kemane gövde kısmının yandan çizimi.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=269",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=269"
  },
  "MUT 301": {
   "code": "MUT 301",
   "name": "Keman Yapımı II",
+  "nameEn": "Violin Making II",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1061,16 +2790,88 @@
    "Hafta 13 · Tuşun, burguların ve baş eşiğinin takılması.",
    "Hafta 14 · Tellerin takılarak icraya hazırlanması. Reglaj uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kemanın anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı. Takozların kalıba montajı ve tesviyesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Mukavemet çıtalarının dönülmesi ve tabloların yanlığa geçici olarak yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Tablo kenar tesviyelerinin bitirilmesi ve filetolarının yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tablo bombelerinin verilmesi ve alt tablonun ölçülen dirilerek yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Üst tablonun ölçümlendirilmesi. Ses deliklerinin açılması ve bas balkonun yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üst tablonun yapıştırılması ve sapın yapımı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sapın yapılması ve yerine takılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Üstyüzey işlemlerinin yapılması ve cilaya hazırlanması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Temel cilanın yapımı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Cilanın tamamlanması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tuşun, burguların ve baş eşiğinin takılması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Tellerin takılarak icraya hazırlanması. Reglaj uygulamaları.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 2000. Keman Yapım Sanatı ve Sanatçıları, İstanbul: Emek Basımevi",
    "Strobel, A. Henry. 1995. Useful Measurements For Violin Makers, USA"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=301"
  },
  "MUT 302": {
   "code": "MUT 302",
   "name": "Viyola Yapımı",
+  "nameEn": "Viola Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1105,16 +2906,88 @@
    "Hafta 13 · Tuşun, burguların ve baş eşiğinin takılması.",
    "Hafta 14 · Violanın tellenmesi ve reglaj."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Violanın anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı. Takozların kalıba montajı ve tesviyesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Mukavemet çıtalarının dönülmesi ve tabloların yanlığa geçici olarak yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Tablo kenar tesviyelerinin bitirilmesi ve filetolarının yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tablo bombelerinin verilmesi ve alt tablonun ölçülen dirilerek yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Üst tablonun ölçümlendirilmesi. Ses deliklerinin açılması ve bas balkonun yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üst tablonun yapıştırılması ve sapın yapımı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sapın yapılması ve yerine takılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Üstyüzey işlemlerinin yapılması ve cilaya hazırlanması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Temel cilasının yapımı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Cilanın tamamlanması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tuşun, burguların ve baş eşiğinin takılması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Violanın tellenmesi ve reglaj.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 2000. Keman Yapım Sanatı ve Sanatçıları, İstanbul: Emek Basımevi",
    "Strobel, A. Henry. 1995. Useful Measurements For Violin Makers, USA"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=302"
  },
  "MUT 304": {
   "code": "MUT 304",
   "name": "Ney Yapımı",
+  "nameEn": "Ney Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1146,15 +3019,87 @@
    "Hafta 13 · Entanasyon ayarları.",
    "Hafta 14 · Kamışın yağlanması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Neyin anatomik yapısı ve projelendirilmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tonlarına göre neylerin boyları ve perde aralıkları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yapımında kullanılan malzemelerin, araç ve gereçlerin tanıtımı.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kamışın temizlenmesi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Üst parazvanenin yapımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Alt parazvanenin yapımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Boğumların temizlenmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İlk boğumdaki deliğin açılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Başpare yapımı. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Başpare yapımı. 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ses deliklerin açılması. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Ses deliklerin açılması. 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Entanasyon ayarları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Kamışın yağlanması.",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1994. Enstruman Bilimi (Organoloji), İstanbul: Yeni Doğan Basımevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=304",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=304"
  },
  "MUT 311": {
   "code": "MUT 311",
   "name": "Gitar Yapımı",
+  "nameEn": "Guitar Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1189,15 +3134,87 @@
    "Hafta 13 · Gomalak cila hazırlanması ve uygulaması.",
    "Hafta 14 · Gitara tel takılması ve reglaj."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gitarının anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı. Yanlıkların kıvrılması ve takozların montajı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Alt ve üst tablanın hazırlanması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Alt tablanın balkonlarının yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Üst tablada rozanın yerinin açılması ve balkonlarının yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Alt ve üst tablanın yanlıklara yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Alt ve üst tabladaki filetoların takılması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sapın hazırlanıp yerine montajı.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Eşiğin, başeşiğin, tuşun hazırlanıp yapıştırılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Perdelerin yerine çakılması ve tesviyesinin yapılması.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Üstyüzey işlemleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Gomalak cila hazırlanması ve uygulaması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Gitara tel takılması ve reglaj.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=311"
  },
  "MUT 3117": {
   "code": "MUT 3117",
   "name": "Atölye V",
+  "nameEn": "Workshop V",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1231,15 +3248,87 @@
    "Hafta 13 · Tuş, burgu ve baş eşiğin takılması",
    "Hafta 14 · Can direği ve eşiğin yapımı, tellerin takılıp reglaj yapılarak çalgının bitirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Projenin çizimi, şablonların çıkarılması ve kalıp yapımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Takozların kalıba montajı ve tesviyesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yanlıkların hazırlanması ve kalıba montajı",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Mukavemet çıtalarının dönülmesi ve tabloların geçici olarak yapıştırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Tablo kenar tesviyelerinin bitirilmesi ve filetoların yapıştırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tablo bombelerinin verilmesi ve alt tablonun ölçülendirilerek yapıştırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Üst tablonun ölçülendirilmesi, ses deliklerinin açılması ve bas balkonun yapıştırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üst tablonun yapıştırılması ve sapın yapımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sapın bitirilmesi ve yerine takılması",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Çalgının temizlenmesi ve cilâya hazırlanması",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Temel cilânın yapımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Cilânın tamamlanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tuş, burgu ve baş eşiğin takılması",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Can direği ve eşiğin yapımı, tellerin takılıp reglaj yapılarak çalgının bitirilmesi",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Useful Measurements For Violin Makers, STROBEL, A. Henry, USA, 1995,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=3117",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=3117"
  },
  "MUT 3118": {
   "code": "MUT 3118",
   "name": "Atölye VI",
+  "nameEn": "Workshop VI",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1273,15 +3362,87 @@
    "Hafta 13 · Tuş, burgu ve baş eşiğin takılması",
    "Hafta 14 · Can direği ve eşiğin yapımı, tellerin takılıp reglaj yapılarak çalgının bitirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Projenin çizimi, şablonların çıkarılması ve kalıp yapımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Takozların kalıba montajı ve tesviyesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yanlıkların hazırlanması ve kalıba montajı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Mukavemet çıtalarının dönülmesi ve tabloların geçici olarak yapıştırılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tablo kenar tesviyelerinin bitirilmesi ve filetoların yapıştırılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Tablo bombelerinin verilmesi ve alt tablonun ölçülendirilerek yapıştırılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Üst tablonun ölçülendirilmesi, ses deliklerinin açılması ve bas balkon yapıştırılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Üst tablonun yapıştırılması ve sapın yapımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sapın bitirilmesi ve yerine takılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Çalgının temizlenmesi ve cilâya hazırlanması",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Temel cilânın yapımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Cilânın tamamlanması",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tuş, burgu ve baş eşiğin takılması",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Can direği ve eşiğin yapımı, tellerin takılıp reglaj yapılarak çalgının bitirilmesi",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Useful Measurements For Violin Makers, STROBEL, A. Henry, USA, 1995,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=3118",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=3118"
  },
  "MUT 313": {
   "code": "MUT 313",
   "name": "Çalgı Süsleme Sanatı",
+  "nameEn": "The Art Of Instrument Decoration",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1314,15 +3475,87 @@
    "Hafta 13 · Kakma uygulamaları.",
    "Hafta 14 · Marküteri uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Türk çalgılarında süslemeciliğin tarihçesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Süslemede kullanılacak motif ve desenler.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Rumi ve Hatayi gurupları ve özellikleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Tekniklerin tanıtımı: Oyma ve ajur.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Tekniklerin tanıtımı: Kakma ve marküteri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Malzemelerin tanıtımı: Sedef.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Malzemelerin tanıtımı: Bağa. Ara sınav.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Malzemelerin tanıtımı: Fildişi.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kullanılan aletler: Kıl testeresi, oyma kalemleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Oyma uygulamaları. 1",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Oyma uygulamaları. 2",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ajur uygulamaları.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kakma uygulamaları.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Marküteri uygulamaları.",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 2000. Türk Enstrüman Süsleme Sanatı, İstanbul: Emek Basımevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=313"
  },
  "MUT 3131": {
   "code": "MUT 3131",
   "name": "Ses Kayıt Tekniği V",
+  "nameEn": "Technique of Sound Recording V",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1354,15 +3587,87 @@
    "Hafta 13 · 8 kanallı teyplerle yapılmış olan kayıtların miksajı.",
    "Hafta 14 · 8 kanallı teyplerle yapılmış olan kayıtların miksajı."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Master teyplerde çok kanallı miksaj için ekipman.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Master teyplerde çok kanallı miksaj için ekipman ve fonksiyonal işlemler.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Kontrol odasındaki uygulamalar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Konsol.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Sinyal akışı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kontrol mantığı ve patch lerin oluşumu.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kontrol mantığı ve patch lerin oluşumu.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Profesyonel teyplerin kullanımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Profesyonel teyplerin kullanımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Profesyonel teyplerin kullanımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Manyetik bant ve dijital çalışma birimlerinin steryo kayıtlarla uygulanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Manyetik bant ve dijital çalışma birimlerinin steryo kayıtlarla uygulanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "8 kanallı teyplerle yapılmış olan kayıtların miksajı.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "8 kanallı teyplerle yapılmış olan kayıtların miksajı.",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Recording Production Techniques, WHITE, Paul, , 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=3131",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=3131"
  },
  "MUT 3132": {
   "code": "MUT 3132",
   "name": "Ses Kayıt Tekniği VI",
+  "nameEn": "Technique of Sound Recording VI",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1394,15 +3699,87 @@
    "Hafta 13 · Müzikal proje uygulaması",
    "Hafta 14 · Müzikal proje uygulaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Stüdyo araç ve gereçlerinin kullanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Stüdyo araç ve gereçlerinin kullanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Multimedya üretimileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Multimedya üretimileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "MTC",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "VTC",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "LTC",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "SMPTE",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "FSK",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Uygulama ve uyarlamalar",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulama ve uyarlamalar",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulama ve uyarlamalar",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Müzikal proje uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Müzikal proje uygulaması",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=3132",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=3132"
  },
  "MUT 323": {
   "code": "MUT 323",
   "name": "Yay Yapımı",
+  "nameEn": "Bow Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1434,15 +3811,87 @@
    "Hafta 13 · Türk yaylı sazlarında kullanılan arşelerin yapımları ile ilgili bilgiler.",
    "Hafta 14 · Klasik kemençe ve Karadeniz kemençe arşelerinin yapımları ve özellikleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Arşe yapımında kullanılan alet aparatlardan rende, matkap, kesici kalem ve bıçakların incelenmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Testereler, eğeler, mengeneler ve sistirelerin incelenmesi. Arşede kullanılan ağaçlar ve özellikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Arşe kıl takma aparatının eskiz kâğıdına ilk şeklinin çizimi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Eskiz çiziminin aydınger kâğıdına çini mürekkebi ile taşınması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Arşe kıl takma aparatının malzemelerin temini ve kesimi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Arşe kıl takma aparatının tamamlanması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Batı yaylı sazlarında kullanılan keman arşesinin yapımı ile ilgili bilgiler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Viyola arşesinin özellikleri hakkında bilgiler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Viyolonsel arşesi yapımı ve özellikleri ile ilgili bilgiler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Kontrbas arşesi ve ekolleri hakkında bilgiler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Arşelerin bakımı, cilasının temizliği.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Arşeye kıl takılma işlemleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Türk yaylı sazlarında kullanılan arşelerin yapımları ile ilgili bilgiler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Klasik kemençe ve Karadeniz kemençe arşelerinin yapımları ve özellikleri.",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Retport, William C. 1964. Bows and Bow Makers, London"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=323"
  },
  "MUT 343": {
   "code": "MUT 343",
   "name": "Çalgı Akustiği",
+  "nameEn": "Instrument Acoustics",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1478,15 +3927,87 @@
    "Hafta 13 · Üflemeli çalgıların akustik özellikleri 2",
    "Hafta 14 · Vurmalı çalgıların akustik özellikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel fizik bilgisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ses kaynağının özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yayılma ortamının özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Fizyolojik olarak ses: kulağın yapısı, işitme olayı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Müzik sesi kaynakları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Müzik sesinin algılanması",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Ölçüm aletlerinin özellikleri",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Mızraplı çalgıların akustik özellikleri 1",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Mızraplı çalgıların akustik özellikleri 2",
+    "outcomes": "5-6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Yaylı çalgıların akustik özellikleri 1",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Yaylı çalgıların akustik özellikleri 2",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Üflemeli çalgıların akustik özellikleri 1",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Üflemeli çalgıların akustik özellikleri 2",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Vurmalı çalgıların akustik özellikleri",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "Zeren, Ayhan, 1995, Müzik Fiziği, İstanbul: Pan Yayıncılık"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=343",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=343"
  },
  "MUT 354": {
   "code": "MUT 354",
   "name": "Tulum Yapımı",
+  "nameEn": "Tulum Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1518,15 +4039,87 @@
    "Hafta 13 · Kılıfının dikilmesi.",
    "Hafta 14 · Navın gudaya takılması ve reglaj uygulaması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tulumun anatomik yapısı ve projelendirilmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin, araç ve gereçlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Navın projeye göre kesilip şekillendirilmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Şadırnağın oyularak yapılması.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Analıkların ve dillik yerlerinin yapılması.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kamışların hazırlanması ve analık kısmına montajı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Gomalak cilanın hazırlanması ve uygulanması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ses deliklerinin açılması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Dilliklerin yapılması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Dillik ve ses deliklerinin akordu ve entonasyonu.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Üfleme bölümünün yapımı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Gudanın yapımı.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kılıfının dikilmesi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Navın gudaya takılması ve reglaj uygulaması.",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 2000. Keman Yapım Sanatı ve Sanatçıları, İstanbul: Emek Basımevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=354",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=354"
  },
  "MUT 361": {
   "code": "MUT 361",
   "name": "Çalgı Bilgisi I",
+  "nameEn": "Knowledge of Instrument I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1559,15 +4152,87 @@
    "Hafta 13 · Klarnet, saksafon, trompet.",
    "Hafta 14 · Korno, trombon, tuba."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çalgının tanımı ve sınıflandırılması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Vurmalı çalgıların tanıtımı. Ritim çalan vurmalı çalgılar. Melodi çalan vurmalı çalgılar.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Davul, kös dümbelek, küp,",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Darbuka, halile, def, daire.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Bendir, cazdefi, maragas, tumba.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Nakkare, kudüm, deblek , tinpani.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Çalpara, kaşık, kastanyet, , üçgen. Ara sınav.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Bongo, , metronom, bateri, silofon, santur.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Nefesli çalgıların tanıtımı. Nefesli çalgılarda ses tonu tespiti.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Dilli ve dilsiz kaval, sipsi, zurna, mey.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Tulum, çığırtma, nefir, girift, ney.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Flüt, obua, fagot.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Klarnet, saksafon, trompet.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Korno, trombon, tuba.",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1994. Enstruman Bilimi (Organoloji), İstanbul: Yeni Doğan Basımevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=361",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=361"
  },
  "MUT 363": {
   "code": "MUT 363",
   "name": "Serbest Proje Çalışması I",
+  "nameEn": "Individual Project Studies I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1599,15 +4264,87 @@
    "Hafta 13 · Analizler 2",
    "Hafta 14 · Analizler 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bir konunun okunması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Tartışma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Analizin tanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bir konunun eleştirisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Güncel yayınlardan alınmış yazılı materyallerin analizi ve tartışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kayıtlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çokluortam 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İnternet kaynakları 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İnternet kaynakları 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Çokluortam 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Stil ve içeriği dikkate alarak danışmanla birlikte final ödevi yazımı üstüne çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Analizler 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Analizler 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Analizler 3",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Barzun, Jacques, and Henry F. Graff. 2004. Modern Araştırmacı. Translated by Fatoş Dilber. Ankara: TÜBİTAK Yayınları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=363",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=363"
  },
  "MUT 364": {
   "code": "MUT 364",
   "name": "Miskal Yapımı",
+  "nameEn": "Miskal Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1639,15 +4376,87 @@
    "Hafta 13 · Gomalak cilanın hazırlanması ve uygulanması.",
    "Hafta 14 · Entanasyon ayarları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Miskalin anatomik yapısı ve projelendirilmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tonlarına göre miskalin kamış ölçüleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yapımında kullanılan malzemelerin, araç ve gereçlerin tanıtımı.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kamışların temizlenmesi.1",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kamışların temizlenmesi.2",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Boğumların temizlenmesi.1",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Boğumların temizlenmesi.2",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Kamışların birleştirilmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Kamış ağızlarının tesviyesi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Akort ve reglaj uygulamaları.1",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Akort ve reglaj uygulamaları.2",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Üstyüzey işlemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Gomalak cilanın hazırlanması ve uygulanması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Entanasyon ayarları.",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 2000. Keman Yapım Sanatı ve Sanatçıları, İstanbul: Emek Basımevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=364",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=364"
  },
  "MUT 368": {
   "code": "MUT 368",
   "name": "Çalgı Bilgisi II",
+  "nameEn": "Knowlodge of Instrument II",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1680,15 +4489,87 @@
    "Hafta 13 · Synthesizer",
    "Hafta 14 · Sampler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yaylı çalgıların tanıtımı. Iklığ, hegit, rebek.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Üç telli kemençe, dört telli kemençe.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Rebap, kemane, kemançe, karadeniz kemençesi.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Keman, viyola, viyolonsel, kontrbas.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Mızraplı çalgıların tanıtımı. Kopuz, çeng, lir.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Bağlama ailesi, tar.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Tanbur, ud, lavta. Ara sınav.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kanun, gitar, arp.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Tuşlu çalgıların tanıtımı. Havalı, mızraplı, vurmalı ve elektronik tuşlu çalgılar.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Org, organo, akordeon, garmon.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Epinet, klavsen, harmonium, harpsichord.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Dijital org ve piyano.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Synthesizer",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Sampler",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1994. Enstruman Bilimi (Organoloji), İstanbul: Yeni Doğan Basımevi Ltd. Şti."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=368",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=368"
  },
  "MUT 371": {
   "code": "MUT 371",
   "name": "Çok Kanallı Miks",
+  "nameEn": "Multitrack Mixing",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1720,16 +4601,88 @@
    "Hafta 13 · Miks uygulama – otomasyon teknikleri",
    "Hafta 14 · Miks uygulama – yaratıcı miks"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Miks tanımı ve temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Efektler ve türleri 1",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Efektler ve türleri 2",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Efektler ve türleri 3",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Farklı Çalgılara, farklı yaklaşımlarla ilgili bilgiler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Miks uygulama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Miks uygulama - dinamik efektler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Miks uygulama – modulasyon efektler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Miks uygulama – bus ve send kullanımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Miks uygulama – side chain tekniği",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Miks uygulama - dengeleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Miks uygulama – alan yaratımı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Miks uygulama – otomasyon teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Miks uygulama – yaratıcı miks",
+    "outcomes": "1-2-4"
+   }
+  ],
   "textbooks": [
    "Izhaki, Roey. 2008. Mixing Audio: Concepts, Practices, and Tools. New York: Routledge.",
    "Owsinski, Bobby. 2006. The Mixing Engineer's Handbook. Burbank, CA: Bobby Owsinski Media Group."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=371",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=371"
  },
  "MUT 372": {
   "code": "MUT 372",
   "name": "Görüntü İçin Ses",
+  "nameEn": "Audio for Video",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1761,15 +4714,87 @@
    "Hafta 13 · Sinemada müziğin kullanımı 2",
    "Hafta 14 · Proje eleştirileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Görsel ve duysal algının birleştiği noktalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Senkronizasyon ve video formatları 1",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Senkronizasyon ve video formatları 2",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sinemada duysal efektler ve tasarımları 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sinemada duysal efektler ve tasarımları 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sinemada duysal efektler ve tasarımları 3",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Foley tekniği ile tasarım 1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Foley tekniği ile tasarım 2",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Foley tekniği ile tasarım 3",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Seslendirme 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Seslendirme 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sinemada müziğin kullanımı 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sinemada müziğin kullanımı 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje eleştirileri",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Holman, T. 2010, Sound for Film and Television, Routledge"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=372",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=372"
  },
  "MUT 374": {
   "code": "MUT 374",
   "name": "Elektronik Çalgı Bilgisi",
+  "nameEn": "Electronic Instrument Details",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1801,16 +4826,88 @@
    "Hafta 13 · Farklı programların karşılaştırılması 2",
    "Hafta 14 · Farklı programların karşılaştırılması 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayısal sinyal işlemleri 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Sayısal sinyal işlemleri 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "VST enstrumanların kullanımları 1",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "VST enstrumanların kullanımları 2",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "VST enstrumanların kullanımları 3",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Midi editing işlemleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Midi-audio dönüşümü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Midi-audio uygulama çalışmaları.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Audio editing uygulama çalışmaları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Örnekleme ve granüler sentezleme.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Proje hazırlık çalışmaları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Farklı programların karşılaştırılması 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Farklı programların karşılaştırılması 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Farklı programların karşılaştırılması 3",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Cipriani, Alessandro, and Maurizio Giri. 2010. Electronic Music and Sound Design: Theory and Practice with Max and MSP. Vol. 1. Rome: ConTempoNet.",
    "Roads, Curtis. 2023. The Computer Music Tutorial. 2nd ed. Cambridge, MA: MIT Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=374",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=374"
  },
  "MUT 376": {
   "code": "MUT 376",
   "name": "Tar Yapımı",
+  "nameEn": "Tar Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1845,15 +4942,87 @@
    "Hafta 13 · Eşik, başeşik ve burgu hazırlanıp yerlerine montajı. Perdelerin bağlanması",
    "Hafta 14 · Tarın tellerinin takılması ve reglaj."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tarın anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Teknenin kesimi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Tekneye tar şeklinin verilmesi 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Tekneye tar şeklinin verilmesi 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Teknenin içinin tesviye edilip ölçülendirilmesi. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Teknenin içinin tesviye edilip ölçülendirilmesi. 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Teknenin içinin tesviye edilip ölçülendirilmesi. 3",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Sapın, burguluğun, tuşenin, hazırlanıp yerine takılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Derinin tekneye yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Üstyüzey işlemlerinin yapılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Cila yapılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Eşik, başeşik ve burgu hazırlanıp yerlerine montajı. Perdelerin bağlanması",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Tarın tellerinin takılması ve reglaj.",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=376",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=376"
  },
  "MUT 381": {
   "code": "MUT 381",
   "name": "Remiks",
+  "nameEn": "Remixing",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1885,15 +5054,87 @@
    "Hafta 13 · Proje eleştrisi 1",
    "Hafta 14 · Proje eleştrisi 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Remiks tanımı ve kavramlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Farklı remiks tekniklerinin kullanıldığı müziklerin analizi 1",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Farklı remiks tekniklerinin kullanıldığı müziklerin analizi 2",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Farklı remiks tekniklerinin kullanıldığı müziklerin analizi 3",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Örnek proje üzerinde remiks uygulama 1",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Örnek proje üzerinde remiks uygulama 2",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Örnek proje üzerinde remiks uygulama 3",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Örnek proje üzerinde remiks uygulama 4",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Örnek proje üzerinde remiks uygulama 5",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Örnek proje üzerinde remiks uygulama 6",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Örnek proje üzerinde remiks uygulama 7",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Örnek proje üzerinde remiks uygulama 8",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Proje eleştrisi 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje eleştrisi 2",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Preve, Francis; 2006. The Remixer’s Bible, NY: Backbeat books"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=381",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=381"
  },
  "MUT 382": {
   "code": "MUT 382",
   "name": "Elektrik-Elektronik",
+  "nameEn": "Electric-Electronics",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1925,15 +5166,87 @@
    "Hafta 13 · Sayısal Ses Kayıt Cihazları 2",
    "Hafta 14 · Kasetçalar, CD çalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Amplifikatörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Amplifikatörlerde Distorsiyon ve Gürültü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Güç Kuvvetlendiricileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Ses Mikseri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Filtreler ve Equalizer",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Efekt Cihazları 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Efekt Cihazları 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Mikrofonlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Hoparlörler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Analog Ses Kayıt Cihazları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal Ses Kayıt Cihazları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sayısal Ses Kayıt Cihazları 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Kasetçalar, CD çalar",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Self, Douglas. 2020. Small Signal Audio Design. 3rd ed. New York: Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=382",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=382"
  },
  "MUT 384": {
   "code": "MUT 384",
   "name": "Elektro Akustik Kompozisyon",
+  "nameEn": "Electro Acoustic Composition",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1965,15 +5278,87 @@
    "Hafta 13 · Yapıt eleştirisi 2",
    "Hafta 14 · Yapıt eleştirisi 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektroakustik müzik tarihi 1",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektroakustik müzik tarihi 2",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Fransa’da Musique Concrete",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Almanya’da Elektronische Musik",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Amerika’da Tape Music",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Elektroakustik kompozisyon teknikleri 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Elektroakustik kompozisyon teknikleri 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Elektroakustik kompozisyon teknikleri 3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Farklı ses yaratım teknikleri ve uygulama : Toplamsal Sentez",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Farklı ses yaratım teknikleri ve uygulama : Eksiltici Sentez",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Farklı ses yaratım teknikleri ve uygulama : Granüler Sentez",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Yapıt eleştirisi 1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yapıt eleştirisi 2",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yapıt eleştirisi 3",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Russ, Martin. 2009. Sound Synthesis and Sampling.Boston:Focal Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=384",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=384"
  },
  "MUT 386": {
   "code": "MUT 386",
   "name": "Serbest Proje Çalışması II",
+  "nameEn": "Individual Project Studies II",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2005,15 +5390,87 @@
    "Hafta 13 · Analizler 2",
    "Hafta 14 · Analizler 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bir konunun okunması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Tartışma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Analizin tanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bir konunun eleştirisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Güncel yayınlardan alınmış yazılı materyallerin analizi ve tartışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kayıtlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çokluortam 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İnternet kaynakları 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İnternet kaynakları 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Çokluortam 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Stil ve içeriği dikkate alarak danışmanla birlikte final ödevi yazımı üstüne çalışma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Analizler 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Analizler 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Analizler 3",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Barzun, Jacques, and Henry F. Graff. 2004. Modern Araştırmacı. Translated by Fatoş Dilber. Ankara: TÜBİTAK Yayınları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=386",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=386"
  },
  "MUT 388": {
   "code": "MUT 388",
   "name": "Müzik Tek.Tasarım & Geliştirme",
+  "nameEn": "Design and Innovation in Music Technologies",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2045,15 +5502,87 @@
    "Hafta 13 · Final projesi uygulaması 6",
    "Hafta 14 · Final projesi uygulaması 7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin temel amacının örneklerle açıklanması 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Dersin temel amacının örneklerle açıklanması 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel tasarım prensipleri 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Temel tasarım prensipleri 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Basit tasarımların çözümlemeleri 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Basit tasarımların çözümlemeleri 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Basit tasarımların çözümlemeleri 3",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Final projesi uygulaması 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Final projesi uygulaması 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Final projesi uygulaması 3",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Final projesi uygulaması 4",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Final projesi uygulaması 5",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Final projesi uygulaması 6",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Final projesi uygulaması 7",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Holland, Simon, Katie Wilkie, Paul Mulholland, ve Allan Seago, ed. 2013. Music and Human-Computer Interaction. Londra: Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=388",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=388"
  },
  "MUT 390": {
   "code": "MUT 390",
   "name": "Bilg. Dest. Mesleki.Res. I",
+  "nameEn": "Computer Assisted Proffesional Drawing I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2085,15 +5614,87 @@
    "Hafta 13 · Keman sap ve burguluğunun önden, üstten, yandan çizimi.",
    "Hafta 14 · Keman sap ve burguluğunun önden, üstten, yandan çizimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Autocad programını bilgisayara kurma ve programı tanıtma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Görünüm komutları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kenetleme araçları ve seçim komutları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Çizime giriş.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Çizgi çizme, obje silme, daire çizme, dikdörtgen çizme.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kopyalama, taşıma, döndürme, aynalama, kırpma, uzatma komutları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Yay çizme, elips çizme, çoklu çizgi çizme, spline çizme, dolgu uygulama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ud eşiğinin önden, üstten, yandan çizimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ud burguluğunun önden ve yandan çizimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tar burguluğunun önden, üstten ve yandan çizimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Bağlama burguluğu ve tanbur burguluğunun önden, yandan çizimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Keman kuyrugunun önden ve yandan çizimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Keman sap ve burguluğunun önden, üstten, yandan çizimi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Keman sap ve burguluğunun önden, üstten, yandan çizimi.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Ekebaş, Ahmet Nejat. 1998. Auto Cad 14, İstanbul: Seçkin Yayınevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=390",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=390"
  },
  "MUT 401": {
   "code": "MUT 401",
   "name": "Viyolonsel Yapımı I",
+  "nameEn": "Cello Making I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2125,16 +5726,88 @@
    "Hafta 13 · Üst tablanın ölçülendirilmesi. Ses deliklerinin açılması ve tesviyesi.",
    "Hafta 14 · Bas balkonun yapıştırılması. Üst tablonun yapıştırılarak ses kutusunun bitirilmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Viyolonsel’in anatomik yapısını tanıma, projelendirme ve şablonların hazırlanması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılan malzemelerin hazırlanması ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalıp yapımı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Takozların kalıba montajı ve tesviyesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Orta form yanlıklarının hazırlanması ve montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Üst form yanlıklarının hazırlanması ve montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Alt form yanlıklarının hazırlanması ve montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Alt mukavemet çıtalarının dönülmesi ve alt tablanın geçici olarak yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Üst mukavemet çıtalarının dönülmesi ve üst tablanın geçici olarak yapıştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Tabla kenar tesviyelerinin bitirilmesi. Fileto kanallarının açılması ve filetoların montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Tabla dış form tesviyelerinin yapılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Alt tablanın ölçülendirilmesi ve montajı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Üst tablanın ölçülendirilmesi. Ses deliklerinin açılması ve tesviyesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Bas balkonun yapıştırılması. Üst tablonun yapıştırılarak ses kutusunun bitirilmesi.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 2000. Keman Yapım Sanatı ve Sanatçıları, İstanbul: Emek Basımevi.",
    "Strobel, A. Henry. 1995. Useful Measurements For Violin Makers, USA."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=401"
  },
  "MUT 402": {
   "code": "MUT 402",
   "name": "Viyolonsel Yapımı II",
+  "nameEn": "Cello Making II",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2166,16 +5839,88 @@
    "Hafta 13 · Tuşun, burguların ve baş eşiğinin montajı.",
    "Hafta 14 · Eşik, candireği ve tel takılması. Reglaj uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sap formunun malzeme üzerine işaretlenmesi ve kesimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Salyangoz çalışması için formun düzeltilmesi ve burgu deliklerinin açılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Salyangoz figürünün katmanlarının kesimi ve tesviyesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Burguluk arkası ve salyangoz alın kanallarının açılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Burguluk içinin oyulması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Tuşun ölçülendirilmesi, formunun tesviyesi ve sapa geçici yapıştırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Sapın seskutusuna montajı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Sap arkası ve sapdibi tesviyesinin yapılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Üstyüzey işlemlerinin yapılması ve cilaya hazırlanması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Temel cilasının yapımı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Renk cilasının yapımı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Bitirme cilasının yapımı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Tuşun, burguların ve baş eşiğinin montajı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Eşik, candireği ve tel takılması. Reglaj uygulamaları.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 2000. Keman Yapım Sanatı ve Sanatçıları, İstanbul: Emek Basımevi",
    "Strobel, A. Henry. 1995. Useful Measurements For Violin Makers, USA"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=402"
  },
  "MUT 403": {
   "code": "MUT 403",
   "name": "Bendir Yapımı",
+  "nameEn": "Bendir Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2207,15 +5952,86 @@
    "Hafta 13 · Deri fazlalıklarının tesviyesi ve filetonun yapıştırılması.",
    "Hafta 14 · Akort ve reglaj uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bendirin anatomik yapısı ve projelendirme.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Şablonların hazırlanması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Malzemelerin, kullanılan araç ve gereçlerin tanıtımı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kasnak malzemesinin ölçülendirilmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kasnağın bükülerek formunun verilmesi. 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kasnağın bükülerek formunun verilmesi. 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kasnak dış tesviyesinin yapımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Kasnak iç tesviyesinin yapımı."
+   },
+   {
+    "week": 9,
+    "topic": "Kasnak iç çemberinin hazırlanması ve yapıştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Derinin hazırlanması ve ölçülendirilmesi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Tuş tesviyesinin yapımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Derinin yapıştırılması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Deri fazlalıklarının tesviyesi ve filetonun yapıştırılması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Akort ve reglaj uygulamaları.",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1994. Enstruman Bilimi (Organoloji), İstanbul: Yeni Doğan Basımevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=403",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=403"
  },
  "MUT 411": {
   "code": "MUT 411",
   "name": "Kanun Yapımı I",
+  "nameEn": "Kanun Making I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2248,15 +6064,87 @@
    "Hafta 13 · Deri ve deri üzeri filetolarının yapıştırılması.",
    "Hafta 14 · Burguluğun ve tel takacağı deliklerinin delinmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Plan ve projenin hazırlanması, şablonlarının çıkarılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapımda kullanılan malzemelerin, araç ve gereçlerin tanıtılması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Burguluk, tel takacağı ve yanlıkların hazırlanıp montajının yapılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "İç köprünün hazırlanıp, montajının yapılması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Alt ve üst balkonların hazırlanıp montajı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Ses tablası fileto kanallarının açılması ve filetoların yapıştırılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kafeslerin kesimi ve ses tablasına montajı.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ses tablasının tekneye yapıştırılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Alt tablanın tekneye yapıştırılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Yan desenlerin hazırlanıp tekneye yapıştırılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kenar fileto kanallarının açılması ve filetoların yapıştırılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Tel takacağı kapağının yapımı.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Deri ve deri üzeri filetolarının yapıştırılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Burguluğun ve tel takacağı deliklerinin delinmesi.",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=411"
  },
  "MUT 4114": {
   "code": "MUT 4114",
   "name": "Sanat Sosyolojisi",
+  "nameEn": "Sociology of Art",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2270,12 +6158,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4114",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4114"
  },
  "MUT 4118": {
   "code": "MUT 4118",
   "name": "Atölye VIII",
+  "nameEn": "Workshop VIII",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2309,15 +6197,87 @@
    "Hafta 13 · Candireği ve eşiğin yapımı ve montajı",
    "Hafta 14 · Tellerin takılıp reglaj yapılarak çalgının çalınır duruma getirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tabloların geçici olarak yapıştırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tablo kenar tesviyelerinin bitirilmesi ve filetoların yapıştırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tablo bombelerinin verilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Alt tablonun ölçülendirilerek yapıştırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Üst tablonun ölçülendirilmesi, ses deliklerinin açılması ve bas balkon yapıştırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Üst tablonun yapıştırılması ve sapın yapımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Sapın bitirilmesi ve yerine takılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Çalgının temizlenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Temizliğin bitirilmesi ve çalgının cilâya hazırlanması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Temel cilânın yapımı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Cilânın tamamlanması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Tuş, burgu ve baş eşiğin takılması",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Candireği ve eşiğin yapımı ve montajı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Tellerin takılıp reglaj yapılarak çalgının çalınır duruma getirilmesi",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Useful Measurements For Violin Makers, STROBEL, A. Henry, USA, 1995,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4118",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4118"
  },
  "MUT 412": {
   "code": "MUT 412",
   "name": "Kanun Yapımı II",
+  "nameEn": "Kanun Making II",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2349,15 +6309,87 @@
    "Hafta 13 · Mandal çakımı 5",
    "Hafta 14 · Reglaj uygulaması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mandal tahtasının hazırlanması ve yapıştırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tel ayıracağının hazırlanması ve yapıştırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tel kanallarının açılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Üstyüzey işlemleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gomalak cila hazırlaması ve uygulanması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Burguların, eşiğin ve tellerin takılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Akort.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Dip mandalların çakımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Mandal çakımı 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Mandal çakımı 2",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Mandal çakımı 3",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Mandal çakımı 4",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Mandal çakımı 5",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Reglaj uygulaması.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=412",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=412"
  },
  "MUT 4133": {
   "code": "MUT 4133",
   "name": "Partisyon Analizi",
+  "nameEn": "Analysis of Orchestration",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2371,12 +6403,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4133",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4133"
  },
  "MUT 414": {
   "code": "MUT 414",
   "name": "Rebap Yapımı",
+  "nameEn": "Rebap Making",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2408,15 +6440,87 @@
    "Hafta 13 · Rebap çalgısının cilasının yapılması.",
    "Hafta 14 · Rebabın burguları, eşiği ve tellerinin takılarak çalınacak duruma getirilmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Rebap çalgısının projeden şablonlarının yapımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Rebap yapımında kullanılan malzemelerin ve aletlerin tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Rebap teknesi olarak kullanılacak Hindistan cevizinin dış tesviye işleminin yapılması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Hindistan cevizinde deri yapıştırılacak bölümün kesilmesi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Hindistan cevizinin iç tesviye işleminin yapılması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Hindistan cevizinde ses deliğinin açılması.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Rebap sapının tornada yapımı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Pikin yapımı ve sapa montajı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Sapın tekneye montajı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Ses deliği kafesinin yapımı ve tekneye montajı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Derinin tekneye yapıştırılması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Rebabın tesviyesi ve temizliği yapılarak cila yapımına hazırlanması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Rebap çalgısının cilasının yapılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Rebabın burguları, eşiği ve tellerinin takılarak çalınacak duruma getirilmesi.",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=414",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=414"
  },
  "MUT 4313": {
   "code": "MUT 4313",
   "name": "Tamamlayıcı Atölye I",
+  "nameEn": "Complementary Workshop I",
   "language": "Türkçe",
   "credits": {
    "theory": 1,
@@ -2447,15 +6551,87 @@
    "Hafta 13 · Viyola yanlıklarının yapıştırılmasında kullanılan aparatların yapımı",
    "Hafta 14 · Keman ve Viyola bas balkon aparatlarının hazırlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Keman cila çeşitleriyle ilgili bilgilerin verilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Keman cilasında kullanılan malzemelerle ilgili bilgilerin verilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Keman cilasında kullanılan malzemelerin hazırlanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Keman cilasının oluşumu",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Hazırlanan keman cilasının keman üzerinde uygulanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Keman sap malzemelerinin temini ve bunun üzerinde mukayeseli salyangoz çalışmaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Mukayeseli (Sap) salyangoz çalışmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Keman ses kutusunda mukayeseli form çalışmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Keman ses kutusunda mukayeseli form çalışmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Keman ses (Akustik) kutusunda alt ve üst tabloyu yapıştırmak için sıkıştırma aparatlarının yapımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Viyola ses (Akustik) kutusunda alt ve üst tabloyu yapıştırmak için sıkıştırma aparatlarının oluşumu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Keman yanlıklarının yapıştırılmasında kullanılan aparatların yapımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Viyola yanlıklarının yapıştırılmasında kullanılan aparatların yapımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Keman ve Viyola bas balkon aparatlarının hazırlanması",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4313"
  },
  "MUT 4328": {
   "code": "MUT 4328",
   "name": "Çalgı Tını Bilgisi",
+  "nameEn": "Harmonic Techniques Instruments",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2487,15 +6663,87 @@
    "Hafta 13 · Ses kayıtlarında tınısal özellikler.",
    "Hafta 14 · Ses kayıtlarında tınısal özellikler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sesin tınısını meydana getiren özellikler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Armoniklerin teorik olarak hesaplanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tınıyı meydana getiren armonik farklılıkların akustik ile ilişkisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Enstrumanların armonik bileşenleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Enstrumanların armonik bileşenleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yaylı çalgılar",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yaylı çalgılar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Nefesli çalgılar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Nefesli çalgılar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Vurmalı çalgılar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Ses kayıtlarında tınısal özellikler.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Ses kayıtlarında tınısal özellikler.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ses kayıtlarında tınısal özellikler.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Ses kayıtlarında tınısal özellikler.",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Müzik Fiziği, ZEREN, M.A, Pan Yayıncılık, 1995,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4328",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=4328"
  },
  "MUT 436": {
   "code": "MUT 436",
   "name": "Piyano Bakım ve Onarım Bilgisi",
+  "nameEn": "The Knowledge of Piano Care and Restoration",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2529,16 +6777,88 @@
    "Hafta 13 · Piyano Akordu 1.",
    "Hafta 14 · Piyano Akordu 2."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tuşlu çalgıların tarihçesi ve tanıtımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Piyanonun anatomik olarak incelenmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Piyano bakım ve onarımında kullanılan alet ve aparatlar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Mekanizmanın anatomik olarak incelenmesi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Mekanizma bakımı ve onarımı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Akort çivisi ve tel değişimi.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Ses tablosunda oluşabilecek arızalar ve onarımları.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Piyanonun ağaç konstrüksiyonunda üst yüzey işlemleri. (boya ve cila)Ara sınav.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Konsol piyano mekanizmasının anatomik olarak incelenmesi.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kuyruklu piyano mekanizmasının anatomik olarak incelenmesi.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Boşluk ayarı, klavye ayarı ve surdin ayarı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Şerit çekme ve çözülme ayarı, çekiç ayarı, yakalayıcı ayarı.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Piyano Akordu 1.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Piyano Akordu 2.",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1999.Tuşlu Sazlar Tarihçesi ve Tanıtımı, PiyanoYapım ve Bakımı. İstanbul: Emek Basımevi.",
    "Laible, Ulrich. 1993. Fachkunde Klavierbau. Frankfurt."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=436",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=436"
  },
  "MUT 441": {
   "code": "MUT 441",
   "name": "Mastering",
+  "nameEn": "Mastering",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2570,15 +6890,87 @@
    "Hafta 13 · Dijital dağıtım formatları 1",
    "Hafta 14 · Dijital dağıtım formatları 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mastering’e giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "RMS değeri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Mastering spektrum işleyicileri 1",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mastering spektrum işleyicileri 2",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Mastering spektrum işleyicileri 3",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Mastering dinamik işleyicileri 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Mastering dinamik işleyicileri 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Mastering dinamik işleyicileri 3",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "MS mastering tekniği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Ses restorasyonu 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Ses restorasyonu 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Klasik müzik mastering teknikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Dijital dağıtım formatları 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Dijital dağıtım formatları 2",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Katz, Bob. 2014. Mastering Audio: The Art and the Science. 3rd ed. Burlington, MA: Focal Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=441",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=441"
  },
  "MUT 448": {
   "code": "MUT 448",
   "name": "Prodüksiyon Teknikleri",
+  "nameEn": "Production Techniques",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2610,16 +7002,88 @@
    "Hafta 13 · Prodüksiyon analizleri ve uygulamalar 2",
    "Hafta 14 · Prodüksiyon analizleri ve uygulamalar 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Prodüksiyon analizine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Prodüksiyonda kayıt teknikleri 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Prodüksiyonda kayıt teknikleri 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Prodüksiyonda kayıt teknikleri 3",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Prodüksiyonda editing teknikleri 1",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Prodüksiyonda editing teknikleri 2",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Prodüksiyonda editing teknikleri 3",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Prodüksiyonda miksaj teknikleri 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Prodüksiyonda miksaj teknikleri 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Prodüksiyonda miksaj teknikleri 3",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Prodüksiyonda miksaj teknikleri 4",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Prodüksiyon analizleri ve uygulamalar 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Prodüksiyon analizleri ve uygulamalar 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Prodüksiyon analizleri ve uygulamalar 3",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Brown, Jake. 2009. Rick Rubin: In the Studio. Toronto: ECW Press",
    "Adam, Nathan and Brady Barnett. 2006. Multi Platinum Pro Tools Advanced Editing, Pocketing and Autotuning Techniques. Boston: Focal Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=448",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=448"
  },
  "MUT 451": {
   "code": "MUT 451",
   "name": "Sahne Kayıt Teknikleri",
+  "nameEn": "Recording on Stage",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2651,15 +7115,87 @@
    "Hafta 13 · Çokluortam için kayıt 1",
    "Hafta 14 · Çokluortam için kayıt 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Taşınabilir stüdyo ekipmanları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Ekipmanların farklı bağlantı kombinasyonları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Sahne keşif ve tasarım",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Akustik ölçüm ve olasılık hesapları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ses dağılım planı ve kurgu",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Proje ile ilgili ön araştırma ve planın oluşturulması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Genel plan üzerinde deneme kaydı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kapalı mekanlarda kayıt",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Açık mekanlarda kayıt",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "TV Programı kaydı",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Konser kaydı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Popüler ve küçük gruplarla kayıt",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çokluortam için kayıt 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Çokluortam için kayıt 2",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Barlett B., Barlett J., 2011, Recording Music on Location, Focal Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=451",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=451"
  },
  "MUT 452": {
   "code": "MUT 452",
   "name": "Bilgisayar Müziği",
+  "nameEn": "Computer Music",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2691,16 +7227,88 @@
    "Hafta 13 · Projelerin tartışılması 1",
    "Hafta 14 · Projelerin tartışılması 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgisayar müziği tanım ve tarihi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayar müziği tarihi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Max/MSP yazılımı ve kodlama ayrıntıları 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Max/MSP yazılımı ve kodlama ayrıntıları 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Max/MSP yazılımı ve kodlama ayrıntıları 3",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Max/MSP yazılımı ve kodlama ayrıntıları 4",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Max/MSP yazılımı ve kodlama ayrıntıları 5",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Metasynth yazılımı ve kullanımı ayrıntıları 1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Metasynth yazılımı ve kullanımı ayrıntıları 2",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Metasynth yazılımı ve kullanımı ayrıntıları 3",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Metasynth yazılımı ve kullanımı ayrıntıları 4",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Metasynth yazılımı ve kullanımı ayrıntıları 5",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Projelerin tartışılması 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Projelerin tartışılması 2",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Cipriani, Alessandro, and Maurizio Giri. 2010. Electronic Music and Sound Design: Theory and Practice with Max and MSP. Vol. 1. Rome: ConTempoNet.",
    "Roads, Curtis. 2023. The Computer Music Tutorial. 2nd ed. Cambridge, MA: MIT Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=452",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=452"
  },
  "MUT 461": {
   "code": "MUT 461",
   "name": "Canlı Ses Donatımı",
+  "nameEn": "Live Sound Reinforcement",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2732,15 +7340,87 @@
    "Hafta 13 · Sahne monitör sistemleri",
    "Hafta 14 · P.A. sistem bağlantı metodları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ses donatımı sistem temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sesin doğası, duyuş ve temel psikoakustik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sesin ölçümünde kullanılan terim ve kavramlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Mikrofonlar",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Eq ve diğer sinyal işlemciler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Mikserler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kolonlar ve crossover",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Güç amplifikatörleri ve empedans faktörü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Genel sistem değerlendirmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Konuşma donatımı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Müzik donatımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Konser sistemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sahne monitör sistemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "P.A. sistem bağlantı metodları",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Davis, G., Jones R., 1989, Live Sound Reinforcement, Yamaha Corp."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=461",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=461"
  },
  "MUT 463": {
   "code": "MUT 463",
   "name": "Serbest Proje Çalışması III",
+  "nameEn": "Individual Project Studies III",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2772,15 +7452,87 @@
    "Hafta 13 · Analizler 2",
    "Hafta 14 · Analizler 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bir konunun okunması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Tartışma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Analizin Tanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bir konunun eleştirisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Güncel yayınlardan alınmış yazılı materyallerin analizi ve tartışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kayıtlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çokluortam 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İnternet kaynakları 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İnternet kaynakları 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Çokluortam 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Stil ve içeriği dikkate alarak danışmanla birlikte final ödevi yazımı üstüne çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Analizler 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Analizler 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Analizler 3",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Barzun, Jacques, and Henry F. Graff. 2004. Modern Araştırmacı. Translated by Fatoş Dilber. Ankara: TÜBİTAK Yayınları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=463",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=463"
  },
  "MUT 465": {
   "code": "MUT 465",
   "name": "Çalgı Restorasyonu",
+  "nameEn": "Restoration of Instruments",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2815,15 +7567,87 @@
    "Hafta 13 · Tuşlu çalgılarda oluşabilecek arızaların belirlenmesi",
    "Hafta 14 · Tuşlu çalgılarda restorasyon yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çalgıların Bakımı ve Korunması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çalgılarda oluşabilecek arızalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Çalgılarda restorasyonun önemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Restorasyonda kullanılan malzemeler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Yaylı çalgılarda oluşabilecek arızaların belirlenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yaylı çalgılarda restorasyon yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Mızraplı çalgılarda oluşabilecek arızaların belirlenmesi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Mızraplı çalgılarda restorasyon yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Nefesli çalgılarda oluşabilecek arızaların belirlenmesi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Nefesli çalgılarda restorasyon yöntemleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Vurmalı çalgılarda oluşabilecek arızaların belirlenmesi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Vurmalı çalgılarda restorasyon yöntemleri",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 13,
+    "topic": "Tuşlu çalgılarda oluşabilecek arızaların belirlenmesi",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 14,
+    "topic": "Tuşlu çalgılarda restorasyon yöntemleri",
+    "outcomes": "2-7"
+   }
+  ],
   "textbooks": [
    "YOK"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=465",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=465"
  },
  "MUT 474": {
   "code": "MUT 474",
   "name": "Çalgı Tını Bilgisi",
+  "nameEn": "Harmonic Contents of Instruments",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2854,15 +7678,87 @@
    "Hafta 13 · Klarnet, obua ve fagotun harmonik bileşenleri.",
    "Hafta 14 · Tuşlu çalgıların harmonik bileşenleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sesin tınısını meydana getiren özellikler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Harmoniklerin teorik olarak hesaplanması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tınıyı meydana getiren harmonik farklılıkların akustik ile ilişkisi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Enstrumanların harmonik bileşenleri 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Enstrumanların harmonik bileşenleri 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kemençe, kemane ve rebabın harmonik bileşenleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Keman, viyola ve viyolonselin harmonik bileşenleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Tanbur, bağlama ve lavtanın harmonik bileşenleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ud, kanun ve tarın harmonik bileşenleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Gitar ve arpın harmonik bileşenleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Sipsi, mey ve zurnanın harmonik bileşenleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Dilli ve dilsiz kavalın harmonik bileşenleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Klarnet, obua ve fagotun harmonik bileşenleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Tuşlu çalgıların harmonik bileşenleri.",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Howard, David M., and Jamie A. S. Angus. 2017. Acoustics and Psychoacoustics. 5th ed. New York: Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=474",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=474"
  },
  "MUT 486": {
   "code": "MUT 486",
   "name": "Serbest Proje Çalışması IV",
+  "nameEn": "Individual Project Studies I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2894,15 +7790,87 @@
    "Hafta 13 · Analizler 2",
    "Hafta 14 · Analizler 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bir konunun okunması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Tartışma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Analizin tanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bir konunun eleştirisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Güncel yayınlardan alınmış yazılı materyallerin analizi ve tartışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kayıtlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çokluortam 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İnternet kaynakları 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İnternet kaynakları 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Çokluortam 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Stil ve içeriği dikkate alarak danışmanla birlikte final ödevi yazımı üstüne çalışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Analizler 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Analizler 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Analizler 3",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Barzun, Jacques, and Henry F. Graff. 2004. Modern Araştırmacı. Translated by Fatoş Dilber. Ankara: TÜBİTAK Yayınları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=486",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=486"
  },
  "MUT 490": {
   "code": "MUT 490",
   "name": "Bilgisayar Destekli Mesleki Resim II",
+  "nameEn": "Computer Assisted Proffesional Drawing II",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -2936,15 +7904,87 @@
    "Hafta 13 · Gitar projesinin çizimi.",
    "Hafta 14 · Gitar projesinin çizimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ölçümlendirme.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Katmanlarla çalışma.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Yazı ekleme.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Blok haline getirme ve kullanma.",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Tarama yapma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Resim ekleme.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yazdırma.",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Kemane projesinin çizimi. 1",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Kemane projesinin çizimi. 1",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kemençe projesinin çizimi. 1",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kemençe projesinin çizimi. 2",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Gitar projesinin çizimi.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Gitar projesinin çizimi.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Gitar projesinin çizimi.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Ekebaş, Ahmet Nejat. 1998. Auto Cad 14, İstanbul: Seçkin Yayınevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=490",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=490"
  },
  "MUT 492": {
   "code": "MUT 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Thesis",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2975,10 +8015,81 @@
    "Hafta 13 · Önsöz, giriş, sonuç ve kaynakça oluşturulması",
    "Hafta 14 · Önsöz, giriş, sonuç ve kaynakça oluşturulması ve imla kontrolü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konu başlığının oluşturulması, amaç, kapsam ve yöntem belirleme.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Konu başlığının oluşturulması, amaç, kapsam ve yöntem belirleme.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Konu başlığı çerçevesindeki bilgi kaynaklarına ulaşma ve okuma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Konu başlığı çerçevesindeki bilgi kaynaklarına ulaşma ve okuma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Konu başlığı çerçevesindeki bilgi kaynaklarına ulaşma ve okuma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Bitirme çalışması içerik planlamasının oluşturulması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Bölüm başlıklarına göre alt konu başlıklarının oluşturulması.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgilerin işlenişi ve yorumlanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgilerin işlenişi ve yorumlanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgilerin işlenişi ve yorumlanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Bilgilerin işlenişi ve yorumlanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgilerin işlenişi ve yorumlanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Önsöz, giriş, sonuç ve kaynakça oluşturulması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Önsöz, giriş, sonuç ve kaynakça oluşturulması ve imla kontrolü",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "İTÜ TMDK; 2010, Bitirme Çalışması Kılavuzu, İstanbul ."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MUT&dersNo=492"
  }
 }

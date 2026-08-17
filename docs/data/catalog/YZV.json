@@ -2,6 +2,7 @@
  "YZV 101E": {
   "code": "YZV 101E",
   "name": "Yapay Zeka ve Veri Mühendisliğine Giriş ve Etik",
+  "nameEn": "Intr. to AI & Data Eng& Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -32,15 +33,87 @@
    "Hafta 13 · Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Doğal dil işlemedeki gelişmeler ve etik.",
    "Hafta 14 · Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Bilgisayar kurdu kültüründeki gelişmeler ve etik."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kampüs, fakülte ve bölüm oryantasyonu.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapay Zeka & Veri Mühendisliğine giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Programda verilen derslerin sunumu.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Davetli konuşmacı: İş veren olarak bir Yapay Zeka & Veri Mühendisi – Nasıl mühendisler istiyoruz?",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Davetli konuşmacı: Çalışan olarak bir Yapay Zeka & Veri Mühendisi – Bilişim endüstrisinde nasıl başarılı olunur?",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Davetli konuşmacı: Araştırma ve öğretim görevlisi olarak bir Yapay Zeka & Veri Mühendisi – Nasıl bir Araştırma görevlisi olunur?",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Davetli konuşmacı: Son sınıf bir Yapay Zeka & Veri Mühendisliği öğrencisi – Son sınıf öğrencisinden öneriler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Davetli konuşmacı: Yapay Zeka alanında çalışan lisansüstü öğrencisi – Neden yüksek lisans hedefliyorum?",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Davetli konuşmacı:Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi- Yapay zekadaki gelişmeler ve etik.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Robotikteki gelişmeler ve etik.",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Makine öğrenmesindeki gelişmeler ve etik.",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Derin öğrenmedeki gelişmeler ve etik.",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Doğal dil işlemedeki gelişmeler ve etik.",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Bilgisayar kurdu kültüründeki gelişmeler ve etik.",
+    "outcomes": "2"
+   }
+  ],
   "textbooks": [
    "J. Lance, The Beginner’s Guide to Engineering: Computer Engineering, Quantum Scientific Publishing, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=101"
  },
  "YZV 102E": {
   "code": "YZV 102E",
   "name": "Veri Bilimi için Programlamaya Giriş (Python)",
+  "nameEn": "Int.toPrg.forDataSci.(Python)",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -73,15 +146,73 @@
    "Hafta 13 · Web istemcileri.",
    "Hafta 14 · Web uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş. Program geliştirme aşamaları. Algoritmalar."
+   },
+   {
+    "week": 2,
+    "topic": "Veri tipleri. İfadeler. Değişkenler."
+   },
+   {
+    "week": 3,
+    "topic": "Karar yapıları."
+   },
+   {
+    "week": 4,
+    "topic": "Yineleme yapıları."
+   },
+   {
+    "week": 5,
+    "topic": "Bileşke veri tipleri."
+   },
+   {
+    "week": 6,
+    "topic": "Fonksiyonlar (I)."
+   },
+   {
+    "week": 7,
+    "topic": "Fonksiyonlar (II)."
+   },
+   {
+    "week": 8,
+    "topic": "Fonksiyonlar (III)."
+   },
+   {
+    "week": 9,
+    "topic": "Sınıflar."
+   },
+   {
+    "week": 10,
+    "topic": "Kalıtım."
+   },
+   {
+    "week": 11,
+    "topic": "Hata denetimi."
+   },
+   {
+    "week": 12,
+    "topic": "Katar ve dosya işlemleri."
+   },
+   {
+    "week": 13,
+    "topic": "Web istemcileri."
+   },
+   {
+    "week": 14,
+    "topic": "Web uygulamaları."
+   }
+  ],
   "textbooks": [
    "“Python Programming: Introduction to Computer Science” (3rd ed.), John Zelle, Franklin, Beedle & Associates, 2017."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=102"
  },
  "YZV 103E": {
   "code": "YZV 103E",
   "name": "Yapay Zeka ve Veri Mühendisliğine Giriş ve Etik",
+  "nameEn": "Intr. to AI & Data Eng& Ethics",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -112,15 +243,87 @@
    "Hafta 13 · Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Doğal dil işlemedeki gelişmeler ve etik",
    "Hafta 14 · Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Bilgisayar kurdu kültüründeki gelişmeler ve etik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kampüs, fakülte ve bölüm oryantasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapay Zeka & Veri Mühendisliğine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Programda verilen derslerin sunumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Davetli konuşmacı: İş veren olarak bir Yapay Zeka & Veri Mühendisi – Nasıl mühendisler istiyoruz?",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Davetli konuşmacı: Çalışan olarak bir Yapay Zeka & Veri Mühendisi – Bilişim endüstrisinde nasıl başarılı olunur?",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Davetli konuşmacı: Araştırma ve öğretim görevlisi olarak bir Yapay Zeka & Veri Mühendisi – Nasıl bir Araştırma görevlisi olunur?",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Davetli konuşmacı: Son sınıf bir Yapay Zeka & Veri Mühendisliği öğrencisi – Son sınıf öğrencisinden öneriler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Davetli konuşmacı: Yapay Zeka alanında çalışan lisansüstü öğrencisi – Neden yüksek lisans hedefliyorum?",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Davetli konuşmacı:Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi- Yapay zekadaki gelişmeler ve etik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Robotikteki gelişmeler ve etik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Makine öğrenmesindeki gelişmeler ve etik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Derin öğrenmedeki gelişmeler ve etik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Doğal dil işlemedeki gelişmeler ve etik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Davetli konuşmacı: Bir Yapay Zeka & Veri Mühendisliği Öğretim Üyesi – Bilgisayar kurdu kültüründeki gelişmeler ve etik",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "J. Lance, Mühendisliğe Yeni Başlayanlar İçin Kılavuz: Bilgisayar Mühendisliği, Quantum Scientific Publishing, 2013"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=103"
  },
  "YZV 104E": {
   "code": "YZV 104E",
   "name": "Veri Bilimi için Programlamaya Giriş",
+  "nameEn": "Introduction to Programming for Data Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -152,16 +355,74 @@
    "Hafta 13 · Bellek Yönetimi",
    "Hafta 14 · Uygulama Geliştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş. Program geliştirme aşamaları. Algoritmalar."
+   },
+   {
+    "week": 2,
+    "topic": "Veri tipleri. İfadeler. Değişkenler."
+   },
+   {
+    "week": 3,
+    "topic": "Karar yapıları."
+   },
+   {
+    "week": 4,
+    "topic": "Yineleme yapıları."
+   },
+   {
+    "week": 5,
+    "topic": "Bileşke veri tipleri."
+   },
+   {
+    "week": 6,
+    "topic": "Fonksiyonlar (I)."
+   },
+   {
+    "week": 7,
+    "topic": "Fonksiyonlar (II)."
+   },
+   {
+    "week": 8,
+    "topic": "Fonksiyonlar (III)."
+   },
+   {
+    "week": 9,
+    "topic": "Sınıflar."
+   },
+   {
+    "week": 10,
+    "topic": "Kalıtım."
+   },
+   {
+    "week": 11,
+    "topic": "Hata denetimi."
+   },
+   {
+    "week": 12,
+    "topic": "Katar ve dosya işlemleri."
+   },
+   {
+    "week": 13,
+    "topic": "Bellek Yönetimi"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama Geliştirme"
+   }
+  ],
   "textbooks": [
    "C How to Program, (8th Edition), H.M. Deitel & P. J. Deitel, Prentice Hall, 2015 Cay S. Horstmann, C++ For Everyone, 2nd edition, Wiley, 2011, ISBN: 978-0-470-92713-7.",
    "“Python Programming: Introduction to Computer Science” (3rd ed.), John Zelle, Franklin, Beedle & Associates, 2017."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=104",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=104"
  },
  "YZV 201E": {
   "code": "YZV 201E",
   "name": "Veri Yapıları",
+  "nameEn": "Data Structures",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -194,15 +455,87 @@
    "Hafta 13 · Ağaç uygulamaları",
    "Hafta 14 · Hazır veri yapısı kütüphaneleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, C/C++’da dosya işlemleri, derse giriş örneği: Telefon defteri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "C’de işaretçiler ve diziler",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Fonksiyon çağrıları, dinamik bellek, soyut veri tipi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Bağlantılı liste (Lab: Ders örneğinde listeler üzerinde güncelleme işlemi, güncelleme ve aramanın performansının arttırılması)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bağlantılı liste türleri, liste uygulamaları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yığın",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kuyruk",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yığın ve kuyruk uygulamaları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Özyinelemeli programlama",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Özyinelemeli programlama uygulamaları",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ağaç",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "İkili sıralama ağacı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Ağaç uygulamaları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Hazır veri yapısı kütüphaneleri",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Ders Notları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=201"
  },
  "YZV 202E": {
   "code": "YZV 202E",
   "name": "Veri Bilimi için Optimizasyon",
+  "nameEn": "Optimization for Data Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -235,15 +568,87 @@
    "Hafta 13 · Kısıtlı Nonlineer Optimizasyon 2. Bölüm",
    "Hafta 14 · Project Sunumları – Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Optimizasyon problemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Optimal çözüm için yeterli ve gerekli şartlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tek boyutlu optimizasyon problemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gradyan temelli algoritmalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Newton’ın metodu",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hessian tabanlı algoritmalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "En küçük kareler tekniği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Türeve ihtiyaç duymayan algoritmalar 1. Bölüm",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Türeve ihtiyaç duymayan algoritmalar 2. Bölüm",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Lineer Optimizasyon 1. Bölüm",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Lineer Optimizasyon 2. Bölüm",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Kısıtlı Nonlineer Optimizasyon 1. Bölüm",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kısıtlı Nonlineer Optimizasyon 2. Bölüm",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 14,
+    "topic": "Project Sunumları – Uygulamalar",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "● Chong E., Zak S., Optimizasyona Giriş, 2004"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=202"
  },
  "YZV 211E": {
   "code": "YZV 211E",
   "name": "Veri Bilimi ve Mühendisliğine Giriş",
+  "nameEn": "Intro to Data Science and Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -279,16 +684,88 @@
    "Hafta 13 · Veri Bilimi ve Etik",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Bilimi ve Mühendisliğine Giriş",
+    "outcomes": "1-4-7"
+   },
+   {
+    "week": 2,
+    "topic": "Veri ve Veri Bilimi Hayat Döngüsü",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Toplama ve Yönetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Veriyi Özetleme ve Görselleştirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İstatistiksel Çıkarımın Temelleri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 6,
+    "topic": "Makine Öğrenmesinin Temelleri I",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Makine Öğrenmesinin Temelleri II",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Derin Öğrenme",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Transfer Öğrenme ve Üretken Yapay Zeka",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Veri Ambarı ve İş Zekâsı",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Büyük Veri Analitiği",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Veri Mühendisliği – Yaşam Döngüsü ve Ekosistem, MLOps",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Veri Bilimi ve Etik",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   }
+  ],
   "textbooks": [
    "Python Veri Bilimi El Kitabı, Jake Vanderplas (2016), Oreilly",
    "Veri Mühendisliğinin Temelleri (2022). Joel Reis, Matt Housley, Oreilly"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=211"
  },
  "YZV 212E": {
   "code": "YZV 212E",
   "name": "Fund.ofArtificial Intelligence",
+  "nameEn": "Fund.ofArtificial Intelligence",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -321,15 +798,87 @@
    "Hafta 13 · Arama ve Çıkarım Uygulamaları",
    "Hafta 14 · Toplubakış ve Yapay Zeka’nın geleceği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Zekaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arama Teknikleri I: Ağaç Arama, Dinamik Programlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Arama Teknikleri II: A*, tutarlı sezgi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kısıt Sağlama Problemi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Oyunlarda Yapay Zeka: Minimax, Değerlendirme fonksiyonları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Makine Öğrenmesi temel bilgileri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Markov Karar Süreçleri I: Strateji Değerlendirme, Iterasyon, Pekiştirmeli Öğrenme",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Markov Karar süreçleri II: Q-öğrenmesi, Keşif/Sömürü",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Mantık: Sentaks ve Anlam, Önerme Mantığı, Birinci dereceden mantık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Mantıksal Çıkarım",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Bayes Ağları: Olasılıksal çıkarım",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Planlama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Arama ve Çıkarım Uygulamaları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Toplubakış ve Yapay Zeka’nın geleceği",
+    "outcomes": "3-5"
+   }
+  ],
   "textbooks": [
    "Artificial Intelligence: A Modern Approach (4th Edition), Stuart Russell, Peter Norvig, Prentice Hall, 2020"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=212"
  },
  "YZV 231E": {
   "code": "YZV 231E",
   "name": "Veri Bilimleri için Olasılık ve İstatistik",
+  "nameEn": "Prob.& Stat. for Data Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -365,15 +914,87 @@
    "Hafta 13 · Klasik İstatistik II: Hipotez Testi, Lineer Regresyon",
    "Hafta 14 · Gerçek Hayat Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Olasılıksal Modellemeye Giriş I: Örnekleme Uzayı, Olasılık Modelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılıksal Modellemeye Giriş II: Bağımsızlık, Şartlı Olasılık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Olasılıksal Modellemeye Giriş III: Bayes Theorem ve uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Süreksiz Rastgele Değişkenler. PMFler. CDFler. Ortalama ve Varyans.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Çoklu Süreksiz Rastgele Değişkenler. Birleşik PMFler.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli Rastgele Değişkenler. PDFler.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çoklu Sürekli Rastgele Değişkenler. Momentler. Kovaryans. Korelayson. Yinelenen Ortalamalar.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Limit Teoremleri I: Markov ve Chebysev Eşitsizlikleri, Olasılık Dağılımında Yakınsamak",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Limit Teoremleri II: Büyük Sayılar Kanunu. Merkezi Sınır Teoremi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Bayesian İstatistik I: Sonsal Dağılım ve MAP Kestirimi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Bayesian İstatistik II: En Küçük Kareler Analizi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Klasik İstatistik I: Parametre Kestirimi, Kestirimci özellikleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Klasik İstatistik II: Hipotez Testi, Lineer Regresyon",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Gerçek Hayat Uygulamaları",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Bertsekas, Dimitri P., and John N. Tsitsiklis. Introduction to Probability, 2nd Edition Belmont, MA: Athena Scientific"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=231",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=231"
  },
  "YZV 302E": {
   "code": "YZV 302E",
   "name": "Derin Öğrenme",
+  "nameEn": "Deep Learning",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -387,12 +1008,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=302"
  },
  "YZV 303E": {
   "code": "YZV 303E",
   "name": "Deep Learning",
+  "nameEn": "Deep Learning",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -425,15 +1046,87 @@
    "Hafta 13 · Derin Öğrenmede Modern Teknikler",
    "Hafta 14 · Proje Sunumları / Derin Öğrenmede Farklı Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derin Öğrenme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Konular",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Yapay Sinir Ağları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Geriyayılım, Ağ Eğitimi, Regularizasyon Teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Evrişimsel Sinir Ağları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yapay Görü Uygulamaları: Obje tespiti, tanıma, bölütleme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ardışık modeller: Yineleyen Sinir Ağları, LSTMs",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Zaman serisi tahmini",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Dikkat mekanizmaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Dönüştürücü mimariler",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Gözetimsiz Teknikler ve Otokodlayıcılar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Derin Üretici Ağlar: Çekişmeli teknikler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Derin Öğrenmede Modern Teknikler",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları / Derin Öğrenmede Farklı Uygulamalar",
+    "outcomes": "1-3-5"
+   }
+  ],
   "textbooks": [
    "Understanding Deep Learning, Simon J.D. Prince, MIT Press, 2023"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=303"
  },
  "YZV 311E": {
   "code": "YZV 311E",
   "name": "Data Mining",
+  "nameEn": "Data Mining",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -466,15 +1159,87 @@
    "Hafta 13 · İleri teknikler",
    "Hafta 14 · Dönem projeleri sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Madenciliğine Giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Temizleme ve Hazırlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sınıflandırma Yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sınıflandırma yöntemlerini değerlendirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Demetleme Yöntemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "İlişkilendirme Kuralları: temel kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "İlişkilendirme Kuralları Algoritmaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Çizge Veri Madenciliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sosyal Ağ analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Çizge Sinir Ağları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bağlantı Tahmini",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "İleri teknikler",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projeleri sunumları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Data Mining: Concepts and Techniques. Jiawei Han and Micheline Kamber Morgan Kaufmann Publishers (2006). ISBN 1-55860-489-8."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=311"
  },
  "YZV 312E": {
   "code": "YZV 312E",
   "name": "Veri Madenciliği",
+  "nameEn": "Data Mining",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -507,15 +1272,87 @@
    "Hafta 13 · İleri teknikler",
    "Hafta 14 · Dönem projeleri sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Madenciliğine Giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Temizleme ve Hazırlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sınıflandırma Yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sınıflandırma yöntemlerini değerlendirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Demetleme Yöntemeri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "İlişkilendirme Kuralları: temel kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "İlişkilendirme Kuralları Algoritmaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Çizge Veri Madenciliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sosyal Ağ analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Çizge Sinir Ağları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bağlantı Tahmini",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "İleri teknikler",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projeleri sunumları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Han, J., and Kamber M., 2006. Data Mining: Concepts and Techniques, Morgan Kaufmann Publishers. ISBN 1-55860-489-8."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=312"
  },
  "YZV 321E": {
   "code": "YZV 321E",
   "name": "Yapay Zekanın Temelleri",
+  "nameEn": "Fund.ofArtificial Intelligence",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -548,15 +1385,87 @@
    "Hafta 13 · Markov Karar süreçleri II: Q-öğrenmesi, Keşif/Sömürü",
    "Hafta 14 · Toplubakış ve Yapay Zeka’nın geleceği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Zekaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arama Teknikleri I: Ağaç Arama, Dinamik Programlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Arama Teknikleri II: A*, tutarlı sezgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kısıt Sağlama Problemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Oyunlarda Yapay Zeka: Minimax, Değerlendirme fonksiyonları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Mantık: Sentaks ve Anlam, Önerme Mantığı, Birinci dereceden mantık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Mantıksal Çıkarım",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Bayesian Ağları: Olasılıksal çıkarım",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Planlama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Arama ve Çıkarım Uygulamaları",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Makine Öğrenmesi temel bilgileri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Markov Karar Süreçleri I: Strateji Değerlendirme, Iterasyon, Pekiştirmeli Öğrenme",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Markov Karar süreçleri II: Q-öğrenmesi, Keşif/Sömürü",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Toplubakış ve Yapay Zeka’nın geleceği",
+    "outcomes": "3-5"
+   }
+  ],
   "textbooks": [
    "Artificial Intelligence: A Modern Approach (3rd Edition), Stuart Russell, Peter Norvig, Prentice Hall, 2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=321"
  },
  "YZV 322E": {
   "code": "YZV 322E",
   "name": "Uygulamalı Veri Mühendisliği",
+  "nameEn": "Applied Data Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -594,15 +1503,87 @@
    "Hafta 13 · Konteynerler, ağ temelleri ve soket programlama",
    "Hafta 14 · Sektörden davetli konuşmacı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri hattı araçlarının, SQL ve NoSQL veritabanlarının kurulumu ve yapılandırılması",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Kurulumu yapılan veri hattı araçlarına ve veritabanlarına hızlı bakış",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Dosyaları okuma ve dosyalara yazma",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Veritabanları ile çalışma",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Verileri Temizleme, Dönüştürme ve Zenginleştirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Bir veri hattı oluşturma",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Doğrulama",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Veri hattı Sürüm Kontrolü",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Veri hattı izleme",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Veri hattı dağıtımı",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Üretim Veri Hattı Oluşturma -1",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Üretim Veri Hattı Oluşturma -2",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Konteynerler, ağ temelleri ve soket programlama",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Sektörden davetli konuşmacı",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "Paul Crickard, \"Data Engineering with Python,\" Packt Publishing, 2020 Github Linki: https://github.com/PacktPublishing/Data-Engineering-with-Python"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=322",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=322"
  },
  "YZV 401E": {
   "code": "YZV 401E",
   "name": "Yapay Zeka ve Veri Mühendisliğinin Hukuki Boyutları",
+  "nameEn": "Legal Aspects of AI&Data Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -642,15 +1623,87 @@
    "Hafta 13 · Cezai sorumluluk ve yapay zeka",
    "Hafta 14 · Yapay zekanın sektörel uygulamaları ve hukuki sorunlar (vaka analizi)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hukuka Girişi ve Temel Terimler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Mahremiyet, Gözetim, Güvenlik ve Hukuki Boyutları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kişilik Haklarının Korunması, İfade Özgürlüğü ve Kişisel Veri Kavramı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kişisel Veri Koruma Hukukunun Temel Prensipleri",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Veri sorumlusu ve veri işleyen kavramları",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Verinin hukuka uygun işlenmesi",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Hukuki açıdan veri güvenliği tedbirleri ve veri sorumlusunun yükümlülükleri",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Yapay zeka sistemlerinde fikri mülkiyet hakları",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Yapay zeka ve Rekabet Hukuku: Veriye dayalı sektörlerde rekabet hukuku uygulamaları",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Yapay zeka ve Rekabet Hukuku: Büyük veriye dayalı pazar gücü, kişiselleştirilmiş fiyatlama ve pazarlama",
+    "outcomes": "9"
+   },
+   {
+    "week": 11,
+    "topic": "Yapay zeka ve hukuki ve cezai sorumluluk, temel prensipler",
+    "outcomes": "10"
+   },
+   {
+    "week": 12,
+    "topic": "Haksız fiil sorumluluğu ve yapay zeka",
+    "outcomes": "11"
+   },
+   {
+    "week": 13,
+    "topic": "Cezai sorumluluk ve yapay zeka",
+    "outcomes": "12"
+   },
+   {
+    "week": 14,
+    "topic": "Yapay zekanın sektörel uygulamaları ve hukuki sorunlar (vaka analizi)",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "John Buyers, Artificial Intelligence: The Practical Legal Issues, Law Brief Publishing, 2018."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=401"
  },
  "YZV 403E": {
   "code": "YZV 403E",
   "name": "Oyun Kuramı",
+  "nameEn": "Game Theory",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -683,15 +1736,87 @@
    "Hafta 13 · Yapay Zeka Uygulamaları 1",
    "Hafta 14 · Yapay Zeka Uygulamaları 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Oyun Teorisinin Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Baskın Stratejiler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Saf Nash Dengesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Karışık Nash Dengesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ajan Modelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Çok Aşamalı Oyunlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Evrimsel Oyun Teorisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik Sistemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Evrimsel Dinamikler",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Markov Oyunları – Temeller",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Markov Oyunları – Uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Diferansiyel Oyunlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Yapay Zeka Uygulamaları 1",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Yapay Zeka Uygulamaları 2",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Prisner, Erich. Game theory through examples. Vol. 46. American Mathematical Soc., 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=403",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=403"
  },
  "YZV 405E": {
   "code": "YZV 405E",
   "name": "Doğal Dil İşleme",
+  "nameEn": "Natural Language Processing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -726,15 +1851,87 @@
    "Hafta 13 · Doğal Dil İşleme Görevleri ve Modellemeleri II: Sözcük Anlam Belirsizliği Giderme, Semantik Rol Etiketleme, Eşgönderge Çözümlemesi, Anlamsal Analiz",
    "Hafta 14 · Doğal Dil İşleme Görevleri ve Modellemeleri III: Bilgi Çıkarımı, Bilgi Geri Getirimi, Makine Çevirisi, Sohbet Asistanları, Soru Cevap Sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Doğal Dil İşlemenin Temelleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Doğal Dil İşleme Seviyeleri ve Aralarındaki geçişler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İstatistiksel Dil Modelleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "İstatiksel Modeller ile Dizilim Etiketleme (HMM, MEMM, CRF, Viterbi, Forward)",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Seyrek Temsiller",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Yoğun Temsiller I: Sinirsel Dil Modelleri, word2vec, fasttext",
+    "outcomes": "7"
+   },
+   {
+    "week": 7,
+    "topic": "Yoğun Temsiller II: Özyinelemeli Sinir ağları",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Yoğun Temsiller III: Kodlayıcı-Kod Çözücü Modelleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Yoğun Temsiller IV: Evrişimsel Sinir ağları",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Yoğun Temsiller V: Dikkat Mekanizmaları ve Öz-Dikkatli Dönüştürücüler",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Bağlamsal Temsiller",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Doğal Dil İşleme Görevleri ve Modellemeleri I: Biçimbilimsel Çözümleme, Yazım Hatası Düzeltimi, Normalizasyon, Sözcük Etiketleme, Cümle Analizi, Varlık İsmi Tanıma",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Doğal Dil İşleme Görevleri ve Modellemeleri II: Sözcük Anlam Belirsizliği Giderme, Semantik Rol Etiketleme, Eşgönderge Çözümlemesi, Anlamsal Analiz",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Doğal Dil İşleme Görevleri ve Modellemeleri III: Bilgi Çıkarımı, Bilgi Geri Getirimi, Makine Çevirisi, Sohbet Asistanları, Soru Cevap Sistemleri",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Jurafsky, D., Martin, J. H., 2022. Speech and language processing : An Introduction to Natural Language Processing, computational linguistics, and speech recognition (3rd ed.), Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=405",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=405"
  },
  "YZV 406E": {
   "code": "YZV 406E",
   "name": "Robotik",
+  "nameEn": "Robotics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -768,18 +1965,90 @@
    "Hafta 13 · Çoklu robot sistemleri ve İnsan-Robot Etkileşimi",
    "Hafta 14 · Robot Uygulamaları ve Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Robotlar ve uygulamaları, robot türleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Robot Kontrol Mimarileri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Robot Mekanikleri ve Hareket Yetenekleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Robot İşletim Sistemi (ROS)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Gezgin Robot Kinematik Hesapları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Robot Sensörleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Konum bulma",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Haritalama",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Yol Planlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Robot Görüsü",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Robotlarda Öğrenme",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Robot Nesne-Ortam Etkileşimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çoklu robot sistemleri ve İnsan-Robot Etkileşimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Robot Uygulamaları ve Proje Sunumları",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Introduction to Autonomous Mobile Robots, Roland Siegwart, Illah Reza Nourbakhsh and Davide Scaramuzza,The MIT Press, 2011",
    "Springer Handbook of Robotics – Bruno Siciliano and Oussama Khatib, Springer, 2016.",
    "Probabilistic Robotics, Sebastian Thrun, Wolfram Burgard and Dieter Fox, 2005, MIT press",
    "Developmental robotics: From babies to robots, Angelo Cangelosi, Matthew Schlesinger, 2015, MIT press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=406",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=406"
  },
  "YZV 411E": {
   "code": "YZV 411E",
   "name": "Büyük Veri Analitiği",
+  "nameEn": "Big Data Analytics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -812,16 +2081,88 @@
    "Hafta 13 · Gerçek Dünya Uygulamalarının Analizi",
    "Hafta 14 · Büyük Veri Projeleri Sunumları ve Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Büyük Veri İşleme Ekosistemi ve Hadoop Temelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "MapReduce Çerçevesine Genel Bir Bakış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Apache Spark ile Büyük Veri Analitiğine Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "RDD/Dataframe ile Spark Programlama Modeli I",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "RDD/Dataframe ile Spark Programlama Modeli II",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Lokal Bilgisayarda Spark Uygulamalarının Çalıştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Hadoop Kümesinde Spark Uygulamalarının Çalıştırılması I",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Hadoop Kümesinde Spark Uygulamalarının Çalıştırılması II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Spark SQL Uygulamaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Spark Streaming – Gerçek Zamanlı Veri İşleme",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Spark Uygulamaları ile Makine Öğrenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Spark ile ileri Seviye Analitik Uygulamalar",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Gerçek Dünya Uygulamalarının Analizi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Büyük Veri Projeleri Sunumları ve Değerlendirme",
+    "outcomes": "2-5"
+   }
+  ],
   "textbooks": [
    "● Chambers B. and Zaharia M., Spark: The Definitive Guide, O’Reilly, 2018",
    "● White T., Hadoop: The Definitive Guide, O’Reilly, 2016"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=411"
  },
  "YZV 413E": {
   "code": "YZV 413E",
   "name": "Çizge Kuramı ve Algoritmalar",
+  "nameEn": "Graph Theory and Algorithms",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -854,6 +2195,78 @@
    "Hafta 13 · Çizgelerde Makine Öğrenmesi - Uygulamalar",
    "Hafta 14 · Dönem projesi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çizgelere giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ağaçlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "En kısa yol",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Bağlılık, Euler turu, Hamilton çevresi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Düzlemsel çizgeler, Çizge Temelli Merkezilik Ölçümleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Akışlar, Ağlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Minimum akış problemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Eşleme, Çizge ayrıştırma, Çizge boyama",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Olasılıksal Çizge Modelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Olasılıksal Çizge Modellerinde Kestirim",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Olasılıksal Çizge Modellerinde Öğrenme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Çizgelerde Makine Öğrenmesi - Temeller",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Çizgelerde Makine Öğrenmesi - Uygulamalar",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projesi sunumları",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Harary, F., 1972. Graph Theory, ISBN -201-02787-9, Addison-Wesley",
    "Gibbons, A., 1985. Algorithmic Graph Theory, ISBN 0-521-28881-9, Cambridge University Press.",
@@ -861,12 +2274,12 @@
    "Ahuja, R., Magnanti, L., Borlin, J., 1993. Network Flows: Theory, Algorithms, and Application, ISBN 0-136-17549-X",
    "Koller, D., & Friedman, N. (2009). Probabilistic graphical models: principles and techniques. MIT press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=413",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=413"
  },
  "YZV 415E": {
   "code": "YZV 415E",
   "name": "Derin Pekiştirmeli Öğrenme",
+  "nameEn": "Deep Reinforcement Learning",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -899,15 +2312,87 @@
    "Hafta 13 · Otonom Sistem Uygulamaları I",
    "Hafta 14 · Otonom Sistem Uygulamaları II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Pekiştirmeli Öğrenmeye Kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Markov Karar Süreçleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Dinamik Programlama",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Modelden Bağımsız Pekiştirmeli Öğrenme",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Yaklaşık Dinamik Programlama ve Pekiştirmeli Öğrenme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Derin Pekiştirmeli Öğrenmenin Temelleri I: Modeller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Derin Pekiştirmeli Öğrenmenin Temelleri II: Algoritmalar",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Keşif Stratejileri ve Monte Carlo Yöntemleri I",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Keşif Stratejileri ve Monte Carlo Yöntemleri II",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kısmi Gözlemlenebilir Problemler I",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kısmi Gözlemlenebilir Problemler II",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Model Tabanlı Derin Pekiştirmeli Öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Otonom Sistem Uygulamaları I",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Otonom Sistem Uygulamaları II",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=415",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=415"
  },
  "YZV 416E": {
   "code": "YZV 416E",
   "name": "Bilgisayarla Görü",
+  "nameEn": "Computer Vision",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -941,15 +2426,87 @@
    "Hafta 13 · Kamera",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Görüntü Filtreleme & Konvolüsyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Kenar Algılama",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Köşe Algılama",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Uydurma (RANSAC)",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Uydurma (Hough) II",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Özellik Belirleyiciler ve Tanımlayıcılar (Keypoints)",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Özellik Belirleyiciler ve Tanımlayıcılar (SIFT) II",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Görüntü Sınıflandırma I",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Görüntü Sınıflandırma (BoW) II",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "2B Dönüşümler",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Görüntü Homografileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kamera",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Forsyth & Ponce, Bilgisayarlı Görüntü: Modern Bir Yaklaşım"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=416",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=416"
  },
  "YZV 425E": {
   "code": "YZV 425E",
   "name": "Bilgi Sistemleri için Mühendislik Sanatı",
+  "nameEn": "Art of Eng. for Inf.Syst.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -981,15 +2538,87 @@
    "Hafta 13 · Dönem araştırma projesi",
    "Hafta 14 · Dönem araştırma projesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı ve söyleşi",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Sanat, bilim ve felsefe arakesitinden kısa tarihsel perspektif",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Görsel not alma ve analiz",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Görsel ifade yöntem ve teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Doğadaki bir nesnenin yapısal analizi üzerinden bağımsız bir tasarım geliştirme I",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Doğadaki bir nesnenin yapısal analizi üzerinden bağımsız bir tasarım geliştirme II",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Mesleki vizyon atölyesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Konferans (Bilim Sanat İlişkisi I)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Konferans (Bilim Sanat İlişkisi II)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Görsel/İşitsel Kayıt Atölye Çalışması (Fotoğraf, video, eskiz ve yazılı sesli notlar)",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem araştırma projesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem araştırma projesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem araştırma projesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem araştırma projesi",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=425",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=425"
  },
  "YZV 445E": {
   "code": "YZV 445E",
   "name": "Yapay Zeka Projesi",
+  "nameEn": "Artificial Intelligence Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1025,15 +2654,87 @@
    "Hafta 13 · Proje 4’ün sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
    "Hafta 14 · Proje 5’in sunumu, Soru&Cevap oturumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje 1’in tanıtımı ve başlaması",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 3,
+    "topic": "Final raporu teslimi, gerçekleşmiş yapay zeka projesi teslimi, Proje 2’nin tanıtımı ve başlaması",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 4,
+    "topic": "Proje 1’in sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 5,
+    "topic": "Gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 6,
+    "topic": "Final raporu teslimi, gerçekleşmiş yapay zeka projesi teslimi, Proje 3’ün tanıtımı ve başlaması",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Proje 2’nin sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Final raporu teslimi, gerçekleşmiş yapay zeka projesi teslimi, Proje 4’ün tanıtımı ve başlaması",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Proje 3’ün sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Final raporu teslimi, gerçekleşmiş yapay zeka projesi teslimi, Proje 5’in tanıtımı ve başlaması",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Proje 4’ün sunumu, gayri resmi durum raporlaması, tartışma, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Proje 5’in sunumu, Soru&Cevap oturumu",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Interpretable Machine Learning, Christoph Molnar (2019)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=445",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=445"
  },
  "YZV 447E": {
   "code": "YZV 447E",
   "name": "Cognitive Neuroscience",
+  "nameEn": "Cognitive Neuroscience",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1066,15 +2767,87 @@
    "Hafta 13 · Uygulamalar: Psikiyatri ve nöropsikoloji",
    "Hafta 14 · Etik hususlar ve geleceğe yönelik açılımlar (örn. Sensör süreçleri, açıklanabilir yapay zeka)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Bilişsel nörobilim, işlemci gücü, yapay nöral ağların tarihsel karşılaştırması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Giriş:Uzun süreli potansiyaller ve Hebb öğrenmesi, korteksin yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Primer görsel korteks, üst kademeler, LOC, perseptron, konvolusyonel nöral ağlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Medyal Temporal Lob örüntüleri, nesne tanıma, özellesmis alanlar: fusiform",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Uzun süreli bellek, anılar, sahte anılar, bellek kaybı",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Prosedürel bellek, kısa süreli bellek, LSTM ağları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Ayna nöronları, dikotomi, lisan ve tekrarlı nöral ağlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Prefrontal korteks, paryetal korteks, motor ve somatosensoriyel sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Dikkatin türleri, Küresel çalışma alanı, Dönüştürücü, Yayılımcı ağ yapıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Özelleşmiş ağ bağlantıları (örn. belirginlik, yürütme, ruh hali, dinlenme durumu )",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulamalar: Beyin-makine arayüzleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulamalar: Duygusal etkileşim, otonom sinir sistemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulamalar: Psikiyatri ve nöropsikoloji",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Etik hususlar ve geleceğe yönelik açılımlar (örn. Sensör süreçleri, açıklanabilir yapay zeka)",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "The Student’s Guide to Cognitive Neuroscience, Jamie Ward, Ed 4, Routledge, 2020"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=447",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=447"
  },
  "YZV 448E": {
   "code": "YZV 448E",
   "name": "Makina Öğrenmesi Sistemlerinin Geliştirilmesi ve İşletilmesi (MLOps)",
+  "nameEn": "Machine Learning System Development and Operations (MLOps)",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1106,16 +2879,88 @@
    "Hafta 13 · Güncel Konular ve Vaka Çalışmaları AutoML, federe öğrenme, endüstriden vaka örnekleri",
    "Hafta 14 · Proje Sunumları ve Gözden Geçirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "MLOps'a Giriş MLOps’a genel bakış, hedefler, zorluklar, endüstrideki önemi, bir ML projesinin yaşam döngüsü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürüm Kontrolü ve Birlikte Çalışma Sürüm kontrolünün temelleri, sürüm kontrolü ile ML projelerinin yönetilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bulut Bilişim Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "MLOps’da Veri Yönetimi Veri sürümlendirme ve tekrar edilebilirlik, büyük veri kümelerini ve zamansal veri değişimlerini yönetme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Model Geliştirme ve Deney Yapma Model eğitimi ve testi için en iyi uygulamalar, deney izleme ve loglama",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Otomasyon ve ML için CI/CD Sürekli Entegrasyon/Sürekli Canlıya Alma temelleri, akışların otomatikleştirilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Model Canlıya Alma Stratejileri Canlıya alma seçenekleri, canlı ortam platformları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Modellerle Hizmet Verme ve Modelleri İzleme ML Modelleri için ölçeklendirme ve yük dengeleme, model başarımını izleme, sorunları sezme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "İleri Düzey Canlıya Alma Teknikleri Sınırlı kullanıcı için canlıya alma, A/B testleri, multi-modal ve çok kiracılı hizmet verme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Canlıda ML Tekrar eğitim iş hatları, otomatik tekrar eğitim sistemleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "MLOps’ta Güvenlik ML sistemlerini ve çalışma hatlarının güvenliğini sağlamak, kişisel veri gizliliği ve uyumluluk, ML modellerinde açıklanabilirlik ve adillik",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "MLOps’ta Ölçeklendirme Büyük ölçekli ML modelleri için ölçeklendirme altyapıları, dağıtık eğitim ve hizmet",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Güncel Konular ve Vaka Çalışmaları AutoML, federe öğrenme, endüstriden vaka örnekleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları ve Gözden Geçirme",
+    "outcomes": "1-2-4"
+   }
+  ],
   "textbooks": [
    "Introducing MLOps, Mark Treveil, Nicolas Omount, Clement Stenac, Kendi Lefecre, Du Phan, Joachim Zentici, Adrien Lavoilotte, Makoto Miyazaki, Lynn Heidmann (2021). O’Reilly Publishing, ISBN: 978-1492083290",
    "Engineering MLOps, Emmanuel Raj (2021). Packt Publishing, ISBN: 978-1800562882"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=448",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=448"
  },
  "YZV 449E": {
   "code": "YZV 449E",
   "name": "Derin Üretici Yapay Zeka",
+  "nameEn": "Deep Generative AI",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1148,15 +2993,87 @@
    "Hafta 13 · İleri düzey konular",
    "Hafta 14 · Üretici Yapay Zeka Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Derin Öğrenme Temellerinin gözden geçirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Özbağlanımlı (Otoregresif) Modeller",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Maksimum Olabilirlik ile Öğrenme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Gizli Değişkenli Modeller",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kendinden Denetimli Öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Temsil Öğrenimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Akış modelleri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Üretici Çekişmeli Ağlar / Örtük Modeller",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Enerji Tabanlı Modeller",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Skor Tabanlı Modeller",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Difüzyon Modelleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Üretici Modellerin Değerlendirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "İleri düzey konular",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Üretici Yapay Zeka Uygulamalar",
+    "outcomes": "1-3-4-5"
+   }
+  ],
   "textbooks": [
    "Understanding Deep Learning, Simon J.D. Prince, MIT Press, 2023"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=449",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=449"
  },
  "YZV 475E": {
   "code": "YZV 475E",
   "name": "Veri Görselleştirme",
+  "nameEn": "Data Visualization",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1190,15 +3107,87 @@
    "Hafta 13 · Öğrenci proje sunumları ve geri bildirimler I",
    "Hafta 14 · Öğrenci proje sunumları ve geri bildirimler II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri görselleştirme temelleri ve hikaye anlatımı konsepti",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Verinin dönüştürülmesi, veri kalitesi ve veri görselleştirmesi için filtreleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Tek veya iki boyutlu verinin görselleştirilmesi: histogramlar, çubuk grafikleri, yoğunluk grafikleri ve dağılımlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrusal görselleştirme: histogram, bar, yoğunluk, dağılım grafikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Birçok Dağılımı aynı anda görselleştirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Çok boyutlu veride gruplama ve kümeleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "İnteraktif veri görselleştirme",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Veri panosunda görselleştirme",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Hiyerarşik veride görselleştirme",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Coğrafi mekansal veride görselleştirme",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Zamana bağlı veride görselleştirme",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ağlar için görselleştirme",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci proje sunumları ve geri bildirimler I",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci proje sunumları ve geri bildirimler II",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Bilgi Görselleştirme: Giriş, R. Spence, Üçüncü Baskı, Springer. Veri Görselleştirmenin Temelleri: Bilgilendirici ve Etkileyici Şekiller Oluşturmaya Giriş, C. Wilke, Amazon O'Reilly, 2019"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=475",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=475"
  },
  "YZV 4901E": {
   "code": "YZV 4901E",
   "name": "Yapay Zeka ve Veri Mühendisliği Tasarımı I",
+  "nameEn": "AI &Data Engineering Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1231,15 +3220,87 @@
    "Hafta 13 · Danışmanla toplantı.",
    "Hafta 14 · Danışmanla toplantı."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje danışmanı öğrenciyle toplantılar düzenler.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=4901"
  },
  "YZV 4902E": {
   "code": "YZV 4902E",
   "name": "Yapay Zeka ve Veri Mühendisliği Tasarımı II",
+  "nameEn": "AI& Data Engineering Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1272,15 +3333,87 @@
    "Hafta 13 · Danışmanla toplantı.",
    "Hafta 14 · Danışmanla toplantı."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje danışmanı öğrenciyle toplantılar düzenler.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Danışmanla toplantı.",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=4902"
  },
  "YZV 495E": {
   "code": "YZV 495E",
   "name": "Konuşma ve Ses İşleme",
+  "nameEn": "Speech and Audio Processing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1313,10 +3446,81 @@
    "Hafta 13 · CTC çözümleyici ile Whisper model çıktılarının çözümlenmesi",
    "Hafta 14 · N-best yönteminin ve n-gram dil modellerinin CTC çözümleyiciler ile kullanılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ayrık Fourier Dönüşümü (DFT), büyüklük ve faz spektrumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "STFT ve spektrogram analizi ile ses özelliklerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Duyma, ses sınıfları ve mel-spektrogram",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Nöral kodekler kullanarak mel-spektrogram ile ses üretimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "LPC analizi ile konuşma sinyalinin modellenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "LPC sentezi ile konuşma sinyali üretimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "RNN kullanarak sesten gürültü temizlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İleri AI modelleri kullanarak sesten gürültü temizlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Wav2vec yapısı kullanılarak akustik modelleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "CTC decoder ile wav2vec model çıktılarının çözümlenmesi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Whisper yapısı kullanılarak akustik modelleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Whisper yapısının hedef alan için yeni verilerle eğitilmesi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "CTC çözümleyici ile Whisper model çıktılarının çözümlenmesi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "N-best yönteminin ve n-gram dil modellerinin CTC çözümleyiciler ile kullanılması",
+    "outcomes": "3-5"
+   }
+  ],
   "textbooks": [
    "Konuşma ve Ses Sinyali İşleme: Konuşma ve Müziğin İşlenmesi ve Algılanması. Ben Gold, Nelson Morgan. John Wiley ve Oğulları. 2011"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=495",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YZV&dersNo=495"
  }
 }

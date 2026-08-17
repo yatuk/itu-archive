@@ -2,6 +2,7 @@
  "IKY 501": {
   "code": "IKY 501",
   "name": "Örgütsel Davranış",
+  "nameEn": "Organizational Behavior",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -33,18 +34,76 @@
    "Hafta 13 · Çatışma Yönetimi",
    "Hafta 14 · Örgüt Kültürü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Örgütsel Davranışa Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Bireysel Davranışın Temelleri"
+   },
+   {
+    "week": 3,
+    "topic": "Tutumlar ve İş Tatmini"
+   },
+   {
+    "week": 4,
+    "topic": "Kişilik ve Değerler"
+   },
+   {
+    "week": 5,
+    "topic": "Algı ve Bireysel Karar Verme"
+   },
+   {
+    "week": 6,
+    "topic": "Motivasyon: Kuramları"
+   },
+   {
+    "week": 7,
+    "topic": "Motivasyon: Kuramlardan Uygulamalara"
+   },
+   {
+    "week": 8,
+    "topic": "Duygular"
+   },
+   {
+    "week": 9,
+    "topic": "Grup Davranışının Temelleri"
+   },
+   {
+    "week": 10,
+    "topic": "Grup ve Takım Farkları"
+   },
+   {
+    "week": 11,
+    "topic": "Liderlik: Temel Yaklaşımlar ve Güncel Konular"
+   },
+   {
+    "week": 12,
+    "topic": "Güç ve Politika"
+   },
+   {
+    "week": 13,
+    "topic": "Çatışma Yönetimi"
+   },
+   {
+    "week": 14,
+    "topic": "Örgüt Kültürü"
+   }
+  ],
   "textbooks": [
    "Colquitt, J, A, LePine, J. A ve Wesson, M. J. Organizational Behavior: Improving Performance and Commitment in the worklplace. McGraw-Hill",
    "Robbins, S. P. ve Judge, T. A. Organizational Behavior, Pearson Prentice Hall, NJ.",
    "Erbaşlar, G. Örgütsel Davranış, Nobel Akademik Yayıncılık.",
    "Aytürk, N. Örgütsel Davranış-Örgütsel Kuramlar ve Uygulamalar, Nobel Akademik Yayıncılık."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKY&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKY&dersNo=501"
  },
  "IKY 502": {
   "code": "IKY 502",
   "name": "Proje Yönetimi",
+  "nameEn": "Project Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -79,17 +138,75 @@
    "Hafta 13 · Proje Hızlandırma",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Tanımı, Proje Teklifi Hazırlama ve Değerlendirme, Proje Planlama Evreleri"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Yönetiminin Temel Aşamaları-1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje Yönetiminin Temel Aşamaları-2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje Yönetiminin Temel Aşamaları-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ok Diyagramları"
+   },
+   {
+    "week": 6,
+    "topic": "Kritik Yol Yöntemi (CPM)"
+   },
+   {
+    "week": 7,
+    "topic": "Program Değerlendirme ve Gözden Geçirme Tekniği (PERT)"
+   },
+   {
+    "week": 8,
+    "topic": "Blok Diyagramları"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgisayar Destekli Proje Yönetimi (MS Project)"
+   },
+   {
+    "week": 10,
+    "topic": "Projelerde Takım ve Çatışma Yönetimi"
+   },
+   {
+    "week": 11,
+    "topic": "Proje Organizasyon Yapıları"
+   },
+   {
+    "week": 12,
+    "topic": "Kritik Süre ve Hızlandırma Maliyeti Belirlemede Doğrusal Programlama"
+   },
+   {
+    "week": 13,
+    "topic": "Proje Hızlandırma"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları"
+   }
+  ],
   "textbooks": [
    "• Kerzner, H. (2017). “Project Management: A systems Approach to Planning, Scheduling, and Controlling”, 12th ed., John Wiley & Sons, Hoboken, NJ.",
    "• Pinto, J. (2019), “Project Management – Achieving Competitive Advantage”, 5th ed., Pearson Education.",
    "• Project Management Ins. (2013), “A Guide to the Project Management Body of Knowledge”, PMBOK Guide, Newtown Square, Pennsylvania, USA."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKY&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKY&dersNo=502"
  },
  "IKY 503": {
   "code": "IKY 503",
   "name": "Kamuda İnsan Kaynakları Yönetimi",
+  "nameEn": "Human Resources Management in Public Sector",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -122,6 +239,64 @@
    "Hafta 13 · İnsan Kaynakları Bağlamında Kamu Sektörünün Diğer Sektörlerle Benzerlik ve Farklılıkları",
    "Hafta 14 · Uluslararası Kamu Sektörü İnsan Kaynakları Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnsan Kaynakları Yönetimine Giriş: Temel Kavramlar ve Uygulamalar"
+   },
+   {
+    "week": 2,
+    "topic": "Stratejik İnsan Kaynakları Yönetimi: Temel Kavramlar"
+   },
+   {
+    "week": 3,
+    "topic": "Stratejik İnsan Kaynakları Yönetimi: Güncel Uygulamalar"
+   },
+   {
+    "week": 4,
+    "topic": "Kamuda Personel Yönetiminin Esasları"
+   },
+   {
+    "week": 5,
+    "topic": "Türkiye’de Kamu Personel Yönetiminin Esasları"
+   },
+   {
+    "week": 6,
+    "topic": "Kamu Personel Yönetimindeki Yasal Mevzuat"
+   },
+   {
+    "week": 7,
+    "topic": "Kamuda İnsan Kaynağı Planlaması"
+   },
+   {
+    "week": 8,
+    "topic": "Kamuda İşe Alım Politikaları"
+   },
+   {
+    "week": 9,
+    "topic": "Kamuda Çalışan Eğitim ve Gelişimi"
+   },
+   {
+    "week": 10,
+    "topic": "Kamuda Performans Değerlemesi"
+   },
+   {
+    "week": 11,
+    "topic": "Kamuda Yetenek Yönetimi"
+   },
+   {
+    "week": 12,
+    "topic": "Kamu Sektöründe Dijital Insan Kaynakları Uygulamaları"
+   },
+   {
+    "week": 13,
+    "topic": "İnsan Kaynakları Bağlamında Kamu Sektörünün Diğer Sektörlerle Benzerlik ve Farklılıkları"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası Kamu Sektörü İnsan Kaynakları Uygulamaları"
+   }
+  ],
   "textbooks": [
    "Acar, O. K. (2019). Personel Yönetiminden İnsan Kaynaklari Yönetimine: Cumhuriyet Dönemi Kamu Personel Yönetim Tarihçesi. Süleyman Demirel Üniversitesi İktisadi ve İdari Bilimler Fakültesi Dergisi, 24(1), 119-146.",
    "Brown, K. (2004). Human resource management in the public sector. Public management review, 6(3), 303-309.",
@@ -129,12 +304,12 @@
    "Growing, M.K. and Lindholm, M.L. (2002), Human Resources Management in the Public Sector. Human Resources Management., 41: 283-295. https://doi.org/10.1002/hrm.10041",
    "Kurnaz, S. (2020). Kamuda İnsan Kaynakları Yönetimi: Türkiye ve Avrupa Birliği Uygulamaları. Sosyal, Beşeri ve İdari Bilimler Alanında Güncel Araştırmalar, 2."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKY&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKY&dersNo=503"
  },
  "IKY 507": {
   "code": "IKY 507",
   "name": "İnsan Kaynaklarında Dijitalleşme",
+  "nameEn": "Digitization in Human Resources",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -166,10 +341,67 @@
    "Hafta 13 · PDKS Program Tanıtımı",
    "Hafta 14 · PDKS Program Uygulaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "ERP Yazılımlarına Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "İnsan Kaynakları Yazılımlarına Olan İhtiyacın Gerekçeleri"
+   },
+   {
+    "week": 3,
+    "topic": "İnsan Kaynakları Yazılım Gerekleri"
+   },
+   {
+    "week": 4,
+    "topic": "Erp Yazılımı Tanıtımı"
+   },
+   {
+    "week": 5,
+    "topic": "İnsan Kaynakları Modülü Genel Tanıtımı"
+   },
+   {
+    "week": 6,
+    "topic": "Organizasyonel Yapı Ve Yetki Tanımlama"
+   },
+   {
+    "week": 7,
+    "topic": "Personel Doyası"
+   },
+   {
+    "week": 8,
+    "topic": "Seyahat Yönetimi"
+   },
+   {
+    "week": 9,
+    "topic": "Personel Yönetimi"
+   },
+   {
+    "week": 10,
+    "topic": "Performans Ve Kariyer Yönetimi"
+   },
+   {
+    "week": 11,
+    "topic": "Eğitim Yönetimi"
+   },
+   {
+    "week": 12,
+    "topic": "PDKS Tanımı"
+   },
+   {
+    "week": 13,
+    "topic": "PDKS Program Tanıtımı"
+   },
+   {
+    "week": 14,
+    "topic": "PDKS Program Uygulaması"
+   }
+  ],
   "textbooks": [
    "Selecting & Implementing HR & Payroll Software: A Practical Guide (Paperback or Softback), Barnard, Denis W., 2019, Stergiou Limited, Paperback or Softback, 2nd Edition"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKY&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKY&dersNo=507"
  }
 }

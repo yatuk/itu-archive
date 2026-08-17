@@ -2,6 +2,7 @@
  "KOM 501E": {
   "code": "KOM 501E",
   "name": "Cont.Sist.With Paramet. Uncert",
+  "nameEn": "Cont.Sist.With Paramet. Uncert",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -36,6 +37,77 @@
    "Hafta 13 · Kararlılığı sağlayan tüm dayanıklı PID kontrolörler ve dayanıklı PID kontrolör tasarımı",
    "Hafta 14 · Final proje sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, dayanıklı kontrol sistemlerinin tanımlanması ve sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Parametrik belirsizliği bulunan sistemlerin modellenmesi, kararlılık, kontrol edilebilirlik ve gözlenebilirlik kavramlarının bu tür sistemler için incelenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dayanıklı kararlılık analizi: kutup dağılımı, ızgaralama yöntemi, sınır geçiş teoremi, Mathematica tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Dayanıklı kararlılık analizinde cebrik testler: Routh tablosu, Hurwitz determinantları, Bialas teoremi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Parametrik belirsizliği olan polinomların frekans yanıtı: Mikhailov teoremi, Hermite-Biehler Teoremi, değer kümesi kavramı, orjin dışlama teoremi, tekil frekanslar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Parametrik belirsizliği olan polinomların sınıflandırılması , test kümeleri, Kharitonov Teoremi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Tutuculuk kavramı ve kenar teoremi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Çoklu doğrusal polinomlar için test kümeleri, belirsiz parametreler için Jacobi koşulları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "İzdüşüm teoremi, polinomik katsayılı polinomlar için test kümeleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Değer kümelerinin toplam ve çarpımı, ağaç yapılı ayrıştırma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Kararlılık yarıçapı, Tyspkin-Polyak eğrisi, parametre uzayındaki en büyük kararlı hiperküre.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Geri beslemeli sistemlerin dayanıklılık analizi: 32 kenar teoremi, kutu teoremi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Kararlılığı sağlayan tüm dayanıklı PID kontrolörler ve dayanıklı PID kontrolör tasarımı",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Final proje sunumları"
+   }
+  ],
   "textbooks": [
    "J Ackermann, 1993,\"Robust Control: Systems with Uncertain Physical Parameters\", Springer-Verlag",
    "J Ackermann, 2002, Robust Control: The Parameter Space Approach\", 2nd ed, Springer-Verlag, ISBN:1-85233-514-9.",
@@ -43,12 +115,12 @@
    "S. P. Bhattacharyya, A Datta, L H Keel, 2009, \"Linear Control Theory: Structure, Robustness and Optimization\", CRC Press, ISBN: 978-0-8493-4063-5",
    "M. T. Söylemez, 1999, \"Pole Assignment for Uncertain Systems\", RSP Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=501"
  },
  "KOM 505": {
   "code": "KOM 505",
   "name": "Olasılık Kuramı&Rastlan.Süreçl",
+  "nameEn": "Probability Theory&Stochast.Pr",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -94,6 +166,77 @@
    "Hafta 13 · Rastlantısal süreklilik, türev ve integral kavramları",
    "Hafta 14 · Güç spectrumu kavramı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, rastlantı değişkeni kavramı ve sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dağılım fonksiyonları, olasılık ve yoğunluk fonksiyonları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çok boyutlu rastlantı değişkenleri ve birleşik dağılımlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Rastlantı değişkenlerinin fonksiyonları, koşullu dağılımlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Beklenen değer ve momentler, moment üreten fonksiyon ve karakteristik fonksiyon, koşullu beklenen değer ve momentler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrık olasılık dağılımları (Bernoulli, binom, multinom, negative binom, geometrik, hipergeometrik dağılımlar)",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Ayrık olasılık dağılımları (Poisson dağılımı), sürekli olasılık dağılımları (uniform,üstel,Gauss dağılımları)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sürekli olasılık dağılımları (Erlang, Cauchy,Gamma, Laplace ve diğerleri), büyük sayılar yasası ve merkezi limit teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Rastlantı süreci ve ilişkin fonksiyonlar (Dağılım, korelasyon, kovaryans fonksiyonları)",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Durağan, bağımsız, bağımsız durağan artımları olan süreçler",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Poisson Süreci, Wiener süreci",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Gauss süreci , Markov süreci",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Rastlantısal süreklilik, türev ve integral kavramları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Güç spectrumu kavramı"
+   }
+  ],
   "textbooks": [
    "Yates, R. D. ve Goodman, D. (2005). Probability and Stochastic Processes: A Friendly Introduction for Electrical and Computer Engineers. John Wiley and Sons.",
    "Yates, R. D. ve Goodman, D. (2005). Probability and Stochastic Processes: A Friendly Introduction for Electrical and Computer Engineers. John Wiley and Sons.",
@@ -106,12 +249,12 @@
    "Papoulis, A. (1991). Probability, Random Variables and Stochastic Processes (Third Edition). McGraw-Hill.",
    "Papoulis, A. (1991). Probability, Random Variables and Stochastic Processes (Third Edition). McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=505"
  },
  "KOM 505E": {
   "code": "KOM 505E",
   "name": "Olasılık Kuramı&Rastlan.Süreçl",
+  "nameEn": "Probability Theory&Stochast.Pr",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -157,6 +300,77 @@
    "Hafta 13 · Rastlantısal süreklilik, türev ve integral kavramları",
    "Hafta 14 · Güç spectrumu kavramı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, rastlantı değişkeni kavramı ve sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dağılım fonksiyonları, olasılık ve yoğunluk fonksiyonları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çok boyutlu rastlantı değişkenleri ve birleşik dağılımlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Rastlantı değişkenlerinin fonksiyonları, koşullu dağılımlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Beklenen değer ve momentler, moment üreten fonksiyon ve karakteristik fonksiyon, koşullu beklenen değer ve momentler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrık olasılık dağılımları (Bernoulli, binom, multinom, negative binom, geometrik, hipergeometrik dağılımlar)",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Ayrık olasılık dağılımları (Poisson dağılımı), sürekli olasılık dağılımları (uniform,üstel,Gauss dağılımları)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sürekli olasılık dağılımları (Erlang, Cauchy,Gamma, Laplace ve diğerleri), büyük sayılar yasası ve merkezi limit teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Rastlantı süreci ve ilişkin fonksiyonlar (Dağılım, korelasyon, kovaryans fonksiyonları)",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Durağan, bağımsız, bağımsız durağan artımları olan süreçler",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Poisson Süreci, Wiener süreci",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Gauss süreci , Markov süreci",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Rastlantısal süreklilik, türev ve integral kavramları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Güç spectrumu kavramı"
+   }
+  ],
   "textbooks": [
    "Yates, R. D. ve Goodman, D. (2005). Probability and Stochastic Processes: A Friendly Introduction for Electrical and Computer Engineers. John Wiley and Sons.",
    "Yates, R. D. ve Goodman, D. (2005). Probability and Stochastic Processes: A Friendly Introduction for Electrical and Computer Engineers. John Wiley and Sons.",
@@ -169,12 +383,12 @@
    "Papoulis, A. (1991). Probability, Random Variables and Stochastic Processes (Third Edition). McGraw-Hill.",
    "Papoulis, A. (1991). Probability, Random Variables and Stochastic Processes (Third Edition). McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=505"
  },
  "KOM 507E": {
   "code": "KOM 507E",
   "name": "Numerical Methods in Optimiz.",
+  "nameEn": "Numerical Methods in Optimiz.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -209,6 +423,77 @@
    "Hafta 13 · Optimal kontrol kuramına ilişkin uygulamalar",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Optimizasyona giriş ve sınıflandırmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Optimizasyona ilişkin temel tanımlar ve kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Konveks fonksiyon kavramı ve optimizasyonda konvekslik",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kısıtsız optimizasyon problemi ve buna ilişkin nümerik çözüm yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kısıtsız optimizasyon problemine ilişkin çizgisel arama yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kısıtsız optimizasyon problemi ilişkin çizgisel arama yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kısıtsız optimizasyon problemine ilişkin eğri uydurma yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kısıtsız optimizasyon problemine ilişkin en büyük düşüm ve Newton yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kısıtsız optimizasyon problemine ilişkin dik yön yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kısıtsız optimizasyon problemine ilişkin dik yön yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kısıtlı optimizasyon problemi ve buna ilişkin nümerik çözüm yöntemleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kısıtlı optimizasyon problemi ve buna ilişkin nümerik çözüm yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Optimal kontrol kuramına ilişkin uygulamalar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları"
+   }
+  ],
   "textbooks": [
    "J. Nocedal, S. J. Wright, Numerical Optimization, Springer Verlag, 1999",
    "A. D. Belegundu, T. R. Chandrupatla, Optimization concepts and Applications in Engineering, Prentice Hall, 1999.",
@@ -216,12 +501,12 @@
    "M. S. Bazara, H. N. Sherali, C. M. Shetty, Nonlinear Programming: Theory and Algorithms, 2nd ed., John Wiley, 1993.",
    "D.G. Luenberger, Linear and Nonlinear Programming, 2nd ed., Addison-Wesley, 1984."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=507"
  },
  "KOM 508": {
   "code": "KOM 508",
   "name": "Endüstriyel Otomasyon Sist.",
+  "nameEn": "Industrial Automation Systems",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -255,6 +540,77 @@
    "Hafta 13 · Gerçeklemeye ilişkin uygulama sorunları ve diğer konular",
    "Hafta 14 · Endüstriyel otomasyon isstemlerinde temel güvenlik gereklilikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstriyel otomasyon sistemlerinin mimarisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstriyel otomasyon sistemlerinin programlanması: IEC 61131-3 kavramlar ve programlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Temel modda çalışan asenkron ardışıl devrelerin tasarımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Durum ve çıkış fonksiyonları, Moore ve Mealy modeli, kumanda sisteminin gerçeklenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Senkron devre yaklaşımı kullanarak tasarım ve gerçekleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Mantıksal devrelere dayanan tasarım ve gerçekleme yöntemlerinin değerlendirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Ayrık olay dinamik sistemler (DEDS): Temel tanım ve kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Belirgin sonlu durum otomatları, sonlu durum makinası,",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Durum geçiş ve çıkış fonksiyonları, sonlu durum makinasının gerçeklenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "DEDS için Petri net modeli: Temel tanım ve kavramlar, Petri Net sınıfları",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Petri ağlarının vektör ve matrisel gösterimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Petri ağı ile kumanda sisteminin tasarım ve gerçeklenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Gerçeklemeye ilişkin uygulama sorunları ve diğer konular",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Endüstriyel otomasyon isstemlerinde temel güvenlik gereklilikleri"
+   }
+  ],
   "textbooks": [
    "Kurtulan S., 2007: Endüstriyel Kumanda Sistemleri, Nobel Yayın Dağıtım , Ankara.",
    "Cassandras, C. G. , Lafortune S.,2007: Introduction to discrete event systems, Springer.",
@@ -262,12 +618,12 @@
    "Groover Jr., Mikell P., 2008: Automation, Production Systems, and Computer-Integrated Manufacturing, Prentice Hall.",
    "John K.H., Tiegelkamp M., 2010: IEC 61131-3: Programming Industrial Automation Systems, Springer-Verlag."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=508",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=508"
  },
  "KOM 509E": {
   "code": "KOM 509E",
   "name": "Design of Discrete Cont.Sys.",
+  "nameEn": "Design of Discrete Cont.Sys.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -299,18 +655,89 @@
    "Hafta 13 · Genelleştirilmiş kontrolör tasarımı",
    "Hafta 14 · Genelleştirilmiş kontrolör tasarımında kararlı hal hatalarının değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ayrık kontrol sistemlerinin temel yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zaman tanım bölgesi kriterleri ve analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "s- ve z- tanım bölgeleri arasındaki ilişki",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ters dönüşüm kuralı",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Shannon’un örnekleme teoremi ve ayrık kontrol sistemlerine uygulanışı",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "İkinci mertebeden ayrık kontrol sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Frekans tanım bölgesi kriterleri ve analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Ayrık sistremlerin band genişliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Ayrık kontrolörlerin programlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Ayrık PID kontrolörü ve tasarımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sonlu zaman kontrolü kavramı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sonlu zaman kontrolü tasarımında kontrolörün belirlenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Genelleştirilmiş kontrolör tasarımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Genelleştirilmiş kontrolör tasarımında kararlı hal hatalarının değerlendirilmesi"
+   }
+  ],
   "textbooks": [
    "K. Ogata, Discrete-Time Control Systems, Prentice Hall, 1995.",
    "B. C. Kuo, Digital Control Systems, Saunders College Publishing, 2nd ed., 1992.",
    "I. D. Landau, System Identification and Control Design, Prentice Hall, 1990.",
    "K. J. Astrom, Automatic Tuning of PID Controllers, Instrument Society of America, 1988. K. J. Astrom, Discrete-Time Control Systems, Prentice Hall, 1987."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=509"
  },
  "KOM 518E": {
   "code": "KOM 518E",
   "name": "Model Predictive Control",
+  "nameEn": "Model Predictive Control",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -344,16 +771,87 @@
    "Hafta 13 · Çok-değişkenli Model Öngörülü Kontrol-2 (Çok değişkenli DMC ve Çok değişkenli GPC)",
    "Hafta 14 · Dayalı Öngörülü Kontrol sistemlerin kapalı çevrimde kararlılık özellikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, tarihi gelişim, temel kavramlar",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 2,
+    "topic": "Lineer sistemler için optimal kontrol ve filtre teorisinin özeti -1(lineer kuadratik regulatör, lineer gözleyici, Kalman filtresi, Riccati fark denklemi)",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer sistemler için optimal kontrol ve filtre teorisinin özeti -2(lineer kuadratik regulatör, lineer gözleyici, Kalman filtresi, Riccati fark denklemi)",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 4,
+    "topic": "Temel optimizasyon yöntemlerinin özeti (kuadratik ve lineer programlama)",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 5,
+    "topic": "Öngörü Modelleri (Basamak yanıtı, Impulse yanıtı, Transfer fonksiyonu, Durum uzayı modelleri), Model Öngörülü Kontrol (MPC) Stratejisi (öngörü, optimizasyon, kayan pencere gerçeklemesi)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Klasik Model Öngörülü Kontrol teknikleri ve kısıtsız problemlerin çözümü-1: Dinamik Matris Kontrolü, Model Algoritmik Control, Genelleştirilmiş Öngörülü Kontrol",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Klasik Model Öngörülü Kontrol teknikleri ve kısıtsız problemlerin çözümü-2: Dinamik Matris Kontrolü, Model Algoritmik Control, Genelleştirilmiş Öngörülü Kontrol",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Endüstriyel Genelleştirilmiş Öngörülü Kontrol, Öngörülü Fonksiyonel Kontrol, Çok-Adımlı Model Öngörülü Kontrol",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Endüstriyel Genelleştirilmiş Öngörülü Kontrol, Öngörülü Fonksiyonel Kontrol, Çok-Adımlı Model Öngörülü Kontrol.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Kısıt içeren problemler ve kısıtların formulasyonu, kısıt içeren problemlerin çözümü-1",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Kısıt içeren problemler ve kısıtların formulasyonu, kısıt içeren problemlerin çözümü-2",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Çok-değişkenli Model Öngörülü Kontrol-1 (Çok değişkenli DMC ve Çok değişkenli GPC)",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Çok-değişkenli Model Öngörülü Kontrol-2 (Çok değişkenli DMC ve Çok değişkenli GPC)",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Dayalı Öngörülü Kontrol sistemlerin kapalı çevrimde kararlılık özellikleri"
+   }
+  ],
   "textbooks": [
    "Camacho, Eduardo F., Bordons Alba, Carlos, Model Predictive Control,Springer, 2007",
    "Liuping Wang, Model Predictive Control System Design and Implementation Using MATLAB®, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=518",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=518"
  },
  "KOM 521E": {
   "code": "KOM 521E",
   "name": "Learning Based Control Systems",
+  "nameEn": "Learning Based Control Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -387,6 +885,78 @@
    "Hafta 13 · Öğrenme tabanlı ileri kontrol sistemleri",
    "Hafta 14 · Gelecek trendler(Pekiştirmeli öğrenme tabanlı kontrol sistemleri vb.)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Geleneksel kontrol ve öğrenmeye dayalı kontrol, Temel matematiksel kavramlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Sistem tanılama, Sınıflandırma ve regresyon, Sinir ağları, RBF sinir ağları, Tekrarlayan sinir ağı (LSTM vb.)",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Destek vektör makineleri, Aşırı öğrenme makineleri, Fizik bilgili sinir ağları (PINN'ler)",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Öğrenme tabanlı kontrol sistemleri: uyarlamalı PID kontrolör, MPC vb.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Lyapunov kararlılığı",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrudan MRAC tasarımı, Dinamik tersleme tabanlı MRAC",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "İntegral geri bildirim bağlantılarına sahip MRAC tasarımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Dayanıklı MRAC: Dayanıklılık için tasarım modifikasyonları, parametre kayması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Projeksiyon operatörü, Projeksiyon tabanlı MRAC tasarımı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Yakınsama tabanlı uyarlamalı kontrol",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Eşzamanlı ve bileşik öğrenme tabanlı uyarlamalı kontrol",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Doğrusal olmayan ve MIMO sistemlerinin öğrenme tabanlı kontrolü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenme tabanlı ileri kontrol sistemleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Gelecek trendler(Pekiştirmeli öğrenme tabanlı kontrol sistemleri vb.)",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Eugene Lavretsky, Kevin A. Wise (2024) Robust and Adaptive Control With Aerospace Applications. Second Edition-Springer- Advanced Textbooks in Control and Signal Processing",
    "Nello Cristianini, John Shawe Taylor (2000) An Introduction to Support Vector Machines and Other Kernel-based Learning Methods. Cambridge University Press",
@@ -394,12 +964,12 @@
    "Jyh-Shing Roger Jang, Chuen-Tsai Sun, Eiji Mizutani (1997) Neuro-Fuzzy and Soft Computing: A Computational Approach to Learning and Machine Intelligence. Pearson College Div Publisher",
    "Richard S. Sutton, Andrew G. Barto (2014) Reinforcement Learning: An Introduction. The MIT Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=521"
  },
  "KOM 596": {
   "code": "KOM 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -443,6 +1013,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -455,12 +1096,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=596"
  },
  "KOM 610E": {
   "code": "KOM 610E",
   "name": "Nonlinear Control Systems",
+  "nameEn": "Nonlinear Control Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -497,18 +1138,89 @@
    "Hafta 13 · Geribeslemeyle doğrusallaştırma",
    "Hafta 14 · Geriadım yöntemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Doğrusal olmayan modeller",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İkinci derece sistemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Denge noktalarının kararlılığı ve periyodik yörüngeler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Lyapunov’un doğrudan yöntemi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Lyapunov’un dolaylı yöntemi",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 6,
+    "topic": "Değişmezlik prensibi",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 7,
+    "topic": "Ters teoremler",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 8,
+    "topic": "Pasiflik",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 9,
+    "topic": "Daire ve Popov Kriterleri",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 10,
+    "topic": "Mutlak sınır ve giriş-durum kararlılığı",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 11,
+    "topic": "Giriş-çıkış kararlılığı",
+    "outcomes": "6-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "L kararlılık ve küçük kazanç teoremi",
+    "outcomes": "6-8-9"
+   },
+   {
+    "week": 13,
+    "topic": "Geribeslemeyle doğrusallaştırma",
+    "outcomes": "7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Geriadım yöntemi"
+   }
+  ],
   "textbooks": [
    "H. Nijmeijer and A. van der Schaft, 2010, \"Nonlinear Dynamical Control Systems\", Springer",
    "S. Sastry, 2010, “Nonlinear Systems Analysis, Stability and Control”, John-Wiley & Sons, New York, USA, ISBN: 1-441-93132-5",
    "H. Khalil, 2001, “Nonlinear Systems (3rd edition)”, Prentice Hall, ISBN: 0-130-67389-7",
    "D. Cheng, X. Hu and T. Shen, 2011, “Analysis and Design of Nonlinear Control Systems”, Springer"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=610",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=610"
  },
  "KOM 613E": {
   "code": "KOM 613E",
   "name": "Probabilistics Methods in Robo",
+  "nameEn": "Probabilistics Methods in Robo",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -541,18 +1253,89 @@
    "Hafta 13 · Diğer araştırma alanları: 3-Boyutlu EZKH, Topolojik EZKH, Çevrim kapatma, Karma Metotlar, vb.",
    "Hafta 14 · Proje değerlendirmeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: yaralı kavramlar ve Bayes filtreler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kalman Filtreleri(KF) ve Genişletilmiş Kalman Filtreleri(GKF)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Dağılımlı Kalman Filtresi(DKF) ve Bilgi Filtreleri(BF)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Robot hareket ve ölçüm modelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Konumlama teknikleri : GKF tabanlı konumlama, DKF tabanlı Konumlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Mobil robotlarda haritalama: Yer-tutum haritalama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Genişletilmiş Kalman Filtresi(GKF) ve Dağılımlı Kalman Filtresi(DKF) tabanlı EZKH teknikleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "EZKH tekniklerinde Veri Eşleştirme Yöntemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "EZKH da Rao-Blacwell ayrıştırmalı Parçacık Filtreleri (Hızlı-EZKH)",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "EZKH da çoğul araç problemi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Markov Karar Süreçleri ve Kısmi Gözlenebilir Markov süreçler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Graf SLAM metodları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Diğer araştırma alanları: 3-Boyutlu EZKH, Topolojik EZKH, Çevrim kapatma, Karma Metotlar, vb.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje değerlendirmeleri"
+   }
+  ],
   "textbooks": [
    "Thrun, S., Burgard, W., & Fox, D. (2005). Probabilistic robotics. Intelligent robotics and autonomous agents. Cambridge, Mass: MIT Press.",
    "Montemerlo, M., & Thrun, S. (2007). FastSLAM: A scalable method for the simultaneous localization and mapping problem in robotics. Springer tracts in advanced robotics, 27. Berlin: Springer.",
    "Siegwart, R., & Nourbakhsh, I. R. (2004). Introduction to autonomous mobile robots. Intelligent robotics and autonomous agents. Cambridge, Mass: MIT Press.",
    "Thrun, S., Fox, D., Burgard, W., & Dellaert, F. (2000). Robust Monte Carlo Localization for Mobile Robots. Artificial Intelligence , 99-141"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=613",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=613"
  },
  "KOM 696": {
   "code": "KOM 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -596,6 +1379,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -608,7 +1462,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=696"
  }
 }

@@ -2,6 +2,7 @@
  "SAV 302E": {
   "code": "SAV 302E",
   "name": "Ayrık Matematik",
+  "nameEn": "Discrete Mathematics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -33,15 +34,87 @@
    "Hafta 13 · Ağaçlar ve Uygulamaları",
    "Hafta 14 · Bulanık Küme Teorisine Giriş"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mantık ve Önermeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Küme Teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Binary İlişkiler",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Fonksiyonlar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Üreten Fonksiyon ve Yinelemeli İlişki",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kombinatorik (Sayma Teknikleri)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Grup Teorisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kodlama Teorisi ve Grup Kodları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Diskret Olasılık",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Sayı Teorisine Giriş",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Graf Teorisine Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Grafik Kuramı ve Uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Ağaçlar ve Uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Bulanık Küme Teorisine Giriş",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Discrete Mathematics: Essentials and Applications, Ali Grami, Academic Press (Elsevier), 2023"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=302"
  },
  "SAV 303E": {
   "code": "SAV 303E",
   "name": "Hava Araçları Güç Sistemine Giriş",
+  "nameEn": "Introduction to Air Vehicle Power System",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -74,15 +147,87 @@
    "Hafta 13 · Elektrikli Motorlara Giriş – Çalışma prensipleri, yapısı, AC/DC motor türleri",
    "Hafta 14 · Elektrikli Motorların Hava Araçlarındaki Uygulamaları – Performans, kontrol, entegrasyon hususları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Termodinamiğe Giriş – Tanımlar, sistem türleri, enerji türleri, denge, birimler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Hal değişimleri, basınç–sıcaklık–iş–ısı kavramları, Sıfırıncı Yasa, ideal gaz yasası",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Termodinamiğin 1. Yasası: Kapalı sistemler, iç enerji, entalpi, özgül ısılar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Açık Sistemler için 1. Yasa – Sürekli akış süreçleri, kontrol hacmi, enerji korunumu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Termodinamiğin 2. Yasası – Entropi, Clausius eşitsizliği, çevrimlerin olabilirliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "T–s diyagramları ve entropi analizi, tersinirlik, termodinamik sıcaklık ölçeği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Rankine Çevrimi – Buharlı güç çevrimleri, ideal ve gerçek Rankine çevrimi analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Brayton Çevrimi – Gaz türbini çevrimleri, rejenerasyon, ideal ve gerçek karşılaştırması",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Otto ve Diesel Çevrimleri – Pistonlu içten yanmalı motorlar, hava standart çevrimler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Rankine, Brayton, Otto ve Diesel çevrimlerinin karşılaştırmalı analizi – Verim ve uygulama yorumları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Jet Motorlarına Giriş – Turbojet, turbofan, turboprop sistemler ve bileşenleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Yardımcı Güç Üniteleri (APU) ve çevrim temelli uçak güç sistemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Elektrikli Motorlara Giriş – Çalışma prensipleri, yapısı, AC/DC motor türleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Elektrikli Motorların Hava Araçlarındaki Uygulamaları – Performans, kontrol, entegrasyon hususları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Cumpsty and Heyes. Jet Propulsion 3rd Edition, 2015, Cambridge University Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=303"
  },
  "SAV 304E": {
   "code": "SAV 304E",
   "name": "Güdüm ve Navigasyona Giriş ve Uygulamaları",
+  "nameEn": "Introduction and Application to Guidance and Navigation",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -115,15 +260,87 @@
    "Hafta 13 · Uzay Araçları Güdüm ve Navigasyonu",
    "Hafta 14 · İleri Güdüm ve Navigasyon Konuları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Navigasyona Giriş, Koordinat Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ataletsel Navigasyon Sistemleri Temelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Küresel Konumlandırma Sistemleri Temelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sensör Füzyonu ve Kalman Filtresi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Güdüm Prensipleri ve Güdüm Yasaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Oransal Seyrüsefer Güdümü",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "En kısa mesafe ve en kısa zaman güdüm stratejileri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Otopilot Sistemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "İnsansız Hava Aracı (İHA) Güdüm ve Navigasyonu",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Robotik Navigasyon ve Engelden Kaçınma",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Görsel Odometri ve SLAM",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Füze Güdüm Sistemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Uzay Araçları Güdüm ve Navigasyonu",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "İleri Güdüm ve Navigasyon Konuları",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Principles of Navigation, Paul J. Zarchan, Howard Musoff, American Institute of Aeronautics and Astronautics, 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=304",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=304"
  },
  "SAV 305E": {
   "code": "SAV 305E",
   "name": "Otonom Platformlar için Gömülü Sistem Uygulamaları",
+  "nameEn": "Embedded System Applications for Autonomous Platforms",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -154,15 +371,87 @@
    "Hafta 13 · Mini Proje Geliştirme: Öğrenci tarafından seçilen görev bazlı HIL sistemi",
    "Hafta 14 · Proje Sunumları ve HIL Gösterimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gömülü Sistemlere Giriş ve Otonom Sistem Mimarileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrodenetleyici Temelleri ve Geliştirme Ortamları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "C/C++ ile Gömülü Programlama Temelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gerçek Zamanlı Sistemlere ve RTOS'a Giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "RTOS ile Görev Yapısı: Process’ler, Thread’ler ve Scheduler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Görev Senkronizasyonu ve Veri Paylaşımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Sensör Arayüzleri ve Simülasyon Modeliyle Entegrasyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Aktüatör Sürme ve Simülasyon Modeline Çıkış Yazma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Hardware-in-the-Loop (HIL) Temelleri ve Altyapı Kurulumu",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "HIL Uygulaması I: Basit sistem modeliyle döngü kurma",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "HIL Uygulaması II: Uçuş benzetimi senaryosu ve kontrolör testleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "RTOS Performans İzleme, Debugging ve Zamanlama Analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Mini Proje Geliştirme: Öğrenci tarafından seçilen görev bazlı HIL sistemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları ve HIL Gösterimi",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Valvano, J. W. (2017). Embedded Systems: Real-Time Operating Systems for ARM Cortex-M Microcontrollers (Volume 3, 4th Edition)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=305"
  },
  "SAV 306E": {
   "code": "SAV 306E",
   "name": "İHA Sistemleri için Uygulamalı RF Haberleşmesi",
+  "nameEn": "Practical RF Communication for UAV Systems",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -193,10 +482,81 @@
    "Hafta 13 · Mini Proje Geliştirme: UAV RF Haberleşmesi Senaryosu Kurulumu",
    "Hafta 14 · Proje Sunumları ve Spektrum Analizi Göstergeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "RF Haberleşmeye Giriş ve Otonom Sistemlerdeki Rolü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "RF Spektrumu, Frekans Bantları ve Yasal Düzenlemeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Temel RF Bileşenleri: Antenler, Transceiver'lar, Filtreler, Kablolar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yayılım Modelleri: Serbest Uzay, Çok Yollu, Zayıflama ve Kapsama",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Modülasyon Tekniklerine Giriş: FSK, PSK, OFDM, LoRa",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "RF İletişim Protokolleri: Telemetri, Datalink ve Payload Haberleşmesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "RF Güvenilirliği ve Parazit: SNR, EMI/EMC, Paket Kaybı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "SDR Nedir? RTL-SDR ile Spektrum İzleme Uygulaması (PC Tabanlı)",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "GNURadio ile Temel SDR Blokları ve FM/FSK Modülasyon Uygulaması",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "USB–UART Arayüzüyle RF Transceiver (LoRa, XBee) ile Veri Gönderimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Datalink Performans Testleri: RSSI, Latency, Paket Kaybı Ölçümü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Temel Spektrum İzleme ve Jamming Fark Etme Teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Mini Proje Geliştirme: UAV RF Haberleşmesi Senaryosu Kurulumu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları ve Spektrum Analizi Göstergeleri",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Sobot, R. (2021). Wireless Communication Electronics: Introduction to RF Circuits and Design Techniques (2nd ed.). Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=306",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAV&dersNo=306"
  }
 }

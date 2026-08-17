@@ -2,6 +2,7 @@
  "UUM 503E": {
   "code": "UUM 503E",
   "name": "Elasticity",
+  "nameEn": "Elasticity",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,6 +35,77 @@
    "Hafta 13 · Elastisite denklemlerinin çeşitli problemlere uygulanması",
    "Hafta 14 · Özel elastisite problemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tansör Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tansör Analizi ve eğrisel koordinatlar-I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tansör Analizi ve eğrisel koordinatlar-II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Deformasyon Kinematiği:Hareket ve deformasyonlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yer değiştirme-birim şekil değiştirme bağlantıları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Dinamik: Kuvvetler ve gerilmeler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Gerilme tansörleri, asal gerilmeler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Virtuel iş prensibi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bünye denklemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Lineer elastisite denklemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Varyasyon teoremleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Airy Gerilme Fonsiyonu ve uygulamaları",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Elastisite denklemlerinin çeşitli problemlere uygulanması",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Özel elastisite problemleri"
+   }
+  ],
   "textbooks": [
    "Timoshenko, S., 1951. Theory of Elasticity, McGraw-Hill",
    "Sokolnikoff , I.S., 1956. Mathematical Theory of Elasticity, McGraw-Hill",
@@ -41,12 +113,12 @@
    "İnan, M., 1969. Düzlemde Elastisite Teorisi, ITÜ.",
    "Ugural, A. C., 1994. Advanced Strength and Applied Elasticity, Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=503"
  },
  "UUM 507E": {
   "code": "UUM 507E",
   "name": "Linear Control System",
+  "nameEn": "Linear Control Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -82,6 +154,77 @@
    "Hafta 13 · Servo sistemlerin tasarımı.",
    "Hafta 14 · Optimal doğrusal kuadratik regülatör sistemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Modern kontrol kuramına giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Klasik (geleneksel) kontrol kuramının temel kavramlarının (Laplace tarnsformu, transfer fonksiyonu, zaman tanım bölgesinde system analizi, sistemin kararlılığı, Routh Hurwitz yöntemi, köklerin yer eğrisi yöntemi) kısaca tekrarlanması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Durum uzayında sistem tanımı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Durum değişkenleri, durum uzayı ve durum uzayındaki denklem formu.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Durum uzayındaki sistemlerin dönüşümleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Özdeğerler ve özvektörler. Hesaplama yöntemleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kanonik formlar ve çapraz etkileşimsiz sistemler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Durum uzayında tanımlı sistemlerin zaman yanıtı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Durum geçiş matrisi ve Laplace dönüşümü yöntemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Kontrol edilebilirlik ve gözlemlenebilirlik. Lyapunov kararlılık analizi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Durum uzayında kontrolcü tasarımı. Kutup atama yöntemi. Ackermann formülü.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Durum uzayında gözlemleyici tasarımı.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Servo sistemlerin tasarımı.",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Optimal doğrusal kuadratik regülatör sistemleri."
+   }
+  ],
   "textbooks": [
    "Golnaraghi, F., Kuo, B.C., 2010. Automatic Control Systems (9th ed.), Wiley, NJ.",
    "Ogata, K., 2010. Modern Control Engineering (5th ed.), Pearson, NJ.",
@@ -89,12 +232,12 @@
    "Brogan, W.L., 1991. Modern Control Theory (3rd ed.), Prentice-Hall, Englewood Cliffs.",
    "Nise, N.S., 2008. Control Systems Engineering (5th ed.), Wiley, NJ."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=507"
  },
  "UUM 508E": {
   "code": "UUM 508E",
   "name": "Yapıların Sonlu Eleman.Anal.",
+  "nameEn": "Finite Element Analy.in Struc.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -131,18 +274,89 @@
    "Hafta 13 · Dinamik Analiz-I",
    "Hafta 14 · Dinamik Analiz-II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sonlu elemanlar yöntemini takdim",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sonlu eleman formülasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bir Boyutlu Elemanlar-I",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 4,
+    "topic": "Bir Boyutlu Elemanlar-II",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 5,
+    "topic": "Bir Boyutlu Elemanlar-III",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 6,
+    "topic": "Kafes Sistemlerin ve Çerçevelerin Analizi",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlem Gerilme ve Düzlem Gerinim-I",
+    "outcomes": "3-8-9"
+   },
+   {
+    "week": 8,
+    "topic": "Düzlem Gerilme ve Düzlem Gerinim-II",
+    "outcomes": "3-8-9"
+   },
+   {
+    "week": 9,
+    "topic": "Eksenel Simetrik Katılar",
+    "outcomes": "4-8"
+   },
+   {
+    "week": 10,
+    "topic": "Genel Katılar",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 11,
+    "topic": "Plakların Eğilmesi",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 12,
+    "topic": "Genel Kabuklar",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dinamik Analiz-I",
+    "outcomes": "7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Dinamik Analiz-II"
+   }
+  ],
   "textbooks": [
    "Mecitoğlu, Z., 2011. Finite Element Analysis in Structures, Lecture Notes, Istanbul Technical University.",
    "Weaver, W., and Johnston, P.R., 1984. Finite Elements for Structural Analysis, Prentice-Hall, Inc., Englewood Cliffs, New Jersey.",
    "Cook, R.D., Malkus, D.S., Plesha, M.E., and Witt, R.J., 2002. Concepts and Applications of Finite Element Analysis, John Wiley & Sons, Inc., New York.",
    "Chandrupatla, T.R., and Belegundu, A.D., 1991. Introduction to Finite Elements in Engineering, Prentice-Hall, Inc., Englewood Cliffs, New Jersey."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=508",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=508"
  },
  "UUM 511": {
   "code": "UUM 511",
   "name": "Viskoz Akışı",
+  "nameEn": "Viscous Flow",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -176,17 +390,88 @@
    "Hafta 13 · İntegral denklemler ve yaklaşık çözümler",
    "Hafta 14 · Termal sınır tabaka hesapları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Viskoz akış olaylarına örnekler. Sınır koşulları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sıkıştırılabilir viskoz akışkanın temel denklemleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Navier-Stokes denklemleri. Enerji denklemi. Girdap ve akım fonksiyonu kavramları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Eylemsizlik dışı koordinat sistemleri. Kontrol hacmi formülasyonları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Newtonyan viskoz akış denklemlerinin çözümleri: Couette akışları. Borularda Poiseuille akışları. CouettePoiseulle akışı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Newtonyan viskoz akış denklemlerinin çözümleri: Dairesel olmayan kesitler için kanal akışları. Daimi olmayan kanal akışları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Newtonyan viskoz akış denklemlerinin çözümleri: Hareketli duvarlar etkisinde oluşan daimi olmayan akışlar. Uniform üfleme ve emme. Serbest yüzey akışları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Newtonyan viskoz akış denklemlerinin çözümleri: Durma noktası akışları. Dönen disk üzerinde akış.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sürünmeli Akışlar. Küre çevresinde akış çözümü. Oseen çözümü. Diğer üç boyutlu cisimler için sürünmeli akış.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Yağlama teorisi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Laminer sınır tabaka. Tanımlar. Blasius Çözümü. Falkner-Skan çözümleri.",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Serbest kayma akışları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "İntegral denklemler ve yaklaşık çözümler",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Termal sınır tabaka hesapları."
+   }
+  ],
   "textbooks": [
    "White, F.M., 2006. Viscous Fluid Flow, McGraw-Hill Higher Education, NY.",
    "Kundu, P.K., Cohen, I.M. with contributions by Ayyaswamy, P.S. and Hu, H.H., 2008. Fluid Mechanics, Academic Press, 4th ed., Amsterdam.",
    "Schlichting, H., Gersten K., with contributions by Krause E., Oertel H., Mayes, C. (Translator), 2000. Boundary Layer Theory, Springer, 8th Rev. & enl. Edition, Berlin."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=511"
  },
  "UUM 512E": {
   "code": "UUM 512E",
   "name": "Unsteady Aerodynamics",
+  "nameEn": "Unsteady Aerodynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -218,17 +503,88 @@
    "Hafta 13 · Munk-Jones yaklaşımıyla aerodinamik kuvvet ve moment hesabı",
    "Hafta 14 · Narin cisimlerin statik ve dinamik kararlılığı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar ve daimi aerodinamik",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Potansiyel akışın temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Profillerde daimi olmayan akış",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "3-B Daimi akış",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "3-B Daimi olmayan akış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Sıkışabilir akış",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Ses altı akışın modellenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Duble latis çözümleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ses üstü akışın modellenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Mach kutuları metodu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Genelleştilmiş Mach kutuları ve diafram kavramı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Narin cisim teorisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Munk-Jones yaklaşımıyla aerodinamik kuvvet ve moment hesabı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Narin cisimlerin statik ve dinamik kararlılığı"
+   }
+  ],
   "textbooks": [
    "Gülçat Ü., 2010. Fundamentals of Modern Unsteady Aerodynamics, Springer",
    "Leishman, J. G., 2006. Principles of Helicopter Aerodynamics, Cambridge Aerospace Series.",
    "Bisplinghoff, R.L., Ashley, H. and Halfman, R., 1996. Aeroelasticity, Dover Publications."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=512",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=512"
  },
  "UUM 521E": {
   "code": "UUM 521E",
   "name": "Advanced Dynamics",
+  "nameEn": "Advanced Dynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -262,6 +618,77 @@
    "Hafta 13 · Korunum kanunları: Genelleştrilmiş koordinat sistemi.",
    "Hafta 14 · Lagrange denklemi ve kısıtlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Koordinat Eksenleri ve vektor tanımı, konum vektörü, dik koordinat eksenleri, vektör fonksiyon ve türevi, skaler ve vektör alanlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Hareketin Kanunları: Zamanın fonksiyonu kuvvet, konumun fonksiyonu kuvvet, hızın fonksiyonu kuvvet.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kartezyen koordinat sistemi, silindirik koordinat sistemi, küresel koordinat sistemi, dik olmayan koordinat sistemi, eğrisel koordinat sistemi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Global kartezyen eksenler etrafında dönme, global eksenler etrafında ardaşık dönme: Global yuvarlanma, yunuslama ve sapma açıları: Lokal kartezyen eksenler etrafında dönme, lokal eksenler etrafında ardaşık dönme: Euler açıları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Lokal yuvarlanma, yunuslama ve sapma açıları: Genel dönme, dönmelerin birleştirilmesi ve ayrıştırılması: Katı cisim hareketi: Homojen dönüşümler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Ters ve geri homojen dönüşümler, bileşik homojen dönüşümler: Düz ve ters kinematik",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kütle moment matrisinin elemanları, kütle moment matrisin dönüşümü, asal kütle momentleri: Rijid cisim dönmesinin kartezyen dinamiği",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Rijid cisim Euler Dinamiği, Rijid cisim ötelenme dinamiği, Rijid cisimlerde klasik problemler: Birden fazla cisim durumunda dinamik.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Homojenlik ve izotropi, uzay tanımı, konfigürasayon uzayı, olay uzayı, durum uzayı, durum zaman uzayı, kinematic uzaylar.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Holonomic kısıt, kısıt kuvveti, virtüel ve gerçek işler, nonholonomic kısıt, integre edilemez kısıt, eşitsizlik kısıtı, diferansiyel kısıt",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Newton denklemlerinin Lagrange formu, Lagrange denklemi ve potansiyel kuvvet",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Varyasyonel dinamik, Hamilton Prensibi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Korunum kanunları: Genelleştrilmiş koordinat sistemi.",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Lagrange denklemi ve kısıtlar"
+   }
+  ],
   "textbooks": [
    "Scheck, F. 1990. Mechanics From Newton's Laws To Deterministics Chaos, Springer-Verlag Heidelberg.",
    "Cook, R.D. and Young, W.C. 1998. Advanced Mechanics of Materials, Prentice Hall.",
@@ -271,12 +698,12 @@
    "Fowles, G.R. and Cassiday, G.L. 2005. Analytical Mechanics. (Holt, Rinehart and Winston)",
    "Barger, V.D. and Olsson, M.G. 1994. Classical Mechanics: a Modern Perspective. (McGraw-Hill)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=521"
  },
  "UUM 523E": {
   "code": "UUM 523E",
   "name": "Advanced Flight Dynamics",
+  "nameEn": "Advanced Flight Dynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -311,6 +738,77 @@
    "Hafta 13 · Uçakların Dinamik Kararlılığı-I",
    "Hafta 14 · Uçakların Dinamik Kararlılığı-II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uçak Hareket Denklemleri-I",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uçak Hareket Denklemleri-II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Aerodinamik ve İtki Kuvvet ve Momentleri-I",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Aerodinamik ve İtki Kuvvet ve Momentleri-II",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "3 Serbestlikli (uzunlama) Uçak Statik Denge Analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "6 Serbestlikli Uçak Statik Denge Analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Uçak Hareket Denklemlerinin Sayısal Çözümü-I",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Uçak Hareket Denklemlerinin Sayısal Çözümü-II",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Çeşitli Uçuş Senaryolarının Benzeşimi-I",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Çeşitli Uçuş Senaryolarının Benzeşimi-II",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Uçak Hareket Denklemlerinin Linearizasyonu-I",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Uçak Hareket Denklemlerinin Linearizasyonu-II",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Uçakların Dinamik Kararlılığı-I",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Uçakların Dinamik Kararlılığı-II"
+   }
+  ],
   "textbooks": [
    "Yechout T.R., Morris S. L., Bosserties D. E., Hallgren W. F., 2003. Introduction to Aircraft Flight Mechanics: Performance, Static Stability, Dynamic Stability and Classical Feedback Control, AIAA Education Series.",
    "Etkin B., Reid L. D., 1995. Dynamics of Flight Stability and Control, Third Edition, Wiley.",
@@ -318,12 +816,12 @@
    "Abzug M. J., 1998. Computational Flight Dynamics, AIAA Education Series.",
    "Smetana F. O., 1984. Computer Assisted Analysis of Aircraft Performance, Stability and Control, McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=523",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=523"
  },
  "UUM 526E": {
   "code": "UUM 526E",
   "name": "Optimization Techniques in En.",
+  "nameEn": "Optimization Techniques in En.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -355,6 +853,77 @@
    "Hafta 13 · Çok-disiplinli optimizasyon ve hassasiyet analizi, çok-disiplinli analiz, sıralı işlemler, çok-disiplinli optimizasyon işlemi, Toplu-hassasiyet denklemleri, Direk ve devrik yöntemler, Aeroelastisite ve aeroakustikten optimizasyon örnekleri",
    "Hafta 14 · Topoloji Optimizasyonu: Topolojik and topolojik olmayan dönüşümler, topoloji optimizasyonu formulasyonları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Optimum Tasarım Kavramları: Optimizasyon problemlerinin sınıflandırılması, Optimizasyon Metodları, Gradyan ve Hessian, Gradyan-Tabanlı yöntemlerin temel özellikleri, Lagrange formülasyonu, Karush-Kuhn Tucker gerekli şartları, Optimalite şartları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Konveksite, Lagrange fonksiyonunun min-max özelliği, Kısıtlamalı ve kısıtlamasız optimum, ölçeklendirme etkileri, Grafiksel optimizasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal Problemler, Optimum Tasarım için doğrusal programlama metodları, Simplex yöntemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İki-fazlı Simplex metodu, post-optimalite analizi, doğrusal programlamada dualite",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal olmayan problemler, kısıtlamasız optimum tasarım için sayısal yöntemler, İniş şartı, Gradyanların sayısal olarak hesaplanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "1-Boyutlu minimizasyon, Eşit aralık araması, Altın kesit araması, Polinomial ara-kestirim , En-dik iniş yöntemi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Eşlenik gradyan yöntemi, Newton yöntemi, Yarı-Newton yöntemi, DFP yöntemi, BFGS yöntemi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kısıtlamalı optimum tasarım için sayısal yöntemler, Kısıtlamaların durumu, Kısıtlama normalleştirilmesi, Potansiyel kısıtlama stratejisi, Kısıtlamalı problemin doğrusallaştırılması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ardışık doğrusal programlama, Karesel Programlama",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kısıtlamalı en-dik iniş yöntemi, Kısıtlamalı yarı-Newton yöntemleri, Uygun yönler yöntemi, Gradyan izdüşüm yöntemi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Çok-amaçlı optimizasyon problemleri: Edgeworth-Pareto tanımı, Min-Max problemleri, KreisselmeierSteinhause fonksiyonu",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Genetik Algoritmalar and Evrimsel Stratejiler: Temel algoritmalar, Uygunluk, Gen değişimi, Çaprazlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çok-disiplinli optimizasyon ve hassasiyet analizi, çok-disiplinli analiz, sıralı işlemler, çok-disiplinli optimizasyon işlemi, Toplu-hassasiyet denklemleri, Direk ve devrik yöntemler, Aeroelastisite ve aeroakustikten optimizasyon örnekleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Topoloji Optimizasyonu: Topolojik and topolojik olmayan dönüşümler, topoloji optimizasyonu formulasyonları"
+   }
+  ],
   "textbooks": [
    "Arora, J.S., 2004. Introduction to Optimum Design, Elsevier Academic Press, San Diego.",
    "Arora, J.S., 2007. Optimization of Structural and Mechanical Systems, World Scientific, Singapur",
@@ -362,12 +931,12 @@
    "Miller, R.E., 2000. Optimization : Foundations and Applications, John Wiley & Sons Inc, NY.",
    "Chong, E. and Zak, S., 2001. An Introduction to Optimization, Wiley , NY."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=526",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=526"
  },
  "UUM 534E": {
   "code": "UUM 534E",
   "name": "Uçak Uçuş Kontrol Sistemleri",
+  "nameEn": "Aircraft Flight Control Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -415,6 +984,77 @@
    "Hafta 13 · Uçağın yunuslama ve yönelme kontrol sistemleri tasarım yöntemleri-II",
    "Hafta 14 · Uçak dinamik ve kontrol sistemlerinde Matlab/Simulink kullanımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uçuş mekaniği, kontrol ve kontrol yüzeylerinin temel tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uçak statik ve dinamik kararlığı ve kararlılık türevleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Uçağın uzunlamasına ve yanlamasına dinamik denklemleri, doğrusal-olmayan dinamiği",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrusallaştırma ve transfer fonksiyonları",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Uzunlamasına hareketin modları, kararlılık türevleri, kısa ve uzun modları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Uzunlamasına transfer fonksiyonları, geçici ve sürekli hal yanıtlarının analizi",
+    "outcomes": "1-5-10"
+   },
+   {
+    "week": 7,
+    "topic": "Kısa ve uzun modların transfer fonksiyonları ve zaman yanıtları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Uçak kontrol sistemlerinin temel kavramları, uzunlamasına otopilot tasarımı",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Otopilot tipleri ve tasarım metodları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Konum otopilotunun köklerin yer eğrisi yöntemiyle tasarımı",
+    "outcomes": "1-6-7-8-10"
+   },
+   {
+    "week": 11,
+    "topic": "İç ve dış çevrim kavramları. Otopilot tasarımı.",
+    "outcomes": "1-7-8-10"
+   },
+   {
+    "week": 12,
+    "topic": "Uçağın yunuslama ve yönelme kontrol sistemleri tasarım yöntemleri-I",
+    "outcomes": "1-9-10"
+   },
+   {
+    "week": 13,
+    "topic": "Uçağın yunuslama ve yönelme kontrol sistemleri tasarım yöntemleri-II",
+    "outcomes": "1-9-10"
+   },
+   {
+    "week": 14,
+    "topic": "Uçak dinamik ve kontrol sistemlerinde Matlab/Simulink kullanımı"
+   }
+  ],
   "textbooks": [
    "Yechout, T.R., Morris, S.L., 2003. Introduction to Aircraft Flight Mechanics, AIAA, Reston, VA.",
    "Yechout, T.R., Morris, S.L., 2003. Introduction to Aircraft Flight Mechanics, AIAA, Reston, VA.",
@@ -427,12 +1067,12 @@
    "McLean, D., 1990. Automatic Flight Control Systems, Prentice Hall, NJ.",
    "McLean, D., 1990. Automatic Flight Control Systems, Prentice Hall, NJ."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=534",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=534"
  },
  "UUM 535E": {
   "code": "UUM 535E",
   "name": "Mühendislik Matematiği",
+  "nameEn": "Engineering Mathematics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -478,6 +1118,77 @@
    "Hafta 13 · Vektor diferansiyel and integral hesaplamaları",
    "Hafta 14 · Sayısal matematik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Vektör ve vektör uzayları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Matrisler ve lineer denklem sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Özdeğerler, özvektörler ve köşegenleştirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Karakteristik ve minimal polinomlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "ç çarpım uzayları ve ortogonolite. Hilbert uzayları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Fourier serileri, Fourier integralleri ve Fourier dönüşümleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Laplace dönüşümü",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Kompleks fonksiyonlarda limit, süreklilik ve türevlenebilirlik",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Cauchy-Riemann denklemleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Kompleks integrasyon ve Cauchy teoremi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Taylor ve Laurent serileri. Kalanlar teoremi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Konform dönüşümler ve sınır değer problemlerine uygulanması",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Vektor diferansiyel and integral hesaplamaları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Sayısal matematik"
+   }
+  ],
   "textbooks": [
    "Jeffrey, A., 2002. Advanced Engineering Mathematics. Harcourt/Academic Press",
    "Jeffrey, A., 2002. Advanced Engineering Mathematics. Harcourt/Academic Press",
@@ -486,12 +1197,12 @@
    "Silverman, R.A., 1972. Introductory Complex Analysis. Dover.",
    "Silverman, R.A., 1972. Introductory Complex Analysis. Dover."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=535",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=535"
  },
  "UUM 543E": {
   "code": "UUM 543E",
   "name": "Uçak ve Uzay Mühen.Özel Konu.",
+  "nameEn": "Spec.Top.in Aeron.&Astron.Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -523,16 +1234,87 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=543",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=543"
  },
  "UUM 555": {
   "code": "UUM 555",
   "name": "Eklemeli İmalat&3B Yazıcı Tek.",
+  "nameEn": "Additi.Manuf.&3D Printer Tec.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -567,6 +1349,77 @@
    "Hafta 13 · Eklemeli imalat hakkında güncel bilimsel çalışmalar",
    "Hafta 14 · Eklemeli imalat hakkında güncel yapay zekâ çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Eklemeli imalat ve Hızlı prototipleme tanımları ve tarihsel gelişimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Eklemeli imalatın, diğer imalat türlerine göre karşılaştırılmaları, avantaj ve dezavantajları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Eklemeli imalatta kullanılan malzeme türleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Eklemeli imalatın kullanıldığı sektörler ve güncel istatistiksel veriler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Termoplastik temelli eklemeli imalat yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Termoplastik temelli eklemeli imalatın kullanım alanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Metal temelli eklemeli imalat yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Metal temelli eklemeli imalatın kullanım alanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Nanokompozit ve biomateryal gibi, gelişmekte olan materyalleri temel alan eklemeli imalat yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Eklemeli imalat için ürün tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Eklemeli imalat için üretim metodolojisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "ASTM ve ISO tarafından Eklemeli imalat için hazırlanan ve hazırlanmakta olan standartlar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Eklemeli imalat hakkında güncel bilimsel çalışmalar",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Eklemeli imalat hakkında güncel yapay zekâ çalışmaları"
+   }
+  ],
   "textbooks": [
    "1. Additive Manufacturing Technologies: 3D Printing, Rapid prototyping, and Direct Digital Manufacturing. I. Gibson, D. W. Rosen, B. Stucker, Springer, 2016.",
    "2. Additive Manufacturing Handbook. Adedeji B. Badiru, Vhance V. Valencia, David Liu, CRC Press, 2017.",
@@ -574,12 +1427,12 @@
    "4. Rapid Prototyping Technology: Selection and Application, Kenneth G. Cooper, CRC Press, 2001.",
    "5. Rapid Prototyping: Principles and Applications, Chee Kai Chua, Kah Fai Leong, Chu Sing Lim, World Scientific, 2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=555",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=555"
  },
  "UUM 556E": {
   "code": "UUM 556E",
   "name": "Advanced Thermodynamics",
+  "nameEn": "Advanced Thermodynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -614,6 +1467,77 @@
    "Hafta 13 · Tahrik Termodinamiği",
    "Hafta 14 · Tahrik ve Performans Parametreleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Matematiksel Arka Plan",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Termodinamiğin Birinci Yasası",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Termodinamiğin İkinci Yasası",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ekserji Analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Termodinamiğin Temel Varsayımları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Maxwell Denklemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Gerçek Gazlar ve Sıvılar için Durum Denklemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Saf Akışkanların Termodinamik Özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Karışımların Termodinamik Özellikleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Karışımlar için Faz Dengesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kimyasal Olarak Reaksiyona Giren Sistemler",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Kimyasal Denge",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Tahrik Termodinamiği",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Tahrik ve Performans Parametreleri"
+   }
+  ],
   "textbooks": [
    "Bejan, A., Advanced Engineering Thermodynamics. 3rd Ed., Wiley, 2016.",
    "Moran, M., Shapiro, H., Boettner, D., and Bailey, M., Fundamentals of Engineering Thermodynamics, 9th Ed., Wiley, 2018.",
@@ -621,12 +1545,12 @@
    "Annamalai, K., Puri, I., and Jog, M., Advanced Thermodynamics Engineering, 2nd Ed., CRC Press, 2011.",
    "Winterbone, D. And Turan, A., Advanced Thermodynamics for Engineers, 2nd Ed., B-H, 2015"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=556",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=556"
  },
  "UUM 596E": {
   "code": "UUM 596E",
   "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -670,6 +1594,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -682,12 +1677,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=596"
  },
  "UUM 601E": {
   "code": "UUM 601E",
   "name": "Advanced Comp.Fluid Dynamics",
+  "nameEn": "Advanced Comp.Fluid Dynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -724,6 +1719,77 @@
    "Hafta 13 · Türbülanslı akışlar için LES yöntemleri",
    "Hafta 14 · Hesaplamalı akışkanlar dinamiğinde paralel hesaplama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ağ oluşturma algoritmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hareketli ağlarda temel akışkan denklemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sıkıştıtrılamaz akışlar için sonlu farklar yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sıkıştıtrılamaz akışlar için sonlu hacimler yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sıkıştıtrılamaz akışlar için sonlu elemanlar yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Iteratif yöntemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Serbest yüzey akışları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Spektral yöntemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Sıkıştırılabilir akışlar için sonlu farklar yöntemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Sıkıştırılabilir akışlar için sonlu hacimler yöntemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "ENO ve WENO yöntemleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "RANS modelleri ve Reynolds gerilmesi modelleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Türbülanslı akışlar için LES yöntemleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Hesaplamalı akışkanlar dinamiğinde paralel hesaplama"
+   }
+  ],
   "textbooks": [
    "Ferziger J.H., and Peric, M., 1999. Computational Methods for Fluid Dynamics, Springer.",
    "Gresho, P.M. et. al, 2000. Incompressible Flow and the Finite Element Method Volume 1: Advection-Diffusion, Volume 2: Isothermal Laminar Flow, John Wiley & Sons.",
@@ -731,12 +1797,12 @@
    "Sagaut, P., 2001. Large Eddy. Simulation for Incompressible Flows: An Introduction, Springer.",
    "Anderson, J.D., 1995. Computational Fluid Dynamics The Basics with Applications, McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=601"
  },
  "UUM 605E": {
   "code": "UUM 605E",
   "name": "Rotorc.Struc.Dyn.&Aeroelastict",
+  "nameEn": "Rotorc.Struc.Dyn.&Aeroelastict",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -767,17 +1833,83 @@
    "Hafta 13 · Ana rotor pitch-lag kararsızlığı",
    "Hafta 14 · Yer ve hava rezonansı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Rotor sistemlerinin temel mekaniği ve helikopter uçuşu : Flaplama hareketi. Lag hareketi ve burulma hareketi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Askı durumunda flaplama hareket",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Uzunlamasına trim denklemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Eksenel uçuşta rotor aerodinamiği. Pal elemanı teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İleri uçuşta rotor aerodinamiği ve dinamiği. Paldeki hız bileşenleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Düzlem içi H-kuvveti. Q Rotor torku.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Eksenel ve ileri uçuşta trim ve performans",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Trimin yanlamasına kontrolü",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Elastik pallerin yapısal dinamiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Rotor pallerinin zorlamaya cevabı. Menteşesiz rotorların temel özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Helikopter aeroelastisitesine giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Ana rotor pitch-lag kararsızlığı",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Yer ve hava rezonansı"
+   }
+  ],
   "textbooks": [
    "Bishlinghoff, R.L., Ashley H. and Halfman, R.L., 1996. Aeroelasticity, Dover Edition.",
    "Pierce, G.A. and Hodges, D.H., 2002. Introduction to Structural Dynamics and Aeroelasticity, Cambridge University Press",
    "Bramwell, A.R.S., 2001. Helicopter Dynamics, Second edition published by Butterworth-Heinemann."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=605",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=605"
  },
  "UUM 613": {
   "code": "UUM 613",
   "name": "Hava-Uzay Sistem.Taşınım Olayl",
+  "nameEn": "Convection Phenomena in Aerospace Systems",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -809,6 +1941,77 @@
    "Hafta 13 · Kütle Geçişi-I",
    "Hafta 14 · Kütle Geçişi-II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Prensipler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Laminer Sınır Tabaka Akışı-I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Laminer Sınır Tabaka Akışı-II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Laminer Kapalı Akış",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Harici Doğal Taşınım",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Dahili Doğal Taşınım",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Türbülanslı Akışa Geçiş-I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Türbülanslı Akışa Geçiş-II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Türbülanslı Sınır Tabaka Akışı-I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Türbülanslı Sınır Tabaka Akışı-II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Türbülanslı Kapalı Akış",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Serbest Türbülanslı Akışlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kütle Geçişi-I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Kütle Geçişi-II"
+   }
+  ],
   "textbooks": [
    "Bejan, A., 1995. Convection Heat Transfer, 2nd ed., Wiley, New York.",
    "Burmeister, L.C., 1993. Convective heat transfer, 2nd ed., Wiley, New York",
@@ -816,12 +2019,12 @@
    "Bird, R.B., Stewart, W.E., and Lightfoot, E.N., 2003. Transport Phenomena, 3rd ed ., John Wiley & Sons.",
    "Faghri, A., and Zhang, Y., 2006.Transport phenomena in multiphase systems, Academic Press, Amsterdam."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=613",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=613"
  },
  "UUM 618E": {
   "code": "UUM 618E",
   "name": "Dynamics of Nonlinear Systems",
+  "nameEn": "Dynamics of Nonlinear Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -854,16 +2057,87 @@
    "Hafta 13 · Periyod ikilemesi. Üniversallik ve renormalizasyon.",
    "Hafta 14 · Fraktallere giriş."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bir boyutlu sistemler, sabit noktalar ve kararlılık.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bir boyutlu sistemlerde çatallanma:Eğer düğüm çatallanması, transkritik çatallanma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kritik üstü, kritik altı dirgen çatallanması . Farklı disiplinlerden örnekler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İki boyutlu sistemler; lineerleştirme ve sınıflandırma. Faz uzayı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Faz uzayı devam",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Limit çevrim. Poincaré-Bendixson teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Limit çevrim devam",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İki boyutlu sistelerde çatallanma. Hopf çatallanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Çatallanma devam",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Kaos’a giriş. Lorentz denklemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Poincare ve Lorentz haritalaması",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Bir boyutlu haritalama. Lojistik ve Henon haritaları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Periyod ikilemesi. Üniversallik ve renormalizasyon.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Fraktallere giriş."
+   }
+  ],
   "textbooks": [
    "Rahband, S.N., 1990. Chaotic Dynamics of Nonlinear Systems, Wiley.",
    "Nayfeh, A.H., 1995. Applied Nonlinear Dynamics: Analytical, Computational and Experimental Methods, Wiley."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=618",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=618"
  },
  "UUM 621E": {
   "code": "UUM 621E",
   "name": "Sıkıştırıla. Akış.İleri Prob.",
+  "nameEn": "Adv.Problems in Compres.Flow",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -895,6 +2169,77 @@
    "Hafta 13 · Transonik akışın temelleri",
    "Hafta 14 · Hipersonik akışın temelleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sıkıştırılabilir akışa giriş ve temel termodinamik",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İntegral formda temel korunum denklemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bir boyulu akış ve normal şok özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Isı eklemeli ve sürtünmeli akış özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Eğik şok",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Genişleme dalgaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Sanki bir boyutlu akış özellikleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Lüleler, difüzörler ve rüzgar tünelleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Invisid akışlarda diferansiyel denklemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Sesaltı lineerleştirilmiş akış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Sesüstü lineerleştirilmiş akış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Zamana bağlı dalga hareketi",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Transonik akışın temelleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Hipersonik akışın temelleri"
+   }
+  ],
   "textbooks": [
    "Anderson, J.D., 2003. Modern Compressible Flow, Mc Graw-Hill",
    "Oosthuizen, P.H., and Carcscallen W.E., 1997. Compressible Fluid Flow, McGraw-Hill.",
@@ -902,12 +2247,12 @@
    "Shapiro, A.H., 1953. The Dynamics and Thermodynamics of Compressible Fluid Flow, John Wiley & Sons",
    "Liepmann, H.W., and Roshko A., 1957. Elements of Gas Dynamics, John Wiley & Sons"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=621",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=621"
  },
  "UUM 628": {
   "code": "UUM 628",
   "name": "Aeroakustik",
+  "nameEn": "Aeroacoustics",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -942,6 +2287,77 @@
    "Hafta 13 · Girdap-akustik alan bağıntılarını temel alan teoriler",
    "Hafta 14 · Hesaplamalı aeroakustik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Akustiğin temel denklemleri : Gaz dinamiği bağıntıları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sesin dalga teorisi : Lineer Akustik denklemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dalga denklemi : düzlem dalga, küresel dalga, hareketli dalga",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ses Kaynakları : Monopol, dipol, çoklukutup, Green fonksiyonları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Homojen olmayan dalga denkleminin genel çözümü",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ses yayılımı ve hareketli kaynak etkisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yüzey sınırsız aerodinamik gürültü : Lighthill akustik analojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Jet akışı gürültüsü",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yüzey sınırlı aerodinamik gürültü : Ffowcs Williams-Hawkings",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Firar kenarı gürültüsü : Hareketli yüzey kaynaklı ses oluşumu",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Hava Araçları Gürültüsü : Uçak gürültüsü",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Hava Araçları Gürültüsü : Rotor gürültüsü, Helikopter gürültüsü",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Girdap-akustik alan bağıntılarını temel alan teoriler",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Hesaplamalı aeroakustik"
+   }
+  ],
   "textbooks": [
    "Rienstra, S.W. and Hirschberg, A., 2004. An Introduction to Acoustics, Eindhoven University of Technology",
    "Goldstein, M.E., 1976. Aeroacoustics,McGraw-Hill",
@@ -949,12 +2365,12 @@
    "Wagner, C., Hüttl, T., and Sagaut, P., 2007. Large-Eddy Simulation for Acoustics, Cambridge University Press",
    "Howe, M.S., 2002. Theory of Vortex Sound, Cambridge University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=628",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=628"
  },
  "UUM 629E": {
   "code": "UUM 629E",
   "name": "Struc.Heal.Moni.of Aeros.Str.",
+  "nameEn": "Struc.Heal.Moni.of Aeros.Str.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -990,15 +2406,86 @@
    "Hafta 13 · Havacılık Kompozitlerinde Yorulma ve Diğer Kullanım Hasarların Yapısal Sağlık Denetimi",
    "Hafta 14 · Kompozit Havacılık Yapılarında Yapısal Sağlık Denetimi Sistem Tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapısal Sağlık Denetimine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kritik Havacılık Yapılarının Yapısal Sağlık Denetimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sensörler, Veri Toplama ve Sensör Ağları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Yapısal Sağlık Denetimi Amaçlı Sensör Entegrasyonu ve Ölçme Teknikleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Havacılık Uygulamalarında Yapısal Sağlık Denetimi Amaçlı Veri Analizi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Havacılık Yapılarında Hasar ve Kırılma ve Hasar Belirleme Yöntemleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Analizi ile Hasar Belirleme ve Örüntü Tanıma",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Fiber-optik Tabanlı Yapısal Sağlık Denetimi Teorisi",
+    "outcomes": "1-3-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Fiber-optik Tabanlı Yapısal Sağlık Denetimi Teorisi",
+    "outcomes": "1-3-7"
+   },
+   {
+    "week": 10,
+    "topic": "Fiber-optik Tabanlı Yapısal Sağlık Denetimi Simülasyonları ve Doğrulaması",
+    "outcomes": "1-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Dalga Tabanlı Yapısal Sağlık Denetimi Teorisi",
+    "outcomes": "1-3-7"
+   },
+   {
+    "week": 12,
+    "topic": "Dalga Tabanlı Yapısal Sağlık Denetimi Simülasyonları ve Doğrulaması",
+    "outcomes": "1-3-4-5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Havacılık Kompozitlerinde Yorulma ve Diğer Kullanım Hasarların Yapısal Sağlık Denetimi",
+    "outcomes": "1-2-3-4-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Kompozit Havacılık Yapılarında Yapısal Sağlık Denetimi Sistem Tasarımı"
+   }
+  ],
   "textbooks": [
    "Farrar, C.R. and Worden, K. (2013) Structural Health Monitoring A Machine Learning Perspective, John Wiley & Sons."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=629",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=629"
  },
  "UUM 632": {
   "code": "UUM 632",
   "name": "Uçaklarda Buzlanma",
+  "nameEn": "Aircraft Icing",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -1032,15 +2519,86 @@
    "Hafta 13 · Buzlanmanın önlenmesi ve giderilmesi",
    "Hafta 14 · Buzlanma üzerine yapılan yeni araştırmalar ve sertifikalandırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Havacılık mühendisliğinde buzlanma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Buzlanmaya neden olan hava koşulları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Su buz sisteminde buzlanma olayları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Uçaklarda buzlanma için önemli değişkenler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Buz birikiminin matematik modellenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Damlacık yörünge denklemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Buz birikim kalınlığının hesabı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kanat kesiti üzerinde buzlanmanın termodinamik incelenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Genişletilmiş Massenger modeli",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Isı geçişi hesaplaması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Buzlanmaya aşırı soğutulmuş büyük damlacıkların etkisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Çok elemanlı düzenlenişte buz birikimi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Buzlanmanın önlenmesi ve giderilmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Buzlanma üzerine yapılan yeni araştırmalar ve sertifikalandırılması"
+   }
+  ],
   "textbooks": [
    "Akyurt,M., Zaki, G., Habeebullah, B., (2002). Freezing phenomena in ice-water systems, Energy conversion and management,43, 1773-1789."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=632",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=632"
  },
  "UUM 696E": {
   "code": "UUM 696E",
   "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1084,6 +2642,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -1096,7 +2725,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=696"
  }
 }

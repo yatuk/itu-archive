@@ -2,6 +2,7 @@
  "HUK 201": {
   "code": "HUK 201",
   "name": "İş Hukuku",
+  "nameEn": "Labor Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -22,12 +23,12 @@
   "textbooks": [
    "Eyrenci/Taskent/Ulucan, 2014, Bireysel İş Hukuku, Beta Basım AŞ, ISBN: 9786053331087"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=201"
  },
  "HUK 201E": {
   "code": "HUK 201E",
   "name": "İş Hukuku",
+  "nameEn": "Labor Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -48,12 +49,12 @@
   "textbooks": [
    "Eyrenci/Taskent/Ulucan, 2014, Bireysel İş Hukuku, Beta Basım AŞ, ISBN: 9786053331087"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=201"
  },
  "HUK 203E": {
   "code": "HUK 203E",
   "name": "Bilişim Hukuku",
+  "nameEn": "IT Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -88,15 +89,87 @@
    "Hafta 13 · Sosyal ağ siteleri",
    "Hafta 14 · Genel değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Bilgi teknolojilerinin gelişimi ve temel terimler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mahremiyet, izleme ve Internet",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Veri koruma ilkeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Veri koruma yasa taslağı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İfade özgürlü ğü ve Internet",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "5651 sayılı Internet Ortamında Yapılan Yayınların D üzenlenmesi ve Bu Yayınlar Yoluyla İşlenen Suçlarla Mücadele Edilmesi Hakkında Kanun",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Ara sınav",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sibersuç ve Internet güvenliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sibersuç ve Internet güvenliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Alan adlarının edinilmesi ve korunması",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "E-Ticaret",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Internet üzerindeki Fikri mülkiyetin korunması",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Sosyal ağ siteleri",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Genel değerlendirme",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "E Küzeci, Kişisel Verilerin Korunması, Ankara 2010. K İçel, Y Ünver, Kitle Haberle şme Hukuku, Basın, Radyo, Televizyon, Video, İnternet, İstanbul 2009. M Ketizmen, Türk Ceza Hukukunda Bili şim Suçları, Ankara 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=203"
  },
  "HUK 211": {
   "code": "HUK 211",
   "name": "Sosyal Güvenlik Hukuku",
+  "nameEn": "Social Security Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -124,16 +197,73 @@
    "Hafta 10 · Ölüm sigortası",
    "Hafta 11 · İşsizlik sigortası"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sosyal Güvenlik Hukukunun tanımı, önemi ve işlevleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Sigortalılar (1): İşçiler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Sigortalılar (2): Memurlar ile bağımsız çalışanlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sosyal güvenliğin finansmanı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "İş kazası ve meslek hastalığı sigortası",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Hastalık ve analık sigortası",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Malullük sigortası",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Yaşlılık (emeklilik) sigortası (1)",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Yaşlılık (emeklilik) sigortası (2)",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Ölüm sigortası",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "İşsizlik sigortası",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "ALİ NAZIM SÖZER (2013) TÜRK SOSYAL SİGORTALAR HUKUKU, BETA BASIN YAYIM, İSTANBUL",
    "ALI GÜZEL/ALI RIZA OKUR/NURŞEN CANIKLIO ĞLU (2012): SOSYAL G ÜVENLIK HUKUKU, 14. BASI, BE TA BASIN YAYIM, ISTA NBUL"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=211"
  },
  "HUK 212": {
   "code": "HUK 212",
   "name": "Sendika.&Toplu İş Sözl.Hukuku",
+  "nameEn": "Syndicate and Collective Bargaining Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -167,15 +297,87 @@
    "Hafta 13 · Memur sendikaları",
    "Hafta 14 · Çalışma koşullarının oluşumunda meslek odaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sendika hakkı ve özgürlüğü",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 2,
+    "topic": "Sendikanın tanımı ve unsurları, kuruluşu",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 3,
+    "topic": "Sendikaların işleyişi",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Sendika üyeliği",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Sendikal güvenceler",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Sendikal faaliyetler, denetimi ve sona ermesi",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Toplu iş sözleşmesi hakkı ve özerkliği",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Toplu iş sözleşmesinin düzeyi ve türleri",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Toplu iş sözieşmesi ehliyet ve yetkisi",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Toplu iş sözleşmesinin kişiler bakımından kapsamı",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Arabuluculuk ve tahkim",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Grev ve lokavt",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Memur sendikaları",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Çalışma koşullarının oluşumunda meslek odaları",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "A. CAN TUNCAY/FATMA BURCU SAVAŞ (2013): TOPLU İŞ HUKUKU, 3. BASI, BETA BASIM YAYIM, ISTANBUL"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=212"
  },
  "HUK 213": {
   "code": "HUK 213",
   "name": "İş Sağlığı ve Güvenliği Hukuku",
+  "nameEn": "Occupational Safety and Health Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -207,15 +409,87 @@
    "Hafta 13 · Çalışma ve dinlenme süreleri",
    "Hafta 14 · Yapı işlerinde iş sağlığı ve güvenliği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş sağlığı ve güvenliğinin tanımı, tarihçesi ve önemi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "İş sağlığı ve güvenliği hukukunun kaynakları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Devletin iş sağlığı ve güvenliği yükümlülükleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İşverenlerin sağlığı ve güvenliği önlemlerini alma yükümlülüğü",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Hukuki yönden risk değerlendirmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "İş güvenliği uzmanlığı ve işyeri hekimliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "İş güvenliği uzmanı ile işyeri hekiminin hukuki ve cezai sorumluluğu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Çalışanların hak ve yükümlülükleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "İş sağlığı ve güvenliğinin kamu hukuku yaptırımları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "İş kazasından doğan maddi tazminat",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "İş kazasından doğan manevi tazminat",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kadın ve çocukların korunması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çalışma ve dinlenme süreleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yapı işlerinde iş sağlığı ve güvenliği",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "MAHMUT KABAKCI (2009): AB İŞ HUKUKUNDA İŞVERENLERİN İŞ SAĞLIĞI VE GÜVENLİĞİNE İLİŞKİN TEMEL YÜKÜMLÜLÜKLERİ VE TÜRK MEVZUATININ UYUMU, BETA BASIN YAYIM, İSTANBUL."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=213",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=213"
  },
  "HUK 214": {
   "code": "HUK 214",
   "name": "Teknolojik Yeniliklerin Korun.",
+  "nameEn": "Protection of Technological Innovations",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -247,15 +521,87 @@
    "Hafta 13 · Lisans sözleşmeleri",
    "Hafta 14 · Teknoloji transferi ve rekabet ihlalleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fikirlerin korunmasının önemi, Fikri mülkiyet hakkı türleri, Patent, Ticari sır, Eser sahibinin hakları, Marka, Tasarım vb. Tarihi gelişim, Uluslararası kurallar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Fikri mülkiyet haklarının korunması yolları, Hukuk ve ceza davaları, Hukuk davalarında talepler, İhtiyati tedbirler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Telif Hakları, Eser Türleri, Korumanın şartları, Bilgisayar programlarının telif haklarıyla korunması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Telif hakkına tecavüz",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Marka, Marka sistemi, Marka tescil prosedürü, Marka tescil şartları, tescil için mutlak ve nisbi red sebepleri, Marka hakkına tecavüz",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarım hakkı, tasarım korunması sistemi, tasarım tescil şartları, tescilsiz tasarımların korunması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Buluşların korunması, patentler ve faydalı modeller, patent sistemi, patent dokümanının içeriği",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Patent verilebilirlik şartları: Patentin konusu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Patent verilebilirlik şartları: Yenilik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Patent verilebilirlik şartları: Buluş basamağı, Sanayiye uygulanabilirlik, açıklık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Ticari sırlar, nitelikleri, sorumluluk şartları, Ticari sır - patent koruması tercihi, hak sahibinin talepleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Patent ve ticari sırlara ilişkin hakların ihlali",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Lisans sözleşmeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Teknoloji transferi ve rekabet ihlalleri",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Suluk, Cahit, Karahan, Sami, Saraç, Tahir, Nal, Temel (2013) Fikri Mülkiyet Hukukunun Esasları. Seçkin Yayınevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=214"
  },
  "HUK 215": {
   "code": "HUK 215",
   "name": "Sözleşmeler Hukuku",
+  "nameEn": "Contracts Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -285,18 +631,75 @@
    "Hafta 10 · Kefalet sözleşmesi",
    "Hafta 11 · Sözleşmelerde rekabet hukuku açısından dikkat edilecek noktalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sözleşmeler a-kavramı b-çeşitleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Sözleşmenin Kurulması Sözleşmenin Geçerlilik şartları a- tarafların ehliyeti b-konunun uygun olması ( mümkün olması /muvazaalı olmaması) c-şekli (adi-yazılı-resmi şekil ) d-tarafların beyanının sağlıklı olması (hata/hile/korkutma/gabin olmaması)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sözleşmenin geçersiz olmasının yaptırımları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "İfa a-kavramı b-tarafları c-konusu d-yeri e-zamanı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Borçların ifa edilmemesinin sonuçları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Borçların sona ermesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Sözleşmede cezai şart",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Satış sözleşmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Eser sözleşmesi, vekalet sözleşmesi, hizmet sözleşmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kefalet sözleşmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sözleşmelerde rekabet hukuku açısından dikkat edilecek noktalar",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "EREN, Fikret (2015): Borçlar Hukuku, Genel Hükümler, Yetkin Yay. ISBN:9786050500257",
    "OĞUZMAN, Kemal / ÖZ, Turgut (2015): Borçlar Hukuku, Genel Hükümler, C. I - II, Vedat Yay. ISBN: 9786054823994",
    "NOMER, Haluk Nami (2015): Borçlar Hukuku Genel Hükümler, Beta Yay. ISBN: 9786053334439",
    "GÜMÜŞ, ALPER (2015): Borçlar Hukuku Özel Hükümler, Vedat Yay. ISBN: 9786059263085"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=215"
  },
  "HUK 216": {
   "code": "HUK 216",
   "name": "Telekomünikasyon Hukuku",
+  "nameEn": "Telecommunications Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -330,15 +733,87 @@
    "Hafta 13 · Rekabet etme yasağı",
    "Hafta 14 · Genel değerlendirme ve uygulama sorunlarının tartışılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kamu hizmeti olmanın özellikleri ve Telekomünikasyon hizmetlerinin durumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Telekomünikasyon kavramları: Görev sözleşmesi, imtiyaz sözleşmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Telekomünikasyon kavramları: Telekomünikasyon ruhsatı, 4. katma değerli Telekomünikasyon hizmetleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Telekomünikasyon kavramları: Abone, ana Telekomünikasyon şebekesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Telekomünikasyonun hukuki gelişimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Telekomünikasyon Hukukunun hukuki niteliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Telekomünikasyon Hukukuna hâkim olan ilkeler: Hizmetlerin yetkilendirme ile verilmesi ilkesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Telekomünikasyon Hukukuna hâkim olan ilkeler: Serbest rekabetin geçerliliği ilkesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Telekomünikasyon alanında özelleştirme, özelleştirme süreci",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Özelleştirme metotları ve ihale süreci",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Özelleştirme ilkeleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Türkiye’de Özelleştirme",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Rekabet etme yasağı",
+    "outcomes": "2-3-6"
+   },
+   {
+    "week": 14,
+    "topic": "Genel değerlendirme ve uygulama sorunlarının tartışılması",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Halil Akkanat (Editör): Telekomünikasyon Hukuku, İstanbul, 2017, Filiz Kitabevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=216",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=216"
  },
  "HUK 217": {
   "code": "HUK 217",
   "name": "AR-GE Hukuku",
+  "nameEn": "R&D Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -372,17 +847,75 @@
    "Hafta 13 · ARGE Sözleşmelerinin temel özelikleri ve uygulama alanları",
    "Hafta 14 · Türkiye’deki Ar-Ge organizasyonu ve yapısı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hukukun amacı, temel kavramları ve önemi"
+   },
+   {
+    "week": 2,
+    "topic": "Hukukta yaptırım, yargı örgütü ve temel iş hukuku kavramları"
+   },
+   {
+    "week": 3,
+    "topic": "Ticaret hukukunda temel kavramlar ve sistemler"
+   },
+   {
+    "week": 4,
+    "topic": "Borçlar hukuku genel hükümleri ve prensipler"
+   },
+   {
+    "week": 5,
+    "topic": "Fikri mülkiyet kavramı ve temel uygulama alanı"
+   },
+   {
+    "week": 6,
+    "topic": "Telif hukuku, 5846 sayılı FSEK"
+   },
+   {
+    "week": 7,
+    "topic": "6769 sayılı SMK amacı ve temel prensipleri"
+   },
+   {
+    "week": 8,
+    "topic": "Patent hukuku, buluş kavramı ve çalışan buluşu"
+   },
+   {
+    "week": 9,
+    "topic": "Ticari sır ve haksız rekabet"
+   },
+   {
+    "week": 10,
+    "topic": "Yükseköğretim kurumlarında geçekleştirilen buluşlar ve hak sahipliği"
+   },
+   {
+    "week": 11,
+    "topic": "4691 sayılı TGB Kanunu ve amacı – Teknopark/ Yönetici Şirket/ TTO/ TÜBİTAK kavramları"
+   },
+   {
+    "week": 12,
+    "topic": "Sınai mülkiyet hakları ve Ar-Ge faaliyetleri kapsamında yapılacak sözleşmelere ilişkin (lisans, devir gizlilik, teknoloji transfer, know-how, üniversite-sanayi işbirliği, vb.) temel bilgiler"
+   },
+   {
+    "week": 13,
+    "topic": "ARGE Sözleşmelerinin temel özelikleri ve uygulama alanları"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye’deki Ar-Ge organizasyonu ve yapısı"
+   }
+  ],
   "textbooks": [
    "METİN TURAN; BİLİŞİM HUKUKU, SEÇKİN YAYINLARI, 4. BASKI, ANKARA-2020",
    "SAFİYE NUR BAĞRIAÇIK; ÜRETİM VE İŞ SIRLARININ KORUNMASI, ONİKİLEVHA YAYINLARI, İSTANBUL-2017,",
    "MUHAMMED SULU; TİCARİ SIR VE KORUNMASI, ONİKİLEVHA YAYINLARI, İSTANBUL-2017"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=217",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=217"
  },
  "HUK 218": {
   "code": "HUK 218",
   "name": "Ticaret Hukuku",
+  "nameEn": "Commercial Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -414,10 +947,81 @@
    "Hafta 13 · Şirketlerde kar dağıtımı",
    "Hafta 14 · Limited şirketler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hukukun amacı, temel kavramları ve önemi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Hukukta yaptırım, yargı örgütü ve temel ticaret hukuku kavramları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Ticari işletme kavramı, devir ve rehin",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Ticari iş, ticari yargı ve tacir kavramları ve hukuki sonuçları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ticaret ünvanı işletme adı ve marka ve fikri mülkiyet hukuku",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Rekabet ve haksız rekabet hukuku",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tacir yardımcıları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Şirket kavramı ve şirketler hukuku temel ilkeleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sermaye şirketleri ve şirketler topluluğu (holding)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tür değiştirme, birleşme ve bölünme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Anonim şirket kuruluşu ve temel kavramları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Anonim şirketler organları ve işleyisi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Şirketlerde kar dağıtımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Limited şirketler",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "RIZA AYHAN/HAYRETİN ÇAĞLAR/MEHMET ÖZDAMAR; TİCARİ İŞLETME HUKUKU GENEL ESASLAR, YETKİN YAYINLARI, ANKARA-2019"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=218",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HUK&dersNo=218"
  }
 }

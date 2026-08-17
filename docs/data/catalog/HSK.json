@@ -2,6 +2,7 @@
  "HSK 501": {
   "code": "HSK 501",
   "name": "Su Kaynakları Sis.",
+  "nameEn": "Water Resources Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -39,6 +40,77 @@
    "Hafta 13 · Taşkın Kontrolü Projelerinde Fayda - Maliyet Analizi.",
    "Hafta 14 · Hidroelektrik Projelerinde Fayda – Maliyet Analizi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Su Kaynakları ve Sistem Analizi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Amaçların Belirlenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Fayda – Maliyet Analizi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Optimizasyon, Üretim Fonksiyonu,",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Optimalite Koşulları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Klasik Optimizasyon Yöntemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Doğrusal Programlama.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik Programlama.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Dinamik Programlama.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Simülasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Çok Amaçlı Optimizasyon.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Belirsizliğin Gözönüne Alınması. Karar Teorisi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Taşkın Kontrolü Projelerinde Fayda - Maliyet Analizi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Hidroelektrik Projelerinde Fayda – Maliyet Analizi."
+   }
+  ],
   "textbooks": [
    "Bayazıt, M., 1995. Su Kaynakları Sistemleri, İ.T.Ü.",
    "Bayazıt, M., 1995. Su Kaynakları Sistemleri, İ.T.Ü.",
@@ -51,12 +123,12 @@
    "Mays, L. W., Tung, Y. K., 1992. Hydrosystems Engineering and Management, Mc Graw-Hill.",
    "Mays, L. W., Tung, Y. K., 1992. Hydrosystems Engineering and Management, Mc Graw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=501"
  },
  "HSK 503": {
   "code": "HSK 503",
   "name": "Ileri Akışkanlar Mekaniği",
+  "nameEn": "Advanced Fluid Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -94,6 +166,77 @@
    "Hafta 13 · Akım İçinde Duran Bir Cisme Gelen Direnç Kuvveti: İlgili Fizik, Direnç Kuvvetinin Genel İfadesi",
    "Hafta 14 · Akım İzleme ve Ölçme-Değerlendirme Teknikleri . YILİÇİ SINAVI"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Denklemler : Süreklilik ve Hareket Denklemleri, Kuvvetler ve İvme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gerilme-Şekil Değiştirme Bağıntısı (Bünye Denklemi), Euler, Bernoulli ve Navier-Stokes Denklemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Potansiyel Akım Teorisi: Çevrintisiz Akımın Fiziği, Potansiyel ve Akım Fonksiyonları, Akım Ağları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Eksenel Simetrik Akımlarda Akım ve Potansiyel Fonksiyonları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sirkülasyon ve Çevrinti: Sirkülasyonun Tanımı, Çevri Boruları, Çevri Tabakası, Serbest Çevri/vorteks",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Basit Potansiyel Akımlar: Üniform Akım, İki Boyutlu Kuyu ve Kaynak",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sınır Tabakası: Çevrintinin Difüzyonu Basit Sistemlerin Süperpozisyonu: Bir Silindir Etrafındaki Akım, Silindire Gelen Kaldırma Kuvveti",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Y I L İ Ç İ S I N A V I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sınır Tabakası: Çevrintinin Difüzyonu Denk., Düz Plaka Üzerindeki Sınır Tab., Sınır Tabakası Kalınlığı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sınır Tabakası Denklemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Sınır Tabakasında Ayrılma",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "İzler: İlgili Fizik, Çevrilerin Frekansı, İz Denklemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Akım İçinde Duran Bir Cisme Gelen Direnç Kuvveti: İlgili Fizik, Direnç Kuvvetinin Genel İfadesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Akım İzleme ve Ölçme-Değerlendirme Teknikleri . YILİÇİ SINAVI"
+   }
+  ],
   "textbooks": [
    "AVCI, İ. , İleri Akışkanlar MekaniğiDers Notları, 2010.",
    "AVCI, İ. , İleri Akışkanlar MekaniğiDers Notları, 2010.",
@@ -104,12 +247,12 @@
    "Townson, A. C., “Basic Hydrodynnamics”, Butterwont, London, 1987.",
    "Townson, A. C., “Basic Hydrodynnamics”, Butterwont, London, 1987."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=503"
  },
  "HSK 505": {
   "code": "HSK 505",
   "name": "Su Hukuku ve Politikası",
+  "nameEn": "Su Hukuku ve Politikası",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -143,6 +286,77 @@
    "Hafta 13 · Türkiye’nin Sınıraşan Sularla İlgili Sorunları",
    "Hafta 14 · Türkiye’nin Sınıraşan Sularla İlgili Sorunları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ; Derste İşlenecek Konulara Genel Bakış",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 2,
+    "topic": "Dünya’da Su Kaynaklarının Durumu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Türkiye’de Su Kaynaklarının Durumu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Türkiye’de Su Kaynaklarının Durumu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Dünya’da ve Türkiye’de Büyük Boyutlu Su Kaynaklarını Geliştirme Projeleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Dünya’da ve Türkiye’de Büyük Boyutlu Su Kaynaklarını Geliştirme Projeleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "GAP’ın Uluslararası Boyutu",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Su Kaynakları Projelerinde „Çevre ve Sosyoekonomik Sorunlar",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Su Kaynakları Projelerinde „Çevre ve Sosyoekonomik Sorunlar",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Ulusal Su Hukuku ve Politikası",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 11,
+    "topic": "Uluslararası Su Hukuku ve Politikaları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Sınıraşan Sular",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Türkiye’nin Sınıraşan Sularla İlgili Sorunları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye’nin Sınıraşan Sularla İlgili Sorunları"
+   }
+  ],
   "textbooks": [
    "AVCI, İ. , Su Hukuku ve Politikası Ders Notları, 2010",
    "Kolars, J.(1994), “Problems of Int. River Management: The Case of the Euphrate.., Oxford University Press”",
@@ -150,12 +364,12 @@
    "Doğrusöz, E.M., “Sular Hukuku”, Yetkin Hukuk Yayınları, 1997, Ankara.",
    "Bağış, A.İ. (Edit.), ‘’Water as An Element of Cooperation And Development in Middle East"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=505"
  },
  "HSK 511E": {
   "code": "HSK 511E",
   "name": "Fuzzy Logic Model. Engineering",
+  "nameEn": "Fuzzy Logic Model. Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -189,6 +403,77 @@
    "Hafta 13 · Uygulamalar",
    "Hafta 14 · Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Belirsizlik Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Klasik Kümeler ve Karaktaristik Değerleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Bulanık Kümeler ve Üyelik Dereceleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Bulanık Kümeler ve Üyelik Dereceleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Üyelik Fonksiyonları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Bulanıklaştırma",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Bulanık Küme İşlemleri, VEleme, VEYAlama ve DEĞİLleme, Bulanık İlişkiler",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Bulanık Küme İşlemleri, VEleme, VEYAlama ve DEĞİLleme, Bulanık İlişkiler",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Bulanık Matematik, Toplama, Çıkarma, Çarpma ve Bölme",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Bulanık Mantık Önermeleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Öncüller, Soncullar, Çıkarımlar; Durulaştırma, Bulanık Kurallar ve Sistemler",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Öncüller, Soncullar, Çıkarımlar; Durulaştırma, Bulanık Kurallar ve Sistemler",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulamalar",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalar"
+   }
+  ],
   "textbooks": [
    "Şen, Z., Fuzzy logic and hydrological modeling. Taylor and francis. Crc lewıs publıshers, new york, 340 pp, 2010",
    "Şen, Z., Bulanık Mantık ve Modelleme İlkeleri, Bilge Kültür Sanat Basımevi, 172 sayfa, 2001.",
@@ -196,12 +481,12 @@
    "Şen, Z., Fuzzy Logic and System Models in Water Sciences, Turkish water Foundation,315 pp.",
    "Ross, J. T., Fuzzy Logic With Engineering Applications, McGraw-Hill, Inc., New York, 593 pp., 1995."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=511"
  },
  "HSK 513": {
   "code": "HSK 513",
   "name": "Hidrolojik Modeller",
+  "nameEn": "Hydrologic Models",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -233,18 +518,89 @@
    "Hafta 13 · Hidrolojide İstatistik Modeller -2",
    "Hafta 14 · Hidrolojik Tasarım Modelleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş - Hidrolojinin Su Kaynakları Mühendisliğindeki Yeri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Sızma Modelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Yeraltı Suyu Modelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Doymuş Bölgede Akım Modelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yüzeysel Akış Modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yağış-Akış Modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Birim Hidrograf Modeli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Parametrik Modeller",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Akım Öteleme Modelleri - Toplu Modeller",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Akım Öteleme Modelleri - Yayılı Modeller",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Akım Tahmin Modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Hidrolojide İstatistik Modeller -1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Hidrolojide İstatistik Modeller -2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Hidrolojik Tasarım Modelleri"
+   }
+  ],
   "textbooks": [
    "Bayazıt, M. (1998). Hidrolojik Modeller. İTÜ Yayını.",
    "Chow, V. T., Maidment, D. R. ve Mays, L. W. (1988). Applied Hydrology. McGraw-Hill.",
    "Singh, V. P. (1992). Elementary Hydrology. Prentice Hall.",
    "Bras, R. (1990). An Introduction to Hydrologic Science. Addison-Wesley."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=513"
  },
  "HSK 514": {
   "code": "HSK 514",
   "name": "Baraj Planlama ve Tasarımı",
+  "nameEn": "Planning and Design of Dams",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -281,6 +637,77 @@
    "Hafta 13 · Su alma yapıları ve dip savaklar",
    "Hafta 14 · Akarsu çevirme yapıları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biriktirme yapılarına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Planlama esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Barajların çevre etkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Baraj taşkın hidrolojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Barajlarda katı madde hareketi",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Baraj hazneleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Baraj jeolojisi ve temelleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Dolgu barajlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Beton barajlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kemer barajlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Silindir sıkıştırmalı beton barajlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Dolu savaklar ve enerji kırıcılar",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Su alma yapıları ve dip savaklar",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Akarsu çevirme yapıları"
+   }
+  ],
   "textbooks": [
    "AĞIRALIOĞLU, N., BARAJ PLANLAMA VE TASARIMI (BARAJ PLANLAMA ESASLARI), CILT 1, 2. BASKI, SU VAKFI, 2007.",
    "AĞIRALIOĞLU, N., BARAJ PLANLAMA VE TASARIMI (BARAJ GÖVDE TASARIMI), CILT 2, SU VAKFI, 2005.",
@@ -288,13 +715,13 @@
    "AĞIRALIOĞLU, N., BARAJ GÜVENLIĞI, BETA YAYINEVI, 2011.",
    "HERZOG, M.A.M., PRACTICAL DAM ANALYSIS, THOMAS TELFOLD LTD., 1999."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=514",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=514"
  },
- "HSK 525": {
-  "code": "HSK 525",
-  "name": "Hesaplamalı Hidrolik",
-  "language": "English/Türkçe",
+ "HSK 526": {
+  "code": "HSK 526",
+  "name": "Su Mühendis.Olası.&İstat.",
+  "nameEn": "Probability and Statistics in Water Engineering",
+  "language": "Türkçe",
   "credits": {
    "theory": 3,
    "practice": 0,
@@ -302,55 +729,118 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "Nümerik hesaplamaya giriş esaslarının açıklanması. Newton-Raphson metodu ile nonlineer sistemlerin çözümünün bulunması, Nümerik enterpolasyon ile deney sonuçlarının değerlendirilmesi, Nümerik entegrasyon ile baraj hazne boşalma süresinin bulunması, sonlu farklar metodunun ilkelerinin açıklanması, Sonlu fark temel formlarının çıkarılması, açık ve kapalı şemaların karşılaştırılması, şemaların stabilite şartlarının belirlenmesi, akım alanında hız bileşenlerinin, akım fonksiyonun ve çevrintinin başlangıç ve sınır şartlarının belirlenmesi, yer altı suyu akım denklemlerinin sonlu farklar ile çözümü, karakteristikler metodunun açıklanması ve hidrolik uygulamaları Introduction to numerical computation, Solution of nonlinear systems by Newton-Raphson method, evaluation of experimental data using numerical interpolation, calculation of reservoir emptying time by using numerical integration, explanation of principles of finite differences method, derivation of basic finite difference forms, comparison of explicit and implicit schemes, determination of stability criteria for different schemes, determination of boundary and initial conditions for velocity components, stream functions, and vortices different flow domains, solution of groundwater flows using finite differences method, principles of method of characteristics and its applications in hydraulics.",
+  "description": "1. Temel Olasılık Kavramları (Basic Probability Concepts) 2. Toplam Olasılık ve Bayes Teoremi (Total Probability and Bayes Theorem) 3. Bayes Karar Teorisi (Bayes Decision Theory) 4. Markov Zincirleri (Markov Chains) 5. İstatistiğe Giriş (Introduction to Statistics) 6. Parametrelerin Tahmini (Estimation of Parameters) 7. Frekans Analizi (Frequency Analysis) 8. Güven Aralığı (Confidence Interval) 9. Hipotez Testleri (Hypotheses Tests) 10. Dağılım Fonsiyonları ve Testler (Probability Distributions and Tests) 11. Varyans Analizi (Analysis of Variance) 12. Korelasyon ve Regresyon (Correlation and Regression) 13. Zaman Serileri (Time Series) 14. ARMA Modelleri (ARMA Models) -",
   "outcomes": [
-   "Hidrolik gözlem değerlerinin eğrisini bulma",
-   "Hidrolik gözlem değerlerinin eğrisini bulma",
-   "Hazne boşalma süresini nümerik entegrasyonla hesaplama",
-   "Hazne boşalma süresini nümerik entegrasyonla hesaplama",
-   "Zamana bağlı ve zamana bağlı olmayan serbest yüzeyli akımların su yüzü profilini hesaplama",
-   "Zamana bağlı ve zamana bağlı olmayan serbest yüzeyli akımların su yüzü profilini hesaplama",
-   "Bir akım alanında akım fonksiyonunu bularak akım hızı ve basınçların hesaplanması",
-   "Bir akım alanında akım fonksiyonunu bularak akım hızı ve basınçların hesaplanması",
-   "Yer altı akımlarında akım ağının bulunması",
-   "Yer altı akımlarında akım ağının bulunması",
-   "Havza akımlarında yükselen ve alçalan hidrografları sonlu farklar ve karakteristikler metodu ile hesaplama",
-   "Havza akımlarında yükselen ve alçalan hidrografları sonlu farklar ve karakteristikler metodu ile hesaplama"
+   "Temel olasılık kavramlarını bilirler,",
+   "Mühendislik problemlerinde Bayes teoremi kullanabilirler ve Bayes karar teorisi ile karar verebilirler,",
+   "Markov zinciri ile mühendislik problemlerini çözebilirler,",
+   "Mühendislik problemlerinin istatistik analizini yapabilirler,",
+   "Güven aralığı ve hipotez testlerini bilirler,",
+   "Varyans analizi yapabilirler,",
+   "Zaman serilerinin temel bilgilerini bilirler,",
+   "ARMA modellerini kullanabilirler."
   ],
   "weeklyTopics": [
-   "Hafta 1 · Temel kavramlara giriş",
-   "Hafta 2 · Newton-Raphson yöntemi",
-   "Hafta 3 · Nümerik enterpolasyon",
-   "Hafta 4 · En küçük karaler yöntemi",
-   "Hafta 5 · Nümerik entagrasyon",
-   "Hafta 6 · Sonlu Farklar yöntemi",
-   "Hafta 7 · Sonlu farkların temel formları",
-   "Hafta 8 · Açık ve kapalı şemalar",
-   "Hafta 9 · Stabilite, uygunluk, ve yakınsaklık",
-   "Hafta 10 · Başlangıç ve sınır şartları",
-   "Hafta 11 · Kısmi diferansiyel denklemlerin formları ve oluşumları",
-   "Hafta 12 · Parabolik denklemlerin nümerik çözümleri",
-   "Hafta 13 · Hiperbolik ve eliptik denklemlerin nümerik çözümleri",
-   "Hafta 14 · Hiperbolik ve eliptik denklemlerin nümerik çözümleri"
+   "Hafta 1 · Temel olasılık kavramları",
+   "Hafta 2 · Toplam olasılık ve Bayes teoremi",
+   "Hafta 3 · Bayes karar teorisi",
+   "Hafta 4 · Markov zincirleri",
+   "Hafta 5 · İstatistiğin esasları",
+   "Hafta 6 · Parametrelerin tahmini",
+   "Hafta 7 · Frekans analizi",
+   "Hafta 8 · Güven aralığı",
+   "Hafta 9 · Hipotez testleri",
+   "Hafta 10 · Dağılım fonksiyonları ve testler",
+   "Hafta 11 · Varyans analizi",
+   "Hafta 12 · Korelasyon ve regresyon",
+   "Hafta 13 · Zaman serileri",
+   "Hafta 14 · ARMA Modelleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel olasılık kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Toplam olasılık ve Bayes teoremi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bayes karar teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Markov zincirleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İstatistiğin esasları",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Parametrelerin tahmini",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Frekans analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Güven aralığı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Hipotez testleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Dağılım fonksiyonları ve testler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Varyans analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Korelasyon ve regresyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Zaman serileri",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "ARMA Modelleri"
+   }
   ],
   "textbooks": [
-   "KUMAR, M.S.M, Computational Hydraulics, India, 2010.",
-   "KUMAR, M.S.M, Computational Hydraulics, India, 2010.",
-   "CHAPRA, S.C., CANALE, R.P., Numerical Methods for Engineers, McGraw Hill 1989.",
-   "CHAPRA, S.C., CANALE, R.P., Numerical Methods for Engineers, McGraw Hill 1989.",
-   "GOLUB, G.H., ORTEGA, J.M., Scientific Computing and Differential Equation: An Introduction to Numerical Methods, Academic Pres, 1993.",
-   "GOLUB, G.H., ORTEGA, J.M., Scientific Computing and Differential Equation: An Introduction to Numerical Methods, Academic Pres, 1993.",
-   "KOUTITAS, C.G., Elements of Computational Hydraulics, Pentech Pres, 1983.",
-   "KOUTITAS, C.G., Elements of Computational Hydraulics, Pentech Pres, 1983.",
-   "ROACHE, P.J., Computational Fluid Dynamics, Hermosa Publishers, 1979.",
-   "ROACHE, P.J., Computational Fluid Dynamics, Hermosa Publishers, 1979."
+   "Bayazıt, M., İnşaat Mühendiliğinde Olasılık Yöntemleri, İTÜ İnşaat Fak. Matbaası, 1996.",
+   "Ang, H-S.A., Tang, W.H., Probability Concepts in Engineering:Emphasis on Applications to Civil and Environmental Engineering, John Wiley and Sons, 2006.",
+   "Box, G.E.P., Jenkins, G.C.R., Time Series Analysis: Forecasting and Control, Wiley Series,2008.",
+   "Ang, H-S.A., Tang, W.H., Probability Concepts in Engineering Planning and Design, Vol. I, John Wiley & Sons, 1975.",
+   "Ang, H-S.A., Tang, W.H., Probability Concepts in Engineering Planning and Design, Vol. II, John Wiley & Sons, 1984.",
+   "Benjamin, J.R., Cornell, C.A., Probability, Statistics and Decision for Civil Engineers, McGraw-Hill, 1970."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=526"
  },
  "HSK 529": {
   "code": "HSK 529",
   "name": "Kentsel Altyapı Hidroliği",
+  "nameEn": "Urban Hydraulic Structure",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -384,6 +874,77 @@
    "Hafta 13 · Meskun Bölgelerin Yağmur Suyu Drenajı ve yağmursuyu su alma ağızlarının boyutlandırılmaları",
    "Hafta 14 · Meskun Bölgelerin Yağmur Suyu Drenajı ve yağmursuyu su alma ağızlarının boyutlandırılmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Meskun Bölgede Yağışlar ve Akışlar,",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Meskun Bölgede Yağışlar ve Akışlar,",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Meskun Bölgede Yağışlar ve Akışlar,",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Rasyonel Metot ile pik akış hesaplamaları,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Rasyonel Metot ile pik akış hesaplamaları,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sayısal metotla akış değerlerinin hesaplanması,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Sayısal metotla akış değerlerinin hesaplanması,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sayısal metotla akış değerlerinin hesaplanması,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Birim hidrograf ve S-Hidrografların elde edilmesi,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Birim hidrograf ve S-Hidrografların elde edilmesi,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Hidrograflardan faydalanarak değişik saatle riçin birim hidrograf elde etme imkanları ve hesap metotları,",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Hidrograflardan faydalanarak değişik saatle riçin birim hidrograf elde etme imkanları ve hesap metotları,",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Meskun Bölgelerin Yağmur Suyu Drenajı ve yağmursuyu su alma ağızlarının boyutlandırılmaları",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Meskun Bölgelerin Yağmur Suyu Drenajı ve yağmursuyu su alma ağızlarının boyutlandırılmaları"
+   }
+  ],
   "textbooks": [
    "“Design of Urban Highway Drainage”, The State of The Art; U.S. Department of Transportation, Federal Highway Administration Offices of Research and Development Implementation Division (HDV-21), 2010.",
    "Uyumaz, A. “Kentsel Altyapı Hidroliği”, Yayınlanmamış Ders Notları, 2005.",
@@ -391,12 +952,12 @@
    "Uyumaz, A. “Highway Storm Drainage with Kerb-Opening Inlets”, The Science of The Total Environment, Volume 146/147, 1994, pp.471-478.",
    "“Manual of Practise on Urban Drainage”, The Urban Drainage Subcommittee of the Canada-Ontario Agreement on Great Lakes Water Quality Ministry of the Environment, Ontario, Canada, 1977."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=529",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=529"
  },
  "HSK 531E": {
   "code": "HSK 531E",
   "name": "Hydrologic Mod.With Remote Sen",
+  "nameEn": "Hydrologic Mod.With Remote Sen",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -429,6 +990,77 @@
    "Hafta 13 · Uzaktan Algılama ve Coğrafi Bilgi Sistemi Teknikleri İle Yağış Modellenmesi",
    "Hafta 14 · Uzaktan Algılama ve Coğrafi Bilgi Sistemi Teknikleri İle Hidroelektrik Santral Parametrelerinin Modellenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uzaktan Algılama ve Coğrafi Bilgi Sistemine giriş..",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uzaktan Algılamanın Temelleri. Uzaktan Algılama Veri ve Metodlarının Kullanımı",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Su Kaynakları ve Kıyı Çizgisinin İzlenmesi. Katı Madde Taşınımı. Su Kalitesi ve Kirletici Maddelerin Etkisinin Uzaktan Algılama İle İncelenmesi. Coğrafi Bilgi Sistemi.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Coğrafi Bilgi Sisteminin Temelleri. Coğrafi Bilgi Sisteminde Veri Yapısı.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Hardware ve Software; Coğrafi Bilgi Sistemi İle Uzaktan Algılamanın Birleştirilmesi.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Coğrafi Verilerinin Analizi.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Uydu Verileri Kullanılarak Su Kalitesinin İzlenmesi. Batimetri, Akıntılar, Rüzgarlar ve Sıcaklıkların Uydu Verileri İle İzlenmesi ve Gerekli Değişkenler.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Uzaktan Algılamanın Coğrafi Bilgi Sistemi Teknikleri İle Hidrolojik Modellerin Uygulanması.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Uzaktan Algılama ve Coğrafi Bilgi Sistemi Teknikleri İle Akarsu Havzası Modellenmesi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Uzaktan Algılama ve Coğrafi Bilgi Sistemi Teknikleri İle Hidrolojik yağış- akış Modellenmesi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Uzaktan Algılama ve Coğrafi Bilgi Sistemi Teknikleri İle Hidrolojk Su Kalitesi Modellenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Uzaktan Algılama ve Coğrafi Bilgi Sistemi Teknikleri İle Su Potansiyeli Modellenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Uzaktan Algılama ve Coğrafi Bilgi Sistemi Teknikleri İle Yağış Modellenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Uzaktan Algılama ve Coğrafi Bilgi Sistemi Teknikleri İle Hidroelektrik Santral Parametrelerinin Modellenmesi"
+   }
+  ],
   "textbooks": [
    "http://rst.gsfc.nasa.gov/",
    "H. Gonca Coskun · Ugur Alganci · Ebru Eris ·Necati Agıralioglu · H. Kerem Cigizoglu · Levent Yilmaz · Z. Fuat Toprak, 2010, Remote Sensing and GIS Innovation with Hydrologic Modelling for Hydroelectric Power Plant (HPP) in Poorly Gauged Basins, Water Resour Manage DOI 10.1007/s11269-010-9632",
@@ -437,12 +1069,12 @@
    "H.Gonca Coskun, Ugur Alganci, Gokce Usta, \"Analysis of Land Use Change and Urbanization in the Kucukcekmece Water Basin (Istanbul, Turkey) with Temporal Satellite Data using Remote Sensing and GIS\", Sensors, Vol. 8, No. 11, 11/2008,",
    "H.G. Coskun, \"Landsat Thematic Mapper Monitoring of Turbid Water Quality in the Strait of Istanbul (Bosphorus)\", Bulletin of the Technical University of Istanbul, Vol. 48, 1995, s. 325 – 343."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=531",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=531"
  },
  "HSK 596": {
   "code": "HSK 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -486,6 +1118,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -498,12 +1201,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=596"
  },
  "HSK 613E": {
   "code": "HSK 613E",
   "name": "Flood Control",
+  "nameEn": "Flood Control",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -537,6 +1240,77 @@
    "Hafta 13 · Taşkın kontrolünde menba ve mansap planlamaları",
    "Hafta 14 · Taşkın sigortası"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Taşkın nedir? Taşkın tipleri, taşkın nedenleri nelerdir?",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tarihte taşkınlar ve nedenleri",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Taşkınların meydana getirdikleri zararlar ve zararların toplanması",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Taşkınların zamanla ilişkisi ve taşkınların önceden haber verilmesi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Taşkınların menba ve mansap tarafındaki seviye ve debilere göre bildirilmesi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Taşkın dalgalarının belirlenmesi",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Taşkın dalgasının Waller yöntemi ile belirlenmesi",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Taşkın periyotları",
+    "outcomes": "1-2-4-6"
+   },
+   {
+    "week": 9,
+    "topic": "Taşkın kontrolü çalışmaları, yapısız taşkın kontrolü çalışmaları",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Taşkın kontrolü yapılarının tasarımı",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Taşkınların baraj haznelerinden ötelenmesi",
+    "outcomes": "1-2-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Taşkın sedde ve duvarlarının tasarımı",
+    "outcomes": "1-2-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Taşkın kontrolünde menba ve mansap planlamaları",
+    "outcomes": "1-2-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Taşkın sigortası"
+   }
+  ],
   "textbooks": [
    "“Floods and Their Compatitions” IASH-Unesco, 1967",
    "Lecture Notes By M. Emin Savci (Unpublished)",
@@ -544,12 +1318,12 @@
    "Luna B. Leopold and Thomas Maddock, “The flood control Controversy”, The Ronald Press Company, New York, 1957.",
    "Bhra Flood Engineering, “Hydraulics Aspects of Floods and Flood Control” London, England, 1983."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=613",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=613"
  },
  "HSK 696": {
   "code": "HSK 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -593,6 +1367,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -605,7 +1450,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=696"
  }
 }

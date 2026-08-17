@@ -2,6 +2,7 @@
  "YSB 524E": {
   "code": "YSB 524E",
   "name": "Climate Data Analys.Methods",
+  "nameEn": "Climate Data Analys.Methods",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=524",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=524"
  },
  "YSB 565E": {
   "code": "YSB 565E",
   "name": "Marine Geochemistry",
+  "nameEn": "Marine Geochemistry",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,12 +35,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=565",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=565"
  },
  "YSB 569E": {
   "code": "YSB 569E",
   "name": "Earth System",
+  "nameEn": "Earth System",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -72,16 +73,87 @@
    "Hafta 13 · Buzullar",
    "Hafta 14 · Jeolojik Takvim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yer Bilimlerine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Madde ve Mineraller",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Magmatik kayaçlar ve Intrüzif Faaliyetler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Başkalaşım ve başkalaşım kayaçları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ayrışma ve topraklar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tortul süreçler ve kayaçlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Levha Tektoniği",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Okyanus Tabanının kökeni ve Evrimi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kabuk Deformasyonu ve Dağ oluşumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Depremler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yüzey ve Yer altı suları",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kıyı süreçleri ve akarsular",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Buzullar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Jeolojik Takvim"
+   }
+  ],
   "textbooks": [
    "Lutgens FK, Tarbuck E, Tasa 2011. Essentials of Geology. Pearson, 11th Edition, 576 p.",
    "Fletcher C. 2011. Physical Geology. The Science of Earth, John Wiley & Sons, 704 p."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=569",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=569"
  },
  "YSB 571E": {
   "code": "YSB 571E",
   "name": "Physics&Chem.of Clim.Sys.",
+  "nameEn": "Physics&Chem.of Clim.Sys.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -113,17 +185,88 @@
    "Hafta 13 · Kent iklimleri 1",
    "Hafta 14 · Kent iklimleri 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse genel bakış. Gunümüz iklim sisteminin betimlemesi, paleokayıtlar, gözlemlerdeki eğilimler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Paloekayıtlar. Yer’in, okyanusun, atmosferin ve hayatın evrimi. Jeolojik çağlar boyunca iklim tarihi. Karbon ve karbonat-silikat döngüleri. Sera gazları. Tektonik. Yörüngesel değişimler. Oksijen ve karbon izotopları. Sediman ve buz karotları. Ani iklim değişimi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Atmosferde kimyasal döngüler. Zamanda bileşimin evrimi. Metan. Geribeslemeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Okyanusun kimyasal işlevi. Karbon döngüsü, Revelle faktörü, vs. Biyolojik pompa. Gaz alışveriş süreçleri. Çözünürlük pompası",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Tektonik katkılar. Katasal hareketlerin saptanması. Levha tektoniği mekaniszmaları ve sonuçları. Deniz seviyesi eğrilerinin yorumu",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Doğa bilimlerinde yorumlama. Zaman dizileri ve istatistiksel çıkarımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Işınım dengesi modelleri. Işınım/konveksiyon dengesi. Enlemsel simetrili dolaşımlar. Entropi bütçesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Okyanus dolaşımı. Konvektif süreçler. Karışım. Eddyler. Rüzgar-sonucu ve çekim sonucu dolaşımlar. Okyanusun ısı bütçesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "İklim geribeslemeleri ve iklim modelleri. Yemel atmosfer modelleri. Okyanus süreçleri. Upwelling. Yayılım modelleri. Kuple kutu modelleri. Genel Dolaşım Modelleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Su döngüsü",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Yeryüzü süreçleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "İnsan etkilerinin tarihçesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kent iklimleri 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Kent iklimleri 2"
+   }
+  ],
   "textbooks": [
    "Global Physical Climate, D. L. Hartman, 1994, Academic Press.",
    "Physics of Climate, J. P. Peixoto and A. H. Oort, Amer Inst Phys, 1992.",
    "Biogeochemistry - An Analysis of Global Change, W. T. Schlesinger, 3rd ed., Academic Press, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=571",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=571"
  },
  "YSB 572E": {
   "code": "YSB 572E",
   "name": "Clim.Chan.: Sci., Impa.&Mitig.",
+  "nameEn": "Clim.Chan.: Sci., Impa.&Mitig.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -157,18 +300,89 @@
    "Hafta 13 · Kurumlar: UNFCCC, IPCC, uluslararası müzakere süreçleri",
    "Hafta 14 · İklim değişikliği biliminin iletişimi, iklim değişikliğinin medyada yer alması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve genel bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İklim sistemi, iklimin doğal değişkenliği",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İnsan kaynaklı iklim değişikliği: Küresel gözlemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İnsan kaynaklı iklim değişikliği: Türkiye için gözlemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İklim sisteminin modellemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Senaryo simülasyonlarının ölçeğinin küçültülmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Karbon emisyon senaryoları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İnsan kaynaklı iklim değişikliği: Küresel projeksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İnsan kaynaklı iklim değişikliği: Türkiye için projeksiyonlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "İklim değişikliği etkileri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İklim değişikliğine kırılganlık ve uyum",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sera gazı emisyonlarının azaltımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Kurumlar: UNFCCC, IPCC, uluslararası müzakere süreçleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "İklim değişikliği biliminin iletişimi, iklim değişikliğinin medyada yer alması"
+   }
+  ],
   "textbooks": [
    "Dire Predictions: Understanding Global Warming, 2008, Mann, Michael E., and Lee R. Kump. DK Publishing.",
    "IPCC, 2013: Summary for Policymakers. In: Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Stocker, T.F., D. Qin, G.-K. Plattner, M. Tignor, S.K. Allen, J. Boschung, A. Nauels, Y. Xia, V. Bex and P.M. Midgley (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 1–30, doi:10.1017/CBO9781107415324.004.",
    "IPCC, 2014: Summary for Policymakers. In: Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part A: Global and Sectoral Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Field, C.B., V.R. Barros, D.J. Dokken, K.J. Mach, M.D. Mastrandrea, T.E. Bilir, M. Chatterjee, K.L. Ebi, Y.O. Estrada, R.C. Genova, B. Girma, E.S. Kissel, A.N. Levy, S. MacCracken, P.R. Mastrandrea, and L.L. White (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 1-32.",
    "IPCC, 2014: Summary for Policymakers. In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=572",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=572"
  },
  "YSB 579E": {
   "code": "YSB 579E",
   "name": "Special Top.in Earth Sys.Sci.",
+  "nameEn": "Special Top.in Earth Sys.Sci.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -200,17 +414,88 @@
    "Hafta 13 · Konu 4",
    "Hafta 14 · Konu 4"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konu 1",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Konu 1",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Konu 1",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Konu 1",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Konu 2",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Konu 2",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Konu 2",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Konu 2",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Konu 3",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Konu 3",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Konu 3",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Konu 3",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Konu 4",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Konu 4"
+   }
+  ],
   "textbooks": [
    "Journal articles",
    "Review papers",
    "Monographs"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=579",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=579"
  },
  "YSB 581E": {
   "code": "YSB 581E",
   "name": "Evolution",
+  "nameEn": "Evolution",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -242,16 +527,87 @@
    "Hafta 13 · İnsanın evrimsel genetiği 1",
    "Hafta 14 · İnsanın evrimsel genetiği 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hayatın ağacı; sınıflandırma ve filojeni",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Evrimin desenleri; fosil kayıtlarda evrim",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yeryüzünde hayatın tarihi",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Evrimin coğrafyası; biyoçeşitliliğin evrimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Genetik değişikliklerin kökeni",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Genetik kayma: rasgele evrim",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Doğal seçilim ve uyum",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Doğal seçilimin genetik teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Hayat hikayelerinin evrimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Seks ve çoğalmada başarı",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Tür ve türleşme",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Türlerarası etkileşimin evrimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "İnsanın evrimsel genetiği 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "İnsanın evrimsel genetiği 2"
+   }
+  ],
   "textbooks": [
    "Macroevolution: Explanation, Interpretation and Evidence. E. Serrelli and N. Gontier (eds), 2015, Springer.",
    "Evolution, D. Futuyma, 2013, 3rd edition, Sinauer Associates."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=581",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=581"
  },
  "YSB 596E": {
   "code": "YSB 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -295,6 +651,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -307,12 +734,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=596"
  },
  "YSB 606E": {
   "code": "YSB 606E",
   "name": "Ecosystem Ecology",
+  "nameEn": "Ecosystem Ecology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -347,17 +774,88 @@
    "Hafta 13 · Küresel biyojeokimyasal döngüler",
    "Hafta 14 · Koruma biyolojisinde ekosistem yaklaşımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ekosistem kavramı ve tarihçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yer’in iklimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Jeoloji ve topraklar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Su ve enerji bütçesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Karasal ve sucul sistemlere karbon girdisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Birincil üretim süreçleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Ayrışma süreçleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Karasal ortamlarda besin kullanımı ve döngüsü",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Sucul ortamlarda karbon ve besin döngüsü",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Beslenme dinamiği ve toplulul etkileri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Zamansal dinamik",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Peyzajın heterojenliği ve ekosistem süreçleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Küresel biyojeokimyasal döngüler",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Koruma biyolojisinde ekosistem yaklaşımı"
+   }
+  ],
   "textbooks": [
    "Principles of Terrestrial Ecosystem Ecology, F. S. Chapin III, P. A. Matson and H. A. Mooney, 2002, Springer.",
    "Ecosystems, G. Dickinson and K. Murphy, 2nd edition, 2007, Routledge.",
    "Marine ecological processes, I. Valiela, 1995, Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=606",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=606"
  },
  "YSB 626E": {
   "code": "YSB 626E",
   "name": "Radiative Processes&Climate",
+  "nameEn": "Radiative Processes&Climate",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -371,12 +869,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=626",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=626"
  },
  "YSB 690E": {
   "code": "YSB 690E",
   "name": "Palynology",
+  "nameEn": "Palynology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -410,6 +908,77 @@
    "Hafta 13 · Bitkiler ve Karbon Döngüsü",
    "Hafta 14 · Vejetasyon Üzerinde İnsan Etkisi ve Polen Olmayan Palinomorflar (NPP)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Palinoloji: Tarih ve Sistematik Görüşler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Polen Gelişimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Polen Morfolojisi ve Yapısal Özellikleri I",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Polen Morfolojisi ve Yapısal Özellikleri II",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Palinolojide Yöntemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kuvaterner Palinolojisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Neojen Palinolojisi",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Petrol Araştırmalarında Palinoloji Uygulaması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Paleoekoloji ve Paleoiklim",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Stratigrafik Palinoloji",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Deniz palinolojisi ve Kıyısal Alanlarda Kullanımı",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Mikroiklimler ve Bitki Örtüsü",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Bitkiler ve Karbon Döngüsü",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Vejetasyon Üzerinde İnsan Etkisi ve Polen Olmayan Palinomorflar (NPP)"
+   }
+  ],
   "textbooks": [
    "- Halbritter, H., Ulrich, S., Grímsson, F., Weber, M., Zetter, R., Hesse, M., Buchner, R., Svojtka, M., Frosch-Radivo, A., 2018. Illustrated Pollen Terminology. Springer.",
    "Moore, P.D., Collinson, M., Webb, J.A., 1994. Pollen Analysis. Wiley",
@@ -417,12 +986,12 @@
    "Stuchlik, L., Ziembińska-Tworzydło, M., Kohlman-Adamska, A., Grabowska, I., Ważyńska, H., Słodkowska, B., Sadowska, A., 2001. Atlas of Pollen and Spores of the Polish Neogene Series. Polish Academy of Sciences, W Szafer Institute of Botany",
    "Reille, M., 1992. Pollen et spores d’Europe et d’Afrique du Nord. Laboratoire de botanique historique et de palynologie, 543 pp., Marseille, France."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=690",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=690"
  },
  "YSB 696E": {
   "code": "YSB 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -466,6 +1035,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -478,12 +1118,12 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=696"
  },
  "YSB 801E": {
   "code": "YSB 801E",
   "name": "Softw.Tools for Earth&Env.Sci.",
+  "nameEn": "Softw.Tools for Earth&Env.Sci.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -516,12 +1156,82 @@
    "Hafta 13 · Kod geliştirme ve belgeleme",
    "Hafta 14 · Öğrenci sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Linux’un tarihi ve temelleri; kişisel bilgisayarlara kurulumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Linux dizin yapısı, izinler, kullanıcı yönetimi, temel dosya işlemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Editörler, dizi işleme araçları, düzenli ifadeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Python’a giriş; Python’da basit algoritmalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Python’da bilimsel kitaplıklar; very yapıları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Bilimsel veri formatları: netCDF, HDF5, vs.",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "netCDF için araçlar: NCL, Python’da netCDF",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "1, 2, 3 ve 4-boyutlu verilerin görselleştirilmesi ile ilgili kavramlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "R’a giriş; R ile basit istatistikler",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Derlenen diller; FORTRAN’a giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Python ve FORTRAN için bütünleşik geliştirme ortamları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Bilimde metin formatlama; TeX ve LaTeX",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kod geliştirme ve belgeleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci sunumları"
+   }
+  ],
   "textbooks": [
    "The Linux Command Line: A Complete Introduction, W. E. Shotts Jr., 2012, No Starch Press.",
    "Regular Expressions Cookbook, J. Goyvaerts and S. Levithan, 2012, O’Reilly Media.",
    "HYPERLINK \"http://www.amazon.co.uk/Python-Easy-Steps-Mike-McGrath/dp/1840785969/ref=sr_1_6?s=books&ie=UTF8&qid=1427582927&sr=1-6&keywords=python+programming\" \\o \"Python In Easy Steps\" Python In Easy Steps, M. MacGrath, 2013, In Easy Steps Limited."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=801",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YSB&dersNo=801"
  }
 }

@@ -2,6 +2,7 @@
  "BVA 501E": {
   "code": "BVA 501E",
   "name": "Advances in Data Science",
+  "nameEn": "Advances in Data Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -33,17 +34,75 @@
    "Hafta 13 · Derin Öğrenme",
    "Hafta 14 · Pekiştirmeli Öğrenme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Biliminin temel kavramları"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Bilimcileri için Python Araçları"
+   },
+   {
+    "week": 3,
+    "topic": "Betimsel İstatistik"
+   },
+   {
+    "week": 4,
+    "topic": "İstatistiksel Çıkarım"
+   },
+   {
+    "week": 5,
+    "topic": "Gözetimli Öğrenme"
+   },
+   {
+    "week": 6,
+    "topic": "Regresyon Analizi"
+   },
+   {
+    "week": 7,
+    "topic": "Sınıflandırma Analizi"
+   },
+   {
+    "week": 8,
+    "topic": "Değişken Seçimi"
+   },
+   {
+    "week": 9,
+    "topic": "Gözetimsiz Öğrenme"
+   },
+   {
+    "week": 10,
+    "topic": "Öneri Sistemleri"
+   },
+   {
+    "week": 11,
+    "topic": "Duygu analizi için İstatiksel Doğal Dil İşleme (NLP)"
+   },
+   {
+    "week": 12,
+    "topic": "Ağ Analizi"
+   },
+   {
+    "week": 13,
+    "topic": "Derin Öğrenme"
+   },
+   {
+    "week": 14,
+    "topic": "Pekiştirmeli Öğrenme"
+   }
+  ],
   "textbooks": [
    "Laura Igual, Santi Seguí, Introduction to Data Science : A Python Approach to Concepts, Techniques and Applications, Springer, 2017",
    "Carlo Vercellis, Business Intelligence, Wiley, 2009",
    "Wes McKinney, Python for Data Analysis, O’Reilly, 2013"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=501"
  },
  "BVA 507E": {
   "code": "BVA 507E",
   "name": "Business Analytics for Manager",
+  "nameEn": "Business Analytics for Manager",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -76,17 +135,88 @@
    "Hafta 13 · Çözümleyici analitikler ve uygulamaları – Tam Sayı Optimizasyon Uygulamaları",
    "Hafta 14 · Gerçek hayat uygulamalarının analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş analitiğinin temel tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Stratejik seviyede iş analitiği",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Fonksiyonel seviyede bilgi oluşturma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Tanımlayıcı analitikler ve uygulamaları – Veri Tanımlama, Özetleme ve Görselleştirme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kestirimci analitikler ve uygulamaları – İstatistiksel çıkarım",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tahminleyici analitikler ve uygulamaları – Lineer Regresyon",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tahminleyici analitikler ve uygulamaları – Sınıflama ve Lojistik Regresyon",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Tahminleyici analitikler ve uygulamaları – Kümeleme ve Boyut Azaltma Yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Tahminleyici analitikler ve uygulamaları – Tahminleme modelleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tahminleyici analitikler ve uygulamaları – Simüslasyon modelleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Çözümleyici analitikler ve uygulamaları – Lineer Optimizasyon",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Çözümleyici analitikler ve uygulamaları – Lineer Optimizasyon Uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çözümleyici analitikler ve uygulamaları – Tam Sayı Optimizasyon Uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gerçek hayat uygulamalarının analizi"
+   }
+  ],
   "textbooks": [
    "Evans J.R. (2017) Business Analytics: Methods, Models, Decisions, Pearson",
    "Laursen G.H.N. ve Thorlund J (2017) Business Analytics for Managers, Wiley",
    "Smith J. (2016) Data Analytics: What Every Business Must Know About Big Data And Data Science, Pinnacle Publishers"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=507"
  },
  "BVA 528E": {
   "code": "BVA 528E",
   "name": "İşletmelerde Derin Öğrenme Uygulamaları",
+  "nameEn": "Deep Learning App in Business",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -118,11 +248,68 @@
    "Hafta 13 · Tahminleme analizinde derin öğrenme",
    "Hafta 14 · Yapılı olmayan veri için derin öğrenme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay sinir ağlarında temel konular"
+   },
+   {
+    "week": 2,
+    "topic": "Tek katmanlı yapay sinir ağları, Öğrenme Kuralları"
+   },
+   {
+    "week": 3,
+    "topic": "Çok katmanlı yapay sinir ağları"
+   },
+   {
+    "week": 4,
+    "topic": "Geri yayılımlı öğrenme"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal olmayan optimizasyon"
+   },
+   {
+    "week": 6,
+    "topic": "Derin Öğrenme Mimarileri"
+   },
+   {
+    "week": 7,
+    "topic": "Evrişimli yapay sinir ağları"
+   },
+   {
+    "week": 8,
+    "topic": "Geri Beslemeli Öğrenme, Uzun-kısa dönmeli hafıza"
+   },
+   {
+    "week": 9,
+    "topic": "Restricted Boltzman Makineleri"
+   },
+   {
+    "week": 10,
+    "topic": "Derin Öğrenme Uygulamaları"
+   },
+   {
+    "week": 11,
+    "topic": "Regresyon analizinde derin öğrenme"
+   },
+   {
+    "week": 12,
+    "topic": "Sınıflandırma analizinde derin öğrenme"
+   },
+   {
+    "week": 13,
+    "topic": "Tahminleme analizinde derin öğrenme"
+   },
+   {
+    "week": 14,
+    "topic": "Yapılı olmayan veri için derin öğrenme"
+   }
+  ],
   "textbooks": [
    "I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016. http://www. deeplearningbook.org.",
    "Aggarwal, Charu C. Neural networks and deep learning. Springer,, 2018."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=528",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BVA&dersNo=528"
  }
 }

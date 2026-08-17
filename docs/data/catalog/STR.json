@@ -2,6 +2,7 @@
  "STR 502E": {
   "code": "STR 502E",
   "name": "Sanat Felsefesi ve Estetik",
+  "nameEn": "Philosophy of Art&Aesthetics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -37,6 +38,77 @@
    "Hafta 13 · Çağdaş estetik ve sanat düşüncesinin doğuşu: 20 yy’da sanat ve güzellik kavramları.",
    "Hafta 14 · Çağdaş sanat ve ötesi: Modernizm ve post-modernizm dönüşümünde sanat."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Felsefenin ne olduğu, neyi araştırdığı, tarihsel ve çağdaş bağlamda anlamı ve yeri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Sanat Felsefesi disiplininin tanıtılması.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Estetik disiplininin tanıtılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sanat Felsefesi ve Estetik disiplinlerinin ayrılan ve birleşen yanlarıyla tanıtılması ve ortak kesişim alanın belirlenmesi.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Platon düşüncesinde sanat ve güzellik kavramı.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Eski Yunan düşüncesinde felsefe ve sanatın tanımı ve yeri.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Sanatın insanlık tarihinde ilk ortaya çıkışı, yeri ve anlamı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Güzellik kavramının tartışılması ve bir değer olarak anlamı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Sanat ve güzellik kavramlarının düşünce tarihindeki gelişimi.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kant ve Estetik: Çağdaş estetik ve sanat kavramlarının zemini sorunu.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kant düşüncesinde sanat, güzellik ve yüce kavramlarına bakış.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Platon ve Kant düşüncesinde sanat ve güzellik kavramlarının karşılaştırılması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Çağdaş estetik ve sanat düşüncesinin doğuşu: 20 yy’da sanat ve güzellik kavramları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Çağdaş sanat ve ötesi: Modernizm ve post-modernizm dönüşümünde sanat."
+   }
+  ],
   "textbooks": [
    "ADORNO, T. W. (1997) Aesthetic Theory, Minnesota: Univ. of Minnesota Press.",
    "ADORNO, T. W. (1997) Aesthetic Theory, Minnesota: Univ. of Minnesota Press.",
@@ -49,12 +121,12 @@
    "DE BOLLA, P. (2006) Sanat ve Estetik, İstanbul: Ayrıntı Yayınları.",
    "DE BOLLA, P. (2006) Sanat ve Estetik, İstanbul: Ayrıntı Yayınları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=502"
  },
  "STR 503E": {
   "code": "STR 503E",
   "name": "Sanat Tarihi Historiyografyası",
+  "nameEn": "Historiography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -94,6 +166,64 @@
    "Hafta 13 · Güncel sanat ortamında sanat tarihiyazımı: Çokdisiplinliliğin potansiyeli",
    "Hafta 14 · Yeni metin üretim yöntemleri, denemeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sanat tarihyazımı hakkında genel bilgiler, teoriler, önemli isimler"
+   },
+   {
+    "week": 2,
+    "topic": "Antik dünyadan Rönesans'a kadar alana katkıda bulunan isimler ve metinler"
+   },
+   {
+    "week": 3,
+    "topic": "Biyografiler ve ardından gelen yazın: Vasari ve 16.-17. yüzyıllarda sanat tarihi yazımı"
+   },
+   {
+    "week": 4,
+    "topic": "Osmanlı ve İran dünyasında 16. yüzyılda ortaya çıkan sanat tarihsel metinler"
+   },
+   {
+    "week": 5,
+    "topic": "18. Yüzyıl: Değişen dünyada kültür tarihi ve sanat tarihi"
+   },
+   {
+    "week": 6,
+    "topic": "19. Yüzyıl: Sanat tarihi yazımının sistematize edilmesi"
+   },
+   {
+    "week": 7,
+    "topic": "Erken 20. Yüzyıl: Modernite ve Post-Modernite bağlamında sanat metinleri"
+   },
+   {
+    "week": 8,
+    "topic": "20. yüzyılın altın çocukları: Panofsky, Gombrich, Pevsner"
+   },
+   {
+    "week": 9,
+    "topic": "Artan Çeşitlilik: Geç 20. Yüzyılda sanat tarihi yazımı"
+   },
+   {
+    "week": 10,
+    "topic": "\"Yeni\" Sanat Tarihi / \"Yeni Sanat\"ın Tarihi"
+   },
+   {
+    "week": 11,
+    "topic": "Modern dönemde Batı dışı kültürlerde sanat tarihine ilişkin görüşler, eleştirel fikirler ve metinler"
+   },
+   {
+    "week": 12,
+    "topic": "Türkiye'de sanat tarihi yazımı: 1970'lerden 21. Yüzyıla"
+   },
+   {
+    "week": 13,
+    "topic": "Güncel sanat ortamında sanat tarihiyazımı: Çokdisiplinliliğin potansiyeli"
+   },
+   {
+    "week": 14,
+    "topic": "Yeni metin üretim yöntemleri, denemeleri"
+   }
+  ],
   "textbooks": [
    "AKIN-KIVANÇ, Esra (ed., çev.) (2011) Mustafa 'Âli's 'Epic Deeds of Artists'. A Critical Edition of the Earliest Ottoman Text about the Calligraphers and Painters of the Islamic World, Brill, Leiden and Boston.",
    "AKIN-KIVANÇ, Esra (ed., çev.) (2011) Mustafa 'Âli's 'Epic Deeds of Artists'. A Critical Edition of the Earliest Ottoman Text about the Calligraphers and Painters of the Islamic World, Brill, Leiden and Boston.",
@@ -107,12 +237,12 @@
    "ÖZPINAR, Ceren (2016) Türkiye'de Sanat Tarihi Yazımı (1970-2010), Tarih Vakfı Yurt Yayınları, İstanbul.",
    "VASARI, Giorgio (2013) Sanatçıların Hayat Hikayeleri, (çev: Elif Gökteke), Sel Yayıncılık, İstanbul."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=503"
  },
  "STR 504": {
   "code": "STR 504",
   "name": "Sanat Tarihinde Araş.Yönt.",
+  "nameEn": "Research Method.in Art History",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -150,6 +280,77 @@
    "Hafta 13 · Öğrenci sunumları I",
    "Hafta 14 · Öğrenci sunumları II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Bilimsel araştırma metot ve metodolojileri I",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 3,
+    "topic": "Bilimsel araştırma metot ve metodolojileri II",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma metotlarını kullanmak I",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma metotlarını kullanmak II",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Örnek çalışma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Öğrenci sunumları I",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Öğrenci sunumları II",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Seçilen bir kütüphane veya arşiv ziyareti",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Elektronik arşiv programları",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Kaynakları elektronik arşiv programı ile arşivlemek",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgi kartlarını elektronik arşiv programı ile arşivlemek",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci sunumları I",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci sunumları II"
+   }
+  ],
   "textbooks": [
    "DUVERGE, M. (1990) Sosyal Bilimler Giriş, İstanbul: Bilgi Yay.",
    "DUVERGE, M. (1990) Sosyal Bilimler Giriş, İstanbul: Bilgi Yay.",
@@ -158,12 +359,12 @@
    "TOTA,Y. ve ÇELİK,A. ed. (1996) Bilgi Edinme Özgürlüğü, Ankara: T.D.K. Yay.",
    "TOTA,Y. ve ÇELİK,A. ed. (1996) Bilgi Edinme Özgürlüğü, Ankara: T.D.K. Yay."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=504",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=504"
  },
  "STR 516": {
   "code": "STR 516",
   "name": "Cumh.Dön.Türkiyesi Görsel Snt.",
+  "nameEn": "Visua.Art.in Turkis.Repu.Peri.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -199,6 +400,64 @@
    "Hafta 13 · Öğrenci sunumları I",
    "Hafta 14 · Öğrenci sunumları II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Osmanlı İmparatorluğu’ndan devralınan kültür ve sanat mirası, son Osmanlı sanatçıları"
+   },
+   {
+    "week": 2,
+    "topic": "20. Yüzyıl başlarken"
+   },
+   {
+    "week": 3,
+    "topic": "Sanayi-i Nefise’den Güzel Sanatlar Akademisi’ne, ilk ressamlar"
+   },
+   {
+    "week": 4,
+    "topic": "‘D’ Grubu"
+   },
+   {
+    "week": 5,
+    "topic": "Halkevleri, yurt resimleri ve sanatta modernleşme programları"
+   },
+   {
+    "week": 6,
+    "topic": "Anıtkabir örneğinde 1940’ların irdelenmesi"
+   },
+   {
+    "week": 7,
+    "topic": "II. Dünya Savaşı sonrasında resim, heykel, grafik sanatlar ve önemli sanatçılar"
+   },
+   {
+    "week": 8,
+    "topic": "Yerellik ve yerel kaynaklar"
+   },
+   {
+    "week": 9,
+    "topic": "Kavramlaştırma ve soyut sanat"
+   },
+   {
+    "week": 10,
+    "topic": "1968 Kuşağı, sanat piyasası, galeriler"
+   },
+   {
+    "week": 11,
+    "topic": "1980 sonrası yeni eğilimler"
+   },
+   {
+    "week": 12,
+    "topic": "1980 sonrası sanat ortamında yeni gelişmeler"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci sunumları I"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci sunumları II"
+   }
+  ],
   "textbooks": [
    "ÖDEKAN, A. ed. (1999) “Bilânço ‘98” Cumhuriyet’in Renkleri, Biçimleri, İstanbul: Tarih Vakfı Yurt Yayınları.",
    "ÖDEKAN, A. ed. (1999) “Bilânço ‘98” Cumhuriyet’in Renkleri, Biçimleri, İstanbul: Tarih Vakfı Yurt Yayınları.",
@@ -211,12 +470,12 @@
    "ÜSTÜNIPEK, M. (2007) Çağdaş Türk Sanatında Sergiler 1850-1950, İstanbul: Artes Yayınları.",
    "ÜSTÜNIPEK, M. (2007) Çağdaş Türk Sanatında Sergiler 1850-1950, İstanbul: Artes Yayınları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=516",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=516"
  },
  "STR 520E": {
   "code": "STR 520E",
   "name": "Uzakdoğu Sanatları",
+  "nameEn": "Far Eastern Arts",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -252,6 +511,77 @@
    "Hafta 13 · Çağdaş Uzak Doğu Sanatı",
    "Hafta 14 · Öğrenci sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve derse genel bakış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Eski Çin Uygarlığı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kore ve Japonya’da Antik Çağ",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İpek Yolu: Ticaret ve kültürün yaygınlaşması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Japonya’da aristokrat kültürün olgunlaşması: Heian Dönemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çin’de hanedan kültürlerinin doğuşu ve çöküşü: T’ang Hanedanı’ndan Yüan Hanedanı’na kadar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Japonya’da Samurai Sınıfı’nın yükselişi ve Kore kültürünün etkileri: Kamakura-Muromachi Dönemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Uzak Doğu’nun doğaya yaklaşımı: Bahçe kültürü ve manzara resmi",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Saray kültürünün görkemi: Ming ve Shing Hanedanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Japonya’da Azuchi, Momoyama ve Edo Dönemleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Japonya’nın Batı’ya açılışı: Meiji, Taisho, Showa Dönemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sömürgeciliğin Uzak Doğu ve Asya Sanatlarına etkileri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çağdaş Uzak Doğu Sanatı",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci sunumları"
+   }
+  ],
   "textbooks": [
    "CLUNAS,C. (2001) Art in China , Oxford: Oxford University Press.",
    "CLUNAS,C. (2001) Art in China , Oxford: Oxford University Press.",
@@ -266,12 +596,12 @@
    "WATSON,W., HO, C. (2007) The Arts of China, 1600-1900, New Haven: Yale University Press.",
    "WATSON,W., HO, C. (2007) The Arts of China, 1600-1900, New Haven: Yale University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=520",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=520"
  },
  "STR 525": {
   "code": "STR 525",
   "name": "Sanat Tarihi ve Kültür",
+  "nameEn": "Art History and Culture",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -303,6 +633,77 @@
    "Hafta 13 · 19. yüzyıl ve eklektisizm.",
    "Hafta 14 · 20. yüzyılda kültür ve sanat"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sanat ve mimarlığın anlamı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Göçebe toplumlar.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Erken tarım toplumları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Büyük tarım uyarlıklarının başlaması, Mısır uygarlığı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Mezopotamya kültürleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Girit ve Miken kültürlerinin karşılaştırılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Erken Anadolu uygarlıkları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Antik dönem.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ortaçağ kültürleri.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "İslam dünyası.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Rönesans’ın ortaya çıkışı.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Barok dönem, Aydınlanma’nın sonuçları.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "19. yüzyıl ve eklektisizm.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "20. yüzyılda kültür ve sanat"
+   }
+  ],
   "textbooks": [
    "BAL, M&NARYSON N. (2001) Looking in: The Art of Viewing, London: Routledge",
    "BERNARD, L. (1992) The World of Islam, London: Thames and Hudson",
@@ -310,12 +711,12 @@
    "COFFIN, J., STACEY, R., COLE, J., SYMES, C. (2011) Western Civilizations: Their History and Their Culture, New York: W.W. Norton&Company",
    "PIGGOTT, S. (2003) Dawn of Civilization, London: Textbook Publishers"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=525"
  },
  "STR 596": {
   "code": "STR 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -359,6 +760,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -371,12 +843,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=596"
  },
  "STR 617E": {
   "code": "STR 617E",
   "name": "İstanbul Arkeolojisi",
+  "nameEn": "Archeology of Istanbul",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -390,12 +862,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=617",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=617"
  },
  "STR 696": {
   "code": "STR 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -439,6 +911,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -451,7 +994,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STR&dersNo=696"
  }
 }

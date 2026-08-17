@@ -2,6 +2,7 @@
  "JDM 501E": {
   "code": "JDM 501E",
   "name": "Geodynamics",
+  "nameEn": "Geodynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,16 +35,87 @@
    "Hafta 13 · Orojeni – zaman, deformasyon, metamorfizma ve magmatizma I",
    "Hafta 14 · Orojeni – zaman, deformasyon, metamorfizma ve magmatizma II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yer küre – iç yapısı ve bileşimi; manto ile kabuk, astenosfer ile litosfer; isostazi kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Levha tektoniği – prensipler ve istisnalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kıtasal ve okyanusal kabuk – oluşumu, yapısı, bileşimi ve evrimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kıtasal kabukta magmatizma ve magmatik süreçler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Okyanusal kabukta magmatizma ve magmatik süreçler; ofiyolit kavramı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Metamorfizma – tektonik ortamı, metamorfik fasiyesler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Metamorfik olaylar ve reyaksiyonlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Magmatik ve metamorfik kayalarda izotopik yaş tayini",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Jeolojik yapılar – kırılgan ve sünek",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Genişlemeli tektonik ortamlar ve riftleşme – deformasyon, magmatizma ve metamorfizma",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Dalma-batma – deformasyon, eklenir prizmalar, metamorfizma ve magmatizma",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Büyük yanal atımlı faylar – deformasyon ve havza oluşumu",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Orojeni – zaman, deformasyon, metamorfizma ve magmatizma I",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Orojeni – zaman, deformasyon, metamorfizma ve magmatizma II"
+   }
+  ],
   "textbooks": [
    "P. Kearey, K.A. Klepeis & F.J. Vine, 2009, Global Tectonic s. Wiley-Blackwell, 482 sayfa, ISBN 978-1-4051-0777-8.",
    "Donald L. Turcotte & Gerald Schubert, 2014, Geodynamics, Cambridge University Press, 636 sayfa, ISBN: 9780521186230."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=501"
  },
  "JDM 502E": {
   "code": "JDM 502E",
   "name": "Earth Surface Processes",
+  "nameEn": "Earth Surface Processes",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -82,16 +154,87 @@
    "Hafta 13 · Buzul kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri",
    "Hafta 14 · Rüzgar ve karst kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Süreç bazlı jeomorfolojinin temel prensiplerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ayrışma süreçleri ve yerşekilleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Toprak oluşumu ve toprak tipleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Yamaç süreçleri ve yerşekilleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Akarsu Süreçleri ve Yerşekilleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Kıyı Süreçleri ve Yerşekilleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Buzul Süreçleri ve Yerşekilleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Buzul çevresi Süreçler ve Yerşekilleri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Rüzgar süreçleri ve yer şekilleri",
+    "outcomes": "9"
+   },
+   {
+    "week": 10,
+    "topic": "Karst süreçleri ve yer şekilleri",
+    "outcomes": "4-5-7"
+   },
+   {
+    "week": 11,
+    "topic": "Akarsu kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri",
+    "outcomes": "1-11"
+   },
+   {
+    "week": 12,
+    "topic": "Kıyı kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri",
+    "outcomes": "1-5-11"
+   },
+   {
+    "week": 13,
+    "topic": "Buzul kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri",
+    "outcomes": "1-6-11"
+   },
+   {
+    "week": 14,
+    "topic": "Rüzgar ve karst kökenli yerşekillerini yaşlandırma yöntemleri ve stratejileri"
+   }
+  ],
   "textbooks": [
    "Ritter, D.F., Kochel, R.C, Miller, JR., 2006, Process Geomorphology, Waveland Press, 560 pp.",
    "Sharma, V.K., 2010, Introduction to Process Geomorphology, CRC press, 435 pp."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=502"
  },
  "JDM 558E": {
   "code": "JDM 558E",
   "name": "The Sea Floor",
+  "nameEn": "The Sea Floor",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -123,18 +266,89 @@
    "Hafta 13 · Risk azaltma ve afet zararlarının yönetimi",
    "Hafta 14 · Planlama ve örnek çalışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Jeolojik tehlikeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Deniz tabanı ve denizel ortamlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yerel ve bölgesel süreçler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Doğal süreçler ve alt yapı faaliyetleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Afetler ve hasargörebilirlik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Tehlike ve risk",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tehlike ve risk analizi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Verilerin değerlendirilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Akdenizde denizel tehlikeler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Hint Okyanusu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Japonya",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Storegga Denizaltı heyelanı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Risk azaltma ve afet zararlarının yönetimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Planlama ve örnek çalışmalar"
+   }
+  ],
   "textbooks": [
    "Okay N., Seasurges In: Encyclopedia of Disaster Relief by K.B. Penuel and M. Statler (Ed.), Thousand Oaks, CA: SAGE Publ. (2011).",
    "Okay N., Coastal Geo-Hazards around the Mediterranean Sea and Disaster Risk Reduction In: CIESM No.42 Marine Geo-hazards, Mediterranean Case Studies (2011).",
    "Cochonat P., Person R., Deep seafloor observatories: a new tool for monitoring geohazards, climate change, ecosystem life and evolution, In: Towards an Integrated System of Mediterranean Marine Observatories, CIESM Workshop Monographs, La Spezia, 16-19 Jan 2008, p. 43-52 (2008).",
    "Sakellariou D., Lykousis V., 2003. Impact of geological processes and hazards on the Aegean civilizations in prehistorical and ancient time. In: Human Records of recent geological evolution in the Mediterranean, Santorini, 22-25 October 2003. CIESM Workshop Monographs, n. 24, p. 85-91 (2003)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=558",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=558"
  },
  "JDM 566E": {
   "code": "JDM 566E",
   "name": "Earthquake Geology",
+  "nameEn": "Earthquake Geology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -166,6 +380,77 @@
    "Hafta 13 · Depremlerde zemin ve kaya davranışı, Deprem tetiklemesi ile gelişen ikincil etkiler (Heyelanlar ve Tsunami, Sıvılaşma)",
    "Hafta 14 · Deterministik ve Probabilisitik yöntemlerle sismik tehlike analizi, Depremlerin önceden belirlenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Depremlerin dağılımı, Levha tektoniği ve depremlerin nedenleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kayalarda gerilme-yamulma ilişkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Faylar, Aktif faylar, fayların mekanik ve kinematiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kıtasal kabuğun yapısı ve Deprem kaynak bölgelerinin jeolojisi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sismik dalgalar, Sismik dalga, fay yönü ve atım türü arasındaki ilişkiler,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Deprem ölçekleri, Fay nitelikleri deprem büyüklüğü ilişkisi. Tektonik jeodezi, Yerinde gerilme ölçümleri,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kuvaterner zaman ölçeği.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Fay yüzeyleri ile fay kayalarının tarihlendirme teknikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Doğrultu atımlı faylar ve deprem,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Normal faylar ve deprem,",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ters faylar ve kıvrımlar ve deprem,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Dalma-Batma zonları ve deprem,",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Depremlerde zemin ve kaya davranışı, Deprem tetiklemesi ile gelişen ikincil etkiler (Heyelanlar ve Tsunami, Sıvılaşma)",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Deterministik ve Probabilisitik yöntemlerle sismik tehlike analizi, Depremlerin önceden belirlenmesi"
+   }
+  ],
   "textbooks": [
    "Yeats, R.S., Sieh, K., Allen, C., 1997, The geology of earthquakes. Oxford University Pres, New York",
    "Scholz, C.H., The mechanics of Earthquakes and Faulting. Cambridge Press",
@@ -174,12 +459,12 @@
    "Reiter, L., 1991, Earthquake hazard analysis : issues and insights. Columbia University Press",
    "McGuire, R.K., Seismic Hazard and Risk Analysis, EERI"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=566",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=566"
  },
  "JDM 567E": {
   "code": "JDM 567E",
   "name": "Bilgisayar Tabanlı Magmatik Petroloji",
+  "nameEn": "Computational Magmatic Petrology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -213,15 +498,73 @@
    "Hafta 13 · Açık kaynak kodlu yazılımlarla faz diyagramları oluşturma",
    "Hafta 14 · Gelişmiş modelleme yazılımların entegrasyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel jeokimya ve termodinamik ilkeler"
+   },
+   {
+    "week": 2,
+    "topic": "Açık kaynak kodlu yazılımlarda veri kullanımı"
+   },
+   {
+    "week": 3,
+    "topic": "Açık kaynak kodlu yazılımlarda petrolojik sınıflandırma ve tektonik ayrım diyagramlarının kullanımı"
+   },
+   {
+    "week": 4,
+    "topic": "Bilgisayar tabanlı açık kaynaklı termodinamik hesaplamalar"
+   },
+   {
+    "week": 5,
+    "topic": "Basit ve karmaşık kristalleşme süreçlerinin modellenmesi"
+   },
+   {
+    "week": 6,
+    "topic": "Kristalleşme sırasının belirlenmesi"
+   },
+   {
+    "week": 7,
+    "topic": "Ergiyik bileşiminin belirlenmesi"
+   },
+   {
+    "week": 8,
+    "topic": "Farklı P-T koşulları altında magmanın evriminin modellenmesi"
+   },
+   {
+    "week": 9,
+    "topic": "Açık sistem süreçlerinin modellenmesi (magma karışımı/AFC)"
+   },
+   {
+    "week": 10,
+    "topic": "Su ve uçucu madde içeriğinin etkilerinin modellenmesi"
+   },
+   {
+    "week": 11,
+    "topic": "Kısmi erime süreçlerinin modellenmesi"
+   },
+   {
+    "week": 12,
+    "topic": "Seçili katı bileşimlerle gelişmiş modelleme"
+   },
+   {
+    "week": 13,
+    "topic": "Açık kaynak kodlu yazılımlarla faz diyagramları oluşturma"
+   },
+   {
+    "week": 14,
+    "topic": "Gelişmiş modelleme yazılımların entegrasyonu"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=567",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=567"
  },
  "JDM 596": {
   "code": "JDM 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -265,6 +608,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -277,12 +691,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=596"
  },
  "JDM 596E": {
   "code": "JDM 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -326,6 +740,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -338,12 +823,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=596"
  },
  "JDM 604E": {
   "code": "JDM 604E",
   "name": "Selected Topics in Geomorph.",
+  "nameEn": "Selected Topics in Geomorph.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -376,16 +861,87 @@
    "Hafta 13 · Jeomorfolojide zaman kavramı",
    "Hafta 14 · Yeni Teknolojiler:Yer yüzü süreçlerinin yüksek çözünürlük ve mekanda izlenmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kayaçların, toprağın ve suyun davranışı, dayanımı ve direnci",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Jeomorfolojiye Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Yerkürenin morfolojisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Büyük-ölçekli topografya",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tektonik jeomorfoloji",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Atmosferik süreçler ve jeomorfoloji",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yer yüzeyinin evrimini yöneten taşıma kanunları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yerşekilleri iklim ve tektoniğini nasıl etkiler ve kaydeder?",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "İklimin aşınıma etkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "İklimin tektoniğe etkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yüzey yükselimi, kaya yükselimi ve ekshümasyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Kozmolojik Nüklidler ve havza aşınımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Jeomorfolojide zaman kavramı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Yeni Teknolojiler:Yer yüzü süreçlerinin yüksek çözünürlük ve mekanda izlenmesi"
+   }
+  ],
   "textbooks": [
    "Anderson, R.S., Anderson, S.P., 2010, Geomorphology, The mechanics and chemisty of landscapes. Cambridge",
    "Merrits, D. (eds). 2008, Landscapes on the edge. New Horizons for Research on Earth’s Surface. National Research Concuil of the National Academies."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=604",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=604"
  },
  "JDM 605E": {
   "code": "JDM 605E",
   "name": "Clastic Depositional Environ.",
+  "nameEn": "Clastic Depositional Environ.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -417,16 +973,87 @@
    "Hafta 13 · Sekans stratigrafisi temel ilkeleri",
    "Hafta 14 · Sekans stratigrafisi (petrol örnekleri)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Stratigrafi ve Senimantoloji’nin temel ilkeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Flüvyal sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Alüvyal yelpaze ve yelpaze deltası",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Deltalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Rüzgar ve buzul ortamları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Göl, lagün ve gelgit ortamları",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Sahil çökelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Öğrencilerin sözlü sunumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Fırtına ve tsunami çökelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Şelf sedimanları",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Derin deniz çökelleri ve türbiditler",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Derin deniz yelpaze sistemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Sekans stratigrafisi temel ilkeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Sekans stratigrafisi (petrol örnekleri)"
+   }
+  ],
   "textbooks": [
    "H.G. Reading, 2009. Sedimentary environments: Processes, facies and stratigraphy. Blackwell Pub.",
    "Gary Nichols, 2013. Sedimentology and Stratigraphy, Wiley-Blackwell, 2nd edition."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=605",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=605"
  },
  "JDM 611E": {
   "code": "JDM 611E",
   "name": "Quaternary Geochronology",
+  "nameEn": "Quaternary Geochronology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -458,16 +1085,87 @@
    "Hafta 13 · Stratigrafik Korelasyonlar",
    "Hafta 14 · Arazi ve Laboratuvar Yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Karasal Çökeller",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Denizel çökeller",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kuvaterner Stratigrafisinin ilkeleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Stratotipler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Litostratigrafi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Biyostratigrafi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Morfostratigrafi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Toprak stratigrafisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Oksijen-izotop stratigrafisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Buzul-sondajları stratigrafisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Kronostratigrafi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Stratigrafik Korelasyonlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Arazi ve Laboratuvar Yöntemleri"
+   }
+  ],
   "textbooks": [
    "Lowe and Walker. 1997. Recunstructing Quaternary Environments. Pearson Edu.Ltd.. 298-323.",
    "Boggs, S. 1995,Principles Of Sedimentology and Stratigrapy. Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=611",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=611"
  },
  "JDM 613E": {
   "code": "JDM 613E",
   "name": "Selected Topics in Geodynamics",
+  "nameEn": "Selected Topics in Geodynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -499,16 +1197,87 @@
    "Hafta 13 · Dünya’dan plato örnekleri: Adanolu (Orta kesimi)",
    "Hafta 14 · Sunumlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Plato kavramına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İklim ve topoğrafya kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tektonizma - topoğrafya ilişkisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yüzey yükselimi ve iklim değişimine etkisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Flüvyal sistemler ve aşındırma oran hesapları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Platoları oluşturan mekanizmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Sunumlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Dünya’dan plato örnekleri: Tibet",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Dünya’dan plato örnekleri: Puna-Altiplano",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Dünya’dan plato örnekleri: Colorado",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Dünya’dan plato örnekleri: Antartika",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Dünya’dan plato örnekleri: Adanolu (Doğu kesimi)",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Dünya’dan plato örnekleri: Adanolu (Orta kesimi)",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar"
+   }
+  ],
   "textbooks": [
    "Tectonics, climate and landscape evolution (Willet et al., 2006)",
    "Makaleler"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=613",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=613"
  },
  "JDM 628E": {
   "code": "JDM 628E",
   "name": "Glacial Geology",
+  "nameEn": "Glacial Geology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -522,12 +1291,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=628",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=628"
  },
  "JDM 630E": {
   "code": "JDM 630E",
   "name": "Cosmogenic Isotopes",
+  "nameEn": "Cosmogenic Isotopes",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -541,12 +1310,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=630",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=630"
  },
  "JDM 631E": {
   "code": "JDM 631E",
   "name": "Provenance Analysis",
+  "nameEn": "Provenance Analysis",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -560,7 +1329,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=631",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDM&dersNo=631"
  }
 }

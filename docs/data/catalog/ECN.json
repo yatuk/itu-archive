@@ -2,6 +2,7 @@
  "ECN 101E": {
   "code": "ECN 101E",
   "name": "Principles of Microeconomics",
+  "nameEn": "Principles of Microeconomics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -34,15 +35,87 @@
    "Hafta 13 · Oligopoller",
    "Hafta 14 · Tekelci rekabet"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikroekonomiye giriş: ödünleşim, fırsat maliyeti ve ticaretin kazanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Piyasa analizi: arz ve talep",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Esneklik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Hükümet regülasyonu: asgari ücret, kira kontrolü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Piyasalar ve refah",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Vergilendirmenin maliyeti",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Tüketici seçim teorisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Piyasa başarısızlıkları: kamu malları ve dışsallık",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Üretim maliyetleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Üretim faktörü piyasaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Rekabetçi piyasalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Tekeller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Oligopoller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tekelci rekabet",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "N. Gregory Mankiw, Principles of Microeconomics, Cengage Learning, 2014, 7th edition"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=101"
  },
  "ECN 102E": {
   "code": "ECN 102E",
   "name": "Principles of Macroeconomics",
+  "nameEn": "Principles of Macroeconomics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -75,15 +148,87 @@
    "Hafta 13 · Kredi Daralması",
    "Hafta 14 · Overview of the topics"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makroekonomiye giriş ve dünya ekonomisi hakkında temel verilerin sunumu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Ekonomide Genel Denge",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Para ve Enflasyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İş piyasası ve işsizlik",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ekonomik Büyüme: Solow Modeli",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Ekonomik Büyüme: Endojen Büyüme Modeli",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Açık Ekonomi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ekonomik dalgalanma ve istikrar politikası",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Devlet borçlanması ve Mali Sürdürülebilirlik",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Para arzı ve bankacılık sistemi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Asimetrik enformasyon ve kredi piyasaları",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Finansal Regulasyon",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kredi Daralması",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Overview of the topics",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "GREGORY MANKIW, MACROECONOMICS, 8TH EDITION (INTERNATIONAL EDITION), WORTH PUBLISHERS, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=102"
  },
  "ECN 103E": {
   "code": "ECN 103E",
   "name": "Piyasa ve Ahlak",
+  "nameEn": "Markets and Ethics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -116,17 +261,89 @@
    "Hafta 13 · Fakirlerin Ekonomisi",
    "Hafta 14 · Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uyuşturucu Piyasası",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 3,
+    "topic": "Vakıf Dürtüsü",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 4,
+    "topic": "Fiyatların Adaleti",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 5,
+    "topic": "Klasik Ahlak Teorileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Faydacılık",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Rawls Ahlak İlkeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kant Ahlak İlkeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Para Neleri Satın Almalı",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Para Neleri Satın Almalı (Devam)",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Ülkeler Tarihinde Piyasa ve Ahlak",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ülkeler Tarihinde Piyasa ve Ahlak (Devam)",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Fakirlerin Ekonomisi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Değerlendirme",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Etik ve Ekonomi",
    "Sandel M. (2010) Justice, Farrar, Straus and Giroux",
    "Sandel M. (2013) What Money Can’t Buy, Farrar, Straus and Giroux"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=103"
  },
  "ECN 104E": {
   "code": "ECN 104E",
   "name": "Piyasa ve Ahlak",
+  "nameEn": "Markets and Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -159,17 +376,89 @@
    "Hafta 13 · Fakirlerin Ekonomisi",
    "Hafta 14 · Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uyuşturucu Piyasası",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 3,
+    "topic": "Vakıf Dürtüsü",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 4,
+    "topic": "Fiyatların Adaleti",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 5,
+    "topic": "Klasik Ahlak Teorileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Faydacılık",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Rawls Ahlak İlkeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kant Ahlak İlkeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Para Neleri Satın Almalı",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Para Neleri Satın Almalı (Devam)",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Ülkeler Tarihinde Piyasa ve Ahlak",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ülkeler Tarihinde Piyasa ve Ahlak (Devam)",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Fakirlerin Ekonomisi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Değerlendirme",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Sandel M. (2010) Justice, Farrar, Straus and Giroux",
    "Sandel M. (2013) What Money Can’t Buy, Farrar, Straus and Giroux",
    "Sen, A. (1987), On Ethics and Economics, Blackwell, Oxford"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=104",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=104"
  },
  "ECN 105E": {
   "code": "ECN 105E",
   "name": "Mikroekonominin Temelleri",
+  "nameEn": "Principles of Microeconomics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -202,15 +491,87 @@
    "Hafta 13 · Oligopoller",
    "Hafta 14 · Tekelci rekabet"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikroekonomiye giriş: ödünleşim, fırsat maliyeti ve ticaretin kazanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Piyasa analizi: arz ve talep",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Esneklik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Hükümet regülasyonu: asgari ücret, kira kontrolü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Piyasalar ve refah",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Vergilendirmenin maliyeti",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Tüketici seçim teorisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Piyasa başarısızlıkları: kamu malları ve dışsallık",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Üretim maliyetleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Üretim faktörü piyasaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Rekabetçi piyasalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Tekeller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Oligopoller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tekelci rekabet",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "N. Gregory Mankiw, Principles of Microeconomics, Cengage Learning, 2014, 7th edition"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=105",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=105"
  },
  "ECN 201E": {
   "code": "ECN 201E",
   "name": "Intermediate Microeconomics",
+  "nameEn": "Intermediate Microeconomics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -245,15 +606,87 @@
    "Hafta 13 · Asimetrik bilgi: ahlaki tehlike ve olumsuz seçim",
    "Hafta 14 · Bazı uygulamalar: seçim ve açık artırma sistemleri tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikroekonomiye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Seçim, tercihler, ve fayda maksimizasyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Talep, ortaya çıkan tercihler, ve karşılaştırmalı statik",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Belirsizlik altında seçim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Tüketici faydası ve toplama",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Teknoloji, kar maksimizasyonu, ve maliyet minimızayonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Arz ve toplama",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Tekeller",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Oyun teorisi ve oligopoller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Rekabetçi denge",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Dışsallık",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Kamu malları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Asimetrik bilgi: ahlaki tehlike ve olumsuz seçim",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 14,
+    "topic": "Bazı uygulamalar: seçim ve açık artırma sistemleri tasarımı",
+    "outcomes": "4-6-7"
+   }
+  ],
   "textbooks": [
    "Varian, Hal R. Intermediate Microeconomics: A Modern Approach. 7th ed. New York, NY: W.W. Norton, 2005"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=201"
  },
  "ECN 202E": {
   "code": "ECN 202E",
   "name": "Intermediate Macroeconomics",
+  "nameEn": "Intermediate Macroeconomics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -293,15 +726,87 @@
    "Hafta 13 · Mali politika",
    "Hafta 14 · Maliye politikası"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Ölçüm ve modeller",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Ekonomik büyüme",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 4,
+    "topic": "Büyüme muhasebesi ve içsel büyüme teorisi",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 5,
+    "topic": "Tüketim ve vergiler",
+    "outcomes": "10"
+   },
+   {
+    "week": 6,
+    "topic": "Kredi piyasası ve yatırım",
+    "outcomes": "2-5-8-10"
+   },
+   {
+    "week": 7,
+    "topic": "İşsizlik",
+    "outcomes": "1-8"
+   },
+   {
+    "week": 8,
+    "topic": "Ekonomik dalgalanmaların ölçümü",
+    "outcomes": "2-5-7"
+   },
+   {
+    "week": 9,
+    "topic": "Dinamik makroekonomi modeli",
+    "outcomes": "2-10"
+   },
+   {
+    "week": 10,
+    "topic": "Para ve bankacılık",
+    "outcomes": "8-9-12"
+   },
+   {
+    "week": 11,
+    "topic": "İktisadi dalgalanmalar kuramı",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 12,
+    "topic": "Uluslararası makroekonomi",
+    "outcomes": "4-5-11"
+   },
+   {
+    "week": 13,
+    "topic": "Mali politika",
+    "outcomes": "2-3-12"
+   },
+   {
+    "week": 14,
+    "topic": "Maliye politikası",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "WILLIAMSON, MACROECONOMICS, 5TH EDITION, PEARSON, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=202"
  },
  "ECN 203E": {
   "code": "ECN 203E",
   "name": "Introduction to Law",
+  "nameEn": "Introduction to Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -340,16 +845,88 @@
    "Hafta 13 · Fikri ve sınai mülkiyet hakları",
    "Hafta 14 · Haksız rekabet ve rekabet hukukuna giriş"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Açılış, dersin tanıtımı, hukuk kavramı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Hukuk kuralı ve yaptırım kavramları, hukukun kaynakları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Hukukun bölümleri (özel hukuk)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Hukukun bölümleri (kamu hukuku)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Kişi kavramı (gerçek kişiler, hak ehliyeti)",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 6,
+    "topic": "Kişi kavramı (fiil ehliyeti, tüzel kişiler)",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 7,
+    "topic": "Hak kavramı ve hakkın korunması, hukuki fiiller ve işlemler",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 8,
+    "topic": "Borçlar hukukuna giriş, borç kavramı ve borcun kaynakları",
+    "outcomes": "1-2-3-7"
+   },
+   {
+    "week": 9,
+    "topic": "Sorumluluk kavramı ve haksız fiil",
+    "outcomes": "1-2-3-8"
+   },
+   {
+    "week": 10,
+    "topic": "Sözleşme kavramı ve sözleşme hukukuna giriş",
+    "outcomes": "1-2-3-7"
+   },
+   {
+    "week": 11,
+    "topic": "Sözleşme hukukunun genel ilkeleri",
+    "outcomes": "1-2-3-7"
+   },
+   {
+    "week": 12,
+    "topic": "Ticaret hukuku, ticari işletme ve ticaret şirketleri",
+    "outcomes": "1-2-3-9"
+   },
+   {
+    "week": 13,
+    "topic": "Fikri ve sınai mülkiyet hakları",
+    "outcomes": "1-2-3-10"
+   },
+   {
+    "week": 14,
+    "topic": "Haksız rekabet ve rekabet hukukuna giriş",
+    "outcomes": "1-2-3-11"
+   }
+  ],
   "textbooks": [
    "Introduction to Turkish Law, Don Wallace, Tuğrul Ansay, 2013.",
    "An Introduction to Law, Rona Aybay, İstanbul 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=203"
  },
  "ECN 205E": {
   "code": "ECN 205E",
   "name": "Statistics I",
+  "nameEn": "Statistics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -381,15 +958,87 @@
    "Hafta 13 · Güven Aralığı Tahmini II",
    "Hafta 14 · Hipotez Testi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İstatistiğe Giriş ve Veri Sunumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Sunumu (Grafik)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Sunumu (Numerik)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Olasılık I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Olasılık II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrık Olasılık Dağılımları I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ayrık Olasılık Dağılımları II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sürekli Olasılık Dağılımları I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sürekli Olasılık Dağılımları II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Örneklem İstatistik Dağılımları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Nokta Tahmini",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Güven Aralığı Tahmini I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Güven Aralığı Tahmini II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Hipotez Testi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Statistics for Business and Economics (8th Edition) by Paul Newbold, William Carlson, and Betty Thorne"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=205"
  },
  "ECN 206E": {
   "code": "ECN 206E",
   "name": "Statistics II",
+  "nameEn": "Statistics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -423,15 +1072,87 @@
    "Hafta 13 · Tahmin Yöntemleri I",
    "Hafta 14 · Tahmin Yöntemleri II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "ECN206E’ye Giriş (ECN205’in özeti)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Basit Regresyon Modeli ve Özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Çoklu Regresyon Modeli ve Özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Regresyon Analizi için Ek konular",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Regresyon Analizi için Ek konular",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Etkisiz Değişkenli regresyon analizleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kategorik Veri Analizi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "ANOVA I",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "ANOVA II",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Non-parametric Tests I",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Non-parametric Tests II",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Zaman Serisi Analizi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tahmin Yöntemleri I",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Tahmin Yöntemleri II",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Statistics for Business and Economics (8th Edition) by Paul Newbold, William Carlson, and Betty Thorne"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=206"
  },
  "ECN 207E": {
   "code": "ECN 207E",
   "name": "Mathematical Economics",
+  "nameEn": "Mathematical Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -463,15 +1184,87 @@
    "Hafta 13 · Lineer Programlama",
    "Hafta 14 · Lineer Olmayan Programlama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İktisadi Modeller",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İktisatta Denge Analizi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer Modeller ve Matris Cebiri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Lineer Modeller ve Matris Cebiri (Devamı)",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Karşılaştırmalı Statikler ve Türev Kavramı",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Türev Kuralları ve Karşılaştırmalı Statikler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Optimizasyon: Özel Bir Denge Analizi Çeşidi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Birden fazla değişken durumu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "İktisadi Dinamikler ve İntegral Hesabı",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Kesintisiz Zaman: Birinci-Derece Diferansiyel Denklemler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yüksek Derece Diferansiyel Denklemler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kesintili Zaman: Birinci-Derece Fark Denklemleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Lineer Programlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Lineer Olmayan Programlama",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Chiang, A. C. (2011). Fundamental Methods of Mathematical Economics, 4th Edition, McGraw Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=207"
  },
  "ECN 208E": {
   "code": "ECN 208E",
   "name": "Public Economics",
+  "nameEn": "Public Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -503,15 +1296,87 @@
    "Hafta 13 · Optimal vergilendirme",
    "Hafta 14 · Sosyal güvenlik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kamu iktisadına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Denge, etkinlik ve hükümetin rolü",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sosyal seçim ve politik iktisat",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Refah ekonomisi: eşitlik ve denge",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Kamu malları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Dışsallık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Eksik rekabet",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Asimetrik bilgi",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Seçim sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Eşitlik ve dağıtım",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Vergilendirmeye giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Vergilendirme ve ekonomik etkinlik",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Optimal vergilendirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Sosyal güvenlik",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Hindriks J., and Myles G. D., Intermediate Public Economics, MIT Press, 2006."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=208",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=208"
  },
  "ECN 209E": {
   "code": "ECN 209E",
   "name": "İstatistik I",
+  "nameEn": "Statistics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -543,15 +1408,87 @@
    "Hafta 13 · Güven Aralığı Tahmini II",
    "Hafta 14 · Hipotez Testi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İstatistiğe Giriş ve Veri Sunumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Sunumu (Grafik)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Sunumu (Numerik)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Olasılık I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Olasılık II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrık Olasılık Dağılımları I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ayrık Olasılık Dağılımları II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sürekli Olasılık Dağılımları I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sürekli Olasılık Dağılımları II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Örneklem İstatistik Dağılımları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Nokta Tahmini",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Güven Aralığı Tahmini I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Güven Aralığı Tahmini II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Hipotez Testi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Statistics for Business and Economics (8th Edition) by Paul Newbold, William Carlson, and Betty Thorne"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=209"
  },
  "ECN 210E": {
   "code": "ECN 210E",
   "name": "Financial Accounting",
+  "nameEn": "Financial Accounting",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -586,15 +1523,87 @@
    "Hafta 13 · Maddi ve maddi olmayan duran varlıklar: Amortismanın ölçülmesi.",
    "Hafta 14 · Kısa vadeli yabancı kaynaklar: Ticari borçlar, bilinen ve tahmin edilmesi şart olan yabancı kaynaklar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Muhasebe ve İş Ortamı: Finansal muhasebe kullanıcıları, işletme türleri, muhasebe denklemi, işlem, finansal tablo türleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İşlemlerin Kaydı: Hesap, yevmiye defteri, büyük defter, çift taraflı kayıt kavramlarının tanımları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İşlemlerin Kaydı: Muhasebe denklemini genişletme, geçici mizan kavramlarının tanımları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Düzeltme prosesi: Finansal tablolar ve düzeltme kayıtları, kesin mizan.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Düzeltme prosesi: Gelir tablosu hazırlanması, özkaynak değişim tablosu ve bilanço.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Muhasebe Döneminin Tamamlanması: Muhasebe dönemi, aktif ve pasiflerin sınıflandırılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Muhasebe Döneminin Tamamlanması: Farklı bilanço formatları.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ticari İşletme İşlemleri: Sürekli ve periyodik sistemler. Bir ticari işletmede hesaplarının düzeltilmesi ve kapatılması.",
+    "outcomes": "1-4-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Stoklar: Periyodik ve sürekli sistemlerde stok maliyetinin hesaplanması.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "İç Kontrol ve Nakit: Etkin iç kontrol sistemi, banka mutabakatının hazırlanması.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Alacaklar: Alacak türleri, takipteki alacakların muhasebesi, geri ödenemeyecek hesapların tahmini ve düşülmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Maddi ve maddi olmayan duran varlıklar: Maddi duran varlıkların maliyetlerinin ölçülmesi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Maddi ve maddi olmayan duran varlıklar: Amortismanın ölçülmesi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Kısa vadeli yabancı kaynaklar: Ticari borçlar, bilinen ve tahmin edilmesi şart olan yabancı kaynaklar.",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "HORNGREN, HARRISON & OLIVER, Financial & Managerial Accounting, 3 ed., Prentice Hall Inc."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=210"
  },
  "ECN 211E": {
   "code": "ECN 211E",
   "name": "Statistical Meth. in Economics",
+  "nameEn": "Statistical Meth. in Economics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 4,
@@ -627,15 +1636,87 @@
    "Hafta 13 · Güven Aralığı Tahmini II",
    "Hafta 14 · Hipotez Testi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İstatistiğe Giriş ve Veri Sunumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Sunumu (Grafik)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Sunumu (Numerik)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Olasılık I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Olasılık II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrık Olasılık Dağılımları I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ayrık Olasılık Dağılımları II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sürekli Olasılık Dağılımları I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sürekli Olasılık Dağılımları II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Örneklem İstatistik Dağılımları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Nokta Tahmini",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Güven Aralığı Tahmini I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Güven Aralığı Tahmini II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Hipotez Testi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Statistics for Business and Economics (8th Edition) by Paul Newbold, William Carlson, and Betty Thorne"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=211"
  },
  "ECN 212E": {
   "code": "ECN 212E",
   "name": "İstatistik II",
+  "nameEn": "Statistics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -669,15 +1750,87 @@
    "Hafta 13 · Tahmin Yöntemleri I",
    "Hafta 14 · Tahmin Yöntemleri II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "ECN212E’ye Giriş (ECN209’un özeti)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Basit Regresyon Modeli ve Özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Çoklu Regresyon Modeli ve Özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Regresyon Analizi için Ek konular I",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Regresyon Analizi için Ek konular II",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Etkisiz Değişkenli regresyon analizleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kategorik Veri Analizi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "ANOVA I",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "ANOVA II",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Parametrik Olmayan Testler I",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Parametrik Olmayan Testler II",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Zaman Serisi Analizi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tahmin Yöntemleri I",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Tahmin Yöntemleri II",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Statistics for Business and Economics (8th Edition) by Paul Newbold, William Carlson, and Betty Thorne"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=212"
  },
  "ECN 301E": {
   "code": "ECN 301E",
   "name": "Econometrics I",
+  "nameEn": "Econometrics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -713,15 +1866,87 @@
    "Hafta 13 · Yapısal Kararlılık Testleri",
    "Hafta 14 · Regresyon modeline matris yaklaşımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tek değişkenli Regresyon modeli",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "EKK tahmin Yöntemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "KDRM’nin varsayımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Aralık tahmini",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Küçük örneklem Hipotez testleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Büyük örneklem hipotez testleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Alternatif Fonksiyon biçimleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Orijinden Geçen Regresyon",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ölçekleme ve ölçü birimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Çoklu Regresyon Modeli",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İstatistiksel çıkarım",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Maksimum Olabilirlik Yöntemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Yapısal Kararlılık Testleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Regresyon modeline matris yaklaşımı",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Introductory Econometrics,A Modern Approach Wooldridge J 5th edition South western, 2013"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=301"
  },
  "ECN 302E": {
   "code": "ECN 302E",
   "name": "Econometrics II",
+  "nameEn": "Econometrics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -755,15 +1980,87 @@
    "Hafta 13 · Panel veri ekonometrisi temel kavramlar",
    "Hafta 14 · Doğrusal olmayan Ekonometrik teknikler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çoklu Doğrusal bağlantı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Değişen varyans",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Otokorelasyon,sorunlarının belirlenmesi ve çözüm yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ekonometrik modelleme teknikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Kukla değişkenler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Bağımlı değişkeni kukla değişkenler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Logit-Probit modelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik ekonometrik modeller",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Dağıtılmış gecikme modelleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Eşanlı denklem modelleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Simülasyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Zaman serisi temel kavramlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Panel veri ekonometrisi temel kavramlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Doğrusal olmayan Ekonometrik teknikler",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Introductory Econometrics,A Modern Approach Wooldridge J 5th edition South western,2013"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=302"
  },
  "ECN 303E": {
   "code": "ECN 303E",
   "name": "Development Economics",
+  "nameEn": "Development Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -798,15 +2095,87 @@
    "Hafta 13 · Yolsuzluk",
    "Hafta 14 · Teknoloji ve öğrenme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse giriş ve kalkınma hakkındaki veriler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Büyüme: Solow modeli",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Kalkınma Muhasebesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Yanlış kaynak tahsisi, koordinasyon problemleri ve çoklu dengeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Sermaye kusurları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Kurumlar",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 7,
+    "topic": "Arazi ve tarım işçiliği",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Eğitim ve insan sermayesi",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sağlık ve beslenme",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kredi ve Sigorta",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarruf",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Hanehalkı kaynak paylaşımı ve cinsiyet",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Yolsuzluk",
+    "outcomes": "2-4-5-7"
+   },
+   {
+    "week": 14,
+    "topic": "Teknoloji ve öğrenme",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "DEBRAJ RAY, DEVELOPMENT ECONOMICS, PRINCETON UNIVERSITY PRESS, 1998."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=303"
  },
  "ECN 305E": {
   "code": "ECN 305E",
   "name": "Industrial Organisation",
+  "nameEn": "Industrial Organisation",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -839,15 +2208,87 @@
    "Hafta 13 · Dikey şirket birleşmeleri",
    "Hafta 14 · Piyasaların regülasyonu: antitröst kanunları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstriyel organizasyon ve stratejiye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Refah ekonomisi: piyasa gücü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tekel piyasaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Fiyat farklılaştırma",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Oyun teorisi özeti: statik ve dinamik oyunlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Oligopol piyasalara giriş",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Cournot, Stackelberg, ve Bertrand modelleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ürün farklılaştırma",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Piyasaya giriş engelleri ve girişi engelleme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Araştırma ve geliştirme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Reklam stratejileri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yatay şirket birleşmeleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dikey şirket birleşmeleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Piyasaların regülasyonu: antitröst kanunları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Luis Cabral, Introduction to Industrial Organization, MIT Press, 2000"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=305"
  },
  "ECN 306E": {
   "code": "ECN 306E",
   "name": "Econom. of Innov.&Tech.Change",
+  "nameEn": "Econom. of Innov.&Tech.Change",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -879,15 +2320,87 @@
    "Hafta 13 · Küresellesme ve İnovasyon-II",
    "Hafta 14 · İnovasyonla ilgili Gelecek Politika Meseleleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Mikroiktisat Tekrarı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgi Malları ve İnovasyonun Temel Mekanizması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Fikri Mülkiyetin Temelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Fikri Mülkiyetin Tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Birikmiş Olma Durumu",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Ekonomik Değişme ve İnovasyonun Evrimsel Teorisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Teknolojik Değişim ve Endüstrileşme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Teknoloji Adaptasyona Giriş",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ag Etkileri ve Bazı Örnekler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sistem Rekabeti ve Standartlaşma",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "AR-GE’ye Kamu Desteği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Küresellesme ve İnovasyon-I",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Küresellesme ve İnovasyon-II",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "İnovasyonla ilgili Gelecek Politika Meseleleri",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Scotchmer, S. (2004). Innovation and Incentives, MIT Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=306",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=306"
  },
  "ECN 307E": {
   "code": "ECN 307E",
   "name": "Game Theory",
+  "nameEn": "Game Theory",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -920,15 +2433,87 @@
    "Hafta 13 · Pazarlık",
    "Hafta 14 · Oyunlarla modelleme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Introduction",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nash Dengesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Cournot, Bertrand Oyunları",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Ortak Mal Trajedisi, Aşınma savaşı oyunu.",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "İhaleler",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Karışık Strateji Dengesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Uygulamalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik Oyunlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ultimatom Oyunu, Tutma Oyunu, Stackelberg Oyunu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Bayesyen Nash Dengesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Baskınlaştırılmış Stratejilerin Sıralı Elenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Tekrarlı Oyunlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Pazarlık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Oyunlarla modelleme",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Osborne M, An Introduction to Game Theory, Oxford University Press, 2003"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=307",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=307"
  },
  "ECN 308E": {
   "code": "ECN 308E",
   "name": "Competition Law and Policy",
+  "nameEn": "Competition Law and Policy",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -964,16 +2549,88 @@
    "Hafta 13 · Birleşmeler ve satın almalar",
    "Hafta 14 · Yaptırımlar ve soruşturma usulleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Açılış, dersin tanıtımı, rekabet hukukunun amacı, temel kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Pazar gücü ve refah",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Pazar tanımı ve piyasa gücü değerlendirmesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Gizli anlaşmalar ve yatay anlaşmalar",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yatay birleşmeler",
+    "outcomes": "1-3-8"
+   },
+   {
+    "week": 6,
+    "topic": "Dikey kısıtlamalar ve dikey birleşmeler",
+    "outcomes": "1-3-5-8"
+   },
+   {
+    "week": 7,
+    "topic": "Predasyon",
+    "outcomes": "1-3-7"
+   },
+   {
+    "week": 8,
+    "topic": "Tekelleşme ve Diğer Kötü Niyetli Uygulamalar",
+    "outcomes": "1-3-7"
+   },
+   {
+    "week": 9,
+    "topic": "Rekabeti kısıtlayıcı anlaşmalar (yatay)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Rekabeti kısıtlayıcı anlaşmalar ve muafiyet rejimi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Rekabeti kısıtlayıcı anlaşmalar (dikey)",
+    "outcomes": "2-3-6"
+   },
+   {
+    "week": 12,
+    "topic": "Hakim durumun kötüye kullanılması",
+    "outcomes": "2-3-7"
+   },
+   {
+    "week": 13,
+    "topic": "Birleşmeler ve satın almalar",
+    "outcomes": "2-3-8"
+   },
+   {
+    "week": 14,
+    "topic": "Yaptırımlar ve soruşturma usulleri",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Massimo Motta, Competition Policy: Theory and Practice, 2009, New York, NY: Cambridge University Press.",
    "Richard Whish and David Bailey, Competition Law, 7th Edition, 2012, Oxford."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=308",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=308"
  },
  "ECN 309E": {
   "code": "ECN 309E",
   "name": "Money, Banking&Financial Mark.",
+  "nameEn": "Money, Banking&Financial Mark.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1004,15 +2661,87 @@
    "Hafta 13 · Para Büyümesi, Para Talebi ve Modern Para Politikası",
    "Hafta 14 · Çıktı, Enflasyon ve Para Politikası"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Para ve Ödeme Sistemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Mali Enstrumanlar, Mali Piyasalar ve Mali Kurumlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Risk ve Faiz Oranları Vade Yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Finansal Aracılığın İktisadı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Mevduat Kurumları: Bankalar ve Banka Yönetimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Finansal Endüstri Yapısı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Mali Sistemi Düzenlemek",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dünyada Merkez Bankaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Merkez Bankalarının Yapısı: Amerikan Merkez Bankası ve Avrupa Merkez Bankası",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Merkez Bankası Bilançosu ve Para Arzı Süreci",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Para Politikası: Yurtiçi Ekonomiyi Stabilize Etmek",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Döviz Kuru Politikası ve Merkez Bankası",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Para Büyümesi, Para Talebi ve Modern Para Politikası",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Çıktı, Enflasyon ve Para Politikası",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Cecchetti, S.G. and Schoenholtz, K.L. (2011).Money, Banking and Financial Markets, 3th Edition, McGraw Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=309",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=309"
  },
  "ECN 310E": {
   "code": "ECN 310E",
   "name": "Institutional Economics",
+  "nameEn": "Institutional Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1043,15 +2772,87 @@
    "Hafta 13 · Kurumlar ve Ekonomik Büyüme II",
    "Hafta 14 · Son Tartışmalar-Kurumsal İktisadın Geleceği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kurumsal İktisada Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Bir Kurum olarak Hukuk Sistemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Regulasyon ve Politika",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bir Kurum olarak Din",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Sosyal Sınıflar ve Ekonomik Büyüme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ulus Devletler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Uluslararası Kurumlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kurumsal Değişme",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Rant Arayışı ve Ranttan Kaçınma",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Coase ve Pigou",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Yeni Politik Ekonomi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Kurumlar ve Ekonomik Büyüme I",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Kurumlar ve Ekonomik Büyüme II",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Son Tartışmalar-Kurumsal İktisadın Geleceği",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Alston, Eggertsson, North (1998), Empirical Studies in Institutional Change, Cambridge University Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=310",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=310"
  },
  "ECN 311E": {
   "code": "ECN 311E",
   "name": "Uluslararası Ticaret",
+  "nameEn": "International Trade",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1087,15 +2888,87 @@
    "Hafta 13 · Uluslararası ticaret ve endüstriyel politikalar",
    "Hafta 14 · Uluslararası ticaret modellerinin ampirik uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uluslararası ticarete giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası ticaret eğilimleri ve bazı temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ricardian modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Spesifik faktör modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Heckscher-Ohlin modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Yeni ticaret teorisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Ölçeğe göre artan getiri ve tekelci rekabet",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ticaret politikasının etkileri",
+    "outcomes": "3-4-5-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslararası ticaret ve heterojen firmalar",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Uluslararası ticaret ve gelir eşitsizliği",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Uluslararası ticaret politikaları",
+    "outcomes": "3-4-5-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Uluslararası ticaret ve kalkınma",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası ticaret ve endüstriyel politikalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası ticaret modellerinin ampirik uygulamaları",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "PAUL KRUGMAN, MAURICE OBSTFELD AND MARC MELITZ (2018), INTERNATIONAL ECONOMICS: THEORY AND POLICY, 11TH EDITION, PEARSON EDUCATION."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=311"
  },
  "ECN 312E": {
   "code": "ECN 312E",
   "name": "International Finance",
+  "nameEn": "International Finance",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1126,15 +2999,87 @@
    "Hafta 13 · Sermaye Akımları ve Gelişmekte Olan Ülkelerdeki Finansal Krizler II",
    "Hafta 14 · Uluslararası Para ile İlgili Meseleler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ulusal Gelir Hesapları ve Ödemeler Dengesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Faiz Oranı Eşitliği",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Para Arzı, Faiz Oranları ve Döviz Kurları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Satınalma Gücü Eşitliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Döviz Kuru Rejimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Döviz Kurları ve Sermaye Kontrolleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kısa Vadede Cıktı ve Döviz Kuru",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Döviz Kuru Kriz Modelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslararası Para Sistemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Politika Koordinasyon Sorunları",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Küresel Sermaye Piyasaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Sermaye Akımları ve Gelişmekte Olan Ülkelerdeki Finansal Krizler I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Sermaye Akımları ve Gelişmekte Olan Ülkelerdeki Finansal Krizler II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası Para ile İlgili Meseleler",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Krugman, Obstfeld and Melitz, (2011). International Economics: Theory and Policy, 9th Edition, Addison-Wesley"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=312"
  },
  "ECN 314E": {
   "code": "ECN 314E",
   "name": "Financial Economics",
+  "nameEn": "Financial Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1168,15 +3113,87 @@
    "Hafta 13 · Finansal planlama ve büyüme",
    "Hafta 14 · Sermaye yapısı teorisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Finans teorisine giriş, tek nakit akışı için bileşik getiri ve iskonto hesabı",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 2,
+    "topic": "Birden çok nakit akışı için bileşik getiri ve iskonto hesabı",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 3,
+    "topic": "Geleneksel olmayan nakit akışları için bileşik getiri ve iskonto hesabı",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Nakit akışı kavramları ve mali tablo analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Mali tablo analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Tahvil değerlemesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Risk-getiri ödünleşmesi, riskin ölçülmesi ve fiyatlanması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Hisse senedi değerlemesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Sermaye bütçelemesi yöntemleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sermaye bütçelemesi kıstasları",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Proje analizi ve değerlemesi",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Sermaye maliyeti",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Finansal planlama ve büyüme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Sermaye yapısı teorisi",
+    "outcomes": "4-6"
+   }
+  ],
   "textbooks": [
    "Stephen Ross, Randolph Westerfield and Bradford Jordan, (2016), Fundamentals of Corporate Finance, 11th Ed., McGrawHill"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=314",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=314"
  },
  "ECN 401E": {
   "code": "ECN 401E",
   "name": "Turkish Economy",
+  "nameEn": "Turkish Economy",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1208,6 +3225,78 @@
    "Hafta 13 · 2000-bugüne Türkiye Ekonomisi",
    "Hafta 14 · Türkiye Ekonomisi’nde Öncelikler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İktisadi hayatın doğal tarihi, eknomideki güven, uzmanlaşma ve işbirliği.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ülke Sınırların belirlenmesinde İktisadi Teoriler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dünyanın iktisadi coğrafyası ve Türkiye’nin kaynakları ve fiziksel koşullarının karşılaştırılmalı değerlendirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kaynakların bazı özel durumlardaki negatif etkilerine ilişkin yanlış anlamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Osmanlı İmparatorluk Dönemi Ekonomisi ve Osmanlı Gerileme Paradigması’nın yerine gelen yeni paradigmalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Osmanlı Tanzimat Sonrası Dönemi Ekonomisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "1923-1929 Türkiye Ekonomisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "1930-1938 Türkiye Ekonomisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "1939-1946 Türkiye Ekonomisi ve Bretton Woods Dönemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "1946-1959 Türkiye Ekonomisi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "1960-1980 Türkiye Ekonomisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "1980-1999 Türkiye Ekonomisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "2000-bugüne Türkiye Ekonomisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye Ekonomisi’nde Öncelikler",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "The Company of Strangers: A Natural History of Economic Life, Paul Seabright, Princeton University Press, 2010",
    "The End of Poverty: Economic Possibilities for Our Time, Jeffrey D. Sachs, Penguin Books, 2006",
@@ -1219,12 +3308,12 @@
    "J Dittmer and J Sharp, eds. 2014. Geopolitics: An Introductory Reader",
    "Daniel Yergin, The Quest: Energy, Security, and the Remaking of the Modern World, (New York: Penguin Press), 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=401"
  },
  "ECN 402E": {
   "code": "ECN 402E",
   "name": "Project Appraisal",
+  "nameEn": "Project Appraisal",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1257,15 +3346,87 @@
    "Hafta 13 · Proje finansmanı",
    "Hafta 14 · Örnek Olay Çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sermaye Yatırımlarının Önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sermaye Yatırımlarının zorlukları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Fikirlerin türetilmesi ve izlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Pazar Analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Talep Analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Teknik Analiz",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Projenin gerçekleştirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Finansal Tahminler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Finansal projeksiyonlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Yatırım Kriteri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Sermaye Maliyeti",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Proje Risk Analizi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Proje finansmanı",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Örnek Olay Çalışmaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Projects – Planning, analysis, financing, implementation and review Prasanna Chandra, 7th edition, Tata- McGraw hill Dec 1, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=402"
  },
  "ECN 407E": {
   "code": "ECN 407E",
   "name": "Time Series Econometrics",
+  "nameEn": "Time Series Econometrics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1297,15 +3458,87 @@
    "Hafta 13 · Eşbütünleşme",
    "Hafta 14 · Otoregresif Koşullu Değişen Varyans"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Zaman Serilerinin tarihi gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zaman Serilerinin grafiksel gösterimi, Korelogram",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Durağanlık, Ergodisite",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tek değişkenli Durağan Süreçler :AR, MA, ARMA",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tek değişkenli Durağan Süreçlerde Öngörü",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Granger Nedensellik",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Haugh –Pierce test",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Hsiao Süreci",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Vektör Otoregresif Süreçler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Durağan Olmayan Süreçler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Birim Kök testleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Zaman Serilerinin ayrıştırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Eşbütünleşme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Otoregresif Koşullu Değişen Varyans",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Introduction to Modern Time Series Kirchgässner G. · Wolters J springer 2007"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=407",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=407"
  },
  "ECN 410E": {
   "code": "ECN 410E",
   "name": "Energy Economics",
+  "nameEn": "Energy Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1338,15 +3571,87 @@
    "Hafta 13 · Enerji nakliyesi ve depolaması",
    "Hafta 14 · Çevre sorunları: küresel ısınma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enerji ekonomisine giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Piyasa analizi: arz ve talep",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Piyasa yapısı ve etkinlik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Eksik rekabet: tekel ve oligopoli",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Doğal kaynakların çıkarılması ve fiyatlandırılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Doğal tekellerin ekonomik regülasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Gelecekteki enerji tüketimini tahmin etme",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Yenilenmeyen marketlere giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Petrol piyasası regülasyonu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Doğal gaz piyasası regülasyonu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Elektrik piyasasına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Elektrik piyasasının regülasyonu",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji nakliyesi ve depolaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Çevre sorunları: küresel ısınma",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "William Spangar Peirce, Economics of the Energy Industries, 2nd. ed. Westport, Connecticut: Praeger, 1996"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=410",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=410"
  },
  "ECN 411E": {
   "code": "ECN 411E",
   "name": "Transport Economics",
+  "nameEn": "Transport Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1378,15 +3683,87 @@
    "Hafta 13 · Trafik Yoğunluğu ile Mücadele",
    "Hafta 14 · Sonuç-Gelecek"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ulaşım Talebi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Piyasalar, Maliyetler ve Hasılat",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Rekabet ve Rekabet Edebilirlik",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ulaştırma Ekonomisinde Tekel ve Tekelci Rekabet",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ulaştırma Ekonomisinde Oligopol",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Dışsallıklar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Kamu Malları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Eşitsizlik, Fakirlik ve Asimetrik Bilgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Özelleştirme ve Deregulasyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Proje Değerleme: Maliyet-Fayda Analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Ulaşım Yatırımları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Devlet Müdahalesinin Genel Formları",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Trafik Yoğunluğu ile Mücadele",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Sonuç-Gelecek",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Mallard, G. and Glaister, S. (2008). Transport Economics: Theory, Application and Policy, Palgrave MacMillan"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=411"
  },
  "ECN 412E": {
   "code": "ECN 412E",
   "name": "Environmental Economics",
+  "nameEn": "Environmental Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1419,15 +3796,87 @@
    "Hafta 13 · Sürdürebilirlik",
    "Hafta 14 · Küresel ısınma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çevre ekonomisine giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Etkinlik ve piyasalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sosyal seçim: ne kadar çevresel koruma?",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Piyasa başarısızlıkları: kamu mallaarı ve dışsallık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Coase teoremi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kirlilik regülasyonu: tavan kirlilik ve kirletme ruhsatı takası",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Piyasa dışı değer biçmeye giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Regresyon analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Fayda-maliyet analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Hedonik metodu",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Olası değer biçme metodu",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Çevre politikaları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Sürdürebilirlik",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Küresel ısınma",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Keohane and Olmstead, Markets and the Environment, Island Press, 2007"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=412",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=412"
  },
  "ECN 413E": {
   "code": "ECN 413E",
   "name": "Health Economics",
+  "nameEn": "Health Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1460,15 +3909,87 @@
    "Hafta 13 · Tıbbi bakım sistemlerinin karşılaştırmalı analizi",
    "Hafta 14 · Sağlık ve ekonomik gelişmede küresel yönetişim sorunları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sağlık ekonomisi ve miroekonomik araçlar hakkında temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tıbbi bakım talebi",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Sağlık üretim fonksiyonu ve tıbbi bakım",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Tıbbi bakım talebi hakkında ampirik çalışmalar: RAND çalışması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tıbbi bakım talebi hakkında ampirik çalışmalar: diğer çalışmalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Tıbbi bakım arzı: doktorların sağlık üretiminde girdi alınması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Tıbbi bakım arzı: doktor piyasasında endüstriyel organizasyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Tıbbi bakım arzı: hastanelerin sağlık üretiminde girdi alınması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Tıbbi bakım arzı: hastane piyasasında endüstriyel organizasyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sağlık sigortası talebi: olumsuz seçim ve ahlaki tehlike",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sağlık sigortası arzı ve organize bakım",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Farmasötik endüstri ekonomisi ve farmasötik analize giriş",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tıbbi bakım sistemlerinin karşılaştırmalı analizi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Sağlık ve ekonomik gelişmede küresel yönetişim sorunları",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Health Economics, Charles E. Phelps, Addison Wesley; 5th edition."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=413",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=413"
  },
  "ECN 414E": {
   "code": "ECN 414E",
   "name": "Economics of Education",
+  "nameEn": "Economics of Education",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1501,15 +4022,87 @@
    "Hafta 13 · Kuşaklar Arası Devamlılık - Teori",
    "Hafta 14 · Kuşaklar Arası Devamlılık - Uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Eğitime ekonomik bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Eğitim piyasasına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Eğitim Talebi – Teori",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Eğitim Talebi - Uygulama",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Eğitime Erişim - Teori",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Eğitime Erişim - Uygulama",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Eğitim İstatistikleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "Eğitim Arzı - Teori",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Eğitim Arzı - Uygulama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Eğitimin Finanse Edilmesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Eğitimin Getirisi - Teori",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Eğitimin Getirisi - Uygulama",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kuşaklar Arası Devamlılık - Teori",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Kuşaklar Arası Devamlılık - Uygulama",
+    "outcomes": "3-5"
+   }
+  ],
   "textbooks": [
    "“Economics of Education” by Danielle Checchi, Cambridge University Press, 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=414",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=414"
  },
  "ECN 415E": {
   "code": "ECN 415E",
   "name": "Urban Economics",
+  "nameEn": "Urban Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1544,15 +4137,85 @@
    "Hafta 13 · Konut sahipliği: Dışsallıklar, Belirleyiciler ve Politikalar",
    "Hafta 14 · Konuların genel değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Şehir ve bölgesel ekonomiye giriş",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 2,
+    "topic": "Neden şehirler oluşur ve neden firmalar kümelenir?",
+    "outcomes": "1-6-7"
+   },
+   {
+    "week": 3,
+    "topic": "Neden şehirler oluşur ve neden firmalar kümelenir?",
+    "outcomes": "1-6-7"
+   },
+   {
+    "week": 4,
+    "topic": "Şehirlerdeki eksi ekonomiler: bir şehirsel yerleşim ve arazi iradı modeli",
+    "outcomes": "1-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Şehirde arazi kullanım paternleri",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 6,
+    "topic": "Dengedeki şehir büyüklüğünü ne belirler?",
+    "outcomes": "1-6-7"
+   },
+   {
+    "week": 7,
+    "topic": "Şehir büyümesi, konumu ve konumsal dönüşüm",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 8,
+    "topic": "Vize sınavı"
+   },
+   {
+    "week": 9,
+    "topic": "Gelişmiş ülkelerde arazi kullanım mevzuatı",
+    "outcomes": "1-4-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Kalkınmakta olan ülkelerdeki gecekondu bölgeleri ve arazi kullanım mevzuatı",
+    "outcomes": "1-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Konut piyasasındaki talep ve arz eğrilerini tahmin etme",
+    "outcomes": "1-2-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Emlak piyasasında konjonktür dalgaları ve ‘balonlar’",
+    "outcomes": "1-2-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Konut sahipliği: Dışsallıklar, Belirleyiciler ve Politikalar",
+    "outcomes": "1-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Konuların genel değerlendirmesi"
+   }
+  ],
   "textbooks": [
    "O’SULLIVAN, A. (8TH EDITION) URBAN ECONOMICS, BOSTON:IRVIN- MCGRAW HILL, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=415",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=415"
  },
  "ECN 420E": {
   "code": "ECN 420E",
   "name": "Behavioural Economics",
+  "nameEn": "Behavioural Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1587,15 +4250,87 @@
    "Hafta 13 · Anlayış kısıtları",
    "Hafta 14 · Nöroiktisata giriş"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Davranışsal iktisata giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Piyasa etkinliği ve beklenti teorileri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Hiperbolik diskonto",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 4,
+    "topic": "Sezgi ve önyargılar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kamu malları",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 6,
+    "topic": "Knightian belirsizlik",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 7,
+    "topic": "Arbitrajın limitleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Başkalarını önemseyen tercihler",
+    "outcomes": "2-5-7"
+   },
+   {
+    "week": 9,
+    "topic": "Davaranışsal oyun teorisi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sürü davranışı",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Beklenti teorisi: varlıklar, muamma ve balonlar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Zamanlar arası seçim",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Anlayış kısıtları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Nöroiktisata giriş",
+    "outcomes": "2-5"
+   }
+  ],
   "textbooks": [
    "D. Kahneman and A. Tversky; “Choices, Values, and Frames”; Cambridge University Press; (2000)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=420",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=420"
  },
  "ECN 421E": {
   "code": "ECN 421E",
   "name": "Experimental Economics",
+  "nameEn": "Experimental Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1628,15 +4363,87 @@
    "Hafta 13 · Öğrenci Sunumları",
    "Hafta 14 · Öğrenci Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deneylere Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Metodoloji",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kişisel Karar Alma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Oyun Teoretik Deneyler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Bencil Olmayan Tercihler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kamu Malına Katkılar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Motivasyon ve Organizasyon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Piyasa Deneyleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Ekonomik Gelişim ve Ayırım Üzerine Alan Deneyleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Ekonomik Karar Almada Cinsiyet Farklılıkları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Bayes Kuralının Uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Nöroekonomi",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "2"
+   }
+  ],
   "textbooks": [
    "Holt C. (2007) Markets Games and Strategic Behavior"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=421"
  },
  "ECN 430E": {
   "code": "ECN 430E",
   "name": "Income Distribution & Poverty",
+  "nameEn": "Income Distribution & Poverty",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1669,15 +4476,87 @@
    "Hafta 13 · Kamu politikaları: transferler",
    "Hafta 14 · Kamu politikaları: refah reformları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gelir dağılımı ve yokseulluğa giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Refah iktisadı: etkinlik ve eşitlik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gelir eşitsizliğinin ölçülmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Yoksulluğun ölçülmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ekonomik büyüme ve gelir dağılımı arasındaki ilişki",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Refah eşitsizliğinin ölçülmesi ve hayat çevrim modeli",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Ekonomik hareketlilik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "İşsizlik ve sendikalar",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Artan ücret eşitsizliği",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "İnsan sermayesi ve eğitim",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kamu politikaları: eğitim",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kamu politikaları: vergilendirme",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kamu politikaları: transferler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Kamu politikaları: refah reformları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Edward N. Wolff, Poverty and Discrimination, Wiley-Blackwell, 2nd ed., 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=430",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=430"
  },
  "ECN 431E": {
   "code": "ECN 431E",
   "name": "Europ.Economics & Institutions",
+  "nameEn": "Europ.Economics & Institutions",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1710,15 +4589,87 @@
    "Hafta 13 · Büyüme (Genişleme",
    "Hafta 14 · Öğrenci Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Avrupa Birliği’nin Kökeni, Evrimi Ve Geleceği",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 2,
+    "topic": "Avrupa Birliği’nin Bütçesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Rekabet Politikası",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Ortak Tarım Politikası",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Mali Entegrasyon",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Avrupa Parasal Entegrasyonu",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "İmalat ve Hizmet Sektörlerinde Sanayi Politikası",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ticaret Politikası ve Uluslararası Ekonomik İşbirliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bölgesel Politika",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sosyal Politika",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "İşçi Hareketliliği",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Enerji, Ulaşım ve Çevre Politikaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Büyüme (Genişleme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "JOVANOVIC, MIROSLAV (2014) THE ECONOMICS OF EUROPEAN INTEGRATION’ 2ND ED. EDWARD ELGAR PUBLISHING ISBN: 9781782540281"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=431",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=431"
  },
  "ECN 432E": {
   "code": "ECN 432E",
   "name": "Labor Economics",
+  "nameEn": "Labor Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1751,15 +4702,87 @@
    "Hafta 13 · Sendikalar – Teori",
    "Hafta 14 · Sendikalar - Uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş piyasaları ve istihdam",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 2,
+    "topic": "İşçi Arzı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İşçi Arzı, Hayat Döngüsünde",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İşçi Talebi – Teori",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İşçi Talebi –Uygulama",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Maaşın Belirlenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "İstihdam politikaları ve denge",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Beşeri Kapital Teorisi – Teori",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Beşeri Kapital Teorisi – Uygulama",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Göç",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "İktisadi Ayırımcılık – Teori",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "İktisadi Ayırımcılık – Uygulama",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Sendikalar – Teori",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "Sendikalar - Uygulama",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "George Borjas tarafından yazılan Çalışma Ekonomisi adlı kitap."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=432"
  },
  "ECN 433E": {
   "code": "ECN 433E",
   "name": "Regulatory Econ.& Reg. Markets",
+  "nameEn": "Regulatory Econ.& Reg. Markets",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1795,15 +4818,87 @@
    "Hafta 13 · Enerji endüstrilerinde regülasyon",
    "Hafta 14 · Finansal piyasalarda regülasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Regülasyon ekonomisi ve regüle edilmiş endüstrilere giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Piyasa yapısı ve etkinlik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hükümet regülasyonunun gerekçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Getiri oranı regülasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Regülasyon politikası",
+    "outcomes": "8"
+   },
+   {
+    "week": 6,
+    "topic": "Doğal tekellerin regülasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Zincir teklifi ve kamu iktisadi teşekkülleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sosyal regülasyon: dışsallık",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Çevresel regülasyon",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Sağlık regülasyonu",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Telekomünikasyon endüstrilerinde regülasyon",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 12,
+    "topic": "Ulaşım endüstrilerinde regülasyon",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji endüstrilerinde regülasyon",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 14,
+    "topic": "Finansal piyasalarda regülasyon",
+    "outcomes": "6-8"
+   }
+  ],
   "textbooks": [
    "W. Kip Viscusi, John M. Vernon, and Joseph E. Harrington, Economics of Regulation and Antitrust 4th Edition, MIT Press, 2005"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=433",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=433"
  },
  "ECN 4902E": {
   "code": "ECN 4902E",
   "name": "Ekonomik Tasarım",
+  "nameEn": "Graduation Project",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -1836,15 +4931,87 @@
    "Hafta 13 · Nihai raporun ve sunumun hazırlanması",
    "Hafta 14 · Raporun teslimi ve projenin komite üyelerine sunulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma sorusunun belirlenmesi ve ön literatür araştırmasının yapılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma sorusunun belirlenmesi ve ön literatür araştırmasının yapılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Literatür araştırmasının yapılması, veri edinilmesi ve proje önerisinin hazırlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Literatür araştırmasının yapılması, veri edinilmesi ve proje önerisinin hazırlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Önerinin teslimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma sorusunun teorik ve ekonometrik analizlerinin yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma sorusunun teorik ve ekonometrik analizlerinin yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Araştırma sorusunun teorik ve ekonometrik analizlerinin yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Araştırma sorusunun teorik ve ekonometrik analizlerinin yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "İlerleme raporunun teslimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Sorunun teorik ve ekonometrik analizlerinin tamamlanması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Nihai raporun ve sunumun hazırlanması",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Nihai raporun ve sunumun hazırlanması",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Raporun teslimi ve projenin komite üyelerine sunulması",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "DOING ECONOMICS: DOING ECONOMICS: A GUIDE TO UNDERSTANDING AND CARRYING OUT ECONOMIC RESEARCH (2005) BY STEVEN GREENLAW, CENGAGE LEARNING, ISBN: 978-0618379835"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=4902"
  },
  "ECN 492E": {
   "code": "ECN 492E",
   "name": "Graduation Project",
+  "nameEn": "Graduation Project",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -1877,10 +5044,81 @@
    "Hafta 13 · Nihai raporun ve sunumun hazırlanması",
    "Hafta 14 · Raporun teslimi ve projenin komite üyelerine sunulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma sorusunun belirlenmesi ve ön literatür araştırmasının yapılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma sorusunun belirlenmesi ve ön literatür araştırmasının yapılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Literatür araştırmasının yapılması, veri edinilmesi ve proje önerisinin hazırlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Literatür araştırmasının yapılması, veri edinilmesi ve proje önerisinin hazırlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Önerinin teslimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma sorusunun teorik ve ekonometrik analizlerinin yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma sorusunun teorik ve ekonometrik analizlerinin yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Araştırma sorusunun teorik ve ekonometrik analizlerinin yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Araştırma sorusunun teorik ve ekonometrik analizlerinin yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "İlerleme raporunun teslimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Sorunun teorik ve ekonometrik analizlerinin tamamlanması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Nihai raporun ve sunumun hazırlanması",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Nihai raporun ve sunumun hazırlanması",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Raporun teslimi ve projenin komite üyelerine sunulması",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "DOING ECONOMICS: DOING ECONOMICS: A GUIDE TO UNDERSTANDING AND CARRYING OUT ECONOMIC RESEARCH (2005) BY STEVEN GREENLAW, CENGAGE LEARNING, ISBN: 978-0618379835"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ECN&dersNo=492"
  }
 }

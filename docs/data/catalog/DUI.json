@@ -2,6 +2,7 @@
  "DUI 101E": {
   "code": "DUI 101E",
   "name": "Gemicilik",
+  "nameEn": "Seamanship",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -36,15 +37,87 @@
    "Hafta 13 · Gemi ölçüleri ve yükleme hatları.",
    "Hafta 14 · Gemide bakım – tutum."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel denizcilik ve gemi bilgisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemilerin sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemicilik terimleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi organizasyonu ve gemide çalışma düzeni.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi organizasyonu ve gemide çalışma düzeni.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemilerin kısımları ve yapısal elemanları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Güverte teçhizat ve makineleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yükleme-boşaltma donanımları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Demir ve zincir.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Manevra komutları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Kılavuz çarmıhı ve kılavuz alıp-verme prosedürleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Halat işlemleri ve gemici bağları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi ölçüleri ve yükleme hatları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Gemide bakım – tutum.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "D.J. House, Seamanship Techniques, Butterworth-Heinneman, 3th Edition, London, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=101"
  },
  "DUI 102E": {
   "code": "DUI 102E",
   "name": "Seyire Giriş",
+  "nameEn": "Introduction to Navigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -77,15 +150,87 @@
    "Hafta 13 · Fenerler ve sis işaretleri.",
    "Hafta 14 · Şamandıra sistemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Seyir tanımı ve tarihçesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uzay, güneş sistemi, Dünya, kutuplar ve Dünya üzerinde mevki.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Harita projeksiyon çeşitleri ve harita datumu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Seyir haritalarının özellikleri ve Markator haritası.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Seyir haritalarındaki semboller ve kısaltmalar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Denizcilikte kullanılan birimler. Yönler, rota, mesafe ve hız.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Mevki çeşitleri, mevki bulma yöntemleri ve harita üzerine mevki koyma yöntemleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kerteriz alınması ve haritaya çizilmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Matematiksel seyir çeşitleri ve hesaplamaları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Matematiksel seyir çeşitleri ve hesaplamaları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Denizcilere ilanlar ve harita düzetmeleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Köprüüstü seyir yayınları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Fenerler ve sis işaretleri.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Şamandıra sistemleri.",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Command of the Defence Council, Admiralty Manual of Navigation, 10th Ed., Nautical Institute, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=102"
  },
  "DUI 103E": {
   "code": "DUI 103E",
   "name": "Gemicilik",
+  "nameEn": "Seamanship",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -120,15 +265,87 @@
    "Hafta 13 · Gemi ölçüleri ve yükleme hatları.",
    "Hafta 14 · Gemide bakım – tutum."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel denizcilik ve gemi bilgisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemilerin sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemicilik terimleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi organizasyonu ve gemide çalışma düzeni.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi organizasyonu ve gemide çalışma düzeni.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemilerin kısımları ve yapısal elemanları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Güverte teçhizat ve makineleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yükleme-boşaltma donanımları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Demir ve zincir.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Manevra komutları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Kılavuz çarmıhı ve kılavuz alıp-verme prosedürleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Halat işlemleri ve gemici bağları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi ölçüleri ve yükleme hatları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Gemide bakım – tutum.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "D.J. House, Seamanship Techniques, Butterworth-Heinneman, 3th Edition, London, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=103"
  },
  "DUI 112E": {
   "code": "DUI 112E",
   "name": "Vardiya Standartları I",
+  "nameEn": "Watchkeeping I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -160,15 +377,87 @@
    "Hafta 13 · Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 32-38.",
    "Hafta 14 · Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Ekler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Vardiya tutan personelin görev ve sorumlulukları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) tarihsel gelişimi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 1-3.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 1-3.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 4-6.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 7-8.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 9-10.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 11-14.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 15-17.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 18-19.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 20-31.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 20-31.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Kural 32-38.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Tüzüğü 1972, (düzeltilmiş şekliyle) Ekler.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "IMO, International Regulations For Preventing Collisions At Sea-1972, as amended, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=112"
  },
  "DUI 113E": {
   "code": "DUI 113E",
   "name": "Deniz Ulaştırma İşletme Mühendisliğine Giriş ve Etik",
+  "nameEn": "Int.toMarit.Trnsp.Mng.Eng.&Eth",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -201,15 +490,86 @@
    "Hafta 13 · Deniz ulaştırma işletme mühendisi etik ilkeleri, topluma karşı sorumluluk, doğaya ve çevreye karşı sorumluluk.",
    "Hafta 14 · Denizcilik örf ve adetleri hakkında uygulamalar (gemide)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz ulaştırma işletme mühendisinin görev, yetki ve sorumlulukları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Deniz ulaştırma işletme mühendisinin görev, yetki ve sorumlulukları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ulaştırma modellerinin tanıtımı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ulaştırma modellerinin türleri ve entegrasyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz ulaştırmasının gelişimi ve temel unsurları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Deniz ulaştırmasının gelişimi ve temel unsurları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Ara dönem tatili."
+   },
+   {
+    "week": 8,
+    "topic": "Denizde yük taşımacılığı ve taşıma biçimleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi işletmesinin temel kavramları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Etiğin anlamı ve tarihsel gelişim süreci, etik ile ahlak ilişkisi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Etik gerekçelendirme ve temellendirmeler, etiğin evrensel boyutu.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz ulaştırma işletme mühendisi etik ilkeleri, topluma karşı sorumluluk, doğaya ve çevreye karşı sorumluluk.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Deniz ulaştırma işletme mühendisi etik ilkeleri, topluma karşı sorumluluk, doğaya ve çevreye karşı sorumluluk.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Denizcilik örf ve adetleri hakkında uygulamalar (gemide).",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Myer Kutz, Handbook of Transportation Engineering: Systems and Operations, 2nd Ed., McGraw-Hill Professional, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=113",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=113"
  },
  "DUI 201": {
   "code": "DUI 201",
   "name": "Düzlem Seyir",
+  "nameEn": "Terrestrial Navigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -223,12 +583,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=201"
  },
  "DUI 201E": {
   "code": "DUI 201E",
   "name": "Düzlem Seyir",
+  "nameEn": "Terrestrial Navigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -242,12 +602,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=201"
  },
  "DUI 202E": {
   "code": "DUI 202E",
   "name": "Elektronik Seyir",
+  "nameEn": "Electronic Navigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -279,17 +639,89 @@
    "Hafta 13 · Köprüüstü elektronik seyir cihazları için IMO Performans Standartları.",
    "Hafta 14 · Köprüüstü elektronik seyir cihazları için IMO Performans Standartları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cayroskop, devinim, ağırlık kontrolü, salınım ve söndürme. Cayro pusulanın çalışma prensibi ve ana parçaları (Sperry ve Anschütz cayroların incelenmesi).",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Cayro pusula hataları, aktarma sistemi ve ripiterler. Cayro pusula alarmları, Cayro pusulanın bakımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Dümen Kontrol sistemleri ve auto pilot.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Su altı ses fiziği, sesin sudaki yayılımı. Derinlik ölçümü, İskandil (Echo Sounder) ve çalışma prensibi. Yanlış ekolar, alet ve ölçek hataları. İskandilin bakımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Hız ölçümü, parakete ve çalışma prensibi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Elektromagnetik dalgalar, Elektromagnetik parakete tipleri, pervaneli ve basınçlı paraketeler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Doppler ve aküstik paraketeler, Doppler çalışma prensibi, parakete kontrolleri ve hataları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "GPS alıcıları, DGPS sistemi, Küresel Mevki Sistemi (GPS); uydu, yer ve gemi bölümleri, çalışma prensibi, diğer uydu seyir sistemleri; GNSS, GLONASS, GALILEO.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Radarın genel yapısı ve çalışma prensibi, Radar Plotlaması ve uygulamaları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Otomatik Plotlama Cihazı (ARPA) yapısı, işleyişi ve fonksiyonları. ARPA sembol ve kontrolleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Elektronik haritalar, elektronik seyir haritalarının özellikleri. ECDIS yapısı ve işletim fonksiyonları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "ECDIS veri tabanı. ECDIS ile Radar-ARPA’nın birlikte kullanımı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Köprüüstü elektronik seyir cihazları için IMO Performans Standartları.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Köprüüstü elektronik seyir cihazları için IMO Performans Standartları.",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "L. Tetley and D. Calcutt, Electronic Navigation Systems, Butterworth-Heinemann, Oxford, 3rd Ed., 2001.",
    "Belirdi, N., Gemi Elektroniği, 2003.",
    "IMO, Survey of Navigational Aids and Equipment, Model Course 3.08, 2004."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=202"
  },
  "DUI 206": {
   "code": "DUI 206",
   "name": "Astronomi",
+  "nameEn": "Astronomy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -303,12 +735,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=206"
  },
  "DUI 208E": {
   "code": "DUI 208E",
   "name": "Yük/Gemiadamı Güvenliği",
+  "nameEn": "Cargo&Crew Safety",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -341,18 +773,90 @@
    "Hafta 13 · Yükü teslim alma, sayma (puantaj) ve teslim etme prosedürleri.",
    "Hafta 14 · Yükün taşınması süresince gözetimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yük çeşitleri;; güverte yükü, konteynır yükü, dökme yük, dökme tahıl yükü, Tehlikeli, riskli ve zarar verici yükler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yük bölümleri ve yük donanımları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Vinçler, bumbalar, kreynler, ambar kapakları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yükleme ve boşaltmaya hazırlık ve nezaret. Yük mahallerinin yüke hazırlanması, yüklerin istif ve bağlanması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yüklerin geminin denize elverişliliğine ve dengesine etkisi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yüklerin emniyetli elleçlenmesi, istifi ve korunması; etkili iletişim.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yükleme ve boşaltma operasyonları, hasar ve zararlar, korozyon.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yük ve yük mahallerinin denetimleri, Genişletilmiş (Geliştirilmiş) Sörvey Programı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yük elleçleme donanımı, hazırlanması, bakım – tutumu ve emniyet.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Tanker boru ve pompa sistemleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Kapalı bölümler;; giriş ve prosedürleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Farklı gemi türleri için yük hesapları, yük planları, draft sörvey ve stres hesapları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Yükü teslim alma, sayma (puantaj) ve teslim etme prosedürleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Yükün taşınması süresince gözetimi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "R. E. Thomas, Thomas’ Stowage, Brown, Son and Ferguson, 6th Ed., 2012.",
    "AKIN, T., Yük-İstif, İstanbul, 2000.",
    "MEURN, ROBERT J., Marine Cargo Operations, Cornell Maritime Press, Marylan, 2004.",
    "IMO Model Course 1.01, Tanker Familirization, London, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=208",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=208"
  },
  "DUI 211E": {
   "code": "DUI 211E",
   "name": "Gemi İnşaatı ve Stabilite",
+  "nameEn": "Ship Construction and Stability",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -366,12 +870,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=211"
  },
  "DUI 212E": {
   "code": "DUI 212E",
   "name": "Yük İşlem. ve Elleçlenmesi I",
+  "nameEn": "Cargo Handling and Stowage I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -385,12 +889,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=212"
  },
  "DUI 213E": {
   "code": "DUI 213E",
   "name": "Gemi İnşaatı ve Stabilite",
+  "nameEn": "Ship Constrct.and Stability",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -424,16 +928,88 @@
    "Hafta 13 · Serbest yüzey etkisi, Gizli GM küçülmesi, Boyuna Mukavemet, Yük dağılımı, Kesme Kuvvet ve Eğilme Moment hesabı.",
    "Hafta 14 · SIMPSON metoduyla Alan, Hacim, Alan Merkezi, Hacim Merkezi Hesabı."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemilerin genel olarak tanıtılması ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi Geometrisi, Form katsayıları, Endaze.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Tonaj, Fribord, Klas Kuruluşları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi üzerine gelen yükler, Gemi Ana Mukavemet elemanları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi Yapısı: Dip, Borda, Güverte, Borda, Üst Bina, Makine Dairesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Sevk sistemleri, Pervane ve Dümenler / VİZE.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "TERSANE GEZİSİ.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Gemi Stabilitesi, Yüzme Koşulu, Denge Koşulu.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Başlangıç Stabilitesi, Statik Stabilite Eğrisi, IMO kriterleri, Dinamik Stabilite, Çapraz Eğriler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Hidrostatik Eğriler, Stabilite Bukleti, Yaralı Stabilite, Havuzlama, Karaya Oturma.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi Ağırlık hareketleri ve Ağırlık Merkezi hesabı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Enine Denge; Meyil hesabı, Boyuna denge; Trim hesabı / VİZE.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Serbest yüzey etkisi, Gizli GM küçülmesi, Boyuna Mukavemet, Yük dağılımı, Kesme Kuvvet ve Eğilme Moment hesabı.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "SIMPSON metoduyla Alan, Hacim, Alan Merkezi, Hacim Merkezi Hesabı.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Barrass, Bryan and D.R. Derrett, Ship Stability for Masters and Mates, Nautical Mind, 2012.",
    "S.Can & Ü.Ülgen, Gemi İnşaatı I, İTÜ Denizcilik Fakültesi,2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=213",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=213"
  },
  "DUI 214": {
   "code": "DUI 214",
   "name": "Astronomi",
+  "nameEn": "Astronomy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -466,17 +1042,89 @@
    "Hafta 13 · Yıl içi sınavı",
    "Hafta 14 · Güneşin doğuş ve batış anında pusula hatası tespiti"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güneş sistemi ve gök koordinat sistemi. Dünyanın hareketleri ve sonuçları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zaman kavramı ve zamanın LMT olarak hesaplanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Zamanın GMT ve ZT olarak hesaplanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "LMT-ZT-GMT arasında saat hesaplamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ortalama güneş günü ve görünen güneş günü hesapları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Notik almanak ve kullanımı. Öğle vakti ve gece yarısı zamanının tespiti",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Güneşin doğuş ve batış olayları, zamanlarının hesaplanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Alacakaranlık olayları ve zamanlarının hesaplanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Gemide saat kavramı ve uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Gök cisimlerinin dünyaya göre konumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Gök cisimlerinin dünyaya göre konumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Güneşin doğuş ve batış anında pusula hatası tespiti",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Tom Cunliffe, Celestial Navigation, Wiley Nautical, Fernhurst Books Ltd., UK, 2010.",
    "Baytura, S., Astronomik Seyir Cilt I, 2000.",
    "Baytura, S., Astronomik Seyir Cilt II, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=214"
  },
  "DUI 214E": {
   "code": "DUI 214E",
   "name": "Astronomi",
+  "nameEn": "Astronomy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -509,17 +1157,89 @@
    "Hafta 13 · Yıl içi sınavı",
    "Hafta 14 · Güneşin doğuş ve batış anında pusula hatası tespiti"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güneş sistemi ve gök koordinat sistemi. Dünyanın hareketleri ve sonuçları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zaman kavramı ve zamanın LMT olarak hesaplanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Zamanın GMT ve ZT olarak hesaplanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "LMT-ZT-GMT arasında saat hesaplamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ortalama güneş günü ve görünen güneş günü hesapları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Notik almanak ve kullanımı. Öğle vakti ve gece yarısı zamanının tespiti",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Güneşin doğuş ve batış olayları, zamanlarının hesaplanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Alacakaranlık olayları ve zamanlarının hesaplanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Gemide saat kavramı ve uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Gök cisimlerinin dünyaya göre konumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Gök cisimlerinin dünyaya göre konumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Güneşin doğuş ve batış anında pusula hatası tespiti",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Tom Cunliffe, Celestial Navigation, Wiley Nautical, Fernhurst Books Ltd., UK, 2010.",
    "Baytura, S., Astronomik Seyir Cilt I, 2000.",
    "Baytura, S., Astronomik Seyir Cilt II, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=214"
  },
  "DUI 215E": {
   "code": "DUI 215E",
   "name": "Düzlem Seyir",
+  "nameEn": "Terrestrial Navigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -553,15 +1273,86 @@
    "Hafta 13 · Akıntı seyri ve gel-git hesapları.",
    "Hafta 14 · Seyir jurnali tutulması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kıyı seyri ve rota çizimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kıyı seyri ve rota çizimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Seyir neşriyatının kullanılması ve düzeltilmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Seyir ve sefer planlaması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Seyir ve sefer planlaması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Farklı deniz alanlarında (sığ sular, dar kanallar, vb.) seyir ve planlaması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Farklı deniz alanlarında (kısıtlı sular, trafik ayrım düzeni, vb.) seyir ve planlaması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Vize."
+   },
+   {
+    "week": 9,
+    "topic": "Farklı deniz alanlarında (buzlu sularda seyir, vb.) seyir ve planlaması. Arama ve kurtarma seyri. Can filikası ile seyir.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Seyir hesaplamaları.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Seyir hesaplamaları.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Büyük daire ve bileşik seyir.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Akıntı seyri ve gel-git hesapları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Seyir jurnali tutulması.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Coolen ,E. 2010. Nicholls's Concise Guide Volume 1: Navigation, 10th Ed., Brown, Son & Ferguson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=215"
  },
  "DUI 231E": {
   "code": "DUI 231E",
   "name": "Denizde Haberleşme",
+  "nameEn": "Marine Communication",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -595,16 +1386,88 @@
    "Hafta 13 · Gemi telsiz istasyonu. Telsiz jurnali, referans kitaplar ve listeler.",
    "Hafta 14 · Telsiz haberleşmesi ulusal mevzuatı."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz telsiz haberleşmesi temel kavramlar ve GMDSS’e giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektromanyetik dalga yayılım mekanizmaları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tehlike, ivedilik ve emniyet haberleşmeleri.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Sayısal seçmeli çağrı sistemi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Telsiz-telefon haberleşmesi ve SMCP.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Telsiz-teleks haberleşmesi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Deniz emniyet bilgi sistemi (MSI) ve NAVTEX.",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Inmarsat uydu haberleşme sistemi ve Safety-NET.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Cospas-Sarsat uydu sistemi ve EPIRB.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "SART, GMDSS ve taşınabilir el telsizi.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Arama&kurtarma (IAMSAR) haberleşmesi ve gemi raporlama sistemleri.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Görsel işaretleşme ve uluslararası işaret kodları.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi telsiz istasyonu. Telsiz jurnali, referans kitaplar ve listeler.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Telsiz haberleşmesi ulusal mevzuatı.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Lees,G., Williams, W.G., Handbook for Marine Radio Communication, 5th Ed., Informa, 2009.",
    "Acarer, T., Poyraz, Ö., Ustaoğlu, S., Güverte Zabitleri için GMDSS El Kitabı, 2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=231",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=231"
  },
  "DUI 231EL": {
   "code": "DUI 231EL",
   "name": "Denizde Haberleşme",
+  "nameEn": "Marine Communication",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -638,16 +1501,88 @@
    "Hafta 13 · Gemi telsiz istasyonu. Telsiz jurnali, referans kitaplar ve listeler.",
    "Hafta 14 · Telsiz haberleşmesi ulusal mevzuatı."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz telsiz haberleşmesi temel kavramlar ve GMDSS’e giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektromanyetik dalga yayılım mekanizmaları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tehlike, ivedilik ve emniyet haberleşmeleri.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Sayısal seçmeli çağrı sistemi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Telsiz-telefon haberleşmesi ve SMCP.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Telsiz-teleks haberleşmesi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Deniz emniyet bilgi sistemi (MSI) ve NAVTEX.",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Inmarsat uydu haberleşme sistemi ve Safety-NET.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Cospas-Sarsat uydu sistemi ve EPIRB.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "SART, GMDSS ve taşınabilir el telsizi.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Arama&kurtarma (IAMSAR) haberleşmesi ve gemi raporlama sistemleri.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Görsel işaretleşme ve uluslararası işaret kodları.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi telsiz istasyonu. Telsiz jurnali, referans kitaplar ve listeler.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Telsiz haberleşmesi ulusal mevzuatı.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Lees,G., Williams, W.G., Handbook for Marine Radio Communication, 5th Ed., Informa, 2009.",
    "Acarer, T., Poyraz, Ö., Ustaoğlu, S., Güverte Zabitleri için GMDSS El Kitabı, 2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=231",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=231"
  },
  "DUI 232": {
   "code": "DUI 232",
   "name": "Gemi Elektroniği",
+  "nameEn": "Marine Electronics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -679,15 +1614,87 @@
    "Hafta 13 · Lab: Diyot devreleri; Doğrultucu, kırpıcı, ölçümler, hata bulma.",
    "Hafta 14 · Lab: Transistör devreleri; Anahtarlama, yükseltici, ölçümler, hata bulma."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Emniyet gereksinimleri, temel elektriksel kavramlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Devre teorisi, Kirchoff yasaları, Süperpozisyon yöntemi, Thevenin yöntemi, Norton yöntemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yarı iletkenler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Diyotlar, diyot çeşitleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Diyot devreleri; doğrultucu devreler, kırpıcı devreler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Diyot devreleri; kenetleyici devreleri, diyotlarla dijital kapılar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Transistörler; BJT ve FET transistörler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "BJT transistör konfigürasyonları, BJT karakteristikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Transistörlü yükselteç ve anahtarlama devreleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Güç elektroniği.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Güç elektroniği.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Lab: Ölçüm cihazları ve kullanımı, devre elemanlarının testi, devre okuma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Lab: Diyot devreleri; Doğrultucu, kırpıcı, ölçümler, hata bulma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Lab: Transistör devreleri; Anahtarlama, yükseltici, ölçümler, hata bulma.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Hüseyin Demirel, Elektronik-I, Birsen Yayınevi, 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=232"
  },
  "DUI 232E": {
   "code": "DUI 232E",
   "name": "Gemi Elektroniği",
+  "nameEn": "Marine Electronics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -719,15 +1726,87 @@
    "Hafta 13 · Lab: Diyot devreleri; Doğrultucu, kırpıcı, ölçümler, hata bulma.",
    "Hafta 14 · Lab: Transistör devreleri; Anahtarlama, yükseltici, ölçümler, hata bulma."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Emniyet gereksinimleri, temel elektriksel kavramlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Devre teorisi, Kirchoff yasaları, Süperpozisyon yöntemi, Thevenin yöntemi, Norton yöntemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yarı iletkenler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Diyotlar, diyot çeşitleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Diyot devreleri; doğrultucu devreler, kırpıcı devreler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Diyot devreleri; kenetleyici devreleri, diyotlarla dijital kapılar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Transistörler; BJT ve FET transistörler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "BJT transistör konfigürasyonları, BJT karakteristikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Transistörlü yükselteç ve anahtarlama devreleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Güç elektroniği.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Güç elektroniği.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Lab: Ölçüm cihazları ve kullanımı, devre elemanlarının testi, devre okuma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Lab: Diyot devreleri; Doğrultucu, kırpıcı, ölçümler, hata bulma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Lab: Transistör devreleri; Anahtarlama, yükseltici, ölçümler, hata bulma.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Hüseyin Demirel, Elektronik-I, Birsen Yayınevi, 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=232"
  },
  "DUI 241": {
   "code": "DUI 241",
   "name": "Deniz Eğitimi I",
+  "nameEn": "Onboard Training I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -741,12 +1820,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=241",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=241"
  },
  "DUI 241E": {
   "code": "DUI 241E",
   "name": "Deniz Eğitimi I",
+  "nameEn": "Onboard Training I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -760,12 +1839,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=241",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=241"
  },
  "DUI 251": {
   "code": "DUI 251",
   "name": "Meteoroloji",
+  "nameEn": "Meteorology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -800,15 +1879,87 @@
    "Hafta 13 · Hava tahmini, gözlem, raporlama yöntemleri ve kayıt sistemleri.",
    "Hafta 14 · Harita analizi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Meteorolojiye giriş, dünyanın hareketleri ve atmosfer.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Isı ve sıcaklık.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Su buharı yoğunlaşma ve nem.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Görüş uzaklığı, sis ve bulutlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yağış ve meteorlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hava basıncı ve hava yoğunluğu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Meteorolojik aletler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Atmosferin genel sirkülasyonu.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Rüzgarlar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Hava kütleleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Cepheler, Siklon ve antisiklonlar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi snoptik kodları, semboller, istasyon modeli.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Hava tahmini, gözlem, raporlama yöntemleri ve kayıt sistemleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Harita analizi.",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "Öney, S. ve Yılmaz. A., Denizcilik Meteorolojisi, Görsel Sanatlar Matbaacılık, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=251",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=251"
  },
  "DUI 251E": {
   "code": "DUI 251E",
   "name": "Meteoroloji",
+  "nameEn": "Meteorology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -843,15 +1994,87 @@
    "Hafta 13 · Hava tahmini, gözlem, raporlama yöntemleri ve kayıt sistemleri.",
    "Hafta 14 · Harita analizi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Meteorolojiye giriş, dünyanın hareketleri ve atmosfer.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Isı ve sıcaklık.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Su buharı yoğunlaşma ve nem.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Görüş uzaklığı, sis ve bulutlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yağış ve meteorlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hava basıncı ve hava yoğunluğu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Meteorolojik aletler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Atmosferin genel sirkülasyonu.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Rüzgarlar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Hava kütleleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Cepheler, Siklon ve antisiklonlar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi snoptik kodları, semboller, istasyon modeli.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Hava tahmini, gözlem, raporlama yöntemleri ve kayıt sistemleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Harita analizi.",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "Öney, S. ve Yılmaz. A., Denizcilik Meteorolojisi, Görsel Sanatlar Matbaacılık, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=251",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=251"
  },
  "DUI 301E": {
   "code": "DUI 301E",
   "name": "E-Seyir Sistemleri",
+  "nameEn": "E-Navigation Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -865,12 +2088,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=301"
  },
  "DUI 302E": {
   "code": "DUI 302E",
   "name": "Deniz Eğitimi III",
+  "nameEn": "Onboard Training III",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -884,12 +2107,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=302"
  },
  "DUI 305E": {
   "code": "DUI 305E",
   "name": "Gemi Kullanma ve Manevra",
+  "nameEn": "Ship Hndl.and Manouvering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -921,15 +2144,87 @@
    "Hafta 13 · Yedekleme, idare edilemeyen gemiyi dalga çukurundan uzakta tutma, sürüklenmeyi azaltma.",
    "Hafta 14 · Denize düşen adamı kurtarma manevraları ve yöntemleri. Tehlikedeki gemi veya deniz uçağına yardım. Kötü hava koşullarında can kurtarma botu ve vasıtalarını denize indirmek için manevra önlemleri. Kazazedeleri can kurtarma botu ve can filikalarından gemiye alma yöntemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi kullanmada suda ve havada oluşan dirençler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yürütücü kuvvet, makine ve manevra sistemlerinin kullanılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dümen, dönme çemberleri ve durma mesafeleri. Sabit dümen açıları ile dönme teknikleri. Manevra ve makine özellikleri, değişik draft ve süratlerde aynı tip gemilerdeki devir dairesi ile durma mesafeleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi kumandasında rüzgar ve akıntının etkileri. Akıntı, rüzgâr ve kısıtlı suyun dümen üzerindeki etkileri göz önüne alınarak, nehirler ve yakınlarında gemi kullanma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Çökme, sığ su ve benzeri etkiler, sığ sularda yapılan manevralar.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Demirleme ve bağlama için uygun yöntemler. Demir yeri seçimi, tek veya çift demirle demirleme, zincir kaloma miktarı ve diğer faktörler. Demir tarama, takılan, karışmış demirlerin kurtarılması operasyonu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "VTS ve Trafik ayırım bölgelerinde seyir ve manevra, kılavuz alma-verme manevraları. Kılavuz yerine ve teknesine yaklaşma.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kısıtlı sularda gemi kullanma; kanal etkisi, gemi ve kanal etkileşimleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yanaşma ve ayrılma manevraları. Römorkör kullanma ve römorkörsüz manevra.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Akıntı, rüzgar, gel-gitin etkili olduğu çeşitli hava koşullarında; römorkör kullanarak veya römorkörsüz yanaşma/kalkma, gemi ile römorkörün karşılıklı etkileşimi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Hasarlı veya hasarsız kuru havuzlama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Kötü hava koşullarında gemi kullanma ve hız azaltımı. Buz alanlarında seyir ve güvertede biriken buzlanmalara karşı alınacak önlemler.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Yedekleme, idare edilemeyen gemiyi dalga çukurundan uzakta tutma, sürüklenmeyi azaltma.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Denize düşen adamı kurtarma manevraları ve yöntemleri. Tehlikedeki gemi veya deniz uçağına yardım. Kötü hava koşullarında can kurtarma botu ve vasıtalarını denize indirmek için manevra önlemleri. Kazazedeleri can kurtarma botu ve can filikalarından gemiye alma yöntemleri.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Anıker, A.T., Kaptanın Manevra Kılavuzu, Kaptan Yayıncılık, Denizler Kitabevi, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=305"
  },
  "DUI 311": {
   "code": "DUI 311",
   "name": "Göksel Seyir",
+  "nameEn": "Celestial Navigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -963,17 +2258,89 @@
    "Hafta 13 · Vize sınavı.",
    "Hafta 14 · Büyük daire seyri. NP 401 kullanarak büyük daire hesapları yapılması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gök koordinat sistemi. Gök cisimlerinin konumlarının dünyaya göre ve gözlemciye göre çözümlenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Trigonometrik üçgen. Göksel seyir trigonometrik üçgeni ve bileşenleri. Üçgenin kenarları, köşe noktaları ve açıları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "NP 401 ile göksel seyir üçgenin çözümlenmesi. Örnek soru çözümleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sextantın tanıtılması. Çalışma prensibi, kısımları, sextant ile ölçülen açılar. Hataları ve düzeltmeleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "NP 401 ile elde edilen sonuçlar ve sextant ile ölçülen değerlerin kıyaslanması. Plotting sheet üzerinde bu değerlerin uygulanması.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Plotting sheet uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Vize sınavı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İki gök cismi ile mevki bulunması. Örnek uygulama.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İki gök cismi ile mevki bulunması. Örnek uygulama.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yıldız bulucunun tanıtılması. Örnek ile kullanımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Ay ve gezegenlerden yapılan hesaplamalar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Gök cisimlerinin meridyen geçiş anında mevkilerinin bulunması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Vize sınavı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Büyük daire seyri. NP 401 kullanarak büyük daire hesapları yapılması.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Tom Cunliffe, Celestial Navigation, Wiley Nautical, Fernhurst Books Ltd., UK, 2010.",
    "Baytura, S., Astronomik Seyir Cilt I, 2000.",
    "Baytura, S., Astronomik Seyir Cilt II, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=311"
  },
  "DUI 311E": {
   "code": "DUI 311E",
   "name": "Göksel Seyir",
+  "nameEn": "Celestial Navigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1007,17 +2374,89 @@
    "Hafta 13 · Vize sınavı.",
    "Hafta 14 · Büyük daire seyri. NP 401 kullanarak büyük daire hesapları yapılması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gök koordinat sistemi. Gök cisimlerinin konumlarının dünyaya göre ve gözlemciye göre çözümlenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Trigonometrik üçgen. Göksel seyir trigonometrik üçgeni ve bileşenleri. Üçgenin kenarları, köşe noktaları ve açıları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "NP 401 ile göksel seyir üçgenin çözümlenmesi. Örnek soru çözümleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sextantın tanıtılması. Çalışma prensibi, kısımları, sextant ile ölçülen açılar. Hataları ve düzeltmeleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "NP 401 ile elde edilen sonuçlar ve sextant ile ölçülen değerlerin kıyaslanması. Plotting sheet üzerinde bu değerlerin uygulanması.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Plotting sheet uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Vize sınavı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İki gök cismi ile mevki bulunması. Örnek uygulama.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İki gök cismi ile mevki bulunması. Örnek uygulama.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yıldız bulucunun tanıtılması. Örnek ile kullanımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Ay ve gezegenlerden yapılan hesaplamalar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Gök cisimlerinin meridyen geçiş anında mevkilerinin bulunması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Vize sınavı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Büyük daire seyri. NP 401 kullanarak büyük daire hesapları yapılması.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Tom Cunliffe, Celestial Navigation, Wiley Nautical, Fernhurst Books Ltd., UK, 2010.",
    "Baytura, S., Astronomik Seyir Cilt I, 2000.",
    "Baytura, S., Astronomik Seyir Cilt II, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=311"
  },
  "DUI 321": {
   "code": "DUI 321",
   "name": "Deniz Hukuku I",
+  "nameEn": "Maritime Law I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1049,15 +2488,87 @@
    "Hafta 13 · Denizde can ve mal koruma ile ilgili yasal düzenlemeler.",
    "Hafta 14 · Deniz Sosyal Güvenlik Hukuku. Deniz Sosyal Güvenlik Hukukunun kapsamı. ILO Sözleşmeleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hukukun tanımı. Hukukun temel kavramları. Hukukun dalları. Hukukun kaynakları. Hak, yükümlülük ve sorumluluk. Hak, yükümlülük ve sorumlulukların kaynakları ve ana esasları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası hukuk, temel kavramlar ve tanımlar, uygulama ve yaptırımlar. Deniz Hukuku’nun tanımı ve sınıflandırılması. Deniz Kamu Hukuku. Deniz Özel Hukuku. Deniz Kamu Hukuku ve dalları, Deniz Kamu Hukukuna giriş, Deniz Kamu Hukukunun konusu, Deniz Kamu Hukukunun kökeni ve tarihsel gelişimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Deniz kamu hukukunun uluslararası ve ulusal kaynakları. Deniz Kamu Hukukunun kişileri.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz yetki alanları. İç sular, karasuları, takımada suları, bitişik bölge, münhasır ekonomik bölge, kıta sahanlığı.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ulusal yetkiye tabi deniz alanları, alanların belirlenmesi ve sınırlandırılması.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Uluslararası seyrüsefere açık boğazlar. Türk Boğazları, Montrö Sözleşmesi, güncel gelişmeler.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Uluslararası seyrüsefere açık boğazlar. Türk Boğazları, Montrö Sözleşmesi, güncel gelişmeler.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilikle ilgili uluslararası örgütler.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslararası deniz hukuku uyuşmazlıkları, uluslararası mahkemeler, uyuşmazlık çözüm yöntemleri. Uluslararası denizcilik sözleşmelerinin hazırlanması ve yürürlüğe konulması.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Deniz haydutluğu, deniz ceza hukuku, denizde işlenen suçlar, yaptırımlar.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Deniz idare hukuku, deniz idare hukukuna aykırılıklar, idari yaptırımlar.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz çevre hukuku, deniz ve çevresinin kirliliği, idari yaptırımlar.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Denizde can ve mal koruma ile ilgili yasal düzenlemeler.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Deniz Sosyal Güvenlik Hukuku. Deniz Sosyal Güvenlik Hukukunun kapsamı. ILO Sözleşmeleri.",
+    "outcomes": "1-3-4"
+   }
+  ],
   "textbooks": [
    "Sezer, Deniz Hukuku I, İstanbul 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=321"
  },
  "DUI 321E": {
   "code": "DUI 321E",
   "name": "Deniz Hukuku I",
+  "nameEn": "Maritime Law I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1089,15 +2600,87 @@
    "Hafta 13 · Denizde can ve mal koruma ile ilgili yasal düzenlemeler.",
    "Hafta 14 · Deniz Sosyal Güvenlik Hukuku. Deniz Sosyal Güvenlik Hukukunun kapsamı. ILO Sözleşmeleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hukukun tanımı. Hukukun temel kavramları. Hukukun dalları. Hukukun kaynakları. Hak, yükümlülük ve sorumluluk. Hak, yükümlülük ve sorumlulukların kaynakları ve ana esasları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası hukuk, temel kavramlar ve tanımlar, uygulama ve yaptırımlar. Deniz Hukuku’nun tanımı ve sınıflandırılması. Deniz Kamu Hukuku. Deniz Özel Hukuku. Deniz Kamu Hukuku ve dalları, Deniz Kamu Hukukuna giriş, Deniz Kamu Hukukunun konusu, Deniz Kamu Hukukunun kökeni ve tarihsel gelişimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Deniz kamu hukukunun uluslararası ve ulusal kaynakları. Deniz Kamu Hukukunun kişileri.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz yetki alanları. İç sular, karasuları, takımada suları, bitişik bölge, münhasır ekonomik bölge, kıta sahanlığı.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ulusal yetkiye tabi deniz alanları, alanların belirlenmesi ve sınırlandırılması.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Uluslararası seyrüsefere açık boğazlar. Türk Boğazları, Montrö Sözleşmesi, güncel gelişmeler.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Uluslararası seyrüsefere açık boğazlar. Türk Boğazları, Montrö Sözleşmesi, güncel gelişmeler.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilikle ilgili uluslararası örgütler.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslararası deniz hukuku uyuşmazlıkları, uluslararası mahkemeler, uyuşmazlık çözüm yöntemleri. Uluslararası denizcilik sözleşmelerinin hazırlanması ve yürürlüğe konulması.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Deniz haydutluğu, deniz ceza hukuku, denizde işlenen suçlar, yaptırımlar.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Deniz idare hukuku, deniz idare hukukuna aykırılıklar, idari yaptırımlar.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz çevre hukuku, deniz ve çevresinin kirliliği, idari yaptırımlar.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Denizde can ve mal koruma ile ilgili yasal düzenlemeler.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Deniz Sosyal Güvenlik Hukuku. Deniz Sosyal Güvenlik Hukukunun kapsamı. ILO Sözleşmeleri.",
+    "outcomes": "1-3-4"
+   }
+  ],
   "textbooks": [
    "Sezer, Deniz Hukuku I, İstanbul 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=321"
  },
  "DUI 331": {
   "code": "DUI 331",
   "name": "Vardiya Standartları II",
+  "nameEn": "Watchkeeping II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1111,12 +2694,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=331",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=331"
  },
  "DUI 331E": {
   "code": "DUI 331E",
   "name": "Vardiya Standartları II",
+  "nameEn": "Watchkeeping II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1130,12 +2713,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=331",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=331"
  },
  "DUI 341E": {
   "code": "DUI 341E",
   "name": "Maritime Practical Studies",
+  "nameEn": "Maritime Practical Studies",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -1167,18 +2750,90 @@
    "Hafta 13 · ARPA radarın simülatörde kullanılması.",
    "Hafta 14 · ECDIS ile seyir planlaması yapılması ve simülatörde uygulanması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin içeriğinin, amacının ve ders işleniş yöntemlerinin tanıtımı, öğrenci gruplarının oluşturulması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Seyir planlaması ve gemi haberleşmesinin ve çatışmayı önleme kurallarının tekrarlanması. Köprüüstü simülatörünün tanıtımı ve uygulama.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hazırlanan seyir planının kontrolü, verilen seyir bölgesi ile ilgili simülatör uygulamasının çatışmayı önleme tüzüğü ve vardiya standartlarına göre yapılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Hazırlanan seyir planının kontrolü, verilen seyir bölgesi ile ilgili simülatör uygulamasının çatışmayı önleme tüzüğü ve vardiya standartlarına göre yapılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Manevranın tanımı, manevra alanı, manevra ile ilgili kullanılacak neşriyat. Geminin yapısı (su sathının altı ve üstü), gemi yapısının dış etkilere karşı gösterdiği tepkiler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Kontrol edilebilir manevra unsurları; dümen, makine, pervane, demir, ırgat, baş-kıç itici, römorkör ve diğerleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yarı kontrol edilebilir manevra unsurları; Sığ su etkisi, bank etkisi, çökme ve diğerleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Kontrol edilemeyen manevra unsurlar; meteorolojik etmenler, akıntı, dar kanal, manevra alanında manevra yapan diğer gemiler ve diğer unsurlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Farklı durumlarda gemiye verilen kumandalara karşı geminin tepkisi. Dümen ve makine komutları. Dönüş çemberi, yol yapmayan gemiye atalet kazandırılması ve yol yapan geminin durdurulması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Simulator Uygulamaları (Liman ve demirleme manevraları).",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "ARPA radar, elektronik harita ve ECDIS’in tanıtılması ve özellikleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Köprüüstü seyir yardımcılarının kullanımı ve harita düzeltmeleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "ARPA radarın simülatörde kullanılması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "ECDIS ile seyir planlaması yapılması ve simülatörde uygulanması.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "A.J., Swift FNI, Bridge Team Management, The Nautical Institute 2004.",
    "Anıker, Alper Tunga, Kaptanın manevra kılavuzu, Denizler Kitabevi 2008.",
    "IMO, COLREG-1972: Convention on the International Regulations for Preventing Collisions at Sea, 2003.",
    "Buchan, Alastair, Passage planning practical companion, Wiley Nautical, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=341",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=341"
  },
  "DUI 351": {
   "code": "DUI 351",
   "name": "Deniz Eğitimi II",
+  "nameEn": "Onboard Training II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -1192,12 +2847,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=351"
  },
  "DUI 351E": {
   "code": "DUI 351E",
   "name": "Deniz Eğitimi II",
+  "nameEn": "Onboard Training II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -1211,12 +2866,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=351"
  },
  "DUI 361E": {
   "code": "DUI 361E",
   "name": "Teknik Deniz İşletmeciliği",
+  "nameEn": "Technical Ship Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1249,15 +2904,87 @@
    "Hafta 13 · Yedek parça ve malzeme ikmali.",
    "Hafta 14 · Yakıt alma."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi işletmeciliğindeki temel ve teknik kavramlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi işletmeciliğinde planlama.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Gemi işletmeciliğinde planlama.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bakım-tutum.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Tamir ve bakım.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi denetimleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Gemi sertifikasyonu.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Uygunluk denetimleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Bayrak devleti denetimleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Gemiyi havuzlama.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Sefer planı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Muhasebe.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yedek parça ve malzeme ikmali.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Yakıt alma.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Drewry, 2009: Ship Management, Drewry Publications, London."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=361",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=361"
  },
  "DUI 371E": {
   "code": "DUI 371E",
   "name": "Vardiya Standartları II",
+  "nameEn": "Watchkeeping II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1293,16 +3020,88 @@
    "Hafta 13 · Kör Kılavuzlama Teknikleri.",
    "Hafta 14 · Gemi Raporlama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Kuralları, Kural 1-3 ve yorumları, örnek çatışma kazası.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Kuralları, Kural 4-8 ve yorumları, örnek çatışma kazası.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Kuralları, Kural 9-13 ve yorumları, örnek çatışma kazası.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Kuralları, Kural 14-19 ve yorumları, örnek çatışma kazası.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Kuralları, Kural 20-35.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Uluslararası Denizde Çatışmayı Önleme Kuralları, Ekler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Vardiya Tutma Düzenlemeleri ve Usulleri.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Vardiya Tutma Düzenlemeleri ve Usulleri.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Vardiya standartları ile ilgili STCW Kuralları (düzeltilmiş şekliyle).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Vardiya standartları ile ilgili STCW Kuralları (düzeltilmiş şekliyle).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Vardiya standartları ile ilgili STCW Kuralları (düzeltilmiş şekliyle).",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Rotalama.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Kör Kılavuzlama Teknikleri.",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi Raporlama.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "IMO, International Regulations For Preventing Collisions At Sea, 1972 (as amended), 2013.",
    "IMO, STCW Code (as amended), 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=371",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=371"
  },
  "DUI 385": {
   "code": "DUI 385",
   "name": "Gemi Operas. Çevresel Yönetim",
+  "nameEn": "Environmental Management for Ship Operations",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1334,15 +3133,87 @@
    "Hafta 13 · Gemilerde Kirliliğe Neden Olan İllegal Operasyonlar.",
    "Hafta 14 · Gemi Balast Suyu Yönetimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz Çevresinin Ekolojik Yapısı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Deniz ve Çevre Kirliliği, Çeşitleri ve Gemi Kaynaklı Kirlilik.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Deniz Kirliliği Oluşturan Gemi Kazalarının İncelenmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz çevresinin korunması politikaları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ulusal ve Uluslararası alanlarda Çevre Politikası.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemilerden kaynaklanan deniz kirliliğinin önlenmesi konusundaki uluslararası sözleşmeler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "MARPOL 73/78 ve ekleri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Petrol ve Tehlikeli Maddelerle oluşan deniz kirliliğine müdahale sözleşmesi, OPRC 1990-HNS 2000.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Petrol kirliliği ve Yakıt Dağılım Simülasyonları (GNOME.).",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Limanlarda Gemi Atıklarının Bertaraf ve Transfer Yöntemleri, Gemi Atık Takip Sistemi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi Kaynaklı Deniz Kirliliği Sorumluluk ve Tazmin Sözleşmeleri, FUND 92, BUNKER2001, CLC 69/92, PAL 74, LLCM76.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi Kaynaklı Deniz Kirliliğini önleme konusundaki diğer sözleşmeler, Gemilerin Geri Dönüşümü 2009.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemilerde Kirliliğe Neden Olan İllegal Operasyonlar.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi Balast Suyu Yönetimi.",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=385",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=385"
  },
  "DUI 387E": {
   "code": "DUI 387E",
   "name": "Tug & Mooring Operations",
+  "nameEn": "Tug & Mooring Operations",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1375,15 +3246,87 @@
    "Hafta 13 · İstanbul boğazı aktif eskort uygulamasını simülatör ortamında gerçekleştirme.",
    "Hafta 14 · ASD römorkör ile limana gemi yanaştırma operasyonu simülatör uygulaması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Römorkör kavramı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Römorkör türleri ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Römorkör türlerinin birbirlerine göre avantaj-dezavantajları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Römorkör manevrası ve uygulama.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "ASD (Azimuth Stern Drive) Römorkör manevrası ve simülatör uygulaması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Aktif – Pasif eskort ve amaçları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Aktif – Pasif eskort simülatör uygulaması.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Halat bağlama operasyonları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Halat bağlama operasyonları ve simülatör uygulaması.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Römorkör kontrolü ve manevrası.",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Römorkör kontrolü ve manevrası simülatör uygulamaları.",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 12,
+    "topic": "İstanbul boğazı aktif eskort uygulamasını simülatör ortamında gerçekleştirme.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "İstanbul boğazı aktif eskort uygulamasını simülatör ortamında gerçekleştirme.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "ASD römorkör ile limana gemi yanaştırma operasyonu simülatör uygulaması.",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=387",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=387"
  },
  "DUI 392E": {
   "code": "DUI 392E",
   "name": "Long Term SeaTraining(6Months)",
+  "nameEn": "Long Term SeaTraining(6Months)",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -1417,15 +3360,87 @@
    "Hafta 13 · Sörvey ve denetimleri.",
    "Hafta 14 · Sörvey ve denetimleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi ve donanımları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Köprüüstü, güverte, güverte yardımcı makineleri ve tüm sistemler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Köprüüstü, güverte, güverte yardımcı makineleri ve tüm sistemler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Köprüüstü, güverte, güverte yardımcı makineleri ve tüm sistemler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Vardiya tutma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Vardiya tutma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Manevra.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Manevra.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Liman operasyonları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Liman operasyonları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi emniyet ve güvenlik yönetim sistemi ve dokümanlar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi emniyet ve güvenlik yönetim sistemi ve dokümanlar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sörvey ve denetimleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Sörvey ve denetimleri.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=392",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=392"
  },
  "DUI 393E": {
   "code": "DUI 393E",
   "name": "Long Term SeaTraining(6Months)",
+  "nameEn": "Long Term SeaTraining(6Months)",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -1459,15 +3474,87 @@
    "Hafta 13 · Sörvey ve denetimler",
    "Hafta 14 · Sörvey ve denetimler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi ve donanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Köprüüstü, güverte, güverte yardımcı makineleri ve tüm sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Köprüüstü, güverte, güverte yardımcı makineleri ve tüm sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Köprüüstü, güverte, güverte yardımcı makineleri ve tüm sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Vardiya tutma",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Vardiya tutma",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Manevra",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Manevra",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Liman operasyonları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Liman operasyonları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi emniyet ve güvenlik yönetim sistemi ve dokümanlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi emniyet ve güvenlik yönetim sistemi ve dokümanlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sörvey ve denetimler",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Sörvey ve denetimler",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=393",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=393"
  },
  "DUI 401E": {
   "code": "DUI 401E",
   "name": "Gemi Kullanma ve Manevra",
+  "nameEn": "Ship Handling and Manouevring",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1481,12 +3568,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=401"
  },
  "DUI 402": {
   "code": "DUI 402",
   "name": "Deniz Hukuku II",
+  "nameEn": "Maritime Law II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1518,16 +3605,88 @@
    "Hafta 13 · Gemi ve yük alacaklısı hakları. Deniz kirliliğinden doğan tazminata ilişkin uluslararası ve ulusal hukuk düzenlemeleri.",
    "Hafta 14 · Sigorta ve Sigorta Hukuku. Sigortanın tanımı, sigortanın hukuki ve ekonomik gereklilikleri. Sigorta çeşitleri. Deniz sigortaları, tekne ve makine sigortası, kulüp sigortası. Sigorta poliçesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz Özel Hukuku’na giriş, dalları, kaynakları, tarihsel gelişimi, özellikleri. Deniz Ticareti Hukukuna ilişkin uluslararası düzenlemeler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi, denize elverişlilik, bağlama limanı, sicili.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kaptan, tanımı, görevleri, yetkileri, sorumlulukları, hakları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Donatan, gemi işletme müteahhidi. Donatanın sorumluluğu. Donatanların sorumluluğuna ilişkin uluslararası düzenlemeler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz ticaret sözleşmeleri, denizde yolcu taşıma sözleşmeleri. Yolcu taşınması ile ilgili uluslararası düzenlemeler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Konişmentolar, navlun sözleşmeleri, çeşitleri, kırkambar ve çarter sözleşmeleri, çarter sözleşmelerinin çeşitleri. çarterparti özellikleri, çeşitleri, önemli klozlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Konişmentolar, navlun sözleşmeleri, çeşitleri, kırkambar ve çarter sözleşmeleri, çarter sözleşmelerinin çeşitleri. çarterparti özellikleri, çeşitleri, önemli klozlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Denizde eşya taşınması ile ilgili uluslararası düzenlemeler, Lahey, Visby, Hamburg Kuralları ve Roterdam Kuralları. Taşıyan, hakları ve sorumlulukları, sorumluluktan kurtuluş imkânları ve sorumluluğun sınırları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Deniz kazaları, çatma, çatmalara ilişkin uluslararası kurallar.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kurtarma, kurtarmaya ilişkin uluslararası düzenlemeler, LOF ve TOF standart formları ve diğerleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Müşterek avarya, York Anvers Kuralları.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz kazalarından sonra kaptan tarafından yapılacak işlemler, deniz raporu, tespitler, ihtarlar.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi ve yük alacaklısı hakları. Deniz kirliliğinden doğan tazminata ilişkin uluslararası ve ulusal hukuk düzenlemeleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Sigorta ve Sigorta Hukuku. Sigortanın tanımı, sigortanın hukuki ve ekonomik gereklilikleri. Sigorta çeşitleri. Deniz sigortaları, tekne ve makine sigortası, kulüp sigortası. Sigorta poliçesi.",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Kender, R., Ergon, Ç., Yazıcıoğlu, E., Deniz Ticareti Hukuku, İstanbul, 2014.",
    "Bozkurt, T., Deniz Ticareti Hukuku, Kara Taşıma Hukuku, İstanbul, 2016."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=402"
  },
  "DUI 402E": {
   "code": "DUI 402E",
   "name": "Deniz Hukuku II",
+  "nameEn": "Maritime Law II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1559,16 +3718,88 @@
    "Hafta 13 · Gemi ve yük alacaklısı hakları. Deniz kirliliğinden doğan tazminata ilişkin uluslararası ve ulusal hukuk düzenlemeleri.",
    "Hafta 14 · Sigorta ve Sigorta Hukuku. Sigortanın tanımı, sigortanın hukuki ve ekonomik gereklilikleri. Sigorta çeşitleri. Deniz sigortaları, tekne ve makine sigortası, kulüp sigortası. Sigorta poliçesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deniz Özel Hukuku’na giriş, dalları, kaynakları, tarihsel gelişimi, özellikleri. Deniz Ticareti Hukukuna ilişkin uluslararası düzenlemeler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi, denize elverişlilik, bağlama limanı, sicili.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kaptan, tanımı, görevleri, yetkileri, sorumlulukları, hakları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Donatan, gemi işletme müteahhidi. Donatanın sorumluluğu. Donatanların sorumluluğuna ilişkin uluslararası düzenlemeler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz ticaret sözleşmeleri, denizde yolcu taşıma sözleşmeleri. Yolcu taşınması ile ilgili uluslararası düzenlemeler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Konişmentolar, navlun sözleşmeleri, çeşitleri, kırkambar ve çarter sözleşmeleri, çarter sözleşmelerinin çeşitleri. çarterparti özellikleri, çeşitleri, önemli klozlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Konişmentolar, navlun sözleşmeleri, çeşitleri, kırkambar ve çarter sözleşmeleri, çarter sözleşmelerinin çeşitleri. çarterparti özellikleri, çeşitleri, önemli klozlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Denizde eşya taşınması ile ilgili uluslararası düzenlemeler, Lahey, Visby, Hamburg Kuralları ve Roterdam Kuralları. Taşıyan, hakları ve sorumlulukları, sorumluluktan kurtuluş imkânları ve sorumluluğun sınırları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Deniz kazaları, çatma, çatmalara ilişkin uluslararası kurallar.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kurtarma, kurtarmaya ilişkin uluslararası düzenlemeler, LOF ve TOF standart formları ve diğerleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Müşterek avarya, York Anvers Kuralları.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz kazalarından sonra kaptan tarafından yapılacak işlemler, deniz raporu, tespitler, ihtarlar.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi ve yük alacaklısı hakları. Deniz kirliliğinden doğan tazminata ilişkin uluslararası ve ulusal hukuk düzenlemeleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Sigorta ve Sigorta Hukuku. Sigortanın tanımı, sigortanın hukuki ve ekonomik gereklilikleri. Sigorta çeşitleri. Deniz sigortaları, tekne ve makine sigortası, kulüp sigortası. Sigorta poliçesi.",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Kender, R., Ergon, Ç., Yazıcıoğlu, E., Deniz Ticareti Hukuku, İstanbul, 2014.",
    "Bozkurt, T., Deniz Ticareti Hukuku, Kara Taşıma Hukuku, İstanbul, 2016."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=402"
  },
  "DUI 405": {
   "code": "DUI 405",
   "name": "Gemi Makinaları",
+  "nameEn": "Marine Engines",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1600,16 +3831,88 @@
    "Hafta 13 · Gemi manevra sistemleri, uzaktan (köprüüstü ve makine kontrol odası) kontrol.",
    "Hafta 14 · Gemi manevra sistemleri, lokal (acil durum) kontrol."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi makinelerine giriş ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dizel makineler (ana makineler, jeneratörler ve alternatörler).",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Buhar kazanları, gemi pervane ve şaft sistemleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Buhar ve gaz türbinleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Pompalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sintine separatörleri, yağlama yağı ve yakıt separatörleri .",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Hava kompresörleri, soğutma (buzluk) sistemleri ve iklimlendirme.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Tatlı su üretme cihazları (evaporatörler), pis su üniteleri, çöp yakma kazanları (insineratörler).",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi devreleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Dümen donanımları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Kreynler, ırgatlar, ambar kapakları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Yağlama yağı, yakıt ve su sarfiyatları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi manevra sistemleri, uzaktan (köprüüstü ve makine kontrol odası) kontrol.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi manevra sistemleri, lokal (acil durum) kontrol.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Kemal Demirel, İ. Deha Er, Gemi Yardımcı Makineleri I, Birsen Yayınevi, İstanbul, 2008.",
    "Kemal Demirel, İ. Deha Er, Gemi Yardımcı Makineleri II, Birsen Yayınevi, İstanbul, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=405",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=405"
  },
  "DUI 405E": {
   "code": "DUI 405E",
   "name": "Gemi Makinaları",
+  "nameEn": "Marine Engines",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1641,16 +3944,88 @@
    "Hafta 13 · Gemi manevra sistemleri, uzaktan (köprüüstü ve makine kontrol odası) kontrol.",
    "Hafta 14 · Gemi manevra sistemleri, lokal (acil durum) kontrol."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi makinelerine giriş ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dizel makineler (ana makineler, jeneratörler ve alternatörler).",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Buhar kazanları, gemi pervane ve şaft sistemleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Buhar ve gaz türbinleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Pompalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sintine separatörleri, yağlama yağı ve yakıt separatörleri .",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Hava kompresörleri, soğutma (buzluk) sistemleri ve iklimlendirme.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Tatlı su üretme cihazları (evaporatörler), pis su üniteleri, çöp yakma kazanları (insineratörler).",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi devreleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Dümen donanımları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Kreynler, ırgatlar, ambar kapakları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Yağlama yağı, yakıt ve su sarfiyatları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi manevra sistemleri, uzaktan (köprüüstü ve makine kontrol odası) kontrol.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi manevra sistemleri, lokal (acil durum) kontrol.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Kemal Demirel, İ. Deha Er, Gemi Yardımcı Makineleri I, Birsen Yayınevi, İstanbul, 2008.",
    "Kemal Demirel, İ. Deha Er, Gemi Yardımcı Makineleri II, Birsen Yayınevi, İstanbul, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=405",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=405"
  },
  "DUI 407E": {
   "code": "DUI 407E",
   "name": "Yük İşlemleri ve Elleçlenmesi",
+  "nameEn": "Cargo Handl and Stowage",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1683,15 +4058,87 @@
    "Hafta 13 · Kimyasal Tankerlerde Yükleme ve Yük Hesabı.",
    "Hafta 14 · IBC/BCH ve MARPOL Annex II’nin İncelenmesi ve Terminal ve Gemi İletişimin İncelenmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kuru Dökme Yük Gemileri- Ambar Yapısı ve Elemanları-Ambar Kapak Tipleri- Ballast Hold ve Sintine Kuyuları Bakım tutum, Ambarların yüke nasıl hazırlandığı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kuru Dökme Yük Gemilerinde Yükleme ve Tahliyede kullanılan Elleçleme Ekipmanları ve Balast Operasyonun Yükleme ve tahliyedeki Önemi.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Dökme Yük Gemilerinde Tentative Planın oluşturulması, Steplerin Oluşturulması ve Shipper ile, Liman ile Gemi arasındaki iletişim ve hazırlanan evraklar.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Dökme Yük gemilerinde yükleme ve tahliye esnasında karşılaşılan muhtelif problemler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Tehlikeli Yüklerin Dökme Yük Gemilerinde Taşınması, IMDG-IMSBC-MBH.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yük Hesaplamaları, Kesme Kuvveti- Eğilme Momentinin Gemi Mukavemetine Etkisi.Draft Surveyin Anlatılması.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tahıl Hesaplamaları ve Draft Surveyin Uygulanması.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Container Yükleme Tahliye Operasyonları ve Limanlarda Kullanılan Elleçleme Ekipmanları, CSS Code’un incelenmesi ve Containerlarda taşınan tehlikeli yüklerin istifinde dikkat edilecek faktörler, Container Operasyonlarında karşılaşılacak muhtelif problemler.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 9,
+    "topic": "RoRo Gemiciliği, Lashing Operasyonun Önemi, Ro-Ro’da kullanılan farklı sistemlerin incelenmesi, anti heeling system, flume system, katların havalandırılmasının önemi, RoRo ile ilgili Code of Practice’in incelenmesi, Case Study UND Adriyatik Gemisi ve Estonia gemi kazasının incelenmesi. Yükleme operasyonunun anlatılması.",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "ISGOTT, Tankların Yüke Hazırlanması, tank temizliği ve tahliye sonrası işlemler. Emniyet prosedürleri.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ham Petrol Tanker Yükleme ve Tahliye Operasyonları, Yükleme Operasyonlarında kullanılan tank monitoring systemlerin incelenmesi.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Kimyasal Tankerlerde Yükleme için yapılan hazırlıklar, Uygulanan Emniyet Prosedürleri ve Testler, Tank Temizliği.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Kimyasal Tankerlerde Yükleme ve Yük Hesabı.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "IBC/BCH ve MARPOL Annex II’nin İncelenmesi ve Terminal ve Gemi İletişimin İncelenmesi.",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=407",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=407"
  },
  "DUI 411": {
   "code": "DUI 411",
   "name": "Yük İşlemleri ve Elleçlenmesi II",
+  "nameEn": "Cargo Handling Stowage II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1705,12 +4152,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=411"
  },
  "DUI 411E": {
   "code": "DUI 411E",
   "name": "Yük İşlemleri ve Elleçlenmesi II",
+  "nameEn": "Cargo Handling Stowage II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1724,12 +4171,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=411"
  },
  "DUI 431": {
   "code": "DUI 431",
   "name": "Gemi Makinaları",
+  "nameEn": "Marine Engines",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1743,12 +4190,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=431",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=431"
  },
  "DUI 431E": {
   "code": "DUI 431E",
   "name": "Gemi Makinaları",
+  "nameEn": "Marine Engines",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1762,12 +4209,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=431",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=431"
  },
  "DUI 432": {
   "code": "DUI 432",
   "name": "Gemi Yönetimi ve Liderlik",
+  "nameEn": "Ship Management and Leadership",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1781,12 +4228,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=432"
  },
  "DUI 432E": {
   "code": "DUI 432E",
   "name": "Gemi Yönetimi ve Liderlik",
+  "nameEn": "Ship Management and Leadership",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1800,12 +4247,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=432"
  },
  "DUI 442": {
   "code": "DUI 442",
   "name": "Meteoroloji ve Oşinografi",
+  "nameEn": "Meteorology and Oceanography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1819,12 +4266,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=442",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=442"
  },
  "DUI 442E": {
   "code": "DUI 442E",
   "name": "Meteoroloji ve Oşinografi",
+  "nameEn": "Meteorology and Oceanography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1838,12 +4285,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=442",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=442"
  },
  "DUI 451E": {
   "code": "DUI 451E",
   "name": "Yük Elleçlenmesi Simulatorü",
+  "nameEn": "Cargo Handling Simulator",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -1875,6 +4322,78 @@
    "Hafta 13 · Kimyasal Tankerde tank yıkaması.",
    "Hafta 14 · LPG/LNG operasyonları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tankerlerde kullanılan yükleme – boşaltma donanımları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tankerlerde yük hesaplamaları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tanker operasyonları – stabilite ilişkisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ham Petrol yükleme ve balast operasyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Ham petrol tankerinde inert gaz operasyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ham petrol tankerinde tahliye ve balast operasyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Ham Petrolle Yıkama (COW) operasyonu, TOT.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Ham Petrol Tankerinde tank yıkama ve ODME operasyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Kimyasal tanker yükleme hazırlıkları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Kimyasal tanker yükleme ve balast operasyonu.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Kimyasal tanker tahliye ve balast operasyonu.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Nitrojen Jeneratörü, SIRE.",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Kimyasal Tankerde tank yıkaması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "LPG/LNG operasyonları.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "IMO Model Course 1.02, Specialized Trainings for Oil Tankers, London, 2006.",
    "IMO Model Course 1.04, Specialized Trainings for Chemical Tankers, London, 2006.",
@@ -1884,12 +4403,12 @@
    "IMO Model Course 1.37, Chemical Tanker Cargo and Ballast Handling Simulator, London, 2007.",
    "IMO Model Course 2.06, Oil Tanker Cargo and Ballast Handling Simulator, International Maritime Organization, London, 2002."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=451",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=451"
  },
  "DUI 461E": {
   "code": "DUI 461E",
   "name": "Gemi Sörvey Yöntemleri",
+  "nameEn": "Ship Surveying Procedures",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1922,15 +4441,87 @@
    "Hafta 13 · Yağ ve çöp kayıt defteri kayıtlarının tutulması.",
    "Hafta 14 · Yağ ve çöp kayıt defteri kayıtlarının tutulması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Klas kuruluşları; gemilerin klaslanması, klas değiştirme, klastan düşme.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemilerde bulundurulması gereken sertifikalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Gemilerde bulundurulması gereken sertifikalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yıllık sörveyler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ara sörveyler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Özel sörveyler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Özel sörveyler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Sörvey hazırlıkları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Bayrak devleti ve liman devleti tarafından yapılan kontroller.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Bayrak devleti ve liman devleti tarafından yapılan kontroller.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Bayrak devleti ve liman devleti tarafından yapılan kontroller.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Tespit edilen uygunsuzlukların giderilmesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Yağ ve çöp kayıt defteri kayıtlarının tutulması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Yağ ve çöp kayıt defteri kayıtlarının tutulması.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Ders notları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=461",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=461"
  },
  "DUI 472": {
   "code": "DUI 472",
   "name": "Oşinografi",
+  "nameEn": "Oceanography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1963,15 +4554,87 @@
    "Hafta 13 · Gemide buz birikimi.",
    "Hafta 14 · Rotalama haritaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sinoptik harita.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hava sistemleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hava tahmini.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tropikal siklonlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Dalgalar, rüzgar dalgaları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Gel-git ve dalga etkileri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Okyanuslarda ve denizlerdeki akıntı sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Okyanuslarda ve denizlerdeki akıntı sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Okyanuslarda ve denizlerdeki akıntı sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Deniz buzları, buz dağları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yüzen buzların başlıca tipleri, kaynakları ve hareketleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz buzları ve buz dağlarının deniz ulaşımına etkileri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemide buz birikimi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Rotalama haritaları.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Öney, S. ve Yılmaz. A., Denizcilik Meteorolojisi, Görsel Sanatlar Matbaacılık, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=472",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=472"
  },
  "DUI 472E": {
   "code": "DUI 472E",
   "name": "Oşinografi",
+  "nameEn": "Oceanography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2004,15 +4667,87 @@
    "Hafta 13 · Gemide buz birikimi.",
    "Hafta 14 · Rotalama haritaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sinoptik harita.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hava sistemleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hava tahmini.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tropikal siklonlar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Dalgalar, rüzgar dalgaları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Gel-git ve dalga etkileri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Okyanuslarda ve denizlerdeki akıntı sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Okyanuslarda ve denizlerdeki akıntı sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Okyanuslarda ve denizlerdeki akıntı sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Deniz buzları, buz dağları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yüzen buzların başlıca tipleri, kaynakları ve hareketleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Deniz buzları ve buz dağlarının deniz ulaşımına etkileri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemide buz birikimi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Rotalama haritaları.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Öney, S. ve Yılmaz. A., Denizcilik Meteorolojisi, Görsel Sanatlar Matbaacılık, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=472",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=472"
  },
  "DUI 474": {
   "code": "DUI 474",
   "name": "Köprü Üstü Kaynak&Takım Yön.",
+  "nameEn": "Bridge Team and Resource Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2047,16 +4782,87 @@
    "Hafta 13 · Riskin tanımlanması, sınıflandırılması ve riskin değerlendirilmesi.",
    "Hafta 14 · Etkin karar vermenin unsurları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Köprüüstü Kaynak Yönetimi, tanımı, kaynaklar arası ilişkiler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "SHELL model kullanarak kaynak yönetiminin incelenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Köprüüstü Takım Yönetimi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Köprüüstü becerileri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Durum farkındalığı ve görev ve sorumluluklar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Seyir planlamasında bilgi paylaşımı ve etkili haberleşmenin unsurları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Ara dönem tatili."
+   },
+   {
+    "week": 8,
+    "topic": "Gemide insan faktörü ve gemi adamı performansı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Hata zinciri ve deniz kazaları ana (kök) sebepleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Liderlik.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "İş yükünün tanımı, anlaşılması, değerlendirilmesi ve gemideki etkileri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Farklı durumlarda planlama ve takım çalışması uygulamaları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Riskin tanımlanması, sınıflandırılması ve riskin değerlendirilmesi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Etkin karar vermenin unsurları.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Inoue Kinzo, Theory and practice of ship handling, Seizando-Shoten, 2012.",
    "A.J. Swift, Bridge Team Management, the Nautical Institute, 2nd Ed., 2004."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=474",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=474"
  },
  "DUI 474E": {
   "code": "DUI 474E",
   "name": "Köprü Üstü Kaynak&Takım Yön.",
+  "nameEn": "Bridge Team and Resource Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2091,16 +4897,87 @@
    "Hafta 13 · Riskin tanımlanması, sınıflandırılması ve riskin değerlendirilmesi.",
    "Hafta 14 · Etkin karar vermenin unsurları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Köprüüstü Kaynak Yönetimi, tanımı, kaynaklar arası ilişkiler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "SHELL model kullanarak kaynak yönetiminin incelenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Köprüüstü Takım Yönetimi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Köprüüstü becerileri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Durum farkındalığı ve görev ve sorumluluklar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Seyir planlamasında bilgi paylaşımı ve etkili haberleşmenin unsurları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Ara dönem tatili."
+   },
+   {
+    "week": 8,
+    "topic": "Gemide insan faktörü ve gemi adamı performansı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Hata zinciri ve deniz kazaları ana (kök) sebepleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Liderlik.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "İş yükünün tanımı, anlaşılması, değerlendirilmesi ve gemideki etkileri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Farklı durumlarda planlama ve takım çalışması uygulamaları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Riskin tanımlanması, sınıflandırılması ve riskin değerlendirilmesi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Etkin karar vermenin unsurları.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Inoue Kinzo, Theory and practice of ship handling, Seizando-Shoten, 2012.",
    "A.J. Swift, Bridge Team Management, the Nautical Institute, 2nd Ed., 2004."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=474",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=474"
  },
  "DUI 4901": {
   "code": "DUI 4901",
   "name": "Deniz Ulaş.&İşlet.Müh. Tas. I",
+  "nameEn": "MaritimeTrans.Mng.Eng.Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2133,15 +5010,87 @@
    "Hafta 13 · Tasarım sonuçlarının analizi.",
    "Hafta 14 · Tasarım sonuçlarının analizi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje planlaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje planlaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje ön hazırlığı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje ön hazırlığı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgi analizi yapma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgi analizi yapma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım sonuçlarının analizi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım sonuçlarının analizi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=4901"
  },
  "DUI 4901E": {
   "code": "DUI 4901E",
   "name": "Deniz Ulaş.&İşlet.Müh. Tas. I",
+  "nameEn": "MaritimeTrans.Mng.Eng.Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2174,15 +5123,87 @@
    "Hafta 13 · Tasarım sonuçlarının analizi.",
    "Hafta 14 · Tasarım sonuçlarının analizi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje planlaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje planlaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje ön hazırlığı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje ön hazırlığı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgi analizi yapma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgi analizi yapma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım sonuçlarının analizi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım sonuçlarının analizi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=4901"
  },
  "DUI 4902": {
   "code": "DUI 4902",
   "name": "Deniz Ulaş.&İşlet.Müh. Tas. II",
+  "nameEn": "MaritimeTrans.Mng.Eng.DesignII",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2215,15 +5236,87 @@
    "Hafta 13 · Tasarım sonuçlarının analizi.",
    "Hafta 14 · Tasarım sonuçlarının analizi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje planlaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje planlaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje ön hazırlığı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje ön hazırlığı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgi analizi yapma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgi analizi yapma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım sonuçlarının analizi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım sonuçlarının analizi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=4902"
  },
  "DUI 4902E": {
   "code": "DUI 4902E",
   "name": "Deniz Ulaş.&İşlet.Müh. Tas. II",
+  "nameEn": "MaritimeTrans.Mng.Eng.DesignII",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2256,15 +5349,87 @@
    "Hafta 13 · Tasarım sonuçlarının analizi.",
    "Hafta 14 · Tasarım sonuçlarının analizi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje planlaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje planlaması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje ön hazırlığı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje ön hazırlığı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgi analizi yapma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgi analizi yapma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım sonuçlarının analizi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım sonuçlarının analizi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=4902"
  },
  "DUI 492": {
   "code": "DUI 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2278,12 +5443,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=492"
  },
  "DUI 492E": {
   "code": "DUI 492E",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2297,7 +5462,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUI&dersNo=492"
  }
 }

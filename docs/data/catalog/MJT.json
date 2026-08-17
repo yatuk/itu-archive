@@ -2,6 +2,7 @@
  "MJT 601E": {
   "code": "MJT 601E",
   "name": "Systematic Musicology Studies",
+  "nameEn": "Systematic Musicology Studies",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -33,6 +34,77 @@
    "Hafta 13 · Zoomüzikoloji",
    "Hafta 14 · Yeni Müzik akımları, elektronik müzik ve müzik teknolojisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sistematik müzikolojinin konuları ve çalışma alanları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Müzik ve disiplinlerarası çalışmalar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Müzik teorisinin teorisi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Müzik analizleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Müzik psikolojisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Müzikte bilişsel çalışmalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Estetik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Müzik felsefesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Ses felsefesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Yeni Materyalizm/Posthümanizm",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Müzik ve yapay zeka",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ekomüzikoloji",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Zoomüzikoloji",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Yeni Müzik akımları, elektronik müzik ve müzik teknolojisi"
+   }
+  ],
   "textbooks": [
    "- Baroni, Mario; Roberto Caterina and Fabio Regazzi. 2016. “Beyond the Score: Timbre Analysis in Avant-garde Music”. El oído pensante 4 (1). http://ppct.caicyt.gov.ar/index.php/oidopensante",
    "- Mugglestone, E., & Adler, G. 1981. “Guido Adler’s “The Scope, Method, and Aim of Musicology” (1885): An English Translation with an Historico-Analytical Commentary”. Yearbook for Traditional Music, 13, 1–21.",
@@ -54,12 +126,12 @@
    "- Dufour, V., Poulin, N., Curé, C., & Sterck, E. H. M. (2015). “Chimpanzee drumming: a spontaneous performance with characteristics of human musical drumming”. Nature Publishing Group.",
    "- Hattori, Y., Tomonaga, M., & Matsuzawa, T. (n.d.). “Spontaneous synchronized tapping to an auditory rhythm in a chimpanzee"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=601"
  },
  "MJT 603": {
   "code": "MJT 603",
   "name": "İleri Müzik Paleografyası",
+  "nameEn": "Advanced Music Paleography",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -91,6 +163,77 @@
    "Hafta 13 · Hamparsum Müzik Yazısı Çevirilerinin Uygulamaları",
    "Hafta 14 · Batılılaşma dönemi ile birlikte batının porte notasına geçiş ve kullanım şekilleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Osmanlı Türk Müziğinde kullanılan müzik yazılarının tarihçesi. Çeviriyazımda metotoloji.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Harf müzik yazısı ve özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ebced müzik yazısı ve uygulamaları. Ebced notasıyla yazılmış eserlerin çevirisi.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Ebced ile yazılmış eserlerin çevirisi. Safiyyüddin ve Abdülbaki Nasır Dede ebced yazısı kullanımının karşılaştırmalı incelenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Abdülbaki Nasır Dede ebced yazısının incelenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Benzer harf müzik yazıları: Nayi Osman Dede’nin müzik yazısının özellikleri ve Kantemir müzik yazısı ile karşılaştırma ve çeviriler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kantemir müzik yazısı uygulama ve eser çevirileri.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kevseri Müzik Yazısının, Nayi Osman Dede ve Kantemir müzik yazılarının Karşılaştırılması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Avrupa Müzik Yazısı, “Nota”, Ali Ufki Bey Notası’nın özellikleri batının porte notası ile ilişkileri ve Çeviriler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ermeni Kilise ve Hamparsum müzik yazılarının benzerlikleri, farklılıklar ve uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Hamparsum müzik yazısı çeşitleri, Gizli Hamparsumun özellikleri ve çeviriler 1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Hamparsum müzik yazısı çeşitleri, Gizli Hamparsumun özellikleri ve çeviriler 2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Hamparsum Müzik Yazısı Çevirilerinin Uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Batılılaşma dönemi ile birlikte batının porte notasına geçiş ve kullanım şekilleri"
+   }
+  ],
   "textbooks": [
    "Bardakçı, Murat. 1980. Maragalı Abdülkadir. İstanbul: Pan Yayıncılık.",
    "Elçin, Şükrü. 1976. Ali Ufki : Hayatı, Eserleri ve Mecmua-i Saz ü Söz. İstanbul: Kültür Bakanlığı Yayınları.",
@@ -98,12 +241,12 @@
    "Uslu, Recep ve Nilgün Dişiaçık. 2008. Abdülbaki Nasır Dede’nin Müzik Yazısı (Tahririye), İstanbul.",
    "Uygun, Nuri. 1999. Safiyyüddin Abdülmümin Urmevi ve Kitabü’l Edvarı. İstanbul: Kubbealtı Yayınları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=603"
  },
  "MJT 607": {
   "code": "MJT 607",
   "name": "16.&17.YY. Türk Müziği Çalışm.",
+  "nameEn": "Turkish Music Studies in 16. and 17. CC",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -135,6 +278,77 @@
    "Hafta 13 · Hafız Post güfte mecmuası ile Memua-ı saz u söz’ün karşılaştırmalı güfte incelenmesi",
    "Hafta 14 · Dönem kaynaklarında yer alan çalışmaları analitik inceleme."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "16.yy-17.yy Osmanlı tarihine ve müziğine bakış. Avrupalı gezginlerin anlatımları,",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Evliya Çelebi’nin seyahatnamesinden döneme dair tespitler.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Ali Ufki Bey’in hayatı ve eserleri. Topkapı sarayında yaşam,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Mecmua-i Saz u Söz’de kullanılan müzik yazısı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Mecmua-i Saz u Söz’de kullanılan müzik yazısı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Eser çözümlemesi ve değerlendirmesi yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Mecmua-i Saz ü Söz’de kullanılan müzik yazısı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Mecmua-i Saz ü Söz’de bulunan eserlerdeki türler ve analizleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Mecmua-i Saz ü Söz’de bulunan eserlerdeki makamlar ve analizleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Mecmua-i Saz ü Söz’de bulunan eserlerdeki usul analizleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Mecmua-i Saz ü Söz’de bulunan eserlerdeki güfte analizleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Hafız Post güfte mecmuasının incelenmesi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Hafız Post güfte mecmuası ile Memua-ı saz u söz’ün karşılaştırmalı güfte incelenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem kaynaklarında yer alan çalışmaları analitik inceleme."
+   }
+  ],
   "textbooks": [
    "Behar, Cem. 2005. Musikiden Müziğe. İstanbul: YKY.",
    "Behar, Cem. 2008. Saklı Mecmua. İstanbul: YKY.",
@@ -142,12 +356,12 @@
    "Elçin, Şükrü. 1976. Ali Ufki : Hayatı, Eserleri ve Mecmua-i Saz ü Söz. İstanbul: Kültür Bakanlığı Yayınları.",
    "Haug, Judith I. 2019. Ottoman and European Music in Ali Ufuki’s Compendium, MS Turc 292: Analysis, Interpretation,Cultural Context, Münster"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=607",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=607"
  },
  "MJT 609": {
   "code": "MJT 609",
   "name": "Türk Dünyasında Aşık Sanatı",
+  "nameEn": "Türk Dünyasında Aşık Sanatı",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -179,6 +393,77 @@
    "Hafta 13 · Türklük Dünyasının âşık sanatı bibliyografyası. Türklük Dünyasında âşık sanatı terminolojisi.",
    "Hafta 14 · Proje Sunumları ve Tartışılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Türkiye’de “Âşık” kime denir? Âşıklık sanatının temel prensipleri nelerdir? Usta-Çırak ilişkisi. Yetişme tarzları, yöntemleri. Repertuar görünümleri. Çalgı tipleri. Usta malı.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Aşık tarzı ürünlerin edebi ve müzikal tür, tip ve biçim görüntüleri. Anlatıcı/Hikayeci aşık ve aşık tipinde halk sanatkarları. Tasnifçi aşıklar.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Tarihi yazılı kaynaklarda Âşık sanatından izler. Kitâb-ı Dede Korkut’ta âşık sanatı izleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Tarihi yazılı kaynaklarda Âşık sanatından izler: Mecmua-yı Sâz u Söz’de Aşık sanatından izler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tarihi yazılı kaynaklarda Âşık sanatından izler: Evliya Çelebi’de Âşık sanatından izler. Divan, Tezkire, Cönk, vb. gibi başlıca yazılı ve basılı kaynaklarda Âşık sanatından izler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "XX. yy.da Âşık sanatının genel görünümü. Alan araştırmalarında Âşık müziği derlemeleri. XXI. yüzyıla taşınan Âşık Müziği/I.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "XX. yy.da Âşık sanatının genel görünümü. Alan araştırmalarında Âşık müziği derlemeleri. XXI. yüzyıla taşınan Âşık Müziği/III",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "XX. yy.da Âşık sanatının genel görünümü. Alan araştırmalarında Âşık müziği derlemeleri. XXI. yüzyıla taşınan Âşık Müziği/III. Sınav",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Türk Dünyasında Aşık tipinde şahsiyetler ve unvanları. Türklük dünyasındaki aşık tipinde şahsiyetlerin Türkiye’deki Âşık sanatı temsilcileri ile taşıdıkları ortak özellikle ve başlıca ortak vasıfları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Türklük Dünyasında yaşayan Âşık sanatı. Usta-Çırak ilişkisi, Çalgılar, Edebi yapı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Türklük Dünyasında Âşık sanatı müzik türleri, çeşitleri, çeşitlemeleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Aşık Okulları. Popüler bir sanatçı tipi olarak aşıklar. Türk dünyasında şöhret yapmış âşık tipinde şahsiyetler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Türklük Dünyasının âşık sanatı bibliyografyası. Türklük Dünyasında âşık sanatı terminolojisi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları ve Tartışılması"
+   }
+  ],
   "textbooks": [
    "ELDAROVA, E., Azerbaycan Aşık Sanatı, Bakü, 1984",
    "GÖKYAY, Orhan Şaik, Dedem Korkutun Kitabı, MEB, Başbakanlık Kültür Müsteşarlığı Kültür Yayınları, İstanbul, 1973.",
@@ -187,12 +472,12 @@
    "REINHARD, Ursula-PINTO, Tıago De Olıvera, Sanger Und Poeten Mit Der Laute (Türkische Aşık Und Ozan), Dietrich Reimer Verlag, Berlin, 1990,",
    "ŞENEL, Süleyman, Kastamonu’da Aşık Fasılları, İstanbul, 2007, C.1 [İnceleme], C.2 [Notalar], Kastamonu Valiliği."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=609",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=609"
  },
  "MJT 611E": {
   "code": "MJT 611E",
   "name": "Comm.&Mass Media Music",
+  "nameEn": "Comm.&Mass Media Music",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -224,6 +509,77 @@
    "Hafta 13 · İletişimin analizi",
    "Hafta 14 · Proje Sunumları ve Tartışılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Müzik ve kitle iletişim araçlarının müzik üzerindeki etkisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kültür. Müzik kültürü. Müzik kimliği. Toplum ve müzik.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Kitle iletişim araçlarının toplum üzerindeki etkisi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma metotları, Veri analiz yöntemlerinin açıklanması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kitle iletişim araçları, kadın, toplumsal bakışlar, feminist kritik, cinsiyet, popüler kültür, ırk ilişkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Müzik ve medyada farklı yaklaşımlar, kavramlar ve yöntemler, Musikoloji, antropoloji ve etnomüzikolojide medya.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Toplumsal-bilimsel araştırma sürecine giriş. İletişim çalışmalarında sık kullanılan yöntemler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İletişim ve müzik. Ses kayıt endüstrisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Disiplinlerarası çalışmalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Müziğin kaynağı, doğası ve insan iletişiminin sonuçları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Dinleyiciler, alımlama (Reception) teori, Müzik aracı ile çıkarımlar yapmak, Popüler müzik ve medya",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Türkiyede ve dünyada akustik, ses sistemleri, teori konularında karşılaştırmalı çalışmalar. Popüler müzik metinlerini, şarkıları ve videoları okumak.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "İletişimin analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları ve Tartışılması"
+   }
+  ],
   "textbooks": [
    "Martin Stokes (2010). The Republic of Love. Chicago: The University of Chicago Press. Peter Mills. (2012). Media and Popular Music. Edinburgh: Edinburgh Press.",
    "Baran, Stanley J. 2011. Introduction to Mass Communication : Media Literacy and Culture. Boston",
@@ -231,12 +587,12 @@
    "Samantha Bennett & Elliot Bates, (2018) Critical Approaches to the Production of Music and Sound, Bloomsbury Academic.",
    "Nick Stevenson (2002) Understanding Media Cultures: Social Theory and Mass Communication."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=611",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=611"
  },
  "MJT 613": {
   "code": "MJT 613",
   "name": "Müziğin Toplumbilim.Bileşen.",
+  "nameEn": "Society, Science and Music",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -269,6 +625,77 @@
    "Hafta 13 · Ödev değerlendirme: Yapılmış olan ödevlerin genel değerlendirilmesi.",
    "Hafta 14 · Genel değerlendirme: Ders kapsamında tartışılan kavramların genel değerlendirmeesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Üretim: Üretimin ögeleri: Besteci; İcracı; Destek ögeleri; Müzik olayının düzenleyicileri; Himaye ve destek kurumları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Üretim: Üretimin koşulları: Toplumsal gereksinim; Teknik sınırlılık; Piyasanın koşulları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Üretim: Üretimin sonuçları: Müzik ürünü; Müziksel anlam düzlemleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Anlamlandırma: Kolektif anlam birimleri; Bireysel anlam mikro-politikaları; Kimlik stratejileri bağlamında müziğin işlevi; Tüketim kimlik bağlamında katalizör olarak müzik; Deneyimin alımlanması ve yorumlanması (gerçekliğin inşâsı).",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Anlamlandırma: Zaman kurgusu olarak müzik.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Anlamlandırma: Toplumsal sınıf kodları ve sınıflararası gerilimlerin taşıyıcısı olarak müzik.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Temsil: Cinsiyet: Cinsel gönderge olarak müziksel ifade; Toplumsal cinsiyet örüntülerinin yeniden üretilmesi ve temsili; Cinsiyetlenmiş kuram, ifade, üslûp; Müziğin icrasında cinsiyetlenmiş ayrımlar.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Temsil: Din: Cemaat metaforu olarak müzik; Bedenin ve ruhun denetimi; Hatırlatma ve teyid: Tanrı iradesinin belirleyiciliği; Arınma ekstaz ve dinsel olanın taşması; Heryerde ve kâdir-i mutlak iradenin sürekli kılınması.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Temsil: Siyaset: Toplumsal uzlaşma kodlarını formülleştirme; İktidarın betimlenmesi; Toplumsal atıf noktası oluşturma; Estetik biçimleme; Denetleme, tâbi kılma; Hükmetme stratejileri; Müziğin ekonomi politiği.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Dönüşüm: Müziğin rasyonelleşmesi: Kapitalistleşme, modernleşme ve standartlaşma; Standart uzlaşma zemini olarak müzik; Sadeleşme, etkilileşme, hızlanma; Rasyonelleşmenin evrensel ve yerel boyutları.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Dönüşüm: Müziğin metâlaşması: Dinsel-dindışı müzik ayrımından popülerleşmeye doğru; Seçkin müzik – popüler müzik ayrımı; Pazarın kurulması: Uzlaşımlar, standartlar ve kâr güdüsü; Türlere ayrışmış piyasa: Beğeniler matrisinin kurgulanması.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Dönüşüm: Popüler müziğin popülerlik ögeleri.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev değerlendirme: Yapılmış olan ödevlerin genel değerlendirilmesi.",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Genel değerlendirme: Ders kapsamında tartışılan kavramların genel değerlendirmeesi."
+   }
+  ],
   "textbooks": [
    "Howard S. BECKER (1984). Art Worlds, University of California Press, Berkeley [1-67].",
    "Tia DeNoRA (2003). After Adorno, Rethinking Music Sociology, Cambridge University Pres, Cambridge. [“How does music ‘channel’ emotion?” 83-117]",
@@ -290,12 +717,12 @@
    "Ali ERGUR – Yiğit AYDIN (2006). “Patterns of modernization in Turkish Music as indicators of a changing society”, Musicae Scientiae, Special Issue 2005/2006, 89-108.",
    "Ali ERGUR – Nilgün DOĞRUSÖZ (2015). “Resistance and Adoption towards Written Music at the Crossroads of Modernity: Gradual Passage to Notation in Turkish Makam Music”, International Review of the Aesthetics and Sociology of Music, 46(1), 145-174."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=613",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=613"
  },
  "MJT 614E": {
   "code": "MJT 614E",
   "name": "Theoritica.Persp.Ethnomusicol.",
+  "nameEn": "Theoritica.Persp.Ethnomusicol.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -327,6 +754,77 @@
    "Hafta 13 · Postmodern, Postkolonyal ve Küresel Konular",
    "Hafta 14 · Teoride Benzerlik ve Farklılıklar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Etnomüzikolojide Araştırma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Karşılaştırmalı Müzikolojide Kültürel Evrimcilik ve Yayılmacılık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yapısal-İşlevselci yaklaşımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dilbilimsel Yaklaşımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Paradigmatik Yapısalcılık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Marksist Yorumlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Edebi ve Dramaturjik Teoriler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilişsel ve İletişim Teori",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Etnomüzikolojide Performans Teori",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Toplumsal Cinsiyet, Etnisite, Kimlik",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Fenomenoloji ve Deneysel Etnomüzikoloji",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tarihsel Araştırmalar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Postmodern, Postkolonyal ve Küresel Konular",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Teoride Benzerlik ve Farklılıklar"
+   }
+  ],
   "textbooks": [
    "Harris M. Berger and Ruth M. Stone, 2019, Theory for Ethnomusicology, Roudledge, London & Newyork, 2019.",
    "Ruth Stone. 2008. Theory for Ethnomusicology. New Jersey: Pearson Education",
@@ -334,12 +832,12 @@
    "Nettl, Bruno. 2015. The Study of Ethnomusicology : Thirty-tree Discussions. Urbana: University of Illinois Press.",
    "Post, Jeniffer. 2004. Ethnomusicology:A Research and Information Guide. New York: Routledge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=614",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=614"
  },
  "MJT 619E": {
   "code": "MJT 619E",
   "name": "Critical Musicology",
+  "nameEn": "Critical Musicology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -371,18 +869,90 @@
    "Hafta 13 · Etnisite, Dünya Müziği ve Melezleştirme",
    "Hafta 14 · Proje Sunumları ve Tartışılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Müzikolojide uygulamalı alanlar: Tarihsel perspektif ve Etnografik araştırma metotları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Etnomüzikoloji ve Eleştirel Müzikoloji (Yeni, Eleştirel, Postmodern)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Müzikoloji, Eleştirel Teori, Postyapısalcılık ve Postmodernizm",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Müzikoloji, Eleştirel Teori, Postyapısalcılık ve Postmodernizm",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Müzikoloji ve Yeni Materyalizm",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Müzik analizi, Popüler Müzikte Otantiklik",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Antroposen çağında üretim: Eleştirel Ekomüzikoloji",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Milliyetçilik ve milli repertuar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "İdeoloji ve Kültürel Ötekilik",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Toplumsal Cinsiyet ve Feminizm",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Politik ekonomi ve Yaratıcı Endüstriler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Müzik Endüstrisi ve Emek",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Etnisite, Dünya Müziği ve Melezleştirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları ve Tartışılması",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "• Berger, Harris, Stone, Ruth. 2019. Theory for Ethnomusicology, Taylor and Francis.",
    "• Allen, Aaron, Dawe, Kevin. 2016. Current Directions in Ecomusicology: Music, Culture, Nature. Routledge",
    "Scott, Derek. 2002. From the Erotic to the Demonic: on Critical Musicology. Oxford University Press",
    "• Bohlman, Philip. 2011. “Music Before the Nation, Music after Nationalism” Musicology Australia 31(1)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=619",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=619"
  },
  "MJT 621E": {
   "code": "MJT 621E",
   "name": "Music in Digital Culture",
+  "nameEn": "Music in Digital Culture",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -414,6 +984,77 @@
    "Hafta 13 · Dijital sesler: Posthümanizm",
    "Hafta 14 · Dijital kültürde müzik hakkında yazmak"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dijital teknoloji ve kültürel pratikler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dijital müziğin tarihi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Müzik endüstrilerinin dijitalleşmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "‘Çevrimiçi ses ve görüntü yayını’nın (streaming) politik ekonomisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Dijital müzik platformları: Spotify örneği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Dijital eşitsizlikler ve küresel tınılar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kayıt teknolojilerinde sanallaşma",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Dijital tüketim pratikleri ve estetik algısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Müzik ‘scene’den (müzik ortamından) müzikal ağlara",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Dijital çağda canlı müzik üzerine yeniden düşünmek",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Müzik ve sosyal medya: Fan-sanatçı ilişkisi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Çevrimiçi müzikal topluluklar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Dijital sesler: Posthümanizm",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dijital kültürde müzik hakkında yazmak"
+   }
+  ],
   "textbooks": [
    "Cook, Nicholas, Monique M. Ingalls and David Trippett (eds.). 2019. The Cambridge Companion to Music in Digital Culture. Cambridge: Cambridge University Press.",
    "D’Ericco, Mike. 2022. Push: Software Design and the Cultural Politics of Music Production. New York: Oxford University Press.",
@@ -421,12 +1062,12 @@
    "Glitsos, Laura. 2019. Somatechnics and Popular Music in Digital Contexts. Switzerland: Palgrave Macmillan.",
    "Tofalvy, Tamas and Emilia Barna (eds.). 2020. Popular Music, Technology, and the Changing Media Ecosystem: From Cassettes to Stream. Switzerland: Palgrave Macmillan."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=621",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=621"
  },
  "MJT 622": {
   "code": "MJT 622",
   "name": "Music Production Analysis",
+  "nameEn": "Music Production Analysis",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -459,17 +1100,88 @@
    "Hafta 13 · ‘Ses şiddeti savaşları’ kavramı.",
    "Hafta 14 · İşitsel mitler ve inanışların algıdaki çalışma biçimi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bir müzik yapımının ana bileşenleri: beste, aranje, kayıt.",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Bir müzik yapımının ana bileşenleri: miks.",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Bir müzik yapımının ana bileşenleri: mastering.",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Bir müzik yapımında estetik ve teknik öğelerin çalışma biçimi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kayıtlı müziğin fiziksel ve bilişsel algısı.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Akustik ve Psiko-akustik parametreler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Analog ve sayısal ses formatları arasındaki farklar.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sayısal ses formatlarının ve sistemlerinin çalışma şekilleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Müzik yapımlarının analizi için genel yaklaşımlar.",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Farklı müzik türleri ve bunların yapıma bağlı değerleri.",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Hedef dinlerkitlenin müzik yapımlarını ne şekilde etkilediği.",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal müzik dinleme platformları ve farkları.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "‘Ses şiddeti savaşları’ kavramı.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "İşitsel mitler ve inanışların algıdaki çalışma biçimi."
+   }
+  ],
   "textbooks": [
    "Modern Recording Techniques, Huber D. Routledge 9th edition, 2018",
    "This is your brain on music, Levitin D. Dutton, 2016",
    "Principles of Digital Audio, Pohlman K. McGraw Hill 6th edition, 2011"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=622",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=622"
  },
  "MJT 696": {
   "code": "MJT 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -505,6 +1217,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
@@ -512,7 +1295,6 @@
    "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MJT&dersNo=696"
  }
 }

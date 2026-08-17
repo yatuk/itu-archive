@@ -2,6 +2,7 @@
  "ISE 100": {
   "code": "ISE 100",
   "name": "Orientation",
+  "nameEn": "Orientation",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=100",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=100"
  },
  "ISE 101": {
   "code": "ISE 101",
   "name": "Bilişim Sistemleri Mühendisliğine Giriş",
+  "nameEn": "Intro.to Information Sys. and",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -52,15 +53,73 @@
    "Hafta 13 · Tuple",
    "Hafta 14 · Sözlükler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Programlama dillerine giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Değişkenler"
+   },
+   {
+    "week": 3,
+    "topic": "İsim verme yöntemleri, aritmetik operatörler, kullanıcı giriş/çıkışı"
+   },
+   {
+    "week": 4,
+    "topic": "Değişken türleri, tür çevrimi"
+   },
+   {
+    "week": 5,
+    "topic": "Boolean cebri"
+   },
+   {
+    "week": 6,
+    "topic": "Dallanma"
+   },
+   {
+    "week": 7,
+    "topic": "String kavramı"
+   },
+   {
+    "week": 8,
+    "topic": "Endeksleme, endeks dilimleri"
+   },
+   {
+    "week": 9,
+    "topic": "Döngüler"
+   },
+   {
+    "week": 10,
+    "topic": "Diziler"
+   },
+   {
+    "week": 11,
+    "topic": "Fonksiyonlar, özyinelemeli fonksiyonlar"
+   },
+   {
+    "week": 12,
+    "topic": "İstisnalar, dosya giriş/çıkışı"
+   },
+   {
+    "week": 13,
+    "topic": "Tuple"
+   },
+   {
+    "week": 14,
+    "topic": "Sözlükler"
+   }
+  ],
   "textbooks": [
    "Summerfield M., “Programming in Python 3: a complete introduction to the Python language\", Addison-Wesley, c2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=101"
  },
  "ISE 102": {
   "code": "ISE 102",
   "name": "Programlama I",
+  "nameEn": "Programming I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -92,15 +151,87 @@
    "Hafta 13 · Veri tabanına ve veriye erişim",
    "Hafta 14 · Veri tabanı erişimli yazılım geliştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nesne tabanlı programlamaya giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sınıf yapısı, yapıcı ve yok ediciler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yöntem ve özellikler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Overloading",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Polimorfizm",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Arayüz tasarımına giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Tasarım kütüphaneleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Kullanıcı tetiklemeli kod geliştirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Örnek yazılımların geliştirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Düzenli ifadelere giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Düzenli ifadeler kullanılarak yazılım geliştirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Veri tabanına giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Veri tabanına ve veriye erişim",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Veri tabanı erişimli yazılım geliştirme",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Summerfield M., “Programming in Python 3: a complete introduction to the Python language\", Addison-Wesley, c2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=102"
  },
  "ISE 111": {
   "code": "ISE 111",
   "name": "Lineer Cebir",
+  "nameEn": "Linear Algebra",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -134,15 +265,87 @@
    "Hafta 13 · İç Çarpım ve Bilişim Sistemleri.",
    "Hafta 14 · Tekrar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bilişim Sistemleri Mühendisliğinde Lineer Sistemler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer Sistemler.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Matris ve açılımları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Öklid Vektör Uzayları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Öklid Vektör Uzaylarının Bilişim Sistemleri Müh. Örnekleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Genel Vektör Uzayları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Genel Vektör Uzayları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bilişim Sistemleri Müh. Vektör Uzayı Uygulamaları / Ara Sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Özdeğerler ve Özvektörler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Bilişim Sistemlerinde Özvektörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "İç Çarpım.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "İç Çarpım ve Bilişim Sistemleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Tekrar.",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=111"
  },
  "ISE 112": {
   "code": "ISE 112",
   "name": "Discrete Mathematics",
+  "nameEn": "Discrete Mathematics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -176,15 +379,87 @@
    "Hafta 13 · Özyineleme",
    "Hafta 14 · Algoritmik düşünme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Matematiksel mantığın temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boole Cebri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kümeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "kanıtlama yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Tümevarım",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Bağıntılar ve Fonksiyonlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çizgeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Ağaçlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Cebirsel yapılar ve kısmi sıralı kümeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Sayı teorisi temelleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sayma",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Toplama, yakınsama ve asimptotik analiz",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Özyineleme",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Algoritmik düşünme",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "AYRIK MATEMATİĞİN TEMELLERİ, DAVID J HUNTER, ÜÇÜNCÜ BASKI, JONES VE BARTLETT ÖĞRENİMİ, 2017"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=112"
  },
  "ISE 302": {
   "code": "ISE 302",
   "name": "İşletim Sistemleri",
+  "nameEn": "Operating Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -220,15 +495,85 @@
    "Hafta 13 · Dosya sistemleri ve yönetimi, UNIX dosya sistemi",
    "Hafta 14 · Giriş / Çıkış"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "İşletim sistemleri: temel kavramlar, sınıflandırma, tarihçe",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "UNIX'te süreç yönetimi, zaman paylaşımı, bağlam değiştirme, süreç yönetimi",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 4,
+    "topic": "İş parçacıkları, iş parçacığı yönetimi, UNIX'te iş parçacığı yönetimi",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 5,
+    "topic": "Süreçler arası iletişim (IPC) ve senkronizasyon, semaforlar, UNIX'te semaforlar",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 6,
+    "topic": "Eşzamanlı süreçlerle ilgili klasik problemler",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 7,
+    "topic": "Sınıf çalışması",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 8,
+    "topic": "UNIX'te kilitlenme, algılama ve kaçınma, paylaşılan bellek",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 9,
+    "topic": "Süreç çizelgeleme algoritmaları, UNIX'te süreç çizelgeleme",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 10,
+    "topic": "Bellek yönetimi, segmentasyon, sayfalama",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Bellek tahsisi, sanal bellek yönetimi",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Sınıf çalışması",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Dosya sistemleri ve yönetimi, UNIX dosya sistemi"
+   },
+   {
+    "week": 14,
+    "topic": "Giriş / Çıkış",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "\"Modern Operating Systems\", Andrew Tanenbaum, Prentıce Hall, 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=302"
  },
  "ISE 304": {
   "code": "ISE 304",
   "name": "Yazılım Mühendisliği",
+  "nameEn": "SW Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -260,15 +605,87 @@
    "Hafta 13 · Yazılım Mimarisi",
    "Hafta 14 · Test etme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yazılım mühendisliğine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yazılım sisteminin yaşam döngüsü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Planlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Planlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Risk Yönetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Prototipleme ve Gereksinimler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Gereksinim Mühendisliği",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Hedef Modelleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "UML (UML)",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Durum şemaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım, Bilgi Gizleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım Desenleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Yazılım Mimarisi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Test etme",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Roger Pressman, Yazılım Mühendisliği: Bir Uygulayıcının Yaklaşımı, 6. basım, McGraw Hill, 2005. ISBN 0-07-285318-2."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=304",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=304"
  },
  "ISE 305": {
   "code": "ISE 305",
   "name": "Veritabanı Sistemleri",
+  "nameEn": "Database Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -300,15 +717,87 @@
    "Hafta 13 · Öğrenci Proje Sunumları ve Demoları",
    "Hafta 14 · Öğrenci Proje Sunumları ve Demoları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İlişkisel Model",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bütünlük",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İlişkisel Cebir",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "SQL Sorguları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Uygulama Geliştirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Veritabanı Tasarımı ve Normalizasyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Problem Çözümü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Sınıf çalışması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "İşlemler, Eşzamanlılık",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Nesne Yönelimli Veritabanları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "XML Veritabanları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Proje Sunumları ve Demoları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Proje Sunumları ve Demoları",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Veritabanı sistemlerine giriş, c.j. tarih, addison-wesley, 2004, isbn 0-321-19784-4"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=305"
  },
  "ISE 306": {
   "code": "ISE 306",
   "name": "Bilgisayar Ağları",
+  "nameEn": "Computer Networks",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -342,15 +831,86 @@
    "Hafta 13 · Depolama alanı ağları, kişisel alan ağları, optik ağlar",
    "Hafta 14 · Dönem projesi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Katman 1-3 özeti"
+   },
+   {
+    "week": 2,
+    "topic": "Taşıma katmanı hizmetleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Adresleme, bağlantı kurma, akış kontrolü",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "UDP",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "TCP",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Soket Programlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Uygulama katmanı: DNS, e-posta",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "WWW, Http, Xml",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Standartlar, Öğrenci sunumları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Bilgisayar ağlarında performans sorunları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "VPN, Gigabir Ethernet, PON",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Depolama alanı ağları, kişisel alan ağları, optik ağlar",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projesi sunumları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Computer Networks and Internets, D. Comer, 5th Ed., Prentice Hall, 2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=306",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=306"
  },
  "ISE 307": {
   "code": "ISE 307",
   "name": "Bilgi Teknolojileri Sistemleri Analiz ve Tasarımı",
+  "nameEn": "IT Systems Analysis and Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -382,15 +942,84 @@
    "Hafta 13 · Uygulama",
    "Hafta 14 · Prototipleme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgi Sistemlerinin temel kavramları, Sistem analizi ve tasarım tanımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgi sistemi türleri:Genel Bakış: Sistem Geliştirme Yaşam Döngüsü, Bilgisayar Destekli Yazılım Mühendisliği araçlarını kullanma.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Bilgisayar Tabanlı Bilgi Sistemleri (CBIS) ve Manuel Sistemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sistem geliştirme yaklaşımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bilgi Sistemi Türleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Farklı IS türleri için sistem geliştirme"
+   },
+   {
+    "week": 7,
+    "topic": "Vaka Çalışması: -Paydaşlar: Sistem Oyunundaki Oyuncular",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sistem geliştirmede işletme yöneticileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Sistem geliştirme metodolojisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Analiz aşaması-1",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Analiz aşaması-2",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım aşaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama"
+   },
+   {
+    "week": 14,
+    "topic": "Prototipleme"
+   }
+  ],
   "textbooks": [
    "Introduction to Information System O'Brain, Printice Hall, 1997"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=307",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=307"
  },
  "ISE 308": {
   "code": "ISE 308",
   "name": "Yapay Zeka ve Uzman Sistemler",
+  "nameEn": "Artifical Intell. & Expert Sys",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -424,15 +1053,87 @@
    "Hafta 13 · Ajanlarda Öğrenme",
    "Hafta 14 · Ajanlarda Öğrenme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Zekaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Akıllı Aracılar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İyi Tanımlanmış Yapay Zeka Problemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Problem Çözme ve Arama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Problem Çözme ve Arama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kısıt Tatmin Problemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kısıt Tatmin Problemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Problem Çözmenin Tekrarı ARA SINAV",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Oyun Oynama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Önerme Mantık",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Önerme Mantığında Çıkarım",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ajanlarla Planlama",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Ajanlarda Öğrenme",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 14,
+    "topic": "Ajanlarda Öğrenme",
+    "outcomes": "3-6"
+   }
+  ],
   "textbooks": [
    "Artificial Intelligence: A Modern Approach (3rd Edition), Stuart Russell, Peter Norvig, Prentice Hall, 2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=308",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=308"
  },
  "ISE 309": {
   "code": "ISE 309",
   "name": "Çoğulortam Sistemleri",
+  "nameEn": "Multimedia Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -463,15 +1164,87 @@
    "Hafta 13 · Çoklu Ortam Uygulamaları 2",
    "Hafta 14 · Multimedya Uygulamaları 3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çoklu Ortam Hesaplamaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ses ve Konuşma standartları, kodlama, işleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Konuşma tanıma, konuşmacı günlükleştirme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Görüntü Sıkıştırma Teknikleri ve Algoritmaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Görüntü İyileştirme ve Segmentasyon",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Görüntü Tanıma Teknikleri ve Algoritmaları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "İkili Görüntü İşleme Teknikleri ve Paralel Algoritmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Dijital Video Kodlama ve Sıkıştırma",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Dijital Video İşleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Multimedya İletişim ve İşletim Sistemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Güvenli Multimedya, filigran",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Multimedya Uygulamaları 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Çoklu Ortam Uygulamaları 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Multimedya Uygulamaları 3",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Multimedya Sistemleri: Algoritmalar, Standartlar ve Endüstri Uygulamaları, Parag Havaldar ve Gerard Medioni, Course Technology, 2009. ISBN-10: 1418835943"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=309",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=309"
  },
  "ISE 312": {
   "code": "ISE 312",
   "name": "Elektronik Ticaret",
+  "nameEn": "E-Commerce",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -505,15 +1278,73 @@
    "Hafta 13 · Öğrenci projelerinin sunumu ve tartışma",
    "Hafta 14 · Öğrenci projelerinin sunumu ve tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ticaretin temelleri"
+   },
+   {
+    "week": 2,
+    "topic": "Elektronik ticaretin dünü ve bugünü"
+   },
+   {
+    "week": 3,
+    "topic": "Kurumlar arası ticaret"
+   },
+   {
+    "week": 4,
+    "topic": "Kurumlar ve kişiler arası ticaret"
+   },
+   {
+    "week": 5,
+    "topic": "Elektronik ticarette kullanılan standartlar : EDI, XML"
+   },
+   {
+    "week": 6,
+    "topic": "Güvenlik kavramı, güvenlik yöntemleri ve araçları"
+   },
+   {
+    "week": 7,
+    "topic": "Kurum-banka ve müşteri arasındaki bağlantılar"
+   },
+   {
+    "week": 8,
+    "topic": "Elektronik ticaret uygulamalarından örnekler"
+   },
+   {
+    "week": 9,
+    "topic": "Internet bankacılığı, güvenlik sorunları ve çözüm örnekleri"
+   },
+   {
+    "week": 10,
+    "topic": "Öğrenci projelerinin sunumu ve tartışma"
+   },
+   {
+    "week": 11,
+    "topic": "Öğrenci projelerinin sunumu ve tartışma"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenci projelerinin sunumu ve tartışma"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci projelerinin sunumu ve tartışma"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci projelerinin sunumu ve tartışma"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=312"
  },
  "ISE 313": {
   "code": "ISE 313",
   "name": "WEB Analiz ve Tasarım Araçları",
+  "nameEn": "WEB-Design & Management Tools",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -548,15 +1379,87 @@
    "Hafta 13 · JAX-WS ile XML Web Servisi Geliştirme",
    "Hafta 14 · JAX-RS ile Restful Web Servisi Geliştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Web Teknolojilerine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektronik veri alış-verişi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "XML",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "DTD ile XML Sağlama",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "XML Şema",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "XSL Dönüşümleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "XPath",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "XQuery",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Java ile XML Ayrıştırma",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "XML ve Restful Web Servisleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "WSDL ve SOAP",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "JAX-WS ile XML Web Servisi Geliştirme",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "JAX-RS ile Restful Web Servisi Geliştirme",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=313"
  },
  "ISE 315": {
   "code": "ISE 315",
   "name": "Algoritma Analizi",
+  "nameEn": "Analysis of Algorithms",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -590,15 +1493,87 @@
    "Hafta 13 · Binomial heapler",
    "Hafta 14 · Fibonacci heapler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, ikincil yedekleme birimleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 2,
+    "topic": "Asimptotik analiz",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yinelemeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Olasılıksal analiz ve rastgeleleştirilmiş algoritmalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 5,
+    "topic": "Heap ve merge sıralama yöntemleri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 6,
+    "topic": "Hızlı sıralama, lineer zamanda sıralama",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 7,
+    "topic": "Sözlükler, daraltma yöntemi",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 8,
+    "topic": "Ikili arama ağaçları, 2-3 ağaçları",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 9,
+    "topic": "2-3-4 ağaçları, kırmızı ve siyah ağaçlar,",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Veri yapılarını genişletme, amortize analiz",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 11,
+    "topic": "B-ağaçları",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 12,
+    "topic": "B-ağaçları",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Binomial heapler",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Fibonacci heapler",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=315"
  },
  "ISE 316": {
   "code": "ISE 316",
   "name": "Informatics Ethics & Law",
+  "nameEn": "Informatics Ethics & Law",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -631,15 +1606,87 @@
    "Hafta 13 · Giriş",
    "Hafta 14 · Etik Teoriler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Etik Teoriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Meslek Etiği: Etik Kurallar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Mesleki Etik: Sorumluluk",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Gizlilik ve Veri Koruma",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gizlilik ve Veri Koruma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Fikri Mülkiyet: Giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Fikri Mülkiyet: Telif Hakları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Fikri Mülkiyet: Telif Hakları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Fikri Mülkiyet: Patentler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Fikri Mülkiyet: Lisans Sözleşmeleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "İnternet Düzenlemeleri: Alan Adları, İfade Özgürlüğü",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Etik Teoriler",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Etik ve Teknoloji: Bilgi ve İletişim Teknolojisi Çağında Etik Sorunlar, Herman T. Tavani, Wiley, 2007, ISBN 0-471-99803-6."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=316",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=316"
  },
  "ISE 333": {
   "code": "ISE 333",
   "name": "Int. to Comp. & Inf. Security",
+  "nameEn": "Int. to Comp. & Inf. Security",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -670,10 +1717,81 @@
    "Hafta 13 · Yeni gelişmeler.",
    "Hafta 14 · Dönem projesi sunumları (faz 2)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş. Bilgisayar ve bilgi güvenliğinde temel kavramlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel kriptografi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bilgi güvenliğinde insan etkenleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Güvenlik açığı ve tehdit.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Zararlı yazılımlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kimlik doğrulama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Erişim kontrolü- Dönem projelerinin tartışılması (faz 1) .",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sınıf çalışması - Ara sınav.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Güvenilir hesaplama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Ağ güvenliğine giriş.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yazılım güvenliğinin temelleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Altyapı güvenliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Yeni gelişmeler.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projesi sunumları (faz 2)",
+    "outcomes": "2"
+   }
+  ],
   "textbooks": [
    "WILLIAM STALLINGS, LAWRIE BROWN, COMPUTER SECURITY: PRINCIPLES AND PRACTICE, 3TH EDITION, PEARSON/PRENTICE HALL, 2015"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=333",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISE&dersNo=333"
  }
 }

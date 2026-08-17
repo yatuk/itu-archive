@@ -2,6 +2,7 @@
  "MHN 510E": {
   "code": "MHN 510E",
   "name": "Technology Management",
+  "nameEn": "Technology Management",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -33,16 +34,85 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Teknoloji ile ilgili temel kavramlar ve prensiplerin tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yeniliğin tanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yenilik türleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yenilik derecesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Teknolojik süreksizlik",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Yenilik kaynağına ilişkin karar verme",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Statik yenilik modelleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik yenilik modelleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Yenilikçi bir organizasyonu oluşturmak ve yönetme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Teknoloji temin yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Teknoloji stratejisinin hazırlanması",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "Strategic Management of Technology and Innovation Burgelman, R.; Christensen, C.; Wheelwright, S. McGraw-Hill. (2008)",
    "The Management of Technology and Innovation: A Strategic Approach White, M.A. and Bruton, G.D. South-Western Cengage Learning. (2010)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=510",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=510"
  },
  "MHN 518": {
   "code": "MHN 518",
   "name": "Proje Yönetimi",
+  "nameEn": "Project Management",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -76,17 +146,86 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Tanımı, Proje Planlama Evreleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Yönetiminin Temel Aşamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İş Ayrışım Yapısı, Organizasyon Ayrışım Yapısı, Ok Diyagramları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kritik Yol Yöntemi (CPM)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Program Değerlendirme ve Gözden Geçirme Tekniği (PERT)",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Blok Diyagramları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kaynak Planlama ve Projenin Hızlandırılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kritik Süre ve Hızlandırma Maliyeti Belirlemede Doğrusal Programlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Proje Kontrolü, Projenin Kapatılması",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Projelerde Takımlaşma Süreci, Çatışma Yönetimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Proje Organizasyon Yapıları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "1. Lewis, J.P. (2006), “Fundamentals of Project Management”, Amacom, 3rd ed., New York",
    "2. Kerzner, H. (2003), “Project Management: A Systems Approach to Planning, Scheduling, and Controlling”, Eighth Edition, John Wiley&Sons Inc., Hoboken, New Jersey",
    "3. Project Management Ins. (2000), “A Guide to the Project Management Body of Knowledge”, PMBOK Guide, Newtown Square, Pennsylvania"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=518",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=518"
  },
  "MHN 520E": {
   "code": "MHN 520E",
   "name": "Marketing Analytics",
+  "nameEn": "Marketing Analytics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -119,18 +258,87 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Pazarlama Kavramının ve Pazar Yönelimli Düşüncenin Anlaşılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Stratejik Pazarlama Planlarının Geliştirilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Pazarlama Çevresinin İzlenmesi ve Bilgi Toplanması",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Son Tüketici Pazarının ve Davranışının İncelenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Örgütsel Pazarın ve Davranışının İncelenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Rekabet Stratejilerinin Oluşturulması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Pazar Bölümlerinin Belirlenmesi, Hedef Pazarlama ve Konumlandırma",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ürün ve Marka Stratejilerinin Oluşturulması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Fiyatlandırma Yaklaşımları ve Stratejileri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Pazarlama Kanallarının Tasarlanması ve Yönetimi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Bütünleşik İletişim Kanallarının Tasarlanması ve Yönetimi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "-Kotler, P.ve Keller, A. (2011), A Framework for Marketing Management, 5.Baskı, Prentice Hall.",
    "Kotler, P.ve Keller, A. (2011), Marketing Management, 14. Baskı, Prentice Hall.",
    "Tek, Ö.B. (1999 ), Pazarlama İlkeleri: Global Yönetimsel Yaklaşım, 8. Baskı, Beta Yayınevi.",
    "Harvard Business Review, Business Week, Marketing Türkiye, Capital vb.den derlenen makaleler. / Articles exempted from Harvard Business Review, Business Week, Marketing Turkiye, Capital, etc.)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=520",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=520"
  },
  "MHN 522E": {
   "code": "MHN 522E",
   "name": "Feasiblity Analysis",
+  "nameEn": "Feasiblity Analysis",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -162,16 +370,85 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fizibilite Analizine Giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Maliyet Türleri ve Projelerin Ekonomik Analizi için Kurallar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Belirsizlik Altında Projelerin Risk Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Projelerin Risk Simülasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tesis Yeri Seçimi ve Pazar Analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Proje Finansmanı & Değerlendirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kısa Proje Sunumları- Çok Ölçütlü Yatırım analizi ve Seçimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Gerçek Opsiyonların Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Vaka Çalışmalarının İncelenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Vaka Çalışmalarının İncelenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Vaka Çalışmalarının İncelenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "Park, C., 1993. Contemporary Engineering Economics. Addison-Wesley",
    "Badıru, A.B. and Omıtaomu, O.A, 2007. Computatıonal Economic Analysis for Engineerıng and Industry, CRC Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=522",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=522"
  },
  "MHN 599": {
   "code": "MHN 599",
   "name": "Dönem Projesi",
+  "nameEn": "Term Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -185,7 +462,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=599",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=599"
  }
 }

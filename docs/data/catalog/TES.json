@@ -2,6 +2,7 @@
  "TES 111E": {
   "code": "TES 111E",
   "name": "Proje I",
+  "nameEn": "Project I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -35,15 +36,87 @@
    "Hafta 13 · Planlama/Tasarımın geliştirilmesi",
    "Hafta 14 · Planlama/Tasarımın farklı modellerle sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje konularının tanıtılması; Doğal, tarihi ve kültürel çevre analiz çalışmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kente/çevreye/yapıya, obje-ürüne ilişkin doğal, tarihi ve kültürel analiz çalışmaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Basit tasarım problemlerine dair proje geliştirme ve 2 boyutlu modelleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Basit tasarım problemlerine dair proje geliştirme ve 2 boyutlu modelleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Basit tasarım problemlerine dair proje geliştirme ve 2 boyutlu modelleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Mekansal düşünce geliştirme ve kentsel/çevresel/yapısal/objeye-ürüne ilişkin mekanı ve ilişkilerini anlama",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kentsel/çevresel/yapısal/iç mekan ve obje-ürüne ilişkin çalışmalar, mekanın yorumlanması ve temsili",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Basit tasarım problemlerine dair 3 boyutlu tasarım çizimleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Proje kapsamında geliştirilen tasarım aracılığıyla bilgisayarda anlatım tekniklerini kullanma",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Görsel dil aracılığıyla proje kapsamında geliştirilen tasarım ürünlerini temsil etme",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Planlama/Tasarımın geliştirilmesi",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Planlama /Tasarımın geliştirilmesi",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Planlama/Tasarımın geliştirilmesi",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Planlama/Tasarımın farklı modellerle sunumu",
+    "outcomes": "4-5-6"
+   }
+  ],
   "textbooks": [
    "Francis D.K. Ching, Mimarlık ve Sanatta Yaratıcı bir Süreç: Çizim; çev. Çelen Birkan, YEM, 2003"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=111"
  },
  "TES 112E": {
   "code": "TES 112E",
   "name": "Anlat.Tek.I:Gör.İlet.&Tek.Res.",
+  "nameEn": "Vis.Comm.I:Visualiz.&Tch.Drw.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -79,16 +152,88 @@
    "Hafta 13 · Yapısal Elemanların Çizimi, Kesit ve Görünüş",
    "Hafta 14 · İşaretler ve Semboller"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarımın temel elemanları: Çizgi, biçim, renk, doku, gölge",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel ve karmaşık geometriler, topografya",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Obje/ürün geometrisi, insan, çevre, nesne ilişkisi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İzometrik ve artistik perspektif",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Görselleştirme, temel grafik elemanlar,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kompozisyon, kolaj",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Teknik Resim Ortamları, Araç ve Gereçleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Çizgi Tipleri ve Anlamları, serbest el çizim",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Teknik Yazı",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Teknik çizim ve ölçek, Ölçülendirme Esasları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "İzdüşüm Prensipleri, Paralel Dik ve Eğik İzdüşüm Teknikleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "3 boyutlu bulmacalarla egzersizler",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Yapısal Elemanların Çizimi, Kesit ve Görünüş",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "İşaretler ve Semboller",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Engineering Design Graphics, J.H. Earle, Addison-Wesley Publ., 1994.",
    "Francis D.K. Ching, Mimarlık ve Sanatta Yaratıcı bir Süreç: Çizim; çev. Çelen Birkan, YEM, 2003"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=112"
  },
  "TES 113E": {
   "code": "TES 113E",
   "name": "Temel Tsrım ve Görsel Sanatlar",
+  "nameEn": "Basic Design and Visual Arts",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -120,15 +265,87 @@
    "Hafta 13 · ASSEMBLAJ",
    "Hafta 14 · PORTFOLYO TASARIMI"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "KOMPOZİSYONA GİRİŞ: Bakmak, Görmek, Algılamak",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İNSAN-GÖRSEL ÇEVRE-NESNE",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İNSAN-GÖRSEL ÇEVRE-NESNE 1, 2 3 TEKRAR: Tekrar İlkesi ve İki Boyutlu Leke Düzenlemesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "FORM: Biçim ve Anlamı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "FORM: Doğal Biçimlerin Analitik Çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "FORM: Fotoğraftan Yeni Biçim ve Anlamlara Ulaşım",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "RENK: Renk Teorileri ve Munsell Renk Sistemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "RENK: Renk Üçgeni",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "DOKU: Doku ve Kompozisyon",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "DOKU: Doku ve Mekan",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "SOYUTLAMA: İki ve Üç Boyutlu Soyutlama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "KOLAJ",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "ASSEMBLAJ",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "PORTFOLYO TASARIMI",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Pentak, S.; Lauer, D. A., (2008) Design Basics, Australia : Thomson/Wadsworth"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=113",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=113"
  },
  "TES 121E": {
   "code": "TES 121E",
   "name": "Proje II",
+  "nameEn": "Project II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -162,15 +379,87 @@
    "Hafta 13 · Tasarımın 3 boyutlu temsil araçlarıyla geliştirilmesi",
    "Hafta 14 · Tasarımın 3 boyutlu temsil araçlarıyla geliştirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje konularının tanıtılması; 3 boyutlu temsil araçları ve 3 boyutlu düşüncenin ve temsilinin evrimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Proje konularının tanıtılması; 3 boyutlu temsil araçları ve 3 boyutlu düşüncenin ve temsilinin evrimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Çevre analizlerinin 2 ve 3 boyutlu sayısal ve sayısal olmayan temsil yöntemleriyle incelenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Çevre analizlerinin 2 ve 3 boyutlu sayısal ve sayısal olmayan temsil yöntemleriyle incelenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Çevre analizlerinin 2 ve 3 boyutlu sayısal ve sayısal olmayan temsil yöntemleriyle yorumlanması ve anlatılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Proje kapsamında program geliştirme; Çağdaş örnekler ve yaklaşımlarının incelenmesi ve değerlendirilmesi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kentsel/Çevresel/Yapısal/İç mekanı ve obje-ürünü anlama, yorumlama ve temsil etme",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 8,
+    "topic": "Strüktürel analiz",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 9,
+    "topic": "Tasarımın geliştirilmesi",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarımın geliştirilmesi",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarımın geliştirilmesi",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarımın geliştirilmesi",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarımın 3 boyutlu temsil araçlarıyla geliştirilmesi",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarımın 3 boyutlu temsil araçlarıyla geliştirilmesi",
+    "outcomes": "1-4-6"
+   }
+  ],
   "textbooks": [
    "Mohsen Mostafavi, David Leatherbarrow, Zaman İçinde Mimari: Binaların Yaşamı ve Yaşlanması Üzerine, Ötüken, 2005"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=121",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=121"
  },
  "TES 122E": {
   "code": "TES 122E",
   "name": "Anltm Tek.II: Görsel İltş.&Prs",
+  "nameEn": "Vis.CommII:Visualization&Persp",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -184,12 +473,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=122",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=122"
  },
  "TES 211E": {
   "code": "TES 211E",
   "name": "Proje III",
+  "nameEn": "Project III",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -203,7 +492,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TES&dersNo=211"
  }
 }

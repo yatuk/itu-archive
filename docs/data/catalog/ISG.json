@@ -2,6 +2,7 @@
  "ISG 502": {
   "code": "ISG 502",
   "name": "İş Sağlığı ve Güven.Risk Yön.",
+  "nameEn": "Risk Management in Occupational Safety and Health",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -34,6 +35,77 @@
    "Hafta 13 · Çeşitli Sektörlerde İş Güvenliği Riskinin Nasıl Değerlendirildiği Hakkında Vaka Analizleri",
    "Hafta 14 · Çeşitli Sektörlerde İş Güvenliği Riskinin Nasıl Değerlendirildiği Hakkında Vaka Analizleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Risk Yönetimine Genel Bakış – Risk Terminolojisi, İlkeleri ve Kavramları. Riziko, risk ve tehlike; risk sınıfları; riskin bileşenleri; risk kontrolü için stratejiler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Risk Modelleri ve Yönetimi – Birinci Dereceden Kavramlar/Yaklaşımlar, Genişletilmiş/Geliştirilmiş Yaklaşımlar, İleri Yaklaşımlar, Bütünleşik Yaklaşım.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Risk Yönetimine Sistematik Yaklaşım. Rizikonun saptanması ve risk kestirimi; riskin saptanması ve kontrol tedbirlerinin uygulanması ve sürdürülmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Endüstriyel Güvenlik ve Risk Yönetimi Programları. Güvenlik için Örgütlenme ve Yönetim Kalite, Çevre, Güvenlik ve Sağlık Yönetim Sistemleri (QUENSH)",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Risk Yönetimi – Risk Sahasının Korunması ve Kontrolü, Risk Ekonomisi, Kaza Araştırması ve Acil Durum Müdahalesi, Risk Algısı ve Risk İletişimi.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Risk Yönetimi – Hasar ve Kayıp Kontrolü, Risk Değerlendirme ve Yönetiminin Teftişi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Risk Değerlendirme – Riziko Sahasının Modellenmesi ve Risk Karakterizasyonu, Enformel Risk Değerlendirme, İş Emniyeti/Riziko Analizi, Ön Riziko Analizi/Riziko Analizi/İşyeri Risk Değerlendirmesi ve Kontrolü, Riziko İşletilebilirlik Çalışması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Risk Değerlendirme – Hata Ağacı Analizi, Olay Ağacı Analizi, Hata Türü ve Etkileri ve Kritiklik Analizi, Risk Skoru Hesabı, Fine’ın Çözüm Grafiği, TTC Riziko Derecelendirme Sistemi, FLAME Modeli.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Risk Azaltma – İnsan Hatasının Azaltılması, Risk Azaltma Stratejileri, Risk Mühendisliği",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Çeşitli Sektörlerde İş Güvenliği Riskinin Nasıl Değerlendirildiği Hakkında Vaka Analizleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Çeşitli Sektörlerde İş Güvenliği Riskinin Nasıl Değerlendirildiği Hakkında Vaka Analizleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Çeşitli Sektörlerde İş Güvenliği Riskinin Nasıl Değerlendirildiği Hakkında Vaka Analizleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Çeşitli Sektörlerde İş Güvenliği Riskinin Nasıl Değerlendirildiği Hakkında Vaka Analizleri"
+   }
+  ],
   "textbooks": [
    "Boyle, T. (2008) Health and Safety: Risk Management, 3rd edition, IOSH Services Ltd, ISBN-13: 978-0901357410",
    "Glendon, A.I., Clarke, S. & McKenna, E. (2006) Human Safety and Risk Management, 2nd Edition, CRC Press, ISBN-13: 978-0849330902.",
@@ -42,12 +114,12 @@
    "Sadhra, S.S. & Rampal, K.G. (1999) Occupational Health: Risk Assessment and Management, Government Institutes, ISBN-13: 978-0632041992.",
    "Wilson, L. & McCutcheon, C. (2003) Industrial Safety and Risk Management, The University of Alberta Press, ISBN-13: 978-0888643940."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=502"
  },
  "ISG 507": {
   "code": "ISG 507",
   "name": "Ulusal İş Sağlığı ve Güvenliği Mevzuatı",
+  "nameEn": "Occupational Health and Safety Legislation in Türkiye",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -80,6 +152,77 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş sağlığı ve güvenliği hukukunun oluşması, amacı ve kapsamı ile iş sağlığı ve güvenliği hakkının uluslararası ve ulusal kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İş sağlığı ve güvenliği hukukundan kaynaklanan yükümlülükler- 1. Devlete düşen yükümlülükler (İş sağlığı ve güvenliği örgütü kurma, çalışma hayatının denetim ve teftişi, iş sağlığı ve güvenliği hizmetlerinin desteklenmesi)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İş sağlığı ve güvenliği hukukundan kaynaklanan yükümlülükler- 2. İşverene düşen yükümlülükler (Genel ve özel yükümlülükler)",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 4,
+    "topic": "İş sağlığı ve güvenliği hukukundan kaynaklanan yükümlülükler- 3. Çalışanlara yükümlülükler ve çalışan ile işverenlere düşen yükümlülüklerin yerine getirilmemesi halinde çalışan ve işverenlerin hakları",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 5,
+    "topic": "İş sağlığı ve güvenliğine ilişkin idari ve cezai yaptırımlar",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 6,
+    "topic": "İş Sağlığı ve Güvenliği mevzuatının tarihsel gelişimi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Avruba Birliği OSH \"Framework Directive i(89/391/EEC) ,4857 sayılı İş kanunu,",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "6331 sayılı İş Sağlığı ve Güvenliği Kanunu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "6331 sayılı İş Sağlığı ve Güvenliği Kanunu/ İş Sağlığı ve Güvenliği ile ilgili tüzükler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "6331 sayılı İş Sağlığı ve Güvenliği Kanunu/ İş Sağlığı ve Güvenliği ile ilgili tüzükler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Revize edilen, yeni yayınlanan tüzük, yönetmelik ve tebliğler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "SARPER SÜZEK, IŞ GÜVENLIĞI HUKUKU, ANKARA 1985",
    "SARPER SÜZEK, IŞ HUKUKU, 9. BASI, İSTANBUL 2013",
@@ -89,12 +232,12 @@
    "http://www.casgem.gov.tr/",
    "http://www.csgb.gov.tr/csgbPortal/isggm.portal"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=507"
  },
  "ISG 509": {
   "code": "ISG 509",
   "name": "İşletme Hukuku",
+  "nameEn": "Business Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -130,16 +273,87 @@
    "Hafta 13 · Haksız rekabet ve rekabete aykırı davranışlar",
    "Hafta 14 · Haksız rekabet ve rekabete aykırı davranışlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Açılış ve dersin tanıtımı, hukuk kavramı, hukukun yaptırımları, benzer kavramlar, hukukun bölümleri (medeni, idare, ceza hukukları), hukukun kaynakları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Hukuki işlemler, borç ilişkileri, sözleşmeler",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Anayasa ve Cumhuriyetin nitelikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kişiler (gerçek ve tüzel)",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Haklar (türleri ve korunması)",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Satım, Kira ve finansal kira sözleşmeleri",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 7,
+    "topic": "Tüketicinin Korunması",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Ticaret hukuku ve ticaret şirketleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 9,
+    "topic": "Kıymetli evrak hukuku",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Fikri ve sınai mülkiyet hakları (marka, patent vb.)",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Haksız rekabet ve rekabete aykırı davranışlar",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Haksız rekabet ve rekabete aykırı davranışlar",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Haksız rekabet ve rekabete aykırı davranışlar",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Haksız rekabet ve rekabete aykırı davranışlar"
+   }
+  ],
   "textbooks": [
    "Savaş, Taşkent, 2012, İşletme Hukuku Bilgisi, Beta Yayınevi.",
    "Yılmaz Aslan, Doğan Şenyüz, Mevci Ergün, 2005, İşletme Hukuku, Ekin Kitabevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=509"
  },
  "ISG 514": {
   "code": "ISG 514",
   "name": "İnşaat İşlerinde İş Sağlığı ve Güvenliği",
+  "nameEn": "Health and Safety in Construction Works",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -173,6 +387,77 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavram ve tanımlar, İnşaatlarda iş kazalarının ve meslek hastalıklarının sayısal boyutları, sosyo-ekonomik açıdan önemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İnşaat işlerinde İş güvenliği mevzuatı: tüzük, yönetmelik ve standartlar, uluslar arası düzenlemeler. Devlet denetimi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Ulusal ve uluslar arası iş kazası istatistikleri, karşılaştırma ölçütleri, inşaat sektörünün diğer iş kolları ve dış ülkelerin inşaat sektörleri ile karşılaştırılması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İşverenler ile teknik elemanların iş güvenliği konusundaki idari, hukuksal ve cezai sorumlulukları. İnşaatlarda iş kazaları sonucu açılan tazminat davaları, davanın açılması, mahkeme süreci ve sonuçlanması",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "İnşaat sektöründe meydana gelen iş kazalarının zamansal dağılımları, Şantiye türlerine, büyüklüklerine, kazaya uğrayanların işteki unvanlarına, deneyimlerine göre dağılımları",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Ara Sınav",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "İnşaatlarda önemli iş kazası tipleri. İnsan düşmesi, malzeme düşmesi, elektrik çarpması, kazı kenarının göçmesi, yapı kısmının çökmesi, patlayıcı madde kazaları ve yapı makinası kazalarının oluş biçimlerine göre alt ayrımları ve dikkat edilmesi gereken hususlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Bina,yol,demiryolu, kanal, köprü, baraj inşaatları ve yıkım işlerinde en çok rastlanan kaza tipleri ve örnek olaylar.",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "İnşaat İş kazalarına neden olan güvensiz durum ve davranışlar, iş kazalarında kusurlu bulunanlar ve kusurlu bulunma nedenleri",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Şantiyelerde işçi sağlığını tehdit eden faktörler, ünitelerde hijyen sorunları, meslek hastalıkları ve alınması gereken önlemler.",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 11,
+    "topic": "Şantiyelerde sağlık ve güvenlik yönetimi, uluslar arası standartlar, Risk yönetimi, iş güvenliği değerlendirmesi ve gözetimi, ilgili dokümanların takibi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "Müngen U., Gürcanlı,G.E.,(2009) , İş Güvenliği , İTÜSEM İnşaat Yönetimi Sertifika Programı Ders Notu",
    "Hughes P., Ferret E., (2005), Introduction to Health and Safety in Construction, Elsevier.",
@@ -180,12 +465,12 @@
    "Dizdar, E., (2006) , İş Güvenliği, ABP Yayınevi & Matbaacılık, Trabzon.",
    "Lingard H., Rowlinson S., (2005), Occupational health and safety in construction project management, Spon Press,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=514",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=514"
  },
  "ISG 599": {
   "code": "ISG 599",
   "name": "Proje",
+  "nameEn": "Project",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -199,7 +484,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=599",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=599"
  }
 }

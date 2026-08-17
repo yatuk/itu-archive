@@ -2,6 +2,7 @@
  "PEM 101E": {
   "code": "PEM 101E",
   "name": "Peyzaj Tasarımı ve Temsil",
+  "nameEn": "Landscape Design and Representation",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=101"
  },
  "PEM 119E": {
   "code": "PEM 119E",
   "name": "Peyzaj Mimarlığına Giriş ve Etik",
+  "nameEn": "Int.Landscape Architec.&Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -43,12 +44,12 @@
   "textbooks": [
    "The Fundamentals of Landscape Architecture, T. Waterman, Lausanne ; Worthing : AVA Academia, c2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=119",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=119"
  },
  "PEM 120E": {
   "code": "PEM 120E",
   "name": "Natural Systems &Design",
+  "nameEn": "Natural Systems &Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -81,15 +82,73 @@
    "Hafta 13 · Tartışma_ Dünyadan Peyzaj Tasarım Örnekleri",
    "Hafta 14 · Tartışma_ Türkiye’den Peyzaj Tasarım Örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı / Doğa Üzerinden Okumalar / Doğal Parametreler"
+   },
+   {
+    "week": 2,
+    "topic": "Doğa Üzerinden Okumalar / Kültürel parametreler"
+   },
+   {
+    "week": 3,
+    "topic": "Vernneküler ve doğa"
+   },
+   {
+    "week": 4,
+    "topic": "Doku - Süreç İlişkisi"
+   },
+   {
+    "week": 5,
+    "topic": "Eko.Terminoloji"
+   },
+   {
+    "week": 6,
+    "topic": "Morfoloji- Topoğrafya"
+   },
+   {
+    "week": 7,
+    "topic": "Topoğrafya ve tasarım"
+   },
+   {
+    "week": 8,
+    "topic": "Sistem Teorisi - Doğa ve Tasarım"
+   },
+   {
+    "week": 9,
+    "topic": "Doğal bir parametre ve bir sistem olarak su – fluvial morfolojiler"
+   },
+   {
+    "week": 10,
+    "topic": "Tip- tipoloji- arketip kavramları / peyzaj arketipleri"
+   },
+   {
+    "week": 11,
+    "topic": "Yapay doğa- Analojiler"
+   },
+   {
+    "week": 12,
+    "topic": "Doğal sistemler ve tasarım arakesitinden örne çıkan kavramlar –operatif peyzajlar"
+   },
+   {
+    "week": 13,
+    "topic": "Tartışma_ Dünyadan Peyzaj Tasarım Örnekleri"
+   },
+   {
+    "week": 14,
+    "topic": "Tartışma_ Türkiye’den Peyzaj Tasarım Örnekleri"
+   }
+  ],
   "textbooks": [
    "Design with Nature, Ian McHarg, New York, J. Willey,1992"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=120",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=120"
  },
  "PEM 124E": {
   "code": "PEM 124E",
   "name": "His.ofLandscape Architecture I",
+  "nameEn": "His.ofLandscape Architecture I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -121,17 +180,89 @@
    "Hafta 13 · Modern Mimarlık ve Peyzaj",
    "Hafta 14 · Geç Modern, Post Modern Mimarlık ve Çağdaş Peyzaj Tasarımları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Antik Yunan Dönemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Roma Dönemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Bizans Dönemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Romanesk ve Gotik üsluplar.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Rönesans Dönemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Geç Rönesans ve Maniyerizm dönemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "SINAV",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Barok Üslup",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Barok Üslup",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Aydınlanma ve Endüstri Devrimi dönemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yüzyıl Dönümünde Mimarlık ve Peyzaj",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Modern Mimarlık ve Peyzaj",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Geç Modern, Post Modern Mimarlık ve Çağdaş Peyzaj Tasarımları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "The Landcape Of Man, Jellicoe, G.- S., , London:Thames And Hudson, 2000, 0500340617",
    "Garden History. Issues, Approaches, Methods, Hunt, J. D. (Ed.), Washington: Dumbarton Oaks Research Library and Collection, 1992, 0884021971",
    "The History Of Garden Design. The Western Tradition From The, Mosser, M., Teyssot, G., (Ed.) , London: Thames And Hudson, 1991,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=124",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=124"
  },
  "PEM 126E": {
   "code": "PEM 126E",
   "name": "Peyzaj Mim. Tarih Teorisi ve Eleştirisi I",
+  "nameEn": "Hist.Theo.&Crtc.in Lndsc.Arc.I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -152,12 +283,12 @@
   "textbooks": [
    "Jellicoe, G.- S., 2000. The Landcape Of Man, London:Thames And Hudson. Turner, T., 2005. Garden History. Philosophy and Design 2000 BC-2000 AD, Spon Press, London – New York."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=126",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=126"
  },
  "PEM 131E": {
   "code": "PEM 131E",
   "name": "Peyzaj Mimarlığına Giriş",
+  "nameEn": "Introduction to Landscape Architecture",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -190,17 +321,89 @@
    "Hafta 13 · Sert Peyzaj Elemanları, Kent Mobilyaları",
    "Hafta 14 · Öğrenci Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Peyzaj Mimarlığının gelişimi, diğer meslekler ile ilişkileri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Peyzajı Şekillendiren Doğal ve Kültürel Süreçler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Peyzaj Tasarım Elemanları (Yumuşak Peyzaj Elemanları, Topoğrafya)",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Topografya Eğim Analizi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Bitki Materyali",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Yüzeyleme Kavramı ve Uygulamaları, Ara Sınav",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sert Peyzaj Elemanları,Su Elemanı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Sert Peyzaj Elemanları, Zemin Kaplamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Sert Peyzaj Elemanları, Merdiven ve Rampalar",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Sert Peyzaj Elemanları, Kent Mobilyaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Basic Elements of Landscape Architectural Design, N. K. Booth, Prospect Heights, Ill. ,Waveland, 1999, 0881334782",
    "Introduction to Landscape Design, J. L. Motloch, New York : Wiley, 2001, 0471352918",
    "Form and Fabric in Landscape Architecture,A Visual Intro, C. Dee, London : Spon Press, 2001, 0415246377"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=131",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=131"
  },
  "PEM 132E": {
   "code": "PEM 132E",
   "name": "Bitki Materyali I",
+  "nameEn": "Plant Material I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -233,17 +436,89 @@
    "Hafta 13 · Uygulama, Öğrenci sunuşları",
    "Hafta 14 · Uygulama, Öğrenci sunuşları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtılması ve giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Botanik Kavramları,Ödev konularının dağıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Temel Botanik Kavramları , Bitkilerin coğrafi yayılışı, Ödev konularının takibi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bitki Tanıma ,Uygulama, Ödev konularının takibi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Bitki Tanıma, Uygulama, Ödev konularının takibi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Bitki Tanıma, Uygulama, Ödev konularının takibi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Bitki Tanıma, Uygulama, Ödev konularının takibi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "ARA SINAV VE ÖDEVLERİN TESLİMİ",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Bitki Tanıma, Uygulama, Ödev konularının dağıtılması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Bitki Tanıma, Uygulama, Ödev konularının takibi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulama, Öğrenci sunuşları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Bitki Tanıma, Uygulama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama, Öğrenci sunuşları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama, Öğrenci sunuşları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Dendroloji 2 Ders kitabı, Prof. Dr. Faik YALTIRIK , İÜ ORMAN FAK. YAYINLARI, 1993,",
    "Encyclopedia of Plants & Flowers, Christopher Brickell, Royal Horticultural Society Publications, 2006, 1405314540",
    "Bitki Materyali 1,2,3, Besalet PAMAY, , 1992,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=132",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=132"
  },
  "PEM 134E": {
   "code": "PEM 134E",
   "name": "Bitki Materyali I",
+  "nameEn": "Plant Material I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -275,15 +550,73 @@
    "Hafta 13 · Teknik gezi",
    "Hafta 14 · Teknik gezi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bitki büyümesi, çevresel faktörlerin ve yetişme yeri koşullarının büyümeye etkileri"
+   },
+   {
+    "week": 2,
+    "topic": "İklim unsurları, iklim bölgeleri, iklime duyarlı peyzaj tasarımı"
+   },
+   {
+    "week": 3,
+    "topic": "Jeomorfoloji, yer şekli, toprak tipleri ve özelliklerinin flora üzerindeki etkisi"
+   },
+   {
+    "week": 4,
+    "topic": "Bitki bilimi, Bitki Sınıflandırması, Botanik adlandırma"
+   },
+   {
+    "week": 5,
+    "topic": "Gymnospermlere Giriş"
+   },
+   {
+    "week": 6,
+    "topic": "Gymnospermlere Giriş"
+   },
+   {
+    "week": 7,
+    "topic": "Çiçekli Bitkilere Giriş"
+   },
+   {
+    "week": 8,
+    "topic": "Çiçekli Bitkilere Giriş"
+   },
+   {
+    "week": 9,
+    "topic": "Yarıyıl Sınavı"
+   },
+   {
+    "week": 10,
+    "topic": "Çizim Egzersizi"
+   },
+   {
+    "week": 11,
+    "topic": "Çizim Egzersizi"
+   },
+   {
+    "week": 12,
+    "topic": "Teknik gezi"
+   },
+   {
+    "week": 13,
+    "topic": "Teknik gezi"
+   },
+   {
+    "week": 14,
+    "topic": "Teknik gezi"
+   }
+  ],
   "textbooks": [
    "Encyclopedia of Plants & Flowers, Royal Horticultural Society Publications, 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=134",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=134"
  },
  "PEM 205E": {
   "code": "PEM 205E",
   "name": "Comp. Aided Landscape Arch.",
+  "nameEn": "Comp. Aided Landscape Arch.",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -303,12 +636,12 @@
   "textbooks": [
    "3ds Max 9 accelerated : a full-color guide, James Yeon, Seoul, Korea : YoungJin.com Inc., c2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=205"
  },
  "PEM 206E": {
   "code": "PEM 206E",
   "name": "Kentsel tasarım",
+  "nameEn": "Urban Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -322,12 +655,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=206"
  },
  "PEM 207E": {
   "code": "PEM 207E",
   "name": "Statistics",
+  "nameEn": "Statistics",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -341,12 +674,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=207"
  },
  "PEM 209E": {
   "code": "PEM 209E",
   "name": "Yer Biçimi ve Yapılı Çevre Stüdyosu",
+  "nameEn": "Landform & Built Envir.Studio",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -366,12 +699,12 @@
   "textbooks": [
    "Dee,Catherine. 2001. Form and Fabric in Landscape Architecture: A Visual Introduction, Spon Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=209"
  },
  "PEM 210E": {
   "code": "PEM 210E",
   "name": "Bitkilendirme Tasarım Stüdyosu",
+  "nameEn": "Planting Design Studio",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -391,12 +724,12 @@
   "textbooks": [
    "ROBINSON, N., The Planting Design Handbook, Revised Second Edition, 2011"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=210",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=210"
  },
  "PEM 212E": {
   "code": "PEM 212E",
   "name": "Peyzaj Mimarlığı Projesi I",
+  "nameEn": "Landscape Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -429,15 +762,87 @@
    "Hafta 13 · 1/500 genel tasarım kararları, farklı temaları içeren fiziksel kurgunun geliştirilmesi",
    "Hafta 14 · 1/200 tasarım kararları, Jüri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "1.Proje konusunun verilmesi, Stüdyoda grup çalışması, Stüdyo çalışmasının sunumu, İkinci proje konusunun verilmesi, proje konusu ile ilgili tartışmalar",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 2,
+    "topic": "Birinci proje konusuna yönelik fikir projesinin geliştirilmesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 3,
+    "topic": "1/500 genel tasarım kararlarının geliştirilmesi, 1/100 genel tasarım kararlarının geliştirilmesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "1/50 -1/20 konstrüksiyon detayı, Jüri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "İkinci proje konusunun verilmesi, çalışma gruplarının ayrılması, arazi gezisi, ikinci proje gezisi ile ilgili araştırma, analiz ve sentez çalışması, öğrenci sunumları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "İkinci proje gezisi ile ilgili araştırmai analiz ve sentez çalışması, öğrenci sunumları,1/500 fikir projesinin geliştirilmesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "1/500 fikir projesinin geliştirilmesi, 1/200 genel tasarım kararlarının geliştirilmesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "1/200 genel tasarım kararlarının geliştirilmesi, Jüri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Üçüncü proje konusunun verilmesi, tartışmalar, Arazi gezisi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Teknik gezi sonrası her bir öğrencinin proje alanına ilişkin kişisel deneyimlerini aktarması, öğrenci sunumları, 1/1000 arazi maketi teslim",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "1/1000 fikir projesi, 1/1000 genel tasarım kararları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "1/500 genel tasarım kararları, farklı temaları içeren fiziksel kurgunun geliştirilmesi, 1/500 genel tasarım kararları, farklı temaları içeren fiziksel kurgunun geliştirilmesi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "1/500 genel tasarım kararları, farklı temaları içeren fiziksel kurgunun geliştirilmesi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "1/200 tasarım kararları, Jüri",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Alexander, C., 2002. The Nature of Order, (Books One, Two, Three, Four) published by The Center for Environmental Structure, California."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=212"
  },
  "PEM 214E": {
   "code": "PEM 214E",
   "name": "Dayanıklı Kentsel Tasarım",
+  "nameEn": "Resilient Urban Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -460,12 +865,12 @@
   "textbooks": [
    "MARION, R. & Greed C., (2001). Approaching to Urban Design: The Design Process, Longman, UK."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=214"
  },
  "PEM 222": {
   "code": "PEM 222",
   "name": "Toprak Bilgisi",
+  "nameEn": "Soil Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -499,17 +904,89 @@
    "Hafta 13 · Toprağın kimyasal özellikleri",
    "Hafta 14 · Toprak erozyonu, topraktaki besin maddeleri, bitki beslenmesi ve gübreleme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Toprağın tanımı, Toprağın oluşum olayları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Anakayalardaki elementler ve mineraller, minerallerin iyonik yapısı, minerallerin sınıflandırılası",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Toprak yapan ana kayalar ve ana materyaller",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Toprağın oluşumunda etkili olan faktörler, fiziksel, kimyasal ve biyolojik ayrışma olayları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Toprağın genel yapısı, kil mineralleri ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Toprağın genel yapısı, kil mineralleri ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Toprak canlılarının sınıflandırılması,toprağın organik maddesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Toprağın fiziksel özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Toprağın fiziksel özellikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Toprağın fiziksel özellikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Toprağın fiziksel özellikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Toprağın kimyasal özellikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Toprağın kimyasal özellikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Toprak erozyonu, topraktaki besin maddeleri, bitki beslenmesi ve gübreleme",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Urban Soil in Landscape Design, Phillip J. Craul, New York : Wiley, 1992, 047180598X",
    "Handbook of soils for landscape architects , Robert F. Keefer, Oxford : Oxford University Press, 2000, 0195121023",
    "The nature and properties of soils , Nyle C. Brady, New York : Macmillan, 1990,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=222",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=222"
  },
  "PEM 223E": {
   "code": "PEM 223E",
   "name": "Peyzaj Mimarlığı Tarihi II",
+  "nameEn": "His.of Landscape Architec. II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -541,17 +1018,89 @@
    "Hafta 13 · Geç Osmanlı Döneminde Bahçe",
    "Hafta 14 · Kültürel peyzaj kavramı, kültür mirası olarak bahçe ve koruma ile ilgili yaklaşımlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Çin Bahçesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Japon Bahçesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İslam Bahçesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "İslam Bahçesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "İran Bahçesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Hint - Moğol Bahçesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "SINAV",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ortaçağda Türk Bahçesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Erken Osmanlı Döneminde Bahçe",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Klasik Osmanlı Döneminde Bahçe",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Geç Osmanlı Döneminde Bahçe",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Geç Osmanlı Döneminde Bahçe",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Kültürel peyzaj kavramı, kültür mirası olarak bahçe ve koruma ile ilgili yaklaşımlar",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "The Landscape Of Man, Jellicoe, G.- S., , London:Thames And Hudson, 2000, 0500340617",
    "Hasbahçe: Osmanlı Kültüründe Bahçe ve Çiçek, Atasoy, N., , İstanbul: Koç Kültür ve , 2002, 9752960162",
    "Form and space in Japanese Architecture and Gardens, Carver, N. F., Tokyo : Shokokusha, 1993,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=223",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=223"
  },
  "PEM 225E": {
   "code": "PEM 225E",
   "name": "Hist.Theo.&Crtc.inLndsc.Arc.II",
+  "nameEn": "Hist.Theo.&Crtc.inLndsc.Arc.II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -571,12 +1120,12 @@
   "textbooks": [
    "Swaffield S. (ed.), 2002. Theory in Landscape Architecture, , PENN Press, Philadelphia."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=225",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=225"
  },
  "PEM 231E": {
   "code": "PEM 231E",
   "name": "Bitki Materyali II",
+  "nameEn": "Plant Material II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -609,17 +1158,75 @@
    "Hafta 13 · Öğrenci Sunumları",
    "Hafta 14 · Öğrenci Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Peyzajı tasarlamak"
+   },
+   {
+    "week": 2,
+    "topic": "Teknik gezi"
+   },
+   {
+    "week": 3,
+    "topic": "Teknik gezi"
+   },
+   {
+    "week": 4,
+    "topic": "Teknik gezi"
+   },
+   {
+    "week": 5,
+    "topic": "Çalılar ve tırmanıcı bitkiler"
+   },
+   {
+    "week": 6,
+    "topic": "Yer örtücüler"
+   },
+   {
+    "week": 7,
+    "topic": "Su bitkileri, otsu bitkiler ve kır çiçekleri / Yeşil çatı bitkileri ve Dikey Bahçeler"
+   },
+   {
+    "week": 8,
+    "topic": "Türkiye'nin fitocoğrafik bölgeleri"
+   },
+   {
+    "week": 9,
+    "topic": "Yarıyıl Sınavı"
+   },
+   {
+    "week": 10,
+    "topic": "Çizim Egzersizi"
+   },
+   {
+    "week": 11,
+    "topic": "Çizim Egzersizi"
+   },
+   {
+    "week": 12,
+    "topic": "Çizim Egzersizi"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Sunumları"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Sunumları"
+   }
+  ],
   "textbooks": [
    "Dendroloji 2 Ders kitabı, Prof. Dr. Faik YALTIRIK , İÜ ORMAN FAK. YAYINLARI, 1993,",
    "Encyclopedia of Plants & Flowers,, Royal Horticultural Socie, Christopher Brickell , DORLING KINDERSLEY LTD., 2006, 1405314540",
    "Bitki Materyali 1,2,3, Besalet PAMAY, , 1992,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=231",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=231"
  },
  "PEM 241E": {
   "code": "PEM 241E",
   "name": "Peyzaj Mimarlığı Kuramı",
+  "nameEn": "Theory of Landcape Architecture",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -653,17 +1260,89 @@
    "Hafta 13 · Yer, Mekan ve Bölge",
    "Hafta 14 · Yer, Mekan ve Bölge"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Peyzaj Maimarlığı Kuramına Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Peyzaj Mimarlığı Kuramının Doğası, Garett Eckbo ve 50 li yıllar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Peyzaj Mimarlığı Kuramının Doğası, James Corner ve 90 lı yıllar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Toplum, Dil ve Peyzajın Tasviri, J.D.Hunt I II",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Toplum, Dil ve Peyzajın Tasviri, J.D.Hunt III IV",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ekolojik Tasarım ve Sürdürülebilirliğin Estetiği, Ian McHarg ve 60 lı & 70 li yıllar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Ekolojik Tasarım ve Sürdürülebilirliğin Estetiği, Ann Whiston Spirn ve 80 li yıllar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Biçim, Anlam ve Deneyim, Geoffrey & Susan Jellicoe",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Biçim, Anlam ve Deneyim, Peter Walker ve günümüz",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım Süreci, Hideo Sasaki ve 50 li yıllardan 80 lere",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım Süreci, Kevin Lynch & Gary Hack and 80 li yıllardan günümüze",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yer, Mekan ve Bölge",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Yer, Mekan ve Bölge",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Theory in Landscape Architecture: A Reader , Swaffield, S. (ed.), Philadelphia : University of Pennsylvania Press, 2002, 0812218213",
    "Landscape Architecture Theory: An Evolving Body of Thought, Michael D. Murphy, Long Grove, Ill. : Waveland Press Inc, 2005, 1577663578",
    "Language of Landscape, Anne Whiston Spirn, New Haven, Conn. : Yale University Press, 1998, 0300082940"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=241",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=241"
  },
  "PEM 242E": {
   "code": "PEM 242E",
   "name": "Landscape Eco.&Its Ref.onDsg.",
+  "nameEn": "Landscape Eco.&Its Ref.onDsg.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -697,17 +1376,89 @@
    "Hafta 13 · Doğa koruma, Doğa koruma alanı",
    "Hafta 14 · Ekolojik Planlama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ekoloji kavramı, Ekoloji ilkeleri, ekosistem kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Peyzaj ve peyzaj ekolojisi kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Peyzajları ve ekosistemleri etkileyen ekolojik faktörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Yeryüzü şekilleri, genel mevki özellikleri, yerel mevki özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kent, açık alan ve orman ekosistemlerinde yeryüzü şekli özelliklerinin diğer ekolojik faktörlerle ilişkisi, arazi yetenek sınıfları ve arazi kullanım şekli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İklim özellikleri- Ara Sınav",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "İklim özellikleri, hava nemi ve yağışların oluşumu, su ekonomisi kavramı, kent, açık alan ve orman ekosisteminlerinde rüzgar ilişkileri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İklim özellikleri, hava hareketleri, yeryüzü şeklinin rüzgar oluşumuna etkileri, Rüzgarın bitkiler üzerindeki etkileri, rüzgar zararlarına karşı alınabilecek önlemler, rüzgar perdeleri, kent, açık ala",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Toprak özellikleri, ekosistemlerde canlıların karşılıklı özellikleri, beslenme zinciri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ekolojik sorunlar, Türkiyenin enerji durumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Ekolojik sorunlar, hava kirliliği sorunları, hava kirliliğinin bitkiler üzerindeki etkileri, hava kirliliğine karşı alınabilecek önlemler, su kirliliği, su kirliliğinin bitkiler üzerindeki etkisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Toprak kirliliği, toprak kirliliğine karşı alınabilecek önlemler, radyasyon kirliliği, gürültü kirliliği,",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Doğa koruma, Doğa koruma alanı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Ekolojik Planlama",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "The Ecological Design Handbook, STITT, F, Mc Graw Hill, 1999, 0070614997",
    "Micro-climatic Landscape Design, creating thermal comfort an, Robert D. Brown, Terry J. Gillespie, New York : J. Wiley & Sons, 1995, 0471056677",
    "Landscape Ecology, Richard T.T. Forman, Michel Godron, New York : Wiley, 1986, 0471870374"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=242",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=242"
  },
  "PEM 243E": {
   "code": "PEM 243E",
   "name": "Peyzaj Konstrüksiyonu I",
+  "nameEn": "Landscape Construction I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -721,12 +1472,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=243",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=243"
  },
  "PEM 244E": {
   "code": "PEM 244E",
   "name": "Peyzaj Konstrüksiyonu I",
+  "nameEn": "Landscape Construction II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -740,12 +1491,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=244",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=244"
  },
  "PEM 246E": {
   "code": "PEM 246E",
   "name": "Bitkilendirme Tasarımı",
+  "nameEn": "Planting Desing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -759,12 +1510,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=246",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=246"
  },
  "PEM 248E": {
   "code": "PEM 248E",
   "name": "Bitkilendirme Tasarımı",
+  "nameEn": "Planting Desing",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -778,12 +1529,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=248",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=248"
  },
  "PEM 253E": {
   "code": "PEM 253E",
   "name": "Peyzaj Konstrüksiyonu I",
+  "nameEn": "Landscape Construction I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -803,12 +1554,12 @@
   "textbooks": [
    "Strom, S., Nathan K. & J. Woland, Site Engineering for Landscape Architects, John Wiley & Sons, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=253",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=253"
  },
  "PEM 254E": {
   "code": "PEM 254E",
   "name": "Peyzaj Konstrüksiyonu II",
+  "nameEn": "Landscape Construction II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -822,12 +1573,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=254",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=254"
  },
  "PEM 256E": {
   "code": "PEM 256E",
   "name": "Planting Design Studio",
+  "nameEn": "Planting Design Studio",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -841,12 +1592,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=256",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=256"
  },
  "PEM 303E": {
   "code": "PEM 303E",
   "name": "Int.to Geographical Inf.Sys.",
+  "nameEn": "Int.to Geographical Inf.Sys.",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -880,15 +1631,73 @@
    "Hafta 13 · GIS ve kentsel peyzaj planlaması uygulamaları",
    "Hafta 14 · GIS ve kırsal peyzaj planlaması uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı ve GIS’in tarifi"
+   },
+   {
+    "week": 2,
+    "topic": "GIS işlevleri ve parçaları"
+   },
+   {
+    "week": 3,
+    "topic": "Coğrafik veri modeli olarak harita: Mekansal düşünmenin dili."
+   },
+   {
+    "week": 4,
+    "topic": "GIS veri strüktürü ve sistemleri"
+   },
+   {
+    "week": 5,
+    "topic": "GIS veri girişi ve veri sistemleri"
+   },
+   {
+    "week": 6,
+    "topic": "GIS’te veri sorgulama"
+   },
+   {
+    "week": 7,
+    "topic": "GIS ve bağlantılı teknolojiler"
+   },
+   {
+    "week": 8,
+    "topic": "GIS ve Uzaktan Algılama"
+   },
+   {
+    "week": 9,
+    "topic": "CAD ve GIS"
+   },
+   {
+    "week": 10,
+    "topic": "GIS’te veri analizi"
+   },
+   {
+    "week": 11,
+    "topic": "GIS’te ileri analizler"
+   },
+   {
+    "week": 12,
+    "topic": "GIS veri çıktıları"
+   },
+   {
+    "week": 13,
+    "topic": "GIS ve kentsel peyzaj planlaması uygulamaları"
+   },
+   {
+    "week": 14,
+    "topic": "GIS ve kırsal peyzaj planlaması uygulamaları"
+   }
+  ],
   "textbooks": [
    "DeMers M. N., (2008) Fundamentals Of Geographical Information Systems, John Wiley And Sons, Canada. 4th Edition."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=303"
  },
  "PEM 305E": {
   "code": "PEM 305E",
   "name": "Peyzaj İnşaatı II",
+  "nameEn": "Landscape Construction II",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -908,12 +1717,12 @@
   "textbooks": [
    "Harris, C. W. and N. T. Dines, Time-Saver Standards for Landscape Architecture, McGraw-Hill, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=305"
  },
  "PEM 307E": {
   "code": "PEM 307E",
   "name": "Urbanism & Planning Law",
+  "nameEn": "Urbanism & Planning Law",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -946,15 +1755,73 @@
    "Hafta 13 · Yapı izin ve denetimi",
    "Hafta 14 · 2. ARA SINAV"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş-Şehircilik disiplini çalışma alanı ve ölçekleri"
+   },
+   {
+    "week": 2,
+    "topic": "Planlama, şehir planlama ve şehirsel arazi kullanımı"
+   },
+   {
+    "week": 3,
+    "topic": "Şehirsel gelişim süreci"
+   },
+   {
+    "week": 4,
+    "topic": "Şehirsel ulaşım"
+   },
+   {
+    "week": 5,
+    "topic": "Şehirsel tasarım"
+   },
+   {
+    "week": 6,
+    "topic": "1. ARA SINAV"
+   },
+   {
+    "week": 7,
+    "topic": "Hukukun dalları ve Türk Hukuk Sistemi içinde İmar Hukukunun yeri, kapsamı, uygulama alanı"
+   },
+   {
+    "week": 8,
+    "topic": "Nazım İmar Planları"
+   },
+   {
+    "week": 9,
+    "topic": "Özel amaçlı planlar"
+   },
+   {
+    "week": 10,
+    "topic": "Özel amaçlı planlar"
+   },
+   {
+    "week": 11,
+    "topic": "Özel amaçlı planlar"
+   },
+   {
+    "week": 12,
+    "topic": "İmar planlarının uygulanması"
+   },
+   {
+    "week": 13,
+    "topic": "Yapı izin ve denetimi"
+   },
+   {
+    "week": 14,
+    "topic": "2. ARA SINAV"
+   }
+  ],
   "textbooks": [
    "Schwalbach, G., 2009, Basics Urban Analysis, Birkhausel Basel, Berlin."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=307",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=307"
  },
  "PEM 311E": {
   "code": "PEM 311E",
   "name": "Peyzaj Mimarlığı Projesi II",
+  "nameEn": "Landscape Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -987,15 +1854,87 @@
    "Hafta 13 · detay çalışmaları.konstrüksiyon detayları, detay çalışmaları. sistem detayları. 1/100.1/50. 1/20 plan, kesit, maket",
    "Hafta 14 · Detay çalışmaları. plantasyon detayları.1/100.1/50.1/20 plan, kesit, maket, proje sunum çalışmaları. seminer"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Poje konusunun verilmesi, Arazi gezisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Proje alanına yönelik analiz çalışmaları,mevcut durum tespiti,1/1000 ortak maket teslimi, Proje alanına yönelik kavramsal şemanın ge",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Proje alanına yönelik 1/1000 genel tasarım kararlarının geliştirilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "1/1000 genel tasarım kararlarının geliştirilmesi, Fikir projesi sunumları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Fikir projesi teslimi, Fiziksel kurgunun geliştirilmesi,1/ 500 tasarım kararları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Fiziksel kurgunun geliştirilmesi,1/ 500 tasarım kararları,1/500 genel plantasyon kararları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Fiziksel kurgunun geliştirilmesi,1/ 500 tasarım kararları, 1/500 genel plantasyon kararları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Avan proje sunum . 1/1500 plan. kesit. skeç. 3 boyutlu ifadeler. kolaj .maket, ARA TESLİM",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Fiziksel kurgunun geliştirilmesi. genel plantasyon kararları1/500 plan, eskiz çalışması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "1/200 yapısal çözümler, plantasyon kararları. seminer,",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "1/200 yapısal çözümler, plantasyon kararları. seminer",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Avan proje sunum.1/200 plan. kesit. Maket,detay çalışmaları.konstrüksiyon detayları. 1/100.1/50.1/20 plan, kesit, maket",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "detay çalışmaları.konstrüksiyon detayları, detay çalışmaları. sistem detayları. 1/100.1/50. 1/20 plan, kesit, maket",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Detay çalışmaları. plantasyon detayları.1/100.1/50.1/20 plan, kesit, maket, proje sunum çalışmaları. seminer",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "LITTLEWOOD, M., Landscape Detailing, Butterworth, 2001"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=311"
  },
  "PEM 312E": {
   "code": "PEM 312E",
   "name": "Peyzaj Mimarlığı Projesi III",
+  "nameEn": "Landscape Design III",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1028,15 +1967,87 @@
    "Hafta 13 · detay çalışmaları.konstrüksiyon detayları, sistem detayları",
    "Hafta 14 · detay çalışmaları, proje sunum çalışmaları. seminer"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje konusunun verilmesi, Arazi gezisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje alanına yönelik analiz çalışmaları, 1/2000 ortak maket teslimi, seminer, Proje alanına yönelik kavramsal şemanın geliştirilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "1/1000 genel tasarım kararlarının geliştirilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "1/1000 genel tasarım kararlarının geliştirilmesi, Fikir projesi sunumları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "1/1000 fikir projesi teslimi, Fiziksel kurgunun geliştirilmesi, 1/500 genel peyzaj tasarım kararları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "1/500 genel peyzaj tasarım kararları, Bitkisel tasarım kararlarının geliştirilmesi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "1/500 genel peyzaj tasarım kararları, Bitkisel tasarım kararlarının geliştirilmesi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Avan proje sunumu, Ara teslim",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "1/500 genel peyzaj tasarım kararları, eskiz çalışması",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "1/200 yapısal çözümler, plantasyon kararları. bitki listeleri. plan. kesit. kolaj. maket",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "1/200 yapısal çözümler, plantasyon kararları. bitki listeleri. plan. kesit. kolaj. maket",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "avan proje sunum.1/200 plan. kesit. Maket, detay çalışmaları.konstrüksiyon detayları. 1/100.1/50.1/20 plan, kesit, maket",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "detay çalışmaları.konstrüksiyon detayları, sistem detayları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "detay çalışmaları, proje sunum çalışmaları. seminer",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "GOOG, A., Park and Recreation Structures, Princeton Press, 1999"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=312"
  },
  "PEM 315E": {
   "code": "PEM 315E",
   "name": "Urbanism & Planning Law",
+  "nameEn": "Urbanism & Planning Law",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1050,12 +2061,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=315"
  },
  "PEM 316E": {
   "code": "PEM 316E",
   "name": "Urban Land. Pln& Design",
+  "nameEn": "Urban Land. Pln& Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1076,12 +2087,12 @@
   "textbooks": [
    "Berrizbeitia, A. (ed), Urban landscape: Critical concepts in built environment, London : Routledge, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=316",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=316"
  },
  "PEM 317E": {
   "code": "PEM 317E",
   "name": "Kent Mobilyaları ve Mekan",
+  "nameEn": "Urban Furniture and Space",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1115,15 +2126,87 @@
    "Hafta 13 · Seminerler",
    "Hafta 14 · Seminerler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kentsel mekan ve kent mobilyası kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kent mobilyalarının tarihsel gelişimi, örnekler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kent mobilyası tasarım ölçütleri, işlevsel ölçütler, prsikolojik ölçütler, teknolojik ölçütler, örneklerin değerlendirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kent mobilyalarının sınıflandırılması, alt yapıya bağlı kent mobilyaları, örnekleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Kent mobilyalarının sınıflandırılması, alt yapıya bağlı olmayan kent mobilyaları, örnekler",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Kent mobilyaları ve kentsel mekan arasındaki görsel ve işlevsel ilişkiler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Uygun kent mobilyası seçimine ilişkin ölçütler",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Uygun kent mobilyası seçimine ilişkin ölçütler",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Kent mobilyası ve vandalism",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Farklı ülkelerde kentsel mekanlarda kullanılan kent mobilyası örnekleri",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Farklı ülkelerde kentsel mekanlarda kullanılan kent mobilyası örnekleri",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Seminerler",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Seminerler",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Urban Furniture Selection, author, Jacobo Krauel, Barcelona, Spain , 2010 New urban elements ,author, Jacobo Krauel ; text contributed by the companies, edited and translated by William George, Barcelona, Spain : Links, 2007"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=317",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=317"
  },
  "PEM 318E": {
   "code": "PEM 318E",
   "name": "Urban Landscape Plan.&Design",
+  "nameEn": "Urban Landscape Plan.&Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1137,12 +2220,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=318",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=318"
  },
  "PEM 320E": {
   "code": "PEM 320E",
   "name": "Bilgisayar Destekli Peyzaj Mimarlığı",
+  "nameEn": "Computer Aided Landscape Architecture",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1176,15 +2259,87 @@
    "Hafta 13 · Peyzaj tasarımı yazılımlarına ilişkin seminer sunumları",
    "Hafta 14 · Peyzaj tasarımı yazılımlarına ilişkin seminer sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı, Bilgisayar ortamında tasarımın irdelenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayar ortamında tasarımın irdelenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "CAD ortamında tasarım uygulamaları ve yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "AutoCad ile peyzaj tasarım yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "AutoCad ile peyzaj tasarım yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "AutoCad ile peyzaj tasarım yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "3DS Max ile peyzaj tasarım yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "3DS Max ile peyzaj tasarım yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Modelleme mantığı,Sahne hazırlama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Modelleme mantığı,Sahne hazırlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Malzeme oluşturma,Rendering ve Animasyon",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Malzeme oluşturma,Rendering ve Animasyon",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Peyzaj tasarımı yazılımlarına ilişkin seminer sunumları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Peyzaj tasarımı yazılımlarına ilişkin seminer sunumları",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=320",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=320"
  },
  "PEM 322E": {
   "code": "PEM 322E",
   "name": "Kentsel Tasarım",
+  "nameEn": "Urban Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1218,17 +2373,89 @@
    "Hafta 13 · Planlama Kademelenmesi ve Tasarım İlişkisi",
    "Hafta 14 · Öğrenci Seminerleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kentsel mekan ve kentsel tasarım kavramlarına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kentsel mekandaki insan faaliyetleri ve elemanları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kentsel mekan peyzaj ilişkileri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kentsel mekan peyzaj ilişkileri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kentsel mekanın, insan-çevre ilişkileri, çevre, mekan tanımları, çevresel uyarılar, algılama ve kavrama süreçleri ile değerlendirilmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kentsel mekanın, insan-çevre ilişkileri, çevre, mekan tanımları, çevresel uyarılar, algılama ve kavrama süreçleri ile değerlendirilmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ara sınav",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Meydan mekanı, meydan-form-işlev ilişkileri, malzeme, renk, en, boy, yükseklikler, doluluk, boşluk, meydanların biçimlenmesinde kültürel etkiler",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Meydan mekanı, meydan-form-işlev ilişkileri, malzeme, renk, en, boy, yükseklikler, doluluk, boşluk, meydanların biçimlenmesinde kültürel etkiler",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Şehirsel tasarım ilkelerinde farklılaşmalar, organik, metrik, simetrik, ritmik tasarım yaklaşımlarını",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Şehirsel tasarım ilkelerinde farklılaşmalar, organik, metrik, simetrik, ritmik tasarım yaklaşımlarını",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Planlama Kademelenmesi ve Tasarım İlişkisi",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Planlama Kademelenmesi ve Tasarım İlişkisi",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Seminerleri",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Landscape London: A Guide to Gardens and Urban Spaces, HARE, C, Ellipsis London Press Ltd, 2001,",
    "Planning for Urban Quality- Urban Design in Towns and Cities, PERFECT, M., POWER, G, London : Routledge, 1997, 0415159679",
    "How to turn a place around : a handbook for creating success, Project for Public Spaces, Inc , Inc New York, NY : Project for Public Spaces, 2000, 0970632401"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=322",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=322"
  },
  "PEM 324E": {
   "code": "PEM 324E",
   "name": "Landscape Management",
+  "nameEn": "Landscape Management",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1248,12 +2475,12 @@
   "textbooks": [
    "TZGERALD, J., Emerald Cities: Urban Sustainability and Economic Development, Oxford University Pres, 2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=324",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=324"
  },
  "PEM 327E": {
   "code": "PEM 327E",
   "name": "Peyzaj Mimarlığında İleri Anlatım Teknikleri",
+  "nameEn": "Adv.Rendering Tech.inLandscape",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1285,15 +2512,87 @@
    "Hafta 13 · Öğrenci sunumları",
    "Hafta 14 · Öğrenci sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Görselleştirme Kavramı ve Uygulamalarının Tanıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest El Eskiz ve Çizim Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Serbest El Eskiz ve Çizim Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Serbest El Boyama Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İmaj Oluşturma ve Kolaj Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İmaj Oluşturma ve Kolaj Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "ARA SINAV",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Dijital Modelleme ve Render Teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Dijital modelleme ve Render Teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Grafik Anlatım Teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "İleri Sunum Teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Representing landscape architecture, M. Treib, London : Taylor & Francis, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=327",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=327"
  },
  "PEM 342E": {
   "code": "PEM 342E",
   "name": "Kırsal Peyzaj Planlaması",
+  "nameEn": "Rural Landscape Planning",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1328,17 +2627,89 @@
    "Hafta 13 · Kırsal Alanlar Üzerinden Güncel Okumalar",
    "Hafta 14 · Kırsal Alanlar Üzerinden Güncel Okumalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Doğal Peyzaj ve Başlıca Doğal Peyzaj Şekilleri / Doğal Peyzaj, Dağ Peyzajı, Doğal Vejetasyon Peyzajları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Doğal Peyzaj ve Başlıca Doğal Peyzaj Şekilleri. Korunan Alanlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kültürel Peyzaj Şekilleri, Kırsal Peyzajın Genel Esasları ve Başlıca Kırsal Peyzaj Şekilleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Doğal ve Kırsal Peyzaj Üzerinde İnsan Eylemlerine Bağlı Başlıca Tahripler ve Önemli Kırsal Peyzaj Sorunları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Kırsal Peyzaj Planlama Yöntemleri",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 6,
+    "topic": "Kültür Ormanlarının Planlanması",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Tarımsal Peyzajın Planlanması Esasları",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Endüstriyel Peyzajın Planlanması İlkeleri",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Kırsal Rekreasyon Kaynaklarının Planlanması İlkeleri",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Yol Peyzajının Planlanması ve Geliştirilmesi Esasları",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Doğal Peyzajın Korunması Esasları",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Kırsal Alanlar Üzerinden Güncel Okumalar",
+    "outcomes": "1-2-3-4-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Kırsal Alanlar Üzerinden Güncel Okumalar",
+    "outcomes": "1-2-3-4-5-6-7"
+   }
+  ],
   "textbooks": [
    "Kırsal Peyzaj , DİRİK,H, İ.Ü. Orman Fakültesi Yayınları, 2005,",
    "The rural landscape , John Fraser Hart, Baltimore, Md. : Johns Hopkins University Press, 1998, 0801857171",
    "Rural by design : maintaining small town character , Randall Arendt , Chicago, Ill. : Planners Press, American Planning Associatio, 1994, 0918286867"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=342"
  },
  "PEM 343E": {
   "code": "PEM 343E",
   "name": "Landscape Construction III",
+  "nameEn": "Landscape Construction III",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1352,12 +2723,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=343",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=343"
  },
  "PEM 344E": {
   "code": "PEM 344E",
   "name": "Peyzaj Konstrüksiyonu IV",
+  "nameEn": "Landscape Construction IV",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1371,12 +2742,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=344",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=344"
  },
  "PEM 347E": {
   "code": "PEM 347E",
   "name": "Peyzaj Mimarlığının Sosyal Yönleri",
+  "nameEn": "Social Asspect of Landsc.Arch.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1397,12 +2768,12 @@
   "textbooks": [
    "Gehl, J and Brigitte, S. (2013) How to study public life. Washington, Island Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=347",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=347"
  },
  "PEM 351E": {
   "code": "PEM 351E",
   "name": "Coğrafi Bilgi Sistemlerine Giriş",
+  "nameEn": "Introduction to Geographical Information Systems",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1416,12 +2787,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=351"
  },
  "PEM 353E": {
   "code": "PEM 353E",
   "name": "Coğrafi Bilgi Sistemlerine Giriş",
+  "nameEn": "Int.to Geographical Inf.Sys.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1435,12 +2806,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=353",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=353"
  },
  "PEM 356E": {
   "code": "PEM 356E",
   "name": "Rural Landscape Plan.&Design",
+  "nameEn": "Rural Landscape Plan.&Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1461,12 +2832,12 @@
   "textbooks": [
    "TASSINARI, P., Transformations of Landscape in Rural Territory: Reasons of Change and Possible Future Scenarios: Interdisciplinary Studies for its Preservation, Management and Planning, University of Bologna, 2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=356",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=356"
  },
  "PEM 368E": {
   "code": "PEM 368E",
   "name": "Peyzaj Tasarımında Dijital Sunum Teknikleri",
+  "nameEn": "Digital Representation Techniques for Landscape Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1488,12 +2859,12 @@
   "textbooks": [
    "Lydia Cline, Architectural Drafting For Interior Designers, 1st Ed. (Delmar Cengage Learning, 2007)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=368",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=368"
  },
  "PEM 4011E": {
   "code": "PEM 4011E",
   "name": "Çevre Estetiği",
+  "nameEn": "Environmental Aesthetics",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1507,12 +2878,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4011",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4011"
  },
  "PEM 4012E": {
   "code": "PEM 4012E",
   "name": "Adv.Rendering Tech.inLands.",
+  "nameEn": "Adv.Rendering Tech.inLands.",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -1544,15 +2915,73 @@
    "Hafta 13 · İleri Sunum Teknikleri",
    "Hafta 14 · Vaka çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Görselleştirme Kavramı ve Uygulamalarının Tanıtılması"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest El Eskiz ve Çizim Teknikleri"
+   },
+   {
+    "week": 3,
+    "topic": "Serbest El Eskiz ve Çizim Teknikleri"
+   },
+   {
+    "week": 4,
+    "topic": "Serbest El Boyama Teknikleri"
+   },
+   {
+    "week": 5,
+    "topic": "Serbest El Boyama Teknikleri"
+   },
+   {
+    "week": 6,
+    "topic": "İmaj Oluşturma ve Kolaj Teknikleri"
+   },
+   {
+    "week": 7,
+    "topic": "İmaj Oluşturma ve Kolaj Teknikleri"
+   },
+   {
+    "week": 8,
+    "topic": "Dijital Modelleme ve Render Teknikleri"
+   },
+   {
+    "week": 9,
+    "topic": "Dijital Modelleme ve Render Teknikleri"
+   },
+   {
+    "week": 10,
+    "topic": "Grafik Anlatım Teknikleri"
+   },
+   {
+    "week": 11,
+    "topic": "Grafik Anlatım Teknikleri"
+   },
+   {
+    "week": 12,
+    "topic": "İleri Sunum Teknikleri"
+   },
+   {
+    "week": 13,
+    "topic": "İleri Sunum Teknikleri"
+   },
+   {
+    "week": 14,
+    "topic": "Vaka çalışmaları"
+   }
+  ],
   "textbooks": [
    "Representing landscape architecture, M. Treib, London : Taylor & Francis, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4012",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4012"
  },
  "PEM 4013E": {
   "code": "PEM 4013E",
   "name": "Computer.App.in Plan.&Design",
+  "nameEn": "Computer.App.in Plan.&Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1586,15 +3015,73 @@
    "Hafta 13 · Modelleme ve Simülasyon Entegrasyonu I",
    "Hafta 14 · Modelleme ve Simülasyon Entegrasyonu II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Planlama ve Tasarımda Kullanılan Bilgisayar Uygulamaları ile Dijital Araç ve Verilerin Tanıtılması"
+   },
+   {
+    "week": 2,
+    "topic": "CAD Uygulamalarının Planlama ve Tasarımda Kullanımı"
+   },
+   {
+    "week": 3,
+    "topic": "Peyzaj Planlamada GIS Kullanımı"
+   },
+   {
+    "week": 4,
+    "topic": "Dijital Verilerin Bir araya Getirilme Yöntemleri"
+   },
+   {
+    "week": 5,
+    "topic": "Veri paylaşımı, Yerleşimi ve Yönetimi"
+   },
+   {
+    "week": 6,
+    "topic": "Dijital Veri İşleme: Yönetim ve Üretim"
+   },
+   {
+    "week": 7,
+    "topic": "Dijital Veri İşleme: Arazi Görselleştirme I"
+   },
+   {
+    "week": 8,
+    "topic": "Dijital Veri İşleme: Arazi Görselleştirme II"
+   },
+   {
+    "week": 9,
+    "topic": "Dijital Verilerin Bir araya Getirilmesi: Harita Oluşturma I"
+   },
+   {
+    "week": 10,
+    "topic": "Dijital Verilerin Bir araya Getirilmesi: Harita Oluşturma II"
+   },
+   {
+    "week": 11,
+    "topic": "Dijital Verilerin Bir araya Getirilmesi: CAD/GIS Entegrasyonu I"
+   },
+   {
+    "week": 12,
+    "topic": "Dijital Verilerin Bir araya Getirilmesi: CAD/GIS Entegrasyonu II"
+   },
+   {
+    "week": 13,
+    "topic": "Modelleme ve Simülasyon Entegrasyonu I"
+   },
+   {
+    "week": 14,
+    "topic": "Modelleme ve Simülasyon Entegrasyonu II"
+   }
+  ],
   "textbooks": [
    "Visualization in landscape and environmental planning : technology and applications, Eckhart Lange and Ian D. Bishop, London : Spon Press, 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4013",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4013"
  },
  "PEM 4014E": {
   "code": "PEM 4014E",
   "name": "Peyzaj Tasarımı için Dijital Temsil Teknolojisi",
+  "nameEn": "Dig.Repres.Tech.for Lands.Dsgn",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -1630,15 +3117,73 @@
    "Hafta 13 · Vektörel tabanlı yazılımlara giriş, çizimlerin veri alımı/veri gönderme işlemleri, temel teknikler",
    "Hafta 14 · Final Proje Sunumu Üzerine Tartışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bireysel ilgi alanına göre bir araştırma konusu belirleme ve program genel giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Grafik arayüze giriş, çizim tercihleri, programa ekler"
+   },
+   {
+    "week": 3,
+    "topic": "Modelleme ve Oluşturma/ işleme prosedürleri için çizim komutları ve arayüz"
+   },
+   {
+    "week": 4,
+    "topic": "Nokta ve eğri modelleme için çizim komutları ve arayüz"
+   },
+   {
+    "week": 5,
+    "topic": "Eğri ve yüzey modelleme için çizim komutları"
+   },
+   {
+    "week": 6,
+    "topic": "Eğri ve yüzey modelleme için arayüz"
+   },
+   {
+    "week": 7,
+    "topic": "Peyzaj projesi modellemesi için çizimlerin veri alma ve veri gönderme prosedürleri ile aktarımı ve hazırlık"
+   },
+   {
+    "week": 8,
+    "topic": "Peyzaj proje modelleme I"
+   },
+   {
+    "week": 9,
+    "topic": "Peyzaj proje modelleme II"
+   },
+   {
+    "week": 10,
+    "topic": "İşleme/ oluşturma teknikleri, kameralar, açılar"
+   },
+   {
+    "week": 11,
+    "topic": "İşleme/ oluşturma teknikleri, ışık ve malzemeler"
+   },
+   {
+    "week": 12,
+    "topic": "İmaj yazılım arayüzüne giriş, basit işlemeler/oluşturmalar, basit işleme muameleleri ve etkiler"
+   },
+   {
+    "week": 13,
+    "topic": "Vektörel tabanlı yazılımlara giriş, çizimlerin veri alımı/veri gönderme işlemleri, temel teknikler"
+   },
+   {
+    "week": 14,
+    "topic": "Final Proje Sunumu Üzerine Tartışmalar"
+   }
+  ],
   "textbooks": [
    "Lydia Cline, Architectural Drafting For Interior Designers, 1st Ed. (Delmar Cengage Learning, 2007)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4014",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4014"
  },
  "PEM 4015E": {
   "code": "PEM 4015E",
   "name": "Experim.Studies on Place&Desg",
+  "nameEn": "Experim.Studies on Place&Desg",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1673,15 +3218,73 @@
    "Hafta 13 · Yer ve tasarım üzerine deneysel çalışmalarda tasarım yaklaşımlarının ortaya konulması.",
    "Hafta 14 · Yer ve tasarım üzerine deneysel çalışmalarda örnek tasarım çalışması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı. Dersin içeriği üzerine özet sunum."
+   },
+   {
+    "week": 2,
+    "topic": "Karşılaştırmalı yer ve mekan tanımları."
+   },
+   {
+    "week": 3,
+    "topic": "Yer ve boyutlarına giriş."
+   },
+   {
+    "week": 4,
+    "topic": "Tasarım sürecinde yerin boyutlarının kullanımı; dünyadan ve Türkiye’den ilgili tasarım yaklaşım ve uygulama örneklerinin analizi ve değerlendirilmesi."
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım sürecinde yerin boyutlarının kullanımı; dünyadan ve Türkiye’den ilgili tasarım yaklaşım ve uygulama örneklerinin analizi ve değerlendirilmesi."
+   },
+   {
+    "week": 6,
+    "topic": "Yerin metinsel ve görsel sunumları."
+   },
+   {
+    "week": 7,
+    "topic": "Yerin boyutları üzerine alan çalışması: yer tanıma, keşif."
+   },
+   {
+    "week": 8,
+    "topic": "Yerin boyutları üzerine alan çalışması: analizler."
+   },
+   {
+    "week": 9,
+    "topic": "Yerin boyutları üzerine alan çalışması: bilgi toplama."
+   },
+   {
+    "week": 10,
+    "topic": "Alan çalışmalarının değerlendirilmesi: problem tanımlama."
+   },
+   {
+    "week": 11,
+    "topic": "Yer ve tasarım üzerine deneysel çalışmalarda tasarım problemi tanımı."
+   },
+   {
+    "week": 12,
+    "topic": "Yer ve tasarım üzerine deneysel çalışmalarda tasarım stratejilerinin geliştirilmesi."
+   },
+   {
+    "week": 13,
+    "topic": "Yer ve tasarım üzerine deneysel çalışmalarda tasarım yaklaşımlarının ortaya konulması."
+   },
+   {
+    "week": 14,
+    "topic": "Yer ve tasarım üzerine deneysel çalışmalarda örnek tasarım çalışması."
+   }
+  ],
   "textbooks": [
    "Cross, N., 2007. Designerly Ways of Knowing, Birkhauser."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4015",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4015"
  },
  "PEM 4016E": {
   "code": "PEM 4016E",
   "name": "Altyapı Planlama ve Geliştirme",
+  "nameEn": "Infrastructure Planning&Dev.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1695,12 +3298,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4016",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4016"
  },
  "PEM 4018E": {
   "code": "PEM 4018E",
   "name": "Landscape and Art",
+  "nameEn": "Landscape and Art",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1732,15 +3335,73 @@
    "Hafta 13 · Peyzaj ve Sanat Etkileşimine dair Çağdaş Yaklaşımlar",
    "Hafta 14 · Peyzaj ve Sanat Etkileşimine dair Çağdaş Yaklaşımlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sanatla ilgili Temel Kavramlar ve Tanımlar"
+   },
+   {
+    "week": 2,
+    "topic": "Sanatın Tarihsel Gelişimi / Peyzaj ve Sanat İlişkisi: Tarih Öncesi Çağlar"
+   },
+   {
+    "week": 3,
+    "topic": "Sanatın Tarihsel Gelişimi / Peyzaj ve Sanat İlişkisi: Ortaçağ"
+   },
+   {
+    "week": 4,
+    "topic": "Sanatın Tarihsel Gelişimi / Peyzaj ve Sanat İlişkisi: İslam Uygarlıkları"
+   },
+   {
+    "week": 5,
+    "topic": "Sanatın Tarihsel Gelişimi / Peyzaj ve Sanat İlişkisi: Rönesans"
+   },
+   {
+    "week": 6,
+    "topic": "Sanatın Tarihsel Gelişimi / Peyzaj ve Sanat İlişkisi: Barok"
+   },
+   {
+    "week": 7,
+    "topic": "Sanatın Tarihsel Gelişimi / Peyzaj ve Sanat İlişkisi: Modern Dönem"
+   },
+   {
+    "week": 8,
+    "topic": "Sanatın Tarihsel Gelişimi / Peyzaj ve Sanat İlişkisi: Postmodern Dönem"
+   },
+   {
+    "week": 9,
+    "topic": "Sanatın Peyzaj Mimarlığına Etkisi ARA SINAV"
+   },
+   {
+    "week": 10,
+    "topic": "Peyzaj Unsurlarının Sınıflandırılması"
+   },
+   {
+    "week": 11,
+    "topic": "Peyzaj Unsurlarının Sanat Objesi Olarak Kullanımı"
+   },
+   {
+    "week": 12,
+    "topic": "Peyzaj ve Sanat Etkileşimine dair Çağdaş Yaklaşımlar"
+   },
+   {
+    "week": 13,
+    "topic": "Peyzaj ve Sanat Etkileşimine dair Çağdaş Yaklaşımlar"
+   },
+   {
+    "week": 14,
+    "topic": "Peyzaj ve Sanat Etkileşimine dair Çağdaş Yaklaşımlar"
+   }
+  ],
   "textbooks": [
    "Between Landscape Architecture and Land Art, U. Weilacher, Birkhäuser, Basel, 1996."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4018",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4018"
  },
  "PEM 4019E": {
   "code": "PEM 4019E",
   "name": "Social Asspect of Landsc.Arch.",
+  "nameEn": "Social Asspect of Landsc.Arch.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1774,15 +3435,73 @@
    "Hafta 13 · Alan çalışması III: Analizlerin yorumlanması ve sentez haritalarının hazırlanması",
    "Hafta 14 · Alan çalışması IV: İnsan ve toplum odaklı önerilerin geliştirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtılması: Peyzaj mimarlığının sosyal yönünün önemi"
+   },
+   {
+    "week": 2,
+    "topic": "Sosyal topluluklar ve peyzaj mimarlığı: Açık alanların önemi, faydaları ve fırsatları"
+   },
+   {
+    "week": 3,
+    "topic": "Farklı sosyal grupları anlamak"
+   },
+   {
+    "week": 4,
+    "topic": "CBS’nin sos-ekonimik uygulamaları: Toplumu uzaktan algılamak"
+   },
+   {
+    "week": 5,
+    "topic": "CBS’nin sosyal uygulamaları: Gözlemler ve toplumsal davranış haritalandırmaları"
+   },
+   {
+    "week": 6,
+    "topic": "Topluluklar arasındaki farklılıklar ve çevresel adalet"
+   },
+   {
+    "week": 7,
+    "topic": "Toplum kökenli ve katılımcı planlama ve tasarım"
+   },
+   {
+    "week": 8,
+    "topic": "Dışlayıcı ve dahil edici planlama ve tasarım yaklaşımları"
+   },
+   {
+    "week": 9,
+    "topic": "Örnek çalışma incelemesi: Dünyadan toplum kökenli tasarım ve planlama örnekleri"
+   },
+   {
+    "week": 10,
+    "topic": "Peyzaj mimarlığında sosyal incelemeler: Surveyler öncesi yapılabilecek hazırlık ve analizler"
+   },
+   {
+    "week": 11,
+    "topic": "Alan çalışması I: Gözlemler, Uzaktan algılama ve diğer yöntemler ile veri toplanması"
+   },
+   {
+    "week": 12,
+    "topic": "Alan çalışması II: Toplanan verilerin analizi"
+   },
+   {
+    "week": 13,
+    "topic": "Alan çalışması III: Analizlerin yorumlanması ve sentez haritalarının hazırlanması"
+   },
+   {
+    "week": 14,
+    "topic": "Alan çalışması IV: İnsan ve toplum odaklı önerilerin geliştirilmesi"
+   }
+  ],
   "textbooks": [
    "1. Gehl, J and Brigitte, S. (2013) How to study public life. Washington, Island Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4019",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4019"
  },
  "PEM 4022E": {
   "code": "PEM 4022E",
   "name": "Urban Furniture and Space",
+  "nameEn": "Urban Furniture and Space",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1815,15 +3534,73 @@
    "Hafta 13 · Kent mobilyaları: Gölgelendirme Elemanları ve Otobüs Durakları",
    "Hafta 14 · Kent mobilyaları: Çiçek saksıları ve Çöp Kutuları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kentsel mekân ve kent mobilyası kavramı"
+   },
+   {
+    "week": 2,
+    "topic": "Kent mobilyalarının tarihsel gelişimi, örnekler"
+   },
+   {
+    "week": 3,
+    "topic": "Kent mobilyası tasarım ölçütleri, işlevsel ölçütler, prsikolojik ölçütler, teknolojik ölçütler, örneklerin değerlendirilmesi"
+   },
+   {
+    "week": 4,
+    "topic": "Kent mobilyaları ve kentsel mekan arasındaki görsel ve işlevsel ilişkiler"
+   },
+   {
+    "week": 5,
+    "topic": "Kent mobilyalarının sınıflandırılması, alt yapıya bağlı kent mobilyaları, örnekleri"
+   },
+   {
+    "week": 6,
+    "topic": "Kent mobilyalarının sınıflandırılması, alt yapıya bağlı olmayan kent mobilyaları, örnekler"
+   },
+   {
+    "week": 7,
+    "topic": "Kent mobilyaları ve mekan kimliği"
+   },
+   {
+    "week": 8,
+    "topic": "Kent mobilyaları: Aydınlatma Elemanları"
+   },
+   {
+    "week": 9,
+    "topic": "Kent mobilyaları: Oturma Elemanları"
+   },
+   {
+    "week": 10,
+    "topic": "Kent mobilyaları: Döşeme Elemanları"
+   },
+   {
+    "week": 11,
+    "topic": "Kent mobilyaları: Sınırlandırma Elemanları"
+   },
+   {
+    "week": 12,
+    "topic": "Kent mobilyaları: Bilgilendirme ve Yönlendirme Elemanları"
+   },
+   {
+    "week": 13,
+    "topic": "Kent mobilyaları: Gölgelendirme Elemanları ve Otobüs Durakları"
+   },
+   {
+    "week": 14,
+    "topic": "Kent mobilyaları: Çiçek saksıları ve Çöp Kutuları"
+   }
+  ],
   "textbooks": [
    "Urban Furniture Selection, author, Jacobo Krauel, Barcelona, Spain , 2010 New urban elements ,author, Jacobo Krauel ; text contributed by the companies, edited and translated by William George, Barcelona, Spain : Links, 2007"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4022",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4022"
  },
  "PEM 4023E": {
   "code": "PEM 4023E",
   "name": "Urban Visual Analysis",
+  "nameEn": "Urban Visual Analysis",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1855,15 +3632,73 @@
    "Hafta 13 · Çevresel harita oluşturma, gözlem, izleme",
    "Hafta 14 · Belgesel yöntemler,görsel notasyon."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çevre bilimine giriş."
+   },
+   {
+    "week": 2,
+    "topic": "Çevresel ölçüm. Çoklu sıralama"
+   },
+   {
+    "week": 3,
+    "topic": "Çevresel ölçüm. Çoklu sıralama"
+   },
+   {
+    "week": 4,
+    "topic": "Görsel temsil: Görsel ipuçları. Görsel ipuçlarını sıralama"
+   },
+   {
+    "week": 5,
+    "topic": "Çevre değerlendirmesinde fotoğraf yöntemi"
+   },
+   {
+    "week": 6,
+    "topic": "Çevre değerlendirmesinde fotoğraf yöntemi"
+   },
+   {
+    "week": 7,
+    "topic": "Kentsel görsel analiz: Konut çevresi: özellikler ve değerlendirme."
+   },
+   {
+    "week": 8,
+    "topic": "Peyzaj değerlendirme. Kentin çevresel imajı"
+   },
+   {
+    "week": 9,
+    "topic": "Peyzaj Değerlendirme: Doğal alanlar"
+   },
+   {
+    "week": 10,
+    "topic": "Çevresel imajı oluşturan faktörler: Geçirgenlik, okunabilirlik , algılanabilirlik, çeşitlilik, zenginlik."
+   },
+   {
+    "week": 11,
+    "topic": "Kentsel imajı oluşturan elemanlar: sınırlar, nirengi noktaları"
+   },
+   {
+    "week": 12,
+    "topic": "Kentsel imajı oluşturan elemanlar: kesişme noktaları, meydanlar"
+   },
+   {
+    "week": 13,
+    "topic": "Çevresel harita oluşturma, gözlem, izleme"
+   },
+   {
+    "week": 14,
+    "topic": "Belgesel yöntemler,görsel notasyon."
+   }
+  ],
   "textbooks": [
    "City sense and city design : writings and projects of Kevin Lynch / edited by Tridib Banerjee and Michael Southworth , 1990"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4023",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4023"
  },
  "PEM 4024E": {
   "code": "PEM 4024E",
   "name": "Ulusal Peyzaj Mimarlığı Okumaları",
+  "nameEn": "Readings About National Landscape Architecture",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1872,7 +3707,7 @@
    "local": 2,
    "ects": 4
   },
-  "description": "-Bu ders, Türkiye’de peyzaj mimarlığı mesleğinin tarihsel gelişimini çok katmanlı ve eleştirel bir yaklaşımla inceler. Kuram-pratik ilişkisi, tarih yazımı, arşiv ve bellek sorunlarıyla şekillenen yöntemsel çerçeve doğrultusunda; bahçecilikten modernist planlamaya, ekolojik dönüşümden mesleki kurumsallaşmaya uzanan süreç ele alınır. Geç Osmanlı’dan Cumhuriyet’e, ulusal ve uluslararası aktörlerin etkisiyle şekillenen mesleki dönüşümler tartışılır. Ayrıca eğitim, yayınlar, yarışmalar ve güncel uygulamalar incelenir. Teknik geziler ve sunumlarla desteklenen ders, öğrencilere tarihsel süreçle güncel meseleler arasında analitik bağ kurma becerisi kazandırmayı amaçlar. -This course examines the historical development of the landscape architecture profession in Turkey through a multilayered and critical approach. Shaped by a methodological framework focused on theory–practice relations, historiography, and issues of memory and archiving, it covers a wide range of periods·from gardening traditions to modernist planning, ecological transformation, and professional institutionalization. It discusses transformations from the Late Ottoman to the Republican era, shaped by both national and international actors. The course also explores education, publications, competitions, and current practices. Supported by field trips and student presentations, it aims to equip students with the ability to critically link historical processes with contemporary professional issues.",
+  "description": "-Bu ders, Türkiye’de peyzaj mimarlığı mesleğinin tarihsel gelişimini çok katmanlı ve eleştirel bir yaklaşımla inceler. Kuram-pratik ilişkisi, tarih yazımı, arşiv ve bellek sorunlarıyla şekillenen yöntemsel çerçeve doğrultusunda; bahçecilikten modernist planlamaya, ekolojik dönüşümden mesleki kurumsallaşmaya uzanan süreç ele alınır. Geç Osmanlı’dan Cumhuriyet’e, ulusal ve uluslararası aktörlerin etkisiyle şekillenen mesleki dönüşümler tartışılır. Ayrıca eğitim, yayınlar, yarışmalar ve güncel uygulamalar incelenir. Teknik geziler ve sunumlarla desteklenen ders, öğrencilere tarihsel süreçle güncel meseleler arasında analitik bağ kurma becerisi kazandırmayı amaçlar. -This course examines the historical development of the landscape architecture profession in Turkey through a multilayered and critical approach. Shaped by a methodological framework focused on theory–practice relations, historiography, and issues of memory and archiving, it covers a wide range of periods—from gardening traditions to modernist planning, ecological transformation, and professional institutionalization. It discusses transformations from the Late Ottoman to the Republican era, shaped by both national and international actors. The course also explores education, publications, competitions, and current practices. Supported by field trips and student presentations, it aims to equip students with the ability to critically link historical processes with contemporary professional issues.",
   "outcomes": [
    "Türkiye’de peyzaj mimarlığı mesleğinin tarihsel gelişimini dönemsel olarak açıklayabilmesi,",
    "Modernleşme, kentleşme ve ekolojik dönüşüm süreçlerinin peyzaj mimarlığı üzerindeki etkilerini analiz edebilmesi,",
@@ -1900,15 +3735,73 @@
    "Hafta 13 · Vaka Çalışması 1",
    "Hafta 14 · Vaka Çalışması 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin Tanıtımı ve Yöntem: Kuram-pratik ilişkisi, tarih yazımı, arşiv ve bellek sorunları"
+   },
+   {
+    "week": 2,
+    "topic": "Bahçecilik Geleneğinden Planlamaya: Osmanlı'da bahçe kültürü, kamusallığın oluşumu"
+   },
+   {
+    "week": 3,
+    "topic": "1920–1940: Modernleşme ve Peyzajın Araçsallaşması: Jansen Planı, güzel kent ideali, erken Cumhuriyet parkları"
+   },
+   {
+    "week": 4,
+    "topic": "1940–1960: Kentsel Krizler ve Bahçeciliğin Evrimi: Gecekondu olgusu, kent içi parklar, peyzaj mimarlığı mesleğinin ilk ulusal hareketleri"
+   },
+   {
+    "week": 5,
+    "topic": "Yerinde Gözlem: Teknik Gezi"
+   },
+   {
+    "week": 6,
+    "topic": "1960–1980: Ekolojik Dönüşüm ve Akademik Kurumsallaşma: akademik ekollerin gelişmesi, yayınlar, çevresel planlama"
+   },
+   {
+    "week": 7,
+    "topic": "Ulusal Peyzaj Mimarlığı Okumalarının Tartışılması I"
+   },
+   {
+    "week": 8,
+    "topic": "1960–1980: Ekolojik Dönüşüm ve Akademik Kurumsallaşma: akademik ekollerin gelişmesi, yayınlar, çevresel planlama"
+   },
+   {
+    "week": 9,
+    "topic": "1980–2010: Yasal tanınırlık, yarışmalar, örgütlenmede gelişim ve mesleğin kurumsal kimliği."
+   },
+   {
+    "week": 10,
+    "topic": "Ulusal Peyzaj Mimarlığı Okumalarının Tartışılması II"
+   },
+   {
+    "week": 11,
+    "topic": "1980–2010: Yasal tanınırlık, yarışmalar, örgütlenmede gelişim ve mesleğin kurumsal kimliği."
+   },
+   {
+    "week": 12,
+    "topic": "Yerinde Gözlem: Teknik Gezi"
+   },
+   {
+    "week": 13,
+    "topic": "Vaka Çalışması 1"
+   },
+   {
+    "week": 14,
+    "topic": "Vaka Çalışması 2"
+   }
+  ],
   "textbooks": [
    "1. Demirel Koyun, Ç. (2025). Ulusal Peyzaj Mimarlığı Ortamında Kuram Ve Pratik İlişkisine Yorumlayıcı Bir Bakış. Doktora Tezi. İstanbul Teknik Üniversitesi Lisansüstü Eğitim Enstitüsü."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4024",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4024"
  },
  "PEM 405E": {
   "code": "PEM 405E",
   "name": "Const.Drawi.Tch.in Landsc.Dsgn",
+  "nameEn": "Const.Drawi.Tch.in Landsc.Dsgn",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -1922,12 +3815,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=405",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=405"
  },
  "PEM 406E": {
   "code": "PEM 406E",
   "name": "Kırsal Yerleşimler ve Sorunlar",
+  "nameEn": "Professional Practice & Ethics",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1941,12 +3834,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=406",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=406"
  },
  "PEM 407E": {
   "code": "PEM 407E",
   "name": "Const.Drawi.Tch.in Landsc.Dsgn",
+  "nameEn": "Const.Drawi.Tch.in Landsc.Dsgn",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1980,15 +3873,73 @@
    "Hafta 13 · Yaklaşık maliyet ve pursantajlar",
    "Hafta 14 · İhale Dosyası Hazırlama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Peyzaj tasarımında uygulama tekniklerine giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Peyzaj uygulama projelerinde kullanılan görselleştirme teknikleri ve standartlar: Örnekler"
+   },
+   {
+    "week": 3,
+    "topic": "Peyzaj Mimarlığında Detay Tasarımı- Örnekler"
+   },
+   {
+    "week": 4,
+    "topic": "Yapısal uygulama projesi teknikleri (1/200) / Materyaller ve Detay Tasarımı"
+   },
+   {
+    "week": 5,
+    "topic": "Yapısal uygulama projesi teknikleri (1/200) / mekan tasarımında drenaj, aydınlatma ve kent mobilyaları"
+   },
+   {
+    "week": 6,
+    "topic": "Yapısal uygulama projesi teknikleri (1/50-10) / Plan ve sistem kesitleri"
+   },
+   {
+    "week": 7,
+    "topic": "Yapısal uygulama projesi teknikleri (1/50-10) / Sistem kesitleri"
+   },
+   {
+    "week": 8,
+    "topic": "Bitkisel uygulama projesi teknikleri (1/200) / Türler ve dikim teknikleri ve standartlar"
+   },
+   {
+    "week": 9,
+    "topic": "Bitkisel uygulama projesi teknikleri (1/200) / drenaj, sulama ve yağmur-suyu yönetimi"
+   },
+   {
+    "week": 10,
+    "topic": "Detay tasarımında yapısal ve bitkisel tasarım çözümlerinin entegrasyonu"
+   },
+   {
+    "week": 11,
+    "topic": "Applikasyon projesi teknikleri"
+   },
+   {
+    "week": 12,
+    "topic": "Keşif ve metraj / uygulama"
+   },
+   {
+    "week": 13,
+    "topic": "Yaklaşık maliyet ve pursantajlar"
+   },
+   {
+    "week": 14,
+    "topic": "İhale Dosyası Hazırlama"
+   }
+  ],
   "textbooks": [
    "Design Workshop, Landscape Architecture Documentation Standarts: Principles, Guidelines, and Best Practice, Wiley, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=407",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=407"
  },
  "PEM 411E": {
   "code": "PEM 411E",
   "name": "Peyzaj Mimarlığı Projesi IV",
+  "nameEn": "Landscape Design IV",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2020,15 +3971,87 @@
    "Hafta 13 · Proje / studyo / tasarım detaylarını anlatan çizim ve modellerin geliştirilmesi",
    "Hafta 14 · Proje / studyo / tasarım detaylarını anlatan çizim ve modellerin geliştirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtılması / proje alanının tanıtılması / araştırma ve ödev konularının verilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ödev konularının sunulması ve tartışma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Proje alanının gezilmesi ve arazi çalışması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje / stüdyo / Proje alanı ile ilgili verilerin analizi ve pafta halinde sunulması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Proje / stüdyo / Genel planlama kararlarının tartışılması ve bireysel tasarım konseptinin belirlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Proje / studyo / bireysel tasarım konseptinin geliştirilmesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Proje / studyo / 1.ara jüri / bireysel tasarım konseptinin geliştirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Proje / studyo / tasarım fikrinin 1/1000 ölçekli plan kesit ve modellerle anlatımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Proje / studyo / tasarım fikrinin 1/1000ölçekli plan kesit ve modellerle anlatımı, proje / studyo / 2.ara jüri / 1/1000 ölçekli tasarım konseptinin geliştirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Proje / studyo / tasarım fikrinin 1/500 ölçekli plan kesit ve modellerle anlatımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Proje / studyo / tasarım fikrinin 1/500 ölçekli plan kesit ve modellerle anlatımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Proje / studyo / tasarım fikrinin 1/200 ölçekli plan kesit ve modellerle anlatımı, proje / studyo / eskiz sınavı / tasarım detayını anlatan çizimleri geliştirebilem yeteneğinin ölçülmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Proje / studyo / tasarım detaylarını anlatan çizim ve modellerin geliştirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje / studyo / tasarım detaylarını anlatan çizim ve modellerin geliştirilmesi",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Landscape restoration handbook, Harker, D., Boca Raton : Lewis Publishers, 1999, 1566701759"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=411"
  },
  "PEM 415E": {
   "code": "PEM 415E",
   "name": "Çevresel Estetik",
+  "nameEn": "Environmental Aesthetics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2059,15 +4082,87 @@
    "Hafta 13 · 2.Ödev konularının sunulması ve tartışma",
    "Hafta 14 · Dersin geneline yönelik tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtılması ve giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Estetik kavramı ve estetik teori /Ödev konularının dağıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Algı ve estetik ilişkisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İnsan davranışları ve ihtiyaçlarında estetik kavramının yeri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "1.Ödev konularının sunulması ve tartışma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "1.Ödev konularının sunulması ve tartışma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "1.Ödev konularının sunulması ve tartışma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "ARA SINAV",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Çevresel tasarımda estetik kavramının yeri- 2.Ödev konularının dağıtılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "2.Ödev konularının sunulması ve tartışma",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "2.Ödev konularının sunulması ve tartışma",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "2.Ödev konularının sunulması ve tartışma",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "2.Ödev konularının sunulması ve tartışma",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Dersin geneline yönelik tartışma",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Environmental aesthetics : ideas, politics and planning / J. Douglas Porteous/ London ; New York : Routledge, 1996"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=415",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=415"
  },
  "PEM 419E": {
   "code": "PEM 419E",
   "name": "Landscape Management",
+  "nameEn": "Landscape Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2081,12 +4176,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=419",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=419"
  },
  "PEM 420E": {
   "code": "PEM 420E",
   "name": "Prfs.Prct.&Ethc.in Lndsc.Arch.",
+  "nameEn": "Prfs.Prct.&Ethc.in Lndsc.Arch.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2100,12 +4195,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=420",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=420"
  },
  "PEM 422E": {
   "code": "PEM 422E",
   "name": "Meslek Pratiği ve Etik",
+  "nameEn": "Professional Practice & Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2138,15 +4233,73 @@
    "Hafta 13 · Peyzaj Mimarlığı pratiğinde karşılaşılan sorunlar (tasarım)",
    "Hafta 14 · Peyzaj Mimarlığı pratiğinde karşılaşılan sorunlar (planlama)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mesleğin geçmişi ve örgütlenmesi"
+   },
+   {
+    "week": 2,
+    "topic": "Mesleki etik"
+   },
+   {
+    "week": 3,
+    "topic": "Mesleki alan yeterlilikleri"
+   },
+   {
+    "week": 4,
+    "topic": "Müşteriler (özel ve kamu sektörü) ve projeler"
+   },
+   {
+    "week": 5,
+    "topic": "Mesleğin entegrasyonu ( iş veren, diğer meslekler, yüklenici firma, genel halk)"
+   },
+   {
+    "week": 6,
+    "topic": "Mesleki spesifikasyonlar (semboller, standartlar, yönergeler)"
+   },
+   {
+    "week": 7,
+    "topic": "Teklifler, kontratlar, asgari hizmet ücretleri"
+   },
+   {
+    "week": 8,
+    "topic": "İhale dosyası hazırlama"
+   },
+   {
+    "week": 9,
+    "topic": "Hukuksal konular"
+   },
+   {
+    "week": 10,
+    "topic": "Proje yönetimi"
+   },
+   {
+    "week": 11,
+    "topic": "İş yönetimi ve pazarlama"
+   },
+   {
+    "week": 12,
+    "topic": "Peyzaj Mimarlığı pratiğinde karşılaşılan sorunlar (tasarım)"
+   },
+   {
+    "week": 13,
+    "topic": "Peyzaj Mimarlığı pratiğinde karşılaşılan sorunlar (tasarım)"
+   },
+   {
+    "week": 14,
+    "topic": "Peyzaj Mimarlığı pratiğinde karşılaşılan sorunlar (planlama)"
+   }
+  ],
   "textbooks": [
    "GARMORY, N., WINSCH, C., TENNANT, R. Professional PracticeforLandscapeArchitects, Elsevier, 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=422",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=422"
  },
  "PEM 429E": {
   "code": "PEM 429E",
   "name": "Peyzaj ve Hukuk",
+  "nameEn": "Landscape and Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2180,15 +4333,87 @@
    "Hafta 13 · Çevresel Etki Değerlendirmesi Yönetmeliği ve Uygulamaları",
    "Hafta 14 · Çevresel Etki Değerlendirmesi Yönetmeliği ve Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hukukla İlgili Genel Tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası Peyzaj Koruma Politika ve Stratejileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Uluslararası Peyzaj Koruma Politika ve Stratejileri: Avrupa Peyzaj Sözleşmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Çevre Mevzuatı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Çevre ile İlgil Yönetmelik ve Tüzükler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Türkiyede Çevre Mevzuatı uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "ARASINAV",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kıyı Kanunu",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Kültür ve Tabiat Varlıklarını Koruma Kanunu",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Planlama Tipleri (Çevre Düzeni Planları, Nazim İmar Planları vs.)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Planlama Tipleri ve Peyzaj İlişkisi, Planlama Ölçeğinde Peyzaj Uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Koruma Amaçlı İmar Planları ve Çevre Düzenleme Projeleri Hakkında Yönetmelik",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Çevresel Etki Değerlendirmesi Yönetmeliği ve Uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Çevresel Etki Değerlendirmesi Yönetmeliği ve Uygulamaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=429",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=429"
  },
  "PEM 433E": {
   "code": "PEM 433E",
   "name": "Peyzaj Şehirciliği Konuları",
+  "nameEn": "Topics in Landscape Urbanism",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2208,12 +4433,12 @@
   "textbooks": [
    "Waldheim, C., 2006, The Landscape Urbanism Reader, Princeton Architectural Pres"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=433",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=433"
  },
  "PEM 4902E": {
   "code": "PEM 4902E",
   "name": "Diploma Projesi",
+  "nameEn": "Graduation Project",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -2233,12 +4458,12 @@
   "textbooks": [
    "Tüm ders kitapları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=4902"
  },
  "PEM 492": {
   "code": "PEM 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2271,15 +4496,87 @@
    "Hafta 13 · Bireysel Çalışma Dönemi",
    "Hafta 14 · Bireysel Çalışma Dönemi- Yarıyıl sonu jürisine hazırlık"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bitirme Çalışmasının Verilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Yazılı soru sorma ve soruların jüri tarafından yanıtlanma süresi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "I. Ara Jüri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "II. Ara Jüri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Eskiz Sınavı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Bireysel Çalışma Dönemi- Yarıyıl sonu jürisine hazırlık",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=492"
  },
  "PEM 492E": {
   "code": "PEM 492E",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2312,15 +4609,87 @@
    "Hafta 13 · Bireysel Çalışma Dönemi",
    "Hafta 14 · Bireysel Çalışma Dönemi- Yarıyıl sonu jürisine hazırlık"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bitirme Çalışmasının Verilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Yazılı soru sorma ve soruların jüri tarafından yanıtlanma süresi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "I. Ara Jüri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "II. Ara Jüri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Eskiz Sınavı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bireysel Çalışma Dönemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Bireysel Çalışma Dönemi- Yarıyıl sonu jürisine hazırlık",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=492"
  },
  "PEM 501E": {
   "code": "PEM 501E",
   "name": "Project I",
+  "nameEn": "Project I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2352,6 +4721,77 @@
    "Hafta 13 · Iki ve üç boyutlu tekniklerle ifade",
    "Hafta 14 · Rapor ve final sunuşların hazırlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kentsel sürdürülebilirlik: yeşil alan sistemlerinin rolü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yeşil ağlar ve peyzajdaki enerji etkinliği",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "I proje: Konseptçalışması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "I proje: Fikirprojesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "II proje: Proje alanının tanıtılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Alanın içindeki ekolojik süreçlerin ve çevresi ile olan ilişkilerinin belirlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sentez- konsept araştırmaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Planlama alternatifleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Program alternatifleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Fikirprojesi (1/2000)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Fikirprojesi (1/1000)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Avanproje (1/500)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Iki ve üç boyutlu tekniklerle ifade",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Rapor ve final sunuşların hazırlanması"
+   }
+  ],
   "textbooks": [
    "Mark A. BenedictandEdward T. McMahon, 2006. GreenInfrastructure: LinkingLandscapesandCommunities. TheConservtionFundPress.",
    "SueReed, 2010. Energywiselandscapedesign. New SocietyPublishers",
@@ -2360,12 +4800,12 @@
    "Douglas Farr. 2008.Sustainable Urbanism: Urban Design With Nature. John WileyandSonsInc.",
    "Peter NewmanandIsabellaJennings. .2008. Cities as SustainableEcosystems, Island Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=501"
  },
  "PEM 511": {
   "code": "PEM 511",
   "name": "Çevre Tasarımı I",
+  "nameEn": "Enviromental Design I",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2397,6 +4837,77 @@
    "Hafta 13 · Çevre Tasarım Projesi: Tasarım Kalitesi ve Resim",
    "Hafta 14 · Final Sunumu ve Kritiği: Ekolojik Yer"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş 'Doğal Çevre ve Yapısal Çevre'",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Mekanın Fiziksel Formu 'Tasarım Elemanlarını Nasıl Kullanırız'",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Mekansal Hatırlama 'Kollektif Bellek'",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Estetiksel Kalite 'Sanatsal Bir Güzellik Olarak Mimarlık'",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Sosyo-Kültürel Altyapı 'TüketiciTrendleri'",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Barcelona Örneği Şehrin Tümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Çevresel Mod 'Işık Terapisi'",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sürdürülebilir ve İyi Tasarım 'Yeni Kentsel Rönesans ve Rejenerasyon'",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Çevre Tasarım Projesi:Halkın Katılımı ve Sosyal Etkileşim",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çevre Tasarım Projesi:Kültür ve İnsan Davranışı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Amsterdam Örneği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çevre Tasarım Projesi: Geri Dönüşüm, Tekrar Kullanım ve Azalama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Çevre Tasarım Projesi: Tasarım Kalitesi ve Resim",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Final Sunumu ve Kritiği: Ekolojik Yer"
+   }
+  ],
   "textbooks": [
    "Bechtel, R.B. & Arza C. (2002) Handbook of environmental psychology. J. Wiley & Sons: New York.",
    "Birkeland, J. (2000) Design for sustainability : a sourcebook of integrated, eco-logical solutions. Earthscan Publications Ltd.:London.",
@@ -2405,12 +4916,12 @@
    "Lawrence D. F., et. al. (2003) Health and community design : the impact of the built environment on physical activity. Washington, DC : Island Press.",
    "Sanoff, H. (2000) Community participation methods in design and planning. Wiley: New York."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=511"
  },
  "PEM 523": {
   "code": "PEM 523",
   "name": "Peyzaj Mimarlığında Özel Konu.",
+  "nameEn": "Special Topics in Lands.Arch.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2446,6 +4957,77 @@
    "Hafta 13 · Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Hafta 14 · Her dönem ders içeriğine bağli olarak belirlenecektir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir."
+   }
+  ],
   "textbooks": [
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
@@ -2458,12 +5040,12 @@
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Her dönem ders içeriğine bağli olarak belirlenecektir."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=523",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=523"
  },
  "PEM 525E": {
   "code": "PEM 525E",
   "name": "Research Des.in Land.Arc.",
+  "nameEn": "Research Des.in Land.Arc.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2495,18 +5077,89 @@
    "Hafta 13 · Araştırma bulguları, tartışma ve sonuç: görsel ve yazılı iletişim",
    "Hafta 14 · Dönem özeti ve değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanımlar-teori, bilim, gerçek, paradigma, araştırma, hipotez",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Peyzaj mimarlığı disiplini ve paradigmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Problem tespiti, araştırma sorusu ve hipotezleri,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Peyzaj araştırmalarında amaç ve kapsam belirleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma yöntemi: veri temini, veri ön işleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Peyzaj mimarlığında kalitatif yöntemler I",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Peyzaj mimarlığında kalitatif yöntemler II",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Peyzaj mimarlığında kalitatif yöntemler I",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Peyzaj mimarlığında kalitatif yöntemler II",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Hibrit yöntemler: Örnek Vaka Araştırması",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Peyzaj araştırmalarında geçerlik ve güvenirlilik",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Araştırma teklifinin oluşturulması",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Araştırma bulguları, tartışma ve sonuç: görsel ve yazılı iletişim",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem özeti ve değerlendirmesi"
+   }
+  ],
   "textbooks": [
    "Landscape Architecture Research: Inquiry, Strategy, Design, Hoboken: John Wiley & Sons, Inc., 2011",
    "Transdisciplinary Knowledge Production in Architecture and Urbanism: Towards Hybrid Modes of Inquiry. . 11 Vol.,Dordrecht: Springer, 2011",
    "Research Design and Proposal Writing in Spatial Science: Second Edition, Dordrecht: Springer Science+Business Media B.V, 2012",
    "Research for Research, Rotterdam: Berlage Institute, 2002"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=525"
  },
  "PEM 527E": {
   "code": "PEM 527E",
   "name": "Plan.&Des. for Coastal Land.",
+  "nameEn": "Plan.&Des. for Coastal Land.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2538,6 +5191,77 @@
    "Hafta 13 · Çevresel etki değerlendirme ve stratejik çevresel etki değerlendirme",
    "Hafta 14 · Entegre kıyı yönetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kıyı alanların peyzaj bağlamında yeniden düşünmek",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kıyı peyzajlarının karakteristikleri, tipleri ve bileşenleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kıyı alanlarına yönelik geliştirme ve koruma çalışmaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Doğal kıyı alanları: Uluslararası örnekler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Kültürel peyzaj bileşeni olarak kıyı alanları: Uluslararası örnekler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Su havzaları ve akarsular",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Ada peyzajları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Kıyı peyzajlarına yönelik politikalar- küresel, kıtasal ve ulusal",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Politikalara dair uygulamalar: Kıyı alanlarının planlanması ve yönetimine dair CBS tabanlı çalışmalar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kriz peyzajları ve kıyı peyzajları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "İklim değişikliği ve kıyı peyzajları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Görsel etki değerlendirme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Çevresel etki değerlendirme ve stratejik çevresel etki değerlendirme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Entegre kıyı yönetimi"
+   }
+  ],
   "textbooks": [
    "Conrad, E., Cassar, L.F., (2007) Coasts and Conflicts. Towards harmonization and integration in the Mediterranean, Institute of Earth Systems, Malta",
    "Sundaresan, J., (2013) Climate Change and Island and Coastal Vulnerability, Dordrecht : Springer Netherlands",
@@ -2545,12 +5269,12 @@
    "Conrad, E., Cassar, L.F., (2012) Landscape Approaches for Ecosystem management in Mediterranean Islands",
    "Watson, D., Adams, M. (2010) Design for Flooding: Architecture, Landscape and Urban Design for Resilience to Climate Change, John Wiley and Sons, New Jersey"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=527",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=527"
  },
  "PEM 596E": {
   "code": "PEM 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2594,6 +5318,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -2606,12 +5401,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=596"
  },
  "PEM 603E": {
   "code": "PEM 603E",
   "name": "Recreational Planning",
+  "nameEn": "Recreational Planning",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2643,6 +5438,77 @@
    "Hafta 13 · Globalleşme, Turizm ve Rekreasyonel Alanlar",
    "Hafta 14 · Rekreasyon Planlamasında Çağdaş Yaklaşımlar: Çevresel Sürdürülebilirlik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Rekreasyon Planlamada Genel Kavramlar: rekreasyon tanımı, açık hava rekreasyonu, rekreasyonel aktivitelerin sınıflandırılması, rekreasyonel mekan kategorileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Rekreasyon Kaynakları, Kaynak envanteri: Temel Stratejiler,Rekreasyon Kaynak Tipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Rekreasyon Planlama: Rekreasyon Planlamada Süreç",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Rekreasyon Planları: Rekreasyonel Planlamada Amaç ve Hedefler, Rekreasyon Planlama Tipleri ve Rekreasyon Planları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Rekreasyon Planlama Prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Taşıma Kapasitesi Kavramı: Fiziksel Kapasite, Ekolojik kapasite, Ekonomik Kapasite, Algısal kapasite",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Rekreasyon Planlamalarında “Kaynak” Oluşturan Başlıca Doğa Formlarına İlişkin Kavramların Tanımı, Ayrılma ve Planlama Kriterleri: Milli Park, Bölge Parkları, Korunan Alanlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kırsal Rekreasyon Alan Tiplerine yönelik Planlama İlkeleri:/ Piknik Alanları ve Orman İçi Dinlenme Yerleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Kırsal Rekreasyon Alan Tiplerine yönelik Planlama İlkeleri / Kamping Alanları, Plajlar, Turistik Köy İşletmeleri, Tatil Köyleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Rekreasyon Planlamasında Fiziksel, Estetik ve İşlevsel Değerlerin İrdelenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Rekreasyon Planlama Yaklaşımları: Amerika deneyimleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Rekreasyon Planlama Yaklaşımları: Avrupa deneyimleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Globalleşme, Turizm ve Rekreasyonel Alanlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Rekreasyon Planlamasında Çağdaş Yaklaşımlar: Çevresel Sürdürülebilirlik"
+   }
+  ],
   "textbooks": [
    "Bell, S., Design for Outdoor Recreation, Taylor & Francis, 2008",
    "Prœbstl, Ulrike, Wirth, V., Elands, B.,H.,M., Bell, S., Management of Recreation and Nature Based Tourism in European Forests, Berlin, Heidelberg : Springer-Verlag Berlin Heidelberg, 2010",
@@ -2651,12 +5517,12 @@
    "Gartner, C.W., Lime, D.W., Trends in Outdoor Recreation Leisure and Tourism, Cabi, 2000",
    "Seabrooke, W., Miles, C.,W.,N., Recreational Land Management, London : E. & FN Spon, 1993"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=603"
  },
  "PEM 613E": {
   "code": "PEM 613E",
   "name": "Peyzaj Mimarlığında Özel Konu.",
+  "nameEn": "Advan.Topics in Landscape Arc.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2692,6 +5558,77 @@
    "Hafta 13 · Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Hafta 14 · Her dönem ders içeriğine bağli olarak belirlenecektir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir."
+   }
+  ],
   "textbooks": [
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
@@ -2704,12 +5641,12 @@
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Her dönem ders içeriğine bağli olarak belirlenecektir."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=613",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=613"
  },
  "PEM 696E": {
   "code": "PEM 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2753,6 +5690,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -2765,12 +5773,12 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=696"
  },
  "PEM 697": {
   "code": "PEM 697",
   "name": "Uzmanlık Alan Dersi",
+  "nameEn": "Uzmanlık Alan Dersi",
   "language": "Türkçe",
   "credits": {
    "theory": 4,
@@ -2802,11 +5810,81 @@
    "Hafta 13 · Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
    "Hafta 14 · Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma konusuna bağlı olarak öğrencinin danışmanı tarafından belirlenmektedir."
+   }
+  ],
   "textbooks": [
    "Tez konusu kapsamındaki ulusal-uluslararası kitaplar, makaleler, bildiriler",
    "National and international books, articles, publications on the topic of the thesis"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=697",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PEM&dersNo=697"
  }
 }

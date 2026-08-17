@@ -2,6 +2,7 @@
  "TER 201": {
   "code": "TER 201",
   "name": "Termodinamik",
+  "nameEn": "Thermodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -37,15 +38,87 @@
    "Hafta 13 · Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi",
    "Hafta 14 · Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji K"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Temel Kavramlar: Termodinamik ve Enerji, Sistemler ve Kontrol Hacimleri, Sistemin Özelikleri, Durum ve Denge, Durum Değişimi ve Çevrim, Sıcaklık ve Termodinamiğin Sıfırıncı Yasası, Basınç",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerjinin Biçimleri, Isı ile Enerji Geçişi, İş ile Enerji Geçişi, İşin Mekanik Biçimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerji Dönüşüm Verimleri, Enerji ve Çevre",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Saf Maddelerin Özelikleri: Saf Madde, Saf Maddelerin Fazları, Faz Değişim İşlemleri İçin Özelik Diyagramları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Saf Maddelerin Özelikleri: Özelik tabloları, Mükemmel Gaz Durum Denklemi, Sıkıştırılabilme Çarpanı, Diğer Durum Denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kapalı Sistemlerin Enerji Analizi: Hareketli Sınır İşi, Kapalı Sistemler İçin Enerji Dengesi, Özgül Isılar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Kapalı Sistemlerin Enerji Analizi: Mükemmel Gazların İç Enerji, Entalpi ve Özgül Isıları, Katı ve Sıvıların İç Enerji, Entalpi ve Özgül ısıları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Kütlenin Korunumu İlkesi, Akış İşi ve Akışkanın Enerjisi, Sürekli Akışlı Açık Sistemlerin Enerji Analizi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Mühendislikteki Tipik Sürekli Akışlı Açık Sistemler, Zamanla Değişen Açık Sistemlerde Enerjinin Korunumu: Kütlenin Korunumu ve Enerjinin Korunumu",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Termodinamiğin İkinci Yasası: Isıl Enerji Depoları, Isı Makinaları, Soğutma Makinaları ve Isı Pompaları, Devridaim Makinaları, Tersinir ve Tersinmez Durum Değişimleri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Termodinamiğin İkinci Yasası: Carnot Çevrimi, Carnot İlkeleri, Termodinamik Sıcaklık Ölçeği, Carnot Isı Makinası, Carnot Soğutma Makinası ve Isı Pompası",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Entropi: Entropinin Artışı İlkesi, Saf Maddelerin Entropi Değişimi, İzantropik Durum Değişimleri, Entropi İçeren Özelik Diyagramları, T ds Bağıntıları, Sıvı ve Katıların Entropi Değişimi",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji K",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Thermodynamics, An Engineering Approach, Y.A. Çengel, M.A. Boles, McGraw-Hill, 2007,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=201"
  },
  "TER 201E": {
   "code": "TER 201E",
   "name": "Termodinamik",
+  "nameEn": "Thermodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -81,15 +154,87 @@
    "Hafta 13 · Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi",
    "Hafta 14 · Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji K"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Temel Kavramlar: Termodinamik ve Enerji, Sistemler ve Kontrol Hacimleri, Sistemin Özelikleri, Durum ve Denge, Durum Değişimi ve Çevrim, Sıcaklık ve Termodinamiğin Sıfırıncı Yasası, Basınç",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerjinin Biçimleri, Isı ile Enerji Geçişi, İş ile Enerji Geçişi, İşin Mekanik Biçimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerji Dönüşüm Verimleri, Enerji ve Çevre",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Saf Maddelerin Özelikleri: Saf Madde, Saf Maddelerin Fazları, Faz Değişim İşlemleri İçin Özelik Diyagramları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Saf Maddelerin Özelikleri: Özelik tabloları, Mükemmel Gaz Durum Denklemi, Sıkıştırılabilme Çarpanı, Diğer Durum Denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kapalı Sistemlerin Enerji Analizi: Hareketli Sınır İşi, Kapalı Sistemler İçin Enerji Dengesi, Özgül Isılar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Kapalı Sistemlerin Enerji Analizi: Mükemmel Gazların İç Enerji, Entalpi ve Özgül Isıları, Katı ve Sıvıların İç Enerji, Entalpi ve Özgül ısıları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Kütlenin Korunumu İlkesi, Akış İşi ve Akışkanın Enerjisi, Sürekli Akışlı Açık Sistemlerin Enerji Analizi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Mühendislikteki Tipik Sürekli Akışlı Açık Sistemler, Zamanla Değişen Açık Sistemlerde Enerjinin Korunumu: Kütlenin Korunumu ve Enerjinin Korunumu",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Termodinamiğin İkinci Yasası: Isıl Enerji Depoları, Isı Makinaları, Soğutma Makinaları ve Isı Pompaları, Devridaim Makinaları, Tersinir ve Tersinmez Durum Değişimleri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Termodinamiğin İkinci Yasası: Carnot Çevrimi, Carnot İlkeleri, Termodinamik Sıcaklık Ölçeği, Carnot Isı Makinası, Carnot Soğutma Makinası ve Isı Pompası",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Entropi: Entropinin Artışı İlkesi, Saf Maddelerin Entropi Değişimi, İzantropik Durum Değişimleri, Entropi İçeren Özelik Diyagramları, T ds Bağıntıları, Sıvı ve Katıların Entropi Değişimi",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji K",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Thermodynamics, An Engineering Approach, Y.A. Çengel, M.A. Boles, McGraw-Hill, 2007,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=201"
  },
  "TER 203": {
   "code": "TER 203",
   "name": "Termodinamik I",
+  "nameEn": "Thermodynamics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -125,15 +270,87 @@
    "Hafta 13 · Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi",
    "Hafta 14 · Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji K"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Temel Kavramlar: Termodinamik ve Enerji, Sistemler ve Kontrol Hacimleri, Sistemin Özelikleri, Durum ve Denge, Durum Değişimi ve Çevrim, Sıcaklık ve Termodinamiğin Sıfırıncı Yasası, Basınç",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerjinin Biçimleri, Isı ile Enerji Geçişi, İş ile Enerji Geçişi, İşin Mekanik Biçimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji, Enerji Dönüşümleri ve Genel Enerji Çözümlemesi: Enerji Dönüşüm Verimleri, Enerji ve Çevre",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Saf Maddelerin Özelikleri: Saf Madde, Saf Maddelerin Fazları, Faz Değişim İşlemleri İçin Özelik Diyagramları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Saf Maddelerin Özelikleri: Özelik tabloları, Mükemmel Gaz Durum Denklemi, Sıkıştırılabilme Çarpanı, Diğer Durum Denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kapalı Sistemlerin Enerji Analizi: Hareketli Sınır İşi, Kapalı Sistemler İçin Enerji Dengesi, Özgül Isılar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Kapalı Sistemlerin Enerji Analizi: Mükemmel Gazların İç Enerji, Entalpi ve Özgül Isıları, Katı ve Sıvıların İç Enerji, Entalpi ve Özgül ısıları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Kütlenin Korunumu İlkesi, Akış İşi ve Akışkanın Enerjisi, Sürekli Akışlı Açık Sistemlerin Enerji Analizi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Kontrol Hacimleri İçin Kütle ve Enerji Çözümlemesi: Mühendislikteki Tipik Sürekli Akışlı Açık Sistemler, Zamanla Değişen Açık Sistemlerde Enerjinin Korunumu: Kütlenin Korunumu ve Enerjinin Korunumu",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Termodinamiğin İkinci Yasası: Isıl Enerji Depoları, Isı Makinaları, Soğutma Makinaları ve Isı Pompaları, Devridaim Makinaları, Tersinir ve Tersinmez Durum Değişimleri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Termodinamiğin İkinci Yasası: Carnot Çevrimi, Carnot İlkeleri, Termodinamik Sıcaklık Ölçeği, Carnot Isı Makinası, Carnot Soğutma Makinası ve Isı Pompası",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Entropi: Entropinin Artışı İlkesi, Saf Maddelerin Entropi Değişimi, İzantropik Durum Değişimleri, Entropi İçeren Özelik Diyagramları, T ds Bağıntıları, Sıvı ve Katıların Entropi Değişimi",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Entropi: Mükemmel Gazların Entropi Değişimi, Tersinir Sürekli Akış İşi, Kompresör İşinin En Aza İndirilmesi, Sürekli Akışlı Cihazların İzantropik Verimleri, Entropi Dengesi",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Ekserji: İş Potansiyelinin Bir Ölçüsü: Tersinir İş ve Tersinmezlik, İkinci Yasa Verimi, Bir Sistemin Ekserji Değişimi, Isı İş ve Kütle ile İlgili Ekserji Geçişi, Eksejinin Azalması İlkesi ve Ekserji K",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Thermodynamics, An Engineering Approach, Y.A. Çengel, M.A. Boles, McGraw-Hill, 2007,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=203"
  },
  "TER 205": {
   "code": "TER 205",
   "name": "Termodinamik I",
+  "nameEn": "Thermodynamics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -147,12 +364,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=205"
  },
  "TER 205E": {
   "code": "TER 205E",
   "name": "Termodinamik I",
+  "nameEn": "Thermodynamics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -166,12 +383,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=205"
  },
  "TER 206": {
   "code": "TER 206",
   "name": "Termodinamik II",
+  "nameEn": "Thermodynamics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -185,12 +402,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=206"
  },
  "TER 206E": {
   "code": "TER 206E",
   "name": "Termodinamik II",
+  "nameEn": "Thermodynamics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -204,7 +421,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TER&dersNo=206"
  }
 }

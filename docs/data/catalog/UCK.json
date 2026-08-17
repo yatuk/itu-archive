@@ -2,6 +2,7 @@
  "UCK 101": {
   "code": "UCK 101",
   "name": "Uçak Müh. Giriş ve Etik",
+  "nameEn": "Int. to Aeronautical Engineering and Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -34,15 +35,87 @@
    "Hafta 13 · Mühendislik etiği",
    "Hafta 14 · Etik kodları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İTÜ’ nün tanıtımı, Öğrencilerin hakları ve sorumlulukları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "UUBF ve Uçak Mühendisliği bölümünün tanıtımı, Öğretim üyeleri ve dersler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İTÜ Akademik Onur sözü ve bazı etik konuları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Dünyada havacılığın tarihçesi ve gelişimi,",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Türkiye'de havacılığın tarihçesi ve gelişimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Dünyada ve Türkiye'de havacılığın mevcut potansiyeli",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Uçakların genel tanıtımı, Uçak tipleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sivil uçaklar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Askeri uçaklar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Diğer havacılık araçları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Uçuşun esasları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Uçakların temel elemanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Mühendislik etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Etik kodları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "- J.D. Anderson, 2012, Introduction to Flight, McGraw Hill, 7th Edition"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=101"
  },
  "UCK 104": {
   "code": "UCK 104",
   "name": "Uçak Müh. ve Tasarım",
+  "nameEn": "Aeronautical Engineering and Design",
   "language": "Türkçe",
   "credits": {
    "theory": 1,
@@ -79,15 +152,87 @@
    "Hafta 13 · 13 Uygulama",
    "Hafta 14 · 14 Uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "1 Uçak Tasarımına Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "2 Uçak Elemanları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "3 Uçak Sistemleri, Uçuş Emniyeti ve Sertifikasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "4 Aerodinamik",
+    "outcomes": "1-5-6"
+   },
+   {
+    "week": 5,
+    "topic": "5 Aerodinamik",
+    "outcomes": "1-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "6 Uçak İtki ve Yakıt Sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "7 Uçuş Performans",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "8 Uygulama",
+    "outcomes": "1-2-3-4-5-6-7-8-9"
+   },
+   {
+    "week": 9,
+    "topic": "9 Uçuş Stabilite ve Kontrol",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "10 Uçak Yapısı",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "11 Uçak Yapısı",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "12 Uçuş Enstrümanları",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "13 Uygulama",
+    "outcomes": "1-2-3-4-5-6-7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "14 Uygulama",
+    "outcomes": "1-2-3-4-5-6-7-8-9"
+   }
+  ],
   "textbooks": [
    "“Uçuşa Başlangıç”, Anderson, J.D., Çeviri: Prof. Dr. M. Adil YÜKSELEN, Nobel Yayınevi, 2016.-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=104",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=104"
  },
  "UCK 106": {
   "code": "UCK 106",
   "name": "Uçak Müh. Giriş ve Tasarım",
+  "nameEn": "Int. to Aeronautical Engineering and Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -121,15 +266,87 @@
    "Hafta 13 · Uçuş Performansı",
    "Hafta 14 · Uçak Yapısı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İTÜ hakkında sunum, öğrencilerin hakları ve sorumlulukları",
+    "outcomes": "5"
+   },
+   {
+    "week": 2,
+    "topic": "Dünyada havacılığın tarihi ve değerlendirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dünyada ve Türkiye’de havacılığın potansiyeli",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Uçuşun temel prensipleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Bazı etik konular",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Uçakların ana bileşenleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Mühendislik etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Uçak Tasarımına Giriş",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 9,
+    "topic": "Uçağın Elemanları",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Uçak Sistemleri, Uçuş Emniyeti ve Sertifikasyon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Aerodinamik",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Uçak İtki ve Yakıt Sistemi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Uçuş Performansı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Uçak Yapısı",
+    "outcomes": "3-6"
+   }
+  ],
   "textbooks": [
    "J.D. Anderson, 2012, Introduction to Flight, McGraw Hill, 7th Edition"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=106",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=106"
  },
  "UCK 203E": {
   "code": "UCK 203E",
   "name": "Circuits, Signals and Systems",
+  "nameEn": "Circuits, Signals and Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -166,15 +383,87 @@
    "Hafta 13 · Fourier Dönüşümü",
    "Hafta 14 · Ders Değerlendirmesi ve İleri Konular"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Devre Değişkenleri ve Elemanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Devre Teorisi, Kirchoff’un Yasaları ve Direnç Devreleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Devre Analiz Teknikleri: Düğüm Gerilimi ve Çevre Akımı Yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Thevenin ve Norton denklikleri, İşlevsel Kuvvetlendirici",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Endüktans, Kapasitans ve Dinamik Devrelere Giriş",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 6,
+    "topic": "Birinci Derece RL ve RC Devreleri",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "İkinci Dereceden Devrelerin Çözümleri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 8,
+    "topic": "Laplace Dönüşümü",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Laplace Dönüşümü (devamı)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "S Tanım Bölgesinde Devrelerin Analizi",
+    "outcomes": "3-4-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Transfer Fonksiyonu ve Konvolüsyon Integrali",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Devrelerin Frekans Seçiciliği",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 13,
+    "topic": "Fourier Dönüşümü",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Ders Değerlendirmesi ve İleri Konular",
+    "outcomes": "8-9"
+   }
+  ],
   "textbooks": [
    "J.W. Nilsson, S.A. Riedel, Electric Circuits, 10th Edition, Pearson, New Jersey, 2015, ISBN 978-0-13-376003-3."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=203"
  },
  "UCK 205": {
   "code": "UCK 205",
   "name": "Termodinamik I",
+  "nameEn": "Thermodynamics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -204,15 +493,87 @@
    "Hafta 13 · Control hacimleri için kütle ve enerji analizi",
    "Hafta 14 · Problem çözümü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kavram ve Tanımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli ortam ve sanki dengeli prosesler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Saf madde özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Termodinamik tablolar ve önemli grafikler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Isı ile enerji transferi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Iş ve kütle ile enerji transferi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Problem çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Termodinamiğin birinci kanunu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Problem çözme tekniği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Kapalı sistemler için enerji analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Ara sınav",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Problem çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Control hacimleri için kütle ve enerji analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Problem çözümü",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Ders Kitabı (Textbook) Çengel Y. A. Thermodynamics: An Engineering Approach, McGraw Hill, 8th ed., 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=205"
  },
  "UCK 205E": {
   "code": "UCK 205E",
   "name": "Termodinamik I",
+  "nameEn": "Thermodynamics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -242,15 +603,87 @@
    "Hafta 13 · Control hacimleri için kütle ve enerji analizi",
    "Hafta 14 · Problem çözümü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kavram ve Tanımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli ortam ve sanki dengeli prosesler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Saf madde özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Termodinamik tablolar ve önemli grafikler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Isı ile enerji transferi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Iş ve kütle ile enerji transferi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Problem çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Termodinamiğin birinci kanunu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Problem çözme tekniği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Kapalı sistemler için enerji analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Ara sınav",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Problem çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Control hacimleri için kütle ve enerji analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Problem çözümü",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Ders Kitabı (Textbook) Çengel Y. A. Thermodynamics: An Engineering Approach, McGraw Hill, 8th ed., 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=205"
  },
  "UCK 206": {
   "code": "UCK 206",
   "name": "Termodinamik II",
+  "nameEn": "Thermodynamics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -283,15 +716,87 @@
    "Hafta 13 · 13 Soğutucu çevrimleri",
    "Hafta 14 · 14 Problem çözümü ve kapanış vurguları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "2 Isı rezervuarı, ısı makinesi, ısı pompası ve soğutucu tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "3 Termodinamiğin ikinci kanunu",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "4 Carnot çevrimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "5 Problem çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "6 Entropi",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "7 Problem çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "8 Ara sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "9 Ara sınav değerlendirmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "10 Ekserji: iş yapılma yeteneği ölçütü",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "11 Gaz güç çevrimleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "12 Buhar ve kombine güç çevrimleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "13 Soğutucu çevrimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "14 Problem çözümü ve kapanış vurguları",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Çengel Y. A. Thermodynamics: An Engineering Approach, McGraw Hill, 8th ed., 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=206"
  },
  "UCK 206E": {
   "code": "UCK 206E",
   "name": "Termodinamik II",
+  "nameEn": "Thermodynamics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -324,15 +829,87 @@
    "Hafta 13 · 13 Soğutucu çevrimleri",
    "Hafta 14 · 14 Problem çözümü ve kapanış vurguları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "2 Isı rezervuarı, ısı makinesi, ısı pompası ve soğutucu tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "3 Termodinamiğin ikinci kanunu",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "4 Carnot çevrimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "5 Problem çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "6 Entropi",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "7 Problem çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "8 Ara sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "9 Ara sınav değerlendirmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "10 Ekserji: iş yapılma yeteneği ölçütü",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "11 Gaz güç çevrimleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "12 Buhar ve kombine güç çevrimleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "13 Soğutucu çevrimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "14 Problem çözümü ve kapanış vurguları",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Çengel Y. A. Thermodynamics: An Engineering Approach, McGraw Hill, 8th ed., 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=206"
  },
  "UCK 207": {
   "code": "UCK 207",
   "name": "Termodinamik",
+  "nameEn": "Thermodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -367,15 +944,87 @@
    "Hafta 13 · Gaz güç çevrimleri",
    "Hafta 14 · Buhar, kombine güç ve soğutma çevrimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kavramlar ve tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli ortam ve yarı-dengeli süreçler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Saf maddelerin özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Isı, iş ve kütle ile enerji transferi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Termodinamiğin birinci yasası",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Kapalı sistemlerin enerji analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Kontrol hacimlerinin kütle ve enerji analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Isı rezervuarı, ısı motoru, ısı pompası ve buzdolabı tanımları",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Termodinamiğin ikinci yasası",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Carnot çevrimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Entropi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Ekserji",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gaz güç çevrimleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Buhar, kombine güç ve soğutma çevrimleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Çengel Y. A. Thermodynamics: An Engineering Approach, McGraw Hill, 8th ed., 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=207"
  },
  "UCK 207E": {
   "code": "UCK 207E",
   "name": "Termodinamik",
+  "nameEn": "Thermodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -410,15 +1059,87 @@
    "Hafta 13 · Gaz güç çevrimleri",
    "Hafta 14 · Buhar, kombine güç ve soğutma çevrimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kavramlar ve tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli ortam ve yarı-dengeli süreçler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Saf maddelerin özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Isı, iş ve kütle ile enerji transferi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Termodinamiğin birinci yasası",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Kapalı sistemlerin enerji analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Kontrol hacimlerinin kütle ve enerji analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Isı rezervuarı, ısı motoru, ısı pompası ve buzdolabı tanımları",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Termodinamiğin ikinci yasası",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Carnot çevrimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Entropi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Ekserji",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gaz güç çevrimleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Buhar, kombine güç ve soğutma çevrimleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Çengel Y. A. Thermodynamics: An Engineering Approach, McGraw Hill, 8th ed., 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=207"
  },
  "UCK 212": {
   "code": "UCK 212",
   "name": "Termodinamik",
+  "nameEn": "Thermodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -453,15 +1174,87 @@
    "Hafta 13 · Buhar ve kombine güç çevrimleri",
    "Hafta 14 · Soğutma çevrimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kavram ve tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Saf madde ve P-v-T özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Isı, iş ve kütle ile enerji transferi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Problem çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Termodinamiğin 1. kanunu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Birinci ara sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Termodinamiğin 2. kanunu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Entropi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Problem çözümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "İkinci ara sınav",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ekserji: iş potansiyeli ölçütü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Gaz güç çevrimleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Buhar ve kombine güç çevrimleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Soğutma çevrimleri",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Thermodynamics: An Engineering Approach, Çengel Y. A. , , 2008, McGraw Hill"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=212"
  },
  "UCK 212E": {
   "code": "UCK 212E",
   "name": "Termodinamik",
+  "nameEn": "Thermodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -496,15 +1289,87 @@
    "Hafta 13 · Buhar ve kombine güç çevrimleri",
    "Hafta 14 · Soğutma çevrimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kavram ve tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Saf madde ve P-v-T özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Isı, iş ve kütle ile enerji transferi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Problem çözümü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Termodinamiğin 1. kanunu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Birinci ara sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Termodinamiğin 2. kanunu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Entropi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Problem çözümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "İkinci ara sınav",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ekserji: iş potansiyeli ölçütü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Gaz güç çevrimleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Buhar ve kombine güç çevrimleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Soğutma çevrimleri",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Thermodynamics: An Engineering Approach, Çengel Y. A. , , 2008, McGraw Hill"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=212"
  },
  "UCK 215E": {
   "code": "UCK 215E",
   "name": "Hava-Uzay Malzemeleri",
+  "nameEn": "Aerospace Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -538,15 +1403,86 @@
    "Hafta 13 · Malzemelerin test edilmesi",
    "Hafta 14 · Malzeme seçimi ve tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Malzeme bilimine giriş, atomik yapı ve atomlar arası bağlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kristalin katıların yapıları, katılarda kusurlar ve difüzyon",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Malzemelerin mekanik özellikleri (devam), malzemelerin ısıl özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Mukavemetlendirme mekanizmaları ve göçme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Metal alaşımları: mikro yapı mühendisliği, faz diyagramları ve dönüşümler",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Metal alaşımları: mikro yapı mühendisliği, faz diyagramları ve dönüşümler (devam)"
+   },
+   {
+    "week": 8,
+    "topic": "Titanyum alaşımları ve süper alaşımlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Seramikler ve korozyon",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Polimerler",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kompozitler",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kompozitlerin mekaniği",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Malzemelerin test edilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Malzeme seçimi ve tasarımı",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Material Science and Engineering: An Introduction, William D. Callister (9th Edition, 2014)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=215"
  },
  "UCK 217E": {
   "code": "UCK 217E",
   "name": "Aerospace Materials",
+  "nameEn": "Aerospace Materials",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -580,15 +1516,87 @@
    "Hafta 13 · Malzemelerin test edilmesi",
    "Hafta 14 · Malzeme seçimi ve tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Malzeme bilimine giriş, atomik yapı ve atomlar arası bağlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kristalin katıların yapıları, katılarda kusurlar ve difüzyon",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Malzemelerin mekanik özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Malzemelerin mekanik özellikleri (devam), malzemelerin ısıl özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Pekleştirme mekanizmaları ve göçme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Metal alaşımları: mikro yapı mühendisliği, faz diyagramları ve dönüşümler",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Metal alaşımları: mikro yapı mühendisliği, faz diyagramları ve dönüşümler (devam)",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Titanyum alaşımları ve süper alaşımlar, korozyon",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Seramikler",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Polimerler",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kompozitler",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kompozitlerin mekaniği",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Malzemelerin test edilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Malzeme seçimi ve tasarımı",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Material Science and Engineering: An Introduction, William D. Callister (9th Edition, 2014)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=217",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=217"
  },
  "UCK 226": {
   "code": "UCK 226",
   "name": "Yapısal ve Mekanik Titreşimler",
+  "nameEn": "Struc. & Mechanical Vibrations",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -623,17 +1631,89 @@
    "Hafta 13 · Çubukların uzunlamasına ve burulma titreşimleri",
    "Hafta 14 · Kirişlerin enlemesine titreşimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Titreşim Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Harmonik Hareket",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sönümlü Tek Serbestlik Dereceli Sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Enerji Metodları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Eşdeğer Sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sönümlü Serbest Titreşimler",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Harmonik Zorlanmış Titreşimler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Genel Kuvvet Altında Titreşimler",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "İki Serbestlik Dereceli Serbest ve Zorlanmış Titreşimler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Çok Serbestlik Dereceli Sistemlerin Titreşimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sürekli Cisimlerin Titreşimine Giriş: Telin titreşimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çubukların uzunlamasına ve burulma titreşimleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Kirişlerin enlemesine titreşimleri",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Mechanical Vibrations, Rao, S.S, Addison Wesley Longman Inc, 1995,",
    "Fundamentals of Mechanical Vibrations, .Kelly, S.G, McGraw-Hill, 1993,",
    "Elements of Vibration Analysis, Meirovitch, L., McGraw-Hill Inc, 1986,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=226",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=226"
  },
  "UCK 226E": {
   "code": "UCK 226E",
   "name": "Yapısal ve Mekanik Titreşimler",
+  "nameEn": "Struc. & Mechanical Vibrations",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -668,17 +1748,89 @@
    "Hafta 13 · Çubukların uzunlamasına ve burulma titreşimleri",
    "Hafta 14 · Kirişlerin enlemesine titreşimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Titreşim Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Harmonik Hareket",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sönümlü Tek Serbestlik Dereceli Sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Enerji Metodları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Eşdeğer Sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sönümlü Serbest Titreşimler",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Harmonik Zorlanmış Titreşimler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Genel Kuvvet Altında Titreşimler",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "İki Serbestlik Dereceli Serbest ve Zorlanmış Titreşimler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Çok Serbestlik Dereceli Sistemlerin Titreşimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sürekli Cisimlerin Titreşimine Giriş: Telin titreşimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çubukların uzunlamasına ve burulma titreşimleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Kirişlerin enlemesine titreşimleri",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Mechanical Vibrations, Rao, S.S, Addison Wesley Longman Inc, 1995,",
    "Fundamentals of Mechanical Vibrations, .Kelly, S.G, McGraw-Hill, 1993,",
    "Elements of Vibration Analysis, Meirovitch, L., McGraw-Hill Inc, 1986,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=226",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=226"
  },
  "UCK 236E": {
   "code": "UCK 236E",
   "name": "Kompozit Malzemeler",
+  "nameEn": "Composite Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -715,15 +1867,87 @@
    "Hafta 13 · Çevresel etkiler ve dayanıklılık, Elyaflı kompozit katmanların hasar toleransı ve uçuşa elverişlilik",
    "Hafta 14 · İmalat yöntemleri : elyaf sarma, açık ve basınçlı kalıp teknolojisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kompozit malzemelere giriş ve kompozit malzemelerin kullanım alanları",
+    "outcomes": "1-8-9"
+   },
+   {
+    "week": 2,
+    "topic": "Elyaflar",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 3,
+    "topic": "Matrisler, arayüzeyler",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 4,
+    "topic": "Kompozitler",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 5,
+    "topic": "Anizotropik elastisite",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kompozitlerin mikromekaniği",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Katman teorisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Katman teorisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Katman teorisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Katmanlı kirişler I: eğilme ve dayanım",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Katmanlı kirişler II: yanlamasına kesme ve burkulma",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Katmanlı plaklar",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Çevresel etkiler ve dayanıklılık, Elyaflı kompozit katmanların hasar toleransı ve uçuşa elverişlilik",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "İmalat yöntemleri : elyaf sarma, açık ve basınçlı kalıp teknolojisi",
+    "outcomes": "8-9"
+   }
+  ],
   "textbooks": [
    "Kaw, A. K. (2005). Mechanics of composite materials. CRC press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=236",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=236"
  },
  "UCK 303E": {
   "code": "UCK 303E",
   "name": "Automatic Control",
+  "nameEn": "Automatic Control",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -761,15 +1985,87 @@
    "Hafta 13 · Köklerin yer eğrisi yöntemi. Örnekler.",
    "Hafta 14 · Köklerin yer eğrisi yöntemi. Örnekler. (devamı)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Otomatik kontrol sistemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kontrol prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Laplace dönüşüm yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Laplace dönüşüm yönteminin özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sistemlerin transfer fonksiyonları: Basit örnekler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kontrol sistemlerinin zaman bölgesinde analizi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Birinci ve ikinci mertebeden sistemler.",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Birinci ve ikinci mertebeden sistemler (devamı).",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Sistemlerin sürekli hal hatası",
+    "outcomes": "3-4-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Sistemlerin zaman yanıtları",
+    "outcomes": "3-4-5-6-7-10"
+   },
+   {
+    "week": 11,
+    "topic": "Doğrusal sistemlerin kararlılık analizi",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 12,
+    "topic": "Routh-Hurwitz yöntemi. Örnekler",
+    "outcomes": "4-8-10"
+   },
+   {
+    "week": 13,
+    "topic": "Köklerin yer eğrisi yöntemi. Örnekler.",
+    "outcomes": "4-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Köklerin yer eğrisi yöntemi. Örnekler. (devamı)",
+    "outcomes": "4-8-9"
+   }
+  ],
   "textbooks": [
    "Katsuhiko Ogata, Modern Control Engineering, Fifth Ed.,Prentice-Hall Inc., 2016"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=303"
  },
  "UCK 304E": {
   "code": "UCK 304E",
   "name": "Deneysel Mühendislik",
+  "nameEn": "Experimental Engineering",
   "language": "English/Türkçe",
   "credits": {
    "theory": 0,
@@ -808,15 +2104,87 @@
    "Hafta 13 · Projeler (deneysel çalışma) ve tasarım",
    "Hafta 14 · Sunumlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laboratuvar deneylerinin sunumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Standart deneyler: sınır tabakası deneyleri / Proje: literatür taraması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Standart deneyler: sınır tabakası deneyleri / Proje: literatür taraması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Standart deneyler: bir silindirin sürükleme katsayısının belirlenmesi / Proje: literatür taraması ve deney düzeninin ön tanımı",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Standart deneyler: bir silindirin sürükleme katsayısının belirlenmesi / Proje: literatür taraması ve deney düzeninin ön tanımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Standart deneyler: RC-RLC-Op-Amp devre deneyleri / Proje: deney modelinin tasarımı, kurulumu ve testi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Standart deneyler: RC-RLC-Op-Amp devre deneyleri / Proje: deney modelinin tasarımı, kurulumu ve testi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Standart deneyler: yapısal testler / Proje: test matrisinin tanımlanması",
+    "outcomes": "1-2-3-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Standart deneyler: yapısal testler / Proje: test matrisinin tanımlanması",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Projeler (deneysel çalışma) ve tasarım",
+    "outcomes": "3-10-11"
+   },
+   {
+    "week": 11,
+    "topic": "Projeler (deneysel çalışma) ve tasarım",
+    "outcomes": "3-10-11"
+   },
+   {
+    "week": 12,
+    "topic": "Projeler (deneysel çalışma) ve tasarım",
+    "outcomes": "3-10-11"
+   },
+   {
+    "week": 13,
+    "topic": "Projeler (deneysel çalışma) ve tasarım",
+    "outcomes": "3-10-11"
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar",
+    "outcomes": "3-10-11"
+   }
+  ],
   "textbooks": [
    "Holman, J.P., Experimental Methods for Engineers, 8th ed., McGraw-Hill, 2011"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=304",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=304"
  },
  "UCK 305": {
   "code": "UCK 305",
   "name": "Aerodinamik",
+  "nameEn": "Aerodynamics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -849,15 +2217,87 @@
    "Hafta 13 · Prandtl’nin Klasik Kaldırma Hattı Teorisi, Eliptik kaldırma dağılımı.",
    "Hafta 14 · Genel kaldırma dağılımı, en-boy oranının etkisi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aerodinamik kuvvetler ve momentler. Basınç merkezi ve aerodinamik merkez.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boyutsal analiz, akış benzerliği, akış türleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Akışkan modelleri, süreklilik ve momentum denklemleri, 2-boyutlu bir cismin sürükleme kuvveti.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Akışın temel denklemleri, parçacık izleri (pathlines), akım çizgileri (streamlines), iz çizgileri (streaklines).",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Akım fonksiyonu, hız potansiyeli, sürtünmesiz sıkıştırılamaz akışın temel prensipleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Bernoulli denklemi, Pitot tüpü",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Laplace denklemi, uniform akış, kaynak ve dipol akışları, dairesel silindir üzerindeki akış.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Girdap akışı, silindir üzerindeki kaldırma akışı, Kutta-Joukowski teoremi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Kanat profilleri üzerindeki sıkıştırılamaz akışlar, Kutta koşulu, Kelvin dolaşım teoremi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Klasik ince kanat profili teorisi, simetrik ve eğimli (kamburlu) kanat profilleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Sıkıştırılamaz akışın sonlu kanatlar üzerindeki etkisi, aşağı akış (downwash) ve indüklenmiş sürükleme (induced drag), girdap filamenti, Biot-Savart Kanunu ve Helmholtz teoremleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Panel yöntemleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Prandtl’nin Klasik Kaldırma Hattı Teorisi, Eliptik kaldırma dağılımı.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Genel kaldırma dağılımı, en-boy oranının etkisi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Anderson J.D. 2017, Fundamentals of Aerodynamics, McGraw-Hill"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=305"
  },
  "UCK 305E": {
   "code": "UCK 305E",
   "name": "Aerodinamik",
+  "nameEn": "Aerodynamics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -890,15 +2330,87 @@
    "Hafta 13 · Prandtl’nin Klasik Kaldırma Hattı Teorisi, Eliptik kaldırma dağılımı.",
    "Hafta 14 · Genel kaldırma dağılımı, en-boy oranının etkisi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aerodinamik kuvvetler ve momentler. Basınç merkezi ve aerodinamik merkez.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boyutsal analiz, akış benzerliği, akış türleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Akışkan modelleri, süreklilik ve momentum denklemleri, 2-boyutlu bir cismin sürükleme kuvveti.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Akışın temel denklemleri, parçacık izleri (pathlines), akım çizgileri (streamlines), iz çizgileri (streaklines).",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Akım fonksiyonu, hız potansiyeli, sürtünmesiz sıkıştırılamaz akışın temel prensipleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Bernoulli denklemi, Pitot tüpü",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Laplace denklemi, uniform akış, kaynak ve dipol akışları, dairesel silindir üzerindeki akış.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Girdap akışı, silindir üzerindeki kaldırma akışı, Kutta-Joukowski teoremi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Kanat profilleri üzerindeki sıkıştırılamaz akışlar, Kutta koşulu, Kelvin dolaşım teoremi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Klasik ince kanat profili teorisi, simetrik ve eğimli (kamburlu) kanat profilleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Sıkıştırılamaz akışın sonlu kanatlar üzerindeki etkisi, aşağı akış (downwash) ve indüklenmiş sürükleme (induced drag), girdap filamenti, Biot-Savart Kanunu ve Helmholtz teoremleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Panel yöntemleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Prandtl’nin Klasik Kaldırma Hattı Teorisi, Eliptik kaldırma dağılımı.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Genel kaldırma dağılımı, en-boy oranının etkisi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Anderson J.D. 2017, Fundamentals of Aerodynamics, McGraw-Hill"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=305"
  },
  "UCK 322E": {
   "code": "UCK 322E",
   "name": "UçuşMekaniği",
+  "nameEn": "Flight Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -936,15 +2448,87 @@
    "Hafta 13 · Uzunlamasına sabit ve serbest dümen statik kararlılığı.Yönlemesine statik kararlılık.",
    "Hafta 14 · Dönem projelerinin sunumu."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Temel aerodinamik, standart atmosfer, kanat profilleri, kanat taşıma ve sürüklemesi, ahav hızları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 2,
+    "topic": "Uçak üzerine gelen kuvvetler ve Altsistemler: Aerodinamik kuvvetler ve itki altsistemleri.",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 3,
+    "topic": "Turbojetler-Düşey düzlemde yatay uçuş: Hareket denklemleri, yaty uçuş, tavan irtifası.",
+    "outcomes": "4-9"
+   },
+   {
+    "week": 4,
+    "topic": "Yatay uçuş en iyi menzili ve havada maksimum kalma süresi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Kalkış ve iniş.",
+    "outcomes": "4-9"
+   },
+   {
+    "week": 6,
+    "topic": "Tırmanma uçuşu.1. ARASINAV",
+    "outcomes": "4-5-9"
+   },
+   {
+    "week": 7,
+    "topic": "Maksimum hız ile, maksimum açı ile ve minimum yakıt harcaması ile tırmanma uçuşları.",
+    "outcomes": "9"
+   },
+   {
+    "week": 8,
+    "topic": "Süzülüş uçuşu.",
+    "outcomes": "9"
+   },
+   {
+    "week": 9,
+    "topic": "Yatay düzlemde dönüş uçuşu: Hareket denklemleri, maksimum yük katsayısı, yatış açısı, dönüş oranı ve dönüş yarıçapı.",
+    "outcomes": "4-9"
+   },
+   {
+    "week": 10,
+    "topic": "Maksimum yük katsayısı ile, maksimum hız ile ve minimum dönüş yarıçapı ile dönüş uçuşları.",
+    "outcomes": "9"
+   },
+   {
+    "week": 11,
+    "topic": "Piston pervaneli uçaklar için uçuş performansı: Hareket denklemleri, yatay uçuş ve tavan irtifası özellikleri ,en iyi menzil ve havada maksimum kalma süresi. Uçuş ve manevra zarfları.",
+    "outcomes": "4-9"
+   },
+   {
+    "week": 12,
+    "topic": "Uçuş statik kararlılığı ve kontrolü: Hücum açısı, yana kayma açısı, yuvarlanma, yunuslama ve sapma kontrolleri. 2. ARASINAV",
+    "outcomes": "4-5-9"
+   },
+   {
+    "week": 13,
+    "topic": "Uzunlamasına sabit ve serbest dümen statik kararlılığı.Yönlemesine statik kararlılık.",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projelerinin sunumu.",
+    "outcomes": "1-2-3-5-6-10"
+   }
+  ],
   "textbooks": [
    "Introduction to Aircraft Performance, Selection and Design, Hale, F.J., John Wiley & Sons, Inc., 1984, 9780471078852"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=322",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=322"
  },
  "UCK 328E": {
   "code": "UCK 328E",
   "name": "Yapısal Analiz ve Tasarım",
+  "nameEn": "Structural Analysis and Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -980,15 +2564,87 @@
    "Hafta 13 · Yapıların burkulması",
    "Hafta 14 · Isıl gerilmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapısal tasarım işlemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Malzeme seçim kriterleri ve hava-uzay malzemeleri. Uçuşa elverişlilik, yapısal bütünlük ve göçme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sonlu elemanlar yöntemiyle modelleme ve analiz. Kafes sistemler, kirişler ve çerçeveler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kafes sistemler, kirişler ve çerçeveler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kafes sistemler, kirişler ve çerçeveler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Düzlem gerilme ve düzlem şekil değiştirme problemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Plaklar, kabuklar ve ince cidarlı yapılar",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Takviyeli paneller",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kompozit yapılar",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 10,
+    "topic": "Eksenel simetrik katılar",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Genel katılar",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 12,
+    "topic": "Yapıların titreşimi",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 13,
+    "topic": "Yapıların burkulması",
+    "outcomes": "3-8"
+   },
+   {
+    "week": 14,
+    "topic": "Isıl gerilmeler",
+    "outcomes": "3-8"
+   }
+  ],
   "textbooks": [
    "The Finite Element Method In Mechanical Design, Charles E. Knight, Jr. , PWS-Kent Pub. Co. (Boston) , 1993, 0534931871"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=328",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=328"
  },
  "UCK 337E": {
   "code": "UCK 337E",
   "name": "Introduction to Optimization",
+  "nameEn": "Introduction to Optimization",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1021,15 +2677,87 @@
    "Hafta 13 · Kısıtlı Doğrusal Olmayan Optimizasyon, Bölüm 2",
    "Hafta 14 · Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Optimizasyona Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Optimalite için Gerekli ve Yeterli Şartlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrultu Arama Yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gradyan Tabanlı Yöntemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Newton Yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hessian Tabanlı Yöntemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "En Küçük Kareler Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Türev Gerektirmeyen Yöntemler, Bölüm 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Türev Gerektirmeyen Yöntemler, Bölüm 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Doğrusal Optimizasyon, Bölüm 1",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Doğrusal Optimizasyon, Bölüm 2",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Kısıtlı Doğrusal Olmayan Optimizasyon, Bölüm 1",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kısıtlı Doğrusal Olmayan Optimizasyon, Bölüm 2",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalar",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Chong, Edwin K, Stanislaw H. Zak. An Introduction to Optimization. Vol. 76. John Wiley and Sons, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=337",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=337"
  },
  "UCK 348E": {
   "code": "UCK 348E",
   "name": "Müh. Bilgisayar Uygulamaları",
+  "nameEn": "Computer Applic.in Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1062,16 +2790,88 @@
    "Hafta 13 · Taşınım problemleri",
    "Hafta 14 · Taşınım yayınım problemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, Lineer denklem takımları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "ADD, Seri çözümü, Euler yöntemleri, Runge Kutta yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "ADD, Çok adımlı yöntemler, Yüksek dereceden denklemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "ADD, Sınır değer problemleri, atış, sonlu fark yöntemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "KDD, Eliptik denklemler, direkt ve yöntemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "KDD, Eliptik denklemler, iteratif yöntemler, ADI yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "KDD, Parabolik denklemler, açık ve kapalı şemalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "ARA SINAVI",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "KDD, Parabolik denklemler, Crank Nicolson yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "KDD, Hiperbolik denklemler, salınan yay problemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "KDD, Hiperbolik denklemler, D Alembert çözümü",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Sonlu hacim tekniklerinin esasları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Taşınım problemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Taşınım yayınım problemleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Applied Numerical Analysis, Gerald G.F. and Wheatley P.O, Addison-Wesley, 2004,",
    "An Introduction to CFD, The Finite Volume Method, Versteeg H.K., Malalasekera W, Longman Scientific and Technical, 1995,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=348",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=348"
  },
  "UCK 350E": {
   "code": "UCK 350E",
   "name": "Analitik Dinamik",
+  "nameEn": "Analytical Dynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1106,16 +2906,88 @@
    "Hafta 13 · Lagrange Denklemlerinin Uygulamaları",
    "Hafta 14 · Hamilton Denklemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Maddesel Parçaçık-Newton Mekaniği",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Merkezcil Kuvvet Etkisinde Hareket- Kepler Problemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Parçaçıklar Sisteminin Dinamiği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Rijid Cisim Dinamiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Rijid Cisim Dinamiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Rijid Cisim Dinamiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Ara sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Genelleştirilmiş Koordinatlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Genelleştirilmiş Koordinatlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "En Küçük Etki Prensibi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Lagrange Denklemleri",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Lagrange Denklemleri",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Lagrange Denklemlerinin Uygulamaları",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 14,
+    "topic": "Hamilton Denklemi",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Classical Dynamics of Particles and Systems, Stephen T. Thoronton, Jerry B. Marion, Thomson, Cole, 2004,",
    "Analytical Dynamics, Haim Baruh, McGraw Hill , 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=350",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=350"
  },
  "UCK 351": {
   "code": "UCK 351",
   "name": "Aerodinamik",
+  "nameEn": "Aerodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1148,15 +3020,87 @@
    "Hafta 13 · Taşıyıcı çizgi teorisi, eliptik taşıma dağılımı.",
    "Hafta 14 · Genel taşıma dağılımı, açıklık oranı etkisi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aerodinamik kuvvet ve momentler. Basınç merkezi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "boyut analizi, akım benzerliği, akım türleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Akış modelleri, kütle ve lineer momentumun korunumu, 2 boyutlu cisme etki eden sürükleme ve taşıma kuvvetleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Materyal türev cinsinden korunum denklemleri, yörünge, akım çizgisi, çıkış çizgisi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Akım fonksiyonu, hız potansiyeli, sürtünmesiz, sıkıştırılamaz akımın temelleri,",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Bernoulli denklemi, Pitot tübü.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Laplace denklemi, üniform akım, kaynak akımı, duble akımı, daire etrafındaki akış.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Vorteks akımı, Daire etrafındaki sirkülasyonlu akım, Kutta Joukowski teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kanat profili etrafındaki sıkıştırılamaz akım, Kutta şartı, Kelvin sirkülasyon teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "İnce profil teorisi, simetrik ve kamburluklu profiller",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sonlu kanat etrafındaki sıkıştırılamaz akış, indüklenmiş sürükleme, vorteks flamenti, Biot-Savart yasası ve Helmholtz teoremleri,",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Panel yöntemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Taşıyıcı çizgi teorisi, eliptik taşıma dağılımı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Genel taşıma dağılımı, açıklık oranı etkisi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Aerodynamics, Anderson, J.D., McGraw-Hill, 2001, 0072950463"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=351"
  },
  "UCK 351E": {
   "code": "UCK 351E",
   "name": "Aerodinamik",
+  "nameEn": "Aerodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1189,15 +3133,87 @@
    "Hafta 13 · Taşıyıcı çizgi teorisi, eliptik taşıma dağılımı.",
    "Hafta 14 · Genel taşıma dağılımı, açıklık oranı etkisi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aerodinamik kuvvet ve momentler. Basınç merkezi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "boyut analizi, akım benzerliği, akım türleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Akış modelleri, kütle ve lineer momentumun korunumu, 2 boyutlu cisme etki eden sürükleme ve taşıma kuvvetleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Materyal türev cinsinden korunum denklemleri, yörünge, akım çizgisi, çıkış çizgisi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Akım fonksiyonu, hız potansiyeli, sürtünmesiz, sıkıştırılamaz akımın temelleri,",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Bernoulli denklemi, Pitot tübü.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Laplace denklemi, üniform akım, kaynak akımı, duble akımı, daire etrafındaki akış.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Vorteks akımı, Daire etrafındaki sirkülasyonlu akım, Kutta Joukowski teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kanat profili etrafındaki sıkıştırılamaz akım, Kutta şartı, Kelvin sirkülasyon teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "İnce profil teorisi, simetrik ve kamburluklu profiller",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sonlu kanat etrafındaki sıkıştırılamaz akış, indüklenmiş sürükleme, vorteks flamenti, Biot-Savart yasası ve Helmholtz teoremleri,",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Panel yöntemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Taşıyıcı çizgi teorisi, eliptik taşıma dağılımı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Genel taşıma dağılımı, açıklık oranı etkisi.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Aerodynamics, Anderson, J.D., McGraw-Hill, 2001, 0072950463"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=351"
  },
  "UCK 353E": {
   "code": "UCK 353E",
   "name": "Hava-Uzay Malzemeleri",
+  "nameEn": "Aerospace Materials",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1211,12 +3227,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=353",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=353"
  },
  "UCK 354E": {
   "code": "UCK 354E",
   "name": "Sayısal Tasarıma Giriş",
+  "nameEn": "Intro to Digital Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1250,15 +3266,87 @@
    "Hafta 13 · Veri Yolu Bileşenleri: Sayaçlar, Zamanlayıcılar",
    "Hafta 14 · Veri Yolu ve Kontrolcü Mimarisi Kullanarak Sayısal Sistem Tasarımı, Donanım Tanımlama Dilleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayısal Sistemlere Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kombinasyonel Devreler, Boole Cebrine Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Boole Fonksiyonlarının Gösterimi ve Kombinasyonel Devre Tasarım Akışı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Mantık Optimizasyonu, Karnaugh Haritaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Kodlayıcılar, Çoklayıcılar, Yayılma Gecikmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ardışıl Devre Analizi, Geri Besleme Mantığı, Tek Bitlik Bellek Birimleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sonlu Durum Makineleri (FSM), Standart Kontrolcü Mimarisi ve Tasarım Süreci",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İdeal Olmayan Flip-Flop Davranışı, Metastabilite, Eşzamansız Giriş",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ardışıl Devre Analizi ve FSM Türetme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Veri Yolu Bileşenleri: Çok İşlevli Yazmaçlar, Toplayıcılar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Toplayıcılar (devam), Çıkarıcılar, Sayı Gösterimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Veri Yolu Bileşenleri: Çarpıcılar, Aritmetik Mantık Birimi (ALU)",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Veri Yolu Bileşenleri: Sayaçlar, Zamanlayıcılar",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Veri Yolu ve Kontrolcü Mimarisi Kullanarak Sayısal Sistem Tasarımı, Donanım Tanımlama Dilleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "] F. Vahid, Digital Design with RTL Design, VHDL, and Verilog, 2nd Edition, Wiley, New Jersey, 2011, ISBN 978-0-470-53108-2."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=354",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=354"
  },
  "UCK 358E": {
   "code": "UCK 358E",
   "name": "Int.to Artificial Intelligence",
+  "nameEn": "Int.to Artificial Intelligence",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1291,15 +3379,87 @@
    "Hafta 13 · Bilimsel Makine Öğrenimi - Julie SciML",
    "Hafta 14 · Fizik Bilgili Sinir Ağları - Python DeepXDE"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel tanımlar, Google Colab, Jupyter Notebook",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Makine Öğrenmesi Temelleri - Kapasite, Aşırı uyum, Eksik uyum, Hiperparametreler - Seaborn, Matplotlib, Pandas, Veri kümeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "3 Doğrusal ve Polinom Regresyon - Model gösterimi, Gradyan azalma, Özellik ölçeklendirme, Normalleştirme - Python uygulaması, Python Sklearn’e giriş 1-2-3",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "4 Lojistik Regresyon (Sınıflandırma) ve Düzenlileştirme, Naif Bayes, KNN - Sigmoid fonksiyonu, Doğrusal olmayan karar sınırı, Aşırı/Eksik uyum çözümler, Parametrik olmayan yöntemler - Scipy, Sklearn 1-2-3",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Karar Ağaçları, Rastgele Ormanlar - Karar ağacı algoritmaları (ID3, C4.5, CART, RF), Öznitelik seçimine ilişkin metrikler, Budama, Özellik önemi, Güçlü ve zayıf yanlar - Sklearn, Kolektif öğrenme - Python SHAP",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Destek Vektör Makineleri - Büyük marj sezgisi, SVM karar sınırı, Kerneller - Sklearn",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yapay Sinir Ağları (Temsil) - Doğrusal olmayan sınıflandırma, ANN yapısı, Örnekler ve sezgiler - Keras, TensorFlow",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yapay Sinir Ağları (Eğitim) - Geri yayılım algoritması - Scipy aracılığıyla Python uygulaması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Makine Öğrenmesi Uygulamaları için Tavsiyeler - Öğrenme algoritmasında hata ayıklama, Bayas ve varyans teşhisi, Öğrenme eğrileri, Çarpık sınıflar için hata metrikleri - Sklearn: Pipeline, Öğrenme eğrileri, Çapraz doğrulama, Hiperparametre ayarlama, Metrikler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Denetimsiz Öğrenme - Kümeleme: K-ortalama, EM, Hiyerarşik Öğrenme, ve Anomali Tespiti - Sklearn: Kümeleme, Karışım, Karışım yoluyla EM Algoritması",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Denetimsiz Öğrenme - Boyut İndirgeme: PCA, LDA, Otokodlayıcılar - Veri sıkıştırma, Veri görselleştirme, Algoritmalar - Sklearn, Keras",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Evrişimli Sinir Ağları, Tekrarlayan Sinir Ağları - Keras, TensorFlow",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Bilimsel Makine Öğrenimi - Julie SciML",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Fizik Bilgili Sinir Ağları - Python DeepXDE",
+    "outcomes": "1-3-4-5"
+   }
+  ],
   "textbooks": [
    "E. Alpaydin, Introduction to Machine Learning, 2004, MIT Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=358",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=358"
  },
  "UCK 360E": {
   "code": "UCK 360E",
   "name": "Otomatik Kontrol I",
+  "nameEn": "Automatic Control I",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1337,15 +3497,85 @@
    "Hafta 13 · Köklerin yer eğrisi yöntemi. Örnekler.",
    "Hafta 14 · Ara Sınav – 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Otomatik kontrol sistemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kontrol prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Laplace dönüşüm yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Laplace dönüşüm yönteminin özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sistemlerin transfer fonksiyonları: Basit örnekler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kontrol sistemlerinin zaman bölgesinde analizi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Birinci ve ikinci mertebeden sistemler.",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav - 1"
+   },
+   {
+    "week": 9,
+    "topic": "Sistemlerin sürekli hal hatası",
+    "outcomes": "3-4-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Sistemlerin zaman yanıtları",
+    "outcomes": "3-4-5-6-7-10"
+   },
+   {
+    "week": 11,
+    "topic": "Doğrusal sistemlerin kararlılık analizi",
+    "outcomes": "5-6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Routh-Hurwitz yöntemi. Örnekler",
+    "outcomes": "4-8-10"
+   },
+   {
+    "week": 13,
+    "topic": "Köklerin yer eğrisi yöntemi. Örnekler.",
+    "outcomes": "4-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Ara Sınav – 2"
+   }
+  ],
   "textbooks": [
    "Katsuhiko Ogata, Modern Control Engineering, Fifth Ed.,Prentice-Hall Inc., 2016"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=360",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=360"
  },
  "UCK 361E": {
   "code": "UCK 361E",
   "name": "Design of Machine Elements",
+  "nameEn": "Design of Machine Elements",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1382,15 +3612,87 @@
    "Hafta 13 · Bükülebilir makine elemanları",
    "Hafta 14 · Miller ve akslar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mekanik tasarım, Tasarım faktörleri, Emniyet katsayısı, Gerilme ve gerinim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Yer değiştirme ve katılık, İstatistiksel hesaplamalar, Malzemelerin mekanik özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Durağan yükleme ve statik hasar teorileri, Değişken yükleme ve yorulma",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Vidalar ve bağlantı elemanları",
+    "outcomes": "7"
+   },
+   {
+    "week": 5,
+    "topic": "Dişli çarklar-genel, Dişli çarkların tasarımı",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 6,
+    "topic": "Dişli çarklar-genel, Dişli çarkların tasarımı",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 7,
+    "topic": "Yuvarlanmalı yataklar",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Yağlama ve kılavuz yataklar",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Kaynak ve yapıştırma bağlantıları",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Mekanik yaylar",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Kavramalar ve frenler",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Kaplinler",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Bükülebilir makine elemanları",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Miller ve akslar",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Mechanical Engineering Design, Shigley, J.E. and Mischke, C.R., McGraw-Hill, 2008,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=361",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=361"
  },
  "UCK 362E": {
   "code": "UCK 362E",
   "name": "Otomatik Kontrol",
+  "nameEn": "Automatic Control",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1428,17 +3730,89 @@
    "Hafta 13 · Köklerin yer eğrisi yöntemi. Örnekler.",
    "Hafta 14 · Ara Sınav 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Otomatik kontrol sistemlerine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kontrol prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Laplace dönüşüm yöntemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Laplace dönüşüm yönteminin özellikleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Sistemlerin transfer fonksiyonları: Basit örnekler.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Kontrol sistemlerinin zaman bölgesinde analizi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Birinci ve ikinci mertebeden sistemler.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav 1",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sistemlerin sürekli hal hatası",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Sistemlerin zaman yanıtları",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Doğrusal sistemlerin kararlılık analizi",
+    "outcomes": "7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Routh Hurwitz yöntemi. Örnekler",
+    "outcomes": "8-10"
+   },
+   {
+    "week": 13,
+    "topic": "Köklerin yer eğrisi yöntemi. Örnekler.",
+    "outcomes": "4-5-9-10"
+   },
+   {
+    "week": 14,
+    "topic": "Ara Sınav 2",
+    "outcomes": "6-7-8-9-10"
+   }
+  ],
   "textbooks": [
    "Modern Control Engineering, Fourth Edition,, Katsuhiko Ogata, Prentice Hall, New Jersey, 2008, 0 13 043245 8",
    "Otomatik Kontrol Sistemleri, Benjamin, C. Kuo (Çev. Prof. Dr. Atilla Bir), Literatür Yayınları, İstanbul, 2008, 975 7860 94 8",
    "Modern Control Systems, 8.Edition, Richard Dorf and Robert Bishop, Addison Wesley, Menlo Park, CA, 2008, 0 201 37677 9"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=362",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=362"
  },
  "UCK 363E": {
   "code": "UCK 363E",
   "name": "Automatic Control II",
+  "nameEn": "Automatic Control II",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -1476,15 +3850,85 @@
    "Hafta 13 · Köklerin yer eğrisi yöntemi. Örnekler.",
    "Hafta 14 · Ara Sınav – 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Otomatik kontrol sistemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kontrol prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Laplace dönüşüm yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Laplace dönüşüm yönteminin özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sistemlerin transfer fonksiyonları: Basit örnekler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kontrol sistemlerinin zaman bölgesinde analizi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Birinci ve ikinci mertebeden sistemler.",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav - 1"
+   },
+   {
+    "week": 9,
+    "topic": "Sistemlerin sürekli hal hatası",
+    "outcomes": "3-4-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Sistemlerin zaman yanıtları",
+    "outcomes": "3-4-5-6-7-10"
+   },
+   {
+    "week": 11,
+    "topic": "Doğrusal sistemlerin kararlılık analizi",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 12,
+    "topic": "Routh-Hurwitz yöntemi. Örnekler",
+    "outcomes": "4-8-10"
+   },
+   {
+    "week": 13,
+    "topic": "Köklerin yer eğrisi yöntemi. Örnekler.",
+    "outcomes": "4-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Ara Sınav – 2"
+   }
+  ],
   "textbooks": [
    "Katsuhiko Ogata, Modern Control Engineering, Fifth Ed.,Prentice-Hall Inc., 2016"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=363",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=363"
  },
  "UCK 364E": {
   "code": "UCK 364E",
   "name": "Design of Machine Elements",
+  "nameEn": "Design of Machine Elements",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1519,15 +3963,87 @@
    "Hafta 13 · Yuvarlanmalı yataklarda ömür hesabı",
    "Hafta 14 · Dişli çarklar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mekanik tasarım, Tasarım faktörleri, Emniyet katsayısı, Gerilme ve gerinim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Metallerde yorulma, Gerilme-ömür ve gerinim-ömür yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Kırılma mekaniği yöntemi, Yorulma dayanımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Birleşik yükleme altında yorulma",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Vida standartları, Güç vidaları, Vida dayanımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 6,
+    "topic": "Çekme ve kesme bağlantıları",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Alın ve köşe kaynakları, Kaynak dayanımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Burulma ve eğilmeye maruz kalan kaynak bağlantıları, Yapıştırma bağlantıları",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Mil-göbek bağlantıları, Toleranslar",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Basma yayları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Çekme yayları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Yuvarlanmalı yatakların analizi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Yuvarlanmalı yataklarda ömür hesabı",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Dişli çarklar",
+    "outcomes": "5-7"
+   }
+  ],
   "textbooks": [
    "Budynas, R.G. and Keith Nisbett, J., Shigley’s Mechanical Engineering Design, 9th ed., McGraw-Hill, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=364",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=364"
  },
  "UCK 372": {
   "code": "UCK 372",
   "name": "Deneysel Mühendislik",
+  "nameEn": "Experimental Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1565,15 +4081,87 @@
    "Hafta 13 · Proje : Deneysel çalışma",
    "Hafta 14 · Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laboratuar deneylerinin tanıtılması",
+    "outcomes": "4-9"
+   },
+   {
+    "week": 2,
+    "topic": "Standart Deneyler: Sınır Tabaka Deneyleri /Proje: Literatür araştırması",
+    "outcomes": "1-4-6-10"
+   },
+   {
+    "week": 3,
+    "topic": "Standart Deneyler: Sınır Tabaka Deneyleri /Proje: Literatür araştırması",
+    "outcomes": "1-4-6-10"
+   },
+   {
+    "week": 4,
+    "topic": "Standart Deneyler: Silindir sürükleme katsayısının belirlenmesi / Proje: Literatür araştırması ve deney düzeneğinin ön planlaması",
+    "outcomes": "1-2-4-6-7-9-10"
+   },
+   {
+    "week": 5,
+    "topic": "Standart Deneyler: Silindir sürükleme katsayısının belirlenmesi / Proje: Literatür araştırması ve deney düzeneğinin ön planlaması",
+    "outcomes": "1-2-4-6-7-9-10"
+   },
+   {
+    "week": 6,
+    "topic": "Standart Deneyler: Jet Akımı Deneyleri / Proje: Deney modelinin tasarım ve üretimi",
+    "outcomes": "2-4-6-10"
+   },
+   {
+    "week": 7,
+    "topic": "Standart Deneyler: Jet Akımı Deneyleri / Proje: Deney modelinin tasarım ve üretimi",
+    "outcomes": "2-4-6-10"
+   },
+   {
+    "week": 8,
+    "topic": "Standart Deneyler: Yapısal Deneyler / Proje: Test matrisinin oluşturulması (yapılacak deneylerin planlanması)",
+    "outcomes": "2-4-8-10"
+   },
+   {
+    "week": 9,
+    "topic": "Standart Deneyler: Yapısal Deneyler / Proje: Test matrisinin oluşturulması (yapılacak deneylerin planlanması)",
+    "outcomes": "2-4-8-10"
+   },
+   {
+    "week": 10,
+    "topic": "Proje : Deneysel çalışma",
+    "outcomes": "2-3-5-9-10"
+   },
+   {
+    "week": 11,
+    "topic": "Proje : Deneysel çalışma",
+    "outcomes": "2-3-5-9-10"
+   },
+   {
+    "week": 12,
+    "topic": "Proje : Deneysel çalışma",
+    "outcomes": "2-3-5-9-10"
+   },
+   {
+    "week": 13,
+    "topic": "Proje : Deneysel çalışma",
+    "outcomes": "2-3-5-9-10"
+   },
+   {
+    "week": 14,
+    "topic": "Sunum",
+    "outcomes": "5-10"
+   }
+  ],
   "textbooks": [
    "Experimental Methods for Engineers, Holman, J.P., , McGraw-Hill, 2000, 9780071181655"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=372",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=372"
  },
  "UCK 372E": {
   "code": "UCK 372E",
   "name": "Deneysel Mühendislik",
+  "nameEn": "Experimental Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1611,15 +4199,87 @@
    "Hafta 13 · Proje : Deneysel çalışma",
    "Hafta 14 · Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laboratuar deneylerinin tanıtılması",
+    "outcomes": "4-9"
+   },
+   {
+    "week": 2,
+    "topic": "Standart Deneyler: Sınır Tabaka Deneyleri /Proje: Literatür araştırması",
+    "outcomes": "1-4-6-10"
+   },
+   {
+    "week": 3,
+    "topic": "Standart Deneyler: Sınır Tabaka Deneyleri /Proje: Literatür araştırması",
+    "outcomes": "1-4-6-10"
+   },
+   {
+    "week": 4,
+    "topic": "Standart Deneyler: Silindir sürükleme katsayısının belirlenmesi / Proje: Literatür araştırması ve deney düzeneğinin ön planlaması",
+    "outcomes": "1-2-4-6-7-9-10"
+   },
+   {
+    "week": 5,
+    "topic": "Standart Deneyler: Silindir sürükleme katsayısının belirlenmesi / Proje: Literatür araştırması ve deney düzeneğinin ön planlaması",
+    "outcomes": "1-2-4-6-7-9-10"
+   },
+   {
+    "week": 6,
+    "topic": "Standart Deneyler: Jet Akımı Deneyleri / Proje: Deney modelinin tasarım ve üretimi",
+    "outcomes": "2-4-6-10"
+   },
+   {
+    "week": 7,
+    "topic": "Standart Deneyler: Jet Akımı Deneyleri / Proje: Deney modelinin tasarım ve üretimi",
+    "outcomes": "2-4-6-10"
+   },
+   {
+    "week": 8,
+    "topic": "Standart Deneyler: Yapısal Deneyler / Proje: Test matrisinin oluşturulması (yapılacak deneylerin planlanması)",
+    "outcomes": "2-4-8-10"
+   },
+   {
+    "week": 9,
+    "topic": "Standart Deneyler: Yapısal Deneyler / Proje: Test matrisinin oluşturulması (yapılacak deneylerin planlanması)",
+    "outcomes": "2-4-8-10"
+   },
+   {
+    "week": 10,
+    "topic": "Proje : Deneysel çalışma",
+    "outcomes": "2-3-5-9-10"
+   },
+   {
+    "week": 11,
+    "topic": "Proje : Deneysel çalışma",
+    "outcomes": "2-3-5-9-10"
+   },
+   {
+    "week": 12,
+    "topic": "Proje : Deneysel çalışma",
+    "outcomes": "2-3-5-9-10"
+   },
+   {
+    "week": 13,
+    "topic": "Proje : Deneysel çalışma",
+    "outcomes": "2-3-5-9-10"
+   },
+   {
+    "week": 14,
+    "topic": "Sunum",
+    "outcomes": "5-10"
+   }
+  ],
   "textbooks": [
    "Experimental Methods for Engineers, Holman, J.P., , McGraw-Hill, 2000, 9780071181655"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=372",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=372"
  },
  "UCK 416E": {
   "code": "UCK 416E",
   "name": "Uçak Yapıları",
+  "nameEn": "Aircraft Structures",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1655,15 +4315,87 @@
    "Hafta 13 · Yapısal kararsızlık (devam)",
    "Hafta 14 · Yapısal kararsızlık : Plakların burkulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel elastisite",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İki boyutlu elastisite",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İki boyutlu elastisite devam",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "İçi dolu kesitlerin burulması (Prandtl gerilme fonksiyonu)",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İçi dolu kesitlerin burulması (Membran benzeşimi, dar kesitlerin burulması)",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yapısal Analizde Enerji metodları (Potansiyel enerji ve virtüel iş)",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Yapısal Analizde Enerji metodları (Tamamlayıcı enerji yöntemi)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yapısal Analizde Enerji metodları (Statikçe belirsiz yapılar)",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ara Sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Plakların eğilmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Plakların eğilmesi (devam)",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Yapısal kararsızlık : Burkulma",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Yapısal kararsızlık (devam)",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Yapısal kararsızlık : Plakların burkulması",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "A. C. Ugural and S. K. Fenster, Advanced Mechanics of Materials and Applied Elasticity 5th Edition, Pearson, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=416",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=416"
  },
  "UCK 419": {
   "code": "UCK 419",
   "name": "Hesaplamalı Aerodinamik",
+  "nameEn": "Computational Aerodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1697,15 +4429,87 @@
    "Hafta 13 · Gövde için panel yöntemi (devam)",
    "Hafta 14 · Zamana bağlı sıkıştırılamaz potansiyel akış, Potansiyel akış modelinde gelişmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Viskoz olmayan, sıkıştırılamaz akışın esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sıkıştırılamaz, potansiyel akış denklemlerinin genel çözümü, Panel yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İnce profil için analitik çözümler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İnce profil için sayısal çözümler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kalın profil için analitik çözümler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kalın profil için sayısal çözümler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "ARA SINAVI",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sonlu kanat için taşıyıcı çizgi modeli",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sonlu kanat için girdap kafes yöntemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Sonlu kanat için girdap kafes yöntemi (devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gövde için analitik çözüm",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gövde için panel yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gövde için panel yöntemi (devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Zamana bağlı sıkıştırılamaz potansiyel akış, Potansiyel akış modelinde gelişmeler",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Low-Speed Aerodynamics, From wing theory to panel methods, J. Katz, A. Plotkin, McGraw-Hill, Inc, 1991,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=419",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=419"
  },
  "UCK 419E": {
   "code": "UCK 419E",
   "name": "Hesaplamalı Aerodinamik",
+  "nameEn": "Computational Aerodynamics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1739,15 +4543,87 @@
    "Hafta 13 · Gövde için panel yöntemi (devam)",
    "Hafta 14 · Zamana bağlı sıkıştırılamaz potansiyel akış, Potansiyel akış modelinde gelişmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Viskoz olmayan, sıkıştırılamaz akışın esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sıkıştırılamaz, potansiyel akış denklemlerinin genel çözümü, Panel yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İnce profil için analitik çözümler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İnce profil için sayısal çözümler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kalın profil için analitik çözümler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kalın profil için sayısal çözümler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "ARA SINAVI",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sonlu kanat için taşıyıcı çizgi modeli",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sonlu kanat için girdap kafes yöntemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Sonlu kanat için girdap kafes yöntemi (devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gövde için analitik çözüm",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gövde için panel yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gövde için panel yöntemi (devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Zamana bağlı sıkıştırılamaz potansiyel akış, Potansiyel akış modelinde gelişmeler",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Low-Speed Aerodynamics, From wing theory to panel methods, J. Katz, A. Plotkin, McGraw-Hill, Inc, 1991,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=419",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=419"
  },
  "UCK 421": {
   "code": "UCK 421",
   "name": "Tepki ile Tahrik",
+  "nameEn": "Jet Propulsion Principles",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1784,15 +4660,87 @@
    "Hafta 13 · Pervaneliler",
    "Hafta 14 · Jet tepki sistemleri elemanları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sınıflandırma ve genel performans",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Performans parametreleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Tepki, termal ve toplam verim",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Termodinamik çevrimler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "1. Ara sınav",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yanma",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kimyasal transformasyonlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Jet tepki sistemleri analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Ramjet",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "2. Ara sınav",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Türbojet",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Türbofan",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 13,
+    "topic": "Pervaneliler",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Jet tepki sistemleri elemanları",
+    "outcomes": "6-7-8-9"
+   }
+  ],
   "textbooks": [
    "Aircraft Propulsion, Saeed Farokhi, Wiley, 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=421"
  },
  "UCK 421E": {
   "code": "UCK 421E",
   "name": "Tepki ile Tahrik",
+  "nameEn": "Jet Propulsion Principles",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1829,15 +4777,87 @@
    "Hafta 13 · Pervaneliler",
    "Hafta 14 · Jet tepki sistemleri elemanları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sınıflandırma ve genel performans",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Performans parametreleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Tepki, termal ve toplam verim",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Termodinamik çevrimler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "1. Ara sınav",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yanma",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kimyasal transformasyonlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Jet tepki sistemleri analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Ramjet",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "2. Ara sınav",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Türbojet",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Türbofan",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 13,
+    "topic": "Pervaneliler",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Jet tepki sistemleri elemanları",
+    "outcomes": "6-7-8-9"
+   }
+  ],
   "textbooks": [
    "Aircraft Propulsion, Saeed Farokhi, Wiley, 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=421"
  },
  "UCK 423E": {
   "code": "UCK 423E",
   "name": "Uçak Tasarımı Temelleri I",
+  "nameEn": "Princip. of Aircraft Design I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1872,15 +4892,87 @@
    "Hafta 13 · Aerodinamik I",
    "Hafta 14 · Aerodinamik II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Tanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Rakip Analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "İlk Tahmini Boyutlandırma",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kanat Profili ve Geometri Seçimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "İtme-Ağırlık Oranı ve Kanat Yüklemesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "İlk Boyutlandırma",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Konfigürasyon Yerleşimi ve Loft I",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 9,
+    "topic": "Konfigürasyon Yerleşimi ve Loft II",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "İtki ve Yakıt Sistemi Entegrasyonu I",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "İtki ve Yakıt Sistemi Entegrasyonu II",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "İniş Takımı ve Alt Sistemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Aerodinamik I",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Aerodinamik II",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "Raymer D. P, 2006, Aircraft Design: A Conceptual Approach, Fourth Edition, AIAA Education Series, New York, NY, ISBN:1-56347-829-."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=423",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=423"
  },
  "UCK 424E": {
   "code": "UCK 424E",
   "name": "Uçak Tasarımı Temelleri II",
+  "nameEn": "Princip. of Aircraft Design II",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1918,15 +5010,87 @@
    "Hafta 13 · Uçuş Performans",
    "Hafta 14 · Insan Faktörleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tepki ile Tahrik",
+    "outcomes": "1-2-3-10"
+   },
+   {
+    "week": 2,
+    "topic": "Yapı ve Yükler",
+    "outcomes": "1-3-4-10"
+   },
+   {
+    "week": 3,
+    "topic": "Ağırlıklar",
+    "outcomes": "1-2-5-10"
+   },
+   {
+    "week": 4,
+    "topic": "Stabilite, kontrol ve kullanım kalitesi",
+    "outcomes": "1-2-6-10"
+   },
+   {
+    "week": 5,
+    "topic": "Performans ve Uçuş Mekaniği",
+    "outcomes": "1-2-7-10"
+   },
+   {
+    "week": 6,
+    "topic": "Maliyet Analizi",
+    "outcomes": "1-2-8-10"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav 1",
+    "outcomes": "3-4-5-6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Genel Uçuşa Elverişlilik Sertifikasyonu",
+    "outcomes": "9"
+   },
+   {
+    "week": 9,
+    "topic": "Genel Uçuşa Elverişlilik Sertifikasyonu",
+    "outcomes": "9"
+   },
+   {
+    "week": 10,
+    "topic": "Emniyet",
+    "outcomes": "9"
+   },
+   {
+    "week": 11,
+    "topic": "Hidromekanik",
+    "outcomes": "3-4-5-6-7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Uçuş Performans / Ara Sınav 2",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Uçuş Performans",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Insan Faktörleri",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Raymer D. P, 2006, Aircraft Design: A Conceptual Approach, Fourth Edition, AIAA Education Series, New York, NY, ISBN:1-56347-829-."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=424",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=424"
  },
  "UCK 427E": {
   "code": "UCK 427E",
   "name": "Yanma",
+  "nameEn": "Combustion",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1963,15 +5127,87 @@
    "Hafta 13 · Türbülanslı Önceden Karıştırılmış Alevler",
    "Hafta 14 · Türbülanslı Önceden Karıştırılmamış Alevler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İdeal Gaz Karışımları ve Özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Yanma ve Termokimya",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kütle Transferi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kimyasal Kinetik",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kimyasal Kinetik",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Bazı Önemli Kimyasal Mekanizmalar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Tepkimeli Akışlar İçin Basitleştirilmiş Korunum Denklemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Laminer Önceden Karıştırılmış Alevler",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Laminer Difüzyon Alevleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Damlacık Buharlaşması ve Yanması",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Türbülanslı Akışlara Giriş",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Türbülanslı Önceden Karıştırılmış Alevler",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Türbülanslı Önceden Karıştırılmamış Alevler",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "An introduction to Combustion: Concepts and Applications, Stephen R. Turns, 3rd edition, McGraw Hill, 2011. Principles of Combustion, 2nd ed. K. K-Y. Kuo, Wiley, 2005. Combustion Physics, C.K. Law, Cambridge University Press, 2010. Gas Turbine Combustion, A.H. Lefebvre, CRC, 1998."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=427",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=427"
  },
  "UCK 432": {
   "code": "UCK 432",
   "name": "Uçak Tasarımı",
+  "nameEn": "Aircraft Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2009,15 +5245,87 @@
    "Hafta 13 · Uçuş Performans",
    "Hafta 14 · İnsan Faktörleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tepki ile Tahrik",
+    "outcomes": "1-2-3-10"
+   },
+   {
+    "week": 2,
+    "topic": "Yapı ve Yükler",
+    "outcomes": "1-3-4-10"
+   },
+   {
+    "week": 3,
+    "topic": "Ağırlıklar",
+    "outcomes": "1-2-5-10"
+   },
+   {
+    "week": 4,
+    "topic": "Stabilite, kontrol ve kullanım kalitesi",
+    "outcomes": "1-2-6-10"
+   },
+   {
+    "week": 5,
+    "topic": "Performans ve Uçuş Mekaniği",
+    "outcomes": "1-2-7-10"
+   },
+   {
+    "week": 6,
+    "topic": "Maliyet Analizi",
+    "outcomes": "1-2-8-10"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav 1",
+    "outcomes": "3-4-5-6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Genel Uçuşa Elverişlilik Sertifikasyonu",
+    "outcomes": "9"
+   },
+   {
+    "week": 9,
+    "topic": "Genel Uçuşa Elverişlilik Sertifikasyonu",
+    "outcomes": "9"
+   },
+   {
+    "week": 10,
+    "topic": "Emniyet",
+    "outcomes": "9"
+   },
+   {
+    "week": 11,
+    "topic": "Hidromekanik",
+    "outcomes": "3-4-5-6-7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Uçuş Performans / Ara Sınav 2",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Uçuş Performans",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "İnsan Faktörleri",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Aircraft Design: A Conceptual Approach, Fourth Edition, Raymer D. P, AIAA Education Series, New York, NY, 2006, 1-56347-829-3"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=432"
  },
  "UCK 432E": {
   "code": "UCK 432E",
   "name": "Uçak Tasarımı",
+  "nameEn": "Aircraft Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2055,15 +5363,87 @@
    "Hafta 13 · Uçuş Performans",
    "Hafta 14 · İnsan Faktörleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tepki ile Tahrik",
+    "outcomes": "1-2-3-10"
+   },
+   {
+    "week": 2,
+    "topic": "Yapı ve Yükler",
+    "outcomes": "1-3-4-10"
+   },
+   {
+    "week": 3,
+    "topic": "Ağırlıklar",
+    "outcomes": "1-2-5-10"
+   },
+   {
+    "week": 4,
+    "topic": "Stabilite, kontrol ve kullanım kalitesi",
+    "outcomes": "1-2-6-10"
+   },
+   {
+    "week": 5,
+    "topic": "Performans ve Uçuş Mekaniği",
+    "outcomes": "1-2-7-10"
+   },
+   {
+    "week": 6,
+    "topic": "Maliyet Analizi",
+    "outcomes": "1-2-8-10"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav 1",
+    "outcomes": "3-4-5-6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Genel Uçuşa Elverişlilik Sertifikasyonu",
+    "outcomes": "9"
+   },
+   {
+    "week": 9,
+    "topic": "Genel Uçuşa Elverişlilik Sertifikasyonu",
+    "outcomes": "9"
+   },
+   {
+    "week": 10,
+    "topic": "Emniyet",
+    "outcomes": "9"
+   },
+   {
+    "week": 11,
+    "topic": "Hidromekanik",
+    "outcomes": "3-4-5-6-7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Uçuş Performans / Ara Sınav 2",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Uçuş Performans",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "İnsan Faktörleri",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Aircraft Design: A Conceptual Approach, Fourth Edition, Raymer D. P, AIAA Education Series, New York, NY, 2006, 1-56347-829-3"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=432"
  },
  "UCK 435E": {
   "code": "UCK 435E",
   "name": "Design of Aerospace Structures",
+  "nameEn": "Design of Aerospace Structures",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2103,15 +5483,87 @@
    "Hafta 13 · Bakım ve onarım kolaylığı, Kalite kontrolü ve tahribatsız muayene usulleri",
    "Hafta 14 · Parça hasarları ve tasarım kusurları ile ilgili vaka geçmişleri. Iskarta parçalar. Tasarım gözden geçirmeleri ve bileşen testleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapısal Tasarım Süreci: Yapısal tasarımın hava-uzay tasarım organizasyonundaki yeri, diğer tasarım ekipleriyle etkileşimi, tasarım incelemeleri (design reviews)",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dış aerodinamik geometri, yükler, malzemeler, bileşen ara yüzleri gibi yapısal tasarım girdileri, Genel göçme kriterleri, ağırlık, maliyet, performans gibi tasarım kısıtlamaları, Yapısal düzenlerin (configurations) belirlenmesi,",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Mukavemet bazlı göçme kriterleri. Burkulma: kolonlar, plaklar, yerel burkulma, perçinler arası burkulma",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Yorulmaya genel bakış: Yorulma çatlak oluşumu tahmininde gerilme ve gerinim ömrü kavramları, yorulma dayanımını artırma yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Hasara Toleranslı Tasarım: Doğrusal elastik kırılma mekaniğine giriş Hasara dayanıklı tasarım kriterleri, kırılmadan önce sızıntı",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Geometrik toleranslar, tolerans birikmesi, geri yaylanma (springback)",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Bağlantı elemanları ve yapısal bağlantılar: Perçinler, cıvatalar ve vidalar.",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Kulak (lug) tasarımı ve analizi, kaynak ve yapıştırma bağlantıları",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Malzeme seçimi: hava-uzay araçlarında malzeme kullanımı, malzeme karakteristikleri ve özellikleri, performans endeksleri, kar-zarar çalışmaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Korozyon önleme, yapıların ısıl korunması. Elektriksel topraklama.",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "İmalat: Boyutlandırma, toleranslar, imalat yöntemlerine genel bakış, hava-uzay yapılarının alt montaj ve son montaj işlemleri",
+    "outcomes": "9"
+   },
+   {
+    "week": 12,
+    "topic": "Yapısal tasarım güvenilirliği ve optimizasyon.",
+    "outcomes": "10"
+   },
+   {
+    "week": 13,
+    "topic": "Bakım ve onarım kolaylığı, Kalite kontrolü ve tahribatsız muayene usulleri",
+    "outcomes": "11"
+   },
+   {
+    "week": 14,
+    "topic": "Parça hasarları ve tasarım kusurları ile ilgili vaka geçmişleri. Iskarta parçalar. Tasarım gözden geçirmeleri ve bileşen testleri.",
+    "outcomes": "12"
+   }
+  ],
   "textbooks": [
    "Ders Kitabı (Textbook) Budynas, R.G. and Keith Nisbett, J., Shigley’s Mechanical Engineering Design, 9th ed., McGraw-Hill, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=435",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=435"
  },
  "UCK 439E": {
   "code": "UCK 439E",
   "name": "Intr. to Optimal Control",
+  "nameEn": "Intr. to Optimal Control",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2144,15 +5596,87 @@
    "Hafta 13 · Pratikte pekiştirmeli öğrenme",
    "Hafta 14 · Model öngörülü kontrol"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Optimal kontrole giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sistemlerin durum değişken gösterimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sistemlerin durum değişken gösterimi, doğrusal olmayan optimizasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrusal olmayan optimizasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Optimallik ilkesi ve dinamik programlama",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Hamilton-Jacobi-Bellman denklemi",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Optimal kontrol için doğrudan yöntemler: kollokasyon metotları, atış metotları, ardışık konveks programlama",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Dolaylı yöntemler: değişkenler hesabı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Dolaylı yöntemler: optimal kontrole uygulanan değişkenler hesabı, Pontryagin minimum prensibi",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Minimum zaman, yakıt, enerji problemleri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Dinamik programlama ve pekiştirmeli öğrenme",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Model tabanlı ve modelsiz pekiştirmeli öğrenme",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Pratikte pekiştirmeli öğrenme",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Model öngörülü kontrol",
+    "outcomes": "2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Kirk, Donald. Optimal Control Theory: An Introduction. New York, NY: Dover, 2004. ISBN: 9780486434841"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=439",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=439"
  },
  "UCK 441E": {
   "code": "UCK 441E",
   "name": "Uçuş Stabilite ve Kontrolü",
+  "nameEn": "Flight Stability and Control",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2190,15 +5714,87 @@
    "Hafta 13 · Uçak dinamik ve kontrol sistemlerinde Matlab ve Simulink kullanımı",
    "Hafta 14 · Ara Sınav 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uçuş mekanik, kontrol ve kontrol yüzeyleri temel tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uçak statik ve dinamik kararlığı ve kararlılık türevleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Uçağın uzunlamasına ve yanlamasına dinamik denklemleri, doğrusal-olmayan dinamiği",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrusallaştırma ve transfer fonksiyonları",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Uzunlamasına hareketin modları, kararlılık türevleri, kısa ve uzun modları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Uzunlamasına transfer fonksiyonları, geçici ve sürekli hal yanıtlarının analizi",
+    "outcomes": "5-10"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav 1",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Uçak kontrol sistemlerinin temel kavramoları, uzunlamasına otopilot tasarımı",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Otopilot tipleri ve tasarım metodları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Konum otopilotunun köklerin yer eğrisi yöntemiyle tasarımı",
+    "outcomes": "6-7-8-10"
+   },
+   {
+    "week": 11,
+    "topic": "İç ve dış çevrim kavramları. Otopilot tasarımı.",
+    "outcomes": "7-8-10"
+   },
+   {
+    "week": 12,
+    "topic": "Uçağın yunuslama ve yönelme kontrol sistemleri tasarım yöntemleri",
+    "outcomes": "9-10"
+   },
+   {
+    "week": 13,
+    "topic": "Uçak dinamik ve kontrol sistemlerinde Matlab ve Simulink kullanımı",
+    "outcomes": "6-8-9-10"
+   },
+   {
+    "week": 14,
+    "topic": "Ara Sınav 2",
+    "outcomes": "6-7-8-9"
+   }
+  ],
   "textbooks": [
    "Introduction to aircraft flight mechanics , Thomas R. Yechout with Steven L. Morris, David E. Bossert, W, AIAA, Reston, VA , 2003, 1563475774"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=441",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=441"
  },
  "UCK 445": {
   "code": "UCK 445",
   "name": "Helikopter Tasarımı",
+  "nameEn": "Helicopter Design",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2241,15 +5837,87 @@
    "Hafta 13 · Alt sistem boyutlandırmaları – Aviyonik ve faydalı yük sistemleri",
    "Hafta 14 · Optimizasyon yaklaşımları ve karar verme teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Rotorlu hava araçlarına giriş ve kısa tarihçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Helikopterlerin çalışma prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Helikopter kavramsal tasarımına giriş",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Helikopter mimarileri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "İstatistiksel boyutlandırma",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Temel helikopter parametreleri",
+    "outcomes": "2-3-11"
+   },
+   {
+    "week": 7,
+    "topic": "Performans hesaplamaları (Kavramlar ve BEMT Özet)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 8,
+    "topic": "Ara tasarım değerlendirme sunumları",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Performans hesaplamaları (Trim algoritmaları)",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Kavramsal model CAD modelleme ve sistem yerleşimleri",
+    "outcomes": "9-10-11"
+   },
+   {
+    "week": 11,
+    "topic": "Alt sistem boyutlandırmaları – Rotor ve Transmisyon sistemleri",
+    "outcomes": "9-10-11"
+   },
+   {
+    "week": 12,
+    "topic": "Alt sistem boyutlandırmaları – Güç sitemi",
+    "outcomes": "9-10-11"
+   },
+   {
+    "week": 13,
+    "topic": "Alt sistem boyutlandırmaları – Aviyonik ve faydalı yük sistemleri",
+    "outcomes": "9-10-11"
+   },
+   {
+    "week": 14,
+    "topic": "Optimizasyon yaklaşımları ve karar verme teknikleri",
+    "outcomes": "2-12"
+   }
+  ],
   "textbooks": [
    "Principles of Helicopter Aerodynamics Second Edition, 2016 , J. Gordon Leishman, Cambridge Aerospace Series"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=445",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=445"
  },
  "UCK 448": {
   "code": "UCK 448",
   "name": "Aviyonik Sistemler",
+  "nameEn": "Avionic Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2286,15 +5954,87 @@
    "Hafta 13 · Uzunlamasına hareket kontrol sistemi",
    "Hafta 14 · Enlemesine hareket kontrol sistemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aviyonik sistemlerin sınıflandırılması, Jeotekniki, radyotekniki ve astronomik navigasyon aletler ve sistemler hakkında genel bilgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çarpışma Uyarıcı Sistemi, Doppler radarının kullanımına dayanan navigasyon sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Atalet Navigasyon Sistemleri nin (INS) elemanları ve temel prensipleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Jirokararlaştırılmış (Gimballed) Ataletsel Navigasyon Sistemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Analitik (Strapdown) Ataletsel Navigasyon Sistemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Yer Radyo-Navigasyon Sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Uydu radyonavigasyon sistemlerinin temelleri ve konfigürasyonu",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Küresel Konumlama Sistemi (GPS), GPS sistemindeki hatalar ve giderilme yöntemleri, Diferansiyel Küresel Konumlama Sistemi (DGPS)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "INS in dış navigasyon bilgiyle desteklenmesi, INS in GPS ile desteklenmesi şemaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 11,
+    "topic": "Uçuş kontrol sisteminin elemanları ve konfigürasyonu",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Otopilot prensipleri ve kullanımı",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Uzunlamasına hareket kontrol sistemi",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Enlemesine hareket kontrol sistemi",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Introduction to Avionics, Collinson R.P.G. , Chapman &Hall, 1996,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=448",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=448"
  },
  "UCK 448E": {
   "code": "UCK 448E",
   "name": "Aviyonik Sistemler",
+  "nameEn": "Avionic Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2331,15 +6071,87 @@
    "Hafta 13 · Uzunlamasına hareket kontrol sistemi",
    "Hafta 14 · Enlemesine hareket kontrol sistemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aviyonik sistemlerin sınıflandırılması, Jeotekniki, radyotekniki ve astronomik navigasyon aletler ve sistemler hakkında genel bilgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çarpışma Uyarıcı Sistemi, Doppler radarının kullanımına dayanan navigasyon sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Atalet Navigasyon Sistemleri nin (INS) elemanları ve temel prensipleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Jirokararlaştırılmış (Gimballed) Ataletsel Navigasyon Sistemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Analitik (Strapdown) Ataletsel Navigasyon Sistemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Yer Radyo-Navigasyon Sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Uydu radyonavigasyon sistemlerinin temelleri ve konfigürasyonu",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Küresel Konumlama Sistemi (GPS), GPS sistemindeki hatalar ve giderilme yöntemleri, Diferansiyel Küresel Konumlama Sistemi (DGPS)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "INS in dış navigasyon bilgiyle desteklenmesi, INS in GPS ile desteklenmesi şemaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 11,
+    "topic": "Uçuş kontrol sisteminin elemanları ve konfigürasyonu",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Otopilot prensipleri ve kullanımı",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Uzunlamasına hareket kontrol sistemi",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Enlemesine hareket kontrol sistemi",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Introduction to Avionics, Collinson R.P.G. , Chapman &Hall, 1996,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=448",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=448"
  },
  "UCK 451E": {
   "code": "UCK 451E",
   "name": "Uçak Tasarımı Temelleri",
+  "nameEn": "Principles of Aircraft Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2377,15 +6189,87 @@
    "Hafta 13 · Aerodinamik",
    "Hafta 14 · Aerodinamik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Tanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Rakip Araştırması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İlk Tahmin Boyutlandırma",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kanat Kesidi ve Geometri Seçimi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 6,
+    "topic": "İtki Bölü Ağırlık Oranı ve Kanat Yüklemesi Seçimi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Ön Boyutlandırma",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Geometrik Tanımlama ve Çizimler",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 10,
+    "topic": "Geometrik Tanımlama ve Çizimler",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 11,
+    "topic": "İtki ve Yakıt Sistemi ile Uyum ve Bütünleşme",
+    "outcomes": "2-8"
+   },
+   {
+    "week": 12,
+    "topic": "İniş Takımı ve Alt Sistemler",
+    "outcomes": "2-9"
+   },
+   {
+    "week": 13,
+    "topic": "Aerodinamik",
+    "outcomes": "2-10"
+   },
+   {
+    "week": 14,
+    "topic": "Aerodinamik",
+    "outcomes": "2-10"
+   }
+  ],
   "textbooks": [
    "Aircraft Design: A Conceptual Approach, Fourth Edition, Raymer D. P, AIAA Education Series, New York, NY, 2006, 1-56347-829-3"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=451",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=451"
  },
  "UCK 457": {
   "code": "UCK 457",
   "name": "Havayolu İşletmeciliği",
+  "nameEn": "Airline Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2421,15 +6305,87 @@
    "Hafta 13 · Uçak teknik hizmetleri",
    "Hafta 14 · İkram ve uçak içi hizmetler, Uçuş hizmetleri, kargo hizmetleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Havacılık Alfabesi, havacılıkla ilgili genel terimler, kısaltmalar, havacılıkla ilgili kurumlar, kuruluşlar, otoriteler (SHGM, FAA, EASA vb.) ve havacılık kuralları",
+    "outcomes": "1-8"
+   },
+   {
+    "week": 2,
+    "topic": "Havayolu Planlama proseslerine ve sistemlerine giriş. Havayolu ekonomisi",
+    "outcomes": "2-5-8"
+   },
+   {
+    "week": 3,
+    "topic": "İşletme giderleri. Doluluk Oranı Analizi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Havayolu Tarife Geliştirilmesi. Karar verme kriterleri. Müşteri seçme modelleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 5,
+    "topic": "Filo atama optimizasyonu. Uçağa verilen hizmetler, yerde kalma zamanı",
+    "outcomes": "2-3-7"
+   },
+   {
+    "week": 6,
+    "topic": "Hat planlama ve network stratejileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Tarife ve işletme kısıtları",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Havayolu filo planlama modelleri - Network planlama, ekip planlama, filo / uçak atama",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Gelir yönetimi kavramı ve modelleri. Uçuş overbooking modelleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Network optimizasyon modelleri. Network gelir yönetimi - ARA SINAVI",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Havayolu ücretlendirme yapıları ve stratejileri, Rezervasyon, tarife, ücret, bilet",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Havayolu gelir yönetim sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Uçak teknik hizmetleri",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 14,
+    "topic": "İkram ve uçak içi hizmetler, Uçuş hizmetleri, kargo hizmetleri",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Sürmeli F., Seçim H., Sözbilir H., Sivil Havacılık Yönetimi, Eskişehir, 1991,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=457",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=457"
  },
  "UCK 459E": {
   "code": "UCK 459E",
   "name": "Helikopter Teorisi",
+  "nameEn": "Helicopter Theory",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2464,17 +6420,89 @@
    "Hafta 13 · Helikopter kavramsal dizaynı",
    "Hafta 14 · Helikopter kavramsal dizaynı (devam)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Helikopterin tarihçesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Dikey iniş/kalkış yapabilen uçaklar",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Helikopter uçuşunun temelleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Helikopterin elemanları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Temel hareketler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Rotor aerodinamiğine giriş",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 7,
+    "topic": "Tırmanma ve alçalma hareketleri",
+    "outcomes": "1-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Dikey hareketi etkileyen faktörler",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 9,
+    "topic": "İleri uçuş",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 10,
+    "topic": "Tandem ve koaksiyel helikopterler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Pala hareketinin analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Temel helikopter performansı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Helikopter kavramsal dizaynı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Helikopter kavramsal dizaynı (devam)",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Principles of Helicopter Aerodynamics, Gordon Leishman, Cambridge, 2001,",
    "Aerodynamics of Helicopters, Gessow A, and Meyers, G.C., , McMillan, 1952,",
    "Helicopter Theory, Wayne Johnson, Dover Publ, 1994,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=459",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=459"
  },
  "UCK 461E": {
   "code": "UCK 461E",
   "name": "Uçak Bordo Aletleri",
+  "nameEn": "Flight Instruments",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2509,15 +6537,87 @@
    "Hafta 13 · Doppler frekansı kavramı, Uçağın koordinatlarının ve radyal uçuş hızının Doppler yöntemi ile ölçülmesi",
    "Hafta 14 · Toplam uçuş hızının ve yana kayma açısının Doppler yöntemi ile ölçülmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gerçek uçuş hızının ve Mach sayının aerometrik yöntemle ölçülmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hücum ve yana kayış açıları sensörleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mekaniki ve elektromekaniki manometrelerle basınç ölçümü",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Basınç ölçerlerin yapı-test ve en düşük kareler yöntemleri ile kalibrasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Döndürme momentini ve itki kuvvetini ölçme yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Lineer ve açısal ivme akselerometrelerinin çalışma prensipi ve transfer fonksiyonları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Aşırı yükleme göstergesi, Akselerometrelerin hataları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Üç eksenli serbest jiroskop, İki eksenli integralleyici jiroskop",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Laboratuar çalışması : Jiroskop deney seti",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Baroaltimetre, Radar altimetresi, Yüksekliğin atalet yöntemi ile ölçülmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Yer Radyo-Navigasyon Sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Doppler frekansı kavramı, Uçağın koordinatlarının ve radyal uçuş hızının Doppler yöntemi ile ölçülmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Toplam uçuş hızının ve yana kayma açısının Doppler yöntemi ile ölçülmesi",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Aircraft Systems, David A. Lombardo, , MCGRAW-HILL, 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=461",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=461"
  },
  "UCK 468E": {
   "code": "UCK 468E",
   "name": "Güdüm Kontrol ve Seyrüsefer",
+  "nameEn": "Guidance, Control & Navigation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2551,15 +6651,87 @@
    "Hafta 13 · Radyo Seyrüsefer Sistemleri.",
    "Hafta 14 · Küresel Seyrüsefer Uydu Sistemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güdüm sistemlerinin sınıflandırılması ve temel prensipleri. Özerk ve Özerk olmayan güdüm sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Radyo-ısına göre güdüm sistemi. Radyo kumandalı güdüm sistemi. Takip sistemi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Öz güdüm sistemleri. Tümleştirilmiş güdüm sistemleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Temel güdüm yöntemleri: takip eğrisi yöntemi; hedefi kapsama yöntemi; ileri güdüm yöntemi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Radyoışına göre güdüm yapıldığında füzenin yörüngesi ve kontrol sisteminin dinamiği.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Öz güdüm dinamiği.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Roketlerin güdümü ve yörünge kontrol algoritmaları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Otopilot prensipleri ve kullanımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Özerk olmayan kontrol sisteminin rastgele bozucular ortamında tasarımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Oyun kuramı temelinde kontrol sistemi tasarımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Atalet Seyrüsefer Sistemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Radyo Seyrüsefer Sistemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Küresel Seyrüsefer Uydu Sistemleri.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Tactical and strategic missile guidance, Zarchan, P. , AIAA, Inc., 2002,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=468",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=468"
  },
  "UCK 470": {
   "code": "UCK 470",
   "name": "Jet Motor Sis.Tas.&Pratik Uyg.",
+  "nameEn": "Jet Eng.Sys.Dsg.with Prac.App.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2596,15 +6768,87 @@
    "Hafta 13 · Alt sistemler; Başlatma Sistemi, dişli kutusu; AGB ve MGB, Yağlama ve Yakıt sistemi",
    "Hafta 14 · Motor Bütünü tasarımı süreci ve uçak platform integrasyon prensipleri ve Güncel uygulamalar; Yapay zeka, Büyük Veri, Dijital İkiz, Katmanlı üretim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uçak Motorları Hakkında Genel Bilgiler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Uçak Motorlarının Tanımları, Motor Tasarım Prensipleri, Süreçleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Jet Motoru Komponentleri, Çevrim Seçimi, Motor Performansı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Jet Motoru Modül Tasarımı: Hava alığı ve Kompresör",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Jet Motoru Modül Tasarımı: Yanma odası",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Jet Motoru Modül Tasarımı: Türbin ve Hava çıkış lüle tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Jet Motoru kompresör aero tasarım",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Jet Motoru türbin aerothermal tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Jet motoru statik yapı elemanları, sıcak hava ve ikincil hava sistemi ve soğutma isterleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Jet motoru ve Gaz türbinleri mekanik komponentleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Mekanik sistemler, yataklar ve yatak yağlama ve soğutma prensipleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Jet motoru rulmanları, şaft, sızdırmazlık elemanları ve malzeme seçimleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Alt sistemler; Başlatma Sistemi, dişli kutusu; AGB ve MGB, Yağlama ve Yakıt sistemi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Motor Bütünü tasarımı süreci ve uçak platform integrasyon prensipleri ve Güncel uygulamalar; Yapay zeka, Büyük Veri, Dijital İkiz, Katmanlı üretim",
+    "outcomes": "8-9"
+   }
+  ],
   "textbooks": [
    "Joachim Kurzke and Ian Halliwell, Propulsion and Power: An Exploration of Gas Turbine Performance Modeling, 1st ed., Springer, 2018."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=470",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=470"
  },
  "UCK 470E": {
   "code": "UCK 470E",
   "name": "Jet Motor Sis.Tas.&Pratik Uyg.",
+  "nameEn": "Jet Eng.Sys.Dsg.with Prac.App.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2641,15 +6885,87 @@
    "Hafta 13 · Alt sistemler; Başlatma Sistemi, dişli kutusu; AGB ve MGB, Yağlama ve Yakıt sistemi",
    "Hafta 14 · Motor Bütünü tasarımı süreci ve uçak platform integrasyon prensipleri ve Güncel uygulamalar; Yapay zeka, Büyük Veri, Dijital İkiz, Katmanlı üretim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uçak Motorları Hakkında Genel Bilgiler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Uçak Motorlarının Tanımları, Motor Tasarım Prensipleri, Süreçleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Jet Motoru Komponentleri, Çevrim Seçimi, Motor Performansı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Jet Motoru Modül Tasarımı: Hava alığı ve Kompresör",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Jet Motoru Modül Tasarımı: Yanma odası",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Jet Motoru Modül Tasarımı: Türbin ve Hava çıkış lüle tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Jet Motoru kompresör aero tasarım",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Jet Motoru türbin aerothermal tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Jet motoru statik yapı elemanları, sıcak hava ve ikincil hava sistemi ve soğutma isterleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Jet motoru ve Gaz türbinleri mekanik komponentleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Mekanik sistemler, yataklar ve yatak yağlama ve soğutma prensipleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Jet motoru rulmanları, şaft, sızdırmazlık elemanları ve malzeme seçimleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Alt sistemler; Başlatma Sistemi, dişli kutusu; AGB ve MGB, Yağlama ve Yakıt sistemi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Motor Bütünü tasarımı süreci ve uçak platform integrasyon prensipleri ve Güncel uygulamalar; Yapay zeka, Büyük Veri, Dijital İkiz, Katmanlı üretim",
+    "outcomes": "8-9"
+   }
+  ],
   "textbooks": [
    "Joachim Kurzke and Ian Halliwell, Propulsion and Power: An Exploration of Gas Turbine Performance Modeling, 1st ed., Springer, 2018."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=470",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=470"
  },
  "UCK 471E": {
   "code": "UCK 471E",
   "name": "Havacılıkta Bakım Yönetimi",
+  "nameEn": "Aviation Maintenance Manag.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2682,15 +6998,73 @@
    "Hafta 13 · Havayolu Teknik Birimlerinin Başlıca İş Ortaklığı ve İş Birliği İlişkileri",
    "Hafta 14 · Uçak Kiralama (Leasing) ve Satın Alma Süreçleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uçak Bakımının Temelleri"
+   },
+   {
+    "week": 2,
+    "topic": "Uçak Bakımının Temelleri (devam)"
+   },
+   {
+    "week": 3,
+    "topic": "Havayolu İşletmelerinde Bakım Yönetimi Biriminin Fonksiyonları"
+   },
+   {
+    "week": 4,
+    "topic": "Havayolu İşletmelerinde Bakım Yönetimi Biriminin Fonksiyonları (devam)"
+   },
+   {
+    "week": 5,
+    "topic": "Uçağın Uçuşa Elverişliliği"
+   },
+   {
+    "week": 6,
+    "topic": "Bakım Programının Geliştirilmesi"
+   },
+   {
+    "week": 7,
+    "topic": "Bakım Yönetimi Faaliyetleri"
+   },
+   {
+    "week": 8,
+    "topic": "Hat Bakımı ve Üs Bakımı Faaliyetleri"
+   },
+   {
+    "week": 9,
+    "topic": "Hat Bakımı ve Üs Bakımı Faaliyetleri (devam)"
+   },
+   {
+    "week": 10,
+    "topic": "Havacılık Sertifikasyon Gereklilikleri"
+   },
+   {
+    "week": 11,
+    "topic": "Bakım Bütçesinin Planlanması"
+   },
+   {
+    "week": 12,
+    "topic": "Bakım Yönetimi Birimlerinde Mühendislerin Rolü"
+   },
+   {
+    "week": 13,
+    "topic": "Havayolu Teknik Birimlerinin Başlıca İş Ortaklığı ve İş Birliği İlişkileri"
+   },
+   {
+    "week": 14,
+    "topic": "Uçak Kiralama (Leasing) ve Satın Alma Süreçleri"
+   }
+  ],
   "textbooks": [
    "Kinnison, H.A., Aviation Maintenance Management, (2004), McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=471",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=471"
  },
  "UCK 472": {
   "code": "UCK 472",
   "name": "Aeroelastisite",
+  "nameEn": "Aeroelasticity",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2722,16 +7096,88 @@
    "Hafta 13 · Aeroelastik Optimizasyona giriş",
    "Hafta 14 · Öğrenci projelerinin sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aeroelastisiteye giriş , Yapısal dinamiğe giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tel dinamiği, titreşimli tel probleminin modal çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Birörnek kirişin burulma dinamiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Birörnek kirişin eğilme dinamiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yaklaşık çözüm teknikleri, Ritz metodu and Galerkin metodu",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Statik Aeroelastisite, Rüzgar tüneli modelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Birörnek taşıma yüzeyi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Aeroelastik Flutter (kanat çırpınması) (Stabilite karakteristikleri ve Aeroelastik Analiz)",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Klasik Flutter Analizi, Flutter için mühendislik çözümleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Daimi olmayan Aerodinamik",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Varsayılan Modlarla Flutter tahmini, Flutter sınır karakteristikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Aeroelastisite konusundaki güncel makalelerin tartışılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Aeroelastik Optimizasyona giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci projelerinin sunumu",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Pierce and Hodges, Introduction to Structural Dynamics and Aeroelasticity, Cambridge University press, 2012",
    "Jan R.Wright and Jonathan E.Cooper, Introduction to Aircraft Aeroelasticity and Loads, 2nd Edition, John Wiley and Sons Ltd., 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=472",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=472"
  },
  "UCK 472E": {
   "code": "UCK 472E",
   "name": "Aeroelastisite",
+  "nameEn": "Aeroelasticity",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2763,16 +7209,88 @@
    "Hafta 13 · Aeroelastik Optimizasyona giriş",
    "Hafta 14 · Öğrenci projelerinin sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aeroelastisiteye giriş , Yapısal dinamiğe giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tel dinamiği, titreşimli tel probleminin modal çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Birörnek kirişin burulma dinamiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Birörnek kirişin eğilme dinamiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yaklaşık çözüm teknikleri, Ritz metodu and Galerkin metodu",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Statik Aeroelastisite, Rüzgar tüneli modelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Birörnek taşıma yüzeyi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Aeroelastik Flutter (kanat çırpınması) (Stabilite karakteristikleri ve Aeroelastik Analiz)",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Klasik Flutter Analizi, Flutter için mühendislik çözümleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Daimi olmayan Aerodinamik",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Varsayılan Modlarla Flutter tahmini, Flutter sınır karakteristikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Aeroelastisite konusundaki güncel makalelerin tartışılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Aeroelastik Optimizasyona giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci projelerinin sunumu",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Pierce and Hodges, Introduction to Structural Dynamics and Aeroelasticity, Cambridge University press, 2012",
    "Jan R.Wright and Jonathan E.Cooper, Introduction to Aircraft Aeroelasticity and Loads, 2nd Edition, John Wiley and Sons Ltd., 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=472",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=472"
  },
  "UCK 474E": {
   "code": "UCK 474E",
   "name": "Uçak Motor Tasarımı",
+  "nameEn": "Aircraft Engine Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2807,15 +7325,87 @@
    "Hafta 13 · Türbin Tasarımı (devam)",
    "Hafta 14 · Lüle Tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uçak Motorları Hakkında Genel Bilgi, Tanımlar, Motor Tasarım Süreci",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım Kısıtlarının İncelenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Görev Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Çevrim Seçimi, Parametrik Çevrim Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Performans Çevrimi Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Motorun Boyutlandırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Hava Alığının Tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kompresör Tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kompresör Tasarımı (devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Yanma Odası Tasarımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Türbin Tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Türbin Tasarımı (devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Lüle Tasarımı",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Aircraft Engine Design, Mattingly, J.D., Daley, D., AIAA Education Series, 1987,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=474",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=474"
  },
  "UCK 488": {
   "code": "UCK 488",
   "name": "Uçak Sistemleri",
+  "nameEn": "Aircraft Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2849,15 +7439,87 @@
    "Hafta 13 · Uçuş kumandaları",
    "Hafta 14 · Hidrolik sistem testleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hidrolik sistemlere giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hidroliğin temel prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hidrolik akışkanlar ve özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Hidrolik sistem komponentleri (borular, contalar)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Hidrolik sistem komponentleri (pompalar)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hidrolik sistem komponentleri (actuatorler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Elektrohidrolik",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Boeing uçaklarının hidrolik sistemleri (A sistem)",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Boeing uçaklarının hidrolik sistemleri (B sistem)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Airbus uçaklarının hidrolik sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Uçak fren sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Uçuş kumandaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Hidrolik sistem testleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=488",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=488"
  },
  "UCK 4901": {
   "code": "UCK 4901",
   "name": "Uçak Müh. Tasarımı I",
+  "nameEn": "Aeronautical Eng. Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2893,15 +7555,87 @@
    "Hafta 13 · Rapor ve sunum hazırlanması",
    "Hafta 14 · Rapor sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje konusunun belirlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje planlaması: İş paketleri ve takvimininin hazırlanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Literatür araştırması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Literatür analizi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Proje önerisi raporunun ve sunumunun hazırlanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Proje önerisi raporu sunumu",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Teorik ve/veya deneysel model / Ön tasarım",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Teorik ve/veya deneysel model / Ön tasarım",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Teorik ve/veya deneysel model / Ön tasarım",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Analiz ve/veya deney yöntemi / Tasarım doğrulama yöntemi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 11,
+    "topic": "Analiz ve/veya deney yöntemi / Tasarım doğrulama yöntemi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Analiz ve/veya deney yöntemi / Tasarım doğrulama yöntemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Rapor ve sunum hazırlanması",
+    "outcomes": "2-3-4-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Rapor sunumu",
+    "outcomes": "6-7-8"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=4901"
  },
  "UCK 4902": {
   "code": "UCK 4902",
   "name": "Uçak Müh. Tasarımı II",
+  "nameEn": "Aeronautical Eng. Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2937,15 +7671,87 @@
    "Hafta 13 · Final raporu ve sunumunun hazırlanması",
    "Hafta 14 · Final Rapor sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Analiz modeli ve/veya deney donanımı hazırlanması, ön tasarım",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Analiz modeli ve/veya deney donanımı hazırlanması, ön tasarım",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrulama çalışmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Analiz modeli ve/veya deney donanımı, ön tasarım raporu ve sunumunun hazırlanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Rapor sunumu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Analizler ve/veya deneysel çalışmalar, tasarım döngüleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Analizler ve/veya deneysel çalışmalar, tasarım döngüleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Analizler ve/veya deneysel çalışmalar, tasarım döngüleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Rapor hazırlanması",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Rapor sunumu",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 11,
+    "topic": "Parametrik çalışmalar, ayrıntılı tasarım",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Parametrik çalışmalar, ayrıntılı tasarım",
+    "outcomes": "2-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Final raporu ve sunumunun hazırlanması",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Final Rapor sunumu",
+    "outcomes": "6-7-8"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=4902"
  },
  "UCK 4902E": {
   "code": "UCK 4902E",
   "name": "Uçak Müh. Tasarımı II",
+  "nameEn": "Aeronautical Eng. Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2981,15 +7787,87 @@
    "Hafta 13 · Final raporu ve sunumunun hazırlanması",
    "Hafta 14 · Final Rapor sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Analiz modeli ve/veya deney donanımı hazırlanması, ön tasarım",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Analiz modeli ve/veya deney donanımı hazırlanması, ön tasarım",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrulama çalışmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Analiz modeli ve/veya deney donanımı, ön tasarım raporu ve sunumunun hazırlanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Rapor sunumu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Analizler ve/veya deneysel çalışmalar, tasarım döngüleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Analizler ve/veya deneysel çalışmalar, tasarım döngüleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Analizler ve/veya deneysel çalışmalar, tasarım döngüleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Rapor hazırlanması",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Rapor sunumu",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 11,
+    "topic": "Parametrik çalışmalar, ayrıntılı tasarım",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Parametrik çalışmalar, ayrıntılı tasarım",
+    "outcomes": "2-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Final raporu ve sunumunun hazırlanması",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Final Rapor sunumu",
+    "outcomes": "6-7-8"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=4902"
  },
  "UCK 492": {
   "code": "UCK 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -3020,15 +7898,87 @@
    "Hafta 13 · Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
    "Hafta 14 · Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=492"
  },
  "UCK 492E": {
   "code": "UCK 492E",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -3059,10 +8009,81 @@
    "Hafta 13 · Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
    "Hafta 14 · Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Bu ders bir sınıfta belirli bir ders planı ile gerçekleştirilmez. Bitirme çalışması danışmanının düzenli olarak organize ettiği toplantılar ile öğrenci çalışmalarını yönlendirir",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UCK&dersNo=492"
  }
 }

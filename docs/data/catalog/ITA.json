@@ -2,6 +2,7 @@
  "ITA 101": {
   "code": "ITA 101",
   "name": "İtalyanca I",
+  "nameEn": "Italian I",
   "language": "İtalyanca",
   "credits": {
    "theory": 2,
@@ -37,15 +38,87 @@
    "Hafta 13 · Beğenileri ve tercihleri ifade etmek - Beğenmek fiili (piacere) - Edatları (con, per)",
    "Hafta 14 · Bir arkadaşı davet etmek – Cafe’de, restoranda nasıl davranmak- Diyalog pratiği -yiyecekler, içecekler/içecekler ve nesneler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı - İtalyan kültür yönleri - Türkiye'de ve dünyada İtalya Ünite 0: Alfabe: telaffuz ve imla.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ünite 1: – Selamlaşma, Vedalaşma - kendini ve sınıf arkadaşlarını tanıtma (adı, soyadı, uyruk) -Resmi ve resmi olmayan bir şekilde sorular sormak - Konu şahıs zamirleri – Olmak fiili - Kendini çağırmak için fiil – Fiil çekimleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "İsim ve sıfatların cinsiyeti ve sayısı - İsim ve sıfat uyumu – Var/sahip olmak fiili - Olumsuz ve soru cümlesi -",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Okulda- Milletler ve milliyetler - Sıfırdan yirmiye kadar sayılar – Tekil belirli ve belirsiz artikeller",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ünite 2: Nasıl olduğunu sorma ve söyleme (Nasılsın? - Nasılsın? - İyiyim/kötü/öyle-öyle...) - Ruh halini ve fiziksel bir durumu ifade etme - Miktarı ifade etme (miktar zarfları: çok fazla, çok, yeterli, az, hiç) - Olmak ve sahip olmak fiilleri ile ilgili deyimsel ifadeler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Bir eylemin sıklığını ifade etmek - Kaliteyi ifade etmek; Sıklık zarfları: asla, bazen, sıklıkla, her zaman, genellikle - ARE'deki düzenli filler ve stare, andare (kalmak, gitmek) düzensiz fiiller - Fiil çekimleri - yer edatları ( di; a; in)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Fiziksel bir tanımı yapmak - kendini ve başkalarını (sınıf arkadaşlarını) tanımlamak – Soru kelimeleri (Chi, che cosa, come, quando, dove, perché) - Fiil çekimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Sıfatlar ve sıfatların isim ve artikel ile uyumu - ERE'deki düzenli filler - çoğul belirli artikeller – yirmiden yüze kadar sayılar - Fiil çekimleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Ünite 3: Eğitim ve iş - İşiniz ve/veya çalışma alanınız hakkında bilgi isteyin ve verin – Meslekleri - IRE-'deki düzenli fiiller Düzensiz fiiller: fare, dare (yapmak, vermek). Yapmak fiil ile deyimsel ifadeler- Belirtme edati (di)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Takvim: Yılın bayramları, günleri ve ayları- Günlük rutinler ve zaman hakkında konuşma –",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Saatler- saatin kaç olduğunu sormak ve söylemek - Tarihi sormak ve söylemek- Dönüşlü fiiller - Arkadaşına e-posta yazmak – Yer edatı (da) - Zaman edatları (da,a,in)",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Ünite 4: Kafede ürünleri – Cafe’de Sipariş vermek- Fiyatı sormak ve söylemek- Faturayı istemek - Düzensiz fiiller: söylemek, içmek, dışarı çıkmak – Fiil çekimleri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Beğenileri ve tercihleri ifade etmek - Beğenmek fiili (piacere) - Edatları (con, per)",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Bir arkadaşı davet etmek – Cafe’de, restoranda nasıl davranmak- Diyalog pratiği -yiyecekler, içecekler/içecekler ve nesneler",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "In Alto A1-A2, Corso di Italiano per stranieri F. Quercioli, G. Tassani, Ornimi Edizioni (2024)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=101"
  },
  "ITA 102": {
   "code": "ITA 102",
   "name": "İtalyanca II",
+  "nameEn": "Italian II",
   "language": "İtalyanca",
   "credits": {
    "theory": 2,
@@ -81,15 +154,87 @@
    "Hafta 13 · Akrabalık ve aile ilişkilerinden konuşmak Vurgulu zamirler: edatlarla kullanım Bir odayı tanımlamak Ev ve oda mobilyaları ile ilgili kelime dağarcığı",
    "Hafta 14 · Mekânı tanımlamak için kullanılan ifadeler ve yer zarflarının kullanımı Artikelli edatlar Oda veya daire aramak için ilan yazmak"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "101 programı revize etmek: Şimdiki zaman + düzensiz fiiller; dönüşlü fiiller; Artikeller + edatlar; Kendini ve başkalarını tanıtma;",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ünite 4: Yiyeceklerle ilgili tercihler hakkında konuşmak; “sevmek / beğenmek (piacere)” fiilini kullanmak; Edatlar (con, per, su, tra/fra); Modal fiil (potere) tanıtımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ünite 5: İtalyan şehirlerini tanımak Yerleri/şehirleri tanımlama Modal fiiller (potere, dovere, volere) ve modal fiiler ilgili calismalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kelime bilgisi: hava durumu, yılın ayları ve mevsimleri, Hava durumunu ve mevsimleri tanımlayan ifadeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Boş zaman aktiviteleri; Boş zamanlarında kendinden bahsetmek ve başkalarına boş zamanlarını sormak “çok”, ‘az’, “çok fazla”, “fazla” kelimelerinin sıfat ve zarf olarak kullanımı Sapere fiil; Zaman edatlar (fra, in)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tatiller ve boş zamanlar hakkında diyaloglar ve kısa metinlerle pratik yapmak; Plan yapmak; Modal fiiller ve “sapere” fiiliyle alıştırmalar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Ünite 6: Geçmiş zamanın tanıtımı (passato prossimo); Geçmiş zaman kipindeki metinleri dinlemek ve okumak;",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Geçmiş zamanı: düzenli fiiller Yardımcı fiiller essere/avere Hafta sonu etkinliklerinden geçmiş zamanda konuşmak",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Geçmiş zamanı: düzensizi filler Geçmiş zamanda olayları ve boş zaman aktivitelerini anlatmak Zarflar già, ancora; Zaman bağlaçlarıyla anlatım",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Geçmiş zamanın alıştırmaları ve kullanımı Yer belirten zarf “ci”; Karşılıklı dönüşlü fiiller",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Ünite 7: Ev ve evin odalarının tanımı; İlerleyen şimdiki zaman ( presente progressivo) ve şimdiki zaman (presente semplice) İyelik sıfatlarının; sıra sayıları",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Aile kelime bilgisi (aile üyeleri ve ilişkiler) Aile tanımı İyelik sıfatlarının kullanımı",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Akrabalık ve aile ilişkilerinden konuşmak Vurgulu zamirler: edatlarla kullanım Bir odayı tanımlamak Ev ve oda mobilyaları ile ilgili kelime dağarcığı",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Mekânı tanımlamak için kullanılan ifadeler ve yer zarflarının kullanımı Artikelli edatlar Oda veya daire aramak için ilan yazmak",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "In Alto A1-A2, Corso di Italiano per stranieri F. Quercioli, G. Tassani, Ornimi Edizioni (2024)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=102"
  },
  "ITA 201": {
   "code": "ITA 201",
   "name": "İtalyanca III",
+  "nameEn": "Italian III",
   "language": "İtalyanca",
   "credits": {
    "theory": 2,
@@ -126,15 +271,87 @@
    "Hafta 13 · Farklı mağazalarda alışveriş yapma Bir ürün hakkında bilgi sorma 101'den sonraki sayılar",
    "Hafta 14 · Yemek kültürü ve tercihler üzerine sohbet İndirekt zamirlere tanıtımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı A1 Konularının Genel Tekrarı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geçmiş Zaman (Passato Prossimo) tekrarı: Pratik ve konuşma egzersizleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Ünite 8: Seyahat ve geziler hakkında konuşma Seyahat planlama: ulaşım araçları ve ulaşım araçlarıyla kullanılan edatlar Seyahat için faydalı kelime bilgisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Geziler hakkında konuşma: Tren istasyonunda Bilet alma ve konaklama rezervasyonu Seyahat sırasında olası konaklama seçenekleri Direkt zamirler tanıtımı ve kullanımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yer/şehir tanıtma ve yön bulma: Yol tarifi verme Geçmiş zaman (Passato Prossimo) tekrarı ve yardımcı fiil seçimi: çift yardımcı fiil alan fiiller",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Direkt zamirler ve alıştırmalar Ne\" Zamiri Geçmiş zamanda (Passato prossimo) direkt zamirlerle uyumu",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Ünite 9: Geçmişteki alışkanlıklar ve anlatım Geçmiş zaman “Imperfetto” tanıtımı: duzenli ve düzensiz fiiller, yapı ve temel kullanımlar",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Imperfetto: Temel zarflar, bağlaçlar ve bu zamanın kullanımını gerektiren ifadeler Şimdiki ve geçmiş zamanda fiziksel durumları ve ruh hallerini ifade etme İnsan vücudu ve vücutla ilgili ifadeler Ruh hali ve duygular hakkında konuşma",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Geçmişteki olay ve eylemlerin anlatımı\u2028Imperfetto kullanımı Bir şehir hakkında konuşma: şimdiki hali (şimdi nasıl) ve geçmiş hali (eskiden nasıldı)",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Şimdiki ve geçmiş zamanda süre bildirme Şimdiki ve geçmiş zamanda süreğen eylem ve olaylar hakkında konuşma Geçmişte süreğen yapı (stare + gerundio) Zaman edatı (Da) + Şimdiki zaman/Geçmiş zaman Imperfetto",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Anılar hakkında konuşma Geçmişteki sıralı, eşzamanlı veya bölünen olayları anlatma Passato Prossimo ve Imperfetto kullanımı ve arasındaki kullanım farkları Sıfatlar: Güzel (bello), iyi (buono), çirkin (brutto), kötü (cattivo)",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Ünite 10: Yemek Kültürü ve Alışveriş Yemeklerle ilgili kelime bilgisi Arkadaşlar için yemeği menüsü planlama Fikir sorma ve belirtme Süpermarkette alışveriş yapma Artikelli edatları ve basit edatların kullanımı",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Farklı mağazalarda alışveriş yapma Bir ürün hakkında bilgi sorma 101'den sonraki sayılar",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Yemek kültürü ve tercihler üzerine sohbet İndirekt zamirlere tanıtımı",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "In Alto A1-A2, Corso di Italiano per stranieri F. Quercioli, G. Tassani, Ornimi Edizioni (2024)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=201"
  },
  "ITA 202": {
   "code": "ITA 202",
   "name": "İtalyanca IV",
+  "nameEn": "Italian IV",
   "language": "İtalyanca",
   "credits": {
    "theory": 2,
@@ -170,15 +387,87 @@
    "Hafta 13 · İş Görüşmesi Üzerine Dinleme \"Conoscere\" ve \"Sapere\" Fiillerinin Tekrarı Zamirlerle Emir Kipi Kullanımı",
    "Hafta 14 · Resmi Olmayan Durumlarda Sabırsızlık, Tahammülsüzlük veya Hayal Kırıklığı İfade Etme Gayriresmi Emir Kipi Tekrarı ve Zamirlerle Kullanımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tantimi Önceki dilbilgisi zamanlarının genel tekrarı. Konuşma etkinlikleri: kendini tanıtma, geçmiş deneyimlerden bahsetme.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ünite 10: Yemek Kültürü Konusunun Tekrarı Fikir Belirtme En Sevilen Yemekler Hakkında Konuşma ve Yemek Tarifi Yazma Mutfakta Ağırlık ve Ölçü Birimleri Kelime Bilgisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Alışveriş Yapma, Ürünler Hakkında Bilgi Sorma ve Ödeme (Manav, fırın, bakkal) Alışverişte Ondalık Metrik Sistem (Ağırlık ve ölçüler) Miktarlar Rol Yapma (Role play): Mağazada diyalog",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dolaylı Zamirler (Pronomi indiretti) Tekrarı ve Alıştırmalar \"Piacere\" Fiilinin Tekrarı ve Dolaylı Zamirlerle Kullanılan Yeni Fiiller İtalyan Kültürel Yemek Geleneği Üzerine Okuma",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Ünite 11: Burçlar ve Zodyak Kelime Bilgisi Dinleme ve Okuma Gelecek Zaman (Futuro semplice) Giriş ve Kullanımı (Düzenli ve düzensiz fiiller)",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Gelecek Zaman Cümleleri ile Pratik ve Konuşma Şartlı Cümle Yapısı (Tip 1) Giriş ve Alıştırmalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Moda Üzerine Dinleme Alışveriş Kelime Bilgisi (Beden, aksesuarlar, malzemeler) ile İnsan ve Kıyafet Betimleme Şart Kipi (Condizionale) Giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Dilekler ve İstekler Hakkında Konuşma Şimdiki Zaman Şart Kipi (Condizionale Presente) Kullanımı ve Alıştırmalar (Düzenli, düzensiz ve modal fiiller)",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Moda Mağazalarında Alışveriş Üzerine Dinleme Edatlar (a, di, da) Fikir Birliği/Ayrılığı (Ben de/Ben değil vb.) \"Perché\" ve \"Invece\" Kullanımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Ünite 12: İş ve Meslekler Konusuna Giriş İş Arama ve İş İlanları Üzerine Dinleme ve Okuma \"Si\" ile Edilgen/Belgisiz Fiil Yapısı (Impersonal Form)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "İş Yerleri ve İş Teklifleri Meslek Grupları ve Ekler (-tore; -trice; -e; -ista) İş İlanı Yazma Belgisiz (Impersonal) Fiil Alıştırmaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Emir Kipi (Imperativo): Yapı ve temel kullanımlar, resmi ve gayriresmi, düzenli ve düzensiz fiiller Emir, Tavsiye veya İstek Belirtme Özgeçmiş (CV) ve İş Becerileri Hakkında Konuşma Özgeçmiş Yazma",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "İş Görüşmesi Üzerine Dinleme \"Conoscere\" ve \"Sapere\" Fiillerinin Tekrarı Zamirlerle Emir Kipi Kullanımı",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Resmi Olmayan Durumlarda Sabırsızlık, Tahammülsüzlük veya Hayal Kırıklığı İfade Etme Gayriresmi Emir Kipi Tekrarı ve Zamirlerle Kullanımı",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "In Alto A1-A2, Corso di Italiano per stranieri F. Quercioli, G. Tassani, Ornimi Edizioni (2024)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=202"
  },
  "ITA 301": {
   "code": "ITA 301",
   "name": "İtalyanca V",
+  "nameEn": "Italian V",
   "language": "İtalyanca",
   "credits": {
    "theory": 2,
@@ -214,10 +503,81 @@
    "Hafta 13 · Ünite 4: Göç, İtalyan toplumu ve eğitim konusuna giriş. Göç ve demografi ile ilgili kelime bilgisi. Deyimsel ifadeler.\u2028Passato Remoto ile Imperfetto karşılaştırması.\u2028Zamana belirten anaforik ifadeler (allora, qualche tempo fa, nel decennio successivo).",
    "Hafta 14 · Ünite 4: Anlatı metni yapısı.\u2028Dikkat çekme ve mahcubiyet ifade etmeye yönelik dilsel stratejiler.\u2028Ruh halleriyle ilgili deyimsel ifadeler.\u2028İletişimsel etkinlikler: tarihsel ve kişisel hikâyeler anlatma."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin Tanıtımı. Temel zamanların tekrarı: şimdiki zaman, geçmiş zamanlar (Passato Prossimo vs Imperfetto), gelecek zaman, emir kipi.\u2028Konuşma etkinlikleri: kendini tanıtma, geçmiş deneyimlerden bahsetme.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ünite 1: Giyim ve İtalyan modası konusuna giriş. Giyim, aksesuarlar ve moda ile ilgili kelime bilgisi. Görünüş ve tarzı betimleme.\u2028Geçmişte anlatıma giriş. Geçmişteki alışkanlıkların ve ruh hallerinin betimlenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ünite 1: Geçmiş olayları anlatma (passato prossimo ve imperfetto kullanımı ve yapıları).\u2028Geçmişteki alışkanlıkları ve devam eden durumları betimleme.\u2028Dinleme ve yönlendirilmiş konuşma etkinlikleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ünite 1: Geçmişteki olay dizilerinin ve eşzamanlı eylemlerin anlatımı.\u2028Koordine edici metin bağlaçlar (ma, quindi, oppure).\u2028Kısa anlatı metinleri yazma.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ünite 2: Spor ve fiziksel aktiviteler kelime bilgisi. Vücudun bölümleri. Karşılaştırma yapma ve düzensiz üstünlük derecelerinin kullanımı. Sıfatların dereceleri (karşılaştırma ve üstünlük yapıları). Görüş ve tercih ifade etme.",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Ünite 2: Dilek, tavsiye ve olasılık ifade etme.\u2028Gelecek zamanın tekrarı ve Condizionale Presente (Şimdiki Zaman şart kipi) tanıtımı; işlevleri ve yapıları.",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Ünite 2: Tavsiye verme ve varsayım ifade etme. Gelecek zamanın modal kullanımları.\u2028Korelasyon yapıları (sia… sia, né… né). Sağlık ve vücut hakkında konuşma.\u2028İletişimsel alıştırmalar ve pekiştirme.",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Ünite 1-2: Dilbilgisi ve kelime bilgisinin tekrarı ve pekiştirilmesi.\u2028Bütünleşik beceriler (okuma, dinleme, konuşma, yazma).\u2028Konuşma etkinlikleri.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Ünite 3: Yeni konuya giriş: aile dinamikleri, ayrılık ve sosyal değişimler.\u2028Aile, ilişkiler ve toplum ile ilgili kelime bilgisi.\u2028Duygusal bağlamla geçmiş olayları anlatma.",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Ünite 3:  Trapassato Prossimo (Miş'li Geçmiş Zaman) konusuna giriş; işlevleri ve yapıları. İlgi zamirleri (chi, che, cui, il quale). Toplumda birey üzerine konuşma.",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Ünite 3: Rahatsızlık ifade etme ve duygusal yakınlıkla olan geçmiş olayların anlatma. Ekleyici bağlaçlar (in seguito, poi, inoltre) ve karşıtlık bildiren bağlaçlar (però, tuttavia, mentre).\u2028Betimleyici ve anlatı metinlerinin yapılandırılması.",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Ünite 4: Tarihi olaylar hakkında konuşma ve Passato Remoto (Uzak Geçmiş Zaman) konusuna giriş. Kullanımı, işlevleri ve yapıları.\u2028Passato Prossimo ile karşılaştırmalı kullanımı.\u2028Söylem belirteçleri (allora, ecco, certo, vedi).",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Ünite 4: Göç, İtalyan toplumu ve eğitim konusuna giriş. Göç ve demografi ile ilgili kelime bilgisi. Deyimsel ifadeler.\u2028Passato Remoto ile Imperfetto karşılaştırması.\u2028Zamana belirten anaforik ifadeler (allora, qualche tempo fa, nel decennio successivo).",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Ünite 4: Anlatı metni yapısı.\u2028Dikkat çekme ve mahcubiyet ifade etmeye yönelik dilsel stratejiler.\u2028Ruh halleriyle ilgili deyimsel ifadeler.\u2028İletişimsel etkinlikler: tarihsel ve kişisel hikâyeler anlatma.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "L’ITALIANO ALL’ UNIVERSITÀ 2, MATTEO LA GRASSA, MARCELLA DELITALA, FIORENZA QUERCIOLI, EDILINGUA (2015)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITA&dersNo=301"
  }
 }

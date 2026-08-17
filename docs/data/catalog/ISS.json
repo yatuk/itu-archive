@@ -2,6 +2,7 @@
  "ISS 501": {
   "code": "ISS 501",
   "name": "Yöneticiler için İstatistik",
+  "nameEn": "Management Statistics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -45,6 +46,64 @@
    "Hafta 13 · Değişke çözümlemesi",
    "Hafta 14 · Doğrusal bağlanım ve ilişki"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, sorgulayıcı istatistik"
+   },
+   {
+    "week": 2,
+    "topic": "Betimleyici istatistik: Merkezi eğilim ve yayıklık ölçüleri"
+   },
+   {
+    "week": 3,
+    "topic": "Olasılık"
+   },
+   {
+    "week": 4,
+    "topic": "Kesikli rassal değişkenler, kesikli olasılık dağılımları"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli rassal değişkenler, sürekli olasılık dağılımları"
+   },
+   {
+    "week": 6,
+    "topic": "Örnekleme çeşitleri"
+   },
+   {
+    "week": 7,
+    "topic": "Örnekleme dağılımları"
+   },
+   {
+    "week": 8,
+    "topic": "Tek anakütle parametresi için güven aralığı tahminleri"
+   },
+   {
+    "week": 9,
+    "topic": "Hipotez sınamasına giriş"
+   },
+   {
+    "week": 10,
+    "topic": "Tek anakütle parametresi için hipotez sınamaları"
+   },
+   {
+    "week": 11,
+    "topic": "İki anakütle parametresinin karşılaştırılması için güven aralığı tahminleri"
+   },
+   {
+    "week": 12,
+    "topic": "İki anakütle parametresinin karşılaştırılması için hipotez sınamaları"
+   },
+   {
+    "week": 13,
+    "topic": "Değişke çözümlemesi"
+   },
+   {
+    "week": 14,
+    "topic": "Doğrusal bağlanım ve ilişki"
+   }
+  ],
   "textbooks": [
    "Groebner, D.F., Shannon, P.W., Fry, P.C., Smith, K.D. (2017), Business Statistics: Decision Making Approach, 10. Baskı, Prentice Hall. ISBN-13: 978-0134496498 ISBN 10: 9780134496498",
    "Groebner, D.F., Shannon, P.W., Fry, P.C., Smith, K.D. (2017), Business Statistics: Decision Making Approach, 10. Baskı, Prentice Hall. ISBN-13: 978-0134496498 ISBN 10: 9780134496498",
@@ -55,12 +114,12 @@
    "Şenesen, Ümit (2004), İstatistik - Sayıların Arkasını Anlamak, Literatür Yayıncılık. ISBN: 978-9750402838",
    "Şenesen, Ümit (2004), İstatistik - Sayıların Arkasını Anlamak, Literatür Yayıncılık. ISBN: 978-9750402838"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=501"
  },
  "ISS 503E": {
   "code": "ISS 503E",
   "name": "Financial Accounting",
+  "nameEn": "Financial Accounting",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -97,18 +156,76 @@
    "Hafta 13 · Özsermaye",
    "Hafta 14 · Vaka Çalışması II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Muhasebeye Giriş ve Temel Finansal Tablolar"
+   },
+   {
+    "week": 2,
+    "topic": "Muhasebeye Giriş ve Temel Finansal Tablolar"
+   },
+   {
+    "week": 3,
+    "topic": "Muhasebe Döngüsü: İşlemleri Kaydetme"
+   },
+   {
+    "week": 4,
+    "topic": "Muhasebe Döngüsü: Tahakkuklar ve Ertelemeler"
+   },
+   {
+    "week": 5,
+    "topic": "Muhasebe Döngüsü: Finansal Tabloların Raporlanması"
+   },
+   {
+    "week": 6,
+    "topic": "Vaka Çalışması I"
+   },
+   {
+    "week": 7,
+    "topic": "Finansal Tablolar, Kayıtlar ve Kapatmalar"
+   },
+   {
+    "week": 8,
+    "topic": "Ticari Şirketlerin Muhasebesi"
+   },
+   {
+    "week": 9,
+    "topic": "Finansal Varlıklar"
+   },
+   {
+    "week": 10,
+    "topic": "Stoklar ve Satılan Malların Maliyeti"
+   },
+   {
+    "week": 11,
+    "topic": "Maddi ve Maddi Olmayan Varlıklar"
+   },
+   {
+    "week": 12,
+    "topic": "Yükümlülükler"
+   },
+   {
+    "week": 13,
+    "topic": "Özsermaye"
+   },
+   {
+    "week": 14,
+    "topic": "Vaka Çalışması II"
+   }
+  ],
   "textbooks": [
    "Williams, J., Haka, S., Bettner, M., Carcello, J., (2011), Financial & Managerial Accounting, 16. Baskı, McGraw Hill, ISBN: 978-0077504014",
    "Anthony, R., Hawkins, D., Merchant, K. (2010), Accounting: Text and Cases, 13. Baskı, McGraw-Hill, ISBN: 978-0073379593",
    "Jones, M. (2006), Accounting, 2. Baskı, Wiley, ISBN: 978-0470017791",
    "Wild, J., Shaw, K., Chiappetta, B. (2010), Principles of Financial Accounting, 20. Baskı, McGraw Hill. ISBN: 978-0077338237"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=503"
  },
  "ISS 505": {
   "code": "ISS 505",
   "name": "Yönetim ve Organizasyon",
+  "nameEn": "Management and Organization",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -140,16 +257,88 @@
    "Hafta 13 · Yönetimde güncel konular",
    "Hafta 14 · Proje Sunumları ve Tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Günümüzde yönetim ve organizasyon konusunda bilgi edinmenin önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel kavramlar 1: Yönetim, yönetici",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel kavramlar 2: Örgüt, davranış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Yönetim çevresi 1: Yönetimi etkileyen kurumsal ve toplumsal bağlam",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yönetim çevresi 2: Çevre, örgütsel kültür, sürdürülebilirlik ve kurumsal sosyal sorumluluk, etik vb.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yönetim anlayışındaki tarihsel gelişmeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Yönetim anlayışındaki tarihsel gelişmeler (devam)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Yönetim Fonksiyonları: Planlama ve karar verme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yönetim Fonksiyonları: Örgütleme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yönetim Fonksiyonları: Yönlendirme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yönetim Fonksiyonları: Yönlendirme (devam)",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yönetim Fonksiyonları: Kontrol",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yönetimde güncel konular",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları ve Tartışma",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Thomas S. Bateman and Robert Konopaske (2024) M: Management, McGraw Hill, evergreen release 2024; ISBN10: 1264209711 | ISBN13: 9781264209712.",
    "Stephen P. Robbins & Mary A. Coulter (2021), Management, 15th edition, ISBN 9781292340883"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=505"
  },
  "ISS 509E": {
   "code": "ISS 509E",
   "name": "Marketing Management",
+  "nameEn": "Marketing Management",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -183,18 +372,76 @@
    "Hafta 13 · Bütünleşik Pazarlama İletişiminin Tasarımı ve YönetimiKitle İletişim Yönetimi: Reklam, Satış Promosyonu, Etkinlik ve Halkla İlişkiler",
    "Hafta 14 · Pazarlama Planı Tasarımı Takım Çalışması Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Pazarlama Anlayışının Gelişimi ve 21.yy’daki TanımıPazarlama Yönetiminde Etik ve Sorumluluk"
+   },
+   {
+    "week": 2,
+    "topic": "Pazarlama Stratejileri ve Planları Geliştirme"
+   },
+   {
+    "week": 3,
+    "topic": "Bilgi Toplama ve Çevreyi İzlemePazarlama Araştırması Yürütme ve Talep Tahmini"
+   },
+   {
+    "week": 4,
+    "topic": "Son Kullanıcı Pazarı Analizi"
+   },
+   {
+    "week": 5,
+    "topic": "Örgütler Arası Pazar Analizi"
+   },
+   {
+    "week": 6,
+    "topic": "Pazar Bölümü Tanımlama ve Hedef Pazar Seçimi"
+   },
+   {
+    "week": 7,
+    "topic": "Rekabet Stratejileri"
+   },
+   {
+    "week": 8,
+    "topic": "Ürün Stratejisi Oluşturma"
+   },
+   {
+    "week": 9,
+    "topic": "Hizmet Tasarımı ve Yönetimi"
+   },
+   {
+    "week": 10,
+    "topic": "Fiyatlandırma Stratejileri ve Yöntemleri"
+   },
+   {
+    "week": 11,
+    "topic": "Pazarlamada Kanal Yönetimi: Perakendecilik, Toptancılık ve Lojistik"
+   },
+   {
+    "week": 12,
+    "topic": "Marka Yönetimi ve Konumlandırma"
+   },
+   {
+    "week": 13,
+    "topic": "Bütünleşik Pazarlama İletişiminin Tasarımı ve YönetimiKitle İletişim Yönetimi: Reklam, Satış Promosyonu, Etkinlik ve Halkla İlişkiler"
+   },
+   {
+    "week": 14,
+    "topic": "Pazarlama Planı Tasarımı Takım Çalışması Sunumları"
+   }
+  ],
   "textbooks": [
    "Kotler, P. and Keller, A. (2009), Marketing Management, 13.Baskı, Pearson, Prentice Hall. ISBN: 978-0136009989",
    "Peter, J.P. ve Donnely, J.H. Jr. (2010), Marketing Management, Knowledge and Skills, 10.Baskı, McGraw-Hill/Irwin. ISBN-10: 0073530050; ISBN-13: 978-0073530055.",
    "Wall Street Journal, Business Week, Fortune, Marketing Turkiye ve Kapital gibi gazete ve dergiler.",
    "(Business newspapers and magazines, such as the Wall Street Journal, Business Week, Fortune, Marketing Turkiye and Kapital, etc.)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=509"
  },
  "ISS 524": {
   "code": "ISS 524",
   "name": "Pazarlama Araştırması",
+  "nameEn": "Marketing Research",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -228,62 +475,74 @@
    "Hafta 13 · Veri Analizi: Seçilmiş Çok değişkenli Analziler ve SPSS uygulaması - SPSS uygulama",
    "Hafta 14 · Dönem projelerinin sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırmanın tanımı, kapsamı; Araştırmanın pazarlama yönetimindeki yeri Araştırmalarda etik kurallarPazarlama Araştırması Süreci"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma probleminin tanımlanması, araştırma modelinin saptanması"
+   },
+   {
+    "week": 3,
+    "topic": "Açıklayıcı araştırma tasarımı: İkincil Araştırma ve Kalitatif araştırma"
+   },
+   {
+    "week": 4,
+    "topic": "Tanımlayıcı araştırma yöntemleri: Yatay kesit, tekrarlı araştırma ve paneller"
+   },
+   {
+    "week": 5,
+    "topic": "Tanımlayıcı araştırmada birincil veri toplama yöntemleri: Mülakat, Gözlem"
+   },
+   {
+    "week": 6,
+    "topic": "Teorik Çerçevenin oluşturulması, hipotezlerin geliştirilmesi,"
+   },
+   {
+    "week": 7,
+    "topic": "Değişkenleri Ölçme ve Ölçekleme,"
+   },
+   {
+    "week": 8,
+    "topic": "Anket formu geliştirme"
+   },
+   {
+    "week": 9,
+    "topic": "Örneklem yöntemleri ve Örnek hacmi saptama"
+   },
+   {
+    "week": 10,
+    "topic": "Veri Analizi: Yaygın kullanılan parametrik testler ve SPSS uygulama"
+   },
+   {
+    "week": 11,
+    "topic": "Veri Analizi: Yaygın kullanılan nonparametrik testler ve SPSS uygulaması"
+   },
+   {
+    "week": 12,
+    "topic": "Veri Analizi: Seçilmiş Çok değişkenli Analziler ve SPSS uygulaması - SPSS uygulama"
+   },
+   {
+    "week": 13,
+    "topic": "Veri Analizi: Seçilmiş Çok değişkenli Analziler ve SPSS uygulaması - SPSS uygulama"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projelerinin sunumu"
+   }
+  ],
   "textbooks": [
    "Malhotra, N. K. (2007), Marketing Research and SPSS 14.0 Package, 5. Baskı, Prentice Hall. ISBN-10: 0132221179; ISBN-13: 9780132221177.",
    "Nakip, M. (2006), Pazarlama Araştırmaları (Teknikler ve SPSS Destekli Uygulamalar), 2.Baskı, Seçkin Yayıncılık. ISBN: 9789750203107."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=524",
-  "fetchedAt": "2026-08-12T21:49:46Z"
- },
- "ISS 533": {
-  "code": "ISS 533",
-  "name": "Sermaye Piyasası Hukuku",
-  "language": "Türkçe",
-  "credits": {
-   "theory": 3,
-   "practice": 0,
-   "lab": 0,
-   "local": 3,
-   "ects": 7.5
-  },
-  "description": "Anonim şirketler, halka açık anonim şirketler, Sermaye Piyasası Kanunu'nun amaç, konu ve kapsamı, sermaye piyasası kurumları, sermaye piyasası faaliyetleri, sermaye piyasası araçları, sermaye piyasası kurulu, aleni pay alım teklifi, vekâleten oy kullanma, içerden öğrenenlerin ticareti ve sermaye piyasasında denetim ve sorumluluk Joint stock corporations, publicly held joint stock corporations, the objective and scope of capital markets law, capital market institutions, activities in the capital market, public offering, capital markets board, tender offers, proxies, insider trading, supervision of capital markets and the liabilities of individuals.",
-  "outcomes": [
-   "Sermaye şirketlerine ilişkin temel konuları anlayabilme becerisi,",
-   "İncelenen bir şirketin yapısını anlayabilme becerisi,",
-   "Sermaye piyasası araçlar ve faaliyetlerine yönelik olarak alınacak kararlarda çok yönlü bakış açısı geliştirebilme yetkinliği,",
-   "İncelenen bir ihraç sürecini anlayabilme becerisi,",
-   "Sermaye piyasası mevzuatını gelecekte kendisini geliştirme aracı olarak etkin biçimde kullanabilme yetkinliği,",
-   "Sermaye piyasasını ilgilendiren konularda hukukçular ile takım halinde çalışabilme becerisi."
-  ],
-  "weeklyTopics": [
-   "Hafta 1 · Şirket sözleşmeleri, Adi Şirket-Ticaret Şirketleri",
-   "Hafta 2 · Sermaye Şirketleri; Anonim Şirket-Limited şirket",
-   "Hafta 3 · Anonim şirketlerin kuruluşu, organları ve işleyişi",
-   "Hafta 4 · Anonim şirketlerde sermaye yapısı, paylar, hisse senetleri, hesaplar, kar dağıtımı, şirketin sona ermesi",
-   "Hafta 5 · Finansal piyasalar; Temel Kavramlar: İhraç; İhraççı; Halka arz; Sermaye piyasası araçları; Menkul kıymetler",
-   "Hafta 6 · Halka açık anonim şirketler (Genel Özellikler)",
-   "Hafta 7 · Halka açık anonim şirketler (Kâr Dağıtımına İlişkin Özellikler)",
-   "Hafta 8 · Halka açık anonim şirketler (Genel Kurula İlişkin Özellikler, Kamuyu Aydınlatma)",
-   "Hafta 9 · Menkul Kıymetler; Opsiyon ve Vadeli İşlem Sözleşmeleri",
-   "Hafta 10 · Menkul kıymet ihraç süreci",
-   "Hafta 11 · Sermaye piyasası faaliyetleri: Aracılık; portföy yöneticiliği, portföy işletmeciliği, yatırım danışmanlığı, bağımsız denetim ve derecelendirme faaliyetleri",
-   "Hafta 12 · Sermaye Piyasası Kurumları (Aracı Kurumlar; Yatırım Fonları ve Yatırım Ortaklıkları); Bağımsız Denetim",
-   "Hafta 13 · Aleni Pay Alım Teklifi ve Vekaleten Oy Kullanma",
-   "Hafta 14 · Kamunun Aydınlatılması; Yatırımcının korunması; İçerden öğrenenlerin ticareti (Insider trading); Manipülasyon"
-  ],
-  "textbooks": [
-   "Yanlı, V. (2005), Sermaye Piyasası Hukuku Çerçevesinde Halka Açık Anonim Şirketler ve Kamunun Aydınlatılması, Beta, ISBN: 978-9752954519",
-   "Ayoğlu, Tolga (2008), Sermaye Piyasası Hukukunda Halka Arz ve Kavramı ve Halka Arza Aracılık Sözleşmeleri, Vedat Yay., ISBN: 978-6054002214",
-   "Ünal, O.K. (2005), Sermaye Piyasası Hukuku ve Mevzuatı, Asil Kitabevi, ISBN: 978-9759091170",
-   "Kütükçü, D. (2005), Sermaye Piyasası Hukuku, 2 Cilt, Beta, ISBN: 978-9752953949 ve 978-9752954748",
-   "Bahtiyar, M. (2010), Ortaklıklar Hukuku, Beta, ISBN: 978-6053773146"
-  ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=533",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=524"
  },
  "ISS 534E": {
   "code": "ISS 534E",
   "name": "Financial Markets&Instutions",
+  "nameEn": "Financial Markets&Instutions",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -319,17 +578,75 @@
    "Hafta 13 · Merkez Bankaları ve Ticari Bankalar",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Finansal Piyasalara Genel Bakış"
+   },
+   {
+    "week": 2,
+    "topic": "Finansal Piyasalar, Kurumlar ve Araçlar"
+   },
+   {
+    "week": 3,
+    "topic": "Risk, Getiri ve Portföy Yönetimi"
+   },
+   {
+    "week": 4,
+    "topic": "Faiz Oranı Belirleyenleri"
+   },
+   {
+    "week": 5,
+    "topic": "Menkul Kıymet Değerleme"
+   },
+   {
+    "week": 6,
+    "topic": "Para Piyasaları"
+   },
+   {
+    "week": 7,
+    "topic": "Tahvil Piyasaları"
+   },
+   {
+    "week": 8,
+    "topic": "Finansal Piyasalar, Kurumlar, Araçlar, Faiz ve Değerleme"
+   },
+   {
+    "week": 9,
+    "topic": "Hisse Senedi Piyasaları"
+   },
+   {
+    "week": 10,
+    "topic": "Döviz Piyasaları"
+   },
+   {
+    "week": 11,
+    "topic": "Türev Ürünler Piyasaları"
+   },
+   {
+    "week": 12,
+    "topic": "Türev Ürünler Piyasaları"
+   },
+   {
+    "week": 13,
+    "topic": "Merkez Bankaları ve Ticari Bankalar"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları"
+   }
+  ],
   "textbooks": [
    "Saunders, A., Cornett, M.M. (2009), Financial Markets and Institutions, 4. Baskı, McGraw Hill. ISBN: 978-007018757",
    "Madura, J. (2009), Financial Markets and Institutions, 9. Baskı, South-Western. ISBN: 978-143903884",
    "Fabozzi, F.J., Modigliani, F.P., Jones, F.J. (2010), Foundations of Financial Markets and Institutions, 4. Baskı, Pearson. ISBN: 978-013135423"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=534",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=534"
  },
  "ISS 537": {
   "code": "ISS 537",
   "name": "Tahmin Teknikleri",
+  "nameEn": "Forecasting Techniques",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -343,12 +660,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=537",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=537"
  },
  "ISS 552": {
   "code": "ISS 552",
   "name": "Fikri-Sanayi Mülkiyet Hukuku",
+  "nameEn": "Intellectuel Property Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -380,16 +697,74 @@
    "Hafta 13 · Lisans sözleşmeleri",
    "Hafta 14 · Fikri mülkiyet hakları, lisans sözleşmeleri ve rekabet hukuku"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fikirlerin korunmasının önemi, Fikri mülkiyet hakkı türleri, Tarihi gelişim, Uluslararası kurallar"
+   },
+   {
+    "week": 2,
+    "topic": "Fikri mülkiyet haklarının korunması yolları, Hukuk ve ceza davaları, Hukuk davalarında talepler, İhtiyati tedbirler"
+   },
+   {
+    "week": 3,
+    "topic": "Telif Hakları, Eser Türleri, Korumanın şartları,"
+   },
+   {
+    "week": 4,
+    "topic": "Telif hakkına tecavüz"
+   },
+   {
+    "week": 5,
+    "topic": "Marka, Marka sistemi, Marka tescil prosedürü, Marka tescil şartları, tescil için mutlak ve nisbi red sebepleri"
+   },
+   {
+    "week": 6,
+    "topic": "Marka hakkına tecavüz"
+   },
+   {
+    "week": 7,
+    "topic": "Buluşların korunması, patentler ve faydalı modeller, patent sistemi, patent dokümanının içeriği"
+   },
+   {
+    "week": 8,
+    "topic": "Patent verilebilirlik şartları: Patentin konusu"
+   },
+   {
+    "week": 9,
+    "topic": "Patent verilebilirlik şartları:Yenilik"
+   },
+   {
+    "week": 10,
+    "topic": "Patent verilebilirlik şartları: Buluş basamağı, Sanayiye uygulanabilirlik, açıklık"
+   },
+   {
+    "week": 11,
+    "topic": "Ticari sırlar, nitelikleri, sorumluluk şartları, Ticari sır – patent koruması tercihi, hak sahibinin talepleri"
+   },
+   {
+    "week": 12,
+    "topic": "Patent ve ticari sırlara ilişkin hakların ihlali"
+   },
+   {
+    "week": 13,
+    "topic": "Lisans sözleşmeleri"
+   },
+   {
+    "week": 14,
+    "topic": "Fikri mülkiyet hakları, lisans sözleşmeleri ve rekabet hukuku"
+   }
+  ],
   "textbooks": [
    "Suluk, Cahit, Karahan, Sami, Saraç, Tahir, Nal, Temel (2011) Fikri Mülkiyet Hukukunun Esasları. Seçkin Yayınevi.",
    "Tekinalp, Ünal (2006) Fikri Mülkiyet Hukuku, 4. Baskı, Arıkan"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=552",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=552"
  },
  "ISS 566E": {
   "code": "ISS 566E",
   "name": "Yönetim için Makroekonomide Seçili Konular",
+  "nameEn": "Selected Topics in Macroeconomics for Management",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -421,6 +796,78 @@
    "Hafta 13 · Dünya Ekonomisine yapısal meydan okumalar: Ekolojik sürdürülebilirlik",
    "Hafta 14 · Dünya Ekonomisine yapısal meydan okumalar: Sosyal sürdürülebilirlik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "GSYH, ekonomik büyüme ve insani kalkınma",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Para, enflasyon, Merkez Bankası ve para politikaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Makroekonomik dalgalanmaların analizi: AS-AD Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Açık makroekonomi: Döviz kuru ve ödemeler dengesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Finansal Krizler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ekonomik Krizler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "İstihdam, işsizlik ve işgücü piyasalarının makroekonomisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Enflasyon, işsizlik ve ücretlerin etkileşimi, Phillips eğrisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Uzun dönemli teknolojik dönüşüm, büyüme ve istihdam",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sanayileşme ve uluslararası ticaret politikaları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Uluslararası yatırımlar ve sermaye akımları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Makroekonomide Devletin ve uluslararası örgütlerin rolü",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dünya Ekonomisine yapısal meydan okumalar: Ekolojik sürdürülebilirlik",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dünya Ekonomisine yapısal meydan okumalar: Sosyal sürdürülebilirlik",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Goodwin, N., S. Dullien, Harris, J., Nelson, J.A., Roach, B., Torras, M. (2022 4rd global edition), Macroeconomics in Context, M.E. Sharpe, NY, USA.",
    "Cypher, J. M. (2021), The Process of Economic Development (5th edition), Routledge, New York and Oxon.",
@@ -428,12 +875,12 @@
    "Krugman, P. (2020) Arguing with the Zombies: Economics, Politics and the Fight for a Better Future. W.W.Norton and Co., New York.",
    "Stiglitz, J.E. (2024) The Road to Freedom: Economics and the Good Society. Norton and Co., London and New York."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=566",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=566"
  },
  "ISS 596": {
   "code": "ISS 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -477,6 +924,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -489,12 +1007,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=596"
  },
  "ISS 598": {
   "code": "ISS 598",
   "name": "Proje",
+  "nameEn": "Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -508,12 +1026,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=598",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=598"
  },
  "ISS 605E": {
   "code": "ISS 605E",
   "name": "Direc.Readin.in Consu.Behavior",
+  "nameEn": "Direc.Readin.in Consu.Behavior",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -551,6 +1069,64 @@
    "Hafta 13 · Tüketici Araştırmalarında Uygulama: Hakem Süreci ve Uygulaması",
    "Hafta 14 · Tüketici Davranışı Alanındaki Konulara İlişkin Öğrenci Makalelerinin Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tüketici Davranışına Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Motivasyon ve Kişilik"
+   },
+   {
+    "week": 3,
+    "topic": "Uygulama: Satınalma Motivasyonu"
+   },
+   {
+    "week": 4,
+    "topic": "Dikkat ve Algı"
+   },
+   {
+    "week": 5,
+    "topic": "Uygulama: Tüketicilerin Bilgi Araması"
+   },
+   {
+    "week": 6,
+    "topic": "Uygulama: Deney Tasarımı-I"
+   },
+   {
+    "week": 7,
+    "topic": "Uygulama: Deney Tasarımı-II"
+   },
+   {
+    "week": 8,
+    "topic": "Hafiza"
+   },
+   {
+    "week": 9,
+    "topic": "Yargılama ve Karar Verme"
+   },
+   {
+    "week": 10,
+    "topic": "Tutum"
+   },
+   {
+    "week": 11,
+    "topic": "İkna"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenme"
+   },
+   {
+    "week": 13,
+    "topic": "Tüketici Araştırmalarında Uygulama: Hakem Süreci ve Uygulaması"
+   },
+   {
+    "week": 14,
+    "topic": "Tüketici Davranışı Alanındaki Konulara İlişkin Öğrenci Makalelerinin Sunumları"
+   }
+  ],
   "textbooks": [
    "-Kardes, F. R. (2001) Consumer Behavior and Managerial Decision Making, 2nd Ed., Prentice Hall, ISBN-10: 0130916021",
    "-Kardes, F. R. (2001) Consumer Behavior and Managerial Decision Making, 2nd Ed., Prentice Hall, ISBN-10: 0130916021",
@@ -565,7 +1141,6 @@
    "Articles from related academic journals (such as Journal of Marketing, Journal of Marketing Research, Journal of Applied Psychology, Journal of the Academy of Marketing Science, Journal of Consumer Research and Strategic Management Journal)",
    "Articles from related academic journals (such as Journal of Marketing, Journal of Marketing Research, Journal of Applied Psychology, Journal of the Academy of Marketing Science, Journal of Consumer Research and Strategic Management Journal)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=605",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISS&dersNo=605"
  }
 }

@@ -1,7 +1,123 @@
 {
+ "KTB 501E": {
+  "code": "KTB 501E",
+  "name": "Polar Meteorology and Climate",
+  "nameEn": "Polar Meteorology and Climate",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kutup bölgelerindeki önemli fiziksel, kimyasal, dinamik meteorolojik ve iklim süreçlerini tanımlamak, bu süreçlerin hava ve iklimi nasıl etkilediğini anlamak, bu süreçleri gözlemleme ve modelleme konusundaki zorlukları tanımlamak, kutupsal meteoroloji ve iklimde kullanılan ana terminoloji, teoriler ve gözlem tekniklerini öğrenmek, kutupsal iklim süreçlerinin küresel iklimi şekillendirmedeki rolünü tanımak. Describe important physical, chemical and dynamical meteorological and climate processes in the polar regions, to understand how these processes influence weather and climate, to describe challenges in observing and modelling these processes,learn master terminology, theories and observational techniques used in polar meteorology and climate and to recognise the role of polar climate processes in shaping the global climate.",
+  "outcomes": [
+   "Kutup bölgeleri meteorolojisi hakkında bilgi sahibi olur,",
+   "Kutup bölgeleri ve diğer enlem kuşakları arasındaki hava olayları hakkında bilgi sahibi olur,",
+   "Küresel iklim değişikliği, iklim değişikliği politikaları, mevcut durum ve gelecekteki durumlar hakkında bilgi sahibi olur,",
+   "Kutup bölgeleri meteorolojisinin küresel hava olaylarına ve iklim değişikliğine etkilerini öğrenir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Yukarı enlemler dinamiği ve termodinamiği",
+   "Hafta 2 · Atmosferik Sınır Tabaka",
+   "Hafta 3 · Arktik okyanus sirkülasyonu",
+   "Hafta 4 · Stratosferik kutup vorteksi",
+   "Hafta 5 · Troposferik kutup vorteksi",
+   "Hafta 6 · Arktik deniz buzları",
+   "Hafta 7 · Kutup bölgesi – orta enlemler ilişkisi",
+   "Hafta 8 · Kutup alçak basınç sistemleri",
+   "Hafta 9 · Antarktik atmosferi",
+   "Hafta 10 · Kutup İklimi",
+   "Hafta 11 · Kutup oşinografisi",
+   "Hafta 12 · İklim Değişimi, Kutup etkisi",
+   "Hafta 13 · Antarktik-Arktik Politikaları",
+   "Hafta 14 · Gelecek projeksiyonları – Vaka uygulamaları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yukarı enlemler dinamiği ve termodinamiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Atmosferik Sınır Tabaka",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Arktik okyanus sirkülasyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Stratosferik kutup vorteksi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Troposferik kutup vorteksi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Arktik deniz buzları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kutup bölgesi – orta enlemler ilişkisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Kutup alçak basınç sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Antarktik atmosferi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kutup İklimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Kutup oşinografisi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "İklim Değişimi, Kutup etkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Antarktik-Arktik Politikaları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Gelecek projeksiyonları – Vaka uygulamaları"
+   }
+  ],
+  "textbooks": [
+   "Lubin, D., Massom, R., (2006). Polar Climate and Meteorology, Polar Remote Sensing, s. 193-307, s. 115, New York: Springer.",
+   "Smith Jr, W. O. (Ed.). (2013). Polar Oceanography: Chemistry, Biology and Geology. California: Academic Press.",
+   "Turner, J. (2007). Polar Meteorology-Understanding Global Impacts. World Meteorological Organization.",
+   "Dijkstra, H. A. (2013). Nonlinear Climate Dynamics. New York: Cambridge University Press.",
+   "Vallis, G. K. (2012). Climate and the Oceans. Princeton University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KTB&dersNo=501"
+ },
  "KTB 506E": {
   "code": "KTB 506E",
   "name": "Late Quaternary Clima.Changes",
+  "nameEn": "Late Quaternary Clima.Changes",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -35,6 +151,77 @@
    "Hafta 13 · Kutuplarda geç Kuvaterner denizel taraçalar",
    "Hafta 14 · Kutuplarda deniz araştırmalarında kullanılan jeolojik ve jeofiziksel yöntemler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Paleo-çevre araştırmasının toplumsal önemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 2,
+    "topic": "Yörüngesel kuvvetler altında kutuplarda iklim değişikliği",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Pleyistosen’de kutuplarda iklim ve iklim değişiklikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Holosen’de kutuplarda iklim ve iklim değişiklikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kutuplarda eski çevresel değişimler üzerinde insan aktivitelerinin rolü",
+    "outcomes": "6"
+   },
+   {
+    "week": 6,
+    "topic": "Kutupların paleoklimatolojisi",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Geç Kuvaterner’deki denizel izotop kayıtları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kutup buzul karotlarında Geç Kuvaterner çevresel ve iklim kayıtları",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Kutuplarda eski iklim değişimleri için denizel olmayan jeolojik ve biyolojik kanıtlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Kutup denizlerinde eski iklim bulguları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kutuplarda gölsel çökellerden sağlanan eski iklim bulguları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Geç Kuvaterner küresel deniz seviyesi değişimleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Kutuplarda geç Kuvaterner denizel taraçalar",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "Kutuplarda deniz araştırmalarında kullanılan jeolojik ve jeofiziksel yöntemler"
+   }
+  ],
   "textbooks": [
    "Luka Copland, Derek Mueller (2017). Artic Ice Shelves and Ice Islands. GKSS-Springer",
    "Fischer, H., Kumke, Th., Lohmann, G., Miller, H., Negendank, J. (2004). The Climate in Historical Times. GKSS-Springer",
@@ -42,12 +229,12 @@
    "Michael Caroll, Rosaly Lopes (2019). Antartica: Earth’s Own Ice World, Springer",
    "Dieter K. Futter & Detlef Damaske (2019). Antartica: Contributions to Global Earth Sciences, Springer"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KTB&dersNo=506",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KTB&dersNo=506"
  },
  "KTB 507E": {
   "code": "KTB 507E",
   "name": "Polar Magmatism",
+  "nameEn": "Polar Magmatism",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -80,6 +267,77 @@
    "Hafta 13 · Örnek ve vaka çalışması-I",
    "Hafta 14 · Örnek ve vaka çalışması-II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel jeolojik kavramlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Magma, magmatizma-tektonizma ilişkileri: magma oluşum ortamları. Magmanın fiziksel ve kimyasal özellikleri. Magmanın kristallenme evreleri, magmanın farklılaşması, karışması ve hibridleşmesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Antarktik-Arktik tektonizma ve magmatizma ilişkisi.",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Magmanın kabukta yerleşme şekilleri; Kutup alanlarında gözlenen magmatik kayaçların sınıflandırılması, modal ve normatif analiz kavramları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Arktik magmatizma: magmatik kayaçların tanıtılması, yaşları ve jeodinamik özellikleri.",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Antarktik magmatizma: magmatik kayaçların tanıtılması, yaşları ve jeodinamik özellikleri.",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Bilimsel bir makalelenin kapsamını, Polar Magmatizma ile alakalı yayınlanmış güncel makaleleri tartışarak ortaya koymak (dönem ödevine hazırlık).",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi konularının tanıtılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Volkanolojiye genel bir giriş, volkan-patlama/püskürme tipleri ve geliştirdiği piroklastik kayaçlar. Volkan-buzul erimeleri arasındaki ilişkiler, küresel iklim değişikliği üzerindeki etkileri.",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Aktik-Antarktik bölgelerde karasal-buzul altı volkanik kayaçların ayırtlanması ve özellikleri.",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kutup alanlarında gözlenen magmatik kayaçların jeokimyasal özellikleri ve jeokimyasal sınıflandırılması.",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgisayar ortamında jeokimyasal sınıflama yapılması.",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Örnek ve vaka çalışması-I",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Örnek ve vaka çalışması-II"
+   }
+  ],
   "textbooks": [
    "White, W.M. (2013) Geochemistry, Wiley-Blackwell",
    "Schmincke H.U. (2005) Volcanism, Springer-Verlag",
@@ -87,12 +345,12 @@
    "Gill, R. (2010), Igneous Rocks and Processes. Wiley-Blackwell",
    "Wilson, M. (1989), Igneous Petrogenesis, Unwin Hyman Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KTB&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KTB&dersNo=507"
  },
  "KTB 596E": {
   "code": "KTB 596E",
   "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -128,6 +386,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
@@ -135,7 +464,6 @@
    "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KTB&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KTB&dersNo=596"
  }
 }

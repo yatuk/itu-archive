@@ -2,6 +2,7 @@
  "CSP 503": {
   "code": "CSP 503",
   "name": "Metot Hazırlama&Gelişt.(Çalgı)",
+  "nameEn": "Method Preparation and Development (Instrument)",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -34,6 +35,64 @@
    "Hafta 13 · Geleneksel Türk çalgılarında metot hazırlama ve geliştirme çalışmaları 2",
    "Hafta 14 · Metot hazırlama ve geliştirme projesinin teslimi ve değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çalgı metodolojisi gelişimine tarihsel bakış"
+   },
+   {
+    "week": 2,
+    "topic": "Türkiye’de çalgı metodolojisi üzerine genel bir bakış"
+   },
+   {
+    "week": 3,
+    "topic": "Dünyada ekol olan çalgı metotları üzerinde kurgusal kritikler 1"
+   },
+   {
+    "week": 4,
+    "topic": "Dünyada ekol olan çalgı metotları üzerinde kurgusal kritikler 2"
+   },
+   {
+    "week": 5,
+    "topic": "Türk makam müziği çalgı metotları üzerinde kurgusal kritikler 1"
+   },
+   {
+    "week": 6,
+    "topic": "Türk makam müziği çalgı metotları üzerinde kurgusal kritikler 2"
+   },
+   {
+    "week": 7,
+    "topic": "Türk halk müziği çalgı metotları üzerinde kurgusal kritikler 1"
+   },
+   {
+    "week": 8,
+    "topic": "Türk halk müziği çalgı metotları üzerinde kurgusal kritikler 2"
+   },
+   {
+    "week": 9,
+    "topic": "Geleneksel Türk çalgılarındanotasyon ve metotlara yansıması"
+   },
+   {
+    "week": 10,
+    "topic": "Çalgıda metot hazırlama ve geliştirme yöntemleri 1"
+   },
+   {
+    "week": 11,
+    "topic": "Çalgıda metot hazırlama ve geliştirme yöntemleri 2"
+   },
+   {
+    "week": 12,
+    "topic": "Geleneksel Türk çalgılarında metot hazırlama ve geliştirme çalışmaları 1"
+   },
+   {
+    "week": 13,
+    "topic": "Geleneksel Türk çalgılarında metot hazırlama ve geliştirme çalışmaları 2"
+   },
+   {
+    "week": 14,
+    "topic": "Metot hazırlama ve geliştirme projesinin teslimi ve değerlendirilmesi"
+   }
+  ],
   "textbooks": [
    "• BeyerFerdinand. Piyano Metodu, Vorschule im Klavierspiel, Op. 101 Germany",
    "• SuzikiShinichi. SuzikiViolin School, Level Level 1-2, Japan",
@@ -41,12 +100,12 @@
    "• Erguner, Süleyman. 2007. Ney Metodu, İstanbul:Mart Matbaacılık",
    "• Parlak, Erol. 2001. El İle Bağlama Çalma (Şelpe) Tekniği Metodu, C. I-II, İstanbul: Ekin Yayınları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=503"
  },
  "CSP 529": {
   "code": "CSP 529",
   "name": "Çalgıda İleri İcra 1",
+  "nameEn": "Advanced Performance in Instrument 1",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -80,17 +139,89 @@
    "Hafta 13 · Öğrencinin final için seçtiği eserin öğrenci tarafından müzikal analizinin yapılması. Belli başlı yorumculardan esere ait görsel ve işitsel kayıtların incelenmesi.",
    "Hafta 14 · Öğrencinin final için seçtiği eserin icrası ile ilgili çalışmalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Virtüoziteye yönelik ilk seviye için ilgili çalgıının dağarcığında yer alan bir eserin seçilmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Seçilen eserin yapısal ve teknik analizinin yapılması. Deşifresi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Seçilen eserin müzikal analizinin yapılması. Belli başlı yorumculardan esere ait görsel ve işitsel kayıtların incelenmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Seçilen esere hazırlayıcı nitelikte egzersiz çalışmaları 1",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Seçilen esere hazırlayıcı nitelikte egzersiz çalışmaları 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Çalışılan eserin ileri düzeyde icrası ve ilgili çalgının dağarcığında yer alan ikinci eserin seçilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Seçilen eserin yapısal ve teknik analizinin yapılması. Deşifresi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Seçilen eserin müzikal analizinin yapılması. Belli başlı yorumculardan esere ait görsel ve işitsel kayıtların incelenmesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Seçilen esere hazırlayıcı nitelikte etüt çalışmaları 1",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Seçilen esere hazırlayıcı nitelikte etüt çalışmaları 2",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Çalışılan eserin ileri düzeyde icrası ve virtüoziteye yönelik ilk seviye repertuardan öğrencinin final sınavında çalacağı eserin belirlenmesi.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrencinin final için seçtiği eserin yapısal ve teknik analizi ile ilgili ödev.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrencinin final için seçtiği eserin öğrenci tarafından müzikal analizinin yapılması. Belli başlı yorumculardan esere ait görsel ve işitsel kayıtların incelenmesi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrencinin final için seçtiği eserin icrası ile ilgili çalışmalar.",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Kutluğ, Fikret. 2001. Türk Musıkisinde Makamlar, İstanbul: Yapı Kredi Yayınları",
    "Tura, Yalçın. 2001. Kantemiroğlu, İstanbul: Yapı Kredi Yayınları",
    "Brahms, Johannes. Exercises for piano, Edition Budapest"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=529",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=529"
  },
  "CSP 531E": {
   "code": "CSP 531E",
   "name": "Psychology of Concert&Stage",
+  "nameEn": "Psychology of Concert&Stage",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -123,6 +254,64 @@
    "Hafta 13 · Son hazırlık (genel prova)",
    "Hafta 14 · Kalabalığa kendini tanıtma (konser sonrası yeniden hazırlık ve kendini eleştirme)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hafıza: çalışma, uygulama ve yorum algısı"
+   },
+   {
+    "week": 2,
+    "topic": "Repertuar seçimini belirleme"
+   },
+   {
+    "week": 3,
+    "topic": "Güç, amaçlar ve bilgi bağlantısını kurabilme"
+   },
+   {
+    "week": 4,
+    "topic": "Konser ve sahne performansı için düşünceyi yönlendirme"
+   },
+   {
+    "week": 5,
+    "topic": "Beden dilini fark etme ve performansın öznel limitlerini genişletme"
+   },
+   {
+    "week": 6,
+    "topic": "Kendi tarafından kontrol edilme"
+   },
+   {
+    "week": 7,
+    "topic": "Bilinçaltında olanı fark etme, fobi, kısa sürede kontrol yöntemleri"
+   },
+   {
+    "week": 8,
+    "topic": "İlham, kendini kurgulama ve kendine sağlama"
+   },
+   {
+    "week": 9,
+    "topic": "Kendini dışa vurarak, dinleyerek ve eleştirerek mükemmeliyete ulaşmak"
+   },
+   {
+    "week": 10,
+    "topic": "Sahne öncesi öğrenci fikirli hareketlerden solist fikirli hareketlere psikolojik dönüşüm"
+   },
+   {
+    "week": 11,
+    "topic": "İcra ve icra edilen ile sağlıklı ilişkiler ve bu ilişkileri hatırlamak"
+   },
+   {
+    "week": 12,
+    "topic": "Bilişsel prova (sahneye yoğunlaşma)"
+   },
+   {
+    "week": 13,
+    "topic": "Son hazırlık (genel prova)"
+   },
+   {
+    "week": 14,
+    "topic": "Kalabalığa kendini tanıtma (konser sonrası yeniden hazırlık ve kendini eleştirme)"
+   }
+  ],
   "textbooks": [
    "- PARNCUT, Richard &GaryMcPherson, The science & psychology of music performance : creative strategies for teaching and learning, 2002",
    "- SLOBODA, John A.,Generative processes in music : thepsychology of performance, improvisation, and composition, 2000.",
@@ -130,12 +319,12 @@
    "- BAYMUR, Feriha, Genel Psikoloji, İnkılap Kitabevi, 1990",
    "- MATRAVERS, Derek, Art and Emotion, Oxford University Press, 2001"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=531",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=531"
  },
  "CSP 537": {
   "code": "CSP 537",
   "name": "Çalgıda İleri İcra 3",
+  "nameEn": "Advanced Performance in Instrument 3",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -170,6 +359,78 @@
    "Hafta 13 · Öğrencinin final için seçtiği eserin öğrenci tarafından müzikal analizinin yapılması. Belli başlı yorumculardan esere ait görsel ve işitsel kayıtların incelenmesi.",
    "Hafta 14 · Öğrencinin final için seçtiği eserin icrası ile ilgili çalışmalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Virtüoziteye yönelik üçüncü seviye için ilgili çalgının dağarcığında yer alan bir eserin seçilmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Seçilen eserin yapısal ve teknik analizinin yapılması. Deşifresi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Seçilen eserin müzikal analizinin yapılması. Belli başlı yorumculardan esere ait görsel ve işitsel kayıtların incelenmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Seçilen esere hazırlayıcı nitelikte egzersiz ve etüt çalışmaları 1",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Seçilen esere hazırlayıcı nitelikte egzersiz ve etüt çalışmaları 2",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Çalışılan eserin ileri düzeyde icrası ve ilgili çalgının dağarcığında yer alan ikinci eserin seçilmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Seçilen eserin yapısal ve teknik analizinin yapılması. Deşifresi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Seçilen eserin müzikal analizinin yapılması. Belli başlı yorumculardan esere ait görsel ve işitsel kayıtların incelenmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Seçilen esere hazırlayıcı nitelikte egzersiz ve etüt çalışmaları 1",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Seçilen esere hazırlayıcı nitelikte egzersiz ve etüt çalışmaları 2",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Çalışılan eserin ileri düzeyde icrası ve virtüoziteye yönelik üçüncü seviye repertuardan öğrencinin final sınavında çalacağı eserin belirlenmesi.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrencinin final için seçtiği eserin yapısal ve teknik analizi ile ilgili ödev.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrencinin final için seçtiği eserin öğrenci tarafından müzikal analizinin yapılması. Belli başlı yorumculardan esere ait görsel ve işitsel kayıtların incelenmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrencinin final için seçtiği eserin icrası ile ilgili çalışmalar.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Kutluğ, Fikret. 2001. Türk Musıkisinde Makamlar, İstanbul: Yapı Kredi Yayınları",
    "Tura, Yalçın. 2001. Kantemiroğlu, İstanbul: Yapı Kredi Yayınları",
@@ -177,12 +438,12 @@
    "Brahms, Johannes. Exercises for piano, Edition Budapest",
    "Klein, Franz . 1977. Staccato-Etuden, Edition Peters, Frankfurt."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=537",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=537"
  },
  "CSP 596": {
   "code": "CSP 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -226,6 +487,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -238,7 +570,6 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CSP&dersNo=596"
  }
 }

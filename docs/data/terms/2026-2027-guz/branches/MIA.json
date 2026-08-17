@@ -1,17 +1,17 @@
 [
  {
-  "crn": "13389",
-  "code": "SYC 503E",
-  "branch": "SYC",
+  "crn": "14993",
+  "code": "MIA 501E",
+  "branch": "MIA",
   "level": "LU",
-  "name": "Formation of the Modern State",
+  "name": "Engineering Mathematics",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Elvan Gülöksüz",
+  "instructor": "Hakan Öksüzoğlu",
   "buildings": [
-   "FEB"
+   "undeclared"
   ],
   "days": [
-   "Pazartesi"
+   "Cuma"
   ],
   "times": [
    "09:30/12:29"
@@ -19,7 +19,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 20,
+  "capacity": 60,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -27,121 +27,13 @@
   "classReq": "-"
  },
  {
-  "crn": "13390",
-  "code": "SYC 502E",
-  "branch": "SYC",
+  "crn": "14994",
+  "code": "MIA 503E",
+  "branch": "MIA",
   "level": "LU",
-  "name": "Globalizat.&Internat.Relations",
+  "name": "Advanced Fluid Dynamics",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Emine Aslı Çalkıvik",
-  "buildings": [
-   "FEB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:30/16:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13391",
-  "code": "SYC 510E",
-  "branch": "SYC",
-  "level": "LU",
-  "name": "Politicial Thought in Modern T",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Umut Uzer",
-  "buildings": [
-   "FEB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "14:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13392",
-  "code": "SYC 596E",
-  "branch": "SYC",
-  "level": "LU",
-  "name": "Scientific Research., Ethics and Seminar",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Görkem Giray",
-  "buildings": [
-   "FEB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "10:30/12:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13393",
-  "code": "SYC 506E",
-  "branch": "SYC",
-  "level": "LU",
-  "name": "Political Geography",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Elvan Gülöksüz",
-  "buildings": [
-   "FEB"
-  ],
-  "days": [
-   "Perşembe"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13394",
-  "code": "SYC 517E",
-  "branch": "SYC",
-  "level": "LU",
-  "name": "Advan.Acad.Writ.in Soc.Sci.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Gürcan Koçan",
+  "instructor": "Hasan Güneş , Sertaç Çadırcı",
   "buildings": [
    "undeclared"
   ],
@@ -154,6 +46,141 @@
   "rooms": [
    "--"
   ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14995",
+  "code": "MIA 505E",
+  "branch": "MIA",
+  "level": "LU",
+  "name": "Design of Thermal Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Turgut Yılmaz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14996",
+  "code": "MIA 509",
+  "branch": "MIA",
+  "level": "LU",
+  "name": "Isı-Akış Olaylarında Den. Yönt",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bayram Şahin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14997",
+  "code": "MIA 515",
+  "branch": "MIA",
+  "level": "LU",
+  "name": "Isı İletimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ersin Sayar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14998",
+  "code": "MIA 517",
+  "branch": "MIA",
+  "level": "LU",
+  "name": "Genel Termodinamik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşegül Abuşoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14999",
+  "code": "MIA 596",
+  "branch": "MIA",
+  "level": "LU",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Abdussamet Subaşı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
@@ -162,20 +189,20 @@
   "classReq": "-"
  },
  {
-  "crn": "13395",
-  "code": "SYC YLT",
-  "branch": "SYC",
+  "crn": "15000",
+  "code": "MIA YLT",
+  "branch": "MIA",
   "level": "LU",
-  "name": "Thesis",
+  "name": "Tez Çalışması",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Umut Uzer",
+  "instructor": "Abdussamet Subaşı",
   "buildings": [],
   "days": [],
   "times": [
    "-/-"
   ],
   "rooms": [],
-  "capacity": 200,
+  "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

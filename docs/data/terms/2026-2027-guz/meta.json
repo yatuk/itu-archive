@@ -1,11 +1,11 @@
 {
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-08-17T03:12:30Z",
+ "scrapedAt": "2026-08-17T09:04:40Z",
  "source": "itu-archive",
  "live": true,
- "sections": 4894,
- "courses": 3402,
+ "sections": 4950,
+ "courses": 3458,
  "branches": [
   {
    "code": "ABM",
@@ -132,7 +132,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 7
+   "sections": 6
   },
   {
    "code": "BUS",
@@ -322,7 +322,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 5
+   "sections": 6
   },
   {
    "code": "EEF",
@@ -773,9 +773,10 @@
   {
    "code": "MAK",
    "levels": [
-    "LS"
+    "LS",
+    "LU"
    ],
-   "sections": 111
+   "sections": 125
   },
   {
    "code": "MAL",
@@ -828,6 +829,13 @@
    "sections": 8
   },
   {
+   "code": "MDK",
+   "levels": [
+    "LU"
+   ],
+   "sections": 4
+  },
+  {
    "code": "MDN",
    "levels": [
     "LS"
@@ -871,6 +879,13 @@
    "sections": 6
   },
   {
+   "code": "MIA",
+   "levels": [
+    "LU"
+   ],
+   "sections": 8
+  },
+  {
    "code": "MIM",
    "levels": [
     "LS"
@@ -892,6 +907,13 @@
    "sections": 13
   },
   {
+   "code": "MKC",
+   "levels": [
+    "LU"
+   ],
+   "sections": 4
+  },
+  {
    "code": "MKM",
    "levels": [
     "LU"
@@ -899,11 +921,32 @@
    "sections": 10
   },
   {
+   "code": "MKS",
+   "levels": [
+    "LU"
+   ],
+   "sections": 8
+  },
+  {
+   "code": "MMI",
+   "levels": [
+    "LU"
+   ],
+   "sections": 7
+  },
+  {
    "code": "MOD",
    "levels": [
     "LS"
    ],
    "sections": 15
+  },
+  {
+   "code": "MOT",
+   "levels": [
+    "LU"
+   ],
+   "sections": 5
   },
   {
    "code": "MRE",
@@ -918,6 +961,13 @@
     "LS"
    ],
    "sections": 10
+  },
+  {
+   "code": "MTA",
+   "levels": [
+    "LU"
+   ],
+   "sections": 5
   },
   {
    "code": "MTH",
@@ -988,7 +1038,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 24
+   "sections": 25
   },
   {
    "code": "MYL",
@@ -1438,11 +1488,11 @@
   }
  ],
  "stats": {
-  "sections": 4894,
-  "courses": 3402,
-  "branches": 201,
-  "instructors": 1689,
-  "capacity": 238659,
+  "sections": 4950,
+  "courses": 3458,
+  "branches": 208,
+  "instructors": 1700,
+  "capacity": 241012,
   "enrolled": 1204
  }
 }

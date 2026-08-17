@@ -1,0 +1,91 @@
+[
+ {
+  "crn": "15052",
+  "code": "CHE 123",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "General Chemistry I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammet Übeydullah Kahveci",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "B34"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "EHN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15054",
+  "code": "CHE 123",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "General Chemistry I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şennur Özçelik",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MBI_LS",
+   "SGI_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15057",
+  "code": "CHE 123EL",
+  "branch": "CHE",
+  "level": "LS",
+  "name": "General Chemistry I Laboratory",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şennur Özçelik",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 70,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MBI_LS",
+   "SGI_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ }
+]

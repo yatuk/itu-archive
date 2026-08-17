@@ -73198,7 +73198,7 @@
   "MTR 317",
   "Müzik Metin Çözümlemeleri I",
   "MTR",
-  "Kemal Hasan Karnal",
+  "Celal Volkan Kaya",
   "Perşembe 13:30/15:29",
   20,
   0,
@@ -73213,7 +73213,7 @@
   "MTR 321",
   "Müzikte Metin Çözümlemeleri I",
   "MTR",
-  "Kemal Hasan Karnal",
+  "Celal Volkan Kaya",
   "Salı 13:30/15:29",
   20,
   0,
@@ -75183,7 +75183,7 @@
   "Bibliyografya Çalışmaları",
   "MUZ",
   "Celal Volkan Kaya",
-  "Perşembe 13:30/16:29",
+  "Çarşamba 09:30/12:29",
   25,
   0,
   "LS",
@@ -77323,7 +77323,7 @@
   "Hareket Anatomisi I",
   "THO",
   "Şener Günay",
-  "Perşembe 14:00/15:59",
+  "Cuma 14:00/15:59",
   20,
   0,
   "LS",
@@ -77518,7 +77518,7 @@
   "Oyun Analizi I",
   "THO",
   "Eyüp Uzunkaya",
-  "Çarşamba 10:30/12:29 | Çarşamba 13:30/14:29",
+  "Çarşamba 09:30/12:29",
   20,
   0,
   "LS",
@@ -98223,7 +98223,7 @@
   "Elektronik Haberleşme Düzen.",
   "BLU",
   "Nisa Özge Önal Tuğrul",
-  "Perşembe 13:00/15:59",
+  "Perşembe 13:30/16:29",
   25,
   0,
   "LU",
@@ -98287,9 +98287,9 @@
   "BLU 539E",
   "Spec.Topics in Applied Infor.",
   "BLU",
-  "Rıza Babaei",
+  "-",
   "",
-  25,
+  0,
   0,
   "LU",
   "Fiziksel (Yüz yüze)",
@@ -99689,19 +99689,6 @@
   "BLU",
   "Rıza Babaei",
   "Cuma 14:00/16:59",
-  25,
-  0,
-  "LU",
-  "Fiziksel (Yüz yüze)",
-  []
- ],
- [
-  "13075",
-  "BLU 510E",
-  "Medical Informatics",
-  "BLU",
-  "Volkan Müjdat Tiryaki",
-  "",
   25,
   0,
   "LU",
@@ -104696,25 +104683,12 @@
   ]
  ],
  [
-  "13447",
-  "BLU 501",
-  "Elektronik Haberleşme Düzen.",
-  "BLU",
-  "Nisa Özge Önal Tuğrul",
-  "Pazartesi 13:00/15:59",
-  10,
-  0,
-  "LU",
-  "Fiziksel (Yüz yüze)",
-  []
- ],
- [
   "13448",
   "BLU 505",
   "İş Süreçleri Yönetimi",
   "BLU",
   "Kevser Şimşek",
-  "Salı 09:00/11:59",
+  "Salı 09:30/12:29",
   10,
   0,
   "LU",
@@ -104738,19 +104712,6 @@
    "HTA_LS",
    "HTAE_LS"
   ]
- ],
- [
-  "13450",
-  "BLU 505",
-  "İş Süreçleri Yönetimi",
-  "BLU",
-  "Kevser Şimşek",
-  "Çarşamba 09:00/11:59",
-  10,
-  0,
-  "LU",
-  "Fiziksel (Yüz yüze)",
-  []
  ],
  [
   "13451",
@@ -130023,19 +129984,6 @@
   []
  ],
  [
-  "15048",
-  "MAK 000",
-  "Tez Çalışması",
-  "MAK",
-  "-",
-  "",
-  0,
-  0,
-  "LU",
-  "Fiziksel (Yüz yüze)",
-  []
- ],
- [
   "15049",
   "MAK DRT",
   "Tez Çalışması",
@@ -130045,6 +129993,351 @@
   100,
   0,
   "LU",
+  "Fiziksel (Yüz yüze)",
+  []
+ ],
+ [
+  "15050",
+  "EEF 281",
+  "Lineer Cebir ve Uygulamaları",
+  "EEF",
+  "Ahmet Hamdi Kayran",
+  "Perşembe 13:30/16:29",
+  80,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "EEE_LS",
+   "EHB_LS",
+   "ELK_LS",
+   "KOM_LS",
+   "ROS_LS"
+  ]
+ ],
+ [
+  "15051",
+  "KON 314E",
+  "Control System Design",
+  "KON",
+  "İlker Üstoğlu",
+  "Pazartesi 11:30/13:29 | Perşembe 15:30/17:29",
+  60,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "EEE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ]
+ ],
+ [
+  "15052",
+  "CHE 123",
+  "General Chemistry I",
+  "CHE",
+  "Muhammet Übeydullah Kahveci",
+  "Perşembe 13:30/16:29",
+  40,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "EHN_LS"
+  ]
+ ],
+ [
+  "15053",
+  "PHY 123",
+  "Physics I",
+  "PHY",
+  "Mehmet Kerim Ramazanoğlu",
+  "Salı 14:30/17:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "EHN_LS"
+  ]
+ ],
+ [
+  "15054",
+  "CHE 123",
+  "General Chemistry I",
+  "CHE",
+  "Şennur Özçelik",
+  "Pazartesi 08:30/11:29",
+  80,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "MBI_LS",
+   "SGI_LS"
+  ]
+ ],
+ [
+  "15055",
+  "PHY 123L",
+  "Physics I Lab",
+  "PHY",
+  "Mehmet Kerim Ramazanoğlu",
+  "Çarşamba 13:30/15:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "EHN_LS"
+  ]
+ ],
+ [
+  "15056",
+  "PHY 125",
+  "Physics I",
+  "PHY",
+  "Mehmet Özkan",
+  "Salı 14:30/17:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "MBI_LS",
+   "SDU_LS",
+   "SED_LS",
+   "SGI_LS",
+   "SGM_LS",
+   "SIN_LS"
+  ]
+ ],
+ [
+  "15057",
+  "CHE 123EL",
+  "General Chemistry I Laboratory",
+  "CHE",
+  "Şennur Özçelik",
+  "Perşembe 08:30/10:29",
+  70,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "MBI_LS",
+   "SGI_LS"
+  ]
+ ],
+ [
+  "15058",
+  "PHY 125L",
+  "Physics I Laboratory",
+  "PHY",
+  "Mehmet Özkan",
+  "Çarşamba 08:30/10:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "MBI_LS",
+   "SDU_LS",
+   "SED_LS",
+   "SGI_LS",
+   "SGM_LS",
+   "SIN_LS"
+  ]
+ ],
+ [
+  "15059",
+  "PHY 125",
+  "Physics I",
+  "PHY",
+  "Sevda Şahinbay",
+  "Salı 14:30/17:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "MBI_LS",
+   "SDU_LS",
+   "SED_LS",
+   "SGI_LS",
+   "SGM_LS",
+   "SIN_LS"
+  ]
+ ],
+ [
+  "15060",
+  "PHY 125L",
+  "Physics I Laboratory",
+  "PHY",
+  "-",
+  "Çarşamba 13:30/15:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "MBI_LS",
+   "SDU_LS",
+   "SED_LS",
+   "SGI_LS",
+   "SGM_LS",
+   "SIN_LS"
+  ]
+ ],
+ [
+  "15061",
+  "PHY 127",
+  "Physics",
+  "PHY",
+  "Berna Morova",
+  "Salı 14:30/17:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "SBL_LS"
+  ]
+ ],
+ [
+  "15062",
+  "PHY 127L",
+  "Physics Lab",
+  "PHY",
+  "Berna Morova",
+  "Çarşamba 08:30/10:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "SBL_LS"
+  ]
+ ],
+ [
+  "15063",
+  "DAN 102",
+  "Girişimcilik & Kariyer Danış.",
+  "DAN",
+  "Kamil Karaçuha",
+  "Çarşamba 15:30/17:29",
+  150,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "EHB_LS",
+   "EHBE_LS"
+  ]
+ ],
+ [
+  "15064",
+  "DAN 102",
+  "Girişimcilik & Kariyer Danış.",
+  "DAN",
+  "Suat İlhan",
+  "Çarşamba 15:30/17:29",
+  150,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "ELK_LS",
+   "ELKE_LS"
+  ]
+ ],
+ [
+  "15065",
+  "DUM 533E",
+  "Maritime Similator Studies",
+  "DUM",
+  "Ahmet Lutfi Tunçel",
+  "Çarşamba 12:30/15:29",
+  10,
+  0,
+  "LU",
+  "Fiziksel (Yüz yüze)",
+  []
+ ],
+ [
+  "15066",
+  "DAN 102",
+  "Girişimcilik & Kariyer Danış.",
+  "DAN",
+  "Müjde Güzelkaya",
+  "Çarşamba 15:30/17:29",
+  150,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ]
+ ],
+ [
+  "15067",
+  "DUM 613E",
+  "Troublesho.Model.in Mar.Sy.",
+  "DUM",
+  "Ahmet Lutfi Tunçel",
+  "Perşembe 09:30/12:29",
+  10,
+  0,
+  "LU",
+  "Fiziksel (Yüz yüze)",
+  []
+ ],
+ [
+  "15068",
+  "MAT 202",
+  "Sayısal Yöntemler",
+  "MAT",
+  "Özcan Kalenderli",
+  "Salı 12:30/15:29",
+  50,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "ELK_LS"
+  ]
+ ],
+ [
+  "15069",
+  "MYZ 306E",
+  "Artificial Intelligence in Architecture, Planning and Design",
+  "MYZ",
+  "İmdat As",
+  "Çarşamba 13:30/15:29",
+  20,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "MIM_LS",
+   "MIME_LS"
+  ]
+ ],
+ [
+  "15070",
+  "MYZ 306E",
+  "Artificial Intelligence in Architecture, Planning and Design",
+  "MYZ",
+  "-",
+  "Çarşamba 13:30/15:29",
+  0,
+  0,
+  "LS",
   "Fiziksel (Yüz yüze)",
   []
  ],

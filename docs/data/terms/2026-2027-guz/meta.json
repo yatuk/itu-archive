@@ -1,11 +1,11 @@
 {
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-08-17T09:04:40Z",
+ "scrapedAt": "2026-08-17T20:48:35Z",
  "source": "itu-archive",
  "live": true,
- "sections": 4950,
- "courses": 3458,
+ "sections": 4967,
+ "courses": 3467,
  "branches": [
   {
    "code": "ABM",
@@ -118,7 +118,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 22
+   "sections": 19
   },
   {
    "code": "BPL",
@@ -177,6 +177,13 @@
    "sections": 50
   },
   {
+   "code": "CHE",
+   "levels": [
+    "LS"
+   ],
+   "sections": 3
+  },
+  {
    "code": "CHZ",
    "levels": [
     "LS",
@@ -224,7 +231,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 2
+   "sections": 5
   },
   {
    "code": "DCZ",
@@ -280,7 +287,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 21
+   "sections": 23
   },
   {
    "code": "DUY",
@@ -329,7 +336,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 38
+   "sections": 39
   },
   {
    "code": "EHB",
@@ -739,7 +746,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 46
+   "sections": 47
   },
   {
    "code": "KTB",
@@ -776,7 +783,7 @@
     "LS",
     "LU"
    ],
-   "sections": 125
+   "sections": 124
   },
   {
    "code": "MAL",
@@ -798,7 +805,7 @@
     "LS",
     "LU"
    ],
-   "sections": 117
+   "sections": 118
   },
   {
    "code": "MBA",
@@ -1052,7 +1059,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 16
+   "sections": 18
   },
   {
    "code": "MZJ",
@@ -1103,7 +1110,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 2
+   "sections": 10
   },
   {
    "code": "PST",
@@ -1488,11 +1495,11 @@
   }
  ],
  "stats": {
-  "sections": 4950,
-  "courses": 3458,
-  "branches": 208,
-  "instructors": 1700,
-  "capacity": 241012,
+  "sections": 4967,
+  "courses": 3467,
+  "branches": 209,
+  "instructors": 1701,
+  "capacity": 242052,
   "enrolled": 1204
  }
 }

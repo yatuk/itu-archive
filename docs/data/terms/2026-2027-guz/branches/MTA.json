@@ -1,79 +1,25 @@
 [
  {
-  "crn": "13849",
-  "code": "UZM 508E",
-  "branch": "UZM",
+  "crn": "15001",
+  "code": "MTA 554",
+  "branch": "MTA",
   "level": "LU",
-  "name": "Spacecraft Architecture and Subsystems Design",
+  "name": "Mekanik Sistemler Dinamiği",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Alim Rüstem Aslan",
+  "instructor": "Vahit Mermertaş",
   "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "08:30/11:29"
-  ],
-  "rooms": [
-   "ZA1"
-  ],
-  "capacity": 80,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13854",
-  "code": "UZM 507E",
-  "branch": "UZM",
-  "level": "LU",
-  "name": "Spacecraft Dynamics",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cuma Yarım",
-  "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "11:30/14:29"
-  ],
-  "rooms": [
-   "2D16"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13855",
-  "code": "UZM 509E",
-  "branch": "UZM",
-  "level": "LU",
-  "name": "Space Physics I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Zerefşan Kaymaz",
-  "buildings": [
-   "MEDC"
+   "undeclared"
   ],
   "days": [
    "Salı"
   ],
   "times": [
-   "14:30/17:29"
+   "13:30/16:29"
   ],
   "rooms": [
-   "1D6"
+   "--"
   ],
-  "capacity": 40,
+  "capacity": 30,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -81,26 +27,80 @@
   "classReq": "-"
  },
  {
-  "crn": "13857",
-  "code": "UZM 504E",
-  "branch": "UZM",
+  "crn": "15002",
+  "code": "MTA 551E",
+  "branch": "MTA",
   "level": "LU",
-  "name": "High Speed Flows",
+  "name": "Data Acquis.&Signal Processing",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Bayram Çelik",
+  "instructor": "Erdinç Altuğ",
   "buildings": [
-   "MEDC"
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15003",
+  "code": "MTA 558",
+  "branch": "MTA",
+  "level": "LU",
+  "name": "Optimizasyon Yöntemleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Akif Yavuz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15004",
+  "code": "MTA 555",
+  "branch": "MTA",
+  "level": "LU",
+  "name": "Gürültü Ve Titreşim Kontrolü",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Haluk Erol",
+  "buildings": [
+   "undeclared"
   ],
   "days": [
    "Çarşamba"
   ],
   "times": [
-   "12:30/15:29"
+   "09:30/12:29"
   ],
   "rooms": [
-   "1D7"
+   "--"
   ],
-  "capacity": 40,
+  "capacity": 30,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -108,26 +108,20 @@
   "classReq": "-"
  },
  {
-  "crn": "13858",
-  "code": "UZM 501E",
-  "branch": "UZM",
+  "crn": "15005",
+  "code": "MTA YLT",
+  "branch": "MTA",
   "level": "LU",
-  "name": "Enginering Mathematics",
+  "name": "Tez Çalışması",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mehmet Şahin",
-  "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Perşembe"
-  ],
+  "instructor": "Vahit Mermertaş",
+  "buildings": [],
+  "days": [],
   "times": [
-   "14:30/17:29"
+   "-/-"
   ],
-  "rooms": [
-   "ZA1"
-  ],
-  "capacity": 80,
+  "rooms": [],
+  "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

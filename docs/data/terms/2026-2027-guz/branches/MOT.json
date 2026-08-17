@@ -1,133 +1,127 @@
 [
  {
-  "crn": "13849",
-  "code": "UZM 508E",
-  "branch": "UZM",
+  "crn": "15014",
+  "code": "MOT 575E",
+  "branch": "MOT",
   "level": "LU",
-  "name": "Spacecraft Architecture and Subsystems Design",
+  "name": "Vehicle Dynamics",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Alim Rüstem Aslan",
+  "instructor": "Özgen Akalın",
   "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "08:30/11:29"
-  ],
-  "rooms": [
-   "ZA1"
-  ],
-  "capacity": 80,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13854",
-  "code": "UZM 507E",
-  "branch": "UZM",
-  "level": "LU",
-  "name": "Spacecraft Dynamics",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cuma Yarım",
-  "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "11:30/14:29"
-  ],
-  "rooms": [
-   "2D16"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13855",
-  "code": "UZM 509E",
-  "branch": "UZM",
-  "level": "LU",
-  "name": "Space Physics I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Zerefşan Kaymaz",
-  "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "14:30/17:29"
-  ],
-  "rooms": [
-   "1D6"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13857",
-  "code": "UZM 504E",
-  "branch": "UZM",
-  "level": "LU",
-  "name": "High Speed Flows",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Bayram Çelik",
-  "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "1D7"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13858",
-  "code": "UZM 501E",
-  "branch": "UZM",
-  "level": "LU",
-  "name": "Enginering Mathematics",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mehmet Şahin",
-  "buildings": [
-   "MEDC"
+   "undeclared"
   ],
   "days": [
    "Perşembe"
   ],
   "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15015",
+  "code": "MOT 579",
+  "branch": "MOT",
+  "level": "LU",
+  "name": "Içten Yanmalı Mot.Hes.&Geliş.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hikmet Arslan , Barış Doğru",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15017",
+  "code": "MOT 581",
+  "branch": "MOT",
+  "level": "LU",
+  "name": "Taşıt Mot.Araş.&denay Teknikl.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hikmet Arslan , Osman Akın Kutlar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15018",
+  "code": "MOT 582",
+  "branch": "MOT",
+  "level": "LU",
+  "name": "Taşıtlarda Ömür Testleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kubilay Yay",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
    "14:30/17:29"
   ],
   "rooms": [
-   "ZA1"
+   "--"
   ],
-  "capacity": 80,
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15019",
+  "code": "MOT YLT",
+  "branch": "MOT",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Osman Taha Şen",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

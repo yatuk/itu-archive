@@ -2,6 +2,7 @@
  "BEN 102": {
   "code": "BEN 102",
   "name": "Mikrobiyoloji",
+  "nameEn": "Microbiology",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -35,15 +36,87 @@
    "Hafta 13 · Mikrobiyal çeşitlilik- virüsler Lab: Biyokimyasal testler (Indol, Methyl red, Voges-proskauer, Sitrat, şeker fermantasyon testleri)",
    "Hafta 14 · İnsan sağlığı ve endüstriyel açıdan önemli mikroorganizmalar; 2. Arasınav"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikrobiyolojiye giriş, Mikroorganizmaların isimlendirilmesi ve tanımlanması; mikrobiyolojinin tarihi Lab: Laboratuvara giriş, güvenlik kuralları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Mikroorganizmaların sınıflandırılması; Organizmaların sınıflandırılması, Mikroorganizmaların sınıflandırma ve tanımlama metotları Lab: mikroskop kullanımı, preparat hazırlama ve basit boyama",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Kimyasal prensipler: Önemli biyolojik moleküller Prokaryotik ve ökaryotik hücrelerin karşılaştırılması: Prokaryotik hücreler ve yapıları Lab: Diferansiyel boyama yöntemleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Prokaryotik ve ökaryotik hücrelerin karşılaştırılması: ökaryotik hücreler ve yapıları Lab: Besiyeri hazırlama",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Mikrobiyal Metabolizma: Katabolik ve anabolik reaksiyonlar Lab: Mikroorganizma sayım yöntemleri: Dilüsyonla sayım (Yayma plak)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Mikrobiyal Metabolizma: Katabolik ve anabolik reaksiyonlar Lab: Mikroorganizma sayım yöntemleri: Dilüsyonla sayım (Dökme plak)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Mikrobiyal gelişme; 1. Arasınav Lab: Mikroorganizma sayım yöntemleri: En Muhtemel Sayı Yöntemi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Mikrobiyal gelişme; mikroorganizma gelişmesinin kontrolü Lab: Mikroorganizma sayım yöntemleri: En Muhtemel Sayı Yöntemi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Mikrobiyal genetik ve uygulamaları Lab: Mikroorganizma sayım yöntemleri. Mikroskobik sayım",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrobiyal çeşitlilik – Prokaryotlar- Bakteri ve arke Lab: Dezenfektan ve antimikrobiyallerin değerlendirilmesi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Mikrobiyal çeşitlilik – Ökaryotlar- Fungi Lab: Bakterilerin izolasyonu (sürme ekim): Selektif ve diferansiyel besiyeri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Mikrobiyal çeşitlilik – Ökaryotlar- Alg ve protozoa Lab: Bakterilerin izolasyonu (sürme ekim): Selektif ve diferansiyel besiyeri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Mikrobiyal çeşitlilik- virüsler Lab: Biyokimyasal testler (Indol, Methyl red, Voges-proskauer, Sitrat, şeker fermantasyon testleri)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "İnsan sağlığı ve endüstriyel açıdan önemli mikroorganizmalar; 2. Arasınav",
+    "outcomes": "1-3-6"
+   }
+  ],
   "textbooks": [
    "Tortora, G.J.; Funke, B.R.; Case, C.L. 2012.Microbiology: An Introduction, Books a la Carte Edition, Benjamin-Cummings Publishing Company/ Pearson"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=102"
  },
  "BEN 107": {
   "code": "BEN 107",
   "name": "Art of Engineering",
+  "nameEn": "Art of Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -75,15 +148,73 @@
    "Hafta 13 · Dönem araştırma projesi",
    "Hafta 14 · Dönem araştırma projesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı ve söyleşi"
+   },
+   {
+    "week": 2,
+    "topic": "Sanat, bilim ve felsefe arakesitinden kısa tarihsel perspektif"
+   },
+   {
+    "week": 3,
+    "topic": "Görsel not alma ve analiz"
+   },
+   {
+    "week": 4,
+    "topic": "Görsel ifade yöntem ve teknikleri"
+   },
+   {
+    "week": 5,
+    "topic": "Doğadaki bir nesnenin yapısal analizi üzerinden bağımsız bir tasarım geliştirme I"
+   },
+   {
+    "week": 6,
+    "topic": "Doğadaki bir nesnenin yapısal analizi üzerinden bağımsız bir tasarım geliştirme II"
+   },
+   {
+    "week": 7,
+    "topic": "Mesleki vizyon atölyesi"
+   },
+   {
+    "week": 8,
+    "topic": "Konferans (Bilim Sanat İlişkisi I)"
+   },
+   {
+    "week": 9,
+    "topic": "Konferans (Bilim Sanat İlişkisi II)"
+   },
+   {
+    "week": 10,
+    "topic": "Görsel/İşitsel Kayıt Atölye Çalışması (Fotoğraf, video, eskiz ve yazılı sesli notlar)"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem araştırma projesi"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem araştırma projesi"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem araştırma projesi"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem araştırma projesi"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=107",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=107"
  },
  "BEN 111": {
   "code": "BEN 111",
   "name": "Intr. to Bioengineering",
+  "nameEn": "Intr. to Bioengineering",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -116,15 +247,87 @@
    "Hafta 13 · Projelerin sunumu ve tartışmaları",
    "Hafta 14 · Biyomühendislik alanlarına genel bir bakış"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyomühendisliğin Tanımı ve Tarihsel Gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hücresel ilkelere genel bir bakış(Biyomoleküller, nükleik asitler, proteinler, hücre fizyolojisi, vs.)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Hücresel ilkelere genel bir bakış(Biyomoleküller, nükleik asitler, proteinler, hücre fizyolojisi, vs.)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Fizyolojik sistemlere genel bir bakış",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Fizyolojik sistemlere genel bir bakış",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hücresel ve moleküler biyoteknoloji",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Genetik mühendisliği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Biyomekanik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Biyotıbbi görüntüleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Biyomalzemeler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Doku mühendisliği ve yapay organlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Etik kavramlar, hükümet ve üniversite düzenlemeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Projelerin sunumu ve tartışmaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Biyomühendislik alanlarına genel bir bakış",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Introduction to Biomedical Engineering, Enderle, John D., Susan M. Blanchard, and Joseph D. Bronzino, Elsevier Academic Press, 2005,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=111"
  },
  "BEN 312": {
   "code": "BEN 312",
   "name": "Enzymology",
+  "nameEn": "Enzymology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -160,15 +363,87 @@
    "Hafta 13 · Ödev sunumları ve tartışmalar",
    "Hafta 14 · Ödev sunumları ve tartışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enzimlerin yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enzimlerin sentezi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Enzimlerin özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Enzim saflaştırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Enzim aktivitesinin özgüllüğü",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Enzimolojinin klinik önemi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Enzim kinetiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Enzim inhibasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Allosterik enzimler",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Enzim kataliz mekanizmaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Enzim tutuklanması",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Enzim tutuklanmasının endüstriyel uygulamaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev sunumları ve tartışmalar",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Ödev sunumları ve tartışmalar",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "- P L Bonner, T Palmer “Enzymes: Biochemistry, Biotechnology, Clinical Chemistry” (2nd Ed) 2007, ISBN-978-1-904275-27-5."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=312"
  },
  "BEN 321": {
   "code": "BEN 321",
   "name": "Reac. Kin&Reac. Design in Bio.",
+  "nameEn": "Reac. Kin&Reac. Design in Bio.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -205,15 +480,87 @@
    "Hafta 13 · Biyoreaktör konfigürasyonları",
    "Hafta 14 · Reaktör tasarımında ölçek büyütme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel ders tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Reaktör kinetiği prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Reaksiyon kinetik verilerinin analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Reaktör kavramı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İdeal reaktörlerin tasarım temelleri ve kütle korunumu denklemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Mikrobiyal proseslerin stokiyometrisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Mikrobiyal proseslerin kinetiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Homojen reaksiyonlar için izotermal reaktör tarasımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Non-izotermal reaktör tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İdeal olmayan reaktörlerin tasarımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Heterojen prosesler, katalizörler ve adsorpsiyon",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Biyoreaktör konfigürasyonları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Reaktör tasarımında ölçek büyütme",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Elements of chemical reaction engineering, H. Scott Fogler, Prentice-Hall, 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=321"
  },
  "BEN 322": {
   "code": "BEN 322",
   "name": "Biyomühendislikte Deneysel Tasarım ve Modelleme",
+  "nameEn": "Exper.Desg.&Modell.in Bioeng.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -245,17 +592,89 @@
    "Hafta 13 · Model uygulamaları: Tam ölçek ve lab-ölçekli model uygulamaları",
    "Hafta 14 · Model uygulamaları: Tam ölçek ve lab-ölçekli model uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Model tipleri ve terminolojisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Veri toplama ve istatiksel analiz",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Model oluşturma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Denge durumu ve dinamik simülasyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Model kalibrasyonu, parametre tahmini, modelin tutarlılığı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Duyarlılık analizi, model verifikasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi Sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Model destekli tasarım ve proses kontrolü",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Optimum deney tasarımı, Sistem tanımlama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Model uygulamaları: Tam ölçek ve lab-ölçekli model uygulamaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Model uygulamaları: Tam ölçek ve lab-ölçekli model uygulamaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Model uygulamaları: Tam ölçek ve lab-ölçekli model uygulamaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Model uygulamaları: Tam ölçek ve lab-ölçekli model uygulamaları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Dynamical modelling and estimation in ww. treatment process, Dochain D., Vanrolleghem P. , IWA publishing, London, 2001, 1-900222-50-7",
    "Biyoreaks. Müh.: Biyol. Proseslerin Kinetiği ve Modellenmesi, Türker M. , Su Vakfı Yayınları, Kocaeli, Istanbul., 2005,",
    "AQUASIM 2.0, Swiss Federal Institute for Environ. Scien.Tech, Reichert P., Ruchti J. Simon, W. , CH-8600 Duebendorf, Switzerland, 1998,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=322",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=322"
  },
  "BEN 323": {
   "code": "BEN 323",
   "name": "Malzeme Bilgisi",
+  "nameEn": "Material Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -290,15 +709,73 @@
    "Hafta 13 · Korozyon",
    "Hafta 14 · Malzemelerin Sürdürelebilirliği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Malzeme Bilimine Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Malzeme Yapıları"
+   },
+   {
+    "week": 3,
+    "topic": "Malzeme hataları"
+   },
+   {
+    "week": 4,
+    "topic": "Yayınım"
+   },
+   {
+    "week": 5,
+    "topic": "Faz Diyagramları-Part1"
+   },
+   {
+    "week": 6,
+    "topic": "Faz Diyagramları-Part2"
+   },
+   {
+    "week": 7,
+    "topic": "Faz Transformasyonları"
+   },
+   {
+    "week": 8,
+    "topic": "Malzeme Üretim Metodları"
+   },
+   {
+    "week": 9,
+    "topic": "Mekanik Özellikler-I"
+   },
+   {
+    "week": 10,
+    "topic": "Mekanik Özellikler-II"
+   },
+   {
+    "week": 11,
+    "topic": "Termal Özellikler"
+   },
+   {
+    "week": 12,
+    "topic": "Elektrik, Manyetik ve Optik Özellikler"
+   },
+   {
+    "week": 13,
+    "topic": "Korozyon"
+   },
+   {
+    "week": 14,
+    "topic": "Malzemelerin Sürdürelebilirliği"
+   }
+  ],
   "textbooks": [
    "Callister, W. D., and Rethwisch, D. G. (2010) Materials Science and Engineering: An Introduction. 7th or 8th ed. John Wiley and Sons."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=323"
  },
  "BEN 324": {
   "code": "BEN 324",
   "name": "Bioengineering Lab. I",
+  "nameEn": "Bioengineering Lab. I",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -331,15 +808,73 @@
    "Hafta 13 · Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri",
    "Hafta 14 · Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Öğrenci gruplarının ve deney programının açıklanması"
+   },
+   {
+    "week": 2,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 3,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 5,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 6,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 7,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 8,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 9,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 10,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 11,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 12,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 13,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   },
+   {
+    "week": 14,
+    "topic": "Akışkanlar mekaniği, ısı iletimi, kütle iletimi ve biyolojik tepkime deneyleri"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=324",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=324"
  },
  "BEN 326": {
   "code": "BEN 326",
   "name": "Genetics",
+  "nameEn": "Genetics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -374,16 +909,74 @@
    "Hafta 13 · Genetik Problemleri Çözme Çalışmaları",
    "Hafta 14 · Genetik Problemleri Çözme Çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genetiğe Giriş- Genetik Biliminin Kilometre Taşları ve Genetikte Temel Kavramlar"
+   },
+   {
+    "week": 2,
+    "topic": "Genomlar, Transkriptomlar ve Proteomlar Yapı ve İşlevleri"
+   },
+   {
+    "week": 3,
+    "topic": "Mendel KalıtımYasaları ve Test Çaprazlamalar"
+   },
+   {
+    "week": 4,
+    "topic": "Kalıtım Modelleri I"
+   },
+   {
+    "week": 5,
+    "topic": "Kalıtım Modelleri II- Kompleks kalıtım"
+   },
+   {
+    "week": 6,
+    "topic": "Kromozomlar- Yapı, İşlev ve Kromozom Anomalileri I"
+   },
+   {
+    "week": 7,
+    "topic": "Kromozomlar- Yapı, İşlev ve Kromozom Anomalileri II"
+   },
+   {
+    "week": 8,
+    "topic": "Genetik Çeşitlilik ve Mutasyon I"
+   },
+   {
+    "week": 9,
+    "topic": "Genetik Çeşitlilik ve Mutasyon II"
+   },
+   {
+    "week": 10,
+    "topic": "Genetik Tanı ve Genetik Danışmanlık"
+   },
+   {
+    "week": 11,
+    "topic": "Hastalıkların Genetik Temelleri"
+   },
+   {
+    "week": 12,
+    "topic": "Genetik Bağlantı ve Analizleri"
+   },
+   {
+    "week": 13,
+    "topic": "Genetik Problemleri Çözme Çalışmaları"
+   },
+   {
+    "week": 14,
+    "topic": "Genetik Problemleri Çözme Çalışmaları"
+   }
+  ],
   "textbooks": [
    "Klug, Cummings, Spencer and Palladino, Concepts of Genetics, 10th edition, 2012, Pearson",
    "Snustad DP and Simmons MJ. Principles of Genetics, 5th edition, 2010 John Wiley and Sons. ISBN :978-0-470-39842-5."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=326",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=326"
  },
  "BEN 332": {
   "code": "BEN 332",
   "name": "Environmental Biotechnology",
+  "nameEn": "Environmental Biotechnology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -416,16 +1009,88 @@
    "Hafta 13 · Sunuş I",
    "Hafta 14 · Sunuş II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çevre Biyoteknolojisine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikrobiyal Prosesler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Atıksu Karakterizasyonu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Çevre Mikrobiyolojisi Uygulamaları (Laboratuvar)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Stokiyometri_I",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Stokiyometri_II",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Mikrobiyal Kinetik, Geri Devirli Aktif Çamur Tesisleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Model Uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "AQUASIM’e Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrobiyal Çoğalma Deneyi (Respirometrik Metod)",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Havasız Atıksu Arıtma",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Zaralı Kimyasalların Detoksifikasyonu, Biyoremediasyon",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sunuş I",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Sunuş II",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Environmental Biotechnology: Principles and Applications (2001). B.E. Rittmann, P.L. McCarthy, McGrow-Hill, NY",
    "Modelling of Activated Sludge Systems (1994). D. Orhon and N. Artan, Technomic Publishing Co. Inc., Lancester, Pennsylvania."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=332",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=332"
  },
  "BEN 335": {
   "code": "BEN 335",
   "name": "Biosensors",
+  "nameEn": "Biosensors",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -460,15 +1125,87 @@
    "Hafta 13 · BioMEMS Teknolojisinde Yeni Konular",
    "Hafta 14 · Dönem Projesi Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "BioMEMS genel bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Silisyum MikroÜretim Metodları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Soft Üretim metodları & Polimerler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mikroakışkan Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sensör Çalışma Prensipleri ve Mikrosensörler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Mikro-tetikleyiciler ve İlaç salınımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Algılama ve Ölçüm Sistemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Vize sınavı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Genomics ve DNA Mikro-diziler",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Proteomics ve Protein Mikroarrayler",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Paketleme, Güç, Data ve RF Güvenliği",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Sentetik Organlar için BioMEMS Uygulamaları",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 13,
+    "topic": "BioMEMS Teknolojisinde Yeni Konular",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Projesi Sunumları",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Fundamentals of BioMEMS and Medical Microdevices, Steven S. Saliterman ISBN: 0-8194-5977-1, (Wiley, 2006)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=335",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=335"
  },
  "BEN 337": {
   "code": "BEN 337",
   "name": "Biofuels and Bioenergy",
+  "nameEn": "Biofuels and Bioenergy",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -500,15 +1237,87 @@
    "Hafta 13 · Biyolojik yolla hidrojen üretimi",
    "Hafta 14 · Mikrobiyal yakıt hücrelerinin dizaynı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyolojik esaslı enerji kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyoyakıt, Biyokütle, Biyogaz Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Biyokimyasal reaksiyonlar yoluyla enerji üretimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Fotosentez yoluyla oluşan yenilenebilir enerji kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Lignoselülozik maddelerin temel bileşenleri ve bu bileşenlerin dönüşüm süreçlerindeki etkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Enzimler yardımıyla biyoetanol üretilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Düşük maliyetli biyodizel üretmek için kullanılabilecek hammaddeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Biyodizel bileşenlerinin yakıt ve fiziksel özellikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bitkisel yağlardan biyodizel üretimi ve motor performansı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Biyoetanol : Pazarı ve Üretim Prosesleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "İçten yanmalı motorlarda etanol ve metanolün yakıt olarak kullanılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Lipidlerin parçalanmasıyla biyoyakıtların ve kimyasalların üretimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Biyolojik yolla hidrojen üretimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Mikrobiyal yakıt hücrelerinin dizaynı",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "C.M. Drapcho, N.P.Nhuan, T.H. Walker, “Biofuels Engineering Process Technology”, McGraw-Hill Company, 2008, ISBN: 978-0-07-148749-8."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=337",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=337"
  },
  "BEN 341": {
   "code": "BEN 341",
   "name": "Biomaterials",
+  "nameEn": "Biomaterials",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -543,15 +1352,87 @@
    "Hafta 13 · Biyomalzemelerin Karakterizasyonu-1",
    "Hafta 14 · Biyomalzemelerin Karakterizasyonu-2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Malzeme Bilimi ve Biyomalzeme Bilimine Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Metalik Esaslı Biyomalzemeler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Seramik Esaslı Biyomalzemeler-1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Seramik Esaslı Biyomalzemeler-2",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yoğun ve Poroz Hidroksiapatit",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Polimer Esaslı Biyomalzemeler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kompozit Biyomalzemeler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Biyolojik Biyomalzemeler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sert ve Yumuşak Doku Uygulamalarında Kullanılan Malzemeler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Biyomalzemelerin Saklanma Koşulları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kalça İmplantı Malzemeleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Biyomalzemelerin Üretim Yöntemleri",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 13,
+    "topic": "Biyomalzemelerin Karakterizasyonu-1",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 14,
+    "topic": "Biyomalzemelerin Karakterizasyonu-2",
+    "outcomes": "1-7"
+   }
+  ],
   "textbooks": [
    "JOON B. PARK, JOSEPH D. BRONZINO, BIOMATERIALS-PRINCIPLES AND APPLICATIONS, CRC PRESS, 2003, ISBN 0-8493-1491-7"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=341",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=341"
  },
  "BEN 351": {
   "code": "BEN 351",
   "name": "Bioengineering Thermodynamics",
+  "nameEn": "Bioengineering Thermodynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -587,15 +1468,87 @@
    "Hafta 13 · Termodinamiğin biyolojik proseslere uygulanması: Biyoayırma proseslerinin termodinamiği, ATP-ADP enerji depolama ve dağıtma mekanizması",
    "Hafta 14 · Termodinamiğin biyolojik proseslere uygulanması: Fermantörler ve biyoreaktörlerin termodinamik analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Termodinamiğin kapsamı, Boyutlar ve birimler, Temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Termodinamiğin sıfırıncı kanunu, İç enerji, Termodinamiğin birinci kanunu, Kapalı sistemler için enerji dengesi, Termodinamik özellik ve hal fonksiyonları, Entalpi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Açık sistemler için kütle ve enerji dengeleri, Denge, Faz kuralı, Tersinir proses, Isı kapasitesi ve özgül ısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "İdeal gaza uygulanan prosesler(sabit hacim, sabit basınç, izotermal, adyabatik, politropik)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Saf maddelerin özellikleri, Saf maddelerin PVT davranışları, Tek faz bölgesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kübik hal denklemleri(van der Walls ve Redlich-Kwong)",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Gazlar için genelleştirilmiş bağıntılar, Sıkıştırılabilme faktörü, İdeal gaz karışımları için PVT davranışları, Gerçek gaz karış",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Isı etkileri: Duyulur ısı, gizli ısı ve tepkime ısısı",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sıcaklığın tepkime ısısına etkisi, Biyokimyasal tepkimelerin ısı etkileri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Termodinamiğin ikinci kanununun tanımı, Entropi, Katı ve sıvıların entropi değişimi, İdeal bir gazın entropi değişimi",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 11,
+    "topic": "İkinci kanunun matematiksel ifadesi, Açık sistemler için entropi dengesi, İdeal işin hesaplanması, Kayıp iş, Termodinamiğin üçüncü kanunu",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Denge kriteri, Termodinamik sistemin stabilitesi, Faz dengesi, Saf bir bileşenin molar Gibbs enerjisi ve fugasitesi",
+    "outcomes": "1-2-4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Termodinamiğin biyolojik proseslere uygulanması: Biyoayırma proseslerinin termodinamiği, ATP-ADP enerji depolama ve dağıtma mekanizması",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Termodinamiğin biyolojik proseslere uygulanması: Fermantörler ve biyoreaktörlerin termodinamik analizi",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   }
+  ],
   "textbooks": [
    "Chemical, biochemical and engineering thermodyanamics, Stanley, I. Sandler, John Wiley and Sons Inc., 2006, 9780471661740"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=351"
  },
  "BEN 352": {
   "code": "BEN 352",
   "name": "Transp. Process in Bioengin.",
+  "nameEn": "Transp. Process in Bioengin.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -627,10 +1580,81 @@
    "Hafta 13 · Difüzyon ile kütle transferi: kararlı durum",
    "Hafta 14 · Konveksiyon ile kütle transferi, organ ve organizmalarda taşınma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyolojik sistemlerde taşınım olaylarının rolü, Korunum ilişkileri ve momentum dengeleri, dolaşım ve dokularda sıvı akışı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyolojik sistemlerde enerji transferi, ısı transfer mekanizmaları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Biyolojik sistemlerde enerji transferi, ısı transfer mekanizmaları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Isı transferinin temel denklemi ve sınır koşulları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Isı transferinin temel denklemi ve sınır koşulları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kondüksiyon ile ısı transferi: yatışkın şartlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kondüksiyon ile ısı transferi: yatışkın olmayan şartlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kondüksiyon ile ısı transferi: yatışkın olmayan şartlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Konveksiyonla ısı transferi, Radyasyonla ısı transferi",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Konveksiyonla ısı transferi, Radyasyonla ısı transferi",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Biyolojik sistemlerde kütle taşınımı, kütle aktarım mekanizmaları, Kütle aktarımının temel denklemleri ve sınır koşulları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Difüzyon ile kütle transferi: kararlı durum",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Difüzyon ile kütle transferi: kararlı durum",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Konveksiyon ile kütle transferi, organ ve organizmalarda taşınma",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Transport Phenomena in biological systems, G.A. Truskey, F. Yuan and D. Katz, Prentice hall, 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=352",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEN&dersNo=352"
  }
 }

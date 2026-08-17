@@ -2,6 +2,7 @@
  "GIT 501": {
   "code": "GIT 501",
   "name": "Konumsal Matematik Yöntemler",
+  "nameEn": "Spatial Mathematical Methods",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -35,6 +36,78 @@
    "Hafta 13 · Harita Cebiri",
    "Hafta 14 · Raster-Tabanlı Hesaplamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konumsal Matematiğe Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Uzay Geometrisine Giriş ve Temelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Mantık ve CBS",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Vektörel Cebir",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Matris cebiri, temel koordinat sistemleri ve arasında dönüşümler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Projeksiyon Sistemleri ve Kavramlar",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Venn Diyagramları, Boolen Cebir ve İşlemleri",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "İlişkiler, Fonksiyonlar ve Lineer Modeller",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "SINAV ve Proje verilmesi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Topoloji kavramı ve konumsal ilişkiler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Graf teorisi, temel prensipler, graf tipleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ağ veri yapıları ve problem çözme yaklaşımlar",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Harita Cebiri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Raster-Tabanlı Hesaplamalar",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
@@ -42,12 +115,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=501"
  },
  "GIT 503E": {
   "code": "GIT 503E",
   "name": "Princip.of Geo-Informat.Syste.",
+  "nameEn": "Princip.of Geo-Informat.Syste.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -80,15 +153,87 @@
    "Hafta 13 · CBS Uygulamaları II (Devam)",
    "Hafta 14 · Tartışma ve Ders Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Coğrafi Bilgi Sistemlerine (CBS) Giriş. CBS'nin Tarihçesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Coğrafi Bilgi, Konumsal Veri ve Geo-Bilişim Teknoloji Kavramları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "CBS'nin Temel Fonksiyonları ve Bileşenleri. Konumsal Veri Modelleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gerçek Dünya ve Coğrafi Varlık Kavramları. Veri Girişi ve Hazırlıkları. Topolojik Veri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Coğrafi Bilginin Bilgisayar Ortamında Gösterimi, Veritabanı Yönetimi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "CBS'de Veri Kalitesi ve Hatalar. Metaveri Kavramı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "CBS’de Konumsal Analizler ve Sorgulamalar. Bindirme Teorileri ve Operasyonlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Yakınlık Analizleri. CBS’de Kesme, Silme, Bölme, Kenarlaştırma vb Operasyonlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "CBS’de Thessien Poligonları, Elastiksel Dönüşümler vb Operasyonlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "CBS’de Ağ Analizleri, Geometrik ve Grid İşlemleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "CBS’de Veri Görüntüleme, Haritalama, Çıktı ve Sunum İşlevleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "CBS Uygulamaları I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "CBS Uygulamaları II (Devam)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tartışma ve Ders Değerlendirme",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=503"
  },
  "GIT 505": {
   "code": "GIT 505",
   "name": "Coğrafi Veritabanı Geliştirme",
+  "nameEn": "Geo-database Development",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -124,15 +269,87 @@
    "Hafta 13 · Uygulama/Proje: Bir uygulama alanında fiziksel coğrafi veritabanı kurulması",
    "Hafta 14 · Coğrafi Veritabanı Sistemlerinin Gelecek Eğilimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Coğrafi bilgi teknolojilerinde mevcut durum",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Veritabanına giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Veritabanı Prensipleri ve Mimarisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Veritabanı Modelleri ve Veri Modelleme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Coğrafi Veri ve Coğrafi Veritabanı Sistemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Coğrafi Veri Paylaşımı, Veri Ambarları ve Federasyonu",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Coğrafi Veritabanı Uygulamaları ve Kullanıcı İhtiyaçlarının Değerlendirilmesi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "ISO/TC211’e göre veri modelleme ve uygulama şeması geliştirme metodolojisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Ara sınav ve Ödev verilmesi: Kullanıcı gereksinimlerine göre coğrafi veritabanı tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Coğrafi Veritabanı Uygulamasında Proje Yönetimi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Web Tabanlı Coğrafi Veritabanı Sistemleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulama/Proje: Bir uygulama alanında mantıksal coğrafi veritabanı tasarımı",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama/Proje: Bir uygulama alanında fiziksel coğrafi veritabanı kurulması",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Coğrafi Veritabanı Sistemlerinin Gelecek Eğilimleri",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=505"
  },
  "GIT 507": {
   "code": "GIT 507",
   "name": "Sayısal Arazi Modelleri",
+  "nameEn": "Digital Terrain Models",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -164,6 +381,78 @@
    "Hafta 13 · Sayısal Arazi Modellerinin Görselleştirilmesi",
    "Hafta 14 · Uygulama Alanları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Sayısal Arazi Modelleri (SAM), Sayısal Yükseklik Modelleri (SYM), Sayısal Yüzey Modelleri (SYM) Kavranları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Sayısal Arazi Modellemesi Işlemi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Kaynakları ve Yapıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Entepolasyon ve Yüzey Modelleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sayısal Arazi Modellemesi Yaklaşımları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sayısal Arazi Modellemesi Yöntemleri 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Sayısal Arazi Modellemesi Yöntemleri 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sayısal Arazi Modellemesi Yöntemleri 3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Üçgenler Ağı Üretimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Delaunay Üçgenlemesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sayısal Arazi Modellerinde Kalite Kontrolu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal Arazi Modellerinin Doğruluğu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sayısal Arazi Modellerinin Görselleştirilmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama Alanları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
@@ -171,12 +460,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=507"
  },
  "GIT 509E": {
   "code": "GIT 509E",
   "name": "GIS Programming",
+  "nameEn": "GIS Programming",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -209,6 +498,78 @@
    "Hafta 13 · CBS’de Yazılım Özelleştirme",
    "Hafta 14 · CBS’de Yazılım Özelleştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "CBS'de Veri Modelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "CBS'de Programlama Kavramları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Python ile Programlamayı Algılamak.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Python ile CBS'de Programlama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Python ile CBS'de Programlama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Visual Basic ile Programlamayı Algılamak.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "VB ile CBS'de Programlama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "VB ile CBS'de Programlama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "CBS’de Yazılım Özelleştirme",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "CBS’de Yazılım Özelleştirme",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "CBS’de Yazılım Özelleştirme",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "CBS’de Yazılım Özelleştirme",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "CBS’de Yazılım Özelleştirme",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
@@ -216,12 +577,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=509"
  },
  "GIT 511E": {
   "code": "GIT 511E",
   "name": "Principles of GNSS",
+  "nameEn": "Principles of GNSS",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -253,6 +614,78 @@
    "Hafta 13 · Diğer Uydu Sistemleri",
    "Hafta 14 · Diğer Uydu Sistemleri (Devam)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uydularla Konum Belirleme Sistemlerine Giriş (GPS/GNSS)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Datum, GPS'de Kullanılan Koordinat ve Zaman Sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "GPS Sinyal Özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "GPS Ölçülerin Etkileyen Hata Kaynakları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "GPS ile Konum Belirleme Yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "GPS'de Kullanılan Navigasyon Amaçlı Doğruluk Ölçütleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Arazi Uygulaması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "GPS Uygulama Alanları ve GPS'in Diğer Sistemlerle Entegrasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "GPS Verilerinin Değerlendirilmesi (Ağ Dengelemesi)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "GPS Verilerinin Değerlendirilmesi ve Sonuçarın Elde Edilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "GPS Kampanyası Düzenlenmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Laboratuvar Uygulaması",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Diğer Uydu Sistemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Diğer Uydu Sistemleri (Devam)",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
@@ -260,12 +693,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=511"
  },
  "GIT 513": {
   "code": "GIT 513",
   "name": "CBS'de Uzaktan algılama",
+  "nameEn": "Remote Sensing for GIS",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -297,15 +730,87 @@
    "Hafta 13 · Mikrodalga Uzaktan Algılama",
    "Hafta 14 · İleri Konular: SAR Interferometresi, LIDAR, Hiperspektral Uzaktan Algılama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uzaktan Algılamaya Giriş, Temel Esaslar, Elektromanyetik Işınım, Elektromanyetik Spektrum, Radyasyon Kanunları, Planck Kanunu, Stefan-Boltzmann Kanunu ve Wien Kanunu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Atmosfer ile Etkileşim, Saçılma, Yansıma ve Yutulma, Atmosferik Pencereler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Işınımın Yeryüzeyi ile Etkileşimi: Yansıtma, Brdf, Albedo, Yüzey Spektraları, Spektral Özellikler ve Bilgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Uzaktan Algılamada Veri Elde Etme Sistemleri, Algılayıcı Çeşitleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Aktif ve Pasif Algılama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Uzaktan Algılama Platformları, Uydu Yörüngeleri, Optik, Yakın Kızılötesi, Termal ve Mikrodalga Uzaktan Algılayıcılar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Dijital Uzaktan Algılanmış Verinin Özellikleri, Formatlar, Veri Işleme. Çözünürlük Kavramı: Spektral, Mekansal, Zamansal ve Radyometrik Çözünürlük",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Radyometrik Düzeltme, Atmosferik Düzeltme; Görüntü Tabanlı Yöntemler, Radyatif Transfer Modelleri, Empiric Çizgi Yöntemi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Geometrik Düzeltme: Yörünge Geometri Modeli, Rektifikasyon, Ortho Rektifikasyon",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Görüntü Zenginleştirme: Lineer Contrast Gerdirme, Gauss Gerdirme, Yoğunluk Dilimleme",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Görüntü Dönüşümleri: Aritmetik Işlemler, Filtreleme, Ana Bileşen Analizi, Intensity-Hue-Saturation, Fourier Ve Wavelet Dönüşümleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sınıflandırma: Kontrollü, Kontrolsüz, Fuzzy Sınıflandırma. Sınıflandırma Doğruluğu.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Mikrodalga Uzaktan Algılama",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "İleri Konular: SAR Interferometresi, LIDAR, Hiperspektral Uzaktan Algılama",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=513"
  },
  "GIT 514E": {
   "code": "GIT 514E",
   "name": "Geostatistics",
+  "nameEn": "Geostatistics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -337,6 +842,78 @@
    "Hafta 13 · Jeoistatistiksel simülasyonlar: Cholesky Çözümlemesi, Sıralı Gauss Simülasyonu",
    "Hafta 14 · Coğrafi Bilgi Sistemleri, uzaktan algılama ve jeoistatistik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konumsal ve konumsal olmayan veri, jeoistatitik ve istatistik kavramlari",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İstatistikte temel kavramlar, tanımlayıcı istatistik, standardizasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İstatistik ve veri analizi, tek değişkenli analizler, çok değişkenli analizler, histogramlar ve olasılık dağılımları, örnek veri seti uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Jeoistatistiğin tarihçesi, bölgesel değişkenler, mekansal veri, semivaryans analizleri, otokorelasyon ölçütleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Variyogramlar, variyogramların kestirimi, konumsal bağımlılık, örnek variyogramın hesaplanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Konumsal değişimin ölçekleri, anizotropi,h-saçılma diyagramı, variyogram bulutu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Variyogramların modellenmesi, lineer model, küresel model, üssel model, Gauss modeli, kuvvet modeli, model parametreleri, örnek veri seti uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Konumsal veride hatalar, doğruluk ve belirsizlik",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kriging, interpolasyon, basit(nokta) kriging,indikatör kriging,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Blok kriging, ölçme hataları ve kriging varyansı, örnek veri seti uygulamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Kokriging, çapraz-variyogram, kokriging denklemleri, kokriging varyansı, örnek veri seti uygulamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Jeoistatistiksel simülasyonlar: Koşullu simülasyon, koşullu kümülatif dağılım fonksiyonları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Jeoistatistiksel simülasyonlar: Cholesky Çözümlemesi, Sıralı Gauss Simülasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Coğrafi Bilgi Sistemleri, uzaktan algılama ve jeoistatistik",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
@@ -344,12 +921,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=514",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=514"
  },
  "GIT 515": {
   "code": "GIT 515",
   "name": "Kent Bilgi Sistemleri",
+  "nameEn": "Urban Information Systems",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -381,18 +958,90 @@
    "Hafta 13 · Kent-Çevre Planlaması",
    "Hafta 14 · Web Tabanlı Servislerle Kentsel CBS’nin Geleceği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kentsel CBS Ortamına Giriş. Kent Yaşamı için Bilgi Teknolojisinin Genel Yapısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kentsel Fonksiyonlar. Haritalar: Kaynaklar'a Karşı Tematikler, Tematik Harita Tipleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kent Bilgi Sistemlerinin Bileşenleri ve Fonksiyonları. Organizasyon Ve Yönetim Işleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Veri Sınıflama Methodları ve Veri Tedariki",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Nicel ve Nitel Bilgi. Kant CBS'de Fayda-Maliyet Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İmar Planı, Temel Haritalar ve Mülkiyet Haritaları İle Veri Girişi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kent Bilgi Sistemi Tasarımı. Modelleme ve Sistem Yaklaşımları.",
+    "outcomes": "1-2-3-3"
+   },
+   {
+    "week": 8,
+    "topic": "Adres Tabanlı Bilgi Sistemleri ve Kent Bilgi Sisteminde Ağ Analizleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Merkezi ve Yerel İdarelerde CBS Amaçlı Veri Üretimi. Ticari Kaynaklar.",
+    "outcomes": "1-2-3-3"
+   },
+   {
+    "week": 10,
+    "topic": "Suç Analizi Örnek Uygulaması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Planlama ve Bakım Amaçlı Harita Altyapısı Örnek Uygulaması",
+    "outcomes": "1-2-3-3"
+   },
+   {
+    "week": 12,
+    "topic": "Kent Servisleri için CBS Uygulaması",
+    "outcomes": "1-2-3-3"
+   },
+   {
+    "week": 13,
+    "topic": "Kent-Çevre Planlaması",
+    "outcomes": "1-2-3-3"
+   },
+   {
+    "week": 14,
+    "topic": "Web Tabanlı Servislerle Kentsel CBS’nin Geleceği",
+    "outcomes": "1-2-3-3"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=515"
  },
  "GIT 518": {
   "code": "GIT 518",
   "name": "CBS ile Taşınmaz Değerlemesi",
+  "nameEn": "Real-Estate Appraisal with GIS",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -424,15 +1073,87 @@
    "Hafta 13 · Örnek proje değerlendirmeleri.",
    "Hafta 14 · CBS’nin değerlemeye katkısının tartışılması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, taşınmaz mal terimleri ve değerleme kavramı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Taşınmaz değerlemenin arazi ekonomisindeki yeri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Değerlemede geleneksel yöntemler ve değerlemedeki teknik sorunlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Karşılaştırma yöntemi ile değerleme amaçlı CBS'den yararlanma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Gelir yöntemi ile değerleme amaçlı CBS'den yararlanma.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Maliyet yöntemi ile değerleme amaçlı CBS'den yararlanma.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Değerlemede istatistiksel yaklaşımlar ve CBS katkısı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "CBS-destekli nominal-değerleme yaklaşımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Değerlemede kullanılan kriterlerin seçimi ve CBS ile veri sağlama, işleme.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Değerlemede kullanılan kriterlerin seçimi ve CBS ile veri analizi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "CBS ile değer parametrelerin hesabı ve değer haritası üretimi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Birim alan bazlı sorgulamalar ve istatistiksel analizler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Örnek proje değerlendirmeleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "CBS’nin değerlemeye katkısının tartışılması.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=518",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=518"
  },
  "GIT 522E": {
   "code": "GIT 522E",
   "name": "Coastal and Marine GIS",
+  "nameEn": "Coastal and Marine GIS",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -464,6 +1185,78 @@
    "Hafta 13 · Kıyısal yönetimde CBS uygulamaları",
    "Hafta 14 · Denizsel yönetimde CBS uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Denizsel ve kıyı ölçmeleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Denizsel veri tipleri ve veri modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz düzeyi ve deniz yüzeyi haritalama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kıyısal veri altyapısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Denizsel CBS'ye algoritmik yaklaşım",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Elektronik batimetrik görüntüleme bilgi sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kıyısal bölge yönetim gösterimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "CBS ile kıyısal değişimlerin haritalanması ve analizleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Zamansal seriler ve ölçümlerin uygulanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Denizsel CBS’de gerçek-zamanlı uygulamalar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kıyısal ve denizsel CBS’de lineer veri modelleme ve dinamik segmantasyon",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kıyısal yönetimde CBS uygulamaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Denizsel yönetimde CBS uygulamaları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
@@ -471,12 +1264,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=522",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=522"
  },
  "GIT 524E": {
   "code": "GIT 524E",
   "name": "Environmental GIS",
+  "nameEn": "Environmental GIS",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -508,6 +1301,78 @@
    "Hafta 13 · Uygulama örnekleri",
    "Hafta 14 · Uygulama örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çevresel CBS'ne giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çevresel analizlerde konumsal veri yönetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Çevresel veri modelleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Çevresel veritabanları ve haritalama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Çevresel CBS uygulamaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "CBS ile doğal kaynak yönetimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Su kaynaklarının konumsal yönetimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Karşılaştırmalı arazi örtüsü değişim analizleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Hidrografik verinin CBS ile yönetimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çevresel kirlilik veri yönetimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Çevresel risk haritalama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çevresel planlama ve politikalarında CBS’nin rolü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama örnekleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama örnekleri",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Brimicombe, A., 2010. Coğrafi Bilgi Sistemleri, Çevresel Modelleme ve Mühendislik, CRC Press, ISBN: 978-1439808702",
    "Goodchild, M. F., Steyaert, L., Parks, B. O., Johnston, C., Maidment, D., Crane, M., Glendinning, S., 1996. Coğrafi Bilgi Sistemleri ve Çevresel Modelleme: Gelişmeler ve Araştırma Konuları, Wiley, ISBN: 978-0470236772.",
@@ -515,12 +1380,12 @@
    "Lovett, A., Appleton, K., 2007. Çevresel Karar Verme için Coğrafi Bilgi Sistemleri, CRC Press, ISBN: 978-0849374234.",
    "Scally, R., 2006. Çevre Yönetimi için Coğrafi Bilgi Sistemleri, ESRI Press, ISBN: 978-1589481428"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=524",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=524"
  },
  "GIT 596": {
   "code": "GIT 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -549,15 +1414,85 @@
    "Hafta 13 · Öğrenci sunumları",
    "Hafta 14 · Öğrenci sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Etkili bir sunuş nasıl yapılır (Seminer Koordinatörü)"
+   },
+   {
+    "week": 2,
+    "topic": "Çağrılı konuşmacı sunumu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Çağrılı konuşmacı sunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Çağrılı konuşmacı sunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Çağrılı konuşmacı sunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci sunumları"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=596"
  },
  "GIT 601E": {
   "code": "GIT 601E",
   "name": "Geo-Data Policy",
+  "nameEn": "Geo-Data Policy",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -589,15 +1524,87 @@
    "Hafta 13 · Dijital veri dağıtım yöntemleri",
    "Hafta 14 · Dersin genel değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Coğrafi veri kullanım politikasına giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tahsis kaynakları için karar-destek",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "KVA fenomeni, INSPIRE.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Coğrafi veri değerlendirme ve sınıflandırma",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Kamusal açılım için coğrafi veri ihtiyaçları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Coğrafi verinin bir toplum üzerindeki sosyal, ekonomik ve kültürel etkileri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Arazi idare hizmetlerini destek veren CBS uygulamaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Merkezi idarenin gelişim stratejilerini destekleyecek CBS tabanlı yöntemler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yerel idarenin gelişim stratejilerini destekleyecek CBS tabanlı yöntemler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Genel politikaların CBS ile desteklenmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Bütçe ve finans için karar-desteği",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Konumsal veri doğruluğu için ulusal standartlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dijital veri dağıtım yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dersin genel değerlendirilmesi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=601"
  },
  "GIT 603E": {
   "code": "GIT 603E",
   "name": "Professionalism in GI-Techno.",
+  "nameEn": "Professionalism in GI-Techno.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -629,15 +1636,87 @@
    "Hafta 13 · Sunum: Etik vaka çalışmalarının metodik analizler ile akılcı yürütme becerileri",
    "Hafta 14 · Dersin genel değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Profesyonellik, etik bakış, telif hakkı ve akreditasyon kavramlarına genel bakış",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Etik bakış neden önemli?",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Akademik dürüstlük ilkeleri ve kurallarını anlamak",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Profesyonellik için Pugh'ın altı özelliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Coğrafi Bilgi Teknolojileri alanında ilgili yasal ve etik sorunların açıklanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "CBS alanlarında lisanslama gereksinimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "CBS'de fayda-maliyet analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Veri telif hakları, CBS'de paylaşma ve fiyatlandırma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "CBS'de profesyonel organizasyonlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Verilmiş kaynaklar ile Coğrafi bilgi teknolojilerinde mesleki analizler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sunum: Etik vaka çalışmalarının metodik analizler ile akılcı yürütme becerileri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sunum: Etik vaka çalışmalarının metodik analizler ile akılcı yürütme becerileri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sunum: Etik vaka çalışmalarının metodik analizler ile akılcı yürütme becerileri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dersin genel değerlendirilmesi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=603"
  },
  "GIT 605E": {
   "code": "GIT 605E",
   "name": "Semantics GIS",
+  "nameEn": "Semantics GIS",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -669,15 +1748,87 @@
    "Hafta 13 · Anlamsal CBS uygulamaları",
    "Hafta 14 · Teoriden uygulamaya irdelemeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Anlamsal ve ontoloji kavramına giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Anlamsal birlikte çalışabilirliğe giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Anlamsal Web prensipleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Semantic Web mimarisi; URI, XML, RDF, Ontoloji, vb.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Anlamsa Web ontolojileri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "RDF ve RDFS",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "OWL’ye giriş",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "OWL kavramı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Anlamsal CBS kavramları ve fonksiyonları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "CBS’de OWL kavramı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Coğrafi Web servislerinin keşif ve oluşturulmasında ontoloji",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Veri bütünleştirme ontolojileri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Anlamsal CBS uygulamaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Teoriden uygulamaya irdelemeler",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=605",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=605"
  },
  "GIT 696": {
   "code": "GIT 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -706,15 +1857,86 @@
    "Hafta 13 · Öğrenci sunumları",
    "Hafta 14 · Öğrenci sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Etkili bir sunuş nasıl yapılır (Seminer Koordinatörü)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Çağrılı konuşmacı sunumu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Çağrılı konuşmacı sunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Çağrılı konuşmacı sunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Çağrılı konuşmacı sunumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci sunumları",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci sunumları"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=696"
  },
  "GIT 801E": {
   "code": "GIT 801E",
   "name": "Introduction to Geomatics",
+  "nameEn": "Introduction to Geomatics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -746,10 +1968,81 @@
    "Hafta 13 · Dünya’dan örnek CBS uygulamaları",
    "Hafta 14 · Tartışma ve Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geomatik'e giriş.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Temel harita bilgileri, ölçek, harita projeksiyonları.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Harita üretimi için veri toplama teknikleri. Fotogrametri, GPS, uzaktan algılama.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "CBS'ye giriş ve temel tanımlar. CBS, veri/bilgi, geo-bilişim, veritabanı kavramları.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Coğrafi varlıklar ve CBS’de veri modelleri.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "CBS'nin temel çalışma prensipleri ve CBS’nin bileşenler.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "CBS’de temel veri toplama teknikleri, yaklaşımlar.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "CBS’de vektörel veri sayısallaştırma ve editleme.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "CBS’de raster veri tarama ve editleme.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Uygulama-I: Grafik ve grafik-olmayan verilerin bütünleştirilmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Uygulama-II: Grafik ve grafik-olmayan verilerin sorgulanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Türkiye’den örnek CBS uygulamaları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dünya’dan örnek CBS uygulamaları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tartışma ve Değerlendirme",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=801",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GIT&dersNo=801"
  }
 }

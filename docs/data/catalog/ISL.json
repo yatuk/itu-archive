@@ -2,6 +2,7 @@
  "ISL 111E": {
   "code": "ISL 111E",
   "name": "İşletme Mühendisliğine Giriş",
+  "nameEn": "Intr. to Management Engin.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -32,16 +33,88 @@
    "Hafta 13 · İşletme Mühendisliği Tasarım Projesi Öğrenci Sunuşları I",
    "Hafta 14 · İşletme Mühendisliği Tasarım Projesi Öğrenci Sunuşları II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendisliğe giriş: Mühendislik ile temel bilimler arasındaki farklar; mühendisliğin işlevleri; Mühendislik ve İşletme kavramları; İşletme Mühendisliğinin tanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İşletme Mühendisliğinin diğer mühendislikler ve toplum bilimlerle ilişkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "İşletme Mühendisliğinin toplumsal ve ekonomik düzendeki yeri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Meslek olarak İşletme Mühendisliği",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İşletme Mühendisliğinde Tasarım: Yeri ve önemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "İşletme Mühendisliği Tasarım Sürecinde Bilgisayar Kullanımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Tasarım Sürecinde Kalite",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Tasarım Geliştirme I: Sorunu saptama, Yöntem, Veri toplama",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Tasarım Geliştirme II: Analiz ve Çözüm",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "İşletme Mühendisliği Tasarım Projesine Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "İşletme Mühendisliği ve Tüketici Hakları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "İşletme Mühendisliği ve Meslek Örgütleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "İşletme Mühendisliği Tasarım Projesi Öğrenci Sunuşları I",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "İşletme Mühendisliği Tasarım Projesi Öğrenci Sunuşları II",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Thinking Like an Engineer: Studies in the Ethics of a Profes, Davis, Michael, Oxford University Press, U.S.A., 1998, 978019512051",
    "Davis, M. (1998) Thinking Like an Engineer, Oxford University Press. A Guide to the Engineering Management Body of Knowledge (5th ed 2019 EMBOK)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=111"
  },
  "ISL 114E": {
   "code": "ISL 114E",
   "name": "Engineering Ethics",
+  "nameEn": "Engineering Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -71,17 +144,89 @@
    "Hafta 13 · Öğrenci Sunuşları II",
    "Hafta 14 · Öğrenci Sunuşları III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Etik kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Akademik Doğruluk: Akademik hırsızlık; Sahtecilik; Yasadışı Erişim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Etik kuramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mühendislik Mesleği ve Etiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Mühendislik ve Toplum Yararı",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Mühendislik ve Çevre Sorumluluğu",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Mühendislik Uygulamalarında Risk ve Güvenlik",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Çalışan olarak Mühendisler- Mesleki Sorumluluk",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Yaşam boyu öğrenim ve meslek ahlakı",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Fikri ve Sınai Mülkiyet Hakları I",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "İşletme Mühendislerinin Toplumsal Sorumlulukları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenci Sunuşları I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Sunuşları II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Sunuşları III",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Introduction to Engineering Ethics, 2nd editon, Martin, M. and Schinzinger, R., McGraw-Hill, 2009, 0072483113",
    "Harris, C.E., Pritchard, M.S., Rabins, M. J. (2008) Engineering Ethics. 4th ed. Thompson-Wadsworth, ISBN:0495502790.",
    "Velasquez, M. (2005) Business Ethics: Concepts and Cases. 6th ed. Prentice Hall ISBN: 0131930079."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=114",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=114"
  },
  "ISL 121E": {
   "code": "ISL 121E",
   "name": "İşletme Mühendislğine Giriş ve Etik",
+  "nameEn": "Int.to Management Eng.&Ethics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -113,15 +258,73 @@
    "Hafta 13 · Management Engineering Project: Student Project Idea Generation",
    "Hafta 14 · Management Engineering Project: Student Solution Generation"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Orientation lecture by the Department Head and Faculty members"
+   },
+   {
+    "week": 2,
+    "topic": "Introduction to Engineering in General and Management Engineering in particular;"
+   },
+   {
+    "week": 3,
+    "topic": "Management Engineering as a Profession"
+   },
+   {
+    "week": 4,
+    "topic": "Basic Concepts of Management Engineering: Design in Management Engineering: Role and significance; Information Technologies in Management Engineering Design Process"
+   },
+   {
+    "week": 5,
+    "topic": "Design Development I: Defining the Problem, Methodology, Data Collection- Design Thinking"
+   },
+   {
+    "week": 6,
+    "topic": "Design Development II: Analysis and Solution"
+   },
+   {
+    "week": 7,
+    "topic": "Management Engineers discuss their field: Panel with Graduates of the Department"
+   },
+   {
+    "week": 8,
+    "topic": "Creativity and creative thinking; thinking out of the box"
+   },
+   {
+    "week": 9,
+    "topic": "Relationship between Management Engineering, other engineering fields, arts and humanities"
+   },
+   {
+    "week": 10,
+    "topic": "Role of Management Engineering in the societal and economic system"
+   },
+   {
+    "week": 11,
+    "topic": "Ethics and Engineering"
+   },
+   {
+    "week": 12,
+    "topic": "Management Engineering Design Project: in-class follow-up by the lecturer (in addition to the lecture hours, the lecturer will be available at her Office on Thursday the 12th. Please make an appointment by e-mail, chosing 3 available time slots from Ninova, in case of overlapping with other groups )"
+   },
+   {
+    "week": 13,
+    "topic": "Management Engineering Project: Student Project Idea Generation"
+   },
+   {
+    "week": 14,
+    "topic": "Management Engineering Project: Student Solution Generation"
+   }
+  ],
   "textbooks": [
    "Davis, M. (1998) Thinking Like an Engineer, Oxford University Press. A Guide to the Engineering Management Body of Knowledge (5th ed 2019 EMBOK)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=121",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=121"
  },
  "ISL 213": {
   "code": "ISL 213",
   "name": "İstatistik I",
+  "nameEn": "Statistics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -156,16 +359,88 @@
    "Hafta 13 · Kesikli olasılık dağılımları",
    "Hafta 14 · Sürekli olasılık dağılımları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, verilerin ölçülmesi, derlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Verilerin düzenlenmesi, sunulması (çizelgeler, çizimler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sorgulayıcı veri çözümlemesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sorgulayıcı veri çözümlemesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ortalamalar",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Yayıklık, çarpıklık, basıklık ölçüleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Indeksler",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Indeksler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Zaman Serisi Analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Olasılığa giriş, Olasılık yasaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Rassal değişkenler, beklenen değer, varyans",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Olasılık dağılımları",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Kesikli olasılık dağılımları",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Sürekli olasılık dağılımları",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Newbold, P., Carlson, W. & Thorne, B. (2023). Statistics for Business and Economics, 10th Global Edition, Pearson. ISBN: 978-1292436845",
    "Çetinkaya-Rundel, M. & Hardin, J. (2024). Introduction to Modern Statistics, 2nd ed., OpenIntro. ISBN: 978-1943450275"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=213",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=213"
  },
  "ISL 213E": {
   "code": "ISL 213E",
   "name": "İstatistik I",
+  "nameEn": "Statistics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -200,16 +475,88 @@
    "Hafta 13 · Kesikli olasılık dağılımları",
    "Hafta 14 · Sürekli olasılık dağılımları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, verilerin ölçülmesi, derlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Verilerin düzenlenmesi, sunulması (çizelgeler, çizimler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sorgulayıcı veri çözümlemesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sorgulayıcı veri çözümlemesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ortalamalar",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Yayıklık, çarpıklık, basıklık ölçüleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Indeksler",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Indeksler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Zaman Serisi Analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Olasılığa giriş, Olasılık yasaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Rassal değişkenler, beklenen değer, varyans",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Olasılık dağılımları",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Kesikli olasılık dağılımları",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Sürekli olasılık dağılımları",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Newbold, P., Carlson, W. & Thorne, B. (2023). Statistics for Business and Economics, 10th Global Edition, Pearson. ISBN: 978-1292436845",
    "Çetinkaya-Rundel, M. & Hardin, J. (2024). Introduction to Modern Statistics, 2nd ed., OpenIntro. ISBN: 978-1943450275"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=213",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=213"
  },
  "ISL 214": {
   "code": "ISL 214",
   "name": "İstatistik II",
+  "nameEn": "Statistics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -244,18 +591,90 @@
    "Hafta 13 · İki örnek durumu için parametrik olmayan sınamalar (bağımlı çiftlerde, bağımsız iki örneklemde)",
    "Hafta 14 · İkiden fazla örnek durumu için parametrik olmayan sınamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Örnekleme yöntemleri, örneklem istatistiklerinin (tahmin edicilerin) dağılımı, merkezi limit teoremi, anakütle parametrelerinin tahmini ve güven aralıkları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Parametrik hipotez (önsav) sınamaları (tek örnek)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Parametrik hipotez (önsav) sınamaları (bağımlı çiftlerde, bağımsız iki örneklemde)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tek faktörlü varyans çözümlemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İki faktörlü varyans çözümlemesi (her gözde tek gözlem, her gözde birden çok gözlem)",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Parametrik olmayan sınamalara giriş, uyum gücü sınamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Bağımsızlık sınamaları (Ki-kare ve çapraz çizelgeler testleri), varyans testleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "İki değişken arasındaki ilişki (korelasyon), iki değişken arasındaki bağlanım (regresyon)",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Bağlanım denklemi, bağlanım katsayıları, güven aralıkları ve sınamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Bağlanım denklemleriyle kestirim ve güven aralıkları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kolay ilişki doğruları, doğrusallaştırma, ilişki katsayısı, sıra ilişki katsayısı",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Tek örnek durumu için parametrik olmayan sınamalar",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "İki örnek durumu için parametrik olmayan sınamalar (bağımlı çiftlerde, bağımsız iki örneklemde)",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "İkiden fazla örnek durumu için parametrik olmayan sınamalar",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Miller, I. & Miller, M. (2021). John E. Freund's Mathematical Statistics with Applications, 8th ed. (2021 update), Pearson. ISBN: 978-0137547432",
    "Newbold, P., Carlson, W. & Thorne, B. (2023). Statistics for Business and Economics, 10th Global Edition, Pearson. ISBN: 978-1292436845",
    "Akdeniz, F. (2022). Olasılık ve İstatistik, 23. Baskı, Akademisyen Kitabevi. ISBN: 978-6258299564",
    "Heumann, C., Schomaker, M. & Shalabh (2022). Introduction to Statistics and Data Analysis: With Exercises, Solutions and Applications in R, 2nd ed., Springer. ISBN: 978-3031118326"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=214"
  },
  "ISL 214E": {
   "code": "ISL 214E",
   "name": "İstatistik II",
+  "nameEn": "Statistics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -290,18 +709,90 @@
    "Hafta 13 · İki örnek durumu için parametrik olmayan sınamalar (bağımlı çiftlerde, bağımsız iki örneklemde)",
    "Hafta 14 · İkiden fazla örnek durumu için parametrik olmayan sınamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Örnekleme yöntemleri, örneklem istatistiklerinin (tahmin edicilerin) dağılımı, merkezi limit teoremi, anakütle parametrelerinin tahmini ve güven aralıkları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Parametrik hipotez (önsav) sınamaları (tek örnek)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Parametrik hipotez (önsav) sınamaları (bağımlı çiftlerde, bağımsız iki örneklemde)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tek faktörlü varyans çözümlemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İki faktörlü varyans çözümlemesi (her gözde tek gözlem, her gözde birden çok gözlem)",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Parametrik olmayan sınamalara giriş, uyum gücü sınamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Bağımsızlık sınamaları (Ki-kare ve çapraz çizelgeler testleri), varyans testleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "İki değişken arasındaki ilişki (korelasyon), iki değişken arasındaki bağlanım (regresyon)",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Bağlanım denklemi, bağlanım katsayıları, güven aralıkları ve sınamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Bağlanım denklemleriyle kestirim ve güven aralıkları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kolay ilişki doğruları, doğrusallaştırma, ilişki katsayısı, sıra ilişki katsayısı",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Tek örnek durumu için parametrik olmayan sınamalar",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "İki örnek durumu için parametrik olmayan sınamalar (bağımlı çiftlerde, bağımsız iki örneklemde)",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "İkiden fazla örnek durumu için parametrik olmayan sınamalar",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Miller, I. & Miller, M. (2021). John E. Freund's Mathematical Statistics with Applications, 8th ed. (2021 update), Pearson. ISBN: 978-0137547432",
    "Newbold, P., Carlson, W. & Thorne, B. (2023). Statistics for Business and Economics, 10th Global Edition, Pearson. ISBN: 978-1292436845",
    "Akdeniz, F. (2022). Olasılık ve İstatistik, 23. Baskı, Akademisyen Kitabevi. ISBN: 978-6258299564",
    "Heumann, C., Schomaker, M. & Shalabh (2022). Introduction to Statistics and Data Analysis: With Exercises, Solutions and Applications in R, 2nd ed., Springer. ISBN: 978-3031118326"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=214"
  },
  "ISL 223": {
   "code": "ISL 223",
   "name": "Üretim Yönetiminin Temelleri",
+  "nameEn": "Fundm.of Production Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -334,16 +825,88 @@
    "Hafta 13 · Kamçı Etkisi- Bira Dağıtım Oyunu",
    "Hafta 14 · Durum Çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Üretim ve İşlemler Yönetimine Giriş ve Temel Kavramlar",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 2,
+    "topic": "Üretim ve İşlemler Stratejileri, Rekabet",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Verimlilik",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Mal ve Hizmet Tasarımı",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "Üretim Sistemleri-Süreç Stratejileri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Üretim Teknolojileri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Üretim Teknolojileri Lab. Çalışması",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kapasite Planlama",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kuruluş Yeri Seçimi",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 10,
+    "topic": "İş Yeri Düzenleme Stratejileri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 11,
+    "topic": "İş Tasarımı ve İş Ölçümü",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Tedarik Zinciri Yönetimi",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kamçı Etkisi- Bira Dağıtım Oyunu",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Durum Çalışmaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Operations Management, Heizer, J. and Render, B. , Prentice Hall, Upper Saddle River, 2007, 9780136119418",
    "Chase, R.B., Jacobs F.R., Aquilano, N. J., 2004, Operations Management for Competitive Advantage, 10th edition, McGraw Hill Irwin, New York. ISBN: 978- 0072506365"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=223",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=223"
  },
  "ISL 223E": {
   "code": "ISL 223E",
   "name": "Üretim Yönetiminin Temelleri",
+  "nameEn": "Fundm.of Production Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -376,16 +939,88 @@
    "Hafta 13 · Kamçı Etkisi- Bira Dağıtım Oyunu",
    "Hafta 14 · Durum Çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Üretim ve İşlemler Yönetimine Giriş ve Temel Kavramlar",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 2,
+    "topic": "Üretim ve İşlemler Stratejileri, Rekabet",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Verimlilik",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Mal ve Hizmet Tasarımı",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "Üretim Sistemleri-Süreç Stratejileri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Üretim Teknolojileri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Üretim Teknolojileri Lab. Çalışması",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kapasite Planlama",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kuruluş Yeri Seçimi",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 10,
+    "topic": "İş Yeri Düzenleme Stratejileri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 11,
+    "topic": "İş Tasarımı ve İş Ölçümü",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Tedarik Zinciri Yönetimi",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kamçı Etkisi- Bira Dağıtım Oyunu",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Durum Çalışmaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Operations Management, Heizer, J. and Render, B. , Prentice Hall, Upper Saddle River, 2007, 9780136119418",
    "Chase, R.B., Jacobs F.R., Aquilano, N. J., 2004, Operations Management for Competitive Advantage, 10th edition, McGraw Hill Irwin, New York. ISBN: 978- 0072506365"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=223",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=223"
  },
  "ISL 224": {
   "code": "ISL 224",
   "name": "Maliyet Muhasebesi",
+  "nameEn": "Cost Accounting",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -419,15 +1054,87 @@
    "Hafta 13 · Standard maliyet sistemleri",
    "Hafta 14 · İşletme Performansının Ödüllendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Muhasebe ve Muhasebe Bilgilerine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Finansal Tablolar ve Muhasebe Döngüsü",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yıllık Raporların Hazırlanması ve Ticari Malların Muhasebeleştirilmesi ve Satılan Malın Maliyeti",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Demirbaş ve Maddi Olmayan Duran Varlıkların Muhasebeleştirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Finansal Varlıklar ve Borçların Muhasebeleştirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Yönetim Muhasebesi ve Maliyet Muhasebesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Maliyet Muhasebesi Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Maliyetleme ve Değer Zinciri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Maliyet-Hacim-Kar Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Maliyet Artışı Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sorumluluk Muhasebesi ve Transfer Fiyatı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Operasyonel Bütçeleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Standard maliyet sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "İşletme Performansının Ödüllendirilmesi",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Cost Accounting: A Managerial Emphasis (13th edition), Horngren Charles, Datar Srikant M., Foster George, Prentice Hall of India, 2008, 978-812033564"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=224",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=224"
  },
  "ISL 224E": {
   "code": "ISL 224E",
   "name": "Maliyet Muhasebesi",
+  "nameEn": "Cost Accounting",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -461,15 +1168,87 @@
    "Hafta 13 · Standard maliyet sistemleri",
    "Hafta 14 · İşletme Performansının Ödüllendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Muhasebe ve Muhasebe Bilgilerine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Finansal Tablolar ve Muhasebe Döngüsü",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yıllık Raporların Hazırlanması ve Ticari Malların Muhasebeleştirilmesi ve Satılan Malın Maliyeti",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Demirbaş ve Maddi Olmayan Duran Varlıkların Muhasebeleştirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Finansal Varlıklar ve Borçların Muhasebeleştirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Yönetim Muhasebesi ve Maliyet Muhasebesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Maliyet Muhasebesi Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Maliyetleme ve Değer Zinciri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Maliyet-Hacim-Kar Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Maliyet Artışı Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sorumluluk Muhasebesi ve Transfer Fiyatı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Operasyonel Bütçeleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Standard maliyet sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "İşletme Performansının Ödüllendirilmesi",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Cost Accounting: A Managerial Emphasis (13th edition), Horngren Charles, Datar Srikant M., Foster George, Prentice Hall of India, 2008, 978-812033564"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=224",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=224"
  },
  "ISL 233": {
   "code": "ISL 233",
   "name": "Mikroiktisat",
+  "nameEn": "Microeconomics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -502,15 +1281,87 @@
    "Hafta 13 · Piyasalar III: Oligopol",
    "Hafta 14 · Oyun Teorisi ve Strateji"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İktisat, İktisadın Konuları; İktisadi Analiz Araçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arz, Talep ve Piyasa",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Esneklik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Refah Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tüketici Davranışı I",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tüketici Davranışı II",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Tüketici Davranışı III",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üretici Davranışı I",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Üretici Davranışı II",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Üretici Davranışı III",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Piyasalar I: Tam Rekabet Piyasası",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Piyasalar II: Tekel ve Tekelci Rekabet",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Piyasalar III: Oligopol",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Oyun Teorisi ve Strateji",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Microeconomics, Pindyck, R. S. and D. L. Rubinfield, Prentice-Hall, 2009, 9780132080"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=233",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=233"
  },
  "ISL 233E": {
   "code": "ISL 233E",
   "name": "Mikroiktisat",
+  "nameEn": "Microeconomics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -543,15 +1394,87 @@
    "Hafta 13 · Piyasalar III: Oligopol",
    "Hafta 14 · Oyun Teorisi ve Strateji"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İktisat, İktisadın Konuları; İktisadi Analiz Araçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arz, Talep ve Piyasa",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Esneklik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Refah Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tüketici Davranışı I",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tüketici Davranışı II",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Tüketici Davranışı III",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Üretici Davranışı I",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Üretici Davranışı II",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Üretici Davranışı III",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Piyasalar I: Tam Rekabet Piyasası",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Piyasalar II: Tekel ve Tekelci Rekabet",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Piyasalar III: Oligopol",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Oyun Teorisi ve Strateji",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Microeconomics, Pindyck, R. S. and D. L. Rubinfield, Prentice-Hall, 2009, 9780132080"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=233",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=233"
  },
  "ISL 234": {
   "code": "ISL 234",
   "name": "Yönetim ve Organizasyon",
+  "nameEn": "Management and Organization",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -587,15 +1510,87 @@
    "Hafta 13 · Öğrencilerin proje sunumları",
    "Hafta 14 · Öğrencilerin proje sunumları(devam) Genel ders değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş : Dersin işlenişine ve zorunlu ödev ve projeler ilişkin bilgilerin verilmesi Zaman Yönetimi tekniklerinin açıklanması Mühendisler için yönetim alanına özgü etik problemlerin irdelenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel kavramlar : Yönetim, yönetici, örgüt ve bunların mühendisler ve mühendislik faaliyetleri için önemi ve gerekliliği",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel yönetimsel süreçler : planlama, örgütleme, koordinasyon, kontrol ve düzeltme",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Yönetim düşüncesinin tarihsel gelişimi- Klasik ve Neo-klasik yönetim yaklaşımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Yönetim düşüncesinin tarihsel gelişimi-Modern ve sistem yaklaşımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Örgütsel planlama",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Yönetsel Karar verme",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Örgütleme, örgütsel yapı ve süreçleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Uyumlaştırma, temel bireyler arası süreçler- motivasyon",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Uyumlaştırma, temel bireyler arası süreçler- liderlik, iletişim ve çatışma",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Denetleme ve Düzeltme",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Örgüt kuramı üzerinde yeni etkiler- Yenilik yönelimli örgütler, teknolojik değişim ve yeni örgütsel yapılar ve yönetim anlayışları",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrencilerin proje sunumları",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrencilerin proje sunumları(devam) Genel ders değerlendirmesi",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   }
+  ],
   "textbooks": [
    "İşletme Yöneticiği, Koçel, T. , Istanbul: Beta Yayınları, 2010, 9786053772446"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=234",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=234"
  },
  "ISL 234E": {
   "code": "ISL 234E",
   "name": "Yönetim ve Organizasyon",
+  "nameEn": "Management and Organization",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -631,15 +1626,87 @@
    "Hafta 13 · Öğrencilerin proje sunumları",
    "Hafta 14 · Öğrencilerin proje sunumları(devam) Genel ders değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş : Dersin işlenişine ve zorunlu ödev ve projeler ilişkin bilgilerin verilmesi Zaman Yönetimi tekniklerinin açıklanması Mühendisler için yönetim alanına özgü etik problemlerin irdelenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel kavramlar : Yönetim, yönetici, örgüt ve bunların mühendisler ve mühendislik faaliyetleri için önemi ve gerekliliği",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel yönetimsel süreçler : planlama, örgütleme, koordinasyon, kontrol ve düzeltme",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Yönetim düşüncesinin tarihsel gelişimi- Klasik ve Neo-klasik yönetim yaklaşımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Yönetim düşüncesinin tarihsel gelişimi-Modern ve sistem yaklaşımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Örgütsel planlama",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Yönetsel Karar verme",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Örgütleme, örgütsel yapı ve süreçleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Uyumlaştırma, temel bireyler arası süreçler- motivasyon",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Uyumlaştırma, temel bireyler arası süreçler- liderlik, iletişim ve çatışma",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Denetleme ve Düzeltme",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Örgüt kuramı üzerinde yeni etkiler- Yenilik yönelimli örgütler, teknolojik değişim ve yeni örgütsel yapılar ve yönetim anlayışları",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrencilerin proje sunumları",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrencilerin proje sunumları(devam) Genel ders değerlendirmesi",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   }
+  ],
   "textbooks": [
    "İşletme Yöneticiği, Koçel, T. , Istanbul: Beta Yayınları, 2010, 9786053772446"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=234",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=234"
  },
  "ISL 244E": {
   "code": "ISL 244E",
   "name": "Makroekonomi",
+  "nameEn": "Macroeconomics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -671,16 +1738,88 @@
    "Hafta 13 · Döviz Kuru Rejimleri ve Faiz Oranları; Uluslararası Ticaret ve Sermaye Akımları",
    "Hafta 14 · Ekonomik Krizler ve Sürdürülebilirlik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "21. Yüzyılda Makroekonomiye Giriş: Temel Makroekonomik Olgular",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Milli Gelir ve Büyüme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enflasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Para, Bankacılık ve Finansal Sistem",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mal ve Hizmet Piyasaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Finansal Piyasalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Mal ve Hizmet Piyasaları ve Finansal Piyasalarda Eşzamanlı Denge: IS-LM Modeli",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "İşsizlik ve İşgücü Piyasası",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Tüm Piyasaların Eşanlı Analizi: IS-LM-PC Modeli",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Ekonomik Büyüme, Tasarruflar ve Sermaye Birikimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Açık Makroekonomiye Giriş: Döviz Kuru ve Ödemeler Dengesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Açık Ekonomi IS-LM Modeli",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Döviz Kuru Rejimleri ve Faiz Oranları; Uluslararası Ticaret ve Sermaye Akımları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Ekonomik Krizler ve Sürdürülebilirlik",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Blanchard, O. (2017), Macroeconomics (7th edition), Pearson, USA. ISBN 978-0-13-378058",
    "Goodwin, N., Harris, J., Nelson, J.A., Roach, B., Torras, M. (2014), Macroeconomics in Context , 2nd edition, M.E. Sharpe, NY, USA. ISBN 978-0-7656-3874-8"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=244",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=244"
  },
  "ISL 323": {
   "code": "ISL 323",
   "name": "Yöneylem Araştırması",
+  "nameEn": "Operations Research",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -713,15 +1852,87 @@
    "Hafta 13 · Ulaştırma Problemlerinin Optimum Çözümünün Bulunması",
    "Hafta 14 · Atama ve Aktarma Problemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yöneylem Araştırması ve Doğrusal Programlamaya Giriş, Doğrusal Programlama Problemlerinin Modelinin Kurulması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal Programlama Problemlerinin Modelinin Kurulması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Grafik Yöntemle Çözüm ve Duyarlılık Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Grafik Yöntemle Çözüm ve Duyarlılık Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Simpleks Yöntem, Büyük M Yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Simpleks Tablonun Ekonomik Yorumu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Doğrusal Programlama Problemlerinin Bilgisayar Çözümü ve Yorumu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Dualite",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Tamsayılı Programlamaya Giriş, Tamsayılı Problemlerin Modelinin Kurulması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Tamsayılı Problemlerin Modelinin Kurulması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Tamsayılı Programlama Çözüm Teknikleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ulaştırma Problemleri: Ulaştırma Problemlerinin Modelinin Kurulması ve Temel Uygun Çözümün Bulunması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ulaştırma Problemlerinin Optimum Çözümünün Bulunması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Atama ve Aktarma Problemleri",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Operations Research: Applications and Algorithms Text Book , WINSTON, W.L. & VENKATARAMANAN M., Brooks/Cole Publishing Co. , 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=323"
  },
  "ISL 323E": {
   "code": "ISL 323E",
   "name": "Yöneylem Araştırması",
+  "nameEn": "Operations Research",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -754,15 +1965,87 @@
    "Hafta 13 · Ulaştırma Problemlerinin Optimum Çözümünün Bulunması",
    "Hafta 14 · Atama ve Aktarma Problemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yöneylem Araştırması ve Doğrusal Programlamaya Giriş, Doğrusal Programlama Problemlerinin Modelinin Kurulması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal Programlama Problemlerinin Modelinin Kurulması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Grafik Yöntemle Çözüm ve Duyarlılık Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Grafik Yöntemle Çözüm ve Duyarlılık Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Simpleks Yöntem, Büyük M Yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Simpleks Tablonun Ekonomik Yorumu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Doğrusal Programlama Problemlerinin Bilgisayar Çözümü ve Yorumu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Dualite",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Tamsayılı Programlamaya Giriş, Tamsayılı Problemlerin Modelinin Kurulması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Tamsayılı Problemlerin Modelinin Kurulması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Tamsayılı Programlama Çözüm Teknikleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ulaştırma Problemleri: Ulaştırma Problemlerinin Modelinin Kurulması ve Temel Uygun Çözümün Bulunması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ulaştırma Problemlerinin Optimum Çözümünün Bulunması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Atama ve Aktarma Problemleri",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Operations Research: Applications and Algorithms Text Book , WINSTON, W.L. & VENKATARAMANAN M., Brooks/Cole Publishing Co. , 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=323"
  },
  "ISL 333E": {
   "code": "ISL 333E",
   "name": "Finansman",
+  "nameEn": "Finance",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -797,15 +2080,87 @@
    "Hafta 13 · Sermaye Bütçeleme",
    "Hafta 14 · Tekrar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Finansal Yönetime Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Finansal Tablolar",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Finansal Tabloların Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Finansal Çevre",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Finansal Planlama",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Risk ve Getiri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Paranın Zaman Değeri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Paranın Zaman Değeri",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Tahvil-Bono Değerleme",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Hisse Senedi Değerleme",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Sermaye Maliyeti",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Sermaye Bütçeleme",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Sermaye Bütçeleme",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Tekrar",
+    "outcomes": "5-6-7"
+   }
+  ],
   "textbooks": [
    "Eugene Brigham, Joel Houston, 2009, Fundamentals of Financial Management (12th edition), Southwestern College Pub., ISBN:978032459770."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=333",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=333"
  },
  "ISL 334E": {
   "code": "ISL 334E",
   "name": "Mühendisler İçin Kalite",
+  "nameEn": "Quality for Engineers",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -840,15 +2195,87 @@
    "Hafta 13 · Örneklem tasarımı: Taguchi Yöntemi",
    "Hafta 14 · Dönem projesi prezentasyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kaliteye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kalite Felsefesi",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 3,
+    "topic": "Kalite iyileştirme : çözüm odaklı",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Kalite Kontrol için istatistiksel uygulamalar",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 5,
+    "topic": "Değişkenler için kontrol şemaları",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 6,
+    "topic": "Proses kapabilitesi",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 7,
+    "topic": "İstatistiksel Proses Kontrol: istatistiksel özellikler için",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 8,
+    "topic": "istatistiksel özellikler için control şemaları",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 9,
+    "topic": "Güvenilirlik",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Üretimde Kabul-inceleme yöntemi",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Gelişmiş Kalite Konuları: QFD and FMEA",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Kalite maliyetleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Örneklem tasarımı: Taguchi Yöntemi",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projesi prezentasyonu",
+    "outcomes": "1-2-3-4-5-6-7"
+   }
+  ],
   "textbooks": [
    "Summers, Donna C. S., 2010, Quality, Fifth Edition, Prentice Hall, ISBN978013159249-0"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=334",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=334"
  },
  "ISL 343E": {
   "code": "ISL 343E",
   "name": "Yönetim Bilişim Sistemleri",
+  "nameEn": "Management Information Syst.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -881,15 +2308,87 @@
    "Hafta 13 · Bilgi ve İşbirliği Yönetimi: Geniş Bilgi Yönetim Sistemleri, Bilgi İş Sistemleri, Akıllı Teknikler",
    "Hafta 14 · Bilgi Sistemlerinin Yönetimi - Bilişim Sistemleri Güvenliği: Proje Seçimi, Bilgi Sistemlerinin İş Değerinin Oluşturulması, Proje Riski Yönetimi, Bilgi sistemleri Güvenliği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yönetim Bilişim Sistemlerine Giriş; Sistem, Enformasyon, Veri, Bilgi, Sistem Analizi: Bilgi Teknolojisi, Bilgi Ekonomisi ve Bilgi Toplumu, Yönetim Bilişim Sistemleri Kavramları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İşletmelerde Bilişim Sistemleri; Dijital Ekonomide Bilişim Sistemlerinin Kullanımı ve Önemi, Stratejik karar vermede ve Rekabet Avantajı Sağlamada Bilişim Sistemleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 3,
+    "topic": "İşletmelerde Bilişim Sistemleri; Dijital Ekonomide Bilişim Sistemlerinin Kullanımı ve Önemi, Stratejik karar vermede ve Rekabet Avantajı Sağlamada Bilişim Sistemleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Bilişim Sistemleri Kurma: Yazılım kavramları, Programlama Dilleri ve Araçları, Yazılım lisansları, Özgür Yazılım ve Açık Kaynak Kodu",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Bilişim Sistemleri Kurma: Yazılım Türleri ve Yazılım Kullanımı, Sistem geliştirmenin aşamaları; analiz, tasarım, uygulama, test ve dönüştürme. Sistem Geliştirme Metodolojileri Yazılım Geliştirme Proj",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Bilişim Sistemleri Kurma: Yazılım Sistemleri Geliştirme Metodolojileri, Yazılım Geliştirme Proje Yönetimi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Seminer - Yazılım Sistemleri Geliştirme Metodolojileri, Yazılım Geliştirme Proje Yönetimi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Bilişim Teknolojisi Altyapısı: Bilgisayar Donanım Bileşenleri (Girdi, İşleme, Çıktı Cihazları), Veri - Talimat işleme/Talimat Setleri, Bilgisayar Performansı, Hafıza Tipleri, Paralel Hesaplama Bilgi İletişim - Telekomunikasyon Sistemleri, bileşenleri ve işlevleri, Bilgisayar Ağları,Protokoller, Kanallar, Sinyaller",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Veritabanları ve Bilgi Yönetimi: Veritabanı Yönetim Sistemleri (VTYS)",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Veritabanları ve Bilgi Yönetimi: Veri Ambarları İş Zekası, Çok boyutlu Veri Analizi ve Veri Madenciliği, Veri Kaynaklarının Yönetimi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kurumsal Sistemler- Tedarik Zinciri Yönetimi Sistemleri, Müşteri İlişkileri Yönetim Sistemleri, Yeni Nesil Kurumsal Uygulamalar, Elektronik Ticaret ve Internet:",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Karar Verme Sürecinin Geliştirilmesi: Karar Destek Sistemleri, (MIS, DSS, vb.), Yönetim Destek Sistemleri (ESS) ve Kurumsal Karne Çerçevesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgi ve İşbirliği Yönetimi: Geniş Bilgi Yönetim Sistemleri, Bilgi İş Sistemleri, Akıllı Teknikler",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Bilgi Sistemlerinin Yönetimi - Bilişim Sistemleri Güvenliği: Proje Seçimi, Bilgi Sistemlerinin İş Değerinin Oluşturulması, Proje Riski Yönetimi, Bilgi sistemleri Güvenliği",
+    "outcomes": "1-2-4-5"
+   }
+  ],
   "textbooks": [
    "LAUDON, K.C ve LAUDON J.P (2009), Management Information Systems –Managing the Digital Firm11th edition, Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=343",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=343"
  },
  "ISL 344E": {
   "code": "ISL 344E",
   "name": "Mühendisler İçin Stratejik Yönetim",
+  "nameEn": "Strategic Manage. for Engin.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -923,15 +2422,87 @@
    "Hafta 13 · Örnek olay çalışması",
    "Hafta 14 · Örnek olay çalışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Stratejik yönetimin temel telsefesi ve mühendisler için önemi; Stratejik yönetim süreci; Temel stratejik yönetim kavramları- özgörü, özgörev, strateji, politika, kaynak, kabiliyet vs.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dış çevrenin analizi: Tehlike ve Fırsatlar (Makro ve endüstriyel çevre analizi, Pazar tahmini, anahtar başarı faktörleri);",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İç çevrenin (işletmenin) analizi : Üstün ve Zayıf Yönler (İşletme kaynakları ve kabiliyetleri)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İşletme ve Dış Çevre Etkileşimi (SWOT Analizi); TOWS matrisi ve strateji geliştirme",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Başlıca kurumsal stratejiler",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Başlıca iş stratejileri",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Tamamlayıcı stratejik uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Örnek olay çalışması (Giriş)",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslar arası stratejik uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Örnek olay çözümü",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Strateji ve endüstri uyumu",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Örnek olay çalışması",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Örnek olay çalışması",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Örnek olay çalışması",
+    "outcomes": "2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "• Wheelen, T. and Hunger, J.D. (2007), Strategic Management and Business Policy, 11th ed. Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=344",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=344"
  },
  "ISL 353E": {
   "code": "ISL 353E",
   "name": "Pazarlama",
+  "nameEn": "Marketing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -967,15 +2538,87 @@
    "Hafta 13 · Reklam, Satış Promosyonu ve Hakla İlişkiler",
    "Hafta 14 · Pazarlama Etiği ve Sosyal Sorumluluk"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Pazarlama Kavramı ve Pazarlama Yönetim Süreci",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Şirket ve Pazarlama Stratejisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Pazarlama Çevresi",
+    "outcomes": "2-7-8"
+   },
+   {
+    "week": 4,
+    "topic": "Tüketici Pazarları ve Tüketici Satınalma Davranışı",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 5,
+    "topic": "Örgütsel Pazarlar ve Örgütsel Satınalma Davranışı",
+    "outcomes": "4-7-8"
+   },
+   {
+    "week": 6,
+    "topic": "Pazarlama Bilgi Sistemi",
+    "outcomes": "3-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Bölümlendirme, Hedef Pazar Seçimi ve Konumlandırma",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Ürün, Hizmetler ve Markalama Stratejisi",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Yeni Ürün Geliştirme ve Ürün Yaşam Eğrisi Stratejileri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Fiyatlandırma ve Fiyatlandırma Stratejileri",
+    "outcomes": "5-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Pazarlama Kanalları ve Arz Zinciri Yönetimi",
+    "outcomes": "5-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Bütünleşik Pazarlama İletişimi Stratejisi",
+    "outcomes": "5-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Reklam, Satış Promosyonu ve Hakla İlişkiler",
+    "outcomes": "5-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Pazarlama Etiği ve Sosyal Sorumluluk",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Kotler, P. and G. Armstrong (2012), Principles of Marketing, 14th Global Edition, Prentice-Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=353",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=353"
  },
  "ISL 354E": {
   "code": "ISL 354E",
   "name": "Managerial Decision Making",
+  "nameEn": "Managerial Decision Making",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1007,15 +2650,87 @@
    "Hafta 13 · Yapay sinir ağları",
    "Hafta 14 · Grup kararı teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Karar teorisine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bir karar probleminin yapılandırılması ve karar modelinin kurulması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Karar modelinin kurulması, problemin çözümlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Bilişsel haritalandırma ve Bayezyen Beklenti Ağları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Analitik Hiyerarşi Süreci",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Analitik Ağ Süreci",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Analitik Ağ Süreci",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Temel Yöntemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Değer temelli yöntemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Outranking karar verme yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Belirsizlik ve risk altında karar verme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Fayda teorisi ve karar ağaçları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Yapay sinir ağları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Grup kararı teknikleri",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=354",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=354"
  },
  "ISL 355E": {
   "code": "ISL 355E",
   "name": "Econometrics",
+  "nameEn": "Econometrics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1048,18 +2763,90 @@
    "Hafta 13 · ARIMA Modelleri",
    "Hafta 14 · Geleceği Tahmin Yöntemleri Sonuçlarının Değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Basit Regresyon Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Çoklu Regresyon Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Çoklu Regresyon Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal Olmayan Modeller",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yapay Değişkenler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çoklu Regresyon Modelinin Problemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Zaman Serisi Ekonometrisinin Özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Genel eğilim, Mevsimsellik ve İş Çevrimleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Zaman Serisi Ayrıştırma Analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Düzleştirme Yöntemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Durağanlık",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "ARIMA Modelleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Geleceği Tahmin Yöntemleri Sonuçlarının Değerlendirilmesi",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Econometric Analysis: An Applied Approach to Business and Economics (2024) S. Hossain",
    "Applied Statistics and Econometrics. Basic Topics and Tools with Gretl and R (2024) B. K. Kivedal",
    "R.H. & Stoffer, D.S. (2024). Time Series Analysis and Its Applications: With R Examples, 5th ed., Springer. ISBN: 978-3031705830",
    "Essential Econometric Techniques: A Guide to Concepts and Applications, 3rd Ed. (2022) E. Kacapyr"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=355",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=355"
  },
  "ISL 360E": {
   "code": "ISL 360E",
   "name": "Nicel Araştırma ve Veri Analizi",
+  "nameEn": "Quantitative Rsrch&DataAnlys.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1093,17 +2880,89 @@
    "Hafta 13 · Veri Analizi: Çok değişkenli",
    "Hafta 14 · Veri Analizi: Çok değişkenli"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Araştırma Etiği Araştırmanın tanımı, kapsamı, Araştırmanın işletme yönetimindeki yeri, Dünyada ve Türkiye’de Araştırma Sektörü, Araştırmalarda etik kurallar",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma Süreci ve Araştırma probleminin tanımlanması Araştırma Tasarımı ve Türleri Açıklayıcı/keşfedici araştırma, Tanımlayıcı Araştırma, Nedensel araştırma",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Nicel araştırmada veri türleri ve veri Toplama Yöntemleri İkincil ve birincil veri Birincil veri toplamada – Anket, Gözlem Formu",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Teorik Çerçevenin oluşturulması, hipotezlerin geliştirilmesi, kavramsal model oluşturma",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Değişkenleri Ölçme ve Ölçekleme, Temel ölçekler Tutum ölçekleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Örneklem yöntemleri ve Örnek hacmi saptama",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Analiz Tekniğinin Seçimi ve Temel istatistiksel testlere bakış",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Veri giriş, temel işlemler, seçilmiş parametrik olmayan testler",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Veri Analizi: Parametrik testler-Gruplar arası farklılık sınamasında kullanılan testler",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Veri Analizi: Parametrik testler-Gruplar arası farklılık sınamasında kullanılan testler",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Veri Analizi : Korelasyon ve Regresyon Analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Veri Analizi: Çok değişkenli: Faktör analizi ve Güvenilirlik Analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Veri Analizi: Çok değişkenli",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Veri Analizi: Çok değişkenli",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Quinlan, C., Babin, B.J., Carr, J.C., Griffin, M. & Zikmund, W.G. (2024). Business Research Methods, 3rd ed., Cengage Learning EMEA. ISBN: 978-1473791343",
    "Hair, J.F., Ortinau, D.J. & Harrison, D.E. (2024). Essentials of Marketing Research, 6th ed., McGraw-Hill. ISBN: 978-1265217181",
    "Field, A. (2024). Discovering Statistics Using IBM SPSS Statistics, 6th ed., SAGE Publications. ISBN: 978-1529630008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=360",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=360"
  },
  "ISL 363": {
   "code": "ISL 363",
   "name": "İnsan Kaynakları Yönetimi",
+  "nameEn": "Human Resources Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1138,16 +2997,88 @@
    "Hafta 13 · Çalışan bağlılığı, iş etiği, disiplin, çıkış görüşmeleri, çalışan destek programları",
    "Hafta 14 · İş sağlığı ve güvenliği, çalışma hayatında iyi olma hali"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnsan Kaynakları Yönetiminin (İKY) anlam ve önemi, İKY nin İşletme Mühendisliği içindeki yeri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 2,
+    "topic": "İKY neden önemlidir? Stratejik İKY, İKY analitiği ve İKY'yi şekillendiren eğilimler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İKY'nin stratejik rolü, kâr merkezi yaklaşımı ve insan kaynakları uygulamalarında güncel gelişmeler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İş analizi ve iş tasarımı; görev tanımları ve görev gerekleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "İnsan kaynakları planlaması ve işgücü analitiği; insan kaynağı ihtiyacının tahmini",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Dijital dönemde işe alım; aday kaynakları ve etkili işe alım",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Seçme ve değerlendirme yöntemleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Eğitim ve geliştirme; oryantasyon, uygulama ve değerlendirme",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Çalışan bağlılığı, kariyer geliştirme ve performans yönetimi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Performans (Başarı) Değerleme; Performans Değerleme Yöntemleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ücretlendirme ve ödüller; stratejik ücret planları ve iş değerleme yöntemleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Piyasa ile rekabetçi ücret yapısı oluşturma ve profesyonel işler için ücretlendirme",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Çalışan bağlılığı, iş etiği, disiplin, çıkış görüşmeleri, çalışan destek programları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "İş sağlığı ve güvenliği, çalışma hayatında iyi olma hali",
+    "outcomes": "1-3-5"
+   }
+  ],
   "textbooks": [
    "Dessler, G. (2024). Human Resource Management (17th ed.). Pearson.",
    "Verhulst, S. L., & DeCenzo, D. A. (2024). Fundamentals of Human Resource Management (15th ed.). Wiley"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=363",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=363"
  },
  "ISL 363E": {
   "code": "ISL 363E",
   "name": "İnsan Kaynakları Yönetimi",
+  "nameEn": "Human Resources Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1182,16 +3113,88 @@
    "Hafta 13 · Çalışan bağlılığı, iş etiği, disiplin, çıkış görüşmeleri, çalışan destek programları",
    "Hafta 14 · İş sağlığı ve güvenliği, çalışma hayatında iyi olma hali"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnsan Kaynakları Yönetiminin (İKY) anlam ve önemi, İKY nin İşletme Mühendisliği içindeki yeri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 2,
+    "topic": "İKY neden önemlidir? Stratejik İKY, İKY analitiği ve İKY'yi şekillendiren eğilimler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İKY'nin stratejik rolü, kâr merkezi yaklaşımı ve insan kaynakları uygulamalarında güncel gelişmeler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İş analizi ve iş tasarımı; görev tanımları ve görev gerekleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "İnsan kaynakları planlaması ve işgücü analitiği; insan kaynağı ihtiyacının tahmini",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Dijital dönemde işe alım; aday kaynakları ve etkili işe alım",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Seçme ve değerlendirme yöntemleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Eğitim ve geliştirme; oryantasyon, uygulama ve değerlendirme",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Çalışan bağlılığı, kariyer geliştirme ve performans yönetimi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Performans (Başarı) Değerleme; Performans Değerleme Yöntemleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ücretlendirme ve ödüller; stratejik ücret planları ve iş değerleme yöntemleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Piyasa ile rekabetçi ücret yapısı oluşturma ve profesyonel işler için ücretlendirme",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Çalışan bağlılığı, iş etiği, disiplin, çıkış görüşmeleri, çalışan destek programları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "İş sağlığı ve güvenliği, çalışma hayatında iyi olma hali",
+    "outcomes": "1-3-5"
+   }
+  ],
   "textbooks": [
    "Dessler, G. (2024). Human Resource Management (17th ed.). Pearson.",
    "Verhulst, S. L., & DeCenzo, D. A. (2024). Fundamentals of Human Resource Management (15th ed.). Wiley"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=363",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=363"
  },
  "ISL 364": {
   "code": "ISL 364",
   "name": "İşletme Hukuku",
+  "nameEn": "Business Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1224,17 +3227,89 @@
    "Hafta 13 · Fikri ve sınai mülkiyet hakları (marka, patent vb.)",
    "Hafta 14 · Haksız rekabet ve rekabete aykırı davranışlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Açılış ve dersin tanıtımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Hukuk kavramı, hukukun yaptırımları, benzer kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hukuki işlemler, borç ilişkileri, sözleşmeler",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 4,
+    "topic": "Hukukun bölümleri (medeni, idare, ceza hukukları)",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 5,
+    "topic": "Anayasa ve Cumhuriyetin nitelikleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Hukukun kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Kişiler (gerçek ve tüzel)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Haklar (türleri ve korunması)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Satım sözleşmesi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kira ve finansal kira sözleşmeleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ticaret hukuku ve ticaret şirketleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kıymetli evrak hukuku",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Fikri ve sınai mülkiyet hakları (marka, patent vb.)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Haksız rekabet ve rekabete aykırı davranışlar",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Henry Cheeseman, Business Law, 11th Edition, Pearson, 2021",
    "omal Shah, Business Law Essentials, Vibrant, 2023",
    "Meredith J. Duncan, Ronald Turner, Rory D. Bahadur, Torts, A Contemporary Approach, 4th Edition, West Academic Publishing, 2024"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=364",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=364"
  },
  "ISL 364E": {
   "code": "ISL 364E",
   "name": "İşletme Hukuku",
+  "nameEn": "Business Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1267,17 +3342,89 @@
    "Hafta 13 · Fikri ve sınai mülkiyet hakları (marka, patent vb.)",
    "Hafta 14 · Haksız rekabet ve rekabete aykırı davranışlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Açılış ve dersin tanıtımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Hukuk kavramı, hukukun yaptırımları, benzer kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hukuki işlemler, borç ilişkileri, sözleşmeler",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 4,
+    "topic": "Hukukun bölümleri (medeni, idare, ceza hukukları)",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 5,
+    "topic": "Anayasa ve Cumhuriyetin nitelikleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Hukukun kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Kişiler (gerçek ve tüzel)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Haklar (türleri ve korunması)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Satım sözleşmesi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kira ve finansal kira sözleşmeleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ticaret hukuku ve ticaret şirketleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kıymetli evrak hukuku",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Fikri ve sınai mülkiyet hakları (marka, patent vb.)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Haksız rekabet ve rekabete aykırı davranışlar",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Henry Cheeseman, Business Law, 11th Edition, Pearson, 2021",
    "omal Shah, Business Law Essentials, Vibrant, 2023",
    "Meredith J. Duncan, Ronald Turner, Rory D. Bahadur, Torts, A Contemporary Approach, 4th Edition, West Academic Publishing, 2024"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=364",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=364"
  },
  "ISL 374": {
   "code": "ISL 374",
   "name": "İşletme Mühendisliği Tasarımı I",
+  "nameEn": "Management Eng. Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1312,15 +3459,87 @@
    "Hafta 13 · Proje Yönetimi ve Yeni Ürün Geliştirme Takımlarının Yönetilmesi",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik Tasarımı ve Tasarım Sürecine Giriş",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "İnovasyon ve Yeni Ürün Geliştirme Süreci",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Fırsat ve İhtiyaçların Belirlenme Süreci",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Pazar Analizi ve Bilgi Toplama Teknikleri 1",
+    "outcomes": "2-3-4-6"
+   },
+   {
+    "week": 5,
+    "topic": "Pazar Analizi ve Bilgi Toplama Teknikleri 2",
+    "outcomes": "2-3-4-6"
+   },
+   {
+    "week": 6,
+    "topic": "İhtiyaçların Oluşumu ve Göreli Önemlerinin Saptanması",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Ürün Spesifikasyonlarının Belirlenmesi",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Ürün Kavramlarının Geliştirilmesi",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Ürün Kavramlarının Seçim Yöntemleri ve Kavram Testleri",
+    "outcomes": "2-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım Teknolojileri ve Yönetimi, Detay Tasarım, Bilgisayar Destekli Mühendislik",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Maliyet Analizi",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Prototip Üretme, Ürün Fonksiyonellik Testi ve Kullanım Testi",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Proje Yönetimi ve Yeni Ürün Geliştirme Takımlarının Yönetilmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Ulrich, K. T. ve Eppinger, S. D. (2007), “Product Design and Development”, 4th Ed., McGrawHill Co."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=374",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=374"
  },
  "ISL 374E": {
   "code": "ISL 374E",
   "name": "İşletme Mühendisliği Tasarımı I",
+  "nameEn": "Management Eng. Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1355,15 +3574,87 @@
    "Hafta 13 · Proje Yönetimi ve Yeni Ürün Geliştirme Takımlarının Yönetilmesi",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik Tasarımı ve Tasarım Sürecine Giriş",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "İnovasyon ve Yeni Ürün Geliştirme Süreci",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Fırsat ve İhtiyaçların Belirlenme Süreci",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Pazar Analizi ve Bilgi Toplama Teknikleri 1",
+    "outcomes": "2-3-4-6"
+   },
+   {
+    "week": 5,
+    "topic": "Pazar Analizi ve Bilgi Toplama Teknikleri 2",
+    "outcomes": "2-3-4-6"
+   },
+   {
+    "week": 6,
+    "topic": "İhtiyaçların Oluşumu ve Göreli Önemlerinin Saptanması",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Ürün Spesifikasyonlarının Belirlenmesi",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Ürün Kavramlarının Geliştirilmesi",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Ürün Kavramlarının Seçim Yöntemleri ve Kavram Testleri",
+    "outcomes": "2-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım Teknolojileri ve Yönetimi, Detay Tasarım, Bilgisayar Destekli Mühendislik",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Maliyet Analizi",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Prototip Üretme, Ürün Fonksiyonellik Testi ve Kullanım Testi",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Proje Yönetimi ve Yeni Ürün Geliştirme Takımlarının Yönetilmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Ulrich, K. T. ve Eppinger, S. D. (2007), “Product Design and Development”, 4th Ed., McGrawHill Co."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=374",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=374"
  },
  "ISL 384": {
   "code": "ISL 384",
   "name": "Üretim Planlama ve Kontrol",
+  "nameEn": "Production Planning&Control",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1397,15 +3688,87 @@
    "Hafta 13 · Tam Zamanında Üretim Felsefesi ve Kanban Sistemi",
    "Hafta 14 · Bakım Onarım Planlaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Üretim Çeşitleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Talep Tahmin Teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Envanter Kavramı ve Yönetimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bağımsız Talep için Envanter Yönetimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Toplu Üretim Planlama Teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ana Üretim Çizelgeleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Malzeme İhtiyaç Planlaması (MRP)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "MRP Sistemlerinde Sipariş Büyüklüklerinin Hesaplanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Üretim Kaynaklarının Planlanması (MRP II)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kurumsal Kaynakların Planlanması (ERP) Kavramları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kapasite İhtiyaç Planlaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Atölyelerde İş Sıralama ve Yükleme",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tam Zamanında Üretim Felsefesi ve Kanban Sistemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Bakım Onarım Planlaması",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Krajewski, J. and Ritzman, B., 2001, Operations Management-Strategy and Analysis, 6th Edition, Prentice Hall, U.S. ISBN: 978-0201615456"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=384",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=384"
  },
  "ISL 384E": {
   "code": "ISL 384E",
   "name": "Üretim Planlama ve Kontrol",
+  "nameEn": "Production Planning&Control",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1439,15 +3802,87 @@
    "Hafta 13 · Tam Zamanında Üretim Felsefesi ve Kanban Sistemi",
    "Hafta 14 · Bakım Onarım Planlaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Üretim Çeşitleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Talep Tahmin Teknikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Envanter Kavramı ve Yönetimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bağımsız Talep için Envanter Yönetimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Toplu Üretim Planlama Teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ana Üretim Çizelgeleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Malzeme İhtiyaç Planlaması (MRP)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "MRP Sistemlerinde Sipariş Büyüklüklerinin Hesaplanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Üretim Kaynaklarının Planlanması (MRP II)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kurumsal Kaynakların Planlanması (ERP) Kavramları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kapasite İhtiyaç Planlaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Atölyelerde İş Sıralama ve Yükleme",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tam Zamanında Üretim Felsefesi ve Kanban Sistemi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Bakım Onarım Planlaması",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Krajewski, J. and Ritzman, B., 2001, Operations Management-Strategy and Analysis, 6th Edition, Prentice Hall, U.S. ISBN: 978-0201615456"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=384",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=384"
  },
  "ISL 421E": {
   "code": "ISL 421E",
   "name": "Örgütsel Davranış",
+  "nameEn": "Organizational Behaviour",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1483,16 +3918,88 @@
    "Hafta 13 · Örgütlerde Çatışma",
    "Hafta 14 · Örgüt Kültürü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Örgütsel Davranışa Giriş: Örgütsel Davranışa Konu Olan Meseleler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Birey Davranışının Temelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Değerler, Tutumlar, Öğrenme ve İş Tatmini",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kişilik ve Duygular",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Algılama ve Karar Verme",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Temel Motivasyon Kavramları ve Uygulamaları I",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Temel Motivasyon Kavramları ve Uygulamaları II",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Örgütlerde grup ve takım dinamikleri I",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Örgütlerde grup ve takım dinamikleri II",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Örgütlerde liderlik kavramı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Örgütlerde liderlik kavramı ve Güncel Yaklaşımlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Örgüt işleyişi içerisinde güç ve politika kavramları",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Örgütlerde Çatışma",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Örgüt Kültürü",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Colquitt, J. A., LePine, J. A., & Wesson, M. J. (2025). Organizational Behavior: Improving Performance and Commitment in the Workplace (8th ed.). McGraw Hill.",
    "Robbins, S. P., & Judge, T. A. (2026). Organizational Behavior (20th ed.). Pearson."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=421"
  },
  "ISL 432E": {
   "code": "ISL 432E",
   "name": "İşlemler Yönetiminde Benzetim",
+  "nameEn": "Simulation in Operations Mng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1527,15 +4034,87 @@
    "Hafta 13 · Proje Sunumu",
    "Hafta 14 · Proje Sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Benzetime giriş ve temel ilkeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Algoritma, basit benzetim örneği",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Girdi değişkenlerin analizi, bağımsızlık , histogram",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Girdi değişkenlerin analizi, PP ve QQ Grafikleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Girdi değişkenlerin analizi, ki-kare testi, kolmogorov simirnov testi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Rassal sayılar, rassal sayı üretme",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Benzetim tablosu örnekleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Doğrulama ve geçerlilik",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Çıktı Analizi: Sonlu sistemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Çıktı Analizi: Sonsuz sistemler",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Alternatif Sistemlerin Karşılaştırılması",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Proje Sunumu",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumu",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Law A.M., and Kelton W.D., (2000), Simulation Modeling and Analysis (3rd ed.), McGraw-Hill ISBN:0070592926"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=432"
  },
  "ISL 433": {
   "code": "ISL 433",
   "name": "İş Hukuku",
+  "nameEn": "Labor Law",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1568,17 +4147,89 @@
    "Hafta 13 · Çalışma süreleri",
    "Hafta 14 · İş sağlığı ve güvenliği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Açılış (tanıtım ve bilgilendirme)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İş hukukunun konusu, gelişimi ve kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İş hukukunun temel kavramları I",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Temel kavramlar II",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "İş Kanununun uygulama alanı, iş sözleşmesinin türleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İşçinin borçları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "İşverenin borçları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sözleşmenin askıda kalması",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Sözleşmenin sona ermesi (fesih dışı sona erme ve iş güvencesi)",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Süreli fesih",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Derhal fesih",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kıdem tazminatı",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Çalışma süreleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "İş sağlığı ve güvenliği",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Hamdi Mollamahmutoğlu, Muhittin Astarlı, Ulaş Baysal, İş Hukuku Ders Kitabı Cilt 1: Bireysel İş Hukuku, 8. Baskı, Lykeion, 2025",
    "Sarper Süzek, Süleyman Başterzi, İş Hukuku, 25. Baskı, Lykeion, 2025",
    "Öner Eyrenci, Savaş Taşkent, Devrim Ulucan, Esra Baskan, İş Hukuku, 11. Baskı, Beta, 2024"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=433",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=433"
  },
  "ISL 435E": {
   "code": "ISL 435E",
   "name": "The World Economy at a Glance",
+  "nameEn": "The World Economy at a Glance",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1609,15 +4260,87 @@
    "Hafta 13 · Maastricht Antlaşması ve Avro",
    "Hafta 14 · Türkiye-AB Gümrük Birliği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İşgücü verimliliği ve karşılaştırmalı üstünlük: Ricardo Modeli",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Özel Faktörler ve Gelir Dağılımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kaynaklar ve Ticaret: Heckscher-Ohlin Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Standart Ticaret Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Yeni Ticaret Modelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Uluslararası Ticaret Politikası: Enstrümanlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Gelişmekte Olan Ülkelerde Ticaret Politikası, Ticaret Politikasındaki Uyuşmazlıklar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Türkiyenin Dış Ticareti: Politika Değişiklikleri ve Figürler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Gümrük Tarifeleri ve Ticaret Genel Anlaşmasından (GATT) Dünya Ticaret Örgütüne (WTO)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Uluslararası Para Sistemi ve İMFnin rolü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Avrupa Ekonomik Bütünleşmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ortak Tarım Politikaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Maastricht Antlaşması ve Avro",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye-AB Gümrük Birliği",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Krugman, P.R and Obstfeld, M (2009) International Economics,Theory and Policy, 8th Ed. Pearson International Edition, USA."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=435",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=435"
  },
  "ISL 437E": {
   "code": "ISL 437E",
   "name": "Mod.Cross sect. & Panel Data",
+  "nameEn": "Mod.Cross sect. & Panel Data",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1631,12 +4354,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=437",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=437"
  },
  "ISL 439E": {
   "code": "ISL 439E",
   "name": "Int.to Mach.Learn.with Bus.App",
+  "nameEn": "Int.to Mach.Learn.with Bus.App",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1669,6 +4392,78 @@
    "Hafta 13 · Kümeleme yöntemleri - K-ortalamalı kümeleme - Sıradüzen (hiyerarşi) kümelemesi - Kümelemede uygulama konuları.",
    "Hafta 14 · Birliktelik kuralları anlayışı - Birliktelik kuralını öğrenmenin önsel algoritmsı - Kural oranının ölçülmesi - Destek ve güven - Önsellik ilkesiyle kural kümesi oluşturma - Pazar sepeti çözümlemesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makine öğrenmesi nedir? - Makine öğrenmesi uygulamaları - Modelin hassaslığının değerlendirilmesi - Regresyon mu, sınıflandırma mı? - Uyumun iyiliğinin ölçülmesi - Sapma-varyans al-ver sorunu - Denetimli ve denetimsiz öğrenme - R ile programlamaya giriş",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 2,
+    "topic": "Basit doğrusal regresyon - Katsayıların tahmini - Tahminlerin hassaslığı - Modelin doğruluğu - Çoklu doğrusal regresyon - Çoklu regresyon katsayılarının tahmini - R yazılımının temelleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Regresyon modelinde başka konular - Nitel kestirimciler - Doğrusal modelin uzantıları - Olası sorunlar - Katsayısal olmayan regresyon - K-en yakın komşu algoritması - R ile temel tahmin.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Sınıflamaya genel bakış - Lojistik regresyon - Lojistik model - Regresyon tahmini - Kestirimler yapma - Çoklu lojistik regresyon - Çoklu (>2) tepki sınıfıyla lojistik regresyon - R ile sınıflama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal diskriminant çözümlemesi - Sınıflama için Bayes Teoreminin kullanımı - Çoklu (p>1) özelliklerin Doğrusal diskriminant çözümlemesi - İkinci dereceden diskriminant çözümlemesi - K-en yakın komşu sınıflaması - Sınıflama yöntemlerinin karşılaştırılması.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Sade Bayes anlayışı - Bayesgil yöntemlerin temel kavramları - Bayesgil yöntemlerin temel kavramları - Ortak olasılık kavramı anlayışı - Bayes Teoremiyle koşullu olasılık hesabı - Sade Bayes algoritması - Laplace tahmin edicisi - Sade Bayes ile sayısal özelliklerin kullanımı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Yinelemeli örnekleme yöntemleri - Çapraz geçerlilik - Geçerlilik kümesi yaklaşımı - Birini-dışlayıp çapraz geçerlilik - k-katlı çapraz geçerlilik - Özçıkarım.",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Daraltma yöntemleri - Sırt regresyonu - Lasso - İnce ayar katsayısı seçimi - Boyut azaltma yöntemleri - Temel bileşenler regresyonu - Kısmi en küçük kareler - Yüksek boyutların ele alınışı.",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ağaç temelli yöntemler - Karar ağaçlarının temelleri - Regresyon ağaçları - Sınıflama ağaçları - Ağaç modelleri mi, regresyon modelleri mi? - Ağaçların üstünlük ve eksiklikleri - Torbalama - Rassal ormanlar - Hızlandırma.",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Destek vektör sınıflayıcıları - En büyük kenar sınıflayıcısı - Hiper-düzlem nedir? - Destekçi vektör makineleri - Doğrusal dışı karar sınırlarıyla sınıflama - Çoklu sınıflarla destekçi vektör makineleri (DVM) - Lojistik regresyonla ilişkisi.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sinir ağları anlayışı - Biyolojiden yapay sinir ağlarına - Başlatma işlevleri - Ağ topologisi - Katmanların sayısı - Bilgi gezisinin yönü - Her katmanda düğüm sayısı - Geri yayılımlı sinir ağları - Derin öğrenme.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Denetimsiz öğrenmeye giriş - Temel bileşenler çözümlemesi - Ana bileşenler nedir? - Temel bileşenlerin yorumlanması.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kümeleme yöntemleri - K-ortalamalı kümeleme - Sıradüzen (hiyerarşi) kümelemesi - Kümelemede uygulama konuları.",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Birliktelik kuralları anlayışı - Birliktelik kuralını öğrenmenin önsel algoritmsı - Kural oranının ölçülmesi - Destek ve güven - Önsellik ilkesiyle kural kümesi oluşturma - Pazar sepeti çözümlemesi.",
+    "outcomes": "1-2-5"
+   }
+  ],
   "textbooks": [
    "James, G., Witten, D., Hastie, T., Tibshirani, R. & Taylor, J. (2023). An Introduction to Statistical Learning with Applications in Python, Springer. ISBN: 978-3031387463",
    "Chollet, F. (2025). Deep Learning with Python, 3rd ed., Manning Publications. ISBN: 978-1633437166",
@@ -1679,12 +4474,12 @@
    "Murphy, K.P. (2023). Probabilistic Machine Learning: Advanced Topics, MIT Press. ISBN: 978-0262048439",
    "Murphy, K.P. (2022). Probabilistic Machine Learning: An Introduction, MIT Press. ISBN: 978-0262046824"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=439",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=439"
  },
  "ISL 443": {
   "code": "ISL 443",
   "name": "Proje Tasarımı ve Yönetimi",
+  "nameEn": "Project Design and Manag.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1718,15 +4513,87 @@
    "Hafta 13 · Projelerin sonuçlandırılması",
    "Hafta 14 · Dönem sonu projelerin sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje yönetiminde temel konular",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje değerlemesi ve seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Proje yöneticisi ve proje örgütü",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Proje planlama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Anlaşmazlık ve müzakere",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Projelerde maliyet yönetimi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Projelerde zaman yönetimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Projelerde kaynak ataması",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Proje planlama araçları, proje yazılımları (microsoft project planning programı kullanımı)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Projelerin kontrolü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Projelerde risk yönetimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Projelerde denetim",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Projelerin sonuçlandırılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem sonu projelerin sunumu",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Meredith, Jack and Mantel, Samuel J. Jr., 2008, Project Management. A Managerial Approach, John Wiley and Sons, Inc. ISBN: 9780470226216"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=443",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=443"
  },
  "ISL 443E": {
   "code": "ISL 443E",
   "name": "Proje Tasarımı ve Yönetimi",
+  "nameEn": "Project Design and Manag.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1760,15 +4627,87 @@
    "Hafta 13 · Projelerin sonuçlandırılması",
    "Hafta 14 · Dönem sonu projelerin sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje yönetiminde temel konular",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje değerlemesi ve seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Proje yöneticisi ve proje örgütü",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Proje planlama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Anlaşmazlık ve müzakere",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Projelerde maliyet yönetimi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Projelerde zaman yönetimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Projelerde kaynak ataması",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Proje planlama araçları, proje yazılımları (microsoft project planning programı kullanımı)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Projelerin kontrolü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Projelerde risk yönetimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Projelerde denetim",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Projelerin sonuçlandırılması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem sonu projelerin sunumu",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Meredith, Jack and Mantel, Samuel J. Jr., 2008, Project Management. A Managerial Approach, John Wiley and Sons, Inc. ISBN: 9780470226216"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=443",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=443"
  },
  "ISL 445E": {
   "code": "ISL 445E",
   "name": "Sürdürülebilirlik Yönetiminde Avrupa Liderliği",
+  "nameEn": "European Leadership for Sustainability Management",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1801,15 +4740,87 @@
    "Hafta 13 · AB Karbon Ayak İzi Değerlendirmesi ve Azaltım Stratejileri",
    "Hafta 14 · Sürdürülebilir Liderlik Uygulamaları Üzerine Etkileşimli Seminer"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Avrupa Yeşil Mutabakatı ve BM Sürdürülebilirlik Hedefleri: Genel Bakış ve Çerçeve",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İş Stratejilerini Avrupa Yeşil Mutabakatı Hedefleri ile Uyumlu Hale Getirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Avrupa Kuruluşlarında Döngüsel Ekonomi Uygulaması",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Yenilenebilir Enerji Geçişi: Avrupa'daki En İyi Uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Akıllı Mobilite Çözümleri: Avrupa Yeşil Mutabakatı Perspektifi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Sürdürülebilir Üretim ve Tüketim ile Avrupa Yeşil Mutabakatı Hedefleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Sürdürülebilir Akıllı Şehirler İçin Bina ve Yenileme: Avrupa Yaklaşımları",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "Avrupa Yeşil Mutabakatı İçin Politika Savunuculuğu: Liderlik Becerileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Yeşil Finans ve Yatırım Stratejileri: Avrupa Bağlamı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kapsayıcı Sürdürülebilirlik İçin Sosyal İnovasyon: Avrupa Modelleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sürdürülebilirlik İlerlemelerini İzleme ve Raporlama: Avrupa Kılavuzları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "AB İklim Yasası ve Kurumsal Liderlik: Uyum ve Ötesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "AB Karbon Ayak İzi Değerlendirmesi ve Azaltım Stratejileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Sürdürülebilir Liderlik Uygulamaları Üzerine Etkileşimli Seminer",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "Sustainability in Global Value Chains, Measures, Ethics and Best Practices for Responsible Businesses, 2021. Edited by Michael Henke & Holger Kohl. ISBNs: Paperback 978 1 78966 262 7 eBook 978 1 78966 263 4 First published in Great Britain and the United States in 2021 by Kogan Page Limited."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=445",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=445"
  },
  "ISL 447E": {
   "code": "ISL 447E",
   "name": "Ekonomi, İşletme ve Yönetimde Toplumsal Cinsiyet ve Sürdürülebilirlik",
+  "nameEn": "Gender and Sustainability in Economics , Business and Management",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1841,16 +4852,88 @@
    "Hafta 13 · Makroekonomi, Toplumsal Cinsiyet ve Sürdürülebilirlik: Yeşil Ekonomiyi tamamlayan Mor Ekonomi",
    "Hafta 14 · Açık kalan soruların yanıtlanması, son tartışma ve Ders değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Toplumsal Cinsiyet ve Toplumsal Cinsiyet Çalışmalarına Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Toplumsal Cinsiyet, Ekonomi, İşletme ve Yönetim ilişkisine Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ekonomide Toplumsal Cinsiyet Uçurumları: İstihdam, Kazanç ve İşlerin Ayrışması",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bakım Ekonomisi, Zaman Kullanımı, Ücretli ve Ücretsiz Çalışma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yönetim ve Liderlikte Toplumsal Cinsiyet",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "İşletme ve Örgütlerde Toplumsal Cinsiyet",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Toplumsal Cinsiyet ve Ekonomi üzerine Alternatif Kuramsal Çerçeveler ve Paradigmalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Toplumsal Cinsiyet, İşletme ve Yönetim üzerine Alternatif Kuramsal Çerçeveler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Toplumsal Cinsiyetin Eşitliğinin Ekonomiye Anaakımlaştırılması için Politikalar ve Kurumsal Mekanizmalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Toplumsal Cinsiyetin Eşitliğinin Yönetim ve İşletmelere Anaakımlaştırılması için Politikalar ve İşyeri Pratikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "İş-Yaşam Dengesi: Eleştirel Toplumsal Cinsiyet Yaklaşımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Makroekonomi, Toplumsal Cinsiyet ve Sürdürülebilirlik: İnsana Yakışır İşler Yaratan Büyüme, Yoksulluğun azaltılması ve Sosyoekonomik Eşitlik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Makroekonomi, Toplumsal Cinsiyet ve Sürdürülebilirlik: Yeşil Ekonomiyi tamamlayan Mor Ekonomi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Açık kalan soruların yanıtlanması, son tartışma ve Ders değerlendirmesi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Blau, F. and M. Ferber (2022) Economics of Women, Men and Work, (9th Edition). Oxford University Press.",
    "Powell, G. N. (2024), Gender in Management, 6th edition, Sage Publications"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=447",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=447"
  },
  "ISL 448E": {
   "code": "ISL 448E",
   "name": "Optimizasyon Modell.ve Uygl.",
+  "nameEn": "Optimization Models & App.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1884,18 +4967,90 @@
    "Hafta 13 · Optimizasyon Uygulamaları: Hizmet Yönetimi",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tam Sayılı DP ve Hedef Programlama Temel Modelleme Araçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Matematiksel Model Çözümünde Bilgisayar Uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Deterministik Dinamik Programlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Stokastik Dinamik Programlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Kuyruk Teorisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Benzetim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Optimizasyon Uygulamaları: Envanter Yönetimi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Optimizasyon Uygulamaları: Üretim Planlama ve Kontrol Problemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Optimizasyon Uygulamaları: Kaynak Yönetimi ve Yerleşim Problemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Optimizasyon Uygulamaları: Ulaştırma ve Lojistik Problemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Optimizasyon Uygulamaları: Makine, İş ve Ekip Çizelgeleme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Optimizasyon Uygulamaları: Portföy ve Gelir Yönetimi Problemleri, Pazarlama Uygulamaları, Proje Değerlendirme ve Yönetimi Problemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Optimizasyon Uygulamaları: Hizmet Yönetimi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları",
+    "outcomes": "1-6"
+   }
+  ],
   "textbooks": [
    "ÖZGÜVEN, C. (2008), Doğrusal Programlama ve Uzantıları, Detay Yayıncılık, Ankara, 978-9944-223-66-9",
    "WINSTON, W.L. (2004), Operations Research: Applications and Algorithms Text Book (Student Edition) Fourth Edition, Brooks/Cole Publishing Co.",
    "TAYLOR, B.W. (2006), Introduction to Management Science, 9th Edition, Prentice Hall.",
    "Ross, Sheldon M, (2006), A first course in probability, Upper Saddle River, N.J., Pearson Prentice Hall, 7th Edition"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=448",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=448"
  },
  "ISL 450E": {
   "code": "ISL 450E",
   "name": "Üretimde Veriml.ve Perf. Analz",
+  "nameEn": "Productivity and Performance Analysis in Production",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1928,16 +5083,88 @@
    "Hafta 13 · Dönem Projeleri Sunum",
    "Hafta 14 · Dönem Projeleri Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Verimlilik Kavramlarına Giriş, Karlılık-Verimlilik,Kalite-Verimlilik İlişkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İşletmelerde Verimlilik Değerlendirme Modelleri-İndeks Yaklaşımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Toplam Verimlilik/Çok Faktörlü Verimlilik Modeli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Toplam Verimlilik/Çok Faktörlü Verimlilik Modeli-Organizasyonel Hedeflerle İlişkisi-Grup Çalışması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Normative Verimlilik Kavramı-Grup Çalışması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Verimlilik İyileştirme Stratejileri: Hoshin Kanri, Benchmarking, Balance-Scorecard",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "İmalat Performansının Ölçümü-Örnek Olay Çalışması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Vaka Analizi I (İnşaat Sektörü), Vaka Analizi II (Restoran)",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Vaka Analizi III (Eğitim),Vaka Analizi IV.(Elektronik Sektörü)",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Vaka Analizi V.(Ağır Makine Sektörü), Vaka Analizi VI. (Deniz Ürünlerinin İşlenmesi, Toptan Satış ve Dağıtımı).",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Vaka Analizi VII. (Ulaşım Sektörü), Vaka Analizi VIII.(Sigortacılık)",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Konuk Konuşmacı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem Projeleri Sunum",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Projeleri Sunum",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "TOTAL PRODUCTIVITY MANAGEMENT, David J. Sumanth, CRC Press LLC, New York, 1998, 9781574440577",
    "PRODUCTIVITY ENGINEERING AND MANAGEMENT, David J. Sumanth, McGraw Hill, New York, 1985, 0070624267"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=450",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=450"
  },
  "ISL 452E": {
   "code": "ISL 452E",
   "name": "Menkul Kıym.ve Portf. Yönetimi",
+  "nameEn": "Financial Inst.&Portfolio Mng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1973,15 +5200,87 @@
    "Hafta 13 · Proje Sunumları",
    "Hafta 14 · Proje Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Finansal Piyasalara Genel Bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Türkiye'de ve Dünyada Finansal Kurumlar ve Sermaye Piyasaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sermaye Piyasası Yatırım Araçları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Hisse Senedi ve Tahvil Değerlemesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Temel ve Teknik Analiz",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Türev Ürünler: Vadeli İşlem Sözleşmeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Türev Ürünler: Opsiyonlar ve Swaplar",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Risk-Getiri İlişkisi ve Genel olarak Portföy",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Risk-Getiri İlişkisi ve Genel olarak Portföy",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Endeks, CAPM ve APT modelleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Portföy Yönetim Stratejileri ve Performans Ölçümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Riske Maruz Değer",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 13,
+    "topic": "Proje Sunumları",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları",
+    "outcomes": "5-6-7-8"
+   }
+  ],
   "textbooks": [
    "Sermaye Piyasası ve Menkul Değer Analizi (4. baskı), Turhan Korkmaz, Ali Ceyhan, Ekin Kitabevi, 2007, 9757338891"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=452",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=452"
  },
  "ISL 453": {
   "code": "ISL 453",
   "name": "İşletme Müh. Tasarımı II",
+  "nameEn": "Management Eng. Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2017,15 +5316,87 @@
    "Hafta 13 · Proje sunumu",
    "Hafta 14 · Proje sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tesis Tasarımı ve Malzeme Taşımaya Giriş",
+    "outcomes": "1-8"
+   },
+   {
+    "week": 2,
+    "topic": "İmalat Tesisi Tasarımında Yararlanılan Bilgi Kaynakları",
+    "outcomes": "1-2-3-8"
+   },
+   {
+    "week": 3,
+    "topic": "Zaman Etüdü",
+    "outcomes": "1-3-4-8"
+   },
+   {
+    "week": 4,
+    "topic": "Süreç Tasarımı",
+    "outcomes": "3-4-8"
+   },
+   {
+    "week": 5,
+    "topic": "Akış Analiz Teknikleri",
+    "outcomes": "3-5-8"
+   },
+   {
+    "week": 6,
+    "topic": "Faaliyet İlişki Analizi",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 7,
+    "topic": "Ergonomi ve İş İstasyonu Tasarım Alan Gereksinimleri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Yardımcı Servisler için Alan Gereksinimleri, Çalışan Servisleri için Alan Gereksinimleri",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem içi Proje Sunumu",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Malzeme Taşıma ve Malzeme Taşıma Ekipmanları",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 11,
+    "topic": "Ofis Yerleşim Teknikleri ve Alan Gereksinimleri",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Alan Tahsisi,Tesis Tasarımı ve Planı",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumu",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumu",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Meyers F. E. & Stephens M. P., 2009, Manufacturing Facilities Design and Material Handling, 4th Edition, Prentice Hall. ISBN-10:0135001056"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=453",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=453"
  },
  "ISL 453E": {
   "code": "ISL 453E",
   "name": "İşletme Müh. Tasarımı II",
+  "nameEn": "Management Eng. Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2061,15 +5432,87 @@
    "Hafta 13 · Proje sunumu",
    "Hafta 14 · Proje sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tesis Tasarımı ve Malzeme Taşımaya Giriş",
+    "outcomes": "1-8"
+   },
+   {
+    "week": 2,
+    "topic": "İmalat Tesisi Tasarımında Yararlanılan Bilgi Kaynakları",
+    "outcomes": "1-2-3-8"
+   },
+   {
+    "week": 3,
+    "topic": "Zaman Etüdü",
+    "outcomes": "1-3-4-8"
+   },
+   {
+    "week": 4,
+    "topic": "Süreç Tasarımı",
+    "outcomes": "3-4-8"
+   },
+   {
+    "week": 5,
+    "topic": "Akış Analiz Teknikleri",
+    "outcomes": "3-5-8"
+   },
+   {
+    "week": 6,
+    "topic": "Faaliyet İlişki Analizi",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 7,
+    "topic": "Ergonomi ve İş İstasyonu Tasarım Alan Gereksinimleri",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Yardımcı Servisler için Alan Gereksinimleri, Çalışan Servisleri için Alan Gereksinimleri",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem içi Proje Sunumu",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Malzeme Taşıma ve Malzeme Taşıma Ekipmanları",
+    "outcomes": "6-8"
+   },
+   {
+    "week": 11,
+    "topic": "Ofis Yerleşim Teknikleri ve Alan Gereksinimleri",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Alan Tahsisi,Tesis Tasarımı ve Planı",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumu",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumu",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Meyers F. E. & Stephens M. P., 2009, Manufacturing Facilities Design and Material Handling, 4th Edition, Prentice Hall. ISBN-10:0135001056"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=453",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=453"
  },
  "ISL 454E": {
   "code": "ISL 454E",
   "name": "Bütünleşik Sistem Tasarımı",
+  "nameEn": "Integrated System Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2103,15 +5546,87 @@
    "Hafta 13 · Proje sunumları",
    "Hafta 14 · Proje sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse ve projeye giriş - Proje gruplarının oluşturulması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje konusunun tartışılması ve belirlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje grubu çalışmaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Projelerdeki gelişmelerin sözlü olarak sunumu",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Proje grubu çalışmaları",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Projelerdeki gelişmelerin sözlü olarak sunumu",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Proje grubu çalışmaları",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Projelerdeki gelişmelerin sözlü olarak sunumu",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Proje raporlarının teslimi ve sunumu",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Proje grubu çalışmaları",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Projelerdeki gelişmelerin sözlü olarak sunumu",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Proje grubu çalışmaları",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumları",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları",
+    "outcomes": "3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Systems Thinking, Systems Practices, Peter Checkland , Wiley, 1999, 0471986062"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=454",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=454"
  },
  "ISL 458E": {
   "code": "ISL 458E",
   "name": "Fikri Mülkiyet Hakları",
+  "nameEn": "Intellectual Property Law",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2147,16 +5662,88 @@
    "Hafta 13 · Marka hakkına tecavüz",
    "Hafta 14 · Tasarım hakkı, tasarım korunması sistemi, tasarım tescil şartları, tescilsiz tasarımların korunması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel olarak fikri mülkiyet, Fikri hak türleri, Patent, Ticari sır, Eser sahibinin hakları, Marka, Tasarım vb.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fikri mülkiyet haklarının korunması yolları, Hukuk ve ceza davaları, Hukuk davalarında talepler, İhtiyati tedbirler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Patentler, Patent sistemi ve sistemin amacı, Patent verilmesi usulü, patent belgesinin içeriği",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Patent verilebilirlik şartları: Patentin konusu",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Patent verilebilirlik şartları:Yenilik",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Patent verilebilirlik şartları: Buluş basamağı, Sanayiye uygulanabilirlik, açıklık",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Patent haklarının lisans sözleşmeleri yoluyla kullandırılması",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Ticari sırlar, nitelikleri, sorumluluk şartları, Ticari sır – patent koruması tercihi",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Ticari sırrın korunması",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 10,
+    "topic": "Eser sahibinin hakları, hakkın konusu “eser”",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Eser sahibinin hakları: Maddi haklar, manevi haklar, hakkın ihlali, hakka getirilen sınırlamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Marka, Marka sistemi, Marka tescil prosedürü, Marka tescil şartları, tescil için mutlak ve nisbi red sebepleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Marka hakkına tecavüz",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım hakkı, tasarım korunması sistemi, tasarım tescil şartları, tescilsiz tasarımların korunması",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Cahit Suluk, Rauf Karasu, Temel Nal, Fikri Mülkiyet Hukuku, 8. Baskı, Seçkin, 2024",
    "Lionel Bently, Brad Sherman, Dev Gangjee, Philip Johnson, 6. Edition, 2022"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=458",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=458"
  },
  "ISL 460E": {
   "code": "ISL 460E",
   "name": "E-Pazarlama",
+  "nameEn": "E-Marketing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2189,16 +5776,88 @@
    "Hafta 13 · Proje sunumları",
    "Hafta 14 · Proje sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Pazarlama kavramındaki gelişmeler; İlişkisel pazarlama - Müşteri ilişkileri yönetimi ve ilgili kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Internet ve Pazarlama; E-ticaret ve E-pazarlama kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Internetin pazarlama stratejilerine etkisi; Pazarlama karması ve E-pazarlama karması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "E-pazarlama stratejileri; e-modeller ve ilgili kavramlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "E-modeller: Süreçleri, altyapı ve örnek e-ticaret sitesi yapımı, iş planı hazırlama",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "E-pazarlama modelleri değerlendirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "E-pazarlama modelleri: B2B, B2C",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "E-pazarlama modelleri: C2C, P2P",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ödeme sistemleri ve güvenlik",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "İçerik sağlayıcılar ve e-pazarlama ile ilişkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Topluluklar ve İnternet grupları",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Mobil ticaret",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumları",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları",
+    "outcomes": "1-3-5"
+   }
+  ],
   "textbooks": [
    "Özmen, Şule (2003), Ağ Ekonomisinde Yeni Ticaret Yolu E-Ticaret, Bilgi Üniversitesi Yayınları",
    "Strauss, Judy, ve Frost, Raymond (2009), E-Marketing, 5.Baskı, Pearson Education International"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=460",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=460"
  },
  "ISL 462": {
   "code": "ISL 462",
   "name": "Türkiye Ekonomisi",
+  "nameEn": "Turkish Economy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2231,15 +5890,86 @@
    "Hafta 13 · 2004-2005 Yılında Türkiye Ekonomisi",
    "Hafta 14 · Türkiye ekonomisinin güncel sorunları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cumhuriyetten 1960lara Türkiye Ekonomisi, Türkiyede Birincil Sermaye Birikimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Planlı Gelişme ve İthal İkameci Politikalar: 1960-80",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ekonomi Politikasında Köklü Dönüşüm: İhracat Yönelimli Büyüme, 1980-89",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "1980 sonrası İkinci Köklü Dönüşüm: Sermaye Hareketlerinin Serbestleşmesi, 1989 - 94",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Türkiyede Kamu Sektörü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Türkiyede Finansal Sektör ve Para Politikası",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav"
+   },
+   {
+    "week": 8,
+    "topic": "Türkiyede Reel Ekonomi, Yatırımlar, Büyüme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "1994 Ekonomik Krizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Örnek olay: Türkiye-1994 ve Güney Kore-1997 krizlerinin karşılaştırması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "2000 istikrar paketi ve döviz kuru çıpasına dayalı anti-enflasyon programı, Niyet Mektubu (Türkçe)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "2001 krizi ve dalgalı kura dönüş, Bankacılık Sektörünün Yeniden Yapılandırılması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "2004-2005 Yılında Türkiye Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye ekonomisinin güncel sorunları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Türkiye Ekonomisi, Yakup Kepenek, Nurhan Yentürk, Remzi Kitabevi, 2007, 9751407176"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=462",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=462"
  },
  "ISL 462E": {
   "code": "ISL 462E",
   "name": "Türkiye Ekonomisi",
+  "nameEn": "Turkish Economy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2272,15 +6002,86 @@
    "Hafta 13 · 2004-2005 Yılında Türkiye Ekonomisi",
    "Hafta 14 · Türkiye ekonomisinin güncel sorunları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cumhuriyetten 1960lara Türkiye Ekonomisi, Türkiyede Birincil Sermaye Birikimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Planlı Gelişme ve İthal İkameci Politikalar: 1960-80",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ekonomi Politikasında Köklü Dönüşüm: İhracat Yönelimli Büyüme, 1980-89",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "1980 sonrası İkinci Köklü Dönüşüm: Sermaye Hareketlerinin Serbestleşmesi, 1989 - 94",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Türkiyede Kamu Sektörü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Türkiyede Finansal Sektör ve Para Politikası",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav"
+   },
+   {
+    "week": 8,
+    "topic": "Türkiyede Reel Ekonomi, Yatırımlar, Büyüme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "1994 Ekonomik Krizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Örnek olay: Türkiye-1994 ve Güney Kore-1997 krizlerinin karşılaştırması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "2000 istikrar paketi ve döviz kuru çıpasına dayalı anti-enflasyon programı, Niyet Mektubu (Türkçe)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "2001 krizi ve dalgalı kura dönüş, Bankacılık Sektörünün Yeniden Yapılandırılması",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "2004-2005 Yılında Türkiye Ekonomisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye ekonomisinin güncel sorunları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Türkiye Ekonomisi, Yakup Kepenek, Nurhan Yentürk, Remzi Kitabevi, 2007, 9751407176"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=462",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=462"
  },
  "ISL 465E": {
   "code": "ISL 465E",
   "name": "Girişimcilik ve İnovasyon'a Giriş",
+  "nameEn": "Int.to Entrepreneurship&Innov.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2313,15 +6114,87 @@
    "Hafta 13 · Hikayeleştirme, sunum teknikleri",
    "Hafta 14 · Kariyer olarak girişimcilik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Girişimcilik nedir, Girişimcilik türleri, Girişim nedir; Teknoloji girişimciliği; Türkiye girişimcilik ekosistemi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Yaratıcılık ve inovasyon:",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Takım, takım çalışması, takım olma dinamikleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarım odaklı düşünme yaklaşımı/Problem tanımı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Empati: Kullanıcı, müşteriyi anlama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "İnsan odaklı saha çalışması: Mülakat teknikleri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Sorun tanımlama: Analize dayalı sorunun yeniden tanımlanması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Geliştirme: Çözüm kavramlarının Geliştirilmesi",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Çözüm Kavramlarının kullanıcılar/sektör temsilcileri tarafından test edilmesi",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Prototipleme: Kavramların ilk prototipleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sürdürülebilir bir çevre için tasarım",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Test: çözüm fonksiyonellik testi/",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Hikayeleştirme, sunum teknikleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Kariyer olarak girişimcilik",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Brown, Tim. Change by Design. 2009. HarperCollins: NY, USA"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=465",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=465"
  },
  "ISL 467E": {
   "code": "ISL 467E",
   "name": "Python ile İşletme Mühendisliği Uygulamaları",
+  "nameEn": "Management Eng.App.with Python",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2353,16 +6226,88 @@
    "Hafta 13 · Müşteri segmentasyonu uygulamaları",
    "Hafta 14 · Sınıflandırma uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri analizi uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Veri görselleştirme uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel tahmin algoritmaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İleri tahmin uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Envanter yönetimi uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Doğrusal programlama uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Optimizasyon uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yerleşim planlama uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yer seçimi uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Araç rotalama uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Çok kriterli karar verme uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Pazar sepet analizi uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Müşteri segmentasyonu uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Sınıflandırma uygulamaları",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "• Müller, A. C., & Guido, S. (2016). Introduction to machine learning with Python: a guide for data scientists. \" O'Reilly Media, Inc.\".",
    "• Hart, W. E., Laird, C. D., Watson, J. P., Woodruff, D. L., Hackebeil, G. A., Nicholson, B. L., & Siirola, J. D. (2017). Pyomo-optimization modeling in python (Vol. 67). Berlin: Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=467",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=467"
  },
  "ISL 477E": {
   "code": "ISL 477E",
   "name": "Sürdürülebilirlik Yönetimi",
+  "nameEn": "Sustainability Management",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2394,15 +6339,87 @@
    "Hafta 13 · Sürdürülebilir Kalkınma Hedefleri Raporlaması",
    "Hafta 14 · Gerçek sektör raporlarını analiz etme ve tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kalite yönetim felsefesi ve yöntemleri ile Sürdürülebilirlik arasındaki ilişki",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürdürülebilirliğin tanımı, 17 SKH'nin adım adım rehberi, AB'deki son durum ve Türkiye'nin Sürdürülebilir Kalkınma Hedefleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Sürdürülebilirlikte stratejik yönetim süreci",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sürdürülebilirliğin ölçülmesi ve Yaşam döngüsü maliyet analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Sürdürülebilirlikte yönetişim ve Sürdürülebilirlikte izleme ve uygulamalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Dijital dönüşüm ve sürdürülebilirlik",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Sistematik inovasyon ve sürdürülebilirlikte teknoloji",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sürdürülebilir finansın tanımı, ESG finansmanı ve uygulaması, yeşil finans kavramları ve uygulamaları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sürdürülebilir Tedarik Zinciri Yönetimi ve Yalın Yönetim Sistemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Yeşil ekonomi ile ilgili güncel gelişmeler ve eğilimler, Sınır karbon düzenleme mekanizması, Döngüsel ekonomi eylem planı ve sektörel etkiler, Sektörel yeşil dönüşüm yolları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Değer akış diyagramı, sürdürülebilirlikte süreç tasarımı, sürdürülebilirlik yönetiminin etkisi ve çözümleri ile bileşenler arasındaki etkileşimlerin haritalanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Sürdürülebilirlik Tedarik zinciri uyumluluğu, kurumsal sürdürülebilirlik raporlaması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sürdürülebilir Kalkınma Hedefleri Raporlaması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gerçek sektör raporlarını analiz etme ve tartışma",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "I. Sustainability in Global Value Chains, Measures, Ethics and Best Practices for Responsible Businesses. 2021. Edited by Michael Henke & Holger Kohl. ISBNs: Paperback 978 1 78966 262 7 eBook 978 1 78966 263 4 First published in Great Britain and the United States in 2021 by Kogan Page Limited."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=477",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=477"
  },
  "ISL 478E": {
   "code": "ISL 478E",
   "name": "Girişimcilik",
+  "nameEn": "Entrepreneurship",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2435,15 +6452,87 @@
    "Hafta 13 · Türkiye’den Girişimcilik Örnekleri",
    "Hafta 14 · Girişimcilikte yatırımcı bakışaçısı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Girişimcilik Kavramları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "İş Fikri Bulma; Yaratıcılık",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "İş Modeli Oluşturma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "İş Planı Geliştirme: Pazarlama Planı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "İş Planı Geliştirme: Üretim Planı",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "İş Planı Geliştirme: Organizasyon Planı",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "İş Planı Geliştirme: Temel Finansal Değerlendirme",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "İş Planı Uygulaması: Finansal risk ve senaryo analizi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "İş Planı Uygulaması: Girişimciler için Temel Hukuki Konular",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "İş Planı Uygulaması: Yeni Temalar (sosyal sorumluluk; sürdürülebilirlik)",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "İş Dünyasında İletişim",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "İş Dünyasına İş Planını Anlatmak",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Türkiye’den Girişimcilik Örnekleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Girişimcilikte yatırımcı bakışaçısı",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Burns, Paul. 2010. Entrepreneurship and Small Business: Start-up, Growth and Maturity. 3rd Ed. Palgrave Macmillan"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=478",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=478"
  },
  "ISL 4901": {
   "code": "ISL 4901",
   "name": "İşletme Müh. Tasarım Projesi I",
+  "nameEn": "Manage. Engin. Design Proj. I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2475,15 +6564,87 @@
    "Hafta 13 · Yazılı ve Sözlü Sunum için Hazırlık",
    "Hafta 14 · Yazılı ve Sözlü Sunum için Hazırlık"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Araştırma Sorusunun Belirlenmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Araştırma Sorusunun Belirlenmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Dönem Başı Sunuşu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem Ara Sunuşu",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Alternatif Çözüm Yaklaşımları: Yöntem",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Alternatif Çözüm Yaklaşımları: Yöntem",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Alternatif Çözüm Yaklaşımları: Yöntem",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=4901"
  },
  "ISL 4901E": {
   "code": "ISL 4901E",
   "name": "İşletme Müh. Tasarım Projesi I",
+  "nameEn": "Manage. Engin. Design Proj. I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2515,15 +6676,87 @@
    "Hafta 13 · Yazılı ve Sözlü Sunum için Hazırlık",
    "Hafta 14 · Yazılı ve Sözlü Sunum için Hazırlık"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Araştırma Sorusunun Belirlenmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Araştırma Sorusunun Belirlenmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Dönem Başı Sunuşu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem Ara Sunuşu",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Alternatif Çözüm Yaklaşımları: Yöntem",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Alternatif Çözüm Yaklaşımları: Yöntem",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Alternatif Çözüm Yaklaşımları: Yöntem",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=4901"
  },
  "ISL 4902": {
   "code": "ISL 4902",
   "name": "İşletme Müh.Tasarım Projesi II",
+  "nameEn": "Manage. Engin. Design Proj.II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2555,15 +6788,87 @@
    "Hafta 13 · Yazılı ve Sözlü Sunum için Hazırlık",
    "Hafta 14 · Yazılı ve Sözlü Sunum için Hazırlık"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Toplama ve Saha Çalışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Toplama ve Saha Çalışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Toplama ve Saha Çalışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Veri Toplama ve Saha Çalışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Dönem Başı Sunuşu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Seçilen Çözüm Yaklaşımı ve Ön Tasarım",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Seçilen Çözüm Yaklaşımı ve Ön Tasarım",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Seçilen Çözüm Yaklaşımı ve Ön Tasarım",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem Ara Sunuşu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Hassaslık/Deney/Prototip Analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Hassaslık/Deney/Prototip Analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Hassaslık/Deney/Prototip Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=4902"
  },
  "ISL 4902E": {
   "code": "ISL 4902E",
   "name": "İşletme Müh.Tasarım Projesi II",
+  "nameEn": "Manage. Engin. Design Proj.II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -2595,15 +6900,87 @@
    "Hafta 13 · Yazılı ve Sözlü Sunum için Hazırlık",
    "Hafta 14 · Yazılı ve Sözlü Sunum için Hazırlık"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Toplama ve Saha Çalışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Toplama ve Saha Çalışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Toplama ve Saha Çalışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Veri Toplama ve Saha Çalışması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Dönem Başı Sunuşu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Seçilen Çözüm Yaklaşımı ve Ön Tasarım",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Seçilen Çözüm Yaklaşımı ve Ön Tasarım",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Seçilen Çözüm Yaklaşımı ve Ön Tasarım",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem Ara Sunuşu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Hassaslık/Deney/Prototip Analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Hassaslık/Deney/Prototip Analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Hassaslık/Deney/Prototip Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=4902"
  },
  "ISL 492": {
   "code": "ISL 492",
   "name": "İşletme Müh. Tasarım Prj.",
+  "nameEn": "Management Eng. Design Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2635,15 +7012,87 @@
    "Hafta 13 · Yazılı ve Sözlü Sunum için Hazırlık",
    "Hafta 14 · Yazılı ve Sözlü Sunum için Hazırlık"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Araştırma Sorusunun Belirlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Araştırma Sorusunun Belirlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Panel Sunumu",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Modelleme ve Metod Seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Modelleme ve Metod Seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Panel Sunumu",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Veri Analizi ve Uygulama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Veri Analizi ve Uygulama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Veri Analizi ve Uygulama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=492"
  },
  "ISL 492E": {
   "code": "ISL 492E",
   "name": "İşletme Müh. Tasarım Prj.",
+  "nameEn": "Management Eng. Design Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2675,15 +7124,87 @@
    "Hafta 13 · Yazılı ve Sözlü Sunum için Hazırlık",
    "Hafta 14 · Yazılı ve Sözlü Sunum için Hazırlık"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Araştırma Sorusunun Belirlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Araştırma Sorusunun Belirlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Panel Sunumu",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yazın Taraması ve Kavramsal Çerçevenin Oluşturulması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Modelleme ve Metod Seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Modelleme ve Metod Seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Panel Sunumu",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Veri Analizi ve Uygulama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Veri Analizi ve Uygulama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Veri Analizi ve Uygulama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve Sözlü Sunum için Hazırlık",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=492"
  },
  "ISL 501E": {
   "code": "ISL 501E",
   "name": "İleri Yönetim Yaklaşımları",
+  "nameEn": "Advanced App.to Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2715,6 +7236,77 @@
    "Hafta 13 · Örgütsel Paydaşlar Ve Yönetişim Yapısı",
    "Hafta 14 · Yenilik (Kalkışması) Süreci Üzerine Yerel Anlatılar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yönetim Ve Örgüt Kuramının Bağlama İlişkin & Tarihsel Konumlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Yönetim Ve Örgüt Kuramının Bağlama İlişkin & Tarihsel Konumlanması (Devam)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Durumsallık Yaklaşımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kaynak Bağımlılığı Kuramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "İşlem Maliyetleri Kuramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Popülasyon Ekolojisi Görüşü",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Yeni-Kurumsallık Kuramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Örgüt Kuramına Post-Modern Bakış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Sosyal Ve Örgütsel Bağlamda Teknoloji",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Yenilik Ve Bilgi Yönetimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Ağ Yapılar Ve Bilgi Eksenli Örgütlenme",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Yönetim Ve Örgüt Kuramında Heves Ve Modalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Örgütsel Paydaşlar Ve Yönetişim Yapısı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Yenilik (Kalkışması) Süreci Üzerine Yerel Anlatılar"
+   }
+  ],
   "textbooks": [
    "Tsoukas, H.ve Knudsen, C. Eds.(2005) The Oxford Handbook Of Organization Theory. Oxford: Oxford University Press, ISBN: 978-0199275250.",
    "Clegg,S. Hardy,C. ve Nord, W.R. Eds. (1996) Handbook Of Organization Studies,2nd Edition, London: Sage, ISBN: 978-0761949961.",
@@ -2722,12 +7314,12 @@
    "Diğer makaleler öğretim üyesi tarafindan verilecektir.",
    "Other articles will be provided by the lecturer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=501"
  },
  "ISL 505": {
   "code": "ISL 505",
   "name": "Üretim Sistemleri Analizi",
+  "nameEn": "Manufacturing Systems Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2759,6 +7351,77 @@
    "Hafta 13 · Envanter Yönetimi: stokastik envanter kontrol modelleri",
    "Hafta 14 · Projelerin sunum ve tartışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Üretim sistemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Üretim sisteminin temel dinamikleri: tanımlar, parametreler , temel ilişkiler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Üretim sisteminin temel dinamikleri: işgücü kısıtlı sistemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Üretim sistemlerinde değişkenlik: süreç değişkenliği, değişkenliğin nedenleri, akış değişkenliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Üretim sistemlerinde değişkenlik: değişkenlik etkileşimi, engellemenin etkileri, değişkenlik havuzu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Değişkenliğin bozucu etkisi, üretim sistemlerinde değişkenliği kontrol etme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Süreç performansında değişkenliğin etkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Üretim sistemleri analizi için ileri talep tahmin teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Hiyerarşik üretim planlama, işgücü planlama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Üretim çizelgeleme: atölye çizelgeleme , yığın çizelgeleme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Üretim çizelgeleme: akış çizelgeleme, montaj hattı çizelgeleme,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Envanter Yönetimi: deterministik envanter kontrol modelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Envanter Yönetimi: stokastik envanter kontrol modelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Projelerin sunum ve tartışmaları"
+   }
+  ],
   "textbooks": [
    "Hopp W. J. & Spearman M. L. , Factory Physics, McGraw Hill 3.Ed., 2008",
    "Vollman T.E.,Berry W.L., Whybark D.C.,Jacobs F.R., Manufacturing Planning and Control for Supply Chain Management,6th Ed., McGraw Hill, 2011",
@@ -2767,12 +7430,12 @@
    "Cachon G. & Terwiesch C., Matching Supply with Demand, McGraw -Hill, 2. Ed., 2009",
    "Onwubolu, G. C., Emerging Optimization Techniques in Production Planning and Control. Imperial College Press, 2002."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=505"
  },
  "ISL 508": {
   "code": "ISL 508",
   "name": "Stratejik İnsan Kayn.Yönetimi",
+  "nameEn": "Strategic Human Resouces Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2805,17 +7468,89 @@
    "Hafta 13 · İnsan kaynakları yönetiminin geleceği: Yapay zekâ, sürdürülebilirlik, hibrit çalışma ve güncel eğilimler",
    "Hafta 14 · İşletme Analizi Sonuçlarının Sunulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse giriş; çalışma yaşamının anlamı ve önemi; çalışma yaşamında değişim ve dönüşüm",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Stratejik İnsan Kaynakları Yönetiminin anlamı ve önemi; çalışma ilişkileri perspektifi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Güncel çalışma yaşamı dinamikleri ve stratejik İKY yaklaşımları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "İnsan Kaynakları Yönetiminin evrimi ve yönetim kavramları ile ilişkisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Dünyada ve Türkiye’de İnsan Kaynakları Yönetiminin gelişimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "İKY işlevleri: İş analizi, görev tanımları ve yetkinlik yönetimi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 7,
+    "topic": "İnsan kaynakları planlaması ve sürdürülebilir yetenek yönetimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "İşe alım ve yerleştirme süreçleri; dijitalleşme ve çeşitlilik yaklaşımları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Eğitim ve geliştirme, kariyer yönetimi ve çalışan gelişimi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Performans yönetimi, geri bildirim süreçleri ve HR analytics uygulamaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Performans yönetimi, geri bildirim süreçleri ve HR analytics uygulamaları (devam)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Ücretlendirme yönetimi, çalışan bağlılığı ve işveren markası",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "İnsan kaynakları yönetiminin geleceği: Yapay zekâ, sürdürülebilirlik, hibrit çalışma ve güncel eğilimler",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "İşletme Analizi Sonuçlarının Sunulması",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Boxall, P.; Purcell,J. (2022), Strategy and Human Resource Management, Macmillan International Higher Education, Fiifth edition",
    "Dessler, G. (2024). Human Resource Management (17th ed.). Pearson. Verhulst, S. L., & DeCenzo, D. A. (2024). Fundamentals of Human Resource Management (15th ed.). Wiley.",
    "Wilkinson,A., Dundon,T & Yates,E (2025), Contemporary Human Resource Management: Text and Cases, 7th Ed., SAGE Publication , ISBN-13: 978-1529629996"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=508",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=508"
  },
  "ISL 509": {
   "code": "ISL 509",
   "name": "Çok Değişkenli Istat. Çözüm.",
+  "nameEn": "Multivariate Statistical Analysis",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2850,6 +7585,77 @@
    "Hafta 13 · Yapısal Denklemlerle Modelleme",
    "Hafta 14 · Yapısal Denklemlerle Modelleme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Çok Değişkenli Matematik Ve İstatistik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Bileşenler Analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Tanımlayıcı Faktör Analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrulayıcı Faktör Analizi",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 5,
+    "topic": "Manova",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrıştırma Analizi",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Kesikli Bağımlı Değişkenlerle Regresyon Modelleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Kesikli Bağımlı Değişkenlerle Regresyon Modelleri",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 9,
+    "topic": "Kümeleme Analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kanonik Korelasyon",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Conjoınt Analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Çokboyutlu Ölçeklendirme",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 13,
+    "topic": "Yapısal Denklemlerle Modelleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Yapısal Denklemlerle Modelleme"
+   }
+  ],
   "textbooks": [
    "JOHNSON R.A, WICHERN D.W. (2007) Applied Multivariate Statistical Analysis, Prentice Hall",
    "HAIR, ANDERSON, TATHAM, BLACK (2005) Multivariate Data Analysis, Prentice Hall",
@@ -2857,12 +7663,12 @@
    "TABACHNICK B.G. , FIDELL L.S. (2006) Using Multivariate Statistics, Allyn & Bacon",
    "TIMM N.H. ,(2007) Applied Multivariate Analysis, Springer"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=509"
  },
  "ISL 511": {
   "code": "ISL 511",
   "name": "Yatırım Analizi",
+  "nameEn": "Investments",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2898,17 +7704,88 @@
    "Hafta 13 · Proje sunumları",
    "Hafta 14 · Proje sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Finansal Piyasalara Genel Bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Türkiye'de ve Dünyada Finansal Kurumlar ve Sermaye Piyasaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sermaye Piyasası Yatırım Araçları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Hisse Senedi ve Tahvil Değerlemesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Temel ve Teknik Analiz",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Türev Ürünler: Vadeli İşlem Sözleşmeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Türev Ürünler: Opsiyonlar ve Swaplar",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Finansal Piyasalar ve Araçlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Risk-Getiri İlişkisi ve Genel Olarak Portföy",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Endeks, CAPM ve APT modelleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Portföy Yönetim Stratejileri ve Performans Ölçümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Riske Maruz Değer",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumları",
+    "outcomes": "5-6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları"
+   }
+  ],
   "textbooks": [
    "Korkmaz, T., Ceylan, A., (2007)Sermaye Piyasası ve Menkul Değer Analizi, 4. Baskı, Ekin Yayınları, ISBN: 978-9757338596",
    "Bodie, Z., Kane, A., Marcus, A.J.,(2010)Investments, 9th Edition, McGraw Hill, ISBN: 978-0073530703",
    "Karan, M.B., (2004) Yatırım Analizi ve Portföy Yönetimi, Gazi Yayınevi, ISBN: 9757313991"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=511"
  },
  "ISL 517E": {
   "code": "ISL 517E",
   "name": "Management of Technology",
+  "nameEn": "Management of Technology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2940,6 +7817,77 @@
    "Hafta 13 · Örnek Olay 3",
    "Hafta 14 · Dönem Projelerinin Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Teknolojı Yönetımıne GırıŞ-Teknoloji Kavramı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Teknolojik Gelişmenin Doğası Ve Teknolojinin Ekonomisi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Kurumsal Teknoloji Stratejisi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Teknolojinin Değerlendirilmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Örnek Olay 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Teknoloji Transferi Ve Adaptasyonu",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Teknoloji Tahmini Ve Uzgörüsü",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "AR-Ge Politikaları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Örnek Olay 2",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Yenı Teknolojinin Proje Yönetımı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Rekabet Aracı Olarak Teknoloji",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Teknoloji Ve Hükümet Politikaları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Örnek Olay 3",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Projelerinin Sunumları"
+   }
+  ],
   "textbooks": [
    "Narayanan, V. K. and O'Connor G. C. (2010), Encyclopedia of Technology and Innovation Management, 4th Edition, Mc Graw Hill.",
    "Petti, C.,, (2009), Cases in Technological Entrepreneurship, Edward Elgar Publishing Limited.",
@@ -2949,12 +7897,12 @@
    "Tidd, J., Bessant, J. and Pavitt, K. (1998) Managing Innovation; Integrating Technological, Market and Organizational Change, John Wiley & Sons.",
    "Rhodes, E. and Wield, D. (1994) Implementing New Technologies; Innovation and the Management of Technology, Blackwell."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=517"
  },
- "ISL 533E": {
-  "code": "ISL 533E",
+ "ISL 533": {
+  "code": "ISL 533",
   "name": "Veri Madenciliği",
+  "nameEn": "Data Mining",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2990,6 +7938,77 @@
    "Hafta 13 · Python ile birliktelik kuralları madenciliği",
    "Hafta 14 · Python ile kümeleme uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri madenciliğinin temel kavramları, gözetimli ve gözetimsiz öğrenme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri önişleme: Veri temizleme, veri dönüşümü ve aykırı değer analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bayes ağları ile sınıflandırma",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yapay sinir ağları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Destek vektör makineleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Derin öğrenme",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Sınıflandırıcı performansının değerlendirilmesi ve geçerleme yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sınıflandırma algoritmalarının parametre optimizasyonu",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Birliktelik kuralları madenciliği",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sıralı desen madenciliği",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Python ile veri analizi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Python ile sınıflandıma uygulamaları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Python ile birliktelik kuralları madenciliği",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Python ile kümeleme uygulamaları"
+   }
+  ],
   "textbooks": [
    "Alpaydin, E., 2020, Introduction to machine learning 4e, MIT press.",
    "Alpaydin, E., 2020, Introduction to machine learning 4e, MIT press.",
@@ -3002,12 +8021,12 @@
    "Witten, I. H., Frank, E., Hall, M. A., & Pal, C. J., 2016, Data Mining: Practical machine learning tools and techniques, Morgan Kaufmann.",
    "Witten, I. H., Frank, E., Hall, M. A., & Pal, C. J., 2016, Data Mining: Practical machine learning tools and techniques, Morgan Kaufmann."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=533",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=533"
  },
  "ISL 601E": {
   "code": "ISL 601E",
   "name": "Research Methods I",
+  "nameEn": "Research Methods I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -3040,6 +8059,77 @@
    "Hafta 13 · Sorgulayıcı veri çözümlemesi: Kutu çizim. Nokta çizim. Serpilme çizimi. Harf değeri gösterimi.",
    "Hafta 14 · Sorgulayıcı veri çözümlemesi: Ortanca işleme. Dirençli doğru."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel yaklaşım: Bilimin varsayımları. Bilişiin gelişmesi. Sosyal bilim paradigmaları. Sosyal bilimlerde etik ve siyaset.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İşletmelerde araştırma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Problem tanımı. Kuramsal çerçeve. Önsav (hipotez) geliştirme.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma tasarımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Deney tasarımı: Laboratuar deneyi . Alan deneyi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Deney tasarımı: Bağımsız değişkenin kontrolü. Bulandırıcı değişkenler. İçsel ve dışsal tutarlılık. Deney tasarımı türleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Değişkenlerin ölçülmesi: Kavramlar. Oluşturulmuş göstergeler. Tanımlar. Değişkenler. Ölçme düzeyleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "İndeksler. Ölçekler. Geçerlilik. Güvenilirlik. Hassaslık. Doğruluk. Nedensellik.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Veri toplama yöntemleri: Yöntemler. Kaynaklar. Yapılandırılmış ve yapılandırılmamış görüşmeler. Soru kağıtları. Nitel araştırma.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Örnekleme. Anakütle elemanı. Anakütle çerçevesi. Örneklem. Denek. Rassal ve rassal olmayan örnekleme.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Örnekleme: Hassaslık ve güvenilirlik. Örneklem büyüklüğü.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Sorgulayıcı veri çözümlemesi: Dal – yaprak. Beşli özet.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sorgulayıcı veri çözümlemesi: Kutu çizim. Nokta çizim. Serpilme çizimi. Harf değeri gösterimi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Sorgulayıcı veri çözümlemesi: Ortanca işleme. Dirençli doğru."
+   }
+  ],
   "textbooks": [
    "A. M. Graziano, M. L. Raulin (2000) Research Methods: A Process of Inquiry, 4th ed., Allyn and Bacon.",
    "J. W. Creswell, (2009) Research Design: Qualitative, Quantitative and Mixed Methods Approaches, 3rd ed., SAGE.",
@@ -3050,12 +8140,12 @@
    "P. F. Velleman, D. C. Hoaglin, (2004) ABC of EDA, The Internet-First University Press. http://ecommons.library.cornell.edu/bitstream/1813/78/2/A-B-C_of_EDA_040127.pdf",
    "W. G. Zigmund (2000) Business Research Methods, 6th ed., Dryden."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=601"
  },
  "ISL 603": {
   "code": "ISL 603",
   "name": "Teknoloji,Kürese.&İktis.Perfo.",
+  "nameEn": "Technology,Glob.and Ec. Perf.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -3088,6 +8178,77 @@
    "Hafta 13 · İkinci dönem ödevinin değerlendirilmesi",
    "Hafta 14 · İkinci dönem ödevinin değerlendirilmesi (devam)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tarihsel süreç içerisinde temel kavramlar: Teknoloji, Buluş, İcat, Yenileşim ve Teknolojik kabiliyet",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Teknolojik değişim süreci: Yenileşim ve yenileşme dinamiği; Ulusal yenileşim sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Teknolojiye farklı yaklaşımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Firma düzeyinde rekabetçi stratejinin yaratılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "İçeriye teknoloji transferi ve rekabetçilik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Öğrenci Sunumları-I",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Birinci dönem ödevinin değerlendirilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "İktisadi kalkınma, kürselleşme ve sürdürülebilirlik",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sanayi politikası ve firmaların rolü",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Uluslararası ticaret ve finans",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sürdürülebilir kalkınma için stratejik politika tasarımı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenci sunumları-II",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "İkinci dönem ödevinin değerlendirilmesi",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "İkinci dönem ödevinin değerlendirilmesi (devam)"
+   }
+  ],
   "textbooks": [
    "Ashford, Nicholas A. and Hall, Ralph P. (2011), Technology, Globalization and Sustainable Development, Yale University Press.",
    "Mowery, David c. and Rosenberg, Nathan, (1994) Technology and the Pursuit of Economic Growth, Cambridge University Press.",
@@ -3098,12 +8259,12 @@
    "Tidd, J., Bessant, J. & Pavitt, K. (1997) Managing Innovation – Integrating Technological, market and Organistional Change-, John Willey & Sons.",
    "Kim, L. & Nelson, R. (2000) Technology, Learning & Innovation: Experience of newly industrialising economies, Cambridge University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=603"
  },
  "ISL 612E": {
   "code": "ISL 612E",
   "name": "Uygulamalı Yapay Zeka",
+  "nameEn": "Applied Artificial Intelligence",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -3140,16 +8301,88 @@
    "Hafta 13 · Derin Öğrenme uygulamaları; Bitki çayı uygulamaları sınıflandırması, Algoritmaların sonuçlarının değerlendirmesi, bulguların analizi ve sentezi.",
    "Hafta 14 · Derin Öğrenme uygulamaları; Bitki çayı uygulamaları sınıflandırması, Algoritmaların sonuçlarının değerlendirmesi, bulguların analizi ve sentezi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgisayar temelli Yapay Zekâya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bulanık Mantık ve Bulanık Sistemler, bulanık mantık, sinir ağları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bulanık kümeler, Bulanık Modelleme, Bulanık çıkarım sistemleri ve kural tabanlı modeller",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Bulanık Modelleme uygulamaları; Öğrenme düzeyi tahmini, Hava kalite tahmini uygulaması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Makina Öğrenme Teknikleri ve Modelleri; Sınıflandırma, Tahmin, Kümeleme ve İlişkilendirme.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Denetimli ve denetimsiz makine öğrenme modelleri ve uygulamaları; SOM, SVM, ANNs, Regresyon ağacı, Ensemble metotlar, ANN Pattern recognition (YSA Desen tanıma).",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yapay Zekâ Teknikleri için veri hazırlama; Yapay zekâ model performansını değerlendirmek, dönüştürme, normalleştirme ve özellik çıkarmak. Uygun değerlendirme ölçütleri ve doğrulama teknikleri, model doğrulama, sağlamlık ve verimlilik bulgularının analizi ve sentezi.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Makine Öğrenme Teknikleri Uygulamaları; Sulama optimizasyonu, porselen imalatında kullanılan granüllerin boyut dağılım tahmin modeli, Tağşiş ve hileli işlemler ile ilgili sınıflandırma uygulamaları, Radyasyona uğramış çay bitkilerinin kümelenmesi uygulaması, Alzheimer hasta sınıflandırması, Kalp Hastaları sınıflandırması, Bal Kalite Tahmini.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "ANFIS-Uyarlanabilir nöro-bulanık sistemler.",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "ANFIS uygulamaları; Öğrenci Öğrenme düzeyi tahmini, Hava kalitesi tahmini, Solar Radyasyon Tahmini uygulaması. Bulguların analizi ve sentezi.",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Derin Öğrenme Algoritmalarına giriş ve etik uygulamalar",
+    "outcomes": "7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Derin Öğrenme uygulamaları; bezelye-fıstık karışım tağşiş uygulaması.",
+    "outcomes": "7-8-9"
+   },
+   {
+    "week": 13,
+    "topic": "Derin Öğrenme uygulamaları; Bitki çayı uygulamaları sınıflandırması, Algoritmaların sonuçlarının değerlendirmesi, bulguların analizi ve sentezi.",
+    "outcomes": "7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Derin Öğrenme uygulamaları; Bitki çayı uygulamaları sınıflandırması, Algoritmaların sonuçlarının değerlendirmesi, bulguların analizi ve sentezi.",
+    "outcomes": "7-8-9"
+   }
+  ],
   "textbooks": [
    "Neuro-Fuzzy and Soft Computing- A computational Approach to Learning and Machine Intelligence, Jang, J., Sun, CT., Mizutani, E., Prentice Hall.",
    "Fuzzy Logic with Engineering Applications, Ross, TJ., Wiley."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=612",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=612"
  },
  "ISL 696E": {
   "code": "ISL 696E",
   "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -3193,6 +8426,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -3205,7 +8509,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=696"
  }
 }

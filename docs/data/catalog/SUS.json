@@ -2,6 +2,7 @@
  "SUS 301E": {
   "code": "SUS 301E",
   "name": "Sürdürülebilir Kalkınmanın Temelleri",
+  "nameEn": "Fundamentals of Sustainable Development",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -33,16 +34,88 @@
    "Hafta 13 · Öğrenci Projeleri ve Tartışma",
    "Hafta 14 · Öğrenci Projeleri ve Tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş & Sürdürülebilirlik ile Sürdürülebilir Kalkınmanın Kısa Tarihi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürdürülebilir Kalkınma Amaçları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Çevresel, Sosyal ve Yönetişim Kavramı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Sürdürülebilir Tüketim ve Dayanıklı Şehirler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Herkes için Sağlık ve Gıda güvenliği",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Biyoçeşitliliği & Ekosistemi Koruma",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "İklim Eylemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Toplumsal Kapsayıcılık & Herkes için Eğitim",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Gezegensel Sınırlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sürdürülebilir Enerji Yönetimi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "2030 ve Sonrası için Gündem",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenci Projeleri ve Tartışma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Projeleri ve Tartışma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Projeleri ve Tartışma",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Sachs, J.D. (2015). The age of sustainable development. In the Age of Sustainable Development. Columbia University Press.",
    "Urata, S., Kuroda, K. & Tonegawa, Y. (Eds.) (2023). Sustainable development disciplines for humanity: Breaking down the 5ps - people planet, prosperity , peace and partnerships. Springer Nature Singapure."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=301"
  },
  "SUS 302E": {
   "code": "SUS 302E",
   "name": "İklim Değişikliği: Uyum ve Azaltım",
+  "nameEn": "Climate Change: Adaptation and Mitigation",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -74,15 +147,73 @@
    "Hafta 13 · İklim yönetişimi & Uluslararası anlaşmalar (Paris Anlaşması, COP, NDC)",
    "Hafta 14 · Gelecek rotaları (Gelişmekte olan konular)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İklim değişikliği bilimine giriş (İklim sistemi, sera etkisi, geri besleme mekanizmaları)"
+   },
+   {
+    "week": 2,
+    "topic": "Azaltım ve uyum kavramları (Tanım, stratejiler, küresel ve bölgesel ölçekler)"
+   },
+   {
+    "week": 3,
+    "topic": "Küresel emisyonlar (Sektörel emisyonlar, ulusal sorumluluklar)"
+   },
+   {
+    "week": 4,
+    "topic": "Enerji sistemlerinde emisyon azaltımı (Yenilenebilir enerji, elektrifikasyon, verimlilik)"
+   },
+   {
+    "week": 5,
+    "topic": "Ulaşım ve kent planlaması (Sürdürülebilir ulaşım, yürünebilirlik, toplu taşıma)"
+   },
+   {
+    "week": 6,
+    "topic": "Tarım, arazi kullanımı ve ormancılık (Toprak karbonu, ormansızlaşma, rejeneratif karbon)"
+   },
+   {
+    "week": 7,
+    "topic": "Karbon fiyatlama ve politika enstrümanları (Karbon vergisi, sınırla-ticaretini yap, teşvikler, düzenlemeler)"
+   },
+   {
+    "week": 8,
+    "topic": "Uyum kavramının temelleri (Kırılganlık, dirençlilik, uyum kapasitesi)"
+   },
+   {
+    "week": 9,
+    "topic": "Sektörel uyum: Su, sağlık ve altyapı (Su güvenliği, halk sağlığı, dayanıklı altyapı)"
+   },
+   {
+    "week": 10,
+    "topic": "Kent & toplum adaptasyonu (Kent planlaması, yerel eylem, yeşil altyapı)"
+   },
+   {
+    "week": 11,
+    "topic": "Yerli & geleneksel bilgi (Topluluk liderliğindeki uyum, kültürel bilgi)"
+   },
+   {
+    "week": 12,
+    "topic": "İklim finansmanı (İklim fonları, sigorta, yatırım, hesap verebilirlik)"
+   },
+   {
+    "week": 13,
+    "topic": "İklim yönetişimi & Uluslararası anlaşmalar (Paris Anlaşması, COP, NDC)"
+   },
+   {
+    "week": 14,
+    "topic": "Gelecek rotaları (Gelişmekte olan konular)"
+   }
+  ],
   "textbooks": [
    "Gupta, B. D. (2021). Introduction to Climate Change Management: Transitioning to a Low-Carbon Economy. Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=302"
  },
  "SUS 303E": {
   "code": "SUS 303E",
   "name": "Ekoloji ve Çevresel Sürdürülebilirlik",
+  "nameEn": "Ecology & Environmental Sustainability",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -112,15 +243,73 @@
    "Hafta 13 · Uygulamalı Ekoloji ve Koruma",
    "Hafta 14 · İklim Değişikliği ve Ekosistem Direnci"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çevresel Sürdürülebilirlik, Sürdürülebilirlik için Zaman Ölçeği, Ekosistemler"
+   },
+   {
+    "week": 2,
+    "topic": "İnsan Nüfusu, Mineral Kaynakları"
+   },
+   {
+    "week": 3,
+    "topic": "Hava Kirlenmesi ve Kontrolü"
+   },
+   {
+    "week": 4,
+    "topic": "Su Kirlenmesi ve Kontrolü"
+   },
+   {
+    "week": 5,
+    "topic": "Katı ve Tehlikeli Atık Yönetimi & Yaşam Döngüsü Değerlendirmesi"
+   },
+   {
+    "week": 6,
+    "topic": "Konvansiyonel ve Temiz Enerji Kaynakları"
+   },
+   {
+    "week": 7,
+    "topic": "Enerji Dönüşüm Teknolojileri ve Ekolojik Etkileri"
+   },
+   {
+    "week": 8,
+    "topic": "Çevresel Sürdürülebilirlikte Yenilenebilir Enerjinin Rolü"
+   },
+   {
+    "week": 9,
+    "topic": "Arz Talep Dengesi"
+   },
+   {
+    "week": 10,
+    "topic": "Enerji Ekosisteminde Gelecek Tahmini"
+   },
+   {
+    "week": 11,
+    "topic": "Ekolojik Sistemlerin Temelleri"
+   },
+   {
+    "week": 12,
+    "topic": "Biyoçeşitlilik ve Küresel Ekolojik Sorunlar"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulamalı Ekoloji ve Koruma"
+   },
+   {
+    "week": 14,
+    "topic": "İklim Değişikliği ve Ekosistem Direnci"
+   }
+  ],
   "textbooks": [
    "Gilbert M. Masters and Wendell P. Ela, Introduction to environmental engineering and science: Pearson New International Edition, 3/e, ISBN-10: 1292025751; ISBN-13: 9781292025759, 2013, Pearson, 696 pp, Published 23 Jul 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=303"
  },
  "SUS 402E": {
   "code": "SUS 402E",
   "name": "Yeşil Ekonomi",
+  "nameEn": "Green Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -147,18 +336,76 @@
    "Hafta 13 · Proje Sunumları-1",
    "Hafta 14 · Proje Sunumları-2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Makro İktisadi Göstergeler"
+   },
+   {
+    "week": 3,
+    "topic": "Çevresel hareketin gelişimi ve Yeşil Ekonomi’nin doğuşu"
+   },
+   {
+    "week": 4,
+    "topic": "Sürdürülebilir Kalkınma ve Temel Kuramlar"
+   },
+   {
+    "week": 5,
+    "topic": "Yeşil Taksonomi ve Sürdürülebilir Finansman"
+   },
+   {
+    "week": 6,
+    "topic": "Seragazı Fiyatlandırma ve Türkiye Emisyon Ticaret Sistemi"
+   },
+   {
+    "week": 7,
+    "topic": "Girdi-Çıktı Analizi"
+   },
+   {
+    "week": 8,
+    "topic": "Ekolojik Ayak İzi Metodolojisi ve Bileşenleri"
+   },
+   {
+    "week": 9,
+    "topic": "Yeşil Mutabakat ve Tarihi Geri Plan"
+   },
+   {
+    "week": 10,
+    "topic": "Avrupa Yeşil Mutabakatı, Bileşenleri ve Ekonomik Etki Kanalları"
+   },
+   {
+    "week": 11,
+    "topic": "Sınırda Karbon Düzenleme Mekanizması ve Olası Sektörel Etkiler"
+   },
+   {
+    "week": 12,
+    "topic": "Döngüsel Ekonomi Eylem Planı ve Olası Sektörel Etkiler"
+   },
+   {
+    "week": 13,
+    "topic": "Proje Sunumları-1"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları-2"
+   }
+  ],
   "textbooks": [
    "T. Tietenberg and Lewis, L. (2018) Environmental & Natural Resource Economics, 11th edition, Pearson.",
    "R. Hahnel (2011) Green Economics: Confronting the Ecological Crisis, M.E. Sharpe.",
    "Rifkin, J. (2019) The Green New Deal: Why the Fossil Fuel Civilization Will Collapse by 2028, and the Bold Economic Plan to Save Life on Earth, Macmillan USA.",
    "Miller, R.E. and Blair, P.D. (2012) Input-Output Analysis: Foundations and Extensions. 2nd Edition, Cambridge University Press, Cambridge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=402"
  },
  "SUS 403E": {
   "code": "SUS 403E",
   "name": "Yeşil ve Dijital Dönüşüm",
+  "nameEn": "Green and Digital Transformation",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -188,16 +435,74 @@
    "Hafta 13 · Dijital Dönüşümü Yönlendiren Teknolojiler-3: Bulut Bilişim ve Veri Yönetimi",
    "Hafta 14 · Dijital Dönüşümü Yönlendiren Teknolojiler-4: IoT ve Sensörler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sürdürülebilirlikle İlgili Temel Kavramlar-1 (İklim değişikliği, biyoçeşitlilik, ekosistem güvenliği ve sorumlu tüketim)"
+   },
+   {
+    "week": 2,
+    "topic": "Sürdürülebilirlikle İlgili Temel Kavramlar-2 (Emisyon kontrolü ve yönetimi, döngüsel ekonomi ve kaynak verimliliği)"
+   },
+   {
+    "week": 3,
+    "topic": "Uluslararası Sürdürülebilirlik Raporlamasına Yönelik Çerçeve ve Standartlar"
+   },
+   {
+    "week": 4,
+    "topic": "Kurumsal Sürdürülebilirlikte İtici Güçler (ESG ve önemlilik)"
+   },
+   {
+    "week": 5,
+    "topic": "Sürdürülebilirliğe İlişkin Düzenlemeler ve Türkiye’deki Sektörlere Etkisi (BM SKA, Paris İklim Anlaşması, AB Yeşil Mutabakatı, 55’e Uyum)"
+   },
+   {
+    "week": 6,
+    "topic": "Sürdürülebilirliğe İlişkin Düzenlemeler ve Türkiye’deki Sektörlere Etkisi-2 ve TSRS"
+   },
+   {
+    "week": 7,
+    "topic": "Yıliçi Sınavı"
+   },
+   {
+    "week": 8,
+    "topic": "Karbon Ayak İzi Hesaplama Metodolojileri, Karbon-Nötr & Karbon-Sıfır Kavramları"
+   },
+   {
+    "week": 9,
+    "topic": "Dönüşümde Ekonomik, Sosyal ve Ekonomik Metrikler"
+   },
+   {
+    "week": 10,
+    "topic": "Dijital Çözümlere Duyulan İhtiyaçlar"
+   },
+   {
+    "week": 11,
+    "topic": "Dijital Dönüşümü Yönlendiren Teknolojiler-1: Veri Analitiği ve Yapay Zeka"
+   },
+   {
+    "week": 12,
+    "topic": "Dijital Dönüşümü Yönlendiren Teknolojiler-2: Blokzincir"
+   },
+   {
+    "week": 13,
+    "topic": "Dijital Dönüşümü Yönlendiren Teknolojiler-3: Bulut Bilişim ve Veri Yönetimi"
+   },
+   {
+    "week": 14,
+    "topic": "Dijital Dönüşümü Yönlendiren Teknolojiler-4: IoT ve Sensörler"
+   }
+  ],
   "textbooks": [
    "Robertson, M. (2021). Sustainability principles and practice. Routledge.",
    "Siebel, T. M. (2019). Digital transformation: survive and thrive in an era of mass extinction. RosettaBooks."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=403",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=403"
  },
  "SUS 404E": {
   "code": "SUS 404E",
   "name": "Sürdürülebilir Logistik ve Tedarik Zinciri Yönetimi",
+  "nameEn": "Sustainable Supply Chain and Logistics Management",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -229,15 +534,87 @@
    "Hafta 13 · Bozulabilir Gıda Ürünlerinin Tedarik Zinciri Planlaması ve Atık Azaltma Yöntemleri",
    "Hafta 14 · Tedarik Zincirlerinde Sürdürülebilirlik için Risk Yönetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sürdürülebilir Tedarik Zinciri ve Lojistiğin temelleri, amaçları, ilgilenilen problemler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Ürün Yaşam döngüsü değerlendirmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Atıkların Geri Dönüşümü için Yasal Yükümlülükler: Elektrik-Elektronik Atıkların Geri Dönüşümü Yönetmeliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tersine ve kapalı döngü tedarik zinciri ağ optimizasyonu: Tesis Yeri Seçimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tersine Lojistik Kapsamında Atıkların Geri dönüşüm için lojistik ve operasyonel planlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Elektrikli ve Elektronik Ürün Geri Dönüşümü Kapsamında İyi Uygulama Örnekleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Şehiriçi Yolcu Taşımacılığında Filoların Alternatif Yakıtlı Araçlarla Dekarbonizasyonu: Elektrik Araçların Kullanımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sanayinin ve Lojistik Sektörlerinin Dekarbonizasyonu için Hidrojen Tedarik Zincirinin Tasarımı: Ulusal Hidrojen Yol Haritası ve Üretim, Depolama ve Taşıma Kapasitesi Planlaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Ağır Yük Taşımacılığında Hidrojen Yakıt Hücreli Araçlarla Filo Dönüşümü Planlaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Üretim Sistemlerinde Sürdürülebilirlik Analizi ve İyileştirme Yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Sürdürülebilir Envanter ve Satınalma Yönetimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Sanayi kuruluşlarının dekarbonizasyonu için teknolojik dönüşüm planlaması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Bozulabilir Gıda Ürünlerinin Tedarik Zinciri Planlaması ve Atık Azaltma Yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Tedarik Zincirlerinde Sürdürülebilirlik için Risk Yönetimi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Bouchery, Y., Corbett, C., Fransoo, J. C., & Tan, T. (Eds.). (2016). Sustainable supply chains. Berlin: Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=404",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=404"
  },
  "SUS 503E": {
   "code": "SUS 503E",
   "name": "Sürdürülebilir Kalkınmanın Temelleri",
+  "nameEn": "Sustainability Develop.Funda.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -269,6 +646,78 @@
    "Hafta 13 · Uygulama Örnekleri",
    "Hafta 14 · Uygulama Örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sürdürülebilir Kalkınmaya Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Eşitsiz Bir Dünya: Eşitsizlik, Yoksulluk, Mutluluk ve Refah",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Ekonomik Kalkınmanın Kısa Tarihi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Aşırı Yoksulluğu Bitirmek",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Eğitim ve Sağlık",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Global sınırlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Cinsiyet Eşitliği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sürdürülebilir Gıda Temini",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Sürdürülebilir Şehirler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sürdürülebilir Yapılı Çevre",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "İklim değişikliği",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sürdürülebilir Enerji Kaynakları ve Yenilenebilir Enerji",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama Örnekleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama Örnekleri",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "The Age of Sustainable Development, Jeffrey Sachs, Columbia University Press, Mar 3, 2015, 544 pages.",
    "-",
@@ -276,12 +725,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=503"
  },
  "SUS 509E": {
   "code": "SUS 509E",
   "name": "Sürdürülebilirlik için Bilim Felsefesi",
+  "nameEn": "Philosophy of Scie.for Susta.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -312,11 +761,82 @@
    "Hafta 13 · Sürdürülebilirlikte normative değerlerin etkisi",
    "Hafta 14 · Gelecek öngörüleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimlerin ve felsefenin tarihsel gelişimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Bilim Felsefesi ile ilgili temel kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Bilim, Felsefe ve Bilimsel yöntem",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Tarihten günümüze bilim anlayışları-1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tarihten günümüze bilim anlayışları-2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sürdürülebilirlik Bilimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Bilimin epistemolojisi-1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilimin epistemolojisi-2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Çevre, ekonomi ve sosyal bilimler ile ilişkiler-1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çevre, ekonomi ve sosyal bilimler ile ilişkiler-2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Karar vermede kavramsal sorular ve değerlerin rolü-1",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Karar vermede kavramsal sorular ve değerlerin rolü-2",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Sürdürülebilirlikte normative değerlerin etkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Gelecek öngörüleri",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Kosso, P. (1992). Reading the book of nature: An introduction to the philosophy of science. Cambridge University Press.",
    "Pereira, A. G., & Funtowicz, S. (2015). Science, Philosophy and Sustainability. The End of the Cartesian dream. London."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SUS&dersNo=509"
  }
 }

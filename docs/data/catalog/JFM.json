@@ -2,6 +2,7 @@
  "JFM 501": {
   "code": "JFM 501",
   "name": "Mühendislik Matematiği",
+  "nameEn": "Engineering Mathematics",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -34,6 +35,77 @@
    "Hafta 13 · Yüzey çakıştırma yöntemleri.",
    "Hafta 14 · Vektörel diferansiyel hesap: gradient, diverjans, rotasyon."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Alelade ve kısmi diferansiyel denklemlere giriş.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Birinci ve ikinci mertebeden diferansiyel denklemler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yay-kütle-soğurucu sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sismograf teorisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Isı denkleminin çözümü.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Isı denkleminin çözümü - özel durumlar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Dalga denkleminin çözümü.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dalga denkleminin çözümü - özel durumlar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Diferansiyel denklemlerin sayısal çözümlerine giriş.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Isı denkleminin sayısal çözümü.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Dalga denkleminin sayısal çözümü.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Doğru, eğri çakıştırma yöntemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Yüzey çakıştırma yöntemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Vektörel diferansiyel hesap: gradient, diverjans, rotasyon."
+   }
+  ],
   "textbooks": [
    "Gustafson, K., 1980, Introduction to Partial Differential Equations and Hilbert Space Methods, , John Wiley and Sons.",
    "Braun, M., 1983, Differential Equations and Their Applications, Springer Verlag.",
@@ -41,12 +113,12 @@
    "Spiegel, M.R., 1959, Vector Analysis, Schaumis Outline Series, McGraw-Hill.",
    "Çağlıyan, M., Çelebi, O., 2002, Kısmi Diferansiyel Denklemler, Vipaş A.Ş."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=501"
  },
  "JFM 503E": {
   "code": "JFM 503E",
   "name": "Signal Analysis in Geophysics",
+  "nameEn": "Signal Analysis in Geophysics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -80,6 +152,77 @@
    "Hafta 13 · Laplace Dönüşümü, Laplace dönüşümlerinin yakınsama bölgesi, yakınsama bölgesi üzerinde belirli kısıtlamalar, ve çözümlü örnekler.",
    "Hafta 14 · Z-dönüşümü, z-dönüşümlerinin yakınsama bölgesi, yakınsama bölgesi üzerinde belirli kısıtlamalar, ve çözümlü örnekler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sürekli ve ayrık zamanlı sinyaller, değişkenlerin dönüştürülmesi, sinyallerin sınıflandırılması, ve çözümlü örnekler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli ve ayrık zamanlı sistemler, temel sistem özellikleri: doğrusallık, zamanla değişmezlik, bellekli/belleksiz sistemler, nedensellik, kararlılık, ve çözümlü örnekler.",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 3,
+    "topic": "Ayrık zamanlı sinyaller için doğrusal ve zamanla değişmeyen (DZS) sistemler: ayrık sinyaller için evrişim, ve çözümlü örnekler.",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 4,
+    "topic": "Sürekli zamanlı sinyaller için DZS sistemler: evrişim integrali, çözümlü örnekler.",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 5,
+    "topic": "DZS sistemlerin özellikleri: yer değiştirme, dağılma ve birleştirme özellikleri, kararlılık, nedensellik ve sistemin hafızalı veya hafızalı olmama özelliği, ve çözümlü örnekler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli zamanlı sinyaller için Fourier serileri: doğrusal ve zamanla değişmeyen sistemlerin karmaşık üstel sinyaller için tepkisi, sürekli ve periyodik sinyallerin Fourier serileri, Fourier serilerinin yakınsaması, ve çözümlü örnekler.",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 7,
+    "topic": "Sürekli zamanlı sinyaller için Fourier serilerinin özellikleri: doğrusallık, zamanda ötelenme, zamanda terslenme, zamanda ölçekleme, çarpma, eşlenik ve eşlenik simetri , parseval eşitliği, ve çözümlü örnekler.",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 8,
+    "topic": "Ayrık zamanlı sinyaller için Fourier serileri,ve çözümlü örnekler.",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 9,
+    "topic": "Sürekli zamanlı sinyaller için Fourier Dönüşümü, periyodik olmayan sinyallerin gösterimi, sürekli zamanlı periyodik olmayan sinyallerin Fourier dönüşümü, Fourier Dönüşümünün yakınsaması, ve çözümlü örnekler.",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Sürekli zamanlı sinyaller için Fourier Dönüşümünün özellikleri: doğrusallık, zamanda ötelenme, zamanda terslenme, zaman ölçeklemesi, çarpma, eşlenik ve eşlenik simetri, türev ve integrasyon, zaman ve frekans ölçeklemesi, özdeşlik, parseval eşitliği , evrişim özelliği, ve çözümlü örnekler.",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Ayrık zamanlı sinyaller için Fourier Dönüşümü, ve çözümlü örnekler.",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Ayrık zamanlı sinyaller için Fourier Dönüşümünün özellikleri: Fourier dönüşümünün periyodik olması, doğrusallık, zaman ötelenmesi, frekans ötelenmesi, zamanda terslenme, parseval eşitliği, ve çözümlü örnekler",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Laplace Dönüşümü, Laplace dönüşümlerinin yakınsama bölgesi, yakınsama bölgesi üzerinde belirli kısıtlamalar, ve çözümlü örnekler.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Z-dönüşümü, z-dönüşümlerinin yakınsama bölgesi, yakınsama bölgesi üzerinde belirli kısıtlamalar, ve çözümlü örnekler."
+   }
+  ],
   "textbooks": [
    "Gubbins D., 2004, Time Series Analysis and Inverse Theory for Geophysicists, Cambridge University Press.",
    "Oppenheim, A. V., Willsky, A., And Nawab S. H., 1997, Signals And Systems, Published By Prentice-Hall International Inc., Pp 1-945.",
@@ -87,12 +230,12 @@
    "Haykin, S., Veen, B.V., 1999, Signals And Systems, Published By John Wıley & Sons, Inc., p. 1-438.",
    "Oppenheim, A. V., Schafer R.W., 1975, Digital Signal Processing, Published By Prentice-Hall Inc., p. 1-585."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=503"
  },
  "JFM 505E": {
   "code": "JFM 505E",
   "name": "Physics&Strc.of the EarthCrust",
+  "nameEn": "Physics&Strc.of the EarthCrust",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -125,6 +268,77 @@
    "Hafta 13 · 8-12 haftalarda kapsanan konuların özetlenmesi.",
    "Hafta 14 · Seminer (Eleştiri Makalesi : Türkiye ve civarındaki kabuk yapıları ve Mohorovičić süreksizliği konularında yapılmış çalışmalar hakkında kaynak taramasının yapılması ve bu çalışmaların boşluklarını doldurabilecek, gelecekte yapılması önerilebilecek çalışmalar konusunda eleştirel bir yazının hazırlanması ve sunulması)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sözlü ve yazılı sunum teknikleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Okyanus, kıtasal kabuk ve üst mantonun evrimi. Okyanus kabuğunun fiziksel, yapısal özellikleri ve kayaçları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kıtasal kabuğun fiziksel ve yapısal özellikleri ve kayaçları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Mohorovičić süreksizliğinin fiziksel ve yapısal özellikleri ve üst manto kayaçları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Okyanus ve kıtasal kabuk yapılarının fiziksel ve yapısal özelliklerine göre sınıflandırılması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Daha önce kapsanan konuların özetlenmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Tektonik yapıların jeofizik imzaları Seminer : Okyanus ortası sırt sistemleri ve kıtasal riftlerden örnekler.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Tektonik yapıların jeofizik imzaları Seminer : Pasif kıta kenarları ve kratonlardan örnekler.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tektonik yapıların jeofizik imzaları Seminer : Dalma-batma zonlarından örnekler.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Tektonik yapıların jeofizik imzaları Seminer : Çarpışma sıra dağlarından örnekler.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Tektonik yapıların jeofizik imzaları Seminer : Doğrultu atımlı faylar ve sıcak noktalardan örnekler.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "8-12 haftalarda kapsanan konuların özetlenmesi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Seminer (Eleştiri Makalesi : Türkiye ve civarındaki kabuk yapıları ve Mohorovičić süreksizliği konularında yapılmış çalışmalar hakkında kaynak taramasının yapılması ve bu çalışmaların boşluklarını doldurabilecek, gelecekte yapılması önerilebilecek çalışmalar konusunda eleştirel bir yazının hazırlanması ve sunulması)."
+   }
+  ],
   "textbooks": [
    "Bott, M.H.P., 1982, The interior of the Earth: its structure, constitution and evolution, Elsevier, Press.",
    "Condie, K.C., 1989, Plate Tectonics and Crustal Evolution, Pergamon Press.",
@@ -133,12 +347,12 @@
    "Lillie, R., 1999, Whole Earth Geophysics, Prentice Hall, Inc.",
    "SCI Journals in geophysics, geology, tectonophysics."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=505"
  },
  "JFM 506": {
   "code": "JFM 506",
   "name": "Gravite ve Manyetik Yorumlama",
+  "nameEn": "Gravite ve Manyetik Yorumlama",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -170,6 +384,77 @@
    "Hafta 13 · Manyetik Prospeksiyonda Ters Çözüm ve uygulaması (devam).",
    "Hafta 14 · Talwani Yöntemi ve uygulaması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gravite’ye Giriş, Gravite’nin Fizik Esasları, Newton Kanunları, Gravite Birimleri, Potansiyel Alan Eşitlikleri, Çekim Alanı, Sferoid, Geoid Terimleri üzerine tartışma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Teorik Gravite Bağıntısı, Çekim İvmesi Mutlak Değerinin Ölçülmesi, Çekim İvmesi Farklarının Ölçülmesi, Gravimetreler, Topoğrafik Ölçmeler, Gravimetre Ölçmeleri, Gelgit Etkisinin Belirlenmesi, İndirgeme ve Düzeltmeler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Gravite Prospeksiyonda uygulanan İndirgeme ve Düzeltmelere ait örnekler ve uygulamalar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gravite Anomalileri, Gravite Anomali Haritaları, Anomalilerin Birbirinden Ayrılması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kayan Ortalama, Ort. Değer, Sayısal Süzgeçler, Dalgasayısı ortamında Süzgeçleme konularında uygulama.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yatay ve Düşey İkinci Türev Yöntemleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Türev Operatörlerinin düzenlenmesi.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Gravite Prospeksiyon’da yoğunluk tayini ve uygulaması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Gravite Prospeksiyonda Modelleme, Basit Geometrik Şekle Sahip Kütlelerin Gravite Anomalileri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Gravite Prospeksiyonda Ters Çözüm ve uygulaması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Manyetik Prospeksiyonda kullanılan aletler, ölçmeler, Uygulanan Düzeltmeler, Model Kütlelerin Anomalisi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Manyetik Prospeksiyonda Modelleme, Basit Geometrik Şekle Sahip Kütlelerin Manyetik Anomalileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Manyetik Prospeksiyonda Ters Çözüm ve uygulaması (devam).",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Talwani Yöntemi ve uygulaması."
+   }
+  ],
   "textbooks": [
    "Telford, W.M., Geldort, L.P. and Sheriff, R.E., 1990, Applied Geophysics (2nd edition), Cambridge University Press.",
    "Wahr, J., 1996, Geodesy and Gravity: Samizadat Press, Colarado.",
@@ -177,12 +462,12 @@
    "Grant, F.S., West, G.F., 1965, Interpretation Theory in Applied Geophysics.",
    "Sanver, M. İşseven., T., 2007, Gravite ve Manyetik Arama Yöntemleri. İTÜ-Nobel Yayın Dağıtım Basımı, 1.Baskı, İstanbul. 368 sayfa. ISBN: 978-9944-77-168-9."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=506",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=506"
  },
  "JFM 517": {
   "code": "JFM 517",
   "name": "Sismik Veri İşlem",
+  "nameEn": "Sismik Veri İşlem",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -214,17 +499,88 @@
    "Hafta 13 · Göç sonrası genliklerin iyileştirilmesi, Sismik kesitlerin uygun formatlarda görüntülerinin alınması.",
    "Hafta 14 · Ders genel değerlendirme."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sismik Yansıma Veri-İşlem adımlarının tanımlanması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Linux/Unix komutlarının öğretilmesi, Disco/Focus 5.0 veri-işlem programının tanıtılması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Çok kanallı ve tek kanallı sismik yansıma veri-işlem’e giriş, Ham verilerin Disco-Focus programında okutulması, yazdırılması ve dosyalanması.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz ve kara verisi için sismik hattın geometri tayini.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Atış verilerinin ayıklanması ve genlik analiz yöntemleri.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Atış verilerinin filtrelenmesi (Çentik, alçak geçiren,yüksek geçiren, band geçişli fitrelemeler)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tekrarlı yansımaların bastırılması (Tersevrişim yöntemleri, Önkestirme, iğnecikleştirme ve Wiener Süzgeçlemeler).",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Atış verisinden Ortak Derinlik Noktası verisine Geçiş.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ortak derinlik noktası verilerinde Hız analizi Açılım kayma Düzeltmesi ve kesme İşlemi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yığma işlemi ile sismik kesit elde edilmesi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yığma sonrası filtreleme ve tersevrişim uygulamaları.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sismik Göç İşlemi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Göç sonrası genliklerin iyileştirilmesi, Sismik kesitlerin uygun formatlarda görüntülerinin alınması.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Ders genel değerlendirme."
+   }
+  ],
   "textbooks": [
    "Yılmaz, Ö., 1987. Seismic Data Processing, Investigations in Geophysics, Society of Exploration Geophysicsts, Tulsa, U.S.A., ISBN 0-931830-46-X (series), ISBN 0-931830-40-0 (Volume 2).",
    "Us, E.A., 1998. Sismik Yöntemler ve Yorumlamaya Giriş. Jeofizik Mühendisleri Odası Yayını, 2. Baskı, İstanbul.",
    "Dondurur, D.,2009. Deniz Sismiğinde Veri İşlem,TMMOB Jeofizik Mühendisleri Odası."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=517"
  },
  "JFM 596": {
   "code": "JFM 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -268,6 +624,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -280,12 +707,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=596"
  },
  "JFM 601E": {
   "code": "JFM 601E",
   "name": "Special Topics in Seismic Expl",
+  "nameEn": "Special Topics in Seismic Expl",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -318,6 +745,77 @@
    "Hafta 13 · Yüksek çözüm güçlü ve sığ sismik yöntem uygulamaları.",
    "Hafta 14 · Ders konularının genel değerlendirmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sismik veri toplama: kaynak türleri ve atış düzenleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sismik veri toplama: algılayıcı türleri ve alıcı düzenleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sismik hız çeşitleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Derinlik modelinden zaman modeline geçiş.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Sismik veri işlem: dekonvolüsyon, genel ilkeler ve uygulama alanları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Dekonvolüsyon: Wiener dekonvolüsyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Dekonvolüsyon: Kestirim dekonvolüsyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Dekonvolüsyon: Binom açılımı ile dekonvolüsyon.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Petrol ve Doğal Gaz aramalarında sismik yöntem uygulamaları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Kömür aramalarında sismik yöntem uygulamaları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Sismik yöntemlerin aktif tektonik alan araştırmalarında uygulamaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Sismik yöntemlerin mühendislik problemlerinin çözümünde uygulamaları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yüksek çözüm güçlü ve sığ sismik yöntem uygulamaları.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Ders konularının genel değerlendirmesi."
+   }
+  ],
   "textbooks": [
    "Yılmaz, Ö., 2001. Seismic Data Analysis, Vol 1 and Vol 2, Investigations in Geophysics No:10, Society of Exploration Geophysicsts, Tulsa, U.S.A.",
    "Jones, E.J.W. 1999. Marine Geophysics, Wiley Blackwell, Chichester, 474 pages.",
@@ -326,12 +824,12 @@
    "Sengbush, R. L., 1983, Seismic Exploration Methods: International Human Resources Development Corporation, Boston, 296 p.",
    "Dondurur, D., 2009, Deniz Sismiğinde Veri İşlem,TMMOB Jeofizik Mühendisleri Odası."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=601"
  },
  "JFM 603E": {
   "code": "JFM 603E",
   "name": "Hydro-geophysics",
+  "nameEn": "Hydro-geophysics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -363,6 +861,77 @@
    "Hafta 13 · Yeni teknolojiler ve yaklaşımlar.",
    "Hafta 14 · Yeni teknolojiler ve yaklaşımlar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hidrojeofiziğe giriş.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Hidrolik iletimin uzaysal dağılımının belirlenmesinde kullanılan yaklaşımlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Jeoistatistik.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kayaçlarda hidrolik ve elektirik özelliklerler arasındaki ilişki .",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "DA-özdirenç ve IP metodu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Hidrojeolojide GPR kullanımı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sığ sismik yöntemler.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kayaçların sismik ve hidrojeolojik özellikleri arasındaki ilişki.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kayaçların sismik ve hidrojeolojik özellikleri arasındaki ilişki.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kuyularda jeofizik ölçümler ve hidrojeolojik özelliklerin belirlenmesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Örnek vaka – 1: Bölgesel çalışmalar.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Örnek vaka –2: Yerel çalışmalar.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Yeni teknolojiler ve yaklaşımlar.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yeni teknolojiler ve yaklaşımlar."
+   }
+  ],
   "textbooks": [
    "Kelly, W.E., S. Mares, 1993, Applied Geophysics in hydrological and engineering practices, Elsevier Science Publishers, Amsterdam.",
    "Şen, Z., 1995, Applied hydrogeology for scientists and engineers, Lewis Publishers, London.",
@@ -370,12 +939,12 @@
    "Rubin, Y., S. S. Hubbard (editors), 2006, Hydrogeophysics, Springer, 523 pages.",
    "Kirsch R., 2010, Groundwater geophysics, Springer, 568 pages."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=603"
  },
  "JFM 605": {
   "code": "JFM 605",
   "name": "Elek.Man.Prosp.Özel Konular",
+  "nameEn": "Elek.Man.Prosp.Özel Konular",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -407,6 +976,77 @@
    "Hafta 13 · Düz ve ters çözüm algoritmaları.",
    "Hafta 14 · Veri değerlendirme ve yorum."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Elektrik ve elektromanyetik yöntemlerle ilgili temel kavramlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Zaman ortamı elektromanyetik yöntemlerin kuram ve fizik esasları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Elektromanyetik dalga ve alan denklemleri; elektromanyetik kaynak ve alan tanımları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Elektromanyetik difüzyon süreci ve denklemleri, görünür özdirenç tanımı.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yer yüzeyinde ve havadan zaman ortamı elektromanyetik yöntemlere ait ölçüm sistem ve teknikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Düşey manyetik ve yatay elektrik dipol ile uyartım.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Tek ve çok kanallı sistemlerle elektromanyetik uyartım ve ölçüm.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Veri işlem yöntemleri; yığma ve sayısal süzgeçler; sinyaldeki bozulmalar ve giderilmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "İnce iletken katman ve ara dirençli katman problem ve çözünürlüğü.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Zaman ortamı elektromanyetik yöntemlerle uygulama örnekleri.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bir boyutlu modelleme teknikleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Düz ve ters çözüm algoritmaları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Veri değerlendirme ve yorum."
+   }
+  ],
   "textbooks": [
    "Kaufmann, A. A., Keller, G. V., 1983, Frequency and Transient Soundings; Elsevier, Amsterdam.",
    "Zhdanov, M. S., Keller, G. V., 1994, The Geoelectrical Methods in Geophysical Exploration; Elsevier, Amsterdam.",
@@ -414,12 +1054,12 @@
    "Strack, K. M., 1992, Exploration with Deep Transient Electromagnetics; Elsevier, Amsterdam.",
    "Özürlan, G., Ulugergerli, Emin, U., 2005, Jeofizik Mühendisliğinde Elektromanyetik Yöntemler, Birsen Yayınevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=605",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=605"
  },
  "JFM 609": {
   "code": "JFM 609",
   "name": "Sismik Nitelik Analizi",
+  "nameEn": "Sismik Nitelik Analizi",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -451,6 +1091,77 @@
    "Hafta 13 · Sismik nitelikler için veri işlem teknikleri ve tuzaklar.",
    "Hafta 14 · Sismik niteliklerde örnek uygulamalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders tanıtım, kaynaklar, sismik niteliklerin temelleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kayaç fiziği ve elastik modüller, akustik empedanslar, düşey geliş yansıma katsayıları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Knott ve Zoeppritz Denklemleri ve bu denklemlere yaklaşımlar: Bortfeld, Aki ve Richards, Shuey, Smith ve Gidlow, Fatti yaklaşımları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sismik yansıma genliğinin ofset ve/veya açı ile değişimi (AVO/AVA), sentetik modeller.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "AVO/AVA Analizinde petrofizik uygulamalar; yer içinde litoloji, gözeneklilik, gözenek sıvısı, sıcaklık, basınç, ve derinlik değişimlerinin Vp ve Vs hızları üzerindeki etkileri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Direkt Hidrokarbon Göstergeleri (DHG); parlak, sönük, yatay nokta kavramları, polarite terslenmesi. DHG ve tuzaklar.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "AVO/AVA analizi için sismik veri işlem yöntemleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "AVO/AVA belirteçleri, kesme ve eğim değerleri, Rutherford ve Williams Sınıflaması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yakın ve uzak ofset kısmi kesitleri, kümelenme, akışkan faktörü, gözeneklilik göstergesi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "AVO/AVA analizi ve yorumu, örnek uygulamalar.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sismik dalga yayılımı; genlik, frekans ve fazı etkileyen faktörler.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Sismik niteliklerin sınıflaması; genliğin zarfı, anlık faz, anlık frekans, görünür polarite.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Sismik nitelikler için veri işlem teknikleri ve tuzaklar.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Sismik niteliklerde örnek uygulamalar."
+   }
+  ],
   "textbooks": [
    "Castagna, J.P., Backus, M.M., 1993, Offset Dependent Reflectivity: Theory and Practice of AVO Analysis. Investigations in Geophysics, no: 8. SEG publication.",
    "Yılmaz, Ö., 2001. Seismic Data Analysis, Vol 1 and Vol 2, Investigations in Geophysics No:10, Society of Exploration Geophysicsts, Tulsa, U.S.A.",
@@ -458,12 +1169,12 @@
    "Chapra, S., Marfurt, K.J., 2007, Seismic Attributes for Prospect Identification and Reservuar Characterization, SEG Publication.",
    "Barnes, A.E., 2007, A tutorial on complex seismic trace analysis, Geophysics, vol. 72, no: 6."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=609",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=609"
  },
  "JFM 696": {
   "code": "JFM 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -507,6 +1218,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -519,7 +1301,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JFM&dersNo=696"
  }
 }

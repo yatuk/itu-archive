@@ -2,6 +2,7 @@
  "CKY 510": {
   "code": "CKY 510",
   "name": "Gürültü Kont.Yapı Elem.Tasrm",
+  "nameEn": "Gürültü Kont.Yapı Elem.Tasrm",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -34,6 +35,77 @@
    "Hafta 13 · TS EN 12354 standartlarının anlatımı, yanal iletim analizleri",
    "Hafta 14 · ISO 717 standardının anlatımı, Rw, DnTw, Dnw değerlerinin anlatımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konuya giriş, Sesin emilmesi ve yalıtılması arasındaki ilişki, Sesin yalıtımını etkileyen parametreler, Mediacoustics programı ile incelenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kapalı mekanlarda arkaplan gürültü kriterleri, Sesin tek tabakalı duvarda yayılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Ses azaltım indeksinin düşük ve orta frekanslarda irdelenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ses azaltım indeksinin yüksek frekanslarda irdelenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Rezonans frekansı, kütle kanunu, dalga çakışması, yapı elemanı rijitliği ve sönümlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Çift tabakalı duvarlarda sesin yayılması",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Çok tabakalı duvarda sesin yayılması",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kompozit yapı elemanlarında sesin yayılması",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Katı doğuşlu seslerin yayılımının incelenmesi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Yüzer döşemeler ve asma tavanlarda ses yayılması",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Pencere ve kapıların ses yalıtımlarının incelenmesi, Yapı elemanlarının ses yalıtımı açısından iyileştirilmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Fiziksel Çevre Kontrolü laboratuarında ses azaltım indisi ölçümü test odalarının, yüzer döşeme, sönümleyici ve ses yutucu malzemelerin incelenmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "TS EN 12354 standartlarının anlatımı, yanal iletim analizleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "ISO 717 standardının anlatımı, Rw, DnTw, Dnw değerlerinin anlatımı"
+   }
+  ],
   "textbooks": [
    "Yılmaz Demirkale, Sevtap, Çevre ve Yapı Akustiği, Birsen Yayınevi, 2007, İstanbul.",
    "Rossing, Thomas D., Springer Handbook of Acoustics, Springer, 2007.",
@@ -41,12 +113,12 @@
    "Mehta, M., Johnson, J., Rocafort, J., Architectural Acoustics Principles and Design, New Jersey, Prentice-Hall Inc., 1999",
    "Rossing, T.D., Moore, F.R., Wheeler, P.A., The Science of Sound, 3rd Edition, Addison Wesley, 2002."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=510",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=510"
  },
  "CKY 520": {
   "code": "CKY 520",
   "name": "Mimarlıkta Geleneksel Yapı Mal",
+  "nameEn": "Traditional Building Materials in Architecture",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -78,6 +150,77 @@
    "Hafta 13 · Ödev sunumları ve tartışması",
    "Hafta 14 · Ödev sunumları ve tartışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, dersin amacı ve kapsamı, tarihçe",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Kerpiç ve türleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Doğal taş ve yapıda kullanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Alçı, Kireç ve doğal puzzolanlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Roma betonu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Horasan harcı ve betonu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Harman tuğlası, döşeme, çatı ve duvarda seramik kullanımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Geleneksel ahşap yapı ve özellikleri 1",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Geleneksel ahşap yapı ve özellikleri 2, Yıl içi Sınavı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yığma yapı malzemeleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Karma yapılar",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Yapıda beton ve çeliğin kullanımı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev sunumları ve tartışması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Ödev sunumları ve tartışması"
+   }
+  ],
   "textbooks": [
    "Rosen H.J., Heinemann Tom., Architectural Materials for Construction, John Wiley and Sons, New York NY 1996",
    "Edeted Jester, T.C. Twentieth Century Building Materials, Mc Graw Hill Company, Washington D.C. 1995",
@@ -86,12 +229,12 @@
    "Borelli E., Urland A., ICCROM-UNESCO WHC ARC Laboratory Handbook, Conservation of Architectural Heritage, Historic Structures and Materials, ICCROM, Rome 1999",
    "Ashurst J. and Dimes G. Conservations of Building and Decorative Stone, Butterworth Heinemann U.K. 1990"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=520",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=520"
  },
  "CKY 529": {
   "code": "CKY 529",
   "name": "Proje II",
+  "nameEn": "Project II",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -123,18 +266,89 @@
    "Hafta 13 · Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
    "Hafta 14 · Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir."
+   }
+  ],
   "textbooks": [
    "Allen, E. And Rand, P. (2007). Architectural Detaılıng: Functıon, Constructability, Aesthetics, John Wiley & Sons, Hoboken, NJ.",
    "Baker, N., Steemers, K., “Energy and Environment in Architecture”, A Technical Design Guide, 1999",
    "Underwood, J. R., Chiuini, M., (2007). Structural Design: A Practical Guide for Architects, 2nd Ed., Wiley & Sons, Inc., Hoboken, NJ.",
    "Fernandez, J.E. (2006) “Material Architecture: emergent materials for innovative buildings and ecological construction, Architectural Press, Oxford UK, 2006."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=529",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=529"
  },
  "CKY 533": {
   "code": "CKY 533",
   "name": "Proje I",
+  "nameEn": "Project I",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -166,18 +380,89 @@
    "Hafta 13 · Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
    "Hafta 14 · Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma konusuna bağlı olarak öğrenci danışmanı tarafından belirlenmektedir."
+   }
+  ],
   "textbooks": [
    "Cowan, H. (editor), “Handbook of Architectural Technology”, Von Nostrand Reinhold, NY, 1991",
    "Lovell J., Building Envelope,. An Integrated Approach, Princeton architectural Press, 2010.",
    "Wooley, T., Kimmins, S., “Green Building Handbook (Volume 2)”, F&Fn SPON, USA, 2000",
    "Lam, C.W., Sunlighting as a Formgiver for Architecture, Van Nostrand Reinhold Company, Newyork, 1986"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=533",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=533"
  },
  "CKY 537E": {
   "code": "CKY 537E",
   "name": "Research Methods in Architectural Technology",
+  "nameEn": "Research Methods in Architectural Technology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -210,6 +495,77 @@
    "Hafta 13 · Fiziksel çevre kontrolü alanında araştırma yöntemi önerilerinin değerlendirilmesi",
    "Hafta 14 · Yapı malzemesi alanında araştırma yöntemi önerilerinin değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mimarlık teknolojilerinde araştırma yöntemlerine giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 2,
+    "topic": "Mimarlık teknolojisi araştırma alanları",
+    "outcomes": "5"
+   },
+   {
+    "week": 3,
+    "topic": "Mimarlık teknolojileri bağlamında araştırma yaklaşımları: gözlemler, anketler, yüz yüze görüşmeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Mimarlık teknolojileri bağlamında araştırma yaklaşımları: mevcut örnek analizleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mimarlık teknolojileri bağlamında araştırma yaklaşımları: bilgisayar simülasyonları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Mimarlık teknolojileri bağlamında araştırma yaklaşımları: laboratuar deneyleri, açık alan deneyleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Yapı malzemesi alanında araştırma yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yapı elemanları tasarımı ve yapımı alanında araştırma yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Fiziksel çevre kontrolü (enerji, aydınlatma) alanında araştırma yöntemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Fiziksel çevre kontrolü (akustik, yangın, rüzgar) alanında araştırma yöntemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Mimarlıkta taşıyıcı sistemler alanında araştırma yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yapı elemanları alanında araştırma yöntemi önerilerinin değerlendirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Fiziksel çevre kontrolü alanında araştırma yöntemi önerilerinin değerlendirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Yapı malzemesi alanında araştırma yöntemi önerilerinin değerlendirilmesi"
+   }
+  ],
   "textbooks": [
    "Fellows, R., Liu, A., Researchmethods for construction , Malden, MA : Blackwell Science, 2003",
    "Knight, A. (ed.), Advanced research methods in the built environment, Chichester, West Sussex, United Kingdom : Wiley, 2008",
@@ -217,12 +573,12 @@
    "Nutaro, j.,Building software for simulation : theory and algorithms, Hoboken, N.J. : Wiley, 2011",
    "Clarke, J.A. , Energy simulation in building design, Oxford : Butterworth-Heinemann, 2001"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=537",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=537"
  },
  "CKY 543": {
   "code": "CKY 543",
   "name": "Bina Tasarımında Yangın.Korun.",
+  "nameEn": "Fire Protection in Building Design",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -254,6 +610,77 @@
    "Hafta 13 · Acil Durum ve Kaçış Yolu Aydınlatması",
    "Hafta 14 · Yangını Bastırma ve Söndürmede Kullanılan Diğer Metotlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tutuşma ve yanma, Yanma Ürünleri, Yangın ve Gelişim Evreleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Binalar Arasında Yangın Yayılımı ve Yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bina İçinde Yangın Yayılımı, Duman ve Zehirli Gazlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kompartmantasyon, Kaçış Yollarının Belirlenmesi, Kapasite ve Genişlik Tayini",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yapı Eleman ve Bileşenlerinde Alınabilecek Önlemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çeşitli Bina Tipleri İçin Özel Düzenlemeler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Strüktürel Sistemde Yangın Korunma",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yapıda Kullanılan Malzemelerinin Yanma Özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Duman Bariyerleri, Kontrolü ve Havalandırması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yönetmelik ve Standartlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Duman Algılama, İkaz ve Mekanik Tahliye",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Otomatik Söndürme Sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Acil Durum ve Kaçış Yolu Aydınlatması",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Yangını Bastırma ve Söndürmede Kullanılan Diğer Metotlar"
+   }
+  ],
   "textbooks": [
    "Brannigan, F. L.& Corbett, G.P. (2008). Brannigan's Building Construction for the Fire Service, NFPA, Burlington, MA : Jones & Bartlett Learning, LLC.",
    "Robertson, J. C. (2010). Introduction to Fire Prevention, Upper Saddle River, New Jersey: Prentice Hall Health.",
@@ -261,12 +688,12 @@
    "Lataille, J. (2003). Fire Protection Engineering in Building Design, Amsterdam : Butterworth- Heinemann.",
    "Patterson, J. (1993). Simplified Design for Building Fire Safety, New York : Wiley."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=543",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=543"
  },
  "CKY 547": {
   "code": "CKY 547",
   "name": "Cephe Malzeme ve Bileşenleri",
+  "nameEn": "Façade Materials and Components",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -298,6 +725,77 @@
    "Hafta 13 · Dönem ödevi sunum",
    "Hafta 14 · Dönem ödevi sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Amaç ve Kapsam, Cephe Tasarımının Önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Cephe Tasarımını Etkileyen Faktörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Cephede Kullanılan Çimento Esaslı Malzemeler ve Uygulama Esasları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Cephede Kullanılan Polimer Malzemeler ve Uygulama Esasları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Cephede Kullanılan Metal Malzemeler ve Uygulama Esasları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Cephede Kullanılan Cam Malzemeler ve Uygulama Esasları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Cephede Kullanılan Ahşap Malzemeler ve Uygulama Esasları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Cephede Kullanılan Seramik Malzemeler ve Uygulama Esasları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Mevcut Cephe Örneklerini İrdeleme, Yıl içi Sınavı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Cephede Kullanılan Bağlantı Elemanları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Çevresel Faktörlerin Cephe Malzemelerine Etkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Cephe Malzemelerinin Performans Değerlendirmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunum",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunum"
+   }
+  ],
   "textbooks": [
    "Herzog, Krippner L., “Facade Construction Manual”, Birkhauser Publishers for Architecture, Switzerland, 2004.",
    "Harris, Lilly and Willmott, The Application of Standards in Assessing Façade Materials and Quality, 2003.",
@@ -306,12 +804,12 @@
    "Knaack, U., Klein T., Bilow, M., Auer, T., Facades, Principles of Construction, Birkhauser Verlag AG, Germany, 2007.",
    "Lovell, J., Building Envelopes: An Integrated Approach, Princeton Architectural Press, New York, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=547",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=547"
  },
  "CKY 549": {
   "code": "CKY 549",
   "name": "Taşıyıcı Sistem Tasarımı",
+  "nameEn": "Design of Structural System",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -345,6 +843,77 @@
    "Hafta 13 · Ahşap yapılarda taşıyıcı sistem düzenleme ilkeleri, yığma yapılar için deprem yönetmeliği esasları",
    "Hafta 14 · Değişik taşıyıcı sistem çözüm uygulamalardan örnekler ve taşıyıcı sistem çözümlerinin geliştirilmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, taşıyıcı sistemlerin tanıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım aşamaları, uygulama projesi, yapılara etkiyen yükler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Taşıyıcı sistemlerde derz çeşitleri ve düzenleme esasları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Genel taşıyıcı sistem tasarım ilkeleri, Betonarme yapılarda taşıyıcı sistem düzenleme ilkeleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Betonarme döşeme sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Betonarme yüksek binalar ve yüksek binaların yatay yüklere göre tasarımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Betonarme yapılar için deprem yönetmeliği esasları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Çelik yapılarda taşıyıcı sistem düzenleme ilkeleri, çelik yapılarda döşeme sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Çelik yapıların yatay yüklere göre tasarımı, çaprazlar, perdeler ve stabilite bağları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Çelik yapılar için deprem yönetmeliği esasları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Karma yapılarda taşıyıcı sistem düzenleme esasları, karma yapıların yatay yüklere göre tasarımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yığma yapılarda taşıyıcı sistem düzenleme ilkeleri, yığma yapılar için deprem yönetmeliği esasları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ahşap yapılarda taşıyıcı sistem düzenleme ilkeleri, yığma yapılar için deprem yönetmeliği esasları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Değişik taşıyıcı sistem çözüm uygulamalardan örnekler ve taşıyıcı sistem çözümlerinin geliştirilmesi."
+   }
+  ],
   "textbooks": [
    "Celep, Z., Kumbasar, N., Deprem Mühendisliğine Giriş ve Depreme Dayanıklı Yapı Tasarımı, İstanbul: Beta Yayınları, 2004",
    "Duman, N., Özgen, K., Çelik Yapılar Ders Notları, İTÜ Mimarlık Fakültesi Baskı Atölyesi, 1986",
@@ -353,12 +922,12 @@
    "Merritt, S. F., Structural Steel Designers' Handbook, Mc Graw-Hill Companies, 1995",
    "Donrick, D. J., Earthquake Resistant Design, John Willey and Sons, Chichester, 1987"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=549",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=549"
  },
  "CKY 553": {
   "code": "CKY 553",
   "name": "Depreme Dayanıklı Mimari Tasarım Uygulama İlkeleri",
+  "nameEn": "Principles of Earthquake-Resistant Architectural Design and Practice",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -393,6 +962,78 @@
    "Hafta 13 · Sismik İzolasyon, Sönümleyiciler gibi İleri Teknolojiler ve Mimari Uygulamalar",
    "Hafta 14 · Mimari Tasarım Örnekleri Üzerinden Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deprem Riski ve Mimarlığın Rolü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Depremler, Yer Hareketi ve Mimari Form Üzerindeki Etkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sismik Tehlike, Risk Değerlendirmesi ve Mimari Planlamaya Etkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yapı Davranışı Temelleri ve Mimari Konfigürasyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Deprem Yönetmelikleri ve Mimari Tasarım Kısıtlamaları/Fırsatları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kapasite Tasarımı ve Mimari Detaylandırma İlişkisi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Geoteknik Konular ve Mimari Tasarıma Etkileri Zemin Büyütmesi, Sıvılaşma",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 8,
+    "topic": "Temel Sistemleri ve Mimari Entegrasyon",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Burulma, Döşeme Boşlukları şeklindeki Plan Düzensizlikleri ve Mimari Çözümler",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 10,
+    "topic": "Girinti/Çıkıntılar, Çekiçleme Etkisi şeklindeki Plan Düzensizlikleri ve Mimari Çözümler",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 11,
+    "topic": "Zayıf Kat, Yumuşak Kat şeklindeki Düşey Düzensizlikler ve Mimari Yönetim",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 12,
+    "topic": "Taşıyıcı Süreksizliği, Kısa Kolon, Dolgu Duvar/Merdiven Etkileşimi şeklindeki Düşey Düzensizlikler ve Mimari Yönetim",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Sismik İzolasyon, Sönümleyiciler gibi İleri Teknolojiler ve Mimari Uygulamalar",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Mimari Tasarım Örnekleri Üzerinden Değerlendirme",
+    "outcomes": "1-7"
+   }
+  ],
   "textbooks": [
    "Aydogdu, H., H., Demir, C., Cömert, M., Kahraman, T., & İlki, A. (2024). Structural characteristics of the earthquake-prone buildings in Istanbul and prioritization of existing buildings in terms of seismic risk. Journal of Earthquake Engineering, 28(6), 1664-1680. https://www.tandfonline.com/doi/full/10.1080/13632469.2023.2247481",
    "Xu, Y., Li, Y., Zheng, X., Zheng, X., & Zhang, Q. (2023). Computer-Vision and Machine-Learning-Based Seismic Damage Assessment of Reinforced Concrete Structures. Buildings, 13(5), 1258. https://doi.org/10.3390/buildings13051258",
@@ -400,12 +1041,12 @@
    "Antoniou, S. (2024). Mevcut betonarme binaların depreme karşı güçlendirilmesi (N. Eser, Çev.). Nobel Akademik Yayıncılık.",
    "Chandrasekaran, S., Serino, G., & Spizzuoco, M. (2025). Earthquake engineering and structural control: Theory and applications. CRC Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=553",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=553"
  },
  "CKY 596": {
   "code": "CKY 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -449,6 +1090,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -461,7 +1173,6 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CKY&dersNo=596"
  }
 }

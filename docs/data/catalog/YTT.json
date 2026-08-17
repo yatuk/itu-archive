@@ -2,6 +2,7 @@
  "YTT 501E": {
   "code": "YTT 501E",
   "name": "Advanced Topics in Tech.Tex.",
+  "nameEn": "Advanced Topics in Tech.Tex.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,16 +35,87 @@
    "Hafta 13 · Enerji depolama ve saklama amaçlı kullanılan tekstiller",
    "Hafta 14 · Halatlar, kordonlar, sicimler ve dokuma kalın şeritler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Teknik tekstiller sektörünün tanıtımı ve değerlendirilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tekstille güçlendirilmiş kompozit malzemeler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Su geçirmez nefes alabilir kumaşlar",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Filtrasyonda kullanılan tekstiller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "İnşaat mühendisliğinde kullanılan jeotekstiller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Sağlık hizmetleri ve tıbbi uygulamalarda kullanılan tekstiller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Balistik koruma için kullanılan teknik tekstiller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Bıçak ve kesici darbelere karşı koruma sağlayan teknik tekstiller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Isı ve alev koruması için kullanılan teknik lifler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kişisel termal korumada kullanılan teknik tekstiller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Hayatta kalabilme için kullanılan teknik tekstiller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Taşımacılıkta kullanılan teknik tekstiller (kara, deniz ve hava)",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji depolama ve saklama amaçlı kullanılan tekstiller",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Halatlar, kordonlar, sicimler ve dokuma kalın şeritler"
+   }
+  ],
   "textbooks": [
    "HORROCKS A.R., ANAND S.C. Handbook of Technical Textiles Volume 2: Technical Textile Applications, Woodhead Publishing Limited, 2016",
    "2. HORROCKS A.R., ANAND S.C. Handbook of Technical Textiles Volume 1: Technical Textile Processes, Woodhead Publishing Limited, 2016"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=501"
  },
  "YTT 503E": {
   "code": "YTT 503E",
   "name": "Innovative&Func.Mat.&Prod.",
+  "nameEn": "Innovative&Func.Mat.&Prod.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -75,15 +147,86 @@
    "Hafta 13 · Biyolojik ve kimyasal tehditlere karşı koruma sağlayan malzemeler ve tekstil uygulamaları",
    "Hafta 14 · Tekstil uygulamaları için “doğadan ilham” alan ve “doğadan elde edilen” doğa dostu malzemeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fonksiyonel ve akıllı malzemelerin sınıflandırılması. Yenilikçi/Yüksek teknoloji tekstillerden beklenen fonksiyonlar. Özel kullanım alanları. Yaygın uygulama yöntemleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Nanomalzemeler ve yenilikçi ve fonksiyonel malzemeler için nanoteknoloji",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Elektro- ve yarı iletken, manyetik, optik malzemeler ve tekstil uygulamaları (lif dahil",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Elektronik sistemler ve akıllı tekstillerde kullanımı. Giyilebilir bilgisayarlar.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kinetik, termoelektrik ve güneş enerjisi hasadı yapabilen malzemeler ve teknolojiler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Enerji değiştiren/enerji alışverişi yapabilen, termo-regülasyon sağlayan malzemeler ve tekstil uygulamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Dış etkilere (sıcaklık, vb.) hassas/ tepki veren ve şekil hafızalı malzemeler ve tekstil uygulamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Süper emici, hidrofilik, süperhidrofilik, oleofolik malzemeler ve tekstil uygulamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Antimikrobiyal malzemeler ve akıllı alev geciktirici malzemeler ve tekstil uygulamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Filtrasyon malzemeleri ve tekstil uygulamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "İyonize ve iyonize olmayan radyasyon ve UV koruyuculuğu sağlayan malzemeler ile bunların tekstil uygulamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Balistik ve darbe koruması sağlayan malzemeler ve tekstil uygulamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Biyolojik ve kimyasal tehditlere karşı koruma sağlayan malzemeler ve tekstil uygulamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tekstil uygulamaları için “doğadan ilham” alan ve “doğadan elde edilen” doğa dostu malzemeler"
+   }
+  ],
   "textbooks": [
    "Functional Finishes for Textiles, 2015, Edited By Paul R., Woodhead Nanotechnology and functional materials for engineers, 2017, Dahman Y., Elsevier, ISBN: 978-0-323-51256-5."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=503"
  },
  "YTT 505E": {
   "code": "YTT 505E",
   "name": "Material Science for Tech.Tex.",
+  "nameEn": "Material Science for Tech.Tex.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -130,18 +273,89 @@
    "Hafta 13 · Metaller, demir alaşım sistemleri ve özellikleri",
    "Hafta 14 · Seramikler ve özellikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Malzeme bilimine temel bir giriş. Polimer malzemelerin ve polimer mikroyapılarının doğası: dallanma, networkler, taktisite ve kopolimerler dahil",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Polimer sentezi: basamaklı ve zincir polimerizasyonu; polimerizasyon kinetiği: basamaklı ve serbest radikal zincir polimerizasyon kinetiği and free; moleküler ağırlık ile ilişkisi",
+    "outcomes": "16-17"
+   },
+   {
+    "week": 3,
+    "topic": "Basamaklı polimerizasyonunun istatistiği: basamaklı polimerizasyonunda moleküler ağılık dağılımının tanımlanması için istatistik kullanımı. Kopolimerizasyon: serbest radikal kopolimerizasyon kinetiği",
+    "outcomes": "14-15"
+   },
+   {
+    "week": 4,
+    "topic": "Yapı: zincir konformasyonları, amorf polimerler ve yarı-kristal polimerlerin morfolojisi",
+    "outcomes": "13"
+   },
+   {
+    "week": 5,
+    "topic": "Kristalinleşme, erime ve camsı geçiş: kristalizasyon kinetiğine bir giriş, erime ve camlaşma formasyonu",
+    "outcomes": "12"
+   },
+   {
+    "week": 6,
+    "topic": "Polimer solüsyonları: Flory-Huggins teorisi ve faz özelliği",
+    "outcomes": "11"
+   },
+   {
+    "week": 7,
+    "topic": "Polimer karakterizasyonu; moleküler ağılığın ölçülmesi; mekanik ve reolojik özellikler",
+    "outcomes": "18"
+   },
+   {
+    "week": 8,
+    "topic": "Polimerik malzemelerde yapı ve özelliklerin ilişkilendirilmesi; yüksek performanslı polimerik malzemelerin nihayi uygulamaları",
+    "outcomes": "1-8-10"
+   },
+   {
+    "week": 9,
+    "topic": "Kristal geometrisi, yapı ve kusurlar, kayma sistemleri, tane yapısı; katılarda difüzyon",
+    "outcomes": "1-5-6-7-15-16-17"
+   },
+   {
+    "week": 10,
+    "topic": "Malzemelerin mekanik özellikleri; mukavemet özellikleri, sertlik özellikleri, kırılma mekaniği, yorulma ve sünme özellikleri",
+    "outcomes": "1-6-16"
+   },
+   {
+    "week": 11,
+    "topic": "Malzemelerin ısıl ve optik özellikleri; malzemelerin elektrik ve manyetik özellikleri, malzemelerin deformasyonu; oksidasyon ve korozyon",
+    "outcomes": "1-9-11-18-19"
+   },
+   {
+    "week": 12,
+    "topic": "Faz diyagramları ve faz dönüşümleri,ısıl işlemler",
+    "outcomes": "1-2-4-12-14"
+   },
+   {
+    "week": 13,
+    "topic": "Metaller, demir alaşım sistemleri ve özellikleri",
+    "outcomes": "1-3-13"
+   },
+   {
+    "week": 14,
+    "topic": "Seramikler ve özellikleri"
+   }
+  ],
   "textbooks": [
    "-",
    "“Fundamentals of Polymer Science: An Introductory Text” Paul C. Painter, Steven Strauss, Michael M. Coleman. Woodhead Publishing, Ltd., April 1998. ISBN-13: 9781566765596",
    "\"Introduction to Materials Science for Engineers\", James F. Shackelford, Prentice Hall International, Inc., 1998",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=505"
  },
  "YTT 507E": {
   "code": "YTT 507E",
   "name": "Polymers for Techn.Textiles",
+  "nameEn": "Polymers for Techn.Textiles",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -176,17 +390,88 @@
    "Hafta 13 · Biyopolimerlerin ortopedi, damar, ameliyat ipliği, doku, boş lif membranları, vb. biyomedikal tekstil uygulamaları",
    "Hafta 14 · Polimerik malzemelerin kullanılması ile teknik tekstiller tasarlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Polimer malzemelerin ve polimer mikro yapılarının doğası: dallanma, networkler, taktisite ve kopolimerler dahil",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Teknik tekstil uygulamaları için lif oluşturabilen geleneksel ve yüksek performanslı polimerlerin sentezi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kristalinleşme, erime ve camsı geçiş: kristalizasyon kinetiğine bir giriş, erime ve camlaşma formasyonu, eriyik polimerlerin reolojisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Polimerik malzemelerin yapısı (zincir konformasyonları, amorf ve kristalin yapı, oryantasyon) özellikleri arasındaki ilişkiler. Polimer özelliklerinin yüksek performanslı teknik tekstiller için ayarlanması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Teknik tekstil uygulamalarındaki polimer işleme yöntemleri: Eriyik, kuru, yaş, ıslak, jel eğirme teknikleri ve eriyikten püskürtme yöntemi, ilaveten nanolif üretim teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kumaş ve polimer yüzeylerin modifikasyonu: Plazma muamalesi, aktarma kaplama, tutunmaclick kimyası, aşılama, yüzey fonksiyonelleştirilmesi gibi modifikasyon yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Polimerik malzemelerin GPC, Rheometer, XRD, DSC, FTIR, SEM, goniometer ve Instron ile karakterizasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yüksek mukavemetli ve modüllü polimerik malzemeler ve bunların tekstil kompozitlerde uygulamaları. Tekstil kompozitler ve tekstil ürünleri ile güçlendirilmiş kompozitlerdeki polimerik matris ve lif seçimleri. Teknik tekstillerin mekaniksel performansı ve kırılma analizi. Tekstil kompozitlerin uzama, modül, mukavemet, dayanıklılık ve yorulma özellikleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Koruyucu kıyafetler için polimerler; Sıvı-itici kumaşlar, ısı ve aleve karşı koruma, saplanma dirençli kumaşlar, balistik dirençli kumaşlar, darbe dirençli kumaşlar",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kimyasal ve biyolojik ajanlara karşı polimerlerin ve teknik kumaşların gaz geçirim direnci ve filtrasyon özellikleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Giyilebilir elektronik uygulamaları için iletken polimerler; konjuge polimerler, organik ve inorganik iletken katkılar. Enerji hasatlayan polimerler ve bunların ileri tekstil ürünlerinde uygulamaları.",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 12,
+    "topic": "İnşaat, jeotekstil, otomotiv ve ulaşım uygulamalarında kullanılan polimerik malzemeler. İnteraktif tekstil uygulamalar için uyarılara tepki veren polimerler",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Biyopolimerlerin ortopedi, damar, ameliyat ipliği, doku, boş lif membranları, vb. biyomedikal tekstil uygulamaları",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 14,
+    "topic": "Polimerik malzemelerin kullanılması ile teknik tekstiller tasarlanması"
+   }
+  ],
   "textbooks": [
    "High Performance Technical Textiles” Roshan Paul, John Wiley & Sons, 2019.",
    "“Handbook of properties of textile and technical fibres” Bunsell, Anthony R. ed. Woodhead Publishing, 2018.",
    "“Polymeric protective technical textiles.” McCarthy, Brian J, ed. Smithers Rapra, 2013."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=507"
  },
  "YTT 509E": {
   "code": "YTT 509E",
   "name": "Textile Technologies",
+  "nameEn": "Textile Technologies",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -227,15 +512,86 @@
    "Hafta 13 · Nonwoven tülbent oluşturma ve sabitleştirme yöntemleri",
    "Hafta 14 · Nonwoven bitim işlemleri ve kullanım alanları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İpliklerin sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İplik numaralandırma sistemleri, kesitteki lif sayısı, büküm ve çekim bağıntıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel iplik üretim proseslerinin tanıtımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Dokuma temel bilgileri, temel dokuma örgülerinin tanıtımı, dokuma kumaş analizi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Dokuma hazırlık sistemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Dokuma makinaları, sınıflandırılması ve çalışma prensipleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Örme temel bilgileri. Örme teknolojisinin sınıflandırılması. Yuvarlak ve düz örme teknolojileri ve kumaş yapı örnekleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 8,
+    "topic": "Çözgülü örme teknolojileri ve kumaş yapı örnekleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Boya ve baskı teknolojileri",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 10,
+    "topic": "Tekstil boyarmaddeleri ve boyama mekanizması",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 11,
+    "topic": "Tekstil terbiyesi ve uygulama yöntemleri",
+    "outcomes": "1-10"
+   },
+   {
+    "week": 12,
+    "topic": "Nonwoven temel bilgileri, kullanılan hammaddeler",
+    "outcomes": "1-11"
+   },
+   {
+    "week": 13,
+    "topic": "Nonwoven tülbent oluşturma ve sabitleştirme yöntemleri",
+    "outcomes": "1-2-12"
+   },
+   {
+    "week": 14,
+    "topic": "Nonwoven bitim işlemleri ve kullanım alanları"
+   }
+  ],
   "textbooks": [
    "1. Handbook of Technical Textiles, The textile Institute CRC Press, 2000, 0-8493-1047-4."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=509"
  },
  "YTT 511E": {
   "code": "YTT 511E",
   "name": "Coloration of Techn.Textiles",
+  "nameEn": "Coloration of Techn.Textiles",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -267,6 +623,77 @@
    "Hafta 13 · Fonksiyonel renklendirme",
    "Hafta 14 · Tekstil boya ve kimyasallarının kullanımı ile ilgili çevresel düzenlemeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tekstil boyarmaddeleri, pigmentler ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tekstil boyarmaddeleri, pigmentler ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kromik maddeler ve uygulama metotları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Optik efektli pigmentler ve uygulama metotları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Polimerlerin masterbatch yöntemi ile renklendirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Teknik tekstillerin konvansiyonel ve ileri boyama yöntemleri ile renklendirilmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Teknik tekstillerin konvansiyonel ve ileri boyama yöntemleri ile renklendirilmesi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Teknik tekstillerin konvansiyonel baskı yöntemleri ile renklendirilmesi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Teknik tekstillerin konvansiyonel baskı yöntemleri ile renklendirilmesi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Teknik tekstillerin mürekkep püskürtme yöntemi ile renklendirilmesi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Polimer yüzeylerin renklendirme öncesinde yüzey modifikasyonları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Yapısal renklendirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Fonksiyonel renklendirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Tekstil boya ve kimyasallarının kullanımı ile ilgili çevresel düzenlemeler"
+   }
+  ],
   "textbooks": [
    "-",
    "Advances in the dyeing and finishing of technical textiles, Edited by M.L. Gulrajani, (2013). Woodhead Pub. in association with The Textile Institute, ISBN 0857094335.",
@@ -274,12 +701,12 @@
    "-",
    "Printing on polymers, Joanna Izdebska Sabu Thomas. Elsevier Inc., 2016, ISBN: 978-0-323-37468-2"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=511"
  },
  "YTT 513E": {
   "code": "YTT 513E",
   "name": "Comfort of High Perform.Tex.",
+  "nameEn": "Comfort of High Perform.Tex.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -312,15 +739,86 @@
    "Hafta 13 · Spor giysiler için yüksek performanslı tekstillerin konforu",
    "Hafta 14 · Tıbbi tekstillerin konforu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yüksek performanslı tekstillerin konforu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yüksek teknoloji ürünü giysiler için akıllı ve konforlu yeni tekstiller ve malzemeler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yüksek performanslı tekstil ürünleri kullanarak yüksek performanslı giysiler tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Yüksek performanslı tekstiller için yenilikçi teknolojiler ve konfor",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yüksek performanslı tekstillerin termofizyolojik konforu",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yüksek performanslı tekstil kumaşlar için nem yönetimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yüksek performanslı tekstillerin duyusal ve dokunsal konforu",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yüksek performanslı tekstillerde psikolojik konfor",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Yüksek performanslı tekstillerde psikolojik konfor",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Konfor test yöntemleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Isı ve yangından korunma için yüksek performanslı giysilerin konforu",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Yüksek performanslı aşırı soğuk ve yağışlı havaların konforu",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Spor giysiler için yüksek performanslı tekstillerin konforu",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tıbbi tekstillerin konforu"
+   }
+  ],
   "textbooks": [
    "Improving Comfort In Clothing / Edited By Guowen Song, Oxford ; Woodhead Pub. :, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=513"
  },
  "YTT 515E": {
   "code": "YTT 515E",
   "name": "Geosynthetics",
+  "nameEn": "Geosynthetics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -354,15 +852,86 @@
    "Hafta 13 · İşlevselleştirilmiş jeotekstiller: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
    "Hafta 14 · Küresel ve milli jeotekstil pazarı analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Jeotekstillerin tanımı, özellikleri ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Jeotekstillerde kullanılan polimer esaslı malzemelerin özellikleri ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Jeotekstillerde kullanılan film, membran ve tekstil yapılarının tanıtılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Jeotekstiller için tasarım kriterlerinin belirlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Takviye amaçlı jeotekstil ürünleri: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri, pazar payı",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Ayırma amaçlı jeotekstil ürünler: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri, pazar payı",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Drenaj amaçlı jeotekstiller: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikler",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Koruma amaçlı jeotekstil ürünleri: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Jeogridler: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Jeonetler: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Zirai amaçlı jeotekstiller: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Endüstriyel amaçlı jeotekstiller: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "İşlevselleştirilmiş jeotekstiller: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Küresel ve milli jeotekstil pazarı analizi"
+   }
+  ],
   "textbooks": [
    "Geotextiles From Design to Applications, R. M. Koerner (Editor), Woodhead Publishing Series in Textiles Number 175, 2016, ISBN: 978-0-08-100221-6"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=515"
  },
  "YTT 517E": {
   "code": "YTT 517E",
   "name": "Medical Textiles",
+  "nameEn": "Medical Textiles",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -396,15 +965,86 @@
    "Hafta 13 · Akıllı medikal tekstiller: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
    "Hafta 14 · Küresel medikal tekstil pazarı analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Medikal tekstillere giriş ve sınıflandırma",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Medikal tekstillerde kullanılan biyomalzemelerin sınıflandırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Medikal tekstillerde kullanılan tekstil konstrüksiyonlarının tanıtılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Medikal tekstiller için tasarım kriterlerinin belirlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Hijyen ürünleri: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri, pazar payı",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Yara örtücü ürünler: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri, pazar payı",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Yapay organlar: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikler",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ameliyat ürünleri: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ameliyat iplikleri: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Yumuşak doku implantları: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ortopedik implantlar: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kardiyovasküler implantlar: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Akıllı medikal tekstiller: sınıflandırılması, kullanılan hammaddeler, üretim teknikleri, yapısal tasarım kriterleri, performans özellikleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Küresel medikal tekstil pazarı analizi"
+   }
+  ],
   "textbooks": [
    "Medical and Healthcare Textiles, Subhash C. Anand J F Kennedy M Miraftab S. Rajendran, Woodhead Publishing, 2010, ISBN: 9781845692247"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=517"
  },
  "YTT 519E": {
   "code": "YTT 519E",
   "name": "Military Textiles",
+  "nameEn": "Military Textiles",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -437,15 +1077,86 @@
    "Hafta 13 · Akıllı özellik ve tasarıma sahip askeri teknik tekstiller",
    "Hafta 14 · Çok fonksiyonlu özellik ve tasarıma sahip askeri teknik tekstiller"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Askeri tekstillere giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Askeri tekstillerlerde kullanılan malzemeler ve yüksek mukavemetli malzemeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Askeri tekstillerin konfor ve dayanıklılık",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Askeri tekstillerin konfor ve sürdürülebilirliği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kimyasal ve biyolojik tehlikelere karşı koruyucu askeri tekstiller",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Nükleer tehlikelere karşı koruyucu askeri tekstiller",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ekstrem koşullara (ısı, soğuk, rüzgâr, yağmur) karşı koruyucu ve izole edici askeri tekstiller",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ekstrem koşullara ( alev, ses, elektrik) karşı koruyucu ve izole edici askeri tekstiller",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Darbeye karşı koruyucu askeri teknik tekstiller",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Kesiciye karşı koruyucu askeri teknik tekstiller",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Kamuflaj, kalkanlama amaçlı askeri teknik tekstiller (görünür spektrum",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Kamuflaj, kalkanlama amaçlı askeri teknik tekstiller (ultraviole kızılötesi/elektromanyetik kalkanlama)",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Akıllı özellik ve tasarıma sahip askeri teknik tekstiller",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Çok fonksiyonlu özellik ve tasarıma sahip askeri teknik tekstiller"
+   }
+  ],
   "textbooks": [
    "Military textiles, Ed. Wilusz, E., Woodhead Publishing, Cambridge, UK, 2008, ISBN 978-1-84569-206-3"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=519",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=519"
  },
  "YTT 520E": {
   "code": "YTT 520E",
   "name": "Industry 4.0 in Text.&Apparel",
+  "nameEn": "Industry 4.0 in Text.&Apparel",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -478,6 +1189,77 @@
    "Hafta 13 · Endüstri 4.0 Tekstil ve teknik tekstil endüstrisinde vaka ve uygulamaları",
    "Hafta 14 · Endüstri 4.0 Hazır giyim endüstrisinde vaka ve uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstri devrimlerinin tarihçesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstri 4.0 konsepti. Akıllı fabrikalar. Dijital üretim. E-Üretim",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Endüstri 4.0’ın yapısı ve ilgili teknolojiler. Nesnelerin interneti",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Endüstri 4.0’ın yapısı ve ilgili teknolojiler. Siber-fiziksel sistemler, akıllı robotlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Endüstri 4.0’ın yapısı ve ilgili teknolojiler. Büyük veri ve analitik, bulut bilişim",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Endüstri 4.0’ın yapısı ve ilgili teknolojiler. Arttırılmış gerçeklik ve sanal gerçeklik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Endüstri 4.0’ın yapısı ve ilgili teknolojiler. Eklemeli üretim, yatay ve dikey entegrasyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Endüstri 4.0’ın yapısı ve ilgili teknolojiler. Siber güvenlik",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Endüstri 4.0 için yol haritası: Endüstri 4.0’a hazır olma ve olgunluk derecesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Endüstri 4.0 için yol haritası: Endüstri 4.0’a geçişin yaratacağı rekabet avantajları ve önündeki engeller.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Endüstri 4.0’ın uygulanabilirliği: Veri işlemede ölçüm ve gösterim için gerekli enstrüman ve ürünler.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Endüstri 4.0’ın uygulanabilirliği: Veri işlemede endüstriyel proses değişkenlerinin kontrol edilmesi için gerekli enstrüman ve ürünler.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Endüstri 4.0 Tekstil ve teknik tekstil endüstrisinde vaka ve uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Endüstri 4.0 Hazır giyim endüstrisinde vaka ve uygulamalar"
+   }
+  ],
   "textbooks": [
    "Elena G. Popkova, Yulia V. Ragulina, Aleksei V. Bogoviz (2018). Industry 4.0: Industrial Revolution of the 21st Century, Springer.",
    "Devezas, T, & Leitão, J. (2017). A. Sarygulov A. Industry 4.0–Entrepreneurship and Structural Change in the New Digital Landscape",
@@ -485,12 +1267,12 @@
    "Devezas, T., & Leitão, J. (2017). A. Sarygulov A. Industry 4.0–Entrepreneurship and Structural Change in the New Digital Landscape. Springer",
    "Bartodziej, C. J. (2016). The concept industry 4.0: an empirical analysis of technologies and applications in production logistics. Springer"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=520",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=520"
  },
  "YTT 521E": {
   "code": "YTT 521E",
   "name": "Nanotech.App.&Nanocom.in Text.",
+  "nameEn": "Nanotech.App.&Nanocom.in Text.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -524,17 +1306,88 @@
    "Hafta 13 · Tekstil malzemelerinin tabaka biriktirme yöntemi ile yüzey modifikasyonu, tekstil malzemelerinin plazma işlemleri ile yüzey modifikasyonu",
    "Hafta 14 · Tekstil malzemelerinin nano parçacıklar ile yüzey modifikasyonu: gelişmiş kaplamalar ve fonksiyonel apreler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nanolifler, tanımı, özellikleri, nanolif teknolojisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Nanolif üretim metotları. Elektro lif çekim metodu, proses parametrelerinin lif oluşumuna, çapına ve morfolojisine etkisi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Elektro lif çekimi ile üretilmiş nanoliflerin karakterizasyonu. Fiziksel ve kimyasal karakterizasyon.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Nanoliflerin kullanım alanları; elektronik, filtrasyon",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Nanoliflerin doku rejenerasyonu, koruyucu giysilerde kullanımı",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Çok fonksiyonlu nano polimer kompozitlerin üretimi, karakterizasyonu, özellikleri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 7,
+    "topic": "Çok fonksiyonlu nano polimer kompozitlerin karakterizasyonu, özellikleri ve uygulama alanları",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 8,
+    "topic": "Çok fonksiyonlu bio tabanlı nano polimer kompozitlerin üretimi, karakterizasyonu, özellikleri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 9,
+    "topic": "Çok fonksiyonlu bio tabanlı nano polimer kompozitlerin karakterizasyonu ve kullanım alanları",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 10,
+    "topic": "Tekstil malzemelerinin yüzey modifikasyon işlemlerine giriş, tekstil malzemelerinin yüzey karakterizasyon yöntemleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Tekstil malzemelerinin fiziksel buhar biriktirme yöntemi ile yüzey fonksiyonelleştirmesi, tekstil malzemelerinin yüzey aşılaması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Tekstil malzemelerinin elektriksiz biriktirme yöntemi ile yüzey modifikasyonu, tekstil malzemelerinin kimyasal buhar biriktirme yöntemi ile yüzey fonksiyonelleştirmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tekstil malzemelerinin tabaka biriktirme yöntemi ile yüzey modifikasyonu, tekstil malzemelerinin plazma işlemleri ile yüzey modifikasyonu",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tekstil malzemelerinin nano parçacıklar ile yüzey modifikasyonu: gelişmiş kaplamalar ve fonksiyonel apreler"
+   }
+  ],
   "textbooks": [
    "Surface modification of textiles, Edited by Q. Wei, Woodhead Publishing, Cambridge, UK, 2009, ISBN 978-1-84569-419-7",
    "Electrospun Nanofibers, Edited by: Mehdi Afshari, Woodhead Publishing, Cambridge, UK, 2017, ISBN: 978-0-08-100907-9",
    "Multifunctionality of Polymer Composites: Challenges and New Solutions, Elsevier, 2015, Editors: Klaus Friedrich, Ulf Breuer, ISBN: 978-0-323-26434-1"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=521"
  },
  "YTT 523E": {
   "code": "YTT 523E",
   "name": "Polymeric Biomat.for Tech.Tex.",
+  "nameEn": "Polymeric Biomat.for Tech.Tex.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -567,16 +1420,87 @@
    "Hafta 13 · Polimerik biyomalzemelerin ortopedi, damar, ameliyat ipliği, doku, boş lif membranları, vb. biomedikal tekstil uygulamaları",
    "Hafta 14 · Polimerik biyomalzemelerin kullanılması ile biomedikal tekstiller tasarlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Polimerik biyomalzemelere genel bir giriş: Polimer yapısı, sentezi ve özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Biyomedikal tekstil uygulamaları için doğal biyopolimerler ve bunların fiziksel ve kimyasal özellikleri (proteinlerin temelleri, ipek fibroini, kolojen, kitosan, vb.).",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Biyomedikal tekstil uygulamaları için sentetik biyopolimerler ve bunların fiziksel ve kimyasal özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Biyomedikal tekstil uygulamaları için doğal biyoçözünür biyopolimerler ve bunların fiziksel ve kimyasal özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Biyomedikal tekstil uygulamaları için foksiyonelleştirilmiş ve duyarlı biyopolimerler ve bunların fiziksel ve kimyasal özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Polimerik biyomalzeme yüzeyleri fiziği: Hücre tutunmasını etkileyen yüzey özellikleri, ıslanabilirlik, kristalinite, pürüzlülük, elektriksel yük hareketliliği, vb.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Polimerik biyomalzeme yüzeyleri kimyası: Polimer hidrolizi, protein-yüzey etkileşimleri, hücre-yüzey etkileşimleri, biyomalzeme tabanlı tekstiller ile ortamın etkileşimi, vb.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Polimerik biyomalzemelerin yüzey modifikasyonu I: yüzey adezyonu, hücre adezyonu, thrombojenitenin, akış özelliklerinin, bakteri adezyonu kontrolu gibi modifikasyon gereksinimleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Polimerik biyomalzemelerin yüzey modifikasyonu II: Plazma muamelesi, aktarma kaplama, tutunma-click kimyası, aşılama, yüzey ayrımı, yüzeyi fonkiyonelleştirilmiş hidrojeller, vb.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "İlaç taşınımı, görüntüleme ve hissetme için entegre edilmiş polimerik taşıyıcılar",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Polimerik biyomalzemelerin karakterizasyonu (XPS, AES, SIMS, Goniometer, AFM, Ellipsometry, vb.).",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Teknik tekstillerde kullanılan polimerik biyomalzemelerin mekanik performansı ve kırılma analizleri. Polimerik biyomalzemelerin ve son ürünlerin elastikiyet, modül, mukavemet, dayanıklılık ve yorulma davranışları",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Polimerik biyomalzemelerin ortopedi, damar, ameliyat ipliği, doku, boş lif membranları, vb. biomedikal tekstil uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Polimerik biyomalzemelerin kullanılması ile biomedikal tekstiller tasarlanması"
+   }
+  ],
   "textbooks": [
    "Gajjar, Chirag R., and Martin W. King. Resorbable Fiber-Forming Polymers for Biotextile Applications. Springer, 2014.",
    "Biomaterials Science: An Introduction to Materials in Medicine, By Buddy D. Ratner, Et Al, Isbn 0-12-582461-0"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=523",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=523"
  },
  "YTT 596E": {
   "code": "YTT 596E",
   "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -620,6 +1544,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -630,7 +1625,6 @@
    "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
    "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=YTT&dersNo=596"
  }
 }

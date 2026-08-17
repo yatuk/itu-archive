@@ -2,6 +2,7 @@
  "IYB 515E": {
   "code": "IYB 515E",
   "name": "Special Top.in Const.Manag.",
+  "nameEn": "Special Top.in Const.Manag.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -30,17 +31,74 @@
    "Hafta 10 · İnşaat yönetimi sürecinde enformasyon yönetimi",
    "Hafta 11 · İnşaat yönetiminde gelecek yönelimleri ve yeni roller"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gelecekte inşaat firmalarının perspektifleri ve boyutları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası İnşaat Sektörü",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Yeni gelişme stratejileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Proje teslim sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Proje yönetim teorileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Yenileşim ve değişim yönetimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sürdürülebilir inşaatta proje yöneticisinin rolü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yeni roller ve yeni yönetim alanları;",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bilişim dünyasının inşaat sektöründeki rolü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "İnşaat yönetimi sürecinde enformasyon yönetimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "İnşaat yönetiminde gelecek yönelimleri ve yeni roller",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "McGeorge, D ve Zou, P. (2013). Construction Management: New Directions, 3rd Ed., John Wiley and Sons.",
    "Langford, D. ve Male, S. (2001). Strategic Management in Construction, Blackwell",
    "Brandon, P. ve Lombardi, P. (2011). Evaluating Sustainable Development in the Built Environment, 2nd Ed., John Wiley and Sons."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=515"
  },
  "IYB 517E": {
   "code": "IYB 517E",
   "name": "Claim Manag.in Cons.Pro.",
+  "nameEn": "Claim Manag.in Cons.Pro.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -72,6 +130,63 @@
    "Hafta 10 · Başlıca uluslararası uyuşmazlık çözüm kurumlarının (ICC vb.) ADR ve tahkim süreçlerinin incelenmesi",
    "Hafta 11 · Uyuşmazlık analizi ve uygun çözüm yönteminin seçilmesi yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: İnşaat projelerinde çatışma, hak talebi ve uyuşmazlık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İnşaat projelerinde uyuşmazlıklara sebep olan konular ve alınabilecek önlemler - 1",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "İnşaat projelerinde uyuşmazlıklara sebep olan konular ve alınabilecek önlemler - 2",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Standart inşaat sözleşmelerinde hak talebi ve uyuşmazlık çözüm süreçlerinin incelenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Süre Uzatımı Talepleri ve Gecikme Analizi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Ek Ödeme Talepleri, Doğrudan ve Dolaylı Maliyetlerin Hesaplanması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Hak talebi hazırlanması ve sunulması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Hak taleplerinin yanıtlanması (Karşı talepler)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "İnşaat sektöründe kullanılan uyuşmazlık çözüm yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Başlıca uluslararası uyuşmazlık çözüm kurumlarının (ICC vb.) ADR ve tahkim süreçlerinin incelenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Uyuşmazlık analizi ve uygun çözüm yönteminin seçilmesi yöntemleri",
+    "outcomes": "3-4-5-6-7"
+   }
+  ],
   "textbooks": [
    "Fenn, P. (2012)., Commercial Conflict Management and Dispute Resolution, Spon Press.",
    "Thomas R. (2001), Construction Contract Claims, Palgrave.",
@@ -79,12 +194,12 @@
    "Brooker P. (2010), Wilkinson S., Mediation in the Construction Industry, Spon Press - Taylor and Francis.",
    "Wood D. (2011), Chynoweth P., Adshead J., Mason J., Law and the Built Environment, Wiley – Blackwell."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=517"
  },
  "IYB 561E": {
   "code": "IYB 561E",
   "name": "Business Process Mana.in Cons.",
+  "nameEn": "Business Process Mana.in Cons.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -98,12 +213,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=561",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=561"
  },
  "IYB 599E": {
   "code": "IYB 599E",
   "name": "Project",
+  "nameEn": "Project",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -117,7 +232,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=599",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=599"
  }
 }

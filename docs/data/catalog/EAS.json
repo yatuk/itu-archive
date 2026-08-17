@@ -2,6 +2,7 @@
  "EAS 111": {
   "code": "EAS 111",
   "name": "Teknik Resim",
+  "nameEn": "Technical Drawing",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -35,15 +36,73 @@
    "Hafta 13 · İzdüşüm, görünüşler ve kesit görünüşler",
    "Hafta 14 · İzdüşüm, görünüşler ve kesit görünüşler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Teknik resmin önemi"
+   },
+   {
+    "week": 2,
+    "topic": "Standart kavramı ile çizim araç ve gereçlerinin tanıtılması"
+   },
+   {
+    "week": 3,
+    "topic": "Çizgiler ve anlamları"
+   },
+   {
+    "week": 4,
+    "topic": "Teknik yazı"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçülendirmenin esasları"
+   },
+   {
+    "week": 6,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşler"
+   },
+   {
+    "week": 7,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşler"
+   },
+   {
+    "week": 8,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşler"
+   },
+   {
+    "week": 9,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşlers"
+   },
+   {
+    "week": 10,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşler"
+   },
+   {
+    "week": 11,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşler"
+   },
+   {
+    "week": 12,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşler"
+   },
+   {
+    "week": 13,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşler"
+   },
+   {
+    "week": 14,
+    "topic": "İzdüşüm, görünüşler ve kesit görünüşler"
+   }
+  ],
   "textbooks": [
    "STCW 95’e Uygun Teknik Resim I, Durmuşoğlu, Y.- Emir, A.S., Teknik Resim Ders notları M.Erka, 2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=111"
  },
  "EAS 112": {
   "code": "EAS 112",
   "name": "Technical Drawing",
+  "nameEn": "Technical Drawing",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -76,15 +135,87 @@
    "Hafta 13 · Üretim hatları yerleşim tasarımına giriş, makine parkının tasarımı",
    "Hafta 14 · Modern üretim sistemleri ve gelişimlerinin kavranması, yeni ürün tasarımları geliştirme teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstri Mühendisliğinde tasarıma giriş, metodolojiler, araç ve teknikler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım mühendisliğinde kullanılan yapılar ve sınıf içi uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarımlarda ölçeklendirme, ölçülendirme yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Üç boyutlu tasarım görünümünün ve farklı eksenlerden algılaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Mevcut tasarım görünümlerinden faydalanılarak tasarımın tamamlanması teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Bilgisayar Destekli Tasarım (CAD) programlarının tanıtılması, temel komutlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Yeni ürün geliştirme, yerleşim planları, tasarım işlemleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "CAD programları komutları, modifikasyon komutları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "CAD programlarında kullanılan stiller, ölçülendirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Üç eksenden tasarımların gerçekleştirilmesi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "CAD programları ile yeni ürün tasarımlarının çizilmesi, geliştirilmesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Üretim hatları yerleşim tasarımına giriş, makine parkının tasarımı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Modern üretim sistemleri ve gelişimlerinin kavranması, yeni ürün tasarımları geliştirme teknikleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Vajna, Sándor (Ed.), 2020, Integrated Design Engineering “Interdisciplinary and Holistic Product Development”, Springer International Publishing, doi: 10.1007/978-3-030-19357- 7."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=112"
  },
  "EAS 207": {
   "code": "EAS 207",
   "name": "Statik",
+  "nameEn": "Statics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -98,12 +229,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=207"
  },
  "EAS 208": {
   "code": "EAS 208",
   "name": "Dynamics",
+  "nameEn": "Dynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -117,12 +248,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=208",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=208"
  },
  "EAS 209": {
   "code": "EAS 209",
   "name": "Cisimlerin Mukavemeti",
+  "nameEn": "Mechanics of Solids",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -136,12 +267,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=209"
  },
  "EAS 230": {
   "code": "EAS 230",
   "name": "Mühendislik Hesaplamaları (MATLAB)",
+  "nameEn": "Engineering Computing (MATLAB)",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -155,7 +286,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=230",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EAS&dersNo=230"
  }
 }

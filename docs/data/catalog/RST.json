@@ -2,6 +2,7 @@
  "RST 501": {
   "code": "RST 501",
   "name": "Koruma Projesi I",
+  "nameEn": "Conservation Studio I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -35,6 +36,77 @@
    "Hafta 13 · Yeniden kullanımla ilgili alternatif önerilerin geliştirilmesi: yeni işlev ve gerektirdiği müdahaleler",
    "Hafta 14 · Aydınlatma, ısıtma, havalandırma ile ilgili düzenlemeler; ayrıntılar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin kapsamının anlatılması; konuların tanıtılması; grupların oluşturulması",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Yerinde incelemeler ve belgeleme çalışmaları",
+    "outcomes": "1-3-5-6"
+   },
+   {
+    "week": 3,
+    "topic": "Ön araştırmaların sunulması- fotoğrafik belgeleme, yapıyı tanıtan krokiler",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Rölöve çalışmalarının sunumu (planlar)",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Rölöve çalışmalarının sunumu (kesitler)",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Rölöve çalışmalarının sunumu (görünüşler)",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Rölöve çalışmalarının sunumu (ayrıntılar)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Analitik rölövelerin sunumu: malzeme ve hasar analizleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kronolojik analizler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Restitüsyon araştırmaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Restitüsyon önerisinin sunulması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Malzeme bozulmaları ve struktürel sorunlara yönelik koruma önerilerinin sunuluşu",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Yeniden kullanımla ilgili alternatif önerilerin geliştirilmesi: yeni işlev ve gerektirdiği müdahaleler",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Aydınlatma, ısıtma, havalandırma ile ilgili düzenlemeler; ayrıntılar"
+   }
+  ],
   "textbooks": [
    "Burns, J. (Ed.), 1989, Recording Historic Structures, The American Institute of Architects Press, Washington DC",
    "Feiffer, C., 1989, Il Progetto di Conservazione, Franco Angeli Libri, Milano",
@@ -42,12 +114,12 @@
    "Uluengin, B., 2010, Rölöve, YEM Istanbul",
    "Uluengin, F., Uluengin B., Uluengin M.B., 2001, Osmanlı Anıt Mimarisinde Klasik Yapı Detayları, YEM Istanbul"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=501"
  },
  "RST 509": {
   "code": "RST 509",
   "name": "Koruma Kuramı",
+  "nameEn": "Theory of Conservation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -83,17 +155,88 @@
    "Hafta 13 · Seminer sunuşları - II",
    "Hafta 14 · Seminer sunuşları - III"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş. Koruma kuramının kapsam ve anlamı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "19. yüzyıl Fransa’sında koruma kuramının gelişi ve Viollet-le-Duc’ün üslup birliği anlayışı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Anti-restorasyon akımı ve J. Ruskin ile W. Morris’in yaklaşımları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "19. yüzyıl İtalya’sında gelişen kuramlar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Osmanlı dünyasında anıt ve çevre koruma konusundaki yaklaşımlar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Çağdaş koruma kuramları ve restorasyon yaklaşımları, otantiklik kavramı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Dünya savaşları ertesinde koruma kuramının gelişimi ve Venedik Tüzüğü",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Koruma alanında etkinlik gösteren uluslararası kuruluşlar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Tek yapıdan tarihi çevre korumaya",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Türkiye’de korumanın yasal çerçevesi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Türkiye’de korumanın yönetsel yapısı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Seminer sunuşları - I",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Seminer sunuşları - II",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Seminer sunuşları - III"
+   }
+  ],
   "textbooks": [
    "Orbasli, A., Architectural Conservation: Principles and Practice Blackwell Publishing, 2007.",
    "Kuban, D., Tarihi Çevre Korumanın Mimarlık Boyutu: Kuram ve Uygulama, YEM Yayınevi, İstanbul 2000.",
    "Jokilehto, J., A History of Architectural Conservation, İngiltere: Butterworth Heinemann, 1999."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=509"
  },
  "RST 513": {
   "code": "RST 513",
   "name": "Koruma Teknik ve Yöntemleri",
+  "nameEn": "Conservation Techniques and Methodologies",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -128,6 +271,77 @@
    "Hafta 13 · Yeniden yapım (ahşap ve kargir)",
    "Hafta 14 · Koruma uygulamalarında şantiye yönetimi ve kalite denetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Koruma Teknikleri ile ilgili uluslararası kurallar",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 2,
+    "topic": "Anıtlarda görülen bozulmalar ve nedenleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Hasarların incelenmesi için kullanılan gelişmiş teknikler",
+    "outcomes": "3-4-7"
+   },
+   {
+    "week": 4,
+    "topic": "Restorasyon projelerinde hasar analizi: hasarların lejant oluşturarak rölövelere işlenmesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Sağlamlaştırma teknikleri (malzeme ve strüktür)",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 6,
+    "topic": "Sağlamlaştırma uygulamaları",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 7,
+    "topic": "Bütünleme teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Bütünleme uygulamaları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Taşıma teknik ve uygulamaları",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 10,
+    "topic": "Yenileme (ahşap ve kargir)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Arkeolojik restorasyon (Dünyadan örnekler)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Arkeolojik restorasyon (Türkiye’den uygulamalar)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Yeniden yapım (ahşap ve kargir)",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 14,
+    "topic": "Koruma uygulamalarında şantiye yönetimi ve kalite denetimi"
+   }
+  ],
   "textbooks": [
    "UNESCO, 1972, Preserving and Restoring Monuments and Historic Buildings, Paris",
    "Ahunbay, Z., 2009, Tarihi Çevre Koruma ve Restorasyon, YEM, İstanbul",
@@ -135,12 +349,12 @@
    "Fitch, J.M., 1990, Historic Preservation, University Press of Virginia",
    "Weaver, M.E., 1997, Conserving Buildings, Preservation Press, John Wiley, New York"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=513"
  },
  "RST 521E": {
   "code": "RST 521E",
   "name": "Advanced Methods in Arch.Sur.",
+  "nameEn": "Advanced Methods in Arch.Sur.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -176,6 +390,77 @@
    "Hafta 13 · Resim temelli araçlarla ölçme uygulaması",
    "Hafta 14 · Yeni teknolojiler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tarihi yapı/çevre korumada ölçme bilgisi, genel kavramlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Ölçme tarihi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Ölçme teknikleri ve kullanım alanları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Ölçme hataları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçmede geleneksel araçlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Trigonometri ve Ölçme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Poligonlar, Poligon hesapları-Açık poligon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Poligon hesapları-Kapalı poligon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Geleneksel araçlarla ölçme uygulaması",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Ölçmede elektronik araçlar",
+    "outcomes": "2-3-7"
+   },
+   {
+    "week": 11,
+    "topic": "Elektronik araçlarla ölçme uygulaması",
+    "outcomes": "3-4-5-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Ölçmede resim temelli araçlar ve yazılımlar",
+    "outcomes": "2-3-7"
+   },
+   {
+    "week": 13,
+    "topic": "Resim temelli araçlarla ölçme uygulaması",
+    "outcomes": "3-4-5-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Yeni teknolojiler"
+   }
+  ],
   "textbooks": [
    "Watt, D., (1996). Surveying historic buildings, Dorset: Donhead,.",
    "Uluengin, M.B. (2002). Rölöve, İstanbul : Yapı Endüstri Merkezi Yayınları.",
@@ -183,12 +468,12 @@
    "Burns, J. A., (2004), Historic American BuildingsSurvey/Recording historic structures, N.J.: Wiley.",
    "Recording, Documentation, and Information Management for the Conservation of Heritage Places. Los Angeles: The Getty Conservation Institute, (2007)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=521"
  },
  "RST 523E": {
   "code": "RST 523E",
   "name": "Gel.Yapı Mal.İzl.Boz.&Kor.Yön.",
+  "nameEn": "Deter.&Cons.of Trad.Buil.Mate.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -225,6 +510,77 @@
    "Hafta 13 · Yüzey kaplamaları, su iticiler",
    "Hafta 14 · Sağlamlaştırma ve koruma yöntemlerinin değerlendirilmesi. Laboratuvar ve alan araştırmaları. Örnek bir çalışmanın değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Doğal taşların jeolojik formasyonu, sınıflandırılması (yapı ve dekoratif taşlar), mineral kompozisyonları, fiziksel ve mekanik özellikleri. Yapılarda kullanım şekilleri",
+    "outcomes": "1-2-4-8-9"
+   },
+   {
+    "week": 2,
+    "topic": "Boşlukluluk, boşluk boyut dağılımı, boşluk tipleri, temel bilgiler, ölçüm yöntemleri (endirekt ve basit yöntemler), tortul, metomorfik ve volkanik kayaçların boşluklulukları",
+    "outcomes": "3-4-5-8"
+   },
+   {
+    "week": 3,
+    "topic": "Boşluklu yapı malzemelerinde suyun hareketi (sıvı ve buhar halinde), bu durumun boşlukluluk ile ilişkisi. Boşluklu malzemelerin kuruma-ıslanma çevrimleri, nem ve bozulma süreçleri",
+    "outcomes": "3-4-5-8"
+   },
+   {
+    "week": 4,
+    "topic": "Doğal taş malzemelerin çevresel etkilere bağlı bozulmaları, mekanik özellikleri",
+    "outcomes": "3-4-5-8-9"
+   },
+   {
+    "week": 5,
+    "topic": "Tuz kristallenmesi, suda çözünür tuzların sebepleri, önleyici koruma yöntemleri",
+    "outcomes": "3-4-5-8-9"
+   },
+   {
+    "week": 6,
+    "topic": "Hava kirliliği ve taş bozulması",
+    "outcomes": "3-5-8"
+   },
+   {
+    "week": 7,
+    "topic": "Donma-çözünme çevrimleri, örnek durumlar",
+    "outcomes": "3-5-8"
+   },
+   {
+    "week": 8,
+    "topic": "Biyolojik oluşumun neden olduğu bozulma, önlem ve çözümler",
+    "outcomes": "3-4-5-8-9"
+   },
+   {
+    "week": 9,
+    "topic": "Kagir yüzeylerin temizliği, kirin tanımı, temizleme yöntemleri, yüzey temizleme programının planlanması",
+    "outcomes": "2-3-4-5-8-9"
+   },
+   {
+    "week": 10,
+    "topic": "Aktif yöntemler; yüzeylerin tuzlardan alınması, yüzeye uygulanan kimyasal karışımlar",
+    "outcomes": "2-3-4-5-8-9"
+   },
+   {
+    "week": 11,
+    "topic": "Kagir yüzeylerin sağlamlaştırılması. 1900-2010 arasında yaşanan gelişmeler. Taş korumada nano-teknolojik yöntemler",
+    "outcomes": "2-3-4-7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Modern yöntemler;kireç, barita,organic polimerler,alkoksisilanlar,akrilik reçineler. Taş korumanın temel prensipleri ve başarı kriterleri",
+    "outcomes": "1-2-3-4-8"
+   },
+   {
+    "week": 13,
+    "topic": "Yüzey kaplamaları, su iticiler",
+    "outcomes": "3-4-8"
+   },
+   {
+    "week": 14,
+    "topic": "Sağlamlaştırma ve koruma yöntemlerinin değerlendirilmesi. Laboratuvar ve alan araştırmaları. Örnek bir çalışmanın değerlendirilmesi"
+   }
+  ],
   "textbooks": [
    "ASHURST, J., N. ASHURST, (1988), Practical Building Conservation, London: Gower Technical Press, (5 vols.).",
    "ASHURST, J., F. G. DIMES, (1990), Conservation of Building and Decorative Stone, London: Butterworth-Heinemann, (2 vols.).",
@@ -232,12 +588,12 @@
    "TORRACA, G., (1982), Mortars, Cements and Grouts Used in the Conservation of Historic Buildings, Rome: ICCROM.",
    "TORRACA, G., (1988), Porous Building Materials, Rome: ICCROM."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=523",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=523"
  },
  "RST 596": {
   "code": "RST 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -281,6 +637,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -293,12 +720,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=596"
  },
  "RST 607": {
   "code": "RST 607",
   "name": "Anıtlarda Yeniden Yapım Sorunl",
+  "nameEn": "Problems of Reconstruction for Historic Monuments",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -334,6 +761,77 @@
    "Hafta 13 · Türkiye’deki uygulamalar (doku)",
    "Hafta 14 · Arkeolojik alanlarda anastylosis/rekonstrüksiyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Anıtlarda büyük ölçekli tahribat ve kayıpların nedenleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Yeniden yapım talebinde amaç ve gerekçe",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Özgünlük sorunları",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Belgeleme ve restitüsyon problemleri",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Uygulama yöntem ve teknikleri",
+    "outcomes": "4-5-6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Uluslararası tüzük, ilke ve yaklaşımlar",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Dünyadan uygulamalar (tek yapı)",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Dünyadan uygulamalar (tarihi merkezler)",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Türkiye’deki ilgili mevzuat",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Türkiye’deki uygulamalar (anıtsal yapı)",
+    "outcomes": "5-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Boğaziçi’ndeki uygulamalar (sivil yapılar)",
+    "outcomes": "5-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Türkiye’deki uygulamalar (doku)",
+    "outcomes": "5-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Arkeolojik alanlarda anastylosis/rekonstrüksiyon"
+   }
+  ],
   "textbooks": [
    "H. Schmidt, Wiederaufbau, Denkmalpflege an archaeologischen Staetten 2, Architekturreferat des deutschen archaeologischen Instituts, Stuttgart 1993.",
    "Rekonstruktion in der Denkmalpflege. Überlegungen – Definitionen-Erfahrungsberichte, Deutsches Nationalkomitee für Denkmalschutz, Band 57, 2.baskı, Bonn 1998.",
@@ -341,12 +839,12 @@
    "E. Madran ve N.Özgönül (Ed.), International Documents Regarding the Preservation Cultural and Natural Heritage, ODTÜ Mimarlık Fak. yay., Ankara 1999.",
    "H.R. MEIER, Stadtentwicklung zwischen Denkmalpflege und Geschichtsfiktion,, Sigel, Paul, Klein, Bruno (Hg.), Konstruktion urbaner Identität. Zitat und Rekonstruktion in Architektur und Städtebau der Gegenwart, Berlin 2006,161 vd."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=607",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=607"
  },
  "RST 609E": {
   "code": "RST 609E",
   "name": "Conser.of Modern Achite.Herit.",
+  "nameEn": "Conser.of Modern Achite.Herit.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -381,6 +879,77 @@
    "Hafta 13 · Öğrenci Sunuşları I",
    "Hafta 14 · Öğrenci Sunuşları II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mimarlıkta Modernizm I: Modernizmin kökenleri, üslubun tanımı ve iki dünya savaşı arasındaki dönemleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 2,
+    "topic": "Mimarlıkta Modernizm II: 2. Dünya Savaşı Sonrası Modernizm",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Mimarlıkta Modernizm III: Modern Mimarlıkta tasarım kavramları ve fiziksel çevreye etkisi",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Mimarlıkta Modernizm IV: Modern Mimarlıkta kamusal alan tasarımı",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "Modern Mimarlık ürünlerinin kültür varlığı olarak kabulü",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Modern Mimarlık mirasının kabulü ve korunmasında karşılaşılan sorunlar - örnekler",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Modern Mimarlık mirasının tescilinde kullanılan ölçütler",
+    "outcomes": "1-2-5-7"
+   },
+   {
+    "week": 8,
+    "topic": "Modern Mimarlık mirasının korunmasına yönelik yaklaşımlar I",
+    "outcomes": "1-2-5-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Modern Mimarlık mirasının korunmasına yönelik yaklaşımlar II",
+    "outcomes": "1-2-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Müdahale yöntemleri I: bakım, koruma – onarım",
+    "outcomes": "1-2-5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Müdahale yöntemleri II: strüktürel onarım",
+    "outcomes": "1-2-5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Müdahale yöntemleri III: rekonstrüksiyon",
+    "outcomes": "1-2-5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Sunuşları I",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Sunuşları II"
+   }
+  ],
   "textbooks": [
    "The Challenge of Change. Dealing with the Legacy of the Modern Movement. Proceedings of the 10th International Docomomo Conference, (2008), W. Quist and B. Lemmens (eds), Amsterdam, IOS Press.",
    "Identification and Documentation of Modern Heritage, (2003), R. van Oers and S. Haraguchi (eds), World Heritage Papers 5, UNESCO World Heritage Center, Paris.",
@@ -388,12 +957,12 @@
    "Preserving Post-War Heritage: The Care and Conservation of Mid-Twentieth-Century Architecture, (2001), S. Macdonald (ed), Donhead and English Heritage, UK.",
    "Prudon, T.H.M., (2008), Preservation of Modern Architecture, Wiley, U.S.A., (ISBN 978-0471662945)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=609",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=609"
  },
  "RST 616": {
   "code": "RST 616",
   "name": "Kültürel Miras Yönetimi",
+  "nameEn": "Management of Cultural Heritage",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -429,18 +998,89 @@
    "Hafta 13 · Türkiye’de kültürel peyzaj alanlarında alan yönetim planlaması",
    "Hafta 14 · Türkiye’de arkeolojik sit alanlarında alan yönetim planlaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Kültür Mirası kavramı, kültürel miras yönetimi kavramı",
+    "outcomes": "3-8"
+   },
+   {
+    "week": 2,
+    "topic": "Miras yönetiminin ilk adımı: kültür envanteri, dünyadan farklı envanter sistemlerinin tanıtılması",
+    "outcomes": "1-5-8"
+   },
+   {
+    "week": 3,
+    "topic": "Dünya mirası kavramı, alan yönetimi kavramı, uluslararası yasal düzenlemeler",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Kentsel sit alanlarında alan yönetimi, örnekler üzerinden tartışma - I",
+    "outcomes": "3-5-7"
+   },
+   {
+    "week": 5,
+    "topic": "Kentsel sit alanlarında alan yönetimi, örnekler üzerinden tartışma - II",
+    "outcomes": "3-5-7"
+   },
+   {
+    "week": 6,
+    "topic": "Tarihi kentsel peyzaj kavramı ve alan yönetim planlamasındaki rolü",
+    "outcomes": "1-2-3-7"
+   },
+   {
+    "week": 7,
+    "topic": "Kültürel peyzaj alanlarında alan yönetimi, örnekler üzerinden tartışma",
+    "outcomes": "1-3-4-7"
+   },
+   {
+    "week": 8,
+    "topic": "Arkeolojik sit alanlarında alan yönetimi, örnekler üzerinden tartışma - I",
+    "outcomes": "1-3-4-7"
+   },
+   {
+    "week": 9,
+    "topic": "Arkeolojik sit alanlarında alan yönetimi, örnekler üzerinden tartışma - II",
+    "outcomes": "1-3-4-7"
+   },
+   {
+    "week": 10,
+    "topic": "Kırsal sit alanlarında alan yönetimi, örnekler üzerinden tartışma",
+    "outcomes": "1-3-4-7"
+   },
+   {
+    "week": 11,
+    "topic": "Türkiye’de alan yönetiminin yasal yapılanması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Türkiye’de kentsel sit alanlarında alan yönetim planlaması",
+    "outcomes": "1-6-8"
+   },
+   {
+    "week": 13,
+    "topic": "Türkiye’de kültürel peyzaj alanlarında alan yönetim planlaması",
+    "outcomes": "1-6-8"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye’de arkeolojik sit alanlarında alan yönetim planlaması"
+   }
+  ],
   "textbooks": [
    "Managing Cultural World Heritage, UNESCO, Paris, 2013",
    "Operational Guidelines for the Implementation of the World Heritage Convention, UNESCO, Paris, 2013",
    "Silverman H. and D. Fairchild Ruggles, Cultural Heritage and Human Rights, Springer, 2007",
    "Aksoy, A. ve D. Ünsal (yay.), Kültürel Miras Yönetimi, Anadolu Üniversitesi, Eskişehir, 2012"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=616",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=616"
  },
  "RST 696": {
   "code": "RST 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -484,6 +1124,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -496,7 +1207,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=RST&dersNo=696"
  }
 }

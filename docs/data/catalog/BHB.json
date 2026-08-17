@@ -2,6 +2,7 @@
  "BHB 201E": {
   "code": "BHB 201E",
   "name": "Temel Bilişim Yazılımları",
+  "nameEn": "Fundamental Software of Informatics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -35,6 +36,78 @@
    "Hafta 13 · Python: Numpy, Scipy, Matplotlib",
    "Hafta 14 · Python: Bilim ve Mühendislik Uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Linux İşletim Sistemi: Dosya Sistemleri, Kernel, Temel Komutlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Linux İşletim Sistemi: Vi ve Sed Metin Düzenleyicileri, AWK Betikleri Yazma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kabuk programlama",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Kabuk programlama: Bilim ve Mühendislik Uygulamaları",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 5,
+    "topic": "Gnuplot Grafik Hazırlama Uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Fortran: Programlama Mantığı, Veri İşleme, Yapı Blokları",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Fortran: Döngüler, Diziler, Girdi ve Çıktıların Düzenlenmesi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Fortran: Bilim ve Mühendislik Uygulamaları",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Octave/Matlab: Octave/Matlab’in Temelleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Octave/Matlab: Sayısal Hesaplama",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Octave/Matlab: Bilim ve Mühendislik Uygulamaları",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Python: Python’ a giriş",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Python: Numpy, Scipy, Matplotlib",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 14,
+    "topic": "Python: Bilim ve Mühendislik Uygulamaları",
+    "outcomes": "2-5-6"
+   }
+  ],
   "textbooks": [
    "J. Keogh ve K. Davidson, Data Structures Demystified, McGraw-Hill, 2004.",
    "C. Newbam ve B. Rosenblatt, Learning the BASH Shell, O'Reilly & Associates. Inc. Sebastopol, CA, USA, 1995.",
@@ -42,12 +115,12 @@
    "Todd Meadors, Linux Shell Script Programming, Course Technology, 2003.",
    "A. Robbins ve N. H. F. Beebe, Shell Scripting, O’Reilly Media, 1st. Ed., 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=201"
  },
  "BHB 203E": {
   "code": "BHB 203E",
   "name": "Hesaplamalı Bilim için Nesne Yönelimli Programlama",
+  "nameEn": "Object Oriented Programming for Computational Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -82,15 +155,87 @@
    "Hafta 13 · Obje Yönelimli Programlamada Python vs C++",
    "Hafta 14 · CUDA ile Paralel Programlamaya Giriş"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş (Eclipse IDE, Temel Yapılar)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Hafıza Kullanımı (Adresler, Diziler and Çıktı Birimleri)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Nesne Tabanlı Programlamaya Giriş (Nesne ve Sınıflar)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Katar Sınıfı ve Girdi/Çıktı Operasyonları",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 5,
+    "topic": "Standard Şablon Kütüphanesi’nin (STL) Kullanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Operatör Aşırı Yükleme (Temel Operatörler, Tip Dönüşümleri)",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kalıtım ve Ad Alanı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Çok Biçimlilik ve Sanal Fonksiyonlar",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Çok Biçimlilik ve Şablonlar",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Çoklu Kaynak Kodu Yönetimi ve “Makefile” Yapısı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Hata Yönetimi (Özel Durumlar, Makrolar ve Hata Ayıklama)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Programlamada Versiyon Kontrol Sistemleri (git, github)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Obje Yönelimli Programlamada Python vs C++",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "CUDA ile Paralel Programlamaya Giriş",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Deitel and Deitel, 2006. C++ How to program, Prentice Hall"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=203"
  },
  "BHB 204E": {
   "code": "BHB 204E",
   "name": "Mekansal Veri Bilimi",
+  "nameEn": "Spatial Data Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -125,15 +270,87 @@
    "Hafta 13 · Mekansal İstatistik II: Yerel Göstergeler ve Hotspot Analizi",
    "Hafta 14 · Vaka Çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mekansal Veri Bilimi’ne Giriş ve Uygulama Alanları – (Mekansal veri bilimi tanıtımı, mekansal düşünme, uygulama örnekleri)",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 2,
+    "topic": "Mekansal Veri Türleri: Raster ve Vektör Veriler – (Veri türlerinin karşılaştırılması, örnek veri setleri)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Koordinat Sistemleri ve Projeksiyonlar (EPSG kodları, dönüşüm işlemleri, GeoPandas ile uygulama)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Temel Mekansal İşlemler (Seçim, filtreleme, clip, buffer, overlay, attribute join etc.)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Python ile Mekansal Veri Okuma ve Görselleştirme (GeoPandas, Shapely, Rasterio kullanarak temel işlemler)",
+    "outcomes": "2-3-5-7"
+   },
+   {
+    "week": 6,
+    "topic": "Google Earth Engine’e Giriş ve Arayüz Tanıtımı",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Raster Verilerle Çalışma: Yükseklik, NDVI, LULC vb",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Mekansal İstatistik: Global İstatistikler",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Mekansal İstatistik: Mekânsal Otokorelasyon",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Mekansal Ağ Analizi: Erişim, Bağlantı, Ulaşım",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Spatio-Temporal Analiz: Zaman Serisi Haritalama",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Açık Veri Kaynakları ve Veri Entegrasyonu - (Açık veri format dönüşümleri, API erişimi, veri temizleme, yasal sınırlamalar)",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Mekansal İstatistik II: Yerel Göstergeler ve Hotspot Analizi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Vaka Çalışmaları",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Geographic Data Science with Python, Sergio Rey, Dani Arribas-Bel, Levi John Wolf, ISBN 9781032445953, 2023, Chapman and Hall/CRC"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=204"
  },
  "BHB 303": {
   "code": "BHB 303",
   "name": "Yapısal Biyoloji ve Uygulamalı Biyoinformatik",
+  "nameEn": "Structural Biology and Applied Bioinformatics",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -167,6 +384,78 @@
    "Hafta 13 · Yapısal Biyoinformatik Ve İlaç Keşfi Çalışmaları",
    "Hafta 14 · Biyoinformatiğin Geleceği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyoinformatiğe Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Protein, DNA ve RNA’nın Yapılarının Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Biyolojik Veritabanlarına Genel Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Biyolojik Veritabanlarında İleri Erişim ve BLAST",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Çoklu Sekans Hizalamaları ve Veritabanları",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Hizalamalar ve Skorlamalar",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Yapısal Biyoinformatik ve Uygulamaları",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 8,
+    "topic": "Biyomoleküllerin Görselleştirilmesi ve Analizi",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 9,
+    "topic": "R Programına Giriş ve Kurulumu",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 10,
+    "topic": "R Programlama Dilinin Esasları - Veri Tabloları ve İleri İşlemler",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 11,
+    "topic": "R’da Sekans Veri Analizi ve Biyoinformatik Uygulamalar",
+    "outcomes": "1-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "R ile Genom Veri Simülasyonu",
+    "outcomes": "1-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Yapısal Biyoinformatik Ve İlaç Keşfi Çalışmaları",
+    "outcomes": "1-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Biyoinformatiğin Geleceği",
+    "outcomes": "1-4-6"
+   }
+  ],
   "textbooks": [
    "Gu, J and Bourne, P.E; Structural Bioinformatics, Wiley, 2009",
    "Frishman, D; Structural Bioinformatics of Membrane Proteins, Springer, 2010",
@@ -174,12 +463,12 @@
    "Peitsch, M.C., and Schwede, T; Computational Structural Biology: Methods and Applications, World Scientific",
    "Forbes J. Burkowski, Structural Bioinformatics: An Algorithmic Approach, 2008, Chapman and Hall/CRC"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=303"
  },
  "BHB 403": {
   "code": "BHB 403",
   "name": "Bilim ve Mühendislik Uygulamaları İçin Bulanık Mantık İlkeleri",
+  "nameEn": "Fuzzy Logic Principles for Science and Engineering Applications",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -213,6 +502,78 @@
    "Hafta 13 · Durulaştırma",
    "Hafta 14 · Bulanık Mantıkta Güncel Konular"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bulanık mantığa giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Belirsizlik Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Klasik Kümeler ve Karakteristik Değerleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Bulanık Kümeler ve Üyelik Dereceleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Üyelik Fonksiyonları; Bulanıklaştırma",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Bulanık Küme Operatörleri ve İşlemleri, “KESİŞİM, BİRLEŞİM, TAMAMLAYICI”",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Bulanık İlişkiler; “VE, VEYA”",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Bulanık Matematik, Toplama, Çıkarma",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bulanık Matematik, Çarpma ve Bölme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Bulanık Kural Tabanı; “EĞER-İSE”, ve Kural tabanlı Sistemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Bulanık Çıkarım Motoru; Mamdani ve Sugeno, Matlab ortaminda",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Bulanık Mantık Önermeler, Doğrulamalar, Alt bileşenler, Kararlar",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 13,
+    "topic": "Durulaştırma",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Bulanık Mantıkta Güncel Konular",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Zadeh, L.A.,1965. Fuzzy Sets. Information and Control.",
    "Şen, Z., 2001, Bulanık Mantık ve Modelleme İlkeleri, Bilge Kültür Sanat Basımevi, 172 sayfa.",
@@ -221,7 +582,6 @@
    "Sivanandam, S. N., Sumathi, S., Deepa, S. N., 2006. Introduction to Fuzzy Logic Using MATLAB, Springer.",
    "Yen, J., Langari, R., 1999. Fuzzy Logic: Intelligence, Control, and Information, Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=403",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BHB&dersNo=403"
  }
 }

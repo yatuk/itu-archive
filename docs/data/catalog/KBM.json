@@ -2,6 +2,7 @@
  "KBM 502": {
   "code": "KBM 502",
   "name": "Liman Yap.Planl.& Tasarımı",
+  "nameEn": "Plan.&Des.of the Port Struc.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -39,6 +40,77 @@
    "Hafta 13 · Model çalışmaları",
    "Hafta 14 · Performans izleme planlaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fonksiyonel tasarım",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Dalgakıranların ve Jetilerin planlanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Dalgakıranların ve Jetilerin tip seçimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Proje dalgasının belirlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Taş dolgulu dalgakıranların tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Keson dalgakıranların tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yüzen dolgulu dalgakıranların tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Diğer dalgakıranlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çevresel etkiler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yapıların tasarımında diğer hususlar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarımda optimizasyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Model çalışmaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Performans izleme planlaması"
+   }
+  ],
   "textbooks": [
    "Engineering and Design of Breakwaters and Jetties Departments of the Army, Washington, DC, 1986.",
    "Engineering and Design of Breakwaters and Jetties Departments of the Army, Washington, DC, 1986.",
@@ -49,12 +121,12 @@
    "Coastal Engineering, Delft University of the Technology, Delft, The Netherland, 1976.",
    "Coastal Engineering, Delft University of the Technology, Delft, The Netherland, 1976."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=502"
  },
  "KBM 504E": {
   "code": "KBM 504E",
   "name": "Kıyılarda Katı Madde Hareketi",
+  "nameEn": "Coastal Sediment Transport",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -96,6 +168,77 @@
    "Hafta 13 · Kıyı yapıları etrafında oyulma; kıyı yapılarının morfolojiye etkileri",
    "Hafta 14 · Kıyı stabilizasyonu; iklim değişikliğinin kıyı morfolojisine etkileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Katı madde taşınımında temel tanımlar ve kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Permanan durumda taban kayma gerilmesi ve hesabı; tabandaki tek bir taneye etkiyen kuvvetler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Hareketin başlaması, ilgili boyutsuz parametreler ve Shields kriteri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Permanan durumda taban malzemesi taşınımı ve taşınım rejimleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Türbülansın katı madde taşınımındaki rolü; permanan durumda askıya geçiş.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Permanan durumda askıdaki katı madde konsantrasyonu; askıda yük taşınımı Yıl içi sınavı",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Dalga sınır tabakasına giriş; akıntı ve dalga durumunda sınır tabakası.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dalga ve akıntı ile dalga durumunda hareket başlangıcı, katı madde mobilitesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Surf bölgesi dışında katı madde taşınımı, hendek ve yaklaşım kanallarında sedimentasyon.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Dalga kırılması ve surf bölgesinde akıntılar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kıyıya dik katı madde hareketi; kıyı profilleri ve enerji harcanmasına etkileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Kıyı boyu katı madde taşınımı ve kıyı çizgisi değişimleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Kıyı yapıları etrafında oyulma; kıyı yapılarının morfolojiye etkileri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Kıyı stabilizasyonu; iklim değişikliğinin kıyı morfolojisine etkileri"
+   }
+  ],
   "textbooks": [
    "Bayazıt, M. & Avcı, İ., 2010: Hareketli Tabanların Hidroliği, Birsen yayınevi.",
    "Bayazıt, M. & Avcı, İ., 2010: Hareketli Tabanların Hidroliği, Birsen yayınevi.",
@@ -110,12 +253,12 @@
    "Kabdaşlı, S. 1992: Kıyı Mühendisliği, İTÜ İnşaat Fak. Matbaası, İstanbul.",
    "Kabdaşlı, S. 1992: Kıyı Mühendisliği, İTÜ İnşaat Fak. Matbaası, İstanbul."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=504",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=504"
  },
  "KBM 596": {
   "code": "KBM 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -159,6 +302,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -171,54 +385,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
- },
- "KBM 601E": {
-  "code": "KBM 601E",
-  "name": "Estuaries&Deltas Hydraluics",
-  "language": "English",
-  "credits": {
-   "theory": 3,
-   "practice": 0,
-   "lab": 0,
-   "local": 3,
-   "ects": 7.5
-  },
-  "description": "Haliç ve delta oluşumlarının tanımları. Kısa ve uzun dönemli değişimlerin morfolojik karakteristikleri. Haliç hidrodinamiği. Haliçlerde su kütlesi hareket denklemleri. Gelgit ve harmonik analizler. Denge. Gelgit teorisi. Gelgitin harmonik analizi. Haliçlerde gelgitsel dinamikler. Sürtünmeli ve sürtünmesiz koşullarda gelgitlerin matematiksel tanımı. Arrested tuz kamasının mekanizması. Tuz kamalarının karakteristik türleri. Hız biçimleri. Tabakalı akışta difüzyon süreçleri. Haliç ve deltalarda tuzluluk-girişim. Haliç ve deltalarda governing tuzluluk yayılımının temel faktörleri. İçsel akış süreçleri. Haliç ve deltalarda katı madde hareketi ve kirlenme. Nehir hidrolik ve hidrolojisine göre deltalardaki morfolojik değişimler. Nehir yapılarının deltalara etkileri. Özel durumlar. Definitions of Estuary and Delta Formation. Morphological Characteristics With Shortterm and Longterm Changes. Hydrodynamics of Estuaries. Governing equations of Water Body Motion in Estuaries. Tides and Harmonic Analysis. Equilibrium. Theory of The Tides. Harmonic Analysis of Tides. Tidal Dynamics in Estuaries. Mathematical Description of Tides With and Without Friction. The Mechanism of An Arrested Saline Wedge.Type characteristics of Saline Wedges. The Patterns of Velocities. Diffusion Processes in Stratified Flow. Salinity-Introsion in Estuaries and Deltas. Basic Factors Governing Salinity Distribution in Estuaries and Deltas. Internal Flow Processes. Sedimentation and Pollution in Estuaries and Deltas. Morphological Changes in Deltas Due to The River Hydraulics an Hydrology. Effects of River Structures on Deltas. Special Cases.",
-  "outcomes": [
-   "Haliç ve deltaların oluşumunun anlaşılması",
-   "Haliç ve deltaların hidrodinamiğinin anlaşılması",
-   "Tuz kamasının oluşumunun öğrenilmesi",
-   "Haliç ve deltalarda katı madde hareketinin anlaşılması"
-  ],
-  "weeklyTopics": [
-   "Hafta 1 · Haliç ve delta oluşumlarının tanımları.",
-   "Hafta 2 · Kısa ve uzun dönemli değişimlerin morfolojik karakteristikleri.",
-   "Hafta 3 · Haliç hidrodinamiği. Haliçlerde su kütlesi hareket denklemleri.",
-   "Hafta 4 · Gelgit ve harmonik analizler. Denge. Gelgit teorisi. Gelgitin harmonik analizi.",
-   "Hafta 5 · Haliçlerde gelgitsel dinamikler. Sürtünmeli ve sürtünmesiz koşullarda gelgitlerin matematiksel tanımı.",
-   "Hafta 6 · Arrested tuz kamasının mekanizması. Tuz kamalarının karakteristik türleri.",
-   "Hafta 7 · Hız biçimleri. Tabakalı akışta difüzyon süreçleri.",
-   "Hafta 8 · Haliç ve deltalarda tuzluluk-girişim.",
-   "Hafta 9 · Haliç ve deltalarda governing tuzluluk yayılımının temel faktörleri.",
-   "Hafta 10 · İçsel akış süreçleri.",
-   "Hafta 11 · Haliç ve deltalarda katı madde hareketi ve kirlenme.",
-   "Hafta 12 · Nehir hidrolik ve hidrolojisine göre deltalardaki morfolojik değişimler.",
-   "Hafta 13 · Nehir yapılarının deltalara etkileri.",
-   "Hafta 14 · Özel durumlar."
-  ],
-  "textbooks": [
-   "Prandle, D., 2009: Estuaries; Dynamics, Mixing, Sedimentation and Morphology, Cambridge University Press.",
-   "Ippen, 1966: Estuary and Coastline Hydrodynamics, McGraw Hill.",
-   "Ünsal, İ, 1984: Oseanografi, İTÜ yayını."
-  ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=596"
  },
  "KBM 602": {
   "code": "KBM 602",
   "name": "Kıyı Mühendis. Özel Konular",
+  "nameEn": "Special Topics in Coastal Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -252,6 +424,77 @@
    "Hafta 13 · Deniz yapılarında titreşim.",
    "Hafta 14 · Kıyı yapılarında deprem kuvvetleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kıyı mühendisliği tesislerinde tasarım kriterleri. Kıyı yapılarında riskin tanımı ve risk hesabı.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Dayanım kuvvetine bağlı tasarım, güvenilirlik bazlı tasarım ve performansa dayalı tasarım esasları.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Kıyı yapıları için saha ve zemin analizi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dökme taş yapılar için tasarım, farklı zemin şartlarında inşa metodları",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 5,
+    "topic": "Özel imalat bloklar, dökme taş yapıların hasar ve göçme tipleri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Düşey yüzlü dalgakıranlar için tasarım ve farklı zemin şartlarında inşa metodları",
+    "outcomes": "2-4-6"
+   },
+   {
+    "week": 7,
+    "topic": "Düşey yüzlü dalgakıranlarda hasar ve göçme tipleri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İstinat yapıları için tasarım ve inşa metodları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yanaşma ve bağlama yapılarının dinamik yükler esasına göre tasarımı ve inşa yöntemleri.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Deniz tabanında tarama, kanal açma, dolgu imalatları.",
+    "outcomes": "2-3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Boru hatları tasarımı, imalatı ile hasar ve göçme tipleri.",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Su alma yapıları ve deniz deşarjlarının tasarım esasları.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Deniz yapılarında titreşim.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Kıyı yapılarında deprem kuvvetleri."
+   }
+  ],
   "textbooks": [
    "Ayhan, N., 2007: Kıyı Mühendisliği, Birsen Yayınevi, İstanbul.",
    "Goda, Y. 2010: Random Seas and Design of Maritime Structures, 3rd Ed., World Scientific, Singapore.",
@@ -260,12 +503,12 @@
    "Sumer, B.M., Fredsoe, J., 2002: The Mechanics of Scour in the Marine Environment, World Scientific, Singapore.",
    "Sumer, B.M. 2013: Liquefaction around Marine Structures, World Scientific, Singapore."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=602",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=602"
  },
  "KBM 603E": {
   "code": "KBM 603E",
   "name": "Offshore Engineering",
+  "nameEn": "Offshore Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -298,18 +541,89 @@
    "Hafta 13 · Deniz tabanına yakın sualtı boru hatları üzerindeki titreşimler",
    "Hafta 14 · Akım kaynaklı titreşimlerin matematiksel modellemesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kararlı akım etkisi altında bir silindir etrafındaki akım",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kararlı akım etkisi altında bir silindire etkiyen kuvvetler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Dalga etkisi altında bir silindir etrafındaki akım",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Dalga etkisi altında ve yüksek KC sayılarında bir silindire etkiyen kuvvetler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Düzenli dalga etkisi altında bir silindire etkiyen kuvvetler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Silindir etrafındaki akımın matematiksel ve sayısal incelemesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Büyük kütleler üzerindeki difraksiyon etkisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Düzensiz dalga etkisi altında bir silindire etkiyen kuvvetler",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Kararlı akım etkisi altındaki serbest bir silindir üzerinde akım kaynaklı titreşimler",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Dalga etkisi altındaki serbest bir silindir üzerinde akım kaynaklı titreşimler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sualtı boru hatları üzerindeki titreşimler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Deniz tabanına yakın sualtı boru hatları üzerindeki titreşimler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Akım kaynaklı titreşimlerin matematiksel modellemesi"
+   }
+  ],
   "textbooks": [
    "Sumer B. M., Freds E J., 1997: Hydrodynamics Around Cylindrical Structures, World Scientific.",
    "Chakrabarti S.K., 1987: Hydrodynamics Of Offshore Structures. Springer-Verlag.",
    "Sarpkaya T., Isaacson M., 1981: Mechanics Of Wave Forces On Offshore Structures, Van Nostrand Rehinhold Company.",
    "Chakrabarti S.K., 1990: Non Linear Methods In Offshore Engineering, Springer-Verlag."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=603"
  },
  "KBM 696E": {
   "code": "KBM 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -353,6 +667,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -365,7 +750,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KBM&dersNo=696"
  }
 }

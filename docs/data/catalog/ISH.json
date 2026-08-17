@@ -2,6 +2,7 @@
  "ISH 202": {
   "code": "ISH 202",
   "name": "Isı Aktarımına Giriş",
+  "nameEn": "Introduction to Heat Transfer",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=202"
  },
  "ISH 202E": {
   "code": "ISH 202E",
   "name": "Isı Aktarımına Giriş",
+  "nameEn": "Introduction to Heat Transfer",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -34,12 +35,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=202"
  },
  "ISH 301": {
   "code": "ISH 301",
   "name": "Çevre Bilimleri ve Müh. Esas.",
+  "nameEn": "Fundamentals of Env.Sci & Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -53,12 +54,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=301"
  },
  "ISH 301E": {
   "code": "ISH 301E",
   "name": "Çevre Bilimleri ve Müh. Esas.",
+  "nameEn": "Fundamentals of Env.Sci & Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -72,12 +73,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=301"
  },
  "ISH 303E": {
   "code": "ISH 303E",
   "name": "Gıda İşleme Yöntemleri",
+  "nameEn": "Food Processing Techniques",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -114,15 +115,87 @@
    "Hafta 13 · Uygulamalı problem çözümleri; Ödev sunumları",
    "Hafta 14 · Fermantasyon teknolojisi; Diğer gıda işleme teknolojileri; Ödev sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gıda mühendisliği konusunda temel bilgiler ve tanımlar; Gıdaların işlenmesinde kullanılan temel işlemler hakkında genel bilgiler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Gıda bileşenleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Gıdalarda önemli mikroorganizmalar; Gıdalarda mikroorganizma çoğalması ve etkileyen faktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gıda kaynaklı mikrobiyal hastalıklar; Gıda işletmelerinde sanitasyon-hijyen uygulamaları-HACCP-ISO 22000",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Birimler ve boyutlar; Kütle ve enerji denklikleri; Gıdaların akışkanlığı: gıda maddelerinin reolojik özellikleri",
+    "outcomes": "4-5-6-7"
+   },
+   {
+    "week": 6,
+    "topic": "Gıdalarda kimyasal reaksiyon kinetiği; Uygulamalı problem çözümleri",
+    "outcomes": "4-5-6-7"
+   },
+   {
+    "week": 7,
+    "topic": "Hammadde hazırlama: temizleme, ayırma, sınıflandırma, kabuk soyma; Katı ve sıvı gıdalarda boyut küçültme, karıştırma",
+    "outcomes": "1-3-7"
+   },
+   {
+    "week": 8,
+    "topic": "Fiziksel ayırma işlemleri: filtrasyon (süzme), sedimentasyon, santrifüj",
+    "outcomes": "1-8"
+   },
+   {
+    "week": 9,
+    "topic": "Difüzyonel ayırma işlemleri: Kristalizasyon, Distilasyon, Ekstraksiyon",
+    "outcomes": "1-4-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Isıl işlemler: haşlama, pastörizasyon, sterilizasyon, konserve işleme",
+    "outcomes": "1-2-3-7"
+   },
+   {
+    "week": 11,
+    "topic": "Isıl işlemler: Soğuk muhafaza ve dondurma işlemleri; Isıl proses hesaplamaları; Ödev sunumları",
+    "outcomes": "1-4-5-6-7-8-9"
+   },
+   {
+    "week": 12,
+    "topic": "Evaporasyon; Kurutma ve psikrometri; Ödev sunumları",
+    "outcomes": "1-4-5-6-7-8-9"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulamalı problem çözümleri; Ödev sunumları",
+    "outcomes": "4-5-6-7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Fermantasyon teknolojisi; Diğer gıda işleme teknolojileri; Ödev sunumları",
+    "outcomes": "1-2-3-8-9"
+   }
+  ],
   "textbooks": [
    "Toledo, R.T., Singh, R.K. & Kong, F. (2018). Fundamentals of Food Process Engineering, 4th ed., Springer. ISBN: 978-3319900971"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=303"
  },
  "ISH 307": {
   "code": "ISH 307",
   "name": "Kimyasal Teknolojilere Giriş",
+  "nameEn": "Introduction to Chemical Technologies",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -136,7 +209,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=307",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISH&dersNo=307"
  }
 }

@@ -2,6 +2,7 @@
  "UMT 509E": {
   "code": "UMT 509E",
   "name": "The Basic Diag.in Extra.Metal.",
+  "nameEn": "The Basic Diag.in Extra.Metal.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -36,6 +37,77 @@
    "Hafta 13 · Mc-Cabe Thiele diyagramları yardımıyla çinko-kadmiyum destilasyonunda raf sayısının ve solvent ekstraksiyonda kademe sayısının hesaplanması",
    "Hafta 14 · Ödevlerin Sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, tanımlar, yerkabuğunda ortalama metal konsantrasyonları, metalurjik hammaddeler, periyodik cetvelin metalurjik yorumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Termodinamik denge, serbest enerji, standart serbest enerji kavramlarının hatırlatılması, standart serbest enerjinin gaz kısmi basıncı, entropi değişimi, standart oksidasyon potansiyeliyle ilişkilendirilmesi, EMF serisi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Asidik metal/bazik metal kavramı, kısmi basınç yerine iyonik aktivitenin kullanımı, Nernst denklemi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Oksit, sülfür, sülfat, karbonat, karbür, borür, nitrür, nitrat oluşum diyagramları",
+    "outcomes": "1-2-3-5-6-7"
+   },
+   {
+    "week": 5,
+    "topic": "Oksit oluşum diyagramlarının termal disosiyasyon, oksidasyon/redüksiyon ve metalotermik reaksiyonlar, hidrojen, karbon ve hidrokarbonlarla redüksiyon açısından tartışılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Metallerde ve bileşiklerinde “uçuculuk” kavramı, basınç-sıcaklık (P-T) diyagramları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Halojenür (özellikle klorür) oluşum diyagramları, bu diyagramların ileri teknolojide kullanımı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sülfür oluşum diyagramları yardımıyla mat modu üzerinden metal üretiminin açıklanması, Kellog ve Yazawa diyagramlarıyla bağlantı kurulması, Sülfat oluşumu ve pirolitik parçalanmanın sülfatlayıcı kavurmada kullanımı, Karbonat oluşum diyagramları üzerinde çözelti arıtımı, su yumuşatma, kobalt çöktürme, sert magnet ve radyoopak cam hammaddesi üretiminin anlatılması",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Karbür oluşum diyagramları üzerinde karbotermik alüminyum, volfram, vanadyum, krom vb. üretiminin tartışılması, Borür, nitrür, nitrat oluşum diyagramları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Emf serisinin metal selektivitesi açısından tartışılması, Tek elektrot potansiyeli tanımı ve EH-pH diyagramları, Tafel doğruları ve polarizasyon diyagramları, Hidrojen fazla voltajı tanımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Bauer-Gleissner diyagramı, Demir oksitlerin redüksiyonunda redüktan olarak karbon ve hidrojen arasında tercih,",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 13,
+    "topic": "Mc-Cabe Thiele diyagramları yardımıyla çinko-kadmiyum destilasyonunda raf sayısının ve solvent ekstraksiyonda kademe sayısının hesaplanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Ödevlerin Sunumu"
+   }
+  ],
   "textbooks": [
    "Knacke, O., Kubaschewski, O., Hesselman, K., 1991. Thermochemical Properties of Inorganic Substances, Berlin : Springer-Verlag.",
    "Pawlek F., 1983. Metallhüttenkunde, Berlin, New York, Walter de Gruyter.",
@@ -43,12 +115,12 @@
    "Barin, İ., Knacke, O., Kubaschewski, O., 1977, Thermochemical Properties of Inorganic Substances : Supplement, Springer-Verlag (Berlin and New York), ISBN 0387080317",
    "Pourbaix, M, 1974, Atlas of Electrochemical Equilibria in Aqueous Solutions, NACE International Cebelcor, ISBN 0-915567-98-9,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=509"
  },
  "UMT 511E": {
   "code": "UMT 511E",
   "name": "Transport Phenomena in Metal.",
+  "nameEn": "Transport Phenomena in Metal.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -81,6 +153,64 @@
    "Hafta 13 · Konvektif kütle transferi",
    "Hafta 14 · Gaz-sıvı ve sıvı-sıvı reaksiyonları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Taşınım olaylarına giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Kütle, enerji ve momentum korunumu ilkeleri"
+   },
+   {
+    "week": 3,
+    "topic": "Laminar vs. turbular akış"
+   },
+   {
+    "week": 4,
+    "topic": "Borularsa sürtünme"
+   },
+   {
+    "week": 5,
+    "topic": "Sınır kaşulları teorisi"
+   },
+   {
+    "week": 6,
+    "topic": "Fourier Yasası"
+   },
+   {
+    "week": 7,
+    "topic": "Kararsız durum ısı iletimi"
+   },
+   {
+    "week": 8,
+    "topic": "Konvektif ısı transferi"
+   },
+   {
+    "week": 9,
+    "topic": "Termal radyasyon"
+   },
+   {
+    "week": 10,
+    "topic": "Enerji denklemleri ve ısı eşanjörleri"
+   },
+   {
+    "week": 11,
+    "topic": "Fick difüzyonun birinci ve ikinci yasaları"
+   },
+   {
+    "week": 12,
+    "topic": "Sıvı metallerde difüzyon"
+   },
+   {
+    "week": 13,
+    "topic": "Konvektif kütle transferi"
+   },
+   {
+    "week": 14,
+    "topic": "Gaz-sıvı ve sıvı-sıvı reaksiyonları"
+   }
+  ],
   "textbooks": [
    "Transport Phenomena, Bird R.B., Steward W.E., and Lightfoot E.N., Wiley, 1960.",
    "Transport Phenomena in Metallurgy, Geiger G.H. and Poirier D.R., Addison Wesley, 1973.",
@@ -88,12 +218,12 @@
    "Introduction to Fluid Mechanics, Fox R.W. and McDonald A.T., John Wiley and Sons, 1985.",
    "Rate Phenomena in Process Metallurgy, Szekely J. and Themelis N.J., Wiley Interscience, 1971."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=511"
  },
  "UMT 596": {
   "code": "UMT 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -137,6 +267,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -149,7 +350,6 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UMT&dersNo=596"
  }
 }

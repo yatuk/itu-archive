@@ -2,6 +2,7 @@
  "BBL 000": {
   "code": "BBL 000",
   "name": "Tez Çalışması",
+  "nameEn": "Thesis",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=000",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=000"
  },
  "BBL 539E": {
   "code": "BBL 539E",
   "name": "Kuantum Haberleşme",
+  "nameEn": "Quantum Communication",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,12 +35,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=539",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=539"
  },
  "BBL 540E": {
   "code": "BBL 540E",
   "name": "Kuantum Veri Yapıları ve Algoritmaları",
+  "nameEn": "Quantum Data Structures and Algorithms",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -72,6 +73,78 @@
    "Hafta 13 · Kuantum veri yönetimi / Kuantum depolama yöntemleri",
    "Hafta 14 · Kuantum algoritmalarının güncel araştırmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kompleks matris cebiri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Hal vektörü - Yoğunluk matrisi / Kuantum mekaniği postulatları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kuantum işlemciler ve özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kuantum devre bileşenleri, Kuantum mantık kapıları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kuantum hesaplama karmaşıklığı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Deutsch-Jozsa algoritması / Kuantum Fourier dönüşümü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kuantum faz tahmini / Kuantum arama algoritmaları (Grover)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kuantum sıralama algoritmaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kuantum telenakil/Kuantum yoğun kodlama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kuantum kanallar, açık kuantum sistemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kuantum hata düzeltme Algoritmaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Kuantum algoritmalarının analiz teknikleri / Klasik algoritmalarla karşılaştırma",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Kuantum veri yönetimi / Kuantum depolama yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Kuantum algoritmalarının güncel araştırmaları",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Michael A, Nielsen, Isaac L, Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 10th Anniv, Ed,, 2010.",
    "A, M, Childs & W, van Dam, Introduction to Quantum Algorithms via Linear Algebra, 2nd Ed,, MIT Press, 2022.",
@@ -79,12 +152,12 @@
    "J, D, Hidary, 2nd Ed,, Quantum Computing: An Applied Approach, Springer, 2023.",
    "Zhao, A, M, Childs & S, P, Jordan, Quantum Algorithms for Number Theory, Group Theory and Geometry, Cambridge University Press, 2024."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=540",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=540"
  },
  "BBL 541E": {
   "code": "BBL 541E",
   "name": "Markov Sistem.Model.&Anal.",
+  "nameEn": "Modeling and Analysis of Markovian Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -116,6 +189,78 @@
    "Hafta 13 · Özel konular: Markov akışkan kuyruk modellerine giriş",
    "Hafta 14 · Özel konular, devam"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, olasılık teorisi özeti, önemli dağılımlar, hafızasızlık özelliği",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Rasgele süreçler özeti, Markov özelliği, yenilenir süreçler, bağımsız artışlı süreçler, Poisson süreci",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ayrık-zamanlı Markov zincirleri, sınıflamaları, özellikleri, Chapman–Kolmogorov denklemleri, kararlı-zaman çözümleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sürekli-zamanlı Markov zincirleri, sınıflamaları, özellikleri, sonsuz küçük üreteçler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli-zamanlı Markov zincirleri için Chapman–Kolmogorov denklemleri, kararlı-zaman çözümleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Doğum-ölüm süreçleri, Genel ve Detaylı denge denklemleri, M/M/1 sistemi, Little kanunu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "M/M/k sistemi, M/M/k/k sistemi, Erlang formülleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "M/M/k/k/N sistemi, Engset formülü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Markov kiplemeli Poisson süreci (MMPP), Markov varış süreci (MAP), MAP/M/1 sistemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Faz-tipi servis zaman dağılımları, hiper-üstel, hipo-üstel, Erlang dağılımlı service zamanları, M/PH/1 sistemi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Normal ve zaman-dilimli Aloha sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Özel konular: IEEE 802.11 (Wi-Fi) DCF Bianchi modeli",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Özel konular: Markov akışkan kuyruk modellerine giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Özel konular, devam",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Fayez Gebali. Analysis of Computer and Communication Networks. Springer, 2008",
    "Hisashi Kobayashi, Brian L. Mark. System Modeling and Analysis: Foundations of System Performance Evaluation. Pearson/Prentice Hall, 2008",
@@ -123,12 +268,12 @@
    "Leonard Kleinrock, Queueing Systems: Volume I. Wiley-Interscience, 1975",
    "Mor Harchol-Balter. Performance Modeling and Design of Computer Systems: Queueing Theory in Action. Cambridge University Press, 2013"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=541",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=541"
  },
  "BBL 588E": {
   "code": "BBL 588E",
   "name": "Advanced Topics in Image Analysis",
+  "nameEn": "Advanced Topics in Image Analysis",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -160,17 +305,88 @@
    "Hafta 13 · Nesne Tanıma",
    "Hafta 14 · Dönem projesi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin ve Görüntü işlemenin tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Görüntü işleme temelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Görüntü iyileştirme- uzamsal domen",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Görüntü iyileştirme-sıklık uzayında",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Görüntü onarımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kayıpsız Görüntü Sıkıştırma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kayıplı Görüntü Sıkıştırma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "İkili Görüntü işleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Morfolojik İşlemler, Renkli Görüntü işleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Görüntü Bölütleme-ayrıt saptama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Görüntü bölütleme-eşikleme, bölge temelli bölütleme, su havzaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Görüntü gösterimi ve belirteçler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Nesne Tanıma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projesi sunumları"
+   }
+  ],
   "textbooks": [
    "Gonzalez, R. C., and Woods, R. E., 2008.Digital Image Processing, Prentice Hall, (3rd Edition).",
    "Jain, K.,1989. Fundamentals of Digital Image Processing, Prentice Hall.[3] Gonzalez, R. C., and Woods, R. E., Eddins, S., 2004. Digital Image Processing using MATLAB. Pearson, Prentice Hall.",
    "Sonka, M., Hlavac, V., Boyle, R.,2007. Image Processing: Analysis and Machine Vision, Chapman & Hall Computing, 3rd edition."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=588",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=588"
  },
  "BBL 596E": {
   "code": "BBL 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -214,6 +430,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -226,12 +513,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=596"
  },
  "BBL 606": {
   "code": "BBL 606",
   "name": "Veri Madenciliği",
+  "nameEn": "Data Mining",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -264,17 +551,88 @@
    "Hafta 13 · Veri Madenciliği uygulamaları",
    "Hafta 14 · Dönem projeleri sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Madenciliğine Giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Temizleme ve Hazırlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sınıflandırma Yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sınıflandırma yöntemlerini değerlendirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Demetleme Yöntemeri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çizge demetleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Demetleme yöntemlerini değerlendirme",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "İlişkilendirme Kuralları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sıralı diziler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sosyal ağ analysis",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Metin madenciliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Veri Madenciliği uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projeleri sunumları"
+   }
+  ],
   "textbooks": [
    "Han, J., and Kamber M., 2006. Data Mining: Concepts and Techniques. Morgan Kaufmann Publishers. ISBN 1-55860-489-8.",
    "Dunham, M., 2002. Data Mining: Introductory and Advanced Topics. Prentice Hall. ISBN 0130888923.[3]Hand, J. D., Mannila, H., and Smyth, P., 2001. Principles of Data Mining. MIT Press. ISBN 026208290X.",
    "Tan, P. N., Steinbach, M., Kumar V., 2005. Introduction to Data Mining. Addison Wesley, ISBN: 0-321-32136-7"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=606",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=606"
  },
  "BBL 696E": {
   "code": "BBL 696E",
   "name": "Bilimsel Araştırma, Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -318,6 +676,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -330,7 +759,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=696"
  }
 }

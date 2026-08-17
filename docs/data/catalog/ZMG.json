@@ -2,6 +2,7 @@
  "ZMG 501E": {
   "code": "ZMG 501E",
   "name": "Geoteknik Müh. Özel Konular",
+  "nameEn": "Special Topics in Geotec. Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -38,6 +39,77 @@
    "Hafta 13 · -",
    "Hafta 14 · -"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
@@ -45,12 +117,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=501"
  },
  "ZMG 502E": {
   "code": "ZMG 502E",
   "name": "Experimentel Soil Mechanics",
+  "nameEn": "Experimentel Soil Mechanics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -83,18 +155,89 @@
    "Hafta 13 · 3-Eksenli (UU) Deneyi. CU deneyi kurulması.",
    "Hafta 14 · CU deneyi doygunluk kontrolü, CU deneyi yapımı."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş; Temel Tanımlar. Zemin Numuneleri, Laboratuvar Raporu",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Su muhtevası, Likit, Plastik ve Rötre Limiti Deneyleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Düşen koni deneyi ile likit limitin belirlenmesi. Numunelerin elek analizi için hazırlanması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Elek analizi ve hidrometer deneyi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sunumlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Özgül ağırlık ve rölatif sıkılık deneyleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Kompaksiyon-Standart Proktor Deneyi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Kaliforniya Taşıma Oranı (CBR) Deneyi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Konsolidasyon deneyi. Düşen ve sabit seviyeli permeabilite deneyleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Konsolidasyon deneyi. Düşen ve sabit seviyeli permeabilite deneyleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Kesme Kutusu.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Serbest Basınç Deneyi.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "3-Eksenli (UU) Deneyi. CU deneyi kurulması.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "CU deneyi doygunluk kontrolü, CU deneyi yapımı."
+   }
+  ],
   "textbooks": [
    "Bardet, J.P., 1997, Experimental Soil Mechanics, Prentice Hall, USA.",
    "Bowles, J.E., 1993, Engineering Properties of Soils and Their Measurement, McGraw-Hill, USA., Prentice Hall, USA.",
    "Das, B.M., 1992, Soil Mechanics Laboratory Manual, Engineering Press, USA",
    "Lambe, W.T., 1969, Soil Testing for Engineers, John Wiley and Sons, USA.anual, Engineering Press, USA"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=502"
  },
  "ZMG 505": {
   "code": "ZMG 505",
   "name": "Zeminlerin İyileştirilmesi",
+  "nameEn": "Soil Improvement",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -129,6 +272,77 @@
    "Hafta 13 · Uygulamadan Örnekler ve Vaka Analizleri",
    "Hafta 14 · Uygulamadan Örnekler ve Vaka Analizleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Zemin İyileştirmesinin Tanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zemin İyileştirmesinin Tarihçesi, Temel Zemininin Tanımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Zeminin Sıkıştırılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Zeminin Yüzeysel Sıkıştırılması ve Ön Yükleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Zeminin Derinden Sıkıştırılması, Dinamik Kompaksiyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kum kazıkları ve zeminin dondurulması",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Enjeksiyon, Türleri ve Kullanım Alanları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Enjeksiyon, Türleri ve Kullanım Alanları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Şev Stabilitesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Şev Stabilitesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Zemin Çivisi, Kullanım Alanları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Zemin Çivisi, Tasarım Yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulamadan Örnekler ve Vaka Analizleri",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamadan Örnekler ve Vaka Analizleri"
+   }
+  ],
   "textbooks": [
    "Van Impe, W.F., (1989) Soil Improvement Techniques and Their Evolution, Balkema",
    "F.G.Bell, Engineering Treatment of Soils, E&FN Spon, 1993",
@@ -136,12 +350,12 @@
    "Donel, Bodeninjektionstechnik, Verlag Glückauf, 1990",
    "Idel, Injektionverfahren, Grundbautaschenbuch, Band 2, 6. Auflage, 2001."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=505"
  },
  "ZMG 507E": {
   "code": "ZMG 507E",
   "name": "Enginering Properties of Soils",
+  "nameEn": "Enginering Properties of Soils",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -176,18 +390,89 @@
    "Hafta 13 · Kayma mukavemeti deneyleri",
    "Hafta 14 · Kayma mukavemeti deneyi değerlendirmeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Zemin mekaniğine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zemin yapısı ve bileşenleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Zemin sınıflandırma yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kompaksiyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Zeminlerin geçirimliliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Efektif gerilme, zeminlerde gerilme-deformasyon ilişkisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Zemin kütlesindeki gerilme",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Oturma teorisi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Oturma miktarı ve süresi hesabı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Konsolidasyon deneyi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Konsolidasyon deneyi değerlendirmeleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Kayma mukavemeti teorisi",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Kayma mukavemeti deneyleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Kayma mukavemeti deneyi değerlendirmeleri"
+   }
+  ],
   "textbooks": [
    "Holtz, R.D. & Kovacks, W.D., (1981) An Introduction to geotechnical Engineering, Prentice Hall Inc.",
    "Lambe, T.W.&Whitman R.W. (1980) Soil Mechanics, John Wiley & Sons Inc.",
    "McCarthy,D.F. (1993) Essentials of Soil Mechanics and Foundations, Prentice Hall Inc.",
    "Numerous Articles."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=507"
  },
  "ZMG 510E": {
   "code": "ZMG 510E",
   "name": "Soil Dynamics",
+  "nameEn": "Soil Dynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -219,17 +504,88 @@
    "Hafta 13 · Makalelerle İlgili Sunum",
    "Hafta 14 · Sınav II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Depremlerin Oluşumu, Titreşimler: Tek Dereceli Sistemler, İki Dereceli Sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zeminlerde Dalga Yayılımı, Üç Boyutlu Dalga Yayılımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Depremler ve Response Spektra",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dinamik Zemin Parametreleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Dinamik Toprak Basınçları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sınav I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kohezyonlu Zeminlerin Dinamik Yükler Altındaki Davranışları",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Sıvılaşma: Laboratuvar Çalışmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sıvılaşma Analizleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Zemin Büyütmesi ve Mikrobölgeleme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Makalelerle İlgili Sunum",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Makalelerle İlgili Sunum",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Makalelerle İlgili Sunum",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Sınav II"
+   }
+  ],
   "textbooks": [
    "S.L.Kramer, Geotechnical Earthquake Engineering, 1999",
    "B.M.Das, Principles of Soil Dynamics, 1993",
    "K.Ishihara, Soil Behavior in Earthquake Engineering, 1996"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=510",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=510"
  },
  "ZMG 513E": {
   "code": "ZMG 513E",
   "name": "Coastal and Offshore Geotechnical Engineering",
+  "nameEn": "Coastal&Offshore Geotec.Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -243,12 +599,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=513"
  },
  "ZMG 596E": {
   "code": "ZMG 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -292,6 +648,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -304,12 +731,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=596"
  },
  "ZMG 601": {
   "code": "ZMG 601",
   "name": "Teorik Zem. Mek. ve Zem. Mod.",
+  "nameEn": "Theoritical Soil Mechanics and Soil Models",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -341,6 +768,77 @@
    "Hafta 13 · Zeminlerde anizotropi ve anizotropik modeller.",
    "Hafta 14 · Zeminlerde anizotropi ve anizotropik modeller."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Zeminlerde gerilme-şekil değiştirme kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zeminlerde gerilme-şekil değiştirme kavramlarırı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kırılma hipotezleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kırılma hipotezleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Zemin yapısal modellerinin sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Zemin yapısal modellerinin sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Hiperbolik ve amprik modeller",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Hiperbolik ve amprik modeller",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Vize",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Elasto-plastik modeller (Cam kili modeli, Başlık modeli, Lade modeli ve Endokronik model)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Elasto-plastik modeller (Cam kili modeli, Başlık modeli, Lade modeli ve Endokronik model)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Elasto-plastik modeller (Cam kili modeli, Başlık modeli, Lade modeli ve Endokronik model)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Zeminlerde anizotropi ve anizotropik modeller.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Zeminlerde anizotropi ve anizotropik modeller."
+   }
+  ],
   "textbooks": [
    "Wood, D.M., 1990, Soil Behaviour and Critical State Soil Mechanics, Cambridge University Press",
    "Das, B.M., 1997, Advanced Soil Mechanics, Taylor and Francis.",
@@ -348,12 +846,12 @@
    "Schofield, A.N. and Wroth,P. 1968, Critical State Soil Mechanics, McGraw-Hill",
    "Chen, W. F., and Baladi, G. Y., 1985, Soil Plasticity Theory and Implementation, Elsevier."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=601"
  },
  "ZMG 602": {
   "code": "ZMG 602",
   "name": "İnşaat Mühendisliği Uyg.Geos.",
+  "nameEn": "Geosynthetics in Civil Engineering Practice",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -385,16 +883,87 @@
    "Hafta 13 · Uygulamadan örnekler",
    "Hafta 14 · Uygulamadan örnekler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geosentetiklerin tarihçesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geosentetiklerin malzeme özellikleri ve fonksiyonları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Geosentetiklerin kıyı ve liman yapılarında kullanılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Geosentetiklerin karayolu, demiryolu ve havaalanlarında kullanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Geosentetiklerin yalıtım malzemesi olarak kullanılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Geosentetik donatılı temel altı granüler dolgular",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Dolgu imalatında geosentetikler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Atık depolama alanlarında geosentetiklerin kullanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Kum drenler",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "İstinat yapıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Geosentetik tasarımında kullanılan şartnameler",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Geosentetik tasarımında kullanılan şartnameler",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulamadan örnekler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamadan örnekler"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=602",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=602"
  },
  "ZMG 607E": {
   "code": "ZMG 607E",
   "name": "Foundation Dynamics",
+  "nameEn": "Foundation Dynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -429,6 +998,77 @@
    "Hafta 13 · Kazıkların yatay deprem yüklerine karşı analizi ve tasarımı",
    "Hafta 14 · Dinamik yükler altında Temellerın Tasarımı ve Analizi için Yönetmelikler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dinamik Yükler ve Titreşim Ölçümleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Patlama Titreşimleri, Kontrolü ve İzin verilen titreşimler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dalga Yayılması ve Dalga Azalım İlişkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Zeminin Dinamik Özellikleri ve Ölçümleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Zeminin Dinamik Özellikleri ve Ölçümleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Sismik Taşıma Gücü ve Deprem Yükleri altında Toprak Basınçları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Temel Sistemlerin Dinamiği (Tek ve çok serbestlik dereceli sistemler)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Temel Sistemlerin Dinamiği (Bağımsız ve bağlı hareketler)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Zemin-Yapı Etkileşimi: Eylemsizlik ve kinetik etkileşim",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Zemin-Yapı Etkileşimi: Eylemsizlik ve kinetik etkileşim",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Zemin-Yapı Etkileşimi: Sığ Temeller impedansı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Zemin-Yapı Etkileşimi: Kazıkların Dinamik Davranışı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kazıkların yatay deprem yüklerine karşı analizi ve tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dinamik yükler altında Temellerın Tasarımı ve Analizi için Yönetmelikler"
+   }
+  ],
   "textbooks": [
    "Das, Braja (2010) Principles of Soil Dynamics Cengage Learning (TA711 .D27 2011)",
    "Prakash, S. “Soil Dynamics” McGraw-Hill, Inc.",
@@ -441,12 +1081,12 @@
    "Handbook of Machine Foundations, P. Srinivasulu,C. V. Vaidyanathan 2004 McGraw Hill http://www.tmhshop.com/9780070966116",
    "Bowles, J.E. (2010) ''Foundation Analysis and Design'' McGraw-Hill Book Company"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=607",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=607"
  },
  "ZMG 696E": {
   "code": "ZMG 696E",
   "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -490,6 +1130,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -502,7 +1213,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ZMG&dersNo=696"
  }
 }

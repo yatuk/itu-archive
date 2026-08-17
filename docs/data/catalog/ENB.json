@@ -2,6 +2,7 @@
  "ENB 501E": {
   "code": "ENB 501E",
   "name": "Fundamentals of Env.Biotech. I",
+  "nameEn": "Fundamentals of Env.Biotech. I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -33,6 +34,78 @@
    "Hafta 13 · Askıda Çoğalan Sistemlerin Kinetiği",
    "Hafta 14 · Biofilm Kinetiği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Çevre Biyoteknolojisi nedir?",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikroorganizmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Organik Maddenin Yapısı ve Hücrenin Kimyasal Kompozisyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Makromoleküller- Karbonhidratlar ve Lipidler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Makromoleküller- Proteinler ve Enzimler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Metabolisma- Anabolizma ve Katabolizma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Metabolik Sınıflama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Enerji Reaksiyonları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Stoikiometri ve Bakteriyel Enerjetik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çoğalma Reaksiyonları- Aerobik Prosesler",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Anaerobik Arıtma Proseslerinin Stoikiometrisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Mikrobiyal Kinetik",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Askıda Çoğalan Sistemlerin Kinetiği",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Biofilm Kinetiği",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Environmental Biotechnology: Principles and Applications, B.E. Rittmann, P.L. McCarthy, McGrow-Hill, NY, 2001.",
    "Modelling of Activated Sludge Systems, D.Orhon and N. Artan, Technomic Publishing Co. Inc., Lancester, Pennsylvania, 1994.",
@@ -40,12 +113,12 @@
    "Microbiology for Environmental Scientists and Engineers, A.F.Gaudy Jr.and E.T. Gaudy, McGraw-Hill, NY, 1980",
    "Environmental Microbiology for Engineers, Volodymyr Ivanov, CRC Press, 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=501"
  },
  "ENB 503E": {
   "code": "ENB 503E",
   "name": "Metabolic Cons. in Env.Science",
+  "nameEn": "Metabolic Cons. in Env.Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -78,17 +151,89 @@
    "Hafta 13 · Metabolik Kontrol Mekanizmalarının Çevre Bilimleri Açısından Önemi",
    "Hafta 14 · Çevresel Stres Koşulları Altında Mikrobiyal Davranış: Şok Yüklemeler, içsel depolama kavramı, tutuklu büyüme (biyofilm), vb."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hücre Kimyası ve Biyosentez",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Merkezi Mikrobiyal Yolizleri-I: Biyoenerjetik, Glikoliz ve Basit Fermentasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Merkezi Mikrobiyal Yolizleri-II: Krebs Döngüsü, Elektron Taşınım Zinciri, Proton İtici Gücü, Calvin Döngüsü, EDP, vb.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Katabolik Çeşitliliğe Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Kemolitotrofi: H2 ve H2S Yükseltgenmesi, Nitrifikasyon, Anammox",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Anaerobik Solunum: Denitrifikasyon, Sülfat İndirgeme, Asetocenesis, Metanocenesis",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Fermentasyon-I: Homo- ve Hetero-fermentasyon : Laktik ve Asetik Asit Üretimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Fermentasyon-II: Karışık-, Bütirik- ve Propionik-Asit Fermentasyonu ve Sintrofi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Aerobik Solunum ve Kemoorganotrofi-I: Hidrokarbonların Yıkımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Aerobik Solunum ve Kemoorganotrofi-II: Şeker, Polisakkarit, Organik Asit,ve Lipitlerin Yıkımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Uçucu Yağ Asidi Metabolizması, Hücreiçi Karbon Depolama Polimerlerinin Sentezi ve Yıkımı: PHA ve Glikojen Örnekleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Metabolik Regülasyonun Temelleri: Protein Sentezi ve Enzim Aktivitesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Metabolik Kontrol Mekanizmalarının Çevre Bilimleri Açısından Önemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Çevresel Stres Koşulları Altında Mikrobiyal Davranış: Şok Yüklemeler, içsel depolama kavramı, tutuklu büyüme (biyofilm), vb.",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Madigan M.T., Martinko J.M., Dunlap P.V. and Clark D.P. (2009). “Brock Biology of Microorganisms”, 12th ed., Pearson Education Inc., Glenview IL, USA, ISBN: 978-0321-53615-0 [Mustafa Inan Main Library: QR41.2 .B76 2009]",
    "Orhon D. And Artan N. (1994). “Modelling of Activated Sludge Systems”, Technomic Publishing Co., Inc., Lancaster, PA, USA, ISBN: 1566761018. [Mustafa Inan Main Library: TD756 .O74 1994]",
    "Gaudy, A.F.Jr. and Gaudy, E.T. (1980). “Microbiology for Environmental Scientists and Engineers”, McGraw-Hill, USA, ISBN 0-07-023035-8"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=503"
  },
  "ENB 506E": {
   "code": "ENB 506E",
   "name": "Research Writing in E.Science",
+  "nameEn": "Research Writing in E.Science",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -121,6 +266,78 @@
    "Hafta 13 · Bilimsel bir yazının sözlü sunumu",
    "Hafta 14 · Bir bilimsel araştırmanın sözlü sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel makale yazımı hakkında genel hususlar, terminoloji",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilimsel makale öncesi sorgulanması gerekli temel hususlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bilimsel yazım ve bilimsel makale kavramları (Part 1)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Bilimsel yazım ve bilimsel makale kavramları (Part 2)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Bir bilimsel makalenin anatomisi: başlık; yazarlar; öz; giriş; materyel ve metod (Part 1)",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Bir bilimsel makalenin anatomisi: veri hazırlanması ve sunumu (Part 2)",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Bir bilimsel makalenin anatomisi: tartışma ve değerlendirme (Part 3)",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Bir bilimsel makalenin anatomisi: sonuç yorumları; referanslar; teşekkür (Part 4)",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Tabloların ve şekillerin hazırlanışı; Doğru sözcüklerin ve ifadelerin seçimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Bilimsel yazımda etik kurallar",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Seçilen bir bilimsel yayının değerlendirilmesi (Part 1)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Seçilen bir bilimsel yayının değerlendirilmesi (Part 2)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Bilimsel bir yazının sözlü sunumu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Bir bilimsel araştırmanın sözlü sunumu",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "How to Write and Publish a Scientific Paper, R.A.Day, Oryx Press, NY, 1994.",
    "The Elements of Academic Research, R.H. McCuen, editor, ASCE Press, NY, 1996.",
@@ -128,12 +345,12 @@
    "Techbnical Writing as a Process Within A System, E.B.Nuhfer & M.P.Dalles, The American Institute of Professional Geologists, CO, 1989.",
    "Selected research papers"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=506",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=506"
  },
  "ENB 507E": {
   "code": "ENB 507E",
   "name": "Exp.Charac.of Bio.Treat.Syst.",
+  "nameEn": "Exp.Charac.of Bio.Treat.Syst.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -167,6 +384,78 @@
    "Hafta 13 · Anaerobik Şartlarda Reaksiyon Kinetiklerinin Belirlenmesi",
    "Hafta 14 · Deneysel Çalışma Sonuçlarının Sunumu – II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deneysel Planlamada Genel Kavramlar, Birimler ve Çevrimleri, Çözeltilerin Hazırlanması, İstatistik Değerlendirmenin Temel Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Reaktör Özellikleri ve Türleri, Laboratuvar Ölçekli Biyolojik Reaktörlerin Kurulması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Aerobik Şartlarda Laboratuvar Ölçekli Biyolojik Reaktörlerin İşletilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "KOİ Fraksiyonları – İnert KOİ Fraksiyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Aerobik Şartlarda Respirometrik Deneyler – Oksijen Tüketim Hızı (OUR) Eğrisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "KOİ Fraksiyonları - Biyobozunur KOİ Fraksiyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Aerobik Şartlarda Reaksiyon Kinetiklerinin Belirlenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İnhibisyon için Respirometrik Deneyler",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Deneysel Çalışma Sonuçlarının Sunumu – I",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Anaerobik Şartlarda Respirometrik Yöntemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Anaerobik Şartlarda Laboratuvar Ölçekli Biyolojik Reaktörlerin İşletilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Anaerobik Şartlarda Respirometrik Deneyler",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Anaerobik Şartlarda Reaksiyon Kinetiklerinin Belirlenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Deneysel Çalışma Sonuçlarının Sunumu – II",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "D. Orhon, F. G. Babuna, O. Karahan, (2009) “Industrial Wastewater Treatment by Activated Sludge”, IWA Publishing, London SW1H 0QS, UK",
    "Orhon, D. and Artan, N. (1994). “Modelling of Activated Sludge Systems”. Technomic Press, Lancaster, PA",
@@ -174,12 +463,12 @@
    "Plugge C. (2005). Anoxic Media Design, Preparation, and Considerations, Methods In Enzymology, 397, 3-16.",
    "Selected Papers."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=507"
  },
  "ENB 509E": {
   "code": "ENB 509E",
   "name": "Bio.Processing of Solid Wastes",
+  "nameEn": "Bio.Processing of Solid Wastes",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -211,6 +500,78 @@
    "Hafta 13 · Biyoenerji üretim alternatifleri",
    "Hafta 14 · Örnek çalışmalar- Anaerobik çürütme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Entegre Katı Atık Yönetimi kapsamında organik atık kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kompostlaştırma: Temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kompostlaştırma: Mikrobiyoloji, biyokimya",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kompostlaştırma: Stabilite, olgunluk ve fito-toksisite",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Kompostlaştırma: İz elementler, ağır metaller, mikro-nütrientler, organik bileşikler",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Kompost kullanımı ve pazarlanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Örnek çalışmalar- Kompostlaştırma",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Biyoenerji üretiminde anaerobik biyoteknoloji- temelleri ve uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Organik katı atıkların anaerobik çürütülmesinin analizi ve optimizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Katı atıklar için anaerobik çürütücü tipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Anaerobik çürütme verimini artırıcı ön-arıtma uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Kentsel katı atıkların organik kısmının diğer atıklarla birlikte çürütme kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Biyoenerji üretim alternatifleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Örnek çalışmalar- Anaerobik çürütme",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Diaz, L.F., de Bertoldi, M., Bidlingmaier, W., Stentiford, E., 2007. Compost Science and Technology, Waste Management Series 8, Elsevier, UK.",
    "Haug, R.T., 1993. The Practical Handbook of Compost Engineering, Lewis Publishers.",
@@ -218,12 +579,12 @@
    "Mata-Alvarez J., 2003. Biomethanization of the Organic Fraction of Municipal Solid Wates, IWA Publishing.",
    "Rittmann, B.E., McCarty, P.L., 2001. Environmental Biotechnology: Principles and Applications, McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=509"
  },
  "ENB 510E": {
   "code": "ENB 510E",
   "name": "Biodegradation of Indust.Waste",
+  "nameEn": "Biodegradation of Indust.Waste",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -255,6 +616,78 @@
    "Hafta 13 · Vaka çalışmaları: Tekstil, antibiyotik, süt endüstrileri",
    "Hafta 14 · Vaka çalışmaları: Kağıt hamuru ve kağıt, meşrubat endüstrileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Organik maddelerin ölçümünde kullanılan parametreler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "KOİ fraksiyonları ve biyolojik ayrışabilirlik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tesis içi kontrolün biyolojik ayrışabilirlik üzerine etkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Endüstriyel atıksuların biyolojik ayrışabilirlik bazlı çok bileşenli modellemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Akım ayrımının biyolojik ayrışabilirlik üzerine etkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kısmi kimyasal oksidasyonun biyolojik ayrışabilirlik üzerine etkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Fiziksel ayırmanın biyolojik ayrışabilirlik karakteristikleri üzerine etkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Aerobik – anaerobik arıtmanın ayrışabilirlik bazlı karşılaştırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Ardışık anaerobik ve aerobik arıtma",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Ayrık endüstriyel akımların toksisitesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Boru ucu arıtma uygulanan endüstriyel atıksuların toksisitesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Boru ucu arıtma uygulanan endüstriyel atıksularda aktif çamur inhibisyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Vaka çalışmaları: Tekstil, antibiyotik, süt endüstrileri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Vaka çalışmaları: Kağıt hamuru ve kağıt, meşrubat endüstrileri",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Orhon D, Germirli-Babuna F and Karahan Ö, Industrial Wastewater Treatment by Activated Sludge. IWA Publishing, London (2009).",
    "Jern Ng W, Industrial Wastewater Treatment. Imperial College Press, London (2006).",
@@ -262,7 +695,6 @@
    "U.S. Environmental Protection Agency. Best Management Practices for Pollution Prevention in the Textile Industry. Chapter 3: General Pollution Prevention Approaches Applicable Throughout the Textile Industry, EPA/625/R-96/004, pp. 77-119, Cincinnati (1996).",
    "U.S. Environmental Protection Agency. Best Management Practices for Pollution Prevention in the Textile Industry. Chapter 3: General Pollution Prevention Approaches Applicable Throughout the Textile Industry, EPA/625/R-96/004, pp. 77-119, Cincinnati (1996)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=510",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ENB&dersNo=510"
  }
 }

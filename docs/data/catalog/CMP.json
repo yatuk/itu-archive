@@ -2,6 +2,7 @@
  "CMP 102": {
   "code": "CMP 102",
   "name": "Programlamaya Giriş",
+  "nameEn": "Intr.to Sci.& Engineering Comp",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CMP&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CMP&dersNo=102"
  },
  "CMP 103": {
   "code": "CMP 103",
   "name": "Bilgisayar ve Bilgi Sistemlerine Giriş",
+  "nameEn": "Intr. to Comp. & Info. Sys.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -34,12 +35,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CMP&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CMP&dersNo=103"
  },
  "CMP 111": {
   "code": "CMP 111",
   "name": "Mühendislik ve Bilgisayarlara Giriş",
+  "nameEn": "Intr.to Engineering and Comput",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -73,15 +74,87 @@
    "Hafta 13 · Sembolik hesaplama",
    "Hafta 14 · Programlama dilleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel bilgisayar, giriş, çıkış, depolama ve işleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İşletim sistemlerine giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Web ve ağ topolojileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "İnternet, kablolu ve kablosuz iletişim",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Kelime işlem düzenleyicilere giriş (MS Office Word)",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Grafik ve tablolama düzenleyicilere giriş (MS Office Excell)",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Grafik ve tablolama düzenleyicileri (MS Office Excell)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Bilimsel görselleştirme (MS Office )",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sunum düzenleyicileri (MS Office Powerpoint)",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgisayarlı hata analizlerine giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Algoritmalar, mantık yapıları, yinelemeli yapılar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Algoritmalar, mantık yapıları, yinelemeli yapılar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sembolik hesaplama",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Programlama dilleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Bill Daley, Computers are Your Future, Prentice Hall, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CMP&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CMP&dersNo=111"
  },
  "CMP 113": {
   "code": "CMP 113",
   "name": "İşletme Bilgisayarlarına Giriş",
+  "nameEn": "Intr.to Business Computing",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -115,10 +188,67 @@
    "Hafta 13 · Sembolik hesaplama",
    "Hafta 14 · Programlama dilleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel bilgisayar, giriş, çıkış, depolama ve işleme"
+   },
+   {
+    "week": 2,
+    "topic": "İşletim sistemlerine giriş"
+   },
+   {
+    "week": 3,
+    "topic": "Web ve ağ topolojileri"
+   },
+   {
+    "week": 4,
+    "topic": "İnternet, kablolu ve kablosuz iletişim"
+   },
+   {
+    "week": 5,
+    "topic": "Kelime işlem düzenleyicilere giriş (MS Office Word)"
+   },
+   {
+    "week": 6,
+    "topic": "Grafik ve tablolama düzenleyicilere giriş (MS Office Excel)"
+   },
+   {
+    "week": 7,
+    "topic": "Grafik ve tablolama düzenleyicileri (MS Office Excell)"
+   },
+   {
+    "week": 8,
+    "topic": "Bilimsel görselleştirme (MS Office )"
+   },
+   {
+    "week": 9,
+    "topic": "Sunum düzenleyicileri (MS Office Powerpoint)"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgisayarlı hata analizlerine giriş"
+   },
+   {
+    "week": 11,
+    "topic": "Algoritmalar, mantık yapıları, yinelemeli yapılar"
+   },
+   {
+    "week": 12,
+    "topic": "Algoritmalar, mantık yapıları, yinelemeli yapılar"
+   },
+   {
+    "week": 13,
+    "topic": "Sembolik hesaplama"
+   },
+   {
+    "week": 14,
+    "topic": "Programlama dilleri"
+   }
+  ],
   "textbooks": [
    "Bill Daley, Computers are Your Future, Prentice Hall, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CMP&dersNo=113",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CMP&dersNo=113"
  }
 }

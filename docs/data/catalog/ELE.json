@@ -2,6 +2,7 @@
  "ELE 342": {
   "code": "ELE 342",
   "name": "Sayısal Sistemler Lab.",
+  "nameEn": "Digital Systems Lab.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -33,15 +34,87 @@
    "Hafta 13 · Telafi",
    "Hafta 14 · Telafi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laboratuvar içeriğinin tanıtımı ve deney gruplarının oluşturulması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 2,
+    "topic": "TTL ve CMOS kapı karakteristikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Kombinezonsal devre analizi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kombinezonsal devre sentezi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "MSI kod çözücüleri, çoğullayıcıları ve kodlayıcıları ile kombinezonsal devre sentezi ve analizi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Toplama, çıkarma ve karşılaştırma devrelerinin blok yapılar ile tasarımı",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Bellek elemanlarının gerçeklenmesi ve analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Senkron ardışıl devre analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Senkron ardışıl devre sentezi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Asenkron ve senkron sayıcılar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yazıcılar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Telafi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Telafi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Telafi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Sayısal Sistemler Laboratuarı Deney Kitapçığı, , , 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=342"
  },
  "ELE 492": {
   "code": "ELE 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -68,15 +141,73 @@
    "Hafta 13 · Problem üstünde çalışma ve raporun hazırlanması",
    "Hafta 14 · Raporun sunulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Planın sunulması"
+   },
+   {
+    "week": 2,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 3,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 4,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 5,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 6,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 7,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 8,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 9,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 10,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 11,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 12,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 13,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 14,
+    "topic": "Raporun sunulması"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=492"
  },
  "ELE 492E": {
   "code": "ELE 492E",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -103,15 +234,73 @@
    "Hafta 13 · Problem üstünde çalışma ve raporun hazırlanması",
    "Hafta 14 · Raporun sunulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Planın sunulması"
+   },
+   {
+    "week": 2,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 3,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 4,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 5,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 6,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 7,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 8,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 9,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 10,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 11,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 12,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 13,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 14,
+    "topic": "Raporun sunulması"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=492"
  },
  "ELE 504E": {
   "code": "ELE 504E",
   "name": "Digital MOS Inte.Circuit Des.",
+  "nameEn": "Digital MOS Inte.Circuit Des.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -147,6 +336,77 @@
    "Hafta 13 · Mpga, Fpga, Eeprom, Flash Rom",
    "Hafta 14 · Sram, Dram"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Evirici tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kapı tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Geçiş lojiği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Flip-flop’lar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Senkronizasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Dinamik devreler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "İleri dinamik devreler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kapı dizileri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Verilog",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Bellek tasarımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "MOS modelleri, serim teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Saat üretimi ve dağıtımı, BiCMOS devreler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Mpga, Fpga, Eeprom, Flash Rom",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Sram, Dram"
+   }
+  ],
   "textbooks": [
    "Ayers, J. E. (2009). Digital Integrated Circuits: Analysis and Design. CRC Press",
    "Ayers, J. E. (2009). Digital Integrated Circuits: Analysis and Design. CRC Press",
@@ -159,12 +419,12 @@
    "Uyemura, J. P. (2003). CMOS logic circuit design. Kluwer Academic Publishers",
    "Uyemura, J. P. (2003). CMOS logic circuit design. Kluwer Academic Publishers"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=504",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=504"
  },
  "ELE 508E": {
   "code": "ELE 508E",
   "name": "RF Microelectronics",
+  "nameEn": "RF Microelectronics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -198,6 +458,77 @@
    "Hafta 13 · YSTD Yapılarında kullanılan Sıklık Sentezleyicileri",
    "Hafta 14 · Dinamik Güç Kaynağının Kullanıldığı Yüksek Verimli Güç Kuvvetlendiricileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radio Verici-Alıcı Teknolojisinin İstemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gezgin Kullanıcılar içinTelsiz İletişim Standartları ve Uygulamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Verici-Alıcı Mimariler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Gezgin İletişim Dizgeleri için Düşük Güçlü YSTDler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "YSTD’lerinde kullanılan DGK Yapıları; Dengesiz ve Dengeli Kuvvetlendirici Yapıları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Verici-Alıcı Teknolojilei İstemleri, Telsiz İletişim Standartları, Verici Alıcı Mimarileri ve DGK yapıları Üzerine Yeniden Gözden Geçirim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "YSTD’lerinde Kullanılan Karıştırıcı Yapıları; Dengesiz ve Dengeli Karıştırıcı Yapıları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Etkin Karıştırıcılarda Gürültü Analizleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "YS Güç Kuvvetlendirici Yapıları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "TD Güç Kuvvetlendiricilerinde Doğrulaştırım Teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "YS Osilatör Yapıları; Dengesiz ve Dengeli yapılar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Karıştırıcı Yapıları, Etkin Karıştırıcılarda Gürültü, Güç Kuvvetlendirici Yapıları, Doğrulaştırım Teknikleri ve YS Osilatör Yapıları Üzerine Yeniden Gözden Geçirim",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "YSTD Yapılarında kullanılan Sıklık Sentezleyicileri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Dinamik Güç Kaynağının Kullanıldığı Yüksek Verimli Güç Kuvvetlendiricileri"
+   }
+  ],
   "textbooks": [
    "Chien, C. (2001), Digital Radio Systems on a Chip. Kluwer Academic Publishers",
    "Grebennikov, A. ve Sokal, N. O. (2007). Switchmode RF Power Amplfiers. Elsevier.",
@@ -206,12 +537,12 @@
    "Razavi, B. (1998). RF Microelectronics. Prentice Hall Communication Eng. and Emerging Technologies Series.",
    "Rogers, J. W. M. ve Plett, C. (2010). RF Integrated Circuit Design. Artech House."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=508",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=508"
  },
  "ELE 514": {
   "code": "ELE 514",
   "name": "Sistem Teorisi",
+  "nameEn": "System Theory",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -247,6 +578,77 @@
    "Hafta 13 · Gözlenebilir ve yönetilebilir biçimler ve ayrıştırma kuramları",
    "Hafta 14 · Gerçekleme, minimal gerçekleme problemi ve yöntemler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve dersin genel tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal uzaylar, doğrusal dönüşümler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Normlu vektor uzayları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yakınsaklık tanımı ve kriterleri , Büzülme",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Sistemlerin aksiyomatik tanımı, durum geçiş ve çıkış fonksiyonları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Zamanla değişen doğrusal sistemler, durum geçiş matrisi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sıfır durum ve sıfır giriş yanıtları, İmpuls yanıtı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Zamanla değişmeyen sistemler: bir matrisin üsteli, matris fonksiyonları,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kanonik biçimler, transfer fonksiyon matrisi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kararlılık",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yönetilebilirlik",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gözlenebilirlik",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gözlenebilir ve yönetilebilir biçimler ve ayrıştırma kuramları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Gerçekleme, minimal gerçekleme problemi ve yöntemler."
+   }
+  ],
   "textbooks": [
    "Antsaklis, P. J. ve Michel, A. N. (1997). Linear Systems. Mc-Graw Hill.",
    "Antsaklis, P. J. ve Michel, A. N. (1997). Linear Systems. Mc-Graw Hill.",
@@ -259,12 +661,12 @@
    "Rough, J. W. (1996). Linear System Theory. Prentice Hall, New Jersey.",
    "Rough, J. W. (1996). Linear System Theory. Prentice Hall, New Jersey."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=514",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=514"
  },
  "ELE 519": {
   "code": "ELE 519",
   "name": "Elekt.Müh.Matematiksel Yönt.",
+  "nameEn": "Mathematical Methods in Electrical Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -296,6 +698,77 @@
    "Hafta 13 · Ortogonal, ortonormal küme, diziler ve operatörler",
    "Hafta 14 · Ortonormal küme oluşturma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Metrik uzay tanımı, örnekler, Minkowski, Cauchy- Schwarz eşitsizliği.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Açık yuvar, kapalı yuvar, komşuluk kavramları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Süreklilik ve tamlık kavramları, tam uzay örnekleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Büzülme dönüşümü, Banach sabit nokta teoremi,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Lineer denklem takımı ve differansiyel denklem çözümü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Lineer vektör uzayı ve ilişkili kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Normlu uzay tanımı, Banach uzayı",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Doğrusal operatörler, fonksiyoneller ve özellikleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yaklaşıklık teorisi, Konveks küme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "En iyi kestirim, Haar Koşulu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Spektral teori",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "İç çarpım uzayı, Hilbert Uzayı, İç çarpım uzayının özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Ortogonal, ortonormal küme, diziler ve operatörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Ortonormal küme oluşturma"
+   }
+  ],
   "textbooks": [
    "Alpay, D. ve Gohberg, I. (2005). The State Space Method: Generalizations and Applications. Birkhauser; 1 edition",
    "Kreyzig, E. (1978). Introductory Functional Analysis with Applications. John Wiley&Sons",
@@ -303,12 +776,12 @@
    "Şuhubi, E. S. (2001). Fonksiyonel Analiz. İ.T.Ü Vakfı Yayınları",
    "Zeidler, E. (1995). Applied Functional Analysis. Springer-Verlag"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=519",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=519"
  },
  "ELE 525": {
   "code": "ELE 525",
   "name": "Gömülü İşletim Sistem.Tasarım",
+  "nameEn": "Design with Embedded Oper.Sys.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -322,12 +795,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=525"
  },
  "ELE 526E": {
   "code": "ELE 526E",
   "name": "Elektronik Müh.Özel Konular",
+  "nameEn": "Special Topics in Electronics Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -341,12 +814,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=526",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=526"
  },
  "ELE 528": {
   "code": "ELE 528",
   "name": "Biyometrik Sistemler",
+  "nameEn": "Biometric Systems",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -380,16 +853,87 @@
    "Hafta 13 · Çoklu model biyometrik sistemler",
    "Hafta 14 · Sosyal ve etik problemler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyometriye Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Parmakizi:Sınıflandırma yöntemleri, uyum yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Parmakizi:Sınıflandırma yöntemleri, uyum yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "El geometrisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "El geometrisine dayalı doğrulama sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "El ve parmak damar geometrisi ve doğrulama sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yüz tanıma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yüz tanıma tekniklerinde ileri uygulamalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "İris tanıma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Yürüyüş ve hareket tanıma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Kulak biyometrisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çoklu model biyometri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Çoklu model biyometrik sistemler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Sosyal ve etik problemler"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=528",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=528"
  },
  "ELE 531E": {
   "code": "ELE 531E",
   "name": "Network Syn.&Passi.Filter Des.",
+  "nameEn": "Network Syn.&Passi.Filter Des.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -421,16 +965,87 @@
    "Hafta 13 · Ölçekleme",
    "Hafta 14 · Normalleştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Devre sentezi sorunu: Yaklaşıklık problemi ve frekans dönüşümleri, Genlik ve frekans normalizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Pozitif reel fonksiyonlar ve giriş fonksiyonlarının gerçekleştirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Giriş fonksiyonlarının gerçekleştirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Pozitif reel matrisler ve açık devre empedans matrislerinin gerçekleştirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Kısa devre admitans matrislerinin gerçekleşirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Transfer fonksiyonlarının gerçekleştirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Basamaklı devre sentezi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Filtre kavramına giriş: İdeal ve gerçek filtreler (Alçak-geçiren, Yüksek geçiren, band geçiren, band söndüren ve tüm geçiren filtreler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Frekans dönüşümleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Yaklaşıklık problemi: Butterworth yaklaşıklığı, Buuterworth filtresi tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Chebyshev yaklaşıklığı, Chebyshev fitresi tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Eliptik yaklaşıklık, eliptik filter tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Ölçekleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Normalleştirme"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=531",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=531"
  },
  "ELE 596": {
   "code": "ELE 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -474,6 +1089,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -486,12 +1172,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=596"
  },
  "ELE 609E": {
   "code": "ELE 609E",
   "name": "Low-Power Electron.Sys.Design",
+  "nameEn": "Low-Power Electron.Sys.Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -524,6 +1210,77 @@
    "Hafta 13 · Gerekler ve güç tüketimi düşürme yönetimleri",
    "Hafta 14 · Gerçekleme örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sistem seviyesi modeller ve tasarım problemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sistemin tanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kaynaklar ve mimari yapılar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Haberleşme mimarileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Donanım/yazılım bölmeleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Donanım güç tüketimi optimizasyonu",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Verinin gösterilim şekli seçenekleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Veri korelasyonu ve veri yolu kodlaması",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Veri yolu arayüz tasarımı",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Bellek tasarımı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "İşlemci tasarımı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Dinamik güç tüketimi yönetimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gerekler ve güç tüketimi düşürme yönetimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Gerçekleme örnekleri"
+   }
+  ],
   "textbooks": [
    "Ahuja, S., Lakshminarayana, A., Shukla, S. K. (2011). Low Power Design with High-Level Power Estimation and Power-Aware Synthesis. Springer.",
    "Gajski, D. D., Abdi, S., Gerstlauer, A., Schirner, G. (2009). Embedded System Design: Modeling, Synthesis And Verification. Springer.",
@@ -531,12 +1288,12 @@
    "Schmitz, M. T., Al-Hashimi, B. M., Eles, P. (2005). System-Level Design Techniques For Energy-Efficient Embedded Systems. Kluwer Academic Publishers.",
    "Yoo, H.-J., Lee, K., Kim, J. K. (2008). Low-Power NoC for High-Performance SoC Design. CRC Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=609",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=609"
  },
  "ELE 696": {
   "code": "ELE 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -580,6 +1337,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -592,7 +1420,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=696"
  }
 }

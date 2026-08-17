@@ -2,6 +2,7 @@
  "EBT 501E": {
   "code": "EBT 501E",
   "name": "Engineering Mathematics",
+  "nameEn": "Engineering Mathematics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -10,7 +11,7 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "Parabolik, eliptik ve hiperbolik kısmi türevli diferansiyel denklemler; değişkenlerine ayırma yöntemi; Fourier serileri; , Sturm-Liouville eigen değer problemleri; en az üç bağımsız değişkenli kısmi türevli diferansiyel denklemler; homojen olmayan problemler; zamandan bağımsız problemler için Green fonksiyonları; sonsuz alan problemleri Parabolic , elliptic and hyperbolic PDEs; Method of seperation of variables; Fourier series, Sturm-Liouville eigenvalue problems; PDEs with at least three independent variables; Nonhomogeneous problems; Green’s functions for time- independent problems; Infinite domain problems·Fourier transform solution of PDEs;Green’s functions for time- dependent problems.",
+  "description": "Parabolik, eliptik ve hiperbolik kısmi türevli diferansiyel denklemler; değişkenlerine ayırma yöntemi; Fourier serileri; , Sturm-Liouville eigen değer problemleri; en az üç bağımsız değişkenli kısmi türevli diferansiyel denklemler; homojen olmayan problemler; zamandan bağımsız problemler için Green fonksiyonları; sonsuz alan problemleri Parabolic , elliptic and hyperbolic PDEs; Method of seperation of variables; Fourier series, Sturm-Liouville eigenvalue problems; PDEs with at least three independent variables; Nonhomogeneous problems; Green’s functions for time- independent problems; Infinite domain problems—Fourier transform solution of PDEs;Green’s functions for time- dependent problems.",
   "outcomes": [
    "Mühendislikte yeralan kısmi türevli dif. denklemler",
    "Bazı fiziksel problemlerin özdeğer çözümü",
@@ -33,15 +34,87 @@
    "Hafta 13 · Arasınav",
    "Hafta 14 · Fourier Dönüşümü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Analiz ve adi diferansiyel denklemler ile ilgili bazı temel konuların gözden geçirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel ilkelerden ve ampirik yasalardan hareketle mühendislikteki başlıca parabolik, eliptik ve hiperbolik kısmi diferansiyel denklemlerin geliştirilmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Değişkenlere ayırma yöntemi, Diklik ve Seri çözümleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Fourier serileri I",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Fourier serileri II",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Sturm-Liouville özdeğer problemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yüksek mertebeli Kısmi Türevli Diferansiyel Denklemler I",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Yüksek mertebeli Kısmi Türevli Diferansiyel Denklemler II",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Homojen olmayan Kısmi Türevli Diferansiyel Denklemler I",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Homojen olmayan Kısmi Türevli Diferansiyel Denklemler II",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Green fonksiyonları I",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Green fonksiyonları I",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Arasınav",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Fourier Dönüşümü",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "R. Haberman, Applied Partial Differential Equations, Prentice Hall, 2004."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=501"
  },
  "EBT 503E": {
   "code": "EBT 503E",
   "name": "Advanced Thermodynamics",
+  "nameEn": "Advanced Thermodynamics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -77,6 +150,78 @@
    "Hafta 13 · Kimyasal reaksiyonlar",
    "Hafta 14 · Sıkıştırılabilir Akış"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Termodinamiğin temel kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Saf maddelerin özelikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kapalı sistemler için enerji analizleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Açık sistemler için kütle ve enerji analizleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Termodinamiğin İkinci Yasası",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Entropi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Isıl sistemlerin ekserji analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sonlu zaman termodinamiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Gaz güç çevrimleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Buhar ve kombine güç çevrimleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Soğutma çevrimleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Gaz karışımları",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Kimyasal reaksiyonlar",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Sıkıştırılabilir Akış",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Y.A. Çengel, M.A. Boles, Thermodynamics: An Engineering Approach, 6th Edition, McGraw-Hill, 2008,",
    "E.D. Winterbone, Advanced Thermodynamics for Engineers, Butterworth Heinemann,1997,",
@@ -85,12 +230,12 @@
    "T.J. Kotas, The Exergy Methods of Thermal Plant Analysis, 2nd Edition, Krieger Publishing Company, 1995,",
    "M.J. Moran, H.N. Shapiro, Fundamentals of Engineering Thermodynamics, SI Version, , 6th Edition, John Wiley & Sons, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=503"
  },
  "EBT 506": {
   "code": "EBT 506",
   "name": "Isı Değiştiricileri",
+  "nameEn": "Heat Exchangers",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -124,18 +269,89 @@
    "Hafta 13 · Isı değiştiricilerin tasarımında boyutlandırma problemi.",
    "Hafta 14 · Malzeme seçimi ve mukavemet hesapları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Isı değiştiricilerin genel özellikleri ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Paralel, ters akışlı ve çok geçişli ısı değiştiricileri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Isı değiştiricilerinin ısıl analizi, ısıl direnç.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ortalama logaritmik sıcaklık farkı yöntemi I.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Ortalama logaritmik sıcaklık farkı yöntemi II.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Etkenlik-NTU yöntemi I.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Etkenlik-NTU yöntemi II.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Isı değiştiricilerinin çözümlenmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Isı değiştiricilerinde basınç düşümü analizi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Levha tipi ısı değiştiricisinde basınç düşümü, boru kayıpları, ani genişleme ve daralma kayıpları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gövde-tüp ısı değiştiricilerinde basınç düşümü.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Isı değiştiricilerin tasarım süreci.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Isı değiştiricilerin tasarımında boyutlandırma problemi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Malzeme seçimi ve mukavemet hesapları."
+   }
+  ],
   "textbooks": [
    "Sekulic D.P.& Shah, R.K., Fundamentals of Heat Exchanger Design, John Wiley & Sons, 2002.",
    "Kuppan T., Heat Exchanger Design Handbook, Mechanical Engineering No.126, 2000.",
    "Hewitt G.F.& Levenson, L.L., Heat Exchanger Design Handbook 2002, Begell House, 2002.",
    "Genceli O.F., Isı Değiştiricileri, Birsen Yayın Evi, 1999."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=506",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=506"
  },
  "EBT 507E": {
   "code": "EBT 507E",
   "name": "Fundamentals of Power Generat.",
+  "nameEn": "Fundamentals of Power Generat.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -167,17 +383,89 @@
    "Hafta 13 · Gaz türbini (Brayton çevrimi) ve termal güç santrallarında bileşik çevrim II. [ Ara sınav 2 ]",
    "Hafta 14 · Elektrik üretiminde rüzgar gücü."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin kapsamı. Elektrik üretimi için yenilenebilir, yenilenemez ve alternatif enerji kaynakları. Türkiye'de ve dünyada enerji kaynakları ve rezervler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Türkiye ve dünya için elektrik enerjisi üretimi ve talep istatistiği. Elektrik enerjisi üretiminin temelleri. Yük eğrileri. Güç santrallarının sınıflandırılması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Hidrolik, termal, nükleer ve rüzgar güç santrallarının karşılaştırılması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Termal güç santrallarının yatırım ve birim üretim maliyeti. Enerji pazarının etüdü.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Hidrogüç santrallarının sınıflandırılması. Hidrolik enerji, Euler türbin denklemi. Hidrolik türbinler: özgül hız, hidrolik ve mil güçleri, kayıplar, verimlilik.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Su türbinlerinin tipleri, hidrolik türbinlerin işlem özellikleri. Ekonomik boru çapı, su gürültüsü, taşma kabı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Hidrolik türbinlerde hız düzenleme. Türkiye'de ve dünyada HPPs örnekleri. [ Ara sınav 1]",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yakıtlar ve yanma. Termal güç santralları (TPP); sınıflandırma.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Buhar güç çevrimleri (Rankine), buhar güç santralları, verimlilik ve verimliliği geliştirme yolları I.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Buhar güç çevrimleri (Rankine), buhar güç santralları, verimlilik ve verimliliği geliştirme yolları II.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Buhar güç çevrimleri (Rankine), buhar güç santralları, verimlilik ve verimliliği geliştirme yolları III.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Gaz türbini (Brayton çevrimi) ve termal güç santrallarında bileşik çevrim I.",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Gaz türbini (Brayton çevrimi) ve termal güç santrallarında bileşik çevrim II. [ Ara sınav 2 ]",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Elektrik üretiminde rüzgar gücü.",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "M.G. JOG, “Hydro-Electric and Pumped Storage Plants”, John Wiley & Sons, 1989.",
    "M.M. WAKIL, “Power Plant Technology”, Mc Graw-Hill, 1984.",
    "G.I. Krivchenko, “Hydrolic Machines: Turbines and Pumps”, CRC Press, 1994"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=507"
  },
  "EBT 509": {
   "code": "EBT 509",
   "name": "Kömür Bilimi ve Teknolojisi",
+  "nameEn": "Coal Science and Technology",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -225,6 +513,77 @@
    "Hafta 13 · Kömürden kükürdün giderilmesi",
    "Hafta 14 · Kömür kullanımı ve çevre ilişkisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kömürün Oluşumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kömürün sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kömür analiz yöntemleri",
+    "outcomes": "18"
+   },
+   {
+    "week": 4,
+    "topic": "Kömür fiziksel ve kimyasal özellikleri",
+    "outcomes": "18"
+   },
+   {
+    "week": 5,
+    "topic": "Kömür kullanım alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Kömürün hazırlanması, depolanması, kendiliğinden tutuşması",
+    "outcomes": "17"
+   },
+   {
+    "week": 7,
+    "topic": "Kömür zenginleştirme yöntemleri",
+    "outcomes": "17"
+   },
+   {
+    "week": 8,
+    "topic": "Kömür yanma mekanizması, yakma sistemleri",
+    "outcomes": "16"
+   },
+   {
+    "week": 9,
+    "topic": "Kömür pirolizi",
+    "outcomes": "16"
+   },
+   {
+    "week": 10,
+    "topic": "Kömürün sıvılaştırılması",
+    "outcomes": "16"
+   },
+   {
+    "week": 11,
+    "topic": "Kömürün gazlaştırılması",
+    "outcomes": "16"
+   },
+   {
+    "week": 12,
+    "topic": "Kömürün briketlenmesi",
+    "outcomes": "17"
+   },
+   {
+    "week": 13,
+    "topic": "Kömürden kükürdün giderilmesi",
+    "outcomes": "15"
+   },
+   {
+    "week": 14,
+    "topic": "Kömür kullanımı ve çevre ilişkisi"
+   }
+  ],
   "textbooks": [
    "R.Kandiyoti, A.Herod, K.Bartle, Solid Fuels and Heavy Hydrocarbon Liquids : Thermal Characterization and Analysis, Elsevier, 2006.",
    "J.G. Speight, Handbook of Coal Analysis, John Wiley and Sons, 2005.",
@@ -243,12 +602,12 @@
    "C. Higman, M. van der Burgt, Gasification, Second ed., Elsevier, 2008.",
    "B.G. Miller, D.A. Tillman, Combustion Engineering Issues for Solid Fuel Systems, Elsevier, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=509"
  },
  "EBT 511E": {
   "code": "EBT 511E",
   "name": "Nuclear Reactor Theory",
+  "nameEn": "Nuclear Reactor Theory",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -280,18 +639,89 @@
    "Hafta 13 · Sıcaklık, boşluk reaktivite katsayıları ve geri beslame",
    "Hafta 14 · Kaza analizleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer fisyon, ışınımlı yakalanma, esnek saçılma, tesir kesiti veri tabanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Esnek saçılmanın kinemetiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Zincirleme fisyon tepkimeleri, yetkinlik",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Zincirleme fisyon tepkimelerinin basitleştirilmiş kinetiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Nükleer reaktörlerin sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Tek grup nötron yayınım denkleminin türetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Çoğaltkan olmayan ortamlarda nötron yayınım denkleminin çözümleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Yayınım kernelleri, albedo sınır koşulu, nötran yayınım ve göç uzunlukları",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Çıplak türdeş reaktörler, yansıtıcılı reaktörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Türdeşleştirme kavramı ve kontrol çubukları",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Nötron yayınım denkleminin sayısal çözümleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Gecikmiş nötronlar, nokta kinetik denklemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Sıcaklık, boşluk reaktivite katsayıları ve geri beslame",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Kaza analizleri"
+   }
+  ],
   "textbooks": [
    "E. E.. Lewis, Fundamental of Nuclear Reactor Physics, Academic Press, 2008,",
    "W. F. Stacey, T., Nuclear Reactor Physics, John Wiley & Sons, 2001.",
    "J. J. Duderstadt, L.J. Hamilton, Nuclear Reactor Analysis, John Wiley & Sons, 1976.",
    "A.F. Henry, Nuclear Reactor Analysis, The MIT Press,1975."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=511"
  },
  "EBT 513": {
   "code": "EBT 513",
   "name": "Enerji Sistemler.Hesap.Yönt.",
+  "nameEn": "Computational Methods in Energy Systems",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -300,41 +730,112 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "Vektör ve matris normları, spektral yarıçap gibi bazı temel kavramlar. Doğrusal sistemlerin dolaysız çözüm yöntemleri: Gauss ve Gauss-Jordan teknikler, LU ayrışımı, Cholesky yöntemleri. Doğrusal sistemlerin çözümünde yinelemeli yöntemler: Jacobi, Gauss sidel, SOR, ADI yöntemleri. Özdeğer-özvektör problemlerinin sayısal çözümleri: Güç iterasyonu, Wielandt iterasyonu, matris dönüşüm yöntemleri. Yaklaşım kuramı. Sayısal diferansiyel ve integrasyon.Tek ve iki boyutta sonlu farklar yöntemi uygulamaları. Sonlu farklar yöntemi ile difüzyon denkleminin çözümü Sonlu elemanlar yöntemi. Tek boyutta sonlu elemanlar yönteminin nötron difüzyonu ve ısı transferi uygulamaları Introduction to some fundamantal concepts: vector and matrix norms, spectral radius etc. Direct solutions of linear systems:Gauss and Gauss Jordan eliminatin techcniques, LU decomposition, Cholesky decomposition. Iterative solution of linear systems: Jacobi, Gauss-Seidel, SOR and ADI methos. Numerical solution of eigenvelue and eigenvector problems: Power iteration, Wieland itertion methods, matrix transformation tchniques. Apparoximation theory. Numerical differentiation and integration. Finite difference method in one and two dimensional geometry. Application of finite difference method to the diffusion equation. Solution of one-dimensional neutron diffusion and heat teransfer equations by finite element method.",
+  "description": "Enerji sistemlerindeki mühendislik problemlerinin hesaplamalı modellenmesi ve çözümünde kullanılan temel sayısal yöntemler. Sayısal hata, doğruluk, yakınsama, kararlılık ve koşulluluk; doğrusal ve doğrusal olmayan denklem sistemleri; sayısal türev, interpolasyon, eğri uydurma ve integrasyon. Adi diferansiyel denklemlerin başlangıç-değer problemleri ile bağlı enerji sistemlerinin durum değişkenleri ve durum-uzayı gösterimi. Isı transferi ve diğer enerji sistemi uygulamalarında sonlu farklar, sonlu hacimler ve temel sonlu elemanlar yöntemleri; FEM ile bir ve iki boyutlu ısı iletimi uygulamaları. Zamana bağlı problemlerde zaman integrasyonu, hata ve kararlılık. Bütünleşik enerji sistemi problemlerinde yöntem seçimi, yöntemlerin karşılaştırılması, doğrulama ve mühendislik yorumu. Konular, enerji mühendisliği örnekleri ve MATLAB veya Python uygulamalarıyla desteklenir. Fundamental numerical methods for computational modeling and solution of engineering problems in energy systems. Numerical error, accuracy, convergence, stability, and conditioning; linear and nonlinear systems of equations; numerical differentiation, interpolation, curve fitting, and integration. Initial-value problems for ordinary differential equations and state-space representation of coupled energy systems. Finite difference, finite volume, and basic finite element methods for heat-transfer and other energy-system applications, including one- and two-dimensional heat conduction using FEM. Time integration, error, and stability for transient problems. Method selection, comparison, verification, and engineering interpretation for integrated energy-system problems. Topics are supported by energy-engineering examples and MATLAB or Python implementations.",
   "outcomes": [
-   "Mühendislik ve uygulamalı matematikte karşılarına çıkan ve analitik yöntemlerle çözülemeyen problemleri sayısal olarak çözebilme yeteneği",
-   "Karşılaşılan doğrusal sistemlerin hangi koşullarda hangi yöntemlerle çözülmesi gerektiği konusunda sağlıklı karar verebilme becerisi",
-   "Analitik olarak hesaplanamayan integrallerin hangi sayısal yöntemlerle belirlenebileceği konusunda karar vereilme becerisi",
-   "Sınır değer problemlerinin sayısal yöntemlerle çözümü konusunda temel bir birikime sahip olma."
+   "Enerji sistemlerinden kaynaklanan doğrusal ve doğrusal olmayan mühendislik problemleri için uygun sayısal çözüm yöntemlerini seçer, uygular ve seçiminin gerekçesini açıklar.",
+   "Enerji sistemlerinin modellenmesinde kullanılan adi diferansiyel denklemler ve bağlı dinamik sistemler için uygun sayısal çözüm yaklaşımlarını uygular; durum-uzayı modellerini kurar ve sonuçları mühendislik açısından yorumlar.",
+   "Isı transferi ve benzeri enerji sistemi problemlerini sonlu farklar, sonlu hacimler ve temel sonlu eleman yaklaşımlarıyla ayrıklaştırır; bir ve iki boyutlu problemlerde kullanılan yöntemin doğruluğunu ve temel kararlılık özelliklerini değerlendirir.",
+   "Sayısal çözümlerde hata, doğruluk, yakınsama, kararlılık, koşulluluk ve duyarlılık kavramlarını değerlendirir; çözüm sonuçlarının güvenilirliğini ve mühendislik uygulamalarına uygunluğunu yorumlar.",
+   "Enerji mühendisliği problemlerinin çözümünde kullanılan temel sayısal algoritmaları analiz eder; verilen MATLAB veya Python kodlarını anlar, uyarlar, doğrular ve elde edilen sayısal sonuçları teknik olarak yorumlar.",
+   "Bir enerji mühendisliği problemini hesaplamalı bir probleme dönüştürür; uygun sayısal çözüm algoritmasını oluşturur, alternatif yöntemleri karşılaştırır ve temel varsayımlar ile sınırlılıkları tartışır."
   ],
   "weeklyTopics": [
-   "Hafta 1 · Vektör uzayları, matris ve vektör normları, spektral yarıçap ve iç çarpım kavramları",
-   "Hafta 2 · Doğrusal sistemlerin dolaysız çözümleri",
-   "Hafta 3 · dolaysız çözüm yötemleri yuvarlatma hataları",
-   "Hafta 4 · Doğrusal sistemlerin yinelemeli çözümleri",
-   "Hafta 5 · Yinelemeli yöntemler ve hata analizleri",
-   "Hafta 6 · Özdeğer-özvektör hesapları",
-   "Hafta 7 · Yaklaşım kuramı",
-   "Hafta 8 · Sayısal integrasyon ve kareleme formülleri",
-   "Hafta 9 · Tek boyutlu sonlu fark denklemleri türetimi",
-   "Hafta 10 · İki boyutlu sonlu fark denklemi türetimi",
-   "Hafta 11 · Sonlu fark yönteminin difüzyon denklemine uygulamaları",
-   "Hafta 12 · Sonlu elemanlar yöntemi",
-   "Hafta 13 · Çok amaçlı bir sonlu elemanlar yöntemi program geliştirimi",
-   "Hafta 14 · Geliştirilen program ile nötron difüzyon ve ısı transferi uygulamaları"
+   "Hafta 1 · Enerji sistemlerinde hesaplamalı yöntemlere giriş. Hesaplamalı modelleme iş akışı; sayısal hata, doğruluk, yakınsama, kararlılık, koşulluluk, doğrulama ve algoritmik düşünme. Isıl direnç ağı ve Python ile ilk uygulamalar.",
+   "Hafta 2 · Doğrusal denklem sistemleri. Gauss eliminasyonu, kısmi pivotlama, LU ayrışımı, Jacobi ve Gauss-Seidel yöntemleri. Isıl direnç ağları, enerji denge denklemleri, artık ve yakınsama uygulamaları.",
+   "Hafta 3 · Doğrusal olmayan denklemler. Bölme, Regula Falsi, sabit nokta ve Newton-Raphson yöntemleri; yakınsama ve başlangıç tahmini. Fotovoltaik sistem, boru akışı ve diğer enerji mühendisliği uygulamaları.",
+   "Hafta 4 · Veri analizi ve sayısal hesaplama. Sayısal türev, interpolasyon, eğri uydurma ve sayısal integrasyon. Güneş ışınımı ve deneysel enerji verileri uygulamaları.",
+   "Hafta 5 · Zamana bağlı enerji sistemleri ve adi diferansiyel denklemler. Başlangıç-değer problemleri; Euler ve Runge-Kutta yöntemleri; hata, zaman adımı ve kararlılık. Isıl sistemler, soğuma ve enerji depolama uygulamaları.",
+   "Hafta 6 · Bağlı enerji sistemleri ve durum-uzayı modelleri. Bağlı adi diferansiyel denklem sistemleri",
+   "Hafta 7 · Durum değişkenleri, matris gösterimi ve durum-uzayı çözümü. Isıl ve enerji depolama sistemlerinden dinamik uygulamalar",
+   "Hafta 8 · Sonlu Farklar Yöntemi (FDM) ve ısı iletimi. Isı iletim denkleminin ayrıklaştırılması.",
+   "Hafta 9 · Sınır koşulları, ağ yakınsaması ve zamana bağlı problemlere giriş.",
+   "Hafta 10 · Sonlu Hacimler Yöntemi (FVM) ve enerji dengeleri. Korunum yasaları, kontrol hacmi yaklaşımı, difüzyon ve taşınım-difüzyon problemleri; enerji sistemlerine uygulamalar.",
+   "Hafta 11 · Sonlu Elemanlar Yöntemine Giriş (FEM). Zayıf form, eleman kavramı, şekil fonksiyonları, eleman matrisleri, montaj ve sınır koşulları.",
+   "Hafta 12 · FEM ile bir ve iki boyutlu ısı iletimi uygulamaları. 1B çubuk ve 2B bölge modelleri, ağ oluşturma, sınır koşulları, çözümün doğrulanması ve mühendislik yorumu.",
+   "Hafta 13 · Bütünleşik enerji sistemi problemleri. Çok bileşenli modellerde uygun yöntemin seçimi, farklı sayısal yöntemlerin birlikte kullanılması, karşılaştırılması, doğrulanması ve mühendislik yorumu.",
+   "Hafta 14 · Ders sentezi ve yöntem seçimi. Problem türüne göre hesaplamalı yöntemin belirlenmesi; doğruluk, maliyet, kararlılık, doğrulama ve model sınırlılıkları açısından genel değerlendirme."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enerji sistemlerinde hesaplamalı yöntemlere giriş. Hesaplamalı modelleme iş akışı; sayısal hata, doğruluk, yakınsama, kararlılık, koşulluluk, doğrulama ve algoritmik düşünme. Isıl direnç ağı ve Python ile ilk uygulamalar.",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal denklem sistemleri. Gauss eliminasyonu, kısmi pivotlama, LU ayrışımı, Jacobi ve Gauss-Seidel yöntemleri. Isıl direnç ağları, enerji denge denklemleri, artık ve yakınsama uygulamaları.",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal olmayan denklemler. Bölme, Regula Falsi, sabit nokta ve Newton-Raphson yöntemleri; yakınsama ve başlangıç tahmini. Fotovoltaik sistem, boru akışı ve diğer enerji mühendisliği uygulamaları.",
+    "outcomes": "1-4-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Veri analizi ve sayısal hesaplama. Sayısal türev, interpolasyon, eğri uydurma ve sayısal integrasyon. Güneş ışınımı ve deneysel enerji verileri uygulamaları.",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Zamana bağlı enerji sistemleri ve adi diferansiyel denklemler. Başlangıç-değer problemleri; Euler ve Runge-Kutta yöntemleri; hata, zaman adımı ve kararlılık. Isıl sistemler, soğuma ve enerji depolama uygulamaları.",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Bağlı enerji sistemleri ve durum-uzayı modelleri. Bağlı adi diferansiyel denklem sistemleri",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Durum değişkenleri, matris gösterimi ve durum-uzayı çözümü. Isıl ve enerji depolama sistemlerinden dinamik uygulamalar",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Sonlu Farklar Yöntemi (FDM) ve ısı iletimi. Isı iletim denkleminin ayrıklaştırılması.",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Sınır koşulları, ağ yakınsaması ve zamana bağlı problemlere giriş.",
+    "outcomes": "2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Sonlu Hacimler Yöntemi (FVM) ve enerji dengeleri. Korunum yasaları, kontrol hacmi yaklaşımı, difüzyon ve taşınım-difüzyon problemleri; enerji sistemlerine uygulamalar.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Sonlu Elemanlar Yöntemine Giriş (FEM). Zayıf form, eleman kavramı, şekil fonksiyonları, eleman matrisleri, montaj ve sınır koşulları.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "FEM ile bir ve iki boyutlu ısı iletimi uygulamaları. 1B çubuk ve 2B bölge modelleri, ağ oluşturma, sınır koşulları, çözümün doğrulanması ve mühendislik yorumu.",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Bütünleşik enerji sistemi problemleri. Çok bileşenli modellerde uygun yöntemin seçimi, farklı sayısal yöntemlerin birlikte kullanılması, karşılaştırılması, doğrulanması ve mühendislik yorumu.",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Ders sentezi ve yöntem seçimi. Problem türüne göre hesaplamalı yöntemin belirlenmesi; doğruluk, maliyet, kararlılık, doğrulama ve model sınırlılıkları açısından genel değerlendirme.",
+    "outcomes": "1-2-3-4-5-6"
+   }
   ],
   "textbooks": [
-   "R.L. Burden, J.D. Faires, Numerical Analysis, 9th Edition, Brooks/Cole Cengage Learning, 2011,",
-   "J. Fish, T. BelytschkoWinterbone, A first Course in Finite Elements, John Wiley & Sons, 2007.",
-   "S. Nakamura, Computational Methods in Engineering and Science, Krieger ,1986,",
-   "G.D. Smith, Numerical Solution of Ordinary and Partial Differential Equations, John Wiley & Sons,2005."
+   "S.C. Chapra, Applied Numerical Methods with MATLAB for Engineers and Scientists, 5th Edition, McGraw-Hill, 2023."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=513"
  },
  "EBT 515": {
   "code": "EBT 515",
   "name": "Nükleer Mühendisliğin Esasları",
+  "nameEn": "Fundamentals of Nuclear Engineering",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -368,15 +869,87 @@
    "Hafta 13 · Yanma oranı, dönüşme oranı, üretkenlik, yenileme zamanı.",
    "Hafta 14 · Nükleer atık idaresi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Atom ve çekirdek, nükleer yapı ve bağ kuvvetleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleer reaksiyonlar, nötron göçü.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Fisyon ve fuzyon.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Nötron zincir reaksiyonu, kritiklik, çoğaltma faktörü.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Nükleer reaktörün dengeli rejimde çalışma prensipleri I.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Nükleer reaktörün dengeli rejimde çalışma prensipleri II.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Reaktörün geçici rejimde davranışı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Reaktör kontrolu, kontrol çubukları, reaktivite değişimi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Fisyon ürünlerinin reaktör kontrolü üzerindeki etkileri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Nükleer reaktörlerin yapısal özellikleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Nükleer reaktörler: çeşitleri ve özellikleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Nükleer yakıt çevrimleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Yanma oranı, dönüşme oranı, üretkenlik, yenileme zamanı.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Nükleer atık idaresi.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Murray R.L., Nuclear Energy, An introduction to the concepts, systems, and applications of nuclear processes, Butterworth-Heinemann, 2001."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=515"
  },
  "EBT 516E": {
   "code": "EBT 516E",
   "name": "Nuclear Reactor Engineering",
+  "nameEn": "Nuclear Reactor Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -408,18 +981,90 @@
    "Hafta 13 · Nötronik ve termohidrolik kuplaj",
    "Hafta 14 · Reaktör güvenliği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer reaktörler ve sınıflandırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleer reaktörlerin fiziksel ve mühendislik esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Güç reaktörleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Reaktör tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Reaktör parametreleri, temel reaktör bileşenleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Nükleer güç santrallerinin termodinamiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Reaktörde yakıt çevrimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Reaktörlerin termal- hidrolik analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Reaktör kalbinde ısı üretimi ve çekilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Levha tipi ve silindirik yakıt elemanlarında ısı iletimi, kritik ısı akısı",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "İki fazlı akışa giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Hidrodinamik ve termal-hidrolik kalp analizleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Nötronik ve termohidrolik kuplaj",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Reaktör güvenliği",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "J.R. Lamarsh, A.J.Baratta (2001), Introduction to Nuclear Engineering, Prentice Hall 2001.",
    "K. Almenas, R. Lee, Nuclear Engineering:An Introduction, Springer Verlag, 1992.",
    "N. E.. Todreas, M.S. Kazimi, Nuclear Systems:Thermal Hydraulics Fundamentals, Hemisphere Pub. Corp., 1990.",
    "S. Glasstone, A. Sesonske, Nuclear Reactor Engineering:Reactor Systems Engineering, Chapman&Hall,1994."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=516",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=516"
  },
  "EBT 519E": {
   "code": "EBT 519E",
   "name": "Nuclear Engineering Materials",
+  "nameEn": "Nuclear Engineering Materials",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -454,6 +1099,77 @@
    "Hafta 13 · Hızlı üretken reaktörlerde kullanılan malzemeler ve sorunları",
    "Hafta 14 · Radyasyonun malzeme hasarı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer Malzemelerin tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleer Füzyon Reaktörleri ve Malzeme Sorunları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Nükleer Fisyon Reaktörleri ve Malzeme ile İlişkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Fisyon reaktörlerinde Kullanılan Malzemelerin Faz Diyagramları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Nükleer malzemeler ve radyasyonla etkileşim özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Nükleer yakıt çevrimleri ve yakıt elemanları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Nükleer yakıt zenginleştirme teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Nükleer soğutucu elemanları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Nükleer reaktör reflektör malzemeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Nükleer reaktör zarf malzemeleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Nükleer reaktör kontrol malzemeleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Nükleer reaktör zırhlama malzemeleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Hızlı üretken reaktörlerde kullanılan malzemeler ve sorunları",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Radyasyonun malzeme hasarı"
+   }
+  ],
   "textbooks": [
    "Greenberg, M.R., West, B.M., Lowrie, K.W., Mayer, H.J., Handbook of Nuclear Materials, Energy and Waste Management, Vanderbilt University Pres, Nashville-Tenn., 2009.",
    "Geddes, J.N., Nuclear Materials: New Research, Nova, USA, 2008.",
@@ -461,12 +1177,12 @@
    "Was, G. S., Fundamentals of Radiation Materials Science: Metals and Alloys, Springer, Germany, 2007.",
    "MSIT, Selected Nuclear Materials and Engineering System, Springer, New York 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=519",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=519"
  },
  "EBT 525E": {
   "code": "EBT 525E",
   "name": "Passive Solar Energy Systems",
+  "nameEn": "Passive Solar Energy Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -500,6 +1216,76 @@
    "Hafta 13 · Bina enerji performansı hesaplama yöntemleri",
    "Hafta 14 · Pasif sistemin bina enerji performansındaki payının hesaplanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güneş enerjisi ve güneş açıları temel bilgiler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bina yüzeylerine gelen güneş ışınımını etkileyen parametreler ve ışınım şiddetinin hesaplanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Binalarda güneş enerjisinin kullanımı için etkili olan tasarım parametrelerinin uygun değerlerinin belirlenmesi yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Binalarda güneş enerjisinin kullanımı için etkili olan tasarım parametrelerinin uygun değerlerinin belirlenmesi yöntemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Pasif güneş enerjisi sistemleri: doğrudan kazanımlı sistemler ve dolaylı kazanımlı sistemler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Ara sınav",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Pasif güneş enerjisi sistemleri: karma sistemler doğrudan kazanımlı sistemler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Camın güneş mimarisine etkisi ve bina işlevine ve ısıtma soğutma enerjisi ağırlığına bağlı olarak uygun cam seçimi için hesaplama yöntemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Uygun gölgeleme elemanı tasarımı ilkeleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Binalara entegre olabilecek aktif güneş enerjisi sistemleri ve binaya entegre edilme modelleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Ara sınav"
+   },
+   {
+    "week": 12,
+    "topic": "Bina enerji performansı hesaplama yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Bina enerji performansı hesaplama yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Pasif sistemin bina enerji performansındaki payının hesaplanması"
+   }
+  ],
   "textbooks": [
    "ASHRAE Handbook of Fundamentals, Ashrae publications, 2009.",
    "Lechner N., Heating, Cooling, Lighting, Design Methods for Architects, John Wiley and Sons, 2000.",
@@ -507,12 +1293,12 @@
    "Crosbie M. J., The Passive Solar Design and Construction Handbook, J.Wiley and Sons, 1997.",
    "Birch R., The Solar System, Chelsea House Publishers, 2002."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=525"
  },
  "EBT 527E": {
   "code": "EBT 527E",
   "name": "Wind Energy&Conversion Tech.",
+  "nameEn": "Wind Energy&Conversion Tech.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -546,6 +1332,78 @@
    "Hafta 13 · Rüzgar enerjisinin ekonomisi, Rüzgar santrallarının maliyeti",
    "Hafta 14 · YEK, TRA, REPA, Rüzgar türbinlerinin kurulumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Rüzgar türbinlerine genel bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Rüzgarın kaynakları ve karakteristikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yatay eksenli rüzgar türbinlerinin aerodinamiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Rüzgar türbinlerinde emniyet ve güvenilirlik",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Rüzgar türbinlerinin mekanik ve dinamiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Rüzgar türbinlerinin konuşlandırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Sistem dizaynı ve entegrasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Rüzgar türbinlerinde elektriksel konular",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Weibull ve Rayleigh dağılımları, Rüzgar türbinlerinin kontrol sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Rüzgar türbinlerinin dizaynı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Rüzgar türbinlerinin performansı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Rüzgar türbinlerinde titreşim problemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Rüzgar enerjisinin ekonomisi, Rüzgar santrallarının maliyeti",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "YEK, TRA, REPA, Rüzgar türbinlerinin kurulumu",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Bianchi F. D., De Battista H., Mantz, R.J., 2007, Wind Turbine Control Systems - Principles, Modelling and Gain Scheduling Design, Springer-Verlag.",
    "Burton, T., Sharpe, D., Jenkins, N., Bossanyi, E., 2001, Wind Energy Handbook, John Wiley & Sons.",
@@ -553,12 +1411,12 @@
    "Manwell, J.F., Mcgowan, J.G., Rogers, A.L., 2002, Wind Energy Explained - Theory, Design and Application, John Wiley & Sons.",
    "Wagner, S., Bareiss, R., Guidati, G., 1996, Wind Turbine Noise, Springer-Verlag."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=527",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=527"
  },
  "EBT 532E": {
   "code": "EBT 532E",
   "name": "Bioener.Recov.from Organ.Waste",
+  "nameEn": "Bioener.Recov.from Organ.Waste",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -592,6 +1450,76 @@
    "Hafta 13 · Sunumlar I.",
    "Hafta 14 · Sunumlar II."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Organik katı atıkların anaerobik biyokimyasal dönüşümü.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Organik atıkların biyolojik parçalanması ve biyokütle oluşumu.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Anaerobik arıtma sistemleri: Reaktör ve sistem yapılanışı, biyogaz üretimi, enerji geri kazanım potansiyeli.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Anaerobik arıtmanın proses kinetiği ve modellenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Sıvı ve katı organik atıklar için anaerobik reaktör tipleri: Tek, iki kademeli ve kesikli reaktörler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Evsel katı atıkların organik kısmının diğer organik katı atıklarla birlikte anaerobik dönüştürülmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Katı atık düzenli depolama tesislerinin anaerobik biyoreaktör olarak işletimi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Biyoenerji geri kazanım sürecinin hayvan atıkları ve çiftlik atıklarındaki uygulamaları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Biyoenerji geri kazanım sürecinin kuvvetli organik endüstriyel atıksulardaki uygulamaları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Organik atıklardan biyohidrojen üretimi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Organik atıklardan biyoetanol üretimi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Organik katı atıklardan biyoenerji geri kazanımı sürecinin son ürünleri, etkileri ve maliyeti.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Sunumlar I."
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar II."
+   }
+  ],
   "textbooks": [
    "Khanal, S.K., Anaerobic Biotechnology for Bioenergy Production, Principles and Applications, Wiley-Blackwell, 2008.",
    "Polprasent C., Organic Waste Recycling: Technology and Management, IWA Publishing, 2007.",
@@ -599,12 +1527,12 @@
    "Öztürk İ., Anaerobik Biyoteknoloji ve Atık Arıtımındaki Uygulamaları, Su Vakfı Yayını, İstanbul, 2007.",
    "Lens, P., Hamelers, B., Hoitink, H., Bidlingmaier, W., Resource Recovery and Reuse in Organic Solid Waste Management, IWA Publishing, 2004."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=532",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=532"
  },
  "EBT 535": {
   "code": "EBT 535",
   "name": "Endüstride Enerji Yönetimi",
+  "nameEn": "Energy Management in Industry",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -638,6 +1566,78 @@
    "Hafta 13 · Dönem ödevi sunumları",
    "Hafta 14 · Dönem ödevi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dünya ve Türkiye’de genel enerji durumu; enerji verimliliği gereksinimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji verimliliği kavramları ve mevzuat",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji yönetimi yöntem ve esasları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Enerji tüketim analizleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Enerji etütü ve izleme teknikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Elektrik sistemlerinde enerji verimliliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Aydınlatma sistemlerinde enerji verimliliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yakıtlar, kazanlar ve fırınlarda enerji verimliliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Buhar ve basınçlı hava sistemlerinde enerji verimliliği; Isı yalıtımı; Atık ısı kullanımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ölçü aletleri ve ölçme teknikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Ekonomik analiz yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumları",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumları",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "B.L.Capehart, W.C.Turner, Guide to Energy Management, Fairmont Press, 2006",
    "S.Doty, W.C.Turner, Energy Management Handbook,Fairmont Press, 2009",
@@ -646,12 +1646,12 @@
    "T.E.Mull, Practical Guide to Energy Management for Facilities and Plant Managers, Amer Society of Mechanical Engineers, 2001",
    "J.E.Piper, Operations and Maintenance Manual for Energy Management, Sharpe Professional, 1999"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=535",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=535"
  },
  "EBT 537": {
   "code": "EBT 537",
   "name": "Enerji Kalitesi",
+  "nameEn": "Energy Quality",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -686,6 +1686,78 @@
    "Hafta 13 · Enerji kalitesinin ölçümü ve izlenmesi",
    "Hafta 14 · Ödevlerin sunumu ve değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dünyanın ve Türkiye’nin Genel Enerji Durumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sıvı, katı ve gaz yakıtlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sıvı, katı ve gaz yakıtlarda kalite ölçütleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Elektrik enerjisi temel tanımlar ve devre elemanları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bir fazlı ve üç fazlı elektrik sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Elektrik enerji kalitesi ile ilgili terimler ve tanım",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Elektrik enerji kalitesi problemlerinin tipleri, kaynakları, etkileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Elektrik enerji kalitesinin iyileştirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Elektrik enerji kalitesi ile ilgili standartlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Elektrik enerji kalitesinin ekonomisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Sinüsoidal olmayan durumda sistem ve elemanların modellenmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Harmonikli durumda rezonans devreleri, harmoniklerin filtrelenmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji kalitesinin ölçümü ve izlenmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Ödevlerin sunumu ve değerlendirilmesi",
+    "outcomes": "2-3-4-5-6-7"
+   }
+  ],
   "textbooks": [
    "J. Arillaga, N.R. Watson, S. Chen, Power System Quality Assessment, John Wiley & Sons, ISBN 0471988650, 2001.",
    "A. Kusko, Power quality in electrical systems, New York : McGraw-Hill, c2007.",
@@ -693,12 +1765,12 @@
    "M.H.J. Bollen, Understanding Power Quality Problems, IEEE Press Series on Power Engineering, New York, ISBN 0780347137, 2000.",
    "R.C. Dugan, M.F. McGranaghan, Electrical Power Systems Quality, McGraw-Hill, New York2nd edition, c2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=537",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=537"
  },
  "EBT 539": {
   "code": "EBT 539",
   "name": "Enerji, Çevre ve Hukuku",
+  "nameEn": "Energy, Environment and Law",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -731,18 +1803,90 @@
    "Hafta 13 · Çevre hukukunun temel ilkeleri ve bunların Türkiye’deki ve dünyadaki uygulamaları",
    "Hafta 14 · Nükleer hukukun temel ilkeleri ve bunların Türkiye’deki ve dünyadaki uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enerjinin ve enerji kaynaklarının tanıtımı ve sınıflandırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kömür üretimi, hazırlanması ve taşınmasından kaynaklanan çevresel etkiler ve alınabilecek önlemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kömürün yakılmasından kaynaklanan gaz kirleticilerin çevresel etkileri ve bu kirleticiler için uygulanan giderme yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kömürün yakılmasından kaynaklanan katı ve diğer kirleticilerin çevresel etkileri ve bu kirleticiler için uygulanan giderme yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Petrol üretimi, rafinasyonu ve taşınmasından kaynaklanan çevresel etkiler ve alınabilecek önlemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Petrol ve petrol ürünlerinin yakılmasından kaynaklanan kirleticiler ve bu kirleticiler için uygulanan giderme yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Doğal gaz üretimi, hazırlanması ve taşınmasından kaynaklanan çevresel etkiler ve alınabilecek önlemler; doğal gazın yakılmasından kaynaklanan kirleticiler ve bu kirleticiler için uygulanan giderme yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Uranyum madenciliği, sarı pasta üretimi, izotop zenginleştirme, yakıt elemanı fabrikasyonu sırasında oluşan kirleticiler ve bu kirleticiler için uygulanan giderme yöntemleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Nükleer enerji üretiminin çevresel etkileri ve alınabilecek önlemler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kullanılmış nükleer yakıtın geri kazanımından kaynaklanan kirleticiler ve nükleer atık yönetimi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yenilenebilir enerji kaynaklarının (jeotermal, güneş, rüzgar, hidrolik, hidrojen ve biyokütle ) kullanımından kaynaklanan çevresel etkiler ve alınabilecek önlemler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Enerji hukukunun temel ilkeleri ve bunların Türkiye’deki ve dünyadaki uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Çevre hukukunun temel ilkeleri ve bunların Türkiye’deki ve dünyadaki uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Nükleer hukukun temel ilkeleri ve bunların Türkiye’deki ve dünyadaki uygulamaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "R. Loulou, J.P. Waaub, G. Zaccour, Energy and Environment, Springer; 1 edition 2005.",
    "P. Park, Energy Law and the Environment, Gordon & Breach Publishing Group, 2001,",
    "C. Ngô, J. B. Natowitz, Our Energy Future: Resources, Alternatives, and the Environment, Wiley, 2009,",
    "Ç. E. Ergün, Avrupa Birliği Enerji Hukuku, Çakmak Yayınevi, 2007S"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=539",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=539"
  },
  "EBT 543E": {
   "code": "EBT 543E",
   "name": "Energy&Natural Resources Law",
+  "nameEn": "Energy&Natural Resources Law",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -776,17 +1920,88 @@
    "Hafta 13 · Birleşmeler ve Girişim Piyasası",
    "Hafta 14 · Halka arz"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hukukun enerji sözleşmelerini etkileyen dalları, riskin paylaşılması, sözleşme taslağı hazırlama ilkeleri ve müzakere usulleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "FIDIC Sözleşmelerine Genel Bakış",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Türk Ticaret Kanunu çerçevesinde şirketlerin kurulması ve yönetimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sözleşmelerin hazırlanmasında mühendislerin rolü.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Elektrik Piyasası Kanunu ve Elektrik Piyasası Lisans Yönetmeliği",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yenilenebilir Enerji Kanunu , Rüzgar Enerjisine ilşkin hukuki sorunlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yenilenebilir Enerji Kanunu, Güneş Enerjisi Projelerine ilişkin hukuki sorunlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Su kullanım sözleşmeleri ve hidroelektrik projelerine ilişkin hukuki sorunlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Nükleer Enerji Kanunu ve nükleer enerji projelerine ilişkin hukuki sorunlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Maden Kanunu , Kömür Tedarik Sözleşmelerine ilişkin hukuki sorunlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Doğalgaz Piyasası Kanunu ve Doğalgaz Piyasası Lisans Yönetmeliği",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Proje Finansmanı",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Birleşmeler ve Girişim Piyasası",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Halka arz"
+   }
+  ],
   "textbooks": [
    "Adisuryo Sudajana&Associates (2008), The 2008 Guıde to energy and Project Finance, Euremoney Institutional Investoe.",
    "Abraham, W., (20059, FIDIC: An Analysis of International Construction Contracts. Kluver.",
    "Zedalis, R.J., (2001), International Energy Law, Rules Governing Future Exploration, Exploitation and Use of Renewable Sources, Ashgate Publishing."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=543",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=543"
  },
  "EBT 546": {
   "code": "EBT 546",
   "name": "Enerji Bilim&Teknol.Özel Konu.",
+  "nameEn": "Speci.Topics in Energ.Sci&Tec.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -826,6 +2041,77 @@
    "Hafta 13 · Yüzey plazmon ve fonon polaritonları, nano ölçekte ısıl ışınımın potansiyel uygulamaları",
    "Hafta 14 · Dönem projesi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makroskopik formülasyonun kısıtları, ısıl enerji transferinde karakteristik uzunluklar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Klasik termodinamik ve ısı transferine genel bakış",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Seyreltik gazların kinetik tarifi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Boltzmann transport denklemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Mikro/nano-ölçekte akış ve ısı transferi: Knudsen sayısı ve akış rejimleri; hız kayması ve sıcaklık atlaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Katıların ısıl özellikleri ve boyutun etkileri: Özgül ısı, kafes titreşimleri, fonon ve elektron gaz modelleri, özgül ısıya quantum boyut etkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Elektriksel ve ısıl iletkenlik, ve bunların Bolzmann transport denklemi ile türetilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Elektron ve fonon geçişi: metal, yalıtkan ve yarı iletkenlerde baskın enerji taşıyıcılar",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Fonon dağılımı ve saçılması, elektron yayılımı ve tünnellenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Nanomalzemelerin ışınım özellikleri: tek ve çok katmanlı yapılar, ince filmler, fotonik kristaller, periyodik desenler, plazmon, polariton ve elektromanyetik yüzey dalgaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Yakın alan enerji transferi: : fotonlar, foton tünellenmesi, sönümlenen dalgalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yüzey plazmon ve fonon polaritonları, nano ölçekte ısıl ışınımın potansiyel uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projesi sunumları"
+   }
+  ],
   "textbooks": [
    "Carol Dahl, International Energy Markets: Understanding Pricing, Policies and Profits, PennWell, ISBN:978-0-87814-799-1, 2004",
    "Zhuomin M. Zhang, Nano/Microscale Heat Transfer, 2nd Edition, Springer, 2020.",
@@ -837,12 +2123,12 @@
    "Hossein Razavi, Financing Energy Project in Developing Countries, PennWell, ISBN:978-1-59370-124-6, 2007",
    "Denton Wilde Sapt LLP, Public Private Partnerships: BOT Techniques and Project Finance, Second Edition, Euromoney Books, ISBN:978-1-84374-275-3, 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=546",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=546"
  },
  "EBT 546E": {
   "code": "EBT 546E",
   "name": "Enerji Bilim&Teknol.Özel Konu.",
+  "nameEn": "Speci.Topics in Energ.Sci&Tec.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -882,6 +2168,77 @@
    "Hafta 13 · Yüzey plazmon ve fonon polaritonları, nano ölçekte ısıl ışınımın potansiyel uygulamaları",
    "Hafta 14 · Dönem projesi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makroskopik formülasyonun kısıtları, ısıl enerji transferinde karakteristik uzunluklar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Klasik termodinamik ve ısı transferine genel bakış",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Seyreltik gazların kinetik tarifi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Boltzmann transport denklemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Mikro/nano-ölçekte akış ve ısı transferi: Knudsen sayısı ve akış rejimleri; hız kayması ve sıcaklık atlaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Katıların ısıl özellikleri ve boyutun etkileri: Özgül ısı, kafes titreşimleri, fonon ve elektron gaz modelleri, özgül ısıya quantum boyut etkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Elektriksel ve ısıl iletkenlik, ve bunların Bolzmann transport denklemi ile türetilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Elektron ve fonon geçişi: metal, yalıtkan ve yarı iletkenlerde baskın enerji taşıyıcılar",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Fonon dağılımı ve saçılması, elektron yayılımı ve tünnellenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Nanomalzemelerin ışınım özellikleri: tek ve çok katmanlı yapılar, ince filmler, fotonik kristaller, periyodik desenler, plazmon, polariton ve elektromanyetik yüzey dalgaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Yakın alan enerji transferi: : fotonlar, foton tünellenmesi, sönümlenen dalgalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yüzey plazmon ve fonon polaritonları, nano ölçekte ısıl ışınımın potansiyel uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projesi sunumları"
+   }
+  ],
   "textbooks": [
    "Carol Dahl, International Energy Markets: Understanding Pricing, Policies and Profits, PennWell, ISBN:978-0-87814-799-1, 2004",
    "Zhuomin M. Zhang, Nano/Microscale Heat Transfer, 2nd Edition, Springer, 2020.",
@@ -893,12 +2250,12 @@
    "Hossein Razavi, Financing Energy Project in Developing Countries, PennWell, ISBN:978-1-59370-124-6, 2007",
    "Denton Wilde Sapt LLP, Public Private Partnerships: BOT Techniques and Project Finance, Second Edition, Euromoney Books, ISBN:978-1-84374-275-3, 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=546",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=546"
  },
  "EBT 549E": {
   "code": "EBT 549E",
   "name": "Solar Thermal Power Plants",
+  "nameEn": "Solar Thermal Power Plants",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -942,6 +2299,76 @@
    "Hafta 13 · Hibrid güneş ısıl güç santralleri (PV veya fosil yakıtlı hibrit santrallar)",
    "Hafta 14 · Güneş ısıl enerjili desalinasyon sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güneş ışınımının özellikleri, Açık (temiz) hava ışınımı, hava kütlesi, güneş ışınımı ölçümü ve seçici yüzeyler"
+   },
+   {
+    "week": 2,
+    "topic": "Işınım yoğunlaştırıcı sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yoğunlaştırıcı sistemlerin optik analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Güneş ısıl güç santrallarının bileşenleri ve tasarım esasları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Güneş ısıl güç santrallerinin boyutlandırma ve mühendislik esasları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Isı geçiş sıvıları ve özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Isıl enerji depolama, ısıl depolama türleri, ısıl depolama seçenekleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Güneş ısıl güç santrallerinin işletmesinde karşılaşılan sorunlar ve çözümler",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Santralların güç ve verim analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Sistemlerin ömür, fizibilite ve maliyet analizleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Santral boyutlandırma uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Güneşten ısıl yöntemlerle hidrojen üretimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Hibrid güneş ısıl güç santralleri (PV veya fosil yakıtlı hibrit santrallar)",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Güneş ısıl enerjili desalinasyon sistemleri"
+   }
+  ],
   "textbooks": [
    "Vogel, W., Kalb, H., Large-Scale Solar Thermal Power: Technologies, Costs and Development, Wiley-VCH Verlag GmbH, Weinheim, 2010.",
    "Vogel, W., Kalb, H., Large-Scale Solar Thermal Power: Technologies, Costs and Development, Wiley-VCH Verlag GmbH, Weinheim, 2010.",
@@ -954,12 +2381,12 @@
    "Duffie J.F. ve Beckman W.A., Solar Engineering of Thermal Processes, John Wiley&Sons, New Jersey, 1991.",
    "Duffie J.F. ve Beckman W.A., Solar Engineering of Thermal Processes, John Wiley&Sons, New Jersey, 1991."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=549",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=549"
  },
  "EBT 551E": {
   "code": "EBT 551E",
   "name": "Zero Energy Buildings",
+  "nameEn": "Zero Energy Buildings",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -995,6 +2422,77 @@
    "Hafta 13 · Güneş enerjisi ısı sistemlerinin binalara entegrasyon uygulaması - Proje grup çalışmaları",
    "Hafta 14 · Binaların enerji tasarruf potansiyellerinin analizi - Final poster ve sunum hazırlığı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dünya’dan ve Türkiye’den örneklerle enerji etkin bina kavramı (Grupların oluşturulması)",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji etkin bina tasarlama kriterleri (Gruplararası iş planı)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji etkin ısıtma, soğutma ve havalandırma sistemleri (Grupların proje üzerinde araştırma konularının belirlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Enerji etkin aydınlatma sistemleri (Grup çalışmaları)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Binalara entegre olabilecek yenilenebilir enerji teknolojileri (Grup çalışmaları)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yenilenebilir enerji teknolojilerinin binalara entegrasyon teknikleri (Grup çalışmaları)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yıl içi değerlendirme - Grup sunumları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Binalarda enerji etkin inşaat yapım yöntemleri (Grup çalışmaları)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Maliyet analiz yöntemleri (Grup çalışmaları)",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Türkiye’de binalar için uygulanan mevzuat (Grup çalışmaları)",
+    "outcomes": "1-2-3-4-5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Fotovoltaik sistemlerin binalara entegrasyonu örnek çalışması",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Rüzgar enerjisi sistemlerinin binalara entegrasyonu örnek çalışması",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Güneş enerjisi ısı sistemlerinin binalara entegrasyon uygulaması - Proje grup çalışmaları",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Binaların enerji tasarruf potansiyellerinin analizi - Final poster ve sunum hazırlığı"
+   }
+  ],
   "textbooks": [
    "Sayigh, A.M.M., Sala, M., Galio, C., Architecture-Comfort and Energy, Elsevier, 1994",
    "B. Stein and J.S. Reynolds, Mechanical and Electrical Equipment, (9th Edition), Wiley, John&Sons, New York, 1999.",
@@ -1002,12 +2500,12 @@
    "P. Tymkow, S. Tassou, M. Kolokotroni, H. Jouhara, Building Services Design for Energy Efficient Buildings, Routledge, 2013",
    "D. Matthews, Innovations in Energy: Efficient Technologies for Buildings (Energy Science, Engineering and Technology), Nova Science Pub Inc., 2012"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=551",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=551"
  },
  "EBT 552": {
   "code": "EBT 552",
   "name": "Enerji Malzemeler",
+  "nameEn": "Energy Materials",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -1021,12 +2519,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=552",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=552"
  },
  "EBT 553": {
   "code": "EBT 553",
   "name": "Güneş Enerjisi&Dönüşüm Tekno.",
+  "nameEn": "Solar Energy and Conversion Technologies",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1058,18 +2556,90 @@
    "Hafta 13 · Düzlemsel ve parabolik toplayıcılar, vakum tüpü ve seçici yüzeylerin üretim teknolojileri",
    "Hafta 14 · Yansıtıcı yüzey, ışınım yutucu yüzey ve ısıl enerji depolama malzemeleri ve üretim teknolojileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güneş ışınımının özellikleri, foton ve spektrum kavramı, siyah cisim radyasyonu ve özellikleri, güneş ışınımı üzerine atmosferik etkiler, bir güneş hücresinin genel karakteristikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fotovoltaik hücre teknolojilerine genel bakış: Kristal ve ince film teknolojiler, verimler, üretim maliyetleri vb.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yarı iletkenler, yarı iletkenlerde iletim, enerji seviyeleri ve band genişliği, katkılama, n ve p tipi yarı iletkenler, pn eklemi ve temel karakteristikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Elektron-deşik çifti oluşum mekanizmaları, yeniden birleşme, difüzyon uzunluğu, ışığın yarı iletkenlerde yutulması, yutulma derinliği",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Diyot denklemi ve fotovoltaik hücrelere uygulaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Tek kristal ingot üretimi, kesme teknikleri, katkılama, elektrot oluşturma, yüzey kaplama yöntemleri, üretim hattı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çoklu kristal üretimi, kesme teknikleri, katkılama, elektrot oluşturma, yüzey kaplama yöntemleri, üretim hattı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "İnce film üretimi, elektrot oluşturma, yüzey kaplama yöntemleri, üretim hattı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Boyayla duyarlıklandırılmış ve organik hücre malzemeleri ve üretimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çok eklemli hücre malzemeleri ve üretim teknolojileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Hücre karakterizasyonu, kalibrasyonu, test ve üretim izleme teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Isıl güneş enerjisi sistemlerinde kullanılan malzemeler ve özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Düzlemsel ve parabolik toplayıcılar, vakum tüpü ve seçici yüzeylerin üretim teknolojileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Yansıtıcı yüzey, ışınım yutucu yüzey ve ısıl enerji depolama malzemeleri ve üretim teknolojileri",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Augustin McEvoy, L. Castaner ve Tom Markvart, Solar Cells: Materials, Manufacture and Operation, Second Edition, Oxford, Elsevier, 2013.",
    "Peter Würfel, Physics of solar cells: From Basic Principles to Advanced Concepts, Weinheim, Wiley-VCH Verlag, 2009.",
    "Arthur Willoughby ve Gavin J. Conibeer, Solar Cell Materials: Developing Technologies, West Sussex, John Wiley & Sons, 2014",
    "John A. Duffie and William A. Beckman, Solar Engineering of Thermal Processes, Hoboken NJ, John Wiley & Sons, 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=553",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=553"
  },
  "EBT 554E": {
   "code": "EBT 554E",
   "name": "Energy Market Management",
+  "nameEn": "Energy Market Management",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -1103,6 +2673,78 @@
    "Hafta 13 · Enerji Piyasalarında AR&GE ve İnovasyon Yönetimi",
    "Hafta 14 · Enerji Piyasalarında Risk Yönetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enerji Piyasaları Ekonomisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji Piyasalarında Fiyat Oluşumu",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji Piyasalarında Uluslararası Etkileşimler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Uluslararası Enerji Piyasalarında İkili Anlaşmalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Çoklu enerji kaynaklarına yatırım ve Portföy Yönetimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Doğalgaz ve Petrol Piyasası",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Kömür Piyasası: Termik Enerji Özeli",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yenilenebilir Enerji Piyasası: Hidro Elektrik Özeli",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Yenilenebilir Enerji Piyasası: Güneş Enerjisi Özeli",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yenilenebilir Enerji Piyasası: Rüzgar Enerjisi Özeli",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Kendinden Yeterli Enerji Üretimi Optimizasyonu",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Akıllı Şebekeler Yönetimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji Piyasalarında AR&GE ve İnovasyon Yönetimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Enerji Piyasalarında Risk Yönetimi",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "“Energy Economics: Concepts, Issues, Markets and Governance” by Subhes C. Bhatta-Charyya, Springer-Verlag London Limited, 2011",
    "Complementarity Modeling in Energy Markets” by Steven A. Gabriel, Antonio J. Conejo J. David Fuller, Benjamin F. Hobbs Carlos Ruiz, Springer, 2013",
@@ -1111,12 +2753,12 @@
    "“Advanced Renewable Energy Systems” by S.C. Bathia, Elsevier, 2014",
    "“Energy-Based Economic Development: How Clean Energy can Drive Development and Stimulate Economic Growth”, by Sanya Carley and Sara Lawrence, Springer, 2014"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=554",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=554"
  },
  "EBT 555E": {
   "code": "EBT 555E",
   "name": "Enerjide Uygulamalı İstatistik ve Veri Analizi",
+  "nameEn": "Appli.Stati.&Data Anal.in Ene.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1164,6 +2806,77 @@
    "Hafta 13 · R ile bina (ticari, konut vb.) enerji sistemlerinin tüketim analizi",
    "Hafta 14 · R ile sanayi alt sektörlerinde enerji sistemlerinin tüketim analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel istatistiki kavramlar, değişkenler ve enerji verilerinin yapıları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Merkezi eğilim ve yayılım ölçüleri, ortalama, frekans, ortanca, standart sapma, varyans",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji verileri kullanılarak korelasyon, hipotez testi ve t-testi uygulanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Varyans analizi (ANOVA) ve R uygulaması",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "Enerji verilerinin R programına aktarılması, temizlenmesi ve istatistik analizi",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Enerji verilerinin R programı ile görselleştirilmesi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "İleri veri görselleştirme tekniklerinin enerji verilerine uygulanması, çoklu grafik çizme, çekirdek yoğunluk tahmini, toplam dağılım grafiği, farklı R paketleri ile interaktif görselleştirme uygulamaları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Tek değişkenli ve çok değişkenli doğrusal regresyon ile tahmin",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Türkiye elektrik enerjisi üretim/tüketim verilerine R ile regresyon analizi uygulanması",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Lojistik regresyon ile sınıflandırma",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Enerji piyasası verilerine R ile lojistik regresyon uygulanması",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Elektrik enerjisi üretim (rüzgar, güneş, hidrolik vb.) verilerine R ile istatistiksel analiz uygulanması",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "R ile bina (ticari, konut vb.) enerji sistemlerinin tüketim analizi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "R ile sanayi alt sektörlerinde enerji sistemlerinin tüketim analizi"
+   }
+  ],
   "textbooks": [
    "R ile İstatistiksel Programlama – Dr. İlker Arslan, Pusula Yayınları, 3. Baskı, 2020",
    "R ile İstatistiksel Programlama – Dr. İlker Arslan, Pusula Yayınları, 3. Baskı, 2020",
@@ -1186,12 +2899,12 @@
    "Practical Statistics for Data Scientists, Peter Bruce, Andrew Bruce, and Peter Gedeck, 2nd Edition, O’Reilly, 2020.",
    "Ggplot2 Essentials, Donato Teutonico, Packt Publishing, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=555",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=555"
  },
  "EBT 557E": {
   "code": "EBT 557E",
   "name": "Energy Systems for Buildings",
+  "nameEn": "Energy Systems for Buildings",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1224,18 +2937,89 @@
    "Hafta 13 · Bina sistemleri işletim ve bakım stratejileri",
    "Hafta 14 · Bina sistemleri entegrasyonu ve işletim senaryoları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bina konfor koşulları, hesabı ve ölçümü",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Bina güvenlik koşulları, hesabı ve ölçümü",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Bina Isıtma, Soğutma, Havalandırma, İklimlendirme (ISHİ) sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Enerji verimli ISHİS sistemleri teknoloji ve yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bina elektrik sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Enerji verimli elektrik sistemleri teknoloji ve yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Bina aydınlatma sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Enerji verimli aydınlatma sistemleri teknoloji ve yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yangın-ihbar sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Güvenlik, giriş-çıkış kontrol sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Bina otomasyon sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Bina sistemlerinin enerji etüdü ve enerji yönetim sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Bina sistemleri işletim ve bakım stratejileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Bina sistemleri entegrasyonu ve işletim senaryoları"
+   }
+  ],
   "textbooks": [
    "W.T. Grondzik, G. Alison, S.J. Reynolds, B. Stein, Mechanical and Electrical Equipment for Buildings, 11. ed., Hoboken, NJ: Wiley, 2010",
    "L. Jayamaha, Energy-efficient Building Systems: Green Strategies for Operation and Maintenance, New York: Mc Graw-Hill, 2007",
    "ASHRAE Greenguide: The Design, Construction, and Operation of Sustainable Buildings, 2nd ed., Atlanta GA: American Society of Heating, Refrigerating and Air-condioning Engineers, 2006",
    "D.V. Chadderton, Building Services Engineering, London: E&FN Spon, 2004"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=557",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=557"
  },
  "EBT 561E": {
   "code": "EBT 561E",
   "name": "Hydrogen Energy Technologies and Analysis",
+  "nameEn": "Hydrogen Ener.Techn.&Analysis",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1249,12 +3033,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=561",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=561"
  },
  "EBT 567": {
   "code": "EBT 567",
   "name": "Elektromanyetik Enerji Hasatlama",
+  "nameEn": "Electromagnetic Energy Harvesting",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -1268,12 +3052,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=567",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=567"
  },
  "EBT 596": {
   "code": "EBT 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1317,6 +3101,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -1329,12 +3184,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=596"
  },
  "EBT 601E": {
   "code": "EBT 601E",
   "name": "Multi-Phase Flows",
+  "nameEn": "Multi-Phase Flows",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1372,6 +3227,78 @@
    "Hafta 13 · İleri iki-fazlı akış modellemeleri: Gözenekli ortam formülasyonu, Altkanal analizi",
    "Hafta 14 · İki-fazlı akış için deneysel çalışmalar ve tarama tabloları, Yoğuşma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çok-fazlı akış problemlerinin takdimi, temel kavramlar, tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Akışkanlar mekaniğinin temel prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Habbecikli kaynama dinamiği, Havuz tipi kaynama, Zorlanmış taşınımlı akışta kaynama",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkandan-akışkana modelleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İki-fazlı akışların bir-boyutlu hacimsel analizi, İki-fazlı akış kalıpları",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Temel iki-fazlı akış modelleri: Homojen akış, ayrılmış akış, sürüklenmeli akış modelleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "İki-fazlı akış korunum denklemlerinin ayrıntılı türetimi",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Aşırı soğutulmuş akışkanlarda kaynamayla ısı transferi",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Aşırı soğutulmuş akışkanların kaynamasında boşluk oranı ve basınç düşümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Doymuş sıvı-buhar karışımında kaynamayla ısı transferi",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Zorlanmış taşınımlı akışta kritik ısı akısı",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Kinematik dalgalar ve kanal kararsızlığı",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "İleri iki-fazlı akış modellemeleri: Gözenekli ortam formülasyonu, Altkanal analizi",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "İki-fazlı akış için deneysel çalışmalar ve tarama tabloları, Yoğuşma",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "R.T. Lahey, F.J. Moody, The Thermal Hydraulics of a Boiling Water Reactor, 2nd Edition, ANS, 1993,",
    "J.G. Collier, J.R. Thome, Convective Boiling and Condensation, 3rd Ed., Oxford University Press, US, 1994,",
@@ -1380,12 +3307,12 @@
    "G. Hetsroni, Handbook of Multiphase Systems, Hemisphere Publishing Corp., USA, 1982.",
    "N.E., Todreas, M.S., Kazimi, Nuclear Systems II, Hemisphere Publishing Corp., USA, 1990."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=601"
  },
  "EBT 605E": {
   "code": "EBT 605E",
   "name": "Nucle.Fuel Cycle:Analy.&Manag.",
+  "nameEn": "Nucle.Fuel Cycle:Analy.&Manag.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1419,6 +3346,78 @@
    "Hafta 13 · Nükleer atıkların idaresi",
    "Hafta 14 · Nükleer yakıtların depolanması ve ilgili mevzuat"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer yakıtların tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleer Yakıt çevrimlerinin tanıtımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Uranyum çıkarılması ve işlemlerinin tanıtılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nükleer yakıt fabrikasyon işlemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Nükleer yakıt zenginleştirme teknikleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Nükleer yakıt zenginleştirme işleminin ekonomisi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Nükleer yakıt çevrimlerinin ekonomisi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Nükleer yakıt idaresi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Nükleer yakıt idaresi ekonomisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Nükleer yakıt yeniden işleme işlemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Nükleer yakıt taşıma işlemleri ve ilgili mevzuatı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Nükleer atıklar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleer atıkların idaresi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Nükleer yakıtların depolanması ve ilgili mevzuat",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Cochran R. G. and Tsoulfanidis N., The Nuclear Fuel Cycle: Analysis and Management, American Nuclear Society, LaGrange Park, IL, 2nd Ed.2000.",
    "Nikitin,M.B. , A., Mark HoltManaging the Nuclear Fuel Cycle: Policy Implications of Expanding Global Access to Nuclear Power, BiblioGov, Washington, D.C., 2010.",
@@ -1426,12 +3425,12 @@
    "Uranium Production and Raw Materials for the Nuclear Fuel Cycle- Supply and Demand,economics, the Environment and Energy Security, IAEA, Vienna, 2006.",
    "Internationalization of the Nuclear Fuel Cycle: Goals, Strategies, and Challenges, HYPERLINK \"http://www.amazon.com/s/ref=ntt_athr_dp_sr_1?_encoding=UTF8&sort=relevancerank&search-alias=books&field-author=U.S.%20Committee%20on%20the%20Internationalization%20of%20the%20Civilian%20Nuclear%20Fuel%20Cycle\" U.S. Committee on the Internationalization of the Civilian Nuclear Fuel Cycle, Committee on International Security and Arms Control, Policy and Global Affairs, National Academy of Sciences, National Research Council, Washington, 2009"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=605",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=605"
  },
  "EBT 607E": {
   "code": "EBT 607E",
   "name": "Plasma Physics&Fusion Applica.",
+  "nameEn": "Plasma Physics&Fusion Applica.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1463,6 +3462,78 @@
    "Hafta 13 · Plazma-yüzey etkileşmeleri",
    "Hafta 14 · Füzyon reaksiyonları ve yakıt çevrimleri; termonükleer koşullar, Lawson ve ateşleme kriterleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "MHD denge: Basit eksenel-simetrik geometriler, Virial teorem",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Rotasyonel transformasyon ve toroidal denge; Grad-Shafranov denklemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "MHD kararlılığı: Enerji ilkesi. Interchange ve kink instabiliteleri, Suydam kriteri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kruskal limiti, makaslama ve min-B kararlılaştırması. Sonlu Larmor yarıçapı kararlılaştırması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Mikrokararsızlıklar: sürüklenme, balonlaşma, yırtılma ve kıstırılma modları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Toroidal sınırlama Tokamaklar: muz yörüngeleri, q ve Q, adalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Testere dişi, Mirnov titreşimleri, kesilmeler, safsızlık difüzyonu, elektron kaçışı.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Alcator ve Murakami ölçekleri, kesitlerin uzaması, akı korunumu, profil uyumu.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Neo-klasik ve Pfirsch-Schlüter difüzyonu.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Konvektif ve poloidal Bohm difüzyonu.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Plazmanın ısıtılması: Ohmik ısıtma, nötral ışınla ısıtma, rf ısıtma ve akım sürümü, manyetik pompalama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Alternatif manyetik sınırlama sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Plazma-yüzey etkileşmeleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Füzyon reaksiyonları ve yakıt çevrimleri; termonükleer koşullar, Lawson ve ateşleme kriterleri",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "[1] Stacey, W. M. (2012). Fusion Plasma Physics, ISBN-13: 978-3-527-40586-2 - Wiley-VCH Berlin. 1. Edition.",
    "[2] Miyamoto, K. (2016). Plasma Physics for Controlled Fusion, 2. Edition, Springer-Verlag GmbH Berlin Heidelberg",
@@ -1470,12 +3541,12 @@
    "Wesson, J., (2004). Tokamaks, Clarendon Press; 3 edition.",
    "[5] Gross R.A. (1984). Fusion Energy, John Wiley & Sons."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=607",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=607"
  },
  "EBT 615": {
   "code": "EBT 615",
   "name": "Güneş Hücreleri Fiziği",
+  "nameEn": "Physics of Solar Cells",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1507,6 +3578,78 @@
    "Hafta 13 · Çarpışma iyonizasyonu, sıcak elektron ve boşlukla enerji dönüşümü",
    "Hafta 14 · Üç seviyeli sistemlerde iki aşamalı uyarım, safsızlık fotoelektik etki, güneş hücrelerinde araştırmanın geleceği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güneş hücreleri, fotoelektrik etki ve fotovoltaik enerji dönüşüm ilkeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Foton, kara cisim radyasyonu, foton yoğunluğu, foton enerji dağılımı, güneş spektrumu, yutulma ve yayınım, spektrum üzerinde atmosferik etkiler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji akısı, Stefan-Boltzmann ışınım yasası, kara cisim dışındaki malzemeler için Kirchoff kanunu, güneş ışınımının yoğunlaştırılması, Abbe sine koşulu, geometrik optic",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yarı iletkenlerde elektron davranışı, dağılım fonksiyonu, hal yoğunluğu, boşluklar, katkılama, Fermi enerjisi, enerji bantları, iş fonksiyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Işınımın yarı iletkenlerle etkileşmeleri, fotonların yarı iletken yapılarda yutulması, elektron ve boşlukların üretimi, direk ve endirek geçişler, ışınımsal ve ışınımsal olmayan yeniden birleşmeler, elektron-boşluk çiftinin ömrü",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Elektron-boşluk transportu, alan akımı, difüzyon akımı, difüzyon uzunluğu, relaksasyon,",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Azınlık taşıyıcıların difüzyon uzunluğu, dielektrik relaksasyon, ambipolar difüzyon, Dember etkisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Bir güneş hücresinde temel mekanizmalar, pn-eklemi, karanlıktaki bir pn-ekleminde elektronların elektrokimyasal dengesi, pn-eklemi boyunca potansiyel dağılım ve pn-ekleminin akım-gerilim karakteristikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Satürasyon ve kısa devre akımlarının türetilmesi, yarıiletken-metal kontakları, Schottky kontağı, MIS kontağı, güneş hücrelerinde elektrik alanın rolü,",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Güneş hücrelerinde enerji dönüşümünün sınırları, maksimum verim, enerji boşluğunun fonksiyonu olarak verim, optimal silicon güneş hücreleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "İnce film güneş hücreleri, eşdeğer devreler, açık devre geriliminin sıcaklık bağımlılığı, verimin ışınım yoğunluğuna bağımlılığı, güneş hücrelerinde enerji dönüşüm süreçlerinin verimleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Güneş hücrelerinde verim artırım kavramları, ardışık (tandem) hücreler, ardışık hücrelerin elektriksel bağlantıları, yoğunlaştırıcı hücreler, termal-fotovoltaik enerji dönüşümü",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Çarpışma iyonizasyonu, sıcak elektron ve boşlukla enerji dönüşümü",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Üç seviyeli sistemlerde iki aşamalı uyarım, safsızlık fotoelektik etki, güneş hücrelerinde araştırmanın geleceği",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Würfer, P., Physics of Solar Cells: From Principles to New Concepts, Wiley-VCH, Darmstadt, 2005.",
    "Nelson, J., The Physics of solar cells, Imperial College Press, London, 2003.",
@@ -1514,12 +3657,12 @@
    "Singh, Jasprit, Semiconductor devices, John Wiley & Sons Inc., New York, 2001.",
    "Goetzberger, A., Hoffmann, V.U., Photovoltaic Solar Energy Generation, Springer, Berlin, 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=615",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=615"
  },
  "EBT 616E": {
   "code": "EBT 616E",
   "name": "Energy Storage Technolog.",
+  "nameEn": "Energy Storage Technolog.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1551,6 +3694,78 @@
    "Hafta 13 · Enerji depolama uygulamalarının mühendislik hesaplamaları",
    "Hafta 14 · Enerji depolama teknolojilerindeki son araştırma-geliştirme çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Enerji depolama yöntemlerinin ve teknolojilerinin genel durumu ve karakteristikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tersinir ve tersinmez depolama yöntemleri, sınırlamalar, depolama verimleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gelişmiş akü sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkan aküler ve metal-hava aküleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sıvı pompalama esaslı enerji depolama",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sıkıştırılmış hava esaslı enerji depolama",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Volan teknolojileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Süper kapasitörler",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Süper iletken manyetik enerji depolama",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Isıl enerji depolama (hissedilir ısı)",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Isıl enerji depolama (gizli ısı, organik ve inorganik faz değiştiren malzemeler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Enerji depolama teknolojisi olarak hidrojen",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Enerji depolama uygulamalarının mühendislik hesaplamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Enerji depolama teknolojilerindeki son araştırma-geliştirme çalışmaları",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Zito, R., Energy Storage: A New Approach, Scrivener Wiley, New Jersey, 2010.",
    "Huggins, R.A., Energy Storage, Springer, New York, 2010.",
@@ -1558,12 +3773,12 @@
    "Jenkins, N., Strbac, G., Price, A.C.R., Collinson, A., Tarrant, C.D., Campell, A.M., Hart, D., Renewable Energy Storage, Professional Engineering Publishing, London, 2000.",
    "Dincer, İ., Rosen, A.M., Thermal Energy Storage, John Wiley & Sons, New York, 2002."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=616",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=616"
  },
  "EBT 617": {
   "code": "EBT 617",
   "name": "Enerji Bilim&Tek.İleri Konular",
+  "nameEn": "Advanced Top. in Ene.Sci.&Tec.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1595,17 +3810,89 @@
    "Hafta 13 · Pseudo-potansiyeller ve pseudo dalga fonksiyonları ve değiş-tokoş korelasyon modelleri",
    "Hafta 14 · Değişik malzemelerde bilgisayarda yoğunluk fonksiyoneli uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çok parçacıklı etkileşen sistemlerin Kuvantum Mekaniksel olarak ele alınması, kristal yapı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yoğun madde fiziğinde homojen etkileşen elektron gazı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çekirdek-elektron Coulomb etkileşimi ve çok parçacıklı Schrodinger denklemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Korelasyon deşiği, s-p bağlantılı metallerde bağlı durumlar ve uyarılmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Born-Oppenheimer (adyabatik) yaklaşıklığı ve Slater dalga fonksiyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Orbitallerin ve operatörlerin bilgisayarda sayısal olarak gösterilmesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Hartree ve Hartree-Fock yaklaşımları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Lokal yoğunluk yaklaşımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yoğunluk Fonksiyoneli Kuramına giriş ve Hohenberg-Kohn teoremi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kohn-Sham Kuramı ve değiş-tokuş korelasyonlarına giriş",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yoğunluk Fonksiyoneli kuramında spin ve manyetizma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yoğunluk Fonksiyoneli Kuramında kullanılan ortogonal taban setleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Pseudo-potansiyeller ve pseudo dalga fonksiyonları ve değiş-tokoş korelasyon modelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Değişik malzemelerde bilgisayarda yoğunluk fonksiyoneli uygulamaları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Electronic Structure: Basic Theory and Practical Methods, Richard Martin",
    "Computational Physics, J.M. Thjissen",
    "The density functional formalism, its applications and prospects, R.O. Jones and O. Gunnarsson, Reviews of Modern Physics 61, 689 (1989)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=617",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=617"
  },
  "EBT 625": {
   "code": "EBT 625",
   "name": "Nükleer Atık Yönetimi",
+  "nameEn": "Nuclear Waste Management",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -1640,6 +3927,78 @@
    "Hafta 13 · Biyoremidasyon tekniğinin tanımlaması, kapsamı ve nükleer teknolojideki uygulamaları,",
    "Hafta 14 · Nükleer atıkların ekolojik ve radyolojik risklerinin değerlendirilmesi ve tartışılması,"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer teknolojiye genel bir bakış, dünyadaki kullanım alanları,",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleer atık yönetimi ve atık yönetiminde ülkelerin izlediği politika ve stratejiler,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Nükleer atıkların önemi, kaynakları ve sınıflandırılması,",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Radyoaktif atık yönetiminde temel basamaklar",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Atık gideriminde uygulanan ön işlemler (yakma, evaporasyon)",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Atıkların immobilizasyonunda kullanılan teknikler (çimentolaştırma, polimerizasyon ve camlaştırma),",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Nükleer atıkların saklanması, yer seçimi, önemi ve dikkat edilmesi gereken hususlar.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Nükleer atıkların elden çıkartılması, elden çıkartmada ülkelerin izlediği politikalar ve ayırma teknikleri, aktinit ve lantanit ayırmada kullanılan teknikler,",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Atık idaresinde yeni ekstraksiyon teknikleri ve bunların uygulamaları,",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Adsorpsiyon tekniğinin tanımı, kapsamı ve nükleer teknolojideki uygulamaları,",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İyon değiştirme teknolojisinin tanımı, kapsamı ve nükleer teknolojideki uygulamaları,",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Membran teknolojisi ve nükleer teknolojideki uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Biyoremidasyon tekniğinin tanımlaması, kapsamı ve nükleer teknolojideki uygulamaları,",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Nükleer atıkların ekolojik ve radyolojik risklerinin değerlendirilmesi ve tartışılması,",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Saling J.H., Fentiman A.W., Radioactive Waste Management, Second Edition, Taylor&Francis, NewYork, London, 2002.",
    "Cecille L., New Separation Chemistry Techniques for Radioactive Waste and other Specific Applications, Elsevier Applied Science, London and New York, 1991.",
@@ -1647,12 +4006,12 @@
    "IAEA Nuclear Energy Series, Policies and Strategies for Radioactive Waste Management, No: NW-G-1.1, International Atomic Energy Agency, Vienna, 2009.",
    "IAEA Safety Standards Series, Predisposal Management of Radioactive Waste, No: G SR Part5, International Atomic Energy Agency, Vienna, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=625",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=625"
  },
  "EBT 627": {
   "code": "EBT 627",
   "name": "Radyoaktif İzleme Teknikleri",
+  "nameEn": "Radiotracer Techniques",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -1685,6 +4044,78 @@
    "Hafta 13 · Nükleer atıkların idaresi",
    "Hafta 14 · Nükleer yakıtların depolanması ve ilgili mevzuat"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nükleer yakıtların tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nükleer Yakıt çevrimlerinin tanıtımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Uranyum çıkarılması ve işlemlerinin tanıtılması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nükleer yakıt fabrikasyon işlemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Nükleer yakıt zenginleştirme teknikleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Nükleer yakıt zenginleştirme işleminin ekonomisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Nükleer yakıt çevrimlerinin ekonomisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Nükleer yakıt idaresi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Nükleer yakıt idaresi ekonomisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Nükleer yakıt yeniden işleme işlemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Nükleer yakıt taşıma işlemleri ve ilgili mevzuatı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Nükleer atıklar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Nükleer atıkların idaresi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Nükleer yakıtların depolanması ve ilgili mevzuat",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Tevernier, S., Experimental Techniques in Nuclear and Particle Physics, Springer, Berlin Heidelberg, 2010.",
    "Mach, R., New Radiotracers, Saunders, 2009.",
@@ -1692,12 +4123,12 @@
    "IAEA, Radiotracer Applications in Industry - A Guidebook, Vienna, 2004.",
    "Handbook of Radioactivity Analysis, Academic Press, San Diego, 2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=627",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=627"
  },
  "EBT 696": {
   "code": "EBT 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1733,6 +4164,78 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7",
+    "outcomes": "6-7-8"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
@@ -1740,7 +4243,6 @@
    "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EBT&dersNo=696"
  }
 }

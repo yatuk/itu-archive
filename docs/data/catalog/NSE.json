@@ -1,0 +1,1066 @@
+{
+ "NSE 505E": {
+  "code": "NSE 505E",
+  "name": "Properties of Nanomaterials",
+  "nameEn": "Properties of Nanomaterials",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Nanoyapıların ve nanomalzemelerin tanımı, Nanomalzemelerin özellikleri ve hazırlanması, Nano malzemelerin kimyasal özellikleri, Nanoyapıların optik özellikleri, Nanomalzemelerin fiziksel özellikleri (mekanik, ısıl ve elektriksel taşınım, akışkanlık, manyetik özellikleri gibi), Nanomalzemelerin biyolojik özellikleri ve tıp bilimi (bağışıklık özellikleri ve toksikolojisi gibi), Nanoyapılı yüzeyler üzerinde malzeme organizasyonu, Nanoölçekte filmlerin özellikleri, Nano malzemelerin uygulama alanları ve -performansları. Introduction to nanostructures and nanomaterials, Preparation and properties of nanomaterials, Chemical properties of nanomaterials, Optical properties of nanostructures, Physical properties of nanomaterials (nanomechanics, nanoscale thermal and electrical transport and nanofluidics, magnetic properties so on), Biological properties of nanomaterials (immunological properties and cytotoxicity of nanomaterials, so on) and medical science, Organisation of matter on surfaces at the nanostructure, Properties of nanoscale films, Property-Performance Relationship for Nanostructured materials and applications.",
+  "outcomes": [
+   "Nanoteknolojinin farklı alanlarında kullanılan nanomalzemelerin özelliklerinin anlaşılması",
+   "Nanomalzemelerin farklı disiplinler açısından önemli özelliklerinin öğrenilmesi",
+   "Nanomalzemelerle ilgili disiplinler arası araştırma çalışmaları hakkında farkındalık kazanılması, ilgili literatürün takibi için gerekli terminolojinin öğrenilmesi",
+   "Nanomalzemelerin uygulamaları hakkında bilgi edinilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Nanomalzemelere giriş",
+   "Hafta 2 · Nanomalzeme üretiminde kullanılan malzemeler: metal ve karbon nanomalzemeler, nanokompozitler, seramik nanoyapılar",
+   "Hafta 3 · Nanoölçekteki malzemelerin özellikleri ve hazırlanması: nanopartiküller, nanoteller, nanotüpler, nanoyapılar",
+   "Hafta 4 · Nanoölçekteki malzemelerin kimyası: Atomik yapılar vb.",
+   "Hafta 5 · Nanopartiküllerin optik özellikleri",
+   "Hafta 6 · Nanomekanik",
+   "Hafta 7 · Nanoölçekte ısıl taşınım ve nanoakışkanlar",
+   "Hafta 8 · Nanoölçekte elektriksel taşınım",
+   "Hafta 9 · Nanomalzemelerin manyetik özellikleri",
+   "Hafta 10 · Nanoölçekte biyoloji ve tıp bilimi",
+   "Hafta 11 · Nanomalzemelerin bağışıklık özellikleri ve toksikolojisi",
+   "Hafta 12 · Nanoölçekteki yüzeyler üzerinde malzeme organizasyonu",
+   "Hafta 13 · Nanoölçekte filmler",
+   "Hafta 14 · Nanoyapıdaki malzeme ve uygulamalar için özellik-performans ilişkisi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nanomalzemelere giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Nanomalzeme üretiminde kullanılan malzemeler: metal ve karbon nanomalzemeler, nanokompozitler, seramik nanoyapılar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Nanoölçekteki malzemelerin özellikleri ve hazırlanması: nanopartiküller, nanoteller, nanotüpler, nanoyapılar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Nanoölçekteki malzemelerin kimyası: Atomik yapılar vb.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Nanopartiküllerin optik özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Nanomekanik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Nanoölçekte ısıl taşınım ve nanoakışkanlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Nanoölçekte elektriksel taşınım",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Nanomalzemelerin manyetik özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Nanoölçekte biyoloji ve tıp bilimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Nanomalzemelerin bağışıklık özellikleri ve toksikolojisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Nanoölçekteki yüzeyler üzerinde malzeme organizasyonu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Nanoölçekte filmler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Nanoyapıdaki malzeme ve uygulamalar için özellik-performans ilişkisi"
+   }
+  ],
+  "textbooks": [
+   "VOLLATH, D., NANOMATERIALS: AN INTRODUCTION TO SYNTHESIS, PROPERTIES AND APPLICATIONS, ISBN: 978-3-527- 31531-4, 2008.",
+   "RAO, C.N.R., MÜLLER, A., CHEETHAM, A.K., NANOMATERIALS CHEMISTRY: RECENT DEVELOPMENTS AND NEW DIRECTION, ISBN: 978-3-527-31664-9, 2007.",
+   "KOCH, C.C., NANOSTRUCTURED MATERIALS: PROCESSING, PROPERTIES AND APPLICATIONS, 2ND EDITION, ISBN: 978- 0815514510, 2006.",
+   "CAO, G., NANOSTRUCTURES AND NANOMATERIALS: SYNTHESIS, PROPERTIES & APPLICATIONS, ISBN: 978-1860944802, 2004.",
+   "SHAW, L.L., SURYANARAYANA, C., MISHRA, R.S., PROCESSING AND PROPERTIES OF STRUCTURAL NANOMATERIALS, ISBN: 978- 0873395588, 2003.",
+   "EDELSTEIN, A.S., CAMMARATRA, R.C., NANOMATERIALS: SYNTHESIS, PROPERTIES AND APPLICATIONS, 2ND EDITION, ISBN:978-0750305785, 1998."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=505"
+ },
+ "NSE 517E": {
+  "code": "NSE 517E",
+  "name": "Environmental Nanotechnology",
+  "nameEn": "Environmental Nanotechnology",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Çevre nanoteknolojisine giriş, Çevreye duyarlı üretim teknikleri kullanılarak malzemelerin üretilmesi, Nanoölçekteki teknolojilerin çevre kirliliği üzerindeki olumlu ve olumsuz etkileri, Çevre teknolojilerinde nanoteknolojilerin önemi (su arıtma uygulamaları vb.), Kirliliğin belirlenmesi için Nanosensörler, Nanopartiküllerin çevreye etkileri, Nanopartiküllerin insana etkileri, Değişik ortamlarda (su, hava, toprak vb.) nanopartiküllerin temel özellikleri (taşınım, agregasyon, birikme vb.), Enerji üretiminde nanoteknoloji ve yenilenebilir enerji kullanımı, Nanopartiküllerin karakterizasyonu (SEM, AFM, TEM, VSI vb.), Nanoteknoloji ile ilgili olarak gelecekte yapılması gerekli bilimsel araştırmalar ve yasal düzenlemeler. Introduction to Environmental Nanotechnology, Manufacture of materials using environmentally friendly procedures, Positive and negative effects of technologies at nanoscale on environmental pollution, Importance of nanotechnologies on environmental technology (Water treatment applications etc.), Nanosensors for detecting pollutants, Effects of nanoparticles to the environment, Effects of nanoparticles to human, Fundamental properties (transport, aggregation, deposition, etc.) of nanoparticles in different media (Water, air, soil, etc.), Nanotechnology in energy production and utilization of renewable energy, Characterization techniques of nanoparticles (SEM, AFM, TEM, VSI, etc.), Scientific researches and regulations that should be done in the future related to nanotechnology.",
+  "outcomes": [
+   "Nanoteknolojinin çevresel uygulamaları",
+   "Nanoteknolojinin çevresel etkileri",
+   "Nanoteknolojinin insan sağlığına etkileri",
+   "Risk değerlendirme",
+   "Nanoteknoloji konusunda yapılması gereken düzenlemeler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Çevre nanoteknolojisine giriş",
+   "Hafta 2 · Nanoteknoloji ve çevre: Genel",
+   "Hafta 3 · Çevre teknolojilerinde nanoteknolojilerin önemi (Giriş)",
+   "Hafta 4 · Çevre teknolojilerinde nanoteknolojilerin önemi (Membran Prosesler)",
+   "Hafta 5 · Çevre teknolojilerinde nanoteknolojilerin önemi (Adsorpsiyon Prosesleri)",
+   "Hafta 6 · Çevre teknolojilerinde nanoteknolojilerin önemi (Yeraltı suyu iyileştirme)",
+   "Hafta 7 · Çevrede kirlilik tesbiti için nano sensörler",
+   "Hafta 8 · Enerji üretiminde nanoteknoloji ve yenilenebilir enerji kullanımı",
+   "Hafta 9 · Nanoteknolojilerin çevre üzerindeki olumsuz etkileri (Toksikolojik etkiler)",
+   "Hafta 10 · Nanoteknolojilerin çevre üzerindeki olumsuz etkileri (Ekotoksikolojik etkiler)",
+   "Hafta 11 · Nanopartiküllerin insana etkileri",
+   "Hafta 12 · Nanoteknolojinin risk değerlendirmesi",
+   "Hafta 13 · Nano etik",
+   "Hafta 14 · Nanoteknoloji ile ilgili olarak gelecekte yapılması gerekli bilimsel araştırmalar ve yasal düzenlemeler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çevre nanoteknolojisine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Nanoteknoloji ve çevre: Genel",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çevre teknolojilerinde nanoteknolojilerin önemi (Giriş)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Çevre teknolojilerinde nanoteknolojilerin önemi (Membran Prosesler)",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Çevre teknolojilerinde nanoteknolojilerin önemi (Adsorpsiyon Prosesleri)",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Çevre teknolojilerinde nanoteknolojilerin önemi (Yeraltı suyu iyileştirme)",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Çevrede kirlilik tesbiti için nano sensörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Enerji üretiminde nanoteknoloji ve yenilenebilir enerji kullanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Nanoteknolojilerin çevre üzerindeki olumsuz etkileri (Toksikolojik etkiler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Nanoteknolojilerin çevre üzerindeki olumsuz etkileri (Ekotoksikolojik etkiler)",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Nanopartiküllerin insana etkileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Nanoteknolojinin risk değerlendirmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Nano etik",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Nanoteknoloji ile ilgili olarak gelecekte yapılması gerekli bilimsel araştırmalar ve yasal düzenlemeler"
+   }
+  ],
+  "textbooks": [
+   "WIESNER, M.R., BOTTERO, J., ENVIRONMENTAL NANOTECHNOLOGY, MCGRAW HILL, 2007.",
+   "THEDORE, L., KUNZ, R.G., NANOTECHNOLOGY: ENVIRONMENTAL IMPLICATIONS AND SOLUTIONS, JOHN WILEY & SONS INC. 2005.",
+   "SELLERS VE DIĞ, NANOTECHNOLOGY AND THE ENVIRONMENT, CRC PRESS, 2009.",
+   "CLOETE VE DIĞ, NANOTECHNOLOGY IN WATER TREATMENT APPLICATIONS, CAISTER ACADEMIC PRESS, UK, 2010.",
+   "MASCIANGIOLI, T., ZHANG, W., ENVIRONMENTAL TECHNOLOGIES AT NANOSCALE. ENVIRONMENTAL SCIENCE AND TECHNOLOGY, MARCH, 102-107, 2004."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=517"
+ },
+ "NSE 523E": {
+  "code": "NSE 523E",
+  "name": "Surfaces&Interfaces",
+  "nameEn": "Surfaces&Interfaces",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Temel Kavramlar: Yüzey ve Ara Yüzeylerin Tanımı, Sınıflandırılması, Arayüzeylerin Önemi, Yüzey Ve Arayüzeylerin Moleküler Yapıları, Moleküller Arası Etkileşimler, Arayüzeylerin Termodinamiği, Arayüzeylerde Adsorpsiyon, Arayüzeylerde Elektriksel Yük ve Elektriksel Çift Tabaka, Moleküller ve Yüzeylerarası Etkileşim Kuvvetleri, Yüzey Analiz Tekniklerine Giriş: Yüzey Morfolojisi (SEM, AFM, SFM), Yüzey Bileşimi (XPS, Tof SIMS, FTIR) ile Temas Açısı, Yüzey Gerilimi, Adsorpsiyon Yoğunluğu, Zeta Potansiyeli, Reoloji Ölçümleri, Yüzey Bilimine Giriş: Kimyasal-Mekanik Polishing, Yüzey Kaplama Metodları, CVD, Kendiliğinden Oluşan Tek Tabakalar, Langmuir-Blogett Filmler, Nanoprinting, Nanolitografi. Basic Concepts: Definition, Classification and Importance of Surfaces and Interfaces, Molecular Structure of Surfaces and Interfaces, Intermolecular Interactions, Thermodynamics of Interfaces, Adsorption at Interfaces, Electric Charge at the Interface, Interfacial Interactions, Introduction to Surface Analysis, Surface Morphology (SEM, AFM, SFM), Surface Composition (XPS, Tof SIMS, FTIR), Contact Angle, Interfacial Tension, Adsorption Density, Zeta Potential, Flow Behavior, Rheology Measurements, Introduction to Surface Engineering: Chemical – Mechanical Polishing, Cleaning, Chemical Vapor Deposition (CVD), Self – Assembly Monolayers (SAMs), Langmuir – Blodgett Films, Nanoprinting, Nanolithography.",
+  "outcomes": [
+   "Bu dersi başarıyla tamamlayan yüksek lisans öğrencileri aşağıdaki konularda bilgi, beceri ve yetkinlik kazanırlar; 1) Yüzey ve arayüzeyler hakkında bilgi edinmek,",
+   "Yüzey kimyası hakkında temel kavramları öğrenmek,",
+   "Yüzey termodinamiği yanı sıra elektriksel çift tabaka, yüzeylerarası etkileşimler ile itme ve çekme kuvvetlerine etkileyen parametreleri öğrenmek,",
+   "Yüzey analiz teknikleri hakkında detaylı bilgi edinmek,",
+   "Yüzey hazırlama teknikleri hakkında bilgi edinmek,",
+   "Yüzey ve arayüzey tekniklerini nihai uygulamalarda pekiştirmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel Kavramlar: Yüzey ve Arayüzeylerin Tanımı, Sınıflandırılması, Moleküler Yapıları",
+   "Hafta 2 · Moleküller Arası ve Yüzeyler Arası Etkileşim Kuvvetleri",
+   "Hafta 3 · Arayüzeylerin Termodinamiği ve Arayüzeylerde Adsorpsiyon",
+   "Hafta 4 · Arayüzeylerde Elektriksel Yük, Elektriksel Çift Tabaka ve Zeta Potansiyeli",
+   "Hafta 5 · Yüzey ve Arayüzey Ölçüm Teknikleri: Temas Açısı ve Yüzey Gerilimi Ölçümleri",
+   "Hafta 6 · Adsorpsiyon Yoğunluğu ve Reoloji Ölçüm Yöntemleri",
+   "Hafta 7 · Yüzey Morfolojisi ve Mikroskopi Teknikleri (SEM, AFM / SPM)",
+   "Hafta 8 · Yüzey Bileşimi ve Spektroskopik Analizler (XPS, ToF-SIMS, FTIR)",
+   "Hafta 9 · Yüzey İşleme Teknolojileri: Kimyasal-Mekanik Parlatma (CMP)",
+   "Hafta 10 · Yüzey Kaplama Metodları ve Kimyasal Buhar Biriktirme (CVD)",
+   "Hafta 11 · Kendiliğinden Oluşan Tek Tabakalar (SAMs) ve Yapıları",
+   "Hafta 12 · Langmuir-Blodgett Filmleri, Üretimi ve Uygulamaları",
+   "Hafta 13 · Nanolitografi ve Nanobaskılama (Nanoprinting) Teknikleri",
+   "Hafta 14 · Yüzey ve Arayüzey Biliminde İleri Uygulamalar ve Genel Değerlendirme"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Kavramlar: Yüzey ve Arayüzeylerin Tanımı, Sınıflandırılması, Moleküler Yapıları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Moleküller Arası ve Yüzeyler Arası Etkileşim Kuvvetleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Arayüzeylerin Termodinamiği ve Arayüzeylerde Adsorpsiyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Arayüzeylerde Elektriksel Yük, Elektriksel Çift Tabaka ve Zeta Potansiyeli",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yüzey ve Arayüzey Ölçüm Teknikleri: Temas Açısı ve Yüzey Gerilimi Ölçümleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Adsorpsiyon Yoğunluğu ve Reoloji Ölçüm Yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yüzey Morfolojisi ve Mikroskopi Teknikleri (SEM, AFM / SPM)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yüzey Bileşimi ve Spektroskopik Analizler (XPS, ToF-SIMS, FTIR)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yüzey İşleme Teknolojileri: Kimyasal-Mekanik Parlatma (CMP)",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yüzey Kaplama Metodları ve Kimyasal Buhar Biriktirme (CVD)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kendiliğinden Oluşan Tek Tabakalar (SAMs) ve Yapıları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Langmuir-Blodgett Filmleri, Üretimi ve Uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Nanolitografi ve Nanobaskılama (Nanoprinting) Teknikleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Yüzey ve Arayüzey Biliminde İleri Uygulamalar ve Genel Değerlendirme"
+   }
+  ],
+  "textbooks": [
+   "R. J. Hunter, “Introduction To Modern Colloid Science”",
+   "D. J. Shaw, “Introduction To Colloid And Surface Chemistry”",
+   "J. N. Israelachvili, \"Intermolecular And Surface Forces“",
+   "A. Adamson, \"Physical Chemistry Of Surfaces“",
+   "J. Lyklema, “Fundamentals Of Interface And Colloid Science”",
+   "R. J. Hunter, “Zeta Potential In Colloid Science”",
+   "P. C. Hiemenz, R. Rajagopalan, “Principles Of Colloid And Surface Chemistry”",
+   "R. J. Hunter, “Foundations Of Colloid Science”",
+   "P. Vadgama, Surfaces and Interfaces for Biomaterials"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=523"
+ },
+ "NSE 596E": {
+  "code": "NSE 596E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=596"
+ },
+ "NSE 603E": {
+  "code": "NSE 603E",
+  "name": "Radiation Proc.for Nanomateris",
+  "nameEn": "Radiation Proc.for Nanomateris",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Radyasyon ve nanomalzemelerdeki etkileri, nanoyapılarda radyasyonla ölçme ve güvenlik sistemleri, yarıiletken nanokristallere radyasyon uygulamaları, nanoteknolojide nükleer teknikler, katkılı nanomalzemelerde radyasyon işlemleri, mikrodozlama ve mikrodozimetri, radyasyona hassas nanomalzemeler, radyasyon ile işlenmiş nanomalzemelerin kullanımı, sintilatörlerde nanomalzeme uygulamaları, nanoboyuttaki tıp ve tekstil ürünlerinde radyasyon metodları. Radiation and effects on nanomaterials, radiation measurements in nano-sized structures, radiation applications on semiconductor nanocrystals, nuclear techniques in nanotechnology, radiation processes in doped nanomaterials, microexposure and microdosimetry, radiation sensitive nanomaterials, usage of the radiation progressed nanomaterials, nanomaterial applications in sintilators, radiation methods in nanosized medical and textile products.",
+  "outcomes": [
+   "Radyasyon kullanılarak geliştirilen işlemleri tanımak,",
+   "Kristaller, katkılı nanomalzemelere radyasyon işlemi uygulamalarını öğrenmek,",
+   "Nanomalzemelere uygulanan radyasyon işlemlerinin özelliklerini ve farklılıklarını kavramak,",
+   "Nanomalzemelerde kullanılan özel ve ileri teknikleri uygulama alanları ile birlikte tanımak,"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Radyasyon türleri, iyonizan radyasyon",
+   "Hafta 2 · Nanomalzemelerde iyonizan radyasyon etkisi",
+   "Hafta 3 · Nanoölçekteki yapılarda radyasyonla ölçme metodları",
+   "Hafta 4 · Radyasyon izlemenin kurulması ve test edilmesi ve güvenlik sistemleri",
+   "Hafta 5 · Yarıiletken nanokristallere gama, beta ve nötron etkileri",
+   "Hafta 6 · Nanoteknolojide nükleer teknikler",
+   "Hafta 7 · Katkılı nanomalzemelerde radyasyon işlemleri",
+   "Hafta 8 · Radyasyon ile malzemelerin dayanıklılığının artırılması ve malzemeye yeni özellikler kazandırılması",
+   "Hafta 9 · Dielektrikler, yarıiletkenler ve fotonik malzemelerde radyasyon ile değişime direnç",
+   "Hafta 10 · Mikrodozlama ve mikrodozimetri kavramı",
+   "Hafta 11 · Radyasyona hassas nanomalzemeler",
+   "Hafta 12 · Radyasyon ile işlenmiş nanomalzemelerin kullanımı",
+   "Hafta 13 · Sintilatörlerde nanomalzeme uygulamaları",
+   "Hafta 14 · Nanoboyuttaki tıp ve tekstil ürünleri için radyasyon metodları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radyasyon türleri, iyonizan radyasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nanomalzemelerde iyonizan radyasyon etkisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Nanoölçekteki yapılarda radyasyonla ölçme metodları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Radyasyon izlemenin kurulması ve test edilmesi ve güvenlik sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yarıiletken nanokristallere gama, beta ve nötron etkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Nanoteknolojide nükleer teknikler",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Katkılı nanomalzemelerde radyasyon işlemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Radyasyon ile malzemelerin dayanıklılığının artırılması ve malzemeye yeni özellikler kazandırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Dielektrikler, yarıiletkenler ve fotonik malzemelerde radyasyon ile değişime direnç",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrodozlama ve mikrodozimetri kavramı",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Radyasyona hassas nanomalzemeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Radyasyon ile işlenmiş nanomalzemelerin kullanımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Sintilatörlerde nanomalzeme uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Nanoboyuttaki tıp ve tekstil ürünleri için radyasyon metodları"
+   }
+  ],
+  "textbooks": [
+   "Wilde, G., Nanostructured Materials, Elsevier, 2008.",
+   "Yoon J., Sun Y., Rogers J. A., Semiconductor Nanomaterials for Flexible Technologies, Elsevier Inc, 2010.",
+   "Koch, C.C., Nanostructured Materials: Processing, Properties and Applications, 2nd Edition, 2006.",
+   "Cabral V., Silva R., Nanomaterials: Properties, Preparation and Processes Nanotechnology Science and Technology Series), Nova, 2010.",
+   "Shaw, L.L., Surnarayana, C., Mishra, R.S., Processing and Properties of Structural Nanomaterials, 2003."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=603"
+ },
+ "NSE 607E": {
+  "code": "NSE 607E",
+  "name": "Elec.,Diel.&Mag.Pro.of Nanom.",
+  "nameEn": "Elec.,Diel.&Mag.Pro.of Nanom.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş, nanomateryallerin elektriksel, dielektrik ve manyetik özelliklerin tanımlanması ve önemi. Elektriksel özellikler, Nanomateryallerin dielektrik özellikleri, Elektromanyetizma, manyetik özellikler, nanomanyetizma, Piezoelektrik, piroelektik ve ferroelektrik nanomateryaller. Ferro akışkanlar (manyetik akışkanlar), elektroreolojik (ER) akışkanlar, elektromanyetoreolojik akışkanlar (EMR). Elektro üretim yöntemiyle nanolif üretimi, nanoliflerin elektriksel, dielektrik ve manyetik özellikleri. Dielektrik ve manyetik özelliklere sahip nanomateryallerin insan ve çevreye etkileri. Introduction, definitions and importance of electrical, dielectric and magnetic properties of nanomaterials. Electrical properties, Dielectric properties of nanomaterials, Electromagnetic phenomena, magnetic properties, nanomagnetics. Piezoelectric, pyroelectric and ferroelectric nanomaterials. Ferro fluids (magnetofluids), electrorheological (ER) fluids, electromagnetorheological (EMR) fluids. Nanofiber fabrication by electrospinning: electrical, dielectric and magnetic properties of nanofibers. Effects of nanomaterials with dielectric and magnetic properties on human and environment.",
+  "outcomes": [
+   "Nanomateryallerin elektriksel, dielektrik ve manyetik özelliklerinin ölçümü ve matematiksel ifadeleri",
+   "Elektriksel, dielektrik ve manyetik özelliklerin frekans ve sıcaklığa bağlılığı",
+   "Elektroreolojik (ER) ve manyetoreolojik (EMR) akışkanlar",
+   "Elektriksel, dielektrik veya manyetik özelliklere sahip nanomateryal ve sistemlerin kullanım alanları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş, nanomateryallerin elektriksel ve dielektriksel özelliklerinin tanımlanması ve önemi",
+   "Hafta 2 · Elektriksel özellikler: elektriksel direnç (akım-voltaj karakteristikleri), elektriksel iletkenlik, ölçüm metotları",
+   "Hafta 3 · Nanomateryallerin dielektrik özellikleri, dielektrik özelliklerin frekansa ve sıcaklığa bağlılığı, modellenmesi, Maxwell-Wagner kutuplanması",
+   "Hafta 4 · Dielektrik, ısısal ve reolojik özelliklerin ilişkisi",
+   "Hafta 5 · Dielektrik materyallerin yapı-özellik ilişkisi",
+   "Hafta 6 · Piezoelektrik, piroelektik ve ferroelektrik nanomateryaller",
+   "Hafta 7 · Laboratuvar uygulaması: Elektriksel özelliklerin incelenmesi",
+   "Hafta 8 · I. Ara Sınav",
+   "Hafta 9 · Nanomateryallerin manyetik özelliklerinin tanımlanması",
+   "Hafta 10 · Elektromanyetizma, manyetik özellikler, nanomanyetizma",
+   "Hafta 11 · Manyetizasyon eğrileri (M-B ve B-H grafikleri), manyetizmanın elektriksel ölçümü ve yorumlanması",
+   "Hafta 12 · Ferro akışkanlar (manyetik akışkanlar), elektromanyetoreolojik akışkanlar (EMR) ve bunların ilaç taşınmasında kullanımları",
+   "Hafta 13 · Laboratuvar uygulaması: Manyetik özelliklerin incelenmesi",
+   "Hafta 14 · II. Ara sınav"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, nanomateryallerin elektriksel ve dielektriksel özelliklerinin tanımlanması ve önemi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektriksel özellikler: elektriksel direnç (akım-voltaj karakteristikleri), elektriksel iletkenlik, ölçüm metotları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Nanomateryallerin dielektrik özellikleri, dielektrik özelliklerin frekansa ve sıcaklığa bağlılığı, modellenmesi, Maxwell-Wagner kutuplanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dielektrik, ısısal ve reolojik özelliklerin ilişkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Dielektrik materyallerin yapı-özellik ilişkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Piezoelektrik, piroelektik ve ferroelektrik nanomateryaller",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Laboratuvar uygulaması: Elektriksel özelliklerin incelenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "I. Ara Sınav",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Nanomateryallerin manyetik özelliklerinin tanımlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Elektromanyetizma, manyetik özellikler, nanomanyetizma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Manyetizasyon eğrileri (M-B ve B-H grafikleri), manyetizmanın elektriksel ölçümü ve yorumlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Ferro akışkanlar (manyetik akışkanlar), elektromanyetoreolojik akışkanlar (EMR) ve bunların ilaç taşınmasında kullanımları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Laboratuvar uygulaması: Manyetik özelliklerin incelenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "II. Ara sınav"
+   }
+  ],
+  "textbooks": [
+   "Poole, C.P., and Owens, F.J. 2003. Introduction to Nanotechnology. John Wiley and Sons, Inc., USA.",
+   "Hao, T. 2005. Electrorheological Fluids. Elsevier B.V., The Netherlands.",
+   "Ramakrishna, S., Ramalingham, M., Kumar, T.S.S., and Soboyejo, W.O. 2010. Biomaterials: a nano approach. CRC Press/Taylor and Francis, Boca Raton, FL.",
+   "Sensors, Nanoscience, Biomedical Engineering, and Instruments. 2006. The Electrical Handbook. 3rd Ed. R.C. Dorf (Ed.). CRC Press, USA. (e-book)",
+   "Advanced Magnetic Nanostructures. 2006. D. Sellmyer and R. Skomski (Eds.), Springer, NY.",
+   "Andrady, A.L. 2008. Science and Technology of polymer nanofiber. Wiley, NJ."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=607"
+ },
+ "NSE 611E": {
+  "code": "NSE 611E",
+  "name": "Spec.Topics in Nanosc.&Nanoen.",
+  "nameEn": "Spec.Topics in Nanosc.&Nanoen.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Nanobilimler ve Nanomühendislik alanında özel konular üzerine eğitim ve nanoteknolojinin özel konularda kullanımı hakkında bilgilendirme, nanobilimler ve nanomühendislik alanında özel uygulama teknikleri üzerine eğitim ve nanoteknolojinin özel uygulama tekniklerinde kullanımı hakkında bilgilendirme Education about special topics in nanoscience and nanoengineering and teaching of usage of nanotechnology in special topics, education about special application fields in nanoscience and nanoengineering and teaching of usage of nanotechnology in special application fields",
+  "outcomes": [
+   "Nanobilimler ve Nanomühendislik alanındaki son gelişmeleri öğrenmek ve kavramak",
+   "-",
+   "-",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 2 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 3 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 4 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 5 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 6 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 7 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 8 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 9 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 10 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 11 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 12 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 13 · Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+   "Hafta 14 · Her dönem ders içeriğine bağlı olarak belirlenecektir."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir.",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Her dönem ders içeriğine bağlı olarak belirlenecektir."
+   }
+  ],
+  "textbooks": [
+   "Her dönem ders içeriğine bağlı olarak belirlenecektir",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=611"
+ },
+ "NSE 612E": {
+  "code": "NSE 612E",
+  "name": "2-Boyutlu İleri Malzemeler",
+  "nameEn": "2-Dimensional Advanced Materials",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=612"
+ },
+ "NSE 696E": {
+  "code": "NSE 696E",
+  "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=696"
+ },
+ "NSE 803E": {
+  "code": "NSE 803E",
+  "name": "Intro.to NanoScie.&Nano Eng.",
+  "nameEn": "Intro.to NanoScie.&Nano Eng.",
+  "language": "English",
+  "credits": {
+   "theory": 0,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Nanobilim ve nanotmühendislikte güncel konuların her hafta farklı araştırmacıların katılımı ile anlatılması. Discussion of current topics in nanoscience and nanoengineering with the participation of different researchers every week.",
+  "outcomes": [
+   "Güncel nanobilim ve nanomühendislik araştırma konularının neler olduğu.",
+   "Nanobilim ve nanomühendislik alanında üniversitemizde yapılan çalışmalar.",
+   "Disiplinlerarası çalışmanın nanoteknolojinin gelişimindeki önemi.",
+   "“Nano” kavramının genel olarak anlamı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Nanobilim ve nanomühendislikte güncel konular I",
+   "Hafta 2 · Nanobilim ve nanomühendislikte güncel konular II",
+   "Hafta 3 · Nanobilim ve nanomühendislikte güncel konular III",
+   "Hafta 4 · Nanobilim ve nanomühendislikte güncel konular IV",
+   "Hafta 5 · Nanobilim ve nanomühendislikte güncel konular V",
+   "Hafta 6 · Nanobilim ve nanomühendislikte güncel konular VI",
+   "Hafta 7 · Nanobilim ve nanomühendislikte güncel konular VII",
+   "Hafta 8 · Nanobilim ve nanomühendislikte güncel konular VIII",
+   "Hafta 9 · Nanobilim ve nanomühendislikte güncel konular IX",
+   "Hafta 10 · Nanobilim ve nanomühendislikte güncel konular X",
+   "Hafta 11 · Nanobilim ve nanomühendislikte güncel konular XI",
+   "Hafta 12 · Nanobilim ve nanomühendislikte güncel konular XII",
+   "Hafta 13 · Nanobilim ve nanomühendislikte güncel konular XIII",
+   "Hafta 14 · Nanobilim ve nanomühendislikte güncel konular XIV"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular I",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular III",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular IV",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular V",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular VI",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular VII",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular VIII",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular IX",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular X",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular XI",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular XII",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular XIII",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Nanobilim ve nanomühendislikte güncel konular XIV"
+   }
+  ],
+  "textbooks": [
+   "*"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=NSE&dersNo=803"
+ }
+}

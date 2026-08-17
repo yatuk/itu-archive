@@ -2,6 +2,7 @@
  "IKE 501E": {
   "code": "IKE 501E",
   "name": "Microeconomics I",
+  "nameEn": "Microeconomics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -37,6 +38,77 @@
    "Hafta 13 · Rekabetçi Piyasa Teorisi",
    "Hafta 14 · Dışsallıklar ve Kamu Malları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tercihler ve Seçim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tüketici Seçimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Klasik Talep Teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Klasik Talep Teorisi Uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Toplu Talep",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Üretim",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Belirsizlik Altında Seçim",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Temel Oyun Teorisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Eş Anlı Oyunlar (Teori)",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Eş Anlı Oyunlar (Uygulama)",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Dinamik Oyunlar (Teori)",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Dinamik Oyunlar (Uygulama)",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Rekabetçi Piyasa Teorisi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Dışsallıklar ve Kamu Malları"
+   }
+  ],
   "textbooks": [
    "Mas-Collel, A., Whinston M.D. ve GreenJ.R. (1995). Microeconomic Theory. Oxford University Press,New York, USA.",
    "Gibbons, R. (1992). Game Theory for Applied Economists. Princeton University Press, USA.",
@@ -44,12 +116,12 @@
    "Shy, O. (1996). Industrial Organization: Theory and Applications. The MIT Press, USA.",
    "Varian, H.R. (1992). Microeconomic Analysis. W.W. Norton & Company, New York, USA."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=501"
  },
  "IKE 503E": {
   "code": "IKE 503E",
   "name": "Macroeconomics I",
+  "nameEn": "Macroeconomics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -81,17 +153,88 @@
    "Hafta 13 · Açık Ekonomide kur ve faiz politikaları: Mundell-Fleming Modeli",
    "Hafta 14 · Açık Ekonomide Makroekonomik Denge"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makroekonomiye Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ulusal Gelir: Muhasebe Sistemi ve Ölçüm Sorunu",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ulusal Gelirin Belirlenmesi ve Çarpan",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ulusal Gelirin Belirlenmesi: Statik Makroekonomik Denge Modeli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Neoklasik Sentez ve Para ve Maliye Politikaları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Makroekonomik Teorilere Genel Bir Bakış",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Keynesgil Genel Teori ve Neoklasik Sentez",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Toplam Talep Fonksiyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Toplam Talebin Sektörel Bileşenleri: Yatımlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Toplam Talebin Sektörel Bileşenleri: Tüketim",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Toplam Arz Fonksiyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Açık Ekonomi Makroekonomi ve Döviz Kuru",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Açık Ekonomide kur ve faiz politikaları: Mundell-Fleming Modeli",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Açık Ekonomide Makroekonomik Denge"
+   }
+  ],
   "textbooks": [
    "Montiel, P.(2003). Macroeconomics in Emerging Markets, Cambridge University Press, Cambridge, United Kingdom.",
    "Dornbusch, R.(1980). Open Economy Macroeconomics, Basic Books,New York, USA.",
    "Branson, W.H.(1995). Makroiktisat Teorisi ve Politikası, çev. İ.Kanyılmaz, Alfa Yayıncılık,Bursa, Türkiye."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=503"
  },
  "IKE 505E": {
   "code": "IKE 505E",
   "name": "Research Meth.in Economics I",
+  "nameEn": "Research Meth.in Economics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -125,6 +268,77 @@
    "Hafta 13 · Çok değişkenli doğrusal bağlanım-II",
    "Hafta 14 · Bağlanımda özel konular"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, veri, model, kalıntı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Veri derleme, düzenleme, gösterme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Veri çözümlemeye giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Rassal değişken, kesikli olasılık dağılımları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli olasılık dağılımları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Önsav sınamaları, güven aralıkları",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Dağılımdan bağımsız sınamalar",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Değişken çözümlemesi (varyans analizi)",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "İki ya da daha çok değişken arasında ilişki (korelasyon)",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Yalın doğrusal bağlanım (regresyon)-I",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Yalın doğrusal bağlanım (regresyon) -II",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Çok değişkenli doğrusal bağlanım-I",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Çok değişkenli doğrusal bağlanım-II",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Bağlanımda özel konular"
+   }
+  ],
   "textbooks": [
    "Thomas, R. L. (2005). Using Statistics in Economics. McGraw-Hill, New York, USA.",
    "Velleman, P. F.ve Hoaglin D. C.(2004). Applications, Basics and Computing of Exploratory Data Analysis, Duxbury Press, Boston, USA.",
@@ -132,12 +346,12 @@
    "Chatterjee, S. veHadi A. S. (2000). Regression Analysis by Example. Wiley, USA.",
    "Daniel, W. W. (1990). Applied Nonparametric Statistics, Duxbury, USA."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=505"
  },
  "IKE 507E": {
   "code": "IKE 507E",
   "name": "International Economics",
+  "nameEn": "International Economics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -171,6 +385,76 @@
    "Hafta 13 · Uluslararası sermaye hareketleri neden ve sonuçlar",
    "Hafta 14 · Doğrudan yabancı yatırımlar ve çokuluslu şirketler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstrilerarası ticaret teorileri I: Klasik model",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Endüstrilerarası ticaret teorileri II: H-O modeli ve R-V-J modeli",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Ricardo-Viner-Jones ve Heckscher-Ohlin modellerinin matematiksel analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Ticaretten kazançlar",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 6,
+    "topic": "Endüstri-içi ticaret teorisi I: Ürün farklılaşması modelleri",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 7,
+    "topic": "Endüstri-içi ticaret teorisi II: Oligopolistik modeller",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 8,
+    "topic": "Ölçek ekonomileri: Tekelci rekabet modelleri",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslararası ticaret politikası: Kısmi ve genel denge analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Ticareti yapılamayan mallar; hizmet ve aramal ticareti",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Ticaret politikasının politik iktisadı I: İçsel ticaret politikası",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Ticaret politikasının politik iktisadı II: Rant-kovalayıcılık, lobicilik, anti-dumping",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası sermaye hareketleri neden ve sonuçlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Doğrudan yabancı yatırımlar ve çokuluslu şirketler"
+   }
+  ],
   "textbooks": [
    "Allen, T. and Arkoalakis, C. (2014), \"Trade and the Topography of the Spatial Economy,\" The Quarterly Journal of Economics, 129 (3): 1085-1140.",
    "Barba Navaretti, G., Venables A. J. and Barry F. (2004), Multinational Firms in the World Economy, Princeton: Princeton University Press.",
@@ -182,12 +466,12 @@
    "Nocke, V. and Yeaple, S. (2008), \"An assignment theory of foreign direct investment,\" The Review of Economic Studies, 75(2), 529-557.",
    "Ramondo, N. and Rodríguez-Clare, A. (2013), Trade, Multinational Production, and the Gains from Openness. Journal of Political Economy, 121(2), 273-322."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=507"
  },
  "IKE 508E": {
   "code": "IKE 508E",
   "name": "Game Theory",
+  "nameEn": "Game Theory",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -221,6 +505,77 @@
    "Hafta 13 · Deneysel Oyun Teorisinde Seçilmiş Konular",
    "Hafta 14 · İleri Konular"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tam ve mükemmel bilgili durağan oyunlar, stratejik üstünlük ve Nash dengesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tam ve mükemmel bilgili durağan oyun uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Tam ve mükemmel bilgili dinamik oyunlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tam ve mükemmel bilgili dinamik oyun uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tam ancak mükemmel olmayan bilgiye sahip dinamik oyunlar ve Bayesci Nash dengesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Tam ancak mükemmel olmayan bilgiye sahip dinamik oyun uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Tekrarlı oyunlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Tekrarlı oyun uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Eksik bilgili durağan oyunlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Eksik bilgili durağan oyun uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Eksik bilgili dinamik oyunlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Deneysel Oyun Teorisine Giriş",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Deneysel Oyun Teorisinde Seçilmiş Konular",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "İleri Konular"
+   }
+  ],
   "textbooks": [
    "Berg, N. ve Gigerenzer, G. (2010), “As-If Behavioral Economics: Neoclassical Economics or Economics in Disguise?”, History of Economics Ideas, 18 (1): 133-165",
    "Bo, P. ve Frechette, G. (2011), “The Evolution of Cooperation in Infinitely Repeated Games: Experimental Evidence. The American Economic Review, 101 (1): 411-429",
@@ -232,12 +587,12 @@
    "Krishna, V. (2009), Auction Theory, Academic Press",
    "Tadelis, S. (2013), Game Theory: An Introduction, Princeton University Press"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=508",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=508"
  },
  "IKE 601E": {
   "code": "IKE 601E",
   "name": "Advanced Microeconomics",
+  "nameEn": "Advanced Microeconomics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -270,6 +625,77 @@
    "Hafta 13 · Genel Dengenin Refah Özellikleri",
    "Hafta 14 · Positive Genel Denge Teorisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tercihler ve Seçim",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tüketici Seçimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Klasik Talep Teorisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Klasik Talep Teorisi Uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Toplu Talep",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Üretim Kümeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Maliyet Minimizasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Belirsizlik Altında Seçim",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Belirsizlik Altında Seçim-Uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Temel Oyun Teorisi ve Eş Anlı Oyunlar",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Dinamik Oyunlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Genel Dengeye Giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Genel Dengenin Refah Özellikleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "Positive Genel Denge Teorisi"
+   }
+  ],
   "textbooks": [
    "Gibbons, R. (1992), Game Theory for Applied Economists, Princeton: Princeton University Press.",
    "Kreps, D. M. (1990), A Course in Microeconomic Theory, Princeton: Princeton University Press.",
@@ -277,12 +703,12 @@
    "Tirole, J. (1988), The Theory of Industrial Organization, Cambridge: MIT Press.",
    "Varian, H.R. (1992), Microeconomic Analysis, New York: W.W. Norton & Company."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=601",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=601"
  },
  "IKE 603E": {
   "code": "IKE 603E",
   "name": "Advanced Research Methods",
+  "nameEn": "Advanced Research Methods",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -315,6 +741,77 @@
    "Hafta 13 · Tek Değişkenli Zaman Serisi Modelleri – Durağanlık: EYO tahmini icin numerik modeller; model seçimi: AIC, SBC; trend- ve fark-durağan zaman serisi modelleri; modelleme trendleri; bütünleşik süreçler; I(0) ve I(1) süreçlerinin ayırt edici özellikleri",
    "Hafta 14 · Tek Değişkenli Zaman Serisi Modelleri – Birim Kok Sınamaları: Birim kok ekonometrisi araçları, Brownian devinimleri, fonksiyonel merkezi limit teoremi; Beveridge Nelson ayrıştırması; Dickey Fuller ve Düzeltilmiş Dickey-Fuller testleri; Birim kok testlerinin değerlendirilmesinde Monte Carlo yontemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Araçlar: Matris Cebri; istatistik ve olasılık teorisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ekonometrik modeller: Doğrusal yapılar; koşullu beklentiler; açıklayıcı değişken varsayımları; kovaryans matrisleri ve hata varsayımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Klasik doğrusal regresyon; Modelin klasik varsayımları; genelleştirilmiş en küçük kareler (GEKK) tahmini",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Klasik doğrusal regresyon: Gauss-Markov teoremi; hipotez testleri; Kısıtlı GEKK tahmini",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Genelleştirilmiş en küçük kareler (GEKK) tahmini: Genelleştirilmiş en küçük kareler tahmini; genelleştirilmiş en küçük kareler tahmin",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Enstrumental Değişken (ED): Optimal enstrumental değişken tahmin edicileri, ED tahmin edicilerinin istatistikî özellikleri, ED tahmin edicilerinin diğer tahmin edicilerle bağlantısı, dışsallık sınamaları, zaman serisi modellerinde enstrumental değişken, doğrusal olmayan modellerde enstrumental değişken.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "En Yuksek Olabilirlik (EYO): Kavuşmazda sınamalar; olabilirlik oranı, Wald ve Lagrange çarpanı testleri, beklemlerle tahmin yöntemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Genelleştirilmiş Beklemlerle Tahmin Yöntemi: önceden belirlenim sınaması (Hausman test); klasik parametre sınamaları; işlevsel yapılar",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Doğrusal Olmayan Regresyon Modelleri: Doğrusal olmayan en küçük kareler tahmini",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Kavuşmazlık Teorisinin Ana Unsurları: Doğrusal olmayan en küçük kareler tahmininin kavuşmazdaki özellikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Kavuşmazlık Teorisinin Ana Unsurları: Box-Cox donuşumu; yakınsama modelleri; olasılıklı süreçler; limit sonuçları, durağan regresyon modeli; kavuşmazda bütünleşik süreçler",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Tek Değişkenli Zaman Serisi Modelleri – ABHO Modelleri: Durağanlık; AB, HO, ve ABHO süreçleri; ABHO modellerinin EKK ve koşullu EYO ile tahmini",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tek Değişkenli Zaman Serisi Modelleri – Durağanlık: EYO tahmini icin numerik modeller; model seçimi: AIC, SBC; trend- ve fark-durağan zaman serisi modelleri; modelleme trendleri; bütünleşik süreçler; I(0) ve I(1) süreçlerinin ayırt edici özellikleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tek Değişkenli Zaman Serisi Modelleri – Birim Kok Sınamaları: Birim kok ekonometrisi araçları, Brownian devinimleri, fonksiyonel merkezi limit teoremi; Beveridge Nelson ayrıştırması; Dickey Fuller ve Düzeltilmiş Dickey-Fuller testleri; Birim kok testlerinin değerlendirilmesinde Monte Carlo yontemleri"
+   }
+  ],
   "textbooks": [
    "Amemiya, T. (1985), Advanced Econometrics, Harvard University Press.",
    "Davidson, R., and J.G. MacKinnon (2003), Econometric Theory and Methods, Oxford University Press.",
@@ -322,7 +819,6 @@
    "Hamilton, J.D. (1994), Time Series Analysis, Princeton University Press.",
    "Hayashi, F. (2000), Econometrics, Princeton University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IKE&dersNo=603"
  }
 }

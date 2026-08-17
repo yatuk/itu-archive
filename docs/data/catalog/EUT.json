@@ -2,6 +2,7 @@
  "EUT 108E": {
   "code": "EUT 108E",
   "name": "Malzemeler ve İmalat Yöntemleri",
+  "nameEn": "Materials&Manufacturing Meth.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -33,15 +34,87 @@
    "Hafta 13 · Nanoteknolojiler, nano malzemeler, akıllı malzemeler, Bilgisayar destekli biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
    "Hafta 14 · Tasarımda malzeme seçimi ve uygulamaları, Birleştirme ve yüzey işleme teknolojileri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse giriş: Malzeme ve üretim yöntemi seçiminin endüstriyel tasarımda önemi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Malzemelerin fiziksel, mekanik ve içyapı özellikleri, malzeme davranışları, üretim yöntemlerinin genel prensipleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ahşap: Genel özellikleri ve endüstriyel tasarımda kullanımı, Ahşap için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Demir dışı metaller ve alaşımlar ve endüstriyel tasarımda kullanımı Metaller için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Metaller: Demir, çelik, dökme demir, paslanmaz çelik ve titanyum, Metaller için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Cam: Genel özellikleri ve endüstriyel tasarımda kullanımı, Cam için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Seramikler: Genel özellikleri ve endüstriyel tasarımda kullanımı, Seramikler için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Polimer esaslı malzemeler: Polimerizasyon: termoplastikler, termosetler, Polimerler için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Plastikler: Ticari plastikler, mühendislik plastikleri, önemli plastik grupları Polimerler için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kompozit malzemeler; Polimer esaslı kompozitler, diğer kompozitler, Laminasyon ve Katmanlı üretim teknolojileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Doğal malzemeler, Doğal malzemeler için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Doğal malzemeler, Doğal malzemeler için biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Nanoteknolojiler, nano malzemeler, akıllı malzemeler, Bilgisayar destekli biçimlendirme, kesme, birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarımda malzeme seçimi ve uygulamaları, Birleştirme ve yüzey işleme teknolojileri.",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Ashby, M. & Johnson, K. (2010). Materials and Design: The Art and Science of Material Selection in Product Design. Oxford: Butterworth-Heinemann."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=108",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=108"
  },
  "EUT 117E": {
   "code": "EUT 117E",
   "name": "Endüstriyel Ürün Tasarımına ve Etiğine Giriş",
+  "nameEn": "Int.to Indus.Prod.Dsgn.&Ethics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -74,15 +147,87 @@
    "Hafta 13 · Endüstri ürünleri tasarımında meslek pratiğinin temelleri",
    "Hafta 14 · Türkiye‘de endüstri ürünleri tasarımının gelişimi ve küresel düzeyde güncel meseleler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Industrial product design in relation to culture, communication and meaning",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstri ürünleri tasarımı mesleği ve tarihsel gelişimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Endüstri ürünleri tasarımı nedir? Endüstri Ürünleri Tasarımcısı kimdir, ne yapar?",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Endüstri ürünleri tasarımında işlev-biçim ve kullanıcı kavramları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Endüstri ürünleri tasarımı sürecinin aşamaları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Endüstri ürünleri tasarımında araştırmanın rolü",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Endüstri ürünleri tasarımının mühendislik, malzeme ve üretim teknolojileriyle ilişkisi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Endüstri ürünleri tasarımında insan faktörlerinin temelleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kültür, iletişim ve anlam bağlamında endüstri ürünleri tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sürdürülebilirlik ve sosyal sorumluluk bağlamında endüstri ürünleri tasarımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Endüstri ürünleri tasarımında geleceğe yönelik konular, bilgi teknolojileri ve yeni toplumsal eğilimlerin rolü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ekonomi, yönetim, pazarlama ve inovasyon bağlamında endüstri ürünleri tasarımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Endüstri ürünleri tasarımında meslek pratiğinin temelleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye‘de endüstri ürünleri tasarımının gelişimi ve küresel düzeyde güncel meseleler",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=117",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=117"
  },
  "EUT 119E": {
   "code": "EUT 119E",
   "name": "Endüstriyel Ürün Tasarımına ve Etiğine Giriş",
+  "nameEn": "Int.to Indus.Prod.Dsgn.&Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -96,12 +241,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=119",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=119"
  },
  "EUT 122E": {
   "code": "EUT 122E",
   "name": "Tasarım Kuramları ve Metodları",
+  "nameEn": "Design Theories and Methodologies",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -135,15 +280,87 @@
    "Hafta 13 · Yaratma Teknikleri: Zihinsel Engelleri Kaldırma, Beyin Fırtınası, Beyinden Yazma",
    "Hafta 14 · Yaratma Teknikleri: Morfolojik Kutu, Kontrol Listeleri, İlişkili Karar Bölgeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarlama Metotlarını Temellendirme, Tasarlamanın Özellikleri ve Gelişimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarlama Kuramları ve Metot Yaklaşımları, Ürün Yaşam Döngüsü",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarlama Süreci, Ekip Çalışmasıyla Tasarlama",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarlama Stratejisi Ürün Niteliğini ve Problemlerini Belirleme, Ürün Statüsü, Tasarlama Strüktürü",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarlamada Bilgi Toplama ve İşleme: Genel",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarlamada Bilgi Toplama ve İşleme, Pazar Araştırması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ürün Şartnamesi Hazırlama ve Performans Kavramı",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 8,
+    "topic": "Fizibilite Etüdü (Yapılabilirlik)",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 9,
+    "topic": "Problem Çözme",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım Düşüncesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Yeni Fikir ve Kavram Bulma",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 12,
+    "topic": "Yaratmaya engeller",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Yaratma Teknikleri: Zihinsel Engelleri Kaldırma, Beyin Fırtınası, Beyinden Yazma",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "Yaratma Teknikleri: Morfolojik Kutu, Kontrol Listeleri, İlişkili Karar Bölgeleri",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "End. Ür. Tasarımcıları için Tasarlama Kuramları ve Metotları, Bayazıt, N, Birsen Yayınevi, 1994,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=122",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=122"
  },
  "EUT 126E": {
   "code": "EUT 126E",
   "name": "Tasarımda Malzeme",
+  "nameEn": "Materials in Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -157,12 +374,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=126",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=126"
  },
  "EUT 128E": {
   "code": "EUT 128E",
   "name": "Tasarım Kuramları ve Metodları",
+  "nameEn": "Design Theories and Methods",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -176,12 +393,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=128",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=128"
  },
  "EUT 132E": {
   "code": "EUT 132E",
   "name": "Materials in Design",
+  "nameEn": "Materials in Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -213,15 +430,87 @@
    "Hafta 13 · Tasarımda Malzeme Seçimi ve uygulamaları, Malzeme seçiminin önemi ve yöntemleri",
    "Hafta 14 · Tasarım projesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "-Dersin ve malzemenin genel özelliklerinin anlatılması .Endüstri Ürünleri Tasarımı -malzeme ilişkisi ve önemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Malzemelerin fiziksel, mekanik ve içyapı özellikleri, malzeme davranışları; sünme, gevşeme, kırılma ve yorulma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Metaller, demir, çelik, dökme demir ve paslanmaz çelik",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Demir dışı metaller ve alaşımlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Polimer esaslı malzemeler; Polimerizasyon: termoplastikler, termosetler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Plastikler: ticari plastikler mühendislik plastikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Teknik Gezi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Seramikler; malzeme özellikleri ve ürün tasarımında kullanımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ahşap ve Cam; malzeme özellikleri ve ürün tasarımında kullanımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kompozit malzemeler; Polimer esaslı kompozitler, diğer kompozitler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Nanoteknolojiler, nano malzemeler, akıllı malzemeler, teknolojik ve geleceğe yönelik malzemeler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Geri dönüşümlü malzemeler, Geri dönüşümlü malzeme kullanımı, prensipleri ve yöntemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarımda Malzeme Seçimi ve uygulamaları, Malzeme seçiminin önemi ve yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım projesi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=132",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=132"
  },
  "EUT 138E": {
   "code": "EUT 138E",
   "name": "Design Theories and Methods",
+  "nameEn": "Design Theories and Methods",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -255,15 +544,87 @@
    "Hafta 13 · Yaratma Teknikleri: Zihinsel Engelleri Kaldırma, Beyin Fırtınası, Beyinden Yazma",
    "Hafta 14 · Yaratma Teknikleri: Morfolojik Kutu, Kontrol Listeleri, İlişkili Karar Bölgeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarlama Metotlarını Temellendirme, Tasarlamanın Özellikleri ve Gelişimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarlama Kuramları ve Metot Yaklaşımları, Ürün Yaşam Döngüsü",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarlama Süreci, Ekip Çalışmasıyla Tasarlama",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarlama Stratejisi Ürün Niteliğini ve Problemlerini Belirleme, Ürün Statüsü, Tasarlama Strüktürü",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarlamada Bilgi Toplama ve İşleme: Genel",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarlamada Bilgi Toplama ve İşleme, Pazar Araştırması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ürün Şartnamesi Hazırlama ve Performans Kavramı",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 8,
+    "topic": "Fizibilite Etüdü (Yapılabilirlik)",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 9,
+    "topic": "Problem Çözme",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım Düşüncesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Yeni Fikir ve Kavram Bulma",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 12,
+    "topic": "Yaratmaya engeller",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Yaratma Teknikleri: Zihinsel Engelleri Kaldırma, Beyin Fırtınası, Beyinden Yazma",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "Yaratma Teknikleri: Morfolojik Kutu, Kontrol Listeleri, İlişkili Karar Bölgeleri",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "Bayazıt, N, 1994, End. Ür. Tasarımcıları için Tasarlama Kuramları ve Metotl Birsen Yayınevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=138",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=138"
  },
  "EUT 204E": {
   "code": "EUT 204E",
   "name": "Üretim Yöntemleri",
+  "nameEn": "Manufacturing Methods",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -277,12 +638,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=204"
  },
  "EUT 206E": {
   "code": "EUT 206E",
   "name": "Statistics",
+  "nameEn": "Statistics",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -313,15 +674,87 @@
    "Hafta 13 · Contingency analysis",
    "Hafta 14 · İstatistik verinin yorumlanması ve görselleştirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İstatistiğe giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım araştırmaları ve bilimsel araştırma",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Nicel verinin anlamlandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sürekli ve ayrık veri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Örneklem ve populasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İstatistik dağılımlar ve parametreleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Frekans analizi ve regresyon kavramı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "İstatistik verinin yorumlanması ve görselleştirilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Nitel verinin anlamlandırılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Birim ve kategori oluşturma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Nicel içerik analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Nitel içerik analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Contingency analysis",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "İstatistik verinin yorumlanması ve görselleştirilmesi",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=206"
  },
  "EUT 220E": {
   "code": "EUT 220E",
   "name": "Industrial Design Studio I",
+  "nameEn": "Industrial Design Studio I",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -354,15 +787,87 @@
    "Hafta 13 · Parça Bütün İlişkisi",
    "Hafta 14 · Projelerin Bütüncül olarak Finalize Edilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarım Problemlerini Yorumlamak",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Basit Ürün Arayüz Çalışmaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Biçim Yaratma-Üretim Yöntemi İlişkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Ürün Anlambilimi ve Ürün Dili Kavramları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım Sürecinde Araştırma Yapma ve Bunu Ürüne Aktarabilme",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Ürün Tasarımında İnsan Faktörleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Üç Boyutlu Model Yapımıyla Proje Geliştirme",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ürün Konsept Geliştirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sunum Tekniklerinin Yetkinleştirilmesi,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "El Çizimi, Model Yapımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Çalışma Mekanizması Modeli, Bilgisayar Çizimleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Farklı Malzemelerin Birlikte Kullanımıyla Gerçekleştirilecek Projeler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Parça Bütün İlişkisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Projelerin Bütüncül olarak Finalize Edilmesi",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Haller, Lynn and Cheryl Dangel Cullen (2001) Design Secrets: Products 1 and 2: 50 Real- Life Product Design Projects Uncovered edited by Industrial Designers Society of America. Massachusetts: Rockport Publishers."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=220",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=220"
  },
  "EUT 222": {
   "code": "EUT 222",
   "name": "Sanat Tarihi",
+  "nameEn": "History of Art",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -395,15 +900,87 @@
    "Hafta 13 · Kültür Nesnesi",
    "Hafta 14 · Güncel Sanat"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Büyü/Ölümsüzlük",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Doğaya Yeniliş/İktidar",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Gökselin Egemenliği",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Gerçeği Arayış",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Gerçeği Arayış/Dengenin Yitirilmesi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Duygunun Abartılması",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Monarşinin İzinde",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Aydınlanma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Geleneğin Sorgulanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yenide Arayışlar",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Soyutlama",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kültür Nesnesi",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Güncel Sanat",
+    "outcomes": "1-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=222",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=222"
  },
  "EUT 226E": {
   "code": "EUT 226E",
   "name": "Tasarım Tarihi I",
+  "nameEn": "History of Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -417,12 +994,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=226",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=226"
  },
  "EUT 231E": {
   "code": "EUT 231E",
   "name": "Manufacturing Methods",
+  "nameEn": "Manufacturing Methods",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -453,15 +1030,87 @@
    "Hafta 13 · Soğuk şekil verme, dövme, haddeleme",
    "Hafta 14 · Ekstrüzyon, çekme. saç işleme yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Döküm, kum kalıba döküm, kokil kalıba döküm",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Döküm, basınçlı döküm, hassas döküm",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Döküm, alçı ve seramik kalıba döküm yöntemiyle üretilecek parçaların tasarımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kaynak, kaynak yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Kaynak, kaynak edilebilirlik, oksi-asetilen kaynağı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Gaz eritme kaynağı, elektrik ark kaynağı, koruyucu gaz kaynağı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Özel kaynak yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Lehimleme, toz metalürjisi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Talaşlı imalat, tezgahlar, talaş, boyut ve geometrik toleranslar, yüzey pürüzlülüğü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Takımlar, tornalama, frezeleme, planyalama, vargelleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Taşlama, delik delme, broşlama, kesme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Hassas işleme yöntemleri , plastik şekil verme, sıcak şekil verme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Soğuk şekil verme, dövme, haddeleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Ekstrüzyon, çekme. saç işleme yöntemleri",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=231",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=231"
  },
  "EUT 233E": {
   "code": "EUT 233E",
   "name": "Perspektif",
+  "nameEn": "Perspective",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -492,15 +1141,87 @@
    "Hafta 13 · Tasarlama sürecinde sunuş aşamasındaki perspektiflerin tanıtımı",
    "Hafta 14 · Ürün tasarlama ve tasarımın iki ve üç boyutlu çizimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma ve giriş, gerekli malzemelerin ve çalışma programının anlatımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ürün tasarımları ve basit geometrik şekillerin serbest el perspektifleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Perspektif çeşitleri (paralel, kaçışlı)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Paralel perspektif çalışmaları, izometrik, aksonometrik ve oblik perspektif çizim kuralları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Paralel perspektif çalışmaları, izometrik, aksonometrik ve oblik perspektif çizim kuralları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Bir, iki, üç kaçışlı perspektiflerin kuralları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Tek kaçışlı perspektifin kuralları ve uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Çift kaçışlı perspektifin kuralları ve uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Üç kaçışlı perspektifin kuralları ve uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Organik nesne perspektifleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Perspektifte gölge",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Patlamış ürün perspektifi ve detay perspektiflerine örnekler ve denemeler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarlama sürecinde sunuş aşamasındaki perspektiflerin tanıtımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Ürün tasarlama ve tasarımın iki ve üç boyutlu çizimi",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=233",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=233"
  },
  "EUT 237E": {
   "code": "EUT 237E",
   "name": "Endüstri Tasarımında Strüktür",
+  "nameEn": "Structure in Industrial Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -533,15 +1254,87 @@
    "Hafta 13 · Ürünlerde nadir kullanılan strüktürler, analizleri, biçim malzeme strüktür işlev ilişkileri",
    "Hafta 14 · Geleceğin strüktürleri, yeni araştırma ve yeni malzemelerin gelecekteki strüktürlere etkisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin genel özellikleri, farklı tasarımlar, strüktür kavramının farklı bilimlerdeki yeri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel strüktür mukavemet ve fizik prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarımda biçim, temel geometriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Endüstri ürünleri tasarımında strüktür, farklı tasarımlarda görülen farklı strüktürler, endüstriyel tasarımda strüktür türleri, isimleri ve örnekleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kabukların ve dolu strüktürlerin strüktürel özellikleri, tasarıma olumlu ve olumsuz etkileri, bu strüktür türlerinde kullanılan malzemeler, bu strüktürlerin kullanıldığı tasarımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çerçevelerin, membranların ve şişme sistemlerin strüktürel özellikleri, tasarıma olumlu ve olumsuz etkileri, bu strüktür türlerinde kullanılan malzemeler, bu strüktürlerin kullanıldığı tasarımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Levha, düzlem levha, nervürlü levha, katlanmış levha, uzay kafeslerin strüktürel özellikleri, tasarıma olumlu ve olumsuz etkileri, bu strüktür türlerinde kullanılan malzemeler, bu strüktürlerin kullan",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Asma gergi sistemlerin, karma strüktür sistemlerinin strüktürel özellikleri, tasarıma olumlu ve olumsuz etkileri, bu strüktür türlerinde kullanılan malzemeler, bu strüktürlerin kullanıldığı tasarımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Farklı strüktürlerin özellikleri, farklı strüktür türlerinin olumlu ve olumsuz yönleri, birbirlerine göre avantajlı yönleri, tasarıma katkıları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarımda strüktür üzerindeki etkenler, biçim-strüktür ilişkisi, doku- strüktür ilişkisi, işlev- strüktür ilişkisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarımda strüktür üzerindeki etkenler, imalat yöntemi- strüktür ilişkisi, malzeme-strüktür ilişkisi, görsellik-strüktür ilişkisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Ürünlerde yoğun olarak kullanılan strüktürler, olumlu ve olumsuz özellikleri, tasarım üzerindeki diğer etkenlerle ilişkisi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Ürünlerde nadir kullanılan strüktürler, analizleri, biçim malzeme strüktür işlev ilişkileri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Geleceğin strüktürleri, yeni araştırma ve yeni malzemelerin gelecekteki strüktürlere etkisi",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=237",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=237"
  },
  "EUT 239E": {
   "code": "EUT 239E",
   "name": "Model Yapım I",
+  "nameEn": "Model Making I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -573,15 +1366,87 @@
    "Hafta 13 · Ödev çalışması; akriliğin diğer plaklarla kullanımı",
    "Hafta 14 · Ödev çalışması; alüminyumun diğer plaklarla kullanımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel atölye kuralları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Çeşitli aletlerin tanıtılması; alet çantasının oluşturulması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Form yaratma: köpük, alçı ve model macunu ile biçim çeşitleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Ödev çalışması; obje yaratma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Ödev çalışması; vakum kalıplama",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Geometrik biçimler yaratma; sandviç plak, fon kağıdı ve akrilik işlenmesi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Geometrik biçimler yaratma; sandviç plak, akrilik işlenmesi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Geometrik biçimler yaratma; sandviç plak, akrilik ve alüminyum levhaların işlenmesi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ödev çalışması; fon kağıdı ile sandviç plak yaratma",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ödev çalışması; sandviç plak ile karmaşık geometrik objeler elde etme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Ödev çalışması; sandviç plak ile doku ve rölyef içeren objeler elde etme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Etüd edilmiş olan organik biçimler ile geometrik biçimlerin birbiri ile beraber kullanılması; daha sofistike nesne biçimlerine ulaşma yeteneğinin geliştirilmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev çalışması; akriliğin diğer plaklarla kullanımı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Ödev çalışması; alüminyumun diğer plaklarla kullanımı",
+    "outcomes": "1-2-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=239",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=239"
  },
  "EUT 240E": {
   "code": "EUT 240E",
   "name": "Model Yapım II",
+  "nameEn": "Model Making II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -614,15 +1479,87 @@
    "Hafta 13 · Ödev çalışması; ölçekli mobilya modeli",
    "Hafta 14 · Ödev çalışması; boyama ve vernikleme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Şerit malzeme ile organik kafes yapı oluşturma",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Şerit malzeme ile organik kafes yapı oluşturma; yapının kaplanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Kaplanmış kafes yapının yüzey tesviyesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Biçim oluşturmada grid sistem: 2 boyutu 3 boyuta aktarıp inşa etme",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Ödev çalışması; Organik veya doğal bir nesnenin ele alınması ve yorumlanması; alçı",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Alçı çalışma",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Elde edilen yeni biçimin küçük skeç modelinin hazırlanması. Modelin taranması ve 2 boyutta belli araliklarla kesitlerinin elde edilmesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kesitlerin belli bir oranda büyütülerek levhalara, örneğin kontraplağa aktarılması",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kesilerek elde edilen kesitlerin tesviye edilmesi ve strüktürün kurularak tamamlanması",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Yapıya dolgu yapılması ve tesviye",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Tesviye edimis yüzeyin boyanması",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Ahşaba giriş; çeşitli ahşap türlerinin ve işleme yöntemlerinin anlatılması; Bu malzemeyle ölçekli bir mobilya ödevi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev çalışması; ölçekli mobilya modeli",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Ödev çalışması; boyama ve vernikleme",
+    "outcomes": "1-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=240",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=240"
  },
  "EUT 241E": {
   "code": "EUT 241E",
   "name": "Computer Aided Design",
+  "nameEn": "Computer Aided Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -653,15 +1590,87 @@
    "Hafta 13 · Basit görselleştirme : Malzeme ve renk özellikleri",
    "Hafta 14 · Basit görselleştirme : Işık yerleştirme ve kamera"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgisayarla tasarlama sistemleri, kullanılan diller ve özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayarla tasarlama, çizim, eskiz, takdim yazılımlarının ana hatlarının açıklanması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dosya tipleri ve temel çizim ayar ve araçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "2 Boyutlu tasarım komutları: Doğrular ve Eğriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "2 Boyutlu tasarım komutları: Doğru ve Eğri düzenleme işlemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "2 Boyutlu tasarım komutları:. Dönüştürme komutları",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "2 Boyutlu tasarım komutları:. Ölçülendirme, teknik resim hazırlama.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "3 Boyutlu tasarım komutları: Poligon ağlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "3 Boyutlu tasarım komutları:.Yüzeyler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "3 Boyutlu tasarım komutları:. Yüzey düzenleme işlemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "3 Boyutlu tasarım komutları:.: Katılar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "3 Boyutlu tasarım komutları:. Katı düzenleme komutları",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Basit görselleştirme : Malzeme ve renk özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Basit görselleştirme : Işık yerleştirme ve kamera",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Cheng R. K. C., 2014, Inside Rhinoceros 5, Cengage Learning,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=241",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=241"
  },
  "EUT 246E": {
   "code": "EUT 246E",
   "name": "Tasarım Tarihi I",
+  "nameEn": "History of Design I",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -694,15 +1703,87 @@
    "Hafta 13 · Çevre Ülkelerde Tasarım",
    "Hafta 14 · Tasarım Odaklı Gezi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstri Devrimi Öncesi Üretim ve Tüketim İlişkileri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Rönesans: Zanaat ve Sanat Ayrımı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Endüstri Devrimi Öncesinde Tasarım",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "19. Yüzyılda Genişleyen Endüstri, Dünya Fuarları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım Reformları: Shakers, Estetik Hareket, Arts & Crafts",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarım Reformları: Art Nouveau ve Yansımaları,",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Vernaküler Tasarım",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "I. Dünya Savaşı’nın Etkileri ve Savaş Endüstrisinin Tasarıma Etkileri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Tasarım ve Modernizm: Proto-modernizm, Deutscher Werkbund, Wiener Werkstatte, De Stijl",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım ve Modernizm: Uluslararası Üslup, UAM, Makine Estetiği",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım ve Modernizm: Bauhaus",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Yaşam Biçimi Olarak Tüketim: Endüstriyel Tasarım Mesleğinin Doğuşu",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Çevre Ülkelerde Tasarım",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım Odaklı Gezi",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Raizman, D., 2003, History of Modern Design, Laurence King Publishing."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=246",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=246"
  },
  "EUT 261E": {
   "code": "EUT 261E",
   "name": "Model Yapım I",
+  "nameEn": "Model Making I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -716,12 +1797,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=261",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=261"
  },
  "EUT 262E": {
   "code": "EUT 262E",
   "name": "Model Yapım II",
+  "nameEn": "Model Making II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -735,12 +1816,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=262",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=262"
  },
  "EUT 271E": {
   "code": "EUT 271E",
   "name": "Ürün Tasarımı için Araştırma",
+  "nameEn": "Research for Product Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -771,15 +1852,87 @@
    "Hafta 13 · Temsili kullanıcı modeli geliştirme",
    "Hafta 14 · Görsel ve sözel anlatı geliştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırma nedir? Neden araştırma yapılır?",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım sürecinde yaygın olarak kullanılan araştırma yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Önde gelen tasarım danışmanlık firmaları tarafından geliştirilen kullanıcı araştırma yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Görüşme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Farklı görüşme teknikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gözlem teknikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Katılımcı gözlem",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Odak Grupları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Etnografik araştırma yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Video etnografi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Kullanıcı senaryoları geliştirme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Davranışsal prototip geliştirme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Temsili kullanıcı modeli geliştirme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Görsel ve sözel anlatı geliştirme",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=271",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=271"
  },
  "EUT 272E": {
   "code": "EUT 272E",
   "name": "Ürün Tasarımında İnsan Faktörleri",
+  "nameEn": "Human Factors inProduct Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -812,15 +1965,87 @@
    "Hafta 13 · Kullanıcı arayüzleri ve ürün ara yüzlerinin düzenlenmesi",
    "Hafta 14 · Endüstriyel tasarımda ergonomi uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnsan Faktörlerine giriş, Temel kavramlar, Alanın tarihsel gelişimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Antropometrik tasarım",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Oturma ergonomisi",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Elin ergonomisi ve el aleti tasarımı",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Bilgi kavramı ve bilginin işlenmesi",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Kodlanmış bilgi ve bilginin gösterimi",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Görsel iletişim ve statik görsel göstergeler",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik görsel göstergeler",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Duysal, dokunsal, kokusal ve sözlü iletişim ve göstergeler",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kontroller, kontrollerin kodlanması",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kontrollerin tasarımı",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kontrol ve göstergelerin uyumu",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kullanıcı arayüzleri ve ürün ara yüzlerinin düzenlenmesi",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Endüstriyel tasarımda ergonomi uygulamaları",
+    "outcomes": "1-2-5"
+   }
+  ],
   "textbooks": [
    "Salvendy G.,2012, Handbook of Human Factors and Ergonomics, Wiley"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=272",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=272"
  },
  "EUT 282E": {
   "code": "EUT 282E",
   "name": "Bilgi.Destekli 3D Modelleme",
+  "nameEn": "Computer Aided 3D Modeling",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -834,12 +2059,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=282",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=282"
  },
  "EUT 314E": {
   "code": "EUT 314E",
   "name": "Plastik Malzeme Bilgisi ve Teknolojisi",
+  "nameEn": "Plastics Materials and Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -872,15 +2097,87 @@
    "Hafta 13 · Haddeleme, döküm, köpükleme",
    "Hafta 14 · Birleştirme yöntemleri."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Polimer malzemeler,",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Molekül yapıları ve karışımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Önemli plastik gruplarının tanıtılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Plastiklerin genel özellikleri: Mukavement, tokluk, yorulma, sertlik, sıcaklığın etkisi, alevlenme,",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Kimyasal etki ve elektriksel özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Kuvvetlendirilmiş plastikler ve kuvvetlendirme çeşitleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Plastiklerle tasarım, plastikler için tasarım dataları.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Takviye edilmiş plastiklerin tasarımı.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Enjeksiyon projesi, Ekstrüzyon,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Basınçlı ve transfer kalıplama,",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Şişirmeyle kalıplama.",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Işıl şekillendirme,",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Haddeleme, döküm, köpükleme",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Birleştirme yöntemleri.",
+    "outcomes": "2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=314",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=314"
  },
  "EUT 315E": {
   "code": "EUT 315E",
   "name": "Endüstriyel Ürün Tasarımı III",
+  "nameEn": "Industrial Product Design III",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -894,12 +2191,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=315"
  },
  "EUT 316E": {
   "code": "EUT 316E",
   "name": "Endüstriyel Ürün Tasarımı IV",
+  "nameEn": "Industrial Product Design IV",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -913,12 +2210,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=316",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=316"
  },
  "EUT 319E": {
   "code": "EUT 319E",
   "name": "Industrial Design Studio II",
+  "nameEn": "Industrial Design Studio II",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -953,15 +2250,87 @@
    "Hafta 13 · Tasarımın bilgisayar destekli modellenmesi",
    "Hafta 14 · Sonuç ürün veya ürün ailesi önerisinin sözlü, yazılı ve görsel olarak sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje konusunun bildirilmesi ve tartışılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Pazar ve rakip analizi ve kullanıcı araştırmalarının planlanması",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 3,
+    "topic": "Pazar ve rakip analizi ve kullanıcı araştırmalarının yürütülmesi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmaların sözlü, yazılı ve görsel olarak sunulması ve paylaşılması",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Konsept geliştirme çalışmalarına başlanması",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 6,
+    "topic": "Konsept geliştirme çalışmalarının ilerletilmesi",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 7,
+    "topic": "Konsept sunumu",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 8,
+    "topic": "Tasarım detaylandırma, sistem tasarımının geliştirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Tasarım detaylandırma, arayüz ve kurumsal kimlik çalışmaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım detaylandırma, ürünün firma ve Pazar gerçekliği içinde konumlandırılması",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım sonuçlandırma, teknik meseleler",
+    "outcomes": "2-3-4-5-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Üç boyutlu çalışma ve görünüm modeli üretimi",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarımın bilgisayar destekli modellenmesi",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 14,
+    "topic": "Sonuç ürün veya ürün ailesi önerisinin sözlü, yazılı ve görsel olarak sunumu",
+    "outcomes": "1-7"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=319",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=319"
  },
  "EUT 320E": {
   "code": "EUT 320E",
   "name": "Industrial Design Studio III",
+  "nameEn": "Industrial Design Studio III",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -992,15 +2361,87 @@
    "Hafta 13 · Proje detaylandırılması,",
    "Hafta 14 · II. Proje Final Jüri Değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş-I. Proje Konusunun Verilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Konu ile ilgili Araştırma ve Bulguların Paylaşımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Sergileme tasarımı prensipleri: Algılama, görsel iletişim, kavrama, sergileme organizasyonu;",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Yarıyıl projesi olarak yapılan endüstri ürünü çalışmasında zaman ve mekan içinde ürünün sunumu;",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "I.Proje Jüri Değerlendirmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "II. Proje Konusunun Verilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "İki ya da üç boyutlu sergileme elemanlarının geliştirilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Stüdyo Çalışması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kavramdan sunuma süreç",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "II.Projenin Ara jüri Değerlendirmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Fotoğraf ve ölçekli modeller; Sözlü, yazılı, görsel sunuş.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ortografik çizim ve teknik çizimlerin hazırlanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Proje detaylandırılması,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "II. Proje Final Jüri Değerlendirmesi",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Lorenc, J. et al., 2007, What is Exhibition Design?, Rotovision."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=320",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=320"
  },
  "EUT 324E": {
   "code": "EUT 324E",
   "name": "Tasarımda Göstergebilim ve Anlambilim",
+  "nameEn": "Semiology&Semantics in Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1033,15 +2474,87 @@
    "Hafta 13 · Tasarım stillerinin anlambilimsel açıklaması,",
    "Hafta 14 · Tasarımın göstergebilimsel karakterini öğrenilmiş bilgilerle sorgulama."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstri ürünlerinde göstergebilimsel çözümlemenin önemi ve boyutları,",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Ürün Anlambiliminde zihinsel dünya ve kavramsal ön koşullar,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ürünlere ilişkin bilgiler ve imgeler,",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "İnsan-nesne-toplum sisteminin işlevsel özelliği ve anlamsal yapısı,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ürün anlam profile,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ürün, kullanıcı kültürü, firma; kavramları, imgeleri, kimlikleri,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ürünlerin çok yönlü bağları ve türlendirme özellikleri,",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Nesnelerin okunabilirliği,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Biçim elemanlarının anlambilimsel çözümlenmesi,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım sürecinde anlatım biçimleri,",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ürün anlambilimine dayalı tasarım davranışları,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım akımları ve eğilimleri,",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım stillerinin anlambilimsel açıklaması,",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarımın göstergebilimsel karakterini öğrenilmiş bilgilerle sorgulama.",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=324",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=324"
  },
  "EUT 325E": {
   "code": "EUT 325E",
   "name": "Tasarım Tarihi II",
+  "nameEn": "History of Design II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1074,15 +2587,87 @@
    "Hafta 13 · Tasarım ve Zanaat İlişkisinde Yeni Boyutlar",
    "Hafta 14 · 21.Yüzyıla Yollar: Reform ve Sosyal Sorumluluk"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "II. Dünya Savaşı’nın Genel Toplumsal Etkileri: Üretim ve Tüketim Dengeleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "II. Dünya Savaşı Sonrası Yeniden Yapılanma: İngiltere ve ABD",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "II. Dünya Savaşı Sonrası Yeniden Yapılanma: Almanya ve İtalya",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "II. Dünya Savaşı Sonrası Yeniden Yapılanma: Rusya ve Japonya",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım ve Kurum Kültürü",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Kitle Kültürü ve Eleştirisi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Kitle Kültürünün Boyutları:: Kitlesel Tasarım, Pop ve Protest,",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kitle Kültürünün Boyutları: Grafik ve Yeraltı (Underground), Anti-tasarım",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Yeni Teknolojiler, Yeni Malzemeler ve Tasarıma Tarihsel Perspektifte Etkileri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Radikal Tutumlar: Teknoloji, Güvenlik ve Çevre",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Politika, Çoğulculuk ve Tasarımda Postmodernizm",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Dijital Dünya ve Ürün Tasarımında Yeni Yaklaşımlar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım ve Zanaat İlişkisinde Yeni Boyutlar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "21.Yüzyıla Yollar: Reform ve Sosyal Sorumluluk",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Raizman, D., 2003, History of Modern Design, Laurence King Publishing."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=325",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=325"
  },
  "EUT 326E": {
   "code": "EUT 326E",
   "name": "Seramik Tasarımı ve Teknolojisi",
+  "nameEn": "Ceramics Design and Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1115,15 +2700,87 @@
    "Hafta 13 · Uygulama -Sırlı pişirim",
    "Hafta 14 · Değerlendirme -Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Seramiğin tanımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Aletler, malzeme ve örneklerin tanıtımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Model ve kalıp için eskizlerin çizilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Seri üretim yöntemleri hakkında bilgilendirme",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Üretim yönteminin belirlenmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Model yapımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Model yapımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Alçı kalıp hazırlama",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kalıp kurutma, Döküm, Rötuş, Bisküvi pişirimi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kalıp kurutma, Döküm, Rötuş, Bisküvi pişirimi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Kurutma yöntemleri -Bisküvi pişirimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Endüstriyel ve Artistik sırlar- Renk ve sır seçimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama -Sırlı pişirim",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Değerlendirme -Sunum",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=326",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=326"
  },
  "EUT 328E": {
   "code": "EUT 328E",
   "name": "Endüstriyel Tasarımda Animasyon Uygulamaları",
+  "nameEn": "Animation Applications in Industrial Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1156,15 +2813,87 @@
    "Hafta 13 · Render bilgisi: Gelişmiş teknikler. Bunların kısa filme uygulanması.",
    "Hafta 14 · Kurgu, ses, müzik. Kısa filmin kritiği."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma ve ders içeriğinin aktarımı. Teorik ve tarihsel bilgi: Zaman içinde animasyon örnekleri, türler. Bir flipbook yaratma.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Film ve animasyon film bilgisi. Sinopsis, senaryo, storyboard, layout. Öğrencilerin kısa bir filmi için senaryo yazımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "NURBS modelleme: Basit ve karmaşık objeler oluşturma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Subdivision modelleme: Organik objeler oluşturma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Poligon modelleme bilgisi: Sahne tasarımı ve modellemesi. Kısa filmdeki obje ve sahnelerin oluşturulması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Poligon modelleme bilgisi: Karakter tasarımı ve modellemesi. Kısa filmdeki karakterlerin oluşturulması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Doku kaplama. Yardımcı programların 3b programla birlikte kullanımı. Kısa filmdeki dokuların kaplanması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Animasyona giriş: Zamanlama. Zıplama, ezilme, esneme. Deformasyonlar. Kamera hareketleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Animasyon: İkincil hareket. Hızlanma, yavaşlama. Anahtar kareler. Kısa filmdeki animasyonların oluşturulması.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Efektlere giriş: Paint effects, yumuşak objeler, partiküller.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Işık bilgisi ve ışıklandırma.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Render bilgisi: Temel parametreler.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Render bilgisi: Gelişmiş teknikler. Bunların kısa filme uygulanması.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Kurgu, ses, müzik. Kısa filmin kritiği.",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=328",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=328"
  },
  "EUT 334E": {
   "code": "EUT 334E",
   "name": "Tasarım ve Biçim",
+  "nameEn": "Design and Form",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1198,15 +2927,87 @@
    "Hafta 13 · Biçimin kullanıcı ile psikolojik bağı: Görme, algılama, düşünme, beğenme, karşılaştırma, seçebilme vb.,",
    "Hafta 14 · Biçime ulaşma kaynakları: Insan davranışları,alışkanlıkları;doğa;nesneler;teknoloji;tasarım akımları vb."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geçmişte ve güncelde tasarim tanımları ve etkenleri",
+    "outcomes": "1-3-5-6"
+   },
+   {
+    "week": 2,
+    "topic": "Biçim nedir? Kaç şekilde ele alınabilir?",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 3,
+    "topic": "Biçimi meydana getiren etkenler nelerdir?",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Biçimin, araç ya da nsane ile kullanım ilişkisi arasında bir aracı olarak tanım farkı,",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Biçim ve kullanıcı: Kullanıcının fiziksel özellikleri bağlamında biçim ve haptik (el ile kavrama)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Biçim ve işlev: Nesnenin işlevini yerine getirmesi kapsamında biçimin işlev parçaları ile bağı,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Biçim ve strüktür: İşlev parçaları ya da nesnenin bütününde yapısal özellikler ve konturları,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Biçim ve malzeme: Malzemelerin biçimi meydana getirmekteki tipik özellikleri ve etkileri,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Biçim ve detay: Tasarım nesnesinin kalitesinin ayrıntılarda gizli olduğu gerçeği,",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Biçim ve nesne yüzeyi, dokusu vb.. kullanım ile doğrudan temas,",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Nesnenin, buna göre nesne biçiminin çevresi ile bağının biçime etkileri,",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 12,
+    "topic": "Biçimi meydana getiren estetik dil ve ölçütler: Denge, boşluk-doluluk, ritm, monotonluk, altın oran, renk uyumu, doku vb.,",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Biçimin kullanıcı ile psikolojik bağı: Görme, algılama, düşünme, beğenme, karşılaştırma, seçebilme vb.,",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 14,
+    "topic": "Biçime ulaşma kaynakları: Insan davranışları,alışkanlıkları;doğa;nesneler;teknoloji;tasarım akımları vb.",
+    "outcomes": "1-4-5-6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=334",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=334"
  },
  "EUT 335E": {
   "code": "EUT 335E",
   "name": "Cam Tasarımı ve Üretim Teknolojisi",
+  "nameEn": "Glass Design & Prod.Technology",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1238,15 +3039,87 @@
    "Hafta 13 · Pres tabak ve ayaklı bardak tasarımı; eskizler",
    "Hafta 14 · Pres tabak ve ayaklı bardak tasarımı final"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Cam tanımı, formülleri, tipleri, renklendirme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Üfleme tekniği, otomatik üfleme makineleri H28 IS.. kalıp sistemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Proje: şişe ve bardak tasarımı Meyve suyu, alkollü içkiler",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Marka geliştirme süreçleri Fabrika gezisi-Şişe Cam Topkapı Şişe Fabrikası",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Şişe ve bardak tasarımı araştırması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Şişe ve bardak tasarımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Üretim detayları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Model yapımı",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Düz cam ve cam elyaf üretim teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Pres tekniği, makineler, kalıp sistemleri, cam ürün örnekleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Ayaklı bardak makineleri, kalıp sistemleri santrfüj tekniği, örnekler",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Pres tabak ve ayaklı bardak tasarımı ön araştırma ve ilkeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Pres tabak ve ayaklı bardak tasarımı; eskizler",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Pres tabak ve ayaklı bardak tasarımı final",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=335",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=335"
  },
  "EUT 339E": {
   "code": "EUT 339E",
   "name": "Aydınlatma Aygıtı Tasarımının Temel İlkeleri",
+  "nameEn": "Basic Design Principles of Lighting Luminaries",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1278,15 +3151,87 @@
    "Hafta 13 · Bir aydınlatma aygıtı tasarımı detaylandırma",
    "Hafta 14 · Tasarımların finalize edilmesi, sunumu ve değerlendirilmesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aydınlatmanın tanımı, türleri, niteliği; ışığın tanımı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fotometrik büyüklükler ve yasalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Göz ve görme olayı, fizyolojik ve optik esaslar, görsel konfor, kamaşma olayı ve türleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yapma ışık kaynakları ve özellikleri, ışık dağılım karakteristikleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Aydınlatma aygıtı tanımı, görevleri, temel işlevleri, ışık dağılım karakteristikleri, türleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Aydınlatma aygıtının yapımında kullanılan malzemeler, yansıtıcılar, kırıcılar, yayıcılar, ekranlar, conta ve filtreler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "İç ve dış aydınlatma aygıtlarının fotometrik veri yaprakları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İç ve dış aydınlatma aygıtlarının koruma performansları; ışık kaynağı, buna bağlı yardımcı araçlar, elektrik ve elektronik bileşenler ve bunların aygıt tasarımına etkileri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Aydınlatma aygıtı tasarım süreci ve adımları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Aydınlatma aygıtı üretici firma ziyareti.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Bir aydınlatma aygıtı tasarımı analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Bir aydınlatma aygıtı tasarımı uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Bir aydınlatma aygıtı tasarımı detaylandırma",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarımların finalize edilmesi, sunumu ve değerlendirilmesi.",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=339",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=339"
  },
  "EUT 341E": {
   "code": "EUT 341E",
   "name": "Intr. to Mechanical Design",
+  "nameEn": "Intr. to Mechanical Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1300,12 +3245,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=341",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=341"
  },
  "EUT 342E": {
   "code": "EUT 342E",
   "name": "Law and Legal Issues in Design",
+  "nameEn": "Law and Legal Issues in Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1339,15 +3284,87 @@
    "Hafta 13 · Tasarım Hukuku : FSEK kapsamında açılacak tazminat davaları, ceza davaları,",
    "Hafta 14 · Anayasa Hukuku ve MÖHUK ile ilgili kısa bazı açıklamalar, Tasarım Hukuku : Genel bakış ve özetlemeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Medeni Hukuk : Hukukun uygulanması ve kaynakları, dürüstlük ilkesi. hak ehliyeti, fiil ehliyet, Tasarım Hukuku: Fiziki mülkiyet ile fikri mülkiyet arasındaki önemli farklar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım Hukuku : Üçlü koruma : FSEK kapsamındaki koruma, 554 sayılı Kanun Hükmünde Kararname",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım Hukuku : Eser sayılan tasarımlar için FSEK kapsamındaki koruma,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Borçlar Hukuku : Sözleşmenin kurulması, kabul ve icap, sözleşme özgürlüğü,",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım Hukuku : FSEK.m.2.b.3 kapsamında bilimsel eser sayılma alt koşulu,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarım Hukuku : 554 sayılı KHK kapsamındaki (tescilli) korumanın koşulları,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Tasarım Hukuku : 554 sayılı KHK.m.8 : yeniliği-ayırdediciliği etkilemeyen açıklamalar,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Tasarım Hukuku : Tasarımların FSEK kapsamında korunması için son bir koşul, kamu düzeni koşulu,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Tasarım Hukuku : TTKdaki haksız rekabet hükümleri, BK.m.48deki haksız rekabet hükümleri,",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım Hukuku : Eser mahiyetindeki tasarımlarla ilgili FSEKdeki mali haklar,",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım Hukuku : 554 sayılı KHK.m.19-m.20 . gasp hali ve gasbın sona erdirilmesinin sonuçları,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım Hukuku : 554 sayılı KHK kapsamında açılacak tazminat davaları, ceza davaları,",
+    "outcomes": "2-3-6"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım Hukuku : FSEK kapsamında açılacak tazminat davaları, ceza davaları,",
+    "outcomes": "2-3-6"
+   },
+   {
+    "week": 14,
+    "topic": "Anayasa Hukuku ve MÖHUK ile ilgili kısa bazı açıklamalar, Tasarım Hukuku : Genel bakış ve özetlemeler",
+    "outcomes": "1-2-3-4-6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=342"
  },
  "EUT 343E": {
   "code": "EUT 343E",
   "name": "Tipografi",
+  "nameEn": "Typography",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1380,15 +3397,87 @@
    "Hafta 13 · Ürün logo tasarımı örnekleri inceleme",
    "Hafta 14 · Ürün logo tasarımı uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tipografinin tarihçesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Temel font tasarımları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Baskı teknolojileri ve tipografi ilişkisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tipografi ve iletişim ilişkisi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tipografi ve iletişim araştırmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gündelik yaşam ve tipografi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Gündelik yaşamda tipografi üzerine etnografik araştırma",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Gündelik yaşamda tipografi üzerine etnografik araştırma sonuçları",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Ürün tasarımı ve grafik tasarım ilişkisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Marka, logo tasarımı ve ürün ilişkisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Logo ve marka ilişkisi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Logo ve marka ilişkisi üzerine analizler",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Ürün logo tasarımı örnekleri inceleme",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Ürün logo tasarımı uygulama",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=343",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=343"
  },
  "EUT 347E": {
   "code": "EUT 347E",
   "name": "Mücevher Tasarımına Giriş",
+  "nameEn": "Introduction to Jewelry Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1422,17 +3511,89 @@
    "Hafta 13 · Mum işleme tekniği. (dökümü yapılacak ürün mumdan çalışılır)",
    "Hafta 14 · Tesfiye ve cila"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Soyut bir kavram olan duyguların görsellestirilmesi",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 2,
+    "topic": "Alternatiflerden biri seçilerek vücutta taşınan bir ürün konsepti geliştirilir.",
+    "outcomes": "6"
+   },
+   {
+    "week": 3,
+    "topic": "Proje 2: Ritmik bir oluşum olan müziğin görselleştirilmesi, 2 boyutlu.",
+    "outcomes": "6"
+   },
+   {
+    "week": 4,
+    "topic": "Proje 2: Ritmik bir oluşum olan müziğin görselleştirilmesi, 3 boyutlu. (buluntu malzemeler ve maket malzemeleri ile)",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Proje 3: Metale giriş. Testere ile kesim işlemi. Kitap ayracı.",
+    "outcomes": "1-3-4-6"
+   },
+   {
+    "week": 6,
+    "topic": "Tesfiye ve cila işlemleri. Kitap ayracı uygulaması devam.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Proje 4: Kaynak işlemi.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Proje 4: Kaynak işlemi. Uygulama",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kaynak uygulaması iki ayrı tür (bakır ve pirinç) metal kaynağı ile devam eder.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Proje 5: Metal broş.",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 11,
+    "topic": "İğne mekanizması uygulama",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Proje 6: Döküm yoluyla yüzük. Kapalıçarşı atölyelerine gezi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Mum işleme tekniği. (dökümü yapılacak ürün mumdan çalışılır)",
+    "outcomes": "1-2-3-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "Tesfiye ve cila",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "The Complete Metalsmith and Handbook, McCreight, Tim, Davis Publications, 1996,",
    "Metals in the Service of Men, Alexander, W., Street, A. , Penguin Books, 1990,",
    "Türk Maden Sanatı, Bodur, F., Türk Kültürüne Hizmet Vakfı Sanat Yayınları , 1987,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=347",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=347"
  },
  "EUT 350E": {
   "code": "EUT 350E",
   "name": "Çağdaş Mobilya Tasarımı",
+  "nameEn": "Contemporary Furniture Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1465,15 +3626,87 @@
    "Hafta 13 · Dönem Projesi: Verilerin toplanması",
    "Hafta 14 · Dönem Projesi: Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çağdaş mobilya tasarımına giriş: Tasarım temelleri ve insan algılaması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Mobilya ve ergonomi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Mobilya teknolojisi: Mobilyada denge ve sağlamlık",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Malzemeler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yapım detayları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çağdaş imalat yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Tasarım yöntemleri ve yaklaşımları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Başarılı mobilya tasarımı projelerinin örnek olay olarak incelenmesi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Mobilya tasarımında çağdaş eğilimler ve eğilim belirleyiciler",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Mobilya tasarımcıları: Seçilmiş çalışmalar",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Mobilya tasarımının geleceği: Senaryolar",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 12,
+    "topic": "Mobilya tasarımının geleceği için olası değişik senaryoların incelenmesi",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem Projesi: Verilerin toplanması",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Projesi: Sunum",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=350",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=350"
  },
  "EUT 351": {
   "code": "EUT 351",
   "name": "Atölye III (Metal İşleme ve Dosya Hazırlama)",
+  "nameEn": "Workshop III (Metalwork and Portfolio)",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -1505,15 +3738,87 @@
    "Hafta 13 · Ödev çalışması; detay ve aksesuarların eklenmesi",
    "Hafta 14 · Yapılmış çalışmaların stüdyo ortamında fotograflanması ve dosya hazırlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Metale giriş; çeşitli metallerin ve işleme yöntemlerinin anlatılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bağlayıcılar; çeşitlerin anlatılması; belli başlı bağlayıcılarla hareketli ve strüktürel bir heykel yapımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Metal levhaların işlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Metal levhalarla ödev çalışması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Metal tornalama; pirinç, alüminyum, çelik; diş açma, pafta-kılavuz takımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Metal profillerin işlenmesi ve kullanım yerleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Metal çubuklarla ödev çalışması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bir kinetik robot tasarlanması ve metal strüktürünün hazırlanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ödev çalışması; kinetik robot",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Ödev çalışması; kinetik robot; kabuğun çeşitli malzemelerle oluşturulması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Ödev çalışması; kinetik robot; elektrik komponentlerin tariflenmesi ve kurgusu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ödev çalışması; hareket mekanizmaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev çalışması; detay ve aksesuarların eklenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Yapılmış çalışmaların stüdyo ortamında fotograflanması ve dosya hazırlanması",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=351"
  },
  "EUT 352E": {
   "code": "EUT 352E",
   "name": "Project Management in Design",
+  "nameEn": "Strategic Design & Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1546,6 +3851,78 @@
    "Hafta 13 · Stratejik tasarım ve yönetim üzerine vaka çalışmaları: Türkiyeden örnekler",
    "Hafta 14 · Stratejik tasarım ve yönetim üzerine vaka çalışmaları: Dünyadan örnekler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Stratejik tasarım ve yönetime giriş",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Stratejik tasarım",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım inovasyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarım yönetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İş planı ve değer önerisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarım ve pazar araştırması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Pazarlama ve marka iletişimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Değerlendirme ve karar verme süreçleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Proje yönetimi yöntemlerine giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yeni proje yönetimi yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Muhasebe ve Finans",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım girişimciliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Stratejik tasarım ve yönetim üzerine vaka çalışmaları: Türkiyeden örnekler",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Stratejik tasarım ve yönetim üzerine vaka çalışmaları: Dünyadan örnekler",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Calabretta, G., Gemser, G., Karpen, I. (2016). Strategic Design: 8 Essential Practices Every Strategic Designer Must Master. Laurence King Publishing: London.",
    "Best, K. (2010). The Fundamentals of Design Management. Ava Publishing: Lausanne.",
@@ -1554,12 +3931,12 @@
    "Osterwalder, A. & Pigneur, Y. (2010). Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers. John Wiley and Sons: London.",
    "Ries, E. (2019). The Lean Startup Penguin Business: London"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=352",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=352"
  },
  "EUT 355E": {
   "code": "EUT 355E",
   "name": "Mekan Düzenlemesi",
+  "nameEn": "Space Organization",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1592,15 +3969,87 @@
    "Hafta 13 · Dönem Projesi: Verilerin toplanması",
    "Hafta 14 · Dönem Projesi: Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mekan düzenlemesinin tanımlanması. Mekan Tahsisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Mekan ve mevcut koşulların etkileşimi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Çevreleyen alanlar, mekanın büyüklüğü, kesitler, özellikler, strüktürel konular ile ilişkisi.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Altyapı - üstyapı ilişkileri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Organizasyon kavramları, sirkülasyon örüntüleri ve yasal sınırlamalar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kullanıcı - Mekan Etkileşimi: İnsan Faktörü.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kullanıcı konforu, psikolojik ve sosyal etkiler.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kullanıcı - Ürün - Mekan Arayüzü",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Malzemeler, bitirmeler, dokular ve aksesuarlar.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Renkler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Aydınlatma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bakım",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem Projesi: Verilerin toplanması",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Projesi: Sunum",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=355",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=355"
  },
  "EUT 356E": {
   "code": "EUT 356E",
   "name": "Tasarımda Renk",
+  "nameEn": "Color in Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1614,12 +4063,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=356",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=356"
  },
  "EUT 359E": {
   "code": "EUT 359E",
   "name": "İleri Modelcilik Teknikleri",
+  "nameEn": "Advanced Modelmaking Techniques",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1633,12 +4082,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=359",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=359"
  },
  "EUT 361E": {
   "code": "EUT 361E",
   "name": "Tasarımda Çağdaş Konular",
+  "nameEn": "Contemporary Issues in Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1652,12 +4101,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=361",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=361"
  },
  "EUT 365E": {
   "code": "EUT 365E",
   "name": "Tasarım Odaklı Düşünmenin Temelleri",
+  "nameEn": "Fund. of Design Thinking",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -1671,12 +4120,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=365",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=365"
  },
  "EUT 367E": {
   "code": "EUT 367E",
   "name": "Mekanik Tasarıma Giriş",
+  "nameEn": "Intr. to Mechanical Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1709,15 +4158,87 @@
    "Hafta 13 · Bağlama elemanları çalışması",
    "Hafta 14 · Mekanizmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Basit mekanizmalar, temel mekanik kavramlar, mekanik sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mekanizmaların kinematik analizi, hareket ve hız analizi, serbestlik derecesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerji kaynakları, aktarma elemanları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İki boyutlu mekanik sistemler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Dişliler, kamlar, örnek mekanizmalar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Yaylar ve elastik elemanlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Hidrolik ve pnömatik elemanlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Elektro-Mekanik elemanlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Üç boyutlu mekanik sistemler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem içi proje çalışması: Mekanik Sistemler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Sabit bağlama elemanları: Kaynak, lehim, yapıştırma, perçinler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Hareketli ve çözülebilir bağlama elemanları: Cıvata, somun, pimler, menteşeler, kilitler, manyetik tutunma, örneklerin incelenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bağlama elemanları çalışması",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Mekanizmalar",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=367",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=367"
  },
  "EUT 371E": {
   "code": "EUT 371E",
   "name": "Biyo-esinlenme ile tasarım",
+  "nameEn": "Bio-inspired Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1731,12 +4252,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=371",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=371"
  },
  "EUT 383E": {
   "code": "EUT 383E",
   "name": "Endüstriyel Tasarımda Sayısal Prototipleme ve Üretim",
+  "nameEn": "Digital Prototyping and Manufacturing in Industrial Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1750,12 +4271,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=383",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=383"
  },
  "EUT 413E": {
   "code": "EUT 413E",
   "name": "Endüstriyel Ürün Tasarımı V",
+  "nameEn": "Industrial Product Design V",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1769,12 +4290,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=413",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=413"
  },
  "EUT 419E": {
   "code": "EUT 419E",
   "name": "Industrial Design Studio IV",
+  "nameEn": "Industrial Design Studio IV",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1807,15 +4328,87 @@
    "Hafta 13 · İki ve üç boyutlu modelleme çalışmaları",
    "Hafta 14 · Sonuç ürün önerisinin sözlü, yazılı ve görsel olarak sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje konusunun bildirilmesi ve tartışılması",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Pazar, kullanıcı ve teknoloji araştırmalarının planlanması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Pazar, kullanıcı ve teknoloji araştırmalarının yürütülmesi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmaların sözlü , yazılı ve görsel olarak sunulması ve paylaşılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Konsept geliştirme çalışmalarına başlanması",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Konsept geliştirme çalışmalarının ilerletilmesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Konsept sunumu",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Ürün programının, üretim, pazarlama ve kullanım senaryolarının geliştirilmesi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Sürecin ve senaryoların belirli bir ürün önerisine ulaşma yönünde değerlendirilmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım detaylandırma, kullanım ve üretim",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım detaylandırma, iletişim, pazarlama ve yönetim",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım sonuçlandırma, teknik meseleler",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "İki ve üç boyutlu modelleme çalışmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Sonuç ürün önerisinin sözlü, yazılı ve görsel olarak sunumu",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=419",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=419"
  },
  "EUT 423E": {
   "code": "EUT 423E",
   "name": "Ürün Tasarımnda Kült.ve İletş.",
+  "nameEn": "Cult.and Com.in Product Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1847,15 +4440,87 @@
    "Hafta 13 · İnsan merkezli yaklaşımda araştırma ve tasarlama yöntemleri, örnek olay",
    "Hafta 14 · İnsan ve nesne merkezli yaklaşımların karşılaştırmalı analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarımda iletişim, anlam ve temsil konularına giriş, tarihçe ve amaçlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ürün merkezli yaklaşımların temeli olarak dilbilim ve göstergebilim",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Düzanlam, yananlam, gösteren, gösterilen ve gösterge",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Belirti göstergesi, görüntüsel gösterge ve simge",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarımı anlamada ürün merkezli ve kullanıcı merkezli yaklaşımlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Özne merkezli tasarımda temel kavramlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Ürünlerin kullanım bağlamındaki anlamları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ürünlerin dil bağlamındaki anlamları",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Ürünlerin oluşum ve yaşam bağlamındaki anlamları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Ürünlerin insan yapımı nesneler ekolojisi bağlamındaki anlamları",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Heyecan, deneyim ve tasarım",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "İnsan merkezli yaklaşımda araştırma ve tasarlama yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "İnsan merkezli yaklaşımda araştırma ve tasarlama yöntemleri, örnek olay",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "İnsan ve nesne merkezli yaklaşımların karşılaştırmalı analizi",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=423",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=423"
  },
  "EUT 429E": {
   "code": "EUT 429E",
   "name": "Sürdürülebilir Ürün Tasarımı",
+  "nameEn": "Sustainable Product Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -1869,12 +4534,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=429",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=429"
  },
  "EUT 434E": {
   "code": "EUT 434E",
   "name": "Tasarımda Görme",
+  "nameEn": "Seeing in Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1907,15 +4572,87 @@
    "Hafta 13 · Görmeyi anlamada holografiyi anlama",
    "Hafta 14 · Genel değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarımda görmenin tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Süreç tasarımı: malzemenin seçimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Ürünle tasarım sürecinin ilişkisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarımla üretimin ilişkisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Malzemeyi tasarımcı olarak algılama",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Görme ve modülerite kuramı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Görmenin nörolojik karakteri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Görmenin minimum koşulları (görmenin limitleri)",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Görme ve duyma arasındaki fark",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Gözle beyin arasındaki ilişki",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Görmeyi anlamada holografiyi anlama",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 14,
+    "topic": "Genel değerlendirme",
+    "outcomes": "1-3-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=434",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=434"
  },
  "EUT 436E": {
   "code": "EUT 436E",
   "name": "Görüntüleme Teknikleri",
+  "nameEn": "Visualization Techniques",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1948,15 +4685,87 @@
    "Hafta 13 · Çekilmiş olan tüm çalışmalara dayalı seminer",
    "Hafta 14 · Proje çalışmalarının sonuçlandırılması ve sergi için fotoğraf seçiminin yapılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fotoğraf ve kısa tarihi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bir araç olarak fotoğraf makinası",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Temel fotoğraf bilgileri; time-diyafram ilişkisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Temel fotoğraf bilgileri; pozlandırma ve duyarlılık ilişkisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Öğrencilerin seçmiş olduğu fotoğraflar üzerine tartışma ve yorumlama; yıliçi sınavı",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Tema seçimi. Proje konularının tespiti.",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Kısa sınav. yazılı sınav sonuçlarının değerlendirilmesi",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Pinhole fotoğrafçılık; prensipler. Bir pinhole makinasının yapımı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Pinhole fotoğrafçılık; örnek uygulamalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Kampüs içerisinde soyutlama çalışması; grafik düzenleme ve detay duygusu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Dış çekim; ön-arka plan",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Dış çekim; doğal ışığın kullanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Çekilmiş olan tüm çalışmalara dayalı seminer",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Proje çalışmalarının sonuçlandırılması ve sergi için fotoğraf seçiminin yapılması",
+    "outcomes": "3-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=436",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=436"
  },
  "EUT 439E": {
   "code": "EUT 439E",
   "name": "Tasarımda Meslek Pratiği",
+  "nameEn": "Professional Practice in Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1989,15 +4798,87 @@
    "Hafta 13 · Tasarım sürecini görselleştirme",
    "Hafta 14 · Portfolyo hazırlama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarımda kariyer",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarımcının değişen rolleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarımcı kimliği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yazılı ve sözlü proje sunum teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tasarımcının çalışma ortamı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tasarımcının çalışma ortamını örnekler üzerinden inceleme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yasal, mali ve idari sorumluluklar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Mesleki haklar ve mesleki organizasyonlar",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Fikri haklar",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Patent, faydalı model, tasarım tescili",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 12,
+    "topic": "Özgeçmiş hazırlama",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım sürecini görselleştirme",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Portfolyo hazırlama",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Nelson, H. G., & Stolterman, E. (2012). The design way: Intentional change in an unpredictable world - foundations and fundamentals of design competence. Cambridge: The MIT Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=439",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=439"
  },
  "EUT 441E": {
   "code": "EUT 441E",
   "name": "New Product Development",
+  "nameEn": "New Product Development",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2030,15 +4911,87 @@
    "Hafta 13 · Uluslararası yeni ürün geliştirme vaka analizi",
    "Hafta 14 · Türkiye den yeni ürün geliştirme vaka analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Firmaları yeni ürün tasarımı ve geliştirmeye yönlendiren faktörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yeni ürün stratejileri, yeni ürün geliştirmenin önemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yeni ürün geliştirme faaliyetlerinin süreç ve organizasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Ürün planlama",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Müşteri/kullanıcı ihtiyaçlarının saptanması",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Ürün spesifikasyonları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Konsept geliştirme",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Konsept seçimi ve testi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ürün mimarisi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Yeni ürün geliştirme sürecinde endüstriyel tasarımın rolü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Prototip",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ürün geliştirmenin ekonomisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası yeni ürün geliştirme vaka analizi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye den yeni ürün geliştirme vaka analizi",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Product Design and Development, Ulrich, K.T. and Eppinger, S.D., , McGrawHill Inc, 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=441",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=441"
  },
  "EUT 446E": {
   "code": "EUT 446E",
   "name": "Çokluortam Tasarım Stüdyosu",
+  "nameEn": "Multimedia Design Studio",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2071,15 +5024,87 @@
    "Hafta 13 · Proje sonlandırma 2",
    "Hafta 14 · DÖNEM PROJESİ 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Tanımı oluşturma 1",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Tanımı oluşturma 2",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Project detailed visual presentation 1",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Project detailed visual presentation 2",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "İşlevsel modüller 1",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "İşlevsel modüller 2",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "DÖNEM PROJESİ 1",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Arayüz tasarımları 1",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Arayüz tasarımları 2",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Bütünselleştirme 1",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Bütünselleştirme 2",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Proje sonlandırma 1",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sonlandırma 2",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "DÖNEM PROJESİ 2",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=446",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=446"
  },
  "EUT 447E": {
   "code": "EUT 447E",
   "name": "Etkileşimli Tasarımda Yaratıcılık",
+  "nameEn": "Creativity in Interaction Designe",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2110,15 +5135,87 @@
    "Hafta 13 · Oyun Tasarımı",
    "Hafta 14 · Genel Tasarım Problemleri ve Çözüm Önerileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnteraktif medyada yaratıcılık kavramına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Etkileşim Tasarım Kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Rota yapıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Enformasyon yapıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Etkileşimde 10 Altın Kural",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Layout Tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Simge Tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ses Kullanımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Konuşma Kullanımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Senkronizasyon, kurumsal bütünlük ve içerik tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Bilgi Destek Sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Alış-veriş sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Oyun Tasarımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Genel Tasarım Problemleri ve Çözüm Önerileri",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=447",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=447"
  },
  "EUT 450E": {
   "code": "EUT 450E",
   "name": "20.yy SanatveTasarım Arasındaki Etkileşim",
+  "nameEn": "Interaction Between 20th Century Art and Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2149,15 +5246,87 @@
    "Hafta 13 · Modernizm ve Post Modernizm: Las vegas örneği, sanatın maddesizleşmesi",
    "Hafta 14 · İstanbul Modern’e Gezi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geç İzlenimcilik",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Psikanaliz, primitivism, Avrupa dışı kültürlerin bulunuşu",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Fovizm, Alman İfadeciliği, Grafik anlatımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kübizm, Kübizm ve nesne",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Fütürizm, Fütürist Manifesto",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Soyut sanat ve fotoğrafın etkisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Dadaism, Sürrealizm",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Konstrüktivizm: Sanat, tasarım, ideoloji",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslararası Stil, Frank Lloyd Wright, The Bauhaus ve Le Corbusier",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Abstract Expressionism",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Pop Art, Fotogerçekçilik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Minimal ve Kavramsal sanat",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Modernizm ve Post Modernizm: Las vegas örneği, sanatın maddesizleşmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "İstanbul Modern’e Gezi",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=450",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=450"
  },
  "EUT 453E": {
   "code": "EUT 453E",
   "name": "Basic Princip. of Yacht Dsgn",
+  "nameEn": "Basic Princip. of Yacht Dsgn",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -2171,12 +5340,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=453",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=453"
  },
  "EUT 456E": {
   "code": "EUT 456E",
   "name": "Moda Aksesuarları Tasarımı",
+  "nameEn": "Fashion Accessories Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2211,15 +5380,87 @@
    "Hafta 13 · Ev aksesuarı tasarımlarının son kararları ve detay tasarımları, proje paftalarının belirlenmesi",
    "Hafta 14 · Ev aksesuarları projelerinin final sunumları, varsa model ya da prototipleri, teslim edilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Aksesuar nedir? Moda aksesuarı, giysi ve ev aksesuarı kavramları ve tasarımlarının gereği üzerine söyleşi",
+    "outcomes": "1-2-3-5-6"
+   },
+   {
+    "week": 2,
+    "topic": "Giyim aksesuarı türleri ve tanımları; şapka, çanta, ayakkabı, kemer, takılar; kolye, yüzük, bilezik, küpe, broş, kravat iğnesi, halhal, düğmeler, fermuarlar, kısmen takı ve kısmen giysi olan aksesuarl",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Giyim aksesuarı için belirlenmiş konunun açıklanması; buna bağlı olarak konunun kısa geçmişi.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Seçilmiş aksesuar konusuna göre malzemeleri ve üretim yöntemleri; tasarımı için ön bilgi; seçilmiş aksesuar, malzeme ve üretim yöntemlerinin analizleri; Eskiz çalışmaları",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Giyim aksesuarlarının giyimdeki ve modadaki konumları, günlük, abiye, gece giysi üzerindeki durumları; Konunun ilk kararları: Firmalar ile bağ kurma ve üretim yöntemi bilgisi edinme",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Giysi aksesuarının detay çözümleri ve kesin kararı. Üretim yönteminin kesinleşmesi",
+    "outcomes": "2-5-7"
+   },
+   {
+    "week": 7,
+    "topic": "Giysi aksesuarının üretilebilirliğinin kesin sınanması ve son model ya da prototiplerinin bitirilmesi. Teslimi.",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Ev aksesuarı kavramı ve türleri: Masa üstü nesneleri, duvara asılanlar, Sehpa-orta masası vb. Üstündeki nesneler, çalışma ortamı aksesuarları, küçük anı nesneleri, yerine göre çocuk oyun aksesuarları",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 9,
+    "topic": "Ev aksesuarı için belirlenmiş olan konuda malzeme bilgisi ve üretim yöntemleri; eskiz çalışmaları; bazı durumlarda firma depolarından var olan ürün elde etme ve değerlendirme",
+    "outcomes": "2-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Konu ile ilgili olarak geçmişe dönük kısa bilgiler ile çağdaş ev aksesuarları değerlendirmesi; eskiz çalışması",
+    "outcomes": "2-3-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "İç mekanların farklı kullanımları ile mekan tasarımlarının klasik, yarı klasik, modern, post modern, karma, çiftlik tarzı, yerel, yöresel. Özelliklerine göre aksesuar farklarının ayırt edilmesi",
+    "outcomes": "2-3-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Ev aksesuarı konulu projenin karara doğru son eskizleri, karar aşaması ve malzeme seçimi",
+    "outcomes": "4-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Ev aksesuarı tasarımlarının son kararları ve detay tasarımları, proje paftalarının belirlenmesi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Ev aksesuarları projelerinin final sunumları, varsa model ya da prototipleri, teslim edilmesi",
+    "outcomes": "2-6-7"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=456",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=456"
  },
  "EUT 4902E": {
   "code": "EUT 4902E",
   "name": "Diploma Projesi",
+  "nameEn": "Graduation Project",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -2252,15 +5493,87 @@
    "Hafta 13 · Prototip Yapımı Sınıf toplantısı proje değerlendirme toplantısı",
    "Hafta 14 · Yazılı ve Görsel Sunumla Projeyi Sonuçlandırma FİNAL SUNUM"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarım İş Tanımı Oluşturma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım konusu ile ilgili Pazar Araştırması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım konusu ile ilgili Kullanıcı Araştırması Sınıf toplantısı proje değerlendirme toplantısı.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Projenin Sosyal Faydasının İncelenmesi Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Projenin Ekonomik Yönden İncelenmesi ARA SUNUM 1",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Üretim Yöntemleri ve Malzeme Araştırması Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Ürün, Servis ve Sistem Oluşturma Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Proje Sürecini Planlama ARA SUNUM 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Malzeme ve Uygun Komponent Araştırması Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Arayüz GeliştirmeSınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ürün Konseptleri Geliştirme ARA SUNUM 3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Ürün Konseptlerinin Test Edilmesi Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Prototip Yapımı Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve Görsel Sunumla Projeyi Sonuçlandırma FİNAL SUNUM",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Milton, A. and Rodgers, P. (2011). Product Design, Laurence King Publishing."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=4902"
  },
  "EUT 492": {
   "code": "EUT 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2293,15 +5606,87 @@
    "Hafta 13 · Sınıf toplantısı proje değerlendirme toplantısı",
    "Hafta 14 · Final Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Sunumu",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "ARA SUNUM 1",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "ARA SUNUM 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "ARA SUNUM 3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Final Sunum",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=492"
  },
  "EUT 492E": {
   "code": "EUT 492E",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2334,15 +5719,87 @@
    "Hafta 13 · Sınıf toplantısı proje değerlendirme toplantısı",
    "Hafta 14 · Final Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Sunumu",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "ARA SUNUM 1",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "ARA SUNUM 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "ARA SUNUM 3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sınıf toplantısı proje değerlendirme toplantısı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Final Sunum",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=492"
  },
  "EUT 501E": {
   "code": "EUT 501E",
   "name": "Research Methods",
+  "nameEn": "Research Methods",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2374,6 +5831,77 @@
    "Hafta 13 · Yansıtıcı Düsünmeye Dayalı Yöntemler (Eylem arastırması, video etnografi, günlük vb.)",
    "Hafta 14 · Bilissel Tasarım Arastırma Yöntemleri (Protokol analizi vb.)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırmanın tanımı: Fen Bilimleri geleneğinde araştırma, Sosyal Bilimler geleneğinde araştırma, tasarım araştırması, Tasarım araştırmalarının tarihçesi, Kütüphane kaynaklarının kullanımı ve literatür araştırması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bilimsel araştırmanın nitelikleri, Araştırma problemi tanımlama, Problem tanımlama yaklaşımları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Geçerlilik, güvenilirlik",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Nicel ve nitel arastırma yaklasımları ve arastırma tasarımı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Nicel Araştırma Modülü: Nicel araştırmanın doğası, çeşitleri ve konuları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Nicel Araştırma Tasarımı, Veri Toplama ve Veri Analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "İstatistik kullanımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Nitel Arastırma Modülü: Veri toplama yöntemleri ve veri analizi, Teori olusturma, Gözlem, Görüsme ve diğer yöntemler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "İnsan Faktörleri Arastırma Yöntemleri (Kullanılabilirlik yöntemleri, Đs analizi vb.)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kültürel Çalısma Yöntemleri (Etnografi yöntemleri vb)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sayısal Analize Dayalı Çalısmalar (İstatistiksel analiz vb)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Geçmis Dönem Çalısmaları Yöntemleri (Historiografi yöntemleri vb)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yansıtıcı Düsünmeye Dayalı Yöntemler (Eylem arastırması, video etnografi, günlük vb.)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Bilissel Tasarım Arastırma Yöntemleri (Protokol analizi vb.)"
+   }
+  ],
   "textbooks": [
    "Yin, R. K. (2009). Case Study Research: Design and Methods (4th ed.). Newbury Park, CA: Sage",
    "Kuniavsky, M. (2003). Observing the User Experience, A Practitioner’s Guide to User Research, San Francisco: Morgan Kaufman Publishers",
@@ -2381,12 +5909,12 @@
    "Archer, B. (1999). On the Methods of Research, Ankara: METU Faculty of Architecture Press",
    "Glaser, B. G. and Strauss, A. L. (1967). The Discovery of Grounded Theory, Chicago, Aldine"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=501"
  },
  "EUT 512E": {
   "code": "EUT 512E",
   "name": "Tasarımda Yönlend.Çalışmalar",
+  "nameEn": "Directed Studies in Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -2418,17 +5946,88 @@
    "Hafta 13 · Literatür çalışmasının, araştırma bulgularının ve sonuçların ayrıntılandırılması",
    "Hafta 14 · Araştırma sonuçlarının sunumu ve tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yönlendirilmiş Çalışmalara giriş: Yöntem ve Kapsam",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Öğrenciler tarafından önerilen araştırma konuları üzerine sunum ve tartışma,",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Seçenekler arasından araştırma konusu seçimi ve seçilen konunun gerekçelendirmes",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Seçilen araştırma konusuna göre özelleşmiş kaynaklar içeren açıklamalı bibliyografya teslimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma hedef ve takvimini içeren detaylı araştırma uygulama önerisinin hazırlanması,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma önerisinin kabulü ve danışmanla birlikte ayrıntılandırılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Literatür taraması üzerine sunum ve tartışma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Alan çalışmasının amaçlara göre planlanması ve onaylanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Alan çalışmasının uygulanması: veri toplama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Verinin analiz için düzenlenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Verinin analiz edilmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Çalışma sonuçlarının literatür çalışmasıyla ilişkilendirilmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Literatür çalışmasının, araştırma bulgularının ve sonuçların ayrıntılandırılması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Araştırma sonuçlarının sunumu ve tartışma"
+   }
+  ],
   "textbooks": [
    "Bordens, K. and Abbott, B. B., (2007). Research Design and Methods: A Process Approach, McGraw-Hill Humanities/Social Sciences/Languages",
    "Makela, M. and Routarinne, S. (eds), (2006). The Art of Research: Research Practices in Art & Design, Helsinki, UIAH",
    "Creswell, J. W., (1994). Research Design: Qualitative and Quantitative Approaches, Sage Publications"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=512",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=512"
  },
  "EUT 558E": {
   "code": "EUT 558E",
   "name": "Environ.sustain.&Indust.Des.",
+  "nameEn": "Environ.sustain.&Indust.Des.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2459,6 +6058,72 @@
    "Hafta 12 · Sürdürülebilirlik çalışmalarının etkisinin artırılması",
    "Hafta 14 · Çevresel sürdürülebilirlik amaçlı tasarım araştırmalarının değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sürdürülebilir kalkınma kavramı ve çevresel yönü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürdürülebilirlik çalışmalarının disiplinlerarası doğası",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Sürdürülebilirlik çalışmalarındaki paydaşların belirlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Ürün düzeyinde sürdürülebilir tasarım yaklaşımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Ürün servis sistemleri düzeyinde sürdürülebilir tasarım yaklaşımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Endüstriyel tasarım alanında sürdürülebilir enerji teknolojileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Çevresel sürdürülebilirlik etkisinin belirlenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Sürdürülebilirlik için kademeli tasarım inovasyonu örnekleri ve fırsatları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Sürdürülebilirlik için radikal tasarım inovasyonu örnekleri ve fırsatları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım yoluyla çevresel sürdürülebilirliğe ulaşma fırsatları üzerine araştırma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Çevresel sürdürülebilirliğin tasarım araştırmalarına entegre edilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Sürdürülebilirlik çalışmalarının etkisinin artırılması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Çevresel sürdürülebilirlik amaçlı tasarım araştırmalarının değerlendirilmesi"
+   }
+  ],
   "textbooks": [
    "McDonough, W., Braungart, M. (2013). The Upcycle: Beyond Sustainability – Designing for Abundance. North Point Press: New York.",
    "Portney, K.E. (2015). Sustainability. MIT Press: Massachusetts.",
@@ -2466,12 +6131,12 @@
    "Robertson, M. (2017). Sustainability Principles and Practice. Routledge: Oxford.",
    "Vezzoli, C., Cindy Kohtala, C. (2014). Product-Service System Design for Sustainability. Greenleaf: Shipley."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=558",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=558"
  },
  "EUT 559": {
   "code": "EUT 559",
   "name": "Endüstri.Tasa.Kullanılabil.",
+  "nameEn": "Usability in Industrial Design",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -2514,6 +6179,77 @@
    "Hafta 13 · Kullanılabilirlik Alanında Güncel Konular:Yeni nesil kullanıcı arayüzleri ve kullanılabilirlik sorunları",
    "Hafta 14 · Kullanıcı arayüzlerinde vaka çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnsan-bilgisayar etkileşimi ve kullanılabilirlik kavramının temelleriTemel kavramlar ve yaklaşımlar, alanın tarihsel gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanılabilirlik Araştırmalarında Kullanılan Metot ve Teknikler: Uzman DeğerlendirmeleriHöristik Değerlendirme / Heuristic EvaluationKontrol Listeleri / Checklists",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Görev analizi metotları: Hiyerarşik Görev Analizi / HTA",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Görev analizi metotları: Bilişsel Görev Analizi / CTA",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kullanılabilirlik Araştırmalarında Kullanılan Metot ve Teknikler: Ampirik metotlar Karşılıklı görüşmeler / InterviewsSoru listeleri / Questionnaires",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Repertuvar çizelgeleri / Repertory grids",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Gözlem / Observation",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kullanılabilirlik testleri: Biçimlendirici kullanılabilirlik Testleri / Formative usability tests",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kullanılabilirlik testleri: Değerlendirici Kullanılabilirlik Testleri / Summative usability tests",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Özel durumlarda kullanılabilirlik testleri: Tıbbi cihazlarda kullanılabilirlik testleri, otomotiv arayüzlerinde kullanılabilirlik testleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kullanılabilirlik Araştırmalarında Kullanılan Metot ve Teknikler: Bilişsel Modeller KLM-GOMS",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kullanılabilirlik Araştırmalarında Kullanılan Metot ve Teknikler: Tasarım aşamasında kullanılan metotlarKart düzenleme",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kullanılabilirlik Alanında Güncel Konular:Yeni nesil kullanıcı arayüzleri ve kullanılabilirlik sorunları",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Kullanıcı arayüzlerinde vaka çalışmaları"
+   }
+  ],
   "textbooks": [
    "Marcus A., 2013, Design, User Experience, and Usability: Web, Mobile, and Product Design: Second International Conference, DUXU 2013, Held as Part of HCI International ... Applications, incl. Internet/Web, and HCI), Springer",
    "Nagamachi M., 2010, Kansei Engineering, CRC Press",
@@ -2521,12 +6257,12 @@
    "Johnson J., 2010, Designing with the Mind in Mind: Simple Guide to Understanding User Interface Design Rules, Kaufmann, California.",
    "Norman D., 2013, The Design of Everyday Things: Revised and Expanded Edition, Basic Books, New York"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=559",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=559"
  },
  "EUT 561E": {
   "code": "EUT 561E",
   "name": "Design Thinking",
+  "nameEn": "Design Thinking",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2558,6 +6294,77 @@
    "Hafta 13 · Tasarım Düsüncesi Etkinlikleri Sonuçları",
    "Hafta 14 · Gelecek Perspektifleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarım nedir?",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarımın Genisletilmis Anlamları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım Süreçleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Farklı Disiplinlerde Tasarımın Kullanılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım Düsünce Süreçleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Anlama",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Gözlem",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Eskiz",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Test",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Prototip",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Disiplinlerarası bir Çalısma olarak Tasarım",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım Düsüncesi Çalıstayları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım Düsüncesi Etkinlikleri Sonuçları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gelecek Perspektifleri"
+   }
+  ],
   "textbooks": [
    "Cross, Nigel. Design Thinking",
    "Rowe, Peter G. 1987 Design Thinking",
@@ -2565,12 +6372,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=561",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=561"
  },
  "EUT 563E": {
   "code": "EUT 563E",
   "name": "Ethnogr.Met.in User-Cent.Des.",
+  "nameEn": "Ethnogr.Met.in User-Cent.Des.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2602,16 +6409,87 @@
    "Hafta 13 · Tasarımda faydalanılan etnografik anlatılar",
    "Hafta 14 · Tasarım antropolojisi: “Olasılıkların etnografisi” kavramı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kullanıcı odaklı tasarım. Anlamlandırma olarak tasarım",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarımda “kullanıcı-odaklılık” ve “kullanıcı araştırması” kavramları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kullanıcı odaklı tasarım yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Etnografinin kökenleri, gelenekleri ve temel kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma sahasına giriş ve kullanılan düzenekler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Saha ilişkileri ve etik hususlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Katılımcı gözlem ve görüşme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Saha notları: Belgeleme ve analiz",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Yazım ve temsil",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Epistemolojik tartışmalar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Katılımcı tasarım",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Günlük çalışmaları ve “cultural probes”",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarımda faydalanılan etnografik anlatılar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım antropolojisi: “Olasılıkların etnografisi” kavramı"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=563",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=563"
  },
  "EUT 596": {
   "code": "EUT 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2655,6 +6533,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -2667,12 +6616,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=596"
  },
  "EUT 611E": {
   "code": "EUT 611E",
   "name": "Teknoloji Odaklı Tasarım Araştırması",
+  "nameEn": "Technology-Driven Design Research",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -2705,17 +6654,89 @@
    "Hafta 13 · Kullanıcı Merkezli Tasarım (UCD) yoluyla teknolojik araştırma",
    "Hafta 14 · Teknoloji odaklı tasarım araştırmalarında etik ve sorumluluk"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tasarımın ve tasarım eğitiminin geleceği",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım araştırmalarında itici bir güç olarak teknoloji",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Teknolojiye dair determinist ve konstrüktivist kuramlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Teknolojinin kabulü ve kullanımına ilişkin teoriler ve modeller",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Teknoloji odaklı tasarım araştırmalarında yöntemler ve teknikler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Teknoloji odaklı tasarım araştırmalarında uygulama temelli yaklaşımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Teknoloji odaklı tasarım araştırmaları üzerine kuramsal ve metodolojik eleştiriler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "İnsan-bilgisayar etkileşiminden insan-teknoloji etkileşimine geçiş",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Genişletilmiş gerçeklik (XR:VR,AR,MR) teknolojisi ile ilgili tasarım araştırmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yapay zekâ teknolojisi ile ilgili tasarım araştırmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Eklemeli imalat teknolojisi ile ilgili tasarım araştırmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Teknoloji odaklı tasarım araştırmasında araştırma tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Kullanıcı Merkezli Tasarım (UCD) yoluyla teknolojik araştırma",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Teknoloji odaklı tasarım araştırmalarında etik ve sorumluluk",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Romero-Hall, E. (2020). Research methods in learning design and technology. Routledge.",
    "Davis, F. D., Granić, A., & Marangunić, N. (2024). The technology acceptance model: 30 years of TAM. Switzerland: Springer International Publishing AG.",
    "Al-Emran, M., & Shaalan, K. (Eds.). (2021). Recent advances in technology acceptance models and theories. Cham: Springer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=611",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=611"
  },
  "EUT 613E": {
   "code": "EUT 613E",
   "name": "Cultural Approaches To Design",
+  "nameEn": "Cultural Approaches To Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -2747,6 +6768,77 @@
    "Hafta 13 · mge Olarak Nesneler",
    "Hafta 14 · Ürün, Temsil, Reklâm ve Tüketim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Tasarım ve Kültür",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım ve Anlam",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ürün Anlambilimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Göstergebilim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Etnografik Araştırma Yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Etnografik Araştırma Yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Gündelik Hayat ve Tasarım",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kullanım Pratikleri, Anlamlandırma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Maddi Kültür",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Teknoloji, Kültür ve Tasarım",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Nesneler ve Kimlik",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Modernite, Tasarım ve “Kitsch”",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "mge Olarak Nesneler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Ürün, Temsil, Reklâm ve Tüketim"
+   }
+  ],
   "textbooks": [
    "Shove, Elizabeth, et.al. (2007). The Design of Everyday Life. Cultures of Consumption Series. NY: Berg.",
    "Kandiyoti, D and A. Saktanber. (2002). Fragments of Culture: The Everyday of Modern Turkey. New Brunswick, New Jersey: Rutgers University Press.",
@@ -2754,12 +6846,12 @@
    "Appadurai, Arjun, ed. (1988). The Social Life of Things: Commodities in Cultural Perspective. New York: Cambridge University Press",
    "Barthes, Roland. (1993). Mythologies. London: Vintage."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=613",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=613"
  },
  "EUT 696E": {
   "code": "EUT 696E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien. Research, Ethic&Sem.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2803,6 +6895,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -2815,7 +6978,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=EUT&dersNo=696"
  }
 }

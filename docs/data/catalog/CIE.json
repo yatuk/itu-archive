@@ -2,6 +2,7 @@
  "CIE 177": {
   "code": "CIE 177",
   "name": "İnşaat Mühendisliği için CAD",
+  "nameEn": "Civil Engineering CAD",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=177",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=177"
  },
  "CIE 303": {
   "code": "CIE 303",
   "name": "Jeodezi, Küresel Konumlandırma ve Coğrafi Bilgi Sistemleri",
+  "nameEn": "Geodesy,GPS and GIS",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -56,17 +57,89 @@
    "Hafta 13 · GIS uygulamaları. Kadastral tabanlı altyapı, bina, kentsel alan, orman ve ticari alanlarda GIS kullanımı",
    "Hafta 14 · Temel GIS yazılımları ve içerikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders tanıtımı ve içeriği",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Geomatik biliminde kullanılan terminoloji. Jeodezi ve haritacılık çalışmalarındaki kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Jeodeziye giriş. Jeodezi ve yerkürenin şeklinin tanımlanmasına dair temel fonksiyonlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Mühendislik işlerinde haritacılık ve haritaların kullanımı. Jeodezik ölçme teknikleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yatay ve düşey ölçme yöntemleri. 2 ve 3 boyutlu veri sunumu",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Temel ve modern ölçme aletleri ve inşaat mühendisliğinde kullanımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "GPS'e giriş. GPS nedir ve nasıl çalışır? GPS'in temel kavramları",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "İnşaat mühendisliğinde GPS uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "GPS donanımları ve inşaat mühendisliğinde kullanım alanları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "GIS'e giriş. GIS'in temel bileşenleri ve fonksiyonları",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "İnşaat mühendisliğinde GIS kullanımı. Tasarım ve planlamada GIS kullanımı",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "GIS uygulamaları. Kadastral tabanlı altyapı, bina, kentsel alan, orman ve ticari alanlarda GIS kullanımı",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Temel GIS yazılımları ve içerikleri",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Surveying: Theory and Practice, Anderson, J.M., Mikhail, E.M., WCB/McGraw-Hill, Boston, 1998, 0070159149",
    "Surveying: Principles and Applications, Kavanagh, B.F., Upper Saddle River, N.J. : Prentice Hall, 2006, 0131188623",
    "GNSS-global navigation satellite systems, Hofmann-Wellenhof, B., Lichtenegger, H., Wasle, E., Springer, 2008, 9783211730126"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=303"
  },
  "CIE 305": {
   "code": "CIE 305",
   "name": "Geomatiğin Temelleri",
+  "nameEn": "Fundamentals of Geomatics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -101,15 +174,87 @@
    "Hafta 13 · CBS’de harita projeksiyonları ve datum",
    "Hafta 14 · Web CBS, Mobil CBS ve Bulut CBS"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geomatik biliminde ölçme kavramı ile ölçme hataları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Dünya, şekli, jeodezi ve temel kavramları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Ölçme aletleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Uzunluk ve açı ölçme ve temel hesap yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseklik ölçmeleri ve kesitler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "GPS kavramı ve temel çalışma prensipleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "GPS ölçme teknikleri ve inşaat mühendisliğinde kullanım alanları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "GPS hata kaynakları ve ölçmelere etkileri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "CBS kavramı ve kullanım alanları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "CBS veri türleri ve veri üretimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "CBS mekânsal analizleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Mekânsal veri görselleştirmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "CBS’de harita projeksiyonları ve datum",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Web CBS, Mobil CBS ve Bulut CBS",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Lecture Notes for CIE303 by Assoc. Prof. Dr. Himmet Karaman"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=305"
  },
  "CIE 307": {
   "code": "CIE 307",
   "name": "Yapı Analizi",
+  "nameEn": "Structural Analysis",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -144,15 +289,87 @@
    "Hafta 13 · Hiperstatik sistemlerin analizi – Moment Dağıtma (Cross) Yöntemi",
    "Hafta 14 · Hiperstatik sistemlerde tesir çizgileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapı analizine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapıların sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İzostatik Kafes yapılarda mesnet tepkileri ve normal kuvvetlerin hesabı",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İzostatik Kiriş ve çerçevelerde mesnet tepkilerinin hesaplanlası",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İzostatik Kiriş ve çerçevelerde kesit zoru diagramlarının çizilmesi",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 6,
+    "topic": "İzostatik Kiriş ve çerçevelerde tesir çizigileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Virtüel işyöntemiyler yer değiştirme hesabı",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Hiperstatik sistemlerin analizi – Kuvvet Yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Hiperstatik sistemlerin analizi – Kuvvet Yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Hiperstatik sistemlerde yer değiştirme hesabı",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Hiperstatik sistemlerin analizi – Açı Yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Hiperstatik sistemlerin analizi – Açı Yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Hiperstatik sistemlerin analizi – Moment Dağıtma (Cross) Yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Hiperstatik sistemlerde tesir çizgileri",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Structural Analysis , K.M. Leet, CM. Uang and A.M. Gilbert, McGrawHill, 4th Ed., 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=307",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=307"
  },
  "CIE 308": {
   "code": "CIE 308",
   "name": "Mühendislik İstatistiği",
+  "nameEn": "Engineering Statistics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -186,15 +403,87 @@
    "Hafta 13 · Hipotez testleri (Dağılımlar)",
    "Hafta 14 · Korelasyon ve regresyon analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik istatistiğine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İstatistiğin mühendislikteki önemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Olasılık kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Rastgele değişkenlerin dağılımları, çok değişkenli dağılımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Parametreler",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Bernoulli denemeleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Büyük ve küçük örneklerin frekans dağılımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Normal dağılım-I",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Normal dağılım-II ve diğer dağılımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Örnekleme dağılımları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Asimptotik ve tam örnekleme dağılımları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "İstatistiksel hipotezler, hipotez testleri (parametreler)",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Hipotez testleri (Dağılımlar)",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Korelasyon ve regresyon analizi",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "1) Alfredo H-S. Ang and Wilson H. Tang. Probability Concepts in Engineering: Emphasis on Applications to Civil and Environmental Engineering (v. 1) 2nd Edition, 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=308",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=308"
  },
  "CIE 323": {
   "code": "CIE 323",
   "name": "Yapı Mühendisliği I",
+  "nameEn": "Structural Engineering I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -227,16 +516,88 @@
    "Hafta 13 · Basit kiriş ve basit çerçeve sistemlerde yerdeğiştirme hesabı, örnekler.",
    "Hafta 14 · İzostatik kafes sistemlerde yerdeğiştirme hesabı, örnekler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapı Mühendisliğine giriş, genel kavramlar, varsayımlar, yapı sistemleri ve dış etkilerin sınıflandırılması.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "denge denklemleri, İzostatik, Hiperstatik, labil sistemler. Mesnet tepkilerinin hesabı.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kesit zorlarının tanımı ve hesabı, eşdeğerlik kavramı.Yük, kesme kuvveti ve moment ilişkileri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "İki nokta arasında eğilme momenti hesabı, kritik kesitler, kesit zoru diyagramlarının çizimi, örnekler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Çok açıklıklı ve bileşik sistemlerde kesit zoru diyagramlarının çizimi. Üç mafsallı ve gergili sistemlerin hesabı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kafes sistemler:Tanımlar, kafes sistemlerin sınıflandırması. İzostatik kafes sitemlerde çubuk kuvvetlerinin hesabı: Düğüm noktası denge metodu.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "İzostatik kafes sitemlerde çubuk kuvvetlerinin hesabı: Ritter kesim Yöntemi, örnekler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Yapı sistemlerine etkiyen yükler: Zati yük, hareketli yük, kar yükü, rüzgar yükü, deprem yükleri,ilgili yük şartnameleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Hareketli yükler, tesir çizgileri: Tanım ve tesir çizgisi kavramı, basit kiriş, konsol kiriş ve basit çerçevelerde tesir çizimi. Tesir çizgilerinin kullanımı.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Dolaylı yükleme durumu. Çok açıklıklı ve bileşik sistemlerde,kafes sistemlerde tesir çizgileri, örnekler.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Şekildeğiştirme ve yerdeğiştirmeler, iç kuvvet ve şekildeğiştirme bağıntıları, Virtüel iş teoremi.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Virtüel iş teoremi ile yerdeğiştirme hesabı, çarpım tablolarının kullanılması, örnekler",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Basit kiriş ve basit çerçeve sistemlerde yerdeğiştirme hesabı, örnekler.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 14,
+    "topic": "İzostatik kafes sistemlerde yerdeğiştirme hesabı, örnekler.",
+    "outcomes": "1-2-5"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Structural Analysis, K.M.Leet and C.M. Uang, Mc Graw Hill Higher Education, third edition., 2008, 0-07-286322-6",
    "Yapı Statigi Cilt I, Cakıroglu, A., Cetmeli, E, Beta basım Yayım Dagitim AŞ, İstanbul, 2001, 975-486-114-5"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=323",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=323"
  },
  "CIE 324": {
   "code": "CIE 324",
   "name": "Yapı Mühendisliği II",
+  "nameEn": "Sructural Engineering II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -263,17 +624,75 @@
    "Hafta 13 · Cross yönteminin ayrıntıları ve 2. Vize Sınavı",
    "Hafta 14 · Cross yönteminde özel durumlar ve örnek"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel giriş, fazla bağlı yapı sistemleri, denge ve uygunluk koşulları"
+   },
+   {
+    "week": 2,
+    "topic": "Kuvvet yöntemi, uygunluk koşullarının uygulanması, yerdeğiştirme terimlerinin hesabı"
+   },
+   {
+    "week": 3,
+    "topic": "Kuvvet yönteminin basit bir sisteme uygulanması, kesme ve normal kuvvet diyagramlarının denge denklemleri ile belirlenmesi"
+   },
+   {
+    "week": 4,
+    "topic": "Hiperstatik sistemlerde sıcaklık değişimi etkileri, mesnet çökmesi durumu, mesnet çökmeli bir sistemin çözümü"
+   },
+   {
+    "week": 5,
+    "topic": "Hiperstatik sistemde yerdeğiştirmelerin hesabı, elastik mesnet ve birleşimler"
+   },
+   {
+    "week": 6,
+    "topic": "Çelik yapılara giriş"
+   },
+   {
+    "week": 7,
+    "topic": "Çelik elemanların boyutlandırılması, bir yapı analizi programının anlatımı"
+   },
+   {
+    "week": 8,
+    "topic": "Yapı analizi programının uygulamalar ve 1. Vize Sınavı"
+   },
+   {
+    "week": 9,
+    "topic": "Açı yöntemine giriş ve yardımcı bilgiler"
+   },
+   {
+    "week": 10,
+    "topic": "Mafsallı cubuklar için birim yerdeğiştirmer sabitleri ve ankastrelik uç kuvvetleri, örnek"
+   },
+   {
+    "week": 11,
+    "topic": "Açı yönteminde özel durumlar"
+   },
+   {
+    "week": 12,
+    "topic": "Özel durumları içeren bir örneğin açı yöntemi ile çözümü, Cross yöntemine giriş"
+   },
+   {
+    "week": 13,
+    "topic": "Cross yönteminin ayrıntıları ve 2. Vize Sınavı"
+   },
+   {
+    "week": 14,
+    "topic": "Cross yönteminde özel durumlar ve örnek"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Structural Analysis, K. M. Leet and C-M. Uang, McGraw-Hill Book Company, 2005, 007-123830-1",
    "Classical Structural Analysis, Armenakas, A. E., McGraw-Hill Book Company, 1988, 0-07-100120-4",
    "Yapı Statiği Cilt II, Cakiroglu, A., Cetmeli, E., Beta Yayim Dagitim, 2000, 9789754869613"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=324",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=324"
  },
  "CIE 325": {
   "code": "CIE 325",
   "name": "Betonarmeye Giriş",
+  "nameEn": "Introduction to Reinforced Concrete",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -287,12 +706,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=325",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=325"
  },
  "CIE 326": {
   "code": "CIE 326",
   "name": "Betonarme Tasarım",
+  "nameEn": "Reinforced Concrete Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -327,16 +746,88 @@
    "Hafta 13 · İstinat duvarlarının davranışı ve hesap esasları.",
    "Hafta 14 · Öngerilmeli beton kavramı ve hesap esasları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Taşıyıcı sistemlerin davranışı, yük aktarımı ve yapısal elemanlar arasındaki ilişki",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Betonarme taşıyıcı elemanlar; beton ve çeliğin malzeme olarak mekanik özellikleri, , malzeme katsayıları; Aderans kavramı, donatıda kenetleme ve ekleme.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Yükler ve yük etkileri, yapısal göçme, betonarmede yapısal güvenliğin sağlanması, yük katsayıları, yük grupları ve betonarmenin davranışı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Betonarme kirişlerin mekaniği, dengeli donatı, zayıf /kuvvetli donatılı kesit, taşıma gücü yöntemi, betonarme kirişlerin ve tablalı kirişlerin analizi ve hesabı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Betonarme kolon kapasitesi, eksendışı yüklü kolonlar, kolon karşılıklı etkileşim diyagramları, basit etriyeli ve fretli kolonlar,",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Narin kolonların analizi ve hesabı, moment büyütme katsayısının elde edilmesi; etriyesiz kirişlerin diyagonal çekme göçmesi durumu, çatlamış kirişlerde yük aktarımı, kesme donatısı.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kesme davranışı ve donatı hesabı,",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Kesme ve burulma etkisindeki betonarme elemanların davranışı ve hesap esasları; kesme ve moment etkisi",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Elastik hesap kabulleri, dikdörtgen kesitli kirişlerin elastik hesabı ve taşıma gücü yöntemi ile kıyaslanması.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Betonarme döşemeler; tek ve çift doğrultuda çalışan plak döşemelerin hesabı",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 11,
+    "topic": "Kirişsiz döşemeler, dişli döşemeler ve kast döşemelerin hesap esasları.",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 12,
+    "topic": "Betonarme temeller, tekil temellerin analiz ve hesabı; sürekli temellerin ve radye temellerin davranışı ve hesap esasları",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 13,
+    "topic": "İstinat duvarlarının davranışı ve hesap esasları.",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 14,
+    "topic": "Öngerilmeli beton kavramı ve hesap esasları",
+    "outcomes": "1-7"
+   }
+  ],
   "textbooks": [
    "Mac Gregor, J., Reinforced Concrete: Mechanics and Design, Prentice-Hall International, 1998. ISBN: 0132176521",
    "Atımtay, E., Reinforced Concrete Fundamentals, Vol.1 & Vol. 2, Bizim Büro Basımevi, Ankara, 1998. ISBN: 9759451700"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=326",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=326"
  },
  "CIE 329": {
   "code": "CIE 329",
   "name": "İnşaat Mühendisliği Malzemeleri",
+  "nameEn": "Civil Engineering Materials",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -367,15 +858,86 @@
    "Hafta 13 · Sertleşmiş beton özellikleri, Taze beton deney laboratuvarı",
    "Hafta 14 · Dayanıklılık ve zaman bağlı davranış"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Atomsal yapı ve atomlararası bağlar, Malzemelerin fiziksel özellikleri laboratuvarı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kristal yapı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kristal yapı kusurları, Basınç ve eğilme test laboratuvarı",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Difüzyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Metallarin mekanik özellikleri, Çekme deneyi laboratuvarı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Dislokasyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Kırılma",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Çimento, Çimento deney laboratuvarı",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Agrega",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Beton karışım tasarımı, Agrega deney laboratuvarı",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Taze beton özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Sertleşmiş beton özellikleri, Taze beton deney laboratuvarı",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Dayanıklılık ve zaman bağlı davranış",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Materials Science and Engineering: an Introduction, William D. Callister, Jr. and David G. Rethwisch, Wiley"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=329",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=329"
  },
  "CIE 336": {
   "code": "CIE 336",
   "name": "Zemin Mekaniği",
+  "nameEn": "Soil Mechanics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -410,16 +972,88 @@
    "Hafta 13 · Şev Stabilitesi",
    "Hafta 14 · Şev Stabilitesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geoteknik Mühendisliğine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Zeminlerin Endeks Özellikleri ve Sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Zeminlerin Yapısı ve Minerolojisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Zemin stabilizasyonu ve Kompaksiyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Hidrostatik Su Basınçları ve Zeminde Efektif ve Toplam Gerilmeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Hidrostatik Su Basınçları ve Zeminde Efektif ve Toplam Gerilmeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Zeminde Su Akışı",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Zeminde Gerilme Dağılımı ve Oturmalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Konsolidasyon Otruması",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Zamana Bağlı Konsolidasyon Oturması",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Zeminlerin Kayma Mukavemeti",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Zeminlerin Kayma Mukavemeti",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Şev Stabilitesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Şev Stabilitesi",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Lecture Notes for INS332E by Assist. Prof. Dr. E. Ece Bayat",
    "An Introduction to Geotechnical Engineering. By Robert D.Holtz and William D.Kovacs, Thomas C. Sheahan, Pearson Prentice –Hall, 2011.."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=336",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=336"
  },
  "CIE 340": {
   "code": "CIE 340",
   "name": "Çevre Mühendisliği",
+  "nameEn": "Environmental Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -452,17 +1086,89 @@
    "Hafta 13 · Hava kirliliği kontrolu",
    "Hafta 14 · Risk tesbiti"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Birimler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kütle dengesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Energy transferi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Su kalitesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Su Kirliliği ve kontrolu",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Vize",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "İçme suyu arıtımı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Katı atık yönetimi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kaynak gerikazanımı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Vize",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Tehlikeli atık yönetimi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Hava kirliliği",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Hava kirliliği kontrolu",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Risk tesbiti",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Biosphere &#8211; The Realm of Life, Wallace, R.A., King, J.L., Sanders, G.P., Scott Foresman and Company, 1998,",
    "Introduction to Environmental Engineering and Science, Masters, G.M. , Prentice Hall Inc, 1998,",
    "Environmental Engineering, Kiely, G., Irwin/Mc Graw Hill, 1997,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=340",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=340"
  },
  "CIE 344": {
   "code": "CIE 344",
   "name": "Hidrolik ve Hidroloji",
+  "nameEn": "Hydraulics and Hydrology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -496,15 +1202,87 @@
    "Hafta 13 · Surface and ground waters. Hydrograph analysis.",
    "Hafta 14 · Water supply. Water use. Population and quantity estimation"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Introduction and hydraulic engineering and hydrology. Model theory",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Equation of motion: Laminar, turbulent flows",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Head losses (Continuous and local) energy and piezometric lines",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 4,
+    "topic": "Analysis of pipe networks.",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Multiple reservoir systems",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Hydraulic machinery (pumps & turbines)",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Open channel flow. General principles. Energy & Momentum principles Analysis of flows in rivers. Uniform flow. Resistence in open channels",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Cross section design (best hydraulic section. Manning-Strickler). Flood plain design. (Composit xsection)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Varied flows (gradually & rapidely) concepts and definitions. wave propagation",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Flow over immersed bodies. Local water surface variations in open channels",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Water resources. System Concept.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Hydrologic cycle. Precipitation.",
+    "outcomes": "2-3-6"
+   },
+   {
+    "week": 13,
+    "topic": "Surface and ground waters. Hydrograph analysis.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Water supply. Water use. Population and quantity estimation",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "-Water Resources Engineering by L. Mayes published by John Wiley & Sons Inc., 2010; 2nd edition,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=344",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=344"
  },
  "CIE 354": {
   "code": "CIE 354",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -542,17 +1320,89 @@
    "Hafta 13 · Concepts of energy and hydraulic grade lines",
    "Hafta 14 · Similitude"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Introduction. Unit systems. Homogeneity of unit.",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 2,
+    "topic": "Basic concepts. Physical properties of fluids.",
+    "outcomes": "1-9"
+   },
+   {
+    "week": 3,
+    "topic": "Behavior against stress",
+    "outcomes": "1-8-10"
+   },
+   {
+    "week": 4,
+    "topic": "Statics of fluids",
+    "outcomes": "1-8-10"
+   },
+   {
+    "week": 5,
+    "topic": "Statics of fluids -cont’d",
+    "outcomes": "1-2-8"
+   },
+   {
+    "week": 6,
+    "topic": "Kinematics of fluids",
+    "outcomes": "1-2-8"
+   },
+   {
+    "week": 7,
+    "topic": "Kinematics of fluids -cont’d",
+    "outcomes": "1-5-8"
+   },
+   {
+    "week": 8,
+    "topic": "Fluid dynamics. Basic equations of 1D flows",
+    "outcomes": "1-5-8"
+   },
+   {
+    "week": 9,
+    "topic": "1D flow of ideal fluid Impul Momentum",
+    "outcomes": "1-5-8"
+   },
+   {
+    "week": 10,
+    "topic": "1D flow of ideal fluid Impul Momentum",
+    "outcomes": "1-5-8"
+   },
+   {
+    "week": 11,
+    "topic": "1D flow of real fluid",
+    "outcomes": "1-5-8"
+   },
+   {
+    "week": 12,
+    "topic": "Laminar and turbulent flows",
+    "outcomes": "1-5-8"
+   },
+   {
+    "week": 13,
+    "topic": "Concepts of energy and hydraulic grade lines",
+    "outcomes": "1-5-9"
+   },
+   {
+    "week": 14,
+    "topic": "Similitude",
+    "outcomes": "1-5-9"
+   }
+  ],
   "textbooks": [
    "Fluid Mechanics, Atıl Bulu , İstanbul Teknik Üniversitesi, 2001, 9755611975",
    "A mathematical introduction to fluid mechanics , Chorin, Alexandre Joel;Jerrold E. Marsden, Springer-Verlag, 1979, 0387904069",
    "Fluid Mechanics , Streeter, V. L., Wylie E. B., McGraw Hill, 1998, 0075480158"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=354",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=354"
  },
  "CIE 355": {
   "code": "CIE 355",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -566,12 +1416,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=355",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=355"
  },
  "CIE 439": {
   "code": "CIE 439",
   "name": "Ulaştırma Sistemleri",
+  "nameEn": "Transportation Systems",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -606,11 +1456,82 @@
    "Hafta 13 · Yol tasarımında toprak işleri",
    "Hafta 14 · Kavşakların özellikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ulaştırma sistemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Demiryolu mühendisliği",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Karayolu ve trafik mühendisliği",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Taşıt dinamiği",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Trafik akım parametreleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Karayolu ve demiryolunda geometrik standartlar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Trafik talebinin ve yol sınıfının belirlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Geçki araştırması",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Yatay tasarım",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Yatay tasarım",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Boykesit çizimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Düşey tasarım",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Yol tasarımında toprak işleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Kavşakların özellikleri",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Lecture Notes for Transportation Systems by Kemal Selçuk Öğüt",
    "Principles of Highway Engineering and Traffic Analysis, 4th Edition, Mannering F.L., Washburn S.S., Kilareski W.P., 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=439",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CIE&dersNo=439"
  }
 }

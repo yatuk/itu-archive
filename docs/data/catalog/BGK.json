@@ -2,6 +2,7 @@
  "BGK 501E": {
   "code": "BGK 501E",
   "name": "Network Security",
+  "nameEn": "Network Security",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -37,6 +38,64 @@
    "Hafta 13 · Güncel yayınlar",
    "Hafta 14 · Güncel yayınlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ağ güvenliği kavramları"
+   },
+   {
+    "week": 2,
+    "topic": "Yabancı yazılımlar ve virüsler"
+   },
+   {
+    "week": 3,
+    "topic": "Bakışımlı şifreleme"
+   },
+   {
+    "week": 4,
+    "topic": "Bakışımsız şifreleme"
+   },
+   {
+    "week": 5,
+    "topic": "Öz alma ve elektronik imza"
+   },
+   {
+    "week": 6,
+    "topic": "Sertifikalar ve açık anahtar altyapısı"
+   },
+   {
+    "week": 7,
+    "topic": "Asıllama"
+   },
+   {
+    "week": 8,
+    "topic": "Erişim denetimi"
+   },
+   {
+    "week": 9,
+    "topic": "Denetlenebilirlik"
+   },
+   {
+    "week": 10,
+    "topic": "Ağ izleme ve güvenlik duvarları"
+   },
+   {
+    "week": 11,
+    "topic": "Sızma önleme ve saldırgan yanıltma yöntemleri"
+   },
+   {
+    "week": 12,
+    "topic": "Güncel konular"
+   },
+   {
+    "week": 13,
+    "topic": "Güncel yayınlar"
+   },
+   {
+    "week": 14,
+    "topic": "Güncel yayınlar"
+   }
+  ],
   "textbooks": [
    "Network Security Essentials Applications and Standards, 5th Ed., William Stallings, 2013, Prentice Hall.",
    "Network Security Bible, 2nd Ed., Eric Cole, 2009, Wiley.",
@@ -49,12 +108,12 @@
    "Network Security Essentials: Applications and Standards, 4th Ed., William Stallings, 2010, Prentice Hall.",
    "Network Security: The Complete Reference, Mark Rhodes-Ousley, Roberta Bragg, Keith Strassberg, 2003, McGraw-Hill Osborne Media."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=501"
  },
  "BGK 502E": {
   "code": "BGK 502E",
   "name": "İşletim Sistemleri Güvenliği",
+  "nameEn": "Operating System Security",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -86,6 +145,64 @@
    "Hafta 13 · Güncel konular",
    "Hafta 14 · Güncel yayınlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İşletim sistemlerine giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Sık kullanılan işletim sistemleri ve özellikleri"
+   },
+   {
+    "week": 3,
+    "topic": "Proses kavramı ve proseslerin veriye erişimi"
+   },
+   {
+    "week": 4,
+    "topic": "Proseslerin yalıtımı, proses güvenliği"
+   },
+   {
+    "week": 5,
+    "topic": "Erişim güvenliği"
+   },
+   {
+    "week": 6,
+    "topic": "G/Ç birimleri ve güvenliği"
+   },
+   {
+    "week": 7,
+    "topic": "İşletim sisteminin sunduğu güvenlik olanakları"
+   },
+   {
+    "week": 8,
+    "topic": "İşletim sisteminden kaynaklanan güvenlik açıkları"
+   },
+   {
+    "week": 9,
+    "topic": "Kullanıcı tanımlama ve yetkilendirme"
+   },
+   {
+    "week": 10,
+    "topic": "Yetkilerin izlenmesi ve denetimi"
+   },
+   {
+    "week": 11,
+    "topic": "Kütükler ve bunların denetimi"
+   },
+   {
+    "week": 12,
+    "topic": "Güvenlik modelleri"
+   },
+   {
+    "week": 13,
+    "topic": "Güncel konular"
+   },
+   {
+    "week": 14,
+    "topic": "Güncel yayınlar"
+   }
+  ],
   "textbooks": [
    "Modern Operating Systems, 3rd Ed., Andrew S. Tanenbaum, 2007, Prentice Hall.",
    "Guide to Operating Systems, 4th Ed., Michael Palmer, Michael Walters, 2011, Cengage Learning.",
@@ -93,12 +210,12 @@
    "Guide to Operating Systems Security, Michael Palmer, 2003, Cengage Learning.",
    "Computer Security: Principles and Practice, 2nd Ed. William Stallings, Lawrie Brown, 2011, Prentice Hall."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=502"
  },
  "BGK 503E": {
   "code": "BGK 503E",
   "name": "Information&Computer Security",
+  "nameEn": "Information&Computer Security",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -130,6 +247,64 @@
    "Hafta 13 · Erişim modelleri",
    "Hafta 14 · Güvenlik sertifikasyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgi, güvenlik, entropi kavramları, bilgisayar güvenliğinin kapsamı"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgi güvenliği sorunları, güvenlik sağlama yöntemleri"
+   },
+   {
+    "week": 3,
+    "topic": "Şifreleme yöntemleri: Şifrelemenin temelleri ve çeşitleri"
+   },
+   {
+    "week": 4,
+    "topic": "Bakışımlı ve bakışımsız şifreleme yöntemleri"
+   },
+   {
+    "week": 5,
+    "topic": "Veri bütünlüğü ve öz alma yöntemleri"
+   },
+   {
+    "week": 6,
+    "topic": "Elektronik imza, sertifikalar ve açık anahtar altyapısı"
+   },
+   {
+    "week": 7,
+    "topic": "Asıllama"
+   },
+   {
+    "week": 8,
+    "topic": "Veri gizleme"
+   },
+   {
+    "week": 9,
+    "topic": "Biyometrik ve istatistik yöntemler"
+   },
+   {
+    "week": 10,
+    "topic": "Saldırı yöntemleri ve önlemler"
+   },
+   {
+    "week": 11,
+    "topic": "Güvenlik sınıflamaları ve standartları"
+   },
+   {
+    "week": 12,
+    "topic": "Erişim denetimi"
+   },
+   {
+    "week": 13,
+    "topic": "Erişim modelleri"
+   },
+   {
+    "week": 14,
+    "topic": "Güvenlik sertifikasyonu"
+   }
+  ],
   "textbooks": [
    "Computer Security, 3rd Ed., Dieter Gollmann, 2011, Wiley.",
    "Computer Security: Principles and Practice, 2nd Ed. William Stallings, Lawrie Brown, 2011, Prentice Hall.",
@@ -137,12 +312,12 @@
    "Information Security The Complete Reference, 2nd Ed., Mark Rhodes-Ousley, 2013, McGraw-Hill Osborne Media.",
    "Principles of Information Security, 4th Ed., Michael E. Whitman, Herbert J. Mattord, 2011, Cengage Learning."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=503"
  },
  "BGK 516E": {
   "code": "BGK 516E",
   "name": "Cryptography",
+  "nameEn": "Cryptography",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -179,18 +354,89 @@
    "Hafta 13 · Ayrık logaritma problemine dayalı açık anahtarlı kriptosistemleri: ElGamal kriptosistemi, sonlu cisimler, elliptik eğri kriptosistemi",
    "Hafta 14 · Sayısal imza: sayısal imza sistemlerinin güvenlik gerekleri, ElGamal sayısal imza sistemi, DSA, ECDSA."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Klasik kriptografi: bazı basit kripto sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Basit kripto sistemlerinin analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Shannon teorisi: olasılık teorisi, entropinin özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Çarpım kriptosistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Blok şifreleme algoritmaları: değiştirme-permütasyon ağları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Lineer kriptanaliz",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Farksal kriptanaliz",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Veri şifreleme standardı (DES), ileri şifrelem standardı (AES)",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Şifreleme modları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Kriptografik özet fonksiyonları: özet fonksiyonları ve veri bütünlüğü, özet fonksiyonlarının güvenliği",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "İteratif özet fonksiyonları, mesaj doğrulama kodları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "RSA kriptosistemi: açık anahtarlı kriptosistemlerine giriş, sayı teorisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Ayrık logaritma problemine dayalı açık anahtarlı kriptosistemleri: ElGamal kriptosistemi, sonlu cisimler, elliptik eğri kriptosistemi",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Sayısal imza: sayısal imza sistemlerinin güvenlik gerekleri, ElGamal sayısal imza sistemi, DSA, ECDSA."
+   }
+  ],
   "textbooks": [
    "[1] Stinson, D. R., 2005. Cryptography: Theory and Practice, Chapman and Hall/CRC; 3 edition.",
    "[2] Schneier, B., 1996. Applied Cryptography: Protocols, Algorithms, and Source Code in C, Second Edition, Wiley; 2nd edition.",
    "[3] Paar, C., 2010. Jan Pelzl, “Understanding Cryptography: A Textbook for Students and Practitioners, Springer; 1st Edition.2nd Printing edition.",
    "[4] Ferguson, N., Schneier, B., Kohno, T., 2010. Cryptography Engineering: Design Principles and Practical Applications, Wiley; 1 edition."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=516",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=516"
  },
  "BGK 596E": {
   "code": "BGK 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -234,6 +480,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -246,12 +563,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=596"
  },
  "BGK 611E": {
   "code": "BGK 611E",
   "name": "Bilgi Güvenliği Mühendisliği ve Kriptografide İleri Konular",
+  "nameEn": "Advanced Topics in Cybersecurity Engineering and Cryptography",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -267,7 +584,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=611",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=611"
  }
 }

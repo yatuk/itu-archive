@@ -2,6 +2,7 @@
  "SEN 101": {
   "code": "SEN 101",
   "name": "Intr.to Industrial Engineering",
+  "nameEn": "Intr.to Industrial Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -32,15 +33,87 @@
    "Hafta 13 · Tesis Yerleşimi",
    "Hafta 14 · İş Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Endüstri Mühendisliği kavramı ve tanımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstri Mühendisliği'nin tarihçesi ve evrimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kurum kavramı; Örgüt ve çevresi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Örgütsel çevrenin yapısı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Örgütün iç yapısı, örgütün işlevleri, örgütsel dönüşüm",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Performans kavramı ve performans iyileştirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Endüstri Mühendisliği çalışma alanı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Bir bilim olarak Endüstri Mühendisliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Verimlilik kavramı ve uygulamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "İş Etüdü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Ergonomi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tesis Yeri Seçimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Tesis Yerleşimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "İş Değerlendirme",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Handbook of Industrial Engineering, Salvendy, G. , Wiley, New York, 1992,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=101"
  },
  "SEN 103": {
   "code": "SEN 103",
   "name": "Intr. to Manufacturing",
+  "nameEn": "Intr. to Manufacturing",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -73,15 +146,87 @@
    "Hafta 13 · İmalat yöntemleri",
    "Hafta 14 · Bağlama elemanları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel tanımlar ve prensipler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Üretim türleri ve stratejileri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Takım tezgahları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "CNC/FMS kavramları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Tam zamanında üretim sistemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İmalat sistemlerinde kayıplar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Kayıplar için çözümler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "İmalat maliyetleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Malzeme taşıma sistemleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "Malzeme",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Malzeme",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "İmalat yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "İmalat yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Bağlama elemanları",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Manufacturing Engineering, D.K. Singh, CRC Press, 2008,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=103"
  },
  "SEN 301": {
   "code": "SEN 301",
   "name": "Operations Research I",
+  "nameEn": "Operations Research I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -116,15 +261,87 @@
    "Hafta 13 · Ulaştırma Sorunlarının Çözümü",
    "Hafta 14 · Atama Sorunları, Geçici Konaklama Sorunları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "YA'ya Giriş, Temel Kavramlar, Doğrusal Programlamaya (DP) Giriş, Modelleme (DP'de Formülasyon)",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Grafik Çözüm, Simpleks Algoritması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Büyük M Yöntemi,",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Dualite",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Duyarlılık Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Duyarlılık Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "LINDO, LINGO yazılım paketleri ve MS Excel Solver programı",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "GAMS yazılım paketi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Dual Simpleks",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Tümler Gevşeklik Teoremi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Düzeltilmiş Simpleks",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Ulaştırma Sorunlarının Formülasyonu, Temel Olurlu Çözümün Bulunması",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Ulaştırma Sorunlarının Çözümü",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Atama Sorunları, Geçici Konaklama Sorunları",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Operations Research: Applications and Algorithms, Winston, W., Brooks/Cole Thomson Learning, 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=301"
  },
  "SEN 302": {
   "code": "SEN 302",
   "name": "Operations Research II",
+  "nameEn": "Operations Research II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -156,15 +373,87 @@
    "Hafta 13 · Dinamik programlama problemleri (Algoritma ve Sezgiseller)",
    "Hafta 14 · Genel Tekrar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tamsayılı programlama problemleri (Bütçeleme ve Sırt Çantası Problemleri)",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tamsayılı programlama problemleri (Sabit Maliyet Problemleri, Veya ve Eğer kısıtları)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tamsayılı programlama problemleri (Gezgin Satıcı Problemi)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tamsayılı programlama problemleri (TSP çözme teknikleri 1)",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Tamsayılı programlama problemleri (TSP çözme teknikleri 2) Arasınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Tamsayılı programlama problemleri (TSP çözme teknikleri 3)",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Dahili Nokta Algoritması",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Doğrusal olmayan programlama problemleri (Modelleme ve kısıtlı problemleri çözme)",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Doğrusal olmayan programlama problemleri (Kısıtsız problemlerin çözümü)",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Hedef programlama ve Proje planlama Arasınav",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Dinamik programlama problemleri (Giriş)",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Dinamik programlama problemleri (Modelleme)",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Dinamik programlama problemleri (Algoritma ve Sezgiseller)",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Genel Tekrar",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Operations Research: Applications and Algorithms 4th Ed., Winston, W., Wadsworth Inc., 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=302"
  },
  "SEN 303": {
   "code": "SEN 303",
   "name": "Ergonomi",
+  "nameEn": "Ergonomics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -195,15 +484,87 @@
    "Hafta 13 · Meslek hastalıkları, tipleri ve önleme yöntemleri.",
    "Hafta 14 · Proje teslimi ve sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İşbilimin tanımı ve endüstri mühendisliği eğitiminde önemi. Ders planı ve ödev ve projelerin içerikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sistem, sistem performansı, iş sistemi tanımı, yapısı ve tipleri. Fiziksel iş.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "İşbilim ve diğer bilim dalları arasındaki etkileşim. Antropometrik tasarım.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bilişsel ergonomi, bilişsel teori.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "İnsan bilgi işleme teorileri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "İnsan-bilgisayar etkileşimi ve arayüz tasarım esasları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yarıyıl içi Sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Zihinsel iş ve zihinsel performans.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Zihinsel iş yükünün belirlenmesi, önemi ve ölçümü.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Çevre şartlarının zihinsel ve fiziksel işe etkisi.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "İnsan hatası ve insan güvenilebilirliği.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "İş kazaları, sebepleri, tipleri. Kazaların araştırılması.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Meslek hastalıkları, tipleri ve önleme yöntemleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Proje teslimi ve sunumu",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Fundamentals of IE, Pulat, B.M., Waveland Press, 1992,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=303"
  },
  "SEN 304": {
   "code": "SEN 304",
   "name": "Work Analysis & Design",
+  "nameEn": "Work Analysis & Design",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -240,15 +601,87 @@
    "Hafta 13 · MTM Metodu kullanarak standart zamanların hesaplanması",
    "Hafta 14 · Dönem projelerinin sunulması ve tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş Etüdüne Giriş, İş etüdünün temel içerikler ve, Ergonomi ile ilişkisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Metot Etüdü ve Zaman Etüdü arasındaki farklar. Metot Etüdünün tanımı ve kullanılan önemli şemalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Zaman Etüdüne Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Stres ve performans ilişkisi, iş etüdünde kas-iskelet sistemini kavramanın rolü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yorulma, İş ve dinlenme zamanları, zorlanma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Mesleki biyomekanik, Kümülatif travma rahatsızlıkları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kronometraj yöntemi ve REFA (Reich Auschuss fur Arbeitsstudien",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "İş akışı analizi, iş akışı birimleri, zaman sistemleri, tempo takdiri ve standart zamanların hesaplanması",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "İşyeri için metot ve zaman etüdü tekniklerinin uygulanması",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Önceden belirlenmiş zamanlar sisteminin tanımı ve kullanımı",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "MTM (Methods Time Measurement) temel hareket metotları, adımları ve uygulamalarının tanımı",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 13,
+    "topic": "MTM Metodu kullanarak standart zamanların hesaplanması",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem projelerinin sunulması ve tartışma",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Work Design, 4th Edition, Konz S., Publishing Horizons, Inc. Scottsdale, Arizona, 1995,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=304",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=304"
  },
  "SEN 305": {
   "code": "SEN 305",
   "name": "Engineering Economy",
+  "nameEn": "Engineering Economy",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -286,17 +719,89 @@
    "Hafta 13 · Yatırım Alternatiflerinin Çok Ölçütlü Değerlendirilmesi",
    "Hafta 14 · Yatırım Alternatiflerinin Çok Ölçütlü Değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, terim ve grafikler: Karar vermede mühendislik ekonomisinin rolü, faiz hesapları, denklik",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Faiz faktörleri ve kullanımları, çoklu faktörlerin kullanımı, nominal ve etkin faiz oranları ve sürekli iskontolama",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Şimdiki değer analizi, kapitalize edilmiş maliyet analizi, farklı ve sonsuz ömürlü alternatifler",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Eşdeğer düzgün yıllık değer analizi, farklı ve sonsuz ömürlü alternatifler, verim oranı hesaplamaları, nakit akışlarında işaret değişimi ve dış yatırım tekniği",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Verim oranı artış analizi, kazanç/maliyet oranı analizi, gelecek değer analizi",
+    "outcomes": "7"
+   },
+   {
+    "week": 6,
+    "topic": "Yenileme analizi, ekonomik ömür, savunucuya karşı aday teçhizat",
+    "outcomes": "8"
+   },
+   {
+    "week": 7,
+    "topic": "Yenileme analizi, ekonomik ömür, savunucuya karşı aday teçhizat",
+    "outcomes": "8"
+   },
+   {
+    "week": 8,
+    "topic": "Amortisman ve tükenme, gelir vergisi, vergi sonrası ekonomik analiz, enflasyon ve faiz ilişkisi",
+    "outcomes": "9"
+   },
+   {
+    "week": 9,
+    "topic": "Başabaş analizi, bağımsız yatırım alternatifleri arasında sermaye bütçeleme",
+    "outcomes": "10"
+   },
+   {
+    "week": 10,
+    "topic": "Duyarlılık analizi, beklenen değer kararları, karar ağaçları",
+    "outcomes": "10"
+   },
+   {
+    "week": 11,
+    "topic": "Risk altında karar verme, risk ve belirsizlik, simülasyon analizi, belirlilik eşdeğeri, riske göre ayarlanmış nakit",
+    "outcomes": "10"
+   },
+   {
+    "week": 12,
+    "topic": "Risk altında karar verme, risk ve belirsizlik, simülasyon analizi, belirlilik eşdeğeri, riske göre ayarlanmış nakit",
+    "outcomes": "10"
+   },
+   {
+    "week": 13,
+    "topic": "Yatırım Alternatiflerinin Çok Ölçütlü Değerlendirilmesi",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "Yatırım Alternatiflerinin Çok Ölçütlü Değerlendirilmesi",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "Engineering Economy, 6th Edition, Leland T. Blank, Anthony Tarquin, , McGraw-Hill, 2009, 9780073205342",
    "Engineering Economics, Riggs, J.L. , McGraw Hill, 1982, 9780070528604",
    "Advanced Engineering Economics, Park, C.S., Sharp-Bette, G.P., John Wiley and Sons, Inc., 1990, 978047179989"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=305"
  },
  "SEN 310": {
   "code": "SEN 310",
   "name": "Simulation",
+  "nameEn": "Simulation",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -331,15 +836,87 @@
    "Hafta 13 · Varyans düşürme teknikleri, II: Eş rassal sayılar, antitetik değişkenler, örnekler",
    "Hafta 14 · Simülasyon modellerinin geçerlilik sınaması ve doğrulanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin ve dönem projesinin tanıtımı. Sistem tanımı, sistem sınıfları ve Monte Carlo simülasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Sistem analizi, problem tanımı, işin amacı, bileşenler, değişkenler, parametreler, kriterler",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Sistem durumu, sistem olayı, sistem algoritması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İstatistiksel bilgi, veri analizi ve verinin sınıflandırılması: Bir örnek",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Teorik dağılımların kullanımı, uygunluk testleri: Ki-Kare ve Kolmogorov-Smirnov testleri, Örnekler",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Ters dönüşüm denklemleri, normal dağılım, düzgün dağılım, üstel dağılım, Poisson dağılımı, ampirik dağılımlar, örnekler Veri olmayan durumlar: Örnekler",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "1. Yıl İçi Sınavı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Çıktıların analizi, sonlanan sistemlerde kullanılan yöntemler: nokta tahmini, aralık tahmini",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Çıktıların analizi, sonlanmayan sistemlerde kullanılan yöntemler: otokorelasyon, geçiş dönemi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Deney tasarımı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Varyans düşürme teknikleri, I: Dolaylı ölçütler, kontrol değişkenleri, örnekler",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "2. Yıl İçi Sınavı",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Varyans düşürme teknikleri, II: Eş rassal sayılar, antitetik değişkenler, örnekler",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Simülasyon modellerinin geçerlilik sınaması ve doğrulanması",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Simulation Modeling and Analysis, Averill M. Law, W. David Kelton, McGraw-Hill, Boston, 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=310",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=310"
  },
  "SEN 311": {
   "code": "SEN 311",
   "name": "Design of Experiments",
+  "nameEn": "Design of Experiments",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -375,15 +952,87 @@
    "Hafta 13 · ANOVA analizleri",
    "Hafta 14 · Kovaryans analizleri, ANCOVA Analizleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel İlkeler; Matrislere genel bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tahmin ve regresyon parametreleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gölge değişkenler için regresyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Regresyonla varyans analizi arasındaki ilişki",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Faktöriyel Deney Tasarımı 2x2",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Tek yönlü ANOVA",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Tek yönlü ANOVA için parametre tahmini; Faktör etkileri; Güven aralıkları ve hipotez testleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sabit ve Rassal Etmen Etkilerinde Deney Tasarımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Çoklu Faktör Analizi; Faktörler Arası Etkiler",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Sabit ve Rassal Etmen Etkilerinde Deney Tasarımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Nested Tasarımları, Nested Modeleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Değişken Modellerde kısıtlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "ANOVA analizleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Kovaryans analizleri, ANCOVA Analizleri",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Design of Experiments for Engineers and Scientists, Antony, J, Butterworth-Heinemann, 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=311"
  },
  "SEN 312": {
   "code": "SEN 312",
   "name": "Materials Management",
+  "nameEn": "Materials Management",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -417,15 +1066,87 @@
    "Hafta 13 · Lojistik Stratejisinin Uygulanması",
    "Hafta 14 · Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lojistiğin Ekonomi ve Organizasyondaki Rolü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Müşteri Servisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Lojistik Bilgi Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Envanter Kavramı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Envanter Yönetimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Depolama",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Yarıyıl İçi Sınavı",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Malzeme Yükleme ve Boşaltma, Otomasyon ve Paketleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Satın Alma ve Tedarik",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Etkin Lojistik için Organizasyonel Yapılanma",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Lojistik Performansını Kontrol Yöntemleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 12,
+    "topic": "Tedarik Zinciri Yönetimi",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 13,
+    "topic": "Lojistik Stratejisinin Uygulanması",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 14,
+    "topic": "Sunum",
+    "outcomes": "1-6"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Logistic Management, Lambert DM, Stook JR., Ellram L.M. , Irwin McGraw-Hill, 1998,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=312"
  },
  "SEN 313": {
   "code": "SEN 313",
   "name": "Multiple Criteria Decision Mak",
+  "nameEn": "Multiple Criteria Decision Mak",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -457,15 +1178,87 @@
    "Hafta 13 · Grup Karar Verme",
    "Hafta 14 · Dönem Projelerinin Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Karar Vermeye Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sorunun Yapılandırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Karar Modelinin Kurulması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sorunun Analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bilişsel Haritalar, Bayesyan Ağlar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Belirsizlik ve Risk Altında Karar Verme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Fayda Teorisi ve Karar Ağaçları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Basit Yöntemler, Değere dayalı Yöntemler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Analitik Hiyerarşi Süreci",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Analitik Ağ Süreci",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Üstünlük Yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Çok Amaçlı Karar Verme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Grup Karar Verme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Projelerinin Sunumları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Quantitative Analysis for Management, Render, B., Stair Jr, R.M., and Hanna, M.E. , Pearson Education Inc., New Jersey, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=313"
  },
  "SEN 315": {
   "code": "SEN 315",
   "name": "Manufacturing Processes",
+  "nameEn": "Manufacturing Processes",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -497,15 +1290,87 @@
    "Hafta 13 · CAD/CAM, Parça programlama teknikleri",
    "Hafta 14 · Esnek imalat sistemleri ve İmalatta robotlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş (Okuma: 1.3 & 1.4 bölümler) ve Genel olarak imalat tekniklerine bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Döküm",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Plastik şekil verme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Kaynak",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Isıl işlem ve Metal şekillendirme, tezgahlar, prensipler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Metal talaşlı imalat teorisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Tornalama",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Frezeleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Delme ve taşlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Metal işleme maliyet tahmini",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Kesme aletleri teknolojisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "İmalatta bilgisayar",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "CAD/CAM, Parça programlama teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Esnek imalat sistemleri ve İmalatta robotlar",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Modern Manufacturing Materials, Processes..., Grover, M. P. , John Wiley & Sons, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=315"
  },
  "SEN 317": {
   "code": "SEN 317",
   "name": "Intr.to Inform.Processimg Syst",
+  "nameEn": "Intr.to Inform.Processimg Syst",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -543,15 +1408,87 @@
    "Hafta 13 · Bilgisayar sistem değerlendirmesi ve sistem kazancı: teklif için talep geliştirme, yazılım tedarikçisi seçimi",
    "Hafta 14 · Gerçek dünya sorunları ve yazılım paket programları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel terminoloji, ders hakkında genel bilgi, sistem kavramı, işletmelerdeki bilgi sistemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sistem analizi yaklaşımı, bilgi sistemlerinin temelleri, hesap yapmanın internette işleyişi, küreselleşme ve bilgi teknolojisi, iş süreçlerinde değişim mühendisliği, BT ile rekabet avantajı, temel bil",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Bir takım çalışması ve sistem analizi uygulaması, veri kaynaklarının girişi, verinin bilgiye çevrilecek şekilde işlenmesi, bilgi tabanlı ürünlerin çıktısı, veri kaynaklarının depolanması, sistemlerin",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yönetim düzeyleri ve karar tipleri, yönetim bilişim sistemleri, bilginin nitel özellikleri, YBS ve rapor tipleri, Çizelgeli, Talep, Kabul ve Kestirimci Raporlar, Bir örnek raporlama aracı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Veritabanı yönetim sistemleri, lojik VTYS yapıları: ağ, ağaç, ilişkisel, çok boyutlu",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Programlama dilleri, bir örnek VTYS: İlerleme. Örnekler ve uygulamalar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Karar destek sistemleri: model geliştirme, what if analizi, hedef arama, risk analizi, KDS kurma, bilgi sistemlerinin yapay zeka ve işletme ile bir karşılaştırılması",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Yarıyıl içi Sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Müşteri İlişkileri Yönetimi (MİY), Tedarik Zinciri Yönetimi (TZY)",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Kurumsal Kaynak Planlaması (ERP) nedir? Ticari ERP paket programları, MRP, MRPII ve ERP arasındaki farklar",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "E-ticaret uygulamaları. B2B, B2C, gerçek dünya örnekleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Sistem tasarımı ve gerçekleştirilmesi, form ve raporların, veri akış diyagramlarının, tasarım modüllerinin, yukarıdan aşağı kodlama ve test dönüşümlerinin, bakımın, insanların eğitiminin nasıl tasarla",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgisayar sistem değerlendirmesi ve sistem kazancı: teklif için talep geliştirme, yazılım tedarikçisi seçimi",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Gerçek dünya sorunları ve yazılım paket programları",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "Intelligent Systems for Information Processing: From Represe, Bouchan-Meunier, B., Foulloy, L., Yager, R.R., JAI Press, 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=317",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=317"
  },
  "SEN 318": {
   "code": "SEN 318",
   "name": "Statistical Meth. for Engin.",
+  "nameEn": "Statistical Meth. for Engin.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -586,15 +1523,87 @@
    "Hafta 13 · Varyans analizi",
    "Hafta 14 · Regresyon ve korelasyon"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanımsal istatistik",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tanımsal istatistik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Merkezi eğilim ve dağılım ölçüleri",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 4,
+    "topic": "Grafikler ve frekans dağılımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Örnekleme ve tahmin etme",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Nokta ve aralık tahminleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Nokta ve aralık tahminleri",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 8,
+    "topic": "İstatistiksel karar vermenin ilkeleri ve hipotez testleri",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 9,
+    "topic": "Ortalamalar, oranlar ve varyanslar için testler",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Ortalamalar, oranlar ve varyanslar için testler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Ki-kare testleri",
+    "outcomes": "4-5-7"
+   },
+   {
+    "week": 12,
+    "topic": "Parametrik olmayan testler",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Varyans analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Regresyon ve korelasyon",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "General Statistics, Chase, W., Bown, F, John Wiley & Sons, Inc., 1992,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=318",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=318"
  },
  "SEN 319": {
   "code": "SEN 319",
   "name": "Management and Organization",
+  "nameEn": "Management and Organization",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -626,15 +1635,87 @@
    "Hafta 13 · Toplam kalite yönetimi",
    "Hafta 14 · Öğrenen organizasyonlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yönetim düşüncesinin gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yönetimde temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İnsan kaynağının yönetimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Güç ve yetki",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Organizasyonların yapısı: Ortaya çıkan bölümler",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Klasik yönetim",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Klasik yönetim",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yönetim işlevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yönetim işlevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Yönetim işlevleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Neo-klasik yönetim",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Modern yönetim",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Toplam kalite yönetimi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenen organizasyonlar",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Management, Boone, L.E., Kurtz, D.L. , McGraw Hill, 1992,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=319",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=319"
  },
  "SEN 321": {
   "code": "SEN 321",
   "name": "Business Law",
+  "nameEn": "Business Law",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -667,15 +1748,87 @@
    "Hafta 13 · Çalışma süreleri",
    "Hafta 14 · İş sağlığı ve güvenliği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Açılış (tanıtım ve bilgilendirme)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İş hukukunun konusu, gelişimi ve kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İş hukukunun temel kavramları (işçi, işveren, çırak, stajyer)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Temel kavramlar (alt işveren, işveren vekili, işyeri)",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "İş Kanununun uygulama alanı, iş sözleşmesinin türleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İşçinin borçları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "İşverenin borçları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Sözleşmenin askıda kalması ve sona ermesi (fesih dışı sona erme ve iş güvencesi)",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Süreli fesih",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 11,
+    "topic": "Derhal fesih",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kıdem tazminatı",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Çalışma süreleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "İş sağlığı ve güvenliği",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Bireysel İş Hukuku, Eyrenci, Taskent S., Ulucan D., Legal Yayınevi, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=321"
  },
  "SEN 325": {
   "code": "SEN 325",
   "name": "Supply Chain Management",
+  "nameEn": "Supply Chain Management",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -708,15 +1861,87 @@
    "Hafta 13 · Bilişim Sistemleri ve Tedarik Zinciri",
    "Hafta 14 · Tedarik Zincirinde Fiyatlama ve Gelir Yönetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tedarik Zincirine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tedarik Zinciri Destekleyicileri ve Engelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Tedarik Zinciri Ağ Tasarımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tedarik Zinciri Dağıtım Tasarımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Tedarik Zincirinde Talep Tahminleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tedarik Zincirinde Toplam Planlama",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tedarik Zincirinde Kestirilebilir Değişikliklerin Yönetimi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Tedarik Zincirinde Ölçek Ekonomisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Tedarik Zincirinde Belirsizlik Yönetimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Tedarik Zincirinde Performans Ölçümü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Tedarik Zincirinde en iyi Seviyelerin Tespiti",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Tedarik Zinciri Koordinasyonu",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Bilişim Sistemleri ve Tedarik Zinciri",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Tedarik Zincirinde Fiyatlama ve Gelir Yönetimi",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "SUPPLY CHAIN MANAGEMENT 4TH EDITION., SANIL CHOPRA & PETER MENDL, PEARSON, 2008,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=325",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=325"
  },
  "SEN 339": {
   "code": "SEN 339",
   "name": "Proje Yönetimi Sistemleri",
+  "nameEn": "Project Management Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -753,15 +1978,73 @@
    "Hafta 13 · Proje Sunumları-1",
    "Hafta 14 · Proje Sunumları-2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Tanımı, Proje Değerlendirme, Proje Planlama Evreleri"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Yönetiminin Temel Aşamaları-1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje Yönetiminin Temel Aşamaları-2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje Yönetim Araçları (İş programları, Kaynak Programları), Şematik Modeller, Ok Diyagramları"
+   },
+   {
+    "week": 5,
+    "topic": "Kritik Yol Yöntemi (CPM)"
+   },
+   {
+    "week": 6,
+    "topic": "Program Değerlendirme ve Gözden Geçirme Tekniği (PERT)"
+   },
+   {
+    "week": 7,
+    "topic": "Blok Diyagramları"
+   },
+   {
+    "week": 8,
+    "topic": "Kaynak Programlama (Seri-Paralel Kaynak Tahsis Yöntemleri)"
+   },
+   {
+    "week": 9,
+    "topic": "Projenin Hızlandırılması, Kritik Süre ve Hızlandırma Maliyeti Belirlemede Doğrusal Programlama"
+   },
+   {
+    "week": 10,
+    "topic": "İş Ayrışım Yapısı, Organizasyon Ayrışım Yapısı"
+   },
+   {
+    "week": 11,
+    "topic": "Projelerde Örgütlenme, Takımlaşma Süreci"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgisayar Destekli Proje Yönetimi (MS Project)"
+   },
+   {
+    "week": 13,
+    "topic": "Proje Sunumları-1"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sunumları-2"
+   }
+  ],
   "textbooks": [
    "Ders Notları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=339",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=339"
  },
  "SEN 342": {
   "code": "SEN 342",
   "name": "Bilgi ve Yenilik Sistemleri",
+  "nameEn": "Knowledge and Innovation Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -795,10 +2078,81 @@
    "Hafta 13 · Bilgi Paylaşım Yöntemleri",
    "Hafta 14 · Bilgi Tabanlı Yeniliğin Ölçütleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgiye Dayalı Yenilik Gereksinimleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgiye Dayalı Yenilik Gereksinimleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 3,
+    "topic": "Yenilik Hedefleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Sorgu Hazırlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Veri Değerlendirme ve Temizleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Tahmin ve Kestirim",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tahmin ve Kestirim",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgi Modelleme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgi Modelleme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgi Sınıflama",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Bilgi Tabanları Oluşturma",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgi Paylaşım Yöntemleri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgi Paylaşım Yöntemleri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 14,
+    "topic": "Bilgi Tabanlı Yeniliğin Ölçütleri",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Hopgood, Adrian, A. “Intelligent systems for engineers and Scientists, CRC Press, 3rd eddition,2012, ISBN-13: 978-1439821206."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SEN&dersNo=342"
  }
 }

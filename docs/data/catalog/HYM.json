@@ -2,6 +2,7 @@
  "HYM 500E": {
   "code": "HYM 500E",
   "name": "Applied Engin.Mathematics",
+  "nameEn": "Applied Engin.Mathematics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -30,6 +31,63 @@
    "Hafta 10 · Nokta düzenleme metodu: quadratik metodun çıkarımı",
    "Hafta 11 · Nokta düzenleme metodu: Sandviç kiriş ve plakalarda titreşim ve sönümleme analizleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uygulamalı mühendislikte numerik metotların temel konseptlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli mekanik problemlerin matematiksel modellenmesi: kinematik ve korunum denklemleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Sürekli mekanik problemlerin matematiksel modellenmesi: Yapı mekaniği formülasyonu ve akış mekaniği problemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Hata analizi, kök bulma ve eğri uydurma ve lineer cebir denklemleri, numerik türev ve integral",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Zaman ayrıştırma: dahili harici metodlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Mekansal ayrıştırma: Sonlu hacim metodu ve sistem üretme; Sonlu eleman metodu ve mesh üretimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sonlu hacim metodları: İki boyutta ısı iletimi ve silindir çevresi sıkışıtırılamaz akış",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sonlu eleman metodu: Çubuk, kiriş ve kafeslerde statik lineer elastik çözümler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sonlu eleman metodu: Plakalarda eğilme statik lineer elastik çözümleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Nokta düzenleme metodu: quadratik metodun çıkarımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Nokta düzenleme metodu: Sandviç kiriş ve plakalarda titreşim ve sönümleme analizleri",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Axler, S., Linear Algebra Done Right, Springer, Third Edition, 2015.",
    "Stroud, K., Advanced Engineering Mathematics, Macmillan International Higher Education, 2011.",
@@ -37,12 +95,12 @@
    "Jeffery, A., Advanced Engineering Mathematics, Harcourt/Academic Press, 2002.",
    "Strang, G., Computational Science and Engineering, 1st edition, Wellesley-Cambridge Press, 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=500",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=500"
  },
  "HYM 502E": {
   "code": "HYM 502E",
   "name": "Aircraft Structures&Materials",
+  "nameEn": "Aircraft Structures&Materials",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -72,18 +130,75 @@
    "Hafta 10 · Yüksek ısıl dayanımlı malzemeler",
    "Hafta 11 · Fiber katkılı kompozit malzemeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hava uzay yapıları tasarım prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapısal mekanik teorilerine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İmalat tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Temel yapısal analizler ve hafif yapıların tasarımı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Kiriş-çerçeve sistemleri ve yüzey-kiriş panelleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Perçin ve menteşeler / Bağlantı verimliliği; Perçin türleri ve seçimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Hafif yapıların tasarımı ve malzeme seçim kriterleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Uçak malzemeleri ve mukavemeti",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Mühendislik metalleri ve alaşımlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Yüksek ısıl dayanımlı malzemeler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Fiber katkılı kompozit malzemeler",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Megson, T.H.G., Aircraft Structures for Engineering Students, Butterworth-Heinemann, 2016.",
    "Curtis, H.D., Fundamentals of Aircraft Structural Analysis, Irwin, 1997.",
    "Raymer, Daniel P., Aircraft Design: A Conceptual Approach, AIAA, 1989.",
    "Hoskin, B.C. and Baker A.A., Composite Materials for Aircraft Structures, AIAA, 1986."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=502"
  },
  "HYM 503E": {
   "code": "HYM 503E",
   "name": "Structural Analysis I",
+  "nameEn": "Structural Analysis I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -112,18 +227,75 @@
    "Hafta 10 · Sonlu eleman denge denklemleri",
    "Hafta 11 · Yapısal hasar türleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Kinetik",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Stress Tensör ve Cauchy Formülü",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kinematik; Uygunluk Şartları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Termodinamik prensipler; Elastisitede sınır koşul problemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Enerji ve değişken prensiplerine giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Enerji denklemleri ve yapısal denklemler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sürekli elemanların formülasyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yapı mekaniği enerji teoremleri ve yapısal elemanların formülasyonu",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ritz metodu ve numerik integrasyon",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sonlu eleman denge denklemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yapısal hasar türleri",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Bauchau, Olivier A., Craig, James I, Structural Analysis: With Applications to Aerospace Structures, 2009.",
    "Robert D. Cook, David S. Malkus, Michael E. Plesha and Robert J. Witt, Concepts and Applications of Finite Element Analysis, 4th Edition, John Wiley & Sons, Inc, 2001.",
    "Megson, T.H.G., Aircraft Structures for Engineering Students, Elsevier, 2016.",
    "Shames, Irving H., and Clive Dym, Energy and Finite Element Methods in Structural Mechanics, New York, NY: Hemisphere Publishing Corporation, 1985."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=503"
  },
  "HYM 504E": {
   "code": "HYM 504E",
   "name": "Fracture Mechanics&Fatigue",
+  "nameEn": "Fracture Mechanics&Fatigue",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -152,12 +324,68 @@
    "Hafta 10 · Çok yönlü yorulma; Zamana bağlı ve yüksek sıcaklıkta yorulma",
    "Hafta 11 · Yapısal tasarım ve onarımlarda kırılma ve yorulma kontrolü"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gevrek sünek kırılma kriterleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Lineer elastik kırılma mekaniği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Teorik mukavemet, gerilim yığılması, çatlak uç alanı, kırılma türleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Elastik-plastik kırılma mekaniği - I",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Elastik-plastik kırılma mekaniği - II",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Kırılma mekaniği fiziği",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Gerinim ömrü ilişkileri: LCF, HCF - I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Gerinim ömrü ilişkileri: LCF, HCF - II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Çentiklerde yorulma",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Çok yönlü yorulma; Zamana bağlı ve yüksek sıcaklıkta yorulma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yapısal tasarım ve onarımlarda kırılma ve yorulma kontrolü",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Zehnder, Alan T., Fracture Mechanics, Springer, 2012.",
    "T.L. Anderson, Fracture Mechanics: Fundamentals and Applications, 2nd Edition, CRC Press, 2004.",
    "K. Hellan, Introduction to Fracture Mechanics, McGraw-Hill, 1984."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=504",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HYM&dersNo=504"
  }
 }

@@ -2,6 +2,7 @@
  "CTT 509": {
   "code": "CTT 509",
   "name": "Cephe Sistemlerinde Detay Tas.",
+  "nameEn": "Detailing of Facade Systems",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -30,6 +31,63 @@
    "Hafta 10 · Örnek analizi: Cephe kaplama sistemlerinde (Ahşap, doğal taş, pişmiş toprak, metal, çimento, polimer esaslı, bitkilendirilmiş, fotovoltaik) tipik bölge ve birleşim bölgesi detayları.",
    "Hafta 11 · Detay tasarımı: Cephe kaplama sistemlerinde (Ahşap, doğal taş, pişmiş toprak, metal, çimento, polimer esaslı,bitkilendirilmiş, fotovoltaik) tipik bölge ve birleşim bölgesi."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Detay oluşturmada yaklaşımlar, detay tasarımı ilkeleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Detay tasarımında ölçütler: performans gereksinimleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Detay tasarımında ölçütler: yapılabilirlik ve görsel etki.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Cephe sistemlerinin detay tasarımında malzeme seçimi ilkeleri. Cephe sistemlerinin tipik bölge detayı analiz ve tasarım ilkeleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Cephe sistemi-bina birleşim bölgesi detayı analiz ve tasarım ilkeleri.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Örnek analizi: Giydirme cephe sistemi-bina birleşim detayları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Detay tasarımı: Giydirme cephe sistemi-bina birleşimi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Örnek analizi: Doğrama-duvar birleşim detayları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Detay tasarımı: Doğrama-duvar birleşimi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Örnek analizi: Cephe kaplama sistemlerinde (Ahşap, doğal taş, pişmiş toprak, metal, çimento, polimer esaslı, bitkilendirilmiş, fotovoltaik) tipik bölge ve birleşim bölgesi detayları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Detay tasarımı: Cephe kaplama sistemlerinde (Ahşap, doğal taş, pişmiş toprak, metal, çimento, polimer esaslı,bitkilendirilmiş, fotovoltaik) tipik bölge ve birleşim bölgesi.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Allen, E., Rand, P., 2007. Architectural Detailing – Function, Constructability, Aesthetics. New Jersey: John Wiley & Sons.",
    "Herzog, T., Krippner, R., Lang, W., 2004, Façade Construction Manual. Basel: Birkhäuser Verlag.",
@@ -37,12 +95,12 @@
    "Meijs, M., Knaack, U., 2009. Components and Connections in Architecture – Principles of Construction. Basel: Birkhäuser Verlag.",
    "Nashed, F., 1995. Time-Saver Details for Exterior Wall Design. New York: McGraw-Hill."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CTT&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CTT&dersNo=509"
  },
  "CTT 511": {
   "code": "CTT 511",
   "name": "Cephe için Proje&Yapım Yönet.",
+  "nameEn": "Project and Construction Management for Facade",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -71,17 +129,74 @@
    "Hafta 10 · Örnek olay incelemeleri",
    "Hafta 11 · Tasarım ve inşaat yönetiminde güncel yaklaşımlar (yapı bilgi modelleme, sürdürülebilirlik, yalınlık)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş Türk inşaat sektörüne genel bir bakış İnşaat proje yönetiminin temel konularına genel bir bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İnşaat proje yönetiminin fazlarına genel bir bakış (inşaat öncesi: fizibilite, tasarım, sözleşmeler; inşaat süreci; inşaat sonrası)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Cephe tasarımın sürecinin süreye, kaliteye, maliyete, proje yönetim sürecine ve binanın hayat döngüsüne etkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Altyüklenicinin tespiti ve sözleşmede dikkat edilmesi gereken unsurlar I (ihaleler, tedarik zinciri, altyüklenici seçim kriterleri)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Altyüklenicinin tespiti ve sözleşmede dikkat edilmesi gereken unsurlar II (standart sözleşmeler ve sözleşme tipleri)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Altyüklenicinin tespiti ve sözleşmede dikkat edilmesi gereken unsurlar III (iş değişiklikleri, hak talepleri, uyuşmazlıklar, tasarım ekonomisi)",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Şantiyede mobilizasyon aşamasında dikkat edilmesi gereken unsurlar (iş güvenliği, iş programı ve altyüklenici koordinasyonu, sürdürülebilirlik, şantiye atık yönetimi)",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İnşaat sırasında şantiyede dikkat edilmesi gereken unsurlar (iş güvenliği, control, altyüklenici koordinasyonu, sürdürülebilirlik, şantiye atık yönetimi)",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "İnşaat sonrasında dikkat edilmesi gereken unsurlar (demobilizasyon, bakım onarım, iklime adaptasyon, yıkım)",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Örnek olay incelemeleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım ve inşaat yönetiminde güncel yaklaşımlar (yapı bilgi modelleme, sürdürülebilirlik, yalınlık)",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "R. Johnson, The Economics of Building/A Practical Guide for the Design Professional, John Wiley & Sons, New York, 1990.",
    "Turner, Rennis, Design and Build: Contract Practice, Longman, Essex, 1986.",
    "Blau, J.R., Architects and Firms, MIT, MA, 1988."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CTT&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CTT&dersNo=511"
  },
  "CTT 515": {
   "code": "CTT 515",
   "name": "Cephe Üretim Siste.Tas.&Yön.",
+  "nameEn": "Design and Management for Facade Manufacturing Systems",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -114,6 +229,63 @@
    "Hafta 10 · Yalın üretim",
    "Hafta 11 · Proje yönetim teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Üretim sistemleri ve özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Cephe sistemleri üretim süreçleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje tipi montaj sistemlerinin tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bütünleşik ürün ve süreç tasarımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Üretim planlama ve kontrol, kapasite planlama",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Bakım yönetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Tesis tasarımı ve planlaması hususları",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Tedarik zinciri yönetimi ve üretim lojistiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kurumsal kaynak planlama işlevleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Yalın üretim",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Proje yönetim teknikleri",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Krajewski, L.J., Ritzman, L.P., Malhotra, M.K. (2014), Üretim Yönetimi, Çeviri Editörü: Semra Birgün, Nobel Akademik Yayıncılık, Ankara.",
    "Anil Kumar, S. (2008), Production and operations management (with skill development, caselets and cases), New Delhi : New Age International (P) Ltd., Publishers.",
@@ -122,12 +294,12 @@
    "Gunn, T.G., (1997), 21st Century Manufacturing, Oliver White Publications.",
    "Hitomi, K. (1996), Manufacturing Systems Engineering, Taylor & Francis Publications."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CTT&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CTT&dersNo=515"
  },
  "CTT 599": {
   "code": "CTT 599",
   "name": "Dönem Projesi",
+  "nameEn": "Term Project",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -156,10 +328,55 @@
    "Hafta 10 · Sentez 2",
    "Hafta 11 · Final sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı, amaçları, içeriği ve konuların verilmesi"
+   },
+   {
+    "week": 2,
+    "topic": "Literatür taraması 1"
+   },
+   {
+    "week": 3,
+    "topic": "Literatür taraması 2"
+   },
+   {
+    "week": 4,
+    "topic": "Ara sunum 1"
+   },
+   {
+    "week": 5,
+    "topic": "Analiz çalışması 1"
+   },
+   {
+    "week": 6,
+    "topic": "Analiz çalışması 2"
+   },
+   {
+    "week": 7,
+    "topic": "Analiz çalışması 3"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sunum 2"
+   },
+   {
+    "week": 9,
+    "topic": "Sentez 1"
+   },
+   {
+    "week": 10,
+    "topic": "Sentez 2"
+   },
+   {
+    "week": 11,
+    "topic": "Final sunum"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CTT&dersNo=599",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CTT&dersNo=599"
  }
 }

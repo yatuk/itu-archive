@@ -2,6 +2,7 @@
  "MRE 101": {
   "code": "MRE 101",
   "name": "Gemi Makinaları Teknik Resim ve Dizaynı",
+  "nameEn": "Maritime Eng. Drawing and Des",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -35,16 +36,88 @@
    "Hafta 13 · Bilgisayar destekli standart makine elemanlarının çizimleri",
    "Hafta 14 · Bilgisayar destekli standart makine elemanlarının çizimleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel teknik resim, çizgiler, yazılar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İzdüşümler ve görünüş çıkarma",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "İzdüşümler ve görünüş çıkarma",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İzdüşümler ve görünüş çıkarma",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçülendirme, yüzey işleme ve tolerans",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Ölçülendirme, yüzey işleme ve toleranslar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Makine elemanları ve standart gösterimleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgisayar destekli teknik resme giriş ve çizim fonksiyonları",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Çizim fonksiyonları ve geometrik çizim uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgisayar destekli temel teknik resim uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Bilgisayar destekli temel teknik resim uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgisayar destekli standart makine elemanlarının çizimleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgisayar destekli standart makine elemanlarının çizimleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Bilgisayar destekli standart makine elemanlarının çizimleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "1. İ. Z. Şen – H. Bora, Bilgisayar Destekli Teknik Çizim, Ege Basım, 2004.",
    "2. Y. Durmuşoğlu- A.S. Emir, STCW 95’e Uygun Teknik Resim I, İTÜ Denizcilik Fakültesi Yayınları, 2004."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=101"
  },
  "MRE 105": {
   "code": "MRE 105",
   "name": "Mesleğe Yönelik Çalışmalar",
+  "nameEn": "Professional Studies",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -76,16 +149,88 @@
    "Hafta 13 · Güverte makineleri",
    "Hafta 14 · Güverte makineleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizcilik sektörü ve temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi çeşitleri ve gemilerin tanıtılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Gemilerin yapıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi makinelerinin sınıflandırılması ve çeşitleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi buhar türbinleri ve kazanlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi gaz türbinleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Gemi dizel makineleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Gemi dizel makineleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi dizel makineleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi yardımcı makineleri ve sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi yardımcı makineleri ve sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi yardımcı makineleri ve sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Güverte makineleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Güverte makineleri",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "1. D. A. Taylor, Introduction to Marine Engineering, Butterworth Heinemann, 2005.",
    "2. R. Schinzinger - M. W. Martin, Introduction to Engineering Ethics, McGraw Hill, Boston 2000."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=105",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=105"
  },
  "MRE 107": {
   "code": "MRE 107",
   "name": "Gemi Makinaları İşletme Mühendisleri için İngilizce",
+  "nameEn": "English for Eng. Officers",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -118,15 +263,87 @@
    "Hafta 13 · Makine dairesinde kullanılan el güç aletleri",
    "Hafta 14 · Makine dairesinde kullanılan el güç aletleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ticaret gemilerinin tipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ticaret gemilerinin tipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemi ölçüleri ve tonaj kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi ölçüleri ve tonaj kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi yapı elemanları ve kısımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi yapı elemanları ve kısımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Denizcilik kuruluşları",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilik kuruluşları",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Makine dairesi personeli ile görev, yetki ve sorumlulukları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Makine dairesi personeli ile görev, yetki ve sorumlulukları",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi ana makineleri ve yardımcı makine tipleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi ana makineleri ve yardımcı makine tipleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Makine dairesinde kullanılan el güç aletleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Makine dairesinde kullanılan el güç aletleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "K.V. Dokkum, Ship knowledge, Dokmar Press, Netherlands, 2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=107",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=107"
  },
  "MRE 311": {
   "code": "MRE 311",
   "name": "Gemi Elektroniği",
+  "nameEn": "Marine Electronics",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -158,15 +375,87 @@
    "Hafta 13 · Dizel makine sistemlerindeki elektronik uygulamalar ve hata teşhisi",
    "Hafta 14 · Gemi yardımcı makinelerindeki elektronik uygulamalar ve hata teşhisi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yarı iletkenler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Diyotlar, diyot devreleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Transistörler ve transistörlü devreler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Transistörlü yükselteçler",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Alan etkili transistörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Tristörler, triyaklar",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Birim sistemleri, ölçüm yöntemleri, hatalar, ölçme cihazları",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Güç elektroniği devre elemanlarının testi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Güç elektroniği sistemlerinde hata teşhisi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal teknik; kodlar, kapılar, işlev blokları, bellek, giriş-çıkış sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Programlanabilir sistemler ve bileşenleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Mikroişlemciler, sürekli-sayısal ve sayısal-sürekli sinyal çeviricileri, alıcılar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dizel makine sistemlerindeki elektronik uygulamalar ve hata teşhisi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi yardımcı makinelerindeki elektronik uygulamalar ve hata teşhisi",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Hasan Selçuk Selek, Analog Elektronik 1, Seçkin Yayıncılık, 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=311"
  },
  "MRE 313": {
   "code": "MRE 313",
   "name": "Numerical Analysis&Comp.Prog.",
+  "nameEn": "Numerical Analysis&Comp.Prog.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -198,15 +487,87 @@
    "Hafta 13 · Adi diferansiyel denklemlerin sayısal çözüm metotları: Euler ve orta-nokta metotları",
    "Hafta 14 · Adi diferansiyel denklemlerin sayısal çözüm metotları: Runge-Kutta metotları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sayısal analiz ve bilgisayar programlama dillerine giriş. Basit işlemler. Değişkenler. Aritmetiksel, ilişkisel ve mantıksal operatörler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 2,
+    "topic": "Polinomlar. Akış kontrolü. Girdi-çıktı yönetimi. Grafik çizdirme.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Taylor serileri. Hata analizi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Hata yayılması. Şartlanma ve stabilite.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Bilgisayarlar ve sayı sistemleri. Anlamlı hane",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kök bulma yöntemleri: ikiye-bölme, sekant ve Newton-Raphson yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Lineer denklem sistemlerinin çözüm metotları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Optimizasyon. Ara sınav.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Eğri uydurma. En küçük kareler metodu.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Enterpolasyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Sayısal türev ve entegral. Trapez metodu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal entegral: Simpson metotları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Adi diferansiyel denklemlerin sayısal çözüm metotları: Euler ve orta-nokta metotları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Adi diferansiyel denklemlerin sayısal çözüm metotları: Runge-Kutta metotları.",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Chapra, S.C. & Canale R.P., 2005. Numerical Methods for Engineers with Software and Programming Applications. 5th Ed., McGraw–Hill Higher Education, ISBN: 00731015672005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=313"
  },
  "MRE 321": {
   "code": "MRE 321",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -238,15 +599,87 @@
    "Hafta 13 · Sınır tabaka",
    "Hafta 14 · Boyut analizi ve benzerlik yasaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, birim sistemleri, hidrostatik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bir noktada basınç ve basınç kuvvetlerinin hesabı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Akışkanların kinematiği",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Bir boyutlu akımların temel denklemleri (süreklilik, enerji ve impuls-momentum denklemleri)",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Bir boyutlu akımların temel denklemleri (süreklilik, enerji ve impuls-momentum denklemleri)",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Navier-Stokes denklemleri ve uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "İdeal akışkanların bir boyutlu akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Gerçek akışkanların bir boyutlu akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "İdeal akışkanların iki ve üç boyutlu akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Gerçek akışkanların iki ve üç boyutlu akımları ve potansiyel akış",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Sıkıştırılabilir ve sıkıştırılamaz akış",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Borularda sürtünmeli akışlar, laminer ve türbülanslı akış",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Sınır tabaka",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Boyut analizi ve benzerlik yasaları",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "White F. M., Fluid Mechanics, McGraw Hill, 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=321"
  },
  "MRE 330": {
   "code": "MRE 330",
   "name": "Uzun Dönem Açık Deniz Eğitimi",
+  "nameEn": "Long Term Sea Training",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -280,15 +713,87 @@
    "Hafta 13 · Sörvey ve denetimler",
    "Hafta 14 · Sörvey ve denetimler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi ve donanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Makine dairesi, ana makine, yardımcı makineler ve tüm sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Makine dairesi, ana makine, yardımcı makineler ve tüm sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Makine dairesi, ana makine, yardımcı makineler ve tüm sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Vardiya tutma",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Vardiya tutma",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Manevra",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Manevra",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Liman operasyonları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Liman operasyonları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi güvenlik yönetim sistemi ve dokümanlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi güvenlik yönetim sistemi ve dokümanlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sörvey ve denetimler",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Sörvey ve denetimler",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=330",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=330"
  },
  "MRE 342": {
   "code": "MRE 342",
   "name": "Denizcilik Sözleşmeleri",
+  "nameEn": "Maritime Conventions",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -321,15 +826,87 @@
    "Hafta 13 · ILO (Uluslararası Çalışma Örgütü) tanıtımı ve MLC 2006 incelemesi",
    "Hafta 14 · Uluslararası sözleşmelere göre gemide bulundurulacak belgeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uluslararası Denizcilik Örgütü (IMO) yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uluslararası sözleşmelerin ve anlaşmaların ulusal mevzuata geçiş kuralları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "STCW 78 sözleşmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "COLREG 72 sözleşmesi, Uluslararası Sağlık Sözleşmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "FAL 65 ve LC 72 ve HNS 96 sözleşmeleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "LLMC 76/96 ve FUND sözleşmeleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "CLC 69/92 ve SUA 88 sözleşmeleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "SALVAGE 89, BUNKER 2001 ve BWM 2004 sözleşmeleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "MARPOL 73/38 sözleşmesi ve annex I-II-III incelenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "MARPOL 73/38 sözleşmesi ve annex IV-V-VI incelenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yükleme Hatları ve SOLAS 74 sözleşmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "SOLAS 74, ISM kod ve ISPS Kod incelemesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "ILO (Uluslararası Çalışma Örgütü) tanıtımı ve MLC 2006 incelemesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası sözleşmelere göre gemide bulundurulacak belgeler",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Ders notu (Lecturer’s notes)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=342"
  },
  "MRE 343": {
   "code": "MRE 343",
   "name": "Gemi Sistemleri III: Gemi Dizel Makineleri I",
+  "nameEn": "Ship Sys.III:Mar. Disl Eng.I",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -364,15 +941,87 @@
    "Hafta 13 · Gemilerde kullanılan yakıtlar ve standartları",
    "Hafta 14 · Yağlama yağları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dizel makinelerinin teorik çevrimleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dizel makinelerinin gerçek çevrimleri ve çalışma ilkeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kroshedli makinelerin parçaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kroshedli makinelerin parçaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Trank pistonlu makinelerin parçaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Süpürme havası sistemleri ve turboşarjerler",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Süpürme havası sistemleri ve turboşarjerler",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yakıt püskürtme sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Yakıt püskürtme sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Gavernörler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yanma",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Yanma ve ısıl değer",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Gemilerde kullanılan yakıtlar ve standartları",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Yağlama yağları",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Fahrettin Küçükşahin, Dizel Motorları, Birsen Yayınevi, İstanbul 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=343",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=343"
  },
  "MRE 361": {
   "code": "MRE 361",
   "name": "Gemi İnşaatı ve Konstrüksiyonu",
+  "nameEn": "Naval Arch.&Ship Construction",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -407,15 +1056,87 @@
    "Hafta 13 · Karaya oturma ve havuzlanmada stabilite",
    "Hafta 14 · Karaya oturma ve havuzlanmada stabilite"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemilerin genel olarak tanıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geminin tarihi, gemilerin sınıflandırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Geminin geometrik özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Gemilerde tonaj ve fribord",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Gemilerde tonaj ve fribord",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi elemanlarının incelenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Deniz sandıkları, sintine kuyuları, pervane ve dümen sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Gemi inşaatında kullanılan yapı teknik yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi inşaatında kullanılan yapı teknik yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Gemide enine, boyuna stabilite ve trim, serbest sıvı yüzeylerinin dengeye etkisi",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Gemide enine, boyuna stabilite ve trim, serbest sıvı yüzeylerinin dengeye etkisi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Gemide enine, boyuna stabilite ve trim, serbest sıvı yüzeylerinin dengeye etkisi",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Karaya oturma ve havuzlanmada stabilite",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Karaya oturma ve havuzlanmada stabilite",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "S. Can - Ü. Ülgen, Gemi İnşaatı I, 2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=361",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=361"
  },
  "MRE 371": {
   "code": "MRE 371",
   "name": "Engine Room Simulator I",
+  "nameEn": "Engine Room Simulator I",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -448,15 +1169,87 @@
    "Hafta 13 · Makine dairesi takım yönetimi uygulamaları",
    "Hafta 14 · Makine dairesi takım yönetimi uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Simülatörün ve sistemlerin tanıtımı (D/G, kazan, ana makine ve ilgili diğer sistemlerin hazırlanması)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Simülatörün ve sistemlerin tanıtımı (tüm sistemlerin hazırlanması, manevra ve vardiya tutma)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kontrol listeleri kullanılarak bilgisayarda D/G, kazan, ana ve yardımcıların hazırlanması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kontrol listeleri kullanılarak bilgisayarda manevra yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Kontrol listeleri kullanılarak bilgisayarda seyir uygulamaları yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tam donanımlı makine dairesi simülatöründe/bilgisayarda D/G, kazan, ana ve yardımcıların hazırlanması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Tam donanımlı makine dairesi simülatöründe/bilgisayarda manevra yapılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Tam donanımlı makine dairesi simülatöründe/bilgisayarda seyir uygulamaları yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Tam donanımlı makine dairesi simülatöründe/bilgisayarda arızaların giderilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Makine dairesi takım yönetimi ve liderlik",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Makine dairesi takım yönetimi ve liderlik",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Makine dairesi takım yönetimi uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Makine dairesi takım yönetimi uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Makine dairesi takım yönetimi uygulamaları",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "MDS kontrol listesi (ERS checklist"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=371",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=371"
  },
  "MRE 381": {
   "code": "MRE 381",
   "name": "Engineering Economics",
+  "nameEn": "Engineering Economics",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -488,15 +1281,87 @@
    "Hafta 13 · Denizcilikle İlgili Sektörlerde Mühendislik İktisadı",
    "Hafta 14 · Genel Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Mühendislik İktisadının Temelleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Maliyet Konuları ve Tasarım İktisadı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Paranın Zaman İçindeki Değeri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Finansal analiz",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Amortisman",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Vergilendirme ve Kamu Sektörü Ekonomileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Kurlar ve Fiyat Değişimleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yenileme Maliyeti",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sermaye Finansmanı ve Dağıtımı",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kar/Maliyet Analizi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sermaye Maliyeti",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Geri Dönüş Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Denizcilikle İlgili Sektörlerde Mühendislik İktisadı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Genel Değerlendirme",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Nawnan, Donald G., Engineering Economic Analysis, Oxford University Press, 2004."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=381",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=381"
  },
  "MRE 383": {
   "code": "MRE 383",
   "name": "Ship Management",
+  "nameEn": "Ship Management",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -528,15 +1393,87 @@
    "Hafta 13 · Gemi işletmeciliğinde teknoloji",
    "Hafta 14 · Filo yönetimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi işletmeciliğinde organizasyon yapısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi işletmeciliğinde kural gereksinimleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemi işletmeciliğinde emniyet prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi işletmeciliğinde çevre prensipleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi işletmeciliğinde kalite anlayışı",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Süreç analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Süreç iyileştirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Gemi işletmeciliğinde süreç yönetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi işletmeciliğinde maliyet planlama",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Teknik açıdan süreç yönetimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi teknik performans takibi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi bakım-onarım yönetimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi işletmeciliğinde teknoloji",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Filo yönetimi",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Drewry. (2006), Ship Management, London, UK, 2006."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=383",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=383"
  },
  "MRE 386": {
   "code": "MRE 386",
   "name": "Engineering Design Process",
+  "nameEn": "Engineering Design Process",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -570,15 +1507,87 @@
    "Hafta 13 · Öğrenci tasarım proje önerisi sunumları",
    "Hafta 14 · Öğrenci tasarım proje önerisi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislikte tasarım. Tasarım sürecine giriş. Mühendislik sistemlerinin özellikleri. Mühendislik tasarım süreci akış şeması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım gerekliliklerini anlamak. Problemin tanımlanması. Fonksiyonel analiz. Dizayn kriterlerinin oluşturulması. (Öğrencilere denizcilikle ilgili tasarım proje öneri konularının verilmesi.)",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Teknik bilginin anlaşılması. Bilgi paylaşım ağları. Grup dinamiği. Sözlü, yazılı ve grafik iletişim.",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 4,
+    "topic": "Yaratıcı dizayn kavramı. Yaratıcı düşünceyi engelleyen unsurlar. Seçenek oluşturma teknikleri. Yatay ve dikey düşünme teknikleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Proje planlama teknikleri. Fikirleri ve temelleri planlama. Kritik yol metodu. Program değerlendirme ve gözden geçirme teknikleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Çevresel kavramlar. Hava ve su kirliliği ve kısa ve uzun vadede etkileri. Yeraltı suyu kirliliği. Görüntü ve ses kirliliği. Yürürlükteki anlaşma, kanun ve yönetmelikler. Çevresel tasarım uygulamaları.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Temel istatistiksel kavramlar. Olasılık hesapları. Sapma ve normallik kavramı. Regresyon, korelasyon. Dağılımlar. İstatistiksel hipotez testleri.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Bağımsız ve şartlı olaylar. Bayes’ teoremi. Rasgele değişkenler. Arıza ve hata olasılığı. Güvenilirlik. Sistem güvenilirliği. (Ara sınav)",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Maliyet analizi ve kontrolü. Ekonomik kavramlar ve tasarıma etkileri (faiz, akış, vergi, enflasyon, getiri oranı, vs.). Ekonomik alternatiflerin değerlendirilmesi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Karar verme teknikleri. Analitik hiyerarşi süreci. Belirsizik altında karar verme. Karar verme ağaçları. Bayesian karar mekanizması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Optimum dizayn. Dinamik programlama. Doğrusal programlama. Simplex algoritması. Nonlineer programlama. Lagrange çarpanları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Modelleme ve simülasyon. Boyut analizi. Benzerlik kanunları. Fiziksel modeller. Matematiksel modelleme. Sayısal modelleme. Monte Karlo sistemlerine bakış.",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci tasarım proje önerisi sunumları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci tasarım proje önerisi sunumları",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Haik Y. & Shahin T. (2010) Engineering Design Process. 2nd Ed., CL-Engineering, ISBN-10:0495668141."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=386",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=386"
  },
  "MRE 387": {
   "code": "MRE 387",
   "name": "Hydraulic & Pneumatic Syst",
+  "nameEn": "Hydraulic & Pneumatic Syst",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -611,15 +1620,87 @@
    "Hafta 13 · Laboratuvar uygulaması",
    "Hafta 14 · Laboratuvar uygulaması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hidrolikteki temel yasalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hidrolik pompalar, motorlar ve silindirler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Hidrolik yağlar, hidrolik yağ tankları, kontrol cihazları ve sızdırmazlık elemanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Basınç, akış ve yön kontrol valfleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Basınç, akış ve yön kontrol valfleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Hidrolik parçalar ve sembolleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Pnömatikteki temel yasalar, basınçlı hava ve kompresörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Basınç, akış ve yön kontrol valfleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi hidrolik uygulamaları; hidrolik dümen donanımı, ırgat vb.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi hidrolik uygulamaları; hidrolik kreyn, ambar kapakları, Ro-Ro gemilerindeki hidrolik sistemler vb.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi pnömatik uygulamaları; dört stroklu ana makinenin pnömatik kontrolü",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gemi pnömatik uygulamaları; iki stroklu ana makinenin pnömatik kontrolü",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Laboratuvar uygulaması",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Laboratuvar uygulaması",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Kemal Demirel, Hidrolik Pnömatik, Birsen Yayınevi, İstanbul 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=387",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=387"
  },
  "MRE 388": {
   "code": "MRE 388",
   "name": "Organizational Management",
+  "nameEn": "Organizational Management",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -652,16 +1733,88 @@
    "Hafta 13 · Örgütsel değişim, değişime direnç ve yönetimi, örgüt geliştirmi",
    "Hafta 14 · Stres ve yönetimi; tükenmişlik sendromu. Sosyal sorumluluk ve etik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yönetim tanımı ve unsurları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Örgüt kavramı ve çeşitleri, örgüt süreci ve ilkeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemi organizasyonu ve denizcilikteki diğer örgütler ile ilişkiler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tutum, değer, birey, kişilik ve kişilik tipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Algılama, Atfetme ve Öğrenme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İş tatmini ve örgütsel bağlılık",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Motivasyon ve motivasyon kuramları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Örgütlerde grup/takım yönetimi; grup/takım oluşumu, çeşitleri ve özellikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Liderlik ve liderlik yaklaşımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Bireysel ve örgütsel çatışma, müzakare",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Örgütsel çevre ve teknoloji",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Örgüt kültürü ve örgütsel iletişim; örgüt içi ve örgütler arası",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Örgütsel değişim, değişime direnç ve yönetimi, örgüt geliştirmi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Stres ve yönetimi; tükenmişlik sendromu. Sosyal sorumluluk ve etik",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Stephen P. Robbins and Timothy A. Judge (2010), Organizational Behavior, 14th Ed., Pearson, 2011.",
    "Richard L. Daft (2009), Organizational Theory and Design, Cengage Learning, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=388",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=388"
  },
  "MRE 432": {
   "code": "MRE 432",
   "name": "Deniz Hukuku",
+  "nameEn": "Maritime Law",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -693,15 +1846,87 @@
    "Hafta 13 · Uluslararası Denizcilik Sözleşmeleri; MARPOL",
    "Hafta 14 · Uluslararası Denizcilik Sözleşmeleri; CLC-1969/92, TONNAGE-1969, LLMC 1976/96"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Hukuk",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hukukun tanımı ve türleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sosyal hayatı düzenleyen kurallar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Deniz Hukuku",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz Hukuku’nun tanımı ve sınıflandırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Deniz İş ve Sosyal Güvenlik Hukuku",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kaptanın tanımı, yetki ve sorumlulukları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Geminin tanımı ve denize, yola ve yüke elverişliliği",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Deniz kazaları, çatma, kurtarma yardım ve müşterek avarya",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Türk İş Kanunu ve analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Deniz İş Kanunu’nun kapsamı, hizmet akdinin düzenlenmesi, akit süresinin uzaması ve sona ermesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Uluslararası Denizcilik Sözleşmeleri; SOLAS, STCW",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası Denizcilik Sözleşmeleri; MARPOL",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası Denizcilik Sözleşmeleri; CLC-1969/92, TONNAGE-1969, LLMC 1976/96",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Sezer Ilgın, Deniz Hukuku I ve II, İstanbul 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=432",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=432"
  },
  "MRE 442": {
   "code": "MRE 442",
   "name": "Sörvey Prosedürleri",
+  "nameEn": "Surveying Procedures",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -734,15 +1959,87 @@
    "Hafta 13 · Yağ kayıt defteri kayıtlarının tutulması",
    "Hafta 14 · Yağ kayıt defteri kayıtlarının tutulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Klas kuruluşları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemilerde bulundurulması gereken sertifikalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Yıllık sörveyler",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Ara sörveyler",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Özel sörveyler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Özel sörveyler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Sörvey hazırlıkları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Bayrak devleti ve liman devleti tarafından yapılan kontroller",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Bayrak devleti ve liman devleti tarafından yapılan kontroller",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Bayrak devleti ve liman devleti tarafından yapılan kontroller",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Tespit edilen uygunsuzlukların giderilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Yağ kayıt defteri kayıtlarının tutulması",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Yağ kayıt defteri kayıtlarının tutulması",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Yağ kayıt defteri kayıtlarının tutulması",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Ders notları (Lecturer’s notes)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=442",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=442"
  },
  "MRE 443": {
   "code": "MRE 443",
   "name": "Gemi Sistemleri IV: Gemi Dizel Makineleri II",
+  "nameEn": "Ship Sys.IV:Mar. Disl Eng.II",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -774,15 +2071,87 @@
    "Hafta 13 · Vardiya tutma ve planlı bakım-tutum sistemleri",
    "Hafta 14 · Vardiya tutma ve planlı bakım-tutum sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi dizel makinelerinde yakıt sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi dizel makinelerinde yakıt sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemi dizel makinelerinde yağlama ve yağlama sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi dizel makinelerinde yağlama ve yağlama sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi dizel makinelerinde soğutma sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi dizel makinelerinde soğutma sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri, sevk sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri, sevk sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi dizel makinelerinde yanma ve egzoz sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi dizel makinelerinde yanma ve egzoz sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Vardiya tutma ve planlı bakım-tutum sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Vardiya tutma ve planlı bakım-tutum sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Vardiya tutma ve planlı bakım-tutum sistemleri",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Fahrettin Küçükşahin, Dizel Motorları, Birsen Yayınevi, İstanbul 2008."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=443",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=443"
  },
  "MRE 453": {
   "code": "MRE 453",
   "name": "Gemi Sistemleri V: Gemi Yardımcı Makineleri III",
+  "nameEn": "Ship Sys.V:Mar.Auxl. Mach. III",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -815,16 +2184,88 @@
    "Hafta 13 · Evaporatörlerde ve çöp yakma kazanlarında çıkabilecek sorunlar ve olası çözüm yöntemleri",
    "Hafta 14 · Atık su ünitelerinde ve dümen donanımlarında çıkabilecek sorunlar ve olası çözüm yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Pompa kavramları, pompalarda manometrik yükseklik, devre ve valf kayıplarının hesaplanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Devre ve valf kayıplarının hesaplanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Devre ve valf kayıplarının hesaplanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Debi kontrol yöntemleri ve benzeşim yasaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Emmedeki net pozitif yük ve kavitasyon",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Viskoz sıvıların basılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Gemilerde (ERS ve CBT kullanılarak) pompa uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Dinamik ve hacimsel pompalarda çıkabilecek sorunlar ve olası çözüm yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi devrelerinde çıkabilecek sorunlar ve olası çözüm yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Yağlama yağı ve yakıt separatörlerinde çıkabilecek sorunlar ve olası çözüm yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Sintine separatörlerinde çıkabilecek sorunlar ve olası çözüm yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Hava kompresörlerinde ve buzluk sistemlerinde çıkabilecek sorunlar ve olası çözüm yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Evaporatörlerde ve çöp yakma kazanlarında çıkabilecek sorunlar ve olası çözüm yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Atık su ünitelerinde ve dümen donanımlarında çıkabilecek sorunlar ve olası çözüm yöntemleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "1. Kemal DEMİREL - İ. Deha ER, Gemi Mühendisleri İçin Pompa Uygulamaları, Birsen Yayınevi, İstanbul 2007.",
    "2. Kemal Demirel, Gemi Yardımcı Makinalarında Sorunlar ve Çözümler, Akademi Denizcilik, İstanbul 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=453",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=453"
  },
  "MRE 454": {
   "code": "MRE 454",
   "name": "Gemi Sistemleri VI: Buhar ve Gaz Türbinleri",
+  "nameEn": "Ship Sys.VI:Steam&GasTurbines",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -857,15 +2298,87 @@
    "Hafta 13 · Gaz türbinlerinin operasyonu, bakımı ve performansları",
    "Hafta 14 · Gaz türbinlerinin arızaları ve çözümleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Buhar türbinlerinin çevrimleri, güç, verim ve kayıplar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "h-S diyagramı uygulamaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Aksiyon ve reaksiyon türbinlerinin çalışma ilkeleri ve bileşenleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Radyal akımlı, eksenel akımlı ve kampavunt türbinler ile bileşenleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yağlama yağı ve boğaz sızdırmazlık devresi, devir düşürme donanımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Buhar türbinlerinin seyir için hazırlanması, manevra ve seyirde vardiya tutma",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Buhar türbinlerinin operasyonu, bakımı ve performansları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Buhar türbinlerinin arızaları ve çözümleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Gaz türbinlerinin çevrimi, güç, verim ve kayıplar",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Brayton çevrimi uygulamaları; açık, yarı açık ve kapalı gaz türbinlerinin çalışma ilkeleri ve bileşenleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Gaz türbinleri bileşenleri, yağlama yağı ve boğaz sızdırmazlık devresi, devir düşürme donanımları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Gaz türbinlerinin seyir için hazırlanması, manevra ve seyirde vardiya tutma",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gaz türbinlerinin operasyonu, bakımı ve performansları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Gaz türbinlerinin arızaları ve çözümleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Fahrettin Küçükşahin, Buhar ve Gaz Türbinleri, Birsen Yayınevi, İstanbul 2007."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=454",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=454"
  },
  "MRE 463": {
   "code": "MRE 463",
   "name": "Gemi Makinaları Malzemeleri",
+  "nameEn": "Marine Engineering Materials",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -897,15 +2410,87 @@
    "Hafta 13 · Uluslararası malzeme standartları",
    "Hafta 14 · Uluslararası malzeme standartları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Malzeme bilimine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Metalik malzemelerin yapıları ve faz diyagramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Metalik malzemelerin yapıları ve faz diyagramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Metallerin mekanik özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Metallerin mekanik özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Çelik, dökme demir ve demir dışı metallerin esasları ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Çelik, dökme demir ve demir dışı metallerin esasları ve sınıflandırılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Metallerin ısıl işlemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Metallerin ısıl işlemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Malzemelerin testleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Seramik, organik ve kompozit malzemeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Seramik, organik ve kompozit malzemeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası malzeme standartları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası malzeme standartları",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Günnur Dikeç - Kemal Demirel, Malzeme Bilgisi, Akademi Denizcilik, İstanbul 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=463",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=463"
  },
  "MRE 471": {
   "code": "MRE 471",
   "name": "Otomatik Kontrol Sistemleri",
+  "nameEn": "Automatic Control Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -939,16 +2524,88 @@
    "Hafta 13 · Jeneratör denetleyici sistemi",
    "Hafta 14 · İklimlendirme denetleyici sistemi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Otomatik kontrole giriş yapmak",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dinamik sistemlerin modellenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Transfer fonksiyonu, sistem diyagramları ve stabilite",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Geri besleme kontrol sistemleri, sıralı denetleyiciler",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "PID denetleyicilerinin benzetim çalışmaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Mekanik, elektrik ve elektronik otomasyon bileşenleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Gerçek zamanlı denetleyiciler, PID, PLC ve PIC denetleyicileri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Seviye PID denetleyicisi laboratuvar çalışması",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Sıcaklık PID denetleyicisi laboratuvar çalışması ve yazılım kontrol",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Ana makine uzaktan kumandası",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Ana makine hava, yakıt, yağlama, soğutma denetleyicileri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Pervane uzaktan kumanda sistemi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Jeneratör denetleyici sistemi",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "İklimlendirme denetleyici sistemi",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "1. Richard C. Dorf, Modern Control Systems, Upper Saddle River, NJ: Pearson/Prentice Hall, 2008.",
    "2. Katsuhiko Ogata, Modern Control Engineering, Prentice Hall, 2010"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=471",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=471"
  },
  "MRE 472": {
   "code": "MRE 472",
   "name": "Gemi Makina Dairesi Simülatörü II",
+  "nameEn": "Engine Room Simulator II",
   "language": "English",
   "credits": {
    "theory": 1,
@@ -982,15 +2639,87 @@
    "Hafta 13 · Acil durumlara müdahale",
    "Hafta 14 · Acil durumlara müdahale"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "D/G, kazan, ana makine ve ilgili diğer sistemlerin hazırlanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tüm sistemlerin hazırlanması, manevra ve vardiya tutma",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Simülatör kullanarak arıza oluşturma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Jeneratör ve ana makine hazırlama sırasında çıkabilecek sorunlar ve giderilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Jeneratör ve ana makine hazırlama sırasında çıkabilecek sorunlar ve giderilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Manevralar ve seyir sırasında çıkabilecek sorunlar ve giderilmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Manevralar ve seyir sırasında çıkabilecek sorunlar ve giderilmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Verimli işletmecilik",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Verimli işletmecilik",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Acil durumlara müdahale",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Acil durumlara müdahale",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Acil durumlara müdahale",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Acil durumlara müdahale",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Acil durumlara müdahale",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "MDS kontrol listesi (ERS checklist)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=472",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=472"
  },
  "MRE 492": {
   "code": "MRE 492",
   "name": "Design Project",
+  "nameEn": "Design Project",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -1023,10 +2752,81 @@
    "Hafta 13 · Tasarım sonuçlarının analizi",
    "Hafta 14 · Tasarım sonuçlarının analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje planlaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje planlaması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Proje ön hazırlığı",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje ön hazırlığı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Araştırma",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Araştırma",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgi analizi yapma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgi analizi yapma",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım sonuçlarının analizi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım sonuçlarının analizi",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MRE&dersNo=492"
  }
 }

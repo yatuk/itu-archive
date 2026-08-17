@@ -2,6 +2,7 @@
  "TEL 232": {
   "code": "TEL 232",
   "name": "Analog İşaret İşleme",
+  "nameEn": "Analog Signal Processing",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -35,15 +36,87 @@
    "Hafta 13 · Sistemler için temel analog işaret işleme, ideal süzgeç yapıları",
    "Hafta 14 · Analog süzgeç tasarım yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İşaretlerin sınıflandırılması, temel işaretler üzerinde temel işlemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Sistemlerin sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dürtü cevabı-evrişim integrali",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Diferansiyel denklemler, Blok çizelgeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Fourier serileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Fourier serileri uygulaması. Arasınav I",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Fourier serileri uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Fourier dönüşümü, enerji ve güç izge yoğunlukları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Fourier dönüşümünün haberleşme sistemlerindeki uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Laplace dönüşümü",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Laplace dönüşümü uygulamaları, Arasınav II",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Laplace dönüşümünün haberleşme sistemlerindeki uygulamaları,",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sistemler için temel analog işaret işleme, ideal süzgeç yapıları",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Analog süzgeç tasarım yöntemleri",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Continous and Discrete Signals and Systems, S.S. Soliman, M.D. Srinath, Prentice Hall, 1998,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=232"
  },
  "TEL 252E": {
   "code": "TEL 252E",
   "name": "İşaretler ve Sistemler",
+  "nameEn": "Signals and Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -75,15 +148,87 @@
    "Hafta 13 · Ters z-dönüşümü",
    "Hafta 14 · DZD sistemlerin z-dönüşümleri yardımıyla tanımlanması ve analizi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, işaret ve sistemlerin sınıflandırılması, temel işaretler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal Zamanla-Değişmez (DZD) sistemler, impuls yanıtı, konvolüsyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "DZD sistemlerin zaman bölgesi analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Diferansiyel ve fark denklemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli-Zamanlı Fourier Serileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrık-Zamanlı Fourier Serileri, ARASINAV I",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sürekli-Zamanlı Fourier Dönüşümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Ayrık-Zamanlı Fourier Dönüşümü",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "DZD sistemlerin frekans bölgesinde tanımlanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Örnekleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Laplace Dönüşümü, ARASINAV II",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "z-dönüşümü",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Ters z-dönüşümü",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "DZD sistemlerin z-dönüşümleri yardımıyla tanımlanması ve analizi",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Signals And Systems, Alan Oppenheim, Alan Willsky, Prentice Hall, 1996,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=252",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=252"
  },
  "TEL 332": {
   "code": "TEL 332",
   "name": "Sayısal İşaret İşleme Lab.",
+  "nameEn": "Digital Signal Processing Laboratory",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -117,15 +262,87 @@
    "Hafta 13 · Proje çalışması (laboratuvarda yapılması zorunludur.)",
    "Hafta 14 · Proje çalışması (laboratuvarda yapılması zorunludur.)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanıtım / Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "MATLAB Programlamaya Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "MATLAB ile Program Geliştirme",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Temel örnekleme kuramı & Ayrık-zamanlı sinyal ve sistemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Evrişim",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "MATLAB ile Arayüz Tasarımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Doğrusal zamanla-değişmeyen sistemlerin frekans yanıtları",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Fark denklemleri ve sayısal süzgeç davranışları",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ayrık Fourier dönüşümü uygulamaları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Hızlı Fourier dönüşümü (FFT)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Sayısal Süzgeçler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Proje çalışması (laboratuvarda yapılması zorunludur.)",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Proje çalışması (laboratuvarda yapılması zorunludur.)",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Proje çalışması (laboratuvarda yapılması zorunludur.)",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=332",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=332"
  },
  "TEL 342": {
   "code": "TEL 342",
   "name": "Haberleşmenin Temelleri",
+  "nameEn": "Telecommunication Engineering Basics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -159,15 +376,87 @@
    "Hafta 13 · Sayısal Modülasyon (ASK, FSK, PSK, ...)",
    "Hafta 14 · Uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Haberleşmede Genel Kavramlar, Modülasyon, İletişimdeki Kısıtlamalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Spektral Analiz, Doğrusal Sistemlerden İletim",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Genlik Modülasyonu (GM), Çift Yan Band (ÇYB) Modülasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Tek Yan Band (TYB) Modülasyonu, Demodülasyon",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Açı Modülasyonu (FM,PM), FM Modülatörleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Uygulama, 1. Arasınav",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "FM Demodülasyonu, Frekans Bölmeli Çoğullama (FDM)",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Örnekleme ve Darbe Modülasyonları (PAM, PDM, PPM)",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Zaman Bölmeli Çoğullama (TDM), Sayısal Darbe Modülasyonları (PCM, DM, ADM, ...)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Temel Band Sayısal Veri İletimi, Simgelerarası Girişim",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Optimum Alıcı ve Verici Filtreler, Uygulama",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Optimum Alıcı ve Verici Filtreler, Uygulama 2. Arasınav",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Sayısal Modülasyon (ASK, FSK, PSK, ...)",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Communication Systems - An Introduction to Signal and Noise , A. Bruce CARLSON, Paul B. CRILLY, Janet C. RUTHLEDGE, McGraw-Hill, 2002,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=342"
  },
  "TEL 416": {
   "code": "TEL 416",
   "name": "Antenler",
+  "nameEn": "Antennas",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -201,15 +490,87 @@
    "Hafta 13 · Anten tasarımı ve ölçme",
    "Hafta 14 · Anten tasarımı ve ölçme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektromagnetik dalgalar ve anten kavramına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel anten parametreleri, ışıma diyagramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yönelticilik, kazanç, anten açıklığı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Akım kaynağının elektromagnetik alanı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Temel anten çeşitleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Elektrik dipol",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Anten dizileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Lineer anten dizileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Lineer anten dizileri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Antenlerin polarizasyonu MIDTERM EXAM",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Antenlerin empedansı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Anten tasarımı ve ölçme",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Anten tasarımı ve ölçme",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Anten tasarımı ve ölçme",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "ANTENNA THEORY, ANALYSIS AND DESIGN, CONSTANTINE BALANIS , JOHN WILLEY, , 2005,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=416",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=416"
  },
  "TEL 423": {
   "code": "TEL 423",
   "name": "Haberleşme Sistemleri",
+  "nameEn": "Communication Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -243,15 +604,87 @@
    "Hafta 13 · Arasınav, gezgin iletişim sistemlerinin temelleri.",
    "Hafta 14 · Sönümlemeli kanallar, çok yollu kanallar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Eşzamanlı zaman bölmeli çoğullama, çerçeve ve çokluçerçeve yapıları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "PCM sıradüzenleri, eşzamanlı olmayan zaman bölmeli çoğullama. Pozitif-negatif doğrulama, çerçeve yapıları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Hat kodlama teknikleri: AMI, HDBn, PST, 4B3T, FOMOT, MS43 kodları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Temelband sayısal işaretlerin spektral özellikleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Temelband sayısal biçimlendirme için kodlama.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "TDM, PCM çerçeve yapıları ve spektral biçimlendirme ile ilgili uygulamalar.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Arasınav, ileri sayısal modülasyon teknikleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "M-li ASK, M-li QAM, M-li PSK, spektral özellikleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "M-li FSK, CPM, CPFSK, MSK, GMSK.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "İleri sayısal modülasyon teknikleri için alıcı yapıları, M-li ASK, M-li QAM, M-li PSK, MSK için hata başarımları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Sayısal iletişim sistemlerinde eşzamanlama teknikleri , zamanlama ve taşıyıcı bilgisinin çıkarılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sayısal modülasyon tekniklerinin spektral özellikleri ve hata başarımları ile ilgili uygulamalar.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Arasınav, gezgin iletişim sistemlerinin temelleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Sönümlemeli kanallar, çok yollu kanallar.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "COMMUNICATION SYSTEMS, AN INTRODUCTION TO SIGNALS AND NOISE , CARLSON A.B., CRILLY P ., RUDLEDGE J. , MCGRAW-HILL, 2001,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=423",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=423"
  },
  "TEL 424": {
   "code": "TEL 424",
   "name": "Uydu Haberleşmesi",
+  "nameEn": "Satellite Communications",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -287,15 +720,87 @@
    "Hafta 13 · Yer istasyonları Alt sistemler",
    "Hafta 14 · Geostasyoner olmayan yörüngelerdeki uydu sistemleri, gelecek çalışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş Temel uydu sistemleri,",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uydu yörüngeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Frekans ve propagasyon kavramları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Link Analizi Anten parametreleri, verilen ve alınan güç",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gürültü gücü, alıcıdaki S/N oranı",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "İletim ortamındaki etkileşim",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "İstasyondan istasyona S/N oranı hesabı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Link tasarım örneği",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Uydu kanalındaki iletim teknikleri, temel band işaretler, analog iletim",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Uydu kanalındaki sayısal iletim, çoğullama, kodlama teknikleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Modülasyon ve demodülasyon teknikleri, bu tekniklerin performansı",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Uydu sistemlerinde çoklu erişim teknikleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Yer istasyonları Alt sistemler",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Geostasyoner olmayan yörüngelerdeki uydu sistemleri, gelecek çalışmalar",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Satellite Com. Systems , Maral&Basquet, , 2005,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=424",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=424"
  },
  "TEL 428E": {
   "code": "TEL 428E",
   "name": "Kablosuz İletişim Ağları",
+  "nameEn": "Wireless Com.Networks",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -329,15 +834,87 @@
    "Hafta 13 · Telsiz yerel alan ağ sistemleri (devam)",
    "Hafta 14 · Uygulamalar ve görünüm"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Telsiz haberleşme ağları ve gezgin hesaplamaya giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ağ mimarisi ve birimleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Açık sistemler arabağlaşımı (OSI) referans modeli, Telsiz iletim",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ortam erişim kontrolü (MAC)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gezgin haberleşme katmanı",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Gezgin taşıma katmanı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "QoS Yönetimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Güvenlik ve kimlik kontrolü",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Gezginlik desteği",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Gezgin hesaplama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ağ performansının değerlendirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Telsiz yerel alan ağ sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Telsiz yerel alan ağ sistemleri (devam)",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalar ve görünüm",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Mobile Communications, Jochen Schiller, Addison-Wesley, 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=428",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=428"
  },
  "TEL 468": {
   "code": "TEL 468",
   "name": "Elektroman.Uyum.Ölç. Temelleri",
+  "nameEn": "Principles of Electromagnetic Compatibility Measurements",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -372,15 +949,87 @@
    "Hafta 13 · Açık alan ölçme düzeni",
    "Hafta 14 · Ölçme Sisteminin kalibrasyonu ve EMI ölçme düzeni örneği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "EMU tanımları ve sınıflama",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "EMU standartları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "EMU test tipleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "EMU ölçmelerinde doğruluk ve tekrarlanabilirlik, EMU test planları,",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "EMU ölçme laboratuvarı ölçüm düzeni",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "EMU ölçme düzeni elemanları ve EMI ölçme düzeni örnekleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 7,
+    "topic": "EMU ölçme düzeni elemanları ve EMI ölçme düzeni örnekleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "EMU ölçme düzeni elemanları ve EMI ölçme düzeni örnekleri Ara Sınav",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 9,
+    "topic": "Temel anten parametereleri,",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "EMI ölçümlerinde Temel anten tipleri ve EMI ölçme düzeni örnekleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "EMS ölçümlerinde Temel anten tipleri ve EMS ölçme düzeni örnekleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 12,
+    "topic": "EMU ölçme cihazları ve EMC ölçme düzeni örnekleri",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Açık alan ölçme düzeni",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Ölçme Sisteminin kalibrasyonu ve EMI ölçme düzeni örneği",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "A handbook for EMC Testing and Measurements, David Morgan, Peter Peregrinus Ltd.,, 1996,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=468",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=468"
  },
  "TEL 492": {
   "code": "TEL 492",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -407,15 +1056,73 @@
    "Hafta 13 · Problem üstünde çalışma ve raporun hazırlanması",
    "Hafta 14 · Raporun sunulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Planın sunulması"
+   },
+   {
+    "week": 2,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 3,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 4,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 5,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 6,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 7,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 8,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 9,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 10,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 11,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 12,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 13,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 14,
+    "topic": "Raporun sunulması"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=492"
  },
  "TEL 492E": {
   "code": "TEL 492E",
   "name": "Bitirme Çalışması",
+  "nameEn": "Graduation Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -442,15 +1149,73 @@
    "Hafta 13 · Problem üstünde çalışma ve raporun hazırlanması",
    "Hafta 14 · Raporun sunulması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Planın sunulması"
+   },
+   {
+    "week": 2,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 3,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 4,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 5,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 6,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 7,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 8,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 9,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 10,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 11,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 12,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 13,
+    "topic": "Problem üstünde çalışma ve raporun hazırlanması"
+   },
+   {
+    "week": 14,
+    "topic": "Raporun sunulması"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=492"
  },
  "TEL 502E": {
   "code": "TEL 502E",
   "name": "Detection and Estimation Theo.",
+  "nameEn": "Detection and Estimation Theo.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -482,6 +1247,77 @@
    "Hafta 13 · Kalman süzgeci",
    "Hafta 14 · Kararlı-hal Kalman süzgeci, Kalman süzgecinin uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İstatistiksel çıkarsama kavramına giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Varsayım (hipotez) sınama, karar kıstasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Karar kıstasları (devam), vektör ölçümler, çoklu varsayımlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Karmaşık varsayımlar, ardışıl sezim",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Raslantı süreçleri tekrarı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Beyaz gürültülü ortamda işaretlerin sezimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Renkli gürültülü ortamda işaretlerin sezimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Raslantısal ve bilinmeyen parametrelerin kestirimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Vektör parametrelerin kestirimi, genel Gauss problemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Doğrusal ortalama karesel, en küçük kareler yöntemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "İşaretlerin doğrusal ortalama karesel kestirimi, Wiener süzgeci",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Ayrık-zaman Wiener süzgeci",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kalman süzgeci",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Kararlı-hal Kalman süzgeci, Kalman süzgecinin uygulamaları"
+   }
+  ],
   "textbooks": [
    "M.D. Srinath, P.K. Rajasekaran, R. Viswanathan, Introduction to statistical signal processing with applications Englewood Cliffs, N.J. Prentice Hall, c1996",
    "Steven M. Kay, Fundamentals of statistical signal processing, Vol.1 Estimation Theory, Vol.2 Detection Theory, Englewood Cliffs, N.J. : Prentice-Hall PTR, c1993-1998.",
@@ -489,12 +1325,12 @@
    "Harry L. Van Trees, Detection, estimation, and modulation theory part 1, New York, Wiley 1968, 2001",
    "Louis L. Scharf, Statistical signal processing: detection, estimation, and time series analysis , Reading, Mass. : Addison-Wesley Pub. Co."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=502"
  },
  "TEL 503": {
   "code": "TEL 503",
   "name": "Uygulamalı Elektromany.Kuramı",
+  "nameEn": "Applied EM Theory",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -528,6 +1364,77 @@
    "Hafta 13 · Saçılma Problemlerinin İntegral Denklemlerle Formülasyonu",
    "Hafta 14 · İntegral denklemlerin Sayısal Çözümleri (MoM)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektromagnetiğe Giriş, Maxwell Denklemleri, Dalga Denklemi, Sınır Koşulları, Elektromagnetiğin Temel Teoremleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dalga Denkleminin değişik koordinat sistemlerindeki temel çözümleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Green Fonksiyonlarına Giriş, Dirac Distribüsyonu, Uzaysal impals cevabı",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Skaler Dalga Denklemi için Green Fonksiyonunun Çeşitli Koordinat Sistemlerindeki İfadesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kaynakların Spektral Gösterilimi ve Green Fonksiyonları ile İlişkisi Tabakalı ortamlarda Green Fonksiyonları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Green Fonksiyonları ve İntegral Denklemler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Dyadik Green Fonsiyonlarına Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Dyadik Green Fonsiyonları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dyadik Green Fonsiyonları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Temel kanonik Yapılara İlişkin Saçılma Problemleri, Küreden Saçılma, Mie Serileri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kılavuzlanmış Dalgalar, Kapalı yapılarda Green fonksiyonları, Ayrık Spektrum Problemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Saçılma Problemlerine Giriş, Karmaşık yapıdaki Cisimlerden Saçılma",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Saçılma Problemlerinin İntegral Denklemlerle Formülasyonu",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "İntegral denklemlerin Sayısal Çözümleri (MoM)"
+   }
+  ],
   "textbooks": [
    "C. A. Balanis, “Advanced engineering electromagnetics”, New York : Wiley, 1989.",
    "A. F. Peterson, S. L. Ray, R. Mittra, “Computational Methods for Electromagnetics” IEEE Press 1999.",
@@ -537,12 +1444,12 @@
    "A. Ishimaru, “Electromagnetic Wave Propagation, Radiation, and Scattering” Prentice Hall, 1990",
    "Hyo J. Eom “Electromagnetic Wave Theory for Boundary-Value Problems: An Advanced Course on Analytical Methods\" Springer, 2004."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=503"
  },
  "TEL 505E": {
   "code": "TEL 505E",
   "name": "Gezgin İletişim Sistemleri",
+  "nameEn": "Mobile Commun.Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -575,16 +1482,87 @@
    "Hafta 13 · Bilişsel ağlar.",
    "Hafta 14 · Uygulamalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hücresel haberleşme sistemlerinin gelişimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gezgin radyo yayılımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Hücresel tasarım ve kapsama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Makro, mikro, piko hücresel sistemler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Radyo kaynak yönetimi, trunking kuramı ve sistem tasarım temelleri.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gezgin kaynak yönetimi ve el-değiştirme kavramı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Çoklu erişim teknikleri (FDMA/TDMA/CDMA/OFDMA).",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Telsiz ağlar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Gezgin haberleşme sistemlerinin gelişimi: İkinci nesil haberleşme sistemleri; GSM, IS-95.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Üçüncü nesil haberleşme sistemleri; IMT-2000, CDMA2000, UMTS-HSPA, WiMAX.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Dördüncü nesil haberleşme sistemleri; IMT-Advanced, WiMAX-Advanced, LTE-Advanced.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Telsiz yerel alan ağları.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bilişsel ağlar.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalar."
+   }
+  ],
   "textbooks": [
    "--",
    "--"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=505"
  },
  "TEL 509E": {
   "code": "TEL 509E",
   "name": "Microwave System Engineering",
+  "nameEn": "Microwave System Engineering",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -617,16 +1595,87 @@
    "Hafta 13 · Radar sistemleri, radyometre sistemleri.",
    "Hafta 14 · Sistem tasarım örnekleri: GPS ve uydu sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radyo Haberleşmesi: Sistem kavramları, dalga yayınımı ve gürültü",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Verici ve alıcılarda kullanılan pasif ve aktif elemanlar: İletim hatları, empedans uydurma devreleri, mikrodalga filtreler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kuvvetlendiriciler, osilatörler ve diğer sistem elemanları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Gürültü ve lineer olmayan bozulma. Girişim ve intermodülasyon etkileri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Alt dönüştürücü tasarımı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "RF sistemlerde modülator ve demodülatörler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "s-parametreleri ile mikrodalga devre analizi: Pasif elemanlar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Mikrodalga devre analiz ve tasarımı: Aktif elemanlar ve cihazlar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "RF link parametreleri, antenler ve kanal modelleme.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "RF link tasarımı.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "RF linklerinde kullanılan uzay ve frekans diversite sistemleri ve birleştiriciler.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kablosuz ve çok geniş bandlı sistemlerin RF bileşenleri.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 13,
+    "topic": "Radar sistemleri, radyometre sistemleri.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Sistem tasarım örnekleri: GPS ve uydu sistemleri"
+   }
+  ],
   "textbooks": [
    "Michael STEER, Microwave and RF Design : A System Approach, Scitech Publishing, Inc. 2009.",
    "Grigorios KALIVAS, Digital Radio System Design, John-Wiley, 2009."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=509",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=509"
  },
  "TEL 510E": {
   "code": "TEL 510E",
   "name": "Telekomün. Şeb.Plan. ve Yönet.",
+  "nameEn": "Telecom.Net.Plan.&Manag.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -659,6 +1708,77 @@
    "Hafta 13 · Güvenlik yönetimi ve sızma belirleme yöntemleri.",
    "Hafta 14 · Uygulamalar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Telekomünikasyon sistemlerine giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Telekomünikasyon pazar yapısı, yönetim politikaları ve regülasyonun etkileri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ağ yönetimi ve planlaması için kullanılan teknoloji ve süreçler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Şebeke yönetim bileşenleri ve görevleri: OSI protokolü ve TMN standardı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Ses ve veri ağları, yerel ve geniş alan ağlarının değerlendirilmesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Genel ağ yönetimi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Mobil servislerin özellikleri, tasarım kriterleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ağların yakınsaması.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Telekomünikasyon trafik planlaması ve trafik tahminleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Telekomünikasyon şebekesi performans yönetimi, şebeke optimizasyonu.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Telekomünikasyon servis yönetimi, hizmet ve kullanıcı deneyim kalitesi.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Telekomünikasyon şebekesi arıza ve konfigürasyon yönetimi.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenlik yönetimi ve sızma belirleme yöntemleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalar."
+   }
+  ],
   "textbooks": [
    "T. Plevyak, V. Sahin, 2010, Next Generation Telecommunications Networks, Services, and Management, IEEE Press Series on Network Management.",
    "S. Aidarous, T. Plevyak. (Ed.), 1998, Telecommunications Network Management : Technologies and Implementations, IEEE Press.",
@@ -666,12 +1786,12 @@
    "T.G. Robertazzi, 1998, Planning Telecommunication Networks, Wiley-IEEE Press; 1st ed., ISBN-10: 0780347021.",
    "J. Show, 2000, Strategic Management in Telecommunications, Artech-House. ISBN-13: 978-1580530187."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=510",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=510"
  },
  "TEL 511": {
   "code": "TEL 511",
   "name": "Kuantum Elektr.&Lazer Kuramı",
+  "nameEn": "Quantum Electronics and Laser Theory",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -704,6 +1824,77 @@
    "Hafta 13 · Optik deteksiyon",
    "Hafta 14 · Holografi, laserlerin uzaktan algılamaya uygulaması – Lidarlar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Laser demetinin özellikleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kuantum mekaniğinde temel kavramların incelenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Schrödinger dalga denkleminin çözümleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Elektromagnetik alanların kuantalanması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Laser emisyonu şartlarının belirlenmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Laser osilatörleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Bazı belirli laser sistemleri, üç ve dört seviyeli laserler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Katı hal laserleri ve gazlı laserler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yarı iletken laserler ve diğer laser çeşitleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Optik radyasyonun modülasyonu.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Parametrik kuvvetlendirme, osilasyon.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Q anahtarlama ve mod kilitleme yapıları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Optik deteksiyon",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Holografi, laserlerin uzaktan algılamaya uygulaması – Lidarlar."
+   }
+  ],
   "textbooks": [
    "A.Yariv, Quantum Electronics, John Wiley & Sons, 1989.",
    "J.Verdeyen, Laser Electronics, Prentice Hall, 1996.",
@@ -711,12 +1902,12 @@
    "A. E. Siegman,Lasers, University Science Books, 1986",
    "J.M.Senior, Optical Fiber Communications, Prentice Hall, 1992."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=511"
  },
  "TEL 515": {
   "code": "TEL 515",
   "name": "Istatistiksel Işaret Işleme",
+  "nameEn": "Statist.Signal Processing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -749,6 +1940,77 @@
    "Hafta 13 · Spektral kestirim, periyodogram",
    "Hafta 14 · Parametrik spektral kestirim yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Ayrık zamanlı işaret ve sistemlerin gözden geçirilmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ayrık rasgele değişkenler, vektörler. Ayrık rasgele süreçler ve özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Durağanlık, Durağan rasgele girişli doğrusal sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Yenilik gösterilimi, spektral faktorizasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "İşaretlerin parametrik modellenmesi, AR modelleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İşaretlerin MA, ARMA modellenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Levinson özyinelemesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kafes süzgeç yapılar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Optimum doğrusal süzgeçler, Normal denklemler, Sonlu dürtü yanıtlı Wiener süzgeçler",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Nedensel ve nedensel olmayan Wiener süzgeçler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Wiener süzgeçleme uygulamaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kalman süzgeçlemeye giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Spektral kestirim, periyodogram",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Parametrik spektral kestirim yöntemleri"
+   }
+  ],
   "textbooks": [
    "M. Hayes, Statistical Digital Signal Processing and Modelling, John Wiley&Sons, 1996.",
    "D. G. Manolakis, V. K. Ingle, S. M. Kogan, Statistical and Adaptive signal Processing, Mc Graw-Hill,2000.",
@@ -756,12 +2018,12 @@
    "S. J. Orfanidis, Optimum Signal Processing, Mc Graw-Hill, 1988.",
    "R. M. Gray, L. D. Davisson, An introduction to statistical Signal Processing , 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=515"
  },
  "TEL 516E": {
   "code": "TEL 516E",
   "name": "Mikrodalga Antenleri",
+  "nameEn": "Antenna Theory&Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -793,18 +2055,89 @@
    "Hafta 13 · Hesaplanan büyüklüklerin analizi",
    "Hafta 14 · Anten ölçümleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Akım dağılımlarının ışıması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Eşdeğerlik teoremleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Dalga cepheleri ve ışınları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Anten parametreleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Temel ışıma elemanları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Anten besleme tipleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yama, kesik ve açıklık antenler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Anten dizileri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dairesel ve 2B diziler, demet şekillendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Anten tasarım araçları ve adımları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Anten modelleme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Anten benzetimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Hesaplanan büyüklüklerin analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Anten ölçümleri"
+   }
+  ],
   "textbooks": [
    "Warren L. Stutzman and Gary A. Thiele , Antenna Theory and Design, Wiley, 2012",
    "C. Balanis, Antenna Theory, Wiley, 2005",
    "J. Kraus, R. Marhefka, Antennas, McGraw-Hill, 2001",
    "Zhi Ning Chen, M. Y. W. Chia, Broadband Planar Antennas: Design and Applications, John Wiley & Sons, 2006"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=516",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=516"
  },
  "TEL 517": {
   "code": "TEL 517",
   "name": "Bilgi Kuramı",
+  "nameEn": "Information Theory",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -837,6 +2170,77 @@
    "Hafta 13 · Katlamalı kodların yapısal özellikleri, durum diyagramları, akış diyagramları, üretme işlevleri, serbest uzaklık kavramı",
    "Hafta 14 · Katlamalı kodların en büyük olabilirlikli çözülmesi: Viterbi Algoritması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilginin (belirsizliğin) ölçülmesi, ortalama belirsizlik (entropi), bilgi iletim hızı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ortak entropi, koşullu entropi kavramları ve bağıntıları, karşılıklı bilgi miktarı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gürültüsüz kodlama tekniği, tek çözülebilir, anında çözülebilir kodlar, Kraft eşitsizliği.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Gürültüsüz kodlama teoremi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Optimum kaynak kodları: Huffman Yöntemi, Lempel-Ziv Algoritması, Bellekli kaynaklar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrık belleksiz kanallar, kanal sığası ve hesaplama yöntemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Optimum ve en büyük olabilirlikli kod çözme işlemleri. Gürültülü kodlama teoremi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Belleksiz hata düzeltme kodlaması: Doğrusal blok kodlar, üreteç ve eşlik kontrol matrisleri, kodlayıcı yapıları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Doğrusal blok kodların çözülmesi, standart tablo, hata belirteci, kod çözücü yapıları, hata olasılığının hesabı.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Hamming kodları. Çevrimsel kodlar, cebirsel özellikleri, üreteç çokterimlileri, üreteç ve parite kontrol matrislerinin cebirsel özellikleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Çevrimsel kodlayıcı ve kod çözücü yapıları. Hata belirteç hesabı, hata sezme ve düzeltme. BCH kodları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Bellekli hata düzeltme kodları: Katlamalı kodlar, kodlayıcı yapıları, üreteç ve eşlik kontrol matrislerinin özellikleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Katlamalı kodların yapısal özellikleri, durum diyagramları, akış diyagramları, üretme işlevleri, serbest uzaklık kavramı",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Katlamalı kodların en büyük olabilirlikli çözülmesi: Viterbi Algoritması."
+   }
+  ],
   "textbooks": [
    "Cover, T. ve Thomas, J., 2006. Elements of Information Theory, John Wiley & Sons.",
    "Lin, S. ve Costello, D.J., 2004. Error Control Coding, Fundamentals and Applications, Prentice-Hall.",
@@ -844,12 +2248,12 @@
    "Ash, R.B., 1990. Information Theory, Dover Publishers",
    "Gallager, R., 1985. Information Theory and Reliable Communication, John Wiley & Sons"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=517"
  },
  "TEL 519E": {
   "code": "TEL 519E",
   "name": "Image Processing",
+  "nameEn": "Image Processing",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -881,17 +2285,88 @@
    "Hafta 13 · Proje sunumları",
    "Hafta 14 · Proje sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Görüntü işlemeye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nokta işlemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "2 Boyutlu Fourier dönüşümü, örnekleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Görüntü süzgeçleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Dalgacıklara Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Ayrıt saptama, eşikleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Aktif çevritler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Görüntü onarma",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Gürültü giderme, Wiener filtresi",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Radon Dönüşümü, Fourier kesit teoremi",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Görüntü geri çatım yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Seyrek işaret işleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumları",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları"
+   }
+  ],
   "textbooks": [
    "Digital Image Processing”, R. C. Gonzalez ve R. E. Woods, Pearson Prentice Hall, 2008.",
    "Discrete-Time Signal Processing,” 4th ed., A. V. Oppenheim ve R. W. Schafer, Prentice Hall, 2009.",
    "Introduction to Statistical Signal Processing,” R. M. Gray ve L. D. Davisson, Cambridge University Press, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=519",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=519"
  },
  "TEL 596": {
   "code": "TEL 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -935,6 +2410,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -947,12 +2493,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=596"
  },
  "TEL 603E": {
   "code": "TEL 603E",
   "name": "Adv. Topics in Telecommunicati",
+  "nameEn": "Adv. Topics in Telecommunicati",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -982,15 +2528,73 @@
    "Hafta 13 · Dersi veren öğretim üyesi tarafından belirlenecektir.",
    "Hafta 14 · Dersi veren öğretim üyesi tarafından belirlenecektir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 2,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 3,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 4,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 5,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 6,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 7,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 8,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 9,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 10,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 11,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 12,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 13,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   },
+   {
+    "week": 14,
+    "topic": "Dersi veren öğretim üyesi tarafından belirlenecektir."
+   }
+  ],
   "textbooks": [
    "Dersi veren öğretim üyesi tarafından belirlenecektir."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=603",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=603"
  },
  "TEL 611E": {
   "code": "TEL 611E",
   "name": "Elektroman.dalga yay.&saçıl.",
+  "nameEn": "Electromag.wave prop.&Sca.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1025,6 +2629,77 @@
    "Hafta 13 · EM dalga yayılımın parabolik denklem (Gauss demeti ) yöntemi ile analizi",
    "Hafta 14 · Hareketli ortamda elektromanyetik dalga analizine ilişkin teoremler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Maxwell denklemleri ve Hertz dalgaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İletken ortamda, plazma ortamında ve tekeksenli ortamda dalgalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dispersif ortamda elektromanyetik dalgalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tekeksenli ortamda düzlem dalgalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Zaman harmonik dalgaların kılavuzlayıcıortamlarda yayılımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Dyadik Green fonksiyonu ve ışıma alanı yaklaşımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Elektromanyetik kaynaklar ile içinde bulundukları ortam etkileşimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Eşdeğerlik prensibinin uygulamaları, geometrik optik limit, paraksiyel limit.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Yansıma kırılma ve kanonik cisimlerden saçılma",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Düzgün olmayan yüzeylerden ve rastgele saçıcılardan saçılma.",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Saçılma analizinde fizik optik ve geometrik optik yaklaşım.",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Radar kesit alanı indirgeme yöntemleri.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "EM dalga yayılımın parabolik denklem (Gauss demeti ) yöntemi ile analizi",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 14,
+    "topic": "Hareketli ortamda elektromanyetik dalga analizine ilişkin teoremler."
+   }
+  ],
   "textbooks": [
    "Electromagnetic Wave Theory, J. A. Kong, 2000,EMW Publshing",
    "Advanced Engineering Electromagnetics, C. A. Balanis, 2012, Wiley; 2 edition",
@@ -1032,12 +2707,12 @@
    "Levis C. A., Johnson J. T., Teixeira F. L., 2010. Radiowave propagation : physics and applications, Hoboken, N.J. : Wiley.",
    "Jenn D.C., 2005. Radar and Laser Cross Section Engineering, American Institute of Aeronautics and Astronautics, Inc."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=611",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=611"
  },
  "TEL 696": {
   "code": "TEL 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -1081,6 +2756,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -1093,7 +2839,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=696"
  }
 }

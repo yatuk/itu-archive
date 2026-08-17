@@ -2,6 +2,7 @@
  "IEB 112E": {
   "code": "IEB 112E",
   "name": "İmalat Sistemlerine Giriş",
+  "nameEn": "Intr. to Manufacturing Systems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,10 +35,81 @@
    "Hafta 13 · İmalatta değer kavramı",
    "Hafta 14 · İmalat performansını artırma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İmalat kavramı ve terimleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstri, fabrika, atölye ve üretim hattı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Rekabetçi öncelikler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ürün geliştirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Fonksiyonel ve fiziksel ürün yapısı",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ürün türleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Temel mühendislik malzemeleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Sürekli ve kesikli üretim sistemleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Metal işleme prosesleri I",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Metal işleme prosesleri II",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "İmalat operasyonlarının analizi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "İmalat otomasyonu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "İmalatta değer kavramı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "İmalat performansını artırma",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "Obi, S.C. 2013, Introduction to Manufacturing Systems, AuthorHouse Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IEB&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IEB&dersNo=112"
  }
 }

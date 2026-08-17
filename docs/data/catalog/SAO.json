@@ -2,6 +2,7 @@
  "SAO 101E": {
   "code": "SAO 101E",
   "name": "Temel Programlama I",
+  "nameEn": "Fundamentals of Programming I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -32,18 +33,90 @@
    "Hafta 13 · Hata Yakalama İşlemleri",
    "Hafta 14 · Dosya İşlemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Problem Çözme ve Algoritmalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Programlama Dili Temelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Phyton Programlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Değişkenler, operatörler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Koşullu ifadeler: if, else, elif",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Blok Tabanlı Programlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Nesne Tabanlı Programlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Veri Yapıları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Karar Yapıları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Arasınav, Döngü Yapıları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Fonksiyonlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tarih ve String İşlemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Hata Yakalama İşlemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dosya İşlemleri",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Eric Matthes, Python Crash Course: A Hands-On, Project-Based Introduction to Programming, 3rd Edition, No Starch Press, 2023.",
    "Automate the Boring Stuff with Python, Al Sweigart, No Starch Press, 2015.",
    "[PDS] Python Data Science Handbook Essential Tools for Working with Data, Jake VanderPlas, O’Reilly Media, 2016",
    "[DSFS] Data Science from Scratch, First Principles with Python, Joel Grus, CreateSpace, 2015"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=101"
  },
  "SAO 102E": {
   "code": "SAO 102E",
   "name": "Temel Programlama II",
+  "nameEn": "Fundamentals of Programming II",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -74,17 +147,89 @@
    "Hafta 13 · Pandas ile Veri Analizi",
    "Hafta 14 · Matplotlib ile Veri Görselleştirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "İleri Seviye Veri Yapıları ve Gömülü Fonksiyonlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "İleri Seviye Fonksiyonlar, Dekoratörler, İteratörler, Jeneratörler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İleri Seviye Modüller ve Web Scraping",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Nesne Tabanlı Programlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Selenium ile Web Sayfalarıyla Etkileşim",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "SQLite Veritabanı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kriptografi modülleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Siber Güvenlik modülleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Siber Güvenlik modülleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Numpy ile Veri Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Pandas ile Veri Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Matplotlib ile Veri Görselleştirme",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Eric Matthes, Python Crash Course: A Hands-On, Project-Based Introduction to Programming, 3rd Edition, No Starch Press, 2023.",
    "David Beasley & Brian K. Jones, Python Cookbook: Recipes for Mastering Python 3, 3rd Edition, O'Reilly Media, Inc., 2013",
    "Wes McKinney, Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=102"
  },
  "SAO 103": {
   "code": "SAO 103",
   "name": "Bilişim ve Ağ Teknolojisinin Temelleri",
+  "nameEn": "Fundamentals of Information and Networking Technology",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -115,16 +260,74 @@
    "Hafta 13 · Uygulama Katmanı",
    "Hafta 14 · Ağ Güvenliğine Giriş"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilişim Teknolojilerinin Gelişimi"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayar Türleri, Donanım Birimleri"
+   },
+   {
+    "week": 3,
+    "topic": "Yazılım Türleri, İşletim Sistemleri"
+   },
+   {
+    "week": 4,
+    "topic": "Bilgisayar Ağlarına Giriş"
+   },
+   {
+    "week": 5,
+    "topic": "Protokoller ve Katmanlı Modeller"
+   },
+   {
+    "week": 6,
+    "topic": "Fiziksel Katman"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Bağlantı Katmanı"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav, Ethernet Protokolü Kavramları"
+   },
+   {
+    "week": 9,
+    "topic": "Ağ Katmanı"
+   },
+   {
+    "week": 10,
+    "topic": "Ipv4 Adresleme"
+   },
+   {
+    "week": 11,
+    "topic": "Ipv6 Adresleme"
+   },
+   {
+    "week": 12,
+    "topic": "İletim Katmanı"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulama Katmanı"
+   },
+   {
+    "week": 14,
+    "topic": "Ağ Güvenliğine Giriş"
+   }
+  ],
   "textbooks": [
    "CCNAv7: Introduction to Network (2020) James Macfarlane",
    "Network Routing Basics: Understanding IP Routing in Cisco Systems (2007), John Wiley & Sons."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=103"
  },
  "SAO 104E": {
   "code": "SAO 104E",
   "name": "Veri Tabanı Uygulamaları ve Güvenliği",
+  "nameEn": "Database Applications and Security",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -156,16 +359,74 @@
    "Hafta 13 · Kullanıcı Güvenlik Yönetimi",
    "Hafta 14 · Uygulama Güvenliği: Regülasyonlar ve Uyumluluklar, Genel Denetim, Mimari Denetim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veritabanına Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Veritabanı Temelleri, Veritabanı Çeşitleri"
+   },
+   {
+    "week": 3,
+    "topic": "Varlık-İlişki Diyagramı ve Veri Tanımlama Dili (DDL) İfadeleri"
+   },
+   {
+    "week": 4,
+    "topic": "Tablo Oluşturmak, Tablo Özellikleri"
+   },
+   {
+    "week": 5,
+    "topic": "Veri Tipleri, Bütünlüğü ve Aritmetik Operatörler"
+   },
+   {
+    "week": 6,
+    "topic": "Veritabanı Tasarlamak, Normalizasyon, Alt Sorgu, Veritabanında Sorgu Oluşturmak"
+   },
+   {
+    "week": 7,
+    "topic": "Union ve Join İfadeleri, NoSQL Veritabanları"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav, Veritabanı Kurulumu ve Yönetimi"
+   },
+   {
+    "week": 9,
+    "topic": "Veritabanı Güvenliğine Giriş"
+   },
+   {
+    "week": 10,
+    "topic": "Veritabanı Saldırı ve Savunma Yöntemleri"
+   },
+   {
+    "week": 11,
+    "topic": "SQL Enjeksiyon Saldırıları ve Savunma"
+   },
+   {
+    "week": 12,
+    "topic": "Veritabanı Yedekleme"
+   },
+   {
+    "week": 13,
+    "topic": "Kullanıcı Güvenlik Yönetimi"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama Güvenliği: Regülasyonlar ve Uyumluluklar, Genel Denetim, Mimari Denetim"
+   }
+  ],
   "textbooks": [
    "Database Security: Problems and Solutions, Christopher Diaz, Mercury Learning and Information, (22 Aug. 2022)",
    "Veri Tabanı Sistemleri, Dr.Yalçın Özkan, Alfa yayınevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=104",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=104"
  },
  "SAO 105": {
   "code": "SAO 105",
   "name": "İşletim Sistemleri & Güvenliği",
+  "nameEn": "Operating Systems and Security",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -196,15 +457,73 @@
    "Hafta 13 · Dosya Paylaşımı ve Güvenliği",
    "Hafta 14 · Kullanıcı Ortamı ve Güvenlik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İşletim Sistemlerine Giriş, İşletim Sistemi Türleri"
+   },
+   {
+    "week": 2,
+    "topic": "Temel İşletim Sistemi Komutları ve Dizin Hiyerarşisi"
+   },
+   {
+    "week": 3,
+    "topic": "Cihazlar ve Cihaz Yapılandırma"
+   },
+   {
+    "week": 4,
+    "topic": "Diskler ve Dosya Sistemleri"
+   },
+   {
+    "week": 5,
+    "topic": "Yükleme (Boot)"
+   },
+   {
+    "week": 6,
+    "topic": "Kullanıcı Uzayını Başlatma"
+   },
+   {
+    "week": 7,
+    "topic": "Sistem ve Güvenlik Ayarları"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav, İşlem Yönetimi ve Kaynak Kullanımı"
+   },
+   {
+    "week": 9,
+    "topic": "Ağ ve Güvenlik Ayarları"
+   },
+   {
+    "week": 10,
+    "topic": "Ağ Uygulamaları ve Servis Güvenliği"
+   },
+   {
+    "week": 11,
+    "topic": "Kabuk Programlamaya Giriş"
+   },
+   {
+    "week": 12,
+    "topic": "Web ve Tarayıcı Güvenliği"
+   },
+   {
+    "week": 13,
+    "topic": "Dosya Paylaşımı ve Güvenliği"
+   },
+   {
+    "week": 14,
+    "topic": "Kullanıcı Ortamı ve Güvenlik"
+   }
+  ],
   "textbooks": [
    "Ward, B. (2021). How Linux works: What every superuser should know. no starch press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=105",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=105"
  },
  "SAO 106": {
   "code": "SAO 106",
-  "name": "Güvenli Ağ Tasarımı ve Cihaz Yönetimi Secure Network Design and Device Management",
+  "name": "Güvenli Ağ Tasarımı ve Cihaz Yönetimi",
+  "nameEn": "Secure Network Design and Device Management",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -235,15 +554,87 @@
    "Hafta 13 · Web filtreleme çözümleri, FTP, DNS, HTTP, HTTPS vb. protokoller",
    "Hafta 14 · VPN ve şifreleme teknolojileri, UTM teknolojileri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ip Sınıflandırma ve Alt Ağ Maskesi 1, 2, 3",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Switch(VLAN, LAG, STP) ve Firewall Türleri Konfigürasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Network Address Translation (NAT), PAT (Port Address Translation) Servislerin İç-Dış Network Bağlantıları, Router ile Vlanları Haberleştirme 1, 2, 3",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Dinamik ve statik yönlendirme, DNS, DHCP yapılandırma-DHCP Relay Agent",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Network Bölgeleri WAN-DMZ-LAN",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Router yapısı ve Konfigürasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "802.x ailesi, NAC yapıları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ağ izleme, Port mirroring",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ağ izleme, Port mirroring",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Kablosuz ağların güvenliği (Radius ve Microsoft NPS Servislerinin Konfigürasyonu)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Saldırı tespit ve engelleme sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "TCP/IP iletişiminde oturuma müdahale",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Web filtreleme çözümleri, FTP, DNS, HTTP, HTTPS vb. protokoller",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "VPN ve şifreleme teknolojileri, UTM teknolojileri",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "William Stallings, Cryptography and Network Security: Principles and Practice 8th Ed, Prentice-Hall (2023)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=106",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=106"
  },
  "SAO 107E": {
   "code": "SAO 107E",
   "name": "Matematik ve Mantık",
+  "nameEn": "Mathematics and Logic",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -274,15 +665,87 @@
    "Hafta 13 · Düzlemsel çizgiler",
    "Hafta 14 · Renklendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kümeler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Fonksiyonlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Bağıntılar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sayma teknikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Permütasyon, kombinasyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Klasik olasılık",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Diziler,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Aritmetik ve geometrik diziler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Arasınav, Tüme varım yöntemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Mantık",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Önermeler Mantığı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çizgeler ve ağaçlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Düzlemsel çizgiler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Renklendirme",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Discrete Mathematics, An Open Introduction, Oscar Levin."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=107",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=107"
  },
  "SAO 108": {
   "code": "SAO 108",
   "name": "Sanallaştırma ve Bulut Teknolojileri",
+  "nameEn": "Virtualization and Cloud Technologies",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -314,15 +777,87 @@
    "Hafta 13 · Bulut Bilişime Yönelik Yaygın Güvenlik Tehditlerini Anlama, Uyum ve Yönetmeliğin İşlenmesi",
    "Hafta 14 · Bulut Sağlayıcıları ile Etkileşim, Hibrit Bulutları Yönetme, Çoklu Bulut Ortamlarını Yönetme, & Büyük Ölçekli Ortamlarda Güvenlik, Güvenlik Prensipleri - Cloud Control Matrix"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sanallaştırma Kavramları, Hipervizörler, Sanal Makineler, Sanal Makine Oluşturma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Sanal Makineye Windows Kurulumu, Linux'u Sanal Makineye Kurmak, Sanal Makine için CPU'ları Yönetme, Sanal Makine için Belleği Yönetme, Sanal Makine için Depolamayı Yönetme, Sanal Makine için Ağ Yönetimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Fiziksel Sistemi Sanal sisteme çevirme, Bir Sanal Makineyi Kopyalama, Sanal Makinelerde Ek Aygıtları Yönetme, Erişilebilirlik",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Sunucu Sanallaştırma ve Uygulama Sanallaştırma Yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Sanal Ağları ve Sanal Depolama Alanlarını Yönetme, Yüksek Erişilebilirlik ve Hata Toleransı, Ölçülebilirlik, Donanım Gereksinimleri, Sanal Makina Depolama Yönetimi, Snapshotları Kullanma, Sanal Ağları Yönetme, yedekleme politikaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sanallaştırma ve Docker-Container, Sanallaştırma ve Bulut : Bulut ve ESXI-Proxmox yönetimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Bulut Bilişime Giriş, Bulut Bilişim Hizmet Modelleri, Bulut Bilişim Dağıtım Modelleri, Güncel Bulut Bilişim Uygulamaları, Bulut Bilişim Kullanım Alanları, Bulut Bilişim Avantajlar ve Dezavantajları, Mobil Bulut Uygulamaları.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sanal Sistemleri Hipervizör katmanında güvenliğin sağlanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Bulut Güvenliğine Giriş",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgi İşlem Hizmetlerini Güvenli Hale Getirme, Depolama Hizmetlerini Güvenli Hale Getirme, Ağ Hizmetlerini Güvenli Hale Getirmek",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "IAM Çözümlerini Uygulamaya Yönelik Etkili Stratejiler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bulut Ortamlarının İzlenmesi ve Denetlenmesi, Bulut Hizmetlerinde Şifreleme Uygulamak",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bulut Bilişime Yönelik Yaygın Güvenlik Tehditlerini Anlama, Uyum ve Yönetmeliğin İşlenmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Bulut Sağlayıcıları ile Etkileşim, Hibrit Bulutları Yönetme, Çoklu Bulut Ortamlarını Yönetme, & Büyük Ölçekli Ortamlarda Güvenlik, Güvenlik Prensipleri - Cloud Control Matrix",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Dac-Nhuong Le, Raghvendra Kumar, Gia Nhu Nguyen, Jyotir Moy Chatterjee, Cloud Computing and Virtualization, Wiley-Scrivener (2018)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=108",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=108"
  },
  "SAO 109E": {
   "code": "SAO 109E",
   "name": "Siber Güvenliğe Giriş",
+  "nameEn": "Introduction to Cybersecurity",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -353,16 +888,74 @@
    "Hafta 13 · Güvenlik Duvarları ve Tüneller",
    "Hafta 14 · İzinsiz Giriş Tespiti ve Ağ Tabanlı Saldırılar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Kavramlar"
+   },
+   {
+    "week": 2,
+    "topic": "Temel İlkeler, Siber Etik Kavramı"
+   },
+   {
+    "week": 3,
+    "topic": "Kriptografik Yapı Taşları"
+   },
+   {
+    "week": 4,
+    "topic": "Kullanıcı Kimlik Doğrulaması"
+   },
+   {
+    "week": 5,
+    "topic": "Parolalar, Biyometri ve Alternatifler"
+   },
+   {
+    "week": 6,
+    "topic": "Kimlik Doğrulama Protokolleri ve Anahtar Kurulumu"
+   },
+   {
+    "week": 7,
+    "topic": "İşletim Sistemi Güvenliği ve Erişim Kontrolü"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav, Yazılım Güvenliği"
+   },
+   {
+    "week": 9,
+    "topic": "İstismarlar ve Ayrıcalık Artırma"
+   },
+   {
+    "week": 10,
+    "topic": "Kötü Amaçlı Yazılım"
+   },
+   {
+    "week": 11,
+    "topic": "Açık Anahtar Sertifika Yönetimi ve Kullanım Örnekleri"
+   },
+   {
+    "week": 12,
+    "topic": "Web ve Tarayıcı Güvenliği, Kişisel Veri Hakları, GDPR/ KVKK Düzenlemeleri"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenlik Duvarları ve Tüneller"
+   },
+   {
+    "week": 14,
+    "topic": "İzinsiz Giriş Tespiti ve Ağ Tabanlı Saldırılar"
+   }
+  ],
   "textbooks": [
    "Paul C. van Oorschot. Computer Security and the Internet: Tools and Jewels from Malware to Bitcoin (2021), Springer.",
    "Paul C. van Oorschot, Siber Güvenliğe Giriş, çeviri: Prof. Dr. Kemal Bıçakcı (2021), Palme Yayınevi."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=109",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=109"
  },
  "SAO 201": {
   "code": "SAO 201",
   "name": "Sızma Testi",
+  "nameEn": "Penetration Testing",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -393,15 +986,87 @@
    "Hafta 13 · Etik Hacking’de Şifre Kırma",
    "Hafta 14 · Sosyal Mühendislik ve Phishing Saldırısı & CTF Yarışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sızma testi metodolojisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Gerekli İşletim Sistemlerinin Kurulumu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "MITRE ATT&CK Saldırı teknikleri ve taktikleri klavuzu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Keşif ve Bilgi Toplama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sistem ve Ağ Taraması (NMAP)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Zafiyet Tarama ve Exploitation",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "AV,EDR,MDR,XDR atlatma teknikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Web Sızma Testi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Web Uygulamaları Testleri Metodolojileri (OWASP Testing Guide)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Web Uygulama Zafiyetleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Bulut Sistemleri Sızma Testi Yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Etik Hacking’de Şifre Kırma",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Sosyal Mühendislik ve Phishing Saldırısı & CTF Yarışması",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Georgia Weidman, Penetration Testing: A Hands-on Introduction to Hacking, No Starch Press, Inc., 2014."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=201"
  },
  "SAO 202E": {
   "code": "SAO 202E",
   "name": "Siber Olay Yönetimi",
+  "nameEn": "Cyber Incident Management",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -432,6 +1097,78 @@
    "Hafta 13 · Log Analizi",
    "Hafta 14 · SOC Lab. Çalışması Seviye1 - Olay Müdahale Senaryo Uygulamaları & SOC Lab. Çalışması Seviye1"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Siber Olay Yönetiminin İlkeleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Siber Saldırı Türleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Siber Olayların Tespiti ve Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Merkezi Kayıt ve Yönetim Sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Olay İlişkilendirme Sistemleri (SIM)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Bilgi Güvenliği ve Olay Yönetimi (SIEM)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Adli Bilişim",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Adli Bilişim",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "SIEM Araçları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Siber Olaylara Müdahele Ekipleri (SOME)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "SOME Operasyonel Elemanları ve Proje Planı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Açık Kaynak Kodlu Merkezi Güvenlik İzleme Yazılımı (OSSIM)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Log Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "SOC Lab. Çalışması Seviye1 - Olay Müdahale Senaryo Uygulamaları & SOC Lab. Çalışması Seviye1",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Joseph Muniz, Gary McIntyre, Nadhem AlFardan, 2015; Security Operations Center: Building, Operating, and Maintaining your SOC, Cisco Press",
    "Anton Chuvakin , Kevin Schmidt , Chris Phillips, Logging and Log Management, Elsevier Science",
@@ -439,12 +1176,12 @@
    "Gregory Jarpey and R. Scott McCoy (Auth.), 2017; Security Operations Center Guidebook. A Practical Guide for a Successful SOC, Butterworth-Heinemann",
    "Ric Messier, 2019; CEH v10 Certified Ethical Hacker Study Guide, Sybex"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=202"
  },
  "SAO 203E": {
   "code": "SAO 203E",
   "name": "Mobil Teknolojiler ve Güvenlik",
+  "nameEn": "Mobile Technologies and Security",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -475,15 +1212,87 @@
    "Hafta 13 · MobSF Açık kaynaklı Uygulama Kullanımı",
    "Hafta 14 · Mobil Uygulama Sızma Testi & CTF Pratik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mobil Güvenliğe Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Android Studio Temelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "iOS Temelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Swift Temelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tersine Mühendislik Araçları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Root ve JailBreak İşlemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Backdoor Uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Şifrelenmiş Uygulama Örneği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Firebase (Cloud Server) Güvenliği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Ağ İçi Saldırılar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "API Güvenliği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "MobSF Açık kaynaklı Uygulama Kullanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Mobil Uygulama Sızma Testi & CTF Pratik",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Abhinav Mishra, Mobile App Reverse Engineering: Get started with discovering, analyzing, and exploring the internals of Android and iOS apps, Packt Publishing (2022)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=203"
  },
  "SAO 204": {
   "code": "SAO 204",
   "name": "Girişimcilik ve Kariyer Planlama",
+  "nameEn": "Entrepreneurship and Career Planning",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -513,6 +1322,78 @@
    "Hafta 13 · Sektör Günleri-Girişimcilik",
    "Hafta 14 · Ders Değerlemesi ve Proje Detayları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı, temel kavramlar ve motivasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kariyer Nedir",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ulusal ve Uluslararası Değişim Programları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Girişimcilik Nedir",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Sektör Günleri-Sivil Toplum Kuruluşları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İnce Yetenekler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Sektör Günleri-Kamu Sektörü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav, Diksiyon ve Beden Dili",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Özgeçmiş ve Kapak Yazısı Hazırlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Sektör Günleri-Özel Sektör",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Etkili Mülakat Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Sektör Günleri-Akademi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Sektör Günleri-Girişimcilik",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Ders Değerlemesi ve Proje Detayları",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Dersin öğretim üyesi tarafından seçilen destekleyici kitap, dergi, makale ve çevrimiçi kaynaklar.",
    "Kariyer Ofisi tarafından hazırlanan kılavuzlar",
@@ -522,12 +1403,12 @@
    "Mülakat simülasyonu, örnek olay/atölye çalışması vb. interaktif etkinlikler.",
    "Ders içeriği ve öğretim elemanı değerleme formları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=204"
  },
  "SAO 205E": {
   "code": "SAO 205E",
   "name": "Siber Güvenlik Yönetişimi",
+  "nameEn": "Cyber Security Governance",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -559,15 +1440,87 @@
    "Hafta 13 · TR'de Siber Güvenlik Organizasyonu",
    "Hafta 14 · TR'de Siber Güvenlik Organizasyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Güvenlik Kavramları ve Prensipleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tehdit Modelleme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "STRIDE yöntemi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Risk Yönetimi ve Güvenlik Kontrolleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yönetişim Unsurları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Sertifikasyon ve Akreditasyon",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Bilişim Hukuku Temel Bilgiler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav, Güvenlik Standartları (ISO27xx, KVYS, Yerel SG mevzuatı)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Güvenlik Standartları (ISO27xx, KVYS, Yerel SG mevzuatı)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ortak Kriterler (Common Criteria) Standardı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Denetim Yapıları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Siber Güvenlikte Etik",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "TR'de Siber Güvenlik Organizasyonu",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "TR'de Siber Güvenlik Organizasyonu",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Ryan Ellis and Vivek Mohan (Editor), Rewired: Cybersecurity Governance, Wiley (2019)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=205"
  },
  "SAO 207E": {
   "code": "SAO 207E",
   "name": "Güvenli Yazılım Geliştirme",
+  "nameEn": "Secure Software Development",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -599,15 +1552,87 @@
    "Hafta 13 · Güvenli Web 2.0",
    "Hafta 14 · DevSecOps kavramı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güvenli Girdi Denetimi, Yazılım Güvenliği",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Girdi Denetimi Stratejileri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Güvenli Kriptografi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Güvenli Kimlik Doğrulama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Güvenli Password Reset Stratejileri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Güvenli Oturum Yönetimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Session Fixation ve Önlemi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Session Korsanlığı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Güvenli Yetkilendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yetkilendirme Yöntemleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Güvenli Dizayn, Hata Yönetimi ve Kayıt Tutma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Statik Güvenli Kod Analizi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Güvenli Web 2.0",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "DevSecOps kavramı",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Michael Howard, David LeBlanc, Writing Secure Code: Practical Strategies and Proven Techniques for Building Secure Applications in a Networked World, 2nd ed. Edition, Microsoft Press (2003)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=207"
  },
  "SAO 209": {
   "code": "SAO 209",
   "name": "Etkili İletişim ve Sunum Teknikleri",
+  "nameEn": "Effective Communication and Presentation Techniques",
   "language": "English/Türkçe",
   "credits": {
    "theory": 1,
@@ -637,15 +1662,87 @@
    "Hafta 13 · Sunum Teknikleri",
    "Hafta 14 · Sözsüz İletişim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İletişim nedir?, Motivasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İletişimde algının rolü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Doğru Anlatma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sanal İletişim",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Yeni Medya Araçları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Etkili İletişim ve Toplumsal Cinsiyet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "İletişimde Kalite",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Etkili İletişimde Konuşma ve Sunum",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Arasınav, Etkili İletişimde Dinleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Konuşma ve Sunum Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Etkileme ve İkna Edici Konuşma",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Sunum Türleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Sunum Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Sözsüz İletişim",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Etkili İletişim Teknikleri, Anadolu Üniversitesi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=209"
  },
  "SAO 211": {
   "code": "SAO 211",
   "name": "Proje Yönetimi Metodolojisi ve Uygulamaları",
+  "nameEn": "Project Management Methodology and Applications",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -675,15 +1772,87 @@
    "Hafta 13 · İzleme ve Kontrol",
    "Hafta 14 · Proje Sürecinin Sonuçlandırılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin tanıtımı, temel kavramlar ve motivasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Yöneticisi ve ekibi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Proje Konusu ve Planını Belirleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Proje Planını Belirleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İş Akışı ve Takvimlerdirme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Proje Kontrolü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Proje Süreçlerinin Yönetimi: Değişilikler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Proje Süreçlerinin Yönetimi: Çıktılar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Arasınav, tekrar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Proje Süreçlerinin Yönetimi: Riskler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Proje Süreçlerinin Yönetimi: Bütçe ve Maliyet",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "İletişim, Farklılıkları Yönetmek",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "İzleme ve Kontrol",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Sürecinin Sonuçlandırılması",
+    "outcomes": "1-2"
+   }
+  ],
   "textbooks": [
    "Horine, Greg. Project Management Absolute Beginner's Guide: Que Publishing, 2012."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=211"
  },
  "SAO 259": {
   "code": "SAO 259",
   "name": "Yapay Zekâ ve Siber Güvenlik",
+  "nameEn": "Artificial Intelligence and Cyber Security",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -714,10 +1883,81 @@
    "Hafta 13 · Düşman (Adversarial) Makine Öğrenme",
    "Hafta 14 · Güncel Problemler ve Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Zeka, Makine Öğrenme, Derin Öğrenme Kavramları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Analizi ve Problem Tipleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Python Kütüphaneleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Temel Makine Öğrenme Yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Bias-Variance Ödünleşmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Hata ve Performans Ölçütleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Neden Yapay Zeka ve Güvenlik?",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Uygulamada Makine Öğrenme: Çalışılmış Örnekler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Arasınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Sınıflandırma ve Kümeleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Anomali Tespiti",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Makine Öğrenmenin Güvenlikte Uygulama Zorlukları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Düşman (Adversarial) Makine Öğrenme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Güncel Problemler ve Uygulamalar",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Alessandro Parisi, (2019), Hands-On Artificial Intelligence for Cybersecurity: Implement smart AI systems for preventing cyber attacks and detecting threats and network anomalies, Packt Publishing."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=259",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=259"
  }
 }

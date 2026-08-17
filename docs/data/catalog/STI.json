@@ -2,6 +2,7 @@
  "STI 101": {
   "code": "STI 101",
   "name": "Statistics I",
+  "nameEn": "Statistics I",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -37,17 +38,89 @@
    "Hafta 13 · Sürekli rassal değişkenler ve dağılımları",
    "Hafta 14 · Sürekli olasılık dağılımları (devam)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, ölçüm düzeyi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veriyi tanımlama, örnekleme, verinin sunumu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Merkezi eğilim ölçüleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Değişkenlik ölçüleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Çarpıklık ölçüleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Sorgulayıcı veri analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Problem oturumu ve Ara Sınav",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Olasılığa giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Rassal değişkenler, olasılık dağılımları",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Beklenen değer, varyans",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kesikli rassal değişkenler ve dağılımları",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Kesikli olasılık dağılımları (devam)",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Sürekli rassal değişkenler ve dağılımları",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Sürekli olasılık dağılımları (devam)",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Newbold, P., Carlson, W. & Thorne, B. (2023). Statistics for Business and Economics, 10th Global Edition, Pearson. ISBN: 978-1292436845",
    "De Veaux, R.D., Velleman, P.F. & Bock, D.E. (2021). Stats: Data and Models, 5th Global Edition, Pearson. ISBN: 978-1292362212",
    "Wickham, H., Çetinkaya-Rundel, M. & Grolemund, G. (2023). R for Data Science: Import, Tidy, Transform, Visualize, and Model Data, 2nd ed., O'Reilly Media. ISBN: 978-1492097402"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STI&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STI&dersNo=101"
  },
  "STI 102": {
   "code": "STI 102",
   "name": "Statistics II",
+  "nameEn": "Statistics II",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -82,12 +155,83 @@
    "Hafta 13 · Korelasyon ve basit regresyon 1",
    "Hafta 14 · Korelasyon ve basit regresyon 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, örnekleme yöntemleri",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 2,
+    "topic": "Örnekleme dağılımlarına giriş",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 3,
+    "topic": "Örnekleme dağılımları ve tek örneklem için parametre tahmini",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tek örneklem için güven aralıkları",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Hipotez testlerine giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Tek örneklem için hipotez testleri (parametrik ve parametrik olmayan yöntemler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "İki örneklem için parametre tahmini ve güven aralıkları",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "İki örneklem için hipotez testleri (parametrik ve parametrik olmayan yöntemler)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Varyanslar için hipotez testleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Varyans analizine giriş",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Varyans analizi (parametrik ve parametrik olmayan yöntemler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Kategorik veri analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Korelasyon ve basit regresyon 1",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Korelasyon ve basit regresyon 2",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Groebner, D.F., Shannon, P.W. & Fry, P.C. (2024). Business Statistics: A Decision Making Approach, 11th Global Edition, Pearson. ISBN: 978-1292446288",
    "Black, K. (2023). Business Statistics: For Contemporary Decision Making, 11th Edition, Wiley. ISBN: 978-1119905448",
    "Newbold, P., Carlson, W. & Thorne, B. (2023). Statistics for Business and Economics, 10th Global Edition, Pearson. ISBN: 978-1292436845"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STI&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=STI&dersNo=102"
  }
 }

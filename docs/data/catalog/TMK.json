@@ -2,6 +2,7 @@
  "TMK 301": {
   "code": "TMK 301",
   "name": "Müzik Tarihi",
+  "nameEn": "Music History",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -35,17 +36,89 @@
    "Hafta 13 · 20. Yüzyıl Besteciliğinde Farklı Üsluplar ve müzisyenler (İcra Kayıtlarının dinlenmesi)",
    "Hafta 14 · Final Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Antik Çağ Yakın Doğu Müzik Kültürleri ve Ortaçağ Avrupasında Kilise Müziği",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Rönesans. 15. ve 16. yüzyılda Avrupa sanat müziğindeki gelişmeler. Çok seslilik. Dini ve din dışı müzik biçimleri.",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Barok. 17. yüzyıl ve 18. yüzyılın ilk yarısında Avrupa sanat müziğindeki gelişmeler. Yeni vokal ve çalgısal formlar. Opera, kantata, oratoryo; konçerto, sonat, dans süitleri. Tonalite.",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Klasik. 18. yüzyılın ikinci yarısında Avrupa sanat müziğindeki gelişmeler. Senfoni. Sonat Formu. 1. Viyana Ekolü. Haydn, Mozart, Beethoven.",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Romantik. 19. yüzyılda Avrupa sanat müziğindeki gelişmeler. Edebiyat ve müzik ilişkisi. Almanca şarkılar (lied’ler), senfonik şiir, romantik piyano müziği.",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Modern. 20. yüzyılda Avrupa sanat müziğindeki gelişmeler. Tonal hiyerarşiye alternatif yazılar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "1. Dünya Savaşı ve 2. Dünya Savaşı sonrası müzikal gelişmeler. Postmodernizm. Vize Sınavı",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Ortaçağ İslam Dünyası ve Sistemci Okul (Urmevî ve Merâgî)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "15. ve 17. yy’lar arasında Osmanlı Müzik Kültürü: Edvarlar ve besteciler.",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Osmanlı’da müzik modernleşmesi: Nota sistemleri, nazariyat ve bestecilik anlayışı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "19.yy Türk müziği ve repertuarının gelişimi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Cumhuriyet Dönemi Müzikologları ve teorisyenleri (R. Yekta, H. S. Arel, M. R. Gazimihal vb.)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "20. Yüzyıl Besteciliğinde Farklı Üsluplar ve müzisyenler (İcra Kayıtlarının dinlenmesi)",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Final Sunumları",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Büke, Aydın ve İpek Mine Altınel. 2006. Müziği Yaratanlar: Klasik Batı Müziğinde Dönemler ve Besteciler, İstanbul: Dünya Yayıncılık.",
    "Behar, Cem. (2019). Osmanlı/Türk Musikisinin Kısa Tarihi. İstanbul: Türkiye İş Bankası Kültür Yayınları.",
    "Tanrıkorur, Cinuçen. (2003). Osmanlı Dönemi Türk Musikisi. İstanbul: Dergah Yayınları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=301"
  },
  "TMK 303": {
   "code": "TMK 303",
   "name": "Müzik Teorisi",
+  "nameEn": "Music Theory",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -77,15 +150,87 @@
    "Hafta 13 · Bütün konuların tekrarı.",
    "Hafta 14 · Ritmik okuma ve solfej çalışmaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Porte, anahtar, Sol anahtarı. Süre değerleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Aralıklar ve majör dizi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Majör dizide basit solfej çalışmaları.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Aralıklar ve minör dizi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Minör dizide basit solfej çalışmaları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Anarmonik ve kromatik aralıklar. Basit ölçülerde ritmik çalışmalar.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "5’li akorlar. Dönem içi değerlendirme sınavı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "5’li akor çevrimleri. Ritmik çalışmalar.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Fa anahtarı ve bütün konuların tekrarı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "7’li akorlar ve fa anahtarında ritmik çalışmalar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Majör ve minör dizilerde solfej çalışmaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "7’li akor çevrimleri. Ritmik çalışmalar.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Bütün konuların tekrarı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Ritmik okuma ve solfej çalışmaları.",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Olgun, Ayşecan, Biçak Ufuk. 2025. Sistematik Yaklaşımla Tonal Dikte. İstanbul: Kriter Basım Yayın Dağıtım"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=303"
  },
  "TMK 341": {
   "code": "TMK 341",
   "name": "Gitar I",
+  "nameEn": "Guitar I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -119,16 +264,88 @@
    "Hafta 13 · Rast makamında eser düzenlemeleri ve bestelerin öğrenilmesi ve icra edilmesi (Tolgahan Çoğulu, Rast Etüd 1).2",
    "Hafta 14 · Rast makamında eser düzenlemeleri ve bestelerin öğrenilmesi ve icra edilmesi (Tolgahan Çoğulu, Rast Etüd 1).3"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Klasik gitar repertuarındaki teknik düzeyi geliştirici etütlerin icra edilmesi (F. Sor Etüt 1).1",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Klasik gitar repertuarındaki teknik düzeyi geliştirici etütlerin icra edilmesi (F. Sor Etüt 1).2",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sağ el tekniğini geliştiren arpej çalışmalarının öğrenilmesi ve icra edilmesi (E. Pujol Etüt 1).1",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Sağ el tekniğini geliştiren arpej çalışmalarının öğrenilmesi ve icra edilmesi (E. Pujol Etüt 1).2",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sol el tekniğini geliştiren alıştırmaların ve etütlerin öğrenilmesi ve icra edilmesi (M. Giuliani Etüt 1).1",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Sol el tekniğini geliştiren alıştırmaların ve etütlerin öğrenilmesi ve icra edilmesi (M. Giuliani Etüt 1.2",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Rönesans ve Barok dönemden eserlerin öğrenilmesi ve icra edilmesi (Bach - Minuet).",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Rönesans ve Barok dönemden eserlerin öğrenilmesi ve icra edilmesi (Bach - Minuet).",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Rast makamında eser düzenlemeleri ve bestelerin öğrenilmesi ve icra edilmesi (Dede Efendi, Yine Bir Gülnihal).1",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Rast makamında eser düzenlemeleri ve bestelerin öğrenilmesi ve icra edilmesi (Dede Efendi, Yine Bir Gülnihal).2",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Rast makamında eser düzenlemeleri ve bestelerin öğrenilmesi ve icra edilmesi (Dede Efendi, Yine Bir Gülnihal).3",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Rast makamında eser düzenlemeleri ve bestelerin öğrenilmesi ve icra edilmesi (Tolgahan Çoğulu, Rast Etüd 1).1",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Rast makamında eser düzenlemeleri ve bestelerin öğrenilmesi ve icra edilmesi (Tolgahan Çoğulu, Rast Etüd 1).2",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Rast makamında eser düzenlemeleri ve bestelerin öğrenilmesi ve icra edilmesi (Tolgahan Çoğulu, Rast Etüd 1).3",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Tennant, S. 1995. Pumping Nylon: The Classical Guitarist’s Technique Handbook, Alfred Publishing Co, USA.",
    "Çoğulu, T. 2023, Mikrotonal Gitar Metodu, Kitapol Yayıncılık."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=341",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=341"
  },
  "TMK 347": {
   "code": "TMK 347",
   "name": "Ses Eğitimi I",
+  "nameEn": "Voice Training I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -160,15 +377,87 @@
    "Hafta 13 · Sınav eserlerine yönelik teknik çalışmalar.",
    "Hafta 14 · Sınava yönelik performans çalışmaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ses anatomisi, artikülatörler ve ses sağlığının korunması hakkında bilgiler. Artistik duruş hakkında bilgiler ve uygulama. Öğrencinin sesinin değerlendirilmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ses fizyolojisi - ses arasındaki ilişki ve rezonans sistemi hakkında bilgiler. Çeşitli ses aralıkları ve ritmik- melodik yapılarda etüt çalışmaları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "İcrada nefes tekniği hakkında bilgiler. Çeşitli ses aralıkları ve ritmik- melodik yapılarda etütler aracılığıyla nefes kontrolü çalışmaları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Artikülasyon hakkında bilgiler. Çeşitli ses aralıkları ve ritmik- melodik yapılarda etütler aracılığıyla, artikülasyon çalışmaları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Registerler hakkında teknik ve teorik bilgiler. Çeşitli ses aralıkları ve ritmik- melodik yapılara sahip etütler aracılığıyla, ilgili müzik türüne yönelik register bölge çalışmaları.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Rejister bölgesinde gürlük ve genişlik açısından gelişim sağlamaya yönelik, çeşitli ses aralıkları ve ritmik- melodik yapılarda etüt çalışmaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Hançere fizyolojisi hakkında bilgiler. İlgili müzik türünde hançere gelişimini destekleyecek çeşitli ses aralıkları ve ritmik- melodik yapılarda etüt çalışmaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Hançere etütlerini eserler üzerinde uygulama çalışmaları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Teorik bilgilerin genel tekrarı.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Eserler üzerinde uygulama çalışmaları.1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Eserler üzerinde uygulama çalışmaları.2",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Sınav eserlerinin belirlenmesi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sınav eserlerine yönelik teknik çalışmalar.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Sınava yönelik performans çalışmaları.",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "Titze, Ingo R. 1994. Principles of Voice Production. Prentice Hall; 1 Edition."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=347",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=347"
  },
  "TMK 349": {
   "code": "TMK 349",
   "name": "Piyano I",
+  "nameEn": "Piano I",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -200,15 +489,87 @@
    "Hafta 13 · Fa anahtarı bilgisi, Beyer No: 55 iki el",
    "Hafta 14 · Dönem içinde verilmiş tüm eserlerin çalınması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Klavyede tuşların tanıtımı ve ölçü bilgisi, Beyer No: 3 ve No: 4 ayrı el",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sağ ve sol eller için alıştırmalar, Beyer No: 3 ve No: 4 iki el",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "İki el için alıştırmalar, Beyer No: 5-6-7-8 ayrı el",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Bağlı çalışma üzerine alıştırmalar, Beyer No: 9-10-11-12-13-14 iki el, 15-17 ayrı el",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçü bilgisinin tekrarı, Beyer No: 15-17-18 iki el, 20-23-24 ayrı el",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Motif ve cümle üzerine alıştırmalar, Beyer No: 20-23-24 iki e,l 28-31 ayrı el",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Cümle bağı üzerine alıştırmalar, Beyer No: 28-31 iki el",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Uzatma bağı üzerine alıştırmalar, Beyer No: 29 ayrı el",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "İnce notalar –sol anahtarı beşinci çizgi üzerindeki nota üzerine alıştırmalar, Beyer No: 41-42-43 iki el",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kalın notalar –sol anahtarı alt birinci ilave çizgi altındaki notalar üzerine alıştırmalar, Beyer No: 35-37-39 iki el",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Sekizlik notalar üzerine alıştırmalar, Beyer No: 45-49-50 tek el",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Noktalı dörtlük üzerine uygulamalar, Beyer No: 45-48-49-50 iki el",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Fa anahtarı bilgisi, Beyer No: 55 iki el",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem içinde verilmiş tüm eserlerin çalınması",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Beyer, Ferdinand. 2023. Vorschule im Klavierspiele opus 101. Edition Peters."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=349",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=349"
  },
  "TMK 365": {
   "code": "TMK 365",
   "name": "Türk Halk Oyunları Repertuarı I",
+  "nameEn": "Turkish Folk Dances Repertoire I",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -240,16 +601,88 @@
    "Hafta 13 · Karşılamalarda erkek oyun repertuarından örnekler",
    "Hafta 14 · Tüm repertuarın sunuma hazırlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Oyun kavramı, Türk Halk Oyunları Kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Türk Halk Oyunlarında temel motifler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Horonlardaki diz kullanımının yerleştirilmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kadın horonu repertuar çalışması- Horon kurma, Atlama",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Erkek horon repertuar çalışması-Horon kurma, Düz horon",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Halaylarda vücut kullanımı, yaylanma, omuz çalışmaları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Halaylarda farklı ritmik aralıklarda oynanan oyunların örneklendirilmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Halay repertuar çalışması- Üç ayak, Toycular",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Halay repertuar çalışması- Helef, Bablekan",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Karşılamalarda beden kullanımı, ayak kol kombinasyonu örnekleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Karşılamalarda farklı ritmik aralıklarda oynanan oyunların örneklendirilmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Karşılamalarda kadın oyun repertuarından örnekler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Karşılamalarda erkek oyun repertuarından örnekler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tüm repertuarın sunuma hazırlanması",
+    "outcomes": "2-3-4"
+   }
+  ],
   "textbooks": [
    "And, Metin. 1974. Oyun Ve Bügü, İstanbul: İş Bankası Yayınları",
    "Demirsipahi, Cemil. 1980. Türk Halk Oyunları, İstanbul: İş Bankası Yayınları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=365",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=365"
  },
  "TMK 369": {
   "code": "TMK 369",
   "name": "Çalgı Bakım ve Onarım Bilgisi",
+  "nameEn": "The Knowledge Of Instrument Care And Restoration",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -284,15 +717,87 @@
    "Hafta 13 · Mızraplı çalgılarda Reglaj uygulamaları.",
    "Hafta 14 · Yaylı çalgılarda Reglaj uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yaylı çalgıların anatomik yapısını tanıma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Mızraplı çalgıların anatomik yapısını tanıma.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Bakım ve onarım için kullanılan malzemelerin tanıtımı ve temini.",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Bakım ve onarım için kullanılan el aletlerinin tanıtımı ve temini.",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 5,
+    "topic": "Kırık, Çatlak ve Tutkal ayrılmasında yapılması gereken uygulamalar.",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Üst yüzey işlemleri ve çalgının cilaya hazırlanması.",
+    "outcomes": "3-5-6-7"
+   },
+   {
+    "week": 7,
+    "topic": "Çalgılarda kullanılan cilaların tanıtımı.",
+    "outcomes": "3-5-6-7"
+   },
+   {
+    "week": 8,
+    "topic": "Gomalak cila eriğinin hazırlanması.",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Cila uygulanmaları.",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Perde bağlama, eşik ve başeşik yapımı.",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Akort burgusu değişimi ve burguluk bakımı.",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Yaylı ve Mızraplı çalgılarda tel değişimi.",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Mızraplı çalgılarda Reglaj uygulamaları.",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Yaylı çalgılarda Reglaj uygulamaları.",
+    "outcomes": "4-5-6"
+   }
+  ],
   "textbooks": [
    "Açın, Cafer. 1994. Enstruman Bilimi, (Organoloji), İstanbul: Yeni Doğan Basımevi, Ltd. Şti."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=369",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=369"
  },
  "TMK 370": {
   "code": "TMK 370",
   "name": "Batı Müziğinde Besteciliğe Giriş",
+  "nameEn": "Introduction to Composition in Western Music",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -323,15 +828,87 @@
    "Hafta 13 · Romantik döneme ait sonat formundaki eserlerde çözümleme",
    "Hafta 14 · 20.yy’a ait örnek eserlerde soyut-somut form elemanları çözümlemeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bestecilikte ekoller ve stiller",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Kompozisyonu meydana getiren unsurlar, ritim, melodi, armoni",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel form bilgisi kavramları, motif, ikiz motif, ana tema, yan tema. Örnek eserlerde çözümleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Cümle, ikiz cümle, period kavramları ve örmeklerin çözümlemesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Motif geliştirme tekniklerinin öğrenilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Motif geliştirme tekniklerinin örnek eserler içinde çözümlenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Armonik ve melodik çözümleme teknikleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Örnek eserlerde armonik ve melodik çözümlemele",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Şarkı formları ve Rondo formunun öğrenilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Şarkı formları ve Rondo formundaki örnek eserlerde çözümleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Barok döneme ait farklı anlayışlardaki sonatin ve sonat formundaki eserlerde çözümleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Klasik döneme ait farklı anlayışlardaki sonatin ve sonat formundaki eserlerde çözümleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Romantik döneme ait sonat formundaki eserlerde çözümleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "20.yy’a ait örnek eserlerde soyut-somut form elemanları çözümlemeleri",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Cope, David. 2006. Techniques of the Contemporary Composer, London: Schirmer."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=370",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=370"
  },
  "TMK 373": {
   "code": "TMK 373",
   "name": "Temel Müzik Prodüksiyonu Teknikleri",
+  "nameEn": "Fundamentals of Music Production",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -364,10 +941,81 @@
    "Hafta 13 · Zaman Bazlı Efektler",
    "Hafta 14 · Gürlük Standartları ve Final Çıktı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Prodüksiyon Kavramı",
+    "outcomes": "4"
+   },
+   {
+    "week": 2,
+    "topic": "Ses Fiziği ve Psikoakustik",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Dijital Ses Temelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Mikrofonlar ve Sinyal AkışıMicrophones and Signal Flow",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mikrofonlama Teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Dijital Ses Çalışma Ortamlarında Kanal Tipleri, Bussing ve Routing",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Ses Düzenleme (Ses Editi)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Ses Düzenleme (MIDI Editi)",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Miksajın Temelleri (Seviye Dengesi)",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Miksajın Temelleri (Ton Dengesi)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Frekans İşlemcileri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Dinamik İşlemciler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Zaman Bazlı Efektler",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Gürlük Standartları ve Final Çıktı",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Huber, David Miles ve Runstein, Robert E. 2012. Modern Recording Techniques, Burlington: CRC Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=373",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TMK&dersNo=373"
  }
 }

@@ -2,6 +2,7 @@
  "BEB 101": {
   "code": "BEB 101",
   "name": "Temel Yüzme Becerisi Öğrenimi",
+  "nameEn": "Basic Swimming Skills",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -35,15 +36,73 @@
    "Hafta 13 · • Explosive yüklenme prensipleri • Plyometric Egzersiz uygulaması",
    "Hafta 14 · uygulamalı sınav"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "• Kalistenik vücut ağırlığı egzeriszleri ile vücut tanıma süreci"
+   },
+   {
+    "week": 2,
+    "topic": "• Anaerobik temelli antrenman temellendirilmesi • Aerobik temelli antrenman koşullandırılması • Antrenman yöntemlerine giriş"
+   },
+   {
+    "week": 3,
+    "topic": "• Tüm vücut dairesel antrenman yöntemi • Bölgesel core antrenman sistemleri"
+   },
+   {
+    "week": 4,
+    "topic": "• İnterval yüklenme prensipleri • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 5,
+    "topic": "• Explosive yüklenme prensipleri • Plyometric Egzersiz uygulaması"
+   },
+   {
+    "week": 6,
+    "topic": "• Endurans Schedule to improve o2 capability • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 7,
+    "topic": "• Çoklu zincir antrenman yöntemleri • Tek zincir antrenman yöntemleri"
+   },
+   {
+    "week": 8,
+    "topic": "• Kişisel antrenman yöntemleri • Dengeli sporcu beslenme eğitimi"
+   },
+   {
+    "week": 9,
+    "topic": "• Kalistenik vücut ağırlığı egzeriszleri ile vücut tanıma süreci"
+   },
+   {
+    "week": 10,
+    "topic": "• Anaerobik temelli antrenman temellendirilmesi • Aerobik temelli antrenman koşullandırılması • Antrenman yöntemlerine giriş"
+   },
+   {
+    "week": 11,
+    "topic": "• Cicruit Traning Schedule for full body • Bölgesel core antrenman sistemleri"
+   },
+   {
+    "week": 12,
+    "topic": "• İnterval yüklenme prensipleri • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 13,
+    "topic": "• Explosive yüklenme prensipleri • Plyometric Egzersiz uygulaması"
+   },
+   {
+    "week": 14,
+    "topic": "uygulamalı sınav"
+   }
+  ],
   "textbooks": [
    "Baechel, T.R., & Groves, B. R.; Weight Training – Steps To Success, 2nd Ed., Human Kinetics, Usa, 1998"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=101"
  },
  "BEB 102": {
   "code": "BEB 102",
   "name": "Yüzme Teknikleri Becerisi Öğr.",
+  "nameEn": "Advanced Swimming Skills",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -75,15 +134,73 @@
    "Hafta 13 · Genel Tekrar",
    "Hafta 14 · Final;"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders Tanıtımı ve Güvenlik Kuralları"
+   },
+   {
+    "week": 2,
+    "topic": "Serbest Stil – Temel Pozisyon ve Ayak Vuruşu"
+   },
+   {
+    "week": 3,
+    "topic": "Serbest Stil – Kol Çekişi ve Koordinasyon"
+   },
+   {
+    "week": 4,
+    "topic": "Sırtüstü Stil – Temel Pozisyon ve Ayak Vuruşu"
+   },
+   {
+    "week": 5,
+    "topic": "Sırtüstü Stil – Kol Çekişi ve Koordinasyon"
+   },
+   {
+    "week": 6,
+    "topic": "Kurbağalama – Ayak Vuruşu ve Kol Tekniği"
+   },
+   {
+    "week": 7,
+    "topic": "Kurbağalama – Koordinasyon ve Dönüşler"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav;"
+   },
+   {
+    "week": 9,
+    "topic": "Kelebek – Dalış ve Ayak Hareketi (teorik)"
+   },
+   {
+    "week": 10,
+    "topic": "Kelebek – Kol Hareketi ve Koordinasyon (teorik)"
+   },
+   {
+    "week": 11,
+    "topic": "Suya atlama teknikleri"
+   },
+   {
+    "week": 12,
+    "topic": "Stil Kombinasyonları ve Dayanıklılık Çalışmaları"
+   },
+   {
+    "week": 13,
+    "topic": "Genel Tekrar"
+   },
+   {
+    "week": 14,
+    "topic": "Final;"
+   }
+  ],
   "textbooks": [
    "Maglischo EW. Swimming Fastest. Champaign, IL: Human Kinetics, 2003. Maglischo EW. Swimming Fastest. Champaign, IL: Human Kinetics, 2003."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=102"
  },
  "BEB 103": {
   "code": "BEB 103",
   "name": "Voleybolda Tem.Eğt. ve Bec.Kaz",
+  "nameEn": "Basic Volleyball Skill Education",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -117,16 +234,74 @@
    "Hafta 13 · Kombine çalışmalar ve • Müsabaka",
    "Hafta 14 · • Uygulama sınav"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "• Ders hakkında bilgi • Voleybol oyunu hakkında genel bilgi"
+   },
+   {
+    "week": 2,
+    "topic": "• Saha Ölçüleri ve oyunun genel uygulamasının oyun alanında anlatılması • Voleybola özgü ısınma ve toplu ısınma • Duruş Teknikleri ve öne parmak pas temel tekniğinin anlatılması"
+   },
+   {
+    "week": 3,
+    "topic": "• Vuruş teknikleri • Geriye parmak pas temel tekniğinin anlatılması"
+   },
+   {
+    "week": 4,
+    "topic": "• Manşet pas temel tekniğinin anlatılması, uygulaması"
+   },
+   {
+    "week": 5,
+    "topic": "• Önden alttan ve yandan alttan servis, tenis servis"
+   },
+   {
+    "week": 6,
+    "topic": "• Driller, tüm becerilerin pekiştirilmesi, • Fileye yakın oyun kurma"
+   },
+   {
+    "week": 7,
+    "topic": "• 3:3, 4:2, 5:1 oyun sistemlerini tanıma • Balance servis, Smaç servis"
+   },
+   {
+    "week": 8,
+    "topic": "• 3:3,4:2, 5:1 oyun sistemlerini uygulama • Hücum (smaç, plase ve smaç plase)"
+   },
+   {
+    "week": 9,
+    "topic": "• Smaç, Savunma ve pas çalışmaları • Blok"
+   },
+   {
+    "week": 10,
+    "topic": "• Blok ve file önü mücadele • Hücum ve karşılama çalışmaları"
+   },
+   {
+    "week": 11,
+    "topic": "• Kombine çalışmalar"
+   },
+   {
+    "week": 12,
+    "topic": "Kombine çalışmalar ve • Müsabaka"
+   },
+   {
+    "week": 13,
+    "topic": "Kombine çalışmalar ve • Müsabaka"
+   },
+   {
+    "week": 14,
+    "topic": "• Uygulama sınav"
+   }
+  ],
   "textbooks": [
    "S E Tiryaki. Yeni Başlayanlar İçin Voleybol Öğretimi, Bağırgan Yayınları",
    "A. H. Sivrikaya, Voleybol Temel Teknik, Spor Yayınevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=103",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=103"
  },
  "BEB 104": {
   "code": "BEB 104",
   "name": "Tenis Teknik ve Taktik Eğitim",
+  "nameEn": "Tennis Technic and Tactic Education",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -157,15 +332,73 @@
    "Hafta 13 · Tenis oyun teknikleri;",
    "Hafta 14 · Final"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tenis oyunu ve Tenis malzemeleri hakkında bilgiler;"
+   },
+   {
+    "week": 2,
+    "topic": "Raketler hakkında bilgiler;"
+   },
+   {
+    "week": 3,
+    "topic": "Raket tutuşları ve bu tutuşlarla yapılan vuruşlar;"
+   },
+   {
+    "week": 4,
+    "topic": "Tenis kortları hakkında (toprak, sentetik ve çim kortlar) bilgiler;"
+   },
+   {
+    "week": 5,
+    "topic": "Forehand ve Backhand düz vuruşlar;"
+   },
+   {
+    "week": 6,
+    "topic": "Forehand ve Backhand kesik vurşlar;"
+   },
+   {
+    "week": 7,
+    "topic": "Forehand ve Backhand spin vuruşlar;"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav;"
+   },
+   {
+    "week": 9,
+    "topic": "Tekler oyunu, çiftler oyunu ve miks oyununun oyun"
+   },
+   {
+    "week": 10,
+    "topic": "Vole çalışmaları;"
+   },
+   {
+    "week": 11,
+    "topic": "Servis atışlarının teknik özellikleri;"
+   },
+   {
+    "week": 12,
+    "topic": "Düz servis, kesik servis, spin servis atış çalışması;"
+   },
+   {
+    "week": 13,
+    "topic": "Tenis oyun teknikleri;"
+   },
+   {
+    "week": 14,
+    "topic": "Final"
+   }
+  ],
   "textbooks": [
    "Tennis Lehrplan"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=104",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=104"
  },
  "BEB 105": {
   "code": "BEB 105",
   "name": "Futbol ve Temel Hareket Öğret.",
+  "nameEn": "Soccer and Basic Movement Teaching",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -198,15 +431,73 @@
    "Hafta 13 · • Hücum–Savunma prensipleri (oyun ile), Pozisyon alma (oyun formunda), baskı /kademe /denge uygulamaları, takım çalışmaları saha içi uygulamalar (maç)",
    "Hafta 14 · Takım çalışmaları saha içi uygulamalar - DEĞERLENDİRME"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "• Futbol ve Temel Hareket Eğitimi dersi genel kurallar, stadyum kullanım kuralları, ders öncesi hazırlık, ders sırasında ve sonrasında uygulamalar hakkında bilgi verilmesi,"
+   },
+   {
+    "week": 2,
+    "topic": "• Temel antrenman bilgileri, nabız nedir, neden önemlidir, nasıl nabız alınır, yürüyüş, koşu, salon ağırlık çalışmalarında temel bilgilerinin verilmesi. Sağlıklı bir antrenman nasıl yapılır, haftada kaç gün kaç saat antrenman yapılmalı, antrenman öncesi ısınma çalışmaları, çalışmalarda dikkat edilmesi gereken kurallar."
+   },
+   {
+    "week": 3,
+    "topic": "• Futbolda temel top kontrolleri (stop) beceri öğretimi; ayak içi/üstü/dışı/altı-taban top kontrolleri. Diz üstü top kontrolü, göğüs ile top kontrolleri. Top kontrolleri ve topu yönlendirme çalışmaları. Teori: Futbolun tanımı, Tarihçesi"
+   },
+   {
+    "week": 4,
+    "topic": "• Top kontrolleri kısa tekrar. Futbolda temel pas çalışmaları beceri öğrenimi; ayak içi/üstü/dışı ile pas uygulamaları. Kontrol-pas çalışmaları. Kontrol-topu yönlendirme-pas çalışmaları. Teori: Futbolda Öğrenme / Öğretme Yöntemleri - İyi bir öğrenim ortamı nasıl hazırlanır? -Oyuncular nasıl öğrenir? Antrenörler nasıl öğrenir? Futbolda Öğretim Yöntemleri -Anlatım, Gösteri, Tümevarım, Tümden gelim, problem çözme ve yönlendirilmiş buluş yöntemleri"
+   },
+   {
+    "week": 5,
+    "topic": "• Futbolda temel top sürme (dripling) becerileri. Ayak içi/üstü/dışı ile top sürme becerilerinin uygulamaları. Kontrol-topu yönlendirme-top sürme ve pas çalışmaları (slalom, açısal koşular ile top sürme). Teori: Futbol Oyun Kuralları"
+   },
+   {
+    "week": 6,
+    "topic": "• Futbolda “aldatma” becerilerinin öğrenilmesi. Kontrol-top sürme ve aldatma çalışmaları. Çalım atma, dönüşler (yarım/tam) ve yön değiştirme ile pasa-şuta hazırlanma. Teori: Futbolda “aldatma hareketi” nedir, neden yapılır, ne zaman yapılır, kaç çeşit aldatma hareketi vardır?"
+   },
+   {
+    "week": 7,
+    "topic": "• Futbolda topa “vuruş” teknik becerisinin anlatılması. Ayak üstü/dışı/içi topa vuruş becerileri. Şut nedir? Nasıl şut atılır? Kafa ile topa vuruş becerisi ve teknik gösterimi. Teori: Futbolda duran top (fauller, kornerler, direkt/endirekt vuruşalar vb.) organizasyonları neden önemlidir, pozisyonlara göre topa ayağın neresi ile vurulmalıdır"
+   },
+   {
+    "week": 8,
+    "topic": "• Topla bütünlük, top sektirmeler. Bileşik Teknikler - Top kontrolü-pas-çalım-Şut. 2*1 pas, 2*1 pas-yön değiştirme ve bindirme, 1*1 dönüş hareketi vb. Eğitsel oyun (maç). Teori; Futbolda taktik neden önemlidir, taktiksel dizilimler nelerdir, taktiklerin avantaj ve dezavantajları nelerdir."
+   },
+   {
+    "week": 9,
+    "topic": "• Futbolda topsuz ve top ile yapılan hareketler. Topsuz hareketler: Koşma, yön değiştirme, alan açma-kapatma. Atlama-Sıçrama-Çalım/Vücut çalımı-Boşa çıkma ve Kayarak top alma (tackling) Teori: Futbolda taç atışı, köşe vuruşu (korner) gibi duran top organizasyonları çalışmaları, avantaj-dezavantajları ile genel prensipleri nelerdir."
+   },
+   {
+    "week": 10,
+    "topic": "• Futbolda temel “savunma” pozisyon almaları. 1*1, 1*2, 2*1 vb. durumlarda savunma pozisyonları uygulamaları. Teori: Futbolda savunma nedir, nasıl ve hangi bölgelerde yapılır, savunma parametrelerinin temel ilkeleri nelerdir."
+   },
+   {
+    "week": 11,
+    "topic": "• Futbolda temel “hücum” pozisyonları almaları. 1*1, 1*2, 2*1 vb. durumlarda hücum pozisyonları uygulamaları. Teori: Futbolda hücum nedir, nasıl ve hangi bölgelerde yapılır, hücum-atak parametrelerinin temel ilkeleri nelerdir."
+   },
+   {
+    "week": 12,
+    "topic": "• Futbolda performans çalışmaları uygulamaları. Sürat, çabukluk, çeviklik, dayanıklılık, koordinasyon çalışmaları. Teori: Futbol müsabakalarına hazırlanan oyuncuların sezon öncesi, sezon içi ve sezon sonrası günlük-haftalık-aylık antrenman modelleri."
+   },
+   {
+    "week": 13,
+    "topic": "• Hücum–Savunma prensipleri (oyun ile), Pozisyon alma (oyun formunda), baskı /kademe /denge uygulamaları, takım çalışmaları saha içi uygulamalar (maç)"
+   },
+   {
+    "week": 14,
+    "topic": "Takım çalışmaları saha içi uygulamalar - DEĞERLENDİRME"
+   }
+  ],
   "textbooks": [
    "Coaching youth soccer: techniques and tactics / American Sport Education Program, Champaign, IL : Human Kinetics, 2001"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=105",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=105"
  },
  "BEB 106": {
   "code": "BEB 106",
   "name": "Basketbol Temel Teknik Eğitimi",
+  "nameEn": "Education of Basic Techniques in Basketball",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -240,16 +531,74 @@
    "Hafta 13 · Oyun kuralları, hakem işaretleri, sportmenlik ve iletişim",
    "Hafta 14 · Final"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders tanıtımı, güvenlik, ısınma/soğuma protokolleri, temel duruş ve denge"
+   },
+   {
+    "week": 2,
+    "topic": "Ayak hareketleri (pivot, sıçrama iniş teknikleri), core aktivasyon"
+   },
+   {
+    "week": 3,
+    "topic": "Top hakimiyeti; her iki elle top sürme, ritim ve yön değişimi"
+   },
+   {
+    "week": 4,
+    "topic": "Pas teknikleri I (göğüs, yerden), hedefleme ve zamanlama"
+   },
+   {
+    "week": 5,
+    "topic": "Pas teknikleri II (tek elle, beyzbol, pas feyki), karar verme"
+   },
+   {
+    "week": 6,
+    "topic": "Şut mekaniği temelleri; set şut formu ve doğrulama"
+   },
+   {
+    "week": 7,
+    "topic": "Hareketli şut, turnike eğitim alıştırmaları (sağ/sol)"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav uygulamaları"
+   },
+   {
+    "week": 9,
+    "topic": "Bireysel savunma (stance, kayma, close-out), ayak çalışması"
+   },
+   {
+    "week": 10,
+    "topic": "Rebound, box-out ve ilk pas; geçiş oyunu temel ilkeleri"
+   },
+   {
+    "week": 11,
+    "topic": "Temel hücum prensipleri (spacing, kesme), 2’ye 2 oyunlar"
+   },
+   {
+    "week": 12,
+    "topic": "Perdeleme kavramı ve güvenli uygulama, 3’e 3 mini oyunlar"
+   },
+   {
+    "week": 13,
+    "topic": "Oyun kuralları, hakem işaretleri, sportmenlik ve iletişim"
+   },
+   {
+    "week": 14,
+    "topic": "Final"
+   }
+  ],
   "textbooks": [
    "• Sevim Y.: Basketbol Teknik-Taktik-Antreman. 5.Baskı, Nobel Yayın Dağıtım, Ankara, 2002.",
    "• Paye. B., Paye. P.: Youth Basketball Drills, Human Kinetics, 2001, U.S.A"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=106",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=106"
  },
  "BEB 107": {
   "code": "BEB 107",
   "name": "Spor ve Medya",
+  "nameEn": "Sport and Media",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -267,12 +616,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=107",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=107"
  },
  "BEB 108": {
   "code": "BEB 108",
   "name": "Spor Sosyolojisi",
+  "nameEn": "Sport Sociology",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -290,12 +639,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=108",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=108"
  },
  "BEB 109": {
   "code": "BEB 109",
   "name": "Egzersiz ve Zihinsel Sağlık",
+  "nameEn": "Exercise and Mental Health",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -314,12 +663,12 @@
   "textbooks": [
    "Yeltepe Ercan, H. (2012) Egzersiz ve Zihinsel Sağlık. Nobel Akademik Yayıncılık, Ankara."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=109",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=109"
  },
  "BEB 110": {
   "code": "BEB 110",
   "name": "Hentbol Temel Beceri Eğitimi",
+  "nameEn": "Basic Handball Skill Education",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -333,12 +682,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=110",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=110"
  },
  "BEB 111": {
   "code": "BEB 111",
   "name": "Masa Tenisi Tem.Beceri Eğitimi",
+  "nameEn": "Basic Table Tennis Skills Education",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -370,16 +719,74 @@
    "Hafta 13 · • Çiftler müsabaka organizasyonu",
    "Hafta 14 · • Genel tekrar ve uygulamalı sınav"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "• Dersin nasıl ve nerede işleneceği bilgisinin verilmesi • Masa tenisinin geçmişi ve günümüzde masa tenisi"
+   },
+   {
+    "week": 2,
+    "topic": "• Masa tenisi dersi ekipmanlarının kullanımı • Masa tenisi temel ısınma hareketleri • Raket tutuş ve Top sektirme"
+   },
+   {
+    "week": 3,
+    "topic": "• Servis Kuralların öğrenimi • Düz top atma, karşılama"
+   },
+   {
+    "week": 4,
+    "topic": "• Forehand ve backhand düz top atma karşılama"
+   },
+   {
+    "week": 5,
+    "topic": "• Forehand ve backhand kesik (Chop) top atma-karşılama"
+   },
+   {
+    "week": 6,
+    "topic": "• Forehand ve backhand kesik (Chop) top atma-karşılama"
+   },
+   {
+    "week": 7,
+    "topic": "• Forehand ve backhand spin vuruş öğrenme, atma-karşılama"
+   },
+   {
+    "week": 8,
+    "topic": "Forehand ve backhand spin vuruş öğrenme, atma-karşılama"
+   },
+   {
+    "week": 9,
+    "topic": "Forehand ve backhand falso vuruş öğrenme, atma-karşılama"
+   },
+   {
+    "week": 10,
+    "topic": "Forehand ve backhand falso vuruş öğrenme, atma-karşılama"
+   },
+   {
+    "week": 11,
+    "topic": "• Karışık top çalışmaları, yetenek geliştirme organizasyonları"
+   },
+   {
+    "week": 12,
+    "topic": "• Tekler müsabaka organizasyonu"
+   },
+   {
+    "week": 13,
+    "topic": "• Çiftler müsabaka organizasyonu"
+   },
+   {
+    "week": 14,
+    "topic": "• Genel tekrar ve uygulamalı sınav"
+   }
+  ],
   "textbooks": [
    "Öztürk, A. & Yılmaz, M. (2018). Masa tenisi teknik ve taktikleri. İstanbul: Spor Yayınevi.",
    "Menteş, B. T. (2023). Her yönüyle masa tenisi. Ankara: Akademisyen Yayınevi"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=111"
  },
  "BEB 112": {
   "code": "BEB 112",
   "name": "Okçuluk Temel Beceri Eğitimi",
+  "nameEn": "Basic Archery Skill Education",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -393,12 +800,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=112"
  },
  "BEB 114": {
   "code": "BEB 114",
   "name": "Futsal Temel Beceri Eğitim",
+  "nameEn": "Basic Futsal Skill Education",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -430,15 +837,73 @@
    "Hafta 13 · Öğrendiklerimizin oyun formunda işlenişi",
    "Hafta 14 · Uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma ve seviye belirleme testleri."
+   },
+   {
+    "week": 2,
+    "topic": "Futsal oyun kuralları ve tarihçesi"
+   },
+   {
+    "week": 3,
+    "topic": "Futsal temel pas teknikleri"
+   },
+   {
+    "week": 4,
+    "topic": "Futsal Top kontrolleri"
+   },
+   {
+    "week": 5,
+    "topic": "Futsal şut teknikleri"
+   },
+   {
+    "week": 6,
+    "topic": "Öğrendiklerimizin oyun formunda drillerle işlenişi"
+   },
+   {
+    "week": 7,
+    "topic": "Kaleci teknikleri"
+   },
+   {
+    "week": 8,
+    "topic": "Kombine çalışmalar ve müsabaka"
+   },
+   {
+    "week": 9,
+    "topic": "Futsal hücum prensipleri"
+   },
+   {
+    "week": 10,
+    "topic": "Futsal savunma prensipleri"
+   },
+   {
+    "week": 11,
+    "topic": "Genel oyun bilgisi ve beceri."
+   },
+   {
+    "week": 12,
+    "topic": "Beceriyi geliştirici oyunlar"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrendiklerimizin oyun formunda işlenişi"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama"
+   }
+  ],
   "textbooks": [
    "-Futsal, Yücel Ocak. Selçuk Buğdaycı, Berday Basın Yayıncılık, Ankara 2011."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=114",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=114"
  },
  "BEB 115": {
   "code": "BEB 115",
   "name": "Atletizm Temel Eğitimi",
+  "nameEn": "Track and Field Education",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -471,15 +936,73 @@
    "Hafta 13 · Genel tekrar",
    "Hafta 14 · Final"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders tanıtımı, kurallar ve güvenlik önlemleri"
+   },
+   {
+    "week": 2,
+    "topic": "Atletizme giriş, temel koşu teknikleri (duruş, adım, kol kullanımı)"
+   },
+   {
+    "week": 3,
+    "topic": "Kısa mesafe koşu teknikleri (sprint, çıkış pozisyonları)"
+   },
+   {
+    "week": 4,
+    "topic": "Orta ve uzun mesafe koşu teknikleri"
+   },
+   {
+    "week": 5,
+    "topic": "Engelli koşu teknikleri (engel geçişi, ritim ve tempo)"
+   },
+   {
+    "week": 6,
+    "topic": "Atlama branşlarına giriş – atlama teknikleri (teorik)"
+   },
+   {
+    "week": 7,
+    "topic": "Atma branşlarına giriş –atma teknikleri (teorik)"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav"
+   },
+   {
+    "week": 9,
+    "topic": "Bayrak koşuları teknikleri (bayrak değişimi, takım koordinasyonu)"
+   },
+   {
+    "week": 10,
+    "topic": "Kombine branş çalışmaları ve genel kuvvet"
+   },
+   {
+    "week": 11,
+    "topic": "Kombine branş çalışmaları ve dayanıklılık"
+   },
+   {
+    "week": 12,
+    "topic": "Branşa özgü parkur çalışmaları"
+   },
+   {
+    "week": 13,
+    "topic": "Genel tekrar"
+   },
+   {
+    "week": 14,
+    "topic": "Final"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Track and Field – Gerry Carr"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=115",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=115"
  },
  "BEB 116": {
   "code": "BEB 116",
   "name": "Badminton Temel Beceri Eğitimi",
+  "nameEn": "Basic Badminton Skill Education",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -510,15 +1033,73 @@
    "Hafta 13 · Temel vuruş tekniklerini geliştirmeye yönelik alıştırmalar",
    "Hafta 14 · uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Badminton sporunun dünyada ve Türkiye'de gelişimi"
+   },
+   {
+    "week": 2,
+    "topic": "Malzemeler: saha, file ve direkler"
+   },
+   {
+    "week": 3,
+    "topic": "Yardımcı malzemeler: raket, top, giyim ve ayakkabı"
+   },
+   {
+    "week": 4,
+    "topic": "Badmintonda raket tutuş, temel duruş pozisyonu ve koşu teknikleri"
+   },
+   {
+    "week": 5,
+    "topic": "Yüksek servis, kısa servis, swip servis"
+   },
+   {
+    "week": 6,
+    "topic": "Vuruş bölgeleri ve vuruş çeşitleri"
+   },
+   {
+    "week": 7,
+    "topic": "Forehand ve backhand vuruşlar"
+   },
+   {
+    "week": 8,
+    "topic": "Kombine çalışmalar ve müsabaka"
+   },
+   {
+    "week": 9,
+    "topic": "Filede oyun, koşu yönleri ve teknikleri"
+   },
+   {
+    "week": 10,
+    "topic": "Vuruş ve koşu tekniklerinin öğretim metodu"
+   },
+   {
+    "week": 11,
+    "topic": "Baş üstü smaç, forehand el üstü vuruş, baş sol üstü smaç, backhand el üstü vuruş"
+   },
+   {
+    "week": 12,
+    "topic": "Taktik: tekler, çiftler ve karışık"
+   },
+   {
+    "week": 13,
+    "topic": "Temel vuruş tekniklerini geliştirmeye yönelik alıştırmalar"
+   },
+   {
+    "week": 14,
+    "topic": "uygulama"
+   }
+  ],
   "textbooks": [
    "Kale, R. Okullarda ve Kulüplerde Badminton (Taktik ve Teorik Öğretim). Nobel Yayın, Ankara, 2011"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=116",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=116"
  },
  "BEB 118": {
   "code": "BEB 118",
   "name": "Genel Kond.ve Vücut Geliştirme",
+  "nameEn": "Fitness and Bodybuilding",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -549,15 +1130,73 @@
    "Hafta 13 · • Çoklu zincir antrenman yöntemleri • Tek zincir antrenman yöntemleri",
    "Hafta 14 · final"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "• Kalistenik vücut ağırlığı egzeriszleri ile vücut tanıma süreci"
+   },
+   {
+    "week": 2,
+    "topic": "• Anaerobik temelli antrenman temellendirilmesi • Aerobik temelli antrenman koşullandırılması • Antrenman yöntemlerine giriş"
+   },
+   {
+    "week": 3,
+    "topic": "• Cicruit Traning Schedule for full body • Bölgesel core antrenman sistemleri"
+   },
+   {
+    "week": 4,
+    "topic": "• İnterval yüklenme prensipleri • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 5,
+    "topic": "Teknikler Becerisi Öğrenimi • Explosive yüklenme prensipleri • Plyometric Egzersiz uygulaması Teknikler Becerisi Öğrenimi • Endurans Schedule to improve o2 capability • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 6,
+    "topic": "Teknikler Becerisi Öğrenimi • Endurans Schedule to improve o2 capability • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 7,
+    "topic": "• Çoklu zincir antrenman yöntemleri • Tek zincir antrenman yöntemleri"
+   },
+   {
+    "week": 8,
+    "topic": "• Anaerobik temelli antrenman temellendirilmesi • Aerobik temelli antrenman koşullandırılması • Antrenman yöntemlerine giriş"
+   },
+   {
+    "week": 9,
+    "topic": "• Cicruit Traning Schedule for full body • Bölgesel core antrenman sistemleri"
+   },
+   {
+    "week": 10,
+    "topic": "• İnterval yüklenme prensipleri • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 11,
+    "topic": "• Explosive yüklenme prensipleri • Plyometric Egzersiz uygulaması"
+   },
+   {
+    "week": 12,
+    "topic": "• Endurans Schedule to improve o2 capability • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 13,
+    "topic": "• Çoklu zincir antrenman yöntemleri • Tek zincir antrenman yöntemleri"
+   },
+   {
+    "week": 14,
+    "topic": "final"
+   }
+  ],
   "textbooks": [
    "Antrenman Bilgisi Sevim, Y. (2010). Antrenman bilgisi. Nobel Yayınları"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=118",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=118"
  },
  "BEB 120": {
   "code": "BEB 120",
   "name": "Spor ve Temel Bilimler",
+  "nameEn": "Sports and Sciences",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -588,17 +1227,75 @@
    "Hafta 13 · Spor etiği",
    "Hafta 14 · Spor bilimlerinde güncel konular"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Spor ve hareket bilimlerinde temel kavramlar"
+   },
+   {
+    "week": 2,
+    "topic": "Spor tarihi (antik ve modern olimpiyatlar)"
+   },
+   {
+    "week": 3,
+    "topic": "Spor sağlık ve temel antrenman bilgisi"
+   },
+   {
+    "week": 4,
+    "topic": "İnsan hareket sistemi ve uyum mekanizması"
+   },
+   {
+    "week": 5,
+    "topic": "Sporda kimya bilimi"
+   },
+   {
+    "week": 6,
+    "topic": "Spor ve biyokimya"
+   },
+   {
+    "week": 7,
+    "topic": "Sporda ergojenik yardım ve doping"
+   },
+   {
+    "week": 8,
+    "topic": "Sporda fizik"
+   },
+   {
+    "week": 9,
+    "topic": "Kinesiyoloji, biyomekanik, ergonomi ve yürüyüş analizinin temelleri"
+   },
+   {
+    "week": 10,
+    "topic": "Sporda akışkanlar mekaniği"
+   },
+   {
+    "week": 11,
+    "topic": "Sporda matematik kavramları"
+   },
+   {
+    "week": 12,
+    "topic": "Spor ve istatistik"
+   },
+   {
+    "week": 13,
+    "topic": "Spor etiği"
+   },
+   {
+    "week": 14,
+    "topic": "Spor bilimlerinde güncel konular"
+   }
+  ],
   "textbooks": [
    "• Lisa, M. (2016). The Physics of Sports. McGraw-Hill [QC26.L57 2016]",
    "• Abernethy, B. (2013) Biophysical Foundations of Human Movement. Human Kinetics [QP303.B56 2013]",
    "• McGinnis, P.M. (2013) Biomechanics of Sport ad Exercise. Human Kinetics[QP303.M34 2013]"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=120",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=120"
  },
  "BEB 121": {
   "code": "BEB 121",
   "name": "Spor ve Teknoloji",
+  "nameEn": "Sports and Technology",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -632,6 +1329,64 @@
    "Hafta 13 · Spor Teknolojilerinde Etik",
    "Hafta 14 · Sporda Güncel Kavramların Tartışılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sporda Temel Kavramlar"
+   },
+   {
+    "week": 2,
+    "topic": "Spor Tarihi (Antik ve Modern Olimpiyatlar)"
+   },
+   {
+    "week": 3,
+    "topic": "Spor ve Sağlık (Fiziksel Uygunluk ve Antrenman)"
+   },
+   {
+    "week": 4,
+    "topic": "Spor bilimleri, Mühendislik ve Teknoloji"
+   },
+   {
+    "week": 5,
+    "topic": "Spor Malzemeleri"
+   },
+   {
+    "week": 6,
+    "topic": "Sporcu Kıyafetleri"
+   },
+   {
+    "week": 7,
+    "topic": "Spor Dallarında Değişen Top Teknolojileri ve Dizaynı"
+   },
+   {
+    "week": 8,
+    "topic": "Sporda Beslenme ve Doping"
+   },
+   {
+    "week": 9,
+    "topic": "Sporda Bilişim Teknolojileri"
+   },
+   {
+    "week": 10,
+    "topic": "Spor Hakemliği ve Teknolojik Gelişmeler"
+   },
+   {
+    "week": 11,
+    "topic": "Spor Teknolojisinin Endüstride Uygulamaları"
+   },
+   {
+    "week": 12,
+    "topic": "Spor Ekonomisi ve Finans Yönetimi"
+   },
+   {
+    "week": 13,
+    "topic": "Spor Teknolojilerinde Etik"
+   },
+   {
+    "week": 14,
+    "topic": "Sporda Güncel Kavramların Tartışılması"
+   }
+  ],
   "textbooks": [
    "• Shishoo, R. (2015) Textiles for Sportswear. Woodhead Publishing Limited [TT649. T49 2015]",
    "• Ryan, M. (2012) Sports Nutrition for Endurance Athletes. VeloPress [TX361.A8 R93 2012]",
@@ -640,12 +1395,12 @@
    "• Byars, M. (1999) 50 Sports Wares: Innovations in Design and Materials. RotoVision [GV745. B93 1999]",
    "• Easterling, K.E. (1993) Advanced Materials for Sports Equipment: How Advanced Materials Help Optimize Sporting Performance and Make Sport Safer. Chapman & Hall [GV745. E27 1993]"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=121",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=121"
  },
  "BEB 122": {
   "code": "BEB 122",
   "name": "Fiziksel Aktivite ve Egzersiz",
+  "nameEn": "Pyhsical Activity and Exercise",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -674,15 +1429,73 @@
    "Hafta 13 · Egzersizin endikasyon ve kontraendikasyonları",
    "Hafta 14 · Final;"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sağlığın tanımı ve temel sağlık"
+   },
+   {
+    "week": 2,
+    "topic": "Fiziksel aktivite, egzersiz ve spor"
+   },
+   {
+    "week": 3,
+    "topic": "Fiziksel aktivite"
+   },
+   {
+    "week": 4,
+    "topic": "İnaktivite"
+   },
+   {
+    "week": 5,
+    "topic": "Fiziksel Uygunluk"
+   },
+   {
+    "week": 6,
+    "topic": "Fiziksel Uygunluğun Değerlendirilmesi"
+   },
+   {
+    "week": 7,
+    "topic": "Fiziksel Uygunluğun Değerlendirilmesi"
+   },
+   {
+    "week": 8,
+    "topic": "Egzersiz Eğitimi prensipleri"
+   },
+   {
+    "week": 9,
+    "topic": "Egzersiz Eğitimi yöntemleri"
+   },
+   {
+    "week": 10,
+    "topic": "Egzersiz öncesi değerlendirme"
+   },
+   {
+    "week": 11,
+    "topic": "Egzersiz tipleri"
+   },
+   {
+    "week": 12,
+    "topic": "Egzersiz reçetelendirme"
+   },
+   {
+    "week": 13,
+    "topic": "Egzersizin endikasyon ve kontraendikasyonları"
+   },
+   {
+    "week": 14,
+    "topic": "Final;"
+   }
+  ],
   "textbooks": [
    "Egzersiz ve Spor Fizyolojisi, 6. baskı, N. Akgün, Ege Üniv. Basımevi, 1996."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=122",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=122"
  },
  "BEB 140": {
   "code": "BEB 140",
   "name": "Picklebal",
+  "nameEn": "Pickleball",
   "language": "English/Türkçe",
   "credits": {
    "theory": 0,
@@ -714,15 +1527,73 @@
    "Hafta 13 · Öğretim uygulamaları",
    "Hafta 14 · Takım çalışmaları saha içi uygulamalar - DEĞERLENDİRME"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel oyun kuralları (Saha bölümleri, voleybolsuz bölge) ve mutfak"
+   },
+   {
+    "week": 2,
+    "topic": "- Dink(mutfak) öğretim uygulamaları/görevleri"
+   },
+   {
+    "week": 3,
+    "topic": "Dink(mutfak) nasıl öğretilir"
+   },
+   {
+    "week": 4,
+    "topic": "Temel Oyun kuralları (çift sıçrama kuralı) ve üçüncü atış"
+   },
+   {
+    "week": 5,
+    "topic": "- Üçüncü atışın öğretim görevleri (dink’e uzun lob)"
+   },
+   {
+    "week": 6,
+    "topic": "3.atış öğretimi"
+   },
+   {
+    "week": 7,
+    "topic": ".atış ve mutfak(dink) öğretimi"
+   },
+   {
+    "week": 8,
+    "topic": "– Temel Oyun kuralları (tekli ve ikili oyunlarda servis)"
+   },
+   {
+    "week": 9,
+    "topic": "Servis öğretimi / kuralları"
+   },
+   {
+    "week": 10,
+    "topic": "– Vole ve Lob öğretimi"
+   },
+   {
+    "week": 11,
+    "topic": "Öğretim uygulamaları"
+   },
+   {
+    "week": 12,
+    "topic": "– Taktik uygulamalar"
+   },
+   {
+    "week": 13,
+    "topic": "Öğretim uygulamaları"
+   },
+   {
+    "week": 14,
+    "topic": "Takım çalışmaları saha içi uygulamalar - DEĞERLENDİRME"
+   }
+  ],
   "textbooks": [
    "World Pickleball Federation (2022) 1 & 2. Level Trainer Education Book. Kademe"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=140",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=140"
  },
  "BEB 141": {
   "code": "BEB 141",
   "name": "Dövüş Sanatları-Boks",
+  "nameEn": "Martial Fights-Boxing",
   "language": "English/Türkçe",
   "credits": {
    "theory": 0,
@@ -751,10 +1622,67 @@
    "Hafta 13 · • Çoklu zincir antrenman yöntemleri • Tek zincir antrenman yöntemleri",
    "Hafta 14 · final"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "• Kalistenik vücut ağırlığı egzeriszleri ile vücut tanıma süreci"
+   },
+   {
+    "week": 2,
+    "topic": "• Anaerobik temelli antrenman temellendirilmesi • Aerobik temelli antrenman koşullandırılması • Antrenman yöntemlerine giriş"
+   },
+   {
+    "week": 3,
+    "topic": "• Cicruit Traning Schedule for full body • Bölgesel core antrenman sistemleri"
+   },
+   {
+    "week": 4,
+    "topic": "• İnterval yüklenme prensipleri • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 5,
+    "topic": "• Explosive yüklenme prensipleri • Plyometric Egzersiz uygulaması"
+   },
+   {
+    "week": 6,
+    "topic": "• Endurans Schedule to improve o2 capability • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 7,
+    "topic": "• Çoklu zincir antrenman yöntemleri • Tek zincir antrenman yöntemleri"
+   },
+   {
+    "week": 8,
+    "topic": "• Anaerobik temelli antrenman temellendirilmesi • Aerobik temelli antrenman koşullandırılması • Antrenman yöntemlerine giriş"
+   },
+   {
+    "week": 9,
+    "topic": "• Cicruit Traning Schedule for full body • Bölgesel core antrenman sistemleri"
+   },
+   {
+    "week": 10,
+    "topic": "• İnterval yüklenme prensipleri • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 11,
+    "topic": "• Explosive yüklenme prensipleri • Plyometric Egzersiz uygulaması"
+   },
+   {
+    "week": 12,
+    "topic": "• Endurans Schedule to improve o2 capability • Ekstensive Aerobik egzersiz"
+   },
+   {
+    "week": 13,
+    "topic": "• Çoklu zincir antrenman yöntemleri • Tek zincir antrenman yöntemleri"
+   },
+   {
+    "week": 14,
+    "topic": "final"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=141",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BEB&dersNo=141"
  }
 }

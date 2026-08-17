@@ -2,6 +2,7 @@
  "IML 110": {
   "code": "IML 110",
   "name": "İmalat Müh. Giriş ve Etik",
+  "nameEn": "Introduction to Manufacturing Engeneering and Ethics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -15,12 +16,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=110",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=110"
  },
  "IML 111": {
   "code": "IML 111",
   "name": "İmalat Mühendisliğine Giriş",
+  "nameEn": "Introduction to Manufacturing Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -51,15 +52,87 @@
    "Hafta 13 · Ödev sunum ve tartışma",
    "Hafta 14 · Ödev sunum ve tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma, ders ve yapılacak uygulamalar hakkında bilgi verme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Mühendislik mesleği",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "İmalat Mühendisliği ve zaman içindeki gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İTÜ İmalat Mühendisliği programı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mühendislik öğretiminde kalite güvencesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sektörden deneyimli meslektaşın sunumu",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kariyer Planlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Tasarım ilkeleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 9,
+    "topic": "Mühendislik etiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Klasik İmal Usullerinin tanıtımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Klasik İmal Usullerinin tanıtımı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ödev sunum ve tartışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev sunum ve tartışma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "Ödev sunum ve tartışma",
+    "outcomes": "1-3"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=111",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=111"
  },
  "IML 205": {
   "code": "IML 205",
   "name": "Termodinamik",
+  "nameEn": "Thermodynamics",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -73,12 +146,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=205"
  },
  "IML 206": {
   "code": "IML 206",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -92,12 +165,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=206",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=206"
  },
  "IML 212": {
   "code": "IML 212",
   "name": "İmal Usülleri I",
+  "nameEn": "Manufacturing Methods I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -111,12 +184,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=212"
  },
  "IML 212E": {
   "code": "IML 212E",
   "name": "İmal Usülleri I",
+  "nameEn": "Manufacturing Methods I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -130,12 +203,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=212",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=212"
  },
  "IML 305": {
   "code": "IML 305",
   "name": "Isı Geçişi",
+  "nameEn": "Heat Transfer",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -149,12 +222,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=305",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=305"
  },
  "IML 311": {
   "code": "IML 311",
   "name": "İmal Usülleri I",
+  "nameEn": "Manufacturing Processes I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -168,12 +241,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=311"
  },
  "IML 312": {
   "code": "IML 312",
   "name": "İmal Usülleri II",
+  "nameEn": "Manufacturing Processes II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -187,12 +260,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=312",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=312"
  },
  "IML 313": {
   "code": "IML 313",
   "name": "İmal Usülleri II",
+  "nameEn": "Manufacturing Methods II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 4,
@@ -206,12 +279,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=313"
  },
  "IML 318": {
   "code": "IML 318",
   "name": "Makina Elemanları",
+  "nameEn": "Machine Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -248,15 +321,87 @@
    "Hafta 13 · Düzgün hareketli mekanizmalar, dişli çark geometrisi ve kinematiği",
    "Hafta 14 · Kayış-kasnak mekanizmaları ve zincirler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konstrüksiyon faaliyeti ve bu faaliyet içinde makina elemanları bilgisinin önemi. Makina elemanlarının mukavemet hesapları hakkında genel bilgi, sürekli mukavemet.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çözülemeyen bağlantılar: Kaynak lehim ve yapıştırma bağlantıları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Perçin bağlantıları, Cıvata bağlantıları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Cıvatalar ve vidalı bağlantılar, hareket vidaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kuvvet bağlı mil-göbek bağlantıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Mil-göbek bağlantıları, pimler ve pernolar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yaylar, akslar ve miller",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Çözülemeyen kavramalar, çözülebilen kavramalar,",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Çözülebilen kavramalar, Triboloji; sürtünme, aşınma",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Triboloji; film sürtünmesi, kaymalı yataklar, Rulmanlı yataklar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yuvarlanmalı (rulmanlı) yataklar, lineer yataklar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Düzgün hareketli mekanizmalar, dişli çark geometrisi ve kinematiği",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Düzgün hareketli mekanizmalar, dişli çark geometrisi ve kinematiği",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Kayış-kasnak mekanizmaları ve zincirler.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=318",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=318"
  },
  "IML 318E": {
   "code": "IML 318E",
   "name": "Makina Elemanları",
+  "nameEn": "Machine Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -293,15 +438,87 @@
    "Hafta 13 · Düzgün hareketli mekanizmalar, dişli çark geometrisi ve kinematiği",
    "Hafta 14 · Kayış-kasnak mekanizmaları ve zincirler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konstrüksiyon faaliyeti ve bu faaliyet içinde makina elemanları bilgisinin önemi. Makina elemanlarının mukavemet hesapları hakkında genel bilgi, sürekli mukavemet.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çözülemeyen bağlantılar: Kaynak lehim ve yapıştırma bağlantıları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Perçin bağlantıları, Cıvata bağlantıları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Cıvatalar ve vidalı bağlantılar, hareket vidaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kuvvet bağlı mil-göbek bağlantıları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Mil-göbek bağlantıları, pimler ve pernolar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yaylar, akslar ve miller",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Çözülemeyen kavramalar, çözülebilen kavramalar,",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Çözülebilen kavramalar, Triboloji; sürtünme, aşınma",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Triboloji; film sürtünmesi, kaymalı yataklar, Rulmanlı yataklar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yuvarlanmalı (rulmanlı) yataklar, lineer yataklar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Düzgün hareketli mekanizmalar, dişli çark geometrisi ve kinematiği",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Düzgün hareketli mekanizmalar, dişli çark geometrisi ve kinematiği",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Kayış-kasnak mekanizmaları ve zincirler.",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=318",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=318"
  },
  "IML 320": {
   "code": "IML 320",
   "name": "Makina Elemanları",
+  "nameEn": "Machine Design",
   "language": "Türkçe",
   "credits": {
    "theory": 2,
@@ -315,12 +532,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=320",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=320"
  },
  "IML 322": {
   "code": "IML 322",
   "name": "İmalatta Otomasyon",
+  "nameEn": "Automation in Manufacturing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -354,15 +571,87 @@
    "Hafta 13 · Depolama sistemleri",
    "Hafta 14 · Otomatik veri okuma, iletim ve değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Otomasyon teknolojilerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstriyel kontrol sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Algılayıcılar, motorlar ve diğer kontrol sistem elemanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sayısal kontrol",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sayısal kontrol ve Servo sistemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Endüstriyel Robotik",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Endüstriyel Robotik",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Pnömatik sistemler ve kontrolü",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Hidrolik sistemler ve kontrolü",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Programlanabilir kontrolör (PLC) ve Bilgisayarla kontrol Ara Sınav",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Programlanabilir kontrolör (PLC) ve Bilgisayarla kontrol",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Transport sistemlerinin otomasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Depolama sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Otomatik veri okuma, iletim ve değerlendirme",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Automation Production Sys. and Com.Integrated Manufacturing , Groover, M.P, Prentice Hall, 2000,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=322",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=322"
  },
  "IML 322E": {
   "code": "IML 322E",
   "name": "İmalatta Otomasyon",
+  "nameEn": "Automation in Manufacturing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -396,15 +685,87 @@
    "Hafta 13 · Depolama sistemleri",
    "Hafta 14 · Otomatik veri okuma, iletim ve değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Otomasyon teknolojilerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstriyel kontrol sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Algılayıcılar, motorlar ve diğer kontrol sistem elemanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sayısal kontrol",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Sayısal kontrol ve Servo sistemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Endüstriyel Robotik",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Endüstriyel Robotik",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Pnömatik sistemler ve kontrolü",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Hidrolik sistemler ve kontrolü",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Programlanabilir kontrolör (PLC) ve Bilgisayarla kontrol Ara Sınav",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Programlanabilir kontrolör (PLC) ve Bilgisayarla kontrol",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Transport sistemlerinin otomasyonu",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Depolama sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Otomatik veri okuma, iletim ve değerlendirme",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Automation Production Sys. and Com.Integrated Manufacturing , Groover, M.P, Prentice Hall, 2000,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=322",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=322"
  },
  "IML 324E": {
   "code": "IML 324E",
   "name": "Bilgisayar Destekli İmalat Mühendisliği",
+  "nameEn": "Comp.Aided Manufacturing Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -418,12 +779,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=324",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=324"
  },
  "IML 325E": {
   "code": "IML 325E",
   "name": "Ölçme ve Enstrümantasyon",
+  "nameEn": "Measurements & Instrumentation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -437,12 +798,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=325",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=325"
  },
  "IML 326E": {
   "code": "IML 326E",
   "name": "Metalolmayan Mamüllerin İmalatı",
+  "nameEn": "Manuf. of Nonmetalic Prod.",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -456,12 +817,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=326",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=326"
  },
  "IML 332E": {
   "code": "IML 332E",
   "name": "Bilgisayar Destekli Tasarım ve İmalat",
+  "nameEn": "CAD/CAM",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -475,12 +836,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=332",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=332"
  },
  "IML 335": {
   "code": "IML 335",
   "name": "İmalat Planlama ve Kontrol",
+  "nameEn": "Manufacturing Planning and Control",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -494,12 +855,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=335",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=335"
  },
  "IML 336": {
   "code": "IML 336",
   "name": "İmalat Sistemleri",
+  "nameEn": "Manufacturing Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -537,15 +898,87 @@
    "Hafta 13 · Montaj hattı dengeleme yöntemleri",
    "Hafta 14 · Montaj hattı dengeleme yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deterministik Proje yönetim metodları, CPM, PERT",
+    "outcomes": "5"
+   },
+   {
+    "week": 2,
+    "topic": "Proje yönetiminde istatistiksel yöntemler, Proje Hızlandırma",
+    "outcomes": "1-5-10"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal Programaya giriş, Grafik Metod ile DP problemlerinin çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Simplex yöntemi, hassasiyet analizi, tam sayılı programlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "LP ile imalat planlama problemlerinin çözümü: Proje Yönetimi ve Hızlandırma",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "LP ve Stok Yönetimi, Toplu Üretim Planlama",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "İmalat Aktivitelerinin Tasarımı ve Kontrolü",
+    "outcomes": "1-3-5-7"
+   },
+   {
+    "week": 8,
+    "topic": "Kısıtlar teorisinin imalata uygulanması",
+    "outcomes": "1-3-5-8-9"
+   },
+   {
+    "week": 9,
+    "topic": "Atölye Tipi ve akış tipi imalatlarda, seri tip çizelgeleme kriterleri",
+    "outcomes": "1-3-5-10"
+   },
+   {
+    "week": 10,
+    "topic": "Paralel makinalı atölyelerde çizelgeleme",
+    "outcomes": "1-3-5-10"
+   },
+   {
+    "week": 11,
+    "topic": "Çizelgelemede ileri konular",
+    "outcomes": "5-8-10"
+   },
+   {
+    "week": 12,
+    "topic": "Montaj hatlarının dengelenmesi kavramı, etkenler ve kısıtlamalar",
+    "outcomes": "1-3-5-10"
+   },
+   {
+    "week": 13,
+    "topic": "Montaj hattı dengeleme yöntemleri",
+    "outcomes": "1-3-5-10"
+   },
+   {
+    "week": 14,
+    "topic": "Montaj hattı dengeleme yöntemleri",
+    "outcomes": "1-3-5-10"
+   }
+  ],
   "textbooks": [
    "Manu. Planning and Control for Supply Chain Management, T.E. Vollman, Berry et.al., Mc Graw Hill, 2005,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=336",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=336"
  },
  "IML 336E": {
   "code": "IML 336E",
   "name": "İmalat Sistemleri",
+  "nameEn": "Manufacturing Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -583,15 +1016,87 @@
    "Hafta 13 · Montaj hattı dengeleme yöntemleri",
    "Hafta 14 · Montaj hattı dengeleme yöntemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Deterministik Proje yönetim metodları, CPM, PERT",
+    "outcomes": "5"
+   },
+   {
+    "week": 2,
+    "topic": "Proje yönetiminde istatistiksel yöntemler, Proje Hızlandırma",
+    "outcomes": "1-5-10"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal Programaya giriş, Grafik Metod ile DP problemlerinin çözümü",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Simplex yöntemi, hassasiyet analizi, tam sayılı programlama",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "LP ile imalat planlama problemlerinin çözümü: Proje Yönetimi ve Hızlandırma",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "LP ve Stok Yönetimi, Toplu Üretim Planlama",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "İmalat Aktivitelerinin Tasarımı ve Kontrolü",
+    "outcomes": "1-3-5-7"
+   },
+   {
+    "week": 8,
+    "topic": "Kısıtlar teorisinin imalata uygulanması",
+    "outcomes": "1-3-5-8-9"
+   },
+   {
+    "week": 9,
+    "topic": "Atölye Tipi ve akış tipi imalatlarda, seri tip çizelgeleme kriterleri",
+    "outcomes": "1-3-5-10"
+   },
+   {
+    "week": 10,
+    "topic": "Paralel makinalı atölyelerde çizelgeleme",
+    "outcomes": "1-3-5-10"
+   },
+   {
+    "week": 11,
+    "topic": "Çizelgelemede ileri konular",
+    "outcomes": "5-8-10"
+   },
+   {
+    "week": 12,
+    "topic": "Montaj hatlarının dengelenmesi kavramı, etkenler ve kısıtlamalar",
+    "outcomes": "1-3-5-10"
+   },
+   {
+    "week": 13,
+    "topic": "Montaj hattı dengeleme yöntemleri",
+    "outcomes": "1-3-5-10"
+   },
+   {
+    "week": 14,
+    "topic": "Montaj hattı dengeleme yöntemleri",
+    "outcomes": "1-3-5-10"
+   }
+  ],
   "textbooks": [
    "Manu. Planning and Control for Supply Chain Management, T.E. Vollman, Berry et.al., Mc Graw Hill, 2005,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=336",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=336"
  },
  "IML 337": {
   "code": "IML 337",
   "name": "İmalat Planlama ve Kontrol",
+  "nameEn": "Manufacturing Planning & Cntrl",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -605,12 +1110,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=337",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=337"
  },
  "IML 337E": {
   "code": "IML 337E",
   "name": "İmalat Planlama ve Kontrol",
+  "nameEn": "Manufacturing Planning & Cntrl",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -624,12 +1129,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=337",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=337"
  },
  "IML 338": {
   "code": "IML 338",
   "name": "İmalat Sistemleri",
+  "nameEn": "Manufacturing Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -643,12 +1148,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=338",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=338"
  },
  "IML 338E": {
   "code": "IML 338E",
   "name": "İmalat Sistemleri",
+  "nameEn": "Manufacturing Systems",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -662,12 +1167,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=338",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=338"
  },
  "IML 401": {
   "code": "IML 401",
   "name": "İmalat Lab I",
+  "nameEn": "Manufacturing Lab I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -705,15 +1210,87 @@
    "Hafta 13 · Deney tasarımı dönem projesi (Ders saatinde proje sorunlarının tartışılması yapılacaktır)",
    "Hafta 14 · Yazılı ve sözlü olarak dönem deney tasarım projelerinin sunumu ve değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, laboratuarda güvenlik kuralları, rapor yazım kuralları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mühendislikte deneysel yöntemler , belirsizlik ve hata analizi",
+    "outcomes": "1-2-5-9"
+   },
+   {
+    "week": 3,
+    "topic": "Deney tasarım ilkeleri",
+    "outcomes": "1-2-5-10"
+   },
+   {
+    "week": 4,
+    "topic": "Deney 1 (Metroloji 1)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 5,
+    "topic": "Deney 2 (Döküm)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 6,
+    "topic": "Deney 3 (CNC talaşlı imalat)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 7,
+    "topic": "Deney 4 (Schlesinger)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 8,
+    "topic": "Deney 5 (Kaynak)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 9,
+    "topic": "Deney 6 (Düzlem birim şekil değişimi)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 10,
+    "topic": "Deney 7 (Sac Şekillendirme)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 11,
+    "topic": "Deney 7 (Sac Şekillendirme)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 12,
+    "topic": "Deney tasarımı dönem projesi (Ders saatinde proje sorunlarının tartışılması yapılacaktır)",
+    "outcomes": "4-7-10"
+   },
+   {
+    "week": 13,
+    "topic": "Deney tasarımı dönem projesi (Ders saatinde proje sorunlarının tartışılması yapılacaktır)",
+    "outcomes": "4-7-10"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve sözlü olarak dönem deney tasarım projelerinin sunumu ve değerlendirmesi",
+    "outcomes": "4-7-10"
+   }
+  ],
   "textbooks": [
    "Lab Föyleri, , , 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=401"
  },
  "IML 401E": {
   "code": "IML 401E",
   "name": "İmalat Lab I",
+  "nameEn": "Manufacturing Lab I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -751,15 +1328,87 @@
    "Hafta 13 · Deney tasarımı dönem projesi (Ders saatinde proje sorunlarının tartışılması yapılacaktır)",
    "Hafta 14 · Yazılı ve sözlü olarak dönem deney tasarım projelerinin sunumu ve değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, laboratuarda güvenlik kuralları, rapor yazım kuralları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mühendislikte deneysel yöntemler , belirsizlik ve hata analizi",
+    "outcomes": "1-2-5-9"
+   },
+   {
+    "week": 3,
+    "topic": "Deney tasarım ilkeleri",
+    "outcomes": "1-2-5-10"
+   },
+   {
+    "week": 4,
+    "topic": "Deney 1 (Metroloji 1)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 5,
+    "topic": "Deney 2 (Döküm)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 6,
+    "topic": "Deney 3 (CNC talaşlı imalat)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 7,
+    "topic": "Deney 4 (Schlesinger)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 8,
+    "topic": "Deney 5 (Kaynak)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 9,
+    "topic": "Deney 6 (Düzlem birim şekil değişimi)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 10,
+    "topic": "Deney 7 (Sac Şekillendirme)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 11,
+    "topic": "Deney 7 (Sac Şekillendirme)",
+    "outcomes": "2-4-7"
+   },
+   {
+    "week": 12,
+    "topic": "Deney tasarımı dönem projesi (Ders saatinde proje sorunlarının tartışılması yapılacaktır)",
+    "outcomes": "4-7-10"
+   },
+   {
+    "week": 13,
+    "topic": "Deney tasarımı dönem projesi (Ders saatinde proje sorunlarının tartışılması yapılacaktır)",
+    "outcomes": "4-7-10"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılı ve sözlü olarak dönem deney tasarım projelerinin sunumu ve değerlendirmesi",
+    "outcomes": "4-7-10"
+   }
+  ],
   "textbooks": [
    "Lab Föyleri, , , 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=401",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=401"
  },
  "IML 402": {
   "code": "IML 402",
   "name": "İmalat Lab II",
+  "nameEn": "Manufacturing Lab II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -773,12 +1422,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=402"
  },
  "IML 402E": {
   "code": "IML 402E",
   "name": "İmalat Lab II",
+  "nameEn": "Manufacturing Lab II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -792,12 +1441,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=402",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=402"
  },
  "IML 404E": {
   "code": "IML 404E",
   "name": "Üretim Mühendisliğinde Bilgisayar Simülasyonları",
+  "nameEn": "Comp.Simulations in Manuf.Eng.",
   "language": "English",
   "credits": {
    "theory": 0,
@@ -811,12 +1460,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=404",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=404"
  },
  "IML 405": {
   "code": "IML 405",
   "name": "Uygulamalı İmalat Projesi",
+  "nameEn": "Applied Manufacturing Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -830,12 +1479,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=405",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=405"
  },
  "IML 425E": {
   "code": "IML 425E",
   "name": "Bilgisayarla Bütünlesik İmalat (CIM)",
+  "nameEn": "Comp.Integra.Manufact. (CIM)",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -849,12 +1498,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=425",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=425"
  },
  "IML 431": {
   "code": "IML 431",
   "name": "Kalite Mühendisliği",
+  "nameEn": "Quality Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -887,15 +1536,87 @@
    "Hafta 13 · Yalın üretim, Son kontrol, kalite geliştirme, kalite ile ilgili standartlar",
    "Hafta 14 · Güvenilirlik, CE kriterleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kalite, kalite kontrol, kalite güvence, toplam kalite yönetimi, tarihsel gelişim",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kalite tasarımı, tasarım kalitesi, uygulama kalitesi. Kalite fonk.düzenleme ve kalite evi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Ölçme donanımları, İstatistiksel yöntemler, risk ve tolerans",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Örnekleme yöntemi ile kontrol, imalatçı ve müşteri riski, kabul-red örnekleri",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Düzgünsüzlük kontrol şemaları , Pareto analizi, kılçık diyagramı vb.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "İstatistiksel proses kontrol, kontrol limitleri, kontrol şemaları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "X/R ve X/sigma kontrol şemaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Alt gruplama, kontrol limitlerinin çizimi ve yorumu,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Toplam Kalite Yönetimi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "ISO 9000 ve QS 9000 Kalite Güvence Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Kaizen, 6sigma, dış kaynaklama, kıyaslama",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Olası hata ve hasar etki analizi (FMEA), bazı proses kontrol yöntemleri,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yalın üretim, Son kontrol, kalite geliştirme, kalite ile ilgili standartlar",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Güvenilirlik, CE kriterleri",
+    "outcomes": "1-3"
+   }
+  ],
   "textbooks": [
    "Ders Notu , , , 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=431",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=431"
  },
  "IML 431E": {
   "code": "IML 431E",
   "name": "Kalite Mühendisliği",
+  "nameEn": "Quality Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -928,15 +1649,87 @@
    "Hafta 13 · Yalın üretim, Son kontrol, kalite geliştirme, kalite ile ilgili standartlar",
    "Hafta 14 · Güvenilirlik, CE kriterleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kalite, kalite kontrol, kalite güvence, toplam kalite yönetimi, tarihsel gelişim",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kalite tasarımı, tasarım kalitesi, uygulama kalitesi. Kalite fonk.düzenleme ve kalite evi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Ölçme donanımları, İstatistiksel yöntemler, risk ve tolerans",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Örnekleme yöntemi ile kontrol, imalatçı ve müşteri riski, kabul-red örnekleri",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Düzgünsüzlük kontrol şemaları , Pareto analizi, kılçık diyagramı vb.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "İstatistiksel proses kontrol, kontrol limitleri, kontrol şemaları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "X/R ve X/sigma kontrol şemaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Alt gruplama, kontrol limitlerinin çizimi ve yorumu,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Toplam Kalite Yönetimi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "ISO 9000 ve QS 9000 Kalite Güvence Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Kaizen, 6sigma, dış kaynaklama, kıyaslama",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Olası hata ve hasar etki analizi (FMEA), bazı proses kontrol yöntemleri,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yalın üretim, Son kontrol, kalite geliştirme, kalite ile ilgili standartlar",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Güvenilirlik, CE kriterleri",
+    "outcomes": "1-3"
+   }
+  ],
   "textbooks": [
    "Ders Notu , , , 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=431",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=431"
  },
  "IML 436E": {
   "code": "IML 436E",
   "name": "Takım Tasarımı",
+  "nameEn": "Tool Design",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -950,12 +1743,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=436",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=436"
  },
  "IML 438E": {
   "code": "IML 438E",
   "name": "Takım Tasarım",
+  "nameEn": "Tool Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -969,12 +1762,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=438",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=438"
  },
  "IML 451": {
   "code": "IML 451",
   "name": "İmalat Makineleri",
+  "nameEn": "Manufacturing Machinery",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1010,15 +1803,87 @@
    "Hafta 13 · CNC tezgahlar",
    "Hafta 14 · Plastik/kompozit parça imalatı için makinalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Döküm Donanımları, sürekli döküm, ocaklar, basınçlı döküm donanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Toz metalürjisi donanımı, metalik cam ve seramik parça imalatı donanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Mekanik test cihazları",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Dövme Teçhizatı, şahmerdanlar, mekanik presler ve yardımcı donanımları",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Hadde Teçhizatı, fırınlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Ekstrüzyon teçhizatı, Tel/çubuk çekme, conforming donanımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Sac kesme/bükme /roll forming donanımları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Derin çekme, hidroforming, patlamayla şekillendirme donanımları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Isıl işlem teçhizatı",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Torna tezgahları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Universal ve dik freze tezgahları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Planya, vargel, matkap, taşlama tezgahları",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "CNC tezgahlar",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Plastik/kompozit parça imalatı için makinalar",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Ders Notu , , , 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=451",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=451"
  },
  "IML 451E": {
   "code": "IML 451E",
   "name": "İmalat Makineleri",
+  "nameEn": "Manufacturing Machinery",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1054,15 +1919,87 @@
    "Hafta 13 · CNC tezgahlar",
    "Hafta 14 · Plastik/kompozit parça imalatı için makinalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Döküm Donanımları, sürekli döküm, ocaklar, basınçlı döküm donanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Toz metalürjisi donanımı, metalik cam ve seramik parça imalatı donanımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Mekanik test cihazları",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Dövme Teçhizatı, şahmerdanlar, mekanik presler ve yardımcı donanımları",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Hadde Teçhizatı, fırınlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Ekstrüzyon teçhizatı, Tel/çubuk çekme, conforming donanımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Sac kesme/bükme /roll forming donanımları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Derin çekme, hidroforming, patlamayla şekillendirme donanımları",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Isıl işlem teçhizatı",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Torna tezgahları",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Universal ve dik freze tezgahları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Planya, vargel, matkap, taşlama tezgahları",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "CNC tezgahlar",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Plastik/kompozit parça imalatı için makinalar",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Ders Notu , , , 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=451",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=451"
  },
  "IML 452": {
   "code": "IML 452",
   "name": "Üretim ve Stok Kontrol",
+  "nameEn": "Manufacturing and Stock Control",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1076,12 +2013,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=452",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=452"
  },
  "IML 460": {
   "code": "IML 460",
   "name": "Tesis Plan. ve Yerleştirme",
+  "nameEn": "Plant Planning and Placing",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1095,12 +2032,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=460",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=460"
  },
  "IML 4901": {
   "code": "IML 4901",
   "name": "İmalat Müh. Tasarımı I",
+  "nameEn": "Manufacturing Eng. Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1114,12 +2051,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=4901"
  },
  "IML 4901E": {
   "code": "IML 4901E",
   "name": "İmalat Müh. Tasarımı I",
+  "nameEn": "Manufacturing Eng. Design I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1133,12 +2070,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=4901",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=4901"
  },
  "IML 4902": {
   "code": "IML 4902",
   "name": "İmalat Müh. Tasarımı II",
+  "nameEn": "Manufacturing Eng. Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1152,12 +2089,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=4902"
  },
  "IML 4902E": {
   "code": "IML 4902E",
   "name": "İmalat Müh. Tasarımı II",
+  "nameEn": "Manufacturing Eng. Design II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1171,12 +2108,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=4902",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=4902"
  },
  "IML 492": {
   "code": "IML 492",
   "name": "İmalat Tasarım Projesi",
+  "nameEn": "Manufacturing Design Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -1190,12 +2127,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=492"
  },
  "IML 492E": {
   "code": "IML 492E",
   "name": "İmalat Tasarım Projesi",
+  "nameEn": "Manufacturing Design Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -1209,7 +2146,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IML&dersNo=492"
  }
 }

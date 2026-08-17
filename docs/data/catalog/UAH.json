@@ -2,6 +2,7 @@
  "UAH 513E": {
   "code": "UAH 513E",
   "name": "Fourier Ser.&Sınır Değer Prob.",
+  "nameEn": "Fourier Seri.&Boun.Value Prob.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -36,15 +37,86 @@
    "Hafta 13 · Proje çalışması: Fourier tekniklerinin gerçek problemlerde kullanımı",
    "Hafta 14 · Final sınavı ve genel ders değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fourier analizi temel kavramları ve sürekli/ayrık dönüşümlerin tanımları",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 2,
+    "topic": "Sürekli zaman sinyallerinde Fourier dönüşümü ve temel özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ayrık zamanlı sinyallerde DFT tanımı ve örnekleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Zaman ve frekans bölgeleri arasındaki ilişki ve dönüşüm işlemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Genelleşmiş fonksiyonlar ve Fourier dönüşümü analizi",
+    "outcomes": "2-3-5-7"
+   },
+   {
+    "week": 6,
+    "topic": "Konvolüsyon, türev alma ve Parseval teoremi gibi Fourier dönüşümü özellikleri",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Diferansiyel denklemlerin Fourier dönüşümüyle çözümü",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav ve uygulamalı problem çözümü"
+   },
+   {
+    "week": 9,
+    "topic": "DFT ve FFT algoritmaları ve sayısal Fourier dönüşümü",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal sinyal işleme uygulamaları",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Fourier analizinin mühendislik problemlerine entegrasyonu",
+    "outcomes": "3-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "İleri dönüşüm teknikleri: pencereleme ve kısa zaman Fourier dönüşümü (STFT) tanıtımı",
+    "outcomes": "2-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Proje çalışması: Fourier tekniklerinin gerçek problemlerde kullanımı",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Final sınavı ve genel ders değerlendirmesi",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=513",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=513"
  },
  "UAH 515E": {
   "code": "UAH 515E",
   "name": "Appli.Radar Re.Sen.for Envi.",
+  "nameEn": "Appli.Radar Re.Sen.for Envi.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -58,12 +130,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=515"
  },
  "UAH 525E": {
   "code": "UAH 525E",
   "name": "Principles of Remote Sensing",
+  "nameEn": "Principles of Remote Sensing",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -99,18 +171,90 @@
    "Hafta 13 · Nesne tabanlı sınıflandırma yöntemleri ve doğruluk analizi",
    "Hafta 14 · Dönem ödevi sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Electromanyetik enerji temelleri ve elektromanyetik spektrum",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektromanyetik enerjinin atmosfer ve dünya yüzeyi ile etkileşimleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Spektral yansıtım: Su, toprak ve bitki örtüsünün spectral eğrileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dijital görüntüler, çözünürlük kavramı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Uydu platformları, yörüngeler, algılayıcılar ve tarama modları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Görsel yorumlama",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Radyometrik hatalar ve düzeltmeleri",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 8,
+    "topic": "Atmosferik düzeltme",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Optik görüntülerin topografik düzeltmesi",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Geometrik hatalar ve rektifikasyon",
+    "outcomes": "4-5-7"
+   },
+   {
+    "week": 11,
+    "topic": "Görüntü zenginleştirme",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Piksel tabanlı sınıflandırma yöntemleri",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Nesne tabanlı sınıflandırma yöntemleri ve doğruluk analizi",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumları",
+    "outcomes": "2-3-6-8"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=525",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=525"
  },
  "UAH 533": {
   "code": "UAH 533",
   "name": "Radar&Mikrodalga ile Uzak.Al.",
+  "nameEn": "Remote Sensing With Radar and Microwave",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -143,6 +287,78 @@
    "Hafta 13 · Hedef izleme",
    "Hafta 14 · Radarların kullanım alanları ve kullanım teknikleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radarın çalışma ilkesi, Radarın tarihçesi, Elektromanyetik spektrum",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektromanyetik dalga teorisinin kısa özeti",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Radar denklemi ve Darbeli radarda menzil hesabı",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Radar kesit alanı kavramı",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Karmaşık şekilli hedeflerin radar kesit alanı benzetim yöntemleri hakkında genel bilgi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Sürekli dalga radarı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Ara Sınav 1",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kargaşa, Darbe Doppler radarı, Hareketli hedef göstergesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Radar dalga şekli analizi ve alçak geçiren - bant geçiren işaretler",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Uyumlu filtre ve radar belirsizlik fonksiyonu.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Radar dalga propagasyonu, Atmosferik etkiler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Radar antenleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Hedef izleme",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Radarların kullanım alanları ve kullanım teknikleri",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-",
    "-",
@@ -150,12 +366,12 @@
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=533",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=533"
  },
  "UAH 596": {
   "code": "UAH 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -199,6 +415,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -211,12 +498,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=596"
  },
  "UAH 614E": {
   "code": "UAH 614E",
   "name": "Guided Research",
+  "nameEn": "Guided Research",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -249,15 +536,87 @@
    "Hafta 13 · Konu çalışması",
    "Hafta 14 · Sunumlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Araştırma alanlarını belirleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Literatür araştırması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Literatür araştırması",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Ara rapor I",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Konu çalışması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Konu çalışması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ara rapor II",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Konu çalışması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Konu çalışması",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Ara rapor III",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Konu çalışması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Konu çalışması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Seçilen araştırma konusu ile ilgili güncel yayın ve kitaplar (Current journals and books related by the selected research area)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=614",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=614"
  },
  "UAH 636": {
   "code": "UAH 636",
   "name": "Uzaktan Algılamada Özel Uygul.",
+  "nameEn": "Special Applications in Remote Sensing",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -295,6 +654,64 @@
    "Hafta 13 · Ödev Sunumları ve Tartışma",
    "Hafta 14 · Ödev Sunumları ve Tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Uzaktan Algılamada Özel Konular"
+   },
+   {
+    "week": 2,
+    "topic": "Uzaktan algılama ile atmosfer arasındaki ilişki"
+   },
+   {
+    "week": 3,
+    "topic": "Hidrosfer ve Uzaktan Algılama"
+   },
+   {
+    "week": 4,
+    "topic": "Afet Yönetiminde Uzaktan Algılama"
+   },
+   {
+    "week": 5,
+    "topic": "Yüzey Sıcaklığı ve Isıl Kızıl ötesi emissiviti"
+   },
+   {
+    "week": 6,
+    "topic": "Kutupların izlenmesi ve iklim değişimi"
+   },
+   {
+    "week": 7,
+    "topic": "Kensel Uzaktan Algılama"
+   },
+   {
+    "week": 8,
+    "topic": "LİDAR ve Uygulamaları"
+   },
+   {
+    "week": 9,
+    "topic": "Interfrometri ve Uygulamaları"
+   },
+   {
+    "week": 10,
+    "topic": "Bioçeşitlilik ve Uzaktan Algılama"
+   },
+   {
+    "week": 11,
+    "topic": "GRACE algılayıcıları ve Uygulamaları"
+   },
+   {
+    "week": 12,
+    "topic": "Ödev Sunumları ve Tartışma"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev Sunumları ve Tartışma"
+   },
+   {
+    "week": 14,
+    "topic": "Ödev Sunumları ve Tartışma"
+   }
+  ],
   "textbooks": [
    "Liang, S., Li, X., Wang, J., “Advanced Remote Sensing”,Terrestrial Information Extraction and Applications, ISBN 9780123859549, Elsevier, c2012.",
    "Wynne, J.B., Campbell, R.H., “Introduction to Remote Sensing, Fifth Edition”, ISBN 978-1609181765, The Guilfor Press, c2011.",
@@ -303,12 +720,12 @@
    "Wynne, J.B., Campbell, R.H., “Introduction to Remote Sensing, Fifth Edition”, ISBN 978-1609181765, The Guilfor Press, c2011.",
    "Joseph, G. ” Fundamentals of Remote Sensing”, ISBN 8173715351, Universities Press (India) Private Limited, c 2005."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=636",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=636"
  },
  "UAH 641": {
   "code": "UAH 641",
   "name": "Fotogrametri&Foto Yorumlama",
+  "nameEn": "Photogrammetry and Photointerpretation",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -341,6 +758,78 @@
    "Hafta 13 · Suç analizinde ve jeolojik çalışmalarda görüntü yorumlama tekniklerinin kullanılması, arkeolojik çalışmalarda fotoyorumlama tekniklerinin kullanılması, bitki örtüsünün belirlenmesinde görüntü işleme tekniklerinin kullanılması.",
    "Hafta 14 · Farklı kaynaklardan gelen iki ayrı görüntünün fotoyorumlama amaçlı kullanabilmesi için sahip olması gereken özellikler nelerdir, Fotoyorumlama ile diğer yöntemlerin maliyet ve zaman açısından irdelenmesi, sonuçların tartışılması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, harita ve harita üretim teknikleri, fotogrametrinin tarihsel gelişimi, fotogrametri ile ilgili tanımlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fotogrametrik ürünlerin biçim ve formatları, fotogrametrik yöntemlerin sınıflandırılması, fotogrametrinin temel ilkeleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Fotoğraf, fotogrametride kullanılan kamera türleri, kamera kalibrasyonu, stereoskopik (üç boyutlu) görüş ve ölçme, cep stereoskoplarıyla uygulama.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Fotogrametrinin genel olarak kullanım alanları, fotogrametri ve ilişkili disiplinler, yersel fotogrametri ve kullanım alanları .",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Fotoyorumlamanın tarihi ve geçmişten günümüze kullanım alanları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Görsel yorumlama elemanları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Görsel yorumlama elemanları ve yorumlama anahtarları.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Uzaktan algılamanın fotoyorumlama ile ilişkisi ve uydu görüntülerine uygulanan ön işlemler.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Görüntü zenginleştirme teknikleri, görüntü dönüşümleri, sınıflandırma teknikleri, sınıflandırma doğruluğunun belirlenmesi, sınıflandırma sonuçlarının fotoyorumlama amaçlı kullanımı.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Anaglif görüntüler yardımıyla üç boyutlu veri elde etme uygulaması ve sonuçlarını değerlendirme.",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Farklı kaynaklardan toplanan görüntüler ve özellikleri (Kameralar ve hava fotoğrafı alımı, multispektral algılama, termal algılama, hyperspektral uydu görüntüleri, lazer ve LIDAR verileri).",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Fotoyorumlamanın farklı veri kaynakları kullanılarak farklı alanlarda uygulanabilirliğinin irdelenmesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Suç analizinde ve jeolojik çalışmalarda görüntü yorumlama tekniklerinin kullanılması, arkeolojik çalışmalarda fotoyorumlama tekniklerinin kullanılması, bitki örtüsünün belirlenmesinde görüntü işleme tekniklerinin kullanılması.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Farklı kaynaklardan gelen iki ayrı görüntünün fotoyorumlama amaçlı kullanabilmesi için sahip olması gereken özellikler nelerdir, Fotoyorumlama ile diğer yöntemlerin maliyet ve zaman açısından irdelenmesi, sonuçların tartışılması.",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
   "textbooks": [
    "Fotogrametri Cilt 1 K. Krauss (çeviri: o. Altan, S.Külür, G.Toz, H. Demirel, z.Duran, M. Çelikoyan, 2007)",
    "K. B. Atkinson, Close Range Photogrammetry and Machine Vision, 1996, Whitles Publishing Company, ISBN: 1-870-325-46-X.",
@@ -348,12 +837,12 @@
    "H.M. Karara (Editor) Non Topographic Photogrammetry, ASPRS.",
    "Lillesand, T., Kiefer, R. W., Chipman, J. (2008) Remote Sensing and Image Interpretation, 6. Baskı, Wiley."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=641",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=641"
  },
  "UAH 696": {
   "code": "UAH 696",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -397,6 +886,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -409,7 +969,6 @@
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=696",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UAH&dersNo=696"
  }
 }

@@ -2,6 +2,7 @@
  "AKM 204": {
   "code": "AKM 204",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -35,17 +36,89 @@
    "Hafta 13 · Darcy-Weisbach Bağıntısı - Uygulamalar",
    "Hafta 14 · Sınır Tabakası Kavramı.Boyut Analizi ve Benzeşim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Birim Sistemleri - Boyut Homojenliği - Akışkanların Fiziksel Özellikleri ve Gerilmelere Karşı Davranışı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hidrostatik - Basınç Kavramı - Basınç Kuvvetlerinin Hesabı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Hidrostatiğin Temel Denklemleri - Rölatif Denge",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkanların Kinematiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bir Boyutlu Akımların Temel Denklemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "İdeal Akışkanların Bir Boyutlu Akımları - Uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Gerçek Akışkanların Bir Boyutlu Akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Laminer ve Türbülanslı Akımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "İdeal Akışkanların İki Boyutlu Akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Hız Potansiyelli Hareketler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gerçek Akışkanların İki Boyutlu Akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Hagen-Poiseuille Kanunu",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Darcy-Weisbach Bağıntısı - Uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Sınır Tabakası Kavramı.Boyut Analizi ve Benzeşim",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Fluid Mechanics, Streeter,V.,L.,Wylie E.,B., Mc Graw Hill, 1998, 0-07-548015-8",
    "Fluid Mechanics, Frank M.White, Mc Graw Hill, 1987, 0-07-Y66525-7",
    "Unit Operations of Chemical Engineering,7th edition, W.L.McCabe,J.c.Smith,P.Hariott, McGraw Hill, 2005, 007-124710-6"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=204"
  },
  "AKM 204E": {
   "code": "AKM 204E",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -79,17 +152,89 @@
    "Hafta 13 · Darcy-Weisbach Bağıntısı - Uygulamalar",
    "Hafta 14 · Sınır Tabakası Kavramı.Boyut Analizi ve Benzeşim"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Birim Sistemleri - Boyut Homojenliği - Akışkanların Fiziksel Özellikleri ve Gerilmelere Karşı Davranışı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hidrostatik - Basınç Kavramı - Basınç Kuvvetlerinin Hesabı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Hidrostatiğin Temel Denklemleri - Rölatif Denge",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkanların Kinematiği",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Bir Boyutlu Akımların Temel Denklemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "İdeal Akışkanların Bir Boyutlu Akımları - Uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Gerçek Akışkanların Bir Boyutlu Akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Laminer ve Türbülanslı Akımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "İdeal Akışkanların İki Boyutlu Akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Hız Potansiyelli Hareketler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Gerçek Akışkanların İki Boyutlu Akımları",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Hagen-Poiseuille Kanunu",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Darcy-Weisbach Bağıntısı - Uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Sınır Tabakası Kavramı.Boyut Analizi ve Benzeşim",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Fluid Mechanics, Streeter,V.,L.,Wylie E.,B., Mc Graw Hill, 1998, 0-07-548015-8",
    "Fluid Mechanics, Frank M.White, Mc Graw Hill, 1987, 0-07-Y66525-7",
    "Unit Operations of Chemical Engineering,7th edition, W.L.McCabe,J.c.Smith,P.Hariott, McGraw Hill, 2005, 007-124710-6"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=204",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=204"
  },
  "AKM 205": {
   "code": "AKM 205",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -127,16 +272,88 @@
    "Hafta 13 · Sıkıştırılabilir akış, Türbomakinalar",
    "Hafta 14 · Türbomakinalar ve uygulamaları, Su Darbeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel Kavramlar:, Akışkan ve akışların tanımı, sıkıştırılabilme, buharlaşma-kavitasyon, yüzeysel gerilme ve kılcallık.Hız alanının özellikleri. Temel akış analizi teknikleri. Akış biçimleri:Akım çizgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Duran akışkanlar: Basınç ve dağılımı,manometreler, dalmış yüzeylere gelen kuvvetler, Katılaştırma prensibi, blok halinde öteleme ve dönme, basınç ölçümü",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Devamı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Korunum denklemlerinin integral formu: Denetim hacmi ve sistem kavramları, Reynolds transport teoremi, Kütle, Momentum korunumu (Hareket miktarı denklemi) ve enerji denklemi ve uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 5,
+    "topic": "Bernoulli denklemi ve uygulamaları: Statik, dinamik ve toplam basınç kavramları, akışkan hızı, basınç ve debisi ölçüm yöntemleri, Sifon ve kavitasyon, yük ve piyezometre çizgileri",
+    "outcomes": "6"
+   },
+   {
+    "week": 6,
+    "topic": "Devamı",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Süreklilik, Hareket ve Enerji denklemlerinin diferansiyel formda türetilmesi, Navier-Stokes denklemleri ve uygulamaları, akım ve potansiyel fonksiyonları",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Boyut analizi ve benzerlik",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Borularda sürtünmeli akış, laminar ve türbülanslı akış, Sürekli ve yersel kayıplar, Boru dizgeleri, Moody diyagramı, Akış ölçerler",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Devamı",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Dalmış cisimler etrafında akış, Sınır tabaka denklemleri, deneysel dış akışlar.",
+    "outcomes": "9"
+   },
+   {
+    "week": 12,
+    "topic": "Devam",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Sıkıştırılabilir akış, Türbomakinalar",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "Türbomakinalar ve uygulamaları, Su Darbeleri",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "Fluid Mechanics, 5th Edition, F. M. White, McGraw Hill, 2005,",
    "Fundamentals of Fluid Mechanics, 5th Edition, B.R. Munson, D.F. Young and T. H. Okiishi, J. Wiley and Sons, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=205"
  },
  "AKM 205E": {
   "code": "AKM 205E",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -174,16 +391,88 @@
    "Hafta 13 · Sıkıştırılabilir akış, Türbomakinalar",
    "Hafta 14 · Türbomakinalar ve uygulamaları, Su Darbeleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel Kavramlar:, Akışkan ve akışların tanımı, sıkıştırılabilme, buharlaşma-kavitasyon, yüzeysel gerilme ve kılcallık.Hız alanının özellikleri. Temel akış analizi teknikleri. Akış biçimleri:Akım çizgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Duran akışkanlar: Basınç ve dağılımı,manometreler, dalmış yüzeylere gelen kuvvetler, Katılaştırma prensibi, blok halinde öteleme ve dönme, basınç ölçümü",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Devamı",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Korunum denklemlerinin integral formu: Denetim hacmi ve sistem kavramları, Reynolds transport teoremi, Kütle, Momentum korunumu (Hareket miktarı denklemi) ve enerji denklemi ve uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 5,
+    "topic": "Bernoulli denklemi ve uygulamaları: Statik, dinamik ve toplam basınç kavramları, akışkan hızı, basınç ve debisi ölçüm yöntemleri, Sifon ve kavitasyon, yük ve piyezometre çizgileri",
+    "outcomes": "6"
+   },
+   {
+    "week": 6,
+    "topic": "Devamı",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Süreklilik, Hareket ve Enerji denklemlerinin diferansiyel formda türetilmesi, Navier-Stokes denklemleri ve uygulamaları, akım ve potansiyel fonksiyonları",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Boyut analizi ve benzerlik",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Borularda sürtünmeli akış, laminar ve türbülanslı akış, Sürekli ve yersel kayıplar, Boru dizgeleri, Moody diyagramı, Akış ölçerler",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Devamı",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Dalmış cisimler etrafında akış, Sınır tabaka denklemleri, deneysel dış akışlar.",
+    "outcomes": "9"
+   },
+   {
+    "week": 12,
+    "topic": "Devam",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Sıkıştırılabilir akış, Türbomakinalar",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "Türbomakinalar ve uygulamaları, Su Darbeleri",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "Fluid Mechanics, 5th Edition, F. M. White, McGraw Hill, 2005,",
    "Fundamentals of Fluid Mechanics, 5th Edition, B.R. Munson, D.F. Young and T. H. Okiishi, J. Wiley and Sons, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=205",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=205"
  },
  "AKM 207": {
   "code": "AKM 207",
   "name": "Akışkanlar Mekaniği II",
+  "nameEn": "Fluid Mechanics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -218,16 +507,88 @@
    "Hafta 13 · Navier-Stokes eşitliklerinin yaklaşık çözümleri 1",
    "Hafta 14 · Navier-Stokes eşitliklerinin yaklaşık çözümleri 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, Akışkanların özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Basınç ve akışkan statiği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Basınç ve akışkan statiği, Akışkan kinematiği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkan akışı temel eşitlikleri (makroskopik): Kütle dengesi, Enerji dengesi, Bernoulli eşitliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Akışkan akışı temel eşitlikleri (makroskopik): Kütle dengesi, Enerji dengesi, Bernoulli eşitliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Akış sistemlerinin momentum analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Akış sistemlerinin momentum analizi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Borularda akış, Pompalar 1",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Borularda akış, Pompalar 2",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Borularda akış, Pompalar 3",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Akışkan akışında diferansiyel analiz (mikroskopik) 1",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Akışkan akışında diferansiyel analiz (mikroskopik) 2",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Navier-Stokes eşitliklerinin yaklaşık çözümleri 1",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Navier-Stokes eşitliklerinin yaklaşık çözümleri 2",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Y. A. Cengel, J. M. Cimbala, Fluid Mechanics: Fundamentals and Applications, 3rd edition, McGraw Hill, 2014.",
    "Y. A. Çengel, J. M. Cimbala, Akışkanlar Mekaniği: Temelleri ve Uygulamaları, 3. Baskıdan Çeviri, Çeviri Editörü: Tahsin Engin, Palme Yayıncılık, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=207"
  },
  "AKM 207E": {
   "code": "AKM 207E",
   "name": "Akışkanlar Mekaniği II",
+  "nameEn": "Fluid Mechanics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -262,16 +623,88 @@
    "Hafta 13 · Navier-Stokes eşitliklerinin yaklaşık çözümleri 1",
    "Hafta 14 · Navier-Stokes eşitliklerinin yaklaşık çözümleri 2"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, Akışkanların özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Basınç ve akışkan statiği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Basınç ve akışkan statiği, Akışkan kinematiği",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkan akışı temel eşitlikleri (makroskopik): Kütle dengesi, Enerji dengesi, Bernoulli eşitliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Akışkan akışı temel eşitlikleri (makroskopik): Kütle dengesi, Enerji dengesi, Bernoulli eşitliği",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Akış sistemlerinin momentum analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Akış sistemlerinin momentum analizi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Borularda akış, Pompalar 1",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Borularda akış, Pompalar 2",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Borularda akış, Pompalar 3",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Akışkan akışında diferansiyel analiz (mikroskopik) 1",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Akışkan akışında diferansiyel analiz (mikroskopik) 2",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Navier-Stokes eşitliklerinin yaklaşık çözümleri 1",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Navier-Stokes eşitliklerinin yaklaşık çözümleri 2",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Y. A. Cengel, J. M. Cimbala, Fluid Mechanics: Fundamentals and Applications, 3rd edition, McGraw Hill, 2014.",
    "Y. A. Çengel, J. M. Cimbala, Akışkanlar Mekaniği: Temelleri ve Uygulamaları, 3. Baskıdan Çeviri, Çeviri Editörü: Tahsin Engin, Palme Yayıncılık, 2015."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=207",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=207"
  },
  "AKM 208": {
   "code": "AKM 208",
   "name": "Akışkanlar Mekaniği I",
+  "nameEn": "Fluid Mechanics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -285,12 +718,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=208",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=208"
  },
  "AKM 209": {
   "code": "AKM 209",
   "name": "Akışkanlar Mekaniği II",
+  "nameEn": "Fluid Mechanics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -304,12 +737,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=209"
  },
  "AKM 209E": {
   "code": "AKM 209E",
   "name": "Akışkanlar Mekaniği II",
+  "nameEn": "Fluid Mechanics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -323,12 +756,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=209",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=209"
  },
  "AKM 214": {
   "code": "AKM 214",
   "name": "Akışkanlar Mekaniği I",
+  "nameEn": "Fluid Mechanics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -346,12 +779,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=214"
  },
  "AKM 214E": {
   "code": "AKM 214E",
   "name": "Akışkanlar Mekaniği I",
+  "nameEn": "Fluid Mechanics I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -369,12 +802,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=214",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=214"
  },
  "AKM 215": {
   "code": "AKM 215",
   "name": "Akışkanlar Mekaniği II",
+  "nameEn": "Fluid Mechanics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -388,12 +821,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=215"
  },
  "AKM 215E": {
   "code": "AKM 215E",
   "name": "Akışkanlar Mekaniği II",
+  "nameEn": "Fluid Mechanics II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -407,12 +840,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=215",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=215"
  },
  "AKM 219": {
   "code": "AKM 219",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -451,15 +884,87 @@
    "Hafta 13 · Genel dış akış özellikleri, sınır tabaka özellikleri, sürükleme kuvveti ve kaldırma kuvveti.\"",
    "Hafta 14 · Genel dış akış özellikleri, sınır tabaka özellikleri, sürükleme ve kaldırma kuvvetleri (devam)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar ve tanımlar. Akışkanların bazı özellikleri, boyutlar, boyutsal homojenlik ve birimler, akışkan davranışının analizi, viskozite, ideal gaz yasası, akışkanların sıkıştırılabilirliği, bir noktadaki buhar basıncı, kavitasyon, yüzey gerilimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel kavramlar ve tanımlar. Akışkanların bazı özellikleri, boyutlar, boyutsal homojenlik ve birimler, akışkan davranışının analizi, viskozite, ideal gaz yasası, akışkanların sıkıştırılabilirliği, bir noktadaki buhar basıncı, kavitasyon, yüzey gerilimi. (devamı)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Akışkan statiği. Basınç alanı için temel denklem, durgun akışkandaki basınç değişimi, standart atmosfer, basınç ölçümü, manometri, mekanik ve elektronik basınç ölçüm cihazları. Daldırılmış cisimler üzerindeki hidrostatik kuvvetler. Katı cisimlerin öteleme ve dönme hareketleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkan statiği. Basınç alanı için temel denklem, durgun akışkandaki basınç değişimi, standart atmosfer, basınç ölçümü, manometri, mekanik ve elektronik basınç ölçüm cihazları. Daldırılmış cisimler üzerindeki hidrostatik kuvvetler. Katı cisimlerin öteleme ve dönme hareketleri. (devamı)",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Akışkan kinematiği. Newton’un İkinci Yasası, statik, durgun, dinamik ve toplam basınç, Bernoulli denklemi ve uygulamaları.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Hız alanı, ivme alanı, kontrol hacmi ve sistem gösterimleri, Reynolds Taşıma Teoremi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Sistemler ve kontrol hacimleri için kütle, momentum ve enerji korunumu denklemleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 8,
+    "topic": "Akışkan akışının diferansiyel analizi (Kütle Korunumu, Lineer Momentum Korunumu).",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Viskoz akış (Navier-Stokes denklemleri ve uygulamaları).",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Akış Fonksiyonu ve Akış Potansiyeli",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Boyutsal analiz, Buckingham Pi Teoremi, akışkanlar mekaniğinde yaygın kullanılan boyutsuz gruplar, modelleme ve benzerlik, bazı tipik model çalışmaları.",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Boru akışının genel özellikleri, tamamen gelişmiş laminer akış, tamamen gelişmiş türbülanslı akış, boru akışının boyutsal analizi, Moody diyagramı.",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Genel dış akış özellikleri, sınır tabaka özellikleri, sürükleme kuvveti ve kaldırma kuvveti.\"",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "Genel dış akış özellikleri, sınır tabaka özellikleri, sürükleme ve kaldırma kuvvetleri (devam).",
+    "outcomes": "11"
+   }
+  ],
   "textbooks": [
    "B.R. Munson, D.F. Young, T. H. Okiishi and W.W. Huebsch, “Fundamentals of Fluid Mechanics”, 6th Ed. (SI Version), J. Wiley and Sons, NewYork, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=219",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=219"
  },
  "AKM 219E": {
   "code": "AKM 219E",
   "name": "Akışkanlar Mekaniği",
+  "nameEn": "Fluid Mechanics",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -498,10 +1003,81 @@
    "Hafta 13 · Genel dış akış özellikleri, sınır tabaka özellikleri, sürükleme kuvveti ve kaldırma kuvveti.\"",
    "Hafta 14 · Genel dış akış özellikleri, sınır tabaka özellikleri, sürükleme ve kaldırma kuvvetleri (devam)."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar ve tanımlar. Akışkanların bazı özellikleri, boyutlar, boyutsal homojenlik ve birimler, akışkan davranışının analizi, viskozite, ideal gaz yasası, akışkanların sıkıştırılabilirliği, bir noktadaki buhar basıncı, kavitasyon, yüzey gerilimi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel kavramlar ve tanımlar. Akışkanların bazı özellikleri, boyutlar, boyutsal homojenlik ve birimler, akışkan davranışının analizi, viskozite, ideal gaz yasası, akışkanların sıkıştırılabilirliği, bir noktadaki buhar basıncı, kavitasyon, yüzey gerilimi. (devamı)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Akışkan statiği. Basınç alanı için temel denklem, durgun akışkandaki basınç değişimi, standart atmosfer, basınç ölçümü, manometri, mekanik ve elektronik basınç ölçüm cihazları. Daldırılmış cisimler üzerindeki hidrostatik kuvvetler. Katı cisimlerin öteleme ve dönme hareketleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Akışkan statiği. Basınç alanı için temel denklem, durgun akışkandaki basınç değişimi, standart atmosfer, basınç ölçümü, manometri, mekanik ve elektronik basınç ölçüm cihazları. Daldırılmış cisimler üzerindeki hidrostatik kuvvetler. Katı cisimlerin öteleme ve dönme hareketleri. (devamı)",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Akışkan kinematiği. Newton’un İkinci Yasası, statik, durgun, dinamik ve toplam basınç, Bernoulli denklemi ve uygulamaları.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Hız alanı, ivme alanı, kontrol hacmi ve sistem gösterimleri, Reynolds Taşıma Teoremi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Sistemler ve kontrol hacimleri için kütle, momentum ve enerji korunumu denklemleri.",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 8,
+    "topic": "Akışkan akışının diferansiyel analizi (Kütle Korunumu, Lineer Momentum Korunumu).",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Viskoz akış (Navier-Stokes denklemleri ve uygulamaları).",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Akış Fonksiyonu ve Akış Potansiyeli",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Boyutsal analiz, Buckingham Pi Teoremi, akışkanlar mekaniğinde yaygın kullanılan boyutsuz gruplar, modelleme ve benzerlik, bazı tipik model çalışmaları.",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Boru akışının genel özellikleri, tamamen gelişmiş laminer akış, tamamen gelişmiş türbülanslı akış, boru akışının boyutsal analizi, Moody diyagramı.",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Genel dış akış özellikleri, sınır tabaka özellikleri, sürükleme kuvveti ve kaldırma kuvveti.\"",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "Genel dış akış özellikleri, sınır tabaka özellikleri, sürükleme ve kaldırma kuvvetleri (devam).",
+    "outcomes": "11"
+   }
+  ],
   "textbooks": [
    "B.R. Munson, D.F. Young, T. H. Okiishi and W.W. Huebsch, “Fundamentals of Fluid Mechanics”, 6th Ed. (SI Version), J. Wiley and Sons, NewYork, 2010."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=219",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=AKM&dersNo=219"
  }
 }

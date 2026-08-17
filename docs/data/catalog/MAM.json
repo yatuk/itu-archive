@@ -2,6 +2,7 @@
  "MAM 503E": {
   "code": "MAM 503E",
   "name": "Structure&Crystallography",
+  "nameEn": "Structure&Crystallography",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -37,18 +38,89 @@
    "Hafta 13 · AB2, A2B ikili inorganik yapıların çıkarımı ve gösterilmesi: ikili inorganik yapılar. Lave fazları. AxBy biledşikleri: örnekler, uzay grupları.",
    "Hafta 14 · AxByCz inorganik yapıların çıkarılması ve gösterimi ve bu yapıların uzay gruplarının belirlenmesi. Perovskit ve spinel yapıları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Atomsal düzen. Kristalografiye giriş. Kristal sistemleri ve Bravais kafesleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kafes yönleri, düzlemleri, Miller ve Miller-Bravais indislerinin tekrarı. Atomsal dolgu faktörü. Düzlemsel yoğunluk. Eşdeğer konumlar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Simetri. Simetri operatörleri. Kristallerin minimum simetri elemenları. Nokta simetrisi..",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kristal sistemlerin nokta grubu simetrileri: streografik projeksiyonlar. Nokta grupları arasındaki benzerlikler ve farklılıklar.",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Nokta grup simetrilerinin animasyonları. Düzlem simetrileri: 2-boyutlu simetri grupları.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Uzay grup simetrileri. Monoklinik kristal sistemi için çeşitli 3-boyutlu uzay gruplarının ve streogramların çıkarılması.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Ortorhombik ve tetragonal kristal sistemleri için çeşitli 3-boyutlu uzay gruplarının ve streogramların çıkarılması.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Trigonal ve hegzagonal kristal sistemleri için çeşitli 3-boyutlu uzay gruplarının ve streogramların çıkarılması.",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ters kafes ve ters uzay.",
+    "outcomes": "2-5-7"
+   },
+   {
+    "week": 10,
+    "topic": "Periodik tabloya göre elementlerin yapıları. Element yapıları için Strukturbericht notasyonu. Hume-Rothery and Goldschmidt kuralları. Basit, sıkı-paketlenmiş ve düzenli yapılar.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "İkili inorganic yapılar için Strukturbericht notasyonları. Dört yüzlü ve sekiz yüzlü arayer konumları. Çeşitli Bravais kafesleri ve yapılar için arayer boyutlarının çıkarılması ve hesaplanması. Paketleme, koordinasyon ve en yakın komşu kavramı. İyonik yarıçaplar ve katyon ve anyon yarıçap oranları.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Dört yüzlü ve sekiz yüzlü arayer esaslı inorganic ikili AB yapıları : tanım, çıkarım, gösterim ve örnekler.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 13,
+    "topic": "AB2, A2B ikili inorganik yapıların çıkarımı ve gösterilmesi: ikili inorganik yapılar. Lave fazları. AxBy biledşikleri: örnekler, uzay grupları.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 14,
+    "topic": "AxByCz inorganik yapıların çıkarılması ve gösterimi ve bu yapıların uzay gruplarının belirlenmesi. Perovskit ve spinel yapıları"
+   }
+  ],
   "textbooks": [
    "C. S. Barrett and T. B. Massalski, Structure of Metals, 3rd revised Ed., Pergamon Press, Oxford, 1980.",
    "B. D. Cullity, Elements of X-ray Diffraction, 2nd Edition, Addison-Wesley Publishing Co., Inc., 1978.",
    "D. R. Askeland, The Science and Engineering of Materials, Wadsworth Inc., 1984.",
    "T. Kahn, editor, International Tables for X-ray Crystallography, 2nd Edition, Reidel Publishing Co., 1987."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=503",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=503"
  },
  "MAM 505": {
   "code": "MAM 505",
   "name": "Hasar Analizi",
+  "nameEn": "Failure Analysis",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -62,12 +134,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=505"
  },
  "MAM 511": {
   "code": "MAM 511",
   "name": "Metallerde Deformas.&Kırılma",
+  "nameEn": "Deformation and Fracture of Metals",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -103,6 +175,77 @@
    "Hafta 13 · Basınçlı kaplara etkiyen gerilmeler",
    "Hafta 14 · Birim şekil değişimi ölçümünde deformasyon ölçerlerin kullanımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Statiğin temel konularına giriş, yük, moment ve denge kavramı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yükleme türleri eksenel yükleme ve kayma yüklemesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yükleme türleri eğme ve burma yüklemeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gerilme ve birim şekil değişim kavramı, gerilme birim şekil değiştirme ilişkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Elastik sabitler arasındaki ilişkiler, Elastisite modülü, kayma modülü, hacim modülü ve Poisson oranı",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Elastik deformasyon teorileri, gerilme ve birim şekil değişimi için Mohr dairesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Eğilme ve burma yüklemelerinde gerilme moment ilişkileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kırılma mekaniğine giriş, Griffith teorisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Yorulma kavramı, yorulma türleri ve yorulma dayanımının belirlenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Düzlem şekil değişimi kırılma tokluğu ve ölçüm yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Çatlak ilerlemesi kavramı ve yorulma çatlak ilerleme hızı ölçüm yöntemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Birleşik gerilme hallerinde gerilme birim şekil değişimi ilişkileri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Basınçlı kaplara etkiyen gerilmeler",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Birim şekil değişimi ölçümünde deformasyon ölçerlerin kullanımı"
+   }
+  ],
   "textbooks": [
    "Lalanne, C., Fatigue Damage, John Wiley & Sons, Ltd, 2014.",
    "Bathias, C., Fatigue Limit in Metals, John Wiley & Sons Incorporated, 2013.",
@@ -110,12 +253,12 @@
    "R.M Caddel, Deformation and Fracture of Solids, Prentice-Hall, New Jersey, 1980.",
    "M.A.Meyers, K.K.Chawla, Mechanical Behaviour of materials, Rentice-Hall, New Jersey, 1999"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=511"
  },
  "MAM 596": {
   "code": "MAM 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -159,6 +302,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -171,7 +385,6 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAM&dersNo=596"
  }
 }

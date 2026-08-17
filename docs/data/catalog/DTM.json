@@ -2,6 +2,7 @@
  "DTM 505E": {
   "code": "DTM 505E",
   "name": "Ship Design For Seakeeping",
+  "nameEn": "Ship Design For Seakeeping",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -33,6 +34,77 @@
    "Hafta 13 · Optimizasyon Uygulamaları",
    "Hafta 14 · Tipik Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Denizcilik Performans Karakteristikleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Karışık Denizlerin Matematiksel Temsili",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Düzenli Dalgalardaki Gemi Hareketleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Karışık Denizlerdeki Gemi Hareketleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Denizcilik Kriterleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Denizcilik Performansını Belirleme Yöntemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilik Performansını Belirleyen Dizayn Parametreleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi Büyüklüğü ve Ana Boyutların Etkisi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi Formunun Denizcilik Performansına Etkisi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Denizcilik Rankı",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Regresyon Analizine Dayalı Yöntemler",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Optimizasyon Uygulamaları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Tipik Uygulamalar"
+   }
+  ],
   "textbooks": [
    "Lewis F.M., 1989 Principles of Naval Architecture, Volume III, Motions in Waves, SNAME Publications.",
    "Lloyd A.R.J.M.,1989 Seakeeping: Ship behaviour in Rough Weather, Ellis Horwood Limited.",
@@ -40,12 +112,12 @@
    "Sarıöz K., Hearn G.E. ve Hills W., 1992 Practical Seakeeping for Design : An Optimised Approach, Proceedings of PRADS 92, Newcastle upon Tyne.",
    "Kükner A. ve Sarıöz K., 1995 High Speed Hull Form Optimisation for Seakeeping, Journal of Advances ın Engineering Software, Vol. 22."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=505"
  },
  "DTM 507E": {
   "code": "DTM 507E",
   "name": "Numerical Techn.Eng.Problems",
+  "nameEn": "Numerical Techn.Eng.Problems",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -78,6 +150,77 @@
    "Hafta 13 · Eliptik kısmi diferansiyel denklemler ve sınır değer problemleri",
    "Hafta 14 · Hiperbolik kısmi diferansiyel denklemler ve sınır değer problemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, hassasiyet analizi ve interpolasyon",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Sayısal İntegrasyon (Uygun olmayan integraller, Tekil integraller, v.b.)",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Matris Hesaplamaları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Matris Hesaplamaları (devam)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Matris Hesaplamaları (devam)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Sonlu farklarla türev hesaplamaları",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Adi diferansiyel denklemlerin sayısal çözümleri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Adi diferansiyel denklemlerle ifade edilen başlangıç değer problemleri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Adi diferansiyel denklemlerle ifade edilen sınır değer problemleri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Adi diferansiyel denklemlerle ifade edilen sınır değer problemleri (devam)",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kısmi diferansiyel denklemlerin sayısal çözümleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Parabolik kısmi diferansiyel denklemler ve sınır değer problemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Eliptik kısmi diferansiyel denklemler ve sınır değer problemleri",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Hiperbolik kısmi diferansiyel denklemler ve sınır değer problemleri"
+   }
+  ],
   "textbooks": [
    "1. Ralston, A. and Rabinowitz, P. 2001. A First Course in Numerical Analysis. Dover Publications, Mineola, New York.",
    "2. Stoer, J. and Bulirsch, R. 1992. Introduction to Numerical Analysis. Springer-Verlag, New York.",
@@ -85,12 +228,12 @@
    "4. Kress, R. 1998. Numerical Analysis. Springer, New York.",
    "5. Press, W.H., and et.al. 1986. Numerical Recipes. Cambridge University Press, Cambridge."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=507",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=507"
  },
  "DTM 511": {
   "code": "DTM 511",
   "name": "Açık Deniz Yapılarına Etkileyen Hidrodinamik Dalga Kuvvetleri",
+  "nameEn": "Hydrodynamic Forces on Offshore Floating Structures",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -125,6 +268,77 @@
    "Hafta 13 · Nümerik hesaba ait bazı uygulamalar.",
    "Hafta 14 · Genel özet ve örnekler."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve kabuller. Koordinat sistemleri ve geometri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Problemin sınır şartları (sınır değer probleminin tanıtımı)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gelen dalganın hız potansiyeli (lineer dalga teorisi) ve Difraksiyon.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Green Teoremi ve problemin Green Fonksiyonları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Fredholm Entegral Denklemi ve irregüler frekanslar (iç potansiyel problemi).",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Nümerik çözüm metotları; Panel Metodu.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Potansiyeller yardımıyla fiziksel büyüklüklerin (basınç, kuvvet, ek su kütlesi ve sönüm) bulunması.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Hareket Denklemleri ve bunların kompleks çözümleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Haskind Bağıntıları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Haskind Bağıntılarının irregüler frekansların yerinin tespitinde kullanılması.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Nonlineer problem ve Pertürbasyon Teorisi.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Sürüklenme Kuvveti (drift force) hesabı; kuvvet alt bileşenlerinin irdelenmesi.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Nümerik hesaba ait bazı uygulamalar.",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Genel özet ve örnekler."
+   }
+  ],
   "textbooks": [
    "Clauss, G., Lehmann, E. and Östergaard, C., 1992. Offshore Structures, Volume I, Springer Verlag, Berlin.",
    "Chakrabarti, S. K., 1987. Hydrodynamics of Offshore Structures, Computational Mechanics Publications Southampton and Springer Verlag Berlin.",
@@ -132,12 +346,12 @@
    "Chakrabarti, S. K., 1990. Nonlinear Methods in Offshore Engineering, Elsevier Science Publishers B.V. Amsterdam.",
    "Dean, R. G. and Dalrymple, R. A., 1991. Water Wave Mechanics for Engineers and Scientists, World Scientific Publishing Co. Pte. Ltd. Singapore."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=511"
  },
  "DTM 532E": {
   "code": "DTM 532E",
   "name": "Oil Spill Mode.,Ana.&Resp.Tec.",
+  "nameEn": "Oil Spill Mode.,Ana.&Resp.Tec.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -171,16 +385,87 @@
    "Hafta 13 · Uzaktan algılama",
    "Hafta 14 · Vaka çalışmaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Petrol yayılımı ve çevresel etkileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Kıyısal alanlarda petrol döküntüsünün hareketi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Petrol döküntüsünün ayrışması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Petrol yayılımı laboratuvar deneyleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yörünge takip, fate ve etki değerlendirme modellerinin gelişimi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yörünge takip, fate ve etki değerlendirme modellerinin gelişimi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Olasılık planlama ve risk değerlendirme",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Petrol yayılımı müdahale planları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Kıyı bölgelerinin korunması ve temizlenmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kıyı bölgelerinin korunması ve temizlenmesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Saha deneyleri",
+    "outcomes": "2-6"
+   },
+   {
+    "week": 13,
+    "topic": "Uzaktan algılama",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Vaka çalışmaları"
+   }
+  ],
   "textbooks": [
    "Oil and Hyrdocarbon Spills, Modelling, Analysis and Control, WIT Press, 1998., ISBN: 1-85312-5261",
    "Oil Spill Science and Technology, Mervin Fingas (Ed.), 2011, Elsevier Inc. ISBN: 978-1-85617-943-0"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=532",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=532"
  },
  "DTM 533": {
   "code": "DTM 533",
   "name": "Sualtı Araş.Bil.Dalış Teknik.",
+  "nameEn": "Scientific Diving Techniques in Underwater Researches",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -216,16 +501,87 @@
    "Hafta 13 · Sualtı inceleme yöntemleri ile toplanan verilerin incelenmesi",
    "Hafta 14 · Sualtında veri toplama yöntemlerinin geliştirilmesine yönelik çalışmalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse genel bakış, dalış malzemesi ve yüksek basınç tüpleri, dalış malzemesi kurulumu, yüzme testi, su ve şnorkel yetenekleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dalış fiziği, dalış fizyolojisi, dekompresyon teorisi Dalış sistemleri için teorik hesaplamalar ve nümerik simülasyonların hazırlanması",
+    "outcomes": "1-3-7"
+   },
+   {
+    "week": 3,
+    "topic": "Dalış planı, acil destek planı (EAP), DAN ilk yardım becerileri, kurtarma becerileri (Kısa sınav)",
+    "outcomes": "1-3-6-7"
+   },
+   {
+    "week": 4,
+    "topic": "Bilimsel dalış kuralları; yüzerlik becerileri ve görevleri, sualtı seyir becerileri ve görevleri (Dalış)",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 5,
+    "topic": "Bilimsel dalış yöntemleri, becerileri ve görevleri, örnekleme ve yerleştirme yöntemleri; sualtından veri toplanması (Dalış)",
+    "outcomes": "1-2-3-4-5-6-7-8"
+   },
+   {
+    "week": 6,
+    "topic": "Yüksek basınç altında çalışacak ekipman ve sistemlerin tasarımı (sualtında lazer ile kesme gibi)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 7,
+    "topic": "ROV, AUV gibi deniz teknolojisi araçları ile sualtında bilgi toplanması ve değerlendirilmesi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 8,
+    "topic": "Sualtı haberleşme sistemleri",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Sualtında kullanılan ve kullanılabilecek ölçüm cihazları",
+    "outcomes": "3-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Sualtından örnek toplama cihazlarının tasarımı",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Sualtı inceleme yöntemleri, sualtında fotoğraf ve video çekimi reknikleri (Dalış)",
+    "outcomes": "2-5-6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Sualtı tetkiği, yönetmelikler ve tetkik çihazları",
+    "outcomes": "5-6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Sualtı inceleme yöntemleri ile toplanan verilerin incelenmesi",
+    "outcomes": "5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Sualtında veri toplama yöntemlerinin geliştirilmesine yönelik çalışmalar"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=533",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=533"
  },
  "DTM 610E": {
   "code": "DTM 610E",
   "name": "Gemi&Deniz Tekno.Müh.Özel Kon.",
+  "nameEn": "Spec.Top.in Shipbu.&Oce.Eng.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -261,6 +617,77 @@
    "Hafta 13 · Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Hafta 14 · Her dönem ders içeriğine bağli olarak belirlenecektir."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Her dönem ders içeriğine bağli olarak belirlenecektir."
+   }
+  ],
   "textbooks": [
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
@@ -273,7 +700,6 @@
    "Her dönem ders içeriğine bağli olarak belirlenecektir.",
    "Her dönem ders içeriğine bağli olarak belirlenecektir."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=610",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=610"
  }
 }

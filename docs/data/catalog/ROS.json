@@ -2,6 +2,7 @@
  "ROS 201E": {
   "code": "ROS 201E",
   "name": "Robotik için Temel Matematik",
+  "nameEn": "Foundational Mathematics for Robotics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -34,15 +35,87 @@
    "Hafta 13 · Gauss filtreleri",
    "Hafta 14 · Parametrik olmayan filtreler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kinematiğin prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yapılandırma alanı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Rijit gövde hareketleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Homojen dönüşümler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Afin dönüşümler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Dördeyler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Lie cebiri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Mesafelerin matematiği",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Nesne eşleştirme",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Tensör oylaması",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Özyinelemeli filtreler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Gauss filtreleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Parametrik olmayan filtreler",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Fundamentals of Robotics Applied Case Studies with MATLAB & Python, Hamid D. Taghirad, CRC Press Taylor & Francis Group, 1st Edition, 2025"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROS&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROS&dersNo=201"
  },
  "ROS 301E": {
   "code": "ROS 301E",
   "name": "Robotik için Programlama Teknikleri",
+  "nameEn": "Programming Techniques for Robotics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 0,
@@ -51,7 +124,7 @@
    "local": 1,
    "ects": 4.5
   },
-  "description": "ROS ve ekosistemine giriş; robot programlama için C++ ve Python kullanımı; ROS’un evrimi ve alternatifleri (ROS, ROS2, micro-ROS, ROS-Industrial); ROS mimarisi: işletim sistemi, arakatman yazılımı, uygulama ve iletişim katmanları; ROS yapı taşları·düğümler, konular, servisler, aksiyonlar, parametreler, nodelet’ler, paketler; geliştirme, hata ayıklama, görselleştirme ve simülasyon için ROS araçları; URDF modelleri, tf ağaçları, kinematik model eklentileri, özel robot entegrasyonu; iletişim modelleri (1-1, 1-N, M-N); ROS2 Navigation ve MoveIt2 paketleri; konteynerleştirme, QoS politikaları, RTOS entegrasyonu; test ve uygulama için simülasyon ortamları. Introduction to ROS and its ecosystem; C++ and Python for robotic programming; evolution and alternatives of ROS (ROS, ROS2, micro-ROS, ROS-Industrial); ROS architecture including OS, middleware, application, and communication layers; ROS building blocks·nodes, topics, services, actions, parameters, nodelets, packages; ROS tools for development, debugging, visualization, and simulation; URDF models, tf trees, kinematic model plugins, custom robot integration; communication models (1-1, 1-N, M-N); ROS2 Navigation and MoveIt2 stacks; containerization, QoS policies, RTOS integration; simulation environments for testing and deployment.",
+  "description": "ROS ve ekosistemine giriş; robot programlama için C++ ve Python kullanımı; ROS’un evrimi ve alternatifleri (ROS, ROS2, micro-ROS, ROS-Industrial); ROS mimarisi: işletim sistemi, arakatman yazılımı, uygulama ve iletişim katmanları; ROS yapı taşları—düğümler, konular, servisler, aksiyonlar, parametreler, nodelet’ler, paketler; geliştirme, hata ayıklama, görselleştirme ve simülasyon için ROS araçları; URDF modelleri, tf ağaçları, kinematik model eklentileri, özel robot entegrasyonu; iletişim modelleri (1-1, 1-N, M-N); ROS2 Navigation ve MoveIt2 paketleri; konteynerleştirme, QoS politikaları, RTOS entegrasyonu; test ve uygulama için simülasyon ortamları. Introduction to ROS and its ecosystem; C++ and Python for robotic programming; evolution and alternatives of ROS (ROS, ROS2, micro-ROS, ROS-Industrial); ROS architecture including OS, middleware, application, and communication layers; ROS building blocks—nodes, topics, services, actions, parameters, nodelets, packages; ROS tools for development, debugging, visualization, and simulation; URDF models, tf trees, kinematic model plugins, custom robot integration; communication models (1-1, 1-N, M-N); ROS2 Navigation and MoveIt2 stacks; containerization, QoS policies, RTOS integration; simulation environments for testing and deployment.",
   "outcomes": [
    "ROS ve ROS2’nin yapısını, evrimini ve temel bileşenlerini açıklayabilir.",
    "ROS ortamında C++ ve python kullanarak robot programları yazabilir ve çalıştırabilir",
@@ -75,15 +148,87 @@
    "Hafta 13 · ROS2 moveit2 ile manipülasyon",
    "Hafta 14 · İleri düzey ROS2 konuları (konteynerleştirme, servis kalitesi politikaları ve gerçek zamanlı işletim sistemi entegrasyonu)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Robotik programlamaya giriş ve ders genel tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Robotik programlama için C++ ve python",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Robot işletim sistemi (ROS) ve alternatiflerine genel bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "ROS’un evrimi: ROS1’den ROS2’ye, mikro-ROS ve ROS-endustriyel",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "ROS ve ROS2’nin sistem mimarisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Temel ROS kavramları ve yapı taşları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "ROS geliştirme araçları ve ortamları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Koordinat dönüşümleri ve tf/tf2 ağaç yapısı",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "URDF ve Xacro ile robot modelleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Robot kinematik model eklentileri ve özel robotların entegrasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "ROS’ta iletişim modelleri (1-1, 1-N ve M-N)",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "ROS2 seyrüsefer yığını",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "ROS2 moveit2 ile manipülasyon",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "İleri düzey ROS2 konuları (konteynerleştirme, servis kalitesi politikaları ve gerçek zamanlı işletim sistemi entegrasyonu)",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Robot Operating System (ROS): The Complete Reference (Volume 7), Anis Koubaa, Springer (2023)"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROS&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROS&dersNo=301"
  },
  "ROS 303E": {
   "code": "ROS 303E",
   "name": "Robot Kinematik ve Dinamiği",
+  "nameEn": "Robot Kinematics and Dynamics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -118,10 +263,81 @@
    "Hafta 13 · Mobil robot kinematiği ve kısıtlar",
    "Hafta 14 · Robot eyleyicileri (yarı doğrudan sürücü, seri elastik eyleyiciler ve paralel elastik eyleyiciler)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Robot ileri kinematiği",
+    "outcomes": "2-3-7"
+   },
+   {
+    "week": 3,
+    "topic": "Robot ters kinematiği",
+    "outcomes": "3-7"
+   },
+   {
+    "week": 4,
+    "topic": "Diferansiyel kinematik ve Jacobian matrisleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Çalışma uzayı analizi ve tekillikler",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 6,
+    "topic": "Tahrik edilebilirlik: tam tahrikli ve eksik tahrikli yapilar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Manipüle edilebilirlik: kinematik fazlalıklı, yeterli ve yetersiz yapılar",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Robot dinamiği (Euler-Lagrange)",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 9,
+    "topic": "Robot dinamiği (Newton-Euler)",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 10,
+    "topic": "Paralel robotlar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 11,
+    "topic": "Bacaklı robot kinematiği",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Bacaklı robot dinamiği",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Mobil robot kinematiği ve kısıtlar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Robot eyleyicileri (yarı doğrudan sürücü, seri elastik eyleyiciler ve paralel elastik eyleyiciler)",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Ishwar Singh and Birinder Pal Kaur, Fundamentals of Robot Kinematics and Dynamics, 2023. ISBN: 9798870754468"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROS&dersNo=303",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROS&dersNo=303"
  }
 }

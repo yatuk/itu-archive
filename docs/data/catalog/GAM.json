@@ -2,6 +2,7 @@
  "GAM 501E": {
   "code": "GAM 501E",
   "name": "Introd.to Game Design&Devel.",
+  "nameEn": "Introd.to Game Design&Devel.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -33,16 +34,87 @@
    "Hafta 13 · Oyun Geliştirme Süreçleri",
    "Hafta 14 · Oyun Geliştirme ve Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Oyunlar, Oyun Tasarımının Önemi ve Tarihçe",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Oyunlar, Oyuncular ve Oyun Tasarımcısı: Tanımlar, Oyun Tasarımı Yöntemleri ve Hedefleri, Tasarım Becerileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Oyun Mekanikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Oyun Mekanikleri: Nesneler, Nitelikler ve Durumlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Oyun Mekanikleri: Mekan, Hareketler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Oyun Mekanikleri: Kurallar, Beceriler, Şans",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Oyun Dengeleme, Bulmacalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Seçilen Bir Oyunun Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Oyun Tasarımı Dokümanları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Oyun Arayüzü ve Etkileşim, Hikaye, Oyuncu Deneyimi ve Dolaylı Denetim Yöntemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Karakter Tasarımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Bir Oyun Önerisi ve Onun Oyun Dokümanı Taslağı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Oyun Geliştirme Süreçleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Oyun Geliştirme ve Değerlendirme"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=501"
  },
  "GAM 502E": {
   "code": "GAM 502E",
   "name": "Essential Mathema.for Games",
+  "nameEn": "Essential Mathema.for Games",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -74,16 +146,87 @@
    "Hafta 13 · Oyunlarda Matematiksel Temsiller",
    "Hafta 14 · Oyunlarda Matematiksel Temsil uygulamaları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel Matematik Bilgileri Tekrarı - Trigonometri",
+    "outcomes": "4"
+   },
+   {
+    "week": 2,
+    "topic": "Temel Matematik Bilgileri Tekrarı - Türev, İntegral",
+    "outcomes": "4"
+   },
+   {
+    "week": 3,
+    "topic": "Eşitlikler ve Temsiller",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Vektörler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Matrisler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Temel Geometrik Elemanlar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Temel Geometrik Elemanların Uygulamaları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Dönüşümler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dönüşüm Uygulamaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kuaterniyonlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Hızlandırılmış Vektör Cebri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Bilgisayar Grafiğinde Matematiksel Temsiller",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Oyunlarda Matematiksel Temsiller",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Oyunlarda Matematiksel Temsil uygulamaları"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=502"
  },
  "GAM 504E": {
   "code": "GAM 504E",
   "name": "Ess.of 3D mo.for v.g.:f.de.im.",
+  "nameEn": "Ess.of 3D mo.for v.g.:f.de.im.",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -119,16 +262,87 @@
    "Hafta 13 · Tüm oyunun modellenmeye başlanması",
    "Hafta 14 · Tüm oyunun modellenmesinin tamamlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin içeriği ve koordinasyon sistemine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "2 boyuttan (2D) 3 boyuta (3D) geçiş",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "3 boyuttan (3D) 2 boyuta (2D) geçiş",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Ön tasarım ve modellemeye geçiş",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "3D modelleme programı üzerinde hazırlanmış olan örnek haritalar üzerinde inceleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Haritalar üzerinde malzeme ve doku çalışmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Harita ve malzeme/doku çalışmalarına nesne animasyonları ekleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Hazırlanmış sahne modellerinin oyun motoruna aktarılmaya hazırlanması",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Hazırlanmış sahne modellerinin oyun motoruna aktarılması",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Oyun motoru içindeki modüller kullanılarak nesne animasyonları ve sonlu durum makineleri betiklerinin oluşturulması",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Oyun motoru içinde ışıklandırma",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Oyun motoru içinde seslendirme (olay sesleri, dış ses ve çevresel sesler) tanımlama",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Tüm oyunun modellenmeye başlanması",
+    "outcomes": "3-8"
+   },
+   {
+    "week": 14,
+    "topic": "Tüm oyunun modellenmesinin tamamlanması"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=504",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=504"
  },
  "GAM 505E": {
   "code": "GAM 505E",
   "name": "Programming for Games",
+  "nameEn": "Programming for Games",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -161,16 +375,87 @@
    "Hafta 13 · Phyton programlama dilinde yeni bir sınıf tanımlamak ve kullanmak",
    "Hafta 14 · Phyton programlama dilindeki hazır ya da kullanıcı tanımlı sınıfların kalıtımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derleyici, yorumlayıcı, Geliştirme ortamının kurulumu ve yürütülmesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Bir programlama dilinin değişkenleri, bir programlama dilinde deyişler, bir programlama dilinde yönergeler",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 3,
+    "topic": "Phyton programlama dilinde koşullu yürütme ile programlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İşlev çağrıları kullanılarak kod tekrarının engellenmesi ve özyinelemenin kotarılması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tekrarlayan işlerin üstesinden gelmek için yinelemenin kullanımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Phyton programlama dilinin hazır Katar sınıfını kullanarak metin düzenleme",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Phyton programlama dilinde kütük erişimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Nesne Listeleri kullanarak verimli programlama teknikleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Nesne Sözlükleri kullanarak verimli programlama teknikleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Phyton dilinin hazır Çokuzluları ile herhangi nesneleri herhangi nesnelere eşleştirme",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Düzenli ifadelerin kullanımıyla ileri düzeyde metin düzenleme",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Phyton programlama dilinde veri görselleştirme teknikleri",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Phyton programlama dilinde yeni bir sınıf tanımlamak ve kullanmak",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Phyton programlama dilindeki hazır ya da kullanıcı tanımlı sınıfların kalıtımı"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=505"
  },
  "GAM 506EC": {
   "code": "GAM 506EC",
   "name": "Spec.Topics in Game Des.&Dev.",
+  "nameEn": "Spec.Topics in Game Des.&Dev.",
   "language": "English/Türkçe",
   "credits": {
    "theory": 3,
@@ -201,16 +486,82 @@
    "Hafta 13 · Oyun Pazarlama Uygulamaları",
    "Hafta 14 · Oyun Tasarımı ve Geliştirme Uygulamaları ve Değerlendirmeler"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Animasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Kullanıcı Deneyimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Profesyonel Oyun ve Uyarı/Beğeni (Hype) yönetimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Masaüstü Oyunları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Ses Mühendisliği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Oyun Üretimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Oyunlarda Özel Efektler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Oyun Yayıncılığı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Bağımsız Oyun Üretimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Bağımsız Oyun Üretiminde İleri Teknikler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Oyun Pazarlama",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Oyun Pazarlama Uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Oyun Tasarımı ve Geliştirme Uygulamaları ve Değerlendirmeler"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=506",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=506"
  },
  "GAM 515E": {
   "code": "GAM 515E",
   "name": "Non-digital Games&Narration",
+  "nameEn": "Non-digital Games&Narration",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -242,16 +593,87 @@
    "Hafta 13 · Sunum",
    "Hafta 14 · Sunum"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Oyunların sınıflandırılma teknikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Dijital olmayan oyunların incelenmesi: Tümleşik Oyunlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Dijital olmayan oyunların incelenmesi: Şans Oyunları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dijital olmayan oyunların incelenmesi: Stratejik Oyunlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Dijital olmayan oyunların incelenmesi: Karma Oyunlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Hikaye yaratmaya giriş: Olay Dizisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Hikaye yaratmaya giriş: Bakış Açısı",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Hikaye yaratmaya giriş: Stil",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Oyun için hikaye yazımı: Taslak Hazırlığı",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Oyun için hikaye yazımı: Karakterlerin Yaratılışı",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Oyun için hikaye yazımı: Hikaye/Oyun Mekaniği İlişkisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Oyun için hikaye yazımı: Lineer Olmayan Hikayeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Sunum",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Sunum"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=515",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=515"
  },
  "GAM 516E": {
   "code": "GAM 516E",
   "name": "Serious Games",
+  "nameEn": "Serious Games",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -285,16 +707,87 @@
    "Hafta 13 · Endüstri Semineri: Eğitim Simülasyonları",
    "Hafta 14 · Proje Gösterim ve Sunuşları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ciddi Oyun Tasarımı ve Geliştirme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ciddi Oyunlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım Ölçütleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Geliştirme Ölçütleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Askeriye ve Devlet Kurumlarına Yönelik Ciddi Oyunlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Eğitimsel ve İşbirlikçi Ciddi Oyunlar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Sağlık Sektörüne Yönelik Ciddi Oyunlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Politik, Dinsel ve Sanatsal Ciddi Oyunlar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ciddi Oyunların Ara Dönem Gözden Geçirilmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ulusal Ciddi Oyun Uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Gelişmiş Ulusal Ciddi Oyun Uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Endüstri Semineri: Ciddi Oyunlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Endüstri Semineri: Eğitim Simülasyonları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Gösterim ve Sunuşları"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=516",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=516"
  },
  "GAM 517E": {
   "code": "GAM 517E",
   "name": "3D Perception",
+  "nameEn": "3D Perception",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -332,16 +825,87 @@
    "Hafta 13 · Duyusal zenginleştirime uygulamaları",
    "Hafta 14 · Robot uygulamaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "3D algılamanın uygulamaları ve ilkeleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "3D geometri dönüştürmeler ve temsil.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kameralar ve sensörler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Ayarlama/kalibrasyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yerleştirme.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Tahmin etme teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Kamera poz tespit etme ve takip etme.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Nesne poz tespit etme ve takip etme",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Bölütleme ve tanıma.",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 10,
+    "topic": "Haritalama ve modelleme.",
+    "outcomes": "1-2-7"
+   },
+   {
+    "week": 11,
+    "topic": "3D algılama için makine öğrenme.",
+    "outcomes": "2-7"
+   },
+   {
+    "week": 12,
+    "topic": "Arttırılmış gerçeklik uygulamaları.",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Duyusal zenginleştirime uygulamaları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Robot uygulamaları."
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=517",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=517"
  },
  "GAM 520E": {
   "code": "GAM 520E",
   "name": "Guided Research",
+  "nameEn": "Guided Research",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -375,16 +939,87 @@
    "Hafta 13 · Sunum 3",
    "Hafta 14 · Haftalık toplantı ve raporun teslimi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Haftalık toplantı (İncelenecek konu ve yayınların belirlenmesi)",
+    "outcomes": "4"
+   },
+   {
+    "week": 2,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Sunum 1",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sunum 2",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Haftalık toplantı (İlerlemenin ele alınması, incelenen yayınların tartışılması, incelenecek başka yayınların saptanması)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Sunum 3",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Haftalık toplantı ve raporun teslimi"
+   }
+  ],
   "textbooks": [
    "-",
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=520",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=520"
  },
  "GAM 596E": {
   "code": "GAM 596E",
   "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -416,12 +1051,83 @@
    "Hafta 13 · Dönem ödevi sunumu-10",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "3 Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi.",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-7",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-8",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-9",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-10",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "Martin Manser, Çeviri: A. Babacan, Sunum Sırları, NTV yayınları, 2014",
    "Andrew Bradbury, Çeviri: H.Elçi, \"Başarılı Sunum Teknikleri\", Kaizen Yayıncılık, Ekim 2006.",
    "Lazar, J., Feng, J. H., & Hochheiser, H. (2010). Research methods in human-computer interaction. John Wiley & Sons."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=596",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GAM&dersNo=596"
  }
 }

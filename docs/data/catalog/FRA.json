@@ -2,6 +2,7 @@
  "FRA 101": {
   "code": "FRA 101",
   "name": "Fransızca I",
+  "nameEn": "French I",
   "language": "Fransızca",
   "credits": {
    "theory": 2,
@@ -36,15 +37,87 @@
    "Hafta 13 · Gelecek zaman (Futur Proche)",
    "Hafta 14 · Hafta sonu planları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma Fransızca ve Fransa hakkında genel bilgiler Selamlaşma ifadeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Module 1: Parler de soi Unité 1: Salut ! Tu ve vous ? Selamlaşma, vedalaşma, teşekkür etme, özür dileme",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Alfabe ve işaretler (aksanlar) Ses bilgisi (fonetik) çalışmaları Haftanın günleri, aylar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Şahıs zamirleri Sınıf içinde sık kullanılan talimatlar Etre fiili",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Etre + milliyet ve meslek bildiren sıfatlar Masculin/Féminin Sayılar (1-20)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Module 1: Parler de soi Unité 2: Enchanté ! Olumsuz yapı “ne… pas” İyelik sıfatları Sayılar (20 sonrası)",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Etre ve Avoir fiil çekimi + 1. Grup fiiller (-er) (Geniş Zaman) Habiter, Travailler ve Venir fiilleri + edatları (à/de)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kimlik bilgileri ve yazılı formda doldurma Vurguyla soru sorma Oui, non, si",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "C’est ve il est Başkasını tanıtma",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Module 1: Parler de soi Unité 3: J’adore ! Aller fiili 1. Grup fiiller (-er) On = Nous",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Faire fiili ve kullanımı (du, de l’, de la, des + aktivite)",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Hobiler Jouer ve Faire fiilleri + edatları (à/de)",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Gelecek zaman (Futur Proche)",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Hafta sonu planları",
+    "outcomes": "6-7"
+   }
+  ],
   "textbooks": [
    "Latitudes 1, Méthode de français, Mérieux, R., Loiseau, Y., Didier, Paris, 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=101",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=101"
  },
  "FRA 102": {
   "code": "FRA 102",
   "name": "Fransızca II",
+  "nameEn": "French II",
   "language": "Fransızca",
   "credits": {
    "theory": 2,
@@ -81,15 +154,87 @@
    "Hafta 13 · Geçmiş zaman (Passé Composé) Yardımcı fiil « Etre » + Accord",
    "Hafta 14 · Geçmiş zaman (Passé Composé) Etre/Avoir"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma Etre ve Avoir fiil çekimi + 1.Grup fiiller (-er) (Geniş Zaman) Vocabulaire 101",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Module 2: Échanger Unité 4: Tu veux bien ? Il y a Kibar isteklerde bulunma (Je voudrais) Kip fiilleri (Verbes Modaux)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Vurgu zamirleri (Pronoms Toniques) Connaitre ve Savoir fiilleri ve kullanımları 2. Grup (-ir) ve 3.Grup (-re/-oir) fiil çekimleri (Geniş Zaman)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Günlük rutinler Dönüşlü fiiller (Verbes Pronominaux)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Module 2: Échanger Unité 5: On se voit quand ? Saatler Tarih belirtme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Davet etme (kabul/red) Randevu ayarlama, organize etme",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Est-ce que ile soru sorma",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Belirli (le, la, les, l’) ve belirsiz (un, une, des) artikeller",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Miktar artikelleri (du, de la, de l’, des) Miktar zarfları (peu, un peu, assez, beaucoup, trop + de) Olumsuz yapı « ne…pas de »",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Module 2: Echanger Unité 6: Bonne idée ! Sıfatlar",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Olumlu ve olumsuz görüşlerden bahsetme",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Geçmiş zaman (Passé Composé) Yardımcı fiil « Avoir »",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Geçmiş zaman (Passé Composé) Yardımcı fiil « Etre » + Accord",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Geçmiş zaman (Passé Composé) Etre/Avoir",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Latitudes 1, Méthode de français, Mérieux, R., Loiseau, Y., Didier, Paris, 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=102",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=102"
  },
  "FRA 201": {
   "code": "FRA 201",
   "name": "Fransızca III",
+  "nameEn": "French III",
   "language": "Fransızca",
   "credits": {
    "theory": 2,
@@ -125,15 +270,87 @@
    "Hafta 13 · Nesne zamirleri (Pronoms personnels) COD ve COI",
    "Hafta 14 · Nesne zamirleri (Pronoms personnels) En ve Y"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma Geniş zaman (Présent) çalışması/récapitulation Vocabulaire 102",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geçmiş zaman (Passé Composé) çalışması/récapitulation Vocabulaire 102",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Module 3: Agir dans l’espace Unité 7: C’est où ? Adres sorma Adres tarif etme",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yer-yön edatları Emir Kipi (Impératif)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Mekan edatları (au, à la, aux …) Sıra sayıları (premier, deuxième …)",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Mekan (Oda) tasviri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Module 3: Agir dans l’espace Unité 8: N’oubliez pas ! Ülke edatları (en, au, aux …) Ülke (Şehir) tasviri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Zorunluluk ve yasaklama ifadeleri Il faut Tavsiye ifadeleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Inversion ile soru sorma",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Module 3: Agir dans l’espace Unité 9: Belle vue sur la mer ! Sıfatlar İşaret sıfatları (ce, cette, ces, cet) Belgisiz sıfatlar (tout, toute, tous, toutes)",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Sıklık ifadeleri (souvent, jamais, encore …) Geçmiş zaman (Passé Composé) + 6 fiil kuralı Futur Proche - Présent Progressif - Passé Récent",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Négations Olumsuzluk zarfları (Adverbes de négation)",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Nesne zamirleri (Pronoms personnels) COD ve COI",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Nesne zamirleri (Pronoms personnels) En ve Y",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Latitudes 1, Méthode de français, Mérieux, R., Loiseau, Y., Didier, Paris, 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=201",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=201"
  },
  "FRA 202": {
   "code": "FRA 202",
   "name": "Fransızca IV",
+  "nameEn": "French IV",
   "language": "Fransızca",
   "credits": {
    "theory": 2,
@@ -168,15 +385,87 @@
    "Hafta 13 · Dilek-Şart Kipi (Subjonctif)",
    "Hafta 14 · DELF A2 çalışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma Geniş zaman (Présent) ve Geçmiş zaman (Passé Composé) çalışması/récapitulation Vocabulaire 201",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nesne zamirleri (Pronoms personnels) (COD - COI - EN - Y) çalışması/récapitulation Vocabulaire 201",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Module 4: Se situer dans le temps Unité 10: Quel beau voyage ! Miktar ifadeleri (un litre de, une tranche de, au kilo…)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Miktar ve Derece zarfları (peu, assez, trop…)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İlgi Zamirleri (qui - que)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İlgi Zamirleri (où - dont)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Module 4: Se situer dans le temps Unité 10: Oh ! Joli ! Bir kişiyi betimleme Giyim tarzından bahsedebilme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Karşılaştırma ve Üstünlük ifadeleri (Comparatifs-Superlatifs) Olumlu ve olumsuz görüşlerinden bahseden kişileri anlayabilme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Zarflar (Adverbes)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Şimdiki zamanın hikayesi (Imparfait) Geçmiş zaman ifadelerini birlikte kullanabilme (Passé Composé ve Imparfait)",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Module 4: Se situer dans le temps Unité 10: Et après ! Zaman ifadeleri (depuis, pendant, dans, en, ça fait …) Hava tahminlerinden bahsetme (La Météo)",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gelecek zaman (Futur Simple)",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Dilek-Şart Kipi (Subjonctif)",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "DELF A2 çalışması",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Latitudes 1, Méthode de français, Mérieux, R., Loiseau, Y., Didier, Paris, 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=202",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=202"
  },
  "FRA 301": {
   "code": "FRA 301",
   "name": "Fransızca V",
+  "nameEn": "French V",
   "language": "Fransızca",
   "credits": {
    "theory": 2,
@@ -210,15 +499,87 @@
    "Hafta 13 · DELF B1 çalışması",
    "Hafta 14 · DELF B1 çalışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma Zaman ifadeleri (depuis, pendant, dans, en, ça fait …) çalışması/récapitulation Gelecek zaman (Future Simple) çalışması/récapitulation Vocabulaire 202",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Module 1: Echanger des opinions Unité 1: Très drôle ! İyelik zamirleri (Pronoms Possessifs)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Geçmiş zaman ifadeleri (Passé Composé ve Imparfait) çalışması/récapitulation",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Module 1: Echanger des opinions Unité 2: Vous avez dit « culture » ? Soru zamirleri (Pronoms Interrogatifs) Soru yöntemleri (Interrogation) çalışması/récapitulation Qui est-ce qui/que et Qu’est-ce qui/que",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Dilek-Şart Kipi (Subjonctif)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sebep-sonuç bildiren ifadeler Pour, pour que, afin de, afin que",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Module 1: Echanger des opinions Unité 3: Envie d’ailleurs… Nesne zamirleri (Pronoms personnels) çalışması/récapitulation Çift zamirler (Doubles pronoms)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Module 2: Parler de ses sentiments et de ses émotions Unité 4: Voilà l’été ! Avoir fiilinin geçmiş zaman ortacıyla uyumu Karşılaştırma ve Üstünlük ifadeleri (Comparatifs-Superlatifs) çalışması/récapitulation",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Module 2: Parler de ses sentiments et de ses émotions Unité 5: Terre inconnue Hikaye bileşik zamanı (Plus-que-parfait)",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "İlgi zamirleri (Pronoms relatifs) çalışması/récapitulation",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Bileşik ilgi zamirleri (Pronoms relatifs composés)",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Module 2: Parler de ses sentiments et de ses émotions Unité 6: Vivement dimanche ! Gelecekte geçmiş zaman (Futur antérieur)",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "DELF B1 çalışması",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "DELF B1 çalışması",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Latitudes 2, Méthode de français, Mérieux, R., Loiseau, Y., Didier, Paris, 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=301",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=301"
  },
  "FRA 302": {
   "code": "FRA 302",
   "name": "Fransızca VI",
+  "nameEn": "French VI",
   "language": "Fransızca",
   "credits": {
    "theory": 2,
@@ -256,10 +617,81 @@
    "Hafta 13 · Fiil zamanları ve kipler çalışması/récapitulation",
    "Hafta 14 · DELF B1 çalışması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma Dilek-Şart Kipi (Subjonctif) çalışması/récapitulation Hikaye bileşik zamanı (Plus-que-parfait) çalışması/récapitulation Vocabulaire 301",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gelecekte geçmiş zaman (Futur antérieur) çalışması/récapitulation Bileşik ilgi zamirleri (Pronoms relatifs composés) çalışması/récapitulation Çift zamirler (Doubles pronoms) çalışması/récapitulation Vocabulaire 301",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Module 3: Dire et dire de faire Unité 7: Entreprendre İşaret zamirleri (Pronoms démonstratifs)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Soru zamirleri (Pronoms Interrogatifs) çalışması/récapitulation",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Module 3: Dire et dire de faire Unité 8: Vous avez gagné ! Articulateurs logiques pour organiser son discours",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Module 3: Dire et dire de faire Unité 9: Ne quittez pas… Belgisiz zamirler (Pronoms indéfinis) Zıtlık ifadeleri (Opposition)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Module 4: Structurer et nuancer ses propos Unité 10: Argent trop cher ! Edilgen Yapı (Forme Passive) Sebep-Sonuç ilişkisi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Module 4: Structurer et nuancer ses propos Unité 11: La pétrole fou ! Koşullu Şart Kipi (Conditionnel Présent)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 9,
+    "topic": "Koşullu Şart Kipi (Conditionnel Passé)",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Hypothèses",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Module 4: Structurer et nuancer ses propos Unité 12: Parlez-moi d’amour… Zarf-fiil (Gérondif) Sıfat-fiil (Participe Présent)",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Dolaylı Anlatım (Discours Rapporté)",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "Fiil zamanları ve kipler çalışması/récapitulation",
+    "outcomes": "10"
+   },
+   {
+    "week": 14,
+    "topic": "DELF B1 çalışması",
+    "outcomes": "10"
+   }
+  ],
   "textbooks": [
    "Latitudes 2, Méthode de français, Mérieux, R., Loiseau, Y., Didier, Paris, 2008"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=302",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FRA&dersNo=302"
  }
 }

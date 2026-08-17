@@ -2,6 +2,7 @@
  "MYE 5008E": {
   "code": "MYE 5008E",
   "name": "18th-Century Counterpoint",
+  "nameEn": "18th-Century Counterpoint",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -34,6 +35,77 @@
    "Hafta 13 · Klasik dönemden konturpuan örnekleri",
    "Hafta 14 · Fin Koral projelerinin okunması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve melodi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Konturpuanın genel özellikleri, notaya karşı nota konturpuanı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Ritmik indirgeme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Serbest konturpuan, basit iki-tekrarlı form",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Gerçek, imitasyon ve çifte konturpuan",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "2 partili kanon ve invansiyon",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "3 sesli yapıya giriş",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "3 sesli koral prelüdleri ve kromatizm",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "3 sesli füg",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "4 sesli yapıya giriş, koral prelüler hakkında ek çalışmalar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Füg konusunda ek çalışmalar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Koral yazma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Klasik dönemden konturpuan örnekleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Fin Koral projelerinin okunması"
+   }
+  ],
   "textbooks": [
    "Johann Sebastian Bach. 1970. Keyboard Music. New York: Dover Publications.",
    "Robert Gauldin. 1988. Eighteenth-Century Counterpoint. Illinois: Waveland Press.",
@@ -41,12 +113,12 @@
    "Alfred Mann. 1987. The Study of Fugue. New York: Dover Publications.",
    "Walter Piston,. 1984. Counterpoint. New Haven: Yale University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5008",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5008"
  },
  "MYE 501E": {
   "code": "MYE 501E",
   "name": "Music and Technology",
+  "nameEn": "Music and Technology",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -79,6 +151,78 @@
    "Hafta 13 · Müzik prodüksiyon stüdyoları",
    "Hafta 14 · Müzik teknoloji eleştirisinde tarihsel ve güncel akımlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ses fiziği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tını ve spektrum",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Duyma ve perde algılama",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yüksek ses ölçümü ve algı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Müzikal notanın anatomisi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Dinamik processing",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Müzik enstrumanlarının ses özellikleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Mikrofon teorisi, stüdyo ve alan kayıtları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dijital sesin temelleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Dijital ses çalışma platformları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Ses örnekleme ve sentez",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Oda ve salon akustikleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Müzik prodüksiyon stüdyoları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Müzik teknoloji eleştirisinde tarihsel ve güncel akımlar",
+    "outcomes": "1-5"
+   }
+  ],
   "textbooks": [
    "Julio D’Escrivan, Music Technology (Cambridge University Press, 2011).",
    "Dan Hosken, An Introduction to Music Technology (Routledge, 2010).",
@@ -86,12 +230,12 @@
    "Mark Ballora, Essentials of Music Technology (Prentice Hall, 2002).",
    "Jonathan Sterne, The Audible Past (Duke University Press, 2003)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=501",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=501"
  },
  "MYE 502E": {
   "code": "MYE 502E",
   "name": "Music Business&Management",
+  "nameEn": "Music Business&Management",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -124,6 +268,78 @@
    "Hafta 13 · Konser/Festival Yapımı",
    "Hafta 14 · Ses Kayıt Estetiği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Şirket Yapıları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sanatçı ve Repertuar",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Sanatçı Yönetimi",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Sanatçı Geliştirme",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 5,
+    "topic": "Pazarlama",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Dağıtım",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "7 Satış 1, 2, 5",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Katalog Yönetimi",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Repertuar Yönetimi",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Finans",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "11 Müzik Yapım Analizi 1, 2, 4-5",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "İmtia Hakları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Konser/Festival Yapımı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Ses Kayıt Estetiği",
+    "outcomes": "1-2-3-5"
+   }
+  ],
   "textbooks": [
    "David Kusek. 2005. The Future of Music: Manifesto for the Digital Music Revolution. Berklee Pres.",
    "Paul Allen,. 2007. Artist Management for the Music Business. Elsevier/Focal Press.",
@@ -131,12 +347,12 @@
    "Michael Zager. 2006. Music Production: A Manual for Producers, Composers, Arrangers, and Students. Scarecrow Press.",
    "James D Halloran, Attitude"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=502",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=502"
  },
  "MYE 5034E": {
   "code": "MYE 5034E",
   "name": "World Music Theory",
+  "nameEn": "World Music Theory",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -169,6 +385,78 @@
    "Hafta 13 · Kültürlerarası estetik, ses ve gövde",
    "Hafta 14 · Tını analizi, kimlik"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse giriş ve analiz",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kulak eğitimi- Cantometrics",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Kulak eğitimi- akorlama. Notasyon",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kulak eğitimi- aralıklar. Mikrotonlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Kulak eğitimi-ritim. Kültürlerarası (etnocentrizm, karşılaştırma, globalizm)",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Kulak eğitimi- kültür analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Kulak eğitimi armoni. güncel transkriosiyon yüntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kulak eğitimi melodi, doğaçlama",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Kulak eğitimi- form. Müzik stilinin analizi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Mieczyslaw Kolinski’nin analiz dünyası, anlam ve göstergebilim",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Muzikoloji, sistematik müzikoloji, etnomüzikoloji, teori",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Müzik algısı, eleştirel çalışmalar",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kültürlerarası estetik, ses ve gövde",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Tını analizi, kimlik",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Hijleh, Mark. 2012. Towards a Global Music Theory. Farnham, England: Ashgate",
    "Tenzer, Michael, ed. 2011. Analytical and Cross-Cultural Studies in World Music.",
@@ -179,12 +467,12 @@
    "Ellingson, Ter. 1992. “Chapter VI: Notation. “In Ethnomusicology: An Introduction, edited by Helen Myers, pp.153-164. London: Norton.",
    "Kolinski, Mieczyslaw. 1965. \"The General Direction of Melodic Movement.\" Ethnomusicology 9(3):240-264."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5034",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5034"
  },
  "MYE 5035E": {
   "code": "MYE 5035E",
   "name": "Secondary Inst.Indivi.Inst.2",
+  "nameEn": "Secondary Inst.Indivi.Inst.2",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -215,6 +503,77 @@
    "Hafta 13 · Farklı sanatçıların yorumlarının karşılaştırılması",
    "Hafta 14 · Yarıyıl sonu resitali için program notlarının yazılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yarıyıl sonunda icra edilecek resital için Romantik dönem repertuarına ait eserlerin incelenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Romantik dönem repertuarın müzikal ve form analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Romantik dönem çalgı tekniği dersi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İcraya yönelik Romantik dönem stillerinin analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "İcrada çalgı tekniği, anlam ve duyguların bütünleştirilmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Toplu çalgı dersinde icra",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Yarıyıl sonunda icra edilecek resital için erken 20.yüzyıl repertuarına ait eserlerin incelenmesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Erken 20.yüzyıl repertuarının müzikal ve form analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Erken 20. yüzyıl dönemi çalgı tekniği dersi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "İcraya yönelik erken 20. yüzyıl stillerinin analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Toplu çalgı dersinde icra",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Eşlikli genel provalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Farklı sanatçıların yorumlarının karşılaştırılması",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Yarıyıl sonu resitali için program notlarının yazılması"
+   }
+  ],
   "textbooks": [
    "Caplin,William E. 2013. Analyzing Classical Form. New York: Oxford University Press.",
    "Pierce, Alexandra. 2007. Deepening Musical Performance Through Movement, Bloomington: Indiana University Press.",
@@ -224,12 +583,12 @@
    "Fink, Seymour. 1997. Mastering Piano Technique: A Guide for Students, Teachers and Performers. Portland, Oregon: Amadeus Press.",
    "Barlow, Wilfred. 1990. The Alexander Technique, Rochester: Healing Arts Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5035",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5035"
  },
  "MYE 5037E": {
   "code": "MYE 5037E",
   "name": "Interactive Music Composition",
+  "nameEn": "Interactive Music Composition",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -262,6 +621,77 @@
    "Hafta 13 · Müzikal olmayan ham verileri sese dönüştürme uygulamaları.",
    "Hafta 14 · Üretken sistemler ile kontrol ve etkileşim (sinir ağları)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dijital arayüz terminolojisinin ve eşleştirme stratejilerinin gözden geçirilmesi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Gerçek zamanlı doğaçlama teknikleri (nota takipçileri vb.)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Donanım Arayüzleri 1: Dokunma duyusu ile çalışan aygıtlar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Donanım Arayüzleri 2: Görme duyusu ile çalışan aygıtlar.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Donanım Arayüzleri 3: Fiziksel programlama (Arduino mikro-kontrol aygıtı)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Dijital Arayüzler 1: canlı kodlama ve anlık kodlama teknikleri (Supercollider)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Dijital Arayüzler 2: canlı kodlama ve zaman tabanlı algoritmik doğaçlama (TidalCycles)",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Ses sentezleme teknikleri: FFT, granül, katkı ve FM sentezi.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Klavyenin ötesindeki etkileşim, değişik eşleştirme stratejilerinin değerlendirilmesi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Akustik enstrümanların sinyal işlemesi ve perde analizi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Ortaklaşa doğaçlama için akustik enstrümanların frekans yelpazesinin artırılması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Dizüstü bilgisayar topluluğu bağlamında ham verinin amaca özel ağlar üzerinden dağıtımı.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Müzikal olmayan ham verileri sese dönüştürme uygulamaları.",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 14,
+    "topic": "Üretken sistemler ile kontrol ve etkileşim (sinir ağları)"
+   }
+  ],
   "textbooks": [
    "Vasilakos, K., 2018. GREAP: An Interactive System For Gestural Manipulation of Sonic Material Using a Leap Motion Device.",
    "Anon 2016. Musical instrument in the 21st century. New York, NY: Springer Berlin Heidelberg.",
@@ -274,12 +704,12 @@
    "Emmerson, S., 2000. Music, Electronic Media and Culture. Burlington, Vermont: Ashgate.",
    "Sloboda, J.A. ed., 2000. Generative processes in music: the psychology of performance, improvisation, and composition. Oxford [England] : New York: Clarendon Press ; Oxford University Press."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5037",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5037"
  },
  "MYE 505E": {
   "code": "MYE 505E",
   "name": "History of Eurogen.Art Music 2",
+  "nameEn": "History of Eurogen.Art Music 2",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -313,6 +743,78 @@
    "Hafta 13 · Orta/geç 20 yy. modernizmi",
    "Hafta 14 · Orta/geç 20 yy. modernizmi (devam)"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş. Geç Barok dönem müziği",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 2,
+    "topic": "18. yy. müziği, dönemleştirme; Tarz ve Tarz değişimi",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 3,
+    "topic": "18. yy. müziği (devam); Gelenekler: müzik türleri, tipler ve tarzlar; Mozart ve Haydn",
+    "outcomes": "1-2-4-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Geç 18. yy: Mozart ve Haydn; Biyografi",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 5,
+    "topic": "Beethoven. Konser hayatının gelişimi; “Eser” kavramı ve Müzik geleneği",
+    "outcomes": "1-2-4-5-6"
+   },
+   {
+    "week": 6,
+    "topic": "Beethoven’dan sonra: etkilenme endişesi, alımlanma tarihi, müzik ve politika",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 7,
+    "topic": "Romantik nesil 1: Dışavurum ve programmatisizm",
+    "outcomes": "1-2-6"
+   },
+   {
+    "week": 8,
+    "topic": "Romantik nesil 2",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Ulusalcılık",
+    "outcomes": "1-3-6"
+   },
+   {
+    "week": 10,
+    "topic": "Strauss ve Mahleer; Dışavurumculuk",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Yeni akımlar ve yüzyıl sonu",
+    "outcomes": "1-2-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Erken 20. yy. avant-garde’ı",
+    "outcomes": "1-2-3-6"
+   },
+   {
+    "week": 13,
+    "topic": "Orta/geç 20 yy. modernizmi",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Orta/geç 20 yy. modernizmi (devam)",
+    "outcomes": "1-2-3-6"
+   }
+  ],
   "textbooks": [
    "Barbara Russano Hanning. 2002. Concise History of Western Music, 2nd edn..W. W. Norton.",
    "J. Peter Burkholder and Claude V. Palisca, eds. 2006. Norton Anthology of Western Music, 6th edn. W. W. Norton.",
@@ -320,12 +822,12 @@
    "Piero Weiss and Richard Taruskin, eds. 1984. Music in the Western World: A History in Documents. Schirmer.",
    "Oxford Music Online (internet resource)."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=505",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=505"
  },
  "MYE 5096E": {
   "code": "MYE 5096E",
   "name": "Scien.Rese., Ethic&Seminar",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -369,6 +871,77 @@
    "Hafta 13 · Dönem ödevi sunumu-6",
    "Hafta 14 · Dönem ödevi sunumu-7"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
@@ -381,12 +954,12 @@
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5096",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=5096"
  },
  "MYE 511E": {
   "code": "MYE 511E",
   "name": "Field Work",
+  "nameEn": "Field Work",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -400,12 +973,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=511"
  },
  "MYE 521E": {
   "code": "MYE 521E",
   "name": "Music and Gender",
+  "nameEn": "Music and Gender",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -419,12 +992,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=521",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=521"
  },
  "MYE 522E": {
   "code": "MYE 522E",
   "name": "Compos.-Individual Instr. 2",
+  "nameEn": "Compos.-Individual Instr. 2",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -438,12 +1011,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=522",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=522"
  },
  "MYE 527E": {
   "code": "MYE 527E",
   "name": "Independent Study 1",
+  "nameEn": "Independent Study 1",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -457,12 +1030,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=527",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=527"
  },
  "MYE 530E": {
   "code": "MYE 530E",
   "name": "Repertoire&Style Studies",
+  "nameEn": "Repertoire&Style Studies",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -476,12 +1049,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=530",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=530"
  },
  "MYE 542E": {
   "code": "MYE 542E",
   "name": "Production Analysis",
+  "nameEn": "Production Analysis",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -495,12 +1068,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=542",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=542"
  },
  "MYE 544E": {
   "code": "MYE 544E",
   "name": "Independent Study 2",
+  "nameEn": "Independent Study 2",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -514,12 +1087,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=544",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=544"
  },
  "MYE 575E": {
   "code": "MYE 575E",
   "name": "Advanced Mixing&Remixing",
+  "nameEn": "Advanced Mixing&Remixing",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -533,12 +1106,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=575",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=575"
  },
  "MYE 581E": {
   "code": "MYE 581E",
   "name": "Location Recording",
+  "nameEn": "Location Recording",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -552,12 +1125,12 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=581",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=581"
  },
  "MYE 594E": {
   "code": "MYE 594E",
   "name": "Contemporary Music.Practices",
+  "nameEn": "Contemporary Music.Practices",
   "language": "English",
   "credits": {
    "theory": 3,
@@ -571,7 +1144,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=594",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MYE&dersNo=594"
  }
 }

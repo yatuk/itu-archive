@@ -2,6 +2,7 @@
  "IPY 511": {
   "code": "IPY 511",
   "name": "İnşaat Pro.Yönet.Enfor.Tekno.",
+  "nameEn": "Information Technologies in Construction Project Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -33,6 +34,78 @@
    "Hafta 13 · İnşaat Yönetiminde Entegrasyon (Bütünleşme)",
    "Hafta 14 · İnşaat Yönetiminde Veri ve Bilgi Güvenliği"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş; Veri, Enformasyon ve Bilgi kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayar, Ağ Teknolojileri – Donanım ve Yazılım, İnternet ve WWW Teknolojisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İnşaat Yönetiminde Enformasyon Teknolojisi Uygulamalarının Sınıflandırılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "İnşaat Yönetiminde Enformasyon Teknolojisi Uygulamalarına Genel Bakış",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İnşaat Yönetiminde Enformasyon Yönetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "İnşaat Ortamında Bilgi Yönetimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yapı Enformasyonu Modellemesi (BIM) Uygulamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgisayar Destekli Maliyet Tahmini Uygulamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Bilgisayar Destekli Planlama, Programlama Uygulamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Bilgisayar Destekli Bina (tesis) Yönetimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "İnşaat Yönetiminde E-İş Uygulamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Web-tabanlı Proje Yönetim Sistemleri, İnşaat Yönetiminde Proje Portalleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "İnşaat Yönetiminde Entegrasyon (Bütünleşme)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "İnşaat Yönetiminde Veri ve Bilgi Güvenliği",
+    "outcomes": "1-4"
+   }
+  ],
   "textbooks": [
    "Sun, M. and Howard, R., 2005: Understanding it in Construction. Spon Pres, London.",
    "Anumba, C., Egbu, C. and Carrillo, P., 2005: Knowledge Management in Construction. Blackwell Publishing.",
@@ -40,12 +113,12 @@
    "Love, P., Fong P.S.W. and Irani Z., 2005: Management of Knowledge in Project Environments. Elsevier Butterworth-Heinemann.",
    "Williams, T., 2006: Information Technologies for Construction Managers, Architects and Engineers. Thomson Delmar Learning."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=511",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=511"
  },
  "IPY 523": {
   "code": "IPY 523",
   "name": "İnşaat Sözleşme İdaresi",
+  "nameEn": "Construction Contract Administration",
   "language": "Türkçe",
   "credits": {
    "theory": 3,
@@ -80,17 +153,89 @@
    "Hafta 13 · Geçici kabul işlemleri ve görevleri, Kesin kabul işlemleri ve görevleri",
    "Hafta 14 · Bir İnşaat Sözleşme İdaresi Kılavuzu Hazırlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnşaat sözleşme idaresine giriş.",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 2,
+    "topic": "Yapım öncesi hazırlık çalışmaları",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 3,
+    "topic": "Yapım sürecine ilişkin dokümanların arşivlenmesi",
+    "outcomes": "1-7"
+   },
+   {
+    "week": 4,
+    "topic": "Toplantıların organizasyonu ve yürütülmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yüklenici sunuşlarının incelenmesi ve onayı",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Şantiye ziyaretleri, gözlem ve denetim görevleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Kalite güvencesi ve kalite kontrol",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Sözleşme dokümanlarının yorumlanması, açıklanması ve sözleşme değişikliklerinin idaresi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Hak taleplerinin incelenmesi ve anlaşmazlıkların çözümlenmesi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Ara hakedişlerin incelenmesi ve onaylanması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kesin hakedişlerin incelenmesi ve onaylanması",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Proje kapanış İşlemleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Geçici kabul işlemleri ve görevleri, Kesin kabul işlemleri ve görevleri",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Bir İnşaat Sözleşme İdaresi Kılavuzu Hazırlanması",
+    "outcomes": "1-7"
+   }
+  ],
   "textbooks": [
    "Liebing, R. W.,",
    "Civitello, A. M.,",
    "Eggleston, B"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=523",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=523"
  },
  "IPY 529": {
   "code": "IPY 529",
   "name": "İnşaat Firmalar.Finan.Yönet.",
+  "nameEn": "Financial Manag.in Const.Firm.",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -128,6 +273,78 @@
    "Hafta 13 · Büyük ölçekli inşaat firmalarında proje finansman teknikleri",
    "Hafta 14 · Değerleme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Finansal yönetim ve başlıca finansal raporlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Finansal raporların analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Nakit akışları ve finansal planlama",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Paranın zaman değeri",
+    "outcomes": "6"
+   },
+   {
+    "week": 5,
+    "topic": "Faiz oranları ve tahvil fiyatlama",
+    "outcomes": "1-9-10"
+   },
+   {
+    "week": 6,
+    "topic": "Finansal analiz",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Faiz oranları ve değerlemede seçilmiş konular",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Risk-getiri ilişkisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Hisse fiyatlama",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Sermaye maliyeti",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Sermaye bütçeleme",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Çalışma sermayesi yönetimi, kısa vadeli finansman türleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Büyük ölçekli inşaat firmalarında proje finansman teknikleri",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Değerleme",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Peterson S.J",
    "March C.,",
@@ -135,12 +352,12 @@
    "Halpin D.W., Senior B.A.,",
    "Kenley R.,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=529",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=529"
  },
  "IPY 534": {
   "code": "IPY 534",
   "name": "İnşaat proje.Yön.Özel Konular",
+  "nameEn": "Special Topics in Construction Project Management",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -159,12 +376,12 @@
   "textbooks": [
    "A.Sawhney, M.Riley, J.Irizarry"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=534",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=534"
  },
  "IPY 599": {
   "code": "IPY 599",
   "name": "Proje",
+  "nameEn": "Project",
   "language": "Türkçe",
   "credits": {
    "theory": 0,
@@ -178,7 +395,6 @@
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=599",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=599"
  }
 }

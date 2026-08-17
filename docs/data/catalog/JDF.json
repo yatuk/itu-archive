@@ -2,6 +2,7 @@
  "JDF 112": {
   "code": "JDF 112",
   "name": "Ölçme Bilgisi I",
+  "nameEn": "Surveying I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -33,15 +34,87 @@
    "Hafta 13 · Takeometrik kot hesabı.",
    "Hafta 14 · Ara ve yan nokta koordinat hesabı, koordinatlarla alan hesabı."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, genel tanımlar, yeryüzünün şekli, ölçü birimleri, ölçü birimlerinin dönüşümleri, ölçekler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Nokta tanımı ve türleri, nokta tesisi, işaretleme ve röperleme.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Uzunluk ölçmeleri, aletler, araçlar ve yöntemler, şenaj, uzunluk ölçmelerinde hatalar.",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Açı ölçmeleri, aletler, araçlar ve yöntemler, açı ölçmelerinde hatalar.",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçmelerde hata kaynakları, hata türleri, doğruluk ölçütleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "1., 2., 3. ve 4. Temel ödevler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Poligonasyon, tanımı, türleri, arazide ölçmeler.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Açık, kapalı ve bağlı poligonda koordinat hesapları.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Nivelman, tanımı, nivelman aletleri ve kullanılması, geometrik nivelman.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Arazi uygulaması.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Trigonometrik nivelman, takeometri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Açık, kapalı ve bağlı poligonda nivelman hesapları.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Takeometrik kot hesabı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Ara ve yan nokta koordinat hesabı, koordinatlarla alan hesabı.",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Ölçme Bilgisi I (Topoğrafya) Ders Notları."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=112",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=112"
  },
  "JDF 122E": {
   "code": "JDF 122E",
   "name": "Elektronik Uzunluk & Açı Ölçm",
+  "nameEn": "Electronic Distance and Angle Measurements",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -75,17 +148,89 @@
    "Hafta 13 · Konum belirleme yöntemlerine genel bakış,2.kısa sınav",
    "Hafta 14 · 2.Ödevin değerlendirilmesi,düzeltme ve tamamlama için ek süre"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş,Dersin egitsel hedefleri,çıktıları,başarı değerlendirme kriterleri,yararlanılacak kaynaklar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektromagnetik dalgalar:tanım,yayılma özellikleri,hızları ve yörünge eğrilikleri,hız ve eğrilik hesapları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Elekromagnetik dalgalarla uzunlukların ölçülmesi yöntemleri;impuls,faz farkı,dopler,enterferans yöntemleri ile uzunluk ölçmelerinin fiziksel ve geometrik esasları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Elektronik uzaklık ölçerler:ölçme ve çalışma ilkeleri,Farklı uzaklık ölçerlerle uzunluk ölçme uygulaması:laboratuarda",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Uzunluk ölçmeleri uygulaması :arazıde",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Ölçülen uzunlukların düzeltilmesi ve indirgenmesi:sınıfta uygulama;1.kısa sınav",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Ölçülen uzunluklarda hatalar ve hata hesabı",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Elektronik olarak açı ölçmeleri:elektronik takeometreler,kayıt üniteleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Elektronik takeometrelerin kullanılması:takeometrik alım uygulaması:arazıde,1.Ödevin verilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Uzaklık ölçerlerin kontrol ve kalibrasyonu:BÖHHBÜY ye gore kalibrasyon gerekliliği,farklı yöntemler,değerlendirmede kullanılan matematik modeller,ölçülerin dengelenmesi ve analizi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kontrol ve kalibrasyon uygulama örnekleri:2.Ödevin verilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Arazide control ve kalibrasyon ölçmeleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Konum belirleme yöntemlerine genel bakış,2.kısa sınav",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "2.Ödevin değerlendirilmesi,düzeltme ve tamamlama için ek süre",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "Elektromagnetik Dalgalarla Jeodezik Ölçmeler (Elektrometri), Prof.Dr.Gündoğdu Özgen,Yar.Doç.Dr.Rasim Deniz , İTÜ Matbaası, 1986,",
    "Electronic Distance Measurements, J.M.Rüeger, Springer Verlag, 1986,",
    "Elektronische Entfernungs-und Richtungsmessung,, Rainer Jöckel,Manfred Strober, Verlag Konrad Wittwer, 1995,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=122",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=122"
  },
  "JDF 211": {
   "code": "JDF 211",
   "name": "Ölçme Bilgisi II",
+  "nameEn": "Surveying II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -121,15 +266,87 @@
    "Hafta 13 · Poligonasyonda hata teorisi",
    "Hafta 14 · Poligonasyonda kaba hatalar, kaba hataların tesbiti"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ölçme, ölçme türleri, senaj, azimut, açıklık açısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektro-optik uzunluk ölçmeleri ve ölçmelerin indirgenmesi, EDM deki hatalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Poligonasyon, poligonasyonda özel problemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Düşey datum, yükseklik sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Düşey kontrol ağları, dizayn & ölçmeler",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Nivelman, ilişkili tanımlar, geometrik nivelman",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Nivolar, nivo türleri, nivolardaki hatalar, lazer ve dijital nivolar",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Presizyonlu nivelman, trigonometrik nivelman ve farklı metotlarda uygulamalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Takeometri ve elektronik takeometri",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Enkesit ve boykesit ölçmeleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Yüzey nivelmanı, alan ve hacim hesapları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Hatalar & geometrik nivelmanda hata teorisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Poligonasyonda hata teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Poligonasyonda kaba hatalar, kaba hataların tesbiti",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=211"
  },
  "JDF 211E": {
   "code": "JDF 211E",
   "name": "Ölçme Bilgisi II",
+  "nameEn": "Surveying II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -165,15 +382,87 @@
    "Hafta 13 · Poligonasyonda hata teorisi",
    "Hafta 14 · Poligonasyonda kaba hatalar, kaba hataların tesbiti"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ölçme, ölçme türleri, senaj, azimut, açıklık açısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektro-optik uzunluk ölçmeleri ve ölçmelerin indirgenmesi, EDM deki hatalar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Poligonasyon, poligonasyonda özel problemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 4,
+    "topic": "Düşey datum, yükseklik sistemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Düşey kontrol ağları, dizayn & ölçmeler",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Nivelman, ilişkili tanımlar, geometrik nivelman",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Nivolar, nivo türleri, nivolardaki hatalar, lazer ve dijital nivolar",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Presizyonlu nivelman, trigonometrik nivelman ve farklı metotlarda uygulamalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Takeometri ve elektronik takeometri",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Enkesit ve boykesit ölçmeleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Yüzey nivelmanı, alan ve hacim hesapları",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Hatalar & geometrik nivelmanda hata teorisi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Poligonasyonda hata teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Poligonasyonda kaba hatalar, kaba hataların tesbiti",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=211",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=211"
  },
  "JDF 216": {
   "code": "JDF 216",
   "name": "Ölçme Tekniğinde Özel Konular",
+  "nameEn": "Special Topics in Surveying Techniques",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -205,15 +494,87 @@
    "Hafta 13 · Bir yapının belirli bir doğrultusunun, belirli bir yöne yöneltilmesi (Kıble tayini vb.) ve Genel Yön Tayini Yöntemleri.",
    "Hafta 14 · Liman ve sığ sularda yapılan özel hidrografik ölçme ve aplikasyonlar."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geomatik Mühendisliğinin Uygulama alanlarına genel bir bakış, Geomatik Mühendisliğinde kullanılan doğruluk ölçütleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrultu, Kenar ve Yükseklik Farkı/Yükseklik Ölçmelerine genel bir bakış, Projelerin zemine geçirilmesi (Yatay ve Düşey Aplikasyon).",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Bina ve Köprü, Viyadük vb. büyük Mühendislik Yapılarının Aplikasyonu, Tünel İnşaatlarındaki Jeodezik Ölçmeler ve Tünel Aplikasyonları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Karayolu/Demiryolu gibi boyuna mühendislik yapılarının aplikasyonu, Şev Aplikasyonu (Şev Kazıklarının Çakımı) Sayısal Örnekler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Boru hatlarının (Su, Gaz, Petrol vb.) Aplikasyonu, Enerji Nakil Hatlarının/Yüksek Gerilim Hatlarının Aplikasyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Bina vb mühendislik yapılarında ve içlerinde yükseklik ölçmeleri, Bina Döşeme Kalıplarının Yükseklik Aplikasyonu ve Kontrolü, Sayısal Örnekler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Vinç Montajındaki Jeodezik Ölçme ve Aplikasyonlar, Yatay Platform Aplikasyonu ve Kontrolü, Düşey Doğrultuların Aplikasyonu ve Kontrolü, Yüksek Kulelerin ve Endüstri Bacalarının Kontrol ve Aplikasyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Ödev",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Mühendislik yapılarının aplikasyon ve kontrol ölçmelerinde beklenen (talep edilen) genel doğruluklar, Aplikasyon sonucu ulaşılabilecek doğrulukların hesabı, Sayısal Örnekler.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 10,
+    "topic": "Harita Projelerinin Planlanması ve Yönetimi, Yöneylem Araştırma Tekniklerinin Harita Projelerinde kullanılması Büyük Ölçekli Harita ve Harita Bilgileri Üretim Yönetmeliği ışığında Harita Yapım İlkeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Yıl içi Sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Jeodezik Ölçmelerle Sayısal Obje Modeli-DOM oluşturarak çelik kazanları vb cisimlerdeki şekil değişimlerinin belirlenmesi ve yorumlanması, mühendislik yapılarındaki hareketlerin, eğim ölçme cihazlarıy",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Bir yapının belirli bir doğrultusunun, belirli bir yöne yöneltilmesi (Kıble tayini vb.) ve Genel Yön Tayini Yöntemleri.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Liman ve sığ sularda yapılan özel hidrografik ölçme ve aplikasyonlar.",
+    "outcomes": "2"
+   }
+  ],
   "textbooks": [
    "Ölçme Tekniğinde Özel Konular Dersi Ders Notları, Reha M. Alkan, İstanbul Teknik Üniversitesi, 2005,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=216",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=216"
  },
  "JDF 231": {
   "code": "JDF 231",
   "name": "Davranış Bilimlerine Giriş",
+  "nameEn": "Introduction to Behavior Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -247,16 +608,88 @@
    "Hafta 13 · Davranışların toplum yaşantısında etkileri",
    "Hafta 14 · Genel özet"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Davranış bilimlerinin özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İnsan ilişkileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "İnsan ve davranışları",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Gruplar ve grup normları",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "İnsan davranışlarında kurallar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "İnsan ilişkilerinde güven",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Motivasyon",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "İletişim",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "İletişim ve etkileri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Zor insan ilşkileri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Takım çalışması ve mantığı",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Davranışlardaki çelişkiler",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Davranışların toplum yaşantısında etkileri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Genel özet",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
    "Bilginin Toplumsal Tarihi, Burke, P, Türk Tarih Vakfı Yayınları, 2008,",
    "Davranış Bilimlerine Giriş, Prof. Dr. Enver ÖZKALP vd., Eskişehir Anadolu Üniversitesi, 2008,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=231",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=231"
  },
  "JDF 232": {
   "code": "JDF 232",
   "name": "Hata Teorisi & Parametre Tahm",
+  "nameEn": "Theory of Errorrs&Paramt Estim",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -292,15 +725,87 @@
    "Hafta 13 · Normal denklemler ile uygulamalar, hata hesabı",
    "Hafta 14 · Dengelemede Gauss-Helmert Model, genel tekrar, uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Dersin hedefleri, başarı kriterleri ile ilgili bilgilendirme. Olasılık değişkeni, dağılımlar, yoğunluk fonksiyonu, histogram.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dağılım fonksiyonu, rastlantı değişkeni olarak Jeodezik Ölçü, Moment, Merkezsel Moment, beklenti değeri, varyans, varyans-kovaryans matris, korelasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ölçmenin rastlantısallığı, tek ve çok değişkenli normal dağılımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Varyans-Kovaryans yayılma yasası, Tienstra kuralı ve uygulamalar, I. Kısa Sınav",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Doğruluk ölçütleri, ağırlık kavramı, ağırlık yayılma yasası",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Karesel Ortalama Hata, Ağırlık Yayılma yasası ve uygulamalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Parametre Tahmini, En Küçük Kareler Yöntemi",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Dengeleme, Gauss-Markof Modeli, II. Kısa Sınav",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Dengeleme, Gauss-Markof Modeli (çok parametreli). Düzeltme denklemleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Düzeltme denklemlerinin lineerleştirilmesi, düzeltme denklemleri ve uygulamalar",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Normal denklem çözümleri, Yıliçi Sınavı",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Bilinmeyen parametrelerin hata hesabı, ilgili bağıntıların çıkartılması",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Normal denklemler ile uygulamalar, hata hesabı",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Dengelemede Gauss-Helmert Model, genel tekrar, uygulama",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Adjustment Computations: Spatial Data Analysis, 4th Edition, GHILANI, C.D. and WOLF, P.R., John Wiley&Sons, New Jersey, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=232"
  },
  "JDF 232E": {
   "code": "JDF 232E",
   "name": "Hata Teorisi & Parametre Tahm",
+  "nameEn": "Theory of Errorrs&Paramt Estim",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -336,15 +841,87 @@
    "Hafta 13 · Normal denklemler ile uygulamalar, hata hesabı",
    "Hafta 14 · Dengelemede Gauss-Helmert Model, genel tekrar, uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Dersin hedefleri, başarı kriterleri ile ilgili bilgilendirme. Olasılık değişkeni, dağılımlar, yoğunluk fonksiyonu, histogram.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dağılım fonksiyonu, rastlantı değişkeni olarak Jeodezik Ölçü, Moment, Merkezsel Moment, beklenti değeri, varyans, varyans-kovaryans matris, korelasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ölçmenin rastlantısallığı, tek ve çok değişkenli normal dağılımlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Varyans-Kovaryans yayılma yasası, Tienstra kuralı ve uygulamalar, I. Kısa Sınav",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Doğruluk ölçütleri, ağırlık kavramı, ağırlık yayılma yasası",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Karesel Ortalama Hata, Ağırlık Yayılma yasası ve uygulamalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 7,
+    "topic": "Parametre Tahmini, En Küçük Kareler Yöntemi",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Dengeleme, Gauss-Markof Modeli, II. Kısa Sınav",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Dengeleme, Gauss-Markof Modeli (çok parametreli). Düzeltme denklemleri",
+    "outcomes": "8"
+   },
+   {
+    "week": 10,
+    "topic": "Düzeltme denklemlerinin lineerleştirilmesi, düzeltme denklemleri ve uygulamalar",
+    "outcomes": "8"
+   },
+   {
+    "week": 11,
+    "topic": "Normal denklem çözümleri, Yıliçi Sınavı",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Bilinmeyen parametrelerin hata hesabı, ilgili bağıntıların çıkartılması",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Normal denklemler ile uygulamalar, hata hesabı",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Dengelemede Gauss-Helmert Model, genel tekrar, uygulama",
+    "outcomes": "8"
+   }
+  ],
   "textbooks": [
    "Adjustment Computations: Spatial Data Analysis, 4th Edition, GHILANI, C.D. and WOLF, P.R., John Wiley&Sons, New Jersey, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=232",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=232"
  },
  "JDF 241": {
   "code": "JDF 241",
   "name": "Davranış Bilimlerine Giriş",
+  "nameEn": "Introduction to Behavioural Sciences",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -377,15 +954,87 @@
    "Hafta 13 · Yıliçi Projesi",
    "Hafta 14 · Yıliçi Projesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma, ders programı ve içeriğinin tanıtılması",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Sosyolojiye Giriş ve yöntem",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sosyolojinin ortaya çıkışı ve kuramsal yaklaşımlar / Sosyoloji ve öteki insan bilimleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "20.yy Sosyolojisinde gelişmeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Toplum ve toplumsal yapı /Toplumsallaşma- Toplumsal Gruplar/Toplumsal Değişim",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Toplumsal Tabakalaşma ve Değişme",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Aile Kurumu - Kültür",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kişilik / Güdüler duygular",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Duyum ve Algı-Tutumlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Psikoloji",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "İletişim ve karşılıklı etkileşim",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Yıliçi Projesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yıliçi Projesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yıliçi Projesi",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Prof. Dr. Enver Özkalp, Prof. Dr. Hüsnü Arıcı, Prof. Dr. Rüveyde Bayraktar, Prof. Dr. Orhan Aydın, Doç. Dr. Buket Erkal, Doç. Dr. Ali Uzunöz. 2008. “Davranış Bilimlerine Giriş” T.C. Anadolu Üniversitesi Yayını No: 1355 , Açık Öğretim Fakültesi Yayın No: 720- ISBN 975-06-0095-9."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=241",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=241"
  },
  "JDF 241E": {
   "code": "JDF 241E",
   "name": "Davranış Bilimlerine Giriş",
+  "nameEn": "Introduction to Behavioural Sciences",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -418,15 +1067,87 @@
    "Hafta 13 · Yıliçi Projesi",
    "Hafta 14 · Yıliçi Projesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma, ders programı ve içeriğinin tanıtılması",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Sosyolojiye Giriş ve yöntem",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sosyolojinin ortaya çıkışı ve kuramsal yaklaşımlar / Sosyoloji ve öteki insan bilimleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "20.yy Sosyolojisinde gelişmeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Toplum ve toplumsal yapı /Toplumsallaşma- Toplumsal Gruplar/Toplumsal Değişim",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 6,
+    "topic": "Toplumsal Tabakalaşma ve Değişme",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Aile Kurumu - Kültür",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kişilik / Güdüler duygular",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Duyum ve Algı-Tutumlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Psikoloji",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "İletişim ve karşılıklı etkileşim",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Yıliçi Projesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Yıliçi Projesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yıliçi Projesi",
+    "outcomes": "3-4"
+   }
+  ],
   "textbooks": [
    "Prof. Dr. Enver Özkalp, Prof. Dr. Hüsnü Arıcı, Prof. Dr. Rüveyde Bayraktar, Prof. Dr. Orhan Aydın, Doç. Dr. Buket Erkal, Doç. Dr. Ali Uzunöz. 2008. “Davranış Bilimlerine Giriş” T.C. Anadolu Üniversitesi Yayını No: 1355 , Açık Öğretim Fakültesi Yayın No: 720- ISBN 975-06-0095-9."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=241",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=241"
  },
  "JDF 271": {
   "code": "JDF 271",
   "name": "Coğrafi Bilgi Bilimi",
+  "nameEn": "Geographic Information Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -457,15 +1178,87 @@
    "Hafta 13 · Dönem Ödevlerinin Sunumu (Seminer) ve sınıf içi tartışma I",
    "Hafta 14 · Dönem Ödevlerinin Sunumu (Seminer) ve sınıf içi tartışma II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, dersin kısa tanıtımı, kartografya ve harita, kavramlar, tanımlar, haritacılığın kısa tarihi ve Türkiye’de haritacılık hizmetleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Tematik kartografya, harita projeksiyonları, koordinat sistemleri, coğrafi koordinat sistemi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Jeodezi, fotogrametri, uzaktan algılama, uydularla veri toplama ve konum belirleme sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bilgi kavramı, bilgi çağı, bilgi teknolojisi ve coğrafi bilgi bilimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mekansal olmayan bilgi sistemleri, mekansal bilgi sistemleri, coğrafi bilgi sistemleri (CBS)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "CBS tasarımı, CBS fonksiyonları ve CBS’nin bileşenleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yıliçi Sınavı-1",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "CBS’de veri modelleri, veri kalitesi, veri üretim yöntemleri, veri yönetimi ve veri tabanları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "CBS’de bilgilerin sunumu, analizi ve sorgulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "CBS’de yazılım, donanım ve CBS organizasyonları ve standartları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "CBS uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Yıliçi Sınavı-2",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem Ödevlerinin Sunumu (Seminer) ve sınıf içi tartışma I",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Ödevlerinin Sunumu (Seminer) ve sınıf içi tartışma II",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Yomralıoğlu,T. (2000); Coğrafi Bilgi Sistemleri: Temel Kavramlar ve Uygulamalar, Seçil Ofset, İstanbul, ISBN 975-97369-0-X. Merkez Kütüphane: G70.212 .Y66 2000"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=271",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=271"
  },
  "JDF 271E": {
   "code": "JDF 271E",
   "name": "Coğrafi Bilgi Bilimi",
+  "nameEn": "Geographic Information Science",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -496,15 +1289,87 @@
    "Hafta 13 · Dönem Ödevlerinin Sunumu (Seminer) ve sınıf içi tartışma I",
    "Hafta 14 · Dönem Ödevlerinin Sunumu (Seminer) ve sınıf içi tartışma II"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, dersin kısa tanıtımı, kartografya ve harita, kavramlar, tanımlar, haritacılığın kısa tarihi ve Türkiye’de haritacılık hizmetleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Tematik kartografya, harita projeksiyonları, koordinat sistemleri, coğrafi koordinat sistemi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Jeodezi, fotogrametri, uzaktan algılama, uydularla veri toplama ve konum belirleme sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bilgi kavramı, bilgi çağı, bilgi teknolojisi ve coğrafi bilgi bilimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Mekansal olmayan bilgi sistemleri, mekansal bilgi sistemleri, coğrafi bilgi sistemleri (CBS)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "CBS tasarımı, CBS fonksiyonları ve CBS’nin bileşenleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yıliçi Sınavı-1",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "CBS’de veri modelleri, veri kalitesi, veri üretim yöntemleri, veri yönetimi ve veri tabanları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "CBS’de bilgilerin sunumu, analizi ve sorgulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "CBS’de yazılım, donanım ve CBS organizasyonları ve standartları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "CBS uygulamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Yıliçi Sınavı-2",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem Ödevlerinin Sunumu (Seminer) ve sınıf içi tartışma I",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Ödevlerinin Sunumu (Seminer) ve sınıf içi tartışma II",
+    "outcomes": "2-3"
+   }
+  ],
   "textbooks": [
    "Yomralıoğlu,T. (2000); Coğrafi Bilgi Sistemleri: Temel Kavramlar ve Uygulamalar, Seçil Ofset, İstanbul, ISBN 975-97369-0-X. Merkez Kütüphane: G70.212 .Y66 2000"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=271",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=271"
  },
  "JDF 311": {
   "code": "JDF 311",
   "name": "Mühendislikte Veri Tabanları",
+  "nameEn": "Databases in Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -535,17 +1400,89 @@
    "Hafta 13 · Veri tabanı tasarımı, ödev sunumları",
    "Hafta 14 · Veri Tabanının Tamamlanması ve İşletilmesi, Yeni Teknolojiler Yeni Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin Tanıtımı, Veri Tabanına Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Tabanında Temel Kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Varlık Bağıntı Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Veri Modelleri, Hiyerarşik Veri Modeli, Ağ Veri Modeli, Nesneye Yönelik Model",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İlişkisel Veri Tabanı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İlişkisel Cebir ,İlişkisel Hesap",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Uygulama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "SQL (Structured Query Language ) Yapısal Sorgulama Dili",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yıl içi Sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Nesneye Yönelik Veri Tabanları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Mekansal Veri Tabanları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Web uygulamalı veri tabanları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Veri tabanı tasarımı, ödev sunumları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Veri Tabanının Tamamlanması ve İşletilmesi, Yeni Teknolojiler Yeni Uygulamalar",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Veri Tabanı Sistemleri, Unal Yarımagan, Sistem Ofset, 2000, 9789756885055",
    "Database Principles and Design, Colin R, London, Cengage Learning, 2008,",
    "Bilgisayar Veri Tabanı Sistemleri, Oya Kalıpsız, İstanbul Universitesi Basımevi, 1996,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=311"
  },
  "JDF 311E": {
   "code": "JDF 311E",
   "name": "Mühendislikte Veri Tabanları",
+  "nameEn": "Databases in Engineering",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -576,17 +1513,89 @@
    "Hafta 13 · Veri tabanı tasarımı, ödev sunumları",
    "Hafta 14 · Veri Tabanının Tamamlanması ve İşletilmesi, Yeni Teknolojiler Yeni Uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin Tanıtımı, Veri Tabanına Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Tabanında Temel Kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Varlık Bağıntı Modeli",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Veri Modelleri, Hiyerarşik Veri Modeli, Ağ Veri Modeli, Nesneye Yönelik Model",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İlişkisel Veri Tabanı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "İlişkisel Cebir ,İlişkisel Hesap",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Uygulama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "SQL (Structured Query Language ) Yapısal Sorgulama Dili",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yıl içi Sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Nesneye Yönelik Veri Tabanları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Mekansal Veri Tabanları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Web uygulamalı veri tabanları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Veri tabanı tasarımı, ödev sunumları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Veri Tabanının Tamamlanması ve İşletilmesi, Yeni Teknolojiler Yeni Uygulamalar",
+    "outcomes": "1-2-3"
+   }
+  ],
   "textbooks": [
    "Veri Tabanı Sistemleri, Unal Yarımagan, Sistem Ofset, 2000, 9789756885055",
    "Database Principles and Design, Colin R, London, Cengage Learning, 2008,",
    "Bilgisayar Veri Tabanı Sistemleri, Oya Kalıpsız, İstanbul Universitesi Basımevi, 1996,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=311",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=311"
  },
  "JDF 313": {
   "code": "JDF 313",
   "name": "Jeodezik Astronomi",
+  "nameEn": "Geodetic Astronomy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -619,17 +1628,89 @@
    "Hafta 13 · Yıl içi sınavı",
    "Hafta 14 · Astronomik gözlemlerin jeodezide kullanılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş dersin eğitsel hedefleri,çıktıları,başarı değerlendirme kriterleri,astronominin tarihsel gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Küresel üçgen ve özellikleri,küresel trigonometri teoremleri ve küresel üçgen çözümleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Küresel üçgen çözümleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gök cisimlerinin hareket özellikleri,gök küresi modeli,temel tanımlar,",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gök koordinat sistemleri ufuk,saat açısı,rektesansiyon,ekliptik sistemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gök koordinat sistemleri arasındaki dönüşüm:astronomik üçgen,kısa sınav",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Zaman sistemleri yıldız ve Güneş zamanları,efemeris zamanı,atomic zamanlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Zaman dönüşümleri sınıfta almanaklar kullanılarak uygulama,Ödevin verilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Astronomik gözlemler,gözlem aletleri,zaman ölçmeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Astronomik azimut belirleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Astronomik enlem belirleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Astronomik boylam belirleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Astronomik gözlemlerin jeodezide kullanılması",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Jeodezik Astronomi ders notları, Prof.Dr.Rasim Deniz, , 2000,",
    "Spherical and Proctical Astronomy,Frederick Ungar Pub, Ivan I.Mueller, , 1977,",
    "Jeodezik Astronominin Temelleri Küresel Trigonometri, Prof.Dr.A.Aksoy, İTÜ Yayınları, 1977,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=313"
  },
  "JDF 313E": {
   "code": "JDF 313E",
   "name": "Jeodezik Astronomi",
+  "nameEn": "Geodetic Astronomy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -662,17 +1743,89 @@
    "Hafta 13 · Yıl içi sınavı",
    "Hafta 14 · Astronomik gözlemlerin jeodezide kullanılması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş dersin eğitsel hedefleri,çıktıları,başarı değerlendirme kriterleri,astronominin tarihsel gelişimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Küresel üçgen ve özellikleri,küresel trigonometri teoremleri ve küresel üçgen çözümleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Küresel üçgen çözümleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gök cisimlerinin hareket özellikleri,gök küresi modeli,temel tanımlar,",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Gök koordinat sistemleri ufuk,saat açısı,rektesansiyon,ekliptik sistemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gök koordinat sistemleri arasındaki dönüşüm:astronomik üçgen,kısa sınav",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Zaman sistemleri yıldız ve Güneş zamanları,efemeris zamanı,atomic zamanlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Zaman dönüşümleri sınıfta almanaklar kullanılarak uygulama,Ödevin verilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Astronomik gözlemler,gözlem aletleri,zaman ölçmeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Astronomik azimut belirleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Astronomik enlem belirleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Astronomik boylam belirleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Astronomik gözlemlerin jeodezide kullanılması",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Jeodezik Astronomi ders notları, Prof.Dr.Rasim Deniz, , 2000,",
    "Spherical and Proctical Astronomy,Frederick Ungar Pub, Ivan I.Mueller, , 1977,",
    "Jeodezik Astronominin Temelleri Küresel Trigonometri, Prof.Dr.A.Aksoy, İTÜ Yayınları, 1977,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=313",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=313"
  },
  "JDF 315E": {
   "code": "JDF 315E",
   "name": "Jeodezide Koordinat Sistemleri",
+  "nameEn": "Coordinate Systems in Geodesy",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -709,17 +1862,89 @@
    "Hafta 13 · 2. Yıliçi sınavı",
    "Hafta 14 · Üniversal ve Yıldız zamanı, Yörüngesel koordinat sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, temel kutuplar, eksenler ve düzlemlerin tanımı, Sağ el ve solel kartezyen koordinat sistemleri, rotasyonlar, refleksiyonlar ve transformasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yersel koordinat sistemleri, kutup hareketi ve dünyanın düzensiz dönüşü, Ortalama ve anlık yersel sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Jeodezik (elipsoidal) sistemler,Eğrisel ve dik koordinatlar arasındaki ilişkiler, sayısal uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Jeodezik Datum, Datum Parametreleri, Datum belirleme, Jeosentrik Jeodezik (Mutlak) Datum, Jeosentrik olmayan (Rölatif) Jeodezik Datum, Çekül sapması",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Yersel toposentrik sistemler, Lokal Astronomik Sistem ve lokal jeodezik (elipsoidal) sistem",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Sayısal uygulamalar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "1. Yıliçi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Küresel trigonometri, tanımlar ve temel teoremler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Küresel üçgen ve çözümleri, sayısal uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Gök Koordinat Sistemleri, gök küre ve temel daireler ve tanımlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Ufuk sistemi, Saat açısı sistemi, Rektasansiyon sistemi, Ekliptik sistemi, yıldızların görülebilirliği ve özel konumları, güneşin görünen günlük ve yıllık hareketi",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Gök koordinat sistemlerinde transformationlar ve düzeltmeler, astronomic üçgen çözümleri, sayısal uygulamalar",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "2. Yıliçi sınavı",
+    "outcomes": "5-6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Üniversal ve Yıldız zamanı, Yörüngesel koordinat sistemleri",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Coordinate Systems In Geodesy, E.J. Krakiwsky, D.E. Wells , The Universy of New Brunswick, 1971,",
    "Geodesy: The Concepts, P. Vanicek, E.J. Krakiwsky , Elsevier Sciences Publ. Amsterdam, 1986,",
    "Spherical And Practical Astronomy (as Applied to Geodesy), I.I. Mueller , Fredrick Ungar Publishing Co. New York, 1971,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=315",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=315"
  },
  "JDF 320": {
   "code": "JDF 320",
   "name": "Uzaktan Algılama II",
+  "nameEn": "Remote Sensing II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -752,17 +1977,89 @@
    "Hafta 13 · CBS sistemine genel bakış, raster, vektör data",
    "Hafta 14 · UA ve CBS Entegrasyonu, Proje örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş İçerik, uygulama alanları ile kısa örnekler, UA I ile ilgili kısa hatırlatmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fotoyorumlama Yorumlama Elemanları, Yorumlama Anahtarları, Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Görüntü işleme, Sınıflandırma algoritmaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Sınıflandırma sonrası düzleştirme Sınıflandırma doğruluğu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Değişim Saptama, yöntemler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ana Bileşen dönüşümü, örnekler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Çakıştırma, yöntemler, Görüntü Mozaiği, örnekler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Laboratuvar Uygulaması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Mikrodalga uzaktan algılama, Radar Sistem parametreleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Radar Hedef parametreleri / Radar uçak/uydu sistemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Laboratuvar Uygulaması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "CBS sistemine genel bakış, raster, vektör data",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "UA ve CBS Entegrasyonu, Proje örnekleri",
+    "outcomes": "5"
+   }
+  ],
   "textbooks": [
    "Remote Sensing and Image Interpretation, Lillesand, T.M , Kiefer, R.W.,, John Wiley Sons, USA, 1997,",
    "Remote Sensing of the Environ: An Earth Resource Perspective, Jensen, J. R., Prentice-Hall, Inc., Upper Saddle River, NJ, Second Edition, 2007,",
    "Manual of Remote Sensing, Volume 2, Floyd M. Henderson, Anthony J. Lewis, 3rd Edition, Wiley, 1998,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=320",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=320"
  },
  "JDF 321": {
   "code": "JDF 321",
   "name": "Uzaktan Algılama I",
+  "nameEn": "Remote Sensing I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -795,15 +2092,87 @@
    "Hafta 13 · Kontrollü sınıflandırma",
    "Hafta 14 · Uygulama Örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, İçerik, tanımlar, önemi, örnek uydu görüntüleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji kaynakları ve ışınım özellikleri, Enerjinin atmosferle etkileşimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerjinin yeryüzü ile etkileşimi (Bitki, toprak, su)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Isıl bölgede uzaktan algılama, Isıl görüntüler, cisimlerin ısıl özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Mikrodalga bölgesinde uzaktan algılama",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Digital görüntü (Ara sınav 1)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çözünürlük kavramı,Gerçek / İdeal uzaktan algılama sisteminin özellikleri,Çok bantlı algılama",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yer gözlem uyduları ve özellikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ön işleme, radyometrik ve atmosferik düzeltme",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Gürültü azaltma, geometrik dönüşüm",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Görüntü zenginleştirme, Kontrast zenginleştirme, filtreleme, oran ve fark görüntüleri (Ara sınav 2)",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Özellik çıkarma, sınıflandırma algoritmaları, kontrolsüz sınıflandırma",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kontrollü sınıflandırma",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama Örnekleri",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Remote Sensing and Image Interpretation. Fifth Edition, Lillesand, T.M., Kiefer, R. W., Chipman, J.W, Wiley & Sons, USA. , 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=321"
  },
  "JDF 321E": {
   "code": "JDF 321E",
   "name": "Uzaktan Algılama I",
+  "nameEn": "Remote Sensing I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -836,15 +2205,87 @@
    "Hafta 13 · Kontrollü sınıflandırma",
    "Hafta 14 · Uygulama Örnekleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, İçerik, tanımlar, önemi, örnek uydu görüntüleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Enerji kaynakları ve ışınım özellikleri, Enerjinin atmosferle etkileşimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Enerjinin yeryüzü ile etkileşimi (Bitki, toprak, su)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Isıl bölgede uzaktan algılama, Isıl görüntüler, cisimlerin ısıl özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Mikrodalga bölgesinde uzaktan algılama",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Digital görüntü (Ara sınav 1)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çözünürlük kavramı,Gerçek / İdeal uzaktan algılama sisteminin özellikleri,Çok bantlı algılama",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yer gözlem uyduları ve özellikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Ön işleme, radyometrik ve atmosferik düzeltme",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Gürültü azaltma, geometrik dönüşüm",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Görüntü zenginleştirme, Kontrast zenginleştirme, filtreleme, oran ve fark görüntüleri (Ara sınav 2)",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Özellik çıkarma, sınıflandırma algoritmaları, kontrolsüz sınıflandırma",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Kontrollü sınıflandırma",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama Örnekleri",
+    "outcomes": "3-4-5"
+   }
+  ],
   "textbooks": [
    "Remote Sensing and Image Interpretation. Fifth Edition, Lillesand, T.M., Kiefer, R. W., Chipman, J.W, Wiley & Sons, USA. , 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=321",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=321"
  },
  "JDF 322E": {
   "code": "JDF 322E",
   "name": "Jeodezik Ağ Tasarımı",
+  "nameEn": "Geodetic Network Design",
   "language": "English",
   "credits": {
    "theory": 2,
@@ -877,17 +2318,89 @@
    "Hafta 13 · Proje Raporlarının Teslimi ve Sunumları",
    "Hafta 14 · Genel Değerlendirme, Tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Genel Bilgilendirme, Jeodezinin Görevi, Kontrol Ağı Ölçmeleri, Datum",
+    "outcomes": "4"
+   },
+   {
+    "week": 2,
+    "topic": "Klasik Ağlar ve Tasarım, Çalışma Gruplarının Oluşturulması ve Dönem Proje ve Seminer Konularının Verilmesi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 3,
+    "topic": "Klasik Jeodezik Ağlar ve Tasarımı, Projeler üzerine Tartışma",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Klasik Jeodezik Ağlar ve Tasarımı, Projeler üzerine Tartışma",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Klasik Jeodezik Ağlar ve Tasarımı, Projeler üzerine Tartışma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Klasik Jeodezik Ağlar ve Tasarımı, Projeler üzerine Tartışma (Kısa Sınav)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "GPS, GPS Ağları ve Tasarımı, Projeler üzerine Tartışma",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "GPS Ağları ve Tasarımı, Projeler üzerine Tartışma",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "GPS Ağları ve Tasarımı, Projeler üzerine Tartışma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "GPS Ağları ve Tasarımı, Projeler üzerine Tartışma",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Örnek Projeler",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Proje Raporlarının Teslimi ve Sunumları",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Genel Değerlendirme, Tartışma",
+    "outcomes": "4-5"
+   }
+  ],
   "textbooks": [
    "Elementary Surveying: An Introduction to Geomatics, C D Ghilani, P R Wolf , Pearson Education Inc, 2008,",
    "GPS Satellite Surveying, A Leick, Jhon Wiley & Sons, Inc, New York, 2004,",
    "Geodesy, G Bomford, Third Edition, Oxford University Press A, 1952,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=322",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=322"
  },
  "JDF 330": {
   "code": "JDF 330",
   "name": "Çevre Kor. Uzaktan Alg.ve CBS",
+  "nameEn": "Environmental Protection Using Remote Sensing and GIS",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -922,15 +2435,87 @@
    "Hafta 13 · Projede her sınıf için alan hesabı, arazi kullanımın belirlenmesi,",
    "Hafta 14 · Projenin toplanması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uzaktan Algılamaya Giriş, Tarihçe, Uygulama alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Uzaktan Algılamanın Temel Bilgileri, Enerji kaynağı, Elektromanyetik Spektrum, Uzaktan Algılanmış Veri ve Yöntemlerin Kullanımı, Sayısal Görüntü İşleme,",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sayısal Görüntü Temelleri, Görüntü Geometrisi, Grilik Düzeyleri, histogramlar, İnsan Gözü,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ön İşleme, Görüntü Zenginleştirme Teknikleri, Geometrik ve Radyometrik",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Düşeye Çevirme, Sınıflandirmanın Matematik Modeli,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kısa Sınav-Laboratuar, UA yazılımı kullanma,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "UA yazılımı kullanarak, Ön İşleme, Görüntü Zenginleştirme Teknikleri, Geometrik ve radyoyometrik Çözünürlük, Kontrast Zenginleştirme, Lineer Kontrast Zenginleştirme, Filtreleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Kontrolsüz sınıflandırma",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Kontrollü ve kontrolsüz sınıflandırma, örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "VİZE",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Kontrollü ve kontrolsüz sınıflandırma, örneklerinin yapılması,",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Hata matrisi, Doğruluk Analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Projede her sınıf için alan hesabı, arazi kullanımın belirlenmesi,",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Projenin toplanması.",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Ders Notları, Doç.Dr.H.Gonca COŞKUN, , 2009,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=330",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=330"
  },
  "JDF 331": {
   "code": "JDF 331",
   "name": "Fotogrametri I",
+  "nameEn": "Photogrammetry I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -964,15 +2549,87 @@
    "Hafta 13 · Değerlendirme Aletleri",
    "Hafta 14 · Digital Değerlendirme Sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Fotogrametrinin Tanımı ve Tarihçesi, Uygulama Alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Stereoskopik Görüş ve Özellikleri, Matematik Ön Bilgiler, Üç Boyutlu Dönüşüm, Merkezi İzdüşüm",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Digital Görüntü İşlemeye Ait Ön Bilgiler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Fotogrametrik Resim Çekme Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Resim Koordinatlarının Düzeltilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Uçuş Planlaması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çift Resim Değerlendirmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Karşılıklı Yöneltme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Mutlak Yöneltme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Fotogrametrik Triangülasyon",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Demet Dengelemesi, Bağımsız modellerle dengeleme",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Değerlendirme Aletleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Digital Değerlendirme Sistemleri",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Fotogrametri Cilt 1, O. Altan, S. Külür, G. Toz, H. Demirel, Z. Duran, M. Çelikoy, Nobel Yayın Dağıtım, 2007, 9789944771764"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=331",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=331"
  },
  "JDF 331E": {
   "code": "JDF 331E",
   "name": "Fotogrametri I",
+  "nameEn": "Photogrammetry I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1006,15 +2663,87 @@
    "Hafta 13 · Değerlendirme Aletleri",
    "Hafta 14 · Digital Değerlendirme Sistemleri"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Fotogrametrinin Tanımı ve Tarihçesi, Uygulama Alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Stereoskopik Görüş ve Özellikleri, Matematik Ön Bilgiler, Üç Boyutlu Dönüşüm, Merkezi İzdüşüm",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Digital Görüntü İşlemeye Ait Ön Bilgiler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Fotogrametrik Resim Çekme Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Resim Koordinatlarının Düzeltilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Uçuş Planlaması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Çift Resim Değerlendirmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Karşılıklı Yöneltme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Mutlak Yöneltme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Fotogrametrik Triangülasyon",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Demet Dengelemesi, Bağımsız modellerle dengeleme",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Değerlendirme Aletleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Digital Değerlendirme Sistemleri",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Fotogrametri Cilt 1, O. Altan, S. Külür, G. Toz, H. Demirel, Z. Duran, M. Çelikoy, Nobel Yayın Dağıtım, 2007, 9789944771764"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=331",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=331"
  },
  "JDF 341": {
   "code": "JDF 341",
   "name": "Jeodezi I",
+  "nameEn": "Geodesy I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1049,17 +2778,89 @@
    "Hafta 13 · 2. Yıliçi sınavı, Sayısal uygulamalar",
    "Hafta 14 · Schreiber yöntemi, Gauss ortalama enlem yöntemi, Sayısal uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Jeodezinin tanımı, tarihçesi, jeodezideki temel tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Referans yüzeyleri, referans elipsoidinin özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Dönel elipsoid geometrisi, Sayısal uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Jeodezide koordinat sistemleri, Yersel koordinat sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yersel koordinat sistemleri, Sayısal uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Diferansiyel geometri, Jeodezik eğrilik, eğrilik yarıçapları, Sayısal uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Meridyen yayı, paralel daire yayı, elipsoid yüzünde alan hesabı, Sayısal uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "1. Yıliçi sınavı, Sayısal uygulamalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "UTM sisteminde pafta bölümlendirmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Küre yüzünde hesaplamalar, jeodezik küresel üçgen, Sayısal uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Jeodezik eğrilik, Jeodezik eğri, Sayısal uygulamalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Jeodezik I. Ve II. Temel ödevler : Legendre serileri, Sayısal uygulamalar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "2. Yıliçi sınavı, Sayısal uygulamalar",
+    "outcomes": "4-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Schreiber yöntemi, Gauss ortalama enlem yöntemi, Sayısal uygulamalar",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Jeodezi 1, A. Aksoy, İ.H. Güneş , İ.T.Ü. Yayınları , 1990,",
    "Jeodezi 2, A. Aksoy, İ.H. Güneş , İ.T.Ü. Yayınları , 1990,",
    "Geodesy: The Concepts, P. Vanicek, E.J. Krakiwsky , Elsevier Sciences Publ. , 1986,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=341",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=341"
  },
  "JDF 341E": {
   "code": "JDF 341E",
   "name": "Jeodezi I",
+  "nameEn": "Geodesy I",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1094,17 +2895,89 @@
    "Hafta 13 · 2. Yıliçi sınavı, Sayısal uygulamalar",
    "Hafta 14 · Schreiber yöntemi, Gauss ortalama enlem yöntemi, Sayısal uygulamalar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Jeodezinin tanımı, tarihçesi, jeodezideki temel tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Referans yüzeyleri, referans elipsoidinin özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Dönel elipsoid geometrisi, Sayısal uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Jeodezide koordinat sistemleri, Yersel koordinat sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yersel koordinat sistemleri, Sayısal uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Diferansiyel geometri, Jeodezik eğrilik, eğrilik yarıçapları, Sayısal uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Meridyen yayı, paralel daire yayı, elipsoid yüzünde alan hesabı, Sayısal uygulamalar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "1. Yıliçi sınavı, Sayısal uygulamalar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "UTM sisteminde pafta bölümlendirmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Küre yüzünde hesaplamalar, jeodezik küresel üçgen, Sayısal uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Jeodezik eğrilik, Jeodezik eğri, Sayısal uygulamalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Jeodezik I. Ve II. Temel ödevler : Legendre serileri, Sayısal uygulamalar",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "2. Yıliçi sınavı, Sayısal uygulamalar",
+    "outcomes": "4-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Schreiber yöntemi, Gauss ortalama enlem yöntemi, Sayısal uygulamalar",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Jeodezi 1, A. Aksoy, İ.H. Güneş , İ.T.Ü. Yayınları , 1990,",
    "Jeodezi 2, A. Aksoy, İ.H. Güneş , İ.T.Ü. Yayınları , 1990,",
    "Geodesy: The Concepts, P. Vanicek, E.J. Krakiwsky , Elsevier Sciences Publ. , 1986,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=341",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=341"
  },
  "JDF 342": {
   "code": "JDF 342",
   "name": "Jeodezi II",
+  "nameEn": "Geodesy II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1142,17 +3015,89 @@
    "Hafta 13 · 2. Yıliçi sınavı",
    "Hafta 14 · Lambert projeksiyonu, Bonne projeksiyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Bir yüzeyden diğer bir yüzeye projeksiyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bir yüzeyden diğer bir yüzeye projeksiyon (devam)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Projeksiyonda uzunluk, açı ve alan deformasyonları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Konform projeksiyon, izometrik parametreler, analitik fonksiyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Dönel elipsoid için izometrik parametreler, izometrik enlem",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Elipsoidin düzleme Gauss-Krüger konform projeksiyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlemin elipsoide Gauss-Krüger konform projeksiyonu,",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Gauss-Krüger konform projeksiyonu, Sayısal uygulamalar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "1. Yıliçi sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Elipsoid yüzünde Gauss-Krüger koordinatları ile I. Ve II. Temel ödevler, Sayısal uygulamalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Uzunluk, açı ve alan redüksiyonları, Düzlemde Gauss-Krüger koordinatları ile I. Ve II. Temel ödevler, Sayısal uygulamalar",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulamada Gauss-Krüger konform projeksiyonu, UTM sistemi",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "2. Yıliçi sınavı",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Lambert projeksiyonu, Bonne projeksiyonu",
+    "outcomes": "2-7"
+   }
+  ],
   "textbooks": [
    "Jeodezi II, A. Aksoy, İ.H. Güneş , İ.T.Ü. Yayınları , 1990,",
    "Geodesy: The Concepts, P. Vanicek, E.J. Krakiwsky , Elsevier Sciences Publ. , 1986,",
    "Matematiksel Geodezi, E. Ulsoy , Kutulmuş Matbaası Istanbul, 1977,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=342"
  },
  "JDF 342E": {
   "code": "JDF 342E",
   "name": "Jeodezi II",
+  "nameEn": "Geodesy II",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1190,17 +3135,89 @@
    "Hafta 13 · 2. Yıliçi sınavı",
    "Hafta 14 · Lambert projeksiyonu, Bonne projeksiyonu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Bir yüzeyden diğer bir yüzeye projeksiyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bir yüzeyden diğer bir yüzeye projeksiyon (devam)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Projeksiyonda uzunluk, açı ve alan deformasyonları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Konform projeksiyon, izometrik parametreler, analitik fonksiyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Dönel elipsoid için izometrik parametreler, izometrik enlem",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Elipsoidin düzleme Gauss-Krüger konform projeksiyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlemin elipsoide Gauss-Krüger konform projeksiyonu,",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Gauss-Krüger konform projeksiyonu, Sayısal uygulamalar",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "1. Yıliçi sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Elipsoid yüzünde Gauss-Krüger koordinatları ile I. Ve II. Temel ödevler, Sayısal uygulamalar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Uzunluk, açı ve alan redüksiyonları, Düzlemde Gauss-Krüger koordinatları ile I. Ve II. Temel ödevler, Sayısal uygulamalar",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Uygulamada Gauss-Krüger konform projeksiyonu, UTM sistemi",
+    "outcomes": "9"
+   },
+   {
+    "week": 13,
+    "topic": "2. Yıliçi sınavı",
+    "outcomes": "6-7-8-9"
+   },
+   {
+    "week": 14,
+    "topic": "Lambert projeksiyonu, Bonne projeksiyonu",
+    "outcomes": "2-7"
+   }
+  ],
   "textbooks": [
    "Jeodezi II, A. Aksoy, İ.H. Güneş , İ.T.Ü. Yayınları , 1990,",
    "Geodesy: The Concepts, P. Vanicek, E.J. Krakiwsky , Elsevier Sciences Publ. , 1986,",
    "Matematiksel Geodezi, E. Ulsoy , Kutulmuş Matbaası Istanbul, 1977,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=342",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=342"
  },
  "JDF 351": {
   "code": "JDF 351",
   "name": "Dengeleme Hesabı",
+  "nameEn": "Adjustment",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1237,15 +3254,87 @@
    "Hafta 13 · GNSS ağlarının dengelenmesi, Yıliçi Sınavı",
    "Hafta 14 · Genel tekrar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Temel bilgilerin tekrarı, gerekli temel tanımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Trigonometrik nivelman ağlarının dolaylı ölçüler dengelemesine göre dengelenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrultu gözlemeleri, fonksiyonel model, düzeltme denklemlerinin Schreiber yöntemi ile indirgenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yöneltme parametrelerin elemine edilmeleri, açı ölçmeleri, stokastik model, ek azimut ölçüsü, nirengi ağları dengelemesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Projeksiyon düzleminde dengeleme, nirengi ağlarında datum problemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Dolaylı ölçüler dengelemesi ile nirengi ağlarının dengelenmesi, uygulama",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Nokta dengelemesi, kestirme problemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Nirengi ağlarının dengelemesinde hata hesapları, nokta konum hatası",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Koordinat transformasyonu, Helmert transformasyonu,",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Helmert benzerlik transformasyonu ile ilgili uygulama",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Nivelman ağlarının dengelenmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Geometrik nivelman ağlarının dengelenmesi ile ilgili uygulama",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "GNSS ağlarının dengelenmesi, Yıliçi Sınavı",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Genel tekrar",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Adjustment Computations: Spatial Data Analysis, 4th Edition, GHILANI, C.D. and WOLF, P.R., John Wiley&Sons, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=351"
  },
  "JDF 351E": {
   "code": "JDF 351E",
   "name": "Dengeleme Hesabı",
+  "nameEn": "Adjustment",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1282,15 +3371,87 @@
    "Hafta 13 · GNSS ağlarının dengelenmesi, Yıliçi Sınavı",
    "Hafta 14 · Genel tekrar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Temel bilgilerin tekrarı, gerekli temel tanımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Trigonometrik nivelman ağlarının dolaylı ölçüler dengelemesine göre dengelenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrultu gözlemeleri, fonksiyonel model, düzeltme denklemlerinin Schreiber yöntemi ile indirgenmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Yöneltme parametrelerin elemine edilmeleri, açı ölçmeleri, stokastik model, ek azimut ölçüsü, nirengi ağları dengelemesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Projeksiyon düzleminde dengeleme, nirengi ağlarında datum problemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Dolaylı ölçüler dengelemesi ile nirengi ağlarının dengelenmesi, uygulama",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Nokta dengelemesi, kestirme problemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Nirengi ağlarının dengelemesinde hata hesapları, nokta konum hatası",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Koordinat transformasyonu, Helmert transformasyonu,",
+    "outcomes": "7"
+   },
+   {
+    "week": 10,
+    "topic": "Helmert benzerlik transformasyonu ile ilgili uygulama",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Nivelman ağlarının dengelenmesi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Geometrik nivelman ağlarının dengelenmesi ile ilgili uygulama",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "GNSS ağlarının dengelenmesi, Yıliçi Sınavı",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Genel tekrar",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Adjustment Computations: Spatial Data Analysis, 4th Edition, GHILANI, C.D. and WOLF, P.R., John Wiley&Sons, 2006,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=351",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=351"
  },
  "JDF 352": {
   "code": "JDF 352",
   "name": "Kamu Ölçmeleri",
+  "nameEn": "Surveying of Public Land",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1325,15 +3486,87 @@
    "Hafta 13 · Kamu kurum ve idareleri tarafından kamulaştırma dışında taşınmaz malların alım-satım ve kiralanması (II. Kısa Sınav)",
    "Hafta 14 · Türkiye dışında diğer bazı ülkelerde kamulaştırma işlemi ve ülkemizle karşılaştırması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Dersin amacının açıklanması, Bazı kamu hukuku kavramlarının açıklanması, Kamulaştırma kavramı ve Kamulaştırmanın çeşitli yasalara göre tanımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kamulaştırmaya yetkisi olan kurumlar, Kamulaştırma hukukunun gelişimi, Kamu mallarının tanımı ve özellikleri, Devletleştirme ve Kamulaştırma ilişkileri ve karşılaştırması",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Kamulaştırma şartları, Kamulaştırma Yöntemi, Kamulaştırma İşlemi - Hazırlık Aşaması",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Kamulaştırma İşlemi: Hazırlık Aşaması/Uygulama Aşaması (I. Kısa Sınav)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kamulaştırma İşlemi: Uygulama Aşaması",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kamulaştırmada Son Aşama",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Özel Kamulaştırma Konuları",
+    "outcomes": "6"
+   },
+   {
+    "week": 8,
+    "topic": "Özel Kamulaştırma Konuları (önceki haftadan devam)",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "Kamulaştırma Davaları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kamulaştırmadan Dönüş ve Geri Alma",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yıl içi Sınavı",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Kamulaştırmada diğer konular",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 13,
+    "topic": "Kamu kurum ve idareleri tarafından kamulaştırma dışında taşınmaz malların alım-satım ve kiralanması (II. Kısa Sınav)",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Türkiye dışında diğer bazı ülkelerde kamulaştırma işlemi ve ülkemizle karşılaştırması",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "Kamu Ölçmeleri Ders Notları, S. Denizhan Yalın, İTÜ İnşaat Fakültesi, 2007,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=352",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=352"
  },
  "JDF 361": {
   "code": "JDF 361",
   "name": "Kadastro Bilgisi",
+  "nameEn": "Cadastral Surveying",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1365,16 +3598,88 @@
    "Hafta 13 · Tapu-Fen İşleri, kadastro çalışmalarının güncelleştirilmesi.",
    "Hafta 14 · Çok Amaçlı Kadastro-Modern Kadastro kavramının tanımlanması"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kadastro kavramı hakkında genel bilgiler, giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "2613 sayılı Kadastro ve Tapu Tahriri Kanunu ve 766 sayılı Tapulama Kanunu çerçevesinde oluşturulan Kadastro Sistemi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "3045 sayılı Teşkilat Kanunu çerçevesinde Tapu ve Kadastro Genel Müdürlüğünün teşkilat yapısı, görev ve sorumluluğu",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "3402 sayılı Kadastro Kanunu ve Uygulama Yönetmelikleri çerçevesinde oluşturulan Kadastro Sistemi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kadastro çalışma alanının belirlenmesi ve bu alan içinde yapılması gereken işlemlerin tanımlanması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Kadastro bilirkişilerinin seçimi. Davalı taşınmazların belirlenmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Taşınmazların sınırlandırılması, tespit ve kontrol işleri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Mülkiyet hakkının tespitine ilişkin işlemler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Taşınmazların sınır noktalarının ölçülmesi ve ölçme krokilerinin düzenlenmesi (Yıl içi ödevinin tanımlanması ve ödevin verilmesi)",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kadastro komisyonunun görevlerinin tanımlanması.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Kadastro sonuçlarının kontrolü ve mülkiyetin tescil edilmesi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yıl İçi Sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tapu-Fen İşleri, kadastro çalışmalarının güncelleştirilmesi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Çok Amaçlı Kadastro-Modern Kadastro kavramının tanımlanması",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Kadastro Bilgisi Ders Notları (Lecture Notes), Denizhan Yalın, İstanbul Teknik Üniversitesi, 2004,",
    "Kadastro Bilgisi, Türkay Tüdeş, Karadeniz Teknik Üniversitesi, 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=361",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=361"
  },
  "JDF 382": {
   "code": "JDF 382",
   "name": "Arazi Çalışması III",
+  "nameEn": "Field Practice III",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1408,15 +3713,87 @@
    "Hafta 13 · Maliyet hesapları,karşılaştırma,Rapor Hazırlama, raporların ön incelenmesi,düzeltmelerin belirlenmesi ,Rol değişimi",
    "Hafta 14 · Çalışmanın oluşturulan komisyon önünde ekipteki her öğrenci tarafından sunumlar paylaşılarak sunulması ve başarı değerlendirmesi (Belirlenen sinav Jürisi )"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çalışmalara Başlama Hazırlıkları :Ders tanıtım formunun Öğrencilerle değerlendirilmesi, dersin eğitsel hedefleri ve çıktılarının, başarı değerlendirme kriterlerinin değerlendirilmesi,Ekip çalışması es",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Arazinin tanınması,Nokta seçimi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Seçim kamavasının kesinleştirilmesi,açı ölçmeleri,Rol değişimi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Açı ölçmeleri,açı ölçme çizelgelerinin tamamlanması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Uzaklık ölçerin kontrol ve kalibrasyonu,Kenar ölçmeleri,yüksekliklerin elde edilmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kenar ve yükseklik ölçmelerine devam,Rol değişimi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "GPS ölçmeleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "GPS ölçmeleri ve değerlendirmeler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Noksanların tamamlanması,Arazi sınavı (belirlenen Jüri, sözlü sınav),Rol değişimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Büro Çalışmalarına geçiş Yükseklik hesabı,Ağ dengelemesi, Proje raporunun özellikleri konusunda bilgilendirme",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Yükseklik hesabı, ağ dengelemesi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ağ dengelemesi,dönüşüm hesabı,Rol değişimi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Maliyet hesapları,karşılaştırma,Rapor Hazırlama, raporların ön incelenmesi,düzeltmelerin belirlenmesi ,Rol değişimi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Çalışmanın oluşturulan komisyon önünde ekipteki her öğrenci tarafından sunumlar paylaşılarak sunulması ve başarı değerlendirmesi (Belirlenen sinav Jürisi )",
+    "outcomes": "4-5-6"
+   }
+  ],
   "textbooks": [
    "Büyük Ölçekli Harita ve Harita Bilgileri Üretimi Yönetmeliği, , , 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=382",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=382"
  },
  "JDF 382E": {
   "code": "JDF 382E",
   "name": "Arazi Çalışması III",
+  "nameEn": "Field Practice III",
   "language": "Türkçe/English",
   "credits": {
    "theory": 1,
@@ -1450,15 +3827,87 @@
    "Hafta 13 · Maliyet hesapları,karşılaştırma,Rapor Hazırlama, raporların ön incelenmesi,düzeltmelerin belirlenmesi ,Rol değişimi",
    "Hafta 14 · Çalışmanın oluşturulan komisyon önünde ekipteki her öğrenci tarafından sunumlar paylaşılarak sunulması ve başarı değerlendirmesi (Belirlenen sinav Jürisi )"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çalışmalara Başlama Hazırlıkları :Ders tanıtım formunun Öğrencilerle değerlendirilmesi, dersin eğitsel hedefleri ve çıktılarının, başarı değerlendirme kriterlerinin değerlendirilmesi,Ekip çalışması es",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Arazinin tanınması,Nokta seçimi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Seçim kamavasının kesinleştirilmesi,açı ölçmeleri,Rol değişimi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Açı ölçmeleri,açı ölçme çizelgelerinin tamamlanması",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Uzaklık ölçerin kontrol ve kalibrasyonu,Kenar ölçmeleri,yüksekliklerin elde edilmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kenar ve yükseklik ölçmelerine devam,Rol değişimi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "GPS ölçmeleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "GPS ölçmeleri ve değerlendirmeler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Noksanların tamamlanması,Arazi sınavı (belirlenen Jüri, sözlü sınav),Rol değişimi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Büro Çalışmalarına geçiş Yükseklik hesabı,Ağ dengelemesi, Proje raporunun özellikleri konusunda bilgilendirme",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Yükseklik hesabı, ağ dengelemesi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Ağ dengelemesi,dönüşüm hesabı,Rol değişimi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Maliyet hesapları,karşılaştırma,Rapor Hazırlama, raporların ön incelenmesi,düzeltmelerin belirlenmesi ,Rol değişimi",
+    "outcomes": "1-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Çalışmanın oluşturulan komisyon önünde ekipteki her öğrenci tarafından sunumlar paylaşılarak sunulması ve başarı değerlendirmesi (Belirlenen sinav Jürisi )",
+    "outcomes": "4-5-6"
+   }
+  ],
   "textbooks": [
    "Büyük Ölçekli Harita ve Harita Bilgileri Üretimi Yönetmeliği, , , 2003,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=382",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=382"
  },
  "JDF 410E": {
   "code": "JDF 410E",
   "name": "Deformasyon Ölçmeleri",
+  "nameEn": "Deformation Measurements",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1494,16 +3943,88 @@
    "Hafta 13 · Deformasyon Analizi için bazı örnek uygulamalar, sunumlar",
    "Hafta 14 · Sunumlar"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Genel Bilgiler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Deformasyon Ölçmeleri için Bazı Standartlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Deformasyonların İzlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Deformasyonların İzlenmesinde uygulanacak adımlar ve bazı standartlar ve Referans Ağlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Yatay Kontrol Ölçme Teknikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Düşey Kontrol Ölçme Teknikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Klasik Ölçmelerin değerlendirilmesi ve Dengelenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Yapısal Deformasyonların İzlenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Yapısal Deformasyonların İzlenmesinde bazı örnek uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Yıl içi Sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Jeodezik olmayan Deformasyon İzleme Teknikleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Deformasyon Analizi",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Deformasyon Analizi için bazı örnek uygulamalar, sunumlar",
+    "outcomes": "7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Sunumlar",
+    "outcomes": "7-8"
+   }
+  ],
   "textbooks": [
    "Engineering and Design Structural Deformation Surveying, US Army Corps of Engineers, US Army Corps of Engineers Washington, 2002,",
    "Deformation Measurements Notebooks, Y. Kalkan, , 2008,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=410",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=410"
  },
  "JDF 411E": {
   "code": "JDF 411E",
   "name": "Coğrafi Bilgi Sistemleri",
+  "nameEn": "Geographic Information System",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1537,15 +4058,87 @@
    "Hafta 13 · Dönem Ödevlerinin Sunumu",
    "Hafta 14 · Dönem Ödevlerinin Sunumu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "CBS Nedir Ödevin Planlanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "CBS'nin Kartografya ile İlişkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sayılarla Harita",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Haritaların Bilgisayar Ortamına Aktarılması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Ne Nerede?",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Neden Burada?",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "CBS ile Harita Yapımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "CBS Kurulurken Dikkate Alınacaklar",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "CBS Uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "CBS'nin Geleceği",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem Ödevlerinin Sunumu",
+    "outcomes": "1-2-3-4-5-6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Ödevlerinin Sunumu",
+    "outcomes": "1-2-3-4-5-6-7"
+   }
+  ],
   "textbooks": [
    "Getting Started with Geographic Information Systems, Keith Clarke, Prentice Hall, 2001, 013-016829-7"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=411",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=411"
  },
  "JDF 417E": {
   "code": "JDF 417E",
   "name": "Şehircilik",
+  "nameEn": "City Planning",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1577,17 +4170,89 @@
    "Hafta 13 · Ödev sunuşu",
    "Hafta 14 · Ödev sunuşu"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Planlama Nedir? Planlama Sürecinin Aşamaları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "Yerleşimler Sistemi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Şehirlerde Fonksiyon Alanları ve Türleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Şehirlerde Fonksiyon Alanları ve Türleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Yoğunluk Kavramı ve Bölgeleme",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Türk Planlama Sistemi ve İşleyişi",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Plan Türü, Planlar Sıradüzeni ve Planlamada Yetki",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Ana plan türü planlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Özel Amaçlı Planlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "İmar Planlarının Uygulanması ve uygulama araçları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Ödev sunuşu",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Ödev sunuşu",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Ödev sunuşu",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
    "Türk Şehir Planlama ve İmar Mevzuatının Kentsel Dönüşüm ve D, Ünal, Y., Yetkin Kitabevi, 2008,",
    "Hukuki ve Teknik Boyutları İle Arazi ve Arsa Düzenlemesi, Türk, C; Türk, Ş.Ş., Beta, 2006,",
    "Şehircilik, Atalık, G., Çetiner,A., Göçer,O., Keskin,A., Özdeş,G. ve Suh, İTÜ Mimarlık Fakültesi Baskı Atölyesi,, 1985,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=417",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=417"
  },
  "JDF 419": {
   "code": "JDF 419",
   "name": "Yol Planlaması ve İnşaatı",
+  "nameEn": "Road Design and Construction",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1624,15 +4289,87 @@
    "Hafta 13 · Kentiçi yollar.Yıliçi sınavı",
    "Hafta 14 · Kavşak özellikleri ve tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Türkiye deki karayolu ağı ile ilgili genel bilgiler.Karayolu elemanları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Karayolu elemanları ile ilgili temel kavramlar ve tanımlar (temel üstyapı ve drenaj bilgileri ile)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İnsan taşıt ve özellikleri.Taşıt hareketleri (direnimler,çekim ve frenleme ilkeleri).",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kapasite ve hizmet düzeyi çözümlemeleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Proje trafiği hesaplaması.Yol geometrik standartlarının seçimi.Geçki araştırması",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Sıfır poligonu ve plan uygulamaları.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Boykesit.Düşey kurplar.",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Düşey kurplar.",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Düşey kurplar.Yıliçi sınavı",
+    "outcomes": "1-2-3-4-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Yatay kurplar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Yatay kurplar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Yatay kurplar.Enkesit ve duvarlar.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Kentiçi yollar.Yıliçi sınavı",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Kavşak özellikleri ve tasarımı",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Karayolları Mühendisliği, N.YAYLA, Birsen Yayınevi, 2008, 9755112871"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=419",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=419"
  },
  "JDF 419E": {
   "code": "JDF 419E",
   "name": "Yol Planlaması ve İnşaatı",
+  "nameEn": "Road Design and Construction",
   "language": "Türkçe/English",
   "credits": {
    "theory": 3,
@@ -1669,15 +4406,87 @@
    "Hafta 13 · Kentiçi yollar.Yıliçi sınavı",
    "Hafta 14 · Kavşak özellikleri ve tasarımı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Türkiye deki karayolu ağı ile ilgili genel bilgiler.Karayolu elemanları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Karayolu elemanları ile ilgili temel kavramlar ve tanımlar (temel üstyapı ve drenaj bilgileri ile)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İnsan taşıt ve özellikleri.Taşıt hareketleri (direnimler,çekim ve frenleme ilkeleri).",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kapasite ve hizmet düzeyi çözümlemeleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Proje trafiği hesaplaması.Yol geometrik standartlarının seçimi.Geçki araştırması",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Sıfır poligonu ve plan uygulamaları.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Boykesit.Düşey kurplar.",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Düşey kurplar.",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Düşey kurplar.Yıliçi sınavı",
+    "outcomes": "1-2-3-4-5-6-7"
+   },
+   {
+    "week": 10,
+    "topic": "Yatay kurplar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Yatay kurplar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Yatay kurplar.Enkesit ve duvarlar.",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Kentiçi yollar.Yıliçi sınavı",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Kavşak özellikleri ve tasarımı",
+    "outcomes": "9"
+   }
+  ],
   "textbooks": [
    "Karayolları Mühendisliği, N.YAYLA, Birsen Yayınevi, 2008, 9755112871"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=419",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=419"
  },
  "JDF 420": {
   "code": "JDF 420",
   "name": "Jeodezide Yorumlama Yöntemleri",
+  "nameEn": "Interpretation Methods in Geodesy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1709,16 +4518,88 @@
    "Hafta 13 · Serbest ağ dengelemesi",
    "Hafta 14 · Kaba Hata irdelemesi, uyuşumu testleri,"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, dersin amaçlarının ve başarı kriterlerinin açıklanması, Jeodezik Ölçülerin özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Jeodezik Ölçülerin özellikleri (devam)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Normal dağılım ve diğer istatiksel dağılımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Güven aralığı",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Güven aralığı (devamı) ve uygulama",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Rastlantı vektörü Güven aralığı, I. Kısa Sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Istatistik testler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Istatistik testler (devam)",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Istatistik testler ile ilgili uygulama",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Ki kare Normal dağılım testi, Uygulama, II. Kısa Sınav",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Dengeleme hesabı ile ilgili ek bilgiler ve hatırlatmalar, Kovaryans matrisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Serbest ağ dengelemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Kaba Hata irdelemesi, uyuşumu testleri,",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Geodaetische Netze in Landes - und Ingenieurvermessung, Hans Pelzer, Konrad Wittwer, 1980,",
    "Geodaetische Netze in Landes - und Ingenieurvermessung, Hans Pelzer, Konrad Wittwer, 1985,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=420",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=420"
  },
  "JDF 420E": {
   "code": "JDF 420E",
   "name": "Jeodezide Yorumlama Yöntemleri",
+  "nameEn": "Interpretation Methods in Geodesy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1750,16 +4631,88 @@
    "Hafta 13 · Serbest ağ dengelemesi",
    "Hafta 14 · Kaba Hata irdelemesi, uyuşumu testleri,"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, dersin amaçlarının ve başarı kriterlerinin açıklanması, Jeodezik Ölçülerin özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Jeodezik Ölçülerin özellikleri (devam)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Normal dağılım ve diğer istatiksel dağılımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Güven aralığı",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Güven aralığı (devamı) ve uygulama",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Rastlantı vektörü Güven aralığı, I. Kısa Sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Istatistik testler",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Istatistik testler (devam)",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Istatistik testler ile ilgili uygulama",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Ki kare Normal dağılım testi, Uygulama, II. Kısa Sınav",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Dengeleme hesabı ile ilgili ek bilgiler ve hatırlatmalar, Kovaryans matrisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Ara Sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Serbest ağ dengelemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Kaba Hata irdelemesi, uyuşumu testleri,",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "Geodaetische Netze in Landes - und Ingenieurvermessung, Hans Pelzer, Konrad Wittwer, 1980,",
    "Geodaetische Netze in Landes - und Ingenieurvermessung, Hans Pelzer, Konrad Wittwer, 1985,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=420",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=420"
  },
  "JDF 421": {
   "code": "JDF 421",
   "name": "Fiziksel Jeodezi",
+  "nameEn": "Physical Geodesy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1793,15 +4746,87 @@
    "Hafta 13 · Geoit belirleme yöntemlerinin değerlendirilmesi BÖHHBÜY ye gore GPS NIVgeoidinin oluşturulması",
    "Hafta 14 · BÖHHBÜY ye gore GPS NİV geoidinin modellenmesi,değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş Dersin eğitsel hedefleri,çıktıları,başarı değerlendirmr kriterleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yer yuvarına etkiyen kuvvetler:çekim kuvveti,merkezkaç kuvveti,Güneş ve Ayın çekim etkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çekim ivmesi,merkezkaç ivme,çekim potansiyeli,merkezkaç potansiyel,ağırlık ivmesi (gravite),ağırlık kuvveti potansiyeli",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Nivo (jeopotansiyel) yüzeyleri,çekim potansiyelinin harmonik açılımı,I.Kısa sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yer yuvarının normal gravite alanı,normal gravite,normal potansiyel.Gerçek ve normal gravite alanları arasındaki bağıntılar geoit yüksekliği,gravite anomalisi,bozucu potansiyel,Bruns eşitliğinin çıkar",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Jeodezik Referans Sistemleri GRS 80,",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Gravite ölçmeleri ve indirgemeleri,gravite anomalileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Çekül sapmaları astrojeodezik geoit belirleme.II.Kısa sınav",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Yükseklik Sistemleri.Jeopotansiyel kot,dinamik yükseklikler,ortometrik yükse",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Yükseklik Sistemleri ellipsoidal ve normal yükseklikler,yükseklik sistemleri arasındaki dönüşümler",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Geoit belirleme yöntemlerinin değerlendirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Geoit belirleme yöntemlerinin değerlendirilmesi BÖHHBÜY ye gore GPS NIVgeoidinin oluşturulması",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "BÖHHBÜY ye gore GPS NİV geoidinin modellenmesi,değerlendirilmesi",
+    "outcomes": "3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Phsical Geodesy, HeiskanenW.,A.Moritz, , 1989,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=421"
  },
  "JDF 421E": {
   "code": "JDF 421E",
   "name": "Fiziksel Jeodezi",
+  "nameEn": "Physical Geodesy",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1835,15 +4860,87 @@
    "Hafta 13 · Geoit belirleme yöntemlerinin değerlendirilmesi BÖHHBÜY ye gore GPS NIVgeoidinin oluşturulması",
    "Hafta 14 · BÖHHBÜY ye gore GPS NİV geoidinin modellenmesi,değerlendirilmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş Dersin eğitsel hedefleri,çıktıları,başarı değerlendirmr kriterleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yer yuvarına etkiyen kuvvetler:çekim kuvveti,merkezkaç kuvveti,Güneş ve Ayın çekim etkileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Çekim ivmesi,merkezkaç ivme,çekim potansiyeli,merkezkaç potansiyel,ağırlık ivmesi (gravite),ağırlık kuvveti potansiyeli",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Nivo (jeopotansiyel) yüzeyleri,çekim potansiyelinin harmonik açılımı,I.Kısa sınav",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yer yuvarının normal gravite alanı,normal gravite,normal potansiyel.Gerçek ve normal gravite alanları arasındaki bağıntılar geoit yüksekliği,gravite anomalisi,bozucu potansiyel,Bruns eşitliğinin çıkar",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Jeodezik Referans Sistemleri GRS 80,",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Gravite ölçmeleri ve indirgemeleri,gravite anomalileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Çekül sapmaları astrojeodezik geoit belirleme.II.Kısa sınav",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Yükseklik Sistemleri.Jeopotansiyel kot,dinamik yükseklikler,ortometrik yükse",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Yükseklik Sistemleri ellipsoidal ve normal yükseklikler,yükseklik sistemleri arasındaki dönüşümler",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Geoit belirleme yöntemlerinin değerlendirilmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Geoit belirleme yöntemlerinin değerlendirilmesi BÖHHBÜY ye gore GPS NIVgeoidinin oluşturulması",
+    "outcomes": "3-4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "BÖHHBÜY ye gore GPS NİV geoidinin modellenmesi,değerlendirilmesi",
+    "outcomes": "3-4-5-6"
+   }
+  ],
   "textbooks": [
    "Phsical Geodesy, HeiskanenW.,A.Moritz, , 1989,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=421",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=421"
  },
  "JDF 423E": {
   "code": "JDF 423E",
   "name": "Yersel ve Sayısal Fotogrametri",
+  "nameEn": "Terrestrial and Numerical Photogrammetry",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1877,15 +4974,87 @@
    "Hafta 13 · Dönem ödevlerinin sunulması.",
    "Hafta 14 · Dönem ödevlerinin sunulması."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, dersin ve dönem ödevinin anlatılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yersel fotogrametri, veri elde etme, yersel fotogrametride izdüşüm denklemleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yersel resim çekme makineleri, iç yöneltme ve kalibrasyon, fotogrametrik proje aşamaları, resim çekimi, plançete fotogrametrisi, kalibrasyon için test alanının seçimi.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Paralaks fotogrametrisinde hata teorisi, yersel stereo fotogrametri, normal durum.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Dönük durum, test alanını oluşturulması ve resimlerin çekilmesi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Konvergent durum, Mimarlık ve mühendislik fotogrametrisi, projede kullanılacak yazılım hakkında özet bilgi.",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Uygulama örnekleri, laboratuar çalışmaları, digital fotogrametrinin matematik esasları, Kamera kalibrasyonu.",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Koordinat sistemleri ve dönüşümler, matematik esaslar.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "Kestirme, dönme matrisleri, benzerlik dönüşümleri, digital görüntülerin yöneltilmesi.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 11,
+    "topic": "Demet dengelemesi, bağımsız modellerle dengeleme.",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 12,
+    "topic": "3B objelerin değerlendirilmesi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevlerinin sunulması.",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevlerinin sunulması.",
+    "outcomes": "6"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=423",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=423"
  },
  "JDF 426": {
   "code": "JDF 426",
   "name": "Ülke Ölçmeleri",
+  "nameEn": "National Network Observations",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1921,17 +5090,89 @@
    "Hafta 13 · Ülke Gravite Ağı, Türkiye Temel Gravite Ağı-1999 (TTGA-99)",
    "Hafta 14 · 2. Yıliçi sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Ülke Temel Jeodezik Ağlarının kuruluş amacı ve sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ülke Ölçmelerinde kullanılan Referans Koordinat Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Jeodezik Datum ve Jeodezik Datum Belirleme, Mutlak Yerleştirme ve Yöneltme Yöntemleri, Bağıl Yerleştirme ve Yöneltme Yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "ITRF ve ED50 Jeodezik Datumları, Datum dönüşümleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Klasik ölçmelerle Ülke Temel Nirengi Ağlarının Kuruluş Esasları, Kuruluş Aşamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Türkiye Ana Nirengi Ağı (ED50 Datumundaki eski ağ), Ülke Temel Nirengi Ağlarının Derecelendirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Değişik ülkelerin nirengi ağlarından örnekler, Ağların Birleştirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "1. Yıliçi sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Uydu ve uzay teknikleri ve ülke ölçmelerinde kullanımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Dünya Jeodezik Ağı ve Kıtasal Ağlar İle İlgili Çalışmalar",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Türkiye Ulusal Temel GPS Ağı – 1999 (TUTGA-99) ve Türkiye Ulusal SAbit GPS Ağı-Aktif (TUSAGA-Aktif ) ya da CORS-TR",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Yükseklik sistemleri, Nivelman ağları, dizaynı, kurulması, ölçmeler, TUDKA-99",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 13,
+    "topic": "Ülke Gravite Ağı, Türkiye Temel Gravite Ağı-1999 (TTGA-99)",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 14,
+    "topic": "2. Yıliçi sınavı",
+    "outcomes": "6-7-8"
+   }
+  ],
   "textbooks": [
    "Ülke Jeodezi Ağları, E. Ulsoy, İ.T.Ü. Yayınları İstanbul, 1984,",
    "Geodesy, W. Torge, Walter de Gruyter, Berlin., 1991,",
    "Geodesy: The Concepts, P. Vanicek, E.J. Krakiwsky, Elsevier Sciences Publ. Amsterdam. , 1986,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=426",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=426"
  },
  "JDF 426E": {
   "code": "JDF 426E",
   "name": "Ülke Ölçmeleri",
+  "nameEn": "National Network Observations",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -1967,17 +5208,89 @@
    "Hafta 13 · Ülke Gravite Ağı, Türkiye Temel Gravite Ağı-1999 (TTGA-99)",
    "Hafta 14 · 2. Yıliçi sınavı"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Ülke Temel Jeodezik Ağlarının kuruluş amacı ve sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ülke Ölçmelerinde kullanılan Referans Koordinat Sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Jeodezik Datum ve Jeodezik Datum Belirleme, Mutlak Yerleştirme ve Yöneltme Yöntemleri, Bağıl Yerleştirme ve Yöneltme Yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "ITRF ve ED50 Jeodezik Datumları, Datum dönüşümleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 5,
+    "topic": "Klasik ölçmelerle Ülke Temel Nirengi Ağlarının Kuruluş Esasları, Kuruluş Aşamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Türkiye Ana Nirengi Ağı (ED50 Datumundaki eski ağ), Ülke Temel Nirengi Ağlarının Derecelendirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Değişik ülkelerin nirengi ağlarından örnekler, Ağların Birleştirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "1. Yıliçi sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Uydu ve uzay teknikleri ve ülke ölçmelerinde kullanımı",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Dünya Jeodezik Ağı ve Kıtasal Ağlar İle İlgili Çalışmalar",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Türkiye Ulusal Temel GPS Ağı – 1999 (TUTGA-99) ve Türkiye Ulusal SAbit GPS Ağı-Aktif (TUSAGA-Aktif ) ya da CORS-TR",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Yükseklik sistemleri, Nivelman ağları, dizaynı, kurulması, ölçmeler, TUDKA-99",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 13,
+    "topic": "Ülke Gravite Ağı, Türkiye Temel Gravite Ağı-1999 (TTGA-99)",
+    "outcomes": "5-8"
+   },
+   {
+    "week": 14,
+    "topic": "2. Yıliçi sınavı",
+    "outcomes": "6-7-8"
+   }
+  ],
   "textbooks": [
    "Ülke Jeodezi Ağları, E. Ulsoy, İ.T.Ü. Yayınları İstanbul, 1984,",
    "Geodesy, W. Torge, Walter de Gruyter, Berlin., 1991,",
    "Geodesy: The Concepts, P. Vanicek, E.J. Krakiwsky, Elsevier Sciences Publ. Amsterdam. , 1986,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=426",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=426"
  },
  "JDF 427": {
   "code": "JDF 427",
   "name": "Sayısal Arazi Modeli",
+  "nameEn": "Digital Terrain Model",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2012,15 +5325,87 @@
    "Hafta 13 · SAM oluşturmak için bir yazılım tanıtımı",
    "Hafta 14 · Yazılım ile uygulama"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma, ders programı ve içeriğinin tanıtılması, yararlanılabilecek kaynaklar ve internet adreslerinin verilmesi, SAM ile ilgili tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "SAM lerinin tarihsel gelişimi ve uygulama olanakları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "SAM oluşturma yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "SAM oluşturma yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Arazi yüzeyini tanımlama yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sayısal uygulamalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "İnterpolasyon yöntemleri (Eğri interpolasyonu)",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "İnterpolasyon yöntemleri (Yüzey interpolasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "İnterpolasyon yöntemleri (Sayısal örnekler)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ara sınav",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Laser Tarayıcı kullanarak SAM oluşturma",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Laser Tarayıcı kullanarak SAM oluşturma",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "SAM oluşturmak için bir yazılım tanıtımı",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılım ile uygulama",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=427",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=427"
  },
  "JDF 430": {
   "code": "JDF 430",
   "name": "İmar Planları Uygulaması",
+  "nameEn": "Application of Public Improvement Plans",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2054,16 +5439,88 @@
    "Hafta 13 · İmar planları uygulamalarının başlıca sorunları ve çözüm önerileri",
    "Hafta 14 · Dönem Ödevi Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kadastro İmar İlişkisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yürürlükteki İmar Kanunu ve uygulama yönetmeliklerinin incelenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yürürlükteki İmar Kanunu ve uygulama yönetmeliklerinin incelenmesi (önceki haftadan devam)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İmar planları, planlama ve düzenleme ilkeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "İmar Kanunları ve Yönetmelikleri çerçevesinde tanımlanan plan türleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Beş yıllık imar programlarının hazırlanması",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Arazi ve arsa düzenleme esasları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Arazi ve arsa düzenleme esasları (önceki haftadan devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Yapı yerlerine ilişkin işlemler",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "İmar planlarına aykırı yapılaşmanın (gecekondulaşmanın) önlenmesi için çıkarılan kanun ve yönetmeliklerin incelenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "İmar planlarına aykırı yapılaşmanın (gecekondulaşmanın) önlenmesi için çıkarılan kanun ve yönetmeliklerin incelenmesi (önceki haftadan devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "İmar planları uygulamalarının başlıca sorunları ve çözüm önerileri",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Ödevi Sunumları",
+    "outcomes": "1-2-3-4-5-6"
+   }
+  ],
   "textbooks": [
    "İmar Planları Uygulamaları Ders Notları, S. Denizhan Yalın, İTÜ İnşaat Fakültesi, 2005,",
    "İmar Bilgisi, F. Yıldız, Ankara, 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=430",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=430"
  },
  "JDF 431E": {
   "code": "JDF 431E",
   "name": "GPS Teknikleri",
+  "nameEn": "GPS Technique",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2098,16 +5555,88 @@
    "Hafta 13 · Dönem Ödevi Sunumları",
    "Hafta 14 · Dönem Ödevi Sunumları"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Uzay Tekniklerine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "GPS e Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "GPS ölçüleri ve matematiksel modeller",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 4,
+    "topic": "GPS Ölçme Teknikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Arazi Çalışması",
+    "outcomes": "6"
+   },
+   {
+    "week": 6,
+    "topic": "GPS Koordinat Sistemleri & Datum Transformasyonu",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "GPS te Hata Kaynakları",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Arazi Çalışması & Veri İşleme",
+    "outcomes": "6"
+   },
+   {
+    "week": 9,
+    "topic": "GPS Veri İşlemesi",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "GPS Alıcısı Teknolojileri",
+    "outcomes": "3-6"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "GPS Proje Yönetimi, GPS in Uygulama Alanları",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem Ödevi Sunumları",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem Ödevi Sunumları",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
    "GNSS: GPS, GLONASS, Galileo, and more, Hofmann-Wellenhof, B., Lichtenegger, H., Wasle, E., Wien: Springer, 2008, 9783211730126",
    "GNSS applications and methods [electronic resource], Gleason, S., Gebre-Egziabher, D., Boston, Mass.: Artech House, 2009, 9781596933309"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=431",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=431"
  },
  "JDF 433": {
   "code": "JDF 433",
   "name": "Kartografik Projeksiyonlar",
+  "nameEn": "Cartographic Projections",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2138,15 +5667,87 @@
    "Hafta 13 · Kartografik projeksiyonlar için tersine çözümler,Projeksiyonlarda dönüşüm yöntemleri, Uygulama-10",
    "Hafta 14 · Proje Ödevi Sunumları ve Tartışma"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanışma, ders programı ve içeriğinin tanıtılması, yararlanılabilecek kaynaklar ve internet adreslerinin verilmesi, harita, kartografya ve projeksiyon kavramları",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Projeksiyonların sınıflandırılması, deformasyon kavramı, deformasyon elipsi, Uygulama-1 (Uzunluk ve açı deformasyonu)",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Coğrafi koordinat sistemi, küresel-kutupsal koordinat sistemi, eğik ve transversal konumlu projeksiyonlar, Uygulama-2 (Küresel-kutupsal koordinat hesabı)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Küre üzerinde özel eğriler, ortodrom, loksodrom, küre üzerinde alan hesabı, Uygulama-3 (ortodrom, loksodrom hesabı)",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Düzlem (azimutal) projeksiyonlar, gnomonik, ortografik, stereografik projeksiyonlar Uygulama-4 (bir azimutal projeksiyon örneği)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Silindirik projeksiyonlar, Merkator projeksiyonu, Soldner projeksiyonu, Uygulama-5 (Merkator projeksiyonu)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "UTM sistemi, UTM sisteminde kartografik hesaplar, redüksiyonlar, pafta bölümlemesi,",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Konik projeksiyonlar, Çok konili projeksiyonlar, Uygulama-6",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Gerçek anlamda olmayan silindirik projeksiyonlar, Eckert projeksiyonları, Winkel projeksiyonu, Robinson projeksiyonu, Uygulama-7",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Yıl içi sınavı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Gerçek anlamda olmayan konik ve azimutal projeksiyonlar, Bonne projeksiyonu, Aitoff-Hammer projeksiyonu, Uygulama-8",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Yaygın kullanılan bazı jeodezik projeksiyonlar, Lambert konform konik projeksiyonu, Albers alan koruyan konik projeksiyonu, Uygulama-9",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "Kartografik projeksiyonlar için tersine çözümler,Projeksiyonlarda dönüşüm yöntemleri, Uygulama-10",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Ödevi Sunumları ve Tartışma",
+    "outcomes": "1-3"
+   }
+  ],
   "textbooks": [
    "Matematiksel Kartografya: Harita Projeksiyonları, Teorisi ve, Uçar,D., İpbüker, C., Bildirici, İ.Ö. , Atlas Yayın Dağıtım, 2004,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=433",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=433"
  },
  "JDF 434": {
   "code": "JDF 434",
   "name": "Arazi Toplulaştırması",
+  "nameEn": "Land Consolidation",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2181,15 +5782,87 @@
    "Hafta 13 · Avrupa Birliği'ne giriş sürecinde Arazi Toplulaştırması ve Tarımdaki değişimler.",
    "Hafta 14 · GAP bölgesinde yapılan arazi düzenlemesi çalışmaları."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Arazi Toplulaştırmasının Tanımı, Amaçları ve Araçları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Arazi Toplulaştırması Uygulama Seçenekleri, Etkileri, Gelişme Süreci ve Faydaları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Avrupa Birliği nde Arazi Toplulaştırması, Geçmişte ve Günümüzde Arazi Toplulaştırması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Çeşitli Ülkelerde ki Arazi Toplulaştırma Uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Arazi Toplulaştırmasında Planlama ve Uygulama, Kamusal Yapıların Planlaması, Köy Yenileme Çalışmaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kadastro İşlemleri, İyelik Bilgilerinin Belirlenmesi, Ölçme Aplikasyon, Hesap ve Çizim İşlemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Değer ve Kesinti Payı Hesapları, Yeni Parsel ve Blokların Belirlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Derecelendirme ve Etkenleri",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 9,
+    "topic": "Yol-sulama Ağı Planlaması ve Ölçütleri, Doğa ve Çevre Koruma Planlaması, Arazi Toplulaştırması Bilgi Sistemi",
+    "outcomes": "4-6"
+   },
+   {
+    "week": 10,
+    "topic": "YILİÇİ SINAVI",
+    "outcomes": "1-2-3-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Türkiye de Arazi Toplulaştırması ile İlgili Kanunlar, Tüzükler ve Amaçları",
+    "outcomes": "4-6-7"
+   },
+   {
+    "week": 12,
+    "topic": "Beş yıllık Kalkınma Planlarında Arazi Toplulaştırması.",
+    "outcomes": "3-4-7"
+   },
+   {
+    "week": 13,
+    "topic": "Avrupa Birliği'ne giriş sürecinde Arazi Toplulaştırması ve Tarımdaki değişimler.",
+    "outcomes": "5-7"
+   },
+   {
+    "week": 14,
+    "topic": "GAP bölgesinde yapılan arazi düzenlemesi çalışmaları.",
+    "outcomes": "4-5-7"
+   }
+  ],
   "textbooks": [
    "Arazi Toplulaştırması, Zerrin Demirel, YTÜ Yayınevi, 1999,"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=434",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=434"
  },
  "JDF 435E": {
   "code": "JDF 435E",
   "name": "Bilgisayar Destekli Kartografya",
+  "nameEn": "Computer Aided Cartography",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2221,15 +5894,87 @@
    "Hafta 13 · İnternet haritaları ve kulanıcı aktivitesi, kısa sınav 2",
    "Hafta 14 · Yazılım örnekleri, genel değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Kavramsal model, sayısal mekansal model ve kartografik model yaklaşımı",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Sayısal mekansal model için mekansal referans sistemleri, obje kavramı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Objelerin geometrik ve geometrik olmayan özellikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Mekansal objelerin mekansal referansları",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Objeler için nesneye dayalı sınıf yaklaşımı, kısa sınav 1",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Değişik trüdeki objelerin oluturduğu mekansal yapı",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Topoloji ve geometri arasındaki ilişki, mekansal objeler için önemi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Değişik mekansal referanslı modellenen objeler arası topoloji",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Objelerin kayıtlanması için yaklaşımlar, veri tabanı tipleri, mekansal objelere ait geometrik ve semantik verilerin ilişkilendirilmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Vize sınavı",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Elektronik atlas için organizasyon, dünyadan örnekler",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "İnternet haritaları ve kulanıcı aktivitesi, kısa sınav 2",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılım örnekleri, genel değerlendirme",
+    "outcomes": "2-4"
+   }
+  ],
   "textbooks": [
    "Ders notları ve yansı sunumu"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=435",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=435"
  },
  "JDF 437E": {
   "code": "JDF 437E",
   "name": "Mekansal Verilerin Kartografik Sunumu",
+  "nameEn": "Cartographic Presentation of Spatial Data",
   "language": "Türkçe/English",
   "credits": {
    "theory": 2,
@@ -2263,17 +6008,89 @@
    "Hafta 13 · Öğrenci Sunumları",
    "Hafta 14 · Öğrenci Sunumları ve Genel Değerlendirme"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse giriş ve dönem ödevine ilişkin tartışma",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kartografya ve CBS",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "CBS ve Haritalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Coğrafi veri modeli olarak Harita: Mekansal verinin dili",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Tatil",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Grafik değişkenler ve ölçme teknikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kartografik Sunuş: Kriterler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Harita İçeriği ve Tasarımı: Renk Tasarımı, ve araçları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Harita İçeriği ve Tasarımı: Harita İşaretleri, Harita içeriği ve Tasarımı: Yazılar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Harita Tasarımında kullanılan formatlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Sunumları",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Sunumları ve Genel Değerlendirme",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "Brown, A.; Feringa, W., 2002. Colour Basics for GIS Users. Harlow etc: Pearson Eduation. ISBN 0130-33343-3.",
    "Kraak, Menno-Jan, 2002. Web Cartography: Developments and Prospects. Edited by M-J. Kraak & A. Brown. ITC Division of Geoinformatics, Cartography and Visualisation, Enschede, The Netherlands. Taylor&Francis, London and New York.",
    "Longley, Paul A.; Goodchild, Michael F.; Maguire, David J.; Rhind, David W.: Geographic Information Systems and Science. John Wiley & Sons Ltd. ISBN 0-471-49521-2."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=437",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=437"
  },
  "JDF 492": {
   "code": "JDF 492",
   "name": "Tasarım Projesi",
+  "nameEn": "Design Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2294,15 +6111,32 @@
    "Hafta 2 · Geomatik Mühendisliğinde açık uçlu tasarım projelerinin hazırlanması",
    "Hafta 3 · Tasarım projesinin oluşturulan komisyon önünde her öğrenci tarafından sunulması ve başarı değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geomatik Müh.Mühendislik problemlerini tanımlama, modelleme ,analiz etme ve çözme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Geomatik Mühendisliğinde açık uçlu tasarım projelerinin hazırlanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım projesinin oluşturulan komisyon önünde her öğrenci tarafından sunulması ve başarı değerlendirmesi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=492"
  },
  "JDF 492E": {
   "code": "JDF 492E",
   "name": "Tasarım Projesi",
+  "nameEn": "Design Project",
   "language": "Türkçe/English",
   "credits": {
    "theory": 0,
@@ -2323,10 +6157,26 @@
    "Hafta 2 · Geomatik Mühendisliğinde açık uçlu tasarım projelerinin hazırlanması",
    "Hafta 3 · Tasarım projesinin oluşturulan komisyon önünde her öğrenci tarafından sunulması ve başarı değerlendirmesi"
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Geomatik Müh.Mühendislik problemlerini tanımlama, modelleme ,analiz etme ve çözme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Geomatik Mühendisliğinde açık uçlu tasarım projelerinin hazırlanması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım projesinin oluşturulan komisyon önünde her öğrenci tarafından sunulması ve başarı değerlendirmesi",
+    "outcomes": "1-2-3-4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=492",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=JDF&dersNo=492"
  }
 }

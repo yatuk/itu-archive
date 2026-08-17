@@ -2,6 +2,7 @@
  "FZT 203E": {
   "code": "FZT 203E",
   "name": "Fizikte Gruplar Teorisi",
+  "nameEn": "Theory of Groups in Physics",
   "language": "English/Türkçe",
   "credits": {
    "theory": 2,
@@ -35,10 +36,81 @@
    "Hafta 13 · Simetri ve korunmuş nicelikler, Standart Model'e bakış.",
    "Hafta 14 · Standart Model ötesi grup yapılarına bakış."
   ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Simetri kavramına giriş, temel matematiksel yapılar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Grup tanımı, altgruplar, kosetler, Lagrange teoremi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Permütasyon grupları, S_n ve A_n.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Grup etkileri, dihedral gruplar ve fiziksel simetriler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Matris temsilleri ve Schur lemması.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Karakter kavramı, basit gruplar için karakter tabloları.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Doğrudan çarpım ve semidirekt çarpım tanıtımı.",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Sürekli gruplara giriş: SO(2), SO(3).",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "SO(3) Lie cebiri, komütasyon ilişkileri.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "SU(2) grubu ve SO(3) ile ilişkisi.",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Lie cebirleri ve jeneratörler.",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Katıhal fiziğinde nokta grupları.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Simetri ve korunmuş nicelikler, Standart Model'e bakış.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Standart Model ötesi grup yapılarına bakış.",
+    "outcomes": "5-6"
+   }
+  ],
   "textbooks": [
    "J. Bünemann, Group Theory in Physics, Springer, 2024."
   ],
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FZT&dersNo=203",
-  "fetchedAt": "2026-08-12T21:49:46Z"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FZT&dersNo=203"
  }
 }

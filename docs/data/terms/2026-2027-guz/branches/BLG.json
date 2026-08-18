@@ -694,20 +694,14 @@
   "level": "LU",
   "name": "Special Topics in Compu.Eng.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ali Çakmak",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Perşembe"
-  ],
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
   "times": [
-   "13:30/16:29"
+   "-/-"
   ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 20,
+  "rooms": [],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -1877,6 +1871,33 @@
   "reserved": "-",
   "programs": [],
   "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15081",
+  "code": "BLG 565E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Bioinformatics Algorithms",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Çakmak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
   "classReq": "-"
  }
 ]

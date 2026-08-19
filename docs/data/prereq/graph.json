@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-17T03:14:00Z",
+ "generatedAt": "2026-08-19T03:11:56Z",
  "nodes": [
   {
    "code": "AKM 202",
@@ -5477,7 +5477,7 @@
   },
   {
    "code": "CHE 123EL",
-   "name": "",
+   "name": "General Chemistry I Laboratory",
    "branch": "CHE"
   },
   {
@@ -28733,6 +28733,78 @@
    "name": "Yapay Zekâ ve Siber Güvenlik",
    "branch": "SAO",
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD ) ( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 264",
+   "name": "Yeni Nesil Teknolojiler",
+   "branch": "SAO",
+   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 264E",
+   "name": "Yeni Nesil Teknolojiler",
+   "branch": "SAO",
+   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 265",
+   "name": "Nesne Tabanlı Programlama",
+   "branch": "SAO",
+   "requirement": "( SAO 102E MIN. DD Veya SAO 102 MIN. DD )"
+  },
+  {
+   "code": "SAO 265E",
+   "name": "Nesne Tabanlı Programlama",
+   "branch": "SAO",
+   "requirement": "( SAO 102E MIN. DD Veya SAO 102 MIN. DD )"
+  },
+  {
+   "code": "SAO 266",
+   "name": "Algoritma",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
+  },
+  {
+   "code": "SAO 266E",
+   "name": "Algoritma",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
+  },
+  {
+   "code": "SAO 268",
+   "name": "Zararlı Yazılım Analizi ve Tespiti",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
+  },
+  {
+   "code": "SAO 268E",
+   "name": "Zararlı Yazılım Analizi ve Tespiti",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
+  },
+  {
+   "code": "SAO 269",
+   "name": "-",
+   "branch": "SAO",
+   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 269E",
+   "name": "-",
+   "branch": "SAO",
+   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
+  },
+  {
+   "code": "SAO 270",
+   "name": "Mobil Teknolojiler ve Güvenlik",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
+  },
+  {
+   "code": "SAO 270E",
+   "name": "Mobil Teknolojiler ve Güvenlik",
+   "branch": "SAO",
+   "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
   },
   {
    "code": "SAV 302",
@@ -96077,6 +96149,30 @@
    "to": "SAO 263E"
   },
   {
+   "from": "SAO 101",
+   "to": "SAO 266"
+  },
+  {
+   "from": "SAO 101",
+   "to": "SAO 266E"
+  },
+  {
+   "from": "SAO 101",
+   "to": "SAO 268"
+  },
+  {
+   "from": "SAO 101",
+   "to": "SAO 268E"
+  },
+  {
+   "from": "SAO 101",
+   "to": "SAO 270"
+  },
+  {
+   "from": "SAO 101",
+   "to": "SAO 270E"
+  },
+  {
    "from": "SAO 101E",
    "to": "SAO 102"
   },
@@ -96165,6 +96261,30 @@
    "to": "SAO 263E"
   },
   {
+   "from": "SAO 101E",
+   "to": "SAO 266"
+  },
+  {
+   "from": "SAO 101E",
+   "to": "SAO 266E"
+  },
+  {
+   "from": "SAO 101E",
+   "to": "SAO 268"
+  },
+  {
+   "from": "SAO 101E",
+   "to": "SAO 268E"
+  },
+  {
+   "from": "SAO 101E",
+   "to": "SAO 270"
+  },
+  {
+   "from": "SAO 101E",
+   "to": "SAO 270E"
+  },
+  {
    "from": "SAO 102",
    "to": "SAO 253"
   },
@@ -96173,12 +96293,28 @@
    "to": "SAO 253E"
   },
   {
+   "from": "SAO 102",
+   "to": "SAO 265"
+  },
+  {
+   "from": "SAO 102",
+   "to": "SAO 265E"
+  },
+  {
    "from": "SAO 102E",
    "to": "SAO 253"
   },
   {
    "from": "SAO 102E",
    "to": "SAO 253E"
+  },
+  {
+   "from": "SAO 102E",
+   "to": "SAO 265"
+  },
+  {
+   "from": "SAO 102E",
+   "to": "SAO 265E"
   },
   {
    "from": "SAO 103",
@@ -96413,6 +96549,22 @@
    "to": "SAO 263E"
   },
   {
+   "from": "SAO 109",
+   "to": "SAO 264"
+  },
+  {
+   "from": "SAO 109",
+   "to": "SAO 264E"
+  },
+  {
+   "from": "SAO 109",
+   "to": "SAO 269"
+  },
+  {
+   "from": "SAO 109",
+   "to": "SAO 269E"
+  },
+  {
    "from": "SAO 109E",
    "to": "SAO 104"
   },
@@ -96483,6 +96635,22 @@
   {
    "from": "SAO 109E",
    "to": "SAO 263E"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 264"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 264E"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 269"
+  },
+  {
+   "from": "SAO 109E",
+   "to": "SAO 269E"
   },
   {
    "from": "SBP 111",

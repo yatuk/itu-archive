@@ -1031,11 +1031,14 @@
   ],
   "capacity": 80,
   "enrolled": 0,
-  "reserved": "ECNE_LS/5/0 | Diğer/75/0",
+  "reserved": "ECNE_LS/5/0 | YZVE_LS/5/0 | ELKE_LS/5/0 | ENTE_LS/5/0 | Diğer/60/0",
   "programs": [
    "ECNE_LS",
+   "ELKE_LS",
+   "ENTE_LS",
    "ISL_LS",
-   "ISLE_LS"
+   "ISLE_LS",
+   "YZVE_LS"
   ],
   "prereq": "-",
   "classReq": "-"

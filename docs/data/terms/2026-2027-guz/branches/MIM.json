@@ -163,37 +163,6 @@
   "classReq": "-"
  },
  {
-  "crn": "13635",
-  "code": "MIM 120E",
-  "branch": "MIM",
-  "level": "LS",
-  "name": "Int.toCmp.Ds.Tools&Mth.inArch.",
-  "method": "Sanal (Çevrimiçi/Online)",
-  "instructor": "Aslı Kanan",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Cuma"
-  ],
-  "times": [
-   "14:00/16:59"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 100,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "ARC_LS",
-   "MIM_LS",
-   "MIME_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "13636",
   "code": "MIM 203",
   "branch": "MIM",
@@ -3529,7 +3498,7 @@
   "level": "LS",
   "name": "Design & Fabric.Tech. in Arch.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Sema Alaçam",
+  "instructor": "Sema Alaçam , Salih Özdemir",
   "buildings": [
    "undeclared"
   ],
@@ -4883,6 +4852,37 @@
    "MIM_LS"
   ],
   "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15083",
+  "code": "MIM 109",
+  "branch": "MIM",
+  "level": "LS",
+  "name": "Sanat ve Mimarlık",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ARC_LS",
+   "MIM_LS",
+   "MIME_LS"
+  ],
+  "prereq": "-",
   "classReq": "-"
  }
 ]

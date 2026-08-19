@@ -688,27 +688,6 @@
   "classReq": "-"
  },
  {
-  "crn": "12366",
-  "code": "BLG 553E",
-  "branch": "BLG",
-  "level": "LU",
-  "name": "Special Topics in Compu.Eng.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 0,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "12367",
   "code": "BLG 551E",
   "branch": "BLG",
@@ -1111,7 +1090,7 @@
    "undeclared"
   ],
   "days": [
-   "Pazartesi"
+   "Cuma"
   ],
   "times": [
    "08:30/11:29"
@@ -1137,12 +1116,18 @@
   "name": "Microprocessor Systems",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gökhan İnce",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "undeclared"
   ],
-  "rooms": [],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 90,
   "enrolled": 0,
   "reserved": "-",
@@ -1297,7 +1282,8 @@
   "programs": [
    "BLG_LS",
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "SECE_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -1327,7 +1313,8 @@
   "reserved": "-",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "SECE_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -1357,7 +1344,8 @@
   "reserved": "-",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "SECE_LS"
   ],
   "prereq": "-",
   "classReq": "-"

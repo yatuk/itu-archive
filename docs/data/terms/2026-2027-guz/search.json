@@ -66862,7 +66862,7 @@
   "Akışkanlar Mekaniği",
   "KMM",
   "Ömer Şahin",
-  "Perşembe 12:30/15:29",
+  "Perşembe 13:30/16:29",
   30,
   0,
   "LS",
@@ -66926,7 +66926,7 @@
   "Kimya Müh.Termodinamiği",
   "KMM",
   "Ayşegül Meriçboyu , Melek Mümine Erol Taygun",
-  "Perşembe 09:00/10:59 | Cuma 09:00/11:59",
+  "Perşembe 08:30/10:29 | Cuma 09:00/11:59",
   30,
   0,
   "LS",
@@ -66974,7 +66974,7 @@
   "Kimya Müh.Termodinamiği",
   "KMM",
   "Reha Yavuz",
-  "Perşembe 09:00/10:59 | Cuma 09:00/11:59",
+  "Perşembe 08:30/10:29 | Cuma 09:00/11:59",
   30,
   0,
   "LS",
@@ -67053,7 +67053,7 @@
   "KMM 332",
   "Ayırma İşlemleri",
   "KMM",
-  "Gülhayat Saygılı",
+  "Gülhayat Saygılı , Ömer Şahin",
   "Pazartesi 11:30/13:29 | Perşembe 11:30/13:29",
   30,
   0,
@@ -73289,7 +73289,7 @@
   "Teori Uygulama I",
   "MTR",
   "Gülay Karamahmutoğlu",
-  "Salı 15:30/17:29",
+  "Pazartesi 10:30/12:29",
   25,
   0,
   "LS",
@@ -83570,7 +83570,8 @@
   "Fiziksel (Yüz yüze)",
   [
    "ECN_YD",
-   "ECNE_LS"
+   "ECNE_LS",
+   "MAT_LS"
   ]
  ],
  [
@@ -83870,19 +83871,6 @@
    "EFN_LS",
    "VBAE_LS"
   ]
- ],
- [
-  "11960",
-  "MAM 596",
-  "Bilimsel Araş.,Etik ve Seminer",
-  "MAM",
-  "Billur Deniz Karahan",
-  "Çarşamba 15:30/17:29",
-  20,
-  0,
-  "LU",
-  "Fiziksel (Yüz yüze)",
-  []
  ],
  [
   "11961",
@@ -86615,7 +86603,9 @@
   [
    "END_LS",
    "ENDE_LS",
-   "IND_LS"
+   "IND_LS",
+   "ISL_LS",
+   "ISLE_LS"
   ]
  ],
  [
@@ -86632,7 +86622,9 @@
   [
    "END_LS",
    "ENDE_LS",
-   "IND_LS"
+   "IND_LS",
+   "ISL_LS",
+   "ISLE_LS"
   ]
  ],
  [
@@ -88962,8 +88954,11 @@
   "Fiziksel (Yüz yüze)",
   [
    "ECNE_LS",
+   "ELKE_LS",
+   "ENTE_LS",
    "ISL_LS",
-   "ISLE_LS"
+   "ISLE_LS",
+   "YZVE_LS"
   ]
  ],
  [
@@ -113090,7 +113085,7 @@
   30,
   0,
   "LU",
-  "Fiziksel (Yüz yüze)",
+  "Sanal (Çevrimiçi/Online)",
   []
  ],
  [
@@ -119762,7 +119757,12 @@
   0,
   "LS",
   "Fiziksel (Yüz yüze)",
-  []
+  [
+   "EHB_LS",
+   "ELK_LS",
+   "KOM_LS",
+   "ROS_LS"
+  ]
  ],
  [
   "14411",
@@ -119775,7 +119775,16 @@
   0,
   "LS",
   "Fiziksel (Yüz yüze)",
-  []
+  [
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ]
  ],
  [
   "14412",
@@ -119788,7 +119797,16 @@
   0,
   "LS",
   "Fiziksel (Yüz yüze)",
-  []
+  [
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS",
+   "ROS_LS",
+   "ROSE_LS"
+  ]
  ],
  [
   "14413",
@@ -120691,11 +120709,13 @@
   "SUS",
   "Ahmet Atıl Aşıcı",
   "Çarşamba 09:30/12:29",
-  20,
+  25,
   0,
   "LS",
   "Fiziksel (Yüz yüze)",
   [
+   "ISL_LS",
+   "ISLE_LS",
    "SUS_YD"
   ]
  ],
@@ -127630,7 +127650,7 @@
   "MAK 303",
   "Isı Geçişi",
   "MAK",
-  "-",
+  "Bayram Şahin",
   "Pazartesi 15:30/17:29 | Perşembe 08:30/10:29",
   40,
   0,
@@ -128981,7 +129001,7 @@
   "MAK 4018E",
   "Quality Control in Manufacturi",
   "MAK",
-  "-",
+  "Ali Gökşenli",
   "Perşembe 14:30/17:29",
   30,
   0,
@@ -130130,7 +130150,7 @@
   "PHY 125L",
   "Physics I Laboratory",
   "PHY",
-  "-",
+  "Sevda Şahinbay",
   "Çarşamba 13:30/15:29",
   30,
   0,
@@ -130287,9 +130307,9 @@
   "MYZ 306E",
   "Artificial Intelligence in Architecture, Planning and Design",
   "MYZ",
-  "-",
+  "Meryem Birgül Çolakoğlu",
   "Çarşamba 13:30/15:29",
-  0,
+  20,
   0,
   "LS",
   "Fiziksel (Yüz yüze)",
@@ -130339,6 +130359,34 @@
    "MIM_LS",
    "MIME_LS"
   ]
+ ],
+ [
+  "15084",
+  "MTR 435",
+  "Yazma Müzik Eserleri",
+  "MTR",
+  "Eylül Doğan",
+  "Çarşamba 09:30/12:29",
+  25,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "MUZ_LS"
+  ]
+ ],
+ [
+  "15085",
+  "MTS 501E",
+  "Thresholds of 20th Century",
+  "MTS",
+  "Asiye Nisa Kartal",
+  "Salı 13:30/16:29",
+  15,
+  0,
+  "LU",
+  "Fiziksel (Yüz yüze)",
+  []
  ],
  [
   "30003",

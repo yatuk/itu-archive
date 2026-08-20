@@ -68530,7 +68530,7 @@
   "CAB 151",
   "Kanun I",
   "CAB",
-  "Ayşegül Kostak Toksoy",
+  "Hidayet Timur Sarıca",
   "Pazartesi 13:30/15:29",
   5,
   0,
@@ -118301,7 +118301,6 @@
   "LS",
   "Fiziksel (Yüz yüze)",
   [
-   "ARC_LS",
    "SBP_LS",
    "SBPE_LS"
   ]
@@ -130298,6 +130297,7 @@
   "LS",
   "Fiziksel (Yüz yüze)",
   [
+   "ARC_LS",
    "MIM_LS",
    "MIME_LS"
   ]
@@ -130313,7 +130313,11 @@
   0,
   "LS",
   "Fiziksel (Yüz yüze)",
-  []
+  [
+   "ARC_LS",
+   "MIM_LS",
+   "MIME_LS"
+  ]
  ],
  [
   "15080",
@@ -130383,6 +130387,32 @@
   "Asiye Nisa Kartal",
   "Salı 13:30/16:29",
   15,
+  0,
+  "LU",
+  "Fiziksel (Yüz yüze)",
+  []
+ ],
+ [
+  "15086",
+  "MAT 103E",
+  "Mathematics I",
+  "MAT",
+  "-",
+  "",
+  0,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  []
+ ],
+ [
+  "15087",
+  "DTM 501E",
+  "Advanced Marine Hydrodynamics",
+  "DTM",
+  "Burcu Erbaş",
+  "Çarşamba 10:30/13:29",
+  20,
   0,
   "LU",
   "Fiziksel (Yüz yüze)",

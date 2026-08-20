@@ -141,7 +141,7 @@
   "level": "LU",
   "name": "Güneş Enerjisi&Dönüşüm Tekno.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Nilgün Yavuz , Zehir Fatih Öztürk , Recep İşçi",
+  "instructor": "Nilgün Yavuz , Zehir Fatih Öztürk",
   "buildings": [
    "ENB"
   ],
@@ -276,7 +276,7 @@
   "level": "LU",
   "name": "Hydrogen Ener.Techn.&Analysis",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mehmet Suha Yazıcı",
+  "instructor": "Mehmet Suha Yazıcı , Anıl Erdoğan",
   "buildings": [
    "ENB"
   ],
@@ -289,7 +289,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 20,
+  "capacity": 25,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -438,14 +438,20 @@
   "level": "LU",
   "name": "Enerji Bilim&Teknol.Özel Konu.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "instructor": "Anıl Erdoğan",
+  "buildings": [
+   "ENB"
   ],
-  "rooms": [],
-  "capacity": 0,
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -459,7 +465,7 @@
   "level": "LU",
   "name": "Passive Solar Energy Systems",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Duygu Utkucu",
+  "instructor": "Hatice Sözer , Duygu Utkucu",
   "buildings": [
    "ENB"
   ],
@@ -548,7 +554,7 @@
    "Çarşamba"
   ],
   "times": [
-   "09:00/12:29"
+   "09:30/12:29"
   ],
   "rooms": [
    "--"
@@ -945,7 +951,7 @@
   "level": "LU",
   "name": "Fundamentals of Power Generat.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mehmet Suha Yazıcı , Burak Barutçu",
+  "instructor": "Anıl Erdoğan , Mehmet Suha Yazıcı , Burak Barutçu",
   "buildings": [
    "ENB"
   ],

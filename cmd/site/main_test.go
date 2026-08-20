@@ -42,3 +42,36 @@ func TestReplaceAssetVersionAddsMissingVersion(t *testing.T) {
 		t.Fatalf("got %q, want %q", got, want)
 	}
 }
+
+func TestDataWorkflowsRegenerateAndCommitSite(t *testing.T) {
+	root := filepath.Join("..", "..", ".github", "workflows")
+	for _, name := range []string{
+		"scrape-full.yml", "scrape-light.yml", "quota.yml", "catalog.yml",
+		"curriculum.yml", "grades.yml", "definitions.yml",
+	} {
+		body, err := os.ReadFile(filepath.Join(root, name))
+		if err != nil {
+			t.Fatalf("%s okunamadı: %v", name, err)
+		}
+		text := string(body)
+		for _, required := range []string{"go run ./cmd/site", "git add docs"} {
+			if !strings.Contains(text, required) {
+				t.Errorf("%s veri ve SEO çıktısını aynı commit'e almıyor; %q eksik", name, required)
+			}
+		}
+	}
+}
+
+func TestQualityWorkflowOwnsSingleSiteDriftCheck(t *testing.T) {
+	root := filepath.Join("..", "..", ".github", "workflows")
+	quality, err := os.ReadFile(filepath.Join(root, "test.yml"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(quality), "git diff --exit-code -- docs") {
+		t.Fatal("test.yml deterministik site drift denetimini içermiyor")
+	}
+	if _, err := os.Stat(filepath.Join(root, "site.yml")); !os.IsNotExist(err) {
+		t.Fatalf("site.yml yinelenen kalite işini yeniden oluşturuyor: %v", err)
+	}
+}

@@ -116,7 +116,7 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 		}
 	}
 
-	if err := writeIndex(out, st); err != nil {
+	if err := writeIndex(out, st, currentSlug); err != nil {
 		return err
 	}
 
@@ -504,16 +504,14 @@ func runBackfill(ctx context.Context, f *fetch.Client, st *store.Store, currentS
 // writeIndex, docs/data/terms altındaki tüm meta.json'ları tarayarak site
 // indeksini yeniden kurar. Dizinden okumak önemli: günlük çalıştırmada yalnızca
 // aktif dönem yenilenir, geçmiş dönemler indeksten düşmemeli.
-func writeIndex(root string, st *store.Store) error {
+func writeIndex(root string, st *store.Store, requestedCurrentSlug string) error {
 	termsDir := filepath.Join(root, "data", "terms")
 	entries, err := os.ReadDir(termsDir)
 	if err != nil {
 		return fmt.Errorf("dönem dizini okunamadı: %w", err)
 	}
 
-	var refs []model.TermRef
-	var current model.TermRef
-	var currentMeta model.TermMeta
+	var metas []model.TermMeta
 	for _, e := range entries {
 		if !e.IsDir() {
 			continue
@@ -526,35 +524,64 @@ func writeIndex(root string, st *store.Store) error {
 		if err := json.Unmarshal(b, &m); err != nil {
 			continue
 		}
-		// Canlı dönem: yeni taramada Live bayrağı gelir; eski meta'larda
-		// source "obs" ile de tanınıyor (geriyel uyumluluk).
-		live := m.Live || strings.HasPrefix(m.Source, "obs")
-		refs = append(refs, model.TermRef{
-			Slug: m.Slug, Label: m.Term, ScrapedAt: m.ScrapedAt,
-			Source: store.Source, Live: live, Sections: m.Sections,
-		})
-		if live {
-			current = model.TermRef{Slug: m.Slug, Label: m.Term, ScrapedAt: m.ScrapedAt, Source: store.Source, Live: true}
-			currentMeta = m
+		metas = append(metas, m)
+	}
+	if len(metas) == 0 {
+		return fmt.Errorf("indekslenecek dönem bulunamadı")
+	}
+
+	// Dönem geçişinde eski meta dosyası live:true olarak kalabilir. Aktif slug bu
+	// koşuda OBS'den geldiyse onu tek kaynak kabul et; yoksa mevcut live kayıtların
+	// en yenisini, o da yoksa en yeni dönemi seç. Sonuçta tam olarak bir live dönem
+	// vardır ve eski dönemlerin rozeti kendiliğinden kapanır.
+	activeSlug := ""
+	for _, m := range metas {
+		if m.Slug == requestedCurrentSlug {
+			activeSlug = requestedCurrentSlug
+			break
 		}
 	}
-	if len(refs) == 0 {
-		return fmt.Errorf("indekslenecek dönem bulunamadı")
+	if activeSlug == "" {
+		for _, m := range metas {
+			if m.Live && (activeSlug == "" || sortKey(m.Slug) > sortKey(activeSlug)) {
+				activeSlug = m.Slug
+			}
+		}
+	}
+	if activeSlug == "" {
+		for _, m := range metas {
+			if activeSlug == "" || sortKey(m.Slug) > sortKey(activeSlug) {
+				activeSlug = m.Slug
+			}
+		}
+	}
+
+	var refs []model.TermRef
+	var current model.TermRef
+	var currentMeta model.TermMeta
+	for i := range metas {
+		m := &metas[i]
+		live := m.Slug == activeSlug
+		if m.Live != live {
+			m.Live = live
+			if err := st.WriteJSON(m, "data", "terms", m.Slug, "meta.json"); err != nil {
+				return fmt.Errorf("%s live durumu yazılamadı: %w", m.Slug, err)
+			}
+		}
+		ref := model.TermRef{
+			Slug: m.Slug, Label: m.Term, ScrapedAt: m.ScrapedAt,
+			Source: store.Source, Live: live, Sections: m.Sections,
+			Partial: m.Partial, FailedBranches: m.FailedBranches,
+		}
+		refs = append(refs, ref)
+		if live {
+			current = ref
+			currentMeta = *m
+		}
 	}
 
 	refs = append(refs, missingTerms(refs)...)
 	sort.Slice(refs, func(i, j int) bool { return sortKey(refs[i].Slug) > sortKey(refs[j].Slug) })
-
-	// Canlı taranmış dönem yoksa (yalnızca arşiv yazılmışsa) site yine de bir
-	// dönemle açılsın: en güncelini seç.
-	if current.Slug == "" {
-		for _, r := range refs {
-			if !r.Missing {
-				current = r
-				break
-			}
-		}
-	}
 
 	var cals []model.CalRef
 	calDir := filepath.Join(root, "data", "calendar")

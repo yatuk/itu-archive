@@ -27,8 +27,15 @@ jobs:
       - name: Frontend saf fonksiyon testleri
         run: node --test docs/assets/core/core.test.js
 
-      - name: Veri bütünlüğü
-        run: go run ./cmd/validate -quiet -skip-site
+      - name: SEO sayfalarını yeniden üret ve drift denetle
+        shell: bash
+        run: |
+          ASSET_VERSION="$(grep -o 'style.css?v=[^" ]*' docs/index.html | head -1 | cut -d= -f2)"
+          go run ./cmd/site -version "$ASSET_VERSION"
+          git diff --exit-code -- docs
+
+      - name: Veri ve yayın bütünlüğü
+        run: go run ./cmd/validate -quiet
 
   # Tarayıcı duman testi: sayfayı gerçekten açar. Go/node testleri ve validate
   # sayfayı hiç açmıyordu — stil hiç uygulanmaması, yatay taşma, veri gelmesine

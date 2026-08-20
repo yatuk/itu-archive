@@ -1,10 +1,53 @@
 package store
 
 import (
+	"errors"
+	"os"
+	"path/filepath"
 	"testing"
 
 	"itu-scraper/internal/model"
 )
+
+type brokenJSON struct{}
+
+func (brokenJSON) MarshalJSON() ([]byte, error) { return nil, errors.New("bilinçli encoder hatası") }
+
+func TestWriteJSONIsAtomicOnEncoderFailure(t *testing.T) {
+	root := t.TempDir()
+	st := New(root)
+	if err := st.WriteJSON(map[string]int{"version": 1}, "data", "state.json"); err != nil {
+		t.Fatal(err)
+	}
+	path := filepath.Join(root, "data", "state.json")
+	// Var olan hedef de atomik olarak değiştirilebilmeli (özellikle Windows'ta
+	// rename davranışı farklı olabildiği için bu yol ayrıca sınanır).
+	if err := st.WriteJSON(map[string]int{"version": 2}, "data", "state.json"); err != nil {
+		t.Fatalf("var olan dosya değiştirilemedi: %v", err)
+	}
+	before, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if err := st.WriteJSON(brokenJSON{}, "data", "state.json"); err == nil {
+		t.Fatal("encoder hatası bekleniyordu")
+	}
+	after, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if string(after) != string(before) {
+		t.Fatalf("başarısız yazım önceki geçerli dosyayı değiştirdi:\nönce %s\nsonra %s", before, after)
+	}
+	leftovers, err := filepath.Glob(filepath.Join(root, "data", ".state.json.tmp-*"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(leftovers) != 0 {
+		t.Fatalf("geçici dosyalar temizlenmedi: %v", leftovers)
+	}
+}
 
 func TestDedupe(t *testing.T) {
 	sec := func(crn, branch string) model.Section {
@@ -14,7 +57,7 @@ func TestDedupe(t *testing.T) {
 		sec("100", "BLG"),
 		sec("100", "BLG"), // aynı branş + aynı CRN -> tekrarlanan
 		sec("101", "BLG"),
-		sec("100", "MAT"), // aynı CRN, farklı branş -> çapraz listelenmiş, korunur
+		sec("100", "MAT"),        // aynı CRN, farklı branş -> çapraz listelenmiş, korunur
 		{CRN: "", Branch: "BLG"}, // boş CRN her zaman korunur
 	}
 	got := dedupe(in)

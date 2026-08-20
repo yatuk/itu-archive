@@ -75,14 +75,25 @@ func run(out string, workers int, rps float64, limit int) error {
 	}
 	logf("%d kod → %d (brans, taban) grubu", len(codes), len(groups))
 
-	byBranch := cc.ScrapeAll(ctx, groups, workers, func(format string, args ...any) {
+	previous, err := loadCatalogData(filepath.Join(out, "data", "catalog"))
+	if err != nil {
+		return err
+	}
+	fresh := cc.ScrapeAll(ctx, groups, workers, func(format string, args ...any) {
 		logf(format, args...)
 	})
-	var contentCount int64
+	byBranch, retained := mergeCatalogData(previous, fresh)
+	var contentCount, freshCount int64
 	for _, m := range byBranch {
 		contentCount += int64(len(m))
 	}
-	logf("%d/%d grupta katalog içeriği var", contentCount, len(groups))
+	for _, m := range fresh {
+		freshCount += int64(len(m))
+	}
+	groupsWithContent := countCatalogGroups(groups, byBranch)
+	freshGroups := countCatalogGroups(groups, fresh)
+	logf("%d/%d katalog grubu içerikli; %d ders kaydı (%d taze, %d önceki başarılı kayıttan korundu)",
+		groupsWithContent, len(groups), contentCount, freshCount, retained)
 
 	fetchedAt := time.Now().UTC().Format(time.RFC3339)
 	branches := make([]string, 0, len(byBranch))
@@ -102,15 +113,89 @@ func run(out string, workers int, rps float64, limit int) error {
 		index = append(index, map[string]any{"branch": b, "courses": len(entries)})
 	}
 	if err := st.WriteJSON(map[string]any{
-		"generatedAt": fetchedAt,
-		"groups":      len(groups),
-		"withContent": contentCount,
-		"branches":    index,
+		"generatedAt":     fetchedAt,
+		"groups":          len(groups),
+		"withContent":     groupsWithContent,
+		"freshContent":    freshGroups,
+		"retainedContent": groupsWithContent - freshGroups,
+		"courses":         contentCount,
+		"retainedCourses": retained,
+		"branches":        index,
 	}, "data", "catalog", "index.json"); err != nil {
 		return err
 	}
 	logf("bitti (%d branş dosyası)", len(branches))
 	return nil
+}
+
+func countCatalogGroups(groups []catalog.Group, data map[string]map[string]*catalog.Entry) int {
+	count := 0
+	for _, group := range groups {
+		for _, code := range group.Codes {
+			if data[group.Branch][code] != nil {
+				count++
+				break
+			}
+		}
+	}
+	return count
+}
+
+// loadCatalogData, önceki başarılı katalog snapshot'ını yükler. Katalog arşiv
+// niteliğinde olduğu için yeni koşuda alınamayan dersler bu veriyle korunur.
+func loadCatalogData(dir string) (map[string]map[string]*catalog.Entry, error) {
+	out := map[string]map[string]*catalog.Entry{}
+	entries, err := os.ReadDir(dir)
+	if os.IsNotExist(err) {
+		return out, nil
+	}
+	if err != nil {
+		return nil, err
+	}
+	for _, file := range entries {
+		if file.IsDir() || !strings.HasSuffix(file.Name(), ".json") || file.Name() == "index.json" {
+			continue
+		}
+		branch := strings.TrimSuffix(file.Name(), ".json")
+		var values map[string]catalog.Entry
+		raw, err := os.ReadFile(filepath.Join(dir, file.Name()))
+		if err != nil {
+			return nil, err
+		}
+		if err := json.Unmarshal(raw, &values); err != nil {
+			return nil, fmt.Errorf("%s okunamadı: %w", file.Name(), err)
+		}
+		out[branch] = map[string]*catalog.Entry{}
+		for code, value := range values {
+			copy := value
+			out[branch][code] = &copy
+		}
+	}
+	return out, nil
+}
+
+func mergeCatalogData(previous, fresh map[string]map[string]*catalog.Entry) (map[string]map[string]*catalog.Entry, int64) {
+	merged := map[string]map[string]*catalog.Entry{}
+	var retained int64
+	for branch, entries := range previous {
+		merged[branch] = map[string]*catalog.Entry{}
+		for code, entry := range entries {
+			merged[branch][code] = entry
+			retained++
+		}
+	}
+	for branch, entries := range fresh {
+		if merged[branch] == nil {
+			merged[branch] = map[string]*catalog.Entry{}
+		}
+		for code, entry := range entries {
+			if _, existed := merged[branch][code]; existed {
+				retained--
+			}
+			merged[branch][code] = entry
+		}
+	}
+	return merged, retained
 }
 
 func logf(format string, args ...any) {

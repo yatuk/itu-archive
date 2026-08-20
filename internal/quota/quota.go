@@ -13,6 +13,7 @@ package quota
 import (
 	"bufio"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -21,6 +22,11 @@ import (
 
 	"itu-scraper/internal/model"
 )
+
+// ErrIncompleteInitial, zaman serisinin ilk ölçümü bütün branşları kapsamadığında
+// döner. Eksik bir ilk ölçümü "Full" diye kaydetmek, hiç görülmeyen CRN'leri
+// gerçekten yokmuş gibi gösterir; güvenilir bir temel oluşana kadar ölçüm atlanır.
+var ErrIncompleteInitial = errors.New("ilk kontenjan ölçümü kısmi; tam temel snapshot bekleniyor")
 
 // Snapshot, JSONL dosyasındaki tek bir satır.
 type Snapshot struct {
@@ -94,12 +100,17 @@ func Replay(path string) (*State, int, error) {
 	return st, lines, sc.Err()
 }
 
-// Append, yeni bir ölçümü dosyaya ekler. Değişen hiçbir şey yoksa dosyaya
-// dokunmaz ve false döner; böylece sakin dönemlerde boş commit birikmez.
-func Append(path string, sections []model.Section, now time.Time) (bool, Snapshot, error) {
+// Append, yeni bir ölçümü dosyaya ekler. complete=false ise görülen CRN'lerin
+// değerleri yine güncellenir fakat görülmeyen CRN'ler Gone sayılmaz; çünkü bunlar
+// kapanmış değil, başarısız bir branş isteğinin arkasında kalmış olabilir.
+// Değişen hiçbir şey yoksa dosyaya dokunmaz ve false döner.
+func Append(path string, sections []model.Section, now time.Time, complete bool) (bool, Snapshot, error) {
 	prev, lines, err := Replay(path)
 	if err != nil {
 		return false, Snapshot{}, err
+	}
+	if lines == 0 && !complete {
+		return false, Snapshot{}, ErrIncompleteInitial
 	}
 
 	snap := Snapshot{
@@ -119,9 +130,11 @@ func Append(path string, sections []model.Section, now time.Time) (bool, Snapsho
 			snap.Enr[s.CRN] = s.Enrolled
 		}
 	}
-	for crn := range prev.Enr {
-		if _, ok := seen[crn]; !ok {
-			snap.Gone = append(snap.Gone, crn)
+	if complete {
+		for crn := range prev.Enr {
+			if _, ok := seen[crn]; !ok {
+				snap.Gone = append(snap.Gone, crn)
+			}
 		}
 	}
 	sort.Strings(snap.Gone)

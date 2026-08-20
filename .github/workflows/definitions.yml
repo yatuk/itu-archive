@@ -34,15 +34,21 @@ jobs:
       - name: Doğrula
         run: go run ./cmd/validate -quiet -skip-site
 
+      - name: SEO sayfalarını veriden üret
+        shell: bash
+        run: |
+          ASSET_VERSION="$(grep -o 'style.css?v=[^" ]*' docs/index.html | head -1 | cut -d= -f2)"
+          go run ./cmd/site -version "$ASSET_VERSION"
+
       - name: Commit
         run: |
-          if git diff --quiet -- docs/data/buildings.json docs/data/programs.json; then
+          if git diff --quiet -- docs; then
             echo 'Tanımlarda değişiklik yok.' >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           git config user.name  'itu-scraper[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add docs/data/buildings.json docs/data/programs.json
+          git add docs
           git commit -m "resmî tanımlar: $(date -u +'%Y-%m-%d') aylık taraması"
           for wait in 5 10 20 40; do
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0

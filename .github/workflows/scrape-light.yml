@@ -42,6 +42,12 @@ jobs:
       - name: Veriyi doğrula
         run: go run ./cmd/validate -quiet -skip-site
 
+      - name: SEO sayfalarını veriden üret
+        shell: bash
+        run: |
+          ASSET_VERSION="$(grep -o 'style.css?v=[^" ]*' docs/index.html | head -1 | cut -d= -f2)"
+          go run ./cmd/site -version "$ASSET_VERSION"
+
       - name: Değişiklikleri özetle
         id: diff
         run: |
@@ -49,7 +55,7 @@ jobs:
           # status.json her koşuda tazelenir; tek başına değiştiyse yalnızca
           # bayatken commit edilir (keepalive — sessiz dönemde commit gürültüsü).
           data_changed=false
-          if ! git diff --quiet -- docs/data ':!docs/data/status.json'; then
+          if ! git diff --quiet -- docs ':!docs/data/status.json'; then
             data_changed=true
           fi
           # HEAD'deki status.json 24 saatten eski mi? Yoksa/bozuksa da bayat sayılır.
@@ -63,7 +69,7 @@ jobs:
             {
               echo '## Değişen veri'
               echo '```'
-              git diff --stat -- docs/data | tail -40
+              git diff --stat -- docs | tail -40
               echo '```'
             } >> "$GITHUB_STEP_SUMMARY"
           else
@@ -76,7 +82,7 @@ jobs:
         run: |
           git config user.name  'itu-scraper[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add docs/data
+          git add docs
           git commit -m "veri (hafif): $(date -u +'%Y-%m-%d %H:%M') UTC taraması"
           # Eşzamanlı bir commit araya girmişse rebase edip artan beklemeyle tekrar dene.
           for wait in 5 10 20 40; do

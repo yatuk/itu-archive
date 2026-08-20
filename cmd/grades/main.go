@@ -102,14 +102,19 @@ func run(out string, workers int, rps float64, limit int, yl []string) error {
 	}
 	logf("%d kod → %d (brans, taban) grubu, yıllar %s", len(codes), len(groups), strings.Join(yl, ","))
 
-	byBranch := gc.ScrapeAll(ctx, groups, yl, workers, func(format string, args ...any) {
+	fresh := gc.ScrapeAll(ctx, groups, yl, workers, func(format string, args ...any) {
 		logf(format, args...)
 	})
+	previous, err := loadGradesData(filepath.Join(out, "data", "grades"))
+	if err != nil {
+		return err
+	}
+	byBranch, retained := mergeGradesData(previous, fresh)
 	var count int
 	for _, es := range byBranch {
 		count += len(es)
 	}
-	logf("%d dönem dağılımı (%d branş dosyası)", count, len(byBranch))
+	logf("%d dönem dağılımı (%d branş dosyası, %d önceki başarılı kayıt korundu)", count, len(byBranch), retained)
 
 	fetchedAt := time.Now().UTC().Format(time.RFC3339)
 	branches := make([]string, 0, len(byBranch))
@@ -127,15 +132,89 @@ func run(out string, workers int, rps float64, limit int, yl []string) error {
 		index = append(index, map[string]any{"branch": b, "terms": len(es)})
 	}
 	if err := st.WriteJSON(map[string]any{
-		"generatedAt": fetchedAt,
-		"years":       yl,
-		"terms":       count,
-		"branches":    index,
+		"generatedAt":   fetchedAt,
+		"years":         yl,
+		"terms":         count,
+		"retainedTerms": retained,
+		"branches":      index,
 	}, "data", "grades", "index.json"); err != nil {
 		return err
 	}
 	logf("bitti")
 	return nil
+}
+
+func loadGradesData(dir string) (map[string][]grades.Entry, error) {
+	out := map[string][]grades.Entry{}
+	entries, err := os.ReadDir(dir)
+	if os.IsNotExist(err) {
+		return out, nil
+	}
+	if err != nil {
+		return nil, err
+	}
+	for _, file := range entries {
+		if file.IsDir() || !strings.HasSuffix(file.Name(), ".json") || file.Name() == "index.json" {
+			continue
+		}
+		branch := strings.TrimSuffix(file.Name(), ".json")
+		raw, err := os.ReadFile(filepath.Join(dir, file.Name()))
+		if err != nil {
+			return nil, err
+		}
+		var values []grades.Entry
+		if err := json.Unmarshal(raw, &values); err != nil {
+			return nil, fmt.Errorf("%s okunamadı: %w", file.Name(), err)
+		}
+		out[branch] = values
+	}
+	return out, nil
+}
+
+func gradeKey(entry grades.Entry) string {
+	term := entry.Donem
+	if term == "" {
+		term = entry.Term
+	}
+	return entry.Code + "\x00" + term
+}
+
+func mergeGradesData(previous, fresh map[string][]grades.Entry) (map[string][]grades.Entry, int) {
+	allBranches := map[string]bool{}
+	for branch := range previous {
+		allBranches[branch] = true
+	}
+	for branch := range fresh {
+		allBranches[branch] = true
+	}
+	merged := map[string][]grades.Entry{}
+	retained := 0
+	for branch := range allBranches {
+		byKey := map[string]grades.Entry{}
+		for _, entry := range previous[branch] {
+			byKey[gradeKey(entry)] = entry
+		}
+		retained += len(byKey)
+		for _, entry := range fresh[branch] {
+			key := gradeKey(entry)
+			if _, existed := byKey[key]; existed {
+				retained--
+			}
+			byKey[key] = entry
+		}
+		values := make([]grades.Entry, 0, len(byKey))
+		for _, entry := range byKey {
+			values = append(values, entry)
+		}
+		sort.Slice(values, func(i, j int) bool {
+			if values[i].Code != values[j].Code {
+				return values[i].Code < values[j].Code
+			}
+			return gradeKey(values[i]) < gradeKey(values[j])
+		})
+		merged[branch] = values
+	}
+	return merged, retained
 }
 
 func logf(format string, args ...any) {

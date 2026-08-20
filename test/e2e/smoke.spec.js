@@ -12,7 +12,7 @@ import { test, expect } from '@playwright/test';
 /** Üretilen SEO sayfalarından her tipten bir örnek. */
 const SEO_SAYFALARI = [
   { yol: '/dersler/2025-2026-bahar/', beklenenH1: /Bahar Dönemi/ },
-  { yol: '/ders/BLG-102E/', beklenenH1: /BLG 102E/ },
+  { yol: '/ders/blg-102e/', beklenenH1: /BLG 102E/ },
   { yol: '/brans/BLG/', beklenenH1: /BLG/ },
   { yol: '/hoca/muhammed-lutfi-yarar/', beklenenH1: /Muhammed Lütfi Yarar/ },
   { yol: '/gano-hesaplama/', beklenenH1: /GANO/ },
@@ -548,7 +548,7 @@ test.describe('SEO sayfaları', () => {
 test.describe('Düzen bütünlüğü', () => {
   // Kayıt haftasında birincil bağlam telefon: sayfa gövdesi asla yatay kaymamalı.
   // Geniş içerik (tablo) kendi kabında kayar.
-  for (const yol of ['/', '/ders/BLG-102E/', '/dersler/2025-2026-bahar/']) {
+  for (const yol of ['/', '/ders/blg-102e/', '/dersler/2025-2026-bahar/']) {
     test(`${yol} · sayfa yatay taşmaz`, async ({ page }) => {
       await page.goto(yol);
       await page.waitForLoadState('networkidle');

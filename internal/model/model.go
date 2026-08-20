@@ -37,7 +37,7 @@ type TermMeta struct {
 	Term      string       `json:"term"`
 	Slug      string       `json:"slug"`
 	ScrapedAt string       `json:"scrapedAt"`
-	Source    string       `json:"source"` // veri kaynağı etiketi (site: "itu-archive")
+	Source    string       `json:"source"`         // veri kaynağı etiketi (site: "itu-archive")
 	Live      bool         `json:"live,omitempty"` // aktif dönem mi (canlı tarama)
 	Sections  int          `json:"sections"`
 	Courses   int          `json:"courses"`
@@ -112,8 +112,8 @@ type CalendarEvent struct {
 // (0 = tümü; 15 lisans, 16 yatay-ÇAP, 17 önkayıt, 18 hazırlık, 19 lisansüstü,
 // 20 II. öğretim lisansüstü). Tek türlü dosyada adla birlikte yazılır.
 type Calendar struct {
-	Year      string          `json:"year"`   // "2026-2027 Eğitim - Öğretim Yılı"
-	YearID    string          `json:"yearId"` // akademikyil parametresi
+	Year      string          `json:"year"`           // "2026-2027 Eğitim - Öğretim Yılı"
+	YearID    string          `json:"yearId"`         // akademikyil parametresi
 	Type      string          `json:"type,omitempty"` // takvim türü adı ("Lisans", ...)
 	ScrapedAt string          `json:"scrapedAt"`
 	Events    []CalendarEvent `json:"events"`
@@ -130,13 +130,15 @@ type SiteIndex struct {
 }
 
 type TermRef struct {
-	Slug      string `json:"slug"`
-	Label     string `json:"label"`
-	ScrapedAt string `json:"scrapedAt"`
-	Source    string `json:"source"` // "itu-archive"
-	Live      bool   `json:"live,omitempty"` // aktif dönem (canlı) işareti
-	Sections  int    `json:"sections"`
-	Missing   bool   `json:"missing,omitempty"` // veri bulunamayan dönem (arşiv boşluğu)
+	Slug           string   `json:"slug"`
+	Label          string   `json:"label"`
+	ScrapedAt      string   `json:"scrapedAt"`
+	Source         string   `json:"source"`         // "itu-archive"
+	Live           bool     `json:"live,omitempty"` // aktif dönem (canlı) işareti
+	Sections       int      `json:"sections"`
+	Missing        bool     `json:"missing,omitempty"` // veri bulunamayan dönem (arşiv boşluğu)
+	Partial        bool     `json:"partial,omitempty"` // bazı branşlar son taramada alınamadı
+	FailedBranches []string `json:"failedBranches,omitempty"`
 }
 
 type CalRef struct {

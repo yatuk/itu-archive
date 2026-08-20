@@ -3,6 +3,7 @@ package quota
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"os"
 	"path/filepath"
 	"testing"
@@ -30,7 +31,7 @@ func TestAppendLifecycle(t *testing.T) {
 	}
 
 	// İlk ölçüm: dosya yok, Full snapshot.
-	written, snap, err := Append(path, secs(50, 10), now)
+	written, snap, err := Append(path, secs(50, 10), now, true)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -39,7 +40,7 @@ func TestAppendLifecycle(t *testing.T) {
 	}
 
 	// Aynı değerler: dosyaya dokunulmamalı.
-	written, _, err = Append(path, secs(50, 10), now.Add(time.Hour))
+	written, _, err = Append(path, secs(50, 10), now.Add(time.Hour), true)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -48,7 +49,7 @@ func TestAppendLifecycle(t *testing.T) {
 	}
 
 	// Doluluk değişti: delta yalnızca değişen CRN'i içermeli.
-	written, snap, err = Append(path, secs(50, 25), now.Add(2*time.Hour))
+	written, snap, err = Append(path, secs(50, 25), now.Add(2*time.Hour), true)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -68,6 +69,48 @@ func TestAppendLifecycle(t *testing.T) {
 	}
 	if st.Enr["100"] != 25 || st.Cap["100"] != 50 {
 		t.Errorf("son durum yanlış: %+v", st)
+	}
+}
+
+func TestAppendPartialDoesNotRemoveUnseenCRNs(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "partial.jsonl")
+	t0 := time.Date(2026, 1, 15, 10, 0, 0, 0, time.UTC)
+	full := []model.Section{
+		{CRN: "A", Capacity: 50, Enrolled: 10},
+		{CRN: "B", Capacity: 40, Enrolled: 20},
+	}
+	if written, _, err := Append(path, full, t0, true); err != nil || !written {
+		t.Fatalf("tam temel yazılamadı: written=%v err=%v", written, err)
+	}
+
+	// B'nin branşı çekilemedi. A'daki gerçek değişiklik kaydedilmeli, B ise Gone
+	// olmadan önceki güvenilir durumuyla korunmalı.
+	partial := []model.Section{{CRN: "A", Capacity: 50, Enrolled: 25}}
+	written, snap, err := Append(path, partial, t0.Add(30*time.Minute), false)
+	if err != nil || !written {
+		t.Fatalf("kısmi delta yazılamadı: written=%v err=%v", written, err)
+	}
+	if len(snap.Gone) != 0 {
+		t.Fatalf("kısmi ölçüm görülmeyen CRN'yi kaldırdı: %v", snap.Gone)
+	}
+	st, _, err := Replay(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if st.Enr["A"] != 25 || st.Enr["B"] != 20 {
+		t.Fatalf("kısmi ölçüm güvenilir durumu bozdu: %+v", st.Enr)
+	}
+}
+
+func TestAppendRejectsPartialInitialSnapshot(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "partial-first.jsonl")
+	secs := []model.Section{{CRN: "A", Capacity: 50, Enrolled: 10}}
+	written, _, err := Append(path, secs, time.Now(), false)
+	if !errors.Is(err, ErrIncompleteInitial) || written {
+		t.Fatalf("kısmi ilk ölçüm reddedilmeliydi: written=%v err=%v", written, err)
+	}
+	if _, statErr := os.Stat(path); !os.IsNotExist(statErr) {
+		t.Fatalf("reddedilen ilk ölçüm dosya oluşturmamalı: %v", statErr)
 	}
 }
 

@@ -44,18 +44,47 @@ func (s *Store) Path(parts ...string) string { return s.path(parts...) }
 // tek satırlık JSON'da git diff'i işe yaramaz hale geliyor.
 func (s *Store) WriteJSON(v any, parts ...string) error {
 	p := s.path(parts...)
-	if err := os.MkdirAll(filepath.Dir(p), 0o755); err != nil {
+	return atomicWrite(p, func(f *os.File) error {
+		enc := json.NewEncoder(f)
+		enc.SetIndent("", " ")
+		enc.SetEscapeHTML(false)
+		return enc.Encode(v)
+	})
+}
+
+// atomicWrite, hedefi ancak içerik bütünüyle yazılıp diske aktarıldıktan sonra
+// değiştirir. Scraper iptal edilir veya encoder hata verirse önceki geçerli dosya
+// yerinde kalır; yarım JSON/CSV hiçbir zaman yayın ağacında görünmez.
+func atomicWrite(path string, write func(*os.File) error) (err error) {
+	dir := filepath.Dir(path)
+	if err := os.MkdirAll(dir, 0o755); err != nil {
 		return err
 	}
-	f, err := os.Create(p)
+	tmp, err := os.CreateTemp(dir, "."+filepath.Base(path)+".tmp-*")
 	if err != nil {
 		return err
 	}
-	defer f.Close()
-	enc := json.NewEncoder(f)
-	enc.SetIndent("", " ")
-	enc.SetEscapeHTML(false)
-	return enc.Encode(v)
+	tmpName := tmp.Name()
+	defer func() {
+		_ = tmp.Close()
+		_ = os.Remove(tmpName)
+	}()
+	if err := tmp.Chmod(0o644); err != nil {
+		return err
+	}
+	if err := write(tmp); err != nil {
+		return err
+	}
+	if err := tmp.Sync(); err != nil {
+		return err
+	}
+	if err := tmp.Close(); err != nil {
+		return err
+	}
+	if err := os.Rename(tmpName, path); err != nil {
+		return fmt.Errorf("geçici dosya hedefe taşınamadı: %w", err)
+	}
+	return nil
 }
 
 // Source, üretilen tüm veride kullanılan kaynak etiketi.
@@ -148,38 +177,32 @@ func (s *Store) writeSearchIndex(slug string, sections []model.Section) error {
 
 func (s *Store) writeCSV(slug string, sections []model.Section) error {
 	p := s.path("data", "terms", slug, "all.csv")
-	if err := os.MkdirAll(filepath.Dir(p), 0o755); err != nil {
-		return err
-	}
-	f, err := os.Create(p)
-	if err != nil {
-		return err
-	}
-	defer f.Close()
-	if _, err := f.WriteString("\xef\xbb\xbf"); err != nil { // Excel için BOM
-		return err
-	}
-	w := csv.NewWriter(f)
-	defer w.Flush()
-	if err := w.Write([]string{
-		"CRN", "Ders Kodu", "Branş", "Seviye", "Ders Adı", "Öğretim Yöntemi", "Öğretim Üyesi",
-		"Bina", "Gün", "Saat", "Derslik", "Kontenjan", "Yazılan", "Rezervasyon",
-		"Alabilen Programlar", "Önşart", "Sınıf/Kredi Önşartı",
-	}); err != nil {
-		return err
-	}
-	for _, s := range sections {
+	return atomicWrite(p, func(f *os.File) error {
+		if _, err := f.WriteString("\xef\xbb\xbf"); err != nil { // Excel için BOM
+			return err
+		}
+		w := csv.NewWriter(f)
 		if err := w.Write([]string{
-			s.CRN, s.Code, s.Branch, s.Level, s.Name, s.Method, s.Instructor,
-			strings.Join(s.Buildings, " | "), strings.Join(s.Days, " | "),
-			strings.Join(s.Times, " | "), strings.Join(s.Rooms, " | "),
-			strconv.Itoa(s.Capacity), strconv.Itoa(s.Enrolled), s.Reserved,
-			strings.Join(s.Programs, ", "), s.Prereq, s.ClassReq,
+			"CRN", "Ders Kodu", "Branş", "Seviye", "Ders Adı", "Öğretim Yöntemi", "Öğretim Üyesi",
+			"Bina", "Gün", "Saat", "Derslik", "Kontenjan", "Yazılan", "Rezervasyon",
+			"Alabilen Programlar", "Önşart", "Sınıf/Kredi Önşartı",
 		}); err != nil {
 			return err
 		}
-	}
-	return w.Error()
+		for _, s := range sections {
+			if err := w.Write([]string{
+				s.CRN, s.Code, s.Branch, s.Level, s.Name, s.Method, s.Instructor,
+				strings.Join(s.Buildings, " | "), strings.Join(s.Days, " | "),
+				strings.Join(s.Times, " | "), strings.Join(s.Rooms, " | "),
+				strconv.Itoa(s.Capacity), strconv.Itoa(s.Enrolled), s.Reserved,
+				strings.Join(s.Programs, ", "), s.Prereq, s.ClassReq,
+			}); err != nil {
+				return err
+			}
+		}
+		w.Flush()
+		return w.Error()
+	})
 }
 
 // WriteExams, bir dönemin sınav takvimini yazar.

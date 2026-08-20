@@ -21,9 +21,9 @@ export function renderTerms() {
     }
     const live = t.live;
     const src = live ? 'canlı tarama' : 'arşiv dökümü';
-    // Faz 6: 2025-2026 Güz dönem başında alınmış, komşulara göre eksik görünüyor.
-    const partial = t.slug === '2025-2026-guz' && t.sections < 3200
-      ? '<p class="meta warn">Dönem başında alınan döküm komşu dönemlerden az, eksik olabilir.</p>'
+    const failed = Array.isArray(t.failedBranches) ? t.failedBranches.length : 0;
+    const partial = t.partial
+      ? `<p class="meta warn">Son tarama kısmi${failed ? `: ${failed} branş alınamadı` : ''}; sonuçlar eksik olabilir.</p>`
       : '';
     return `<article class="termcard reveal">
       <div>

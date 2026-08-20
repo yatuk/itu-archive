@@ -698,13 +698,32 @@ func (r *Result) checkIndex(root string) {
 		r.errf("data/index.json okunamadı: %v", err)
 		return
 	}
+	liveCount := 0
 	for _, t := range ix.Terms {
 		if t.Missing {
 			continue
 		}
-		if _, err := os.Stat(filepath.Join(root, "data", "terms", t.Slug, "meta.json")); err != nil {
+		metaPath := filepath.Join(root, "data", "terms", t.Slug, "meta.json")
+		var meta model.TermMeta
+		if err := readJSON(metaPath, &meta); err != nil {
 			r.errf("index: %s dönemi için meta.json yok", t.Slug)
+			continue
 		}
+		if t.Live {
+			liveCount++
+			if t.Slug != ix.CurrentSlug {
+				r.errf("index: live dönem %s, currentSlug ise %s", t.Slug, ix.CurrentSlug)
+			}
+		}
+		if meta.Live != t.Live {
+			r.errf("index: %s live=%v, meta.json live=%v", t.Slug, t.Live, meta.Live)
+		}
+		if meta.Partial != t.Partial || strings.Join(meta.FailedBranches, "\x00") != strings.Join(t.FailedBranches, "\x00") {
+			r.errf("index: %s kısmi tarama bilgisi meta.json ile uyuşmuyor", t.Slug)
+		}
+	}
+	if liveCount != 1 {
+		r.errf("index: tam olarak bir live dönem olmalı, %d bulundu", liveCount)
 	}
 	for _, c := range ix.Calendars {
 		if _, err := os.Stat(filepath.Join(root, "data", "calendar", c.YearID+".json")); err != nil {

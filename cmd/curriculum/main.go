@@ -9,12 +9,15 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
 	"os"
 	"os/signal"
-	"sync/atomic"
+	"path/filepath"
+	"sort"
+	"strings"
 	"syscall"
 
 	"itu-scraper/internal/curriculum"
@@ -54,21 +57,27 @@ func run(out string, workers int, rps float64, only string) error {
 			}
 		}
 		programs = filtered
+		if len(programs) == 0 {
+			return fmt.Errorf("%s programı bulunamadı", only)
+		}
 	}
 	logf("%d program bulundu (%d önlisans, %d lisans, %d yüksek lisans, %d doktora)",
 		len(programs),
 		curriculum.Count(programs, "OL"), curriculum.Count(programs, "LS"),
 		curriculum.Count(programs, "YL"), curriculum.Count(programs, "DR"))
 
-	var done int64
-	plans, err := cc.ScrapeAll(ctx, programs, workers, func(format string, args ...any) {
+	fresh, err := cc.ScrapeAll(ctx, programs, workers, func(format string, args ...any) {
 		logf(format, args...)
 	})
 	if err != nil {
 		return err
 	}
-	atomic.AddInt64(&done, int64(len(plans)))
-	logf("%d/%d programın müfredatı çekildi", len(plans), len(programs))
+	previous, err := loadCurriculumPlans(filepath.Join(out, "data", "curriculum"))
+	if err != nil {
+		return err
+	}
+	plans, retained := mergeCurriculumPlans(previous, fresh)
+	logf("%d/%d program taze çekildi; %d önceki başarılı plan korundu", len(fresh), len(programs), retained)
 
 	index := make([]map[string]string, 0, len(plans))
 	for _, p := range plans {
@@ -84,6 +93,60 @@ func run(out string, workers int, rps float64, only string) error {
 	}
 	logf("bitti")
 	return nil
+}
+
+func loadCurriculumPlans(dir string) ([]*curriculum.Plan, error) {
+	entries, err := os.ReadDir(dir)
+	if os.IsNotExist(err) {
+		return nil, nil
+	}
+	if err != nil {
+		return nil, err
+	}
+	var plans []*curriculum.Plan
+	for _, file := range entries {
+		if file.IsDir() || !strings.HasSuffix(file.Name(), ".json") || file.Name() == "index.json" {
+			continue
+		}
+		raw, err := os.ReadFile(filepath.Join(dir, file.Name()))
+		if err != nil {
+			return nil, err
+		}
+		var plan curriculum.Plan
+		if err := json.Unmarshal(raw, &plan); err != nil {
+			return nil, fmt.Errorf("%s okunamadı: %w", file.Name(), err)
+		}
+		if plan.ProgramCode != "" {
+			copy := plan
+			plans = append(plans, &copy)
+		}
+	}
+	return plans, nil
+}
+
+func mergeCurriculumPlans(previous, fresh []*curriculum.Plan) ([]*curriculum.Plan, int) {
+	byCode := map[string]*curriculum.Plan{}
+	for _, plan := range previous {
+		if plan != nil && plan.ProgramCode != "" {
+			byCode[plan.ProgramCode] = plan
+		}
+	}
+	retained := len(byCode)
+	for _, plan := range fresh {
+		if plan == nil || plan.ProgramCode == "" {
+			continue
+		}
+		if _, existed := byCode[plan.ProgramCode]; existed {
+			retained--
+		}
+		byCode[plan.ProgramCode] = plan
+	}
+	merged := make([]*curriculum.Plan, 0, len(byCode))
+	for _, plan := range byCode {
+		merged = append(merged, plan)
+	}
+	sort.Slice(merged, func(i, j int) bool { return merged[i].ProgramCode < merged[j].ProgramCode })
+	return merged, retained
 }
 
 func logf(format string, args ...any) {

@@ -9,6 +9,7 @@ package main
 
 import (
 	"context"
+	"errors"
 	"flag"
 	"fmt"
 	"log"
@@ -73,7 +74,12 @@ func run(out string, workers int, rps float64) error {
 	}
 
 	path := quota.Path(out, slug)
-	written, snap, err := quota.Append(path, sections, time.Now())
+	complete := len(failed) == 0
+	written, snap, err := quota.Append(path, sections, time.Now(), complete)
+	if errors.Is(err, quota.ErrIncompleteInitial) {
+		logf("%s: ilk ölçüm kısmi olduğu için güvenilir temel oluşana kadar atlandı", slug)
+		return nil
+	}
 	if err != nil {
 		return err
 	}

@@ -1,7 +1,6 @@
 name: site
 
-# Her push ve PR'de test + veri bütünlüğü denetimi.
-# SEO sayfaları bu workflow'da üretilmez; manuel çalıştırılır (go run ./cmd/site).
+# Her push ve PR'de test + veri bütünlüğü + deterministik SEO üretimi denetimi.
 
 on:
   push:
@@ -28,5 +27,13 @@ jobs:
       - name: Frontend saf fonksiyon testleri
         run: node --test docs/assets/core/core.test.js
 
+
+      - name: SEO sayfalarını yeniden üret ve drift denetle
+        shell: bash
+        run: |
+          ASSET_VERSION="$(grep -o 'style.css?v=[^" ]*' docs/index.html | head -1 | cut -d= -f2)"
+          go run ./cmd/site -version "$ASSET_VERSION"
+          git diff --exit-code -- docs
+
       - name: Veri bütünlüğü
-        run: go run ./cmd/validate -quiet -skip-site
+        run: go run ./cmd/validate -quiet

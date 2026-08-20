@@ -2505,6 +2505,15 @@ body.modal-open { overflow: hidden; }
 .seo-branchlist a { color: var(--cyan); font-weight: 500; }
 .seo-branchlist a:hover { color: var(--acid); }
 .seo-branchlist span { color: var(--dimmer); font-size: 12px; white-space: nowrap; }
+.seo-instructor-courses li > span:first-child { color: var(--text); font-size: 14px; white-space: normal; }
+.seo-instructor-courses li > span:last-child { font-variant-numeric: tabular-nums; }
+.seo-data-note {
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid var(--hairline);
+  color: var(--dimmer);
+  font-size: 12px;
+}
 
 .seo-codes { display: flex; flex-wrap: wrap; gap: 4px 8px; }
 .seo-codes code {

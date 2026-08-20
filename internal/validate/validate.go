@@ -764,6 +764,8 @@ func (r *Result) checkStatus(root string) {
 }
 
 func (r *Result) checkSitePages(root string) {
+	r.checkGeneratedSEOMetadata(root)
+
 	derDir := filepath.Join(root, "dersler")
 	bransDir := filepath.Join(root, "brans")
 	dersDir := filepath.Join(root, "ders")
@@ -926,21 +928,42 @@ func (r *Result) checkSitePages(root string) {
 		checkPage(root, s, false)
 	}
 
-	// Sitemap kapsamı: sitedeki her sayfa sitemap'te, sitemap'teki her loc dosyada.
-	b, err := os.ReadFile(filepath.Join(root, "sitemap.xml"))
+	// Sitemap kapsamı: kök artık URL-tiplerine ayrılmış bir sitemap index'tir.
+	// Bütün alt sitemap'leri çözerek tek page URL kümesine indirgeriz.
+	smLocs, err := collectSitemapPageLocs(root, filepath.Join(root, "sitemap.xml"), map[string]bool{})
 	if err != nil {
-		r.errf("seo: sitemap.xml okunamadı")
+		r.errf("seo: sitemap okunamadı: %v", err)
 		return
 	}
-	locRe := regexp.MustCompile(`<loc>([^<]*)</loc>`)
-	smLocs := map[string]bool{}
-	for _, m := range locRe.FindAllStringSubmatch(string(b), -1) {
-		u := m[1]
-		if !strings.HasPrefix(u, "https://itu-ders.com/") {
-			r.errf("seo: sitemap'te beklenmeyen domain: %s", u)
+
+	// İngilizce sayfalar da kendi sitemap'inde eksiksiz olmalı. Her /en/ HTML
+	// dosyasının sitemap'te olduğunu ve her EN loc'un dosyada karşılığı bulunduğunu
+	// doğrula; ardından TR kapsam denetiminden ayır.
+	enRoot := filepath.Join(root, "en")
+	_ = filepath.WalkDir(enRoot, func(path string, d os.DirEntry, walkErr error) error {
+		if walkErr != nil || d.IsDir() || d.Name() != "index.html" {
+			return nil
+		}
+		rel, err := filepath.Rel(root, filepath.Dir(path))
+		if err != nil {
+			return nil
+		}
+		u := "https://itu-ders.com/" + strings.Trim(filepath.ToSlash(rel), "/") + "/"
+		if !smLocs[u] {
+			r.errf("seo: EN sitemap'te eksik sayfa: %s", u)
+		}
+		return nil
+	})
+	for u := range smLocs {
+		if !strings.HasPrefix(u, "https://itu-ders.com/en/") {
 			continue
 		}
-		smLocs[u] = true
+		if target := sitemapURLToFile(root, u); target == "" {
+			r.errf("seo: EN sitemap URL'i çözülemedi: %s", u)
+		} else if _, err := os.Stat(target); err != nil {
+			r.errf("seo: EN sitemap URL'inin dosyası yok: %s", u)
+		}
+		delete(smLocs, u)
 	}
 	// Kök sayfayı sitemap'te varsay.
 	delete(smLocs, "https://itu-ders.com/")
@@ -986,6 +1009,162 @@ func (r *Result) checkSitePages(root string) {
 		}
 		r.errf("seo: sitemap'te fazla URL: %s", u)
 	}
+}
+
+func (r *Result) checkGeneratedSEOMetadata(root string) {
+	titleRe := regexp.MustCompile(`(?s)<title>(.*?)</title>`)
+	descRe := regexp.MustCompile(`<meta name="description" content="([^"]*)">`)
+	canonicalRe := regexp.MustCompile(`<link rel="canonical" href="([^"]*)">`)
+	h1Re := regexp.MustCompile(`<h1(?:\s[^>]*)?>`)
+	jsonldRe := regexp.MustCompile(`(?s)<script type="application/ld\+json">(.*?)</script>`)
+	hreflangRe := regexp.MustCompile(`<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">`)
+	langRe := regexp.MustCompile(`<html lang="([^"]+)">`)
+
+	titles := map[string]string{}
+	descriptions := map[string]string{}
+	canonicals := map[string]string{}
+	_ = filepath.WalkDir(root, func(path string, d os.DirEntry, walkErr error) error {
+		if walkErr != nil || d.IsDir() || d.Name() != "index.html" {
+			return nil
+		}
+		b, err := os.ReadFile(path)
+		if err != nil {
+			r.errf("seo meta: %s okunamadı: %v", path, err)
+			return nil
+		}
+		s := string(b)
+		rel, _ := filepath.Rel(root, path)
+		if m := titleRe.FindStringSubmatch(s); len(m) == 2 {
+			if prev := titles[m[1]]; prev != "" {
+				r.errf("seo meta: mükerrer title %s ve %s", prev, rel)
+			} else {
+				titles[m[1]] = rel
+			}
+		} else {
+			r.errf("seo meta: %s title yok", rel)
+		}
+		if m := descRe.FindStringSubmatch(s); len(m) == 2 {
+			if prev := descriptions[m[1]]; prev != "" {
+				r.errf("seo meta: mükerrer description %s ve %s", prev, rel)
+			} else {
+				descriptions[m[1]] = rel
+			}
+		} else {
+			r.errf("seo meta: %s description yok", rel)
+		}
+		canonical := ""
+		if m := canonicalRe.FindStringSubmatch(s); len(m) == 2 {
+			canonical = m[1]
+			if strings.ContainsAny(canonical, "?#") {
+				r.errf("seo meta: %s canonical sorgu/hash içeriyor: %s", rel, canonical)
+			}
+			if prev := canonicals[canonical]; prev != "" {
+				r.errf("seo meta: mükerrer canonical %s ve %s", prev, rel)
+			} else {
+				canonicals[canonical] = rel
+			}
+		} else {
+			r.errf("seo meta: %s canonical yok", rel)
+		}
+		if n := len(h1Re.FindAllString(s, -1)); n != 1 {
+			r.errf("seo meta: %s H1 sayısı %d, beklenen 1", rel, n)
+		}
+		for _, m := range jsonldRe.FindAllStringSubmatch(s, -1) {
+			var v any
+			if err := json.Unmarshal([]byte(m[1]), &v); err != nil {
+				r.errf("seo meta: %s JSON-LD bozuk: %v", rel, err)
+			}
+		}
+
+		alts := hreflangRe.FindAllStringSubmatch(s, -1)
+		if len(alts) > 0 {
+			byLang := map[string]string{}
+			for _, alt := range alts {
+				byLang[alt[1]] = alt[2]
+			}
+			for _, code := range []string{"tr", "en", "x-default"} {
+				if byLang[code] == "" {
+					r.errf("seo hreflang: %s içinde %s eksik", rel, code)
+				}
+			}
+			if m := langRe.FindStringSubmatch(s); len(m) == 2 && byLang[m[1]] != canonical {
+				r.errf("seo hreflang: %s self-reference eksik", rel)
+			}
+		}
+
+		if strings.Contains(filepath.ToSlash(rel), "hoca/") {
+			for _, required := range []string{`"@type":"Person"`, `"@type":"BreadcrumbList"`, `class="seo-data-note"`} {
+				if !strings.Contains(s, required) {
+					r.errf("seo hoca: %s içinde %s eksik", rel, required)
+				}
+			}
+			if strings.Contains(s, `"affiliation"`) {
+				r.errf("seo hoca: %s doğrulanmamış affiliation içeriyor", rel)
+			}
+		}
+		return nil
+	})
+}
+
+func collectSitemapPageLocs(root, path string, visited map[string]bool) (map[string]bool, error) {
+	path = filepath.Clean(path)
+	if visited[path] {
+		return map[string]bool{}, nil
+	}
+	visited[path] = true
+	b, err := os.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+	locRe := regexp.MustCompile(`<loc>([^<]*)</loc>`)
+	locs := locRe.FindAllStringSubmatch(string(b), -1)
+	out := map[string]bool{}
+	if strings.Contains(string(b), "<sitemapindex") {
+		for _, m := range locs {
+			child := sitemapURLToRawFile(root, m[1])
+			if child == "" {
+				return nil, fmt.Errorf("sitemap index'te beklenmeyen URL: %s", m[1])
+			}
+			pages, err := collectSitemapPageLocs(root, child, visited)
+			if err != nil {
+				return nil, fmt.Errorf("%s: %w", m[1], err)
+			}
+			for u := range pages {
+				out[u] = true
+			}
+		}
+		return out, nil
+	}
+	for _, m := range locs {
+		u := m[1]
+		if !strings.HasPrefix(u, "https://itu-ders.com/") {
+			return nil, fmt.Errorf("beklenmeyen domain: %s", u)
+		}
+		out[u] = true
+	}
+	return out, nil
+}
+
+func sitemapURLToRawFile(root, u string) string {
+	const prefix = "https://itu-ders.com/"
+	if !strings.HasPrefix(u, prefix) {
+		return ""
+	}
+	rel := filepath.FromSlash(strings.TrimPrefix(u, prefix))
+	target := filepath.Clean(filepath.Join(root, rel))
+	rootClean := filepath.Clean(root) + string(os.PathSeparator)
+	if target != filepath.Clean(root) && !strings.HasPrefix(target, rootClean) {
+		return ""
+	}
+	return target
+}
+
+func sitemapURLToFile(root, u string) string {
+	target := sitemapURLToRawFile(root, u)
+	if target == "" {
+		return ""
+	}
+	return filepath.Join(target, "index.html")
 }
 
 func resolveHref(root, href, pagePath string) string {

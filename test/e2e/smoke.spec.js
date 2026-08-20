@@ -14,6 +14,7 @@ const SEO_SAYFALARI = [
   { yol: '/dersler/2025-2026-bahar/', beklenenH1: /Bahar Dönemi/ },
   { yol: '/ders/BLG-102E/', beklenenH1: /BLG 102E/ },
   { yol: '/brans/BLG/', beklenenH1: /BLG/ },
+  { yol: '/hoca/muhammed-lutfi-yarar/', beklenenH1: /Muhammed Lütfi Yarar/ },
   { yol: '/gano-hesaplama/', beklenenH1: /GANO/ },
 ];
 
@@ -527,6 +528,21 @@ test.describe('SEO sayfaları', () => {
       expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
     });
   }
+
+  test('hoca sayfası · arama niyeti özeti ve güvenli schema', async ({ page }) => {
+    await page.goto('/hoca/muhammed-lutfi-yarar/');
+
+    await expect(page).toHaveTitle(/İTÜ'de Verdiği Dersler/);
+    await expect(page.locator('.seo-stats')).toContainText('farklı ders');
+    await expect(page.locator('.seo-stats')).toContainText('son kayıt');
+    await expect(page.locator('.seo-instructor-courses')).toBeVisible();
+    await expect(page.locator('.seo-data-note')).toContainText('resmî personel profili değildir');
+
+    const graph = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
+    expect(graph.some((item) => item['@type'] === 'Person')).toBe(true);
+    expect(graph.some((item) => item['@type'] === 'BreadcrumbList')).toBe(true);
+    expect(JSON.stringify(graph)).not.toContain('affiliation');
+  });
 });
 
 test.describe('Düzen bütünlüğü', () => {

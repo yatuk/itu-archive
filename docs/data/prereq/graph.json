@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-19T03:16:26Z",
+ "generatedAt": "2026-08-20T03:16:30Z",
  "nodes": [
   {
    "code": "AKM 202",
@@ -28781,18 +28781,6 @@
    "name": "Zararlı Yazılım Analizi ve Tespiti",
    "branch": "SAO",
    "requirement": "( SAO 101 MIN. DD Veya SAO 101E MIN. DD )"
-  },
-  {
-   "code": "SAO 269",
-   "name": "-",
-   "branch": "SAO",
-   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
-  },
-  {
-   "code": "SAO 269E",
-   "name": "-",
-   "branch": "SAO",
-   "requirement": "( SAO 109 MIN. DD Veya SAO 109E MIN. DD )"
   },
   {
    "code": "SAO 270",
@@ -96557,14 +96545,6 @@
    "to": "SAO 264E"
   },
   {
-   "from": "SAO 109",
-   "to": "SAO 269"
-  },
-  {
-   "from": "SAO 109",
-   "to": "SAO 269E"
-  },
-  {
    "from": "SAO 109E",
    "to": "SAO 104"
   },
@@ -96643,14 +96623,6 @@
   {
    "from": "SAO 109E",
    "to": "SAO 264E"
-  },
-  {
-   "from": "SAO 109E",
-   "to": "SAO 269"
-  },
-  {
-   "from": "SAO 109E",
-   "to": "SAO 269E"
   },
   {
    "from": "SBP 111",

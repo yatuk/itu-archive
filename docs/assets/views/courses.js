@@ -6,16 +6,16 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt } from '../core/utils.js';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js';
 import { methodToCode } from '../core/urlcodes.js';
 import { loadProgramMap } from '../core/programs.js';
 import { state } from '../core/store.js';
-import { fillBar } from '../core/chart.js';
+import { quotaDisplay } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
 import { openCourseDetail } from '../core/course-detail.js';
-import { isTaken } from '../core/taken.js';
+import { I18N } from '../i18n.js';
 
 const PAGE = 200;
 const TIME_LABEL = { sabah: 'sabah (<12:00)', ogle: 'öğle (12:00-17:00)', aksam: 'akşam (≥17:00)' };
@@ -30,13 +30,12 @@ export function initCourses() {
   $('#f-program').addEventListener('change', applyFilters);
   $('#f-code').addEventListener('input', debounce(applyFilters, 120));
   $('#f-open').addEventListener('change', applyFilters);
-  $('#f-taken').addEventListener('change', applyFilters);
   $('#f-term').addEventListener('change', () => loadTerm($('#f-term').value));
   $('#more').addEventListener('click', () => renderRows(true));
   $('#csv').addEventListener('click', exportCSV);
   $('#tt-toggle').addEventListener('click', toggleTimetable);
-  // Tüm filtreler her zaman görünür: kayıt haftasında seviye/yöntem/program
-  // birincil filtreler kadar sık kullanılıyor, tıklama arkasına saklanmıyor.
+  // Sık kullanılan filtreler ilk sırada; seviye/yöntem/program/kod ikincil
+  // disclosure içinde. Açık/kapalı olması filtre değerlerini değiştirmez.
   $('#sel-all').addEventListener('change', () => {
     const on = $('#sel-all').checked;
     for (const r of state.filtered) {
@@ -58,6 +57,12 @@ export function initCourses() {
     updateSortUI();
     applyFilters();
   });
+  const moreToggle = $('#f-more-toggle');
+  moreToggle.addEventListener('click', () => {
+    const open = moreToggle.getAttribute('aria-expanded') !== 'true';
+    moreToggle.setAttribute('aria-expanded', String(open));
+    $('#filters-more').hidden = !open;
+  });
   // Mobil filtre bottom-sheet: "Filtreler (N)" düğmesi + uygula/temizle + karartma.
   const fsOpen = (open) => {
     $('#filters').classList.toggle('open', open);
@@ -70,7 +75,6 @@ export function initCourses() {
     for (const sel of ['#f-branch', '#f-day', '#f-time', '#f-level', '#f-method', '#f-program']) $(sel).value = '';
     $('#f-code').value = '';
     $('#f-open').checked = false;
-    $('#f-taken').checked = false;
     fsOpen(false);
     applyFilters();
   });
@@ -79,13 +83,15 @@ export function initCourses() {
 
 export async function loadTerm(slug) {
   state.termSlug = slug;
+  state.quota = null;
+  state.quotaLast = null;
   state.selected.clear(); // seçim döneme özeldir
   updateSelection();
   setStatus($('#resultline'), 'dönem yükleniyor…', { busy: true });
   // Faz 5.4: iskelet — dönem verisi gelene kadar shimmer satırları.
-  $('#rows').innerHTML = '<div class="skel">' +
+  $('#rows').innerHTML = '<tr class="skel-row"><td colspan="10"><div class="skel">' +
     '<div class="skel-line wide"></div>'.repeat(5) +
-    '</div>';
+    '</div></td></tr>';
   try {
     const [rows, meta] = await Promise.all([
       getJSON(`data/terms/${slug}/search.json`),
@@ -153,12 +159,17 @@ function buildSearchIndex(rows) {
 export async function loadQuota(slug) {
   try {
     const sum = await getJSON(`data/quota/${slug}.json`);
+    if (state.termSlug !== slug) return; // kullanıcı yükleme sürerken dönem değiştirdi
     state.quota = new Map(sum.courses.map((c) => [c.crn, c]));
     state.quotaLast = sum.last || null; // doluluk ölçüm zamanı (Faz 0.4)
   } catch {
+    if (state.termSlug !== slug) return;
     state.quota = null; // bu dönem için henüz ölçüm yok
     state.quotaLast = null;
   }
+  // Ölçüm özeti satırlarda tekrarlanmaz; yükleme bitince sonuç satırını bir kez
+  // yenileyerek global tazelik bilgisini görünür kıl.
+  if (state.rows.length) applyFilters();
 }
 
 export function applyFilters() {
@@ -171,7 +182,6 @@ export function applyFilters() {
   const program = $('#f-program').value;
   const code = $('#f-code').value.trim().toLowerCase();
   const openOnly = $('#f-open').checked;
-  const hideTaken = $('#f-taken').checked;
   // Arama terimleri boşluğa göre bölünür, sonra ortak normalizasyonla boşluksuz
   // anahtarlara indirilir ("BLG 102E" → ["blg","102e"], "BLG102E" → ["blg102e"]).
   const terms = q ? q.split(/\s+/).map(normSearch) : [];
@@ -189,7 +199,6 @@ export function applyFilters() {
     if (method && r[9] && r[9] !== method) return false;
     if (program && !programList(r).includes(program)) return false;
     if (openOnly && r[7] >= r[6]) return false;
-    if (hideTaken && isTaken(r[1])) return false;
     return true;
   };
   const fieldsOf = (i) => ({
@@ -250,16 +259,25 @@ export function applyFilters() {
       hint = ` · yalnızca ${rest} ile aramayı dene`;
     }
   }
-  $('#resultline').innerHTML = n === total
+  const measured = state.quotaLast ? fillMeasured(state.quotaLast) : '';
+  const quotaFreshness = measured ? ` · kontenjan ölçümü ${esc(measured)}` : '';
+  const scrapedAgo = state.scrapedAt ? timeAgo(state.scrapedAt) : '';
+  const scrapeFreshness = scrapedAgo
+    ? ` · <span class="${state.stale ? 'data-stale' : ''}">son tarama ${esc(scrapedAgo)}</span>`
+    : '';
+  $('#resultline').innerHTML = (n === total
     ? `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} bölüm`
-    : `<b>${n}</b> / ${total} şube eşleşti${hint}`;
+    : `<b>${n}</b> / ${total} şube eşleşti${hint}`) + scrapeFreshness + quotaFreshness;
   // Mobil filtre düğmesi etiketi: aktif filtre sayısı (dönem sayılmaz).
   const activeCount = [
     branch, day, time, level, method, program, code.trim(),
-    openOnly ? '1' : '', hideTaken ? '1' : '',
+    openOnly ? '1' : '',
   ].filter(Boolean).length;
   const fb = $('#f-filter-btn');
-  if (fb) fb.textContent = `Filtreler (${activeCount})`;
+  if (fb) fb.textContent = `${I18N.t('filterButton')} (${activeCount})`;
+  const secondaryCount = [level, method, program, code.trim()].filter(Boolean).length;
+  const more = $('#f-more-toggle');
+  more.textContent = `${I18N.t('filterMore')}${secondaryCount ? ` (${secondaryCount})` : ''}`;
   renderChips();
   updateSelection();
   if (ttOn) renderTimetable();
@@ -415,16 +433,6 @@ function sendToProgram() {
 
 /* ---------- tablo ---------- */
 
-// Doluluk rozetinin yanına ölçüm zamanını ekler (Faz 0.4): "%100" anlık sanılmasın —
-// kontenjan günde bir tazeleniyor. Yalnızca bu dönem için ölçüm kaydı varsa göster.
-function measuredNote(crn) {
-  if (!state.quotaLast) return '';
-  const rec = state.quota?.get(crn);
-  if (!rec) return '';
-  const note = fillMeasured(state.quotaLast);
-  return note ? ` · ${note}` : '';
-}
-
 function renderRows(append) {
   const tbody = $('#rows');
   const slice = state.filtered.slice(state.shown, state.shown + PAGE);
@@ -447,12 +455,14 @@ function renderRows(append) {
       <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? 'Favorilerden çıkar' : 'Favorilere ekle'}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
       <td class="crn" data-label="CRN">${markField(crn, 'crn', hitField('crn'))}</td>
       <td class="code" data-label="Ders"><b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small></td>
-      <td data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button></td>
-      <td data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
-      <td class="when" data-label="Zaman">${esc(when || '·')}</td>
-      <td class="num" data-label="Kont.">${formatInt(cap)}</td>
-      <td class="num" data-label="Yazılan">${formatInt(enr)}</td>
-      <td class="num" data-label="Doluluk">${cap ? `${formatInt(enr)}/${formatInt(cap)} · ` : ''}${fillBar(cap, enr)}<small class="fill-measured">${measuredNote(crn)}</small></td>`;
+      <td class="course-name" data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button></td>
+      <td class="course-instructor" data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
+      <td class="when course-schedule" data-label="Zaman">${when
+        ? when.split(' | ').map((session) => `<span>${esc(session)}</span>`).join('')
+        : '<span>·</span>'}</td>
+      <td class="num quota-legacy-col" data-label="Kont.">${formatInt(cap)}</td>
+      <td class="num quota-legacy-col" data-label="Yazılan">${formatInt(enr)}</td>
+      <td class="num quota-main-col" data-label="Kontenjan">${quotaDisplay(cap, enr, { legacyCounts: true })}</td>`;
   }, { append });
 
   if (rows) {
@@ -525,7 +535,6 @@ function saveState() {
   if ($('#f-program').value) p.set('program', $('#f-program').value);
   if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');
-  if ($('#f-taken').checked) p.set('taken', '1');
   const qs = p.toString();
   const url = location.pathname + (qs ? '?' + qs : '') + location.hash;
   history.replaceState(null, '', url);

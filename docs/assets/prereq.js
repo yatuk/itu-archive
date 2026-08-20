@@ -121,6 +121,9 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       this.hay = this.nodes.map((n) => fold(`${n.code} ${n.name || ''}`));
       this.focus = null; this.related = null;
       this.detail.innerHTML = '';
+      this.root.classList.remove('pg-has-detail');
+      const reset = this.root.querySelector('.pg-reset');
+      if (reset) reset.disabled = true;
       this.status.textContent = statusLabel;
 
       this.layout();
@@ -354,6 +357,9 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
 
     focusNode(code) {
       this.focus = code;
+      this.root.classList.add('pg-has-detail');
+      const reset = this.root.querySelector('.pg-reset');
+      if (reset) reset.disabled = false;
       const related = new Set([code]);
       const walk = (start, map) => {
         const q = [start];
@@ -371,16 +377,20 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       this.draw();
       // Seçmeli slot paylaşılabilir URL durumu: ?prog=X&pool=<title>#onsart.
       const n = this.byCode.get(code);
-      if (n && n.kind === 'elective') {
-        const prog = document.querySelector('.pg-program-select')?.value;
-        if (prog) history.replaceState(null, '', `?prog=${encodeURIComponent(prog)}&pool=${encodeURIComponent(n.name)}#onsart`);
-      }
+      const prog = document.querySelector('.pg-program-select')?.value;
+      if (prog && n && n.kind === 'elective') history.replaceState(null, '', `?prog=${encodeURIComponent(prog)}&pool=${encodeURIComponent(n.name)}#onsart`);
+      else if (prog) history.replaceState(null, '', `?prog=${encodeURIComponent(prog)}#onsart`);
     }
 
     clearFocus() {
       this.focus = null;
       this.related = null;
       this.detail.innerHTML = '';
+      this.root.classList.remove('pg-has-detail');
+      const reset = this.root.querySelector('.pg-reset');
+      if (reset) reset.disabled = true;
+      const prog = this.root.querySelector('.pg-program-select')?.value;
+      if (prog) history.replaceState(null, '', `?prog=${encodeURIComponent(prog)}#onsart`);
       this.draw();
     }
 
@@ -393,6 +403,9 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       this.focus = null;
       this.related = null;
       this.detail.innerHTML = '';
+      this.root.classList.remove('pg-has-detail');
+      const reset = this.root.querySelector('.pg-reset');
+      if (reset) reset.disabled = true;
       this.status.textContent = 'bir bölüm seçin';
       this.draw();
     }
@@ -414,7 +427,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       // "biri yeterli" ayrımı açıkça görünsün.
       const tree = n.requirement ? parseReq(n.requirement) : null;
       this.detail.innerHTML = `
-        <h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3>
+        <div class="pg-detail-head"><h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3><button type="button" class="pg-detail-close" aria-label="Detayı kapat">×</button></div>
         ${tree ? `<h4>Önşartı</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
         ${req.length ? `<h4>Gereken dersler (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
         ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}
@@ -422,6 +435,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       this.detail.querySelectorAll('.pg-chip:not([disabled])').forEach((b) =>
         b.addEventListener('click', () => this.panTo(b.dataset.code)));
       const dOpen = this.detail.querySelector('.pg-detail-open');
+      this.detail.querySelector('.pg-detail-close')?.addEventListener('click', () => this.clearFocus());
       if (dOpen) {
         dOpen.addEventListener('click', () => {
           window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: dOpen.dataset.code, source: 'onsart' } }));
@@ -438,7 +452,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       const opts = (n.options || []).slice();
       const version = (this.poolVersion = (this.poolVersion || 0) + 1);
       this.detail.innerHTML = `
-        <h3>${esc(n.name)} <span>seçmeli slot</span></h3>
+        <div class="pg-detail-head"><h3>${esc(n.name)} <span>seçmeli havuz</span></h3><button type="button" class="pg-detail-close" aria-label="Havuzu kapat">×</button></div>
         <div class="pg-pool-head">
           <input type="search" class="pg-pool-search" placeholder="ara: kod veya ad…" aria-label="Havuzda ara">
           <select class="pg-pool-sort" aria-label="Sıralama">
@@ -450,6 +464,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
         </div>
         <p class="pg-pool-status">${opts.length} alternatif, durum taranıyor…</p>
         <div class="pg-pool-groups"></div>`;
+      this.detail.querySelector('.pg-detail-close')?.addEventListener('click', () => this.clearFocus());
 
       const groupsEl = this.detail.querySelector('.pg-pool-groups');
       const statusEl = this.detail.querySelector('.pg-pool-status');
@@ -963,13 +978,13 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     // Mobilde varsayılan LİSTE görünümü; "grafiğe dön" ile canvas'a geçilir.
     if (window.matchMedia('(max-width: 600px)').matches && !root.classList.contains('pg-list-mode')) {
       root.classList.add('pg-list-mode');
-      btn.textContent = 'grafiğe dön';
+      btn.textContent = 'Grafik görünümü';
       btn.setAttribute('aria-pressed', 'true');
       box.classList.remove('sr-only');
     }
     btn.addEventListener('click', () => {
       const on = root.classList.toggle('pg-list-mode');
-      btn.textContent = on ? 'grafiğe dön' : 'listeye dön';
+      btn.textContent = on ? 'Grafik görünümü' : 'Liste görünümü';
       btn.setAttribute('aria-pressed', String(on));
       box.classList.toggle('sr-only', !on);
     });

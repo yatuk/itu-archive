@@ -3,16 +3,54 @@
 
 import { termLabel, esc, formatInt } from './utils.js';
 
-// fillBar, kontenjan/yazılan için yüzde + çubuk üretir — kontenjan çubuğunun
-// TEK kaynağı (tablo, geçmiş, program, ders planım, detay paneli). full/tight
-// sınıfları doluluk durumunu taşır. detail:true → "yazılan / kapasite · %pct"
-// (detay paneli şube kartı); aksi halde "%pct".
+// fillBar, dondurulmuş fosfor temasının yüzde + çubuk motifidir. full/tight
+// sınıfları doluluk durumunu taşır. detail:true → "yazılan / kapasite · %pct";
+// aksi halde "%pct". Sade tema quotaDisplay içindeki metin temsilini kullanır.
 export function fillBar(cap, enr, { detail = false } = {}) {
   if (!cap) return '·';
   const pct = Math.min(100, Math.round((enr / cap) * 100));
   const cls = pct >= 100 ? 'full' : pct >= 85 ? 'tight' : '';
   const label = detail ? `${formatInt(enr)} / ${formatInt(cap)} · %${pct}` : `%${pct}`;
   return `<span class="fill">${label}<span class="bar ${cls}"><i style="width:${pct}%"></i></span></span>`;
+}
+
+// Kontenjanın anlamını görsel sunumdan ayırır. Yüzde sıralama/durum hesabında
+// kalır; sade temada aynı sayıyı yüzde + oran + çubuk olarak tekrarlamayız.
+export function quotaState(cap, enr) {
+  const capacity = Number(cap) || 0;
+  const enrolled = Number(enr) || 0;
+  if (capacity <= 0) {
+    return { capacity, enrolled, remaining: 0, pct: 0, kind: 'unknown' };
+  }
+  const remaining = Math.max(0, capacity - enrolled);
+  const pct = Math.round((enrolled / capacity) * 100);
+  const kind = enrolled >= capacity ? 'full' : pct >= 85 ? 'tight' : 'open';
+  return { capacity, enrolled, remaining, pct, kind };
+}
+
+// İki temanın bilgi yoğunluğu bilinçli olarak farklıdır. Fosfor görünümü
+// dondurulduğu için eski fillBar çıktısını korur; sade görünüm tek sayısal temsil
+// ve yalnızca karar gerektiren durumda kısa bir metin gösterir.
+export function quotaDisplay(cap, enr, { detail = false, legacyCounts = false, lang } = {}) {
+  const q = quotaState(cap, enr);
+  if (q.kind === 'unknown') return '·';
+  const english = (lang || (typeof document !== 'undefined' ? document.documentElement.lang : 'tr')) === 'en';
+
+  let state = '';
+  if (q.kind === 'full') state = english ? 'full' : 'dolu';
+  else if (q.kind === 'tight') state = `${formatInt(q.remaining)} ${english ? 'seats' : 'yer'}`;
+
+  const counts = detail
+    ? `${formatInt(q.enrolled)} ${english ? 'enrolled' : 'kayıtlı'} · ${formatInt(q.capacity)} ${english ? 'capacity' : 'kontenjan'}`
+    : `${formatInt(q.enrolled)} / ${formatInt(q.capacity)}`;
+  const sade = `${counts}${state ? ` · <span class="quota-state ${q.kind}">${state}</span>` : ''}`;
+  const legacy = legacyCounts
+    ? `${formatInt(q.enrolled)}/${formatInt(q.capacity)} · ${fillBar(q.capacity, q.enrolled)}`
+    : fillBar(q.capacity, q.enrolled, { detail });
+  const aria = `${formatInt(q.enrolled)} ${english ? 'enrolled' : 'kayıtlı'}, ${formatInt(q.capacity)} ${english ? 'capacity' : 'kontenjan'}${state ? `, ${state}` : ''}`;
+
+  return `<span class="quota-sade quota-${q.kind}" aria-label="${aria}">${sade}</span>` +
+    `<span class="quota-fosfor">${legacy}</span>`;
 }
 
 // trendChart (Faz: panel elden geçirme): iç içe (nested) çubuk — açık çerçeve

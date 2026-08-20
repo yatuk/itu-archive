@@ -14,6 +14,8 @@ export const state = {
   hist: null,      // {codes, names} arama listeleri
   quota: null,     // aktif dönemin dolma özeti, CRN -> kayıt
   quotaLast: null, // doluluk ölçümünün son zaman damgası (quota/.json "last")
+  scrapedAt: null, // son başarılı genel veri taraması
+  stale: false,    // genel veri taraması 48 saatten eski
   sort: { key: 'crn', dir: 1 },
   selected: new Set(), // seçili şubeler, "branş|crn" anahtarları
 };

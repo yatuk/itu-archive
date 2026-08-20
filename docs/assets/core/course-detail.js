@@ -1,14 +1,13 @@
 // Ortak ders detay modalı. Dersler, önşart haritası, seçmeli havuz ve geçmiş
 // sekmelerinin tümü aynı paneli açar — tek giriş openCourseDetail(code, opts).
 //
-// Panel iki bölümden oluşur: (1) seçili dönemdeki tüm şubeler (şube başına
-// hoca, oturum, haftalık saat, doluluk, önşart), (2) geçmiş dönemler (doluluk
-// trendi + dönem tablosu). Ders o dönem açık değilse neden açıklanır, geçmiş
-// yine gösterilir — sessiz boşluk olmaz.
+// Panel dört görev odaklı sekmeden oluşur: Özet, Şubeler, Katalog ve Geçmiş.
+// Tablo satırından açıldığında ilgili CRN'nin Şubeler görünümü; doğrudan bağlantıda
+// ise karar özeti öne gelir. Uzun program ve arşiv listeleri kontrollü açılır.
 
 import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum, formatInt } from './utils.js';
 import { state } from './store.js';
-import { fillBar, trendChart } from './chart.js';
+import { fillBar, quotaDisplay, trendChart } from './chart.js';
 import { parseReq, renderReqTree } from '../prereq.js';
 import { codeToSlug } from './urlcodes.js';
 import { loadProgramMap } from './programs.js';
@@ -74,10 +73,14 @@ export function obsDeepLink(code) {
 async function loadReqBy(sec) {
   const code = sec.dataset.code;
   const reverse = await getJSON('data/prereq/reverse.json').catch(() => null);
-  if (!reverse || !reverse[code]) { sec.hidden = true; return; }
+  if (!reverse || !reverse[code]) {
+    (sec.closest('.d-relation-more') || sec).hidden = true;
+    return;
+  }
   const reqs = reverse[code];
-  sec.innerHTML = `<h4>Bu dersi önşart isteyenler (${reqs.length})</h4>
-    <div class="d-req-list">${reqs.map((r) => `<button type="button" class="d-req" data-code="${esc(r)}">${esc(r)}</button>`).join('')}</div>`;
+  const count = sec.closest('.d-relation-more')?.querySelector('[data-req-count]');
+  if (count) count.textContent = String(reqs.length);
+  sec.innerHTML = `<div class="d-req-list">${reqs.map((r) => `<button type="button" class="d-req" data-code="${esc(r)}">${esc(r)}</button>`).join('')}</div>`;
   sec.querySelectorAll('.d-req').forEach((b) => b.addEventListener('click', () => {
     openCourseDetail(b.dataset.code, { source: 'reverse' });
   }));
@@ -100,51 +103,39 @@ function secCard(s, buildings, showMeta = true) {
   const hrs = sessionHours(s.times);
   const note = fillNote(s.crn);
   const names = splitInstructors(s.instructor);
-  const histBtns = names
+  const instructors = names
     .filter((n) => n !== '-' && n !== '***')
-    .map((n) => `<button type="button" class="btn-ghost d-hist" data-name="${esc(n)}">${esc(n)} geçmişinde ara</button>`)
+    .map((n) => `<button type="button" class="d-instr-history" data-name="${esc(n)}" title="${esc(n)} geçmişinde ara">${esc(n)}</button>`)
     .join('');
   const sessions = sessionsHtml(s, buildings);
-  // Tek satır doluluk: fillBar'ın detail varyantı — tek kaynak (full/tight dahil).
-  const stats = s.capacity ? fillBar(s.capacity, s.enrolled, { detail: true }) : '·';
+  // Sade tema tek sayısal temsil kullanır; fosfor eski yüzde + çubuğu korur.
+  const stats = s.capacity ? quotaDisplay(s.capacity, s.enrolled, { detail: true }) : '·';
   return `
-    <div class="d-sec">
+    <article class="d-sec" data-crn="${esc(s.crn)}">
       <div class="d-sec-head">
         <b class="d-crn">${esc(s.crn)}</b>
-        <span class="d-sec-instr">${esc(s.instructor || '·')}</span>
-        ${histBtns}
+        <span class="d-sec-instr">${instructors || esc(s.instructor || '·')}</span>
+        <span class="d-sec-stats">${stats}${note ? ` · ${esc(note)}` : ''}${measured(s.crn) ? `<small class="fill-measured"> · ${esc(measured(s.crn))}</small>` : ''}</span>
       </div>
-      ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa (oturum)` : ''].filter(Boolean).join(' · ')}</div>` : ''}
+      ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa` : ''].filter(Boolean).join(' · ')}</div>` : ''}
       ${sessions ? `<div class="d-sec-when">${sessions}</div>` : ''}
-      <div class="d-sec-stats">${stats}${note ? ` · ${esc(note)}` : ''}${measured(s.crn) ? `<small class="fill-measured"> · ${esc(measured(s.crn))}</small>` : ''}</div>
-      ${s.prereq && s.prereq !== '-' ? `<div class="d-sec-req"><span>önşart:</span> ${esc(s.prereq)}</div>` : ''}
-      ${s.classReq && s.classReq !== '-' ? `<div class="d-sec-req"><span>sınıf / kredi:</span> ${esc(s.classReq)}</div>` : ''}
-      ${s.reserved && s.reserved !== '-' ? `<div class="d-sec-req"><span>rezervasyon:</span> ${esc(s.reserved)}</div>` : ''}
-    </div>`;
+      ${(s.prereq && s.prereq !== '-') || (s.classReq && s.classReq !== '-') || (s.reserved && s.reserved !== '-') ? `<details class="d-sec-rules"><summary>Kayıt koşulları</summary>
+        ${s.prereq && s.prereq !== '-' ? `<p><b>Önşart</b>${esc(s.prereq)}</p>` : ''}
+        ${s.classReq && s.classReq !== '-' ? `<p><b>Sınıf / kredi</b>${esc(s.classReq)}</p>` : ''}
+        ${s.reserved && s.reserved !== '-' ? `<p><b>Rezervasyon</b>${esc(s.reserved)}</p>` : ''}
+      </details>` : ''}
+    </article>`;
 }
 
-// Özdeş şubelerin grup anahtarı: method + gün/saat + kapasite + hoca.
-function secSignature(s) {
-  const when = `${(s.days || []).join('|')}|${(s.times || []).join('|')}`;
-  const instr = (s.instructor && s.instructor !== '-' && s.instructor !== '***') ? s.instructor : '';
-  return [s.method, when, s.capacity, instr].join('§');
-}
-
-// Şube listesi (Faz: panel elden geçirme): varsayılan ilk 3 grubu göster,
-// "N daha göster" ile hepsi açılır. Özdeş şubeler tek kartta gruplanır;
-// method+saat tüm şubelerde aynıysa liste başlığına bir kez yazılır.
-function renderSecList(secs, buildings) {
+// Şubeler kompakt satırlar olarak çizilir. İlk sekiz satır doğrudan görünür;
+// daha uzun listeler kontrollü açılır. Şubeler birleştirilmez: her CRN'nin
+// kontenjan ve kayıt durumu ayrı kalır.
+function renderSecList(secs, buildings, focusCrn = '') {
   // Dolu (kap>0) olanlar önce, sonra CRN sırası.
   const ordered = secs.slice().sort((a, b) =>
+    (String(b.crn) === String(focusCrn) ? 1 : 0) - (String(a.crn) === String(focusCrn) ? 1 : 0) ||
     (a.capacity > 0 ? 0 : 1) - (b.capacity > 0 ? 0 : 1) ||
     Number(a.crn) - Number(b.crn) || String(a.crn).localeCompare(b.crn));
-
-  const groups = [];
-  for (const s of ordered) {
-    const k = secSignature(s);
-    const g = groups.find((x) => x.k === k);
-    if (g) g.secs.push(s); else groups.push({ k, secs: [s] });
-  }
 
   const uniformMethod = [...new Set(secs.map((s) => s.method).filter(Boolean))].length <= 1;
   const uniformHrs = [...new Set(secs.map((s) => sessionHours(s.times)))].length <= 1;
@@ -154,25 +145,13 @@ function renderSecList(secs, buildings) {
   if (uniformHrs && hrs) head.push(`haftada ${hrs} sa`);
   const listHeader = head.length ? `<p class="d-secs-head">${secs.length} şube · ${esc(head.join(' · '))}</p>` : '';
 
-  const card = (g) => {
-    if (g.secs.length === 1) return secCard(g.secs[0], buildings, !uniformMethod || !uniformHrs);
-    const first = g.secs[0];
-    const crns = g.secs.map((s) => s.crn).sort();
-    const range = crns.length > 2 ? `${crns[0]}–${crns[crns.length - 1]}` : crns.join(' · ');
-    const allEmpty = g.secs.every((s) => !s.enrolled);
-    const allFull = g.secs.every((s) => s.capacity && s.enrolled >= s.capacity);
-    const state = allFull ? 'hepsi dolu' : allEmpty ? 'hepsi boş' : '';
-    return `<div class="d-sec d-sec-group">
-      <div class="d-sec-head"><b class="d-crn">${esc(range)}</b><span class="d-sec-instr">${g.secs.length} şube${state ? ` · ${state}` : ''}</span></div>
-      <div class="d-sec-when">${sessionsHtml(first, buildings)}</div>
-    </div>`;
-  };
-
-  const MAX = 3;
-  const showAll = groups.length > MAX;
-  const html = groups.slice(0, MAX).map(card).join('') +
-    (showAll ? `<div class="d-secs-more" hidden>${groups.slice(MAX).map(card).join('')}</div>
-      <button type="button" class="btn-ghost d-secs-toggle">${groups.length - MAX} şube daha göster</button>` : '');
+  const card = (s) => secCard(s, buildings, !uniformMethod || !uniformHrs)
+    .replace('class="d-sec"', `class="d-sec${String(s.crn) === String(focusCrn) ? ' is-focus' : ''}"`);
+  const MAX = 8;
+  const showAll = ordered.length > MAX;
+  const html = ordered.slice(0, MAX).map(card).join('') +
+    (showAll ? `<div class="d-secs-more" hidden>${ordered.slice(MAX).map(card).join('')}</div>
+      <button type="button" class="btn-ghost d-secs-toggle">${ordered.length - MAX} şube daha göster</button>` : '');
 
   return `<div class="d-sec-list">${listHeader}${html}</div>`;
 }
@@ -197,15 +176,127 @@ function histHtml(hist) {
   const rows = [];
   for (const [slug, secs] of byTerm) secs.forEach((r, i) => rows.push({ slug, termFirst: i === 0, ...r }));
   return `<section class="d-hist">
-    <h4>Geçmiş dönemler · ${byTerm.size} dönemde açıldı (${esc(openIn.join(', '))})</h4>
+    <div class="d-section-head"><div><h4>Geçmiş dönemler</h4><p>${byTerm.size} dönemde açıldı · ${esc(openIn.join(', '))}</p></div></div>
     ${trendChart(byTerm, isMobile() ? 6 : 8)}
-    <div class="tablewrap"><table class="htable" aria-label="Dönem geçmişi">
-      <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr></thead>
-      <tbody>${rows.map((r) => `<tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
-        <td>${esc(r.instructor || '·')}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td>
-        <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`).join('')}</tbody>
-    </table></div>
+    <details class="d-history-records">
+      <summary>Dönem kayıtları <span>${rows.length}</span></summary>
+      <div class="tablewrap"><table class="htable" aria-label="Dönem geçmişi">
+        <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num quota-legacy-col">Doluluk</th></tr></thead>
+        <tbody>${rows.map((r) => `<tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
+          <td>${esc(r.instructor || '·')}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td>
+          <td class="num quota-legacy-col">${fillBar(r.cap, r.enr)}</td></tr>`).join('')}</tbody>
+      </table></div>
+    </details>
   </section>`;
+}
+
+function programsHtml(programs, hasTermData) {
+  if (!hasTermData) {
+    return `<div class="d-progs d-progs-none"><span>Program bilgisi yok</span><p>Ders bu dönemde açılmadığı için program kısıtları listelenemiyor.</p></div>`;
+  }
+  if (!programs.length) {
+    return `<div class="d-progs d-progs-none"><span>Program kısıtı yok</span><p>Tüm programlar bu dersi alabilir.</p></div>`;
+  }
+  return `<details class="d-progs">
+    <summary><span>Alabilen programlar</span><b>${programs.length}</b></summary>
+    <div class="d-progs-body">
+      ${programs.length > 12 ? `<label class="d-prog-search-wrap"><span class="sr-only">Programlarda ara</span><input type="search" class="d-prog-search" placeholder="program ara…" autocomplete="off"></label>` : ''}
+      <div class="d-prog-list">${programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="Derslerde bu programa göre filtrele">${esc(p)}</button>`).join('')}</div>
+      <p class="d-prog-empty" hidden>Eşleşen program yok.</p>
+    </div>
+  </details>`;
+}
+
+function overviewHtml({ code, term, secs, cat, gr, hist, programs }) {
+  const termCount = new Set((hist?.rows || []).map((r) => r[0])).size;
+  const hrs = secs.length ? sessionHours(secs[0].times) : 0;
+  const credits = cat?.credits || {};
+  const creditText = credits.local != null
+    ? `${trNum(credits.local)} kredi${credits.ects ? ` · ${trNum(credits.ects)} AKTS` : ''}`
+    : 'Katalog bilgisi yok';
+  return `<div class="d-overview-stats">
+      <div><span>Bu dönem</span><b>${secs.length ? `${secs.length} şube` : 'Açık değil'}</b><small>${esc(termLabel(term))}${hrs ? ` · haftada ${hrs} sa` : ''}</small></div>
+      <div><span>Kredi</span><b>${esc(creditText)}</b><small>${esc(cat?.language || 'dil bilgisi yok')}</small></div>
+      <div><span>Arşiv</span><b>${termCount ? `${termCount} dönem` : 'Kayıt yok'}</b><small>${termCount ? 'geçmiş açılışlar' : 'dönem verisi bulunamadı'}</small></div>
+    </div>
+    <div class="d-overview-relations">
+      <section class="d-relation"><h4>Önşart</h4><div class="d-req-fwd" data-code="${esc(code)}"><p class="empty">yükleniyor…</p></div></section>
+      <details class="d-relation d-relation-more"><summary>Bu dersi önşart isteyenler <span data-req-count>…</span></summary>
+        <div class="d-req-by" data-code="${esc(code)}"><p class="empty">yükleniyor…</p></div>
+      </details>
+    </div>
+    ${gradesHtml(gr)}
+    ${programsHtml(programs, secs.length > 0)}`;
+}
+
+function detailShell({ code, name, branch, level, method, obsLink, term, secs, cat, gr, hist, programs, buildings, crn }) {
+  const active = crn && secs.length ? 'sections' : 'overview';
+  const panels = {
+    overview: overviewHtml({ code, term, secs, cat, gr, hist, programs }),
+    sections: secs.length
+      ? `<section class="d-secs"><div class="d-section-head"><div><h4>Bu dönemki şubeler</h4><p>${esc(termLabel(term))} · ${secs.length} şube</p></div></div>${renderSecList(secs, buildings, crn)}</section>`
+      : `<p class="empty">Bu ders <b>${esc(termLabel(term))}</b> döneminde açık değil.</p>`,
+    catalog: catalogHtml(cat) || '<p class="empty">Bu ders için katalog kaydı bulunamadı.</p>',
+    history: histHtml(hist),
+  };
+  const tab = (key, label, extra = '') => `<button type="button" role="tab" id="d-tab-${key}" aria-controls="d-panel-${key}" aria-selected="${active === key}" tabindex="${active === key ? '0' : '-1'}" data-dtab="${key}">${label}${extra}</button>`;
+  return `<header class="d-head">
+      <div class="d-title-block"><h3 id="detail-title"><span class="d-code">${esc(code)}</span><span class="d-name">${esc(name || code)}</span></h3>
+        <div class="d-meta">${[branch, level, method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
+      </div>
+      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener">OBS kataloğu ↗</a>` : ''}
+    </header>
+    <nav class="d-tabs" role="tablist" aria-label="Ders detayı bölümleri">
+      ${tab('overview', 'Özet')}
+      ${tab('sections', 'Şubeler', `<span>${secs.length}</span>`)}
+      ${tab('catalog', 'Katalog')}
+      ${tab('history', 'Geçmiş')}
+    </nav>
+    <div class="d-panels">
+      ${Object.entries(panels).map(([key, html]) => `<section role="tabpanel" id="d-panel-${key}" aria-labelledby="d-tab-${key}" data-dpanel="${key}"${active === key ? '' : ' hidden'}>${html}</section>`).join('')}
+    </div>`;
+}
+
+function wireDetailTabs(content) {
+  const tabs = [...content.querySelectorAll('[data-dtab]')];
+  const panels = [...content.querySelectorAll('[data-dpanel]')];
+  const activate = (key, focus = false) => {
+    for (const tab of tabs) {
+      const on = tab.dataset.dtab === key;
+      tab.setAttribute('aria-selected', String(on));
+      tab.tabIndex = on ? 0 : -1;
+      if (on && focus) tab.focus();
+    }
+    for (const panel of panels) panel.hidden = panel.dataset.dpanel !== key;
+    const scroller = content.querySelector('.d-panels');
+    if (scroller) scroller.scrollTop = 0;
+  };
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => activate(tab.dataset.dtab));
+    tab.addEventListener('keydown', (ev) => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(ev.key)) return;
+      ev.preventDefault();
+      let next = ev.key === 'Home' ? 0 : ev.key === 'End' ? tabs.length - 1
+        : (index + (ev.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+      activate(tabs[next].dataset.dtab, true);
+    });
+  });
+}
+
+function wireProgramSearch(content) {
+  const input = content.querySelector('.d-prog-search');
+  if (!input) return;
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLocaleLowerCase('tr');
+    let shown = 0;
+    for (const button of content.querySelectorAll('.d-prog[data-program]')) {
+      const visible = !q || button.textContent.toLocaleLowerCase('tr').includes(q);
+      button.hidden = !visible;
+      if (visible) shown++;
+    }
+    const empty = content.querySelector('.d-prog-empty');
+    if (empty) empty.hidden = shown !== 0;
+  });
 }
 
 // code: "BLG 101E"; term varsayılanı Dersler'deki aktif dönem (state.termSlug).
@@ -238,51 +329,16 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   ]);
   const secs = Array.isArray(list) ? list.filter((s) => s.code === code) : [];
   const obsLink = obsDeepLink(code);
-
-  if (!secs.length) {
-    content.innerHTML = `
-      <div class="d-head">
-        <h3 id="detail-title">${esc(code)}</h3>
-        ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}
-      </div>
-      <p class="empty">Bu ders <b>${esc(termLabel(t))}</b> döneminde açık değil.</p>
-      <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
-        <p class="empty">yükleniyor…</p></section>
-      ${gradesHtml(gr)}
-      ${histHtml(hist)}
-      ${catalogHtml(cat)}`;
-    wireHistButtons(content);
-    const reqBy = content.querySelector('.d-req-by');
-    if (reqBy) loadReqBy(reqBy);
-    return;
-  }
-
   const programs = [...new Set(secs.flatMap((s) => s.programs || []))];
-  content.innerHTML = `
-    <div class="d-head">
-      <h3 id="detail-title"><span class="d-code">${esc(code)}</span> <span class="d-name">${esc(secs[0].name)}</span></h3>
-      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener" title="OBS katalog formu">OBS'de aç ↗</a>` : ''}
-    </div>
-    <div class="d-meta">${[branch, secs[0].level, secs[0].method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
-    <section class="d-secs">
-      <h4>Bu dönem · ${secs.length} şube</h4>
-      ${renderSecList(secs, buildings)}
-    </section>
-    <section class="d-progs">
-      <h4>Bu dersi alabilen programlar${programs.length ? ` (${programs.length})` : ''}</h4>
-      <div class="d-prog-list">${programs.length
-        ? programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="Derslerde bu programa göre filtrele">${esc(p)}</button>`).join('')
-        : '<span class="d-prog d-prog-none">kısıtlama yok, tüm programlar alabilir</span>'}</div>
-    </section>
-    <section class="d-req-fwd" data-code="${esc(code)}"><h4>Önşartı</h4>
-      <p class="empty">yükleniyor…</p></section>
-    <section class="d-req-by" data-code="${esc(code)}"><h4>Bu dersi önşart isteyenler</h4>
-      <p class="empty">yükleniyor…</p></section>
-    ${gradesHtml(gr)}
-    ${catalogHtml(cat)}
-    ${histHtml(hist)}`;
+  const name = secs[0]?.name || cat?.name || hist?.name || code;
+  content.innerHTML = detailShell({
+    code, name, branch, level: secs[0]?.level, method: secs[0]?.method,
+    obsLink, term: t, secs, cat, gr, hist, programs, buildings, crn,
+  });
+  wireDetailTabs(content);
   wireHistButtons(content);
   wireProgButtons(content);
+  wireProgramSearch(content);
   wireEqButtons(content);
   wireTrendChart(content);
   const secToggle = content.querySelector('.d-secs-toggle');
@@ -301,7 +357,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   if (reqBy) loadPrereqWhenVisible(reqBy, () => loadReqBy(reqBy));
 
   // Faz A (G5): EN modunda, katalogda İngilizce ad varsa başlığı onunla değiştir.
-  const titleSpan = content.querySelector('#detail-title span');
+  const titleSpan = content.querySelector('#detail-title .d-name');
   if (titleSpan && document.documentElement.lang === 'en' && cat?.nameEn) {
     titleSpan.textContent = cat.nameEn;
   }
@@ -486,14 +542,16 @@ function gradesHtml(gr) {
   const sorted = [...gr].sort((a, b) => (b.donem || '').localeCompare(a.donem || ''));
   const latest = sorted[0];
   const older = sorted.slice(1);
-  return `<section class="d-grades">
-    <h4>Not dağılımı · ${esc(latest.term)}</h4>
-    ${statLine(latest)}
+  const pct = gradePassPct(latest.grades, latest.total);
+  const mode = gradeMode(latest.grades, latest.total);
+  return `<details class="d-grades">
+    <summary><span><b>Not dağılımı</b><small>${esc(latest.term)}</small></span><strong>≥CC+ %${pct} · en sık ${esc(mode.grade)}</strong></summary>
+    <div class="d-grades-body">${statLine(latest)}
     ${gradeBars(latest)}
     ${older.length ? `<details class="d-grades-more"><summary>önceki dönemler (${older.length})</summary>
       ${older.map((tm) => `<h5>${esc(tm.term)}</h5>${statLine(tm)}${gradeBars(tm)}`).join('')}
-    </details>` : ''}
-  </section>`;
+    </details>` : ''}</div>
+  </details>`;
 }
 
 // Trend grafiği etkileşimi: caption sabit satır (hover/focus ile güncellenir,
@@ -523,7 +581,7 @@ function wireTrendChart(content) {
 }
 
 function wireHistButtons(content) {
-  content.querySelectorAll('.d-hist').forEach((b) => b.addEventListener('click', () => {
+  content.querySelectorAll('.d-instr-history').forEach((b) => b.addEventListener('click', () => {
     window.dispatchEvent(new CustomEvent('itu:goto-history', { detail: b.dataset.name }));
     closeCourseDetail();
   }));

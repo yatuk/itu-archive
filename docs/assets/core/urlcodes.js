@@ -17,9 +17,9 @@ export function slugToCode(slug) { return String(slug || '').replace(/-/g, ' ');
 
 // Görünüm başına sahip olunan parametreler; term tüm sekmelerde globaldir.
 export const VIEW_PARAMS = {
-  dersler: ['q', 'branch', 'day', 'time', 'level', 'method', 'program', 'code', 'open', 'taken'],
+  dersler: ['q', 'branch', 'day', 'time', 'level', 'method', 'program', 'code', 'open'],
   onsart: ['prog', 'pool'],
-  dersplanim: ['prog', 'fopen', 'fcap', 'fhide', 'fsems', 'ftypes'],
+  dersplanim: ['prog', 'fopen', 'fcap', 'fsems', 'ftypes'],
   takvim: ['year', 'caltype'],
   gecmis: ['hq'],
   sinavlar: ['eq', 'extype', 'building'],

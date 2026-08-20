@@ -21,6 +21,9 @@ Bunlar genel kılavuzların üstündedir; çelişirse bunlar kazanır.
 - **Gövde metnine monospace bulaşmaz** (sade). Monospace yalnızca veri
   sınıflarında: `.crn .code .when .num .fill .tt-time code pre`.
 - **Ton:** Türkçe, sakin, kurumsal değil. Şaka yok, pazarlama dili yok.
+- **Bir nicelik, birincil olarak bir kez gösterilir.** Aynı hücrede oran + yüzde +
+  bar tekrarı yapılmaz; ikinci gösterim ancak zaman içindeki değişim gibi yeni bir
+  ilişki anlatıyorsa kullanılır.
 - **Kullanıcıya görünen metinde em-dash (—) yok**, orta nokta (·) kullanılır.
   Kod yorumlarında serbesttir.
 
@@ -37,9 +40,18 @@ Bunları CI koşuyor — elle kontrol gerekmez.
 | "İçeriğe atla" ilk odak durağıdır | `test/e2e/smoke.spec.js` |
 | Konsol hatası yok (bilinen quota 404'ü hariç) | `test/e2e/smoke.spec.js` |
 | Ders tablosu gerçekten satır basar | `test/e2e/smoke.spec.js` |
+| Ders Planım ikincil filtreleri/GANO araçları kontrollü açılır, yarıyıllar daraltılır | `test/e2e/smoke.spec.js` |
 | Veri şeması ve dosya bütünlüğü | `cmd/validate` |
 
 ## Elle denetlenenler
+
+### Bilgi yoğunluğu
+
+- İlk ekranda marka ve açıklama kısa tutulur; global durum kartları varsayılan görünümü aşağı itmez.
+- Sık kullanılan gezinme ve filtreler doğrudan görünür, ikincil seçenekler adlandırılmış bir disclosure altında kalır.
+- Aynı nicelik aynı bağlamda iki kez görselleştirilmez. Kontenjan listesinde oran, kalan yer ve durum tek satırda birleşir.
+- Veri tazeliği, dışa aktarma ve görünüm değiştirme araçları ilgili sonuçların yanında yer alır.
+- Boş, yükleniyor ve hata durumları tablo yapısını bozmadan açık bir sonraki adım söyler; `file://` açılışı yerel sunucu uyarısı verir.
 
 ### Etkileşim
 

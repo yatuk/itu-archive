@@ -12,17 +12,17 @@
 // Yeniden kullanım (Faz E — kopyalanmış üçüncü sürüm yazılmaz):
 //   - ders detayı → core/course-detail.js
 //   - seçmeli havuz → önşart sekmesindeki panel (?prog=X&pool=<slot>#onsart)
-//   - şube satırı / doluluk çubuğu → fillBar (core/chart.js)
+//   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
 import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js';
 import { state } from '../core/store.js';
 import { openCourseDetail } from '../core/course-detail.js';
-import { fillBar } from '../core/chart.js';
+import { quotaDisplay } from '../core/chart.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
 import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge } from '../core/plan.js';
-import { isTaken, getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js';
 import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js';
 import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js';
 import { confirmDialog } from '../core/dialog.js';
@@ -39,7 +39,7 @@ const catalogMap = new Map(); // seçilen seçmeli ders kodu → { local, ects }
 let initialParams = null; // onShow'da senkron yakalanan URL parametreleri
 
 // Filtre durumu (URL'den okunur, DOM'dan yazılır).
-const filters = { open: false, cap: false, hideTaken: false, semesters: new Set(), types: new Set() };
+const filters = { open: false, cap: false, semesters: new Set(), types: new Set() };
 
 export async function onShow() {
   // URL parametrelerini SENKRON yakala: app.js writeViewUrl, await sırasında
@@ -75,32 +75,39 @@ function ensureHost() {
   if ($('#dp-prog')) return;
   const root = document.querySelector('#view-dersplanim');
   root.innerHTML = `
-    <p class="note">
-      Programını seç: müfredatın yarıyıl yarıyıl, her dersin <strong>bu dönem açık olup
-      olmadığı, şubeleri ve kontenjan durumu</strong> yanında. "Programa ekle" seçili
-      şubeyi Program sekmesindeki takvimine ekler; seçmeli slotlar önşart haritasındaki
-      havuza gider.
+    <p class="dp-intro">
+      Programını ve dönemi seç; müfredatı, açık şubeleri ve not planını birlikte gör.
     </p>
     <div class="console dp-console">
-      <label class="query">
-        <span class="sigil">&gt;</span>
+      <div class="dp-program-pick" role="group" aria-label="Program seçimi">
+        <span class="sigil" aria-hidden="true">&gt;</span>
+        <label><span class="dp-field-label">fakülte</span>
         <select id="dp-fac" class="dp-fac-select" aria-label="Fakülte seç"></select>
+        </label>
+        <label><span class="dp-field-label">program</span>
         <select id="dp-prog" class="dp-prog-select" aria-label="Bölüm seç"></select>
-      </label>
-      <label>dönem <select id="dp-term" aria-label="Dönem seç"></select></label>
-      <button type="button" id="dp-refresh" class="btn-ghost" title="Durumları yenile">↻</button>
+        </label>
+      </div>
+      <label class="dp-term-pick"><span class="dp-field-label">dönem</span><select id="dp-term" aria-label="Dönem seç"></select></label>
     </div>
-    <div class="dp-filters" role="group" aria-label="Ders Planım filtreleri">
-      <label class="check"><input type="checkbox" id="dp-open"> yalnızca bu dönem açık olanlar</label>
-      <label class="check"><input type="checkbox" id="dp-cap"> yalnızca kontenjanı olanlar</label>
-      <label class="check"><input type="checkbox" id="dp-hide"> aldıklarımı gizle</label>
-      <span class="dp-sems" id="dp-sems" role="group" aria-label="Yarıyıl seçimi"></span>
-      <span class="dp-type-filter" id="dp-types" role="group" aria-label="Türe göre filtrele"></span>
+    <div class="dp-filterbar" role="group" aria-label="Ders Planım filtreleri">
+      <div class="dp-filter-primary">
+        <label class="check"><input type="checkbox" id="dp-open"> yalnızca açık dersler</label>
+        <label class="check"><input type="checkbox" id="dp-cap"> kontenjanı olanlar</label>
+        <button type="button" id="dp-filter-toggle" class="btn-ghost" aria-expanded="false" aria-controls="dp-filter-more">Yarıyıl ve tür</button>
+      </div>
+      <div class="dp-filter-more" id="dp-filter-more" hidden>
+        <span class="dp-sems" id="dp-sems" role="group" aria-label="Yarıyıl seçimi"></span>
+        <span class="dp-type-filter" id="dp-types" role="group" aria-label="Türe göre filtrele"></span>
+      </div>
     </div>
-    <p class="resultline" id="dp-result" aria-live="polite">program seçiliyor…</p>
     <div id="dp-summary" class="dp-summary"></div>
-    <div class="dp-grades" id="dp-grades">
-      <p class="dp-grades-empty" id="dp-grades-empty">Not girdikçe GANO burada hesaplanır.</p>
+    <div class="dp-resultbar">
+      <p class="resultline" id="dp-result" aria-live="polite">program seçiliyor…</p>
+    </div>
+    <details class="dp-grades" id="dp-grades">
+      <summary><span>GANO ve ilerleme</span><b id="dp-grade-preview">Not girdikçe hesaplanır</b></summary>
+      <p class="dp-grades-empty" id="dp-grades-empty">Derslerin yanındaki not alanlarından not girdikçe GANO ve ilerleme burada hesaplanır.</p>
       <div class="dp-grades-body">
         <div class="dp-grades-grid">
           <div class="dp-metric"><em>GANO</em><b id="dp-gano">yok</b><small>girdiğin notlara göre</small></div>
@@ -114,16 +121,17 @@ function ensureHost() {
           <label class="dp-target-gpa">hedef GANO <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00" placeholder="0–4"> <span class="dp-target-hint" id="dp-target-hint"></span></label>
         </div>
       </div>
-      <div class="dp-grades-actions">
-        <button type="button" id="dp-export" class="btn-ghost">dışa aktar</button>
-        <button type="button" id="dp-import" class="btn-ghost">içe aktar</button>
-        <button type="button" id="dp-reset" class="btn-ghost">tümünü sıfırla</button>
-      </div>
-      <p class="dp-privacy">Notların yalnızca tarayıcında saklanır (localStorage); sunucuya hiçbir şey gönderilmez.
-      Bu bir transkript değildir, "resmî GANO'n budur" demeyiz, "girdiğin notlara göre" deriz. Yuvarlama,
-      koşullu geçme ve tekrar kuralları OBS ile küçük farklar üretebilir; kaynak
-      <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">İTÜ not ve başarı yönergesi</a>.</p>
-    </div>
+      <details class="dp-data-tools">
+        <summary>Veri ve gizlilik</summary>
+        <div class="dp-grades-actions">
+          <button type="button" id="dp-export" class="btn-ghost">dışa aktar</button>
+          <button type="button" id="dp-import" class="btn-ghost">içe aktar</button>
+          <button type="button" id="dp-reset" class="btn-ghost">tümünü sıfırla</button>
+        </div>
+        <p class="dp-privacy">Notların yalnızca bu tarayıcıda saklanır; sunucuya gönderilmez. Bu bir transkript değildir ve sonuçlar OBS ile küçük farklar gösterebilir. Kaynak:
+        <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">İTÜ not ve başarı yönergesi</a>.</p>
+      </details>
+    </details>
     <div id="dp-semesters" class="dp-semesters"></div>`;
 }
 
@@ -285,7 +293,7 @@ function buildGradeSelect(selected, code, kind = 'course', slotKey = '') {
   sel.tabIndex = 0;
   const none = document.createElement('option');
   none.value = '';
-  none.textContent = '·';
+  none.textContent = 'not';
   sel.appendChild(none);
   for (const g of GRADE_CHOICES) {
     const o = document.createElement('option');
@@ -326,7 +334,7 @@ function electiveControls(slotKey, e, pick) {
   const pickSel = `<select class="dp-epick" data-slot="${slotKey}" aria-label="Seçmeli ders seç">${defaultOpt}${opts}</select>`;
   const grade = pick?.code
     ? `<span class="dp-grade-wrap"><select class="dp-grade dp-egrade${pick.grade ? ' filled' : ''}" data-gkind="elective" data-gslot="${slotKey}" data-gcode="${esc(pick.code)}" aria-label="${esc(pick.code)} notu" tabindex="0">
-        <option value="">·</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
+        <option value="">not</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
       </select><button type="button" class="dp-grade-clear" data-act="dp-clear" title="notu temizle">×</button></span>`
     : '<span class="dp-grade-hint">önce ders seç</span>';
   return `<div class="dp-elective-inputs">${pickSel}${grade}</div>`;
@@ -337,14 +345,20 @@ function electiveControls(slotKey, e, pick) {
 function applyParams(params) {
   filters.open = params.get('fopen') === '1';
   filters.cap = params.get('fcap') === '1';
-  filters.hideTaken = params.get('fhide') === '1';
   filters.semesters = new Set((params.get('fsems') || '').split(',').filter(Boolean));
   filters.types = new Set((params.get('ftypes') || '').split(',').filter(Boolean));
   $('#dp-open').checked = filters.open;
   $('#dp-cap').checked = filters.cap;
-  $('#dp-hide').checked = filters.hideTaken;
   renderSemesterFilter();
   renderTypeFilter();
+  updateFilterDisclosure();
+}
+
+function updateFilterDisclosure() {
+  const toggle = $('#dp-filter-toggle');
+  if (!toggle) return;
+  const count = filters.semesters.size + filters.types.size;
+  toggle.textContent = `Yarıyıl ve tür${count ? ` (${count})` : ''}`;
 }
 
 function renderSemesterFilter() {
@@ -358,6 +372,7 @@ function renderSemesterFilter() {
     cb.addEventListener('change', () => {
       if (cb.checked) filters.semesters.add(cb.value);
       else filters.semesters.delete(cb.value);
+      updateFilterDisclosure();
       saveState();
       renderAll();
     }));
@@ -377,6 +392,7 @@ function renderTypeFilter() {
       else filters.types.add(t);
       b.classList.toggle('on');
       b.setAttribute('aria-pressed', String(filters.types.has(t)));
+      updateFilterDisclosure();
       saveState();
       renderAll();
     }));
@@ -389,7 +405,6 @@ function saveState() {
   if (termSlug && termSlug !== state.index?.currentSlug) p.set('term', termSlug);
   if (filters.open) p.set('fopen', '1');
   if (filters.cap) p.set('fcap', '1');
-  if (filters.hideTaken) p.set('fhide', '1');
   const sems = [...filters.semesters];
   if (sems.length) p.set('fsems', sems.join(','));
   const types = [...filters.types];
@@ -409,7 +424,7 @@ function renderAll() {
   renderSummary(sems.map((x) => x.s));
   renderSemesterFilter();
 
-  let openCount = 0, closedCount = 0, slotOpen = 0, shown = 0;
+  let openCount = 0, closedCount = 0, slotOpen = 0, slotCount = 0, shown = 0;
 
   const root = $('#dp-semesters');
   const historyCodes = [];
@@ -420,10 +435,11 @@ function renderAll() {
   for (const { s, i } of sems) {
     const load = semesterLoad(s);
     const avg = semAvgs[i];
-    const sem = document.createElement('section');
+    const sem = document.createElement('details');
     sem.className = 'dp-sem';
     sem.dataset.si = i;
-    const head = document.createElement('h3');
+    sem.open = true;
+    const head = document.createElement('summary');
     head.className = 'dp-sem-head';
     const t = document.createElement('span');
     t.textContent = s.title;
@@ -449,7 +465,6 @@ function renderAll() {
         const c = item.course;
         const code = canonicalCode(c.code);
         if (filters.types.size && (!c.type || !filters.types.has(c.type))) return;
-        if (filters.hideTaken && isTaken(code)) return;
         const st = joinCourse(code, rows, historyFor(branchOf(code)));
         if (st.state === 'closed' && !histCache.has(branchOf(code))) historyCodes.push(code);
         if (filters.open && st.state !== 'open') return;
@@ -460,12 +475,12 @@ function renderAll() {
         hasRows = true;
       } else if (item.elective) {
         const e = item.elective;
-        if (filters.hideTaken && e.options && e.options.every((o) => isTaken(o.code))) return;
         if (filters.types.size && !matchesElectiveType(e, filters.types)) return;
         const joined = joinElective(e, rows, historyFor(''));
         const open = joined.openCount;
         if (filters.open && !open) return;
         if (filters.cap && !(joined.options.some((o) => o.status.state === 'open' && o.status.sections.some((sec) => sec.cap > sec.enr)))) return;
+        slotCount++;
         if (open) slotOpen++;
         shown++;
         sem.appendChild(electiveRow(joined, open, slotKey));
@@ -486,7 +501,7 @@ function renderAll() {
   }
 
   // "Bu dönem planından N ders açık · M zorunlu · K seçmeli slot"
-  $('#dp-result').innerHTML = planSummaryLine(openCount, closedCount, slotOpen, shown);
+  $('#dp-result').innerHTML = planSummaryLine(openCount, closedCount, slotOpen, slotCount, shown);
 
   renderGPA();
   if (historyCodes.length) ensureHistoryFor(historyCodes);
@@ -514,10 +529,10 @@ function matchesElectiveType(e, types) {
   return false;
 }
 
-function planSummaryLine(open, closed, slotOpen, shown) {
-  const parts = [`bu dönem planından <b>${open}</b> ders açık`];
-  parts.push(`<b>${shown - slotOpen}</b> zorunlu`);
-  parts.push(`<b>${slotOpen}</b> seçmeli slot`);
+function planSummaryLine(open, closed, slotOpen, slotCount, shown) {
+  const parts = [`<b>${open}</b> ders açık`];
+  parts.push(`<b>${shown - slotCount}</b> ders gösteriliyor`);
+  if (slotCount) parts.push(`<b>${slotOpen}/${slotCount}</b> seçmeli açık`);
   if (closed) parts.push(`${closed} kapalı`);
   return parts.join(' · ');
 }
@@ -587,12 +602,12 @@ function courseRow(c, st, slotKey) {
     btn.setAttribute('aria-expanded', 'false');
     const totalCap = st.sections.reduce((s, x) => s + (x.cap || 0), 0);
     btn.title = `${st.sections.length} şube · toplam kontenjan ${trNum(totalCap)}`;
-    btn.textContent = `● ${st.sections.length}`;
+    btn.textContent = `${st.sections.length} şube`;
     row.appendChild(btn);
   } else {
     const span = document.createElement('span');
     span.className = 'dp-sec-btn closed';
-    span.textContent = st.state === 'closed' ? '● kapalı' : '● yok';
+    span.textContent = st.state === 'closed' ? 'kapalı' : 'veri yok';
     span.title = st.state === 'closed'
       ? `bu dönem açık değil · son ${termLabel(st.lastTerm)}`
       : 'bu dönem açık değil';
@@ -680,11 +695,11 @@ function sectionGroupRow(g, hasInstr) {
   const fill = document.createElement('span');
   fill.className = 'dp-fill';
   if (g.cap > 0) {
-    fill.innerHTML = fillBar(g.cap, g.enr); // fillBar kendi güvenilir motifi üretir
+    fill.innerHTML = quotaDisplay(g.cap, g.enr);
     if (g.enr >= g.cap) {
       fill.append(' ');
       const full = document.createElement('span');
-      full.className = 'dp-full';
+      full.className = 'dp-full quota-fosfor-only';
       full.textContent = 'dolu';
       fill.appendChild(full);
     }
@@ -746,7 +761,7 @@ function electiveRow(e, open, slotKey) {
   btn.className = 'dp-sec-btn ' + (open ? 'open' : 'closed');
   btn.dataset.act = 'pool';
   if (e.title) btn.dataset.title = e.title;
-  btn.textContent = open ? `● ${open}` : '● kapalı';
+  btn.textContent = open ? `${open} açık` : 'kapalı';
   btn.title = open
     ? `${total} alternatiften ${open} tanesi açık · havuzu aç`
     : 'bu dönem açık değil · havuzu aç';
@@ -799,15 +814,16 @@ function renderSummary(sems) {
     ? `seçili yarıyıl ${fmtSemLoad(semesterLoad(sems[0]))}`
     : sems.length > 1 ? `${sems.length} yarıyıl` : 'tüm plan';
   const prog = plan.programName || progCode;
-  const label = plan.planLabel ? `<span class="dp-plan-label">${esc(plan.planLabel)}</span>` : '';
   const remain = remainingRequired();
-  const remainHtml = remain > 0 ? `<span><b>${remain} ders</b><em>kalan zorunlu</em></span>` : '';
-  el.innerHTML = `<div class="dp-summary-grid">
-    <span><b>${esc(prog)}</b><em>${label || esc(progCode)}</em></span>
-    <span><b>${esc(total)}</b><em>program toplamı${esc(computed)}</em></span>
-    <span><b>${esc(load)}</b><em>plan uzunluğu</em></span>
-    ${remainHtml}
-  </div>`;
+  const remainHtml = remain > 0 ? `<div><dt>kalan</dt><dd>${remain} zorunlu ders</dd></div>` : '';
+  el.innerHTML = `<div class="dp-summary-main">
+      <h2>${esc(prog)}</h2>
+    </div>
+    <dl class="dp-summary-meta">
+      <div><dt>program toplamı${esc(computed)}</dt><dd>${esc(total)}</dd></div>
+      <div><dt>görünüm</dt><dd>${esc(load)}</dd></div>
+      ${remainHtml}
+    </dl>`;
 }
 
 function num(s) {
@@ -880,15 +896,23 @@ function renderGPA() {
   const empty = !hasGrades && !hasTransfer;
   const emptyEl = $('#dp-grades-empty');
   const body = panel.querySelector('.dp-grades-body');
+  const preview = $('#dp-grade-preview');
   if (emptyEl) emptyEl.hidden = !empty;
   if (body) body.classList.toggle('hidden', empty);
   const t = stored.transfer || {};
   $('#dp-tcredits').value = t.credits ?? '';
   $('#dp-tgpa').value = t.gpa ?? '';
-  if (empty) { setTargetState(true); return; }
+  if (empty) {
+    if (preview) preview.textContent = 'Not girdikçe hesaplanır';
+    setTargetState(true);
+    return;
+  }
 
   const st = currentState();
   $('#dp-gano').textContent = st.gpa == null ? 'yok' : fmtTr2(st.gpa);
+  if (preview) preview.textContent = st.gpa == null
+    ? `${trNum(st.credits)} kredi girildi`
+    : `${fmtTr2(st.gpa)} GANO · ${trNum(st.credits)} kredi`;
   const tot = planTotal();
   const p = progress(allEntries(), { credits: tot.credits, ects: tot.ects }, stored.transfer);
   $('#dp-progress').textContent = `${p.credits.done}/${p.credits.total} kredi`;
@@ -993,10 +1017,8 @@ function handleGradeKey(sel, ev) {
   commitGrade(sel);
 }
 
-// Girilen notlar aynı zamanda "aldığım dersler" beyanıdır (Faz D): notu olan
-// dersler taken'e işlenir, görünümler (önşart/havuz/filtreler) TAKEN_CHANGED'la
-// tazelenir. Silmez — kullanıcı "aldığım dersler" modalından kendi eklediklerini
-// korur; yalnızca ekler.
+// Girilen notlar tamamlanmış ders durumuna da işlenir; önşart ve seçmeli havuz
+// görünümleri TAKEN_CHANGED ile tazelenir. Var olan kayıtları silmez, yalnızca ekler.
 function syncTakenFromGrades() {
   const t = getTaken();
   const graded = new Set(t.codes);
@@ -1041,10 +1063,12 @@ function init() {
     renderAll();
     saveState();
   });
-  $('#dp-refresh').addEventListener('click', async () => {
-    histCache.clear();
-    await reloadRows();
-    renderAll();
+  $('#dp-filter-toggle').addEventListener('click', () => {
+    const toggle = $('#dp-filter-toggle');
+    const more = $('#dp-filter-more');
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', String(open));
+    more.hidden = !open;
   });
   // Fakülte değişince bölüm listesi yenilenir ve ilk bölüm seçilir.
   $('#dp-fac').addEventListener('change', () => {
@@ -1058,11 +1082,10 @@ function init() {
   $('#dp-prog').addEventListener('change', () => {
     selectProgram($('#dp-prog').value);
   });
-  ['#dp-open', '#dp-cap', '#dp-hide'].forEach((sel) => {
+  ['#dp-open', '#dp-cap'].forEach((sel) => {
     $(sel).addEventListener('change', () => {
       filters.open = $('#dp-open').checked;
       filters.cap = $('#dp-cap').checked;
-      filters.hideTaken = $('#dp-hide').checked;
       saveState();
       renderAll();
     });

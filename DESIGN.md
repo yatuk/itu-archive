@@ -169,8 +169,14 @@ Renk kuralları:
 
 ## Components
 
-- **Kontenjan çubuğu (imza öğesi):** `.fill` → `%NN` (detay panelinde "yazılan / kapasite · %pct") + `.bar` + iç `i`. Tek kaynak `fillBar(cap, enr, {detail})` (chart.js) — tüm yüzeyler onu kullanır. Sade motifi: 64×8 hap çubuk, %100 kapasite çizgisi, acid gradyan dolgu; ≥85% (`tight`) ve %100 (`full`) amber, dolu = amber çerçeve. Fosfor ince 46×6 terminal çubuğunu korur.
-- **Ders tablosu:** 10 kolon (sel, fav, CRN, kod, ad, hoca, zaman, kont./yazılan, doluluk); satır tıklanınca detay; sort butonları; arama eşleşmesi `<mark>`.
+- **Sade ana sayfa hiyerarşisi:** üst bölüm yalnızca marka, tek cümle açıklama ve tema/dil araçlarını taşır. Dört hücreli durum kartı ve tanıtım bandı sade temada gösterilmez; veri tazeliği sonuç satırında bağlama yakın verilir. Fosfor temanın durum şeridi korunur.
+- **Ana gezinme:** sade temada altı sık kullanılan görünüm doğrudan görünür (`Dersler`, `Ders Planım`, `Önşart Haritası`, `Sınavlar`, `Akademik Takvim`, `Program`); `Geçmiş`, `Dönemler` ve `Hakkında`, `Daha fazla` altında toplanır. Mobil açılım akış içinde ikinci satıra dönüşür ve içeriğin üzerine binmez.
+- **Ders filtreleri:** arama, dönem, bölüm, gün, saat ve yalnızca kontenjanı olanlar birincildir. Seviye, yöntem, program ve ders kodu `Diğer filtreler` disclosure'ındadır. CSV, zaman çizelgesi ve mobil sıralama filtre kutusundan ayrılıp sonuç araçlarına taşınır.
+- **Ders Planım hiyerarşisi:** fakülte, program ve dönem tek seçim yüzeyidir. Açık ders/kontenjan birincil; yarıyıl ve tür ikincil disclosure filtresidir. Program toplamı tek özet bandında, GANO/ilerleme ile veri taşıma ve gizlilik araçları kapatılabilir tek panelde yer alır. Yarıyıllar daraltılabilir; sade temada dersler iç içe kartlar yerine ayraçlı satırlardır.
+- **Kaldırılan yüzey:** bağımsız “Aldığım dersler” düğmesi, modalı ve ders listesindeki filtresi yoktur. Ders Planım'a girilen notların önşart hesaplarına katkısı iç mantık olarak sürer.
+
+- **Kontenjan gösterimi:** sade temada aynı nicelik tek sayısal temsille verilir: normalde `34 / 50`, kritik durumda `47 / 50 · 3 yer`, tam doluda `50 / 50 · dolu`. Yüzde ve çubuk liste/detay yüzeylerinde gösterilmez; yüzde yalnızca sıralama ve durum hesabında kalır. Fosfor temanın `%NN` + ince 46×6 terminal çubuğu piksel düzeyinde korunur. Dönem trend grafiği değişimi zaman içinde anlattığı için bu sadeleştirme kuralının dışındadır.
+- **Ders tablosu:** sade temada 8 görünür kolon (sel, fav, CRN, kod, ad, hoca, zaman, kontenjan); fosforda donmuş 10 kolon korunur. Satır tıklanınca detay; sort butonları; arama eşleşmesi `<mark>`.
 - **Detay modalı:** `.detail-panel` (fixed, karartma) > `.detail-box` (max 680px) — 6 yüzeyden tek giriş; d-head / meta pill'leri / şube kartları / önşart ağacı / not dağılımı / katalog / geçmiş.
 - **Tabs (Fluid Island):** yapışkan cam hap, 9 sekme; sade'de numarasız düz adlar.
 - **Filtre çipleri:** aktif filtreleri `✕` ile; arama + gelişmiş filtreler disclosure'ı.

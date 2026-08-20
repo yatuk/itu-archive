@@ -6,7 +6,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
-import { fillBar, trendChart } from './chart.js';
+import { fillBar, quotaDisplay, quotaState, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
@@ -45,6 +45,11 @@ test('scopeParams görünüme göre parametreleri kapsar (term global)', () => {
   assert.equal(scoped.get('time'), null);   // dersler'e ait, onsart'ta yok
   assert.equal(scoped.get('level'), null);
   assert.equal(scoped.get('method'), null);
+
+  const eski = new URLSearchParams('fopen=1&fhide=1&taken=1');
+  assert.equal(scopeParams('dersplanim', eski).get('fopen'), '1');
+  assert.equal(scopeParams('dersplanim', eski).get('fhide'), null);
+  assert.equal(scopeParams('dersler', eski).get('taken'), null);
 });
 
 test('parseCodes virgül/boşluk/satırla ayrılmış kodları temizler', () => {
@@ -357,6 +362,28 @@ test('fillBar detail varyantı: yazılan/kapasite · %pct + aynı sınıflar', (
   assert.ok(tight.includes('tight'), tight);
   // Varsayılan davranış değişmez.
   assert.ok(!fillBar(60, 40).includes('40 / 60'));
+});
+
+test('quotaState karar için kalan yeri ve durumu hesaplar', () => {
+  assert.deepEqual(quotaState(0, 5), { capacity: 0, enrolled: 5, remaining: 0, pct: 0, kind: 'unknown' });
+  assert.equal(quotaState(50, 34).kind, 'open');
+  assert.deepEqual(quotaState(50, 47), { capacity: 50, enrolled: 47, remaining: 3, pct: 94, kind: 'tight' });
+  assert.equal(quotaState(50, 50).kind, 'full');
+  assert.equal(quotaState(50, 52).remaining, 0);
+});
+
+test('quotaDisplay sade metni tek oranla, fosforu eski çubukla üretir', () => {
+  const open = quotaDisplay(50, 34, { legacyCounts: true });
+  assert.ok(open.includes('34 / 50'));
+  assert.ok(!open.match(/quota-sade[^>]*>[^<]*%68/));
+  assert.ok(open.includes('34/50 · <span class="fill">%68'));
+
+  const tight = quotaDisplay(50, 47);
+  assert.ok(tight.includes('47 / 50 · <span class="quota-state tight">3 yer</span>'));
+  const full = quotaDisplay(50, 52, { detail: true });
+  assert.ok(full.includes('52 kayıtlı · 50 kontenjan'));
+  assert.ok(full.includes('quota-state full">dolu'));
+  assert.equal(quotaDisplay(0, 5), '·');
 });
 
 test('trendChart dönem bazında SVG üretir (iç içe çubuk + tam etiket)', () => {

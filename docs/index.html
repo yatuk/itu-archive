@@ -107,6 +107,12 @@
 <body>
 <a class="skip-link" href="#icerik">İçeriğe atla</a>
 <div class="scanlines" aria-hidden="true"></div>
+<div id="file-warning" class="file-warning" hidden role="alert">
+ Bu sayfa dosya üzerinden veri yükleyemez. Siteyi yerel sunucu veya itu-ders.com üzerinden açın.
+</div>
+<script>
+ if (location.protocol === 'file:') document.getElementById('file-warning').hidden = false;
+</script>
 
 <header class="masthead">
  <div class="wrap">
@@ -118,16 +124,16 @@
    </div>
    <div class="mast-controls">
     <div class="theme-pick" role="group" aria-label="Görünüm teması">
-     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)">◎</button>
-     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)">◐</button>
+     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)"><span aria-hidden="true">◎</span><span class="theme-name" data-i18n="themeLight">Açık</span></button>
+     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)"><span aria-hidden="true">◐</span><span class="theme-name" data-i18n="themeDark">Koyu</span></button>
     </div>
     <button type="button" id="lang-btn" class="btn-ghost" title="Dil / Language">TR/EN</button>
-    <button type="button" id="taken-btn" class="btn-ghost" title="Aldığım dersleri gir · önşart/program uygunluğunu gör">aldığım dersler</button>
    </div>
   </div>
   <p class="tagline">
-   obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri.
-   Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı: kalıcı olarak.
+   <span class="tagline-sade" data-i18n="taglineSimple">İTÜ derslerini, kontenjanları ve geçmiş dönemleri ara.</span>
+   <span class="tagline-fosfor">obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri.
+   Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı: kalıcı olarak.</span>
   </p>
   <dl class="statbar" id="statbar" aria-live="polite">
    <div><dt>durum</dt><dd id="stat-status">yükleniyor…</dd></div>
@@ -137,14 +143,6 @@
   </dl>
  </div>
 </header>
-
-<div id="welcome" class="welcome wrap" hidden>
- <div class="welcome-text">
-  <p><b>Ders Arşivi</b> OBS'nin yayınlamadığını saklar: geçmiş dönemler, kontenjan geçmişi, müfredat ve önşart haritası. Bir dersin kodunu ya da adını aramayı dene, kayıt kararını OBS'den önce buradan ver.</p>
-  <p class="welcome-examples">Örnek: <button type="button" class="w-example" data-q="BLG 102E">BLG 102E</button> · <button type="button" class="w-example" data-q="Mimari">Mimari</button></p>
- </div>
- <button type="button" id="w-close" class="w-close" aria-label="Karşılamayı kapat" title="Kapat">×</button>
-</div>
 
 <h2 class="sr-only">Bölümler</h2>
 <nav class="tabs wrap" role="tablist" aria-label="Bölümler">
@@ -157,6 +155,14 @@
  <button role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" data-i18n="tabDonemler">07 DÖNEMLER</button>
  <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">08 PROGRAM</button>
  <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">09 HAKKINDA</button>
+ <details class="tabs-more">
+  <summary id="tabs-more-label" data-i18n="navMore">Daha fazla</summary>
+  <div class="tabs-more-menu">
+   <button type="button" data-nav-view="gecmis" data-i18n="navHistory">Geçmiş</button>
+   <button type="button" data-nav-view="donemler" data-i18n="navTerms">Dönemler</button>
+   <button type="button" data-nav-view="hakkinda" data-i18n="navAbout">Hakkında</button>
+  </div>
+ </details>
 </nav>
 
 <main class="wrap" id="icerik">
@@ -189,7 +195,9 @@
       <option value="ogle">öğle (12:00-17:00)</option>
       <option value="aksam">akşam (≥17:00)</option>
     </select></label>
-    <div class="filters-more" id="filters-more">
+    <label class="check"><input type="checkbox" id="f-open"> yalnızca kontenjanı olanlar</label>
+    <button type="button" id="f-more-toggle" class="btn-ghost" aria-expanded="false" aria-controls="filters-more" data-i18n="filterMore">Diğer filtreler</button>
+    <div class="filters-more" id="filters-more" hidden>
      <label>seviye <select id="f-level">
       <option value="">hepsi</option>
       <option>OL</option><option>LS</option><option>LU</option><option>LUI</option>
@@ -197,25 +205,28 @@
      <label>yöntem <select id="f-method"><option value="">hepsi</option></select></label>
      <label>alabilen program <select id="f-program"><option value="">hepsi</option></select></label>
      <label>ders kodu <input id="f-code" type="text" class="f-in" placeholder="BLG 101" spellcheck="false" aria-label="Ders koduna göre filtrele"></label>
-     <label class="check"><input type="checkbox" id="f-open"> yalnızca kontenjanı olanlar</label>
-     <label class="check"><input type="checkbox" id="f-taken"> aldıklarımı gizle</label>
     </div>
-    <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir">CSV indir</button>
-    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle">zaman çizelgesi</button>
-    <button type="button" id="f-filter-btn" class="btn-ghost" aria-expanded="false" aria-controls="filters">Filtreler</button>
+   </div>
+   <button type="button" id="f-filter-btn" class="btn-ghost" aria-expanded="false" aria-controls="filters" data-i18n="filterButton">Filtreler</button>
+  </div>
+  <div id="filters-scrim" class="filters-scrim" hidden></div>
+
+  <div class="resultbar">
+   <p class="resultline" id="resultline" aria-live="polite"></p>
+   <div class="result-actions">
     <label class="mobile-sort">sırala <select id="mobile-sort" aria-label="Sırala">
       <option value="crn">CRN</option>
       <option value="code">Kod</option>
       <option value="name">Ad</option>
       <option value="instructor">Öğretim Üyesi</option>
-      <option value="cap">Kontenjan</option>
-      <option value="fill">Doluluk</option>
-     </select></label>
+      <option value="cap">Toplam kontenjan</option>
+      <option value="enr">Yazılan öğrenci</option>
+      <option value="fill">Kontenjan doluluğu</option>
+    </select></label>
+    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle">zaman çizelgesi</button>
+    <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir">CSV</button>
    </div>
   </div>
-  <div id="filters-scrim" class="filters-scrim" hidden></div>
-
-  <p class="resultline" id="resultline" aria-live="polite">·</p>
 
   <div id="chips" class="chips" hidden aria-label="Aktif filtreler"></div>
 
@@ -238,9 +249,9 @@
       <th data-sort="name" class="sortable" scope="col"><button type="button" class="th-sort">Adı</button></th>
       <th data-sort="instructor" class="sortable" scope="col"><button type="button" class="th-sort">Öğretim Üyesi</button></th>
       <th data-sort="when" class="sortable" scope="col"><button type="button" class="th-sort">Zaman</button></th>
-      <th data-sort="cap" class="sortable num" scope="col"><button type="button" class="th-sort">Kont.</button></th>
-      <th data-sort="enr" class="sortable num" scope="col"><button type="button" class="th-sort">Yazılan</button></th>
-      <th data-sort="fill" class="sortable num" scope="col"><button type="button" class="th-sort">Doluluk</button></th>
+      <th data-sort="cap" class="sortable num quota-legacy-col" scope="col"><button type="button" class="th-sort">Kont.</button></th>
+      <th data-sort="enr" class="sortable num quota-legacy-col" scope="col"><button type="button" class="th-sort">Yazılan</button></th>
+      <th data-sort="fill" class="sortable num quota-main-col" scope="col"><button type="button" class="th-sort"><span class="quota-sade">Kontenjan</span><span class="quota-fosfor">Doluluk</span></button></th>
      </tr>
     </thead>
     <tbody id="rows"></tbody>
@@ -263,50 +274,58 @@
            placeholder="ders kodu (BLG 102) veya öğretim üyesi adı…" aria-label="Geçmişte ara">
    </label>
   </div>
-  <p class="resultline" id="hresultline" aria-live="polite">·</p>
+  <p class="resultline" id="hresultline" aria-live="polite"></p>
   <div id="hmatches" class="matches"></div>
   <div id="hdetail"></div>
  </section>
 
  <section id="view-onsart" class="view" role="tabpanel" aria-labelledby="tab-onsart" hidden>
-  <p class="note">
-   Bir bölüm seç: güncel müfredatı (OBS Ders Planı) dönem dönem sütunlar halinde,
-   gerçek önşart ilişkileri ok'larla gösteriliyor, hangi dersin hangisine bağlı
-   olduğu tıklamadan görülüyor. <strong>Düz ok zorunlu, kesikli ok alternatif
-   (VEYA)</strong> önşartı gösterir: kesikli olanlardan biri yeterli. Bir düğüme
-   tıkla: önşartı VE/VEYA mantığıyla ayrıştırılmış halde panelde, geriye doğru
-   önşartları ve ileriye doğru bu dersi önşart olarak isteyen dersler grafikte
-   parlar. Sarı elmaslar seçmeli slotlardır, tıklayınca alternatifleri listeler.
-  </p>
   <div id="pg-root" class="pg-root">
-   <div class="console pg-console">
-    <label class="query">
-     <span class="sigil">&gt;</span>
-     <select class="pg-faculty-select" aria-label="Fakülte seç"><option>yükleniyor…</option></select>
-     <select class="pg-program-select" aria-label="Bölüm seç"><option>yükleniyor…</option></select>
-    </label>
+   <header class="pg-head">
+    <div class="pg-head-copy"><h2>Önşart haritası</h2><p>Bir program seç; derslerin dönem sırasını ve birbirine nasıl bağlandığını gör.</p></div>
     <span class="pg-plan-label"></span>
-   </div>
-   <div class="pg-levels" role="group" aria-label="Program seviyesi" title="Yalnızca seçili seviyelerin programları listelenir"></div>
-   <p class="pg-legend">düz ok = zorunlu önşart · kesikli ok = alternatif (biri yeter) · elmas = seçmeli slot</p>
-   <div class="console pg-console">
+   </header>
+   <section class="pg-picker" aria-label="Program seçimi">
+    <div class="pg-picker-fields">
+     <label><span>Fakülte</span>
+     <select class="pg-faculty-select" aria-label="Fakülte seç"><option>yükleniyor…</option></select>
+     </label>
+     <label><span>Program</span>
+     <select class="pg-program-select" aria-label="Bölüm seç"><option>yükleniyor…</option></select>
+     </label>
+    </div>
+    <div class="pg-level-wrap"><span>Seviye</span><div class="pg-levels" role="group" aria-label="Program seviyesi" title="Yalnızca seçili seviyelerin programları listelenir"></div></div>
+   </section>
+   <div class="pg-tools">
     <label class="query">
      <span class="sigil">&gt;</span>
      <input class="pg-search" type="search" autocomplete="off" spellcheck="false"
-            placeholder="seçili bölümde ders kodu veya adı ara…" aria-label="Ders planında ara">
+            placeholder="Bu programda ders kodu veya adı ara…" aria-label="Ders planında ara">
     </label>
-    <button type="button" class="pg-reset btn-ghost">odağı temizle</button>
-    <button type="button" class="pg-list-toggle btn-ghost" aria-pressed="false">listeye dön</button>
+    <div class="pg-tool-actions">
+     <button type="button" class="pg-reset btn-ghost" disabled>Odağı temizle</button>
+     <button type="button" class="pg-list-toggle btn-ghost" aria-pressed="false">Liste görünümü</button>
+    </div>
    </div>
    <div class="pg-results" aria-live="polite"></div>
-   <p class="pg-status">bir bölüm seçin</p>
-   <div class="pg-branches" aria-hidden="true"></div>
-   <div class="pg-canvas-wrap">
-    <canvas aria-label="Ders planı önşart haritası: müfredat dönem sütunlarında, önşartlar oklarla. Detay için düğümlere tıklayın." role="img"></canvas>
-    <div class="pg-tooltip" hidden></div>
+   <div class="pg-map-meta">
+    <p class="pg-status">Bir program seçin</p>
+    <details class="pg-guide">
+     <summary>Haritayı okuma</summary>
+     <div><span><i class="pg-line-solid"></i>Zorunlu önşart</span><span><i class="pg-line-dash"></i>Alternatif; biri yeterli</span><span><i class="pg-diamond"></i>Seçmeli havuz</span></div>
+    </details>
    </div>
-   <ol class="pg-semester-list sr-only" aria-label="Müfredat dönem dönem liste görünümü"></ol>
-   <div class="pg-detail"></div>
+   <div class="pg-workspace">
+    <div class="pg-map">
+     <div class="pg-branches" aria-hidden="true"></div>
+     <div class="pg-canvas-wrap">
+      <canvas aria-label="Ders planı önşart haritası: müfredat dönem sütunlarında, önşartlar oklarla. Detay için düğümlere tıklayın." role="img"></canvas>
+      <div class="pg-tooltip" hidden></div>
+     </div>
+     <ol class="pg-semester-list sr-only" aria-label="Müfredat dönem dönem liste görünümü"></ol>
+    </div>
+    <aside class="pg-detail" aria-live="polite"></aside>
+   </div>
   </div>
  </section>
 
@@ -324,7 +343,7 @@
     <button type="button" id="e-ics" class="btn-ghost" title="Filtrelenmiş sınavları takvime aktar">.ics</button>
    </div>
   </div>
-  <p class="resultline" id="eresultline" aria-live="polite">·</p>
+  <p class="resultline" id="eresultline" aria-live="polite"></p>
    <div class="tablewrap">
     <table aria-label="Sınav listesi" id="etable">
      <thead>
@@ -360,68 +379,74 @@
  </section>
 
  <section id="view-program" class="view" role="tabpanel" aria-labelledby="tab-program" hidden>
-  <p class="note">
-   Seçtiğin şubelerden haftalık ders programını kur. Bölüm, ders ve şube (CRN)
-   seçerek ekle, birden fazla program oluşturup aralarında geçiş yap. Çakışan
-   dersler kırmızı işaretlenir. "CRN doldur" ile OBS kayıt sayfası için kod üretebilirsin.
-  </p>
-
   <div class="p-toolbar">
-   <div class="p-progsel">
-    <select id="p-prog" class="p-prog-select" aria-label="Program seç"></select>
-    <button type="button" id="p-prog-copy" class="btn-ghost" title="Programı kopyala">⧉</button>
-    <button type="button" id="p-prog-new" class="btn-ghost" title="Yeni program">＋</button>
-    <button type="button" id="p-prog-del" class="btn-ghost p-danger" title="Programı sil">−</button>
-    <button type="button" id="p-prog-rename" class="btn-ghost" title="Programı yeniden adlandır">✎</button>
-   </div>
-   <div class="p-actions">
-    <button type="button" id="p-addrow" class="btn-primary">＋ Ders Ekle</button>
-    <button type="button" id="p-dl" class="btn-ghost" title="Takvimi görsel olarak indir">İndir</button>
-    <div class="p-obs-wrap">
-     <a id="p-obs" class="btn-ghost" href="javascript:void(0)" draggable="true" aria-describedby="p-obs-tt">CRN doldur</a>
-     <div id="p-obs-tt" class="ttip" role="tooltip">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</div>
-     <div id="p-obs-onboard" class="ttip ttip-onboard" role="status">👆 Bu butonu yer imleri çubuğuna sürükleyin!</div>
+   <div class="p-workspace-title">
+    <span class="eyebrow">Aktif program</span>
+    <div class="p-progsel">
+     <select id="p-prog" class="p-prog-select" aria-label="Program seç"></select>
+     <button type="button" id="p-prog-rename" class="btn-ghost">Adlandır</button>
     </div>
-    <span class="p-credits" title="Toplam kredi">Kredi: <b id="p-credits-val">·</b></span>
    </div>
+   <div class="p-progtools" aria-label="Program işlemleri">
+    <button type="button" id="p-prog-new" class="btn-ghost">Yeni</button>
+    <button type="button" id="p-prog-copy" class="btn-ghost">Kopyala</button>
+    <button type="button" id="p-prog-del" class="btn-ghost p-danger">Programı sil</button>
+   </div>
+   <span class="p-credits" title="Toplam kredi ve AKTS"><span>Toplam</span><b id="p-credits-val">·</b></span>
   </div>
 
-  <div class="console p-controls">
-   <label>dönem <select id="p-term"></select></label>
-   <label class="query">
-    <span class="sigil">&gt;</span>
-    <input id="p-q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="veya ders kodu / ad / CRN arayıp ekle…" aria-label="Ders ara ve ekle">
-   </label>
-  </div>
+  <section class="p-add" aria-labelledby="p-add-title">
+   <div class="p-add-head">
+    <div><h2 id="p-add-title">Ders ekle</h2><p>Kod, ad, CRN veya öğretim üyesiyle ara.</p></div>
+    <label>dönem <select id="p-term"></select></label>
+   </div>
+   <div class="p-add-search">
+    <label class="query">
+     <span class="sigil">&gt;</span>
+     <input id="p-q" type="search" autocomplete="off" spellcheck="false"
+            placeholder="Örn. MAT 271E, Probability, 30154…" aria-label="Ders ara ve programa ekle">
+    </label>
+    <button type="button" id="p-addrow" class="btn-ghost">Bölümden seç</button>
+   </div>
+  </section>
   <div id="p-results" class="p-results" hidden></div>
 
   <div id="p-rows" class="p-rows" aria-label="Ders satırları"></div>
 
-  <div id="p-crnstrip" class="p-crnstrip" hidden>
-   <span class="p-crnstrip-label">CRN'ler:</span><span id="p-crnlist" class="p-crnlist"></span>
-  </div>
-
   <div class="p-layout">
    <aside class="p-panel">
-    <h2 class="eyebrow">Seçili şubeler <span id="p-count">0</span></h2>
+    <div class="p-panel-head">
+     <div><h2>Seçili dersler <span id="p-count">0</span></h2><p>Sürükleyerek sıralayabilirsin.</p></div>
+     <button type="button" id="p-clear" class="p-clear-link">Tümünü temizle</button>
+    </div>
     <label class="check p-full"><input type="checkbox" id="p-full"> dolu şubeleri işaretle</label>
     <div id="p-list" class="p-list"></div>
-    <div id="p-summary" class="p-summary"></div>
-    <div class="p-actions p-actions-bot">
-     <button type="button" id="p-favs" class="btn-ghost">favorileri ekle</button>
-     <button type="button" id="p-csv" class="btn-ghost">CSV</button>
-     <button type="button" id="p-ics" class="btn-ghost" title="Seçili şubeleri haftalık takvim olarak dışa aktar">.ics</button>
-     <button type="button" id="p-share" class="btn-ghost">paylaş</button>
-     <button type="button" id="p-clear" class="btn-ghost p-danger">temizle</button>
-    </div>
+    <button type="button" id="p-favs" class="btn-ghost p-favs">Favorilerimi ekle</button>
+    <details class="p-export">
+     <summary>Dışa aktar ve paylaş</summary>
+     <div class="p-actions p-actions-bot">
+      <button type="button" id="p-dl" class="btn-ghost" title="Takvimi görsel olarak indir">PNG</button>
+      <button type="button" id="p-csv" class="btn-ghost">CSV</button>
+      <button type="button" id="p-ics" class="btn-ghost" title="Seçili şubeleri haftalık takvim olarak dışa aktar">Takvim (.ics)</button>
+      <button type="button" id="p-share" class="btn-ghost">Bağlantıyı kopyala</button>
+     </div>
+    </details>
     <div id="p-obs-code" class="p-obs-code" hidden></div>
    </aside>
    <div class="p-main">
-    <div class="p-gridopts">
-     <label class="check"><input type="checkbox" id="p-gridview"> ızgara görünümü</label>
-     <label class="check"><input type="checkbox" id="p-weekend"> hafta sonunu göster</label>
-     <label class="check"><input type="checkbox" id="p-fullday"> tüm günü göster</label>
+    <div class="p-main-head">
+     <div id="p-summary" class="p-summary"></div>
+     <div class="p-main-actions">
+      <div class="p-obs-wrap">
+       <a id="p-obs" class="btn-primary" href="javascript:void(0)" draggable="true" aria-describedby="p-obs-tt">OBS için CRN hazırla</a>
+       <div id="p-obs-tt" class="ttip" role="tooltip">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</div>
+      </div>
+     </div>
+    </div>
+    <div class="p-gridopts" aria-label="Takvim görünümü">
+     <label class="check"><input type="checkbox" id="p-gridview"> Izgara</label>
+     <label class="check"><input type="checkbox" id="p-weekend"> Hafta sonu</label>
+     <label class="check"><input type="checkbox" id="p-fullday"> Tüm gün</label>
     </div>
     <div id="p-grid" class="p-grid"></div>
    </div>

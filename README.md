@@ -49,9 +49,11 @@ ağacı olarak görürsünüz (hepsi gerekli / biri yeterli etiketleriyle). Graf
 de geriye doğru önşartlar ve ileriye doğru bu dersi önşart olarak isteyen
 dersler parlıyor. Seçmeli ders slotları tek bir düğüm. Bazı havuzlarda 150'den
 fazla alternatif var, hepsini tek tek düğüm yapmak grafiği okunmaz hale
-getiriyordu. Tıklayınca alternatifler panelde listeleniyor. Program seçici
-fakülte içinde seviyeye göre gruplanıyor. Yüksek lisans ve doktora programları
-tek dönemli listedir, dönem ayrımı yok.
+getiriyordu. Tıklayınca alternatifler masaüstünde haritanın yanındaki, mobilde
+kapatılabilir alt panelde listeleniyor; havuzda arama ve açık dersleri öne alma
+destekleniyor. Fakülte, program ve seviye seçimi tek çalışma başlığında; ders
+arama, odağı temizleme ve grafik/liste görünümü ayrı bir araç çubuğunda tutulur.
+Yüksek lisans ve doktora programları tek dönemli listedir, dönem ayrımı yok.
 
 Dersler sekmesinde tablo kolonları sıralanabiliyor. Görünen sonuç tek tıkla CSV
 olarak indirilebiliyor (Excel için BOM'lu). Arama ve filtre durumu URL'ye
@@ -60,12 +62,15 @@ günün yanında saat dilimi (sabah/öğle/akşam), seviye (OL/LS/LU/LUI) ve ö�
 yöntemini de kapsıyor. Aktif filtreler tek tıkla kaldırılabilen çipler olarak
 görünüyor. Şubeler seçilebiliyor. Seçilenler ayrı CSV olarak indirilebiliyor ve
 "yalnızca seçilenler" modunda zaman çizelgesinde çakışma kontrolüne sokuluyor.
-Bir dersin adına tıklayınca detay paneli açılıyor: o dönemdeki tüm şubeler,
-haftalık oturum saati, programlar, önşart, dolma süresi, geçmiş dönemler
+Bir dersin adına tıklayınca detay paneli açılıyor. Bilgi tek uzun sayfa yerine
+**Özet, Şubeler, Katalog ve Geçmiş** sekmelerine ayrılıyor; tablo satırından
+gelindiğinde ilgili CRN'nin şubesi, paylaşılan bağlantıda ise karar özeti öne
+çıkıyor. Haftalık oturum saati, programlar, önşart, dolma süresi, geçmiş dönemler
 (doluluk grafiği) ve varsa katalog bilgisi (kredi, AKTS, dil, içerik, çıktılar,
-kaynak kitaplar). Panel her sekmeyle paylaşılıyor (önşart haritasından, seçmeli
-havuzdan, geçmişten ve sınavlardan da açılıyor) ve kendi paylaşılabilir
-bağlantısına sahip (`#ders/BLG%20102E`). Alabilen program çipleri tıklanınca
+kaynak kitaplar) korunuyor. Uzun program listesi, not dağılımı ve ham dönem
+kayıtları gerektiğinde açılıyor. Panel her sekmeyle paylaşılıyor (önşart
+haritasından, seçmeli havuzdan, geçmişten ve sınavlardan da açılıyor) ve kendi
+paylaşılabilir bağlantısına sahip (`#ders/BLG-102E`). Alabilen program çipleri tıklanınca
 dersler sekmesinde o programa göre filtrelenir; "bu dersi önşart isteyenler"
 listesi ve OBS katalog formu bağlantısı da panelde. Katalog verisi geldiyse
 "Not dağılımı" bölümü çubuk grafik + geçme oranı (≥CC+) + en sık harf notu
@@ -73,6 +78,10 @@ gösterir (10 kişinin altındaki sınıflar etik nedenle gizli).
 "Zaman çizelgesi" düğmesi gün × saat ızgarasında çakışan dersleri kırmızı
 işaretler; Program sekmesi seçili şubelerin final sınavlarını da çakışma
 açısından denetler, katalogdan AKTS toplamını ve dolma hızını gösterir.
+Program kurucuda dersler aramayla veya bölüm → ders → CRN zinciriyle eklenebilir;
+her ders görünür **Çıkar** eylemiyle kaldırılıp bildirimden geri alınabilir. Birden
+fazla program oluşturma, adlandırma, kopyalama ve silmenin yanında PNG, CSV, ICS,
+paylaşılabilir bağlantı ve OBS için CRN çıktısı desteklenir.
 Akademik takvim tek tıkla `.ics` olarak dışa aktarılabilir. Sekmeler arası
 geçiş tarayıcı geçmişine yazılıyor, geri/ileri çalışır. Üstteki "görünüm"
 seçici ile sade (varsayılan) ve fosfor/koyu temalar arasında geçebilirsiniz;

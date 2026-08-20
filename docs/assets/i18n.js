@@ -19,6 +19,17 @@ const I18N = (() => {
       tabDonemler: '07 DÖNEMLER',
       tabProgram: '08 PROGRAM',
       tabHakkinda: '09 HAKKINDA',
+      taglineSimple: 'İTÜ derslerini, kontenjanları ve geçmiş dönemleri ara.',
+      themeLight: 'Açık',
+      themeDark: 'Koyu',
+      navMore: 'Daha fazla',
+      navHistory: 'Geçmiş',
+      navTerms: 'Dönemler',
+      navAbout: 'Hakkında',
+      filterMore: 'Diğer filtreler',
+      filterButton: 'Filtreler',
+      filterClear: 'temizle',
+      filterApply: 'uygula',
       filterTerm: 'dönem',
       filterBranch: 'bölüm',
       filterDay: 'gün',
@@ -142,6 +153,17 @@ const I18N = (() => {
       tabDonemler: '07 TERMS',
       tabProgram: '08 SCHEDULE',
       tabHakkinda: '09 ABOUT',
+      taglineSimple: 'Search ITU courses, capacity, and past terms.',
+      themeLight: 'Light',
+      themeDark: 'Dark',
+      navMore: 'More',
+      navHistory: 'History',
+      navTerms: 'Terms',
+      navAbout: 'About',
+      filterMore: 'More filters',
+      filterButton: 'Filters',
+      filterClear: 'clear',
+      filterApply: 'apply',
       filterTerm: 'term',
       filterBranch: 'branch',
       filterDay: 'day',
@@ -251,10 +273,12 @@ const I18N = (() => {
   };
 
   let lang = 'tr';
-  const params = new URLSearchParams(location.search);
+  const params = new URLSearchParams(typeof location === 'undefined' ? '' : location.search);
   const want = params.get('lang');
   if (want && strings[want]) lang = want;
-  else try { lang = localStorage.getItem('itu-lang') || lang; } catch(e) {}
+  else if (typeof window !== 'undefined') {
+    try { lang = localStorage.getItem('itu-lang') || lang; } catch(e) {}
+  }
 
   function t(key) {
     return (strings[lang] && strings[lang][key]) || (strings.tr && strings.tr[key]) || key;

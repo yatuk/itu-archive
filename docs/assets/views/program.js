@@ -7,7 +7,7 @@
 
 import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum } from '../core/utils.js';
 import { state, indexReady } from '../core/store.js';
-import { fillBar } from '../core/chart.js';
+import { quotaDisplay } from '../core/chart.js';
 import { buildTimetable, parseWhen, openDetail } from './courses.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
@@ -125,7 +125,6 @@ export function initProgram() {
   $('#p-fullday').addEventListener('change', (e) => { showFullDay = e.target.checked; render(); });
   document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
   inited = true;
-  maybeOnboard();
 }
 
 // --- program yönetimi ---
@@ -344,13 +343,17 @@ function currentItems() {
 function render() {
   const items = currentItems();
   $('#p-count').textContent = items.length;
-  renderCRNStrip(items);
   renderList(items);
   renderGrid(items.map((i) => i.row));
   renderSummary(items);
   updateCredits(items);
   renderCredits(items); // satır başına "3 kr · 6 AKTS" (katalog asenkron)
   updateBookmarklet(items);
+  const empty = items.length === 0;
+  for (const id of ['p-clear', 'p-dl', 'p-csv', 'p-ics', 'p-share']) {
+    const control = $(`#${id}`);
+    if (control) control.disabled = empty;
+  }
 }
 
 // Seçili şube satırlarının altına küçük punto kredi/AKTS: "3 kr · 6 AKTS".
@@ -382,14 +385,6 @@ async function renderCredits(items) {
   }
 }
 
-function renderCRNStrip(items) {
-  const strip = $('#p-crnstrip');
-  const list = $('#p-crnlist');
-  if (!items.length) { strip.hidden = true; list.innerHTML = ''; return; }
-  strip.hidden = false;
-  list.innerHTML = items.map(({ row }) => `<span class="p-crnchip">${esc(row[0])}</span>`).join('');
-}
-
 function renderList(items) {
   const box = $('#p-list');
   const markFull = $('#p-full').checked;
@@ -403,17 +398,18 @@ function renderList(items) {
       <span class="p-crn">${esc(crn)}${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
       <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
       <span class="p-when">${esc(when || '·')}</span>
-      <span class="p-fill">${cap ? fillBar(cap, enr) : '·'}</span>
-      <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için eylemler" aria-haspopup="menu">⋮</button>
+      <span class="p-fill">${cap ? quotaDisplay(cap, enr) : '·'}</span>
+      <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${esc(code)} dersini programdan çıkar">Çıkar</button>
+      <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için diğer eylemler" aria-haspopup="menu" aria-expanded="false">⋮</button>
       <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
     </div>`;
-  }).join('') || '<p class="empty">Henüz ders eklenmedi. "Ders Ekle" ile bölüm → ders → CRN seç ya da DERSLER\'de seçip "programa gönder".</p>';
+  }).join('') || '<p class="empty">Henüz ders eklenmedi. Yukarıdan arayabilir, “Bölümden seç” akışını kullanabilir veya Dersler sayfasından programa gönderebilirsin.</p>';
 
   box.querySelectorAll('.p-item').forEach((item) => {
     const idx = Number(item.dataset.idx);
     const { row } = items[idx];
     item.addEventListener('click', (ev) => {
-      if (ev.target.closest('.p-menu')) return;
+      if (ev.target.closest('button, .p-menu-pop')) return;
       openDetail(row, term);
     });
     item.addEventListener('dragstart', (ev) => {
@@ -433,6 +429,13 @@ function renderList(items) {
     item.addEventListener('dragend', () => { item.classList.remove('drag', 'over'); dragFrom = null; });
   });
 
+  box.querySelectorAll('.p-remove').forEach((btn) => {
+    btn.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      removeScheduleItem(btn.dataset.remove);
+    });
+  });
+
   box.querySelectorAll('.p-menu').forEach((btn) => {
     btn.addEventListener('click', (ev) => {
       ev.stopPropagation();
@@ -442,6 +445,7 @@ function renderList(items) {
       closeMenus();
       openMenuKey = key;
       pop.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
       const rec = items.find((it) => fav.favKeyOf(it.rec.branch, it.rec.crn) === key);
       pop.innerHTML = `
         <button type="button" data-act="detail" data-key="${key}">detay</button>
@@ -450,22 +454,21 @@ function renderList(items) {
         ${rec && rec.rec.backup
           ? `<button type="button" data-act="rmbackup" data-key="${key}">yedek CRN kaldır</button>`
           : `<button type="button" data-act="backup" data-key="${key}">yedek CRN belirle</button>`}
-        <button type="button" data-act="remove" data-key="${key}">çıkar</button>`;
+        <button type="button" data-act="remove" data-key="${key}">Programdan çıkar</button>`;
+      wireMenuActions(pop);
     });
   });
-  box.querySelectorAll('[data-act]').forEach((b) => {
+}
+
+function wireMenuActions(pop) {
+  pop.querySelectorAll('[data-act]').forEach((b) => {
     b.addEventListener('click', (ev) => {
       ev.stopPropagation();
-      const [br, cr] = b.dataset.key.split('|');
+      const actionKey = b.dataset.key;
+      const [br, cr] = actionKey.split('|');
       const row = rows.find((x) => x[3] === br && x[0] === cr);
       if (b.dataset.act === 'remove') {
-        // 8 sn içinde "geri al" ile geri getirilebilir (Critique P2).
-        const before = progItems();
-        setProgItems(currentItems().filter((i) => fav.favKeyOf(i.rec.branch, i.rec.crn) !== key).map((i) => i.rec));
-        render(); renderProgSelector();
-        toast(`${cr} çıkarıldı`, {
-          action: { label: 'geri al', fn: () => { setProgItems(before); render(); renderProgSelector(); } },
-        });
+        removeScheduleItem(actionKey);
       } else if (b.dataset.act === 'copy') {
         copyText(cr); toast(`CRN ${cr} kopyalandı`);
       } else if (b.dataset.act === 'detail') {
@@ -479,6 +482,17 @@ function renderList(items) {
       }
       closeMenus();
     });
+  });
+}
+
+function removeScheduleItem(key) {
+  const before = progItems();
+  const removed = before.find((rec) => fav.favKeyOf(rec.branch, rec.crn) === key);
+  if (!removed) return;
+  setProgItems(before.filter((rec) => fav.favKeyOf(rec.branch, rec.crn) !== key));
+  renderProgSelector();
+  toast(`${removed.crn} çıkarıldı`, {
+    action: { label: 'geri al', fn: () => { setProgItems(before); renderProgSelector(); } },
   });
 }
 
@@ -807,7 +821,7 @@ function updateCredits(items) {
   const ps = loadPrograms();
   const p = ps.programs.find((x) => x.id === ps.active);
   if (p && p.credits != null) { el.textContent = p.credits; return; }
-  el.textContent = items.length ? '·' : '·';
+  el.textContent = items.length ? '·' : '0 kredi · 0 AKTS';
   if (!items.length) return;
   creditTotals(items).then((r) => {
     if (!r.ectsKnown && !r.localKnown) return;
@@ -944,33 +958,13 @@ function updateBookmarklet(items) {
 }
 
 // --- tooltip ---
-// Onboarding balonu gösterilirken hover tooltip'i asla aynı anda tetiklenmez.
-let onboardingShowing = false;
-
 function showTip() {
-  if (onboardingShowing) return;
   const el = $('#p-obs-tt');
   if (el) el.classList.add('show');
 }
 function hideTip() {
   const el = $('#p-obs-tt');
   if (el) el.classList.remove('show');
-}
-
-// İlk ziyarette onboarding balonu göster, 3sn sonra kapat ve bir daha gösterme.
-function maybeOnboard() {
-  let seen = false;
-  try { seen = localStorage.getItem('crn_tooltip_seen') === 'true'; } catch {}
-  if (seen) return;
-  try { localStorage.setItem('crn_tooltip_seen', 'true'); } catch {}
-  const el = $('#p-obs-onboard');
-  if (!el) return;
-  onboardingShowing = true;
-  el.classList.add('show');
-  setTimeout(() => {
-    el.classList.remove('show');
-    onboardingShowing = false;
-  }, 3000);
 }
 
 function exportCSV() {
@@ -1204,7 +1198,9 @@ function fallbackCopy(txt) {
 function closeMenus() {
   if (openMenuKey) {
     const pop = document.querySelector(`[data-pop="${openMenuKey}"]`);
+    const button = document.querySelector(`[data-menu="${openMenuKey}"]`);
     if (pop) pop.hidden = true;
+    if (button) button.setAttribute('aria-expanded', 'false');
     openMenuKey = null;
   }
 }

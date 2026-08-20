@@ -16,7 +16,6 @@ import { onShow as programShow } from './views/program.js';
 import { onShow as dersplanimShow } from './views/dersplanim.js';
 import { PrereqGraph } from './prereq.js';
 import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js';
-import { openTakenEditor } from './core/taken-ui.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -31,9 +30,6 @@ async function boot() {
   I18N.translateDOM();
   initTheme();
   initLangButton();
-  initWelcome();
-  const takenBtn = $('#taken-btn');
-  if (takenBtn) takenBtn.addEventListener('click', openTakenEditor);
   wireTabs();
   wireHistoryJump();
   window.addEventListener('itu:goto-program', () => { if (showView) showView('program', true); });
@@ -42,11 +38,13 @@ async function boot() {
   } catch (e) {
     markIndexReady(); // yükleme başarısız olsa da bekleyenleri serbest bırak
     setStatus($('#stat-status'), I18N.t('statVeriYok'), { error: true });
-    $('#rows').innerHTML = `<tr><td colspan="9" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
+    $('#rows').innerHTML = `<tr><td colspan="10" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
     return;
   }
 
   const ix = state.index;
+  state.scrapedAt = ix.scrapedAt || null;
+  state.stale = state.scrapedAt ? (Date.now() - new Date(state.scrapedAt).getTime()) / 36e5 > 48 : false;
   $('#stat-status').textContent = I18N.t('statOnline');
   $('#stat-status').className = 'ok';
   $('#stat-term').textContent = ix.currentTerm || '—';
@@ -65,6 +63,8 @@ async function boot() {
     if (isNaN(last)) return;
     $('#stat-scraped').textContent = fmtDate(st.lastSuccessAt);
     $('#foot-build').textContent = `${I18N.t('footBuild')} ${fmtDate(st.lastSuccessAt)}`;
+    state.scrapedAt = st.lastSuccessAt;
+    state.stale = (Date.now() - last.getTime()) / 36e5 > 48;
     if ((Date.now() - last.getTime()) / 36e5 > 48) {
       const stEl = $('#stat-status');
       if (stEl) {
@@ -72,6 +72,7 @@ async function boot() {
         stEl.className = 'warn';
       }
     }
+    if (state.rows.length) applyFilters();
   }).catch(() => {});
 
 
@@ -127,7 +128,6 @@ async function boot() {
   if (params.has('program')) $('#f-program').value = params.get('program');
   if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
-  if (params.get('taken') === '1') $('#f-taken').checked = true;
   applyFilters();
 }
 
@@ -171,35 +171,6 @@ function initLangButton() {
   btn.addEventListener('click', () => I18N.setLang(I18N.lang === 'en' ? 'tr' : 'en'));
 }
 
-// Faz 5.4: ilk ziyaret karşılaması — üç satırlık band, localStorage ile bir kez.
-// Örnek arama butonları Dersler sekmesine filtreli atlar (app.js'teki global
-// arama deseni gibi #q'yu doldurur + input tetikler).
-function initWelcome() {
-  const w = $('#welcome');
-  if (!w) return;
-  let seen = false;
-  try { seen = localStorage.getItem('itu_welcome_seen') === '1'; } catch {}
-  if (seen) return;
-  w.hidden = false;
-  const close = () => {
-    w.hidden = true;
-    try { localStorage.setItem('itu_welcome_seen', '1'); } catch {}
-  };
-  const closeBtn = $('#w-close');
-  if (closeBtn) closeBtn.addEventListener('click', close);
-  for (const b of w.querySelectorAll('.w-example')) {
-    b.addEventListener('click', () => {
-      close();
-      const q = $('#q');
-      if (q) {
-        q.value = b.dataset.q;
-        q.dispatchEvent(new Event('input', { bubbles: true }));
-      }
-      showView('dersler', true);
-    });
-  }
-}
-
 // Sade temasında sekme adları düz ("Dersler"), fosfor/CRT'de numaralı
 // ("01 · DERSLER") kalır — numaralandırma terminal kimliğinin parçası.
 const TAB_PLAIN = {
@@ -235,7 +206,6 @@ function derslerParams() {
   if ($('#f-program').value) p.set('program', $('#f-program').value);
   if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');
-  if ($('#f-taken').checked) p.set('taken', '1');
   return p;
 }
 
@@ -249,7 +219,6 @@ function dersplanimParams() {
   if (prog) p.set('prog', prog);
   if ($('#dp-open')?.checked) p.set('fopen', '1');
   if ($('#dp-cap')?.checked) p.set('fcap', '1');
-  if ($('#dp-hide')?.checked) p.set('fhide', '1');
   const sems = [...document.querySelectorAll('#dp-sems input:checked')].map((x) => x.value);
   if (sems.length) p.set('fsems', sems.join(','));
   const types = [...document.querySelectorAll('#dp-types .on')].map((x) => x.dataset.type);
@@ -288,7 +257,12 @@ function writeViewUrl(view, push) {
 // geçmişine yazılır (geri/ileri çalışır), değilse mevcut girişi değiştirir
 // (ilk yükleme ve popstate).
 function wireTabs() {
-  const buttons = [...document.querySelectorAll('.tabs button')];
+  const buttons = [...document.querySelectorAll('.tabs button[data-view]')];
+  const more = document.querySelector('.tabs-more');
+  const moreLabel = $('#tabs-more-label');
+  const moreNames = I18N.lang === 'en'
+    ? { gecmis: 'History', donemler: 'Terms', hakkinda: 'About' }
+    : { gecmis: 'Geçmiş', donemler: 'Dönemler', hakkinda: 'Hakkında' };
 
   const show = (view, push) => {
     for (const b of buttons) {
@@ -317,6 +291,11 @@ function wireTabs() {
     if (view === 'program') programShow();
     if (view === 'dersplanim') dersplanimShow();
     if (view === 'onsart') PrereqGraph.init('#pg-root');
+    if (moreLabel) {
+      moreLabel.textContent = moreNames[view] || (I18N.lang === 'en' ? 'More' : 'Daha fazla');
+      moreLabel.classList.toggle('active', Boolean(moreNames[view]));
+    }
+    if (more) more.open = false;
     // Program oluşturucu ve Ders Planım daha geniş alan kullanır.
     const mainEl = document.querySelector('main.wrap');
     if (mainEl) mainEl.classList.toggle('wide', view === 'program' || view === 'dersplanim');
@@ -328,15 +307,20 @@ function wireTabs() {
     b.addEventListener('click', () => show(b.dataset.view, true));
     // Sekmeler arasında ok tuşlarıyla dolaşım (kapsayıcı klavye erişimi).
     b.addEventListener('keydown', (ev) => {
-      const idx = buttons.indexOf(b);
+      const visible = buttons.filter((x) => x.offsetParent !== null);
+      const idx = visible.indexOf(b);
       let next = -1;
-      if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') next = (idx + 1) % buttons.length;
-      else if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp') next = (idx - 1 + buttons.length) % buttons.length;
+      if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') next = (idx + 1) % visible.length;
+      else if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp') next = (idx - 1 + visible.length) % visible.length;
       else return;
       ev.preventDefault();
-      buttons[next].focus();
-      show(buttons[next].dataset.view, true);
+      visible[next].focus();
+      show(visible[next].dataset.view, true);
     });
+  }
+
+  for (const b of document.querySelectorAll('.tabs-more [data-nav-view]')) {
+    b.addEventListener('click', () => show(b.dataset.navView, true));
   }
 
   // Tarayıcının geri/ileri butonları sekme değişikliklerini geri alır.

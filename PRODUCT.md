@@ -28,7 +28,7 @@ Kaynaklar: `obs.itu.edu.tr/public/*` (DersProgram, DersKatalog, DersBilgi, DersN
 
 ## Capabilities and Constraints
 
-- 8 sekme: Dersler (filtre/arama, kontenjan doluluğu, zaman çizelgesi), Geçmiş (27 dönem birleşik kayıt), Önşart Haritası (canvas, VE/VEYA mantığı), Sınavlar, Akademik Takvim (6 tür, .ics), Dönemler, Program kurucu (çakışma işareti, ECTS, .ics, CRN doldur), Hakkında.
+- 9 görünüm: Dersler (filtre/arama, kontenjan doluluğu, zaman çizelgesi), Geçmiş (27 dönem birleşik kayıt), Ders Planım/GPA, Önşart Haritası (canvas, VE/VEYA mantığı), Sınavlar, Akademik Takvim (6 tür, .ics), Dönemler, Program kurucu (çakışma işareti, ECTS, .ics, CRN doldur), Hakkında. Sade temada altı ana görünüm doğrudan, üç düşük öncelikli görünüm “Daha fazla” altında sunulur.
 - 2016-2017'den bugüne 28 dönem / ~69.000 şube; katalog 238 branş; not dağılımı ~6.157 grup; resmî tanımlar (64 bina, 285 program).
 - **Etik sınır:** not dağılımında toplam yazılan < 10 ise kaydedilmez (kişi ifşası).
 - **Veri boşlukları:** 2024-2025 Güz hiçbir kaynakta yok; 2025-2026 Güz dönem başı dökümü komşu dönemlerden eksik görünüyor; katalog tüm kodları kapsamaz (grafik dışı kodlar yasaldır).

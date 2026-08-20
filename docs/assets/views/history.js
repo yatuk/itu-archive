@@ -149,7 +149,7 @@ async function showCourse(code, branch) {
         <button type="button" class="btn-ghost h-detail" data-code="${esc(c.code)}">bu dersi detaylandır</button></p>
       ${trendChart(byTerm)}
       <div class="tablewrap"><table class="htable" aria-label="${esc(c.code)} dönem geçmişi">
-        <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th>Gün</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num">Doluluk</th></tr></thead>
+        <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th>Gün</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num quota-legacy-col">Doluluk</th></tr></thead>
         <tbody></tbody>
       </table></div>
     </article>`;
@@ -158,7 +158,7 @@ async function showCourse(code, branch) {
         <td>${esc(r.instructor || '·')}</td>
         <td class="when">${esc(r.days || '·')}</td>
         <td class="num">${r.cap}</td><td class="num">${r.enr}</td>
-        <td class="num">${fillBar(r.cap, r.enr)}</td></tr>`);
+        <td class="num quota-legacy-col">${fillBar(r.cap, r.enr)}</td></tr>`);
   const dBtn = $('#hdetail .h-detail');
   if (dBtn) {
     dBtn.addEventListener('click', () => {

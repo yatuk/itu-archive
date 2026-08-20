@@ -43,6 +43,35 @@ func TestReplaceAssetVersionAddsMissingVersion(t *testing.T) {
 	}
 }
 
+func TestHomepageUsesCurrentSocialCard(t *testing.T) {
+	root := filepath.Join("..", "..", "docs")
+	body, err := os.ReadFile(filepath.Join(root, "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	html := string(body)
+	for _, want := range []string{
+		`property="og:image" content="https://itu-ders.com/social-card-v2.png"`,
+		`name="twitter:image" content="https://itu-ders.com/social-card-v2.png"`,
+		`property="og:image:width" content="1731"`,
+		`property="og:image:height" content="909"`,
+	} {
+		if !strings.Contains(html, want) {
+			t.Fatalf("ana sayfada sosyal kart metası eksik: %s", want)
+		}
+	}
+	if strings.Contains(html, "glitch_effect.gif") {
+		t.Fatal("ana sayfa hâlâ eski glitch görselini paylaşıyor")
+	}
+	info, err := os.Stat(filepath.Join(root, "social-card-v2.png"))
+	if err != nil {
+		t.Fatalf("sosyal kart dosyası bulunamadı: %v", err)
+	}
+	if info.Size() == 0 {
+		t.Fatal("sosyal kart dosyası boş")
+	}
+}
+
 func TestDataWorkflowsRegenerateAndCommitSite(t *testing.T) {
 	root := filepath.Join("..", "..", ".github", "workflows")
 	for _, name := range []string{

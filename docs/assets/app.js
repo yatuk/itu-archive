@@ -14,7 +14,7 @@ import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
 import { onShow as programShow } from './views/program.js';
 import { onShow as dersplanimShow } from './views/dersplanim.js';
-import { PrereqGraph } from './prereq.js';
+import { PrereqGraph } from './prereq.js?v=prereq-resize-2026';
 import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)

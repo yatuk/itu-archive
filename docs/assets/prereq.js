@@ -91,9 +91,22 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       this.hover = null;
       this.drag = null;
       this.nodes = null;
-      this.ro = new ResizeObserver(() => { this.layout(); this.draw(); });
-      this.ro.observe(this.canvas);
+      this.resizeFrame = 0;
+      // Detay paneli açılınca grid canvas sütununu daraltır. Yalnızca layout/draw
+      // yapmak bitmap'i eski genişlikte bırakıp CSS ile sıkıştırıyordu; özellikle
+      // son dönem sütunları üst üste/yinelenmiş görünüyordu. Kutuyu gözleyip hem
+      // bitmap boyutunu hem kamerayı tek frame'de birlikte yenile.
+      this.ro = new ResizeObserver(() => this.queueResize());
+      this.ro.observe(root.querySelector('.pg-canvas-wrap'));
       this.bindInput();
+    }
+
+    queueResize() {
+      if (this.resizeFrame) cancelAnimationFrame(this.resizeFrame);
+      this.resizeFrame = requestAnimationFrame(() => {
+        this.resizeFrame = 0;
+        this.resize();
+      });
     }
 
     // build: node = { code, name, kind:'course'|'elective', lane, requirement, options }
@@ -210,6 +223,9 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     resize() {
       const dpr = window.devicePixelRatio || 1;
       const w = this.canvas.clientWidth, h = this.canvas.clientHeight;
+      // Gizli sekme ilk kurulurken 0×0 olabilir; görünür olduğunda observer yeni
+      // ölçüyü tekrar yollar. Sıfır bitmap yazıp mevcut çizimi bozma.
+      if (w < 1 || h < 1) return;
       this.canvas.width = w * dpr; this.canvas.height = h * dpr;
       this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       this.layout();
@@ -375,6 +391,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       this.related = related;
       this.renderDetail(code);
       this.draw();
+      this.queueResize();
       // Seçmeli slot paylaşılabilir URL durumu: ?prog=X&pool=<title>#onsart.
       const n = this.byCode.get(code);
       const prog = document.querySelector('.pg-program-select')?.value;
@@ -392,6 +409,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       const prog = this.root.querySelector('.pg-program-select')?.value;
       if (prog) history.replaceState(null, '', `?prog=${encodeURIComponent(prog)}#onsart`);
       this.draw();
+      this.queueResize();
     }
 
     // reset, tüm grafiği boşaltır — seçili program artık görünmeyen bir
@@ -408,6 +426,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
       if (reset) reset.disabled = true;
       this.status.textContent = 'bir bölüm seçin';
       this.draw();
+      this.queueResize();
     }
 
     panTo(code) {

@@ -487,6 +487,18 @@ test.describe('Önşart haritası', () => {
     await expect(page.locator('.pg-detail-head')).toContainText('TM Elective II');
     await expect(page.locator('.pg-pool-status')).toContainText('alternatif', { timeout: 20000 });
 
+    // Panel grid'i daralttığında canvas bitmap'i de CSS kutusuyla aynı ölçüye
+    // gelmeli; aksi halde son dönem sütunları sıkışıp yinelenmiş görünür.
+    const canvas = page.locator('.pg-canvas-wrap canvas');
+    if (!(await canvas.isVisible())) {
+      await page.locator('.pg-list-toggle').click();
+      await expect(canvas).toBeVisible();
+    }
+    await expect.poll(() => canvas.evaluate((el) =>
+      Math.abs(el.width - Math.round(el.clientWidth * (window.devicePixelRatio || 1))) <= 1,
+    )).toBe(true);
+    const detailWidth = await canvas.evaluate((el) => el.clientWidth);
+
     await page.locator('.pg-pool-search').fill('BLG 337E');
     await expect(page.locator('.pg-pool-row')).toHaveCount(1);
     await page.locator('.pg-pool-sort').selectOption('open');
@@ -499,6 +511,12 @@ test.describe('Önşart haritası', () => {
 
     await page.locator('.pg-detail-close').click();
     await expect(page.locator('.pg-detail')).toBeHidden();
+    await expect.poll(() => canvas.evaluate((el) =>
+      Math.abs(el.width - Math.round(el.clientWidth * (window.devicePixelRatio || 1))) <= 1,
+    )).toBe(true);
+    if ((page.viewportSize()?.width || 0) > 1000) {
+      await expect.poll(() => canvas.evaluate((el) => el.clientWidth)).toBeGreaterThan(detailWidth + 200);
+    }
     expect(new URL(page.url()).searchParams.has('pool')).toBe(false);
   });
 });

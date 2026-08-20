@@ -15,6 +15,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"regexp"
 	"strings"
 
 	"itu-scraper/internal/site"
@@ -69,7 +70,15 @@ func patchIndexAssets(root, version string) error {
 		return err
 	}
 	s := string(b)
-	s = strings.ReplaceAll(s, `href="assets/style.css"`, `href="assets/style.css?v=`+version+`"`)
-	s = strings.ReplaceAll(s, `src="assets/app.js"`, `src="assets/app.js?v=`+version+`"`)
+	s = replaceAssetVersion(s, `href="assets/style.css`, version)
+	s = replaceAssetVersion(s, `src="assets/app.js`, version)
 	return os.WriteFile(p, []byte(s), 0o644)
+}
+
+// replaceAssetVersion hem sürümsüz hem de daha önce sürümlenmiş bağlantıyı yeniler.
+// Önceki uygulama yalnızca `style.css"` biçimini aradığı için bir kez ?v= eklendikten
+// sonra sonraki deploy'larda ana sayfa sonsuza kadar eski CSS anahtarında kalıyordu.
+func replaceAssetVersion(s, prefix, version string) string {
+	re := regexp.MustCompile(regexp.QuoteMeta(prefix) + `(?:\?v=[^"\s]*)?"`)
+	return re.ReplaceAllString(s, prefix+`?v=`+version+`"`)
 }

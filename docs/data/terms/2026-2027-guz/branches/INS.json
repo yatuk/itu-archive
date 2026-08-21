@@ -271,7 +271,7 @@
   "level": "LS",
   "name": "Int. to Prog. Lang. (Python)",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Fırat Doğu Akın",
+  "instructor": "Fırat Doğu Akın , Merve Akbaş",
   "buildings": [
    "undeclared"
   ],
@@ -331,7 +331,7 @@
   "level": "LS",
   "name": "Int. to Prog. Lang. (Python)",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Emre Gönülcü",
+  "instructor": "Harun Türkoğlu",
   "buildings": [
    "undeclared"
   ],
@@ -4010,5 +4010,34 @@
   ],
   "prereq": "-",
   "classReq": "Detay"
+ },
+ {
+  "crn": "15099",
+  "code": "INS 301",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Mühendislik Ekonomisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Harun Türkoğlu , Fırat Doğu Akın",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "INS_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
  }
 ]

@@ -1,32 +1,5 @@
 [
  {
-  "crn": "13275",
-  "code": "JDM 501E",
-  "branch": "JDM",
-  "level": "LU",
-  "name": "Geodynamics",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Gültekin Topuz , Remziye Akdoğan",
-  "buildings": [
-   "AYBE"
-  ],
-  "days": [
-   "Perşembe"
-  ],
-  "times": [
-   "13:30/16:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "13276",
   "code": "JDM 502E",
   "branch": "JDM",
@@ -264,33 +237,6 @@
   "classReq": "-"
  },
  {
-  "crn": "13292",
-  "code": "JDM 613E",
-  "branch": "JDM",
-  "level": "LU",
-  "name": "Selected Topics in Geodynamics",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Gültekin Topuz , Remziye Akdoğan",
-  "buildings": [
-   "AYBE"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "13:30/16:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "13295",
   "code": "JDM 628E",
   "branch": "JDM",
@@ -471,6 +417,60 @@
   ],
   "times": [
    "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15097",
+  "code": "JDM 619E",
+  "branch": "JDM",
+  "level": "LU",
+  "name": "Selec.Topics in Regional Geol.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Remziye Akdoğan , Gültekin Topuz",
+  "buildings": [
+   "AYBE"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15100",
+  "code": "JDM 507E",
+  "branch": "JDM",
+  "level": "LU",
+  "name": "Dating Methods in Earth Scien.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Remziye Akdoğan , Gültekin Topuz",
+  "buildings": [
+   "AYBE"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
   ],
   "rooms": [
    "--"

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-20T03:11:14Z",
+ "generatedAt": "2026-08-21T03:16:56Z",
  "nodes": [
   {
    "code": "AKM 202",
@@ -31498,6 +31498,12 @@
    "name": "Graduation Project",
    "branch": "UCK",
    "classReq": "95,00"
+  },
+  {
+   "code": "UZB 206E",
+   "name": "Uzay Aracı Yapıları",
+   "branch": "UZB",
+   "requirement": "( MUK 204 MIN. DD Veya MUK 204E MIN. DD )"
   },
   {
    "code": "UZB 211",
@@ -93886,6 +93892,10 @@
   },
   {
    "from": "MUK 204",
+   "to": "UZB 206E"
+  },
+  {
+   "from": "MUK 204",
    "to": "UZB 331"
   },
   {
@@ -94007,6 +94017,10 @@
   {
    "from": "MUK 204E",
    "to": "UCK 435E"
+  },
+  {
+   "from": "MUK 204E",
+   "to": "UZB 206E"
   },
   {
    "from": "MUK 204E",

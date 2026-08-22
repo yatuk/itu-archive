@@ -32,7 +32,26 @@ export function onShow() {
 async function loadExams() {
   setStatus($('#eresultline'), 'yükleniyor…', { busy: true });
   try {
-    const sched = await getJSON(`data/exams/${state.index.currentSlug}.json`);
+    // Silinen bir önceki dönem dosyası CDN'de günlerce 200 dönebilir. Her veri
+    // taramasında değişen sorgu, eski cache anahtarını kullanmamamızı sağlar.
+    const revision = encodeURIComponent(state.index.scrapedAt || state.index.currentSlug);
+    const [sched, termRows] = await Promise.all([
+      getJSON(`data/exams/${state.index.currentSlug}.json?v=${revision}`),
+      getJSON(`data/terms/${state.index.currentSlug}/search.json`),
+    ]);
+    // OBS'nin sınav servisi dönem parametresi kabul etmiyor ve yeni takvim
+    // açıklanana kadar geçen dönemin sınavlarını döndürebiliyor. Dosya yanlış
+    // dönem adıyla cache'lenmiş olsa bile CRN örtüşmesi bunu yakalar.
+    if (!examScheduleMatchesTerm(sched, termRows, state.index.currentSlug)) {
+      state.exams = {
+        term: state.index.currentTerm,
+        slug: state.index.currentSlug,
+        exams: [],
+      };
+      state.examHay = [];
+      renderExams();
+      return;
+    }
     state.exams = sched;
     state.examHay = sched.exams.map((e) => fold(`${e.crn} ${e.code} ${e.name} ${e.instructor}`));
     const types = [...new Set(sched.exams.map((e) => e.type))].sort();
@@ -49,11 +68,62 @@ async function loadExams() {
     $('#f-ebranch').innerHTML = '<option value="">hepsi</option>' +
       branches.map((b) => `<option>${esc(b)}</option>`).join('');
   } catch (e) {
-    state.exams = { exams: [] };
+    state.exams = {
+      term: state.index.currentTerm,
+      slug: state.index.currentSlug,
+      exams: [],
+    };
     state.examHay = [];
-    setStatus($('#eresultline'), `sınav takvimi yüklenemedi (${e.message})`, { error: true });
+    // Aktif dönemin takvimi henüz yoksa 404 olağan bir boş durumdur. Gerçek ağ
+    // ve veri hataları ise tanı koyabilmek için görünür kalır.
+    if (!/HTTP 404\b/.test(String(e.message || e))) {
+      setStatus($('#eresultline'), `sınav takvimi yüklenemedi (${e.message})`, { error: true });
+    }
   }
   renderExams();
+}
+
+// Gelen sınav listesinin aktif dönemin şubelerine ait olup olmadığını CRN
+// örtüşmesiyle doğrular. Doğru sınav takvimi tüm şubeleri kapsamadığından eşik
+// %100 değil; kazıyıcıdaki korumayla aynı %40 sınırı kullanılır.
+export function examScheduleMatchesTerm(sched, termRows, termSlug, minOverlap = 0.40) {
+  const exams = Array.isArray(sched?.exams) ? sched.exams : [];
+  if (!exams.length || !Array.isArray(termRows) || !termRows.length) return false;
+  const termSections = new Set(termRows.map((row) => {
+    const crn = String(row?.[0] || '').trim();
+    const code = String(row?.[1] || '').trim().toUpperCase();
+    return crn && code ? `${crn}|${code}` : '';
+  }).filter(Boolean));
+  const matched = exams.reduce((count, exam) => {
+    const key = `${String(exam?.crn || '').trim()}|${String(exam?.code || '').trim().toUpperCase()}`;
+    return count + (termSections.has(key) ? 1 : 0);
+  }, 0);
+  const dated = exams.filter((exam) => examDateMatchesTerm(exam?.date, termSlug)).length;
+  return matched / exams.length >= minOverlap && dated / exams.length >= 0.80;
+}
+
+// Akademik dönem için makul sınav tarih aralığı. Bu özellikle Güz etiketiyle
+// cache'lenmiş Ağustos Yaz finallerini ayırır; tarih sınırları final/mazeret
+// haftalarına pay bırakacak kadar geniş tutulur.
+export function examDateMatchesTerm(value, termSlug) {
+  const match = String(termSlug || '').match(/^(\d{4})-(\d{4})-(guz|bahar|yaz)$/);
+  const date = parseTurkishDate(value);
+  if (!match || !date) return false;
+  const firstYear = Number(match[1]);
+  const secondYear = Number(match[2]);
+  let start;
+  let end;
+  if (match[3] === 'guz') {
+    start = new Date(firstYear, 8, 1);  // 1 Eylül
+    end = new Date(secondYear, 2, 1);  // 1 Mart (hariç)
+  } else if (match[3] === 'bahar') {
+    start = new Date(secondYear, 1, 1); // 1 Şubat
+    end = new Date(secondYear, 7, 1);   // 1 Ağustos (hariç)
+  } else {
+    start = new Date(secondYear, 5, 1); // 1 Haziran
+    end = new Date(secondYear, 9, 1);   // 1 Ekim (hariç)
+  }
+  return date >= start && date < end;
 }
 
 function renderExams(append) {

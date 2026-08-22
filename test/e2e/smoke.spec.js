@@ -28,6 +28,7 @@ const ARAC_INIS_SAYFALARI = [
   { yol: '/sinav-programi/', hedef: '/#sinavlar', gorunum: '#view-sinavlar' },
   { yol: '/akademik-takvim/', hedef: '/#takvim', gorunum: '#view-takvim' },
   { yol: '/ders-arsivi/', hedef: '/#gecmis', gorunum: '#view-gecmis' },
+  { yol: '/ders-secimi/', hedef: '/#program', gorunum: '#view-program' },
 ];
 
 // Kontenjan serisi yalnızca kayıt haftalarında ölçülür; henüz ölçülmemiş dönem
@@ -99,6 +100,13 @@ test.describe('SPA (ana sayfa)', () => {
     ]) {
       await expect(dizin.locator(`a[href="${href}"]`)).toHaveCount(1);
     }
+  });
+
+  test('ham veri bölümü aktif döneme ait indirilebilir adresler verir', async ({ page }) => {
+    await page.goto('/#hakkinda');
+    await expect(page.locator('.raw-current-csv')).toHaveAttribute('href', '/data/terms/2026-2027-guz/all.csv');
+    await expect(page.locator('.raw-current-branch')).toHaveAttribute('href', '/data/terms/2026-2027-guz/branches/BIL.json');
+    await expect(page.locator('.prose')).toContainText('curl.exe -fL --output');
   });
 
   test('iki tema da uygulanır ve tarayıcı çubuğu rengi eşleşir', async ({ page }) => {
@@ -239,6 +247,23 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 10);
     await expect(scope.locator('.bar:visible').first()).toBeVisible();
     await expect(scope.locator('.quota-fosfor').filter({ hasText: '%' }).first()).toBeVisible();
+  });
+
+  test('Sınavlar eski Yaz takvimi CDN cacheinden gelse bile Güz diye göstermez', async ({ page }) => {
+    await page.route('**/data/exams/2026-2027-guz.json*', (route) => route.fulfill({
+      contentType: 'application/json',
+      body: JSON.stringify({
+        term: '2026-2027 Güz Dönemi',
+        slug: '2026-2027-guz',
+        exams: [
+          { crn: '30054', code: 'SSI 518', name: 'Pazarlama Yönetimi', branch: 'SSI', date: '13 Ağustos 2026', day: 'Perşembe', time: '09:00-11:00', type: 'Final Sınavı' },
+          { crn: '30055', code: 'SSI 511', name: 'Pazarlama Analitiği', branch: 'SSI', date: '11 Ağustos 2026', day: 'Salı', time: '12:00-14:00', type: 'Final Sınavı' },
+        ],
+      }),
+    }));
+    await page.goto('/#sinavlar');
+    await expect(page.locator('#eresultline')).toHaveText('Bu dönem için sınav takvimi henüz ilan edilmemiş.');
+    await expect(page.locator('#erows')).not.toContainText('30054');
   });
 
   test('"İçeriğe atla" ilk odak durağıdır ve odaklanınca görünür olur', async ({ page }) => {
@@ -614,6 +639,11 @@ test.describe('Önşart haritası', () => {
     await page.locator('.pg-guide > summary').click();
     await expect(page.locator('.pg-guide > div')).toContainText('Zorunlu önşart');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1)).toBe(true);
+    if (page.viewportSize().width > 700) {
+      const canvasHeight = await page.locator('.pg-canvas-wrap').evaluate((el) => el.getBoundingClientRect().height);
+      expect(canvasHeight).toBeGreaterThanOrEqual(419);
+      expect(canvasHeight).toBeLessThanOrEqual(561);
+    }
 
     // Seviye kapatılınca seçili lisans programı düşer; yeniden açınca seçilebilir olur.
     await page.locator('.pg-level[data-level="LS"]').click();

@@ -77,6 +77,10 @@ import { I18N } from './i18n.js';
   const LANE_PAD = 90;   // ilk/son sütunun kenarla arası
   const ROW_PAD = 46;
   const NODE_R = 15;
+  // Haritanın okunamayacak kadar küçülmesini engelle. Yoğun planlarda
+  // düğümlerin taşması kabul edilir; kullanıcı haritayı sürükleyebilir.
+  const MIN_ZOOM = 0.55;
+  const MAX_ZOOM = 3;
 
   class PlanGraph {
     constructor(root) {
@@ -216,7 +220,7 @@ import { I18N } from './i18n.js';
       const w = this.canvas.clientWidth, h = this.canvas.clientHeight;
       const contentW = LANE_PAD * 2 + (this.laneTitles.length - 1) * this.laneW;
       const k = Math.min(w / (contentW || w), h / ((this.contentHeight || h) * 1.05), 1.6);
-      this.cam.k = Math.max(k, 0.25);
+      this.cam.k = Math.max(k, MIN_ZOOM);
       this.cam.x = (w - contentW * this.cam.k) / 2;
       this.cam.y = (h - (this.contentHeight || h) * this.cam.k) / 2;
     }
@@ -637,7 +641,7 @@ import { I18N } from './i18n.js';
         const rect = c.getBoundingClientRect();
         const mx = e.clientX - rect.left, my = e.clientY - rect.top;
         const [wx, wy] = this.screenToWorld(mx, my);
-        this.cam.k = Math.min(4, Math.max(0.15, this.cam.k * (e.deltaY < 0 ? 1.12 : 1 / 1.12)));
+        this.cam.k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, this.cam.k * (e.deltaY < 0 ? 1.12 : 1 / 1.12)));
         const [sx, sy] = this.worldToScreen(wx, wy);
         this.cam.x += mx - sx; this.cam.y += my - sy;
         this.draw();
@@ -664,7 +668,7 @@ import { I18N } from './i18n.js';
         this.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
         if (this.pinch && this.pointers.size >= 2) {
           const d = pDist();
-          if (d > 0) { this.cam.k = Math.max(0.4, Math.min(3, this.pinch.startK * (d / this.pinch.dist))); this.draw(); }
+          if (d > 0) { this.cam.k = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, this.pinch.startK * (d / this.pinch.dist))); this.draw(); }
           return;
         }
         if (!this.drag || this.drag.id !== e.pointerId) return;

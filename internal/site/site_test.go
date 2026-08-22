@@ -109,7 +109,7 @@ func TestLandingPagesRouteSearchIntentToWorkingViews(t *testing.T) {
 		"ders-programi":         "/#dersler",
 		"ders-programi-olustur": "/#program",
 		"kontenjan":             "/#dersler",
-		"ders-secimi":           "/#dersler",
+		"ders-secimi":           "/#program",
 		"onsart-haritasi":       "/#onsart",
 		"sinav-programi":        "/#sinavlar",
 		"akademik-takvim":       "/#takvim",
@@ -135,6 +135,9 @@ func TestLandingPagesRouteSearchIntentToWorkingViews(t *testing.T) {
 		for _, action := range page.secondary {
 			if action.href == "" || action.label == "" {
 				t.Errorf("%s boş ilgili araç bağlantısı içeriyor", page.slug)
+			}
+			if action.detail == "" && landingActionDetails[action.href] == "" {
+				t.Errorf("%s içindeki %q bağlantısı açıklamasız", page.slug, action.label)
 			}
 		}
 	}

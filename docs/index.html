@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi — ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=navfix1">
+<link rel="stylesheet" href="assets/style.css?v=examgui">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -276,7 +276,7 @@
     <div>
      <h2 id="tool-directory-title">Aradığın işleme doğrudan git</h2>
     </div>
-    <a class="tool-directory-all" href="/ders-secimi/">Ders seçimi rehberi</a>
+    <a class="tool-directory-all" href="/ders-secimi/">4 adımlı ders seçimi rehberi</a>
    </div>
    <div class="tool-directory-grid">
     <a href="/ders-arsivi/"><strong>Geçmiş dersleri ara</strong><span>2016'dan bugüne ders, hoca ve şube geçmişi</span></a>
@@ -510,15 +510,20 @@
    </ul>
 
    <h2>Ham veriye erişim</h2>
-   <p>Her dönem için JSON ve CSV doğrudan indirilebilir; sayfa da aynı dosyaları kullanıyor.</p>
+   <p>Her dönem için JSON ve CSV doğrudan indirilebilir; sayfa da aynı dosyaları kullanıyor. Windows PowerShell'de <code>curl</code> başka bir komuta bağlı olabildiği için aşağıdaki örnekler <code>curl.exe</code> kullanır.</p>
    <pre><code># aktif dönemin tüm şubeleri (CSV)
-curl -O https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/all.csv
+curl.exe -fL --output itu-dersleri.csv https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/all.csv
 
 # tek bölüm (JSON)
-curl https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/branches/BIL.json
+curl.exe -fL --output BIL.json https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/branches/BIL.json
 
 # dönem ve takvim listesi
-curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
+curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/index.json</code></pre>
+   <nav class="raw-data-links" aria-label="Ham veri dosyaları">
+    <a class="raw-current-csv" href="/data/terms/2026-2027-guz/all.csv" download>Aktif dönem CSV'sini indir</a>
+    <a class="raw-current-branch" href="/data/terms/2026-2027-guz/branches/BIL.json" download>BIL bölüm JSON'unu indir</a>
+    <a href="/data/index.json" download>Dönem listesini indir</a>
+   </nav>
 
    <h2>İTÜ ders programı ve arşivi</h2>
    <p>
@@ -616,6 +621,6 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
-<script type="module" src="assets/app.js?v=navfix1"></script>
+<script type="module" src="assets/app.js?v=examgui"></script>
 </body>
 </html>

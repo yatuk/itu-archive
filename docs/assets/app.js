@@ -9,12 +9,12 @@ import { I18N } from './i18n.js?v=navfix1';
 import { initCourses, loadTerm, applyFilters, syncProgramFilter } from './views/courses.js?v=uirefactor2026';
 import { initCourseDetail, openCourseDetail } from './core/course-detail.js';
 import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
-import { initExams, onShow as examsShow } from './views/exams.js';
+import { initExams, onShow as examsShow } from './views/exams.js?v=examfix';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
 import { onShow as programShow } from './views/program.js?v=uirefactor2026';
 import { onShow as dersplanimShow } from './views/dersplanim.js?v=uirefactor2026';
-import { PrereqGraph } from './prereq.js?v=uirefactor2026';
+import { PrereqGraph } from './prereq.js?v=examguidefix';
 import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
@@ -417,6 +417,10 @@ function fillHost() {
   const host = location.host + location.pathname.replace(/\/$/, '');
   for (const el of document.querySelectorAll('.prose .host')) el.textContent = host;
   for (const el of document.querySelectorAll('.prose .var')) el.textContent = state.index.currentSlug;
+  const rawCSV = document.querySelector('.raw-current-csv');
+  const rawBranch = document.querySelector('.raw-current-branch');
+  if (rawCSV) rawCSV.href = `/data/terms/${encodeURIComponent(state.index.currentSlug)}/all.csv`;
+  if (rawBranch) rawBranch.href = `/data/terms/${encodeURIComponent(state.index.currentSlug)}/branches/BIL.json`;
 }
 
 boot();

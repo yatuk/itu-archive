@@ -11,7 +11,7 @@ import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList, groupCourseRows } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
-import { examToIcs } from '../views/exams.js';
+import { examDateMatchesTerm, examScheduleMatchesTerm, examToIcs } from '../views/exams.js';
 import { topByCount } from '../views/history.js';
 import { icsText, hashShort, foldLine, formatInt } from './utils.js';
 import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
@@ -1155,4 +1155,36 @@ test('examToIcs Türkçe tarih + saat aralığını ISO zamanlı etkinliğe çev
   assert.ok(ev.title.includes('SSI 518'));
   assert.equal(examToIcs({ date: 'çözülemez', time: '09:00-11:00' }), null);
   assert.equal(examToIcs({ date: '13 Ağustos 2026', time: 'bozuk' }), null);
+});
+
+test('examScheduleMatchesTerm geçen dönemin cachelenmiş sınavlarını reddeder', () => {
+  const currentRows = [
+    ['10001', 'TUR 101'],
+    ['10002', 'TUR 101'],
+    ['10003', 'TUR 101'],
+    ['10004', 'TUR 101'],
+  ];
+  const current = { exams: [
+    { crn: '10001', code: 'TUR 101', date: '10 Ocak 2027' },
+    { crn: '10002', code: 'TUR 101', date: '11 Ocak 2027' },
+    { crn: '10003', code: 'TUR 101', date: '12 Ocak 2027' },
+    { crn: '99999', code: 'TUR 101', date: '13 Ocak 2027' },
+  ] };
+  const staleSummer = { exams: [
+    { crn: '10001', code: 'TUR 101', date: '13 Ağustos 2026' },
+    { crn: '10002', code: 'TUR 101', date: '11 Ağustos 2026' },
+    { crn: '10003', code: 'TUR 101', date: '12 Ağustos 2026' },
+    { crn: '10004', code: 'TUR 101', date: '10 Ağustos 2026' },
+  ] };
+
+  assert.equal(examScheduleMatchesTerm(current, currentRows, '2026-2027-guz'), true);
+  assert.equal(examScheduleMatchesTerm(staleSummer, currentRows, '2026-2027-guz'), false);
+  assert.equal(examScheduleMatchesTerm({ exams: [] }, currentRows, '2026-2027-guz'), false);
+});
+
+test('examDateMatchesTerm Güz, Bahar ve Yaz tarih sınırlarını ayırır', () => {
+  assert.equal(examDateMatchesTerm('13 Ağustos 2026', '2026-2027-guz'), false);
+  assert.equal(examDateMatchesTerm('15 Ocak 2027', '2026-2027-guz'), true);
+  assert.equal(examDateMatchesTerm('20 Haziran 2027', '2026-2027-bahar'), true);
+  assert.equal(examDateMatchesTerm('13 Ağustos 2027', '2026-2027-yaz'), true);
 });

@@ -964,6 +964,27 @@ type landingAction struct {
 	detail string
 }
 
+var landingActionDetails = map[string]string{
+	"/#dersler":               "Açık şubeleri ders kodu, ad, CRN veya öğretim üyesiyle ara.",
+	"/#gecmis":                "2016'dan bugüne açılan dersleri ve dersi veren hocaları bul.",
+	"/#dersplanim":            "Müfredatını seç, harf notlarını gir ve kredi ağırlıklı ortalamanı gör.",
+	"/#onsart":                "Programını seç; derslerin zorunlu ve alternatif önşart bağlantılarını izle.",
+	"/#sinavlar":              "Yayımlanan final tarihlerini ara ve aynı saate gelen sınavları karşılaştır.",
+	"/#takvim":                "Kayıt, ders, sınav ve tatil tarihlerini takvim türüne göre filtrele.",
+	"/#donemler":              "Arşivlenen bütün Güz, Bahar ve Yaz dönemlerini tek listede gör.",
+	"/#program":               "Şubeleri haftalık çizelgeye ekle; çakışmaları, kredi ve AKTS toplamını gör.",
+	"/ders-plani/":            "Müfredatı, zorunlu ve seçmeli dersleri yarıyıl yarıyıl incele.",
+	"/gano-hesaplama/":        "Harf notlarını ve kredilerini kullanarak dönem ortalaması ile GANO'nu hesapla.",
+	"/not-ortalamasi/":        "Harf notu katsayılarını ve hangi notların ortalamaya katıldığını gör.",
+	"/ders-programi/":         "Güncel dersleri, şubeleri, CRN'leri, saatleri ve kontenjanları ara.",
+	"/ders-programi-olustur/": "Seçtiğin şubelerle haftalık program kur ve takvime aktar.",
+	"/sinav-programi/":        "Final tarihlerini ara ve seçtiğin derslerin sınav çakışmalarını kontrol et.",
+	"/kontenjan/":             "Şubelerin kontenjan, yazılan ve geçmiş doluluk bilgilerini incele.",
+	"/onsart-haritasi/":       "Bölüm derslerinin birbirine hangi önşartlarla bağlandığını gör.",
+	"/ders-secimi/":           "Ders aramadan OBS kaydına kadar izlenecek dört adımı birlikte gör.",
+	"/akademik-takvim/":       "Kayıt, ders ve sınav tarihlerini tek kronolojik listede takip et.",
+}
+
 var landingPages = []landingPage{
 	{
 		slug: "ders-plani", title: "İTÜ ders planı ve müfredat planlama",
@@ -1037,11 +1058,18 @@ var landingPages = []landingPage{
 		description: "İTÜ ders seçimi: önşartları kontrol et, final çakışmasını gör, kontenjanı ve dolma hızını değerlendir, programını kur.",
 		h1:          "İTÜ ders seçimi rehberi",
 		body: []string{
-			"Ders seçmeden önce: önşartları karşılıyor musun, finaller çakışıyor mu, kontenjan dolmak üzere mi?",
-			"Arşivde dersin önşart haritasını aç, final takviminde çakışmayı kontrol et, Program görünümünde haftalık çizelgeni kur ve çakışmaları gör.",
+			"1. Dersler'de kod, ad veya öğretim üyesiyle arama yap; uygun şubenin CRN'sini, saatini ve kalan kontenjanını kontrol et.",
+			"2. Önşart Haritası'nda programını seç; almak istediğin dersin geriye doğru zorunlu ve alternatif önşartlarını incele.",
+			"3. Program aracında şubeleri ekle. Haftalık çizelgede saat çakışmalarını, toplam kredi ve AKTS'yi gör; gerekirse şubeyi değiştir.",
+			"4. Sınav takvimi yayımlandığında seçtiğin derslerin final saatlerini birlikte kontrol et. Kesin kayıttan önce bilgileri OBS'den doğrula.",
 		},
-		primary:   landingAction{href: "/#dersler", label: "Ders seçimine başla", detail: "Önce açık dersleri ve kontenjanları bul; ardından program ve sınav çakışmalarını kontrol et."},
-		secondary: []landingAction{{href: "/onsart-haritasi/", label: "Önşartları kontrol et"}, {href: "/sinav-programi/", label: "Sınavları kontrol et"}, {href: "/ders-programi-olustur/", label: "Programını oluştur"}},
+		primary: landingAction{href: "/#program", label: "Ders programını oluştur", detail: "Açık şubeleri ekle; saat çakışmalarını ve toplam krediyi haftalık çizelgede gör."},
+		secondary: []landingAction{
+			{href: "/#dersler", label: "1. Açık dersleri ve kontenjanları ara", detail: "Ders kodu, ad, CRN veya hocayla ara; uygun şubeyi bul."},
+			{href: "/#onsart", label: "2. Önşartları kontrol et", detail: "Program haritasında dersin geriye doğru bağlantılarını izle."},
+			{href: "/#program", label: "3. Haftalık programını kur", detail: "Şubeleri ekle, ders çakışmalarını gider ve CRN listesini hazırla."},
+			{href: "/#sinavlar", label: "4. Sınav çakışmalarını kontrol et", detail: "Takvim yayımlandığında finalleri aynı listede karşılaştır."},
+		},
 	},
 	{
 		slug: "onsart-haritasi", title: "İTÜ önşart haritası",
@@ -1102,8 +1130,16 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 	if len(p.secondary) > 0 {
 		related.WriteString(`<h2>İlgili araçlar</h2><ul class="seo-action-list">`)
 		for _, action := range p.secondary {
-			fmt.Fprintf(&related, `<li><a href="%s">%s</a></li>`,
+			fmt.Fprintf(&related, `<li><a href="%s"><strong>%s</strong>`,
 				template.HTMLEscapeString(action.href), template.HTMLEscapeString(action.label))
+			detail := action.detail
+			if detail == "" {
+				detail = landingActionDetails[action.href]
+			}
+			if detail != "" {
+				fmt.Fprintf(&related, `<span>%s</span>`, template.HTMLEscapeString(detail))
+			}
+			related.WriteString(`</a></li>`)
 		}
 		related.WriteString(`</ul>`)
 	}

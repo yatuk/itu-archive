@@ -1146,14 +1146,16 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 }
 .pg-branch { flex: none; }
 .pg-canvas-wrap {
-  height: min(68vh, 680px);
+  /* Geniş ekranda harita sayfanın geri kalanını yutmasın. Düğümler
+     bu alanı aşarsa canvas sürüklenebilir; mobil zaten gezgin kullanır. */
+  height: clamp(420px, 56vh, 560px);
   border-color: var(--hairline-strong);
   border-radius: 12px;
   box-shadow: var(--shadow-card);
 }
 .pg-detail {
   min-width: 0;
-  max-height: min(68vh, 680px);
+  max-height: clamp(420px, 56vh, 560px);
   margin: 24px 0 0;
   padding: 16px;
   overflow-y: auto;
@@ -2813,11 +2815,16 @@ body.modal-open { overflow: hidden; }
   flex: none; justify-content: center; text-decoration: none; white-space: nowrap;
 }
 .seo-action-list {
-  display: flex; flex-wrap: wrap; gap: 8px 18px;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px;
   margin: 8px 0 22px; padding: 0; list-style: none;
 }
-.seo-action-list a { color: var(--cyan); text-underline-offset: 3px; }
+.seo-action-list li { min-width: 0; border-top: 1px solid var(--line); }
+.seo-action-list a { display: grid; gap: 3px; padding: 12px 0; color: var(--cyan); text-decoration: none; }
+.seo-action-list strong { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.seo-action-list span { color: var(--dim); font-size: 13px; line-height: 1.45; }
 .seo-action-list a:hover { color: var(--acid); }
+.raw-data-links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: -4px 0 22px; font-size: 13px; }
+.raw-data-links a { color: var(--cyan); text-underline-offset: 3px; }
 [data-theme="sade"] .seo-tool-launch {
   padding: 18px; border: 1px solid var(--line); border-radius: var(--radius-card);
   background: var(--panel);
@@ -2826,7 +2833,8 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 640px) {
   .seo-tool-launch { align-items: stretch; flex-direction: column; gap: 14px; }
   .seo-tool-launch .btn-primary { width: 100%; white-space: normal; }
-  .seo-action-list { flex-direction: column; gap: 10px; }
+  .seo-action-list { grid-template-columns: 1fr; }
+  .raw-data-links { display: grid; gap: 10px; }
 }
 
 .data-link { color: var(--dimmer); font-size: 13px; margin-top: 20px; }
